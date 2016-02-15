@@ -3,6 +3,7 @@ signature-base is a submodule for my scanner tools LOKI and SPARK
 
 # Directory Structure
 
-- iocs
-- yara
+- iocs - Simple IOC files (CSV)
+- yara - YARA rules
+- threatintel - Threat Intel API Receiver (MISP, OTX)
 
