@@ -1,54 +1,37 @@
-zooboo.passinggas.net;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
-appletree.onthenetas.com;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
-bluefield.byinter.net;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
-ustar5.passas.us;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
-eventlog.findhere.org;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
-grassland.onthenetas.com;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
-groupspace.findhere.org;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
-dnt5b.myfw.us;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
-chairman.onthenetas.com;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
-photograph.myfw.us;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
-booking.passinggas.net;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
-www.danangqt.net;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
-webonline.onthenetas.com;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
-203.124.14.214;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
-203.124.14.229;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
-103.243.24.179;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
-118.193.221.233;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
-123.1.159.210;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
-140.131.39.11;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
-123.1.159.153;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
-210.209.121.92;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
-163.20.127.27;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
-210.209.121.31;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
-101.55.33.95;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
-101.55.121.79;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
-101.55.33.92;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
-g890ios20.com;Mokes: New Family of Cross-Platform Desktop Backdoors Discovered https://securelist.com/blog/research/73503/from-linux-to-windows-new-family-of-c
-jessiman901.com;Mokes: New Family of Cross-Platform Desktop Backdoors Discovered https://securelist.com/blog/research/73503/from-linux-to-windows-new-family-of-c
-web01.kruul.com;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
-corpnt.crabdance.com;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
-f1a9d91a738041a8.appspot.com;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
-pluslinkera.appspot.com;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
-lic03.verhosts.com;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
-www.microsoft-cache.com;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
-www.xjjboss.com;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
-www.svsk.net;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
-host02.jacosb.com;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
-mail-news.eicp.net;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
-www.ukoffering.com;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
-padview.chickenkiller.com;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
-www.jbossas.org;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
-css.advicdesign.com;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
-mail-ru.3322.org;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
-ras-ru.eatuo.com;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
-www.supermanbox.org;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
-www.office365e.com;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
-ria-ru.xicp.net;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
-f5310cff818ea0e7.appspot.com;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
-ras-ru.oicp.net;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
-106.185.43.96;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
-5.149.254.114;BlackEnergy APT Attacks in Ukraine employ spearphishing  Word https://securelist.com/blog/research/73440/blackenergy-apt-attacks-in-ukraine-em
+iynus.net;Locky: New Ransomware Mimics Dridex-Style Distribution http://researchcenter.paloaltonetworks.com/2016/02/locky-new-ransomware-mimics-d
+www.southlife.church;Locky: New Ransomware Mimics Dridex-Style Distribution http://researchcenter.paloaltonetworks.com/2016/02/locky-new-ransomware-mimics-d
+www.jesusdenazaret.com.ve;Locky: New Ransomware Mimics Dridex-Style Distribution http://researchcenter.paloaltonetworks.com/2016/02/locky-new-ransomware-mimics-d
+www.iglobali.com;Locky: New Ransomware Mimics Dridex-Style Distribution http://researchcenter.paloaltonetworks.com/2016/02/locky-new-ransomware-mimics-d
+www.villaggio.airwave.at;Locky: New Ransomware Mimics Dridex-Style Distribution http://researchcenter.paloaltonetworks.com/2016/02/locky-new-ransomware-mimics-d
+195.154.241.208;Locky: New Ransomware Mimics Dridex-Style Distribution http://researchcenter.paloaltonetworks.com/2016/02/locky-new-ransomware-mimics-d
+173.214.183.81;Locky: New Ransomware Mimics Dridex-Style Distribution http://researchcenter.paloaltonetworks.com/2016/02/locky-new-ransomware-mimics-d
+66.133.129.5;Locky: New Ransomware Mimics Dridex-Style Distribution http://researchcenter.paloaltonetworks.com/2016/02/locky-new-ransomware-mimics-d
+86.104.134.144;Locky: New Ransomware Mimics Dridex-Style Distribution http://researchcenter.paloaltonetworks.com/2016/02/locky-new-ransomware-mimics-d
+195.64.154.14;Locky: New Ransomware Mimics Dridex-Style Distribution http://researchcenter.paloaltonetworks.com/2016/02/locky-new-ransomware-mimics-d
+193.124.181.169;Locky: New Ransomware Mimics Dridex-Style Distribution http://researchcenter.paloaltonetworks.com/2016/02/locky-new-ransomware-mimics-d
+109.234.38.35;Locky: New Ransomware Mimics Dridex-Style Distribution http://researchcenter.paloaltonetworks.com/2016/02/locky-new-ransomware-mimics-d
+91.195.12.185;Locky: New Ransomware Mimics Dridex-Style Distribution http://researchcenter.paloaltonetworks.com/2016/02/locky-new-ransomware-mimics-d
+46.4.239.76;Locky: New Ransomware Mimics Dridex-Style Distribution http://researchcenter.paloaltonetworks.com/2016/02/locky-new-ransomware-mimics-d
+infomcheck.com;Infostealer.Banprox.B http://www.symantec.com/security_response/writeup.jsp?docid=2016-021601-0733-99&
+mssinfosys.com;Infostealer.Banprox.B http://www.symantec.com/security_response/writeup.jsp?docid=2016-021601-0733-99&
+azureon-line.com;A Look Into Fysbis: Sofacy\u2019s Linux Backdoor http://researchcenter.paloaltonetworks.com/2016/02/a-look-into-fysbis-sofacys-li
+mozilla-plugins.com;A Look Into Fysbis: Sofacy\u2019s Linux Backdoor http://researchcenter.paloaltonetworks.com/2016/02/a-look-into-fysbis-sofacys-li
+198.105.125.74;A Look Into Fysbis: Sofacy\u2019s Linux Backdoor http://researchcenter.paloaltonetworks.com/2016/02/a-look-into-fysbis-sofacys-li
+mozillaplagins.com;A Look Into Fysbis: Sofacy\u2019s Linux Backdoor http://researchcenter.paloaltonetworks.com/2016/02/a-look-into-fysbis-sofacys-li
+azureon-line.com;A Look Into Fysbis: Sofacy\u2019s Linux Backdoor http://researchcenter.paloaltonetworks.com/2016/02/a-look-into-fysbis-sofacys-li
+mozilla-plugins.com;A Look Into Fysbis: Sofacy\u2019s Linux Backdoor http://researchcenter.paloaltonetworks.com/2016/02/a-look-into-fysbis-sofacys-li
+mozillaplagins.com;A Look Into Fysbis: Sofacy\u2019s Linux Backdoor http://researchcenter.paloaltonetworks.com/2016/02/a-look-into-fysbis-sofacys-li
+198.105.125.74;A Look Into Fysbis: Sofacy\u2019s Linux Backdoor http://researchcenter.paloaltonetworks.com/2016/02/a-look-into-fysbis-sofacys-li
+193.169.244.190;A Look Into Fysbis: Sofacy\u2019s Linux Backdoor http://researchcenter.paloaltonetworks.com/2016/02/a-look-into-fysbis-sofacys-li
+111.90.148.148;A Look Into Fysbis: Sofacy\u2019s Linux Backdoor http://researchcenter.paloaltonetworks.com/2016/02/a-look-into-fysbis-sofacys-li
+222.186.21.166;Tomcat IR with XOR.DDoS https://isc.sans.edu/diary/Tomcat+IR+with+XOR.DDoS/20721
+23.234.60.143;Tomcat IR with XOR.DDoS https://isc.sans.edu/diary/Tomcat+IR+with+XOR.DDoS/20721
+pomppondy.net;Dumping Core: Analytical Findings on Trojan.Corebot http://www.arbornetworks.com/blog/asert/wp-content/uploads/2016/02/ASERT-Threat-
+tychebruke.com;Dumping Core: Analytical Findings on Trojan.Corebot http://www.arbornetworks.com/blog/asert/wp-content/uploads/2016/02/ASERT-Threat-
+bonetakus.com;Dumping Core: Analytical Findings on Trojan.Corebot http://www.arbornetworks.com/blog/asert/wp-content/uploads/2016/02/ASERT-Threat-
+95.211.195.7;Kraken / Laziok http://itsjack.cc/blog/2015/02/krakenhttp-not-sinking-my-ship-part-1/ / http://w
+94.156.77.75;Kraken / Laziok http://itsjack.cc/blog/2015/02/krakenhttp-not-sinking-my-ship-part-1/ / http://w
+23.249.163.140;Kraken / Laziok http://itsjack.cc/blog/2015/02/krakenhttp-not-sinking-my-ship-part-1/ / http://w
 193.104.41.178;SteamStealers http://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / 
 31.170.164.100;SteamStealers http://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / 
 37.187.37.235;SteamStealers http://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / 
@@ -209,6 +192,177 @@ ras-ru.oicp.net;Exploring Bergard: Old Malware with New Tricks https://www.proof
 212.109.222.3;SteamStealers http://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / 
 195.154.166.10;SteamStealers http://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / 
 37.140.192.35;SteamStealers http://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / 
+37.140.192.149;SteamStealers http://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / 
+noproblemsbro.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+s2simsdor.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+d0ntw0rry.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+mrfranklin.us;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+enhancerburnable.ru;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+delishop.org;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+efiop.info;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+bloombergloop.biz;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+not-chance.net;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+archimedus.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+lev1tan.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+mrwashington.eu;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+googleyndication.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+vasnecov.biz;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+malev1ch.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+vendorboltasticrobust.net;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+googleadvrt.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+komplext.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+noproblemslove.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+wizardtesla.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+mertovilagersd.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+obama-know.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+uorenbuffets.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+dudmachineonto.ru;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+myloveforever.biz;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+precueairtight.ru;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+googleapists.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+flashtest.me;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+pashaescobar.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+videowavehallways.ru;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+ineedj0b.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+be4appy.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+whoismistergreen.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+picass0.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+patr1ckjane.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+friendorenemy.biz;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+pavlov.xyz;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+googleana.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+tsvswququsamqaqq.net;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+eroomspeakblindly.ru;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+thevangog.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+one.solyaris.biz;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+supp.madagaskar.in;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+google-dns-public.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+affiliand.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+bongoprom.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+google-src.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+adode-update.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+pawgtube.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+kavupdate.net;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+www.banertrack.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+www.x6dy.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+198.55.119.113;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+46.28.203.60;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+94.102.63.6;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+5.199.165.56;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+200.74.240.129;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+plaizenet.net;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+plametdag.net;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+glonass-map.com;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+88.198.184.241;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+192.52.166.104;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+94.156.77.41;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+108.61.165.120;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+104.232.36.226;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+82.211.31.251;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+23.249.163.140;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+84.200.4.226;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+5.9.189.40;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+84.200.4.239;APT-style bank robberies w/ Metel, GCMAN, Carbanak 2.0 attacks https://securelist.com/blog/research/73638/apt-style-bank-robberies-increase-wit
+karlsasyn725.com;Angler EK leads to fileless Gootkit http://www.cyphort.com/angler-ek-leads-to-fileless-gootkit/
+karlsalomun9.com;Angler EK leads to fileless Gootkit http://www.cyphort.com/angler-ek-leads-to-fileless-gootkit/
+karlsardabale9.com;Angler EK leads to fileless Gootkit http://www.cyphort.com/angler-ek-leads-to-fileless-gootkit/
+karlsabrero22.com;Angler EK leads to fileless Gootkit http://www.cyphort.com/angler-ek-leads-to-fileless-gootkit/
+karlsadroch27.com;Angler EK leads to fileless Gootkit http://www.cyphort.com/angler-ek-leads-to-fileless-gootkit/
+karlsamochux2.com;Angler EK leads to fileless Gootkit http://www.cyphort.com/angler-ek-leads-to-fileless-gootkit/
+karlsadovnik75.com;Angler EK leads to fileless Gootkit http://www.cyphort.com/angler-ek-leads-to-fileless-gootkit/
+karlsaranu82.com;Angler EK leads to fileless Gootkit http://www.cyphort.com/angler-ek-leads-to-fileless-gootkit/
+karlsasyxushee75.com;Angler EK leads to fileless Gootkit http://www.cyphort.com/angler-ek-leads-to-fileless-gootkit/
+consildertufun.xyz;FluxerBot: Nginx Powered Proxy Malware http://phishme.com/fluxerbot-nginx-powered-proxy-malware/
+tajjquartet.com;FluxerBot: Nginx Powered Proxy Malware http://phishme.com/fluxerbot-nginx-powered-proxy-malware/
+exefud.com;FluxerBot: Nginx Powered Proxy Malware http://phishme.com/fluxerbot-nginx-powered-proxy-malware/
+art.mastering-the-art-of.com;FluxerBot: Nginx Powered Proxy Malware http://phishme.com/fluxerbot-nginx-powered-proxy-malware/
+jet.bearlakedisposal.com;FluxerBot: Nginx Powered Proxy Malware http://phishme.com/fluxerbot-nginx-powered-proxy-malware/
+lan.diamonddollsfitness.com;FluxerBot: Nginx Powered Proxy Malware http://phishme.com/fluxerbot-nginx-powered-proxy-malware/
+103.193.4.126;FluxerBot: Nginx Powered Proxy Malware http://phishme.com/fluxerbot-nginx-powered-proxy-malware/
+xinchunge.com;Dridex, JavaScript, and Porta Johns https://www.proofpoint.com/us/threat-insight/post/Dridex-JavaScript-and-Porta-Jo
+best-drum-set.com;Dridex, JavaScript, and Porta Johns https://www.proofpoint.com/us/threat-insight/post/Dridex-JavaScript-and-Porta-Jo
+2696666.com;Dridex, JavaScript, and Porta Johns https://www.proofpoint.com/us/threat-insight/post/Dridex-JavaScript-and-Porta-Jo
+obstipatie.nu;Dridex, JavaScript, and Porta Johns https://www.proofpoint.com/us/threat-insight/post/Dridex-JavaScript-and-Porta-Jo
+taukband.com;Dridex, JavaScript, and Porta Johns https://www.proofpoint.com/us/threat-insight/post/Dridex-JavaScript-and-Porta-Jo
+www.fisioescorial.es;Dridex, JavaScript, and Porta Johns https://www.proofpoint.com/us/threat-insight/post/Dridex-JavaScript-and-Porta-Jo
+www.prestigehomeautomation.net;Dridex, JavaScript, and Porta Johns https://www.proofpoint.com/us/threat-insight/post/Dridex-JavaScript-and-Porta-Jo
+41.38.18.230;Dridex, JavaScript, and Porta Johns https://www.proofpoint.com/us/threat-insight/post/Dridex-JavaScript-and-Porta-Jo
+176.53.0.103;Dridex, JavaScript, and Porta Johns https://www.proofpoint.com/us/threat-insight/post/Dridex-JavaScript-and-Porta-Jo
+46.183.66.210;Dridex, JavaScript, and Porta Johns https://www.proofpoint.com/us/threat-insight/post/Dridex-JavaScript-and-Porta-Jo
+91.239.232.145;Dridex, JavaScript, and Porta Johns https://www.proofpoint.com/us/threat-insight/post/Dridex-JavaScript-and-Porta-Jo
+194.126.100.220;Dridex, JavaScript, and Porta Johns https://www.proofpoint.com/us/threat-insight/post/Dridex-JavaScript-and-Porta-Jo
+193.17.184.250;Dridex, JavaScript, and Porta Johns https://www.proofpoint.com/us/threat-insight/post/Dridex-JavaScript-and-Porta-Jo
+41.86.46.245;Dridex, JavaScript, and Porta Johns https://www.proofpoint.com/us/threat-insight/post/Dridex-JavaScript-and-Porta-Jo
+174.70.100.90;Dridex, JavaScript, and Porta Johns https://www.proofpoint.com/us/threat-insight/post/Dridex-JavaScript-and-Porta-Jo
+185.47.108.92;Dridex, JavaScript, and Porta Johns https://www.proofpoint.com/us/threat-insight/post/Dridex-JavaScript-and-Porta-Jo
+181.177.231.245;Dridex, JavaScript, and Porta Johns https://www.proofpoint.com/us/threat-insight/post/Dridex-JavaScript-and-Porta-Jo
+5.9.37.137;Dridex, JavaScript, and Porta Johns https://www.proofpoint.com/us/threat-insight/post/Dridex-JavaScript-and-Porta-Jo
+200.57.183.176;Dridex, JavaScript, and Porta Johns https://www.proofpoint.com/us/threat-insight/post/Dridex-JavaScript-and-Porta-Jo
+188.126.116.26;Dridex, JavaScript, and Porta Johns https://www.proofpoint.com/us/threat-insight/post/Dridex-JavaScript-and-Porta-Jo
+144.76.73.3;Dridex, JavaScript, and Porta Johns https://www.proofpoint.com/us/threat-insight/post/Dridex-JavaScript-and-Porta-Jo
+141.89.179.45;Dridex, JavaScript, and Porta Johns https://www.proofpoint.com/us/threat-insight/post/Dridex-JavaScript-and-Porta-Jo
+181.53.255.145;Dridex, JavaScript, and Porta Johns https://www.proofpoint.com/us/threat-insight/post/Dridex-JavaScript-and-Porta-Jo
+103.245.153.70;Dridex, JavaScript, and Porta Johns https://www.proofpoint.com/us/threat-insight/post/Dridex-JavaScript-and-Porta-Jo
+148.202.223.222;Dridex, JavaScript, and Porta Johns https://www.proofpoint.com/us/threat-insight/post/Dridex-JavaScript-and-Porta-Jo
+194.95.134.106;Dridex, JavaScript, and Porta Johns https://www.proofpoint.com/us/threat-insight/post/Dridex-JavaScript-and-Porta-Jo
+62.109.133.248;Dridex, JavaScript, and Porta Johns https://www.proofpoint.com/us/threat-insight/post/Dridex-JavaScript-and-Porta-Jo
+103.23.154.184;Dridex, JavaScript, and Porta Johns https://www.proofpoint.com/us/threat-insight/post/Dridex-JavaScript-and-Porta-Jo
+185.24.92.236;Dridex, JavaScript, and Porta Johns https://www.proofpoint.com/us/threat-insight/post/Dridex-JavaScript-and-Porta-Jo
+198.55.120.143;T9000: Advanced Modular Backdoor Uses Complex Anti-Analysis http://researchcenter.paloaltonetworks.com/2016/02/t9000-advanced-modular-backdo
+manage.hummerlauncher.com;HummingBad: A Persistent Mobile Chain Attack http://blog.checkpoint.com/2016/02/04/hummingbad-a-persistent-mobile-chain-attac
+fget.guangbom.com;HummingBad: A Persistent Mobile Chain Attack http://blog.checkpoint.com/2016/02/04/hummingbad-a-persistent-mobile-chain-attac
+d2b7xycc4g1w1e.cloudfront.net;HummingBad: A Persistent Mobile Chain Attack http://blog.checkpoint.com/2016/02/04/hummingbad-a-persistent-mobile-chain-attac
+zooboo.passinggas.net;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
+appletree.onthenetas.com;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
+bluefield.byinter.net;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
+ustar5.passas.us;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
+eventlog.findhere.org;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
+grassland.onthenetas.com;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
+groupspace.findhere.org;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
+dnt5b.myfw.us;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
+chairman.onthenetas.com;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
+photograph.myfw.us;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
+booking.passinggas.net;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
+www.danangqt.net;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
+webonline.onthenetas.com;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
+203.124.14.214;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
+203.124.14.229;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
+103.243.24.179;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
+118.193.221.233;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
+123.1.159.210;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
+140.131.39.11;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
+123.1.159.153;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
+210.209.121.92;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
+163.20.127.27;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
+210.209.121.31;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
+101.55.33.95;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
+101.55.121.79;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
+101.55.33.92;Emissary Trojan/ Operation Lotus Blossom Update http://researchcenter.paloaltonetworks.com/2016/02/emissary-trojan-changelog-did
+g890ios20.com;Mokes: New Family of Cross-Platform Desktop Backdoors Discovered https://securelist.com/blog/research/73503/from-linux-to-windows-new-family-of-c
+jessiman901.com;Mokes: New Family of Cross-Platform Desktop Backdoors Discovered https://securelist.com/blog/research/73503/from-linux-to-windows-new-family-of-c
+web01.kruul.com;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
+corpnt.crabdance.com;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
+f1a9d91a738041a8.appspot.com;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
+pluslinkera.appspot.com;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
+lic03.verhosts.com;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
+www.microsoft-cache.com;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
+www.xjjboss.com;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
+www.svsk.net;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
+host02.jacosb.com;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
+mail-news.eicp.net;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
+www.ukoffering.com;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
+padview.chickenkiller.com;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
+www.jbossas.org;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
+css.advicdesign.com;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
+mail-ru.3322.org;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
+ras-ru.eatuo.com;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
+www.supermanbox.org;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
+www.office365e.com;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
+ria-ru.xicp.net;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
+f5310cff818ea0e7.appspot.com;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
+ras-ru.oicp.net;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
+106.185.43.96;Exploring Bergard: Old Malware with New Tricks https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks
+5.149.254.114;BlackEnergy APT Attacks in Ukraine employ spearphishing  Word https://securelist.com/blog/research/73440/blackenergy-apt-attacks-in-ukraine-em
 xxxmobiletubez.com;Android.Bankosy: All ears on voice call-based 2FA http://www.symantec.com/security_response/writeup.jsp?docid=2014-072316-5249-99 
 89.144.14.29;Android.Bankosy: All ears on voice call-based 2FA http://www.symantec.com/security_response/writeup.jsp?docid=2014-072316-5249-99 
 185.86.148.188;Android.Bankosy: All ears on voice call-based 2FA http://www.symantec.com/security_response/writeup.jsp?docid=2014-072316-5249-99 
@@ -8595,11 +8749,6 @@ amf-themes.ru;SWF iFrame Injector http://blog.sucuri.net/2015/04/website-malware
 b14-mini.ru;Over-indulgence in the Easter Eggsploit Kit http://community.websense.com/blogs/securitylabs/archive/2015/04/06/over-indulge
 yqbozasv.hopto.org;Over-indulgence in the Easter Eggsploit Kit http://community.websense.com/blogs/securitylabs/archive/2015/04/06/over-indulge
 80.82.65.112;NewPosThings Has New PoS Things http://blog.trendmicro.com/trendlabs-security-intelligence/newposthings-has-new-
-federacio.org;Kraken / Laziok http://itsjack.cc/blog/2015/02/krakenhttp-not-sinking-my-ship-part-1/ / http://w
-clubfogueres.com;Kraken / Laziok http://itsjack.cc/blog/2015/02/krakenhttp-not-sinking-my-ship-part-1/ / http://w
-95.211.195.7;Kraken / Laziok http://itsjack.cc/blog/2015/02/krakenhttp-not-sinking-my-ship-part-1/ / http://w
-94.156.77.75;Kraken / Laziok http://itsjack.cc/blog/2015/02/krakenhttp-not-sinking-my-ship-part-1/ / http://w
-23.249.163.140;Kraken / Laziok http://itsjack.cc/blog/2015/02/krakenhttp-not-sinking-my-ship-part-1/ / http://w
 193.26.217.197;Malware Dridex Arrives via Phishing Email  https://blogs.mcafee.com/mcafee-labs/banking-malware-dridex-arrives-via-phishing
 193.26.217.221;Malware Dridex Arrives via Phishing Email  https://blogs.mcafee.com/mcafee-labs/banking-malware-dridex-arrives-via-phishing
 121.50.43.175;Malware Dridex Arrives via Phishing Email  https://blogs.mcafee.com/mcafee-labs/banking-malware-dridex-arrives-via-phishing
