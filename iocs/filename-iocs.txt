@@ -1013,7 +1013,6 @@ AppData\\adobe\\adobe\.dat;65
 \\svsh0st\.exe;45
 \\svshoct\.exe;45
 \\svshost\.exe;45
-\\svshost\.exe;45
 \\svshosti\.exe;45
 \\svshosts\.exe;45
 \\svshot\.exe;45
@@ -1052,7 +1051,6 @@ AppData\\adobe\\adobe\.dat;65
 \\vhchost\.exe;45
 \\vhost\.exe;45
 \\vschost\.exe;45
-\\vshost\.exe;45
 \\vsschost\.exe;45
 \\vxhost\.exe;45
 \\wsvchost\.exe;45
