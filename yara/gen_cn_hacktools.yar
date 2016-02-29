@@ -157,10 +157,11 @@ rule DTools2_02_DTools {
 
 rule dll_PacketX {
 	meta:
-		description = "Chinese Hacktool Set - file PacketX.dll"
+		description = "Chinese Hacktool Set - file PacketX.dll - ActiveX wrapper for WinPcap packet capture library"
 		author = "Florian Roth"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
+		score = 50
 		hash = "3f0908e0a38512d2a4fb05a824aa0f6cf3ba3b71"
 	strings:
 		$s9 = "[Failed to load winpcap packet.dll." wide

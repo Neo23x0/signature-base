@@ -247,7 +247,7 @@ rule Codoso_PGV_PVID_4 {
 		$s4 = "<assembly xmlns=\"urn:schemas-microsoft-com:asm.v1\" manifestVersion=\"1.0\"><trustInfo xmlns=\"urn:schemas-microsoft-com:asm.v3" ascii /* Goodware String - occured 46 times */
 		$s5 = "<supportedOS Id=\"{e2011457-1546-43c5-a5fe-008deee3d3f0}\"></supportedOS>" fullword ascii /* Goodware String - occured 65 times */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 900KB and 1 of ($x*) and 2 of ($s*)
+		uint16(0) == 0x5a4d and filesize < 900KB and 2 of ($x*) and 2 of ($s*)
 }
 rule Codoso_PlugX_1 {
 	meta:
