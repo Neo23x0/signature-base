@@ -3107,3 +3107,60 @@ rule Netview_Hacktool_Output {
 	condition:
 		2 of them
 }
+
+/*
+	Yara Rule Set
+	Author: Florian Roth
+	Date: 2016-03-09
+	Identifier: PSattack
+*/
+
+/* Rule Set ----------------------------------------------------------------- */
+
+rule PSAttack_EXE {
+	meta:
+		description = "PSAttack - Powershell attack tool - file PSAttack.exe"
+		author = "Florian Roth"
+		reference = "https://github.com/gdssecurity/PSAttack/releases/"
+		date = "2016-03-09"
+		score = 100
+		hash = "ad05d75640c850ee7eeee26422ba4f157be10a4e2d6dc6eaa19497d64cf23715"
+	strings:
+		$x1 = "\\Release\\PSAttack.pdb" fullword
+
+		$s1 = "set-executionpolicy bypass -Scope process -Force" fullword wide
+		$s2 = "PSAttack.Modules." ascii
+		$s3 = "PSAttack.PSAttackProcessing" fullword ascii
+		$s4 = "PSAttack.Modules.key.txt" fullword wide
+	condition:
+		( uint16(0) == 0x5a4d and ( $x or 2 of ($s*) ) ) or 3 of them
+}
+
+rule Powershell_Attack_Scripts {
+	meta:
+		description = "Powershell Attack Scripts"
+		author = "Florian Roth"
+		date = "2016-03-09"
+		score = 70
+	strings:
+		$s1 = "PowershellMafia\\Invoke-Shellcode.ps1" ascii
+		$s2 = "Nishang\\Do-Exfiltration.ps1" ascii
+		$s3 = "PowershellMafia\\Invoke-Mimikatz.ps1" ascii
+		$s4 = "Inveigh\\Inveigh.ps1" ascii
+	condition:
+		1 of them
+}
+
+rule PSAttack_ZIP {
+	meta:
+		description = "PSAttack - Powershell attack tool - file PSAttack.zip"
+		author = "Florian Roth"
+		reference = "https://github.com/gdssecurity/PSAttack/releases/"
+		date = "2016-03-09"
+		score = 100
+		hash = "3864f0d44f90404be0c571ceb6f95bbea6c527bbfb2ec4a2b4f7d92e982e15a2"
+	strings:
+		$s0 = "PSAttack.exe" fullword ascii
+	condition:
+		uint16(0) == 0x4b50 and all of them
+}
