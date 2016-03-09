@@ -2935,6 +2935,7 @@ rule mimikatz
 		author			= "Benjamin DELPY (gentilkiwi)"
 		tool_author		= "Benjamin DELPY (gentilkiwi)"
       score          = 80
+      type           = "file"
 	strings:
 		$exe_x86_1		= { 89 71 04 89 [0-3] 30 8d 04 bd }
 		$exe_x86_2		= { 89 79 04 89 [0-3] 38 8d 04 b5 }
@@ -3067,4 +3068,42 @@ rule VSSown_VBS {
 		$s5 = "Win32_Process" ascii
 	condition:
 		all of them
+}
+
+rule Netview_Hacktool {
+	meta:
+		description = "Network domain enumeration tool - often used by attackers - file Nv.exe"
+		author = "Florian Roth"
+		reference = "https://github.com/mubix/netview"
+		date = "2016-03-07"
+      score = 60
+		hash = "52cec98839c3b7d9608c865cfebc904b4feae0bada058c2e8cdbd561cfa1420a"
+	strings:
+		$s1 = "[+] %ws - Target user found - %s\\%s" fullword wide
+		$s2 = "[*] -g used without group specified - using \"Domain Admins\"" fullword ascii
+		$s3 = "[*] -i used without interval specified - ignoring" fullword ascii
+		$s4 = "[+] %ws - Session - %s from %s - Active: %d - Idle: %d" fullword wide
+		$s5 = "[+] %ws - Backup Domain Controller" fullword wide
+		$s6 = "[-] %ls - Share - Error: %ld" fullword wide
+		$s7 = "[-] %ls - Session - Error: %ld" fullword wide
+		$s8 = "[+] %s - OS Version - %d.%d" fullword ascii
+		$s9 = "Enumerating Logged-on Users" fullword ascii
+		$s10 = ": Specifies a domain to pull a list of hosts from" fullword ascii
+	condition:
+		( uint16(0) == 0x5a4d and filesize < 500KB and 2 of them ) or 3 of them
+}
+
+rule Netview_Hacktool_Output {
+	meta:
+		description = "Network domain enumeration tool output - often used by attackers - file filename.txt"
+		author = "Florian Roth"
+		reference = "https://github.com/mubix/netview"
+		date = "2016-03-07"
+      score = 60
+	strings:
+		$s1 = "[*] Using interval:" fullword
+		$s2 = "[*] Using jitter:" fullword
+		$s3 = "[+] Number of hosts:" fullword
+	condition:
+		2 of them
 }
