@@ -3133,7 +3133,7 @@ rule PSAttack_EXE {
 		$s3 = "PSAttack.PSAttackProcessing" fullword ascii
 		$s4 = "PSAttack.Modules.key.txt" fullword wide
 	condition:
-		( uint16(0) == 0x5a4d and ( $x or 2 of ($s*) ) ) or 3 of them
+		( uint16(0) == 0x5a4d and ( $x1 or 2 of ($s*) ) ) or 3 of them
 }
 
 rule Powershell_Attack_Scripts {
