@@ -2643,26 +2643,6 @@ rule Ammyy_Admin_AA_v3 {
 
 /* Other dumper and custom hack tools */
 
-rule LinuxHacktool_eyes_screen {
-	meta:
-		description = "Linux hack tools - file screen"
-		author = "Florian Roth"
-		reference = "not set"
-		date = "2015/01/19"
-		hash = "a240a0118739e72ff89cefa2540bf0d7da8f8a6c"
-	strings:
-		$s0 = "or: %s -r [host.tty]" fullword ascii
-		$s1 = "%s: process: character, ^x, or (octal) \\032 expected." fullword ascii
-		$s2 = "Type \"screen [-d] -r [pid.]tty.host\" to resume one of them." fullword ascii
-		$s6 = "%s: at [identifier][%%|*|#] command [args]" fullword ascii
-		$s8 = "Slurped only %d characters (of %d) into buffer - try again" fullword ascii
-		$s11 = "command from %s: %s %s" fullword ascii
-		$s16 = "[ Passwords don't match - your armor crumbles away ]" fullword ascii
-		$s19 = "[ Passwords don't match - checking turned off ]" fullword ascii
-	condition:
-		all of them
-}
-
 rule LinuxHacktool_eyes_scanssh {
 	meta:
 		description = "Linux hack tools - file scanssh"
@@ -3164,4 +3144,47 @@ rule PSAttack_ZIP {
 		$s0 = "PSAttack.exe" fullword ascii
 	condition:
 		uint16(0) == 0x4b50 and all of them
+}
+
+/*
+	Yara Rule Set
+	Author: Florian Roth
+	Date: 2016-04-01
+	Identifier: Linux Hacktool Shark
+*/
+
+/* Super Rules ------------------------------------------------------------- */
+
+rule Linux_Portscan_Shark_1 {
+	meta:
+		description = "Detects Linux Port Scanner Shark"
+		author = "Florian Roth"
+		reference = "Virustotal Research - see https://github.com/Neo23x0/Loki/issues/35"
+		date = "2016-04-01"
+		super_rule = 1
+		hash1 = "4da0e535c36c0c52eaa66a5df6e070c52e7ddba13816efc3da5691ea2ec06c18"
+		hash2 = "e395ca5f932419a4e6c598cae46f17b56eb7541929cdfb67ef347d9ec814dea3"
+	strings:
+		$s0 = "rm -rf scan.log session.txt" fullword ascii
+		$s17 = "*** buffer overflow detected ***: %s terminated" fullword ascii
+		$s18 = "*** stack smashing detected ***: %s terminated" fullword ascii
+	condition:
+		( uint16(0) == 0x7362 and all of them )
+}
+
+rule Linux_Portscan_Shark_2 {
+	meta:
+		description = "Detects Linux Port Scanner Shark"
+		author = "Florian Roth"
+		reference = "Virustotal Research - see https://github.com/Neo23x0/Loki/issues/35"
+		date = "2016-04-01"
+		super_rule = 1
+		hash1 = "5f80bd2db608a47e26290f3385eeb5bfc939d63ba643f06c4156704614def986"
+		hash2 = "90af44cbb1c8a637feda1889d301d82fff7a93b0c1a09534909458a64d8d8558"
+	strings:
+		$s1 = "usage: %s <fisier ipuri> <fisier useri:parole> <connect timeout> <fail2ban wait> <threads> <outfile> <port>" fullword ascii
+		$s2 = "Difference between server modulus and host modulus is only %d. It's illegal and may not work" fullword ascii
+		$s3 = "rm -rf scan.log" fullword ascii
+	condition:
+		all of them
 }
