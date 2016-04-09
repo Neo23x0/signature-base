@@ -2,3 +2,5 @@
 threatintel/get-otx-iocs_flo.py
 
 threatintel/get-misp-iocs_flo.py
+
+yara/gen_winrarsfx_uncom_vendors.yar
