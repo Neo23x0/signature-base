@@ -7,7 +7,7 @@ rule RTF_Anti_Analysis_Header {
       		score = 70
 	condition:
 		uint32(0) == 0x74725C7B /* {\rt */
-		and not uint8(4) == 0x66 /* nof followed by 'f' */
+		and not uint8(4) == 0x66 /* not followed by 'f' */
 }
 
 rule RTF_Anti_Analysis_Content {
