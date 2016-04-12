@@ -2915,7 +2915,6 @@ rule mimikatz
 		author			= "Benjamin DELPY (gentilkiwi)"
 		tool_author		= "Benjamin DELPY (gentilkiwi)"
       score          = 80
-      type           = "file"
 	strings:
 		$exe_x86_1		= { 89 71 04 89 [0-3] 30 8d 04 bd }
 		$exe_x86_2		= { 89 79 04 89 [0-3] 38 8d 04 b5 }
