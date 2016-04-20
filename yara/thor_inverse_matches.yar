@@ -39,7 +39,7 @@ rule iexplore_ANOMALY {
 		$win2003_win7_u4 = "varfileinfo" wide fullword nocase
 	condition:
 		filename == "iexplore.exe"
-      and not filepath contains "teamviewer" 
+      and not filepath contains "teamviewer"
       and not 1 of ($win*) and not WINDOWS_UPDATE_BDC
 }
 
@@ -103,7 +103,7 @@ rule Utilman_ANOMALY {
 		$win2000 = "Start with Utility Manager" fullword wide
 		$win2012 = "utilman2.exe" fullword wide
 	condition:
-		filename == "utilman.exe" and not 1 of ($win*) and not WINDOWS_UPDATE_BDC
+		( filename == "utilman.exe" or filename == "Utilman.exe" ) and not 1 of ($win*) and not WINDOWS_UPDATE_BDC
 }
 
 rule osk_ANOMALY {
