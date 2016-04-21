@@ -102,7 +102,7 @@ rule maindll_mutex
 rule SLServer_dialog_remains
 {
 	meta:
-		author = "Matt Brooks, @cmatthewbrooks"
+		author = "Matt Brooks, @cmatthewbrooks / modified by Florian Roth"
 		date = "2016/04/18"
 		score = 75
 		description = "Searches for related dialog remnants."
@@ -110,12 +110,22 @@ rule SLServer_dialog_remains
 	strings:
 		$slserver = "SLServer" wide fullword
 
+		$fp1 = "Dell Inc." wide fullword
+		$fp2 = "ScriptLogic Corporation" wide
+
+		$extra1 = "SLSERVER" wide fullword
+		$extra2 = "\\SLServer.pdb" ascii
+
 	condition:
 		//MZ header
 		uint16(0) == 0x5A4D and
 
 		//PE signature
 		uint32(uint32(0x3C)) == 0x00004550 and
+
+		// Reduce false positives
+		not 1 of ($fp*) and
+		1 of ($extra*) and
 
 		$slserver
 }
