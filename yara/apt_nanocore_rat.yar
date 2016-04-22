@@ -23,7 +23,6 @@ rule Nanocore_RAT_Gen_1 {
 		$x5 = "$374e0775-e893-4e72-806c-a8d880a49ae7" fullword ascii /* score: '7.00' */
 		$x6 = "remove_Pong" fullword ascii /* PEStudio Blacklist: strings */ /* score: '14.51' (binarly: 5.51) */
 		$x7 = "Monitorinjection" fullword ascii /* PEStudio Blacklist: strings */ /* score: '13.67' (binarly: -3.33) */
-		$x8 = "PongEventHandler" fullword ascii /* PEStudio Blacklist: strings */ /* score: '11.44' (binarly: 1.44) */
 	condition:
 		( uint16(0) == 0x5a4d and filesize < 100KB and ( 1 of them ) ) or ( all of them )
 }
