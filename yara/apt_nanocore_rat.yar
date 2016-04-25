@@ -18,10 +18,9 @@ rule Nanocore_RAT_Gen_1 {
 		$x2 = "RunPE1" fullword ascii
 		$x3 = "082B8C7D3F9105DC66A7E3267C9750CF43E9D325" fullword ascii
 		$x4 = "$374e0775-e893-4e72-806c-a8d880a49ae7" fullword ascii
-		$x5 = "remove_Pong" fullword ascii
-		$x6 = "Monitorinjection" fullword ascii
+		$x5 = "Monitorinjection" fullword ascii
 	condition:
-		( uint16(0) == 0x5a4d and filesize < 100KB and ( 1 of them ) ) or ( all of them )
+		( uint16(0) == 0x5a4d and filesize < 100KB and ( 1 of them ) ) or ( 3 of them )
 }
 
 rule Nanocore_RAT_Gen_2 {
