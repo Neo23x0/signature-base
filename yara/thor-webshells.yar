@@ -3440,7 +3440,6 @@ rule r57shell_php_php {
 		author = "Neo23x0 Yara BRG + customization by Stefan -dfate- Molls"
 		hash = "d28445de424594a5f14d0fe2a7c4e94f"
 	strings:
-		$s0 = "r57shell" fullword
 		$s1 = " else if ($HTTP_POST_VARS['with'] == \"lynx\") { $HTTP_POST_VARS['cmd']= \"lynx "
 		$s2 = "RusH security team"
 		$s3 = "'ru_text12' => 'back-connect"
@@ -4351,7 +4350,6 @@ rule telnet_cgi {
 		author = "Neo23x0 Yara BRG + customization by Stefan -dfate- Molls"
 		hash = "dee697481383052980c20c48de1598d1"
 	strings:
-		$s0 = "www.rohitab.com"
 		$s1 = "W A R N I N G: Private Server"
 		$s2 = "print \"Set-Cookie: SAVEDPWD=;\\n\"; # remove password cookie"
 		$s3 = "$Prompt = $WinNT ? \"$CurrentDir> \" : \"[admin\\@$ServerName $C"

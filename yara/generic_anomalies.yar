@@ -240,7 +240,7 @@ rule Suspicious_Size_spoolsv_exe {
     condition:
         uint16(0) == 0x5a4d
         and filename == "spoolsv.exe"
-        and ( filesize < 50KB or filesize > 900KB )
+        and ( filesize < 50KB or filesize > 930KB )
 }
 
 rule Suspicious_Size_smss_exe {
