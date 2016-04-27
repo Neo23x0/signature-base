@@ -9,7 +9,7 @@ WCE SERVICE
 
 # Mimikatz
 eo.oe.kiwi
-<3 eo.oe 
+<3 eo.oe
 mimilib
 mimikatz
 Mimikatz
@@ -44,6 +44,5 @@ Powersploit
 
 # Powershell Mimikatz https://adsecurity.org/?p=2604
 Invoke-Mimikatz
-System.Reflection.Emit.AssemblyBuilderAccess
 
 # Don't remove this line
