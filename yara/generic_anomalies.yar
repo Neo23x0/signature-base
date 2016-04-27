@@ -252,7 +252,7 @@ rule Suspicious_Size_smss_exe {
     condition:
         uint16(0) == 0x5a4d
         and filename == "smss.exe"
-        and ( filesize < 40KB or filesize > 140KB )
+        and ( filesize < 40KB or filesize > 320KB )
 }
 
 rule Suspicious_Size_wininit_exe {
