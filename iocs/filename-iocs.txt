@@ -313,9 +313,11 @@ Microsoft\\MediaPlayer\\updatewindws\.exe;100
 (Temp|Tmp|TEMP)\\muysf\\ipbuy.exe;70
 \\Order Details\.xls\.pps;60
 
-# Sofacy - Malware Bundestag http://goo.gl/OtmPzq
-Windows\\winexesvc\.exe;70
+# Sofacy - Malware http://goo.gl/OtmPzq
 \\svchost\.exe\.exe;70
+
+# Winexesvc - Remote Execution Service - often used by Pentesters and Hackers
+Windows\\winexesvc\.exe;70
 
 # Wild Neutron File Names https://goo.gl/Qew6dT
 AppData\\Roaming\\FlashUtil\.exe;60

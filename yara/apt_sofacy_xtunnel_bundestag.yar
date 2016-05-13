@@ -21,9 +21,9 @@ rule apt_sofacy_xtunnel {
         ((uint16(0) == 0x5A4D) or (uint16(0) == 0xCFD0)) and (($xaps) or (all of ($variant1*)) or (all of ($variant2*)) or (6 of ($mix*)))
 }
 
-rule Sofacy_Bundestag_Winexe {
+rule Winexe_RemoteExecution {
     meta:
-        description = "Winexe tool used by Sofacy group in Bundestag APT"
+        description = "Winexe tool used by Sofacy group several APT cases"
         author = "Florian Roth"
         reference = "http://dokumente.linksfraktion.de/inhalt/report-orig.pdf"
         date = "2015-06-19"
@@ -36,7 +36,7 @@ rule Sofacy_Bundestag_Winexe {
         uint16(0) == 0x5a4d and filesize < 115KB and all of them
 }
 
-rule Sofacy_Bundestag_Mal2 {
+rule Sofacy_Mal2 {
     meta:
         description = "Sofacy Group Malware Sample 2"
         author = "Florian Roth"
@@ -53,7 +53,7 @@ rule Sofacy_Bundestag_Mal2 {
         uint16(0) == 0x5a4d and ( 1 of ($x*) ) and $s1
 }
 
-rule Sofacy_Bundestag_Mal3 {
+rule Sofacy_Mal3 {
     meta:
         description = "Sofacy Group Malware Sample 3"
         author = "Florian Roth"
