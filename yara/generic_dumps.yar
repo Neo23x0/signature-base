@@ -20,8 +20,8 @@ rule NTLM_Dump_Output {
 		date = "2015-10-01"
 		score = 75
 	strings:
-		$s0 = "AAD3B435B51404EEAAD3B435B51404EE:31D6CFE0D16AE931B73C59D7E0C089C0" ascii
-		$s1 = "aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0" ascii
+		$s0 = "500:AAD3B435B51404EEAAD3B435B51404EE:" ascii
+		$s1 = "500:aad3b435b51404eeaad3b435b51404ee:" ascii
 	condition:
 		1 of them
 }
