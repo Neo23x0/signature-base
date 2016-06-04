@@ -1233,4 +1233,12 @@ AppData\\adobe\\adobe\.dat;65
 \\winlog[^o]n\.exe;55
 \\winlogon[0-9_a-z]{1,3}\.exe;55
 
+# FireEye Irongate
+\\bla\.exe;80
+\\update_no_pipe\.exe;80
+\\scada\.exe;50
+\\Step7ConMgr\.dll;70
+\\scomma scxrt2\.ini;80
+\\scxrt2\.ini;80
+
 # End
