@@ -1,3 +1,17 @@
+\\Temp\\80\.exe;TeslaCrypt 4.1A and the Malware Attack Chain https://www.endgame.com/blog/your-package-has-been-successfully-encrypted-teslac
+%USERPROFILE%\\Documents\\desctop\._ini;TeslaCrypt 4.1A and the Malware Attack Chain https://www.endgame.com/blog/your-package-has-been-successfully-encrypted-teslac
+%USERPROFILE%\\Documents\\\-!recover!\-!file!\-\.txt;TeslaCrypt 4.1A and the Malware Attack Chain https://www.endgame.com/blog/your-package-has-been-successfully-encrypted-teslac
+\-!RecOveR!\-xdyxv\+\+\.Htm;TeslaCrypt 4.1A and the Malware Attack Chain https://www.endgame.com/blog/your-package-has-been-successfully-encrypted-teslac
+\-!RecOveR!\-xdyxv\+\+\.Txt;TeslaCrypt 4.1A and the Malware Attack Chain https://www.endgame.com/blog/your-package-has-been-successfully-encrypted-teslac
+\-!RecOveR!\-xdyxv\+\+\.Png;TeslaCrypt 4.1A and the Malware Attack Chain https://www.endgame.com/blog/your-package-has-been-successfully-encrypted-teslac
+%LocalAppData%\\system\.exe;7ev3n Ransomware https://www.grahamcluley.com/2016/01/7ev3n-ransomware-demands-13-bitcoins-paymen
+%LocalAppData%\\del\.bat;7ev3n Ransomware https://www.grahamcluley.com/2016/01/7ev3n-ransomware-demands-13-bitcoins-paymen
+%LocalAppData%\\bcd\.bat;7ev3n Ransomware https://www.grahamcluley.com/2016/01/7ev3n-ransomware-demands-13-bitcoins-paymen
+%LocalAppData%\\time\.e;7ev3n Ransomware https://www.grahamcluley.com/2016/01/7ev3n-ransomware-demands-13-bitcoins-paymen
+%LocalAppData%\\uac\.ex;7ev3n Ransomware https://www.grahamcluley.com/2016/01/7ev3n-ransomware-demands-13-bitcoins-paymen
+YOUR_FILES_ARE_LOCKED\.txt;.CryptoHasYou. Ransomware http://www.nyxbone.com/malware/CryptoHasYou.html
+Bewerbungsmappe_gepackt\.exe;Petrya Ransomware http://www.heise.de/newsticker/meldung/Erpressungs-Trojaner-Petya-riegelt-den-ge
+Bewerbungsmappe\-gepackt\.exe;Petrya Ransomware http://www.heise.de/newsticker/meldung/Erpressungs-Trojaner-Petya-riegelt-den-ge
 \\this\.morning\.rar;Operation Arid Viper Slithers Back into View https://www.proofpoint.com/us/threat-insight/post/Operation-Arid-Viper-Slithers-
 \\this\.morning\.exe;Operation Arid Viper Slithers Back into View https://www.proofpoint.com/us/threat-insight/post/Operation-Arid-Viper-Slithers-
 C:\\Program Files\\Realtek\\AudRTx86\.dll;Operation Arid Viper Slithers Back into View https://www.proofpoint.com/us/threat-insight/post/Operation-Arid-Viper-Slithers-
@@ -40,6 +54,22 @@ PlanProposal\\new questionnaire\\Voter Plan Proposal;Defending the White Elephan
 %Windir%\\SysWow64\\wshnetc\.dll;Regin - Further Investigations by Symantec Aug 2015 http://www.symantec.com/connect/blogs/regin-further-unravelling-mysteries-cybere
 %Windir%\\system32\\svcstat\.exe;Regin - Further Investigations by Symantec Aug 2015 http://www.symantec.com/connect/blogs/regin-further-unravelling-mysteries-cybere
 %Windir%\\system32\\svcsstat\.exe;Regin - Further Investigations by Symantec Aug 2015 http://www.symantec.com/connect/blogs/regin-further-unravelling-mysteries-cybere
+C:\\Windows\\System32\\rpcnet\.exe;Absolute Computrace http://www.absolute.com/en/about/pressroom/research/kaspersky / http://www.googl
+C:\\Windows\\System32\\rpcnetp\.exe;Absolute Computrace http://www.absolute.com/en/about/pressroom/research/kaspersky / http://www.googl
+C:\\Windows\\System32\\wceprv\.dll;Absolute Computrace http://www.absolute.com/en/about/pressroom/research/kaspersky / http://www.googl
+C:\\Windows\\System32\\identprv\.dll;Absolute Computrace http://www.absolute.com/en/about/pressroom/research/kaspersky / http://www.googl
+C:\\Windows\\System32\\Upgrd\.exe;Absolute Computrace http://www.absolute.com/en/about/pressroom/research/kaspersky / http://www.googl
+C:\\Windows\\System32\\autochk\.exe\.bak;Absolute Computrace http://www.absolute.com/en/about/pressroom/research/kaspersky / http://www.googl
+C:\\Windows\\System32\\autochk\.exe:bak;Absolute Computrace http://www.absolute.com/en/about/pressroom/research/kaspersky / http://www.googl
+C:\\Program Files\\Lenovo\\VisualDiscovery;Superfish https://filippo.io/Badfish/ / https://support.lenovo.com/us/en/product_security/
+C:\\Program Files \(x86\)\\Lenovo\\VisualDiscovery;Superfish https://filippo.io/Badfish/ / https://support.lenovo.com/us/en/product_security/
+C:\\Windows\\SysWOW64\\VisualDiscovery\.ini;Superfish https://filippo.io/Badfish/ / https://support.lenovo.com/us/en/product_security/
+C:\\Windows\\SysWOW64\\VisualDiscoveryOff\.ini;Superfish https://filippo.io/Badfish/ / https://support.lenovo.com/us/en/product_security/
+C:\\Windows\\System32\\VisualDiscoveryOff\.ini;Superfish https://filippo.io/Badfish/ / https://support.lenovo.com/us/en/product_security/
+C:\\Windows\\System32\\VDWFP\.sys;Superfish https://filippo.io/Badfish/ / https://support.lenovo.com/us/en/product_security/
+C:\\Windows\\System32\\VDWFP64\.sys;Superfish https://filippo.io/Badfish/ / https://support.lenovo.com/us/en/product_security/
+C:\\Windows\\SysWOW64\\DWFP\.sys;Superfish https://filippo.io/Badfish/ / https://support.lenovo.com/us/en/product_security/
+C:\\Windows\\SysWOW64\\DWFP64\.sys;Superfish https://filippo.io/Badfish/ / https://support.lenovo.com/us/en/product_security/
 %AppData%\\Local\\Temp\\bootloader\.dec;RTF Exploit Installs Italian RAT: uWarrior http://researchcenter.paloaltonetworks.com/2015/08/rtf-exploit-installs-italian-
 %AppData%\\Roaming\\warriors\.dat;RTF Exploit Installs Italian RAT: uWarrior http://researchcenter.paloaltonetworks.com/2015/08/rtf-exploit-installs-italian-
 /Users/Shared/start\.sh;OS X / Wirelurker (OS X) / dropped by start.sh / c2 domain / c2 hostname / v2 update url / initial
