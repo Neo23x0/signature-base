@@ -4,7 +4,7 @@ rule Office_AutoOpen_Macro {
 		description = "Detects an Microsoft Office file that contains the AutoOpen Macro function"
 		author = "Florian Roth"
 		date = "2015-05-28"
-		score = 60
+		score = 40
 		hash1 = "4d00695d5011427efc33c9722c61ced2"
 		hash2 = "63f6b20cb39630b13c14823874bd3743"
 		hash3 = "66e67c2d84af85a569a04042141164e6"
@@ -16,7 +16,7 @@ rule Office_AutoOpen_Macro {
 		$s1 = "AutoOpen" ascii fullword
 		$s2 = "Macros" wide fullword
 	condition:
-		( 
+		(
 			uint32be(0) == 0xd0cf11e0 or 	// DOC, PPT, XLS
 			uint32be(0) == 0x504b0304		// DOCX, PPTX, XLSX (PKZIP)
 		)
@@ -41,6 +41,6 @@ rule Office_as_MHTML {
 		$x1 = "QWN0aXZlTWltZQA" ascii 	// Base64 encoded 'ActiveMime'
 		$x2 = "0M8R4KGxGuE" ascii 		// Base64 encoded office header D0CF11E0A1B11AE1..
 	condition:
-		uint32be(0) == 0x4d494d45 // "MIME" header 
+		uint32be(0) == 0x4d494d45 // "MIME" header
 		and all of ($s*) and 1 of ($x*)
 }

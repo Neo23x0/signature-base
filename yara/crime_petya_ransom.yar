@@ -23,5 +23,9 @@ rule Petya_Ransomware {
 		$s4 = "@CommandLineMode" fullword wide
 		$s5 = "X-Retry-After" fullword wide
 	condition:
-		uint16(0) == 0x5a4d and filesize < 500KB and $a1 and all of ($s*)
+	(
+		uint16(0) == 0x5a4d and filesize < 500KB and 3 of them
+	) or (
+		all of them
+	) and not filename matches /Google/
 }

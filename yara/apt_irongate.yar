@@ -16,6 +16,7 @@ rule IronGate_APT_Step7ProSim_Gen {
 		score = 90
 		hash1 = "0539af1a0cc7f231af8f135920a990321529479f6534c3b64e571d490e1514c3"
 		hash2 = "fa8400422f3161206814590768fc1a27cf6420fc5d322d52e82899ac9f49e14f"
+		hash3 = "5ab1672b15de9bda84298e0bb226265af09b70a9f0b26d6dfb7bdd6cbaed192d"
 	strings:
 		$x1 = "\\obj\\Release\\Step7ProSim.pdb" ascii
 
