@@ -6973,3 +6973,45 @@ ec309300c950936a1b9f900aa30630b33723c42240ca4db978f2ca5e0f97afed;PoseidonGroup A
 f028ee20363d3a17d30175508bbc4738dd8e245a94bfb200219a40464dd09b3a;PoseidonGroup APT MalDoc Sample
 1e62629dae05bf7ee3fe1346faa60e6791c61f92dd921daa5ce2bdce2e9d4216;PoseidonGroup APT MalDoc Sample
 27449198542fed64c23f583617908c8648fa4b4633bacd224f97e7f5d8b18778;PoseidonGroup APT MalDoc Sample
+
+558461b6fb0441e7f70c4224963490ea49f44d40c5700a4c7fd19be4c62b3d6a;Mofang report by FoxIT https://goo.gl/t3uUTG
+a835baa7ffc265346443b5d6f4828d7221594bd91be8afc08152f3d68698b672;Mofang report by FoxIT https://goo.gl/t3uUTG
+2653ecc3ea17e0d5613ddebe76bdddea6c108713330b0bd8e68d2d5141a4a07d;Mofang report by FoxIT https://goo.gl/t3uUTG
+2d40ca005a7df46b3f7c691006c9951fc3bee25bb4fa4a0ebbdee76d7d117fdf;Mofang report by FoxIT https://goo.gl/t3uUTG
+af67df976fb941c99f4d3dd948ed4828a445dd6f9c98ffc2070c8be76c60484d;Mofang report by FoxIT https://goo.gl/t3uUTG
+e5bcb55d7881b3b367521532af173e85d1eee66badf89586168d22ed17bc25b2;Mofang report by FoxIT https://goo.gl/t3uUTG
+d834e70a524a87945f7a8880b78f5e10460c1d2b60f3e487cb6f05c8221aa4f8;Mofang report by FoxIT https://goo.gl/t3uUTG
+0cc1660e384683f2147e02ff76c69822ee2b98433c3a3613bbd28b9d8258da38;Mofang report by FoxIT https://goo.gl/t3uUTG
+f71025d47105dcd674a0b9ef0c83a83854ba20cb0eb8168da36a7908d150e44f;Mofang report by FoxIT https://goo.gl/t3uUTG
+5dc3f4a067ae125f99fa90844bba667235ec7ef667353e282ff29712dda5b71c;Mofang report by FoxIT https://goo.gl/t3uUTG
+8ee3fc5ccef751e098c4e64b36e8b5c95dc48473ac83380b59d10ea32f9946f9;Mofang report by FoxIT https://goo.gl/t3uUTG
+35589ce27c27dd4407a79540f32031d752b774b4bd6b8a3687e19a177ae6b18b;Mofang report by FoxIT https://goo.gl/t3uUTG
+36422e6ccaa50a9ecceb7fb709a9e383552732525cb579f8438237d87aaf8377;Mofang report by FoxIT https://goo.gl/t3uUTG
+3c5c4d68d0fa6520637fb4afe6a7097ec7d0f1d6a738bb0064bb009ea6344e8d;Mofang report by FoxIT https://goo.gl/t3uUTG
+a03bd56eeee9f376eb59c6f4d19bf8a651eeb57bb4ebb7f884192b22a6616e68;Mofang report by FoxIT https://goo.gl/t3uUTG
+b53b27bb3e9d02e3ec5404cf3e67debb90d9337dbb570ca8b8cfce1054428466;Mofang report by FoxIT https://goo.gl/t3uUTG
+ba0057a1b132ec16559efc832941455cc07f34c434da2a7434f73f1d2141bebf;Mofang report by FoxIT https://goo.gl/t3uUTG
+2b111e287d356ac4561ba4f56135b7c1361b7da32e5825028a5e300e44b05579;Mofang report by FoxIT https://goo.gl/t3uUTG
+029e735581c38d66f03aa0e9d1c22959b0bc8dfe298b9e91b127c42c7f904b5e;Mofang report by FoxIT https://goo.gl/t3uUTG
+15b9c033b49a5328ddb06997a817af55469aaf6bc3911de030e6f5ad845160bc;Mofang report by FoxIT https://goo.gl/t3uUTG
+33b288455c12bf7678fb5fd028ff3d42fcaf33cf833a147cb7f0f89f7dad0d8f;Mofang report by FoxIT https://goo.gl/t3uUTG
+eb2d3c9e15b189dd02f753f805e90493254e17d40db6f1228a4e4095c5f260c1;Mofang report by FoxIT https://goo.gl/t3uUTG
+5da5a5643e32d6200567768e6112d4d3161335d8d7a6dd48f02bf444fe98aab3;Mofang report by FoxIT https://goo.gl/t3uUTG
+241c66bb54bd27afeb4805aa8a8045155b81c8cd7093dde7ef19273728f502eb;Mofang report by FoxIT https://goo.gl/t3uUTG
+577622fbf0a7bebc60844df808e75eef81a3d62ec6943f80168ac0d5ef39de5c;Mofang report by FoxIT https://goo.gl/t3uUTG
+d2d4723f8c3bba910cade05c9ecea00cdcc647d42232bccc610d066792a95b15;Mofang report by FoxIT https://goo.gl/t3uUTG
+dae17755e106be27ea4b97120906c46d4fcbb14cc8d9fc2c432f4c0cc74bb3fb;Mofang report by FoxIT https://goo.gl/t3uUTG
+23132f4dfd4cb8abe11af1064e4930bc36a464d1235f43bad4ff20708babcc34;Mofang report by FoxIT https://goo.gl/t3uUTG
+fa28559a4e0e920b70129cea95a98da9a409eaa093c63f341a7809692b31e723;Mofang report by FoxIT https://goo.gl/t3uUTG
+234d62ffd83c3972a32e89685787ff3aab4548cd16e4384c3c704a059ef731ce;Mofang report by FoxIT https://goo.gl/t3uUTG
+e01aae93f68a84829fd8c0bc5ae923897d32af3a1d78623839fcfd18c99627cc;Mofang report by FoxIT https://goo.gl/t3uUTG
+2a1a0d8d81647c321759197a15f14091ab5e76b913eb2d7d28c6bb053166d882;Mofang report by FoxIT https://goo.gl/t3uUTG
+6882664f1d0eb8c8cf61bdd16494380d34b6207455638342c6c3a7eef1ed9197;Mofang report by FoxIT https://goo.gl/t3uUTG
+1922273bb36ab282e3b7846f1bb2802f5803bde66078fa996e44b84d0265675f;Mofang report by FoxIT https://goo.gl/t3uUTG
+558461b6fb0441e7f70c4224963490ea49f44d40c5700a4c7fd19be4c62b3d6a;Mofang report by FoxIT https://goo.gl/t3uUTG
+1ca75e9b1761e15968d01a6e4f0a9f6ce47ba7ee4047d1533fb838f0f6ab28e2;Mofang report by FoxIT https://goo.gl/t3uUTG
+b7edbe6aee1896a952fcce2305c2bb7d8e77162bb45e305c64c7f8c9f63b3ab5;Mofang report by FoxIT https://goo.gl/t3uUTG
+ac3b42453fac93e575988ba73ab24311515b090d57b1ad9f27dcbae8363f2d99;Mofang report by FoxIT https://goo.gl/t3uUTG
+0741a18bfd79dac1fb850a7d4fcc62098c43fb0c803df6cd9934e82a1362dd07;Mofang report by FoxIT https://goo.gl/t3uUTG
+722f41aa2c7d670364b7a9bb683a0025aef5893b34af67873972cdaf09490ad2;Mofang report by FoxIT https://goo.gl/t3uUTG
+7deb75e95e8e22c6abb3b33c00b47a93122b8c744e8f66affd9748292e5a177f;Mofang report by FoxIT https://goo.gl/t3uUTG
