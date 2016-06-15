@@ -1241,4 +1241,11 @@ AppData\\adobe\\adobe\.dat;65
 \\scomma scxrt2\.ini;80
 \\scxrt2\.ini;80
 
+# Sofacy APT http://goo.gl/YXb8ZX
+[Cc]:\\ProgramData\\iprpp\.dll;100
+AppData\\Roaming\\amdcache\.dll;100
+
+# Sofacy APT http://goo.gl/mzAa97
+AppData\\Roaming\\btecache\.dll;90
+
 # End
