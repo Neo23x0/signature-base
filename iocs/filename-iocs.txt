@@ -1248,4 +1248,7 @@ AppData\\Roaming\\amdcache\.dll;100
 # Sofacy APT http://goo.gl/mzAa97
 AppData\\Roaming\\btecache\.dll;90
 
+# Many malware samples - including StarCruft
+\\scvhosts\.exe;70
+
 # End
