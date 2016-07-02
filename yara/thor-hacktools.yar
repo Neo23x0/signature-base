@@ -22,12 +22,14 @@
 rule WindowsCredentialEditor
 {
     meta:
-    	description = "Windows Credential Editor" threat_level = 10 score = 90
+    	description = "Windows Credential Editor"
+      threat_level = 10
+      score = 90
     strings:
 		$a = "extract the TGT session key"
 		$b = "Windows Credentials Editor"
     condition:
-    	$a or $b
+    	all of them
 }
 
 rule Amplia_Security_Tool
@@ -112,7 +114,10 @@ rule HackTool_Samples {
 }
 
 rule HackTool_Producers {
-	meta: description = "Hacktool Producers String" threat_level = 5 score = 50
+	meta: description = "Hacktool Producers String"
+   threat_level = 5
+   score = 50
+   nodeepdive = 1
 	strings:
 	$a1 = "www.oxid.it"
 	$a2 = "www.analogx.com"
