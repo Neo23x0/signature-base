@@ -12,7 +12,8 @@ rule Duqu2_Sample1 {
 		description = "Detects malware - Duqu2 (cross-matches with IronTiger malware and Derusbi)"
 		author = "Florian Roth"
 		reference = "https://securelist.com/blog/research/70504/the-mystery-of-duqu-2-0-a-sophisticated-cyberespionage-actor-returns/"
-		2016-07-02 19:28:03
+		date = "2016-07-02"
+		score = 80
 		hash1 = "6b146e3a59025d7085127b552494e8aaf76450a19c249bfed0b4c09f328e564f"
 		hash2 = "8e97c371633d285cd8fc842f4582705052a9409149ee67d97de545030787a192"
 		hash3 = "2796a119171328e91648a73d95eb297edc220e8768f4bbba5fb7237122a988fc"
