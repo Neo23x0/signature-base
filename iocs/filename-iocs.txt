@@ -1251,4 +1251,7 @@ AppData\\Roaming\\btecache\.dll;90
 # Many malware samples - including StarCruft
 \\scvhosts\.exe;70
 
+# Kaspersky Report https://goo.gl/iWUz63
+\\[Ss]ystem32\\scclient\.exe;80
+
 # End

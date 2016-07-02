@@ -1,3 +1,13 @@
+pstests.ru;The PhotoMiner Campaign https://www.guardicore.com/2016/06/the-photominer-campaign/
+jobtests.ru;The PhotoMiner Campaign https://www.guardicore.com/2016/06/the-photominer-campaign/
+testpsy.ru;The PhotoMiner Campaign https://www.guardicore.com/2016/06/the-photominer-campaign/
+stafftest.ru;The PhotoMiner Campaign https://www.guardicore.com/2016/06/the-photominer-campaign/
+hrtests.ru;The PhotoMiner Campaign https://www.guardicore.com/2016/06/the-photominer-campaign/
+profetest.ru;The PhotoMiner Campaign https://www.guardicore.com/2016/06/the-photominer-campaign/
+qptest.ru;The PhotoMiner Campaign https://www.guardicore.com/2016/06/the-photominer-campaign/
+managtest.ru;The PhotoMiner Campaign https://www.guardicore.com/2016/06/the-photominer-campaign/
+testworks.ru;The PhotoMiner Campaign https://www.guardicore.com/2016/06/the-photominer-campaign/
+iqtesti.ru;The PhotoMiner Campaign https://www.guardicore.com/2016/06/the-photominer-campaign/
 193.104.41.178;SteamStealer IPs https://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / h
 31.170.164.100;SteamStealer IPs https://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / h
 37.187.37.235;SteamStealer IPs https://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / h
@@ -309,6 +319,327 @@
 193.124.114.47;SteamStealer IPs https://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / h
 185.86.76.5;SteamStealer IPs https://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / h
 192.195.77.38;SteamStealer IPs https://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / h
+193.124.117.150;SteamStealer IPs https://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / h
+5.63.157.140;SteamStealer IPs https://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / h
+195.133.201.69;SteamStealer IPs https://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / h
+37.140.192.188;SteamStealer IPs https://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / h
+5.200.35.225;SteamStealer IPs https://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / h
+193.124.0.52;SteamStealer IPs https://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / h
+46.38.50.245;SteamStealer IPs https://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / h
+93.170.186.90;SteamStealer IPs https://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / h
+193.124.0.91;SteamStealer IPs https://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / h
+45.63.16.219;SteamStealer IPs https://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / h
+164.132.111.204;SteamStealer IPs https://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / h
+193.124.115.61;SteamStealer IPs https://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / h
+185.71.65.103;SteamStealer IPs https://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / h
+80.78.241.203;SteamStealer IPs https://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / h
+80.78.253.221;SteamStealer IPs https://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / h
+exceedcosmeticos.com.br;Banking Trojans as a Service\u2014Theft Made Easy in Brazil http://blog.trendmicro.com/trendlabs-security-intelligence/banking-trojans-as-a-
+www.foschiattisrl.it;Banking Trojans as a Service\u2014Theft Made Easy in Brazil http://blog.trendmicro.com/trendlabs-security-intelligence/banking-trojans-as-a-
+lbnvy.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+wniyz.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+prtests.ru;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+bnxom.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+vjeyu.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+pealp.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+hrtests.ru;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+ppymk.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+ejaiy.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+jobtests.ru;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+uogwq.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+ofmio.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+uprhr.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+mdbfj.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+yccwf.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+szbia.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+jdjkc.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+eyxvm.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+psilh.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+spvok.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+iffis.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+ndyqr.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+buacs.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+96hq.com;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+ybnews.cn;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+wisit.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+xrjsa.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+zknhb.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+wafpp.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+pstests.ru;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+testpsy.ru;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+fbldk.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+ewnoh.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+trwrx.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+wvrwv.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+bveat.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+ngdhi.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+qptest.ru;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+ejqpw.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+hitaz.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+lwwlg.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+yuhoa.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+profetest.ru;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+mlwhv.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+yhens.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+qilwl.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+xvrqo.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+voxzn.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+eadlr.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+stafftest.ru;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+dduni.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+ncasy.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+fkfrl.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+quiwq.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+wikxu.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+vkrov.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+apbqd.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+wejyr.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+iqtesti.ru;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+vjrye.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+yuaek.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+mfxaw.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+osjjo.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+mdqlo.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+zylhq.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+pool.minexmr.com;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+monero.crypto-pool.fr;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+www.ggkuu.top;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+mine.moneropool.com;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+xmr.prohash.net;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+178.32.238.223;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+198.204.254.82;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+5.196.241.192;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+88.214.200.145;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+178.33.188.146;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+151.80.9.92;Resurrection of the Evil Miner https://www.fireeye.com/blog/threat-research/2016/06/resurrection-of-the-evil-mi
+23.227.196.217;Intrusion into the Democratic National Committee https://www.crowdstrike.com/blog/bears-midst-intrusion-democratic-national-commi
+45.32.129.185;Intrusion into the Democratic National Committee https://www.crowdstrike.com/blog/bears-midst-intrusion-democratic-national-commi
+185.86.148.227;Intrusion into the Democratic National Committee https://www.crowdstrike.com/blog/bears-midst-intrusion-democratic-national-commi
+218.1.98.203;Intrusion into the Democratic National Committee https://www.crowdstrike.com/blog/bears-midst-intrusion-democratic-national-commi
+185.100.84.134;Intrusion into the Democratic National Committee https://www.crowdstrike.com/blog/bears-midst-intrusion-democratic-national-commi
+187.33.33.8;Intrusion into the Democratic National Committee https://www.crowdstrike.com/blog/bears-midst-intrusion-democratic-national-commi
+58.49.58.58;Intrusion into the Democratic National Committee https://www.crowdstrike.com/blog/bears-midst-intrusion-democratic-national-commi
+misdepatrment.com;Intrusion into the Democratic National Committee https://www.crowdstrike.com/blog/bears-midst-intrusion-democratic-national-commi
+pstests.ru;Obfuscated Bitcoin Miner Propagates Through FTP Using Password Dictionary https://blog.fortinet.com/2016/06/14/obfuscated-bitcoin-miner-propagates-through
+jobtests.ru;Obfuscated Bitcoin Miner Propagates Through FTP Using Password Dictionary https://blog.fortinet.com/2016/06/14/obfuscated-bitcoin-miner-propagates-through
+testpsy.ru;Obfuscated Bitcoin Miner Propagates Through FTP Using Password Dictionary https://blog.fortinet.com/2016/06/14/obfuscated-bitcoin-miner-propagates-through
+prtests.ru;Obfuscated Bitcoin Miner Propagates Through FTP Using Password Dictionary https://blog.fortinet.com/2016/06/14/obfuscated-bitcoin-miner-propagates-through
+stafftest.ru;Obfuscated Bitcoin Miner Propagates Through FTP Using Password Dictionary https://blog.fortinet.com/2016/06/14/obfuscated-bitcoin-miner-propagates-through
+hrtests.ru;Obfuscated Bitcoin Miner Propagates Through FTP Using Password Dictionary https://blog.fortinet.com/2016/06/14/obfuscated-bitcoin-miner-propagates-through
+profetest.ru;Obfuscated Bitcoin Miner Propagates Through FTP Using Password Dictionary https://blog.fortinet.com/2016/06/14/obfuscated-bitcoin-miner-propagates-through
+qptest.ru;Obfuscated Bitcoin Miner Propagates Through FTP Using Password Dictionary https://blog.fortinet.com/2016/06/14/obfuscated-bitcoin-miner-propagates-through
+iqtesti.ru;Obfuscated Bitcoin Miner Propagates Through FTP Using Password Dictionary https://blog.fortinet.com/2016/06/14/obfuscated-bitcoin-miner-propagates-through
+webconncheck.myfw.us;Flash zero-day exploit deployed by the ScarCruft APT Group https://securelist.com/blog/research/75100/operation-daybreak/
+reg.flnet.org;Flash zero-day exploit deployed by the ScarCruft APT Group https://securelist.com/blog/research/75100/operation-daybreak/
+212.7.217.10;Flash zero-day exploit deployed by the ScarCruft APT Group https://securelist.com/blog/research/75100/operation-daybreak/
+q96b7b7.strangled.net;THE XDEDIC MARKETPLACE https://securelist.com/files/2016/06/xDedic_marketplace_ENG.pdf
+q968787.ignorelist.com;THE XDEDIC MARKETPLACE https://securelist.com/files/2016/06/xDedic_marketplace_ENG.pdf
+q968787.strangled.net;THE XDEDIC MARKETPLACE https://securelist.com/files/2016/06/xDedic_marketplace_ENG.pdf
+q96b7b7.homenet.org;THE XDEDIC MARKETPLACE https://securelist.com/files/2016/06/xDedic_marketplace_ENG.pdf
+q968787.homenet.org;THE XDEDIC MARKETPLACE https://securelist.com/files/2016/06/xDedic_marketplace_ENG.pdf
+q968787.mooo.com;THE XDEDIC MARKETPLACE https://securelist.com/files/2016/06/xDedic_marketplace_ENG.pdf
+q96b7b7.mooo.com;THE XDEDIC MARKETPLACE https://securelist.com/files/2016/06/xDedic_marketplace_ENG.pdf
+q96b7b7.ignorelist.com;THE XDEDIC MARKETPLACE https://securelist.com/files/2016/06/xDedic_marketplace_ENG.pdf
+37.49.224.144;THE XDEDIC MARKETPLACE https://securelist.com/files/2016/06/xDedic_marketplace_ENG.pdf
+5.56.133.145;THE XDEDIC MARKETPLACE https://securelist.com/files/2016/06/xDedic_marketplace_ENG.pdf
+191.101.31.126;THE XDEDIC MARKETPLACE https://securelist.com/files/2016/06/xDedic_marketplace_ENG.pdf
+information.as;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+thediplomat.com;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+consultant.in;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+10.in;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+leases.in;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+registry.active;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+adventurelearning.me;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+consult-myanmar.com;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+comwindws-microsoft.com;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+group.in;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+malware.one;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+components.report;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+cpgcorp.com.sg;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+name.network;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+group.at;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+installed.active;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+logon.had-one-job.com;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+api.officeonlinetool.com;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+www.labofapenetra-tiontester.com;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+www.flymna.com;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+images.defexpoindia14.com;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+www.goodlook.sg;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+www.domesky.com;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+www.irrawaddy.com;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+www.aseanbriefing.com;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+update.nfkllyuisyahooapis.com;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+ie.update-windows-microsoft.com;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+store.outlook-microsoft.net;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+domainsaccount.google.com.gmgoogle.comie.update-windows-microsoft.commail.upgoogle.comsupport.outlook-microsoft.comhelp.outlook-microsoft.comoem.outlook-microsoft.comwindws-microsoft.com;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+www.commerce.gov.mm;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+blog.cobaltstrike.com;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+www.tinroofpopcorn.com;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+travel.tripmans.com;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+mail.upgoogle.com;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+video.today-nytimes.com;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+www.citrixmeeting.com;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+secure2.sophosrv.com;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+support.outlook-microsoft.net;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+library.cpgcorp.org;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+dns.undpus.com;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+www.avgfree.us;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+wbmail.city-library.com;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+www.psychologia.uni.wroc.pl;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+www.go-gga.com;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+www.ipacking.co.kr;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+update.micrdsoft.com;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+116.251.210.77;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+203.81.162.178;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+23.89.200.128;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+178.209.52.72;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+23.89.201.173;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+112.213.117.52;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+150.207.1.67;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+107.191.61.105;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+210.245.85.83;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+49.213.18.15;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+116.251.216.165;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+38.109.190.55;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+117.17.10.10;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+103.229.124.1;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+151.236.14.53;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+116.251.216.72;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+192.157.229.164;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+50.117.47.67;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+50.117.47.66;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+61.250.92.79;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+176.31.220.160;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+178.209.51.164;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+103.39.78.131;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+116.251.216.227;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+116.251.219.142;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+198.98.103.7;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+support.f--secure.com;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
+storsvc.org;New Sofacy Attacks Against US Government Agency http://researchcenter.paloaltonetworks.com/2016/06/unit42-new-sofacy-attacks-aga
+munimonocoe.com;New Sofacy Attacks Against US Government Agency http://researchcenter.paloaltonetworks.com/2016/06/unit42-new-sofacy-attacks-aga
+munimonoce.com;New Sofacy Attacks Against US Government Agency http://researchcenter.paloaltonetworks.com/2016/06/unit42-new-sofacy-attacks-aga
+servicecdp.com;New Sofacy Attacks Against US Government Agency http://researchcenter.paloaltonetworks.com/2016/06/unit42-new-sofacy-attacks-aga
+www.tabsync.net;New Sofacy Attacks Against US Government Agency http://researchcenter.paloaltonetworks.com/2016/06/unit42-new-sofacy-attacks-aga
+www.wscapi.com;New Sofacy Attacks Against US Government Agency http://researchcenter.paloaltonetworks.com/2016/06/unit42-new-sofacy-attacks-aga
+191.101.31.6;New Sofacy Attacks Against US Government Agency http://researchcenter.paloaltonetworks.com/2016/06/unit42-new-sofacy-attacks-aga
+66.172.11.207;New Sofacy Attacks Against US Government Agency http://researchcenter.paloaltonetworks.com/2016/06/unit42-new-sofacy-attacks-aga
+amnkeysvcs.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+velocityfiles.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+aax.me;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+fasttravelclearance.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+call4uaefreedom.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+dohanews.co;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+adhostingcache.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+righttofightexhibit.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+simpleadbanners.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+optimizedimghosting.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+clickstatistic.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+targetedthreats.net;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+uaefreedom.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+freedomhouse.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+owncloud.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+airlineadverts.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+anonymousbitcoindomains.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+amnkeysvc.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+bestairlinepricetags.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+mohaamoon.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+yourls.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+yeastarr.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+adhostingcaches.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+wordsecure.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+edgecacheimagehosting.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+ministrynewschannel.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+incapsulawebcache.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+window.top;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+ministrynewsinfo.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+al7ruae2014.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+www.hrw.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+www.middleeasteye.net;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+www.gc4hr.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+emarati.katib.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+cloud.openmailbox.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+www.powershellempire.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+www.buid.ac.ae;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+www.passivetotal.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+www.echr.org.uk;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+blogs.voanews.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+www.amnesty.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+www.wam.ae;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+www.thenational.ae;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+www.alittihad.ae;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+www.indexoncensorship.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+www.a7rarelemarat.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+www.al-monitor.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+www.huffingtonpost.co.uk;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+ht.transparencytoolkit.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+www.proofpoint.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+templates.entheosweb.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+ssj100.fullsubject.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+en.rsf.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+www.andlabs.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+www.uae-embassy.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+www.youthdiplomaticservice.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+en.alkarama.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+www.article19.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+95.215.44.37;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+r7aluae2.wordpress.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
+hotbed89internal.com;Lurk Banker Trojan: Exclusively for Russia https://securelist.com/blog/research/75040/lurk-banker-trojan-exclusively-for-ru
+hackle14strand.com;Lurk Banker Trojan: Exclusively for Russia https://securelist.com/blog/research/75040/lurk-banker-trojan-exclusively-for-ru
+ri493hfkzrb.com;Lurk Banker Trojan: Exclusively for Russia https://securelist.com/blog/research/75040/lurk-banker-trojan-exclusively-for-ru
+wing97pyroxene.com;Lurk Banker Trojan: Exclusively for Russia https://securelist.com/blog/research/75040/lurk-banker-trojan-exclusively-for-ru
+plaguey42u.com;Lurk Banker Trojan: Exclusively for Russia https://securelist.com/blog/research/75040/lurk-banker-trojan-exclusively-for-ru
+groom58queasy.com;Lurk Banker Trojan: Exclusively for Russia https://securelist.com/blog/research/75040/lurk-banker-trojan-exclusively-for-ru
+paper17cried.com;Lurk Banker Trojan: Exclusively for Russia https://securelist.com/blog/research/75040/lurk-banker-trojan-exclusively-for-ru
+3d4vzfh68.com;Lurk Banker Trojan: Exclusively for Russia https://securelist.com/blog/research/75040/lurk-banker-trojan-exclusively-for-ru
+embassy96k.com;Lurk Banker Trojan: Exclusively for Russia https://securelist.com/blog/research/75040/lurk-banker-trojan-exclusively-for-ru
+elijah69valery.com;Lurk Banker Trojan: Exclusively for Russia https://securelist.com/blog/research/75040/lurk-banker-trojan-exclusively-for-ru
+mechanic17a.com;Lurk Banker Trojan: Exclusively for Russia https://securelist.com/blog/research/75040/lurk-banker-trojan-exclusively-for-ru
+globe79stanhope.com;Lurk Banker Trojan: Exclusively for Russia https://securelist.com/blog/research/75040/lurk-banker-trojan-exclusively-for-ru
+possum89hilarity.com;Lurk Banker Trojan: Exclusively for Russia https://securelist.com/blog/research/75040/lurk-banker-trojan-exclusively-for-ru
+s8f40ocjv.com;Lurk Banker Trojan: Exclusively for Russia https://securelist.com/blog/research/75040/lurk-banker-trojan-exclusively-for-ru
+43xkchcoljx.com;Lurk Banker Trojan: Exclusively for Russia https://securelist.com/blog/research/75040/lurk-banker-trojan-exclusively-for-ru
+diameter40i.com;Lurk Banker Trojan: Exclusively for Russia https://securelist.com/blog/research/75040/lurk-banker-trojan-exclusively-for-ru
+evince76lambert.com;Lurk Banker Trojan: Exclusively for Russia https://securelist.com/blog/research/75040/lurk-banker-trojan-exclusively-for-ru
+carlton69f.com;Lurk Banker Trojan: Exclusively for Russia https://securelist.com/blog/research/75040/lurk-banker-trojan-exclusively-for-ru
+roomful44e.com;Lurk Banker Trojan: Exclusively for Russia https://securelist.com/blog/research/75040/lurk-banker-trojan-exclusively-for-ru
+yf3zf90kz.com;Lurk Banker Trojan: Exclusively for Russia https://securelist.com/blog/research/75040/lurk-banker-trojan-exclusively-for-ru
+scale57banana.com;Lurk Banker Trojan: Exclusively for Russia https://securelist.com/blog/research/75040/lurk-banker-trojan-exclusively-for-ru
+rhythmic81o.com;Lurk Banker Trojan: Exclusively for Russia https://securelist.com/blog/research/75040/lurk-banker-trojan-exclusively-for-ru
+rogers-clients.com;Bolek: Leaked Carberp KBot Source used in Phishing Campaigns http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-
+tangerine-ca.com;Bolek: Leaked Carberp KBot Source used in Phishing Campaigns http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-
+signin-tangerine.com;Bolek: Leaked Carberp KBot Source used in Phishing Campaigns http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-
+knutesecos.com;Bolek: Leaked Carberp KBot Source used in Phishing Campaigns http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-
+tangerine-zone.com;Bolek: Leaked Carberp KBot Source used in Phishing Campaigns http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-
+ogrthuvfewfdcfri5euwg.com;Bolek: Leaked Carberp KBot Source used in Phishing Campaigns http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-
+ogrthuvwfdcfri5euwg.com;Bolek: Leaked Carberp KBot Source used in Phishing Campaigns http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-
+mensabuxus.net;Bolek: Leaked Carberp KBot Source used in Phishing Campaigns http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-
+cibc-security.com;Bolek: Leaked Carberp KBot Source used in Phishing Campaigns http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-
+cibc-clients.com;Bolek: Leaked Carberp KBot Source used in Phishing Campaigns http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-
+rogers-ca.com;Bolek: Leaked Carberp KBot Source used in Phishing Campaigns http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-
+android-securityupdate.com;Bolek: Leaked Carberp KBot Source used in Phishing Campaigns http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-
+signin-rogers.com;Bolek: Leaked Carberp KBot Source used in Phishing Campaigns http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-
+tangerine-can.com;Bolek: Leaked Carberp KBot Source used in Phishing Campaigns http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-
+tangerine-security.com;Bolek: Leaked Carberp KBot Source used in Phishing Campaigns http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-
+91.215.154.155;Bolek: Leaked Carberp KBot Source used in Phishing Campaigns http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-
+falcondefender.com;Operation DustySky \u2013 Part 2 http://www.clearskysec.com/wp-content/uploads/2016/06/Operation-DustySky2_-6.201
+support-update.ml;Operation DustySky \u2013 Part 2 http://www.clearskysec.com/wp-content/uploads/2016/06/Operation-DustySky2_-6.201
+info.education-support.space;Operation DustySky \u2013 Part 2 http://www.clearskysec.com/wp-content/uploads/2016/06/Operation-DustySky2_-6.201
+supports.3utilities.com;Operation DustySky \u2013 Part 2 http://www.clearskysec.com/wp-content/uploads/2016/06/Operation-DustySky2_-6.201
+mafy.2waky.com;Operation DustySky \u2013 Part 2 http://www.clearskysec.com/wp-content/uploads/2016/06/Operation-DustySky2_-6.201
+supports.esmtp.biz;Operation DustySky \u2013 Part 2 http://www.clearskysec.com/wp-content/uploads/2016/06/Operation-DustySky2_-6.201
+www.such.market;Operation DustySky \u2013 Part 2 http://www.clearskysec.com/wp-content/uploads/2016/06/Operation-DustySky2_-6.201
+reme.otzo.com;Operation DustySky \u2013 Part 2 http://www.clearskysec.com/wp-content/uploads/2016/06/Operation-DustySky2_-6.201
+ad.education-support.space;Operation DustySky \u2013 Part 2 http://www.clearskysec.com/wp-content/uploads/2016/06/Operation-DustySky2_-6.201
+support.read-books.org;Operation DustySky \u2013 Part 2 http://www.clearskysec.com/wp-content/uploads/2016/06/Operation-DustySky2_-6.201
+support.servecounterstrike.com;Operation DustySky \u2013 Part 2 http://www.clearskysec.com/wp-content/uploads/2016/06/Operation-DustySky2_-6.201
+news.cloudns.cc;Operation DustySky \u2013 Part 2 http://www.clearskysec.com/wp-content/uploads/2016/06/Operation-DustySky2_-6.201
+mo.mefound.com;Operation DustySky \u2013 Part 2 http://www.clearskysec.com/wp-content/uploads/2016/06/Operation-DustySky2_-6.201
+speed.ns01.biz;Operation DustySky \u2013 Part 2 http://www.clearskysec.com/wp-content/uploads/2016/06/Operation-DustySky2_-6.201
+space.support-reg.space;Operation DustySky \u2013 Part 2 http://www.clearskysec.com/wp-content/uploads/2016/06/Operation-DustySky2_-6.201
+support.mafy-koren.online;Operation DustySky \u2013 Part 2 http://www.clearskysec.com/wp-content/uploads/2016/06/Operation-DustySky2_-6.201
+dedicate-hosting.ml;Zcrypt Expands Reach as &#39;Virus Ransomware&#39; https://blogs.mcafee.com/mcafee-labs/zcrypt-expands-reach-as-virus-ransomware/
+qwertyuiop.gp;Zcrypt Expands Reach as &#39;Virus Ransomware&#39; https://blogs.mcafee.com/mcafee-labs/zcrypt-expands-reach-as-virus-ransomware/
 qarallax.com;Qarallax RAT: Spying On US Visa Applicants https://labsblog.f-secure.com/2016/06/07/qarallax-rat-spying-on-us-visa-applican
 95.211.141.215;Qarallax RAT: Spying On US Visa Applicants https://labsblog.f-secure.com/2016/06/07/qarallax-rat-spying-on-us-visa-applican
 xn--51haaa.ml;JS/Proxychanger https://twitter.com/bartblaze/status/739811356120129536 / https://labs.bitdefend
@@ -354,69 +685,6 @@ ib.qarallax.com;Java malware https://twitter.com/hkashfi/status/7376453468729548
 lib.qarallax.com;Java malware https://twitter.com/hkashfi/status/737645346872954881 / https://twitter.com/hkas
 95.211.141.215;Java malware https://twitter.com/hkashfi/status/737645346872954881 / https://twitter.com/hkas
 198.211.116.109;Java malware https://twitter.com/hkashfi/status/737645346872954881 / https://twitter.com/hkas
-amnkeysvcs.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-velocityfiles.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-aax.me;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-fasttravelclearance.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-call4uaefreedom.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-dohanews.co;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-adhostingcache.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-righttofightexhibit.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-simpleadbanners.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-optimizedimghosting.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-clickstatistic.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-targetedthreats.net;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-uaefreedom.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-freedomhouse.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-owncloud.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-airlineadverts.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-anonymousbitcoindomains.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-amnkeysvc.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-bestairlinepricetags.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-mohaamoon.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-yourls.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-yeastarr.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-adhostingcaches.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-wordsecure.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-edgecacheimagehosting.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-ministrynewschannel.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-incapsulawebcache.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-window.top;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-goo.gl;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-ministrynewsinfo.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-wikileaks.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-al7ruae2014.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-www.hrw.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-www.middleeasteye.net;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-www.gc4hr.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-emarati.katib.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-www.usenix.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-cloud.openmailbox.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-www.powershellempire.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-www.buid.ac.ae;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-www.passivetotal.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-www.echr.org.uk;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-blogs.voanews.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-www.amnesty.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-www.wam.ae;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-www.thenational.ae;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-www.alittihad.ae;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-www.indexoncensorship.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-www.a7rarelemarat.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-www.al-monitor.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-www.huffingtonpost.co.uk;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-ht.transparencytoolkit.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-www.proofpoint.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-templates.entheosweb.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-ssj100.fullsubject.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-en.rsf.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-www.andlabs.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-www.uae-embassy.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-www.youthdiplomaticservice.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-en.alkarama.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-www.article19.org;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-95.215.44.37;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
-r7aluae2.wordpress.com;A New Threat Actor Targets UAE Dissidents https://citizenlab.org/2016/05/stealth-falcon/
 lidgroup.ru;MTA 2016-05-31 - TUESDAY MALSPAM HUNT - MORE LOCKY http://malware-traffic-analysis.net/2016/05/31/index.html
 ladohumano.cl;MTA 2016-05-31 - TUESDAY MALSPAM HUNT - MORE LOCKY http://malware-traffic-analysis.net/2016/05/31/index.html
 kontarkum.org;MTA 2016-05-31 - TUESDAY MALSPAM HUNT - MORE LOCKY http://malware-traffic-analysis.net/2016/05/31/index.html
@@ -554,21 +822,6 @@ airmax2015.leadingineurope.eu;APT Case RUAG https://www.melani.admin.ch/dam/mela
 goback.strangled.net;Operation Ke3chang Resurfaces With New TidePool Malware http://researchcenter.paloaltonetworks.com/2016/05/operation-ke3chang-resurfaces
 x0000m.net;Cybercriminals Adopt the Mossad Emblem http://www.minerva-labs.com/#!Cybercriminals-Adopt-the-Mossad-Emblem/c7a5/573da2
 5.56.133.100;Cybercriminals Adopt the Mossad Emblem http://www.minerva-labs.com/#!Cybercriminals-Adopt-the-Mossad-Emblem/c7a5/573da2
-rogers-clients.com;Bolek: Leaked Carberp KBot Source used in Phishing Campaigns http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-
-tangerine-ca.com;Bolek: Leaked Carberp KBot Source used in Phishing Campaigns http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-
-signin-tangerine.com;Bolek: Leaked Carberp KBot Source used in Phishing Campaigns http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-
-knutesecos.com;Bolek: Leaked Carberp KBot Source used in Phishing Campaigns http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-
-tangerine-zone.com;Bolek: Leaked Carberp KBot Source used in Phishing Campaigns http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-
-ogrthuvfewfdcfri5euwg.com;Bolek: Leaked Carberp KBot Source used in Phishing Campaigns http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-
-ogrthuvwfdcfri5euwg.com;Bolek: Leaked Carberp KBot Source used in Phishing Campaigns http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-
-mensabuxus.net;Bolek: Leaked Carberp KBot Source used in Phishing Campaigns http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-
-cibc-security.com;Bolek: Leaked Carberp KBot Source used in Phishing Campaigns http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-
-cibc-clients.com;Bolek: Leaked Carberp KBot Source used in Phishing Campaigns http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-
-rogers-ca.com;Bolek: Leaked Carberp KBot Source used in Phishing Campaigns http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-
-android-securityupdate.com;Bolek: Leaked Carberp KBot Source used in Phishing Campaigns http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-
-signin-rogers.com;Bolek: Leaked Carberp KBot Source used in Phishing Campaigns http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-
-tangerine-can.com;Bolek: Leaked Carberp KBot Source used in Phishing Campaigns http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-
-tangerine-security.com;Bolek: Leaked Carberp KBot Source used in Phishing Campaigns http://phishme.com/bolek-leaked-carberp-kbot-source-code-complicit-new-phishing-
 belkafruitcymus.com;Dogspectus Ransomware Analysis http://blog.fortinet.com/post/dogspectus-ransomware-analysis
 mentosjolly.com;Dogspectus Ransomware Analysis http://blog.fortinet.com/post/dogspectus-ransomware-analysis
 orlandroot.com;Dogspectus Ransomware Analysis http://blog.fortinet.com/post/dogspectus-ransomware-analysis
