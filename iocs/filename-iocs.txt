@@ -1254,4 +1254,14 @@ AppData\\Roaming\\btecache\.dll;90
 # Kaspersky Report https://goo.gl/iWUz63
 \\[Ss]ystem32\\scclient\.exe;80
 
+# Suspicious Location
+[Cc]:\\[Ww]indows\\[Ss]ecurity\\[A-Za-z0-9]{1,10}\.(exe|dll);80
+
+# Skeleton Key https://goo.gl/sc6Lqq
+\\msuta64\.dll;80
+\\ole64\.dll;80
+\\olex64\.dll;80
+\\HookDC\.dll;80
+\\HookDC64\.dll;80
+
 # End
