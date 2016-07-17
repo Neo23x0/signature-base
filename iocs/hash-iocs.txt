@@ -7029,3 +7029,9 @@ ac3b42453fac93e575988ba73ab24311515b090d57b1ad9f27dcbae8363f2d99;Mofang report b
 2d41fd5e315f7ecd4c4e20dfd1b21e23fbc273b1f4082f7fba8d4b28a9d33bd9;Stuxnet Samples - ./suckme.lnk_
 79a298569dba841400779cd04253e279ab4b921c2017ee3b9cb5984916edfecd;Stuxnet Samples - ./~WTR4132.tmp
 6bcf88251c876ef00b2f32cf97456a3e306c2a263d487b0a50216c6e3cc07c6a;Stuxnet Samples - ./~WTR4141.tmp
+
+766e49811c0bb7cce217e72e73a6aa866c15de0ba11d7dda3bd7e9ec33ed6963;Furtim Parent Sample - https://goo.gl/wt1xlh
+638d549a24bb0a28e462c70880bf3f979f137cc6;Furtim Parent - Main Sample - https://goo.gl/wt1xlh
+ce0633d8be65202870e7b916e7bec5a0218cbbbb;Furtim Parent - Packed Native API Application binary - https://goo.gl/wt1xlh
+643b295ee6985251d771b7962f2b2fc69e36f5c2;Furtim Parent - Packed UAC bypass dll - https://goo.gl/wt1xlh
+c803eb5e8a4a4e31e8168557d82ff54d68f3832d;Furtim Parent - Packed 64-bit CVE-2014-4113 exploit - https://goo.gl/wt1xlh
