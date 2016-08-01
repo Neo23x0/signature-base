@@ -2439,7 +2439,7 @@ rule kiwi_tools {
 		uint16(0) == 0x5a4d and filesize < 1000KB and all of them
 }
 
-rule _kappfree_kelloworld_KiwiCmd_KiwiRegedit_KiwiTaskmgr_klock_mimikatz_sekurlsa_kappfree_kelloworld_KiwiCmd_KiwiRegedit_KiwiTaskmg {
+rule kiwi_tools_gentil_kiwi {
 	meta:
 		description = "Chinese Hacktool Set - from files kappfree.dll, kelloworld.dll, KiwiCmd.exe, KiwiRegedit.exe, KiwiTaskmgr.exe, klock.dll, mimikatz.exe, sekurlsa.dll, kappfree.dll, kelloworld.dll, KiwiCmd.exe, KiwiRegedit.exe, KiwiTaskmgr.exe, klock.dll, mimikatz.exe, sekurlsa.dll"
 		author = "Florian Roth"
