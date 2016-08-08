@@ -7035,3 +7035,75 @@ ac3b42453fac93e575988ba73ab24311515b090d57b1ad9f27dcbae8363f2d99;Mofang report b
 ce0633d8be65202870e7b916e7bec5a0218cbbbb;Furtim Parent - Packed Native API Application binary - https://goo.gl/wt1xlh
 643b295ee6985251d771b7962f2b2fc69e36f5c2;Furtim Parent - Packed UAC bypass dll - https://goo.gl/wt1xlh
 c803eb5e8a4a4e31e8168557d82ff54d68f3832d;Furtim Parent - Packed 64-bit CVE-2014-4113 exploit - https://goo.gl/wt1xlh
+
+1F7DDB6752461615EBF0D76BDCC6AB1A;Project Sauron https://goo.gl/eFoP4A - Passive sniffer backdoor
+227EA8F8281B75C5CD5F10370997D801;Project Sauron https://goo.gl/eFoP4A - Passive sniffer backdoor
+2F704CB6C080024624FC3267F9FDF30E;Project Sauron https://goo.gl/eFoP4A - Passive sniffer backdoor
+34284B62456995CA0001BC3BA6709A8A;Project Sauron https://goo.gl/eFoP4A - Passive sniffer backdoor
+501FE625D15B91899CC9F29FDFC19C40;Project Sauron https://goo.gl/eFoP4A - Passive sniffer backdoor
+6296851190E685498955A5B37D277582;Project Sauron https://goo.gl/eFoP4A - Passive sniffer backdoor
+6B114168FB117BD870C28C5557F60EFE;Project Sauron https://goo.gl/eFoP4A - Passive sniffer backdoor
+7B6FDBD3839642D6AD7786182765D897;Project Sauron https://goo.gl/eFoP4A - Passive sniffer backdoor
+7B8A3BF6FD266593DB96EDDAA3FAE6F9;Project Sauron https://goo.gl/eFoP4A - Passive sniffer backdoor
+C0DFB68A5DE80B3434B04B38A61DBB61;Project Sauron https://goo.gl/eFoP4A - Passive sniffer backdoor
+B6273B3D45F48E9531A65D0F44DFEE13;Project Sauron https://goo.gl/eFoP4A - Passive sniffer backdoor
+BB6AEC0CF17839A6BEDFB9DDB05A0A6F;Project Sauron https://goo.gl/eFoP4A - Passive sniffer backdoor
+C074710482023CD73DA9F83438C3839F;Project Sauron https://goo.gl/eFoP4A - Passive sniffer backdoor
+C3F8F39009C583E2EA0ABE2710316D2A;Project Sauron https://goo.gl/eFoP4A - Passive sniffer backdoor
+CF6C049BD7CD9E04CC365B73F3F6098E;Project Sauron https://goo.gl/eFoP4A - Passive sniffer backdoor
+40F751F2B22208433A1A363550C73C6B;Project Sauron https://goo.gl/eFoP4A - Passive sniffer backdoor
+1D9D7D05AB7C68BDC257AFB1C086FB88;Project Sauron https://goo.gl/eFoP4A - Passive sniffer backdoor
+181c84e45abf1b03af0322f571848c2d;Project Sauron https://goo.gl/eFoP4A - Generic pipe backdoor
+2e460fd574e4e4cce518f9bc8fc25547;Project Sauron https://goo.gl/eFoP4A - Generic pipe backdoor
+1f6ba85c62d30a69208fe9fb69d601fa;Project Sauron https://goo.gl/eFoP4A - Generic pipe backdoor
+F3B9C454B799E2FE6F09B6170C81FF5C;Project Sauron https://goo.gl/eFoP4A - Null session pipes backdoor
+0C12E834187203FBB87D0286DE903DAB;Project Sauron https://goo.gl/eFoP4A - Null session pipes backdoor
+72B03ABB87F25E4D5A5C0E31877A3077;Project Sauron https://goo.gl/eFoP4A - Null session pipes backdoor
+76DB7E3AF9BE2DFAA491EC1142599075;Project Sauron https://goo.gl/eFoP4A - Null session pipes backdoor
+5D41719EB355FDF06277140DA14AF03E;Project Sauron https://goo.gl/eFoP4A - Null session pipes backdoor
+A277F018C2BB7C0051E15A00E214BBF2;Project Sauron https://goo.gl/eFoP4A - Null session pipes backdoor
+0C4A971E028DC2AE91789E08B424A265;Project Sauron https://goo.gl/eFoP4A - Pipe and internet backdoor
+44C2FA487A1C01F7839B4898CC54495E;Project Sauron https://goo.gl/eFoP4A - Pipe and internet backdoor
+F01DC49FCE3A2FF22B18457B1BF098F8;Project Sauron https://goo.gl/eFoP4A - Pipe and internet backdoor
+F59813AC7E30A1B0630621E865E3538C;Project Sauron https://goo.gl/eFoP4A - Pipe and internet backdoor
+CA05D537B46D87EA700860573DD8A093;Project Sauron https://goo.gl/eFoP4A - Pipe and internet backdoor
+01AC1CD4064B44CDFA24BF4EB40290E7;Project Sauron https://goo.gl/eFoP4A - Pipe and internet backdoor
+1511F3C455128042F1F6DB0C3D13F1AB;Project Sauron https://goo.gl/eFoP4A - Pipe and internet backdoor
+57C48B6F6CF410002503A670F1337A4B;Project Sauron https://goo.gl/eFoP4A - Pipe and internet backdoor
+EDB9E045B8DC7BB0B549BDF28E55F3B5;Project Sauron https://goo.gl/eFoP4A - Pipe and internet backdoor
+71EB97FF9BF70EA8BB1157D54608F8BB;Project Sauron https://goo.gl/eFoP4A - Core platform (LUA VFS)
+2F49544325E80437B709C3F10E01CB2D;Project Sauron https://goo.gl/eFoP4A - Core platform (LUA VFS)
+7261230A43A40BB29227A169C2C8E1BE;Project Sauron https://goo.gl/eFoP4A - Core platform (LUA VFS)
+FC77B80755F7189DEE1BD74760E62A72;Project Sauron https://goo.gl/eFoP4A - Core platform (LUA VFS)
+A5588746A057F4B990E215B415D2D441;Project Sauron https://goo.gl/eFoP4A - Core platform (LUA VFS)
+0209541DEAD744715E359B6C6CB069A2;Project Sauron https://goo.gl/eFoP4A - Core platform (LUA VFS)
+FCA102A0B39E2E3EDDD0FE0A42807417;Project Sauron https://goo.gl/eFoP4A - Core platform (LUA VFS)
+5373C62D99AFF7135A26B2D38870D277;Project Sauron https://goo.gl/eFoP4A - Core platform (LUA VFS)
+91BB599CBBA4FB1F72E30C09823E35F7;Project Sauron https://goo.gl/eFoP4A - Core platform (LUA VFS)
+914C669DBAAA27041A0BE44F88D9A6BD;Project Sauron https://goo.gl/eFoP4A - Core platform (LUA VFS)
+C58A90ACCC1200A7F1E98F7F7AA1B1AE;Project Sauron https://goo.gl/eFoP4A - Core platform (LUA VFS)
+63780A1690B922045625EAD794696482;Project Sauron https://goo.gl/eFoP4A - Core platform (LUA VFS)
+8D02E1EB86B7D1280446628F039C1964;Project Sauron https://goo.gl/eFoP4A - Core platform (LUA VFS)
+6CA97B89AF29D7EFF94A3A60FA7EFE0A;Project Sauron https://goo.gl/eFoP4A - Core platform (LUA VFS)
+93C9C50AC339219EE442EC53D31C11A2;Project Sauron https://goo.gl/eFoP4A - Core platform (LUA VFS)
+F7434B5C52426041CC87AA7045F04EC7;Project Sauron https://goo.gl/eFoP4A - Core platform (LUA VFS)
+F936B1C068749FE37ED4A92C9B4CFAB6;Project Sauron https://goo.gl/eFoP4A - Core platform (LUA VFS)
+2054D07AE841FCFF6158C7CCF5F14BF2;Project Sauron https://goo.gl/eFoP4A - Core platform (LUA VFS)
+6CD8311D11DC973E970237E10ED04AD7;Project Sauron https://goo.gl/eFoP4A - Core platform (LUA VFS)
+5DDD5294655E9EB3B9B2071DC2E503B1;Project Sauron https://goo.gl/eFoP4A - MyTrampoline
+5DDD5294655E9EB3B9B2071DC2E503B1;Project Sauron https://goo.gl/eFoP4A - Bus Manager
+2A8785BF45F4F03C10CD929BB0685C2D;Project Sauron https://goo.gl/eFoP4A - Bus Manager
+F0E0CBF1498DBF9B8321D11D21C49811;Project Sauron https://goo.gl/eFoP4A - Bus Manager
+AC8072DFDA27F9EA068DCAD5712DD893;Project Sauron https://goo.gl/eFoP4A - Bus Manager
+2382A79F9764389ACFB4CB4692AA044D;Project Sauron https://goo.gl/eFoP4A - Bus Manager
+85EA0D79FF015D0B1E09256A880A13CE;Project Sauron https://goo.gl/eFoP4A - Bus Manager
+4728A97E720C564F6E76D0E22C76BAE5;Project Sauron https://goo.gl/eFoP4A - Bus Manager
+B98227F8116133DC8060F2ADA986631C;Project Sauron https://goo.gl/eFoP4A - Bus Manager
+D2065603EA3538D17B6CE276F64AA7A2;Project Sauron https://goo.gl/eFoP4A - Bus Manager
+FCD1A80575F503A5C4C05D4489D78FF9;Project Sauron https://goo.gl/eFoP4A - Bus Manager
+EB8D5F44924B4DF2CE4A70305DC4BD59;Project Sauron https://goo.gl/eFoP4A - Bus Manager
+17DEB723A16856E72DD5C1BA0DAE0CC7;Project Sauron https://goo.gl/eFoP4A - Bus Manager
+B6FE14091359399C4EA572EBF645D2C5;Project Sauron https://goo.gl/eFoP4A - Bus Manager
+C8C30989A25C0B2918A5BB9FD6025A7A;Project Sauron https://goo.gl/eFoP4A - Bus Manager
+814CA3A31122D821CD1E582ABF958E8F;Project Sauron https://goo.gl/eFoP4A - Bus Manager
+951EBE1EE17F61CD2398D8BC0E00B099;Project Sauron https://goo.gl/eFoP4A - Network Sniffer
