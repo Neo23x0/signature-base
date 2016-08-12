@@ -1,3 +1,6 @@
+%TEMP%\\AdobeARMM\.log;The Kittens Strike Back https://www.trendmicro.com/vinfo/us/security/news/cyber-attacks/rocket-kitten-co
+%TEMP%\\wlg\.dat;The Kittens Strike Back https://www.trendmicro.com/vinfo/us/security/news/cyber-attacks/rocket-kitten-co
+Message\.xlsb;The Kittens Strike Back https://www.trendmicro.com/vinfo/us/security/news/cyber-attacks/rocket-kitten-co
 \\Temp\\80\.exe;TeslaCrypt 4.1A and the Malware Attack Chain https://www.endgame.com/blog/your-package-has-been-successfully-encrypted-teslac
 %USERPROFILE%\\Documents\\desctop\._ini;TeslaCrypt 4.1A and the Malware Attack Chain https://www.endgame.com/blog/your-package-has-been-successfully-encrypted-teslac
 %USERPROFILE%\\Documents\\\-!recover!\-!file!\-\.txt;TeslaCrypt 4.1A and the Malware Attack Chain https://www.endgame.com/blog/your-package-has-been-successfully-encrypted-teslac
@@ -27,10 +30,6 @@ Statement_1973_1357257122414\.doc;Dridex Phishing Wave - Gina Harrowell Purchase
 \\ringcentral_text_7093687357\.doc;Microsoft Word Intruder: Operation Pony Express https://nakedsecurity.sophos.com/2015/09/25/microsoft-word-intruder-gets-down-to
 \\Microsoft\\Netmeeting\\1328\-0013\\mstun32\.dll;FIREEYE: Office Encapsulated PostScript & Priv Escalation 0days https://www.fireeye.com/blog/threat-research/2015/09/attack_exploitingmi.html
 \\infected\.exx;Shifu: New Banking Trojan Is Attacking 14 Japanese Banks https://securityintelligence.com/shifu-masterful-new-banking-trojan-is-attacking
-%TEMP%\\AdobeARMM\.log;The Kittens Strike Back https://www.trendmicro.com/vinfo/us/security/news/cyber-attacks/rocket-kitten-co
-%TEMP%\\wlg\.dat;The Kittens Strike Back https://www.trendmicro.com/vinfo/us/security/news/cyber-attacks/rocket-kitten-co
-%TEMP%\\AdobeARM\.log;The Kittens Strike Back https://www.trendmicro.com/vinfo/us/security/news/cyber-attacks/rocket-kitten-co
-Message\.xlsb;The Kittens Strike Back https://www.trendmicro.com/vinfo/us/security/news/cyber-attacks/rocket-kitten-co
 C:\\windows\\tasks\\Components\.exe;Defending the White Elephant https://asert.arbornetworks.com/defending-the-white-elephant/ / http://pages.arb
 PlanProposal\\new questionnaire\\Voter Plan Proposal;Defending the White Elephant https://asert.arbornetworks.com/defending-the-white-elephant/ / http://pages.arb
 \\abiosdsk\.sys;Regin - Further Investigations by Symantec Aug 2015 http://www.symantec.com/connect/blogs/regin-further-unravelling-mysteries-cybere
