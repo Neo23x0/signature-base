@@ -1124,3 +1124,59 @@ rule EQGRP_ssh_telnet_29 {
 	condition:
 		( filesize < 10KB and 2 of them ) or ( 3 of them )
 }
+
+/* Extras */
+
+rule EQGRP_tinyexec {
+	meta:
+		description = "EQGRP Toolset Firewall - from files tinyexec"
+		author = "Florian Roth"
+		reference = "Research"
+		date = "2016-08-16"
+	strings:
+		$s1 = { 73 68 73 74 72 74 61 62 00 2E 74 65 78 74 }
+		$s2 = { 5A 58 55 52 89 E2 55 50 89 E1 }
+	condition:
+		uint32(0) == 0x464c457f and filesize < 270 and all of them
+}
+
+rule EQGRP_callbacks {
+	meta:
+		description = "EQGRP Toolset Firewall - Callback addresses"
+		author = "Florian Roth"
+		reference = "Research"
+		date = "2016-08-16"
+	strings:
+		$s1 = "30.40.50.60:9342" fullword ascii wide /* DoD */
+	condition:
+		1 of them
+}
+
+rule EQGRP_Extrabacon_Output {
+	meta:
+		description = "EQGRP Toolset Firewall - Extrabacon exploit output"
+		author = "Florian Roth"
+		reference = "Research"
+		date = "2016-08-16"
+	strings:
+		$s1 = "|###[ SNMPresponse ]###" fullword ascii
+		$s2 = "[+] generating exploit for exec mode pass-disable" fullword ascii
+		$s3 = "[+] building payload for mode pass-disable" fullword ascii
+		$s4 = "[+] Executing:  extrabacon" fullword ascii
+		$s5 = "appended AAAADMINAUTH_ENABLE payload" fullword ascii
+	condition:
+		2 of them
+}
+
+rule EQGRP_Unique_Strings {
+	meta:
+		description = "EQGRP Toolset Firewall - Unique strings"
+		author = "Florian Roth"
+		reference = "Research"
+		date = "2016-08-16"
+	strings:
+		$s1 = "/BananaGlee/ELIGIBLEBOMB" ascii
+		$s2 = "Protocol must be either http or https (Ex: https://1.2.3.4:1234)"
+	condition:
+		1 of them
+}
