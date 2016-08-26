@@ -13,6 +13,7 @@ rule EQGRP_noclient_3_0_5 {
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-15"
+		score = 75
 	strings:
 		$x1 = "-C %s 127.0.0.1\" scripme -F -t JACKPOPIN4 '&" fullword ascii
 		$x2 = "Command too long!  What the HELL are you trying to do to me?!?!  Try one smaller than %d bozo." fullword ascii
@@ -29,6 +30,7 @@ rule EQGRP_installdate {
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-15"
+		score = 75
 	strings:
 		$x1 = "#Provide hex or EP log as command-line argument or as input" fullword ascii
 		$x2 = "print \"Gimme hex: \";" fullword ascii
@@ -47,6 +49,7 @@ rule EQGRP_teflondoor {
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-15"
+		score = 75
 	strings:
 		$x1 = "%s: abort.  Code is %d.  Message is '%s'" fullword ascii
 		$x2 = "%s: %li b (%li%%)" fullword ascii
@@ -67,6 +70,7 @@ rule EQGRP_durablenapkin_solaris_2_0_1 {
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-15"
+		score = 75
 	strings:
 		$s1 = "recv_ack: %s: Service not supplied by provider" fullword ascii
 		$s2 = "send_request: putmsg \"%s\": %s" fullword ascii
@@ -83,6 +87,7 @@ rule EQGRP_teflonhandle {
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-15"
+		score = 75
 	strings:
 		$s1 = "%s [infile] [outfile] /k 0x[%i character hex key] </g>" fullword ascii
 		$s2 = "File %s already exists.  Overwrite? (y/n) " fullword ascii
@@ -99,6 +104,7 @@ rule EQGRP_false {
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-15"
+		score = 75
 	strings:
 		$s1 = { 00 25 64 2E 0A 00 00 00 00 25 64 2E 0A 00 00 00
 			00 25 6C 75 2E 25 6C 75 2E 25 6C 75 2E 25 6C 75
@@ -119,6 +125,7 @@ rule EQGRP_bc_genpkt {
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-15"
+		score = 75
 	strings:
 		$x1 = "load auxiliary object=%s requested by file=%s" fullword ascii
 		$x2 = "size of new packet, should be %d <= size <= %d bytes" fullword ascii
@@ -138,6 +145,7 @@ rule EQGRP_dn_1_0_2_1 {
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-15"
+		score = 75
 	strings:
 		$s1 = "Valid commands are: SMAC, DMAC, INT, PACK, DONE, GO" fullword ascii
 		$s2 = "invalid format suggest DMAC=00:00:00:00:00:00" fullword ascii
@@ -153,6 +161,7 @@ rule EQGRP_morel {
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-15"
+		score = 75
 		hash1 = "a9152e67f507c9a179bb8478b58e5c71c444a5a39ae3082e04820a0613cd6d9f"
 	strings:
 		$s1 = "%d - %d, %d" fullword ascii
@@ -168,6 +177,7 @@ rule EQGRP_bc_parser {
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-15"
+		score = 75
 		hash1 = "879f2f1ae5d18a3a5310aeeafec22484607649644e5ecb7d8a72f0877ac19cee"
 	strings:
 		$s1 = "*** Target may be susceptible to FALSEMOREL      ***" fullword ascii
@@ -182,6 +192,7 @@ rule EQGRP_1212 {
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-15"
+		score = 75
 	strings:
 		$s1 = "if (!(($srcip,$dstip,$srcport,$dstport) = ($line=~/^([a-f0-9]{8})([a-f0-9]{8})([a-f0-9]{4})([a-f0-9]{4})$/)))" fullword ascii
 		$s2 = "$ans=\"$srcip:$srcport -> $dstip:$dstport\";" fullword ascii
@@ -199,6 +210,7 @@ rule EQGRP_1212_dehex {
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-15"
+		score = 75
 	strings:
 		$s1 = "return \"ERROR:$line is not a valid address\";" fullword ascii
 		$s2 = "print \"ERROR: the filename or hex representation needs to be one argument try using \\\"'s\\n\";" fullword ascii

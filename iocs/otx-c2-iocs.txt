@@ -1,61 +1,142 @@
-84.11.146.62;The Kittens Strike Back https://www.trendmicro.com/vinfo/us/security/news/cyber-attacks/rocket-kitten-co
-107.6.181.116;The Kittens Strike Back https://www.trendmicro.com/vinfo/us/security/news/cyber-attacks/rocket-kitten-co
-chanstring.com;Linux.Lady http://vms.drweb.com/virus/?_is=1&amp;i=8400823
-138.68.12.109;Linux.Lady http://vms.drweb.com/virus/?_is=1&amp;i=8400823
-104.131.120.66;Linux.Lady http://vms.drweb.com/virus/?_is=1&amp;i=8400823
-russell03.servehttp.com;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
-wxycgc.steelhome.cn;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
-wxkysteel.steelhome.cn;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
-russell01.servebeer.com;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
-wgeastchina.steelhome.cn;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
-ussainbolt.mooo.com;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
-asatar.ignorelist.com;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
-russell02.servehttp.com;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
-javedtar.chickenkiller.com;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
-captain.chickenkiller.com;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
-updatesoft.zapto.org;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
-rasheed.crabdance.com;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
-www.militaryworkerscn.com;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
-tariqj.crabdance.com;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
-www.cnmilit.com;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
-updatesys.zapto.org;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
-raheel.ignorelist.com;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
-www.81-cn.net;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
-ussainbolt1.mooo.com;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
-www.newsnstat.com;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
-212.129.13.110;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
-85.25.79.230;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
-45.43.192.172;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
-43.249.37.173;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
-5.254.98.68;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
-194.63.142.174;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
-axroot.com;Operation Manul https://www.eff.org/files/2016/08/03/i-got-a-letter-from-the-government.pdf
-mangoco.net;Operation Manul https://www.eff.org/files/2016/08/03/i-got-a-letter-from-the-government.pdf
-adobeinstall.com;Operation Manul https://www.eff.org/files/2016/08/03/i-got-a-letter-from-the-government.pdf
-kaliex.net;Operation Manul https://www.eff.org/files/2016/08/03/i-got-a-letter-from-the-government.pdf
-dropboxonline.com;Operation Manul https://www.eff.org/files/2016/08/03/i-got-a-letter-from-the-government.pdf
-orange2015.net;Operation Manul https://www.eff.org/files/2016/08/03/i-got-a-letter-from-the-government.pdf
-adobeair.net;Operation Manul https://www.eff.org/files/2016/08/03/i-got-a-letter-from-the-government.pdf
-adobe-flashviewer.accountslogin.services;Operation Manul https://www.eff.org/files/2016/08/03/i-got-a-letter-from-the-government.pdf
-jaysonj.no-ip.biz;Operation Manul https://www.eff.org/files/2016/08/03/i-got-a-letter-from-the-government.pdf
-98.37.201.117;CERT Orange Polska Report 2014 http://www.orange.pl/ocp-http/PL/Binary2/2003243/4102642946.pdf
-109.74.195.149;CERT Orange Polska Report 2014 http://www.orange.pl/ocp-http/PL/Binary2/2003243/4102642946.pdf
-42.121.125.34;CERT Orange Polska Report 2014 http://www.orange.pl/ocp-http/PL/Binary2/2003243/4102642946.pdf
-95.183.8.24;CERT Orange Polska Report 2014 http://www.orange.pl/ocp-http/PL/Binary2/2003243/4102642946.pdf
-42.121.133.1;CERT Orange Polska Report 2014 http://www.orange.pl/ocp-http/PL/Binary2/2003243/4102642946.pdf
-173.242.124.163;CERT Orange Polska Report 2014 http://www.orange.pl/ocp-http/PL/Binary2/2003243/4102642946.pdf
-118.184.176.15;CERT Orange Polska Report 2014 http://www.orange.pl/ocp-http/PL/Binary2/2003243/4102642946.pdf
-46.30.42.166;CERT Orange Polska Report 2014 http://www.orange.pl/ocp-http/PL/Binary2/2003243/4102642946.pdf
-donkixot17.ru;CERT Orange Polska Report 2014 http://www.orange.pl/ocp-http/PL/Binary2/2003243/4102642946.pdf
-donkixot17.net;CERT Orange Polska Report 2014 http://www.orange.pl/ocp-http/PL/Binary2/2003243/4102642946.pdf
-chanstring.com;Linux.Lady.1 propagating via Redis https://vms.drweb.com/virus/?_is=1&amp;i=8400823 / https://vms.drweb.com/virus/?
-r.chanstring.com;Linux.Lady.1 propagating via Redis https://vms.drweb.com/virus/?_is=1&amp;i=8400823 / https://vms.drweb.com/virus/?
-bikessport.com;Strider: Cyberespionage group turns eye of Sauron on targets http://www.symantec.com/connect/blogs/strider-cyberespionage-group-turns-eye-sau
-rapidcomments.com;Strider: Cyberespionage group turns eye of Sauron on targets http://www.symantec.com/connect/blogs/strider-cyberespionage-group-turns-eye-sau
-wildhorses.awardspace.info;Strider: Cyberespionage group turns eye of Sauron on targets http://www.symantec.com/connect/blogs/strider-cyberespionage-group-turns-eye-sau
-www.myhomemusic.com;Strider: Cyberespionage group turns eye of Sauron on targets http://www.symantec.com/connect/blogs/strider-cyberespionage-group-turns-eye-sau
-flowershop22.110mb.com;Strider: Cyberespionage group turns eye of Sauron on targets http://www.symantec.com/connect/blogs/strider-cyberespionage-group-turns-eye-sau
-88.198.222.163;Group5: Syria and the Iranian Connection https://citizenlab.org/2016/08/group5-syria/
+air.dscvn.org;Korplug RAT used to attack Vietnamese institutions https://blog.malwarebytes.com/threat-analysis/2016/08/unpacking-the-spyware-disg
+adjust-local-settings.com;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+bahrainsms.co;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+emiratesfoundation.net;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+fb-accounts.com;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+cnn-africa.co;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+topcontactco.com;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+whatsapp-app.com;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+newtarrifs.net;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+icloudcacher.com;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+turkeynewsupdates.com;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+tpcontact.co.uk;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+bulbazaur.com;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+asrararabiya.co;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+accounts.mx;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+pickuchu.com;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+uaenews.online;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+aalaan.tv;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+unonoticias.net;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+track-your-fedex-package.org;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+manoraonline.net;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+damanhealth.online;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+alawaeltech.com;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+ooredoodeals.com;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+redcrossworld.com;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+googleplay-store.com;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+mz-vodacom.info;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+univision.click;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+turkishairines.info;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+sabafon.info;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+smser.net;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+bbc-africa.com;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+y0utube.com.mx;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+icrcworld.com;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+alljazeera.co;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+asrararablya.com;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+checkinonlinehere.com;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+asrarrarabiya.com;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+sms.webadv.co;NSO Group\u2019s iPhone Zero-Days used against a UAE Human Rights Defender https://citizenlab.org/2016/08/million-dollar-dissident-iphone-zero-day-nso-grou
+185.106.120.182;Android Malware Targeting Journalists https://iranthreats.github.io/resources/android-malware/
+www.creammemory.com;OTX Plus https://github.com/fireeye/iocs/blob/master/APT30/eeffc8e8-caee-4fe1-8ace-7a994b
+www.cbkjdxf.com;OTX Plus https://github.com/fireeye/iocs/blob/master/APT30/eeffc8e8-caee-4fe1-8ace-7a994b
+www.km153.com;OTX Plus https://github.com/fireeye/iocs/blob/master/APT30/eeffc8e8-caee-4fe1-8ace-7a994b
+www.bigfixtools.com;OTX Plus https://github.com/fireeye/iocs/blob/master/APT30/eeffc8e8-caee-4fe1-8ace-7a994b
+www.appsecnic.com;OTX Plus https://github.com/fireeye/iocs/blob/master/APT30/eeffc8e8-caee-4fe1-8ace-7a994b
+www.bluesixnine.com;OTX Plus https://github.com/fireeye/iocs/blob/master/APT30/eeffc8e8-caee-4fe1-8ace-7a994b
+www.autoapec.com;OTX Plus https://github.com/fireeye/iocs/blob/master/APT30/eeffc8e8-caee-4fe1-8ace-7a994b
+www.iapfreecenter.com;OTX Plus https://github.com/fireeye/iocs/blob/master/APT30/eeffc8e8-caee-4fe1-8ace-7a994b
+www.lisword.com;OTX Plus https://github.com/fireeye/iocs/blob/master/APT30/eeffc8e8-caee-4fe1-8ace-7a994b
+www.km-nyc.com;OTX Plus https://github.com/fireeye/iocs/blob/master/APT30/eeffc8e8-caee-4fe1-8ace-7a994b
+www.newpresses.com;OTX Plus https://github.com/fireeye/iocs/blob/master/APT30/eeffc8e8-caee-4fe1-8ace-7a994b
+116.31.116.17;Chinese APT IP monitored on Alien Vault USM(demo) http://whois.domaintools.com/116.31.116.17 / https://isc.sans.edu//ipinfo.html?i
+wada-awa.org;SpearPhishing campaign targeting the World Anti-Doping Agency and the Court of Arbitration for Sport https://www.paralympic.org/news/wada-warns-stakeholders-phishing-scams
+wada-arna.org;SpearPhishing campaign targeting the World Anti-Doping Agency and the Court of Arbitration for Sport https://www.paralympic.org/news/wada-warns-stakeholders-phishing-scams
+tas-cass.org;SpearPhishing campaign targeting the World Anti-Doping Agency and the Court of Arbitration for Sport https://www.paralympic.org/news/wada-warns-stakeholders-phishing-scams
+xafmolog.ru;Vawtrak C2 \u2013 Pin it http://www.threatgeek.com/2016/08/vawtrak-trojan-variant-https-c2.html
+hzvmnpug.ru;Vawtrak C2 \u2013 Pin it http://www.threatgeek.com/2016/08/vawtrak-trojan-variant-https-c2.html
+ttliiubl.ru;Vawtrak C2 \u2013 Pin it http://www.threatgeek.com/2016/08/vawtrak-trojan-variant-https-c2.html
+xdpnchon.ru;Vawtrak C2 \u2013 Pin it http://www.threatgeek.com/2016/08/vawtrak-trojan-variant-https-c2.html
+sgtxgkbi.ru;Vawtrak C2 \u2013 Pin it http://www.threatgeek.com/2016/08/vawtrak-trojan-variant-https-c2.html
+hvnmwvdt.ru;Vawtrak C2 \u2013 Pin it http://www.threatgeek.com/2016/08/vawtrak-trojan-variant-https-c2.html
+qkgpedwe.ru;Vawtrak C2 \u2013 Pin it http://www.threatgeek.com/2016/08/vawtrak-trojan-variant-https-c2.html
+dmugmwbu.ru;Vawtrak C2 \u2013 Pin it http://www.threatgeek.com/2016/08/vawtrak-trojan-variant-https-c2.html
+rsojnear.ru;Vawtrak C2 \u2013 Pin it http://www.threatgeek.com/2016/08/vawtrak-trojan-variant-https-c2.html
+gdxwlrat.ru;Vawtrak C2 \u2013 Pin it http://www.threatgeek.com/2016/08/vawtrak-trojan-variant-https-c2.html
+kmosszts.ru;Vawtrak C2 \u2013 Pin it http://www.threatgeek.com/2016/08/vawtrak-trojan-variant-https-c2.html
+hstqothv.ru;Vawtrak C2 \u2013 Pin it http://www.threatgeek.com/2016/08/vawtrak-trojan-variant-https-c2.html
+qrqlyhfc.ru;Vawtrak C2 \u2013 Pin it http://www.threatgeek.com/2016/08/vawtrak-trojan-variant-https-c2.html
+ybqojmpa.ru;Vawtrak C2 \u2013 Pin it http://www.threatgeek.com/2016/08/vawtrak-trojan-variant-https-c2.html
+xyigqlfc.ru;Vawtrak C2 \u2013 Pin it http://www.threatgeek.com/2016/08/vawtrak-trojan-variant-https-c2.html
+nevlomzj.ru;Vawtrak C2 \u2013 Pin it http://www.threatgeek.com/2016/08/vawtrak-trojan-variant-https-c2.html
+enhicefv.ru;Vawtrak C2 \u2013 Pin it http://www.threatgeek.com/2016/08/vawtrak-trojan-variant-https-c2.html
+jhxrkeuh.ru;Vawtrak C2 \u2013 Pin it http://www.threatgeek.com/2016/08/vawtrak-trojan-variant-https-c2.html
+www.knowledgetime.slyip.net;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+treesofter.mooo.com;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+archive-articles.linkpc.net;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+sendmessage.mooo.com;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+forumgeek.zzux.com;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+www.psychology-blog.ezua.com;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+www.priceline.publicvm.com;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+officebuild.4irc.com;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+bestfunc.slyip.net;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+newforum.chickenkiller.com;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+tellmemore.4irc.com;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+priceline.publicvm.com;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+trytowin.ignorelist.com;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+booking.strangled.net;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+ebay-global.publicvm.com;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+blackerror.ignorelist.com;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+ceremon.2waky.com;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+patherror.publicvm.com;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+www.tellmemore.4irc.com;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+worldlist.linkpc.net;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+www.ebay-global.publicvm.com;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+top100news.my-wan.de;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+www.patherror.publicvm.com;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+dellservice.publicvm.com;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+papperbell.effers.com;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+onlineshop.sellclassics.com;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+climbent.mooo.com;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+www.bestfunc.slyip.net;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+knowledgetime.slyip.net;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+badget.ignorelist.com;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+highhills.ignorelist.com;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+psychology-blog.ezua.com;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+wordlisten.mooo.com;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+www.dellservice.publicvm.com;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+profound.zzux.com;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+www.forumgeek.zzux.com;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+kersachi.ignorelist.com;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+www.worldlist.linkpc.net;Satellite Turla infrastructure https://securelist.com/blog/research/72081/satellite-turla-apt-command-and-contr
+katynew.pw;Operation Ghoul: targeted attacks on industrial organizations https://securelist.com/blog/research/75718/operation-ghoul-targeted-attacks-on-i
+brokelimiteds.in;Operation Ghoul: targeted attacks on industrial organizations https://securelist.com/blog/research/75718/operation-ghoul-targeted-attacks-on-i
+indyproject.org;Operation Ghoul: targeted attacks on industrial organizations https://securelist.com/blog/research/75718/operation-ghoul-targeted-attacks-on-i
+f444c4f547116bfd052461b0b3ab1bc2b445a.com;Operation Ghoul: targeted attacks on industrial organizations https://securelist.com/blog/research/75718/operation-ghoul-targeted-attacks-on-i
+mercadojs.com;Operation Ghoul: targeted attacks on industrial organizations https://securelist.com/blog/research/75718/operation-ghoul-targeted-attacks-on-i
+glazeautocaree.com;Operation Ghoul: targeted attacks on industrial organizations https://securelist.com/blog/research/75718/operation-ghoul-targeted-attacks-on-i
+copylines.biz;Operation Ghoul: targeted attacks on industrial organizations https://securelist.com/blog/research/75718/operation-ghoul-targeted-attacks-on-i
+studiousb.com;Operation Ghoul: targeted attacks on industrial organizations https://securelist.com/blog/research/75718/operation-ghoul-targeted-attacks-on-i
+apple-recovery.us;Operation Ghoul: targeted attacks on industrial organizations https://securelist.com/blog/research/75718/operation-ghoul-targeted-attacks-on-i
+emailreferentie.appleid.apple.nl.468213579.com;Operation Ghoul: targeted attacks on industrial organizations https://securelist.com/blog/research/75718/operation-ghoul-targeted-attacks-on-i
+verificatie.appleid.apple.nl.referentie.357912468.com;Operation Ghoul: targeted attacks on industrial organizations https://securelist.com/blog/research/75718/operation-ghoul-targeted-attacks-on-i
+cgi.ebay.com-wn.in;Operation Ghoul: targeted attacks on industrial organizations https://securelist.com/blog/research/75718/operation-ghoul-targeted-attacks-on-i
+apple.security-block.com;Operation Ghoul: targeted attacks on industrial organizations https://securelist.com/blog/research/75718/operation-ghoul-targeted-attacks-on-i
+free.meedlifespeed.com;Operation Ghoul: targeted attacks on industrial organizations https://securelist.com/blog/research/75718/operation-ghoul-targeted-attacks-on-i
+customer.comcast.com.aboranian.com;Operation Ghoul: targeted attacks on industrial organizations https://securelist.com/blog/research/75718/operation-ghoul-targeted-attacks-on-i
+europcubit.com;Aveo Malware Family Targets Japanese Speaking Users http://researchcenter.paloaltonetworks.com/?p=17203
+snoozetime.info;Aveo Malware Family Targets Japanese Speaking Users http://researchcenter.paloaltonetworks.com/?p=17203
+bluepaint.info;Aveo Malware Family Targets Japanese Speaking Users http://researchcenter.paloaltonetworks.com/?p=17203
+7b7p.info;Aveo Malware Family Targets Japanese Speaking Users http://researchcenter.paloaltonetworks.com/?p=17203
+coinpack.info;Aveo Malware Family Targets Japanese Speaking Users http://researchcenter.paloaltonetworks.com/?p=17203
+donkeyhaws.info;Aveo Malware Family Targets Japanese Speaking Users http://researchcenter.paloaltonetworks.com/?p=17203
+50.63.202.38;Aveo Malware Family Targets Japanese Speaking Users http://researchcenter.paloaltonetworks.com/?p=17203
+104.202.173.82;Aveo Malware Family Targets Japanese Speaking Users http://researchcenter.paloaltonetworks.com/?p=17203
+107.180.36.179;Aveo Malware Family Targets Japanese Speaking Users http://researchcenter.paloaltonetworks.com/?p=17203
+web4solution.net;Shakti Trojan: Document Thief https://blog.malwarebytes.com/threat-analysis/2016/08/shakti-trojan-stealing-doc
+securedesignus.com;Shakti Trojan: Document Thief https://blog.malwarebytes.com/threat-analysis/2016/08/shakti-trojan-stealing-doc
+securedesignuk.com;Shakti Trojan: Document Thief https://blog.malwarebytes.com/threat-analysis/2016/08/shakti-trojan-stealing-doc
+zjfq4lnfbs7pncr5.onion.to;New Locky Ransomware Spotted in the Brazilian Underground Market, Uses Windows Script Files http://blog.trendmicro.com/trendlabs-security-intelligence/new-locky-ransomware-
 193.104.41.178;SteamStealer IPs https://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / h
 31.170.164.100;SteamStealer IPs https://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / h
 37.187.37.235;SteamStealer IPs https://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / h
@@ -412,6 +493,112 @@ flowershop22.110mb.com;Strider: Cyberespionage group turns eye of Sauron on targ
 194.67.197.3;SteamStealer IPs https://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / h
 194.58.69.204;SteamStealer IPs https://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / h
 193.124.59.5;SteamStealer IPs https://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / h
+185.146.171.13;SteamStealer IPs https://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / h
+185.146.168.181;SteamStealer IPs https://bartblaze.blogspot.com/2014/11/malware-spreading-via-steam-chat.html / h
+clients14-google.com;Visa Alert indicators (Carbanak, MalumPOS) http://krebsonsecurity.com/2016/08/visa-alert-and-update-on-the-oracle-breach/ /
+clients12-google.com;Visa Alert indicators (Carbanak, MalumPOS) http://krebsonsecurity.com/2016/08/visa-alert-and-update-on-the-oracle-breach/ /
+clients4-google.com;Visa Alert indicators (Carbanak, MalumPOS) http://krebsonsecurity.com/2016/08/visa-alert-and-update-on-the-oracle-breach/ /
+clients2-google.com;Visa Alert indicators (Carbanak, MalumPOS) http://krebsonsecurity.com/2016/08/visa-alert-and-update-on-the-oracle-breach/ /
+clients1-google.com;Visa Alert indicators (Carbanak, MalumPOS) http://krebsonsecurity.com/2016/08/visa-alert-and-update-on-the-oracle-breach/ /
+clients7-google.com;Visa Alert indicators (Carbanak, MalumPOS) http://krebsonsecurity.com/2016/08/visa-alert-and-update-on-the-oracle-breach/ /
+clients6-google.com;Visa Alert indicators (Carbanak, MalumPOS) http://krebsonsecurity.com/2016/08/visa-alert-and-update-on-the-oracle-breach/ /
+clients5-google.com;Visa Alert indicators (Carbanak, MalumPOS) http://krebsonsecurity.com/2016/08/visa-alert-and-update-on-the-oracle-breach/ /
+clients9-google.com;Visa Alert indicators (Carbanak, MalumPOS) http://krebsonsecurity.com/2016/08/visa-alert-and-update-on-the-oracle-breach/ /
+clients3-google.com;Visa Alert indicators (Carbanak, MalumPOS) http://krebsonsecurity.com/2016/08/visa-alert-and-update-on-the-oracle-breach/ /
+clients8-google.com;Visa Alert indicators (Carbanak, MalumPOS) http://krebsonsecurity.com/2016/08/visa-alert-and-update-on-the-oracle-breach/ /
+80.255.3.109;Visa Alert indicators (Carbanak, MalumPOS) http://krebsonsecurity.com/2016/08/visa-alert-and-update-on-the-oracle-breach/ /
+185.86.149.115;Visa Alert indicators (Carbanak, MalumPOS) http://krebsonsecurity.com/2016/08/visa-alert-and-update-on-the-oracle-breach/ /
+164.132.221.147;Visa Alert indicators (Carbanak, MalumPOS) http://krebsonsecurity.com/2016/08/visa-alert-and-update-on-the-oracle-breach/ /
+107.181.246.211;Visa Alert indicators (Carbanak, MalumPOS) http://krebsonsecurity.com/2016/08/visa-alert-and-update-on-the-oracle-breach/ /
+192.169.82.86;Visa Alert indicators (Carbanak, MalumPOS) http://krebsonsecurity.com/2016/08/visa-alert-and-update-on-the-oracle-breach/ /
+85.10.229.196;Visa Alert indicators (Carbanak, MalumPOS) http://krebsonsecurity.com/2016/08/visa-alert-and-update-on-the-oracle-breach/ /
+45.32.129.185;SEDNIT Malware: Russian Operation Pawn Storm DNC Hack - Call for ANSIR http://www.trendmicro.com/vinfo/us/security/news/cyber-attacks/pawn-storm-espion
+92.63.100.150;SEDNIT Malware: Russian Operation Pawn Storm DNC Hack - Call for ANSIR http://www.trendmicro.com/vinfo/us/security/news/cyber-attacks/pawn-storm-espion
+clients14-google.com;Visa Alert and Update on the Oracle MICROS Breach http://krebsonsecurity.com/wp-content/uploads/2016/08/Visa-PFD-MICROS-Alert-12AU
+clients12-google.com;Visa Alert and Update on the Oracle MICROS Breach http://krebsonsecurity.com/wp-content/uploads/2016/08/Visa-PFD-MICROS-Alert-12AU
+clients4-google.com;Visa Alert and Update on the Oracle MICROS Breach http://krebsonsecurity.com/wp-content/uploads/2016/08/Visa-PFD-MICROS-Alert-12AU
+clients2-google.com;Visa Alert and Update on the Oracle MICROS Breach http://krebsonsecurity.com/wp-content/uploads/2016/08/Visa-PFD-MICROS-Alert-12AU
+clients1-google.com;Visa Alert and Update on the Oracle MICROS Breach http://krebsonsecurity.com/wp-content/uploads/2016/08/Visa-PFD-MICROS-Alert-12AU
+clients7-google.com;Visa Alert and Update on the Oracle MICROS Breach http://krebsonsecurity.com/wp-content/uploads/2016/08/Visa-PFD-MICROS-Alert-12AU
+clients6-google.com;Visa Alert and Update on the Oracle MICROS Breach http://krebsonsecurity.com/wp-content/uploads/2016/08/Visa-PFD-MICROS-Alert-12AU
+clients5-google.com;Visa Alert and Update on the Oracle MICROS Breach http://krebsonsecurity.com/wp-content/uploads/2016/08/Visa-PFD-MICROS-Alert-12AU
+clients9-google.com;Visa Alert and Update on the Oracle MICROS Breach http://krebsonsecurity.com/wp-content/uploads/2016/08/Visa-PFD-MICROS-Alert-12AU
+clients3-google.com;Visa Alert and Update on the Oracle MICROS Breach http://krebsonsecurity.com/wp-content/uploads/2016/08/Visa-PFD-MICROS-Alert-12AU
+clients8-google.com;Visa Alert and Update on the Oracle MICROS Breach http://krebsonsecurity.com/wp-content/uploads/2016/08/Visa-PFD-MICROS-Alert-12AU
+92.63.100.150;ET INFO JAVA - Java Archive Download By Vulnerable Client - Russian IP 
+ispsystem.net;ET INFO JAVA - Java Archive Download By Vulnerable Client - Russian IP 
+nederlandstest.com;Bad News Bears - Panda Banker Starts Looking More Like a Grizzly https://www.proofpoint.com/us/threat-insight/post/panda-banker-starts-looking-mo
+test2222test.info;Bad News Bears - Panda Banker Starts Looking More Like a Grizzly https://www.proofpoint.com/us/threat-insight/post/panda-banker-starts-looking-mo
+droidgrades.top;Android Marcher: Continuously Evolving Mobile Malware https://www.zscaler.com/blogs/research/android-marcher-continuously-evolving-mob
+droidgrades.us;Android Marcher: Continuously Evolving Mobile Malware https://www.zscaler.com/blogs/research/android-marcher-continuously-evolving-mob
+droidsg.pw;Android Marcher: Continuously Evolving Mobile Malware https://www.zscaler.com/blogs/research/android-marcher-continuously-evolving-mob
+apply.ebizx.net;Fresh Baked HOMEKit-made Cookles \u2013 With a DarkHotel Overlap http://researchcenter.paloaltonetworks.com/2016/08/unit42-fresh-baked-homekit-ma
+apply-wsu.ebizx.net;Fresh Baked HOMEKit-made Cookles \u2013 With a DarkHotel Overlap http://researchcenter.paloaltonetworks.com/2016/08/unit42-fresh-baked-homekit-ma
+dyn.pwnz.org;Fresh Baked HOMEKit-made Cookles \u2013 With a DarkHotel Overlap http://researchcenter.paloaltonetworks.com/2016/08/unit42-fresh-baked-homekit-ma
+dyn.kaleebso.com;Fresh Baked HOMEKit-made Cookles \u2013 With a DarkHotel Overlap http://researchcenter.paloaltonetworks.com/2016/08/unit42-fresh-baked-homekit-ma
+inocnation.com;#1020 Dissecting the Malware Involved in the INOCNATION Campaign https://www.fidelissecurity.com/sites/default/files/FTA_1020_Fidelis_Inocnation_
+mail.cbppnews.com;#1020 Dissecting the Malware Involved in the INOCNATION Campaign https://www.fidelissecurity.com/sites/default/files/FTA_1020_Fidelis_Inocnation_
+202.172.32.160;#1020 Dissecting the Malware Involved in the INOCNATION Campaign https://www.fidelissecurity.com/sites/default/files/FTA_1020_Fidelis_Inocnation_
+211.104.106.41;#1020 Dissecting the Malware Involved in the INOCNATION Campaign https://www.fidelissecurity.com/sites/default/files/FTA_1020_Fidelis_Inocnation_
+87.193.23.40;#1020 Dissecting the Malware Involved in the INOCNATION Campaign https://www.fidelissecurity.com/sites/default/files/FTA_1020_Fidelis_Inocnation_
+84.11.146.62;The Kittens Strike Back https://www.trendmicro.com/vinfo/us/security/news/cyber-attacks/rocket-kitten-co
+107.6.181.116;The Kittens Strike Back https://www.trendmicro.com/vinfo/us/security/news/cyber-attacks/rocket-kitten-co
+chanstring.com;Linux.Lady http://vms.drweb.com/virus/?_is=1&amp;i=8400823
+138.68.12.109;Linux.Lady http://vms.drweb.com/virus/?_is=1&amp;i=8400823
+104.131.120.66;Linux.Lady http://vms.drweb.com/virus/?_is=1&amp;i=8400823
+russell03.servehttp.com;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
+wxycgc.steelhome.cn;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
+wxkysteel.steelhome.cn;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
+russell01.servebeer.com;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
+wgeastchina.steelhome.cn;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
+ussainbolt.mooo.com;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
+asatar.ignorelist.com;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
+russell02.servehttp.com;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
+javedtar.chickenkiller.com;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
+captain.chickenkiller.com;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
+updatesoft.zapto.org;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
+rasheed.crabdance.com;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
+www.militaryworkerscn.com;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
+tariqj.crabdance.com;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
+www.cnmilit.com;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
+updatesys.zapto.org;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
+raheel.ignorelist.com;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
+www.81-cn.net;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
+ussainbolt1.mooo.com;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
+www.newsnstat.com;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
+212.129.13.110;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
+85.25.79.230;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
+45.43.192.172;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
+43.249.37.173;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
+5.254.98.68;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
+194.63.142.174;MONSOON \u2013 ANALYSIS OF AN APT CAMPAIGN https://www.forcepoint.com/sites/default/files/resources/files/forcepoint-securi
+axroot.com;Operation Manul https://www.eff.org/files/2016/08/03/i-got-a-letter-from-the-government.pdf
+mangoco.net;Operation Manul https://www.eff.org/files/2016/08/03/i-got-a-letter-from-the-government.pdf
+adobeinstall.com;Operation Manul https://www.eff.org/files/2016/08/03/i-got-a-letter-from-the-government.pdf
+kaliex.net;Operation Manul https://www.eff.org/files/2016/08/03/i-got-a-letter-from-the-government.pdf
+dropboxonline.com;Operation Manul https://www.eff.org/files/2016/08/03/i-got-a-letter-from-the-government.pdf
+orange2015.net;Operation Manul https://www.eff.org/files/2016/08/03/i-got-a-letter-from-the-government.pdf
+adobeair.net;Operation Manul https://www.eff.org/files/2016/08/03/i-got-a-letter-from-the-government.pdf
+adobe-flashviewer.accountslogin.services;Operation Manul https://www.eff.org/files/2016/08/03/i-got-a-letter-from-the-government.pdf
+jaysonj.no-ip.biz;Operation Manul https://www.eff.org/files/2016/08/03/i-got-a-letter-from-the-government.pdf
+98.37.201.117;CERT Orange Polska Report 2014 http://www.orange.pl/ocp-http/PL/Binary2/2003243/4102642946.pdf
+109.74.195.149;CERT Orange Polska Report 2014 http://www.orange.pl/ocp-http/PL/Binary2/2003243/4102642946.pdf
+42.121.125.34;CERT Orange Polska Report 2014 http://www.orange.pl/ocp-http/PL/Binary2/2003243/4102642946.pdf
+95.183.8.24;CERT Orange Polska Report 2014 http://www.orange.pl/ocp-http/PL/Binary2/2003243/4102642946.pdf
+42.121.133.1;CERT Orange Polska Report 2014 http://www.orange.pl/ocp-http/PL/Binary2/2003243/4102642946.pdf
+173.242.124.163;CERT Orange Polska Report 2014 http://www.orange.pl/ocp-http/PL/Binary2/2003243/4102642946.pdf
+118.184.176.15;CERT Orange Polska Report 2014 http://www.orange.pl/ocp-http/PL/Binary2/2003243/4102642946.pdf
+46.30.42.166;CERT Orange Polska Report 2014 http://www.orange.pl/ocp-http/PL/Binary2/2003243/4102642946.pdf
+donkixot17.ru;CERT Orange Polska Report 2014 http://www.orange.pl/ocp-http/PL/Binary2/2003243/4102642946.pdf
+donkixot17.net;CERT Orange Polska Report 2014 http://www.orange.pl/ocp-http/PL/Binary2/2003243/4102642946.pdf
+chanstring.com;Linux.Lady.1 propagating via Redis https://vms.drweb.com/virus/?_is=1&amp;i=8400823 / https://vms.drweb.com/virus/?
+r.chanstring.com;Linux.Lady.1 propagating via Redis https://vms.drweb.com/virus/?_is=1&amp;i=8400823 / https://vms.drweb.com/virus/?
+bikessport.com;Strider: Cyberespionage group turns eye of Sauron on targets http://www.symantec.com/connect/blogs/strider-cyberespionage-group-turns-eye-sau
+rapidcomments.com;Strider: Cyberespionage group turns eye of Sauron on targets http://www.symantec.com/connect/blogs/strider-cyberespionage-group-turns-eye-sau
+wildhorses.awardspace.info;Strider: Cyberespionage group turns eye of Sauron on targets http://www.symantec.com/connect/blogs/strider-cyberespionage-group-turns-eye-sau
+www.myhomemusic.com;Strider: Cyberespionage group turns eye of Sauron on targets http://www.symantec.com/connect/blogs/strider-cyberespionage-group-turns-eye-sau
+flowershop22.110mb.com;Strider: Cyberespionage group turns eye of Sauron on targets http://www.symantec.com/connect/blogs/strider-cyberespionage-group-turns-eye-sau
+88.198.222.163;Group5: Syria and the Iranian Connection https://citizenlab.org/2016/08/group5-syria/
 183.60.48.25;APT: Portscans for RDP, VNC, SSH and Telnet 
 brandsparkbestnewproductawards.com;Cerber ransomware https://twitter.com/bartblaze/status/758600547247222784
 46.183.223.236;Cerber ransomware https://twitter.com/bartblaze/status/758600547247222784
@@ -12417,11 +12604,6 @@ dnt5b.myfw.us;Attack on French Diplomat Linked to Operation Lotus Blossom http:/
 ustar5.passas.us;Attack on French Diplomat Linked to Operation Lotus Blossom http://researchcenter.paloaltonetworks.com/2015/12/attack-on-french-diplomat-lin
 203.124.14.229;Attack on French Diplomat Linked to Operation Lotus Blossom http://researchcenter.paloaltonetworks.com/2015/12/attack-on-french-diplomat-lin
 190.123.45.139;Pro PoS - Point of Sales malware http://blog.talosintel.com/2015/12/pro-pos.html
-inocnation.com;#1020 Dissecting the Malware Involved in the INOCNATION Campaign https://www.fidelissecurity.com/sites/default/files/FTA_1020_Fidelis_Inocnation_
-mail.cbppnews.com;#1020 Dissecting the Malware Involved in the INOCNATION Campaign https://www.fidelissecurity.com/sites/default/files/FTA_1020_Fidelis_Inocnation_
-202.172.32.160;#1020 Dissecting the Malware Involved in the INOCNATION Campaign https://www.fidelissecurity.com/sites/default/files/FTA_1020_Fidelis_Inocnation_
-211.104.106.41;#1020 Dissecting the Malware Involved in the INOCNATION Campaign https://www.fidelissecurity.com/sites/default/files/FTA_1020_Fidelis_Inocnation_
-87.193.23.40;#1020 Dissecting the Malware Involved in the INOCNATION Campaign https://www.fidelissecurity.com/sites/default/files/FTA_1020_Fidelis_Inocnation_
 wx.iosyy.me;iOS Trojan "Tiny"\u201d Attacks Jailbroken Devices http://researchcenter.paloaltonetworks.com/2015/12/ios-trojan-tinyv-attacks-jail
 apt.appstt.com;iOS Trojan "Tiny"\u201d Attacks Jailbroken Devices http://researchcenter.paloaltonetworks.com/2015/12/ios-trojan-tinyv-attacks-jail
 ninthclub.com;Malvertising campaigns use domain shadowing to pull in Angler EK https://www.proofpoint.com/us/threat-insight/post/The-Shadow-Knows

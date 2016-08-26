@@ -35,6 +35,7 @@ rule Typical_Malware_String_Transforms {
 		$i1 = "paeHssecorPteG" fullword ascii
 		$i2 = "sserddAcorPteG" fullword ascii
 		$i3 = "AyrarbiLdaoL" fullword ascii
+		$i4 = "AssecorPetaerC" fullword ascii
 
 		/* Registry */
 		$r1 = "teSlortnoCtnerruC" fullword ascii
