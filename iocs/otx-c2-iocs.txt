@@ -2061,7 +2061,6 @@ q96b7b7.ignorelist.com;THE XDEDIC MARKETPLACE https://securelist.com/files/2016/
 information.as;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
 thediplomat.com;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
 consultant.in;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
-10.in;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
 leases.in;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
 registry.active;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
 adventurelearning.me;Mofang: A politically motivated information stealing adversary https://foxitsecurity.files.wordpress.com/2016/06/fox-it_mofang_threatreport_tlp
