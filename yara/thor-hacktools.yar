@@ -3208,3 +3208,17 @@ rule dnscat2_Hacktool {
 	condition:
 		( ( uint16(0) == 0x457f or uint16(0) == 0x5a4d ) and filesize < 400KB and ( 2 of ($s*) ) ) or ( all of them )
 }
+
+rule WCE_in_memory {
+	meta:
+		description = "Detects Windows Credential Editor (WCE) in memory (and also on disk)"
+		author = "Florian Roth"
+		reference = "Internal Research"
+		score = 80
+		date = "2016-08-28"
+	strings:
+		$s1 = "wkKUSvflehHr::o:t:s:c:i:d:a:g:" fullword ascii
+		$s2 = "wceaux.dll" fullword ascii
+	condition:
+		all of them
+}
