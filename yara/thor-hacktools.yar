@@ -3207,3 +3207,118 @@ rule WCE_in_memory {
 	condition:
 		all of them
 }
+
+rule pstgdump {
+	meta:
+		description = "Detects a tool used by APT groups - file pstgdump.exe"
+		author = "Florian Roth"
+		reference = "http://goo.gl/igxLyF"
+		date = "2016-09-08"
+		hash1 = "65d48a2f868ff5757c10ed796e03621961954c523c71eac1c5e044862893a106"
+	strings:
+		$x1 = "\\Release\\pstgdump.pdb" ascii
+		$x2 = "Failed to dump all protected storage items - see previous messages for details" fullword ascii
+		$x3 = "ptsgdump [-h][-q][-u Username][-p Password]" fullword ascii
+		$x4 = "Attempting to impersonate domain user '%s' in domain '%s'" fullword ascii
+		$x5 = "Failed to impersonate user (ImpersonateLoggedOnUser failed): error %d" fullword ascii
+		$x6 = "Unable to obtain handle to PStoreCreateInstance in pstorec.dll" fullword ascii
+	condition:
+		( uint16(0) == 0x5a4d and filesize < 200KB and 1 of ($x*) ) or ( 3 of them )
+}
+
+rule lsremora {
+	meta:
+		description = "Detects a tool used by APT groups"
+		author = "Florian Roth"
+		reference = "http://goo.gl/igxLyF"
+		date = "2016-09-08"
+		hash1 = "efa66f6391ec471ca52cd053159c8a8778f11f921da14e6daf76387f8c9afcd5"
+		hash2 = "e0327c1218fd3723e20acc780e20135f41abca35c35e0f97f7eccac265f4f44e"
+	strings:
+		$x1 = "Target: Failed to load primary SAM functions." fullword ascii
+		$x2 = "lsremora64.dll" fullword ascii
+		$x3 = "PwDumpError:999999" fullword wide
+		$x4 = "PwDumpError" fullword wide
+		$x5 = "lsremora.dll" fullword ascii
+
+		$s1 = ":\\\\.\\pipe\\%s" fullword ascii
+		$s2 = "x%s_history_%d:%d" fullword wide
+		$s3 = "Using pipe %s" fullword ascii
+	condition:
+		( uint16(0) == 0x5a4d and filesize < 200KB and 1 of ($x*) ) or ( 3 of them )
+}
+
+rule servpw {
+	meta:
+		description = "Detects a tool used by APT groups - file servpw.exe"
+		author = "Florian Roth"
+		reference = "http://goo.gl/igxLyF"
+		date = "2016-09-08"
+		hash1 = "97b39ac28794a7610ed83ad65e28c605397ea7be878109c35228c126d43e2f46"
+		hash2 = "0f340b471ef34c69f5413540acd3095c829ffc4df38764e703345eb5e5020301"
+	strings:
+		$s1 = "Unable to open target process: %d, pid %d" fullword ascii
+		$s2 = "LSASS.EXE" fullword wide
+		$s3 = "WriteProcessMemory failed: %d" fullword ascii
+		$s4 = "lsremora64.dll" fullword ascii
+		$s5 = "CreateRemoteThread failed: %d" fullword ascii
+		$s6 = "Thread code: %d, path: %s" fullword ascii
+	condition:
+		( uint16(0) == 0x5a4d and filesize < 200KB and 3 of them ) or ( all of them )
+}
+
+rule fgexec {
+	meta:
+		description = "Detects a tool used by APT groups - file fgexec.exe"
+		author = "Florian Roth"
+		reference = "http://goo.gl/igxLyF"
+		date = "2016-09-08"
+		hash1 = "8697897bee415f213ce7bc24f22c14002d660b8aaffab807490ddbf4f3f20249"
+	strings:
+		$x1 = "\\Release\\fgexec.pdb" ascii
+		$x2 = "fgexec Remote Process Execution Tool" fullword ascii
+		$x3 = "fgexec CallNamedPipe failed" fullword ascii
+		$x4 = "fizzgig and the mighty foofus.net team" fullword ascii
+	condition:
+		( uint16(0) == 0x5a4d and filesize < 100KB and 1 of ($x*) ) or ( 3 of them )
+}
+
+rule cachedump {
+	meta:
+		description = "Detects a tool used by APT groups - from files cachedump.exe, cachedump64.exe"
+		author = "Florian Roth"
+		reference = "http://goo.gl/igxLyF"
+		date = "2016-09-08"
+		super_rule = 1
+		hash1 = "cf58ca5bf8c4f87bb67e6a4e1fb9e8bada50157dacbd08a92a4a779e40d569c4"
+		hash2 = "e38edac8c838a043d0d9d28c71a96fe8f7b7f61c5edf69f1ce0c13e141be281f"
+	strings:
+		$s1 = "Failed to open key SECURITY\\Cache in RegOpenKeyEx. Is service running as SYSTEM ? Do you ever log on domain ? " fullword ascii
+		$s2 = "Unable to open LSASS.EXE process" fullword ascii
+		$s3 = "Service not found. Installing CacheDump Service (%s)" fullword ascii
+		$s4 = "CacheDump service successfully installed." fullword ascii
+		$s5 = "Kill CacheDump service (shouldn't be used)" fullword ascii
+		$s6 = "cacheDump [-v | -vv | -K]" fullword ascii
+	condition:
+		( uint16(0) == 0x5a4d and filesize < 500KB and 1 of them ) or ( 3 of them )
+}
+
+rule PwDump {
+	meta:
+		description = "Detects a tool used by APT groups - file PwDump.exe"
+		author = "Florian Roth"
+		reference = "http://goo.gl/igxLyF"
+		date = "2016-09-08"
+		hash1 = "3c796092f42a948018c3954f837b4047899105845019fce75a6e82bc99317982"
+	strings:
+		$x1 = "Usage: %s [-x][-n][-h][-o output_file][-u user][-p password][-s share] machineName" fullword ascii
+		$x2 = "pwdump6 Version %s by fizzgig and the mighty group at foofus.net" fullword ascii
+		$x3 = "where -x targets a 64-bit host" fullword ascii
+		$x4 = "Couldn't delete target executable from remote machine: %d" fullword ascii
+
+		$s1 = "lsremora64.dll" fullword ascii
+		$s2 = "lsremora.dll" fullword ascii
+		$s3 = "servpw.exe" fullword ascii
+	condition:
+		( uint16(0) == 0x5a4d and filesize < 400KB and 1 of ($x*) ) or ( 3 of them )
+}
