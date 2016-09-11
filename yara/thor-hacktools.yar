@@ -3303,7 +3303,7 @@ rule cachedump {
 		( uint16(0) == 0x5a4d and filesize < 500KB and 1 of them ) or ( 3 of them )
 }
 
-rule PwDump {
+rule PwDump_B {
 	meta:
 		description = "Detects a tool used by APT groups - file PwDump.exe"
 		author = "Florian Roth"
