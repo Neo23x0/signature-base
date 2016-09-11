@@ -8562,3 +8562,147 @@ rule Webshell_zehir {
 	condition:
 		filesize < 200KB and 1 of them
 }
+
+/*
+	Yara Rule Set
+	Author: Florian Roth
+	Date: 2016-09-10
+	Identifier: Webshells PHP bartblaze
+*/
+
+/* Rule Set ----------------------------------------------------------------- */
+
+rule UploadShell_98038f1efa4203432349badabad76d44337319a6 {
+	meta:
+		description = "Detects a web shell"
+		author = "Florian Roth"
+		reference = "https://github.com/bartblaze/PHP-backdoors"
+		date = "2016-09-10"
+		hash1 = "506a6ab6c49e904b4adc1f969c91e4f1a7dde164be549c6440e766de36c93215"
+	strings:
+		$s2 = "$lol = file_get_contents(\"../../../../../wp-config.php\");" fullword ascii
+		$s6 = "@unlink(\"./export-check-settings.php\");" fullword ascii
+		$s7 = "$xos = \"Safe-mode:[Safe-mode:\".$hsafemode.\"] " fullword ascii
+	condition:
+		( uint16(0) == 0x3f3c and filesize < 6KB and ( all of ($s*) ) ) or ( all of them )
+}
+
+rule DKShell_f0772be3c95802a2d1e7a4a3f5a45dcdef6997f3 {
+	meta:
+		description = "Detects a web shell"
+		author = "Florian Roth"
+		reference = "https://github.com/bartblaze/PHP-backdoors"
+		date = "2016-09-10"
+		hash1 = "7ea49d5c29f1242f81f2393b514798ff7caccb50d46c60bdfcf61db00043473b"
+	strings:
+		$s1 = "<?php Error_Reporting(0); $s_pass = \"" ascii
+		$s2 = "$s_func=\"cr\".\"eat\".\"e_fun\".\"cti\".\"on" ascii
+	condition:
+		( uint16(0) == 0x3c0a and filesize < 300KB and all of them )
+}
+
+rule Unknown_8af033424f9590a15472a23cc3236e68070b952e {
+	meta:
+		description = "Detects a web shell"
+		author = "Florian Roth"
+		reference = "https://github.com/bartblaze/PHP-backdoors"
+		date = "2016-09-10"
+		hash1 = "3382b5eaaa9ad651ab4793e807032650667f9d64356676a16ae3e9b02740ccf3"
+	strings:
+		$s1 = "$check = $_SERVER['DOCUMENT_ROOT']" fullword ascii
+		$s2 = "$fp=fopen(\"$check\",\"w+\");" fullword ascii
+		$s3 = "fwrite($fp,base64_decode('" ascii
+	condition:
+		( uint16(0) == 0x6324 and filesize < 6KB and ( all of ($s*) ) ) or ( all of them )
+}
+
+rule DkShell_4000bd83451f0d8501a9dfad60dce39e55ae167d {
+	meta:
+		description = "Detects a web shell"
+		author = "Florian Roth"
+		reference = "https://github.com/bartblaze/PHP-backdoors"
+		date = "2016-09-10"
+		hash1 = "51a16b09520a3e063adf10ff5192015729a5de1add8341a43da5326e626315bd"
+	strings:
+		$x1 = "DK Shell - Took the Best made it Better..!!" fullword ascii
+		$x2 = "preg_replace(\"/.*/e\",\"\\x65\\x76\\x61\\x6C\\x28\\x67\\x7A\\x69\\x6E\\x66\\x6C\\x61\\x74\\x65\\x28\\x62\\x61\\x73\\x65\\x36\\x" ascii
+		$x3 = "echo '<b>Sw Bilgi<br><br>'.php_uname().'<br></b>';" fullword ascii
+
+		$s1 = "echo '<form action=\"\" method=\"post\" enctype=\"multipart/form-data\" name=\"uploader\" id=\"uploader\">';" fullword ascii
+		$s9 = "$x = $_GET[\"x\"];" fullword ascii
+	condition:
+		( uint16(0) == 0x3f3c and filesize < 200KB and 1 of ($x*) ) or ( 3 of them )
+}
+
+rule WebShell_5786d7d9f4b0df731d79ed927fb5a124195fc901 {
+	meta:
+		description = "Detects a web shell"
+		author = "Florian Roth"
+		reference = "https://github.com/bartblaze/PHP-backdoors"
+		date = "2016-09-10"
+		hash1 = "b1733cbb0eb3d440c4174cc67ca693ba92308ded5fc1069ed650c3c78b1da4bc"
+	strings:
+		$s1 = "preg_replace(\"\\x2F\\x2E\\x2A\\x2F\\x65\",\"\\x65\\x76\\x61\\x6C\\x28\\x67\\x7A\\x69\\x6E\\x66\\x6C\\x61\\x74\\x65\\x28\\x62\\x" ascii
+		$s2 = "input[type=text], input[type=password]{" fullword ascii
+	condition:
+		( uint16(0) == 0x6c3c and filesize < 80KB and all of them )
+}
+
+rule webshell_e8eaf8da94012e866e51547cd63bb996379690bf {
+	meta:
+		description = "Detects a web shell"
+		author = "Florian Roth"
+		reference = "https://github.com/bartblaze/PHP-backdoors"
+		date = "2016-09-10"
+		hash1 = "027544baa10259939780e97dc908bd43f0fb940510119fc4cce0883f3dd88275"
+	strings:
+		$x1 = "@exec('./bypass/ln -s /etc/passwd 1.php');" fullword ascii
+		$x2 = "echo \"<iframe src=mysqldumper/index.php width=100% height=100% frameborder=0></iframe> \";" fullword ascii
+		$x3 = "@exec('tar -xvf mysqldumper.tar.gz');" fullword ascii
+	condition:
+		( uint16(0) == 0x213c and filesize < 100KB and 1 of ($x*) ) or ( 2 of them )
+}
+
+rule Unknown_0f06c5d1b32f4994c3b3abf8bb76d5468f105167 {
+	meta:
+		description = "Detects a web shell"
+		author = "Florian Roth"
+		reference = "https://github.com/bartblaze/PHP-backdoors"
+		date = "2016-09-10"
+		hash1 = "6362372850ac7455fa9461ed0483032a1886543f213a431f81a2ac76d383b47e"
+	strings:
+		$s1 = "$check = $_SERVER['DOCUMENT_ROOT'] . \"/libraries/lola.php\" ;" fullword ascii
+		$s2 = "$fp=fopen(\"$check\",\"w+\");" fullword ascii
+		$s3 = "fwrite($fp,base64_decode('" ascii
+	condition:
+		( uint16(0) == 0x6324 and filesize < 2KB and all of them )
+}
+
+rule WSOShell_0bbebaf46f87718caba581163d4beed56ddf73a7 {
+	meta:
+		description = "Detects a web shell"
+		author = "Florian Roth"
+		reference = "https://github.com/bartblaze/PHP-backdoors"
+		date = "2016-09-10"
+		hash1 = "d053086907aed21fbb6019bf9e644d2bae61c63563c4c3b948d755db3e78f395"
+	strings:
+		$s8 = "$default_charset='Wi'.'ndo.'.'ws-12'.'51';" fullword ascii
+		$s9 = "$mosimage_session = \"" fullword ascii
+	condition:
+		( uint16(0) == 0x3f3c and filesize < 300KB and all of them )
+}
+
+rule WebShell_Generic_1609_A {
+	meta:
+		description = "Auto-generated rule"
+		author = "Florian Roth"
+		reference = "https://github.com/bartblaze/PHP-backdoors"
+		date = "2016-09-10"
+		super_rule = 1
+		hash1 = "c817a490cfd4d6377c15c9ac9bcfa136f4a45ff5b40c74f15216c030f657d035"
+		hash3 = "69b9d55ea2eb4a0d9cfe3b21b0c112c31ea197d1cb00493d1dddc78b90c5745e"
+	strings:
+		$s1 = "return $qwery45234dws($b);" fullword ascii
+	condition:
+		( uint16(0) == 0x3f3c and 1 of them )
+}
