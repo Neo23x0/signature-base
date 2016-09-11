@@ -1699,4 +1699,7 @@ AppData\\Roaming\\btecache\.dll;90
 # APT29 Report PaloAlto
 AppData\\Adobe\\qpbqrx\.dat;80
 
+# Webshells
+\\antak\.aspx;70
+
 # End
