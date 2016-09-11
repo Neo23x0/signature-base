@@ -1696,4 +1696,7 @@ AppData\\Roaming\\btecache\.dll;90
 \\jexws3\\jexws3\.jsp
 \\invoker\\jbosscons\.jsp
 
+# APT29 Report PaloAlto
+AppData\\Adobe\\qpbqrx\.dat;80
+
 # End
