@@ -1709,7 +1709,4 @@ AppData\\Adobe\\qpbqrx\.dat;80
 \\(images|img|js|fonts|css|swf|templates|themes|log|error_docs)\\[^\\]{,20}\.(exe|dll);60
 \\(wp-admin|wp-content|wp-includes)\\[^\\]{,20}\.(exe|dll);60
 
-# Suspcious PHP/JSP/ASP file in non-script directory
-\\(images|img|js|fonts|css|swf)\\[^\\]{,20}\.(php|jsp|jspx|asp|aspx);60
-
 # End
