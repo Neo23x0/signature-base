@@ -82,7 +82,7 @@ rule Derusbi_Code_Signing_Cert {
 		author = "Florian Roth"
 		reference = "http://blog.airbuscybersecurity.com/post/2015/11/Newcomers-in-the-Derusbi-family"
 		date = "2015-12-15"
-		score = 40
+		score = 60
    strings:
       $s1 = "Fuqing Dawu Technology Co.,Ltd.0" fullword ascii
       $s2 = "XL Games Co.,Ltd.0" fullword ascii

@@ -57,13 +57,13 @@ rule GIFCloaked_Webshell {
         hash = "f1c95b13a71ca3629a0bb79601fcacf57cdfcf768806a71b26f2448f8c1d5d24"
         score = 60
     strings:
-        $magic = "GIF"
         $s0 = "input type"
         $s1 = "<%eval request"
         $s2 = "<%eval(Request.Item["
         $s3 = "LANGUAGE='VBScript'"
     condition:
-        ( $magic at 0 ) and ( 1 of ($s*) )
+        uint32be(0x00) == 0x47494638 // GIF Header
+        and ( 1 of ($s*) )
 }
 
 /*
