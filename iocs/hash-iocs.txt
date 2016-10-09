@@ -6208,7 +6208,6 @@ a0f2ce49dec8f4f387fddb7cbd3ad0e0;Fidelis Threat Advisory http://goo.gl/ZjJyti fl
 ed9fa43c2a752a06a442a9abfec4a9cb;Fidelis Threat Advisory http://goo.gl/ZjJyti ibdyambl.vbs (hidden file)
 3739694248933ff8c2d2f6b6efd7c353;Fidelis Threat Advisory http://goo.gl/ZjJyti ouhlolswfixh
 2d0f8dd92186d6666c0154064ae2ad9d;Fidelis Threat Advisory http://goo.gl/ZjJyti slie.RJD
-71d8f6d5dc35517275bc38ebcc815f9f;Fidelis Threat Advisory http://goo.gl/ZjJyti znimialt.exe (AutoIt)
 36847ac57b1a24c02c421ad045e5c7531f5f937d;Fidelis Threat Advisory http://goo.gl/ZjJyt cedt370r(3).exe
 4a8fe7cd0ba3582d9bdf29e2e4ddcd1ff7cca03b;Fidelis Threat Advisory http://goo.gl/ZjJy AppMgnt.exe
 9a382a362d0485822809d837e891f91e4a37c80c;Fidelis Threat Advisory http://goo.gl/ZjJy PolicyManager
