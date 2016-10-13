@@ -35,7 +35,6 @@ PlanProposal\\new questionnaire\\Voter Plan Proposal;Defending the White Elephan
 \\abiosdsk\.sys;Regin - Further Investigations by Symantec Aug 2015 http://www.symantec.com/connect/blogs/regin-further-unravelling-mysteries-cybere
 \\adpu160\.sys;Regin - Further Investigations by Symantec Aug 2015 http://www.symantec.com/connect/blogs/regin-further-unravelling-mysteries-cybere
 \\floppy\.sys;Regin - Further Investigations by Symantec Aug 2015 http://www.symantec.com/connect/blogs/regin-further-unravelling-mysteries-cybere
-\\parclass\.sys;Regin - Further Investigations by Symantec Aug 2015 http://www.symantec.com/connect/blogs/regin-further-unravelling-mysteries-cybere
 \\rio8drvx\.sys;Regin - Further Investigations by Symantec Aug 2015 http://www.symantec.com/connect/blogs/regin-further-unravelling-mysteries-cybere
 \\ser8uart\.sys;Regin - Further Investigations by Symantec Aug 2015 http://www.symantec.com/connect/blogs/regin-further-unravelling-mysteries-cybere
 \\usbclass\.sys;Regin - Further Investigations by Symantec Aug 2015 http://www.symantec.com/connect/blogs/regin-further-unravelling-mysteries-cybere
