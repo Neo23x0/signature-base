@@ -26,11 +26,17 @@ rule Linux_DirtyCow_Exploit {
       $source_printf1 = "mmap %x"
       $source_printf2 = "procselfmem %d"
       $source_printf3 = "madvise %d"
+      $source_printf4 = "[-] failed to patch payload"
+      $source_printf5 = "[-] failed to win race condition..."
+      $source_printf6 = "[*] waiting for reverse connect shell..."
 
       $s1 = "/proc/self/mem"
+      $s2 = "/proc/%d/mem"
+      $s3 = "/proc/self/map"
+      $s4 = "/proc/%d/map"
    condition:
       ( uint16(0) == 0x457f and $a1 ) or
       all of ($b*) or
       3 of ($source*) or
-      ( uint16(0) == 0x457f and $s1 and filesize < 20KB )
+      ( uint16(0) == 0x457f and 1 of ($s*) and filesize < 20KB )
 }
