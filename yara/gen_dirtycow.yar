@@ -34,9 +34,12 @@ rule Linux_DirtyCow_Exploit {
       $s2 = "/proc/%d/mem"
       $s3 = "/proc/self/map"
       $s4 = "/proc/%d/map"
+
+      $p1 = "pthread_create" fullword ascii
+      $p2 = "pthread_join" fullword ascii
    condition:
       ( uint16(0) == 0x457f and $a1 ) or
       all of ($b*) or
       3 of ($source*) or
-      ( uint16(0) == 0x457f and 1 of ($s*) and filesize < 20KB )
+      ( uint16(0) == 0x457f and 1 of ($s*) and all of ($p*) and filesize < 20KB )
 }
