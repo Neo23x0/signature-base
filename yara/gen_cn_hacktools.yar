@@ -189,22 +189,6 @@ rule SqlDbx_zhs {
 		uint16(0) == 0x5a4d and 4 of them
 }
 
-rule digest_edir_auth {
-	meta:
-		description = "Chinese Hacktool Set - file digest_edir_auth.exe"
-		author = "Florian Roth"
-		reference = "http://tools.zjqhr.com/"
-		date = "2015-06-13"
-		hash = "1dc349c91d890e3a1b897c2e8bb0ee1beeb34bd5"
-	strings:
-		$s0 = "Error reading Universal Password: %d = %s" fullword ascii
-		$s1 = "read password for binddn from file secretfile" fullword ascii
-		$s4 = "user search filter pattern. %%s = login" fullword ascii
-		$s5 = "-D binddn -w bindpasswd or -D binddn -W secretfile options" fullword ascii
-	condition:
-		uint16(0) == 0x5a4d and filesize < 400KB and all of them
-}
-
 rule ms10048_x86 {
 	meta:
 		description = "Chinese Hacktool Set - file ms10048-x86.exe"
@@ -335,23 +319,6 @@ rule OtherTools_servu {
 		$s3 = "WriteFile" fullword ascii
 	condition:
 		$s0 at 0 and filesize < 50KB and all of them
-}
-
-rule ncsa_auth {
-	meta:
-		description = "Chinese Hacktool Set - file ncsa_auth.exe"
-		author = "Florian Roth"
-		reference = "http://tools.zjqhr.com/"
-		date = "2015-06-13"
-		hash = "d87c984107adc3921720f4c76608dc6ed68b2d84"
-	strings:
-		$s0 = "Usage: ncsa_auth <passwordfile>" fullword ascii
-		$s1 = "ERR Wrong password" fullword ascii
-		$s2 = "ERR No such user" fullword ascii
-		$s6 = "ncsa_auth: cannot create hash table" fullword ascii
-		$s20 = "(%d) %s" fullword ascii /* Goodware String - occured 11 times */
-	condition:
-		uint16(0) == 0x5a4d and filesize < 440KB and all of them
 }
 
 rule ustrrefadd {
@@ -802,22 +769,6 @@ rule S_MultiFunction_Scanners_s {
 		uint16(0) == 0x5a4d and filesize < 8000KB and 4 of them
 }
 
-rule mswin_ntlm_auth {
-	meta:
-		description = "Chinese Hacktool Set - file mswin_ntlm_auth.exe"
-		author = "Florian Roth"
-		reference = "http://tools.zjqhr.com/"
-		date = "2015-06-13"
-		hash = "390af28581db224af38a885b7ffad819c9b3be89"
-	strings:
-		$s1 = "Login attempt had result %d" fullword ascii
-		$s2 = "Username string exceeds %d bytes, rejecting" fullword ascii
-		$s3 = "checking domain: '%s', user: '%s'" fullword ascii
-		$s4 = "Usage: %s [-d] [-v] [-A|D LocalUserGroup] [-h]" fullword ascii
-	condition:
-		uint16(0) == 0x5a4d and filesize < 380KB and all of them
-}
-
 rule Dos_GetPass {
 	meta:
 		description = "Chinese Hacktool Set - file GetPass.exe"
@@ -931,22 +882,6 @@ rule CN_Tools_MyUPnP {
 		$s3 = "LOADER ERROR" fullword ascii
 	condition:
 		uint16(0) == 0x5a4d and filesize < 1500KB and all of them
-}
-
-rule logfile_daemon {
-	meta:
-		description = "Chinese Hacktool Set - file logfile-daemon.exe"
-		author = "Florian Roth"
-		reference = "http://tools.zjqhr.com/"
-		date = "2015-06-13"
-		hash = "132a8f628109cda7eb58c91f1c5e5e626cbfd14a"
-	strings:
-		$s0 = "Error: usage: %s <logfile>" fullword ascii
-		$s1 = "vBWSSSj" fullword ascii /* Goodware String - occured 24 times */
-		$s2 = "t-Ht!Ht" fullword ascii /* Goodware String - occured 25 times */
-		$s3 = "QSUVW3" fullword ascii /* Goodware String - occured 162 times */
-	condition:
-		uint16(0) == 0x5a4d and filesize < 260KB and all of them
 }
 
 rule CN_Tools_Shiell {
@@ -1087,24 +1022,6 @@ rule CN_Tools_xsniff {
 		$s11 = "%-5s%s->%s Bytes=%d TTL=%d Type: %d,%d ID=%d SEQ=%d" fullword ascii
 	condition:
 		uint16(0) == 0x5a4d and filesize < 220KB and 2 of them
-}
-
-rule mswin_check_ad_group {
-	meta:
-		description = "Chinese Hacktool Set - file mswin_check_ad_group.exe"
-		author = "Florian Roth"
-		reference = "http://tools.zjqhr.com/"
-		date = "2015-06-13"
-		hash = "15fa3d91c5e4836f27b9809d4efedc5a947fb221"
-	strings:
-		$s1 = "Domain Global group mode enabled using '%s' as default domain." fullword ascii
-		$s2 = "Warning: running in case insensitive mode !!!" fullword ascii
-		$s3 = "Usage: %s [-D domain][-G][-P][-c][-d][-h]" fullword ascii
-		$s4 = "Windows group: %S, Squid group: %S" fullword ascii
-		$s5 = "%s[%d]: " fullword ascii
-		$s6 = "DC Active Directory Site is %s" fullword ascii
-	condition:
-		uint16(0) == 0x5a4d and filesize < 380KB and 4 of them
 }
 
 rule MSSqlPass {
@@ -1521,22 +1438,6 @@ rule Tools_xport {
 		$s9 = "http://www.xfocus.org" fullword ascii
 	condition:
 		uint16(0) == 0x5a4d and filesize < 100KB and 2 of them
-}
-
-rule fakeauth_auth {
-	meta:
-		description = "Chinese Hacktool Set - file fakeauth_auth.exe"
-		author = "Florian Roth"
-		reference = "http://tools.zjqhr.com/"
-		date = "2015-06-13"
-		hash = "4d6311159e10ffbb904059ccfda70fde2fee1f7e"
-	strings:
-		$s0 = "sending 'NA invalid credentials, user=%s' to squid" fullword ascii
-		$s11 = "BH wrong packet type! user=%s" fullword ascii
-		$s16 = "fakeauth_auth[%ld]: " fullword ascii
-		$s20 = "sending 'TT %s' to squid" fullword ascii
-	condition:
-		uint16(0) == 0x5a4d and filesize < 260KB and all of them
 }
 
 rule Pc_xai {
@@ -2040,23 +1941,6 @@ rule unknown2 {
 		$s7 = " (*.txt)|*.txt" fullword wide
 	condition:
 		uint16(0) == 0x5a4d and filesize < 300KB and 4 of them
-}
-
-rule mswin_auth {
-	meta:
-		description = "Chinese Hacktool Set - file mswin_auth.exe"
-		author = "Florian Roth"
-		reference = "http://tools.zjqhr.com/"
-		date = "2015-06-13"
-		hash = "512cbd02f6fe69482e005a067db4eb07ce62d5a0"
-	strings:
-		$s1 = "No such user or wrong password" fullword ascii
-		$s2 = "%s [-A|D UserGroup][-O DefaultDomain][-d]" fullword ascii
-		$s3 = "mswin_auth[%d]: " fullword ascii
-		$s4 = "Unknown option: -%c. Exiting" fullword ascii
-		$s5 = "-D can specify a Windows Local Group name not allowed to authenticate" fullword ascii
-	condition:
-		uint16(0) == 0x5a4d and filesize < 150KB and all of them
 }
 
 rule hydra_7_3_hydra {
