@@ -8174,21 +8174,6 @@ rule JSP_jfigueiredo_APT_webshell_2 {
 		all of ($a*) or all of ($s*)
 }
 
-rule AJAX_FileUpload_webshell {
-	meta:
-		description = "AJAX JS/CSS components providing web shell by APT groups"
-		author = "F.Roth"
-		date = "12.10.2014"
-		score = 75
-		reference = "http://ceso.googlecode.com/svn/web/bko/filemanager/ajaxfileupload.js"
-	strings:
-		$a1 = "var frameId = 'jUploadFrame' + id;" ascii
-		$a2 = "var form = jQuery('<form  action=\"\" method=\"POST\" name=\"' + formId + '\" id=\"' + formId + '\" enctype=\"multipart/form-data\"></form>');" ascii
-		$a3 = "jQuery(\"<div>\").html(data).evalScripts();" ascii
-	condition:
-		all of them
-}
-
 rule Webshell_Insomnia {
 	meta:
 		description = "Insomnia Webshell - file InsomniaShell.aspx"
