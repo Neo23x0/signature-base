@@ -1709,4 +1709,13 @@ AppData\\Adobe\\qpbqrx\.dat;80
 \\(images|img|js|fonts|css|swf|templates|themes|log|error_docs)\\[^\\]{,20}\.(exe|dll);60
 \\(wp-admin|wp-content|wp-includes)\\[^\\]{,20}\.(exe|dll);60
 
+# APT29 Post-Election Acitivty https://goo.gl/4nyX1e
+\\RWP_16-038_Norris\.ZIP;80
+\\37486\.ZIP;60
+\\message0236\.ZIP;80
+\\Roaming\\Apple\\gwV46iIc\.idx;80
+\\Roaming\\HP\\fywhx\.dll;80
+\\Roaming\\Dell\\impku\.dat;80
+\\Roaming\\Apple\\hqwhbr\.lck;80
+
 # End
