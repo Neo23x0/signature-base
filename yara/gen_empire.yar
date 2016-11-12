@@ -107,7 +107,7 @@ rule Empire__Users_neo_code_Workspace_Empire_4sigs_PowerUp {
       ( uint16(0) == 0x233c and filesize < 2000KB and 1 of them ) or all of them
 }
 
-rule Empire_Invoke_Mimikatz {
+rule Empire_Invoke_Mimikatz_Gen {
    meta:
       description = "Detects Empire component - file Invoke-Mimikatz.ps1"
       author = "Florian Roth"
