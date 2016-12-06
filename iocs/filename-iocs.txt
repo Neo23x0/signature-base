@@ -1758,4 +1758,7 @@ ystem32\\netinit\.exe;80
 \\Windows\\System32\\wcscript\.exe;65
 ystem32\\Drivers\\drdisk.sys;70
 
+# GoldenEye Ransomware Naming Scheme
+Temp\\rad[A-F0-9]{5}\.exe;70
+
 # End
