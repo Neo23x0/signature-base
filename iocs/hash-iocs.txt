@@ -7186,3 +7186,17 @@ a76c02c067eae26d78f4b494274dfa6aedc6fa7a;APT29 Post-Election Activity https://go
 5f105801a1abb398dadc756480713f9bd7a4aa73;APT29 Post-Election Activity https://goo.gl/4nyX1e
 ae3ff39c2a7266132e0af016a48b97d565463d90;APT29 Post-Election Activity https://goo.gl/4nyX1e
 1067ddd5615518e0cbac7389a024b32f119a3229;APT29 Post-Election Activity https://goo.gl/4nyX1e
+
+10de241bb7028788a8f278e27a4e335f;Shamoon 2.0 ntssrvr32.bat
+c843046e54b755ec63ccb09d0a689674;Shamoon 2.0 gpget.exe
+76c643ab29d497317085e5db8c799960;Shamoon 2.0 drdisk.sys
+b5d2a4d8ba015f3e89ade820c5840639;Shamoon 2.0 key8854321.pub
+ac4d91e919a3ef210a59acab0dbb9ab5;Shamoon 2.0 netinit.exe
+47bb36cd2832a18b5ae951cf5a7d44fba6d8f5dca0a372392d40f51d1fe1ac34;Disttrack Droppers (x64)
+394a7ebad5dfc13d6c75945a61063470dc3b68f7a207613b79ef000e1990909b;Disttrack Droppers (x86)
+772ceedbc2cacf7b16ae967de310350e42aa47e5cef19f4423220d41501d86a5;Communication Components (x64)
+61c1c8fc8b268127751ac565ed4abd6bdab8d2d0f2ff6074291b2d54b0228842;Communication Components (x86)
+c7fc1f9c2bed748b50a599ee2fa609eb7c9ddaeb9cd16633ba0d10cf66891d8a;Wiper Components (x64)
+128fa5815c6fee68463b18051c1a1ccdf28c599ce321691686b1efa4838a2acd;Wiper Components(x86)
+5a826b4fa10891cf63aae832fc645ce680a483b915c608ca26cedbb173b1b80a;EldoS RawDisk Samples (x64)
+4744df6ac02ff0a3f9ad0bf47b15854bbebb73c936dd02f7c79293a2828406f6;EldoS RawDisk Samples (x86)

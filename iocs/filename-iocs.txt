@@ -1706,7 +1706,7 @@ AppData\\Adobe\\qpbqrx\.dat;80
 \\eof\.exe;100
 
 # Suspicious EXE DLL in Non-Executable directory
-\\(images|img|js|fonts|css|swf|templates|themes|log|error_docs)\\[^\\]{,20}\.(exe|dll);60
+\\(images|img|js|fonts|css|swf|templates|themes|log|error_docs)\\[^\\]{,20}\.(exe|dll)$;60
 \\(wp-admin|wp-content|wp-includes)\\[^\\]{,20}\.(exe|dll);60
 
 # APT29 Post-Election Acitivty https://goo.gl/4nyX1e
@@ -1717,5 +1717,48 @@ AppData\\Adobe\\qpbqrx\.dat;80
 \\Roaming\\HP\\fywhx\.dll;80
 \\Roaming\\Dell\\impku\.dat;80
 \\Roaming\\Apple\\hqwhbr\.lck;80
+
+# Shamoon 2.0 https://goo.gl/khxVGq
+ystem32\\ntssrvr32\.exe;80
+ystem32\\ntssrvr64\.exe;80
+\\ntssrvr32\.bat;80
+ystem32\\gpget\.exe;80
+ystem32\\drdisk\.sys;80
+\\key8854321\.pub;80
+ystem32\\netinit\.exe;80
+\\inf\\usbvideo324\.pnf;70
+\\Windows\\System32\\caclsrv\.exe;65
+\\Windows\\System32\\certutl\.exe;65
+\\Windows\\System32\\clean\.exe;65
+\\Windows\\System32\\ctrl\.exe;65
+\\Windows\\System32\\dfrag\.exe;65
+\\Windows\\System32\\dnslookup\.exe;65
+\\Windows\\System32\\dvdquery\.exe;65
+\\Windows\\System32\\event\.exe;65
+\\Windows\\System32\\extract\.exe;65
+\\Windows\\System32\\findfile\.exe;65
+\\Windows\\System32\\fsutl\.exe;65
+\\Windows\\System32\\gpget\.exe;65
+\\Windows\\System32\\iissrv\.exe;65
+\\Windows\\System32\\ipsecure\.exe;65
+\\Windows\\System32\\msinit\.exe;65
+\\Windows\\System32\\netx\.exe;65
+\\Windows\\System32\\ntdsutl\.exe;65
+\\Windows\\System32\\ntfrsutil\.exe;65
+\\Windows\\System32\\ntnw\.exe;65
+\\Windows\\System32\\power\.exe;65
+\\Windows\\System32\\rdsadmin\.exe;65
+\\Windows\\System32\\regsys\.exe;65
+\\Windows\\System32\\routeman\.exe;65
+\\Windows\\System32\\rrasrv\.exe;65
+\\Windows\\System32\\sacses\.exe;65
+\\Windows\\System32\\sfmsc\.exe;65
+\\Windows\\System32\\sigver\.exe;65
+\\Windows\\System32\\smbinit\.exe;65
+\\Windows\\System32\\wcscript\.exe;65
+ystem32\\Drivers\\drdisk.sys;70
+
+# GoldenEye Ransomware Naming Scheme
+Temp\\rad[A-F0-9]{5}\.exe;70
 
 # End
