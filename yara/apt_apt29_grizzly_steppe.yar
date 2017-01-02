@@ -66,3 +66,40 @@ rule PAS_TOOL_PHP_WEB_KIT_mod {
       #isset == 3 and
       all of them
 }
+
+rule WebShell_PHP_Web_Kit_v3 {
+   meta:
+      description = "Detects PAS Tool PHP Web Kit"
+      reference = "https://github.com/wordfence/grizzly"
+      author = "Florian Roth"
+      date = "2016/01/01"
+   strings:
+      $php = "<?php $"
+      $php2 = "@assert(base64_decode($_REQUEST["
+
+      $s1 = "(str_replace(\"\\n\", '', '"
+      $s2 = "(strrev($" ascii
+      $s3 = "de'.'code';" ascii
+   condition:
+      ( $php at 0 or $php2 ) and
+      filesize > 8KB and filesize < 100KB and
+      all of ($s*)
+}
+
+rule WebShell_PHP_Web_Kit_v4 {
+   meta:
+      description = "Detects PAS Tool PHP Web Kit"
+      reference = "https://github.com/wordfence/grizzly"
+      author = "Florian Roth"
+      date = "2016/01/01"
+   strings:
+      $php = "<?php $"
+
+      $s1 = "(StR_ReplAcE(\"\\n\",'',"
+      $s2 = ";if(PHP_VERSION<'5'){" ascii
+      $s3 = "=SuBstr_rePlACe(" ascii
+   condition:
+      $php at 0 and
+      filesize > 8KB and filesize < 100KB and
+      2 of ($s*)
+}
