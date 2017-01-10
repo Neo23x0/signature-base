@@ -91,6 +91,6 @@ rule SysInterals_PipeList_NameChanged {
 		$s2 = "Sysinternals License" ascii fullword
 	condition:
 		uint16(0) == 0x5a4d and filesize < 170KB and all of them
-		and not filename == "pipelist.exe"
-		and not filename == "PipeList.exe"
+		and not filename contains "pipelist.exe"
+		and not filename contains "PipeList.exe"
 }
