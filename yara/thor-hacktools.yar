@@ -3331,3 +3331,26 @@ rule MSBuild_Mimikatz_Execution_via_XML {
    condition:
       all of them
 }
+
+/*
+   Yara Rule Set
+   Author: Florian Roth
+   Date: 2017-01-06
+   Identifier: Fscan
+*/
+
+/* Rule Set ----------------------------------------------------------------- */
+
+rule Fscan_Portscanner {
+   meta:
+      description = "Fscan port scanner scan output / strings"
+      author = "Florian Roth"
+      reference = "https://twitter.com/JamesHabben/status/817112447970480128"
+      date = "2017-01-06"
+   strings:
+      $s1 = "Time taken:" fullword ascii
+      $s2 = "Scan finished at" fullword ascii
+      $s3 = "Scan started at" fullword ascii
+   condition:
+      filesize < 20KB and 3 of them
+}
