@@ -5,6 +5,8 @@
 	Identifier: EQGRP
 */
 
+import "pe"
+
 /* Rule Set ----------------------------------------------------------------- */
 
 rule EQGRP_noclient_3_0_5 {
@@ -1210,4 +1212,561 @@ rule EQGRP_RC5_RC6_Opcode {
 		$s1 = { 8B 74 91 FC 81 EE 47 86 C8 61 89 34 91 42 83 FA 2B }
 	condition:
 		1 of them
+}
+
+/*
+   Yara Rule Set
+   Author: Florian Roth
+   Date: 2017-01-13
+   Identifier: EquationGroup - ShadowBrokers Release January 2017
+*/
+
+/* Rule Set ----------------------------------------------------------------- */
+
+rule EquationGroup_modifyAudit_Implant {
+   meta:
+      description = "EquationGroup Malware - file modifyAudit_Implant.dll"
+      author = "Florian Roth"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "b7902809a15c4c3864a14f009768693c66f9e9234204b873d29a87f4c3009a50"
+   strings:
+      $s1 = "LSASS.EXE" fullword wide
+      $s2 = "hNtQueryInformationProcess" fullword ascii
+      $s3 = "hZwOpenProcess" fullword ascii
+      $s4 = ".?AVFeFinallyFailure@@" fullword ascii
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 90KB and ( all of ($s*) ) ) or ( all of them )
+}
+
+rule EquationGroup_modifyAudit_Lp {
+   meta:
+      description = "EquationGroup Malware - file modifyAudit_Lp.dll"
+      author = "Florian Roth"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "2a1f2034e80421359e3bf65cbd12a55a95bd00f2eb86cf2c2d287711ee1d56ad"
+   strings:
+      $s1 = "Read of audit related process memory failed" fullword wide
+      $s2 = "** This may indicate that another copy of modify_audit is already running **" fullword wide
+      $s3 = "Pattern match of code failed" fullword wide
+      $s4 = "Base for necessary auditing dll not found" fullword wide
+      $s5 = "Security auditing has been disabled" fullword wide
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 300KB and 3 of them ) or ( all of them )
+}
+
+rule EquationGroup_ProcessHide_Lp {
+   meta:
+      description = "EquationGroup Malware - file ProcessHide_Lp.dll"
+      author = "Florian Roth"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "cdee0daa816f179e74c90c850abd427fbfe0888dcfbc38bf21173f543cdcdc66"
+   strings:
+      $x1 = "Invalid flag.  Can only hide or unhide" fullword wide
+      $x2 = "Process elevation failed" fullword wide
+      $x3 = "Unknown error hiding process" fullword wide
+      $x4 = "Invalid process links found in EPROCESS" fullword wide
+      $x5 = "Unable to find SYSTEM process" fullword wide
+      $x6 = "Process hidden, but EPROCESS location lost" fullword wide
+      $x7 = "Invalid EPROCESS location for given ID" fullword wide
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 300KB and 1 of them ) or ( 3 of them )
+}
+
+rule EquationGroup_pwdump_Implant {
+   meta:
+      description = "EquationGroup Malware - file pwdump_Implant.dll"
+      author = "Florian Roth"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "dfd5768a4825d1c7329c2e262fde27e2b3d9c810653585b058fcf9efa9815964"
+   strings:
+      $s1 = ".?AVFeFinallyFailure@@" fullword ascii
+      $s8 = ".?AVFeFinallySuccess@@" fullword ascii
+      $s3 = "\\system32\\win32k.sys" fullword wide
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 100KB and all of them )
+}
+
+rule EquationGroup_EquationDrug_Gen_5 {
+   meta:
+      description = "EquationGroup Malware - file PC_Level3_http_dll"
+      author = "Florian Roth"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "4ebfc1f6ec6a0e68e47e5b231331470a4483184cf715a578191b91ba7c32094d"
+   strings:
+      $s1 = "Psxssdll.dll" fullword wide
+      $s2 = "Posix Server Dll" fullword wide
+      $s3 = "itanium" fullword wide
+      $s6 = "Copyright (C) Microsoft" fullword wide
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 300KB and all of them )
+}
+
+rule EquationGroup_PC_Level3_http_flav_dll {
+   meta:
+      description = "EquationGroup Malware - file PC_Level3_http_flav_dll"
+      author = "Florian Roth"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "27972d636b05a794d17cb3203d537bcf7c379fafd1802792e7fb8e72f130a0c4"
+   strings:
+      $s1 = "Psxssdll.dll" fullword wide
+      $s2 = "Posix Server Dll" fullword wide
+      $s4 = "itanium" fullword wide
+      $s5 = "RHTTP/1.0" fullword wide
+      $s8 = "Copyright (C) Microsoft" fullword wide
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 300KB and all of them )
+}
+
+rule EquationGroup_LSADUMP_Lp {
+   meta:
+      description = "EquationGroup Malware - file LSADUMP_Lp.dll"
+      author = "Florian Roth"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "c7bf4c012293e7de56d86f4f5b4eeb6c1c5263568cc4d9863a286a86b5daf194"
+   strings:
+      $x1 = "LSADUMP - - ERROR - - Injected" fullword wide
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 300KB and 1 of them )
+}
+
+rule EquationGroup_EquationDrug_mstcp32 {
+   meta:
+      description = "EquationGroup Malware - file mstcp32.sys"
+      author = "Florian Roth"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "26215bc56dc31d2466d72f1f4e1b6388e62606e9949bc41c28968fcb9a9d60a6"
+   strings:
+      $s1 = "mstcp32.sys" fullword wide
+      $s2 = "p32.sys" fullword ascii
+      $s3 = "\\Registry\\User\\CurrentUser\\" fullword wide
+      $s4 = "\\DosDevices\\%ws" fullword wide
+      $s5 = "\\Device\\%ws_%ws" fullword wide
+      $s6 = "sys\\mstcp32.dbg" fullword ascii
+      $s7 = "%ws%03d%ws%wZ" fullword wide
+      $s8 = "TCP/IP driver" fullword wide
+      $s9 = "\\Device\\%ws" fullword wide
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 200KB and 7 of them ) or ( all of them )
+}
+
+rule EquationGroup_nethide_Lp {
+   meta:
+      description = "EquationGroup Malware - file nethide_Lp.dll"
+      author = "Florian Roth"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "137749c0fbb8c12d1a650f0bfc73be2739ff084165d02e4cb68c6496d828bf1d"
+   strings:
+      $x1 = "Error: Attempt to hide all TCP connections (any:any)." fullword wide
+      $x2 = "privilegeRunInKernelMode failed" fullword wide
+      $x3 = "Failed to unhide requested connection" fullword wide
+      $x4 = "Nethide running in USER_MODE" fullword wide
+      $x5 = "Not enough slots for all of the list.  Some entries may have not been hidden." fullword wide
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 300KB and 1 of them ) or ( all of them )
+}
+
+rule EquationGroup_PC_Level4_flav_dll_x64 {
+   meta:
+      description = "EquationGroup Malware - file PC_Level4_flav_dll_x64"
+      author = "Florian Roth"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "25a2549031cb97b8a3b569b1263c903c6c0247f7fff866e7ec63f0add1b4921c"
+   strings:
+      $s1 = "wship.dll" fullword wide
+      $s2 = "   IP:      " fullword ascii
+      $s3 = "\\\\.\\%hs" fullword ascii
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 200KB and all of them )
+}
+
+rule EquationGroup_PC_Level4_flav_exe {
+   meta:
+      description = "EquationGroup Malware - file PC_Level4_flav_exe"
+      author = "Florian Roth"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "33ba9f103186b6e52d8d69499512e7fbac9096e7c5278838127488acc3b669a9"
+   strings:
+      $s1 = "Extended Memory Runtime Process" fullword wide
+      $s2 = "memess.exe" fullword wide
+      $s3 = "\\\\.\\%hs" fullword ascii
+      $s4 = ".?AVOpenSocket@@" fullword ascii
+      $s5 = "Corporation. All rights reserved." fullword wide
+      $s6 = "itanium" fullword wide
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 200KB and all of them )
+}
+
+rule EquationGroup_processinfo_Implant {
+   meta:
+      description = "EquationGroup Malware - file processinfo_Implant.dll"
+      author = "Florian Roth"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "aadfa0b1aec4456b10e4fb82f5cfa918dbf4e87d19a02bcc576ac499dda0fb68"
+   strings:
+      $s1 = "hZwOpenProcessToken" fullword ascii
+      $s2 = "hNtQueryInformationProcess" fullword ascii
+      $s3 = "No mapping" fullword wide
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 80KB and all of them )
+}
+
+rule EquationGroup_EquationDrug_Gen_2 {
+   meta:
+      description = "EquationGroup Malware - file PortMap_Implant.dll"
+      author = "Auto Generated"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "964762416840738b1235ed4ae479a4b117b8cdcc762a6737e83bc2062c0cf236"
+   strings:
+      $op1 = { 0c 2b ca 8a 04 11 3a 02 75 01 47 42 4e 75 f4 8b }
+      $op2 = { 14 83 c1 05 80 39 85 75 0c 80 79 01 c0 75 06 80 }
+      $op3 = { eb 3d 83 c0 06 33 f6 80 38 ff 75 2c 80 78 01 15 }
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 250KB and all of them )
+}
+
+
+rule EquationGroup_EquationDrug_ntevt {
+   meta:
+      description = "EquationGroup Malware - file ntevt.sys"
+      author = "Florian Roth"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "45e5e1ea3456d7852f5c610c7f4447776b9f15b56df7e3a53d57996123e0cebf"
+   strings:
+      $s1 = "ntevt.sys" fullword ascii
+      $s2 = "c:\\ntevt.pdb" fullword ascii
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 500KB and all of them )
+}
+
+rule EquationGroup_nethide_Implant {
+   meta:
+      description = "EquationGroup Malware - file nethide_Implant.dll"
+      author = "Florian Roth"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "b2daf9058fdc5e2affd5a409aebb90343ddde4239331d3de8edabeafdb3a48fa"
+   strings:
+      $s1 = "\\\\.\\dlcndi" fullword ascii
+      $s2 = "s\\drivers\\" fullword wide
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 90KB and all of them )
+}
+
+rule EquationGroup_EquationDrug_Gen_4 {
+   meta:
+      description = "EquationGroup Malware - file PC_Level4_flav_dll"
+      author = "Auto Generated"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "227faeb770ba538fb85692b3dfcd00f76a0a5205d1594bd0969a1e535ee90ee1"
+   strings:
+      $op1 = { 11 8b da 23 df 8d 1c 9e c1 fb 02 33 da 23 df 33 }
+      $op2 = { c3 0c 57 8b 3b eb 27 8b f7 83 7e 08 00 8b 3f 74 }
+      $op3 = { 00 0f b7 5e 14 8d 5c 33 18 8b c3 2b 45 08 50 ff }
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 300KB and all of them )
+}
+
+rule EquationGroup_EquationDrug_tdi6 {
+   meta:
+      description = "EquationGroup Malware - file tdi6.sys"
+      author = "Florian Roth"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "12c082f74c0916a0e926488642236de3a12072a18d29c97bead15bb301f4b3f8"
+   strings:
+      $s1 = "tdi6.sys" fullword wide
+      $s3 = "TDI IPv6 Wrapper" fullword wide
+      $s5 = "Corporation. All rights reserved." fullword wide
+      $s6 = "FailAction" fullword wide
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 100KB and all of them )
+}
+
+rule EquationGroup_modifyAuthentication_Implant {
+   meta:
+      description = "EquationGroup Malware - file modifyAuthentication_Implant.dll"
+      author = "Florian Roth"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "e1dff24af5bfc991dca21b4e3a19ffbc069176d674179eef691afc6b1ac6f805"
+   strings:
+      $s1 = "LSASS.EXE" fullword wide
+      $s2 = "hsamsrv.dll" fullword ascii
+      $s3 = "hZwOpenProcess" fullword ascii
+      $s4 = "hOpenProcess" fullword ascii
+      $s5 = ".?AVFeFinallyFailure@@" fullword ascii
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 200KB and all of them )
+}
+
+rule EquationGroup_ntfltmgr {
+   meta:
+      description = "EquationGroup Malware - file ntfltmgr.sys"
+      author = "Florian Roth"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "f7a886ee10ee6f9c6be48c20f370514be62a3fd2da828b0dff44ff3d485ff5c5"
+   strings:
+      $s1 = "ntfltmgr.sys" fullword wide
+      $s2 = "ntfltmgr.pdb" fullword ascii
+      $s4 = "Network Filter Manager" fullword wide
+      $s5 = "Corporation. All rights reserved." fullword wide
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 100KB and all of them )
+}
+
+rule EquationGroup_DXGHLP16 {
+   meta:
+      description = "EquationGroup Malware - file DXGHLP16.SYS"
+      author = "Florian Roth"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "fcfb56fa79d2383d34c471ef439314edc2239d632a880aa2de3cea430f6b5665"
+   strings:
+      $s1 = "DXGHLP16.SYS" fullword wide
+      $s2 = "P16.SYS" fullword ascii
+      $s3 = "\\Registry\\User\\CurrentUser\\" fullword wide
+      $s4 = "\\DosDevices\\%ws" fullword wide
+      $s5 = "\\Device\\%ws_%ws" fullword wide
+      $s6 = "ct@SYS\\DXGHLP16.dbg" fullword ascii
+      $s7 = "%ws%03d%ws%wZ" fullword wide
+      $s8 = "TCP/IP driver" fullword wide
+      $s9 = "\\Device\\%ws" fullword wide
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 200KB and all of them )
+}
+
+rule EquationGroup_EquationDrug_msgkd {
+   meta:
+      description = "EquationGroup Malware - file msgkd.ex_"
+      author = "Florian Roth"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "25eec68fc9f0d8d1b5d72c9eae7bee29035918e9dcbeab13e276dec4b2ad2a56"
+   strings:
+      $s1 = "KEysud" fullword ascii
+      $s2 = "XWWWPWS" fullword ascii
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 300KB and all of them )
+}
+
+rule EquationGroup_RunAsChild_Lp {
+   meta:
+      description = "EquationGroup Malware - file RunAsChild_Lp.dll"
+      author = "Florian Roth"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "1097e1d562341858e241f1f67788534c0e340a2dc2e75237d57e3f473e024464"
+   strings:
+      $s1 = "Privilege elevation failed" fullword wide
+      $s2 = "Unable to open parent process" fullword wide
+      $s4 = "Invalid input to lpRunAsChildPPC" fullword wide
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 300KB and all of them )
+}
+
+rule EquationGroup_EquationDrug_Gen_6 {
+   meta:
+      description = "EquationGroup Malware - file PC_Level3_dll_x64"
+      author = "Florian Roth"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "339855618fb3ef53987b8c14a61bd4519b2616e766149e0c21cbd7cbe7a632c9"
+   strings:
+      $s1 = "Psxssdll.dll" fullword wide
+      $s2 = "Posix Server Dll" fullword wide
+      $s3 = "Copyright (C) Microsoft" fullword wide
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 300KB and all of them )
+}
+
+rule EquationGroup_PC_Level3_http_flav_dll_x64 {
+   meta:
+      description = "EquationGroup Malware - file PC_Level3_http_flav_dll_x64"
+      author = "Florian Roth"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "4e0209b4f5990148f5d6dee47dbc7021bf78a782b85cef4d6c8be22d698b884f"
+   strings:
+      $s1 = "Psxssdll.dll" fullword wide
+      $s2 = "Posix Server Dll" fullword wide
+      $s3 = ".?AVOpenSocket@@" fullword ascii
+      $s4 = "RHTTP/1.0" fullword wide
+      $s5 = "Copyright (C) Microsoft" fullword wide
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 400KB and ( all of ($s*) ) ) or ( all of them )
+}
+
+rule EquationGroup_EquationDrug_Gen_3 {
+   meta:
+      description = "EquationGroup Malware - file mssld.dll"
+      author = "Auto Generated"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "69dcc150468f7707cc8ef618a4cea4643a817171babfba9290395ada9611c63c"
+   strings:
+      $op1 = { f4 65 c6 45 f5 6c c6 45 f6 33 c6 45 f7 32 c6 45 }
+      $op2 = { 36 c6 45 e6 34 c6 45 e7 50 c6 45 e8 72 c6 45 e9 }
+      $op3 = { c6 45 e8 65 c6 45 e9 70 c6 45 ea 74 c6 45 eb 5f }
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 1000KB and all of them )
+}
+
+rule EquationGroup_GetAdmin_Lp {
+   meta:
+      description = "EquationGroup Malware - file GetAdmin_Lp.dll"
+      author = "Florian Roth"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "e1c9c9f031d902e69e42f684ae5b35a2513f7d5f8bca83dfbab10e8de6254c78"
+   strings:
+      $x1 = "Current user is System -- unable to join administrators group" fullword wide
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 300KB and all of them )
+}
+
+
+rule EquationGroup_ModifyGroup_Lp {
+   meta:
+      description = "EquationGroup Malware - file ModifyGroup_Lp.dll"
+      author = "Florian Roth"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "dfb38ed2ca3870faf351df1bd447a3dc4470ed568553bf83df07bf07967bf520"
+   strings:
+      $s1 = "Modify Privileges failed" fullword wide
+      $s2 = "Given privilege name not found" fullword wide
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 300KB and all of them )
+}
+
+rule EquationGroup_pwdump_Lp {
+   meta:
+      description = "EquationGroup Malware - file pwdump_Lp.dll"
+      author = "Florian Roth"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "fda57a2ba99bc610d3ff71b2d0ea2829915eabca168df99709a8fdd24288c5e5"
+   strings:
+      $x1 = "PWDUMP - - ERROR - -" fullword wide
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 300KB and all of them )
+}
+
+rule EquationGroup_EventLogEdit_Implant {
+   meta:
+      description = "EquationGroup Malware - file EventLogEdit_Implant.dll"
+      author = "Florian Roth"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "0bb750195fbd93d174c2a8e20bcbcae4efefc881f7961fdca8fa6ebd68ac1edf"
+   strings:
+      $s1 = "SYSTEM\\CurrentControlSet\\Services\\EventLog\\%ls" fullword wide
+      $s2 = "Ntdll.dll" fullword ascii
+      $s3 = "hZwOpenProcess" fullword ascii
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 100KB and all of them )
+}
+
+rule EquationGroup_PortMap_Lp {
+   meta:
+      description = "EquationGroup Malware - file PortMap_Lp.dll"
+      author = "Florian Roth"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "2b27f2faae9de6330f17f60a1d19f9831336f57fdfef06c3b8876498882624a6"
+   strings:
+      $s1 = "Privilege elevation failed" fullword wide
+      $s2 = "Portmap ended due to max number of ports" fullword wide
+      $s3 = "Invalid parameters received for portmap" fullword wide
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 300KB and 2 of them )
+}
+
+rule EquationGroup_ProcessOptions_Lp {
+   meta:
+      description = "EquationGroup Malware - file ProcessOptions_Lp.dll"
+      author = "Florian Roth"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "31d86f77137f0b3697af03dd28d6552258314cecd3c1d9dc18fcf609eb24229a"
+   strings:
+      $s1 = "Invalid parameter received by implant" fullword wide
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 300KB and all of them )
+}
+
+rule EquationGroup_PassFreely_Lp {
+   meta:
+      description = "EquationGroup Malware - file PassFreely_Lp.dll"
+      author = "Florian Roth"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      hash1 = "fe42139748c8e9ba27a812466d9395b3a0818b0cd7b41d6769cb7239e57219fb"
+   strings:
+      $s1 = "Unexpected value in memory.  Run the 'CheckOracle' or 'memcheck' command to identify the problem" fullword wide
+      $s2 = "Oracle process memory successfully modified!" fullword wide
+      $s3 = "Unable to reset the memory protection mask to the memory" fullword wide
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 300KB and 1 of them )
+}
+
+/* Super Rules ------------------------------------------------------------- */
+
+rule EquationGroup_EquationDrug_Gen_1 {
+   meta:
+      description = "EquationGroup Malware - from files DuplicateToken_Lp.dll, EventLogEdit_Lp.dll, GetAdmin_Lp.dll, LSADUMP_Lp.dll, modifyAudit_Lp.dll, modifyAuthentication_Lp.dll, ModifyGroup_Lp.dll, ModifyPrivilege_Lp.dll, nethide_Lp.dll, PassFreely_Lp.dll, PortMap_Lp.dll, ProcessHide_Lp.dll, ProcessOptions_Lp.dll, pwdump_Lp.dll, RunAsChild_Lp.dll"
+      author = "Florian Roth"
+      reference = "https://goo.gl/tcSoiJ"
+      date = "2017-01-13"
+      super_rule = 1
+      hash1 = "694be2698bcc5c7a1cce11f8ef65c1c96a883d14b98148c36b32888fb58b6a7e"
+      hash2 = "73d1d55493886639c619e9f5e312daab93e4feeb74f24dbe51593842baac8d15"
+      hash3 = "e1c9c9f031d902e69e42f684ae5b35a2513f7d5f8bca83dfbab10e8de6254c78"
+      hash4 = "c7bf4c012293e7de56d86f4f5b4eeb6c1c5263568cc4d9863a286a86b5daf194"
+      hash5 = "2a1f2034e80421359e3bf65cbd12a55a95bd00f2eb86cf2c2d287711ee1d56ad"
+      hash6 = "8f5b97124de9fce16e2cfecb7dd2e171824c9e07546db7b3bee7c5f2c92ceda9"
+      hash7 = "dfb38ed2ca3870faf351df1bd447a3dc4470ed568553bf83df07bf07967bf520"
+      hash8 = "d92928a867a685274b0a74ec55c0b83690fca989699310179e184e2787d47f48"
+      hash9 = "137749c0fbb8c12d1a650f0bfc73be2739ff084165d02e4cb68c6496d828bf1d"
+      hash10 = "fe42139748c8e9ba27a812466d9395b3a0818b0cd7b41d6769cb7239e57219fb"
+      hash11 = "2b27f2faae9de6330f17f60a1d19f9831336f57fdfef06c3b8876498882624a6"
+      hash12 = "cdee0daa816f179e74c90c850abd427fbfe0888dcfbc38bf21173f543cdcdc66"
+      hash13 = "31d86f77137f0b3697af03dd28d6552258314cecd3c1d9dc18fcf609eb24229a"
+      hash14 = "fda57a2ba99bc610d3ff71b2d0ea2829915eabca168df99709a8fdd24288c5e5"
+      hash15 = "1097e1d562341858e241f1f67788534c0e340a2dc2e75237d57e3f473e024464"
+   strings:
+      $x1 = "Injection Lib -  GetProcAddress failed on Kernel32.DLL function" fullword wide
+      $x2 = "Injection Lib -  JUMPUP failed to open requested process" fullword wide
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 300KB and 1 of ($x*) ) or ( all of them )
+}
+
+/* The Cherry on the Cake */
+
+rule EquationDrug_MS_Identifier {
+	meta:
+		description = "Microsoft Identifier used in EquationDrug Platform"
+		author = "Florian Roth @4nc4p"
+		date = "2015/03/11"
+	strings:
+		$s1 = "Microsoft(R) Windows (TM) Operating System" fullword wide
+	condition:
+		// Epoch for 01.01.2000
+		$s1 and pe.timestamp > 946684800
 }
