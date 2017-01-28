@@ -11,3 +11,16 @@ rule Ping_Command_in_EXE {
    condition:
       uint16(0) == 0x5a4d and all of them
 }
+
+rule GoogleBot_UserAgent {
+   meta:
+      description = "Detects the GoogleBot UserAgent String in an Executable"
+      author = "Florian Roth"
+      reference = "Internal Research"
+      date = "2017-01-27"
+      score = 65
+   strings:
+      $x1 = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" fullword ascii
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 500KB and $x1 )
+}
