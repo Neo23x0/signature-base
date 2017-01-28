@@ -21,6 +21,8 @@ rule GoogleBot_UserAgent {
       score = 65
    strings:
       $x1 = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" fullword ascii
+
+      $fp1 = "McAfee, Inc." wide
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 500KB and $x1 )
+      ( uint16(0) == 0x5a4d and filesize < 500KB and $x1 and not 1 of ($fp*) )
 }
