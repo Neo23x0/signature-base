@@ -6,6 +6,13 @@
 	Identifier: Derusbi Dez 2015
 */
 
+private rule PEFILE {
+   meta:
+      description = "Detects portable executable files in a fuzzy way only by detecting the MZ header and not checking for a PE header"
+   condition:
+      uint16(0) == 0x5A4D
+}
+
 rule derusbi_kernel
 {
     meta:
@@ -17,9 +24,8 @@ rule derusbi_kernel
         $token2 = "Wrod--$$$"
         $cfg = "XXXXXXXXXXXXXXX"
         $class = ".?AVPCC_BASEMOD@@"
-        $MZ = "MZ"
     condition:
-        $MZ at 0 and $token1 and $token2 and $cfg and $class
+        PEFILE and $token1 and $token2 and $cfg and $class
 }
 
 rule derusbi_linux
