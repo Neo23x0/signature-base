@@ -17,13 +17,6 @@
 
 */
 
-private rule PEFILE {
-   meta:
-      description = "Detects portable executable files in a fuzzy way only by detecting the MZ header and not checking for a PE header"
-   condition:
-      uint16(0) == 0x5A4D
-}
-
 /* WCE */
 
 rule WindowsCredentialEditor
@@ -2721,7 +2714,7 @@ rule CN_Portscan : APT
     strings:
 		$s2 = "TCP 12.12.12.12"
     condition:
-        PEFILE and $s2
+        uint16(0) == 0x5A4D and $s2
 }
 
 rule WMI_vbs : APT
