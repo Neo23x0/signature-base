@@ -2913,7 +2913,7 @@ rule mimikatz_lsass_mdmp
 		$lsass			= "System32\\lsass.exe"	wide nocase
 
 	condition:
-		(uint32(0) == 0x504d444d) and $lsass
+		(uint32(0) == 0x504d444d) and $lsass and filesize > 50000KB
 }
 
 rule wce
