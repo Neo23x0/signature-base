@@ -75,38 +75,6 @@ rule users_list {
         filesize < 12KB and all of them
 }
 
-rule function_drop {
-    meta:
-        description = "Chinese Hacktool Set - file function_drop.php"
-        author = "Florian Roth"
-        reference = "http://tools.zjqhr.com/"
-        date = "2015-06-13"
-        hash = "209098c494ce10d82d1c2002488509c5e8983182"
-    strings:
-        $s0 = "@mssql_query('DROP FUNCTION ' . urldecode($_GET['function']) . ';') or" ascii
-        $s1 = "$_GET['returnto'] = 'database_properties.php';" fullword ascii
-        $s2 = "echo('<meta http-equiv=\"refresh\" content=\"0;url=' . $_GET['returnto'] . '\">'" ascii
-        $s3 = "if(empty($_GET['returnto']))" fullword ascii
-    condition:
-        filesize < 5KB and all of them
-}
-
-rule table_export_download {
-    meta:
-        description = "Chinese Hacktool Set - file table_export_download.php"
-        author = "Florian Roth"
-        reference = "http://tools.zjqhr.com/"
-        date = "2015-06-13"
-        hash = "2758e553d1059bdbc4e3993dd6f46218fc26103d"
-    strings:
-        $s0 = "header('Content-Disposition: attachment; filename=\"' . $_SESSION['database'] . " ascii
-        $s1 = "header('Content-Length: ' . strlen($_POST['data']));" fullword ascii
-        $s2 = "header('Content-type: application/x-download');" fullword ascii
-        $s3 = "echo $_POST['data'];" fullword ascii
-    condition:
-        filesize < 5KB and all of them
-}
-
 rule trigger_modify {
     meta:
         description = "Chinese Hacktool Set - file trigger_modify.php"
@@ -138,38 +106,6 @@ rule Customize {
         $s4 = "R=\"Result\\t|\\t\\r\\nExecute Successfully!\\t|\\t\\r\\n\";}Conn.Close();break;" ascii
     condition:
         filesize < 24KB and all of them
-}
-
-rule database_export {
-    meta:
-        description = "Chinese Hacktool Set - file database_export.php"
-        author = "Florian Roth"
-        reference = "http://tools.zjqhr.com/"
-        date = "2015-06-13"
-        hash = "edcf8ef761e7e09a6a4929ccbc2aa04c7011ae53"
-    strings:
-        $s0 = "header('Content-Length: ' . strlen($masterquery));" fullword ascii
-        $s3 = "echo '<form name=\"form1\" method=\"post\" action=\"database_export_download.php" ascii
-        $s7 = "if(substr_count($_POST['tables'][$counter],'.') > 0)" fullword ascii
-        $s19 = "<input type=\"hidden\" name=\"doexport\" value=\"yes\">" fullword ascii
-    condition:
-        filesize < 100KB and all of them
-}
-
-rule mobile_index {
-    meta:
-        description = "Chinese Hacktool Set - file index.php"
-        author = "Florian Roth"
-        reference = "http://tools.zjqhr.com/"
-        date = "2015-06-13"
-        hash = "353239a2116385aa2036a9748b8d2e9b7454bede"
-    strings:
-        $s0 = "$c = @mssql_connect($_POST['datasource'],$_POST['username'],$_POST['password']) " ascii
-        $s1 = "<form name=\"form1\" method=\"post\" action=\"index.php\">" fullword ascii
-        $s2 = "$_SESSION['datasource_password'] = $_POST['password'];" fullword ascii
-        $s3 = "<b>Username:</b>" fullword ascii
-    condition:
-        filesize < 21KB and all of them
 }
 
 rule oracle_data {
