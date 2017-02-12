@@ -1,4 +1,3 @@
-
 /*
    Yara Rule Set
    Author: US CERT
@@ -86,6 +85,8 @@ rule IMPLANT_1_v5 {
       uint32(0) == 0x46445025 or uint32(1) == 0x6674725C) and any of them
 }
 
+/* TOO MANY FALSE POSITIVES
+
 rule IMPLANT_1_v6 {
    meta:
       description = "Downrage Implant by APT28"
@@ -100,6 +101,8 @@ rule IMPLANT_1_v6 {
       (uint16(0) == 0x5A4D or uint16(0) == 0xCFD0 or uint16(0) == 0xC3D4 or
       uint32(0) == 0x46445025) and any of them
 }
+
+*/
 
 rule IMPLANT_1_v7 {
    meta:
@@ -569,6 +572,8 @@ rule IMPLANT_4_v2 {
       uint32(0) == 0x46445025 or uint32(1) == 0x6674725C) and all of them
 }
 
+/* Some false positives - replaced with alternative rule (see below)
+
 rule IMPLANT_4_v3 {
    meta:
       description = "BlackEnergy / Voodoo Bear Implant by APT28"
@@ -822,6 +827,34 @@ rule IMPLANT_4_v3 {
       (for any of ($b*): ($ in (uint32(uint32(0x3C)+248+(40*(uint16(uint32(0x3C)+6)-1)+20))..(uint32(uint32(0x3C)+248+(40*(uint16(uint32(0x3C)+6)-1)+20))+uint32(uint32(0x3C)+248+(40*(uint16(uint32(0x3C)+6)-1)+16)))))))
 }
 
+*/
+
+/*
+   Yara Rule Set
+   Author: Florian Roth
+   Date: 2017-02-12
+   Identifier: Grizzly Steppe Alternatives
+*/
+
+/* Alternative Rule Set ---------------------------------------------------- */
+
+rule IMPLANT_4_v3_AlternativeRule {
+   meta:
+      description = "BlackEnergy / Voodoo Bear Implant by APT28"
+      comment = "Alternative rule - not based on the original samples but samples on which the original rule matched"
+      author = "Florian Roth"
+      reference = "US CERT Grizzly Steppe Report"
+      date = "2017-02-12"
+      hash1 = "2244fe9c5d038edcb5406b45361613cf3909c491e47debef35329060b00c985a"
+   strings:
+      $op1 = { 33 c9 41 ff 13 13 c9 ff 13 72 f8 c3 53 1e 01 00 } /* Opcode */
+      $op2 = { 21 da 40 00 00 a0 40 00 08 a0 40 00 b0 70 40 00 } /* Opcode */
+   condition:
+      ( uint16(0) == 0x5a4d and all of them )
+}
+
+/* Alternative Rule Set ---------------------------------------------------- */
+
 rule IMPLANT_4_v4 {
    meta:
       description = "BlackEnergy / Voodoo Bear Implant by APT28"
@@ -853,6 +886,8 @@ rule IMPLANT_4_v5 {
       uint32(1) == 0x6674725C) and all of them
 }
 
+/* TOO MANY FALSE POSITIVES
+
 rule IMPLANT_4_v6 {
    meta:
       description = "BlackEnergy / Voodoo Bear Implant by APT28"
@@ -867,6 +902,8 @@ rule IMPLANT_4_v6 {
       (uint16(0) == 0x5A4D or uint16(0) == 0xCFD0 or uint16(0) == 0xC3D4 or
       uint32(0) == 0x46445025 or uint32(1) == 0x6674725C) and all of them
 }
+
+*/
 
 rule IMPLANT_4_v7 {
    meta:
@@ -1337,6 +1374,8 @@ rule IMPLANT_6_v6 {
       uint32(0) == 0x46445025 or uint32(1) == 0x6674725C) and all of them
 }
 
+/* TOO MANY FALSE POSITIVES
+
 rule IMPLANT_6_v7 {
    meta:
       description = "Sednit / EVILTOSS Implant by APT28"
@@ -1355,6 +1394,8 @@ rule IMPLANT_6_v7 {
       (uint16(0) == 0x5A4D or uint16(0) == 0xCFD0 or uint16(0) == 0xC3D4 or
       uint32(0) == 0x46445025 or uint32(1) == 0x6674725C) and $STR1 and 2 of ($OPT*)
 }
+
+*/
 
 rule IMPLANT_7_v1 {
    meta:
@@ -1397,6 +1438,8 @@ rule IMPLANT_8_v1
       (3 of ($REF_var*)) and (1 of ($REF_value*))
 }
 
+/* TOO MANY FALSE POSITIVES
+
 rule IMPLANT_8_v2 {
    meta:
       description = "HAMMERTOSS / HammerDuke Implant by APT29"
@@ -1410,6 +1453,8 @@ rule IMPLANT_8_v2 {
    condition:
       (uint16(0) == 0x5A4D) and all of them
 }
+
+*/
 
 rule IMPLANT_9_v1 {
    meta:
@@ -1428,6 +1473,8 @@ rule IMPLANT_9_v1 {
       (uint16(0) == 0x5A4D or uint16(0)) and all of them
 }
 
+/* TOO MANY FALSE POSITIVES
+
 rule IMPLANT_10_v1 {
    meta:
       description = "CozyDuke / CozyCar / CozyBear Implant by APT29"
@@ -1442,6 +1489,8 @@ rule IMPLANT_10_v1 {
    condition:
       uint16(0) == 0x5A4D and ($STR1 or $STR2)
 }
+
+*/
 
 rule IMPLANT_10_v2 {
    meta:
@@ -1479,8 +1528,6 @@ rule IMPLANT_11_v12 {
       (uint16(0) == 0x5A4D) and #STR5 > 4 and all of them
 }
 
-*/
-
 rule IMPLANT_12_v1 {
    meta:
       description = "Cosmic Duke Implant by APT29"
@@ -1493,6 +1540,8 @@ rule IMPLANT_12_v1 {
    condition:
       (uint16(0) == 0x5A4D) and $FUNC
 }
+
+*/
 
 rule Unidentified_Malware_Two {
    meta:
