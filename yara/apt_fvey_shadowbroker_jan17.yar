@@ -27,7 +27,6 @@ rule FVEY_ShadowBrokers_Jan17_Screen_Strings {
 
       $c1 = "Psp_Avoidance" fullword ascii
       $c2 = "PasswordDump" fullword ascii
-      $c3 = "InjectDll" fullword ascii
       $c4 = "EventLogEdit" fullword ascii
       $c5 = "ProcessModify" fullword ascii
 
