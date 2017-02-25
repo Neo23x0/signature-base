@@ -37,6 +37,9 @@ class OTXReceiver():
     hash_upper = False
     filename_regex_out = True
 
+    # Event container
+    events = []
+
     def __init__(self, api_key, siem_mode, debug, proxy):
         self.debug = debug
         self.otx = OTXv2(api_key, proxy)
@@ -49,10 +52,16 @@ class OTXReceiver():
 
     def get_iocs_last(self):
         # mtime = (datetime.now() - timedelta(days=days_to_load)).isoformat()
-        print "Starting OTX feed download ..."
-        self.events = self.otx.getall()
-        print "Download complete - %s events received" % len(self.events)
-        # json_normalize(self.events)
+        try:
+            print "Starting OTX feed download ..."
+            self.events = self.otx.getall()
+            if len(self.events) > 0:
+                print "Download complete - %s events received" % len(self.events)
+            else:
+                print "Download failed - no events received (check your Internet connection)"
+            # json_normalize(self.events)
+        except Exception, e:
+            traceback.print_exc()
 
     def write_iocs(self, ioc_folder):
 
