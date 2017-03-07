@@ -1817,4 +1817,34 @@ Temp\\rad[A-F0-9]{5}\.exe;70
 \\vs\.attack;80
 \\ys\.ratload;80
 
+# Kaspersky StoneDrill Report
+\\[Ww]indows\\[Tt]emp\\key[0-9]{6,8}\.pub;70
+\\caclsrv\.exe;60
+\\dvdquery\.exe;60
+\\msinit\.exe;60
+\\wcscript\.exe;60
+\\certutl\.exe;60
+\\event\.exe;60
+\\ntfrsutil\.exe;60
+\\routeman\.exe;60
+\\ntnw\.exe;60
+\\clean\.exe;60
+\\findfile\.exe;60
+\\ntdsutl\.exe;60
+\\rrasrv\.exe;60
+\\netx\.exe;60
+\\ctrl\.exe;60
+\\gpget\.exe;60
+\\power\.exe;60
+\\sacses\.exe;60
+\\fsutl\.exe;60
+\\dfrag\.exe;60
+\\ipsecure\.exe;60
+\\rdsadmin\.exe;60
+\\sfmsc\.exe;60
+\\dnslookup\.exe;60
+\\iissrv\.exe;60
+\\regsys.\exe ;60
+\\smbinit\.exe;60
+
 # End
