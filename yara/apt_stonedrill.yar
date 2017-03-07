@@ -169,12 +169,10 @@ rule StoneDrill_VBS_1 {
       $x2 = "ping 1.0.0.0 -n 1 -w 20000 > nul" fullword ascii
 
       $s1 = "WshShell.CopyFile \"%COMMON_APPDATA%\\Chrome\\" ascii
-      $s2 = "Set WshShell = CreateObject(" ascii
-      $s3 = "WshShell.DeleteFile \"%temp%\\" ascii
-      $s4 = "WScript.Sleep(10 * 1000)" fullword ascii
-      $s5 = "Set WshShell = CreateObject(\"Scripting.FileSystemObject\") While WshShell.FileExists(\"" ascii
-      $s6 = "Set WshShell = Nothing" fullword ascii
-      $s7 = " , \"%COMMON_APPDATA%\\Chrome\\" ascii
+      $s2 = "WshShell.DeleteFile \"%temp%\\" ascii
+      $s3 = "WScript.Sleep(10 * 1000)" fullword ascii
+      $s4 = "Set WshShell = CreateObject(\"Scripting.FileSystemObject\") While WshShell.FileExists(\"" ascii
+      $s5 = " , \"%COMMON_APPDATA%\\Chrome\\" ascii
    condition:
       ( filesize < 1KB and 1 of ($x*) or 2 of ($s*) )
 }
