@@ -28,7 +28,6 @@ rule susp_file_enumerator_with_encrypted_resource_101 {
       all of them and
       filesize < 700000 and
       pe.number_of_sections > 4 and
-      pe.number_of_signatures == 0 and
       pe.number_of_resources > 1 and pe.number_of_resources < 15 and
       for any i in (0..pe.number_of_resources - 1):
          (
