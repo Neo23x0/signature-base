@@ -1847,4 +1847,7 @@ Temp\\rad[A-F0-9]{5}\.exe;70
 \\regsys.\exe ;60
 \\smbinit\.exe;60
 
+# Unicdoe Left-to-Right Override Trick https://goo.gl/cHnBqP
+fdp\.exe;60
+
 # End
