@@ -3352,3 +3352,180 @@ rule Fscan_Portscanner {
    condition:
       filesize < 20KB and 3 of them
 }
+
+
+/*
+   Yara Rule Set
+   Author: Florian Roth
+   Date: 2017-03-15
+   Identifier: Windows Password Recovery
+*/
+
+/* Rule Set ----------------------------------------------------------------- */
+
+rule WPR_loader_EXE {
+   meta:
+      description = "Windows Password Recovery - file loader.exe"
+      author = "Florian Roth"
+      reference = "Internal Research"
+      date = "2017-03-15"
+      hash1 = "e7d158d27d9c14a4f15a52ee5bf8aa411b35ad510b1b93f5e163ae7819c621e2"
+   strings:
+      $s1 = "Failed to get system process ID" fullword wide
+      $s2 = "gLSASS.EXE" fullword wide
+      $s3 = "WriteProcessMemory failed" fullword wide
+      $s4 = "wow64 process NOT created" fullword wide
+      $s5 = "\\ast.exe" fullword wide
+      $s6 = "Exit code=%s, status=%d" fullword wide
+      $s7 = "VirtualProtect failed" fullword wide
+      $s8 = "nSeDebugPrivilege" fullword wide
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 100KB and 3 of them )
+}
+
+rule WPR_loader_DLL {
+   meta:
+      description = "Windows Password Recovery - file loader64.dll"
+      author = "Florian Roth"
+      reference = "Internal Research"
+      date = "2017-03-15"
+      hash1 = "7b074cb99d45fc258e0324759ee970467e0f325e5d72c0b046c4142edc6776f6"
+      hash2 = "a1f27f7fd0e03601a11b66d17cfacb202eacf34f94de3c4e9d9d39ea8d1a2612"
+   strings:
+      $x1 = "loader64.dll" fullword ascii
+      $x2 = "loader.dll" fullword ascii
+
+      $s1 = "TUlDUk9TT0ZUX0FVVEhFTlRJQ0FUSU9OX1BBQ0tBR0VfVjFfMA==" fullword ascii /* base64 encoded string 'MICROSOFT_AUTHENTICATION_PACKAGE_V1_0' */
+      $s2 = "UmVtb3RlRGVza3RvcEhlbHBBc3Npc3RhbnRBY2NvdW50" fullword ascii /* base64 encoded string 'RemoteDesktopHelpAssistantAccount' */
+      $s3 = "U2FtSVJldHJpZXZlUHJpbWFyeUNyZWRlbnRpYWxz" fullword ascii /* base64 encoded string 'SamIRetrievePrimaryCredentials' */
+      $s4 = "VFM6SW50ZXJuZXRDb25uZWN0b3JQc3dk" fullword ascii /* base64 encoded string 'TS:InternetConnectorPswd' */
+      $s5 = "TCRVRUFjdG9yQWx0Q3JlZFByaXZhdGVLZXk=" fullword ascii /* base64 encoded string 'L$UEActorAltCredPrivateKey' */
+      $s6 = "YXNwbmV0X1dQX1BBU1NXT1JE" fullword ascii /* base64 encoded string 'aspnet_WP_PASSWORD' */
+      $s7 = "TCRBTk1fQ1JFREVOVElBTFM=" fullword ascii /* base64 encoded string 'L$ANM_CREDENTIALS' */
+      $s8 = "RGVmYXVsdFBhc3N3b3Jk" fullword ascii /* base64 encoded string 'DefaultPassword' */
+
+      $op0 = { 48 8b cd e8 e0 e8 ff ff 48 89 07 48 85 c0 74 72 } /* Opcode */
+      $op1 = { e8 ba 23 00 00 33 c9 ff 15 3e 82 } /* Opcode */
+      $op2 = { 48 83 c4 28 e9 bc 55 ff ff 48 8d 0d 4d a7 00 00 } /* Opcode */
+   condition:
+      uint16(0) == 0x5a4d and
+      filesize < 400KB and
+      (
+         ( 1 of ($x*) and 1 of ($s*) ) or
+         ( 1 of ($s*) and all of ($op*) )
+      )
+}
+
+rule WPR_Passscape_Loader {
+   meta:
+      description = "Windows Password Recovery - file ast.exe"
+      author = "Florian Roth"
+      reference = "Internal Research"
+      date = "2017-03-15"
+      hash1 = "f6f2d4b9f19f9311ec419f05224a1c17cf2449f2027cb7738294479eea56e9cb"
+   strings:
+      $s1 = "SYSTEM\\CurrentControlSet\\Services\\PasscapeLoader64" fullword wide
+      $s2 = "ast64.dll" fullword ascii
+      $s3 = "\\loader64.exe" fullword wide
+      $s4 = "Passcape 64-bit Loader Service" fullword wide
+      $s5 = "PasscapeLoader64" fullword wide
+      $s6 = "ast64 {msg1GkjN7Sh8sg2Al7ker63f}" fullword wide
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 200KB and 2 of them )
+}
+
+rule WPR_Asterisk_Hook_Library {
+   meta:
+      description = "Windows Password Recovery - file ast64.dll"
+      author = "Florian Roth"
+      reference = "Internal Research"
+      date = "2017-03-15"
+      hash1 = "225071140e170a46da0e57ce51f0838f4be00c8f14e9922c6123bee4dffde743"
+      hash2 = "95ec84dc709af990073495082d30309c42d175c40bd65cad267e6f103852a02d"
+   strings:
+      $s1 = "ast64.dll" fullword ascii
+      $s2 = "ast.dll" fullword wide
+      $s3 = "c:\\%s.lvc" fullword ascii
+      $s4 = "c:\\%d.lvc" fullword ascii
+      $s5 = "Asterisk Hook Library" fullword wide
+      $s6 = "?Ast_StartRd64@@YAXXZ" fullword ascii
+      $s7 = "Global\\{1374821A-281B-9AF4-%04X-12345678901234}" fullword ascii
+      $s8 = "2004-2013 Passcape Software" fullword wide
+      $s9 = "Global\\Passcape#6712%04X" fullword ascii
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 300KB and 3 of them )
+}
+
+rule WPR_WindowsPasswordRecovery_EXE {
+   meta:
+      description = "Windows Password Recovery - file wpr.exe"
+      author = "Florian Roth"
+      reference = "Internal Research"
+      date = "2017-03-15"
+      hash1 = "c1c64cba5c8e14a1ab8e9dd28828d036581584e66ed111455d6b4737fb807783"
+   strings:
+      $x1 = "UuPipe" fullword ascii
+      $x2 = "dbadllgl" fullword ascii
+      $x3 = "UkVHSVNUUlkgTU9O" fullword ascii /* base64 encoded string 'REGISTRY MON' */
+      $x4 = "RklMRSBNT05JVE9SIC0gU1l" fullword ascii /* base64 encoded string 'FILE MONITOR - SY' */
+
+      $s1 = "WPR.exe" fullword wide
+      $s2 = "Windows Password Recovery" fullword wide
+
+      $op0 = { 5f df 27 17 89 } /* Opcode */
+      $op1 = { 5f 00 00 f2 e5 cb 97 } /* Opcode */
+      $op2 = { e8 ed 00 f0 cc e4 00 a0 17 } /* Opcode */
+   condition:
+      uint16(0) == 0x5a4d and
+      filesize < 20000KB and
+      (
+         1 of ($x*) or
+         all of ($s*) or
+         all of ($op*)
+      )
+}
+
+rule WPR_WindowsPasswordRecovery_EXE_64 {
+   meta:
+      description = "Windows Password Recovery - file ast64.exe"
+      author = "Florian Roth"
+      reference = "Internal Research"
+      date = "2017-03-15"
+      hash1 = "4e1ea81443b34248c092b35708b9a19e43a1ecbdefe4b5180d347a6c8638d055"
+   strings:
+      $s1 = "%B %d %Y  -  %H:%M:%S" fullword wide
+
+      $op0 = { 48 8d 8c 24 50 22 00 00 e8 bf eb ff ff 4c 8b c7 } /* Opcode */
+      $op1 = { ff 15 16 25 01 00 f7 d8 1b } /* Opcode */
+      $op2 = { e8 c2 26 00 00 83 20 00 83 c8 ff 48 8b 5c 24 30 } /* Opcode */
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 300KB and all of them )
+}
+
+
+/*
+   Yara Rule Set
+   Author: Florian Roth
+   Date: 2017-03-17
+   Identifier: BeyondExec Remote Access Tool
+*/
+
+/* Rule Set ----------------------------------------------------------------- */
+
+rule BeyondExec_RemoteAccess_Tool {
+   meta:
+      description = "Detects BeyondExec Remote Access Tool - file rexesvr.exe"
+      author = "Florian Roth"
+      reference = "https://goo.gl/BvYurS"
+      date = "2017-03-17"
+      hash1 = "3d3e3f0708479d951ab72fa04ac63acc7e5a75a5723eb690b34301580747032c"
+   strings:
+      $x1 = "\\BeyondExecV2\\Server\\Release\\Pipes.pdb" ascii
+      $x2 = "\\\\.\\pipe\\beyondexec%d-stdin" fullword ascii
+      $x3 = "Failed to create dispatch pipe. Do you have another instance running?" fullword ascii
+
+      $op1 = { 83 e9 04 72 0c 83 e0 03 03 c8 ff 24 85 80 6f 40 } /* Opcode */
+      $op2 = { 6a 40 33 c0 59 bf e0 d8 40 00 f3 ab 8d 0c 52 c1 } /* Opcode */
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 200KB and ( 1 of ($x*) or all of ($op*) ) ) or ( 3 of them )
+}
