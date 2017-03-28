@@ -1850,4 +1850,10 @@ Temp\\rad[A-F0-9]{5}\.exe;70
 # Unicdoe Left-to-Right Override Trick https://goo.gl/cHnBqP
 fdp\.exe;60
 
+# APT 29 Activity https://www.fireeye.com/blog/threat-research/2017/03/apt29_domain_frontin.html
+\\googleService\.exe;80
+\\Program Files\(x86\)\\Google\\GoogleUpdate\.exe;80
+\\Program Files\(x86\)\\Google\\start\.ps1;80
+\\Program Files\(x86\)\\Google\\install\.bat;80
+
 # End
