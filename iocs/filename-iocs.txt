@@ -1856,4 +1856,9 @@ fdp\.exe;60
 \\Program Files\(x86\)\\Google\\start\.ps1;80
 \\Program Files\(x86\)\\Google\\install\.bat;80
 
+# Typical Malware Names
+\\svchos1\.exe;60
+\\Program Files\(x86\)\\Google\\[^\\]{1,20}\.(exe|ps1);80
+\\Windows\\inf\\[^\\]{1,20}\.(exe|ps1);60
+
 # End
