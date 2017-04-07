@@ -1861,4 +1861,42 @@ fdp\.exe;60
 \\Program Files\(x86\)\\Google\\[^\\]{1,20}\.(exe|ps1);80
 \\Windows\\inf\\[^\\]{1,20}\.(exe|ps1);60
 
+# Cloud Hopper Indicator - https://goo.gl/OkB63q
+\\mPclient\.dll;90
+\\mfeann\.data;90
+\\vba32arch\.dll;90
+\\SFCNS\.dat;90
+\\schf\.its;90
+\\logmeinsystrays\.dat;90
+\\secretsdump\.exe;90
+\\psexe\.exe;90
+\\NetSess\.exe;90
+\\detect\.vbs;90
+\\rund11\.exe;90
+\\nbt\.exe;90
+\\atexec\.exe;90
+\\LogMeInSystrays\.dat;90
+\\[0-9]{1,20}\.plg;90
+\\NvSmart\.hlp;90
+\\AppData\\Local\\Temp\\winsyslog\\msseces\.exe;90
+\\AppData\\Local\\Temp\\winsyslog\\msseces\.asm;90
+\\AppData\\Local\\Temp\\winsyslog\\mPclient\.dll ;90
+\\Vba32ar\.cab\.dat;90
+\\gfdnippwwg;90
+\\Windows Data AntiVirus;90
+\\t\.vbs\.cfg;90
+\\furnish\.dat;90
+\\ProgramData\\SxS\\[^\\]{1,20}\.(exe|dll|dat);90
+\\wpf-etw\.dat;90
+\\microsoft\.workflow\.compiler\.dat microsoft\.workflow\.compiler\.dat;90
+
+# Cloud Hopper Indicator - Rare Software - Check for False Positives https://goo.gl/OkB63q
+\\gothic\.dat;60
+\\shortcutfixer\.exe;60
+\\k7sysmon\.exe;60
+\\pokerstarsbr\.exe;60
+\\t\.vbs;60
+\\tcping\.exe;60
+\\K7sysmn1\.dll;60
+
 # End
