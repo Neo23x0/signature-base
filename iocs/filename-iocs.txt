@@ -1899,4 +1899,15 @@ fdp\.exe;60
 \\tcping\.exe;60
 \\K7sysmn1\.dll;60
 
+# Cloud Hopper - Annex B Extraction https://www.pwc.co.uk/cyber-security/pdf/cloud-hopper-annex-b-final.pdf
+\\AppData\\Local\\Temp\\handkerchief\.dat;80
+\\Temp\\obedience\.exe;80
+\\AppData\\Local\\Temp\\starburn\.dll;80
+\\RedLeaves\.exe;75
+\\PerfLogs\\[^\\]{1,20}\.(exe|dll|vbs|ps1);60
+\\Recovery\\[^\\]{1,20}\.(exe|dll|vbs|ps1);60
+\\wmi\.dll\.bak;80
+\\rund1132\.exe;80
+\\consl64\.exe;60
+
 # End
