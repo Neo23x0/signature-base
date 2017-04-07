@@ -1888,7 +1888,7 @@ fdp\.exe;60
 \\furnish\.dat;90
 \\ProgramData\\SxS\\[^\\]{1,20}\.(exe|dll|dat);90
 \\wpf-etw\.dat;90
-\\microsoft\.workflow\.compiler\.dat microsoft\.workflow\.compiler\.dat;90
+\\microsoft\.workflow\.compiler\.dat;90
 
 # Cloud Hopper Indicator - Rare Software - Check for False Positives https://goo.gl/OkB63q
 \\gothic\.dat;60
