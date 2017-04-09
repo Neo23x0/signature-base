@@ -4,6 +4,10 @@
    Author: Florian Roth
    Date: 2017-04-08
    Identifier: Equation Group hack tools leaked by ShadowBrokers
+
+   Notice: Avoiding false positives is difficult with almost no antivirus
+   coverage during the rule testing phase. Please report back false positives
+   via https://github.com/Neo23x0/signature-base/issues
 */
 
 /* Rule Set ----------------------------------------------------------------- */
