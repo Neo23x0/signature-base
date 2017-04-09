@@ -1813,7 +1813,6 @@ Temp\\rad[A-F0-9]{5}\.exe;70
 \\implant;40
 \\suctionchar;60
 \\Suctionchar;80
-\\toast\.;40
 \\vs\.attack;80
 \\ys\.ratload;80
 
