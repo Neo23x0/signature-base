@@ -977,22 +977,6 @@ rule EquationGroup_cursesleepy_mswin32_v_1_0_0 {
       ( uint16(0) == 0x5a4d and filesize < 200KB and 2 of them )
 }
 
-rule EquationGroup_dewdrop__v__3_4_2 {
-   meta:
-      description = "Equation Group hack tool set"
-      author = "Florian Roth"
-      reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
-      date = "2017-04-09"
-      hash1 = "6ebcf0ce7179270e863d28904d8ecb69847d7bbb195e44d69a2a87648a83d4c0"
-   strings:
-      $s1 = "%s: Symbol `%s' has different size in shared object, consider re-linking" fullword ascii
-      $s2 = "relocation processing: %s%s" fullword ascii
-      $s3 = "cannot enable executable stack as shared object requires" fullword ascii
-      $s4 = "attempts:" fullword ascii
-   condition:
-      ( uint16(0) == 0x457f and filesize < 1000KB and all of them )
-}
-
 rule EquationGroup_porkserver_v3_0_0 {
    meta:
       description = "Equation Group hack tool set"
