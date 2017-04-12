@@ -1909,4 +1909,15 @@ fdp\.exe;60
 \\rund1132\.exe;80
 \\consl64\.exe;60
 
+# Lazarus Group https://securelist.com/blog/sas/77908/lazarus-under-the-hood/
+\\Windows\\Web\\Wallpaper\\[^\.]{1,25}\.(exe|dll|vbs|ps1);70
+\\Desktop\\win32\\liboradb\.dll;80
+\\Windows\\msdtc\.exe;80
+\\Windows\\gpvc\.exe;80
+\\Windows\\Help\\srservice\.chm;80
+\\Windows\\Help\\srservice\.hlp;70
+ystem32\\lcsvsvc\.dll;80
+\\Windows\\msdtc\.bat;70
+:\\MSO10\\LATIN\.SHP;70
+
 # End
