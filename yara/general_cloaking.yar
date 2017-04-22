@@ -51,7 +51,23 @@ rule Base64_encoded_Executable {
 		$s4 = "TVpQAAIAAAAEAA8A//8AALgAAAA" // 168 samples in goodware archive
 		$s5 = "TVqQAAMAAAAEAAAA//8AALgAAAA" // 28,529 samples in goodware archive
 	condition:
-		1 of them and not filepath contains "Thunderbird"
+		not uint16(0) == 0x5a4d and 1 of them and not filepath contains "Thunderbird"
+}
+
+rule Gen_Base64_EXE {
+   meta:
+      description = "Detects Base64 encoded Executable in Executable"
+      author = "Florian Roth"
+      reference = "Internal Research"
+      date = "2017-04-21"
+   strings:
+      $s1 = "TVpTAQEAAAAEAAAA//8AALgAAAA" wide ascii // 14 samples
+      $s2 = "TVoAAAAAAAAAAAAAAAAAAAAAAAA" wide ascii // 26 samples
+      $s3 = "TVqAAAEAAAAEABAAAAAAAAAAAAA" wide ascii // 75 samples
+      $s4 = "TVpQAAIAAAAEAA8A//8AALgAAAA" wide ascii // 168 samples
+      $s5 = "TVqQAAMAAAAEAAAA//8AALgAAAA" wide ascii // 28,529 samples
+   condition:
+      uint16(0) == 0x5a4d and filesize < 5000KB and 1 of them
 }
 
 rule Binary_Drop_Certutil {
@@ -81,4 +97,30 @@ rule StegoKatz {
 		$s2 = "Rpd3ovN3FlalVtNklLQ0xNNGtOV1BiY0VOVHROT0Zud25CWGN0WS9BcEdMR28rK01OWm85Nm9xMlNnY1U5aTgrSTBvNkFob1FOTzRHQWdtUElEVmlqald0Tk90b2FmN01ESWJUQkF5T0pYbTB4bFVHRTBZWEFWOXVoNHBkQnRrS0VFWWVBSEE2TDFzU0c5a2ZFTEc3QWd4WTBYY1l3ZzB6QUFXS09JZE9wQVhEK3lnS3lsR3B5Q1ljR1NJdFNseGZKWUlVVkNFdEZPVjRJUldERUl1QXpKZ2pCQWdsd0Va" ascii
 	condition:
 		filesize < 1000KB and 1 of them
+}
+
+rule Obfuscated_VBS_April17 {
+   meta:
+      description = "Detects cloaked Mimikatz in VBS obfuscation"
+      author = "Florian Roth"
+      reference = "Internal Research"
+      date = "2017-04-21"
+   strings:
+      $s1 = "::::::ExecuteGlobal unescape(unescape(" ascii
+   condition:
+      filesize < 500KB and all of them
+}
+
+rule Obfuscated_JS_April17 {
+   meta:
+      description = "Detects cloaked Mimikatz in JS obfuscation"
+      author = "Florian Roth"
+      reference = "Internal Research"
+      date = "2017-04-21"
+   strings:
+      $s1 = "\";function Main(){for(var "  ascii
+      $s2 = "=String.fromCharCode(parseInt(" ascii
+      $s3 = "));(new Function(" ascii
+   condition:
+      filesize < 500KB and all of them
 }
