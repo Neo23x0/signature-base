@@ -27,5 +27,5 @@ rule Fake_FlashPlayerUpdaterService_EXE
     condition:
         uint16(0) == 0x5a4d and
         filename matches /FlashPlayerUpdateService.exe/i and
-        not $s1 in (filesize-2500..filesize)
+        not $s1
 }
