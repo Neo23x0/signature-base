@@ -1921,21 +1921,20 @@ ystem32\\lcsvsvc\.dll;80
 :\\MSO10\\LATIN\.SHP;70
 
 # US CERT Alert (TA17-117A)
-\\3D Tetris\.exe;80
+\\3D Tetris\.exe;60
 \\2016-12-01_05-18_c1cb28327d3364768d1c1e4ce0d9bc07_4132357b(web)JP_Hf??????\.exe;80
 \\2016-11-30_00-13_23d03ee4bf57de7087055b230dae7c5b_79a67d75(web)JP_11s??\.exe;80
 \\f157874512\.exe;80
 \\artf\.exe;80
 \\age\.exex;80
 \\b20ce00a6864225f05de6407fac80ddb83cd0aec00ada438c1e354cdd0d7d5df\.bin;80
-\\WinCConnect\.exe;80
+\\WinCConnect\.exe;60
 \\RCt\.exe;80
 \\SXm\.exe;80
 \\offcee\.EXE;80
 \\ShorcutLauncher\.exe;80
 \\ap1\.exe;80
-\\APDS\.DLL;80
-\\run\.dll;80
+\\run\.dll;60
 \\Vba32ar\.exe;80
 \\runsna\.dll;80
 \\dragon\.exe;80
@@ -1944,8 +1943,13 @@ ystem32\\lcsvsvc\.dll;80
 \\GeekBuddyRSP\.exe;80
 \\cif\.exe;80
 \\condition\.dat;80
-\\gentee\.dll;80
+\\gentee\.dll;60
 \\csvde\.exe;80
-\\nltest\.exe;80
+\\nltest\.exe;60
+
+# Oilrig https://goo.gl/Gw32C8
+\\Program Files \(x86\)\\Microsoft Idle\\[^\\]{1,16}\.exe;70
+\\Start Menu\\Programs\\Startup\\WinInit\.lnk;70
+\\Start Menu\\Programs\\Startup\\SyncInit\.lnk;70
 
 # End
