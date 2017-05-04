@@ -7546,6 +7546,7 @@ a6284ed7e11fdffa6b187c0fefafa421e0f56318;US CERT Alert (TA17-117A)
 a82a59fd073c3c868be93f52d09203e93e87d79a;US CERT Alert (TA17-117A)
 aaa19e15cfe66a105428048f3242889afae170dd;US CERT Alert (TA17-117A)
 0876f0cb9d03bc5539b242a374976b217095ec0d;US CERT Alert (TA17-117A)
+
 b8ee4556dc09b28826359b98343a4e00680971a6f8c6602747bd5d723d26eaea;Snake / Turla - Install Adobe Flash Player.app.zip https://goo.gl/QaOh4V
 5b7792a16c6b7978fca389882c6aeeb2c792352076bf6a064e7b8b90eace8060;Snake / Turla - Install https://goo.gl/QaOh4V
 0a77f1b59c829a83d91a12c871fbd30c5c9d04b455f497e0c231cd21104bfea9;Snake / Turla - install.sh https://goo.gl/QaOh4V
@@ -7554,3 +7555,8 @@ d5ea79632a1a67abbf9fb1c2813b899c90a5fb9442966ed4f530e92715087ee2;Snake / Turla -
 b6df610aa5c1254c3af5b2ff806562c4937704e4ac248577cdcd3e7e7b3578a0;Snake / Turla - com.adobe.update https://goo.gl/QaOh4V
 6e207a375782e3c9d86a3e426cfa38eddcf4898b3556abc75889f7e01cc49506;Snake / Turla - installd.sh https://goo.gl/QaOh4V
 92721d719b8085748fb66366d202457f6d38bfa108a2ecda71eee7e68f43a387;Snake / Turla - queue https://goo.gl/QaOh4V
+
+8490daab736aa638b500b27c962a8250bbb8615ae1c68ef77494875ac9d2ada2;Kazuar Malware https://goo.gl/eDDTQj
+b51105c56d1bf8f98b7e924aa5caded8322d037745a128781fa0bc23841d1e70;Kazuar Malware https://goo.gl/eDDTQj
+bf6f30673cf771d52d589865675a293dc5c3668a956d0c2fc0d9403424d429b2;Kazuar Malware https://goo.gl/eDDTQj
+cd4c2e85213c96f79ddda564242efec3b970eded8c59f1f6f4d9a420eb8f1858;Kazuar Malware https://goo.gl/eDDTQj
