@@ -62,3 +62,29 @@ rule SnakeTurla_Malware_May17_4 {
    condition:
       ( uint16(0) == 0x4b50 and filesize < 5000KB and all of them )
 }
+
+rule SnakeTurla_Installd_SH {
+   meta:
+      description = "Detects Snake / Turla Sample"
+      author = "Florian Roth"
+      reference = "https://goo.gl/QaOh4V"
+      date = "2017-05-04"
+   strings:
+      $s1 = "PIDS=`ps cax | grep installdp" ascii
+      $s2 = "${SCRIPT_DIR}/installdp ${FILE}" ascii
+   condition:
+      ( uint16(0) == 0x2123 and filesize < 20KB and all of them )
+}
+
+rule SnakeTurla_Install_SH {
+   meta:
+      description = "Detects Snake / Turla Sample"
+      author = "Florian Roth"
+      reference = "https://goo.gl/QaOh4V"
+      date = "2017-05-04"
+   strings:
+      $s1 = "${TARGET_PATH}/installd.sh" ascii
+      $s2 = "$TARGET_PATH2/com.adobe.update.plist" ascii
+   condition:
+   ( uint16(0) == 0x2123 and filesize < 20KB and all of them )
+}
