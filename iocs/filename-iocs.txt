@@ -1952,4 +1952,23 @@ ystem32\\lcsvsvc\.dll;80
 \\Start Menu\\Programs\\Startup\\WinInit\.lnk;70
 \\Start Menu\\Programs\\Startup\\SyncInit\.lnk;70
 
+# Snake / Turla https://goo.gl/QaOh4V
+/Library/LaunchDaemons/com.adobe\.update\.plist;70
+/Library/Scripts/installd\.sh;70
+/Library/Scripts/queue;70
+/var/tmp/\.ur-;70
+/tmp/\.gdm-socket;70
+/tmp/\.gdm-selinux;70
+
+# Custom SHIM SDB found - this is suspicious - see https://goo.gl/xW90xr
+\\Windows\\AppPatch\\Custom\\[^\\]{1,50}\.sdb;80
+\\Windows\\AppPatch\\Custom\\Custom64\\[^\\]{1,50}\.sdb;80
+
+# FIN7 SHIM temp files pattern - see https://goo.gl/xW90xr
+\\Windows\\Temp\\sdb[A-Z0-9]{4}\.tmp$;60
+
+# Kazuar - https://goo.gl/eDDTQj
+\\AppData\\Local\\[a-f0-9]{32}\\[a-f0-9]{32}\.dll;70
+\\AppData\\Local\\[a-f0-9]{32}\\[a-f0-9]{32}\\;60
+
 # End
