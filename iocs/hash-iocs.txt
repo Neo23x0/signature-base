@@ -7560,3 +7560,40 @@ b6df610aa5c1254c3af5b2ff806562c4937704e4ac248577cdcd3e7e7b3578a0;Snake / Turla -
 b51105c56d1bf8f98b7e924aa5caded8322d037745a128781fa0bc23841d1e70;Kazuar Malware https://goo.gl/eDDTQj
 bf6f30673cf771d52d589865675a293dc5c3668a956d0c2fc0d9403424d429b2;Kazuar Malware https://goo.gl/eDDTQj
 cd4c2e85213c96f79ddda564242efec3b970eded8c59f1f6f4d9a420eb8f1858;Kazuar Malware https://goo.gl/eDDTQj
+
+f2fc11f71c3008cd2e4594437d156f4e;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+13af7fb4534750fc3d672fd359fdf20c;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+a5b17f9ffc06d2acbb331df24ad0fb54;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+d198f1a9cdf76ed5bc0e33a817bd2ae5;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+b489e6956a2a865788546c0fb6c9163c;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+2be39ec8320637f3f60d4c040a0d315d;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+11eddcd70f71defe214ae8912c63e5f4;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+3afe914cd4c039a6f44c34741af0182b;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+9d2932b52a824bce66a5587c3afeedaa;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+279730a8e7b23a8bf2c06aea0c32b1b0;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+4eaf2b3244cbf3b467cf4db79a955275;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+d91a46d0b29f34bdd3277fe53dc1c031;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+c7a35d78dc3f47c880eb7c4ee20d73d5;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+44cb9b2a174720e2dd11abb6b7897926;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+112fd3445f9fb60abd4288002fe9cfcc;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+0c4dff8114b1830c985cf5adf14b415c;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+98f676004fc4f3330d055d65d61f99c8;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+6c4158461dd177fd114c27d9ad5ee809;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+01d9544d0a151caa67cfd8eb0f17640d;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+f6f27ec79cb71cdd31c679b636002c49;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+90a277ffbedc227fe236fbc6af3c5dc6;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+ea965f46a287e03a7ab808a05ad2128f;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+f11aa2a0674c49f17a9360505626716d;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+ceb40a12129334ece4c3953fee950aa7;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+ee28dc8e6abd77d33ef7be02a583760a;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+f03b81e85706d3b4f8df2d8475dc36aa;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+4f5f7297107a2b03c4f62e0c4b7f9871;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+77555106d94ab3eebd9452f75ac9c891;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+8cfb5b0e91335ec5c260ca1d2d93560d;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+f3dfcbcaff98799b12650d634c93376a;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+3544fdcf32dfb02fe2c56fcf505d2c1e;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+fbcf209b51137da2737227e9b87d40b9;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+e3387350485e40688e75de13a1013c8c;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+4d3a81b72205d4f4e1ef229264761bcc;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+e00d3a87005e26845951941292ae4754;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+ec463bfd4f6b05f7e5fa171818aff7c8;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
