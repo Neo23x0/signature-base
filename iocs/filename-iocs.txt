@@ -1974,4 +1974,22 @@ ystem32\\lcsvsvc\.dll;80
 # ISM RAT - https://goo.gl/2EM5Ih
 \\AppData\\Local\\Microsoft\\Windows\\jTmp[0-9]{6}\.txt;70
 
+# Vault7 - CIA tool - file name pattern
+\\f32\.dll;50
+\\f64\.dll;50
+\\fs32\.dll;50
+\\fs64\.dll;50
+\\f32\.exe;50
+\\f64\.exe;50
+\\fs32\.exe;50
+\\fs64\.exe;50
+\\encrypter32\.exe;50
+\\f32_dbg\.dll;50
+\\f64_dbg\.dll;50
+\\fs32_dbg\.dll;50
+\\fs64_dbg\.dll;50
+\\fs32_dbg\.exe;50
+\\fs64_dbg\.exe;50
+\\encrypter32_dbg\.exe;50
+
 # End
