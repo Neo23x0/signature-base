@@ -369,6 +369,7 @@ rule Impacket_Tools_Generic_1 {
    strings:
       $s1 = "bpywintypes27.dll" fullword ascii
       $s2 = "hZFtPC" fullword ascii
+      $s3 = "impacket" ascii 
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 21000KB and ( 5 of ($s*) ) ) or ( all of them )
+      ( uint16(0) == 0x5a4d and filesize < 21000KB and all of ($s*) ) or ( all of them )
 }
