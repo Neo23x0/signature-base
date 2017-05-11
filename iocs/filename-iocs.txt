@@ -1992,4 +1992,9 @@ ystem32\\lcsvsvc\.dll;80
 \\fs64_dbg\.exe;50
 \\encrypter32_dbg\.exe;50
 
+# HP Keylogging Audio Driver https://goo.gl/BSQWzw
+\\Users\\Public\\MicTray\.log;70
+\\Windows\\System32\\MicTray\.exe;70
+\\Windows\\System32\\MicTray64\.exe;70
+
 # End
