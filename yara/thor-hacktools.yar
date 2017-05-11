@@ -62,7 +62,7 @@ rule PwDump
 		$s6 = "Unable to query service status. Something is wrong, please manually check the st"
 		$s7 = "pwdump6 Version %s by fizzgig and the mighty group at foofus.net" fullword
 	condition:
-		all of them
+		1 of them
 }
 
 rule PScan_Portscan_1 {
