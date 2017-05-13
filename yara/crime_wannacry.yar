@@ -22,6 +22,7 @@ rule WannaCry_Ransomware {
       $x3 = "taskse.exe" fullword ascii
       $x4 = "tasksche.exe" fullword ascii
       $x5 = "Global\\MsWinZonesCacheCounterMutexA" fullword ascii
+      $x6 = "WNcry@2ol7" fullword ascii
 
       $s1 = "cmd.exe /c \"%s\"" fullword ascii
       $s2 = "<!-- Windows 10 -->" fullword ascii
