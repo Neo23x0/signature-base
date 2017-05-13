@@ -2009,9 +2009,9 @@ ystem32\\lcsvsvc\.dll;80
 \\linuxnew\.exe;75
 \\wannacry\.exe;75
 \\@Please_Read_Me@\.txt;75
-\.wcry;75
-\.wncry;75
-\.WCRY;75
-\.WNCRY;75
+\.wcry$;75
+\.wncry$;75
+\.WCRY$;75
+\.WNCRY$;75
 
 # End
