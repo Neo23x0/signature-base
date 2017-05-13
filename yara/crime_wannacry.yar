@@ -12,24 +12,31 @@
 rule WannaCry_Ransomware {
    meta:
       description = "Detects WannaCry Ransomware"
-      author = "Florian Roth"
+      author = "Florian Roth (with the help of binar.ly)"
       reference = "https://goo.gl/HG2j5T"
       date = "2017-05-12"
       hash1 = "ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5babe8e080e41aa"
    strings:
       $x1 = "icacls . /grant Everyone:F /T /C /Q" fullword ascii
       $x2 = "taskdl.exe" fullword ascii
-      $x3 = "taskse.exe" fullword ascii
-      $x4 = "tasksche.exe" fullword ascii
-      $x5 = "Global\\MsWinZonesCacheCounterMutexA" fullword ascii
-      $x6 = "WNcry@2ol7" fullword ascii
+      $x3 = "tasksche.exe" fullword ascii
+      $x4 = "Global\\MsWinZonesCacheCounterMutexA" fullword ascii
+      $x5 = "WNcry@2ol7" fullword ascii
+      $x6 = "www.iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com" ascii
+      $x7 = "mssecsvc.exe" fullword ascii
+      $x8 = "C:\\%s\\qeriuwjhrf" fullword ascii
+      $x9 = "icacls . /grant Everyone:F /T /C /Q" fullword ascii
 
-      $s1 = "cmd.exe /c \"%s\"" fullword ascii
-      $s2 = "<!-- Windows 10 -->" fullword ascii
-      $s3 = "msg/m_portuguese.wnry" fullword ascii
-      $s4 = "taskse.exed*" fullword ascii
+      $s1 = "C:\\%s\\%s" fullword ascii
+      $s2 = "<!-- Windows 10 --> " fullword ascii
+      $s3 = "cmd.exe /c \"%s\"" fullword ascii
+      $s4 = "msg/m_portuguese.wnry" fullword ascii
+
+      $op1 = { 10 ac 72 0d 3d ff ff 1f ac 77 06 b8 01 00 00 00 }
+      $op2 = { 44 24 64 8a c6 44 24 65 0e c6 44 24 66 80 c6 44 }
+      $op3 = { 18 df 6c 24 14 dc 64 24 2c dc 6c 24 5c dc 15 88 }
    condition:
-      uint16(0) == 0x5a4d and filesize < 10000KB and ( 1 of ($x*) and 1 of ($s*) )
+      uint16(0) == 0x5a4d and filesize < 10000KB and ( 1 of ($x*) and 1 of ($s*) or all of ($op*) )
 }
 
 rule WannCry_m_vbs {
