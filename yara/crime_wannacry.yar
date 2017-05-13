@@ -31,6 +31,8 @@ rule WannaCry_Ransomware {
       $s2 = "<!-- Windows 10 --> " fullword ascii
       $s3 = "cmd.exe /c \"%s\"" fullword ascii
       $s4 = "msg/m_portuguese.wnry" fullword ascii
+      $s5 = "\\\\192.168.56.20\\IPC$" fullword wide
+      $s6 = "\\\\172.16.99.5\\IPC$" fullword wide
 
       $op1 = { 10 ac 72 0d 3d ff ff 1f ac 77 06 b8 01 00 00 00 }
       $op2 = { 44 24 64 8a c6 44 24 65 0e c6 44 24 66 80 c6 44 }
