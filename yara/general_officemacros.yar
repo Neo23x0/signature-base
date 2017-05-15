@@ -44,3 +44,17 @@ rule Office_as_MHTML {
 		uint32be(0) == 0x4d494d45 // "MIME" header
 		and all of ($s*) and 1 of ($x*)
 }
+
+rule Docm_in_PDF {
+   meta:
+      description = "Detects an embedded DOCM in PDF combined with OpenAction"
+      author = "Florian Roth"
+      reference = "Internal Research"
+      date = "2017-05-15"
+   strings:
+      $a1 = /<<\/Names\[\([\w]{1,12}.docm\)/ ascii
+      $a2 = "OpenAction" ascii fullword
+      $a3 = "JavaScript" ascii fullword
+   condition:
+      uint32(0) == 0x46445025 and all of them
+}
