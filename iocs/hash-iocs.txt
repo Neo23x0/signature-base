@@ -17,6 +17,21 @@
 
 # 563d1512178cec1f6a73c98d565c98fa;Cygwin nc.exe example
 
+4fef5e34143e646dbf9907c4374276f5;https://securelist.com/blog/incidents/78351/wannacry-ransomware-used-in-widespread-attacks-all-over-the-world/
+5bef35496fcbdbe841c82f4d1ab8b7c2;https://securelist.com/blog/incidents/78351/wannacry-ransomware-used-in-widespread-attacks-all-over-the-world/
+775a0631fb8229b2aa3d7621427085ad;https://securelist.com/blog/incidents/78351/wannacry-ransomware-used-in-widespread-attacks-all-over-the-world/
+7bf2b57f2a205768755c07f238fb32cc;https://securelist.com/blog/incidents/78351/wannacry-ransomware-used-in-widespread-attacks-all-over-the-world/
+7f7ccaa16fb15eb1c7399d422f8363e8;https://securelist.com/blog/incidents/78351/wannacry-ransomware-used-in-widespread-attacks-all-over-the-world/
+8495400f199ac77853c53b5a3f278f3e;https://securelist.com/blog/incidents/78351/wannacry-ransomware-used-in-widespread-attacks-all-over-the-world/
+84c82835a5d21bbcf75a61706d8ab549;https://securelist.com/blog/incidents/78351/wannacry-ransomware-used-in-widespread-attacks-all-over-the-world/
+86721e64ffbd69aa6944b9672bcabb6d;https://securelist.com/blog/incidents/78351/wannacry-ransomware-used-in-widespread-attacks-all-over-the-world/
+8dd63adb68ef053e044a5a2f46e0d2cd;https://securelist.com/blog/incidents/78351/wannacry-ransomware-used-in-widespread-attacks-all-over-the-world/
+b0ad5902366f860f85b892867e5b1e87;https://securelist.com/blog/incidents/78351/wannacry-ransomware-used-in-widespread-attacks-all-over-the-world/
+d6114ba5f10ad67a4131ab72531f02da;https://securelist.com/blog/incidents/78351/wannacry-ransomware-used-in-widespread-attacks-all-over-the-world/
+db349b97c37d22f5ea1d1841e3c89eb4;https://securelist.com/blog/incidents/78351/wannacry-ransomware-used-in-widespread-attacks-all-over-the-world/
+e372d07207b4da75b3434584cd9f3450;https://securelist.com/blog/incidents/78351/wannacry-ransomware-used-in-widespread-attacks-all-over-the-world/
+f529f4556a5126bba499c26d67892240;https://securelist.com/blog/incidents/78351/wannacry-ransomware-used-in-widespread-attacks-all-over-the-world/
+
 5d853a8de18d844a9ab269f3d51e5072;Five Eyes QUERTY Malware20120.dll.bin
 cc8b737edb3f11c9c5dba57035c63103;Five Eyes QUERTY Malware20120.xml
 67ac8dc6589a07d950bd12f534dc9789;Five Eyes QUERTY Malware20120_cmdDef.xml
