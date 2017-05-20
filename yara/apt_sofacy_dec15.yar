@@ -64,7 +64,7 @@ rule Sofacy_AZZY_Backdoor_HelperDLL {
 		$s1 = "InternetExchange" fullword ascii
 		$s2 = "SendData"
 	condition:
-		uint16(0) == 0x5a4d and filesize < 100KB and 2 of them
+		uint16(0) == 0x5a4d and filesize < 100KB and all of them
 }
 
 /* Super Rules ------------------------------------------------------------- */
