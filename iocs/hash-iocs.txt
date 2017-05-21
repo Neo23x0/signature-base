@@ -17,6 +17,21 @@
 
 # 563d1512178cec1f6a73c98d565c98fa;Cygwin nc.exe example
 
+4fef5e34143e646dbf9907c4374276f5;securelist.com https://goo.gl/nkbFwv
+5bef35496fcbdbe841c82f4d1ab8b7c2;securelist.com https://goo.gl/nkbFwv
+775a0631fb8229b2aa3d7621427085ad;securelist.com https://goo.gl/nkbFwv
+7bf2b57f2a205768755c07f238fb32cc;securelist.com https://goo.gl/nkbFwv
+7f7ccaa16fb15eb1c7399d422f8363e8;securelist.com https://goo.gl/nkbFwv
+8495400f199ac77853c53b5a3f278f3e;securelist.com https://goo.gl/nkbFwv
+84c82835a5d21bbcf75a61706d8ab549;securelist.com https://goo.gl/nkbFwv
+86721e64ffbd69aa6944b9672bcabb6d;securelist.com https://goo.gl/nkbFwv
+8dd63adb68ef053e044a5a2f46e0d2cd;securelist.com https://goo.gl/nkbFwv
+b0ad5902366f860f85b892867e5b1e87;securelist.com https://goo.gl/nkbFwv
+d6114ba5f10ad67a4131ab72531f02da;securelist.com https://goo.gl/nkbFwv
+db349b97c37d22f5ea1d1841e3c89eb4;securelist.com https://goo.gl/nkbFwv
+e372d07207b4da75b3434584cd9f3450;securelist.com https://goo.gl/nkbFwv
+f529f4556a5126bba499c26d67892240;securelist.com https://goo.gl/nkbFwv
+
 5d853a8de18d844a9ab269f3d51e5072;Five Eyes QUERTY Malware20120.dll.bin
 cc8b737edb3f11c9c5dba57035c63103;Five Eyes QUERTY Malware20120.xml
 67ac8dc6589a07d950bd12f534dc9789;Five Eyes QUERTY Malware20120_cmdDef.xml
