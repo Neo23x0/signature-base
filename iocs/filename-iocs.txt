@@ -1944,7 +1944,6 @@ ystem32\\lcsvsvc\.dll;80
 \\cif\.exe;80
 \\condition\.dat;80
 \\gentee\.dll;60
-\\csvde\.exe;80
 \\nltest\.exe;60
 
 # Oilrig https://goo.gl/Gw32C8
@@ -1961,8 +1960,8 @@ ystem32\\lcsvsvc\.dll;80
 /tmp/\.gdm-selinux;70
 
 # Custom SHIM SDB found - this is suspicious - see https://goo.gl/xW90xr
-\\Windows\\AppPatch\\Custom\\[^\\]{1,50}\.sdb;80
-\\Windows\\AppPatch\\Custom\\Custom64\\[^\\]{1,50}\.sdb;80
+\\Windows\\AppPatch\\Custom\\[^\\]{1,50}\.sdb;40
+\\Windows\\AppPatch\\Custom\\Custom64\\[^\\]{1,50}\.sdb;40
 
 # FIN7 SHIM temp files pattern - see https://goo.gl/xW90xr
 \\Windows\\Temp\\sdb[A-Z0-9]{4}\.tmp$;60
