@@ -1944,7 +1944,6 @@ ystem32\\lcsvsvc\.dll;80
 \\cif\.exe;80
 \\condition\.dat;80
 \\gentee\.dll;60
-\\nltest\.exe;60
 
 # Oilrig https://goo.gl/Gw32C8
 \\Program Files \(x86\)\\Microsoft Idle\\[^\\]{1,16}\.exe;70
