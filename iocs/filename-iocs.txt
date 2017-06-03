@@ -2017,5 +2017,6 @@ ystem32\\lcsvsvc\.dll;80
 \\de_svr\.exe;70
 \\lancer\.dll;70
 \\regkey\.exe;70
+\\Program Files\\Services\\iThemes\.dll;70
 
 # End
