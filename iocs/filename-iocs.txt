@@ -2012,4 +2012,10 @@ ystem32\\lcsvsvc\.dll;80
 \.WCRY$;75
 \.WNCRY$;75
 
+# Fireball Malware - Check Point Report - https://goo.gl/4pTkGQ
+\\clearlog\.dll;70
+\\de_svr\.exe;70
+\\lancer\.dll;70
+\\regkey\.exe;70
+
 # End
