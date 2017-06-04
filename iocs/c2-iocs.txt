@@ -88,3 +88,7 @@ flowershop22.110mb.com;Project Sauron https://goo.gl/eFoP4A
 wildhorses.awardspace.info;Project Sauron https://goo.gl/eFoP4A
 217.160.176.157;Project Sauron https://goo.gl/eFoP4A
 5.196.206.166;Project Sauron https://goo.gl/eFoP4A
+
+hackqz.f3322.org;Threat actors leverage EternalBlue exploit to deliver non-WannaCry payloads https://goo.gl/OOB3mH
+120.209.40.157;Threat actors leverage EternalBlue exploit to deliver non-WannaCry payloads https://goo.gl/OOB3mH
+bj6po.a1free9bird.com;Threat actors leverage EternalBlue exploit to deliver non-WannaCry payloads https://goo.gl/OOB3mH

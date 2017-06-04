@@ -7610,3 +7610,5 @@ e3387350485e40688e75de13a1013c8c;Archimedes - Vault7 CIA - Malware https://wikil
 4d3a81b72205d4f4e1ef229264761bcc;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
 e00d3a87005e26845951941292ae4754;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
 ec463bfd4f6b05f7e5fa171818aff7c8;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
+cba19d228abf31ec8afab7330df3c9da60cd4dae376552b503aea6d7feff9946;FireEye EternalBlue Malware Campaign https://goo.gl/OOB3mH
+4f49e17b457ef202ab0be905691ef2b2d2b0a086a7caddd1e70dd45e5ed3b309;FireEye EternalBlue Malware Campaign https://goo.gl/OOB3mH

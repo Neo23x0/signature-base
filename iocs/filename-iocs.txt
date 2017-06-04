@@ -2019,4 +2019,13 @@ ystem32\\lcsvsvc\.dll;80
 \\regkey\.exe;70
 \\Program Files\\Services\\iThemes\.dll;70
 
+# Threat actors leverage EternalBlue exploit to deliver non-WannaCry payloads https://goo.gl/OOB3mH
+[Cc]:\\taskmgr\.exe;80
+[Cc]:\\1\.vbs;60
+\\systemUpdate\.exe;60
+\\systemHome\.exe;80
+\\wyawou\.exe;80
+\\Temp\\[0-9]{5,6}\.gho;70
+\\[Ss]ystem32\\aaaaaa\.exe;100
+
 # End
