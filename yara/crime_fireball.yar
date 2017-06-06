@@ -23,7 +23,7 @@ rule Fireball_de_svr {
       $s4 = "C:\\v3\\exe\\de_svr_inst.pdb" fullword ascii
       $s5 = "Internet Connect Failed!" fullword ascii
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 3000KB and 2 of them )
+      ( uint16(0) == 0x5a4d and filesize < 3000KB and 4 of them )
 }
 
 rule Fireball_lancer {
@@ -78,7 +78,7 @@ rule chrome_elf {
       $s13 = "Failed to create an instance of ITaskService: %x" fullword ascii
       $s16 = "Rundll32_Do" fullword ascii
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 600KB and 2 of them )
+      ( uint16(0) == 0x5a4d and filesize < 600KB and 4 of them )
 }
 
 rule Fireball_regkey {
