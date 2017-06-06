@@ -845,7 +845,7 @@ rule EQGRP_BARPUNCH_BPICKER {
 
 rule EQGRP_Implants_Gen6 {
 	meta:
-		description = "EQGRP Toolset Firewall - from files BananaUsurper-2120, BLIAR-2110, BLIQUER-2230, BLIQUER-3030, BLIQUER-3120, BPICKER-3100, writeJetPlow-2130"
+		description = "EQGRP Toolset Firewall"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -873,7 +873,7 @@ rule EQGRP_Implants_Gen6 {
 
 rule EQGRP_Implants_Gen5 {
 	meta:
-		description = "EQGRP Toolset Firewall - from files BananaUsurper-2120, BARPUNCH-3110, BLIAR-2110, BLIQUER-2230, BLIQUER-3030, BLIQUER-3120, BPICKER-3100, writeJetPlow-2130"
+		description = "EQGRP Toolset Firewall"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -965,7 +965,7 @@ rule EQGRP_Implants_Gen4 {
 
 rule EQGRP_Implants_Gen3 {
 	meta:
-		description = "EQGRP Toolset Firewall - from files BARPUNCH-3110, BLIAR-2110, BLIQUER-2230, BLIQUER-3030, BLIQUER-3120, BPICKER-3100"
+		description = "EQGRP Toolset Firewall"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -1043,7 +1043,7 @@ rule EQGRP_sploit {
 
 rule EQGRP_Implants_Gen2 {
 	meta:
-		description = "EQGRP Toolset Firewall - from files BananaUsurper-2120, BLIAR-2110, BLIQUER-2230, BLIQUER-3030, BLIQUER-3120, writeJetPlow-2130"
+		description = "EQGRP Toolset Firewall"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -1074,7 +1074,7 @@ rule EQGRP_Implants_Gen2 {
 
 rule EQGRP_Implants_Gen1 {
 	meta:
-		description = "EQGRP Toolset Firewall - from files BananaUsurper-2120, BARPUNCH-3110, BLIAR-2110, BLIQUER-2230, BLIQUER-3030, BLIQUER-3120, BPICKER-3100, lpexe, writeJetPlow-2130"
+		description = "EQGRP Toolset Firewall"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -1730,7 +1730,7 @@ rule EquationGroup_PassFreely_Lp {
 
 rule EquationGroup_EquationDrug_Gen_1 {
    meta:
-      description = "EquationGroup Malware - from files DuplicateToken_Lp.dll, EventLogEdit_Lp.dll, GetAdmin_Lp.dll, LSADUMP_Lp.dll, modifyAudit_Lp.dll, modifyAuthentication_Lp.dll, ModifyGroup_Lp.dll, ModifyPrivilege_Lp.dll, nethide_Lp.dll, PassFreely_Lp.dll, PortMap_Lp.dll, ProcessHide_Lp.dll, ProcessOptions_Lp.dll, pwdump_Lp.dll, RunAsChild_Lp.dll"
+      description = "EquationGroup Malware"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"

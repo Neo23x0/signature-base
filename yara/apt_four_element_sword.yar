@@ -141,7 +141,7 @@ rule FourElementSword_ResN32DLL {
 
 rule FourElementSword_ElevateDLL {
 	meta:
-		description = "Detects FourElementSword Malware - from files 3dfc94605daf51ebd7bbccbb3a9049999f8d555db0999a6a7e6265a7e458cab9, 5f3d0a319ecc875cc64a40a34d2283cb329abcf79ad02f487fbfd6bef153943c"
+		description = "Detects FourElementSword Malware"
 		author = "Florian Roth"
 		reference = "https://www.arbornetworks.com/blog/asert/four-element-sword-engagement/"
 		date = "2016-04-18"

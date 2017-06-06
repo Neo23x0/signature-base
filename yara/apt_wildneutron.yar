@@ -64,7 +64,7 @@ rule WildNeutron_Sample_3 {
 		$x1 = "178.162.197.9" fullword ascii /* score: '9.00' */
 		$x2 = "\"http://fw.ddosprotected.eu:80 /opts resolv=drfx.chickenkiller.com\"" fullword wide /* PEStudio Blacklist: strings */ /* score: '33.00' */
 		$x3 = ".chickenkiller.com" ascii /* PEStudio Blacklist: strings */ /* score: '28.00' */
-		
+
 		$s1 = "LiveUpdater.exe" fullword wide /* PEStudio Blacklist: strings */ /* score: '25.00' */
 		$s2 = "id-at-postalAddress" fullword ascii /* PEStudio Blacklist: strings */ /* score: '18.00' */
 		$s3 = "%d -> %d (default)" fullword wide /* PEStudio Blacklist: strings */ /* score: '17.00' */
@@ -73,7 +73,7 @@ rule WildNeutron_Sample_3 {
 		$s6 = "ECDSA with SHA256" fullword ascii /* PEStudio Blacklist: strings */ /* score: '10.00' */
 		$s7 = "Acer LiveUpdater" fullword wide /* PEStudio Blacklist: strings */ /* score: '10.00' */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 2020KB and 
+		uint16(0) == 0x5a4d and filesize < 2020KB and
 		( 1 of ($x*) or all of ($s*) )
 }
 
@@ -228,7 +228,7 @@ rule WildNeutron_Sample_10 {
 		hash = "1d3bdabb350ba5a821849893dabe5d6056bf7ba1ed6042d93174ceeaa5d6dad7"
 	strings:
 		$n1 = "/c for /L %%i in (1,1,2) DO ping 127.0.0.1 -n 3 & type %%windir%%\\notepad.exe > %s & del /f %s" fullword ascii /* PEStudio Blacklist: strings */ /* score: '46.00' */
-		
+
 		$s1 = "%SYSTEMROOT%\\temp\\_dbg.tmp" fullword ascii /* PEStudio Blacklist: strings */ /* score: '37.00' */
 		$s2 = "%SYSTEMROOT%\\SysWOW64\\mspool.dll" fullword ascii /* PEStudio Blacklist: strings */ /* score: '36.17' */
 		$s3 = "%SYSTEMROOT%\\System32\\dpcore16t.dll" fullword ascii /* PEStudio Blacklist: strings */ /* score: '36.17' */
@@ -240,7 +240,7 @@ rule WildNeutron_Sample_10 {
 		$s9 = "%SYSTEMROOT%\\System32\\mshtaex.exe" fullword ascii /* PEStudio Blacklist: strings */ /* score: '31.17' */
 		$s10 = "%SYSTEMROOT%\\System32\\iastor32.exe" fullword ascii /* PEStudio Blacklist: strings */ /* score: '31.17' */
 		$s11 = "%SYSTEMROOT%\\SysWOW64\\mshtaex.exe" fullword ascii /* PEStudio Blacklist: strings */ /* score: '31.17' */
-		
+
 		$x1 = "wdigestEx.dll" fullword ascii /* PEStudio Blacklist: strings */ /* score: '26.00' */
 		$x2 = "dpcore16t.dll" fullword ascii /* score: '21.00' */
 		$x3 = "mspool.dll" fullword ascii /* score: '21.00' */
@@ -254,9 +254,9 @@ rule WildNeutron_Sample_10 {
 		$y4 = "Install succeeded" fullword ascii /* PEStudio Blacklist: strings */ /* score: '10.00' */
 		$y5 = "Error: RegSetValueExA 0x%x" fullword ascii /* score: '9.00' */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 400KB and 
+		uint16(0) == 0x5a4d and filesize < 400KB and
 		(
-			$n1 or ( 1 of ($s*) and 1 of ($x*) and 3 of ($y*) ) 
+			$n1 or ( 1 of ($s*) and 1 of ($x*) and 3 of ($y*) )
 		)
 }
 
@@ -264,7 +264,7 @@ rule WildNeutron_Sample_10 {
 
 rule WildNeutron_javacpl {
 	meta:
-		description = "Wild Neutron APT Sample Rule - from files 683f5b476f8ffe87ec22b8bab57f74da4a13ecc3a5c2cbf951999953c2064fc9, 758e6b519f6c0931ff93542b767524fc1eab589feb5cfc3854c77842f9785c92, 8ca7ed720babb32a6f381769ea00e16082a563704f8b672cb21cf11843f4da7a"
+		description = "Wild Neutron APT Sample Rule"
 		author = "Florian Roth"
 		reference = "https://securelist.com/blog/research/71275/wild-neutron-economic-espionage-threat-actor-returns-with-new-tricks/"
 		date = "2015-07-10"

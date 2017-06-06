@@ -2,7 +2,7 @@
 	Yara Rule to detect Backspace Malware mentioned in FireEye APT30 Report
 	https://www.fireeye.com/blog/threat-research/2015/04/apt_30_and_the_mecha.html
 
-	13.04.2015 
+	13.04.2015
 	v1.0
 	please report back false positives via the 'issue' section of the LOKI github page
 */
@@ -809,7 +809,7 @@ rule APT30_Generic_K {
 		hash = "142bc01ad412799a7f9ffed994069fecbd5a2f93"
 	strings:
 		$x1 = "Maybe a Encrypted Flash" fullword ascii
-	
+
 		$s0 = "C:\\Program Files\\Common Files\\System\\wab32" fullword ascii
 		$s1 = "\\TEMP\\" fullword ascii
 		$s2 = "\\Temporary Internet Files\\" fullword ascii
@@ -902,7 +902,7 @@ rule APT30_Sample_1 {
 
 rule APT30_Generic_1 {
 	meta:
-		description = "FireEye APT30 Report Sample - from files 08b54f9b2b3fb19e388d390d278f3e44, 11876eaadeac34527c28f4ddfadd1e8d, 28f2396a1e306d05519b97a3a46ee925, 80e39b656f9a77503fa3e6b7dd123ee3, d591dc11ecffdfaf1626c1055417a50d, 8e2eee994cd1922e82dea58705cc9631, e9e514f8b1561011b4f034263c33a890"
+		description = "FireEye APT30 Report Sample"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -989,7 +989,7 @@ rule APT30_Generic_2 {
 
 rule APT30_Generic_3 {
 	meta:
-		description = "FireEye APT30 Report Sample - from files 6e689351d94389ac6fdc341b859c7f6f, a813eba27b2166620bd75029cc1f04b0, b4ae0004094b37a40978ef06f311a75e"
+		description = "FireEye APT30 Report Sample"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -1007,7 +1007,7 @@ rule APT30_Generic_3 {
 
 rule APT30_Generic_4 {
 	meta:
-		description = "FireEye APT30 Report Sample - from files 021e134c48cd9ce9eaf6a1c105197e5d, 7c307ca84f922674049c0c43ca09bec1, b8617302180d331e197cc0433fc5023d, e6289e7f9f26be692cbe6f335a706014"
+		description = "FireEye APT30 Report Sample"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -1037,7 +1037,7 @@ rule APT30_Generic_4 {
 
 rule APT30_Generic_5 {
 	meta:
-		description = "FireEye APT30 Report Sample - from files 592381dfa14e61bce089cd00c9b118ae, b493ad490b691b8732983dcca8ea8b6f, b83d43e3b2f0b0a0e5cc047ef258c2cb"
+		description = "FireEye APT30 Report Sample"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -1058,7 +1058,7 @@ rule APT30_Generic_5 {
 
 rule APT30_Generic_6 {
 	meta:
-		description = "FireEye APT30 Report Sample - from files 168d207d0599ed0bb5bcfca3b3e7a9d3, 1e6ee89fddcf23132ee12802337add61, 5dd625af837e164dd2084b1f44a45808"
+		description = "FireEye APT30 Report Sample"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -1079,7 +1079,7 @@ rule APT30_Generic_6 {
 
 rule APT30_Generic_7 {
 	meta:
-		description = "FireEye APT30 Report Sample - from files 853a20f5fc6d16202828df132c41a061, 9c0cad1560cd0ffe2aa570621ef7d0a0, b590c15499448639c2748ff9e0d214b2"
+		description = "FireEye APT30 Report Sample"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -1096,7 +1096,7 @@ rule APT30_Generic_7 {
 }
 rule APT30_Generic_8 {
 	meta:
-		description = "FireEye APT30 Report Sample - from files 7c307ca84f922674049c0c43ca09bec1, b8617302180d331e197cc0433fc5023d, e6289e7f9f26be692cbe6f335a706014"
+		description = "FireEye APT30 Report Sample"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -1121,7 +1121,7 @@ rule APT30_Generic_8 {
 
 rule APT30_Generic_9 {
 	meta:
-		description = "FireEye APT30 Report Sample - from files 0cdc35ffc222a714ee138b57d29c8749, 10aa368899774463a355f1397e6e5151, 3166baffecccd0934bdc657c01491094, d28d67b4397b7ce1508d10bf3054ffe5"
+		description = "FireEye APT30 Report Sample"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -1139,4 +1139,3 @@ rule APT30_Generic_9 {
 	condition:
 		filesize < 250KB and uint16(0) == 0x5A4D and all of them
 }
-

@@ -126,7 +126,7 @@ rule BlackEnergy_KillDisk_2 {
 
 rule BlackEnergy_Driver_USBMDM {
 	meta:
-		description = "Auto-generated rule - from files 7874a10e551377d50264da5906dc07ec31b173dee18867f88ea556ad70d8f094, b73777469f939c331cbc1c9ad703f973d55851f3ad09282ab5b3546befa5b54a, edb16d3ccd50fc8f0f77d0875bf50a629fa38e5ba1b8eeefd54468df97eba281"
+		description = "Black Energy Driver"
 		author = "Florian Roth"
 		reference = "http://www.welivesecurity.com/2016/01/03/blackenergy-sshbeardoor-details-2015-attacks-ukrainian-news-media-electric-industry/"
 		date = "2016-01-04"
@@ -149,7 +149,7 @@ rule BlackEnergy_Driver_USBMDM {
 
 rule BlackEnergy_Driver_AMDIDE {
 	meta:
-		description = "Auto-generated rule - from files 32d3121135a835c3347b553b70f3c4c68eef711af02c161f007a9fbaffe7e614, 3432db9cb1fb9daa2f2ac554a0a006be96040d2a7776a072a8db051d064a8be2, 90ba78b6710462c2d97815e8745679942b3b296135490f0095bdc0cd97a34d9c, 97be6b2cec90f655ef11ed9feef5b9ef057fd8db7dd11712ddb3702ed7c7bda1"
+		description = "Black Energy Malware"
 		author = "Florian Roth"
 		reference = "http://www.welivesecurity.com/2016/01/03/blackenergy-sshbeardoor-details-2015-attacks-ukrainian-news-media-electric-industry/"
 		date = "2016-01-04"

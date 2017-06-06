@@ -1879,7 +1879,7 @@ rule webshell_ghost_source_icesword_silic {
 }
 rule webshell_JspSpy_JspSpyJDK5_JspSpyJDK51_luci_jsp_spy2009_m_ma3_xxx {
 	meta:
-		description = "Web Shell - from files 000.jsp, 403.jsp, 807.jsp, a.jsp, c5.jsp, css.jsp, dm.jsp, he1p.jsp, JspSpy.jsp, JspSpyJDK5.jsp, JspSpyJDK51.jsp, luci.jsp.spy2009.jsp, m.jsp, ma3.jsp, mmym520.jsp, nogfw.jsp, ok.jsp, queryDong.jsp, spyjsp2010.jsp, style.jsp, t00ls.jsp, u.jsp, xia.jsp, cofigrue.jsp, 1.jsp, jspspy.jsp, jspspy_k8.jsp, JspSpy.jsp, JspSpyJDK5.jsp"
+		description = "Web Shell"
 		author = "Florian Roth"
 		date = "2014/01/28"
 		score = 70
@@ -1940,7 +1940,7 @@ rule webshell_2_520_job_ma1_ma4_2 {
 }
 rule webshell_000_403_807_a_c5_config_css_dm_he1p_JspSpy_JspSpyJDK5_JspSpyJDK51_luci_jsp_xxx {
 	meta:
-		description = "Web Shell - from files 000.jsp, 403.jsp, 807.jsp, a.jsp, c5.jsp, config.jsp, css.jsp, dm.jsp, he1p.jsp, JspSpy.jsp, JspSpyJDK5.jsp, JspSpyJDK51.jsp, luci.jsp.spy2009.jsp, m.jsp, ma3.jsp, mmym520.jsp, myxx.jsp, nogfw.jsp, ok.jsp, queryDong.jsp, spyjsp2010.jsp, style.jsp, t00ls.jsp, u.jsp, xia.jsp, zend.jsp, cofigrue.jsp, 1.jsp, jspspy.jsp, jspspy_k8.jsp, JspSpy.jsp, JspSpyJDK5.jsp"
+		description = "Web Shell"
 		author = "Florian Roth"
 		date = "2014/01/28"
 		score = 70
@@ -2035,7 +2035,7 @@ rule webshell_404_data_suiyue {
 }
 rule webshell_r57shell_r57shell127_SnIpEr_SA_Shell_EgY_SpIdEr_ShElL_V2_r57_xxx {
 	meta:
-		description = "Web Shell - from files r57shell.php, r57shell127.php, SnIpEr_SA Shell.php, EgY_SpIdEr ShElL V2.php, r57_iFX.php, r57_kartal.php, r57_Mohajer22.php, r57.php, r57.php, Backdoor.PHP.Agent.php"
+		description = "Web Shell"
 		author = "Florian Roth"
 		date = "2014/01/28"
 		score = 70
@@ -2059,7 +2059,7 @@ rule webshell_r57shell_r57shell127_SnIpEr_SA_Shell_EgY_SpIdEr_ShElL_V2_r57_xxx {
 }
 rule webshell_807_a_css_dm_he1p_JspSpy_xxx {
 	meta:
-		description = "Web Shell - from files 807.jsp, a.jsp, css.jsp, dm.jsp, he1p.jsp, JspSpy.jsp, JspSpyJDK5.jsp, JspSpyJDK51.jsp, luci.jsp.spy2009.jsp, m.jsp, ma3.jsp, mmym520.jsp, nogfw.jsp, ok.jsp, style.jsp, u.jsp, xia.jsp, cofigrue.jsp, 1.jsp, jspspy.jsp, jspspy_k8.jsp, JspSpy.jsp, JspSpyJDK5.jsp"
+		description = "Web Shell"
 		author = "Florian Roth"
 		date = "2014/01/28"
 		score = 70
@@ -2114,7 +2114,7 @@ rule webshell_201_3_ma_download {
 }
 rule webshell_browser_201_3_400_in_JFolder_jfolder01_jsp_leo_ma_warn_webshell_nc_download {
 	meta:
-		description = "Web Shell - from files browser.jsp, 201.jsp, 3.jsp, 400.jsp, in.jsp, JFolder.jsp, jfolder01.jsp, jsp.jsp, leo.jsp, ma.jsp, warn.jsp, webshell-nc.jsp, download.jsp"
+		description = "Web Shell"
 		author = "Florian Roth"
 		date = "2014/01/28"
 		score = 70
@@ -2229,7 +2229,7 @@ rule webshell_shell_phpspy_2006_arabicspy_hkrkoz {
 }
 rule webshell_c99_Shell_ci_Biz_was_here_c100_v_xxx {
 	meta:
-		description = "Web Shell - from files c99.php, Shell [ci] .Biz was here.php, c100 v. 777shell v. Undetectable #18a Modded by 777 - Don.php, c66.php, c99-shadows-mod.php, c99shell.php"
+		description = "Web Shell"
 		author = "Florian Roth"
 		date = "2014/01/28"
 		score = 70
@@ -2263,7 +2263,7 @@ rule webshell_2008_2009lite_2009mssql {
 }
 rule webshell_shell_phpspy_2005_full_phpspy_2005_lite_phpspy_2006_arabicspy_PHPSPY_hkrkoz {
 	meta:
-		description = "Web Shell - from files shell.php, phpspy_2005_full.php, phpspy_2005_lite.php, phpspy_2006.php, arabicspy.php, PHPSPY.php, hkrkoz.php"
+		description = "Web Shell"
 		author = "Florian Roth"
 		date = "2014/01/28"
 		score = 70
@@ -2301,7 +2301,7 @@ rule webshell_807_dm_JspSpyJDK5_m_cofigrue {
 }
 rule webshell_Dive_Shell_1_0_Emperor_Hacking_Team_xxx {
 	meta:
-		description = "Web Shell - from files Dive Shell 1.0 - Emperor Hacking Team.php, phpshell.php, SimShell 1.0 - Simorgh Security MGZ.php"
+		description = "Web Shell"
 		author = "Florian Roth"
 		date = "2014/01/28"
 		score = 70
@@ -2317,7 +2317,7 @@ rule webshell_Dive_Shell_1_0_Emperor_Hacking_Team_xxx {
 }
 rule webshell_404_data_in_JFolder_jfolder01_xxx {
 	meta:
-		description = "Web Shell - from files 404.jsp, data.jsp, in.jsp, JFolder.jsp, jfolder01.jsp, jsp.jsp, leo.jsp, suiyue.jsp, warn.jsp"
+		description = "Web Shell"
 		author = "Florian Roth"
 		date = "2014/01/28"
 		score = 70
@@ -2399,7 +2399,7 @@ rule webshell_2_520_job_JspWebshell_1_2_ma1_ma4_2 {
 }
 rule webshell_shell_2008_2009mssql_phpspy_2005_full_phpspy_2006_arabicspy_hkrkoz {
 	meta:
-		description = "Web Shell - from files shell.php, 2008.php, 2009mssql.php, phpspy_2005_full.php, phpspy_2006.php, arabicspy.php, hkrkoz.php"
+		description = "Web Shell"
 		author = "Florian Roth"
 		date = "2014/01/28"
 		score = 60
@@ -2422,7 +2422,7 @@ rule webshell_shell_2008_2009mssql_phpspy_2005_full_phpspy_2006_arabicspy_hkrkoz
 }
 rule webshell_gfs_sh_r57shell_r57shell127_SnIpEr_SA_xxx {
 	meta:
-		description = "Web Shell - from files gfs_sh.php, r57shell.php, r57shell127.php, SnIpEr_SA Shell.php, EgY_SpIdEr ShElL V2.php, r57_iFX.php, r57_kartal.php, r57_Mohajer22.php, r57.php, r57.php, Backdoor.PHP.Agent.php"
+		description = "Web Shell"
 		author = "Florian Roth"
 		date = "2014/01/28"
 		score = 70
@@ -2464,7 +2464,7 @@ rule webshell_itsec_PHPJackal_itsecteam_shell_jHn {
 }
 rule webshell_Shell_ci_Biz_was_here_c100_v_xxx {
 	meta:
-		description = "Web Shell - from files Shell [ci] .Biz was here.php, c100 v. 777shell v. Undetectable #18a Modded by 777 - Don.php, c99-shadows-mod.php"
+		description = "Web Shell"
 		author = "Florian Roth"
 		date = "2014/01/28"
 		score = 70
@@ -2483,7 +2483,7 @@ rule webshell_Shell_ci_Biz_was_here_c100_v_xxx {
 }
 rule webshell_NIX_REMOTE_WEB_SHELL_NIX_REMOTE_WEB_xxx1 {
 	meta:
-		description = "Web Shell - from files NIX REMOTE WEB-SHELL.php, NIX REMOTE WEB-SHELL v.0.5 alpha Lite Public Version.php, KAdot Universal Shell v0.1.6.php"
+		description = "Web Shell"
 		author = "Florian Roth"
 		date = "2014/01/28"
 		score = 70
@@ -2501,7 +2501,7 @@ rule webshell_NIX_REMOTE_WEB_SHELL_NIX_REMOTE_WEB_xxx1 {
 }
 rule webshell_c99_c99shell_c99_w4cking_Shell_xxx {
 	meta:
-		description = "Web Shell - from files c99.php, c99shell.php, c99_w4cking.php, Shell [ci] .Biz was here.php, acid.php, c100 v. 777shell v. Undetectable #18a Modded by 777 - Don.php, c66.php, c99-shadows-mod.php, c99.php, c99shell.php"
+		description = "Web Shell"
 		author = "Florian Roth"
 		date = "2014/01/28"
 		score = 70
@@ -2528,7 +2528,7 @@ rule webshell_c99_c99shell_c99_w4cking_Shell_xxx {
 }
 rule webshell_2008_2009mssql_phpspy_2005_full_phpspy_2006_arabicspy_hkrkoz {
 	meta:
-		description = "Web Shell - from files 2008.php, 2009mssql.php, phpspy_2005_full.php, phpspy_2006.php, arabicspy.php, hkrkoz.php"
+		description = "Web Shell"
 		author = "Florian Roth"
 		date = "2014/01/28"
 		score = 70
@@ -2651,7 +2651,7 @@ rule webshell_r57shell127_r57_iFX_r57_kartal_r57_antichat {
 }
 rule webshell_NIX_REMOTE_WEB_SHELL_nstview_xxx {
 	meta:
-		description = "Web Shell - from files NIX REMOTE WEB-SHELL.php, nstview.php, NIX REMOTE WEB-SHELL v.0.5 alpha Lite Public Version.php, Cyber Shell (v 1.0).php"
+		description = "Web Shell"
 		author = "Florian Roth"
 		date = "2014/01/28"
 		score = 70
@@ -2669,7 +2669,7 @@ rule webshell_NIX_REMOTE_WEB_SHELL_nstview_xxx {
 }
 rule webshell_000_403_807_a_c5_config_css_dm_he1p_xxx {
 	meta:
-		description = "Web Shell - from files 000.jsp, 403.jsp, 807.jsp, a.jsp, c5.jsp, config.jsp, css.jsp, dm.jsp, he1p.jsp, JspSpy.jsp, JspSpyJDK5.jsp, JspSpyJDK51.jsp, luci.jsp.spy2009.jsp, m.jsp, ma3.jsp, mmym520.jsp, myxx.jsp, nogfw.jsp, ok.jsp, queryDong.jsp, spyjsp2010.jsp, style.jsp, u.jsp, xia.jsp, zend.jsp, cofigrue.jsp, 1.jsp, jspspy.jsp, jspspy_k8.jsp, JspSpy.jsp, JspSpyJDK5.jsp"
+		description = "Web Shell"
 		author = "Florian Roth"
 		date = "2014/01/28"
 		score = 70
@@ -2780,7 +2780,7 @@ rule webshell_phpspy_2005_full_phpspy_2005_lite_phpspy_2006_PHPSPY {
 }
 rule webshell_c99_locus7s_c99_w4cking_xxx {
 	meta:
-		description = "Web Shell - from files c99_locus7s.php, c99_w4cking.php, r57shell.php, r57shell127.php, SnIpEr_SA Shell.php, EgY_SpIdEr ShElL V2.php, r57_iFX.php, r57_kartal.php, r57_Mohajer22.php, r57.php, acid.php, newsh.php, r57.php, Backdoor.PHP.Agent.php"
+		description = "Web Shell"
 		author = "Florian Roth"
 		date = "2014/01/28"
 		score = 70
@@ -4514,7 +4514,7 @@ rule _network_php_php_xinfo_php_php_nfm_php_php {
 }
 rule _w_php_php_c99madshell_v2_1_php_php_wacking_php_php_SpecialShell_99_php_php {
 	meta:
-		description = "Semi-Auto-generated  - from files w.php.php.txt, c99madshell_v2.1.php.php.txt, wacking.php.php.txt, SpecialShell_99.php.php.txt"
+		description = "Semi-Auto-generated "
 		author = "Neo23x0 Yara BRG + customization by Stefan -dfate- Molls"
 		super_rule = 1
 		hash0 = "38a3f9f2aa47c2e940695f3dba6a7bb2"
@@ -4529,7 +4529,7 @@ rule _w_php_php_c99madshell_v2_1_php_php_wacking_php_php_SpecialShell_99_php_php
 }
 rule _r577_php_php_SnIpEr_SA_Shell_php_r57_php_php_r57_Shell_php_php_spy_php_php_s_php_php {
 	meta:
-		description = "Semi-Auto-generated  - from files r577.php.php.txt, SnIpEr_SA Shell.php.txt, r57.php.php.txt, r57 Shell.php.php.txt, spy.php.php.txt, s.php.php.txt"
+		description = "Semi-Auto-generated "
 		author = "Neo23x0 Yara BRG + customization by Stefan -dfate- Molls"
 		super_rule = 1
 		hash0 = "0714f80f35c1fddef1f8938b8d42a4c8"
@@ -4576,7 +4576,7 @@ rule _r577_php_php_spy_php_php_s_php_php {
 }
 rule webshell_c99_generic {
 	meta:
-		description = "Semi-Auto-generated  - from files w.php.php.txt, c99madshell_v2.1.php.php.txt, wacking.php.php.txt, c99shell_v1.0.php.php.txt, c99php.txt, SpecialShell_99.php.php.txt, ctt_sh.php.php.txt"
+		description = "Semi-Auto-generated "
 		author = "Neo23x0 Yara BRG + customization by Stefan -dfate- Molls"
 		super_rule = 1
 		hash0 = "38a3f9f2aa47c2e940695f3dba6a7bb2"
@@ -4596,7 +4596,7 @@ rule webshell_c99_generic {
 }
 rule _w_php_php_c99madshell_v2_1_php_php_wacking_php_php_c99shell_v1_0_php_php_c99php_SpecialShell_99_php_php {
 	meta:
-		description = "Semi-Auto-generated  - from files w.php.php.txt, c99madshell_v2.1.php.php.txt, wacking.php.php.txt, c99shell_v1.0.php.php.txt, c99php.txt, SpecialShell_99.php.php.txt"
+		description = "Semi-Auto-generated "
 		author = "Neo23x0 Yara BRG + customization by Stefan -dfate- Molls"
 		super_rule = 1
 		hash0 = "38a3f9f2aa47c2e940695f3dba6a7bb2"
@@ -4627,7 +4627,7 @@ rule _w_php_php_wacking_php_php_SpecialShell_99_php_php {
 }
 rule _w_php_php_c99madshell_v2_1_php_php_wacking_php_php_SsEs_php_php_SpecialShell_99_php_php {
 	meta:
-		description = "Semi-Auto-generated  - from files w.php.php.txt, c99madshell_v2.1.php.php.txt, wacking.php.php.txt, SsEs.php.php.txt, SpecialShell_99.php.php.txt"
+		description = "Semi-Auto-generated "
 		author = "Neo23x0 Yara BRG + customization by Stefan -dfate- Molls"
 		super_rule = 1
 		hash0 = "38a3f9f2aa47c2e940695f3dba6a7bb2"
@@ -4643,7 +4643,7 @@ rule _w_php_php_c99madshell_v2_1_php_php_wacking_php_php_SsEs_php_php_SpecialShe
 }
 rule _r577_php_php_SnIpEr_SA_Shell_php_r57_php_php_spy_php_php_s_php_php {
 	meta:
-		description = "Semi-Auto-generated  - from files r577.php.php.txt, SnIpEr_SA Shell.php.txt, r57.php.php.txt, spy.php.php.txt, s.php.php.txt"
+		description = "Semi-Auto-generated "
 		author = "Neo23x0 Yara BRG + customization by Stefan -dfate- Molls"
 		super_rule = 1
 		hash0 = "0714f80f35c1fddef1f8938b8d42a4c8"
@@ -4789,7 +4789,7 @@ rule _w_php_php_c99madshell_v2_1_php_php_wacking_php_php {
 }
 rule _w_php_php_c99madshell_v2_1_php_php_wacking_php_php_c99shell_v1_0_php_php_c99php {
 	meta:
-		description = "Semi-Auto-generated  - from files w.php.php.txt, c99madshell_v2.1.php.php.txt, wacking.php.php.txt, c99shell_v1.0.php.php.txt, c99php.txt"
+		description = "Semi-Auto-generated "
 		author = "Neo23x0 Yara BRG + customization by Stefan -dfate- Molls"
 		super_rule = 1
 		hash0 = "38a3f9f2aa47c2e940695f3dba6a7bb2"
@@ -4821,7 +4821,7 @@ rule _GFS_web_shell_ver_3_1_7___PRiV8_php_nshell_php_php_gfs_sh_php_php {
 }
 rule _w_php_php_c99madshell_v2_1_php_php_wacking_php_php_c99shell_v1_0_php_php_SpecialShell_99_php_php {
 	meta:
-		description = "Semi-Auto-generated  - from files w.php.php.txt, c99madshell_v2.1.php.php.txt, wacking.php.php.txt, c99shell_v1.0.php.php.txt, SpecialShell_99.php.php.txt"
+		description = "Semi-Auto-generated "
 		author = "Neo23x0 Yara BRG + customization by Stefan -dfate- Molls"
 		super_rule = 1
 		hash0 = "38a3f9f2aa47c2e940695f3dba6a7bb2"
@@ -4839,7 +4839,7 @@ rule _w_php_php_c99madshell_v2_1_php_php_wacking_php_php_c99shell_v1_0_php_php_S
 }
 rule _w_php_php_wacking_php_php_c99shell_v1_0_php_php_c99php_SpecialShell_99_php_php {
 	meta:
-		description = "Semi-Auto-generated  - from files w.php.php.txt, wacking.php.php.txt, c99shell_v1.0.php.php.txt, c99php.txt, SpecialShell_99.php.php.txt"
+		description = "Semi-Auto-generated "
 		author = "Neo23x0 Yara BRG + customization by Stefan -dfate- Molls"
 		super_rule = 1
 		hash0 = "38a3f9f2aa47c2e940695f3dba6a7bb2"
@@ -4915,7 +4915,7 @@ rule _nst_php_php_cybershell_php_php_img_php_php_nstview_php_php {
 }
 rule _w_php_php_c99madshell_v2_1_php_php_wacking_php_php_dC3_Security_Crew_Shell_PRiV_php_SpecialShell_99_php_php {
 	meta:
-		description = "Semi-Auto-generated  - from files w.php.php.txt, c99madshell_v2.1.php.php.txt, wacking.php.php.txt, dC3 Security Crew Shell PRiV.php.txt, SpecialShell_99.php.php.txt"
+		description = "Semi-Auto-generated "
 		author = "Neo23x0 Yara BRG + customization by Stefan -dfate- Molls"
 		super_rule = 1
 		hash0 = "38a3f9f2aa47c2e940695f3dba6a7bb2"
@@ -4946,7 +4946,7 @@ rule _c99shell_v1_0_php_php_c99php_1_c2007_php_php_c100_php {
 }
 rule multiple_php_webshells_2 {
 	meta:
-		description = "Semi-Auto-generated  - from files w.php.php.txt, c99madshell_v2.1.php.php.txt, wacking.php.php.txt, c99shell_v1.0.php.php.txt, c99php.txt, SsEs.php.php.txt, SpecialShell_99.php.php.txt, ctt_sh.php.php.txt"
+		description = "Semi-Auto-generated "
 		author = "Neo23x0 Yara BRG + customization by Stefan -dfate- Molls"
 		super_rule = 1
 		hash0 = "38a3f9f2aa47c2e940695f3dba6a7bb2"
@@ -4966,7 +4966,7 @@ rule multiple_php_webshells_2 {
 }
 rule _w_php_php_c99madshell_v2_1_php_php_wacking_php_php_1_SpecialShell_99_php_php {
 	meta:
-		description = "Semi-Auto-generated  - from files w.php.php.txt, c99madshell_v2.1.php.php.txt, wacking.php.php.txt, 1.txt, SpecialShell_99.php.php.txt"
+		description = "Semi-Auto-generated "
 		author = "Neo23x0 Yara BRG + customization by Stefan -dfate- Molls"
 		super_rule = 1
 		hash0 = "38a3f9f2aa47c2e940695f3dba6a7bb2"
@@ -5000,7 +5000,7 @@ rule _r577_php_php_r57_php_php_spy_php_php_s_php_php {
 }
 rule _nixrem_php_php_c99shell_v1_0_php_php_c99php_NIX_REMOTE_WEB_SHELL_v_0_5_alpha_Lite_Public_Version_php {
 	meta:
-		description = "Semi-Auto-generated  - from files nixrem.php.php.txt, c99shell_v1.0.php.php.txt, c99php.txt, NIX REMOTE WEB-SHELL v.0.5 alpha Lite Public Version.php.txt"
+		description = "Semi-Auto-generated "
 		author = "Neo23x0 Yara BRG + customization by Stefan -dfate- Molls"
 		super_rule = 1
 		hash0 = "40a3e86a63d3d7f063a86aab5b5f92c6"
@@ -6123,7 +6123,7 @@ rule WebShell__Ajax_PHP_Command_Shell_Ajax_PHP_Command_Shell_soldierofallah {
 }
 rule WebShell_Generic_PHP_7 {
 	meta:
-		description = "PHP Webshells Github Archive - from files Mysql interface v1.0.php, MySQL Web Interface Version 0.8.php, Mysql_interface_v1.0.php, MySQL_Web_Interface_Version_0.8.php"
+		description = "PHP Webshells Github Archive"
 		author = "Florian Roth"
 		super_rule = 1
 		hash0 = "de98f890790756f226f597489844eb3e53a867a9"
@@ -6157,7 +6157,7 @@ rule WebShell__Small_Web_Shell_by_ZaCo_small_zaco_zacosmall {
 }
 rule WebShell_Generic_PHP_8 {
 	meta:
-		description = "PHP Webshells Github Archive - from files Macker's Private PHPShell.php, PHP Shell.php, Safe0ver Shell -Safe Mod Bypass By Evilc0der.php"
+		description = "PHP Webshells Github Archive"
 		author = "Florian Roth"
 		super_rule = 1
 		hash0 = "fc1ae242b926d70e32cdb08bbe92628bc5bd7f99"
@@ -6225,7 +6225,7 @@ rule WebShell__PH_Vayv_PHVayv_PH_Vayv {
 }
 rule WebShell_Generic_PHP_1 {
 	meta:
-		description = "PHP Webshells Github Archive - from files Dive Shell 1.0 - Emperor Hacking Team.php, Dive_Shell_1.0_Emperor_Hacking_Team.php, SimShell 1.0 - Simorgh Security MGZ.php, SimShell_1.0_-_Simorgh_Security_MGZ.php"
+		description = "PHP Webshells Github Archive - from files Dive Shell 1.0"
 		author = "Florian Roth"
 		super_rule = 1
 		hash0 = "3b086b9b53cf9d25ff0d30b1d41bb2f45c7cda2b"
@@ -6283,7 +6283,7 @@ rule WebShell__CrystalShell_v_1_erne_stres {
 }
 rule WebShell_Generic_PHP_3 {
 	meta:
-		description = "PHP Webshells Github Archive - from files Antichat Shell v1.3.php, Antichat Shell. Modified by Go0o$E.php, Antichat Shell.php, fatal.php"
+		description = "PHP Webshells Github Archive"
 		author = "Florian Roth"
 		super_rule = 1
 		hash0 = "d829e87b3ce34460088c7775a60bded64e530cd4"
@@ -6410,7 +6410,7 @@ rule WebShell__findsock_php_findsock_shell_php_reverse_shell {
 }
 rule WebShell_Generic_PHP_6 {
 	meta:
-		description = "PHP Webshells Github Archive - from files c0derz shell [csh] v. 0.1.1 release.php, CrystalShell v.1.php, load_shell.php, Loaderz WEB Shell.php, stres.php"
+		description = "PHP Webshells Github Archive"
 		author = "Florian Roth"
 		super_rule = 1
 		hash0 = "1a08f5260c4a2614636dfc108091927799776b13"
@@ -8464,7 +8464,7 @@ rule Webshell_AcidPoison {
 
 rule Webshell_acid_FaTaLisTiCz_Fx_fx_p0isoN_sh3ll_x0rg_byp4ss_256 {
 	meta:
-		description = "Detects Webshell - rule generated from from files acid.php, FaTaLisTiCz_Fx.txt, fx.txt, p0isoN.sh3ll.txt, x0rg.byp4ss.txt"
+		description = "Detects Webshell"
 		author = "Florian Roth"
 		reference = "https://github.com/nikicat/web-malware-collection"
 		date = "2016-01-11"
@@ -8483,7 +8483,7 @@ rule Webshell_acid_FaTaLisTiCz_Fx_fx_p0isoN_sh3ll_x0rg_byp4ss_256 {
 
 rule Webshell_Ayyildiz {
 	meta:
-		description = "Detects Webshell - rule generated from from files Ayyildiz Tim  -AYT- Shell v 2.1 Biz.txt, Macker's Private PHPShell.php, matamu.txt, myshell.txt, PHP Shell.txt"
+		description = "Detects Webshell"
 		author = "Florian Roth"
 		reference = "https://github.com/nikicat/web-malware-collection"
 		date = "2016-01-11"

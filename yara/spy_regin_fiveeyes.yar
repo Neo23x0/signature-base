@@ -4,7 +4,7 @@
 	Date: 2014-11-23
 	Identifier: Regin
 
-	Warning: Don't use this rule set without excluding the false positive hashes listed in 
+	Warning: Don't use this rule set without excluding the false positive hashes listed in
 	         the file falsepositive-hashes.txt
 
 */
@@ -20,9 +20,9 @@ rule Regin_APT_KernelDriver_Generic_A {
 		hash2 = "06665b96e293b23acc80451abb413e50"
 		hash3 = "d240f06e98c8d3e647cbf4d442d79475"
 	strings:
-		$m0 = { 4d 5a 90 00 03 00 00 00 04 00 00 00 ff ff 00 00 b8 } 
+		$m0 = { 4d 5a 90 00 03 00 00 00 04 00 00 00 ff ff 00 00 b8 }
 		$m1 = { 0e 1f ba 0e 00 b4 09 cd 21 b8 01 4c cd 21 54 68 69 73 20 70 72 6f 67 72 61 6d 20 63 61 6e 6e 6f 74 20 62 65 20 72 75 6e 20 69 6e 20 44 4f 53 20 6d 6f 64 65 2e }
-		
+
 		$s0 = "atapi.sys" fullword wide
 		$s1 = "disk.sys" fullword wide
 		$s3 = "h.data" fullword ascii
@@ -33,9 +33,9 @@ rule Regin_APT_KernelDriver_Generic_A {
 		$s8 = "windows" fullword ascii
 
 		$x1 = "LRich6" fullword ascii
-		$x2 = "KeServiceDescriptorTable" fullword ascii		
+		$x2 = "KeServiceDescriptorTable" fullword ascii
 	condition:
-		$m0 at 0 and $m1 and  	
+		$m0 at 0 and $m1 and
 		all of ($s*) and 1 of ($x*)
 }
 
@@ -58,35 +58,35 @@ rule Regin_APT_KernelDriver_Generic_B {
 		hash12 = "b505d65721bb2453d5039a389113b566"
 		hash13 = "b269894f434657db2b15949641a67532"
 	strings:
-		$m0 = { 4d 5a 90 00 03 00 00 00 04 00 00 00 ff ff 00 00 b8 } 
+		$m0 = { 4d 5a 90 00 03 00 00 00 04 00 00 00 ff ff 00 00 b8 }
 		$s1 = { 0e 1f ba 0e 00 b4 09 cd 21 b8 01 4c cd 21 54 68 69 73 20 70 72 6f 67 72 61 6d 20 63 61 6e 6e 6f 74 20 62 65 20 72 75 6e 20 69 6e 20 44 4f 53 20 6d 6f 64 65 2e }
 		$s2 = "H.data" fullword ascii nocase
 		$s3 = "INIT" fullword ascii
 		$s4 = "ntoskrnl.exe" fullword ascii
-		
+
 		$v1 = "\\system32" fullword ascii
 		$v2 = "\\SystemRoot" fullword ascii
-		$v3 = "KeServiceDescriptorTable" fullword ascii	
-		
+		$v3 = "KeServiceDescriptorTable" fullword ascii
+
 		$w1 = "\\system32" fullword ascii
-		$w2 = "\\SystemRoot" fullword ascii		
+		$w2 = "\\SystemRoot" fullword ascii
 		$w3 = "LRich6" fullword ascii
-		
+
 		$x1 = "_snprintf" fullword ascii
 		$x2 = "_except_handler3" fullword ascii
-		
+
 		$y1 = "mbstowcs" fullword ascii
 		$y2 = "wcstombs" fullword ascii
 		$y3 = "KeGetCurrentIrql" fullword ascii
-		
+
 		$z1 = "wcscpy" fullword ascii
 		$z2 = "ZwCreateFile" fullword ascii
 		$z3 = "ZwQueryInformationFile" fullword ascii
 		$z4 = "wcslen" fullword ascii
 		$z5 = "atoi" fullword ascii
 	condition:
-		$m0 at 0 and all of ($s*) and 
-		( all of ($v*) or all of ($w*) or all of ($x*) or all of ($y*) or all of ($z*) ) 
+		$m0 at 0 and all of ($s*) and
+		( all of ($v*) or all of ($w*) or all of ($x*) or all of ($y*) or all of ($z*) )
 		and filesize < 20KB
 }
 
@@ -96,23 +96,23 @@ rule Regin_APT_KernelDriver_Generic_C {
 		author = "@Malwrsignatures - included in APT Scanner THOR"
 		date = "23.11.14"
 		hash1 = "e0895336617e0b45b312383814ec6783556d7635"
-		hash2 = "732298fa025ed48179a3a2555b45be96f7079712"		
+		hash2 = "732298fa025ed48179a3a2555b45be96f7079712"
 	strings:
-		$m0 = { 4d 5a 90 00 03 00 00 00 04 00 00 00 ff ff 00 00 b8 } 
-	
+		$m0 = { 4d 5a 90 00 03 00 00 00 04 00 00 00 ff ff 00 00 b8 }
+
 		$s0 = "KeGetCurrentIrql" fullword ascii
 		$s1 = "5.2.3790.0 (srv03_rtm.030324-2048)" fullword wide
 		$s2 = "usbclass" fullword wide
-		
+
 		$x1 = "PADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDING" ascii
 		$x2 = "Universal Serial Bus Class Driver" fullword wide
 		$x3 = "5.2.3790.0" fullword wide
-		
+
 		$y1 = "LSA Shell" fullword wide
-		$y2 = "0Richw" fullword ascii		
+		$y2 = "0Richw" fullword ascii
 	condition:
-		$m0 at 0 and all of ($s*) and 
-		( all of ($x*) or all of ($y*) ) 
+		$m0 at 0 and all of ($s*) and
+		( all of ($x*) or all of ($y*) )
 		and filesize < 20KB
 }
 
@@ -133,7 +133,7 @@ rule Regin_sig_svcsstat {
 		$s5 = "\\\\?\\UNC" fullword wide
 		$s6 = "%ls%ls" fullword wide
 	condition:
-		all of them and filesize < 15KB and filesize > 10KB 
+		all of them and filesize < 15KB and filesize > 10KB
 }
 
 rule Regin_Sample_1 {
@@ -196,10 +196,10 @@ rule Regin_Sample_3 {
 		description = "Detects Regin Backdoor sample fe1419e9dde6d479bd7cda27edd39fafdab2668d498931931a2769b370727129"
 		author = "@Malwrsignatures"
 		date = "27.11.14"
-		hash = "fe1419e9dde6d479bd7cda27edd39fafdab2668d498931931a2769b370727129"		
+		hash = "fe1419e9dde6d479bd7cda27edd39fafdab2668d498931931a2769b370727129"
 	strings:
 		$hd = { fe ba dc fe }
-	
+
 		$s0 = "Service Pack x" fullword wide
 		$s1 = "\\REGISTRY\\MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion" fullword wide
 		$s2 = "\\REGISTRY\\Machine\\Software\\Microsoft\\Windows NT\\CurrentVersion\\HotFix" fullword wide
@@ -208,8 +208,8 @@ rule Regin_Sample_3 {
 		$s5 = "Memory location: 0x%p, size 0x%08x" wide fullword
 		$s6 = "Service Pack" fullword wide
 		$s7 = ".sys" fullword wide
-		$s8 = ".dll" fullword wide		
-		
+		$s8 = ".dll" fullword wide
+
 		$s10 = "\\REGISTRY\\Machine\\Software\\Microsoft\\Updates" fullword wide
 		$s11 = "IoGetRelatedDeviceObject" fullword ascii
 		$s12 = "VMEM.sys" fullword ascii
@@ -225,7 +225,7 @@ rule Regin_Sample_Set_1 {
 		author = "@MalwrSignatures"
 		date = "26.11.14"
 		hash1 = "8487a961c8244004c9276979bb4b0c14392fc3b8"
-		hash2 = "bcf3461d67b39a427c83f9e39b9833cfec977c61"		
+		hash2 = "bcf3461d67b39a427c83f9e39b9833cfec977c61"
 	strings:
 		$s0 = "HAL.dll" fullword ascii
 		$s1 = "IoGetDeviceObjectPointer" fullword ascii
@@ -254,14 +254,14 @@ rule Regin_Sample_Set_1 {
 
 rule Regin_Sample_Set_2 {
 	meta:
-		description = "Detects Regin Backdoor sample 4139149552b0322f2c5c993abccc0f0d1b38db4476189a9f9901ac0d57a656be and e420d0cf7a7983f78f5a15e6cb460e93c7603683ae6c41b27bf7f2fa34b2d935"
+		description = "Detects Regin Backdoor sample"
 		author = "@MalwrSignatures"
 		date = "27.11.14"
 		hash1 = "4139149552b0322f2c5c993abccc0f0d1b38db4476189a9f9901ac0d57a656be"
 		hash2 = "e420d0cf7a7983f78f5a15e6cb460e93c7603683ae6c41b27bf7f2fa34b2d935"
 	strings:
 		$hd = { fe ba dc fe }
-	
+
 		$s0 = "d%ls%ls" fullword wide
 		$s1 = "\\\\?\\UNC" fullword wide
 		$s2 = "Software\\Microsoft\\Windows\\CurrentVersion" fullword wide
@@ -271,8 +271,8 @@ rule Regin_Sample_Set_2 {
 		$s6 = "\\\\.\\Global\\%s" fullword wide
 		$s7 = "temp" fullword wide
 		$s8 = "\\\\.\\%s" fullword wide
-		$s9 = "Memory location: 0x%p, size 0x%08x" fullword wide		
-		
+		$s9 = "Memory location: 0x%p, size 0x%08x" fullword wide
+
 		$s10 = "sscanf" fullword ascii
 		$s11 = "disp.dll" fullword ascii
 		$s12 = "%x:%x:%x:%x:%x:%x:%x:%x%c" fullword ascii

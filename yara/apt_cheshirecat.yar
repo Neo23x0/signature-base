@@ -3,7 +3,7 @@
 	Author: Florian Roth
 	Date: 2015-08-08
 	Identifier: Cheshire Cat
-	Version: 0.1 
+	Version: 0.1
 */
 
 /* Rule Set ----------------------------------------------------------------- */
@@ -71,7 +71,7 @@ rule CheshireCat_Gen1 {
 
 rule CheshireCat_Gen2 {
 	meta:
-		description = "Auto-generated rule - from files 32159d2a16397823bc882ddd3cd77ecdbabe0fde934e62f297b8ff4d7b89832a, 63735d555f219765d486b3d253e39bd316bbcb1c0ec595ea45ddf6e419bef3cb"
+		description = "Cheshire Cat Malware"
 		author = "Florian Roth"
 		reference = "https://malware-research.org/prepare-father-of-stuxnet-news-are-coming/"
 		date = "2015-08-08"

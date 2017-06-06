@@ -318,7 +318,7 @@ rule FVEY_ShadowBroker_user_tool_envisioncollision {
 
 rule FVEY_ShadowBroker_Gen_Readme1 {
    meta:
-      description = "Auto-generated rule - from files user.tool.enemyrun.SAMPLE__RECONFIG_PER_TARGET, user.tool.cursehappy.COMMON, user.tool.cursehappy.preversion4.COMMON"
+      description = "Auto-generated rule"
       author = "Florian Roth"
       reference = "https://bit.no.com:43110/theshadowbrokers.bit/post/message6/"
       date = "2016-12-17"
@@ -349,7 +349,7 @@ rule FVEY_ShadowBroker_Gen_Readme2 {
 
 rule FVEY_ShadowBroker_Gen_Readme3 {
    meta:
-      description = "Auto-generated rule - from files user.tool.orleansstride.COMMON, user.tool.enemyrun.SAMPLE__RECONFIG_PER_TARGET, user.tool.skimcountry.COMMON, user.tool.cursehappy.COMMON, user.tool.cursehappy.preversion4.COMMON, user.tool.cursehydrant.COMMON, user.tool.curserazor.COMMON"
+      description = "Auto-generated rule"
       author = "Florian Roth"
       reference = "https://bit.no.com:43110/theshadowbrokers.bit/post/message6/"
       date = "2016-12-17"

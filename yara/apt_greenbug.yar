@@ -92,7 +92,7 @@ rule Greenbug_Malware_4 {
 
 rule Greenbug_Malware_5 {
    meta:
-      description = "Auto-generated rule - from files 308a646f57c8be78e6a63ffea551a84b0ae877b23f28a660920c9ba82d57748f, 44bdf5266b45185b6824898664fd0c0f2039cdcb48b390f150e71345cd867c49, 7f16824e7ad9ee1ad2debca2a22413cde08f02ee9f0d08d64eb4cb318538be9c, 82beaef407f15f3c5b2013cb25901c9fab27b086cadd35149794a25dce8abcb9"
+      description = "Auto-generated rule"
       author = "Florian Roth"
       reference = "https://goo.gl/urp4CD"
       date = "2017-01-25"

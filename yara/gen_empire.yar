@@ -325,7 +325,7 @@ rule Empire_Invoke_SSHCommand {
 
 rule Empire_PowerShell_Framework_Gen1 {
    meta:
-      description = "Detects Empire component - from files Invoke-CredentialInjection.ps1, Invoke-DCSync.ps1, Invoke-Mimikatz.ps1, Invoke-PSInject.ps1, Invoke-ReflectivePEInjection.ps1"
+      description = "Detects Empire component"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -359,7 +359,7 @@ rule Empire_PowerUp_Gen {
 
 rule Empire_PowerShell_Framework_Gen2 {
    meta:
-      description = "Detects Empire component - from files Invoke-CredentialInjection.ps1, Invoke-CredentialInjection.ps1, Invoke-DCSync.ps1, Invoke-DCSync.ps1, Invoke-Mimikatz.ps1, Invoke-PSInject.ps1, Invoke-PSInject.ps1, Invoke-ReflectivePEInjection.ps1, Invoke-ReflectivePEInjection.ps1"
+      description = "Detects Empire component"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -395,7 +395,7 @@ rule Empire_Agent_Gen {
 
 rule Empire_PowerShell_Framework_Gen3 {
    meta:
-      description = "Detects Empire component - from files Invoke-CredentialInjection.ps1, Invoke-Mimikatz.ps1, Invoke-PSInject.ps1, Invoke-ReflectivePEInjection.ps1"
+      description = "Detects Empire component"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -457,7 +457,7 @@ rule Empire_Invoke_Portscan_Gen {
 
 rule Empire_PowerShell_Framework_Gen4 {
    meta:
-      description = "Detects Empire component - from files Invoke-BypassUAC.ps1, Invoke-CredentialInjection.ps1, Invoke-CredentialInjection.ps1, Invoke-DCSync.ps1, Invoke-DllInjection.ps1, Invoke-Mimikatz.ps1, Invoke-PsExec.ps1, Invoke-PSInject.ps1, Invoke-ReflectivePEInjection.ps1, Invoke-Shellcode.ps1"
+      description = "Detects Empire component"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -516,7 +516,7 @@ rule Empire_Invoke_Gen {
 
 rule Empire_PowerShell_Framework_Gen5 {
    meta:
-      description = "Detects Empire component - from files Invoke-CredentialInjection.ps1, Invoke-PSInject.ps1, Invoke-ReflectivePEInjection.ps1"
+      description = "Detects Empire component"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
