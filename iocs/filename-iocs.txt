@@ -2028,4 +2028,14 @@ ystem32\\lcsvsvc\.dll;80
 \\Temp\\[0-9]{5,6}\.gho;70
 \\[Ss]ystem32\\aaaaaa\.exe;100
 
+# Industroyer / CrashOverride IOCs https://dragos.com/blog/crashoverride/
+\\tiersvc\.exe;80
+\\61850\.exe;80
+\\defragsvc\.exe;80
+\\haslo\.exe;80
+\\avtask\.exe;60
+\\104\.dll;80
+\\port\.exe;40
+\\haslo\.dat;80
+
 # End

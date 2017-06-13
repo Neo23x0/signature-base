@@ -7612,3 +7612,13 @@ e00d3a87005e26845951941292ae4754;Archimedes - Vault7 CIA - Malware https://wikil
 ec463bfd4f6b05f7e5fa171818aff7c8;Archimedes - Vault7 CIA - Malware https://wikileaks.org/vault7/document/#archimedes
 cba19d228abf31ec8afab7330df3c9da60cd4dae376552b503aea6d7feff9946;FireEye EternalBlue Malware Campaign https://goo.gl/OOB3mH
 4f49e17b457ef202ab0be905691ef2b2d2b0a086a7caddd1e70dd45e5ed3b309;FireEye EternalBlue Malware Campaign https://goo.gl/OOB3mH
+2cb8230281b86fa944d3043ae906016c8b5984d9;Industroyer: Biggest threat to industrial control systems since Stuxnet https://goo.gl/x81cSy
+5a5fafbc3fec8d36fd57b075ebf34119ba3bff04;Industroyer: Biggest threat to industrial control systems since Stuxnet https://goo.gl/x81cSy
+79ca89711cdaedb16b0ccccfdcfbd6aa7e57120a;Industroyer: Biggest threat to industrial control systems since Stuxnet https://goo.gl/x81cSy
+8e39eca1e48240c01ee570631ae8f0c9a9637187;Industroyer: Biggest threat to industrial control systems since Stuxnet https://goo.gl/x81cSy
+94488f214b165512d2fc0438a581f5c9e3bd4d4c;Industroyer: Biggest threat to industrial control systems since Stuxnet https://goo.gl/x81cSy
+b335163e6eb854df5e08e85026b2c3518891eda8;Industroyer: Biggest threat to industrial control systems since Stuxnet https://goo.gl/x81cSy
+b92149f046f00bb69de329b8457d32c24726ee00;Industroyer: Biggest threat to industrial control systems since Stuxnet https://goo.gl/x81cSy
+cccce62996d578b984984426a024d9b250237533;Industroyer: Biggest threat to industrial control systems since Stuxnet https://goo.gl/x81cSy
+f6c21f8189ced6ae150f9ef2e82a3a57843b587d;Industroyer: Biggest threat to industrial control systems since Stuxnet https://goo.gl/x81cSy
+ecf6adf20a7137a84a1b319ccaa97cb0809a8454;Industroyer: Biggest threat to industrial control systems since Stuxnet https://goo.gl/x81cSy
