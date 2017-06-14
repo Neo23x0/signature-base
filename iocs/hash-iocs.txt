@@ -7622,3 +7622,8 @@ b92149f046f00bb69de329b8457d32c24726ee00;Industroyer: Biggest threat to industri
 cccce62996d578b984984426a024d9b250237533;Industroyer: Biggest threat to industrial control systems since Stuxnet https://goo.gl/x81cSy
 f6c21f8189ced6ae150f9ef2e82a3a57843b587d;Industroyer: Biggest threat to industrial control systems since Stuxnet https://goo.gl/x81cSy
 ecf6adf20a7137a84a1b319ccaa97cb0809a8454;Industroyer: Biggest threat to industrial control systems since Stuxnet https://goo.gl/x81cSy
+AB4ABEE83FFD526F1975EB48DBDBC812;Hidden Cobra Hash IOC https://www.us-cert.gov/ncas/alerts/TA17-164A
+E95C318D1B1906D57471BB524FFF128356C160132D4230DB04AB5898EC0EB145;Hidden Cobra Hash IOC https://www.us-cert.gov/ncas/alerts/TA17-164A
+3FDF856B6FBCB23E7C3372A3F53CE26C0FE6DE77;Hidden Cobra Hash IOC https://www.us-cert.gov/ncas/alerts/TA17-164A
+5D29DFE2EA9CA8DA3FF7A14FB20C5E86;Hidden Cobra Hash IOC https://www.us-cert.gov/ncas/alerts/TA17-164A
+8F4FC2E10B6EC15A01E0AF24529040DD;Hidden Cobra Hash IOC https://www.us-cert.gov/ncas/alerts/TA17-164A
