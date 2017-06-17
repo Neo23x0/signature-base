@@ -255,7 +255,7 @@ rule CookieTools {
 		$s8 = "OnGetPasswordP" fullword ascii
 		$s12 = "http://www.chinesehack.org/" fullword ascii
 	condition:
-		uint16(0) == 0x5a4d and filesize < 5000KB and 2 of them
+		uint16(0) == 0x5a4d and filesize < 5000KB and 4 of them
 }
 
 rule update_PcInit {
