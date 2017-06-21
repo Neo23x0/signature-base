@@ -12,7 +12,7 @@ rule HTA_with_WScript_Shell {
    meta:
       description = "Detects WScript Shell in HTA"
       author = "Florian Roth"
-      reference = "Internal Research"
+      reference = "https://twitter.com/msftmmpc/status/877396932758560768"
       date = "2017-06-21"
       score = 80
       hash1 = "ca7b653cf41e980c44311b2cd701ed666f8c1dbc"
@@ -27,7 +27,7 @@ rule HTA_Embedded {
    meta:
       description = "Detects an embedded HTA file"
       author = "Florian Roth"
-      reference = "Internal Research"
+      reference = "https://twitter.com/msftmmpc/status/877396932758560768"
       date = "2017-06-21"
       score = 50
       hash1 = "ca7b653cf41e980c44311b2cd701ed666f8c1dbc"
