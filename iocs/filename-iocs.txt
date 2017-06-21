@@ -1885,7 +1885,7 @@ fdp\.exe;60
 \\Windows Data AntiVirus;90
 \\t\.vbs\.cfg;90
 \\furnish\.dat;90
-\\ProgramData\\SxS\\[^\\]{1,20}\.(exe|dll|dat);90
+\\ProgramData\\SxS\\[^\\]{1,20}\.(exe|dll|dat);50;\\eastoeb\.exe
 \\wpf-etw\.dat;90
 \\microsoft\.workflow\.compiler\.dat;90
 
