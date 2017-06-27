@@ -2,7 +2,7 @@
    Yara Rule Set
    Author: Florian Roth
    Date: 2017-06-27
-   Identifier: Petya
+   Identifier: NoPetya
    Reference: https://goo.gl/h6iaGj
               https://gist.github.com/vulnersCom/65fe44d27d29d7a5de4c176baba45759
 */
@@ -11,7 +11,7 @@
 
 rule NoPetya_Ransomware_Jun17 {
    meta:
-      description = "Detects new Petya Ransomware variant from June 2017"
+      description = "Detects new NoPetya Ransomware variant from June 2017"
       author = "Florian Roth"
       reference = "https://goo.gl/h6iaGj"
       date = "2017-06-27"
