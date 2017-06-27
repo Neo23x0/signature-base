@@ -2,16 +2,16 @@
    Yara Rule Set
    Author: Florian Roth
    Date: 2017-06-27
-   Identifier: NoPetya
+   Identifier: NotPetya
    Reference: https://goo.gl/h6iaGj
               https://gist.github.com/vulnersCom/65fe44d27d29d7a5de4c176baba45759
 */
 
 /* Rule Set ----------------------------------------------------------------- */
 
-rule NoPetya_Ransomware_Jun17 {
+rule NotPetya_Ransomware_Jun17 {
    meta:
-      description = "Detects new NoPetya Ransomware variant from June 2017"
+      description = "Detects new NotPetya Ransomware variant from June 2017"
       author = "Florian Roth"
       reference = "https://goo.gl/h6iaGj"
       date = "2017-06-27"
@@ -33,9 +33,9 @@ rule NoPetya_Ransomware_Jun17 {
       uint16(0) == 0x5a4d and filesize < 1000KB and ( 1 of ($x*) or 3 of them )
 }
 
-rule NoPetya_Rel_Malware {
+rule NotPetya_Rel_Malware {
    meta:
-      description = "Detects NoPetya related malware - karo.exe"
+      description = "Detects NotPetya related malware - karo.exe"
       author = "Florian Roth"
       reference = "https://gist.github.com/vulnersCom/65fe44d27d29d7a5de4c176baba45759"
       date = "2017-06-27"
@@ -50,9 +50,9 @@ rule NoPetya_Rel_Malware {
       ( uint16(0) == 0x5a4d and filesize < 2000KB and all of them )
 }
 
-rule NoPetya_Rel_Malware_3 {
+rule NotPetya_Rel_Malware_3 {
    meta:
-      description = "Detects NoPetya related malware - iosi.exe"
+      description = "Detects NotPetya related malware - iosi.exe"
       author = "Florian Roth"
       reference = "https://gist.github.com/vulnersCom/65fe44d27d29d7a5de4c176baba45759"
       date = "2017-06-27"
