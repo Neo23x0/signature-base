@@ -2032,36 +2032,36 @@ ystem32\\lcsvsvc\.dll;80
 # Abnormal System File Location ------------------------------------------------
 
 # Abnormal File Location
-\\msn\.exe$;60;\\MSNCoreFiles\\
-\\messenger\.exe$;60;\\MSN Messenger
-\\vmware\.exe$;60;(kstation|Programs)
-\\SCNotification\.exe$;60;CCM\\
-\\SavService\.exe$;60;[Aa]nti\-[Vv]irus\\
-\\ALsvc\.exe$;60;AutoUpdate\\
+#\\msn\.exe$;60;\\MSNCoreFiles\\
+#\\messenger\.exe$;60;\\MSN Messenger
+#\\vmware\.exe$;60;(kstation|Programs)
+#\\SCNotification\.exe$;60;CCM\\
+#\\SavService\.exe$;60;[Aa]nti\-[Vv]irus\\
+#\\ALsvc\.exe$;60;AutoUpdate\\
 
 # Ncat
-\\ncat\.exe$;60;\\(bin|sbin|Nmap)\\
-\\nc\.exe$;60;\\(bin|sbin)\\
-\\nping\.exe$;60;\\(bin|sbin)\\
+#\\ncat\.exe$;60;\\(bin|sbin|Nmap)\\
+#\\nc\.exe$;60;\\(bin|sbin)\\
+#\\nping\.exe$;60;\\(bin|sbin)\\
 
 # AppCompatSearch --------------------------------------------------------------
 # Signatures from https://github.com/mbevilacqua/appcompatprocessor/blob/master/AppCompatSearch.txt
 # THOR 3rd generation format - Regex;Score;FP Regex
 
 # Missplaced system files
-([C-Zc-z]:|\\\\).{1,40}\\(svchost\.exe|lsass\.exe|lsm\.exe|services\.exe|smss\.exe|calc\.exe);65;(?i)(HKCR\\Applications|System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE|Sysnative|dllcache|WINXP|WINDOWS|i386|%system32%)\\
-([C-Zc-z]:|\\\\).{1,40}\\(msra\.exe|ctfmon\.exe|csrss\.exe|snmp\.exe|alg\.exe);65;(?i)(HKCR\\Applications|System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE|Sysnative|dllcache|WINXP|WINDOWS|i386|%system32%)\\
-([C-Zc-z]:|\\\\).{1,40}\\(spoolsrv\.exe|winlogon\.exe|taskmgr\.exe|taskeng\.exe);65;(?i)(HKCR\\Applications|System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE|Sysnative|dllcache|WINXP|WINDOWS|i386|%system32%)\\
-([C-Zc-z]:|\\\\).{1,40}\\mshta\.exe$;65;(?i)(HKCR\\Applications|System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE|dllcache|WINXP|WINDOWS|i386|windows|ie8|ie7|%system32%)\\
-([C-Zc-z]:|\\\\).{1,40}\\cmd\.exe$;65;(?i)(HKCR\\Applications|System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE|Sysnative|dllcache|WINXP|WINDOWS|i386|dllcache|WINXP|WINDOWS|%system32%)\\
-([C-Zc-z]:|\\\\).{1,40}\\explorer\.exe$;65;(?i)(HKCR\\Applications|winsxs|WinSxS|WINXP|WINDOWS|Windows|i386|WINXP|WINDOWS|Win2k|WINNT|Windows|windows|%SystemRoot%|%system32%)\\
+#([C-Zc-z]:|\\\\).{1,40}\\(svchost\.exe|lsass\.exe|lsm\.exe|services\.exe|smss\.exe|calc\.exe);65;(?i)(HKCR\\Applications|System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE|Sysnative|dllcache|WINXP|WINDOWS|i386|%system32%)\\
+#([C-Zc-z]:|\\\\).{1,40}\\(msra\.exe|ctfmon\.exe|csrss\.exe|snmp\.exe|alg\.exe);65;(?i)(HKCR\\Applications|System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE|Sysnative|dllcache|WINXP|WINDOWS|i386|%system32%)\\
+#([C-Zc-z]:|\\\\).{1,40}\\(spoolsrv\.exe|winlogon\.exe|taskmgr\.exe|taskeng\.exe);65;(?i)(HKCR\\Applications|System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE|Sysnative|dllcache|WINXP|WINDOWS|i386|%system32%)\\
+#([C-Zc-z]:|\\\\).{1,40}\\mshta\.exe$;65;(?i)(HKCR\\Applications|System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE|dllcache|WINXP|WINDOWS|i386|windows|ie8|ie7|%system32%)\\
+#([C-Zc-z]:|\\\\).{1,40}\\cmd\.exe$;65;(?i)(HKCR\\Applications|System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE|Sysnative|dllcache|WINXP|WINDOWS|i386|dllcache|WINXP|WINDOWS|%system32%)\\
+#([C-Zc-z]:|\\\\).{1,40}\\explorer\.exe$;65;(?i)(HKCR\\Applications|winsxs|WinSxS|WINXP|WINDOWS|Windows|i386|WINXP|WINDOWS|Win2k|WINNT|Windows|windows|%SystemRoot%|%system32%)\\
 
 # Other missplaced stuff you probably want to be aware of
-([C-Zc-z]:|\\\\).{1,40}\\(cmd|lsass|rundll|rundll32|net|net1|taskeng|conhost|powershell)\.exe;65;(?i)(HKCR\\Applications|System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE|dllcache|WINXP|WINDOWS|i386|anti-malware|%system32%)\\
+#([C-Zc-z]:|\\\\).{1,40}\\(cmd|lsass|rundll|rundll32|net|net1|taskeng|conhost|powershell)\.exe;65;(?i)(HKCR\\Applications|System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE|dllcache|WINXP|WINDOWS|i386|anti-malware|%system32%)\\
 
 # Archivers on odd locations
-\\rar(32|64)?\.exe;60;(?i)(\\WinRAR|\\wrar)
-\\7za\.exe;50;(?i)(\\VMware Player|\\utilities|\\tools[^\\]*|\\PortableApps\\|\\Lenovo\\System Update|\\adobe creative cloud\\utils\\zip|\\bin)
+#\\rar(32|64)?\.exe;60;(?i)(\\WinRAR|\\wrar)
+#\\7za\.exe;50;(?i)(\\VMware Player|\\utilities|\\tools[^\\]*|\\PortableApps\\|\\Lenovo\\System Update|\\adobe creative cloud\\utils\\zip|\\bin)
 
 # Misspelt Windows binaries example
 \\scvhost\.exe;76
@@ -2092,7 +2092,7 @@ ystem32\\lcsvsvc\.dll;80
 \\tsclient\\[^\\]{1,20}\.(exe|dll);40
 
 # Metasploit-dropped files with random file names
-\\windows\\temp\\[a-zA-Z]{16}\.(exe|bat);60;VerifyAndInstall\.exe
+#\\windows\\temp\\[a-zA-Z]{16}\.(exe|bat);60;VerifyAndInstall\.exe
 
 # Finds WinRAR directories in the Default User, All Users, and Network User accounts. This may indicate RAR usage by these accounts.
 \\Network user\\Application Data\\WinRAR;60
@@ -2109,8 +2109,8 @@ ystem32\\lcsvsvc\.dll;80
 \\nbtscan\.exe;60
 \\wmiexec;60
 \\smbscan;60
-\\osql\.exe$;50;(?i)(\\Microsoft SQL Server\\)
-\\(procdump|pdump|pc)(64)+\\.exe;50;(?i)(\\SysInternals\\)
+#\\osql\.exe$;50;(?i)(\\Microsoft SQL Server\\)
+#\\(procdump|pdump|pc)(64)+\\.exe;50;(?i)(\\SysInternals\\)
 
 # Cred Dumping
 \\(q32|q64|wceaux|w86|q86|quarkpwd[^\\]*|m64|m32|hash32|hash64|64|32|w32|w64|wce32|wce64|w32|w64|wce|p32|p64|ps32|ps64|mimikatz|mimilove|mm32|mm64|pw32|pw64|g32|g64|gs32|gs64|hash|hashdump|dumpsvc)\.exe;60
@@ -2118,7 +2118,7 @@ ystem32\\lcsvsvc\.dll;80
 \\(pwhash|fgdump);60
 
 # Generic methodology - 1 character executable / script in short path
-[a-zA-Z]:[.]{0,10}\\[.]\.(exe|dll|vbs|ps1|bat|sh)$;60;(?i)(\\cygwin\\|\\GnuWin32\\|Opera\\k\.(exe|bat)|\\R\\r-|\\Git\\usr|\\adobe after effects|\\perl)
+#[a-zA-Z]:[.]{0,10}\\[.]\.(exe|dll|vbs|ps1|bat|sh)$;60;(?i)(\\cygwin\\|\\GnuWin32\\|Opera\\k\.(exe|bat)|\\R\\r-|\\Git\\usr|\\adobe after effects|\\perl)
 # Numeric vbs
 \\[0-9]{1,10}\.vbs;60
 \\[a-zA-z][0-9]{1,10}\.vbs;60
@@ -2131,33 +2131,33 @@ ystem32\\lcsvsvc\.dll;80
 # Single character executable on a drive root
 [C-Zc-z]:\\[a-z0-9]\.(exe|vbs|ps1|bat|dll)$;60
 # Exe in RARSFX folder
-\\RarSFX\d\\[^\\]{1,20}\.exe;50;(?i)(\\RarSFX\d\\lsetup\.exe|\\intiupdater\.exe)
+#\\RarSFX\d\\[^\\]{1,20}\.exe;50;(?i)(\\RarSFX\d\\lsetup\.exe|\\intiupdater\.exe)
 
 # Backdoor.Adwind search for a runkey using this legitimate but missplaced copy of java
 \\(Users|Documents and Settings)\\[^\\]{1,16}\\AppData\\Roaming\\Oracle\\bin\\javaw\.exe;70
 
 # Classic attacker staging folders
 [Cc]:\\(Recovery|Intel|Web)\\[^\\]{1,16}\.(exe|dll|vbs|ps1|bat);60
-[Cc]:\\(Windows|Winnt)\\(Help|Web|Media|ime|Debug|Fonts)\\[^\\]{1,16}\.(exe|dll|vbs|ps1|bat);60;(?i)(\\WINDOWS\\IME\\im[^\\]*_1\\IM)
+#[Cc]:\\(Windows|Winnt)\\(Help|Web|Media|ime|Debug|Fonts)\\[^\\]{1,16}\.(exe|dll|vbs|ps1|bat);60;(?i)(\\WINDOWS\\IME\\im[^\\]*_1\\IM)
 \\System Volume Information\\[^\\]{1,16}\.(exe|dll|vbs|ps1|bat);60
 \\(perflogs|perfdata)\\[^\\]{1,16}\.(exe|dll|vbs|ps1|bat);60
 
 # Generic startup persistance flagging
-\\Start Menu\\Programs\\Startup\\[^\\]{1,16}\.(exe|dll|vbs|ps1|bat);60
+#\\Start Menu\\Programs\\Startup\\[^\\]{1,16}\.(exe|dll|vbs|ps1|bat);60
 
 # Executable used by PlugX DLL side-loading in non-standard location
-(?i)\\CamMute\.exe;60;(?i)\\Lenovo\\Communication Utility\\
-(?i)\\chrome_frame_helper\.exe;60;(?i)\\Google\\Chrome\\application\\
-(?i)\\dvcemumanager\.exe;60;(?i)\\Microsoft Device Emulator\\
-(?i)\\Gadget\.exe;60;(?i)\\Windows Media Player\\
-(?i)\\hcc\.exe;60;(?i)\\HTML Help Workshop\\
-(?i)\\hkcmd\.exe;60;(?i)\\(System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE)\\
-(?i)\\Mc\.exe;60;(?i)\\([Mm]icrosoft [Vv]isual [Ss]tudio|Windows Kits|Microsoft SDK|microsoft sdk)
-(?i)\\MsMpEng\.exe;60;(?i)\\(Microsoft Security Client|Windows Defender|AntiMalware)
-(?i)\\msseces\.exe;60;(?i)\\Microsoft Security Center\\
-(?i)\\OInfoP11\.exe;60;(?i)(\\Common Files\\Microsoft Shared\\|\\Installer\\)
-(?i)\\OleView\.exe;60;(?i)\\(Microsoft SDK|Windows Kits|[Mm]icrosoft [Vv]isual [Ss]tudio|Windows Resocue Kit)
-(?i)\\rc\.exe;60;(?i)\\(Microsoft SDK|Windows Kits|[Mm]icrosoft [Vv]isual [Ss]tudio|Windows Resocue Kit|[Mm]icrosoft.[Nn][Ee][Tt])
+#(?i)\\CamMute\.exe;60;(?i)\\Lenovo\\Communication Utility\\
+#(?i)\\chrome_frame_helper\.exe;60;(?i)\\Google\\Chrome\\application\\
+#(?i)\\dvcemumanager\.exe;60;(?i)\\Microsoft Device Emulator\\
+#(?i)\\Gadget\.exe;60;(?i)\\Windows Media Player\\
+#(?i)\\hcc\.exe;60;(?i)\\HTML Help Workshop\\
+#(?i)\\hkcmd\.exe;60;(?i)\\(System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE)\\
+#(?i)\\Mc\.exe;60;(?i)\\([Mm]icrosoft [Vv]isual [Ss]tudio|Windows Kits|Microsoft SDK|microsoft sdk)
+#(?i)\\MsMpEng\.exe;60;(?i)\\(Microsoft Security Client|Windows Defender|AntiMalware)
+#(?i)\\msseces\.exe;60;(?i)\\Microsoft Security Center\\
+#(?i)\\OInfoP11\.exe;60;(?i)(\\Common Files\\Microsoft Shared\\|\\Installer\\)
+#(?i)\\OleView\.exe;60;(?i)\\(Microsoft SDK|Windows Kits|[Mm]icrosoft [Vv]isual [Ss]tudio|Windows Resocue Kit)
+#(?i)\\rc\.exe;60;(?i)\\(Microsoft SDK|Windows Kits|[Mm]icrosoft [Vv]isual [Ss]tudio|Windows Resocue Kit|[Mm]icrosoft.[Nn][Ee][Tt])
 
 #\\LOLWLauncher\.exe;40
 #\\fsstm\.exe;40
