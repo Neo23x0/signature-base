@@ -16,6 +16,7 @@ rule TeleDoor_Backdoor {
       date = "2017-07-05"
       hash1 = "d462966166450416d6addd3bfdf48590f8440dd80fc571a389023b7c860ca3ac"
       hash2 = "f9d6fe8bd8aca6528dec7eaa9f1aafbecde15fd61668182f2ba8a7fc2b9a6740"
+      hash3 = "2fd2863d711a1f18eeee5c7c82f2349c5d4e00465de9789da837fcdca4d00277"
    strings:
       /* Payload\x00AutoPayload */
       $c1 = { 50 61 79 6C 6F 61 64 00 41 75 74 6F 50 61 79 6C 6F 61 64 }
