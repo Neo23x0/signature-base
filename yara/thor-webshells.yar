@@ -1058,6 +1058,7 @@ rule webshell_jsp_k8cmd {
 	condition:
 		all of them
 }
+
 rule webshell_jsp_cmd {
 	meta:
 		description = "Web Shell - file cmd.jsp"
@@ -1070,6 +1071,7 @@ rule webshell_jsp_cmd {
 	condition:
 		all of them
 }
+
 rule webshell_jsp_k81 {
 	meta:
 		description = "Web Shell - file k81.jsp"
@@ -8749,6 +8751,6 @@ rule Wordpress_Config_Webshell_Preprend {
       uint32(0) == 0x68703f3c and filesize < 400KB and
       $x1 and
       all of ($s*) and
-      not $x1 in (0..1000) and 
+      not $x1 in (0..1000) and
       not 1 of ($fp*)
 }
