@@ -2613,7 +2613,6 @@ ystem32\\DumpExt\.dll;75
 \\se1\.jpg\.exe;50
 \\secret\.exe;50
 \\secure\.exe;50
-\\services\.exe;50
 \\sex\.exe;50
 \\sfsdf\.exe;50
 \\Skin\.exe;50
