@@ -2070,7 +2070,6 @@ ystem32\\lcsvsvc\.dll;80
 \\svchots\.exe;76
 \\suchost\.exe;76
 \\svchost\.\.exe;76
-\\rundll\.exe;76
 \\rundll64\.exe;76
 
 # Stuf running where it normally shouldn't
@@ -2100,7 +2099,6 @@ ystem32\\lcsvsvc\.dll;80
 \\Default User\\Application Data\\WinRAR;60
 
 # Known Bad / Dual use classics
-\\rexec\.exe;60
 \\xcmd\.exe;60
 \\servpw64;60
 \\quarks;60
@@ -2306,7 +2304,6 @@ ystem32\\DumpExt\.dll;75
 \\clearlog\.dll;50
 \\ClientX\.exe;50
 \\cloaked\.exe;50
-\\code\.exe;50
 \\com\.exe;50
 \\coockie\.exe;50
 \\Copy\.exe;50
@@ -2447,7 +2444,6 @@ ystem32\\DumpExt\.dll;75
 \\hitman\.exe;50
 \\HITMAN\.exe;50
 \\holgerdogz\.exe;50
-\\hostname\.exe;50
 \\hosts\.exe;50
 \\hosts\.exe;50
 \\hostsys\.exe;50
