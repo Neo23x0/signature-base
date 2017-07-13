@@ -3554,3 +3554,128 @@ rule Mimikatz_Gen_Strings {
    condition:
       ( uint16(0) == 0x5a4d and filesize < 12000KB and 1 of them )
 }
+
+/*
+   Yara Rule Set
+   Author: Florian Roth
+   Date: 2017-07-07
+   Identifier: 0day
+   Reference: Disclosed 0day Repos
+*/
+
+/* Rule Set ----------------------------------------------------------------- */
+
+rule Disclosed_0day_POCs_lpe {
+   meta:
+      description = "Detects POC code from disclosed 0day hacktool set"
+      author = "Florian Roth"
+      reference = "Disclosed 0day Repos"
+      date = "2017-07-07"
+      hash1 = "e10ee278f4c86d6ee1bd93a7ed71d4d59c0279381b00eb6153aedfb3a679c0b5"
+      hash2 = "a5916cefa0f50622a30c800e7f21df481d7a3e1e12083fef734296a22714d088"
+      hash3 = "5b701a5b5bbef7027711071cef2755e57984bfdff569fe99efec14a552d8ee43"
+   strings:
+      $x1 = "msiexec /f c:\\users\\%username%\\downloads\\" fullword ascii
+      $x2 = "c:\\users\\%username%\\downloads\\bat.bat" fullword ascii
+      $x3 = "\\payload.msi /quiet" ascii
+      $x4 = "\\payload2\\WindowsTrustedRTProxy.sys" fullword wide
+      $x5 = "\\payload2" fullword wide
+      $x6 = "\\payload" fullword wide
+      $x7 = "WindowsTrustedRTProxy.sys /grant:r administrators:RX" ascii
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 70KB and 1 of them )
+}
+
+rule Disclosed_0day_POCs_exploit {
+   meta:
+      description = "Detects POC code from disclosed 0day hacktool set"
+      author = "Florian Roth"
+      reference = "Disclosed 0day Repos"
+      date = "2017-07-07"
+      hash1 = "632d35a0bac27c9b2f3f485d43ebba818089cf72b3b8c4d2e87ce735b2e67d7e"
+   strings:
+      $x1 = "\\Release\\exploit.pdb" ascii
+      $x2 = "\\favorites\\stolendata.txt" fullword wide
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 200KB and 1 of them )
+}
+
+rule Disclosed_0day_POCs_InjectDll {
+   meta:
+      description = "Detects POC code from disclosed 0day hacktool set"
+      author = "Florian Roth"
+      reference = "Disclosed 0day Repos"
+      date = "2017-07-07"
+      hash1 = "173d3f78c9269f44d069afbd04a692f5ae42d5fdc9f44f074599ec91e8a29aa2"
+   strings:
+      $x1 = "\\Release\\InjectDll.pdb" fullword ascii
+      $x2 = "Specify -l to list all IE processes running in the current session" fullword ascii
+      $x3 = "Usage: InjectDll -l|pid PathToDll" fullword ascii
+      $x4 = "Injecting DLL: %ls into PID: %d" fullword ascii
+      $x5 = "Error adjusting privilege %d" fullword ascii
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 300KB and 1 of them )
+}
+
+rule Disclosed_0day_POCs_payload_MSI {
+   meta:
+      description = "Detects POC code from disclosed 0day hacktool set"
+      author = "Florian Roth"
+      reference = "Disclosed 0day Repos"
+      date = "2017-07-07"
+      hash1 = "a7c498a95850e186b7749a96004a98598f45faac2de9b93354ac93e627508a87"
+   strings:
+      $s1 = "WShell32.dll" fullword wide
+      $s2 = "Target empty, so account name translation begins on the local system." fullword wide
+      $s3 = "\\custact\\x86\\AICustAct.pdb" fullword ascii
+   condition:
+      ( uint16(0) == 0xcfd0 and filesize < 1000KB and all of them )
+}
+
+rule Disclosed_0day_POCs_injector {
+   meta:
+      description = "Detects POC code from disclosed 0day hacktool set"
+      author = "Florian Roth"
+      reference = "Disclosed 0day Repos"
+      date = "2017-07-07"
+      hash1 = "ba0e2119b2a6bad612e86662b643a404426a07444d476472a71452b7e9f94041"
+   strings:
+      $x1 = "\\Release\\injector.pdb" ascii
+      $x2 = "Cannot write the shellcode in the process memory, error: " fullword ascii
+      $x3 = "/s shellcode_file PID: shellcode injection." fullword ascii
+      $x4 = "/d dll_file PID: dll injection via LoadLibrary()." fullword ascii
+      $x5 = "/s shellcode_file PID" fullword ascii
+      $x6 = "Shellcode copied in memory: OK" fullword ascii
+      $x7 = "Usage of the injector. " fullword ascii
+      $x8 = "KO: cannot obtain the SeDebug privilege." fullword ascii
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 90KB and 1 of them ) or 3 of them
+}
+
+rule Disclosed_0day_POCs_lpe_2 {
+   meta:
+      description = "Detects POC code from disclosed 0day hacktool set"
+      author = "Florian Roth"
+      reference = "Disclosed 0day Repos"
+      date = "2017-07-07"
+      hash1 = "b4f3787a19b71c47bc4357a5a77ffb456e2f71fd858079d93e694a6a79f66533"
+   strings:
+      $s1 = "\\cmd.exe\" /k wusa c:\\users\\" ascii
+      $s2 = "D:\\gitpoc\\UAC\\src\\x64\\Release\\lpe.pdb" fullword ascii
+      $s3 = "Folder Created: " fullword wide
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 700KB and 2 of them )
+}
+
+rule Disclosed_0day_POCs_shellcodegenerator {
+   meta:
+      description = "Detects POC code from disclosed 0day hacktool set"
+      author = "Florian Roth"
+      reference = "Disclosed 0day Repos"
+      date = "2017-07-07"
+      hash1 = "55c4073bf8d38df7d392aebf9aed2304109d92229971ffac6e1c448986a87916"
+   strings:
+      $x1 = "\\Release\\shellcodegenerator.pdb" ascii
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 40KB and all of them )
+}
