@@ -2691,4 +2691,28 @@ ystem32\\DumpExt\.dll;75
 \\Youtube\.exe;50
 \\YoutubeInstaller\.exe;50
 
+# Malware sample https://goo.gl/FDwDTw
+AppData\\svchost\.exe;80
+
+# Malware sample https://goo.gl/CX3KaY
+\\DeviceSync\\m.exe;80
+
+# ClearSky - Winnti Analysis
+emp\\shell.exe;60
+\\video\(20170201\)_2\.exe;100
+\\video[\(\)_0-9]{8,10}\.exe;70
+\\COMSysAppLauncher\.exe;75
+\\715578187~\.exe;100
+\\[0-9]{8,9}~\.exe;60
+\\conf\.exe;40
+
+# Stuxnet https://www.symantec.com/security_response/writeup.jsp?docid=2010-071400-3123-99&tabid=2
+\\drivers\\mrxcls\.sys;65
+\\drivers\\mrxnet\.sys;65
+:\\Copy of Shortcut to\.lnk;65
+Windows\\inf\\oem6C\.PNF;65
+Windows\\inf\\oem7A\.PNF;65
+Windows\\inf\\mdmcpq3\.PNF;65
+Windows\\inf\\mdmeric3.\PNF ;65
+
 # End
