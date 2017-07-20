@@ -2877,12 +2877,12 @@ rule mimikatz
 		description		= "mimikatz"
 		author			= "Benjamin DELPY (gentilkiwi)"
 		tool_author		= "Benjamin DELPY (gentilkiwi)"
-      score          = 80
+
 	strings:
 		$exe_x86_1		= { 89 71 04 89 [0-3] 30 8d 04 bd }
-		$exe_x86_2		= { 89 79 04 89 [0-3] 38 8d 04 b5 }
+		$exe_x86_2		= { 8b 4d e? 8b 45 f4 89 75 e? 89 01 85 ff 74 }
 
-		$exe_x64_1		= { 4c 03 d8 49 [0-3] 8b 03 48 89 }
+		$exe_x64_1		= { 33 ff 4? 89 37 4? 8b f3 45 85 c? 74}
 		$exe_x64_2		= { 4c 8b df 49 [0-3] c1 e3 04 48 [0-3] 8b cb 4c 03 [0-3] d8 }
 
 		$dll_1			= { c7 0? 00 00 01 00 [4-14] c7 0? 01 00 00 00 }
@@ -2895,18 +2895,26 @@ rule mimikatz
 		(all of ($exe_x86_*)) or (all of ($exe_x64_*)) or (all of ($dll_*)) or (any of ($sys_*))
 }
 
-
 rule mimikatz_lsass_mdmp
 {
 	meta:
 		description		= "LSASS minidump file for mimikatz"
 		author			= "Benjamin DELPY (gentilkiwi)"
-
 	strings:
 		$lsass			= "System32\\lsass.exe"	wide nocase
-
 	condition:
 		(uint32(0) == 0x504d444d) and $lsass and filesize > 50000KB and not filename matches /^WER/
+}
+
+rule mimikatz_kirbi_ticket
+{
+	meta:
+		description		= "KiRBi ticket for mimikatz"
+		author			= "Benjamin DELPY (gentilkiwi)"
+	strings:
+		$asn1			= { 76 82 ?? ?? 30 82 ?? ?? a0 03 02 01 05 a1 03 02 01 16 }
+	condition:
+		$asn1 at 0
 }
 
 rule wce
@@ -2915,12 +2923,10 @@ rule wce
 		description		= "wce"
 		author			= "Benjamin DELPY (gentilkiwi)"
 		tool_author		= "Hernan Ochoa (hernano)"
-
 	strings:
 		$hex_legacy		= { 8b ff 55 8b ec 6a 00 ff 75 0c ff 75 08 e8 [0-3] 5d c2 08 00 }
 		$hex_x86		= { 8d 45 f0 50 8d 45 f8 50 8d 45 e8 50 6a 00 8d 45 fc 50 [0-8] 50 72 69 6d 61 72 79 00 }
 		$hex_x64		= { ff f3 48 83 ec 30 48 8b d9 48 8d 15 [0-16] 50 72 69 6d 61 72 79 00 }
-
 	condition:
 		any of them
 }
@@ -3678,4 +3684,18 @@ rule Disclosed_0day_POCs_shellcodegenerator {
       $x1 = "\\Release\\shellcodegenerator.pdb" ascii
    condition:
       ( uint16(0) == 0x5a4d and filesize < 40KB and all of them )
+}
+
+rule SecurityXploded_Producer_String {
+   meta:
+      description = "Detects hacktools by SecurityXploded"
+      author = "Florian Roth"
+      reference = "http://securityxploded.com/browser-password-dump.php"
+      date = "2017-07-13"
+      score = 60
+      hash1 = "d57847db5458acabc87daee6f30173348ac5956eb25e6b845636e25f5a56ac59"
+   strings:
+      $x1 = "http://securityxploded.com" fullword ascii
+   condition:
+      ( uint16(0) == 0x5a4d and all of them )
 }
