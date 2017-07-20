@@ -2149,7 +2149,7 @@ ystem32\\lcsvsvc\.dll;80
 #(?i)\\dvcemumanager\.exe;60;(?i)\\Microsoft Device Emulator\\
 #(?i)\\Gadget\.exe;60;(?i)\\Windows Media Player\\
 #(?i)\\hcc\.exe;60;(?i)\\HTML Help Workshop\\
-#(?i)\\hkcmd\.exe;60;(?i)\\(System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE)\\
+#\\hkcmd\.exe;60;(?i)\\(System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE)\\
 #(?i)\\Mc\.exe;60;(?i)\\([Mm]icrosoft [Vv]isual [Ss]tudio|Windows Kits|Microsoft SDK|microsoft sdk)
 #(?i)\\MsMpEng\.exe;60;(?i)\\(Microsoft Security Client|Windows Defender|AntiMalware)
 #(?i)\\msseces\.exe;60;(?i)\\Microsoft Security Center\\
@@ -2690,6 +2690,7 @@ ystem32\\DumpExt\.dll;75
 \\xwk32\.exe;50
 \\Youtube\.exe;50
 \\YoutubeInstaller\.exe;50
+\\mozilla\.exe;70
 
 # Malware sample https://goo.gl/FDwDTw
 AppData\\svchost\.exe;80

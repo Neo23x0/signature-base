@@ -7688,28 +7688,3 @@ e8f1252fecaa7caefa793110e4932c1d1bbece8d42160761247cbac48fe7648e;Waterbear IOCs 
 b3645409ee7374e7ae19eba9f30ddc019f8cd47cdf178b2fd32d1d1176f3678d;Waterbear IOCs https://goo.gl/L9g9eR
 a6bfb64885efd6a13f1f5b0a978fa3f20f55ce35e62395348ce25d98bed603c7;Waterbear IOCs https://goo.gl/L9g9eR
 8f907c0e90953acaa9b6f2d6fab517f05e7d475176a727ecc28cce0906cc2a17;Waterbear IOCs https://goo.gl/L9g9eR
-5909c1dcfb3270b2b057513561b2ab1613687a0af0072c51244ff005b113888b;Paranoid PlugX - https://goo.gl/eE3Stb - PlugX
-6804be0689bbfbb180bb384ebc316f50cb87e65553d0c3597d6e9b6b6dd8dd3f;Paranoid PlugX - https://goo.gl/eE3Stb - PlugX
-8ea275eee557037ab6626d15c0107bdcf20b45a8307a0dc3baa85d49acc94331;Paranoid PlugX - https://goo.gl/eE3Stb - PlugX
-e6020eb997715c4f627b6e6a16947861bce310aa31fcf58448a5beba11626d36;Paranoid PlugX - https://goo.gl/eE3Stb - PlugX
-4554aa6c2fdd58dfddebdb786c5d23cd6277025ab0355ffb5d8967c3976e8659;Paranoid PlugX - https://goo.gl/eE3Stb - PlugX
-3817388a983d5ee1604a8eec621b5eb251cb8bdeab9c8591fe5e8c90cd99ed49;Paranoid PlugX - https://goo.gl/eE3Stb - CVE-2017-0199
-45513f942b217def56a1eac82a4b5edca65ebdd5e36c7a8751bf0350d5ebea39;Paranoid PlugX - https://goo.gl/eE3Stb - CVE-2017-0199
-64d7d4846c5dd00a7271fe8a83aebe4317d06abad84d44ffd6f42b1004704bd5;Paranoid PlugX - https://goo.gl/eE3Stb - PlugX
-07d94726a1ae764fa5322531f29fe80f0246dd40b4d052c98f269987a3ee4515;Paranoid PlugX - https://goo.gl/eE3Stb - PowerShell PlugX
-4622f8357846f7a0bea3ce453bb068b443e21359203dfa2f74301c7a79a408c2;Paranoid PlugX - https://goo.gl/eE3Stb - Downloader for PS PlugX ++ MSI PlugX
-49baf12f50fec772fdfe56c49005efb306b72a312a7dbdad98066029a191bfaf;Paranoid PlugX - https://goo.gl/eE3Stb - CVE-2017-0199
-6e5864faf4312bf3787e79e432c1acacf2a699ecb5b797cac56e62ed0a8e965c;Paranoid PlugX - https://goo.gl/eE3Stb - Idicaf
-6b455714664a65e2a4af61b11d141467f4554e215e3ebd02e8f3876d8aa31954;Paranoid PlugX - https://goo.gl/eE3Stb - Idicaf
-df58962a3a065f1587f543a501d0e3f0ca05ebac51fc35d4bb4669d8eac9d8c1;Paranoid PlugX - https://goo.gl/eE3Stb - Idicaf
-52fee36c647ca799e21cd75db1f425ccf632b28c27e67b8578ff6dd30ca62af7;Paranoid PlugX - https://goo.gl/eE3Stb - Idicaf
-90e45c7b3798433199d6d917a4847a409dbdc101b210d9798f8c78ee43abf6d8;Paranoid PlugX - https://goo.gl/eE3Stb - Idicaf
-5ff788efd079eb2987b03d98e0c8211ac97ae6479274bade36a170b5a396f72b;Paranoid PlugX - https://goo.gl/eE3Stb - Idicaf
-535abe8cd436d6b635c5687db0ae8d47c7c3679e4f5e2b4d629276b41fca0578;Paranoid PlugX - https://goo.gl/eE3Stb - Idicaf
-ef85896426a0a558ab17346a67f108045d142a2d2a21f7702bfb8be50542726d;Paranoid PlugX - https://goo.gl/eE3Stb - Idicaf
-d41e2bbc8ea10dd7543d5f4cb02983e2b1ad5d47cc3ce5fa95189501c019fdac;Paranoid PlugX - https://goo.gl/eE3Stb - Idicaf
-208bd18054134909e2ad680c0096477c48a58e8754a9439002e6523f71e66d47;Paranoid PlugX - https://goo.gl/eE3Stb - PlugX
-3e9136f95fa55852993cd15b82fe6ec54f78f34584f7689b512a46f0a22907f2;Paranoid PlugX - https://goo.gl/eE3Stb - PlugX
-5deab61f83e9afe13a79930eda1bdcb6c867042a1ce0e5c44e4209a60ab3327d;Paranoid PlugX - https://goo.gl/eE3Stb - PlugX
-6500636c29eba70efd3eb3be1d094dfda4ec6cca52ace23d50e98e6b63308fdb;Paranoid PlugX - https://goo.gl/eE3Stb - PlugX
-8e07c7636be935e0a6184db8a85fd8b607e6c48bb07d34d0138432f7c697bc99;Paranoid PlugX - https://goo.gl/eE3Stb - PlugX
