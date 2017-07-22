@@ -2716,4 +2716,7 @@ Windows\\inf\\oem7A\.PNF;65
 Windows\\inf\\mdmcpq3\.PNF;65
 Windows\\inf\\mdmeric3.\PNF ;65
 
+# Ruler Hacktool IOC https://twitter.com/_staaldraad/status/879692824324780033
+\\AppData\\Local\\Microsoft\\FORMS\\IPM.Note.[a-z];60
+
 # End
