@@ -13,22 +13,11 @@ rule Invoke_Mimikatz {
 		author = "Florian Roth"
 		reference = "https://github.com/clymb3r/PowerShell/tree/master/Invoke-Mimikatz"
 		date = "2016-08-03"
+		hash1 = "f1a499c23305684b9b1310760b19885a472374a286e2f371596ab66b77f6ab67"
 	strings:
 		$x1 = "Invoke-Mimikatz" wide fullword
+		$x2 = "TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAEAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm" ascii
+      $x3 = "Write-BytesToMemory -Bytes $Shellcode1 -MemoryAddress $GetCommandLineWAddrTemp" fullword ascii
 	condition:
-      1 of them
-}
-
-rule Invoke_Mimikatz {
-   meta:
-      description = "Detects Mimikatz 2.1.1 component"
-      author = "Florian Roth"
-      reference = "https://github.com/gentilkiwi/mimikatz/releases"
-      date = "2017-07-19"
-      hash1 = "f1a499c23305684b9b1310760b19885a472374a286e2f371596ab66b77f6ab67"
-   strings:
-      $x1 = "TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAEAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm" ascii
-      $x2 = "Write-BytesToMemory -Bytes $Shellcode1 -MemoryAddress $GetCommandLineWAddrTemp" fullword ascii
-   condition:
       1 of them
 }
