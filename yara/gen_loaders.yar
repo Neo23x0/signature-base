@@ -11,13 +11,16 @@ import "pe"
 
 /* Rule Set ----------------------------------------------------------------- */
 
-rule Winnti_Malware_N_EAnalysis {
+rule ReflectiveLoader {
    meta:
-      description = "Detects a unspecified hack tool or malware using a reflective loader"
+      description = "Detects a unspecified hack tool, crack or malware using a reflective loader - no hard match - further investigation recommended"
       reference = "Internal Research"
       score = 60
+   strings:
+      $s1 = "ReflectiveLoader" fullword ascii
    condition:
       uint16(0) == 0x5a4d and (
+            $s1 or
             pe.exports("ReflectiveLoader")
          )
 }
