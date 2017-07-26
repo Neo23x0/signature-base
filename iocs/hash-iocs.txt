@@ -7688,3 +7688,23 @@ e8f1252fecaa7caefa793110e4932c1d1bbece8d42160761247cbac48fe7648e;Waterbear IOCs 
 b3645409ee7374e7ae19eba9f30ddc019f8cd47cdf178b2fd32d1d1176f3678d;Waterbear IOCs https://goo.gl/L9g9eR
 a6bfb64885efd6a13f1f5b0a978fa3f20f55ce35e62395348ce25d98bed603c7;Waterbear IOCs https://goo.gl/L9g9eR
 8f907c0e90953acaa9b6f2d6fab517f05e7d475176a727ecc28cce0906cc2a17;Waterbear IOCs https://goo.gl/L9g9eR
+04080fbab754dbf0c7529f8bbe661afef9c2cba74e3797428538ed5c243d705a;Tick - PaloAlto APT Report https://goo.gl/xnKTgt
+f8458a0711653071bf59a3153293771a6fb5d1de9af7ea814de58f473cba9d06;Tick - PaloAlto APT Report https://goo.gl/xnKTgt
+e8edde4519763bb6669ba99e33b4803a7655805b8c3475b49af0a49913577e51;Tick - PaloAlto APT Report https://goo.gl/xnKTgt
+21111136d523970e27833dd2db15d7c50803d8f6f4f377d4d9602ba9fbd355cd;Tick - PaloAlto APT Report https://goo.gl/xnKTgt
+9c7a34390e92d4551c26a3feb5b181757b3309995acd1f92e0f63f888aa89423;Tick - PaloAlto APT Report https://goo.gl/xnKTgt
+0df20ccd074b722d5fe1358b329c7bdebcd7e3902a1ca4ca8d5a98cc5ce4c287;Tick - PaloAlto APT Report https://goo.gl/xnKTgt
+e9574627349aeb7dd7f5b9f9c5ede7faa06511d7fdf98804526ca1b2e7ce127e;Tick - PaloAlto APT Report https://goo.gl/xnKTgt
+57e1d3122e6dc88d9eb2989f081de88a0e6864e767281d509ff58834928895fb;Tick - PaloAlto APT Report https://goo.gl/xnKTgt
+933d66b43b3ce9a572ee3127b255b4baf69d6fdd7cb24da609b52ee277baa76e;Tick - PaloAlto APT Report https://goo.gl/xnKTgt
+2bec20540d200758a223a7e8f7b2f98cd4949e106c1907d3f194216208c5b2fe;Tick - PaloAlto APT Report https://goo.gl/xnKTgt
+055fe8002de293401852310ae76cb730c570f2037c3c832a52a79b70e2cb7831;Tick - PaloAlto APT Report https://goo.gl/xnKTgt
+797d9c00022eaa2f86ddc9374f60d7ad92128ca07204b3e2fe791c08da9ce2b1;Tick - PaloAlto APT Report https://goo.gl/xnKTgt
+9374040a9e2f47f7037edaac19f21ff1ef6a999ff98c306504f89a37196074a2;Tick - PaloAlto APT Report https://goo.gl/xnKTgt
+26727d139b593486237b975e7bdf93a8148c52d5fb48d5fe540a634a16a6ba82;Tick - PaloAlto APT Report https://goo.gl/xnKTgt
+dfc8a6da93481e9dab767c8b42e2ffbcd08fb813123c91b723a6e6d70196636f;Tick - PaloAlto APT Report https://goo.gl/xnKTgt
+ce47e7827da145823a6f2b755975d1d2f5eda045b4c542c9b9d05544f3a9b974;Tick - PaloAlto APT Report https://goo.gl/xnKTgt
+e34f4a9c598ad3bb243cb39969fb9509427ff9c08e63e8811ad26b72af046f0c;Tick - PaloAlto APT Report https://goo.gl/xnKTgt
+8e5a0a5f733f62712b840e7f5051a2bd68508ea207e582a190c8947a06e26f40;Tick - PaloAlto APT Report https://goo.gl/xnKTgt
+7d70d659c421b50604ce3e0a1bf423ab7e54b9df361360933bac3bb852a31849;Tick - PaloAlto APT Report https://goo.gl/xnKTgt
+a624d2cd6dee3b6150df3ca61ee0f992e2d6b08b3107f5b00f8bf8bcfe07ebe7;Tick - PaloAlto APT Report https://goo.gl/xnKTgt
