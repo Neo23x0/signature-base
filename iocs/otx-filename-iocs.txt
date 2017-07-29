@@ -1,3 +1,19 @@
+dllhost\.dat;Petya Ransomware Fast Spreading Attack https://twitter.com/JoKe_42/status/879693258183647232 / https://twitter.com/crai
+C:\\WINDOWS\\tasksche\.exe;WannaCry Indicators https://ghostbin.com/paste/xgvdv / https://www.alienvault.com/blogs/labs-researc
+C:\\Windows\\mssecsvc\.exe;WannaCry Indicators https://ghostbin.com/paste/xgvdv / https://www.alienvault.com/blogs/labs-researc
+_DECRYPT_FILE\.html;Erebus Resurfaces as Linux Ransomware http://blog.trendmicro.com/trendlabs-security-intelligence/erebus-resurfaces-as-
+_DECRYPT_FILE\.txt;Erebus Resurfaces as Linux Ransomware http://blog.trendmicro.com/trendlabs-security-intelligence/erebus-resurfaces-as-
+/Users/_%User%_/Library/LaunchAgents/com\.apple\.Safari\.pac\.plist;OSX/Dok - OSX Malware http://blog.checkpoint.com/2017/04/27/osx-malware-catching-wants-read-https-traf
+/Users/_%User%_/Library/LaunchAgents/com\.apple\.Safari\.proxy\.plist;OSX/Dok - OSX Malware http://blog.checkpoint.com/2017/04/27/osx-malware-catching-wants-read-https-traf
+READ ME ABOUT DECRYPTION\.txt;Analyzing the Fileless, Code-injecting SOREBRECT Ransomware http://blog.trendmicro.com/trendlabs-security-intelligence/analyzing-fileless-co
+C:\\Flash player\\vlc\.exe;New Kasper samples https://www.hybrid-analysis.com/sample/6a48b5211b622ffe49ae4e32ada72bb4d9db40576
+C:\\WINDOWS\\tasksche\.exe;WannaCry Indicators 
+C:\\Windows\\mssecsvc\.exe;WannaCry Indicators 
+C:\\taskse\.exe;WannaCry Indicators 
+C:\\taskdl\.exe;WannaCry Indicators 
+C:\\m\.vbs;WannaCry Indicators 
+C:\\111\.exe;WannaCry Indicators 
+C:\\@WanaDecryptor@\.exe;WannaCry Indicators 
 %TEMP%\\AdobeARMM\.log;The Kittens Strike Back https://www.trendmicro.com/vinfo/us/security/news/cyber-attacks/rocket-kitten-co
 %TEMP%\\wlg\.dat;The Kittens Strike Back https://www.trendmicro.com/vinfo/us/security/news/cyber-attacks/rocket-kitten-co
 Message\.xlsb;The Kittens Strike Back https://www.trendmicro.com/vinfo/us/security/news/cyber-attacks/rocket-kitten-co
