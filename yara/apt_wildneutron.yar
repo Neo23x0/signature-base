@@ -161,16 +161,16 @@ rule WildNeutron_Sample_7 {
 		uint16(0) == 0x5a4d and filesize < 5000KB and all of them
 }
 
-rule WildNeutron_Sample_8 {
+rule subTee_nativecmd {
 	meta:
-		description = "Wild Neutron APT Sample Rule - file 758e6b519f6c0931ff93542b767524fc1eab589feb5cfc3854c77842f9785c92"
+		description = "NativeCmd - used by various threat groups"
 		author = "Florian Roth"
 		reference = "https://securelist.com/blog/research/71275/wild-neutron-economic-espionage-threat-actor-returns-with-new-tricks/"
 		date = "2015-07-10"
-		score = 60
+		score = 40
 		hash = "758e6b519f6c0931ff93542b767524fc1eab589feb5cfc3854c77842f9785c92"
 	strings:
-		$x1 = "RunFile: couldn't load SHELL32.DLL!" fullword ascii /* PEStudio Blacklist: strings */ /* score: '27.00' */
+		$x1 = "RunFile: couldn't load SHELL32.DLL!" ascii wide /* PEStudio Blacklist: strings */ /* score: '27.00' */
 		$x2 = "RunFile: couldn't find ShellExecuteExA/W in SHELL32.DLL!" fullword ascii /* PEStudio Blacklist: strings */ /* score: '35.00' */
 		$x3 = "Error executing CreateProcess()!!" fullword wide /* PEStudio Blacklist: strings */ /* score: '31.00' */
 		$x4 = "cmdcmdline" fullword wide /* score: '11.00' */
@@ -184,16 +184,14 @@ rule WildNeutron_Sample_8 {
 		$s6 = ".com;.exe;.bat;.cmd" fullword wide /* score: '15.00' */
 		$s7 = ") -%s-> %s (" fullword ascii /* score: '14.00' */
 		$s8 = "cmdextversion" fullword wide /* score: '14.00' */
-		$s9 = "Invalid pid (%s)" fullword wide /* PEStudio Blacklist: strings */ /* score: '13.00' */
 		$s10 = "\"%s\" /K %s" fullword wide /* score: '11.02' */
-		$s11 = "Error setting %s (%s)" fullword wide /* score: '11.00' */
 		$s12 = "DEBUG: Cannot allocate memory for ptrNextNode->ptrNext!" fullword ascii /* PEStudio Blacklist: strings */ /* score: '10.00' */
 		$s13 = "Failed to build full directory path" fullword wide /* score: '10.00' */
 		$s14 = "DEBUG: Cannot allocate memory for ptrFileArray!" fullword ascii /* PEStudio Blacklist: strings */ /* score: '9.00' */
 		$s15 = "%-8s %-3s  %*s %s  %s" fullword wide /* score: '8.00' */
 		$s16 = " %%%c in (%s) do " fullword wide /* score: '8.00' */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 1677KB and 2 of ($x*) and 6 of ($s*)
+		uint16(0) == 0x5a4d and ( 2 of ($x*) or 6 of ($s*) )
 }
 
 rule WildNeutron_Sample_9 {
