@@ -18,9 +18,10 @@ rule ReflectiveLoader {
       score = 60
    strings:
       $s1 = "ReflectiveLoader" fullword ascii
+      $s2 = "?ReflectiveLoader@@" ascii
    condition:
       uint16(0) == 0x5a4d and (
-            $s1 or
+            1 of them or
             pe.exports("ReflectiveLoader")
          )
 }
