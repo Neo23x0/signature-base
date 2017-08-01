@@ -38,6 +38,9 @@ rule Recon_Commands_Windows_Gen1 {
       $s18 = "wevtutil cl " ascii
       $s19 = "sc query type= service" ascii
       $s20 = "arp -a " ascii
+
+      $fp1 = "avdapp.dll" fullword wide
    condition:
       filesize < 1000KB and 4 of them
+      and not 1 of ($fp*)
 }
