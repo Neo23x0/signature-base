@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Neo23x0/signature-base.svg?branch=master)](https://travis-ci.org/Neo23x0/signature-base)
+
 # Signature-Base
 signature-base is a submodule for my scanner tools LOKI and SPARK
 
