@@ -7,3 +7,10 @@ install:
 
 script:
   - python ./build-rules.py
+
+notifications:
+  email:
+    recipients:
+      - venom14@gmail.com
+    on_success: always
+    on_failure: always
