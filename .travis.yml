@@ -7,6 +7,7 @@ install:
 
 script:
   - python ./build-rules.py
+  - make all
 
 notifications:
   email:
