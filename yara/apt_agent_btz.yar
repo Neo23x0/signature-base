@@ -24,6 +24,7 @@ rule Agent_BTZ_Proxy_DLL_1 {
       ( uint16(0) == 0x5a4d and filesize < 300KB and all of them and pe.exports("Entry") )
 }
 
+/*
 rule Agent_BTZ_Proxy_DLL_2 {
    meta:
       description = "Detects Agent-BTZ Proxy DLL - activeds.dll"
@@ -45,9 +46,9 @@ rule Agent_BTZ_Proxy_DLL_2 {
                3A E1 3A EC 3A F7 3A }
       $s2 = "activeds.dll" ascii fullword
    condition:
-      uint16(0) == 0x5a4d and filesize < 200KB and all of them and 
-         pe.imphash() == "09b7c73fbe5529e6de7137e3e8268b7b"
+      uint16(0) == 0x5a4d and filesize < 200KB and all of them and pe.imphash() == "09b7c73fbe5529e6de7137e3e8268b7b"
 }
+*/
 
 rule Agent_BTZ_Aug17 {
    meta:
