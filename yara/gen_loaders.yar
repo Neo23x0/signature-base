@@ -22,6 +22,7 @@ rule ReflectiveLoader {
    condition:
       uint16(0) == 0x5a4d and (
             1 of them or
-            pe.exports("ReflectiveLoader")
+            pe.exports("ReflectiveLoader") or
+            pe.exports("_ReflectiveLoader@4")
          )
 }
