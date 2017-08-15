@@ -1,0 +1,30 @@
+/*
+   Yara Rule Set
+   Author: Florian Roth
+   Date: 2017-08-15
+   Identifier: ShadowPad
+   Reference: https://securelist.com/shadowpad-in-corporate-networks/81432/
+*/
+
+/* Rule Set ----------------------------------------------------------------- */
+
+import "pe"
+
+rule ShadowPad_nssock2 {
+   meta:
+      description = "Detects malicious nssock2.dll from ShadowPad incident - file nssock2.dll"
+      author = "Florian Roth"
+      reference = "https://securelist.com/shadowpad-in-corporate-networks/81432/"
+      date = "2017-08-15"
+      hash1 = "462a02a8094e833fd456baf0a6d4e18bb7dab1a9f74d5f163a8334921a4ffde8"
+      hash2 = "c45116a22cf5695b618fcdf1002619e8544ba015d06b2e1dbf47982600c7545f"
+      hash3 = "696be784c67896b9239a8af0a167add72b1becd3ef98d03e99207a3d5734f6eb"
+      hash4 = "515d3110498d7b4fdb451ed60bb11cd6835fcff4780cb2b982ffd2740e1347a0"
+      hash5 = "536d7e3bd1c9e1c2fd8438ab75d6c29c921974560b47c71686714d12fb8e9882"
+      hash6 = "637fa40cf7dd0252c87140f7895768f42a370551c87c37a3a77aac00eb17d72e"
+   condition:
+      ( uint16(0) == 0x5a4d and
+        filesize < 500KB and
+        pe.imphash() == "c67de089f2009b21715744762fc484e8"
+      )
+}
