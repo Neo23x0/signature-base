@@ -22,7 +22,7 @@ prereq:
 	tar -xvzf $(3RD_PARTY)/src/*.tar.gz -C $(3RD_PARTY)/src
 	cd $(3RD_PARTY)/src/yara-$(YARA) ; \
 	./bootstrap.sh ; \
-	./configure --disable-shared --disable-magic --disable-cuckoo --without-crypto --prefix=$(3RD_PARTY)/yara ; \
+	./configure --disable-shared --disable-magic --disable-cuckoo --prefix=$(3RD_PARTY)/yara ; \
 	make ; \
 	make install
 
