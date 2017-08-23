@@ -25,6 +25,9 @@ rule ShadowPad_nssock2 {
    condition:
       ( uint16(0) == 0x5a4d and
         filesize < 500KB and
-        pe.imphash() == "c67de089f2009b21715744762fc484e8"
+        (
+           pe.imphash() == "c67de089f2009b21715744762fc484e8" or
+           pe.imphash() == "11522f7d4b2fc05acba8f534ca1b828a"
+        )
       )
 }
