@@ -3762,3 +3762,110 @@ rule Impacket_Keyword {
    condition:
       ( uint16(0) == 0x5a4d and filesize < 14000KB and 1 of them )
 }
+
+/*
+   Yara Rule Set
+   Author: Florian Roth
+   Date: 2017-08-27
+   Reference: PasswordPro
+*/
+
+/* Rule Set ----------------------------------------------------------------- */
+
+import "pe"
+
+rule PasswordsPro {
+   meta:
+      description = "Auto-generated rule - file PasswordsPro.exe"
+      author = "Florian Roth"
+      reference = "PasswordPro"
+      date = "2017-08-27"
+      hash1 = "5b3d6654e6d9dc49ee1136c0c8e8122cb0d284562447abfdc05dfe38c79f95bf"
+   strings:
+      $s1 = "No users marked for attack or all marked users already have passwords found!" fullword ascii
+      $s2 = "%s\\PasswordsPro.ini.Dictionaries(%d)" fullword ascii
+      $s3 = "Passwords processed since attack start:" fullword ascii
+   condition:
+      ( uint16(0) == 0x5a4d and
+        filesize < 2000KB and
+         1 of them
+      )
+}
+
+rule PasswordPro_NTLM_DLL {
+   meta:
+      description = "Auto-generated rule - file NTLM.dll"
+      author = "Florian Roth"
+      reference = "PasswordPro"
+      date = "2017-08-27"
+      hash1 = "47d4755d31bb96147e6230d8ea1ecc3065da8e557e8176435ccbcaea16fe50de"
+   strings:
+      $s1 = "NTLM.dll" fullword ascii
+      $s2 = "Algorithm: NTLM" fullword ascii
+   condition:
+      ( uint16(0) == 0x5a4d and
+        filesize < 20KB and
+        pe.exports("GetHash") and pe.exports("GetInfo") and
+        ( all of them )
+      )
+}
+
+/*
+   Yara Rule Set
+   Author: Florian Roth
+   Date: 2017-08-29
+   Identifier: KeeTheft
+   Reference: https://github.com/HarmJ0y/KeeThief
+*/
+
+/* Rule Set ----------------------------------------------------------------- */
+
+rule KeeThief_PS {
+   meta:
+      description = "Detects component of KeeTheft - KeePass dump tool - file KeeThief.ps1"
+      author = "Florian Roth"
+      reference = "https://github.com/HarmJ0y/KeeThief"
+      date = "2017-08-29"
+      hash1 = "a3b976279ded8e64b548c1d487212b46b03aaec02cb6e199ea620bd04b8de42f"
+   strings:
+      $x1 = "$WMIProcess = Get-WmiObject win32_process -Filter \"ProcessID = $($KeePassProcess.ID)\"" fullword ascii
+      $x2 = "if($KeePassProcess.FileVersion -match '^2\\.') {" fullword ascii
+   condition:
+      ( uint16(0) == 0x7223 and
+        filesize < 1000KB and
+        ( 1 of ($x*) )
+      )
+}
+
+rule KeeTheft_EXE {
+   meta:
+      description = "Detects component of KeeTheft - KeePass dump tool - file KeeTheft.exe"
+      author = "Florian Roth"
+      reference = "https://github.com/HarmJ0y/KeeThief"
+      date = "2017-08-29"
+      hash1 = "f06789c3e9fe93c165889799608e59dda6b10331b931601c2b5ae06ede41dc22"
+   strings:
+      $x1 = "Error: Could not create a thread for the shellcode" fullword wide
+      $x2 = "Could not find address marker in shellcode" fullword wide
+      $x3 = "GenerateDecryptionShellCode" fullword ascii
+      $x4 = "KeePassLib.Keys.KcpPassword" fullword wide
+      $x5 = "************ Found a CompositeKey! **********" fullword wide
+      $x6 = "*** Interesting... there are multiple .NET runtimes loaded in KeePass" fullword wide
+      $x7 = "GetKcpPasswordInfo" fullword ascii
+   condition:
+      ( uint16(0) == 0x5a4d and filesize < 200KB and 1 of them )
+}
+
+rule KeeTheft_Out_Shellcode {
+   meta:
+      description = "Detects component of KeeTheft - KeePass dump tool - file Out-Shellcode.ps1"
+      author = "Florian Roth"
+      reference = "https://github.com/HarmJ0y/KeeThief"
+      date = "2017-08-29"
+      hash1 = "2afb1c8c82363a0ae43cad9d448dd20bb7d2762aa5ed3672cd8e14dee568e16b"
+   strings:
+      $x1 = "Write-Host \"Shellcode length: 0x$(($ShellcodeLength + 1).ToString('X4'))\"" fullword ascii
+      $x2 = "$TextSectionInfo = @($MapContents | Where-Object { $_ -match '\\.text\\W+CODE' })[0]" fullword ascii
+   condition:
+      ( filesize < 2KB and 1 of them )
+}
