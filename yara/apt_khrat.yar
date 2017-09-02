@@ -23,7 +23,7 @@ rule KHRAT_Malware {
 
 rule MAL_KHRAT_script {
    meta:
-      description = "Auto-generated rule - file MAL_KHRAT_scritpt.js"
+      description = "Rule derived from KHRAT script but can match on other malicious scripts as well"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2017/08/unit42-updated-khrat-malware-used-in-cambodia-attacks/"
       date = "2017-08-31"
@@ -38,7 +38,7 @@ rule MAL_KHRAT_script {
 
 rule MAL_KHRAT_scritplet {
    meta:
-      description = "Auto-generated rule - file MAL_KHRAT_scritplet.sct"
+      description = "Rule derived from KHRAT scriptlet"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2017/08/unit42-updated-khrat-malware-used-in-cambodia-attacks/"
       date = "2017-08-31"
