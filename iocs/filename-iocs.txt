@@ -1939,7 +1939,6 @@ ystem32\\lcsvsvc\.dll;80
 \\runsna\.dll;80
 \\dragon\.exe;80
 \\dragon\.dll;80
-\\IPHLPAPI\.dll;80
 \\GeekBuddyRSP\.exe;80
 \\cif\.exe;80
 \\condition\.dat;80
@@ -2049,7 +2048,7 @@ ystem32\\lcsvsvc\.dll;80
 # THOR 3rd generation format - Regex;Score;FP Regex
 
 # Missplaced system files
-#([C-Zc-z]:|\\\\).{1,40}\\(svchost\.exe|lsass\.exe|lsm\.exe|services\.exe|smss\.exe|calc\.exe);65;(?i)(HKCR\\Applications|System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE|Sysnative|dllcache|WINXP|WINDOWS|i386|%system32%)\\
+#([C-Zc-z]:|\\\\).{1,40}\\(svchost\.exe|lsass\.exe|lsm\.exe|services\.exe|smss\.exe|calc\.exe)[^.\\]?;65;(?i)(HKCR\\Applications|System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE|Sysnative|dllcache|WINXP|WINDOWS|i386|%system32%)\\
 #([C-Zc-z]:|\\\\).{1,40}\\(msra\.exe|ctfmon\.exe|csrss\.exe|snmp\.exe|alg\.exe);65;(?i)(HKCR\\Applications|System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE|Sysnative|dllcache|WINXP|WINDOWS|i386|%system32%)\\
 #([C-Zc-z]:|\\\\).{1,40}\\(spoolsrv\.exe|winlogon\.exe|taskmgr\.exe|taskeng\.exe);65;(?i)(HKCR\\Applications|System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE|Sysnative|dllcache|WINXP|WINDOWS|i386|%system32%)\\
 #([C-Zc-z]:|\\\\).{1,40}\\mshta\.exe$;65;(?i)(HKCR\\Applications|System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE|dllcache|WINXP|WINDOWS|i386|windows|ie8|ie7|%system32%)\\
@@ -2057,7 +2056,7 @@ ystem32\\lcsvsvc\.dll;80
 #([C-Zc-z]:|\\\\).{1,40}\\explorer\.exe$;65;(?i)(HKCR\\Applications|winsxs|WinSxS|WINXP|WINDOWS|Windows|i386|WINXP|WINDOWS|Win2k|WINNT|Windows|windows|%SystemRoot%|%system32%)\\
 
 # Other missplaced stuff you probably want to be aware of
-#([C-Zc-z]:|\\\\).{1,40}\\(cmd|lsass|rundll|rundll32|net|net1|taskeng|conhost|powershell)\.exe;65;(?i)(HKCR\\Applications|System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE|dllcache|WINXP|WINDOWS|i386|anti-malware|%system32%)\\
+#([C-Zc-z]:|\\\\).{1,40}\\(cmd|lsass|rundll|rundll32|net|net1|taskeng|conhost|powershell)\.exe;65;(?i)(HKCR\\Applications|System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE|dllcache|WINXP|WINDOWS|i386|anti-malware|%system32%|activation_config)\\
 
 # Archivers on odd locations
 #\\rar(32|64)?\.exe;60;(?i)(\\WinRAR|\\wrar)
@@ -2121,7 +2120,7 @@ ystem32\\lcsvsvc\.dll;80
 \\[0-9]{1,10}\.vbs;60
 \\[a-zA-z][0-9]{1,10}\.vbs;60
 # Script in Windows Directory
-\\Windows\\[a-z]{1,10}\.(bat|vbs|ps1)$;60
+[Cc]:\\Windows\\[a-z]{1,10}\.(bat|vbs|ps1)$;60
 # Numeric Exe in System32 folder
 \\(Windows|system32)\\[0-9]{2,20}\.exe;60
 # Short exeuctable or script in system drive root
@@ -2155,7 +2154,6 @@ ystem32\\lcsvsvc\.dll;80
 #(?i)\\msseces\.exe;60;(?i)\\(Microsoft Security Center|Microsoft Security Client)\\
 #(?i)\\OInfoP11\.exe;60;(?i)(\\Common Files\\Microsoft Shared\\|\\Installer\\)
 #(?i)\\OleView\.exe;60;(?i)\\(Microsoft SDK|Windows Kits|[Mm]icrosoft [Vv]isual [Ss]tudio|Windows Resource Kit)
-#(?i)\\rc\.exe;60;(?i)\\(Microsoft SDK|Windows Kits|[Mm]icrosoft [Vv]isual [Ss]tudio|Windows Resocue Kit|[Mm]icrosoft.[Nn][Ee][Tt])
 
 #\\LOLWLauncher\.exe;40
 #\\fsstm\.exe;40
