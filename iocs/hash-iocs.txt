@@ -7845,3 +7845,7 @@ a1728f0355f1aa19a579a2021caed2ffdb105565;DCSO Vuln List https://goo.gl/t4FKT5 st
 284578903994f1cf7535683218509e5faf33aa9c;DCSO Vuln List https://goo.gl/t4FKT5 struts2-core-2.5-BETA2.jar vulnerable Struts Version See CVE-2017-5638 | CVE-2017-9791 | CVE-2017-9805
 db29785fcf6ae748569559b8b411cb1ee29baa45;DCSO Vuln List https://goo.gl/t4FKT5 struts2-core-2.5-BETA3.jar vulnerable Struts Version See CVE-2017-5638 | CVE-2017-9791 | CVE-2017-9805
 0df890fffc74366397e98ac5abfffca1610f28a2;DCSO Vuln List https://goo.gl/t4FKT5 struts2-core-2.5.jar vulnerable Struts Version See CVE-2017-5638 | CVE-2017-9791 | CVE-2017-9805
+
+1a4a5123d7b2c534cb3e3168f7032cf9ebf38b9a2a97226d0fdb7933cf6030ff;Malicious CCleaner Versions - http://blog.talosintelligence.com/2017/09/avast-distributes-malware.html
+6f7840c77f99049d788155c1351e1560b62b8ad18ad0e9adda8218b9f432f0a9;Malicious CCleaner Versions - http://blog.talosintelligence.com/2017/09/avast-distributes-malware.html
+36b36ee9515e0a60629d2c722b006b33e543dce1c8c2611053e0651a0bfdb2e9;Malicious CCleaner Versions - http://blog.talosintelligence.com/2017/09/avast-distributes-malware.html
