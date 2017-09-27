@@ -5031,9 +5031,12 @@ rule GIFCloaked_Webshell_A {
 		$s1 = "<%eval request"
 		$s2 = "<%eval(Request.Item["
 		$s3 = "LANGUAGE='VBScript'"
+
+		$fp1 = "<form name=\"social_form\""
 	condition:
 		( $magic at 0 ) and ( 1 of ($s*) )
 		and not filepath contains "AppData"
+		and not 1 of ($fp*)
 }
 
 rule PHP_Cloaked_Webshell_SuperFetchExec {

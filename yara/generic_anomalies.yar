@@ -54,22 +54,6 @@ rule Cloaked_as_JPG {
       not uint32be(0) == 0x89504E47 /* PNG Header */
 }
 
-rule GIFCloaked_Webshell {
-    meta:
-        description = "Detects a webshell that cloakes itself with GIF header(s) - Based on Dark Security Team Webshell"
-        author = "Florian Roth"
-        hash = "f1c95b13a71ca3629a0bb79601fcacf57cdfcf768806a71b26f2448f8c1d5d24"
-        score = 60
-    strings:
-        $s0 = "input type"
-        $s1 = "<%eval request"
-        $s2 = "<%eval(Request.Item["
-        $s3 = "LANGUAGE='VBScript'"
-    condition:
-        uint32be(0x00) == 0x47494638 // GIF Header
-        and ( 1 of ($s*) )
-}
-
 /*
     Yara Rule Set
     Author: Florian Roth
