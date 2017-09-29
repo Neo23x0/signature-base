@@ -300,7 +300,7 @@ rule APT_Cloaked_PsExec
 		$s1 = "Sysinternals PsExec" wide fullword
 	condition:
 		uint16(0) == 0x5a4d and $s0 and $s1
-		and not filename matches /^(psexec.exe|PSEXESVC.EXE)$/is
+		and not filename matches /(psexec.exe|PSEXESVC.EXE)$/is
 		and not filepath matches /RECYCLER\\S-1/
 }
 
