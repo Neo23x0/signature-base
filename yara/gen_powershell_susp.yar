@@ -55,7 +55,7 @@ rule Suspicious_PowerShell_WebDownload_1 {
    strings:
       $s1 = "System.Net.WebClient).DownloadString(\"http" ascii nocase
 		$s2 = "System.Net.WebClient).DownloadString('http" ascii nocase
-      
+
       $fp1 = "NuGet.exe" ascii fullword
    condition:
       1 of ($s*) and not 1 of ($fp*)
@@ -85,4 +85,51 @@ rule PowerShell_in_Word_Doc {
       $s2 = "BYPASS" fullword ascii nocase
    condition:
       ( uint16(0) == 0xcfd0 and filesize < 1000KB and all of them )
+}
+
+/*
+   Yara Rule Set
+   Author: Florian Roth
+   Date: 2017-09-30
+   Identifier: PowerShell with VBS and JS
+   Reference: Internal Research
+*/
+
+/* Rule Set ----------------------------------------------------------------- */
+
+rule Susp_PowerShell_Sep17_1 {
+   meta:
+      description = "Detects suspicious PowerShell script in combo with VBS or JS "
+      author = "Florian Roth"
+      reference = "Internal Research"
+      date = "2017-09-30"
+      score = 60
+      hash1 = "8e28521749165d2d48bfa1eac685c985ac15fc9ca5df177d4efadf9089395c56"
+   strings:
+      $x1 = "Process.Create(\"powershell.exe -nop -w hidden" fullword ascii nocase
+      $x2 = ".Run\"powershell.exe -nop -w hidden -c \"\"IEX " ascii
+
+      $s1 = "window.resizeTo 0,0" fullword ascii
+   condition:
+      ( filesize < 2KB and 1 of them )
+}
+
+rule Susp_PowerShell_Sep17_2 {
+   meta:
+      description = "Detects suspicious PowerShell script in combo with VBS or JS "
+      author = "Florian Roth"
+      reference = "Internal Research"
+      date = "2017-09-30"
+      hash1 = "e387f6c7a55b85e0675e3b91e41e5814f5d0ae740b92f26ddabda6d4f69a8ca8"
+   strings:
+      $x1 = ".Run \"powershell.exe -nop -w hidden -e " ascii
+      $x2 = "FileExists(path + \"\\..\\powershell.exe\")" fullword ascii
+      $x3 = "window.moveTo -4000, -4000" fullword ascii
+
+      $s1 = "= CreateObject(\"Wscript.Shell\")" fullword ascii
+   condition:
+      filesize < 20KB and (
+         ( uint16(0) == 0x733c and 1 of ($x*) )
+          or 2 of them
+      )
 }
