@@ -2721,4 +2721,10 @@ Windows\\inf\\mdmeric3\.PNF;65
 \\Microsoft\\Windows\\Themes\\termsvr32\.dll;70
 \\Microsoft\\Windows\\Themes\\pcasrc\.tlb;70
 
+# FreeMilk Campaign https://goo.gl/NyEioM
+\\Users\\Admin\\[^\\]{1,20}\.(vbs|exe|dll|ps1);50
+\\Users\\Administrator\\[^\\]{1,20}\.(vbs|exe|dll|ps1);50
+\\Temp\\wsatra\.tmp;65
+\\Rar0tmpExtra[0-9]{18}\.rtf;65
+
 # End
