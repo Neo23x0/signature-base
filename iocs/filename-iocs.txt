@@ -2186,11 +2186,11 @@ ystem32\\lcsvsvc\.dll;80
 \\haslo\.dat;80
 
 # Hidden Cobra https://www.us-cert.gov/ncas/alerts/TA17-164A
-(?i)C:\WINDOWS\SYSTEM32\CATROOT2\EDBCHK.LOG;75
-(?i)C:\WINDOWS\SYSTEM32\MIMEFILTER.XML;75
-(?i)C:\AWORK\CATROOT2;80
-(?i)C:\WINDOWS\SYSTEM32\CATROOT2\{12CD0A1D-4EA2-11D1-8608-00C04F-C295EF};65
-(?i)C:\WINDOWS\SYSTEM32\CATROOT2\{A750E6C3-38EE-17D5-85E5-10D03D-A378DE};65
+(?i)C:\\WINDOWS\\SYSTEM32\\CATROOT2\\EDBCHK\.LOG;75
+(?i)C:\\WINDOWS\\SYSTEM32\\MIMEFILTER\.XML;75
+(?i)C:\\AWORK\\CATROOT2;80
+(?i)C:\\WINDOWS\\SYSTEM32\\CATROOT2\\\{12CD0A1D-4EA2-11D1-8608-00C04F-C295EF\};65
+(?i)C:\\WINDOWS\\SYSTEM32\\CATROOT2\\\{A750E6C3-38EE-17D5-85E5-10D03D-A378DE\};65
 
 # JP CERT - Lateral Movement http://blog.jpcert.or.jp/2017/06/1-ae0d.html
 # PWDump Traces
@@ -2712,7 +2712,7 @@ emp\\shell.exe;60
 Windows\\inf\\oem6C\.PNF;65
 Windows\\inf\\oem7A\.PNF;65
 Windows\\inf\\mdmcpq3\.PNF;65
-Windows\\inf\\mdmeric3.\PNF ;65
+Windows\\inf\\mdmeric3\.PNF;65
 
 # Ruler Hacktool IOC https://twitter.com/_staaldraad/status/879692824324780033
 \\AppData\\Local\\Microsoft\\FORMS\\IPM.Note.[a-z];60
