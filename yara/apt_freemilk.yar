@@ -6,6 +6,8 @@
    Reference: https://researchcenter.paloaltonetworks.com/2017/10/unit42-freemilk-highly-targeted-spear-phishing-campaign/
 */
 
+import "pe"
+
 /* Rule Set ----------------------------------------------------------------- */
 
 rule FreeMilk_APT_Mal_1 {
