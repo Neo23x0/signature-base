@@ -1,3 +1,4 @@
+import "pe"
 
 rule CorkowDLL {
     meta:

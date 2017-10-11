@@ -1,3 +1,5 @@
+import "pe"
+
 rule BKDR_Snarasite_Oct17 {
    meta:
       description = "Auto-generated rule - file 36ba92cba23971ca9d16a0b4f45c853fd5b3108076464d5f2027b0f56054fd62"
