@@ -26,6 +26,12 @@ rule PowerShell_Case_Anomaly {
       $sn3 = "PowerShell" fullword ascii wide
       $sn4 = "POWERSHELL" fullword ascii wide
 
+      // PowerShell with \x19\x00\x00
+      $a1 = "wershell -e " nocase wide ascii
+      // expected casing
+      $an1 = "wershell -e " wide ascii
+      $an2 = "werShell -e " wide ascii
+
       // adding a keyword with a sufficent length and relevancy
       $k1 = "-noprofile" fullword nocase ascii wide
       // define normal cases
@@ -34,12 +40,14 @@ rule PowerShell_Case_Anomaly {
       $kn3 = "-noProfile" ascii wide
       $kn4 = "-NOPROFILE" ascii wide
    condition:
-      filesize < 800KB and
-      // find all 'powershell' occurances and ignore the expected cases
-      ( #s1 < 3 and #s1 > #sr1 ) or
-      ( $s1 and not 1 of ($sn*) ) or
-      // find all '-norpofile' occurances and ignore the expected cases
-      ( $k1 and not 1 of ($kn*) )
+      filesize < 800KB and (
+         // find all 'powershell' occurances and ignore the expected cases
+         ( #s1 < 3 and #sr1 > 0 and #s1 > #sr1 ) or
+         ( $s1 and not 1 of ($sn*) ) or
+         ( $a1 and not 1 of ($an*) ) or
+         // find all '-norpofile' occurances and ignore the expected cases
+         ( $k1 and not 1 of ($kn*) )
+      )
 }
 
 rule WScriptShell_Case_Anomaly {
