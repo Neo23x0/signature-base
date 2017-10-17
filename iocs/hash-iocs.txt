@@ -7871,3 +7871,12 @@ aba0b60f30e10a5549bfdd3f40b0bf54022d5f3ccadee887a66cd7f3b77b054c;Malicious CClea
 67c0180f4c38f9e74e778210770b025925f012abcb0b76fdf309c87890575328;Malicious CCleaner Versions - Internal Research
 99846b32310108cde5c4663cee14602302dc48ea36b06322c5d673659bf58b08;Malicious CCleaner Versions - Internal Research
 7300f024ddde53757209678d4b1a3ce15b31509d0dfa27feb650466d8a7139c1;Malicious CCleaner Versions - Internal Research
+
+d08f1211fe0138134e822e31a47ec5d4;FEIB Heist - BAE Report https://goo.gl/8LbqZ9
+b27881f59c8d8cc529fa80a58709db36;FEIB Heist - BAE Report https://goo.gl/8LbqZ9
+3c9e71400b72cc0213c9c3e4ab4df9df;FEIB Heist - BAE Report https://goo.gl/8LbqZ9
+0edbad9e6041d43f97c7369439a40138;FEIB Heist - BAE Report https://goo.gl/8LbqZ9
+97aaf130cfa251e5207ea74b2558293d;FEIB Heist - BAE Report https://goo.gl/8LbqZ9
+62217af0299d6e241778adb849fd2823;FEIB Heist - BAE Report https://goo.gl/8LbqZ9
+0dd7da89b7d1fe97e669f8b4156067c8;FEIB Heist - BAE Report https://goo.gl/8LbqZ9
+61075faba222f97d3367866793f0907b;FEIB Heist - BAE Report https://goo.gl/8LbqZ9
