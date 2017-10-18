@@ -6,6 +6,7 @@ rule PowerShell_Susp_Parameter_Combo {
       reference = "https://goo.gl/uAic1X"
       date = "2017-03-12"
       score = 60
+      type = "file"
    strings:
       /* Encoded Command */
       $a1 = " -enc " ascii nocase
