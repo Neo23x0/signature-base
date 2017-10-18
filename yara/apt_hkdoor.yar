@@ -10,7 +10,7 @@ import "pe"
 
 rule hkdoor_backdoor_dll {
    meta:
-      description = "Hacker’s Door Backdoor DLL"
+      description = "Hacker's Door Backdoor DLL"
       author = "Cylance Inc."
       reference = "https://www.cylance.com/en_us/blog/threat-spotlight-opening-hackers-door.html"
    strings:
@@ -50,7 +50,7 @@ rule hkdoor_backdoor {
 
 rule hkdoor_dropper {
    meta:
-      description = "Hacker’s Door Dropper"
+      description = "Hacker's Door Dropper"
       author = "Cylance Inc."
       reference = "https://www.cylance.com/en_us/blog/threat-spotlight-opening-hackers-door.html"
    strings:
@@ -75,7 +75,7 @@ rule hkdoor_dropper {
 
 rule hkdoor_driver {
    meta:
-      description = "Hacker’s Door Driver"
+      description = "Hacker's Door Driver"
    strings:
       $s1 = "ipfltdrv.sys" fullword ascii
       $s2 = "Patch Success." fullword ascii
