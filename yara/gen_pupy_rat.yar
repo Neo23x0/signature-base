@@ -38,7 +38,5 @@ rule Pupy_Backdoor {
    condition:
       ( ( uint16(0) == 0x457f or uint16(0) == 0x5a4d ) and filesize < 7000KB and 1 of them )
       or 3 of them
-      /* Activate with YARA 3.6
       or ( uint16(0) == 0x5a4d and pe.imphash() == "84a69bce2ff6d9f866b7ae63bd70b163" )
-      */
 }
