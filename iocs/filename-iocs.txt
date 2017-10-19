@@ -2744,4 +2744,14 @@ Windows\\inf\\mdmeric3\.PNF;65
 \\[Ww]indows\\[Tt]emp\\Exchange\.aspx;60
 \\[Ww]indows\\[Tt]emp\\MicrosoftUpdate\.exe;60
 
+# HKDoor Filename IOCs https://goo.gl/KmgtGL
+C:\\system.txt;40
+ystem32\\pifngr\.dll;70
+ystem32\\pifmgr\.exe;70
+ystem32\\drivers\\kifesEn\.sys;70
+ystem32\\drivers\\kifes\.sys;70
+\\acluiw\.dll;60
+\\cryptuit\.dll;60
+\\hkdoordll\.dll;100
+
 # End
