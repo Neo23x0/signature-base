@@ -2730,4 +2730,18 @@ Windows\\inf\\mdmeric3\.PNF;65
 # FEIB Heist - BAE Report https://goo.gl/8LbqZ9
 \\bitsran\.exe;80
 
+# OilRig Reports https://goo.gl/2DauVi
+\\mom64\.exe;60
+\\Mom64\.exe;60
+\\i64\.exe;45
+\\S64\.exe;40
+\\s64\.exe;40
+\\z64\.exe;40
+\\O64\.exe;40
+\\HTTPParser\.dll;40
+
+# OilRig Report https://goo.gl/oxZm9T
+\\[Ww]indows\\[Tt]emp\\Exchange\.aspx;60
+\\[Ww]indows\\[Tt]emp\\MicrosoftUpdate\.exe;60
+
 # End
