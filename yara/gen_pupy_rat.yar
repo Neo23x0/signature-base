@@ -8,7 +8,7 @@
 
 /* Rule Set ----------------------------------------------------------------- */
 
-/* import "pe" */
+import "pe"
 
 rule Pupy_Backdoor {
    meta:
