@@ -7882,3 +7882,65 @@ b27881f59c8d8cc529fa80a58709db36;FEIB Heist - BAE Report https://goo.gl/8LbqZ9
 61075faba222f97d3367866793f0907b;FEIB Heist - BAE Report https://goo.gl/8LbqZ9
 
 4a49135d2ecc07085a8b7c5925a36c0a;Black Oasis IOC https://goo.gl/jhJWRp
+
+04738CA02F59A5CD394998A99FCD9613;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - s.exe
+A07AA521E7CAFB360294E56969EDA5D6;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - d.js
+2C641A9348F1E0CCF9F38EE17F41B2DA;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - Document.lnk
+3B6C3DF08E99B40148548E96CD1AC872;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - n.zip
+7DBFA8CBB39192FFE2A930FC5258D4C1;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - SD.bat
+61E2679CD208E0A421ADC4940662C583;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - list.txt
+5DBEF7BDDAF50624E840CCBCE2816594;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - Inveigh-Relay.ps1
+AA905A3508D9309A93AD5C0EC26EBC9B;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - Inveigh.ps1
+61C909D2F625223DB2FB858BBDF42A76;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - svcsrv.bat
+8943E71A8C73B5E343AA9D2E19002373;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - ntdll.exe
+C3DC68E8D734968432C5DD5F6DB444C7;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - notepad.exe.lnk
+12620D0CBCDFBDB04D01A18BBD497B8A;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - SETROUTE.lnk
+BA756DD64C1147515BA2298B6A760260;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - (unknown)
+8A39BFE18D912DBCC940D05D692EFEB9;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - ASREPRoast.ps1
+3CC0D3A05CD0CEF8294506F37A0B8A00;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - calc.exe
+B6CA04CC59805E2680D77A71D9D7BD2F;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - dit.bat
+451CE41809508B7F88A24CABA884926C;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - Get-GPPPassword.ps1
+2C9095C965A55EFC46E16B86F9B7D6C6;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - global.aspx
+765FCD7588B1D94008975C4627C8FEB6;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - inst.exe
+1CAA374B5A53E34E161C59D18CE6FDFF;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - install.bat
+40D3D8795559A556A8897EC6E003FC91;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - Invoke-Kerberoast.ps1
+C34CB67845A88F1A9C22CEAAD46F584B;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - mk64.zip
+C1A030EA830A12A32E84A012DFB1679B;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - ms.ps1
+661CC9179A724C41E6712CE3F5AEADFD;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - PowerView.ps1
+901FD9AEEACA9631902BCCD6BDD89F74;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - pps.bat
+1CE20B4E7A561F0AC5C6C515975B70A5;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - pps.exe
+DB07E1740152E09610EA826655D27E8D;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - scr.exe
+ACDB6D5C1D8C3F5E3C29C3605BFFCF18;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - t.exe
+619528E52A31D1D348ACB2077E2FC240;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - upd.bat
+722154A36F32BA10E98020A8AD758A7A;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - CV Controls Engineer.docx
+243511A51088D57E6DF08D5EF52D5499;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - CV Control Engeneer.docx
+277256F905D7CB07CDCD096CECC27E76;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - CV Jon Patrick.docx
+4909DB36F71106379832C8CA57BA5BE8;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - Controls Engineer.docx
+4E4E9AAC289F1C55E50227E2DE66463B;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - Controls Engineer.docx
+5C6A887A91B18289A70BDD29CC86EBDB;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - High R-Value Energy.docx
+6C3C58F168E883AF1294BBCEA33B03E6;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - CV_Jon_Patrick.docx
+78E90308FF107CE38089DFF16A929431;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - CV Jon Patrick.docx
+90514DEE65CAF923E829F1E0094D2585;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - CV_Jon_Patrick.docx
+C1529353E33FD3C0D2802BB558414F11;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - Build Hydroelectric Turbine.docx
+CDA0B7FBDBDCEF1777657182A504283D;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - Resume_Key_And_Personal.docx
+DDE2A6AC540643E2428976B778C43D39;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - CV_Jon_Patrick.docx
+E9A906082DF6383AA8D5DE60F6EF830E;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - CV_Jon_Patrick.docx
+038A97B4E2F37F34B255F0643E49FC9D;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - Controls Engineer (2).docx
+31008DE622CA9526F5F4A1DD3F16F4EA;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - Controls Engineer (4).docx
+5ACC56C93C5BA1318DD2FA9C3509D60B;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - Controls Engineer (7).docx
+65A1A73253F04354886F375B59550B46;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - Controls Engineer (3).docx
+8341E48A6B91750D99A8295C97FD55D5;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - Controls Engineer (5).docx
+99AA0D0ECEEFCE4C0856532181B449B1;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - Controls Engineer (8).docx
+A6D36749EEBBBC51B552E5803ED1FD58;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - 	Controls Engineeer.docx
+3C432A21CFD05F976AF8C47A007928F7;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - Report03-23-2017.docx
+34A11F3D68FD6CDEF04B6DF17BBE8F4D;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - corp_rules(2016).docx
+141E78D16456A072C9697454FC6D5F58;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - corp_rules(2016).docx
+BFA54CCC770DCCE8FD4929B7C1176470;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - invite.docx
+848775BAB0801E5BB15B33FA4FCA573C;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - Controls  Engineer.docx
+8F64E917FEBEA4AB178F7D21A7E220FE;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - x.txt
+8FF4DC8A2EBFD5EEA11A38877BD4F2DF;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - ~1171694.dll
+5C5C2C06DECA8212EB71D2CC7F0D23E9;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - mozilla.exe
+7EAE5684E4B4BF44E36F2810C86FCD33;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - s.txt.lnk
+e29d1f5d79cd906f75c88177c7f6168e;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - ''Document.pdf
+12499311682e914b703a8669ce05fa4d;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - symantec_help.jsp
+bcf823eeee02967b49b764e22319c79f;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A - enu.cmd

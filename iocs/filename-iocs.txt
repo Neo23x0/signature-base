@@ -2754,4 +2754,28 @@ ystem32\\drivers\\kifes\.sys;70
 \\cryptuit\.dll;60
 \\hkdoordll\.dll;100
 
+# US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
+\\SD\.bat;50
+\\Inveigh-Relay\.ps1;70
+\\Inveigh\.ps1;70
+\\svcsrv\.bat;70
+\\ntdll\.exe;50
+\\SETROUTE\.lnk;70
+\\ASREPRoast\.ps1;70
+\\Get-GPPPassword\.ps1;70
+\\Invoke-Kerberoast\.ps1;70
+\\mk64\.zip;50
+\\ms\.ps1;50
+\\PowerView\.ps1;70
+\\pps\.bat;50
+\\pps\.exe;50
+\\scr\.exe;70
+\\upd\.bat;50
+\\~1171694\.dll;70
+\\mozilla\.exe;70
+\\httpconf\.aspx;50
+\\zervit32;70
+\\Chromex64\.exe;50
+\\enu\.cmd;70
+
 # End

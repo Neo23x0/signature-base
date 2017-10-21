@@ -94,3 +94,30 @@ hackqz.f3322.org;Threat actors leverage EternalBlue exploit to deliver non-Wanna
 bj6po.a1free9bird.com;Threat actors leverage EternalBlue exploit to deliver non-WannaCry payloads https://goo.gl/OOB3mH
 
 89.45.67.107;Black Oasis IOC https://goo.gl/jhJWRp
+
+cfemedia.com;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
+grand-central.net;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
+oilandgaseng.com;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
+plantengineering.com;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
+cfemedia.gcnpublishing.com;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
+controleng.com;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
+130.25.10.158;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
+167.114.44.147;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
+176.53.11.130;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
+184.154.150.66;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
+187.130.251.249;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
+193.213.49.115;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
+195.87.199.197;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
+2.229.10.193;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
+41.205.61.221;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
+41.78.157.34;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
+5.150.143.107;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
+5.153.58.45;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
+62.8.193.206;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
+82.222.188.18;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
+91.183.104.150;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
+85.25.100.104;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
+96.126.116.217;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
+203.113.4.230;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
+149.210.156.198;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
+151.80.163.14;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
