@@ -5,11 +5,8 @@
    Identifier: TA17-293A
    Reference: https://www.us-cert.gov/ncas/alerts/TA17-293A
 
-   Beware: Rules have been modified by Florian Roth to reduce complexity, improve performance
-                 and reduce false positives.
-
-    Note: I added rules that I've derived from samples and others from the contents of the
-          PDF reports
+   Beware: Rules have been modified to reduce complexity and false positives as well as to 
+           improve the overall performance
 */
 
 import "pe"
@@ -41,7 +38,7 @@ rule TA17_293A_malware_1 {
         $ax5 = "/ame_icon.png"
         $ax6 = "/1/ree_stat/p"
 
-        /* Probably too many false positives with these strings
+        /* Too many false positives with these strings
         $au1 = "/icon.png"
         $au2 = "/notepad.png"
         $au3 = "/pic.png"
