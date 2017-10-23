@@ -2776,4 +2776,9 @@ ystem32\\drivers\\kifes\.sys;70
 \\Chromex64\.exe;50
 \\enu\.cmd;70
 
+# Sofacy Campaign http://blog.talosintelligence.com/2017/10/cyber-conflict-decoy-document.html
+\\AppData\\netwf\.dll;80
+\\AppData\\netwf\.bat;80
+\\Conference_on_Cyber_Conflict\.doc;80
+
 # End
