@@ -138,7 +138,7 @@ rule EQGRP_bc_genpkt {
 		$s3 = "binding file %s to %s: %s symbol `%s' [%s]" fullword ascii
 		$s4 = "randomize the initiator cookie" fullword ascii
 	condition:
-		uint16(0) == 0x457f and filesize < 1000KB and ( 1 of ($s*) and 3 of them )
+		uint16(0) == 0x457f and filesize < 1000KB and ( 1 of ($x*) and 3 of them )
 }
 
 rule EQGRP_dn_1_0_2_1 {
