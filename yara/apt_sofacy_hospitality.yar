@@ -1,3 +1,4 @@
+import "pe"
 
 rule APT28_HospitalityMalware_document {
    meta:
