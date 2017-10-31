@@ -1,3 +1,5 @@
+import "pe"
+
 /*
    Yara Rule Set
    Author: Florian Roth
