@@ -1,3 +1,10 @@
+C:\\ProgramData\\ManagerApp\\d3d9\.dll;BlackOasis APT and new targeted attacks leveraging zero-day exploit - Securelist https://securelist.com/blackoasis-apt-and-new-targeted-attacks-leveraging-zero-d
+C:\\ProgramData\\ManagerApp\\msvcr90\.dll;BlackOasis APT and new targeted attacks leveraging zero-day exploit - Securelist https://securelist.com/blackoasis-apt-and-new-targeted-attacks-leveraging-zero-d
+C:\\ProgramData\\ManagerApp\\install\.cab;BlackOasis APT and new targeted attacks leveraging zero-day exploit - Securelist https://securelist.com/blackoasis-apt-and-new-targeted-attacks-leveraging-zero-d
+C:\\ProgramData\\ManagerApp\\15b937\.cab;BlackOasis APT and new targeted attacks leveraging zero-day exploit - Securelist https://securelist.com/blackoasis-apt-and-new-targeted-attacks-leveraging-zero-d
+C:\\ProgramData\\ManagerApp\\AdapterTroubleshooter\.exe;BlackOasis APT and new targeted attacks leveraging zero-day exploit - Securelist https://securelist.com/blackoasis-apt-and-new-targeted-attacks-leveraging-zero-d
+%AppData%\\Local\\Temp\\bootloader\.dec;RTF Exploit Installs Italian RAT: uWarrior http://researchcenter.paloaltonetworks.com/2015/08/rtf-exploit-installs-italian-
+%AppData%\\Roaming\\warriors\.dat;RTF Exploit Installs Italian RAT: uWarrior http://researchcenter.paloaltonetworks.com/2015/08/rtf-exploit-installs-italian-
 dllhost\.dat;Petya Ransomware Fast Spreading Attack https://twitter.com/JoKe_42/status/879693258183647232 / https://twitter.com/crai
 C:\\WINDOWS\\tasksche\.exe;WannaCry Indicators https://ghostbin.com/paste/xgvdv / https://www.alienvault.com/blogs/labs-researc
 C:\\Windows\\mssecsvc\.exe;WannaCry Indicators https://ghostbin.com/paste/xgvdv / https://www.alienvault.com/blogs/labs-researc
@@ -85,8 +92,6 @@ C:\\Windows\\System32\\VDWFP\.sys;Superfish https://filippo.io/Badfish/ / https:
 C:\\Windows\\System32\\VDWFP64\.sys;Superfish https://filippo.io/Badfish/ / https://support.lenovo.com/us/en/product_security/
 C:\\Windows\\SysWOW64\\DWFP\.sys;Superfish https://filippo.io/Badfish/ / https://support.lenovo.com/us/en/product_security/
 C:\\Windows\\SysWOW64\\DWFP64\.sys;Superfish https://filippo.io/Badfish/ / https://support.lenovo.com/us/en/product_security/
-%AppData%\\Local\\Temp\\bootloader\.dec;RTF Exploit Installs Italian RAT: uWarrior http://researchcenter.paloaltonetworks.com/2015/08/rtf-exploit-installs-italian-
-%AppData%\\Roaming\\warriors\.dat;RTF Exploit Installs Italian RAT: uWarrior http://researchcenter.paloaltonetworks.com/2015/08/rtf-exploit-installs-italian-
 /Users/Shared/start\.sh;OS X / Wirelurker (OS X) / dropped by start.sh / c2 domain / c2 hostname / v2 update url / initial
 /Resources/start\.sh;OS X / Wirelurker (OS X) / dropped by start.sh / c2 domain / c2 hostname / v2 update url / initial
 /Resources/FontMap1\.cfg;OS X / Wirelurker (OS X) / dropped by start.sh / c2 domain / c2 hostname / v2 update url / initial
