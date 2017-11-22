@@ -8788,7 +8788,7 @@ rule PAS_Webshell_Encoded {
 
 rule ALFA_SHELL {
    meta:
-      description = "Detects web shell often used by Iraian APT groups"
+      description = "Detects web shell often used by Iranian APT groups"
       author = "Florian Roth"
       reference = "Internal Research - APT33"
       date = "2017-09-21"
