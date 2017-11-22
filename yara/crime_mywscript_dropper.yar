@@ -2,14 +2,14 @@
    Yara Rule Set
    Author: Florian Roth
    Date: 2017-07-27
-   Identifier: MyWScript Dropper
+   Identifier: MyWScript
 */
 
 /* Rule Set ----------------------------------------------------------------- */
 
-rule Dropper_MyWScript {
+rule MyWScript_CompiledScript {
    meta:
-      description = "Detects malicious Dropper generated with Script2Exe - file UPDATE.EXE"
+      description = "Detects a scripte with default name Mywscript compiled with Script2Exe (can also be a McAfee tool https://community.mcafee.com/docs/DOC-4124)"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-07-27"
