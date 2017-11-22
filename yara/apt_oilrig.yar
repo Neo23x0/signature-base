@@ -165,3 +165,24 @@ rule OilRig_Malware_Campaign_Mal3 {
    condition:
       ( filesize < 10KB and 1 of them )
 }
+
+rule OilRig_Malware_Nov17_13 {
+   meta:
+      description = ""
+      author = "Florian Roth"
+      reference = "https://twitter.com/ClearskySec/status/933280188733018113"
+      date = "2017-11-22"
+      hash1 = "4f1e2df85c538875a7da877719555e21c33a558ac121eb715cf4e779d77ab445"
+   strings:
+      $x1 = "\\Release\\dnscat2.pdb" ascii
+      $x2 = "cscript.exe //T:20 //Nologo " fullword ascii
+
+      $a1 = "taskkill /F /IM cscript.exe" fullword ascii
+      $a2 = "cmd.exe /c " fullword ascii
+   condition:
+      uint16(0) == 0x5a4d and filesize < 3000KB and (
+        pe.imphash() == "0160250adfc97f9d4a12dd067323ec61" or
+        1 of ($x*) or
+        all of ($a*)
+      )
+}
