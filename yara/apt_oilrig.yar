@@ -5,6 +5,8 @@
    Identifier: OilRig Malware Campaign
 */
 
+import "pe"
+
 /* Rule Set ----------------------------------------------------------------- */
 
 rule OilRig_Malware_Campaign_Gen1 {
