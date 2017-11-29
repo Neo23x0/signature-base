@@ -2781,4 +2781,7 @@ ystem32\\drivers\\kifes\.sys;70
 \\AppData\\netwf\.bat;80
 \\Conference_on_Cyber_Conflict\.doc;80
 
+# ROKRAT http://blog.talosintelligence.com/2017/11/ROKRAT-Reloaded.html
+\\ProgramData\\HncModuleUpdate\.exe;100
+
 # End
