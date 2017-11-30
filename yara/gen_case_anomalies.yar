@@ -25,6 +25,7 @@ rule PowerShell_Case_Anomaly {
       $sn2 = "Powershell" fullword ascii wide
       $sn3 = "PowerShell" fullword ascii wide
       $sn4 = "POWERSHELL" fullword ascii wide
+      $sn5 = "powerShell" fullword ascii wide
 
       // PowerShell with \x19\x00\x00
       $a1 = "wershell -e " nocase wide ascii
