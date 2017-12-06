@@ -101,3 +101,19 @@ rule Suspicious_JS_script_content {
       ( filesize < 10KB and 1 of them )
 }
 
+rule Universal_Exploit_Strings {
+   meta:
+      description = "Detects a group of strings often used in exploit codes"
+      author = "Florian Roth"
+      reference = "not set"
+      date = "2017-12-02"
+      score = 50
+      hash1 = "9b07dacf8a45218ede6d64327c38478640ff17d0f1e525bd392c002e49fe3629"
+   strings:
+      $s1 = "Exploit" fullword ascii
+      $s2 = "Payload" fullword ascii
+      $s3 = "CVE-201" ascii
+      $s4 = "bindshell"
+   condition:
+      ( filesize < 2KB and 3 of them )
+}
