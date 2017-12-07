@@ -1901,8 +1901,7 @@ fdp\.exe;60
 \\Temp\\obedience\.exe;80
 \\AppData\\Local\\Temp\\starburn\.dll;80
 \\RedLeaves\.exe;75
-\\PerfLogs\\[^\\]{1,20}\.(exe|dll|vbs|ps1);60
-\\Recovery\\[^\\]{1,20}\.(exe|dll|vbs|ps1);60
+\\PerfLogs\\[^\\]{1,20}\.(exe|vbs|ps1);60
 \\wmi\.dll\.bak;80
 \\rund1132\.exe;80
 \\consl64\.exe;60
