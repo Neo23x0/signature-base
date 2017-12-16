@@ -82,7 +82,7 @@ class MISPReceiver():
         value = value.encode('unicode_escape')
         # Debug
         if self.debugon:
-            print "{0} = {1}".format(ioc_type, value)
+            print("{0} = {1}".format(ioc_type, value))
         # C2s
         if ioc_type in ('hostname', 'ip-dst', 'domain'):
             if value == '127.0.0.1':
@@ -112,7 +112,7 @@ class MISPReceiver():
 
     def add_yara_rule(self, yara_rule, uuid, info):
         identifier = generate_identifier(info)
-        self.yara_rules[identifier] = ur'%s' % repair_yara_rule(yara_rule.decode('string_escape'), uuid)
+        self.yara_rules[identifier] = r'%s' % repair_yara_rule(yara_rule.decode('string_escape'), uuid)
 
     def write_iocs(self, output_path, output_path_yara):
         # Write C2 IOCs
@@ -130,7 +130,7 @@ class MISPReceiver():
             for yara_rule in self.yara_rules:
                 output_rule_filename = os.path.join(output_path_yara, "%s.yar" % yara_rule)
                 self.write_yara_rule(output_rule_filename, self.yara_rules[yara_rule])
-            print "{0} YARA rules written to directory {1}".format(len(self.yara_rules), output_path_yara)
+            print("{0} YARA rules written to directory {1}".format(len(self.yara_rules), output_path_yara))
 
     def write_file(self, ioc_file, iocs, ioc_type):
         with open(ioc_file, 'w') as file:
@@ -138,12 +138,12 @@ class MISPReceiver():
                 file.write("{0}{1}description\n".format(ioc_type, self.separator))
             for ioc in iocs:
                 file.write("{0}{2}{1}\n".format(ioc,iocs[ioc],self.separator))
-        print "{0} IOCs written to file {1}".format(len(iocs), ioc_file)
+        print("{0} IOCs written to file {1}".format(len(iocs), ioc_file))
 
     def write_yara_rule(self, yara_file, yara_rule):
         # Write the YARA rule
         with io.open(yara_file, 'wb') as fh:
-            fh.write(ur'%s' % yara_rule)
+            fh.write(r'%s' % yara_rule)
 
 
 def generate_identifier(string):
@@ -184,7 +184,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     if len(args.k) != 40:
-        print "Set an API key in script or via -k APIKEY."
+        print("Set an API key in script or via -k APIKEY.")
         sys.exit(0)
 
     # Create a receiver
