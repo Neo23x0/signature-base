@@ -38,6 +38,9 @@ Message\.xlsb;The Kittens Strike Back https://www.trendmicro.com/vinfo/us/securi
 YOUR_FILES_ARE_LOCKED\.txt;.CryptoHasYou. Ransomware http://www.nyxbone.com/malware/CryptoHasYou.html
 Bewerbungsmappe_gepackt\.exe;Petrya Ransomware http://www.heise.de/newsticker/meldung/Erpressungs-Trojaner-Petya-riegelt-den-ge
 Bewerbungsmappe\-gepackt\.exe;Petrya Ransomware http://www.heise.de/newsticker/meldung/Erpressungs-Trojaner-Petya-riegelt-den-ge
+delfiletype\.exe;Samas Ransomware https://blogs.technet.microsoft.com/mmpc/2016/03/17/no-mas-samas-whats-in-this-r
+sqlsrvtmg1\.exe;Samas Ransomware https://blogs.technet.microsoft.com/mmpc/2016/03/17/no-mas-samas-whats-in-this-r
+encrypted\.RSA;Samas Ransomware https://blogs.technet.microsoft.com/mmpc/2016/03/17/no-mas-samas-whats-in-this-r
 \\this\.morning\.rar;Operation Arid Viper Slithers Back into View https://www.proofpoint.com/us/threat-insight/post/Operation-Arid-Viper-Slithers-
 \\this\.morning\.exe;Operation Arid Viper Slithers Back into View https://www.proofpoint.com/us/threat-insight/post/Operation-Arid-Viper-Slithers-
 C:\\Program Files\\Realtek\\AudRTx86\.dll;Operation Arid Viper Slithers Back into View https://www.proofpoint.com/us/threat-insight/post/Operation-Arid-Viper-Slithers-
