@@ -41,9 +41,8 @@ strings:
 	$a11="ork error" ascii fullword
 
 condition:
-
-	((any of ($a*)))
-
+	// Change from "any of them" to 3 of them due to false positives with Nvidia drivers
+	3 of ($a*)
 }
 
 
