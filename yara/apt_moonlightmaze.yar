@@ -41,8 +41,8 @@ strings:
 	$a11="ork error" ascii fullword
 
 condition:
-	// Change from "any of them" to 3 of them due to false positives with Nvidia drivers
-	3 of ($a*)
+	// Added filesize due to false positives with Nvidia drivers in process memory
+	filesize < 5000KB and 3 of ($a*)
 }
 
 
