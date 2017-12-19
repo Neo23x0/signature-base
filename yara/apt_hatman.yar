@@ -8,10 +8,13 @@
 
 /* Globally only look at small files. */
 
+/* Disabled global rule to avoid applying this rule to the full concatenated
+   rule set
 private global rule hatman_filesize : hatman {
     condition:
         filesize < 100KB
 }
+*/
 
 /* Private rules that are used at the end in the public rules. */
 
