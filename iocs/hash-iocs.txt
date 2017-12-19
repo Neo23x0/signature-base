@@ -8070,3 +8070,13 @@ f09fb9a79bab6a927297e536594027016da7d7ab13e124c76a05889ec107ad02;Lazarus Group -
 3d481d166f27b48f103db39fda3845dfc962addd44e92e3187e0ddd1ee01c741;Lazarus Group - http://www.intezer.com/blockbusted-lazarus-blockbuster-north-korea/
 1d195c40169cbdb0f50eca40ebda62321aa05a54137635c7ebb2960690eb1d82;Lazarus Group - http://www.intezer.com/blockbusted-lazarus-blockbuster-north-korea/
 de13155f4a4cb1af04539883545151905ad4496ea6ef34cb22e50831f7caa38a;Lazarus Group - http://www.intezer.com/blockbusted-lazarus-blockbuster-north-korea/
+
+e8542c07b2af63ee7e72ce5d97d91036c5da56e2b091aa2afe737b224305d230;Triton ICS malware - trilog.exe - https://goo.gl/vtQoCQ
+08c34c6ac9186b61d9f29a77ef5e618067e0bc9fe85cab1ad25dc6049c376949;Triton ICS malware - imain.bin - https://goo.gl/vtQoCQ
+5fc4b0076eac7aa7815302b0c3158076e3569086c4c6aa2f71cd258238440d14;Triton ICS malware - inject.bin - https://goo.gl/vtQoCQ
+bef59b9a3e00a14956e0cd4a1f3e7524448cbe5d3cc1295d95a15b83a3579c59;Triton ICS malware - library.zip - https://goo.gl/vtQoCQ
+2c1d3d0a9c6f76726994b88589219cb8d9c39dd9924bc8d2d02bf41d955fe326;Triton ICS malware - TS_cnames.pyc - https://goo.gl/vtQoCQ
+1a2ab4df156ccd685f795baee7df49f8e701f271d3e5676b507112e30ce03c42;Triton ICS malware - TsBase.pyc - https://goo.gl/vtQoCQ
+758598370c3b84c6fbb452e3d7119f700f970ed566171e879d3cb41102154272;Triton ICS malware - TsHi.pyc - https://goo.gl/vtQoCQ
+5c776a33568f4c16fee7140c249c0d2b1e0798a96c7a01bfd2d5684e58c9bb32;Triton ICS malware - TsLow.pyc - https://goo.gl/vtQoCQ
+c96ed56bf7ee85a4398cc43a98b4db86d3da311c619f17c8540ae424ca6546e1;Triton ICS malware - sh.pyc - https://goo.gl/vtQoCQ
