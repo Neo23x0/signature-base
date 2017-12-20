@@ -72,6 +72,7 @@ E9;SYS
 EB;SYS
 
 # Special
+5B 30 30 30 30 30 30 30 30 3A;MimiLSA Log
 # --- Removed ---
 
 # APT
