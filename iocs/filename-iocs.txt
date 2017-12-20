@@ -2783,4 +2783,7 @@ ystem32\\drivers\\kifes\.sys;70
 # ROKRAT http://blog.talosintelligence.com/2017/11/ROKRAT-Reloaded.html
 \\ProgramData\\HncModuleUpdate\.exe;100
 
+# Mimikatz https://adsecurity.org/?page_id=1821#MISCMemSSP
+\\mimilsa\.log;100
+
 # End
