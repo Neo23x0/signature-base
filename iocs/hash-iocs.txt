@@ -8119,3 +8119,11 @@ b265a5d984c4654ac0b25ddcf8048d0aabc28e36d3e2439d1c08468842857f46;Lazarus Group H
 99ad06cca4910c62e8d6b68801c6122137cf8458083bb58cbc767eebc220180d;Lazarus Group Hashes - Proofpoint Report - https://goo.gl/8U6fY2
 f7f2dd674532056c0d67ef1fb7c8ae8dd0484768604b551ee9b6c4405008fe6b;Lazarus Group Hashes - Proofpoint Report - https://goo.gl/8U6fY2
 d844777dcafcde8622b9472b6cd442c50c3747579868a53a505ef2f5a4f0e26a;Lazarus Group Hashes - Proofpoint Report - https://goo.gl/8U6fY2
+
+0137F688436C468D43B3E50878EC1A1F;Hidden Cobra Incident - https://www.us-cert.gov/HIDDEN-COBRA-North-Korean-Malicious-Cyber-Activity
+114D8DB4843748D79861B49343C8B7CA;Hidden Cobra Incident - https://www.us-cert.gov/HIDDEN-COBRA-North-Korean-Malicious-Cyber-Activity
+2950E3741D7AF69E0CA0C5013ABC4209;Hidden Cobra Incident - https://www.us-cert.gov/HIDDEN-COBRA-North-Korean-Malicious-Cyber-Activity
+964B291AD9BAFA471DA3F80FB262DBE7;Hidden Cobra Incident - https://www.us-cert.gov/HIDDEN-COBRA-North-Korean-Malicious-Cyber-Activity
+9E4D9EDB07C348B10863D89B6BB08141;Hidden Cobra Incident - https://www.us-cert.gov/HIDDEN-COBRA-North-Korean-Malicious-Cyber-Activity
+C74E289AD927E81D2A1A56BC73E394AB;Hidden Cobra Incident - https://www.us-cert.gov/HIDDEN-COBRA-North-Korean-Malicious-Cyber-Activity
+FC9E40100D8DFAE2DF0F30A3414F50EC;Hidden Cobra Incident - https://www.us-cert.gov/HIDDEN-COBRA-North-Korean-Malicious-Cyber-Activity
