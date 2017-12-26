@@ -335,7 +335,6 @@ strings:
 	$c2_20 = "Hamiltion.catholicmmb.com" ascii
 	$c2_21 = "a.wubangtu.info" ascii
 	$c2_22 = "a1.suibian2010.info" ascii
-	$c2_23 = "ab.4pu.com" ascii
 	$c2_24 = "abc.wikaba.com" ascii
 	$c2_25 = "abcd120719.6600.org" ascii
 	$c2_26 = "abcd120807.3322.org" ascii
@@ -375,7 +374,6 @@ strings:
 	$c2_60 = "army.xxuz.com" ascii
 	$c2_61 = "art.p6p6.net" ascii
 	$c2_62 = "asfzx.x24hr.com" ascii
-	$c2_63 = "av.ddns.us" ascii
 	$c2_64 = "availab.wikaba.com" ascii
 	$c2_65 = "availability.justdied.com" ascii
 	$c2_66 = "ba.my03.com" ascii
@@ -438,8 +436,6 @@ strings:
 	$c2_123 = "contractus.qpoe.com" ascii
 	$c2_124 = "contractus.zzux.com" ascii
 	$c2_125 = "coreck.suayay.com" ascii
-	$c2_126 = "cpu.4pu.com" ascii
-	$c2_127 = "cs.lflink.com" ascii
 	$c2_128 = "ctdl.windowsupdate.itsaol.com" ascii
 	$c2_129 = "ctdl.windowsupdate.nsatcdns.com" ascii
 	$c2_130 = "ctldl.appledownload.ourhobby.com" ascii
@@ -481,7 +477,6 @@ strings:
 	$c2_166 = "disruptive.https443.net" ascii
 	$c2_167 = "dlmix.ourdvs.com" ascii
 	$c2_168 = "dnspoddwg.authorizeddns.org" ascii
-	$c2_169 = "do.ddns.ms" ascii
 	$c2_170 = "document.methoder.com" ascii
 	$c2_171 = "document.shenajou.com" ascii
 	$c2_172 = "domainnow.yourtrap.com" ascii
@@ -797,7 +792,6 @@ strings:
 	$c2_482 = "ibmmsg.strangled.net" ascii
 	$c2_483 = "icfeds.cf" ascii
 	$c2_484 = "idpmus.hostport9.net" ascii
-	$c2_485 = "ijica.in" ascii
 	$c2_486 = "im.suibian2010.info" ascii
 	$c2_487 = "image.websago.info" ascii
 	$c2_488 = "images.itunesmusic.jkub.com" ascii
@@ -819,7 +813,6 @@ strings:
 	$c2_504 = "inspgon.re26.com" ascii
 	$c2_505 = "interpreter.shenajou.com" ascii
 	$c2_506 = "invoices.sexxxy.biz" ascii
-	$c2_507 = "io.jkub.com" ascii
 	$c2_508 = "iphone.vizvaz.com" ascii
 	$c2_509 = "ipv4.applemusic.itemdb.com" ascii
 	$c2_510 = "ipv4.itunesmusic.jkub.com" ascii
@@ -1240,12 +1233,9 @@ strings:
 	$c2_925 = "veryhuai.info" ascii
 	$c2_926 = "video.vmdnsup.org" ascii
 	$c2_927 = "vmdnsup.org" ascii
-	$c2_928 = "vmmini.com" ascii
 	$c2_929 = "vmyiersend.WEBSAGO.INFO" ascii
 	$c2_930 = "vmyisan.website0012.net" ascii
-	$c2_931 = "vscue.com" ascii
 	$c2_932 = "wchildress.com" ascii
-	$c2_933 = "wcwname.com" ascii
 	$c2_934 = "wcxh.mynetav.net" ascii
 	$c2_935 = "wdsupdates.com" ascii
 	$c2_936 = "webbooting.com" ascii
@@ -1678,7 +1668,6 @@ strings:
 	$c2_1363 = "za.myftp.info" ascii
 	$c2_1364 = "zabbix.servercontrols.pw" ascii
 	$c2_1365 = "zaigawebinfo.rebatesrule.net" ascii
-	$c2_1366 = "zccw.cc" ascii
 	$c2_1367 = "zebra.UsFfUnicef.com" ascii
 	$c2_1368 = "zebra.bdoncloud.com" ascii
 	$c2_1369 = "zebra.incloud-go.com" ascii
