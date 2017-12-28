@@ -3952,3 +3952,18 @@ rule Sig_RemoteAdmin_1 {
    condition:
       uint16(0) == 0x5a4d and filesize < 3000KB and 1 of them
 }
+
+rule RemCom_RemoteCommandExecution {
+   meta:
+      description = "Detects strings from RemCom tool"
+      author = "Florian Roth"
+      reference = "https://goo.gl/tezXZt"
+      date = "2017-12-28"
+      score = 55
+   strings:
+      $ = "\\\\.\\pipe\\%s%s%d"
+      $ = "%s\\pipe\\%s%s%d%s"
+      $ = "\\ADMIN$\\System32\\%s%s"
+   condition:
+      1 of them
+}
