@@ -22,5 +22,5 @@ rule merlinAgent {
 		$s4 = "\tPlatform: %s"
 		$s5 = "\tUser GUID: %s"
 	condition:
-		1 or ($x*) or 4 of them
+		1 of ($x*) or 4 of them
 }
