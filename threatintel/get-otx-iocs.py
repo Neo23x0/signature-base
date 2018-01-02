@@ -26,8 +26,10 @@ import argparse
 
 OTX_KEY = ''
 
-HASH_WHITELIST = ['e617348b8947f28e2a280dd93c75a6ad', '125da188e26bd119ce8cad7eeb1fc2dfa147ad47',
-                  '06f7826c2862d184a49e3672c0aa6097b11e7771a4bf613ec37941236c1a8e20']
+HASH_WHITELIST = ['e617348b8947f28e2a280dd93c75a6ad',
+                  '125da188e26bd119ce8cad7eeb1fc2dfa147ad47',
+                  '06f7826c2862d184a49e3672c0aa6097b11e7771a4bf613ec37941236c1a8e20',
+                  'd378bffb70923139d6a4f546864aa61c']
 DOMAIN_WHITELIST = ['proofpoint.com']
 
 
@@ -88,7 +90,7 @@ class OTXReceiver():
                         if indicator["type"] in ('FileHash-MD5', 'FileHash-SHA1', 'FileHash-SHA256'):
 
                             # Whitelisting
-                            if indicator["indicator"] in HASH_WHITELIST:
+                            if indicator["indicator"].lower() in HASH_WHITELIST:
                                 raise WhiteListedIOC
 
                             hash = indicator["indicator"]
