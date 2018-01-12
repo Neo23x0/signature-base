@@ -26,10 +26,12 @@ import argparse
 
 OTX_KEY = ''
 
+# Hashes that are often included in pulses but are false positives
 HASH_WHITELIST = ['e617348b8947f28e2a280dd93c75a6ad',
                   '125da188e26bd119ce8cad7eeb1fc2dfa147ad47',
                   '06f7826c2862d184a49e3672c0aa6097b11e7771a4bf613ec37941236c1a8e20',
-                  'd378bffb70923139d6a4f546864aa61c']
+                  'd378bffb70923139d6a4f546864aa61c',
+                  '8094af5ee310714caebccaeee7769ffb08048503ba478b879edfef5f1a24fefe']
 DOMAIN_WHITELIST = ['proofpoint.com']
 
 
