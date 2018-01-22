@@ -1825,7 +1825,6 @@ Temp\\rad[A-F0-9]{5}\.exe;70
 \\ntfrsutil\.exe;60
 \\routeman\.exe;60
 \\ntnw\.exe;60
-\\clean\.exe;60
 \\findfile\.exe;60
 \\ntdsutl\.exe;60
 \\rrasrv\.exe;60

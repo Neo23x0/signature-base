@@ -40,6 +40,7 @@ rule PowerShell_Case_Anomaly {
       $kn2 = "-NoProfile" ascii wide
       $kn3 = "-noProfile" ascii wide
       $kn4 = "-NOPROFILE" ascii wide
+      $kn5 = "-Noprofile" ascii wide
    condition:
       filesize < 800KB and (
          // find all 'powershell' occurances and ignore the expected cases
