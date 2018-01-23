@@ -8126,3 +8126,30 @@ d844777dcafcde8622b9472b6cd442c50c3747579868a53a505ef2f5a4f0e26a;Lazarus Group H
 9E4D9EDB07C348B10863D89B6BB08141;Hidden Cobra Incident - https://www.us-cert.gov/HIDDEN-COBRA-North-Korean-Malicious-Cyber-Activity
 C74E289AD927E81D2A1A56BC73E394AB;Hidden Cobra Incident - https://www.us-cert.gov/HIDDEN-COBRA-North-Korean-Malicious-Cyber-Activity
 FC9E40100D8DFAE2DF0F30A3414F50EC;Hidden Cobra Incident - https://www.us-cert.gov/HIDDEN-COBRA-North-Korean-Malicious-Cyber-Activity
+
+ce583821191345274cd954b2db7da9742c239fe413fc17dcb97ffdd7b51cb072;Dark Caracal - MS Windows HtmlHelp Data
+ba4e063472a2559b4baa82d5272304a1cdae6968145c5ef221295c90e88458e2;Dark Caracal - PE32 executable (DLL) (GUI) Intel 80386
+26419a0b6e033cdcb7bf4ca6b0b24fda35490cc6f2796682fb9403620f63d428;Dark Caracal - PE32 executable (GUI) Intel 80386
+15af5bbf3c8d5e5db41fd7c3d722e8b247b40f2da747d5c334f7fd80b715a649;Dark Caracal - Zip archive data
+22eee43887e94997f9f9786092ffd3a9b51f059924cba678cf7b62cfafa65b28;Dark Caracal - PE32 executable (GUI) Intel 80386
+fcf8f9566868d65d901fd6db9a8d6decacb860f5595f84a6a878193eda11549d;Dark Caracal - PDF document, version 1.6
+f2178146741f91923c7d3e2442bd08605ed5a0927736e8cfdea00c055b2c6284;Dark Caracal - PDF document, version 1.6
+6b6d363d653785f420dcc1a23c9d9b8b76b8647209b52562b774c793dc0e3f6b;Dark Caracal - data
+a3ae05a134b30b8c8869d0acd65ed5bca160988b404c146a325f2399b9c1a243;Dark Caracal - PE32 executable (DLL) (GUI) Intel 80386
+e5eeb0a46dac58b171ebcefec60e9ff351fc7279d95892c6f48f799a1a364215;Dark Caracal - Composite Document File V2 Document
+400bca713ba1def9cdbc0e84fc97447db2fa3d12b1c5ef352ef985b7787b6ca4;Dark Caracal - Microsoft Word 2007+
+5e0d061531071e53b3b993e06ce20dae6389a7e9eba5d7887399de48e2f2d278;Dark Caracal - Composite Document File V2
+f9f2e632535b214a0fab376b32cbee1cab6507490c22ba9e12cfa417ed8d72bb;Dark Caracal - MS-DOS executable
+bf600e7b27bdd9e396e5c396aba7f079c244bfb92ee45c721c2294aa36586206;Dark Caracal - PE32 executable (GUI)
+da81aec00b563123d2fbd14fb6a76619c90f81e83c5bd8aa0676922cae96b9ad;Dark Caracal - PE32 executable (GUI) Intel 80386
+9cf3d3c0b790cebeacb8cb577cd346a6513b1b74fa120aff8984aa022301562e;Dark Caracal - PE32 executable (DLL) (GUI) Intel 80386
+091ae8d5649c4e040d25550f2cdf7f1ddfc9c698e672318eb1ab6303aa1cf85b;Dark Caracal - PE32 executable (GUI) Intel 80386
+a91c2cad20935a85d6eed72ef663254396914811f043018732d29276424a9578;Dark Caracal - PE32 executable (GUI) Intel 80386
+b6ac374f79860ae99736aaa190cce5922a969ab060d7ae367dbfa094bfe4777d;Dark Caracal - PE32 executable (GUI) Intel 80386
+ed97719c008422925ae21ff34448a8c35ee270a428b0478e24669396761d0790;Dark Caracal - PE32 executable (GUI) Intel 80386
+5c1622cabf21672a8a5379ce8d0ee0ba6d5bc137657f3779faa694fcc4bb3988;Dark Caracal - PE32 executable (GUI) Intel 80386
+86f1bbda3ebf03a0f0a79d7bd1db68598ace9465f5cebb7f66773f8a818b4e8b;Dark Caracal - PE32 executable (DLL) (GUI) Intel 80386
+675c3d96070dc9a0e437f3e1b653b90dbc6700b0ec57379d4139e65f7d2799cd;Dark Caracal - PE32 executable (DLL) (GUI) Intel 80386
+ed25b0c20b1c1b271a511a1266fe3967ab851aaa9f793bdf4f3d19de1dcf6532;Dark Caracal - PE32 executable (GUI) Intel 80386
+f581a75a0f8f8eb200a283437bed48f30ae9d5616e94f64acfd93c12fcef987a;Dark Caracal - PE32 executable (GUI) Intel 80386
+d57701321f2f13585a02fc8ba6cbf1f2f094764bfa067eb73c0101060289b0ba;Dark Caracal - PE32 executable (GUI) Intel 80386
