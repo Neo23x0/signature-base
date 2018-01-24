@@ -178,7 +178,7 @@ def initialize_yara_rules():
                         except Exception, e:
                             logging.error("Error in YARA rule: %s" % yaraRuleFile)
                             traceback.print_exc()
-                            continue
+                            sys.exit(1)
 
                         # Encrypted
                         if extension == ".yar":
