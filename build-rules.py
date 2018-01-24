@@ -16,10 +16,10 @@ def walk_error(err):
     try:
         if "Error 3" in str(err):
             logging.error(removeNonAsciiDrop(str(err)))
-            print "Directory walk error"
+            print("Directory walk error")
             sys.exit(1)
-    except UnicodeError, e:
-        print "Unicode decode error in walk error message"
+    except UnicodeError as e:
+        print("Unicode decode error in walk error message")
         sys.exit(1)
 
 
@@ -29,7 +29,7 @@ def removeNonAsciiDrop(string):
         # Generate a new string without disturbing characters
         nonascii = "".join(i for i in string if ord(i)<127 and ord(i)>31)
 
-    except Exception, e:
+    except Exception as e:
         traceback.print_exc()
         pass
     return nonascii
@@ -131,12 +131,12 @@ def initialize_filename_iocs():
                             # Create dictionary with IOC data
                             fioc = {'regex': re.compile(regex), 'score': score, 'description': desc, 'regex_fp': regex_fp_comp}
 
-                        except Exception, e:
+                        except Exception as e:
                             traceback.print_exc()
                             logging.error("Error reading line: %s" % line)
                             sys.exit(1)
 
-    except Exception, e:
+    except Exception as e:
         traceback.print_exc()
         logging.error("Error reading File IOC file: %s" % ioc_filename)
         sys.exit(1)
@@ -175,7 +175,7 @@ def initialize_yara_rules():
                                 'md5': dummy
                             })
                             logging.info("Initializing Yara rule %s" % file)
-                        except Exception, e:
+                        except Exception as e:
                             logging.error("Error in YARA rule: %s" % yaraRuleFile)
                             traceback.print_exc()
                             sys.exit(1)
@@ -186,7 +186,7 @@ def initialize_yara_rules():
                                 data = rulefile.read()
                                 yaraRules += data
 
-                    except Exception, e:
+                    except Exception as e:
                         logging.error("Error reading signature file %s ERROR: %s" % yaraRuleFile)
                         traceback.print_exc()
                         sys.exit(1)
@@ -203,12 +203,12 @@ def initialize_yara_rules():
             })
             logging.info("Initialized all Yara rules at once")
 
-        except Exception, e:
+        except Exception as e:
             traceback.print_exc()
             logging.error("Error during YARA rule compilation when all YARA rules are are combined in a single file")
             sys.exit(1)
 
-    except Exception, e:
+    except Exception as e:
         traceback.print_exc()
         logging.error("Unexpected error while walking the directories")
         sys.exit(1)
