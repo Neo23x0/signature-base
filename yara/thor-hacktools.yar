@@ -17,6 +17,8 @@
 
 */
 
+import "pe"
+
 /* WCE */
 
 rule WindowsCredentialEditor
