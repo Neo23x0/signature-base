@@ -2998,8 +2998,12 @@ rule Mimikatz_Strings {
       $x15 = "** Session key is NULL! It means allowtgtsessionkey is not set to 1 **" fullword wide
       $x16 = "[masterkey] with DPAPI_SYSTEM (machine, then user): " fullword wide
    condition:
-      ( uint16(0) == 0x5a4d and 1 of ($x*) ) or
-      ( 3 of them )
+      (
+         ( uint16(0) == 0x5a4d and 1 of ($x*) ) or
+         ( 3 of them )
+      )
+      /* exclude false positives */
+      and not pe.imphash() == "77eaeca738dd89410a432c6bd6459907"
 }
 
 rule AppInitHook {
