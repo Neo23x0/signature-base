@@ -7,6 +7,8 @@
    Reference: https://www.symantec.com/connect/blogs/suckfly-revealing-secret-life-your-code-signing-certificates
 */
 
+import "pe"
+
 /* Rule Set ----------------------------------------------------------------- */
 
 rule Suckfly_Nidiran_Gen_1 {
