@@ -2785,4 +2785,7 @@ ystem32\\drivers\\kifes\.sys;70
 # Mimikatz https://adsecurity.org/?page_id=1821#MISCMemSSP
 \\mimilsa\.log;100
 
+# Suspicious Script or Executable in Public Users Folder https://twitter.com/JohnLaTwC/status/957703902039691265
+\\Users\\Public\\Documents\\[^\\]{1,20}\.(exe|vbs|ps1|dll|bat)$;60
+
 # End
