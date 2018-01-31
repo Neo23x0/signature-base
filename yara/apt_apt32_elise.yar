@@ -6,6 +6,8 @@
    Reference: https://community.rsa.com/community/products/netwitness/blog/2018/01/30/apt32-continues-asean-targeting
 */
 
+import "pe"
+
 /* Rule Set ----------------------------------------------------------------- */
 
 rule APT32_Elise_Jan18_1 {
