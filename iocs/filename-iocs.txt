@@ -2788,4 +2788,8 @@ ystem32\\drivers\\kifes\.sys;70
 # Suspicious Script or Executable in Public Users Folder https://twitter.com/JohnLaTwC/status/957703902039691265
 \\Users\\Public\\Documents\\[^\\]{1,20}\.(exe|vbs|ps1|dll|bat)$;60
 
+# APT32 Continues ASEAN Targeting https://community.rsa.com/community/products/netwitness/blog/2018/01/30/apt32-continues-asean-targeting
+\\AppData\\Roaming\\Microsoft\\Windows\\Caches\\NavShExt\.dll;70
+\\AppData\\Local\\Microsoft\\Windows\\Explorer\\thumbcache_1CD60\.db;80
+
 # End
