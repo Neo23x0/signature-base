@@ -3,6 +3,7 @@
 // NVISO 2017/10/10 - 2017/10/12
 // https://sensepost.com/blog/2017/macro-less-code-exec-in-msword/
 
+/* slowing down scanning
 rule Office_DDEAUTO_field {
    meta:
       description = "Detects DDE in MS Office documents"
@@ -11,7 +12,7 @@ rule Office_DDEAUTO_field {
       date = "2017-10-12"
       score = 60
    strings:
-      $a = /<w:fldChar\s+?w:fldCharType="begin"\/>.+?\b[Dd][Dd][Ee][Aa][Uu][Tt][Oo]\b.+?<w:fldChar\s+?w:fldCharType="end"\/>/
+      $a = /<w:fldChar\s+?w:fldCharType="begin"\/>.{1,1000}?\b[Dd][Dd][Ee][Aa][Uu][Tt][Oo]\b.{1,1000}?<w:fldChar\s+?w:fldCharType="end"\/>/
    condition:
       $a
 }
@@ -28,6 +29,7 @@ rule Office_DDE_field {
    condition:
       $a
 }
+*/
 
 rule Office_OLE_DDEAUTO {
    meta:
