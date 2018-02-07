@@ -32,7 +32,8 @@ HASH_WHITELIST = ['e617348b8947f28e2a280dd93c75a6ad',
                   '06f7826c2862d184a49e3672c0aa6097b11e7771a4bf613ec37941236c1a8e20',
                   'd378bffb70923139d6a4f546864aa61c',
                   '8094af5ee310714caebccaeee7769ffb08048503ba478b879edfef5f1a24fefe',
-                  '01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b']
+                  '01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b',
+                  'b6f9aa44c5f0565b5deb761b1926e9b6']
 DOMAIN_WHITELIST = ['proofpoint.com']
 
 
