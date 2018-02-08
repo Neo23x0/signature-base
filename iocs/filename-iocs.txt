@@ -2796,4 +2796,12 @@ ystem32\\drivers\\kifes\.sys;70
 \\Adobe\\Acrobat Reader;-10
 \\WindowsPowerShell\\;-10
 
+
+# Sofacy Activity Feb 18 https://goo.gl/UUfYBc
+AppData\\Local\\cdnver\.dll;90
+
+# Middle East Campaign http://blog.talosintelligence.com/2018/02/targeted-attacks-in-middle-east.html
+\\AppData\\Roaming\\sys\.ps1;100
+\\AppData\\Local\\4s\.exe;100
+
 # End
