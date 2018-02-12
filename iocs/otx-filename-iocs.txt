@@ -47,8 +47,7 @@ wanacry\.exe;WannaCry Ransomware Campaign mai_12_2017
 %LocalLow%\\@WanaDecryptor@\.exe;WannaCry Ransomware Campaign mai_12_2017 
 %Local%\\@WanaDecryptor@\.exe;WannaCry Ransomware Campaign mai_12_2017 
 %AppData%\\@WanaDecryptor@\.exe;WannaCry Ransomware Campaign mai_12_2017 
-*\.wncry\.;WannaCry Ransomware Campaign mai_12_2017 
-@Please_Read_Me@\.txt;WannaCry Ransomware Campaign mai_12_2017 
+@Please_Read_Me@\.txt;WannaCry Ransomware Campaign mai_12_2017
 wcry\.exe;WannaCry Ransomware Campaign mai_12_2017 
 C:\\WINDOWS\\tasksche\.exe;WannaCry Indicators 
 C:\\Windows\\mssecsvc\.exe;WannaCry Indicators 
