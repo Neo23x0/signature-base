@@ -1,3 +1,19 @@
+C:\\Users\\user\\AppData\\Roaming\\Macromedia\\Flash;Malware: Hancitor (Chanitor or Tordal) 
+C:\\Users\\user~1\\AppData\\Local\\Temp\\;Malware: Hancitor (Chanitor or Tordal) 
+C:\\Users\\user\\AppData\\Roaming\\Adobe\\Acrobat\\11\.0\\Security\\CRLCache\\;Malware: Hancitor (Chanitor or Tordal) 
+C:\\Users\\user~1\\AppData\\Local\\Temp,,;Malware: Hancitor (Chanitor or Tordal) 
+C:\\Users\\user~1\\AppData\\Local\\Temp\\;Ransomware:  GLOBEIMPOSTER 
+C:\\Users\\user\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\qrehcsuv\.default\\datareporting\\archived\\;Ransomware:  GLOBEIMPOSTER 
+C:\\Users\\user\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\;Ransomware:  GLOBEIMPOSTER 
+C:\\Users\\user\\AppData\\Local\\Microsoft\\Windows\\Temporary Internet Files\\Content\.IE5\\;Ransomware:  GLOBEIMPOSTER 
+com\.system\.update\.systemupdate;Google Security: Tizi Android Malware https://security.googleblog.com/2017/11/tizi-detecting-and-blocking-socially.htm
+com\.dailyworkout\.tizi;Google Security: Tizi Android Malware https://security.googleblog.com/2017/11/tizi-detecting-and-blocking-socially.htm
+com\.press\.nasa\.com\.tanofresh;Google Security: Tizi Android Malware https://security.googleblog.com/2017/11/tizi-detecting-and-blocking-socially.htm
+UPS Express #69084735_XTZ#KYVBA \(01 Nov 17\)\-1\.doc;PowerShell EMOTET Delivery 
+C:\\Users\\user\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\;Kerkoporta (Greek) ransomware 
+C:\\Users\\user\\AppData\\Local\\Microsoft\\CLR_v4\.0_32\\UsageLogs\\;Kerkoporta (Greek) ransomware 
+C:\\ProgramData\\Microsoft\\Windows\\WER\\ReportQueue\\;Kerkoporta (Greek) ransomware 
+C:\\Users\\user\\AppData\\Roaming\\Microsoft\\Windows\\Windows Update Protocol\\;Kerkoporta (Greek) ransomware 
 C:\\ProgramData\\ManagerApp\\d3d9\.dll;BlackOasis APT and new targeted attacks leveraging zero-day exploit - Securelist https://securelist.com/blackoasis-apt-and-new-targeted-attacks-leveraging-zero-d
 C:\\ProgramData\\ManagerApp\\msvcr90\.dll;BlackOasis APT and new targeted attacks leveraging zero-day exploit - Securelist https://securelist.com/blackoasis-apt-and-new-targeted-attacks-leveraging-zero-d
 C:\\ProgramData\\ManagerApp\\install\.cab;BlackOasis APT and new targeted attacks leveraging zero-day exploit - Securelist https://securelist.com/blackoasis-apt-and-new-targeted-attacks-leveraging-zero-d
@@ -12,8 +28,28 @@ _DECRYPT_FILE\.html;Erebus Resurfaces as Linux Ransomware http://blog.trendmicro
 _DECRYPT_FILE\.txt;Erebus Resurfaces as Linux Ransomware http://blog.trendmicro.com/trendlabs-security-intelligence/erebus-resurfaces-as-
 /Users/_%User%_/Library/LaunchAgents/com\.apple\.Safari\.pac\.plist;OSX/Dok - OSX Malware http://blog.checkpoint.com/2017/04/27/osx-malware-catching-wants-read-https-traf
 /Users/_%User%_/Library/LaunchAgents/com\.apple\.Safari\.proxy\.plist;OSX/Dok - OSX Malware http://blog.checkpoint.com/2017/04/27/osx-malware-catching-wants-read-https-traf
+%WINDOWS%/perfc;Petya Ransomware (IOCs from First Run in 2016 and June 2017 variant) https://www.swordshield.com/2017/06/petya-ransomware-older-malware-new-dangerous
+C:\\Windows\\perfc;Petya Ransomware (IOCs from First Run in 2016 and June 2017 variant) https://www.swordshield.com/2017/06/petya-ransomware-older-malware-new-dangerous
 READ ME ABOUT DECRYPTION\.txt;Analyzing the Fileless, Code-injecting SOREBRECT Ransomware http://blog.trendmicro.com/trendlabs-security-intelligence/analyzing-fileless-co
 C:\\Flash player\\vlc\.exe;New Kasper samples https://www.hybrid-analysis.com/sample/6a48b5211b622ffe49ae4e32ada72bb4d9db40576
+C:\\WINDOWS\\system32\\msg;WannaCry/Wcry Ransomware https://www.virustotal.com/en/file/f01644082db3fa50ba9f4773f11f062ab785c9db02a3a
+wanacry\.exe;WannaCry Ransomware Campaign mai_12_2017 
+%homedrive%\\wanacry\.exe;WannaCry Ransomware Campaign mai_12_2017 
+%windows%\\wanacry\.exe;WannaCry Ransomware Campaign mai_12_2017 
+%userprofile%\\Desktop\\wanacry\.exe;WannaCry Ransomware Campaign mai_12_2017 
+%LocalLow%\\wanacry\.exe;WannaCry Ransomware Campaign mai_12_2017 
+%Local%\\wanacry\.exe;WannaCry Ransomware Campaign mai_12_2017 
+%AppData%\\wanacry\.exe;WannaCry Ransomware Campaign mai_12_2017 
+@WanaDecryptor@\.exe;WannaCry Ransomware Campaign mai_12_2017 
+%homedrive%\\@WanaDecryptor@\.exe;WannaCry Ransomware Campaign mai_12_2017 
+%windows%\\@WanaDecryptor@\.exe;WannaCry Ransomware Campaign mai_12_2017 
+%userprofile%\\Desktop\\@WanaDecryptor@\.exe;WannaCry Ransomware Campaign mai_12_2017 
+%LocalLow%\\@WanaDecryptor@\.exe;WannaCry Ransomware Campaign mai_12_2017 
+%Local%\\@WanaDecryptor@\.exe;WannaCry Ransomware Campaign mai_12_2017 
+%AppData%\\@WanaDecryptor@\.exe;WannaCry Ransomware Campaign mai_12_2017 
+*\.wncry\.;WannaCry Ransomware Campaign mai_12_2017 
+@Please_Read_Me@\.txt;WannaCry Ransomware Campaign mai_12_2017 
+wcry\.exe;WannaCry Ransomware Campaign mai_12_2017 
 C:\\WINDOWS\\tasksche\.exe;WannaCry Indicators 
 C:\\Windows\\mssecsvc\.exe;WannaCry Indicators 
 C:\\taskse\.exe;WannaCry Indicators 
@@ -21,6 +57,12 @@ C:\\taskdl\.exe;WannaCry Indicators
 C:\\m\.vbs;WannaCry Indicators 
 C:\\111\.exe;WannaCry Indicators 
 C:\\@WanaDecryptor@\.exe;WannaCry Indicators 
+C:\\ProgramData\\Dropebox*;New Carbanak / Anunak Attack Methodology https://www.trustwave.com/Resources/SpiderLabs-Blog/Carbanak-Continues-To-Evolve
+%HOMEPATH%\\Intel\\\{BFF4219E\-C7D1\-2880\-AE58\-9C9CD9701C90\};New Carbanak / Anunak Attack Methodology https://www.trustwave.com/Resources/SpiderLabs-Blog/Carbanak-Continues-To-Evolve
+%HOMEPATH%\\Intel;New Carbanak / Anunak Attack Methodology https://www.trustwave.com/Resources/SpiderLabs-Blog/Carbanak-Continues-To-Evolve
+%Application Data%\\Frfx;Jigsaw Ransomware IOCs http://blog.trendmicro.com/trendlabs-security-intelligence/jigsaw-ransomware-pla
+%Application Data%\\System32Work;Jigsaw Ransomware IOCs http://blog.trendmicro.com/trendlabs-security-intelligence/jigsaw-ransomware-pla
+%AppDataLocal%\\Drpbx;Jigsaw Ransomware IOCs http://blog.trendmicro.com/trendlabs-security-intelligence/jigsaw-ransomware-pla
 %TEMP%\\AdobeARMM\.log;The Kittens Strike Back https://www.trendmicro.com/vinfo/us/security/news/cyber-attacks/rocket-kitten-co
 %TEMP%\\wlg\.dat;The Kittens Strike Back https://www.trendmicro.com/vinfo/us/security/news/cyber-attacks/rocket-kitten-co
 Message\.xlsb;The Kittens Strike Back https://www.trendmicro.com/vinfo/us/security/news/cyber-attacks/rocket-kitten-co
