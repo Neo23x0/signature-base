@@ -11,11 +11,8 @@
 # Changes:
 # 16.12.2017 - Merged the changes by Scott with the code base
 # 22.11.2017 - Scott Carpenter uberbigun@gmail.com
+# 13.02.2018 - Reworked the hash whitelist
 #
-# v2 takes the --siem logic of outputing csv and switches the default to use csv and --siem using txt with only raw output
-# based on the indicator type. McAfee ESM watchlists must contain only type of IPv4, IPv6, Hash, Filename and cannot be mixed.
-# Towards that end, the C2 indicators have been separated into three files rather than one.
-
 
 from OTXv2 import OTXv2
 import re
@@ -33,7 +30,20 @@ HASH_WHITELIST = ['e617348b8947f28e2a280dd93c75a6ad',
                   'd378bffb70923139d6a4f546864aa61c',
                   '8094af5ee310714caebccaeee7769ffb08048503ba478b879edfef5f1a24fefe',
                   '01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b',
-                  'b6f9aa44c5f0565b5deb761b1926e9b6']
+                  'b6f9aa44c5f0565b5deb761b1926e9b6',
+                  # Empty file
+                  'd41d8cd98f00b204e9800998ecf8427e',
+                  'da39a3ee5e6b4b0d3255bfef95601890afd80709',
+                  'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855',
+                  # One byte line break file (Unix) 0x0a
+                  '68b329da9893e34099c7d8ad5cb9c940',
+                  'adc83b19e793491b1c6ea0fd8b46cd9f32e592fc',
+                  '01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b',
+                  # One byte line break file (Windows) 0x0d0a
+                  '81051bcc2cf1bedf378224b0a93e2877',
+                  'ba8ab5a0280b953aa97435ff8946cbcbb2755a27',
+                  '7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6',
+                  ]
 FILENAMES_WHITELIST = ['wncry']
 DOMAIN_WHITELIST = ['proofpoint.com']
 
