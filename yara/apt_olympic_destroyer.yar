@@ -10,9 +10,9 @@ import "pe"
 
 /* Rule Set ----------------------------------------------------------------- */
 
-rule OlympicDestroyer_Gen1 {
+rule Destructive_Ransomware_Gen1 {
    meta:
-      description = "Detects Olympic Destroyer malware"
+      description = "Detects destructive malware"
       author = "Florian Roth"
       reference = "http://blog.talosintelligence.com/2018/02/olympic-destroyer.html"
       date = "2018-02-12"
