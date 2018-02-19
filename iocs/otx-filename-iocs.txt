@@ -2,10 +2,6 @@ C:\\Users\\user\\AppData\\Roaming\\Macromedia\\Flash;Malware: Hancitor (Chanitor
 C:\\Users\\user~1\\AppData\\Local\\Temp\\;Malware: Hancitor (Chanitor or Tordal)
 C:\\Users\\user\\AppData\\Roaming\\Adobe\\Acrobat\\11\.0\\Security\\CRLCache\\;Malware: Hancitor (Chanitor or Tordal)
 C:\\Users\\user~1\\AppData\\Local\\Temp,,;Malware: Hancitor (Chanitor or Tordal)
-C:\\Users\\user~1\\AppData\\Local\\Temp\\;Ransomware:  GLOBEIMPOSTER
-C:\\Users\\user\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\qrehcsuv\.default\\datareporting\\archived\\;Ransomware:  GLOBEIMPOSTER
-C:\\Users\\user\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\;Ransomware:  GLOBEIMPOSTER
-C:\\Users\\user\\AppData\\Local\\Microsoft\\Windows\\Temporary Internet Files\\Content\.IE5\\;Ransomware:  GLOBEIMPOSTER
 com\.system\.update\.systemupdate;Google Security: Tizi Android Malware https://security.googleblog.com/2017/11/tizi-detecting-and-blocking-socially.htm
 com\.dailyworkout\.tizi;Google Security: Tizi Android Malware https://security.googleblog.com/2017/11/tizi-detecting-and-blocking-socially.htm
 com\.press\.nasa\.com\.tanofresh;Google Security: Tizi Android Malware https://security.googleblog.com/2017/11/tizi-detecting-and-blocking-socially.htm
