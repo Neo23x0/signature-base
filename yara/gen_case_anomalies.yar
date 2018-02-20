@@ -67,6 +67,8 @@ rule WScriptShell_Case_Anomaly {
       $sn2 = "wscript.shell\").run" ascii wide
       $sn3 = "WSCRIPT.SHELL\").RUN" ascii wide
       $sn4 = "Wscript.Shell\").Run" ascii wide
+      $sn5 = "WScript.Shell\").Run" ascii wide
+      $sn6 = "WScript.shell\").Run" ascii wide
    condition:
       filesize < 800KB and
       ( $s1 and not 1 of ($sn*) )
