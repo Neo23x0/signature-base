@@ -2804,4 +2804,8 @@ AppData\\Local\\cdnver\.dll;90
 \\AppData\\Roaming\\sys\.ps1;100
 \\AppData\\Local\\4s\.exe;100
 
+# Turla Mosquito https://www.welivesecurity.com/wp-content/uploads/2018/01/ESET_Turla_Mosquito.pdf
+AppData\\Local\\kb6867\.bin;80
+AppData\\Roaming\\kb6867\.bin;80
+
 # End
