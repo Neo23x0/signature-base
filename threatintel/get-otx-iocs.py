@@ -32,6 +32,7 @@ HASH_WHITELIST = ['e617348b8947f28e2a280dd93c75a6ad',
                   '01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b',
                   'b6f9aa44c5f0565b5deb761b1926e9b6',
                   'b1442e85b03bdcaf66dc58c7abb98745dd2687d86350be9a298a1d9382ac849b',
+                  'a11a2f0cfe6d0b4c50945989db6360cd',
                   # Empty file
                   'd41d8cd98f00b204e9800998ecf8427e',
                   'da39a3ee5e6b4b0d3255bfef95601890afd80709',
