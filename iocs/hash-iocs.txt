@@ -8152,3 +8152,8 @@ ed97719c008422925ae21ff34448a8c35ee270a428b0478e24669396761d0790;Dark Caracal - 
 ed25b0c20b1c1b271a511a1266fe3967ab851aaa9f793bdf4f3d19de1dcf6532;Dark Caracal - PE32 executable (GUI) Intel 80386
 f581a75a0f8f8eb200a283437bed48f30ae9d5616e94f64acfd93c12fcef987a;Dark Caracal - PE32 executable (GUI) Intel 80386
 d57701321f2f13585a02fc8ba6cbf1f2f094764bfa067eb73c0101060289b0ba;Dark Caracal - PE32 executable (GUI) Intel 80386
+
+ff808d0a12676bfac88fd26f955154f8884f2bb7c534b9936510fd6296c543e8;Sofacy Activity https://researchcenter.paloaltonetworks.com/2018/02/unit42-sofacy-attacks-multiple-government-entities/
+12e6642cf6413bdf5388bee663080fa299591b2ba023d069286f3be9647547c8;Sofacy Activity https://researchcenter.paloaltonetworks.com/2018/02/unit42-sofacy-attacks-multiple-government-entities/
+cb85072e6ca66a29cb0b73659a0fe5ba2456d9ba0b52e3a4c89e86549bc6e2c7;Sofacy Activity https://researchcenter.paloaltonetworks.com/2018/02/unit42-sofacy-attacks-multiple-government-entities/
+23411bb30042c9357ac4928dc6fca6955390361e660fec7ac238bbdcc8b83701;Sofacy Activity https://researchcenter.paloaltonetworks.com/2018/02/unit42-sofacy-attacks-multiple-government-entities/

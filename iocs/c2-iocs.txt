@@ -121,3 +121,5 @@ controleng.com;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
 203.113.4.230;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
 149.210.156.198;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
 151.80.163.14;US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
+
+cdnverify.net;Sofacy activity https://researchcenter.paloaltonetworks.com/2018/02/unit42-sofacy-attacks-multiple-government-entities/ 

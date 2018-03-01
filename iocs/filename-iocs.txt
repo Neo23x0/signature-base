@@ -2810,4 +2810,8 @@ AppData\\Local\\cdnver\.dll;90
 AppData\\Local\\kb6867\.bin;80
 AppData\\Roaming\\kb6867\.bin;80
 
+# Sofacy Activity https://researchcenter.paloaltonetworks.com/2018/02/unit42-sofacy-attacks-multiple-government-entities/
+\\AppData\\Local\\cdnver\.dll;100
+\\AppData\\Local\\cdnver\.bat;100
+
 # End
