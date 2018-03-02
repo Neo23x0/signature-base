@@ -2814,4 +2814,8 @@ AppData\\Roaming\\kb6867\.bin;80
 \\AppData\\Local\\cdnver\.dll;100
 \\AppData\\Local\\cdnver\.bat;100
 
+# FinFisher https://cloudblogs.microsoft.com/microsoftsecure/2018/03/01/finfisher-exposed-a-researchers-tale-of-defeating-traps-tricks-and-complex-virtual-machines/
+\\ProgramData\\AuditApp\\d3d9\.dll;85
+\\wsecedit\.rar;80
+
 # End
