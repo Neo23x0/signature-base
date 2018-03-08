@@ -1,6 +1,5 @@
-rule gen_unicorn_obfuscated_powershell
-{
-    meta: 
+rule gen_unicorn_obfuscated_powershell {
+    meta:
         description = "PowerShell payload obfuscated by Unicorn toolkit"
         author = "John Lambert @JohnLaTwC"
         date = "2018-03-07"
@@ -8,17 +7,15 @@ rule gen_unicorn_obfuscated_powershell
         reference = "https://github.com/trustedsec/unicorn/"
     strings:
         $h1 = "powershell"
-        $footer = /('"|'\)")/
-        $s1 = ".value.toString()" 
-        $s2 = "-w 1" 
-        $p1 = /;sv \w{1,3} \w{1,3};/ 
-        $p2 = /;s'*v ['|\w]{1,4} ['|\w]{1,4};/ 
-        $b64 = /'JAB[a-zA-Z0-9=+\/]{50,}/
+        $s1 = ".value.toString() 'JAB"
+        $s2 = "-w 1 -C \"sv"
     condition:
         filesize < 20KB
+        and uint32be(0) == 0x706f7765
         and $h1 at 0
-        and @footer[1] > (filesize - 5)
+        and (
+           uint16be(filesize-2) == 0x2722 or  /* Footer 1 */
+           ( uint16be(filesize-2) == 0x220a and uint8(filesize-3) == 0x27 )  /* Footer 2 */
+        )
         and all of ($s*)
-        and #b64 == 1
-        and 1 of ($p*)
 }
