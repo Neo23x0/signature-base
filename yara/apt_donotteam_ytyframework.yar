@@ -1,3 +1,5 @@
+import "pe"
+
 rule APT_DonotTeam_YTYframework : APT DonotTeam Windows {
    meta:
       author = "James E.C, ProofPoint"
