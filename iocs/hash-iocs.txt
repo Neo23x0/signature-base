@@ -8157,3 +8157,17 @@ ff808d0a12676bfac88fd26f955154f8884f2bb7c534b9936510fd6296c543e8;Sofacy Activity
 12e6642cf6413bdf5388bee663080fa299591b2ba023d069286f3be9647547c8;Sofacy Activity https://researchcenter.paloaltonetworks.com/2018/02/unit42-sofacy-attacks-multiple-government-entities/
 cb85072e6ca66a29cb0b73659a0fe5ba2456d9ba0b52e3a4c89e86549bc6e2c7;Sofacy Activity https://researchcenter.paloaltonetworks.com/2018/02/unit42-sofacy-attacks-multiple-government-entities/
 23411bb30042c9357ac4928dc6fca6955390361e660fec7ac238bbdcc8b83701;Sofacy Activity https://researchcenter.paloaltonetworks.com/2018/02/unit42-sofacy-attacks-multiple-government-entities/
+
+042cc382acb5b2b70c78baa77bb7c5f9;SlingShot APT https://securelist.com/apt-slingshot/84312/
+11ccc2c5811c80f2a796817d9ccbe34b;SlingShot APT https://securelist.com/apt-slingshot/84312/
+142970f7e10e3a49e583b2f557dcbe79;SlingShot APT https://securelist.com/apt-slingshot/84312/
+64f705e55545a371e0f5e599cfbae5e9;SlingShot APT https://securelist.com/apt-slingshot/84312/
+6637dbcc6059a1e2e45956d98a3ea590;SlingShot APT https://securelist.com/apt-slingshot/84312/
+706269c041d94c4501b78c128f1c0e70;SlingShot APT https://securelist.com/apt-slingshot/84312/
+7fb82333aa08f4bfbbfa515e7e93bad4;SlingShot APT https://securelist.com/apt-slingshot/84312/
+87a28a99697452a37fc229b3aa3afe97;SlingShot APT https://securelist.com/apt-slingshot/84312/
+afaff3310d8c094774da6ba856c1a30e;SlingShot APT https://securelist.com/apt-slingshot/84312/
+b7a2525e05769540f48733d5673a77fa;SlingShot APT https://securelist.com/apt-slingshot/84312/
+c638169aaa777d4f6eae43205a39e274;SlingShot APT https://securelist.com/apt-slingshot/84312/
+db71aed3b9ffbbfa4c49db036520ceeb;SlingShot APT https://securelist.com/apt-slingshot/84312/
+f4944c5d47907ce93819aed8c4f76bcc;SlingShot APT https://securelist.com/apt-slingshot/84312/
