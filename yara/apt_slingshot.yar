@@ -62,7 +62,6 @@ rule Slingshot_APT_Malware_1 {
       $s1 = "SlingDll.dll" fullword ascii
       $s2 = "BogusDll." ascii
       $s3 = "smsvcrt -h 0x%p" fullword wide
-      $s4 = "esscli.dll" ascii fullword
    condition:
       uint16(0) == 0x5a4d and filesize < 700KB and (
         pe.imphash() == "7ead4bb0d752003ce7c062adb7ffc51a" or
@@ -80,17 +79,14 @@ rule Slingshot_APT_Malware_2 {
       hash1 = "2a51ef6d115daa648ddd57d1e4480f5a18daf40986bfde32aab19349aa010e67"
    strings:
       $x1 = "\\\\?\\c:\\RECYCLER\\S-1-5-21-2225084468-623340172-1005306204-500\\INFO5" fullword wide
-      $x2 = " Configured %s with MARTA." fullword wide
       $x_slingshot = {09 46 BE 57 42 DD 70 35 5E }
 
       $s1 = "Opening service %s for stop access failed.#" fullword wide
-      $s2 = "----Analysis engine was initialized successfully.----#" wide
-      $s3 = "LanMan setting <%s> is ignored because system has a higher value already." fullword wide
-      $s4 = "Guest account is enabled." fullword wide
-      $s5 = "\\DosDevices\\amxpci" fullword wide
-      $s6 = "lNTLMqSpPD" fullword ascii
+      $s2 = "LanMan setting <%s> is ignored because system has a higher value already." fullword wide
+      $s3 = "\\DosDevices\\amxpci" fullword wide
+      $s4 = "lNTLMqSpPD" fullword ascii
    condition:
-      uint16(0) == 0x5a4d and filesize < 900KB and 1 of them
+      uint16(0) == 0x5a4d and filesize < 900KB and ( 1 of ($x*) or 4 of them )
 }
 
 rule Slingshot_APT_Malware_3 {
