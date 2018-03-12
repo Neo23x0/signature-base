@@ -260,20 +260,6 @@ rule OpCloudHopper_WmiDLL_inMemory {
       all of them
 }
 
-rule OpCloudHopper_Cloaked_PSCP {
-   meta:
-      description = "Tool used in Operation Cloud Hopper - pscp.exe cloaked as rundll32.exe"
-      author = "Florian Roth"
-      reference = "https://www.pwc.co.uk/cyber-security/pdf/cloud-hopper-annex-b-final.pdf"
-      date = "2017-04-07"
-      score = 90
-   strings:
-      $s1 = "AES-256 SDCTR" ascii
-      $s2 = "direct-tcpip" ascii
-   condition:
-      all of them and filename == "rundll32.exe"
-}
-
 rule VBS_WMIExec_Tool_Apr17_1 {
    meta:
       description = "Tools related to Operation Cloud Hopper"

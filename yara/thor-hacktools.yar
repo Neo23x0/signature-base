@@ -115,27 +115,6 @@ rule HackTool_Samples {
       1 of them
 }
 
-rule HackTool_Producers {
-   meta:
-      description = "Hacktool Producers String"
-      threat_level = 5
-      score = 50
-      nodeepdive = 1
-   strings:
-      $a1 = "www.oxid.it"
-      $a2 = "www.analogx.com"
-      $a3 = "ntsecurity.nu"
-      $a4 = "gentilkiwi.com"
-      $a6 = "Marcus Murray"
-      $a7 = "Nsasoft US LLC0"
-      $a8 = " Nir Sofer"
-   condition:
-      uint16(0) == 0x5a4d and 1 of ($a*) and
-      not extension contains ".ini" and
-      not extension contains ".xml" and
-      not extension contains ".sqlite"
-}
-
 /* Disclosed hack tool set */
 
 rule Fierce2
@@ -2898,17 +2877,6 @@ rule mimikatz
 
    condition:
       (all of ($exe_x86_*)) or (all of ($exe_x64_*)) or (all of ($dll_*)) or (any of ($sys_*))
-}
-
-rule mimikatz_lsass_mdmp
-{
-   meta:
-      description      = "LSASS minidump file for mimikatz"
-      author         = "Benjamin DELPY (gentilkiwi)"
-   strings:
-      $lsass         = "System32\\lsass.exe"   wide nocase
-   condition:
-      (uint32(0) == 0x504d444d) and $lsass and filesize > 50000KB and not filename matches /WER/
 }
 
 rule wce
