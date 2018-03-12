@@ -118,7 +118,7 @@ rule clean_apt15_patchedcmd{
       $ = "Cmd.Exe" wide
       $ = "Windows Command Processor" wide
    condition:
-      uint16(0) == 0x5A4D and 3 of them
+      uint16(0) == 0x5A4D and all of them
 }
 
 rule malware_apt15_royalcli_1{
@@ -291,4 +291,3 @@ rule malware_apt15_generic {
    condition:
       2 of them
 }
-
