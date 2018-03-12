@@ -155,6 +155,7 @@ rule malware_apt15_royalcli_2{
       uint16(0) == 0x5A4D and 2 of them
 }
 
+/*
 rule malware_apt15_bs2005{
    meta:
       author = "Ahmed Zaki"
@@ -166,10 +167,7 @@ rule malware_apt15_bs2005{
       $ = "WarOnPostRedirect"  wide ascii fullword
       $ = "WarnonZoneCrossing"  wide ascii fullword
       $ = "^^^^^" wide ascii fullword
-      /*
-          "%s" /C "%s > "%s\tmp.txt" 2>&1 "
-       */
-      /* $ =  /"?%s\s*"?\s*\/C\s*"?%s\s*>\s*\\?"?%s\\(\w+\.\w+)?"\s*2>&1\s*"?/ */
+      $ =  /"?%s\s*"?\s*\/C\s*"?%s\s*>\s*\\?"?%s\\(\w+\.\w+)?"\s*2>&1\s*"?/
       $ ="IEharden" wide ascii fullword
       $ ="DEPOff" wide ascii fullword
       $ ="ShownVerifyBalloon" wide ascii fullword
@@ -182,6 +180,7 @@ rule malware_apt15_bs2005{
             )
       )
 }
+*/
 
 rule malware_apt15_royaldll {
    meta:
