@@ -2937,4 +2937,12 @@ ystem32\\raseap.dll;65
 \\svshost.exe;80
 ystem32\\Microsoft\\Protect\\Windows\\svchost.exe;80
 
+# TA18-074A https://www.us-cert.gov/ncas/alerts/TA18-074A
+\\Temp\\scr\.exe;80
+\\Temp\\scr\.jpg;80
+\\completed_dclist\.txt;70
+\\conditional_forwarders\.txt;70
+\\admins\.txt$;45
+\\dirsb\.bat;60
+
 # End
