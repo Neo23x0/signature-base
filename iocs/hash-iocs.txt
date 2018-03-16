@@ -8171,3 +8171,11 @@ b7a2525e05769540f48733d5673a77fa;SlingShot APT https://securelist.com/apt-slings
 c638169aaa777d4f6eae43205a39e274;SlingShot APT https://securelist.com/apt-slingshot/84312/
 db71aed3b9ffbbfa4c49db036520ceeb;SlingShot APT https://securelist.com/apt-slingshot/84312/
 f4944c5d47907ce93819aed8c4f76bcc;SlingShot APT https://securelist.com/apt-slingshot/84312/
+
+3fefa55daeb167931975c22df3eca20a;Temp.Periscope https://goo.gl/qeBHsr - HOMEFRY, a 64-bit Windows password dumper/cracker - x.js
+40528e368d323db0ac5c3f5e1efe4889;Temp.Periscope https://goo.gl/qeBHsr - MURKYTOP, a command-line reconnaissance tool - mt.exe
+a68bf5fce22e7f1d6f999b7a580ae477;Temp.Periscope https://goo.gl/qeBHsr - AIRBREAK, a JavaScript-based backdoor which retrieves commands from hidden strings in compromised webpages - com4.js
+3eb6f85ac046a96204096ab65bbd3e7e;Temp.Periscope https://goo.gl/qeBHsr - AIRBREAK, a JavaScript-based backdoor which retrieves commands from hidden strings in compromised webpages - green.ddd
+6e843ef4856336fe3ef4ed27a4c792b1;Temp.Periscope https://goo.gl/qeBHsr - Beacon, a commercially available backdoor - BGij
+a9e7539c1ebe857bae6efceefaa9dd16;Temp.Periscope https://goo.gl/qeBHsr - PHOTO, also reported as Derusbi - msresamn.ttf
+bd9e4c82bf12c4e7a58221fc52fed705;Temp.Periscope https://goo.gl/qeBHsr - BADFLICK, backdoor that is capable of modifying the file system, generating a reverse shell, and modifying its command-and-control configuration
