@@ -42,7 +42,7 @@ rule z_webshell {
       $webshell_name = "public string z_progname =" nocase ascii wide
       $webshell_password = "public string Password =" nocase ascii wide
    condition:
-      ( uint16(0) == 0x2040253c or uint16(0) == 0x7073613c )
+      ( uint32(0) == 0x2040253c or uint32(0) == 0x7073613c )
       and filesize < 100KB
       and 2 of ($webshell_*)
 }
