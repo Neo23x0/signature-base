@@ -216,7 +216,7 @@ rule Suspicious_Size_taskhost_exe {
     condition:
         uint16(0) == 0x5a4d
         and filename == "taskhost.exe"
-        and ( filesize < 45KB or filesize > 85KB )
+        and ( filesize < 45KB or filesize > 120KB )
 }
 
 rule Suspicious_Size_spoolsv_exe {

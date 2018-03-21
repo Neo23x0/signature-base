@@ -2108,7 +2108,8 @@ ystem32\\lcsvsvc\.dll;80
 # Cred Dumping
 \\(q32|q64|wceaux|w86|q86|quarkpwd[^\\]*|m64|m32|hash32|hash64|64|32|wce32|wce64|w32|w64|wce|p32|p64|ps32|ps64|mimikatz|mimilove|mm32|mm64|pw32|pw64|g32|g64|gs32|gs64|hash|hashdump|dumpsvc)\.exe;60;\\distlib\\
 \\(g64\-|\\g32\-|\\gsecdump\.exe|gcx64\.|\\gcx32\.|\\gec\.|\\gse\.exe);60
-\\(pwhash|fgdump);60
+\\pwhash;60;\\python\\
+\\fgdump;60
 \\w32\.exe;50
 \\w64\.exe;50
 

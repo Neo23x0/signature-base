@@ -281,6 +281,7 @@ rule taskmgr_ANOMALY {
 		$s1 = "taskmgr.chm" fullword
 		$s2 = "TmEndTaskHandler::" ascii
       $s3 = "CM_Request_Eject_PC" /* Win XP */
+      $s4 = "NTShell Taskman Startup Mutex" fullword wide
 	condition:
 		( filename == "taskmgr.exe" or filename == "Taskmgr.exe" ) and not 1 of ($s*) and not WINDOWS_UPDATE_BDC
 }
