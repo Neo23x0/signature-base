@@ -8,7 +8,7 @@ rule gen_unicorn_obfuscated_powershell {
         reference = "https://github.com/trustedsec/unicorn/"
     strings:
         $h1 = "powershell"
-        $s1 = /\.value\.toString\(\) [(]'JAB/
+        $s1 = /\.value\.toString\(\) [(]*'JAB/
         $s2 = /[-|\/]w 1 [-|\/]C \"s/
     condition:
         filesize < 20KB
