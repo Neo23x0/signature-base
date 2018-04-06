@@ -2945,4 +2945,30 @@ ystem32\\Microsoft\\Protect\\Windows\\svchost.exe;80
 \\admins\.txt$;45
 \\dirsb\.bat;60
 
+# PrivEsc Tools https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Privilege%20Escalation%20%26%20Post-Exploitation.md
+\\evilmaid\.py;80
+\\LinEnum\.sh;80
+\\Linux_Exploit_Suggester\.pl;80
+\\adsecretsdump\.py;80
+\\dump\.ps1;80
+\\Invoke-SMBExec\.ps1;80
+\\Invoke-TheHash\.ps1;80
+\\Invoke-WCMDump\.ps1;80
+\\Invoke-WMIExec\.ps1;80
+\\nps_payload\.py;80
+\\autodane\.py;80
+\\Babadook\.ps1;80
+\\beRoot\.exe;80
+\\kernelpop\.py;80
+\\LAPSToolkit\.ps1;80
+\\lsadomaindump\.py;80
+\\MSFRottenPotato\.exe;80
+\\pompem\.py;80
+\\PowerLine\.exe;80
+\\PowerOps\.exe;80
+\\Powershdll\.exe;80
+\\psgetsys\.ps1;80
+\\PSReflect\.psm1;80
+\\SmashedPotato\.exe;80
+
 # End
