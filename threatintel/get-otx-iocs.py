@@ -45,6 +45,13 @@ HASH_WHITELIST = ['e617348b8947f28e2a280dd93c75a6ad',
                   '81051bcc2cf1bedf378224b0a93e2877',
                   'ba8ab5a0280b953aa97435ff8946cbcbb2755a27',
                   '7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6',
+                  # File filled with 99 zeros (probably caused by AV)
+                  'fa8715078d45101200a6e2bf7321aa04',
+                  'd991c16949bd5e85e768385440e18d493ce3aa46',
+                  '4b298058e1d5fd3f2fa20ead21773912a5dc38da3c0da0bbc7de1adfb6011f1c',
+                  '620f0b67a91f7f74151bc5be745b7110',
+                  '1ceaf73df40e531df3bfb26b4fb7cd95fb7bff1d',
+                  'ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7',
                   ]
 FILENAMES_WHITELIST = ['wncry']
 DOMAIN_WHITELIST = ['proofpoint.com']

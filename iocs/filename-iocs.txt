@@ -1933,7 +1933,6 @@ ystem32\\lcsvsvc\.dll;80
 \\run\.dll;60
 \\Vba32ar\.exe;80
 \\runsna\.dll;80
-\\dragon\.exe;80
 \\dragon\.dll;80
 \\GeekBuddyRSP\.exe;80
 \\cif\.exe;80
