@@ -178,7 +178,6 @@ rule GIFCloaked_Webshell_A {
 		and not 1 of ($fp*)
 }
 
-
 rule exploit_ole_stdolelink {
   meta:
     author = "David Cannings"
