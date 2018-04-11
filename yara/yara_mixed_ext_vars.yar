@@ -169,6 +169,7 @@ rule GIFCloaked_Webshell_A {
 		$s1 = "<%eval request"
 		$s2 = "<%eval(Request.Item["
 		$s3 = "LANGUAGE='VBScript'"
+		$s4 = "$_REQUEST" fullword
 
 		$fp1 = "<form name=\"social_form\""
 	condition:

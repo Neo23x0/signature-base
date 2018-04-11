@@ -122,7 +122,6 @@ rule lnk_detect {
       description = "Detects malicious LNK file from NCSC report"
       reference = "https://www.ncsc.gov.uk/alerts/hostile-state-actors-compromising-uk-organisations-focus-engineering-and-industrial-control"
       date = "2018/04/06"
-      description = "malicious lnk properties"
    strings:
       $lnk_magic = {4C 00 00 00 01 14 02 00 00 00 00 00 C0 00 00 00 00 00 00 46}
       $lnk_target = {41 00 55 00 54 00 4F 00 45 00 58 00 45 00 43 00 2E 00 42 00 41 00 54}
