@@ -3970,3 +3970,55 @@ rule RemCom_RemoteCommandExecution {
    condition:
       1 of them
 }
+
+rule Crackmapexec_EXE {
+   meta:
+      description = "Detects CrackMapExec hack tool"
+      author = "Florian Roth"
+      reference = "Internal Research"
+      date = "2018-04-06"
+      score = 85
+      hash1 = "371f104b7876b9080c519510879235f36edb6668097de475949b84ab72ee9a9a"
+   strings:
+      $s1 = "core.scripts.secretsdump(" fullword ascii
+      $s2 = "core.scripts.samrdump(" fullword ascii
+      $s3 = "core.uacdump(" fullword ascii
+   condition:
+      uint16(0) == 0x5a4d and filesize < 10000KB and 2 of them
+}
+
+rule SUSP_Imphash_PassRevealer_PY_EXE {
+   meta:
+      description = "Detects an imphash used by password revealer and hack tools"
+      author = "Florian Roth"
+      reference = "Internal Research"
+      date = "2018-04-06"
+      score = 40
+      hash1 = "371f104b7876b9080c519510879235f36edb6668097de475949b84ab72ee9a9a"
+   strings:
+      $fp1 = "Assmann Electronic GmbH" ascii wide
+      $fp2 = "Oculus VR" ascii wide
+   condition:
+      uint16(0) == 0x5a4d and filesize < 10000KB
+      and pe.imphash() == "ed61beebc8d019dd9bec823e2d694afd"
+      and not 1 of ($fp*)
+}
+
+rule MAL_Unknown_PWDumper_Apr18_3 {
+   meta:
+      description = "Detects sample from unknown sample set - IL origin"
+      author = "Florian Roth"
+      reference = "Internal Research"
+      date = "2018-04-06"
+      hash1 = "d435e7b6f040a186efeadb87dd6d9a14e038921dc8b8658026a90ae94b4c8b05"
+      hash2 = "8c35c71838f34f7f7a40bf06e1d2e14d58d9106e6d4e6f6e9af732511a126276"
+   strings:
+      $s1 = "loaderx86.dll" fullword ascii
+      $s2 = "tcpsvcs.exe" fullword wide
+      $s3 = "%Program Files, Common FOLDER%" fullword wide
+      $s4 = "%AllUsers, ApplicationData FOLDER%" fullword wide
+      $s5 = "loaderx86" fullword ascii
+      $s6 = "TNtDllHook$" fullword ascii
+   condition:
+      uint16(0) == 0x5a4d and filesize < 3000KB and all of them
+}
