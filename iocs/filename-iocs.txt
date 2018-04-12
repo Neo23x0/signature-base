@@ -1706,7 +1706,7 @@ AppData\\Adobe\\qpbqrx\.dat;80
 \\eof\.exe;100
 
 # Suspicious EXE DLL in Non-Executable directory
-\\(images|img|js|fonts|css|swf|templates|themes|log|error_docs)\\[^\\]{,20}\.(exe|dll)$;60
+\\(images|img|js|fonts|css|swf|themes|log|error_docs)\\[^\\]{,20}\.(exe|dll)$;60
 \\(wp-admin|wp-content|wp-includes)\\[^\\]{,20}\.(exe|dll);60
 
 # APT29 Post-Election Acitivty https://goo.gl/4nyX1e
@@ -2970,5 +2970,15 @@ ystem32\\Microsoft\\Protect\\Windows\\svchost.exe;80
 \\psgetsys\.ps1;80
 \\PSReflect\.psm1;80
 \\SmashedPotato\.exe;80
+
+# Comnie campaign https://goo.gl/jrjPzj
+\\AppData\\Local\\wscript.exe;100
+\\AppData\\Roaming\\wscript.exe;100
+
+# Agent.BTZ https://www.gdatasoftware.com/blog/2014/11/23937-the-uroburos-case-new-sophisticated-rat-identified
+\\AppData\\Local\\Microsoft\\credprov.tlb;90
+\\AppData\\Local\\Microsoft\\shdocvw.tlp;90
+\\AppData\\Roaming\\Microsoft\\credprov.tlb;90
+\\AppData\\Roaming\\Microsoft\\shdocvw.tlp;90
 
 # End
