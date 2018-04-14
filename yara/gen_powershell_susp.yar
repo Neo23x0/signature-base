@@ -171,3 +171,17 @@ rule SUSP_PowerShell_String_K32_RemProcess {
    condition:
       uint16(0) == 0x7566 and filesize < 6000KB and 1 of them
 }
+
+rule PowerShell_JAB_B64 {
+   meta:
+      description = "Detects base464 encoded $ sign at the beginning of a string"
+      author = "Florian Roth"
+      reference = "https://twitter.com/ItsReallyNick/status/980915287922040832"
+      date = "2018-04-02"
+      score = 60
+   strings:
+      $s1 = "('JAB" ascii wide
+      $s2 = "powershell" nocase
+   condition:
+      filesize < 30KB and all of them
+}
