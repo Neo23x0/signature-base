@@ -4,6 +4,7 @@
 	Date: 2015-10-10
 	Identifier: Winnti Malware
 */
+import "pe"
 
 rule Winnti_signing_cert {
 	meta:
@@ -127,4 +128,21 @@ rule Winnti_malware_StreamPortal_Gen {
 		$s19 = "FwpsReferenceNetBufferList0" fullword ascii /* Goodware String - occured 5 times */
 	condition:
 		uint16(0) == 0x5a4d and filesize < 275KB and all of them
+}
+
+rule WINNTI_KingSoft_Moz_Confustion
+{
+meta:
+      description = "Detects WINNTI KingSoft Mozilla Confusion in PE Metadata"
+      author = "Markus Neis"
+      reference = "THOR APT Scanner"
+      date = "2018-04-13"
+      hash1 = "070ee4a40852b26ec0cfd79e32176287a6b9d2b15e377281d8414550a83f6496"
+strings:
+        $s1 = "winimage.com" ascii
+        $s2 = "PIPEWAIi" ascii
+        $s3 = "Insecure.Com" ascii
+        $s4 = "unzip 1.01" ascii
+condition:
+        1 of ($s*) and  (pe.imphash() == "7f01b23ccfd1017249c36bc1618d6892" or pe.version_info["LegalCopyright"] contains "Mozilla Corporation" and pe.version_info["ProductName"] contains "Kingsoft")
 }
