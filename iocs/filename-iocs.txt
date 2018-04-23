@@ -2989,4 +2989,10 @@ ystem32\\Microsoft\\Protect\\Windows\\svchost.exe;80
 \\23d\.exe;70
 \\89d\.exe;70
 
+# Orange Worm https://www.symantec.com/blogs/threat-intelligence/orangeworm-targets-healthcare-us-europe-asia
+\\Windows\\inf\\mkdiawb3\.PNF;65
+\\Windows\\inf\\mtmndkb32\.PNF;65
+\\Windows\\inf\\digirps\.PNF;65
+\\Windows\\inf\\e11\.PNF;65
+
 # End
