@@ -8194,3 +8194,13 @@ EEBFF21DEF49AF4E85C26523AF2AD659125A07A09DB50AC06BD3746483C89F9D;Coal.exe (Malic
 B6C21C26AEF75AD709F6C9CFA84BFA15B7EE709588382CE4BC3544A04BCEB661;23d.exe (Malicious executable) - https://goo.gl/i3prxY
 DB9B9FA9EFA53662EC27F4B74B79E745F54B6C30C547A4E5BD2754E9F635F6DB;89d.exe (Malicious executable) - https://goo.gl/i3prxY
 
+f3e3e25a822012023c6e81b206711865;Energetic Bear Hashes - ini.php
+f3e3e25a822012023c6e81b206711865;Energetic Bear Hashes - mysql.php
+c76470e85b7f3da46539b40e5c552712;Energetic Bear Hashes - opts.php
+155385cc19e3092765bcfed034b82ccb;Energetic Bear Hashes - error_log.php
+1644af9b6424e8f58f39c7fa5e76de51;Energetic Bear Hashes - code29.php
+1644af9b6424e8f58f39c7fa5e76de51;Energetic Bear Hashes - proxy87.php
+2292f5db385068e161ae277531b2e114;Energetic Bear Hashes - theme.php
+7ec514bbdc6dd8f606f803d39af8883f;Energetic Bear Hashes - sma.php
+78c31eff38fdb72ea3b1800ea917940f;Energetic Bear Hashes - media.php
+
