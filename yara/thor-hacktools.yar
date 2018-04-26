@@ -3856,7 +3856,7 @@ rule KeeTheft_EXE {
       $x6 = "*** Interesting... there are multiple .NET runtimes loaded in KeePass" fullword wide
       $x7 = "GetKcpPasswordInfo" fullword ascii
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 200KB and 1 of them )
+      ( uint16(0) == 0x5a4d and filesize < 200KB and 2 of them )
 }
 
 rule KeeTheft_Out_Shellcode {
