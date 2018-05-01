@@ -2686,7 +2686,6 @@ ystem32\\DumpExt\.dll;75
 \\xwk32\.exe;50
 \\Youtube\.exe;50
 \\YoutubeInstaller\.exe;50
-\\mozilla\.exe;70
 
 # Malware sample https://goo.gl/FDwDTw
 AppData\\svchost\.exe;80
@@ -2770,7 +2769,6 @@ ystem32\\drivers\\kifes\.sys;70
 \\scr\.exe;70
 \\upd\.bat;50
 \\~1171694\.dll;70
-\\mozilla\.exe;70
 \\httpconf\.aspx;50
 \\zervit32;70
 \\Chromex64\.exe;50
