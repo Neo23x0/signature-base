@@ -2998,4 +2998,11 @@ ystem32\\Microsoft\\Protect\\Windows\\svchost.exe;80
 \\AppData\\Local\\Temp\\HelperNT\.cab;80
 \\AppData\\Local\\Temp\\Gameover\.php;100
 
+# RedLeaves Hogfish Threat Analysis https://www.accenture.com/t20180423T055005Z__w__/se-en/_acnmedia/PDF-76/Accenture-Hogfish-Threat-Analysis.pdf
+\\Temp\\AYRUNSC\.exe;80
+\\Temp\\PTL\.AYM;80
+\\Startup\\GppiTEMms\.lnk;100
+\\Startup\\EaahLDRej\.lnk;100
+\\Startup\\BnorTEPkh\.lnk;100
+
 # End
