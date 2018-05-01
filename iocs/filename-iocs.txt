@@ -2993,4 +2993,9 @@ ystem32\\Microsoft\\Protect\\Windows\\svchost.exe;80
 \\Windows\\inf\\digirps\.PNF;65
 \\Windows\\inf\\e11\.PNF;65
 
+# Malicious sample https://app.any.run/tasks/b8f0a5d3-343f-47e2-b287-abbba9174d2a
+\\AppData\\Local\\Temp\\HelperNT\.txt;80
+\\AppData\\Local\\Temp\\HelperNT\.cab;80
+\\AppData\\Local\\Temp\\Gameover\.php;100
+
 # End
