@@ -8256,3 +8256,8 @@ fac94bc2dcfbef7c3b248927cb5abf6d;Orange Worm IOC https://goo.gl/VdrwgR - wmipsvr
 3b3a1062689ffa191e58d5507d39939d;Orange Worm IOC https://goo.gl/VdrwgR - wmiapsrvex.exe
 b59e4942f7c68c584a35d59e32adce3a;Orange Worm IOC https://goo.gl/VdrwgR - wmiapsrve.exe
 81e61e5f44a6a476983e7a90bdac6a55;Orange Worm IOC https://goo.gl/VdrwgR - WMIAPSRVCX.EXE
+f1df1a795eb784f7bfc3ba9a7e3b00ac;Fancy Bear - Lojack Double Agents - https://asert.arbornetworks.com/lojack-becomes-a-double-agent/
+6eaa1ff5f33df3169c209f98cc5012d0;Fancy Bear - Lojack Double Agents - https://asert.arbornetworks.com/lojack-becomes-a-double-agent/
+f3c6e16f0dd2b0e55a7dad365c3877d4;Fancy Bear - Lojack Double Agents - https://asert.arbornetworks.com/lojack-becomes-a-double-agent/
+cf45ec807321d12f8df35fa434591460;Fancy Bear - Lojack Double Agents - https://asert.arbornetworks.com/lojack-becomes-a-double-agent/
+f391556d9f89499fa8ee757cb3472710;Fancy Bear - Lojack Double Agents - https://asert.arbornetworks.com/lojack-becomes-a-double-agent/
