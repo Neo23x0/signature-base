@@ -8256,8 +8256,19 @@ fac94bc2dcfbef7c3b248927cb5abf6d;Orange Worm IOC https://goo.gl/VdrwgR - wmipsvr
 3b3a1062689ffa191e58d5507d39939d;Orange Worm IOC https://goo.gl/VdrwgR - wmiapsrvex.exe
 b59e4942f7c68c584a35d59e32adce3a;Orange Worm IOC https://goo.gl/VdrwgR - wmiapsrve.exe
 81e61e5f44a6a476983e7a90bdac6a55;Orange Worm IOC https://goo.gl/VdrwgR - WMIAPSRVCX.EXE
+
 f1df1a795eb784f7bfc3ba9a7e3b00ac;Fancy Bear - Lojack Double Agents - https://asert.arbornetworks.com/lojack-becomes-a-double-agent/
 6eaa1ff5f33df3169c209f98cc5012d0;Fancy Bear - Lojack Double Agents - https://asert.arbornetworks.com/lojack-becomes-a-double-agent/
 f3c6e16f0dd2b0e55a7dad365c3877d4;Fancy Bear - Lojack Double Agents - https://asert.arbornetworks.com/lojack-becomes-a-double-agent/
 cf45ec807321d12f8df35fa434591460;Fancy Bear - Lojack Double Agents - https://asert.arbornetworks.com/lojack-becomes-a-double-agent/
 f391556d9f89499fa8ee757cb3472710;Fancy Bear - Lojack Double Agents - https://asert.arbornetworks.com/lojack-becomes-a-double-agent/
+
+02AE075DA4FB2A6D38CE06F8F40E397E;Ocean Lotus Report by Tencent https://s.tencent.com/research/report/471.html (Document_GPI Invitation-UNSOOC China.doc)
+D7C172D4A88573B7E373F2B666C011AC;Ocean Lotus Report by Tencent https://s.tencent.com/research/report/471.html (GPI Invitation-UNSOOC China.doc)
+72A5AD375401F33A5079CAEE18884C9D;Ocean Lotus Report by Tencent https://s.tencent.com/research/report/471.html ({92BA1818-0119-4F79-874E-E3BF79C355B8}.dll)
+79D06DD20768FD8CD4A043833C1F2D4B;Ocean Lotus Report by Tencent https://s.tencent.com/research/report/471.html ({A96B020F-0000-466F-A96D-A91BBF8EAC96}.dll)\
+EC505565E4CB5A22BFD3F63E4AD83FF3;Ocean Lotus Report by Tencent https://s.tencent.com/research/report/471.html (HttpProv.dll)
+2559738D1BD4A999126F900C7357B759;Ocean Lotus Report by Tencent https://s.tencent.com/research/report/471.html (HttpProv.dll)
+2DFAEDD9265642E430E6635F210FABB4;Ocean Lotus Report by Tencent https://s.tencent.com/research/report/471.html (DnsProvider.dll)
+F775CC387A55831386E44DD00EF9723E;Ocean Lotus Report by Tencent https://s.tencent.com/research/report/471.html (rastls.dll)
+B10F93CDBCDF43D4C5C5770872E239F4;Ocean Lotus Report by Tencent https://s.tencent.com/research/report/471.html (OUTLFLTR.DAT)
