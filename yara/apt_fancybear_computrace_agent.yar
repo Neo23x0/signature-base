@@ -1,4 +1,4 @@
-rule MAL_FancyBear_ComputraceAgent {
+rule PUP_FancyBear_ComputraceAgent {
    meta:
       description = "Absolute Computrace Agent Executable"
       author = "ASERT - Arbor Networks (slightly modified by Florian Roth)"
