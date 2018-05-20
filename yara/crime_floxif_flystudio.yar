@@ -1,3 +1,5 @@
+import "pe"
+
 rule MAL_Floxif_Generic {
    meta:
       description = "Detects Floxif Malware"
