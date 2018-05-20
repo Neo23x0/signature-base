@@ -4037,3 +4037,183 @@ rule Lazagne_PW_Dumper {
    condition:
       3 of them
 }
+
+rule HKTL_shellpop_TCLsh {
+   meta:
+      description = "Detects suspicious TCLsh popshell"
+      author = "Tobias Michalski"
+      reference = "https://github.com/0x00-0x00/ShellPop"
+      date = "2018-05-18"
+      hash1 = "9f49d76d70d14bbe639a3c16763d3b4bee92c622ecb1c351cb4ea4371561e133"
+   strings:
+      $s1 = "{ puts -nonewline $s \"shell>\";flush $s;gets $s c;set e \"exec $c\";if" ascii
+   condition:
+      filesize < 1KB and 1 of them
+}
+
+rule HKTL_shellpop_ruby {
+   meta:
+      description = "Detects suspicious ruby shellpop"
+      author = "Tobias Michalski"
+      reference = "https://github.com/0x00-0x00/ShellPop"
+      date = "2018-05-18"
+      hash1 = "6b425b37f3520fd8c778928cc160134a293db0ce6d691e56a27894354b04f783"
+   strings:
+      $x1 = ");while(cmd=c.gets);IO.popen(cmd,'r'){" ascii
+   condition:
+      filesize < 1KB and all of them
+}
+
+rule HKTL_shellpop_awk {
+   meta:
+      description = "Detects suspicious AWK Shellpop"
+      author = "Tobias Michalski"
+      reference = "https://github.com/0x00-0x00/ShellPop"
+      date = "2018-05-18"
+      hash1 = "7513a0a0ba786b0e22a9a7413491b4011f60af11253c596fa6857fb92a6736fc"
+   strings:
+      $s1 = "awk 'BEGIN {s = \"/inet/tcp/0/" ascii
+      $s2 = "; while(42) " ascii
+   condition:
+      filesize < 1KB and 1 of them
+}
+
+rule HKTL_shellpop_Netcat_UDP {
+   meta:
+      description = "Detects suspicious netcat popshell"
+      author = "Tobias Michalski"
+      reference = "https://github.com/0x00-0x00/ShellPop"
+      date = "2018-05-18"
+      hash1 = "d823ad91b315c25893ce8627af285bcf4e161f9bbf7c070ee2565545084e88be"
+   strings:
+      $s1 = "mkfifo fifo ; nc.traditional -u" ascii
+      $s2 = "< fifo | { bash -i; } > fifo" fullword ascii
+   condition:
+      filesize < 1KB and 1 of them
+}
+
+rule HKTL_shellpop_socat {
+   meta:
+      description = "Detects suspicious socat popshell"
+      author = "Tobias Michalski"
+      reference = "https://github.com/0x00-0x00/ShellPop"
+      date = "2018-05-18"
+      hash1 = "267f69858a5490efb236628260b275ad4bbfeebf4a83fab8776e333ca706a6a0"
+   strings:
+      $s1 = "socat tcp-connect" ascii
+      $s2 = ",pty,stderr,setsid,sigint,sane" ascii
+   condition:
+      filesize < 1KB and 2 of them
+}
+
+rule HKTL_shellpop_Perl {
+   meta:
+      description = "dropzone - file PerlUDP"
+      author = "Tobias Michalski"
+      reference = "https://github.com/0x00-0x00/ShellPop"
+      date = "2018-05-18"
+      hash1 = "32c3e287969398a070adaad9b819ee9228174c9cb318d230331d33cda51314eb"
+   strings:
+      $ = "perl -e 'use IO::Socket::INET;$|=1;my ($s,$r);" ascii
+      $ = ";STDIN->fdopen(\\$c,r);$~->fdopen(\\$c,w);s" ascii
+   condition:
+      filesize < 2KB and 1 of them
+}
+
+rule HKTL_shellpop_Python {
+   meta:
+      description = "Detects malicious python shell"
+      author = "Tobias Michalski"
+      reference = "https://github.com/0x00-0x00/ShellPop"
+      date = "2018-05-18"
+      hash1 = "aee1c9e45a1edb5e462522e266256f68313e2ff5956a55f0a84f33bc6baa980b"
+   strings:
+      $ = "os.putenv('HISTFILE', '/dev/null');" ascii
+   condition:
+      filesize < 2KB and 1 of them
+}
+
+rule HKTL_shellpop_PHP_TCP {
+   meta:
+      description = "Detects malicious PHP shell"
+      author = "Tobias Michalski"
+      reference = "https://github.com/0x00-0x00/ShellPop"
+      date = "2018-05-18"
+      hash1 = "0412e1ab9c672abecb3979a401f67d35a4a830c65f34bdee3f87e87d060f0290"
+   strings:
+      $x1 = "php -r \"\\$sock=fsockopen" ascii
+      $x2 = ";exec('/bin/sh -i <&3 >&3 2>&3');\"" ascii
+   condition:
+      filesize < 3KB and all of them
+}
+
+rule HKTL_shellpop_Powershell_TCP {
+   meta:
+      description = "Detects malicious powershell"
+      author = "Tobias Michalski"
+      reference = "https://github.com/0x00-0x00/ShellPop"
+      date = "2018-05-18"
+      hash1 = "8328806700696ffe8cc37a0b81a67a6e9c86bb416364805b8aceaee5db17333f"
+   strings:
+      $ = "Something went wrong with execution of command on the target" ascii
+      $ = ";[byte[]]$bytes = 0..65535|%{0};$sendbytes =" ascii
+   condition:
+      filesize < 3KB and 1 of them
+}
+
+rule SUSP_Powershell_ShellCommand_May18_1 {
+   meta:
+      description = "Detects a supcicious powershell commandline"
+      author = "Tobias Michalski"
+      reference = "https://github.com/0x00-0x00/ShellPop"
+      date = "2018-05-18"
+      hash1 = "8328806700696ffe8cc37a0b81a67a6e9c86bb416364805b8aceaee5db17333f"
+   strings:
+      $x1 = "powershell -nop -ep bypass -Command" ascii
+   condition:
+      filesize < 3KB and 1 of them
+
+}
+
+rule HKTL_shellpop_Telnet_TCP {
+   meta:
+      description = "Detects malicious telnet shell"
+      author = "Tobias Michalski"
+      reference = "https://github.com/0x00-0x00/ShellPop"
+      date = "2018-05-18"
+      hash1 = "cf5232bae0364606361adafab32f19cf56764a9d3aef94890dda9f7fcd684a0e"
+   strings:
+      $x1 = "if [ -e /tmp/f ]; then rm /tmp/f;" ascii
+      $x2 = "0</tmp/f|/bin/bash 1>/tmp/f" fullword ascii
+   condition:
+      filesize < 3KB and 1 of them
+}
+
+rule SUSP_shellpop_Bash {
+   meta:
+      description = "Detects susupicious bash command"
+      author = "Tobias Michalski"
+      reference = "https://github.com/0x00-0x00/ShellPop"
+      date = "2018-05-18"
+      hash1 = "36fad575a8bc459d0c2e3ad626e97d5cf4f5f8bedc56b3cc27dd2f7d88ed889b"
+   strings:
+      $ = "/bin/bash -i >& /dev/tcp/" ascii
+   condition:
+      1 of them
+}
+
+rule HKTL_shellpop_netcat {
+   meta:
+      description = "Detects suspcious netcat shellpop"
+      author = "Tobias Michalski"
+      reference = "https://github.com/0x00-0x00/ShellPop"
+      date = "2018-05-18"
+      hash1 = "98e3324f4c096bb1e5533114249a9e5c43c7913afa3070488b16d5b209e015ee"
+   strings:
+      $s1 = "if [ -e /tmp/f ]; then rm /tmp/f;"  ascii
+      $s2 = "fi;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc" ascii
+      $s4 = "mknod /tmp/f p && nc" ascii
+      $s5 = "</tmp/f|/bin/bash 1>/tmp/f"  ascii
+    condition:
+      filesize < 2KB and 1 of them
+}
