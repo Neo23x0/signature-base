@@ -8272,3 +8272,8 @@ EC505565E4CB5A22BFD3F63E4AD83FF3;Ocean Lotus Report by Tencent https://s.tencent
 2DFAEDD9265642E430E6635F210FABB4;Ocean Lotus Report by Tencent https://s.tencent.com/research/report/471.html (DnsProvider.dll)
 F775CC387A55831386E44DD00EF9723E;Ocean Lotus Report by Tencent https://s.tencent.com/research/report/471.html (rastls.dll)
 B10F93CDBCDF43D4C5C5770872E239F4;Ocean Lotus Report by Tencent https://s.tencent.com/research/report/471.html (OUTLFLTR.DAT)
+
+E42a8cef2e70d4f3c96c2b8073e7d396;Patchwork activity - Collecting file modules - https://goo.gl/hDQizk
+0fa12f215b8c5cfed492d3c5ee2867b3;Patchwork activity - Keylogger module - https://goo.gl/hDQizk
+5c3456d5932544b779fe814133344fdb;Patchwork activity - Download the execution module - https://goo.gl/hDQizk
+F396b476413558266f3abd336e06cbfc;Patchwork activity - Download Execution Module [beta] - https://goo.gl/hDQizk
