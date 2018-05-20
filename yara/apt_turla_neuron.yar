@@ -105,7 +105,6 @@ rule Nautilus_forensic_artificats {
         $ = "Convert.FromBase64String(temp[1])" fullword ascii
         $ = "D68gq#5p0(3Ndsk!" fullword ascii
         $ = "dcomnetsrv" fullword ascii
-        $ = "errorfe.aspx.f5dba9b9.compiled" fullword ascii
         $ = "ERRORF~1.ASP" fullword ascii
         $ = "intelliAdminRpc" fullword ascii
         $ = "J8fs4F4rnP7nFl#f" fullword ascii

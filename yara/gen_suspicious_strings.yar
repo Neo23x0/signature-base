@@ -100,6 +100,7 @@ rule SUSP_PDB_Strings_Keylogger_Backdoor {
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2018-03-23"
+      score = 65
    strings:
       $ = "\\Release\\PrivilegeEscalation"
       $ = "\\Release\\KeyLogger"

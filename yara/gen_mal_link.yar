@@ -16,6 +16,9 @@ rule LNK_Malicious_Nov1 {
               00 20 00 22 00 63 00 6D 00 64 00 2E 00 65 00 78
               00 65 }
       $s3 = "%comspec%" ascii wide nocase fullword
+
+      $fp1 = "Microsoft Visual" ascii wide
    condition:
       ( uint32(0) == 0x0000004c and filesize < 4KB and $c1 and 1 of ($s*) )
+      and not 1 of ($fp*)
 }
