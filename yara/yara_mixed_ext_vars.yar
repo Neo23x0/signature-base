@@ -47,7 +47,7 @@ rule IronTiger_Gh0stRAT_variant
 		$str1 = "Game Over Good Luck By Wind" nocase wide ascii
 		$str2 = "ReleiceName" nocase wide ascii
 		$str3 = "jingtisanmenxiachuanxiao.vbs" nocase wide ascii
-		$str4 = "Winds Update" nocase wide ascii
+		$str4 = "Winds Update" nocase wide ascii fullword
 	condition:
 		uint16(0) == 0x5a4d and (any of ($str*))
 		and not filename == "UpdateSystemMib.exe"
