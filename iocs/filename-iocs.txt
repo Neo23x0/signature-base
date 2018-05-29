@@ -3005,4 +3005,34 @@ ystem32\\Microsoft\\Protect\\Windows\\svchost.exe;80
 \\Startup\\EaahLDRej\.lnk;100
 \\Startup\\BnorTEPkh\.lnk;100
 
+# File names found in Alina PoS malware https://goo.gl/xgFtwr
+\\icsicli\.exe;45
+\\zcopy\.exe;45
+\\mrc\.exe;45
+\\RcpPing\.exe;45
+\\sthc\.exe;45
+\\certutils\.exe;45
+\\upnpcnt\.exe;45
+\\systkey\.exe;45
+\\ktmutils\.exe;45
+\\findstg\.exe;45
+\\appidt\.exe;45
+\\autoch\.exe;45
+\\TmpInit\.exe;45
+\\winrcs\.exe;45
+\\dxtdiag\.exe;45
+\\wmusa\.exe;45
+\\sbdinst\.exe;45
+\\bcastdvs\.exe;45
+\\WAWHost\.exe;45
+\\OneDriveUi\.exe;45
+\\fontdvrhost\.exe;45
+\\tmcsetup\.exe;45
+\\esentut\.exe;45
+\\hdwiz\.exe;45
+\\dcmcnfg\.exe;45
+\\gscript\.exe;45
+\\ntlookup\.exe;45
+\\wxtract\.ex;45
+
 # End
