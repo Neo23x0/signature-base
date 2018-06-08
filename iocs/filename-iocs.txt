@@ -3035,4 +3035,8 @@ ystem32\\Microsoft\\Protect\\Windows\\svchost.exe;80
 \\ntlookup\.exe;45
 \\wxtract\.ex;45
 
+# QRAT https://www.volexity.com/blog/2018/06/07/patchwork-apt-group-targets-us-think-tanks/
+\\qrat\.exe;70
+\\microsoft_network\.exe;80
+
 # End
