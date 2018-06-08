@@ -71,7 +71,7 @@ rule Suspicious_Size_explorer_exe {
         uint16(0) == 0x5a4d
         and filename == "explorer.exe"
         and not filepath contains "teamviewer"
-        and ( filesize < 1000KB or filesize > 5000KB )
+        and ( filesize < 800KB or filesize > 5000KB )
 }
 
 rule Suspicious_Size_chrome_exe {

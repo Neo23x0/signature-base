@@ -94,27 +94,6 @@ rule CN_disclosed_20180208_Mal1 {
       )
 }
 
-rule CN_disclosed_20180208_Mal2 {
-   meta:
-      description = "Detects malware from disclosed CN malware set"
-      author = "Florian Roth"
-      reference = "https://www.virustotal.com/graph/#/selected/n120z79z208z189/drawer/graph-details"
-      date = "2018-02-08"
-      hash1 = "92bbb1c33bdc83b55285d52b96ada9b8296ce4293d43d364abaa924e6ffd7bd4"
-   strings:
-      $s1 = ": OpenProcessToken " fullword wide
-      $s2 = "Wave.exe" fullword ascii
-      $s3 = "/C:<Cmd> -- " fullword wide
-      $s4 = "Windows NT 4.0 Beta 2 " fullword wide
-      $s5 = ": AdjustTokenPrivileges " fullword wide
-      $s6 = "/T:<full path> -- " fullword wide
-   condition:
-      uint16(0) == 0x5a4d and filesize < 300KB and (
-        pe.imphash() == "6b41b49cb60c6234a51830ad22997a9b" or
-        5 of them
-      )
-}
-
 rule CN_disclosed_20180208_KeyLogger_1 {
    meta:
       description = "Detects malware from disclosed CN malware set"
