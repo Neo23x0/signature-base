@@ -34,6 +34,7 @@ rule Suspicious_PowerShell_Code_1 {
 		score = 60
       reference = "Internal Research"
       date = "2017-02-22"
+      type = "file"
    strings:
       $s1 = /$[a-z]=new-object net.webclient/ ascii
       $s2 = /$[a-z].DownloadFile\("http:/ ascii
