@@ -3039,4 +3039,12 @@ ystem32\\Microsoft\\Protect\\Windows\\svchost.exe;80
 \\qrat\.exe;70
 \\microsoft_network\.exe;80
 
+# LuckyMouse report https://securelist.com/luckymouse-hits-national-data-center/86083/
+\\Windows\\pcawhere\\thinprobe\.exe;100
+\\Windows\\pcawhere\\thinhostprobedll\.dll;100
+\\Windows\\pcawhere\\config\.ini;100
+\\ProgramData\\pcawhere\\thinprobe\.exe;100
+\\ProgramData\\pcawhere\\thinhostprobedll\.dll;100
+\\ProgramData\\pcawhere\\config\.ini;100
+
 # End
