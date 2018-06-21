@@ -101,7 +101,7 @@ rule OPCLEAVER_SynFlooder
 		score = 70
 	strings:
 		$s1 = "Unable to resolve [ %s ]. ErrorCode %d"
-		$s2 = "your target’s IP is : %s"
+		$s2 = "s IP is : %s"
 		$s3 = "Raw TCP Socket Created successfully."
 	condition:
 		all of them

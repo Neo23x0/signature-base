@@ -5,8 +5,8 @@ rule APT_DonotTeam_YTYframework : APT DonotTeam Windows {
       author = "James E.C, ProofPoint"
       description = "Modular malware framework with similarities to EHDevel"
       hashes = "1e0c1b97925e1ed90562d2c68971e038d8506b354dd6c1d2bcc252d2a48bc31c"
-      reference = "arbornetworks.com/blog/asert/don…"
-      reference2 = "labs.bitdefender.com/2017/09/ehdeve…"
+      reference = "arbornetworks.com/blog/asert/don"
+      reference2 = "labs.bitdefender.com/2017/09/ehdeve"
       date = "08-03-2018"
    strings:
       $x1 = "/football/download2/" ascii wide

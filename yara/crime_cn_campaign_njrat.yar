@@ -108,7 +108,7 @@ rule CN_disclosed_20180208_KeyLogger_1 {
       $x5 = "DoDownloadAndExecute" fullword ascii
       $x6 = "GetKeyloggeRLogs" fullword ascii
    condition:
-      uint16(0) == 0x5a4d and filesize < 1000KB and 1 of them
+      uint16(0) == 0x5a4d and filesize < 1000KB and 2 of them
 }
 
 rule CN_disclosed_20180208_Mal4 {
