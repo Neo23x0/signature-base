@@ -1,3 +1,5 @@
+import "pe"
+
 rule APT_ME_BigBang_Gen_Jul18_1 {
    meta:
       description = "Detects malware from Big Bang campaign against Palestinian authorities"
