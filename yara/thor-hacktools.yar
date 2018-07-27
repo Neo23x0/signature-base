@@ -4217,3 +4217,54 @@ rule HKTL_shellpop_netcat {
     condition:
       filesize < 2KB and 1 of them
 }
+
+
+rule HKTL_beRootexe {
+   meta:
+      description = "Detects beRoot.exe which checks common Windows missconfigurations"
+      author = "yarGen Rule Generator"
+      reference = "https://github.com/AlessandroZ/BeRoot/tree/master/Windows"
+      date = "2018-07-25"
+      hash1 = "865b3b8ec9d03d3475286c3030958d90fc72b21b0dca38e5bf8e236602136dd7"
+   strings:
+      $s1 = "checks.webclient.secretsdump(" fullword ascii
+      $s2 = "beroot.modules" fullword ascii
+      $s3 = "beRoot.exe.manifest" fullword ascii
+   condition:
+      ( uint16(0) == 0x5a4d and
+        filesize < 18000KB and
+        1 of them)
+}
+
+rule HKTL_beRootexe_output {
+   meta:
+      description = "Detects the output of beRoot.exe"
+      author = "Tobias Michalski"
+      reference = "https://github.com/AlessandroZ/BeRoot/tree/master/Windows"
+      date = "2018-07-25"
+   strings:
+      $s1 = "permissions: {'change_config'" fullword wide
+      $s2 = "Full path: C:\\Windows\\system32\\msiexec.exe /V" fullword wide
+      $s3 = "Full path: C:\\Windows\\system32\\svchost.exe -k DevicesFlow" fullword wide
+      $s4 = "! BANG BANG !" fullword wide
+   condition:
+      filesize < 400KB and 3 of them
+}
+
+rule HKTL_EmbeddedPDF {
+   meta:
+      description = "Detects Embedded PDFs which can start malicious content"
+      author = "Tobias Michalski"
+      reference = "https://twitter.com/infosecn1nja/status/1021399595899731968?s=12"
+      date = "2018-07-25"
+   strings:
+      $x1 = "/Type /Action\n /S /JavaScript\n /JS (this.exportDataObject({" fullword ascii
+
+      $s1 = "(This PDF document embeds file" fullword ascii
+      $s2 = "/Names << /EmbeddedFiles << /Names" fullword ascii
+      $s3 = "/Type /EmbeddedFile" fullword ascii
+
+   condition:
+      uint16(0) == 0x5025 and
+      2 of ($s*) and $x1
+}
