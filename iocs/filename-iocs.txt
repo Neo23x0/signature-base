@@ -2051,7 +2051,7 @@ ystem32\\lcsvsvc\.dll;80
 #([C-Zc-z]:|\\\\).{1,40}\\explorer\.exe$;65;(?i)(HKCR\\Applications|winsxs|WinSxS|WINXP|WINDOWS|Windows|i386|WINXP|WINDOWS|Win2k|WINNT|Windows|windows|%SystemRoot%|%system32%)\\
 
 # Other missplaced stuff you probably want to be aware of
-#([C-Zc-z]:|\\\\).{1,40}\\(cmd|lsass|rundll|rundll32|net|net1|taskeng|conhost|powershell)\.exe;65;(?i)(HKCR\\Applications|System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE|dllcache|WINXP|WINDOWS|i386|anti-malware|%system32%|activation_config|Logging|ADDriver)\\
+#([C-Zc-z]:|\\\\).{1,40}\\(cmd|lsass|rundll|rundll32|net|net1|taskeng|conhost|powershell)\.exe;65;(?i)(HKCR\\Applications|System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE|dllcache|WINXP|WINDOWS|i386|anti-malware|%system32%|activation_config|Logging|ADDriver|cmd\.exe\.lnk)\\
 
 # Archivers on odd locations
 #\\rar(32|64)?\.exe;60;(?i)(\\WinRAR|\\wrar)
@@ -2066,7 +2066,7 @@ ystem32\\lcsvsvc\.dll;80
 \\svchost\.\.exe;76
 \\rundll64\.exe;76
 
-# Stuf running where it normally shouldn't
+# Stuff running where it normally shouldn't
 \\((Users|Documents and Settings))\\[^\\]{1,20}\.(exe|dll);65
 \\(Users|Documents and Settings)\\[^\\]{1,20}\\[^\\]{1,20}\.(exe|dll|vbs|bat|ps1);40
 \\(Users|Documents and Settings)\\NetworkService\\[^\\]{1,20}\.(exe|dll);60
