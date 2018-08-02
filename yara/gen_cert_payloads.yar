@@ -11,5 +11,8 @@ rule SUSP_certificate_payload {
       uint32(0) == 0x2D2D2D2D
       and $re1 at 0
       /* not 'M' at position 29, which is after the BEGIN CERTIFICATE header plus line break */
+      /* \r\n */
       and not uint8(29) == 0x4D
+      /* \n */
+      and not uint8(28) == 0x4D
 }
