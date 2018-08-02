@@ -6,6 +6,8 @@
    Reference: https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html
 */
 
+import "pe"
+
 /* Rule Set ----------------------------------------------------------------- */
 
 rule APT_FIN7_Strings_Aug18_1 {
