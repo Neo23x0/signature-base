@@ -779,7 +779,6 @@ AppData\\adobe\\adobe\.dat;65
 \\sichost\.exe;45
 \\slchost\.exe;45
 \\slihost\.exe;45
-\\smsvchost\.exe;45
 \\snahost\.exe;45
 \\snhost\.exe;45
 \\snphost\.exe;45
