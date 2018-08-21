@@ -3050,4 +3050,7 @@ ystem32\\Microsoft\\Protect\\Windows\\svchost.exe;80
 \\AppData\\Oracle\\bin\\javaw\.exe;60
 \\AppData\\Roaming\\Oracle\\javaw\.exe;80
 
+# Insikt Report https://www.recordedfuture.com/chinese-cyberespionage-operations/
+/usr/bin/ext4;70
+
 # End
