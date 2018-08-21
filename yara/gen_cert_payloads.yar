@@ -7,6 +7,8 @@ rule SUSP_certificate_payload {
       score = 50
    strings:
       $re1 = "-----BEGIN CERTIFICATE-----"
+
+      $fp1 = "replace it with the PEM-encoded root certificate"
    condition:
       uint32(0) == 0x2D2D2D2D
       and $re1 at 0
@@ -15,4 +17,5 @@ rule SUSP_certificate_payload {
       and not uint8(29) == 0x4D
       /* \n */
       and not uint8(28) == 0x4D
+      and not 1 of ($fp*)
 }
