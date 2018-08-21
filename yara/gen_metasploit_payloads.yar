@@ -287,7 +287,7 @@ rule Msfpayloads_msf_ref {
       5 of them
 }
 
-rule MAL_Metasploit_Framwork_UA {
+rule MAL_Metasploit_Framework_UA {
    meta:
       description = "Detects User Agent used in Metasploit Framework"
       author = "Florian Roth"
