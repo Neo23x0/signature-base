@@ -149,8 +149,11 @@ rule WScript_Shell_PowerShell_Combo {
       $p1 = "powershell.exe" fullword ascii
       $p2 = "-ExecutionPolicy Bypass" fullword ascii
       $p3 = "[System.Convert]::FromBase64String(" ascii
+
+      $fp1 = "Copyright: Microsoft Corp." ascii
    condition:
       filesize < 400KB and $s1 and 1 of ($p*)
+      and not 1 of ($fp*)
 }
 
 rule SUSP_PowerShell_String_K32_RemProcess {
