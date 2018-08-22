@@ -3053,4 +3053,11 @@ ystem32\\Microsoft\\Protect\\Windows\\svchost.exe;80
 # Insikt Report https://www.recordedfuture.com/chinese-cyberespionage-operations/
 /usr/bin/ext4;70
 
+# Turla Outlook Backdoor https://www.welivesecurity.com/2018/08/22/turla-unique-outlook-backdoor/
+\\Microsoft\\Windows\\scawrdot\.db;100
+\\Microsoft\\Windows\\flobcsnd\.dat;100
+\\mapid\.tlb;60
+\\cbmsfgrc\.dat;60
+\\mswmpdat\.tlb;60
+
 # End
