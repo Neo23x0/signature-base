@@ -3060,4 +3060,11 @@ ystem32\\Microsoft\\Protect\\Windows\\svchost.exe;80
 \\cbmsfgrc\.dat;60
 \\mswmpdat\.tlb;60
 
+# Lazarus - Operation Applejeus https://securelist.com/operation-applejeus/87553/
+:\\Recovery\\msn\.exe;80
+:\\Recovery\\msndll\.log;80
+\\Windows\\msn\.exe;80
+ystem32\\uploadmgrsvc\.dll;80
+ystem32\\uploadmgr\.dat;80
+
 # End
