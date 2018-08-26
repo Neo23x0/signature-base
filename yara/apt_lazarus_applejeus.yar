@@ -91,42 +91,6 @@ rule APT_FallChill_RC4_Keys {
                 c7 ?? ?? 0c 27 95 87
                 c7 ?? ?? 17 57 a4 d6
                 c7 ?? ?? ea e3 82 2b }
-      $cod1 = { c7 ?? ?? 6c b3 4a f5
-                c7 ?? ?? 51 b3 fb 63
-                c7 ?? ?? df 6c 9b 86
-                c7 ?? ?? 90 0c f0 44 }
-      $cod2 = { c7 ?? ?? 21 69 4c 8d
-                c7 ?? ?? b6 23 4d f7
-                c7 ?? ?? 41 02 e8 b5
-                c7 ?? ?? 99 4b 76 27 }
-      $cod3 = { c7 ?? ?? 5a d7 d3 5f
-                c7 ?? ?? 06 17 59 5f
-                c7 ?? ?? 26 d5 65 a3
-                c7 ?? ?? b7 eb c6 d0 }
-      $cod4 = { c7 ?? ?? c5 01 ea 6c
-                c7 ?? ?? 56 ba 91 33
-                c7 ?? ?? c3 c2 6a 7d
-                c7 ?? ?? 5e d4 ce 49 }
-      $cod5 = { c7 ?? ?? ca fd a7 b3
-                c7 ?? ?? e9 a4 f8 6d
-                c7 ?? ?? 4b d0 05 07
-                c7 ?? ?? 50 40 a7 12 }
-      $cod6 = { c7 ?? ?? ce a1 a6 36
-                c7 ?? ?? 56 fb 19 9d
-                c7 ?? ?? d5 ab 90 52
-                c7 ?? ?? 81 88 e8 7c }
-      $cod7 = { c7 ?? ?? 6b 06 12 67
-                c7 ?? ?? c7 dd eb 16
-                c7 ?? ?? 03 68 12 8a
-                c7 ?? ?? 93 3d 38 be }
-      $cod8 = { c7 ?? ?? 56 f5 08 8f
-                c7 ?? ?? 48 8e 50 99
-                c7 ?? ?? 9e e6 cc ed
-                c7 ?? ?? 1f 5d d6 aa }
-      $cod9 = { c7 ?? ?? cd 67 96 f3
-                c7 ?? ?? 24 ec b7 cf
-                c7 ?? ?? 34 bc 9b c3
-                c7 ?? ?? 8c e4 e6 49 }
    condition:
       uint16(0) == 0x5a4d and 1 of them
 }
