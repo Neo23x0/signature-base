@@ -10,6 +10,7 @@
 rule APT28_CHOPSTICK {
 	meta:
 		description = "Detects a malware that behaves like CHOPSTICK mentioned in APT28 report"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://goo.gl/v3ebal"
 		date = "2015-06-02"
@@ -91,4 +92,3 @@ rule APT28_SourFace_Malware3 {
 	condition:
 		uint16(0) == 0x5a4d and filesize < 550KB and all of them
 }
-

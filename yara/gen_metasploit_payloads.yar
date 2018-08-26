@@ -10,6 +10,7 @@
 rule Msfpayloads_msf {
    meta:
       description = "Metasploit Payloads - file msf.sh"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-02-09"
@@ -23,6 +24,7 @@ rule Msfpayloads_msf {
 rule Msfpayloads_msf_2 {
    meta:
       description = "Metasploit Payloads - file msf.asp"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-02-09"
@@ -38,6 +40,7 @@ rule Msfpayloads_msf_2 {
 rule Msfpayloads_msf_psh {
    meta:
       description = "Metasploit Payloads - file msf-psh.vba"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-02-09"
@@ -53,6 +56,7 @@ rule Msfpayloads_msf_psh {
 rule Msfpayloads_msf_exe {
    meta:
       description = "Metasploit Payloads - file msf-exe.vba"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-02-09"
@@ -71,6 +75,7 @@ rule Msfpayloads_msf_exe {
 rule Msfpayloads_msf_3 {
    meta:
       description = "Metasploit Payloads - file msf.psh"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-02-09"
@@ -94,6 +99,7 @@ rule Msfpayloads_msf_3 {
 rule Msfpayloads_msf_4 {
    meta:
       description = "Metasploit Payloads - file msf.aspx"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-02-09"
@@ -111,6 +117,7 @@ rule Msfpayloads_msf_4 {
 rule Msfpayloads_msf_exe_2 {
    meta:
       description = "Metasploit Payloads - file msf-exe.aspx"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-02-09"
@@ -127,6 +134,7 @@ rule Msfpayloads_msf_exe_2 {
 rule Msfpayloads_msf_5 {
    meta:
       description = "Metasploit Payloads - file msf.msi"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-02-09"
@@ -142,6 +150,7 @@ rule Msfpayloads_msf_5 {
 rule Msfpayloads_msf_6 {
    meta:
       description = "Metasploit Payloads - file msf.vbs"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-02-09"
@@ -161,6 +170,7 @@ rule Msfpayloads_msf_6 {
 rule Msfpayloads_msf_7 {
    meta:
       description = "Metasploit Payloads - file msf.vba"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-02-09"
@@ -176,6 +186,7 @@ rule Msfpayloads_msf_7 {
 rule Msfpayloads_msf_8 {
    meta:
       description = "Metasploit Payloads - file msf.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-02-09"
@@ -195,6 +206,7 @@ rule Msfpayloads_msf_8 {
 rule Msfpayloads_msf_cmd {
    meta:
       description = "Metasploit Payloads - file msf-cmd.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-02-09"
@@ -208,6 +220,7 @@ rule Msfpayloads_msf_cmd {
 rule Msfpayloads_msf_9 {
    meta:
       description = "Metasploit Payloads - file msf.war - contents"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-02-09"
@@ -227,6 +240,7 @@ rule Msfpayloads_msf_9 {
 rule Msfpayloads_msf_10 {
    meta:
       description = "Metasploit Payloads - file msf.exe"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-02-09"
@@ -242,6 +256,7 @@ rule Msfpayloads_msf_10 {
 rule Msfpayloads_msf_svc {
    meta:
       description = "Metasploit Payloads - file msf-svc.exe"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-02-09"
@@ -256,6 +271,7 @@ rule Msfpayloads_msf_svc {
 rule Msfpayloads_msf_11 {
    meta:
       description = "Metasploit Payloads - file msf.hta"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-02-09"
@@ -271,6 +287,7 @@ rule Msfpayloads_msf_11 {
 rule Msfpayloads_msf_ref {
    meta:
       description = "Metasploit Payloads - file msf-ref.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-02-09"
@@ -290,6 +307,7 @@ rule Msfpayloads_msf_ref {
 rule MAL_Metasploit_Framework_UA {
    meta:
       description = "Detects User Agent used in Metasploit Framework"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/rapid7/metasploit-framework/commit/12a6d67be48527f5d3987e40cac2a0cbb4ab6ce7"
       date = "2018-08-16"

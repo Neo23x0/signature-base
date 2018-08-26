@@ -10,6 +10,7 @@
 rule Invoke_OSiRis {
    meta:
       description = "Osiris Device Guard Bypass - file Invoke-OSiRis.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-03-27"

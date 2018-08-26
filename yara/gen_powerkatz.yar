@@ -9,6 +9,7 @@
 rule Powerkatz_DLL_Generic {
 	meta:
 		description = "Detects Powerkatz - a Mimikatz version prepared to run in memory via Powershell (overlap with other Mimikatz versions is possible)"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "PowerKatz Analysis"
 		date = "2016-02-05"

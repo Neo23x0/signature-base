@@ -59,6 +59,7 @@ rule apt_duqu2_drivers {
 rule Duqu2_Generic1 {
 	meta:
 		description = "Kaspersky APT Report - Duqu2 Sample - Generic Rule"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://goo.gl/7yKyOj"
 		date = "2015-06-10"
@@ -88,6 +89,7 @@ rule Duqu2_Generic1 {
 rule APT_Kaspersky_Duqu2_procexp {
 	meta:
 		description = "Kaspersky APT Report - Duqu2 Sample - Malicious MSI"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://goo.gl/7yKyOj"
 		date = "2015-06-10"
@@ -110,6 +112,7 @@ rule APT_Kaspersky_Duqu2_procexp {
 rule APT_Kaspersky_Duqu2_SamsungPrint {
 	meta:
 		description = "Kaspersky APT Report - Duqu2 Sample - file 2a9a5afc342cde12c6eb9a91ad29f7afdfd8f0fb17b983dcfddceccfbc17af69"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://goo.gl/7yKyOj"
 		date = "2015-06-10"
@@ -128,6 +131,7 @@ rule APT_Kaspersky_Duqu2_SamsungPrint {
 rule APT_Kaspersky_Duqu2_msi3_32 {
 	meta:
 		description = "Kaspersky APT Report - Duqu2 Sample - file d8a849654ab97debaf28ae5b749c3b1ff1812ea49978713853333db48c3972c3"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://goo.gl/7yKyOj"
 		date = "2015-06-10"

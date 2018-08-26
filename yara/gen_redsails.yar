@@ -11,6 +11,7 @@
 rule redSails_EXE {
    meta:
       description = "Detects Red Sails Hacktool by WinDivert references"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/BeetleChunks/redsails"
       date = "2017-10-02"
@@ -25,6 +26,7 @@ rule redSails_EXE {
 rule redSails_PY {
    meta:
       description = "Detects Red Sails Hacktool - Python"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/BeetleChunks/redsails"
       date = "2017-10-02"

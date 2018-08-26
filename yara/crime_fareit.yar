@@ -8,6 +8,7 @@
 rule Fareit_Trojan_Oct15 {
 	meta:
 		description = "Detects Fareit Trojan from Sep/Oct 2015 Wave"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://goo.gl/5VYtlU"
 		date = "2015-10-18"

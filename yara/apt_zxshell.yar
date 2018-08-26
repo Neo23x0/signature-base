@@ -12,6 +12,7 @@
 rule ZxShell_Related_Malware_CN_Group_Jul17_1 {
    meta:
       description = "Detects a ZxShell related sample from a CN threat group"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://blogs.rsa.com/cat-phishing/"
       date = "2017-07-08"
@@ -30,6 +31,7 @@ rule ZxShell_Related_Malware_CN_Group_Jul17_1 {
 rule ZxShell_Related_Malware_CN_Group_Jul17_2 {
    meta:
       description = "Detects a ZxShell related sample from a CN threat group"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://blogs.rsa.com/cat-phishing/"
       date = "2017-07-08"
@@ -56,6 +58,7 @@ rule ZxShell_Related_Malware_CN_Group_Jul17_2 {
 rule ZxShell_Related_Malware_CN_Group_Jul17_3 {
    meta:
       description = "Detects a ZxShell related sample from a CN threat group"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://blogs.rsa.com/cat-phishing/"
       date = "2017-07-08"
@@ -70,6 +73,7 @@ rule ZxShell_Related_Malware_CN_Group_Jul17_3 {
 rule ZxShell_Jul17 {
    meta:
       description = "Detects a ZxShell - CN threat group"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://blogs.rsa.com/cat-phishing/"
       date = "2017-07-08"
@@ -107,6 +111,7 @@ import "pe"
 rule ZXshell_20171211_chrsben {
    meta:
       description = "Detects ZxShell variant surfaced in Dec 17"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/snc85M"
       date = "2017-12-11"

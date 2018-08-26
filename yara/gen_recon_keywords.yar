@@ -12,6 +12,7 @@
 rule Recon_Commands_Windows_Gen1 {
    meta:
       description = "Detects a set of reconnaissance commands on Windows systems"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-07-10"

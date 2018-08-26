@@ -1,6 +1,7 @@
 rule MAL_OSX_FancyBear_Agent_Jul18_1 {
    meta:
       description = "Detects FancyBear Agent for OSX"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://twitter.com/DrunkBinary/status/1018448895054098432"
       date = "2018-07-15"

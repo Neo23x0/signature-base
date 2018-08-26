@@ -2,6 +2,7 @@
 rule ChinaChopper_Generic {
 	meta:
 		description = "China Chopper Webshells - PHP and ASPX"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www.fireeye.com/content/dam/legacy/resources/pdfs/fireeye-china-chopper-report.pdf"
 		date = "2015/03/10"

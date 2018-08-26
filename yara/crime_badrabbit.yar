@@ -11,6 +11,7 @@
 rule BadRabbit_Gen {
    meta:
       description = "Detects BadRabbit Ransomware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://pastebin.com/Y7pJv3tK"
       date = "2017-10-25"
@@ -40,6 +41,7 @@ rule BadRabbit_Gen {
 rule BadRabbit_Mimikatz_Comp {
    meta:
       description = "Auto-generated rule - file 2f8c54f9fa8e47596a3beff0031f85360e56840c77f71c6a573ace6f46412035"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://pastebin.com/Y7pJv3tK"
       date = "2017-10-25"

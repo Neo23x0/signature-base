@@ -11,6 +11,7 @@
 rule IceFog_Malware_Feb18_1 {
    meta:
       description = "Detects IceFog malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://twitter.com/ClearskySec/status/968104465818669057"
       date = "2018-02-26"

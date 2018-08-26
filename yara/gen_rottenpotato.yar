@@ -10,6 +10,7 @@
 rule RottenPotato_Potato {
    meta:
       description = "Detects a component of privilege escalation tool Rotten Potato - file Potato.exe"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/foxglovesec/RottenPotato"
       date = "2017-02-07"

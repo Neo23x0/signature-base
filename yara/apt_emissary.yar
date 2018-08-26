@@ -8,6 +8,7 @@
 rule Emissary_APT_Malware_1 {
 	meta:
 		description = "Detect Emissary Malware - from samples A08E81B411.DAT, ishelp.dll"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://goo.gl/V0epcf"
 		date = "2016-01-02"

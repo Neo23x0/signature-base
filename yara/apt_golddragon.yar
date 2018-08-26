@@ -13,6 +13,7 @@ import "pe"
 rule GoldDragon_malware_Feb18_1 {
    meta:
       description = "Detects malware from Gold Dragon report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://securingtomorrow.mcafee.com/mcafee-labs/gold-dragon-widens-olympics-malware-attacks-gains-permanent-presence-on-victims-systems/"
       date = "2018-02-03"
@@ -29,6 +30,7 @@ rule GoldDragon_malware_Feb18_1 {
 rule GoldDragon_Aux_File {
    meta:
       description = "Detects export from Gold Dragon - February 2018"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://securingtomorrow.mcafee.com/mcafee-labs/gold-dragon-widens-olympics-malware-attacks-gains-permanent-presence-on-victims-systems/"
       date = "2018-02-03"
@@ -42,6 +44,7 @@ rule GoldDragon_Aux_File {
 rule GoldDragon_Ghost419_RAT {
    meta:
       description = "Detects Ghost419 RAT from Gold Dragon report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/rW1yvZ"
       date = "2018-02-03"
@@ -82,6 +85,7 @@ rule GoldDragon_Ghost419_RAT {
 rule GoldDragon_RunningRAT {
    meta:
       description = "Detects Running RAT from Gold Dragon report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/rW1yvZ"
       date = "2018-02-03"
@@ -122,6 +126,7 @@ rule GoldDragon_RunningRAT {
 rule GoldDragon_RunnignRAT {
    meta:
       description = "Detects Running RAT malware from Gold Dragon report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/rW1yvZ"
       date = "2018-02-03"

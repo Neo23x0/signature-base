@@ -1,6 +1,7 @@
 rule PLEAD_Downloader_Jun18_1 {
    meta:
       description = "Detects PLEAD Downloader"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://blog.jpcert.or.jp/2018/06/plead-downloader-used-by-blacktech.html"
       date = "2018-06-16"

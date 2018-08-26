@@ -2,6 +2,7 @@
 rule CrunchRAT {
    meta:
       description = "Detects CrunchRAT - file CrunchRAT.exe"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/t3ntman/CrunchRAT"
       date = "2017-11-03"

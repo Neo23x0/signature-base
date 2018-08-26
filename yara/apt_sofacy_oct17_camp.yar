@@ -13,6 +13,7 @@ import "pe"
 rule Sofacy_Oct17_1 {
    meta:
       description = "Detects Sofacy malware reported in October 2017"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "http://blog.talosintelligence.com/2017/10/cyber-conflict-decoy-document.html"
       date = "2017-10-23"
@@ -47,6 +48,7 @@ rule Sofacy_Oct17_1 {
 rule Sofacy_Oct17_2 {
    meta:
       description = "Detects Sofacy malware reported in October 2017"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "http://blog.talosintelligence.com/2017/10/cyber-conflict-decoy-document.html"
       date = "2017-10-23"

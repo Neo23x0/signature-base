@@ -2,6 +2,7 @@
 rule PoisonIvy_Generic_3 {
 	meta:
 		description = "PoisonIvy RAT Generic Rule"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		date = "2015-05-14"
 		hash = "e1cbdf740785f97c93a0a7a01ef2614be792afcd"

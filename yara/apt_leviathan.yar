@@ -11,6 +11,7 @@
 rule SeDLL_Javascript_Decryptor {
    meta:
       description = "Detects SeDll - DLL is used for decrypting and executing another JavaScript backdoor such as Orz"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/MZ7dRg"
       date = "2017-10-18"
@@ -31,6 +32,7 @@ rule SeDLL_Javascript_Decryptor {
 rule Leviathan_CobaltStrike_Sample_1 {
    meta:
       description = "Detects Cobalt Strike sample from Leviathan report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/MZ7dRg"
       date = "2017-10-18"
@@ -53,6 +55,7 @@ rule Leviathan_CobaltStrike_Sample_1 {
 rule MockDll_Gen {
    meta:
       description = "Detects MockDll - regsvr DLL loader"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/MZ7dRg"
       date = "2017-10-18"
@@ -71,6 +74,7 @@ rule MockDll_Gen {
 rule VBScript_Favicon_File {
    meta:
       description = "VBScript cloaked as Favicon file used in Leviathan incident"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/MZ7dRg"
       date = "2017-10-18"

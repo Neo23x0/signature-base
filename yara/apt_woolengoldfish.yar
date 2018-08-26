@@ -13,6 +13,7 @@
 rule WoolenGoldfish_Sample_1 {
 	meta:
 		description = "Detects a operation Woolen-Goldfish sample - http://goo.gl/NpJpVZ"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://goo.gl/NpJpVZ"
 		date = "2015/03/25"
@@ -28,6 +29,7 @@ rule WoolenGoldfish_Sample_1 {
 rule WoolenGoldfish_Generic_1 {
 	meta:
 		description = "Detects a operation Woolen-Goldfish sample - http://goo.gl/NpJpVZ"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://goo.gl/NpJpVZ"
 		date = "2015/03/25"
@@ -58,6 +60,7 @@ rule WoolenGoldfish_Generic_1 {
 rule WoolenGoldfish_Generic_2 {
 	meta:
 		description = "Detects a operation Woolen-Goldfish sample - http://goo.gl/NpJpVZ"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://goo.gl/NpJpVZ"
 		date = "2015/03/25"
@@ -75,6 +78,7 @@ rule WoolenGoldfish_Generic_2 {
 rule WoolenGoldfish_Generic_3 {
 	meta:
 		description = "Detects a operation Woolen-Goldfish sample - http://goo.gl/NpJpVZ"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://goo.gl/NpJpVZ"
 		date = "2015/03/25"

@@ -10,6 +10,7 @@
 rule SeaDuke_Sample {
 	meta:
 		description = "SeaDuke Malware - file 3eb86b7b067c296ef53e4857a74e09f12c2b84b666fc130d1f58aec18bc74b0d"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://goo.gl/MJ0c2M"
 		date = "2015-07-14"

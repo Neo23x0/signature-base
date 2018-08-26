@@ -13,6 +13,7 @@ import "pe"
 rule Datper_Backdoor {
    meta:
       description = "Detects Datper Malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "http://blog.jpcert.or.jp/2017/08/detecting-datper-malware-from-proxy-logs.html"
       date = "2017-08-21"

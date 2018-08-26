@@ -11,6 +11,7 @@
 rule Zeus_Panda {
    meta:
       description = "Detects ZEUS Panda Malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://cyberwtf.files.wordpress.com/2017/07/panda-whitepaper.pdf"
       date = "2017-08-04"

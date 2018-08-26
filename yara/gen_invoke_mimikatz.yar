@@ -10,6 +10,7 @@
 rule Invoke_Mimikatz {
 	meta:
 		description = "Detects Invoke-Mimikatz String"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://github.com/clymb3r/PowerShell/tree/master/Invoke-Mimikatz"
 		date = "2016-08-03"

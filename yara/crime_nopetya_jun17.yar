@@ -12,6 +12,7 @@
 rule NotPetya_Ransomware_Jun17 {
    meta:
       description = "Detects new NotPetya Ransomware variant from June 2017"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/h6iaGj"
       date = "2017-06-27"

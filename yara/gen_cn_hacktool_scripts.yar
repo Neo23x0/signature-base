@@ -10,7 +10,8 @@
 rule CN_Tools_xbat {
     meta:
         description = "Chinese Hacktool Set - file xbat.vbs"
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
         hash = "a7005acda381a09803b860f04d4cae3fdb65d594"
@@ -24,7 +25,8 @@ rule CN_Tools_xbat {
 rule CN_Tools_Temp {
     meta:
         description = "Chinese Hacktool Set - file Temp.war"
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
         hash = "c3327ef63b0ed64c4906e9940ef877c76ebaff58"
@@ -40,7 +42,8 @@ rule CN_Tools_Temp {
 rule CN_Tools_srss {
     meta:
         description = "Chinese Hacktool Set - file srss.bat"
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
         hash = "092ab0797947692a247fe80b100fb4df0f9c37a0"
@@ -54,7 +57,8 @@ rule CN_Tools_srss {
 rule dll_UnReg {
     meta:
         description = "Chinese Hacktool Set - file UnReg.bat"
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
         hash = "d5e24ba86781c332d0c99dea62f42b14e893d17e"
@@ -68,7 +72,8 @@ rule dll_UnReg {
 rule dll_Reg {
     meta:
         description = "Chinese Hacktool Set - file Reg.bat"
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
         hash = "cb8a92fe256a3e5b869f9564ecd1aa9c5c886e3f"
@@ -82,7 +87,8 @@ rule dll_Reg {
 rule sbin_squid {
     meta:
         description = "Chinese Hacktool Set - file squid.bat"
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
         hash = "8b795a8085c3e6f3d764ebcfe6d59e26fdb91969"
@@ -98,7 +104,8 @@ rule sbin_squid {
 rule sql1433_creck {
     meta:
         description = "Chinese Hacktool Set - file creck.bat"
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
         hash = "189c11a3b268789a3fbcfac3bd4e03cbfde87b1d"
@@ -113,7 +120,8 @@ rule sql1433_creck {
 rule sql1433_Start {
     meta:
         description = "Chinese Hacktool Set - file Start.bat"
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
         hash = "bd4be10f4c3a982647b2da1a8fb2e19de34eaf01"

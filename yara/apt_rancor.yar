@@ -13,6 +13,7 @@ import "pe"
 rule APT_RANCOR_JS_Malware {
    meta:
       description = "dropzone - file 1dc5966572e94afc2fbcf8e93e3382eef4e4d7b5bc02f24069c403a28fa6a458"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2018/06/unit42-rancor-targeted-attacks-south-east-asia-using-plaintee-ddkong-malware-families/"
       date = "2018-06-26"
@@ -28,6 +29,7 @@ rule APT_RANCOR_JS_Malware {
 rule APT_RANCOR_PLAINTEE_Variant {
    meta:
       description = "Detects PLAINTEE malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2018/06/unit42-rancor-targeted-attacks-south-east-asia-using-plaintee-ddkong-malware-families/"
       date = "2018-06-26"
@@ -47,6 +49,7 @@ rule APT_RANCOR_PLAINTEE_Variant {
 rule APT_RANCOR_PLAINTEE_Malware_Exports {
    meta:
       description = "Detects PLAINTEE malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2018/06/unit42-rancor-targeted-attacks-south-east-asia-using-plaintee-ddkong-malware-families/"
       date = "2018-06-26"
@@ -58,6 +61,7 @@ rule APT_RANCOR_PLAINTEE_Malware_Exports {
 rule APT_RANCOR_DDKONG_Malware_Exports {
    meta:
       description = "Detects DDKONG malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2018/06/unit42-rancor-targeted-attacks-south-east-asia-using-plaintee-ddkong-malware-families/"
       date = "2018-06-26"

@@ -10,6 +10,7 @@
 rule Beacon_K5om {
    meta:
       description = "Detects Meterpreter Beacon - file K5om.dll"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.fireeye.com/blog/threat-research/2017/06/phished-at-the-request-of-counsel.html"
       date = "2017-06-07"

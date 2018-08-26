@@ -10,6 +10,7 @@
 rule IronPanda_DNSTunClient {
 	meta:
 		description = "Iron Panda malware DnsTunClient - file named.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://goo.gl/E4qia9"
 		date = "2015-09-16"
@@ -36,6 +37,7 @@ rule IronPanda_DNSTunClient {
 rule IronPanda_Malware1 {
 	meta:
 		description = "Iron Panda Malware"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://goo.gl/E4qia9"
 		date = "2015-09-16"
@@ -53,6 +55,7 @@ rule IronPanda_Malware1 {
 rule IronPanda_Webshell_JSP {
 	meta:
 		description = "Iron Panda Malware JSP"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://goo.gl/E4qia9"
 		date = "2015-09-16"
@@ -68,6 +71,7 @@ rule IronPanda_Webshell_JSP {
 rule IronPanda_Malware_Htran {
 	meta:
 		description = "Iron Panda Malware Htran"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://goo.gl/E4qia9"
 		date = "2015-09-16"
@@ -96,6 +100,7 @@ rule IronPanda_Malware_Htran {
 rule IronPanda_Malware2 {
 	meta:
 		description = "Iron Panda Malware"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://goo.gl/E4qia9"
 		date = "2015-09-16"
@@ -113,6 +118,7 @@ rule IronPanda_Malware2 {
 rule IronPanda_Malware3 {
 	meta:
 		description = "Iron Panda Malware"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://goo.gl/E4qia9"
 		date = "2015-09-16"
@@ -131,6 +137,7 @@ rule IronPanda_Malware3 {
 rule IronPanda_Malware4 {
 	meta:
 		description = "Iron Panda Malware"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://goo.gl/E4qia9"
 		date = "2015-09-16"

@@ -13,6 +13,7 @@ import "pe"
 rule APT_Thrip_Sample_Jun18_1 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
@@ -29,6 +30,7 @@ rule APT_Thrip_Sample_Jun18_1 {
 rule APT_Thrip_Sample_Jun18_2 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
@@ -44,6 +46,7 @@ rule APT_Thrip_Sample_Jun18_2 {
 rule APT_Thrip_Sample_Jun18_3 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
@@ -58,6 +61,7 @@ rule APT_Thrip_Sample_Jun18_3 {
 rule APT_Thrip_Sample_Jun18_4 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
@@ -79,6 +83,7 @@ rule APT_Thrip_Sample_Jun18_4 {
 rule APT_Thrip_Sample_Jun18_5 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
@@ -93,6 +98,7 @@ rule APT_Thrip_Sample_Jun18_5 {
 rule APT_Thrip_Sample_Jun18_6 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
@@ -106,6 +112,7 @@ rule APT_Thrip_Sample_Jun18_6 {
 rule APT_Thrip_Sample_Jun18_7 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
@@ -119,6 +126,7 @@ rule APT_Thrip_Sample_Jun18_7 {
 rule APT_Thrip_Sample_Jun18_8 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
@@ -134,6 +142,7 @@ rule APT_Thrip_Sample_Jun18_8 {
 rule APT_Thrip_Sample_Jun18_9 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
@@ -154,6 +163,7 @@ rule APT_Thrip_Sample_Jun18_9 {
 rule APT_Thrip_Sample_Jun18_10 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
@@ -171,6 +181,7 @@ rule APT_Thrip_Sample_Jun18_10 {
 rule APT_Thrip_Sample_Jun18_11 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
@@ -190,6 +201,7 @@ rule APT_Thrip_Sample_Jun18_11 {
 rule APT_Thrip_Sample_Jun18_12 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
@@ -212,6 +224,7 @@ rule APT_Thrip_Sample_Jun18_12 {
 rule APT_Thrip_Sample_Jun18_13 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
@@ -230,6 +243,7 @@ rule APT_Thrip_Sample_Jun18_13 {
 rule APT_Thrip_Sample_Jun18_14 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
@@ -250,6 +264,7 @@ rule APT_Thrip_Sample_Jun18_14 {
 rule APT_Thrip_Sample_Jun18_15 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
@@ -271,6 +286,7 @@ rule APT_Thrip_Sample_Jun18_15 {
 rule APT_Thrip_Sample_Jun18_16 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
@@ -287,6 +303,7 @@ rule APT_Thrip_Sample_Jun18_16 {
 rule APT_Thrip_Sample_Jun18_17 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
@@ -311,6 +328,7 @@ rule APT_Thrip_Sample_Jun18_17 {
 rule APT_Thrip_Sample_Jun18_18 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"

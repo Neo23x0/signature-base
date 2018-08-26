@@ -2,6 +2,7 @@
 rule QuarksPwDump_Gen {
 	meta:
 		description = "Detects all QuarksPWDump versions"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		date = "2015-09-29"
 		score = 80

@@ -13,6 +13,7 @@ import "pe"
 rule APT_Lazarus_Dropper_Jun18_1 {
    meta:
       description = "Detects Lazarus Group Dropper"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://twitter.com/DrunkBinary/status/1002587521073721346"
       date = "2018-06-01"
@@ -32,6 +33,7 @@ rule APT_Lazarus_Dropper_Jun18_1 {
 rule APT_Lazarus_RAT_Jun18_1 {
    meta:
       description = "Detects Lazarus Group RAT"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://twitter.com/DrunkBinary/status/1002587521073721346"
       date = "2018-06-01"
@@ -64,6 +66,7 @@ rule APT_Lazarus_RAT_Jun18_1 {
 rule APT_Lazarus_RAT_Jun18_2 {
    meta:
       description = "Detects Lazarus Group RAT"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://twitter.com/DrunkBinary/status/1002587521073721346"
       date = "2018-06-01"

@@ -10,6 +10,7 @@
 rule Duqu2_Sample1 {
 	meta:
 		description = "Detects malware - Duqu2 (cross-matches with IronTiger malware and Derusbi)"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://securelist.com/blog/research/70504/the-mystery-of-duqu-2-0-a-sophisticated-cyberespionage-actor-returns/"
 		date = "2016-07-02"
@@ -28,6 +29,7 @@ rule Duqu2_Sample1 {
 rule Duqu2_Sample2 {
 	meta:
 		description = "Detects Duqu2 Malware"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://securelist.com/blog/research/70504/the-mystery-of-duqu-2-0-a-sophisticated-cyberespionage-actor-returns/"
 		date = "2016-07-02"
@@ -48,6 +50,7 @@ rule Duqu2_Sample2 {
 rule Duqu2_Sample3 {
 	meta:
 		description = "Detects Duqu2 Malware"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://securelist.com/blog/research/70504/the-mystery-of-duqu-2-0-a-sophisticated-cyberespionage-actor-returns/"
 		date = "2016-07-02"
@@ -62,6 +65,7 @@ rule Duqu2_Sample3 {
 rule Duqu2_Sample4 {
 	meta:
 		description = "Detects Duqu2 Malware"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://securelist.com/blog/research/70504/the-mystery-of-duqu-2-0-a-sophisticated-cyberespionage-actor-returns/"
 		date = "2016-07-02"
@@ -78,6 +82,7 @@ rule Duqu2_Sample4 {
 rule Duqu2_UAs {
 	meta:
 		description = "Detects Duqu2 Executable based on the specific UAs in the file"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://securelist.com/blog/research/70504/the-mystery-of-duqu-2-0-a-sophisticated-cyberespionage-actor-returns/"
 		date = "2016-07-02"

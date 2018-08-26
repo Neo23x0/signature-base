@@ -13,6 +13,7 @@ import "pe"
 rule TopHat_Malware_Jan18_1 {
    meta:
       description = "Detects malware from TopHat campaign"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2018/01/unit42-the-tophat-campaign-attacks-within-the-middle-east-region-using-popular-third-party-services/#appendix"
       date = "2018-01-29"
@@ -36,6 +37,7 @@ rule TopHat_Malware_Jan18_1 {
 rule TopHat_Malware_Jan18_2 {
    meta:
       description = "Auto-generated rule - file e.exe"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2018/01/unit42-the-tophat-campaign-attacks-within-the-middle-east-region-using-popular-third-party-services/#appendix"
       date = "2018-01-29"
@@ -57,6 +59,7 @@ rule TopHat_Malware_Jan18_2 {
 rule TopHat_BAT {
    meta:
       description = "Auto-generated rule - file cgen.bat"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2018/01/unit42-the-tophat-campaign-attacks-within-the-middle-east-region-using-popular-third-party-services/#appendix"
       date = "2018-01-29"

@@ -10,6 +10,7 @@
 rule Empire_Invoke_MetasploitPayload {
    meta:
       description = "Detects Empire component - file Invoke-MetasploitPayload.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -24,6 +25,7 @@ rule Empire_Invoke_MetasploitPayload {
 rule Empire_Exploit_Jenkins {
    meta:
       description = "Detects Empire component - file Exploit-Jenkins.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -39,6 +41,7 @@ rule Empire_Exploit_Jenkins {
 rule Empire_Get_SecurityPackages {
    meta:
       description = "Detects Empire component - file Get-SecurityPackages.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -53,6 +56,7 @@ rule Empire_Get_SecurityPackages {
 rule Empire_Invoke_PowerDump {
    meta:
       description = "Detects Empire component - file Invoke-PowerDump.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -68,6 +72,7 @@ rule Empire_Invoke_PowerDump {
 rule Empire_Install_SSP {
    meta:
       description = "Detects Empire component - file Install-SSP.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -81,6 +86,7 @@ rule Empire_Install_SSP {
 rule Empire_Invoke_ShellcodeMSIL {
    meta:
       description = "Detects Empire component - file Invoke-ShellcodeMSIL.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -97,6 +103,7 @@ rule Empire_Invoke_ShellcodeMSIL {
 rule Empire__Users_neo_code_Workspace_Empire_4sigs_PowerUp {
    meta:
       description = "Detects Empire component - file PowerUp.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -110,6 +117,7 @@ rule Empire__Users_neo_code_Workspace_Empire_4sigs_PowerUp {
 rule Empire_Invoke_Mimikatz_Gen {
    meta:
       description = "Detects Empire component - file Invoke-Mimikatz.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -124,6 +132,7 @@ rule Empire_Invoke_Mimikatz_Gen {
 rule Empire_Get_GPPPassword {
    meta:
       description = "Detects Empire component - file Get-GPPPassword.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -139,6 +148,7 @@ rule Empire_Get_GPPPassword {
 rule Empire_Invoke_SmbScanner {
    meta:
       description = "Detects Empire component - file Invoke-SmbScanner.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -153,6 +163,7 @@ rule Empire_Invoke_SmbScanner {
 rule Empire_Exploit_JBoss {
    meta:
       description = "Detects Empire component - file Exploit-JBoss.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -170,6 +181,7 @@ rule Empire_Exploit_JBoss {
 rule Empire_dumpCredStore {
    meta:
       description = "Detects Empire component - file dumpCredStore.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -185,6 +197,7 @@ rule Empire_dumpCredStore {
 rule Empire_Invoke_EgressCheck {
    meta:
       description = "Detects Empire component - file Invoke-EgressCheck.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -198,6 +211,7 @@ rule Empire_Invoke_EgressCheck {
 rule Empire_ReflectivePick_x64_orig {
    meta:
       description = "Detects Empire component - file ReflectivePick_x64_orig.dll"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -213,6 +227,7 @@ rule Empire_ReflectivePick_x64_orig {
 rule Empire_Out_Minidump {
    meta:
       description = "Detects Empire component - file Out-Minidump.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -227,6 +242,7 @@ rule Empire_Out_Minidump {
 rule Empire_Invoke_PsExec {
    meta:
       description = "Detects Empire component - file Invoke-PsExec.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -242,6 +258,7 @@ rule Empire_Invoke_PsExec {
 rule Empire_Invoke_PostExfil {
    meta:
       description = "Detects Empire component - file Invoke-PostExfil.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -256,6 +273,7 @@ rule Empire_Invoke_PostExfil {
 rule Empire_Invoke_SMBAutoBrute {
    meta:
       description = "Detects Empire component - file Invoke-SMBAutoBrute.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -270,6 +288,7 @@ rule Empire_Invoke_SMBAutoBrute {
 rule Empire_Get_Keystrokes {
    meta:
       description = "Detects Empire component - file Get-Keystrokes.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -283,6 +302,7 @@ rule Empire_Get_Keystrokes {
 rule Empire_Invoke_DllInjection {
    meta:
       description = "Detects Empire component - file Invoke-DllInjection.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -296,6 +316,7 @@ rule Empire_Invoke_DllInjection {
 rule Empire_KeePassConfig {
    meta:
       description = "Detects Empire component - file KeePassConfig.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -309,6 +330,7 @@ rule Empire_KeePassConfig {
 rule Empire_Invoke_SSHCommand {
    meta:
       description = "Detects Empire component - file Invoke-SSHCommand.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -326,6 +348,7 @@ rule Empire_Invoke_SSHCommand {
 rule Empire_PowerShell_Framework_Gen1 {
    meta:
       description = "Detects Empire component"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -345,6 +368,7 @@ rule Empire_PowerShell_Framework_Gen1 {
 rule Empire_PowerUp_Gen {
    meta:
       description = "Detects Empire component - from files PowerUp.ps1, PowerUp.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -360,6 +384,7 @@ rule Empire_PowerUp_Gen {
 rule Empire_PowerShell_Framework_Gen2 {
    meta:
       description = "Detects Empire component"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -379,6 +404,7 @@ rule Empire_PowerShell_Framework_Gen2 {
 rule Empire_Agent_Gen {
    meta:
       description = "Detects Empire component - from files agent.ps1, agent.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -396,6 +422,7 @@ rule Empire_Agent_Gen {
 rule Empire_PowerShell_Framework_Gen3 {
    meta:
       description = "Detects Empire component"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -414,6 +441,7 @@ rule Empire_PowerShell_Framework_Gen3 {
 rule Empire_Invoke_InveighRelay_Gen {
    meta:
       description = "Detects Empire component - from files Invoke-InveighRelay.ps1, Invoke-InveighRelay.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -429,6 +457,7 @@ rule Empire_Invoke_InveighRelay_Gen {
 rule Empire_KeePassConfig_Gen {
    meta:
       description = "Detects Empire component - from files KeePassConfig.ps1, KeePassConfig.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -443,6 +472,7 @@ rule Empire_KeePassConfig_Gen {
 rule Empire_Invoke_Portscan_Gen {
    meta:
       description = "Detects Empire component - from files Invoke-Portscan.ps1, Invoke-Portscan.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -458,6 +488,7 @@ rule Empire_Invoke_Portscan_Gen {
 rule Empire_PowerShell_Framework_Gen4 {
    meta:
       description = "Detects Empire component"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -484,6 +515,7 @@ rule Empire_PowerShell_Framework_Gen4 {
 rule Empire_Invoke_CredentialInjection_Invoke_Mimikatz_Gen {
    meta:
       description = "Detects Empire component - from files Invoke-CredentialInjection.ps1, Invoke-Mimikatz.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -500,6 +532,7 @@ rule Empire_Invoke_CredentialInjection_Invoke_Mimikatz_Gen {
 rule Empire_Invoke_Gen {
    meta:
       description = "Detects Empire component - from files Invoke-DCSync.ps1, Invoke-PSInject.ps1, Invoke-ReflectivePEInjection.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
@@ -517,6 +550,7 @@ rule Empire_Invoke_Gen {
 rule Empire_PowerShell_Framework_Gen5 {
    meta:
       description = "Detects Empire component"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"

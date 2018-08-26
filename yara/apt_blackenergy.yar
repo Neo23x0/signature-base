@@ -8,6 +8,7 @@
 rule BlackEnergy_BE_2 {
    meta:
       description = "Detects BlackEnergy 2 Malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "http://goo.gl/DThzLz"
       date = "2015/02/19"
@@ -32,6 +33,7 @@ rule BlackEnergy_BE_2 {
 rule BlackEnergy_VBS_Agent {
 	meta:
 		description = "Detects VBS Agent from BlackEnergy Report - file Dropbearrun.vbs"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://feedproxy.google.com/~r/eset/blog/~3/BXJbnGSvEFc/"
 		date = "2016-01-03"
@@ -47,6 +49,7 @@ rule BlackEnergy_VBS_Agent {
 rule DropBear_SSH_Server {
 	meta:
 		description = "Detects DropBear SSH Server (not a threat but used to maintain access)"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://feedproxy.google.com/~r/eset/blog/~3/BXJbnGSvEFc/"
 		date = "2016-01-03"
@@ -65,6 +68,7 @@ rule DropBear_SSH_Server {
 rule BlackEnergy_BackdoorPass_DropBear_SSH {
 	meta:
 		description = "Detects the password of the backdoored DropBear SSH Server - BlackEnergy"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://feedproxy.google.com/~r/eset/blog/~3/BXJbnGSvEFc/"
 		date = "2016-01-03"
@@ -80,6 +84,7 @@ rule BlackEnergy_BackdoorPass_DropBear_SSH {
 rule BlackEnergy_KillDisk_1 {
 	meta:
 		description = "Detects KillDisk malware from BlackEnergy"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://feedproxy.google.com/~r/eset/blog/~3/BXJbnGSvEFc/"
 		date = "2016-01-03"
@@ -107,6 +112,7 @@ rule BlackEnergy_KillDisk_1 {
 rule BlackEnergy_KillDisk_2 {
 	meta:
 		description = "Detects KillDisk malware from BlackEnergy"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://feedproxy.google.com/~r/eset/blog/~3/BXJbnGSvEFc/"
 		date = "2016-01-03"
@@ -127,6 +133,7 @@ rule BlackEnergy_KillDisk_2 {
 rule BlackEnergy_Driver_USBMDM {
 	meta:
 		description = "Black Energy Driver"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://www.welivesecurity.com/2016/01/03/blackenergy-sshbeardoor-details-2015-attacks-ukrainian-news-media-electric-industry/"
 		date = "2016-01-04"
@@ -150,6 +157,7 @@ rule BlackEnergy_Driver_USBMDM {
 rule BlackEnergy_Driver_AMDIDE {
 	meta:
 		description = "Black Energy Malware"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://www.welivesecurity.com/2016/01/03/blackenergy-sshbeardoor-details-2015-attacks-ukrainian-news-media-electric-industry/"
 		date = "2016-01-04"

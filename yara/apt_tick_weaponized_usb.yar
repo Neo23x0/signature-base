@@ -13,6 +13,7 @@ import "pe"
 rule APT_Tick_Sysmon_Loader_Jun18 {
    meta:
       description = "Detects Sysmon Loader from Tick group incident - Weaponized USB"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2018/06/unit42-tick-group-weaponized-secure-usb-drives-target-air-gapped-critical-systems/"
       date = "2018-06-23"
@@ -38,6 +39,7 @@ rule APT_Tick_Sysmon_Loader_Jun18 {
 rule APT_Tick_HomamDownloader_Jun18 {
    meta:
       description = "Detects HomamDownloader from Tick group incident - Weaponized USB"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2018/06/unit42-tick-group-weaponized-secure-usb-drives-target-air-gapped-critical-systems/"
       date = "2018-06-23"

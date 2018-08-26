@@ -10,6 +10,7 @@
 rule Rombertik_CarbonGrabber {
 	meta:
 		description = "Detects CarbonGrabber alias Rombertik - file Copy#064046.scr"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://blogs.cisco.com/security/talos/rombertik"
 		date = "2015-05-05"
@@ -31,6 +32,7 @@ rule Rombertik_CarbonGrabber {
 rule Rombertik_CarbonGrabber_Panel_InstallScript {
 	meta:
 		description = "Detects CarbonGrabber alias Rombertik panel install script - file install.php"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://blogs.cisco.com/security/talos/rombertik"
 		date = "2015-05-05"
@@ -51,6 +53,7 @@ rule Rombertik_CarbonGrabber_Panel_InstallScript {
 rule Rombertik_CarbonGrabber_Panel {
 	meta:
 		description = "Detects CarbonGrabber alias Rombertik Panel - file index.php"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://blogs.cisco.com/security/talos/rombertik"
 		date = "2015-05-05"
@@ -69,6 +72,7 @@ rule Rombertik_CarbonGrabber_Panel {
 rule Rombertik_CarbonGrabber_Builder {
 	meta:
 		description = "Detects CarbonGrabber alias Rombertik Builder - file Builder.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://blogs.cisco.com/security/talos/rombertik"
 		date = "2015-05-05"
@@ -86,6 +90,7 @@ rule Rombertik_CarbonGrabber_Builder {
 rule Rombertik_CarbonGrabber_Builder_Server {
 	meta:
 		description = "Detects CarbonGrabber alias Rombertik Builder Server - file Server.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://blogs.cisco.com/security/talos/rombertik"
 		date = "2015-05-05"

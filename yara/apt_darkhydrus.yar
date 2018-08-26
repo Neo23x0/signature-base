@@ -13,6 +13,7 @@ import "pe"
 rule APT_DarkHydrus_Jul18_1 {
    meta:
       description = "Detects strings found in malware samples in APT report in DarkHydrus"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2018/07/unit42-new-threat-actor-group-darkhydrus-targets-middle-east-government/"
       date = "2018-07-28"
@@ -29,6 +30,7 @@ rule APT_DarkHydrus_Jul18_1 {
 rule APT_DarkHydrus_Jul18_2 {
    meta:
       description = "Detects strings found in malware samples in APT report in DarkHydrus"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2018/07/unit42-new-threat-actor-group-darkhydrus-targets-middle-east-government/"
       date = "2018-07-28"
@@ -48,6 +50,7 @@ rule APT_DarkHydrus_Jul18_2 {
 rule APT_DarkHydrus_Jul18_3 {
    meta:
       description = "Detects strings found in malware samples in APT report in DarkHydrus"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2018/07/unit42-new-threat-actor-group-darkhydrus-targets-middle-east-government/"
       date = "2018-07-28"
@@ -67,6 +70,7 @@ rule APT_DarkHydrus_Jul18_3 {
 rule APT_DarkHydrus_Jul18_4 {
    meta:
       description = "Detects strings found in malware samples in APT report in DarkHydrus"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2018/07/unit42-new-threat-actor-group-darkhydrus-targets-middle-east-government/"
       date = "2018-07-28"
@@ -87,6 +91,7 @@ rule APT_DarkHydrus_Jul18_4 {
 rule APT_DarkHydrus_Jul18_5 {
    meta:
       description = "Detects strings found in malware samples in APT report in DarkHydrus"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2018/07/unit42-new-threat-actor-group-darkhydrus-targets-middle-east-government/"
       date = "2018-07-28"

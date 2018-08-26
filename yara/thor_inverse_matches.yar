@@ -28,6 +28,7 @@ condition:
 
 rule iexplore_ANOMALY {
 	meta:
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		description = "Abnormal iexplore.exe - typical strings not found in file"
 		date = "23/04/2014"
@@ -45,6 +46,7 @@ rule iexplore_ANOMALY {
 
 rule svchost_ANOMALY {
 	meta:
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		description = "Abnormal svchost.exe - typical strings not found in file"
 		date = "23/04/2014"
@@ -63,6 +65,7 @@ rule svchost_ANOMALY {
 
 rule explorer_ANOMALY {
 	meta:
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		description = "Abnormal explorer.exe - typical strings not found in file"
 		date = "27/05/2014"
@@ -94,6 +97,7 @@ rule sethc_ANOMALY {
 
 rule Utilman_ANOMALY {
 	meta:
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		description = "Abnormal utilman.exe - typical strings not found in file"
 		date = "01/06/2014"
@@ -108,6 +112,7 @@ rule Utilman_ANOMALY {
 
 rule osk_ANOMALY {
 	meta:
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		description = "Abnormal osk.exe (On Screen Keyboard) - typical strings not found in file"
 		date = "01/06/2014"
@@ -123,6 +128,7 @@ rule osk_ANOMALY {
 
 rule magnify_ANOMALY {
 	meta:
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		description = "Abnormal magnify.exe (Magnifier) - typical strings not found in file"
 		date = "01/06/2014"
@@ -137,6 +143,7 @@ rule magnify_ANOMALY {
 
 rule narrator_ANOMALY {
 	meta:
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		description = "Abnormal narrator.exe - typical strings not found in file"
 		date = "01/06/2014"
@@ -153,6 +160,7 @@ rule narrator_ANOMALY {
 
 rule notepad_ANOMALY {
 	meta:
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		description = "Abnormal notepad.exe - typical strings not found in file"
 		date = "01/06/2014"
@@ -172,6 +180,7 @@ rule notepad_ANOMALY {
 rule csrss_ANOMALY {
 	meta:
 		description = "Anomaly rule looking for certain strings in a system file (maybe false positive on certain systems) - file csrss.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "not set"
 		date = "2015/03/16"
@@ -188,6 +197,7 @@ rule csrss_ANOMALY {
 rule conhost_ANOMALY {
 	meta:
 		description = "Anomaly rule looking for certain strings in a system file (maybe false positive on certain systems) - file conhost.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "not set"
 		date = "2015/03/16"
@@ -201,6 +211,7 @@ rule conhost_ANOMALY {
 rule wininit_ANOMALY {
 	meta:
 		description = "Anomaly rule looking for certain strings in a system file (maybe false positive on certain systems) - file wininit.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "not set"
 		date = "2015/03/16"
@@ -214,6 +225,7 @@ rule wininit_ANOMALY {
 rule winlogon_ANOMALY {
 	meta:
 		description = "Anomaly rule looking for certain strings in a system file (maybe false positive on certain systems) - file winlogon.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "not set"
 		date = "2015/03/16"
@@ -230,6 +242,7 @@ rule winlogon_ANOMALY {
 rule SndVol_ANOMALY {
 	meta:
 		description = "Anomaly rule looking for certain strings in a system file (maybe false positive on certain systems) - file SndVol.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "not set"
 		date = "2015/03/16"
@@ -243,6 +256,7 @@ rule SndVol_ANOMALY {
 rule doskey_ANOMALY {
 	meta:
 		description = "Anomaly rule looking for certain strings in a system file (maybe false positive on certain systems) - file doskey.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "not set"
 		date = "2015/03/16"
@@ -256,6 +270,7 @@ rule doskey_ANOMALY {
 rule lsass_ANOMALY {
 	meta:
 		description = "Anomaly rule looking for certain strings in a system file (maybe false positive on certain systems) - file lsass.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "not set"
 		date = "2015/03/16"
@@ -272,6 +287,7 @@ rule lsass_ANOMALY {
 rule taskmgr_ANOMALY {
 	meta:
 		description = "Anomaly rule looking for certain strings in a system file (maybe false positive on certain systems) - file taskmgr.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "not set"
 		date = "2015/03/16"
@@ -295,6 +311,7 @@ rule APT_Cloaked_PsExec
 	meta:
 		description = "Looks like a cloaked PsExec. May be APT group activity."
 		date = "2014-07-18"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		score = 60
 	strings:
@@ -313,6 +330,7 @@ rule APT_Cloaked_SuperScan
 	meta:
 		description = "Looks like a cloaked SuperScan Port Scanner. May be APT group activity."
 		date = "2014-07-18"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		score = 50
 	strings:
@@ -328,6 +346,7 @@ rule APT_Cloaked_ScanLine
 	meta:
 		description = "Looks like a cloaked ScanLine Port Scanner. May be APT group activity."
 		date = "2014-07-18"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		score = 50
 	strings:
@@ -343,6 +362,7 @@ rule SAM_Hive_Backup
 {
 	meta:
 		description = "Detects a SAM hive backup file"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://github.com/gentilkiwi/mimikatz/wiki/module-~-lsadump"
 		score = 60

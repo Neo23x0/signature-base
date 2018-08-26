@@ -2,6 +2,7 @@
 rule PowerShell_Susp_Parameter_Combo {
    meta:
       description = "Detects PowerShell invocation with suspicious parameters"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/uAic1X"
       date = "2017-03-12"

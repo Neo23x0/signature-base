@@ -10,6 +10,7 @@
 rule Buckeye_Osinfo {
 	meta:
 		description = "Detects OSinfo tool used by the Buckeye APT group"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://www.symantec.com/connect/blogs/buckeye-cyberespionage-group-shifts-gaze-us-hong-kong"
 		date = "2016-09-05"
@@ -28,6 +29,7 @@ rule Buckeye_Osinfo {
 rule RemoteCmd {
 	meta:
 		description = "Detects a remote access tool used by APT groups - file RemoteCmd.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://goo.gl/igxLyF"
 		date = "2016-09-08"
@@ -46,6 +48,7 @@ rule RemoteCmd {
 rule ChromePass {
 	meta:
 		description = "Detects a tool used by APT groups - file ChromePass.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://goo.gl/igxLyF"
 		date = "2016-09-08"

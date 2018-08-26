@@ -10,6 +10,7 @@
 rule Metasploit_Loader_RSMudge {
 	meta:
 		description = "Detects a Metasploit Loader by RSMudge - file loader.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://github.com/rsmudge/metasploit-loader"
 		date = "2016-04-20"

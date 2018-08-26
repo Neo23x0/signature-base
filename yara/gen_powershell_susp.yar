@@ -10,6 +10,7 @@
 rule WordDoc_PowerShell_URLDownloadToFile {
    meta:
       description = "Detects Word Document with PowerShell URLDownloadToFile"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.arbornetworks.com/blog/asert/additional-insights-shamoon2/"
       date = "2017-02-23"
@@ -30,6 +31,7 @@ rule WordDoc_PowerShell_URLDownloadToFile {
 rule Suspicious_PowerShell_Code_1 {
    meta:
       description = "Detects suspicious PowerShell code"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
 		score = 60
       reference = "Internal Research"
@@ -49,6 +51,7 @@ rule Suspicious_PowerShell_Code_1 {
 rule Suspicious_PowerShell_WebDownload_1 {
    meta:
       description = "Detects suspicious PowerShell code that downloads from web sites"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
 		score = 60
       reference = "Internal Research"
@@ -76,6 +79,7 @@ rule Suspicious_PowerShell_WebDownload_1 {
 rule PowerShell_in_Word_Doc {
    meta:
       description = "Detects a powershell and bypass keyword in a Word document"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research - ME"
       date = "2017-06-27"
@@ -101,6 +105,7 @@ rule PowerShell_in_Word_Doc {
 rule Susp_PowerShell_Sep17_1 {
    meta:
       description = "Detects suspicious PowerShell script in combo with VBS or JS "
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-09-30"
@@ -118,6 +123,7 @@ rule Susp_PowerShell_Sep17_1 {
 rule Susp_PowerShell_Sep17_2 {
    meta:
       description = "Detects suspicious PowerShell script in combo with VBS or JS "
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-09-30"
@@ -138,6 +144,7 @@ rule Susp_PowerShell_Sep17_2 {
 rule WScript_Shell_PowerShell_Combo {
    meta:
       description = "Detects malware from Middle Eastern campaign reported by Talos"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "http://blog.talosintelligence.com/2018/02/targeted-attacks-in-middle-east.html"
       date = "2018-02-07"
@@ -159,6 +166,7 @@ rule WScript_Shell_PowerShell_Combo {
 rule SUSP_PowerShell_String_K32_RemProcess {
    meta:
       description = "Detects suspicious PowerShell code that uses Kernel32, RemoteProccess handles or shellcode"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/nccgroup/redsnarf"
       date = "2018-03-31"
@@ -179,6 +187,7 @@ rule SUSP_PowerShell_String_K32_RemProcess {
 rule PowerShell_JAB_B64 {
    meta:
       description = "Detects base464 encoded $ sign at the beginning of a string"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://twitter.com/ItsReallyNick/status/980915287922040832"
       date = "2018-04-02"

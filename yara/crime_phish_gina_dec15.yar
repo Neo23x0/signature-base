@@ -8,6 +8,7 @@
 rule PHISH_02Dez2015_dropped_p0o6543f_1 {
 	meta:
 		description = "Phishing Wave - file p0o6543f.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://myonlinesecurity.co.uk/purchase-order-124658-gina-harrowell-clinimed-limited-word-doc-or-excel-xls-spreadsheet-malware/"
 		date = "2015-12-02"
@@ -29,6 +30,7 @@ rule PHISH_02Dez2015_dropped_p0o6543f_1 {
 rule PHISH_02Dez2015_dropped_p0o6543f_2 {
 	meta:
 		description = "Phishing Wave used MineExplorer Game by WangLei - file p0o6543f.exe.4"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://myonlinesecurity.co.uk/purchase-order-124658-gina-harrowell-clinimed-limited-word-doc-or-excel-xls-spreadsheet-malware/"
 		date = "2015-12-03"
@@ -45,6 +47,7 @@ rule PHISH_02Dez2015_dropped_p0o6543f_2 {
 rule PHISH_02Dez2015_attach_P_ORD_C_10156_124658 {
 	meta:
 		description = "Phishing Wave - file P-ORD-C-10156-124658.xls"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://myonlinesecurity.co.uk/purchase-order-124658-gina-harrowell-clinimed-limited-word-doc-or-excel-xls-spreadsheet-malware/"
 		date = "2015-12-02"

@@ -13,6 +13,7 @@ import "pe"
 rule MAL_BurningUmbrella_Sample_1 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
@@ -31,6 +32,7 @@ rule MAL_BurningUmbrella_Sample_1 {
 rule MAL_BurningUmbrella_Sample_2 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
@@ -49,6 +51,7 @@ rule MAL_BurningUmbrella_Sample_2 {
 rule MAL_BurningUmbrella_Sample_3 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
@@ -62,6 +65,7 @@ rule MAL_BurningUmbrella_Sample_3 {
 rule MAL_BurningUmbrella_Sample_4 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
@@ -93,6 +97,7 @@ rule MAL_BurningUmbrella_Sample_4 {
 rule MAL_BurningUmbrella_Sample_6 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
@@ -107,6 +112,7 @@ rule MAL_BurningUmbrella_Sample_6 {
 rule MAL_BurningUmbrella_Sample_7 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
@@ -120,6 +126,7 @@ rule MAL_BurningUmbrella_Sample_7 {
 rule MAL_BurningUmbrella_Sample_8 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
@@ -133,6 +140,7 @@ rule MAL_BurningUmbrella_Sample_8 {
 rule MAL_BurningUmbrella_Sample_10 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
@@ -149,6 +157,7 @@ rule MAL_BurningUmbrella_Sample_10 {
 rule MAL_BurningUmbrella_Sample_11 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
@@ -162,6 +171,7 @@ rule MAL_BurningUmbrella_Sample_11 {
 rule MAL_BurningUmbrella_Sample_12 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
@@ -183,6 +193,7 @@ rule MAL_BurningUmbrella_Sample_12 {
 rule MAL_BurningUmbrella_Sample_13 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
@@ -195,6 +206,7 @@ rule MAL_BurningUmbrella_Sample_13 {
 rule MAL_BurningUmbrella_Sample_14 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
@@ -209,6 +221,7 @@ rule MAL_BurningUmbrella_Sample_14 {
 rule MAL_BurningUmbrella_Sample_15 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
@@ -224,6 +237,7 @@ rule MAL_BurningUmbrella_Sample_15 {
 rule MAL_BurningUmbrella_Sample_16 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
@@ -237,6 +251,7 @@ rule MAL_BurningUmbrella_Sample_16 {
 rule MAL_BurningUmbrella_Sample_17 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
@@ -256,6 +271,7 @@ rule MAL_BurningUmbrella_Sample_17 {
 rule MAL_BurningUmbrella_Sample_18 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
@@ -283,6 +299,7 @@ rule MAL_BurningUmbrella_Sample_18 {
 rule MAL_BurningUmbrella_Sample_19 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
@@ -300,6 +317,7 @@ rule MAL_BurningUmbrella_Sample_19 {
 rule MAL_BurningUmbrella_Sample_20 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
@@ -320,6 +338,7 @@ rule MAL_BurningUmbrella_Sample_20 {
 rule MAL_BurningUmbrella_Sample_21 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
@@ -339,6 +358,7 @@ rule MAL_BurningUmbrella_Sample_21 {
 rule MAL_BurningUmbrella_Sample_22 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
@@ -358,6 +378,7 @@ rule MAL_BurningUmbrella_Sample_22 {
 rule MAL_AirdViper_Sample_Apr18_1 {
    meta:
       description = "Detects Arid Viper malware sample"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2018-05-04"
@@ -384,6 +405,7 @@ rule MAL_AirdViper_Sample_Apr18_1 {
 rule MAL_Winnti_Sample_May18_1 {
    meta:
       description = "Detects malware sample from Burning Umbrella report - Generic Winnti Rule"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
@@ -398,6 +420,7 @@ rule MAL_Winnti_Sample_May18_1 {
 rule MAL_Visel_Sample_May18_1 {
    meta:
       description = "Detects Visel malware sample from Burning Umbrella report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"

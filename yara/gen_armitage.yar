@@ -14,6 +14,7 @@
 rule Armitage_msfconsole {
    meta:
       description = "Detects Armitage component"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-12-24"
@@ -34,6 +35,7 @@ rule Armitage_msfconsole {
 rule Armitage_MeterpreterSession_Strings {
    meta:
       description = "Detects Armitage component"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-12-24"
@@ -52,6 +54,7 @@ rule Armitage_MeterpreterSession_Strings {
 rule Armitage_OSX {
    meta:
       description = "Detects Armitage component"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-12-24"

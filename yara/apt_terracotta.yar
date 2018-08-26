@@ -11,6 +11,7 @@
 rule Apolmy_Privesc_Trojan {
 	meta:
 		description = "Apolmy Privilege Escalation Trojan used in APT Terracotta"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://blogs.rsa.com/terracotta-vpn-enabler-of-advanced-threat-anonymity/"
 		date = "2015-08-04"
@@ -27,6 +28,7 @@ rule Apolmy_Privesc_Trojan {
 rule Mithozhan_Trojan {
 	meta:
 		description = "Mitozhan Trojan used in APT Terracotta"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://blogs.rsa.com/terracotta-vpn-enabler-of-advanced-threat-anonymity/"
 		date = "2015-08-04"
@@ -43,6 +45,7 @@ rule Mithozhan_Trojan {
 rule RemoteExec_Tool {
 	meta:
 		description = "Remote Access Tool used in APT Terracotta"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://blogs.rsa.com/terracotta-vpn-enabler-of-advanced-threat-anonymity/"
 		date = "2015-08-04"
@@ -63,6 +66,7 @@ rule RemoteExec_Tool {
 rule LiuDoor_Malware_1 {
 	meta:
 		description = "Liudoor Trojan used in Terracotta APT"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://blogs.rsa.com/terracotta-vpn-enabler-of-advanced-threat-anonymity/"
 		date = "2015-08-04"
@@ -83,6 +87,7 @@ rule LiuDoor_Malware_1 {
 rule LiuDoor_Malware_2 {
 	meta:
 		description = "Liudoor Trojan used in Terracotta APT"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://blogs.rsa.com/terracotta-vpn-enabler-of-advanced-threat-anonymity/"
 		date = "2015-08-04"

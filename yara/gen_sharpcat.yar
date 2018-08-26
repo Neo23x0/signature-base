@@ -8,6 +8,7 @@
 rule SharpCat {
 	meta:
 		description = "Detects command shell SharpCat - file SharpCat.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://github.com/Cn33liz/SharpCat"
 		date = "2016-06-10"

@@ -8,6 +8,7 @@
 rule GhostDragon_Gh0stRAT {
 	meta:
 		description = "Detects Gh0st RAT mentioned in Cylance' Ghost Dragon Report"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://blog.cylance.com/the-ghost-dragon"
 		date = "2016-04-23"
@@ -53,6 +54,7 @@ rule GhostDragon_Gh0stRAT {
 rule GhostDragon_Gh0stRAT_Sample2 {
 	meta:
 		description = "Detects Gh0st RAT mentioned in Cylance' Ghost Dragon Report"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://blog.cylance.com/the-ghost-dragon"
 		date = "2016-04-23"
@@ -74,6 +76,7 @@ rule GhostDragon_Gh0stRAT_Sample2 {
 rule GhostDragon_Gh0stRAT_Sample3 {
 	meta:
 		description = "Detects Gh0st RAT mentioned in Cylance' Ghost Dragon Report"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://blog.cylance.com/the-ghost-dragon"
 		date = "2016-04-23"

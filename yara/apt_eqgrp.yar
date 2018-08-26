@@ -12,6 +12,7 @@ import "pe"
 rule EQGRP_noclient_3_0_5 {
 	meta:
 		description = "Detects tool from EQGRP toolset - file noclient-3.0.5.3"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-15"
@@ -29,6 +30,7 @@ rule EQGRP_noclient_3_0_5 {
 rule EQGRP_installdate {
 	meta:
 		description = "Detects tool from EQGRP toolset - file installdate.pl"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-15"
@@ -48,6 +50,7 @@ rule EQGRP_installdate {
 rule EQGRP_teflondoor {
 	meta:
 		description = "Detects tool from EQGRP toolset - file teflondoor.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-15"
@@ -69,6 +72,7 @@ rule EQGRP_teflondoor {
 rule EQGRP_durablenapkin_solaris_2_0_1 {
 	meta:
 		description = "Detects tool from EQGRP toolset - file durablenapkin.solaris.2.0.1.1"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-15"
@@ -86,6 +90,7 @@ rule EQGRP_durablenapkin_solaris_2_0_1 {
 rule EQGRP_teflonhandle {
 	meta:
 		description = "Detects tool from EQGRP toolset - file teflonhandle.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-15"
@@ -103,6 +108,7 @@ rule EQGRP_teflonhandle {
 rule EQGRP_false {
 	meta:
 		description = "Detects tool from EQGRP toolset - file false.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-15"
@@ -124,6 +130,7 @@ rule EQGRP_false {
 rule EQGRP_dn_1_0_2_1 {
 	meta:
 		description = "Detects tool from EQGRP toolset - file dn.1.0.2.1.linux"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-15"
@@ -140,6 +147,7 @@ rule EQGRP_dn_1_0_2_1 {
 rule EQGRP_morel {
 	meta:
 		description = "Detects tool from EQGRP toolset - file morel.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-15"
@@ -156,6 +164,7 @@ rule EQGRP_morel {
 rule EQGRP_bc_parser {
 	meta:
 		description = "Detects tool from EQGRP toolset - file bc-parser"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-15"
@@ -171,6 +180,7 @@ rule EQGRP_bc_parser {
 rule EQGRP_1212 {
 	meta:
 		description = "Detects tool from EQGRP toolset - file 1212.pl"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-15"
@@ -189,6 +199,7 @@ rule EQGRP_1212 {
 rule EQGRP_1212_dehex {
 	meta:
 		description = "Detects tool from EQGRP toolset - from files 1212.pl, dehex.pl"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-15"
@@ -215,6 +226,7 @@ rule EQGRP_1212_dehex {
 rule install_get_persistent_filenames {
 	meta:
 		description = "EQGRP Toolset Firewall - file install_get_persistent_filenames"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -228,6 +240,7 @@ rule install_get_persistent_filenames {
 rule EQGRP_create_dns_injection {
 	meta:
 		description = "EQGRP Toolset Firewall - file create_dns_injection.py"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -242,6 +255,7 @@ rule EQGRP_create_dns_injection {
 rule EQGRP_screamingplow {
 	meta:
 		description = "EQGRP Toolset Firewall - file screamingplow.sh"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -256,6 +270,7 @@ rule EQGRP_screamingplow {
 rule EQGRP_MixText {
 	meta:
 		description = "EQGRP Toolset Firewall - file MixText.py"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -269,6 +284,7 @@ rule EQGRP_MixText {
 rule EQGRP_tunnel_state_reader {
 	meta:
 		description = "EQGRP Toolset Firewall - file tunnel_state_reader"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -283,6 +299,7 @@ rule EQGRP_tunnel_state_reader {
 rule EQGRP_payload {
 	meta:
 		description = "EQGRP Toolset Firewall - file payload.py"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -297,6 +314,7 @@ rule EQGRP_payload {
 rule EQGRP_eligiblecandidate {
 	meta:
 		description = "EQGRP Toolset Firewall - file eligiblecandidate.py"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -314,6 +332,7 @@ rule EQGRP_eligiblecandidate {
 rule EQGRP_BUSURPER_2211_724 {
 	meta:
 		description = "EQGRP Toolset Firewall - file BUSURPER-2211-724.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -331,6 +350,7 @@ rule EQGRP_BUSURPER_2211_724 {
 rule EQGRP_networkProfiler_orderScans {
 	meta:
 		description = "EQGRP Toolset Firewall - file networkProfiler_orderScans.sh"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -345,6 +365,7 @@ rule EQGRP_networkProfiler_orderScans {
 rule EQGRP_epicbanana_2_1_0_1 {
 	meta:
 		description = "EQGRP Toolset Firewall - file epicbanana_2.1.0.1.py"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -359,6 +380,7 @@ rule EQGRP_epicbanana_2_1_0_1 {
 rule EQGRP_sniffer_xml2pcap {
 	meta:
 		description = "EQGRP Toolset Firewall - file sniffer_xml2pcap"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -373,6 +395,7 @@ rule EQGRP_sniffer_xml2pcap {
 rule EQGRP_BananaAid {
 	meta:
 		description = "EQGRP Toolset Firewall - file BananaAid"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -389,6 +412,7 @@ rule EQGRP_BananaAid {
 rule EQGRP_bo {
 	meta:
 		description = "EQGRP Toolset Firewall - file bo"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -406,6 +430,7 @@ rule EQGRP_bo {
 rule EQGRP_SecondDate_2211 {
 	meta:
 		description = "EQGRP Toolset Firewall - file SecondDate-2211.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -422,6 +447,7 @@ rule EQGRP_SecondDate_2211 {
 rule EQGRP_config_jp1_UA {
 	meta:
 		description = "EQGRP Toolset Firewall - file config_jp1_UA.pl"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -438,6 +464,7 @@ rule EQGRP_config_jp1_UA {
 rule EQGRP_userscript {
 	meta:
 		description = "EQGRP Toolset Firewall - file userscript.FW"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -451,6 +478,7 @@ rule EQGRP_userscript {
 rule EQGRP_BBALL_M50FW08_2201 {
 	meta:
 		description = "EQGRP Toolset Firewall - file BBALL_M50FW08-2201.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -469,6 +497,7 @@ rule EQGRP_BBALL_M50FW08_2201 {
 rule EQGRP_BUSURPER_3001_724 {
 	meta:
 		description = "EQGRP Toolset Firewall - file BUSURPER-3001-724.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -484,6 +513,7 @@ rule EQGRP_BUSURPER_3001_724 {
 rule EQGRP_workit {
 	meta:
 		description = "EQGRP Toolset Firewall - file workit.py"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -507,6 +537,7 @@ rule EQGRP_workit {
 rule EQGRP_tinyhttp_setup {
 	meta:
 		description = "EQGRP Toolset Firewall - file tinyhttp_setup.sh"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -523,6 +554,7 @@ rule EQGRP_tinyhttp_setup {
 rule EQGRP_shellcode {
 	meta:
 		description = "EQGRP Toolset Firewall - file shellcode.py"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -542,6 +574,7 @@ rule EQGRP_shellcode {
 rule EQGRP_EPBA {
 	meta:
 		description = "EQGRP Toolset Firewall - file EPBA.script"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -561,6 +594,7 @@ rule EQGRP_EPBA {
 rule EQGRP_BPIE {
 	meta:
 		description = "EQGRP Toolset Firewall - file BPIE-2201.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -581,6 +615,7 @@ rule EQGRP_BPIE {
 rule EQGRP_jetplow_SH {
 	meta:
 		description = "EQGRP Toolset Firewall - file jetplow.sh"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -597,6 +632,7 @@ rule EQGRP_jetplow_SH {
 rule EQGRP_BBANJO {
 	meta:
 		description = "EQGRP Toolset Firewall - file BBANJO-3011.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -616,6 +652,7 @@ rule EQGRP_BBANJO {
 rule EQGRP_BPATROL_2201 {
 	meta:
 		description = "EQGRP Toolset Firewall - file BPATROL-2201.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -633,6 +670,7 @@ rule EQGRP_BPATROL_2201 {
 rule EQGRP_extrabacon {
 	meta:
 		description = "EQGRP Toolset Firewall - file extrabacon_1.1.0.1.py"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -650,6 +688,7 @@ rule EQGRP_extrabacon {
 rule EQGRP_sploit_py {
 	meta:
 		description = "EQGRP Toolset Firewall - file sploit.py"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -665,6 +704,7 @@ rule EQGRP_sploit_py {
 rule EQGRP_uninstallPBD {
 	meta:
 		description = "EQGRP Toolset Firewall - file uninstallPBD.bat"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -680,6 +720,7 @@ rule EQGRP_uninstallPBD {
 rule EQGRP_BICECREAM {
 	meta:
 		description = "EQGRP Toolset Firewall - file BICECREAM-2140"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -701,6 +742,7 @@ rule EQGRP_BICECREAM {
 rule EQGRP_create_http_injection {
 	meta:
 		description = "EQGRP Toolset Firewall - file create_http_injection.py"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -719,6 +761,7 @@ rule EQGRP_create_http_injection {
 rule EQGRP_BFLEA_2201 {
 	meta:
 		description = "EQGRP Toolset Firewall - file BFLEA-2201.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -738,6 +781,7 @@ rule EQGRP_BFLEA_2201 {
 rule EQGRP_BpfCreator_RHEL4 {
 	meta:
 		description = "EQGRP Toolset Firewall - file BpfCreator-RHEL4"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -755,6 +799,7 @@ rule EQGRP_BpfCreator_RHEL4 {
 rule EQGRP_StoreFc {
 	meta:
 		description = "EQGRP Toolset Firewall - file StoreFc.py"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -770,6 +815,7 @@ rule EQGRP_StoreFc {
 rule EQGRP_hexdump {
 	meta:
 		description = "EQGRP Toolset Firewall - file hexdump.py"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -786,6 +832,7 @@ rule EQGRP_hexdump {
 rule EQGRP_BBALL {
 	meta:
 		description = "EQGRP Toolset Firewall - file BBALL_E28F6-2201.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -807,6 +854,7 @@ rule EQGRP_BBALL {
 rule EQGRP_BARPUNCH_BPICKER {
 	meta:
 		description = "EQGRP Toolset Firewall - from files BARPUNCH-3110, BPICKER-3100"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -826,6 +874,7 @@ rule EQGRP_BARPUNCH_BPICKER {
 rule EQGRP_Implants_Gen6 {
 	meta:
 		description = "EQGRP Toolset Firewall"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -854,6 +903,7 @@ rule EQGRP_Implants_Gen6 {
 rule EQGRP_Implants_Gen5 {
 	meta:
 		description = "EQGRP Toolset Firewall"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -879,6 +929,7 @@ rule EQGRP_Implants_Gen5 {
 rule EQGRP_pandarock {
 	meta:
 		description = "EQGRP Toolset Firewall - from files pandarock_v1.11.1.1.bin, pit"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -906,6 +957,7 @@ rule EQGRP_pandarock {
 rule EQGRP_BananaUsurper_writeJetPlow {
 	meta:
 		description = "EQGRP Toolset Firewall - from files BananaUsurper-2120, writeJetPlow-2130"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -925,6 +977,7 @@ rule EQGRP_BananaUsurper_writeJetPlow {
 rule EQGRP_Implants_Gen4 {
 	meta:
 		description = "EQGRP Toolset Firewall - from files BLIAR-2110, BLIQUER-2230, BLIQUER-3030, BLIQUER-3120"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -946,6 +999,7 @@ rule EQGRP_Implants_Gen4 {
 rule EQGRP_Implants_Gen3 {
 	meta:
 		description = "EQGRP Toolset Firewall"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -969,6 +1023,7 @@ rule EQGRP_Implants_Gen3 {
 rule EQGRP_BLIAR_BLIQUER {
 	meta:
 		description = "EQGRP Toolset Firewall - from files BLIAR-2110, BLIQUER-2230"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -1002,6 +1057,7 @@ rule EQGRP_BLIAR_BLIQUER {
 rule EQGRP_sploit {
 	meta:
 		description = "EQGRP Toolset Firewall - from files sploit.py, sploit.py"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -1024,6 +1080,7 @@ rule EQGRP_sploit {
 rule EQGRP_Implants_Gen2 {
 	meta:
 		description = "EQGRP Toolset Firewall"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -1055,6 +1112,7 @@ rule EQGRP_Implants_Gen2 {
 rule EQGRP_Implants_Gen1 {
 	meta:
 		description = "EQGRP Toolset Firewall"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -1084,6 +1142,7 @@ rule EQGRP_Implants_Gen1 {
 rule EQGRP_eligiblebombshell_generic {
 	meta:
 		description = "EQGRP Toolset Firewall - from files eligiblebombshell_1.2.0.1.py, eligiblebombshell_1.2.0.1.py"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -1101,6 +1160,7 @@ rule EQGRP_eligiblebombshell_generic {
 rule EQGRP_ssh_telnet_29 {
 	meta:
 		description = "EQGRP Toolset Firewall - from files ssh.py, telnet.py"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -1124,6 +1184,7 @@ rule EQGRP_ssh_telnet_29 {
 rule EQGRP_tinyexec {
 	meta:
 		description = "EQGRP Toolset Firewall - from files tinyexec"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -1137,6 +1198,7 @@ rule EQGRP_tinyexec {
 rule EQGRP_callbacks {
 	meta:
 		description = "EQGRP Toolset Firewall - Callback addresses"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -1149,6 +1211,7 @@ rule EQGRP_callbacks {
 rule EQGRP_Extrabacon_Output {
 	meta:
 		description = "EQGRP Toolset Firewall - Extrabacon exploit output"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -1165,6 +1228,7 @@ rule EQGRP_Extrabacon_Output {
 rule EQGRP_Unique_Strings {
 	meta:
 		description = "EQGRP Toolset Firewall - Unique strings"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
@@ -1178,6 +1242,7 @@ rule EQGRP_Unique_Strings {
 rule EQGRP_RC5_RC6_Opcode {
 	meta:
 		description = "EQGRP Toolset Firewall - RC5 / RC6 opcode"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://securelist.com/blog/incidents/75812/the-equation-giveaway/"
 		date = "2016-08-17"
@@ -1206,6 +1271,7 @@ rule EQGRP_RC5_RC6_Opcode {
 rule EquationGroup_modifyAudit_Implant {
    meta:
       description = "EquationGroup Malware - file modifyAudit_Implant.dll"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1222,6 +1288,7 @@ rule EquationGroup_modifyAudit_Implant {
 rule EquationGroup_modifyAudit_Lp {
    meta:
       description = "EquationGroup Malware - file modifyAudit_Lp.dll"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1239,6 +1306,7 @@ rule EquationGroup_modifyAudit_Lp {
 rule EquationGroup_ProcessHide_Lp {
    meta:
       description = "EquationGroup Malware - file ProcessHide_Lp.dll"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1258,6 +1326,7 @@ rule EquationGroup_ProcessHide_Lp {
 rule EquationGroup_pwdump_Implant {
    meta:
       description = "EquationGroup Malware - file pwdump_Implant.dll"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1273,6 +1342,7 @@ rule EquationGroup_pwdump_Implant {
 rule EquationGroup_EquationDrug_Gen_5 {
    meta:
       description = "EquationGroup Malware - file PC_Level3_http_dll"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1289,6 +1359,7 @@ rule EquationGroup_EquationDrug_Gen_5 {
 rule EquationGroup_PC_Level3_http_flav_dll {
    meta:
       description = "EquationGroup Malware - file PC_Level3_http_flav_dll"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1306,6 +1377,7 @@ rule EquationGroup_PC_Level3_http_flav_dll {
 rule EquationGroup_LSADUMP_Lp {
    meta:
       description = "EquationGroup Malware - file LSADUMP_Lp.dll"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1319,6 +1391,7 @@ rule EquationGroup_LSADUMP_Lp {
 rule EquationGroup_EquationDrug_mstcp32 {
    meta:
       description = "EquationGroup Malware - file mstcp32.sys"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1340,6 +1413,7 @@ rule EquationGroup_EquationDrug_mstcp32 {
 rule EquationGroup_nethide_Lp {
    meta:
       description = "EquationGroup Malware - file nethide_Lp.dll"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1357,6 +1431,7 @@ rule EquationGroup_nethide_Lp {
 rule EquationGroup_PC_Level4_flav_dll_x64 {
    meta:
       description = "EquationGroup Malware - file PC_Level4_flav_dll_x64"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1372,6 +1447,7 @@ rule EquationGroup_PC_Level4_flav_dll_x64 {
 rule EquationGroup_PC_Level4_flav_exe {
    meta:
       description = "EquationGroup Malware - file PC_Level4_flav_exe"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1390,6 +1466,7 @@ rule EquationGroup_PC_Level4_flav_exe {
 rule EquationGroup_processinfo_Implant {
    meta:
       description = "EquationGroup Malware - file processinfo_Implant.dll"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1421,6 +1498,7 @@ rule EquationGroup_EquationDrug_Gen_2 {
 rule EquationGroup_EquationDrug_ntevt {
    meta:
       description = "EquationGroup Malware - file ntevt.sys"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1435,6 +1513,7 @@ rule EquationGroup_EquationDrug_ntevt {
 rule EquationGroup_nethide_Implant {
    meta:
       description = "EquationGroup Malware - file nethide_Implant.dll"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1464,6 +1543,7 @@ rule EquationGroup_EquationDrug_Gen_4 {
 rule EquationGroup_EquationDrug_tdi6 {
    meta:
       description = "EquationGroup Malware - file tdi6.sys"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1480,6 +1560,7 @@ rule EquationGroup_EquationDrug_tdi6 {
 rule EquationGroup_modifyAuthentication_Implant {
    meta:
       description = "EquationGroup Malware - file modifyAuthentication_Implant.dll"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1497,6 +1578,7 @@ rule EquationGroup_modifyAuthentication_Implant {
 rule EquationGroup_ntfltmgr {
    meta:
       description = "EquationGroup Malware - file ntfltmgr.sys"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1513,6 +1595,7 @@ rule EquationGroup_ntfltmgr {
 rule EquationGroup_DXGHLP16 {
    meta:
       description = "EquationGroup Malware - file DXGHLP16.SYS"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1534,6 +1617,7 @@ rule EquationGroup_DXGHLP16 {
 rule EquationGroup_EquationDrug_msgkd {
    meta:
       description = "EquationGroup Malware - file msgkd.ex_"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1548,6 +1632,7 @@ rule EquationGroup_EquationDrug_msgkd {
 rule EquationGroup_RunAsChild_Lp {
    meta:
       description = "EquationGroup Malware - file RunAsChild_Lp.dll"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1563,6 +1648,7 @@ rule EquationGroup_RunAsChild_Lp {
 rule EquationGroup_EquationDrug_Gen_6 {
    meta:
       description = "EquationGroup Malware - file PC_Level3_dll_x64"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1578,6 +1664,7 @@ rule EquationGroup_EquationDrug_Gen_6 {
 rule EquationGroup_PC_Level3_http_flav_dll_x64 {
    meta:
       description = "EquationGroup Malware - file PC_Level3_http_flav_dll_x64"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1610,6 +1697,7 @@ rule EquationGroup_EquationDrug_Gen_3 {
 rule EquationGroup_GetAdmin_Lp {
    meta:
       description = "EquationGroup Malware - file GetAdmin_Lp.dll"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1624,6 +1712,7 @@ rule EquationGroup_GetAdmin_Lp {
 rule EquationGroup_ModifyGroup_Lp {
    meta:
       description = "EquationGroup Malware - file ModifyGroup_Lp.dll"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1638,6 +1727,7 @@ rule EquationGroup_ModifyGroup_Lp {
 rule EquationGroup_pwdump_Lp {
    meta:
       description = "EquationGroup Malware - file pwdump_Lp.dll"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1651,6 +1741,7 @@ rule EquationGroup_pwdump_Lp {
 rule EquationGroup_EventLogEdit_Implant {
    meta:
       description = "EquationGroup Malware - file EventLogEdit_Implant.dll"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1666,6 +1757,7 @@ rule EquationGroup_EventLogEdit_Implant {
 rule EquationGroup_PortMap_Lp {
    meta:
       description = "EquationGroup Malware - file PortMap_Lp.dll"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1681,6 +1773,7 @@ rule EquationGroup_PortMap_Lp {
 rule EquationGroup_ProcessOptions_Lp {
    meta:
       description = "EquationGroup Malware - file ProcessOptions_Lp.dll"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1694,6 +1787,7 @@ rule EquationGroup_ProcessOptions_Lp {
 rule EquationGroup_PassFreely_Lp {
    meta:
       description = "EquationGroup Malware - file PassFreely_Lp.dll"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1711,6 +1805,7 @@ rule EquationGroup_PassFreely_Lp {
 rule EquationGroup_EquationDrug_Gen_1 {
    meta:
       description = "EquationGroup Malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"

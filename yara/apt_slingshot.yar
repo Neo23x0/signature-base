@@ -11,6 +11,7 @@ import "pe"
 rule Slingshot_APT_Spork_Downloader {
    meta:
       description = "Detects malware from Slingshot APT"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://securelist.com/apt-slingshot/84312/"
       date = "2018-03-09"
@@ -24,6 +25,7 @@ rule Slingshot_APT_Spork_Downloader {
 rule Slingshot_APT_Minisling {
    meta:
       description = "Detects malware from Slingshot APT"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://securelist.com/apt-slingshot/84312/"
       date = "2018-03-09"
@@ -36,6 +38,7 @@ rule Slingshot_APT_Minisling {
 rule Slingshot_APT_Ring0_Loader {
    meta:
       description = "Detects malware from Slingshot APT"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://securelist.com/apt-slingshot/84312/"
       date = "2018-03-09"
@@ -54,6 +57,7 @@ rule Slingshot_APT_Ring0_Loader {
 rule Slingshot_APT_Malware_1 {
    meta:
       description = "Detects malware from Slingshot APT"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://securelist.com/apt-slingshot/84312/"
       date = "2018-03-09"
@@ -73,6 +77,7 @@ rule Slingshot_APT_Malware_1 {
 rule Slingshot_APT_Malware_2 {
    meta:
       description = "Detects malware from Slingshot APT"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://securelist.com/apt-slingshot/84312/"
       date = "2018-03-09"
@@ -92,6 +97,7 @@ rule Slingshot_APT_Malware_2 {
 rule Slingshot_APT_Malware_3 {
    meta:
       description = "Detects malware from Slingshot APT"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://securelist.com/apt-slingshot/84312/"
       date = "2018-03-09"
@@ -112,6 +118,7 @@ rule Slingshot_APT_Malware_3 {
 rule Slingshot_APT_Malware_4 {
    meta:
       description = "Detects malware from Slingshot APT"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://securelist.com/apt-slingshot/84312/"
       date = "2018-03-09"

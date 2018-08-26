@@ -10,6 +10,7 @@
 rule IronGate_APT_Step7ProSim_Gen {
 	meta:
 		description = "Detects IronGate APT Malware - Step7ProSim DLL"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://goo.gl/Mr6M2J"
 		date = "2016-06-04"
@@ -40,6 +41,7 @@ rule IronGate_APT_Step7ProSim_Gen {
 rule IronGate_PyInstaller_update_EXE {
 	meta:
 		description = "Detects a PyInstaller file named update.exe as mentioned in the IronGate APT"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://goo.gl/Mr6M2J"
 		date = "2016-06-04"
@@ -63,6 +65,7 @@ rule IronGate_PyInstaller_update_EXE {
 rule Nirsoft_NetResView {
 	meta:
 		description = "Detects NirSoft NetResView - utility that displays the list of all network resources"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://goo.gl/Mr6M2J"
 		date = "2016-06-04"

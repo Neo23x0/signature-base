@@ -10,6 +10,7 @@
 rule Invoke_mimikittenz {
 	meta:
 		description = "Detects Mimikittenz - file Invoke-mimikittenz.ps1"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://github.com/putterpanda/mimikittenz"
 		date = "2016-07-19"

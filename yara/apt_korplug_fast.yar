@@ -1,7 +1,8 @@
 rule Korplug_FAST {
     meta:
         description = "Rule to detect Korplug/PlugX FAST variant"
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         date = "2015-08-20"
         hash = "c437465db42268332543fbf6fd6a560ca010f19e0fd56562fb83fb704824b371"
     strings:

@@ -10,6 +10,7 @@
 rule MiniDionis_readerView {
 	meta:
 		description = "MiniDionis Malware - file readerView.exe / adobe.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://www.kernelmode.info/forum/viewtopic.php?f=16&t=3950"
 		date = "2015-07-20"
@@ -37,6 +38,7 @@ rule MiniDionis_readerView {
 rule Malicious_SFX1 {
 	meta:
 		description = "SFX with voicemail content"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://www.kernelmode.info/forum/viewtopic.php?f=16&t=3950"
 		date = "2015-07-20"
@@ -51,6 +53,7 @@ rule Malicious_SFX1 {
 rule Malicious_SFX2 {
 	meta:
 		description = "SFX with adobe.exe content"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://www.kernelmode.info/forum/viewtopic.php?f=16&t=3950"
 		date = "2015-07-20"
@@ -66,6 +69,7 @@ rule Malicious_SFX2 {
 rule MiniDionis_VBS_Dropped {
 	meta:
 		description = "Dropped File - 1.vbs"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://malwr.com/analysis/ZDc4ZmIyZDI4MTVjNGY5NWI0YzE3YjIzNGFjZTcyYTY/"
 		date = "2015-07-21"

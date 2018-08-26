@@ -12,7 +12,8 @@
 rule Embedded_EXE_Cloaking {
         meta:
                 description = "Detects an embedded executable in a non-executable file"
-                author = "Florian Roth"
+                license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
                 date = "2015/02/27"
                 score = 65
         strings:
@@ -64,7 +65,8 @@ rule Cloaked_as_JPG {
 rule Suspicious_Size_explorer_exe {
     meta:
         description = "Detects uncommon file size of explorer.exe"
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         score = 60
         date = "2015-12-21"
     condition:
@@ -77,7 +79,8 @@ rule Suspicious_Size_explorer_exe {
 rule Suspicious_Size_chrome_exe {
     meta:
         description = "Detects uncommon file size of chrome.exe"
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         score = 60
         date = "2015-12-21"
     condition:
@@ -89,7 +92,8 @@ rule Suspicious_Size_chrome_exe {
 rule Suspicious_Size_csrss_exe {
     meta:
         description = "Detects uncommon file size of csrss.exe"
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         score = 60
         date = "2015-12-21"
     condition:
@@ -101,7 +105,8 @@ rule Suspicious_Size_csrss_exe {
 rule Suspicious_Size_iexplore_exe {
     meta:
         description = "Detects uncommon file size of iexplore.exe"
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         score = 60
         date = "2015-12-21"
     condition:
@@ -114,7 +119,8 @@ rule Suspicious_Size_iexplore_exe {
 rule Suspicious_Size_firefox_exe {
     meta:
         description = "Detects uncommon file size of firefox.exe"
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         score = 60
         date = "2015-12-21"
     condition:
@@ -126,7 +132,8 @@ rule Suspicious_Size_firefox_exe {
 rule Suspicious_Size_java_exe {
     meta:
         description = "Detects uncommon file size of java.exe"
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         score = 60
         date = "2015-12-21"
     condition:
@@ -138,7 +145,8 @@ rule Suspicious_Size_java_exe {
 rule Suspicious_Size_lsass_exe {
     meta:
         description = "Detects uncommon file size of lsass.exe"
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         score = 60
         date = "2015-12-21"
     condition:
@@ -150,7 +158,8 @@ rule Suspicious_Size_lsass_exe {
 rule Suspicious_Size_svchost_exe {
     meta:
         description = "Detects uncommon file size of svchost.exe"
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         score = 60
         date = "2015-12-21"
     condition:
@@ -162,7 +171,8 @@ rule Suspicious_Size_svchost_exe {
 rule Suspicious_Size_winlogon_exe {
     meta:
         description = "Detects uncommon file size of winlogon.exe"
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         score = 60
         date = "2015-12-21"
     condition:
@@ -174,7 +184,8 @@ rule Suspicious_Size_winlogon_exe {
 rule Suspicious_Size_igfxhk_exe {
     meta:
         description = "Detects uncommon file size of igfxhk.exe"
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         score = 60
         date = "2015-12-21"
     condition:
@@ -186,7 +197,8 @@ rule Suspicious_Size_igfxhk_exe {
 rule Suspicious_Size_servicehost_dll {
     meta:
         description = "Detects uncommon file size of servicehost.dll"
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         score = 60
         date = "2015-12-23"
     condition:
@@ -198,7 +210,8 @@ rule Suspicious_Size_servicehost_dll {
 rule Suspicious_Size_rundll32_exe {
     meta:
         description = "Detects uncommon file size of rundll32.exe"
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         score = 60
         date = "2015-12-23"
     condition:
@@ -210,7 +223,8 @@ rule Suspicious_Size_rundll32_exe {
 rule Suspicious_Size_taskhost_exe {
     meta:
         description = "Detects uncommon file size of taskhost.exe"
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         score = 60
         date = "2015-12-23"
     condition:
@@ -222,7 +236,8 @@ rule Suspicious_Size_taskhost_exe {
 rule Suspicious_Size_spoolsv_exe {
     meta:
         description = "Detects uncommon file size of spoolsv.exe"
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         score = 60
         date = "2015-12-23"
     condition:
@@ -234,7 +249,8 @@ rule Suspicious_Size_spoolsv_exe {
 rule Suspicious_Size_smss_exe {
     meta:
         description = "Detects uncommon file size of smss.exe"
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         score = 60
         date = "2015-12-23"
     condition:
@@ -246,7 +262,8 @@ rule Suspicious_Size_smss_exe {
 rule Suspicious_Size_wininit_exe {
     meta:
         description = "Detects uncommon file size of wininit.exe"
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         score = 60
         date = "2015-12-23"
     condition:
@@ -258,6 +275,7 @@ rule Suspicious_Size_wininit_exe {
 rule Suspicious_AutoIt_by_Microsoft {
    meta:
       description = "Detects a AutoIt script with Microsoft identification"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research - VT"
       date = "2017-12-14"

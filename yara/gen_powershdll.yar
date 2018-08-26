@@ -9,6 +9,7 @@
 rule PowerShdll {
    meta:
       description = "Detects hack tool PowerShdll"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/p3nt4/PowerShdll"
       date = "2017-08-03"

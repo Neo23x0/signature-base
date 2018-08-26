@@ -42,6 +42,7 @@ rule ReflectiveLoader {
 rule Reflective_DLL_Loader_Aug17_1 {
    meta:
       description = "Detects Reflective DLL Loader"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-08-20"
@@ -65,6 +66,7 @@ rule Reflective_DLL_Loader_Aug17_1 {
 rule DLL_Injector_Lynx {
    meta:
       description = "Detects Lynx DLL Injector"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-08-20"
@@ -87,6 +89,7 @@ rule DLL_Injector_Lynx {
 rule Reflective_DLL_Loader_Aug17_2 {
    meta:
       description = "Detects Reflective DLL Loader - suspicious - Possible FP could be program crack"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-08-20"
@@ -113,6 +116,7 @@ rule Reflective_DLL_Loader_Aug17_2 {
 rule Reflective_DLL_Loader_Aug17_3 {
    meta:
       description = "Detects Reflective DLL Loader"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-08-20"
@@ -136,6 +140,7 @@ rule Reflective_DLL_Loader_Aug17_3 {
 rule Reflective_DLL_Loader_Aug17_4 {
    meta:
       description = "Detects Reflective DLL Loader"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-08-20"

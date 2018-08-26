@@ -10,6 +10,7 @@
 rule TempRacer {
 	meta:
 		description = "Detects privilege escalation tool - file TempRacer.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://www.darknet.org.uk/2016/03/tempracer-windows-privilege-escalation-tool/"
 		date = "2016-03-30"

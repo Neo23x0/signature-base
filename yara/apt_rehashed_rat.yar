@@ -13,6 +13,7 @@ import "pe"
 rule Rehashed_RAT_1 {
    meta:
       description = "Detects malware from Rehashed RAT incident"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://blog.fortinet.com/2017/09/05/rehashed-rat-used-in-apt-campaign-against-vietnamese-organizations"
       date = "2017-09-08"
@@ -39,6 +40,7 @@ rule Rehashed_RAT_1 {
 rule Rehashed_RAT_2 {
    meta:
       description = "Detects malware from Rehashed RAT incident"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://blog.fortinet.com/2017/09/05/rehashed-rat-used-in-apt-campaign-against-vietnamese-organizations"
       date = "2017-09-08"
@@ -65,6 +67,7 @@ rule Rehashed_RAT_2 {
 rule Rehashed_RAT_3 {
    meta:
       description = "Detects malware from Rehashed RAT incident"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://blog.fortinet.com/2017/09/05/rehashed-rat-used-in-apt-campaign-against-vietnamese-organizations"
       date = "2017-09-08"

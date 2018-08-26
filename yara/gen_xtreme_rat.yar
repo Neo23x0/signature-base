@@ -14,6 +14,7 @@ import "pe"
 rule Xtreme_Sep17_1 {
    meta:
       description = "Detects XTREME sample analyzed in September 2017"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-09-27"
@@ -37,6 +38,7 @@ rule Xtreme_Sep17_1 {
 rule Xtreme_Sep17_2 {
    meta:
       description = "Detects XTREME sample analyzed in September 2017"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-09-27"
@@ -51,6 +53,7 @@ rule Xtreme_Sep17_2 {
 rule Xtreme_Sep17_3 {
    meta:
       description = "Detects XTREME sample analyzed in September 2017"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-09-27"
@@ -65,6 +68,7 @@ rule Xtreme_Sep17_3 {
 rule Xtreme_RAT_Gen_Imp {
    meta:
       description = "Detects XTREME sample analyzed in September 2017"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-09-27"

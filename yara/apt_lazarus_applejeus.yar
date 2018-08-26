@@ -13,6 +13,7 @@ import "pe"
 rule APT_Lazarus_Aug18_Downloader_1 {
    meta:
       description = "Detects Lazarus Group Malware Downloadery"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://securelist.com/operation-applejeus/87553/"
       date = "2018-08-24"
@@ -37,6 +38,7 @@ rule APT_Lazarus_Aug18_Downloader_1 {
 rule APT_Lazarus_Aug18_1 {
    meta:
       description = "Detects Lazarus Group Malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://securelist.com/operation-applejeus/87553/"
       date = "2018-08-24"
@@ -58,6 +60,7 @@ rule APT_Lazarus_Aug18_1 {
 rule APT_Lazarus_Aug18_2 {
    meta:
       description = "Detects Lazarus Group Malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://securelist.com/operation-applejeus/87553/"
       date = "2018-08-24"
@@ -77,6 +80,7 @@ rule APT_Lazarus_Aug18_2 {
 
 rule APT_FallChill_RC4_Keys {
    meta:
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       description = "Detects FallChill RC4 keys"
       reference = "https://securelist.com/operation-applejeus/87553/"

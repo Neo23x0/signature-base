@@ -69,6 +69,7 @@ rule TRITON_ICS_FRAMEWORK {
 rule Triton_trilog {
    meta:
       description = "Detects Triton APT malware - file trilog.exe"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/vtQoCQ"
       date = "2017-12-14"

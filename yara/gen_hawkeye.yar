@@ -2,6 +2,7 @@
 rule HawkEye_Keylogger_Feb18_1 {
    meta:
       description = "Detects HawkEye keylogger variante observed in February 2018"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://app.any.run/tasks/ae2521dd-61aa-4bc7-b0d8-8c85ddcbfcc9"
       date = "2018-02-12"

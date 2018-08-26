@@ -9,6 +9,7 @@
 rule Empire_Invoke_BypassUAC {
 	meta:
 		description = "Empire - a pure PowerShell post-exploitation agent - file Invoke-BypassUAC.ps1"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://github.com/PowerShellEmpire/Empire"
 		date = "2015-08-06"
@@ -26,6 +27,7 @@ rule Empire_Invoke_BypassUAC {
 rule Empire_lib_modules_trollsploit_message {
 	meta:
 		description = "Empire - a pure PowerShell post-exploitation agent - file message.py"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://github.com/PowerShellEmpire/Empire"
 		date = "2015-08-06"
@@ -43,6 +45,7 @@ rule Empire_lib_modules_trollsploit_message {
 rule Empire_Persistence {
 	meta:
 		description = "Empire - a pure PowerShell post-exploitation agent - file Persistence.psm1"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://github.com/PowerShellEmpire/Empire"
 		date = "2015-08-06"
@@ -59,6 +62,7 @@ rule Empire_Persistence {
 rule Empire_portscan {
 	meta:
 		description = "Empire - a pure PowerShell post-exploitation agent - file portscan.py"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://github.com/PowerShellEmpire/Empire"
 		date = "2015-08-06"
@@ -74,6 +78,7 @@ rule Empire_portscan {
 rule Empire_Invoke_Shellcode {
 	meta:
 		description = "Empire - a pure PowerShell post-exploitation agent - file Invoke-Shellcode.ps1"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://github.com/PowerShellEmpire/Empire"
 		date = "2015-08-06"
@@ -90,6 +95,7 @@ rule Empire_Invoke_Shellcode {
 rule Empire_Invoke_Mimikatz {
 	meta:
 		description = "Empire - a pure PowerShell post-exploitation agent - file Invoke-Mimikatz.ps1"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://github.com/PowerShellEmpire/Empire"
 		date = "2015-08-06"
@@ -106,6 +112,7 @@ rule Empire_Invoke_Mimikatz {
 rule Empire_lib_modules_credentials_mimikatz_pth {
 	meta:
 		description = "Empire - a pure PowerShell post-exploitation agent - file pth.py"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://github.com/PowerShellEmpire/Empire"
 		date = "2015-08-06"
@@ -121,6 +128,7 @@ rule Empire_lib_modules_credentials_mimikatz_pth {
 rule Empire_Write_HijackDll {
 	meta:
 		description = "Empire - a pure PowerShell post-exploitation agent - file Write-HijackDll.ps1"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://github.com/PowerShellEmpire/Empire"
 		date = "2015-08-06"
@@ -137,6 +145,7 @@ rule Empire_Write_HijackDll {
 rule Empire_skeleton_key {
 	meta:
 		description = "Empire - a pure PowerShell post-exploitation agent - file skeleton_key.py"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://github.com/PowerShellEmpire/Empire"
 		date = "2015-08-06"
@@ -154,6 +163,7 @@ rule Empire_skeleton_key {
 rule Empire_invoke_wmi {
 	meta:
 		description = "Empire - a pure PowerShell post-exploitation agent - file invoke_wmi.py"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://github.com/PowerShellEmpire/Empire"
 		date = "2015-08-06"
