@@ -24,4 +24,6 @@ Using the YARA rules in a tool other than [LOKI](https://github.com/Neo23x0/Loki
 
 ![Creative Commons License](https://i.creativecommons.org/l/by-nc/4.0/88x31.png)
 
-All signatures and IOC files in this repository, except the ones created by 3rd parties, are licensed under the [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/).
+All signatures and IOC files in this repository, except the YARA rules created by 3rd parties, are licensed under the [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/).
+
+The license of this repository changed in August 2018. All forks or copies of this repository that were created before August 26th of 2018 are licensed under GPL 3.0. 
