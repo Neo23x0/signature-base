@@ -56,6 +56,7 @@ rule Suspicious_PowerShell_WebDownload_1 {
 		score = 60
       reference = "Internal Research"
       date = "2017-02-22"
+      type = "file"
    strings:
       $s1 = "System.Net.WebClient).DownloadString(\"http" ascii nocase
 		$s2 = "System.Net.WebClient).DownloadString('http" ascii nocase
