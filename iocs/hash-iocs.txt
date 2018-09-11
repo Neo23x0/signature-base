@@ -8284,3 +8284,10 @@ b1bb1d5f178b064eb1d7c9cc7cadcf8b3959a940c14cee457ce3aba5795660aa;Tick Group Weap
 33665d93ab2a0262551c61ec9a3adca2c2b8dfea34e6f3f723274d88890f6ceb;Tick Group Weaponized USB https://researchcenter.paloaltonetworks.com/2018/06/unit42-tick-group-weaponized-secure-usb-drives-target-air-gapped-critical-systems/
 019874898284935719dc74a6699fb822e20cdb8e3a96a7dc8ec4f625e3f1116e;Tick Group Weaponized USB https://researchcenter.paloaltonetworks.com/2018/06/unit42-tick-group-weaponized-secure-usb-drives-target-air-gapped-critical-systems/
 f817c9826089b49d251b8a09a0e9bf9b4b468c6e2586af60e50afe48602f0bec;Tick Group Weaponized USB https://researchcenter.paloaltonetworks.com/2018/06/unit42-tick-group-weaponized-secure-usb-drives-target-air-gapped-critical-systems/
+
+8e6d87eadb27b74852bd5a19062e52ed;Lucky Mouse NDISPROXY - https://securelist.com/luckymouse-ndisproxy-driver/87914/ -
+d21de00f981bb6b5094f9c3dfa0be533;Lucky Mouse NDISPROXY - https://securelist.com/luckymouse-ndisproxy-driver/87914/ -
+a2eb59414823ae00d53ca05272168006;Lucky Mouse NDISPROXY - https://securelist.com/luckymouse-ndisproxy-driver/87914/ -
+493167e85e45363d09495d0841c30648;Lucky Mouse NDISPROXY - https://securelist.com/luckymouse-ndisproxy-driver/87914/ -
+ad07b44578fa47e7de0df42a8b7f8d2d;Lucky Mouse NDISPROXY - https://securelist.com/luckymouse-ndisproxy-driver/87914/ -
+83c5ff660f2900677e537f9500579965;Lucky Mouse NDISPROXY - https://securelist.com/luckymouse-ndisproxy-driver/87914/ - Auxiliary Earthworm SOCKS tunneler and Scanline network scanner
