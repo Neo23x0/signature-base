@@ -135,6 +135,6 @@ rule TurlaMosquito_Mal_7 {
    condition:
       uint16(0) == 0x5a4d and filesize < 1000KB and (
         pe.imphash() == "073235ae6dfbb1bf5db68a039a7b7726" or
-        2 of them
+        3 of them
       )
 }

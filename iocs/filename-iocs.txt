@@ -1985,8 +1985,6 @@ ystem32\\lcsvsvc\.dll;80
 
 # HP Keylogging Audio Driver https://goo.gl/BSQWzw
 \\Users\\Public\\MicTray\.log;70
-\\Windows\\System32\\MicTray\.exe;70
-\\Windows\\System32\\MicTray64\.exe;70
 
 # WannaCry Ransomware https://goo.gl/1M92G1
 \\tasksche\.exe;75
