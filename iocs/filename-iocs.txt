@@ -3065,4 +3065,22 @@ ystem32\\Microsoft\\Protect\\Windows\\svchost.exe;80
 ystem32\\uploadmgrsvc\.dll;80
 ystem32\\uploadmgr\.dat;80
 
+# Suspicious File Name and Location
+\\ProgramData\\[^\\]{1,20}\.sct;65
+\\ProgramData\\DefenderNT\\[^\\]{1,20}\.vbs;65
+\\ProgramData\\FirefoxSDK\\[^\\]{1,20}\.vbs;65
+\\ProgramData\\WindowsNT\\[^\\]{1,20}\.vbs;65
+
+# MuddyWater Filename IOC https://securelist.com/muddywater/88059/
+\\ProgramData\\WindowsNT\\WindowsNT\.ini;60
+\\ProgramData\\SYSTEM32SDK\\ConfManagerNT\.vbs;60
+\\ProgramData\\SYSTEM32SDK\\ProjectConfManagerNT\.ini;60
+\\System32\\Tasks\\Microsoft\\WindowsDefenderUpdater;60
+\\System32\\Tasks\\Microsoft\\MicrosoftOneDrive;60
+\\System32\\Tasks\\Microsoft\\WindowsDifenderUpdate;60
+\\System32\\Tasks\\Microsoft\\WindowsSystem32SDK;60
+\\System32\\Tasks\\Microsoft\\WindowsDefenderSDK;60
+\\System32\\Tasks\\Microsoft\\WindowsMalwareDefenderSDK;60
+\\System32\\Tasks\\Microsoft\\WindowsMalwareByteSDK;60
+
 # End
