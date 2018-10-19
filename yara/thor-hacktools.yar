@@ -4481,3 +4481,34 @@ rule HTKL_BlackBone_DriverInjector {
    condition:
       uint16(0) == 0x5a4d and filesize < 8000KB and ( 3 of them or 1 of ($x*) )
 }
+
+rule HKTL_SqlMap {
+   meta:
+      description = "Detects sqlmap hacktool"
+      author = "Florian Roth"
+      reference = "https://github.com/sqlmapproject/sqlmap"
+      date = "2018-10-09"
+      hash1 = "9444478b03caf7af853a64696dd70083bfe67f76aa08a16a151c00aadb540fa8"
+   strings:
+      $x1 = "if cmdLineOptions.get(\"sqlmapShell\"):" fullword ascii
+      $x2 = "if conf.get(\"dumper\"):" fullword ascii
+   condition:
+      filesize < 50KB and 1 of them
+}
+
+rule HKTL_SqlMap_backdoor {
+   meta:
+      description = "Detects SqlMap backdoors"
+      author = "Florian Roth"
+      reference = "https://github.com/sqlmapproject/sqlmap"
+      date = "2018-10-09"
+   condition:
+      ( uint32(0) == 0x8e859c07 or
+         uint32(0) == 0x2d859c07 or
+         uint32(0) == 0x92959c07 or
+         uint32(0) == 0x929d9c07 or
+         uint32(0) == 0x29959c07 or
+         uint32(0) == 0x2b8d9c07 or
+         uint32(0) == 0x2b859c07 or
+         uint32(0) == 0x28b59c07 ) and filesize < 2KB
+}
