@@ -9288,3 +9288,45 @@ rule Webshell_FOPO_Obfuscation_APT_ON_Nov17_1 {
         ( $s1 in (0..350) and $f1 at (filesize-23) )
       )
 }
+
+rule WebShell_JexBoss_JSP_1 {
+   meta:
+      description = "Detects JexBoss JSPs"
+      author = "Florian Roth"
+      reference = "Internal Research"
+      date = "2018-11-08"
+      hash1 = "41e0fb374e5d30b2e2a362a2718a5bf16e73127e22f0dfc89fdb17acbe89efdf"
+   strings:
+      $x1 = "equals(\"jexboss\")"
+      $x2 = "%><pre><%if(request.getParameter(\"ppp\") != null &&" ascii
+
+      $s1 = "<%@ page import=\"java.util.*,java.io.*\"%><pre><% if (request.getParameter(\""
+      $s2 = "!= null && request.getHeader(\"user-agent\"" ascii
+      $s3 = "String disr = dis.readLine(); while ( disr != null ) { out.println(disr); disr = dis.readLine(); }}%>" fullword ascii
+   condition:
+      uint16(0) == 0x253c and filesize < 1KB and 1 of ($x*) or 2 of them
+}
+
+rule WebShell_JexBoss_WAR_1 {
+   meta:
+      description = "Detects JexBoss versions in WAR form"
+      author = "Florian Roth"
+      reference = "Internal Research"
+      date = "2018-11-08"
+      hash1 = "6271775ab144ce9bb9138bf054b149b5813d3beb96338993c6de35330f566092"
+      hash2 = "6f14a63c3034d3762da8b3ad4592a8209a0c88beebcb9f9bd11b40e879f74eaf"
+   strings:
+      $ = "jbossass" fullword ascii
+      $ = "jexws.jsp" fullword ascii
+      $ = "jexws.jspPK" fullword ascii
+      $ = "jexws1.jsp" fullword ascii
+      $ = "jexws1.jspPK" fullword ascii
+      $ = "jexws2.jsp" fullword ascii
+      $ = "jexws2.jspPK" fullword ascii
+      $ = "jexws3.jsp" fullword ascii
+      $ = "jexws3.jspPK" fullword ascii
+      $ = "jexws4.jsp" fullword ascii
+      $ = "jexws4.jspPK" fullword ascii
+   condition:
+      uint16(0) == 0x4b50 and filesize < 4KB and 1 of them
+}
