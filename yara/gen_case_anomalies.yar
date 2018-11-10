@@ -11,6 +11,7 @@
 rule PowerShell_Case_Anomaly {
    meta:
       description = "Detects obfuscated PowerShell hacktools"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://twitter.com/danielhbohannon/status/905096106924761088"
       date = "2017-08-11"
@@ -55,6 +56,7 @@ rule PowerShell_Case_Anomaly {
 rule WScriptShell_Case_Anomaly {
    meta:
       description = "Detects obfuscated wscript.shell commands"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-09-11"

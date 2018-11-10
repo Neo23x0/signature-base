@@ -13,6 +13,7 @@
 rule EXE_cloaked_as_TXT {
 	meta:
 		description = "Executable with TXT extension"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 	condition:
 		uint16(0) == 0x5a4d 					// Executable
@@ -22,6 +23,7 @@ rule EXE_cloaked_as_TXT {
 rule EXE_extension_cloaking {
 	meta:
 		description = "Executable showing different extension (Windows default 'hide known extension')"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 	condition:
 		filename matches /\.txt\.exe$/is or	// Special file extensions
@@ -31,6 +33,7 @@ rule EXE_extension_cloaking {
 rule Cloaked_RAR_File {
 	meta:
 		description = "RAR file cloaked by a different extension"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 	condition:
 		uint32be(0) == 0x52617221							// RAR File Magic Header
@@ -41,6 +44,7 @@ rule Cloaked_RAR_File {
 rule Base64_encoded_Executable {
 	meta:
 		description = "Detects an base64 encoded executable (often embedded)"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		date = "2015-05-28"
 		score = 40
@@ -57,6 +61,7 @@ rule Base64_encoded_Executable {
 rule Gen_Base64_EXE {
    meta:
       description = "Detects Base64 encoded Executable in Executable"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-04-21"
@@ -76,6 +81,7 @@ rule Gen_Base64_EXE {
 rule Binary_Drop_Certutil {
 	meta:
 		description = "Drop binary as base64 encoded cert trick"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://goo.gl/9DNn8q"
 		date = "2015-07-15"
@@ -91,6 +97,7 @@ rule Binary_Drop_Certutil {
 rule StegoKatz {
 	meta:
 		description = "Encoded Mimikatz in other file types"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://goo.gl/jWPBBY"
 		date = "2015-09-11"
@@ -105,6 +112,7 @@ rule StegoKatz {
 rule Obfuscated_VBS_April17 {
    meta:
       description = "Detects cloaked Mimikatz in VBS obfuscation"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-04-21"
@@ -117,6 +125,7 @@ rule Obfuscated_VBS_April17 {
 rule Obfuscated_JS_April17 {
    meta:
       description = "Detects cloaked Mimikatz in JS obfuscation"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-04-21"

@@ -13,6 +13,7 @@ import "pe"
 rule TSCookie_RAT {
    meta:
       description = "Detects TSCookie RAT"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "http://blog.jpcert.or.jp/2018/03/malware-tscooki-7aa0.html"
       date = "2018-03-06"

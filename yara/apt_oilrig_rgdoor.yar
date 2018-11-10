@@ -13,6 +13,7 @@ import "pe"
 rule OilRig_RGDoor_Gen1 {
    meta:
       description = "Detects RGDoor backdoor used by OilRig group"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2018/01/unit42-oilrig-uses-rgdoor-iis-backdoor-targets-middle-east/"
       date = "2018-01-27"

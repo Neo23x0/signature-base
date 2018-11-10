@@ -10,6 +10,7 @@
 rule PassCV_Sabre_Malware_1 {
    meta:
       description = "PassCV Malware mentioned in Cylance Report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://blog.cylance.com/digitally-signed-malware-targeting-gaming-companies"
       date = "2016-10-20"
@@ -34,6 +35,7 @@ rule PassCV_Sabre_Malware_1 {
 rule PassCV_Sabre_Malware_Signing_Cert {
    meta:
       description = "PassCV Malware mentioned in Cylance Report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://blog.cylance.com/digitally-signed-malware-targeting-gaming-companies"
       date = "2016-10-20"
@@ -55,6 +57,7 @@ rule PassCV_Sabre_Malware_Signing_Cert {
 rule PassCV_Sabre_Malware_2 {
    meta:
       description = "PassCV Malware mentioned in Cylance Report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://blog.cylance.com/digitally-signed-malware-targeting-gaming-companies"
       date = "2016-10-20"
@@ -78,6 +81,7 @@ rule PassCV_Sabre_Malware_2 {
 rule PassCV_Sabre_Malware_Excalibur_1 {
    meta:
       description = "PassCV Malware mentioned in Cylance Report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://blog.cylance.com/digitally-signed-malware-targeting-gaming-companies"
       date = "2016-10-20"
@@ -99,6 +103,7 @@ rule PassCV_Sabre_Malware_Excalibur_1 {
 rule PassCV_Sabre_Malware_3 {
    meta:
       description = "PassCV Malware mentioned in Cylance Report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://blog.cylance.com/digitally-signed-malware-targeting-gaming-companies"
       date = "2016-10-20"
@@ -116,6 +121,7 @@ rule PassCV_Sabre_Malware_3 {
 rule PassCV_Sabre_Malware_4 {
    meta:
       description = "PassCV Malware mentioned in Cylance Report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://blog.cylance.com/digitally-signed-malware-targeting-gaming-companies"
       date = "2016-10-20"
@@ -131,6 +137,7 @@ rule PassCV_Sabre_Malware_4 {
 rule PassCV_Sabre_Tool_NTScan {
    meta:
       description = "PassCV Malware mentioned in Cylance Report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://blog.cylance.com/digitally-signed-malware-targeting-gaming-companies"
       date = "2016-10-20"
@@ -147,6 +154,7 @@ rule PassCV_Sabre_Tool_NTScan {
 rule PassCV_Sabre_Malware_5 {
    meta:
       description = "PassCV Malware mentioned in Cylance Report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://blog.cylance.com/digitally-signed-malware-targeting-gaming-companies"
       date = "2016-10-20"

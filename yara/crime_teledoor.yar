@@ -11,6 +11,7 @@
 rule TeleDoor_Backdoor {
    meta:
       description = "Detects the TeleDoor Backdoor as used in Petya Attack in June 2017"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/CpfJQQ"
       date = "2017-07-05"

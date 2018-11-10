@@ -10,6 +10,7 @@
 rule Quasar_RAT_1 {
    meta:
       description = "Detects Quasar RAT"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.pwc.co.uk/cyber-security/pdf/cloud-hopper-annex-b-final.pdf"
       date = "2017-04-07"
@@ -33,6 +34,7 @@ rule Quasar_RAT_1 {
 rule Quasar_RAT_2 {
    meta:
       description = "Detects Quasar RAT"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.pwc.co.uk/cyber-security/pdf/cloud-hopper-annex-b-final.pdf"
       date = "2017-04-07"

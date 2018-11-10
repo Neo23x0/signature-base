@@ -8,6 +8,7 @@
 rule Acrotray_Anomaly {
 	meta:
 		description = "Detects an acrotray.exe that does not contain the usual strings"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		score = 75
 	strings:
@@ -24,6 +25,7 @@ rule Acrotray_Anomaly {
 rule COZY_FANCY_BEAR_modified_VmUpgradeHelper {
 	meta:
 		description = "Detects a malicious VmUpgradeHelper.exe as mentioned in the CrowdStrike report"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www.crowdstrike.com/blog/bears-midst-intrusion-democratic-national-committee/"
 		date = "2016-06-14"
@@ -56,6 +58,7 @@ rule IronTiger_Gh0stRAT_variant
 rule OpCloudHopper_Cloaked_PSCP {
    meta:
       description = "Tool used in Operation Cloud Hopper - pscp.exe cloaked as rundll32.exe"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.pwc.co.uk/cyber-security/pdf/cloud-hopper-annex-b-final.pdf"
       date = "2017-04-07"
@@ -70,6 +73,7 @@ rule OpCloudHopper_Cloaked_PSCP {
 rule msi_dll_Anomaly {
    meta:
       description = "Detetcs very small and supicious msi.dll"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://blog.cylance.com/shell-crew-variants-continue-to-fly-under-big-avs-radar"
       date = "2017-02-10"
@@ -83,7 +87,8 @@ rule msi_dll_Anomaly {
 rule PoS_Malware_MalumPOS_Config
 {
     meta:
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         date = "2015-06-25"
         description = "MalumPOS Config File"
         reference = "http://blog.trendmicro.com/trendlabs-security-intelligence/trend-micro-discovers-malumpos-targets-hotels-and-other-us-industries/"
@@ -99,6 +104,7 @@ rule PoS_Malware_MalumPOS_Config
 rule Malware_QA_update_test {
 	meta:
 		description = "VT Research QA uploaded malware - file update_.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "VT Research QA"
 		date = "2016-08-29"
@@ -118,6 +124,7 @@ rule Malware_QA_update_test {
 rule SysInterals_PipeList_NameChanged {
 	meta:
 		description = "Detects NirSoft PipeList"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://goo.gl/Mr6M2J"
 		date = "2016-06-04"
@@ -144,6 +151,7 @@ rule SysInterals_PipeList_NameChanged {
 rule SCT_Scriptlet_in_Temp_Inet_Files {
 	meta:
 		description = "Detects a scriptlet file in the temporary Internet files (see regsvr32 AppLocker bypass)"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://goo.gl/KAB8Jw"
 		date = "2016-04-26"
@@ -160,6 +168,7 @@ rule SCT_Scriptlet_in_Temp_Inet_Files {
 rule GIFCloaked_Webshell_A {
    meta:
       description = "Looks like a webshell cloaked as GIF"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       hash = "f1c95b13a71ca3629a0bb79601fcacf57cdfcf768806a71b26f2448f8c1d5d24"
       score = 60
@@ -247,7 +256,8 @@ rule Exe_Cloaked_as_ThumbsDb
     meta:
         description = "Detects an executable cloaked as thumbs.db - Malware"
         date = "2014-07-18"
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         score = 50
     condition:
         uint16(0) == 0x5a4d and filename matches /[Tt]humbs\.db/
@@ -256,18 +266,22 @@ rule Exe_Cloaked_as_ThumbsDb
 rule Fake_AdobeReader_EXE
     {
     meta:
-        description = "Detects an fake AdobeReader executable based on filesize OR missing strings in file"
-        date = "2014-09-11"
-        author = "Florian Roth"
-        score = 50
+      description = "Detects an fake AdobeReader executable based on filesize OR missing strings in file"
+      date = "2014-09-11"
+      author = "Florian Roth"
+      score = 50
+      nodeepdive = 1
+      nodeepdive = 1
     strings:
-        $s1 = "Adobe Systems" ascii
-        $s2 = "Adobe Reader" ascii wide
+      $s1 = "Adobe Systems" ascii
+
+      $fp1 = "Adobe Reader" ascii wide
+      $fp2 = "Xenocode Virtual Appliance Runtime" ascii wide
     condition:
-        uint16(0) == 0x5a4d and
-        filename matches /AcroRd32.exe/i and
-        not $s1 in (filesize-2500..filesize)
-        and not $s2
+      uint16(0) == 0x5a4d and
+      filename matches /AcroRd32.exe/i and
+      not $s1 in (filesize-2500..filesize)
+      and not 1 of ($fp*)
 }
 
 rule Fake_FlashPlayerUpdaterService_EXE
@@ -275,7 +289,8 @@ rule Fake_FlashPlayerUpdaterService_EXE
     meta:
         description = "Detects an fake AdobeReader executable based on filesize OR missing strings in file"
         date = "2014-09-11"
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         score = 50
     strings:
         $s1 = "Adobe Systems Incorporated" ascii wide

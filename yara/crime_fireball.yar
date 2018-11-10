@@ -12,6 +12,7 @@
 rule Fireball_de_svr {
    meta:
       description = "Detects Fireball malware - file de_svr.exe"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
@@ -29,6 +30,7 @@ rule Fireball_de_svr {
 rule Fireball_lancer {
    meta:
       description = "Detects Fireball malware - file lancer.dll"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
@@ -49,6 +51,7 @@ rule Fireball_lancer {
 rule QQBrowser {
    meta:
       description = "Not malware but suspicious browser - file QQBrowser.exe"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
@@ -66,6 +69,7 @@ rule QQBrowser {
 rule chrome_elf {
    meta:
       description = "Detects Fireball malware - file chrome_elf.dll"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
@@ -84,6 +88,7 @@ rule chrome_elf {
 rule Fireball_regkey {
    meta:
       description = "Detects Fireball malware - file regkey.exe"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
@@ -99,6 +104,7 @@ rule Fireball_regkey {
 rule Fireball_winsap {
    meta:
       description = "Detects Fireball malware - file winsap.dll"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
@@ -117,6 +123,7 @@ rule Fireball_winsap {
 rule Fireball_archer {
    meta:
       description = "Detects Fireball malware - file archer.dll"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
@@ -135,6 +142,7 @@ rule Fireball_archer {
 rule clearlog {
    meta:
       description = "Detects Fireball malware - file clearlog.dll"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
@@ -155,6 +163,7 @@ rule clearlog {
 rule Fireball_gubed {
    meta:
       description = "Detects Fireball malware - file gubed.exe"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"

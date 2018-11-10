@@ -10,6 +10,7 @@
 rule WindowsShell_s3 {
 	meta:
 		description = "Detects simple Windows shell - file s3.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://github.com/odzhan/shells/"
 		date = "2016-03-26"
@@ -31,6 +32,7 @@ rule WindowsShell_s3 {
 rule WindosShell_s1 {
 	meta:
 		description = "Detects simple Windows shell - file s1.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://github.com/odzhan/shells/"
 		date = "2016-03-26"
@@ -51,6 +53,7 @@ rule WindosShell_s1 {
 rule WindowsShell_s4 {
 	meta:
 		description = "Detects simple Windows shell - file s4.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://github.com/odzhan/shells/"
 		date = "2016-03-26"
@@ -73,6 +76,7 @@ rule WindowsShell_s4 {
 rule WindowsShell_Gen {
 	meta:
 		description = "Detects simple Windows shell - from files keygen.exe, s1.exe, s2.exe, s3.exe, s4.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://github.com/odzhan/shells/"
 		date = "2016-03-26"
@@ -93,6 +97,7 @@ rule WindowsShell_Gen {
 rule WindowsShell_Gen2 {
 	meta:
 		description = "Detects simple Windows shell - from files s3.exe, s4.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://github.com/odzhan/shells/"
 		date = "2016-03-26"

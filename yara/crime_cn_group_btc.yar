@@ -10,6 +10,7 @@
 rule BTC_Miner_lsass1_chrome_2 {
    meta:
       description = "Detects a Bitcoin Miner"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research - CN Actor"
       date = "2017-06-22"
@@ -27,6 +28,7 @@ rule BTC_Miner_lsass1_chrome_2 {
 rule CN_Actor_RA_Tool_Ammyy_mscorsvw {
    meta:
       description = "Detects Ammyy remote access tool"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research - CN Actor"
       date = "2017-06-22"
@@ -43,6 +45,7 @@ rule CN_Actor_RA_Tool_Ammyy_mscorsvw {
 rule CN_Actor_AmmyyAdmin {
    meta:
       description = "Detects Ammyy Admin Downloader"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research - CN Actor"
       date = "2017-06-22"

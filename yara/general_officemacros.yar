@@ -2,6 +2,7 @@
 rule Office_AutoOpen_Macro {
 	meta:
 		description = "Detects an Microsoft Office file that contains the AutoOpen Macro function"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		date = "2015-05-28"
 		score = 40
@@ -26,6 +27,7 @@ rule Office_AutoOpen_Macro {
 rule Office_as_MHTML {
 	meta:
 		description = "Detects an Microsoft Office saved as a MHTML file (false positives are possible but rare; many matches on CVE-2012-0158)"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		date = "2015-05-28"
 		score = 40
@@ -48,6 +50,7 @@ rule Office_as_MHTML {
 rule Docm_in_PDF {
    meta:
       description = "Detects an embedded DOCM in PDF combined with OpenAction"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-05-15"

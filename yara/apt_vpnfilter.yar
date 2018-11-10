@@ -11,6 +11,7 @@
 rule MAL_ELF_VPNFilter_1 {
    meta:
       description = "dropzone - file f8286e29faa67ec765ae0244862f6b7914fcdde10423f96595cb84ad5cc6b344"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2018-05-24"
@@ -31,6 +32,7 @@ rule MAL_ELF_VPNFilter_1 {
 rule MAL_ELF_VPNFilter_2 {
    meta:
       description = "dropzone - file 50ac4fcd3fbc8abcaa766449841b3a0a684b3e217fc40935f1ac22c34c58a9ec"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2018-05-24"
@@ -46,6 +48,7 @@ rule MAL_ELF_VPNFilter_2 {
 rule MAL_ELF_VPNFilter_3 {
    meta:
       description = "dropzone - file 0e0094d9bd396a6594da8e21911a3982cd737b445f591581560d766755097d92"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2018-05-24"
@@ -74,6 +77,7 @@ rule MAL_ELF_VPNFilter_3 {
 rule SUSP_ELF_Tor_Client {
    meta:
       description = "dropzone - file afd281639e26a717aead65b1886f98d6d6c258736016023b4e59de30b7348719"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2018-05-24"

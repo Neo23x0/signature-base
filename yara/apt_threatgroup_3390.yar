@@ -8,6 +8,7 @@
 rule HttpBrowser_RAT_dropper_Gen1 {
 	meta:
 		description = "Threat Group 3390 APT Sample - HttpBrowser RAT Dropper"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://snip.ly/giNB"
 		date = "2015-08-06"
@@ -48,6 +49,7 @@ rule HttpBrowser_RAT_dropper_Gen1 {
 rule HttpBrowser_RAT_Sample1 {
 	meta:
 		description = "Threat Group 3390 APT Sample - HttpBrowser RAT Sample update.hancominc.com"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://snip.ly/giNB"
 		date = "2015-08-06"
@@ -63,6 +65,7 @@ rule HttpBrowser_RAT_Sample1 {
 rule HttpBrowser_RAT_Sample2 {
 	meta:
 		description = "Threat Group 3390 APT Sample - HttpBrowser RAT Sample"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://snip.ly/giNB"
 		date = "2015-08-06"
@@ -80,6 +83,7 @@ rule HttpBrowser_RAT_Sample2 {
 rule HttpBrowser_RAT_Gen {
 	meta:
 		description = "Threat Group 3390 APT Sample - HttpBrowser RAT Generic"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://snip.ly/giNB"
 		date = "2015-08-06"
@@ -118,6 +122,7 @@ rule HttpBrowser_RAT_Gen {
 rule PlugX_NvSmartMax_Gen {
 	meta:
 		description = "Threat Group 3390 APT Sample - PlugX NvSmartMax Generic"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://snip.ly/giNB"
 		date = "2015-08-06"
@@ -146,6 +151,7 @@ rule PlugX_NvSmartMax_Gen {
 rule HttpBrowser_RAT_dropper_Gen2 {
 	meta:
 		description = "Threat Group 3390 APT Sample - HttpBrowser RAT Dropper"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://snip.ly/giNB"
 		date = "2015-08-06"
@@ -173,6 +179,7 @@ rule HttpBrowser_RAT_dropper_Gen2 {
 rule ThreatGroup3390_Strings {
 	meta:
 		description = "Threat Group 3390 APT - Strings"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://snip.ly/giNB"
 		date = "2015-08-06"
@@ -190,6 +197,7 @@ rule ThreatGroup3390_Strings {
 rule ThreatGroup3390_C2 {
 	meta:
 		description = "Threat Group 3390 APT - C2 Server"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://snip.ly/giNB"
 		date = "2015-08-06"

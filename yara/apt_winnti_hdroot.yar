@@ -11,6 +11,7 @@
 rule HDRoot_Sample_Jul17_1 {
    meta:
       description = "Detects HDRoot samples"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Winnti HDRoot VT"
       date = "2017-07-07"
@@ -26,6 +27,7 @@ rule HDRoot_Sample_Jul17_1 {
 rule HDRoot_Sample_Jul17_2 {
    meta:
       description = "Detects HDRoot samples"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Winnti HDRoot VT"
       date = "2017-07-07"
@@ -62,6 +64,7 @@ rule HDRoot_Sample_Jul17_2 {
 rule Unspecified_Malware_Jul17_1A {
    meta:
       description = "Detects samples of an unspecified malware - July 2017"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Winnti HDRoot VT"
       date = "2017-07-07"

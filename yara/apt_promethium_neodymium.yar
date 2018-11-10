@@ -10,6 +10,7 @@
 rule PROMETHIUM_NEODYMIUM_Malware_1 {
    meta:
       description = "Detects PROMETHIUM and NEODYMIUM malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/8abDE6"
       date = "2016-12-14"
@@ -27,6 +28,7 @@ rule PROMETHIUM_NEODYMIUM_Malware_1 {
 rule PROMETHIUM_NEODYMIUM_Malware_2 {
    meta:
       description = "Detects PROMETHIUM and NEODYMIUM malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/8abDE6"
       date = "2016-12-14"
@@ -43,6 +45,7 @@ rule PROMETHIUM_NEODYMIUM_Malware_2 {
 rule PROMETHIUM_NEODYMIUM_Malware_3 {
    meta:
       description = "Detects PROMETHIUM and NEODYMIUM malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/8abDE6"
       date = "2016-12-14"
@@ -59,6 +62,7 @@ rule PROMETHIUM_NEODYMIUM_Malware_3 {
 rule PROMETHIUM_NEODYMIUM_Malware_4 {
    meta:
       description = "Detects PROMETHIUM and NEODYMIUM malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/8abDE6"
       date = "2016-12-14"
@@ -79,6 +83,7 @@ rule PROMETHIUM_NEODYMIUM_Malware_4 {
 rule PROMETHIUM_NEODYMIUM_Malware_5 {
    meta:
       description = "Detects PROMETHIUM and NEODYMIUM malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/8abDE6"
       date = "2016-12-14"
@@ -97,6 +102,7 @@ rule PROMETHIUM_NEODYMIUM_Malware_5 {
 rule PROMETHIUM_NEODYMIUM_Malware_6 {
    meta:
       description = "Detects PROMETHIUM and NEODYMIUM malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/8abDE6"
       date = "2016-12-14"

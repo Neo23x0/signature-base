@@ -2,6 +2,7 @@
 rule Malware_Floxif_mpsvc_dll {
    meta:
       description = "Malware - Floxif"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-04-07"

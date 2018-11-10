@@ -14,6 +14,7 @@ import "pe"
 rule Suckfly_Nidiran_Gen_1 {
    meta:
       description = "Detects Suckfly Nidiran Trojan"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.symantec.com/connect/blogs/suckfly-revealing-secret-life-your-code-signing-certificates"
       date = "2018-01-28"
@@ -29,6 +30,7 @@ rule Suckfly_Nidiran_Gen_1 {
 rule Suckfly_Nidiran_Gen_2 {
    meta:
       description = "Detects Suckfly Nidiran Trojan"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.symantec.com/connect/blogs/suckfly-revealing-secret-life-your-code-signing-certificates"
       date = "2018-01-28"
@@ -57,6 +59,7 @@ rule Suckfly_Nidiran_Gen_2 {
 rule Suckfly_Nidiran_Gen_3 {
    meta:
       description = "Detects Suckfly Nidiran Trojan"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.symantec.com/connect/blogs/suckfly-revealing-secret-life-your-code-signing-certificates"
       date = "2018-01-28"

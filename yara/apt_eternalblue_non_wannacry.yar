@@ -12,6 +12,7 @@
 rule Backdoor_Redosdru_Jun17 {
    meta:
       description = "Detects malware Redosdru - file systemHome.exe"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/OOB3mH"
       date = "2017-06-04"
@@ -36,6 +37,7 @@ rule Backdoor_Redosdru_Jun17 {
 rule Backdoor_Nitol_Jun17 {
    meta:
       description = "Detects malware backdoor Nitol - file wyawou.exe - Attention: this rule also matches on Upatre Downloader"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/OOB3mH"
       date = "2017-06-04"

@@ -13,6 +13,7 @@ import "pe"
 rule ME_Campaign_Malware_1 {
    meta:
       description = "Detects malware from Middle Eastern campaign reported by Talos"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "http://blog.talosintelligence.com/2018/02/targeted-attacks-in-middle-east.html"
       date = "2018-02-07"
@@ -26,6 +27,7 @@ rule ME_Campaign_Malware_1 {
 rule ME_Campaign_Malware_2 {
    meta:
       description = "Detects malware from Middle Eastern campaign reported by Talos"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "http://blog.talosintelligence.com/2018/02/targeted-attacks-in-middle-east.html"
       date = "2018-02-07"
@@ -46,6 +48,7 @@ rule ME_Campaign_Malware_2 {
 rule ME_Campaign_Malware_3 {
    meta:
       description = "Detects malware from Middle Eastern campaign reported by Talos"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "http://blog.talosintelligence.com/2018/02/targeted-attacks-in-middle-east.html"
       date = "2018-02-07"
@@ -62,6 +65,7 @@ rule ME_Campaign_Malware_3 {
 rule ME_Campaign_Malware_4 {
    meta:
       description = "Detects malware from Middle Eastern campaign reported by Talos"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "http://blog.talosintelligence.com/2018/02/targeted-attacks-in-middle-east.html"
       date = "2018-02-07"
@@ -73,6 +77,7 @@ rule ME_Campaign_Malware_4 {
 rule ME_Campaign_Malware_5 {
    meta:
       description = "Detects malware from Middle Eastern campaign reported by Talos"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "http://blog.talosintelligence.com/2018/02/targeted-attacks-in-middle-east.html"
       date = "2018-02-07"

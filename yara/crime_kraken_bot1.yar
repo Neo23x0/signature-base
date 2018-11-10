@@ -8,6 +8,7 @@
 rule Kraken_Bot_Sample {
 	meta:
 		description = "Kraken Bot Sample - file inf.bin"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://blog.gdatasoftware.com/blog/article/dissecting-the-kraken.html"
 		date = "2015-05-07"

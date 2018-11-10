@@ -11,6 +11,7 @@
 rule Waterbear_1_Jun17 {
    meta:
       description = "Detects malware from Operation Waterbear"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
@@ -25,6 +26,7 @@ rule Waterbear_1_Jun17 {
 rule Waterbear_2_Jun17 {
    meta:
       description = "Detects malware from Operation Waterbear"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
@@ -41,6 +43,7 @@ rule Waterbear_2_Jun17 {
 rule Waterbear_4_Jun17 {
    meta:
       description = "Detects malware from Operation Waterbear"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
@@ -64,6 +67,7 @@ rule Waterbear_4_Jun17 {
 rule Waterbear_5_Jun17 {
    meta:
       description = "Detects malware from Operation Waterbear"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
@@ -84,6 +88,7 @@ rule Waterbear_5_Jun17 {
 rule Waterbear_6_Jun17 {
    meta:
       description = "Detects malware from Operation Waterbear"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
@@ -98,6 +103,7 @@ rule Waterbear_6_Jun17 {
 rule Waterbear_7_Jun17 {
    meta:
       description = "Detects malware from Operation Waterbear"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
@@ -115,6 +121,7 @@ rule Waterbear_7_Jun17 {
 rule Waterbear_8_Jun17 {
    meta:
       description = "Detects malware from Operation Waterbear"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
@@ -133,6 +140,7 @@ rule Waterbear_8_Jun17 {
 rule Waterbear_9_Jun17 {
    meta:
       description = "Detects malware from Operation Waterbear"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
@@ -152,6 +160,7 @@ rule Waterbear_9_Jun17 {
 rule Waterbear_10_Jun17 {
    meta:
       description = "Detects malware from Operation Waterbear"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
@@ -167,6 +176,7 @@ rule Waterbear_10_Jun17 {
 rule Waterbear_11_Jun17 {
    meta:
       description = "Detects malware from Operation Waterbear"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
@@ -183,6 +193,7 @@ rule Waterbear_11_Jun17 {
 rule Waterbear_12_Jun17 {
    meta:
       description = "Detects malware from Operation Waterbear"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
@@ -197,6 +208,7 @@ rule Waterbear_12_Jun17 {
 rule Waterbear_13_Jun17 {
    meta:
       description = "Detects malware from Operation Waterbear"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
@@ -222,6 +234,7 @@ rule Waterbear_13_Jun17 {
 rule Waterbear_14_Jun17 {
    meta:
       description = "Detects malware from Operation Waterbear"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"

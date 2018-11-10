@@ -12,6 +12,7 @@
 rule APT34_Malware_HTA {
    meta:
       description = "Detects APT 34 malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.fireeye.com/blog/threat-research/2017/12/targeted-attack-in-middle-east-by-apt34.html"
       date = "2017-12-07"
@@ -32,6 +33,7 @@ rule APT34_Malware_HTA {
 rule APT34_Malware_Exeruner {
    meta:
       description = "Detects APT 34 malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.fireeye.com/blog/threat-research/2017/12/targeted-attack-in-middle-east-by-apt34.html"
       date = "2017-12-07"

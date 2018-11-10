@@ -2,6 +2,7 @@
 rule LSASS_memory_dump_file {
    meta:
       description = "Detects a LSASS memory dump file"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       date = "2015/03/31"
       memory = 0
@@ -16,6 +17,7 @@ rule LSASS_memory_dump_file {
 rule NTLM_Dump_Output {
    meta:
       description = "NTML Hash Dump output file - John/LC format"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       date = "2015-10-01"
       score = 75
@@ -29,6 +31,7 @@ rule NTLM_Dump_Output {
 rule Gsecdump_password_dump_file {
    meta:
       description = "Detects a gsecdump output file"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://t.co/OLIj1yVJ4m"
       date = "2018-03-06"

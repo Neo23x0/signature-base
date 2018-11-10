@@ -2,6 +2,7 @@
 rule Generic_Dropper  {
    meta:
       description = "Detects Dropper PDB string in file"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/JAHZVL"
       date = "2018-03-03"

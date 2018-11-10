@@ -11,6 +11,7 @@
 rule MAL_Envrial_Jan18_1 {
    meta:
       description = "Detects Encrial credential stealer malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://twitter.com/malwrhunterteam/status/953313514629853184"
       date = "2018-01-21"

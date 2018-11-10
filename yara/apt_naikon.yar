@@ -2,6 +2,7 @@
 rule Backdoor_Naikon_APT_Sample1 {
 	meta:
 		description = "Detects backdoors related to the Naikon APT"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://goo.gl/7vHyvh"
 		date = "2015-05-14"

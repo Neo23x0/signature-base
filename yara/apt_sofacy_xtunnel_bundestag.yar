@@ -24,7 +24,8 @@ rule apt_sofacy_xtunnel {
 rule Winexe_RemoteExecution {
     meta:
         description = "Winexe tool used by Sofacy group several APT cases"
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         reference = "http://dokumente.linksfraktion.de/inhalt/report-orig.pdf"
         date = "2015-06-19"
         hash = "5130f600cd9a9cdc82d4bad938b20cbd2f699aadb76e7f3f1a93602330d9997d"
@@ -39,7 +40,8 @@ rule Winexe_RemoteExecution {
 rule Sofacy_Mal2 {
     meta:
         description = "Sofacy Group Malware Sample 2"
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         reference = "http://dokumente.linksfraktion.de/inhalt/report-orig.pdf"
         date = "2015-06-19"
         hash = "566ab945f61be016bfd9e83cc1b64f783b9b8deb891e6d504d3442bc8281b092"
@@ -56,7 +58,8 @@ rule Sofacy_Mal2 {
 rule Sofacy_Mal3 {
     meta:
         description = "Sofacy Group Malware Sample 3"
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         reference = "http://dokumente.linksfraktion.de/inhalt/report-orig.pdf"
         date = "2015-06-19"
         hash = "5f6b2a0d1d966fc4f1ed292b46240767f4acb06c13512b0061b434ae2a692fa1"
@@ -85,7 +88,8 @@ rule Sofacy_Mal3 {
 rule Sofacy_Bundestag_Batch {
     meta:
         description = "Sofacy Bundestags APT Batch Script"
-        author = "Florian Roth"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      author = "Florian Roth"
         reference = "http://dokumente.linksfraktion.de/inhalt/report-orig.pdf"
         date = "2015-06-19"
         score = 70

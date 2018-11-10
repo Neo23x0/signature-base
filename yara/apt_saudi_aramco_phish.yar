@@ -10,6 +10,7 @@
 rule Saudi_Phish_Trojan {
    meta:
       description = "Detects a trojan used in Saudi Aramco Phishing"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/Z3JUAA"
       date = "2017-10-12"

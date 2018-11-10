@@ -8,6 +8,7 @@
 rule ROKRAT_Malware {
    meta:
       description = "Detects ROKRAT Malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "http://blog.talosintelligence.com/2017/04/introducing-rokrat.html"
       date = "2017-04-03"
@@ -45,6 +46,7 @@ import "pe"
 rule ROKRAT_Dropper_Nov17 {
    meta:
       description = "Detects dropper for ROKRAT malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "http://blog.talosintelligence.com/2017/11/ROKRAT-Reloaded.html"
       date = "2017-11-28"
@@ -58,6 +60,7 @@ rule ROKRAT_Dropper_Nov17 {
 rule Freeenki_Infostealer_Nov17 {
    meta:
       description = "Detects Freenki infostealer malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "http://blog.talosintelligence.com/2017/11/ROKRAT-Reloaded.html"
       date = "2017-11-28"
@@ -87,6 +90,7 @@ rule Freeenki_Infostealer_Nov17 {
 rule Freeenki_Infostealer_Nov17_Export_Sig_Testing {
    meta:
       description = "Detects Freenki infostealer malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "http://blog.talosintelligence.com/2017/11/ROKRAT-Reloaded.html"
       date = "2017-11-28"
@@ -101,6 +105,7 @@ rule Freeenki_Infostealer_Nov17_Export_Sig_Testing {
 rule ROKRAT_Nov17_1 {
    meta:
       description = "Detects ROKRAT malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-11-28"

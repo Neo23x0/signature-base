@@ -8,10 +8,12 @@
 rule APT10_Malware_Sample_Gen {
 	meta:
 	description = "APT 10 / Cloud Hopper malware campaign"
+	license = "https://creativecommons.org/licenses/by-nc/4.0/"
 	author = "Florian Roth"
 	reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
 	date = "2017-04-06"
 	score = 80
+	type = "file"
 
 	hash1 = "001B8F696B6576798517168CD0A0FB44"
 	hash2 = "007F5599898AB9013672226B4C5F57E1"

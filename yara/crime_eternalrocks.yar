@@ -12,6 +12,7 @@
 rule EternalRocks_taskhost {
    meta:
       description = "Detects EternalRocks Malware - file taskhost.exe"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://twitter.com/stamparm/status/864865144748298242"
       date = "2017-05-18"
@@ -30,6 +31,7 @@ rule EternalRocks_taskhost {
 rule EternalRocks_svchost {
    meta:
       description = "Detects EternalRocks Malware - file taskhost.exe"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://twitter.com/stamparm/status/864865144748298242"
       date = "2017-05-18"

@@ -8,6 +8,7 @@
 rule Indetectables_RAT {
 	meta:
 		description = "Detects Indetectables RAT based on strings found in research by Paul Rascagneres & Ronan Mouchoux"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://www.sekoia.fr/blog/when-a-brazilian-string-smells-bad/"
 		date = "2015-10-01"
@@ -33,6 +34,7 @@ rule Indetectables_RAT {
 rule BergSilva_Malware {
 	meta:
 		description = "Detects a malware from the same author as the Indetectables RAT"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		date = "2015-10-01"
 		super_rule = 1

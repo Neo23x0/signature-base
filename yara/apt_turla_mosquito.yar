@@ -13,6 +13,7 @@ import "pe"
 rule TurlaMosquito_Mal_1 {
    meta:
       description = "Detects malware sample from Turla Mosquito report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.welivesecurity.com/wp-content/uploads/2018/01/ESET_Turla_Mosquito.pdf"
       date = "2018-02-22"
@@ -30,6 +31,7 @@ rule TurlaMosquito_Mal_1 {
 rule TurlaMosquito_Mal_2 {
    meta:
       description = "Detects malware sample from Turla Mosquito report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.welivesecurity.com/wp-content/uploads/2018/01/ESET_Turla_Mosquito.pdf"
       date = "2018-02-22"
@@ -50,6 +52,7 @@ rule TurlaMosquito_Mal_2 {
 rule TurlaMosquito_Mal_3 {
    meta:
       description = "Detects malware sample from Turla Mosquito report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.welivesecurity.com/wp-content/uploads/2018/01/ESET_Turla_Mosquito.pdf"
       date = "2018-02-22"
@@ -73,6 +76,7 @@ rule TurlaMosquito_Mal_3 {
 rule TurlaMosquito_Mal_4 {
    meta:
       description = "Detects malware sample from Turla Mosquito report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.welivesecurity.com/wp-content/uploads/2018/01/ESET_Turla_Mosquito.pdf"
       date = "2018-02-22"
@@ -84,6 +88,7 @@ rule TurlaMosquito_Mal_4 {
 rule TurlaMosquito_Mal_5 {
    meta:
       description = "Detects malware sample from Turla Mosquito report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.welivesecurity.com/wp-content/uploads/2018/01/ESET_Turla_Mosquito.pdf"
       date = "2018-02-22"
@@ -95,6 +100,7 @@ rule TurlaMosquito_Mal_5 {
 rule TurlaMosquito_Mal_6 {
    meta:
       description = "Detects malware sample from Turla Mosquito report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.welivesecurity.com/wp-content/uploads/2018/01/ESET_Turla_Mosquito.pdf"
       date = "2018-02-22"
@@ -117,6 +123,7 @@ rule TurlaMosquito_Mal_6 {
 rule TurlaMosquito_Mal_7 {
    meta:
       description = "Detects malware sample from Turla Mosquito report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.welivesecurity.com/wp-content/uploads/2018/01/ESET_Turla_Mosquito.pdf"
       date = "2018-02-22"
@@ -128,6 +135,6 @@ rule TurlaMosquito_Mal_7 {
    condition:
       uint16(0) == 0x5a4d and filesize < 1000KB and (
         pe.imphash() == "073235ae6dfbb1bf5db68a039a7b7726" or
-        2 of them
+        3 of them
       )
 }

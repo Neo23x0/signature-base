@@ -49,6 +49,7 @@ import "pe"
 rule HiddenCobra_FallChill_1 {
    meta:
       description = "Auto-generated rule - file a606716355035d4a1ea0b15f3bee30aad41a2c32df28c2d468eafd18361d60d6"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-318A"
       date = "2017-11-15"
@@ -75,6 +76,7 @@ rule HiddenCobra_FallChill_1 {
 rule HiddenCobra_FallChill_2 {
    meta:
       description = "Auto-generated rule - file 0a118eb23399000d148186b9079fa59caf4c3faa7e7a8f91533e467ac9b6ff41"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-318A"
       date = "2017-11-15"

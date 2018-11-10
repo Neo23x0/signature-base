@@ -8,6 +8,7 @@
 rule Furtim_nativeDLL {
 	meta:
 		description = "Detects Furtim malware - file native.dll"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "MISP 3971"
 		date = "2016-06-13"
@@ -32,6 +33,7 @@ rule Furtim_nativeDLL {
 rule Furtim_Parent_1 {
 	meta:
 		description = "Detects Furtim Parent Malware"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://sentinelone.com/blogs/sfg-furtims-parent/"
 		date = "2016-07-16"

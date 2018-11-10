@@ -2,6 +2,7 @@
 rule APT_Malware_CommentCrew_MiniASP {
 	meta:
 		description = "CommentCrew Malware MiniASP APT"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "VT Analysis"
 		date = "2015-06-03"

@@ -10,6 +10,7 @@
 rule Winnti_fonfig {
    meta:
       description = "Winnti sample - file fonfig.exe"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/VbvJtL"
       date = "2017-01-25"
@@ -24,6 +25,7 @@ rule Winnti_fonfig {
 rule Winnti_NlaifSvc {
    meta:
       description = "Winnti sample - file NlaifSvc.dll"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/VbvJtL"
       date = "2017-01-25"

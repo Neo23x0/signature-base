@@ -2,6 +2,7 @@
 rule PoisonIvy_Sample_APT {
 	meta:
 		description = "Detects a PoisonIvy APT malware group"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		score = 70
 		reference = "VT Analysis"
@@ -22,6 +23,7 @@ rule PoisonIvy_Sample_APT {
 rule PoisonIvy_Sample_APT_2 {
 	meta:
 		description = "Detects a PoisonIvy Malware"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		score = 70
 		reference = "VT Analysis"
@@ -56,6 +58,7 @@ rule PoisonIvy_Sample_APT_2 {
 rule PoisonIvy_Sample_APT_3 {
 	meta:
 		description = "Detects a PoisonIvy Malware"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		score = 70
 		reference = "VT Analysis"
@@ -73,6 +76,7 @@ rule PoisonIvy_Sample_APT_3 {
 rule PoisonIvy_Sample_APT_4 {
 	meta:
 		description = "Detects a PoisonIvy Sample APT"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		score = 70
 		reference = "VT Analysis"
@@ -95,6 +99,7 @@ rule PoisonIvy_Sample_APT_4 {
 rule PoisonIvy_Sample_5 {
 	meta:
 		description = "Detects PoisonIvy RAT sample set"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		score = 70
 		reference = "VT Analysis"
@@ -116,6 +121,7 @@ condition:
 rule PoisonIvy_Sample_6 {
 	meta:
 		description = "Detects PoisonIvy RAT sample set"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		score = 70
 		reference = "VT Analysis"
@@ -154,6 +160,7 @@ rule PoisonIvy_Sample_6 {
 rule PoisonIvy_Sample_7 {
 	meta:
 		description = "Detects PoisonIvy RAT sample set"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		score = 70
 		reference = "VT Analysis"

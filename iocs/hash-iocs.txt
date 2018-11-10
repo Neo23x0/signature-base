@@ -1882,7 +1882,6 @@ d9203e00ff7b2edb01f52b378e3386be;APTnotes 2012 NormanShark-MaudiOperation.pdf
 ba9d43b3f1e81e0cca615e19a0f20bdc;APTnotes 2012 NormanShark-MaudiOperation.pdf
 f3f29866a50b82da0eee22b016af5bdc;APTnotes 2012 NormanShark-MaudiOperation.pdf
 a933d13f81649bebe035dc21f4002ff1;APTnotes 2012 PEST-CONTROL.pdf
-202cb962ac59075b964b07152d234b70;APTnotes 2012 PEST-CONTROL.pdf
 66DDF27517985A75B2317231B46A6F62;APTnotes 2012 Cyberattack_against_Israeli_and_Palestinian_targets.pdf
 4A06D9989A8C3A9967C2011E5BAF3010;APTnotes 2012 Cyberattack_against_Israeli_and_Palestinian_targets.pdf
 15FC009D9CAAA8F11D6C3DA2B69EA06E;APTnotes 2012 Cyberattack_against_Israeli_and_Palestinian_targets.pdf
@@ -7956,12 +7955,10 @@ B57DC2BC16DFDB3DE55923AEF9A98401;Carbanak IOCs - 107.181.246.146
 AB8BED25F9FF64A4B07BE5D3BC34F26B;Carbanak IOCs - 185.117.88.97
 7393CB0F409F8F51B7745981AC30B8B6;Carbanak IOCs - 95.215.44.129
 C4D746B8E5E8E12A50A18C9D61E01864;Carbanak IOCs - 185.165.29.26
-BD126A7B59D5D1F97BA89A3E71425731;Carbanak IOCs
 6499863D47B68030F0C5FFAFAFFB1344;Carbanak IOCs
 752D245F1026482A967A763DAE184569;Carbanak IOCs
 1BD7D0C3023C55B5DF0201CC5D7BBCE1;Carbanak IOCs
 C01FD758ABB423C8336EE1BD5035A6C7;Carbanak IOCs
-BD126A7B59D5D1F97BA89A3E71425731;Carbanak IOCs
 771FA63231FB42EE97AA17818A53F432;Carbanak IOCs
 EDCE844A219C7534E6A1E7C77C3CB020;Carbanak IOCs
 0810D239169A13FC0E2E53FC72D2E5F0;Carbanak IOCs
@@ -8277,3 +8274,19 @@ E42a8cef2e70d4f3c96c2b8073e7d396;Patchwork activity - Collecting file modules - 
 0fa12f215b8c5cfed492d3c5ee2867b3;Patchwork activity - Keylogger module - https://goo.gl/hDQizk
 5c3456d5932544b779fe814133344fdb;Patchwork activity - Download the execution module - https://goo.gl/hDQizk
 F396b476413558266f3abd336e06cbfc;Patchwork activity - Download Execution Module [beta] - https://goo.gl/hDQizk
+
+8549dcbdfc6885e0e7a1521da61352ef4f084d969dd30719166b47fdb204828a;Tick Group Weaponized USB https://researchcenter.paloaltonetworks.com/2018/06/unit42-tick-group-weaponized-secure-usb-drives-target-air-gapped-critical-systems/
+31aea8630d5d2fcbb37a8e72fe4e096d0f2d8f05e03234645c69d7e8b59bb0e8;Tick Group Weaponized USB https://researchcenter.paloaltonetworks.com/2018/06/unit42-tick-group-weaponized-secure-usb-drives-target-air-gapped-critical-systems/
+b1bb1d5f178b064eb1d7c9cc7cadcf8b3959a940c14cee457ce3aba5795660aa;Tick Group Weaponized USB https://researchcenter.paloaltonetworks.com/2018/06/unit42-tick-group-weaponized-secure-usb-drives-target-air-gapped-critical-systems/
+3227d1e39fc3bc842245ccdb16eeaadad3bcd298e811573b2e68ef2a7077f6f6;Tick Group Weaponized USB https://researchcenter.paloaltonetworks.com/2018/06/unit42-tick-group-weaponized-secure-usb-drives-target-air-gapped-critical-systems/
+92e0d0346774127024c672cc7239dd269824a79e85b84c532128fd9663a0ce78;Tick Group Weaponized USB https://researchcenter.paloaltonetworks.com/2018/06/unit42-tick-group-weaponized-secure-usb-drives-target-air-gapped-critical-systems/
+33665d93ab2a0262551c61ec9a3adca2c2b8dfea34e6f3f723274d88890f6ceb;Tick Group Weaponized USB https://researchcenter.paloaltonetworks.com/2018/06/unit42-tick-group-weaponized-secure-usb-drives-target-air-gapped-critical-systems/
+019874898284935719dc74a6699fb822e20cdb8e3a96a7dc8ec4f625e3f1116e;Tick Group Weaponized USB https://researchcenter.paloaltonetworks.com/2018/06/unit42-tick-group-weaponized-secure-usb-drives-target-air-gapped-critical-systems/
+f817c9826089b49d251b8a09a0e9bf9b4b468c6e2586af60e50afe48602f0bec;Tick Group Weaponized USB https://researchcenter.paloaltonetworks.com/2018/06/unit42-tick-group-weaponized-secure-usb-drives-target-air-gapped-critical-systems/
+
+8e6d87eadb27b74852bd5a19062e52ed;Lucky Mouse NDISPROXY - https://securelist.com/luckymouse-ndisproxy-driver/87914/ -
+d21de00f981bb6b5094f9c3dfa0be533;Lucky Mouse NDISPROXY - https://securelist.com/luckymouse-ndisproxy-driver/87914/ -
+a2eb59414823ae00d53ca05272168006;Lucky Mouse NDISPROXY - https://securelist.com/luckymouse-ndisproxy-driver/87914/ -
+493167e85e45363d09495d0841c30648;Lucky Mouse NDISPROXY - https://securelist.com/luckymouse-ndisproxy-driver/87914/ -
+ad07b44578fa47e7de0df42a8b7f8d2d;Lucky Mouse NDISPROXY - https://securelist.com/luckymouse-ndisproxy-driver/87914/ -
+83c5ff660f2900677e537f9500579965;Lucky Mouse NDISPROXY - https://securelist.com/luckymouse-ndisproxy-driver/87914/ - Auxiliary Earthworm SOCKS tunneler and Scanline network scanner

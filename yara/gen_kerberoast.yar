@@ -8,6 +8,7 @@
 rule GetUserSPNs_VBS {
 	meta:
 		description = "Auto-generated rule - file GetUserSPNs.vbs"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://github.com/skelsec/PyKerberoast"
 		date = "2016-05-21"
@@ -23,6 +24,7 @@ rule GetUserSPNs_VBS {
 rule GetUserSPNs_PS1 {
 	meta:
 		description = "Auto-generated rule - file GetUserSPNs.ps1"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://github.com/skelsec/PyKerberoast"
 		date = "2016-05-21"
@@ -39,6 +41,7 @@ rule GetUserSPNs_PS1 {
 rule kerberoast_PY {
 	meta:
 		description = "Auto-generated rule - file kerberoast.py"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://github.com/skelsec/PyKerberoast"
 		date = "2016-05-21"

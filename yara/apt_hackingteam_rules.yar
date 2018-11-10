@@ -10,6 +10,7 @@
 rule bin_ndisk {
 	meta:
 		description = "Hacking Team Disclosure Sample - file ndisk.sys"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www.virustotal.com/en/file/a03a6ed90b89945a992a8c69f716ec3c743fa1d958426f4c50378cca5bef0a01/analysis/1436184181/"
 		date = "2015-07-07"
@@ -31,6 +32,7 @@ rule bin_ndisk {
 rule Hackingteam_Elevator_DLL {
 	meta:
 		description = "Hacking Team Disclosure Sample - file elevator.dll"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://t.co/EG0qtVcKLh"
 		date = "2015-07-07"
@@ -54,6 +56,7 @@ rule Hackingteam_Elevator_DLL {
 rule HackingTeam_Elevator_EXE {
 	meta:
 		description = "Hacking Team Disclosure Sample - file elevator.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Hacking Team Disclosure elevator.c"
 		date = "2015-07-07"

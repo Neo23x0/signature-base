@@ -11,6 +11,7 @@
 rule CrimsonRAT_Mar18_1 {
    meta:
       description = "Detects CrimsonRAT malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2018-03-06"

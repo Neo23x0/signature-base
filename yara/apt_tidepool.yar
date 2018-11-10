@@ -8,6 +8,7 @@
 rule TidePool_Malware {
 	meta:
 		description = "Detects TidePool malware mentioned in Ke3chang report by Palo Alto Networks"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://goo.gl/m2CXWR"
 		date = "2016-05-24"

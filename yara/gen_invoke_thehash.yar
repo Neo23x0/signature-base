@@ -12,6 +12,7 @@
 rule Invoke_SMBExec {
    meta:
       description = "Detects Invoke-WmiExec or Invoke-SmbExec"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/Kevin-Robertson/Invoke-TheHash"
       date = "2017-06-14"
@@ -30,6 +31,7 @@ rule Invoke_SMBExec {
 rule Invoke_WMIExec_Gen_1 {
    meta:
       description = "Detects Invoke-WmiExec or Invoke-SmbExec"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/Kevin-Robertson/Invoke-TheHash"
       date = "2017-06-14"
@@ -49,6 +51,7 @@ rule Invoke_WMIExec_Gen_1 {
 rule Invoke_SMBExec_Invoke_WMIExec_1 {
    meta:
       description = "Auto-generated rule - from files Invoke-SMBExec.ps1, Invoke-WMIExec.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/Kevin-Robertson/Invoke-TheHash"
       date = "2017-06-14"
@@ -66,6 +69,7 @@ rule Invoke_SMBExec_Invoke_WMIExec_1 {
 rule Invoke_WMIExec_Gen {
    meta:
       description = "Auto-generated rule - from files Invoke-SMBClient.ps1, Invoke-SMBExec.ps1, Invoke-WMIExec.ps1, Invoke-WMIExec.ps1"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/Kevin-Robertson/Invoke-TheHash"
       date = "2017-06-14"

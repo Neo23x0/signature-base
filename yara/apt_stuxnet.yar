@@ -10,6 +10,7 @@
 rule StuxNet_Malware_1 {
 	meta:
 		description = "Stuxnet Sample - file malware.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Internal Research"
 		date = "2016-07-09"
@@ -41,6 +42,7 @@ rule StuxNet_Malware_1 {
 rule Stuxnet_Malware_2 {
 	meta:
 		description = "Stuxnet Sample - file 63e6b8136058d7a06dfff4034b4ab17a261cdf398e63868a601f77ddd1b32802"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Internal Research"
 		date = "2016-07-09"
@@ -55,6 +57,7 @@ rule Stuxnet_Malware_2 {
 rule StuxNet_dll {
 	meta:
 		description = "Stuxnet Sample - file dll.dll"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Internal Research"
 		date = "2016-07-09"
@@ -68,6 +71,7 @@ rule StuxNet_dll {
 rule Stuxnet_Shortcut_to {
 	meta:
 		description = "Stuxnet Sample - file Copy of Shortcut to.lnk"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Internal Research"
 		date = "2016-07-09"
@@ -81,6 +85,7 @@ rule Stuxnet_Shortcut_to {
 rule Stuxnet_Malware_3 {
 	meta:
 		description = "Stuxnet Sample - file ~WTR4141.tmp"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Internal Research"
 		date = "2016-07-09"
@@ -102,6 +107,7 @@ rule Stuxnet_Malware_3 {
 rule Stuxnet_Malware_4 {
 	meta:
 		description = "Stuxnet Sample - file 0d8c2bcb575378f6a88d17b5f6ce70e794a264cdc8556c8e812f0b5f9c709198"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Internal Research"
 		date = "2016-07-09"
@@ -118,6 +124,7 @@ rule Stuxnet_Malware_4 {
 rule Stuxnet_maindll_decrypted_unpacked {
 	meta:
 		description = "Stuxnet Sample - file maindll.decrypted.unpacked.dll_"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Internal Research"
 		date = "2016-07-09"
@@ -138,6 +145,7 @@ rule Stuxnet_maindll_decrypted_unpacked {
 rule Stuxnet_s7hkimdb {
 	meta:
 		description = "Stuxnet Sample - file s7hkimdb.dll"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Internal Research"
 		date = "2016-07-09"

@@ -2,6 +2,7 @@
 rule Ping_Command_in_EXE {
    meta:
       description = "Detects an suspicious ping command execution in an executable"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2016-11-03"
@@ -15,6 +16,7 @@ rule Ping_Command_in_EXE {
 rule GoogleBot_UserAgent {
    meta:
       description = "Detects the GoogleBot UserAgent String in an Executable"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-01-27"
@@ -30,6 +32,7 @@ rule GoogleBot_UserAgent {
 rule Gen_Net_LocalGroup_Administrators_Add_Command {
    meta:
       description = "Detects an executable that contains a command to add a user account to the local administrators group"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-07-08"
@@ -42,6 +45,7 @@ rule Gen_Net_LocalGroup_Administrators_Add_Command {
 rule Suspicious_Script_Running_from_HTTP {
    meta:
       description = "Detects a suspicious "
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.hybrid-analysis.com/sample/a112274e109c5819d54aa8de89b0e707b243f4929a83e77439e3ff01ed218a35?environmentId=100"
       score = 50
@@ -58,6 +62,7 @@ rule Suspicious_Script_Running_from_HTTP {
 rule ReconCommands_in_File {
    meta:
       description = "Detects various recon commands in a single file"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://twitter.com/haroonmeer/status/939099379834658817"
       date = "2017-12-11"
@@ -78,6 +83,7 @@ rule ReconCommands_in_File {
 rule VBS_dropper_script_Dec17_1 {
    meta:
       description = "Detects a supicious VBS script that drops an executable"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2018-01-01"
@@ -97,6 +103,7 @@ rule VBS_dropper_script_Dec17_1 {
 rule SUSP_PDB_Strings_Keylogger_Backdoor {
    meta:
       description = "Detects PDB strings used in backdoors or keyloggers"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2018-03-23"
@@ -118,6 +125,7 @@ rule SUSP_PDB_Strings_Keylogger_Backdoor {
 rule SUSP_Microsoft_Copyright_String_Anomaly_2 {
    meta:
       description = "Detects Floxif Malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2018-05-11"
@@ -132,6 +140,7 @@ rule SUSP_Microsoft_Copyright_String_Anomaly_2 {
 rule SUSP_LNK_File_AppData_Roaming {
    meta:
       description = "Detects a suspicious link file that references to AppData Roaming"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.fireeye.com/blog/threat-research/2018/05/deep-dive-into-rig-exploit-kit-delivering-grobios-trojan.html"
       date = "2018-05-16"
@@ -152,6 +161,7 @@ rule SUSP_LNK_File_AppData_Roaming {
 rule SUSP_LNK_File_PathTraversal {
    meta:
       description = "Detects a suspicious link file that references a file multiple folders lower than the link itself"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.fireeye.com/blog/threat-research/2018/05/deep-dive-into-rig-exploit-kit-delivering-grobios-trojan.html"
       date = "2018-05-16"
@@ -163,4 +173,44 @@ rule SUSP_LNK_File_PathTraversal {
          filesize < 1KB and
          all of them
       )
+}
+
+rule SUSP_Script_Obfuscation_Char_Concat {
+   meta:
+      description = "Detects strings found in sample from CN group repo leak in October 2018"
+      author = "Florian Roth"
+      reference = "https://twitter.com/JaromirHorejsi/status/1047084277920411648"
+      date = "2018-10-04"
+      hash1 = "b30cc10e915a23c7273f0838297e0d2c9f4fc0ac1f56100eef6479c9d036c12b"
+   strings:
+      $s1 = "\"c\" & \"r\" & \"i\" & \"p\" & \"t\"" fullword ascii
+   condition:
+      1 of them
+}
+
+rule SUSP_PowerShell_IEX_Download_Combo {
+   meta:
+      description = "Detects strings found in sample from CN group repo leak in October 2018"
+      author = "Florian Roth"
+      reference = "https://twitter.com/JaromirHorejsi/status/1047084277920411648"
+      date = "2018-10-04"
+      hash1 = "13297f64a5f4dd9b08922c18ab100d3a3e6fdeab82f60a4653ab975b8ce393d5"
+   strings:
+      $x1 = "IEX ((new-object net.webclient).download" ascii nocase
+      $x2 = "IEX ((new-object net.webclient).download" ascii nocase
+   condition:
+      1 of them
+}
+
+rule SUSP_Win32dll_String {
+   meta:
+      description = "Detects suspicious string in executables"
+      author = "Florian Roth"
+      reference = "https://medium.com/@Sebdraven/apt-sidewinder-changes-theirs-ttps-to-install-their-backdoor-f92604a2739"
+      date = "2018-10-24"
+      hash1 = "7bd7cec82ee98feed5872325c2f8fd9f0ea3a2f6cd0cd32bcbe27dbbfd0d7da1"
+   strings:
+      $s1 = "win32dll.dll" fullword ascii
+   condition:
+      filesize < 60KB and all of them
 }

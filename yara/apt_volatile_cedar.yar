@@ -13,6 +13,7 @@ rule Explosive_EXE : APT {
 rule Explosion_Sample_1 {
 	meta:
 		description = "Explosion/Explosive Malware - Volatile Cedar APT"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://goo.gl/5vYaNb"
 		date = "2015/04/03"
@@ -37,6 +38,7 @@ rule Explosion_Sample_1 {
 rule Explosion_Sample_2 {
 	meta:
 		description = "Explosion/Explosive Malware - Volatile Cedar APT"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://goo.gl/5vYaNb"
 		date = "2015/04/03"
@@ -54,6 +56,7 @@ rule Explosion_Sample_2 {
 rule Explosion_Generic_1 {
 	meta:
 		description = "Generic Rule for Explosion/Explosive Malware - Volatile Cedar APT"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "not set"
 		date = "2015/04/03"
@@ -83,6 +86,7 @@ rule Explosion_Generic_1 {
 rule Explosive_UA {
 	meta:
 		description = "Explosive Malware Embedded User Agent - Volatile Cedar APT http://goo.gl/HQRCdw"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://goo.gl/HQRCdw"
 		date = "2015/04/03"
@@ -97,6 +101,7 @@ rule Explosive_UA {
 rule Webshell_Caterpillar_ASPX {
 	meta:
 		description = "Volatile Cedar Webshell - from file caterpillar.aspx"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://goo.gl/emons5"
 		date = "2015/04/03"

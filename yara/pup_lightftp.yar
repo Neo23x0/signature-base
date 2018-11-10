@@ -2,6 +2,7 @@
 rule LightFTP_fftp_x86_64 {
 	meta:
 		description = "Detects a light FTP server"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://github.com/hfiref0x/LightFTP"
 		date = "2015-05-14"
@@ -21,6 +22,7 @@ rule LightFTP_fftp_x86_64 {
 rule LightFTP_Config {
 	meta:
 		description = "Detects a light FTP server - config file"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://github.com/hfiref0x/LightFTP"
 		date = "2015-05-14"

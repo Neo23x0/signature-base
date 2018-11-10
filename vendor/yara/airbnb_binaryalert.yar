@@ -593,9 +593,12 @@ rule hacktool_windows_mimikatz_modules
         $s1 = "mimilib" fullword ascii wide
         $s2 = "mimidrv" fullword ascii wide
         $s3 = "mimilove" fullword ascii wide
+
+        $fp1 = "SgrmEnclave" wide
     condition:
         uint16(0) == 0x5a4d and filesize < 800KB and /* Added by Florian Roth to avoid false positives */
-        any of them
+        1 of ($s*) and 
+        not 1 of ($fp*)
 }
 
 rule hacktool_windows_mimikatz_sekurlsa

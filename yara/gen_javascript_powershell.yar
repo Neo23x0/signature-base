@@ -2,6 +2,7 @@
 rule Malware_JS_powershell_obfuscated {
    meta:
       description = "Unspecified malware - file rechnung_3.js"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-03-24"

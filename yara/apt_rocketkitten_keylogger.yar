@@ -8,6 +8,7 @@
 rule RocketKitten_Keylogger {
 	meta:
 		description = "Detects Keylogger used in Rocket Kitten APT"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://goo.gl/SjQhlp"
 		date = "2015-09-01"

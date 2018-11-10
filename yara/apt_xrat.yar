@@ -12,6 +12,7 @@
 rule xRAT_1 {
    meta:
       description = "Detects Patchwork malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/Pg3P4W"
       date = "2017-12-11"

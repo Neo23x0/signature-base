@@ -8,6 +8,7 @@
 rule Sofacy_Malware_StrangeSpaces {
 	meta:
 		description = "Detetcs strange strings from Sofacy malware with many spaces"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://securelist.com/blog/research/72924/sofacy-apt-hits-high-profile-targets-with-updated-toolset/"
 		date = "2015-12-04"
@@ -23,6 +24,7 @@ rule Sofacy_Malware_StrangeSpaces {
 rule Sofacy_Malware_AZZY_Backdoor_1 {
 	meta:
 		description = "AZZY Backdoor - Sample 1"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://securelist.com/blog/research/72924/sofacy-apt-hits-high-profile-targets-with-updated-toolset/"
 		date = "2015-12-04"
@@ -38,6 +40,7 @@ rule Sofacy_Malware_AZZY_Backdoor_1 {
 rule Sofacy_AZZY_Backdoor_Implant_1 {
 	meta:
 		description = "AZZY Backdoor Implant 4.3 - Sample 1"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://securelist.com/blog/research/72924/sofacy-apt-hits-high-profile-targets-with-updated-toolset/"
 		date = "2015-12-04"
@@ -55,6 +58,7 @@ rule Sofacy_AZZY_Backdoor_Implant_1 {
 rule Sofacy_AZZY_Backdoor_HelperDLL {
 	meta:
 		description = "Dropped C&C helper DLL for AZZY 4.3"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://securelist.com/blog/research/72924/sofacy-apt-hits-high-profile-targets-with-updated-toolset/"
 		date = "2015-12-04"
@@ -72,6 +76,7 @@ rule Sofacy_AZZY_Backdoor_HelperDLL {
 rule Sofacy_CollectorStealer_Gen1 {
 	meta:
 		description = "Generic rule to detect Sofacy Malware Collector Stealer"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://securelist.com/blog/research/72924/sofacy-apt-hits-high-profile-targets-with-updated-toolset/"
 		date = "2015-12-04"
@@ -89,6 +94,7 @@ rule Sofacy_CollectorStealer_Gen1 {
 rule Sofacy_CollectorStealer_Gen2 {
 	meta:
 		description = "File collectors / USB stealers - Generic"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://securelist.com/blog/research/72924/sofacy-apt-hits-high-profile-targets-with-updated-toolset/"
 		date = "2015-12-04"
@@ -106,6 +112,7 @@ rule Sofacy_CollectorStealer_Gen2 {
 rule Sofacy_CollectorStealer_Gen3 {
 	meta:
 		description = "File collectors / USB stealers - Generic"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://securelist.com/blog/research/72924/sofacy-apt-hits-high-profile-targets-with-updated-toolset/"
 		date = "2015-12-04"

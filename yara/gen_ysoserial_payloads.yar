@@ -10,6 +10,7 @@
 rule Ysoserial_Payload_MozillaRhino1 {
    meta:
       description = "Ysoserial Payloads - file MozillaRhino1.bin"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/frohoff/ysoserial"
       date = "2017-02-04"
@@ -23,6 +24,7 @@ rule Ysoserial_Payload_MozillaRhino1 {
 rule Ysoserial_Payload_C3P0 {
    meta:
       description = "Ysoserial Payloads - file C3P0.bin"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/frohoff/ysoserial"
       date = "2017-02-04"
@@ -36,6 +38,7 @@ rule Ysoserial_Payload_C3P0 {
 rule Ysoserial_Payload_Spring1 {
    meta:
       description = "Ysoserial Payloads - file Spring1.bin"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/frohoff/ysoserial"
       date = "2017-02-04"
@@ -55,6 +58,7 @@ rule Ysoserial_Payload_Spring1 {
 rule Ysoserial_Payload {
    meta:
       description = "Ysoserial Payloads"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/frohoff/ysoserial"
       date = "2017-02-04"
@@ -84,6 +88,7 @@ rule Ysoserial_Payload {
 rule Ysoserial_Payload_3 {
    meta:
       description = "Ysoserial Payloads - from files JavassistWeld1.bin, JBossInterceptors.bin"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/frohoff/ysoserial"
       date = "2017-02-04"

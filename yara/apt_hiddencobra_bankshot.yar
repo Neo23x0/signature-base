@@ -11,6 +11,7 @@
 rule HiddenCobra_BANKSHOT_Gen {
    meta:
       description = "Detects Hidden Cobra BANKSHOT trojan"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.us-cert.gov/HIDDEN-COBRA-North-Korean-Malicious-Cyber-Activity"
       date = "2017-12-26"

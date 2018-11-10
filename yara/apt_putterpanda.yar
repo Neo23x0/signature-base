@@ -1,6 +1,7 @@
 rule APT_Malware_PutterPanda_Rel {
 	meta:
 		description = "Detects an APT malware related to PutterPanda"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		score = 70
 		reference = "VT Analysis"
@@ -28,6 +29,7 @@ rule APT_Malware_PutterPanda_Rel {
 rule APT_Malware_PutterPanda_Rel_2 {
 	meta:
 		description = "APT Malware related to PutterPanda Group"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		score = 70
 		reference = "VT Analysis"
@@ -57,6 +59,7 @@ rule APT_Malware_PutterPanda_Rel_2 {
 rule APT_Malware_PutterPanda_PSAPI {
 	meta:
 		description = "Detects a malware related to Putter Panda"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		score = 70
 		reference = "VT Analysis"
@@ -75,6 +78,7 @@ rule APT_Malware_PutterPanda_PSAPI {
 rule APT_Malware_PutterPanda_WUAUCLT {
 	meta:
 		description = "Detects a malware related to Putter Panda"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		score = 70
 		reference = "VT Analysis"
@@ -124,6 +128,7 @@ rule APT_Malware_PutterPanda_Gen1 {
 rule Malware_MsUpdater_String_in_EXE {
 	meta:
 		description = "MSUpdater String in Executable"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		score = 50
 		reference = "VT Analysis"
@@ -147,6 +152,7 @@ rule Malware_MsUpdater_String_in_EXE {
 rule APT_Malware_PutterPanda_MsUpdater_3 {
 	meta:
 		description = "Detects Malware related to PutterPanda - MSUpdater"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		score = 70
 		reference = "VT Analysis"
@@ -164,6 +170,7 @@ rule APT_Malware_PutterPanda_MsUpdater_3 {
 rule APT_Malware_PutterPanda_MsUpdater_1 {
 	meta:
 		description = "Detects Malware related to PutterPanda - MSUpdater"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		score = 70
 		reference = "VT Analysis"
@@ -187,6 +194,7 @@ rule APT_Malware_PutterPanda_MsUpdater_1 {
 rule APT_Malware_PutterPanda_MsUpdater_2 {
 	meta:
 		description = "Detects Malware related to PutterPanda - MSUpdater"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		score = 70
 		reference = "VT Analysis"
@@ -221,6 +229,7 @@ rule APT_Malware_PutterPanda_MsUpdater_2 {
 rule APT_Malware_PutterPanda_Gen4 {
 	meta:
 		description = "Detects Malware related to PutterPanda"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		score = 70
 		reference = "VT Analysis"

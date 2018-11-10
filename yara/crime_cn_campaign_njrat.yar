@@ -13,6 +13,7 @@ import "pe"
 rule CN_disclosed_20180208_lsls {
    meta:
       description = "Detects malware from disclosed CN malware set"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://twitter.com/cyberintproject/status/961714165550342146"
       date = "2018-02-08"
@@ -26,6 +27,7 @@ rule CN_disclosed_20180208_lsls {
 rule CN_disclosed_20180208_c {
    meta:
       description = "Detects malware from disclosed CN malware set"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://twitter.com/cyberintproject/status/961714165550342146"
       date = "2018-02-08"
@@ -53,6 +55,7 @@ rule CN_disclosed_20180208_c {
 rule CN_disclosed_20180208_System3 {
    meta:
       description = "Detects malware from disclosed CN malware set"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://twitter.com/cyberintproject/status/961714165550342146"
       date = "2018-02-08"
@@ -71,6 +74,7 @@ rule CN_disclosed_20180208_System3 {
 rule CN_disclosed_20180208_Mal1 {
    meta:
       description = "Detects malware from disclosed CN malware set"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.virustotal.com/graph/#/selected/n120z79z208z189/drawer/graph-details"
       date = "2018-02-08"
@@ -97,6 +101,7 @@ rule CN_disclosed_20180208_Mal1 {
 rule CN_disclosed_20180208_KeyLogger_1 {
    meta:
       description = "Detects malware from disclosed CN malware set"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.virustotal.com/graph/#/selected/n120z79z208z189/drawer/graph-details"
       date = "2018-02-08"
@@ -108,12 +113,13 @@ rule CN_disclosed_20180208_KeyLogger_1 {
       $x5 = "DoDownloadAndExecute" fullword ascii
       $x6 = "GetKeyloggeRLogs" fullword ascii
    condition:
-      uint16(0) == 0x5a4d and filesize < 1000KB and 1 of them
+      uint16(0) == 0x5a4d and filesize < 1000KB and 2 of them
 }
 
 rule CN_disclosed_20180208_Mal4 {
    meta:
       description = "Detects malware from disclosed CN malware set"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.virustotal.com/graph/#/selected/n120z79z208z189/drawer/graph-details"
       date = "2018-02-08"
@@ -128,6 +134,7 @@ rule CN_disclosed_20180208_Mal4 {
 rule CN_disclosed_20180208_Mal5 {
    meta:
       description = "Detects malware from disclosed CN malware set"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.virustotal.com/graph/#/selected/n120z79z208z189/drawer/graph-details"
       date = "2018-02-08"

@@ -8,6 +8,7 @@
 rule Reveal_MemoryCredentials {
 	meta:
 		description = "Auto-generated rule - file Reveal-MemoryCredentials.ps1"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://github.com/giMini/RWMC/"
 		date = "2015-08-31"
@@ -24,6 +25,7 @@ rule Reveal_MemoryCredentials {
 rule MiniDumpTest_msdsc {
 	meta:
 		description = "Auto-generated rule - file msdsc.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://github.com/giMini/RWMC/"
 		date = "2015-08-31"

@@ -4,6 +4,7 @@ import "pe"
 rule Sofacy_Campaign_Mal_Feb18_cdnver {
    meta:
       description = "Detects Sofacy malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://twitter.com/ClearskySec/status/960924755355369472"
       date = "2018-02-07"
@@ -27,6 +28,7 @@ rule Sofacy_Campaign_Mal_Feb18_cdnver {
 rule Sofacy_Trojan_Loader_Feb18_1 {
    meta:
       description = "Sofacy Activity Feb 2018"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.reverse.it/sample/e3399d4802f9e6d6d539e3ae57e7ea9a54610a7c4155a6541df8e94d67af086e?environmentId=100"
       date = "2018-03-01"

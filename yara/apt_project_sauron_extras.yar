@@ -1,6 +1,7 @@
 rule APT_Project_Sauron_Scripts {
 	meta:
 		description = "Detects scripts (mostly LUA) from Project Sauron report by Kaspersky"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-08"
@@ -26,6 +27,7 @@ rule APT_Project_Sauron_Scripts {
 rule APT_Project_Sauron_arping_module {
 	meta:
 		description = "Detects strings from arping module - Project Sauron report by Kaspersky"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-08"
@@ -40,6 +42,7 @@ rule APT_Project_Sauron_arping_module {
 rule APT_Project_Sauron_kblogi_module {
 	meta:
 		description = "Detects strings from kblogi module - Project Sauron report by Kaspersky"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-08"
@@ -54,6 +57,7 @@ rule APT_Project_Sauron_kblogi_module {
 rule APT_Project_Sauron_basex_module {
 	meta:
 		description = "Detects strings from basex module - Project Sauron report by Kaspersky"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-08"
@@ -68,6 +72,7 @@ rule APT_Project_Sauron_basex_module {
 rule APT_Project_Sauron_dext_module {
 	meta:
 		description = "Detects strings from dext module - Project Sauron report by Kaspersky"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-08"
@@ -83,6 +88,7 @@ rule APT_Project_Sauron_dext_module {
 rule Hacktool_This_Cruft {
 	meta:
 		description = "Detects string 'This cruft' often used in hack tools like netcat or cryptcat and also mentioned in Project Sauron report"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-08"
@@ -105,7 +111,8 @@ rule Hacktool_This_Cruft {
 rule APT_Project_Sauron_Custom_M1 {
 	meta:
 		description = "Detects malware from Project Sauron APT"
-		author = "FLorian Roth"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		author = "Florian Roth"
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-09"
 		hash1 = "9572624b6026311a0e122835bcd7200eca396802000d0777dba118afaaf9f2a9"
@@ -123,7 +130,8 @@ rule APT_Project_Sauron_Custom_M1 {
 rule APT_Project_Sauron_Custom_M2 {
 	meta:
 		description = "Detects malware from Project Sauron APT"
-		author = "FLorian Roth"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		author = "Florian Roth"
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-09"
 		hash1 = "30a824155603c2e9d8bfd3adab8660e826d7e0681e28e46d102706a03e23e3a8"
@@ -140,7 +148,8 @@ rule APT_Project_Sauron_Custom_M2 {
 rule APT_Project_Sauron_Custom_M3 {
 	meta:
 		description = "Detects malware from Project Sauron APT"
-		author = "FLorian Roth"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		author = "Florian Roth"
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-09"
 		hash1 = "a4736de88e9208eb81b52f29bab9e7f328b90a86512bd0baadf4c519e948e5ec"
@@ -157,7 +166,8 @@ rule APT_Project_Sauron_Custom_M3 {
 rule APT_Project_Sauron_Custom_M4 {
 	meta:
 		description = "Detects malware from Project Sauron APT"
-		author = "FLorian Roth"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		author = "Florian Roth"
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-09"
 		hash1 = "e12e66a6127cfd2cbb42e6f0d57c9dd019b02768d6f1fb44d91f12d90a611a57"
@@ -175,7 +185,8 @@ rule APT_Project_Sauron_Custom_M4 {
 rule APT_Project_Sauron_Custom_M6 {
 	meta:
 		description = "Detects malware from Project Sauron APT"
-		author = "FLorian Roth"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		author = "Florian Roth"
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-09"
 		hash1 = "3782b63d7f6f688a5ccb1b72be89a6a98bb722218c9f22402709af97a41973c8"
@@ -193,7 +204,8 @@ rule APT_Project_Sauron_Custom_M6 {
 rule APT_Project_Sauron_Custom_M7 {
 	meta:
 		description = "Detects malware from Project Sauron APT"
-		author = "FLorian Roth"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		author = "Florian Roth"
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-09"
 		hash1 = "6c8c93069831a1b60279d2b316fd36bffa0d4c407068dbef81b8e2fe8fd8e8cd"

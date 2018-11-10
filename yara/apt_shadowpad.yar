@@ -13,6 +13,7 @@ import "pe"
 rule ShadowPad_nssock2 {
    meta:
       description = "Detects malicious nssock2.dll from ShadowPad incident - file nssock2.dll"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://securelist.com/shadowpad-in-corporate-networks/81432/"
       date = "2017-08-15"

@@ -12,6 +12,7 @@
 rule FIN7_Dropper_Aug17 {
    meta:
       description = "Detects Word Dropper from Proofpoint FIN7 Report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.proofpoint.com/us/threat-insight/post/fin7carbanak-threat-actor-unleashes-bateleur-jscript-backdoor"
       date = "2017-08-04"

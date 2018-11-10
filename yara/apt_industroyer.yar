@@ -12,6 +12,7 @@
 rule Industroyer_Malware_1 {
    meta:
       description = "Detects Industroyer related malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/x81cSy"
       date = "2017-06-13"
@@ -37,6 +38,7 @@ rule Industroyer_Malware_1 {
 rule Industroyer_Malware_2 {
    meta:
       description = "Detects Industroyer related malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/x81cSy"
       date = "2017-06-13"
@@ -75,6 +77,7 @@ rule Industroyer_Malware_2 {
 rule Industroyer_Portscan_3 {
    meta:
       description = "Detects Industroyer related custom port scaner"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/x81cSy"
       date = "2017-06-13"
@@ -96,6 +99,7 @@ rule Industroyer_Portscan_3 {
 rule Industroyer_Portscan_3_Output {
    meta:
       description = "Detects Industroyer related custom port scaner output file"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/x81cSy"
       date = "2017-06-13"
@@ -109,6 +113,7 @@ rule Industroyer_Portscan_3_Output {
 rule Industroyer_Malware_4 {
    meta:
       description = "Detects Industroyer related malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/x81cSy"
       date = "2017-06-13"
@@ -126,6 +131,7 @@ rule Industroyer_Malware_4 {
 rule Industroyer_Malware_5 {
    meta:
       description = "Detects Industroyer related malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/x81cSy"
       date = "2017-06-13"

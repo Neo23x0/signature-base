@@ -11,6 +11,7 @@
 rule CACTUSTORCH {
    meta:
       description = "Detects CactusTorch Hacktool"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/mdsecactivebreach/CACTUSTORCH"
       date = "2017-07-31"

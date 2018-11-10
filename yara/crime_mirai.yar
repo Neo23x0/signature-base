@@ -10,6 +10,7 @@
 rule Mirai_Botnet_Malware {
 	meta:
 		description = "Detects Mirai Botnet Malware"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Internal Research"
 		date = "2016-10-04"
@@ -60,6 +61,7 @@ rule Mirai_Botnet_Malware {
 rule Mirai_1_May17 {
    meta:
       description = "Detects Mirai Malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-05-12"
@@ -76,6 +78,7 @@ rule Mirai_1_May17 {
 rule Miari_2_May17 {
    meta:
       description = "Detects Mirai Malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-05-12"
@@ -90,4 +93,40 @@ rule Miari_2_May17 {
       $s5 = "jbeupq84v7.2y.net" fullword ascii
    condition:
       ( uint16(0) == 0x457f and filesize < 5000KB and 2 of them )
+}
+
+rule MAL_ELF_LNX_Mirai_Oct10_1 {
+   meta:
+      description = "Detects ELF Mirai variant"
+      author = "Florian Roth"
+      reference = "Internal Research"
+      date = "2018-10-27"
+      hash1 = "3be2d250a3922aa3f784e232ce13135f587ac713b55da72ef844d64a508ddcfe"
+   strings:
+      $x1 = " -r /vi/mips.bushido; "
+      $x2 = "/bin/busybox chmod 777 * /tmp/" fullword ascii
+
+      $s1 = "POST /ctrlt/DeviceUpgrade_1 HTTP/1.1" fullword ascii
+      $s2 = "loadURL>$(echo HUAWEIUPNP)</NewDownloadURL></u:Upgrade></s:Body></s:Envelope>" fullword ascii
+      $s3 = "POST /cdn-cgi/" fullword ascii
+   condition:
+      uint16(0) == 0x457f and filesize < 200KB and (
+         ( 1 of ($x*) and 1 of ($s*) ) or
+         all of ($x*)
+      )
+}
+
+rule MAL_ELF_LNX_Mirai_Oct10_2 {
+   meta:
+      description = "Detects ELF malware Mirai related"
+      author = "Florian Roth"
+      reference = "Internal Research"
+      date = "2018-10-27"
+      hash1 = "fa0018e75f503f9748a5de0d14d4358db234f65e28c31c8d5878cc58807081c9"
+   strings:
+      $c01 = { 50 4F 53 54 20 2F 63 64 6E 2D 63 67 69 2F 00 00
+               20 48 54 54 50 2F 31 2E 31 0D 0A 55 73 65 72 2D
+               41 67 65 6E 74 3A 20 00 0D 0A 48 6F 73 74 3A }
+   condition:
+      uint16(0) == 0x457f and filesize < 200KB and all of them
 }

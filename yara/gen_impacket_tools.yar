@@ -11,6 +11,7 @@
 rule Impacket_Tools_tracer {
    meta:
       description = "Compiled Impacket Tools"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/maaaaz/impacket-examples-windows"
       date = "2017-04-07"
@@ -26,6 +27,7 @@ rule Impacket_Tools_tracer {
 rule Impacket_Tools_wmiexec {
    meta:
       description = "Compiled Impacket Tools"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/maaaaz/impacket-examples-windows"
       date = "2017-04-07"
@@ -41,6 +43,7 @@ rule Impacket_Tools_wmiexec {
 rule Impacket_Tools_sniffer {
    meta:
       description = "Compiled Impacket Tools"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/maaaaz/impacket-examples-windows"
       date = "2017-04-07"
@@ -55,6 +58,7 @@ rule Impacket_Tools_sniffer {
 rule Impacket_Tools_mmcexec {
    meta:
       description = "Compiled Impacket Tools"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/maaaaz/impacket-examples-windows"
       date = "2017-04-07"
@@ -69,6 +73,7 @@ rule Impacket_Tools_mmcexec {
 rule Impacket_Tools_ifmap {
    meta:
       description = "Compiled Impacket Tools"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/maaaaz/impacket-examples-windows"
       date = "2017-04-07"
@@ -83,6 +88,7 @@ rule Impacket_Tools_ifmap {
 rule karmaSMB {
    meta:
       description = "Compiled Impacket Tools"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/maaaaz/impacket-examples-windows"
       date = "2017-04-07"
@@ -96,6 +102,7 @@ rule karmaSMB {
 rule samrdump {
    meta:
       description = "Compiled Impacket Tools"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/maaaaz/impacket-examples-windows"
       date = "2017-04-07"
@@ -110,6 +117,7 @@ rule samrdump {
 rule Impacket_Tools_rpcdump {
    meta:
       description = "Compiled Impacket Tools"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/maaaaz/impacket-examples-windows"
       date = "2017-04-07"
@@ -124,6 +132,7 @@ rule Impacket_Tools_rpcdump {
 rule Impacket_Tools_secretsdump {
    meta:
       description = "Compiled Impacket Tools"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/maaaaz/impacket-examples-windows"
       date = "2017-04-07"
@@ -138,6 +147,7 @@ rule Impacket_Tools_secretsdump {
 rule Impacket_Tools_esentutl {
    meta:
       description = "Compiled Impacket Tools"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/maaaaz/impacket-examples-windows"
       date = "2017-04-07"
@@ -152,6 +162,7 @@ rule Impacket_Tools_esentutl {
 rule Impacket_Tools_opdump {
    meta:
       description = "Compiled Impacket Tools"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/maaaaz/impacket-examples-windows"
       date = "2017-04-07"
@@ -166,6 +177,7 @@ rule Impacket_Tools_opdump {
 rule Impacket_Tools_sniff {
    meta:
       description = "Compiled Impacket Tools"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/maaaaz/impacket-examples-windows"
       date = "2017-04-07"
@@ -180,6 +192,7 @@ rule Impacket_Tools_sniff {
 rule Impacket_Tools_smbexec {
    meta:
       description = "Compiled Impacket Tools"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/maaaaz/impacket-examples-windows"
       date = "2017-04-07"
@@ -194,6 +207,7 @@ rule Impacket_Tools_smbexec {
 rule Impacket_Tools_goldenPac {
    meta:
       description = "Compiled Impacket Tools"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/maaaaz/impacket-examples-windows"
       date = "2017-04-07"
@@ -209,6 +223,7 @@ rule Impacket_Tools_goldenPac {
 rule Impacket_Tools_netview {
    meta:
       description = "Compiled Impacket Tools"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/maaaaz/impacket-examples-windows"
       date = "2017-04-07"
@@ -224,6 +239,7 @@ rule Impacket_Tools_netview {
 rule Impacket_Tools_smbtorture {
    meta:
       description = "Compiled Impacket Tools"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/maaaaz/impacket-examples-windows"
       date = "2017-04-07"
@@ -238,6 +254,7 @@ rule Impacket_Tools_smbtorture {
 rule Impacket_Tools_mimikatz {
    meta:
       description = "Compiled Impacket Tools"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/maaaaz/impacket-examples-windows"
       date = "2017-04-07"
@@ -253,6 +270,7 @@ rule Impacket_Tools_mimikatz {
 rule Impacket_Tools_smbrelayx {
    meta:
       description = "Compiled Impacket Tools"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/maaaaz/impacket-examples-windows"
       date = "2017-04-07"
@@ -269,6 +287,7 @@ rule Impacket_Tools_smbrelayx {
 rule Impacket_Tools_wmipersist {
    meta:
       description = "Compiled Impacket Tools"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/maaaaz/impacket-examples-windows"
       date = "2017-04-07"
@@ -283,6 +302,7 @@ rule Impacket_Tools_wmipersist {
 rule Impacket_Tools_lookupsid {
    meta:
       description = "Compiled Impacket Tools"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/maaaaz/impacket-examples-windows"
       date = "2017-04-07"
@@ -297,6 +317,7 @@ rule Impacket_Tools_lookupsid {
 rule Impacket_Tools_wmiquery {
    meta:
       description = "Compiled Impacket Tools"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/maaaaz/impacket-examples-windows"
       date = "2017-04-07"
@@ -311,6 +332,7 @@ rule Impacket_Tools_wmiquery {
 rule Impacket_Tools_atexec {
    meta:
       description = "Compiled Impacket Tools"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/maaaaz/impacket-examples-windows"
       date = "2017-04-07"
@@ -327,6 +349,7 @@ rule Impacket_Tools_atexec {
 rule Impacket_Tools_psexec {
    meta:
       description = "Compiled Impacket Tools"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/maaaaz/impacket-examples-windows"
       date = "2017-04-07"
@@ -342,6 +365,7 @@ rule Impacket_Tools_psexec {
 rule Impacket_Tools_Generic_1 {
    meta:
       description = "Compiled Impacket Tools"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://github.com/maaaaz/impacket-examples-windows"
       date = "2017-04-07"

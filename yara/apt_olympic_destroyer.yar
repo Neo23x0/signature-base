@@ -13,6 +13,7 @@ import "pe"
 rule Destructive_Ransomware_Gen1 {
    meta:
       description = "Detects destructive malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "http://blog.talosintelligence.com/2018/02/olympic-destroyer.html"
       date = "2018-02-12"
@@ -28,6 +29,7 @@ rule Destructive_Ransomware_Gen1 {
 rule OlympicDestroyer_Gen2 {
    meta:
       description = "Detects Olympic Destroyer malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "http://blog.talosintelligence.com/2018/02/olympic-destroyer.html"
       date = "2018-02-12"

@@ -8,6 +8,7 @@
 rule Upatre_Hazgurut {
 	meta:
 		description = "Detects Upatre malware - file hazgurut.exe"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://weankor.vxstream-sandbox.com/sample/6b857ef314938d37997c178ea50687a281d8ff9925f0c4e70940754643e2c0e3?environmentId=7"
 		date = "2015-10-13"

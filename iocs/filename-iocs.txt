@@ -779,7 +779,6 @@ AppData\\adobe\\adobe\.dat;65
 \\sichost\.exe;45
 \\slchost\.exe;45
 \\slihost\.exe;45
-\\smsvchost\.exe;45
 \\snahost\.exe;45
 \\snhost\.exe;45
 \\snphost\.exe;45
@@ -1844,7 +1843,7 @@ Temp\\rad[A-F0-9]{5}\.exe;70
 \\smbinit\.exe;60
 
 # Unicode Left-to-Right Override Trick https://goo.gl/cHnBqP
-fdp\.exe;60
+fdp\.exe;60;\\bin\\
 
 # APT 29 Activity https://www.fireeye.com/blog/threat-research/2017/03/apt29_domain_frontin.html
 \\googleService\.exe;80
@@ -1986,8 +1985,6 @@ ystem32\\lcsvsvc\.dll;80
 
 # HP Keylogging Audio Driver https://goo.gl/BSQWzw
 \\Users\\Public\\MicTray\.log;70
-\\Windows\\System32\\MicTray\.exe;70
-\\Windows\\System32\\MicTray64\.exe;70
 
 # WannaCry Ransomware https://goo.gl/1M92G1
 \\tasksche\.exe;75
@@ -2010,7 +2007,7 @@ ystem32\\lcsvsvc\.dll;80
 \\clearlog\.dll;70
 \\de_svr\.exe;70
 \\lancer\.dll;70
-\\regkey\.exe;70
+\\regkey\.exe;40
 \\Program Files\\Services\\iThemes\.dll;70
 
 # Threat actors leverage EternalBlue exploit to deliver non-WannaCry payloads https://goo.gl/OOB3mH
@@ -2051,7 +2048,7 @@ ystem32\\lcsvsvc\.dll;80
 #([C-Zc-z]:|\\\\).{1,40}\\explorer\.exe$;65;(?i)(HKCR\\Applications|winsxs|WinSxS|WINXP|WINDOWS|Windows|i386|WINXP|WINDOWS|Win2k|WINNT|Windows|windows|%SystemRoot%|%system32%)\\
 
 # Other missplaced stuff you probably want to be aware of
-#([C-Zc-z]:|\\\\).{1,40}\\(cmd|lsass|rundll|rundll32|net|net1|taskeng|conhost|powershell)\.exe;65;(?i)(HKCR\\Applications|System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE|dllcache|WINXP|WINDOWS|i386|anti-malware|%system32%|activation_config|Logging|ADDriver)\\
+#([C-Zc-z]:|\\\\).{1,40}\\(cmd|lsass|rundll|rundll32|net|net1|taskeng|conhost|powershell)\.exe;65;(?i)(HKCR\\Applications|System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE|dllcache|WINXP|WINDOWS|i386|anti-malware|%system32%|activation_config|Logging|ADDriver|cmd\.exe\.lnk)\\
 
 # Archivers on odd locations
 #\\rar(32|64)?\.exe;60;(?i)(\\WinRAR|\\wrar)
@@ -2066,7 +2063,7 @@ ystem32\\lcsvsvc\.dll;80
 \\svchost\.\.exe;76
 \\rundll64\.exe;76
 
-# Stuf running where it normally shouldn't
+# Stuff running where it normally shouldn't
 \\((Users|Documents and Settings))\\[^\\]{1,20}\.(exe|dll);65
 \\(Users|Documents and Settings)\\[^\\]{1,20}\\[^\\]{1,20}\.(exe|dll|vbs|bat|ps1);40
 \\(Users|Documents and Settings)\\NetworkService\\[^\\]{1,20}\.(exe|dll);60
@@ -2107,7 +2104,7 @@ ystem32\\lcsvsvc\.dll;80
 # Cred Dumping
 \\(q32|q64|wceaux|w86|q86|quarkpwd[^\\]*|m64|m32|hash32|hash64|64|32|wce32|wce64|w32|w64|wce|p32|p64|ps32|ps64|mimikatz|mimilove|mm32|mm64|pw32|pw64|g32|g64|gs32|gs64|hash|hashdump|dumpsvc)\.exe;60;\\distlib\\
 \\(g64\-|\\g32\-|\\gsecdump\.exe|gcx64\.|\\gcx32\.|\\gec\.|\\gse\.exe);60
-\\pwhash;60;\\python\\
+\\pwhash;60;(\\python\\|\\site-packages\\)
 \\fgdump;60
 \\w32\.exe;50;site-packages
 \\w64\.exe;50;site-packages
@@ -2128,17 +2125,14 @@ ystem32\\lcsvsvc\.dll;80
 # Exe in RARSFX folder
 #\\RarSFX\d\\[^\\]{1,20}\.exe;50;(?i)(\\RarSFX\d\\lsetup\.exe|\\intiupdater\.exe)
 
-# Backdoor.Adwind search for a runkey using this legitimate but missplaced copy of java
-\\(Users|Documents and Settings)\\[^\\]{1,16}\\AppData\\Roaming\\Oracle\\bin\\javaw\.exe;70
-
 # Classic attacker staging folders
 [Cc]:\\(Recovery|Intel|Web)\\[^\\]{1,16}\.(exe|dll|vbs|ps1|bat);60
 #[Cc]:\\(Windows|Winnt)\\(Help|Web|Media|ime|Debug|Fonts)\\[^\\]{1,16}\.(exe|dll|vbs|ps1|bat);60;(?i)(\\WINDOWS\\IME\\im[^\\]*_1\\IM)
 \\System Volume Information\\[^\\]{1,16}\.(exe|dll|vbs|ps1|bat);60
 \\(perflogs|perfdata)\\[^\\]{1,16}\.(exe|dll|vbs|ps1|bat);60
 
-# Generic startup persistance flagging
-#\\Start Menu\\Programs\\Startup\\[^\\]{1,16}\.(exe|dll|vbs|ps1|bat);60;\.exe\.lnk
+# Generic startup persistence flagging
+\\Start Menu\\Programs\\Startup\\[^\\]{1,16}\.(exe|dll|vbs|ps1|bat);60;\.exe\.lnk
 
 # Executable used by PlugX DLL side-loading in non-standard location
 #(?i)\\CamMute\.exe;60;(?i)\\Lenovo\\Communication Utility\\
@@ -3038,5 +3032,55 @@ ystem32\\Microsoft\\Protect\\Windows\\svchost.exe;80
 # QRAT https://www.volexity.com/blog/2018/06/07/patchwork-apt-group-targets-us-think-tanks/
 \\qrat\.exe;70
 \\microsoft_network\.exe;80
+
+# LuckyMouse report https://securelist.com/luckymouse-hits-national-data-center/86083/
+\\Windows\\pcawhere\\thinprobe\.exe;100
+\\Windows\\pcawhere\\thinhostprobedll\.dll;100
+\\Windows\\pcawhere\\config\.ini;100
+\\ProgramData\\pcawhere\\thinprobe\.exe;100
+\\ProgramData\\pcawhere\\thinhostprobedll\.dll;100
+\\ProgramData\\pcawhere\\config\.ini;100
+
+# Adwind JRAT
+\\AppData\\Roaming\\Oracle\\bin\\javaw\.exe;75
+\\AppData\\Roaming\\Oracle\\bin\\java\.exe;75
+\\AppData\\Local\\Temp\\Retrive[0-9]{18,19}\.vbs;100
+\\AppData\\Oracle\\bin\\javaw\.exe;60
+\\AppData\\Roaming\\Oracle\\javaw\.exe;80
+
+# Insikt Report https://www.recordedfuture.com/chinese-cyberespionage-operations/
+/usr/bin/ext4;70
+
+# Turla Outlook Backdoor https://www.welivesecurity.com/2018/08/22/turla-unique-outlook-backdoor/
+\\Microsoft\\Windows\\scawrdot\.db;100
+\\Microsoft\\Windows\\flobcsnd\.dat;100
+\\mapid\.tlb;60
+\\cbmsfgrc\.dat;60
+\\mswmpdat\.tlb;60
+
+# Lazarus - Operation Applejeus https://securelist.com/operation-applejeus/87553/
+:\\Recovery\\msn\.exe;80
+:\\Recovery\\msndll\.log;80
+\\Windows\\msn\.exe;80
+ystem32\\uploadmgrsvc\.dll;80
+ystem32\\uploadmgr\.dat;80
+
+# Suspicious File Name and Location
+\\ProgramData\\[^\\]{1,20}\.sct;65
+\\ProgramData\\DefenderNT\\[^\\]{1,20}\.vbs;65
+\\ProgramData\\FirefoxSDK\\[^\\]{1,20}\.vbs;65
+\\ProgramData\\WindowsNT\\[^\\]{1,20}\.vbs;65
+
+# MuddyWater Filename IOC https://securelist.com/muddywater/88059/
+\\ProgramData\\WindowsNT\\WindowsNT\.ini;60
+\\ProgramData\\SYSTEM32SDK\\ConfManagerNT\.vbs;60
+\\ProgramData\\SYSTEM32SDK\\ProjectConfManagerNT\.ini;60
+\\System32\\Tasks\\Microsoft\\WindowsDefenderUpdater;60
+\\System32\\Tasks\\Microsoft\\MicrosoftOneDrive;60
+\\System32\\Tasks\\Microsoft\\WindowsDifenderUpdate;60
+\\System32\\Tasks\\Microsoft\\WindowsSystem32SDK;60
+\\System32\\Tasks\\Microsoft\\WindowsDefenderSDK;60
+\\System32\\Tasks\\Microsoft\\WindowsMalwareDefenderSDK;60
+\\System32\\Tasks\\Microsoft\\WindowsMalwareByteSDK;60
 
 # End

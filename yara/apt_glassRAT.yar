@@ -44,6 +44,7 @@ rule glassRAT
 rule GlassRAT_Generic {
 	meta:
 		description = "Detects GlassRAT Malware"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://blogs.rsa.com/peering-into-glassrat/"
 		date = "2015-11-23"

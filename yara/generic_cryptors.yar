@@ -2,6 +2,7 @@
 rule DarkEYEv3_Cryptor {
 	meta:
 		description = "Rule to detect DarkEYEv3 encrypted executables (often malware)"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://darkeyev3.blogspot.fi/"
 		date = "2015-05-24"

@@ -10,6 +10,7 @@
 rule COZY_FANCY_BEAR_Hunt {
 	meta:
 		description = "Detects Cozy Bear / Fancy Bear C2 Server IPs"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www.crowdstrike.com/blog/bears-midst-intrusion-democratic-national-committee/"
 		date = "2016-06-14"
@@ -28,6 +29,7 @@ rule COZY_FANCY_BEAR_Hunt {
 rule COZY_FANCY_BEAR_pagemgr_Hunt {
 	meta:
 		description = "Detects a pagemgr.exe as mentioned in the CrowdStrike report"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www.crowdstrike.com/blog/bears-midst-intrusion-democratic-national-committee/"
 		date = "2016-06-14"

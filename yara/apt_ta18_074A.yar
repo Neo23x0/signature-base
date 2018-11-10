@@ -58,6 +58,7 @@ rule z_webshell {
 rule TA18_074A_screen {
    meta:
       description = "Detects malware mentioned in TA18-074A"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.us-cert.gov/ncas/alerts/TA18-074A"
       date = "2018-03-16"
@@ -75,6 +76,7 @@ rule TA18_074A_screen {
 rule TA18_074A_scripts {
    meta:
       description = "Detects malware mentioned in TA18-074A"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.us-cert.gov/ncas/alerts/TA18-074A"
       date = "2018-03-16"

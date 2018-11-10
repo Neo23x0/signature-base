@@ -13,6 +13,7 @@ import "pe"
 rule Foudre_Backdoor_1 {
    meta:
       description = "Detects Foudre Backdoor"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/Nbqbt6"
       date = "2017-08-01"
@@ -29,6 +30,7 @@ rule Foudre_Backdoor_1 {
 rule Foudre_Backdoor_Dropper_1 {
    meta:
       description = "Detects Foudre Backdoor"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/Nbqbt6"
       date = "2017-08-01"
@@ -49,6 +51,7 @@ rule Foudre_Backdoor_Dropper_1 {
 rule Foudre_Backdoor_Component_1 {
    meta:
       description = "Detects Foudre Backdoor"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/Nbqbt6"
       date = "2017-08-01"
@@ -70,6 +73,7 @@ rule Foudre_Backdoor_Component_1 {
 rule Foudre_Backdoor_SFX {
    meta:
       description = "Detects Foudre Backdoor SFX"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/Nbqbt6"
       date = "2017-08-01"

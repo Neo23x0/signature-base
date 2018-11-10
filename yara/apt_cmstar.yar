@@ -13,6 +13,7 @@ import "pe"
 rule CMStar_Malware_Sep17 {
    meta:
       description = "Detects CMStar Malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/pTffPA"
       date = "2017-10-03"

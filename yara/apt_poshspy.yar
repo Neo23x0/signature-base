@@ -11,6 +11,7 @@
 rule POSHSPY_Malware {
    meta:
       description = "Detects"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.fireeye.com/blog/threat-research/2017/03/dissecting_one_ofap.html"
       date = "2017-07-15"

@@ -12,6 +12,7 @@ import "pe"
 rule Greenbug_Malware_1 {
    meta:
       description = "Detects Malware from Greenbug Incident"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/urp4CD"
       date = "2017-01-25"
@@ -26,6 +27,7 @@ rule Greenbug_Malware_1 {
 rule Greenbug_Malware_2 {
    meta:
       description = "Detects Backdoor from Greenbug Incident"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/urp4CD"
       date = "2017-01-25"
@@ -52,6 +54,7 @@ rule Greenbug_Malware_2 {
 rule Greenbug_Malware_3 {
    meta:
       description = "Detects Backdoor from Greenbug Incident"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/urp4CD"
       date = "2017-01-25"
@@ -69,6 +72,7 @@ rule Greenbug_Malware_3 {
 rule Greenbug_Malware_4 {
    meta:
       description = "Detects ISMDoor Backdoor"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/urp4CD"
       date = "2017-01-25"
@@ -95,6 +99,7 @@ rule Greenbug_Malware_4 {
 rule Greenbug_Malware_5 {
    meta:
       description = "Auto-generated rule"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/urp4CD"
       date = "2017-01-25"
@@ -130,6 +135,7 @@ rule Greenbug_Malware_5 {
 rule Greenbug_Malware_Nov17_1 {
    meta:
       description = "Detects Greenbug Malware"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "http://www.clearskysec.com/greenbug/"
       date = "2017-11-26"

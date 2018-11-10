@@ -9,6 +9,7 @@
 rule UBoatRAT {
    meta:
       description = "Detects UBoat RAT Samples"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2017/11/unit42-uboatrat-navigates-east-asia/"
       date = "2017-11-29"
@@ -50,6 +51,7 @@ rule UBoatRAT {
 rule UBoatRAT_Dropper {
    meta:
       description = "Detects UBoatRAT Dropper"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2017/11/unit42-uboatrat-navigates-east-asia/"
       date = "2017-11-29"

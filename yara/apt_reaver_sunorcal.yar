@@ -14,6 +14,7 @@ import "pe"
 rule Reaver3_Malware_Nov17_1 {
    meta:
       description = "Detects Reaver malware mentioned in PaloAltoNetworks report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2017/11/unit42-new-malware-with-ties-to-sunorcal-discovered/"
       date = "2017-11-11"
@@ -27,6 +28,7 @@ rule Reaver3_Malware_Nov17_1 {
 rule Reaver3_Malware_Nov17_2 {
    meta:
       description = "Detects Reaver malware mentioned in PaloAltoNetworks report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2017/11/unit42-new-malware-with-ties-to-sunorcal-discovered/"
       date = "2017-11-11"
@@ -51,6 +53,7 @@ rule Reaver3_Malware_Nov17_2 {
 rule Reaver3_Malware_Nov17_3 {
    meta:
       description = "Detects Reaver malware mentioned in PaloAltoNetworks report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2017/11/unit42-new-malware-with-ties-to-sunorcal-discovered/"
       date = "2017-11-11"
@@ -75,6 +78,7 @@ rule Reaver3_Malware_Nov17_3 {
 rule SunOrcal_Malware_Nov17_1 {
    meta:
       description = "Detects Reaver malware mentioned in PaloAltoNetworks report"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2017/11/unit42-new-malware-with-ties-to-sunorcal-discovered/"
       date = "2017-11-11"

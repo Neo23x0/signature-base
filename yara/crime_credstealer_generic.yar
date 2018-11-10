@@ -2,6 +2,7 @@
 rule CredentialStealer_Generic_Backdoor {
    meta:
       description = "Detects credential stealer byed on many strings that indicate password store access"
+      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-06-07"
