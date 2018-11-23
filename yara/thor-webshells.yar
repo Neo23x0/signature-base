@@ -7397,17 +7397,6 @@ rule installer {
 	condition:
 		all of them
 }
-rule uploader {
-	meta:
-		description = "Webshells Auto-generated - file uploader.php"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
-		author = "Florian Roth"
-		hash = "b9a9aab319964351b46bd5fc9d6246a8"
-	strings:
-		$s0 = "move_uploaded_file($userfile, \"entrika.php\"); "
-	condition:
-		all of them
-}
 rule FSO_s_remview_2 {
 	meta:
 		description = "Webshells Auto-generated - file remview.php"
