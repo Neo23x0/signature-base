@@ -1,3 +1,5 @@
+import "pe"
+
 rule turla_png_dropper {
     meta:
         author = "Ben Humphrey"
