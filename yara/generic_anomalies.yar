@@ -52,7 +52,7 @@ rule Cloaked_as_JPG {
       /* and
       not filepath contains "ASP.NET" */
       not $fp1 in (0..30) and
-      not uint32be(0) == 0x89504E47 /* PNG Header */
+      not uint32be(0) == 0x89504E47 and /* PNG Header */
       not unint16be(0) == 0x8b1f /* GZIP */
 }
 
