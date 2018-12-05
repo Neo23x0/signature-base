@@ -177,7 +177,7 @@ rule MAL_LNX_SSHDOOR_Triton {
       $mimban_i2 = "PEM_read_bio_RSA_PUBKEY"
       $mimban_i3 = "gethostbyname"
    condition:
-      uint32be(0) == 0x7f454c46 // ELF
+      uint32be(0) == 0x7f454c46 and // ELF
       ( 1 of ($a_*) or 2 of ($ac_*) ) // SSH Binary
       and (
          ( 1 of ($s*) ) or
