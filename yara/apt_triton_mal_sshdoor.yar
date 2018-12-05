@@ -35,6 +35,7 @@
 // Reasons for the changes:
 //    - Cleaner rule structure (no inter-dependencies)
 //    - Performance
+//    - Limited rules to ELF files to reduce false positive rate
 // Disadvantage:
 //    - Lost family identification (see the original rules)
 //    - Missing rule (the one with the expected & relevant performance impact)
@@ -176,6 +177,7 @@ rule MAL_LNX_SSHDOOR_Triton {
       $mimban_i2 = "PEM_read_bio_RSA_PUBKEY"
       $mimban_i3 = "gethostbyname"
    condition:
+      uint32be(0) == 0x7f454c46 // ELF
       ( 1 of ($a_*) or 2 of ($ac_*) ) // SSH Binary
       and (
          ( 1 of ($s*) ) or
