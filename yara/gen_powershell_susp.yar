@@ -62,6 +62,7 @@ rule Suspicious_PowerShell_WebDownload_1 {
 		$s2 = "System.Net.WebClient).DownloadString('http" ascii nocase
 
       $fp1 = "NuGet.exe" ascii fullword
+      $fp2 = "chocolatey.org" ascii
    condition:
       1 of ($s*) and not 1 of ($fp*)
 }

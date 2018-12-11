@@ -2045,7 +2045,7 @@ ystem32\\lcsvsvc\.dll;80
 #([C-Zc-z]:|\\\\).{1,40}\\(spoolsrv\.exe|winlogon\.exe|taskmgr\.exe|taskeng\.exe);65;(?i)(HKCR\\Applications|System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE|Sysnative|dllcache|WINXP|WINDOWS|i386|%system32%)\\
 #([C-Zc-z]:|\\\\).{1,40}\\mshta\.exe$;65;(?i)(HKCR\\Applications|System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE|dllcache|WINXP|WINDOWS|i386|windows|ie8|ie7|%system32%|\$NtServicePackUninstall\$)\\
 #([C-Zc-z]:|\\\\).{1,40}\\cmd\.exe$;65;(?i)(HKCR\\Applications|System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE|Sysnative|dllcache|WINXP|WINDOWS|i386|dllcache|WINXP|WINDOWS|%system32%)\\
-#([C-Zc-z]:|\\\\).{1,40}\\explorer\.exe$;65;(?i)(HKCR\\Applications|winsxs|WinSxS|WINXP|WINDOWS|Windows|i386|WINXP|WINDOWS|Win2k|WINNT|Windows|windows|%SystemRoot%|%system32%)\\
+#([C-Zc-z]:|\\\\).{1,40}\\explorer\.exe$;65;(?i)(HKCR\\Applications|winsxs|WinSxS|WINXP|WINDOWS|Windows|i386|WINXP|WINDOWS|Win2k|WINNT|Windows|windows|%SystemRoot%|%system32%|CrashDumps)\\
 
 # Other missplaced stuff you probably want to be aware of
 #([C-Zc-z]:|\\\\).{1,40}\\(cmd|lsass|rundll|rundll32|net|net1|taskeng|conhost|powershell)\.exe;65;(?i)(HKCR\\Applications|System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE|dllcache|WINXP|WINDOWS|i386|anti-malware|%system32%|activation_config|Logging|ADDriver|cmd\.exe\.lnk)\\
@@ -2140,7 +2140,7 @@ ystem32\\lcsvsvc\.dll;80
 #(?i)\\dvcemumanager\.exe;60;(?i)\\Microsoft Device Emulator\\
 #(?i)\\Gadget\.exe;60;(?i)\\Windows Media Player\\
 #(?i)\\hcc\.exe;60;(?i)\\HTML Help Workshop\\
-#\\hkcmd\.exe;60;(?i)\\(System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE|Graphics)\\
+#\\hkcmd\.exe;60;(?i)\\(System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE|Graphics|Packages)\\
 #(?i)\\Mc\.exe;60;(?i)\\([Mm]icrosoft [Vv]isual [Ss]tudio|Windows Kits|Microsoft SDK|microsoft sdk)
 #(?i)\\MsMpEng\.exe;60;(?i)\\(Microsoft Security Client|Windows Defender|AntiMalware|Image File Execution Options)
 #(?i)\\msseces\.exe;60;(?i)\\(Microsoft Security Center|Microsoft Security Client)\\
