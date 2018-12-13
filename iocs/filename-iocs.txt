@@ -919,8 +919,6 @@ AppData\\adobe\\adobe\.dat;65
 \\svchosy\.exe;45
 \\svchot\.exe;45
 \\svchoto\.exe;45
-\\svchots\.exe;45
-\\svchots\.exe;45
 \\svchott\.exe;45
 \\svchowb\.exe;45
 \\svchowt\.exe;45
