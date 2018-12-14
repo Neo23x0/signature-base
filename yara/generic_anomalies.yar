@@ -327,7 +327,7 @@ rule SUSP_Scheduled_Task_BigSize {
       $a0 = "<Task version=" ascii wide
       $a1 = "xmlns=\"http://schemas.microsoft.com/windows/" ascii wide
 
-      $fp1 = "</Counter><Counter>"
+      $fp1 = "</Counter><Counter>" wide
    condition:
       uint16(0) == 0xfeff and filesize > 20KB and all of ($a*) and not 1 of ($fp*)
 }
