@@ -41,7 +41,7 @@ rule Cloaked_as_JPG {
    meta:
       description = "Detects a cloaked file as JPG"
       author = "Florian Roth (eval section from Didier Stevens)"
-      date = "2015/02/29"
+      date = "2015-02-28"
       score = 40
    strings:
       $fp1 = "<!DOCTYPE" ascii

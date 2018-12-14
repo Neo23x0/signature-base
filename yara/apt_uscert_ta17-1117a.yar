@@ -12,7 +12,7 @@ rule Dropper_DeploysMalwareViaSideLoading {
         author = "USG"
         reference = "https://www.us-cert.gov/ncas/alerts/TA17-117A"
         true_positive = "5262cb9791df50fafcb2fbd5f93226050b51efe400c2924eecba97b7ce437481: drops REDLEAVES. 6392e0701a77ea25354b1f40f5b867a35c0142abde785a66b83c9c8d2c14c0c3: drops plugx. "
-    strings:        
+    strings:
         $UniqueString = {2e 6c 6e 6b [0-14] 61 76 70 75 69 2e 65 78 65} // ".lnk" near "avpui.exe"
         $PsuedoRandomStringGenerator = {b9 1a [0-6] f7 f9 46 80 c2 41 88 54 35 8b 83 fe 64} // Unique function that generates a 100 character pseudo random string.
     condition:
@@ -62,7 +62,7 @@ rule PLUGX_RedLeaves {
         date = "03042017"
         reference = "https://www.us-cert.gov/ncas/alerts/TA17-117A"
         incident = "10118538"
-        date = "2017/04/03"
+        date = "2017-04-03"
         MD5_1 = "598FF82EA4FB52717ACAFB227C83D474"
         MD5_2 = "7D10708A518B26CC8C3CBFBAA224E032"
         MD5_3 = "AF406D35C77B1E0DF17F839E36BCE630"
