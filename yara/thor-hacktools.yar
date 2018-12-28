@@ -4282,7 +4282,7 @@ rule HKTL_shellpop_socat {
 
 rule HKTL_shellpop_Perl {
    meta:
-      description = "dropzone - file PerlUDP"
+      description = "Detects Shellpop Perl script"
       author = "Tobias Michalski"
       reference = "https://github.com/0x00-0x00/ShellPop"
       date = "2018-05-18"
