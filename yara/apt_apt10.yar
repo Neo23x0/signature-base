@@ -1,9 +1,11 @@
 /*
-Yara Rule Set
-Author: Jonas Lejon
-Date: 2017-04-06
-Identifier: APT 10 Malware
+   Yara Rule Set
+   Author: Jonas Lejon
+   Date: 2017-04-06
+   Identifier: APT 10 Malware
 */
+
+import "pe"
 
 rule APT10_Malware_Sample_Gen {
    meta:
