@@ -183,7 +183,7 @@ rule SUSP_Script_Obfuscation_Char_Concat {
       date = "2018-10-04"
       hash1 = "b30cc10e915a23c7273f0838297e0d2c9f4fc0ac1f56100eef6479c9d036c12b"
    strings:
-      $s1 = "\"c\" & \"r\" & \"i\" & \"p\" & \"t\"" fullword ascii
+      $s1 = "\"c\" & \"r\" & \"i\" & \"p\" & \"t\"" ascii
    condition:
       1 of them
 }
