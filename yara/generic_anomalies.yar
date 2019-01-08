@@ -338,7 +338,7 @@ rule SUSP_Putty_Unnormal_Size {
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2019-01-07"
-      score = 60
+      score = 50
       hash1 = "e5e89bdff733d6db1cffe8b3527e823c32a78076f8eadc2f9fd486b74a0e9d88"
       hash2 = "ce4c1b718b54973291aefdd63d1cca4e4d8d4f5353a2be7f139a290206d0c170"
       hash3 = "adb72ea4eab7b2efc2da6e72256b5a3bb388e9cdd4da4d3ff42a9fec080aa96f"
