@@ -8,7 +8,8 @@ rule SUSP_Bad_PDF {
    strings:
       $s1 = "         /F (http//" ascii
       $s2 = "         /F (\\\\\\\\" ascii
-      $s3 = "<</F (\\\\" ascii
+      $s3 = "        /F (\\\\\\\\" ascii
+      $s4 = "<</F (\\\\" ascii
    condition:
       ( uint32(0) == 0x46445025 or uint32(0) == 0x4450250a ) and 1 of them
 }
