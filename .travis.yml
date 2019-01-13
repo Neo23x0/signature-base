@@ -13,5 +13,5 @@ notifications:
   email:
     recipients:
       - venom14@gmail.com
-    on_success: always
+    on_success: change
     on_failure: always
