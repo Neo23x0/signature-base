@@ -2046,7 +2046,7 @@ ystem32\\lcsvsvc\.dll;80
 #([C-Zc-z]:|\\\\).{1,40}\\explorer\.exe$;65;(?i)(HKCR\\Applications|winsxs|WinSxS|WINXP|WINDOWS|Windows|i386|WINXP|WINDOWS|Win2k|WINNT|Windows|windows|%SystemRoot%|%system32%|CrashDumps)\\
 
 # Other missplaced stuff you probably want to be aware of
-#([C-Zc-z]:|\\\\).{1,40}\\(cmd|lsass|rundll|rundll32|net|net1|taskeng|conhost|powershell)\.exe;65;(?i)(HKCR\\Applications|System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE|dllcache|WINXP|WINDOWS|i386|anti-malware|%system32%|activation_config|Logging|ADDriver|cmd\.exe\.lnk)\\
+#([C-Zc-z]:|\\\\).{1,40}\\(cmd|lsass|rundll|rundll32|net|net1|taskeng|conhost|powershell)\.exe;65;(?i)(HKCR\\Applications|System32|system32|SYSTEM32|winsxs|WinSxS|SysWOW64|SysWow64|syswow64|SYSNATIVE|dllcache|WINXP|WINDOWS|i386|anti-malware|%system32%|activation_config|Logging|ADDriver|cmd\.exe\.lnk|CrashDumps)\\
 
 # Archivers on odd locations
 #\\rar(32|64)?\.exe;60;(?i)(\\WinRAR|\\wrar)
@@ -3080,5 +3080,10 @@ ystem32\\uploadmgr\.dat;80
 \\System32\\Tasks\\Microsoft\\WindowsDefenderSDK;60
 \\System32\\Tasks\\Microsoft\\WindowsMalwareDefenderSDK;60
 \\System32\\Tasks\\Microsoft\\WindowsMalwareByteSDK;60
+
+# Cold River report https://www.lastline.com/labsblog/threat-actor-cold-river-network-traffic-analysis-and-a-deep-dive-on-agent-drable/
+\\\.oracleServices\\Configure\.txt;100
+\\\.oracleServices\\svshost_serv\.doc;100
+\\\.oracleServices\\svshost_serv\.exe;100
 
 # End
