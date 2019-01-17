@@ -1,4 +1,4 @@
-YARA=3.5.0
+YARA=3.8.1
 CUR_DIR=${PWD}
 YARA_DIR=$(CUR_DIR)/yara
 BUILD_DIR=$(CUR_DIR)/build
