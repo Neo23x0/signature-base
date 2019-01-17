@@ -41,6 +41,7 @@ rule Recon_Commands_Windows_Gen1 {
       $s20 = "arp -a " ascii
 
       $fp1 = "avdapp.dll" fullword wide
+      $fp2 = "keyword.command.batchfile" ascii
    condition:
       filesize < 1000KB and 4 of them
       and not 1 of ($fp*)

@@ -34,6 +34,9 @@ rule PowerShell_Susp_Parameter_Combo {
 
       /* Single Threaded - PowerShell Empire */
       $f1 = " -sta " ascii
+      
+      $fp1 = "Chocolatey Software"
+      $fp2 = "VBOX_MSI_INSTALL_PATH"
    condition:
-      filesize < 800KB and 4 of them
+      filesize < 3000KB and 4 of ($s*) and not 1 of ($fp*)
 }

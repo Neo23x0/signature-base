@@ -42,6 +42,9 @@ rule PowerShell_Case_Anomaly {
       $kn3 = "-noProfile" ascii wide
       $kn4 = "-NOPROFILE" ascii wide
       $kn5 = "-Noprofile" ascii wide
+
+      $fp1 = "Microsoft Code Signing" ascii fullword
+      $fp2 = "Microsoft Corporation" ascii
    condition:
       filesize < 800KB and (
          // find all 'powershell' occurances and ignore the expected cases
@@ -50,8 +53,9 @@ rule PowerShell_Case_Anomaly {
          ( $a1 and not 1 of ($an*) ) or
          // find all '-norpofile' occurances and ignore the expected cases
          ( $k1 and not 1 of ($kn*) )
-      )
+      ) and not 1 of ($fp*)
 }
+
 
 rule WScriptShell_Case_Anomaly {
    meta:

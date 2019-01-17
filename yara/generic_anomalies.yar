@@ -328,6 +328,8 @@ rule SUSP_Scheduled_Task_BigSize {
       $a1 = "xmlns=\"http://schemas.microsoft.com/windows/" ascii wide
 
       $fp1 = "</Counter><Counter>" wide
+      $fp2 = "Office Feature Updates Logon" wide
+      $fp3 = "Microsoft Shared" fullword wide
    condition:
       uint16(0) == 0xfeff and filesize > 20KB and all of ($a*) and not 1 of ($fp*)
 }

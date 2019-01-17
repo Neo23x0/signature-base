@@ -1,7 +1,7 @@
 
 rule LNK_Malicious_Nov1 {
    meta:
-      description = "Detects a malicious LNK file"
+      description = "Detects a suspicious LNK file"
       license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://www.virustotal.com/en/file/ee069edc46a18698fa99b6d2204895e6a516af1a306ea986a798b178f289ecd6/analysis/"
