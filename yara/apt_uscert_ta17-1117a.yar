@@ -59,7 +59,7 @@ rule REDLEAVES_CoreImplant_UniqueStrings {
 rule PLUGX_RedLeaves {
     meta:
         author = "US-CERT Code Analysis Team"
-        date = "03042017"
+        date = "03.04.2017"
         reference = "https://www.us-cert.gov/ncas/alerts/TA17-117A"
         incident = "10118538"
         date = "2017-04-03"
