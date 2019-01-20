@@ -53,6 +53,8 @@ rule Office_OLE_DDE {
       score = 50
    strings:
       $a = /\x13\s*DDE\b[^\x14]+/ nocase
+
+      $r1 = "SummaryInformation" wide
    condition:
-      uint32be(0) == 0xD0CF11E0 and $a
+      uint32be(0) == 0xD0CF11E0 and $a and not $r1
 }

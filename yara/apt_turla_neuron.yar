@@ -111,7 +111,6 @@ rule Nautilus_forensic_artificats {
         $ = "Msnb.exe" fullword ascii
         $ = "nautilus-service.dll"
         $ = "Neuron_service" fullword ascii
-        $ = "owa.exe" fullword ascii
         $ = "owa_ar2.bat" fullword ascii
         $ = "payload.x64.dll.system" fullword ascii
         $ = "service.x64.dll.system" fullword ascii
