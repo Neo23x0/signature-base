@@ -635,7 +635,6 @@ AppData\\adobe\\adobe\.dat;65
 \\firef0x\.exe;45
 \\firefly\.exe;45
 \\firefo\.exe;45
-\\firefox_\.exe;45
 \\firefox2\.exe;45
 \\firefox32\.exe;45
 \\firefoxe\.exe;45

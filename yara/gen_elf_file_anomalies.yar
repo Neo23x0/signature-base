@@ -11,5 +11,5 @@ rule SUSP_ELF_LNX_UPX_Compressed_File {
       $s1 = "PROT_EXEC|PROT_WRITE failed." fullword ascii
       $s3 = "$Id: UPX" fullword ascii
    condition:
-      uint16(0) == 0x457f and filesize < 2000KB and filesize > 30KB and all of them
+      uint32be(0) == 0x7f454c46 and filesize < 2000KB and filesize > 30KB and all of them
 }
