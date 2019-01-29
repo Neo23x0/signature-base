@@ -1836,7 +1836,7 @@ Temp\\rad[A-F0-9]{5}\.exe;70
 \\sfmsc\.exe;60
 \\dnslookup\.exe;60
 \\iissrv\.exe;60
-\\regsys\.exe ;60
+\\regsys\.exe;60
 \\smbinit\.exe;60
 
 # Unicode Left-to-Right Override Trick https://goo.gl/cHnBqP
