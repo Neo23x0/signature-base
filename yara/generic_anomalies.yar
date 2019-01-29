@@ -350,9 +350,12 @@ rule SUSP_Putty_Unnormal_Size {
 
       $v1 = "Release 0.6" wide
       $v2 = "Release 0.70" wide
+
+      $fp1 = "KiTTY fork" fullword wide
    condition:
       uint16(0) == 0x5a4d
       and $s1 and 1 of ($v*)
+      and not 1 of ($fp*)
       // has offset
       and filesize != 524288
       and filesize != 495616
