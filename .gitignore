@@ -8,3 +8,4 @@ yara/gen_winrarsfx_uncom_vendors.yar
 threatintel/get-blueliv-iocs.py
 3rdparty
 build
+main.log
