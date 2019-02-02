@@ -13,9 +13,8 @@ rule MAL_DNSPIONAGE_Malware_Nov18 {
 
       $s1 = "/Client/Login?id=" fullword ascii
       $s2 = ".\\Configure.txt" fullword ascii
-      $s3 = "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" ascii
       $s5 = "Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko" fullword ascii
       $s6 = "Content-Disposition: form-data; name=\"txts\"" fullword ascii
    condition:
-      uint16(0) == 0x5a4d and filesize < 1000KB and ( 1 of ($x*) or 3 of them )
+      uint16(0) == 0x5a4d and filesize < 1000KB and ( 1 of ($x*) or 2 of them )
 }
