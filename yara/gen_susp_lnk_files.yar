@@ -21,6 +21,7 @@ rule SUSP_LNK_SuspiciousCommands {
       description = "Detects LNK file with suspicious content"
       author = "Florian Roth"
       date = "2018-09-18"
+      score = 60
    strings:
       $s1 = " -decode " ascii wide
       $s2 = " -enc " ascii wide
@@ -35,6 +36,10 @@ rule SUSP_LNK_SuspiciousCommands {
       $s11 = "iex(" ascii wide
       $s12 = "WScript.shell" ascii wide fullword nocase
       $s13 = " -nop " ascii wide
+      $s14 = "&tasklist>"
+      $s15 = "setlocal EnableExtensions DisableDelayedExpansion"
+      $s16 = "echo^ set^"
+      $s17 = "del /f /q "
    condition:
       uint16(0) == 0x004c and 1 of them
 }
