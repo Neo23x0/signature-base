@@ -2563,7 +2563,7 @@ ystem32\\DumpExt\.dll;75
 \\powerkatz\.dll;50
 \\printer2\.exe;50
 \\printer3\.exe;50
-\\proc\.exe;50
+\\proc\.exe;50;(OraCli\\BIN\\proc\.exe|\\[Oo]racle\\)
 \\Program\.exe;50
 \\PROGRAMM\.exe;50
 \\ProNewXx\.exe;50
