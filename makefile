@@ -18,7 +18,9 @@ cleanbuild:
 	rm -rf $(BUILD_DIR)
 
 extractinfo:
-	python3 $(MJOLNIR_DIR)/mjolnir.py -d ./yara --metaexport -o sig-base-rules.csv
+	python3 $(MJOLNIR_DIR)/mjolnir.py -d ./yara --metaexport -o sig-base-rules.temp
+	cat sig-base-rules.temp | sort > sig-base-rules.csv
+	rm -f sig-base-rules.temp
 
 prereq:
 	mkdir -p $(3RD_PARTY)/src
