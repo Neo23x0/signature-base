@@ -1,9 +1,9 @@
-rule gen_macro_StarOffice_suspicious
-{
+rule SUSP_Macro_StarOffice {
    meta:
         description = "Suspicious macro in StarOffice"
         author = "John Lambert @JohnLaTwC"
         date = "2019-02-06"
+        score = 60
         reference = "https://twitter.com/JohnLaTwC/status/1093259873993732096"
         hash1 = "8495d37825dab8744f7d2c8049fc6b70b1777b9184f0abe69ce314795480ce39"
         hash2 = "25b4214da1189fd30d3de7c538aa8b606f22c79e50444e5733fb1c6d23d71fbe"
