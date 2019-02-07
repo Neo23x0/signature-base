@@ -3085,4 +3085,7 @@ ystem32\\uploadmgr\.dat;80
 \\\.oracleServices\\svshost_serv\.doc;100
 \\\.oracleServices\\svshost_serv\.exe;100
 
+# NTDS.DIT in uncommon location https://blog.stealthbits.com/extracting-password-hashes-from-the-ntds-dit-file/
+[^s]\\ntds.dit;60
+
 # End
