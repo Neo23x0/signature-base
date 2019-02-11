@@ -591,7 +591,7 @@ CoinMiner_Strings;Detects mining pool protocol string in Executable;https://mine
 CookieTools2;Chinese Hacktool Set - file CookieTools2.exe;http://tools.zjqhr.com/;2015-06-13 00:00:00;70;Florian Roth;CHINA,EXE,FILE,HKTL
 CookieTools;Chinese Hacktool Set - file CookieTools.exe;http://tools.zjqhr.com/;2015-06-13 00:00:00;70;Florian Roth;CHINA,EXE,FILE,HKTL
 CoreImpact_sysdll_exe;Detects a malware sysdll.exe from the Rocket Kitten APT;-;2014-12-27 00:00:00;70;Florian Roth;APT,MIDDLE_EAST
-CorkowDLL;Rule to detect the Corkow DLL files;-;2016-02-07 00:00:00;70;Group IB;EXE,FILE
+CorkowDLL;Rule to detect the Corkow DLL files;-;2016-02-11 00:00:00;70;Group IB;EXE,FILE
 Crackmapexec_EXE;Detects CrackMapExec hack tool;Internal Research;2018-04-06 00:00:00;85;Florian Roth;EXE,FILE,HKTL
 CredentialStealer_Generic_Backdoor;Detects credential stealer byed on many strings that indicate password store access;Internal Research;2017-06-07 00:00:00;70;Florian Roth;EXE,FILE,GEN
 CrimsonRAT_Mar18_1;Detects CrimsonRAT malware;Internal Research;2018-03-06 00:00:00;70;Florian Roth;EXE,FILE,MAL
@@ -1143,7 +1143,7 @@ FeliksPack3___PHP_Shells_xIShell;Webshells Auto-generated - file xIShell.php;-;1
 FeliksPack3___Scanners_ipscan;Auto-generated rule on file ipscan.exe;-;1970-01-01 01:00:00;70;yarGen Yara Rule Generator by Florian Roth;HKTL
 Fidelis_Advisory_Purchase_Order_pps;Detects a string found in a malicious document named Purchase_Order.pps;http://goo.gl/ZjJyti;2015-06-09 00:00:00;70;Florian Roth;
 Fidelis_Advisory_cedt370;Detects a string found in memory of malware cedt370r(3).exe;http://goo.gl/ZjJyti;2015-06-09 00:00:00;70;Florian Roth;
-Fierce2;This signature detects the Fierce2 domain scanner;-;2014-07-07 00:00:00;60;Florian Roth;HKTL
+Fierce2;This signature detects the Fierce2 domain scanner;-;2014-07-11 00:00:00;60;Florian Roth;HKTL
 Fireball_archer;Detects Fireball malware - file archer.dll;https://goo.gl/4pTkGQ;2017-06-02 00:00:00;70;Florian Roth;EXE,FILE
 Fireball_de_svr;Detects Fireball malware - file de_svr.exe;https://goo.gl/4pTkGQ;2017-06-02 00:00:00;70;Florian Roth;EXE,FILE
 Fireball_gubed;Detects Fireball malware - file gubed.exe;https://goo.gl/4pTkGQ;2017-06-02 00:00:00;70;Florian Roth;EXE,FILE
@@ -1649,7 +1649,7 @@ Nautilus_forensic_artificats;Rule for detection of Nautilus related strings;http
 Nautilus_modified_rc4_loop;Rule for detection of Nautilus based on assembly code for a modified RC4 loop;https://www.ncsc.gov.uk/alerts/turla-group-malware;2017-11-23 00:00:00;70;NCSC UK;FILE
 Nautilus_rc4_key;Rule for detection of Nautilus based on a hardcoded RC4 key;https://www.ncsc.gov.uk/alerts/turla-group-malware;2017-11-23 00:00:00;70;NCSC UK;FILE
 Ncat_Hacktools_CN;Disclosed hacktool set - file nc.exe;-;2014-11-17 00:00:00;60;Florian Roth;HKTL
-Ncrack;This signature detects the Ncrack brute force tool;-;2014-07-07 00:00:00;60;Florian Roth;HKTL
+Ncrack;This signature detects the Ncrack brute force tool;-;2014-07-11 00:00:00;60;Florian Roth;HKTL
 NetBIOS_Name_Scanner;Auto-generated rule on file NetBIOS Name Scanner.exe;-;1970-01-01 01:00:00;70;yarGen Yara Rule Generator by Florian Roth;HKTL
 Netview_Hacktool;Network domain enumeration tool - often used by attackers - file Nv.exe;https://github.com/mubix/netview;2016-03-07 00:00:00;60;Florian Roth;EXE,FILE,HKTL
 Netview_Hacktool_Output;Network domain enumeration tool output - often used by attackers - file filename.txt;https://github.com/mubix/netview;2016-03-07 00:00:00;60;Florian Roth;HKTL
@@ -1849,48 +1849,48 @@ Quasar_RAT_2;Detects Quasar RAT;https://www.pwc.co.uk/cyber-security/pdf/cloud-h
 Quasar_RAT_Jan18_1;Detects Quasar RAT;https://researchcenter.paloaltonetworks.com/2018/01/unit42-vermin-quasar-rat-custom-malware-used-ukraine/;2018-01-29 00:00:00;70;Florian Roth;EXE,FILE,MAL
 Query_Javascript_Decode_Function;Detects malware mentioned in TA18-074A;-;1970-01-01 01:00:00;70;other;
 Query_XML_Code_MAL_DOC_PT_2;Detects malware mentioned in TA18-074A;-;1970-01-01 01:00:00;70;other;FILE
-RAT_AAR;Detects AAR RAT;http://malwareconfig.com/stats/AAR;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_Adzok;Detects Adzok RAT;http://malwareconfig.com/stats/Adzok;2015-05-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_Ap0calypse;Detects Ap0calypse RAT;http://malwareconfig.com/stats/Ap0calypse;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_Arcom;Detects Arcom RAT;http://malwareconfig.com/stats/Arcom;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_Bandook;Detects Bandook RAT;http://malwareconfig.com/stats/bandook;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_BlackNix;Detects BlackNix RAT;http://malwareconfig.com/stats/BlackNix;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_BlackShades;Detects BlackShades RAT;http://blog.cylance.com/a-study-in-bots-blackshades-net;2014-04-07 00:00:00;70;Brian Wallace (@botnet_hunter);MAL
-RAT_BlueBanana;Detects BlueBanana RAT;http://malwareconfig.com/stats/BlueBanana;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_Bozok;Detects Bozok RAT;http://malwareconfig.com/stats/Bozok;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_ClientMesh;Detects ClientMesh RAT;http://malwareconfig.com/stats/ClientMesh;2014-06-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net> (slightly modified by Florian Roth to improve performance);MAL
-RAT_CyberGate;Detects CyberGate RAT;http://malwareconfig.com/stats/CyberGate;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_DarkComet;Detects DarkComet RAT;http://malwareconfig.com/stats/DarkComet;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_DarkRAT;Detects DarkRAT;http://malwareconfig.com/stats/DarkRAT;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_Greame;Detects Greame RAT;http://malwareconfig.com/stats/Greame;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_HawkEye;Detects HawkEye RAT;http://malwareconfig.com/stats/HawkEye;2015-06-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_Imminent;Detects Imminent RAT;http://malwareconfig.com/stats/Imminent;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_Infinity;Detects Infinity RAT;http://malwareconfig.com/stats/Infinity;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_JavaDropper;Detects JavaDropper RAT;http://malwareconfig.com/stats/JavaDropper;2015-10-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net> (slightly modified by Florian Roth to improve performance);MAL
-RAT_LostDoor;Detects LostDoor RAT;http://malwareconfig.com/stats/LostDoor;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_LuminosityLink;Detects LuminosityLink RAT;http://malwareconfig.com/stats/LuminosityLink;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_LuxNet;Detects LuxNet RAT;http://malwareconfig.com/stats/LuxNet;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_NetWire;Detects NetWire RAT;http://malwareconfig.com/stats/NetWire;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net> & David Cannings;MAL
-RAT_Pandora;Detects Pandora RAT;http://malwareconfig.com/stats/Pandora;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_Paradox;Detects Paradox RAT;http://malwareconfig.com/stats/Paradox;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_Plasma;Detects Plasma RAT;http://malwareconfig.com/stats/Plasma;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_PoisonIvy;Detects PoisonIvy RAT;http://malwareconfig.com/stats/PoisonIvy;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_PredatorPain;Detects PredatorPain RAT;http://malwareconfig.com/stats/PredatorPain;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_Punisher;Detects Punisher RAT;http://malwareconfig.com/stats/Punisher;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_PythoRAT;Detects Python RAT;http://malwareconfig.com/stats/PythoRAT;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL,SCRIPT
-RAT_QRat;Detects QRAT;http://malwareconfig.com;2015-08-07 00:00:00;70;Kevin Breen @KevTheHermit;MAL
+RAT_AAR;Detects AAR RAT;http://malwareconfig.com/stats/AAR;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_Adzok;Detects Adzok RAT;http://malwareconfig.com/stats/Adzok;2015-05-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_Ap0calypse;Detects Ap0calypse RAT;http://malwareconfig.com/stats/Ap0calypse;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_Arcom;Detects Arcom RAT;http://malwareconfig.com/stats/Arcom;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_Bandook;Detects Bandook RAT;http://malwareconfig.com/stats/bandook;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_BlackNix;Detects BlackNix RAT;http://malwareconfig.com/stats/BlackNix;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_BlackShades;Detects BlackShades RAT;http://blog.cylance.com/a-study-in-bots-blackshades-net;2014-04-11 00:00:00;70;Brian Wallace (@botnet_hunter);MAL
+RAT_BlueBanana;Detects BlueBanana RAT;http://malwareconfig.com/stats/BlueBanana;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_Bozok;Detects Bozok RAT;http://malwareconfig.com/stats/Bozok;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_ClientMesh;Detects ClientMesh RAT;http://malwareconfig.com/stats/ClientMesh;2014-06-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net> (slightly modified by Florian Roth to improve performance);MAL
+RAT_CyberGate;Detects CyberGate RAT;http://malwareconfig.com/stats/CyberGate;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_DarkComet;Detects DarkComet RAT;http://malwareconfig.com/stats/DarkComet;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_DarkRAT;Detects DarkRAT;http://malwareconfig.com/stats/DarkRAT;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_Greame;Detects Greame RAT;http://malwareconfig.com/stats/Greame;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_HawkEye;Detects HawkEye RAT;http://malwareconfig.com/stats/HawkEye;2015-06-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_Imminent;Detects Imminent RAT;http://malwareconfig.com/stats/Imminent;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_Infinity;Detects Infinity RAT;http://malwareconfig.com/stats/Infinity;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_JavaDropper;Detects JavaDropper RAT;http://malwareconfig.com/stats/JavaDropper;2015-10-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net> (slightly modified by Florian Roth to improve performance);MAL
+RAT_LostDoor;Detects LostDoor RAT;http://malwareconfig.com/stats/LostDoor;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_LuminosityLink;Detects LuminosityLink RAT;http://malwareconfig.com/stats/LuminosityLink;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_LuxNet;Detects LuxNet RAT;http://malwareconfig.com/stats/LuxNet;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_NetWire;Detects NetWire RAT;http://malwareconfig.com/stats/NetWire;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net> & David Cannings;MAL
+RAT_Pandora;Detects Pandora RAT;http://malwareconfig.com/stats/Pandora;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_Paradox;Detects Paradox RAT;http://malwareconfig.com/stats/Paradox;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_Plasma;Detects Plasma RAT;http://malwareconfig.com/stats/Plasma;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_PoisonIvy;Detects PoisonIvy RAT;http://malwareconfig.com/stats/PoisonIvy;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_PredatorPain;Detects PredatorPain RAT;http://malwareconfig.com/stats/PredatorPain;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_Punisher;Detects Punisher RAT;http://malwareconfig.com/stats/Punisher;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_PythoRAT;Detects Python RAT;http://malwareconfig.com/stats/PythoRAT;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL,SCRIPT
+RAT_QRat;Detects QRAT;http://malwareconfig.com;2015-08-11 00:00:00;70;Kevin Breen @KevTheHermit;MAL
 RAT_Sakula;Detects Sakula v1.0 RAT;http://blog.airbuscybersecurity.com/public/YFR/sakula_v1x.yara;2015-10-13 00:00:00;70;Airbus Defence and Space Cybersecurity CSIRT - Yoann Francou / NCC Group David Cannings;EXE,FILE,MAL
-RAT_ShadowTech;Detects ShadowTech RAT;http://malwareconfig.com/stats/ShadowTech;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_SmallNet;Detects SmallNet RAT;http://malwareconfig.com/stats/SmallNet;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_SpyGate;Detects SpyGate RAT;http://malwareconfig.com/stats/SpyGate;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_Sub7Nation;Detects Sub7Nation RAT;http://malwareconfig.com/stats/Sub7Nation;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net> (slightly modified by Florian Roth to improve performance);MAL
-RAT_Vertex;Detects Vertex RAT;http://malwareconfig.com/stats/Vertex;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_VirusRat;Detects VirusRAT;http://malwareconfig.com/stats/VirusRat;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_Xtreme;Detects Xtreme RAT;http://malwareconfig.com/stats/Xtreme;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_adWind;Detects Adwind RAT;http://malwareconfig.com/stats/adWind;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_njRat;Detects njRAT;http://malwareconfig.com/stats/njRat;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_unrecom;Detects unrecom RAT;http://malwareconfig.com/stats/unrecom;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
-RAT_xRAT;Detects xRAT;http://malwareconfig.com/stats/xRat;2014-04-07 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_ShadowTech;Detects ShadowTech RAT;http://malwareconfig.com/stats/ShadowTech;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_SmallNet;Detects SmallNet RAT;http://malwareconfig.com/stats/SmallNet;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_SpyGate;Detects SpyGate RAT;http://malwareconfig.com/stats/SpyGate;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_Sub7Nation;Detects Sub7Nation RAT;http://malwareconfig.com/stats/Sub7Nation;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net> (slightly modified by Florian Roth to improve performance);MAL
+RAT_Vertex;Detects Vertex RAT;http://malwareconfig.com/stats/Vertex;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_VirusRat;Detects VirusRAT;http://malwareconfig.com/stats/VirusRat;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_Xtreme;Detects Xtreme RAT;http://malwareconfig.com/stats/Xtreme;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_adWind;Detects Adwind RAT;http://malwareconfig.com/stats/adWind;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_njRat;Detects njRAT;http://malwareconfig.com/stats/njRat;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_unrecom;Detects unrecom RAT;http://malwareconfig.com/stats/unrecom;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
+RAT_xRAT;Detects xRAT;http://malwareconfig.com/stats/xRat;2014-04-11 00:00:00;70;Kevin Breen <kevin@techanarchy.net>;MAL
 RDP_Brute_Strings;Detects RDP brute forcer from NCSC report;https://www.ncsc.gov.uk/alerts/hostile-state-actors-compromising-uk-organisations-focus-engineering-and-industrial-control;2018-04-06 00:00:00;70;NCSC;
 REDLEAVES_CoreImplant_UniqueStrings;Strings identifying the core REDLEAVES RAT in its deobfuscated state;https://www.us-cert.gov/ncas/alerts/TA17-117A;1970-01-01 01:00:00;70;USG;MAL,OBFUS
 REDLEAVES_DroppedFile_ImplantLoader_Starburn;Detect the DLL responsible for loading and deobfuscating the DAT file containing shellcode and core REDLEAVES RAT;https://www.us-cert.gov/ncas/alerts/TA17-117A;1970-01-01 01:00:00;70;USG;MAL
@@ -1957,7 +1957,7 @@ SLServer_mutex;Searches for the mutex.;-;2016-04-18 00:00:00;75;Matt Brooks, @cm
 SLServer_unknown_string;Searches for a unique string.;-;2016-04-18 00:00:00;75;Matt Brooks, @cmatthewbrooks;FILE
 SNOWGLOBE_Babar_Malware;Detects the Babar Malware used in the SNOWGLOBE attacks - file babar.exe;http://motherboard.vice.com/read/meet-babar-a-new-malware-almost-certainly-created-by-france;2015-02-18 00:00:00;80;Florian Roth;MAL
 SQLCracker;Chinese Hacktool Set - file SQLCracker.exe;http://tools.zjqhr.com/;2015-06-13 00:00:00;70;Florian Roth;CHINA,EXE,FILE,HKTL
-SQLMap;This signature detects the SQLMap SQL injection tool;-;2014-07-07 00:00:00;60;Florian Roth;HKTL
+SQLMap;This signature detects the SQLMap SQL injection tool;-;2014-07-11 00:00:00;60;Florian Roth;HKTL
 SQLTools;Chinese Hacktool Set - file SQLTools.exe;http://tools.zjqhr.com/;2015-06-13 00:00:00;70;Florian Roth;CHINA,EXE,FILE,HKTL
 STNC_php_php;Semi-Auto-generated  - file STNC.php.php.txt;-;1970-01-01 01:00:00;70;Neo23x0 Yara BRG + customization by Stefan -dfate- Molls;WEBSHELL
 SUSP_Bad_PDF;Detects PDF that embeds code to steal NTLM hashes;Internal Research;2018-05-03 00:00:00;70;Florian Roth, Markus Neis;FILE
@@ -1973,6 +1973,7 @@ SUSP_LNK_File_AppData_Roaming;Detects a suspicious link file that references to 
 SUSP_LNK_File_PathTraversal;Detects a suspicious link file that references a file multiple folders lower than the link itself;https://www.fireeye.com/blog/threat-research/2018/05/deep-dive-into-rig-exploit-kit-delivering-grobios-trojan.html;2018-05-16 00:00:00;40;Florian Roth;FILE
 SUSP_LNK_SuspiciousCommands;Detects LNK file with suspicious content;-;2018-09-18 00:00:00;60;Florian Roth;FILE
 SUSP_LNK_lnkfileoverRFC;detect APT lnk files that run double extraction and launch routines with autoruns;-;2018-09-18 00:00:00;70;@Grotezinfosec, modified by Florian Roth;APT,FILE
+SUSP_Macro_StarOffice;Suspicious macro in StarOffice;https://twitter.com/JohnLaTwC/status/1093259873993732096;2019-02-06 00:00:00;60;John Lambert @JohnLaTwC;FILE,OFFICE
 SUSP_Microsoft_7z_SFX_Combo;Detects a suspicious file that has a Microsoft copyright and is a 7z SFX;Internal Research;2018-09-16 00:00:00;70;Florian Roth;EXE,FILE
 SUSP_Microsoft_Copyright_String_Anomaly_2;Detects Floxif Malware;Internal Research;2018-05-11 00:00:00;60;Florian Roth;EXE,FILE,MAL
 SUSP_Microsoft_RAR_SFX_Combo;Detects a suspicious file that has a Microsoft copyright and is a RAR SFX;Internal Research;2018-09-16 00:00:00;70;Florian Roth;EXE,FILE
@@ -1993,6 +1994,7 @@ SUSP_Script_Obfuscation_Char_Concat;Detects strings found in sample from CN grou
 SUSP_Size_of_ASUS_TuningTool;Detects an ASUS tuning tool with a suspicious size;https://www.welivesecurity.com/2018/10/17/greyenergy-updated-arsenal-dangerous-threat-actors/;2018-10-17 00:00:00;60;Florian Roth;EXE,FILE
 SUSP_Win32dll_String;Detects suspicious string in executables;https://medium.com/@Sebdraven/apt-sidewinder-changes-theirs-ttps-to-install-their-backdoor-f92604a2739;2018-10-24 00:00:00;70;Florian Roth;
 SUSP_XMRIG_String;Detects a suspicious XMRIG crypto miner executable string in filr;Internal Research;2018-12-28 00:00:00;70;Florian Roth;EXE,FILE
+SUSP_autocad_lsp_malware;Recognizes malicious autocad files written in LISP;-;2019-02-04 00:00:00;70;John Lambert @JohnLaTwC;FILE,MAL
 SUSP_certificate_payload;Detects payloads that pretend to be certificates;https://blog.nviso.be/2018/08/02/powershell-inside-a-certificate-part-3/;2018-08-02 00:00:00;50;Didier Stevens, Florian Roth;FILE
 SUSP_shellpop_Bash;Detects susupicious bash command;https://github.com/0x00-0x00/ShellPop;2018-05-18 00:00:00;70;Tobias Michalski;HKTL
 SVG_LoadURL;Detects a tiny SVG file that loads an URL (as seen in CryptoWall malware infections);http://goo.gl/psjCCc;2015-05-24 00:00:00;50;Florian Roth;
