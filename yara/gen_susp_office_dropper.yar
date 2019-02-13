@@ -15,17 +15,24 @@ rule SUSP_Office_Dropper_Strings {
       uint16(0) == 0xcfd0 and filesize < 500KB and $a1 and 1 of ($s*)
 }
 
-rule SUSP_EnableContent_String {
+rule SUSP_EnableContent_String_Gen {
    meta:
-      description = "Detects strings in macro enabled malicious documents"
+      description = "Detects suspicious string that asks to enable active content in Office Doc"
       author = "Florian Roth"
       reference = "Internal Research"
-      date = "2018-11-19"
-      score = 60
-      hash1 = "65bd49d9f6d9b92478e3653362c0031919607302db6cfb3a7c1994d20be18bcc"
+      date = "2019-02-12"
+      hash1 = "525ba2c8d35f6972ac8fcec8081ae35f6fe8119500be20a4113900fe57d6a0de"
    strings:
-      $s1 = "Enable Content" fullword ascii
-      $s2 = "Enable Editing" fullword ascii
+      $e1 = "Enable Editing" fullword ascii
+      $e2 = "Enable Content" fullword ascii
+      $e3 = "Enable editing" fullword ascii
+      $e4 = "Enable content" fullword ascii
    condition:
-      uint16(0) == 0xcfd0 and filesize < 5000KB and 2 of them
+      uint16(0) == 0xcfd0 and (
+            $e1 in (0..3000) or
+            $e2 in (0..3000) or
+            $e3 in (0..3000) or
+            $e4 in (0..3000) or
+            2 of them
+      )
 }
