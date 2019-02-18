@@ -3091,4 +3091,10 @@ ystem32\\uploadmgr\.dat;80
 # MAL HWP Incident Feb 19 https://sfkino.tistory.com/73
 \\Local\\Temp\\HimTray\.dll;75
 
+# AUS Parliament incident https://twitter.com/cyb3rops/status/1097423665472376832
+\\LuckyCat\.dll;80
+\\LuckyCat\.exe;80
+\\AppData\\Local\\Microsoft\\mm\.accdb;80
+\\AppData\\Roaming\\Microsoft\\mm\.accdb;80
+
 # End
