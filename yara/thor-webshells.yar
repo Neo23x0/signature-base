@@ -8505,7 +8505,7 @@ condition:
 rule JSP_Browser_APT_webshell {
 	meta:
 		description = "VonLoesch JSP Browser used as web shell by APT groups - jsp File browser 1.1a"
-		author = "F.Roth"
+		author = "Florian Roth"
 		date = "10.10.2014"
 		score = 60
 	strings:
@@ -8520,7 +8520,7 @@ rule JSP_Browser_APT_webshell {
 rule JSP_jfigueiredo_APT_webshell {
 	meta:
 		description = "JSP Browser used as web shell by APT groups - author: jfigueiredo"
-		author = "F.Roth"
+		author = "Florian Roth"
 		date = "12.10.2014"
 		score = 60
 		reference = "http://ceso.googlecode.com/svn/web/bko/filemanager/Browser.jsp"
@@ -8534,7 +8534,7 @@ rule JSP_jfigueiredo_APT_webshell {
 rule JSP_jfigueiredo_APT_webshell_2 {
 	meta:
 		description = "JSP Browser used as web shell by APT groups - author: jfigueiredo"
-		author = "F.Roth"
+		author = "Florian Roth"
 		date = "12.10.2014"
 		score = 60
 		reference = "http://ceso.googlecode.com/svn/web/bko/filemanager/"
