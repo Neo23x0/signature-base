@@ -166,7 +166,7 @@ rule Suspicious_Size_svchost_exe {
     condition:
         uint16(0) == 0x5a4d
         and filename == "svchost.exe"
-        and ( filesize < 14KB or filesize > 75KB )
+        and ( filesize < 14KB or filesize > 100KB )
 }
 
 rule Suspicious_Size_winlogon_exe {
