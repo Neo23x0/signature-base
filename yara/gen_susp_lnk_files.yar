@@ -40,6 +40,10 @@ rule SUSP_LNK_SuspiciousCommands {
       $s15 = "setlocal EnableExtensions DisableDelayedExpansion"
       $s16 = "echo^ set^"
       $s17 = "del /f /q "
+      $s18 = " echo | start "
+      $s19 = "&& echo "
+      $s20 = "&&set "
+      $s21 = "%&&@echo off "
    condition:
       uint16(0) == 0x004c and 1 of them
 }
