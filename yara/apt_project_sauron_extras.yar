@@ -18,10 +18,22 @@ rule APT_Project_Sauron_Scripts {
 		$x10 = "cat VirtualEncryptedNetwork.ini|grep"
 		$x11 = "if string.lower(k) == \"securityproviders\" then"
 		$x12 = "exec2str(\"plist b | grep netsvcs\")"
-		$x13 = ".*account.*|.*acct.*|.*domain.*|.*login.*|.*member.*"
 		$x14 = "SAURON_KBLOG_KEY ="
 	condition:
 		1 of them
+}
+
+rule HKTL_Dsniff {
+   meta:
+      description = "Detects Dsniff hack tool"
+      author = "Florian Roth"
+      score = 55
+      reference = "https://goo.gl/eFoP4A"
+      date = "2019-02-19"
+   strings:
+      $x1 = ".*account.*|.*acct.*|.*domain.*|.*login.*|.*member.*"
+   condition:
+      1 of them
 }
 
 rule APT_Project_Sauron_arping_module {

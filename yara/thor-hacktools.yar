@@ -42,7 +42,6 @@ rule Amplia_Security_Tool
       nodeepdive = 1
     strings:
       $a = "Amplia Security"
-      $b = "Hernan Ochoa"
       $c = "getlsasrvaddr.exe"
       $d = "Cannot get PID of LSASS.EXE"
       $e = "extract the TGT session key"
