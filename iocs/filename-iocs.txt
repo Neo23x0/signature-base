@@ -3086,7 +3086,7 @@ ystem32\\uploadmgr\.dat;80
 \\\.oracleServices\\svshost_serv\.exe;100
 
 # NTDS.DIT in uncommon location https://blog.stealthbits.com/extracting-password-hashes-from-the-ntds-dit-file/
-[^s]\\ntds.dit;60
+[^s2]\\ntds.dit;60
 
 # MAL HWP Incident Feb 19 https://sfkino.tistory.com/73
 \\Local\\Temp\\HimTray\.dll;75
