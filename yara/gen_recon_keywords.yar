@@ -42,6 +42,7 @@ rule Recon_Commands_Windows_Gen1 {
 
       $fp1 = "avdapp.dll" fullword wide
       $fp2 = "keyword.command.batchfile" ascii
+      $fp3 = ".sublime-settings" ascii
    condition:
       filesize < 1000KB and 4 of them
       and not 1 of ($fp*)
