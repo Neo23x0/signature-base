@@ -8854,3 +8854,64 @@ de10502ac251a7118da4a23e15d38ffe925ed573c5b19b9d4d81169c5b691697;ASCS AUS parlia
 1087a214ebe61ded9f61de81999868f399a1105188467e4e44182c02ee264a19;ASCS AUS parliament incident https://twitter.com/cyb3rops/status/1097423665472376832
 fdf15f388a511a63fbad223e6edb259abdd4009ec81fcc87ce84f0f2024c8057;ASCS AUS parliament incident https://twitter.com/cyb3rops/status/1097423665472376832
 a0cd92a272e9d4107bb15afa32fa3aec2dc06cbe558e645c8a8fe3dc860244ce;ASCS AUS parliament incident https://twitter.com/cyb3rops/status/1097423665472376832
+
+b7f958f93e2f297e717cffc2fe43f2e9;Bronze Union IOC - MD5 hash - ZxShell installer
+fa53f09cd22b46b554762dc1a12c99dd692ec681;Bronze Union IOC - SHA1 hash - ZxShell installer
+ef049339f1eb091cda335b51939f91e784e1ab1e006056d5a6bb526743b6cbc7;Bronze Union IOC - SHA256 hash - ZxShell installer
+62bcbfae5276064615d0d45b895fdff2;Bronze Union IOC - MD5 hash - ZxShell service DLL (AudioSdk.dll)
+9020e5010a916c6187597e9932402ed29098371c;Bronze Union IOC - SHA1 hash - ZxShell service DLL (AudioSdk.dll)
+c2229a463637433451a3a50ccf3c888da8202058f5022ffd2b00fc411b395b79;Bronze Union IOC - SHA256 hash - ZxShell service DLL (AudioSdk.dll)
+ae9c39e0d9a0c0ae48a72cb10521d2f3;Bronze Union IOC - MD5 hash - Malicious driver associated with ZxShell (autochk.sys)
+2e80926d67ea68acb1df441be5ee1f2d86e7f92b;Bronze Union IOC - SHA1 hash - Malicious driver associated with ZxShell (autochk.sys)
+b28c024db80cf3e7d5b24ccc9342014de19be990efe154ba9a7d17d9e158eecb;Bronze Union IOC - SHA256 hash - Malicious driver associated with ZxShell (autochk.sys)
+40cdd3cfe86c93872b163fb3550f47f6;Bronze Union IOC - MD5 hash - Gh0st RAT installer (T.exe)
+ad2b27ea2fde31b1cc5104c01a21b22fef507c3d;Bronze Union IOC - SHA1 hash - Gh0st RAT installer (T.exe)
+9a1437edd0493ff615a77b9ee1717c5f49ab0b28d1778898f591fb803655fbc6;Bronze Union IOC - SHA256 hash - Gh0st RAT installer (T.exe)
+9c42cd7efbdfc47303d051f056c52d29;Bronze Union IOC - MD5 hash - Gh0st RAT binary (install.dll, FastUserSwitchingCompatibilitysex.dll)
+b8aa43dc92bec864c94442e6bf8c629c3bd0fe92;Bronze Union IOC - SHA1 hash - Gh0st RAT binary (install.dll, FastUserSwitchingCompatibilitysex.dll)
+0b1217bd95678ca4e6f81952226a0cfd639ce4b2f7e7fce94ab177d42c5abf62;Bronze Union IOC - SHA256 hash - Gh0st RAT binary (install.dll, FastUserSwitchingCompatibilitysex.dll)
+06348bbe0cc839f23c2d9471cfb19de3;Bronze Union IOC - MD5 hash - Gh0st RAT installer (Update.exe)
+cd7c92ac0b36a8befa1b151537fc3fcdafca8606;Bronze Union IOC - SHA1 hash - Gh0st RAT installer (Update.exe)
+b43ccd5b23d348f72466612d597ad71246113a9d524c9b27e682d1f7300a0672;Bronze Union IOC - SHA256 hash - Gh0st RAT installer (Update.exe)
+c8d83840b96f5a186e7bb6320e998f72;Bronze Union IOC - MD5 hash - SysUpdate installer (self-extracting RAR file) associated with BRONZE UNION
+42e3fbff6f5576a3f4e8f941ea3dc00462d7838c;Bronze Union IOC - SHA1 hash - SysUpdate installer (self-extracting RAR file) associated with BRONZE UNION
+938f32822c1a6b1140ac0af60a06ae39011464de37c511921d8a7d9c6a69c9df;Bronze Union IOC - SHA256 hash - SysUpdate installer (self-extracting RAR file) associated with BRONZE UNION
+ef41da16fdedcc450d0cc6ca708a9222;Bronze Union IOC - MD5 hash - SysUpdate installer (self-extracting RAR file) associated with BRONZE UNION
+714215d63b2f2d8f2caf94902af2f25452c21264;Bronze Union IOC - SHA1 hash - SysUpdate installer (self-extracting RAR file) associated with BRONZE UNION
+0777fa4832ecf164029e23d0125b4fdc87e2f46ffc4e1badd6a45cf5be721660;Bronze Union IOC - SHA256 hash - SysUpdate installer (self-extracting RAR file) associated with BRONZE UNION
+c25e8e4a2d5314ea55afd09845b3e886;Bronze Union IOC - MD5 hash - SysUpdate installer (self-extracting RAR file) associated with BRONZE UNION
+e8cf3522b68a51b2aabcfc6f98b39da15a23da1d;Bronze Union IOC - SHA1 hash - SysUpdate installer (self-extracting RAR file) associated with BRONZE UNION
+76bc063f8f348a202f92faac0c36f1a0a122f9b3568342abcd97651be7adec08;Bronze Union IOC - SHA256 hash - SysUpdate installer (self-extracting RAR file) associated with BRONZE UNION
+88a27758f3066dd4da18983a005ddc20;Bronze Union IOC - MD5 hash - SysUpdate installer (self-extracting RAR file) associated with BRONZE UNION
+1f9c979cbab9ff2519aa3bf3006a752177f4d8c6;Bronze Union IOC - SHA1 hash - SysUpdate installer (self-extracting RAR file) associated with BRONZE UNION
+24a7e226f14fb86275b423d63d0332bfb95e261532f0667517c01da9d2bc51b3;Bronze Union IOC - SHA256 hash - SysUpdate installer (self-extracting RAR file) associated with BRONZE UNION
+17acc1d983dde32b5bcde9c9624848b0;Bronze Union IOC - MD5 hash - SysUpdate installer (self-extracting RAR file) associated with BRONZE UNION
+a03b14cac23dcfa2b2e12d5a8e53959d5a2e8fa2;Bronze Union IOC - SHA1 hash - SysUpdate installer (self-extracting RAR file) associated with BRONZE UNION
+3f69c0e7392bc6441a308281b07627797613d89666a5c9b22cb104edf359c46b;Bronze Union IOC - SHA256 hash - SysUpdate installer (self-extracting RAR file) associated with BRONZE UNION
+a13772805b772f374f7d709999a816d5;Bronze Union IOC - MD5 hash - Malicious SysUpdate DLL (Wsock32.dll) associated with BRONZE UNION
+fa9600f1d15e61d5f2bdb8ac0399b7f42da63a01;Bronze Union IOC - SHA1 hash - Malicious SysUpdate DLL (Wsock32.dll) associated with BRONZE UNION
+d40903560072bb777290d75d7e31a927f05924bffe00d26713c6b39e8e68ae82;Bronze Union IOC - SHA256 hash - Malicious SysUpdate DLL (Wsock32.dll) associated with BRONZE UNION
+78142cdad08524475f710e5702827a66;Bronze Union IOC - MD5 hash - Encrypted SysUpdate payload (sys.bin.url) associated with BRONZE UNION
+bc20da9465a7a7f9c2d5666ea5370c6c1e988441;Bronze Union IOC - SHA1 hash - Encrypted SysUpdate payload (sys.bin.url) associated with BRONZE UNION
+3cebc9161e3e964a2e7651566c5a710d0625192ddecd14cfc5a873e7bc6db96f;Bronze Union IOC - SHA256 hash - Encrypted SysUpdate payload (sys.bin.url) associated with BRONZE UNION
+0955e01bc26455965b682247ecb86add;Bronze Union IOC - MD5 hash - Malicious SysUpdate DLL (pdh.dll) associated with BRONZE UNION
+23533c452b12131253e4e21f00ae082eba7cfdb3;Bronze Union IOC - SHA1 hash - Malicious SysUpdate DLL (pdh.dll) associated with BRONZE UNION
+9d9c9c17ae4100b817a311ea0c6402e9f3eedc94741423796df3ead1375aaebf;Bronze Union IOC - SHA256 hash - Malicious SysUpdate DLL (pdh.dll) associated with BRONZE UNION
+d4bb5c6364c4b4a07e6bbf2177129655;Bronze Union IOC - MD5 hash - Encrypted SysUpdate payload (sys.bin.url) associated with BRONZE UNION
+0689e40696a0cbecc5c3391e8b8b40d27a033186;Bronze Union IOC - SHA1 hash - Encrypted SysUpdate payload (sys.bin.url) associated with BRONZE UNION
+dcfc9e4077705385328133557629fffee11662b7843b34dd4e1e42404ac2e921;Bronze Union IOC - SHA256 hash - Encrypted SysUpdate payload (sys.bin.url) associated with BRONZE UNION
+cbb84d382724dd8adc5725dfca9b4af1;Bronze Union IOC - MD5 hash - Malicious SysUpdate DLL (pdh.dll) associated with BRONZE UNION
+88de66897c448229b52c2ac991ba63e14fc3276b;Bronze Union IOC - SHA1 hash - Malicious SysUpdate DLL (pdh.dll) associated with BRONZE UNION
+01926af0ff76607b3859734dda4b97fc55a8b8c2582982af786977929a414092;Bronze Union IOC - SHA256 hash - Malicious SysUpdate DLL (pdh.dll) associated with BRONZE UNION
+8cb11e271aba3354545a77751c1e783e;Bronze Union IOC - MD5 hash - Malicious SysUpdate DLL (pdh.dll) associated with BRONZE UNION
+e49833f2a4ec0422410a1c28ef58c9fc33c3a13f;Bronze Union IOC - SHA1 hash - Malicious SysUpdate DLL (pdh.dll) associated with BRONZE UNION
+7f16b19f22ab0a33f9bf284aa0c2a9b9a429c4f4b7b801f2d2d80440eb74437f;Bronze Union IOC - SHA256 hash - Malicious SysUpdate DLL (pdh.dll) associated with BRONZE UNION
+53d0db22c5abaf904d85facb70a60c8e;Bronze Union IOC - MD5 hash - Malicious SysUpdate DLL (pdh.dll) associated with BRONZE UNION
+d363606e6159a786b06891227efac2164eeda7b3;Bronze Union IOC - SHA1 hash - Malicious SysUpdate DLL (pdh.dll) associated with BRONZE UNION
+a941d46d6352fb2d70bba1423c4890dd5516e45d81f826900272ed14d0b678f4;Bronze Union IOC - SHA256 hash - Malicious SysUpdate DLL (pdh.dll) associated with BRONZE UNION
+9814cdc7033a97fcf4f31aa377be60ba;Bronze Union IOC - MD5 hash - Malicious SysUpdate ActiveX control (LDVPOCX.OCX) associated with BRONZE UNION
+2d568eb8ef17529e8bb6e658a032690e0f527d24;Bronze Union IOC - SHA1 hash - Malicious SysUpdate ActiveX control (LDVPOCX.OCX) associated with BRONZE UNION
+9c1c798ba8b7f6f2334dcfcb8066be05d49c2e1395f7e7c8332e42afa708f5ae;Bronze Union IOC - SHA256 hash - Malicious SysUpdate ActiveX control (LDVPOCX.OCX) associated with BRONZE UNION
+8b8e44bd5e4a9f7d58714ba9ca72351c;Bronze Union IOC - MD5 hash - Word document downloader (Final.docx) used by BRONZE UNION, associated with SysUpdate
+02704ef94519eee0a57073b1e530ffea73df2a1f;Bronze Union IOC - SHA1 hash - Word document downloader (Final.docx) used by BRONZE UNION, associated with SysUpdate
+86de90119b572620fd6a690b903c721679359cdc81f3d3327677e13539d5f626;Bronze Union IOC - SHA256 hash - Word document downloader (Final.docx) used by BRONZE UNION, associated with SysUpdate
