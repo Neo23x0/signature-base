@@ -220,7 +220,6 @@ rule Msfpayloads_msf_cmd {
 rule Msfpayloads_msf_9 {
    meta:
       description = "Metasploit Payloads - file msf.war - contents"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-02-09"
@@ -231,9 +230,11 @@ rule Msfpayloads_msf_9 {
       $s3 = "[0] = \"chmod\";" ascii
       $s4 = "= Runtime.getRuntime().exec(" ascii
       $s5 = ", 16) & 0xff;" ascii
+
+      $x1 = "4d5a9000030000000" ascii
    condition:
       4 of ($s*) or (
-         uint32(0) == 0x00905a4d and uint32(4) == 0x00000003
+         uint32(0) == 0x61356434 and $x1 at 0
       )
 }
 
