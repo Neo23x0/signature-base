@@ -15,10 +15,9 @@ rule derusbi_kernel
     strings:
         $token1 = "$$$--Hello"
         $token2 = "Wrod--$$$"
-        $cfg = "XXXXXXXXXXXXXXX"
         $class = ".?AVPCC_BASEMOD@@"
     condition:
-        uint16(0) == 0x5A4D and $token1 and $token2 and $cfg and $class
+        uint16(0) == 0x5A4D and $token1 and $token2 and $class
 }
 
 rule derusbi_linux

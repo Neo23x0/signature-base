@@ -37,11 +37,11 @@ meta:
         $sc_1 = "config.xml"
         $sc_2 = "options"
         $sc_3 = "plugins"
-        $sc_4 = "util"
+        /* $sc_4 = "util" */
         $sc_5 = "util/OSHelper"
         $sc_6 = "Start.class"
         $sc_7 = "AlienSpy"
-        $sc_8 = "PK"
+        /* $sc_8 = "PK" */ /* too short atom - disabled for performance reasons */
 
   condition:
 

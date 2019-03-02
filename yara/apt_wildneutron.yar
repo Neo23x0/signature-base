@@ -213,7 +213,6 @@ rule WildNeutron_Sample_9 {
 		hash = "781eb1e17349009fbae46aea5c59d8e5b68ae0b42335cb035742f6b0f4e4087e"
 	strings:
 		$s0 = "http://get.adobe.com/flashplayer/" fullword wide /* PEStudio Blacklist: strings */ /* score: '30.00' */
-		$s1 = "xxxxxxxxxxxxxxxxxxxx" fullword wide /* reversed goodware string 'xxxxxxxxxxxxxxxxxxxx' */ /* score: '19.00' */
 		$s4 = " Player Installer/Uninstaller" fullword wide /* PEStudio Blacklist: strings */ /* score: '11.42' */
 		$s5 = "Adobe Flash Plugin Updater" fullword wide /* PEStudio Blacklist: strings */ /* score: '11.00' */
 		$s6 = "uSOFTWARE\\Adobe" fullword wide /* PEStudio Blacklist: strings */ /* score: '10.42' */

@@ -173,7 +173,6 @@ rule GIFCloaked_Webshell_A {
       hash = "f1c95b13a71ca3629a0bb79601fcacf57cdfcf768806a71b26f2448f8c1d5d24"
       score = 60
    strings:
-      $magic = { 47 49 46 38 } /* GIF8 ... */
       $s0 = "input type"
       $s1 = "<%eval request"
       $s2 = "<%eval(Request.Item["
@@ -184,7 +183,7 @@ rule GIFCloaked_Webshell_A {
 
       $fp1 = "<form name=\"social_form\""
    condition:
-      ( $magic at 0 ) and ( 1 of ($s*) )
+      uint32(0) == 0x38464947 and ( 1 of ($s*) )
       and not 1 of ($fp*)
 }
 

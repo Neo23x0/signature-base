@@ -26,7 +26,8 @@ rule Persistence_Agent_MacOS {
         $einterval_b = /(AHUAbgBBAHQATABvAGEAZA|dW5BdExvYW|IAdQBuAEEAdABMAG8AYQBkA|J1bkF0TG9hZ|UgB1AG4AQQB0AEwAbwBhAGQA|UnVuQXRMb2Fk)/ ascii
 
     condition:
-        $h1 at 0
+        uint32(0) == 0x752f2123
+        and $h1 at 0
         and filesize < 120KB
         and
         (

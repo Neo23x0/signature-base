@@ -6,7 +6,6 @@ rule Hermes2_1 {
       reference = "https://baesystemsai.blogspot.de/2017/10/taiwan-heist-lazarus-tools.html"
       hash = "b27881f59c8d8cc529fa80a58709db36"
    strings:
-      $magic = { 4D 5A }
       //in both version 2.1 and sample in Feb
       $s1 = "SYSTEM\\CurrentControlSet\\Control\\Nls\\Language\\"
       $s2 = "0419"
@@ -23,5 +22,5 @@ rule Hermes2_1 {
       $u2 = "HERMES 2.1 TEST BUILD, press ok"
       $u3 = "hnKwtMcOadHwnXutKHqPvpgfysFXfAFTcaDHNdCnktA" //RSA Key part
    condition:
-      $magic at 0 and all of ($s*) and 3 of ($S*) and 1 of ($u*)
+      uint16(0) == 0x5a4d and all of ($s*) and 3 of ($S*) and 1 of ($u*)
 }

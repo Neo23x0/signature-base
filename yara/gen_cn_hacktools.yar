@@ -337,7 +337,7 @@ rule OtherTools_servu {
 		$s2 = "GetProcAddress" fullword ascii
 		$s3 = "WriteFile" fullword ascii
 	condition:
-		$s0 at 0 and filesize < 50KB and all of them
+		uint32(0) == 0x454b5a4d and $s0 at 0 and filesize < 50KB and all of them
 }
 
 rule ustrrefadd {

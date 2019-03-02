@@ -365,7 +365,6 @@ rule MAL_BurningUmbrella_Sample_22 {
       hash1 = "fa116cf9410f1613003ca423ad6ca92657a61b8e9eda1b05caf4f30ca650aee5"
    strings:
       $s1 = "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\" fullword ascii
-      $s2 = "========================================================================================================" fullword ascii
       $s3 = "Content-Disposition: form-data; name=\"txt\"; filename=\"" fullword ascii
       $s4 = "Fail To Enum Service" fullword ascii
       $s5 = "Host Power ON Time" fullword ascii

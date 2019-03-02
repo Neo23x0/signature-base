@@ -35,7 +35,7 @@ rule Regin_APT_KernelDriver_Generic_A {
 		$x1 = "LRich6" fullword ascii
 		$x2 = "KeServiceDescriptorTable" fullword ascii
 	condition:
-		$m0 at 0 and $m1 and
+		uint16(0) == 0x5a4d and $m0 at 0 and $m1 and
 		all of ($s*) and 1 of ($x*)
 }
 
@@ -85,6 +85,7 @@ rule Regin_APT_KernelDriver_Generic_B {
 		$z4 = "wcslen" fullword ascii
 		$z5 = "atoi" fullword ascii
 	condition:
+		uint16(0) == 0x5a4d and
 		$m0 at 0 and all of ($s*) and
 		( all of ($v*) or all of ($w*) or all of ($x*) or all of ($y*) or all of ($z*) )
 		and filesize < 20KB
@@ -111,6 +112,7 @@ rule Regin_APT_KernelDriver_Generic_C {
 		$y1 = "LSA Shell" fullword wide
 		$y2 = "0Richw" fullword ascii
 	condition:
+		uint16(0) == 0x5a4d and
 		$m0 at 0 and all of ($s*) and
 		( all of ($x*) or all of ($y*) )
 		and filesize < 20KB
@@ -198,8 +200,6 @@ rule Regin_Sample_3 {
 		date = "27.11.14"
 		hash = "fe1419e9dde6d479bd7cda27edd39fafdab2668d498931931a2769b370727129"
 	strings:
-		$hd = { fe ba dc fe }
-
 		$s0 = "Service Pack x" fullword wide
 		$s1 = "\\REGISTRY\\MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion" fullword wide
 		$s2 = "\\REGISTRY\\Machine\\Software\\Microsoft\\Windows NT\\CurrentVersion\\HotFix" fullword wide
@@ -216,7 +216,7 @@ rule Regin_Sample_3 {
 		$s13 = "RtlGetVersion" fullword wide
 		$s14 = "ntkrnlpa.exe" fullword ascii
 	condition:
-		( $hd at 0 ) and all of ($s*) and filesize > 160KB and filesize < 200KB
+		uint32(0) == 0xfedcbafe and all of ($s*) and filesize > 160KB and filesize < 200KB
 }
 
 rule Regin_Sample_Set_1 {
@@ -249,7 +249,7 @@ rule Regin_Sample_Set_1 {
 		$s19 = "IoCreateDevice" fullword ascii
 		$s20 = "KefReleaseSpinLockFromDpcLevel" fullword ascii
 	condition:
-		all of them and filesize < 40KB and filesize > 30KB
+		filesize < 40KB and filesize > 30KB and all of them
 }
 
 rule Regin_Sample_Set_2 {

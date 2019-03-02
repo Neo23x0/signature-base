@@ -3,7 +3,7 @@
   Author: Florian Roth
   Date: 2016-05-23
   Identifier: Swiss RUAG APT Case
-  Reference: https://www.govcert.admin.ch/blog/22/technical-report-about-the-ruag-espionage-case 
+  Reference: https://www.govcert.admin.ch/blog/22/technical-report-about-the-ruag-espionage-case
 */
 
 rule RUAG_Tavdig_Malformed_Executable {
@@ -28,7 +28,7 @@ rule RUAG_Bot_Config_File {
     $s2 = "name = " ascii
     $s3 = "exe = cmd.exe" ascii
   condition:
-    $s1 at 0 and $s2 and $s3 and filesize < 160 
+    uint32(0) == 0x4e4f435b and $s1 at 0 and $s2 and $s3 and filesize < 160
 }
 
 rule RUAG_Cobra_Malware {
@@ -54,16 +54,16 @@ rule RUAG_Cobra_Config_File {
 
     $s1 = "object_id=" ascii
     $s2 = "[TIME]" ascii fullword
-    $s3 = "lastconnect" ascii 
+    $s3 = "lastconnect" ascii
     $s4 = "[CW_LOCAL]" ascii fullword
     $s5 = "system_pipe" ascii
     $s6 = "user_pipe" ascii
     $s7 = "[TRANSPORT]" ascii
     $s8 = "run_task_system" ascii
-    $s9 = "[WORKDATA]" ascii 
+    $s9 = "[WORKDATA]" ascii
     $s10 = "address1" ascii
   condition:
-    $h1 at 0 and 8 of ($s*) and filesize < 5KB
+    uint32(0) == 0x4d414e5b and $h1 at 0 and 8 of ($s*) and filesize < 5KB
 }
 
 rule RUAG_Exfil_Config_File {
@@ -77,9 +77,9 @@ rule RUAG_Exfil_Config_File {
 
     $s1 = "system_pipe" ascii
     $s2 = "spstatus" ascii
-    $s3 = "adaptable" ascii 
+    $s3 = "adaptable" ascii
     $s4 = "post_frag" ascii
     $s5 = "pfsgrowperiod" ascii
   condition:
-    $h1 at 0 and all of ($s*) and filesize < 1KB
+    uint32(0) == 0x4152545b and $h1 at 0 and all of ($s*) and filesize < 1KB
 }

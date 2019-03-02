@@ -33,23 +33,21 @@ rule Enfal_Malware_Backdoor {
 		hash2 = "6c7c8b804cc76e2c208c6e3b6453cb134d01fa41"
 		score = 60
 	strings:
-		$mz = { 4d 5a }
-			
 		$x1 = "Micorsoft Corportation" fullword wide
 		$x2 = "IM Monnitor Service" fullword wide
-		
+
 		$s1 = "imemonsvc.dll" fullword wide
 		$s2 = "iphlpsvc.tmp" fullword
-		
+
 		$z1 = "urlmon" fullword
-		$z2 = "Registered trademarks and service marks are the property of their respec" wide		
+		$z2 = "Registered trademarks and service marks are the property of their respec" wide
 		$z3 = "XpsUnregisterServer" fullword
 		$z4 = "XpsRegisterServer" fullword
 		$z5 = "{53A4988C-F91F-4054-9076-220AC5EC03F3}" fullword
 	condition:
-		( $mz at 0 ) and 
-		( 
-			1 of ($x*) or 
+		uint16(0) == 0x5a4d and
+		(
+			1 of ($x*) or
 			( all of ($s*) and all of ($z*) )
 		)
 }

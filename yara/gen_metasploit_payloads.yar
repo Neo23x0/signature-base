@@ -231,10 +231,10 @@ rule Msfpayloads_msf_9 {
       $s3 = "[0] = \"chmod\";" ascii
       $s4 = "= Runtime.getRuntime().exec(" ascii
       $s5 = ", 16) & 0xff;" ascii
-
-      $x1 = "4d5a9000030000000" ascii
    condition:
-      4 of ($s*) or $x1 at 0
+      4 of ($s*) or (
+         uint32(0) == 0x00905a4d and uint32(4) == 0x00000003
+      )
 }
 
 rule Msfpayloads_msf_10 {

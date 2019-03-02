@@ -12,12 +12,11 @@ rule VisualDiscovery_Lonovo_Superfish_SSL_Hijack {
 		hash3 = "f12edf2598d8f0732009c5cd1df5d2c559455a0b"
 		hash4 = "343af97d47582c8150d63cbced601113b14fcca6"
 	strings:
-		$mz = { 4d 5a }
 		//$s1 = "VisualDiscovery.exe" fullword wide
 		$s2 = "Invalid key length used to initialize BlowFish." fullword ascii
 		$s3 = "GetPCProxyHandler" fullword ascii
 		$s4 = "StartPCProxy" fullword ascii
 		$s5 = "SetPCProxyHandler" fullword ascii
 	condition:
-		( $mz at 0 ) and filesize < 2MB and all of ($s*)
+		uint16(0) == 0x5a4d and filesize < 2MB and all of ($s*)
 }

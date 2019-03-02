@@ -16,7 +16,7 @@ rule Neuron_common_strings {
     strings:
         $strServiceName = "MSExchangeService" ascii
         $strReqParameter_1 = "cadataKey" wide
-        $strReqParameter_2 = "cid" wide
+        /* $strReqParameter_2 = "cid" wide */ /* disabled due to performance reasons */
         $strReqParameter_3 = "cadata" wide
         $strReqParameter_4 = "cadataSig" wide
         $strEmbeddedKey = "PFJTQUtleVZhbHVlPjxNb2R1bHVzPnZ3WXRKcnNRZjVTcCtWVG9Rb2xuaEVkMHVwWDFrVElFTUNTNEFnRkRCclNm clpKS0owN3BYYjh2b2FxdUtseXF2RzBJcHV0YXhDMVRYazRoeFNrdEpzbHljU3RFaHBUc1l4OVBEcURabVVZVklVb HlwSFN1K3ljWUJWVFdubTZmN0JTNW1pYnM0UWhMZElRbnl1ajFMQyt6TUhwZ0xmdEc2b1d5b0hyd1ZNaz08L01vZH VsdXM+PEV4cG9uZW50PkFRQUI8L0V4cG9uZW50PjwvUlNBS2V5VmFsdWU+" wide

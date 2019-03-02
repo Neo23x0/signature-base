@@ -207,12 +207,10 @@ meta:
 	description = "Rule to detect Moonlight Maze encrypted keylogger logs"
 
 strings:
-
 	$a1={47 01 22 2A 6D 3E 39 2C}
 
 condition:
-
-	($a1 at 0)
+	uint32(0) == 0x2a220147 and ($a1 at 0)
 
 }
 

@@ -23,13 +23,12 @@ rule Weevely_Webshell {
 		date = "2014/12/14"
 		score = 60
 	strings:
-		$php = "<?php" ascii
 		$s0 = /\$[a-z]{4} = \$[a-z]{4}\("[a-z][a-z]?",[\s]?"",[\s]?"/ ascii
 		$s1 = /\$[a-z]{4} = str_replace\("[a-z][a-z]?","","/ ascii
 		$s2 = /\$[a-z]{4}\.\$[a-z]{4}\.\$[a-z]{4}\.\$[a-z]{4}\)\)\); \$[a-z]{4}\(\);/ ascii
 		$s4 = /\$[a-z]{4}="[a-zA-Z0-9]{70}/ ascii
 	condition:
-		$php at 0 and all of ($s*) and filesize > 570 and filesize < 800
+		uint32(0) == 0x68703f3c and all of ($s*) and filesize > 570 and filesize < 800
 }
 
 rule webshell_h4ntu_shell_powered_by_tsoi_ {
@@ -9135,7 +9134,7 @@ rule PHP_Webshell_1_Feb17 {
       $s1 = "$i=Array(\"pv\"=>@phpversion(),\"sv\"" ascii
       $s3 = "$data = @unserialize(sh_decrypt(@base64_decode($data),$data_key));" ascii
    condition:
-      ( $h1 at 0 and 1 of them ) or 2 of them
+      uint32(0) == 0x68703f3c and ( $h1 at 0 and 1 of them ) or 2 of them
 }
 
 rule Webshell_Tiny_JSP_2 {

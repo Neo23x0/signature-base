@@ -15,5 +15,5 @@ rule mimikatz_kirbi_ticket
 	strings:
 		$asn1			= { 76 82 ?? ?? 30 82 ?? ?? a0 03 02 01 05 a1 03 02 01 16 }
 	condition:
-		$asn1 at 0
+		uint16(0) == 0x8276 and $asn1 at 0
 }

@@ -128,23 +128,13 @@ rule apt_win_exe_trojan_derusbi {
       date = "2016/02/29"
       reference = "https://github.com/fideliscyber/indicators/tree/master/FTA-1021"
    strings:
-      $sa_1 = "USB" wide ascii
-      $sa_2 = "RAM" wide ascii
-      $sa_3 = "SHARE" wide ascii
       $sa_4 = "HOST: %s:%d"
-      $sa_5 = "POST"
       $sa_6 = "User-Agent: Mozilla"
       $sa_7 = "Proxy-Connection: Keep-Alive"
       $sa_8 = "Connection: Keep-Alive"
       $sa_9 = "Server: Apache"
-      $sa_10 = "HTTP/1.1"
-      $sa_11 = "ImagePath"
       $sa_12 = "ZwUnloadDriver"
       $sa_13 = "ZwLoadDriver"
-      $sa_14 = "ServiceMain"
-      $sa_15 = "regsvr32.exe"
-      $sa_16 = "/s /u" wide ascii
-      $sa_17 = "rand"
       $sa_18 = "_time64"
       $sa_19 = "DllRegisterServer"
       $sa_20 = "DllUnregisterServer"
@@ -164,7 +154,7 @@ rule apt_win_exe_trojan_derusbi {
       $sc_3 = "_crt_debugger_hook" wide ascii
       $sc_4 = "ue8G5" wide ascii
 
-      $sd_1 = "NET" wide ascii
+      /* $sd_1 = "NET" wide ascii */ /* disabled due to performance reasons */
       $sd_2 = "\\\\.\\pipe\\%s" wide ascii
       $sd_3 = ".dat" wide ascii
       $sd_4 = "CONNECT %s:%d" wide ascii
@@ -172,16 +162,16 @@ rule apt_win_exe_trojan_derusbi {
 
       $se_1 = "-%s-%04d" wide ascii
       $se_2 = "-%04d" wide ascii
-      $se_3 = "FAL" wide ascii
-      $se_4 = "OK" wide ascii
+      /* $se_3 = "FAL" wide ascii */ /* disabled due to performance reasons */
+      /* $se_4 = "OK" wide ascii */ /* disabled due to performance reasons */
       $se_5 = "2.03" wide ascii
-      $se_6 = "XXXXXXXXXXXXXXX" wide ascii
+      /* $se_6 = "XXXXXXXXXXXXXXX" wide ascii */ /* disabled due to memory usage reasons */
 
    condition:
       uint16(0) == 0x5A4D and (
          all of ($sa_*) or
          (
-            (13 of ($sa_*)) and (
+            (8 of ($sa_*)) and (
                (5 of ($sb_*)) or
                (3 of ($sc_*)) or
                (all of ($sd_*)) or

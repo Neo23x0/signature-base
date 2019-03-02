@@ -36,15 +36,13 @@ rule APT_DarkHydrus_Jul18_2 {
       date = "2018-07-28"
       hash1 = "b2571e3b4afbce56da8faa726b726eb465f2e5e5ed74cf3b172b5dd80460ad81"
    strings:
-      $s1 = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ascii
-      $s2 = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ascii
       $s4 = "windir" fullword ascii /* Goodware String - occured 47 times */
       $s6 = "temp.dll" fullword ascii /* Goodware String - occured 3 times */
       $s7 = "libgcj-12.dll" fullword ascii /* Goodware String - occured 3 times */
       $s8 = "%s\\System32\\%s" fullword ascii /* Goodware String - occured 4 times */
       $s9 = "StartW" fullword ascii /* Goodware String - occured 5 times */
    condition:
-      uint16(0) == 0x5a4d and filesize < 40KB and 6 of them
+      uint16(0) == 0x5a4d and filesize < 40KB and all of them
 }
 
 rule APT_DarkHydrus_Jul18_3 {
@@ -56,14 +54,12 @@ rule APT_DarkHydrus_Jul18_3 {
       date = "2018-07-28"
       hash1 = "c8b3d4b6acce6b6655e17255ef7a214651b7fc4e43f9964df24556343393a1a3"
    strings:
-      $s1 = "msdncss.com" fullword ascii
       $s2 = "Ws2_32.dll" fullword ascii
       $s3 = "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.0; Trident/5.0)" fullword ascii
-      $s4 = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" fullword ascii
    condition:
       uint16(0) == 0x5a4d and filesize < 100KB and (
          pe.imphash() == "478eacfbe2b201dabe63be53f34148a5" or
-         3 of them
+         all of them
       )
 }
 

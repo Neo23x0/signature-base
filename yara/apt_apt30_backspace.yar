@@ -341,7 +341,6 @@ rule APT30_Sample_14 {
 		hash = "b0740175d20eab79a5d62cdbe0ee1a89212a8472"
 	strings:
 		$s0 = "AdobeReader.exe" fullword wide
-		$s1 = "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy" fullword ascii
 		$s4 = "10.1.7.27" fullword wide
 		$s5 = "Copyright 1984-2012 Adobe Systems Incorporated and its licensors. All ri" wide
 		$s8 = "Adobe Reader" fullword wide

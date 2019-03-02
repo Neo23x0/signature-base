@@ -76,8 +76,6 @@ rule Equation_Kaspersky_TripleFantasy_1 {
 		date = "2015/02/16"
 		hash = "b2b2cd9ca6f5864ef2ac6382b7b6374a9fb2cbe9"
 	strings:
-		$mz = { 4d 5a }
-
 		$s0 = "%SystemRoot%\\system32\\hnetcfg.dll" fullword wide
 		$s1 = "%WINDIR%\\System32\\ahlhcib.dll" fullword wide
 		$s2 = "%WINDIR%\\sjyntmv.dat" fullword wide
@@ -95,7 +93,7 @@ rule Equation_Kaspersky_TripleFantasy_1 {
 		$z2 = "www.google.com@80" fullword wide
 		$z3 = "127.0.0.1:3128" fullword wide
 	condition:
-		( $mz at 0 ) and filesize < 300000 and
+		uint16(0) == 0x5a4d and filesize < 300000 and
 		(
 			( all of ($s*) and all of ($z*) ) or
 			( all of ($s*) and 1 of ($x*) )
@@ -111,8 +109,6 @@ rule Equation_Kaspersky_DoubleFantasy_1 {
 		date = "2015/02/16"
 		hash = "d09b4b6d3244ac382049736ca98d7de0c6787fa2"
 	strings:
-		$mz = { 4d 5a }
-
 		$z1 = "msvcp5%d.dll" fullword ascii
 
 		$s0 = "actxprxy.GetProxyDllInfo" fullword ascii
@@ -120,7 +116,6 @@ rule Equation_Kaspersky_DoubleFantasy_1 {
 		$s5 = "actxprxy.DllRegisterServer" fullword ascii
 		$s6 = "actxprxy.DllUnregisterServer" fullword ascii
 
-		$x1 = "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy" ascii
 		$x2 = "191H1a1" fullword ascii
 		$x3 = "November " fullword ascii
 		$x4 = "abababababab" fullword ascii
@@ -128,7 +123,7 @@ rule Equation_Kaspersky_DoubleFantasy_1 {
 		$x6 = "October " fullword ascii
 		$x7 = "September " fullword ascii
 	condition:
-		( $mz at 0 ) and filesize < 350000 and
+		uint16(0) == 0x5a4d and filesize < 350000 and
 		(
 			( $z1 ) or
 			( all of ($s*) and 6 of ($x*) )
@@ -144,7 +139,6 @@ rule Equation_Kaspersky_GROK_Keylogger {
 		date = "2015/02/16"
 		hash = "50b8f125ed33233a545a1aac3c9d4bb6aa34b48f"
 	strings:
-		$mz = { 4d 5a }
 		$s0 = "c:\\users\\rmgree5\\" ascii
 		$s1 = "msrtdv.sys" fullword wide
 
@@ -161,7 +155,7 @@ rule Equation_Kaspersky_GROK_Keylogger {
 		$z2 = "\\registry\\machine\\software\\Microsoft\\Windows NT\\CurrentVersion" fullword wide
 		$z4 = "\\registry\\machine\\SYSTEM\\ControlSet001\\Control\\Session Manager\\Environment" wide fullword
 	condition:
-		( $mz at 0 ) and filesize < 250000 and
+		uint16(0) == 0x5a4d and filesize < 250000 and
 		(
 			$s0 or
 			( $s1 and 6 of ($x*) ) or
@@ -194,8 +188,6 @@ rule Equation_Kaspersky_EquationDrugInstaller {
 		date = "2015/02/16"
 		hash = "61fab1b8451275c7fd580895d9c68e152ff46417"
 	strings:
-		$mz = { 4d 5a }
-
 		$s0 = "\\system32\\win32k.sys" fullword wide
 		$s1 = "ALL_FIREWALLS" fullword ascii
 
@@ -207,7 +199,7 @@ rule Equation_Kaspersky_EquationDrugInstaller {
 		$x6 = "WinStaObj" fullword wide
 		$x7 = "BINRES" fullword wide
 	condition:
-		( $mz at 0 ) and filesize < 500000 and all of ($s*) and 5 of ($x*)
+		uint16(0) == 0x5a4d and filesize < 500000 and all of ($s*) and 5 of ($x*)
 }
 
 rule Equation_Kaspersky_EquationLaserInstaller {
@@ -219,7 +211,6 @@ rule Equation_Kaspersky_EquationLaserInstaller {
 		date = "2015/02/16"
 		hash = "5e1f56c1e57fbff96d4999db1fd6dd0f7d8221df"
 	strings:
-		$mz = { 4d 5a }
 		$s0 = "Failed to get Windows version" fullword ascii
 		$s1 = "lsasrv32.dll and lsass.exe" fullword wide
 		$s2 = "\\\\%s\\mailslot\\%s" fullword ascii
@@ -230,7 +221,7 @@ rule Equation_Kaspersky_EquationLaserInstaller {
 		$s7 = "VIEWERS" fullword ascii
 		$s8 = "5.2.3790.220 (srv03_gdr.040918-1552)" fullword wide
 	condition:
-		( $mz at 0 ) and filesize < 250000 and 6 of ($s*)
+		uint16(0) == 0x5a4d and filesize < 250000 and 6 of ($s*)
 }
 
 rule Equation_Kaspersky_FannyWorm {
@@ -242,8 +233,6 @@ rule Equation_Kaspersky_FannyWorm {
 		date = "2015/02/16"
 		hash = "1f0ae54ac3f10d533013f74f48849de4e65817a7"
 	strings:
-		$mz = { 4d 5a }
-
 		$s1 = "x:\\fanny.bmp" fullword ascii
 		$s2 = "32.exe" fullword ascii
 		$s3 = "d:\\fanny.bmp" fullword ascii
@@ -265,7 +254,7 @@ rule Equation_Kaspersky_FannyWorm {
 		$x15 = "Global\\RPCMutex" fullword ascii
 		$x16 = "Global\\DirectMarketing" fullword ascii
 	condition:
-		( $mz at 0 ) and filesize < 300000 and
+		uint16(0) == 0x5a4d and filesize < 300000 and
 		(
 			( 2 of ($s*) ) or
 			( 1 of ($s*) and 6 of ($x*) ) or
@@ -282,7 +271,6 @@ rule Equation_Kaspersky_HDD_reprogramming_module {
 		date = "2015/02/16"
 		hash = "ff2b50f371eb26f22eb8a2118e9ab0e015081500"
 	strings:
-		$mz = { 4d 5a }
 		$s0 = "nls_933w.dll" fullword ascii
 
 		$s1 = "BINARY" fullword wide
@@ -290,7 +278,7 @@ rule Equation_Kaspersky_HDD_reprogramming_module {
 		$s3 = "HAL.dll" fullword ascii
 		$s4 = "READ_REGISTER_UCHAR" fullword ascii
 	condition:
-		( $mz at 0 ) and filesize < 300000 and all of ($s*)
+		uint16(0) == 0x5a4d and filesize < 300000 and all of ($s*)
 }
 
 rule Equation_Kaspersky_EOP_Package {
@@ -302,7 +290,6 @@ rule Equation_Kaspersky_EOP_Package {
 		date = "2015/02/16"
 		hash = "2bd1b1f5b4384ce802d5d32d8c8fd3d1dc04b962"
 	strings:
-		$mz = { 4d 5a }
 		$s0 = "abababababab" fullword ascii
 		$s1 = "abcdefghijklmnopq" fullword ascii
 		$s2 = "@STATIC" fullword wide
@@ -311,7 +298,7 @@ rule Equation_Kaspersky_EOP_Package {
 		$s5 = "prkMtx" fullword wide
 		$s6 = "cnFormVoidFBC" fullword wide
 	condition:
-		( $mz at 0 ) and filesize < 100000 and all of ($s*)
+		uint16(0) == 0x5a4d and filesize < 100000 and all of ($s*)
 }
 
 rule Equation_Kaspersky_TripleFantasy_Loader {
@@ -323,8 +310,6 @@ rule Equation_Kaspersky_TripleFantasy_Loader {
 		date = "2015/02/16"
 		hash = "4ce6e77a11b443cc7cbe439b71bf39a39d3d7fa3"
 	strings:
-		$mz = { 4d 5a }
-
 		$x1 = "Original Innovations, LLC" fullword wide
 		$x2 = "Moniter Resource Protocol" fullword wide
 		$x3 = "ahlhcib.dll" fullword wide
@@ -336,7 +321,7 @@ rule Equation_Kaspersky_TripleFantasy_Loader {
 		$s4 = "hnetcfg.HNetGetShareAndBridgeSettings" fullword ascii
 		$s5 = "hnetcfg.HNetGetFirewallSettingsPage" fullword ascii
 	condition:
-		( $mz at 0 ) and filesize < 50000 and ( all of ($x*) and all of ($s*) )
+		uint16(0) == 0x5a4d and filesize < 50000 and ( all of ($x*) and all of ($s*) )
 }
 
 /* Rule generated from the mentioned keywords */
@@ -350,8 +335,6 @@ rule Equation_Kaspersky_SuspiciousString {
 		date = "2015/02/17"
 		score = 60
 	strings:
-		$mz = { 4d 5a }
-
 		$s1 = "i386\\DesertWinterDriver.pdb" fullword
 		$s2 = "Performing UR-specific post-install..."
 		$s3 = "Timeout waiting for the \"canInstallNow\" event from the implant-specific EXE!"
@@ -359,7 +342,7 @@ rule Equation_Kaspersky_SuspiciousString {
 		$s5 = "standalonegrok_2.1.1.1"
 		$s6 = "c:\\users\\rmgree5\\"
 	condition:
-		( $mz at 0 ) and filesize < 500000 and all of ($s*)
+		uint16(0) == 0x5a4d and filesize < 500000 and all of ($s*)
 }
 
 /* EquationDrug Update 11.03.2015 - http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/ */
@@ -392,10 +375,9 @@ rule EquationDrug_CompatLayer_UnilayDLL {
 		date = "2015/03/11"
 		hash = "a3a31937956f161beba8acac35b96cb74241cd0f"
 	strings:
-		$mz = { 4d 5a }
 		$s0 = "unilay.dll" fullword ascii
 	condition:
-		( $mz at 0 ) and $s0
+		uint16(0) == 0x5a4d and $s0
 }
 
 rule EquationDrug_HDDSSD_Op {

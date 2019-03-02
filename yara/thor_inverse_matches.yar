@@ -334,11 +334,10 @@ rule APT_Cloaked_SuperScan
 		author = "Florian Roth"
 		score = 50
 	strings:
-		$magic = { 4d 5a }
 		$s0 = "SuperScan4.exe" wide fullword
 		$s1 = "Foundstone Inc." wide fullword
 	condition:
-		( $magic at 0 ) and $s0 and $s1 and not filename contains "superscan"
+		uint16(0) == 0x5a4d and $s0 and $s1 and not filename contains "superscan"
 }
 
 rule APT_Cloaked_ScanLine
@@ -350,12 +349,11 @@ rule APT_Cloaked_ScanLine
 		author = "Florian Roth"
 		score = 50
 	strings:
-		$magic = { 4d 5a }
 		$s0 = "ScanLine" wide fullword
 		$s1 = "Command line port scanner" wide fullword
 		$s2 = "sl.exe" wide fullword
 	condition:
-		( $magic at 0 ) and $s0 and $s1 and $s2 and not filename == "sl.exe"
+		uint16(0) == 0x5a4d and $s0 and $s1 and $s2 and not filename == "sl.exe"
 }
 
 rule SAM_Hive_Backup

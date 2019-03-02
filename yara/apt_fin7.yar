@@ -158,7 +158,6 @@ rule APT_FIN7_EXE_Sample_Aug18_5 {
       hash1 = "7789a3d7d05c30b4efaf3f2f5811804daa56d78a9a660968a4f1f9a78a9108a0"
    strings:
       $s1 = "x0=%d, y0=%d, x1=%d, y1=%d" fullword ascii
-      $s2 = "........................................................................................................" fullword ascii
       $s3 = "sdfkjdfjfhgurgvncmnvmfdjdkfjdkfjdf" fullword wide
    condition:
       uint16(0) == 0x5a4d and filesize < 400KB and all of them

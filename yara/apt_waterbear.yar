@@ -222,7 +222,6 @@ rule Waterbear_13_Jun17 {
       $s3 = "ChangeServiceConfig failed (%d)" fullword ascii
       $s4 = "Proxy %d:%s %d" fullword ascii
       $s5 = "win9807.tmp" fullword ascii
-      $s6 = "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" fullword ascii
       $s7 = "Service stopped successfully" fullword ascii
       $s8 = "current dns:%s" fullword ascii
       $s9 = "%c%u|%u|%u|%u|%u|" fullword ascii

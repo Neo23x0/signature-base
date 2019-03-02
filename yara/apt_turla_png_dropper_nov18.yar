@@ -43,7 +43,7 @@ rule turla_png_dropper {
         }
         condition:
         (uint16(0) == 0x5A4D and uint16(uint32(0x3c)) == 0x4550) and
-        all of ($api*) and 
+        all of ($api*) and
         1 of ($code*)
 }
 
@@ -57,19 +57,19 @@ rule turla_png_reg_enum_payload {
     strings:
         $crypt00 = "Microsoft Software Key Storage Provider" wide
         $crypt01 = "ChainingModeCBC" wide
-        $crypt02 = "AES" wide
+        /* $crypt02 = "AES" wide */ /* disabled due to performance reasons */
     condition:
         (uint16(0) == 0x5A4D and uint16(uint32(0x3c)) == 0x4550) and
-        pe.imports("advapi32.dll", "StartServiceCtrlDispatcherA") and 
-        pe.imports("advapi32.dll", "RegEnumValueA") and 
-        pe.imports("advapi32.dll", "RegEnumKeyExA") and 
-        pe.imports("ncrypt.dll", "NCryptOpenStorageProvider") and 
-        pe.imports("ncrypt.dll", "NCryptEnumKeys") and 
-        pe.imports("ncrypt.dll", "NCryptOpenKey") and 
+        pe.imports("advapi32.dll", "StartServiceCtrlDispatcherA") and
+        pe.imports("advapi32.dll", "RegEnumValueA") and
+        pe.imports("advapi32.dll", "RegEnumKeyExA") and
+        pe.imports("ncrypt.dll", "NCryptOpenStorageProvider") and
+        pe.imports("ncrypt.dll", "NCryptEnumKeys") and
+        pe.imports("ncrypt.dll", "NCryptOpenKey") and
         pe.imports("ncrypt.dll", "NCryptDecrypt") and
-        pe.imports("ncrypt.dll", "BCryptGenerateSymmetricKey") and 
-        pe.imports("ncrypt.dll", "BCryptGetProperty") and 
-        pe.imports("ncrypt.dll", "BCryptDecrypt") and 
-        pe.imports("ncrypt.dll", "BCryptEncrypt") and 
+        pe.imports("ncrypt.dll", "BCryptGenerateSymmetricKey") and
+        pe.imports("ncrypt.dll", "BCryptGetProperty") and
+        pe.imports("ncrypt.dll", "BCryptDecrypt") and
+        pe.imports("ncrypt.dll", "BCryptEncrypt") and
         all of them
 }

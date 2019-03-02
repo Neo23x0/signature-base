@@ -33,8 +33,6 @@
 private rule PrikormkaDropper
 {
     strings:
-        $mz = { 4D 5A }
-
         $kd1 = "KDSTORAGE" wide
         $kd2 = "KDSTORAGE_64" wide
         $kd3 = "KDRUNDRV32" wide
@@ -47,14 +45,12 @@ private rule PrikormkaDropper
         $inj1 = "?AVCinj2008Dlg@@" ascii
         $inj2 = "?AVCinj2008App@@" ascii
     condition:
-        ($mz at 0) and ((any of ($bin*)) or (3 of ($kd*)) or (all of ($inj*)))
+        uint16(0) == 0x5a4d and ((any of ($bin*)) or (3 of ($kd*)) or (all of ($inj*)))
 }
 
 private rule PrikormkaModule
 {
     strings:
-        $mz = { 4D 5A }
-
         // binary
         $str1 = {6D 70 2E 64 6C 6C 00 53 74 61 72 74 69 6E 67 00}
         $str2 = {68 6C 70 75 63 74 66 2E 64 6C 6C 00 43 79 63 6C 65}
@@ -106,14 +102,12 @@ private rule PrikormkaModule
         $str34 = "\\TOOLS PZZ\\Bezzahod\\" ascii
 
     condition:
-        ($mz at 0) and (any of ($str*))
+        uint16(0) == 0x5a4d and (any of ($str*))
 }
 
 private rule PrikormkaEarlyVersion
 {
     strings:
-        $mz = { 4D 5A }
-
         $str1 = "IntelRestore" ascii fullword
         $str2 = "Resent" wide fullword
         $str3 = "ocp8.1" wide fullword
@@ -124,7 +118,7 @@ private rule PrikormkaEarlyVersion
         $str8 = "KDLLCFX" wide fullword
         $str9 = "KDLLRUNDRV" wide fullword
     condition:
-        ($mz at 0) and (2 of ($str*))
+        uint16(0) == 0x5a4d and (2 of ($str*))
 }
 
 rule Prikormka

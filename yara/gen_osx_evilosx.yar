@@ -7,7 +7,7 @@ rule OSX_backdoor_EvilOSX {
         hash = "89e5b8208daf85f549d9b7df8e2a062e47f15a5b08462a4224f73c0a6223972a"
 
     strings:
-        $h1 = /#!\/usr\/bin\/env\s+python/
+        $h1 = "#!/usr/bin/env"
         $s0 = "import base64" fullword ascii
         $s1 = "b64decode" fullword ascii
 
@@ -23,7 +23,8 @@ rule OSX_backdoor_EvilOSX {
         $enc_x1 = /(AGUAdABfAGwAYQB1AG4AYwBoAF8AYQBnAGUAbgB0AF8AZABpAHIAZQBjAHQAbwByAHkA|cAZQB0AF8AbABhAHUAbgBjAGgAXwBhAGcAZQBuAHQAXwBkAGkAcgBlAGMAdABvAHIAeQ|dldF9sYXVuY2hfYWdlbnRfZGlyZWN0b3J5|Z2V0X2xhdW5jaF9hZ2VudF9kaXJlY3Rvcn|ZwBlAHQAXwBsAGEAdQBuAGMAaABfAGEAZwBlAG4AdABfAGQAaQByAGUAYwB0AG8AcgB5A|ZXRfbGF1bmNoX2FnZW50X2RpcmVjdG9ye)/ ascii
 
     condition:
-        $h1 at 0
+        uint32(0) == 0x752f2123
+        and $h1 at 0
         and filesize < 30KB
         and all of ($s*)
         and

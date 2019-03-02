@@ -62,6 +62,7 @@ rule PAS_TOOL_PHP_WEB_KIT_mod {
       $cookie = "_COOKIE"
       $isset = "isset"
    condition:
+      uint32(0) == 0x68703f3c and
       $php at 0 and
       (filesize > 10KB and filesize < 30KB) and
       #cookie == 2 and
@@ -84,7 +85,7 @@ rule WebShell_PHP_Web_Kit_v3 {
       $s2 = "(strrev($" ascii
       $s3 = "de'.'code';" ascii
    condition:
-      ( $php at 0 or $php2 ) and
+      ( ( uint32(0) == 0x68703f3c and $php at 0 ) or $php2 ) and
       filesize > 8KB and filesize < 100KB and
       all of ($s*)
 }
@@ -103,6 +104,7 @@ rule WebShell_PHP_Web_Kit_v4 {
       $s2 = ";if(PHP_VERSION<'5'){" ascii
       $s3 = "=SuBstr_rePlACe(" ascii
    condition:
+      uint32(0) == 0x68703f3c and 
       $php at 0 and
       filesize > 8KB and filesize < 100KB and
       2 of ($s*)
