@@ -27,21 +27,23 @@ condition:
 /* Rules -------------------------------------------------------------------- */
 
 rule iexplore_ANOMALY {
-	meta:
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
-		author = "Florian Roth"
-		description = "Abnormal iexplore.exe - typical strings not found in file"
-		date = "23/04/2014"
-		score = 55
-	strings:
-		$win2003_win7_u1 = "IEXPLORE.EXE" wide nocase
-		$win2003_win7_u2 = "Internet Explorer" wide fullword
-		$win2003_win7_u3 = "translation" wide fullword nocase
-		$win2003_win7_u4 = "varfileinfo" wide fullword nocase
-	condition:
-		filename == "iexplore.exe"
+   meta:
+      author = "Florian Roth"
+      description = "Abnormal iexplore.exe - typical strings not found in file"
+      date = "23/04/2014"
+      score = 55
+      nodeepdive = 1
+   strings:
+      $win2003_win7_u1 = "IEXPLORE.EXE" wide nocase
+      $win2003_win7_u2 = "Internet Explorer" wide fullword
+      $win2003_win7_u3 = "translation" wide fullword nocase
+      $win2003_win7_u4 = "varfileinfo" wide fullword nocase
+   condition:
+      filename == "iexplore.exe"
       and not filepath contains "teamviewer"
       and not 1 of ($win*) and not WINDOWS_UPDATE_BDC
+      and filepath contains "C:\\"
+      and not filepath contains "Package_for_RollupFix"
 }
 
 rule svchost_ANOMALY {
@@ -285,21 +287,23 @@ rule lsass_ANOMALY {
 }
 
 rule taskmgr_ANOMALY {
-	meta:
-		description = "Anomaly rule looking for certain strings in a system file (maybe false positive on certain systems) - file taskmgr.exe"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
-		author = "Florian Roth"
-		reference = "not set"
-		date = "2015/03/16"
-		hash = "e8b4d84a28e5ea17272416ec45726964fdf25883"
-	strings:
-		$s0 = "Windows Task Manager" fullword wide
-		$s1 = "taskmgr.chm" fullword
-		$s2 = "TmEndTaskHandler::" ascii
+   meta:
+      description = "Anomaly rule looking for certain strings in a system file (maybe false positive on certain systems) - file taskmgr.exe"
+      author = "Florian Roth"
+      reference = "not set"
+      date = "2015/03/16"
+      nodeepdive = 1
+      hash = "e8b4d84a28e5ea17272416ec45726964fdf25883"
+   strings:
+      $s0 = "Windows Task Manager" fullword wide
+      $s1 = "taskmgr.chm" fullword
+      $s2 = "TmEndTaskHandler::" ascii
       $s3 = "CM_Request_Eject_PC" /* Win XP */
       $s4 = "NTShell Taskman Startup Mutex" fullword wide
-	condition:
-		( filename == "taskmgr.exe" or filename == "Taskmgr.exe" ) and not 1 of ($s*) and not WINDOWS_UPDATE_BDC
+   condition:
+      ( filename == "taskmgr.exe" or filename == "Taskmgr.exe" ) and not 1 of ($s*) and not WINDOWS_UPDATE_BDC
+      and filepath contains "C:\\"
+      and not filepath contains "Package_for_RollupFix"
 }
 
 /* removed 22 rules here */
