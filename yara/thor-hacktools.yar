@@ -4083,7 +4083,7 @@ rule RemCom_RemoteCommandExecution {
       author = "Florian Roth"
       reference = "https://goo.gl/tezXZt"
       date = "2017-12-28"
-      score = 55
+      score = 50
    strings:
       $ = "\\\\.\\pipe\\%s%s%d"
       $ = "%s\\pipe\\%s%s%d%s"
