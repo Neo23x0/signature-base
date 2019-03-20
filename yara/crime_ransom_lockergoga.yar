@@ -13,6 +13,9 @@ rule Ransom_LockerGoga_Mar19_1 {
       $x1 = "\\.(doc|dot|wbk|docx|dotx|docb|xlm|xlsx|xltx|xlsb|xlw|ppt|pot|pps|pptx|potx|ppsx|sldx|pdf)" wide
       $x2 = "|[A-Za-z]:\\cl.log" wide
       $x4 = "\\crypto-locker\\" ascii
+      $x5 = "cipher.exe" fullword ascii
+      $x6 = "netsh.exe" fullword ascii
+      $x7 = "net.exe" fullword ascii
       $xc1 = { 00 43 00 6F 00 6D 00 70 00 61 00 6E 00 79 00 4E
                00 61 00 6D 00 65 00 00 00 00 00 4D 00 6C 00 63
                00 72 00 6F 00 73 00 6F 00 66 00 74 }
