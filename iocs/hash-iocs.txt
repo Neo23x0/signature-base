@@ -8915,3 +8915,24 @@ a941d46d6352fb2d70bba1423c4890dd5516e45d81f826900272ed14d0b678f4;Bronze Union IO
 8b8e44bd5e4a9f7d58714ba9ca72351c;Bronze Union IOC - MD5 hash - Word document downloader (Final.docx) used by BRONZE UNION, associated with SysUpdate
 02704ef94519eee0a57073b1e530ffea73df2a1f;Bronze Union IOC - SHA1 hash - Word document downloader (Final.docx) used by BRONZE UNION, associated with SysUpdate
 86de90119b572620fd6a690b903c721679359cdc81f3d3327677e13539d5f626;Bronze Union IOC - SHA256 hash - Word document downloader (Final.docx) used by BRONZE UNION, associated with SysUpdate
+
+5798aefb07e12a942672a60c2be101dc26b01485616713e8be1f68b321747f2f;Elfin Report on APT33 - Notestuk/TURNEDUP
+a67461a0c14fc1528ad83b9bd874f53b7616cfed99656442fb4d9cdd7d09e449;Elfin Report on APT33 - AutoIt backdoor
+f2943f5e45befa52fb12748ca7171d30096e1d4fc3c365561497c618341299d5;Elfin Report on APT33 - Gpppassword
+87e2cf4aa266212aa8cf1b1c98ae905c7bac40a6fc21b8e821ffe88cf9234586;Elfin Report on APT33 - LaZagne
+709df1bbd0a5b15e8f205b2854204e8caf63f78203e3b595e0e66c918ec23951;Elfin Report on APT33 - LaZagne
+a23c182349f17398076360b2cb72e81e5e23589351d3a6af59a27e1d552e1ec0;Elfin Report on APT33 - Quasar RAT
+0b3610524ff6f67c59281dbf4a24a6e8753b965c15742c8a98c11ad9171e783d;Elfin Report on APT33 - Quasar RAT
+d5262f1bc42d7d5d0ebedadd8ab90a88d562c7a90ff9b0aed1b3992ec073e2b0;Elfin Report on APT33 - Quasar RAT
+ae1d75a5f87421953372e79c081e4b0a929f65841ed5ea0d380b6289e4a6b565;Elfin Report on APT33 - Remcos
+e999fdd6a0f5f8d1ca08cf2aef47f5ddc0ee75879c6f2c1ee23bc31fb0f26c70;Elfin Report on APT33 - Remcos
+018360b869d8080cf5bcca1a09eb8251558378eb6479d8d89b8c80a8e2fa328c;Elfin Report on APT33 - Remcos
+367e78852134ef488ecf6862e71f70a3b10653e642bda3df00dd012c4e130330;Elfin Report on APT33 - Remcos
+ea5295868a6aef6aac9e117ef128e9de107817cc69e75f0b20648940724880f3;Elfin Report on APT33 - Remcos
+6401abe9b6e90411dc48ffc863c40c9d9b073590a8014fe1b0e6c2ecab2f7e18;Elfin Report on APT33 - SniffPass
+bf9c589de55f7496ff14187b1b5e068bd104396c23418a18954db61450d21bab;Elfin Report on APT33 - DarkComet
+af41e9e058e0a5656f457ad4425a299481916b6cf5e443091c7a6b15ea5b3db3;Elfin Report on APT33 - DarkComet
+c7a2559f0e134cafbfc27781acc51217127a7739c67c40135be44f23b3f9d77b;Elfin Report on APT33 - AutoIt FTP tool
+99c1228d15e9a7693d67c4cb173eaec61bdb3e3efdd41ee38b941e733c7104f8;Elfin Report on APT33 - .NET FTP tool
+94526e2d1aca581121bd79a699a3bf5e4d91a4f285c8ef5ab2ab6e9e44783997;Elfin Report on APT33 - PowerShell downloader (registry.ps1)
+dedfbc8acf1c7b49fb30af35eda5e23d3f7a202585a5efe82ea7c2a785a95f40;Elfin Report on APT33 - POSHC2 backdoor
