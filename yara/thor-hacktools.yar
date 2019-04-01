@@ -2775,7 +2775,7 @@ rule CN_Portscan : APT
         description = "CN Port Scanner"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
-        release_date = "2013-11-29"
+        date = "2013-11-29"
         confidential = false
       score = 70
     strings:
@@ -2790,7 +2790,7 @@ rule WMI_vbs : APT
         description = "WMI Tool - APT"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
-        release_date = "2013-11-29"
+        date = "2013-11-29"
         confidential = false
       score = 70
     strings:
