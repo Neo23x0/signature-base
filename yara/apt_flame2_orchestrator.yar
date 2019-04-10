@@ -1,3 +1,6 @@
+/* Limited support for hash function */
+
+/*
 import"pe"
 import"hash"
 
@@ -28,3 +31,4 @@ rule FLAME2_Orchestrator {
       (hash.md5(pe.resources[i].offset,pe.resources[i].length) == "9a2766aba7f2a56ef1ab24cf171ee0ed") or
       (hash.md5(pe.resources[i].offset,pe.resources[i].length) == "ebe15bfb5a3944ea4952ddf0f73aa6e8"))
 }
+*/
