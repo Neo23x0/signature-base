@@ -8936,3 +8936,31 @@ c7a2559f0e134cafbfc27781acc51217127a7739c67c40135be44f23b3f9d77b;Elfin Report on
 99c1228d15e9a7693d67c4cb173eaec61bdb3e3efdd41ee38b941e733c7104f8;Elfin Report on APT33 - .NET FTP tool
 94526e2d1aca581121bd79a699a3bf5e4d91a4f285c8ef5ab2ab6e9e44783997;Elfin Report on APT33 - PowerShell downloader (registry.ps1)
 dedfbc8acf1c7b49fb30af35eda5e23d3f7a202585a5efe82ea7c2a785a95f40;Elfin Report on APT33 - POSHC2 backdoor
+
+87648aad45d9142d1d825d728b7aa098f92aea38698209d038ba58b7385f8df6;Triton Actor TTP IOCs - KB77846376.exe - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+2141b526a81bb87b964880e69933aad3932131ccccee5949d2a16c1e124ccdbb;Triton Actor TTP IOCs - KB77846376.exe.x64 - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+c55e63f8a3b328c3ba77cebf821bdc5243b15a0298057e75f7605d0922c8d7cd;Triton Actor TTP IOCs - Netexec.exe - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+70efbd074326e7bbd4e851ded5c362fe5fe06282ed4bbb4b9f761f1b12ee32f7;Triton Actor TTP IOCs - runsvc.exe - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+910b26c942c0cff8b1f5a57e1521801bfd54c8cbcfd23d3d11ea9fe27ca4a0e9;Triton Actor TTP IOCs - svchostpla.exe - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+1330594c2685fe6fc2c87439ef151dfacabc78402379a73be39953048b144960;Triton Actor TTP IOCs - compattelprerunner.exe - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+6ab948ec61f1f7e04119da85d5263d428a1de070edad3a4e796bada2ab05cea7;Triton Actor TTP IOCs - compattelprerunner.exe - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+4c2383c8650112e00cb8b52d0faac7b98207073db081dbdcbb278f0470b869a1;Triton Actor TTP IOCs - compattelprerunner.exe - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+6d2d9623762f822949eef80b02f4ba2d26227eb23ad5b8d1a0a3d6da3bc60d6c;Triton Actor TTP IOCs - ProgramDataUpdater.xml - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+0fc391cdef0705f032109e16f8f591e1e6f8ffccbc46f4eb4a8fa058047c0adc;Triton Actor TTP IOCs - napupdatedb.exe - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+970fab66733ba594b435cf345c72814ee5f8443c44d28ef251f768ad66a6c052;Triton Actor TTP IOCs - alg.exe - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+fc5b4c61f66beb58a62636ab7c198e6ab7f38ce201f098f2818a5699b8aa1138;Triton Actor TTP IOCs - userinit.exe - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+1848d26e47ee4937ef02e67a447b4054d66f4d659f1fbd8bda1482dc4f02c7c4;Triton Actor TTP IOCs - csrss.exe - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+98da0ce88de897e1b08733ac771edab5e5b2a2dda8aab0e73c1d41bade275ff6;Triton Actor TTP IOCs - tquery.dll - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+f0dcbc83d911c382da7ba06a027bdd5861d1a9b723ebe5d9d6f6b79d7b70f29d;Triton Actor TTP IOCs - txflog.dll - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+32f5d0a454c26e8aa6f4cad58f3782337cc97cfe2305bbfe564437e5f0d51bbc;Triton Actor TTP IOCs - cryptopp.dll - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+f7bdddbeae239305ccca3b7eb1019b713bd0f7f060976494e810917a1e6ad5ee;Triton Actor TTP IOCs - DEFAULT - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+1f1902e4482527824ef2c0c2039162db85e5a671caf0767a695116b03cfc866d;Triton Actor TTP IOCs - DEFAULT.BAK - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+1d359163b6bd882ae4c26854d69745136a23f3abb7c96341f6d17e18a546a5fd;Triton Actor TTP IOCs - spl32.exe - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+3b6fd091b956b17476990c6ca77dd8f77d203d3170745d1b7c7894bfcf629b86;Triton Actor TTP IOCs - WinSAT.exe - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+720ef3d5b5416974376ca4ea8bd536e9eeb608f89e3b5b264e197266be8a9f4e;Triton Actor TTP IOCs - csrss.exe - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+084c21e75fbfa5056fec913c237ce7fba314f88fbd687e8dcb1e777003f79b0e;Triton Actor TTP IOCs - clusapi.dll - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+9224c2b00e94e5c57d63820aebe613843b5c851a027488148308fac2d02206f0;Triton Actor TTP IOCs - PolicMan.dll - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+7633b4178611e28aedfa365a0de8ebe5f41ae8eeee71322f04d0e30e50ba2914;Triton Actor TTP IOCs - verifier2.dll - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+7bcca38e43f3b37b1acea05899a7c11dfb62de64531bd48af992d5e400a1755f;Triton Actor TTP IOCs - misc.mof - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+0da4c0b83fa1ad4af9aad6c42feecc6c21c3fd0e660b9e5b3857ddeae3473d54;Triton Actor TTP IOCs - logoff.aspx - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+f81aa77d23ca6662efb3e6e33538a60e39abb5ca66102e07ffa318a6d6cd78ec;Triton Actor TTP IOCs - flogon.js; - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
