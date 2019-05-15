@@ -8964,3 +8964,33 @@ f7bdddbeae239305ccca3b7eb1019b713bd0f7f060976494e810917a1e6ad5ee;Triton Actor TT
 7bcca38e43f3b37b1acea05899a7c11dfb62de64531bd48af992d5e400a1755f;Triton Actor TTP IOCs - misc.mof - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
 0da4c0b83fa1ad4af9aad6c42feecc6c21c3fd0e660b9e5b3857ddeae3473d54;Triton Actor TTP IOCs - logoff.aspx - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
 f81aa77d23ca6662efb3e6e33538a60e39abb5ca66102e07ffa318a6d6cd78ec;Triton Actor TTP IOCs - flogon.js; - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+
+02681a7fe708f39beb7b3cf1bd557ee9;ScarCruft malware - Bluetooth info harvester - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+C781f5fad9b47232b3606e4d374900cd;ScarCruft malware - Installer - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+032ed0cd234f73865d55103bf4ceaa22;ScarCruft malware - Downloader - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+22aaf617a86e026424edb7c868742495;ScarCruft malware - AV Remover - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+07d2200f5c2d03845adb5b20841faa94;ScarCruft malware - AV Remover - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+1f5ac2f1744ed9c3fd01fe72ee8d334f;ScarCruft malware - Initial Dropper - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+4d20f7311f4f617104f559a04afd2fbf;ScarCruft malware - Installer - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+03e5e566c1153cb1d18b8bc7c493025f;ScarCruft malware - Downloader - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+C66ef71830341bb99d30964a8089a1fc;ScarCruft malware - Loader - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+5999e01b83aa1cc12a2ad6a0c0dc27c3;ScarCruft malware - Installer - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+4d3c34a3070643c225be1dbbb3457ad4;ScarCruft malware - Injector - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+0790F1D7A1B9432AA5B8590286EB8B95;ScarCruft malware - Downloader - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+04371bf88b598b56691b0ad9da08204b;ScarCruft malware - Installer - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+e8b23cfc805353f55ed67cf0af58f305;ScarCruft malware - UAC bypass(UACME) - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+5380a173757e67d9b12f316771012768;ScarCruft malware - Installer - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+Ec0e77b57cb9dd7a04ab6e453810937c;ScarCruft malware - Downloader - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+25701492a18854ffdb05317ec7d19c29;ScarCruft malware - Installer - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+172b4dc27e41e4a0c84a803b0b944d3e;ScarCruft malware - UAC bypass(UACME) - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+7149c205d634c4d17dae33fffb8a68ab;ScarCruft malware - Image file embedded ROKRAT - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+A76c4a79e6ff73bfd7149a49852e8916;ScarCruft malware - ROKRAT - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+F63fc2d11fcebd37be3891def5776f6c;ScarCruft malware - Dropper - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+899e90a0851649a5c270d1f78baf60f2;ScarCruft malware - Simple HTTP Downloader - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+E88f7f285163d0c080c8d3e525b35ab3;ScarCruft malware - Simple HTTP Downloader - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+D7c94c5ba028dc22a570f660b8dee5b9;ScarCruft malware - Simple HTTP Downloader - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+A6bd2cf7bccf552febb8e8347d07529a;ScarCruft malware - Simple HTTP Downloader - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+7a338d08226f5a38353385c8a5dec746;ScarCruft malware - Simple HTTP Downloader - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+46F66D2D990660661D00F5177306309C;ScarCruft malware - Simple HTTP Uploader - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+5e0e11bca0e94914e565c1dcc1ee6860;ScarCruft malware - GreezaBackdoor of DarkHotel - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+4c2016df6b546326d67ac2a79dea1343;ScarCruft malware - Konni - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
