@@ -328,6 +328,7 @@ rule lsadump {
       $fp3 = "Kaspersky Lab" ascii fullword
       $fp4 = "ESET Security" ascii
       $fp5 = "Disaster Recovery Module" wide
+      $fp6 = "Bitdefender" wide fullword
    condition:
       uint16(0) == 0x5a4d and
       (($str_sam_inc and not $str_sam_exc) or $hex_api_call or $str_msv_lsa or $hex_bkey )
