@@ -47,7 +47,6 @@ rule APT10_Malware_Sample_Gen {
       $c2_27 = "acc.emailfound.info" ascii
       $c2_28 = "acc.lehigtapp.com" ascii
       $c2_29 = "acsocietyy.com" ascii
-      $c2_30 = "ad.getfond.info" ascii
       $c2_31 = "ad.webbooting.com" ascii
       $c2_32 = "additional.sexidude.com" ascii
       $c2_33 = "af.zyns.com" ascii
@@ -458,7 +457,6 @@ rule APT10_Malware_Sample_Gen {
       $c2_442 = "generat.almostmy.com" ascii
       $c2_443 = "generousd.hopto.org" ascii
       $c2_444 = "gensuzuki.6600.org" ascii
-      $c2_445 = "getfond.info" ascii
       $c2_446 = "gh.mysecondarydns.com" ascii
       $c2_447 = "gifuonlineshopping.mynumber.org" ascii
       $c2_448 = "glicense.shenajou.com" ascii
