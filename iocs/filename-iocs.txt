@@ -3096,4 +3096,17 @@ ystem32\\uploadmgr\.dat;80
 \\AppData\\Local\\Microsoft\\mm\.accdb;80
 \\AppData\\Roaming\\Microsoft\\mm\.accdb;80
 
+
+# Suspicious Indicators - Skript in Windows Folder
+C:\\Windows\\[^\\]{1,20}\.(js|ps1|vbs);50
+
+# Turla Malware macOS https://blog.malwarebytes.com/threat-analysis/2017/05/snake-malware-ported-windows-mac/
+/Library/Scripts/queue;80
+/Library/Scripts/installdp;80
+/Library/Scripts/installd.sh;80
+/Library/LaunchDaemons/com.adobe.update.plist;80
+
+# Turla Snake Malware https://www.welivesecurity.com/2019/05/29/turla-powershell-usage/
+\\Users\\Public\\iCore\.dat;100
+
 # End

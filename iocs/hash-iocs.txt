@@ -9024,3 +9024,9 @@ b279a41359367408c627ffa8d80051ed0f04c76fbf6aed79b3b2963203e08ade;Emissary Panda 
 38fa396770e0ecf60fe1ce089422283e2dc8599489bd18d5eb033255dd8e370c;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
 2dde8881cd9b43633d69dfa60f23713d7375913845ac3fe9b4d8a618660c4528;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
 
+50c0bf9479efc93fa9cf1aa99bdca923273b71a1;Turla Snake malware - PowerShell loader with encrypted payload PowerShell/Turla.T - https://www.welivesecurity.com/2019/05/29/turla-powershell-usage/
+ec54ef8d79bf30b63c5249af7a8a3c652595b923;Turla Snake malware - RPC backdoor (client) Win64/Turla.BQ - https://www.welivesecurity.com/2019/05/29/turla-powershell-usage/
+9cdf6d5878fc3aecf10761fd72371a2877f270d0;Turla Snake malware - RPC backdoor (server) Win64/Turla.BQ - https://www.welivesecurity.com/2019/05/29/turla-powershell-usage/
+d3df3f32716042404798e3e9d691aced2f78bdd5;Turla Snake malware - File exfiltration RPC plugin Win32/Turla.BZ - https://www.welivesecurity.com/2019/05/29/turla-powershell-usage/
+9d1c563e5228b2572f5ca14f0ec33ca0deda3d57;Turla Snake malware - RPCSpoofServerInstaller Win64/Turla.BS - https://www.welivesecurity.com/2019/05/29/turla-powershell-usage/
+b948e25d061039d64115cfde74d2ff4372e83765;Turla Snake malware - RPC interface patcher Win64/Turla.BR - https://www.welivesecurity.com/2019/05/29/turla-powershell-usage/
