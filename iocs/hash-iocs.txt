@@ -8994,3 +8994,33 @@ A6bd2cf7bccf552febb8e8347d07529a;ScarCruft malware - Simple HTTP Downloader - ht
 46F66D2D990660661D00F5177306309C;ScarCruft malware - Simple HTTP Uploader - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
 5e0e11bca0e94914e565c1dcc1ee6860;ScarCruft malware - GreezaBackdoor of DarkHotel - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
 4c2016df6b546326d67ac2a79dea1343;ScarCruft malware - Konni - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+
+006569f0a7e501e58fe15a4323eedc08f9865239131b28dc5f95f750b4767b38;Emissary Panda Webshells https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+2feae7574a2cc4dea2bff4eceb92e3a77cf682c0a1e78ee70be931a251794b86;Emissary Panda Webshells https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+d1ab0dff44508bac9005e95299704a887b0ffc42734a34b30ebf6d3916053dbe;Emissary Panda Webshells https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+6b3f835acbd954af168184f57c9d8e6798898e9ee650bd543ea6f2e9d5cf6378;Emissary Panda Webshells https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+88027a44dc82a97e21f04121eea2e86b4ddf1bd7bbaa4ad009b97b50307570bd;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+738128b4f42c8d2335d68383d72734130c0c4184725c06851498a4cf0374a841;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+3bca0bb708c5dad1c683c6ead857a5ebfa15928a59211432459a3efa6a1afc59;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+29897f2ae25017455f904595872f2430b5f7fedd00ff1a46f1ea77e50940128e;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+d0df8e1dcf30785a964ecdda9bd86374d35960e1817b25a6b0963da38e0b1333;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+a18326f929229da53d4cc340bde830f75e810122c58b523460c8d6ba62ede0e5;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+090cefebef655be7f879f2f14bd849ac20c4051d0c13e55410a49789738fad98;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+7eea6e15bb13a3b65cca9405829123761bf7d12c6dc3b81ce499d8f6a0b25fb7;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+38fa396770e0ecf60fe1ce089422283e2dc8599489bd18d5eb033255dd8e370c;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+4a26ec5fd16ee13d869d6b0b6177e570444f6a007759ea94f1aa18fa831290a8;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+b2b2e900aa2e96ff44610032063012aa0435a47a5b416c384bd6e4e58a048ac9;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+475c7e88a6d73e619ec585a7c9e6e57d2efc8298b688ebc10a3c703322f1a4a7;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+9f5f3a9ce156213445d08d1a9ea99356d2136924dc28a8ceca6d528f9dbd718b;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+c9d5dc956841e000bfd8762e2f0b48b66c79b79500e894b4efa7fb9ba17e4e9e;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+a6cad2d0f8dc05246846d2a9618fc93b7d97681331d5826f8353e7c3a3206e86;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+e781ce2d795c5dd6b0a5b849a414f5bd05bb99785f2ebf36edb70399205817ee;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+d0df8e1dcf30785a964ecdda9bd86374d35960e1817b25a6b0963da38e0b1333;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+06510504f30feb1adc7e423d5a24e67e5b97acbfafe40f253a054be8b1c4e8d7;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+b279a41359367408c627ffa8d80051ed0f04c76fbf6aed79b3b2963203e08ade;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+7eea6e15bb13a3b65cca9405829123761bf7d12c6dc3b81ce499d8f6a0b25fb7;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+04f48ed27a83a57a971e73072ac5c769709306f2714022770fb364fd575fd462;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+090cefebef655be7f879f2f14bd849ac20c4051d0c13e55410a49789738fad98;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+38fa396770e0ecf60fe1ce089422283e2dc8599489bd18d5eb033255dd8e370c;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+2dde8881cd9b43633d69dfa60f23713d7375913845ac3fe9b4d8a618660c4528;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+
