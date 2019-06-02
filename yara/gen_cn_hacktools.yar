@@ -1906,7 +1906,7 @@ rule IISPutScannesr {
 		uint16(0) == 0x5a4d and filesize < 500KB and all of them
 }
 
-rule Generate {
+rule HKTL_Unkown_CN_Generate {
 	meta:
 		description = "Chinese Hacktool Set - file Generate.exe"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
