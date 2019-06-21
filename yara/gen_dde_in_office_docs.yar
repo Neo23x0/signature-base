@@ -54,7 +54,7 @@ rule Office_OLE_DDE {
    strings:
       $a = /\x13\s*DDE\b[^\x14]+/ nocase
 
-      $r1 = "SummaryInformation" wide
+      $r1 = { 52 00 6F 00 6F 00 74 00 20 00 45 00 6E 00 74 00 72 00 79 }
    condition:
       uint32be(0) == 0xD0CF11E0 and $a and not $r1
 }
