@@ -58,3 +58,38 @@ rule SUSP_WordDoc_VBA_Macro_Strings {
    condition:
       uint16(0) == 0xcfd0 and filesize < 800KB and all of them
 }
+
+rule SUSP_OfficeDoc_VBA_Base64Decode {
+   meta:
+      description = "Detects suspicious VBA code with Base64 decode functions"
+      author = "Florian Roth"
+      reference = "https://github.com/cpaton/Scripting/blob/master/VBA/Base64.bas"
+      date = "2019-06-21"
+      score = 70
+      hash1 = "52262bb315fa55b7441a04966e176b0e26b7071376797e35c80aa60696b6d6fc"
+   strings:
+      $s1 = "B64_CHAR_DICT" ascii
+      $s2 = "Base64Decode" ascii
+      $s3 = "Base64Encode" ascii
+   condition:
+      uint16(0) == 0xcfd0 and filesize < 60KB and 2 of them
+}
+
+rule SUSP_VBA_FileSystem_Access {
+   meta:
+      description = "Detects suspciius VBA that writes to disk and is activated on document open"
+      author = "Florian Roth"
+      reference = "Internal Research"
+      date = "2019-06-21"
+      score = 60
+      hash1 = "52262bb315fa55b7441a04966e176b0e26b7071376797e35c80aa60696b6d6fc"
+   strings:
+      $s1 = "\\Common Files\\Microsoft Shared\\" wide
+      $s2 = "Scripting.FileSystemObject" ascii
+
+      $a1 = "Document_Open" ascii
+      $a2 = "WScript.Shell" ascii
+      $a3 = "AutoOpen" fullword ascii
+   condition:
+      uint16(0) == 0xcfd0 and filesize < 100KB and all of ($s*) and 1 of ($a*)
+}
