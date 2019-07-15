@@ -93,3 +93,18 @@ rule SUSP_VBA_FileSystem_Access {
    condition:
       uint16(0) == 0xcfd0 and filesize < 100KB and all of ($s*) and 1 of ($a*)
 }
+
+rule SUSP_Excel_IQY_RemoteURI_Syntax {
+   meta:
+      description = "Detects files with Excel IQY RemoteURI syntax"
+      author = "Nick Carr"
+      score = 65
+      reference = "https://twitter.com/ItsReallyNick/status/1030330473954897920"
+      date = "2018-08-17"
+   strings:
+      $URL = "http"
+   condition:
+      uint32(0) == 0x0d424557 and uint32(4) == 0x0a0d310a
+      and filesize < 1MB
+      and $URL
+}
