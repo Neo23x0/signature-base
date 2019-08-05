@@ -22,5 +22,5 @@ rule MAL_Ransomware_GermanWiper {
       $RansomNote = "Entschluesselungs_Anleitung.html" ascii
    condition:
       uint16(0) == 0x5A4D and filesize < 1000KB and
-      ( 1 of ($x*) or 3 of them
+      ( 1 of ($x*) or 3 of them )
 }
