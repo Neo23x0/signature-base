@@ -9029,3 +9029,29 @@ ec54ef8d79bf30b63c5249af7a8a3c652595b923;Turla Snake malware - RPC backdoor (cli
 d3df3f32716042404798e3e9d691aced2f78bdd5;Turla Snake malware - File exfiltration RPC plugin Win32/Turla.BZ - https://www.welivesecurity.com/2019/05/29/turla-powershell-usage/
 9d1c563e5228b2572f5ca14f0ec33ca0deda3d57;Turla Snake malware - RPCSpoofServerInstaller Win64/Turla.BS - https://www.welivesecurity.com/2019/05/29/turla-powershell-usage/
 b948e25d061039d64115cfde74d2ff4372e83765;Turla Snake malware - RPC interface patcher Win64/Turla.BR - https://www.welivesecurity.com/2019/05/29/turla-powershell-usage/
+
+04fb0ccf3ef309b1cd587f609ab0e81e;APT 41 - CRACKSHOT https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+0b2e07205245697a749e422238f9f785;APT 41 - CRACKSHOT https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+272537bbd2a8e2a2c3938dc31f0d2461;APT 41 - CRACKSHOT https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+dd792f9185860e1464b4346254b2101b;APT 41 - CRACKSHOT https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+fcfab508663d9ce519b51f767e902806;APT 41 - CRACKSHOT https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+5b26f5c7c367d5e976aaba320965cc7f;APT 41 - GEARSHIFT https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+f8c89ccd8937f2b760e6706738210744;APT 41 - GEARSHIFT https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+46a557fbdce734a6794b228df0195474;APT 41 - HIGHNOON https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+77c60e5d2d99c3f63f2aea1773ed4653;APT 41 - HIGHNOON https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+849ab91e93116ae420d2fe2136d24a87;APT 41 - HIGHNOON https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+36711896cfeb67f599305b590f195aec;APT 41 - HIGHNOON.BIN https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+7d51ea0230d4692eeedc2d5a4cd66d2d;APT 41 - HIGHNOON.BIN https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+a0a96138b57ee24eed31b652ddf60d4e;APT 41 - HIGHNOON.BIN https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+ba08b593250c3ca5c13f56e2ca97d85e;APT 41 - JUMPALL https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+223e4cc4cf5ce049f300671697a17a01;APT 41 - POISONPLUG https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+37e100dd8b2ad8b301b130c2bca3f1ea;APT 41 - POISONPLUG https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+557ff68798c71652db8a85596a4bab72;APT 41 - POISONPLUG https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+830a09ff05eac9a5f42897ba5176a36a;APT 41 - POISONPLUG https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+b0877494d36fab1f9f4219c3defbfb19;APT 41 - POISONPLUG https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+c8403fabda4d036a55d0353520e765c9;APT 41 - POISONPLUG https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+ff8d92dfbcda572ef97c142017eec658;APT 41 - POISONPLUG https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+ffd0f34739c1568797891b9961111464;APT 41 - POISONPLUG https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+72584d6b7dd10c82d9118567b548b2b1;APT 41 - POISONBLUG.SHADOW https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+97363d50a279492fda14cbab53429e75;APT 41 - POISONBLUG.SHADOW https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+a6c7db170bc7a4ee2cdb192247b59cd6;APT 41 - POISONBLUG.SHADOW https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
