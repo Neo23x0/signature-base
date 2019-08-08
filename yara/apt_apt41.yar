@@ -15,7 +15,7 @@ rule APT_APT41_POISONPLUG_3 {
    meta:
       description = "Detects APT41 malware POISONPLUG"
       author = "Florian Roth"
-      reference = "Internal Research"
+      reference = "https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html"
       date = "2019-08-07"
       score = 80
       hash1 = "70c03ce5c80aca2d35a5555b0532eedede24d4cc6bdb32a2c8f7e630bba5f26e"
@@ -33,7 +33,7 @@ rule APT_APT41_POISONPLUG_SHADOW {
    meta:
       description = "Detects APT41 malware POISONPLUG SHADOW"
       author = "Florian Roth"
-      reference = "Internal Research"
+      reference = "https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html"
       date = "2019-08-07"
       score = 85
       hash1 = "462a02a8094e833fd456baf0a6d4e18bb7dab1a9f74d5f163a8334921a4ffde8"
@@ -45,7 +45,7 @@ rule APT_APT41_CRACKSHOT {
    meta:
       description = "Detects APT41 malware CRACKSHOT"
       author = "Florian Roth"
-      reference = "Internal Research"
+      reference = "https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html"
       date = "2019-08-07"
       score = 85
       hash1 = "993d14d00b1463519fea78ca65d8529663f487cd76b67b3fd35440bcdf7a8e31"
@@ -64,7 +64,7 @@ rule APT_APT41_POISONPLUG_2 {
    meta:
       description = "Detects APT41 malware POISONPLUG"
       author = "Florian Roth"
-      reference = "Internal Research"
+      reference = "https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html"
       date = "2019-08-07"
       score = 70
       hash1 = "0055dfaccc952c99b1171ce431a02abfce5c6f8fb5dc39e4019b624a7d03bfcb"
@@ -81,7 +81,7 @@ rule APT_APT41_POISONPLUG {
    meta:
       description = "Detects APT41 malware POISONPLUG"
       author = "Florian Roth"
-      reference = "Internal Research"
+      reference = "https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html"
       date = "2019-08-07"
       score = 80
       hash1 = "2eea29d83f485897e2bac9501ef000cc266ffe10019d8c529555a3435ac4aabd"
@@ -104,7 +104,7 @@ rule APT_APT41_HIGHNOON {
    meta:
       description = "Detects APT41 malware HIGHNOON"
       author = "Florian Roth"
-      reference = "Internal Research"
+      reference = "https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html"
       date = "2019-08-07"
       score = 85
       hash1 = "63e8ed9692810d562adb80f27bb1aeaf48849e468bf5fd157bc83ca83139b6d7"
@@ -132,7 +132,7 @@ rule APT_APT41_HIGHNOON_2 {
    meta:
       description = "Detects APT41 malware HIGHNOON"
       author = "Florian Roth"
-      reference = "Internal Research"
+      reference = "https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html"
       date = "2019-08-07"
       hash1 = "79190925bd1c3fae65b0d11db40ac8e61fb9326ccfed9b7e09084b891089602d"
    strings:
@@ -153,7 +153,7 @@ rule APT_APT41_HIGHNOON_BIN {
    meta:
       description = "Detects APT41 malware HIGHNOON.BIN"
       author = "Florian Roth"
-      reference = "Internal Research"
+      reference = "https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html"
       date = "2019-08-07"
       score = 90
       hash1 = "490c3e4af829e85751a44d21b25de1781cfe4961afdef6bb5759d9451f530994"
@@ -175,7 +175,7 @@ rule APT_APT41_HIGHNOON_BIN_2 {
    meta:
       description = "Detects APT41 malware HIGHNOON.BIN"
       author = "Florian Roth"
-      reference = "Internal Research"
+      reference = "https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html"
       date = "2019-08-07"
       score = 85
       hash1 = "63e8ed9692810d562adb80f27bb1aeaf48849e468bf5fd157bc83ca83139b6d7"
