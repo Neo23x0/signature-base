@@ -197,8 +197,10 @@ rule SUSP_PowerShell_IEX_Download_Combo {
       hash1 = "13297f64a5f4dd9b08922c18ab100d3a3e6fdeab82f60a4653ab975b8ce393d5"
    strings:
       $x1 = "IEX ((new-object net.webclient).download" ascii nocase
+
+      $fp = "Remote Desktop in the Appveyor" ascii
    condition:
-      1 of them
+      $x1 and not 1 of ($fp*)
 }
 
 rule SUSP_Win32dll_String {
