@@ -3109,4 +3109,9 @@ C:\\Windows\\[^\\]{1,20}\.(js|ps1|vbs);50
 # Turla Snake Malware https://www.welivesecurity.com/2019/05/29/turla-powershell-usage/
 \\Users\\Public\\iCore\.dat;100
 
+# LYCEUM Campaign https://www.secureworks.com/blog/lyceum-takes-center-stage-in-middle-east-campaign
+\\Public\\PublicLib\\k1\.ps1;100
+\\Decrypt-RDCMan\.ps1;80
+\\Get-LAPSP\.ps1;70
+
 # End
