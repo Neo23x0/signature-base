@@ -80,14 +80,6 @@ private rule hatman_loadoff : hatman {
     condition:
         $loadoff_be or $loadoff_le
 }
-private rule hatman_injector_int : hatman {
-    condition:
-        hatman_memcpy and hatman_origaddr and hatman_loadoff
-}
-private rule hatman_payload_int : hatman {
-    condition:
-        hatman_memcpy and hatman_origcode and hatman_mftmsr
-}
 
 /* Actual public rules to match using the private rules. */
 
@@ -107,7 +99,7 @@ rule hatman_injector : hatman {
         date = "2017/12/19"
         author = "DHS/NCCIC/ICS-CERT"
     condition:
-        hatman_injector_int and not hatman_payload_int
+        ( hatman_memcpy and hatman_origaddr and hatman_loadoff ) and not ( hatman_origcode and hatman_mftmsr )
 }
 rule hatman_payload : hatman {
     meta:
@@ -116,25 +108,5 @@ rule hatman_payload : hatman {
         date = "2017/12/19"
         author = "DHS/NCCIC/ICS-CERT"
     condition:
-        hatman_payload_int and not hatman_injector_int
-}
-rule hatman_combined : hatman {
-    meta:
-        description = "Detects Hatman malware"
-        reference = "https://ics-cert.us-cert.gov/MAR-17-352-01-HatMan%E2%80%94Safety-System-Targeted-Malware"
-        date = "2017/12/19"
-        author = "DHS/NCCIC/ICS-CERT"
-    condition:
-        hatman_injector_int and hatman_payload_int and hatman_dividers
-}
-
-rule hatman : hatman {
-    meta:
-        reference = "https://ics-cert.us-cert.gov/MAR-17-352-01-HatMan%E2%80%94Safety-System-Targeted-Malware"
-        date = "2017/12/19"
-        author = "DHS/NCCIC/ICS-CERT"
-        description = "Matches the known samples of the HatMan malware."
-    condition:
-        hatman_compiled_python or hatman_injector or hatman_payload
-            or hatman_combined
+        ( hatman_memcpy and hatman_origcode and hatman_mftmsr ) and not ( hatman_origaddr and hatman_loadoff )
 }
