@@ -4,6 +4,7 @@ rule Methodology_Suspicious_Shortcut_Local_URL
     author = "@itsreallynick (Nick Carr), @QW5kcmV3 (Andrew Thompson)"
     description = "Detects local script usage for .URL persistence"
     reference = "https://twitter.com/cglyer/status/1176184798248919044"
+    score = 50
   strings:
     $file = "URL=file:///" nocase
     $url_clsid = "[{000214A0-0000-0000-C000-000000000046}]"
@@ -20,6 +21,7 @@ rule Methodology_Suspicious_Shortcut_SMB_URL
     description = "Detects remote SMB path for .URL persistence"
     reference = "https://twitter.com/cglyer/status/1176184798248919044"
     sample = "e0bef7497fcb284edb0c65b59d511830"
+    score = 50
   strings:
     $file = /URL=file:\/\/[a-z0-9]/ nocase
     $url_clsid = "[{000214A0-0000-0000-C000-000000000046}]"
@@ -34,6 +36,7 @@ rule Methodology_Suspicious_Shortcut_IconRemote_HTTP
   meta:
     author = "@itsreallynick (Nick Carr)"
     description = "Detects .URL persistence file"
+    score = 60
     reference = "https://twitter.com/ItsReallyNick/status/1176241449148588032"
   strings:
     $icon = "IconFile=http" nocase
@@ -49,6 +52,7 @@ rule Methodology_Suspicious_Shortcut_IconRemote_SMB
   meta:
     author = "@itsreallynick (Nick Carr)"
     description = "Detects .URL persistence file"
+    score = 50
     reference = "https://twitter.com/ItsReallyNick/status/1176241449148588032"
   strings:
     $icon = "IconFile=file://" nocase
@@ -64,6 +68,7 @@ rule Methodology_Suspicious_Shortcut_WebDAV
   meta:
     author = "@itsreallynick (Nick Carr)"
     description = "Detects .URL persistence file"
+    score = 50
     reference = "https://twitter.com/cglyer/status/1176243536754282497"
   strings:
     $file1 = /URL=\/\/[A-Za-z0-9]/
