@@ -23,7 +23,7 @@ rule APT_ArtraDownloader2_Aug19_1 {
                74 65 6E 74 2D 6C 65 6E 67 74 68 3A 20 25 64 0D
                0A 0D 0A 25 73 }
       $x1 = "Tpguxbsf]Njdsptpgu" ascii
-      $x2 = ".xxx.gpsn.vsmfodpefe" ascii
+      $x2 = ".gpsn.vsmfodpefe" ascii
    condition:
       uint16(0) == 0x5a4d and filesize < 600KB and 1 of them
 }
