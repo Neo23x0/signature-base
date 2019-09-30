@@ -9055,3 +9055,12 @@ ffd0f34739c1568797891b9961111464;APT 41 - POISONPLUG https://www.fireeye.com/blo
 72584d6b7dd10c82d9118567b548b2b1;APT 41 - POISONBLUG.SHADOW https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
 97363d50a279492fda14cbab53429e75;APT 41 - POISONBLUG.SHADOW https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
 a6c7db170bc7a4ee2cdb192247b59cd6;APT 41 - POISONBLUG.SHADOW https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+
+c613fcccb380f7e3ce157c4f620efca503c1bad3;Sofacy malware - (eml file) - DOC/TrojanDownloader.Agent.AMY
+6f281b30d8d6a9bc1dbe2fe73995aac382c4a543;Sofacy malware - 612243236.docx - DOC/TrojanDownloader.Agent.AMY
+f3f945fb22916f82cb7407cde2a80a68cd83b074;Sofacy malware - wordData.dotm - VBA/TrojanDropper.Agent.AIP
+a56af5b44624e8ada60057fd7f39af5b3de10724;Sofacy malware - lmss.zip - Win32/TrojanDownloader.Sednit.BK
+b8ac400e1deb6e90fa4e2adb150c511c98bafc6e;Sofacy malware - lmss.doc - VBA/TrojanDropper.Agent.AIQ
+f0793e02180f3ccf48e41bd67ec1161d93f07e01;Sofacy malware - lmss.exe - Win32/TrojanDownloader.Sednit.BK
+04303024ff453f918925d7160abbd199f137a442;Sofacy malware - ospsvc.dll - Win32/Sednit.DI
+c96db85ece2b57a9e82ba36b5f31ca9d2051a6f0;Sofacy malware - osppsvc.exe - Win32/Sednit.DJ
