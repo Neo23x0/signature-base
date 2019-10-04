@@ -321,7 +321,7 @@ rule SUSP_XMRIG_Reference {
 
 rule SUSP_Just_EICAR {
    meta:
-      description = "Just an EICAR test file - this is boring stuff"
+      description = "Just an EICAR test file - this is boring but users asked for it"
       author = "Florian Roth"
       reference = "http://2016.eicar.org/85-0-Download.html"
       date = "2019-03-24"

@@ -77,7 +77,7 @@ rule SUSP_OfficeDoc_VBA_Base64Decode {
 
 rule SUSP_VBA_FileSystem_Access {
    meta:
-      description = "Detects suspciius VBA that writes to disk and is activated on document open"
+      description = "Detects suspicious VBA that writes to disk and is activated on document open"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2019-06-21"
