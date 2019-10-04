@@ -1,3 +1,4 @@
+import "pe"
 
 rule MAL_Trickbot_Oct19_1 {
    meta:
