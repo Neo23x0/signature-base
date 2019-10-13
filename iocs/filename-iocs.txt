@@ -1854,7 +1854,6 @@ fdp\.exe;60;\\bin\\
 \\Windows\\inf\\[^\\]{1,20}\.(exe|ps1);60
 
 # Cloud Hopper Indicator - https://goo.gl/OkB63q
-\\mPclient\.dll;90
 \\mfeann\.data;90
 \\vba32arch\.dll;90
 \\SFCNS\.dat;90
