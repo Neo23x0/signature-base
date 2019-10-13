@@ -3108,4 +3108,37 @@ C:\\Windows\\[^\\]{1,20}\.(js|ps1|vbs);50
 \\Decrypt-RDCMan\.ps1;80
 \\Get-LAPSP\.ps1;70
 
+# Suspicious Files in Root of Recycle.Bin
+:\\\$Recycle\.Bin\\[^\\]{1,20}\.(exe|vbs|ps1|js|bat|dll);85
+
+# Stealth Falcon Filename IOC https://www.welivesecurity.com/2019/09/09/backdoor-stealth-falcon-group/
+\\ImageIndexer\.dll;80
+\\WindowsBackup\.dll;80
+\\WindowsSearchCache\.dll;80
+\\JavaUserUpdater\.dll;80
+
+# TortoiseShell report https://www.symantec.com/blogs/threat-intelligence/tortoiseshell-apt-supply-chain
+\\Windows\\temp\\rconfig\.xml;80
+\\Windows\\temp\\bak\.exe;80
+\\Sha432\.exe;100
+\\stereoversioncontrol\.exe;80
+\\get-logon-history\.ps1;75
+
+# Emotet Indicator https://app.any.run/tasks/fb5d3877-4179-4bb8-aea4-1cff3a4793ed/
+\\msptermsizes\\msptermsizes\.exe;90
+:\\Users\\[^\\]{1,16}\\[0-9]{1,4}\.exe;65
+
+# Looks like an LSASS process memory dump (often contains credentials)
+\\lsass\.dmp;60
+
+# Suspicious Extension in AppPatch folder
+c:\\windows\\AppPatch\\[^\\]{1,20}\.(exe|vbs|ps1|bat);70
+c:\\windows\\AppPatch\\custom\\[^\\]{1,20}\.(exe|vbs|ps1|bat);70
+
+# MESSAGETAP components https://twitter.com/cglyer/status/1182415016542248960/photo/1
+\\keyword_param\.txt;70
+
+# TeamViewerPortable - propably a policy violation https://portableapps.com/apps/utilities/teamviewer_portable
+\\TeamViewerPortable;60
+
 # End
