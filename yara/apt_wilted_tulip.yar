@@ -78,8 +78,7 @@ rule WiltedTulip_vminst {
       $s10 = "ERROR in %S/%d" fullword ascii
    condition:
       uint16(0) == 0x5a4d and filesize < 900KB and (
-         ( 1 of ($x*) or 5 of ($s*) ) or
-         pe.exports("?ReflectiveLoader@@YGKPAX@Z")
+         1 of ($x*) or 5 of ($s*)
       )
 }
 
