@@ -9064,3 +9064,80 @@ b8ac400e1deb6e90fa4e2adb150c511c98bafc6e;Sofacy malware - lmss.doc - VBA/TrojanD
 f0793e02180f3ccf48e41bd67ec1161d93f07e01;Sofacy malware - lmss.exe - Win32/TrojanDownloader.Sednit.BK
 04303024ff453f918925d7160abbd199f137a442;Sofacy malware - ospsvc.dll - Win32/Sednit.DI
 c96db85ece2b57a9e82ba36b5f31ca9d2051a6f0;Sofacy malware - osppsvc.exe - Win32/Sednit.DJ
+
+395E87C5BD00F78BF4C63880C6982A7941A2ECD0;Winnti Report - .NET injector - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+08B825C87171500E694798527E17A849160B0A72;Winnti Report - VBS injector - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+97709D62531D12A6994BCE5787D519DB52435A62;Winnti Report - InnerLoader - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+252640016FAEFF97FA22EB2B736973ED16D73FBE;Winnti Report - InnerLoader - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+F5BA05240B1609D4131D5DCA7F5E6E90B5748004;Winnti Report - InnerLoader - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+E14A6A8447CE1D45494E613D6327430D9025A2E5;Winnti Report - NetAgent - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+74A68DAD4BC87EACCA93106832F8B4AEE82843A2;Winnti Report - NetAgent - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+5AB3461B17EE3806ABBB06B8966F6B0011F3D8F2;Winnti Report - NetAgent - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+A1AED6FD6990A74590864F9D2A6E714A715FCE3E;Winnti Report - SK3 - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+E0F276ED16027ED2953A7B0E5274D3F563A75A9D;Winnti Report - SK3 - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+14C32D0C0346EF4A2B1993FDA9AAB670806B9284;Winnti Report - SK3 - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+52A8C38890360D0B32993A44C9E94E660F3FA8F4;Winnti Report - Merged NetAgent & ProcTran - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+20CA6EAE9D6CF2275F9BFD24A0E07F75BEE119BA;Winnti Report - Merged NetAgent & ProcTran - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+DBE3EECE00C255A3FDF924B82621394377B0E865;Winnti Report - Merged NetAgent & ProcTran - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+A08922372042B4C3C0FAA120E9DD626823CDB3C7;Winnti Report - UserFunction - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+93F623C91F579D33788F84A9A83478CD2E9646AA;Winnti Report - UserFunction - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+44DDBF7AA256A4B0E25DE585E95EA520BF2C4891;Winnti Report - ProcTran - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+75B7A4B7E01CECC9AFBDAB01C49E9D7FCCACFDC0;Winnti Report - ProcTran - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+82072CB53416C89BFEE95B239F9A90677A0848DF;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+634344FAFD6E16F171B0857962149659639FDF41;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+ED0C9354D34D6E9F09B7038D391E846CDD9E0EAE;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+E6D43344A354EB17E0E0E76AD391FBCAF9C34119;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+22B82AE0819DA2FD887BE55A8508FFB46D02CA99;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+F14694BDDE921B31030300CC9BDC5574BA3D9F74;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+971BB08196BBA400B07CF213345F55CE0A6EEDC8;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+438178A5816D3EF6AC02D4DB929A48FA558E514C;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+4DC5FADECE500CCD8CC49CFCF8A1B59BAEE3382A;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+C44D06F79E5E42B08BE17A8A7DBAF61400F1DE28;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+672BB391B92681ADCFCFB4F2F728EDF32F2FB8FE;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+9E8883A6DE72D338E2C0C1A0E291D013A0CE9058;Winnti Report - Payload in ADS - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+B09ADDDE1523C223C4F8FBF0E541C627E4A04400;Winnti Report - Payload in ADS - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+BD1F1494B8D18DAF07DE7D47549A7E27FF3FFD05;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+757FF5EC3DC53ABBB62391B14883EF460F6FD404;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+BDBADB2E3EEDD72DD6F8D9235699A139CAB69AAE;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+4D090E6B749D4D3D8E413F44EB2DE6925C78CD82;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+B4446480813D3BFC8DE4049A32A72CC0EB0D8094;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+95A41FDDDC8CAF097902B484F8440BDDAD0C5B32;Winnti Report - Winnti droppers (Install.exe) - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+D9A54F79CA15C7E363DBE62B4D1C5C8D103103A2;Winnti Report - Winnti droppers (Install.exe) - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+DAF1CD345F44CB2BF1CFA8D68EECAF1961CBD51F;Winnti Report - Winnti droppers (Install.exe) - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+3DF753F56BB53F72D3DF735A898D7221C3B5272E;Winnti Report - Winnti droppers (Install.exe) - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+6C10C9D46531FBC5F0C2372A116AB31C730ED4B7;Winnti Report - Winnti droppers (Install.exe) - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+D74F1C8257409AD964DB22087A559609C2D0D978;Winnti Report - Winnti droppers (Install.exe) - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+E6677E5E2D68BC544B210E69D9C8DF6A2752C20A;Winnti Report - Winnti droppers (Install.exe) - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+EC0E4A6E2E630267C13B449ED4CF3F04598E40DF;Winnti Report - Winnti droppers (Install.exe) - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+F61403E7730D17B967DA3143BC7CB33EEBE826C0;Winnti Report - Winnti droppers (Install.exe) - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+FD9DED44C47585541B89FFD25907A9A2ED41A995;Winnti Report - Winnti droppers (Install.exe) - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+E0B1005DA5B35E31F09FC82A694F188A92CCA85D;Winnti Report - Winnti droppers (Install.exe) - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+CD36CAF7F7CD9F161743348D2EA69A9E0254C3B5;Winnti Report - Winnti droppers (Install.exe) - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+2C35E28FBA5D05F10430C4D70E4938426F38E228;Winnti Report - Winnti droppers (Install.exe) - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+1AE6FBAD7AF15FB7E60DBBFEA964F0E49372AE53;Winnti Report - Winnti droppers (Install.exe) - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+1EC1B5A902869ED5D51012826A34FFA9225853CB;Winnti Report - Winnti droppers (Install.exe) - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+B08D72576B93687DFC61ABFA740DD39490D6A262;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+DE197A5DC5B38E4B72BC37C14CF38E577DDEB8B5;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+4EA2ED895111A70B9A59DF37343440E4A3A97A47;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+DE197A5DC5B38E4B72BC37C14CF38E577DDEB8B5;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+C452BDF6FF99243A12789FF4B99AC71A5DA5F696;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+B08D72576B93687DFC61ABFA740DD39490D6A262;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+24AA07A0B3665BF97A1545B0F2749CD509F1B4CA;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+E26B59789029D23BD9232FA6B1C90EC9379B9066;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+C262D297EAEC622E3FB8E1FC2A0017E28168879A;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+645720EC88C993B28D982C0AD89A5ACA79CE7E16;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+B6819C870DF88A973EB48B572AD1CFEAEB6A655A;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+8DF84B01B08EE983C66BECC59C0F361D246A96ED;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+723B27ABA08CBB3A9CA42F7E8350451D00829E5A;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+55155C3A7B993584A07ACDBF92F2200804C00E02;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+5105F3020B5E680FA66D664C7F8C811F072933CF;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+D62A0BD08C5B435D1B8A0505E8018D58A9667B2C;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+C262D297EAEC622E3FB8E1FC2A0017E28168879A;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+7B0AAE2AA17BD5712DD682F35C7A8E3E1CDCC57C;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+47A262BAE22BB77850A1E3E38F8E529189D291F6;Winnti Report - AceHash - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+35C026F8C35BFCEECD23EACE19F09D3DF2FD72DA;Winnti Report - AceHash - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+43FF18CEB3814F1DAE940AD977C59A96BB016E76;Winnti Report - AceHash - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+D24BBB898A4A301870CAB85F836090B0FC968163;Winnti Report - AceHash - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+70B21E3AC69F0220784228375BA6BEF37FE0C488;Winnti Report - XMRig - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+9BFB1C92489DA812DBE53B2A8E2CC2724CF74B4E;Winnti Report - XMRig - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+EE5FEB8E9428A04C454966F6E19E202CCB33545F;Winnti Report - XMRig - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
