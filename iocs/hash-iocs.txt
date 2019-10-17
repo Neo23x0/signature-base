@@ -9161,3 +9161,22 @@ ee5b707249c562dc916b125e32950c8d;APT41 tinyurl.com/y4tu7uan DEADEYE.APPEND POISO
 ff8d92dfbcda572ef97c142017eec658;APT41 tinyurl.com/y4tu7uan DEADEYE.APPEND POISONPLUG
 ffd0f34739c1568797891b9961111464;APT41 tinyurl.com/y4tu7uan DEADEYE.APPEND POISONPLUG
 5322816c2567198ad3dfc53d99567d6e;APT41 tinyurl.com/y4tu7uan DEADEYE.DOWN
+
+4BA559C403FF3F5CC2571AE0961EAFF6CF0A50F6;Operation Ghost Dukes PolyglotDuke - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+CF14AC569A63DF214128F375C12D90E535770395;Operation Ghost Dukes PolyglotDuke - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+539D021CD17D901539A5E1132ECAAB7164ED5DB5;Operation Ghost Dukes PolyglotDuke - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+0E25EE58B119DD48B7C9931879294AC3FC433F50;Operation Ghost Dukes PolyglotDuke - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+D625C7CE9DC7E56A29EC9A81650280EDC6189616;Operation Ghost Dukes PolyglotDuke - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+0A5A7DD4AD0F2E50F3577F8D43A4C55DDC1D80CF;Operation Ghost Dukes RegDuke Loader - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+F7FD63C0534D2F717FD5325D4397597C9EE4065F;Operation Ghost Dukes RegDuke Loader - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+194D8E2AE4C723CE5FE11C4D9CFEFBBA32DCF766;Operation Ghost Dukes RegDuke Loader - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+64D6C11FFF2C2AADAACEE01B294AFCC751316176;Operation Ghost Dukes RegDuke Loader - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+6ACC0B1230303F8CF46152697D3036D69EA5A849;Operation Ghost Dukes RegDuke Loader - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+170BE45669026F3C1FC5BA2D48817DBF950DA3F6;Operation Ghost Dukes RegDuke Loader - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+5905C55189C683BC37258AEC28E916C41948CD1C;Operation Ghost Dukes RegDuke Backdoor - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+B05CABA461000C6EBD8B237F318577E9BCCD6047;Operation Ghost Dukes MiniDuke - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+718C2CE6170D6CA505297B41DE072D8D3B873456;Operation Ghost Dukes MiniDuke - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+A88DA2DD033775F7ABC8D6FB3AD5DD48EFBEADE1;Operation Ghost Dukes FatDuke - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+DB19171B239EF6DE8E83B2926EADC652E74A5AFA;Operation Ghost Dukes FatDuke - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+9E96B00E9F7EB94A944269108B9E02D97142EEDC;Operation Ghost Dukes FatDuke Loader - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+AF2B46D4371CE632E2669FEA1959EE8AF4EC39CE;Operation Ghost Dukes LiteDuke - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
