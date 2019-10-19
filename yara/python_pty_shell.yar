@@ -7,16 +7,9 @@ rule Reverse_Connect_TCP_PTY_Shell {
       reference = "https://github.com/infodox/python-pty-shells/blob/master/tcp_pty_backconnect.py"
    strings:
       $s1 = "os.dup2(s.fileno(),1)" fullword ascii
-      $s2 = "s.connect((lhost, lport))" fullword ascii
-      $s3 = "pty.spawn(\"/bin/")" fullword ascii
-      $s4 = "s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)" fullword ascii
-      $s5 = "import pty" fullword ascii
-      $s6 = "#!/usr/bin/python2" fullword ascii
-      $s7 = "lport = " fullword ascii
-      $s8 = "os.putenv(\"HISTFILE\",'/dev/null')" fullword ascii
-      $s9 = "os.dup2(s.fileno(),2)" fullword ascii
-      $s10 = "os.dup2(s.fileno(),0)" fullword ascii
-      $s11 = "socket.socket(socket.AF_INET, socket.SOCK_STREAM)" fullword ascii
+      $s2 = "pty.spawn(\"/bin/")" fullword ascii
+      $s3 = "os.putenv(\"HISTFILE\",'/dev/null')" fullword ascii
+      $s4 = "socket.socket(socket.AF_INET, socket.SOCK_STREAM)" fullword ascii
    condition:
-      filesize < 1KB and 7 of them
+      filesize < 1KB and 2 of them
 }
