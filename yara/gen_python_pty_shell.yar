@@ -1,6 +1,6 @@
-rule Reverse_Connect_TCP_PTY_Shell {
+rule HKTL_Reverse_Connect_TCP_PTY_Shell {
    meta:
-      description = "Reverse Connect TCP PTY Shell"
+      description = "Detects reverse connect TCP PTY shell"
       author = "Jeff Beley"
       date = "2019-10-19"
       hash1 = "cae9833292d3013774bdc689d4471fd38e4a80d2d407adf9fa99bc8cde3319bf"
