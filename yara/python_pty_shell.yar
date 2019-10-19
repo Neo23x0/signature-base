@@ -7,7 +7,7 @@ rule Reverse_Connect_TCP_PTY_Shell {
       reference = "https://github.com/infodox/python-pty-shells/blob/master/tcp_pty_backconnect.py"
    strings:
       $s1 = "os.dup2(s.fileno(),1)" fullword ascii
-      $s2 = "pty.spawn(\"/bin\/")" fullword ascii
+      $s2 = "pty.spawn(\"/bin/\")" fullword ascii
       $s3 = "os.putenv(\"HISTFILE\",'/dev/null')" fullword ascii
       $s4 = "socket.socket(socket.AF_INET, socket.SOCK_STREAM)" fullword ascii
    condition:
