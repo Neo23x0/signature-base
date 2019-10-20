@@ -3,7 +3,7 @@ rule SUSP_WER_Critical_HeapCorruption {
    meta:
       description = "Detects a crashed application that crashed due to a heap corruption error (could be a sign of exploitation)"
       author = "Florian Roth"
-      reference = "Internal Research"
+      reference = "https://twitter.com/cyb3rops/status/1185459425710092288"
       date = "2019-10-18"
       score = 45
    strings:
@@ -20,7 +20,7 @@ rule SUSP_WER_Suspicious_Crash_Directory {
    meta:
       description = "Detects a crashed application executed in a suspicious directory"
       author = "Florian Roth"
-      reference = "Internal Research"
+      reference = "https://twitter.com/cyb3rops/status/1185585050059976705"
       date = "2019-10-18"
       score = 45
    strings:
