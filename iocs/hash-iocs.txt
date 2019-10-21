@@ -9180,3 +9180,8 @@ A88DA2DD033775F7ABC8D6FB3AD5DD48EFBEADE1;Operation Ghost Dukes FatDuke - https:/
 DB19171B239EF6DE8E83B2926EADC652E74A5AFA;Operation Ghost Dukes FatDuke - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
 9E96B00E9F7EB94A944269108B9E02D97142EEDC;Operation Ghost Dukes FatDuke Loader - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
 AF2B46D4371CE632E2669FEA1959EE8AF4EC39CE;Operation Ghost Dukes LiteDuke - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+
+18E4FEB988CB95D71D81E1964AA6280E22361B9F;Winnti MSSQL server backdoor - VMP Loader - https://www.welivesecurity.com/2019/10/21/winnti-group-skip2-0-microsoft-sql-server-backdoor/
+4AF89296A15C1EA9068A279E05CC4A41B967C956;Winnti MSSQL server backdoor - VMP Loader - https://www.welivesecurity.com/2019/10/21/winnti-group-skip2-0-microsoft-sql-server-backdoor/
+A2571946AB181657EB825CDE07188E8BCD689575;Winnti MSSQL server backdoor - Inner-Loader injector - https://www.welivesecurity.com/2019/10/21/winnti-group-skip2-0-microsoft-sql-server-backdoor/
+60B9428D00BE5CE562FF3D888441220290A6DAC7;Winnti MSSQL server backdoor - skip-2.0 - https://www.welivesecurity.com/2019/10/21/winnti-group-skip2-0-microsoft-sql-server-backdoor/
