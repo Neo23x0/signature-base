@@ -118,7 +118,7 @@ rule Nautilus_forensic_artificats {
         1 of them
 }
 
-rule Neuron2_Loader_Strings {
+rule APT_Neuron2_Loader_Strings {
    meta:
       description = "Rule for detection of Neuron2 based on strings within the loader"
       author = "NCSC"
