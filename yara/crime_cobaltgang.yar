@@ -68,7 +68,7 @@ rule CobaltGang_Malware_Aug17_2 {
       ( uint16(0) == 0x5a4d and filesize < 80KB and all of them )
 }
 
-rule CRIME_CobaltGang_Malware_Oct19_1 {
+rule MAL_CRIME_CobaltGang_Malware_Oct19_1 {
    meta:
       description = "Detects CobaltGang malware"
       author = "Florian Roth"
