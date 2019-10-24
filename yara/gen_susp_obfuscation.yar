@@ -9,6 +9,8 @@ rule SUSP_Base64_Encoded_Hex_Encoded_Code {
    strings:
       $x1 = { 78 34 4e ?? ?? 63 65 44 ?? ?? 58 48 67 }
       $x2 = { 63 45 44 ?? ?? 58 48 67 ?? ?? ?? 78 34 4e }
+
+      $fp1 = "Microsoft Azure Code Signp$"
    condition:
-      1 of them
+      1 of ($x*) and not 1 of ($fp*)
 }
