@@ -19,7 +19,7 @@ rule SUSP_XORed_MSDOS_Stub_Message {
       author = "Florian Roth"
       reference = "https://yara.readthedocs.io/en/latest/writingrules.html#xor-strings"
       date = "2019-10-28"
-      score = 65
+      score = 55
    strings:
       $xo1 = "This program cannot be run in DOS mode" xor ascii wide
       $xo2 = "This program must be run under Win32" xor ascii wide
