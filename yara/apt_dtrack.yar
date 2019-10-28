@@ -38,5 +38,6 @@ rule APT_MAL_DTRACK_Oct19_1 {
       $op2 = { 6a 00 8d 85 28 fc ff ff 50 6a 04 8d 4d f8 51 8b }
       $op3 = { 8b 85 c8 fd ff ff 03 85 a4 fc ff ff 89 85 b4 fc }
    condition:
-      $xc1 or 2 of ($sx*) or 4 of them
+      $xc1 or 2 of ($sx*) or 4 of them or
+      ( uint16(0) == 0x5a4d and filesize <= 3000KB and 2 of them )
 }
