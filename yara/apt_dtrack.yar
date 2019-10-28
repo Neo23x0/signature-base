@@ -14,12 +14,10 @@ rule APT_MAL_DTRACK_Oct19_1 {
       hash6 = "58fef66f346fe3ed320e22640ab997055e54c8704fc272392d71e367e2d1c2bb"
       hash7 = "9d9571b93218f9a635cfeb67b3b31e211be062fd0593c0756eb06a1f58e187fd"
    strings:
-      $xc1 = { 61 77 7A 32 71 72 32 31 79 66 62 6A 00 00 00 00
-               25 30 32 78 00 00 00 00 2E 2E 00 00 25 73 2A 2E
-               2A 00 00 00 5C 00 00 00 25 73 7E 00 5C 00 00 00
-               77 62 00 00 64 61 74 00 64 6B 77 65 72 6F 33 38
-               6F 65 72 41 5E 74 40 23 00 00 00 00 63 3A 5C 00
-               25 73 5C 25 63 2E 74 6D 70 }
+      $xc1 = { 25 73 2A 2E 2A 00 00 00 5C 00 00 00 25 73 7E 00
+               5C 00 00 00 77 62 00 00 64 61 74 00 64 6B 77 65
+               72 6F 33 38 6F 65 72 41 5E 74 40 23 00 00 00 00
+               63 3A 5C 00 25 73 5C 25 63 2E 74 6D 70 }
 
       $sx1 = "%02d.%02d.%04d - %02d:%02d:%02d:%03d : " fullword ascii
       $sx2 = "%s\\%c.tmp" fullword ascii
@@ -40,7 +38,5 @@ rule APT_MAL_DTRACK_Oct19_1 {
       $op2 = { 6a 00 8d 85 28 fc ff ff 50 6a 04 8d 4d f8 51 8b }
       $op3 = { 8b 85 c8 fd ff ff 03 85 a4 fc ff ff 89 85 b4 fc }
    condition:
-      ( uint16(0) == 0x5a4d and filesize <= 3000KB and 3 of them )
-      or 4 of them
-      or $xc1
+      $xc1 or 3 of ($sx*) or 4 of them
 }
