@@ -9185,3 +9185,33 @@ AF2B46D4371CE632E2669FEA1959EE8AF4EC39CE;Operation Ghost Dukes LiteDuke - https:
 4AF89296A15C1EA9068A279E05CC4A41B967C956;Winnti MSSQL server backdoor - VMP Loader - https://www.welivesecurity.com/2019/10/21/winnti-group-skip2-0-microsoft-sql-server-backdoor/
 A2571946AB181657EB825CDE07188E8BCD689575;Winnti MSSQL server backdoor - Inner-Loader injector - https://www.welivesecurity.com/2019/10/21/winnti-group-skip2-0-microsoft-sql-server-backdoor/
 60B9428D00BE5CE562FF3D888441220290A6DAC7;Winnti MSSQL server backdoor - skip-2.0 - https://www.welivesecurity.com/2019/10/21/winnti-group-skip2-0-microsoft-sql-server-backdoor/
+
+C9C39045FA14E94618DD631044053824;Calypso APT 2019 - Droppers and payload - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+E24A62D9826869BC4817366800A8805C;Calypso APT 2019 - Droppers and payload - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+F0F5DA1A4490326AA0FC8B54C2D3912D;Calypso APT 2019 - Droppers and payload - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+CB914FC73C67B325F948DD1BF97F5733;Calypso APT 2019 - Droppers and payload - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+6347E42F49A86AFF2DEA7C8BF455A52A;Calypso APT 2019 - Droppers and payload - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+0171E3C76345FEE31B90C44570C75BAD;Calypso APT 2019 - Droppers and payload - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+17E05041730DCD0732E5B296DB16D757;Calypso APT 2019 - Droppers and payload - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+69322703B8EF9D490A20033684C28493;Calypso APT 2019 - Droppers and payload - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+22953384F3D15625D36583C524F3480A;Calypso APT 2019 - Droppers and payload - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+1E765FED294A7AD082169819C95D2C85;Calypso APT 2019 - Droppers and payload - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+C84DF4B2CD0D3E7729210F15112DA7AC;Calypso APT 2019 - Droppers and payload - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+ACAAB4AA4E1EA7CE2F5D044F198F0095;Calypso APT 2019 - Droppers and payload - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+85CE60B365EDF4BEEBBDD85CC971E84D;Calypso APT 2019 - Droppers with the same payload - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+1ED72C14C4AAB3B66E830E16EF90B37B;Calypso APT 2019 - Droppers with the same payload - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+CB914FC73C67B325F948DD1BF97F5733;Calypso APT 2019 - Droppers with the same payload - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+E3E61F30F8A39CD7AA25149D0F8AF5EF;Calypso APT 2019 - Payload without dropper - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+974298EB7E2ADFA019CAE4D1A927AB07;Calypso APT 2019 - Payload without dropper - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+AA1CF5791A60D56F7AE6DA9BB1E7F01E;Calypso APT 2019 - Payload without dropper - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+05F472A9D926F4C8A0A372E1A7193998;Calypso APT 2019 - Payload without dropper - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+0D532484193B8B098D7EB14319CEFCD3;Calypso APT 2019 - Payload without dropper - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+E1A578A069B1910A25C95E2D9450C710;Calypso APT 2019 - Payload without dropper - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+2807236C2D905A0675878E530ED8B1F8;Calypso APT 2019 - Payload without dropper - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+847B5A145330229CE149788F5E221805;Calypso APT 2019 - Payload without dropper - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+D1A1166BEC950C75B65FDC7361DCDC63;Calypso APT 2019 - Payload without dropper - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+CCE8C8EE42FEAED68E9623185C3F7FE4;Calypso APT 2019 - Payload without dropper - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+43B7D48D4B2AFD7CF8D4BD0804D62E8B;Calypso APT 2019 - Hussar - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+617D588ECCD942F243FFA8CB13679D9C;Calypso APT 2019 - Hussar - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+5199EF9D086C97732D97EDDEF56591EC;Calypso APT 2019 - FlyingDutchman - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+06C1D7BF234CE99BB14639C194B3B318;Calypso APT 2019 - FlyingDutchman - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
