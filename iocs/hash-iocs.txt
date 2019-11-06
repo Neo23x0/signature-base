@@ -9235,3 +9235,10 @@ dcb76dc106e586c6f8bfa82832a66f525a9addb5450912004e92dd578ff2a60a;C2 With it All 
 98a4f69eff1f91f63fb74420ee4c16be508aa203d04f66e98b1dcb554def61ee;C2 With it All - zap64.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
 b1e883222f3205db59ff812c6f6097291df12b1784c9e64eef674ab3a173c07a;C2 With it All - q159.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
 
+1addee050504ba999eb9f9b1ee5b9f04;Dark Universe APT - https://securelist.com/darkuniverse-the-mysterious-apt-framework-27/94897/
+4b71ec0b2d23204e560481f138833371;Dark Universe APT - https://securelist.com/darkuniverse-the-mysterious-apt-framework-27/94897/
+4e24b26d76a37e493bb35b1a8c8be0f6;Dark Universe APT - https://securelist.com/darkuniverse-the-mysterious-apt-framework-27/94897/
+405ef35506dc864301fada6f5f1d0711;Dark Universe APT - https://securelist.com/darkuniverse-the-mysterious-apt-framework-27/94897/
+764a4582a02cc54eb1d5460d723ae3a5;Dark Universe APT - https://securelist.com/darkuniverse-the-mysterious-apt-framework-27/94897/
+c2edda7e766553a04b87f2816a83f563;Dark Universe APT - https://securelist.com/darkuniverse-the-mysterious-apt-framework-27/94897/
+71d36436fe26fe570b876ad3441ea73c;Dark Universe APT - https://securelist.com/darkuniverse-the-mysterious-apt-framework-27/94897/
