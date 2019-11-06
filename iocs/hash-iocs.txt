@@ -9215,3 +9215,23 @@ CCE8C8EE42FEAED68E9623185C3F7FE4;Calypso APT 2019 - Payload without dropper - ht
 617D588ECCD942F243FFA8CB13679D9C;Calypso APT 2019 - Hussar - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
 5199EF9D086C97732D97EDDEF56591EC;Calypso APT 2019 - FlyingDutchman - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
 06C1D7BF234CE99BB14639C194B3B318;Calypso APT 2019 - FlyingDutchman - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+
+d4be15adbbe135d172d5e0afcd191ae740df22de5d3beac98e188a3cf01a036b;C2 With it All - WSDB.bat - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+a78bacb79d5d229aa8d6c574d1d8386664918a520beebc655975b04a61da1308;C2 With it All - WSDB.ps1 - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+e410b949d128ffb513af037355fe777b5b40799001a312843e405070308a3f36;C2 With it All - WSDB.xml - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+3de852ed3bd3579cd9875108e121ba6fd68a66f8f6948cce072e8013ad1955ea;C2 With it All - c32_217061.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+fa7c7db9d33e1f4193bfe460d1a61096d75315212042a62bb3a30b3077511610;C2 With it All - c64_217061.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+0273d96cef6683e3fb205b8e841579b44bae16ff1e3ab57647b1a9d2947db5c7;C2 With it All - file.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+bc919680471fd1b631e80c37e83aeb6877f13f4ed47ae22100cf4d60e27a93a4;C2 With it All - mimikatz.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+b9a8710e55bb2d55bbeed9cebb83ac2f18f78818f0c05f18c96f766c8c47e2d9;C2 With it All - no135.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+f658ddcf8e87de957a81bb92d44ce02913b427e8bccbe663669ee2613d355555;C2 With it All - p1q135no.sfx.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+16f413862efda3aba631d8a7ae2bfff6d84acd9f454a7adaa518c7a8a6f375a5;C2 With it All - procdump64.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+89f8af1eb52f31b011982d7a1ecc1eed25af6c14bf5f317568a3450db5db7247;C2 With it All - q108.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+dcb76dc106e586c6f8bfa82832a66f525a9addb5450912004e92dd578ff2a60a;C2 With it All - q121k.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+04d0824f70be3666d79b2a49b85cf6b60b566d7b8cc9efd31195644514fb0cb1;C2 With it All - q135.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+08499612bcf7ccb250438ce8f6eed616511e27c762d66132fef93296007984ac;C2 With it All - q137k.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+0273d96cef6683e3fb205b8e841579b44bae16ff1e3ab57647b1a9d2947db5c7;C2 With it All - svchost.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+619f0c489beac9a792b9b42fa6529b3faf4329692fb52d17123ef69733868845;C2 With it All - zap32.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+98a4f69eff1f91f63fb74420ee4c16be508aa203d04f66e98b1dcb554def61ee;C2 With it All - zap64.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+b1e883222f3205db59ff812c6f6097291df12b1784c9e64eef674ab3a173c07a;C2 With it All - q159.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+
