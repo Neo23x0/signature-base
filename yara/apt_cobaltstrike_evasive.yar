@@ -8,6 +8,8 @@ rule CobaltStrike_C2_Host_Indicator {
 		$c2_indicator = "#Host:"
 	condition:
 		$c2_indicator and not $c2_indicator_fp
+		and not uint32(0) == 0x0a786564
+		and not uint32(0) == 0x0a796564
 }
 
 rule CobaltStrike_Sleep_Decoder_Indicator {
