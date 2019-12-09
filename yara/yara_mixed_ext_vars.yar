@@ -283,22 +283,6 @@ rule Fake_AdobeReader_EXE
       and not 1 of ($fp*)
 }
 
-rule Fake_FlashPlayerUpdaterService_EXE
-    {
-    meta:
-        description = "Detects an fake AdobeReader executable based on filesize OR missing strings in file"
-        date = "2014-09-11"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
-      author = "Florian Roth"
-        score = 50
-    strings:
-        $s1 = "Adobe Systems Incorporated" ascii wide
-    condition:
-        uint16(0) == 0x5a4d and
-        filename matches /FlashPlayerUpdateService.exe/i and
-        not $s1
-}
-
 rule mimikatz_lsass_mdmp
 {
    meta:
