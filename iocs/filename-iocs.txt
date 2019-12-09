@@ -3141,4 +3141,54 @@ c:\\windows\\AppPatch\\custom\\[^\\]{1,20}\.(exe|vbs|ps1|bat);70
 # TeamViewerPortable - propably a policy violation https://portableapps.com/apps/utilities/teamviewer_portable
 \\TeamViewerPortable;60
 
+# OceanLotus / APT32 filename IOCs
+\\ProgramData\\Microsoft Help\\[^\\]{1,20}\.(exe|bat|vbs|ps1);80
+
+# Suspicious Indicators - Skript in Windows Folder
+C:\\Windows\\[^\\]{1,20}\.(js|ps1|vbs);50
+
+# Emotet Indicator https://app.any.run/tasks/fb5d3877-4179-4bb8-aea4-1cff3a4793ed/
+\\msptermsizes\\msptermsizes\.exe;90
+:\\Users\\[^\\]{1,16}\\[0-9]{1,4}\.exe;65
+
+# AVIVORE IOCs https://www.contextis.com/en/blog/avivore
+c:\\iperf\-2.0.5-3-win32\\[^\\]{1,20}\.(exe|vbs|ps1|bat);85
+c:\\perflogs\\admin\\[^\\]{1,20}\.(exe|vbs|ps1|bat);85
+c:\\programdata\\esetoem\\[^\\]{1,20}\.(exe|vbs|ps1|bat);80
+c:\\programdata\\mcafeeoem\\[^\\]{1,20}\.(exe|vbs|ps1|bat);80
+c:\\temp\\gen_py\\[^\\]{1,20}\.(exe|vbs|ps1|bat);70
+\\acres64.exe;70
+\\AcWinRT.exe;70
+\\apihex.exe;70
+\\apihex64.exe;80
+\\apihex6464.exe;90
+\\Mimikatz.exe;90
+\\pro64.exe;60
+\\te.vbs;60
+
+# Tick Group - Operation ENDTRADE report https://blog.trendmicro.com/trendlabs-security-intelligence/operation-endtrade-finding-multi-stage-backdoors-that-tick/
+\\taskhast\.exe;85
+\\taskma\.exe;70
+\\svchdst\.exe;85
+\\lemstsc\.exe;70
+\\winlogan\.exe;75
+\\schost\.exe;80
+\\FortiAvat\.exe;70
+
+# APT34 OilRig report https://www.ibm.com/downloads/cas/OAJ4VZNJ
+\\saddrv\.sys;70
+:\\Users\\Public\\Public Updates\\;65
+:\\Windows\\Temp\\UpdateTemp\\;55
+\\ClientUpdate\.exe;40
+\\Soy\.exe;70
+\\ClientUpdateCore\.ps1;80
+\\GPOClientUpdateCore\.ps1;80
+\\ClientUpdate\.ps1;70
+\\x86\\elrawdsk\.sys;60
+
+# Lazarus macOS malware https://objective-see.com/blog/blog_0x51.html
+/Library/UnionCrypto/unioncryptoupdater;85
+/Library/LaunchDaemons/.vip.unioncrypto.plist;90
+/Library/UnionCrypto/.unioncryptoupdater;90
+
 # End
