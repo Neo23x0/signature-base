@@ -56,7 +56,7 @@ rule Base64_encoded_Executable {
 		$s4 = "TVpQAAIAAAAEAA8A//8AALgAAAA" // 168 samples in goodware archive
 		$s5 = "TVqQAAMAAAAEAAAA//8AALgAAAA" // 28,529 samples in goodware archive
 	condition:
-		1 of them and
+		1 of them
 		and not filepath contains "Thunderbird"
       and not filepath contains "Internet Explorer"
       and not filepath contains "Chrome"
