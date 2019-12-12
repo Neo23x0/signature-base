@@ -9265,3 +9265,23 @@ D38045B42C7E87C199993AB929AD92ADE4F82398;DePriMon malware https://www.welivesecu
 E272FDA0E9BA1A1B8EF444FF5F2E8EE419746384;DePriMon malware https://www.welivesecurity.com/2019/11/21/deprimon-default-print-monitor-malicious-downloader/
 E2D39E290201010F49652EE6116FD9B35C9AD882;DePriMon malware https://www.welivesecurity.com/2019/11/21/deprimon-default-print-monitor-malicious-downloader/
 F413EEE3CFD85A60D7AFC4D4ECC4445BB1F0B8BC;DePriMon malware https://www.welivesecurity.com/2019/11/21/deprimon-default-print-monitor-malicious-downloader/
+
+9ae7c4a4e1cfe9b505c3a47e66551eb1357affee65bfefb0109d02f4e97c06dd;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+7772d624e1aed327abcd24ce2068063da0e31bb1d5d3bf2841fc977e198c6c5b;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+657fc7e6447e0065d488a7db2caab13071e44741875044f9024ca843fe4e86b5;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+2ef157a97e28574356e1d871abf75deca7d7a1ea662f38b577a06dd039dbae29;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+52fd7b90d7144ac448af4008be639d4d45c252e51823f4311011af3207a5fc77;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+a370e47cb97b35f1ae6590d14ada7561d22b4a73be0cb6df7e851d85054b1ac3;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+5bf80b871278a29f356bd42af1e35428aead20cd90b0c7642247afcaaa95b022;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+6f690ccfd54c2b02f0c3cb89c938162c10cbeee693286e809579c540b07ed883;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+3c884f776fbd16597c072afd81029e8764dd57ee79d798829ca111f5e170bd8e;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+1922a419f57afb351b58330ed456143cc8de8b3ebcbd236d26a219b03b3464d7;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+fe0e4ef832b62d49b43433e10c47dc51072959af93963c790892efc20ec422f1;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+7ce9e1c5562c8a5c93878629a47fe6071a35d604ed57a8f918f3eadf82c11a9c;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+178d5ee8c04401d332af331087a80fb4e5e2937edfba7266f9be34a5029b6945;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+51f70956fa8c487784fd21ab795f6ba2199b5c2d346acdeef1de0318a4c729d9;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+889bca95f1a69e94aaade1e959ed0d3620531dc0fc563be9a8decf41899b4d79;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+332ddaa00e2eb862742cb8d7e24ce52a5d38ffb22f6c8bd51162bd35e84d7ddf;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+44bcf82fa536318622798504e8369e9dcdb32686b95fcb44579f0b4efa79df08;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+63552772fdd8c947712a2cff00dfe25c7a34133716784b6d486227384f8cf3ef;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+056744a3c371b5938d63c396fe094afce8fb153796a65afa5103e1bffd7ca070;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
