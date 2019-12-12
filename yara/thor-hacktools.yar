@@ -122,7 +122,7 @@ rule Fierce2
       license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       description = "This signature detects the Fierce2 domain scanner"
-      date = "01.07.2014" 
+      date = "01.07.2014"
       score = 60
    strings:
       $s1 = "$tt_xml->process( 'end_domainscan.tt', $end_domainscan_vars,"
@@ -136,7 +136,7 @@ rule Ncrack
       license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       description = "This signature detects the Ncrack brute force tool"
-      date = "01.07.2014" 
+      date = "01.07.2014"
       score = 60
    strings:
       $s1 = "NcrackOutputTable only supports adding up to 4096 to a cell via"
@@ -150,7 +150,7 @@ rule SQLMap
       license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       description = "This signature detects the SQLMap SQL injection tool"
-      date = "01.07.2014" 
+      date = "01.07.2014"
       score = 60
    strings:
       $s1 = "except SqlmapBaseException, ex:"
@@ -2909,7 +2909,7 @@ rule Mimikatz_Memory_Rule_1 : APT {
       date = "12/22/2014"
       score = 70
       type = "memory"
-      description = "Detects password dumper mimikatz in memory"
+      description = "Detects password dumper mimikatz in memory (False Positives: an service that could have copied a Mimikatz executable, AV signatures)"
    strings:
       $s1 = "sekurlsa::msv" fullword ascii
        $s2 = "sekurlsa::wdigest" fullword ascii
