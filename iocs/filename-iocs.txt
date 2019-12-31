@@ -3191,4 +3191,11 @@ c:\\temp\\gen_py\\[^\\]{1,20}\.(exe|vbs|ps1|bat);70
 /Library/LaunchDaemons/.vip.unioncrypto.plist;90
 /Library/UnionCrypto/.unioncryptoupdater;90
 
+# BRONZE PRESIDENT Filename IOCs https://www.secureworks.com/research/bronze-president-targets-ngos
+:\\Windows\\Help\\Help\\[^\\]{1,20}\.(exe|vbs|ps1|bat|dll);80
+:\\Windows\\debug\\WIA\\[^\\]{1,20}\.(exe|vbs|ps1|bat|dll);80
+:\\Windows\\Logs\\DPX\\[^\\]{1,20}\.(exe|vbs|ps1|bat|dll);80
+:\\Recovery\\[^\\]{1,20}\.(exe|vbs|ps1|bat|dll);80
+:\\Windows\\Temp\\system\.hive;80
+
 # End
