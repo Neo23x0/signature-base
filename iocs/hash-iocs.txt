@@ -9311,3 +9311,11 @@ ed8ad981c73ed444f1b89c4bda71ed99ca966c5a;BRONZE PRESIDENT - RCSession payload (E
 bd2533005a2eaed203054fd649fdbdcd3e3a860a;BRONZE PRESIDENT - Associated with BRONZE PRESIDENT phishing lure delivering PlugX - https://www.secureworks.com/research/bronze-president-targets-ngos
 9136eed34bea473d0f8554fb1d914502b832f219;BRONZE PRESIDENT - Associated with BRONZE PRESIDENT phishing lure delivering PlugX - https://www.secureworks.com/research/bronze-president-targets-ngos
 1a2f1c97a5883e8bb4edcdacfe176da98b266b42;BRONZE PRESIDENT - Associated with BRONZE PRESIDENT phishing lure delivering PlugX - https://www.secureworks.com/research/bronze-president-targets-ngos
+
+273aa20c4857d98cfa51ae52a1c21bf871c0f9cd0bf55d5e58caba5d1829846f;JhoneRAT Docx - https://blog.talosintelligence.com/2020/01/jhonerat.html
+29886dbbe81ead9e9999281e62ecf95d07acb24b9b0906b28beb65a84e894091;JhoneRAT Docx - https://blog.talosintelligence.com/2020/01/jhonerat.html
+d5f10a0b5c103100a3e74aa9014032c47aa8973b564b3ab03ae817744e74d079;JhoneRAT Docx - https://blog.talosintelligence.com/2020/01/jhonerat.html
+6cc0c11c754e1e82bca8572785c27a364a18b0822c07ad9aa2dc26b3817b8aa4;JhoneRAT Template - https://blog.talosintelligence.com/2020/01/jhonerat.html
+7e1121fca3ac7c2a447b61cda997f3a8202a36bf9bb08cca3402df95debafa69;JhoneRAT Image - https://blog.talosintelligence.com/2020/01/jhonerat.html
+b4a43b108989d1dde87e58f1fd6f81252ef6ae19d2a5e8cd76440135e0fd6366;JhoneRAT PE Autoit - https://blog.talosintelligence.com/2020/01/jhonerat.html
+4228a5719a75be2d6658758fc063bd07c1774b44c10b00b958434421616f1548;JhoneRAT PE Python - https://blog.talosintelligence.com/2020/01/jhonerat.html
