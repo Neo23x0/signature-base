@@ -439,10 +439,8 @@ rule APT_Cloaked_CERTUTIL {
       $s5 = "certutil.pdb" fullword ascii
       $s3 = "Password Token" fullword ascii
    condition:
-      uint16(0) == 0x5a4d and (
-         all of them
-         or pe.imphash() == "7a272b918680ee931c6fd622cafba542"
-      )
+      uint16(0) == 0x5a4d and
+      all of them
       and not filename contains "certutil"
       and not filename contains "CertUtil"
 }
