@@ -305,7 +305,6 @@ Microsoft\\MediaPlayer\\updatewindws\.exe;100
 (Temp|Tmp|TEMP)\\penguin\.exe;60
 \\Microsoft\\Windows\\hknswc\.exe;60
 \\Microsoft\\Windows\\AppMgnt\.exe;60
-\\PolicyManager$;60
 \\FILE_127\.127\.ppt;60
 \\FILE_127\.127\.ppsx;60
 (Temp|Tmp|TEMP)\\destsx\.inf;50
