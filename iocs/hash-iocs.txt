@@ -9319,3 +9319,7 @@ d5f10a0b5c103100a3e74aa9014032c47aa8973b564b3ab03ae817744e74d079;JhoneRAT Docx -
 7e1121fca3ac7c2a447b61cda997f3a8202a36bf9bb08cca3402df95debafa69;JhoneRAT Image - https://blog.talosintelligence.com/2020/01/jhonerat.html
 b4a43b108989d1dde87e58f1fd6f81252ef6ae19d2a5e8cd76440135e0fd6366;JhoneRAT PE Autoit - https://blog.talosintelligence.com/2020/01/jhonerat.html
 4228a5719a75be2d6658758fc063bd07c1774b44c10b00b958434421616f1548;JhoneRAT PE Python - https://blog.talosintelligence.com/2020/01/jhonerat.html
+
+0C5B15D89FDA9BAF446B286C6F97F535;WildPressure Hash IOC https://securelist.com/wildpressure-targets-industrial-in-the-middle-east/96360/
+17B1A05FC367E52AADA7BDE07714666B;WildPressure Hash IOC https://securelist.com/wildpressure-targets-industrial-in-the-middle-east/96360/
+A76991F15D6B4F43FBA419ECA1A8E741;WildPressure Hash IOC https://securelist.com/wildpressure-targets-industrial-in-the-middle-east/96360/

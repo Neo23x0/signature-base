@@ -3219,4 +3219,8 @@ ublic\\.Monitor\\ews\.conf;90
 \\Rundll32Templete\.dll;60
 \\minisdllpub\.dll;60
 
+# WildPressure Report https://securelist.com/wildpressure-targets-industrial-in-the-middle-east/96360/
+\\Milum46_Win32\.exe;100
+\\system32\.exe;90
+
 # End
