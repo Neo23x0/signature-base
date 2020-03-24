@@ -3197,4 +3197,26 @@ c:\\temp\\gen_py\\[^\\]{1,20}\.(exe|vbs|ps1|bat);70
 :\\Recovery\\[^\\]{1,20}\.(exe|vbs|ps1|bat|dll);80
 :\\Windows\\Temp\\system\.hive;80
 
+
+# OilRig filename IOCs campaign Feb 2020 https://app.any.run/tasks/61de5d96-e812-42f8-8884-3d63a510601b/
+ublic\\.Monitor\\monitor\.xls;90
+ublic\\.Monitor\\monitor\.exe;90
+ublic\\.Monitor\\e\.txt;90
+ublic\\.Monitor\\ews\.conf;90
+
+# Turla IOCs https://github.com/eset/malware-ioc/tree/master/turla#turla-powershell-indicators-of-compromise
+\\Public\\iCore\.dat;90
+\\msctx\.ps1;80
+\\Users\\Public\\Documents\\desktop\.db;75
+
+# Turla report https://www.welivesecurity.com/2020/03/12/tracking-turla-new-backdoor-armenian-watering-holes/
+\\Temp\\winhost\.exe;70
+\\Temp\\adobe\.exe;70
+
+# Vicious Panda - COVID campaign https://research.checkpoint.com/2020/vicious-panda-the-covid-campaign/
+\\Microsoft\\Word\\STARTUP\\intel\.wll;90
+\\ppdown\.dll;60
+\\Rundll32Templete\.dll;60
+\\minisdllpub\.dll;60
+
 # End
