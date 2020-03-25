@@ -9323,3 +9323,10 @@ b4a43b108989d1dde87e58f1fd6f81252ef6ae19d2a5e8cd76440135e0fd6366;JhoneRAT PE Aut
 0C5B15D89FDA9BAF446B286C6F97F535;WildPressure Hash IOC https://securelist.com/wildpressure-targets-industrial-in-the-middle-east/96360/
 17B1A05FC367E52AADA7BDE07714666B;WildPressure Hash IOC https://securelist.com/wildpressure-targets-industrial-in-the-middle-east/96360/
 A76991F15D6B4F43FBA419ECA1A8E741;WildPressure Hash IOC https://securelist.com/wildpressure-targets-industrial-in-the-middle-east/96360/
+
+c0c467c8e9b2046d7053642cc9bdd57d;APT41 Campaign - Marcho 2020 - 1.txt - https://www.fireeye.com/blog/threat-research/2020/03/apt41-initiates-global-intrusion-campaign-using-multiple-exploits.html
+155e98e5ca8d662fad7dc84187340cbc;APT41 Campaign - Marcho 2020 - fuc - https://www.fireeye.com/blog/threat-research/2020/03/apt41-initiates-global-intrusion-campaign-using-multiple-exploits.html
+7966c2c546b71e800397a67f942858d0;APT41 Campaign - Marcho 2020 - install.bat - https://www.fireeye.com/blog/threat-research/2020/03/apt41-initiates-global-intrusion-campaign-using-multiple-exploits.html
+5909983db4d9023e4098e56361c96a6f;APT41 Campaign - Marcho 2020 - storesyncsvc.dll - https://www.fireeye.com/blog/threat-research/2020/03/apt41-initiates-global-intrusion-campaign-using-multiple-exploits.html
+3e856162c36b532925c8226b4ed3481c;APT41 Campaign - Marcho 2020 - 2.exe - https://www.fireeye.com/blog/threat-research/2020/03/apt41-initiates-global-intrusion-campaign-using-multiple-exploits.html
+659bd19b562059f3f0cc978e15624fd9;APT41 Campaign - Marcho 2020 - TzGG - https://www.fireeye.com/blog/threat-research/2020/03/apt41-initiates-global-intrusion-campaign-using-multiple-exploits.html
