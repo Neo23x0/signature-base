@@ -113,7 +113,7 @@ rule WannaCry_RansomNote {
 
 /* Kaspersky Rule */
 
-rule lazaruswannacry {
+rule APT_lazaruswannacry {
    meta:
       description = "Rule based on shared code between Feb 2017 Wannacry sample and Lazarus backdoor from Feb 2015 discovered by Neel Mehta"
       date = "2017-05-15"

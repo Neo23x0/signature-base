@@ -7,14 +7,14 @@
 
 /* Rules by Kaspersky ------------------------------------------------------ */
 
-rule apt_duqu2_loaders { 
+rule APT_apt_duqu2_loaders {
 	meta:
 		copyright = "Kaspersky Lab"
 		description = "Rule to detect Duqu 2.0 samples"
 		last_modified = "2015-06-09"
 		version = "1.0"
 	strings:
-		$a1 = "{AAFFC4F0-E04B-4C7C-B40A-B45DE971E81E}" wide 
+		$a1 = "{AAFFC4F0-E04B-4C7C-B40A-B45DE971E81E}" wide
 		$a2 = "\\\\.\\pipe\\{AAFFC4F0-E04B-4C7C-B40A-B45DE971E81E}" wide
 		$a4 = "\\\\.\\pipe\\{AB6172ED-8105-4996-9D2A-597B5F827501}" wide
 		$a5 = "Global\\{B54E3268-DE1E-4c1e-A667-2596751403AD}" wide
@@ -36,18 +36,18 @@ rule apt_duqu2_loaders {
 		( (uint32(0) == 0xe011cfd0) and ( (any of ($a*)) or (all of ($b*)) or (all of ($c*)) or (any of ($d*)) ) and filesize < 20000000 )
 }
 
-rule apt_duqu2_drivers { 
+rule APT_apt_duqu2_drivers {
 	meta:
 		copyright = "Kaspersky Lab"
 		description = "Rule to detect Duqu 2.0 drivers"
 		last_modified = "2015-06-09"
 		version = "1.0"
 	strings:
-		$a1 = "\\DosDevices\\port_optimizer" wide nocase 
-		$a2 = "romanian.antihacker" 
-		$a3 = "PortOptimizerTermSrv" wide 
+		$a1 = "\\DosDevices\\port_optimizer" wide nocase
+		$a2 = "romanian.antihacker"
+		$a3 = "PortOptimizerTermSrv" wide
 		$a4 = "ugly.gorilla1"
-		$b1 = "NdisIMCopySendCompletePerPacketInfo" 
+		$b1 = "NdisIMCopySendCompletePerPacketInfo"
 		$b2 = "NdisReEnumerateProtocolBindings"
 		$b3 = "NdisOpenProtocolConfiguration"
 	condition:
