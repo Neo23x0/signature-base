@@ -3223,4 +3223,7 @@ ublic\\.Monitor\\ews\.conf;90
 \\Milum46_Win32\.exe;100
 \\system32\.exe;90
 
+# XHunt Filename IOCs https://www.sans.org/webcasts/113525
+:\\mydump\.dmp;80
+
 # End
