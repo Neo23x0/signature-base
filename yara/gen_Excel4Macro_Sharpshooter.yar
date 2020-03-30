@@ -7,6 +7,7 @@ rule MAL_Sharpshooter_Excel4 {
       reference3 = "https://gist.github.com/JohnLaTwC/efab89650d6fcbb37a4221e4c282614c"
       reference4 = "https://docs.microsoft.com/en-us/openspecs/office_file_formats/ms-xls/00b5dd7d-51ca-4938-b7b7-483fe0e5933b"
       date = "2020-03-27"
+      score = 70
       hash="ccef64586d25ffcb2b28affc1f64319b936175c4911e7841a0e28ee6d6d4a02d"
    strings:
       $header_docf = { D0 CF 11 E0 }
@@ -28,6 +29,7 @@ rule SUSP_Excel4Macro_AutoOpen
         description = "Detects Excel4 macro use with auto open / close"
         author = "John Lambert @JohnLaTwC"
         date = "2020-03-26"
+        score = 50
         hash="2fb198f6ad33d0f26fb94a1aa159fef7296e0421da68887b8f2548bbd227e58f"
     strings:
         $header_docf = { D0 CF 11 E0 }
@@ -35,7 +37,7 @@ rule SUSP_Excel4Macro_AutoOpen
 
         // 2fb198f6ad33d0f26fb94a1aa159fef7296e0421da68887b8f2548bbd227e58f
         // ' 0018     23 LABEL : Cell Value, String Constant - build-in-name 1 Auto_Open
-        // 00002d80: 
+        // 00002d80:
         // 20 00 00 01 07 00 00 00 00 00 00 00 00 00 00 01 3a 01 00 16 00 07 00
 
         // f4c01e26eb88b72d38be3d6331fafe03b1ae53fdbff57d610173ed797fa26e73
@@ -59,7 +61,7 @@ rule SUSP_Excel4Macro_AutoOpen
 
     condition:
         filesize < 400KB
-        and $header_docf at 0 
+        and $header_docf at 0
         and $s1
         and any of ($Auto_*)
 }
