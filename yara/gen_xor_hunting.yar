@@ -24,7 +24,7 @@ rule SUSP_XORed_MSDOS_Stub_Message {
       $xo1 = "This program cannot be run in DOS mode" xor ascii wide
       $xo2 = "This program must be run under Win32" xor ascii wide
       $xof1 = "This program cannot be run in DOS mode" ascii wide
-      $xof2 = "This program must be run under Win32" xor ascii wide
+      $xof2 = "This program must be run under Win32" ascii wide
    condition:
       1 of ($xo*) and not 1 of ($xof*)
 }
