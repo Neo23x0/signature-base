@@ -8,14 +8,10 @@ rule SUSP_XORed_URL_in_EXE {
       date = "2020-03-09"
       score = 50
    strings:
-      $s1 = "http://" xor
-      $s2 = "https://" xor
-      $f1 = "http://" ascii
-      $f2 = "https://" ascii
+      $s1 = "http://" xor(0x01-0xff)
+      $s2 = "https://" xor(0x01-0xff)
    condition:
       uint16(0) == 0x5a4d and
-      filesize < 2000KB and (
-         ( $s1 and #s1 > #f1 ) or
-         ( $s2 and #s2 > #f2 )
-      )
+      filesize < 2000KB and
+         ($s1 or $s2)
 }
