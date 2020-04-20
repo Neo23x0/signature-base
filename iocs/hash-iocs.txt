@@ -9330,3 +9330,9 @@ c0c467c8e9b2046d7053642cc9bdd57d;APT41 Campaign - Marcho 2020 - 1.txt - https://
 5909983db4d9023e4098e56361c96a6f;APT41 Campaign - Marcho 2020 - storesyncsvc.dll - https://www.fireeye.com/blog/threat-research/2020/03/apt41-initiates-global-intrusion-campaign-using-multiple-exploits.html
 3e856162c36b532925c8226b4ed3481c;APT41 Campaign - Marcho 2020 - 2.exe - https://www.fireeye.com/blog/threat-research/2020/03/apt41-initiates-global-intrusion-campaign-using-multiple-exploits.html
 659bd19b562059f3f0cc978e15624fd9;APT41 Campaign - Marcho 2020 - TzGG - https://www.fireeye.com/blog/threat-research/2020/03/apt41-initiates-global-intrusion-campaign-using-multiple-exploits.html
+
+f2d4a35f20cd92c13cab8f6a50995a3b;Skeleton Key Campaign https://medium.com/@cycraft_corp/taiwan-high-tech-ecosystem-targeted-by-foreign-apt-group-5473d2ad8730
+389d184ef0b0b2901c982c421142cbb1;Skeleton Key Campaign https://medium.com/@cycraft_corp/taiwan-high-tech-ecosystem-targeted-by-foreign-apt-group-5473d2ad8730
+c9b8cab697f23e6ee9b1096e312e8573;Skeleton Key Campaign https://medium.com/@cycraft_corp/taiwan-high-tech-ecosystem-targeted-by-foreign-apt-group-5473d2ad8730
+a403d96953eb867f3092751d0763c7d0;Skeleton Key Campaign https://medium.com/@cycraft_corp/taiwan-high-tech-ecosystem-targeted-by-foreign-apt-group-5473d2ad8730
+bb897e34bc0d1e82dfe79d0898f5aa88;Skeleton Key Campaign https://medium.com/@cycraft_corp/taiwan-high-tech-ecosystem-targeted-by-foreign-apt-group-5473d2ad8730
