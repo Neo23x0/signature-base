@@ -37,7 +37,7 @@ XScanPF
 wscript.exe /b /nologo /E:javascript
 
 # Java Deserialisation Exploit Tools
-yoserial-0.
+ysoserial-0.
 
 # Powersploit
 Powersploit
