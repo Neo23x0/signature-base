@@ -3240,5 +3240,23 @@ ublic\\.Monitor\\ews\.conf;90
 /usr/lib64/\.lib/l64;80
 /var/games/\.terma;80
 /var/games/\.termb;80
+/tmp/aes\.tgz;70
+/tmp/reserved;50
+/tmp/systemdb;50
+/tmp/updatedb;50
+/tmp/check_power;50
+/tmp/hdshare;50
+/tmp/readps;60
+/usr/bin/on_ac_power ;70
+/usr/lib/libocs.so ;70
+/usr/lib64/\.lib/l64;70
+/usr/share/aldi\.so;70
+/usr/share/sos/;70
+/usr/share/sos/rh\.pub;70
+/usr/share/sos/rh\.pub;70
+/var/tmp/\.lock/clogs;70
+/var/tmp/\.lock/cpa.h;70
+/var/tmp/\.lock/ologs;70
+/wlcg/arc-ce1/cache/\.cache;80
 
 # End
