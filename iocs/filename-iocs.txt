@@ -3226,4 +3226,19 @@ ublic\\.Monitor\\ews\.conf;90
 # XHunt Filename IOCs https://www.sans.org/webcasts/113525
 :\\mydump\.dmp;80
 
+# Attacks on Academic Data Centers https://csirt.egi.eu/academic-data-centers-abused-for-crypto-currency-mining/
+/apps/\.ior/read/\.terma;80
+/apps/\.ior/read/\.termb;80
+/etc/fonts/\.fonts;80
+/etc/fonts/\.low;80
+/etc/terminfo/\.terma;80
+/etc/terminfo/\.termb;80
+/\.mozilla/plugins/\.fonts;80
+/\.mozilla/plugins/\.low;80
+/\.mozilla/plugins/\.aa;80
+/\.mozilla/plugins/test;80
+/usr/lib64/\.lib/l64;80
+/var/games/\.terma;80
+/var/games/\.termb;80
+
 # End
