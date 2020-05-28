@@ -1,7 +1,7 @@
 
 rule APT_Sandworm_Keywords_May20_1 {
    meta:
-      description = "Detects commands used by Snadworm group to exploit critical vulernability CVE-2019-10149 in Exim"
+      description = "Detects commands used by Sandworm group to exploit critical vulernability CVE-2019-10149 in Exim"
       author = "Florian Roth"
       reference = "https://media.defense.gov/2020/May/28/2002306626/-1/-1/0/CSA%20Sandworm%20Actors%20Exploiting%20Vulnerability%20in%20Exim%20Transfer%20Agent%2020200528.pdf"
       date = "2020-05-28"
