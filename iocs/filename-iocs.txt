@@ -3265,7 +3265,7 @@ ublic\\.Monitor\\ews\.conf;90
 \\adflctlmon\.exe;85
 \\PSExtendPrivacy\.exe;85
 
-# Sandorm IOCs https://media.defense.gov/2020/May/28/2002306626/-1/-1/0/CSA%20Sandworm%20Actors%20Exploiting%20Vulnerability%20in%20Exim%20Transfer%20Agent%2020200528.pdf
+# Sandworm IOCs https://media.defense.gov/2020/May/28/2002306626/-1/-1/0/CSA%20Sandworm%20Actors%20Exploiting%20Vulnerability%20in%20Exim%20Transfer%20Agent%2020200528.pdf
 /sshkey\.php;80
 /etc/opt/init-file\.txt;80
 
