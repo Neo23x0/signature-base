@@ -3259,4 +3259,10 @@ ublic\\.Monitor\\ews\.conf;90
 /var/tmp/\.lock/ologs;70
 /wlcg/arc-ce1/cache/\.cache;80
 
+# Turla Kazuar Malware IOCs https://www.epicturla.com/blog/sysinturla
+\\dbgsview\.exe;60
+\\DebugView\.exe;40
+\\adflctlmon\.exe;85
+\\PSExtendPrivacy\.exe;85
+
 # End
