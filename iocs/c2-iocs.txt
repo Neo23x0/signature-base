@@ -1559,7 +1559,7 @@ zg.ns02.biz;APT10 C2 IOCs - Source: AlienVault OTX
 zone.demoones.com;APT10 C2 IOCs - Source: AlienVault OTX
 
 # Turla Kazuar C2s https://www.epicturla.com/blog/sysinturla
-echange-afrique-insa.fr
 aviatnetworks.com 
 afci-newsoft.fr
 
+# Last Line
