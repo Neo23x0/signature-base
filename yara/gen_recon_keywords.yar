@@ -47,3 +47,26 @@ rule Recon_Commands_Windows_Gen1 {
       filesize < 1000KB and 4 of them
       and not 1 of ($fp*)
 }
+
+rule SUSP_Recon_Outputs_Jun20_1 {
+   meta:
+      description = "Detects outputs of many different commands often used for reconnaissance purposes"
+      author = "Florian Roth"
+      reference = "https://securelist.com/cycldek-bridging-the-air-gap/97157/"
+      date = "2020-06-04"
+      score = 60
+   strings:
+      /* ipconfig /all */
+      $s1 = ". . . . : Yes" ascii 
+      /* ping */
+      $s2 = "with 32 bytes of data:" ascii
+      /* arp -a */
+      $s3 = "ff-ff-ff-ff-ff-ff     static" ascii
+      /* netstat */ 
+      $s4 = "  TCP    0.0.0.0:445" ascii 
+      /* tasklist */ 
+      $s5 = "System Idle Process" ascii
+   condition:
+      filesize < 150KB and
+      4 of them
+}
