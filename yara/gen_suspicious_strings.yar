@@ -359,3 +359,15 @@ rule SUSP_PDB_Path_Keywords {
    condition:
       uint16(0) == 0x5a4d and 1 of them
 }
+
+rule SUSP_Disable_ETW_Jun20_1 {
+   meta:
+      description = "Detects method to disable ETW in ENV vars before exeucting a program"
+      author = "Florian Roth"
+      reference = "https://twitter.com/_xpn_/status/1268712093928378368"
+      date = "2020-06-06"
+   strings:
+      $x1 = "set COMPlus_ETWEnabled=0" ascii wide fullword
+   condition:
+      $x1
+}
