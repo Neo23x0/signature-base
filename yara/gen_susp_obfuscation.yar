@@ -79,3 +79,38 @@ rule SUSP_Script_Base64_Blocks_Jun20_1 {
       all of them
 }
 
+rule SUSP_Reversed_Hacktool_Author {
+   meta:
+      description = "Detects a suspicious path traversal into a Windows folder"
+      author = "Florian Roth"
+      reference = "https://hackingiscool.pl/cmdhijack-command-argument-confusion-with-path-traversal-in-cmd-exe/"
+      date = "2020-06-10"
+      score = 65
+   strings:
+      $x1 = "iwiklitneg" fullword ascii wide
+      $x2 = " eetbus@ " ascii wide
+   condition:
+      filesize < 4000KB and
+      1 of them
+}
+
+rule SUSP_Base64_Encoded_Hacktool_Dev {
+   meta:
+      description = "Detects a suspicious base64 encoded keyword"
+      author = "Florian Roth"
+      reference = "https://twitter.com/cyb3rops/status/1270626274826911744"
+      date = "2020-06-10"
+      score = 65
+   strings:
+      $ = "QGdlbnRpbGtpd2" ascii wide 
+      $ = "BnZW50aWxraXdp" ascii wide 
+      $ = "AZ2VudGlsa2l3a" ascii wide
+      $ = "QGhhcm1qMH" ascii wide
+      $ = "BoYXJtajB5" ascii wide
+      $ = "AaGFybWowe" ascii wide
+      $ = "IEBzdWJ0ZW" ascii wide
+      $ = "BAc3VidGVl" ascii wide
+      $ = "gQHN1YnRlZ" ascii wide
+   condition:
+      filesize < 6000KB and 1 of them
+}
