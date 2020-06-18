@@ -86,6 +86,7 @@ rule SUSP_Reversed_Hacktool_Author {
       reference = "https://hackingiscool.pl/cmdhijack-command-argument-confusion-with-path-traversal-in-cmd-exe/"
       date = "2020-06-10"
       score = 65
+      type = "file"
    strings:
       $x1 = "iwiklitneg" fullword ascii wide
       $x2 = " eetbus@ " ascii wide
