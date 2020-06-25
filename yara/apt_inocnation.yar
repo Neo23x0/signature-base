@@ -25,5 +25,5 @@ rule apt_win32_dll_rat_1a53b0cp32e46g0qio7
 		$s8 = "%08x%08x%08x%08x" wide ascii
 		$s9 = "WinHttpGetIEProxyConfigForCurrentUser" wide ascii
 	condition:
-		(uint16(0) == 0x5A4D or uint32(0) == 0x4464c457f) and (all of them)
+		(uint16(0) == 0x5A4D or uint32(0) == 0x464c457f) and (all of them)
 }
