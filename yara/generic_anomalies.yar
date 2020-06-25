@@ -48,7 +48,7 @@ rule Cloaked_as_JPG {
    condition:
       uint16be(0x00) != 0xFFD8 and
       extension == ".jpg" and
-      not uint32be(0) == 0x4749463839 and /* GIF Header */
+      not uint32be(0) == 0x47494638 and uint8(4) == 0x39 and /* GIF89 Header */
       /* and
       not filepath contains "ASP.NET" */
       not $fp1 in (0..30) and
