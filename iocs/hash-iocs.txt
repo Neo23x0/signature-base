@@ -9387,3 +9387,22 @@ faba07425c1fa65a9a68a17b99e83663a2a32fbb2a7c3df347b7a7411a7058bc;Greenbug IOC Un
 0644b3ffc856eb54b53338ab8ecd22dd005ee5aacfe321f4e61b763a93f82aea;Greenbug IOC Unknown
 fc002268620fa67ffe260ea9f3a6bbad8637f9bef8ae85b8d6061cec0390b9e2;Greenbug IOC Unknown
 450ebd66ba67bb46bf18d122823ff07ef4a7b11afe63b6f269aec9236a1790cd;Greenbug IOC Unknown
+
+8f0fcb5a80b2bca62d79f0d1cbdc93fb;BRONZE VINEWOOD report MD5 hash - https://www.secureworks.com/research/bronze-vinewood-targets-supply-chains
+9c162e042e0a892924f8415f7d72fe4f966bae7d;BRONZE VINEWOOD report SHA1 hash - https://www.secureworks.com/research/bronze-vinewood-targets-supply-chains
+16e9c238c6a77ebbb3c5b75ba78e6584;BRONZE VINEWOOD report MD5 hash - encrypted loader DLL - https://www.secureworks.com/research/bronze-vinewood-targets-supply-chains
+251138c6caac684f1900edeb282ff098;BRONZE VINEWOOD report MD5 hash - encrypted loader DLL - https://www.secureworks.com/research/bronze-vinewood-targets-supply-chains
+a88db7ca71000dc197ee29d53cbd2a95;BRONZE VINEWOOD report MD5 hash - encrypted loader DLL - https://www.secureworks.com/research/bronze-vinewood-targets-supply-chains
+244595a997af4bb8bac5efaee34805ff;BRONZE VINEWOOD report MD5 hash - loader DLL - https://www.secureworks.com/research/bronze-vinewood-targets-supply-chains
+ff693988afa9ee34be78057ac51bad77691aa552;BRONZE VINEWOOD report SHA1 hash - loader DLL - https://www.secureworks.com/research/bronze-vinewood-targets-supply-chains
+7fff010d11be12966bbf4dbdfacbb4d6;BRONZE VINEWOOD report MD5 hash - encrypted loader DLL - https://www.secureworks.com/research/bronze-vinewood-targets-supply-chains
+8b77ba9868df648d22cbce5145e315b50d822d4a;BRONZE VINEWOOD report SHA1 hash - encrypted loader DLL - https://www.secureworks.com/research/bronze-vinewood-targets-supply-chains
+e8e59b44613b5af58688809f8cb6dfa8;BRONZE VINEWOOD report MD5 hash - payload - https://www.secureworks.com/research/bronze-vinewood-targets-supply-chains
+2e84fd87150a002df98233093f2842337c594604;BRONZE VINEWOOD report SHA1 hash - payload - https://www.secureworks.com/research/bronze-vinewood-targets-supply-chains
+5f31452fdbfa4b01437fd553198ab563;BRONZE VINEWOOD report MD5 hash - encrypted payload - https://www.secureworks.com/research/bronze-vinewood-targets-supply-chains
+ca0996634789f7039edc67a60de4498d66a63d9f;BRONZE VINEWOOD report SHA1 hash - encrypted payload - https://www.secureworks.com/research/bronze-vinewood-targets-supply-chains
+7fff010d11be12966bbf4dbdfacbb4d6;BRONZE VINEWOOD report MD5 hash - encrypted payload - https://www.secureworks.com/research/bronze-vinewood-targets-supply-chains
+2bbf74073ed7a910a69c3d2a67bd5f8f;BRONZE VINEWOOD report MD5 hash - used by BRONZE VINEWOOD; uses GitHub gist for command and control - https://www.secureworks.com/research/bronze-vinewood-targets-supply-chains
+462be075b591547fefb54d2f95930ef674b4bfa4c2cafbf6b90e6741274cfe85;BRONZE VINEWOOD report - Malicious DLL that launches HanaLoader
+c1f02f8bc3c391e576c9cda626a9eb81c4b2fe063cc80de592d9ce999478eeaa;BRONZE VINEWOOD report - BRONZE VINEWOOD encrypted loader DLL
+71d30d6cf37d5d0fcb2e9a9061fde20f62683a6be91e52abc5f665e5ec021cf3;BRONZE VINEWOOD report - Encrypted zlib-compressed file containing HanaLoader
