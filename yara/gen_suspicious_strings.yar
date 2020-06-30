@@ -67,6 +67,7 @@ rule ReconCommands_in_File {
       reference = "https://twitter.com/haroonmeer/status/939099379834658817"
       date = "2017-12-11"
       score = 40
+      type = "file"
    strings:
       $ = "tasklist"
       $ = "net time"
