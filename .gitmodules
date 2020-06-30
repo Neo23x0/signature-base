@@ -1,3 +1,0 @@
-[submodule "3rdparty/reversing-labs"]
-	path = 3rdparty/reversing-labs
-	url = https://github.com/reversinglabs/reversinglabs-yara-rules
