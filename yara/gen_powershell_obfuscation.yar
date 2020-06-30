@@ -50,3 +50,18 @@ rule SUSP_PowerShell_Caret_Obfuscation_2 {
    condition:
       1 of them
 }
+
+rule SUSP_OBFUSC_PowerShell_True_Jun20_1 {
+   meta:
+      description = "Detects indicators often found in obfuscated PowerShell scripts"
+      author = "Florian Roth"
+      reference = "https://github.com/corneacristian/mimikatz-bypass/"
+      date = "2020-06-27"
+      score = 75
+   strings:
+      $ = "${t`rue}" ascii nocase
+      $ = "${tr`ue}" ascii nocase
+      $ = "${tru`e}" ascii nocase
+   condition:
+      filesize < 6000KB and 1 of them
+}
