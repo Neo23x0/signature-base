@@ -16,7 +16,7 @@ rule SUSP_GIF_Anomalies {
    meta:
       description = "Detects files with GIF headers and format anomalies - which means that this image could be an obfuscated file of a different type"
       author = "Florian Roth"
-      score = 70
+      score = 60
       reference = "https://en.wikipedia.org/wiki/GIF"
       date = "2020-07-02"
    condition:
