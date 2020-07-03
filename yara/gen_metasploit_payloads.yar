@@ -319,3 +319,20 @@ rule MAL_Metasploit_Framework_UA {
    condition:
       uint16(0) == 0x5a4d and filesize < 400KB and 1 of them
 }
+
+rule HKTL_Meterpreter_inMemory {
+   meta:
+      description = "Detects Meterpreter in-memory"
+      author = "netbiosX, Florian Roth"
+      reference = "https://www.reddit.com/r/purpleteamsec/comments/hjux11/meterpreter_memory_indicators_detection_tooling/"
+      date = "2020-06-29"
+      score = 85
+   strings: 
+      $xc1 = { 6D 65 74 73 72 76 2E 64 6C 6C 00 00 52 65 66 6C 
+               65 63 74 69 76 65 4C 6F 61 64 65 72 }
+      $xs1 = "metsrv.x64.dll" ascii fullword
+      $s1 = "WS2_32.dll" ascii fullword
+      $s2 = "ReflectiveLoader" ascii fullword
+   condition: 
+      1 of ($x*) or 2 of them
+}
