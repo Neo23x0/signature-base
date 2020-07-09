@@ -286,7 +286,7 @@ rule Suspicious_Size_wininit_exe {
     condition:
         uint16(0) == 0x5a4d
         and filename == "wininit.exe"
-        and ( filesize < 90KB or filesize > 400KB )
+        and ( filesize < 90KB or filesize > 450KB )
 }
 
 rule Suspicious_AutoIt_by_Microsoft {
