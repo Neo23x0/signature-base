@@ -9406,3 +9406,36 @@ ca0996634789f7039edc67a60de4498d66a63d9f;BRONZE VINEWOOD report SHA1 hash - encr
 462be075b591547fefb54d2f95930ef674b4bfa4c2cafbf6b90e6741274cfe85;BRONZE VINEWOOD report - Malicious DLL that launches HanaLoader
 c1f02f8bc3c391e576c9cda626a9eb81c4b2fe063cc80de592d9ce999478eeaa;BRONZE VINEWOOD report - BRONZE VINEWOOD encrypted loader DLL
 71d30d6cf37d5d0fcb2e9a9061fde20f62683a6be91e52abc5f665e5ec021cf3;BRONZE VINEWOOD report - Encrypted zlib-compressed file containing HanaLoader
+
+401BC3740385A73EF0D3AD93DFCE03C82770072A;EvilNum Report - Helper Tools – rev.py - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+27054C073C10F61452101646DA5AC9AA21DC90DB;EvilNum Report - Helper Tools – runner.py - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+C4817D8C8E0B147ED5220229987FC84A43DA16A5;EvilNum Report - Helper Tools – PythonProxy.py - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+480C6F0C3998009C017051A8D6FFE199BC2A18DF;EvilNum Report - Helper Tools – socks.py - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+C17CF1E8B4806A931F5FA0D73AD4BB521C43849A;EvilNum Report - Helper Tools – log.py - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+47A7CD789C90735325EBD2C495A983A9C7E56E6F;EvilNum Report - Helper Tools – l.py - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+2B8522ED748178037BD13FC4D3F564CE8B7BA6D6;EvilNum Report - Helper Tools – Win.ps1 - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+9677FCBF6F59BE2A5AB61BE5E6DF91599FB67602;EvilNum Report - Helper Tools – abc.bat (executes Golden Chickens components) - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+476BB78BCF194523C385E2CEE364D6D097464ECA;EvilNum Report - Helper Tools – hi.txt (remote scriptlet) - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+E0957B2421A6EF3237A33A37DA8B52A9F29863D6;EvilNum Report - TerraTV – 15159.ocx - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+1F287AA922911F72F68B4B0C8645B4C909EB07B9;EvilNum Report - TerraTV – ACTIVEDS.dll - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+7C98E37CBA9B9C757E77892F02E1783A80AC450F;EvilNum Report - TerraStealer - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+73C5792AA05C122903C1AEA1E1F965D223C073D8;EvilNum Report - TerraStealer - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+C341D18A79057B032DC0A03F4524606205057F62;EvilNum Report - TerraStealer - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+E8A95EC590E5786B780D3D6986282273895B4C8A;EvilNum Report - TerraStealer - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+1C1D8D0AF6AA728589C5D0D0F46C01B129C75BA0;EvilNum Report - TerraPreter – msf_64.ocx - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+A7F1C2BE87B5EE4392757948FB7C895CAD95520B;EvilNum Report - TerraPreter – msfsigned.ocx - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+7D9037377DC2A2E3FC1985983942D1E9F986AA42;EvilNum Report - TerraPreter – msfsignednofront.ocx - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+976DA2E8BDD698D974D38D01593897CA64946D92;EvilNum Report - More Eggs – load.ocx - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+1303EB76FE1F978C6BFB6EA28329E7CDA61126AF;EvilNum Report - More Eggs – loadsigned.ocx - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+3200E9832CD61828DDF4E82155D66B63D2E6A54E;EvilNum Report - More Eggs – 32753.ocx - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+AF68B3E310BF8446E4CD10EFCF4776196131E785;EvilNum Report - More Eggs – 13681.ocx - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+D675D3AC1C05DC7AC73674C47FA141D75F537DD3;EvilNum Report - More Eggs – 13435.ocx - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+B3C8C1C80824278661FBB26B17040B87180D1D34;EvilNum Report - C# Agent – system.memmory.dll - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+C23F0551C2F7937EA4AD4B970B01CBD4D104EFFE;EvilNum Report - C# Agent – Policy.exe - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+6E7493BD1EF727FBC6EECD3AE5EC31BB8C1E897D;EvilNum Report - C# Agent – Policy.exe - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+4187F714076853B1FFA38A84835DB2623460F537;EvilNum Report - C# Agent Loader – Policy.exe - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+04F7FEDF8FDDF8EB5B592A57F67F72B1075C7CC1;EvilNum Report - C# Agent Loader – ServiceHud.exe - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+B6B9C5EFFDD14E2920183B313C56E5068C57A709;EvilNum Report - C# Agent Loader – ServiceHud.exe - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+D6341CD464847C9C2716030111261D5B84A43B2A;EvilNum Report - C# Copier – ypoc.exe - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+AB0C6268C61D9F36996BA7653B3A3E1EDE2AEE51;EvilNum Report - C# Copier – ypoc.exe - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+A6ECD3A818D463155C31977000E6FDE3EB8A2352;EvilNum Report - MSI Installer of C# agent - SecuUpdate2021.msi - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
