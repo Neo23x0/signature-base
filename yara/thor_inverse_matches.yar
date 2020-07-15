@@ -443,4 +443,5 @@ rule APT_Cloaked_CERTUTIL {
       all of them
       and not filename contains "certutil"
       and not filename contains "CertUtil"
+	  and not filename contains "Certutil"
 }
