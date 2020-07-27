@@ -10,7 +10,7 @@
 
 rule CheshireCat_Sample2 {
 	meta:
-		description = "Auto-generated rule - file dc18850d065ff6a8364421a9c8f9dd5fcce6c7567f4881466cee00e5cd0c7aa8"
+		description = "Auto-generated rule"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://malware-research.org/prepare-father-of-stuxnet-news-are-coming/"
@@ -33,7 +33,7 @@ rule CheshireCat_Sample2 {
 
 rule CheshireCat_Gen1 {
 	meta:
-		description = "Auto-generated rule - file ec41b029c3ff4147b6a5252cb8b659f851f4538d4af0a574f7e16bc1cd14a300"
+		description = "Auto-generated rule"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://malware-research.org/prepare-father-of-stuxnet-news-are-coming/"

@@ -9,7 +9,7 @@
 
 rule APT30_Generic_H {
 	meta:
-		description = "FireEye APT30 Report Sample - file db3e5c2f2ce07c2d3fa38d6fc1ceb854"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -26,7 +26,7 @@ rule APT30_Generic_H {
 
 rule APT30_Sample_2 {
 	meta:
-		description = "FireEye APT30 Report Sample - file c4dec6d69d8035d481e4f2c86f580e81"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -44,7 +44,7 @@ rule APT30_Sample_2 {
 
 rule APT30_Sample_3 {
 	meta:
-		description = "FireEye APT30 Report Sample - file 59e055cee87d8faf6f701293e5830b5a"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -62,7 +62,7 @@ rule APT30_Sample_3 {
 
 rule APT30_Generic_C {
 	meta:
-		description = "FireEye APT30 Report Sample - file 0c4fcef3b583d0ffffc2b14b9297d3a4"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -85,7 +85,7 @@ rule APT30_Generic_C {
 
 rule APT30_Sample_4 {
 	meta:
-		description = "FireEye APT30 Report Sample - file 6ba315275561d99b1eb8fc614ff0b2b3"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -104,7 +104,7 @@ rule APT30_Sample_4 {
 
 rule APT30_Sample_5 {
 	meta:
-		description = "FireEye APT30 Report Sample - file ebf42e8b532e2f3b19046b028b5dfb23"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -122,7 +122,7 @@ rule APT30_Sample_5 {
 
 rule APT30_Sample_6 {
 	meta:
-		description = "FireEye APT30 Report Sample - file ee1b23c97f809151805792f8778ead74"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -137,7 +137,7 @@ rule APT30_Sample_6 {
 
 rule APT30_Sample_7 {
 	meta:
-		description = "FireEye APT30 Report Sample - file 74b87086887e0c67ffb035069b195ac7"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -156,7 +156,7 @@ rule APT30_Sample_7 {
 
 rule APT30_Generic_E {
 	meta:
-		description = "FireEye APT30 Report Sample - file 8ff473bedbcc77df2c49a91167b1abeb"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -175,7 +175,7 @@ rule APT30_Generic_E {
 
 rule APT30_Sample_8 {
 	meta:
-		description = "FireEye APT30 Report Sample - file 44b98f22155f420af4528d17bb4a5ec8"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -192,7 +192,7 @@ rule APT30_Sample_8 {
 
 rule APT30_Generic_B {
 	meta:
-		description = "FireEye APT30 Report Sample - file 29395c528693b69233c1c12bef8a64b3"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -212,7 +212,7 @@ rule APT30_Generic_B {
 
 rule APT30_Generic_I {
 	meta:
-		description = "FireEye APT30 Report Sample - file fe211c7a081c1dac46e3935f7c614549"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -229,7 +229,7 @@ rule APT30_Generic_I {
 
 rule APT30_Sample_9 {
 	meta:
-		description = "FireEye APT30 Report Sample - file e3ae3cbc024e39121c87d73e87bb2210"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -250,7 +250,7 @@ rule APT30_Sample_9 {
 }
 rule APT30_Sample_10 {
 	meta:
-		description = "FireEye APT30 Report Sample - file 8c713117af4ca6bbd69292a78069e75b"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -270,7 +270,7 @@ rule APT30_Sample_10 {
 
 rule APT30_Sample_11 {
 	meta:
-		description = "FireEye APT30 Report Sample - file d97aace631d6f089595f5ce177f54a39"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -298,7 +298,7 @@ rule APT30_Sample_11 {
 
 rule APT30_Sample_12 {
 	meta:
-		description = "FireEye APT30 Report Sample - file c95cd106c1fecbd500f4b97566d8dc96"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -314,7 +314,7 @@ rule APT30_Sample_12 {
 
 rule APT30_Sample_13 {
 	meta:
-		description = "FireEye APT30 Report Sample - file 95bb314fe8fdbe4df31a6d23b0d378bc"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -333,7 +333,7 @@ rule APT30_Sample_13 {
 
 rule APT30_Sample_14 {
 	meta:
-		description = "FireEye APT30 Report Sample - file 6f931c15789d234881be8ae8ccfe33f4"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -350,7 +350,7 @@ rule APT30_Sample_14 {
 
 rule APT30_Sample_15 {
 	meta:
-		description = "FireEye APT30 Report Sample - file e26a2afaaddfb09d9ede505c6f1cc4e3"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -369,7 +369,7 @@ rule APT30_Sample_15 {
 
 rule APT30_Sample_16 {
 	meta:
-		description = "FireEye APT30 Report Sample - file 37e568bed4ae057e548439dc811b4d3a"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -388,7 +388,7 @@ rule APT30_Sample_16 {
 
 rule APT30_Generic_A {
 	meta:
-		description = "FireEye APT30 Report Sample - file af1c1c5d8031c4942630b6a10270d8f4"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -409,7 +409,7 @@ rule APT30_Generic_A {
 
 rule APT30_Sample_17 {
 	meta:
-		description = "FireEye APT30 Report Sample - file 23813c5bf6a7af322b40bd2fd94bd42e"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -423,7 +423,7 @@ rule APT30_Sample_17 {
 }
 rule APT30_Sample_18 {
 	meta:
-		description = "FireEye APT30 Report Sample - file b2138a57f723326eda5a26d2dec56851"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -444,7 +444,7 @@ rule APT30_Sample_18 {
 
 rule APT30_Generic_G {
 	meta:
-		description = "FireEye APT30 Report Sample - file 53f1358cbc298da96ec56e9a08851b4b"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -466,7 +466,7 @@ rule APT30_Generic_G {
 
 rule APT30_Sample_19 {
 	meta:
-		description = "FireEye APT30 Report Sample - file 5d4f2871fd1818527ebd65b0ff930a77"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -492,7 +492,7 @@ rule APT30_Sample_19 {
 
 rule APT30_Generic_E_v2 {
 	meta:
-		description = "FireEye APT30 Report Sample - file 71f25831681c19ea17b2f2a84a41bbfb"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -509,7 +509,7 @@ rule APT30_Generic_E_v2 {
 
 rule APT30_Sample_20 {
 	meta:
-		description = "FireEye APT30 Report Sample - file 5ae51243647b7d03a5cb20dccbc0d561"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -530,7 +530,7 @@ rule APT30_Sample_20 {
 
 rule APT30_Sample_21 {
 	meta:
-		description = "FireEye APT30 Report Sample - file 78c4fcee5b7fdbabf3b9941225d95166"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -547,7 +547,7 @@ rule APT30_Sample_21 {
 
 rule APT30_Sample_22 {
 	meta:
-		description = "FireEye APT30 Report Sample - file fad06d7b4450c4631302264486611ec3"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -566,7 +566,7 @@ rule APT30_Sample_22 {
 
 rule APT30_Generic_F {
 	meta:
-		description = "FireEye APT30 Report Sample - file 4c10a1efed25b828e4785d9526507fbc"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -585,7 +585,7 @@ rule APT30_Generic_F {
 
 rule APT30_Sample_23 {
 	meta:
-		description = "FireEye APT30 Report Sample - file a5ca2c5b4d8c0c1bc93570ed13dcab1a"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -606,7 +606,7 @@ rule APT30_Sample_23 {
 
 rule APT30_Sample_24 {
 	meta:
-		description = "FireEye APT30 Report Sample - file 062fe1336459a851bd0ea271bb2afe35"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -626,7 +626,7 @@ rule APT30_Sample_24 {
 
 rule APT30_Sample_25 {
 	meta:
-		description = "FireEye APT30 Report Sample - file c4c068200ad8033a0f0cf28507b51842"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -646,7 +646,7 @@ rule APT30_Sample_25 {
 
 rule APT30_Sample_26 {
 	meta:
-		description = "FireEye APT30 Report Sample - file 428fc53c84e921ac518e54a5d055f54a"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -666,7 +666,7 @@ rule APT30_Sample_26 {
 
 rule APT30_Generic_D {
 	meta:
-		description = "FireEye APT30 Report Sample - file 597805832d45d522c4882f21db800ecf"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -690,7 +690,7 @@ rule APT30_Generic_D {
 
 rule APT30_Sample_27 {
 	meta:
-		description = "FireEye APT30 Report Sample - file d38e02eac7e3b299b46ff2607dd0f288"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -710,7 +710,7 @@ rule APT30_Sample_27 {
 
 rule APT30_Sample_28 {
 	meta:
-		description = "FireEye APT30 Report Sample - file e62a63307deead5c9fcca6b9a2d51fb0"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -739,7 +739,7 @@ rule APT30_Sample_28 {
 
 rule APT30_Sample_29 {
 	meta:
-		description = "FireEye APT30 Report Sample - file 1b81b80ff0edf57da2440456d516cc90"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -760,7 +760,7 @@ rule APT30_Sample_29 {
 
 rule APT30_Sample_30 {
 	meta:
-		description = "FireEye APT30 Report Sample - file bf8616bbed6d804a3dea09b230c2ab0c"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -778,7 +778,7 @@ rule APT30_Sample_30 {
 
 rule APT30_Sample_31 {
 	meta:
-		description = "FireEye APT30 Report Sample - file d8e68db503f4155ed1aeba95d1f5e3e4"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -796,7 +796,7 @@ rule APT30_Sample_31 {
 
 rule APT30_Generic_J {
 	meta:
-		description = "FireEye APT30 Report Sample - file baff5262ae01a9217b10fcd5dad9d1d5"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -828,7 +828,7 @@ rule APT30_Generic_J {
 
 rule APT30_Microfost {
 	meta:
-		description = "FireEye APT30 Report Sample - file 310a4a62ba3765cbf8e8bbb9f324c503"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -843,7 +843,7 @@ rule APT30_Microfost {
 
 rule APT30_Generic_K {
 	meta:
-		description = "FireEye APT30 Report Sample - file b5a343d11e1f7340de99118ce9fc1bbb"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -873,7 +873,7 @@ rule APT30_Generic_K {
 
 rule APT30_Sample_33 {
 	meta:
-		description = "FireEye APT30 Report Sample - file 5eaf3deaaf2efac92c73ada82a651afe"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -894,7 +894,7 @@ rule APT30_Sample_33 {
 
 rule APT30_Sample_34 {
 	meta:
-		description = "FireEye APT30 Report Sample - file a9e8e402a7ee459e4896d0ba83543684"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -914,7 +914,7 @@ rule APT30_Sample_34 {
 
 rule APT30_Sample_35 {
 	meta:
-		description = "FireEye APT30 Report Sample - file 414854a9b40f7757ed7bfc6a1b01250f"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
@@ -930,7 +930,7 @@ rule APT30_Sample_35 {
 
 rule APT30_Sample_1 {
 	meta:
-		description = "FireEye APT30 Report Sample - file 4c6b21e98ca03e0ef0910e07cef45dac"
+		description = "FireEye APT30 Report Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"

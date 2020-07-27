@@ -41,7 +41,7 @@ rule StuxNet_Malware_1 {
 
 rule Stuxnet_Malware_2 {
 	meta:
-		description = "Stuxnet Sample - file 63e6b8136058d7a06dfff4034b4ab17a261cdf398e63868a601f77ddd1b32802"
+		description = "Stuxnet Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Internal Research"
@@ -106,7 +106,7 @@ rule Stuxnet_Malware_3 {
 
 rule Stuxnet_Malware_4 {
 	meta:
-		description = "Stuxnet Sample - file 0d8c2bcb575378f6a88d17b5f6ce70e794a264cdc8556c8e812f0b5f9c709198"
+		description = "Stuxnet Sample"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "Internal Research"

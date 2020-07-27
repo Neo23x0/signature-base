@@ -28,7 +28,7 @@ rule GRIZZLY_STEPPE_Malware_1 {
 
 rule GRIZZLY_STEPPE_Malware_2 {
    meta:
-      description = "Auto-generated rule - file 9acba7e5f972cdd722541a23ff314ea81ac35d5c0c758eb708fb6e2cc4f598a0"
+      description = "Auto-generated rule"
       license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/WVflzO"

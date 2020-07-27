@@ -24,7 +24,7 @@ rule GoldenEye_Ransomware_XLS {
 
 rule GoldenEyeRansomware_Dropper_MalformedZoomit {
    meta:
-      description = "Auto-generated rule - file b5ef16922e2c76b09edd71471dd837e89811c5e658406a8495c1364d0d9dc690"
+      description = "Auto-generated rule"
       license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       reference = "https://goo.gl/jp2SkT"
