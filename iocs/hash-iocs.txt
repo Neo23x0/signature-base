@@ -9439,3 +9439,27 @@ B6B9C5EFFDD14E2920183B313C56E5068C57A709;EvilNum Report - C# Agent Loader – Se
 D6341CD464847C9C2716030111261D5B84A43B2A;EvilNum Report - C# Copier – ypoc.exe - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
 AB0C6268C61D9F36996BA7653B3A3E1EDE2AEE51;EvilNum Report - C# Copier – ypoc.exe - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
 A6ECD3A818D463155C31977000E6FDE3EB8A2352;EvilNum Report - MSI Installer of C# agent - SecuUpdate2021.msi - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+
+4B90E2E2D1DEA7889DC15059E11E11353FA621A6;Winnti - First stage - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+C7A9DCD4F9B2F26F50E8DD7F96352AEC7C4123FE;Winnti - First stage - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+3508EB2857E279E0165DE5AD7BBF811422959158;Winnti - First stage - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+729D526E75462AA8D33A1493B5A77CB28DD654BC;Winnti - First stage - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+5663AF9295F171FDD41A6D819094A5196920AA4B;Winnti - First stage - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+23789B2C9F831E385B22942DBC22F085D62B48C7;Winnti - PipeMon - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+53C5AE2655808365F1030E1E06982A7A6141E47F;Winnti - PipeMon - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+E422CC1D7B2958A59F44EE6D1B4E10B524893E9D;Winnti - PipeMon - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+5BB96743FEB1C3375A6E2660B8397C68BEF4AAC2;Winnti - PipeMon - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+78F4ACD69DC8F9477CAB9C732C91A92374ADCACD;Winnti - PipeMon - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+B56D8F826FA8E073E6AD1B99B433EAF7501F129E;Winnti - PipeMon - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+534CD47EB38FEE7093D24BAC66C2CF8DF24C7D03;Winnti - PipeMon - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+168101B9B3B512583B3CE6531CFCE6E5FB581409;Winnti - PipeMon encrypted binarie - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+C887B35EA883F8622F7C48EC9D0427AFE833BF46;Winnti - PipeMon encrypted binarie - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+44D0A2A43ECC8619DE8DB99C1465DB4E3C8FF995;Winnti - PipeMon encrypted binarie - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+E17972F1A3C667EEBB155A228278AA3B5F89F560;Winnti - PipeMon encrypted binarie - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+C03BE8BB8D03BE24A6C5CF2ED14EDFCEFA8E8429;Winnti - PipeMon encrypted binarie - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+2B0481C61F367A99987B7EC0ADE4B6995425151C;Winnti - PipeMon encrypted binaries - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+AF9C220D177B0B54A790C6CC135824E7C829B681;Winnti - WinEggDrop - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+4A240EDEF042AE3CE47E8E42C2395DB43190909D;Winnti - Mimikatz - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+751A9CBFFEC28B22105CDCAF073A371DE255F176;Winnti - Netcat - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+48230228B69D764F71A7BF8C08C85436B503109E;Winnti - HTran - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+D24BBB898A4A301870CAB85F836090B0FC968163;Winnti - AceHash - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
