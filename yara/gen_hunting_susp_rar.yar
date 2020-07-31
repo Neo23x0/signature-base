@@ -7,8 +7,6 @@ rule SUSP_RAR_Single_Doc_File {
       reference = "Internal Research"
       date = "2020-07-11"
       score = 40
-      hash1 = "51a568ac3ceb6bc4a4a123af9ca383a32bac0f630b17a1cc99e45ff8002727b1"
-      hash2 = "f9eddbebf9c41089d7507291adbaac8a4bcebffcd960f838d8a9648194d38a4a"
    strings:
       $s1 = ".doc"
    condition:
