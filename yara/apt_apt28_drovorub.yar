@@ -68,6 +68,8 @@ rule APT_APT28_drovorub_unique_network_comms_strings {
      condition:
         all of them
 }
+/* FPs
+48505c956c005576b1292495102a5a4d37a830dc936ce85204d2783e13082c1f
 
 rule APT_APT28_drovorub_kernel_module_unique_strings {
     meta:
@@ -108,3 +110,4 @@ rule APT_APT28_drovorub_kernel_module_unique_strings {
     condition:
         all of them
 }
+*/
