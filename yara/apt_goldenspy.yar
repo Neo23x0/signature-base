@@ -1,6 +1,6 @@
 rule APT_MAL_BKA_GoldenSpy_Aug20_1 {
 	meta:
-		description = "detects variants of GoldenSpy Malware"
+		description = "Detects variants of GoldenSpy Malware"
         reference = "https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html"
         author = "BKA"
         date = "2020-08-21"
@@ -12,8 +12,8 @@ rule APT_MAL_BKA_GoldenSpy_Aug20_1 {
 		$str05 = "svmm" ascii
 		$str06 = "PROTOCOL_" ascii
 		$str07 = "softList" ascii
-		$str08 = "excuteExe" asci
+		$str08 = "excuteExe" ascii
 	condition:
-	 	 uint16(0) == 0x5A4D and 5 of ($str*)
+	 	uint16(0) == 0x5A4D and 5 of ($str*)
 }
 
