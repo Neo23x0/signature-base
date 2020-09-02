@@ -89,7 +89,7 @@ rule Suspicious_Size_chrome_exe {
     condition:
         uint16(0) == 0x5a4d
         and filename == "chrome.exe"
-        and ( filesize < 500KB or filesize > 2000KB )
+        and ( filesize < 500KB or filesize > 3000KB )
 }
 
 rule Suspicious_Size_csrss_exe {
