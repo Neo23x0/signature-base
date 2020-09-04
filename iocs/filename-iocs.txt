@@ -1866,7 +1866,6 @@ fdp\.exe;60;\\bin\\
 \\nbt\.exe;90
 \\atexec\.exe;90
 \\LogMeInSystrays\.dat;90
-\\[0-9]{1,20}\.plg;90
 \\NvSmart\.hlp;90
 \\AppData\\Local\\Temp\\winsyslog\\msseces\.exe;90
 \\AppData\\Local\\Temp\\winsyslog\\msseces\.asm;90
