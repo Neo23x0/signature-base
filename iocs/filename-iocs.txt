@@ -2100,7 +2100,7 @@ ystem32\\lcsvsvc\.dll;80
 \\(g64\-|\\g32\-|\\gsecdump\.exe|gcx64\.|\\gcx32\.|\\gec\.|\\gse\.exe);60
 \\fgdump;60
 \\w32\.exe;50;site-packages
-\\w64\.exe;50;site-packages
+\\w64\.exe;50;(\}\\Root|site-packages)
 
 # Generic methodology - 1 character executable / script in short path
 #[a-zA-Z]:[.]{0,10}\\[.]\.(exe|dll|vbs|ps1|bat|sh)$;60;(?i)(\\cygwin\\|\\GnuWin32\\|Opera\\k\.(exe|bat)|\\R\\r-|\\Git\\usr|\\adobe after effects|\\perl)
