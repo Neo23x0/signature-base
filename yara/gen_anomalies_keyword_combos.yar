@@ -18,6 +18,12 @@ rule SUSP_NullSoftInst_Combo_Oct20_1 {
 
       $fp1 = "nsisinstall" fullword ascii
       $fp2 = "\\REGISTRY\\MACHINE\\Software\\" wide
+      $fp3 = "Apache Tomcat" wide fullword
+      $fp4 = "Bot Framework Emulator" wide fullword
+      $fp5 = "Firefox Helper" wide fullword
+      $fp6 = "Paint.NET Setup" wide fullword
+      $fp7 = "Microsoft .NET Services Installation Utility" wide fullword
+      $fp8 = "License: MPL 2" wide
    condition:
       uint16(0) == 0x5a4d and
       filesize < 2000KB and
