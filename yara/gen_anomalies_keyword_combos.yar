@@ -15,8 +15,12 @@ rule SUSP_NullSoftInst_Combo_Oct20_1 {
       $b1 = "Microsoft Corporation" wide fullword
       $b2 = "Apache Software Foundation" ascii wide fullword
       $b3 = "Simon Tatham" wide fullword
+
+      $fp1 = "nsisinstall" fullword ascii
+      $fp2 = "\\REGISTRY\\MACHINE\\Software\\" wide
    condition:
       uint16(0) == 0x5a4d and
       filesize < 2000KB and
-      $a1 and 1 of ($b*)
+      $a1 and 1 of ($b*) and 
+      not 1 of ($fp*)
 }
