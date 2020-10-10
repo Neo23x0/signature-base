@@ -12,7 +12,7 @@
 
 import "pe"
 
-rule MAL_XMR_Miner_May19_1 {
+rule MAL_XMR_Miner_May19_1 : HIGHVOL {
    meta:
       description = "Detects Monero Crypto Coin Miner"
       author = "Florian Roth"
