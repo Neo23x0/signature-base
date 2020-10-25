@@ -2,7 +2,7 @@
 
 # Signature-Base
 
-signature-base is the signature database for my scanners LOKI and SPARK Core
+signature-base is the signature database for my scanners LOKI and THOR Lite
 
 ## Directory Structure
 
@@ -13,7 +13,7 @@ signature-base is the signature database for my scanners LOKI and SPARK Core
 
 ## External Variables in YARA Rules
 
-Using the YARA rules in a tool other than [LOKI](https://github.com/Neo23x0/Loki), [SPARK](https://www.nextron-systems.com/spark/) or [SPARK Core](https://www.nextron-systems.com/spark-core/) will cause errors stating an `undefined identifier`. The rules that make use of external variables have been moved to the following 4 rule set files:
+Using the YARA rules in a tool other than [LOKI](https://github.com/Neo23x0/Loki) or [THOR Lite](https://www.nextron-systems.com/thor-lite/) will cause errors stating an `undefined identifier`. The rules that make use of external variables have been moved to the following 4 rule set files:
 
 - ./yara/generic_anomalies.yar
 - ./yara/general_cloaking.yar
