@@ -1,3 +1,4 @@
+import "pe"
 
 rule SUSP_AdobePDF_SFX_Bitmap_Combo_Executable {
    meta:
