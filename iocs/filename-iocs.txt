@@ -227,7 +227,6 @@ ystem32\\razorp\.exe;45
 \\d1\.tmp\.dll;55
 \\fotos\.exe;55
 \\new\.exe;60
-\\image\.exe;60
 \\movie\.exe;60
 \\files\.exe;55
 \\fun\.exe;60
@@ -249,8 +248,6 @@ ystem32\\razorp\.exe;45
 \\tmp\.exe;60
 \\userfiles\.exe;65
 \\nuevo\.exe;65
-\\photo\.exe;65
-\\pdf\.exe;65
 \\_thumbs\.exe;65
 \\music\.exe;65
 \\picture\.exe;65
