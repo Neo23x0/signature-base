@@ -61,7 +61,8 @@ FF FE 3C 00 25 00 40;JSP
 1F A0;TARZ
 3C 25;JSP
 4D 5A;EXE
-FF FE;Windows Registry File
+FF FE;UTF16-Encoded File LE
+FE FF;UTF16-Encoded File BE
 
 # Special
 5B 30 30 30 30 30 30 30 30 3A;MimiLSA Log

@@ -13,27 +13,6 @@ rule APT_NK_Lazarus_RC4_Loop {
       int16(0) == 0x5a4d and filesize < 3000KB and $str_rc4_loop
 }
 
-rule APT_NK_Lazarus_Lssvc_Ntuser_Unpacked {
-   meta:
-      author = "f-secure"
-      description = "Detects unpacked variant of Lazarus Group implant" 
-      date = "2020-06-10"
-      reference = "https://labs.f-secure.com/publications/ti-report-lazarus-group-cryptocurrency-vertical"
-   strings:
-      $str_curl = "CLIENT libcurl" ascii
-      $str_mask = "%s%s\\%s" ascii wide fullword 
-      $str_exe_1 = "explorer.exe" ascii wide nocase 
-      $str_exe_2 = "lsass.exe" ascii wide nocase 
-      $str_misc_ext = ".cid" ascii wide 
-      $str_misc_debug = "SeDebugPrivilege" ascii wide 
-      $str_misc_ntdll = "NtProtectVirtualMemory" ascii
-   condition:
-      $str_curl
-      and $str_mask
-      and 1 of ($str_exe*)
-      and 2 of ($str_misc*)
-}
-
 rule APT_NK_Lazarus_Network_Backdoor_Unpacked {
    meta:
       author = "f-secure"

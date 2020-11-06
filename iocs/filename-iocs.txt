@@ -1826,7 +1826,6 @@ Temp\\rad[A-F0-9]{5}\.exe;70
 \\netx\.exe;60
 \\ctrl\.exe;60
 \\gpget\.exe;60
-\\power\.exe;60
 \\sacses\.exe;60
 \\fsutl\.exe;60
 \\dfrag\.exe;60
@@ -2096,7 +2095,7 @@ ystem32\\lcsvsvc\.dll;80
 #\\(procdump|pdump|pc)(64)+\\.exe;50;(?i)(\\SysInternals\\)
 
 # Cred Dumping
-\\(q32|q64|wceaux|w86|q86|quarkpwd[^\\]*|m64|m32|hash32|hash64|64|32|wce32|wce64|w32|w64|wce|p32|p64|ps32|ps64|mimikatz|mimilove|mm32|mm64|pw32|pw64|g32|g64|gs32|gs64|hash|hashdump|dumpsvc)\.exe;60;\\distlib\\
+\\(q32|q64|wceaux|w86|q86|quarkpwd[^\\]*|m64|m32|hash32|hash64|64|32|wce32|wce64|w32|w64|wce|p32|p64|ps32|ps64|mimikatz|mimilove|mm32|mm64|pw32|pw64|g32|g64|gs32|gs64|hashdump|dumpsvc)\.exe;60;\\distlib\\
 \\(g64\-|\\g32\-|\\gsecdump\.exe|gcx64\.|\\gcx32\.|\\gec\.|\\gse\.exe);60
 \\fgdump;60
 \\w32\.exe;50;site-packages
