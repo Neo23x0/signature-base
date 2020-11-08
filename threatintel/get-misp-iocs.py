@@ -4,9 +4,11 @@
 #
 # Get-MISP-IOCs
 # Retrieves IOCs from MISP and stores them in appropriate format
+#
+# Checks"127.0.0.1" and "empty file hashes" are removed from code. Use MISP warninglist feature.
 
 MISP_KEY = '--- YOUR API KEY ---'
-MISP_URL = 'https://misppriv.circl.lu'
+MISP_URL = ''
 
 
 import sys
@@ -15,7 +17,9 @@ import argparse
 import os
 import re
 import io
-from pymisp import PyMISP
+import ast 
+from pymisp import ExpandedPyMISP
+
 
 class MISPReceiver():
 
@@ -33,7 +37,7 @@ class MISPReceiver():
     use_filename_regex = True
 
     def __init__(self, misp_key, misp_url, misp_verify_cert, siem_mode=False, debugon=False):
-        self.misp = PyMISP(misp_url, misp_key, misp_verify_cert, 'json')
+        self.misp = ExpandedPyMISP(misp_url, misp_key, misp_verify_cert, debugon)
         self.debugon = debugon
         if siem_mode:
             self.siem_mode = True
@@ -41,43 +45,43 @@ class MISPReceiver():
             self.use_headers = True
             self.use_filename_regex = False
 
-    def get_iocs_last(self, last):
+    def get_iocs_last(self, last, tags, enforceWarninglist):
 
         # Retrieve events from MISP
-        result = self.misp.download_last(last)
-        self.events = result['response']
+        tags = ast.literal_eval(tags)        
+        result = self.misp.search(controller='attributes', include_context=True, last=last, tags=tags, enforceWarninglist=enforceWarninglist)
+        if not result:
+            return False
+        self.attributes = result['Attribute']
 
-        # Process each element (without related eevents)
-        for event_element in self.events:
-            event = event_element["Event"]
+        # Process each element (without related events)
+        for attr_element in self.attributes:
+            event = attr_element["Event"]
 
             # Info for Comment
             info = event['info']
             uuid = event['uuid']
-            comment = "{0} - UUID: {1}".format(info.encode('unicode_escape'), uuid)
+            attr_uuid = attr_element["uuid"]
+            comment = "{0} - UUID: {1}".format(info, uuid)
 
-            # Event data
-            for attribute in event['Attribute']:
+            # Skip iocs that are not meant for ioc detection
+            if attr_element['to_ids'] == False:
+                continue
 
-                # Skip iocs that are not meant for ioc detection
-                if attribute['to_ids'] == False:
-                    continue
+            # Value
+            value = attr_element['value']
 
-                # Value
-                value = attribute['value']
+            # Non split type
+            if '|' not in attr_element['type']:
+                self.add_ioc(attr_element['type'], value, comment, uuid, info, attr_uuid)
+            # Split type
+            else:
+                # Prepare values
+                type1, type2 = attr_element['type'].split('|')
+                value1, value2 = value.split('|')
+                self.add_ioc(type2, value2, comment, uuid, info, attr_uuid)
 
-                # Non split type
-                if '|' not in attribute['type']:
-                    self.add_ioc(attribute['type'], value, comment, uuid, info)
-                # Split type
-                else:
-                    # Prepare values
-                    type1, type2 = attribute['type'].split('|')
-                    value1, value2 = value.split('|')
-                    # self.add_ioc(type1, value1, comment)
-                    self.add_ioc(type2, value2, comment, uuid, info)
-
-    def add_ioc(self, ioc_type, value, comment, uuid, info):
+    def add_ioc(self, ioc_type, value, comment, uuid, info, attr_uuid):
         # Cleanup value
         value = value.encode('unicode_escape')
         # Debug
@@ -85,19 +89,20 @@ class MISPReceiver():
             print("{0} = {1}".format(ioc_type, value))
         # C2s
         if ioc_type in ('hostname', 'ip-dst', 'domain'):
-            if value == '127.0.0.1':
-                return
+            # (at least on Win10) scanning for network endpoints is only succesful if /32 is added
+            if ioc_type == "ip-dst":
+                c2_cidr=args.c2cidr
+            else:
+                c2_cidr = ""
+            value = "{0}{1}".format(value.decode("utf-8"),c2_cidr)
             self.c2_iocs[value] = comment
         # Hash
         if ioc_type in ('md5', 'sha1', 'sha256'):
-            # No empty files
-            if value == 'd41d8cd98f00b204e9800998ecf8427e' or \
-                            value == 'da39a3ee5e6b4b0d3255bfef95601890afd80709' or \
-                            value == 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855':
-                return
+            value = value.decode("utf-8")
             self.hash_iocs[value] = comment
         # Filenames
         if ioc_type in ('filename', 'filepath'):
+            value = value.decode("utf-8")
             # Add prefix to filenames
             if not re.search(r'^([a-zA-Z]:|%)', value):
                 if not self.siem_mode:
@@ -105,14 +110,15 @@ class MISPReceiver():
             if self.use_filename_regex:
                 self.filename_iocs[my_escape(value)] = comment
             else:
-                self.filename_iocs[value.decode('string_escape')] = comment
+                self.filename_iocs[value.decode('unicode_escape')] = comment
         # Yara
         if ioc_type in ('yara'):
-            self.add_yara_rule(value, uuid, info)
+            self.add_yara_rule(value, attr_uuid, info)
 
     def add_yara_rule(self, yara_rule, uuid, info):
-        identifier = generate_identifier(info)
-        self.yara_rules[identifier] = r'%s' % repair_yara_rule(yara_rule.decode('string_escape'), uuid)
+        identifier = generate_identifier(info, uuid)
+        print(identifier)
+        self.yara_rules[identifier] = r'%s' % repair_yara_rule(yara_rule.decode('unicode_escape'), uuid)
 
     def write_iocs(self, output_path, output_path_yara):
         # Write C2 IOCs
@@ -136,19 +142,27 @@ class MISPReceiver():
         with open(ioc_file, 'w') as file:
             if self.use_headers:
                 file.write("{0}{1}description\n".format(ioc_type, self.separator))
-            for ioc in iocs:
-                file.write("{0}{2}{1}\n".format(ioc,iocs[ioc],self.separator))
+            else:
+                for ioc in iocs:
+                    if ioc_type == "c2":
+                        file.write("# {0}\n".format(iocs[ioc]))
+                        file.write("{0}\n".format(ioc))
+                    elif ioc_type == "filename":
+                        file.write("# {0}\n".format(iocs[ioc]))
+                        file.write("{0}{2}{1}\n".format(ioc,args.filenamescore,self.separator))
+                    else:
+                        file.write("{0}{2}{1}\n".format(ioc,iocs[ioc],self.separator))
         print("{0} IOCs written to file {1}".format(len(iocs), ioc_file))
 
     def write_yara_rule(self, yara_file, yara_rule):
         # Write the YARA rule
-        with io.open(yara_file, 'wb') as fh:
+        with io.open(yara_file, 'w') as fh:
             fh.write(r'%s' % yara_rule)
 
 
-def generate_identifier(string):
+def generate_identifier(string, uuid):
     valid_chars = '-_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
-    return ''.join(char for char in string if char in valid_chars)
+    return "{0}-{1}".format(''.join(char for char in string if char in valid_chars),''.join(char for char in uuid if char in valid_chars))
 
 
 def repair_yara_rule(yara_rule, uuid):
@@ -175,8 +189,12 @@ if __name__ == '__main__':
     parser.add_argument('-u', help='MISP URL', metavar='URL', default=MISP_URL)
     parser.add_argument('-k', help='MISP API key', metavar='APIKEY', default=MISP_KEY)
     parser.add_argument('-l', help='Time frame (e.g. 2d, 12h - default=30d)', metavar='tframe', default='30d')
+    parser.add_argument('-t', help='Tags (add as list in format \'["PAP:GREEN"]\')', metavar='tags', default='')
+    parser.add_argument('-w', help='Enforce warning list', metavar='warning-list', default=True)
     parser.add_argument('-o', help='Output directory', metavar='dir', default='../iocs')
     parser.add_argument('-y', help='YARA rule output directory', metavar='yara-dir', default='../iocs/yara')
+    parser.add_argument('--c2cidr', help='Default CIDR for C2 IOC', metavar='c2cidr', default='/32')
+    parser.add_argument('--filenamescore', help='Default score for filename IOC', metavar='filenamescore', default='80')
     parser.add_argument('--siem', action='store_true', help='CSV Output for use in SIEM systems (Splunk)', default=False)
     parser.add_argument('--verifycert', action='store_true', help='Verify the server certificate', default=False)
     parser.add_argument('--debug', action='store_true', default=False, help='Debug output')
@@ -192,7 +210,7 @@ if __name__ == '__main__':
                                  siem_mode=args.siem, debugon=args.debug)
 
     # Retrieve the events and store the IOCs
-    misp_receiver.get_iocs_last(args.l)
+    misp_receiver.get_iocs_last(args.l, args.t, args.w)
 
     # Write IOC files
     misp_receiver.write_iocs(args.o, args.y)
