@@ -60,7 +60,7 @@ rule SUSP_Excel4Macro_AutoOpen
 
 
     condition:
-        filesize < 400KB
+        filesize < 3000KB
         and $header_docf at 0
         and $s1
         and any of ($Auto_*)
