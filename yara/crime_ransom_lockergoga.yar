@@ -12,10 +12,7 @@ rule Ransom_LockerGoga_Mar19_1 {
    strings:
       $x1 = "\\.(doc|dot|wbk|docx|dotx|docb|xlm|xlsx|xltx|xlsb|xlw|ppt|pot|pps|pptx|potx|ppsx|sldx|pdf)" wide
       $x2 = "|[A-Za-z]:\\cl.log" wide
-      $x4 = "\\crypto-locker\\" ascii
-      $x5 = "cipher.exe" fullword ascii
-      $x6 = "netsh.exe" fullword ascii
-      $x7 = "net.exe" fullword ascii
+      $x3 = "\\crypto-locker\\" ascii
       $xc1 = { 00 43 00 6F 00 6D 00 70 00 61 00 6E 00 79 00 4E
                00 61 00 6D 00 65 00 00 00 00 00 4D 00 6C 00 63
                00 72 00 6F 00 73 00 6F 00 66 00 74 }
@@ -24,6 +21,10 @@ rule Ransom_LockerGoga_Mar19_1 {
                00 20 75 6E 6B 6E 6F 77 6E 20 65 78 63 65 70 74
                69 6F 6E }
       $rn1 = "This may lead to the impossibility of recovery of the certain files." wide
+      
+      $s1 = "cipher.exe" fullword ascii
+      $s2 = "netsh.exe" fullword ascii
+      $s3 = "net.exe" fullword ascii
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 4000KB and 1 of ($x*) ) or $rn1
+      ( uint16(0) == 0x5a4d and filesize < 4000KB and 1 of ($x*) or 3 of them ) or $rn1
 }
