@@ -22,6 +22,7 @@ rule gen_Excel_xll_addin_suspicious
         hash9="6ba100a5da5efea14a5ca929628b732a6e6b8ab8f78167db35343e895997ce52"
         hasha="ee603cbd6187850334ae5d8adcf029d5cde710fc966b2b7a2c95249d3b23d693"
         hashb="99195679e998407fd4d606a0d956bda99f79625b638c63f90d9d399c6f2a143e"
+        hashc="99534c7086128998ae39967fe5fc6bf526cb2ba5d3b2e99dc7bd03833e4a94ae"
     strings:
         $s1 = "CryptStringToBinaryA"
         $s2 = "NtQueueApcThread"
@@ -53,6 +54,7 @@ rule gen_Excel_xll_addin_suspicious
                   and pe.imports("KERNEL32.dll", "VirtualAllocEx")
                   and pe.imports("KERNEL32.dll", "ResumeThread")
                   and pe.imports("KERNEL32.dll", "SetThreadContext"))
+             or (pe.imports("KERNEL32.dll", "WinExec"))
              or (all of ($s*))
              or (all of ($cs*) and pe.imports("KERNEL32.dll", "VirtualAllocEx")
                   and pe.imports("KERNEL32.dll", "TerminateProcess")
