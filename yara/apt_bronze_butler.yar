@@ -26,7 +26,7 @@ rule BronzeButler_Daserf_Delphi_1 {
       $s3 = "l32.dll" fullword ascii
       $s4 = "tProcess:" fullword ascii
       $s5 = " InjectPr" ascii
-      $s6 = "Write$Error creating variant or safe arrayInvalid argument to time encode" fullword wide
+      $s6 = "Write$Error creating variant or safe array\x1fInvalid argument to time encode" fullword wide
       $s7 = "on\\run /v " fullword ascii
       $s8 = "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\run" fullword ascii
       $s9 = "ms1ng2d3d2.exe" fullword ascii

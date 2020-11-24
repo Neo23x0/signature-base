@@ -8,7 +8,7 @@
 
 rule Sofacy_Fybis_ELF_Backdoor_Gen1 {
 	meta:
-		description = "Detects Sofacy Fysbis Linux Backdoor_Naikon_APT_Sample1"
+		description = "Detects Sofacy Fysbis Linux Backdoor"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Florian Roth"
 		reference = "http://researchcenter.paloaltonetworks.com/2016/02/a-look-into-fysbis-sofacys-linux-backdoor/"
