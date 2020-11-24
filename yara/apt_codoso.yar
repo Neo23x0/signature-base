@@ -138,7 +138,7 @@ rule Codoso_Gh0st_3 {
 		$s4 = "testsupdate33" fullword ascii
 		$s5 = "Device Protect Application" fullword wide
 		$s6 = "MSVCP60.DLL" fullword ascii /* Goodware String - occured 1 times */
-		$s7 = "mail-news.eicp.net" fullword ascii
+		$s7 = "mail-news.eicp.net" fullword ascii
 	condition:
 		uint16(0) == 0x5a4d and filesize < 195KB and $x1 or 4 of them
 }

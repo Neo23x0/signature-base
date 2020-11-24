@@ -50,7 +50,7 @@ rule Ysoserial_Payload_Spring1 {
       hash6 = "1da04d838141c64711d87695a4cdb4eedfd4a206cc80922a41cfc82df8e24187"
       hash7 = "adf895fa95526c9ce48ec33297156dd69c3dbcdd2432000e61b2dd34ffc167c7"
    strings:
-      $x1 = "ysoserial/Pwner" ascii
+      $x1 = "ysoserial/Pwner" ascii
    condition:
       1 of them
 }
