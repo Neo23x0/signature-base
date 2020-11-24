@@ -9254,7 +9254,7 @@ rule ALFA_SHELL {
       $x5 = "if(!function_exists('b'.'as'.'e6'.'4_'.'en'.'co'.'de')" ascii
       $f1 = { 76 2F 38 76 2F 36 76 2F 2B 76 2F 2F 66 38 46 27 29 3B 3F 3E 0D 0A }
    condition:
-      ( filesize < 900KB and 1 of ($x*) or $f1 at (filesize-22) )
+      ( filesize < 900KB and 2 of ($x*) or $f1 at (filesize-22) )
 }
 
 rule Webshell_FOPO_Obfuscation_APT_ON_Nov17_1 {

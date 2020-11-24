@@ -122,7 +122,7 @@ rule Fierce2
       license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       description = "This signature detects the Fierce2 domain scanner"
-      date = "07/2014"
+      date = "01.07.2014"
       score = 60
    strings:
       $s1 = "$tt_xml->process( 'end_domainscan.tt', $end_domainscan_vars,"
@@ -136,7 +136,7 @@ rule Ncrack
       license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       description = "This signature detects the Ncrack brute force tool"
-      date = "07/2014"
+      date = "01.07.2014"
       score = 60
    strings:
       $s1 = "NcrackOutputTable only supports adding up to 4096 to a cell via"
@@ -150,7 +150,7 @@ rule SQLMap
       license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
       description = "This signature detects the SQLMap SQL injection tool"
-      date = "07/2014"
+      date = "01.07.2014"
       score = 60
    strings:
       $s1 = "except SqlmapBaseException, ex:"
@@ -2775,7 +2775,7 @@ rule CN_Portscan : APT
         description = "CN Port Scanner"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
-        release_date = "2013-11-29"
+        date = "2013-11-29"
         confidential = false
       score = 70
     strings:
@@ -2790,7 +2790,7 @@ rule WMI_vbs : APT
         description = "WMI Tool - APT"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
-        release_date = "2013-11-29"
+        date = "2013-11-29"
         confidential = false
       score = 70
     strings:
@@ -2898,176 +2898,6 @@ rule DarkComet_Keylogger_File
       $timestamp = /\([0-9]?[0-9]:[0-9][0-9]:[0-9][0-9] [AP]M\)/
    condition:
       uint16(0) == 0x3A3A and #entry > 10 and #timestamp > 10
-}
-
-/* Mimikatz */
-
-rule Mimikatz_Memory_Rule_1 : APT {
-   meta:
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
-      author = "Florian Roth"
-      date = "12/22/2014"
-      score = 70
-      type = "memory"
-      description = "Detects password dumper mimikatz in memory"
-   strings:
-      $s1 = "sekurlsa::msv" fullword ascii
-       $s2 = "sekurlsa::wdigest" fullword ascii
-       $s4 = "sekurlsa::kerberos" fullword ascii
-       $s5 = "sekurlsa::tspkg" fullword ascii
-       $s6 = "sekurlsa::livessp" fullword ascii
-       $s7 = "sekurlsa::ssp" fullword ascii
-       $s8 = "sekurlsa::logonPasswords" fullword ascii
-       $s9 = "sekurlsa::process" fullword ascii
-       $s10 = "ekurlsa::minidump" fullword ascii
-       $s11 = "sekurlsa::pth" fullword ascii
-       $s12 = "sekurlsa::tickets" fullword ascii
-       $s13 = "sekurlsa::ekeys" fullword ascii
-       $s14 = "sekurlsa::dpapi" fullword ascii
-       $s15 = "sekurlsa::credman" fullword ascii
-   condition:
-      1 of them
-}
-
-rule Mimikatz_Memory_Rule_2 : APT {
-   meta:
-      description = "Mimikatz Rule generated from a memory dump"
-      author = "Florian Roth - Florian Roth"
-      type = "memory"
-      score = 80
-   strings:
-      $s0 = "sekurlsa::" ascii
-      $x1 = "cryptprimitives.pdb" ascii
-      $x2 = "Now is t1O" ascii fullword
-      $x4 = "ALICE123" ascii
-      $x5 = "BOBBY456" ascii
-   condition:
-      $s0 and 1 of ($x*)
-}
-
-rule mimikatz
-{
-   meta:
-      description      = "mimikatz"
-      author         = "Benjamin DELPY (gentilkiwi)"
-      tool_author      = "Benjamin DELPY (gentilkiwi)"
-
-   strings:
-      $exe_x86_1      = { 89 71 04 89 [0-3] 30 8d 04 bd }
-      $exe_x86_2      = { 8b 4d e? 8b 45 f4 89 75 e? 89 01 85 ff 74 }
-
-      $exe_x64_1      = { 33 ff 4? 89 37 4? 8b f3 45 85 c? 74}
-      $exe_x64_2      = { 4c 8b df 49 [0-3] c1 e3 04 48 [0-3] 8b cb 4c 03 [0-3] d8 }
-
-/*
-      $dll_1         = { c7 0? 00 00 01 00 [4-14] c7 0? 01 00 00 00 }
-      $dll_2         = { c7 0? 10 02 00 00 ?? 89 4? }
-*/
-
-      $sys_x86      = { a0 00 00 00 24 02 00 00 40 00 00 00 [0-4] b8 00 00 00 6c 02 00 00 40 00 00 00 }
-      $sys_x64      = { 88 01 00 00 3c 04 00 00 40 00 00 00 [0-4] e8 02 00 00 f8 02 00 00 40 00 00 00 }
-
-   condition:
-      (all of ($exe_x86_*)) or (all of ($exe_x64_*))
-      // or (all of ($dll_*))
-      or (any of ($sys_*))
-}
-
-rule wce
-{
-   meta:
-      description      = "wce"
-      author         = "Benjamin DELPY (gentilkiwi)"
-      tool_author      = "Hernan Ochoa (hernano)"
-   strings:
-      $hex_legacy      = { 8b ff 55 8b ec 6a 00 ff 75 0c ff 75 08 e8 [0-3] 5d c2 08 00 }
-      $hex_x86      = { 8d 45 f0 50 8d 45 f8 50 8d 45 e8 50 6a 00 8d 45 fc 50 [0-8] 50 72 69 6d 61 72 79 00 }
-      $hex_x64      = { ff f3 48 83 ec 30 48 8b d9 48 8d 15 [0-16] 50 72 69 6d 61 72 79 00 }
-   condition:
-      any of them
-}
-
-rule power_pe_injection
-{
-   meta:
-      description      = "PowerShell with PE Reflective Injection"
-      author         = "Benjamin DELPY (gentilkiwi)"
-   strings:
-      $str_loadlib   = "0x53, 0x48, 0x89, 0xe3, 0x48, 0x83, 0xec, 0x20, 0x66, 0x83, 0xe4, 0xc0, 0x48, 0xb9"
-   condition:
-      $str_loadlib
-}
-
-rule Mimikatz_Logfile
-{
-   meta:
-      description = "Detects a log file generated by malicious hack tool mimikatz"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
-      author = "Florian Roth"
-      score = 80
-      date = "2015/03/31"
-   strings:
-      $s1 = "SID               :" ascii fullword
-      $s2 = "* NTLM     :" ascii fullword
-      $s3 = "Authentication Id :" ascii fullword
-      $s4 = "wdigest :" ascii fullword
-   condition:
-      all of them
-}
-
-rule Mimikatz_Strings {
-   meta:
-      description = "Detects Mimikatz strings"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
-      author = "Florian Roth"
-      reference = "not set"
-      date = "2016-06-08"
-      score = 65
-   strings:
-      $x1 = "sekurlsa::logonpasswords" fullword wide ascii
-      $x2 = "List tickets in MIT/Heimdall ccache" fullword ascii wide
-      $x3 = "kuhl_m_kerberos_ptt_file ; LsaCallKerberosPackage %08x" fullword ascii wide
-      $x4 = "* Injecting ticket :" fullword wide ascii
-      $x5 = "mimidrv.sys" fullword wide ascii
-      $x6 = "Lists LM & NTLM credentials" fullword wide ascii
-      $x7 = "\\_ kerberos -" fullword wide ascii
-      $x8 = "* unknow   :" fullword wide ascii
-      $x9 = "\\_ *Password replace ->" fullword wide ascii
-      $x10 = "KIWI_MSV1_0_PRIMARY_CREDENTIALS KO" ascii wide
-      $x11 = "\\\\.\\mimidrv" wide ascii
-      $x12 = "Switch to MINIDUMP :" fullword wide ascii
-      $x13 = "[masterkey] with password: %s (%s user)" fullword wide
-      $x14 = "Clear screen (doesn't work with redirections, like PsExec)" fullword wide
-      $x15 = "** Session key is NULL! It means allowtgtsessionkey is not set to 1 **" fullword wide
-      $x16 = "[masterkey] with DPAPI_SYSTEM (machine, then user): " fullword wide
-   condition:
-      (
-         ( uint16(0) == 0x5a4d and 1 of ($x*) ) or
-         ( 3 of them )
-      )
-      /* exclude false positives */
-      and not pe.imphash() == "77eaeca738dd89410a432c6bd6459907"
-}
-
-rule AppInitHook {
-   meta:
-      description = "AppInitGlobalHooks-Mimikatz - Hide Mimikatz From Process Lists - file AppInitHook.dll"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
-      author = "Florian Roth"
-      reference = "https://goo.gl/Z292v6"
-      date = "2015-07-15"
-      score = 70
-      hash = "e7563e4f2a7e5f04a3486db4cefffba173349911a3c6abd7ae616d3bf08cfd45"
-   strings:
-      $s0 = "\\Release\\AppInitHook.pdb" ascii
-      $s1 = "AppInitHook.dll" fullword ascii
-      $s2 = "mimikatz.exe" fullword wide
-      $s3 = "]X86Instruction->OperandSize >= Operand->Length" fullword wide
-      $s4 = "mhook\\disasm-lib\\disasm.c" fullword wide
-      $s5 = "mhook\\disasm-lib\\disasm_x86.c" fullword wide
-      $s6 = "VoidFunc" fullword ascii
-   condition:
-      uint16(0) == 0x5a4d and filesize < 500KB and 4 of them
 }
 
 rule VSSown_VBS {
@@ -4554,4 +4384,18 @@ rule SUSP_Katz_PDB {
       $s2 = /\\Debug\\[a-z]{0,8}katz.pdb/
    condition:
       uint16(0) == 0x5a4d and filesize < 6000KB and all of them
+}
+
+rule HKTL_LNX_Pnscan {
+   meta:
+      description = "Detects Pnscan port scanner"
+      author = "Florian Roth"
+      reference = "https://github.com/ptrrkssn/pnscan"
+      date = "2019-05-27"
+      score = 55
+   strings:
+      $x1 = "-R<hex list>   Hex coded response string to look for." fullword ascii
+      $x2 = "This program implements a multithreaded TCP port scanner." ascii wide
+   condition:
+      filesize < 6000KB and 1 of them
 }

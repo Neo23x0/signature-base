@@ -58,3 +58,71 @@ rule SUSP_WordDoc_VBA_Macro_Strings {
    condition:
       uint16(0) == 0xcfd0 and filesize < 800KB and all of them
 }
+
+rule SUSP_OfficeDoc_VBA_Base64Decode {
+   meta:
+      description = "Detects suspicious VBA code with Base64 decode functions"
+      author = "Florian Roth"
+      reference = "https://github.com/cpaton/Scripting/blob/master/VBA/Base64.bas"
+      date = "2019-06-21"
+      score = 70
+      hash1 = "52262bb315fa55b7441a04966e176b0e26b7071376797e35c80aa60696b6d6fc"
+   strings:
+      $s1 = "B64_CHAR_DICT" ascii
+      $s2 = "Base64Decode" ascii
+      $s3 = "Base64Encode" ascii
+   condition:
+      uint16(0) == 0xcfd0 and filesize < 60KB and 2 of them
+}
+
+rule SUSP_VBA_FileSystem_Access {
+   meta:
+      description = "Detects suspicious VBA that writes to disk and is activated on document open"
+      author = "Florian Roth"
+      reference = "Internal Research"
+      date = "2019-06-21"
+      score = 60
+      hash1 = "52262bb315fa55b7441a04966e176b0e26b7071376797e35c80aa60696b6d6fc"
+   strings:
+      $s1 = "\\Common Files\\Microsoft Shared\\" wide
+      $s2 = "Scripting.FileSystemObject" ascii
+
+      $a1 = "Document_Open" ascii
+      $a2 = "WScript.Shell" ascii
+      $a3 = "AutoOpen" fullword ascii
+   condition:
+      uint16(0) == 0xcfd0 and filesize < 100KB and all of ($s*) and 1 of ($a*)
+}
+
+rule SUSP_Excel_IQY_RemoteURI_Syntax {
+   meta:
+      description = "Detects files with Excel IQY RemoteURI syntax"
+      author = "Nick Carr"
+      score = 65
+      reference = "https://twitter.com/ItsReallyNick/status/1030330473954897920"
+      date = "2018-08-17"
+   strings:
+      $URL = "http"
+   condition:
+      uint32(0) == 0x0d424557 and uint32(4) == 0x0a0d310a
+      and filesize < 1MB
+      and $URL
+}
+
+rule SUSP_Macro_Sheet_Obfuscated_Char {
+   meta:
+      description = "Finding hidden/very-hidden macros with many CHAR functions"
+      author = "DissectMalware"
+      date = "2020-04-07"
+      score = 65
+      hash1 = "0e9ec7a974b87f4c16c842e648dd212f80349eecb4e636087770bc1748206c3b"
+      reference = "https://twitter.com/DissectMalware/status/1247595433305800706"
+   strings:
+      $ole_marker = {D0 CF 11 E0 A1 B1 1A E1}  
+      $s1 = "Excel" fullword ascii
+      $macro_sheet_h1 = {85 00 ?? ?? ?? ?? ?? ?? 01 01}
+      $macro_sheet_h2 = {85 00 ?? ?? ?? ?? ?? ?? 02 01}    
+      $char_func = {06 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 1E 3D  00 41 6F 00}
+   condition:
+      $ole_marker at 0 and 1 of ($macro_sheet_h*) and #char_func > 10 and $s1
+}

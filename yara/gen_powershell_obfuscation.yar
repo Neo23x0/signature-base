@@ -37,3 +37,35 @@ rule SUSP_Obfuscted_PowerShell_Code {
    condition:
       #s1 > 11 and #s2 > 10 and #s3 > 10
 }
+
+rule SUSP_PowerShell_Caret_Obfuscation_2 {
+   meta:
+      description = "Detects powershell keyword obfuscated with carets"
+      author = "Florian Roth"
+      reference = "Internal Research"
+      date = "2019-07-20"
+   strings:
+      $r1 = /p[\^]?o[\^]?w[\^]?e[\^]?r[\^]?s[\^]?h[\^]?e[\^]?l\^l/ ascii wide nocase fullword
+      $r2 = /p\^o[\^]?w[\^]?e[\^]?r[\^]?s[\^]?h[\^]?e[\^]?l[\^]?l/ ascii wide nocase fullword
+   condition:
+      1 of them
+}
+
+rule SUSP_OBFUSC_PowerShell_True_Jun20_1 {
+   meta:
+      description = "Detects indicators often found in obfuscated PowerShell scripts"
+      author = "Florian Roth"
+      reference = "https://github.com/corneacristian/mimikatz-bypass/"
+      date = "2020-06-27"
+      score = 75
+   strings:
+      $ = "${t`rue}" ascii nocase
+      $ = "${tr`ue}" ascii nocase
+      $ = "${tru`e}" ascii nocase
+      $ = "${t`ru`e}" ascii nocase
+      $ = "${tr`u`e}" ascii nocase
+      $ = "${t`r`ue}" ascii nocase
+      $ = "${t`r`u`e}" ascii nocase
+   condition:
+      filesize < 6000KB and 1 of them
+}

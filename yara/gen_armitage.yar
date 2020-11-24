@@ -45,8 +45,7 @@ rule Armitage_MeterpreterSession_Strings {
       $s1 = "session.meterpreter_read" fullword ascii
       $s2 = "sniffer_dump" fullword ascii
       $s3 = "keyscan_dump" fullword ascii
-      $s4 = "mimikatz_command" fullword ascii
-      $s5 = "MeterpreterSession.java" fullword ascii
+      $s4 = "MeterpreterSession.java" fullword ascii
    condition:
       filesize < 30KB and 1 of them
 }

@@ -4,7 +4,7 @@ rule CorkowDLL {
     meta:
         description = "Rule to detect the Corkow DLL files"
         author = "Group IB"
-        date = "2016/02"
+        date = "01.02.2016"
         referenced = "https://www.group-ib.ru/brochures/Group-IB-Corkow-Report-EN.pdf"
     strings:
         $binary1 = { 60 [0-8] 9C [0-8] BB ?? ?? ?? ?? [0-8] 81 EB ?? ?? ?? ?? [0-8] E8 ?? 00 00 00 [0-8] 58 [0-8] 2B C3 }

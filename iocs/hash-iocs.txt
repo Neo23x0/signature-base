@@ -8915,3 +8915,611 @@ a941d46d6352fb2d70bba1423c4890dd5516e45d81f826900272ed14d0b678f4;Bronze Union IO
 8b8e44bd5e4a9f7d58714ba9ca72351c;Bronze Union IOC - MD5 hash - Word document downloader (Final.docx) used by BRONZE UNION, associated with SysUpdate
 02704ef94519eee0a57073b1e530ffea73df2a1f;Bronze Union IOC - SHA1 hash - Word document downloader (Final.docx) used by BRONZE UNION, associated with SysUpdate
 86de90119b572620fd6a690b903c721679359cdc81f3d3327677e13539d5f626;Bronze Union IOC - SHA256 hash - Word document downloader (Final.docx) used by BRONZE UNION, associated with SysUpdate
+
+5798aefb07e12a942672a60c2be101dc26b01485616713e8be1f68b321747f2f;Elfin Report on APT33 - Notestuk/TURNEDUP
+a67461a0c14fc1528ad83b9bd874f53b7616cfed99656442fb4d9cdd7d09e449;Elfin Report on APT33 - AutoIt backdoor
+f2943f5e45befa52fb12748ca7171d30096e1d4fc3c365561497c618341299d5;Elfin Report on APT33 - Gpppassword
+87e2cf4aa266212aa8cf1b1c98ae905c7bac40a6fc21b8e821ffe88cf9234586;Elfin Report on APT33 - LaZagne
+709df1bbd0a5b15e8f205b2854204e8caf63f78203e3b595e0e66c918ec23951;Elfin Report on APT33 - LaZagne
+a23c182349f17398076360b2cb72e81e5e23589351d3a6af59a27e1d552e1ec0;Elfin Report on APT33 - Quasar RAT
+0b3610524ff6f67c59281dbf4a24a6e8753b965c15742c8a98c11ad9171e783d;Elfin Report on APT33 - Quasar RAT
+d5262f1bc42d7d5d0ebedadd8ab90a88d562c7a90ff9b0aed1b3992ec073e2b0;Elfin Report on APT33 - Quasar RAT
+ae1d75a5f87421953372e79c081e4b0a929f65841ed5ea0d380b6289e4a6b565;Elfin Report on APT33 - Remcos
+e999fdd6a0f5f8d1ca08cf2aef47f5ddc0ee75879c6f2c1ee23bc31fb0f26c70;Elfin Report on APT33 - Remcos
+018360b869d8080cf5bcca1a09eb8251558378eb6479d8d89b8c80a8e2fa328c;Elfin Report on APT33 - Remcos
+367e78852134ef488ecf6862e71f70a3b10653e642bda3df00dd012c4e130330;Elfin Report on APT33 - Remcos
+ea5295868a6aef6aac9e117ef128e9de107817cc69e75f0b20648940724880f3;Elfin Report on APT33 - Remcos
+6401abe9b6e90411dc48ffc863c40c9d9b073590a8014fe1b0e6c2ecab2f7e18;Elfin Report on APT33 - SniffPass
+bf9c589de55f7496ff14187b1b5e068bd104396c23418a18954db61450d21bab;Elfin Report on APT33 - DarkComet
+af41e9e058e0a5656f457ad4425a299481916b6cf5e443091c7a6b15ea5b3db3;Elfin Report on APT33 - DarkComet
+c7a2559f0e134cafbfc27781acc51217127a7739c67c40135be44f23b3f9d77b;Elfin Report on APT33 - AutoIt FTP tool
+99c1228d15e9a7693d67c4cb173eaec61bdb3e3efdd41ee38b941e733c7104f8;Elfin Report on APT33 - .NET FTP tool
+94526e2d1aca581121bd79a699a3bf5e4d91a4f285c8ef5ab2ab6e9e44783997;Elfin Report on APT33 - PowerShell downloader (registry.ps1)
+dedfbc8acf1c7b49fb30af35eda5e23d3f7a202585a5efe82ea7c2a785a95f40;Elfin Report on APT33 - POSHC2 backdoor
+
+87648aad45d9142d1d825d728b7aa098f92aea38698209d038ba58b7385f8df6;Triton Actor TTP IOCs - KB77846376.exe - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+2141b526a81bb87b964880e69933aad3932131ccccee5949d2a16c1e124ccdbb;Triton Actor TTP IOCs - KB77846376.exe.x64 - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+c55e63f8a3b328c3ba77cebf821bdc5243b15a0298057e75f7605d0922c8d7cd;Triton Actor TTP IOCs - Netexec.exe - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+70efbd074326e7bbd4e851ded5c362fe5fe06282ed4bbb4b9f761f1b12ee32f7;Triton Actor TTP IOCs - runsvc.exe - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+910b26c942c0cff8b1f5a57e1521801bfd54c8cbcfd23d3d11ea9fe27ca4a0e9;Triton Actor TTP IOCs - svchostpla.exe - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+1330594c2685fe6fc2c87439ef151dfacabc78402379a73be39953048b144960;Triton Actor TTP IOCs - compattelprerunner.exe - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+6ab948ec61f1f7e04119da85d5263d428a1de070edad3a4e796bada2ab05cea7;Triton Actor TTP IOCs - compattelprerunner.exe - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+4c2383c8650112e00cb8b52d0faac7b98207073db081dbdcbb278f0470b869a1;Triton Actor TTP IOCs - compattelprerunner.exe - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+6d2d9623762f822949eef80b02f4ba2d26227eb23ad5b8d1a0a3d6da3bc60d6c;Triton Actor TTP IOCs - ProgramDataUpdater.xml - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+0fc391cdef0705f032109e16f8f591e1e6f8ffccbc46f4eb4a8fa058047c0adc;Triton Actor TTP IOCs - napupdatedb.exe - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+970fab66733ba594b435cf345c72814ee5f8443c44d28ef251f768ad66a6c052;Triton Actor TTP IOCs - alg.exe - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+fc5b4c61f66beb58a62636ab7c198e6ab7f38ce201f098f2818a5699b8aa1138;Triton Actor TTP IOCs - userinit.exe - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+1848d26e47ee4937ef02e67a447b4054d66f4d659f1fbd8bda1482dc4f02c7c4;Triton Actor TTP IOCs - csrss.exe - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+98da0ce88de897e1b08733ac771edab5e5b2a2dda8aab0e73c1d41bade275ff6;Triton Actor TTP IOCs - tquery.dll - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+f0dcbc83d911c382da7ba06a027bdd5861d1a9b723ebe5d9d6f6b79d7b70f29d;Triton Actor TTP IOCs - txflog.dll - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+f7bdddbeae239305ccca3b7eb1019b713bd0f7f060976494e810917a1e6ad5ee;Triton Actor TTP IOCs - DEFAULT - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+1f1902e4482527824ef2c0c2039162db85e5a671caf0767a695116b03cfc866d;Triton Actor TTP IOCs - DEFAULT.BAK - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+1d359163b6bd882ae4c26854d69745136a23f3abb7c96341f6d17e18a546a5fd;Triton Actor TTP IOCs - spl32.exe - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+3b6fd091b956b17476990c6ca77dd8f77d203d3170745d1b7c7894bfcf629b86;Triton Actor TTP IOCs - WinSAT.exe - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+720ef3d5b5416974376ca4ea8bd536e9eeb608f89e3b5b264e197266be8a9f4e;Triton Actor TTP IOCs - csrss.exe - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+084c21e75fbfa5056fec913c237ce7fba314f88fbd687e8dcb1e777003f79b0e;Triton Actor TTP IOCs - clusapi.dll - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+9224c2b00e94e5c57d63820aebe613843b5c851a027488148308fac2d02206f0;Triton Actor TTP IOCs - PolicMan.dll - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+7633b4178611e28aedfa365a0de8ebe5f41ae8eeee71322f04d0e30e50ba2914;Triton Actor TTP IOCs - verifier2.dll - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+7bcca38e43f3b37b1acea05899a7c11dfb62de64531bd48af992d5e400a1755f;Triton Actor TTP IOCs - misc.mof - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+0da4c0b83fa1ad4af9aad6c42feecc6c21c3fd0e660b9e5b3857ddeae3473d54;Triton Actor TTP IOCs - logoff.aspx - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+f81aa77d23ca6662efb3e6e33538a60e39abb5ca66102e07ffa318a6d6cd78ec;Triton Actor TTP IOCs - flogon.js; - https://www.fireeye.com/blog/threat-research/2019/04/triton-actor-ttp-profile-custom-attack-tools-detections.html
+
+02681a7fe708f39beb7b3cf1bd557ee9;ScarCruft malware - Bluetooth info harvester - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+C781f5fad9b47232b3606e4d374900cd;ScarCruft malware - Installer - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+032ed0cd234f73865d55103bf4ceaa22;ScarCruft malware - Downloader - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+22aaf617a86e026424edb7c868742495;ScarCruft malware - AV Remover - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+07d2200f5c2d03845adb5b20841faa94;ScarCruft malware - AV Remover - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+1f5ac2f1744ed9c3fd01fe72ee8d334f;ScarCruft malware - Initial Dropper - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+4d20f7311f4f617104f559a04afd2fbf;ScarCruft malware - Installer - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+03e5e566c1153cb1d18b8bc7c493025f;ScarCruft malware - Downloader - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+C66ef71830341bb99d30964a8089a1fc;ScarCruft malware - Loader - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+5999e01b83aa1cc12a2ad6a0c0dc27c3;ScarCruft malware - Installer - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+4d3c34a3070643c225be1dbbb3457ad4;ScarCruft malware - Injector - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+0790F1D7A1B9432AA5B8590286EB8B95;ScarCruft malware - Downloader - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+04371bf88b598b56691b0ad9da08204b;ScarCruft malware - Installer - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+e8b23cfc805353f55ed67cf0af58f305;ScarCruft malware - UAC bypass(UACME) - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+5380a173757e67d9b12f316771012768;ScarCruft malware - Installer - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+Ec0e77b57cb9dd7a04ab6e453810937c;ScarCruft malware - Downloader - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+25701492a18854ffdb05317ec7d19c29;ScarCruft malware - Installer - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+172b4dc27e41e4a0c84a803b0b944d3e;ScarCruft malware - UAC bypass(UACME) - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+7149c205d634c4d17dae33fffb8a68ab;ScarCruft malware - Image file embedded ROKRAT - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+A76c4a79e6ff73bfd7149a49852e8916;ScarCruft malware - ROKRAT - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+F63fc2d11fcebd37be3891def5776f6c;ScarCruft malware - Dropper - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+899e90a0851649a5c270d1f78baf60f2;ScarCruft malware - Simple HTTP Downloader - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+E88f7f285163d0c080c8d3e525b35ab3;ScarCruft malware - Simple HTTP Downloader - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+D7c94c5ba028dc22a570f660b8dee5b9;ScarCruft malware - Simple HTTP Downloader - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+A6bd2cf7bccf552febb8e8347d07529a;ScarCruft malware - Simple HTTP Downloader - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+7a338d08226f5a38353385c8a5dec746;ScarCruft malware - Simple HTTP Downloader - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+46F66D2D990660661D00F5177306309C;ScarCruft malware - Simple HTTP Uploader - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+5e0e11bca0e94914e565c1dcc1ee6860;ScarCruft malware - GreezaBackdoor of DarkHotel - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+4c2016df6b546326d67ac2a79dea1343;ScarCruft malware - Konni - https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/
+
+006569f0a7e501e58fe15a4323eedc08f9865239131b28dc5f95f750b4767b38;Emissary Panda Webshells https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+2feae7574a2cc4dea2bff4eceb92e3a77cf682c0a1e78ee70be931a251794b86;Emissary Panda Webshells https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+d1ab0dff44508bac9005e95299704a887b0ffc42734a34b30ebf6d3916053dbe;Emissary Panda Webshells https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+6b3f835acbd954af168184f57c9d8e6798898e9ee650bd543ea6f2e9d5cf6378;Emissary Panda Webshells https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+88027a44dc82a97e21f04121eea2e86b4ddf1bd7bbaa4ad009b97b50307570bd;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+738128b4f42c8d2335d68383d72734130c0c4184725c06851498a4cf0374a841;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+3bca0bb708c5dad1c683c6ead857a5ebfa15928a59211432459a3efa6a1afc59;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+29897f2ae25017455f904595872f2430b5f7fedd00ff1a46f1ea77e50940128e;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+d0df8e1dcf30785a964ecdda9bd86374d35960e1817b25a6b0963da38e0b1333;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+a18326f929229da53d4cc340bde830f75e810122c58b523460c8d6ba62ede0e5;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+090cefebef655be7f879f2f14bd849ac20c4051d0c13e55410a49789738fad98;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+7eea6e15bb13a3b65cca9405829123761bf7d12c6dc3b81ce499d8f6a0b25fb7;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+38fa396770e0ecf60fe1ce089422283e2dc8599489bd18d5eb033255dd8e370c;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+4a26ec5fd16ee13d869d6b0b6177e570444f6a007759ea94f1aa18fa831290a8;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+b2b2e900aa2e96ff44610032063012aa0435a47a5b416c384bd6e4e58a048ac9;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+475c7e88a6d73e619ec585a7c9e6e57d2efc8298b688ebc10a3c703322f1a4a7;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+9f5f3a9ce156213445d08d1a9ea99356d2136924dc28a8ceca6d528f9dbd718b;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+c9d5dc956841e000bfd8762e2f0b48b66c79b79500e894b4efa7fb9ba17e4e9e;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+a6cad2d0f8dc05246846d2a9618fc93b7d97681331d5826f8353e7c3a3206e86;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+e781ce2d795c5dd6b0a5b849a414f5bd05bb99785f2ebf36edb70399205817ee;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+d0df8e1dcf30785a964ecdda9bd86374d35960e1817b25a6b0963da38e0b1333;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+06510504f30feb1adc7e423d5a24e67e5b97acbfafe40f253a054be8b1c4e8d7;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+b279a41359367408c627ffa8d80051ed0f04c76fbf6aed79b3b2963203e08ade;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+7eea6e15bb13a3b65cca9405829123761bf7d12c6dc3b81ce499d8f6a0b25fb7;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+04f48ed27a83a57a971e73072ac5c769709306f2714022770fb364fd575fd462;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+090cefebef655be7f879f2f14bd849ac20c4051d0c13e55410a49789738fad98;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+38fa396770e0ecf60fe1ce089422283e2dc8599489bd18d5eb033255dd8e370c;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+2dde8881cd9b43633d69dfa60f23713d7375913845ac3fe9b4d8a618660c4528;Emissary Panda Tools and Malware https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/
+
+50c0bf9479efc93fa9cf1aa99bdca923273b71a1;Turla Snake malware - PowerShell loader with encrypted payload PowerShell/Turla.T - https://www.welivesecurity.com/2019/05/29/turla-powershell-usage/
+ec54ef8d79bf30b63c5249af7a8a3c652595b923;Turla Snake malware - RPC backdoor (client) Win64/Turla.BQ - https://www.welivesecurity.com/2019/05/29/turla-powershell-usage/
+9cdf6d5878fc3aecf10761fd72371a2877f270d0;Turla Snake malware - RPC backdoor (server) Win64/Turla.BQ - https://www.welivesecurity.com/2019/05/29/turla-powershell-usage/
+d3df3f32716042404798e3e9d691aced2f78bdd5;Turla Snake malware - File exfiltration RPC plugin Win32/Turla.BZ - https://www.welivesecurity.com/2019/05/29/turla-powershell-usage/
+9d1c563e5228b2572f5ca14f0ec33ca0deda3d57;Turla Snake malware - RPCSpoofServerInstaller Win64/Turla.BS - https://www.welivesecurity.com/2019/05/29/turla-powershell-usage/
+b948e25d061039d64115cfde74d2ff4372e83765;Turla Snake malware - RPC interface patcher Win64/Turla.BR - https://www.welivesecurity.com/2019/05/29/turla-powershell-usage/
+
+04fb0ccf3ef309b1cd587f609ab0e81e;APT 41 - CRACKSHOT https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+0b2e07205245697a749e422238f9f785;APT 41 - CRACKSHOT https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+272537bbd2a8e2a2c3938dc31f0d2461;APT 41 - CRACKSHOT https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+dd792f9185860e1464b4346254b2101b;APT 41 - CRACKSHOT https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+fcfab508663d9ce519b51f767e902806;APT 41 - CRACKSHOT https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+5b26f5c7c367d5e976aaba320965cc7f;APT 41 - GEARSHIFT https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+f8c89ccd8937f2b760e6706738210744;APT 41 - GEARSHIFT https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+46a557fbdce734a6794b228df0195474;APT 41 - HIGHNOON https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+77c60e5d2d99c3f63f2aea1773ed4653;APT 41 - HIGHNOON https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+849ab91e93116ae420d2fe2136d24a87;APT 41 - HIGHNOON https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+36711896cfeb67f599305b590f195aec;APT 41 - HIGHNOON.BIN https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+7d51ea0230d4692eeedc2d5a4cd66d2d;APT 41 - HIGHNOON.BIN https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+a0a96138b57ee24eed31b652ddf60d4e;APT 41 - HIGHNOON.BIN https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+ba08b593250c3ca5c13f56e2ca97d85e;APT 41 - JUMPALL https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+223e4cc4cf5ce049f300671697a17a01;APT 41 - POISONPLUG https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+37e100dd8b2ad8b301b130c2bca3f1ea;APT 41 - POISONPLUG https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+557ff68798c71652db8a85596a4bab72;APT 41 - POISONPLUG https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+830a09ff05eac9a5f42897ba5176a36a;APT 41 - POISONPLUG https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+b0877494d36fab1f9f4219c3defbfb19;APT 41 - POISONPLUG https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+c8403fabda4d036a55d0353520e765c9;APT 41 - POISONPLUG https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+ff8d92dfbcda572ef97c142017eec658;APT 41 - POISONPLUG https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+ffd0f34739c1568797891b9961111464;APT 41 - POISONPLUG https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+72584d6b7dd10c82d9118567b548b2b1;APT 41 - POISONBLUG.SHADOW https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+97363d50a279492fda14cbab53429e75;APT 41 - POISONBLUG.SHADOW https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+a6c7db170bc7a4ee2cdb192247b59cd6;APT 41 - POISONBLUG.SHADOW https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html
+
+c613fcccb380f7e3ce157c4f620efca503c1bad3;Sofacy malware - (eml file) - DOC/TrojanDownloader.Agent.AMY
+6f281b30d8d6a9bc1dbe2fe73995aac382c4a543;Sofacy malware - 612243236.docx - DOC/TrojanDownloader.Agent.AMY
+f3f945fb22916f82cb7407cde2a80a68cd83b074;Sofacy malware - wordData.dotm - VBA/TrojanDropper.Agent.AIP
+a56af5b44624e8ada60057fd7f39af5b3de10724;Sofacy malware - lmss.zip - Win32/TrojanDownloader.Sednit.BK
+b8ac400e1deb6e90fa4e2adb150c511c98bafc6e;Sofacy malware - lmss.doc - VBA/TrojanDropper.Agent.AIQ
+f0793e02180f3ccf48e41bd67ec1161d93f07e01;Sofacy malware - lmss.exe - Win32/TrojanDownloader.Sednit.BK
+04303024ff453f918925d7160abbd199f137a442;Sofacy malware - ospsvc.dll - Win32/Sednit.DI
+c96db85ece2b57a9e82ba36b5f31ca9d2051a6f0;Sofacy malware - osppsvc.exe - Win32/Sednit.DJ
+
+395E87C5BD00F78BF4C63880C6982A7941A2ECD0;Winnti Report - .NET injector - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+08B825C87171500E694798527E17A849160B0A72;Winnti Report - VBS injector - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+97709D62531D12A6994BCE5787D519DB52435A62;Winnti Report - InnerLoader - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+252640016FAEFF97FA22EB2B736973ED16D73FBE;Winnti Report - InnerLoader - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+F5BA05240B1609D4131D5DCA7F5E6E90B5748004;Winnti Report - InnerLoader - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+E14A6A8447CE1D45494E613D6327430D9025A2E5;Winnti Report - NetAgent - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+74A68DAD4BC87EACCA93106832F8B4AEE82843A2;Winnti Report - NetAgent - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+5AB3461B17EE3806ABBB06B8966F6B0011F3D8F2;Winnti Report - NetAgent - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+A1AED6FD6990A74590864F9D2A6E714A715FCE3E;Winnti Report - SK3 - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+E0F276ED16027ED2953A7B0E5274D3F563A75A9D;Winnti Report - SK3 - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+14C32D0C0346EF4A2B1993FDA9AAB670806B9284;Winnti Report - SK3 - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+52A8C38890360D0B32993A44C9E94E660F3FA8F4;Winnti Report - Merged NetAgent & ProcTran - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+20CA6EAE9D6CF2275F9BFD24A0E07F75BEE119BA;Winnti Report - Merged NetAgent & ProcTran - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+DBE3EECE00C255A3FDF924B82621394377B0E865;Winnti Report - Merged NetAgent & ProcTran - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+A08922372042B4C3C0FAA120E9DD626823CDB3C7;Winnti Report - UserFunction - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+93F623C91F579D33788F84A9A83478CD2E9646AA;Winnti Report - UserFunction - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+44DDBF7AA256A4B0E25DE585E95EA520BF2C4891;Winnti Report - ProcTran - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+75B7A4B7E01CECC9AFBDAB01C49E9D7FCCACFDC0;Winnti Report - ProcTran - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+82072CB53416C89BFEE95B239F9A90677A0848DF;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+634344FAFD6E16F171B0857962149659639FDF41;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+ED0C9354D34D6E9F09B7038D391E846CDD9E0EAE;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+E6D43344A354EB17E0E0E76AD391FBCAF9C34119;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+22B82AE0819DA2FD887BE55A8508FFB46D02CA99;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+F14694BDDE921B31030300CC9BDC5574BA3D9F74;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+971BB08196BBA400B07CF213345F55CE0A6EEDC8;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+438178A5816D3EF6AC02D4DB929A48FA558E514C;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+4DC5FADECE500CCD8CC49CFCF8A1B59BAEE3382A;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+C44D06F79E5E42B08BE17A8A7DBAF61400F1DE28;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+672BB391B92681ADCFCFB4F2F728EDF32F2FB8FE;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+9E8883A6DE72D338E2C0C1A0E291D013A0CE9058;Winnti Report - Payload in ADS - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+B09ADDDE1523C223C4F8FBF0E541C627E4A04400;Winnti Report - Payload in ADS - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+BD1F1494B8D18DAF07DE7D47549A7E27FF3FFD05;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+757FF5EC3DC53ABBB62391B14883EF460F6FD404;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+BDBADB2E3EEDD72DD6F8D9235699A139CAB69AAE;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+4D090E6B749D4D3D8E413F44EB2DE6925C78CD82;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+B4446480813D3BFC8DE4049A32A72CC0EB0D8094;Winnti Report - Payload in Overlay - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+95A41FDDDC8CAF097902B484F8440BDDAD0C5B32;Winnti Report - Winnti droppers (Install.exe) - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+D9A54F79CA15C7E363DBE62B4D1C5C8D103103A2;Winnti Report - Winnti droppers (Install.exe) - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+DAF1CD345F44CB2BF1CFA8D68EECAF1961CBD51F;Winnti Report - Winnti droppers (Install.exe) - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+3DF753F56BB53F72D3DF735A898D7221C3B5272E;Winnti Report - Winnti droppers (Install.exe) - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+6C10C9D46531FBC5F0C2372A116AB31C730ED4B7;Winnti Report - Winnti droppers (Install.exe) - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+D74F1C8257409AD964DB22087A559609C2D0D978;Winnti Report - Winnti droppers (Install.exe) - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+E6677E5E2D68BC544B210E69D9C8DF6A2752C20A;Winnti Report - Winnti droppers (Install.exe) - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+EC0E4A6E2E630267C13B449ED4CF3F04598E40DF;Winnti Report - Winnti droppers (Install.exe) - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+F61403E7730D17B967DA3143BC7CB33EEBE826C0;Winnti Report - Winnti droppers (Install.exe) - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+FD9DED44C47585541B89FFD25907A9A2ED41A995;Winnti Report - Winnti droppers (Install.exe) - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+E0B1005DA5B35E31F09FC82A694F188A92CCA85D;Winnti Report - Winnti droppers (Install.exe) - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+CD36CAF7F7CD9F161743348D2EA69A9E0254C3B5;Winnti Report - Winnti droppers (Install.exe) - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+2C35E28FBA5D05F10430C4D70E4938426F38E228;Winnti Report - Winnti droppers (Install.exe) - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+1AE6FBAD7AF15FB7E60DBBFEA964F0E49372AE53;Winnti Report - Winnti droppers (Install.exe) - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+1EC1B5A902869ED5D51012826A34FFA9225853CB;Winnti Report - Winnti droppers (Install.exe) - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+B08D72576B93687DFC61ABFA740DD39490D6A262;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+DE197A5DC5B38E4B72BC37C14CF38E577DDEB8B5;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+4EA2ED895111A70B9A59DF37343440E4A3A97A47;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+DE197A5DC5B38E4B72BC37C14CF38E577DDEB8B5;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+C452BDF6FF99243A12789FF4B99AC71A5DA5F696;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+B08D72576B93687DFC61ABFA740DD39490D6A262;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+24AA07A0B3665BF97A1545B0F2749CD509F1B4CA;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+E26B59789029D23BD9232FA6B1C90EC9379B9066;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+C262D297EAEC622E3FB8E1FC2A0017E28168879A;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+645720EC88C993B28D982C0AD89A5ACA79CE7E16;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+B6819C870DF88A973EB48B572AD1CFEAEB6A655A;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+8DF84B01B08EE983C66BECC59C0F361D246A96ED;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+723B27ABA08CBB3A9CA42F7E8350451D00829E5A;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+55155C3A7B993584A07ACDBF92F2200804C00E02;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+5105F3020B5E680FA66D664C7F8C811F072933CF;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+D62A0BD08C5B435D1B8A0505E8018D58A9667B2C;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+C262D297EAEC622E3FB8E1FC2A0017E28168879A;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+7B0AAE2AA17BD5712DD682F35C7A8E3E1CDCC57C;Winnti Report - Winnti malware - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+47A262BAE22BB77850A1E3E38F8E529189D291F6;Winnti Report - AceHash - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+35C026F8C35BFCEECD23EACE19F09D3DF2FD72DA;Winnti Report - AceHash - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+43FF18CEB3814F1DAE940AD977C59A96BB016E76;Winnti Report - AceHash - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+D24BBB898A4A301870CAB85F836090B0FC968163;Winnti Report - AceHash - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+70B21E3AC69F0220784228375BA6BEF37FE0C488;Winnti Report - XMRig - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+9BFB1C92489DA812DBE53B2A8E2CC2724CF74B4E;Winnti Report - XMRig - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+EE5FEB8E9428A04C454966F6E19E202CCB33545F;Winnti Report - XMRig - https://www.welivesecurity.com/2019/10/14/connecting-dots-exposing-arsenal-methods-winnti/
+
+2b9244c526e2c2b6d40e79a8c3edb93c;APT41 tinyurl.com/y4tu7uan DEADEYE.APPEND POISONPLUG
+04be89ff5d217796bc68678d2508a0d7;APT41 tinyurl.com/y4tu7uan DEADEYE.APPEND POISONPLUG
+092ae9ce61f6575344c424967bd79437;APT41 tinyurl.com/y4tu7uan DEADEYE.APPEND LOWKEY.HTTP
+37e100dd8b2ad8b301b130c2bca3f1ea;APT41 tinyurl.com/y4tu7uan DEADEYE.APPEND POISONPLUG
+39fe65a46c03b930ccf0d552ed3c17b1;APT41 tinyurl.com/y4tu7uan DEADEYE.APPEND POISONPLUG
+557ff68798c71652db8a85596a4bab72;APT41 tinyurl.com/y4tu7uan DEADEYE.APPEND POISONPLUG
+64e09cf2894d6e5ac50207edff787ed7;APT41 tinyurl.com/y4tu7uan DEADEYE.APPEND POISONPLUG
+650a3dce1380f9194361e0c7be9ffb97;APT41 tinyurl.com/y4tu7uan DEADEYE.APPEND POISONPLUG
+7dc6bbc202e039dd989e1e2a93d2ec2d;APT41 tinyurl.com/y4tu7uan DEADEYE.APPEND LOWKEY
+7f05d410dc0d1b0e7a3fcc6cdda7a2ff;APT41 tinyurl.com/y4tu7uan DEADEYE.APPEND LOWKEY
+904bbe5ac0d53e74a6cefb14ebd58c0b;APT41 tinyurl.com/y4tu7uan DEADEYE.APPEND POISONPLUG
+c11dd805de683822bf4922aecb9bfef5;APT41 tinyurl.com/y4tu7uan DEADEYE.APPEND LOWKEY.HTTP
+d49c186b1bfd7c9233e5815c2572eb98;APT41 tinyurl.com/y4tu7uan DEADEYE.APPEND LOWKEY
+e58d4072c56a5dd3cc5cf768b8f37e5e;APT41 tinyurl.com/y4tu7uan None - encrypted data XMRIG
+eb37c75369046fb1076450b3c34fb8ab;APT41 tinyurl.com/y4tu7uan DEADEYE.APPEND LOWKEY
+ee5b707249c562dc916b125e32950c8d;APT41 tinyurl.com/y4tu7uan DEADEYE.APPEND POISONPLUG
+ff8d92dfbcda572ef97c142017eec658;APT41 tinyurl.com/y4tu7uan DEADEYE.APPEND POISONPLUG
+ffd0f34739c1568797891b9961111464;APT41 tinyurl.com/y4tu7uan DEADEYE.APPEND POISONPLUG
+5322816c2567198ad3dfc53d99567d6e;APT41 tinyurl.com/y4tu7uan DEADEYE.DOWN
+
+4BA559C403FF3F5CC2571AE0961EAFF6CF0A50F6;Operation Ghost Dukes PolyglotDuke - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+CF14AC569A63DF214128F375C12D90E535770395;Operation Ghost Dukes PolyglotDuke - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+539D021CD17D901539A5E1132ECAAB7164ED5DB5;Operation Ghost Dukes PolyglotDuke - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+0E25EE58B119DD48B7C9931879294AC3FC433F50;Operation Ghost Dukes PolyglotDuke - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+D625C7CE9DC7E56A29EC9A81650280EDC6189616;Operation Ghost Dukes PolyglotDuke - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+0A5A7DD4AD0F2E50F3577F8D43A4C55DDC1D80CF;Operation Ghost Dukes RegDuke Loader - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+F7FD63C0534D2F717FD5325D4397597C9EE4065F;Operation Ghost Dukes RegDuke Loader - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+194D8E2AE4C723CE5FE11C4D9CFEFBBA32DCF766;Operation Ghost Dukes RegDuke Loader - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+64D6C11FFF2C2AADAACEE01B294AFCC751316176;Operation Ghost Dukes RegDuke Loader - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+6ACC0B1230303F8CF46152697D3036D69EA5A849;Operation Ghost Dukes RegDuke Loader - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+170BE45669026F3C1FC5BA2D48817DBF950DA3F6;Operation Ghost Dukes RegDuke Loader - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+5905C55189C683BC37258AEC28E916C41948CD1C;Operation Ghost Dukes RegDuke Backdoor - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+B05CABA461000C6EBD8B237F318577E9BCCD6047;Operation Ghost Dukes MiniDuke - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+718C2CE6170D6CA505297B41DE072D8D3B873456;Operation Ghost Dukes MiniDuke - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+A88DA2DD033775F7ABC8D6FB3AD5DD48EFBEADE1;Operation Ghost Dukes FatDuke - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+DB19171B239EF6DE8E83B2926EADC652E74A5AFA;Operation Ghost Dukes FatDuke - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+9E96B00E9F7EB94A944269108B9E02D97142EEDC;Operation Ghost Dukes FatDuke Loader - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+AF2B46D4371CE632E2669FEA1959EE8AF4EC39CE;Operation Ghost Dukes LiteDuke - https://www.welivesecurity.com/2019/10/17/operation-ghost-dukes-never-left/
+
+18E4FEB988CB95D71D81E1964AA6280E22361B9F;Winnti MSSQL server backdoor - VMP Loader - https://www.welivesecurity.com/2019/10/21/winnti-group-skip2-0-microsoft-sql-server-backdoor/
+4AF89296A15C1EA9068A279E05CC4A41B967C956;Winnti MSSQL server backdoor - VMP Loader - https://www.welivesecurity.com/2019/10/21/winnti-group-skip2-0-microsoft-sql-server-backdoor/
+A2571946AB181657EB825CDE07188E8BCD689575;Winnti MSSQL server backdoor - Inner-Loader injector - https://www.welivesecurity.com/2019/10/21/winnti-group-skip2-0-microsoft-sql-server-backdoor/
+60B9428D00BE5CE562FF3D888441220290A6DAC7;Winnti MSSQL server backdoor - skip-2.0 - https://www.welivesecurity.com/2019/10/21/winnti-group-skip2-0-microsoft-sql-server-backdoor/
+
+C9C39045FA14E94618DD631044053824;Calypso APT 2019 - Droppers and payload - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+E24A62D9826869BC4817366800A8805C;Calypso APT 2019 - Droppers and payload - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+F0F5DA1A4490326AA0FC8B54C2D3912D;Calypso APT 2019 - Droppers and payload - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+CB914FC73C67B325F948DD1BF97F5733;Calypso APT 2019 - Droppers and payload - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+6347E42F49A86AFF2DEA7C8BF455A52A;Calypso APT 2019 - Droppers and payload - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+0171E3C76345FEE31B90C44570C75BAD;Calypso APT 2019 - Droppers and payload - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+17E05041730DCD0732E5B296DB16D757;Calypso APT 2019 - Droppers and payload - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+69322703B8EF9D490A20033684C28493;Calypso APT 2019 - Droppers and payload - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+22953384F3D15625D36583C524F3480A;Calypso APT 2019 - Droppers and payload - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+1E765FED294A7AD082169819C95D2C85;Calypso APT 2019 - Droppers and payload - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+C84DF4B2CD0D3E7729210F15112DA7AC;Calypso APT 2019 - Droppers and payload - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+ACAAB4AA4E1EA7CE2F5D044F198F0095;Calypso APT 2019 - Droppers and payload - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+85CE60B365EDF4BEEBBDD85CC971E84D;Calypso APT 2019 - Droppers with the same payload - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+1ED72C14C4AAB3B66E830E16EF90B37B;Calypso APT 2019 - Droppers with the same payload - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+CB914FC73C67B325F948DD1BF97F5733;Calypso APT 2019 - Droppers with the same payload - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+E3E61F30F8A39CD7AA25149D0F8AF5EF;Calypso APT 2019 - Payload without dropper - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+974298EB7E2ADFA019CAE4D1A927AB07;Calypso APT 2019 - Payload without dropper - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+AA1CF5791A60D56F7AE6DA9BB1E7F01E;Calypso APT 2019 - Payload without dropper - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+05F472A9D926F4C8A0A372E1A7193998;Calypso APT 2019 - Payload without dropper - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+0D532484193B8B098D7EB14319CEFCD3;Calypso APT 2019 - Payload without dropper - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+E1A578A069B1910A25C95E2D9450C710;Calypso APT 2019 - Payload without dropper - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+2807236C2D905A0675878E530ED8B1F8;Calypso APT 2019 - Payload without dropper - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+847B5A145330229CE149788F5E221805;Calypso APT 2019 - Payload without dropper - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+D1A1166BEC950C75B65FDC7361DCDC63;Calypso APT 2019 - Payload without dropper - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+CCE8C8EE42FEAED68E9623185C3F7FE4;Calypso APT 2019 - Payload without dropper - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+43B7D48D4B2AFD7CF8D4BD0804D62E8B;Calypso APT 2019 - Hussar - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+617D588ECCD942F243FFA8CB13679D9C;Calypso APT 2019 - Hussar - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+5199EF9D086C97732D97EDDEF56591EC;Calypso APT 2019 - FlyingDutchman - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+06C1D7BF234CE99BB14639C194B3B318;Calypso APT 2019 - FlyingDutchman - https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/
+
+d4be15adbbe135d172d5e0afcd191ae740df22de5d3beac98e188a3cf01a036b;C2 With it All - WSDB.bat - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+a78bacb79d5d229aa8d6c574d1d8386664918a520beebc655975b04a61da1308;C2 With it All - WSDB.ps1 - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+e410b949d128ffb513af037355fe777b5b40799001a312843e405070308a3f36;C2 With it All - WSDB.xml - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+3de852ed3bd3579cd9875108e121ba6fd68a66f8f6948cce072e8013ad1955ea;C2 With it All - c32_217061.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+fa7c7db9d33e1f4193bfe460d1a61096d75315212042a62bb3a30b3077511610;C2 With it All - c64_217061.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+0273d96cef6683e3fb205b8e841579b44bae16ff1e3ab57647b1a9d2947db5c7;C2 With it All - file.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+bc919680471fd1b631e80c37e83aeb6877f13f4ed47ae22100cf4d60e27a93a4;C2 With it All - mimikatz.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+b9a8710e55bb2d55bbeed9cebb83ac2f18f78818f0c05f18c96f766c8c47e2d9;C2 With it All - no135.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+f658ddcf8e87de957a81bb92d44ce02913b427e8bccbe663669ee2613d355555;C2 With it All - p1q135no.sfx.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+16f413862efda3aba631d8a7ae2bfff6d84acd9f454a7adaa518c7a8a6f375a5;C2 With it All - procdump64.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+89f8af1eb52f31b011982d7a1ecc1eed25af6c14bf5f317568a3450db5db7247;C2 With it All - q108.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+dcb76dc106e586c6f8bfa82832a66f525a9addb5450912004e92dd578ff2a60a;C2 With it All - q121k.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+04d0824f70be3666d79b2a49b85cf6b60b566d7b8cc9efd31195644514fb0cb1;C2 With it All - q135.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+08499612bcf7ccb250438ce8f6eed616511e27c762d66132fef93296007984ac;C2 With it All - q137k.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+0273d96cef6683e3fb205b8e841579b44bae16ff1e3ab57647b1a9d2947db5c7;C2 With it All - svchost.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+619f0c489beac9a792b9b42fa6529b3faf4329692fb52d17123ef69733868845;C2 With it All - zap32.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+98a4f69eff1f91f63fb74420ee4c16be508aa203d04f66e98b1dcb554def61ee;C2 With it All - zap64.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+b1e883222f3205db59ff812c6f6097291df12b1784c9e64eef674ab3a173c07a;C2 With it All - q159.exe - https://blog.talosintelligence.com/2019/11/c2-with-it-all.html
+
+1addee050504ba999eb9f9b1ee5b9f04;Dark Universe APT - https://securelist.com/darkuniverse-the-mysterious-apt-framework-27/94897/
+4b71ec0b2d23204e560481f138833371;Dark Universe APT - https://securelist.com/darkuniverse-the-mysterious-apt-framework-27/94897/
+4e24b26d76a37e493bb35b1a8c8be0f6;Dark Universe APT - https://securelist.com/darkuniverse-the-mysterious-apt-framework-27/94897/
+405ef35506dc864301fada6f5f1d0711;Dark Universe APT - https://securelist.com/darkuniverse-the-mysterious-apt-framework-27/94897/
+764a4582a02cc54eb1d5460d723ae3a5;Dark Universe APT - https://securelist.com/darkuniverse-the-mysterious-apt-framework-27/94897/
+c2edda7e766553a04b87f2816a83f563;Dark Universe APT - https://securelist.com/darkuniverse-the-mysterious-apt-framework-27/94897/
+71d36436fe26fe570b876ad3441ea73c;Dark Universe APT - https://securelist.com/darkuniverse-the-mysterious-apt-framework-27/94897/
+
+02B38F6E8B54885FA967851A5580F61C14A0AAB6;DePriMon malware https://www.welivesecurity.com/2019/11/21/deprimon-default-print-monitor-malicious-downloader/
+03E047DD4CECB16F513C44599BF9B8BA82D0B7CB;DePriMon malware https://www.welivesecurity.com/2019/11/21/deprimon-default-print-monitor-malicious-downloader/
+0996C280AB704E95C9043C5A250CCE077DF9C8B2;DePriMon malware https://www.welivesecurity.com/2019/11/21/deprimon-default-print-monitor-malicious-downloader/
+15EBE328A501B1D603E66762FBB4583D73E109F7;DePriMon malware https://www.welivesecurity.com/2019/11/21/deprimon-default-print-monitor-malicious-downloader/
+1911F6E8B05E38A3C994048C759C5EA2B95CE5F7;DePriMon malware https://www.welivesecurity.com/2019/11/21/deprimon-default-print-monitor-malicious-downloader/
+2B30BE3F39DEF1F404264D8858B89769E6C032D9;DePriMon malware https://www.welivesecurity.com/2019/11/21/deprimon-default-print-monitor-malicious-downloader/
+2D80B235CDF41E09D055DD1B01FD690E13BE0AC7;DePriMon malware https://www.welivesecurity.com/2019/11/21/deprimon-default-print-monitor-malicious-downloader/
+6DB79671A3F31F7A9BB870151792A56276619DC1;DePriMon malware https://www.welivesecurity.com/2019/11/21/deprimon-default-print-monitor-malicious-downloader/
+6FAB7AA0479D41700981983A39F962F28CCFBE29;DePriMon malware https://www.welivesecurity.com/2019/11/21/deprimon-default-print-monitor-malicious-downloader/
+7D0B08654B47329AD6AE44B8FF158105EA736BC3;DePriMon malware https://www.welivesecurity.com/2019/11/21/deprimon-default-print-monitor-malicious-downloader/
+7E8A7273C5A0D49DFE6DA04FEF963E30D5258814;DePriMon malware https://www.welivesecurity.com/2019/11/21/deprimon-default-print-monitor-malicious-downloader/
+8B4F3A06BA41F859E4CC394985BB788D5F76C85C;DePriMon malware https://www.welivesecurity.com/2019/11/21/deprimon-default-print-monitor-malicious-downloader/
+94C0BE25077D9A76F14A63CBF7A774A96E8006B8;DePriMon malware https://www.welivesecurity.com/2019/11/21/deprimon-default-print-monitor-malicious-downloader/
+968B52550062848A717027C512AFEDED19254F58;DePriMon malware https://www.welivesecurity.com/2019/11/21/deprimon-default-print-monitor-malicious-downloader/
+9C4BADE47865E8111DD3EEE6C5C4BC83F2489F5B;DePriMon malware https://www.welivesecurity.com/2019/11/21/deprimon-default-print-monitor-malicious-downloader/
+AA59CB6715CFFF545579861E5E77308F6CAEAC36;DePriMon malware https://www.welivesecurity.com/2019/11/21/deprimon-default-print-monitor-malicious-downloader/
+C2388C2B2ED6063EACBA8A4021CE32EB0929FAD2;DePriMon malware https://www.welivesecurity.com/2019/11/21/deprimon-default-print-monitor-malicious-downloader/
+CA34050771678C65040065822729F44B35C87B0C;DePriMon malware https://www.welivesecurity.com/2019/11/21/deprimon-default-print-monitor-malicious-downloader/
+D38045B42C7E87C199993AB929AD92ADE4F82398;DePriMon malware https://www.welivesecurity.com/2019/11/21/deprimon-default-print-monitor-malicious-downloader/
+E272FDA0E9BA1A1B8EF444FF5F2E8EE419746384;DePriMon malware https://www.welivesecurity.com/2019/11/21/deprimon-default-print-monitor-malicious-downloader/
+E2D39E290201010F49652EE6116FD9B35C9AD882;DePriMon malware https://www.welivesecurity.com/2019/11/21/deprimon-default-print-monitor-malicious-downloader/
+F413EEE3CFD85A60D7AFC4D4ECC4445BB1F0B8BC;DePriMon malware https://www.welivesecurity.com/2019/11/21/deprimon-default-print-monitor-malicious-downloader/
+
+9ae7c4a4e1cfe9b505c3a47e66551eb1357affee65bfefb0109d02f4e97c06dd;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+7772d624e1aed327abcd24ce2068063da0e31bb1d5d3bf2841fc977e198c6c5b;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+657fc7e6447e0065d488a7db2caab13071e44741875044f9024ca843fe4e86b5;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+2ef157a97e28574356e1d871abf75deca7d7a1ea662f38b577a06dd039dbae29;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+52fd7b90d7144ac448af4008be639d4d45c252e51823f4311011af3207a5fc77;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+a370e47cb97b35f1ae6590d14ada7561d22b4a73be0cb6df7e851d85054b1ac3;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+5bf80b871278a29f356bd42af1e35428aead20cd90b0c7642247afcaaa95b022;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+6f690ccfd54c2b02f0c3cb89c938162c10cbeee693286e809579c540b07ed883;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+3c884f776fbd16597c072afd81029e8764dd57ee79d798829ca111f5e170bd8e;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+1922a419f57afb351b58330ed456143cc8de8b3ebcbd236d26a219b03b3464d7;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+fe0e4ef832b62d49b43433e10c47dc51072959af93963c790892efc20ec422f1;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+7ce9e1c5562c8a5c93878629a47fe6071a35d604ed57a8f918f3eadf82c11a9c;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+178d5ee8c04401d332af331087a80fb4e5e2937edfba7266f9be34a5029b6945;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+51f70956fa8c487784fd21ab795f6ba2199b5c2d346acdeef1de0318a4c729d9;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+889bca95f1a69e94aaade1e959ed0d3620531dc0fc563be9a8decf41899b4d79;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+332ddaa00e2eb862742cb8d7e24ce52a5d38ffb22f6c8bd51162bd35e84d7ddf;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+44bcf82fa536318622798504e8369e9dcdb32686b95fcb44579f0b4efa79df08;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+63552772fdd8c947712a2cff00dfe25c7a34133716784b6d486227384f8cf3ef;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+056744a3c371b5938d63c396fe094afce8fb153796a65afa5103e1bffd7ca070;GALLIUM APT IOC https://www.microsoft.com/security/blog/2019/12/12/gallium-targeting-global-telecom/
+
+08f87f8c64a4c98b0e99592a436d601249feeaec4a2c4effbf69a166e4f592a0;Operation Wocao IOCs https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/
+2047e464627e36410b3458e23062f23eecbd383e7854b55b497ec8db017c0d5e;Operation Wocao IOCs https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/
+29d5933c18826b00bc075623740c00c00057ff897580bea3362674f6ec1cbe10;Operation Wocao IOCs https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/
+3016ea94e3c5bd7f9d8e503b1817491bcf9e2ee5bb82fc106aa5d692dd0ff5c6;Operation Wocao IOCs https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/
+459910699497f2efe921a197e365fd5938af55378b3b20d2867ce171036fb675;Operation Wocao IOCs https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/
+5cf61c0b865fd2ab897c72ff2cc01ac4c31ea9c50ecc3d47693f3482fd8f91d4;Operation Wocao IOCs https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/
+5d01150ade4b302b9fd765fd0fb70aa17ee9cb9fcb219c2d270fd90ad8d01188;Operation Wocao IOCs https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/
+6972ba198ed0d30de9f66be5777ecdba2d657078f138325ee6db225c20b29e6e;Operation Wocao IOCs https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/
+75ac4478c1729d1b5434724cf0c2bd53cc5940d251a4ca07b17c239c8f62da8d;Operation Wocao IOCs https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/
+a4a448d40aa8b4ff1d18de7a84b7fbc4c41c00062a56cd7c74ac443b61438f47;Operation Wocao IOCs https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/
+b2162d4cbeee907d1af13918900e6e4f13232d00915563d841aa7c904d94589c;Operation Wocao IOCs https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/
+c109ddd4f43bc38a50b07b4fc22fe568cced4fb4d8c5bd71546407c2c6219048;Operation Wocao IOCs https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/
+d43251480775f224517f484686bc7ca39e532d900b86ebf6ed37da8ee13534a4;Operation Wocao IOCs https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/
+e959c1eee16fcc512392fedd2704c7051742260f335f9b2d9f37fe23b3bde47d;Operation Wocao IOCs https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/
+
+774a9c3ff01a3e734b7bec0c312120126295fad9;BRONZE PRESIDENT - ORat malware sample - https://www.secureworks.com/research/bronze-president-targets-ngos
+4c81777551a772218519fb6dd1a6672aade4a936;BRONZE PRESIDENT - Cobalt Strike payload - https://www.secureworks.com/research/bronze-president-targets-ngos
+c72cc22ad328946201b069cddae0eee021d687b1;BRONZE PRESIDENT - Cobalt Strike payload - https://www.secureworks.com/research/bronze-president-targets-ngos
+f14eaf5d648aebb2ed7b00b2cf4349263b30fb1c;BRONZE PRESIDENT - Modified DLL file (goopdate.dll) used by BRONZE PRESIDENT to install RCSession - https://www.secureworks.com/research/bronze-president-targets-ngos
+603babf64a62989bf00e124955471519f0d8e8ed;BRONZE PRESIDENT - RCSession payload (English.rtf) - https://www.secureworks.com/research/bronze-president-targets-ngos
+fcb799d02e6c1b4ac76ec8c5e704c7c511762d2d;BRONZE PRESIDENT - Modified DLL file (goopdate.dll) used by BRONZE PRESIDENT to install RCSession - https://www.secureworks.com/research/bronze-president-targets-ngos
+ed8ad981c73ed444f1b89c4bda71ed99ca966c5a;BRONZE PRESIDENT - RCSession payload (English.rtf) - https://www.secureworks.com/research/bronze-president-targets-ngos
+bd2533005a2eaed203054fd649fdbdcd3e3a860a;BRONZE PRESIDENT - Associated with BRONZE PRESIDENT phishing lure delivering PlugX - https://www.secureworks.com/research/bronze-president-targets-ngos
+9136eed34bea473d0f8554fb1d914502b832f219;BRONZE PRESIDENT - Associated with BRONZE PRESIDENT phishing lure delivering PlugX - https://www.secureworks.com/research/bronze-president-targets-ngos
+1a2f1c97a5883e8bb4edcdacfe176da98b266b42;BRONZE PRESIDENT - Associated with BRONZE PRESIDENT phishing lure delivering PlugX - https://www.secureworks.com/research/bronze-president-targets-ngos
+
+273aa20c4857d98cfa51ae52a1c21bf871c0f9cd0bf55d5e58caba5d1829846f;JhoneRAT Docx - https://blog.talosintelligence.com/2020/01/jhonerat.html
+29886dbbe81ead9e9999281e62ecf95d07acb24b9b0906b28beb65a84e894091;JhoneRAT Docx - https://blog.talosintelligence.com/2020/01/jhonerat.html
+d5f10a0b5c103100a3e74aa9014032c47aa8973b564b3ab03ae817744e74d079;JhoneRAT Docx - https://blog.talosintelligence.com/2020/01/jhonerat.html
+6cc0c11c754e1e82bca8572785c27a364a18b0822c07ad9aa2dc26b3817b8aa4;JhoneRAT Template - https://blog.talosintelligence.com/2020/01/jhonerat.html
+7e1121fca3ac7c2a447b61cda997f3a8202a36bf9bb08cca3402df95debafa69;JhoneRAT Image - https://blog.talosintelligence.com/2020/01/jhonerat.html
+b4a43b108989d1dde87e58f1fd6f81252ef6ae19d2a5e8cd76440135e0fd6366;JhoneRAT PE Autoit - https://blog.talosintelligence.com/2020/01/jhonerat.html
+4228a5719a75be2d6658758fc063bd07c1774b44c10b00b958434421616f1548;JhoneRAT PE Python - https://blog.talosintelligence.com/2020/01/jhonerat.html
+
+0C5B15D89FDA9BAF446B286C6F97F535;WildPressure Hash IOC https://securelist.com/wildpressure-targets-industrial-in-the-middle-east/96360/
+17B1A05FC367E52AADA7BDE07714666B;WildPressure Hash IOC https://securelist.com/wildpressure-targets-industrial-in-the-middle-east/96360/
+A76991F15D6B4F43FBA419ECA1A8E741;WildPressure Hash IOC https://securelist.com/wildpressure-targets-industrial-in-the-middle-east/96360/
+
+c0c467c8e9b2046d7053642cc9bdd57d;APT41 Campaign - Marcho 2020 - 1.txt - https://www.fireeye.com/blog/threat-research/2020/03/apt41-initiates-global-intrusion-campaign-using-multiple-exploits.html
+155e98e5ca8d662fad7dc84187340cbc;APT41 Campaign - Marcho 2020 - fuc - https://www.fireeye.com/blog/threat-research/2020/03/apt41-initiates-global-intrusion-campaign-using-multiple-exploits.html
+7966c2c546b71e800397a67f942858d0;APT41 Campaign - Marcho 2020 - install.bat - https://www.fireeye.com/blog/threat-research/2020/03/apt41-initiates-global-intrusion-campaign-using-multiple-exploits.html
+5909983db4d9023e4098e56361c96a6f;APT41 Campaign - Marcho 2020 - storesyncsvc.dll - https://www.fireeye.com/blog/threat-research/2020/03/apt41-initiates-global-intrusion-campaign-using-multiple-exploits.html
+3e856162c36b532925c8226b4ed3481c;APT41 Campaign - Marcho 2020 - 2.exe - https://www.fireeye.com/blog/threat-research/2020/03/apt41-initiates-global-intrusion-campaign-using-multiple-exploits.html
+659bd19b562059f3f0cc978e15624fd9;APT41 Campaign - Marcho 2020 - TzGG - https://www.fireeye.com/blog/threat-research/2020/03/apt41-initiates-global-intrusion-campaign-using-multiple-exploits.html
+
+f2d4a35f20cd92c13cab8f6a50995a3b;Skeleton Key Campaign https://medium.com/@cycraft_corp/taiwan-high-tech-ecosystem-targeted-by-foreign-apt-group-5473d2ad8730
+389d184ef0b0b2901c982c421142cbb1;Skeleton Key Campaign https://medium.com/@cycraft_corp/taiwan-high-tech-ecosystem-targeted-by-foreign-apt-group-5473d2ad8730
+c9b8cab697f23e6ee9b1096e312e8573;Skeleton Key Campaign https://medium.com/@cycraft_corp/taiwan-high-tech-ecosystem-targeted-by-foreign-apt-group-5473d2ad8730
+a403d96953eb867f3092751d0763c7d0;Skeleton Key Campaign https://medium.com/@cycraft_corp/taiwan-high-tech-ecosystem-targeted-by-foreign-apt-group-5473d2ad8730
+bb897e34bc0d1e82dfe79d0898f5aa88;Skeleton Key Campaign https://medium.com/@cycraft_corp/taiwan-high-tech-ecosystem-targeted-by-foreign-apt-group-5473d2ad8730
+
+94cae63dcbabb71c5dd43f55fd09caeffdcd7628a02a112fb3cba36698ef72bc;Chafer Toolset Hash IOC - 11.exe
+fb9e181d3ea6faa9d0e7431bfc8301fd66bcc8c3d66b26cef7036d117ee5fbb1;Chafer Toolset Hash IOC - 1.exe
+a1672417b70e407cec5d81446b6c197e169909edddae925d18b183828d3450ed;Chafer Toolset Hash IOC - VNC_bypauth.txt
+863db5a8b6564e44b5dbfef8da2e62cde00e32b03c29321628fc30d67f1eb891;Chafer Toolset Hash IOC - a
+2555e848eda2a5a9bc48d107520b7fb3faf684ce45b12d763981655aecd3f057;Chafer Toolset Hash IOC - a.c
+3fc3ecfd634344c11abb594c3ecb9f05cea3117607bda0a129115cb87dd9b3fa;Chafer Toolset Hash IOC - bc.exe
+e1796b1b2cc3b32fb7c81c61b6ed7ae7e5a7a247d2d7f323cf54c3583fe89990;Chafer Toolset Hash IOC - cmd.jsp
+6085b743a677204f6c8263b3c9baf50c588c48fab7dfa1d0fa87a89b47a67d08;Chafer Toolset Hash IOC - cmd.txt
+caf0b9afe8f3cb2037640a49d3aaec078940b6ea193338bb5a482e5d2f5fd21c;Chafer Toolset Hash IOC - find.bat
+7eb05334bb1fa0cb49b095a906821bccdbab94348613919fdeb1ee60ef1346b7;Chafer Toolset Hash IOC - ip.txt
+da6b03ee40f03e27547c2f92df3e22222c14e56e182e2b0c71828eb06f837eb8;Chafer Toolset Hash IOC - ipwdump.exe
+4c5de55447be1a635ddfbf405ad4927b6d75ef42949559b083b314f0fcc19423;Chafer Toolset Hash IOC - ipwlsa.dll
+c839e886b98d2c752a134e888dad40799cd9966f8a73b51edc85ca2d72f99616;Chafer Toolset Hash IOC - mfevtpse.exe
+cbcc37f37d326d3c3def52b3e3a42d14857d56ba6b6e13d02b3cd041cbb2aa3a;Chafer Toolset Hash IOC - nc.jpg
+3d1d3871edd985cae2838f4b7fbae6675d70e28bb8606ac42b5b7591290f0e96;Chafer Toolset Hash IOC - p.txt
+29fe8ea77382e942bcb318c54ba98c3b33db48240591cc0b6ca61860a8070d01;Chafer Toolset Hash IOC - pan.zip
+3b826c09907aa099098bdafa876381c21dd72691ef3f26f1a5cb99795c7da067;Chafer Toolset Hash IOC - pc.txt
+29b24268c57e306e6ba881f80998188dc1e76e64621535380e4b67e8d086f658;Chafer Toolset Hash IOC - servlets-examples.war
+4194d1706ed1f408d5e02d672777019f4d5385c766a8c6ca8acba3167d36a7b9;Chafer Toolset Hash IOC - u.txt
+06b15c48ba3bda15a38ab840538ea919f6a721361c590956a7b389fdafefcabd;Chafer Toolset Hash IOC - v
+29b24268c57e306e6ba881f80998188dc1e76e64621535380e4b67e8d086f658;Chafer Toolset Hash IOC - web-console.war
+ade900cf62545fa8b56c15132fc4d5ffc5e160b08aa5679f5e438c154aed02b0;Chafer Toolset Hash IOC - winexe
+8a4bc150868f870e05acb743b6798109aa302712c7e971ba6c61553e28fa0bcd;Chafer Toolset Hash IOC - winexe.sh
+39daa8fe6a9f017dcdfe911b48031d8d20218da589e3d7608066aa1aa18b0d5b;Chafer Toolset Hash IOC - winexe2
+
+2a3f36c849d9fbfe510c00ac4aca1750452cd8f6d8b1bc234d22bc0c40ea1613;Greenbug IOC Reverse Shell
+9809aeb6fd388db9ba60843d5a8489fea268ba30e3935cb142ed914d49c79ac5;Greenbug IOC Infostealer
+3c6bc3294a0b4b6e95f747ec847660ce22c5c4eee2681d02cc63f2a88d2d0b86;Greenbug IOC Backdoor
+ece23612029589623e0ae27da942440a9b0a9cd4f9681ec866613e64a247969d;Greenbug IOC Mimikatz
+b8797931ad99b983239980359ef0ae132615ebedbf6fcb0c0e9979404b4a02a8;Greenbug IOC Webshell
+9de28b94aa3f1a849221cf74224554b41a77473c694cadf3f2526ab06480eb85;Greenbug IOC Webshell
+b51eca570abad9341a08ae4d153d2c64827db876ee0491eb941d7e9a48d43554;Greenbug IOC Webshell
+16e1e886576d0c70af0f96e3ccedfd2e72b8b7640f817c08a82b95ff5d4b1218;Greenbug IOC Webshell
+abb3ddc945d147a4ed435b71490764bc4a2860f4ad264052f407357911bd6746;Greenbug IOC Webshell
+6cb51c7011f27418c772124d4433350a534061f5732c1331f5483d62b42402f7;Greenbug IOC Webshell
+9bf8121e0f3461412dde107c4d1ceb2ed18ec0741f458956830e038fd1be6d44;Greenbug IOC Webshell
+75cee6136011516dfe7bd9e45b25c2cf5d9af149a81fff0b8b3ab157a8cbf321;Greenbug IOC Covenant stager
+e974237c32f5d28019c5328bd022469236da87eecee19487902133aea89432a0;Greenbug IOC Covenant stager
+f577fc8f22b6eec782dbcbe54f5a8f3b00e8e6d8dc7aa94b2fffcc2b7ce09c6a;Greenbug IOC Covenant stager
+53bbc9ebe40725bd74ebf29616f48a8aed0a544dd0e4f40801ac1b522f2cf32f;Greenbug IOC CHM file
+fd95ffb7c70f828ef021e7dbdaf852f54f385095e7f58607f093096b68f40a32;Greenbug IOC Backdoor
+071e20a982ea6b8f9d482685010be7aaf036401ea45e2977aca867cedcdb0217;Greenbug IOC Unknown
+ee32bde60d1175709fde6869daf9c63cd3227155e37f06d45a27a2f45818a3dc;Greenbug IOC Backdoor
+4c7813a1f3eb5d5d8b8a1e53af074c96cfc6ddb14b21188fd84970f001bfc0ff;Greenbug IOC Unknown
+471dadfe16cf2cf82566d404d2b7d1baf66b72c385ae272dcc743a285113e280;Greenbug IOC CHM file
+069a29a0642ea5e2034250f5465cb2230edf1b49ad42d16ff4cddfee1f693314;Greenbug IOC Unknown
+faba07425c1fa65a9a68a17b99e83663a2a32fbb2a7c3df347b7a7411a7058bc;Greenbug IOC Unknown
+0644b3ffc856eb54b53338ab8ecd22dd005ee5aacfe321f4e61b763a93f82aea;Greenbug IOC Unknown
+fc002268620fa67ffe260ea9f3a6bbad8637f9bef8ae85b8d6061cec0390b9e2;Greenbug IOC Unknown
+450ebd66ba67bb46bf18d122823ff07ef4a7b11afe63b6f269aec9236a1790cd;Greenbug IOC Unknown
+
+8f0fcb5a80b2bca62d79f0d1cbdc93fb;BRONZE VINEWOOD report MD5 hash - https://www.secureworks.com/research/bronze-vinewood-targets-supply-chains
+9c162e042e0a892924f8415f7d72fe4f966bae7d;BRONZE VINEWOOD report SHA1 hash - https://www.secureworks.com/research/bronze-vinewood-targets-supply-chains
+16e9c238c6a77ebbb3c5b75ba78e6584;BRONZE VINEWOOD report MD5 hash - encrypted loader DLL - https://www.secureworks.com/research/bronze-vinewood-targets-supply-chains
+251138c6caac684f1900edeb282ff098;BRONZE VINEWOOD report MD5 hash - encrypted loader DLL - https://www.secureworks.com/research/bronze-vinewood-targets-supply-chains
+a88db7ca71000dc197ee29d53cbd2a95;BRONZE VINEWOOD report MD5 hash - encrypted loader DLL - https://www.secureworks.com/research/bronze-vinewood-targets-supply-chains
+244595a997af4bb8bac5efaee34805ff;BRONZE VINEWOOD report MD5 hash - loader DLL - https://www.secureworks.com/research/bronze-vinewood-targets-supply-chains
+ff693988afa9ee34be78057ac51bad77691aa552;BRONZE VINEWOOD report SHA1 hash - loader DLL - https://www.secureworks.com/research/bronze-vinewood-targets-supply-chains
+7fff010d11be12966bbf4dbdfacbb4d6;BRONZE VINEWOOD report MD5 hash - encrypted loader DLL - https://www.secureworks.com/research/bronze-vinewood-targets-supply-chains
+8b77ba9868df648d22cbce5145e315b50d822d4a;BRONZE VINEWOOD report SHA1 hash - encrypted loader DLL - https://www.secureworks.com/research/bronze-vinewood-targets-supply-chains
+e8e59b44613b5af58688809f8cb6dfa8;BRONZE VINEWOOD report MD5 hash - payload - https://www.secureworks.com/research/bronze-vinewood-targets-supply-chains
+2e84fd87150a002df98233093f2842337c594604;BRONZE VINEWOOD report SHA1 hash - payload - https://www.secureworks.com/research/bronze-vinewood-targets-supply-chains
+5f31452fdbfa4b01437fd553198ab563;BRONZE VINEWOOD report MD5 hash - encrypted payload - https://www.secureworks.com/research/bronze-vinewood-targets-supply-chains
+ca0996634789f7039edc67a60de4498d66a63d9f;BRONZE VINEWOOD report SHA1 hash - encrypted payload - https://www.secureworks.com/research/bronze-vinewood-targets-supply-chains
+7fff010d11be12966bbf4dbdfacbb4d6;BRONZE VINEWOOD report MD5 hash - encrypted payload - https://www.secureworks.com/research/bronze-vinewood-targets-supply-chains
+2bbf74073ed7a910a69c3d2a67bd5f8f;BRONZE VINEWOOD report MD5 hash - used by BRONZE VINEWOOD; uses GitHub gist for command and control - https://www.secureworks.com/research/bronze-vinewood-targets-supply-chains
+462be075b591547fefb54d2f95930ef674b4bfa4c2cafbf6b90e6741274cfe85;BRONZE VINEWOOD report - Malicious DLL that launches HanaLoader
+c1f02f8bc3c391e576c9cda626a9eb81c4b2fe063cc80de592d9ce999478eeaa;BRONZE VINEWOOD report - BRONZE VINEWOOD encrypted loader DLL
+71d30d6cf37d5d0fcb2e9a9061fde20f62683a6be91e52abc5f665e5ec021cf3;BRONZE VINEWOOD report - Encrypted zlib-compressed file containing HanaLoader
+
+401BC3740385A73EF0D3AD93DFCE03C82770072A;EvilNum Report - Helper Tools – rev.py - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+27054C073C10F61452101646DA5AC9AA21DC90DB;EvilNum Report - Helper Tools – runner.py - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+C4817D8C8E0B147ED5220229987FC84A43DA16A5;EvilNum Report - Helper Tools – PythonProxy.py - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+480C6F0C3998009C017051A8D6FFE199BC2A18DF;EvilNum Report - Helper Tools – socks.py - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+C17CF1E8B4806A931F5FA0D73AD4BB521C43849A;EvilNum Report - Helper Tools – log.py - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+47A7CD789C90735325EBD2C495A983A9C7E56E6F;EvilNum Report - Helper Tools – l.py - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+2B8522ED748178037BD13FC4D3F564CE8B7BA6D6;EvilNum Report - Helper Tools – Win.ps1 - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+9677FCBF6F59BE2A5AB61BE5E6DF91599FB67602;EvilNum Report - Helper Tools – abc.bat (executes Golden Chickens components) - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+476BB78BCF194523C385E2CEE364D6D097464ECA;EvilNum Report - Helper Tools – hi.txt (remote scriptlet) - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+E0957B2421A6EF3237A33A37DA8B52A9F29863D6;EvilNum Report - TerraTV – 15159.ocx - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+1F287AA922911F72F68B4B0C8645B4C909EB07B9;EvilNum Report - TerraTV – ACTIVEDS.dll - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+7C98E37CBA9B9C757E77892F02E1783A80AC450F;EvilNum Report - TerraStealer - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+73C5792AA05C122903C1AEA1E1F965D223C073D8;EvilNum Report - TerraStealer - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+C341D18A79057B032DC0A03F4524606205057F62;EvilNum Report - TerraStealer - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+E8A95EC590E5786B780D3D6986282273895B4C8A;EvilNum Report - TerraStealer - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+1C1D8D0AF6AA728589C5D0D0F46C01B129C75BA0;EvilNum Report - TerraPreter – msf_64.ocx - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+A7F1C2BE87B5EE4392757948FB7C895CAD95520B;EvilNum Report - TerraPreter – msfsigned.ocx - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+7D9037377DC2A2E3FC1985983942D1E9F986AA42;EvilNum Report - TerraPreter – msfsignednofront.ocx - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+976DA2E8BDD698D974D38D01593897CA64946D92;EvilNum Report - More Eggs – load.ocx - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+1303EB76FE1F978C6BFB6EA28329E7CDA61126AF;EvilNum Report - More Eggs – loadsigned.ocx - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+3200E9832CD61828DDF4E82155D66B63D2E6A54E;EvilNum Report - More Eggs – 32753.ocx - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+AF68B3E310BF8446E4CD10EFCF4776196131E785;EvilNum Report - More Eggs – 13681.ocx - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+D675D3AC1C05DC7AC73674C47FA141D75F537DD3;EvilNum Report - More Eggs – 13435.ocx - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+B3C8C1C80824278661FBB26B17040B87180D1D34;EvilNum Report - C# Agent – system.memmory.dll - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+C23F0551C2F7937EA4AD4B970B01CBD4D104EFFE;EvilNum Report - C# Agent – Policy.exe - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+6E7493BD1EF727FBC6EECD3AE5EC31BB8C1E897D;EvilNum Report - C# Agent – Policy.exe - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+4187F714076853B1FFA38A84835DB2623460F537;EvilNum Report - C# Agent Loader – Policy.exe - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+04F7FEDF8FDDF8EB5B592A57F67F72B1075C7CC1;EvilNum Report - C# Agent Loader – ServiceHud.exe - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+B6B9C5EFFDD14E2920183B313C56E5068C57A709;EvilNum Report - C# Agent Loader – ServiceHud.exe - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+D6341CD464847C9C2716030111261D5B84A43B2A;EvilNum Report - C# Copier – ypoc.exe - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+AB0C6268C61D9F36996BA7653B3A3E1EDE2AEE51;EvilNum Report - C# Copier – ypoc.exe - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+A6ECD3A818D463155C31977000E6FDE3EB8A2352;EvilNum Report - MSI Installer of C# agent - SecuUpdate2021.msi - https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+
+4B90E2E2D1DEA7889DC15059E11E11353FA621A6;Winnti - First stage - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+C7A9DCD4F9B2F26F50E8DD7F96352AEC7C4123FE;Winnti - First stage - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+3508EB2857E279E0165DE5AD7BBF811422959158;Winnti - First stage - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+729D526E75462AA8D33A1493B5A77CB28DD654BC;Winnti - First stage - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+5663AF9295F171FDD41A6D819094A5196920AA4B;Winnti - First stage - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+23789B2C9F831E385B22942DBC22F085D62B48C7;Winnti - PipeMon - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+53C5AE2655808365F1030E1E06982A7A6141E47F;Winnti - PipeMon - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+E422CC1D7B2958A59F44EE6D1B4E10B524893E9D;Winnti - PipeMon - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+5BB96743FEB1C3375A6E2660B8397C68BEF4AAC2;Winnti - PipeMon - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+78F4ACD69DC8F9477CAB9C732C91A92374ADCACD;Winnti - PipeMon - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+B56D8F826FA8E073E6AD1B99B433EAF7501F129E;Winnti - PipeMon - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+534CD47EB38FEE7093D24BAC66C2CF8DF24C7D03;Winnti - PipeMon - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+168101B9B3B512583B3CE6531CFCE6E5FB581409;Winnti - PipeMon encrypted binarie - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+C887B35EA883F8622F7C48EC9D0427AFE833BF46;Winnti - PipeMon encrypted binarie - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+44D0A2A43ECC8619DE8DB99C1465DB4E3C8FF995;Winnti - PipeMon encrypted binarie - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+E17972F1A3C667EEBB155A228278AA3B5F89F560;Winnti - PipeMon encrypted binarie - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+C03BE8BB8D03BE24A6C5CF2ED14EDFCEFA8E8429;Winnti - PipeMon encrypted binarie - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+2B0481C61F367A99987B7EC0ADE4B6995425151C;Winnti - PipeMon encrypted binaries - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+AF9C220D177B0B54A790C6CC135824E7C829B681;Winnti - WinEggDrop - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+4A240EDEF042AE3CE47E8E42C2395DB43190909D;Winnti - Mimikatz - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+751A9CBFFEC28B22105CDCAF073A371DE255F176;Winnti - Netcat - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+48230228B69D764F71A7BF8C08C85436B503109E;Winnti - HTran - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+D24BBB898A4A301870CAB85F836090B0FC968163;Winnti - AceHash - https://www.welivesecurity.com/2020/05/21/no-game-over-winnti-group/
+
+285714ff750fe1b3343593b2efb7fc3e8229e755c128759faedc5654deae879a;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+e41102043cfb9279cf1aafa89de7336a5d94fcfd0217eb590b36d119bbfaaa0f;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+843d996888de1201acb028e45c3a36102ae53a6b97428a79097cd9756f85dd62;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+f16c756e3bebd76d0c2ca1e73b4539a36fde97afdbb4591c7fac8f0db1492d45;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+b6982fe4ab882cfdcba091c6617b9d279a9bcfd3e28a76d5fb2c0cdfc0c23064;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+68472c7468b931dbbea1900bdeb4dcf10bdbfe1384e0984f4272f1a036659202;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+6366f009e4c0303d7f5ba0bb6a529039618ff8715972713c3b6645d1aef3d4c1;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+ce3d64f8ad4dcbbf5324e05c81a716c5d2493e149edafbc5cb73c01836bea5f2;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+862115c6d8d6e6addeb408c45ac0a7f8a25126d5ccca6d9356143a7a683c009d;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+c9d1ec32df1b134aa809bc8b3ad475b690347294693f6c5b65ab1df94fa4d1fd;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+7bf45c75dca3362331d5a9a116bf9c7a52e1352905a5dee66f0cf123acc461b2;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+67316d574d0e05549bf314b4764842e2b598f2ffae1ac82123b3dd592f605751;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+d41081969a212dec0ca623d848fb51907d8cdb1cb7bd86e1354e3041052858fb;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+afe2bcd5cb2de6349329c42631bfbbdba46d672f6dc515a5bee63cb4265e49f8;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+98b5320e7464fc69b12eb626b6336604efcbf6502adc38c77f6db41666da9dd1;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+f89e898ea40e10901c0c9f9100f269a227323ace1f7248293bfd57982dea1a67;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+853ef8130b50e9fce5f7575afc04374de0232fa5fe6b7b4d97fda7bf17ec58c9;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+39b914c8064becf3df1df39b0517bda05371e90b8b5fe15aad275faac634876f;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+8b0e1be70409238e7577429df3eaa84a6b12f36d9dbb6e47607f7fc354ddb961;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+a8169c566bf4566c6c4ba98ce7f9ecf143ae6c21dc0d7b15779c936e1ff60269;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+55429a6085d50782be52bb2150cfabecfdaa4eb843350399c3cf88a9ab9fa4c1;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+e8118cb2941c0421a2f6942919f8541b5fab348e2334102eab8654d2c4bff8ed;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+2878ad6d386bc3fd9f0625195a3a60fc5056ff7ff24e57cf466e54af07d0217e;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+af120f411c2c1f3ec52516006a25c734a5a0e4952c3eb942ad99858420c9135e;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+a44e6b87dc1165c4c6839554dd412e98fade0a7e7c6341b9d44c0ee0dd034160;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+561f89c566af35a90ae19285177cedaae3a0cbd7c8d415c57766e7988503c686;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+e0e7b4f6878483bdc8c3e01d4daa11c71e61385e85a6eaa2be8fec04d250b74e;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+c12e099fb5e825be513c75cff8b4f064b9d4ea8435bab254d69e126b74959372;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+8c756a02e7eb863cf1375e7069a92c49fbc669c5e3ea95fb5ddab764096fa31e;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+b1193c3f6f33686e3dd0429e6a873fb5d6f4662af7d43ed72aa4fbae557af56a;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+6b7c7c0d1d574cbd3f7a7df1ed5a78c2340acad9ed319214c12c212dbb6e8b8d;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+2f36085961f4569733e90c4eb2612cd3b320b60a9270450d30b1943ffefa78a4;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+a78162bbb5d2b1e90f6bff13e246b7b6f1407b6fe58ba968764aaf8352920c33;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+3b63900e56a7eccee43d42a77fcb6d7834943f5236adae063abe32111f35152d;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+5246fc50cce0b3492939a169082eebfde63c9ebc312267eef6d1bb47b44c44aa;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+534da7cf722968de28eceff23e2924e180bf2c59f3852fb58a4653f8a54fa69a;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+817887f4e977443cb446579f080ae848a2235b79f8c174e7201cebf62e9ccd94;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+323d0cf9ac1c750761f66482154dbd3144dae7336c955a4576cb4cce6438a6ba;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+c4fc73dbfc0d61a0a60239971225321b882af5923babf26c324726b80db612a2;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+d29f78f020e3e50f6692470ad725cb684aa2644596ea0c1b332145a62a6f6a66;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+82fb179572b6c4ce92bb2a9950675a135cb88aa64e1b4ca93288f4058a8886f3;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+63163b1358e60631f0baf9d04cd8398ca45228ed43d3df48a8b7749fd4181fdf;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+a9a6116f7a4f592c6bd75e09d9562fe6e21cc9067f6a60cb5d56704a3b746608;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+dfed03b4d22eb818859fdb5cca94ac90d7a538f6bca9a086c9a86806c07f8fe2;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+a26a8103df2d4fd152def868cfead5e1e2c9b333d0d0110cee02c06a98f1c188;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+8215972987c85e180e7df1a17bac6575df92fe882d0092bf470d2ce651db2585;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+7b1578fd81d09729784a8200fe79e9255cdd695ac882ec3db22219277c4f675e;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+3a184ed46b10e27515f8f8726a91886296f7ab1e9c05552b1189d828f15ccb3f;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+48dbe64eea55a0e579a2e8e12bfe3eb38416563c70a0c49e9ab2d72ac90254ce;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+5684427b6cd6752bea95cdde7772b28ba0051be97045eef8224a63b5f3da3398;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+10e8c9ade8687cfb2badb23c90e8f025c2b2e35d0934d287e19c2b14746395c2;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+e6466b2761600ac993bb0d46e3707fb059edd9212d671c5736cf25070a076508;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+7f5ed71f18937ecc6db9520ca9a9d16e3c113609c7a9a99a29ba74687f1349d2;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+7d48f65ff9e904ac98e0f41b94f04723ce907fc221efffbbf83545ca167fe921;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+985cc0b818fee90bf0cd3b76b60239b5f4eae55f64280c8cca1a667950fb2e4a;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+7b014a03f58545736685fbad24d65b6324c0c2ad627fadfdb772e1ddcdd15f6c;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+953cec896a79dc12eecc8e1e48f3b0e43bc9d95bb19dbd7318bae45027ff1334;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+ac9253dec9288e1277c4b6e842c75de99d156db5ac4516c0780bc2e87b2410c9;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+9e7957475fb3d849fb1f5bcce5b110f87a47bac621d4a31989c6f5d154b6e0ee;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html

@@ -48,7 +48,7 @@ rule Cloaked_as_JPG {
    condition:
       uint16be(0x00) != 0xFFD8 and
       extension == ".jpg" and
-      not uint32be(0) == 0x4749463839 and /* GIF Header */
+      not uint32be(0) == 0x47494638 and uint8(4) == 0x39 and /* GIF89 Header */
       /* and
       not filepath contains "ASP.NET" */
       not $fp1 in (0..30) and
@@ -67,9 +67,10 @@ rule Suspicious_Size_explorer_exe {
     meta:
         description = "Detects uncommon file size of explorer.exe"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
-      author = "Florian Roth"
+        author = "Florian Roth"
         score = 60
         date = "2015-12-21"
+        noarchivescan = 1
     condition:
         uint16(0) == 0x5a4d
         and filename == "explorer.exe"
@@ -84,10 +85,11 @@ rule Suspicious_Size_chrome_exe {
       author = "Florian Roth"
         score = 60
         date = "2015-12-21"
+        noarchivescan = 1
     condition:
         uint16(0) == 0x5a4d
         and filename == "chrome.exe"
-        and ( filesize < 500KB or filesize > 2000KB )
+        and ( filesize < 500KB or filesize > 3000KB )
 }
 
 rule Suspicious_Size_csrss_exe {
@@ -97,6 +99,7 @@ rule Suspicious_Size_csrss_exe {
       author = "Florian Roth"
         score = 60
         date = "2015-12-21"
+        noarchivescan = 1
     condition:
         uint16(0) == 0x5a4d
         and filename == "csrss.exe"
@@ -110,6 +113,7 @@ rule Suspicious_Size_iexplore_exe {
       author = "Florian Roth"
         score = 60
         date = "2015-12-21"
+        noarchivescan = 1
     condition:
         uint16(0) == 0x5a4d
         and filename == "iexplore.exe"
@@ -124,6 +128,7 @@ rule Suspicious_Size_firefox_exe {
       author = "Florian Roth"
         score = 60
         date = "2015-12-21"
+        noarchivescan = 1
     condition:
         uint16(0) == 0x5a4d
         and filename == "firefox.exe"
@@ -137,10 +142,11 @@ rule Suspicious_Size_java_exe {
       author = "Florian Roth"
         score = 60
         date = "2015-12-21"
+        noarchivescan = 1
     condition:
         uint16(0) == 0x5a4d
         and filename == "java.exe"
-        and ( filesize < 42KB or filesize > 900KB )
+        and ( filesize < 30KB or filesize > 900KB )
 }
 
 rule Suspicious_Size_lsass_exe {
@@ -150,10 +156,11 @@ rule Suspicious_Size_lsass_exe {
       author = "Florian Roth"
         score = 60
         date = "2015-12-21"
+        noarchivescan = 1
     condition:
         uint16(0) == 0x5a4d
         and filename == "lsass.exe"
-        and ( filesize < 10KB or filesize > 58KB )
+        and ( filesize < 10KB or filesize > 100KB )
 }
 
 rule Suspicious_Size_svchost_exe {
@@ -163,6 +170,7 @@ rule Suspicious_Size_svchost_exe {
       author = "Florian Roth"
         score = 60
         date = "2015-12-21"
+        noarchivescan = 1
     condition:
         uint16(0) == 0x5a4d
         and filename == "svchost.exe"
@@ -176,6 +184,7 @@ rule Suspicious_Size_winlogon_exe {
       author = "Florian Roth"
         score = 60
         date = "2015-12-21"
+        noarchivescan = 1
     condition:
         uint16(0) == 0x5a4d
         and filename == "winlogon.exe"
@@ -189,6 +198,7 @@ rule Suspicious_Size_igfxhk_exe {
       author = "Florian Roth"
         score = 60
         date = "2015-12-21"
+        noarchivescan = 1
     condition:
         uint16(0) == 0x5a4d
         and filename == "igfxhk.exe"
@@ -202,6 +212,7 @@ rule Suspicious_Size_servicehost_dll {
       author = "Florian Roth"
         score = 60
         date = "2015-12-23"
+        noarchivescan = 1
     condition:
         uint16(0) == 0x5a4d
         and filename == "servicehost.dll"
@@ -215,6 +226,7 @@ rule Suspicious_Size_rundll32_exe {
       author = "Florian Roth"
         score = 60
         date = "2015-12-23"
+        noarchivescan = 1
     condition:
         uint16(0) == 0x5a4d
         and filename == "rundll32.exe"
@@ -228,6 +240,7 @@ rule Suspicious_Size_taskhost_exe {
       author = "Florian Roth"
         score = 60
         date = "2015-12-23"
+        noarchivescan = 1
     condition:
         uint16(0) == 0x5a4d
         and filename == "taskhost.exe"
@@ -241,6 +254,7 @@ rule Suspicious_Size_spoolsv_exe {
       author = "Florian Roth"
         score = 60
         date = "2015-12-23"
+        noarchivescan = 1
     condition:
         uint16(0) == 0x5a4d
         and filename == "spoolsv.exe"
@@ -254,6 +268,7 @@ rule Suspicious_Size_smss_exe {
       author = "Florian Roth"
         score = 60
         date = "2015-12-23"
+        noarchivescan = 1
     condition:
         uint16(0) == 0x5a4d
         and filename == "smss.exe"
@@ -267,10 +282,11 @@ rule Suspicious_Size_wininit_exe {
       author = "Florian Roth"
         score = 60
         date = "2015-12-23"
+        noarchivescan = 1
     condition:
         uint16(0) == 0x5a4d
         and filename == "wininit.exe"
-        and ( filesize < 90KB or filesize > 400KB )
+        and ( filesize < 90KB or filesize > 450KB )
 }
 
 rule Suspicious_AutoIt_by_Microsoft {
@@ -296,6 +312,7 @@ rule SUSP_Size_of_ASUS_TuningTool {
       reference = "https://www.welivesecurity.com/2018/10/17/greyenergy-updated-arsenal-dangerous-threat-actors/"
       date = "2018-10-17"
       score = 60
+      noarchivescan = 1
       hash1 = "d4e97a18be820a1a3af639c9bca21c5f85a3f49a37275b37fd012faeffcb7c4a"
    strings:
       $s1 = "\\Release\\ASGT.pdb" fullword ascii

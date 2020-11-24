@@ -100,7 +100,7 @@ rule Empire_Invoke_ShellcodeMSIL {
       ( uint16(0) == 0x7566 and filesize < 30KB and 1 of them ) or all of them
 }
 
-rule Empire__Users_neo_code_Workspace_Empire_4sigs_PowerUp {
+rule HKTL_Empire_PowerUp {
    meta:
       description = "Detects Empire component - file PowerUp.ps1"
       license = "https://creativecommons.org/licenses/by-nc/4.0/"

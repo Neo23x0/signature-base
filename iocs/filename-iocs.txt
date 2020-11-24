@@ -227,7 +227,6 @@ ystem32\\razorp\.exe;45
 \\d1\.tmp\.dll;55
 \\fotos\.exe;55
 \\new\.exe;60
-\\image\.exe;60
 \\movie\.exe;60
 \\files\.exe;55
 \\fun\.exe;60
@@ -249,8 +248,6 @@ ystem32\\razorp\.exe;45
 \\tmp\.exe;60
 \\userfiles\.exe;65
 \\nuevo\.exe;65
-\\photo\.exe;65
-\\pdf\.exe;65
 \\_thumbs\.exe;65
 \\music\.exe;65
 \\picture\.exe;65
@@ -305,7 +302,6 @@ Microsoft\\MediaPlayer\\updatewindws\.exe;100
 (Temp|Tmp|TEMP)\\penguin\.exe;60
 \\Microsoft\\Windows\\hknswc\.exe;60
 \\Microsoft\\Windows\\AppMgnt\.exe;60
-\\PolicyManager$;60
 \\FILE_127\.127\.ppt;60
 \\FILE_127\.127\.ppsx;60
 (Temp|Tmp|TEMP)\\destsx\.inf;50
@@ -1827,7 +1823,6 @@ Temp\\rad[A-F0-9]{5}\.exe;70
 \\netx\.exe;60
 \\ctrl\.exe;60
 \\gpget\.exe;60
-\\power\.exe;60
 \\sacses\.exe;60
 \\fsutl\.exe;60
 \\dfrag\.exe;60
@@ -1854,7 +1849,6 @@ fdp\.exe;60;\\bin\\
 \\Windows\\inf\\[^\\]{1,20}\.(exe|ps1);60
 
 # Cloud Hopper Indicator - https://goo.gl/OkB63q
-\\mPclient\.dll;90
 \\mfeann\.data;90
 \\vba32arch\.dll;90
 \\SFCNS\.dat;90
@@ -1868,7 +1862,6 @@ fdp\.exe;60;\\bin\\
 \\nbt\.exe;90
 \\atexec\.exe;90
 \\LogMeInSystrays\.dat;90
-\\[0-9]{1,20}\.plg;90
 \\NvSmart\.hlp;90
 \\AppData\\Local\\Temp\\winsyslog\\msseces\.exe;90
 \\AppData\\Local\\Temp\\winsyslog\\msseces\.asm;90
@@ -2099,12 +2092,11 @@ ystem32\\lcsvsvc\.dll;80
 #\\(procdump|pdump|pc)(64)+\\.exe;50;(?i)(\\SysInternals\\)
 
 # Cred Dumping
-\\(q32|q64|wceaux|w86|q86|quarkpwd[^\\]*|m64|m32|hash32|hash64|64|32|wce32|wce64|w32|w64|wce|p32|p64|ps32|ps64|mimikatz|mimilove|mm32|mm64|pw32|pw64|g32|g64|gs32|gs64|hash|hashdump|dumpsvc)\.exe;60;\\distlib\\
+\\(q32|q64|wceaux|w86|q86|quarkpwd[^\\]*|m64|m32|hash32|hash64|64|32|wce32|wce64|w32|w64|wce|p32|p64|ps32|ps64|mimikatz|mimilove|mm32|mm64|pw32|pw64|g32|g64|gs32|gs64|hashdump|dumpsvc)\.exe;60;\\distlib\\
 \\(g64\-|\\g32\-|\\gsecdump\.exe|gcx64\.|\\gcx32\.|\\gec\.|\\gse\.exe);60
-\\pwhash;60;(\\python\\|\\site-packages\\)
 \\fgdump;60
 \\w32\.exe;50;site-packages
-\\w64\.exe;50;site-packages
+\\w64\.exe;50;(\}\\Root|site-packages)
 
 # Generic methodology - 1 character executable / script in short path
 #[a-zA-Z]:[.]{0,10}\\[.]\.(exe|dll|vbs|ps1|bat|sh)$;60;(?i)(\\cygwin\\|\\GnuWin32\\|Opera\\k\.(exe|bat)|\\R\\r-|\\Git\\usr|\\adobe after effects|\\perl)
@@ -2783,11 +2775,6 @@ ystem32\\drivers\\kifes\.sys;70
 \\AppData\\Roaming\\Microsoft\\Windows\\Caches\\NavShExt\.dll;70
 \\AppData\\Local\\Microsoft\\Windows\\Explorer\\thumbcache_1CD60\.db;80
 
-# Script Anomaly - Typical False Positive Directories
-\\Adobe\\Acrobat Reader;-10
-\\WindowsPowerShell\\;-10
-
-
 # Sofacy Activity Feb 18 https://goo.gl/UUfYBc
 AppData\\Local\\cdnver\.dll;90
 
@@ -3096,5 +3083,202 @@ ystem32\\uploadmgr\.dat;80
 \\LuckyCat\.exe;80
 \\AppData\\Local\\Microsoft\\mm\.accdb;80
 \\AppData\\Roaming\\Microsoft\\mm\.accdb;80
+
+
+# Suspicious Indicators - Skript in Windows Folder
+C:\\Windows\\[^\\]{1,20}\.(js|ps1|vbs);50
+
+# Turla Malware macOS https://blog.malwarebytes.com/threat-analysis/2017/05/snake-malware-ported-windows-mac/
+/Library/Scripts/queue;80
+/Library/Scripts/installdp;80
+/Library/Scripts/installd.sh;80
+/Library/LaunchDaemons/com.adobe.update.plist;80
+
+# Turla Snake Malware https://www.welivesecurity.com/2019/05/29/turla-powershell-usage/
+\\Users\\Public\\iCore\.dat;100
+
+# LYCEUM Campaign https://www.secureworks.com/blog/lyceum-takes-center-stage-in-middle-east-campaign
+\\Public\\PublicLib\\k1\.ps1;100
+\\Decrypt-RDCMan\.ps1;80
+\\Get-LAPSP\.ps1;70
+
+# Suspicious Files in Root of Recycle.Bin
+:\\\$Recycle\.Bin\\[^\\]{1,20}\.(exe|vbs|ps1|js|bat|dll);85
+
+# Stealth Falcon Filename IOC https://www.welivesecurity.com/2019/09/09/backdoor-stealth-falcon-group/
+\\ImageIndexer\.dll;80
+\\WindowsBackup\.dll;80
+\\WindowsSearchCache\.dll;80
+\\JavaUserUpdater\.dll;80
+
+# TortoiseShell report https://www.symantec.com/blogs/threat-intelligence/tortoiseshell-apt-supply-chain
+\\Windows\\temp\\rconfig\.xml;80
+\\Windows\\temp\\bak\.exe;80
+\\Sha432\.exe;100
+\\stereoversioncontrol\.exe;80
+\\get-logon-history\.ps1;75
+
+# Emotet Indicator https://app.any.run/tasks/fb5d3877-4179-4bb8-aea4-1cff3a4793ed/
+\\msptermsizes\\msptermsizes\.exe;90
+:\\Users\\[^\\]{1,16}\\[0-9]{1,4}\.exe;65
+
+# Looks like an LSASS process memory dump (often contains credentials)
+\\lsass\.dmp;60
+
+# Suspicious Extension in AppPatch folder
+c:\\windows\\AppPatch\\[^\\]{1,20}\.(exe|vbs|ps1|bat);70
+c:\\windows\\AppPatch\\custom\\[^\\]{1,20}\.(exe|vbs|ps1|bat);70
+
+# MESSAGETAP components https://twitter.com/cglyer/status/1182415016542248960/photo/1
+\\keyword_param\.txt;70
+
+# TeamViewerPortable - propably a policy violation https://portableapps.com/apps/utilities/teamviewer_portable
+\\TeamViewerPortable;60
+
+# OceanLotus / APT32 filename IOCs
+\\ProgramData\\Microsoft Help\\[^\\]{1,20}\.(exe|bat|vbs|ps1);80
+
+# Suspicious Indicators - Skript in Windows Folder
+C:\\Windows\\[^\\]{1,20}\.(js|ps1|vbs);50
+
+# Emotet Indicator https://app.any.run/tasks/fb5d3877-4179-4bb8-aea4-1cff3a4793ed/
+\\msptermsizes\\msptermsizes\.exe;90
+:\\Users\\[^\\]{1,16}\\[0-9]{1,4}\.exe;65
+
+# AVIVORE IOCs https://www.contextis.com/en/blog/avivore
+c:\\iperf\-2.0.5-3-win32\\[^\\]{1,20}\.(exe|vbs|ps1|bat);85
+c:\\perflogs\\admin\\[^\\]{1,20}\.(exe|vbs|ps1|bat);85
+c:\\programdata\\esetoem\\[^\\]{1,20}\.(exe|vbs|ps1|bat);80
+c:\\programdata\\mcafeeoem\\[^\\]{1,20}\.(exe|vbs|ps1|bat);80
+c:\\temp\\gen_py\\[^\\]{1,20}\.(exe|vbs|ps1|bat);70
+\\acres64.exe;70
+\\AcWinRT.exe;70
+\\apihex.exe;70
+\\apihex64.exe;80
+\\apihex6464.exe;90
+\\Mimikatz.exe;90
+\\pro64.exe;60
+\\te.vbs;60
+
+# Tick Group - Operation ENDTRADE report https://blog.trendmicro.com/trendlabs-security-intelligence/operation-endtrade-finding-multi-stage-backdoors-that-tick/
+\\taskhast\.exe;85
+\\taskma\.exe;70
+\\svchdst\.exe;85
+\\lemstsc\.exe;70
+\\winlogan\.exe;75
+\\schost\.exe;80
+\\FortiAvat\.exe;70
+
+# APT34 OilRig report https://www.ibm.com/downloads/cas/OAJ4VZNJ
+\\saddrv\.sys;70
+:\\Users\\Public\\Public Updates\\;65
+:\\Windows\\Temp\\UpdateTemp\\;55
+\\ClientUpdate\.exe;40
+\\Soy\.exe;70
+\\ClientUpdateCore\.ps1;80
+\\GPOClientUpdateCore\.ps1;80
+\\ClientUpdate\.ps1;70
+\\x86\\elrawdsk\.sys;60
+
+# Lazarus macOS malware https://objective-see.com/blog/blog_0x51.html
+/Library/UnionCrypto/unioncryptoupdater;85
+/Library/LaunchDaemons/.vip.unioncrypto.plist;90
+/Library/UnionCrypto/.unioncryptoupdater;90
+
+# BRONZE PRESIDENT Filename IOCs https://www.secureworks.com/research/bronze-president-targets-ngos
+:\\Windows\\Help\\Help\\[^\\]{1,20}\.(exe|vbs|ps1|bat|dll);80
+:\\Windows\\debug\\WIA\\[^\\]{1,20}\.(exe|vbs|ps1|bat|dll);80
+:\\Windows\\Logs\\DPX\\[^\\]{1,20}\.(exe|vbs|ps1|bat|dll);80
+:\\Recovery\\[^\\]{1,20}\.(exe|vbs|ps1|bat|dll);80
+:\\Windows\\Temp\\system\.hive;80
+
+
+# OilRig filename IOCs campaign Feb 2020 https://app.any.run/tasks/61de5d96-e812-42f8-8884-3d63a510601b/
+ublic\\.Monitor\\monitor\.xls;90
+ublic\\.Monitor\\monitor\.exe;90
+ublic\\.Monitor\\e\.txt;90
+ublic\\.Monitor\\ews\.conf;90
+
+# Turla IOCs https://github.com/eset/malware-ioc/tree/master/turla#turla-powershell-indicators-of-compromise
+\\Public\\iCore\.dat;90
+\\msctx\.ps1;80
+\\Users\\Public\\Documents\\desktop\.db;75
+
+# Turla report https://www.welivesecurity.com/2020/03/12/tracking-turla-new-backdoor-armenian-watering-holes/
+\\Temp\\winhost\.exe;70
+\\Temp\\adobe\.exe;70
+
+# Vicious Panda - COVID campaign https://research.checkpoint.com/2020/vicious-panda-the-covid-campaign/
+\\Microsoft\\Word\\STARTUP\\intel\.wll;90
+\\ppdown\.dll;60
+\\Rundll32Templete\.dll;60
+\\minisdllpub\.dll;60
+
+# WildPressure Report https://securelist.com/wildpressure-targets-industrial-in-the-middle-east/96360/
+\\Milum46_Win32\.exe;100
+\\system32\.exe;90
+
+# XHunt Filename IOCs https://www.sans.org/webcasts/113525
+:\\mydump\.dmp;80
+
+# Attacks on Academic Data Centers https://csirt.egi.eu/academic-data-centers-abused-for-crypto-currency-mining/
+/apps/\.ior/read/\.terma;80
+/apps/\.ior/read/\.termb;80
+/etc/fonts/\.fonts;80
+/etc/fonts/\.low;80
+/etc/terminfo/\.terma;80
+/etc/terminfo/\.termb;80
+/\.mozilla/plugins/\.fonts;80
+/\.mozilla/plugins/\.low;80
+/\.mozilla/plugins/\.aa;80
+/\.mozilla/plugins/test;80
+/usr/lib64/\.lib/l64;80
+/var/games/\.terma;80
+/var/games/\.termb;80
+/tmp/aes\.tgz;70
+/tmp/reserved;50
+/tmp/systemdb;50
+/tmp/updatedb;50
+/tmp/check_power;50
+/tmp/hdshare;50
+/tmp/readps;60
+/usr/bin/on_ac_power ;70
+/usr/lib/libocs.so ;70
+/usr/lib64/\.lib/l64;70
+/usr/share/aldi\.so;70
+/usr/share/sos/;70
+/usr/share/sos/rh\.pub;70
+/usr/share/sos/rh\.pub;70
+/var/tmp/\.lock/clogs;70
+/var/tmp/\.lock/cpa.h;70
+/var/tmp/\.lock/ologs;70
+/wlcg/arc-ce1/cache/\.cache;80
+
+# Turla Kazuar Malware IOCs https://www.epicturla.com/blog/sysinturla
+\\dbgsview\.exe;60
+\\DebugView\.exe;40
+\\adflctlmon\.exe;85
+\\PSExtendPrivacy\.exe;85
+
+# Sandworm IOCs https://media.defense.gov/2020/May/28/2002306626/-1/-1/0/CSA%20Sandworm%20Actors%20Exploiting%20Vulnerability%20in%20Exim%20Transfer%20Agent%2020200528.pdf
+/sshkey\.php;80
+/etc/opt/init-file\.txt;80
+
+# Evilnum Report https://www.welivesecurity.com/2020/07/09/more-evil-deep-look-evilnum-toolset/
+\\AppData\\Local\\Microsoft\\Mediia\\;90
+\\Users\\Public\\Public Documents\\57494E2D3850535046373333503532\\;100
+\\AppData\\Local\\Microsoft\\policy\\;75
+\\AppData\\Local\\Microsoft\\Windows\\Explorer\\;75
+\\AppData\\Local\\Microsoft\\Windows\\Explore\\;75
+\\AppData\\Localpolicy\\;70
+\\AppData\\Local\\microsoft\\windows\\explorer\\iconcache_2048\.db;90
+\\Microsoft\\Credentials\\MediaPlayer\\MediaManager\\media\.js;80
+
+# Suspicious cmd.exe Location https://us-cert.cisa.gov/ncas/analysis-reports/ar20-216a
+:\\temp\\cmd\.exe;50
+
+# Taidoor malware location https://us-cert.cisa.gov/ncas/analysis-reports/ar20-216a
+:\\ProgramData\\Microsoft\\~svc_\.TMp;100
+\\svchost\.dll;70
 
 # End

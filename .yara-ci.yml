@@ -1,0 +1,8 @@
+files:
+    accept:
+        - "**.yar"
+variables:
+    filename: ""
+    filepath: ""
+    extension: ""
+    filetype: ""

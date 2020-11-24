@@ -40,6 +40,7 @@ rule iexplore_ANOMALY {
       $win2003_win7_u4 = "varfileinfo" wide fullword nocase
    condition:
       filename == "iexplore.exe"
+      and uint16(0) == 0x5a4d
       and not filepath contains "teamviewer"
       and not 1 of ($win*) and not WINDOWS_UPDATE_BDC
       and filepath contains "C:\\"
@@ -60,7 +61,9 @@ rule svchost_ANOMALY {
 		$win2000 = "Generic Host Process for Win32 Services" wide fullword
 		$win2012 = "Host Process for Windows Services" wide fullword
 	condition:
-		filename == "svchost.exe" and not 1 of ($win*) and not WINDOWS_UPDATE_BDC
+		filename == "svchost.exe"
+      and uint16(0) == 0x5a4d
+      and not 1 of ($win*) and not WINDOWS_UPDATE_BDC
 }
 
 /* removed 1 rule here */
@@ -77,6 +80,7 @@ rule explorer_ANOMALY {
 		$s2 = "Windows Explorer" wide fullword
 	condition:
 		filename == "explorer.exe"
+      and uint16(0) == 0x5a4d
       and not filepath contains "teamviewer"
       and not 1 of ($s*) and not WINDOWS_UPDATE_BDC
 }
@@ -94,7 +98,9 @@ rule sethc_ANOMALY {
 		$s3 = "Control_RunDLL access.cpl" wide fullword
 		$s4 = "SETHC.EXE" wide fullword
 	condition:
-		filename == "sethc.exe" and not 1 of ($s*) and not WINDOWS_UPDATE_BDC
+		filename == "sethc.exe"
+      and uint16(0) == 0x5a4d
+      and not 1 of ($s*) and not WINDOWS_UPDATE_BDC
 }
 
 rule Utilman_ANOMALY {
@@ -109,7 +115,9 @@ rule Utilman_ANOMALY {
 		$win2000 = "Start with Utility Manager" fullword wide
 		$win2012 = "utilman2.exe" fullword wide
 	condition:
-		( filename == "utilman.exe" or filename == "Utilman.exe" ) and not 1 of ($win*) and not WINDOWS_UPDATE_BDC
+		( filename == "utilman.exe" or filename == "Utilman.exe" )
+      and uint16(0) == 0x5a4d
+      and not 1 of ($win*) and not WINDOWS_UPDATE_BDC
 }
 
 rule osk_ANOMALY {
@@ -125,7 +133,9 @@ rule osk_ANOMALY {
 		$s3 = "&About On-Screen Keyboard..." wide fullword
 		$s4 = "Software\\Microsoft\\Osk" wide
 	condition:
-		filename == "osk.exe" and not 1 of ($s*) and not WINDOWS_UPDATE_BDC
+		filename == "osk.exe"
+      and uint16(0) == 0x5a4d
+      and not 1 of ($s*) and not WINDOWS_UPDATE_BDC
 }
 
 rule magnify_ANOMALY {
@@ -140,7 +150,9 @@ rule magnify_ANOMALY {
 		$win2000 = "Microsoft Magnifier" wide fullword
 		$winxp = "Software\\Microsoft\\Magnify" wide
 	condition:
-		filename =="magnify.exe" and not 1 of ($win*) and not WINDOWS_UPDATE_BDC
+		filename =="magnify.exe"
+      and uint16(0) == 0x5a4d
+      and not 1 of ($win*) and not WINDOWS_UPDATE_BDC
 }
 
 rule narrator_ANOMALY {
@@ -157,7 +169,9 @@ rule narrator_ANOMALY {
 		$winxp = "Software\\Microsoft\\Narrator"
 		$winxp_en = "SOFTWARE\\Microsoft\\Speech\\Voices" wide
 	condition:
-		filename == "narrator.exe" and not 1 of ($win*) and not WINDOWS_UPDATE_BDC
+		filename == "narrator.exe"
+      and uint16(0) == 0x5a4d
+      and not 1 of ($win*) and not WINDOWS_UPDATE_BDC
 }
 
 rule notepad_ANOMALY {
@@ -174,7 +188,9 @@ rule notepad_ANOMALY {
 		$winxp = "Software\\Microsoft\\Notepad" wide
 		$winxp_de = "Software\\Microsoft\\Notepad" wide
 	condition:
-		filename == "notepad.exe" and not 1 of ($win*) and not WINDOWS_UPDATE_BDC
+		filename == "notepad.exe"
+      and uint16(0) == 0x5a4d
+      and not 1 of ($win*) and not WINDOWS_UPDATE_BDC
 }
 
 /* NEW ---------------------------------------------------------------------- */
@@ -193,7 +209,9 @@ rule csrss_ANOMALY {
 		$s5 = "CSRSRV.dll" fullword ascii
 		$s6 = "CsrServerInitialization" fullword ascii
 	condition:
-		filename == "csrss.exe" and not 1 of ($s*) and not WINDOWS_UPDATE_BDC
+		filename == "csrss.exe"
+      and uint16(0) == 0x5a4d
+      and not 1 of ($s*) and not WINDOWS_UPDATE_BDC
 }
 
 rule conhost_ANOMALY {
@@ -207,7 +225,9 @@ rule conhost_ANOMALY {
 	strings:
 		$s2 = "Console Window Host" fullword wide
 	condition:
-		filename == "conhost.exe" and not 1 of ($s*) and not WINDOWS_UPDATE_BDC
+		filename == "conhost.exe"
+      and uint16(0) == 0x5a4d
+      and not 1 of ($s*) and not WINDOWS_UPDATE_BDC
 }
 
 rule wininit_ANOMALY {
@@ -221,7 +241,9 @@ rule wininit_ANOMALY {
 	strings:
 		$s1 = "Windows Start-Up Application" fullword wide
 	condition:
-		filename == "wininit.exe" and not 1 of ($s*) and not WINDOWS_UPDATE_BDC
+		filename == "wininit.exe"
+      and uint16(0) == 0x5a4d
+      and not 1 of ($s*) and not WINDOWS_UPDATE_BDC
 }
 
 rule winlogon_ANOMALY {
@@ -236,7 +258,9 @@ rule winlogon_ANOMALY {
 		$s1 = "AuthzAccessCheck failed" fullword
 		$s2 = "Windows Logon Application" fullword wide
 	condition:
-		filename == "winlogon.exe" and not 1 of ($s*)
+		filename == "winlogon.exe"
+      and not 1 of ($s*)
+      and uint16(0) == 0x5a4d
 		and not WINDOWS_UPDATE_BDC
 		and not filepath contains "Malwarebytes"
 }
@@ -252,7 +276,9 @@ rule SndVol_ANOMALY {
 	strings:
 		$s1 = "Volume Control Applet" fullword wide
 	condition:
-		filename == "sndvol.exe" and not 1 of ($s*) and not WINDOWS_UPDATE_BDC
+		filename == "sndvol.exe"
+      and uint16(0) == 0x5a4d
+      and not 1 of ($s*) and not WINDOWS_UPDATE_BDC
 }
 
 rule doskey_ANOMALY {
@@ -266,7 +292,9 @@ rule doskey_ANOMALY {
 	strings:
 		$s3 = "Keyboard History Utility" fullword wide
 	condition:
-		filename == "doskey.exe" and not 1 of ($s*) and not WINDOWS_UPDATE_BDC
+		filename == "doskey.exe"
+      and uint16(0) == 0x5a4d
+      and not 1 of ($s*) and not WINDOWS_UPDATE_BDC
 }
 
 rule lsass_ANOMALY {
@@ -283,7 +311,9 @@ rule lsass_ANOMALY {
 		$s3 = "Local Security Authority Process" fullword wide
 		$s4 = "LsapInitLsa" fullword
 	condition:
-		filename == "lsass.exe" and not 1 of ($s*) and not WINDOWS_UPDATE_BDC
+		filename == "lsass.exe"
+      and uint16(0) == 0x5a4d
+      and not 1 of ($s*) and not WINDOWS_UPDATE_BDC
 }
 
 rule taskmgr_ANOMALY {
@@ -302,6 +332,7 @@ rule taskmgr_ANOMALY {
       $s4 = "NTShell Taskman Startup Mutex" fullword wide
    condition:
       ( filename == "taskmgr.exe" or filename == "Taskmgr.exe" ) and not 1 of ($s*) and not WINDOWS_UPDATE_BDC
+      and uint16(0) == 0x5a4d
       and filepath contains "C:\\"
       and not filepath contains "Package_for_RollupFix"
 }
@@ -395,4 +426,22 @@ rule SUSP_Renamed_Dot1Xtray {
       uint16(0) == 0x5a4d and filesize < 300KB and all of them
       and not filename matches /dot1xtray.exe/i
       and not filepath matches /Recycle.Bin/i
+}
+
+rule APT_Cloaked_CERTUTIL {
+   meta:
+      description = "Detects a renamed certutil.exe utility that is often used to decode encoded payloads"
+      author = "Florian Roth"
+      reference = "Internal Research"
+      date = "2018-09-14"
+   strings:
+      $s1 = "-------- CERT_CHAIN_CONTEXT --------" fullword ascii
+      $s5 = "certutil.pdb" fullword ascii
+      $s3 = "Password Token" fullword ascii
+   condition:
+      uint16(0) == 0x5a4d and
+      all of them
+      and not filename contains "certutil"
+      and not filename contains "CertUtil"
+	  and not filename contains "Certutil"
 }

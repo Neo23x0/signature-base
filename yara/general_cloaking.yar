@@ -48,6 +48,7 @@ rule Base64_encoded_Executable {
 		author = "Florian Roth"
 		date = "2015-05-28"
 		score = 40
+		type = "file"
 	strings:
 		$s1 = "TVpTAQEAAAAEAAAA//8AALgAAAA" // 14 samples in goodware archive
 		$s2 = "TVoAAAAAAAAAAAAAAAAAAAAAAAA" // 26 samples in goodware archive
@@ -55,7 +56,13 @@ rule Base64_encoded_Executable {
 		$s4 = "TVpQAAIAAAAEAA8A//8AALgAAAA" // 168 samples in goodware archive
 		$s5 = "TVqQAAMAAAAEAAAA//8AALgAAAA" // 28,529 samples in goodware archive
 	condition:
-		not uint16(0) == 0x5a4d and 1 of them and not filepath contains "Thunderbird"
+		1 of them
+		and not filepath contains "Thunderbird"
+      and not filepath contains "Internet Explorer"
+      and not filepath contains "Chrome"
+      and not filepath contains "Opera"
+      and not filepath contains "Outlook"
+      and not filepath contains "Temporary Internet Files"
 }
 
 rule Gen_Base64_EXE {

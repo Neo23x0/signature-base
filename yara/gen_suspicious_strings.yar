@@ -67,6 +67,7 @@ rule ReconCommands_in_File {
       reference = "https://twitter.com/haroonmeer/status/939099379834658817"
       date = "2017-12-11"
       score = 40
+      type = "file"
    strings:
       $ = "tasklist"
       $ = "net time"
@@ -197,8 +198,10 @@ rule SUSP_PowerShell_IEX_Download_Combo {
       hash1 = "13297f64a5f4dd9b08922c18ab100d3a3e6fdeab82f60a4653ab975b8ce393d5"
    strings:
       $x1 = "IEX ((new-object net.webclient).download" ascii nocase
+
+      $fp = "Remote Desktop in the Appveyor" ascii
    condition:
-      1 of them
+      $x1 and not 1 of ($fp*)
 }
 
 rule SUSP_Win32dll_String {
@@ -245,4 +248,134 @@ rule SUSP_JAVA_Class_with_VBS_Content {
       $s3 = "wscript" fullword ascii nocase
    condition:
       uint16(0) == 0xfeca and filesize < 100KB and $a1 and 3 of ($s*)
+}
+
+rule SUSP_RAR_with_PDF_Script_Obfuscation {
+   meta:
+      description = "Detects RAR file with suspicious .pdf extension prefix to trick users"
+      author = "Florian Roth"
+      reference = "Internal Research"
+      date = "2019-04-06"
+      hash1 = "b629b46b009a1c2306178e289ad0a3d9689d4b45c3d16804599f23c90c6bca5b"
+   strings:
+      $s1 = ".pdf.vbe" ascii
+      $s2 = ".pdf.vbs" ascii
+      $s3 = ".pdf.ps1" ascii
+      $s4 = ".pdf.bat" ascii
+      $s5 = ".pdf.exe" ascii
+   condition:
+      uint32(0) == 0x21726152 and 1 of them
+}
+
+rule SUSP_Netsh_PortProxy_Command {
+   meta:
+      description = "Detects a suspicious command line with netsh and the portproxy command"
+      author = "Florian Roth"
+      reference = "https://docs.microsoft.com/en-us/windows-server/networking/technologies/netsh/netsh-interface-portproxy"
+      date = "2019-04-20"
+      score = 65
+      hash1 = "9b33a03e336d0d02750a75efa1b9b6b2ab78b00174582a9b2cb09cd828baea09"
+   strings:
+      $x1 = "netsh interface portproxy add v4tov4 listenport=" ascii
+   condition:
+      1 of them
+}
+
+rule SUSP_DropperBackdoor_Keywords {
+   meta:
+      description = "Detects suspicious keywords that indicate a backdoor"
+      author = "Florian Roth"
+      reference = "https://blog.talosintelligence.com/2019/04/dnspionage-brings-out-karkoff.html"
+      date = "2019-04-24"
+      hash1 = "cd4b9d0f2d1c0468750855f0ed352c1ed6d4f512d66e0e44ce308688235295b5"
+   strings:
+      $x4 = "DropperBackdoor" fullword wide ascii
+   condition:
+      uint16(0) == 0x5a4d and filesize < 1000KB and 1 of them
+}
+
+rule SUSP_SFX_cmd {
+   meta:
+      description = "Detects suspicious SFX as used by Gamaredon group"
+      author = "Florian Roth"
+      reference = "Internal Research"
+      date = "2018-09-27"
+      hash1 = "965129e5d0c439df97624347534bc24168935e7a71b9ff950c86faae3baec403"
+   strings:
+      $s1 = /RunProgram=\"hidcon:[a-zA-Z0-9]{1,16}.cmd/ fullword ascii
+   condition:
+      uint16(0) == 0x5a4d and filesize < 2000KB and 1 of them
+}
+
+rule SUSP_XMRIG_Reference {
+   meta:
+      description = "Detects an executable with a suspicious XMRIG crypto miner reference"
+      author = "Florian Roth"
+      reference = "https://twitter.com/itaitevet/status/1141677424045953024"
+      date = "2019-06-20"
+      score = 70
+   strings:
+      $x1 = "\\xmrig\\" ascii
+   condition:
+      uint16(0) == 0x5a4d and filesize < 2000KB and 1 of them
+}
+
+rule SUSP_Just_EICAR {
+   meta:
+      description = "Just an EICAR test file - this is boring but users asked for it"
+      author = "Florian Roth"
+      reference = "http://2016.eicar.org/85-0-Download.html"
+      date = "2019-03-24"
+      score = 40
+      hash1 = "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f"
+   strings:
+      $s1 = "X5O!P%@AP[4\\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*" fullword ascii
+   condition:
+      uint16(0) == 0x3558 and filesize < 70 and $s1 at 0
+}
+
+rule SUSP_PDB_Path_Keywords {
+   meta:
+      description = "Detects suspicious PDB paths"
+      author = "Florian Roth"
+      reference = "https://twitter.com/stvemillertime/status/1179832666285326337?s=20"
+      date = "2019-10-04"
+   strings:
+      $ = "Debug\\Shellcode" ascii
+      $ = "Release\\Shellcode" ascii
+      $ = "Debug\\ShellCode" ascii
+      $ = "Release\\ShellCode" ascii
+      $ = "Debug\\shellcode" ascii
+      $ = "Release\\shellcode" ascii
+      $ = "shellcode.pdb" nocase ascii
+      $ = "\\ShellcodeLauncher" ascii
+      $ = "\\ShellCodeLauncher" ascii
+      $ = "Fucker.pdb" ascii
+      $ = "\\AVFucker\\" ascii
+      $ = "ratTest.pdb" ascii
+      $ = "Debug\\CVE_" ascii
+      $ = "Release\\CVE_" ascii
+      $ = "Debug\\cve_" ascii
+      $ = "Release\\cve_" ascii
+   condition:
+      uint16(0) == 0x5a4d and 1 of them
+}
+
+rule SUSP_Disable_ETW_Jun20_1 {
+   meta:
+      description = "Detects method to disable ETW in ENV vars before exeucting a program"
+      author = "Florian Roth"
+      reference = "https://gist.github.com/Cyb3rWard0g/a4a115fd3ab518a0e593525a379adee3"
+      date = "2020-06-06"
+   strings:
+      $x1 = "set COMPlus_ETWEnabled=0" ascii wide fullword
+      $x2 = "$env:COMPlus_ETWEnabled=0" ascii wide fullword
+
+      $s1 = "Software\\Microsoft.NETFramework" ascii wide
+      $sa1 = "/v ETWEnabled" ascii wide fullword 
+      $sa2 = " /d 0" ascii wide
+      $sb4 = "-Name ETWEnabled"
+      $sb5 = " -Value 0 "
+   condition:
+      1 of ($x*) or 3 of them 
 }

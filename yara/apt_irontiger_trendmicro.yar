@@ -160,7 +160,7 @@ rule IronTiger_NBDDos_Gh0stvariant_dropper
 rule IronTiger_PlugX_DosEmulator
 {
 	meta:
-		author = "Cyber Safety Solutions, Trend Micro"
+		author = "Cyber Safety Solutions, Trend Micro - modified by Florian Roth"
 		description = "Iron Tiger Malware - PlugX DosEmulator"
 		reference = "http://goo.gl/T5fSJC"
 	strings:
@@ -169,7 +169,7 @@ rule IronTiger_PlugX_DosEmulator
 		$str3 = "FastDos.cpp" nocase wide ascii
 		$str4 = "fail,error code = %d." nocase wide ascii
 	condition:
-		uint16(0) == 0x5a4d and (any of ($str*))
+		uint16(0) == 0x5a4d and 2 of ($str*)
 }
 
 rule IronTiger_PlugX_FastProxy
