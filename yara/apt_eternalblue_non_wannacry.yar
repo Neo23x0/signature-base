@@ -24,10 +24,10 @@ rule Backdoor_Redosdru_Jun17 {
 
       $s1 = "RegQueryValueEx(Svchost\\netsvcs)" fullword ascii
       $s2 = "serviceone" fullword ascii
-      $s3 = "#p #p #p #p #p #p #p #p #p #p #p #p #p #p #p #p #p #p #p #p #p #p #p #p #f #" fullword ascii
+      $s3 = "\x1f#p \x1f#p \x1f#p \x1f#p \x1f#p \x1f#p \x1f#p \x1f#p \x1f#p \x1f#p \x1f#p \x1f#p \x1f#p \x1f#p \x1f#p \x1f#p \x1f#p \x1f#p \x1f#p \x1f#p \x1f#p \x1f#p \x1f#p \x1f#p \x1f#f \x1f#" fullword ascii
       $s4 = "servicetwo" fullword ascii
       $s5 = "UpdateCrc" fullword ascii
-      $s6 = "#[ #x #x #x #x #x #x #x #x #x #x #x #x #x #x #x #x #x #x #x #x #" fullword ascii
+      $s6 = "\x1f#[ \x1f#x \x1f#x \x1f#x \x1f#x \x1f#x \x1f#x \x1f#x \x1f#x \x1f#x \x1f#x \x1f#x \x1f#x \x1f#x \x1f#x \x1f#x \x1f#x \x1f#x \x1f#x \x1f#x \x1f#x \x1f#" fullword ascii
       $s7 = "nwsaPAgEnT" fullword ascii
       $s8 = "%-24s %-15s 0x%x(%d) " fullword ascii
    condition:
