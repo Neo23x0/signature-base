@@ -26,7 +26,6 @@ rule GhostDragon_Gh0stRAT {
 		$x7 = "%-23s %-16s  0x%x(%02d)" fullword ascii
 		$x8 = "RegSetValueEx(start)" fullword ascii
 		$x9 = "%s\\%s64.dl_" fullword ascii
-		$x10 = "$#REGMASTERKEY$WebCat was successfully started" fullword wide
 
 		$s1 = "viewsc.dll" fullword ascii
 		$s2 = "Proxy-Connection:   Keep-Alive" fullword ascii
