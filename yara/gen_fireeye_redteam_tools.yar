@@ -2060,6 +2060,8 @@ rule APT_Loader_MSIL_PGF_1
     condition:
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and all of them
 }
+
+/*
 rule APT_Backdoor_Win_DShell_2
 {
     meta:
@@ -2189,6 +2191,8 @@ rule APT_Backdoor_Win_DShell_2
     condition:
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and filesize > 500KB and filesize > 700KB and all of ($s*) and 1 of ($dlang*) and not $ign1 and not $ign2
 }
+*/ 
+
 rule CredTheft_Win_EXCAVATOR_2
 {
     meta:
