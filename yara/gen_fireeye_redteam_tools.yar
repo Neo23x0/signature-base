@@ -1426,6 +1426,9 @@ rule HackTool_MSIL_SharPersist_1
     condition:
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and $typelibguid1
 }
+
+/* bad performance */
+/*
 rule APT_Backdoor_Win_DShell_1
 {
     meta:
@@ -1614,6 +1617,7 @@ rule APT_Backdoor_Win_DShell_1
     condition:
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and filesize > 500KB and 105 of ($s*) and $s112 in (3000..4000) and 40 of ($e*)
 }
+*/
 rule APT_Backdoor_Win_GORAT_4
 {
     meta:
