@@ -2,7 +2,13 @@
 
 # Signature-Base
 
-signature-base is the signature database for my scanners LOKI and THOR Lite
+Signature-Base is the YARA signature and IOC database for our scanners [LOKI](https://github.com/Neo23x0/Loki) and [THOR Lite](https://www.nextron-systems.com/thor-lite/)
+
+## Focus of Signature-Base
+
+1. High quality YARA rules and IOCs with minimal false positives
+2. Clear structure
+3. Consistent rule format
 
 ## Directory Structure
 
@@ -23,6 +29,20 @@ Using the YARA rules in a tool other than [LOKI](https://github.com/Neo23x0/Loki
 ## High Quality YARA Rules Feed
 
 If you liked my rules, please check our [commercial rule set and rule feed service](https://www.nextron-systems.com/2018/12/21/yara-rule-sets-and-rule-feed/), which contains better and 20 times the number of rules.
+
+## FAQs
+
+### How can I report false positives?
+
+Use the issues section of this repository. 
+
+## How can I provide a YARA rule or IOCs? 
+
+I accept pull requests. See this [thread](https://twitter.com/cyb3rops/status/1320657673742897153) for some help on how to create such a request. 
+
+### What are the differences between THOR Lite and LOKI?
+
+See our comparison table [here](https://www.nextron-systems.com/compare-our-scanners/).
 
 ## License
 
