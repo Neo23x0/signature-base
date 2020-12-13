@@ -1,8 +1,9 @@
 import "pe"
 
-rule CSharpSetThreadContext {
+rule HKTL_NET_GUID_CSharpSetThreadContext {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/djhohnstein/CSharpSetThreadContext"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/djhohnstein/CSharpSetThreadContext"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -13,9 +14,10 @@ rule CSharpSetThreadContext {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule DLL_Injection {
+rule HKTL_NET_GUID_DLL_Injection {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/ihack4falafel/DLL-Injection"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/ihack4falafel/DLL-Injection"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -25,9 +27,10 @@ rule DLL_Injection {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule LimeUSB_Csharp {
+rule HKTL_NET_GUID_LimeUSB_Csharp {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/NYAN-x-CAT/LimeUSB-Csharp"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/NYAN-x-CAT/LimeUSB-Csharp"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -37,9 +40,10 @@ rule LimeUSB_Csharp {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Ladon {
+rule HKTL_NET_GUID_Ladon {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/k8gege/Ladon"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/k8gege/Ladon"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -49,9 +53,10 @@ rule Ladon {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule WhiteListEvasion {
+rule HKTL_NET_GUID_WhiteListEvasion {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/khr0x40sh/WhiteListEvasion"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/khr0x40sh/WhiteListEvasion"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -61,9 +66,10 @@ rule WhiteListEvasion {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Lime_Downloader {
+rule HKTL_NET_GUID_Lime_Downloader {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/NYAN-x-CAT/Lime-Downloader"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/NYAN-x-CAT/Lime-Downloader"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -73,9 +79,10 @@ rule Lime_Downloader {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule DarkEye {
+rule HKTL_NET_GUID_DarkEye {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/K1ngSoul/DarkEye"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/K1ngSoul/DarkEye"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -85,9 +92,10 @@ rule DarkEye {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule SharpKatz {
+rule HKTL_NET_GUID_SharpKatz {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/b4rtik/SharpKatz"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/b4rtik/SharpKatz"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -97,9 +105,10 @@ rule SharpKatz {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule ExternalC2 {
+rule HKTL_NET_GUID_ExternalC2 {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/ryhanson/ExternalC2"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/ryhanson/ExternalC2"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -110,9 +119,10 @@ rule ExternalC2 {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Povlsomware {
+rule HKTL_NET_GUID_Povlsomware {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/povlteksttv/Povlsomware"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/povlteksttv/Povlsomware"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -122,9 +132,10 @@ rule Povlsomware {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule RunShellcode {
+rule HKTL_NET_GUID_RunShellcode {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/zerosum0x0/RunShellcode"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/zerosum0x0/RunShellcode"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -134,9 +145,10 @@ rule RunShellcode {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule SharpLoginPrompt {
+rule HKTL_NET_GUID_SharpLoginPrompt {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/shantanu561993/SharpLoginPrompt"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/shantanu561993/SharpLoginPrompt"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -146,9 +158,10 @@ rule SharpLoginPrompt {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Adamantium_Thief {
+rule HKTL_NET_GUID_Adamantium_Thief {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/LimerBoy/Adamantium-Thief"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/LimerBoy/Adamantium-Thief"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -158,9 +171,10 @@ rule Adamantium_Thief {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule PSByPassCLM {
+rule HKTL_NET_GUID_PSByPassCLM {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/padovah4ck/PSByPassCLM"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/padovah4ck/PSByPassCLM"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -170,9 +184,10 @@ rule PSByPassCLM {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule physmem2profit {
+rule HKTL_NET_GUID_physmem2profit {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/FSecureLABS/physmem2profit"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/FSecureLABS/physmem2profit"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -182,9 +197,10 @@ rule physmem2profit {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule NoAmci {
+rule HKTL_NET_GUID_NoAmci {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/med0x2e/NoAmci"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/med0x2e/NoAmci"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -194,9 +210,10 @@ rule NoAmci {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule SharpBlock {
+rule HKTL_NET_GUID_SharpBlock {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/CCob/SharpBlock"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/CCob/SharpBlock"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -206,9 +223,10 @@ rule SharpBlock {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule nopowershell {
+rule HKTL_NET_GUID_nopowershell {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/bitsadmin/nopowershell"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/bitsadmin/nopowershell"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -218,9 +236,10 @@ rule nopowershell {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule LimeLogger {
+rule HKTL_NET_GUID_LimeLogger {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/NYAN-x-CAT/LimeLogger"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/NYAN-x-CAT/LimeLogger"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -230,9 +249,10 @@ rule LimeLogger {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule AggressorScripts {
+rule HKTL_NET_GUID_AggressorScripts {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/harleyQu1nn/AggressorScripts"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/harleyQu1nn/AggressorScripts"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -242,9 +262,10 @@ rule AggressorScripts {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Gopher {
+rule HKTL_NET_GUID_Gopher {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/EncodeGroup/Gopher"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/EncodeGroup/Gopher"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -254,9 +275,10 @@ rule Gopher {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule AVIator {
+rule HKTL_NET_GUID_AVIator {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/Ch0pin/AVIator"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/Ch0pin/AVIator"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -266,9 +288,10 @@ rule AVIator {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule njCrypter {
+rule HKTL_NET_GUID_njCrypter {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/0xPh0enix/njCrypter"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/0xPh0enix/njCrypter"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -279,9 +302,10 @@ rule njCrypter {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule SharpMiniDump {
+rule HKTL_NET_GUID_SharpMiniDump {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/b4rtik/SharpMiniDump"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/b4rtik/SharpMiniDump"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -291,9 +315,10 @@ rule SharpMiniDump {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule CinaRAT {
+rule HKTL_NET_GUID_CinaRAT {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/wearelegal/CinaRAT"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/wearelegal/CinaRAT"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -304,9 +329,10 @@ rule CinaRAT {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule ToxicEye {
+rule HKTL_NET_GUID_ToxicEye {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/LimerBoy/ToxicEye"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/LimerBoy/ToxicEye"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -316,9 +342,10 @@ rule ToxicEye {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Disable_Windows_Defender {
+rule HKTL_NET_GUID_Disable_Windows_Defender {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/NYAN-x-CAT/Disable-Windows-Defender"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/NYAN-x-CAT/Disable-Windows-Defender"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -328,9 +355,10 @@ rule Disable_Windows_Defender {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule DInvoke_PoC {
+rule HKTL_NET_GUID_DInvoke_PoC {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/dtrizna/DInvoke_PoC"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/dtrizna/DInvoke_PoC"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -340,9 +368,10 @@ rule DInvoke_PoC {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule ReverseShell {
+rule HKTL_NET_GUID_ReverseShell {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/chango77747/ReverseShell"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/chango77747/ReverseShell"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -353,9 +382,10 @@ rule ReverseShell {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule SharpC2 {
+rule HKTL_NET_GUID_SharpC2 {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/SharpC2/SharpC2"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/SharpC2/SharpC2"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -370,9 +400,10 @@ rule SharpC2 {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule SneakyExec {
+rule HKTL_NET_GUID_SneakyExec {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/HackingThings/SneakyExec"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/HackingThings/SneakyExec"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -382,9 +413,10 @@ rule SneakyExec {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule UrbanBishopLocal {
+rule HKTL_NET_GUID_UrbanBishopLocal {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/slyd0g/UrbanBishopLocal"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/slyd0g/UrbanBishopLocal"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -394,9 +426,10 @@ rule UrbanBishopLocal {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule SharpShell {
+rule HKTL_NET_GUID_SharpShell {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/cobbr/SharpShell"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/cobbr/SharpShell"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -407,9 +440,10 @@ rule SharpShell {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule EvilWMIProvider {
+rule HKTL_NET_GUID_EvilWMIProvider {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/sunnyc7/EvilWMIProvider"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/sunnyc7/EvilWMIProvider"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -419,9 +453,10 @@ rule EvilWMIProvider {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule GadgetToJScript {
+rule HKTL_NET_GUID_GadgetToJScript {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/med0x2e/GadgetToJScript"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/med0x2e/GadgetToJScript"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -432,9 +467,10 @@ rule GadgetToJScript {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule AzureCLI_Extractor {
+rule HKTL_NET_GUID_AzureCLI_Extractor {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/0x09AL/AzureCLI-Extractor"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/0x09AL/AzureCLI-Extractor"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -444,9 +480,10 @@ rule AzureCLI_Extractor {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule UAC_Escaper {
+rule HKTL_NET_GUID_UAC_Escaper {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/NYAN-x-CAT/UAC-Escaper"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/NYAN-x-CAT/UAC-Escaper"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -456,9 +493,10 @@ rule UAC_Escaper {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule HTTPSBeaconShell {
+rule HKTL_NET_GUID_HTTPSBeaconShell {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/limbenjamin/HTTPSBeaconShell"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/limbenjamin/HTTPSBeaconShell"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -468,9 +506,10 @@ rule HTTPSBeaconShell {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule AmsiScanBufferBypass {
+rule HKTL_NET_GUID_AmsiScanBufferBypass {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/rasta-mouse/AmsiScanBufferBypass"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/rasta-mouse/AmsiScanBufferBypass"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -480,9 +519,10 @@ rule AmsiScanBufferBypass {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule ShellcodeLoader {
+rule HKTL_NET_GUID_ShellcodeLoader {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/Hzllaga/ShellcodeLoader"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/Hzllaga/ShellcodeLoader"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -492,9 +532,10 @@ rule ShellcodeLoader {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule KeystrokeAPI {
+rule HKTL_NET_GUID_KeystrokeAPI {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/fabriciorissetto/KeystrokeAPI"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/fabriciorissetto/KeystrokeAPI"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -505,9 +546,10 @@ rule KeystrokeAPI {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule ShellCodeRunner {
+rule HKTL_NET_GUID_ShellCodeRunner {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/antman1p/ShellCodeRunner"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/antman1p/ShellCodeRunner"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -518,9 +560,10 @@ rule ShellCodeRunner {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule OffensiveCSharp {
+rule HKTL_NET_GUID_OffensiveCSharp {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/diljith369/OffensiveCSharp"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/diljith369/OffensiveCSharp"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -541,9 +584,10 @@ rule OffensiveCSharp {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule SHAPESHIFTER {
+rule HKTL_NET_GUID_SHAPESHIFTER {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/matterpreter/SHAPESHIFTER"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/matterpreter/SHAPESHIFTER"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -553,9 +597,10 @@ rule SHAPESHIFTER {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Evasor {
+rule HKTL_NET_GUID_Evasor {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/cyberark/Evasor"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/cyberark/Evasor"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -565,9 +610,10 @@ rule Evasor {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Stracciatella {
+rule HKTL_NET_GUID_Stracciatella {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/mgeeky/Stracciatella"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/mgeeky/Stracciatella"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -577,9 +623,10 @@ rule Stracciatella {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule logger {
+rule HKTL_NET_GUID_logger {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/xxczaki/logger"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/xxczaki/logger"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -589,9 +636,10 @@ rule logger {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Internal_Monologue {
+rule HKTL_NET_GUID_Internal_Monologue {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/eladshamir/Internal-Monologue"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/eladshamir/Internal-Monologue"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -602,9 +650,10 @@ rule Internal_Monologue {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule GRAT2 {
+rule HKTL_NET_GUID_GRAT2 {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/r3nhat/GRAT2"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/r3nhat/GRAT2"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -614,9 +663,10 @@ rule GRAT2 {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule PowerShdll {
+rule HKTL_NET_GUID_PowerShdll {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/p3nt4/PowerShdll"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/p3nt4/PowerShdll"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -626,9 +676,10 @@ rule PowerShdll {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule CsharpAmsiBypass {
+rule HKTL_NET_GUID_CsharpAmsiBypass {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/WayneJLee/CsharpAmsiBypass"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/WayneJLee/CsharpAmsiBypass"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -638,9 +689,10 @@ rule CsharpAmsiBypass {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule HastySeries {
+rule HKTL_NET_GUID_HastySeries {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/obscuritylabs/HastySeries"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/obscuritylabs/HastySeries"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -659,9 +711,10 @@ rule HastySeries {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule DreamProtectorFree {
+rule HKTL_NET_GUID_DreamProtectorFree {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/Paskowsky/DreamProtectorFree"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/Paskowsky/DreamProtectorFree"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -671,9 +724,10 @@ rule DreamProtectorFree {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule RedSharp {
+rule HKTL_NET_GUID_RedSharp {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/padovah4ck/RedSharp"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/padovah4ck/RedSharp"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -683,9 +737,10 @@ rule RedSharp {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule ESC {
+rule HKTL_NET_GUID_ESC {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/NetSPI/ESC"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/NetSPI/ESC"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -696,9 +751,10 @@ rule ESC {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Csharp_Loader {
+rule HKTL_NET_GUID_Csharp_Loader {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/NYAN-x-CAT/Csharp-Loader"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/NYAN-x-CAT/Csharp-Loader"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -708,9 +764,10 @@ rule Csharp_Loader {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule bantam {
+rule HKTL_NET_GUID_bantam {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/gellin/bantam"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/gellin/bantam"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -720,9 +777,10 @@ rule bantam {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule SharpTask {
+rule HKTL_NET_GUID_SharpTask {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/jnqpblc/SharpTask"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/jnqpblc/SharpTask"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -732,9 +790,10 @@ rule SharpTask {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule WindowsPlague {
+rule HKTL_NET_GUID_WindowsPlague {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/RITRedteam/WindowsPlague"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/RITRedteam/WindowsPlague"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -744,9 +803,10 @@ rule WindowsPlague {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Misc_CSharp {
+rule HKTL_NET_GUID_Misc_CSharp {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/jnqpblc/Misc-CSharp"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/jnqpblc/Misc-CSharp"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -757,9 +817,10 @@ rule Misc_CSharp {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule SharpSpray {
+rule HKTL_NET_GUID_SharpSpray {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/jnqpblc/SharpSpray"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/jnqpblc/SharpSpray"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -769,9 +830,10 @@ rule SharpSpray {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Obfuscator {
+rule HKTL_NET_GUID_Obfuscator {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/3xpl01tc0d3r/Obfuscator"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/3xpl01tc0d3r/Obfuscator"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -781,9 +843,10 @@ rule Obfuscator {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule SafetyKatz {
+rule HKTL_NET_GUID_SafetyKatz {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/GhostPack/SafetyKatz"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/GhostPack/SafetyKatz"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -793,9 +856,10 @@ rule SafetyKatz {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Dropless_Malware {
+rule HKTL_NET_GUID_Dropless_Malware {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/NYAN-x-CAT/Dropless-Malware"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/NYAN-x-CAT/Dropless-Malware"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -805,9 +869,10 @@ rule Dropless_Malware {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule UAC_SilentClean {
+rule HKTL_NET_GUID_UAC_SilentClean {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/EncodeGroup/UAC-SilentClean"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/EncodeGroup/UAC-SilentClean"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -817,9 +882,10 @@ rule UAC_SilentClean {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule DesktopGrabber {
+rule HKTL_NET_GUID_DesktopGrabber {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/NYAN-x-CAT/DesktopGrabber"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/NYAN-x-CAT/DesktopGrabber"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -829,9 +895,10 @@ rule DesktopGrabber {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule wsManager {
+rule HKTL_NET_GUID_wsManager {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/guillaC/wsManager"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/guillaC/wsManager"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -841,9 +908,10 @@ rule wsManager {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule UglyEXe {
+rule HKTL_NET_GUID_UglyEXe {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/fashionproof/UglyEXe"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/fashionproof/UglyEXe"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -853,9 +921,10 @@ rule UglyEXe {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule SharpDump {
+rule HKTL_NET_GUID_SharpDump {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/GhostPack/SharpDump"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/GhostPack/SharpDump"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -865,9 +934,10 @@ rule SharpDump {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule EducationalRAT {
+rule HKTL_NET_GUID_EducationalRAT {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/securesean/EducationalRAT"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/securesean/EducationalRAT"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -877,9 +947,10 @@ rule EducationalRAT {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Stealth_Kid_RAT {
+rule HKTL_NET_GUID_Stealth_Kid_RAT {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/ctsecurity/Stealth-Kid-RAT"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/ctsecurity/Stealth-Kid-RAT"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -890,9 +961,10 @@ rule Stealth_Kid_RAT {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule SharpCradle {
+rule HKTL_NET_GUID_SharpCradle {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/anthemtotheego/SharpCradle"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/anthemtotheego/SharpCradle"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -902,9 +974,10 @@ rule SharpCradle {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule BypassUAC {
+rule HKTL_NET_GUID_BypassUAC {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/cnsimo/BypassUAC"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/cnsimo/BypassUAC"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -915,9 +988,10 @@ rule BypassUAC {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule hanzoInjection {
+rule HKTL_NET_GUID_hanzoInjection {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/P0cL4bs/hanzoInjection"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/P0cL4bs/hanzoInjection"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -927,9 +1001,10 @@ rule hanzoInjection {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule clr_meterpreter {
+rule HKTL_NET_GUID_clr_meterpreter {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/OJ/clr-meterpreter"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/OJ/clr-meterpreter"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -944,9 +1019,10 @@ rule clr_meterpreter {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule BYTAGE {
+rule HKTL_NET_GUID_BYTAGE {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/KNIF/BYTAGE"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/KNIF/BYTAGE"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -956,9 +1032,10 @@ rule BYTAGE {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule MultiOS_ReverseShell {
+rule HKTL_NET_GUID_MultiOS_ReverseShell {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/belane/MultiOS_ReverseShell"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/belane/MultiOS_ReverseShell"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -968,9 +1045,10 @@ rule MultiOS_ReverseShell {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule HideFromAMSI {
+rule HKTL_NET_GUID_HideFromAMSI {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/0r13lc0ch4v1/HideFromAMSI"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/0r13lc0ch4v1/HideFromAMSI"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -980,9 +1058,10 @@ rule HideFromAMSI {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule DotNetAVBypass_Master {
+rule HKTL_NET_GUID_DotNetAVBypass_Master {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/lockfale/DotNetAVBypass-Master"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/lockfale/DotNetAVBypass-Master"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -992,9 +1071,10 @@ rule DotNetAVBypass_Master {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule SharpDPAPI {
+rule HKTL_NET_GUID_SharpDPAPI {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/GhostPack/SharpDPAPI"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/GhostPack/SharpDPAPI"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1005,9 +1085,10 @@ rule SharpDPAPI {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Telegra_Csharp_C2 {
+rule HKTL_NET_GUID_Telegra_Csharp_C2 {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/sf197/Telegra_Csharp_C2"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/sf197/Telegra_Csharp_C2"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1017,9 +1098,10 @@ rule Telegra_Csharp_C2 {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule SharpCompile {
+rule HKTL_NET_GUID_SharpCompile {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/SpiderLabs/SharpCompile"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/SpiderLabs/SharpCompile"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1029,9 +1111,10 @@ rule SharpCompile {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Carbuncle {
+rule HKTL_NET_GUID_Carbuncle {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/checkymander/Carbuncle"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/checkymander/Carbuncle"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1041,9 +1124,10 @@ rule Carbuncle {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule OSSFileTool {
+rule HKTL_NET_GUID_OSSFileTool {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/B1eed/OSSFileTool"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/B1eed/OSSFileTool"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1053,9 +1137,10 @@ rule OSSFileTool {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Rubeus {
+rule HKTL_NET_GUID_Rubeus {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/GhostPack/Rubeus"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/GhostPack/Rubeus"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1065,9 +1150,10 @@ rule Rubeus {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Simple_Loader {
+rule HKTL_NET_GUID_Simple_Loader {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/cribdragg3r/Simple-Loader"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/cribdragg3r/Simple-Loader"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1077,9 +1163,10 @@ rule Simple_Loader {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Minidump {
+rule HKTL_NET_GUID_Minidump {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/3xpl01tc0d3r/Minidump"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/3xpl01tc0d3r/Minidump"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1089,9 +1176,10 @@ rule Minidump {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule SharpBypassUAC {
+rule HKTL_NET_GUID_SharpBypassUAC {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/FatRodzianko/SharpBypassUAC"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/FatRodzianko/SharpBypassUAC"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1101,9 +1189,10 @@ rule SharpBypassUAC {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule SharpPack {
+rule HKTL_NET_GUID_SharpPack {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/Lexus89/SharpPack"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/Lexus89/SharpPack"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1122,9 +1211,10 @@ rule SharpPack {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Salsa_tools {
+rule HKTL_NET_GUID_Salsa_tools {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/Hackplayers/Salsa-tools"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/Hackplayers/Salsa-tools"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1135,9 +1225,10 @@ rule Salsa_tools {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule WindowsDefender_Payload_Downloader {
+rule HKTL_NET_GUID_WindowsDefender_Payload_Downloader {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/notkohlrexo/WindowsDefender-Payload-Downloader"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/notkohlrexo/WindowsDefender-Payload-Downloader"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1147,9 +1238,10 @@ rule WindowsDefender_Payload_Downloader {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Privilege_Escalation {
+rule HKTL_NET_GUID_Privilege_Escalation {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/Mrakovic-ORG/Privilege_Escalation"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/Mrakovic-ORG/Privilege_Escalation"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1159,9 +1251,10 @@ rule Privilege_Escalation {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Marauder {
+rule HKTL_NET_GUID_Marauder {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/maraudershell/Marauder"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/maraudershell/Marauder"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1171,9 +1264,10 @@ rule Marauder {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule AV_Evasion_Tool {
+rule HKTL_NET_GUID_AV_Evasion_Tool {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/1y0n/AV_Evasion_Tool"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/1y0n/AV_Evasion_Tool"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1184,9 +1278,10 @@ rule AV_Evasion_Tool {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Fenrir {
+rule HKTL_NET_GUID_Fenrir {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/nccgroup/Fenrir"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/nccgroup/Fenrir"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1196,9 +1291,10 @@ rule Fenrir {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule StormKitty {
+rule HKTL_NET_GUID_StormKitty {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/LimerBoy/StormKitty"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/LimerBoy/StormKitty"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1209,9 +1305,10 @@ rule StormKitty {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Crypter_Runtime_AV_s_bypass {
+rule HKTL_NET_GUID_Crypter_Runtime_AV_s_bypass {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/netreverse/Crypter-Runtime-AV-s-bypass"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/netreverse/Crypter-Runtime-AV-s-bypass"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1221,9 +1318,10 @@ rule Crypter_Runtime_AV_s_bypass {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule RunAsUser {
+rule HKTL_NET_GUID_RunAsUser {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/atthacks/RunAsUser"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/atthacks/RunAsUser"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1233,9 +1331,10 @@ rule RunAsUser {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule HWIDbypass {
+rule HKTL_NET_GUID_HWIDbypass {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/yunseok/HWIDbypass"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/yunseok/HWIDbypass"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1245,9 +1344,10 @@ rule HWIDbypass {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule XORedReflectiveDLL {
+rule HKTL_NET_GUID_XORedReflectiveDLL {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/r3nhat/XORedReflectiveDLL"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/r3nhat/XORedReflectiveDLL"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1258,9 +1358,10 @@ rule XORedReflectiveDLL {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Sharp_Suite {
+rule HKTL_NET_GUID_Sharp_Suite {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/FuzzySecurity/Sharp-Suite"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/FuzzySecurity/Sharp-Suite"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1285,9 +1386,10 @@ rule Sharp_Suite {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule rat_shell {
+rule HKTL_NET_GUID_rat_shell {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/stphivos/rat-shell"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/stphivos/rat-shell"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1298,9 +1400,10 @@ rule rat_shell {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule dotnet_gargoyle {
+rule HKTL_NET_GUID_dotnet_gargoyle {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/countercept/dotnet-gargoyle"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/countercept/dotnet-gargoyle"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1312,9 +1415,10 @@ rule dotnet_gargoyle {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule aresskit {
+rule HKTL_NET_GUID_aresskit {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/BlackVikingPro/aresskit"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/BlackVikingPro/aresskit"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1324,9 +1428,10 @@ rule aresskit {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule DLL_Injector {
+rule HKTL_NET_GUID_DLL_Injector {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/tmthrgd/DLL-Injector"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/tmthrgd/DLL-Injector"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1337,9 +1442,10 @@ rule DLL_Injector {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule TruffleSnout {
+rule HKTL_NET_GUID_TruffleSnout {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/dsnezhkov/TruffleSnout"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/dsnezhkov/TruffleSnout"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1349,9 +1455,10 @@ rule TruffleSnout {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Anti_Analysis {
+rule HKTL_NET_GUID_Anti_Analysis {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/NYAN-x-CAT/Anti-Analysis"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/NYAN-x-CAT/Anti-Analysis"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1361,9 +1468,10 @@ rule Anti_Analysis {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule BackNet {
+rule HKTL_NET_GUID_BackNet {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/valsov/BackNet"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/valsov/BackNet"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1376,9 +1484,10 @@ rule BackNet {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule AllTheThings {
+rule HKTL_NET_GUID_AllTheThings {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/johnjohnsp1/AllTheThings"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/johnjohnsp1/AllTheThings"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1388,9 +1497,10 @@ rule AllTheThings {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule AddReferenceDotRedTeam {
+rule HKTL_NET_GUID_AddReferenceDotRedTeam {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/ceramicskate0/AddReferenceDotRedTeam"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/ceramicskate0/AddReferenceDotRedTeam"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1400,9 +1510,10 @@ rule AddReferenceDotRedTeam {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Lime_Crypter {
+rule HKTL_NET_GUID_Lime_Crypter {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/NYAN-x-CAT/Lime-Crypter"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/NYAN-x-CAT/Lime-Crypter"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1412,9 +1523,10 @@ rule Lime_Crypter {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule BrowserGhost {
+rule HKTL_NET_GUID_BrowserGhost {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/QAX-A-Team/BrowserGhost"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/QAX-A-Team/BrowserGhost"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1424,9 +1536,10 @@ rule BrowserGhost {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule SharpShot {
+rule HKTL_NET_GUID_SharpShot {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/tothi/SharpShot"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/tothi/SharpShot"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1436,9 +1549,10 @@ rule SharpShot {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Offensive__NET {
+rule HKTL_NET_GUID_Offensive__NET {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/mrjamiebowman/Offensive-.NET"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/mrjamiebowman/Offensive-.NET"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1448,9 +1562,10 @@ rule Offensive__NET {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule RuralBishop {
+rule HKTL_NET_GUID_RuralBishop {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/rasta-mouse/RuralBishop"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/rasta-mouse/RuralBishop"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1460,9 +1575,10 @@ rule RuralBishop {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule DeviceGuardBypasses {
+rule HKTL_NET_GUID_DeviceGuardBypasses {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/tyranid/DeviceGuardBypasses"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/tyranid/DeviceGuardBypasses"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1477,9 +1593,10 @@ rule DeviceGuardBypasses {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule AMSI_Handler {
+rule HKTL_NET_GUID_AMSI_Handler {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/two06/AMSI_Handler"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/two06/AMSI_Handler"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1492,9 +1609,10 @@ rule AMSI_Handler {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule RAT_TelegramSpyBot {
+rule HKTL_NET_GUID_RAT_TelegramSpyBot {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/SebastianEPH/RAT.TelegramSpyBot"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/SebastianEPH/RAT.TelegramSpyBot"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1504,9 +1622,10 @@ rule RAT_TelegramSpyBot {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule TheHackToolBoxTeek {
+rule HKTL_NET_GUID_TheHackToolBoxTeek {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/teeknofil/TheHackToolBoxTeek"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/teeknofil/TheHackToolBoxTeek"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1522,9 +1641,10 @@ rule TheHackToolBoxTeek {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule USBTrojan {
+rule HKTL_NET_GUID_USBTrojan {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/mashed-potatoes/USBTrojan"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/mashed-potatoes/USBTrojan"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1534,9 +1654,10 @@ rule USBTrojan {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule IIS_backdoor {
+rule HKTL_NET_GUID_IIS_backdoor {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/WBGlIl/IIS_backdoor"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/WBGlIl/IIS_backdoor"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1547,9 +1668,10 @@ rule IIS_backdoor {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule ShellGen {
+rule HKTL_NET_GUID_ShellGen {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/jasondrawdy/ShellGen"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/jasondrawdy/ShellGen"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1559,9 +1681,10 @@ rule ShellGen {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Mass_RAT {
+rule HKTL_NET_GUID_Mass_RAT {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/NYAN-x-CAT/Mass-RAT"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/NYAN-x-CAT/Mass-RAT"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1573,9 +1696,10 @@ rule Mass_RAT {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Browser_ExternalC2 {
+rule HKTL_NET_GUID_Browser_ExternalC2 {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/mdsecactivebreach/Browser-ExternalC2"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/mdsecactivebreach/Browser-ExternalC2"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1585,9 +1709,10 @@ rule Browser_ExternalC2 {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule OffensivePowerShellTasking {
+rule HKTL_NET_GUID_OffensivePowerShellTasking {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/leechristensen/OffensivePowerShellTasking"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/leechristensen/OffensivePowerShellTasking"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1598,9 +1723,10 @@ rule OffensivePowerShellTasking {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule DoHC2 {
+rule HKTL_NET_GUID_DoHC2 {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/SpiderLabs/DoHC2"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/SpiderLabs/DoHC2"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1610,9 +1736,10 @@ rule DoHC2 {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule SyscallPOC {
+rule HKTL_NET_GUID_SyscallPOC {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/SolomonSklash/SyscallPOC"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/SolomonSklash/SyscallPOC"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1623,9 +1750,10 @@ rule SyscallPOC {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Pen_Test_Tools {
+rule HKTL_NET_GUID_Pen_Test_Tools {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/awillard1/Pen-Test-Tools"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/awillard1/Pen-Test-Tools"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1646,9 +1774,10 @@ rule Pen_Test_Tools {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule The_Collection {
+rule HKTL_NET_GUID_The_Collection {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/Tlgyt/The-Collection"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/Tlgyt/The-Collection"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1662,9 +1791,10 @@ rule The_Collection {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Change_Lockscreen {
+rule HKTL_NET_GUID_Change_Lockscreen {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/nccgroup/Change-Lockscreen"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/nccgroup/Change-Lockscreen"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1674,9 +1804,10 @@ rule Change_Lockscreen {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule LOLBITS {
+rule HKTL_NET_GUID_LOLBITS {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/Kudaes/LOLBITS"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/Kudaes/LOLBITS"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1686,9 +1817,10 @@ rule LOLBITS {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule Keylogger {
+rule HKTL_NET_GUID_Keylogger {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/BlackVikingPro/Keylogger"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/BlackVikingPro/Keylogger"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1698,9 +1830,10 @@ rule Keylogger {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule CVE_2020_1337 {
+rule HKTL_NET_GUID_CVE_2020_1337 {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/neofito/CVE-2020-1337"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/neofito/CVE-2020-1337"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1710,9 +1843,10 @@ rule CVE_2020_1337 {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule SharpLogger {
+rule HKTL_NET_GUID_SharpLogger {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/djhohnstein/SharpLogger"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/djhohnstein/SharpLogger"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1722,9 +1856,10 @@ rule SharpLogger {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule AsyncRAT_C_Sharp {
+rule HKTL_NET_GUID_AsyncRAT_C_Sharp {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/NYAN-x-CAT/AsyncRAT-C-Sharp"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/NYAN-x-CAT/AsyncRAT-C-Sharp"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1744,9 +1879,10 @@ rule AsyncRAT_C_Sharp {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule DarkFender {
+rule HKTL_NET_GUID_DarkFender {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/0xyg3n/DarkFender"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/0xyg3n/DarkFender"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1756,9 +1892,10 @@ rule DarkFender {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule IronKit {
+rule HKTL_NET_GUID_IronKit {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/nshalabi/IronKit"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/nshalabi/IronKit"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1769,9 +1906,10 @@ rule IronKit {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule MinerDropper {
+rule HKTL_NET_GUID_MinerDropper {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/DylanAlloy/MinerDropper"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/DylanAlloy/MinerDropper"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1782,9 +1920,10 @@ rule MinerDropper {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule SharpDomainSpray {
+rule HKTL_NET_GUID_SharpDomainSpray {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/HunnicCyber/SharpDomainSpray"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/HunnicCyber/SharpDomainSpray"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
@@ -1794,9 +1933,10 @@ rule SharpDomainSpray {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule iSpyKeylogger {
+rule HKTL_NET_GUID_iSpyKeylogger {
     meta:
-        description = "Detects c# red/black-team tools via typelibguid: https://github.com/mwsrc/iSpyKeylogger"
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/mwsrc/iSpyKeylogger"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2020-12-13"
