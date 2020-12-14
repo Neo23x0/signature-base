@@ -9523,3 +9523,11 @@ e6466b2761600ac993bb0d46e3707fb059edd9212d671c5736cf25070a076508;GoldenSpy Repor
 953cec896a79dc12eecc8e1e48f3b0e43bc9d95bb19dbd7318bae45027ff1334;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
 ac9253dec9288e1277c4b6e842c75de99d156db5ac4516c0780bc2e87b2410c9;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
 9e7957475fb3d849fb1f5bcce5b110f87a47bac621d4a31989c6f5d154b6e0ee;GoldenSpy Report - BKA August 2020 - https://www.bka.de/SharedDocs/Kurzmeldungen/DE/Warnhinweise/200821_Cyberspionage.html
+
+d0d626deb3f9484e649294a8dfa814c5568f846d5aa02d4cdad5d041a29d5600;FireEye SUNBURST Report - CORE-2019.4.5220.20574-SolarWinds-Core-v2019.4.5220-Hotfix5.msp
+019085a76ba7126fff22770d71bd901c325fc68ac55aa743327984e89f4b0134;FireEye SUNBURST Report - SolarWinds.Orion.Core.BusinessLayer.dll SUNBURST backdoor
+ce77d116a074dab7a22a0fd4f2c1ab475f16eec42e1ded3c0b0aa8211fe858d6;FireEye SUNBURST Report - SolarWinds.Orion.Core.BusinessLayer.dll SUNBURST backdoor
+32519b85c0b422e4656de6e6c41878e95fd95026267daab4215ee59c107d6c77;FireEye SUNBURST Report - SolarWinds.Orion.Core.BusinessLayer.dll SUNBURST backdoor
+292327e5c94afa352cc5a02ca273df543f2020d0e76368ff96c84f4e90778712;FireEye SUNBURST Report - OrionImprovementBusinessLayer.2.cs Decompiled and corrected source code for SUNBURST 
+c15abaf51e78ca56c0376522d699c978217bf041a3bd3c71d09193efa5717c71;FireEye SUNBURST Report - app_web_logoimagehandler.ashx.b6031896.dll Webshell
+

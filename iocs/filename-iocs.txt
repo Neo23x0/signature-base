@@ -3281,4 +3281,9 @@ ublic\\.Monitor\\ews\.conf;90
 :\\ProgramData\\Microsoft\\~svc_\.TMp;100
 \\svchost\.dll;70
 
+# FireEye Solarwinds SUNBURST Report https://www.fireeye.com/blog/threat-research/2020/12/evasive-attacker-leverages-solarwinds-supply-chain-compromises-with-sunburst-backdoor.html and https://cyber.dhs.gov/ed/21-01/
+\\gracious_truth\.jpg;90
+\\SolarWinds-Core-v2019.4.5220-Hotfix5\.msp;90
+\\Windows\\SysWOW64\\netsetupsvc\.dll;90
+
 # End
