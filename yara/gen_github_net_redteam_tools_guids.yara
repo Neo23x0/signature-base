@@ -1951,3 +1951,16 @@ rule HKTL_NET_GUID_iSpyKeylogger {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
+rule HKTL_NET_GUID_SolarFlare {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/mubix/solarflare"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-15"
+    strings:
+        $typelibguid0 = "ca60e49e-eee9-409b-8d1a-d19f1d27b7e4" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
