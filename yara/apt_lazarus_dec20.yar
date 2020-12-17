@@ -142,7 +142,7 @@ rule HvS_APT37_webshell_controllers_asp {
       hash = "829462fc6d84aae04a962dfc919d0a392265fbf255eab399980d2b021e385517"
    strings:
       $s0 = "<%@Language=VBScript.Encode" ascii
-// Case permutations of the word SeRvEr encoded with the Microsoft Script Encoder followed by ".scriptrimeOut"
+// Case permutations of the word SeRvEr encoded with the Microsoft Script Encoder followed by .scriptrimeOut
       $x1 = { 64 7F 44 2D 7F 44 63 2F 6D 4D 6B 61 4F 59 62 3A 6E 72 21 59 }
       $x2 = { 64 7F 49 2D 41 44 63 2F 6D 4D 6B 61 4F 59 62 3A 6E 72 21 59 }
       $x3 = { 64 7F 49 2D 41 49 63 2F 6D 4D 6B 61 4F 59 62 3A 6E 72 21 59 }
