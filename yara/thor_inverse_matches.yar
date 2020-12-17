@@ -445,3 +445,21 @@ rule APT_Cloaked_CERTUTIL {
       and not filename contains "CertUtil"
 	  and not filename contains "Certutil"
 }
+
+rule APT_SUSP_Solarwinds_Orion_Config_Anomaly_Dec20 {
+   meta:
+      description = "Detects a suspicious renamed Afind.exe as used by different attackers"
+      author = "Florian Roth"
+      reference = "https://twitter.com/iisresetme/status/1339546337390587905?s=12"
+      date = "2020-12-15"
+      score = 70
+      nodeepdive = 1
+   strings:
+      $s1 = "ReportWatcher" fullword wide ascii 
+      
+      $fp1 = "ReportStatus" fullword wide ascii
+   condition:
+      filename == "SolarWindows.Orion.Core.BusinessLayer.dll.config"
+      and $s1 
+      and not $fp1
+}
