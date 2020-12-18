@@ -3288,6 +3288,7 @@ ublic\\.Monitor\\ews\.conf;90
 
 # Symantec SUNBURST Report https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/sunburst-supply-chain-attack-solarwinds
 \\upbeat_anxiety\.jpg;80
+\\csidl_windows\\desktoptileresources\\resources\.dll;70
 # Symantec SUNBURST Report - Panther folder should only contain log files and files of type *.xml, *.sdb, *.tmp, *.etl, *.ini, *.cab or *.que https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/sunburst-supply-chain-attack-solarwinds
 :\\Windows\\Panther\\[^\\]{1,20}\.(exe|dll|ps1|vbs|js|bat)$;70
 
