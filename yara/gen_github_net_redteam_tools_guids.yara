@@ -1,5 +1,3 @@
-import "pe"
-
 rule HKTL_NET_GUID_CSharpSetThreadContext {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
@@ -1987,6 +1985,19 @@ rule HKTL_NET_GUID_SharpShares {
         date = "2020-12-13"
     strings:
         $typelibguid0 = "fe9fdde5-3f38-4f14-8c64-c3328c215cf2" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpEDRChecker {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/PwnDexter/SharpEDRChecker"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-18"
+    strings:
+        $typelibguid0 = "bdfee233-3fed-42e5-aa64-492eb2ac7047" ascii nocase wide
     condition:
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
