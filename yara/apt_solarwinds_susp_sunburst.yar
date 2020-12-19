@@ -1,5 +1,6 @@
 import "pe"
 
+/*
 rule SUSP_Solarwinds_SUNBURST_Revoked_Cert {
    meta:
       description = "Detects executables signed with a compromised certificate after 2019 (it doesn't mean that the "
@@ -11,7 +12,8 @@ rule SUSP_Solarwinds_SUNBURST_Revoked_Cert {
       for any i in (0 .. pe.number_of_signatures) : (
          pe.signatures[i].issuer contains "Symantec Class 3 SHA256 Code Signing CA" and
          pe.signatures[i].serial == "0f:e9:73:75:20:22:a6:06:ad:f2:a3:6e:34:5d:c0:ed" and
-         /* valid after Tuesday, January 1, 2019 0:00:00 */
+         // valid after Tuesday, January 1, 2019 0:00:00
          pe.signatures[i].not_before > 1546300800
       )
 }
+*/
