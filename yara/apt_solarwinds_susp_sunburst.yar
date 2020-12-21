@@ -1,6 +1,6 @@
+/*
 import "pe"
 
-/*
 rule SUSP_Solarwinds_SUNBURST_Revoked_Cert {
    meta:
       description = "Detects executables signed with a compromised certificate after 2019 (it doesn't mean that the "
@@ -17,3 +17,15 @@ rule SUSP_Solarwinds_SUNBURST_Revoked_Cert {
       )
 }
 */
+
+rule LOG_APT_WEBSHELL_Solarwinds_SUNBURST_Report_Webshell_Dec20_2 {
+   meta:
+      description = "Detects webshell access mentioned in FireEye's SUNBURST report"
+      author = "Florian Roth"
+      reference = "https://www.guidepointsecurity.com/supernova-solarwinds-net-webshell-analysis/"
+      date = "2020-12-21"
+   strings:
+      $xr1 = /logoimagehandler.ashx[^\n\s]{1,400}clazz=/ ascii wide
+   condition:
+      $xr1
+}
