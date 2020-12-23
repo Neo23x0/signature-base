@@ -3292,7 +3292,6 @@ ublic\\.Monitor\\ews\.conf;90
 # Symantec SUNBURST Report - Panther folder should only contain log files and files of type *.xml, *.sdb, *.tmp, *.etl, *.ini, *.cab or *.que https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/sunburst-supply-chain-attack-solarwinds
 :\\Windows\\Panther\\[^\\]{1,20}\.(exe|dll|ps1|vbs|js|bat)$;70
 
-
 # Lazarus Campaigns https://www.hvs-consulting.de/lazarus-report/
 :\\ProgramData\\IBM\\IBM\.dat;90
 :\\ProgramData\\Kagent\.exe;90
@@ -3374,7 +3373,6 @@ ublic\\.Monitor\\ews\.conf;90
 :\\ProgramData\\Microsoft\\DeviceSync\\DF333\.TMP;90
 :\\ProgramData\\Microsoft\\DeviceSync\\gather\.bat;90
 :\\ProgramData\\USOShared\\pkg\.db;90
-:\\Windows\\System32\\irmon\.dll;90
 :\\Windows\\System32\\srservice\.dll;90
 :\\Windows\\System32\\srsvc\.dll;90
 :\\ProgramData\\Cisco\\Client\.exe;90
@@ -3393,7 +3391,7 @@ ublic\\.Monitor\\ews\.conf;90
 \\~DF[A-Fa-f0-9]{3,4}\.(tmp|TMP|dat|DAT|txt|TXT|bat|BAT|bin|BIN)$;60
 \\CMP[A-Fa-f0-9]{3,4}\.(tmp|TMP|dat|DAT|bat|BAT|bin|BIN)$;60
 \\FOUND[0-9]{3,3}\.CHK$;60
-\\IBM[0-9]{3,3}([A-Za-z]{1,3}[0-9]?)?\.(bin|BIN|dat|DAT|bat|BAT)$;60
+\\IBM[0-9]{3,3}([A-Za-z]{1,3}[0-9]?)?\.(bin|BIN|dat|DAT|bat|BAT)$;60;perl
 \\IBM[A-Z][0-9]{3,3}\.(bin|BIN|dat|DAT|bat|BAT)$;60
 
 # End
