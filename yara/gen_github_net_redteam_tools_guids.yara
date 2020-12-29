@@ -1,3 +1,6 @@
+// These rules have room for false positives if e.g. a dual use tool is contained within a hack tool repo.
+
+
 rule HKTL_NET_GUID_CSharpSetThreadContext {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
@@ -2197,6 +2200,1219 @@ rule HKTL_NET_GUID_Random_CSharpTools {
         $typelibguid4 = "1df925fc-9a89-4170-b763-1c735430b7d0" ascii nocase wide
         $typelibguid5 = "817cc61b-8471-4c1e-b5d6-c754fc550a03" ascii nocase wide
         $typelibguid6 = "60116613-c74e-41b9-b80e-35e02f25891e" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_CVE_2020_0668 {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/RedCursorSecurityConsulting/CVE-2020-0668"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "1b4c5ec1-2845-40fd-a173-62c450f12ea5" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_WindowsRpcClients {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/tyranid/WindowsRpcClients"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "843d8862-42eb-49ee-94e6-bca798dd33ea" ascii nocase wide
+        $typelibguid1 = "632e4c3b-3013-46fc-bc6e-22828bf629e3" ascii nocase wide
+        $typelibguid2 = "a2091d2f-6f7e-4118-a203-4cea4bea6bfa" ascii nocase wide
+        $typelibguid3 = "950ef8ce-ec92-4e02-b122-0d41d83065b8" ascii nocase wide
+        $typelibguid4 = "d51301bc-31aa-4475-8944-882ecf80e10d" ascii nocase wide
+        $typelibguid5 = "823ff111-4de2-4637-af01-4bdc3ca4cf15" ascii nocase wide
+        $typelibguid6 = "5d28f15e-3bb8-4088-abe0-b517b31d4595" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpFruit {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/rvrsh3ll/SharpFruit"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "3da2f6de-75be-4c9d-8070-08da45e79761" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpWitness {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/rasta-mouse/SharpWitness"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "b9f6ec34-4ccc-4247-bcef-c1daab9b4469" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_RexCrypter {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/syrex1013/RexCrypter"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "10cd7c1c-e56d-4b1b-80dc-e4c496c5fec5" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpView {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/tevora-threat/SharpView"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "22a156ea-2623-45c7-8e50-e864d9fc44d3" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharPersist {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/fireeye/SharPersist"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "9d1b853e-58f1-4ba5-aefc-5c221ca30e48" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_CVE_2019_1253 {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/padovah4ck/CVE-2019-1253"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "584964c1-f983-498d-8370-23e27fdd0399" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_Http_Asynchronous_Reverse_Shell {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/onSec-fr/Http-Asynchronous-Reverse-Shell"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "aca853dc-9e74-4175-8170-e85372d5f2a9" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_scout {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/jaredhaight/scout"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "d9c76e82-b848-47d4-8f22-99bf22a8ee11" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_Grouper2 {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/l0ss/Grouper2/"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "5decaea3-2610-4065-99dc-65b9b4ba6ccd" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_CasperStager {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/ustayready/CasperStager"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "c653a9f2-0939-43c8-9b93-fed5e2e4c7e6" ascii nocase wide
+        $typelibguid1 = "48dfc55e-6ae5-4a36-abef-14bc09d7510b" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_TellMeYourSecrets {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/0xbadjuju/TellMeYourSecrets"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "9b448062-7219-4d82-9a0a-e784c4b3aa27" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpExcel4_DCOM {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/rvrsh3ll/SharpExcel4-DCOM"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "68b83ce5-bbd9-4ee3-b1cc-5e9223fab52b" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpShooter {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/mdsecactivebreach/SharpShooter"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "56598f1c-6d88-4994-a392-af337abe5777" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_NoMSBuild {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/rvrsh3ll/NoMSBuild"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "034a7b9f-18df-45da-b870-0e1cef500215" ascii nocase wide
+        $typelibguid1 = "59b449d7-c1e8-4f47-80b8-7375178961db" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_TeleShadow2 {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/ParsingTeam/TeleShadow2"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "42c5c356-39cf-4c07-96df-ebb0ccf78ca4" ascii nocase wide
+        $typelibguid1 = "0242b5b1-4d26-413e-8c8c-13b4ed30d510" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_BadPotato {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/BeichenDream/BadPotato"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "0527a14f-1591-4d94-943e-d6d784a50549" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_LethalHTA {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/codewhitesec/LethalHTA"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "784cde17-ff0f-4e43-911a-19119e89c43f" ascii nocase wide
+        $typelibguid1 = "7e2de2c0-61dc-43ab-a0ec-c27ee2172ea6" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpStat {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/Raikia/SharpStat"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "ffc5c721-49c8-448d-8ff4-2e3a7b7cc383" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SneakyService {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/malcomvetter/SneakyService"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "897819d5-58e0-46a0-8e1a-91ea6a269d84" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpExec {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/anthemtotheego/SharpExec"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "7fbad126-e21c-4c4e-a9f0-613fcf585a71" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpCOM {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/rvrsh3ll/SharpCOM"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "51960f7d-76fe-499f-afbd-acabd7ba50d1" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_Inception {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/two06/Inception"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "03d96b8c-efd1-44a9-8db2-0b74db5d247a" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_sharpwmi {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/QAX-A-Team/sharpwmi"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "bb357d38-6dc1-4f20-a54c-d664bd20677e" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_CVE_2019_1064 {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/RythmStick/CVE-2019-1064"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "ff97e98a-635e-4ea9-b2d0-1a13f6bdbc38" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_Tokenvator {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/0xbadjuju/Tokenvator"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "4b2b3bd4-d28f-44cc-96b3-4a2f64213109" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_WheresMyImplant {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/0xbadjuju/WheresMyImplant"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "cca59e4e-ce4d-40fc-965f-34560330c7e6" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_Naga {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/byt3bl33d3r/Naga"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "99428732-4979-47b6-a323-0bb7d6d07c95" ascii nocase wide
+        $typelibguid1 = "a2c9488f-6067-4b17-8c6f-2d464e65c535" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpBox {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/P1CKLES/SharpBox"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "616c1afb-2944-42ed-9951-bf435cadb600" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_rundotnetdll32 {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/0xbadjuju/rundotnetdll32"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "a766db28-94b6-4ed1-aef9-5200bbdd8ca7" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_AntiDebug {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/malcomvetter/AntiDebug"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "997265c1-1342-4d44-aded-67964a32f859" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_DInvisibleRegistry {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/NVISO-BE/DInvisibleRegistry"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "31d576fb-9fb9-455e-ab02-c78981634c65" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_TikiTorch {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/rasta-mouse/TikiTorch"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "806c6c72-4adc-43d9-b028-6872fa48d334" ascii nocase wide
+        $typelibguid1 = "2ef9d8f7-6b77-4b75-822b-6a53a922c30f" ascii nocase wide
+        $typelibguid2 = "8f5f3a95-f05c-4dce-8bc3-d0a0d4153db6" ascii nocase wide
+        $typelibguid3 = "1f707405-9708-4a34-a809-2c62b84d4f0a" ascii nocase wide
+        $typelibguid4 = "97421325-b6d8-49e5-adf0-e2126abc17ee" ascii nocase wide
+        $typelibguid5 = "06c247da-e2e1-47f3-bc3c-da0838a6df1f" ascii nocase wide
+        $typelibguid6 = "fc700ac6-5182-421f-8853-0ad18cdbeb39" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_HiveJack {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/Viralmaniar/HiveJack"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "e12e62fe-bea3-4989-bf04-6f76028623e3" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_DecryptAutoLogon {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/securesean/DecryptAutoLogon"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "015a37fc-53d0-499b-bffe-ab88c5086040" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_UnstoppableService {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/malcomvetter/UnstoppableService"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "0c117ee5-2a21-dead-beef-8cc7f0caaa86" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpWMI {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/GhostPack/SharpWMI"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "6dd22880-dac5-4b4d-9c91-8c35cc7b8180" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_EWSToolkit {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/rasta-mouse/EWSToolkit"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "ca536d67-53c9-43b5-8bc8-9a05fdc567ed" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SweetPotato {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/CCob/SweetPotato"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "6aeb5004-6093-4c23-aeae-911d64cacc58" ascii nocase wide
+        $typelibguid1 = "1bf9c10f-6f89-4520-9d2e-aaf17d17ba5e" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_memscan {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/nccgroup/memscan"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "79462f87-8418-4834-9356-8c11e44ce189" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpStay {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/0xthirteen/SharpStay"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "2963c954-7b1e-47f5-b4fa-2fc1f0d56aea" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpLocker {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/Pickfordmatt/SharpLocker"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "a6f8500f-68bc-4efc-962a-6c6e68d893af" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SauronEye {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/vivami/SauronEye"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "0f43043d-8957-4ade-a0f4-25c1122e8118" ascii nocase wide
+        $typelibguid1 = "086bf0ca-f1e4-4e8f-9040-a8c37a49fa26" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_sitrep {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/mdsecactivebreach/sitrep"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "12963497-988f-46c0-9212-28b4b2b1831b" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpClipboard {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/slyd0g/SharpClipboard"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "97484211-4726-4129-86aa-ae01d17690be" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpCookieMonster {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/m0rv4i/SharpCookieMonster"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "566c5556-1204-4db9-9dc8-a24091baaa8e" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_p0wnedShell {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/Cn33liz/p0wnedShell"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "2e9b1462-f47c-48ca-9d85-004493892381" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpMove {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/0xthirteen/SharpMove"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "8bf82bbe-909c-4777-a2fc-ea7c070ff43e" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_C_Sharp_R_A_T_Client {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/AdvancedHacker101/C-Sharp-R.A.T-Client"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "6d9e8852-e86c-4e36-9cb4-b3c3853ed6b8" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpPrinter {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/rvrsh3ll/SharpPrinter"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "41b2d1e5-4c5d-444c-aa47-629955401ed9" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_EvilFOCA {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/ElevenPaths/EvilFOCA"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "f26bdb4a-5846-4bec-8f52-3c39d32df495" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_PoshC2_Misc {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/nettitude/PoshC2_Misc"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "85773eb7-b159-45fe-96cd-11bad51da6de" ascii nocase wide
+        $typelibguid1 = "9d32ad59-4093-420d-b45c-5fff391e990d" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_Sharpire {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/0xbadjuju/Sharpire"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "39b75120-07fe-4833-a02e-579ff8b68331" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_Sharp_SMBExec {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/checkymander/Sharp-SMBExec"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "344ee55a-4e32-46f2-a003-69ad52b55945" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpChromium {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/djhohnstein/SharpChromium"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "2133c634-4139-466e-8983-9a23ec99e01b" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_MiscTools {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/rasta-mouse/MiscTools"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "384e9647-28a9-4835-8fa7-2472b1acedc0" ascii nocase wide
+        $typelibguid1 = "d7ec0ef5-157c-4533-bbcd-0fe070fbf8d9" ascii nocase wide
+        $typelibguid2 = "10085d98-48b9-42a8-b15b-cb27a243761b" ascii nocase wide
+        $typelibguid3 = "6aacd159-f4e7-4632-bad1-2ae8526a9633" ascii nocase wide
+        $typelibguid4 = "49a6719e-11a8-46e6-ad7a-1db1be9fea37" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_MemoryMapper {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/jasondrawdy/MemoryMapper"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "b9fbf3ac-05d8-4cd5-9694-b224d4e6c0ea" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_VanillaRAT {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/DannyTheSloth/VanillaRAT"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "d0f2ee67-0a50-423d-bfe6-845da892a2db" ascii nocase wide
+        $typelibguid1 = "a593fcd2-c8ab-45f6-9aeb-8ab5e20ab402" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_UnmanagedPowerShell {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/leechristensen/UnmanagedPowerShell"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "dfc4eebb-7384-4db5-9bad-257203029bd9" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_Quasar {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/quasar/Quasar"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "cfda6d2e-8ab3-4349-b89a-33e1f0dab32b" ascii nocase wide
+        $typelibguid1 = "c7c363ba-e5b6-4e18-9224-39bc8da73172" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpAdidnsdump {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/b4rtik/SharpAdidnsdump"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "cdb02bc2-5f62-4c8a-af69-acc3ab82e741" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_DotNetToJScript {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/tyranid/DotNetToJScript"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "7e3f231c-0d0b-4025-812c-0ef099404861" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_Inferno {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/LimerBoy/Inferno"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "26d498f7-37ae-476c-97b0-3761e3a919f0" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpSearch {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/djhohnstein/SharpSearch"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "98fee742-8410-4f20-8b2d-d7d789ab003d" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpSecDump {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/G0ldenGunSec/SharpSecDump"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "e2fdd6cc-9886-456c-9021-ee2c47cf67b7" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_Net_GPPPassword {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/outflanknl/Net-GPPPassword"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "00fcf72c-d148-4dd0-9ca4-0181c4bd55c3" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_FileSearcher {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/NVISO-BE/FileSearcher"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "2c879479-5027-4ce9-aaac-084db0e6d630" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_ADFSDump {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/fireeye/ADFSDump"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "9ee27d63-6ac9-4037-860b-44e91bae7f0d" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpRDP {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/0xthirteen/SharpRDP"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "f1df1d0f-ff86-4106-97a8-f95aaf525c54" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpCall {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/jhalon/SharpCall"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "c1b0a923-0f17-4bc8-ba0f-c87aff43e799" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_ysoserial_net {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/pwntester/ysoserial.net"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "e1e8c029-f7cd-4bd1-952e-e819b41520f0" ascii nocase wide
+        $typelibguid1 = "6b40fde7-14ea-4f57-8b7b-cc2eb4a25e6c" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_ManagedInjection {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/malcomvetter/ManagedInjection"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "e5182bff-9562-40ff-b864-5a6b30c3b13b" ascii nocase wide
+        $typelibguid1 = "fdedde0d-e095-41c9-93fb-c2219ada55b1" ascii nocase wide
+        $typelibguid2 = "0dd00561-affc-4066-8c48-ce950788c3c8" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_InveighZero {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/Kevin-Robertson/InveighZero"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "113ae281-d1e5-42e7-9cc2-12d30757baf1" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpSocks {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/nettitude/SharpSocks"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "2f43992e-5703-4420-ad0b-17cb7d89c956" ascii nocase wide
+        $typelibguid1 = "86d10a34-c374-4de4-8e12-490e5e65ddff" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_Sharp_WMIExec {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/checkymander/Sharp-WMIExec"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "0a63b0a1-7d1a-4b84-81c3-bbbfe9913029" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_KeeThief {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/GhostPack/KeeThief"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "02020c52-c0da-47c0-9f3f-a6fe76cee400" ascii nocase wide
+        $typelibguid1 = "39aa6f93-a1c9-497f-bad2-cc42a61d5710" ascii nocase wide
+        $typelibguid2 = "395f6eec-a1e0-4438-aa82-b75099348134" ascii nocase wide
+        $typelibguid3 = "3fca8012-3bad-41e4-91f4-534aa9a44f96" ascii nocase wide
+        $typelibguid4 = "ea92f1e6-3f34-48f8-8b0a-f2bbc19220ef" ascii nocase wide
+        $typelibguid5 = "c23b51c4-2475-4fc6-9b3a-27d0a2b99b0f" ascii nocase wide
+        $typelibguid6 = "94432a8e-3e06-4776-b9b2-3684a62bb96a" ascii nocase wide
+        $typelibguid7 = "80ba63a4-7d41-40e9-a722-6dd58b28bf7e" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_fakelogonscreen {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/bitsadmin/fakelogonscreen"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "d35a55bd-3189-498b-b72f-dc798172e505" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_PoshSecFramework {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/PoshSec/PoshSecFramework"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "b1ac6aa0-2f1a-4696-bf4b-0e41cf2f4b6b" ascii nocase wide
+        $typelibguid1 = "78bfcfc2-ef1c-4514-bce6-934b251666d2" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpAttack {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/jaredhaight/SharpAttack"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "5f0ceca3-5997-406c-adf5-6c7fbb6cba17" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_Altman {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/keepwn/Altman"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "64cdcd2b-7356-4079-af78-e22210e66154" ascii nocase wide
+        $typelibguid1 = "f1dee29d-ca98-46ea-9d13-93ae1fda96e1" ascii nocase wide
+        $typelibguid2 = "33568320-56e8-4abb-83f8-548e8d6adac2" ascii nocase wide
+        $typelibguid3 = "470ec930-70a3-4d71-b4ff-860fcb900e85" ascii nocase wide
+        $typelibguid4 = "9514574d-6819-44f2-affa-6158ac1143b3" ascii nocase wide
+        $typelibguid5 = "0f3a9c4f-0b11-4373-a0a6-3a6de814e891" ascii nocase wide
+        $typelibguid6 = "9624b72e-9702-4d78-995b-164254328151" ascii nocase wide
+        $typelibguid7 = "faae59a8-55fc-48b1-a9b5-b1759c9c1010" ascii nocase wide
+        $typelibguid8 = "37af4988-f6f2-4f0c-aa2b-5b24f7ed3bf3" ascii nocase wide
+        $typelibguid9 = "c82aa2fe-3332-441f-965e-6b653e088abf" ascii nocase wide
+        $typelibguid10 = "6e531f6c-2c89-447f-8464-aaa96dbcdfff" ascii nocase wide
+        $typelibguid11 = "231987a1-ea32-4087-8963-2322338f16f6" ascii nocase wide
+        $typelibguid12 = "7da0d93a-a0ae-41a5-9389-42eff85bb064" ascii nocase wide
+        $typelibguid13 = "a729f9cc-edc2-4785-9a7d-7b81bb12484c" ascii nocase wide
+        $typelibguid14 = "55a1fd43-d23e-4d72-aadb-bbd1340a6913" ascii nocase wide
+        $typelibguid15 = "d43f240d-e7f5-43c5-9b51-d156dc7ea221" ascii nocase wide
+        $typelibguid16 = "c2e6c1a0-93b1-4bbc-98e6-8e2b3145db8e" ascii nocase wide
+        $typelibguid17 = "714ae6f3-0d03-4023-b753-fed6a31d95c7" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_BrowserPass {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/jabiel/BrowserPass"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-28"
+    strings:
+        $typelibguid0 = "3cb59871-0dce-453b-857a-2d1e515b0b66" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_Mythic {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/its-a-feature/Mythic"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-29"
+    strings:
+        $typelibguid0 = "91f7a9da-f045-4239-a1e9-487ffdd65986" ascii nocase wide
+        $typelibguid1 = "0405205c-c2a0-4f9a-a221-48b5c70df3b6" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_Nuages {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/p3nt4/Nuages"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-29"
+    strings:
+        $typelibguid0 = "e9e80ac7-4c13-45bd-9bde-ca89aadf1294" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpSniper {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/HunnicCyber/SharpSniper"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-29"
+    strings:
+        $typelibguid0 = "c8bb840c-04ce-4b60-a734-faf15abf7b18" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpHound3 {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/BloodHoundAD/SharpHound3"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-29"
+    strings:
+        $typelibguid0 = "a517a8de-5834-411d-abda-2d0e1766539c" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_BlockEtw {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/Soledge/BlockEtw"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-29"
+    strings:
+        $typelibguid0 = "daedf7b3-8262-4892-adc4-425dd5f85bca" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpWifiGrabber {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/r3nhat/SharpWifiGrabber"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-29"
+    strings:
+        $typelibguid0 = "c0997698-2b73-4982-b25b-d0578d1323c2" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpMapExec {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/cube0x0/SharpMapExec"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-29"
+    strings:
+        $typelibguid0 = "bd5220f7-e1fb-41d2-91ec-e4c50c6e9b9f" ascii nocase wide
     condition:
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
