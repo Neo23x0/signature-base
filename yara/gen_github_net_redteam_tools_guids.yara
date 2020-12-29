@@ -3352,4 +3352,68 @@ rule HKTL_NET_GUID_Nuages {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
+rule HKTL_NET_GUID_SharpSniper {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/HunnicCyber/SharpSniper"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-29"
+    strings:
+        $typelibguid0 = "c8bb840c-04ce-4b60-a734-faf15abf7b18" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpHound3 {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/BloodHoundAD/SharpHound3"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-29"
+    strings:
+        $typelibguid0 = "a517a8de-5834-411d-abda-2d0e1766539c" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_BlockEtw {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/Soledge/BlockEtw"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-29"
+    strings:
+        $typelibguid0 = "daedf7b3-8262-4892-adc4-425dd5f85bca" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpWifiGrabber {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/r3nhat/SharpWifiGrabber"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-29"
+    strings:
+        $typelibguid0 = "c0997698-2b73-4982-b25b-d0578d1323c2" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpMapExec {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/cube0x0/SharpMapExec"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-29"
+    strings:
+        $typelibguid0 = "bd5220f7-e1fb-41d2-91ec-e4c50c6e9b9f" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
 
