@@ -3230,7 +3230,6 @@ rule HKTL_NET_GUID_KeeThief {
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
-        $typelibguid0 = "02020c52-c0da-47c0-9f3f-a6fe76cee400" ascii nocase wide
         $typelibguid1 = "39aa6f93-a1c9-497f-bad2-cc42a61d5710" ascii nocase wide
         $typelibguid2 = "395f6eec-a1e0-4438-aa82-b75099348134" ascii nocase wide
         $typelibguid3 = "3fca8012-3bad-41e4-91f4-534aa9a44f96" ascii nocase wide
