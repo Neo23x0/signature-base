@@ -38,21 +38,6 @@ rule SnakeTurla_Malware_May17_2 {
       ( uint16(0) == 0xfacf and filesize < 6000KB and all of them )
 }
 
-rule SnakeTurla_Malware_May17_3 {
-   meta:
-      description = "Detects Snake / Turla Sample"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
-      author = "Florian Roth"
-      reference = "https://goo.gl/QaOh4V"
-      date = "2017-05-04"
-      hash1 = "7848f7808af02ba0466f3a0687cf949c4d29a2d94b035481a3299ec519aaaa30"
-   strings:
-      $x1 = "Addy Symonds1" ascii
-      $x2 = "com.addy.InstallAdobeFlash" ascii
-   condition:
-      ( uint16(0) == 0xfacf and filesize < 3000KB and all of them )
-}
-
 rule SnakeTurla_Malware_May17_4 {
    meta:
       description = "Detects Snake / Turla Sample"
