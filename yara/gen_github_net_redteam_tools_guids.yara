@@ -1198,7 +1198,6 @@ rule HKTL_NET_GUID_SharpPack {
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
-        $typelibguid0 = "22a156ea-2623-45c7-8e50-e864d9fc44d3" ascii nocase wide
         $typelibguid1 = "b59c7741-d522-4a41-bf4d-9badddebb84a" ascii nocase wide
         $typelibguid2 = "fd6bdf7a-fef4-4b28-9027-5bf750f08048" ascii nocase wide
         $typelibguid3 = "6dd22880-dac5-4b4d-9c91-8c35cc7b8180" ascii nocase wide
@@ -2030,19 +2029,6 @@ rule HKTL_NET_GUID_SharpGPO_RemoteAccessPolicies {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule HKTL_NET_GUID_solarflare {
-    meta:
-        description = "Detects c# red/black-team tools via typelibguid"
-        reference = "https://github.com/mubix/solarflare"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
-        author = "Arnim Rupp"
-        date = "2020-12-21"
-    strings:
-        $typelibguid0 = "ca60e49e-eee9-409b-8d1a-d19f1d27b7e4" ascii nocase wide
-    condition:
-        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
-}
-
 rule HKTL_NET_GUID_Absinthe {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
@@ -2142,19 +2128,6 @@ rule HKTL_NET_GUID_StandIn {
         date = "2020-12-21"
     strings:
         $typelibguid0 = "01c142ba-7af1-48d6-b185-81147a2f7db7" ascii nocase wide
-    condition:
-        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
-}
-
-rule HKTL_NET_GUID_SharpSploit {
-    meta:
-        description = "Detects c# red/black-team tools via typelibguid"
-        reference = "https://github.com/cobbr/SharpSploit"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
-        author = "Arnim Rupp"
-        date = "2020-12-21"
-    strings:
-        $typelibguid0 = "7760248f-9247-4206-be42-a6952aa46da2" ascii nocase wide
     condition:
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
@@ -2275,19 +2248,6 @@ rule HKTL_NET_GUID_RexCrypter {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule HKTL_NET_GUID_SharpView {
-    meta:
-        description = "Detects c# red/black-team tools via typelibguid"
-        reference = "https://github.com/tevora-threat/SharpView"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
-        author = "Arnim Rupp"
-        date = "2020-12-28"
-    strings:
-        $typelibguid0 = "22a156ea-2623-45c7-8e50-e864d9fc44d3" ascii nocase wide
-    condition:
-        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
-}
-
 rule HKTL_NET_GUID_SharPersist {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
@@ -2310,19 +2270,6 @@ rule HKTL_NET_GUID_CVE_2019_1253 {
         date = "2020-12-28"
     strings:
         $typelibguid0 = "584964c1-f983-498d-8370-23e27fdd0399" ascii nocase wide
-    condition:
-        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
-}
-
-rule HKTL_NET_GUID_Http_Asynchronous_Reverse_Shell {
-    meta:
-        description = "Detects c# red/black-team tools via typelibguid"
-        reference = "https://github.com/onSec-fr/Http-Asynchronous-Reverse-Shell"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
-        author = "Arnim Rupp"
-        date = "2020-12-28"
-    strings:
-        $typelibguid0 = "aca853dc-9e74-4175-8170-e85372d5f2a9" ascii nocase wide
     condition:
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
@@ -2939,19 +2886,6 @@ rule HKTL_NET_GUID_Sharp_SMBExec {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
-rule HKTL_NET_GUID_SharpChromium {
-    meta:
-        description = "Detects c# red/black-team tools via typelibguid"
-        reference = "https://github.com/djhohnstein/SharpChromium"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
-        author = "Arnim Rupp"
-        date = "2020-12-28"
-    strings:
-        $typelibguid0 = "2133c634-4139-466e-8983-9a23ec99e01b" ascii nocase wide
-    condition:
-        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
-}
-
 rule HKTL_NET_GUID_MiscTools {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
@@ -3178,19 +3112,6 @@ rule HKTL_NET_GUID_ManagedInjection {
         $typelibguid0 = "e5182bff-9562-40ff-b864-5a6b30c3b13b" ascii nocase wide
         $typelibguid1 = "fdedde0d-e095-41c9-93fb-c2219ada55b1" ascii nocase wide
         $typelibguid2 = "0dd00561-affc-4066-8c48-ce950788c3c8" ascii nocase wide
-    condition:
-        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
-}
-
-rule HKTL_NET_GUID_InveighZero {
-    meta:
-        description = "Detects c# red/black-team tools via typelibguid"
-        reference = "https://github.com/Kevin-Robertson/InveighZero"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
-        author = "Arnim Rupp"
-        date = "2020-12-28"
-    strings:
-        $typelibguid0 = "113ae281-d1e5-42e7-9cc2-12d30757baf1" ascii nocase wide
     condition:
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
