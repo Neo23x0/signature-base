@@ -1946,6 +1946,7 @@ rule HKTL_NET_GUID_iSpyKeylogger {
         $typelibguid0 = "ccc0a386-c4ce-42ef-aaea-b2af7eff4ad8" ascii nocase wide
         $typelibguid1 = "816b8b90-2975-46d3-aac9-3c45b26437fa" ascii nocase wide
         $typelibguid2 = "279b5533-d3ac-438f-ba89-3fe9de2da263" ascii nocase wide
+        $typelibguid3 = "88d3dc02-2853-4bf0-b6dc-ad31f5135d26" ascii nocase wide
     condition:
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
@@ -3152,7 +3153,6 @@ rule HKTL_NET_GUID_KeeThief {
         date = "2020-12-28"
     strings:
         $typelibguid1 = "39aa6f93-a1c9-497f-bad2-cc42a61d5710" ascii nocase wide
-        $typelibguid2 = "395f6eec-a1e0-4438-aa82-b75099348134" ascii nocase wide
         $typelibguid3 = "3fca8012-3bad-41e4-91f4-534aa9a44f96" ascii nocase wide
         $typelibguid4 = "ea92f1e6-3f34-48f8-8b0a-f2bbc19220ef" ascii nocase wide
         $typelibguid5 = "c23b51c4-2475-4fc6-9b3a-27d0a2b99b0f" ascii nocase wide
@@ -3336,4 +3336,156 @@ rule HKTL_NET_GUID_SharpMapExec {
     condition:
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
+
+rule HKTL_NET_GUID_k8fly {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/zzwlpx/k8fly"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-29"
+    strings:
+        $typelibguid0 = "13b6c843-f3d4-4585-b4f3-e2672a47931e" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_Stealer {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/malwares/Stealer"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-29"
+    strings:
+        $typelibguid0 = "8fcd4931-91a2-4e18-849b-70de34ab75df" ascii nocase wide
+        $typelibguid1 = "e48811ca-8af8-4e73-85dd-2045b9cca73a" ascii nocase wide
+        $typelibguid2 = "d3d8a1cc-e123-4905-b3de-374749122fcf" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_PortTran {
+    meta:
+        description = "Detects c# red/black-team tools via typelibguid"
+        reference = "https://github.com/k8gege/PortTran"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-29"
+    strings:
+        $typelibguid0 = "3a074374-77e8-4312-8746-37f3cb00e82c" ascii nocase wide
+        $typelibguid1 = "67a73bac-f59d-4227-9220-e20a2ef42782" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+
+rule HKTL_NET_GUID_gray_keylogger_2 {
+    meta:
+        description = "Detects VB.NET red/black-team tools via typelibguid"
+        reference = "https://github.com/graysuit/gray-keylogger-2"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-30"
+    strings:
+        $typelibguid0 = "e94ca3ff-c0e5-4d1a-ad5e-f6ebbe365067" ascii nocase wide
+        $typelibguid1 = "1ed07564-b411-4626-88e5-e1cd8ecd860a" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_Lime_Miner {
+    meta:
+        description = "Detects VB.NET red/black-team tools via typelibguid"
+        reference = "https://github.com/NYAN-x-CAT/Lime-Miner"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-30"
+    strings:
+        $typelibguid0 = "13958fb9-dfc1-4e2c-8a8d-a5e68abdbc66" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_BlackNET {
+    meta:
+        description = "Detects VB.NET red/black-team tools via typelibguid"
+        reference = "https://github.com/BlackHacker511/BlackNET"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-30"
+    strings:
+        $typelibguid0 = "c2b90883-abee-4cfa-af66-dfd93ec617a5" ascii nocase wide
+        $typelibguid1 = "8bb6f5b4-e7c7-4554-afd1-48f368774837" ascii nocase wide
+        $typelibguid2 = "983ae28c-91c3-4072-8cdf-698b2ff7a967" ascii nocase wide
+        $typelibguid3 = "9ac18cdc-3711-4719-9cfb-5b5f2d51fd5a" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_PlasmaRAT {
+    meta:
+        description = "Detects VB.NET red/black-team tools via typelibguid"
+        reference = "https://github.com/mwsrc/PlasmaRAT"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-30"
+    strings:
+        $typelibguid0 = "b8a2147c-074c-46e1-bb99-c8431a6546ce" ascii nocase wide
+        $typelibguid1 = "0fcfde33-213f-4fb6-ac15-efb20393d4f3" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_Lime_RAT {
+    meta:
+        description = "Detects VB.NET red/black-team tools via typelibguid"
+        reference = "https://github.com/NYAN-x-CAT/Lime-RAT"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-30"
+    strings:
+        $typelibguid0 = "e58ac447-ab07-402a-9c96-95e284a76a8d" ascii nocase wide
+        $typelibguid1 = "8fb35dab-73cd-4163-8868-c4dbcbdf0c17" ascii nocase wide
+        $typelibguid2 = "37845f5b-35fe-4dce-bbec-2d07c7904fb0" ascii nocase wide
+        $typelibguid3 = "83c453cf-0d29-4690-b9dc-567f20e63894" ascii nocase wide
+        $typelibguid4 = "8b1f0a69-a930-42e3-9c13-7de0d04a4add" ascii nocase wide
+        $typelibguid5 = "eaaeccf6-75d2-4616-b045-36eea09c8b28" ascii nocase wide
+        $typelibguid6 = "5b2ec674-0aa4-4209-94df-b6c995ad59c4" ascii nocase wide
+        $typelibguid7 = "e2cc7158-aee6-4463-95bf-fb5295e9e37a" ascii nocase wide
+        $typelibguid8 = "d04ecf62-6da9-4308-804a-e789baa5cc38" ascii nocase wide
+        $typelibguid9 = "8026261f-ac68-4ccf-97b2-3b55b7d6684d" ascii nocase wide
+        $typelibguid10 = "212cdfac-51f1-4045-a5c0-6e638f89fce0" ascii nocase wide
+        $typelibguid11 = "c1b608bb-7aed-488d-aa3b-0c96625d26c0" ascii nocase wide
+        $typelibguid12 = "4c84e7ec-f197-4321-8862-d5d18783e2fe" ascii nocase wide
+        $typelibguid13 = "3fc17adb-67d4-4a8d-8770-ecfd815f73ee" ascii nocase wide
+        $typelibguid14 = "f1ab854b-6282-4bdf-8b8b-f2911a008948" ascii nocase wide
+        $typelibguid15 = "aef6547e-3822-4f96-9708-bcf008129b2b" ascii nocase wide
+        $typelibguid16 = "a336f517-bca9-465f-8ff8-2756cfd0cad9" ascii nocase wide
+        $typelibguid17 = "5de018bd-941d-4a5d-bed5-fbdd111aba76" ascii nocase wide
+        $typelibguid18 = "bbfac1f9-cd4f-4c44-af94-1130168494d0" ascii nocase wide
+        $typelibguid19 = "1c79cea1-ebf3-494c-90a8-51691df41b86" ascii nocase wide
+        $typelibguid20 = "927104e1-aa17-4167-817c-7673fe26d46e" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_njRAT {
+    meta:
+        description = "Detects VB.NET red/black-team tools via typelibguid"
+        reference = "https://github.com/mwsrc/njRAT"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2020-12-30"
+    strings:
+        $typelibguid0 = "5a542c1b-2d36-4c31-b039-26a88d3967da" ascii nocase wide
+        $typelibguid1 = "6b07082a-9256-42c3-999a-665e9de49f33" ascii nocase wide
+        $typelibguid2 = "c0a9a70f-63e8-42ca-965d-73a1bc903e62" ascii nocase wide
+        $typelibguid3 = "70bd11de-7da1-4a89-b459-8daacc930c20" ascii nocase wide
+        $typelibguid4 = "fc790ee5-163a-40f9-a1e2-9863c290ff8b" ascii nocase wide
+        $typelibguid5 = "cb3c28b2-2a4f-4114-941c-ce929fec94d3" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
 
