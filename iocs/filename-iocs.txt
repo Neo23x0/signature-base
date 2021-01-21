@@ -3394,4 +3394,31 @@ ublic\\.Monitor\\ews\.conf;90
 \\IBM[0-9]{3,3}([A-Za-z]{1,3}[0-9]?)?\.(bin|BIN|dat|DAT|bat|BAT)$;60;perl
 \\IBM[A-Z][0-9]{3,3}\.(bin|BIN|dat|DAT|bat|BAT)$;60
 
+# Sunburst Filename IOCs CobaltStrike Loader 
+:\\Windows\\ms\\sms\sms\.dll;90
+:\\Windows\\Microsoft\.NET\\Framework64\\sbscmp30\.dll;90
+:\\Windows\\AUInstallAgent\\auagent\.dll;90
+:\\Windows\\apppatch\\apppatch64\\sysmain\.dll;90
+:\\Windows\\Vss\\Writers\\Application\\AppXML\.dll;90
+:\\Windows\\PCHEALTH\\health\.dll;90
+:\\Windows\\Registration\\crmlog\.dll;90
+:\\Windows\\Cursors\\cursrv\.dll;90
+:\\Windows\\AppPatch\\AcWin\.dll;90
+:\\Windows\\CbsTemp\\cbst\.dll;90
+:\\Windows\\AppReadiness\\Appapi\.dll;90
+:\\Windows\\Panther\\MainQueueOnline\.dll;90
+:\\Windows\\AppReadiness\\AppRead\.dll;90
+:\\Windows\\PrintDialog\\PrintDial\.dll;90
+:\\Windows\\ShellExperiences\\MtUvc\.dll;90
+:\\Windows\\PrintDialog\\appxsig\.dll;90
+:\\Windows\\DigitalLocker\\lock\.dll;90
+:\\Windows\\assembly\\GAC_64\\MSBuild\\3.5.0.0__b03f5f7f11d50a3a\\msbuild\.dll;90
+:\\Windows\\Migration\\WTR\\ctl\.dll;90
+:\\Windows\\ELAMBKUP\\WdBoot\.dll;90
+:\\Windows\\LiveKernelReports\\KerRep\.dll;90
+:\\Windows\\Speech_OneCore\\Engines\\TTS\\en-US\\enUS.Name\.dll;90
+:\\Windows\\SoftwareDistribution\\DataStore\\DataStr\.dll;90
+:\\Windows\\RemotePackages\\RemoteApps\\RemPack\.dll;90
+:\\Windows\\ShellComponents\\TaskFlow\.dll;90
+
 # End
