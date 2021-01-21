@@ -1,19 +1,5 @@
 // low hanging fruits ;)
 
-rule HKTL_NET_NAME_DesktopUploader {
-    meta:
-        description = "Detects .NET red/black-team tools via name"
-        reference = "https://github.com/NYAN-x-CAT/DesktopUploader"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
-        author = "Arnim Rupp"
-        date = "2021-01-22"
-    strings:
-        $name = "DesktopUploader" ascii wide
-        $compile = "AssemblyTitle" ascii wide
-    condition:
-        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and all of them
-}
-
 rule HKTL_NET_NAME_FakeFileMaker {
     meta:
         description = "Detects .NET red/black-team tools via name"
@@ -23,20 +9,6 @@ rule HKTL_NET_NAME_FakeFileMaker {
         date = "2021-01-22"
     strings:
         $name = "FakeFileMaker" ascii wide
-        $compile = "AssemblyTitle" ascii wide
-    condition:
-        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and all of them
-}
-
-rule HKTL_NET_NAME_MonkeyWorks {
-    meta:
-        description = "Detects .NET red/black-team tools via name"
-        reference = "https://github.com/NetSPI/MonkeyWorks"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
-        author = "Arnim Rupp"
-        date = "2021-01-22"
-    strings:
-        $name = "MonkeyWorks" ascii wide
         $compile = "AssemblyTitle" ascii wide
     condition:
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and all of them
@@ -535,20 +507,6 @@ rule HKTL_NET_NAME_SharpHose {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and all of them
 }
 
-rule HKTL_NET_NAME_SharpCollection {
-    meta:
-        description = "Detects .NET red/black-team tools via name"
-        reference = "https://github.com/Flangvik/SharpCollection"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
-        author = "Arnim Rupp"
-        date = "2021-01-22"
-    strings:
-        $name = "SharpCollection" ascii wide
-        $compile = "AssemblyTitle" ascii wide
-    condition:
-        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and all of them
-}
-
 rule HKTL_NET_NAME_RAT_NjRat_0_7d_modded_source_code {
     meta:
         description = "Detects .NET red/black-team tools via name"
@@ -558,20 +516,6 @@ rule HKTL_NET_NAME_RAT_NjRat_0_7d_modded_source_code {
         date = "2021-01-22"
     strings:
         $name = "RAT-NjRat-0.7d-modded-source-code" ascii wide
-        $compile = "AssemblyTitle" ascii wide
-    condition:
-        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and all of them
-}
-
-rule HKTL_NET_NAME_BlueHatIL_2020 {
-    meta:
-        description = "Detects .NET red/black-team tools via name"
-        reference = "https://github.com/FuzzySecurity/BlueHatIL-2020"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
-        author = "Arnim Rupp"
-        date = "2021-01-22"
-    strings:
-        $name = "BlueHatIL-2020" ascii wide
         $compile = "AssemblyTitle" ascii wide
     condition:
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and all of them
