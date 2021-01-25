@@ -2576,7 +2576,6 @@ ystem32\\DumpExt\.dll;75
 \\ratA\.exe;50
 \\ratnik\.exe;50
 \\read me\.exe;50
-\\README\.exe;50
 \\rf_login_net\.exe;50
 \\RouterFixer\.exe;50
 \\RSBot\.exe;50
