@@ -198,13 +198,15 @@ rule HKTL_NET_NAME_ATPMiniDump {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and all of them
 }
 
-rule HKTL_NET_NAME_ConfuserEx {
+rule SUSP_NET_NAME_ConfuserEx {
     meta:
-        description = "Detects .NET red/black-team tools via name"
+        description = "Detects ConfuserEx packed file"
         reference = "https://github.com/yck1509/ConfuserEx"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
+        score = 40
         date = "2021-01-22"
+        modified = "2021-01-25"
     strings:
         $name = "ConfuserEx" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -277,8 +279,8 @@ rule HKTL_NET_NAME_SharpCat {
         author = "Arnim Rupp"
         date = "2021-01-22"
     strings:
-        $name = "SharpCat" ascii wide
-        $compile = "AssemblyTitle" ascii wide
+        $name = "SharpCat" ascii wide fullword
+        $compile = "AssemblyTitle" ascii wide fullword
     condition:
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and all of them
 }
