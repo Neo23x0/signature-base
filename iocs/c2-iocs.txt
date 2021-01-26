@@ -1570,4 +1570,13 @@ echange-afrique-insa.fr
 aviatnetworks.com
 afci-newsoft.fr
 
+# Lazarus Campaign targeting Security Researchers https://blog.google/threat-analysis-group/new-campaign-targeting-security-researchers/
+angeldonationblog.com
+codevexillium.org
+investbooking.de
+krakenfolio.com
+opsonew3org.sg
+transferwiser.io
+transplugin.io
+
 # Last Line
