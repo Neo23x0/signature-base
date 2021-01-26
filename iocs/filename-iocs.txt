@@ -3420,4 +3420,11 @@ ublic\\.Monitor\\ews\.conf;90
 :\\Windows\\RemotePackages\\RemoteApps\\RemPack\.dll;90
 :\\Windows\\ShellComponents\\TaskFlow\.dll;90
 
+# NK Campaign Against Security Researchers https://blog.google/threat-analysis-group/new-campaign-targeting-security-researchers/
+:\\Windows\\System32\\Nwsapagent\.sys;100
+:\\Windows\\System32\\helpsvc\.sys;100
+:\\ProgramData\\USOShared\\uso\.bin;100
+:\\ProgramData\\VMware\\vmnat-update\.bin;100
+:\\ProgramData\\VirtualBox\\update\.bin;100
+
 # End
