@@ -27,5 +27,5 @@ rule PUA_WIN_XMRIG_CryptoCoin_Miner_Dec20 {
       $x2 = "xmrig.com" fullword wide
       $x3 = "* for x86, CRYPTOGAMS" fullword ascii
    condition:
-      uint16(0) == 0x5a4d and filesize < 6000KB and 2 of them or all of them
+      ( uint16(0) == 0x5a4d and filesize < 6000KB and 2 of them ) or ( all of them )
 }
