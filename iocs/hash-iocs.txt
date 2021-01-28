@@ -9539,3 +9539,5 @@ B51835A5D8DA77A49E3266494A8AE96764C4C152;Lucky Mouse Campaign - Trojanized Able 
 0550AAE6E3CEABCEF2A3F926339E68817112059A;Lucky Mouse Campaign - HyperBro - https://www.welivesecurity.com/2020/12/10/luckymouse-ta428-compromise-able-desktop/
 5D066113534A9E31F49BEFDA560CF8F8890496D0;Lucky Mouse Campaign - Korplug - https://www.welivesecurity.com/2020/12/10/luckymouse-ta428-compromise-able-desktop/
 ED6CECFDAAEB7F41A824757862640C874EF3F7AE;Lucky Mouse Campaign - Tmanger - https://www.welivesecurity.com/2020/12/10/luckymouse-ta428-compromise-able-desktop/
+
+58a74dceb2022cd8a358b92acd1b48a5e01c524c3b0195d7033e4bd55eff4495;Viraglt64.sys driver from the Vir.IT eXplorer antivirus https://www.microsoft.com/security/blog/2021/01/28/zinc-attacks-against-security-researchers/?s=09
