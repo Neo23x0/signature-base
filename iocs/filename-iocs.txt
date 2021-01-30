@@ -3421,10 +3421,47 @@ ublic\\.Monitor\\ews\.conf;90
 :\\Windows\\ShellComponents\\TaskFlow\.dll;90
 
 # NK Campaign Against Security Researchers https://blog.google/threat-analysis-group/new-campaign-targeting-security-researchers/
-:\\Windows\\System32\\Nwsapagent\.sys;100
-:\\Windows\\System32\\helpsvc\.sys;100
 :\\ProgramData\\USOShared\\uso\.bin;100
 :\\ProgramData\\VMware\\vmnat-update\.bin;100
 :\\ProgramData\\VirtualBox\\update\.bin;100
+
+# Lazarus malware IOCs - Microsoft report on Zinc https://www.microsoft.com/security/blog/2021/01/28/zinc-attacks-against-security-researchers/
+:\\ProgramData\\USOShared\\USOShared\.dat;90
+:\\Windows\\System32\\helpsvc\.sys;95
+:\\Windows\\System32\\Irmon\.sys;95
+:\\Windows\\System32\\LogonHours\.sys;95
+:\\Windows\\System32\\Ntmssvc\.sys;95
+:\\Windows\\System32\\NWCWorkstation\.sys;95
+:\\Windows\\System32\\Nwsapagent\.sys;95
+:\\Windows\\System32\\PCAudit\.sys;95
+:\\Windows\\System32\\uploadmgr\.sys;95
+:\\ProgramData\\USOShared\\[a-zA-Z_]{2,16}\.(bin|db|cpl)$;65
+:\\ProgramData\\Adobe\\[a-zA-Z_]{2,16}\.(bin|db|cpl)$;65
+:\\ProgramData\\Mozilla\\[a-zA-Z_]{2,16}\.(bin|db|cpl)$;65
+:\\ProgramData\\NVIDIA\\[a-zA-Z_]{2,16}\.(bin|db|cpl)$;65
+:\\ProgramData\\Oracle\\[a-zA-Z_]{2,16}\.(bin|db|cpl)$;65
+:\\ProgramData\\VirtualBox\\[a-zA-Z_]{2,16}\.(bin|db|cpl)$;65
+:\\MSCache\\msomui\.dat;80
+:\\MSCache\\local\.cpl;80
+:\\ProgramData\\ntuser\.db;80
+:\\ProgramData\\ntuser\.ini;80
+:\\ProgramData\\taskhost\.exe;80
+:\\ProgramData\\Adobe\\get\.exe;80
+:\\ProgramData\\Adobe\\ARM\\AdobeUpdate\.exe;80
+:\\ProgramData\\Mozilla\\update\.bin;80
+:\\ProgramData\\NVIDIA\graphicscheck\.exe;80
+:\\ProgramData\\NVIDIA\\NVIDIA\.bin;80
+:\\ProgramData\\Oracle\\java\.db;80
+:\\ProgramData\\Oracle\\java\.cpl;80
+:\\ProgramData\\USOShared\\Search\.bin;80
+:\\Windows\\netsvc\.exe;80
+:\\Windows\\system32\\kjchost\.dll;80
+:\\Windows\\System32\\traextapi\.dll;80
+:\\Windows\\System32\\healthextapi\.dll;80
+:\\Windows\\System32\\detaextapi\.dll;80
+:\\Windows\\Temp\\ads\.tmp;80
+:\\windows\\Temp\\CA_Root\.pfx;80
+:\\Recovery\\recover\.bin;80
+:\\Recovery\\re\.bin;80
 
 # End
