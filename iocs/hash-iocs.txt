@@ -9619,5 +9619,4 @@ e8cf9b04ba7054e1c34bda05106478f9071f8f6569b4822070834abbf8e07a95;Lazarus campaig
 b32319da446dcf83378ab714f5ad0229dff43c9c6b345b69f1a397c951c1122e;Lazarus campaign against researchers - Klackring malware - https://www.microsoft.com/security/blog/2021/01/28/zinc-attacks-against-security-researchers/
 11fef660dec27474c0c6c856a7b4619155821fdd1ce404848513a2700be806a5;Lazarus campaign against researchers - Klackring malware - https://www.microsoft.com/security/blog/2021/01/28/zinc-attacks-against-security-researchers/
 9e562cc5c3eb48a5f1a1ccd29bf4b2ff4ab946f45aa5d8ea170f69104b684023;Lazarus campaign against researchers - Klackring malware - https://www.microsoft.com/security/blog/2021/01/28/zinc-attacks-against-security-researchers/
-58a74dceb2022cd8a358b92acd1b48a5e01c524c3b0195d7033e4bd55eff4495;Lazarus campaign against researchers - viaglt64.sys – Vulnerable Vir.IT driver for CVE-2017-16238
-- https://www.microsoft.com/security/blog/2021/01/28/zinc-attacks-against-security-researchers/
+58a74dceb2022cd8a358b92acd1b48a5e01c524c3b0195d7033e4bd55eff4495;Lazarus campaign against researchers - viaglt64.sys – Vulnerable Vir.IT driver for CVE-2017-16238 - https://www.microsoft.com/security/blog/2021/01/28/zinc-attacks-against-security-researchers/

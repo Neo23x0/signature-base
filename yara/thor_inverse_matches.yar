@@ -465,19 +465,3 @@ rule APT_SUSP_Solarwinds_Orion_Config_Anomaly_Dec20 {
       and $s1 
       and not $fp1
 }
-
-rule SUSP_System32_SYS_Driver_Jan21_1 {
-   meta:
-      description = "Detects a suspicious *.sys files in System32 folder apart from Microsoft's own drivers"
-      author = "Florian Roth"
-      reference = "https://twitter.com/richinseattle/status/1353983520973090816"
-      date = "2021-01-26"
-      score = 60
-      type = "file"
-      nodeepdive = 1
-   condition:
-      extension == ".sys" and 
-      filepath matches /^C:\\Windows\\System32$/i and
-      not filename matches /^win32/ and
-      pe.number_of_signatures < 1
-}
