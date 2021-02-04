@@ -3267,7 +3267,6 @@ ublic\\.Monitor\\ews\.conf;90
 \\AppData\\Local\\Microsoft\\Mediia\\;90
 \\Users\\Public\\Public Documents\\57494E2D3850535046373333503532\\;100
 \\AppData\\Local\\Microsoft\\policy\\;75
-\\AppData\\Local\\Microsoft\\Windows\\Explorer\\;75
 \\AppData\\Local\\Microsoft\\Windows\\Explore\\;75
 \\AppData\\Localpolicy\\;70
 \\AppData\\Local\\microsoft\\windows\\explorer\\iconcache_2048\.db;90
