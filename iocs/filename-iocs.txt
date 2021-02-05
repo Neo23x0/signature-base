@@ -1028,8 +1028,6 @@ AppData\\adobe\\adobe\.dat;65
 \\sxhost\.exe;45
 \\sxhost\.exe;45
 \\sychost\.exe;45
-\\synchost\.exe;45
-\\synchost\.exe;45
 \\synhost\.exe;45
 \\syschost\.exe;45
 \\syschost\.exe;45
