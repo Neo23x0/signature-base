@@ -3659,6 +3659,7 @@ rule r57shell_php_php {
 		$s1 = " else if ($HTTP_POST_VARS['with'] == \"lynx\") { $HTTP_POST_VARS['cmd']= \"lynx "
 		$s2 = "RusH security team"
 		$s3 = "'ru_text12' => 'back-connect"
+		$s4 = "<title>r57shell</title>"
 	condition:
 		1 of them
 }
