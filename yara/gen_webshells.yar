@@ -15,7 +15,7 @@ b) eval-style-payloads + obfuscation
 c) includers (webshell is split in 2+ files)
 d) unique strings, if the coder doesn't even intend to hide 
 
-Additional conditions will be added to reduce false positves.
+Additional conditions will be added to reduce false positves. Check all findings for unintentional webshells aka vulnerabilities ;)
 
 The rules named "suspicous_" are commented by default. uncomment them to find more potentially malicious files at the price of more false positives. if that finds too many results to manually check, you can compare the hashes to virustotal with e.g. https://github.com/Neo23x0/munin
 
@@ -106,7 +106,8 @@ private rule capa_php {
 		date = "2021/01/14"
 	strings:
 		// this will hit on a lot of non-php files, asp, scripting templates, ... but it works on older php versions
-		$ = "<?"
+		$php1 = "<?"
+		$php2 = "<script language=\"php" nocase
 	condition:
 		any of them
 }
@@ -323,7 +324,7 @@ rule webshell_php_generic_nano_payload_or_callback {
 		author = "Arnim Rupp"
 		date = "2021/01/14"
 		hash = "29c80a36f0919c39fb0de4732c506da5eee89783"
-		score = 50
+		score = 40
 	strings:
 		$fp1 = "__DIR__"
 	condition:
@@ -427,6 +428,7 @@ rule webshell_php_unknown_1 {
 		$s2 = "; if (!function_exists('"
 		$s3 = " = NULL; for("
 	condition:
+		filesize < 300KB and 
 		all of them
 }
 
@@ -441,6 +443,7 @@ rule webshell_php_generic_eval {
 	strings:
 		$s0 = /(exec|shell_exec|passthru|system|popen|proc_open|pcntl_exec|eval|assert)[\t ]*(stripslashes\()?[\t ]*(trim\()?[\t ]*\(\$(_POST|_GET|_REQUEST|_SERVER\[['"]HTTP_)/
 	condition:
+		filesize < 300KB and 
 		any of them
 }
 
@@ -454,12 +457,13 @@ rule webshell_php_double_eval_tiny {
 		score = 50
 	strings:
 		$payload = /(\beval[\t ]*\([^)]|\bassert[\t ]*\([^)])/ nocase
-		$fp = "clone" fullword
+		$fp1 = "clone" fullword
 	condition:
-		filesize < 800 and 
+		filesize > 70 and 
+		filesize < 300 and 
 		capa_php and 
 		#payload >= 2 and 
-		not $fp
+		not any of ( $fp* )
 }
 
 private rule capa_php_obfuscation_multi {
@@ -576,7 +580,9 @@ rule webshell_php_obfuscated_fopo {
 		$two5 = "7AEAAYQBzAHMAZQByAHQAKA"
 		$two6 = "OwBAAGEAcwBzAGUAcgB0ACgA"
 	condition:
-		capa_php and $payload and (
+		filesize < 3000KB and
+		capa_php and 
+		$payload and (
 			any of ( $one* ) or any of ( $two* )
 		)
 }
@@ -598,6 +604,7 @@ private rule capa_os_strings {
 		$take_two1 = "net user" nocase
 		$take_two2 = "/add" nocase
 	condition:
+		filesize < 300KB and 
 		all of ( $w* ) or
 		all of ( $l* ) or
 		2 of ( $take_two* ) 
@@ -673,6 +680,7 @@ rule webshell_php_gzinflated {
 		$payload7 = "eval(base64_decode("
 		$payload8 = "eval(pack("
 	condition:
+		filesize < 700KB and 
 		$php and 1 of ( $payload* )
 }
 
@@ -685,7 +693,6 @@ rule webshell_php_obfuscated_2 {
 		date = "2021/01/13"
 	strings:
 		// <?php function vUMmFr($MkUOmK) { $MkUOmK=gzinflate(base64_decode($MkUOmK)); for($i=0;$i<strlen($MkUOmK);$i++) { $MkUOmK[$i] = chr(ord($MkUOmK[$i])-1); } return $MkUOmK; }eval
-		$php = "<?"
 		$obf1 = "function" fullword
 		$obf2 = "base64_decode" fullword
 		$obf3 = "chr" fullword
@@ -693,11 +700,13 @@ rule webshell_php_obfuscated_2 {
 		$payload1 = "eval" fullword
 		$payload2 = "assert" fullword
 	condition:
-		$php and 1 of ( $payload* ) and 
-			$obf1 in (0..500) and
-			$obf2 in (0..500) and
-			$obf3 in (0..500) and
-			$obf4 in (0..500) 
+		filesize < 300KB and 
+		capa_php_old_safe and 
+		1 of ( $payload* ) and 
+		$obf1 in (0..500) and
+		$obf2 in (0..500) and
+		$obf3 in (0..500) and
+		$obf4 in (0..500) 
 }
 
 rule webshell_php_includer {
@@ -713,7 +722,10 @@ rule webshell_php_includer {
 		$include1 = "$_FILE"
 		$include2 = "include"
 	condition:
-		filesize < 200 and capa_php and 1 of ( $payload* ) and  1 of ( $include* )
+		filesize < 200 and 
+		capa_php and 
+		1 of ( $payload* ) and 
+		1 of ( $include* )
 }
 
 
@@ -792,7 +804,9 @@ rule webshell_php_by_string {
 		$ = "{\"_P\"./*-/*-*/\"OS\"./*-/*-*/\"T\"}"
 		$ = "/*-/*-*/\""
 	condition:
-		filesize < 100KB and capa_php and any of them
+		filesize < 100KB and 
+		capa_php and 
+		any of them
 }
 
 rule webshell_php_in_htaccess {
@@ -805,6 +819,7 @@ rule webshell_php_in_htaccess {
 	strings:
 		$s0 = "AddType application/x-httpd-php .htaccess"
 	condition:
+		filesize < 100KB and 
 		any of them
 }
 
@@ -824,6 +839,7 @@ rule webshell_php_func_in_get {
 		$s4 = /\$_REQUEST\[.{1,30}\]\(\$_REQUEST\[/
 		$s5 = /\$_SERVER\[HTTP_.{1,30}\]\(\$_SERVER\[HTTP_/
 	condition:
+		filesize < 500KB and 
 		any of them
 }
 
@@ -946,7 +962,9 @@ rule webshell_asp_nano {
 		$payload6 = "cmd /c" nocase
 		$payload7 = "cmd.exe" nocase
 	condition:
-		filesize < 200 and capa_asp and any of ($payload*)
+		filesize < 200 and 
+		capa_asp and 
+		any of ($payload*)
 }
 
 rule webshell_vbscript_nano_encoded {
@@ -979,6 +997,7 @@ rule webshell_asp_string {
 		$s2 = ":eval request("
 		$s3 = ":eval request("
 	condition:
+		filesize < 200KB and 
 		// not checking capa_asp
 		any of ($s*)
 }
@@ -1026,6 +1045,7 @@ rule webshell_aspx_regeorg_csharp {
 		$s4 = "Response.BinaryWrite" nocase
 		$s5 = "Socket" nocase
 	condition:
+		filesize < 300KB and
 		capa_asp and
 		all of them
 }
@@ -1046,7 +1066,12 @@ rule webshell_csharp_generic {
 		$exec_shell1 = "cmd.exe" nocase
 		$exec_shell2 = "powershell.exe" nocase
 	condition:
-		filesize < 300KB and ( $input_http or all of ($input_form*) ) and all of ($exec_proc*) and any of ($exec_shell*)
+		filesize < 300KB and 
+		( 
+			$input_http or all of ($input_form*) 
+		) and 
+		all of ($exec_proc*) and 
+		any of ($exec_shell*)
 }
 
 rule webshell_asp_sharpyshell {
@@ -1067,7 +1092,13 @@ rule webshell_asp_sharpyshell {
 		$payload_compile2 = "CompileAssemblyFromSource" nocase
 		$payload_invoke = "Invoke" nocase
 	condition:
-		$input and ( all of ( $payload_reflection* ) or all of ( $payload_compile* ) ) and $payload_invoke
+		filesize < 10KB and
+		$input and 
+		( 
+			all of ( $payload_reflection* ) or 
+			all of ( $payload_compile* ) 
+		) and 
+		$payload_invoke
 }
 
 
@@ -1125,7 +1156,9 @@ rule webshell_jsp_regeorg {
 		$ = "socket" fullword
 		$ = "FORWARD" fullword
 	condition:
-		filesize < 300KB and capa_jsp and all of them
+		filesize < 300KB and 
+		capa_jsp and 
+		all of them
 }
 
 rule webshell_jsp_http_proxy {
@@ -1143,7 +1176,9 @@ rule webshell_jsp_http_proxy {
 		$ = "openConnection" fullword
 		$ = "getParameter" fullword
 	condition:
-		filesize < 10KB and capa_jsp and all of them
+		filesize < 10KB and 
+		capa_jsp and 
+		all of them
 }
 
 rule webshell_jsp_writer_nano {
@@ -1158,7 +1193,10 @@ rule webshell_jsp_writer_nano {
 		$payload1 = ".write"
 		$payload2 = "getBytes" fullword
 	condition:
-		filesize < 200 and capa_jsp_input and capa_jsp and 2 of ( $payload* )
+		filesize < 200 and 
+		capa_jsp_input and 
+		capa_jsp and 
+		2 of ( $payload* )
 }
 
 rule webshell_jsp_generic_tiny {
@@ -1266,7 +1304,10 @@ rule webshell_jsp_generic_processbuilder {
 		$exec = "ProcessBuilder" fullword
 		$start = "start" fullword
 	condition:
-		filesize < 2000 and capa_jsp_input and $exec and $start
+		filesize < 2000 and 
+		capa_jsp_input and 
+		$exec and 
+		$start
 }
 
 rule webshell_jsp_generic_reflection {
@@ -1281,7 +1322,8 @@ rule webshell_jsp_generic_reflection {
 		$input = "request.get" 
 		$class = "Class" 
 	condition:
-		filesize < 10KB and all of them
+		filesize < 10KB and 
+		all of them
 }
 
 rule webshell_jsp_generic_classloader {
@@ -1296,7 +1338,8 @@ rule webshell_jsp_generic_classloader {
 		$input = "request.get"
 		$class = "defineClass" fullword
 	condition:
-		filesize < 10KB and all of them
+		filesize < 10KB and 
+		all of them
 }
 
 rule webshell_jsp_generic_encoded_shell {
@@ -1315,6 +1358,7 @@ rule webshell_jsp_generic_encoded_shell {
 		$s5 = /{ ?101, 120, 101, 99 }/
 		$s6 = /{ ?103, 101, 116, 82, 117, 110/
 	condition:
+		filesize < 300KB and 
 		any of them
 }
 
@@ -1368,7 +1412,9 @@ rule webshell_jsp_by_string {
 		$ = "jdbcRowSet.setDataSourceName(request.getParameter("
 		$ = "Mr.Un1k0d3r RingZer0 Team"
 	condition:
-		filesize < 100KB and capa_jsp and any of them
+		filesize < 100KB and 
+		capa_jsp and 
+		any of them
 }
 
 
@@ -1386,7 +1432,11 @@ rule webshell_jsp_input_upload_write {
 		$write1 = "os.write" fullword
 		$write2 = "FileOutputStream" fullword
 	condition:
-		filesize < 10KB and capa_jsp and capa_jsp_input and $upload and 1 of ( $write* )
+		filesize < 10KB and 
+		capa_jsp and 
+		capa_jsp_input and 
+		$upload and 
+		1 of ( $write* )
 }
 
 
@@ -1461,7 +1511,10 @@ rule suspicous_webshell_input_password_sql {
 		$sql4 = "createStatement" fullword nocase
 
 	condition:
-		filesize < 20KB and 1 of ( $pwd* ) and 3 of ( $sql* ) and capa_jsp_input
+		filesize < 20KB and 
+		1 of ( $pwd* ) and 
+		3 of ( $sql* ) and 
+		capa_jsp_input
 }
 */
 
