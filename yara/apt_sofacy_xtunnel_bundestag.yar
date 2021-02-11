@@ -31,10 +31,11 @@ rule Winexe_RemoteExecution {
         hash = "5130f600cd9a9cdc82d4bad938b20cbd2f699aadb76e7f3f1a93602330d9997d"
         score = 70
     strings:
-        $s1 = "\\\\.\\pipe\\ahexec" fullword ascii
+        $s1a = "\\\\.\\pipe\\ahexec" fullword ascii
+        $s1b = "\\\\.\\pipe\\wmcex" fullword ascii
         $s2 = "implevel" fullword ascii
     condition:
-        uint16(0) == 0x5a4d and filesize < 115KB and all of them
+        uint16(0) == 0x5a4d and filesize < 115KB and ($s1a or $s1b) and $s2
 }
 
 rule Sofacy_Mal2 {
