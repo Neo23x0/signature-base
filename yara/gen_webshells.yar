@@ -713,7 +713,7 @@ rule webshell_php_includer
 rule webshell_php_dynamic
 {
 	meta:
-		description = "PHP webshell using $a($code) for kind of eval"
+		description = "PHP webshell using function name from variable, e.g. $a='ev'.'al'; $a($code)"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Arnim Rupp"
 		hash = "65dca1e652d09514e9c9b2e0004629d03ab3c3ef"
@@ -723,7 +723,6 @@ rule webshell_php_dynamic
 		score = 60
 
 	strings:
-		$dynamic = /\$[a-zA-Z0-9_]{1,10}\(/ wide ascii
 		$fp = "whoops_add_stack_frame" wide ascii
 	
 		//strings from private rule capa_php
@@ -731,11 +730,68 @@ rule webshell_php_dynamic
 		$php_tag1 = "<?" wide ascii
 		$php_tag2 = "<script language=\"php" nocase wide ascii
 	
+		//strings from private rule capa_php_dynamic
+		$dynamic1 = /\$[a-zA-Z0-9_]{1,10}\(\$/ wide ascii
+		$dynamic2 = /\$[a-zA-Z0-9_]{1,10}\("/ wide ascii
+		$dynamic3 = /\$[a-zA-Z0-9_]{1,10}\('/ wide ascii
+		$dynamic4 = /\$[a-zA-Z0-9_]{1,10}\(str/ wide ascii
+		$dynamic5 = /\$[a-zA-Z0-9_]{1,10}\(\)/ wide ascii
+		$dynamic6 = /\$[a-zA-Z0-9_]{1,10}\(@/ wide ascii
+	
 	condition:
 		filesize < 200 and ( 
 			any of ( $php_tag* ) 
 		)
-		and $dynamic and not $fp
+		and ( 
+			any of ( $dynamic* ) 
+		)
+		and not $fp
+}
+
+rule webshell_php_dynamic_big
+{
+	meta:
+		description = "PHP webshell using $a($code) for kind of eval with encoded blob to decode, e.g. b374k"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		author = "Arnim Rupp"
+		date = "2021/02/07"
+		score = 50
+
+	strings:
+
+		//strings from private rule capa_php_new
+		$new_php1 = "<?=" wide ascii
+		$new_php2 = "<?php" nocase wide ascii
+		$new_php3 = "<script language=\"php" nocase wide ascii
+	
+		//strings from private rule capa_php_dynamic
+		$dynamic1 = /\$[a-zA-Z0-9_]{1,10}\(\$/ wide ascii
+		$dynamic2 = /\$[a-zA-Z0-9_]{1,10}\("/ wide ascii
+		$dynamic3 = /\$[a-zA-Z0-9_]{1,10}\('/ wide ascii
+		$dynamic4 = /\$[a-zA-Z0-9_]{1,10}\(str/ wide ascii
+		$dynamic5 = /\$[a-zA-Z0-9_]{1,10}\(\)/ wide ascii
+		$dynamic6 = /\$[a-zA-Z0-9_]{1,10}\(@/ wide ascii
+	
+	condition:
+		filesize < 3000KB and ( 
+			any of ( $new_php* ) 
+		)
+		and ( 
+			any of ( $dynamic* ) 
+		)
+		and ( 
+			// file shouldn't be too small to have big enough data for math.entropy
+			filesize > 2KB and 
+			// ignore first and last 500bytes because they usually contain code for decoding and executing
+			math.entropy(500, filesize-500) >= 5.7 and
+			// encoded text has a higher mean than text or code because it's missing the spaces and special chars with the low numbers
+			math.mean(500, filesize-500) > 80 and
+			// deviation of base64 is ~20 according to CyberChef_v9.21.0.html#recipe=Generate_Lorem_Ipsum(3,'Paragraphs')To_Base64('A-Za-z0-9%2B/%3D')To_Charcode('Space',10)Standard_Deviation('Space')
+			// lets take a bit more because it might not be pure base64 also include some xor, shift, replacement, ...
+			// 89 is the mean of the base64 chars
+			math.deviation(500, filesize-500, 89.0) < 23 
+		)
+		
 }
 
 rule webshell_php_encoded_big
@@ -781,43 +837,7 @@ rule webshell_php_encoded_big
 		and ( 
 			// file shouldn't be too small to have big enough data for math.entropy
 			filesize > 2KB and 
-			// ignore first and last 500bytes because they usually contains code for decoding and executing
-			math.entropy(500, filesize-500) >= 5.7 and
-			// encoded text has a higher mean than text or code because it's missing the spaces and special chars with the low numbers
-			math.mean(500, filesize-500) > 80 and
-			// deviation of base64 is ~20 according to CyberChef_v9.21.0.html#recipe=Generate_Lorem_Ipsum(3,'Paragraphs')To_Base64('A-Za-z0-9%2B/%3D')To_Charcode('Space',10)Standard_Deviation('Space')
-			// lets take a bit more because it might not be pure base64 also include some xor, shift, replacement, ...
-			// 89 is the mean of the base64 chars
-			math.deviation(500, filesize-500, 89.0) < 23 
-		)
-		
-}
-
-rule webshell_php_dynamic_big
-{
-	meta:
-		description = "PHP webshell using $a($code) for kind of eval with encoded blob to decode, e.g. b374k"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
-		author = "Arnim Rupp"
-		date = "2021/02/07"
-		score = 50
-
-	strings:
-		$dynamic = /\$[a-zA-Z0-9_]{1,10}\(/ wide ascii
-	
-		//strings from private rule capa_php_new
-		$new_php1 = "<?=" wide ascii
-		$new_php2 = "<?php" nocase wide ascii
-		$new_php3 = "<script language=\"php" nocase wide ascii
-	
-	condition:
-		filesize < 3000KB and ( 
-			any of ( $new_php* ) 
-		)
-		and $dynamic in ( 20 .. 500 ) and ( 
-			// file shouldn't be too small to have big enough data for math.entropy
-			filesize > 2KB and 
-			// ignore first and last 500bytes because they usually contains code for decoding and executing
+			// ignore first and last 500bytes because they usually contain code for decoding and executing
 			math.entropy(500, filesize-500) >= 5.7 and
 			// encoded text has a higher mean than text or code because it's missing the spaces and special chars with the low numbers
 			math.mean(500, filesize-500) > 80 and
@@ -953,6 +973,7 @@ rule webshell_php_by_string
 		$pbs45 = "'P'.'O'.'S'.'T'" wide ascii
 		$pbs46 = "'G'.'E'.'T'" wide ascii
 		$pbs47 = "'R'.'E'.'Q'.'U'" wide ascii
+		$pbs48 = "se'.(32*2)"
 	
 		//strings from private rule capa_php_old_safe
 		$php_short = "<?" wide ascii
