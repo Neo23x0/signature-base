@@ -3461,4 +3461,13 @@ ublic\\.Monitor\\ews\.conf;90
 :\\Recovery\\recover\.bin;80
 :\\Recovery\\re\.bin;80
 
+# IOCs from Sandworm Centreon Report by CERTFR https://www.cert.ssi.gouv.fr/uploads/CERTFR-2021-CTI-005.pdf
+/tmp/.applocktx;100
+/tmp/.applock$;80
+/usr/local/centreon/www/search.php;90
+/usr/share/centreon/www/search.php;80
+/usr/share/centreon/www/modules/Discovery/include/DB−Drop.php;100
+/usr/share/centreon/www/htmlHeader.php;80
+/configtx\.json;80
+
 # End
