@@ -1,3 +1,4 @@
+import "pe"
 
 rule apt_sofacy_xtunnel {
     meta:
