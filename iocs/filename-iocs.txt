@@ -3446,7 +3446,7 @@ ublic\\.Monitor\\ews\.conf;90
 :\\ProgramData\\Adobe\\get\.exe;80
 :\\ProgramData\\Adobe\\ARM\\AdobeUpdate\.exe;80
 :\\ProgramData\\Mozilla\\update\.bin;80
-:\\ProgramData\\NVIDIA\graphicscheck\.exe;80
+:\\ProgramData\\NVIDIA\\graphicscheck\.exe;80
 :\\ProgramData\\NVIDIA\\NVIDIA\.bin;80
 :\\ProgramData\\Oracle\\java\.db;80
 :\\ProgramData\\Oracle\\java\.cpl;80
