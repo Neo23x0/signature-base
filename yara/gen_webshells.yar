@@ -1,3 +1,4 @@
+import "math"
 /*
 
 Webshell rules by Arnim Rupp
@@ -76,9 +77,6 @@ False positives in 8gb of common webapps plus yara-ci: 2
 
 */
 
-
-import "math"
-
 rule webshell_php_generic_tiny
 {
 	meta:
@@ -111,7 +109,7 @@ rule webshell_php_generic_tiny
 		$cpayload7 = /\bproc_open[\t ]*\([^)]/ nocase wide ascii
 		$cpayload8 = /\bpcntl_exec[\t ]*\([^)]/ nocase wide ascii
 		$cpayload9 = /\bassert[\t ]*\([^)]/ nocase wide ascii
-		$cpayload10 = /\bpreg_replace[\t ]*\(.{1,1000}\/e/ nocase wide ascii
+		$cpayload10 = /\bpreg_replace[\t ]*\([^\)]1,1000}\/e/ nocase wide ascii
 		$cpayload11 = /\bcreate_function[\t ]*\([^)]/ nocase wide ascii
 		$cpayload12 = /\bReflectionFunction[\t ]*\([^)]/ nocase wide ascii
 		// TODO: $_GET['func_name']($_GET['argument']);
@@ -330,7 +328,7 @@ rule webshell_php_base64_encoded_payloads
 		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
 
 		// of course the new tags should also match
-		$php_new1 = "<?=" nocase wide ascii
+		$php_new1 = "<?=" wide ascii
 		$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
@@ -432,7 +430,7 @@ rule webshell_php_obfuscated
 		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
 
 		// of course the new tags should also match
-		$php_new1 = "<?=" nocase wide ascii
+		$php_new1 = "<?=" wide ascii
 		$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
@@ -461,7 +459,7 @@ rule webshell_php_obfuscated
 		$cpayload7 = /\bproc_open[\t ]*\([^)]/ nocase wide ascii
 		$cpayload8 = /\bpcntl_exec[\t ]*\([^)]/ nocase wide ascii
 		$cpayload9 = /\bassert[\t ]*\([^)]/ nocase wide ascii
-		$cpayload10 = /\bpreg_replace[\t ]*\(.{1,1000}\/e/ nocase wide ascii
+		$cpayload10 = /\bpreg_replace[\t ]*\([^\)]1,1000}\/e/ nocase wide ascii
 		$cpayload11 = /\bcreate_function[\t ]*\([^)]/ nocase wide ascii
 		$cpayload12 = /\bReflectionFunction[\t ]*\([^)]/ nocase wide ascii
 		// TODO: $_GET['func_name']($_GET['argument']);
@@ -539,7 +537,7 @@ rule webshell_php_obfuscated_str_replace
 		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
 
 		// of course the new tags should also match
-		$php_new1 = "<?=" nocase wide ascii
+		$php_new1 = "<?=" wide ascii
 		$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
@@ -595,7 +593,7 @@ rule webshell_php_obfuscated_fopo
 		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
 
 		// of course the new tags should also match
-		$php_new1 = "<?=" nocase wide ascii
+		$php_new1 = "<?=" wide ascii
 		$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
@@ -665,7 +663,7 @@ rule webshell_php_obfuscated_2
 		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
 
 		// of course the new tags should also match
-		$php_new1 = "<?=" nocase wide ascii
+		$php_new1 = "<?=" wide ascii
 		$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
@@ -821,7 +819,7 @@ rule webshell_php_encoded_big
 		$cpayload7 = /\bproc_open[\t ]*\([^)]/ nocase wide ascii
 		$cpayload8 = /\bpcntl_exec[\t ]*\([^)]/ nocase wide ascii
 		$cpayload9 = /\bassert[\t ]*\([^)]/ nocase wide ascii
-		$cpayload10 = /\bpreg_replace[\t ]*\(.{1,1000}\/e/ nocase wide ascii
+		$cpayload10 = /\bpreg_replace[\t ]*\([^\)]1,1000}\/e/ nocase wide ascii
 		$cpayload11 = /\bcreate_function[\t ]*\([^)]/ nocase wide ascii
 		$cpayload12 = /\bReflectionFunction[\t ]*\([^)]/ nocase wide ascii
 		// TODO: $_GET['func_name']($_GET['argument']);
@@ -894,7 +892,7 @@ rule webshell_php_generic_backticks_obfuscated
 		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
 
 		// of course the new tags should also match
-		$php_new1 = "<?=" nocase wide ascii
+		$php_new1 = "<?=" wide ascii
 		$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
@@ -984,7 +982,7 @@ rule webshell_php_by_string
 		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
 
 		// of course the new tags should also match
-		$php_new1 = "<?=" nocase wide ascii
+		$php_new1 = "<?=" wide ascii
 		$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
@@ -1024,7 +1022,7 @@ rule webshell_php_strings_susp
 		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
 
 		// of course the new tags should also match
-		$php_new1 = "<?=" nocase wide ascii
+		$php_new1 = "<?=" wide ascii
 		$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
@@ -1929,7 +1927,7 @@ rule webshell_generic_os_strings
 		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
 
 		// of course the new tags should also match
-		$php_new1 = "<?=" nocase wide ascii
+		$php_new1 = "<?=" wide ascii
 		$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
