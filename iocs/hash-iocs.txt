@@ -9714,3 +9714,23 @@ bea90d0ef40a657cb291d25c4573768d;Threat Needle - Trojanized VNC Uploader - https
 fc9e7dc13ce7edc590ef7dfce12fe017;Threat Needle - Trojanized VNC Uploader - https://securelist.com/lazarus-threatneedle/100803/
 0aceeb2d38fe8b5ef2899dd6b80bfc08;Threat Needle - Trojanized VNC Uploader - https://securelist.com/lazarus-threatneedle/100803/ %TEMP%\ETS5659.tmp
 09580ea6f1fe941f1984b4e1e442e0a5;Threat Needle - Trojanized VNC Uploader - https://securelist.com/lazarus-threatneedle/100803/ %TEMP%\ETS4658.tmp
+
+95b78f4d3602aeea4f7a33c9f1b49a97;UNC2198 Activity - SYSTEMBC https://www.fireeye.com/blog/threat-research/2021/02/melting-unc2198-icedid-to-ransomware-operations.html
+0378897e4ec1d1ee4637cff110635141;UNC2198 Activity - SYSTEMBC https://www.fireeye.com/blog/threat-research/2021/02/melting-unc2198-icedid-to-ransomware-operations.html
+c803200ad4b9f91659e58f0617f0dafa;UNC2198 Activity - SYSTEMBC https://www.fireeye.com/blog/threat-research/2021/02/melting-unc2198-icedid-to-ransomware-operations.html
+ad4d445091a3b66af765a1d653fd1eb7;UNC2198 Activity - SYSTEMBC https://www.fireeye.com/blog/threat-research/2021/02/melting-unc2198-icedid-to-ransomware-operations.html
+9ecf25b1e9be0b20822fe25269fa5d02;UNC2198 Activity - SYSTEMBC https://www.fireeye.com/blog/threat-research/2021/02/melting-unc2198-icedid-to-ransomware-operations.html
+e319f5a8fe496c0c8247e27c3469b20d;UNC2198 Activity - SYSTEMBC https://www.fireeye.com/blog/threat-research/2021/02/melting-unc2198-icedid-to-ransomware-operations.html
+a8a7059278d82ce55949168fcd1ddde4;UNC2198 Activity - SYSTEMBC https://www.fireeye.com/blog/threat-research/2021/02/melting-unc2198-icedid-to-ransomware-operations.html
+aea530f8a0645419ce0abe1bf2dc1584;UNC2198 Activity - SYSTEMBC https://www.fireeye.com/blog/threat-research/2021/02/melting-unc2198-icedid-to-ransomware-operations.html
+3098fbc98e90d91805717d7a4f946c27;UNC2198 Activity - BEACON https://www.fireeye.com/blog/threat-research/2021/02/melting-unc2198-icedid-to-ransomware-operations.html
+e124cd26fcce258addc85d7f010655ea;UNC2198 Activity - BEACON https://www.fireeye.com/blog/threat-research/2021/02/melting-unc2198-icedid-to-ransomware-operations.html
+7ae990c12bf5228b6d1b90d40ad0a79f;UNC2198 Activity - BEACON https://www.fireeye.com/blog/threat-research/2021/02/melting-unc2198-icedid-to-ransomware-operations.html
+3eb552ede658ee77ee4631d35eac6b43;UNC2198 Activity - BEACON https://www.fireeye.com/blog/threat-research/2021/02/melting-unc2198-icedid-to-ransomware-operations.html
+c188c6145202b65a941c41e7ff2c9afd;UNC2198 Activity - BEACON https://www.fireeye.com/blog/threat-research/2021/02/melting-unc2198-icedid-to-ransomware-operations.html
+2f43055df845742d137a18b347f335a5;UNC2198 Activity - BEACON https://www.fireeye.com/blog/threat-research/2021/02/melting-unc2198-icedid-to-ransomware-operations.html
+87dc37e0edb39c077c4d4d8f1451402c;UNC2198 Activity - ICEDID https://www.fireeye.com/blog/threat-research/2021/02/melting-unc2198-icedid-to-ransomware-operations.html
+1efababd1d6bd869f005f92799113f42;UNC2198 Activity - ICEDID https://www.fireeye.com/blog/threat-research/2021/02/melting-unc2198-icedid-to-ransomware-operations.html
+a64e7dd557e7eab3513c9a5f31003e68;UNC2198 Activity - ICEDID https://www.fireeye.com/blog/threat-research/2021/02/melting-unc2198-icedid-to-ransomware-operations.html
+9760913fb7948f2983831d71a533a650;UNC2198 Activity - ICEDID https://www.fireeye.com/blog/threat-research/2021/02/melting-unc2198-icedid-to-ransomware-operations.html
+14467102f8aa0a0d95d0f3c0ce5f0b59;UNC2198 Activity - ICEDID https://www.fireeye.com/blog/threat-research/2021/02/melting-unc2198-icedid-to-ransomware-operations.html
