@@ -1,7 +1,7 @@
 
-rule MAL_Netsha_Mar20_1 {
+rule MAL_Neshta_Mar20_1 {
    meta:
-      description = "Detects Netsha malware"
+      description = "Detects Neshta malware"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2020-03-24"
@@ -19,9 +19,9 @@ rule MAL_Netsha_Mar20_1 {
       1 of ($x*) or 3 of them
 }
 
-rule MAL_Netsha_Feb20_1 {
+rule MAL_Neshta_Feb20_1 {
    meta:
-      description = "Detects Netsha malware"
+      description = "Detects Neshta malware"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2020-02-24"

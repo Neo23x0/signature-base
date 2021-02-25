@@ -9620,3 +9620,97 @@ b32319da446dcf83378ab714f5ad0229dff43c9c6b345b69f1a397c951c1122e;Lazarus campaig
 11fef660dec27474c0c6c856a7b4619155821fdd1ce404848513a2700be806a5;Lazarus campaign against researchers - Klackring malware - https://www.microsoft.com/security/blog/2021/01/28/zinc-attacks-against-security-researchers/
 9e562cc5c3eb48a5f1a1ccd29bf4b2ff4ab946f45aa5d8ea170f69104b684023;Lazarus campaign against researchers - Klackring malware - https://www.microsoft.com/security/blog/2021/01/28/zinc-attacks-against-security-researchers/
 58a74dceb2022cd8a358b92acd1b48a5e01c524c3b0195d7033e4bd55eff4495;Lazarus campaign against researchers - viaglt64.sys – Vulnerable Vir.IT driver for CVE-2017-16238 - https://www.microsoft.com/security/blog/2021/01/28/zinc-attacks-against-security-researchers/
+5e54bccbd4d93447e79cda0558b0b308a186c2be571c739e5460a3cb6ef665c0;AppleJues Campaign (Updater) - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+6ee19085ad5c17f989616d17ef68041910b3d0cbcf7e08cc7d7c1a1cb09e6b69;AppleJues Campaign (celastradepro_win_installer_1....) - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+a84ed8ce714dff76b48b26414de9f045de561146d7eaa09019cbfbb2586c9765;AppleJues Campaign (CelasTradePro.exe) - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+bdff852398f174e9eef1db1c2d3fefdda25fe0ea90a40a2e06e51b5c0ebd69eb;AppleJues Campaign (Updater.exe) - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+c0c2239138b9bc659b5bddd8f49fa3f3074b65df8f3a2f639f7c632d2306af70;AppleJues Campaign (CelasTradePro) - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+d404c0a634cef0d32029286fde8efccb6dfe1809066bbec7ac32d42c5ce3bc04;AppleJues Campaign (celastradepro_mac_installer_1....) - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+07c38ca1e0370421f74c949507fc0d21f4cfcb5866a4f9c0751aefa0d6e97542;AppleJues Campaign (jmttrader.msi) - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+081d1739422bf050755e6af269a717681274821cea8becb0962d4db61869c5d6;AppleJues Campaign (JMTTrader.exe) - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+4d6078fc1ea6d3cd65c3ceabf65961689c5bc2d81f18c55b859211a60c141806;AppleJues Campaign (jmttrader_mac.dmg) - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+7ea6391c11077a0f2633104193ec08617eb6321a32ac30c641f1650c35eed0ea;AppleJues Campaign (JMTTrader) - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+9bf8e8ac82b8f7c3707eb12e77f94cd0e06a972658610d136993235cbfa53641;AppleJues Campaign (CrashReporter.exe) - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+e352d6ea4da596abfdf51f617584611fc9321d5a6d1c22aff243aecdef8e7e55;AppleJues Campaign (CrashReporter) - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+e3623c2440b692f6b557a862719dc95f41d2e9ad7b560e837d3b59bfe4b8b774;AppleJues Campaign - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+af4144c1f0236e6b59f40d88635ec54c2ef8034f6a96a83f5dbfd6b8ea2c0d49;AppleJues Campaign - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+0967d2f122a797661c90bc4fc00d23b4a29f66129611b4aa76f62d8a15854d36;AppleJues Campaign - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+01c13f825ec6366ac2b6dd80e5589568fa5c8685cb4d924d1408e3d7c178902f;AppleJues Campaign - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+755bd7a3765efceb8183ffade090ef2637a85c4505f8078dda116013dd5758f3;AppleJues Campaign - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+2ab58b7ce583402bf4cbc90bee643ba5f9503461f91574845264d4f7e3ccb390;AppleJues Campaign - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+6f45a004ad6bb087f733feb618e115fe88164f6db9562cb9b428372c9add75f0;AppleJues Campaign - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+631ac269925bb72b5ad8f469062309541e1edfec5610a21eecded75a35e65680;AppleJues Campaign - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+0bc7517aa2f0c1820ced399bfd66b993f10ad77e8d72727b0f3dc1ca35cad7ba;AppleJues Campaign (kupay_upgrade) - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+1b60a6d35c872102f535ae6a3d7669fb7d55c43dc7e73354423fdcca01a955d6;AppleJues Campaign (Kupay.exe) - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+91eaf215be336eae983d069de16630cc3580e222c427f785e0da312d0692d0fd;AppleJues Campaign (kupayupdate_stage2) - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+fc1aafd2ed190fa523e60c3d22b6f7ca049d97fc41c9a2fe987576d6b5e81d6d;AppleJues Campaign (KupayUpgrade.exe) - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+326d7836d580c08cf4b5e587434f6e5011ebf2284bbf3e7c083a8f41dac36ddd;AppleJues Campaign (CoinGoTradeUpgradeDaemon) - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+3e5442440aea07229a1bf6ca2fdf78c5e2e5eaac312a325ccb49d45da14f97f4;AppleJues Campaign (CoinGoTrade.exe) - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+527792dfab79f026eaa6930d2109c93e816ed31826dba0338a9223db71aced18;AppleJues Campaign (CoinGo_Trade) - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+572a124f5665be68eaa472590f3ba75bf34b0ea2942b5fcbfd3e74654202dd09;AppleJues Campaign (CoinGoTradeUpdate.exe) - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+5e40d106977017b1ed235419b1e59ff090e1f43ac57da1bb5d80d66ae53b1df8;AppleJues Campaign (prtspool) - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+21afaceee5fab15948a5a724222c948ad17cad181bf514a680267abcce186831;AppleJues Campaign (DorusioUpgrade.exe) - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+78b56a1385f2a92f3c9404f71731088646aac6c2c84cc19a449976272dab418f;AppleJues Campaign (Dorusio.exe) - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+dcb232409c799f6ddfe4bc0566161c2d0b372db6095a0018e6059e34c2b79c61;AppleJues Campaign (dorusio_upgrade) - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+bb430087484c1f4587c54efc75681eb60cf70956ef2a999a75ce7b563b8bd694;AppleJues Campaign (Ants2WhaleHelper) - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+d5ac680e14b013e0624470da7f46e84809d00b59a7544f6a42b110cf0e29254e;AppleJues Campaign (Ants2Whale) - https://us-cert.cisa.gov/ncas/alerts/aa21-048a
+
+
+b191cc4d73a247afe0a62a8c38dc9137;Threat Needle - Installer - %APPDATA%\Microsoft\DRM\logon.bin https://securelist.com/lazarus-threatneedle/100803/
+9e440e231ef2c62c78147169a26a1bd3;Threat Needle - Installer - C:\ProgramData\ntnser.bin https://securelist.com/lazarus-threatneedle/100803/
+b7cc295767c1d8c6c68b1bb6c4b4214f;Threat Needle - Installer - C:\ProgramData\ntnser.bin https://securelist.com/lazarus-threatneedle/100803/
+0f967343e50500494cf3481ce4de698c;Threat Needle - Installer - C:\ProgramData\Microsoft\MSDN\msdn.bin https://securelist.com/lazarus-threatneedle/100803/
+09aa1427f26e7dd48955f09a9c604564;Threat Needle - Installer - %APPDATA\Microsoft\info.dat https://securelist.com/lazarus-threatneedle/100803/
+07b22533d08f32d48485a521dbc1974d;Threat Needle - Installer - C:\ProgramData\adobe\load.dat https://securelist.com/lazarus-threatneedle/100803/
+1c5e4d60a1041cf2903817a31c1fa212;Threat Needle - Installer - C:\ProgramData\Adobe\adobe.tmp https://securelist.com/lazarus-threatneedle/100803/
+4cebc83229a40c25434c51ee3d6be13e;Threat Needle - Installer - C:\ProgramData\Adobe\up.tmp https://securelist.com/lazarus-threatneedle/100803/
+23b04b18c75aa7d286fea5d28d41a830;Threat Needle - Installer - %APPDATA%\Microsoft\DRM\logon.dat https://securelist.com/lazarus-threatneedle/100803/
+319ace20f6ffd39b7fff1444f73c9f5d;Threat Needle - Installer - %APPDATA%\Microsoft\DRM\logon.bin https://securelist.com/lazarus-threatneedle/100803/
+45c0a6e13cad26c69eff59fded88ef36;Threat Needle - Installer - %APPDATA%\Microsoft\DRM\logon.dat https://securelist.com/lazarus-threatneedle/100803/
+486f25db5ca980ef4a7f6dfbf9e2a1ad;Threat Needle - Installer - C:\ProgramData\ntusers.dat https://securelist.com/lazarus-threatneedle/100803/
+1333967486d3ab50d768fb745dae9af5;Threat Needle - Installer - C:\PerfLogs\log.bin https://securelist.com/lazarus-threatneedle/100803/
+07b22533d08f32d48485a521dbc1974d;Threat Needle - Installer - C:\ProgramData\Adobe\load.dat https://securelist.com/lazarus-threatneedle/100803/
+c86d0a2fa9c4ef59aa09e2435b4ab70c;Threat Needle - Installer - %TEMP%\ETS4659.tmp https://securelist.com/lazarus-threatneedle/100803/
+69d71f06fbfe177fb1a5f57b9c3ae587;Threat Needle - Installer - %APPDATA%\Microsoft\Windows\shsvcs.db https://securelist.com/lazarus-threatneedle/100803/
+7bad67dcaf269f9ee18869e5ef6b2dc1;Threat Needle - Installer - https://securelist.com/lazarus-threatneedle/100803/
+956e5138940a4f44d1c2c24f122966bd;Threat Needle - Installer - %APPDATA%\ntuser.bin https://securelist.com/lazarus-threatneedle/100803/
+ed627b7bbf7ea78c343e9fb99783c62b;Threat Needle - Loader - https://securelist.com/lazarus-threatneedle/100803/  
+1a17609b7df20dcb3bd1b71b7cb3c674;Threat Needle - Loader - https://securelist.com/lazarus-threatneedle/100803/ %ALLUSERSPROFILE%\ntuser.bin
+fa9635b479a79a3e3fba3d9e65b842c3;Threat Needle - Loader - https://securelist.com/lazarus-threatneedle/100803/  
+3758bda17b20010ff864575b0ccd9e50;Threat Needle - Loader - https://securelist.com/lazarus-threatneedle/100803/ %SYSTEMROOT%\system\mraudio.drv
+cbcf15e272c422b029fcf1b82709e333;Threat Needle - Loader - https://securelist.com/lazarus-threatneedle/100803/ %SYSTEMROOT%\system\mraudio.drv
+9cb513684f1024bea912e539e482473a;Threat Needle - Loader - https://securelist.com/lazarus-threatneedle/100803/  
+36ab0902797bd18acd6880040369731c;Threat Needle - Loader - https://securelist.com/lazarus-threatneedle/100803/ %SYSTEMROOT%\LogonHours.sys
+db35391857bcf7b0fa17dbbed97ad269;Threat Needle - Loader - https://securelist.com/lazarus-threatneedle/100803/ %ALLUSERSPROFILE%\Adobe\update.tmp
+be4c927f636d2ae88a1e0786551bf3c4;Threat Needle - Loader - https://securelist.com/lazarus-threatneedle/100803/ %ALLUSERSPROFILE%\Adobe\unpack.tmp
+728948c66582858f6a3d3136c7fbe84a;Threat Needle - Loader - https://securelist.com/lazarus-threatneedle/100803/ %APPDATA%\Microsoft\IBM.DAT
+06af39b9954dfe9ac5e4ec397a3003fb;Threat Needle - Loader - https://securelist.com/lazarus-threatneedle/100803/  
+29c5eb3f17273383782c716754a3025a;Threat Needle - Loader - https://securelist.com/lazarus-threatneedle/100803/  
+79d58b6e850647024fea1c53e997a3f6;Threat Needle - Loader - https://securelist.com/lazarus-threatneedle/100803/  
+e604185ee40264da4b7d10fdb6c7ab5e;Threat Needle - Loader - https://securelist.com/lazarus-threatneedle/100803/  
+2a73d232334e9956d5b712cc74e01753;Threat Needle - Loader - https://securelist.com/lazarus-threatneedle/100803/  
+1a17609b7df20dcb3bd1b71b7cb3c674;Threat Needle - Loader - https://securelist.com/lazarus-threatneedle/100803/ %ALLUSERSPROFILE%\ntuser.bin
+459be1d21a026d5ac3580888c8239b07;Threat Needle - Loader - https://securelist.com/lazarus-threatneedle/100803/ %ALLUSERSPROFILE%\ntuser.bin
+87fb7be83eff9bea0d6cc95d68865564;Threat Needle - Loader - https://securelist.com/lazarus-threatneedle/100803/ %SYSTEMROOT%\SysWOW64\wmdmpmsp.sys
+062a40e74f8033138d19aa94f0d0ed6e;Threat Needle - Loader - https://securelist.com/lazarus-threatneedle/100803/ %APPDATA%\microsoft\OutIook.db
+9b17f0db7aeff5d479eaee8056b9ac09;Threat Needle - Loader - https://securelist.com/lazarus-threatneedle/100803/ %TEMP%\ETS4658.tmp, %APPDATA%\Temp\BTM0345.tmp
+9b17f0db7aeff5d479eaee8056b9ac09;Threat Needle - Loader - https://securelist.com/lazarus-threatneedle/100803/ %APPDATA%\Temp\BTM0345.tmp
+420d91db69b83ac9ca3be23f6b3a620b;Threat Needle - Loader - https://securelist.com/lazarus-threatneedle/100803/  
+238e31b562418c236ed1a0445016117c;Threat Needle - Loader - https://securelist.com/lazarus-threatneedle/100803/ %APPDATA%\Microsoft\Windows\lconcaches.db, %TEMP%\cache.db
+36ab0902797bd18acd6880040369731c;Threat Needle - Loader - https://securelist.com/lazarus-threatneedle/100803/  
+238e31b562418c236ed1a0445016117c;Threat Needle - Loader - https://securelist.com/lazarus-threatneedle/100803/ %TEMP%\cache.db, %APPDATA%\Microsoft\Windows\lconcaches.db
+ad1a93d6e6b8a4f6956186c213494d17;Threat Needle - Loader - https://securelist.com/lazarus-threatneedle/100803/ %APPDATA%\Microsoft\Windows\shsvcs.db
+c34d5d2cc857b6ee9038d8bb107800f1;Threat Needle - Loader - https://securelist.com/lazarus-threatneedle/100803/  
+16824dfd4a380699f3841a6fa7e52c6d;Threat Needle - Registry Loader - https://securelist.com/lazarus-threatneedle/100803/  
+aa74ed16b0057b31c835a5ef8a105942;Threat Needle - Registry Loader - https://securelist.com/lazarus-threatneedle/100803/  
+85621411e4c80897c588b5df53d26270;Threat Needle - Registry Loader - https://securelist.com/lazarus-threatneedle/100803/ %SYSTEMROOT%\system\avimovie.dll
+a611d023dfdd7ca1fab07f976d2b6629;Threat Needle - Registry Loader - https://securelist.com/lazarus-threatneedle/100803/  
+160d0e396bf8ec87930a5df46469a960;Threat Needle - Registry Loader - https://securelist.com/lazarus-threatneedle/100803/ %WINDIR%\winhelp.dll
+110e1c46fd9a39a1c86292487994e5bd;Threat Needle - Registry Loader - https://securelist.com/lazarus-threatneedle/100803/  
+ac86d95e959452d189e30fa6ded05069;Threat Needle - Downloader https://securelist.com/lazarus-threatneedle/100803/ %APPDATA%\Microsoft\thumbnails.db
+bea90d0ef40a657cb291d25c4573768d;Threat Needle - Trojanized VNC Uploader - https://securelist.com/lazarus-threatneedle/100803/ %ALLUSERSPROFILE%\adobe\arm86.dat
+254a7a0c1db2bea788ca826f4b5bf51a;Threat Needle - Trojanized VNC Uploader - https://securelist.com/lazarus-threatneedle/100803/ %APPDATA%\PBL\user.tmp, %APPDATA%\Comms\Comms.dat
+6f0c7cbd57439e391c93a2101f958ccd;Threat Needle - Trojanized VNC Uploader - https://securelist.com/lazarus-threatneedle/100803/ %APPDATA\PBL\update.tmp
+fc9e7dc13ce7edc590ef7dfce12fe017;Threat Needle - Trojanized VNC Uploader - https://securelist.com/lazarus-threatneedle/100803/
+0aceeb2d38fe8b5ef2899dd6b80bfc08;Threat Needle - Trojanized VNC Uploader - https://securelist.com/lazarus-threatneedle/100803/ %TEMP%\ETS5659.tmp
+09580ea6f1fe941f1984b4e1e442e0a5;Threat Needle - Trojanized VNC Uploader - https://securelist.com/lazarus-threatneedle/100803/ %TEMP%\ETS4658.tmp
