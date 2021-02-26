@@ -188,7 +188,7 @@ rule DomainScanV1_0 {
       all of them
 }
 
-rule MooreR_Port_Scanner {
+rule HKTL_MooreR_Port_Scanner {
    meta:
       description = "Auto-generated rule on file MooreR Port Scanner.exe"
       author = "yarGen Yara Rule Generator by Florian Roth"

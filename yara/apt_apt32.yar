@@ -1,3 +1,4 @@
+import "pe"
 
 rule EXT_APT32_goopdate_installer {
   meta:
