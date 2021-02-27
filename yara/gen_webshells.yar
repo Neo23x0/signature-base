@@ -75,6 +75,8 @@ Old signature-base rules found: 1315
 This rules found: 3286
 False positives in 8gb of common webapps plus yara-ci: 2
 
+TODO: move "not php_false_positive" down once https://github.com/plyara/plyara/pull/114 is merged
+
 */
 
 rule webshell_php_generic_tiny
@@ -88,6 +90,21 @@ rule webshell_php_generic_tiny
 
 	strings:
 
+		//strings from private rule capa_php_old_safe
+		$php_short = "<?" wide ascii
+		// prevent xml and asp from hitting with the short tag
+		$no_xml1 = "<?xml version" nocase wide ascii
+		$no_xml2 = "<?xml-stylesheet" nocase wide ascii
+		$no_asp1 = "<%@LANGUAGE" nocase wide ascii
+		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
+		$no_pdf = "<?xpacket" 
+
+		// of course the new tags should also match
+        // already matched by "<?"
+		//$php_new1 = "<?=" wide ascii
+		//$php_new2 = "<?php" nocase wide ascii
+		$php_new3 = "<script language=\"php" nocase wide ascii
+	
 		//strings from private rule capa_php_input
 		$inp1 = "php://input" wide ascii
 		$inp2 = "_GET[" wide ascii
@@ -115,19 +132,34 @@ rule webshell_php_generic_tiny
 		// TODO: $_GET['func_name']($_GET['argument']);
 		// TODO backticks
 	
-		//strings from private rule php_false_positive
+		//strings from private rule php_false_positive_tiny
 		// try to use only strings which would be flagged by themselves as suspicous by other rules, e.g. eval 
-		$gfp1 = "eval(\"return [$serialised_parameter" wide ascii // elgg
+		$gfp_tiny1 = "addslashes" fullword
+		$gfp_tiny2 = "escapeshellarg" fullword
+		$gfp_tiny3 = "include \"./common.php\";" // xcache
+		$gfp_tiny4 = "assert('FALSE');"
+		$gfp_tiny5 = "assert(false);"
+		$gfp_tiny6 = "assert(FALSE);"
 	
 	condition:
 		filesize < 1000 and ( 
+			(
+				( 
+						$php_short in (0..100) or 
+						$php_short in (filesize-1000..filesize)
+				)
+				and not any of ( $no_* )
+			) 
+			or any of ( $php_new* ) 
+		)
+		and ( 
 			any of ( $inp* ) 
 		)
 		and ( 
 			any of ( $cpayload* ) 
 		)
 		and not ( 
-			any of ( $gfp* ) 
+			any of ( $gfp_tiny* ) 
 		)
 		
 }
@@ -143,6 +175,27 @@ rule webshell_php_generic_callback_tiny
 
 	strings:
 
+		//strings from private rule php_false_positive
+		// try to use only strings which would be flagged by themselves as suspicous by other rules, e.g. eval 
+		$gfp1  = "eval(\"return [$serialised_parameter" // elgg
+		$gfp2  = "$this->assert(strpos($styles, $"
+		$gfp3  = "$module = new $_GET['module']($_GET['scope']);"
+		$gfp4  = "$plugin->$_POST['action']($_POST['id']);"
+		$gfp5  = "$_POST[partition_by]($_POST["
+		$gfp6  = "$object = new $_REQUEST['type']($_REQUEST['id']);"
+		$gfp7  = "The above example code can be easily exploited by passing in a string such as" // ... ;)
+		$gfp8  = "Smarty_Internal_Debug::start_render($_template);"
+		$gfp9  = "?p4yl04d=UNION%20SELECT%20'<?%20system($_GET['command']);%20?>',2,3%20INTO%20OUTFILE%20'/var/www/w3bsh3ll.php"
+	
+		//strings from private rule php_false_positive_tiny
+		// try to use only strings which would be flagged by themselves as suspicous by other rules, e.g. eval 
+		$gfp_tiny1 = "addslashes" fullword
+		$gfp_tiny2 = "escapeshellarg" fullword
+		$gfp_tiny3 = "include \"./common.php\";" // xcache
+		$gfp_tiny4 = "assert('FALSE');"
+		$gfp_tiny5 = "assert(false);"
+		$gfp_tiny6 = "assert(FALSE);"
+	
 		//strings from private rule capa_php_input
 		$inp1 = "php://input" wide ascii
 		$inp2 = "_GET[" wide ascii
@@ -189,20 +242,19 @@ rule webshell_php_generic_callback_tiny
 
 		$cfp1 = /ob_start\(['\"]ob_gzhandler/ nocase wide ascii
 	
-		//strings from private rule php_false_positive
-		// try to use only strings which would be flagged by themselves as suspicous by other rules, e.g. eval 
-		$gfp1 = "eval(\"return [$serialised_parameter" wide ascii // elgg
-	
 	condition:
-		filesize < 1000 and ( 
+		filesize < 1000 and not ( 
+			any of ( $gfp* ) 
+		)
+		and not ( 
+			any of ( $gfp_tiny* ) 
+		)
+		and ( 
 			any of ( $inp* ) 
 		)
 		and ( 
 			any of ( $callback* ) and
 			not any of ( $cfp* ) 
-		)
-		and not ( 
-			any of ( $gfp* ) 
 		)
 		
 }
@@ -217,7 +269,8 @@ rule webshell_php_generic_nano_input
 		date = "2021/01/13"
 
 	strings:
-		$fp1 = "echo $_POST['" wide ascii
+		$fp1 = "echo $_POST['" 
+		$fp2 = "$http_raw_post_data = file_get_contents('php://input');"
 	
 		//strings from private rule capa_php
 		// this will hit on a lot of non-php files, asp, scripting templates, ... but it works on older php versions
@@ -318,6 +371,19 @@ rule webshell_php_base64_encoded_payloads
 		$nine4 = "EAcwBzAGUAcgB0A"
 		$nine5 = "hAHMAcwBlAHIAdA"
 		$nine6 = "YQBzAHMAZQByAHQA"
+
+        // false positives
+
+        // execu
+        $execu1 = "leGVjd"
+		$execu2 = "V4ZWN1"
+		$execu3 = "ZXhlY3"
+
+        // esystem like e.g. filesystem
+        $esystem1 = "lc3lzdGVt"
+		$esystem2 = "VzeXN0ZW"
+		$esystem3 = "ZXN5c3Rlb"
+
 	
 		//strings from private rule capa_php_old_safe
 		$php_short = "<?" wide ascii
@@ -326,10 +392,12 @@ rule webshell_php_base64_encoded_payloads
 		$no_xml2 = "<?xml-stylesheet" nocase wide ascii
 		$no_asp1 = "<%@LANGUAGE" nocase wide ascii
 		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
+		$no_pdf = "<?xpacket" 
 
 		// of course the new tags should also match
-		$php_new1 = "<?=" wide ascii
-		$php_new2 = "<?php" nocase wide ascii
+        // already matched by "<?"
+		//$php_new1 = "<?=" wide ascii
+		//$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
 	condition:
@@ -344,7 +412,8 @@ rule webshell_php_base64_encoded_payloads
 			or any of ( $php_new* ) 
 		)
 		and $decode and 
-		( any of ( $one* ) or any of ( $two* ) or any of ( $three* ) or any of ( $four* ) or any of ( $five* ) or any of ( $six* ) or any of ( $seven* ) or any of ( $eight* ) or any of ( $nine* ) )
+		( ( any of ( $one* ) and not any of ( $execu* ) ) or any of ( $two* ) or any of ( $three* ) or 
+		( any of ( $four* ) and not any of ( $esystem* ) ) or any of ( $five* ) or any of ( $six* ) or any of ( $seven* ) or any of ( $eight* ) or any of ( $nine* ) )
 }
 
 rule webshell_php_unknown_1
@@ -379,9 +448,24 @@ rule webshell_php_generic_eval
 
 	strings:
 		$geval = /(exec|shell_exec|passthru|system|popen|proc_open|pcntl_exec|eval|assert)[\t ]*(stripslashes\()?[\t ]*(trim\()?[\t ]*\(\$(_POST|_GET|_REQUEST|_SERVER\[['"]HTTP_)/ wide ascii
-
+	
+		//strings from private rule php_false_positive
+		// try to use only strings which would be flagged by themselves as suspicous by other rules, e.g. eval 
+		$gfp1  = "eval(\"return [$serialised_parameter" // elgg
+		$gfp2  = "$this->assert(strpos($styles, $"
+		$gfp3  = "$module = new $_GET['module']($_GET['scope']);"
+		$gfp4  = "$plugin->$_POST['action']($_POST['id']);"
+		$gfp5  = "$_POST[partition_by]($_POST["
+		$gfp6  = "$object = new $_REQUEST['type']($_REQUEST['id']);"
+		$gfp7  = "The above example code can be easily exploited by passing in a string such as" // ... ;)
+		$gfp8  = "Smarty_Internal_Debug::start_render($_template);"
+		$gfp9  = "?p4yl04d=UNION%20SELECT%20'<?%20system($_GET['command']);%20?>',2,3%20INTO%20OUTFILE%20'/var/www/w3bsh3ll.php"
+	
 	condition:
-		filesize <300KB and $geval
+		filesize < 300KB and not ( 
+			any of ( $gfp* ) 
+		)
+		and $geval
 }
 
 rule webshell_php_double_eval_tiny
@@ -428,10 +512,12 @@ rule webshell_php_obfuscated
 		$no_xml2 = "<?xml-stylesheet" nocase wide ascii
 		$no_asp1 = "<%@LANGUAGE" nocase wide ascii
 		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
+		$no_pdf = "<?xpacket" 
 
 		// of course the new tags should also match
-		$php_new1 = "<?=" wide ascii
-		$php_new2 = "<?php" nocase wide ascii
+        // already matched by "<?"
+		//$php_new1 = "<?=" wide ascii
+		//$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
 		//strings from private rule capa_php_obfuscation_multi
@@ -439,14 +525,26 @@ rule webshell_php_obfuscated
 		$o2 = "chr (" nocase wide ascii
 		// not excactly a string function but also often used in obfuscation
 		$o3 = "goto" fullword nocase wide ascii
-		$o4 = "\\x1" wide ascii
-		$o5 = "\\x2" wide ascii
+		$o4 = "\\x9" wide ascii
+		$o5 = "\\x3" wide ascii
 		// just picking some random numbers because they should appear often enough in a long obfuscated blob and it's faster than a regex
 		$o6 = "\\61" wide ascii
 		$o7 = "\\44" wide ascii
 		$o8 = "\\112" wide ascii
 		$o9 = "\\120" wide ascii
 		$fp1 = "$goto" wide ascii
+	
+		//strings from private rule php_false_positive
+		// try to use only strings which would be flagged by themselves as suspicous by other rules, e.g. eval 
+		$gfp1  = "eval(\"return [$serialised_parameter" // elgg
+		$gfp2  = "$this->assert(strpos($styles, $"
+		$gfp3  = "$module = new $_GET['module']($_GET['scope']);"
+		$gfp4  = "$plugin->$_POST['action']($_POST['id']);"
+		$gfp5  = "$_POST[partition_by]($_POST["
+		$gfp6  = "$object = new $_REQUEST['type']($_REQUEST['id']);"
+		$gfp7  = "The above example code can be easily exploited by passing in a string such as" // ... ;)
+		$gfp8  = "Smarty_Internal_Debug::start_render($_template);"
+		$gfp9  = "?p4yl04d=UNION%20SELECT%20'<?%20system($_GET['command']);%20?>',2,3%20INTO%20OUTFILE%20'/var/www/w3bsh3ll.php"
 	
 		//strings from private rule capa_php_payload
 		// \([^)] to avoid matching on e.g. eval() in comments
@@ -490,7 +588,7 @@ rule webshell_php_obfuscated
 						filesize < 200KB and 
 						(
 							( #o1+#o2 ) > 200 or
-							#o3 > 10 or
+							#o3 > 30 or
 							( #o4+#o5+#o6+#o7+#o8+#o9 ) > 30 
 						) 
 
@@ -498,6 +596,9 @@ rule webshell_php_obfuscated
 			)
 
  
+		)
+		and not ( 
+			any of ( $gfp* ) 
 		)
 		and ( 
 			any of ( $cpayload* ) 
@@ -535,10 +636,12 @@ rule webshell_php_obfuscated_str_replace
 		$no_xml2 = "<?xml-stylesheet" nocase wide ascii
 		$no_asp1 = "<%@LANGUAGE" nocase wide ascii
 		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
+		$no_pdf = "<?xpacket" 
 
 		// of course the new tags should also match
-		$php_new1 = "<?=" wide ascii
-		$php_new2 = "<?php" nocase wide ascii
+        // already matched by "<?"
+		//$php_new1 = "<?=" wide ascii
+		//$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
 	condition:
@@ -591,10 +694,12 @@ rule webshell_php_obfuscated_fopo
 		$no_xml2 = "<?xml-stylesheet" nocase wide ascii
 		$no_asp1 = "<%@LANGUAGE" nocase wide ascii
 		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
+		$no_pdf = "<?xpacket" 
 
 		// of course the new tags should also match
-		$php_new1 = "<?=" wide ascii
-		$php_new2 = "<?php" nocase wide ascii
+        // already matched by "<?"
+		//$php_new1 = "<?=" wide ascii
+		//$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
 	condition:
@@ -661,10 +766,12 @@ rule webshell_php_obfuscated_2
 		$no_xml2 = "<?xml-stylesheet" nocase wide ascii
 		$no_asp1 = "<%@LANGUAGE" nocase wide ascii
 		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
+		$no_pdf = "<?xpacket" 
 
 		// of course the new tags should also match
-		$php_new1 = "<?=" wide ascii
-		$php_new2 = "<?php" nocase wide ascii
+        // already matched by "<?"
+		//$php_new1 = "<?=" wide ascii
+		//$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
 	condition:
@@ -890,10 +997,12 @@ rule webshell_php_generic_backticks_obfuscated
 		$no_xml2 = "<?xml-stylesheet" nocase wide ascii
 		$no_asp1 = "<%@LANGUAGE" nocase wide ascii
 		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
+		$no_pdf = "<?xpacket" 
 
 		// of course the new tags should also match
-		$php_new1 = "<?=" wide ascii
-		$php_new2 = "<?php" nocase wide ascii
+        // already matched by "<?"
+		//$php_new1 = "<?=" wide ascii
+		//$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
 	condition:
@@ -954,8 +1063,7 @@ rule webshell_php_by_string
 		// crawler avoid string
 		$pbs30 = "bot|spider|crawler|slurp|teoma|archive|track|snoopy|java|lwp|wget|curl|client|python|libwww" wide ascii
 		$pbs31 = "'ev'.'al'" nocase wide ascii
-		$pbs32 = "<?php eval(" nocase wide ascii
-		$pbs33 = "eval/*" nocase wide ascii
+		$pbs32 = "eval/*" nocase wide ascii
 		$pbs34 = "assert/*" nocase wide ascii
 		// <?=($pbs_=@$_GET[2]).@$_($_GET[1])?>
 		$pbs35 = /@\$_GET\[\d\]\)\.@\$_\(\$_GET\[\d\]\)/ wide ascii
@@ -972,6 +1080,7 @@ rule webshell_php_by_string
 		$pbs46 = "'G'.'E'.'T'" wide ascii
 		$pbs47 = "'R'.'E'.'Q'.'U'" wide ascii
 		$pbs48 = "se'.(32*2)"
+		$front1 = "<?php eval(" nocase wide ascii
 	
 		//strings from private rule capa_php_old_safe
 		$php_short = "<?" wide ascii
@@ -980,10 +1089,12 @@ rule webshell_php_by_string
 		$no_xml2 = "<?xml-stylesheet" nocase wide ascii
 		$no_asp1 = "<%@LANGUAGE" nocase wide ascii
 		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
+		$no_pdf = "<?xpacket" 
 
 		// of course the new tags should also match
-		$php_new1 = "<?=" wide ascii
-		$php_new2 = "<?php" nocase wide ascii
+        // already matched by "<?"
+		//$php_new1 = "<?=" wide ascii
+		//$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
 	condition:
@@ -997,7 +1108,8 @@ rule webshell_php_by_string
 			) 
 			or any of ( $php_new* ) 
 		)
-		and any of ( $pbs* )
+		and 
+		( any of ( $pbs* ) or $front1 in ( 0 .. 60 ) )
 }
 
 rule webshell_php_strings_susp
@@ -1020,11 +1132,25 @@ rule webshell_php_strings_susp
 		$no_xml2 = "<?xml-stylesheet" nocase wide ascii
 		$no_asp1 = "<%@LANGUAGE" nocase wide ascii
 		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
+		$no_pdf = "<?xpacket" 
 
 		// of course the new tags should also match
-		$php_new1 = "<?=" wide ascii
-		$php_new2 = "<?php" nocase wide ascii
+        // already matched by "<?"
+		//$php_new1 = "<?=" wide ascii
+		//$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
+	
+		//strings from private rule php_false_positive
+		// try to use only strings which would be flagged by themselves as suspicous by other rules, e.g. eval 
+		$gfp1  = "eval(\"return [$serialised_parameter" // elgg
+		$gfp2  = "$this->assert(strpos($styles, $"
+		$gfp3  = "$module = new $_GET['module']($_GET['scope']);"
+		$gfp4  = "$plugin->$_POST['action']($_POST['id']);"
+		$gfp5  = "$_POST[partition_by]($_POST["
+		$gfp6  = "$object = new $_REQUEST['type']($_REQUEST['id']);"
+		$gfp7  = "The above example code can be easily exploited by passing in a string such as" // ... ;)
+		$gfp8  = "Smarty_Internal_Debug::start_render($_template);"
+		$gfp9  = "?p4yl04d=UNION%20SELECT%20'<?%20system($_GET['command']);%20?>',2,3%20INTO%20OUTFILE%20'/var/www/w3bsh3ll.php"
 	
 		//strings from private rule capa_php_input
 		$inp1 = "php://input" wide ascii
@@ -1046,6 +1172,9 @@ rule webshell_php_strings_susp
 				and not any of ( $no_* )
 			) 
 			or any of ( $php_new* ) 
+		)
+		and not ( 
+			any of ( $gfp* ) 
 		)
 		and 
 		( 2 of ( $sstring* ) or 
@@ -1088,9 +1217,24 @@ rule webshell_php_func_in_get
 		$sr3 = /\$_GET\[.{1,30}\]\(\$_POST\[/ wide ascii
 		$sr4 = /\$_REQUEST\[.{1,30}\]\(\$_REQUEST\[/ wide ascii
 		$sr5 = /\$_SERVER\[HTTP_.{1,30}\]\(\$_SERVER\[HTTP_/ wide ascii
-
+	
+		//strings from private rule php_false_positive
+		// try to use only strings which would be flagged by themselves as suspicous by other rules, e.g. eval 
+		$gfp1  = "eval(\"return [$serialised_parameter" // elgg
+		$gfp2  = "$this->assert(strpos($styles, $"
+		$gfp3  = "$module = new $_GET['module']($_GET['scope']);"
+		$gfp4  = "$plugin->$_POST['action']($_POST['id']);"
+		$gfp5  = "$_POST[partition_by]($_POST["
+		$gfp6  = "$object = new $_REQUEST['type']($_REQUEST['id']);"
+		$gfp7  = "The above example code can be easily exploited by passing in a string such as" // ... ;)
+		$gfp8  = "Smarty_Internal_Debug::start_render($_template);"
+		$gfp9  = "?p4yl04d=UNION%20SELECT%20'<?%20system($_GET['command']);%20?>',2,3%20INTO%20OUTFILE%20'/var/www/w3bsh3ll.php"
+	
 	condition:
-		filesize <500KB and any of ($sr*)
+		filesize < 500KB and not ( 
+			any of ( $gfp* ) 
+		)
+		and any of ( $sr* )
 }
 
 rule webshell_asp_obfuscated
@@ -1123,12 +1267,12 @@ rule webshell_asp_obfuscated
 		$o9 = "\\120" wide ascii
 	
 		//strings from private rule capa_asp_payload
-		$cpayload0 = "eval_r" fullword nocase wide ascii
-		$cpayload1 = "eval" fullword nocase wide ascii
-		$cpayload2 = "execute" fullword nocase wide ascii
-		$cpayload3 = "WSCRIPT.SHELL" fullword nocase wide ascii
-		$cpayload4 = "Scripting.FileSystemObject" fullword nocase wide ascii
-		$cpayload5 = /ExecuteGlobal/ fullword nocase wide ascii
+		$asp_payload0 = "eval_r" fullword nocase wide ascii
+		$asp_payload1 = "eval" fullword nocase wide ascii
+		$asp_payload2 = "execute" fullword nocase wide ascii
+		$asp_payload3 = "WSCRIPT.SHELL" fullword nocase wide ascii
+		$asp_payload4 = "Scripting.FileSystemObject" fullword nocase wide ascii
+		$asp_payload5 = /ExecuteGlobal/ fullword nocase wide ascii
 	
 	condition:
 		filesize < 100KB and ( 
@@ -1143,7 +1287,7 @@ rule webshell_asp_obfuscated
 			)  
 		)
 		and ( 
-			any of ( $cpayload* ) 
+			any of ( $asp_payload* ) 
 		)
 		
 }
@@ -1200,6 +1344,9 @@ rule webshell_asp_nano
 		$payload5 = /ExecuteGlobal/ fullword nocase wide ascii
 		$payload6 = "cmd /c" nocase wide ascii
 		$payload7 = "cmd.exe" nocase wide ascii
+        $fp1      = "eval a"
+        $fp2      = "'Eval'"
+        $fp3      = "Eval(\""
 	
 		//strings from private rule capa_asp
 		$tagasp_short = "<%" wide ascii
@@ -1212,7 +1359,7 @@ rule webshell_asp_nano
 			$tagasp_short in ( filesize-1000..filesize ) or
 			any of ( $tagasp_long* ) 
 		)
-		and any of ( $payload* )
+		and any of ( $payload* ) and not any of ( $fp* )
 }
 
 rule webshell_vbscript_nano_encoded
@@ -1530,11 +1677,6 @@ rule webshell_jsp_generic
 		hash = "bdaf9279b3d9e07e955d0ce706d9c42e4bdf9aa1"
 
 	strings:
-		$payload1 = "ProcessBuilder" fullword ascii wide
-		// Runtime.getRuntime().exec(
-		$payload_rt1 = "Runtime" fullword ascii wide
-		$payload_rt2 = "getRuntime" fullword ascii wide
-		$payload_rt3 = "exec" fullword ascii wide
 		$susp0 = "cmd" fullword nocase ascii wide
 		$susp1 = "command" fullword nocase ascii wide
 		$susp2 = "shell" fullword nocase ascii wide
@@ -1560,16 +1702,27 @@ rule webshell_jsp_generic
 		$req2 = "HttpServletRequest" fullword ascii wide
 		$req3 = "getRequest" fullword ascii wide
 	
+		//strings from private rule capa_jsp_payload
+		$payload1 = "ProcessBuilder" fullword ascii wide
+		$payload2 = "processCmd" fullword ascii wide
+		// Runtime.getRuntime().exec(
+		$rt_payload1 = "Runtime" fullword ascii wide
+		$rt_payload2 = "getRuntime" fullword ascii wide
+		$rt_payload3 = "exec" fullword ascii wide
+	
 	condition:
-		filesize < 300KB and ( 
+		filesize < 300KB and not uint16 ( 0 ) == 0x5a4d and not uint16 ( 0 ) == 0x4b50 and ( 
 			any of ( $cjsp* ) 
 		)
 		and ( 
 			any of ( $input* ) and
 			any of ( $req* ) 
 		)
-		and any of ( $susp* ) and 
-		( 1 of ( $payload* ) or all of ( $payload_rt* ) )
+		and ( 
+        1 of ( $payload* ) or
+        all of ( $rt_payload* ) 
+		)
+		and any of ( $susp* )
 }
 
 rule webshell_jsp_generic_base64
@@ -1925,10 +2078,12 @@ rule webshell_generic_os_strings
 		$no_xml2 = "<?xml-stylesheet" nocase wide ascii
 		$no_asp1 = "<%@LANGUAGE" nocase wide ascii
 		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
+		$no_pdf = "<?xpacket" 
 
 		// of course the new tags should also match
-		$php_new1 = "<?=" wide ascii
-		$php_new2 = "<?php" nocase wide ascii
+        // already matched by "<?"
+		//$php_new1 = "<?=" wide ascii
+		//$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
 		//strings from private rule capa_jsp
@@ -1971,10 +2126,120 @@ rule webshell_generic_os_strings
 		)
 		) and ( 
 			filesize < 300KB and 
-			all of ( $w* ) or
-			all of ( $l* ) or
-			2 of ( $take_two* )  
+        not uint16(0) == 0x5a4d and (
+            all of ( $w* ) or
+            all of ( $l* ) or
+            2 of ( $take_two* ) 
+        ) 
 		)
 		and not any of ( $fp* )
+}
+
+rule webshell_in_image
+{
+	meta:
+		description = "Webshell in GIF, PNG or JPG"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		author = "Arnim Rupp"
+		hash = "d4fde4e691db3e70a6320e78657480e563a9f87935af873a99db72d6a9a83c78"
+		date = "2021/02/27"
+
+	strings:
+        $png = { 89 50 4E 47 }
+        $jpg = { FF D8 FF E0 }
+        $gif = { 47 49 46 38 }
+	
+		//strings from private rule capa_php_payload
+		// \([^)] to avoid matching on e.g. eval() in comments
+		$cpayload1 = /\beval[\t ]*\([^)]/ nocase wide ascii
+		$cpayload2 = /\bexec[\t ]*\([^)]/ nocase wide ascii
+		$cpayload3 = /\bshell_exec[\t ]*\([^)]/ nocase wide ascii
+		$cpayload4 = /\bpassthru[\t ]*\([^)]/ nocase wide ascii
+		$cpayload5 = /\bsystem[\t ]*\([^)]/ nocase wide ascii
+		$cpayload6 = /\bpopen[\t ]*\([^)]/ nocase wide ascii
+		$cpayload7 = /\bproc_open[\t ]*\([^)]/ nocase wide ascii
+		$cpayload8 = /\bpcntl_exec[\t ]*\([^)]/ nocase wide ascii
+		$cpayload9 = /\bassert[\t ]*\([^)]/ nocase wide ascii
+		$cpayload10 = /\bpreg_replace[\t ]*\([^\)]1,1000}\/e/ nocase wide ascii
+		$cpayload11 = /\bcreate_function[\t ]*\([^)]/ nocase wide ascii
+		$cpayload12 = /\bReflectionFunction[\t ]*\([^)]/ nocase wide ascii
+		// TODO: $_GET['func_name']($_GET['argument']);
+		// TODO backticks
+	
+		//strings from private rule capa_asp_payload
+		$asp_payload0 = "eval_r" fullword nocase wide ascii
+		$asp_payload1 = "eval" fullword nocase wide ascii
+		$asp_payload2 = "execute" fullword nocase wide ascii
+		$asp_payload3 = "WSCRIPT.SHELL" fullword nocase wide ascii
+		$asp_payload4 = "Scripting.FileSystemObject" fullword nocase wide ascii
+		$asp_payload5 = /ExecuteGlobal/ fullword nocase wide ascii
+	
+		//strings from private rule capa_jsp_payload
+		$payload1 = "ProcessBuilder" fullword ascii wide
+		$payload2 = "processCmd" fullword ascii wide
+		// Runtime.getRuntime().exec(
+		$rt_payload1 = "Runtime" fullword ascii wide
+		$rt_payload2 = "getRuntime" fullword ascii wide
+		$rt_payload3 = "exec" fullword ascii wide
+	
+		//strings from private rule capa_php_old_safe
+		$php_short = "<?" wide ascii
+		// prevent xml and asp from hitting with the short tag
+		$no_xml1 = "<?xml version" nocase wide ascii
+		$no_xml2 = "<?xml-stylesheet" nocase wide ascii
+		$no_asp1 = "<%@LANGUAGE" nocase wide ascii
+		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
+		$no_pdf = "<?xpacket" 
+
+		// of course the new tags should also match
+        // already matched by "<?"
+		//$php_new1 = "<?=" wide ascii
+		//$php_new2 = "<?php" nocase wide ascii
+		$php_new3 = "<script language=\"php" nocase wide ascii
+	
+		//strings from private rule capa_asp
+		$tagasp_short = "<%" wide ascii
+		$tagasp_long1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" wide ascii
+		$tagasp_long2 = "<% @language" wide ascii
+	
+		//strings from private rule capa_jsp
+		$cjsp1 = "<%" ascii wide
+		$cjsp2 = "<jsp:" ascii wide
+		$cjsp3 = /language=[\"']java[\"\']/ ascii wide
+		// JSF
+		$cjsp4 = "/jstl/core" ascii wide
+	
+	condition:
+		( $png at 0 or $jpg at 0 or $gif at 0 ) and 
+		( ( 
+			any of ( $cpayload* ) 
+		)
+		or ( 
+			any of ( $asp_payload* ) 
+		)
+		or ( 
+        1 of ( $payload* ) or
+        all of ( $rt_payload* ) 
+		)
+		) and 
+		( ( 
+			(
+				( 
+						$php_short in (0..100) or 
+						$php_short in (filesize-1000..filesize)
+				)
+				and not any of ( $no_* )
+			) 
+			or any of ( $php_new* ) 
+		)
+		or ( 
+			$tagasp_short in ( 0..1000 ) or
+			$tagasp_short in ( filesize-1000..filesize ) or
+			any of ( $tagasp_long* ) 
+		)
+		or ( 
+			any of ( $cjsp* ) 
+		)
+		)
 }
 
