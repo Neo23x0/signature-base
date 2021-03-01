@@ -828,7 +828,8 @@ rule webshell_php_dynamic
 		score = 60
 
 	strings:
-		$fp = "whoops_add_stack_frame" wide ascii
+		$pd_fp1 = "whoops_add_stack_frame" wide ascii
+		$pd_fp2 = "$a = &new $ec($code, $mode, $options, $userinfo);" wide ascii
 	
 		//strings from private rule capa_php
 		// this will hit on a lot of non-php files, asp, scripting templates, ... but it works on older php versions
@@ -850,7 +851,7 @@ rule webshell_php_dynamic
 		and ( 
 			any of ( $dynamic* ) 
 		)
-		and not $fp
+		and not any of ( $pd_fp* )
 }
 
 rule webshell_php_dynamic_big
@@ -2149,6 +2150,21 @@ rule webshell_in_image
         $jpg = { FF D8 FF E0 }
         $gif = { 47 49 46 38 }
 	
+		//strings from private rule capa_php_old_safe
+		$php_short = "<?" wide ascii
+		// prevent xml and asp from hitting with the short tag
+		$no_xml1 = "<?xml version" nocase wide ascii
+		$no_xml2 = "<?xml-stylesheet" nocase wide ascii
+		$no_asp1 = "<%@LANGUAGE" nocase wide ascii
+		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
+		$no_pdf = "<?xpacket" 
+
+		// of course the new tags should also match
+        // already matched by "<?"
+		//$php_new1 = "<?=" wide ascii
+		//$php_new2 = "<?php" nocase wide ascii
+		$php_new3 = "<script language=\"php" nocase wide ascii
+	
 		//strings from private rule capa_php_payload
 		// \([^)] to avoid matching on e.g. eval() in comments
 		$cpayload1 = /\beval[\t ]*\([^)]/ nocase wide ascii
@@ -2166,13 +2182,12 @@ rule webshell_in_image
 		// TODO: $_GET['func_name']($_GET['argument']);
 		// TODO backticks
 	
-		//strings from private rule capa_asp_payload
-		$asp_payload0 = "eval_r" fullword nocase wide ascii
-		$asp_payload1 = "eval" fullword nocase wide ascii
-		$asp_payload2 = "execute" fullword nocase wide ascii
-		$asp_payload3 = "WSCRIPT.SHELL" fullword nocase wide ascii
-		$asp_payload4 = "Scripting.FileSystemObject" fullword nocase wide ascii
-		$asp_payload5 = /ExecuteGlobal/ fullword nocase wide ascii
+		//strings from private rule capa_jsp
+		$cjsp1 = "<%" ascii wide
+		$cjsp2 = "<jsp:" ascii wide
+		$cjsp3 = /language=[\"']java[\"\']/ ascii wide
+		// JSF
+		$cjsp4 = "/jstl/core" ascii wide
 	
 		//strings from private rule capa_jsp_payload
 		$payload1 = "ProcessBuilder" fullword ascii wide
@@ -2182,47 +2197,22 @@ rule webshell_in_image
 		$rt_payload2 = "getRuntime" fullword ascii wide
 		$rt_payload3 = "exec" fullword ascii wide
 	
-		//strings from private rule capa_php_old_safe
-		$php_short = "<?" wide ascii
-		// prevent xml and asp from hitting with the short tag
-		$no_xml1 = "<?xml version" nocase wide ascii
-		$no_xml2 = "<?xml-stylesheet" nocase wide ascii
-		$no_asp1 = "<%@LANGUAGE" nocase wide ascii
-		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
-		$no_pdf = "<?xpacket" 
-
-		// of course the new tags should also match
-        // already matched by "<?"
-		//$php_new1 = "<?=" wide ascii
-		//$php_new2 = "<?php" nocase wide ascii
-		$php_new3 = "<script language=\"php" nocase wide ascii
-	
 		//strings from private rule capa_asp
 		$tagasp_short = "<%" wide ascii
 		$tagasp_long1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" wide ascii
 		$tagasp_long2 = "<% @language" wide ascii
 	
-		//strings from private rule capa_jsp
-		$cjsp1 = "<%" ascii wide
-		$cjsp2 = "<jsp:" ascii wide
-		$cjsp3 = /language=[\"']java[\"\']/ ascii wide
-		// JSF
-		$cjsp4 = "/jstl/core" ascii wide
+		//strings from private rule capa_asp_payload
+		$asp_payload0 = "eval_r" fullword nocase wide ascii
+		$asp_payload1 = "eval" fullword nocase wide ascii
+		$asp_payload2 = "execute" fullword nocase wide ascii
+		$asp_payload3 = "WSCRIPT.SHELL" fullword nocase wide ascii
+		$asp_payload4 = "Scripting.FileSystemObject" fullword nocase wide ascii
+		$asp_payload5 = /ExecuteGlobal/ fullword nocase wide ascii
 	
 	condition:
 		( $png at 0 or $jpg at 0 or $gif at 0 ) and 
-		( ( 
-			any of ( $cpayload* ) 
-		)
-		or ( 
-			any of ( $asp_payload* ) 
-		)
-		or ( 
-        1 of ( $payload* ) or
-        all of ( $rt_payload* ) 
-		)
-		) and 
-		( ( 
+		( ( ( 
 			(
 				( 
 						$php_short in (0..100) or 
@@ -2232,14 +2222,26 @@ rule webshell_in_image
 			) 
 			or any of ( $php_new* ) 
 		)
-		or ( 
+		and ( 
+			any of ( $cpayload* ) 
+		)
+		) or 
+		( ( 
+			any of ( $cjsp* ) 
+		)
+		and ( 
+        1 of ( $payload* ) or
+        all of ( $rt_payload* ) 
+		)
+		) or 
+		( ( 
 			$tagasp_short in ( 0..1000 ) or
 			$tagasp_short in ( filesize-1000..filesize ) or
 			any of ( $tagasp_long* ) 
 		)
-		or ( 
-			any of ( $cjsp* ) 
+		and ( 
+			any of ( $asp_payload* ) 
 		)
-		)
+		) )
 }
 
