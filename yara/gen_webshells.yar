@@ -1768,6 +1768,7 @@ rule webshell_jsp_generic_base64
 		$cjsp4 = "/jstl/core" ascii wide
 	
 	condition:
+	        not uint16(0) == 0x5a4d and 
 		( 
 			any of ( $cjsp* ) 
 		)
