@@ -3120,7 +3120,11 @@ C:\\Windows\\[^\\]{1,20}\.(js|ps1|vbs);50
 :\\Users\\[^\\]{1,16}\\[0-9]{1,4}\.exe;65
 
 # Looks like an LSASS process memory dump (often contains credentials)
-\\lsass\.dmp;60
+\\lsass\.dmp;80
+\\lsass\.zip;80
+\\lsass\.7z;80
+\\lsass\.rar;80
+\\lsass\.exe[_0-9]{0,15}\.(dmp|zip|rar);80
 
 # Suspicious Extension in AppPatch folder
 c:\\windows\\AppPatch\\[^\\]{1,20}\.(exe|vbs|ps1|bat);70
@@ -3470,9 +3474,6 @@ ublic\\.Monitor\\ews\.conf;90
 /usr/share/centreon/www/htmlHeader.php;80
 /configtx\.json;80
 
-# Archive in suspicious folder https://www.microsoft.com/security/blog/2021/03/02/hafnium-targeting-exchange-servers/
-:\\ProgramData\\[\w]{1,6}\.(zip|7z|rar)$;40
-\\xx\.aspx$;60
-\\shell\.aspx$;50
+
 
 # End
