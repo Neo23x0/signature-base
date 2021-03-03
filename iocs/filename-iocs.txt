@@ -3476,6 +3476,8 @@ ublic\\.Monitor\\ews\.conf;90
 
 # Archive in suspicious folder https://www.microsoft.com/security/blog/2021/03/02/hafnium-targeting-exchange-servers/
 :\\ProgramData\\[\w]{1,6}\.(zip|7z|rar)$;40
+
+# Typical Webshell Names https://www.microsoft.com/security/blog/2021/03/02/hafnium-targeting-exchange-servers/
 \\xx\.aspx$;60
 \\shell\.aspx$;50
 
