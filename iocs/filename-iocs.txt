@@ -3489,4 +3489,7 @@ ublic\\.Monitor\\ews\.conf;90
 \\FrontEnd\\HttpProxy\\owa\\auth\\Current\\[^\\]{1,20}\\[^\\]{1,20}\.aspx;90
 \\FrontEnd\\HttpProxy\\owa\\auth\\[0-9\.]{6,12}\\[^\\]{1,20}\.aspx;90
 
+# Exchange Exploitation - Web Shell Filename IOCs https://twitter.com/ESETresearch/status/1366862953006452738?s=20
+\\inetpub\\wwwroot\\aspnet_client\\system_web\\(shell\.aspx|supp0rt\.aspx|aspnet\.aspx|aspnet_client\.aspx|client\.aspx|OutlookEN\.aspx);80
+
 # End
