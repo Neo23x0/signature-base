@@ -1856,6 +1856,7 @@ rule webshell_jsp_generic_base64
         $dex   = { 64 65 78 0a 30 }
 	
 	condition:
+	        not uint16(0) == 0x5a4d and 
 		( 
 			any of ( $cjsp* ) 
 		)
