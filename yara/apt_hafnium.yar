@@ -83,7 +83,7 @@ rule WEBSHELL_ASPX_reGeorgTunnel : Webshell Commodity {
    strings:
       $s1 = "System.Net.Sockets"
       $s2 = "System.Text.Encoding.Default.GetString(Convert.FromBase64String(StrTr(Request.Headers.Get"
-      $t1 = ".Split(‘|’)"
+      $t1 = ".Split('|')"
       $t2 = "Request.Headers.Get"
       $t3 = ".Substring("
       $t4 = "new Socket("
