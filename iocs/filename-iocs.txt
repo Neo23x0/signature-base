@@ -3474,6 +3474,17 @@ ublic\\.Monitor\\ews\.conf;90
 /usr/share/centreon/www/htmlHeader.php;80
 /configtx\.json;80
 
+# Archive in suspicious folder https://www.microsoft.com/security/blog/2021/03/02/hafnium-targeting-exchange-servers/
+:\\ProgramData\\[\w]{1,6}\.(zip|7z|rar)$;40
+\\xx\.aspx$;60
+\\shell\.aspx$;50
 
+# HAFNIUM IOCs https://www.volexity.com/blog/2021/03/02/active-exploitation-of-microsoft-exchange-zero-day-vulnerabilities/
+\\inetpub\\wwwroot\\aspnet_client\\[^\\]{1,20}\.aspx;90
+\\inetpub\\wwwroot\\aspnet_client\\[^\\]{1,20}\\[^\\]{1,20}\.aspx;90
+\\FrontEnd\\HttpProxy\\ecp\\auth\\[^T];70
+\\FrontEnd\\HttpProxy\\owa\\auth\\Current\\[^\\]{1,20}\.aspx;90
+\\FrontEnd\\HttpProxy\\owa\\auth\\Current\\[^\\]{1,20}\\[^\\]{1,20}\.aspx;90
+\\FrontEnd\\HttpProxy\\owa\\auth\\[0-9\.]{6,12}\\[^\\]{1,20}\.aspx;90
 
 # End
