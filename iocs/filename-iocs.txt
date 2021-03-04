@@ -3120,7 +3120,11 @@ C:\\Windows\\[^\\]{1,20}\.(js|ps1|vbs);50
 :\\Users\\[^\\]{1,16}\\[0-9]{1,4}\.exe;65
 
 # Looks like an LSASS process memory dump (often contains credentials)
-\\lsass\.dmp;60
+\\lsass\.dmp;80
+\\lsass\.zip;80
+\\lsass\.7z;80
+\\lsass\.rar;80
+\\lsass\.exe[_0-9]{0,15}\.(dmp|zip|rar);80
 
 # Suspicious Extension in AppPatch folder
 c:\\windows\\AppPatch\\[^\\]{1,20}\.(exe|vbs|ps1|bat);70
@@ -3460,5 +3464,32 @@ ublic\\.Monitor\\ews\.conf;90
 :\\windows\\Temp\\CA_Root\.pfx;80
 :\\Recovery\\recover\.bin;80
 :\\Recovery\\re\.bin;80
+
+# IOCs from Sandworm Centreon Report by CERTFR https://www.cert.ssi.gouv.fr/uploads/CERTFR-2021-CTI-005.pdf
+/tmp/.applocktx;100
+/tmp/.applock$;80
+/usr/local/centreon/www/search.php;90
+/usr/share/centreon/www/search.php;80
+/usr/share/centreon/www/modules/Discovery/include/DB−Drop.php;100
+/usr/share/centreon/www/htmlHeader.php;80
+/configtx\.json;80
+
+# Archive in suspicious folder https://www.microsoft.com/security/blog/2021/03/02/hafnium-targeting-exchange-servers/
+:\\ProgramData\\[\w]{1,6}\.(zip|7z|rar)$;40
+
+# Typical Webshell Names https://www.microsoft.com/security/blog/2021/03/02/hafnium-targeting-exchange-servers/
+\\xx\.aspx$;60
+\\shell\.aspx$;50
+
+# HAFNIUM IOCs https://www.volexity.com/blog/2021/03/02/active-exploitation-of-microsoft-exchange-zero-day-vulnerabilities/
+\\inetpub\\wwwroot\\aspnet_client\\[^\\]{1,20}\.aspx;90
+\\inetpub\\wwwroot\\aspnet_client\\[^\\]{1,20}\\[^\\]{1,20}\.aspx;90
+\\FrontEnd\\HttpProxy\\ecp\\auth\\[^T];70
+\\FrontEnd\\HttpProxy\\owa\\auth\\Current\\[^\\]{1,20}\.aspx;90
+\\FrontEnd\\HttpProxy\\owa\\auth\\Current\\[^\\]{1,20}\\[^\\]{1,20}\.aspx;90
+\\FrontEnd\\HttpProxy\\owa\\auth\\[0-9\.]{6,12}\\[^\\]{1,20}\.aspx;90
+
+# Exchange Exploitation - Web Shell Filename IOCs https://twitter.com/ESETresearch/status/1366862953006452738?s=20
+\\inetpub\\wwwroot\\aspnet_client\\system_web\\(shell\.aspx|supp0rt\.aspx|aspnet\.aspx|aspnet_client\.aspx|client\.aspx|OutlookEN\.aspx);80
 
 # End
