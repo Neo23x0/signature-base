@@ -9743,3 +9743,14 @@ b75f163ca9b9240bf4b37ad92bc7556b40a17e27c2b8ed5c8991385fe07d17d0;HAFNIUM Webshel
 4edc7770464a14f54d17f36dc9d0fe854f68b346b27b35a6f5839adf1f13f8ea;HAFNIUM Webshells - Exchange Exploitation - https://www.microsoft.com/security/blog/2021/03/02/hafnium-targeting-exchange-servers/
 811157f9c7003ba8d17b45eb3cf09bef2cecd2701cedb675274949296a6a183d;HAFNIUM Webshells - Exchange Exploitation - https://www.microsoft.com/security/blog/2021/03/02/hafnium-targeting-exchange-servers/
 1631a90eb5395c4e19c7dbcbf611bbe6444ff312eb7937e286e4637cb9e72944;HAFNIUM Webshells - Exchange Exploitation - https://www.microsoft.com/security/blog/2021/03/02/hafnium-targeting-exchange-servers/
+
+70d93035b0693b0e4ef65eb7f8529e6385d698759cc5b8666a394b2136cc06eb;NOBELIUM report - GoldMax - https://www.microsoft.com/security/blog/2021/03/04/goldmax-goldfinder-sibot-analyzing-nobelium-malware/
+0e1f9d4d0884c68ec25dec355140ea1bab434f5ea0f86f2aade34178ff3a7d91;NOBELIUM report - GoldMax - https://www.microsoft.com/security/blog/2021/03/04/goldmax-goldfinder-sibot-analyzing-nobelium-malware/
+247a733048b6d5361162957f53910ad6653cdef128eb5c87c46f14e7e3e46983;NOBELIUM report - GoldMax - https://www.microsoft.com/security/blog/2021/03/04/goldmax-goldfinder-sibot-analyzing-nobelium-malware/
+f28491b367375f01fb9337ffc137225f4f232df4e074775dd2cc7e667394651c;NOBELIUM report - GoldMax - https://www.microsoft.com/security/blog/2021/03/04/goldmax-goldfinder-sibot-analyzing-nobelium-malware/
+611458206837560511cb007ab5eeb57047025c2edc0643184561a6bf451e8c2c;NOBELIUM report - GoldMax - https://www.microsoft.com/security/blog/2021/03/04/goldmax-goldfinder-sibot-analyzing-nobelium-malware/
+b9a2c986b6ad1eb4cfb0303baede906936fe96396f3cf490b0984a4798d741d8;NOBELIUM report - GoldMax - https://www.microsoft.com/security/blog/2021/03/04/goldmax-goldfinder-sibot-analyzing-nobelium-malware/
+bbd16685917b9b35c7480d5711193c1cd0e4e7ccb0f2bf1fd584c0aebca5ae4c;NOBELIUM report - GoldMax - https://www.microsoft.com/security/blog/2021/03/04/goldmax-goldfinder-sibot-analyzing-nobelium-malware/
+0affab34d950321e3031864ec2b6c00e4edafb54f4b327717cb5b042c38a33c9;NOBELIUM report - GoldFinder - https://www.microsoft.com/security/blog/2021/03/04/goldmax-goldfinder-sibot-analyzing-nobelium-malware/
+7e05ff08e32a64da75ec48b5e738181afb3e24a9f1da7f5514c5a11bb067cbfb;NOBELIUM report - Sibot - https://www.microsoft.com/security/blog/2021/03/04/goldmax-goldfinder-sibot-analyzing-nobelium-malware/
+acc74c920d19ea0a5e6007f929ef30b079eb2836b5b28e5ffcc20e68fa707e66;NOBELIUM report - Sibot - https://www.microsoft.com/security/blog/2021/03/04/goldmax-goldfinder-sibot-analyzing-nobelium-malware/
