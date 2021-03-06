@@ -44,6 +44,38 @@ rule APT_HAFNIUM_Forensic_Artefacts_Mar21_1 {
       1 of them
 }
 
+rule APT_WEBSHELL_HAFNIUM_Chopper_WebShell: APT Hafnium WebShell {
+   meta:
+      description = "Detects Chopper WebShell Injection Variant (not only Hafnium related)"
+      author = "Markus Neis,Swisscom"
+      date = "2021-03-05"
+      reference = "https://www.volexity.com/blog/2021/03/02/active-exploitation-of-microsoft-exchange-zero-day-vulnerabilities/"
+   strings:
+      $x1 = "runat=\"server\">"
+
+      $s1 = "<script language=\"JScript\" runat=\"server\">function Page_Load(){eval(Request"
+      $s2 = "protected void Page_Load(object sender, EventArgs e){System.IO.StreamWriter sw = new System.IO.StreamWriter(Request.Form[\"p\"] , false, Encoding.Default);sw.Write(Request.Form[\"f\"]);"
+      $s3 = "<script language=\"JScript\" runat=\"server\"> function Page_Load(){eval (Request[\""    
+   condition:
+      filesize < 10KB and $x1 and 1 of ($s*) 
+}
+
+rule APT_WEBSHELL_Tiny_WebShell : APT Hafnium WebShell {
+   meta:
+      description = "Detects WebShell Injection"
+      author = "Markus Neis,Swisscom"
+      hash = "099c8625c58b315b6c11f5baeb859f4c"
+      date = "2021-03-05"
+      reference = "https://www.volexity.com/blog/2021/03/02/active-exploitation-of-microsoft-exchange-zero-day-vulnerabilities/"
+   strings:
+      $x1 = "<%@ Page Language=\"Jscript\" Debug=true%>"
+
+      $s1 = "=Request.Form(\""
+      $s2 = "eval("
+   condition:
+      filesize < 300 and all of ($s*) and $x1
+} 
+
 rule HKTL_PS1_PowerCat_Mar21 {
    meta:
       description = "Detects PowerCat hacktool"
