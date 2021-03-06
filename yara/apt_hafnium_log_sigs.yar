@@ -1,5 +1,5 @@
 
-rule EXPL_LOG_CVE_2021_27065_Exchange_Forensic_Artefacts_Mar21_1 {
+rule EXPL_LOG_CVE_2021_27065_Exchange_Forensic_Artefacts_Mar21_1 : LOG {
    meta:
       description = "Detects forensic artefacts found in HAFNIUM intrusions exploiting CVE-2021-27065"
       author = "Florian Roth"
@@ -11,7 +11,7 @@ rule EXPL_LOG_CVE_2021_27065_Exchange_Forensic_Artefacts_Mar21_1 {
       1 of them
 }
 
-rule EXPL_LOG_CVE_2021_26858_Exchange_Forensic_Artefacts_Mar21_1 {
+rule EXPL_LOG_CVE_2021_26858_Exchange_Forensic_Artefacts_Mar21_1 : LOG {
    meta:
       description = "Detects forensic artefacts found in HAFNIUM intrusions exploiting CVE-2021-26858"
       author = "Florian Roth"
@@ -25,7 +25,7 @@ rule EXPL_LOG_CVE_2021_26858_Exchange_Forensic_Artefacts_Mar21_1 {
       $xr1
 }
 
-rule LOG_APT_HAFNIUM_Exchange_Log_Traces_Mar21_ {
+rule LOG_APT_HAFNIUM_Exchange_Log_Traces_Mar21_1 : LOG {
    meta:
       description = "Detects suspicious log entries that indicate requests as described in reports on HAFNIUM activity"
       author = "Florian Roth"
