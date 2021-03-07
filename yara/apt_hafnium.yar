@@ -197,11 +197,11 @@ rule APT_MAL_ASPX_HAFNIUM_Chopper_Mar21_3 {
       score = 85
       hash1 = "8647c1ec69dc544fad59e062e36f395f6f2f41d634ea982954f28cc542bd696d"
    strings:
-      $s1 = "runat=\"server\">void Page_Load(object" ascii wide 
+      $s1 = "runat=\"server\">void Page_Load(object" ascii wide nocase
       $s2 = "Request.Files[0].SaveAs(Server.MapPath(" ascii wide
    condition:
       filesize < 50KB and
-      1 of them
+      all of them
 }
 
 rule APT_HAFNIUM_ForensicArtefacts_WER_Mar21_1 {
