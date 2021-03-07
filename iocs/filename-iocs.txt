@@ -3492,4 +3492,17 @@ ublic\\.Monitor\\ews\.conf;90
 # Exchange Exploitation - Web Shell Filename IOCs https://twitter.com/ESETresearch/status/1366862953006452738?s=20
 \\inetpub\\wwwroot\\aspnet_client\\system_web\\(shell\.aspx|supp0rt\.aspx|aspnet\.aspx|aspnet_client\.aspx|client\.aspx|OutlookEN\.aspx);80
 
+# China Chopper file names provided by Huntress Labs https://gist.github.com/JohnHammond/0b4a45cad4f4ed3324939d72dc599883
+\\inetpub\\wwwroot\\aspnet_client\\discover\.aspx;85
+\\inetpub\\wwwroot\\aspnet_client\\supp0rt\.aspx;85
+\\inetpub\\wwwroot\\aspnet_client\\HttpProxy\.aspx;85
+\\inetpub\\wwwroot\\aspnet_client\\shell\.aspx;85
+\\inetpub\\wwwroot\\aspnet_client\\system_web\error\.aspx;85
+\\inetpub\\wwwroot\\aspnet_client\\OutlookEN\.aspx;85
+\\inetpub\\wwwroot\\aspnet_client\\aspnettest\.aspx;85
+\\inetpub\\wwwroot\\aspnet_client\\shellex\.aspx;85
+\\inetpub\\wwwroot\\aspnet_client\\errorcheck\.aspx;85
+\\inetpub\\wwwroot\\aspnet_client\\t\.aspx;85
+\\inetpub\\wwwroot\\aspnet_client\\system_web\\[a-zA-Z0-9]{8}\.aspx;90
+
 # End
