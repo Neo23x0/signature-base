@@ -48,7 +48,7 @@ rule Suspicious_PowerShell_Code_1 {
       1 of them
 }
 
-rule Suspicious_PowerShell_WebDownload_1 {
+rule Suspicious_PowerShell_WebDownload_1 : HIGHVOL {
    meta:
       description = "Detects suspicious PowerShell code that downloads from web sites"
       license = "https://creativecommons.org/licenses/by-nc/4.0/"
