@@ -225,7 +225,7 @@ rule APT_HAFNIUM_ForensicArtefacts_WER_Mar21_1 {
       author = "Florian Roth"
       reference = "https://twitter.com/cyb3rops/status/1368471533048446976"
       date = "2021-03-07"
-      score = 50
+      score = 40
    strings:
       $s1 = "AppPath=c:\\windows\\system32\\inetsrv\\w3wp.exe" wide fullword
       $s7 = ".Value=w3wp#MSExchangeECPAppPool" wide
