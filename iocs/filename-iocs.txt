@@ -3505,4 +3505,41 @@ ublic\\.Monitor\\ews\.conf;90
 \\inetpub\\wwwroot\\aspnet_client\\t\.aspx;85
 \\inetpub\\wwwroot\\aspnet_client\\system_web\\[a-zA-Z0-9]{8}\.aspx;90
 
+# Microsoft HAFNIUM IOCs https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Sample%20Data/Feeds/MSTICIoCs-ExchangeServerVulnerabilitiesDisclosedMarch2021.csv
+\\FrontEnd\\HttpProxy\\owa\\auth\\8Lw7tAhF9i1pJnRo\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\OutlookZH\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\authhead\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\bob\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\current\one1\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\errorPage\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\errorPages\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\fatal-erro\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\log\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\logg\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\logout\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\one\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\one1\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\shel\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\shel2\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\shel90\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\a\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\default\.aspx;95
+\\inetpub\\wwwroot\\aspnet_client\\Server\.aspx;95
+\\inetpub\\wwwroot\\aspnet_client\\aspnet_client\.aspx;95
+\\inetpub\\wwwroot\\aspnet_client\\aspnet_iisstart\.aspx;95
+\\inetpub\\wwwroot\\aspnet_client\\aspnet_pages\.aspx;95
+\\inetpub\\wwwroot\\aspnet_client\\aspnet_www\.aspx;95
+\\inetpub\\wwwroot\\aspnet_client\\default1\.aspx;95
+\\inetpub\\wwwroot\\aspnet_client\\iispage\.aspx;95
+\\inetpub\\wwwroot\\aspnet_client\\s\.aspx;95
+\\inetpub\\wwwroot\\aspnet_client\\session\.aspx;95
+\\inetpub\\wwwroot\\aspnet_client\\system_web\\log\.aspx;95
+\\inetpub\\wwwroot\\aspnet_client\\xclkmcfldfi948398430fdjkfdkj\.aspx;95
+\\inetpub\\wwwroot\\aspnet_client\\xx\.aspx;95
+\\inetpub\\wwwroot\\aspnet_client\\Server\.aspx;95
+\\FrontEnd\\HttpProxy\\OAB\\log\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\log\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\logg\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\logout\.aspx;95
+
 # End
