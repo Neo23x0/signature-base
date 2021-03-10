@@ -81,3 +81,16 @@ rule EXPL_LOG_CVE_2021_27055_Exchange_Forensic_Artefacts : LOG {
    condition:
 	  $x1 and 1 of ($s*)
 }
+
+rule LOG_CVE_2021_27055_Exchange_Forensic_Artefacts_Mar21_2 : LOG {
+   meta:
+	  description = "Detects suspicious log entries that indicate requests as described in reports on HAFNIUM activity"
+	  author = "Florian Roth"
+	  reference = "https://www.praetorian.com/blog/reproducing-proxylogon-exploit/"
+	  date = "2021-03-10"
+	  score = 65
+   strings:
+	  $sr1 = /GET \/rpc\/ &CorrelationID=<empty>;&RequestId=[^\n]{40,600} (200|301|302)/
+   condition:
+	  $sr1
+}
