@@ -185,7 +185,7 @@ rule WEBSHELL_CVE_2021_27065_Webshells {
       $internalauthenticationmethods = "internalauthenticationmethods" ascii wide nocase
       $extendedprotectiontokenchecking = "extendedprotectiontokenchecking" ascii wide nocase
    condition:
-      filesize < 10KB and any of ($script*) and ($externalurl or $internalurl) and $internalauthenticationmethods and $extendedprotectiontokenchecking
+      filesize < 50KB and any of ($script*) and ($externalurl or $internalurl) and $internalauthenticationmethods and $extendedprotectiontokenchecking
 }
 
 rule APT_MAL_ASPX_HAFNIUM_Chopper_Mar21_3 {
