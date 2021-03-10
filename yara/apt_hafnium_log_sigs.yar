@@ -59,3 +59,17 @@ rule LOG_Exchange_Forensic_Artefacts_CleanUp_Activity_Mar21_1 : LOG {
    condition:
       1 of ($x*) or 2 of them
 }
+
+rule EXPL_LOG_CVE_2021_27055_Exchange_Forensic_Artefacts : LOG {
+   meta:
+	  description = "Detects suspicious log entries that indicate requests as described in reports on HAFNIUM activity. Scan logs in \\Microsoft\\Exchange Server\\V15\\Logging\\HttpProxy\\"
+	  author = "Zach Stanford - @svch0st"
+	  reference = "https://www.microsoft.com/security/blog/2021/03/02/hafnium-targeting-exchange-servers/#scan-log"
+	  date = "2021-03-10"
+	  score = 65
+   strings:
+	  $s1 = "ServerInfo" ascii wide fullword
+	  $r1 = /(ecp|owa)\/auth\/\w\.js/
+   condition:
+	  2 of them
+}
