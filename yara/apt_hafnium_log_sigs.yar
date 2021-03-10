@@ -68,8 +68,13 @@ rule EXPL_LOG_CVE_2021_27055_Exchange_Forensic_Artefacts : LOG {
 	  date = "2021-03-10"
 	  score = 65
    strings:
-	  $s1 = "ServerInfo" ascii wide fullword
-	  $r1 = /(ecp|owa)\/auth\/\w\.js/
+	  $x1 = "ServerInfo~" ascii wide
+	  
+	  $s1 = "ecp/auth/w.js" ascii wide 
+	  $s2 = "owa/auth/w.js" ascii wide
+	  $s3 = "ecp/y.js" ascii wide
+	  $s4 = "ecp/main.css" ascii wide
+	  $s5 = "ecp/default.flt" ascii wide
    condition:
-	  2 of them
+	  $x1 and 1 of ($s*)
 }
