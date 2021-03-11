@@ -3497,7 +3497,7 @@ ublic\\.Monitor\\ews\.conf;90
 \\inetpub\\wwwroot\\aspnet_client\\supp0rt\.aspx;85
 \\inetpub\\wwwroot\\aspnet_client\\HttpProxy\.aspx;85
 \\inetpub\\wwwroot\\aspnet_client\\shell\.aspx;85
-\\inetpub\\wwwroot\\aspnet_client\\system_web\error\.aspx;85
+\\inetpub\\wwwroot\\aspnet_client\\system_web\\error\.aspx;85
 \\inetpub\\wwwroot\\aspnet_client\\OutlookEN\.aspx;85
 \\inetpub\\wwwroot\\aspnet_client\\aspnettest\.aspx;85
 \\inetpub\\wwwroot\\aspnet_client\\shellex\.aspx;85
@@ -3510,7 +3510,7 @@ ublic\\.Monitor\\ews\.conf;90
 \\FrontEnd\\HttpProxy\\owa\\auth\\OutlookZH\.aspx;95
 \\FrontEnd\\HttpProxy\\owa\\auth\\authhead\.aspx;95
 \\FrontEnd\\HttpProxy\\owa\\auth\\bob\.aspx;95
-\\FrontEnd\\HttpProxy\\owa\\auth\\current\one1\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\current\\one1\.aspx;95
 \\FrontEnd\\HttpProxy\\owa\\auth\\errorPage\.aspx;95
 \\FrontEnd\\HttpProxy\\owa\\auth\\errorPages\.aspx;95
 \\FrontEnd\\HttpProxy\\owa\\auth\\fatal-erro\.aspx;95
