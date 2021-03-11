@@ -1157,7 +1157,11 @@ rule webshell_php_by_string_obfuscation
 		$opbs29 = "\"ht\".\"tp\".\"s:" wide ascii
 		$opbs31 = "'ev'.'al'" nocase wide ascii
 		$opbs32 = "eval/*" nocase wide ascii
-		$opbs34 = "assert/*" nocase wide ascii
+		$opbs33 = "eval(/*" nocase wide ascii
+		$opbs34 = "eval(\"/*" nocase wide ascii
+		$opbs36 = "assert/*" nocase wide ascii
+		$opbs37 = "assert(/*" nocase wide ascii
+		$opbs38 = "assert(\"/*" nocase wide ascii
 		$opbs40 = "'ass'.'ert'" nocase wide ascii
 		$opbs41 = "${'_'.$_}['_'](${'_'.$_}['__'])" wide ascii
 		$opbs44 = "'s'.'s'.'e'.'r'.'t'" nocase wide ascii
