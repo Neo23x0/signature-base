@@ -3545,4 +3545,7 @@ ublic\\.Monitor\\ews\.conf;90
 # HAFNIUM IOCs https://discuss.elastic.co/t/detection-and-response-for-hafnium-activity/266289/3
 \\Windows\\Temp\\xx\.bat;80
 
+# HAFNIUM IOCs https://twitter.com/GadixCRK/status/1369320418574823427?s=20
+\\Windows\\Temp\\cw\.exe$;75
+
 # End
