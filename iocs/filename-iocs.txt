@@ -3542,4 +3542,7 @@ ublic\\.Monitor\\ews\.conf;90
 \\FrontEnd\\HttpProxy\\owa\\auth\\logg\.aspx;95
 \\FrontEnd\\HttpProxy\\owa\\auth\\logout\.aspx;95
 
+# HAFNIUM IOCs https://discuss.elastic.co/t/detection-and-response-for-hafnium-activity/266289/3
+\\Windows\\Temp\\xx\.bat;80
+
 # End
