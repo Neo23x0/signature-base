@@ -14,10 +14,10 @@ rule MAL_RANSOM_Crime_DearCry_Mar2021_1 {
         $s2 = "DEARCRY!" ascii fullword
         $s4 = "/readme.txt" ascii fullword
         $s5 = "msupdate" ascii fullword
-        $s5 = "Your file has been encrypted!" ascii fullword
-        $s6 = "%c:\\%s" ascii fullword
-        $s7 = "C:\\Users\\john\\" ascii
-        $s8 = "EncryptFile.exe.pdb" ascii
+        $s6 = "Your file has been encrypted!" ascii fullword
+        $s7 = "%c:\\%s" ascii fullword
+        $s8 = "C:\\Users\\john\\" ascii
+        $s9 = "EncryptFile.exe.pdb" ascii
     condition:
         uint16(0) == 0x5a4d 
         and filesize > 1MB and filesize < 2MB 
