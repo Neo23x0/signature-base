@@ -10,7 +10,7 @@ rule MAL_RANSOM_Crime_DearCry_Mar2021_1 {
     strings:
         $x1 = ".TIF .TIFF .PDF .XLS .XLSX .XLTM .PS .PPS .PPT .PPTX .DOC .DOCX .LOG .MSG .RTF .TEX .TXT .CAD .WPS .EML .INI .CSS .HTM .HTML  .XHTML .JS .JSP .PHP .KEYCHAIN .PEM .SQL .APK .APP .BAT .CGI .ASPX .CER .CFM .C .CPP .GO .CONFIG .PL .PY .DWG .XML .JPG .BMP .PNG .EXE .DLL .CAD .AVI .H.CSV .DAT .ISO .PST .PGD  .7Z .RAR .ZIP .ZIPX .TAR .PDB .BIN .DB .MDB .MDF .BAK .LOG .EDB .STM .DBF .ORA .GPG .EDB .MFS" ascii
 
-        $s1 = "dear!!!" ascii fullword
+        $s1 = "create rsa error" ascii fullword
         $s2 = "DEARCRY!" ascii fullword
         $s4 = "/readme.txt" ascii fullword
         $s5 = "msupdate" ascii fullword
