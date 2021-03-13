@@ -1536,7 +1536,7 @@ rule webshell_asp_generic_eval_on_input
 
 	strings:
 		$payload_and_input0 = /\beval_r\s{0,20}\(Request\(/ nocase wide ascii
-		$payload_and_input1 = /\beval[\s\(]{1,20}request[.\(]/ nocase wide ascii
+		$payload_and_input1 = /\beval[\s\(]{1,20}request[.\(\[]/ nocase wide ascii
 		$payload_and_input2 = /\bexecute[\s\(]{1,20}request\(/ nocase wide ascii
 		$payload_and_input4 = /\bExecuteGlobal\s{1,20}request\(/ nocase wide ascii
 	
