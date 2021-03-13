@@ -248,6 +248,8 @@ rule webshell_php_generic_callback_tiny
 		$callback32 = /\bsqlite_create_function[\t ]*\([^)]/ nocase wide ascii
 
 		$cfp1 = /ob_start\(['\"]ob_gzhandler/ nocase wide ascii
+		$cfp2 = "IWPML_Backend_Action_Loader" ascii wide
+		$cfp3 = "<?phpclass WPML" ascii
 	
 	condition:
 		filesize < 1000 and not ( 
