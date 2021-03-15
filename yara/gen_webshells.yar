@@ -1496,6 +1496,7 @@ rule webshell_asp_obfuscated
 		$asp_multi_payload2 = "addcode" fullword wide ascii
 		$asp_multi_payload3 = /\.run\b/ wide ascii
 	
+    	$fp1 = "Author: Andre Teixeira - andret@microsoft.com" /* FPs with 0227f4c366c07c45628b02bae6b4ad01 */
 	condition:
 		filesize < 100KB and ( 
 			$tagasp_short in ( 0..1000 ) or
@@ -1521,7 +1522,8 @@ rule webshell_asp_obfuscated
 			any of ( $asp_payload* ) or
         all of ( $asp_multi_payload* ) 
 		)
-		
+		and not 1 of ($fp*)	
+}
 }
 
 rule webshell_asp_generic_eval_on_input
