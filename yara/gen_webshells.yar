@@ -311,7 +311,7 @@ rule webshell_php_generic_nano_input
 rule webshell_php_base64_encoded_payloads
 {
 	meta:
-		description = "php webshell containg base64 encoded payload"
+		description = "php webshell containing base64 encoded payload"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Arnim Rupp"
 		date = "2021/01/07"
@@ -1339,7 +1339,7 @@ rule webshell_php_func_in_get
 rule webshell_asp_writer
 {
 	meta:
-		description = "ASP webshell which only writes another file to disk"
+		description = "ASP webshell which only writes an uploaded file to disk"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Arnim Rupp"
 		date = "2021/03/07"
@@ -1348,24 +1348,44 @@ rule webshell_asp_writer
 		// $asp_write1 = "ADODB.Stream" wide ascii # just a string, can be easily obfuscated
 		$asp_always_write1 = /\.write/ nocase wide ascii
 		$asp_always_write2 = /\.swrite/ nocase wide ascii
-		$asp_write_way_one1 = /\.open\b/ nocase wide ascii
-		$asp_write_way_one2 = /\.SaveToFile\b/ nocase wide ascii
+		//$asp_write_way_one1 = /\.open\b/ nocase wide ascii
+		$asp_write_way_one2 = "SaveToFile" fullword nocase wide ascii
+		$asp_write_way_one3 = "CREAtEtExtFiLE" fullword nocase wide ascii
 		$asp_cr_write1 = "CreateObject(" fullword nocase wide ascii
 		$asp_cr_write2 = "CreateObject (" fullword nocase wide ascii
-		$asp_streamwriter1 = "streamwriter(" nocase wide ascii
-		$asp_streamwriter2 = "streamwriter (" nocase wide ascii
+		$asp_streamwriter1 = "streamwriter" fullword nocase wide ascii
+		$asp_streamwriter2 = "filestream" fullword nocase wide ascii
+
+        $sus1 = "password" fullword wide ascii
+        $sus2 = "pwd" fullword wide ascii
+        $sus3 = "<asp:TextBox" fullword nocase wide ascii
+        $sus4 = "upload" wide ascii
+        $sus5 = "Upload" wide ascii
+        $sus6 = "gif89" wide ascii
+        $sus7 = "\"&\"" wide ascii
+        $sus8 = "authkey" fullword wide ascii
+        $sus9 = "AUTHKEY" fullword wide ascii
+        $sus10= "test.asp" fullword wide ascii
+        $sus11= "cmd.asp" fullword wide ascii
+        $sus12= ".Write(Request." wide ascii
+        $sus13= "<textarea " wide ascii
 	
 		//strings from private rule capa_asp
-		$tagasp_short = "<%" wide ascii
+		$tagasp_short1 = /<%[^"]/ wide ascii
+        // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
+		$tagasp_short2 = "%>" wide ascii
 
-		$tagasp_long1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" wide ascii
-		$tagasp_long2 = "72c24dd5-d70a-438b-8a42-98424b88afb8" wide ascii
-		$tagasp_long3 = "<%@ " wide ascii
+        // classids for scripting host etc
+		$tagasp_classid1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" nocase wide ascii
+		$tagasp_classid2 = "F935DC22-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid3 = "093FF999-1EA0-4079-9525-9614C3504B74" nocase wide ascii
+		$tagasp_classid4 = "F935DC26-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid5 = "0D43FE01-F093-11CF-8940-00A0C9054228" nocase wide ascii
+		$tagasp_long10 = "<%@ " wide ascii
         // <% eval
-		$tagasp_long4 = "<% e" nocase wide ascii
-		$tagasp_long5 = "<%ex" nocase wide ascii
-		$tagasp_long6 = "<%ev" nocase wide ascii
-		$tagasp_long7 = /<% \w/ nocase wide ascii
+		$tagasp_long11 = /<% \w/ nocase wide ascii
+		$tagasp_long12 = "<%ex" nocase wide ascii
+		$tagasp_long13 = "<%ev" nocase wide ascii
 
         // <%@ LANGUAGE = VBScript.encode%>
         // <%@ Language = "JScript" %>
@@ -1390,6 +1410,10 @@ rule webshell_asp_writer
 		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
+
+        // avoid hitting legitimate php
+        $php1 = "<?php"
+        $php2 = "<?="
 	
 		//strings from private rule capa_asp_input
         // Request.BinaryRead
@@ -1399,23 +1423,48 @@ rule webshell_asp_writer
 		$asp_xml_method1 = "GET" fullword wide ascii
 		$asp_xml_method2 = "POST" fullword wide ascii
 		$asp_xml_method3 = "HEAD" fullword wide ascii
+        // dynamic form
+        $asp_form1 = "<form " wide ascii
+        $asp_form2 = "<Form " wide ascii
+        $asp_form3 = "<FORM " wide ascii
+        $asp_asp   = "<asp:" wide ascii
+        $asp_text1 = ".text" wide ascii
+        $asp_text2 = ".Text" wide ascii
 	
 	condition:
-		filesize < 400 and ( 
-			$tagasp_short in ( 0..1000 ) or
-			$tagasp_short in ( filesize-1000..filesize ) or
-			any of ( $tagasp_long* ) 
+		( 
+        (
+            any of ( $tagasp_long* ) or
+            // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
+            any of ( $tagasp_classid* ) or
+            (
+                $tagasp_short2 and (
+                    $tagasp_short1 in ( 0..1000 ) or
+                    $tagasp_short1 in ( filesize-1000..filesize ) 
+                )
+            ) 
+        ) and not ( 
+            $php1 at 0 or
+            $php2 at 0 
+        ) 
 		)
 		and ( 
 			any of ( $asp_input* ) or
         (
             $asp_xml_http and
             any of ( $asp_xml_method* )
+        ) or
+        (
+            any of ( $asp_form* ) and
+            any of ( $asp_text* ) and
+            $asp_asp
         ) 
 		)
 		and any of ( $asp_always_write* ) and 
-		( ( all of ( $asp_write_way_one* ) and any of ( $asp_cr_write* ) ) or 
-		( any of ( $asp_streamwriter* ) ) )
+		( ( any of ( $asp_write_way_one* ) and any of ( $asp_cr_write* ) ) or 
+		( any of ( $asp_streamwriter* ) ) ) and 
+		( filesize < 400 or 
+		( filesize < 6000 and 1 of ( $sus* ) ) )
 }
 
 rule webshell_asp_obfuscated
@@ -1431,16 +1480,21 @@ rule webshell_asp_obfuscated
 	strings:
 
 		//strings from private rule capa_asp
-		$tagasp_short = "<%" wide ascii
+		$tagasp_short1 = /<%[^"]/ wide ascii
+        // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
+		$tagasp_short2 = "%>" wide ascii
 
-		$tagasp_long1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" wide ascii
-		$tagasp_long2 = "72c24dd5-d70a-438b-8a42-98424b88afb8" wide ascii
-		$tagasp_long3 = "<%@ " wide ascii
+        // classids for scripting host etc
+		$tagasp_classid1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" nocase wide ascii
+		$tagasp_classid2 = "F935DC22-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid3 = "093FF999-1EA0-4079-9525-9614C3504B74" nocase wide ascii
+		$tagasp_classid4 = "F935DC26-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid5 = "0D43FE01-F093-11CF-8940-00A0C9054228" nocase wide ascii
+		$tagasp_long10 = "<%@ " wide ascii
         // <% eval
-		$tagasp_long4 = "<% e" nocase wide ascii
-		$tagasp_long5 = "<%ex" nocase wide ascii
-		$tagasp_long6 = "<%ev" nocase wide ascii
-		$tagasp_long7 = /<% \w/ nocase wide ascii
+		$tagasp_long11 = /<% \w/ nocase wide ascii
+		$tagasp_long12 = "<%ex" nocase wide ascii
+		$tagasp_long13 = "<%ev" nocase wide ascii
 
         // <%@ LANGUAGE = VBScript.encode%>
         // <%@ Language = "JScript" %>
@@ -1465,6 +1519,10 @@ rule webshell_asp_obfuscated
 		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
+
+        // avoid hitting legitimate php
+        $php1 = "<?php"
+        $php2 = "<?="
 	
 		//strings from private rule capa_asp_obfuscation_multi
         // many Chr or few and a loop????
@@ -1479,6 +1537,29 @@ rule webshell_asp_obfuscated
 		$o7 = "\\44" wide ascii
 		$o8 = "\\112" wide ascii
 		$o9 = "\\120" wide ascii
+		$o10 = " & \"" wide ascii
+		$o11 = " += \"" wide ascii
+        // used for e.g. "scr"&"ipt"
+
+        $m_multi_one1 = "Replace(" wide ascii
+        $m_multi_one2 = "Len(" wide ascii
+        $m_multi_one3 = "Mid(" wide ascii
+        $m_multi_one4 = "mid(" wide ascii
+        $m_multi_one5 = "InStr(" wide ascii
+        $m_multi_one6 = "Function" wide ascii
+        $m_multi_two1 = "for each" wide ascii
+        $m_multi_two2 = "split(" wide ascii
+        $m_multi_two3 = " & chr(" wide ascii
+        $m_multi_two4 = " & Chr(" wide ascii
+        $m_multi_two5 = " & Chr (" wide ascii
+        $m_multi_three1 = "foreach" fullword wide ascii
+        $m_multi_three2 = "(char" wide ascii
+        $m_multi_four1 = "FromBase64String(" wide ascii
+        $m_multi_four2 = ".Replace(" wide ascii
+        $m_multi_five1 = "String.Join(\"\"," wide ascii
+        $m_multi_five2 = ".Trim(" wide ascii
+        $m_any1 = " & \"2" wide ascii
+        $m_any2 = " += \"2" wide ascii
 	
 		//strings from private rule capa_asp_payload
 		$asp_payload0  = "eval_r" fullword nocase wide ascii
@@ -1487,28 +1568,71 @@ rule webshell_asp_obfuscated
 		$asp_payload3  = /\beval\"\"/ nocase wide ascii
         // var Fla = {'E':eval};  Fla.E(code)
 		$asp_payload4  = /:\s{0,10}eval\b/ nocase wide ascii
-		$asp_payload10 = "execute" fullword nocase wide ascii
+		$asp_payload8  = /\bexecute\s?\(/ nocase wide ascii
+		$asp_payload9  = /\bexecute\s[\w"]/ nocase wide ascii
 		$asp_payload11 = "WSCRIPT.SHELL" fullword nocase wide ascii
 		$asp_payload12 = "Scripting.FileSystemObject" fullword nocase wide ascii
 		$asp_payload13 = "ExecuteGlobal" fullword nocase wide ascii
 		$asp_payload14 = "ExecuteStatement" fullword nocase wide ascii
-		$asp_multi_payload1 = "CreateObject" fullword wide ascii
-		$asp_multi_payload2 = "addcode" fullword wide ascii
-		$asp_multi_payload3 = /\.run\b/ wide ascii
+		$asp_payload15 = "ExecuteStatement" fullword nocase wide ascii
+		$asp_multi_payload_one1 = "CreateObject" nocase fullword wide ascii
+		$asp_multi_payload_one2 = "addcode" fullword wide ascii
+		$asp_multi_payload_one3 = /\.run\b/ wide ascii
+		$asp_multi_payload_two1 = "CreateInstanceFromVirtualPath" fullword wide ascii
+		$asp_multi_payload_two2 = "ProcessRequest" fullword wide ascii
+		$asp_multi_payload_two3 = "BuildManager" fullword wide ascii
+		$asp_multi_payload_three1 = "System.Diagnostics" wide ascii
+		$asp_multi_payload_three2 = "Process" fullword wide ascii
+		$asp_multi_payload_three3 = ".Start" wide ascii
+		// this is about "MSXML2.DOMDocument" but since that's easily obfuscated, lets not search for it
+		$asp_multi_payload_four1 = "CreateObject" fullword nocase wide ascii
+		$asp_multi_payload_four2 = "TransformNode" fullword nocase wide ascii
+		$asp_multi_payload_four3 = "loadxml" fullword nocase wide ascii
+	
+		//strings from private rule capa_asp_obfuscation_obviously
+		$oo1 = /\w\"&\"\w/ wide ascii
 	
     	$fp1 = "Author: Andre Teixeira - andret@microsoft.com" /* FPs with 0227f4c366c07c45628b02bae6b4ad01 */
 	condition:
 		filesize < 100KB and ( 
-			$tagasp_short in ( 0..1000 ) or
-			$tagasp_short in ( filesize-1000..filesize ) or
-			any of ( $tagasp_long* ) 
+        (
+            any of ( $tagasp_long* ) or
+            // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
+            any of ( $tagasp_classid* ) or
+            (
+                $tagasp_short2 and (
+                    $tagasp_short1 in ( 0..1000 ) or
+                    $tagasp_short1 in ( filesize-1000..filesize ) 
+                )
+            ) 
+        ) and not ( 
+            $php1 at 0 or
+            $php2 at 0 
+        ) 
 		)
-		and ( 
+		and 
+		( ( ( 
         (
             filesize < 100KB and 
             (
                 ( #o1+#o2 ) > 50 or
-                ( #o4+#o5+#o6+#o7+#o8+#o9 ) > 20 
+                ( #o4+#o5+#o6+#o7+#o8+#o9 ) > 20 or
+                (
+                    ( #o10+#o11 ) > 50 and
+                    2 of ( $m_multi* ) and
+                    any of ( $m_any* )
+                )
+            ) 
+        ) or (
+            filesize < 5KB and 
+            (
+                ( #o1+#o2 ) > 10 or
+                ( #o4+#o5+#o6+#o7+#o8+#o9 ) > 5 or
+                (
+                    ( #o1+#o2 ) > 1 and
+                    ( #m_multi_one1 + #m_multi_one2 + #m_multi_one3 + #m_multi_one4  ) > 3 
+                )
+
             ) 
         ) or (
             filesize < 700 and 
@@ -1520,10 +1644,31 @@ rule webshell_asp_obfuscated
 		)
 		and ( 
 			any of ( $asp_payload* ) or
-        all of ( $asp_multi_payload* ) 
+        all of ( $asp_multi_payload_one* ) or
+        all of ( $asp_multi_payload_two* ) or
+        all of ( $asp_multi_payload_three* ) or
+        all of ( $asp_multi_payload_four* ) 
+		)
+		) or ( 
+        (
+            filesize < 100KB and 
+            (
+                ( #oo1 ) > 2 
+            ) 
+        ) or (
+            filesize < 25KB and 
+            (
+                ( #oo1 ) > 1
+            ) 
+        ) or (
+            filesize < 1KB and 
+            (
+                ( #oo1 ) > 0 
+            ) 
+        )  
+		)
 		)
 		and not 1 of ($fp*)	
-}
 }
 
 rule webshell_asp_generic_eval_on_input
@@ -1545,16 +1690,21 @@ rule webshell_asp_generic_eval_on_input
 		$payload_and_input4 = /\bExecuteGlobal\s{1,20}request\(/ nocase wide ascii
 	
 		//strings from private rule capa_asp
-		$tagasp_short = "<%" wide ascii
+		$tagasp_short1 = /<%[^"]/ wide ascii
+        // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
+		$tagasp_short2 = "%>" wide ascii
 
-		$tagasp_long1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" wide ascii
-		$tagasp_long2 = "72c24dd5-d70a-438b-8a42-98424b88afb8" wide ascii
-		$tagasp_long3 = "<%@ " wide ascii
+        // classids for scripting host etc
+		$tagasp_classid1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" nocase wide ascii
+		$tagasp_classid2 = "F935DC22-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid3 = "093FF999-1EA0-4079-9525-9614C3504B74" nocase wide ascii
+		$tagasp_classid4 = "F935DC26-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid5 = "0D43FE01-F093-11CF-8940-00A0C9054228" nocase wide ascii
+		$tagasp_long10 = "<%@ " wide ascii
         // <% eval
-		$tagasp_long4 = "<% e" nocase wide ascii
-		$tagasp_long5 = "<%ex" nocase wide ascii
-		$tagasp_long6 = "<%ev" nocase wide ascii
-		$tagasp_long7 = /<% \w/ nocase wide ascii
+		$tagasp_long11 = /<% \w/ nocase wide ascii
+		$tagasp_long12 = "<%ex" nocase wide ascii
+		$tagasp_long13 = "<%ev" nocase wide ascii
 
         // <%@ LANGUAGE = VBScript.encode%>
         // <%@ Language = "JScript" %>
@@ -1579,12 +1729,27 @@ rule webshell_asp_generic_eval_on_input
 		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
+
+        // avoid hitting legitimate php
+        $php1 = "<?php"
+        $php2 = "<?="
 	
 	condition:
 		( filesize < 100KB and ( 
-			$tagasp_short in ( 0..1000 ) or
-			$tagasp_short in ( filesize-1000..filesize ) or
-			any of ( $tagasp_long* ) 
+        (
+            any of ( $tagasp_long* ) or
+            // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
+            any of ( $tagasp_classid* ) or
+            (
+                $tagasp_short2 and (
+                    $tagasp_short1 in ( 0..1000 ) or
+                    $tagasp_short1 in ( filesize-1000..filesize ) 
+                )
+            ) 
+        ) and not ( 
+            $php1 at 0 or
+            $php2 at 0 
+        ) 
 		)
 		and any of ( $payload_and_input* ) ) or 
 		( filesize < 100 and any of ( $payload_and_input* ) )
@@ -1601,31 +1766,38 @@ rule webshell_asp_nano
 		hash = "990e3f129b8ba409a819705276f8fa845b95dad0"
 		hash = "22345e956bce23304f5e8e356c423cee60b0912c"
 		hash = "c84a6098fbd89bd085526b220d0a3f9ab505bcba"
+		hash = "b977c0ad20dc738b5dacda51ec8da718301a75d7"
 
 	strings:
 		$susasp1  = "/*-/*-*/"
 		$susasp2  = "(\"%1"
 		$susasp3  = /[Cc]hr\([Ss]tr\(/
 		$susasp4  = "cmd.exe"
-		$susasp5  = "FromBase64String"
+		$susasp5  = "cmd /c"
+		$susasp7  = "FromBase64String"
         // Request and request in b64:
-		$susasp6  = "UmVxdWVzdC"
-		$susasp7  = "cmVxdWVzdA"
+		$susasp8  = "UmVxdWVzdC"
+		$susasp9  = "cmVxdWVzdA"
         $fp1      = "eval a"
         $fp2      = "'Eval'"
         $fp3      = "Eval(\""
 	
 		//strings from private rule capa_asp
-		$tagasp_short = "<%" wide ascii
+		$tagasp_short1 = /<%[^"]/ wide ascii
+        // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
+		$tagasp_short2 = "%>" wide ascii
 
-		$tagasp_long1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" wide ascii
-		$tagasp_long2 = "72c24dd5-d70a-438b-8a42-98424b88afb8" wide ascii
-		$tagasp_long3 = "<%@ " wide ascii
+        // classids for scripting host etc
+		$tagasp_classid1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" nocase wide ascii
+		$tagasp_classid2 = "F935DC22-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid3 = "093FF999-1EA0-4079-9525-9614C3504B74" nocase wide ascii
+		$tagasp_classid4 = "F935DC26-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid5 = "0D43FE01-F093-11CF-8940-00A0C9054228" nocase wide ascii
+		$tagasp_long10 = "<%@ " wide ascii
         // <% eval
-		$tagasp_long4 = "<% e" nocase wide ascii
-		$tagasp_long5 = "<%ex" nocase wide ascii
-		$tagasp_long6 = "<%ev" nocase wide ascii
-		$tagasp_long7 = /<% \w/ nocase wide ascii
+		$tagasp_long11 = /<% \w/ nocase wide ascii
+		$tagasp_long12 = "<%ex" nocase wide ascii
+		$tagasp_long13 = "<%ev" nocase wide ascii
 
         // <%@ LANGUAGE = VBScript.encode%>
         // <%@ Language = "JScript" %>
@@ -1650,6 +1822,10 @@ rule webshell_asp_nano
 		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
+
+        // avoid hitting legitimate php
+        $php1 = "<?php"
+        $php2 = "<?="
 	
 		//strings from private rule capa_asp_payload
 		$asp_payload0  = "eval_r" fullword nocase wide ascii
@@ -1658,52 +1834,230 @@ rule webshell_asp_nano
 		$asp_payload3  = /\beval\"\"/ nocase wide ascii
         // var Fla = {'E':eval};  Fla.E(code)
 		$asp_payload4  = /:\s{0,10}eval\b/ nocase wide ascii
-		$asp_payload10 = "execute" fullword nocase wide ascii
+		$asp_payload8  = /\bexecute\s?\(/ nocase wide ascii
+		$asp_payload9  = /\bexecute\s[\w"]/ nocase wide ascii
 		$asp_payload11 = "WSCRIPT.SHELL" fullword nocase wide ascii
 		$asp_payload12 = "Scripting.FileSystemObject" fullword nocase wide ascii
 		$asp_payload13 = "ExecuteGlobal" fullword nocase wide ascii
 		$asp_payload14 = "ExecuteStatement" fullword nocase wide ascii
-		$asp_multi_payload1 = "CreateObject" fullword wide ascii
-		$asp_multi_payload2 = "addcode" fullword wide ascii
-		$asp_multi_payload3 = /\.run\b/ wide ascii
+		$asp_payload15 = "ExecuteStatement" fullword nocase wide ascii
+		$asp_multi_payload_one1 = "CreateObject" nocase fullword wide ascii
+		$asp_multi_payload_one2 = "addcode" fullword wide ascii
+		$asp_multi_payload_one3 = /\.run\b/ wide ascii
+		$asp_multi_payload_two1 = "CreateInstanceFromVirtualPath" fullword wide ascii
+		$asp_multi_payload_two2 = "ProcessRequest" fullword wide ascii
+		$asp_multi_payload_two3 = "BuildManager" fullword wide ascii
+		$asp_multi_payload_three1 = "System.Diagnostics" wide ascii
+		$asp_multi_payload_three2 = "Process" fullword wide ascii
+		$asp_multi_payload_three3 = ".Start" wide ascii
+		// this is about "MSXML2.DOMDocument" but since that's easily obfuscated, lets not search for it
+		$asp_multi_payload_four1 = "CreateObject" fullword nocase wide ascii
+		$asp_multi_payload_four2 = "TransformNode" fullword nocase wide ascii
+		$asp_multi_payload_four3 = "loadxml" fullword nocase wide ascii
 	
 	condition:
 		( 
-			$tagasp_short in ( 0..1000 ) or
-			$tagasp_short in ( filesize-1000..filesize ) or
-			any of ( $tagasp_long* ) 
+        (
+            any of ( $tagasp_long* ) or
+            // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
+            any of ( $tagasp_classid* ) or
+            (
+                $tagasp_short2 and (
+                    $tagasp_short1 in ( 0..1000 ) or
+                    $tagasp_short1 in ( filesize-1000..filesize ) 
+                )
+            ) 
+        ) and not ( 
+            $php1 at 0 or
+            $php2 at 0 
+        ) 
 		)
 		and ( 
 			any of ( $asp_payload* ) or
-        all of ( $asp_multi_payload* ) 
+        all of ( $asp_multi_payload_one* ) or
+        all of ( $asp_multi_payload_two* ) or
+        all of ( $asp_multi_payload_three* ) or
+        all of ( $asp_multi_payload_four* ) 
 		)
 		and not any of ( $fp* ) and 
 		( filesize < 200 or 
 		( filesize < 1000 and any of ( $susasp* ) ) )
 }
 
-rule webshell_vbscript_nano_encoded
+rule webshell_asp_encoded
 {
 	meta:
-		description = "Generic small VBscript encoded webshell "
+		description = "Webshell in VBscript or JScript encoded using *.Encode plus a suspicious string"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Arnim Rupp"
-		hash = "1c7fbad3c4ca83a70efcd19f34838cbde902c631"
-		date = "2021/01/26"
+		date = "2021/03/14"
 
 	strings:
-		$vb = "VBScript.Encode" nocase wide ascii
-		$vb_encode1 = "<%#@~^" wide ascii
-		$vb_encode2 = "<%=#@~^" wide ascii
+		$encoded1 = "VBScript.Encode" nocase wide ascii
+		$encoded2 = "JScript.Encode" nocase wide ascii
+		$data1 = "#@~^" wide ascii
+		$sus1 = "shell" nocase wide ascii
+		$sus2 = "cmd" fullword wide ascii
+		$sus3 = "password" fullword wide ascii
+		$sus4 = "UserPass" fullword wide ascii
+	
+		//strings from private rule capa_asp
+		$tagasp_short1 = /<%[^"]/ wide ascii
+        // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
+		$tagasp_short2 = "%>" wide ascii
 
+        // classids for scripting host etc
+		$tagasp_classid1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" nocase wide ascii
+		$tagasp_classid2 = "F935DC22-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid3 = "093FF999-1EA0-4079-9525-9614C3504B74" nocase wide ascii
+		$tagasp_classid4 = "F935DC26-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid5 = "0D43FE01-F093-11CF-8940-00A0C9054228" nocase wide ascii
+		$tagasp_long10 = "<%@ " wide ascii
+        // <% eval
+		$tagasp_long11 = /<% \w/ nocase wide ascii
+		$tagasp_long12 = "<%ex" nocase wide ascii
+		$tagasp_long13 = "<%ev" nocase wide ascii
+
+        // <%@ LANGUAGE = VBScript.encode%>
+        // <%@ Language = "JScript" %>
+
+        // <%@ WebHandler Language="C#" class="Handler" %>
+        // <%@ WebService Language="C#" Class="Service" %>
+
+        // <%@Page Language="Jscript"%>
+        // <%@ Page Language = Jscript %>           
+        // <%@PAGE LANGUAGE=JSCRIPT%>
+        // <%@ Page Language="Jscript" validateRequest="false" %>
+        // <%@ Page Language = Jscript %>
+        // <%@ Page Language="C#" %>
+        // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
+		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
+
+        // <script runat="server" language="JScript">
+        // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
+        // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
+        // <msxsl:script language="JScript" ...
+		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
+		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
+		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
+
+        // avoid hitting legitimate php
+        $php1 = "<?php"
+        $php2 = "<?="
+	
 	condition:
-		$vb and ( filesize <200 and any of ($vb_encode*)) or ( filesize <4000 and (#vb_encode1>3) or (#vb_encode2>3)) or ( filesize <30KB and (#vb_encode1>10) or (#vb_encode2>10))
+		filesize < 500KB and ( 
+        (
+            any of ( $tagasp_long* ) or
+            // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
+            any of ( $tagasp_classid* ) or
+            (
+                $tagasp_short2 and (
+                    $tagasp_short1 in ( 0..1000 ) or
+                    $tagasp_short1 in ( filesize-1000..filesize ) 
+                )
+            ) 
+        ) and not ( 
+            $php1 at 0 or
+            $php2 at 0 
+        ) 
+		)
+		and any of ( $encoded* ) and any of ( $data* ) and 
+		( any of ( $sus* ) or 
+		( filesize < 20KB and #data1 > 4 ) or 
+		( filesize < 700 and #data1 > 0 ) )
+}
+
+rule webshell_asp_encoded_aspcoding
+{
+	meta:
+		description = "ASP Webshell encoded using ASPEncodeDLL.AspCoding"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		author = "Arnim Rupp"
+		date = "2021/03/14"
+		score = 60
+
+	strings:
+		$encoded1 = "ASPEncodeDLL" fullword nocase wide ascii
+		$encoded2 = ".Runt" nocase wide ascii
+		$encoded3 = "Request" fullword nocase wide ascii
+		$encoded4 = "Response" fullword nocase wide ascii
+		$data1 = "AspCoding.EnCode" wide ascii
+		//$sus1 = "shell" nocase wide ascii
+		//$sus2 = "cmd" fullword wide ascii
+		//$sus3 = "password" fullword wide ascii
+		//$sus4 = "UserPass" fullword wide ascii
+	
+		//strings from private rule capa_asp
+		$tagasp_short1 = /<%[^"]/ wide ascii
+        // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
+		$tagasp_short2 = "%>" wide ascii
+
+        // classids for scripting host etc
+		$tagasp_classid1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" nocase wide ascii
+		$tagasp_classid2 = "F935DC22-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid3 = "093FF999-1EA0-4079-9525-9614C3504B74" nocase wide ascii
+		$tagasp_classid4 = "F935DC26-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid5 = "0D43FE01-F093-11CF-8940-00A0C9054228" nocase wide ascii
+		$tagasp_long10 = "<%@ " wide ascii
+        // <% eval
+		$tagasp_long11 = /<% \w/ nocase wide ascii
+		$tagasp_long12 = "<%ex" nocase wide ascii
+		$tagasp_long13 = "<%ev" nocase wide ascii
+
+        // <%@ LANGUAGE = VBScript.encode%>
+        // <%@ Language = "JScript" %>
+
+        // <%@ WebHandler Language="C#" class="Handler" %>
+        // <%@ WebService Language="C#" Class="Service" %>
+
+        // <%@Page Language="Jscript"%>
+        // <%@ Page Language = Jscript %>           
+        // <%@PAGE LANGUAGE=JSCRIPT%>
+        // <%@ Page Language="Jscript" validateRequest="false" %>
+        // <%@ Page Language = Jscript %>
+        // <%@ Page Language="C#" %>
+        // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
+		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
+
+        // <script runat="server" language="JScript">
+        // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
+        // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
+        // <msxsl:script language="JScript" ...
+		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
+		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
+		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
+
+        // avoid hitting legitimate php
+        $php1 = "<?php"
+        $php2 = "<?="
+	
+	condition:
+		filesize < 500KB and ( 
+        (
+            any of ( $tagasp_long* ) or
+            // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
+            any of ( $tagasp_classid* ) or
+            (
+                $tagasp_short2 and (
+                    $tagasp_short1 in ( 0..1000 ) or
+                    $tagasp_short1 in ( filesize-1000..filesize ) 
+                )
+            ) 
+        ) and not ( 
+            $php1 at 0 or
+            $php2 at 0 
+        ) 
+		)
+		and all of ( $encoded* ) and any of ( $data* )
 }
 
 rule webshell_asp_by_string
 {
 	meta:
-		description = "Generic ASP webshell strings"
+		description = "Known ASP Webshells which contain unique strings, lousy rule for low hanging fruits. Most are catched by other rules in here but maybe these catch different versions."
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Arnim Rupp"
 		date = "2021/01/13"
@@ -1722,25 +2076,146 @@ rule webshell_asp_by_string
 		$asp_string10 = "<%if (Request.Files.Count!=0) { Request.Files[0].SaveAs(Server.MapPath(Request[" wide ascii
 		$asp_string11 = "<% If Request.Files.Count <> 0 Then Request.Files(0).SaveAs(Server.MapPath(Request(" wide ascii
 		$asp_string12 = "UmVxdWVzdC5JdGVtWyJ" wide ascii
-		$asp_string13 = "UAdgBhAGwAKA"
-		$asp_string14 = "lAHYAYQBsACgA"
-		$asp_string15 = "ZQB2AGEAbAAoA"
-		$asp_string16 = "IAZQBxAHUAZQBzAHQAKA"
-		$asp_string17 = "yAGUAcQB1AGUAcwB0ACgA"
-		$asp_string18 = "cgBlAHEAdQBlAHMAdAAoA"
-		$asp_string19 = "\"ev\"&\"al"
-		$asp_string20 = "\"Sc\"&\"ri\"&\"p"
-		$asp_string21 = "C\"&\"ont\"&\""
-		$asp_string22 = "\"vb\"&\"sc"
-		$asp_string23 = "\"A\"&\"do\"&\"d"
-		$asp_string24 = "St\"&\"re\"&\"am\""
+		$asp_string13 = "UAdgBhAGwAKA" wide ascii
+		$asp_string14 = "lAHYAYQBsACgA" wide ascii
+		$asp_string15 = "ZQB2AGEAbAAoA" wide ascii
+		$asp_string16 = "IAZQBxAHUAZQBzAHQAKA" wide ascii
+		$asp_string17 = "yAGUAcQB1AGUAcwB0ACgA" wide ascii
+		$asp_string18 = "cgBlAHEAdQBlAHMAdAAoA" wide ascii
+		$asp_string19 = "\"ev\"&\"al" wide ascii
+		$asp_string20 = "\"Sc\"&\"ri\"&\"p" wide ascii
+		$asp_string21 = "C\"&\"ont\"&\"" wide ascii
+		$asp_string22 = "\"vb\"&\"sc" wide ascii
+		$asp_string23 = "\"A\"&\"do\"&\"d" wide ascii
+		$asp_string24 = "St\"&\"re\"&\"am\"" wide ascii
 		$asp_string25 = "*/eval(" wide ascii
 		$asp_string26 = "\"e\"&\"v\"&\"a\"&\"l" nocase
 		$asp_string27 = "<%eval\"\"&(\"" nocase wide ascii
-		$asp_string28 = "6877656D2B736972786677752B237E232C2A"
+		$asp_string28 = "6877656D2B736972786677752B237E232C2A" wide ascii
+		$asp_string29 = "ws\"&\"cript.shell" wide ascii
+		$asp_string30 = "SerVer.CreAtEoBjECT(\"ADODB.Stream\")" wide ascii
+		$asp_string31 = "ASPShell - web based shell" wide ascii
+		$asp_string32 = "<++ CmdAsp.asp ++>" wide ascii
+		$asp_string33 = "\"scr\"&\"ipt\"" wide ascii
+		$asp_string34 = "Regex regImg = new Regex(\"[a-z|A-Z]{1}:\\\\\\\\[a-z|A-Z| |0-9|\\u4e00-\\u9fa5|\\\\~|\\\\\\\\|_|{|}|\\\\.]*\");" wide ascii
+		$asp_string35 = "\"she\"&\"ll." wide ascii
+		$asp_string36 = "LH\"&\"TTP" wide ascii
+		$asp_string37 = "<title>Web Sniffer</title>" wide ascii
+		$asp_string38 = "<title>WebSniff" wide ascii
+		$asp_string39 = "cript\"&\"ing" wide ascii
+		$asp_string40 = "tcejbOmetsySeliF.gnitpircS" wide ascii
+		$asp_string41 = "tcejbOetaerC.revreS" wide ascii
 
 	condition:
 		filesize <200KB and any of ($asp_string*)
+}
+
+rule webshell_asp_sniffer
+{
+	meta:
+		description = "ASP webshell which can sniff local traffic"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		author = "Arnim Rupp"
+		date = "2021/03/14"
+
+	strings:
+		$sniff1 = "Socket(" wide ascii
+		$sniff2 = ".Bind(" wide ascii
+		$sniff3 = ".SetSocketOption(" wide ascii
+		$sniff4 = ".IOControl(" wide ascii
+		$sniff5 = "PacketCaptureWriter" fullword wide ascii
+	
+		//strings from private rule capa_asp
+		$tagasp_short1 = /<%[^"]/ wide ascii
+        // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
+		$tagasp_short2 = "%>" wide ascii
+
+        // classids for scripting host etc
+		$tagasp_classid1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" nocase wide ascii
+		$tagasp_classid2 = "F935DC22-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid3 = "093FF999-1EA0-4079-9525-9614C3504B74" nocase wide ascii
+		$tagasp_classid4 = "F935DC26-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid5 = "0D43FE01-F093-11CF-8940-00A0C9054228" nocase wide ascii
+		$tagasp_long10 = "<%@ " wide ascii
+        // <% eval
+		$tagasp_long11 = /<% \w/ nocase wide ascii
+		$tagasp_long12 = "<%ex" nocase wide ascii
+		$tagasp_long13 = "<%ev" nocase wide ascii
+
+        // <%@ LANGUAGE = VBScript.encode%>
+        // <%@ Language = "JScript" %>
+
+        // <%@ WebHandler Language="C#" class="Handler" %>
+        // <%@ WebService Language="C#" Class="Service" %>
+
+        // <%@Page Language="Jscript"%>
+        // <%@ Page Language = Jscript %>           
+        // <%@PAGE LANGUAGE=JSCRIPT%>
+        // <%@ Page Language="Jscript" validateRequest="false" %>
+        // <%@ Page Language = Jscript %>
+        // <%@ Page Language="C#" %>
+        // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
+		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
+
+        // <script runat="server" language="JScript">
+        // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
+        // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
+        // <msxsl:script language="JScript" ...
+		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
+		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
+		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
+
+        // avoid hitting legitimate php
+        $php1 = "<?php"
+        $php2 = "<?="
+	
+		//strings from private rule capa_asp_input
+        // Request.BinaryRead
+        // Request.Form
+		$asp_input1 = "request" fullword nocase wide ascii
+		$asp_xml_http = "Microsoft.XMLHTTP" fullword nocase wide ascii
+		$asp_xml_method1 = "GET" fullword wide ascii
+		$asp_xml_method2 = "POST" fullword wide ascii
+		$asp_xml_method3 = "HEAD" fullword wide ascii
+        // dynamic form
+        $asp_form1 = "<form " wide ascii
+        $asp_form2 = "<Form " wide ascii
+        $asp_form3 = "<FORM " wide ascii
+        $asp_asp   = "<asp:" wide ascii
+        $asp_text1 = ".text" wide ascii
+        $asp_text2 = ".Text" wide ascii
+	
+	condition:
+		( 
+        (
+            any of ( $tagasp_long* ) or
+            // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
+            any of ( $tagasp_classid* ) or
+            (
+                $tagasp_short2 and (
+                    $tagasp_short1 in ( 0..1000 ) or
+                    $tagasp_short1 in ( filesize-1000..filesize ) 
+                )
+            ) 
+        ) and not ( 
+            $php1 at 0 or
+            $php2 at 0 
+        ) 
+		)
+		and ( 
+			any of ( $asp_input* ) or
+        (
+            $asp_xml_http and
+            any of ( $asp_xml_method* )
+        ) or
+        (
+            any of ( $asp_form* ) and
+            any of ( $asp_text* ) and
+            $asp_asp
+        ) 
+		)
+		and filesize < 30KB and all of ( $sniff* )
 }
 
 rule webshell_asp_generic_tiny
@@ -1758,16 +2233,21 @@ rule webshell_asp_generic_tiny
 		$write2 = ".Create" nocase wide ascii
 	
 		//strings from private rule capa_asp
-		$tagasp_short = "<%" wide ascii
+		$tagasp_short1 = /<%[^"]/ wide ascii
+        // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
+		$tagasp_short2 = "%>" wide ascii
 
-		$tagasp_long1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" wide ascii
-		$tagasp_long2 = "72c24dd5-d70a-438b-8a42-98424b88afb8" wide ascii
-		$tagasp_long3 = "<%@ " wide ascii
+        // classids for scripting host etc
+		$tagasp_classid1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" nocase wide ascii
+		$tagasp_classid2 = "F935DC22-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid3 = "093FF999-1EA0-4079-9525-9614C3504B74" nocase wide ascii
+		$tagasp_classid4 = "F935DC26-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid5 = "0D43FE01-F093-11CF-8940-00A0C9054228" nocase wide ascii
+		$tagasp_long10 = "<%@ " wide ascii
         // <% eval
-		$tagasp_long4 = "<% e" nocase wide ascii
-		$tagasp_long5 = "<%ex" nocase wide ascii
-		$tagasp_long6 = "<%ev" nocase wide ascii
-		$tagasp_long7 = /<% \w/ nocase wide ascii
+		$tagasp_long11 = /<% \w/ nocase wide ascii
+		$tagasp_long12 = "<%ex" nocase wide ascii
+		$tagasp_long13 = "<%ev" nocase wide ascii
 
         // <%@ LANGUAGE = VBScript.encode%>
         // <%@ Language = "JScript" %>
@@ -1792,6 +2272,10 @@ rule webshell_asp_generic_tiny
 		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
+
+        // avoid hitting legitimate php
+        $php1 = "<?php"
+        $php2 = "<?="
 	
 		//strings from private rule capa_asp_input
         // Request.BinaryRead
@@ -1801,6 +2285,16 @@ rule webshell_asp_generic_tiny
 		$asp_xml_method1 = "GET" fullword wide ascii
 		$asp_xml_method2 = "POST" fullword wide ascii
 		$asp_xml_method3 = "HEAD" fullword wide ascii
+        // dynamic form
+        $asp_form1 = "<form " wide ascii
+        $asp_form2 = "<Form " wide ascii
+        $asp_form3 = "<FORM " wide ascii
+        $asp_asp   = "<asp:" wide ascii
+        $asp_text1 = ".text" wide ascii
+        $asp_text2 = ".Text" wide ascii
+	
+		//strings from private rule capa_bin_files
+        $dex   = { 64 65 78 0a 30 }
 	
 		//strings from private rule capa_asp_payload
 		$asp_payload0  = "eval_r" fullword nocase wide ascii
@@ -1809,32 +2303,69 @@ rule webshell_asp_generic_tiny
 		$asp_payload3  = /\beval\"\"/ nocase wide ascii
         // var Fla = {'E':eval};  Fla.E(code)
 		$asp_payload4  = /:\s{0,10}eval\b/ nocase wide ascii
-		$asp_payload10 = "execute" fullword nocase wide ascii
+		$asp_payload8  = /\bexecute\s?\(/ nocase wide ascii
+		$asp_payload9  = /\bexecute\s[\w"]/ nocase wide ascii
 		$asp_payload11 = "WSCRIPT.SHELL" fullword nocase wide ascii
 		$asp_payload12 = "Scripting.FileSystemObject" fullword nocase wide ascii
 		$asp_payload13 = "ExecuteGlobal" fullword nocase wide ascii
 		$asp_payload14 = "ExecuteStatement" fullword nocase wide ascii
-		$asp_multi_payload1 = "CreateObject" fullword wide ascii
-		$asp_multi_payload2 = "addcode" fullword wide ascii
-		$asp_multi_payload3 = /\.run\b/ wide ascii
+		$asp_payload15 = "ExecuteStatement" fullword nocase wide ascii
+		$asp_multi_payload_one1 = "CreateObject" nocase fullword wide ascii
+		$asp_multi_payload_one2 = "addcode" fullword wide ascii
+		$asp_multi_payload_one3 = /\.run\b/ wide ascii
+		$asp_multi_payload_two1 = "CreateInstanceFromVirtualPath" fullword wide ascii
+		$asp_multi_payload_two2 = "ProcessRequest" fullword wide ascii
+		$asp_multi_payload_two3 = "BuildManager" fullword wide ascii
+		$asp_multi_payload_three1 = "System.Diagnostics" wide ascii
+		$asp_multi_payload_three2 = "Process" fullword wide ascii
+		$asp_multi_payload_three3 = ".Start" wide ascii
+		// this is about "MSXML2.DOMDocument" but since that's easily obfuscated, lets not search for it
+		$asp_multi_payload_four1 = "CreateObject" fullword nocase wide ascii
+		$asp_multi_payload_four2 = "TransformNode" fullword nocase wide ascii
+		$asp_multi_payload_four3 = "loadxml" fullword nocase wide ascii
 	
 	condition:
 		( 
-			$tagasp_short in ( 0..1000 ) or
-			$tagasp_short in ( filesize-1000..filesize ) or
-			any of ( $tagasp_long* ) 
+        (
+            any of ( $tagasp_long* ) or
+            // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
+            any of ( $tagasp_classid* ) or
+            (
+                $tagasp_short2 and (
+                    $tagasp_short1 in ( 0..1000 ) or
+                    $tagasp_short1 in ( filesize-1000..filesize ) 
+                )
+            ) 
+        ) and not ( 
+            $php1 at 0 or
+            $php2 at 0 
+        ) 
 		)
 		and ( 
 			any of ( $asp_input* ) or
         (
             $asp_xml_http and
             any of ( $asp_xml_method* )
+        ) or
+        (
+            any of ( $asp_form* ) and
+            any of ( $asp_text* ) and
+            $asp_asp
         ) 
 		)
+		and not ( 
+        uint16(0) == 0x5a4d or 
+        $dex at 0 or 
+        // fp on jar with zero compression
+        uint16(0) == 0x4b50 
+		)
 		and 
-		( ( filesize < 500 and ( 
+		( ( filesize < 700 and ( 
 			any of ( $asp_payload* ) or
-        all of ( $asp_multi_payload* ) 
+        all of ( $asp_multi_payload_one* ) or
+        all of ( $asp_multi_payload_two* ) or
+        all of ( $asp_multi_payload_three* ) or
+        all of ( $asp_multi_payload_four* ) 
 		)
 		) or 
 		( filesize < 300 and all of ( $write* ) ) )
@@ -1849,20 +2380,40 @@ rule webshell_asp_generic
 		date = "2021/03/07"
 
 	strings:
-        $asp_gen_sus1 = /:\s{0,20}eval}/ nocase wide ascii
-        $asp_gen_sus2 = /\.replace\(\/\w\/g/ nocase wide ascii
+        $asp_gen_sus1  = /:\s{0,20}eval}/ nocase wide ascii
+        $asp_gen_sus2  = /\.replace\(\/\w\/g/ nocase wide ascii
+        $asp_gen_sus3  = "hidded shell" 
+        $asp_gen_sus4  = "WScript.Shell.1" nocase
+        $asp_gen_sus5  = "AspExec" 
+        $asp_gen_sus6  = "self.delete"
+        $asp_gen_sus7  = "Web Shell" nocase
+        $asp_gen_sus8  = "WebShell" nocase
+        $asp_gen_sus9  = "\"cmd /c" nocase
+        $asp_gen_sus10 = "\"cmd\"" nocase
+        $asp_gen_sus11 = "\"cmd.exe" nocase
+        //TODO:$asp_gen_sus12 = ".UserName" nocase
+        $asp_gen_sus13 = "Hklm.GetValueNames();" nocase
+        $asp_gen_sus14 = "\\pcAnywhere\\" nocase
+        $asp_gen_sus15 = "antivirus" nocase
+        $asp_gen_sus16 = "McAfee" nocase
+        $asp_gen_sus17 = "nishang" 
 	
 		//strings from private rule capa_asp
-		$tagasp_short = "<%" wide ascii
+		$tagasp_short1 = /<%[^"]/ wide ascii
+        // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
+		$tagasp_short2 = "%>" wide ascii
 
-		$tagasp_long1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" wide ascii
-		$tagasp_long2 = "72c24dd5-d70a-438b-8a42-98424b88afb8" wide ascii
-		$tagasp_long3 = "<%@ " wide ascii
+        // classids for scripting host etc
+		$tagasp_classid1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" nocase wide ascii
+		$tagasp_classid2 = "F935DC22-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid3 = "093FF999-1EA0-4079-9525-9614C3504B74" nocase wide ascii
+		$tagasp_classid4 = "F935DC26-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid5 = "0D43FE01-F093-11CF-8940-00A0C9054228" nocase wide ascii
+		$tagasp_long10 = "<%@ " wide ascii
         // <% eval
-		$tagasp_long4 = "<% e" nocase wide ascii
-		$tagasp_long5 = "<%ex" nocase wide ascii
-		$tagasp_long6 = "<%ev" nocase wide ascii
-		$tagasp_long7 = /<% \w/ nocase wide ascii
+		$tagasp_long11 = /<% \w/ nocase wide ascii
+		$tagasp_long12 = "<%ex" nocase wide ascii
+		$tagasp_long13 = "<%ev" nocase wide ascii
 
         // <%@ LANGUAGE = VBScript.encode%>
         // <%@ Language = "JScript" %>
@@ -1887,6 +2438,13 @@ rule webshell_asp_generic
 		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
+
+        // avoid hitting legitimate php
+        $php1 = "<?php"
+        $php2 = "<?="
+	
+		//strings from private rule capa_bin_files
+        $dex   = { 64 65 78 0a 30 }
 	
 		//strings from private rule capa_asp_input
         // Request.BinaryRead
@@ -1896,6 +2454,13 @@ rule webshell_asp_generic
 		$asp_xml_method1 = "GET" fullword wide ascii
 		$asp_xml_method2 = "POST" fullword wide ascii
 		$asp_xml_method3 = "HEAD" fullword wide ascii
+        // dynamic form
+        $asp_form1 = "<form " wide ascii
+        $asp_form2 = "<Form " wide ascii
+        $asp_form3 = "<FORM " wide ascii
+        $asp_asp   = "<asp:" wide ascii
+        $asp_text1 = ".text" wide ascii
+        $asp_text2 = ".Text" wide ascii
 	
 		//strings from private rule capa_asp_payload
 		$asp_payload0  = "eval_r" fullword nocase wide ascii
@@ -1904,33 +2469,194 @@ rule webshell_asp_generic
 		$asp_payload3  = /\beval\"\"/ nocase wide ascii
         // var Fla = {'E':eval};  Fla.E(code)
 		$asp_payload4  = /:\s{0,10}eval\b/ nocase wide ascii
-		$asp_payload10 = "execute" fullword nocase wide ascii
+		$asp_payload8  = /\bexecute\s?\(/ nocase wide ascii
+		$asp_payload9  = /\bexecute\s[\w"]/ nocase wide ascii
 		$asp_payload11 = "WSCRIPT.SHELL" fullword nocase wide ascii
 		$asp_payload12 = "Scripting.FileSystemObject" fullword nocase wide ascii
 		$asp_payload13 = "ExecuteGlobal" fullword nocase wide ascii
 		$asp_payload14 = "ExecuteStatement" fullword nocase wide ascii
-		$asp_multi_payload1 = "CreateObject" fullword wide ascii
-		$asp_multi_payload2 = "addcode" fullword wide ascii
-		$asp_multi_payload3 = /\.run\b/ wide ascii
+		$asp_payload15 = "ExecuteStatement" fullword nocase wide ascii
+		$asp_multi_payload_one1 = "CreateObject" nocase fullword wide ascii
+		$asp_multi_payload_one2 = "addcode" fullword wide ascii
+		$asp_multi_payload_one3 = /\.run\b/ wide ascii
+		$asp_multi_payload_two1 = "CreateInstanceFromVirtualPath" fullword wide ascii
+		$asp_multi_payload_two2 = "ProcessRequest" fullword wide ascii
+		$asp_multi_payload_two3 = "BuildManager" fullword wide ascii
+		$asp_multi_payload_three1 = "System.Diagnostics" wide ascii
+		$asp_multi_payload_three2 = "Process" fullword wide ascii
+		$asp_multi_payload_three3 = ".Start" wide ascii
+		// this is about "MSXML2.DOMDocument" but since that's easily obfuscated, lets not search for it
+		$asp_multi_payload_four1 = "CreateObject" fullword nocase wide ascii
+		$asp_multi_payload_four2 = "TransformNode" fullword nocase wide ascii
+		$asp_multi_payload_four3 = "loadxml" fullword nocase wide ascii
+	
+		//strings from private rule capa_asp_classid
+		$tagasp_capa_classid1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" nocase wide ascii
+		$tagasp_capa_classid2 = "F935DC22-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_capa_classid3 = "093FF999-1EA0-4079-9525-9614C3504B74" nocase wide ascii
+		$tagasp_capa_classid4 = "F935DC26-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_capa_classid5 = "0D43FE01-F093-11CF-8940-00A0C9054228" nocase wide ascii
 	
 	condition:
-		( 
-			$tagasp_short in ( 0..1000 ) or
-			$tagasp_short in ( filesize-1000..filesize ) or
-			any of ( $tagasp_long* ) 
+		filesize < 20KB and ( 
+        (
+            any of ( $tagasp_long* ) or
+            // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
+            any of ( $tagasp_classid* ) or
+            (
+                $tagasp_short2 and (
+                    $tagasp_short1 in ( 0..1000 ) or
+                    $tagasp_short1 in ( filesize-1000..filesize ) 
+                )
+            ) 
+        ) and not ( 
+            $php1 at 0 or
+            $php2 at 0 
+        ) 
+		)
+		and not ( 
+        uint16(0) == 0x5a4d or 
+        $dex at 0 or 
+        // fp on jar with zero compression
+        uint16(0) == 0x4b50 
 		)
 		and ( 
 			any of ( $asp_input* ) or
         (
             $asp_xml_http and
             any of ( $asp_xml_method* )
+        ) or
+        (
+            any of ( $asp_form* ) and
+            any of ( $asp_text* ) and
+            $asp_asp
         ) 
 		)
-		and filesize < 20KB and ( 
+		and ( 
 			any of ( $asp_payload* ) or
-        all of ( $asp_multi_payload* ) 
+        all of ( $asp_multi_payload_one* ) or
+        all of ( $asp_multi_payload_two* ) or
+        all of ( $asp_multi_payload_three* ) or
+        all of ( $asp_multi_payload_four* ) 
 		)
-		and any of ( $asp_gen_sus* )
+		and 
+		( any of ( $asp_gen_sus* ) or ( 
+        any of ( $tagasp_capa_classid* ) 
+		)
+		)
+}
+
+rule webshell_asp_generic_registry_reader
+{
+	meta:
+		description = "Generic ASP webshell which reads the registry (might look for passwords, license keys, database settings, general recon, ..."
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		author = "Arnim Rupp"
+		date = "2021/03/14"
+
+	strings:
+        $asp_reg1  = "Registry" fullword wide ascii
+        $asp_reg2  = "LocalMachine" fullword wide ascii
+        $asp_reg3  = "ClassesRoot" fullword wide ascii
+        $asp_reg4  = "CurrentUser" fullword wide ascii
+        $asp_reg5  = "Users" fullword wide ascii
+        $asp_reg6  = "CurrentConfig" fullword wide ascii
+        $asp_reg7  = "Microsoft.Win32" fullword wide ascii
+        $asp_reg8  = "OpenSubKey" fullword wide ascii
+	
+		//strings from private rule capa_asp
+		$tagasp_short1 = /<%[^"]/ wide ascii
+        // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
+		$tagasp_short2 = "%>" wide ascii
+
+        // classids for scripting host etc
+		$tagasp_classid1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" nocase wide ascii
+		$tagasp_classid2 = "F935DC22-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid3 = "093FF999-1EA0-4079-9525-9614C3504B74" nocase wide ascii
+		$tagasp_classid4 = "F935DC26-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid5 = "0D43FE01-F093-11CF-8940-00A0C9054228" nocase wide ascii
+		$tagasp_long10 = "<%@ " wide ascii
+        // <% eval
+		$tagasp_long11 = /<% \w/ nocase wide ascii
+		$tagasp_long12 = "<%ex" nocase wide ascii
+		$tagasp_long13 = "<%ev" nocase wide ascii
+
+        // <%@ LANGUAGE = VBScript.encode%>
+        // <%@ Language = "JScript" %>
+
+        // <%@ WebHandler Language="C#" class="Handler" %>
+        // <%@ WebService Language="C#" Class="Service" %>
+
+        // <%@Page Language="Jscript"%>
+        // <%@ Page Language = Jscript %>           
+        // <%@PAGE LANGUAGE=JSCRIPT%>
+        // <%@ Page Language="Jscript" validateRequest="false" %>
+        // <%@ Page Language = Jscript %>
+        // <%@ Page Language="C#" %>
+        // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
+		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
+
+        // <script runat="server" language="JScript">
+        // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
+        // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
+        // <msxsl:script language="JScript" ...
+		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
+		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
+		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
+
+        // avoid hitting legitimate php
+        $php1 = "<?php"
+        $php2 = "<?="
+	
+		//strings from private rule capa_asp_input
+        // Request.BinaryRead
+        // Request.Form
+		$asp_input1 = "request" fullword nocase wide ascii
+		$asp_xml_http = "Microsoft.XMLHTTP" fullword nocase wide ascii
+		$asp_xml_method1 = "GET" fullword wide ascii
+		$asp_xml_method2 = "POST" fullword wide ascii
+		$asp_xml_method3 = "HEAD" fullword wide ascii
+        // dynamic form
+        $asp_form1 = "<form " wide ascii
+        $asp_form2 = "<Form " wide ascii
+        $asp_form3 = "<FORM " wide ascii
+        $asp_asp   = "<asp:" wide ascii
+        $asp_text1 = ".text" wide ascii
+        $asp_text2 = ".Text" wide ascii
+	
+	condition:
+		( 
+        (
+            any of ( $tagasp_long* ) or
+            // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
+            any of ( $tagasp_classid* ) or
+            (
+                $tagasp_short2 and (
+                    $tagasp_short1 in ( 0..1000 ) or
+                    $tagasp_short1 in ( filesize-1000..filesize ) 
+                )
+            ) 
+        ) and not ( 
+            $php1 at 0 or
+            $php2 at 0 
+        ) 
+		)
+		and all of ( $asp_reg* ) and 
+		( filesize < 10KB or 
+		( filesize < 150KB and ( 
+			any of ( $asp_input* ) or
+        (
+            $asp_xml_http and
+            any of ( $asp_xml_method* )
+        ) or
+        (
+            any of ( $asp_form* ) and
+            any of ( $asp_text* ) and
+            $asp_asp
+        ) 
+		)
+		) )
 }
 
 rule webshell_aspx_regeorg_csharp
@@ -1954,16 +2680,21 @@ rule webshell_aspx_regeorg_csharp
         $georg = "Response.Write(\"Georg says, 'All seems fine'\")"
 	
 		//strings from private rule capa_asp
-		$tagasp_short = "<%" wide ascii
+		$tagasp_short1 = /<%[^"]/ wide ascii
+        // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
+		$tagasp_short2 = "%>" wide ascii
 
-		$tagasp_long1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" wide ascii
-		$tagasp_long2 = "72c24dd5-d70a-438b-8a42-98424b88afb8" wide ascii
-		$tagasp_long3 = "<%@ " wide ascii
+        // classids for scripting host etc
+		$tagasp_classid1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" nocase wide ascii
+		$tagasp_classid2 = "F935DC22-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid3 = "093FF999-1EA0-4079-9525-9614C3504B74" nocase wide ascii
+		$tagasp_classid4 = "F935DC26-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid5 = "0D43FE01-F093-11CF-8940-00A0C9054228" nocase wide ascii
+		$tagasp_long10 = "<%@ " wide ascii
         // <% eval
-		$tagasp_long4 = "<% e" nocase wide ascii
-		$tagasp_long5 = "<%ex" nocase wide ascii
-		$tagasp_long6 = "<%ev" nocase wide ascii
-		$tagasp_long7 = /<% \w/ nocase wide ascii
+		$tagasp_long11 = /<% \w/ nocase wide ascii
+		$tagasp_long12 = "<%ex" nocase wide ascii
+		$tagasp_long13 = "<%ev" nocase wide ascii
 
         // <%@ LANGUAGE = VBScript.encode%>
         // <%@ Language = "JScript" %>
@@ -1988,12 +2719,27 @@ rule webshell_aspx_regeorg_csharp
 		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
+
+        // avoid hitting legitimate php
+        $php1 = "<?php"
+        $php2 = "<?="
 	
 	condition:
 		filesize < 300KB and ( 
-			$tagasp_short in ( 0..1000 ) or
-			$tagasp_short in ( filesize-1000..filesize ) or
-			any of ( $tagasp_long* ) 
+        (
+            any of ( $tagasp_long* ) or
+            // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
+            any of ( $tagasp_classid* ) or
+            (
+                $tagasp_short2 and (
+                    $tagasp_short1 in ( 0..1000 ) or
+                    $tagasp_short1 in ( filesize-1000..filesize ) 
+                )
+            ) 
+        ) and not ( 
+            $php1 at 0 or
+            $php2 at 0 
+        ) 
 		)
 		and 
 		( $georg or 
@@ -2019,16 +2765,21 @@ rule webshell_csharp_generic
 		$exec_shell2 = "powershell.exe" nocase wide ascii
 	
 		//strings from private rule capa_asp
-		$tagasp_short = "<%" wide ascii
+		$tagasp_short1 = /<%[^"]/ wide ascii
+        // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
+		$tagasp_short2 = "%>" wide ascii
 
-		$tagasp_long1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" wide ascii
-		$tagasp_long2 = "72c24dd5-d70a-438b-8a42-98424b88afb8" wide ascii
-		$tagasp_long3 = "<%@ " wide ascii
+        // classids for scripting host etc
+		$tagasp_classid1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" nocase wide ascii
+		$tagasp_classid2 = "F935DC22-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid3 = "093FF999-1EA0-4079-9525-9614C3504B74" nocase wide ascii
+		$tagasp_classid4 = "F935DC26-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid5 = "0D43FE01-F093-11CF-8940-00A0C9054228" nocase wide ascii
+		$tagasp_long10 = "<%@ " wide ascii
         // <% eval
-		$tagasp_long4 = "<% e" nocase wide ascii
-		$tagasp_long5 = "<%ex" nocase wide ascii
-		$tagasp_long6 = "<%ev" nocase wide ascii
-		$tagasp_long7 = /<% \w/ nocase wide ascii
+		$tagasp_long11 = /<% \w/ nocase wide ascii
+		$tagasp_long12 = "<%ex" nocase wide ascii
+		$tagasp_long13 = "<%ev" nocase wide ascii
 
         // <%@ LANGUAGE = VBScript.encode%>
         // <%@ Language = "JScript" %>
@@ -2053,12 +2804,27 @@ rule webshell_csharp_generic
 		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
+
+        // avoid hitting legitimate php
+        $php1 = "<?php"
+        $php2 = "<?="
 	
 	condition:
 		( 
-			$tagasp_short in ( 0..1000 ) or
-			$tagasp_short in ( filesize-1000..filesize ) or
-			any of ( $tagasp_long* ) 
+        (
+            any of ( $tagasp_long* ) or
+            // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
+            any of ( $tagasp_classid* ) or
+            (
+                $tagasp_short2 and (
+                    $tagasp_short1 in ( 0..1000 ) or
+                    $tagasp_short1 in ( filesize-1000..filesize ) 
+                )
+            ) 
+        ) and not ( 
+            $php1 at 0 or
+            $php2 at 0 
+        ) 
 		)
 		and filesize < 300KB and 
 		( $input_http or all of ( $input_form* ) ) and all of ( $exec_proc* ) and any of ( $exec_shell* )
@@ -2078,12 +2844,14 @@ rule webshell_asp_runtime_compile
 
 	strings:
 		$payload_reflection1 = "System.Reflection" nocase wide ascii
-		$payload_reflection2 = "Assembly.Load" nocase wide ascii
+		$payload_reflection2 = "Assembly" fullword nocase wide ascii
+		$payload_reflection3 = "Load" fullword nocase wide ascii
 		$payload_compile1 = "GenerateInMemory" nocase wide ascii
 		$payload_compile2 = "CompileAssemblyFromSource" nocase wide ascii
 		$payload_invoke1 = "Invoke" nocase wide ascii
 		$payload_invoke2 = "CreateInstance" nocase wide ascii
         $rc_fp1 = "Request.MapPath"
+        $rc_fp2 = "<body><mono:MonoSamplesHeader runat=\"server\"/>" wide ascii
 	
 		//strings from private rule capa_asp_input
         // Request.BinaryRead
@@ -2093,6 +2861,13 @@ rule webshell_asp_runtime_compile
 		$asp_xml_method1 = "GET" fullword wide ascii
 		$asp_xml_method2 = "POST" fullword wide ascii
 		$asp_xml_method3 = "HEAD" fullword wide ascii
+        // dynamic form
+        $asp_form1 = "<form " wide ascii
+        $asp_form2 = "<Form " wide ascii
+        $asp_form3 = "<FORM " wide ascii
+        $asp_asp   = "<asp:" wide ascii
+        $asp_text1 = ".text" wide ascii
+        $asp_text2 = ".Text" wide ascii
 	
 	condition:
 		filesize < 10KB and ( 
@@ -2100,10 +2875,255 @@ rule webshell_asp_runtime_compile
         (
             $asp_xml_http and
             any of ( $asp_xml_method* )
+        ) or
+        (
+            any of ( $asp_form* ) and
+            any of ( $asp_text* ) and
+            $asp_asp
         ) 
 		)
 		and not any of ( $rc_fp* ) and 
 		( all of ( $payload_reflection* ) or all of ( $payload_compile* ) ) and any of ( $payload_invoke* )
+}
+
+rule webshell_asp_sql
+{
+	meta:
+		description = "ASP webshell giving SQL access. Might also be a dual use tool."
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		author = "Arnim Rupp"
+		date = "2021/03/14"
+
+	strings:
+        $sql1 = "SqlConnection" fullword wide ascii
+        $sql2 = "SQLConnection" fullword wide ascii
+        $sql3 = "System" fullword wide ascii
+        $sql4 = "Data" fullword wide ascii
+        $sql5 = "SqlClient" fullword wide ascii
+        $sql6 = "SQLClient" fullword wide ascii
+        $sql7 = "Open" fullword wide ascii
+        $sql8 = "SqlCommand" fullword wide ascii
+        $sql9 = "SQLCommand" fullword wide ascii
+        $sus1 = "shell" fullword nocase wide ascii
+        $sus2 = "xp_cmdshell" fullword nocase wide ascii
+        $sus3 = "aspxspy" fullword nocase wide ascii
+        $sus4 = "_KillMe" wide ascii
+        $sus5 = "cmd.exe" fullword wide ascii
+        $sus6 = "cmd /c" fullword wide ascii
+        $sus7 = "net user" fullword wide ascii
+        
+	
+		//strings from private rule capa_asp
+		$tagasp_short1 = /<%[^"]/ wide ascii
+        // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
+		$tagasp_short2 = "%>" wide ascii
+
+        // classids for scripting host etc
+		$tagasp_classid1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" nocase wide ascii
+		$tagasp_classid2 = "F935DC22-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid3 = "093FF999-1EA0-4079-9525-9614C3504B74" nocase wide ascii
+		$tagasp_classid4 = "F935DC26-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid5 = "0D43FE01-F093-11CF-8940-00A0C9054228" nocase wide ascii
+		$tagasp_long10 = "<%@ " wide ascii
+        // <% eval
+		$tagasp_long11 = /<% \w/ nocase wide ascii
+		$tagasp_long12 = "<%ex" nocase wide ascii
+		$tagasp_long13 = "<%ev" nocase wide ascii
+
+        // <%@ LANGUAGE = VBScript.encode%>
+        // <%@ Language = "JScript" %>
+
+        // <%@ WebHandler Language="C#" class="Handler" %>
+        // <%@ WebService Language="C#" Class="Service" %>
+
+        // <%@Page Language="Jscript"%>
+        // <%@ Page Language = Jscript %>           
+        // <%@PAGE LANGUAGE=JSCRIPT%>
+        // <%@ Page Language="Jscript" validateRequest="false" %>
+        // <%@ Page Language = Jscript %>
+        // <%@ Page Language="C#" %>
+        // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
+		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
+
+        // <script runat="server" language="JScript">
+        // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
+        // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
+        // <msxsl:script language="JScript" ...
+		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
+		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
+		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
+
+        // avoid hitting legitimate php
+        $php1 = "<?php"
+        $php2 = "<?="
+	
+		//strings from private rule capa_asp_input
+        // Request.BinaryRead
+        // Request.Form
+		$asp_input1 = "request" fullword nocase wide ascii
+		$asp_xml_http = "Microsoft.XMLHTTP" fullword nocase wide ascii
+		$asp_xml_method1 = "GET" fullword wide ascii
+		$asp_xml_method2 = "POST" fullword wide ascii
+		$asp_xml_method3 = "HEAD" fullword wide ascii
+        // dynamic form
+        $asp_form1 = "<form " wide ascii
+        $asp_form2 = "<Form " wide ascii
+        $asp_form3 = "<FORM " wide ascii
+        $asp_asp   = "<asp:" wide ascii
+        $asp_text1 = ".text" wide ascii
+        $asp_text2 = ".Text" wide ascii
+	
+	condition:
+		filesize < 150KB and ( 
+        (
+            any of ( $tagasp_long* ) or
+            // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
+            any of ( $tagasp_classid* ) or
+            (
+                $tagasp_short2 and (
+                    $tagasp_short1 in ( 0..1000 ) or
+                    $tagasp_short1 in ( filesize-1000..filesize ) 
+                )
+            ) 
+        ) and not ( 
+            $php1 at 0 or
+            $php2 at 0 
+        ) 
+		)
+		and ( 
+			any of ( $asp_input* ) or
+        (
+            $asp_xml_http and
+            any of ( $asp_xml_method* )
+        ) or
+        (
+            any of ( $asp_form* ) and
+            any of ( $asp_text* ) and
+            $asp_asp
+        ) 
+		)
+		and 6 of ( $sql* ) and any of ( $sus* )
+}
+
+rule webshell_asp_scan_writable
+{
+	meta:
+		description = "ASP webshell searching for writable directories (to hide more webshells ...)"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		author = "Arnim Rupp"
+		date = "2021/03/14"
+		hash = "2409eda9047085baf12e0f1b9d0b357672f7a152"
+		hash = "af1c00696243f8b062a53dad9fb8b773fa1f0395631ffe6c7decc42c47eedee7"
+
+	strings:
+        $scan1 = "DirectoryInfo" nocase fullword wide ascii
+        $scan2 = "GetDirectories" nocase fullword wide ascii
+        $scan3 = "Create" nocase fullword wide ascii
+        $scan4 = "File" nocase fullword wide ascii
+        $scan5 = "System.IO" nocase fullword wide ascii
+        // two methods: check permissions or write and delete:
+        $scan6 = "CanWrite" nocase fullword wide ascii
+        $scan7 = "Delete" nocase fullword wide ascii
+
+
+        $sus1 = "upload" nocase fullword wide ascii
+        $sus2 = "shell" nocase wide ascii
+        $sus3 = "orking directory" nocase fullword wide ascii
+        $sus4 = "scan" nocase wide ascii
+        
+	
+		//strings from private rule capa_asp
+		$tagasp_short1 = /<%[^"]/ wide ascii
+        // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
+		$tagasp_short2 = "%>" wide ascii
+
+        // classids for scripting host etc
+		$tagasp_classid1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" nocase wide ascii
+		$tagasp_classid2 = "F935DC22-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid3 = "093FF999-1EA0-4079-9525-9614C3504B74" nocase wide ascii
+		$tagasp_classid4 = "F935DC26-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid5 = "0D43FE01-F093-11CF-8940-00A0C9054228" nocase wide ascii
+		$tagasp_long10 = "<%@ " wide ascii
+        // <% eval
+		$tagasp_long11 = /<% \w/ nocase wide ascii
+		$tagasp_long12 = "<%ex" nocase wide ascii
+		$tagasp_long13 = "<%ev" nocase wide ascii
+
+        // <%@ LANGUAGE = VBScript.encode%>
+        // <%@ Language = "JScript" %>
+
+        // <%@ WebHandler Language="C#" class="Handler" %>
+        // <%@ WebService Language="C#" Class="Service" %>
+
+        // <%@Page Language="Jscript"%>
+        // <%@ Page Language = Jscript %>           
+        // <%@PAGE LANGUAGE=JSCRIPT%>
+        // <%@ Page Language="Jscript" validateRequest="false" %>
+        // <%@ Page Language = Jscript %>
+        // <%@ Page Language="C#" %>
+        // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
+		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
+
+        // <script runat="server" language="JScript">
+        // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
+        // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
+        // <msxsl:script language="JScript" ...
+		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
+		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
+		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
+
+        // avoid hitting legitimate php
+        $php1 = "<?php"
+        $php2 = "<?="
+	
+		//strings from private rule capa_asp_input
+        // Request.BinaryRead
+        // Request.Form
+		$asp_input1 = "request" fullword nocase wide ascii
+		$asp_xml_http = "Microsoft.XMLHTTP" fullword nocase wide ascii
+		$asp_xml_method1 = "GET" fullword wide ascii
+		$asp_xml_method2 = "POST" fullword wide ascii
+		$asp_xml_method3 = "HEAD" fullword wide ascii
+        // dynamic form
+        $asp_form1 = "<form " wide ascii
+        $asp_form2 = "<Form " wide ascii
+        $asp_form3 = "<FORM " wide ascii
+        $asp_asp   = "<asp:" wide ascii
+        $asp_text1 = ".text" wide ascii
+        $asp_text2 = ".Text" wide ascii
+	
+	condition:
+		filesize < 10KB and ( 
+        (
+            any of ( $tagasp_long* ) or
+            // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
+            any of ( $tagasp_classid* ) or
+            (
+                $tagasp_short2 and (
+                    $tagasp_short1 in ( 0..1000 ) or
+                    $tagasp_short1 in ( filesize-1000..filesize ) 
+                )
+            ) 
+        ) and not ( 
+            $php1 at 0 or
+            $php2 at 0 
+        ) 
+		)
+		and ( 
+			any of ( $asp_input* ) or
+        (
+            $asp_xml_http and
+            any of ( $asp_xml_method* )
+        ) or
+        (
+            any of ( $asp_form* ) and
+            any of ( $asp_text* ) and
+            $asp_asp
+        ) 
+		)
+		and 6 of ( $scan* ) and any of ( $sus* )
 }
 
 rule webshell_jsp_regeorg
@@ -2677,16 +3697,21 @@ rule webshell_generic_os_strings
 		$fp2 = "denormalize('/etc/shadow" wide ascii
 	
 		//strings from private rule capa_asp
-		$tagasp_short = "<%" wide ascii
+		$tagasp_short1 = /<%[^"]/ wide ascii
+        // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
+		$tagasp_short2 = "%>" wide ascii
 
-		$tagasp_long1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" wide ascii
-		$tagasp_long2 = "72c24dd5-d70a-438b-8a42-98424b88afb8" wide ascii
-		$tagasp_long3 = "<%@ " wide ascii
+        // classids for scripting host etc
+		$tagasp_classid1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" nocase wide ascii
+		$tagasp_classid2 = "F935DC22-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid3 = "093FF999-1EA0-4079-9525-9614C3504B74" nocase wide ascii
+		$tagasp_classid4 = "F935DC26-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid5 = "0D43FE01-F093-11CF-8940-00A0C9054228" nocase wide ascii
+		$tagasp_long10 = "<%@ " wide ascii
         // <% eval
-		$tagasp_long4 = "<% e" nocase wide ascii
-		$tagasp_long5 = "<%ex" nocase wide ascii
-		$tagasp_long6 = "<%ev" nocase wide ascii
-		$tagasp_long7 = /<% \w/ nocase wide ascii
+		$tagasp_long11 = /<% \w/ nocase wide ascii
+		$tagasp_long12 = "<%ex" nocase wide ascii
+		$tagasp_long13 = "<%ev" nocase wide ascii
 
         // <%@ LANGUAGE = VBScript.encode%>
         // <%@ Language = "JScript" %>
@@ -2711,6 +3736,10 @@ rule webshell_generic_os_strings
 		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
+
+        // avoid hitting legitimate php
+        $php1 = "<?php"
+        $php2 = "<?="
 	
 		//strings from private rule capa_php_old_safe
 		$php_short = "<?" wide ascii
@@ -2748,9 +3777,20 @@ rule webshell_generic_os_strings
 	condition:
 		filesize < 70KB and 
 		( ( 
-			$tagasp_short in ( 0..1000 ) or
-			$tagasp_short in ( filesize-1000..filesize ) or
-			any of ( $tagasp_long* ) 
+        (
+            any of ( $tagasp_long* ) or
+            // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
+            any of ( $tagasp_classid* ) or
+            (
+                $tagasp_short2 and (
+                    $tagasp_short1 in ( 0..1000 ) or
+                    $tagasp_short1 in ( filesize-1000..filesize ) 
+                )
+            ) 
+        ) and not ( 
+            $php1 at 0 or
+            $php2 at 0 
+        ) 
 		)
 		or ( 
 			(
@@ -2789,6 +3829,7 @@ rule webshell_in_image
         $png = { 89 50 4E 47 }
         $jpg = { FF D8 FF E0 }
         $gif = { 47 49 46 38 }
+        $gif2 = "gif89"
         // MS access
         $mdb = { 00 01 00 00 53 74 }
         //$mdb = { 00 01 00 00 53 74 61 6E 64 61 72 64 20 4A 65 74 20 44 42 }
@@ -2841,16 +3882,21 @@ rule webshell_in_image
 		$rt_payload3 = "exec" fullword ascii wide
 	
 		//strings from private rule capa_asp
-		$tagasp_short = "<%" wide ascii
+		$tagasp_short1 = /<%[^"]/ wide ascii
+        // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
+		$tagasp_short2 = "%>" wide ascii
 
-		$tagasp_long1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" wide ascii
-		$tagasp_long2 = "72c24dd5-d70a-438b-8a42-98424b88afb8" wide ascii
-		$tagasp_long3 = "<%@ " wide ascii
+        // classids for scripting host etc
+		$tagasp_classid1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" nocase wide ascii
+		$tagasp_classid2 = "F935DC22-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid3 = "093FF999-1EA0-4079-9525-9614C3504B74" nocase wide ascii
+		$tagasp_classid4 = "F935DC26-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid5 = "0D43FE01-F093-11CF-8940-00A0C9054228" nocase wide ascii
+		$tagasp_long10 = "<%@ " wide ascii
         // <% eval
-		$tagasp_long4 = "<% e" nocase wide ascii
-		$tagasp_long5 = "<%ex" nocase wide ascii
-		$tagasp_long6 = "<%ev" nocase wide ascii
-		$tagasp_long7 = /<% \w/ nocase wide ascii
+		$tagasp_long11 = /<% \w/ nocase wide ascii
+		$tagasp_long12 = "<%ex" nocase wide ascii
+		$tagasp_long13 = "<%ev" nocase wide ascii
 
         // <%@ LANGUAGE = VBScript.encode%>
         // <%@ Language = "JScript" %>
@@ -2875,6 +3921,10 @@ rule webshell_in_image
 		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
+
+        // avoid hitting legitimate php
+        $php1 = "<?php"
+        $php2 = "<?="
 	
 		//strings from private rule capa_asp_payload
 		$asp_payload0  = "eval_r" fullword nocase wide ascii
@@ -2883,17 +3933,29 @@ rule webshell_in_image
 		$asp_payload3  = /\beval\"\"/ nocase wide ascii
         // var Fla = {'E':eval};  Fla.E(code)
 		$asp_payload4  = /:\s{0,10}eval\b/ nocase wide ascii
-		$asp_payload10 = "execute" fullword nocase wide ascii
+		$asp_payload8  = /\bexecute\s?\(/ nocase wide ascii
+		$asp_payload9  = /\bexecute\s[\w"]/ nocase wide ascii
 		$asp_payload11 = "WSCRIPT.SHELL" fullword nocase wide ascii
 		$asp_payload12 = "Scripting.FileSystemObject" fullword nocase wide ascii
 		$asp_payload13 = "ExecuteGlobal" fullword nocase wide ascii
 		$asp_payload14 = "ExecuteStatement" fullword nocase wide ascii
-		$asp_multi_payload1 = "CreateObject" fullword wide ascii
-		$asp_multi_payload2 = "addcode" fullword wide ascii
-		$asp_multi_payload3 = /\.run\b/ wide ascii
+		$asp_payload15 = "ExecuteStatement" fullword nocase wide ascii
+		$asp_multi_payload_one1 = "CreateObject" nocase fullword wide ascii
+		$asp_multi_payload_one2 = "addcode" fullword wide ascii
+		$asp_multi_payload_one3 = /\.run\b/ wide ascii
+		$asp_multi_payload_two1 = "CreateInstanceFromVirtualPath" fullword wide ascii
+		$asp_multi_payload_two2 = "ProcessRequest" fullword wide ascii
+		$asp_multi_payload_two3 = "BuildManager" fullword wide ascii
+		$asp_multi_payload_three1 = "System.Diagnostics" wide ascii
+		$asp_multi_payload_three2 = "Process" fullword wide ascii
+		$asp_multi_payload_three3 = ".Start" wide ascii
+		// this is about "MSXML2.DOMDocument" but since that's easily obfuscated, lets not search for it
+		$asp_multi_payload_four1 = "CreateObject" fullword nocase wide ascii
+		$asp_multi_payload_four2 = "TransformNode" fullword nocase wide ascii
+		$asp_multi_payload_four3 = "loadxml" fullword nocase wide ascii
 	
 	condition:
-		( $png at 0 or $jpg at 0 or $gif at 0 or $mdb at 0 ) and 
+		( $png at 0 or $jpg at 0 or $gif at 0 or $gif2 at 0 or $mdb at 0 ) and 
 		( ( ( 
 			(
 				( 
@@ -2917,13 +3979,27 @@ rule webshell_in_image
 		)
 		) or 
 		( ( 
-			$tagasp_short in ( 0..1000 ) or
-			$tagasp_short in ( filesize-1000..filesize ) or
-			any of ( $tagasp_long* ) 
+        (
+            any of ( $tagasp_long* ) or
+            // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
+            any of ( $tagasp_classid* ) or
+            (
+                $tagasp_short2 and (
+                    $tagasp_short1 in ( 0..1000 ) or
+                    $tagasp_short1 in ( filesize-1000..filesize ) 
+                )
+            ) 
+        ) and not ( 
+            $php1 at 0 or
+            $php2 at 0 
+        ) 
 		)
 		and ( 
 			any of ( $asp_payload* ) or
-        all of ( $asp_multi_payload* ) 
+        all of ( $asp_multi_payload_one* ) or
+        all of ( $asp_multi_payload_two* ) or
+        all of ( $asp_multi_payload_three* ) or
+        all of ( $asp_multi_payload_four* ) 
 		)
 		) )
 }
