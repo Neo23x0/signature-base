@@ -3548,4 +3548,37 @@ ublic\\.Monitor\\ews\.conf;90
 # HAFNIUM IOCs https://twitter.com/GadixCRK/status/1369320418574823427?s=20
 \\Windows\\Temp\\cw\.exe$;75
 
+# Tick Group Webshell Exchange Exploitation IOCs https://www.welivesecurity.com/2021/03/10/exchange-servers-under-siege-10-apt-groups/
+\\inetpub\\wwwroot\\aspnet_client\\aspnet\.aspx;90
+
+# Calypso Group Webshell Exchange Exploitation IOCs https://www.welivesecurity.com/2021/03/10/exchange-servers-under-siege-10-apt-groups/
+\\inetpub\\wwwroot\\aspnet_client\\client\.aspx;90
+\\inetpub\\wwwroot\\aspnet_client\\discover\.aspx;90
+
+# Websiic Filename Exchange Exploitation IOCs https://www.welivesecurity.com/2021/03/10/exchange-servers-under-siege-10-apt-groups/
+\\Program Files\\System\\websvc\.dll;80
+\\Common Files\\Microsoft Shared\\WMI\\iiswmi\.dll;80
+
+# Winnti Group Exchange Exploitation IOCs https://www.welivesecurity.com/2021/03/10/exchange-servers-under-siege-10-apt-groups/
+\\inetpub\\wwwroot\\aspnet_client\\caches\.aspx;85
+\\inetpub\\wwwroot\\aspnet_client\\shell\.aspx;85
+
+# Tonto Team Group Exchange Exploitation IOC https://www.welivesecurity.com/2021/03/10/exchange-servers-under-siege-10-apt-groups/
+\\inetpub\\wwwroot\\aspnet_client\\dukybySSSS\.aspx;100
+
+# Unattributed Shadowpad Activity in Exchange Exploiation IOC https://www.welivesecurity.com/2021/03/10/exchange-servers-under-siege-10-apt-groups/
+C:\\Windows\\Help\\mui\\0109\\mscoree\.dll;90
+C:\\mscoree\.dll;70
+\\opera_browser\.exe;80
+\\opera_browser\.dll;80
+
+# Mikroceen Activity in Exchange Exploiation IOC https://www.welivesecurity.com/2021/03/10/exchange-servers-under-siege-10-apt-groups/
+\\inetpub\\wwwroot\\aspnet_client\\aspnet_regiis\.aspx;80
+\\inetpub\\wwwroot\\aspnet_client\\log_error_9e23efc3\.aspx;80
+\\FrontEnd\\HttpProxy\\owa\\auth\\aspnet_error\.aspx;80
+\\Users\\Public\\alg\.exe;95
+\\Users\\Public\\calcx\.exe;95
+\\Users\\Public\\Dump\.exe;95
+\\Users\\Public\\1\.log;70
+
 # End
