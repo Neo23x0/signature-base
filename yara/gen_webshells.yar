@@ -1369,7 +1369,7 @@ rule webshell_asp_writer
         $sus13= "<textarea " wide ascii
 	
 		//strings from private rule capa_asp
-		$tagasp_short1 = "<%" wide ascii
+		$tagasp_short1 = /<%[^"]/ wide ascii
         // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
 		$tagasp_short2 = "%>" wide ascii
 
@@ -1478,7 +1478,7 @@ rule webshell_asp_obfuscated
 	strings:
 
 		//strings from private rule capa_asp
-		$tagasp_short1 = "<%" wide ascii
+		$tagasp_short1 = /<%[^"]/ wide ascii
         // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
 		$tagasp_short2 = "%>" wide ascii
 
@@ -1686,7 +1686,7 @@ rule webshell_asp_generic_eval_on_input
 		$payload_and_input4 = /\bExecuteGlobal\s{1,20}request\(/ nocase wide ascii
 	
 		//strings from private rule capa_asp
-		$tagasp_short1 = "<%" wide ascii
+		$tagasp_short1 = /<%[^"]/ wide ascii
         // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
 		$tagasp_short2 = "%>" wide ascii
 
@@ -1779,7 +1779,7 @@ rule webshell_asp_nano
         $fp3      = "Eval(\""
 	
 		//strings from private rule capa_asp
-		$tagasp_short1 = "<%" wide ascii
+		$tagasp_short1 = /<%[^"]/ wide ascii
         // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
 		$tagasp_short2 = "%>" wide ascii
 
@@ -1898,7 +1898,7 @@ rule webshell_asp_encoded
 		$sus4 = "UserPass" fullword wide ascii
 	
 		//strings from private rule capa_asp
-		$tagasp_short1 = "<%" wide ascii
+		$tagasp_short1 = /<%[^"]/ wide ascii
         // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
 		$tagasp_short2 = "%>" wide ascii
 
@@ -1986,7 +1986,7 @@ rule webshell_asp_encoded_aspcoding
 		//$sus4 = "UserPass" fullword wide ascii
 	
 		//strings from private rule capa_asp
-		$tagasp_short1 = "<%" wide ascii
+		$tagasp_short1 = /<%[^"]/ wide ascii
         // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
 		$tagasp_short2 = "%>" wide ascii
 
@@ -2122,7 +2122,7 @@ rule webshell_asp_sniffer
 		$sniff5 = "PacketCaptureWriter" fullword wide ascii
 	
 		//strings from private rule capa_asp
-		$tagasp_short1 = "<%" wide ascii
+		$tagasp_short1 = /<%[^"]/ wide ascii
         // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
 		$tagasp_short2 = "%>" wide ascii
 
@@ -2229,7 +2229,7 @@ rule webshell_asp_generic_tiny
 		$write2 = ".Create" nocase wide ascii
 	
 		//strings from private rule capa_asp
-		$tagasp_short1 = "<%" wide ascii
+		$tagasp_short1 = /<%[^"]/ wide ascii
         // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
 		$tagasp_short2 = "%>" wide ascii
 
@@ -2395,7 +2395,7 @@ rule webshell_asp_generic
         $asp_gen_sus17 = "nishang" 
 	
 		//strings from private rule capa_asp
-		$tagasp_short1 = "<%" wide ascii
+		$tagasp_short1 = /<%[^"]/ wide ascii
         // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
 		$tagasp_short2 = "%>" wide ascii
 
@@ -2561,7 +2561,7 @@ rule webshell_asp_generic_registry_reader
         $asp_reg8  = "OpenSubKey" fullword wide ascii
 	
 		//strings from private rule capa_asp
-		$tagasp_short1 = "<%" wide ascii
+		$tagasp_short1 = /<%[^"]/ wide ascii
         // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
 		$tagasp_short2 = "%>" wide ascii
 
@@ -2676,7 +2676,7 @@ rule webshell_aspx_regeorg_csharp
         $georg = "Response.Write(\"Georg says, 'All seems fine'\")"
 	
 		//strings from private rule capa_asp
-		$tagasp_short1 = "<%" wide ascii
+		$tagasp_short1 = /<%[^"]/ wide ascii
         // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
 		$tagasp_short2 = "%>" wide ascii
 
@@ -2761,7 +2761,7 @@ rule webshell_csharp_generic
 		$exec_shell2 = "powershell.exe" nocase wide ascii
 	
 		//strings from private rule capa_asp
-		$tagasp_short1 = "<%" wide ascii
+		$tagasp_short1 = /<%[^"]/ wide ascii
         // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
 		$tagasp_short2 = "%>" wide ascii
 
@@ -2847,6 +2847,7 @@ rule webshell_asp_runtime_compile
 		$payload_invoke1 = "Invoke" nocase wide ascii
 		$payload_invoke2 = "CreateInstance" nocase wide ascii
         $rc_fp1 = "Request.MapPath"
+        $rc_fp2 = "<body><mono:MonoSamplesHeader runat=\"server\"/>" wide ascii
 	
 		//strings from private rule capa_asp_input
         // Request.BinaryRead
@@ -2909,7 +2910,7 @@ rule webshell_asp_sql
         
 	
 		//strings from private rule capa_asp
-		$tagasp_short1 = "<%" wide ascii
+		$tagasp_short1 = /<%[^"]/ wide ascii
         // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
 		$tagasp_short2 = "%>" wide ascii
 
@@ -3029,7 +3030,7 @@ rule webshell_asp_scan_writable
         
 	
 		//strings from private rule capa_asp
-		$tagasp_short1 = "<%" wide ascii
+		$tagasp_short1 = /<%[^"]/ wide ascii
         // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
 		$tagasp_short2 = "%>" wide ascii
 
@@ -3692,7 +3693,7 @@ rule webshell_generic_os_strings
 		$fp2 = "denormalize('/etc/shadow" wide ascii
 	
 		//strings from private rule capa_asp
-		$tagasp_short1 = "<%" wide ascii
+		$tagasp_short1 = /<%[^"]/ wide ascii
         // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
 		$tagasp_short2 = "%>" wide ascii
 
@@ -3877,7 +3878,7 @@ rule webshell_in_image
 		$rt_payload3 = "exec" fullword ascii wide
 	
 		//strings from private rule capa_asp
-		$tagasp_short1 = "<%" wide ascii
+		$tagasp_short1 = /<%[^"]/ wide ascii
         // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
 		$tagasp_short2 = "%>" wide ascii
 
