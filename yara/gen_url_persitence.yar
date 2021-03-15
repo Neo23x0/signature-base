@@ -129,6 +129,7 @@ rule Methodology_Contains_Shortcut_OtherURIhandlers
     and filesize < 30KB
 }
 
+/*
 rule Methodology_Suspicious_Shortcut_IconShenanigans_dotDL
 {
   meta:
@@ -147,6 +148,7 @@ rule Methodology_Suspicious_Shortcut_IconShenanigans_dotDL
     and uint16(0) != 0x5A4D and uint32(0) != 0x464c457f and uint32(0) != 0xBEBAFECA and uint32(0) != 0xFEEDFACE and uint32(0) != 0xFEEDFACF and uint32(0) != 0xCEFAEDFE
     and filesize < 30KB
 }
+*/
 
 rule Methodology_Suspicious_Shortcut_IconNotFromExeOrDLLOrICO
 {

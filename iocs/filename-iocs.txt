@@ -3070,7 +3070,7 @@ ystem32\\uploadmgr\.dat;80
 \\\.oracleServices\\svshost_serv\.exe;100
 
 # NTDS.DIT in uncommon location https://blog.stealthbits.com/extracting-password-hashes-from-the-ntds-dit-file/
-[^s2S]\\ntds.dit;60
+[^s2S]\\ntds.dit;60;WinSxS
 
 # MAL HWP Incident Feb 19 https://sfkino.tistory.com/73
 \\Local\\Temp\\HimTray\.dll;75
@@ -3491,5 +3491,61 @@ ublic\\.Monitor\\ews\.conf;90
 
 # Exchange Exploitation - Web Shell Filename IOCs https://twitter.com/ESETresearch/status/1366862953006452738?s=20
 \\inetpub\\wwwroot\\aspnet_client\\system_web\\(shell\.aspx|supp0rt\.aspx|aspnet\.aspx|aspnet_client\.aspx|client\.aspx|OutlookEN\.aspx);80
+
+# China Chopper file names provided by Huntress Labs https://gist.github.com/JohnHammond/0b4a45cad4f4ed3324939d72dc599883
+\\inetpub\\wwwroot\\aspnet_client\\discover\.aspx;85
+\\inetpub\\wwwroot\\aspnet_client\\supp0rt\.aspx;85
+\\inetpub\\wwwroot\\aspnet_client\\HttpProxy\.aspx;85
+\\inetpub\\wwwroot\\aspnet_client\\shell\.aspx;85
+\\inetpub\\wwwroot\\aspnet_client\\system_web\\error\.aspx;85
+\\inetpub\\wwwroot\\aspnet_client\\OutlookEN\.aspx;85
+\\inetpub\\wwwroot\\aspnet_client\\aspnettest\.aspx;85
+\\inetpub\\wwwroot\\aspnet_client\\shellex\.aspx;85
+\\inetpub\\wwwroot\\aspnet_client\\errorcheck\.aspx;85
+\\inetpub\\wwwroot\\aspnet_client\\t\.aspx;85
+\\inetpub\\wwwroot\\aspnet_client\\system_web\\[a-zA-Z0-9]{8}\.aspx;90
+
+# Microsoft HAFNIUM IOCs https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Sample%20Data/Feeds/MSTICIoCs-ExchangeServerVulnerabilitiesDisclosedMarch2021.csv
+\\FrontEnd\\HttpProxy\\owa\\auth\\8Lw7tAhF9i1pJnRo\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\OutlookZH\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\authhead\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\bob\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\current\\one1\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\errorPage\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\errorPages\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\fatal-erro\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\log\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\logg\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\logout\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\one\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\one1\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\shel\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\shel2\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\shel90\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\a\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\default\.aspx;95
+\\inetpub\\wwwroot\\aspnet_client\\Server\.aspx;95
+\\inetpub\\wwwroot\\aspnet_client\\aspnet_client\.aspx;95
+\\inetpub\\wwwroot\\aspnet_client\\aspnet_iisstart\.aspx;95
+\\inetpub\\wwwroot\\aspnet_client\\aspnet_pages\.aspx;95
+\\inetpub\\wwwroot\\aspnet_client\\aspnet_www\.aspx;95
+\\inetpub\\wwwroot\\aspnet_client\\default1\.aspx;95
+\\inetpub\\wwwroot\\aspnet_client\\iispage\.aspx;95
+\\inetpub\\wwwroot\\aspnet_client\\s\.aspx;95
+\\inetpub\\wwwroot\\aspnet_client\\session\.aspx;95
+\\inetpub\\wwwroot\\aspnet_client\\system_web\\log\.aspx;95
+\\inetpub\\wwwroot\\aspnet_client\\xclkmcfldfi948398430fdjkfdkj\.aspx;95
+\\inetpub\\wwwroot\\aspnet_client\\xx\.aspx;95
+\\inetpub\\wwwroot\\aspnet_client\\Server\.aspx;95
+\\FrontEnd\\HttpProxy\\OAB\\log\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\log\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\logg\.aspx;95
+\\FrontEnd\\HttpProxy\\owa\\auth\\logout\.aspx;95
+
+# HAFNIUM IOCs https://discuss.elastic.co/t/detection-and-response-for-hafnium-activity/266289/3
+\\Windows\\Temp\\xx\.bat;80
+
+# HAFNIUM IOCs https://twitter.com/GadixCRK/status/1369320418574823427?s=20
+\\Windows\\Temp\\cw\.exe$;75
 
 # End

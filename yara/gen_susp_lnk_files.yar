@@ -28,7 +28,7 @@ rule SUSP_LNK_SuspiciousCommands {
       $s3 = " -w hidden " ascii wide
       $s4 = " -ep bypass " ascii wide
       $s5 = " -noni " ascii nocase wide
-      $s6 = " bypass " ascii wide
+      /* $s6 = " bypass " ascii wide */
       $s7 = " -noprofile " ascii wide
       $s8 = ".DownloadString(" ascii wide
       $s9 = ".DownloadFile(" ascii wide

@@ -248,6 +248,8 @@ rule webshell_php_generic_callback_tiny
 		$callback32 = /\bsqlite_create_function[\t ]*\([^)]/ nocase wide ascii
 
 		$cfp1 = /ob_start\(['\"]ob_gzhandler/ nocase wide ascii
+		$cfp2 = "IWPML_Backend_Action_Loader" ascii wide
+		$cfp3 = "<?phpclass WPML" ascii
 	
 	condition:
 		filesize < 1000 and not ( 
@@ -1590,6 +1592,7 @@ rule webshell_asp_obfuscated
 		//strings from private rule capa_asp_obfuscation_obviously
 		$oo1 = /\w\"&\"\w/ wide ascii
 	
+    	$fp1 = "Author: Andre Teixeira - andret@microsoft.com" /* FPs with 0227f4c366c07c45628b02bae6b4ad01 */
 	condition:
 		filesize < 100KB and ( 
         (
@@ -1665,6 +1668,7 @@ rule webshell_asp_obfuscated
         )  
 		)
 		)
+		and not 1 of ($fp*)	
 }
 
 rule webshell_asp_generic_eval_on_input

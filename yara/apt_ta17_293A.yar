@@ -207,7 +207,7 @@ rule Imphash_UPX_Packed_Malware_1_TA17_293A {
       ( uint16(0) == 0x5a4d and filesize < 5000KB and pe.imphash() == "d7d745ea39c8c5b82d5e153d3313096c" )
 }
 
-rule Imphash_Malware_2_TA17_293A {
+rule Imphash_Malware_2_TA17_293A : HIGHVOL {
    meta:
       description = "Detects malware based on Imphash of malware used in TA17-293A"
       license = "https://creativecommons.org/licenses/by-nc/4.0/"
