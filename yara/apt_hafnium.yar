@@ -260,7 +260,7 @@ rule APT_HAFNIUM_ForensicArtefacts_Cab_Recon_Mar21_1 {
 rule WEBSHELL_Compiled_Webshell_Mar2021_1 {
    meta:
       description = "Triggers on temporary pe files containing strings commonly used in webshells."
-      author = "Bundesamt für Sicherheit in der Informationstechnik"
+      author = "Bundesamt fuer Sicherheit in der Informationstechnik"
       date = "2021-03-05"
       modified = "2021-03-12"
       reference = "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Cyber-Sicherheit/Vorfaelle/Exchange-Schwachstellen-2021/MSExchange_Schwachstelle_Detektion_Reaktion.pdf"
