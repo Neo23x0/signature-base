@@ -3570,7 +3570,6 @@ ublic\\.Monitor\\ews\.conf;90
 C:\\Windows\\Help\\mui\\0109\\mscoree\.dll;90
 C:\\mscoree\.dll;70
 \\opera_browser\.exe;80
-\\opera_browser\.dll;80
 
 # Mikroceen Activity in Exchange Exploiation IOC https://www.welivesecurity.com/2021/03/10/exchange-servers-under-siege-10-apt-groups/
 \\inetpub\\wwwroot\\aspnet_client\\aspnet_regiis\.aspx;80
