@@ -112,7 +112,7 @@ rule webshell_php_generic_tiny
 
 		// of course the new tags should also match
         // already matched by "<?"
-		$php_new1 = "<?=" wide ascii
+		$php_new1 = /<\?=[^?]/ wide ascii
 		$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
@@ -248,7 +248,7 @@ rule webshell_php_generic_callback_tiny
 		$callback32 = /\bsqlite_create_function[\t ]*\([^)]/ nocase wide ascii
 
 		$cfp1 = /ob_start\(['\"]ob_gzhandler/ nocase wide ascii
-		$cfp2 = "IWPML_Backend_Action_Loader" ascii wide
+        $cfp2 = "IWPML_Backend_Action_Loader" ascii wide
 		$cfp3 = "<?phpclass WPML" ascii
 	
 	condition:
@@ -414,7 +414,7 @@ rule webshell_php_base64_encoded_payloads
 
 		// of course the new tags should also match
         // already matched by "<?"
-		$php_new1 = "<?=" wide ascii
+		$php_new1 = /<\?=[^?]/ wide ascii
 		$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
@@ -538,7 +538,7 @@ rule webshell_php_obfuscated
 
 		// of course the new tags should also match
         // already matched by "<?"
-		$php_new1 = "<?=" wide ascii
+		$php_new1 = /<\?=[^?]/ wide ascii
 		$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
@@ -665,7 +665,7 @@ rule webshell_php_obfuscated_str_replace
 
 		// of course the new tags should also match
         // already matched by "<?"
-		$php_new1 = "<?=" wide ascii
+		$php_new1 = /<\?=[^?]/ wide ascii
 		$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
@@ -723,7 +723,7 @@ rule webshell_php_obfuscated_fopo
 
 		// of course the new tags should also match
         // already matched by "<?"
-		$php_new1 = "<?=" wide ascii
+		$php_new1 = /<\?=[^?]/ wide ascii
 		$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
@@ -813,7 +813,7 @@ rule webshell_php_obfuscated_2
 
 		// of course the new tags should also match
         // already matched by "<?"
-		$php_new1 = "<?=" wide ascii
+		$php_new1 = /<\?=[^?]/ wide ascii
 		$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
@@ -909,7 +909,7 @@ rule webshell_php_dynamic_big
 	strings:
 
 		//strings from private rule capa_php_new
-		$new_php1 = "<?=" wide ascii
+		$new_php1 = /<\?=[^?]/ wide ascii
 		$new_php2 = "<?php" nocase wide ascii
 		$new_php3 = "<script language=\"php" nocase wide ascii
 	
@@ -955,7 +955,7 @@ rule webshell_php_encoded_big
 	strings:
 
 		//strings from private rule capa_php_new
-		$new_php1 = "<?=" wide ascii
+		$new_php1 = /<\?=[^?]/ wide ascii
 		$new_php2 = "<?php" nocase wide ascii
 		$new_php3 = "<script language=\"php" nocase wide ascii
 	
@@ -1045,7 +1045,7 @@ rule webshell_php_generic_backticks_obfuscated
 
 		// of course the new tags should also match
         // already matched by "<?"
-		$php_new1 = "<?=" wide ascii
+		$php_new1 = /<\?=[^?]/ wide ascii
 		$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
@@ -1112,7 +1112,7 @@ rule webshell_php_by_string_known_webshell
 
 		// of course the new tags should also match
         // already matched by "<?"
-		$php_new1 = "<?=" wide ascii
+		$php_new1 = /<\?=[^?]/ wide ascii
 		$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
@@ -1187,7 +1187,7 @@ rule webshell_php_by_string_obfuscation
 
 		// of course the new tags should also match
         // already matched by "<?"
-		$php_new1 = "<?=" wide ascii
+		$php_new1 = /<\?=[^?]/ wide ascii
 		$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
@@ -1229,7 +1229,7 @@ rule webshell_php_strings_susp
 
 		// of course the new tags should also match
         // already matched by "<?"
-		$php_new1 = "<?=" wide ascii
+		$php_new1 = /<\?=[^?]/ wide ascii
 		$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
@@ -1560,6 +1560,9 @@ rule webshell_asp_obfuscated
         $m_multi_five2 = ".Trim(" wide ascii
         $m_any1 = " & \"2" wide ascii
         $m_any2 = " += \"2" wide ascii
+
+        $m_fp1 = "Author: Andre Teixeira - andret@microsoft.com" /* FPs with 0227f4c366c07c45628b02bae6b4ad01 */
+
 	
 		//strings from private rule capa_asp_payload
 		$asp_payload0  = "eval_r" fullword nocase wide ascii
@@ -1592,7 +1595,6 @@ rule webshell_asp_obfuscated
 		//strings from private rule capa_asp_obfuscation_obviously
 		$oo1 = /\w\"&\"\w/ wide ascii
 	
-    	$fp1 = "Author: Andre Teixeira - andret@microsoft.com" /* FPs with 0227f4c366c07c45628b02bae6b4ad01 */
 	condition:
 		filesize < 100KB and ( 
         (
@@ -1614,6 +1616,7 @@ rule webshell_asp_obfuscated
 		( ( ( 
         (
             filesize < 100KB and 
+            not any of ( $m_fp* ) and
             (
                 ( #o1+#o2 ) > 50 or
                 ( #o4+#o5+#o6+#o7+#o8+#o9 ) > 20 or
@@ -1668,7 +1671,6 @@ rule webshell_asp_obfuscated
         )  
 		)
 		)
-		and not 1 of ($fp*)	
 }
 
 rule webshell_asp_generic_eval_on_input
@@ -2397,6 +2399,7 @@ rule webshell_asp_generic
         $asp_gen_sus15 = "antivirus" nocase
         $asp_gen_sus16 = "McAfee" nocase
         $asp_gen_sus17 = "nishang" 
+        $asp_gen_sus18 = "unsafe" fullword wide ascii
 	
 		//strings from private rule capa_asp
 		$tagasp_short1 = /<%[^"]/ wide ascii
@@ -2563,6 +2566,12 @@ rule webshell_asp_generic_registry_reader
         $asp_reg6  = "CurrentConfig" fullword wide ascii
         $asp_reg7  = "Microsoft.Win32" fullword wide ascii
         $asp_reg8  = "OpenSubKey" fullword wide ascii
+
+        $sus1 = "shell" fullword nocase wide ascii
+        $sus2 = "cmd.exe" fullword wide ascii
+        $sus3 = "<form " wide ascii
+        $sus4 = "<table " wide ascii
+        $sus5 = "System.Security.SecurityException" wide ascii
 	
 		//strings from private rule capa_asp
 		$tagasp_short1 = /<%[^"]/ wide ascii
@@ -2642,7 +2651,7 @@ rule webshell_asp_generic_registry_reader
             $php2 at 0 
         ) 
 		)
-		and all of ( $asp_reg* ) and 
+		and all of ( $asp_reg* ) and any of ( $sus* ) and 
 		( filesize < 10KB or 
 		( filesize < 150KB and ( 
 			any of ( $asp_input* ) or
@@ -2904,6 +2913,7 @@ rule webshell_asp_sql
         $sql7 = "Open" fullword wide ascii
         $sql8 = "SqlCommand" fullword wide ascii
         $sql9 = "SQLCommand" fullword wide ascii
+
         $sus1 = "shell" fullword nocase wide ascii
         $sus2 = "xp_cmdshell" fullword nocase wide ascii
         $sus3 = "aspxspy" fullword nocase wide ascii
@@ -3752,7 +3762,7 @@ rule webshell_generic_os_strings
 
 		// of course the new tags should also match
         // already matched by "<?"
-		$php_new1 = "<?=" wide ascii
+		$php_new1 = /<\?=[^?]/ wide ascii
 		$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
@@ -3845,7 +3855,7 @@ rule webshell_in_image
 
 		// of course the new tags should also match
         // already matched by "<?"
-		$php_new1 = "<?=" wide ascii
+		$php_new1 = /<\?=[^?]/ wide ascii
 		$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
