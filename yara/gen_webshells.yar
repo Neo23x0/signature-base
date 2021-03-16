@@ -2633,6 +2633,8 @@ rule webshell_asp_generic_registry_reader
         $asp_asp   = "<asp:" wide ascii
         $asp_text1 = ".text" wide ascii
         $asp_text2 = ".Text" wide ascii
+
+    $fp1 = "Avira Operations GmbH" wide
 	
 	condition:
 		( 
@@ -2666,7 +2668,9 @@ rule webshell_asp_generic_registry_reader
         ) 
 		)
 		) )
+    and not 1 of ($fp*)
 }
+
 
 rule webshell_aspx_regeorg_csharp
 {
