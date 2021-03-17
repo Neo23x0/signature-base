@@ -3283,7 +3283,7 @@ rule webshell_jsp_generic_tiny
 		$req3 = "getRequest" fullword ascii wide
 	
 	condition:
-		filesize < 8000 and ( 
+		filesize < 250 and ( 
 			any of ( $cjsp* ) 
 		)
 		and ( 
