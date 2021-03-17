@@ -257,28 +257,26 @@ rule APT_HAFNIUM_ForensicArtefacts_Cab_Recon_Mar21_1 {
       )
 }
 
-rule APT_CVE_2021_27065_Temp_dll{
+rule APT_HAFNIUM_ForensicArtefacts_OAB_Temp_dll{
    meta:
-      description = "Temporary dll generted by ASPX Webshell during exchange OAB exploitation. Target files App_Web\w.{8}\.dll$""
+      description = "Temporary asembly generted by ASPX Webshell compilation during exchange OAB exploitation. Target path: C:/Windows/Microsoft.NET/*/*/Temporary ASP.NET Files/**/App_Web\\w.{8}\\.dll$"
       author = "Matt Green - @mgreen27"
       date = "2021-03-16"
 
    strings:
-      $xr1 = /auth_.{1,20}_aspx/
-      $xr2 = /Create_ASP_auth_.{1,20}_aspx/
-      $xr3 = /FastObjectFactory_app_web_.{1,20}/
-      $xr4 = /App_Web_.{1,50}/
+      $xr1 = /auth_.{1,50}_aspx/
+      $xr2 = /Create_ASP_auth_.{1,50}_aspx/
+      $xr3 = /FastObjectFactory_app_web_.{1,50}/ 
+      $xr4 = /App_Web_.{1,50}/ 
 
-      $eval = "eval" nocase
-      $url1 = "ExternalUrl" wide ascii nocase
-      $url2 = "InternalUrl" ascii wide nocase
-      
-      $s1 = "InternalAuthenticationMethods" ascii wide nocase
-      $s2 = "ExternalAuthenticationMethods" ascii wide nocase
-      $s3 = "msExchVirtualDirectory" ascii wide nocase
+      $s1 = "ExternalUrl" fullword wide
+      $s2 = "InternalUrl" fullword wide
+      $s3 = "InternalAuthenticationMethods" fullword wide
+      $s4 = "ExternalAuthenticationMethods" fullword wide
+      $s5 = "msExchVirtualDirectory" fullword wide
+
 
    condition:
-      uint16(0) == 0x5a4d 
-      and 2 of ( $xr* ) and $eval
-      and ( $url1 or $url2 ) and $s1 and $s2 and $s3
+      uint16(0) == 0x5a4d and 2 of ( $xr* ) and 3 of ( $s* )
+      
 }
