@@ -418,6 +418,8 @@ rule webshell_php_base64_encoded_payloads
 		$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
+	    $fp1 = { D0 CF 11 E0 A1 B1 1A E1 }
+
 	condition:
 		filesize < 300KB and ( 
 			(
@@ -433,6 +435,7 @@ rule webshell_php_base64_encoded_payloads
 		( ( any of ( $one* ) and not any of ( $execu* ) ) or any of ( $two* ) or any of ( $three* ) or 
 		( any of ( $four* ) and not any of ( $esystem* ) ) or 
 		( any of ( $five* ) and not any of ( $opening* ) ) or any of ( $six* ) or any of ( $seven* ) or any of ( $eight* ) or any of ( $nine* ) )
+		and not 1 of ($fp*)
 }
 
 rule webshell_php_unknown_1
