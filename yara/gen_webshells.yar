@@ -3844,6 +3844,7 @@ rule webshell_in_image
 		author = "Arnim Rupp"
 		hash = "d4fde4e691db3e70a6320e78657480e563a9f87935af873a99db72d6a9a83c78"
 		date = "2021/02/27"
+		score = 55
 
 	strings:
         $png = { 89 50 4E 47 }
