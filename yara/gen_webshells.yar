@@ -2325,6 +2325,8 @@ rule webshell_asp_generic_tiny
 		$asp_multi_payload_four1 = "CreateObject" fullword nocase wide ascii
 		$asp_multi_payload_four2 = "TransformNode" fullword nocase wide ascii
 		$asp_multi_payload_four3 = "loadxml" fullword nocase wide ascii
+
+		$fp1 = "net.rim.application.ipproxyservice.AdminCommand.execute" ascii
 	
 	condition:
 		( 
@@ -2371,6 +2373,7 @@ rule webshell_asp_generic_tiny
 		)
 		) or 
 		( filesize < 300 and all of ( $write* ) ) )
+		and not 1 of ($fp*)
 }
 
 rule webshell_asp_generic
