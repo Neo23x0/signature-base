@@ -401,6 +401,8 @@ rule webshell_php_base64_encoded_payloads
 		$opening2 = "9wZW5pbm"
 		$opening3 = "b3BlbmluZ"
 
+        // false positives
+        $fp1 = { D0 CF 11 E0 A1 B1 1A E1 }
 
 	
 		//strings from private rule capa_php_old_safe
@@ -429,7 +431,7 @@ rule webshell_php_base64_encoded_payloads
 			) 
 			or any of ( $php_new* ) 
 		)
-		and any of ( $decode* ) and 
+		and not any of ( $fp* ) and any of ( $decode* ) and 
 		( ( any of ( $one* ) and not any of ( $execu* ) ) or any of ( $two* ) or any of ( $three* ) or 
 		( any of ( $four* ) and not any of ( $esystem* ) ) or 
 		( any of ( $five* ) and not any of ( $opening* ) ) or any of ( $six* ) or any of ( $seven* ) or any of ( $eight* ) or any of ( $nine* ) )
@@ -1175,6 +1177,9 @@ rule webshell_php_by_string_obfuscation
 		$opbs50 = "'ro'.'t13'" nocase
 		$opbs51 = "c'.'od'.'e" nocase
 		$opbs53 = "e'. 128/2 .'_' .'d"
+        // move malicious code out of sight if line wrapping not enabled
+		$opbs54 = "<?php                                                                                                                                                                                " //here I end
+		$opbs55 = "=chr(99).chr(104).chr(114);$_"
 	
 		//strings from private rule capa_php_old_safe
 		$php_short = "<?" wide ascii
@@ -1438,6 +1443,9 @@ rule webshell_asp_writer
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
@@ -1530,8 +1538,8 @@ rule webshell_asp_obfuscated
 		$o1 = "chr(" nocase wide ascii
 		$o2 = "chr (" nocase wide ascii
 		// not excactly a string function but also often used in obfuscation
-		$o4 = "\\x1" wide ascii
-		$o5 = "\\x2" wide ascii
+		$o4 = "\\x8" wide ascii
+		$o5 = "\\x9" wide ascii
 		// just picking some random numbers because they should appear often enough in a long obfuscated blob and it's faster than a regex
 		$o6 = "\\61" wide ascii
 		$o7 = "\\44" wide ascii
@@ -1602,6 +1610,9 @@ rule webshell_asp_obfuscated
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
@@ -1743,6 +1754,9 @@ rule webshell_asp_generic_eval_on_input
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
@@ -1864,6 +1878,9 @@ rule webshell_asp_nano
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
@@ -1955,6 +1972,9 @@ rule webshell_asp_encoded
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
@@ -2043,6 +2063,9 @@ rule webshell_asp_encoded_aspcoding
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
@@ -2195,6 +2218,9 @@ rule webshell_asp_sniffer
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
@@ -2233,6 +2259,8 @@ rule webshell_asp_generic_tiny
 	strings:
 		$write1 = "Scripting.FileSystemObject" fullword nocase wide ascii
 		$write2 = ".Create" nocase wide ascii
+
+        $fp1 = "net.rim.application.ipproxyservice.AdminCommand.execute"
 	
 		//strings from private rule capa_asp
 		$tagasp_short1 = /<%[^"]/ wide ascii
@@ -2333,6 +2361,9 @@ rule webshell_asp_generic_tiny
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
@@ -2355,7 +2386,7 @@ rule webshell_asp_generic_tiny
             $asp_asp
         ) 
 		)
-		and not ( 
+		and not 1 of ( $fp* ) and not ( 
         uint16(0) == 0x5a4d or 
         $dex at 0 or 
         // fp on jar with zero compression
@@ -2400,6 +2431,8 @@ rule webshell_asp_generic
         $asp_gen_sus16 = "McAfee" nocase
         $asp_gen_sus17 = "nishang" 
         $asp_gen_sus18 = "unsafe" fullword wide ascii
+        // bonus string for proxylogon exploiting webshells
+        $asp_gen_sus19 = "http://schemas.microsoft.com/exchange/" wide ascii
 	
 		//strings from private rule capa_asp
 		$tagasp_short1 = /<%[^"]/ wide ascii
@@ -2507,6 +2540,9 @@ rule webshell_asp_generic
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
@@ -2641,6 +2677,9 @@ rule webshell_asp_generic_registry_reader
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
@@ -2740,6 +2779,9 @@ rule webshell_aspx_regeorg_csharp
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
@@ -2825,6 +2867,9 @@ rule webshell_csharp_generic
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
@@ -2850,6 +2895,7 @@ rule webshell_asp_runtime_compile
 		hash = "e826c4139282818d38dcccd35c7ae6857b1d1d01"
 		hash = "e20e078d9fcbb209e3733a06ad21847c5c5f0e52"
 		hash = "57f758137aa3a125e4af809789f3681d1b08ee5b"
+		type = "file"
 
 	strings:
 		$payload_reflection1 = "System.Reflection" nocase wide ascii
@@ -2857,8 +2903,8 @@ rule webshell_asp_runtime_compile
 		$payload_reflection3 = "Load" fullword nocase wide ascii
 		$payload_compile1 = "GenerateInMemory" nocase wide ascii
 		$payload_compile2 = "CompileAssemblyFromSource" nocase wide ascii
-		$payload_invoke1 = "Invoke" nocase wide ascii
-		$payload_invoke2 = "CreateInstance" nocase wide ascii
+		$payload_invoke1 = "Invoke" fullword nocase wide ascii
+		$payload_invoke2 = "CreateInstance" fullword nocase wide ascii
         $rc_fp1 = "Request.MapPath"
         $rc_fp2 = "<body><mono:MonoSamplesHeader runat=\"server\"/>" wide ascii
 	
@@ -2991,6 +3037,9 @@ rule webshell_asp_sql
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
@@ -3111,6 +3160,9 @@ rule webshell_asp_scan_writable
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
@@ -3154,16 +3206,24 @@ rule webshell_jsp_regeorg
 		$jgeorg5 = "socket" fullword wide ascii
 		$jgeorg6 = "FORWARD" fullword wide ascii
 	
-		//strings from private rule capa_jsp
-		$cjsp1 = "<%" ascii wide
-		$cjsp2 = "<jsp:" ascii wide
-		$cjsp3 = /language=[\"']java[\"\']/ ascii wide
+		//strings from private rule capa_jsp_safe
+		$cjsp_short1 = "<%" ascii wide
+		$cjsp_short2 = "%>" wide ascii
+		$cjsp_long1 = "<jsp:" ascii wide
+		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
-		$cjsp4 = "/jstl/core" ascii wide
+		$cjsp_long3 = "/jstl/core" ascii wide
 	
 	condition:
 		filesize < 300KB and ( 
-			any of ( $cjsp* ) 
+			any of ( $cjsp_long* ) or
+			$cjsp_short2 in ( filesize-100..filesize ) or
+        (
+            $cjsp_short2 and (
+                $cjsp_short1 in ( 0..1000 ) or
+                $cjsp_short1 in ( filesize-1000..filesize ) 
+            )
+        ) 
 		)
 		and all of ( $jgeorg* )
 }
@@ -3185,16 +3245,24 @@ rule webshell_jsp_http_proxy
 		$jh5 = "openConnection" fullword wide ascii
 		$jh6 = "getParameter" fullword wide ascii
 	
-		//strings from private rule capa_jsp
-		$cjsp1 = "<%" ascii wide
-		$cjsp2 = "<jsp:" ascii wide
-		$cjsp3 = /language=[\"']java[\"\']/ ascii wide
+		//strings from private rule capa_jsp_safe
+		$cjsp_short1 = "<%" ascii wide
+		$cjsp_short2 = "%>" wide ascii
+		$cjsp_long1 = "<jsp:" ascii wide
+		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
-		$cjsp4 = "/jstl/core" ascii wide
+		$cjsp_long3 = "/jstl/core" ascii wide
 	
 	condition:
 		filesize < 10KB and ( 
-			any of ( $cjsp* ) 
+			any of ( $cjsp_long* ) or
+			$cjsp_short2 in ( filesize-100..filesize ) or
+        (
+            $cjsp_short2 and (
+                $cjsp_short1 in ( 0..1000 ) or
+                $cjsp_short1 in ( filesize-1000..filesize ) 
+            )
+        ) 
 		)
 		and all of ( $jh* )
 }
@@ -3224,12 +3292,13 @@ rule webshell_jsp_writer_nano
 		$req2 = "HttpServletRequest" fullword ascii wide
 		$req3 = "getRequest" fullword ascii wide
 	
-		//strings from private rule capa_jsp
-		$cjsp1 = "<%" ascii wide
-		$cjsp2 = "<jsp:" ascii wide
-		$cjsp3 = /language=[\"']java[\"\']/ ascii wide
+		//strings from private rule capa_jsp_safe
+		$cjsp_short1 = "<%" ascii wide
+		$cjsp_short2 = "%>" wide ascii
+		$cjsp_long1 = "<jsp:" ascii wide
+		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
-		$cjsp4 = "/jstl/core" ascii wide
+		$cjsp_long3 = "/jstl/core" ascii wide
 	
 	condition:
 		filesize < 200 and ( 
@@ -3237,7 +3306,14 @@ rule webshell_jsp_writer_nano
 			any of ( $req* ) 
 		)
 		and ( 
-			any of ( $cjsp* ) 
+			any of ( $cjsp_long* ) or
+			$cjsp_short2 in ( filesize-100..filesize ) or
+        (
+            $cjsp_short2 and (
+                $cjsp_short1 in ( 0..1000 ) or
+                $cjsp_short1 in ( filesize-1000..filesize ) 
+            )
+        ) 
 		)
 		and 2 of ( $payload* )
 }
@@ -3260,12 +3336,13 @@ rule webshell_jsp_generic_tiny
 		$payload_rt2 = "getRuntime" fullword wide ascii
 		$payload_rt3 = "exec" fullword wide ascii
 	
-		//strings from private rule capa_jsp
-		$cjsp1 = "<%" ascii wide
-		$cjsp2 = "<jsp:" ascii wide
-		$cjsp3 = /language=[\"']java[\"\']/ ascii wide
+		//strings from private rule capa_jsp_safe
+		$cjsp_short1 = "<%" ascii wide
+		$cjsp_short2 = "%>" wide ascii
+		$cjsp_long1 = "<jsp:" ascii wide
+		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
-		$cjsp4 = "/jstl/core" ascii wide
+		$cjsp_long3 = "/jstl/core" ascii wide
 	
 		//strings from private rule capa_jsp_input
 		// request.getParameter
@@ -3279,8 +3356,15 @@ rule webshell_jsp_generic_tiny
 		$req3 = "getRequest" fullword ascii wide
 	
 	condition:
-		filesize < 8000 and ( 
-			any of ( $cjsp* ) 
+		filesize < 250 and ( 
+			any of ( $cjsp_long* ) or
+			$cjsp_short2 in ( filesize-100..filesize ) or
+        (
+            $cjsp_short2 and (
+                $cjsp_short1 in ( 0..1000 ) or
+                $cjsp_short1 in ( filesize-1000..filesize ) 
+            )
+        ) 
 		)
 		and ( 
 			any of ( $input* ) and
@@ -3307,16 +3391,21 @@ rule webshell_jsp_generic
 		$susp3 = "download" fullword nocase ascii wide
 		$susp4 = "upload" fullword nocase ascii wide
 		$susp5 = "Execute" fullword nocase ascii wide
+		$susp6 = "\"pwd\"" ascii wide
+		$susp7 = "\"</pre>" ascii wide
+
+        $fp1 = "command = \"cmd.exe /c set\";"
 	
 		//strings from private rule capa_bin_files
         $dex   = { 64 65 78 0a 30 }
 	
-		//strings from private rule capa_jsp
-		$cjsp1 = "<%" ascii wide
-		$cjsp2 = "<jsp:" ascii wide
-		$cjsp3 = /language=[\"']java[\"\']/ ascii wide
+		//strings from private rule capa_jsp_safe
+		$cjsp_short1 = "<%" ascii wide
+		$cjsp_short2 = "%>" wide ascii
+		$cjsp_long1 = "<jsp:" ascii wide
+		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
-		$cjsp4 = "/jstl/core" ascii wide
+		$cjsp_long3 = "/jstl/core" ascii wide
 	
 		//strings from private rule capa_jsp_input
 		// request.getParameter
@@ -3345,7 +3434,14 @@ rule webshell_jsp_generic
         uint16(0) == 0x4b50 
 		)
 		and ( 
-			any of ( $cjsp* ) 
+			any of ( $cjsp_long* ) or
+			$cjsp_short2 in ( filesize-100..filesize ) or
+        (
+            $cjsp_short2 and (
+                $cjsp_short1 in ( 0..1000 ) or
+                $cjsp_short1 in ( filesize-1000..filesize ) 
+            )
+        ) 
 		)
 		and ( 
 			any of ( $input* ) and
@@ -3355,7 +3451,7 @@ rule webshell_jsp_generic
         1 of ( $payload* ) or
         all of ( $rt_payload* ) 
 		)
-		and any of ( $susp* )
+		and not any of ( $fp* ) and any of ( $susp* )
 }
 
 rule webshell_jsp_generic_base64
@@ -3392,19 +3488,27 @@ rule webshell_jsp_generic_base64
 		$three6 = "UwBjAHIAaQBwAHQARQBuAGcAaQBuAGUARgBhAGMAdABvAHIAeQ" wide ascii
 
 	
-		//strings from private rule capa_jsp
-		$cjsp1 = "<%" ascii wide
-		$cjsp2 = "<jsp:" ascii wide
-		$cjsp3 = /language=[\"']java[\"\']/ ascii wide
+		//strings from private rule capa_jsp_safe
+		$cjsp_short1 = "<%" ascii wide
+		$cjsp_short2 = "%>" wide ascii
+		$cjsp_long1 = "<jsp:" ascii wide
+		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
-		$cjsp4 = "/jstl/core" ascii wide
+		$cjsp_long3 = "/jstl/core" ascii wide
 	
 		//strings from private rule capa_bin_files
         $dex   = { 64 65 78 0a 30 }
 	
 	condition:
 		( 
-			any of ( $cjsp* ) 
+			any of ( $cjsp_long* ) or
+			$cjsp_short2 in ( filesize-100..filesize ) or
+        (
+            $cjsp_short2 and (
+                $cjsp_short1 in ( 0..1000 ) or
+                $cjsp_short1 in ( filesize-1000..filesize ) 
+            )
+        ) 
 		)
 		and not ( 
         uint16(0) == 0x5a4d or 
@@ -3463,12 +3567,13 @@ rule webshell_jsp_generic_reflection
 		$ws_class = "Class" fullword wide ascii
 		$fp = "SOAPConnection"
 	
-		//strings from private rule capa_jsp
-		$cjsp1 = "<%" ascii wide
-		$cjsp2 = "<jsp:" ascii wide
-		$cjsp3 = /language=[\"']java[\"\']/ ascii wide
+		//strings from private rule capa_jsp_safe
+		$cjsp_short1 = "<%" ascii wide
+		$cjsp_short2 = "%>" wide ascii
+		$cjsp_long1 = "<jsp:" ascii wide
+		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
-		$cjsp4 = "/jstl/core" ascii wide
+		$cjsp_long3 = "/jstl/core" ascii wide
 	
 		//strings from private rule capa_jsp_input
 		// request.getParameter
@@ -3483,7 +3588,14 @@ rule webshell_jsp_generic_reflection
 	
 	condition:
 		filesize < 10KB and all of ( $ws_* ) and ( 
-			any of ( $cjsp* ) 
+			any of ( $cjsp_long* ) or
+			$cjsp_short2 in ( filesize-100..filesize ) or
+        (
+            $cjsp_short2 and (
+                $cjsp_short1 in ( 0..1000 ) or
+                $cjsp_short1 in ( filesize-1000..filesize ) 
+            )
+        ) 
 		)
 		and ( 
 			any of ( $input* ) and
@@ -3505,12 +3617,13 @@ rule webshell_jsp_generic_classloader
 		$exec = "extends ClassLoader" wide ascii
 		$class = "defineClass" fullword wide ascii
 	
-		//strings from private rule capa_jsp
-		$cjsp1 = "<%" ascii wide
-		$cjsp2 = "<jsp:" ascii wide
-		$cjsp3 = /language=[\"']java[\"\']/ ascii wide
+		//strings from private rule capa_jsp_safe
+		$cjsp_short1 = "<%" ascii wide
+		$cjsp_short2 = "%>" wide ascii
+		$cjsp_long1 = "<jsp:" ascii wide
+		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
-		$cjsp4 = "/jstl/core" ascii wide
+		$cjsp_long3 = "/jstl/core" ascii wide
 	
 		//strings from private rule capa_jsp_input
 		// request.getParameter
@@ -3525,7 +3638,14 @@ rule webshell_jsp_generic_classloader
 	
 	condition:
 		filesize < 10KB and ( 
-			any of ( $cjsp* ) 
+			any of ( $cjsp_long* ) or
+			$cjsp_short2 in ( filesize-100..filesize ) or
+        (
+            $cjsp_short2 and (
+                $cjsp_short1 in ( 0..1000 ) or
+                $cjsp_short1 in ( filesize-1000..filesize ) 
+            )
+        ) 
 		)
 		and ( 
 			any of ( $input* ) and
@@ -3633,6 +3753,8 @@ rule webshell_jsp_by_string
 		$jstring12 = "MiniWebCmdShell" fullword wide ascii
 		$jstring13 = "pwnshell.jsp" fullword wide ascii
 		$jstring14 = "session set &lt;key&gt; &lt;value&gt; [class]<br>"  wide ascii
+		$jstring15 = "Runtime.getRuntime().exec(request.getParameter(" nocase wide ascii
+		$jstring16 = "GIF98a<%@page" wide ascii
 	
 		//strings from private rule capa_jsp
 		$cjsp1 = "<%" ascii wide
@@ -3664,12 +3786,13 @@ rule webshell_jsp_input_upload_write
 		$write1 = "os.write" fullword wide ascii
 		$write2 = "FileOutputStream" fullword wide ascii
 	
-		//strings from private rule capa_jsp
-		$cjsp1 = "<%" ascii wide
-		$cjsp2 = "<jsp:" ascii wide
-		$cjsp3 = /language=[\"']java[\"\']/ ascii wide
+		//strings from private rule capa_jsp_safe
+		$cjsp_short1 = "<%" ascii wide
+		$cjsp_short2 = "%>" wide ascii
+		$cjsp_long1 = "<jsp:" ascii wide
+		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
-		$cjsp4 = "/jstl/core" ascii wide
+		$cjsp_long3 = "/jstl/core" ascii wide
 	
 		//strings from private rule capa_jsp_input
 		// request.getParameter
@@ -3684,7 +3807,14 @@ rule webshell_jsp_input_upload_write
 	
 	condition:
 		filesize < 10KB and ( 
-			any of ( $cjsp* ) 
+			any of ( $cjsp_long* ) or
+			$cjsp_short2 in ( filesize-100..filesize ) or
+        (
+            $cjsp_short2 and (
+                $cjsp_short1 in ( 0..1000 ) or
+                $cjsp_short1 in ( filesize-1000..filesize ) 
+            )
+        ) 
 		)
 		and ( 
 			any of ( $input* ) and
@@ -3766,12 +3896,13 @@ rule webshell_generic_os_strings
 		$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
-		//strings from private rule capa_jsp
-		$cjsp1 = "<%" ascii wide
-		$cjsp2 = "<jsp:" ascii wide
-		$cjsp3 = /language=[\"']java[\"\']/ ascii wide
+		//strings from private rule capa_jsp_safe
+		$cjsp_short1 = "<%" ascii wide
+		$cjsp_short2 = "%>" wide ascii
+		$cjsp_long1 = "<jsp:" ascii wide
+		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
-		$cjsp4 = "/jstl/core" ascii wide
+		$cjsp_long3 = "/jstl/core" ascii wide
 	
 		//strings from private rule capa_os_strings
 		// windows = nocase
@@ -3792,6 +3923,9 @@ rule webshell_generic_os_strings
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
@@ -3813,7 +3947,14 @@ rule webshell_generic_os_strings
 			or any of ( $php_new* ) 
 		)
 		or ( 
-			any of ( $cjsp* ) 
+			any of ( $cjsp_long* ) or
+			$cjsp_short2 in ( filesize-100..filesize ) or
+        (
+            $cjsp_short2 and (
+                $cjsp_short1 in ( 0..1000 ) or
+                $cjsp_short1 in ( filesize-1000..filesize ) 
+            )
+        ) 
 		)
 		) and ( 
 			filesize < 300KB and 
@@ -3834,6 +3975,7 @@ rule webshell_in_image
 		author = "Arnim Rupp"
 		hash = "d4fde4e691db3e70a6320e78657480e563a9f87935af873a99db72d6a9a83c78"
 		date = "2021/02/27"
+		score = 55
 
 	strings:
         $png = { 89 50 4E 47 }
@@ -3994,6 +4136,9 @@ rule webshell_in_image
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
