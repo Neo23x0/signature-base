@@ -2860,7 +2860,8 @@ rule webshell_asp_runtime_compile
 		hash = "e826c4139282818d38dcccd35c7ae6857b1d1d01"
 		hash = "e20e078d9fcbb209e3733a06ad21847c5c5f0e52"
 		hash = "57f758137aa3a125e4af809789f3681d1b08ee5b"
-
+		type = "file"
+		
 	strings:
 		$payload_reflection1 = "System.Reflection" nocase wide ascii
 		$payload_reflection2 = "Assembly" fullword nocase wide ascii
