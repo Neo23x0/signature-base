@@ -84,7 +84,7 @@ rule EXPL_LOG_CVE_2021_27055_Exchange_Forensic_Artefacts : LOG {
       $x1 and 1 of ($s*)
 }
 
-rule LOG_CVE_2021_27055_Exchange_Forensic_Artefacts_Mar21_2 : LOG {
+rule LOG_CVE_2021_27065_Exchange_Forensic_Artefacts_Mar21_2 : LOG {
    meta:
       description = "Detects suspicious log entries that indicate requests as described in reports on HAFNIUM activity"
       author = "Florian Roth"
