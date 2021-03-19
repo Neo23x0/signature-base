@@ -9754,3 +9754,36 @@ bbd16685917b9b35c7480d5711193c1cd0e4e7ccb0f2bf1fd584c0aebca5ae4c;NOBELIUM report
 0affab34d950321e3031864ec2b6c00e4edafb54f4b327717cb5b042c38a33c9;NOBELIUM report - GoldFinder - https://www.microsoft.com/security/blog/2021/03/04/goldmax-goldfinder-sibot-analyzing-nobelium-malware/
 7e05ff08e32a64da75ec48b5e738181afb3e24a9f1da7f5514c5a11bb067cbfb;NOBELIUM report - Sibot - https://www.microsoft.com/security/blog/2021/03/04/goldmax-goldfinder-sibot-analyzing-nobelium-malware/
 acc74c920d19ea0a5e6007f929ef30b079eb2836b5b28e5ffcc20e68fa707e66;NOBELIUM report - Sibot - https://www.microsoft.com/security/blog/2021/03/04/goldmax-goldfinder-sibot-analyzing-nobelium-malware/
+
+938a7622a3a80d1d721eb090d90a9dcfc4d37047;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+3cae987fd99950a299b690a1e03a09a15adc9eb556f7f2901afd3bc06719f4db;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+9401b5f30b6c20a42c69135fe189ae2cd2037224;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+e6ff50bdcc7b57fbc52ab203470fa388487bf92412c59b2678d57dde701ba985;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+10459c6ac3e90b1881aaea002cbeccfc56db51f1;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+c418acbe45ccaa7e66eb9db8fd595a89c8215c9ac5e2d151dd3389641e81b50a;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+a40e93621562911c5b68e959cc228de85c131a70;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+67ff5c5fd19b23fb92cb0a395c9e12729c3a31ae21b44bfccde671f84e18f9c5;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+10459c6ac3e90b1881aaea002cbeccfc56db51f1;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+c418acbe45ccaa7e66eb9db8fd595a89c8215c9ac5e2d151dd3389641e81b50a;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+5140f683154442e56ae23d945d75d706ea05812c;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+dbe2d877924c7b650d380d86cb46bf5d91a44ba03f30f6eee93c621c23a852f9;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+12fdd2372e3f9e97c2c833a0f6198b80253cf642;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+3aff515be9c17e3e6a46e891e10a2e807e9595111049b1d7c229e1f920b680c0;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+6ac3c7e6394807ec79db553bdf2fe165786699f7;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+0afcd12924eed83f0e3f33c51a0766849df661ea2220b4a919297b0ef742b7c3;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+415fc0c77ec428b340adce386859bb78a74c1419;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+d5c4d94bb747555921469eff6a3660456d0c048c735de4bb9099c303d713e73e;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+70db5f335df4b63908ba5b634c01dae3be33ea82;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+61d50f4a45cde3234e612016fb6816b47ebf4b6644b759365ffd53eb6bb1e5e7;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+c243dc2571e60ab643c6c46d32dc9565b9b30fff;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+4d4f0eb982a52768e1195e4632a0de4f2671c99cd2ce2acbca6442de5f25251e;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+1694771d42771aebbd8746bd0c3fb4a5e6a70c95;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+24d1bd110c0bf7f21f75c9e99ddbb29bd0cfebf5577b4202d35e4ffe36477de6;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+cd5f39aa95ea31f4bf6e7976bc1644fa3101909e;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+7cfb684fb46e9b66881d213fa212a39b770a7820c627c7ce2073d397dead9430;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+8f4a86c33991d672575d13a2bc2020f9cd3353f2;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+59a779046e32940c08f4c723143134a1b14d6855de3482e8503fca47aea9413e;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+11dfcff4b0bcaa1402f15ed41cd3f4a7fdcfb267;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+65226d59bb790120af2ad70d48736a8a223f6122d6ee5dd6b48bd5c47ff94b0b;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+615321ff979379e66f9471368ed3c057a0f4e17c;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+5ed2e0bf353cfee15e50f2e4188fed20c79cf2c6dc517c34069570ddca9c92f9;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf

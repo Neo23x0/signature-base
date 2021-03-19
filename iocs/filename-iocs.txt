@@ -3580,4 +3580,18 @@ C:\\mscoree\.dll;70
 \\Users\\Public\\Dump\.exe;95
 \\Users\\Public\\1\.log;70
 
+# SilverFish Report https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+\\ProgramData\\IEShim\.dll;90
+\\ProgramData\\zertoagent\.exe;90
+\\ProgramData\\watscv\.exe;90
+\\ProgramData\\myfavoritegame\.exe;90
+\\ProgramData\\craftmanager2\.exe;90
+\\ProgramData\\craftmanager3\.exe;90
+\\Temp\\IEShim\.dll;90
+\\Temp\\zertoagent\.exe;90
+\\Temp\\watscv\.exe;90
+\\Temp\\myfavoritegame\.exe;90
+\\Temp\\craftmanager2\.exe;90
+\\Temp\\craftmanager3\.exe;90
+
 # End
