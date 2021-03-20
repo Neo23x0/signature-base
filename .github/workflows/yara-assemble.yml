@@ -1,0 +1,31 @@
+# This workflow assembles all Yara rules into a single file
+
+name: Assemble Yara
+
+on:
+  push:
+    branches:
+      - master
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks-out the repository under $GITHUB_WORKSPACE
+      - name: Check-out the repository
+        uses: actions/checkout@v2
+
+      # Assemble all *.yar files (except those requiring external variables)
+      - name: Assemble all Yara files
+        run: "for f in $GITHUB_WORKSPACE/yara/*.yar; do if [[ (\"${f##*/}\" != \"generic_anomalies.yar\") && (\"${f##*/}\" != \"general_cloaking.yar\") && (\"${f##*/}\" != \"thor_inverse_matches.yar\") && (\"${f##*/}\" != \"yara_mixed_ext_vars.yar\") ]]; then cat $f >> signature-base.yar; fi;done"
+
+      # Upload the assembled Yara artifact
+      - name: Upload the resulting Yara artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: signature-base.yar
+          path: signature-base.yar
