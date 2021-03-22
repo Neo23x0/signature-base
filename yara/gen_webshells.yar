@@ -1405,14 +1405,12 @@ rule webshell_asp_writer
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -1424,6 +1422,7 @@ rule webshell_asp_writer
         // Request.BinaryRead
         // Request.Form
 		$asp_input1 = "request" fullword nocase wide ascii
+		$asp_input2 = "Page_Load" fullword nocase wide ascii
 		$asp_xml_http = "Microsoft.XMLHTTP" fullword nocase wide ascii
 		$asp_xml_method1 = "GET" fullword wide ascii
 		$asp_xml_method2 = "POST" fullword wide ascii
@@ -1517,14 +1516,12 @@ rule webshell_asp_obfuscated
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -1599,6 +1596,12 @@ rule webshell_asp_obfuscated
 		$asp_multi_payload_four1 = "CreateObject" fullword nocase wide ascii
 		$asp_multi_payload_four2 = "TransformNode" fullword nocase wide ascii
 		$asp_multi_payload_four3 = "loadxml" fullword nocase wide ascii
+
+        // execute cmd.exe /c with arguments using ProcessStartInfo
+		$asp_multi_payload_five1 = "ProcessStartInfo" fullword nocase wide ascii
+		$asp_multi_payload_five2 = ".Start" nocase wide ascii
+		$asp_multi_payload_five3 = ".Filename" nocase wide ascii
+		$asp_multi_payload_five4 = ".Arguments" nocase wide ascii
 	
 		//strings from private rule capa_asp_obfuscation_obviously
 		$oo1 = /\w\"&\"\w/ wide ascii
@@ -1661,7 +1664,8 @@ rule webshell_asp_obfuscated
         all of ( $asp_multi_payload_one* ) or
         all of ( $asp_multi_payload_two* ) or
         all of ( $asp_multi_payload_three* ) or
-        all of ( $asp_multi_payload_four* ) 
+        all of ( $asp_multi_payload_four* ) or
+        all of ( $asp_multi_payload_five* ) 
 		)
 		) or ( 
         (
@@ -1732,14 +1736,12 @@ rule webshell_asp_generic_eval_on_input
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -1828,14 +1830,12 @@ rule webshell_asp_nano
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -1870,6 +1870,12 @@ rule webshell_asp_nano
 		$asp_multi_payload_four1 = "CreateObject" fullword nocase wide ascii
 		$asp_multi_payload_four2 = "TransformNode" fullword nocase wide ascii
 		$asp_multi_payload_four3 = "loadxml" fullword nocase wide ascii
+
+        // execute cmd.exe /c with arguments using ProcessStartInfo
+		$asp_multi_payload_five1 = "ProcessStartInfo" fullword nocase wide ascii
+		$asp_multi_payload_five2 = ".Start" nocase wide ascii
+		$asp_multi_payload_five3 = ".Filename" nocase wide ascii
+		$asp_multi_payload_five4 = ".Arguments" nocase wide ascii
 	
 	condition:
 		( 
@@ -1896,7 +1902,8 @@ rule webshell_asp_nano
         all of ( $asp_multi_payload_one* ) or
         all of ( $asp_multi_payload_two* ) or
         all of ( $asp_multi_payload_three* ) or
-        all of ( $asp_multi_payload_four* ) 
+        all of ( $asp_multi_payload_four* ) or
+        all of ( $asp_multi_payload_five* ) 
 		)
 		and not any of ( $fp* ) and 
 		( filesize < 200 or 
@@ -1950,14 +1957,12 @@ rule webshell_asp_encoded
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -2041,14 +2046,12 @@ rule webshell_asp_encoded_aspcoding
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -2130,6 +2133,11 @@ rule webshell_asp_by_string
 		$asp_string39 = "cript\"&\"ing" wide ascii
 		$asp_string40 = "tcejbOmetsySeliF.gnitpircS" wide ascii
 		$asp_string41 = "tcejbOetaerC.revreS" wide ascii
+		$asp_string42 = "This file is part of A Black Path Toward The Sun (\"ABPTTS\")" wide ascii
+		$asp_string43 = "if ((Request.Headers[headerNameKey] != null) && (Request.Headers[headerNameKey].Trim() == headerValueKey.Trim()))" wide ascii
+		$asp_string44 = "if (request.getHeader(headerNameKey).toString().trim().equals(headerValueKey.trim()))" wide ascii
+		$asp_string45 = "Response.Write(Server.HtmlEncode(ExcutemeuCmd(txtArg.Text)));" wide ascii
+		$asp_string46 = "\"c\" + \"m\" + \"d\"" wide ascii
 
 	condition:
 		filesize <200KB and any of ($asp_string*)
@@ -2180,14 +2188,12 @@ rule webshell_asp_sniffer
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -2199,6 +2205,7 @@ rule webshell_asp_sniffer
         // Request.BinaryRead
         // Request.Form
 		$asp_input1 = "request" fullword nocase wide ascii
+		$asp_input2 = "Page_Load" fullword nocase wide ascii
 		$asp_xml_http = "Microsoft.XMLHTTP" fullword nocase wide ascii
 		$asp_xml_method1 = "GET" fullword wide ascii
 		$asp_xml_method2 = "POST" fullword wide ascii
@@ -2292,14 +2299,12 @@ rule webshell_asp_generic_tiny
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -2311,6 +2316,7 @@ rule webshell_asp_generic_tiny
         // Request.BinaryRead
         // Request.Form
 		$asp_input1 = "request" fullword nocase wide ascii
+		$asp_input2 = "Page_Load" fullword nocase wide ascii
 		$asp_xml_http = "Microsoft.XMLHTTP" fullword nocase wide ascii
 		$asp_xml_method1 = "GET" fullword wide ascii
 		$asp_xml_method2 = "POST" fullword wide ascii
@@ -2353,6 +2359,12 @@ rule webshell_asp_generic_tiny
 		$asp_multi_payload_four1 = "CreateObject" fullword nocase wide ascii
 		$asp_multi_payload_four2 = "TransformNode" fullword nocase wide ascii
 		$asp_multi_payload_four3 = "loadxml" fullword nocase wide ascii
+
+        // execute cmd.exe /c with arguments using ProcessStartInfo
+		$asp_multi_payload_five1 = "ProcessStartInfo" fullword nocase wide ascii
+		$asp_multi_payload_five2 = ".Start" nocase wide ascii
+		$asp_multi_payload_five3 = ".Filename" nocase wide ascii
+		$asp_multi_payload_five4 = ".Arguments" nocase wide ascii
 	
 	condition:
 		( 
@@ -2398,7 +2410,8 @@ rule webshell_asp_generic_tiny
         all of ( $asp_multi_payload_one* ) or
         all of ( $asp_multi_payload_two* ) or
         all of ( $asp_multi_payload_three* ) or
-        all of ( $asp_multi_payload_four* ) 
+        all of ( $asp_multi_payload_four* ) or
+        all of ( $asp_multi_payload_five* ) 
 		)
 		) or 
 		( filesize < 300 and all of ( $write* ) ) )
@@ -2433,6 +2446,7 @@ rule webshell_asp_generic
         $asp_gen_sus18 = "unsafe" fullword wide ascii
         // bonus string for proxylogon exploiting webshells
         $asp_gen_sus19 = "http://schemas.microsoft.com/exchange/" wide ascii
+        $asp_gen_sus20 = "\"</pre>\"" wide ascii
 	
 		//strings from private rule capa_asp
 		$tagasp_short1 = /<%[^"]/ wide ascii
@@ -2464,14 +2478,12 @@ rule webshell_asp_generic
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -2486,6 +2498,7 @@ rule webshell_asp_generic
         // Request.BinaryRead
         // Request.Form
 		$asp_input1 = "request" fullword nocase wide ascii
+		$asp_input2 = "Page_Load" fullword nocase wide ascii
 		$asp_xml_http = "Microsoft.XMLHTTP" fullword nocase wide ascii
 		$asp_xml_method1 = "GET" fullword wide ascii
 		$asp_xml_method2 = "POST" fullword wide ascii
@@ -2525,6 +2538,12 @@ rule webshell_asp_generic
 		$asp_multi_payload_four1 = "CreateObject" fullword nocase wide ascii
 		$asp_multi_payload_four2 = "TransformNode" fullword nocase wide ascii
 		$asp_multi_payload_four3 = "loadxml" fullword nocase wide ascii
+
+        // execute cmd.exe /c with arguments using ProcessStartInfo
+		$asp_multi_payload_five1 = "ProcessStartInfo" fullword nocase wide ascii
+		$asp_multi_payload_five2 = ".Start" nocase wide ascii
+		$asp_multi_payload_five3 = ".Filename" nocase wide ascii
+		$asp_multi_payload_five4 = ".Arguments" nocase wide ascii
 	
 		//strings from private rule capa_asp_classid
 		$tagasp_capa_classid1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" nocase wide ascii
@@ -2576,7 +2595,8 @@ rule webshell_asp_generic
         all of ( $asp_multi_payload_one* ) or
         all of ( $asp_multi_payload_two* ) or
         all of ( $asp_multi_payload_three* ) or
-        all of ( $asp_multi_payload_four* ) 
+        all of ( $asp_multi_payload_four* ) or
+        all of ( $asp_multi_payload_five* ) 
 		)
 		and 
 		( any of ( $asp_gen_sus* ) or ( 
@@ -2592,6 +2612,7 @@ rule webshell_asp_generic_registry_reader
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Arnim Rupp"
 		date = "2021/03/14"
+		score = 50
 
 	strings:
         $asp_reg1  = "Registry" fullword wide ascii
@@ -2608,6 +2629,8 @@ rule webshell_asp_generic_registry_reader
         $sus3 = "<form " wide ascii
         $sus4 = "<table " wide ascii
         $sus5 = "System.Security.SecurityException" wide ascii
+
+        $fp1 = "Avira Operations GmbH" wide
 	
 		//strings from private rule capa_asp
 		$tagasp_short1 = /<%[^"]/ wide ascii
@@ -2639,14 +2662,12 @@ rule webshell_asp_generic_registry_reader
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -2658,6 +2679,7 @@ rule webshell_asp_generic_registry_reader
         // Request.BinaryRead
         // Request.Form
 		$asp_input1 = "request" fullword nocase wide ascii
+		$asp_input2 = "Page_Load" fullword nocase wide ascii
 		$asp_xml_http = "Microsoft.XMLHTTP" fullword nocase wide ascii
 		$asp_xml_method1 = "GET" fullword wide ascii
 		$asp_xml_method2 = "POST" fullword wide ascii
@@ -2690,7 +2712,7 @@ rule webshell_asp_generic_registry_reader
             $php2 at 0 
         ) 
 		)
-		and all of ( $asp_reg* ) and any of ( $sus* ) and 
+		and all of ( $asp_reg* ) and any of ( $sus* ) and not any of ( $fp* ) and 
 		( filesize < 10KB or 
 		( filesize < 150KB and ( 
 			any of ( $asp_input* ) or
@@ -2757,14 +2779,12 @@ rule webshell_aspx_regeorg_csharp
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -2845,14 +2865,12 @@ rule webshell_csharp_generic
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -2912,6 +2930,7 @@ rule webshell_asp_runtime_compile
         // Request.BinaryRead
         // Request.Form
 		$asp_input1 = "request" fullword nocase wide ascii
+		$asp_input2 = "Page_Load" fullword nocase wide ascii
 		$asp_xml_http = "Microsoft.XMLHTTP" fullword nocase wide ascii
 		$asp_xml_method1 = "GET" fullword wide ascii
 		$asp_xml_method2 = "POST" fullword wide ascii
@@ -2999,14 +3018,12 @@ rule webshell_asp_sql
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -3018,6 +3035,7 @@ rule webshell_asp_sql
         // Request.BinaryRead
         // Request.Form
 		$asp_input1 = "request" fullword nocase wide ascii
+		$asp_input2 = "Page_Load" fullword nocase wide ascii
 		$asp_xml_http = "Microsoft.XMLHTTP" fullword nocase wide ascii
 		$asp_xml_method1 = "GET" fullword wide ascii
 		$asp_xml_method2 = "POST" fullword wide ascii
@@ -3122,14 +3140,12 @@ rule webshell_asp_scan_writable
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -3141,6 +3157,7 @@ rule webshell_asp_scan_writable
         // Request.BinaryRead
         // Request.Form
 		$asp_input1 = "request" fullword nocase wide ascii
+		$asp_input2 = "Page_Load" fullword nocase wide ascii
 		$asp_xml_http = "Microsoft.XMLHTTP" fullword nocase wide ascii
 		$asp_xml_method1 = "GET" fullword wide ascii
 		$asp_xml_method2 = "POST" fullword wide ascii
@@ -3866,14 +3883,12 @@ rule webshell_generic_os_strings
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -4063,14 +4078,12 @@ rule webshell_in_image
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -4105,6 +4118,12 @@ rule webshell_in_image
 		$asp_multi_payload_four1 = "CreateObject" fullword nocase wide ascii
 		$asp_multi_payload_four2 = "TransformNode" fullword nocase wide ascii
 		$asp_multi_payload_four3 = "loadxml" fullword nocase wide ascii
+
+        // execute cmd.exe /c with arguments using ProcessStartInfo
+		$asp_multi_payload_five1 = "ProcessStartInfo" fullword nocase wide ascii
+		$asp_multi_payload_five2 = ".Start" nocase wide ascii
+		$asp_multi_payload_five3 = ".Filename" nocase wide ascii
+		$asp_multi_payload_five4 = ".Arguments" nocase wide ascii
 	
 	condition:
 		( $png at 0 or $jpg at 0 or $gif at 0 or $gif2 at 0 or $mdb at 0 ) and 
@@ -4154,7 +4173,8 @@ rule webshell_in_image
         all of ( $asp_multi_payload_one* ) or
         all of ( $asp_multi_payload_two* ) or
         all of ( $asp_multi_payload_three* ) or
-        all of ( $asp_multi_payload_four* ) 
+        all of ( $asp_multi_payload_four* ) or
+        all of ( $asp_multi_payload_five* ) 
 		)
 		) )
 }
