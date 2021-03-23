@@ -268,46 +268,6 @@ rule webshell_php_generic_callback_tiny
 		
 }
 
-rule webshell_php_generic_nano_input
-{
-	meta:
-		description = "php webshell having some kind of input and whatever mechanism to execute it. restricted to small files or would give lots of false positives"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
-		author = "Arnim Rupp"
-		hash = "b492336ac5907684c1b922e1c25c113ffc303ffbef645b4e95d36bc50e932033"
-		date = "2021/01/13"
-
-	strings:
-		$fp1 = "echo $_POST['" 
-		$fp2 = "echo $_POST[\""
-		$fp3 = "$http_raw_post_data = file_get_contents('php://input');"
-		$fp4 = "highlight_file(basename(urldecode($_GET['target'])));"
-	
-		//strings from private rule capa_php
-		// this will hit on a lot of non-php files, asp, scripting templates, ... but it works on older php versions
-		$php_tag1 = "<?" wide ascii
-		$php_tag2 = "<script language=\"php" nocase wide ascii
-	
-		//strings from private rule capa_php_input
-		$inp1 = "php://input" wide ascii
-		$inp2 = "_GET[" wide ascii
-		$inp3 = "_POST[" wide ascii
-		$inp4 = "_REQUEST[" wide ascii
-		// PHP automatically adds all the request headers into the $_SERVER global array, prefixing each header name by the "HTTP_" string, so e.g. @eval($_SERVER['HTTP_CMD']) will run any code in the HTTP header CMD
-		$inp5 = "_SERVER['HTTP_" wide ascii
-		$inp6 = "_SERVER[\"HTTP_" wide ascii
-		$inp7 = /getenv[\t ]{0,20}\([\t ]{0,20}['"]HTTP_/ wide ascii
-	
-	condition:
-		filesize < 90 and ( 
-			any of ( $php_tag* ) 
-		)
-		and ( 
-			any of ( $inp* ) 
-		)
-		and not any of ( $fp* )
-}
-
 rule webshell_php_base64_encoded_payloads
 {
 	meta:
@@ -1136,7 +1096,7 @@ rule webshell_php_by_string_known_webshell
 rule webshell_php_by_string_obfuscation
 {
 	meta:
-		description = "PHP Webshells which contain unique obfuscation strings, lousy rule for low hanging fruits. Most are catched by other rules in here but maybe these catch different versions. (Might also be used to insert malicious Javascript for credit card skimming)"
+		description = "PHP file containing obfuscation strings. Might be legitimate code obfuscated for whatever reasons, a webshell or can be used to insert malicious Javascript for credit card skimming"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Arnim Rupp"
 		date = "2021/01/09"
@@ -1180,6 +1140,7 @@ rule webshell_php_by_string_obfuscation
         // move malicious code out of sight if line wrapping not enabled
 		$opbs54 = "<?php                                                                                                                                                                                " //here I end
 		$opbs55 = "=chr(99).chr(104).chr(114);$_"
+		$opbs56 = "\\x47LOBAL"
 	
 		//strings from private rule capa_php_old_safe
 		$php_short = "<?" wide ascii
@@ -2330,7 +2291,7 @@ rule webshell_asp_generic_tiny
         $asp_text2 = ".Text" wide ascii
 	
 		//strings from private rule capa_bin_files
-        $dex   = { 64 65 78 0a 30 }
+        $dex   = { 64 65 ( 78 | 79 ) 0a 30 }
 	
 		//strings from private rule capa_asp_payload
 		$asp_payload0  = "eval_r" fullword nocase wide ascii
@@ -2492,7 +2453,7 @@ rule webshell_asp_generic
         $php2 = "<?="
 	
 		//strings from private rule capa_bin_files
-        $dex   = { 64 65 78 0a 30 }
+        $dex   = { 64 65 ( 78 | 79 ) 0a 30 }
 	
 		//strings from private rule capa_asp_input
         // Request.BinaryRead
@@ -3230,9 +3191,14 @@ rule webshell_jsp_regeorg
 		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
 		$cjsp_long3 = "/jstl/core" ascii wide
+		$cjsp_long4 = "<%@p" nocase ascii wide
+		$cjsp_long5 = "<%@ " nocase ascii wide
+		$cjsp_long6 = "<% " ascii wide
+		$cjsp_long7 = "< %" ascii wide
 	
 	condition:
 		filesize < 300KB and ( 
+        $cjsp_short1 at 0 or
 			any of ( $cjsp_long* ) or
 			$cjsp_short2 in ( filesize-100..filesize ) or
         (
@@ -3269,9 +3235,14 @@ rule webshell_jsp_http_proxy
 		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
 		$cjsp_long3 = "/jstl/core" ascii wide
+		$cjsp_long4 = "<%@p" nocase ascii wide
+		$cjsp_long5 = "<%@ " nocase ascii wide
+		$cjsp_long6 = "<% " ascii wide
+		$cjsp_long7 = "< %" ascii wide
 	
 	condition:
 		filesize < 10KB and ( 
+        $cjsp_short1 at 0 or
 			any of ( $cjsp_long* ) or
 			$cjsp_short2 in ( filesize-100..filesize ) or
         (
@@ -3316,6 +3287,10 @@ rule webshell_jsp_writer_nano
 		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
 		$cjsp_long3 = "/jstl/core" ascii wide
+		$cjsp_long4 = "<%@p" nocase ascii wide
+		$cjsp_long5 = "<%@ " nocase ascii wide
+		$cjsp_long6 = "<% " ascii wide
+		$cjsp_long7 = "< %" ascii wide
 	
 	condition:
 		filesize < 200 and ( 
@@ -3323,6 +3298,7 @@ rule webshell_jsp_writer_nano
 			any of ( $req* ) 
 		)
 		and ( 
+        $cjsp_short1 at 0 or
 			any of ( $cjsp_long* ) or
 			$cjsp_short2 in ( filesize-100..filesize ) or
         (
@@ -3360,6 +3336,10 @@ rule webshell_jsp_generic_tiny
 		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
 		$cjsp_long3 = "/jstl/core" ascii wide
+		$cjsp_long4 = "<%@p" nocase ascii wide
+		$cjsp_long5 = "<%@ " nocase ascii wide
+		$cjsp_long6 = "<% " ascii wide
+		$cjsp_long7 = "< %" ascii wide
 	
 		//strings from private rule capa_jsp_input
 		// request.getParameter
@@ -3374,6 +3354,7 @@ rule webshell_jsp_generic_tiny
 	
 	condition:
 		filesize < 250 and ( 
+        $cjsp_short1 at 0 or
 			any of ( $cjsp_long* ) or
 			$cjsp_short2 in ( filesize-100..filesize ) or
         (
@@ -3414,7 +3395,7 @@ rule webshell_jsp_generic
         $fp1 = "command = \"cmd.exe /c set\";"
 	
 		//strings from private rule capa_bin_files
-        $dex   = { 64 65 78 0a 30 }
+        $dex   = { 64 65 ( 78 | 79 ) 0a 30 }
 	
 		//strings from private rule capa_jsp_safe
 		$cjsp_short1 = "<%" ascii wide
@@ -3423,6 +3404,10 @@ rule webshell_jsp_generic
 		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
 		$cjsp_long3 = "/jstl/core" ascii wide
+		$cjsp_long4 = "<%@p" nocase ascii wide
+		$cjsp_long5 = "<%@ " nocase ascii wide
+		$cjsp_long6 = "<% " ascii wide
+		$cjsp_long7 = "< %" ascii wide
 	
 		//strings from private rule capa_jsp_input
 		// request.getParameter
@@ -3451,6 +3436,7 @@ rule webshell_jsp_generic
         uint16(0) == 0x4b50 
 		)
 		and ( 
+        $cjsp_short1 at 0 or
 			any of ( $cjsp_long* ) or
 			$cjsp_short2 in ( filesize-100..filesize ) or
         (
@@ -3512,12 +3498,17 @@ rule webshell_jsp_generic_base64
 		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
 		$cjsp_long3 = "/jstl/core" ascii wide
+		$cjsp_long4 = "<%@p" nocase ascii wide
+		$cjsp_long5 = "<%@ " nocase ascii wide
+		$cjsp_long6 = "<% " ascii wide
+		$cjsp_long7 = "< %" ascii wide
 	
 		//strings from private rule capa_bin_files
-        $dex   = { 64 65 78 0a 30 }
+        $dex   = { 64 65 ( 78 | 79 ) 0a 30 }
 	
 	condition:
 		( 
+        $cjsp_short1 at 0 or
 			any of ( $cjsp_long* ) or
 			$cjsp_short2 in ( filesize-100..filesize ) or
         (
@@ -3591,6 +3582,10 @@ rule webshell_jsp_generic_reflection
 		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
 		$cjsp_long3 = "/jstl/core" ascii wide
+		$cjsp_long4 = "<%@p" nocase ascii wide
+		$cjsp_long5 = "<%@ " nocase ascii wide
+		$cjsp_long6 = "<% " ascii wide
+		$cjsp_long7 = "< %" ascii wide
 	
 		//strings from private rule capa_jsp_input
 		// request.getParameter
@@ -3605,6 +3600,7 @@ rule webshell_jsp_generic_reflection
 	
 	condition:
 		filesize < 10KB and all of ( $ws_* ) and ( 
+        $cjsp_short1 at 0 or
 			any of ( $cjsp_long* ) or
 			$cjsp_short2 in ( filesize-100..filesize ) or
         (
@@ -3641,6 +3637,10 @@ rule webshell_jsp_generic_classloader
 		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
 		$cjsp_long3 = "/jstl/core" ascii wide
+		$cjsp_long4 = "<%@p" nocase ascii wide
+		$cjsp_long5 = "<%@ " nocase ascii wide
+		$cjsp_long6 = "<% " ascii wide
+		$cjsp_long7 = "< %" ascii wide
 	
 		//strings from private rule capa_jsp_input
 		// request.getParameter
@@ -3655,6 +3655,7 @@ rule webshell_jsp_generic_classloader
 	
 	condition:
 		filesize < 10KB and ( 
+        $cjsp_short1 at 0 or
 			any of ( $cjsp_long* ) or
 			$cjsp_short2 in ( filesize-100..filesize ) or
         (
@@ -3715,12 +3716,17 @@ rule webshell_jsp_netspy
 		$write3 = "PrintWriter" fullword wide ascii
 		$http = "java.net.HttpURLConnection" fullword wide ascii
 	
-		//strings from private rule capa_jsp
-		$cjsp1 = "<%" ascii wide
-		$cjsp2 = "<jsp:" ascii wide
-		$cjsp3 = /language=[\"']java[\"\']/ ascii wide
+		//strings from private rule capa_jsp_safe
+		$cjsp_short1 = "<%" ascii wide
+		$cjsp_short2 = "%>" wide ascii
+		$cjsp_long1 = "<jsp:" ascii wide
+		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
-		$cjsp4 = "/jstl/core" ascii wide
+		$cjsp_long3 = "/jstl/core" ascii wide
+		$cjsp_long4 = "<%@p" nocase ascii wide
+		$cjsp_long5 = "<%@ " nocase ascii wide
+		$cjsp_long6 = "<% " ascii wide
+		$cjsp_long7 = "< %" ascii wide
 	
 		//strings from private rule capa_jsp_input
 		// request.getParameter
@@ -3735,7 +3741,15 @@ rule webshell_jsp_netspy
 	
 	condition:
 		filesize < 30KB and ( 
-			any of ( $cjsp* ) 
+        $cjsp_short1 at 0 or
+			any of ( $cjsp_long* ) or
+			$cjsp_short2 in ( filesize-100..filesize ) or
+        (
+            $cjsp_short2 and (
+                $cjsp_short1 in ( 0..1000 ) or
+                $cjsp_short1 in ( filesize-1000..filesize ) 
+            )
+        ) 
 		)
 		and ( 
 			any of ( $input* ) and
@@ -3773,16 +3787,29 @@ rule webshell_jsp_by_string
 		$jstring15 = "Runtime.getRuntime().exec(request.getParameter(" nocase wide ascii
 		$jstring16 = "GIF98a<%@page" wide ascii
 	
-		//strings from private rule capa_jsp
-		$cjsp1 = "<%" ascii wide
-		$cjsp2 = "<jsp:" ascii wide
-		$cjsp3 = /language=[\"']java[\"\']/ ascii wide
+		//strings from private rule capa_jsp_safe
+		$cjsp_short1 = "<%" ascii wide
+		$cjsp_short2 = "%>" wide ascii
+		$cjsp_long1 = "<jsp:" ascii wide
+		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
-		$cjsp4 = "/jstl/core" ascii wide
+		$cjsp_long3 = "/jstl/core" ascii wide
+		$cjsp_long4 = "<%@p" nocase ascii wide
+		$cjsp_long5 = "<%@ " nocase ascii wide
+		$cjsp_long6 = "<% " ascii wide
+		$cjsp_long7 = "< %" ascii wide
 	
 	condition:
 		filesize < 100KB and ( 
-			any of ( $cjsp* ) 
+        $cjsp_short1 at 0 or
+			any of ( $cjsp_long* ) or
+			$cjsp_short2 in ( filesize-100..filesize ) or
+        (
+            $cjsp_short2 and (
+                $cjsp_short1 in ( 0..1000 ) or
+                $cjsp_short1 in ( filesize-1000..filesize ) 
+            )
+        ) 
 		)
 		and any of ( $jstring* )
 }
@@ -3810,6 +3837,10 @@ rule webshell_jsp_input_upload_write
 		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
 		$cjsp_long3 = "/jstl/core" ascii wide
+		$cjsp_long4 = "<%@p" nocase ascii wide
+		$cjsp_long5 = "<%@ " nocase ascii wide
+		$cjsp_long6 = "<% " ascii wide
+		$cjsp_long7 = "< %" ascii wide
 	
 		//strings from private rule capa_jsp_input
 		// request.getParameter
@@ -3824,6 +3855,7 @@ rule webshell_jsp_input_upload_write
 	
 	condition:
 		filesize < 10KB and ( 
+        $cjsp_short1 at 0 or
 			any of ( $cjsp_long* ) or
 			$cjsp_short2 in ( filesize-100..filesize ) or
         (
@@ -3918,6 +3950,10 @@ rule webshell_generic_os_strings
 		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
 		$cjsp_long3 = "/jstl/core" ascii wide
+		$cjsp_long4 = "<%@p" nocase ascii wide
+		$cjsp_long5 = "<%@ " nocase ascii wide
+		$cjsp_long6 = "<% " ascii wide
+		$cjsp_long7 = "< %" ascii wide
 	
 		//strings from private rule capa_os_strings
 		// windows = nocase
@@ -3962,6 +3998,7 @@ rule webshell_generic_os_strings
 			or any of ( $php_new* ) 
 		)
 		or ( 
+        $cjsp_short1 at 0 or
 			any of ( $cjsp_long* ) or
 			$cjsp_short2 in ( filesize-100..filesize ) or
         (
