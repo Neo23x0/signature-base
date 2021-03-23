@@ -395,6 +395,7 @@ rule webshell_php_base64_encoded_payloads
 		( ( any of ( $one* ) and not any of ( $execu* ) ) or any of ( $two* ) or any of ( $three* ) or 
 		( any of ( $four* ) and not any of ( $esystem* ) ) or 
 		( any of ( $five* ) and not any of ( $opening* ) ) or any of ( $six* ) or any of ( $seven* ) or any of ( $eight* ) or any of ( $nine* ) )
+		and not 1 of ($fp*)
 }
 
 rule webshell_php_unknown_1
@@ -2326,6 +2327,7 @@ rule webshell_asp_generic_tiny
 		$asp_multi_payload_five2 = ".Start" nocase wide ascii
 		$asp_multi_payload_five3 = ".Filename" nocase wide ascii
 		$asp_multi_payload_five4 = ".Arguments" nocase wide ascii
+		
 	
 	condition:
 		( 
@@ -2376,6 +2378,7 @@ rule webshell_asp_generic_tiny
 		)
 		) or 
 		( filesize < 300 and all of ( $write* ) ) )
+		and not 1 of ($fp*)
 }
 
 rule webshell_asp_generic
@@ -2652,7 +2655,8 @@ rule webshell_asp_generic_registry_reader
         $asp_asp   = "<asp:" wide ascii
         $asp_text1 = ".text" wide ascii
         $asp_text2 = ".Text" wide ascii
-	
+
+    	
 	condition:
 		( 
         (
@@ -2688,7 +2692,9 @@ rule webshell_asp_generic_registry_reader
         ) 
 		)
 		) )
+    and not 1 of ($fp*)
 }
+
 
 rule webshell_aspx_regeorg_csharp
 {

@@ -67,11 +67,12 @@ rule EXPL_LOG_CVE_2021_27055_Exchange_Forensic_Artefacts : LOG {
       reference = "https://www.microsoft.com/security/blog/2021/03/02/hafnium-targeting-exchange-servers/#scan-log"
       reference_2 = "https://www.praetorian.com/blog/reproducing-proxylogon-exploit/"
       date = "2021-03-10"
+      modified = "2021-03-15"
       score = 65
    strings:
       $x1 = "ServerInfo~" ascii wide
 
-      $sr1 = /\/ecp\/[a-zA-Z0-9]\.js/ ascii wide
+      $sr1 = /\/ecp\/[0-9a-zA-Z]{1,3}\.js/ ascii wide  /* Adjusted to cover MSF exploit https://github.com/rapid7/metasploit-framework/blob/e5c76bfe13acddc4220d7735fdc3434d9c64736e/modules/exploits/windows/http/exchange_proxylogon_rce.rb */
 
       $s1 = "/ecp/auth/w.js" ascii wide 
       $s2 = "/owa/auth/w.js" ascii wide
@@ -83,7 +84,7 @@ rule EXPL_LOG_CVE_2021_27055_Exchange_Forensic_Artefacts : LOG {
       $x1 and 1 of ($s*)
 }
 
-rule LOG_CVE_2021_27055_Exchange_Forensic_Artefacts_Mar21_2 : LOG {
+rule LOG_CVE_2021_27065_Exchange_Forensic_Artefacts_Mar21_2 : LOG {
    meta:
       description = "Detects suspicious log entries that indicate requests as described in reports on HAFNIUM activity"
       author = "Florian Roth"
