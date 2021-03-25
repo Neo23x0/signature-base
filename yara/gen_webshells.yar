@@ -2885,7 +2885,7 @@ rule webshell_asp_runtime_compile
 	strings:
 		$payload_reflection1 = "System.Reflection" nocase wide ascii
 		$payload_reflection2 = "Assembly" fullword nocase wide ascii
-		$payload_reflection3 = "Load" fullword nocase wide ascii
+		$payload_reflection3 = /[."']Load\b/ nocase wide ascii
 		$payload_compile1 = "GenerateInMemory" nocase wide ascii
 		$payload_compile2 = "CompileAssemblyFromSource" nocase wide ascii
 		$payload_invoke1 = "Invoke" fullword nocase wide ascii
