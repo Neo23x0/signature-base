@@ -268,46 +268,6 @@ rule webshell_php_generic_callback_tiny
 		
 }
 
-rule webshell_php_generic_nano_input
-{
-	meta:
-		description = "php webshell having some kind of input and whatever mechanism to execute it. restricted to small files or would give lots of false positives"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
-		author = "Arnim Rupp"
-		hash = "b492336ac5907684c1b922e1c25c113ffc303ffbef645b4e95d36bc50e932033"
-		date = "2021/01/13"
-
-	strings:
-		$fp1 = "echo $_POST['" 
-		$fp2 = "echo $_POST[\""
-		$fp3 = "$http_raw_post_data = file_get_contents('php://input');"
-		$fp4 = "highlight_file(basename(urldecode($_GET['target'])));"
-	
-		//strings from private rule capa_php
-		// this will hit on a lot of non-php files, asp, scripting templates, ... but it works on older php versions
-		$php_tag1 = "<?" wide ascii
-		$php_tag2 = "<script language=\"php" nocase wide ascii
-	
-		//strings from private rule capa_php_input
-		$inp1 = "php://input" wide ascii
-		$inp2 = "_GET[" wide ascii
-		$inp3 = "_POST[" wide ascii
-		$inp4 = "_REQUEST[" wide ascii
-		// PHP automatically adds all the request headers into the $_SERVER global array, prefixing each header name by the "HTTP_" string, so e.g. @eval($_SERVER['HTTP_CMD']) will run any code in the HTTP header CMD
-		$inp5 = "_SERVER['HTTP_" wide ascii
-		$inp6 = "_SERVER[\"HTTP_" wide ascii
-		$inp7 = /getenv[\t ]{0,20}\([\t ]{0,20}['"]HTTP_/ wide ascii
-	
-	condition:
-		filesize < 90 and ( 
-			any of ( $php_tag* ) 
-		)
-		and ( 
-			any of ( $inp* ) 
-		)
-		and not any of ( $fp* )
-}
-
 rule webshell_php_base64_encoded_payloads
 {
 	meta:
@@ -401,6 +361,8 @@ rule webshell_php_base64_encoded_payloads
 		$opening2 = "9wZW5pbm"
 		$opening3 = "b3BlbmluZ"
 
+        // false positives
+        $fp1 = { D0 CF 11 E0 A1 B1 1A E1 }
 
 	
 		//strings from private rule capa_php_old_safe
@@ -418,8 +380,6 @@ rule webshell_php_base64_encoded_payloads
 		$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
-	    $fp1 = { D0 CF 11 E0 A1 B1 1A E1 }
-
 	condition:
 		filesize < 300KB and ( 
 			(
@@ -431,7 +391,7 @@ rule webshell_php_base64_encoded_payloads
 			) 
 			or any of ( $php_new* ) 
 		)
-		and any of ( $decode* ) and 
+		and not any of ( $fp* ) and any of ( $decode* ) and 
 		( ( any of ( $one* ) and not any of ( $execu* ) ) or any of ( $two* ) or any of ( $three* ) or 
 		( any of ( $four* ) and not any of ( $esystem* ) ) or 
 		( any of ( $five* ) and not any of ( $opening* ) ) or any of ( $six* ) or any of ( $seven* ) or any of ( $eight* ) or any of ( $nine* ) )
@@ -1137,7 +1097,7 @@ rule webshell_php_by_string_known_webshell
 rule webshell_php_by_string_obfuscation
 {
 	meta:
-		description = "PHP Webshells which contain unique obfuscation strings, lousy rule for low hanging fruits. Most are catched by other rules in here but maybe these catch different versions. (Might also be used to insert malicious Javascript for credit card skimming)"
+		description = "PHP file containing obfuscation strings. Might be legitimate code obfuscated for whatever reasons, a webshell or can be used to insert malicious Javascript for credit card skimming"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Arnim Rupp"
 		date = "2021/01/09"
@@ -1178,6 +1138,10 @@ rule webshell_php_by_string_obfuscation
 		$opbs50 = "'ro'.'t13'" nocase
 		$opbs51 = "c'.'od'.'e" nocase
 		$opbs53 = "e'. 128/2 .'_' .'d"
+        // move malicious code out of sight if line wrapping not enabled
+		$opbs54 = "<?php                                                                                                                                                                                " //here I end
+		$opbs55 = "=chr(99).chr(104).chr(114);$_"
+		$opbs56 = "\\x47LOBAL"
 	
 		//strings from private rule capa_php_old_safe
 		$php_short = "<?" wide ascii
@@ -1403,14 +1367,12 @@ rule webshell_asp_writer
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -1422,6 +1384,7 @@ rule webshell_asp_writer
         // Request.BinaryRead
         // Request.Form
 		$asp_input1 = "request" fullword nocase wide ascii
+		$asp_input2 = "Page_Load" fullword nocase wide ascii
 		$asp_xml_http = "Microsoft.XMLHTTP" fullword nocase wide ascii
 		$asp_xml_method1 = "GET" fullword wide ascii
 		$asp_xml_method2 = "POST" fullword wide ascii
@@ -1441,6 +1404,9 @@ rule webshell_asp_writer
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
@@ -1512,14 +1478,12 @@ rule webshell_asp_obfuscated
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -1533,8 +1497,8 @@ rule webshell_asp_obfuscated
 		$o1 = "chr(" nocase wide ascii
 		$o2 = "chr (" nocase wide ascii
 		// not excactly a string function but also often used in obfuscation
-		$o4 = "\\x1" wide ascii
-		$o5 = "\\x2" wide ascii
+		$o4 = "\\x8" wide ascii
+		$o5 = "\\x9" wide ascii
 		// just picking some random numbers because they should appear often enough in a long obfuscated blob and it's faster than a regex
 		$o6 = "\\61" wide ascii
 		$o7 = "\\44" wide ascii
@@ -1594,6 +1558,12 @@ rule webshell_asp_obfuscated
 		$asp_multi_payload_four1 = "CreateObject" fullword nocase wide ascii
 		$asp_multi_payload_four2 = "TransformNode" fullword nocase wide ascii
 		$asp_multi_payload_four3 = "loadxml" fullword nocase wide ascii
+
+        // execute cmd.exe /c with arguments using ProcessStartInfo
+		$asp_multi_payload_five1 = "ProcessStartInfo" fullword nocase wide ascii
+		$asp_multi_payload_five2 = ".Start" nocase wide ascii
+		$asp_multi_payload_five3 = ".Filename" nocase wide ascii
+		$asp_multi_payload_five4 = ".Arguments" nocase wide ascii
 	
 		//strings from private rule capa_asp_obfuscation_obviously
 		$oo1 = /\w\"&\"\w/ wide ascii
@@ -1605,6 +1575,9 @@ rule webshell_asp_obfuscated
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
@@ -1653,7 +1626,8 @@ rule webshell_asp_obfuscated
         all of ( $asp_multi_payload_one* ) or
         all of ( $asp_multi_payload_two* ) or
         all of ( $asp_multi_payload_three* ) or
-        all of ( $asp_multi_payload_four* ) 
+        all of ( $asp_multi_payload_four* ) or
+        all of ( $asp_multi_payload_five* ) 
 		)
 		) or ( 
         (
@@ -1724,14 +1698,12 @@ rule webshell_asp_generic_eval_on_input
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -1746,6 +1718,9 @@ rule webshell_asp_generic_eval_on_input
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
@@ -1817,14 +1792,12 @@ rule webshell_asp_nano
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -1859,6 +1832,12 @@ rule webshell_asp_nano
 		$asp_multi_payload_four1 = "CreateObject" fullword nocase wide ascii
 		$asp_multi_payload_four2 = "TransformNode" fullword nocase wide ascii
 		$asp_multi_payload_four3 = "loadxml" fullword nocase wide ascii
+
+        // execute cmd.exe /c with arguments using ProcessStartInfo
+		$asp_multi_payload_five1 = "ProcessStartInfo" fullword nocase wide ascii
+		$asp_multi_payload_five2 = ".Start" nocase wide ascii
+		$asp_multi_payload_five3 = ".Filename" nocase wide ascii
+		$asp_multi_payload_five4 = ".Arguments" nocase wide ascii
 	
 	condition:
 		( 
@@ -1867,6 +1846,9 @@ rule webshell_asp_nano
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
@@ -1882,7 +1864,8 @@ rule webshell_asp_nano
         all of ( $asp_multi_payload_one* ) or
         all of ( $asp_multi_payload_two* ) or
         all of ( $asp_multi_payload_three* ) or
-        all of ( $asp_multi_payload_four* ) 
+        all of ( $asp_multi_payload_four* ) or
+        all of ( $asp_multi_payload_five* ) 
 		)
 		and not any of ( $fp* ) and 
 		( filesize < 200 or 
@@ -1936,14 +1919,12 @@ rule webshell_asp_encoded
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -1958,6 +1939,9 @@ rule webshell_asp_encoded
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
@@ -2024,14 +2008,12 @@ rule webshell_asp_encoded_aspcoding
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -2046,6 +2028,9 @@ rule webshell_asp_encoded_aspcoding
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
@@ -2110,6 +2095,11 @@ rule webshell_asp_by_string
 		$asp_string39 = "cript\"&\"ing" wide ascii
 		$asp_string40 = "tcejbOmetsySeliF.gnitpircS" wide ascii
 		$asp_string41 = "tcejbOetaerC.revreS" wide ascii
+		$asp_string42 = "This file is part of A Black Path Toward The Sun (\"ABPTTS\")" wide ascii
+		$asp_string43 = "if ((Request.Headers[headerNameKey] != null) && (Request.Headers[headerNameKey].Trim() == headerValueKey.Trim()))" wide ascii
+		$asp_string44 = "if (request.getHeader(headerNameKey).toString().trim().equals(headerValueKey.trim()))" wide ascii
+		$asp_string45 = "Response.Write(Server.HtmlEncode(ExcutemeuCmd(txtArg.Text)));" wide ascii
+		$asp_string46 = "\"c\" + \"m\" + \"d\"" wide ascii
 
 	condition:
 		filesize <200KB and any of ($asp_string*)
@@ -2160,14 +2150,12 @@ rule webshell_asp_sniffer
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -2179,6 +2167,7 @@ rule webshell_asp_sniffer
         // Request.BinaryRead
         // Request.Form
 		$asp_input1 = "request" fullword nocase wide ascii
+		$asp_input2 = "Page_Load" fullword nocase wide ascii
 		$asp_xml_http = "Microsoft.XMLHTTP" fullword nocase wide ascii
 		$asp_xml_method1 = "GET" fullword wide ascii
 		$asp_xml_method2 = "POST" fullword wide ascii
@@ -2198,6 +2187,9 @@ rule webshell_asp_sniffer
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
@@ -2236,6 +2228,8 @@ rule webshell_asp_generic_tiny
 	strings:
 		$write1 = "Scripting.FileSystemObject" fullword nocase wide ascii
 		$write2 = ".Create" nocase wide ascii
+
+        $fp1 = "net.rim.application.ipproxyservice.AdminCommand.execute"
 	
 		//strings from private rule capa_asp
 		$tagasp_short1 = /<%[^"]/ wide ascii
@@ -2267,14 +2261,12 @@ rule webshell_asp_generic_tiny
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -2286,6 +2278,7 @@ rule webshell_asp_generic_tiny
         // Request.BinaryRead
         // Request.Form
 		$asp_input1 = "request" fullword nocase wide ascii
+		$asp_input2 = "Page_Load" fullword nocase wide ascii
 		$asp_xml_http = "Microsoft.XMLHTTP" fullword nocase wide ascii
 		$asp_xml_method1 = "GET" fullword wide ascii
 		$asp_xml_method2 = "POST" fullword wide ascii
@@ -2299,7 +2292,7 @@ rule webshell_asp_generic_tiny
         $asp_text2 = ".Text" wide ascii
 	
 		//strings from private rule capa_bin_files
-        $dex   = { 64 65 78 0a 30 }
+        $dex   = { 64 65 ( 78 | 79 ) 0a 30 }
 	
 		//strings from private rule capa_asp_payload
 		$asp_payload0  = "eval_r" fullword nocase wide ascii
@@ -2329,7 +2322,12 @@ rule webshell_asp_generic_tiny
 		$asp_multi_payload_four2 = "TransformNode" fullword nocase wide ascii
 		$asp_multi_payload_four3 = "loadxml" fullword nocase wide ascii
 
-		$fp1 = "net.rim.application.ipproxyservice.AdminCommand.execute" ascii
+        // execute cmd.exe /c with arguments using ProcessStartInfo
+		$asp_multi_payload_five1 = "ProcessStartInfo" fullword nocase wide ascii
+		$asp_multi_payload_five2 = ".Start" nocase wide ascii
+		$asp_multi_payload_five3 = ".Filename" nocase wide ascii
+		$asp_multi_payload_five4 = ".Arguments" nocase wide ascii
+		
 	
 	condition:
 		( 
@@ -2338,6 +2336,9 @@ rule webshell_asp_generic_tiny
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
@@ -2360,7 +2361,7 @@ rule webshell_asp_generic_tiny
             $asp_asp
         ) 
 		)
-		and not ( 
+		and not 1 of ( $fp* ) and not ( 
         uint16(0) == 0x5a4d or 
         $dex at 0 or 
         // fp on jar with zero compression
@@ -2372,7 +2373,8 @@ rule webshell_asp_generic_tiny
         all of ( $asp_multi_payload_one* ) or
         all of ( $asp_multi_payload_two* ) or
         all of ( $asp_multi_payload_three* ) or
-        all of ( $asp_multi_payload_four* ) 
+        all of ( $asp_multi_payload_four* ) or
+        all of ( $asp_multi_payload_five* ) 
 		)
 		) or 
 		( filesize < 300 and all of ( $write* ) ) )
@@ -2406,6 +2408,9 @@ rule webshell_asp_generic
         $asp_gen_sus16 = "McAfee" nocase
         $asp_gen_sus17 = "nishang" 
         $asp_gen_sus18 = "unsafe" fullword wide ascii
+        // bonus string for proxylogon exploiting webshells
+        $asp_gen_sus19 = "http://schemas.microsoft.com/exchange/" wide ascii
+        $asp_gen_sus20 = "\"</pre>\"" wide ascii
 	
 		//strings from private rule capa_asp
 		$tagasp_short1 = /<%[^"]/ wide ascii
@@ -2437,14 +2442,12 @@ rule webshell_asp_generic
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -2453,12 +2456,13 @@ rule webshell_asp_generic
         $php2 = "<?="
 	
 		//strings from private rule capa_bin_files
-        $dex   = { 64 65 78 0a 30 }
+        $dex   = { 64 65 ( 78 | 79 ) 0a 30 }
 	
 		//strings from private rule capa_asp_input
         // Request.BinaryRead
         // Request.Form
 		$asp_input1 = "request" fullword nocase wide ascii
+		$asp_input2 = "Page_Load" fullword nocase wide ascii
 		$asp_xml_http = "Microsoft.XMLHTTP" fullword nocase wide ascii
 		$asp_xml_method1 = "GET" fullword wide ascii
 		$asp_xml_method2 = "POST" fullword wide ascii
@@ -2498,6 +2502,12 @@ rule webshell_asp_generic
 		$asp_multi_payload_four1 = "CreateObject" fullword nocase wide ascii
 		$asp_multi_payload_four2 = "TransformNode" fullword nocase wide ascii
 		$asp_multi_payload_four3 = "loadxml" fullword nocase wide ascii
+
+        // execute cmd.exe /c with arguments using ProcessStartInfo
+		$asp_multi_payload_five1 = "ProcessStartInfo" fullword nocase wide ascii
+		$asp_multi_payload_five2 = ".Start" nocase wide ascii
+		$asp_multi_payload_five3 = ".Filename" nocase wide ascii
+		$asp_multi_payload_five4 = ".Arguments" nocase wide ascii
 	
 		//strings from private rule capa_asp_classid
 		$tagasp_capa_classid1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" nocase wide ascii
@@ -2513,6 +2523,9 @@ rule webshell_asp_generic
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
@@ -2546,7 +2559,8 @@ rule webshell_asp_generic
         all of ( $asp_multi_payload_one* ) or
         all of ( $asp_multi_payload_two* ) or
         all of ( $asp_multi_payload_three* ) or
-        all of ( $asp_multi_payload_four* ) 
+        all of ( $asp_multi_payload_four* ) or
+        all of ( $asp_multi_payload_five* ) 
 		)
 		and 
 		( any of ( $asp_gen_sus* ) or ( 
@@ -2562,6 +2576,7 @@ rule webshell_asp_generic_registry_reader
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Arnim Rupp"
 		date = "2021/03/14"
+		score = 50
 
 	strings:
         $asp_reg1  = "Registry" fullword wide ascii
@@ -2578,6 +2593,8 @@ rule webshell_asp_generic_registry_reader
         $sus3 = "<form " wide ascii
         $sus4 = "<table " wide ascii
         $sus5 = "System.Security.SecurityException" wide ascii
+
+        $fp1 = "Avira Operations GmbH" wide
 	
 		//strings from private rule capa_asp
 		$tagasp_short1 = /<%[^"]/ wide ascii
@@ -2609,14 +2626,12 @@ rule webshell_asp_generic_registry_reader
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -2628,6 +2643,7 @@ rule webshell_asp_generic_registry_reader
         // Request.BinaryRead
         // Request.Form
 		$asp_input1 = "request" fullword nocase wide ascii
+		$asp_input2 = "Page_Load" fullword nocase wide ascii
 		$asp_xml_http = "Microsoft.XMLHTTP" fullword nocase wide ascii
 		$asp_xml_method1 = "GET" fullword wide ascii
 		$asp_xml_method2 = "POST" fullword wide ascii
@@ -2640,8 +2656,7 @@ rule webshell_asp_generic_registry_reader
         $asp_text1 = ".text" wide ascii
         $asp_text2 = ".Text" wide ascii
 
-    $fp1 = "Avira Operations GmbH" wide
-	
+    	
 	condition:
 		( 
         (
@@ -2649,6 +2664,9 @@ rule webshell_asp_generic_registry_reader
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
@@ -2659,7 +2677,7 @@ rule webshell_asp_generic_registry_reader
             $php2 at 0 
         ) 
 		)
-		and all of ( $asp_reg* ) and any of ( $sus* ) and 
+		and all of ( $asp_reg* ) and any of ( $sus* ) and not any of ( $fp* ) and 
 		( filesize < 10KB or 
 		( filesize < 150KB and ( 
 			any of ( $asp_input* ) or
@@ -2728,14 +2746,12 @@ rule webshell_aspx_regeorg_csharp
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -2750,6 +2766,9 @@ rule webshell_aspx_regeorg_csharp
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
@@ -2813,14 +2832,12 @@ rule webshell_csharp_generic
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -2835,6 +2852,9 @@ rule webshell_csharp_generic
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
@@ -2861,15 +2881,15 @@ rule webshell_asp_runtime_compile
 		hash = "e20e078d9fcbb209e3733a06ad21847c5c5f0e52"
 		hash = "57f758137aa3a125e4af809789f3681d1b08ee5b"
 		type = "file"
-		
+
 	strings:
 		$payload_reflection1 = "System.Reflection" nocase wide ascii
 		$payload_reflection2 = "Assembly" fullword nocase wide ascii
 		$payload_reflection3 = "Load" fullword nocase wide ascii
 		$payload_compile1 = "GenerateInMemory" nocase wide ascii
 		$payload_compile2 = "CompileAssemblyFromSource" nocase wide ascii
-		$payload_invoke1 = "Invoke" nocase wide ascii
-		$payload_invoke2 = "CreateInstance" nocase wide ascii
+		$payload_invoke1 = "Invoke" fullword nocase wide ascii
+		$payload_invoke2 = "CreateInstance" fullword nocase wide ascii
         $rc_fp1 = "Request.MapPath"
         $rc_fp2 = "<body><mono:MonoSamplesHeader runat=\"server\"/>" wide ascii
 	
@@ -2877,6 +2897,7 @@ rule webshell_asp_runtime_compile
         // Request.BinaryRead
         // Request.Form
 		$asp_input1 = "request" fullword nocase wide ascii
+		$asp_input2 = "Page_Load" fullword nocase wide ascii
 		$asp_xml_http = "Microsoft.XMLHTTP" fullword nocase wide ascii
 		$asp_xml_method1 = "GET" fullword wide ascii
 		$asp_xml_method2 = "POST" fullword wide ascii
@@ -2964,14 +2985,12 @@ rule webshell_asp_sql
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -2983,6 +3002,7 @@ rule webshell_asp_sql
         // Request.BinaryRead
         // Request.Form
 		$asp_input1 = "request" fullword nocase wide ascii
+		$asp_input2 = "Page_Load" fullword nocase wide ascii
 		$asp_xml_http = "Microsoft.XMLHTTP" fullword nocase wide ascii
 		$asp_xml_method1 = "GET" fullword wide ascii
 		$asp_xml_method2 = "POST" fullword wide ascii
@@ -3002,6 +3022,9 @@ rule webshell_asp_sql
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
@@ -3084,14 +3107,12 @@ rule webshell_asp_scan_writable
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -3103,6 +3124,7 @@ rule webshell_asp_scan_writable
         // Request.BinaryRead
         // Request.Form
 		$asp_input1 = "request" fullword nocase wide ascii
+		$asp_input2 = "Page_Load" fullword nocase wide ascii
 		$asp_xml_http = "Microsoft.XMLHTTP" fullword nocase wide ascii
 		$asp_xml_method1 = "GET" fullword wide ascii
 		$asp_xml_method2 = "POST" fullword wide ascii
@@ -3122,6 +3144,9 @@ rule webshell_asp_scan_writable
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
@@ -3165,16 +3190,29 @@ rule webshell_jsp_regeorg
 		$jgeorg5 = "socket" fullword wide ascii
 		$jgeorg6 = "FORWARD" fullword wide ascii
 	
-		//strings from private rule capa_jsp
-		$cjsp1 = "<%" ascii wide
-		$cjsp2 = "<jsp:" ascii wide
-		$cjsp3 = /language=[\"']java[\"\']/ ascii wide
+		//strings from private rule capa_jsp_safe
+		$cjsp_short1 = "<%" ascii wide
+		$cjsp_short2 = "%>" wide ascii
+		$cjsp_long1 = "<jsp:" ascii wide
+		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
-		$cjsp4 = "/jstl/core" ascii wide
+		$cjsp_long3 = "/jstl/core" ascii wide
+		$cjsp_long4 = "<%@p" nocase ascii wide
+		$cjsp_long5 = "<%@ " nocase ascii wide
+		$cjsp_long6 = "<% " ascii wide
+		$cjsp_long7 = "< %" ascii wide
 	
 	condition:
 		filesize < 300KB and ( 
-			any of ( $cjsp* ) 
+        $cjsp_short1 at 0 or
+			any of ( $cjsp_long* ) or
+			$cjsp_short2 in ( filesize-100..filesize ) or
+        (
+            $cjsp_short2 and (
+                $cjsp_short1 in ( 0..1000 ) or
+                $cjsp_short1 in ( filesize-1000..filesize ) 
+            )
+        ) 
 		)
 		and all of ( $jgeorg* )
 }
@@ -3196,16 +3234,29 @@ rule webshell_jsp_http_proxy
 		$jh5 = "openConnection" fullword wide ascii
 		$jh6 = "getParameter" fullword wide ascii
 	
-		//strings from private rule capa_jsp
-		$cjsp1 = "<%" ascii wide
-		$cjsp2 = "<jsp:" ascii wide
-		$cjsp3 = /language=[\"']java[\"\']/ ascii wide
+		//strings from private rule capa_jsp_safe
+		$cjsp_short1 = "<%" ascii wide
+		$cjsp_short2 = "%>" wide ascii
+		$cjsp_long1 = "<jsp:" ascii wide
+		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
-		$cjsp4 = "/jstl/core" ascii wide
+		$cjsp_long3 = "/jstl/core" ascii wide
+		$cjsp_long4 = "<%@p" nocase ascii wide
+		$cjsp_long5 = "<%@ " nocase ascii wide
+		$cjsp_long6 = "<% " ascii wide
+		$cjsp_long7 = "< %" ascii wide
 	
 	condition:
 		filesize < 10KB and ( 
-			any of ( $cjsp* ) 
+        $cjsp_short1 at 0 or
+			any of ( $cjsp_long* ) or
+			$cjsp_short2 in ( filesize-100..filesize ) or
+        (
+            $cjsp_short2 and (
+                $cjsp_short1 in ( 0..1000 ) or
+                $cjsp_short1 in ( filesize-1000..filesize ) 
+            )
+        ) 
 		)
 		and all of ( $jh* )
 }
@@ -3235,12 +3286,17 @@ rule webshell_jsp_writer_nano
 		$req2 = "HttpServletRequest" fullword ascii wide
 		$req3 = "getRequest" fullword ascii wide
 	
-		//strings from private rule capa_jsp
-		$cjsp1 = "<%" ascii wide
-		$cjsp2 = "<jsp:" ascii wide
-		$cjsp3 = /language=[\"']java[\"\']/ ascii wide
+		//strings from private rule capa_jsp_safe
+		$cjsp_short1 = "<%" ascii wide
+		$cjsp_short2 = "%>" wide ascii
+		$cjsp_long1 = "<jsp:" ascii wide
+		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
-		$cjsp4 = "/jstl/core" ascii wide
+		$cjsp_long3 = "/jstl/core" ascii wide
+		$cjsp_long4 = "<%@p" nocase ascii wide
+		$cjsp_long5 = "<%@ " nocase ascii wide
+		$cjsp_long6 = "<% " ascii wide
+		$cjsp_long7 = "< %" ascii wide
 	
 	condition:
 		filesize < 200 and ( 
@@ -3248,7 +3304,15 @@ rule webshell_jsp_writer_nano
 			any of ( $req* ) 
 		)
 		and ( 
-			any of ( $cjsp* ) 
+        $cjsp_short1 at 0 or
+			any of ( $cjsp_long* ) or
+			$cjsp_short2 in ( filesize-100..filesize ) or
+        (
+            $cjsp_short2 and (
+                $cjsp_short1 in ( 0..1000 ) or
+                $cjsp_short1 in ( filesize-1000..filesize ) 
+            )
+        ) 
 		)
 		and 2 of ( $payload* )
 }
@@ -3271,12 +3335,17 @@ rule webshell_jsp_generic_tiny
 		$payload_rt2 = "getRuntime" fullword wide ascii
 		$payload_rt3 = "exec" fullword wide ascii
 	
-		//strings from private rule capa_jsp
-		$cjsp1 = "<%" ascii wide
-		$cjsp2 = "<jsp:" ascii wide
-		$cjsp3 = /language=[\"']java[\"\']/ ascii wide
+		//strings from private rule capa_jsp_safe
+		$cjsp_short1 = "<%" ascii wide
+		$cjsp_short2 = "%>" wide ascii
+		$cjsp_long1 = "<jsp:" ascii wide
+		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
-		$cjsp4 = "/jstl/core" ascii wide
+		$cjsp_long3 = "/jstl/core" ascii wide
+		$cjsp_long4 = "<%@p" nocase ascii wide
+		$cjsp_long5 = "<%@ " nocase ascii wide
+		$cjsp_long6 = "<% " ascii wide
+		$cjsp_long7 = "< %" ascii wide
 	
 		//strings from private rule capa_jsp_input
 		// request.getParameter
@@ -3291,7 +3360,15 @@ rule webshell_jsp_generic_tiny
 	
 	condition:
 		filesize < 250 and ( 
-			any of ( $cjsp* ) 
+        $cjsp_short1 at 0 or
+			any of ( $cjsp_long* ) or
+			$cjsp_short2 in ( filesize-100..filesize ) or
+        (
+            $cjsp_short2 and (
+                $cjsp_short1 in ( 0..1000 ) or
+                $cjsp_short1 in ( filesize-1000..filesize ) 
+            )
+        ) 
 		)
 		and ( 
 			any of ( $input* ) and
@@ -3318,16 +3395,25 @@ rule webshell_jsp_generic
 		$susp3 = "download" fullword nocase ascii wide
 		$susp4 = "upload" fullword nocase ascii wide
 		$susp5 = "Execute" fullword nocase ascii wide
+		$susp6 = "\"pwd\"" ascii wide
+		$susp7 = "\"</pre>" ascii wide
+
+        $fp1 = "command = \"cmd.exe /c set\";"
 	
 		//strings from private rule capa_bin_files
-        $dex   = { 64 65 78 0a 30 }
+        $dex   = { 64 65 ( 78 | 79 ) 0a 30 }
 	
-		//strings from private rule capa_jsp
-		$cjsp1 = "<%" ascii wide
-		$cjsp2 = "<jsp:" ascii wide
-		$cjsp3 = /language=[\"']java[\"\']/ ascii wide
+		//strings from private rule capa_jsp_safe
+		$cjsp_short1 = "<%" ascii wide
+		$cjsp_short2 = "%>" wide ascii
+		$cjsp_long1 = "<jsp:" ascii wide
+		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
-		$cjsp4 = "/jstl/core" ascii wide
+		$cjsp_long3 = "/jstl/core" ascii wide
+		$cjsp_long4 = "<%@p" nocase ascii wide
+		$cjsp_long5 = "<%@ " nocase ascii wide
+		$cjsp_long6 = "<% " ascii wide
+		$cjsp_long7 = "< %" ascii wide
 	
 		//strings from private rule capa_jsp_input
 		// request.getParameter
@@ -3356,7 +3442,15 @@ rule webshell_jsp_generic
         uint16(0) == 0x4b50 
 		)
 		and ( 
-			any of ( $cjsp* ) 
+        $cjsp_short1 at 0 or
+			any of ( $cjsp_long* ) or
+			$cjsp_short2 in ( filesize-100..filesize ) or
+        (
+            $cjsp_short2 and (
+                $cjsp_short1 in ( 0..1000 ) or
+                $cjsp_short1 in ( filesize-1000..filesize ) 
+            )
+        ) 
 		)
 		and ( 
 			any of ( $input* ) and
@@ -3366,7 +3460,7 @@ rule webshell_jsp_generic
         1 of ( $payload* ) or
         all of ( $rt_payload* ) 
 		)
-		and any of ( $susp* )
+		and not any of ( $fp* ) and any of ( $susp* )
 }
 
 rule webshell_jsp_generic_base64
@@ -3403,19 +3497,32 @@ rule webshell_jsp_generic_base64
 		$three6 = "UwBjAHIAaQBwAHQARQBuAGcAaQBuAGUARgBhAGMAdABvAHIAeQ" wide ascii
 
 	
-		//strings from private rule capa_jsp
-		$cjsp1 = "<%" ascii wide
-		$cjsp2 = "<jsp:" ascii wide
-		$cjsp3 = /language=[\"']java[\"\']/ ascii wide
+		//strings from private rule capa_jsp_safe
+		$cjsp_short1 = "<%" ascii wide
+		$cjsp_short2 = "%>" wide ascii
+		$cjsp_long1 = "<jsp:" ascii wide
+		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
-		$cjsp4 = "/jstl/core" ascii wide
+		$cjsp_long3 = "/jstl/core" ascii wide
+		$cjsp_long4 = "<%@p" nocase ascii wide
+		$cjsp_long5 = "<%@ " nocase ascii wide
+		$cjsp_long6 = "<% " ascii wide
+		$cjsp_long7 = "< %" ascii wide
 	
 		//strings from private rule capa_bin_files
-        $dex   = { 64 65 78 0a 30 }
+        $dex   = { 64 65 ( 78 | 79 ) 0a 30 }
 	
 	condition:
 		( 
-			any of ( $cjsp* ) 
+        $cjsp_short1 at 0 or
+			any of ( $cjsp_long* ) or
+			$cjsp_short2 in ( filesize-100..filesize ) or
+        (
+            $cjsp_short2 and (
+                $cjsp_short1 in ( 0..1000 ) or
+                $cjsp_short1 in ( filesize-1000..filesize ) 
+            )
+        ) 
 		)
 		and not ( 
         uint16(0) == 0x5a4d or 
@@ -3474,12 +3581,17 @@ rule webshell_jsp_generic_reflection
 		$ws_class = "Class" fullword wide ascii
 		$fp = "SOAPConnection"
 	
-		//strings from private rule capa_jsp
-		$cjsp1 = "<%" ascii wide
-		$cjsp2 = "<jsp:" ascii wide
-		$cjsp3 = /language=[\"']java[\"\']/ ascii wide
+		//strings from private rule capa_jsp_safe
+		$cjsp_short1 = "<%" ascii wide
+		$cjsp_short2 = "%>" wide ascii
+		$cjsp_long1 = "<jsp:" ascii wide
+		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
-		$cjsp4 = "/jstl/core" ascii wide
+		$cjsp_long3 = "/jstl/core" ascii wide
+		$cjsp_long4 = "<%@p" nocase ascii wide
+		$cjsp_long5 = "<%@ " nocase ascii wide
+		$cjsp_long6 = "<% " ascii wide
+		$cjsp_long7 = "< %" ascii wide
 	
 		//strings from private rule capa_jsp_input
 		// request.getParameter
@@ -3494,7 +3606,15 @@ rule webshell_jsp_generic_reflection
 	
 	condition:
 		filesize < 10KB and all of ( $ws_* ) and ( 
-			any of ( $cjsp* ) 
+        $cjsp_short1 at 0 or
+			any of ( $cjsp_long* ) or
+			$cjsp_short2 in ( filesize-100..filesize ) or
+        (
+            $cjsp_short2 and (
+                $cjsp_short1 in ( 0..1000 ) or
+                $cjsp_short1 in ( filesize-1000..filesize ) 
+            )
+        ) 
 		)
 		and ( 
 			any of ( $input* ) and
@@ -3516,12 +3636,17 @@ rule webshell_jsp_generic_classloader
 		$exec = "extends ClassLoader" wide ascii
 		$class = "defineClass" fullword wide ascii
 	
-		//strings from private rule capa_jsp
-		$cjsp1 = "<%" ascii wide
-		$cjsp2 = "<jsp:" ascii wide
-		$cjsp3 = /language=[\"']java[\"\']/ ascii wide
+		//strings from private rule capa_jsp_safe
+		$cjsp_short1 = "<%" ascii wide
+		$cjsp_short2 = "%>" wide ascii
+		$cjsp_long1 = "<jsp:" ascii wide
+		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
-		$cjsp4 = "/jstl/core" ascii wide
+		$cjsp_long3 = "/jstl/core" ascii wide
+		$cjsp_long4 = "<%@p" nocase ascii wide
+		$cjsp_long5 = "<%@ " nocase ascii wide
+		$cjsp_long6 = "<% " ascii wide
+		$cjsp_long7 = "< %" ascii wide
 	
 		//strings from private rule capa_jsp_input
 		// request.getParameter
@@ -3536,7 +3661,15 @@ rule webshell_jsp_generic_classloader
 	
 	condition:
 		filesize < 10KB and ( 
-			any of ( $cjsp* ) 
+        $cjsp_short1 at 0 or
+			any of ( $cjsp_long* ) or
+			$cjsp_short2 in ( filesize-100..filesize ) or
+        (
+            $cjsp_short2 and (
+                $cjsp_short1 in ( 0..1000 ) or
+                $cjsp_short1 in ( filesize-1000..filesize ) 
+            )
+        ) 
 		)
 		and ( 
 			any of ( $input* ) and
@@ -3589,12 +3722,17 @@ rule webshell_jsp_netspy
 		$write3 = "PrintWriter" fullword wide ascii
 		$http = "java.net.HttpURLConnection" fullword wide ascii
 	
-		//strings from private rule capa_jsp
-		$cjsp1 = "<%" ascii wide
-		$cjsp2 = "<jsp:" ascii wide
-		$cjsp3 = /language=[\"']java[\"\']/ ascii wide
+		//strings from private rule capa_jsp_safe
+		$cjsp_short1 = "<%" ascii wide
+		$cjsp_short2 = "%>" wide ascii
+		$cjsp_long1 = "<jsp:" ascii wide
+		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
-		$cjsp4 = "/jstl/core" ascii wide
+		$cjsp_long3 = "/jstl/core" ascii wide
+		$cjsp_long4 = "<%@p" nocase ascii wide
+		$cjsp_long5 = "<%@ " nocase ascii wide
+		$cjsp_long6 = "<% " ascii wide
+		$cjsp_long7 = "< %" ascii wide
 	
 		//strings from private rule capa_jsp_input
 		// request.getParameter
@@ -3609,7 +3747,15 @@ rule webshell_jsp_netspy
 	
 	condition:
 		filesize < 30KB and ( 
-			any of ( $cjsp* ) 
+        $cjsp_short1 at 0 or
+			any of ( $cjsp_long* ) or
+			$cjsp_short2 in ( filesize-100..filesize ) or
+        (
+            $cjsp_short2 and (
+                $cjsp_short1 in ( 0..1000 ) or
+                $cjsp_short1 in ( filesize-1000..filesize ) 
+            )
+        ) 
 		)
 		and ( 
 			any of ( $input* ) and
@@ -3644,17 +3790,32 @@ rule webshell_jsp_by_string
 		$jstring12 = "MiniWebCmdShell" fullword wide ascii
 		$jstring13 = "pwnshell.jsp" fullword wide ascii
 		$jstring14 = "session set &lt;key&gt; &lt;value&gt; [class]<br>"  wide ascii
+		$jstring15 = "Runtime.getRuntime().exec(request.getParameter(" nocase wide ascii
+		$jstring16 = "GIF98a<%@page" wide ascii
 	
-		//strings from private rule capa_jsp
-		$cjsp1 = "<%" ascii wide
-		$cjsp2 = "<jsp:" ascii wide
-		$cjsp3 = /language=[\"']java[\"\']/ ascii wide
+		//strings from private rule capa_jsp_safe
+		$cjsp_short1 = "<%" ascii wide
+		$cjsp_short2 = "%>" wide ascii
+		$cjsp_long1 = "<jsp:" ascii wide
+		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
-		$cjsp4 = "/jstl/core" ascii wide
+		$cjsp_long3 = "/jstl/core" ascii wide
+		$cjsp_long4 = "<%@p" nocase ascii wide
+		$cjsp_long5 = "<%@ " nocase ascii wide
+		$cjsp_long6 = "<% " ascii wide
+		$cjsp_long7 = "< %" ascii wide
 	
 	condition:
 		filesize < 100KB and ( 
-			any of ( $cjsp* ) 
+        $cjsp_short1 at 0 or
+			any of ( $cjsp_long* ) or
+			$cjsp_short2 in ( filesize-100..filesize ) or
+        (
+            $cjsp_short2 and (
+                $cjsp_short1 in ( 0..1000 ) or
+                $cjsp_short1 in ( filesize-1000..filesize ) 
+            )
+        ) 
 		)
 		and any of ( $jstring* )
 }
@@ -3675,12 +3836,17 @@ rule webshell_jsp_input_upload_write
 		$write1 = "os.write" fullword wide ascii
 		$write2 = "FileOutputStream" fullword wide ascii
 	
-		//strings from private rule capa_jsp
-		$cjsp1 = "<%" ascii wide
-		$cjsp2 = "<jsp:" ascii wide
-		$cjsp3 = /language=[\"']java[\"\']/ ascii wide
+		//strings from private rule capa_jsp_safe
+		$cjsp_short1 = "<%" ascii wide
+		$cjsp_short2 = "%>" wide ascii
+		$cjsp_long1 = "<jsp:" ascii wide
+		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
-		$cjsp4 = "/jstl/core" ascii wide
+		$cjsp_long3 = "/jstl/core" ascii wide
+		$cjsp_long4 = "<%@p" nocase ascii wide
+		$cjsp_long5 = "<%@ " nocase ascii wide
+		$cjsp_long6 = "<% " ascii wide
+		$cjsp_long7 = "< %" ascii wide
 	
 		//strings from private rule capa_jsp_input
 		// request.getParameter
@@ -3695,7 +3861,15 @@ rule webshell_jsp_input_upload_write
 	
 	condition:
 		filesize < 10KB and ( 
-			any of ( $cjsp* ) 
+        $cjsp_short1 at 0 or
+			any of ( $cjsp_long* ) or
+			$cjsp_short2 in ( filesize-100..filesize ) or
+        (
+            $cjsp_short2 and (
+                $cjsp_short1 in ( 0..1000 ) or
+                $cjsp_short1 in ( filesize-1000..filesize ) 
+            )
+        ) 
 		)
 		and ( 
 			any of ( $input* ) and
@@ -3747,14 +3921,12 @@ rule webshell_generic_os_strings
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -3777,12 +3949,17 @@ rule webshell_generic_os_strings
 		$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
-		//strings from private rule capa_jsp
-		$cjsp1 = "<%" ascii wide
-		$cjsp2 = "<jsp:" ascii wide
-		$cjsp3 = /language=[\"']java[\"\']/ ascii wide
+		//strings from private rule capa_jsp_safe
+		$cjsp_short1 = "<%" ascii wide
+		$cjsp_short2 = "%>" wide ascii
+		$cjsp_long1 = "<jsp:" ascii wide
+		$cjsp_long2 = /language=[\"']java[\"\']/ ascii wide
 		// JSF
-		$cjsp4 = "/jstl/core" ascii wide
+		$cjsp_long3 = "/jstl/core" ascii wide
+		$cjsp_long4 = "<%@p" nocase ascii wide
+		$cjsp_long5 = "<%@ " nocase ascii wide
+		$cjsp_long6 = "<% " ascii wide
+		$cjsp_long7 = "< %" ascii wide
 	
 		//strings from private rule capa_os_strings
 		// windows = nocase
@@ -3803,6 +3980,9 @@ rule webshell_generic_os_strings
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
@@ -3824,7 +4004,15 @@ rule webshell_generic_os_strings
 			or any of ( $php_new* ) 
 		)
 		or ( 
-			any of ( $cjsp* ) 
+        $cjsp_short1 at 0 or
+			any of ( $cjsp_long* ) or
+			$cjsp_short2 in ( filesize-100..filesize ) or
+        (
+            $cjsp_short2 and (
+                $cjsp_short1 in ( 0..1000 ) or
+                $cjsp_short1 in ( filesize-1000..filesize ) 
+            )
+        ) 
 		)
 		) and ( 
 			filesize < 300KB and 
@@ -3933,14 +4121,12 @@ rule webshell_in_image
         // <%@ Page Language = Jscript %>
         // <%@ Page Language="C#" %>
         // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
-		$tagasp_long20 = /<%\s{0,9}@\s{0,9}.{0,100}language\s{0,9}=\s{0,9}"?(vb|jscript|c#)/ nocase wide ascii
-
         // <script runat="server" language="JScript">
         // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
         // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
         // <msxsl:script language="JScript" ...
-		$tagasp_long30 = /[<:]script.{1,30}language=/ wide ascii
-		$tagasp_long31 = /[<:]SCRIPT.{1,30}LANGUAGE=/ wide ascii
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
@@ -3975,6 +4161,12 @@ rule webshell_in_image
 		$asp_multi_payload_four1 = "CreateObject" fullword nocase wide ascii
 		$asp_multi_payload_four2 = "TransformNode" fullword nocase wide ascii
 		$asp_multi_payload_four3 = "loadxml" fullword nocase wide ascii
+
+        // execute cmd.exe /c with arguments using ProcessStartInfo
+		$asp_multi_payload_five1 = "ProcessStartInfo" fullword nocase wide ascii
+		$asp_multi_payload_five2 = ".Start" nocase wide ascii
+		$asp_multi_payload_five3 = ".Filename" nocase wide ascii
+		$asp_multi_payload_five4 = ".Arguments" nocase wide ascii
 	
 	condition:
 		( $png at 0 or $jpg at 0 or $gif at 0 or $gif2 at 0 or $mdb at 0 ) and 
@@ -4006,6 +4198,9 @@ rule webshell_in_image
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
             any of ( $tagasp_classid* ) or
             (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
                 $tagasp_short2 and (
                     $tagasp_short1 in ( 0..1000 ) or
                     $tagasp_short1 in ( filesize-1000..filesize ) 
@@ -4021,7 +4216,8 @@ rule webshell_in_image
         all of ( $asp_multi_payload_one* ) or
         all of ( $asp_multi_payload_two* ) or
         all of ( $asp_multi_payload_three* ) or
-        all of ( $asp_multi_payload_four* ) 
+        all of ( $asp_multi_payload_four* ) or
+        all of ( $asp_multi_payload_five* ) 
 		)
 		) )
 }
