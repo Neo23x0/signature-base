@@ -2861,11 +2861,11 @@ rule webshell_asp_runtime_compile
 		hash = "e20e078d9fcbb209e3733a06ad21847c5c5f0e52"
 		hash = "57f758137aa3a125e4af809789f3681d1b08ee5b"
 		type = "file"
-		
+
 	strings:
 		$payload_reflection1 = "System.Reflection" nocase wide ascii
 		$payload_reflection2 = "Assembly" fullword nocase wide ascii
-		$payload_reflection3 = "Load" fullword nocase wide ascii
+		$payload_reflection3 = /[."']Load\b/ nocase wide ascii
 		$payload_compile1 = "GenerateInMemory" nocase wide ascii
 		$payload_compile2 = "CompileAssemblyFromSource" nocase wide ascii
 		$payload_invoke1 = "Invoke" nocase wide ascii
