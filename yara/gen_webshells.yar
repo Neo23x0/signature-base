@@ -2456,6 +2456,8 @@ rule webshell_asp_generic
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Arnim Rupp"
 		date = "2021/03/07"
+		score = 60
+		hash = "a8c63c418609c1c291b3e731ca85ded4b3e0fba83f3489c21a3199173b176a75"
 
 	strings:
         $asp_gen_sus1  = /:\s{0,20}eval}/ nocase wide ascii
@@ -2479,6 +2481,8 @@ rule webshell_asp_generic
         // bonus string for proxylogon exploiting webshells
         $asp_gen_sus19 = "http://schemas.microsoft.com/exchange/" wide ascii
         $asp_gen_sus20 = "\"</pre>\"" wide ascii
+        $asp_gen_sus21 = "\"upload\"" wide ascii
+        $asp_gen_sus22 = "\"Upload\"" wide ascii
 	
 		//strings from private rule capa_asp
 		$tagasp_short1 = /<%[^"]/ wide ascii
@@ -2585,7 +2589,7 @@ rule webshell_asp_generic
 		$tagasp_capa_classid5 = "0D43FE01-F093-11CF-8940-00A0C9054228" nocase wide ascii
 	
 	condition:
-		filesize < 20KB and ( 
+		filesize < 25KB and ( 
         (
             any of ( $tagasp_long* ) or
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
@@ -3390,7 +3394,6 @@ rule webshell_jsp_generic_tiny
 		author = "Arnim Rupp"
 		date = "2021/01/07"
 		hash = "8fd343db0442136e693e745d7af1018a99b042af"
-		hash = "ee9408eb923f2d16f606a5aaac7e16b009797a07"
 
 	strings:
 		$payload1 = "ProcessBuilder" fullword wide ascii
@@ -3452,6 +3455,7 @@ rule webshell_jsp_generic
 		date = "2021/01/07"
 		hash = "4762f36ca01fb9cda2ab559623d2206f401fc0b1"
 		hash = "bdaf9279b3d9e07e955d0ce706d9c42e4bdf9aa1"
+		hash = "ee9408eb923f2d16f606a5aaac7e16b009797a07"
 
 	strings:
 		$susp0 = "cmd" fullword nocase ascii wide
