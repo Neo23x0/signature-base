@@ -395,7 +395,6 @@ rule webshell_php_base64_encoded_payloads
 		( ( any of ( $one* ) and not any of ( $execu* ) ) or any of ( $two* ) or any of ( $three* ) or 
 		( any of ( $four* ) and not any of ( $esystem* ) ) or 
 		( any of ( $five* ) and not any of ( $opening* ) ) or any of ( $six* ) or any of ( $seven* ) or any of ( $eight* ) or any of ( $nine* ) )
-		and not 1 of ($fp*)
 }
 
 rule webshell_php_unknown_1
@@ -429,7 +428,7 @@ rule webshell_php_generic_eval
 		date = "2021/01/07"
 
 	strings:
-		$geval = /(exec|shell_exec|passthru|system|popen|proc_open|pcntl_exec|eval|assert)[\t ]*(stripslashes\()?[\t ]*(trim\()?[\t ]*\(\$(_POST|_GET|_REQUEST|_SERVER\[['"]HTTP_)/ wide ascii
+		$geval = /\b(exec|shell_exec|passthru|system|popen|proc_open|pcntl_exec|eval|assert)[\t ]*(stripslashes\()?[\t ]*(trim\()?[\t ]*\(\$(_POST|_GET|_REQUEST|_SERVER\[['"]HTTP_)/ wide ascii
 	
 		//strings from private rule php_false_positive
 		// try to use only strings which would be flagged by themselves as suspicous by other rules, e.g. eval 
@@ -2054,24 +2053,32 @@ rule webshell_asp_by_string
 		hash = "f72252b13d7ded46f0a206f63a1c19a66449f216"
 
 	strings:
-		$asp_string1 = "tseuqer lave" wide ascii
-		$asp_string2 = ":eval request(" wide ascii
-		$asp_string3 = ":eval request(" wide ascii
-		$asp_string4 = "SItEuRl=\"http://www.zjjv.com\"" wide ascii
-		$asp_string5 = "ServerVariables(\"HTTP_HOST\"),\"gov.cn\"" wide ascii
-		$asp_string6 = /e\+.-v\+.-a\+.-l/ wide ascii
-		$asp_string7 = "r+x-e+x-q+x-u" wide ascii
-		$asp_string8 = "add6bb58e139be10" fullword wide ascii
-		$asp_string9 = "WebAdmin2Y.x.y(\"" wide ascii
+        // reversed
+		$asp_string1  = "tseuqer lave" wide ascii
+		$asp_string2  = ":eval request(" wide ascii
+		$asp_string3  = ":eval request(" wide ascii
+		$asp_string4  = "SItEuRl=\"http://www.zjjv.com\"" wide ascii
+		$asp_string5  = "ServerVariables(\"HTTP_HOST\"),\"gov.cn\"" wide ascii
+        // e+k-v+k-a+k-l
+        // e+x-v+x-a+x-l
+		$asp_string6  = /e\+.-v\+.-a\+.-l/ wide ascii
+		$asp_string7  = "r+x-e+x-q+x-u" wide ascii
+		$asp_string8  = "add6bb58e139be10" fullword wide ascii
+		$asp_string9  = "WebAdmin2Y.x.y(\"" wide ascii
 		$asp_string10 = "<%if (Request.Files.Count!=0) { Request.Files[0].SaveAs(Server.MapPath(Request[" wide ascii
 		$asp_string11 = "<% If Request.Files.Count <> 0 Then Request.Files(0).SaveAs(Server.MapPath(Request(" wide ascii
+        // Request.Item["
 		$asp_string12 = "UmVxdWVzdC5JdGVtWyJ" wide ascii
-		$asp_string13 = "UAdgBhAGwAKA" wide ascii
+
+        // eval( in utf7 in base64 all 3 versions
+        $asp_string13 = "UAdgBhAGwAKA" wide ascii
 		$asp_string14 = "lAHYAYQBsACgA" wide ascii
 		$asp_string15 = "ZQB2AGEAbAAoA" wide ascii
-		$asp_string16 = "IAZQBxAHUAZQBzAHQAKA" wide ascii
+        // request in utf7 in base64 all 3 versions
+        $asp_string16 = "IAZQBxAHUAZQBzAHQAKA" wide ascii
 		$asp_string17 = "yAGUAcQB1AGUAcwB0ACgA" wide ascii
 		$asp_string18 = "cgBlAHEAdQBlAHMAdAAoA" wide ascii
+
 		$asp_string19 = "\"ev\"&\"al" wide ascii
 		$asp_string20 = "\"Sc\"&\"ri\"&\"p" wide ascii
 		$asp_string21 = "C\"&\"ont\"&\"" wide ascii
@@ -2081,7 +2088,7 @@ rule webshell_asp_by_string
 		$asp_string25 = "*/eval(" wide ascii
 		$asp_string26 = "\"e\"&\"v\"&\"a\"&\"l" nocase
 		$asp_string27 = "<%eval\"\"&(\"" nocase wide ascii
-		$asp_string28 = "6877656D2B736972786677752B237E232C2A" wide ascii
+		$asp_string28 = "6877656D2B736972786677752B237E232C2A"  wide ascii
 		$asp_string29 = "ws\"&\"cript.shell" wide ascii
 		$asp_string30 = "SerVer.CreAtEoBjECT(\"ADODB.Stream\")" wide ascii
 		$asp_string31 = "ASPShell - web based shell" wide ascii
@@ -2101,8 +2108,71 @@ rule webshell_asp_by_string
 		$asp_string45 = "Response.Write(Server.HtmlEncode(ExcutemeuCmd(txtArg.Text)));" wide ascii
 		$asp_string46 = "\"c\" + \"m\" + \"d\"" wide ascii
 
+	
+		//strings from private rule capa_asp
+		$tagasp_short1 = /<%[^"]/ wide ascii
+        // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
+		$tagasp_short2 = "%>" wide ascii
+
+        // classids for scripting host etc
+		$tagasp_classid1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" nocase wide ascii
+		$tagasp_classid2 = "F935DC22-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid3 = "093FF999-1EA0-4079-9525-9614C3504B74" nocase wide ascii
+		$tagasp_classid4 = "F935DC26-1CF0-11D0-ADB9-00C04FD58A0B" nocase wide ascii
+		$tagasp_classid5 = "0D43FE01-F093-11CF-8940-00A0C9054228" nocase wide ascii
+		$tagasp_long10 = "<%@ " wide ascii
+        // <% eval
+		$tagasp_long11 = /<% \w/ nocase wide ascii
+		$tagasp_long12 = "<%ex" nocase wide ascii
+		$tagasp_long13 = "<%ev" nocase wide ascii
+
+        // <%@ LANGUAGE = VBScript.encode%>
+        // <%@ Language = "JScript" %>
+
+        // <%@ WebHandler Language="C#" class="Handler" %>
+        // <%@ WebService Language="C#" Class="Service" %>
+
+        // <%@Page Language="Jscript"%>
+        // <%@ Page Language = Jscript %>           
+        // <%@PAGE LANGUAGE=JSCRIPT%>
+        // <%@ Page Language="Jscript" validateRequest="false" %>
+        // <%@ Page Language = Jscript %>
+        // <%@ Page Language="C#" %>
+        // <%@ Page Language="VB" ContentType="text/html" validaterequest="false" AspCompat="true" Debug="true" %>
+        // <script runat="server" language="JScript">
+        // <SCRIPT RUNAT=SERVER LANGUAGE=JSCRIPT>
+        // <SCRIPT  RUNAT=SERVER  LANGUAGE=JSCRIPT>
+        // <msxsl:script language="JScript" ...
+		$tagasp_long20 = /<(%|script|msxsl:script).{0,60}language="?(vb|jscript|c#)/ nocase wide ascii
+
+		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
+		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
+
+        // avoid hitting legitimate php
+        $php1 = "<?php"
+        $php2 = "<?="
+	
 	condition:
-		filesize <200KB and any of ($asp_string*)
+		filesize < 200KB and ( 
+        (
+            any of ( $tagasp_long* ) or
+            // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
+            any of ( $tagasp_classid* ) or
+            (
+                $tagasp_short1 and
+                $tagasp_short2 in ( filesize-100..filesize ) 
+            ) or (
+                $tagasp_short2 and (
+                    $tagasp_short1 in ( 0..1000 ) or
+                    $tagasp_short1 in ( filesize-1000..filesize ) 
+                )
+            ) 
+        ) and not ( 
+            $php1 at 0 or
+            $php2 at 0 
+        ) 
+		)
+		and any of ( $asp_string* )
 }
 
 rule webshell_asp_sniffer
@@ -2327,7 +2397,6 @@ rule webshell_asp_generic_tiny
 		$asp_multi_payload_five2 = ".Start" nocase wide ascii
 		$asp_multi_payload_five3 = ".Filename" nocase wide ascii
 		$asp_multi_payload_five4 = ".Arguments" nocase wide ascii
-		
 	
 	condition:
 		( 
@@ -2378,7 +2447,6 @@ rule webshell_asp_generic_tiny
 		)
 		) or 
 		( filesize < 300 and all of ( $write* ) ) )
-		and not 1 of ($fp*)
 }
 
 rule webshell_asp_generic
@@ -2388,6 +2456,8 @@ rule webshell_asp_generic
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Arnim Rupp"
 		date = "2021/03/07"
+		score = 60
+		hash = "a8c63c418609c1c291b3e731ca85ded4b3e0fba83f3489c21a3199173b176a75"
 
 	strings:
         $asp_gen_sus1  = /:\s{0,20}eval}/ nocase wide ascii
@@ -2411,6 +2481,8 @@ rule webshell_asp_generic
         // bonus string for proxylogon exploiting webshells
         $asp_gen_sus19 = "http://schemas.microsoft.com/exchange/" wide ascii
         $asp_gen_sus20 = "\"</pre>\"" wide ascii
+        $asp_gen_sus21 = "\"upload\"" wide ascii
+        $asp_gen_sus22 = "\"Upload\"" wide ascii
 	
 		//strings from private rule capa_asp
 		$tagasp_short1 = /<%[^"]/ wide ascii
@@ -2517,7 +2589,7 @@ rule webshell_asp_generic
 		$tagasp_capa_classid5 = "0D43FE01-F093-11CF-8940-00A0C9054228" nocase wide ascii
 	
 	condition:
-		filesize < 20KB and ( 
+		filesize < 25KB and ( 
         (
             any of ( $tagasp_long* ) or
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
@@ -2655,8 +2727,7 @@ rule webshell_asp_generic_registry_reader
         $asp_asp   = "<asp:" wide ascii
         $asp_text1 = ".text" wide ascii
         $asp_text2 = ".Text" wide ascii
-
-    	
+	
 	condition:
 		( 
         (
@@ -2692,9 +2763,7 @@ rule webshell_asp_generic_registry_reader
         ) 
 		)
 		) )
-    and not 1 of ($fp*)
 }
-
 
 rule webshell_aspx_regeorg_csharp
 {
@@ -3325,7 +3394,6 @@ rule webshell_jsp_generic_tiny
 		author = "Arnim Rupp"
 		date = "2021/01/07"
 		hash = "8fd343db0442136e693e745d7af1018a99b042af"
-		hash = "ee9408eb923f2d16f606a5aaac7e16b009797a07"
 
 	strings:
 		$payload1 = "ProcessBuilder" fullword wide ascii
@@ -3387,6 +3455,7 @@ rule webshell_jsp_generic
 		date = "2021/01/07"
 		hash = "4762f36ca01fb9cda2ab559623d2206f401fc0b1"
 		hash = "bdaf9279b3d9e07e955d0ce706d9c42e4bdf9aa1"
+		hash = "ee9408eb923f2d16f606a5aaac7e16b009797a07"
 
 	strings:
 		$susp0 = "cmd" fullword nocase ascii wide
