@@ -9787,3 +9787,14 @@ cd5f39aa95ea31f4bf6e7976bc1644fa3101909e;Silver Fish Report - https://www.prodaf
 65226d59bb790120af2ad70d48736a8a223f6122d6ee5dd6b48bd5c47ff94b0b;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
 615321ff979379e66f9471368ed3c057a0f4e17c;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
 5ed2e0bf353cfee15e50f2e4188fed20c79cf2c6dc517c34069570ddca9c92f9;Silver Fish Report - https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf
+
+be53764063bb1d054d78f2bf08fb90f3;Ecipekac loader - jli.dll P8RAT - https://securelist.com/apt10-sophisticated-multi-layered-loader-ecipekac-discovered-in-a41apt-campaign/101519/
+cca46fc64425364774e5d5db782ddf54;Ecipekac loader - vmtools.dll SodaMaster - https://securelist.com/apt10-sophisticated-multi-layered-loader-ecipekac-discovered-in-a41apt-campaign/101519/
+dd672da5d367fd291d936c8cc03b6467;Ecipekac loader - CCFIPC64.DLL FYAnti loader - https://securelist.com/apt10-sophisticated-multi-layered-loader-ecipekac-discovered-in-a41apt-campaign/101519/
+f60f7a1736840a6149d478b23611d561;Encrypted Ecipekac Layer II, IV loader (shellcode) - vac.dll P8RAT - https://securelist.com/apt10-sophisticated-multi-layered-loader-ecipekac-discovered-in-a41apt-campaign/101519/
+59747955a8874ff74ce415e56d8beb9c;Encrypted Ecipekac Layer II, IV loader (shellcode) - pcasvc.dll P8RAT - https://securelist.com/apt10-sophisticated-multi-layered-loader-ecipekac-discovered-in-a41apt-campaign/101519/
+4638220ec2c6bc1406b5725c2d35edc3;Encrypted Ecipekac Layer II, IV loader (shellcode) - wiaky002_CNC1755D.dll SodaMaster - https://securelist.com/apt10-sophisticated-multi-layered-loader-ecipekac-discovered-in-a41apt-campaign/101519/
+d37964a9f7f56aad9433676a6df9bd19;Encrypted Ecipekac Layer II, IV loader (shellcode) - c_apo_ipoib6x.dll SodaMaster - https://securelist.com/apt10-sophisticated-multi-layered-loader-ecipekac-discovered-in-a41apt-campaign/101519/
+335ce825da93ed3fdd4470634845dfea;Encrypted Ecipekac Layer II, IV loader (shellcode) - msftedit.prf.cco FYAnti loader - https://securelist.com/apt10-sophisticated-multi-layered-loader-ecipekac-discovered-in-a41apt-campaign/101519/
+f4c4644e6d248399a12e2c75cf9e4bdf;Encrypted Ecipekac Layer II, IV loader (shellcode) - msdtcuiu.adi.wdb FYAnti loader - https://securelist.com/apt10-sophisticated-multi-layered-loader-ecipekac-discovered-in-a41apt-campaign/101519/
+019619318e1e3a77f3071fb297b85cf3;Encrypted QuasarRAT - web_lowtrust.config.uninstall QuasarRAT  - https://securelist.com/apt10-sophisticated-multi-layered-loader-ecipekac-discovered-in-a41apt-campaign/101519/
