@@ -363,6 +363,8 @@ rule webshell_php_base64_encoded_payloads
 
         // false positives
         $fp1 = { D0 CF 11 E0 A1 B1 1A E1 }
+        // api.telegram
+        $fp2 = "YXBpLnRlbGVncmFtLm9" 
 
 	
 		//strings from private rule capa_php_old_safe
@@ -723,6 +725,9 @@ rule webshell_php_gzinflated
 		$payload6 = "eval(\"?>\".gzdecode(base64_decode(" wide ascii
 		$payload7 = "eval(base64_decode(" wide ascii
 		$payload8 = "eval(pack(" wide ascii
+
+        // api.telegram
+        $fp1 = "YXBpLnRlbGVncmFtLm9" 
 	
 		//strings from private rule php_false_positive
 		// try to use only strings which would be flagged by themselves as suspicous by other rules, e.g. eval 
@@ -743,7 +748,7 @@ rule webshell_php_gzinflated
 		filesize < 700KB and not ( 
 			any of ( $gfp* ) 
 		)
-		and $php and 1 of ( $payload* )
+		and $php and 1 of ( $payload* ) and not any of ( $fp* )
 }
 
 rule webshell_php_obfuscated_2
@@ -2107,6 +2112,7 @@ rule webshell_asp_by_string
 		$asp_string44 = "if (request.getHeader(headerNameKey).toString().trim().equals(headerValueKey.trim()))" wide ascii
 		$asp_string45 = "Response.Write(Server.HtmlEncode(ExcutemeuCmd(txtArg.Text)));" wide ascii
 		$asp_string46 = "\"c\" + \"m\" + \"d\"" wide ascii
+		$asp_string47 = "\".\"+\"e\"+\"x\"+\"e\"" wide ascii
 
 	
 		//strings from private rule capa_asp
@@ -2483,6 +2489,10 @@ rule webshell_asp_generic
         $asp_gen_sus20 = "\"</pre>\"" wide ascii
         $asp_gen_sus21 = "\"upload\"" wide ascii
         $asp_gen_sus22 = "\"Upload\"" wide ascii
+        $asp_gen_sus23 = "\"<pre>" wide ascii
+
+        // "e"+"x"+"e"
+        $asp_gen_obf1 = "\"+\"" wide ascii 
 	
 		//strings from private rule capa_asp
 		$tagasp_short1 = /<%[^"]/ wide ascii
@@ -2635,7 +2645,8 @@ rule webshell_asp_generic
         all of ( $asp_multi_payload_five* ) 
 		)
 		and 
-		( any of ( $asp_gen_sus* ) or ( 
+		( any of ( $asp_gen_sus* ) or 
+		( #asp_gen_obf1 > 2 ) or ( 
         any of ( $tagasp_capa_classid* ) 
 		)
 		)
