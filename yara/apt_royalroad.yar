@@ -28,7 +28,7 @@ rule RoyalRoad_code_pattern1
       description = "Detects RoyalRoad weaponized RTF documents"
       reference = "https://jsac.jpcert.or.jp/archive/2020/pdf/JSAC2020_8_koike-nakajima_jp.pdf"
       date = "2020/01/15"
-      author = "neo_sec"
+      author = "nao_sec"
       score = 80
    strings:
        $S1= "48905d006c9c5b0000000000030101030a0a01085a5ab844eb7112ba7856341231"
@@ -44,7 +44,7 @@ rule RoyalRoad_code_pattern2
       description = "Detects RoyalRoad weaponized RTF documents"
       reference = "https://jsac.jpcert.or.jp/archive/2020/pdf/JSAC2020_8_koike-nakajima_jp.pdf"
       date = "2020/01/15"
-      author = "neo_sec"
+      author = "nao_sec"
       score = 80
     strings:
         $S1= "653037396132353234666136336135356662636665" ascii
@@ -60,7 +60,7 @@ rule RoyalRoad_code_pattern3
       description = "Detects RoyalRoad weaponized RTF documents"
       reference = "https://jsac.jpcert.or.jp/archive/2020/pdf/JSAC2020_8_koike-nakajima_jp.pdf"
       date = "2020/01/15"
-      author = "neo_sec"
+      author = "nao_sec"
       score = 80
 strings:
     $S1="4746424151515151505050500000000000584242eb0642424235353336204460606060606060606061616161616161616161616161616161"
@@ -77,7 +77,7 @@ rule RoyalRoad_code_pattern4ab
       description = "Detects RoyalRoad weaponized RTF documents"
       reference = "https://jsac.jpcert.or.jp/archive/2020/pdf/JSAC2020_8_koike-nakajima_jp.pdf"
       date = "2020/01/15"
-      author = "neo_sec"
+      author = "nao_sec"
       score = 80
     strings:
         $S1= "4746424151515151505050500000000000584242EB064242423535333620446060606060606060606161616161616}1616161616161616161" ascii
@@ -93,7 +93,7 @@ rule RoyalRoad_code_pattern4ce
       description = "Detects RoyalRoad weaponized RTF documents"
       reference = "https://jsac.jpcert.or.jp/archive/2020/pdf/JSAC2020_8_koike-nakajima_jp.pdf"
       date = "2020/01/15"
-      author = "neo_sec"
+      author = "nao_sec"
       score = 80
     strings:
         $S1= "584242eb064242423535333620446060606060606060606161616161616161616161616}1616161" ascii
@@ -111,7 +111,7 @@ rule RoyalRoad_code_pattern4d
       description = "Detects RoyalRoad weaponized RTF documents"
       reference = "https://jsac.jpcert.or.jp/archive/2020/pdf/JSAC2020_8_koike-nakajima_jp.pdf"
       date = "2020/01/15"
-      author = "neo_sec"
+      author = "nao_sec"
       score = 80
     strings:
         $S1= "584242eb06424242353533362044606060606060606060616161616161616161616}16161616161" ascii
@@ -130,7 +130,7 @@ rule RoyalRoad_RTF
       description = "Detects RoyalRoad weaponized RTF documents"
       reference = "https://jsac.jpcert.or.jp/archive/2020/pdf/JSAC2020_8_koike-nakajima_jp.pdf"
       date = "2020/01/15"
-      author = "neo_sec"
+      author = "nao_sec"
       score = 80
     strings:
         $S1= "objw2180\\objh300" ascii
@@ -146,7 +146,7 @@ rule RoyalRoad_RTF_v7
       description = "Detects RoyalRoad weaponized RTF documents"
       reference = "https://jsac.jpcert.or.jp/archive/2020/pdf/JSAC2020_8_koike-nakajima_jp.pdf"
       date = "2020/01/15"
-      author = "neo_sec"
+      author = "nao_sec"
       score = 60
     strings:
         $v7_1= "{\\object\\objocx{\\objdata" ascii
@@ -163,7 +163,7 @@ rule RoyalRoad_encode_in_RTF
       description = "Detects RoyalRoad weaponized RTF documents"
       reference = "https://jsac.jpcert.or.jp/archive/2020/pdf/JSAC2020_8_koike-nakajima_jp.pdf"
       date = "2020/01/15"
-      author = "neo_sec"
+      author = "nao_sec"
       score = 60
     strings:
         $enc_hex_1 = "B0747746"
