@@ -192,6 +192,7 @@ rule webshell_php_generic_callback_tiny
 		$gfp9  = "?p4yl04d=UNION%20SELECT%20'<?%20system($_GET['command']);%20?>',2,3%20INTO%20OUTFILE%20'/var/www/w3bsh3ll.php"
 		$gfp10 = "[][}{;|]\\|\\\\[+=]\\|<?=>?"
 		$gfp11 = "(eval (getenv \"EPROLOG\")))"
+		$gfp12 = "ZmlsZV9nZXRfY29udGVudHMoJ2h0dHA6Ly9saWNlbnNlLm9wZW5jYXJ0LWFwaS5jb20vbGljZW5zZS5waHA/b3JkZXJ"
 	
 		//strings from private rule php_false_positive_tiny
 		// try to use only strings which would be flagged by themselves as suspicous by other rules, e.g. eval 
@@ -448,6 +449,7 @@ rule webshell_php_generic_eval
 		$gfp9  = "?p4yl04d=UNION%20SELECT%20'<?%20system($_GET['command']);%20?>',2,3%20INTO%20OUTFILE%20'/var/www/w3bsh3ll.php"
 		$gfp10 = "[][}{;|]\\|\\\\[+=]\\|<?=>?"
 		$gfp11 = "(eval (getenv \"EPROLOG\")))"
+		$gfp12 = "ZmlsZV9nZXRfY29udGVudHMoJ2h0dHA6Ly9saWNlbnNlLm9wZW5jYXJ0LWFwaS5jb20vbGljZW5zZS5waHA/b3JkZXJ"
 	
 	condition:
 		filesize < 300KB and not ( 
@@ -536,6 +538,7 @@ rule webshell_php_obfuscated
 		$gfp9  = "?p4yl04d=UNION%20SELECT%20'<?%20system($_GET['command']);%20?>',2,3%20INTO%20OUTFILE%20'/var/www/w3bsh3ll.php"
 		$gfp10 = "[][}{;|]\\|\\\\[+=]\\|<?=>?"
 		$gfp11 = "(eval (getenv \"EPROLOG\")))"
+		$gfp12 = "ZmlsZV9nZXRfY29udGVudHMoJ2h0dHA6Ly9saWNlbnNlLm9wZW5jYXJ0LWFwaS5jb20vbGljZW5zZS5waHA/b3JkZXJ"
 	
 		//strings from private rule capa_php_payload
 		// \([^)] to avoid matching on e.g. eval() in comments
@@ -745,6 +748,7 @@ rule webshell_php_gzinflated
 		$gfp9  = "?p4yl04d=UNION%20SELECT%20'<?%20system($_GET['command']);%20?>',2,3%20INTO%20OUTFILE%20'/var/www/w3bsh3ll.php"
 		$gfp10 = "[][}{;|]\\|\\\\[+=]\\|<?=>?"
 		$gfp11 = "(eval (getenv \"EPROLOG\")))"
+		$gfp12 = "ZmlsZV9nZXRfY29udGVudHMoJ2h0dHA6Ly9saWNlbnNlLm9wZW5jYXJ0LWFwaS5jb20vbGljZW5zZS5waHA/b3JkZXJ"
 	
 	condition:
 		filesize < 700KB and not ( 
@@ -1220,6 +1224,7 @@ rule webshell_php_strings_susp
 		$gfp9  = "?p4yl04d=UNION%20SELECT%20'<?%20system($_GET['command']);%20?>',2,3%20INTO%20OUTFILE%20'/var/www/w3bsh3ll.php"
 		$gfp10 = "[][}{;|]\\|\\\\[+=]\\|<?=>?"
 		$gfp11 = "(eval (getenv \"EPROLOG\")))"
+		$gfp12 = "ZmlsZV9nZXRfY29udGVudHMoJ2h0dHA6Ly9saWNlbnNlLm9wZW5jYXJ0LWFwaS5jb20vbGljZW5zZS5waHA/b3JkZXJ"
 	
 		//strings from private rule capa_php_input
 		$inp1 = "php://input" wide ascii
@@ -1301,6 +1306,7 @@ rule webshell_php_func_in_get
 		$gfp9  = "?p4yl04d=UNION%20SELECT%20'<?%20system($_GET['command']);%20?>',2,3%20INTO%20OUTFILE%20'/var/www/w3bsh3ll.php"
 		$gfp10 = "[][}{;|]\\|\\\\[+=]\\|<?=>?"
 		$gfp11 = "(eval (getenv \"EPROLOG\")))"
+		$gfp12 = "ZmlsZV9nZXRfY29udGVudHMoJ2h0dHA6Ly9saWNlbnNlLm9wZW5jYXJ0LWFwaS5jb20vbGljZW5zZS5waHA/b3JkZXJ"
 	
 	condition:
 		filesize < 500KB and not ( 
@@ -1396,6 +1402,8 @@ rule webshell_asp_writer
         $jsp5 = "throws" fullword wide ascii
         $jsp6 = "getValue" fullword wide ascii
         $jsp7 = "getBytes" fullword wide ascii
+
+        $perl1 = "PerlScript" fullword
         
 	
 		//strings from private rule capa_asp_input
@@ -1432,6 +1440,7 @@ rule webshell_asp_writer
             ) 
         ) and not ( 
             (
+                any of ( $perl* ) or
                 $php1 at 0 or
                 $php2 at 0 
             ) or (
@@ -1528,6 +1537,8 @@ rule webshell_asp_obfuscated
         $jsp5 = "throws" fullword wide ascii
         $jsp6 = "getValue" fullword wide ascii
         $jsp7 = "getBytes" fullword wide ascii
+
+        $perl1 = "PerlScript" fullword
         
 	
 		//strings from private rule capa_asp_payload
@@ -1626,6 +1637,7 @@ rule webshell_asp_obfuscated
             ) 
         ) and not ( 
             (
+                any of ( $perl* ) or
                 $php1 at 0 or
                 $php2 at 0 
             ) or (
@@ -1766,6 +1778,8 @@ rule webshell_asp_generic_eval_on_input
         $jsp5 = "throws" fullword wide ascii
         $jsp6 = "getValue" fullword wide ascii
         $jsp7 = "getBytes" fullword wide ascii
+
+        $perl1 = "PerlScript" fullword
         
 	
 	condition:
@@ -1785,6 +1799,7 @@ rule webshell_asp_generic_eval_on_input
             ) 
         ) and not ( 
             (
+                any of ( $perl* ) or
                 $php1 at 0 or
                 $php2 at 0 
             ) or (
@@ -1874,6 +1889,8 @@ rule webshell_asp_nano
         $jsp5 = "throws" fullword wide ascii
         $jsp6 = "getValue" fullword wide ascii
         $jsp7 = "getBytes" fullword wide ascii
+
+        $perl1 = "PerlScript" fullword
         
 	
 		//strings from private rule capa_asp_payload
@@ -1929,6 +1946,7 @@ rule webshell_asp_nano
             ) 
         ) and not ( 
             (
+                any of ( $perl* ) or
                 $php1 at 0 or
                 $php2 at 0 
             ) or (
@@ -2018,6 +2036,8 @@ rule webshell_asp_encoded
         $jsp5 = "throws" fullword wide ascii
         $jsp6 = "getValue" fullword wide ascii
         $jsp7 = "getBytes" fullword wide ascii
+
+        $perl1 = "PerlScript" fullword
         
 	
 	condition:
@@ -2037,6 +2057,7 @@ rule webshell_asp_encoded
             ) 
         ) and not ( 
             (
+                any of ( $perl* ) or
                 $php1 at 0 or
                 $php2 at 0 
             ) or (
@@ -2121,6 +2142,8 @@ rule webshell_asp_encoded_aspcoding
         $jsp5 = "throws" fullword wide ascii
         $jsp6 = "getValue" fullword wide ascii
         $jsp7 = "getBytes" fullword wide ascii
+
+        $perl1 = "PerlScript" fullword
         
 	
 	condition:
@@ -2140,6 +2163,7 @@ rule webshell_asp_encoded_aspcoding
             ) 
         ) and not ( 
             (
+                any of ( $perl* ) or
                 $php1 at 0 or
                 $php2 at 0 
             ) or (
@@ -2268,6 +2292,8 @@ rule webshell_asp_by_string
         $jsp5 = "throws" fullword wide ascii
         $jsp6 = "getValue" fullword wide ascii
         $jsp7 = "getBytes" fullword wide ascii
+
+        $perl1 = "PerlScript" fullword
         
 	
 	condition:
@@ -2287,6 +2313,7 @@ rule webshell_asp_by_string
             ) 
         ) and not ( 
             (
+                any of ( $perl* ) or
                 $php1 at 0 or
                 $php2 at 0 
             ) or (
@@ -2363,6 +2390,8 @@ rule webshell_asp_sniffer
         $jsp5 = "throws" fullword wide ascii
         $jsp6 = "getValue" fullword wide ascii
         $jsp7 = "getBytes" fullword wide ascii
+
+        $perl1 = "PerlScript" fullword
         
 	
 		//strings from private rule capa_asp_input
@@ -2399,6 +2428,7 @@ rule webshell_asp_sniffer
             ) 
         ) and not ( 
             (
+                any of ( $perl* ) or
                 $php1 at 0 or
                 $php2 at 0 
             ) or (
@@ -2488,6 +2518,8 @@ rule webshell_asp_generic_tiny
         $jsp5 = "throws" fullword wide ascii
         $jsp6 = "getValue" fullword wide ascii
         $jsp7 = "getBytes" fullword wide ascii
+
+        $perl1 = "PerlScript" fullword
         
 	
 		//strings from private rule capa_asp_input
@@ -2563,6 +2595,7 @@ rule webshell_asp_generic_tiny
             ) 
         ) and not ( 
             (
+                any of ( $perl* ) or
                 $php1 at 0 or
                 $php2 at 0 
             ) or (
@@ -2669,6 +2702,8 @@ rule webshell_asp_generic
 
         // "e"+"x"+"e"
         $asp_gen_obf1 = "\"+\"" wide ascii 
+
+        $fp1 = "DataBinder.Eval" 
 	
 		//strings from private rule capa_asp
 		$tagasp_short1 = /<%[^"]/ wide ascii
@@ -2721,6 +2756,8 @@ rule webshell_asp_generic
         $jsp5 = "throws" fullword wide ascii
         $jsp6 = "getValue" fullword wide ascii
         $jsp7 = "getBytes" fullword wide ascii
+
+        $perl1 = "PerlScript" fullword
         
 	
 		//strings from private rule capa_bin_files
@@ -2803,6 +2840,7 @@ rule webshell_asp_generic
             ) 
         ) and not ( 
             (
+                any of ( $perl* ) or
                 $php1 at 0 or
                 $php2 at 0 
             ) or (
@@ -2837,9 +2875,9 @@ rule webshell_asp_generic
         all of ( $asp_multi_payload_five* ) or
         all of ( $asp_multi_payload_six* ) 
 		)
-		and 
+		and not any of ( $fp* ) and 
 		( ( filesize < 25KB and 
-		( 1 of ( $asp_much_sus* ) or any of ( $asp_gen_sus* ) or 
+		( 1 of ( $asp_much_sus* ) or 1 of ( $asp_gen_sus* ) or 
 		( #asp_gen_obf1 > 2 ) ) ) or 
 		( filesize < 50KB and 
 		( 1 of ( $asp_much_sus* ) or 3 of ( $asp_gen_sus* ) or 
@@ -2931,6 +2969,8 @@ rule webshell_asp_generic_registry_reader
         $jsp5 = "throws" fullword wide ascii
         $jsp6 = "getValue" fullword wide ascii
         $jsp7 = "getBytes" fullword wide ascii
+
+        $perl1 = "PerlScript" fullword
         
 	
 		//strings from private rule capa_asp_input
@@ -2967,6 +3007,7 @@ rule webshell_asp_generic_registry_reader
             ) 
         ) and not ( 
             (
+                any of ( $perl* ) or
                 $php1 at 0 or
                 $php2 at 0 
             ) or (
@@ -3062,6 +3103,8 @@ rule webshell_aspx_regeorg_csharp
         $jsp5 = "throws" fullword wide ascii
         $jsp6 = "getValue" fullword wide ascii
         $jsp7 = "getBytes" fullword wide ascii
+
+        $perl1 = "PerlScript" fullword
         
 	
 	condition:
@@ -3081,6 +3124,7 @@ rule webshell_aspx_regeorg_csharp
             ) 
         ) and not ( 
             (
+                any of ( $perl* ) or
                 $php1 at 0 or
                 $php2 at 0 
             ) or (
@@ -3162,6 +3206,8 @@ rule webshell_csharp_generic
         $jsp5 = "throws" fullword wide ascii
         $jsp6 = "getValue" fullword wide ascii
         $jsp7 = "getBytes" fullword wide ascii
+
+        $perl1 = "PerlScript" fullword
         
 	
 	condition:
@@ -3181,6 +3227,7 @@ rule webshell_csharp_generic
             ) 
         ) and not ( 
             (
+                any of ( $perl* ) or
                 $php1 at 0 or
                 $php2 at 0 
             ) or (
@@ -3358,6 +3405,8 @@ rule webshell_asp_sql
         $jsp5 = "throws" fullword wide ascii
         $jsp6 = "getValue" fullword wide ascii
         $jsp7 = "getBytes" fullword wide ascii
+
+        $perl1 = "PerlScript" fullword
         
 	
 		//strings from private rule capa_asp_input
@@ -3394,6 +3443,7 @@ rule webshell_asp_sql
             ) 
         ) and not ( 
             (
+                any of ( $perl* ) or
                 $php1 at 0 or
                 $php2 at 0 
             ) or (
@@ -3497,6 +3547,8 @@ rule webshell_asp_scan_writable
         $jsp5 = "throws" fullword wide ascii
         $jsp6 = "getValue" fullword wide ascii
         $jsp7 = "getBytes" fullword wide ascii
+
+        $perl1 = "PerlScript" fullword
         
 	
 		//strings from private rule capa_asp_input
@@ -3533,6 +3585,7 @@ rule webshell_asp_scan_writable
             ) 
         ) and not ( 
             (
+                any of ( $perl* ) or
                 $php1 at 0 or
                 $php2 at 0 
             ) or (
@@ -4325,6 +4378,8 @@ rule webshell_generic_os_strings
         $jsp5 = "throws" fullword wide ascii
         $jsp6 = "getValue" fullword wide ascii
         $jsp7 = "getBytes" fullword wide ascii
+
+        $perl1 = "PerlScript" fullword
         
 	
 		//strings from private rule capa_php_old_safe
@@ -4383,6 +4438,7 @@ rule webshell_generic_os_strings
             ) 
         ) and not ( 
             (
+                any of ( $perl* ) or
                 $php1 at 0 or
                 $php2 at 0 
             ) or (
@@ -4539,6 +4595,8 @@ rule webshell_in_image
         $jsp5 = "throws" fullword wide ascii
         $jsp6 = "getValue" fullword wide ascii
         $jsp7 = "getBytes" fullword wide ascii
+
+        $perl1 = "PerlScript" fullword
         
 	
 		//strings from private rule capa_asp_payload
@@ -4617,6 +4675,7 @@ rule webshell_in_image
             ) 
         ) and not ( 
             (
+                any of ( $perl* ) or
                 $php1 at 0 or
                 $php2 at 0 
             ) or (
