@@ -28,18 +28,21 @@ rule HKTL_NET_NAME_Aggressor {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and all of them
 }
 
-rule HKTL_NET_NAME_pentestscripts {
+rule HKTL_NET_NAME_Aggressor {
     meta:
         description = "Detects .NET red/black-team tools via name"
-        reference = "https://github.com/c4bbage/pentestscripts"
+        reference = "https://github.com/k8gege/Aggressor"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "Arnim Rupp"
         date = "2021-01-22"
     strings:
-        $name = "pentestscripts" ascii wide
-        $compile = "AssemblyTitle" ascii wide
+        $s_name = "Aggressor" ascii wide
+        $s_compile = "AssemblyTitle" ascii wide
+
+        $fp1 = "DevExpress DXSpellChecker for WPF Main Demo" wide
     condition:
-        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and all of them
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and all of ($s*)
+        and not 1 of ($fp*)
 }
 
 rule HKTL_NET_NAME_WMIPersistence {
