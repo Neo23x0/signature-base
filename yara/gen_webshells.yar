@@ -850,7 +850,7 @@ rule webshell_php_dynamic
 		$dynamic6 = /\$[a-zA-Z0-9_]{1,10}\(@/ wide ascii
 	
 	condition:
-		filesize < 200 and ( 
+		filesize > 20 and filesize < 200 and ( 
 			any of ( $php_tag* ) 
 		)
 		and ( 
