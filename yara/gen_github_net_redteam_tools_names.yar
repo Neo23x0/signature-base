@@ -14,37 +14,6 @@ rule HKTL_NET_NAME_FakeFileMaker {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and all of them
 }
 
-rule HKTL_NET_NAME_Aggressor {
-    meta:
-        description = "Detects .NET red/black-team tools via name"
-        reference = "https://github.com/k8gege/Aggressor"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
-        author = "Arnim Rupp"
-        date = "2021-01-22"
-    strings:
-        $s_name = "Aggressor" ascii wide
-        $s_compile = "AssemblyTitle" ascii wide
-
-        $fp1 = "DevExpress DXSpellChecker for WPF Main Demo" wide
-    condition:
-        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and all of ($s*)
-        and not 1 of ($fp*)
-}
-
-rule HKTL_NET_NAME_pentestscripts {
-    meta:
-        description = "Detects .NET red/black-team tools via name"
-        reference = "https://github.com/c4bbage/pentestscripts"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
-        author = "Arnim Rupp"
-        date = "2021-01-22"
-    strings:
-        $name = "pentestscripts" ascii wide
-        $compile = "AssemblyTitle" ascii wide
-    condition:
-        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and all of them
-}
-
 rule HKTL_NET_NAME_WMIPersistence {
     meta:
         description = "Detects .NET red/black-team tools via name"
@@ -288,20 +257,6 @@ rule HKTL_NET_NAME_SharpCat {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and all of them
 }
 
-rule HKTL_NET_NAME_aspnetcore_bypassing_authentication {
-    meta:
-        description = "Detects .NET red/black-team tools via name"
-        reference = "https://github.com/jackowild/aspnetcore-bypassing-authentication"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
-        author = "Arnim Rupp"
-        date = "2021-01-22"
-    strings:
-        $name = "aspnetcore-bypassing-authentication" ascii wide
-        $compile = "AssemblyTitle" ascii wide
-    condition:
-        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and all of them
-}
-
 rule HKTL_NET_NAME_K8tools {
     meta:
         description = "Detects .NET red/black-team tools via name"
@@ -372,20 +327,6 @@ rule HKTL_NET_NAME_trevorc2 {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and all of them
 }
 
-rule HKTL_NET_NAME_petaqc2 {
-    meta:
-        description = "Detects .NET red/black-team tools via name"
-        reference = "https://github.com/fozavci/petaqc2"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
-        author = "Arnim Rupp"
-        date = "2021-01-22"
-    strings:
-        $name = "petaqc2" ascii wide
-        $compile = "AssemblyTitle" ascii wide
-    condition:
-        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and all of them
-}
-
 rule HKTL_NET_NAME_NativePayload_DNS2 {
     meta:
         description = "Detects .NET red/black-team tools via name"
@@ -395,20 +336,6 @@ rule HKTL_NET_NAME_NativePayload_DNS2 {
         date = "2021-01-22"
     strings:
         $name = "NativePayload_DNS2" ascii wide
-        $compile = "AssemblyTitle" ascii wide
-    condition:
-        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and all of them
-}
-
-rule HKTL_NET_NAME_cve_2017_7269_tool {
-    meta:
-        description = "Detects .NET red/black-team tools via name"
-        reference = "https://github.com/zcgonvh/cve-2017-7269-tool"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
-        author = "Arnim Rupp"
-        date = "2021-01-22"
-    strings:
-        $name = "cve-2017-7269-tool" ascii wide
         $compile = "AssemblyTitle" ascii wide
     condition:
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and all of them
@@ -745,20 +672,6 @@ rule HKTL_NET_NAME_RemoteProcessInjection {
         date = "2021-01-22"
     strings:
         $name = "RemoteProcessInjection" ascii wide
-        $compile = "AssemblyTitle" ascii wide
-    condition:
-        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and all of them
-}
-
-rule HKTL_NET_NAME_njRAT_0_7d_Stub_CSharp {
-    meta:
-        description = "Detects .NET red/black-team tools via name"
-        reference = "https://github.com/NYAN-x-CAT/njRAT-0.7d-Stub-CSharp"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
-        author = "Arnim Rupp"
-        date = "2021-01-22"
-    strings:
-        $name = "njRAT-0.7d-Stub-CSharp" ascii wide
         $compile = "AssemblyTitle" ascii wide
     condition:
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and all of them
