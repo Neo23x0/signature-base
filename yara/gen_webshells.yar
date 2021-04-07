@@ -100,6 +100,7 @@ rule webshell_php_generic_tiny
 		$gfp_tiny6 = "assert(FALSE);"
 		$gfp_tiny7 = "assert('array_key_exists("
 		$gfp_tiny8 = "echo shell_exec($aspellcommand . ' 2>&1');"
+		$gfp_tiny9 = "throw new Exception('Could not find authentication source with id ' . $sourceId);"
 	
 		//strings from private rule capa_php_old_safe
 		$php_short = "<?" wide ascii
@@ -202,6 +203,7 @@ rule webshell_php_generic_callback_tiny
 		$gfp_tiny6 = "assert(FALSE);"
 		$gfp_tiny7 = "assert('array_key_exists("
 		$gfp_tiny8 = "echo shell_exec($aspellcommand . ' 2>&1');"
+		$gfp_tiny9 = "throw new Exception('Could not find authentication source with id ' . $sourceId);"
 	
 		//strings from private rule capa_php_input
 		$inp1 = "php://input" wide ascii
@@ -363,6 +365,8 @@ rule webshell_php_base64_encoded_payloads
 
         // false positives
         $fp1 = { D0 CF 11 E0 A1 B1 1A E1 }
+        // api.telegram
+        $fp2 = "YXBpLnRlbGVncmFtLm9" 
 
 	
 		//strings from private rule capa_php_old_safe
@@ -723,6 +727,9 @@ rule webshell_php_gzinflated
 		$payload6 = "eval(\"?>\".gzdecode(base64_decode(" wide ascii
 		$payload7 = "eval(base64_decode(" wide ascii
 		$payload8 = "eval(pack(" wide ascii
+
+        // api.telegram
+        $fp1 = "YXBpLnRlbGVncmFtLm9" 
 	
 		//strings from private rule php_false_positive
 		// try to use only strings which would be flagged by themselves as suspicous by other rules, e.g. eval 
@@ -743,7 +750,7 @@ rule webshell_php_gzinflated
 		filesize < 700KB and not ( 
 			any of ( $gfp* ) 
 		)
-		and $php and 1 of ( $payload* )
+		and $php and 1 of ( $payload* ) and not any of ( $fp* )
 }
 
 rule webshell_php_obfuscated_2
@@ -1325,8 +1332,8 @@ rule webshell_asp_writer
         $sus1 = "password" fullword wide ascii
         $sus2 = "pwd" fullword wide ascii
         $sus3 = "<asp:TextBox" fullword nocase wide ascii
-        $sus4 = "upload" wide ascii
-        $sus5 = "Upload" wide ascii
+        //$sus4 = "upload" wide ascii
+        //$sus5 = "Upload" wide ascii
         $sus6 = "gif89" wide ascii
         $sus7 = "\"&\"" wide ascii
         $sus8 = "authkey" fullword wide ascii
@@ -1335,6 +1342,8 @@ rule webshell_asp_writer
         $sus11= "cmd.asp" fullword wide ascii
         $sus12= ".Write(Request." wide ascii
         $sus13= "<textarea " wide ascii
+        $sus14= "\"unsafe" fullword wide ascii
+        $sus15= "'unsafe" fullword wide ascii
 	
 		//strings from private rule capa_asp
 		$tagasp_short1 = /<%[^"]/ wide ascii
@@ -1375,9 +1384,19 @@ rule webshell_asp_writer
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
-        // avoid hitting legitimate php
+        // avoid hitting php
         $php1 = "<?php"
         $php2 = "<?="
+
+        // avoid hitting jsp
+        $jsp1 = "=\"java." wide ascii
+        $jsp2 = "=\"javax." wide ascii
+        $jsp3 = "java.lang." wide ascii
+        $jsp4 = "public" fullword wide ascii
+        $jsp5 = "throws" fullword wide ascii
+        $jsp6 = "getValue" fullword wide ascii
+        $jsp7 = "getBytes" fullword wide ascii
+        
 	
 		//strings from private rule capa_asp_input
         // Request.BinaryRead
@@ -1412,8 +1431,12 @@ rule webshell_asp_writer
                 )
             ) 
         ) and not ( 
-            $php1 at 0 or
-            $php2 at 0 
+            (
+                $php1 at 0 or
+                $php2 at 0 
+            ) or (
+                ( #jsp1 + #jsp2 + #jsp3 ) > 0 and ( #jsp4 + #jsp5 + #jsp6 + #jsp7 ) > 0
+                )
         ) 
 		)
 		and ( 
@@ -1446,7 +1469,14 @@ rule webshell_asp_obfuscated
 		hash = "a6ab3695e46cd65610edb3c7780495d03a72c43d"
 
 	strings:
-
+        $asp_obf1 = "/*-/*-*/" wide ascii
+        $asp_obf2 = "u\"+\"n\"+\"s" wide ascii
+        $asp_obf3 = "\"e\"+\"v" wide ascii
+        $asp_obf4 = "a\"+\"l\"" wide ascii
+        $asp_obf5 = "\"+\"(\"+\"" wide ascii
+        $asp_obf6 = "q\"+\"u\"" wide ascii
+        $asp_obf7 = "\"u\"+\"e" wide ascii
+	
 		//strings from private rule capa_asp
 		$tagasp_short1 = /<%[^"]/ wide ascii
         // also looking for %> to reduce fp (yeah, short atom but seldom since special chars)
@@ -1486,9 +1516,55 @@ rule webshell_asp_obfuscated
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
-        // avoid hitting legitimate php
+        // avoid hitting php
         $php1 = "<?php"
         $php2 = "<?="
+
+        // avoid hitting jsp
+        $jsp1 = "=\"java." wide ascii
+        $jsp2 = "=\"javax." wide ascii
+        $jsp3 = "java.lang." wide ascii
+        $jsp4 = "public" fullword wide ascii
+        $jsp5 = "throws" fullword wide ascii
+        $jsp6 = "getValue" fullword wide ascii
+        $jsp7 = "getBytes" fullword wide ascii
+        
+	
+		//strings from private rule capa_asp_payload
+		$asp_payload0  = "eval_r" fullword nocase wide ascii
+		$asp_payload1  = /\beval\s/ nocase wide ascii
+		$asp_payload2  = /\beval\(/ nocase wide ascii
+		$asp_payload3  = /\beval\"\"/ nocase wide ascii
+        // var Fla = {'E':eval};  Fla.E(code)
+		$asp_payload4  = /:\s{0,10}eval\b/ nocase wide ascii
+		$asp_payload8  = /\bexecute\s?\(/ nocase wide ascii
+		$asp_payload9  = /\bexecute\s[\w"]/ nocase wide ascii
+		$asp_payload11 = "WSCRIPT.SHELL" fullword nocase wide ascii
+		$asp_payload13 = "ExecuteGlobal" fullword nocase wide ascii
+		$asp_payload14 = "ExecuteStatement" fullword nocase wide ascii
+		$asp_payload15 = "ExecuteStatement" fullword nocase wide ascii
+		$asp_multi_payload_one1 = "CreateObject" nocase fullword wide ascii
+		$asp_multi_payload_one2 = "addcode" fullword wide ascii
+		$asp_multi_payload_one3 = /\.run\b/ wide ascii
+		$asp_multi_payload_two1 = "CreateInstanceFromVirtualPath" fullword wide ascii
+		$asp_multi_payload_two2 = "ProcessRequest" fullword wide ascii
+		$asp_multi_payload_two3 = "BuildManager" fullword wide ascii
+		$asp_multi_payload_three1 = "System.Diagnostics" wide ascii
+		$asp_multi_payload_three2 = "Process" fullword wide ascii
+		$asp_multi_payload_three3 = ".Start" wide ascii
+		// this is about "MSXML2.DOMDocument" but since that's easily obfuscated, lets not search for it
+		$asp_multi_payload_four1 = "CreateObject" fullword nocase wide ascii
+		$asp_multi_payload_four2 = "TransformNode" fullword nocase wide ascii
+		$asp_multi_payload_four3 = "loadxml" fullword nocase wide ascii
+
+        // execute cmd.exe /c with arguments using ProcessStartInfo
+		$asp_multi_payload_five1 = "ProcessStartInfo" fullword nocase wide ascii
+		$asp_multi_payload_five2 = ".Start" nocase wide ascii
+		$asp_multi_payload_five3 = ".Filename" nocase wide ascii
+		$asp_multi_payload_five4 = ".Arguments" nocase wide ascii
+
+		$asp_multi_payload_six1 = "Scripting.FileSystemObject" fullword nocase wide ascii
+		$asp_multi_payload_six2 = ".CreateTextFile" nocase wide ascii
 	
 		//strings from private rule capa_asp_obfuscation_multi
         // many Chr or few and a loop????
@@ -1530,40 +1606,6 @@ rule webshell_asp_obfuscated
         $m_fp1 = "Author: Andre Teixeira - andret@microsoft.com" /* FPs with 0227f4c366c07c45628b02bae6b4ad01 */
 
 	
-		//strings from private rule capa_asp_payload
-		$asp_payload0  = "eval_r" fullword nocase wide ascii
-		$asp_payload1  = /\beval\s/ nocase wide ascii
-		$asp_payload2  = /\beval\(/ nocase wide ascii
-		$asp_payload3  = /\beval\"\"/ nocase wide ascii
-        // var Fla = {'E':eval};  Fla.E(code)
-		$asp_payload4  = /:\s{0,10}eval\b/ nocase wide ascii
-		$asp_payload8  = /\bexecute\s?\(/ nocase wide ascii
-		$asp_payload9  = /\bexecute\s[\w"]/ nocase wide ascii
-		$asp_payload11 = "WSCRIPT.SHELL" fullword nocase wide ascii
-		$asp_payload12 = "Scripting.FileSystemObject" fullword nocase wide ascii
-		$asp_payload13 = "ExecuteGlobal" fullword nocase wide ascii
-		$asp_payload14 = "ExecuteStatement" fullword nocase wide ascii
-		$asp_payload15 = "ExecuteStatement" fullword nocase wide ascii
-		$asp_multi_payload_one1 = "CreateObject" nocase fullword wide ascii
-		$asp_multi_payload_one2 = "addcode" fullword wide ascii
-		$asp_multi_payload_one3 = /\.run\b/ wide ascii
-		$asp_multi_payload_two1 = "CreateInstanceFromVirtualPath" fullword wide ascii
-		$asp_multi_payload_two2 = "ProcessRequest" fullword wide ascii
-		$asp_multi_payload_two3 = "BuildManager" fullword wide ascii
-		$asp_multi_payload_three1 = "System.Diagnostics" wide ascii
-		$asp_multi_payload_three2 = "Process" fullword wide ascii
-		$asp_multi_payload_three3 = ".Start" wide ascii
-		// this is about "MSXML2.DOMDocument" but since that's easily obfuscated, lets not search for it
-		$asp_multi_payload_four1 = "CreateObject" fullword nocase wide ascii
-		$asp_multi_payload_four2 = "TransformNode" fullword nocase wide ascii
-		$asp_multi_payload_four3 = "loadxml" fullword nocase wide ascii
-
-        // execute cmd.exe /c with arguments using ProcessStartInfo
-		$asp_multi_payload_five1 = "ProcessStartInfo" fullword nocase wide ascii
-		$asp_multi_payload_five2 = ".Start" nocase wide ascii
-		$asp_multi_payload_five3 = ".Filename" nocase wide ascii
-		$asp_multi_payload_five4 = ".Arguments" nocase wide ascii
-	
 		//strings from private rule capa_asp_obfuscation_obviously
 		$oo1 = /\w\"&\"\w/ wide ascii
 	
@@ -1583,12 +1625,26 @@ rule webshell_asp_obfuscated
                 )
             ) 
         ) and not ( 
-            $php1 at 0 or
-            $php2 at 0 
+            (
+                $php1 at 0 or
+                $php2 at 0 
+            ) or (
+                ( #jsp1 + #jsp2 + #jsp3 ) > 0 and ( #jsp4 + #jsp5 + #jsp6 + #jsp7 ) > 0
+                )
         ) 
 		)
 		and 
-		( ( ( 
+		( ( 
+			any of ( $asp_payload* ) or
+        all of ( $asp_multi_payload_one* ) or
+        all of ( $asp_multi_payload_two* ) or
+        all of ( $asp_multi_payload_three* ) or
+        all of ( $asp_multi_payload_four* ) or
+        all of ( $asp_multi_payload_five* ) or
+        all of ( $asp_multi_payload_six* ) 
+		)
+		and 
+		( ( 
         (
             filesize < 100KB and 
             not any of ( $m_fp* ) and
@@ -1620,15 +1676,7 @@ rule webshell_asp_obfuscated
             ) 
         )  
 		)
-		and ( 
-			any of ( $asp_payload* ) or
-        all of ( $asp_multi_payload_one* ) or
-        all of ( $asp_multi_payload_two* ) or
-        all of ( $asp_multi_payload_three* ) or
-        all of ( $asp_multi_payload_four* ) or
-        all of ( $asp_multi_payload_five* ) 
-		)
-		) or ( 
+		or any of ( $asp_obf* ) ) or ( 
         (
             filesize < 100KB and 
             (
@@ -1706,12 +1754,22 @@ rule webshell_asp_generic_eval_on_input
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
-        // avoid hitting legitimate php
+        // avoid hitting php
         $php1 = "<?php"
         $php2 = "<?="
+
+        // avoid hitting jsp
+        $jsp1 = "=\"java." wide ascii
+        $jsp2 = "=\"javax." wide ascii
+        $jsp3 = "java.lang." wide ascii
+        $jsp4 = "public" fullword wide ascii
+        $jsp5 = "throws" fullword wide ascii
+        $jsp6 = "getValue" fullword wide ascii
+        $jsp7 = "getBytes" fullword wide ascii
+        
 	
 	condition:
-		( filesize < 100KB and ( 
+		( filesize < 1100KB and ( 
         (
             any of ( $tagasp_long* ) or
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
@@ -1726,8 +1784,12 @@ rule webshell_asp_generic_eval_on_input
                 )
             ) 
         ) and not ( 
-            $php1 at 0 or
-            $php2 at 0 
+            (
+                $php1 at 0 or
+                $php2 at 0 
+            ) or (
+                ( #jsp1 + #jsp2 + #jsp3 ) > 0 and ( #jsp4 + #jsp5 + #jsp6 + #jsp7 ) > 0
+                )
         ) 
 		)
 		and any of ( $payload_and_input* ) ) or 
@@ -1800,9 +1862,19 @@ rule webshell_asp_nano
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
-        // avoid hitting legitimate php
+        // avoid hitting php
         $php1 = "<?php"
         $php2 = "<?="
+
+        // avoid hitting jsp
+        $jsp1 = "=\"java." wide ascii
+        $jsp2 = "=\"javax." wide ascii
+        $jsp3 = "java.lang." wide ascii
+        $jsp4 = "public" fullword wide ascii
+        $jsp5 = "throws" fullword wide ascii
+        $jsp6 = "getValue" fullword wide ascii
+        $jsp7 = "getBytes" fullword wide ascii
+        
 	
 		//strings from private rule capa_asp_payload
 		$asp_payload0  = "eval_r" fullword nocase wide ascii
@@ -1814,7 +1886,6 @@ rule webshell_asp_nano
 		$asp_payload8  = /\bexecute\s?\(/ nocase wide ascii
 		$asp_payload9  = /\bexecute\s[\w"]/ nocase wide ascii
 		$asp_payload11 = "WSCRIPT.SHELL" fullword nocase wide ascii
-		$asp_payload12 = "Scripting.FileSystemObject" fullword nocase wide ascii
 		$asp_payload13 = "ExecuteGlobal" fullword nocase wide ascii
 		$asp_payload14 = "ExecuteStatement" fullword nocase wide ascii
 		$asp_payload15 = "ExecuteStatement" fullword nocase wide ascii
@@ -1837,6 +1908,9 @@ rule webshell_asp_nano
 		$asp_multi_payload_five2 = ".Start" nocase wide ascii
 		$asp_multi_payload_five3 = ".Filename" nocase wide ascii
 		$asp_multi_payload_five4 = ".Arguments" nocase wide ascii
+
+		$asp_multi_payload_six1 = "Scripting.FileSystemObject" fullword nocase wide ascii
+		$asp_multi_payload_six2 = ".CreateTextFile" nocase wide ascii
 	
 	condition:
 		( 
@@ -1854,8 +1928,12 @@ rule webshell_asp_nano
                 )
             ) 
         ) and not ( 
-            $php1 at 0 or
-            $php2 at 0 
+            (
+                $php1 at 0 or
+                $php2 at 0 
+            ) or (
+                ( #jsp1 + #jsp2 + #jsp3 ) > 0 and ( #jsp4 + #jsp5 + #jsp6 + #jsp7 ) > 0
+                )
         ) 
 		)
 		and ( 
@@ -1864,7 +1942,8 @@ rule webshell_asp_nano
         all of ( $asp_multi_payload_two* ) or
         all of ( $asp_multi_payload_three* ) or
         all of ( $asp_multi_payload_four* ) or
-        all of ( $asp_multi_payload_five* ) 
+        all of ( $asp_multi_payload_five* ) or
+        all of ( $asp_multi_payload_six* ) 
 		)
 		and not any of ( $fp* ) and 
 		( filesize < 200 or 
@@ -1927,9 +2006,19 @@ rule webshell_asp_encoded
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
-        // avoid hitting legitimate php
+        // avoid hitting php
         $php1 = "<?php"
         $php2 = "<?="
+
+        // avoid hitting jsp
+        $jsp1 = "=\"java." wide ascii
+        $jsp2 = "=\"javax." wide ascii
+        $jsp3 = "java.lang." wide ascii
+        $jsp4 = "public" fullword wide ascii
+        $jsp5 = "throws" fullword wide ascii
+        $jsp6 = "getValue" fullword wide ascii
+        $jsp7 = "getBytes" fullword wide ascii
+        
 	
 	condition:
 		filesize < 500KB and ( 
@@ -1947,8 +2036,12 @@ rule webshell_asp_encoded
                 )
             ) 
         ) and not ( 
-            $php1 at 0 or
-            $php2 at 0 
+            (
+                $php1 at 0 or
+                $php2 at 0 
+            ) or (
+                ( #jsp1 + #jsp2 + #jsp3 ) > 0 and ( #jsp4 + #jsp5 + #jsp6 + #jsp7 ) > 0
+                )
         ) 
 		)
 		and any of ( $encoded* ) and any of ( $data* ) and 
@@ -2016,9 +2109,19 @@ rule webshell_asp_encoded_aspcoding
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
-        // avoid hitting legitimate php
+        // avoid hitting php
         $php1 = "<?php"
         $php2 = "<?="
+
+        // avoid hitting jsp
+        $jsp1 = "=\"java." wide ascii
+        $jsp2 = "=\"javax." wide ascii
+        $jsp3 = "java.lang." wide ascii
+        $jsp4 = "public" fullword wide ascii
+        $jsp5 = "throws" fullword wide ascii
+        $jsp6 = "getValue" fullword wide ascii
+        $jsp7 = "getBytes" fullword wide ascii
+        
 	
 	condition:
 		filesize < 500KB and ( 
@@ -2036,8 +2139,12 @@ rule webshell_asp_encoded_aspcoding
                 )
             ) 
         ) and not ( 
-            $php1 at 0 or
-            $php2 at 0 
+            (
+                $php1 at 0 or
+                $php2 at 0 
+            ) or (
+                ( #jsp1 + #jsp2 + #jsp3 ) > 0 and ( #jsp4 + #jsp5 + #jsp6 + #jsp7 ) > 0
+                )
         ) 
 		)
 		and all of ( $encoded* ) and any of ( $data* )
@@ -2107,6 +2214,7 @@ rule webshell_asp_by_string
 		$asp_string44 = "if (request.getHeader(headerNameKey).toString().trim().equals(headerValueKey.trim()))" wide ascii
 		$asp_string45 = "Response.Write(Server.HtmlEncode(ExcutemeuCmd(txtArg.Text)));" wide ascii
 		$asp_string46 = "\"c\" + \"m\" + \"d\"" wide ascii
+		$asp_string47 = "\".\"+\"e\"+\"x\"+\"e\"" wide ascii
 
 	
 		//strings from private rule capa_asp
@@ -2148,9 +2256,19 @@ rule webshell_asp_by_string
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
-        // avoid hitting legitimate php
+        // avoid hitting php
         $php1 = "<?php"
         $php2 = "<?="
+
+        // avoid hitting jsp
+        $jsp1 = "=\"java." wide ascii
+        $jsp2 = "=\"javax." wide ascii
+        $jsp3 = "java.lang." wide ascii
+        $jsp4 = "public" fullword wide ascii
+        $jsp5 = "throws" fullword wide ascii
+        $jsp6 = "getValue" fullword wide ascii
+        $jsp7 = "getBytes" fullword wide ascii
+        
 	
 	condition:
 		filesize < 200KB and ( 
@@ -2168,8 +2286,12 @@ rule webshell_asp_by_string
                 )
             ) 
         ) and not ( 
-            $php1 at 0 or
-            $php2 at 0 
+            (
+                $php1 at 0 or
+                $php2 at 0 
+            ) or (
+                ( #jsp1 + #jsp2 + #jsp3 ) > 0 and ( #jsp4 + #jsp5 + #jsp6 + #jsp7 ) > 0
+                )
         ) 
 		)
 		and any of ( $asp_string* )
@@ -2229,9 +2351,19 @@ rule webshell_asp_sniffer
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
-        // avoid hitting legitimate php
+        // avoid hitting php
         $php1 = "<?php"
         $php2 = "<?="
+
+        // avoid hitting jsp
+        $jsp1 = "=\"java." wide ascii
+        $jsp2 = "=\"javax." wide ascii
+        $jsp3 = "java.lang." wide ascii
+        $jsp4 = "public" fullword wide ascii
+        $jsp5 = "throws" fullword wide ascii
+        $jsp6 = "getValue" fullword wide ascii
+        $jsp7 = "getBytes" fullword wide ascii
+        
 	
 		//strings from private rule capa_asp_input
         // Request.BinaryRead
@@ -2266,8 +2398,12 @@ rule webshell_asp_sniffer
                 )
             ) 
         ) and not ( 
-            $php1 at 0 or
-            $php2 at 0 
+            (
+                $php1 at 0 or
+                $php2 at 0 
+            ) or (
+                ( #jsp1 + #jsp2 + #jsp3 ) > 0 and ( #jsp4 + #jsp5 + #jsp6 + #jsp7 ) > 0
+                )
         ) 
 		)
 		and ( 
@@ -2297,7 +2433,7 @@ rule webshell_asp_generic_tiny
 
 	strings:
 		$write1 = "Scripting.FileSystemObject" fullword nocase wide ascii
-		$write2 = ".Create" nocase wide ascii
+		$write2 = ".CreateTextFile" nocase wide ascii
 
         $fp1 = "net.rim.application.ipproxyservice.AdminCommand.execute"
 	
@@ -2340,9 +2476,19 @@ rule webshell_asp_generic_tiny
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
-        // avoid hitting legitimate php
+        // avoid hitting php
         $php1 = "<?php"
         $php2 = "<?="
+
+        // avoid hitting jsp
+        $jsp1 = "=\"java." wide ascii
+        $jsp2 = "=\"javax." wide ascii
+        $jsp3 = "java.lang." wide ascii
+        $jsp4 = "public" fullword wide ascii
+        $jsp5 = "throws" fullword wide ascii
+        $jsp6 = "getValue" fullword wide ascii
+        $jsp7 = "getBytes" fullword wide ascii
+        
 	
 		//strings from private rule capa_asp_input
         // Request.BinaryRead
@@ -2374,7 +2520,6 @@ rule webshell_asp_generic_tiny
 		$asp_payload8  = /\bexecute\s?\(/ nocase wide ascii
 		$asp_payload9  = /\bexecute\s[\w"]/ nocase wide ascii
 		$asp_payload11 = "WSCRIPT.SHELL" fullword nocase wide ascii
-		$asp_payload12 = "Scripting.FileSystemObject" fullword nocase wide ascii
 		$asp_payload13 = "ExecuteGlobal" fullword nocase wide ascii
 		$asp_payload14 = "ExecuteStatement" fullword nocase wide ascii
 		$asp_payload15 = "ExecuteStatement" fullword nocase wide ascii
@@ -2397,6 +2542,9 @@ rule webshell_asp_generic_tiny
 		$asp_multi_payload_five2 = ".Start" nocase wide ascii
 		$asp_multi_payload_five3 = ".Filename" nocase wide ascii
 		$asp_multi_payload_five4 = ".Arguments" nocase wide ascii
+
+		$asp_multi_payload_six1 = "Scripting.FileSystemObject" fullword nocase wide ascii
+		$asp_multi_payload_six2 = ".CreateTextFile" nocase wide ascii
 	
 	condition:
 		( 
@@ -2414,8 +2562,12 @@ rule webshell_asp_generic_tiny
                 )
             ) 
         ) and not ( 
-            $php1 at 0 or
-            $php2 at 0 
+            (
+                $php1 at 0 or
+                $php2 at 0 
+            ) or (
+                ( #jsp1 + #jsp2 + #jsp3 ) > 0 and ( #jsp4 + #jsp5 + #jsp6 + #jsp7 ) > 0
+                )
         ) 
 		)
 		and ( 
@@ -2443,7 +2595,8 @@ rule webshell_asp_generic_tiny
         all of ( $asp_multi_payload_two* ) or
         all of ( $asp_multi_payload_three* ) or
         all of ( $asp_multi_payload_four* ) or
-        all of ( $asp_multi_payload_five* ) 
+        all of ( $asp_multi_payload_five* ) or
+        all of ( $asp_multi_payload_six* ) 
 		)
 		) or 
 		( filesize < 300 and all of ( $write* ) ) )
@@ -2460,29 +2613,62 @@ rule webshell_asp_generic
 		hash = "a8c63c418609c1c291b3e731ca85ded4b3e0fba83f3489c21a3199173b176a75"
 
 	strings:
+        $asp_much_sus7  = "Web Shell" nocase
+        $asp_much_sus8  = "WebShell" nocase
+        $asp_much_sus3  = "hidded shell" 
+        $asp_much_sus4  = "WScript.Shell.1" nocase
+        $asp_much_sus5  = "AspExec" 
+        $asp_much_sus14 = "\\pcAnywhere\\" nocase
+        $asp_much_sus15 = "antivirus" nocase
+        $asp_much_sus16 = "McAfee" nocase
+        $asp_much_sus17 = "nishang" 
+        $asp_much_sus18 = "\"unsafe" fullword wide ascii
+        $asp_much_sus19 = "'unsafe" fullword wide ascii
+        $asp_much_sus28 = "exploit" fullword wide ascii
+        $asp_much_sus30 = "TVqQAAMAAA" wide ascii
+        $asp_much_sus31 = "HACKED" fullword wide ascii
+        $asp_much_sus32 = "hacked" fullword wide ascii
+        $asp_much_sus33 = "hacker" wide ascii
+        $asp_much_sus34 = "grayhat" nocase wide ascii
+        $asp_much_sus35 = "Microsoft FrontPage" wide ascii
+        $asp_much_sus36 = "Rootkit" wide ascii
+        $asp_much_sus37 = "rootkit" wide ascii
+        $asp_much_sus38 = "/*-/*-*/" wide ascii
+        $asp_much_sus39 = "u\"+\"n\"+\"s" wide ascii
+        $asp_much_sus40 = "\"e\"+\"v" wide ascii
+        $asp_much_sus41 = "a\"+\"l\"" wide ascii
+        $asp_much_sus42 = "\"+\"(\"+\"" wide ascii
+        $asp_much_sus43 = "q\"+\"u\"" wide ascii
+        $asp_much_sus44 = "\"u\"+\"e" wide ascii
+
         $asp_gen_sus1  = /:\s{0,20}eval}/ nocase wide ascii
         $asp_gen_sus2  = /\.replace\(\/\w\/g/ nocase wide ascii
-        $asp_gen_sus3  = "hidded shell" 
-        $asp_gen_sus4  = "WScript.Shell.1" nocase
-        $asp_gen_sus5  = "AspExec" 
         $asp_gen_sus6  = "self.delete"
-        $asp_gen_sus7  = "Web Shell" nocase
-        $asp_gen_sus8  = "WebShell" nocase
         $asp_gen_sus9  = "\"cmd /c" nocase
         $asp_gen_sus10 = "\"cmd\"" nocase
         $asp_gen_sus11 = "\"cmd.exe" nocase
+        $asp_gen_sus12 = "%comspec%" wide ascii
+        $asp_gen_sus13 = "%COMSPEC%" wide ascii
         //TODO:$asp_gen_sus12 = ".UserName" nocase
-        $asp_gen_sus13 = "Hklm.GetValueNames();" nocase
-        $asp_gen_sus14 = "\\pcAnywhere\\" nocase
-        $asp_gen_sus15 = "antivirus" nocase
-        $asp_gen_sus16 = "McAfee" nocase
-        $asp_gen_sus17 = "nishang" 
-        $asp_gen_sus18 = "unsafe" fullword wide ascii
+        $asp_gen_sus18 = "Hklm.GetValueNames();" nocase
         // bonus string for proxylogon exploiting webshells
         $asp_gen_sus19 = "http://schemas.microsoft.com/exchange/" wide ascii
         $asp_gen_sus20 = "\"</pre>\"" wide ascii
         $asp_gen_sus21 = "\"upload\"" wide ascii
         $asp_gen_sus22 = "\"Upload\"" wide ascii
+        $asp_gen_sus23 = "<pre>" wide ascii
+        $asp_gen_sus24 = "<PRE>" wide ascii
+        $asp_gen_sus25 = "shell_" wide ascii
+        //$asp_gen_sus26 = "password" fullword wide ascii
+        //$asp_gen_sus27 = "passw" fullword wide ascii
+        // own base64 func
+        $asp_gen_sus29 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789" fullword wide ascii
+        $asp_gen_sus30 = "serv-u" wide ascii
+        $asp_gen_sus31 = "Serv-u" wide ascii
+        $asp_gen_sus32 = "Army" fullword wide ascii
+
+        // "e"+"x"+"e"
+        $asp_gen_obf1 = "\"+\"" wide ascii 
 	
 		//strings from private rule capa_asp
 		$tagasp_short1 = /<%[^"]/ wide ascii
@@ -2523,9 +2709,19 @@ rule webshell_asp_generic
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
-        // avoid hitting legitimate php
+        // avoid hitting php
         $php1 = "<?php"
         $php2 = "<?="
+
+        // avoid hitting jsp
+        $jsp1 = "=\"java." wide ascii
+        $jsp2 = "=\"javax." wide ascii
+        $jsp3 = "java.lang." wide ascii
+        $jsp4 = "public" fullword wide ascii
+        $jsp5 = "throws" fullword wide ascii
+        $jsp6 = "getValue" fullword wide ascii
+        $jsp7 = "getBytes" fullword wide ascii
+        
 	
 		//strings from private rule capa_bin_files
         $dex   = { 64 65 ( 78 | 79 ) 0a 30 }
@@ -2557,7 +2753,6 @@ rule webshell_asp_generic
 		$asp_payload8  = /\bexecute\s?\(/ nocase wide ascii
 		$asp_payload9  = /\bexecute\s[\w"]/ nocase wide ascii
 		$asp_payload11 = "WSCRIPT.SHELL" fullword nocase wide ascii
-		$asp_payload12 = "Scripting.FileSystemObject" fullword nocase wide ascii
 		$asp_payload13 = "ExecuteGlobal" fullword nocase wide ascii
 		$asp_payload14 = "ExecuteStatement" fullword nocase wide ascii
 		$asp_payload15 = "ExecuteStatement" fullword nocase wide ascii
@@ -2580,6 +2775,9 @@ rule webshell_asp_generic
 		$asp_multi_payload_five2 = ".Start" nocase wide ascii
 		$asp_multi_payload_five3 = ".Filename" nocase wide ascii
 		$asp_multi_payload_five4 = ".Arguments" nocase wide ascii
+
+		$asp_multi_payload_six1 = "Scripting.FileSystemObject" fullword nocase wide ascii
+		$asp_multi_payload_six2 = ".CreateTextFile" nocase wide ascii
 	
 		//strings from private rule capa_asp_classid
 		$tagasp_capa_classid1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" nocase wide ascii
@@ -2589,7 +2787,7 @@ rule webshell_asp_generic
 		$tagasp_capa_classid5 = "0D43FE01-F093-11CF-8940-00A0C9054228" nocase wide ascii
 	
 	condition:
-		filesize < 25KB and ( 
+		( 
         (
             any of ( $tagasp_long* ) or
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
@@ -2604,8 +2802,12 @@ rule webshell_asp_generic
                 )
             ) 
         ) and not ( 
-            $php1 at 0 or
-            $php2 at 0 
+            (
+                $php1 at 0 or
+                $php2 at 0 
+            ) or (
+                ( #jsp1 + #jsp2 + #jsp3 ) > 0 and ( #jsp4 + #jsp5 + #jsp6 + #jsp7 ) > 0
+                )
         ) 
 		)
 		and not ( 
@@ -2632,13 +2834,23 @@ rule webshell_asp_generic
         all of ( $asp_multi_payload_two* ) or
         all of ( $asp_multi_payload_three* ) or
         all of ( $asp_multi_payload_four* ) or
-        all of ( $asp_multi_payload_five* ) 
+        all of ( $asp_multi_payload_five* ) or
+        all of ( $asp_multi_payload_six* ) 
 		)
 		and 
-		( any of ( $asp_gen_sus* ) or ( 
+		( ( filesize < 25KB and 
+		( 1 of ( $asp_much_sus* ) or any of ( $asp_gen_sus* ) or 
+		( #asp_gen_obf1 > 2 ) ) ) or 
+		( filesize < 50KB and 
+		( 1 of ( $asp_much_sus* ) or 3 of ( $asp_gen_sus* ) or 
+		( #asp_gen_obf1 > 6 ) ) ) or 
+		( filesize < 150KB and 
+		( 1 of ( $asp_much_sus* ) or 4 of ( $asp_gen_sus* ) or 
+		( #asp_gen_obf1 > 6 ) ) ) or 
+		( filesize < 100KB and ( 
         any of ( $tagasp_capa_classid* ) 
 		)
-		)
+		) )
 }
 
 rule webshell_asp_generic_registry_reader
@@ -2707,9 +2919,19 @@ rule webshell_asp_generic_registry_reader
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
-        // avoid hitting legitimate php
+        // avoid hitting php
         $php1 = "<?php"
         $php2 = "<?="
+
+        // avoid hitting jsp
+        $jsp1 = "=\"java." wide ascii
+        $jsp2 = "=\"javax." wide ascii
+        $jsp3 = "java.lang." wide ascii
+        $jsp4 = "public" fullword wide ascii
+        $jsp5 = "throws" fullword wide ascii
+        $jsp6 = "getValue" fullword wide ascii
+        $jsp7 = "getBytes" fullword wide ascii
+        
 	
 		//strings from private rule capa_asp_input
         // Request.BinaryRead
@@ -2744,8 +2966,12 @@ rule webshell_asp_generic_registry_reader
                 )
             ) 
         ) and not ( 
-            $php1 at 0 or
-            $php2 at 0 
+            (
+                $php1 at 0 or
+                $php2 at 0 
+            ) or (
+                ( #jsp1 + #jsp2 + #jsp3 ) > 0 and ( #jsp4 + #jsp5 + #jsp6 + #jsp7 ) > 0
+                )
         ) 
 		)
 		and all of ( $asp_reg* ) and any of ( $sus* ) and not any of ( $fp* ) and 
@@ -2824,9 +3050,19 @@ rule webshell_aspx_regeorg_csharp
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
-        // avoid hitting legitimate php
+        // avoid hitting php
         $php1 = "<?php"
         $php2 = "<?="
+
+        // avoid hitting jsp
+        $jsp1 = "=\"java." wide ascii
+        $jsp2 = "=\"javax." wide ascii
+        $jsp3 = "java.lang." wide ascii
+        $jsp4 = "public" fullword wide ascii
+        $jsp5 = "throws" fullword wide ascii
+        $jsp6 = "getValue" fullword wide ascii
+        $jsp7 = "getBytes" fullword wide ascii
+        
 	
 	condition:
 		filesize < 300KB and ( 
@@ -2844,8 +3080,12 @@ rule webshell_aspx_regeorg_csharp
                 )
             ) 
         ) and not ( 
-            $php1 at 0 or
-            $php2 at 0 
+            (
+                $php1 at 0 or
+                $php2 at 0 
+            ) or (
+                ( #jsp1 + #jsp2 + #jsp3 ) > 0 and ( #jsp4 + #jsp5 + #jsp6 + #jsp7 ) > 0
+                )
         ) 
 		)
 		and 
@@ -2910,9 +3150,19 @@ rule webshell_csharp_generic
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
-        // avoid hitting legitimate php
+        // avoid hitting php
         $php1 = "<?php"
         $php2 = "<?="
+
+        // avoid hitting jsp
+        $jsp1 = "=\"java." wide ascii
+        $jsp2 = "=\"javax." wide ascii
+        $jsp3 = "java.lang." wide ascii
+        $jsp4 = "public" fullword wide ascii
+        $jsp5 = "throws" fullword wide ascii
+        $jsp6 = "getValue" fullword wide ascii
+        $jsp7 = "getBytes" fullword wide ascii
+        
 	
 	condition:
 		( 
@@ -2930,8 +3180,12 @@ rule webshell_csharp_generic
                 )
             ) 
         ) and not ( 
-            $php1 at 0 or
-            $php2 at 0 
+            (
+                $php1 at 0 or
+                $php2 at 0 
+            ) or (
+                ( #jsp1 + #jsp2 + #jsp3 ) > 0 and ( #jsp4 + #jsp5 + #jsp6 + #jsp7 ) > 0
+                )
         ) 
 		)
 		and filesize < 300KB and 
@@ -3015,6 +3269,20 @@ rule webshell_asp_sql
         $sql8 = "SqlCommand" fullword wide ascii
         $sql9 = "SQLCommand" fullword wide ascii
 
+        $o_sql1 = "SQLOLEDB" fullword wide ascii
+        $o_sql2 = "CreateObject" fullword wide ascii
+        $o_sql3 = "open" fullword wide ascii
+
+        $a_sql1 = "ADODB.Connection" fullword wide ascii
+        $a_sql2 = "adodb.connection" fullword wide ascii
+        $a_sql3 = "CreateObject" fullword wide ascii
+        $a_sql4 = "createobject" fullword wide ascii
+        $a_sql5 = "open" fullword wide ascii
+
+        $c_sql1 = "System.Data.SqlClient" fullword wide ascii
+        $c_sql2 = "sqlConnection" fullword wide ascii
+        $c_sql3 = "open" fullword wide ascii
+
         $sus1 = "shell" fullword nocase wide ascii
         $sus2 = "xp_cmdshell" fullword nocase wide ascii
         $sus3 = "aspxspy" fullword nocase wide ascii
@@ -3022,6 +3290,21 @@ rule webshell_asp_sql
         $sus5 = "cmd.exe" fullword wide ascii
         $sus6 = "cmd /c" fullword wide ascii
         $sus7 = "net user" fullword wide ascii
+        $sus8 = "\\x2D\\x3E\\x7C" wide ascii
+        $sus9 = "Hacker" fullword wide ascii
+        $sus10 = "hacker" fullword wide ascii
+        $sus11 = "HACKER" fullword wide ascii
+        $sus12 = "webshell" wide ascii
+        $sus13 = "equest[\"sql\"]" wide ascii
+        $sus14 = "equest(\"sql\")" wide ascii
+        $sus15 = { e5 bc 80 e5 a7 8b e5 af bc e5 }
+        $sus16 = "\"sqlCommand\"" wide ascii
+        $sus17 = "\"sqlcommand\"" wide ascii
+
+        $slightly_sus1 = "select * from " wide ascii
+        $slightly_sus2 = "SELECT * FROM " wide ascii
+        $slightly_sus3 = "SHOW COLUMNS FROM " wide ascii
+        $slightly_sus4 = "show columns from " wide ascii
         
 	
 		//strings from private rule capa_asp
@@ -3063,9 +3346,19 @@ rule webshell_asp_sql
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
-        // avoid hitting legitimate php
+        // avoid hitting php
         $php1 = "<?php"
         $php2 = "<?="
+
+        // avoid hitting jsp
+        $jsp1 = "=\"java." wide ascii
+        $jsp2 = "=\"javax." wide ascii
+        $jsp3 = "java.lang." wide ascii
+        $jsp4 = "public" fullword wide ascii
+        $jsp5 = "throws" fullword wide ascii
+        $jsp6 = "getValue" fullword wide ascii
+        $jsp7 = "getBytes" fullword wide ascii
+        
 	
 		//strings from private rule capa_asp_input
         // Request.BinaryRead
@@ -3085,7 +3378,7 @@ rule webshell_asp_sql
         $asp_text2 = ".Text" wide ascii
 	
 	condition:
-		filesize < 150KB and ( 
+		( 
         (
             any of ( $tagasp_long* ) or
             // TODO :  yara_push_private_rules.py doesn't do private rules in private rules yet
@@ -3100,8 +3393,12 @@ rule webshell_asp_sql
                 )
             ) 
         ) and not ( 
-            $php1 at 0 or
-            $php2 at 0 
+            (
+                $php1 at 0 or
+                $php2 at 0 
+            ) or (
+                ( #jsp1 + #jsp2 + #jsp3 ) > 0 and ( #jsp4 + #jsp5 + #jsp6 + #jsp7 ) > 0
+                )
         ) 
 		)
 		and ( 
@@ -3116,7 +3413,10 @@ rule webshell_asp_sql
             $asp_asp
         ) 
 		)
-		and 6 of ( $sql* ) and any of ( $sus* )
+		and 
+		( 6 of ( $sql* ) or all of ( $o_sql* ) or 3 of ( $a_sql* ) or all of ( $c_sql* ) ) and 
+		( ( filesize < 150KB and any of ( $sus* ) ) or 
+		( filesize < 5KB and any of ( $slightly_sus* ) ) )
 }
 
 rule webshell_asp_scan_writable
@@ -3185,9 +3485,19 @@ rule webshell_asp_scan_writable
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
-        // avoid hitting legitimate php
+        // avoid hitting php
         $php1 = "<?php"
         $php2 = "<?="
+
+        // avoid hitting jsp
+        $jsp1 = "=\"java." wide ascii
+        $jsp2 = "=\"javax." wide ascii
+        $jsp3 = "java.lang." wide ascii
+        $jsp4 = "public" fullword wide ascii
+        $jsp5 = "throws" fullword wide ascii
+        $jsp6 = "getValue" fullword wide ascii
+        $jsp7 = "getBytes" fullword wide ascii
+        
 	
 		//strings from private rule capa_asp_input
         // Request.BinaryRead
@@ -3222,8 +3532,12 @@ rule webshell_asp_scan_writable
                 )
             ) 
         ) and not ( 
-            $php1 at 0 or
-            $php2 at 0 
+            (
+                $php1 at 0 or
+                $php2 at 0 
+            ) or (
+                ( #jsp1 + #jsp2 + #jsp3 ) > 0 and ( #jsp4 + #jsp5 + #jsp6 + #jsp7 ) > 0
+                )
         ) 
 		)
 		and ( 
@@ -3999,9 +4313,19 @@ rule webshell_generic_os_strings
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
-        // avoid hitting legitimate php
+        // avoid hitting php
         $php1 = "<?php"
         $php2 = "<?="
+
+        // avoid hitting jsp
+        $jsp1 = "=\"java." wide ascii
+        $jsp2 = "=\"javax." wide ascii
+        $jsp3 = "java.lang." wide ascii
+        $jsp4 = "public" fullword wide ascii
+        $jsp5 = "throws" fullword wide ascii
+        $jsp6 = "getValue" fullword wide ascii
+        $jsp7 = "getBytes" fullword wide ascii
+        
 	
 		//strings from private rule capa_php_old_safe
 		$php_short = "<?" wide ascii
@@ -4058,8 +4382,12 @@ rule webshell_generic_os_strings
                 )
             ) 
         ) and not ( 
-            $php1 at 0 or
-            $php2 at 0 
+            (
+                $php1 at 0 or
+                $php2 at 0 
+            ) or (
+                ( #jsp1 + #jsp2 + #jsp3 ) > 0 and ( #jsp4 + #jsp5 + #jsp6 + #jsp7 ) > 0
+                )
         ) 
 		)
 		or ( 
@@ -4199,9 +4527,19 @@ rule webshell_in_image
 		$tagasp_long32 = /<script\s{1,30}runat=/ wide ascii
 		$tagasp_long33 = /<SCRIPT\s{1,30}RUNAT=/ wide ascii
 
-        // avoid hitting legitimate php
+        // avoid hitting php
         $php1 = "<?php"
         $php2 = "<?="
+
+        // avoid hitting jsp
+        $jsp1 = "=\"java." wide ascii
+        $jsp2 = "=\"javax." wide ascii
+        $jsp3 = "java.lang." wide ascii
+        $jsp4 = "public" fullword wide ascii
+        $jsp5 = "throws" fullword wide ascii
+        $jsp6 = "getValue" fullword wide ascii
+        $jsp7 = "getBytes" fullword wide ascii
+        
 	
 		//strings from private rule capa_asp_payload
 		$asp_payload0  = "eval_r" fullword nocase wide ascii
@@ -4213,7 +4551,6 @@ rule webshell_in_image
 		$asp_payload8  = /\bexecute\s?\(/ nocase wide ascii
 		$asp_payload9  = /\bexecute\s[\w"]/ nocase wide ascii
 		$asp_payload11 = "WSCRIPT.SHELL" fullword nocase wide ascii
-		$asp_payload12 = "Scripting.FileSystemObject" fullword nocase wide ascii
 		$asp_payload13 = "ExecuteGlobal" fullword nocase wide ascii
 		$asp_payload14 = "ExecuteStatement" fullword nocase wide ascii
 		$asp_payload15 = "ExecuteStatement" fullword nocase wide ascii
@@ -4236,6 +4573,9 @@ rule webshell_in_image
 		$asp_multi_payload_five2 = ".Start" nocase wide ascii
 		$asp_multi_payload_five3 = ".Filename" nocase wide ascii
 		$asp_multi_payload_five4 = ".Arguments" nocase wide ascii
+
+		$asp_multi_payload_six1 = "Scripting.FileSystemObject" fullword nocase wide ascii
+		$asp_multi_payload_six2 = ".CreateTextFile" nocase wide ascii
 	
 	condition:
 		( $png at 0 or $jpg at 0 or $gif at 0 or $gif2 at 0 or $mdb at 0 ) and 
@@ -4276,8 +4616,12 @@ rule webshell_in_image
                 )
             ) 
         ) and not ( 
-            $php1 at 0 or
-            $php2 at 0 
+            (
+                $php1 at 0 or
+                $php2 at 0 
+            ) or (
+                ( #jsp1 + #jsp2 + #jsp3 ) > 0 and ( #jsp4 + #jsp5 + #jsp6 + #jsp7 ) > 0
+                )
         ) 
 		)
 		and ( 
@@ -4286,7 +4630,8 @@ rule webshell_in_image
         all of ( $asp_multi_payload_two* ) or
         all of ( $asp_multi_payload_three* ) or
         all of ( $asp_multi_payload_four* ) or
-        all of ( $asp_multi_payload_five* ) 
+        all of ( $asp_multi_payload_five* ) or
+        all of ( $asp_multi_payload_six* ) 
 		)
 		) )
 }
