@@ -1,3 +1,4 @@
+import "pe"
 
 rule MAL_Neshta_Generic {
    meta:
