@@ -3594,4 +3594,17 @@ C:\\mscoree\.dll;70
 \\Temp\\craftmanager2\.exe;90
 \\Temp\\craftmanager3\.exe;90
 
+# SUNSHUTTLE IOCs https://us-cert.cisa.gov/ncas/analysis-reports/ar21-105a
+\\bootcats\.exe$;80
+\\f3\.exe$;50
+\\prnmngrz\.vbs$;80
+\\Lexicon\.exe$;45
+\\prndrvrn\.vbs$;80
+\\rundll32file_schtaskdaily\.vbs$;80
+\\SchCachedSvc\.exe$;90
+\\WindowsDSVC\.exe$;90
+\\f2\.exe$;50
+\\Final_vbscript\.vbs$;80
+\\runlog\.dat\.tmp$;80
+
 # End

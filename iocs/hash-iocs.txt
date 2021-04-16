@@ -9798,3 +9798,22 @@ d37964a9f7f56aad9433676a6df9bd19;Encrypted Ecipekac Layer II, IV loader (shellco
 335ce825da93ed3fdd4470634845dfea;Encrypted Ecipekac Layer II, IV loader (shellcode) - msftedit.prf.cco FYAnti loader - https://securelist.com/apt10-sophisticated-multi-layered-loader-ecipekac-discovered-in-a41apt-campaign/101519/
 f4c4644e6d248399a12e2c75cf9e4bdf;Encrypted Ecipekac Layer II, IV loader (shellcode) - msdtcuiu.adi.wdb FYAnti loader - https://securelist.com/apt10-sophisticated-multi-layered-loader-ecipekac-discovered-in-a41apt-campaign/101519/
 019619318e1e3a77f3071fb297b85cf3;Encrypted QuasarRAT - web_lowtrust.config.uninstall QuasarRAT  - https://securelist.com/apt10-sophisticated-multi-layered-loader-ecipekac-discovered-in-a41apt-campaign/101519/
+
+0affab34d950321e3031864ec2b6c00e4edafb54f4b327717cb5b042c38a33c9;SUNSHUTTLE IOC - (finder.exe) https://us-cert.cisa.gov/ncas/analysis-reports/ar21-105a
+0d770e0d6ee77ed9d53500688831040b83b53b9de82afa586f20bb1894ee7116;SUNSHUTTLE IOC - (owafont.aspx) https://us-cert.cisa.gov/ncas/analysis-reports/ar21-105a
+4e8f24fb50a08c12636f3d50c94772f355d5229e58110cccb3b4835cb2371aec;SUNSHUTTLE IOC - (bootcats.exe) https://us-cert.cisa.gov/ncas/analysis-reports/ar21-105a
+6b01eeef147d9e0cd6445f90e55e467b930df2de5d74e3d2f7610e80f2c5a2cd;SUNSHUTTLE IOC - (f3.exe) https://us-cert.cisa.gov/ncas/analysis-reports/ar21-105a
+7e05ff08e32a64da75ec48b5e738181afb3e24a9f1da7f5514c5a11bb067cbfb;SUNSHUTTLE IOC - ( rundll32registry_createremote...) https://us-cert.cisa.gov/ncas/analysis-reports/ar21-105a
+88cd1bc85e6a57fa254ede18f96566b33cee999c538902aefc5b819d71163d07;SUNSHUTTLE IOC - (prnmngrz.vbs) https://us-cert.cisa.gov/ncas/analysis-reports/ar21-105a
+94c58c7fb43153658eaa9409fc78d8741d3c388d3b8d4296361867fe45d5fa45;SUNSHUTTLE IOC - (Lexicon.exeUnPacked) https://us-cert.cisa.gov/ncas/analysis-reports/ar21-105a
+acc74c920d19ea0a5e6007f929ef30b079eb2836b5b28e5ffcc20e68fa707e66;SUNSHUTTLE IOC - (rundll32registry_schtaskdaily....) https://us-cert.cisa.gov/ncas/analysis-reports/ar21-105a
+b9a2c986b6ad1eb4cfb0303baede906936fe96396f3cf490b0984a4798d741d8;SUNSHUTTLE IOC - (Lexicon.exe) https://us-cert.cisa.gov/ncas/analysis-reports/ar21-105a
+cb80a074e5fde8d297c2c74a0377e612b4030cc756baf4fff3cc2452ebc04a9c;SUNSHUTTLE IOC - (prndrvrn.vbs) https://us-cert.cisa.gov/ncas/analysis-reports/ar21-105a
+e9ddf486e5aeac02fc279659b72a1bec97103f413e089d8fabc30175f4cdbf15;SUNSHUTTLE IOC - (rundll32file_schtaskdaily.vbs) https://us-cert.cisa.gov/ncas/analysis-reports/ar21-105a
+ec5f07c169267dec875fdd135c1d97186b494a6f1214fb6b40036fd4ce725def;SUNSHUTTLE IOC - (SchCachedSvc.exe) https://us-cert.cisa.gov/ncas/analysis-reports/ar21-105a
+f28491b367375f01fb9337ffc137225f4f232df4e074775dd2cc7e667394651c;SUNSHUTTLE IOC - (WindowsDSVC.exe) https://us-cert.cisa.gov/ncas/analysis-reports/ar21-105a
+f2a8bdf135caca0d7359a7163a4343701a5bdfbc8007e71424649e45901ab7e2;SUNSHUTTLE IOC - (f2.exe) https://us-cert.cisa.gov/ncas/analysis-reports/ar21-105a
+a9037af30ff270901e9d5c2ee5ba41d547bc19c880f5cb27f50428f9715d318f;SUNSHUTTLE IOC - (Final_vbscript.vbs) https://us-cert.cisa.gov/ncas/analysis-reports/ar21-105a
+bc7a3b3cfae59f1bfbde57154cb1e7deebdcdf6277ac446919df07e3b8a6e4df;SUNSHUTTLE IOC - (runlog.dat.tmp) https://us-cert.cisa.gov/ncas/analysis-reports/ar21-105a
+d8009ad96082a31d074e85dae3761b51a78f99e2cc8179ba305955c2a645b94d;SUNSHUTTLE IOC - (finder.exe_Unpacked) https://us-cert.cisa.gov/ncas/analysis-reports/ar21-105a
+fa1959dd382ce868c975599c6c3cc536aa0073be44fc8a6571a20fb0c8bea836;SUNSHUTTLE IOC - (WindowsDSVC.exe_Unpacked) https://us-cert.cisa.gov/ncas/analysis-reports/ar21-105a
