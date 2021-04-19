@@ -2955,7 +2955,6 @@ ystem32\\Microsoft\\Protect\\Windows\\svchost.exe;80
 \\AppData\\Roaming\\Microsoft\\shdocvw.tlp;90
 
 # NCCGroup Ghost Report https://goo.gl/i3prxY
-\\Mozilla\.exe;80
 \\Updateproxy\.dll;60
 \\Noodles\.exe:70
 \\Coal\.exe;70
