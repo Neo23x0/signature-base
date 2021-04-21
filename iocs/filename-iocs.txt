@@ -3606,4 +3606,7 @@ C:\\mscoree\.dll;70
 \\Final_vbscript\.vbs$;80
 \\runlog\.dat\.tmp$;80
 
+# Possible exploitation of CVE-2021-2307 https://www.kb.cert.org/vuls/id/567764
+C:\\build_area\\openssl\.cnf;90
+
 # End
