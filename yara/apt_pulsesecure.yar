@@ -230,6 +230,7 @@ rule FE_APT_Backdoor_Linux32_SLOWPULSE_1
         ((uint32(0) == 0x464c457f) and (uint8(4) == 1)) and all of them 
 }
 
+/* TOO SLOW 
 rule FE_APT_Backdoor_Linux32_SLOWPULSE_2
 { 
     meta: 
@@ -246,6 +247,8 @@ rule FE_APT_Backdoor_Linux32_SLOWPULSE_2
     condition:
         uint32(0) == 0x464C457F and (1 of ($sig*)) and (not (1 of ($exc*)))
 }
+*/
+
 rule FE_APT_Webshell_PL_STEADYPULSE_1
 {  
     meta:  
