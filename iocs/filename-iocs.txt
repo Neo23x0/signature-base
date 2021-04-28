@@ -3610,6 +3610,6 @@ C:\\mscoree\.dll;70
 C:\\build_area\\openssl\.cnf;90
 
 # Bug in Audio Driver creates .wav files of possibly confidential meetings https://insinuator.net/2021/04/of-corona-buggy-audio-drivers-and-industrial-espionage/
-:\\Windows\\Temp\\sam_mic_[_\-0-9]{4,20}\.wav;60
+:\\Windows\\Temp\\sam_(mic|ref)_[_\-0-9]{4,20}\.wav;60
 
 # End
