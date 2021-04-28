@@ -3609,4 +3609,7 @@ C:\\mscoree\.dll;70
 # Possible exploitation of CVE-2021-2307 https://www.kb.cert.org/vuls/id/567764
 C:\\build_area\\openssl\.cnf;90
 
+# Bug in Audio Driver creates .wav files of possibly confidential meetings https://insinuator.net/2021/04/of-corona-buggy-audio-drivers-and-industrial-espionage/
+:\\Windows\\Temp\\sam_mic_[_\-0-9]{4,20}\.wav;60
+
 # End
