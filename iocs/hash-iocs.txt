@@ -9917,3 +9917,46 @@ f9f3cdf8cca3cb138be71066314b1d6431de52a647b067efa87b2df7a9a3ae50;Iron Tiger Repo
 fee067f6fe10f4d3f49fd082a2eb48619c4d43fc98bc689b3740cb862ff77d24;Iron Tiger Repoirt - TROJ_GEN.R002C0DB321 - HyperBro - https://www.trendmicro.com/en_us/research/21/d/iron-tiger-apt-updates-toolkit-with-evolved-sysupdate-malware-va.html
 92d53b227eac5ba0935726c86d8f0f456ab8429473bca4f68858448e92c6fade;Iron Tiger Repoirt - HiddenServ ice.exe - Rootkit.Win64.HIDDEN.A - Hidden rootkit - https://www.trendmicro.com/en_us/research/21/d/iron-tiger-apt-updates-toolkit-with-evolved-sysupdate-malware-va.html
 5cae9a425ed6a030390e7b104bf49836b0a1bdd86c0d345ce7a74b2207807459;Iron Tiger Repoirt - Hidden.sys - TROJ_FRS.VSNTCT21 - Hidden rootkit - https://www.trendmicro.com/en_us/research/21/d/iron-tiger-apt-updates-toolkit-with-evolved-sysupdate-malware-va.html
+87c78d62fd35bb25e34abb8f4caace4a;SOMBRAT UNC2447 https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+6382d48fae675084d30ccb69b4664cbb;SOMBRAT UNC2447 (31dcd09eb9fa2050aadc0e6ca05957bf unxored) https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+cf1b9284d239928cce1839ea8919a7af;SOMBRAT Launcher (wwansvc.a XOR key) https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+4aa3eab3f657498f52757dc46b8d1f11;SOMBRAT Launcher (wwansvc.c) https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+1f6495ea7606a15daa79be93070159a8;SOMBRAT Launcher (wwansvc.bat) https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+31dcd09eb9fa2050aadc0e6ca05957bf;SOMBRAT Launcher (wwansvc.b) https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+edf567bd19d09b0bab4a8d068af15572;SOMBRAT Launcher (wwansvc.b) https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+a5b26931a1519e9ceda04b4c997bb01f;SOMBRAT Launcher (wwansvc.txt) https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+f0751bef4804fadfe2b993bf25791c49;SOMBRAT Launcher (4aa3eab3f657498f52757dc46b8d1f11 unxored) https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+87c78d62fd35bb25e34abb8f4caace4a;SOMBRAT Launcher (edf567bd19d09b0bab4a8d068af15572 unxored) https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+39ea2394a6e6c39c5d7722dc996daf05;FIVEHANDS https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+f568229e696c0e82abb35ec73d162d5e;FIVEHANDS https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+6c849920155f48d4b4aafce0fc49eb5b;FIVEHANDS Encrypted Dropper https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+22d35005e926fe29379cb07b810a6075;FIVEHANDS Encrypted Dropper https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+57824214710bc0cdb22463571a72afd0;FIVEHANDS Encrypted Dropper https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+87c0b190e3b4ab9214e10a2d1c182153;FIVEHANDS Encrypted Dropper https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+1b0b9e4cddcbcb02affe9c8124855e58;FIVEHANDS Encrypted Dropper https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+46ecc24ef6d20f3eaf71ff37610d57d1;FIVEHANDS Encrypted Dropper https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+1a79b6d169aac719c9323bc3ee4a8361;FIVEHANDS Encrypted Dropper https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+a64d79eba40229ae9aaebbd73938b985;FIVEHANDS Encrypted Dropper https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+136bd70f7aa98f52861879d7dca03cf2;HELLOKITTY https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+06ce6cd8bde756265f95fcf4eecadbe9;HELLOKITTY https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+af568e8a6060812f040f0cb0fd6f5a7b;HELLOKITTY https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+d96adf82f061b1a6c80699364a1e3208;HELLOKITTY https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+c50ab1df254c185506ab892dc5c8e24b;DEATHRANSOM https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+c925822c6d5175c30ba96388b07e9e16;WARPRISM (unc2447) https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+c171bcd34151cbcd48edbce13796e0ed;WARPRISM  https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+d87fcd8d2bf450b0056a151e9a116f72;WARPRISM  https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+f739977004981fbe4a54bc68be18ea79;WARPRISM  https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+e18b27f75c95b4d50bfcbcd00a5bd6c5;WARPRISM  https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+df6e6b3e53cc713276a03cce8361ae0f;WARPRISM  https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+1cd03c0d00f7bfa7ca73f7d73677d8f8;WARPRISM  https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+8071f66d64395911a7aa0d2057b9b00d;WARPRISM  https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+c12a96e9c50db5f8b0b3b5f9f3f134f0;WARPRISM  https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+e39184eacba2b05aaa529547abf41d2b;WARPRISM  https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+09a05a2212bd2c0fe0e2881401fbff17;WARPRISM  https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+8226d7615532f32eca8c04ac0d41a9fd;WARPRISM  https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+a01a2ba3ae9f50a5aa8a5e3492891082;WARPRISM  https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+29e53b32d5b4aae6d9a3b3c81648653c;WARPRISM  https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+a809068b052bc209d0ab13f6c5c8b4e7;WARPRISM  https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+74c688a22822b2ab8f18eafad2271cac;BEACON UNC2447 https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+7d6e57cbc112ebd3d3c95d3c73451a38;BEACON UNC2447 https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+4d3d3919dda002511e03310c49b7b47f;FOXGRABBER https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
