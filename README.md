@@ -19,12 +19,14 @@ Signature-Base is the YARA signature and IOC database for our scanners [LOKI](ht
 
 ## External Variables in YARA Rules
 
-Using the YARA rules in a tool other than [LOKI](https://github.com/Neo23x0/Loki) or [THOR Lite](https://www.nextron-systems.com/thor-lite/) will cause errors stating an `undefined identifier`. The rules that make use of external variables have been moved to the following 4 rule set files:
+Using the YARA rules in a tool other than [LOKI](https://github.com/Neo23x0/Loki) or [THOR Lite](https://www.nextron-systems.com/thor-lite/) will cause errors stating an `undefined identifier`. The rules that make use of external variables have been moved to the following 4 files:
 
 - ./yara/generic_anomalies.yar
 - ./yara/general_cloaking.yar
 - ./yara/thor_inverse_matches.yar
 - ./yara/yara_mixed_ext_vars.yar
+
+Just remove these files in case you see the above error message.
 
 ## High Quality YARA Rules Feed
 
@@ -34,9 +36,13 @@ If you liked my rules, please check our [commercial rule set and rule feed servi
 
 ### How can I report false positives?
 
-Use the issues section of this repository. 
+Use the issues section of this repository.
 
-## How can I provide a YARA rule or IOCs? 
+### How can I help with bugs in rules?
+
+Navigate to the file in this repository. Click on the "edit" symbol in the upper right corner. Edit the file and create a pull request.
+
+### How can I provide a YARA rule or IOCs?
 
 I accept pull requests. See this [thread](https://twitter.com/cyb3rops/status/1320657673742897153) for some help on how to create such a request. 
 
