@@ -330,7 +330,7 @@ rule HKTL_Meterpreter_inMemory {
    strings: 
       $xx1 = { 6D 65 74 73 72 76 2E 64 6C 6C 00 00 52 65 66 6C 
                65 63 74 69 76 65 4C 6F 61 64 65 72 }
-      $xx1 = "metsrv.x64.dll" ascii fullword
+      $xx2 = "metsrv.x64.dll" ascii fullword
       $xs1 = "WS2_32.dll" ascii fullword
       $xs2 = "ReflectiveLoader" ascii fullword
 
