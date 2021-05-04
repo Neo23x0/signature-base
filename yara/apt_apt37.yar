@@ -10,6 +10,7 @@ rule APT_NK_Methodology_Artificial_UserAgent_IE_Win7 {
 
         $fp1 = "Esumsoft" wide
         $fp2 = "Acunetix" wide ascii
+        $fp3 = "TASER SYNC" ascii
     condition:
         uint16(0) == 0x5A4D and all of ($a*) and not 1 of ($fp*)
 }
