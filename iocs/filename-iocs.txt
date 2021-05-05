@@ -3612,4 +3612,7 @@ C:\\build_area\\openssl\.cnf;90
 # Bug in Audio Driver creates .wav files of possibly confidential meetings https://insinuator.net/2021/04/of-corona-buggy-audio-drivers-and-industrial-espionage/
 :\\Windows\\Temp\\sam_(mic|ref)_[_\-0-9]{4,20}\.wav;60
 
+# Vulnerable DELL BIOS update driver (the new patched one is named DBUtilDrv2.Sys) - https://labs.sentinelone.com/cve-2021-21551-hundreds-of-millions-of-dell-computers-at-risk-due-to-multiple-bios-driver-privilege-escalation-flaws/
+C:\\Windows\\Temp\\DBUtil_2_3\.Sys$;70
+
 # End
