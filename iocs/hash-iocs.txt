@@ -9960,3 +9960,19 @@ a809068b052bc209d0ab13f6c5c8b4e7;WARPRISM  https://www.fireeye.com/blog/threat-r
 74c688a22822b2ab8f18eafad2271cac;BEACON UNC2447 https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
 7d6e57cbc112ebd3d3c95d3c73451a38;BEACON UNC2447 https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
 4d3d3919dda002511e03310c49b7b47f;FOXGRABBER https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html
+48307C22A930A2215F7601C78240A5EE;Operation TunnelSnake - Moriya Agent - https://securelist.com/operation-tunnelsnake-and-moriya-rootkit/101831/
+A2C4EE84E3A95C8731CA795F53F900D5;Operation TunnelSnake - Moriya 64-bit Driver - https://securelist.com/operation-tunnelsnake-and-moriya-rootkit/101831/
+5F0F1B0A033587DBCD955EDB1CDC24A4;Operation TunnelSnake - IISSpy - https://securelist.com/operation-tunnelsnake-and-moriya-rootkit/101831/
+C1159FE3193E8B5206006B4C9AFBFE62;Operation TunnelSnake - ProcessKiller - https://securelist.com/operation-tunnelsnake-and-moriya-rootkit/101831/
+DA627AFEE096CDE0B680D39BD5081C41;Operation TunnelSnake - ProcessKiller Driver – 32-bit - https://securelist.com/operation-tunnelsnake-and-moriya-rootkit/101831/
+07CF58ABD6CE92D96CFC5ABC5F6CBC9A;Operation TunnelSnake - ProcessKiller Driver – 64-bit - https://securelist.com/operation-tunnelsnake-and-moriya-rootkit/101831/
+9A8F39EBCC580AA56D6DDAF5804EAE61;Operation TunnelSnake - pv.tmp (Custom PSExec Server) - https://securelist.com/operation-tunnelsnake-and-moriya-rootkit/101831/
+39C361ABB74F9A338EA42A083E6C7DF8;Operation TunnelSnake - pc.tmp (Custom PsExec Client) - https://securelist.com/operation-tunnelsnake-and-moriya-rootkit/101831/
+DE3FB65461EE8A68A3C7D490CDAC296D;Operation TunnelSnake - tran.tmp (Exfiltration tool) - https://securelist.com/operation-tunnelsnake-and-moriya-rootkit/101831/
+EAC0E57A22936D4C777AA121F799FEE6;Operation TunnelSnake - client.exe (Utility embedded in tran.tmp) - https://securelist.com/operation-tunnelsnake-and-moriya-rootkit/101831/
+D745174F5B0EB41D9F764B22A5ECD357;Operation TunnelSnake - rasauto.dll (Bouncer Loader) - https://securelist.com/operation-tunnelsnake-and-moriya-rootkit/101831/
+595E43CDF0EDCAA31525D7AAD87B7BE4;Operation TunnelSnake - 8.tmp (HTTP )Scanner - https://securelist.com/operation-tunnelsnake-and-moriya-rootkit/101831/
+9D75B50727A8E732DB0ADE7E270A7395;Operation TunnelSnake - ep.tmp DCOM Scanner - https://securelist.com/operation-tunnelsnake-and-moriya-rootkit/101831/
+3A4E1F3F7E1BAAB8B02F3A8EE20F98C9;Operation TunnelSnake - nw.tmp Bouncer Loader - https://securelist.com/operation-tunnelsnake-and-moriya-rootkit/101831/
+47F2D06713DAD556F535E523B777C682;Operation TunnelSnake - Termite - https://securelist.com/operation-tunnelsnake-and-moriya-rootkit/101831/
+45A5D9053BC90ED657FA90DE0B775E8F;Operation TunnelSnake - Earthworm - https://securelist.com/operation-tunnelsnake-and-moriya-rootkit/101831/
