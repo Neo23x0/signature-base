@@ -199,7 +199,9 @@ rule SUSP_PowerShell_IEX_Download_Combo {
    strings:
       $x1 = "IEX ((new-object net.webclient).download" ascii nocase
 
-      $fp = "Remote Desktop in the Appveyor" ascii
+      $fp1 = "chocolatey.org"
+      $fp2 = "Remote Desktop in the Appveyor"
+      $fp3 = "/appveyor/" ascii
    condition:
       $x1 and not 1 of ($fp*)
 }

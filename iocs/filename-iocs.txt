@@ -2955,7 +2955,6 @@ ystem32\\Microsoft\\Protect\\Windows\\svchost.exe;80
 \\AppData\\Roaming\\Microsoft\\shdocvw.tlp;90
 
 # NCCGroup Ghost Report https://goo.gl/i3prxY
-\\Mozilla\.exe;80
 \\Updateproxy\.dll;60
 \\Noodles\.exe:70
 \\Coal\.exe;70
@@ -3593,5 +3592,27 @@ C:\\mscoree\.dll;70
 \\Temp\\myfavoritegame\.exe;90
 \\Temp\\craftmanager2\.exe;90
 \\Temp\\craftmanager3\.exe;90
+
+# SUNSHUTTLE IOCs https://us-cert.cisa.gov/ncas/analysis-reports/ar21-105a
+\\bootcats\.exe$;80
+\\f3\.exe$;50
+\\prnmngrz\.vbs$;80
+\\Lexicon\.exe$;45
+\\prndrvrn\.vbs$;80
+\\rundll32file_schtaskdaily\.vbs$;80
+\\SchCachedSvc\.exe$;90
+\\WindowsDSVC\.exe$;90
+\\f2\.exe$;50
+\\Final_vbscript\.vbs$;80
+\\runlog\.dat\.tmp$;80
+
+# Possible exploitation of CVE-2021-2307 https://www.kb.cert.org/vuls/id/567764
+C:\\build_area\\openssl\.cnf;90
+
+# Bug in Audio Driver creates .wav files of possibly confidential meetings https://insinuator.net/2021/04/of-corona-buggy-audio-drivers-and-industrial-espionage/
+:\\Windows\\Temp\\sam_(mic|ref)_[_\-0-9]{4,20}\.wav;60
+
+# Vulnerable DELL BIOS update driver (the new patched one is named DBUtilDrv2.Sys) - https://labs.sentinelone.com/cve-2021-21551-hundreds-of-millions-of-dell-computers-at-risk-due-to-multiple-bios-driver-privilege-escalation-flaws/
+C:\\Windows\\Temp\\DBUtil_2_3\.Sys$;70
 
 # End
