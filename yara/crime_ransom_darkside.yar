@@ -1,3 +1,4 @@
+
 rule MAL_RANSOM_Darkside_May21_1 {
    meta:
       description = "Detects Darkside Ransomware"
@@ -10,9 +11,12 @@ rule MAL_RANSOM_Darkside_May21_1 {
       $op2 = { 66 0f 6f 06 66 0f 7f 07 83 c6 10 83 c7 10 49 85 c9 75 ed 5f }
       $op3 = { 6a 00 ff 15 72 0d 41 00 ab 46 81 fe 80 00 00 00 75 2e 6a ff 6a 01 }
       $op4 = { 0f b7 0c 5d 88 0f 41 00 03 4c 24 04 89 4c 24 04 83 e1 3f 0f b7 14 4d 88 0f 41 00 03 54 24 08 89 54 24 08 83 e2 3f }
+
+      $s1 = "http://darksid" ascii
+      $s2 = "[ Welcome to DarkSide ]" ascii
+      $s3 = ".onion/" ascii
    condition:
       uint16(0) == 0x5a4d and
       filesize < 200KB and
-      3 of them or all of them
+      3 of them or all of ($op*) or all of ($s*)
 }
-
