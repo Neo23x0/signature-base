@@ -1,4 +1,4 @@
-rule Gamaredon_GetImportByHash {
+rule MAL_SUSP_Gamaredon_GetImportByHash {
     meta:
         description = "Detects Gamaredon APIHashing"
         author = "Frank Boldewin (@r3c0nst)"
