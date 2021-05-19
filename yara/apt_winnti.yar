@@ -165,7 +165,7 @@ rule APT_Winnti_MAL_Dec19_1 {
       $e4 = "\\BaseNamedObjects\\{B2B87CCA-66BC-4C24-89B2-C23C9EAC2A66}" wide
       $e5 = "BFE_Notify_Event_{7D00FA3C-FBDC-4A8D-AEEB-3F55A4890D2A}" nocase
    condition:
-      (any of ($e*))
+      uint16(0) == 0x5a4d and filesize < 3000KB and (any of ($e*))
 }
 
 rule APT_Winnti_MAL_Dec19_2 {
