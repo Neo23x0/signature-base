@@ -5,7 +5,7 @@ BUILD_DIR=$(CUR_DIR)/build
 3RD_PARTY=$(CUR_DIR)/3rdparty
 MJOLNIR_DIR=$(CUR_DIR)/../mjolnir
 
-YAR_COMP_VARS=-d filename="XXX" -d filepath="XXX" -d extension="XXX" -d filetype="XXX" -d md5="XXX" -d id="1"
+YAR_COMP_VARS=-d filename="XXX" -d filepath="XXX" -d extension="XXX" -d filetype="XXX" -d md5="XXX" -d id="1" -d owner="XXX"
 YAR_SIGS=$(wildcard ./yara/*.yar)
 
 all: clean prereq build
