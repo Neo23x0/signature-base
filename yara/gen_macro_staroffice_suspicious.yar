@@ -3,6 +3,7 @@ rule SUSP_Macro_StarOffice {
         description = "Suspicious macro in StarOffice"
         author = "John Lambert @JohnLaTwC"
         date = "2019-02-06"
+        modified = "2021-05-27"
         score = 60
         reference = "https://twitter.com/JohnLaTwC/status/1093259873993732096"
         hash1 = "8495d37825dab8744f7d2c8049fc6b70b1777b9184f0abe69ce314795480ce39"
@@ -25,9 +26,12 @@ rule SUSP_Macro_StarOffice {
         $s2 = ".Run" nocase
         $s3 = ".PutInClipboard" nocase
         $s4 = "powershell" nocase
+
+        $fp1 = "LibreOffice project" ascii
     condition:
         filesize < 1MB
         and uint32be(0) == 0x3c3f786d // <?xm
         and all of ($r*)
         and 1 of ($s*)
+        and not 1 of ($fp*)
 }

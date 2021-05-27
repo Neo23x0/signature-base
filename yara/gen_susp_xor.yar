@@ -6,7 +6,7 @@ rule SUSP_XORed_URL_in_EXE {
       author = "Florian Roth"
       reference = "https://twitter.com/stvemillertime/status/1237035794973560834"
       date = "2020-03-09"
-      modified = "2021-03-09"
+      modified = "2021-05-27"
       score = 50
    strings:
       $s1 = "http://" xor
@@ -24,6 +24,7 @@ rule SUSP_XORed_URL_in_EXE {
       $fp8 = "Avid Editor" wide fullword
       $fp9 = "Digisign" wide fullword
       $fp10 = "Microsoft Corporation" wide fullword
+      $fp11 = "Microsoft Code Signing" ascii wide
    condition:
       uint16(0) == 0x5a4d and
       filesize < 2000KB and (
