@@ -48,6 +48,7 @@ rule APT_APT28_Win_FreshFire : APT29 {
     Mostly based on MSTICs report 
     https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/
     Not shared publicly: rules for CobaltStrike loader samples, ISOs, specifc msiexec method found in some samples
+    only available in THOR and VALHALLA
 */
 
 rule APT_APT29_NOBELIUM_JS_EnvyScout_May21_1 {
