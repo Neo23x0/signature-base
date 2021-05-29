@@ -9976,3 +9976,27 @@ D745174F5B0EB41D9F764B22A5ECD357;Operation TunnelSnake - rasauto.dll (Bouncer Lo
 3A4E1F3F7E1BAAB8B02F3A8EE20F98C9;Operation TunnelSnake - nw.tmp Bouncer Loader - https://securelist.com/operation-tunnelsnake-and-moriya-rootkit/101831/
 47F2D06713DAD556F535E523B777C682;Operation TunnelSnake - Termite - https://securelist.com/operation-tunnelsnake-and-moriya-rootkit/101831/
 45A5D9053BC90ED657FA90DE0B775E8F;Operation TunnelSnake - Earthworm - https://securelist.com/operation-tunnelsnake-and-moriya-rootkit/101831/
+9059c5b46dce8595fcc46e63e4ffbceeed883b7b1c9a2313f7208a7f26a0c186;NOBELIUM IOC Attachment.html - https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/
+ca66b671a75bbee69a4a4d3000b45d5dc7d3891c7ee5891272ccb2c5aed5746c;NOBELIUM IOC ScanClientUpdate.zip - https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/
+6df1d7191f6dd930642cc5c599efb54bfcc964b7a2e77f6007787de472b22a6a;NOBELIUM IOC attachment.html - https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/
+3b94cc71c325f9068105b9e7d5c9667b1de2bde85b7abc5b29ff649fd54715c4;NOBELIUM IOC KM.FileSystem.dll - https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/
+60e20576b08a24cdaeaabc4849011885fb7517713226e2663031d9533d2187bc;NOBELIUM IOC attachment.img - https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/
+f006af714379fdd63923536d908f916f4c55480f3d07adadd53d5807e0c285ee;NOBELIUM IOC attachment.iso - https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/
+89016b87e97a07b4e0263a18827defdeaa3e150b1523534bbdebe7305beabb64;NOBELIUM IOC AktualizC!ciu.img - https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/
+7ed1b6753c94250ad3c1c675eb644940c8104ff06a123252173c33cc1be5e434;NOBELIUM IOC ICA-declass.iso - https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/
+74202eed181e2b83dd0ab6f791a34a13bd94e63e86b82395f9443cb5aeddc891;NOBELIUM IOC ScanClientUpdate.lnk - https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/
+0acb884f2f4cfa75b726cb8290b20328c8ddbcd49f95a1d761b7d131b95bafec;NOBELIUM IOC boom.exe - https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/
+2a352380d61e89c89f03f4008044241a38751284995d000c73acf9cad38b989e;NOBELIUM IOC msdiskmountservice.dll - https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/
+776014a63bf3cc7034bd5b6a9c36c75a930b59182fe232535bb7a305e539967b;NOBELIUM IOC diassvcs.dll - https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/
+d37347f47bb8c7831ae9bb902ed27a6ce85ddd9ba6dd1e963542fd63047b829c;NOBELIUM IOC Meeting info.docx - https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/
+7a3b27cf04b7f8110fc1eee5f9c4830d38ac00467fc856330115af4bffaf35b6;NOBELIUM IOC reply slip.rtf - https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/
+eae312c5ec2028a2602c9654be679ecde099b2c0b148f8d71fca43706efe4c76;NOBELIUM IOC Attachment.lnk - https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/
+f88530bc87cf2c133c0a50e434ce0428694901fe7860abb42737097fdea56b30;NOBELIUM IOC reply slip.lnk - https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/
+69f0d85119123f3c2e4c052a83671732aced07312a05a3abf4ab0360c70f65de;NOBELIUM IOC AKTUALIZ.LNK - https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/
+4fbfeb7a0bb6b9841b92fa4e6b5a7bdb69c2a12ed39691c9495ff88cd6f58836;NOBELIUM IOC NativeCacheSvc.dll - https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/
+117317d623003995d639975774edd1bfe38cec7d24b22d3e48d22c91cf8636bb;NOBELIUM IOC CertPKIProvider.dll - https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/
+c4ff632696ec6e406388e1d42421b3cd3b5f79dcb2df67e2022d961d5f5a9e78;NOBELIUM IOC Java_SRE_runtime_update.dll - https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/
+0c14a791f8a48d2944a9fa842f45becb7309ad004695e38f48fca69135d327c6;NOBELIUM IOC mshost.dll - https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/
+bca5560a9a9dd54be76e4a8d63a66e9cfd731b0bd28524db05cc498bb5b56384;NOBELIUM IOC msch.dll - https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/
+1c17c39af41a5d8f54441ce6b1cf925f6727a2ee9038284a8a7071c984d0460f;NOBELIUM IOC mswsc.dll - https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/
+d7c05bd68e8bde3d13aa7dbd6911461104d06715da15d3ee7f75136fa8330cc2;NOBELIUM IOC Integrated Review.lnk - https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/
