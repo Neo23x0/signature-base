@@ -79,21 +79,23 @@ TODO: move "not php_false_positive" down once https://github.com/plyara/plyara/p
 
 */
 
-rule webshell_php_generic_tiny
+rule webshell_php_generic
 {
 	meta:
-		description = "php webshell having some kind of input and some kind of payload. restricted to small files or would give lots of false positives"
+		description = "php webshell having some kind of input and some kind of payload. restricted to small files or big ones inclusing suspicious strings"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Arnim Rupp"
 		date = "2021/01/14"
 		hash = "bee1b76b1455105d4bfe2f45191071cf05e83a309ae9defcf759248ca9bceddd"
 
 	strings:
-
+		$wfp_tiny1 = "escapeshellarg" fullword
+		$wfp_tiny2 = "addslashes" fullword
+	
 		//strings from private rule php_false_positive_tiny
 		// try to use only strings which would be flagged by themselves as suspicous by other rules, e.g. eval 
-		$gfp_tiny1 = "addslashes" fullword
-		$gfp_tiny2 = "escapeshellarg" fullword
+		//$gfp_tiny1 = "addslashes" fullword
+		//$gfp_tiny2 = "escapeshellarg" fullword
 		$gfp_tiny3 = "include \"./common.php\";" // xcache
 		$gfp_tiny4 = "assert('FALSE');"
 		$gfp_tiny5 = "assert(false);"
@@ -101,6 +103,7 @@ rule webshell_php_generic_tiny
 		$gfp_tiny7 = "assert('array_key_exists("
 		$gfp_tiny8 = "echo shell_exec($aspellcommand . ' 2>&1');"
 		$gfp_tiny9 = "throw new Exception('Could not find authentication source with id ' . $sourceId);"
+		$gfp_tiny10= "return isset( $_POST[ $key ] ) ? $_POST[ $key ] : ( isset( $_REQUEST[ $key ] ) ? $_REQUEST[ $key ] : $default );"
 	
 		//strings from private rule capa_php_old_safe
 		$php_short = "<?" wide ascii
@@ -119,13 +122,19 @@ rule webshell_php_generic_tiny
 	
 		//strings from private rule capa_php_input
 		$inp1 = "php://input" wide ascii
-		$inp2 = "_GET[" wide ascii
-		$inp3 = "_POST[" wide ascii
-		$inp4 = "_REQUEST[" wide ascii
+		$inp2 = /_GET\s?\[/ wide ascii
+        // for passing $_GET to a function 
+		$inp3 = /\(\s?\$_GET\s?\)/ wide ascii
+		$inp4 = /_POST\s?\[/ wide ascii
+		$inp5 = /\(\s?\$_POST\s?\)/ wide ascii
+		$inp6 = /_REQUEST\s?\[/ wide ascii
+		$inp7 = /\(\s?\$_REQUEST\s?\)/ wide ascii
 		// PHP automatically adds all the request headers into the $_SERVER global array, prefixing each header name by the "HTTP_" string, so e.g. @eval($_SERVER['HTTP_CMD']) will run any code in the HTTP header CMD
-		$inp5 = "_SERVER['HTTP_" wide ascii
-		$inp6 = "_SERVER[\"HTTP_" wide ascii
-		$inp7 = /getenv[\t ]{0,20}\([\t ]{0,20}['"]HTTP_/ wide ascii
+		$inp15 = "_SERVER['HTTP_" wide ascii
+		$inp16 = "_SERVER[\"HTTP_" wide ascii
+		$inp17 = /getenv[\t ]{0,20}\([\t ]{0,20}['"]HTTP_/ wide ascii
+		$inp18 = "array_values($_SERVER)" wide ascii
+		$inp19 = /file_get_contents\("https?:\/\// wide ascii
 	
 		//strings from private rule capa_php_payload
 		// \([^)] to avoid matching on e.g. eval() in comments
@@ -137,15 +146,162 @@ rule webshell_php_generic_tiny
 		$cpayload6 = /\bpopen[\t ]*\([^)]/ nocase wide ascii
 		$cpayload7 = /\bproc_open[\t ]*\([^)]/ nocase wide ascii
 		$cpayload8 = /\bpcntl_exec[\t ]*\([^)]/ nocase wide ascii
-		$cpayload9 = /\bassert[\t ]*\([^)]/ nocase wide ascii
-		$cpayload10 = /\bpreg_replace[\t ]*\([^\)]1,1000}\/e/ nocase wide ascii
-		$cpayload11 = /\bcreate_function[\t ]*\([^)]/ nocase wide ascii
-		$cpayload12 = /\bReflectionFunction[\t ]*\([^)]/ nocase wide ascii
-		// TODO: $_GET['func_name']($_GET['argument']);
+		$cpayload9 = /\bassert[\t ]*\([^)0]/ nocase wide ascii
+		$cpayload10 = /\bpreg_replace[\t ]*\(.{1,100}\/[ismxADSUXju]{0,11}(e|\\x65)/ nocase wide ascii
+		$cpayload12 = /\bmb_ereg_replace[\t ]*\([^\)]{1,100}'e'/ nocase wide ascii
+		$cpayload13 = /\bmb_eregi_replace[\t ]*\([^\)]{1,100}'e'/ nocase wide ascii
+		$cpayload20 = /\bcreate_function[\t ]*\([^)]/ nocase wide ascii
+		$cpayload21 = /\bReflectionFunction[\t ]*\([^)]/ nocase wide ascii
+
+		$m_cpayload_preg_filter1 = /\bpreg_filter[\t ]*\([^\)]/ nocase wide ascii
+		$m_cpayload_preg_filter2 = "'|.*|e'" nocase wide ascii
 		// TODO backticks
 	
+		//strings from private rule capa_gen_sus
+
+        // these strings are just a bit suspicious, so several of them are needed, depending on filesize
+        $gen_bit_sus1  = /:\s{0,20}eval}/ nocase wide ascii
+        $gen_bit_sus2  = /\.replace\(\/\w\/g/ nocase wide ascii
+        $gen_bit_sus6  = "self.delete"
+        $gen_bit_sus9  = "\"cmd /c" nocase
+        $gen_bit_sus10 = "\"cmd\"" nocase
+        $gen_bit_sus11 = "\"cmd.exe" nocase
+        $gen_bit_sus12 = "%comspec%" wide ascii
+        $gen_bit_sus13 = "%COMSPEC%" wide ascii
+        //TODO:$gen_bit_sus12 = ".UserName" nocase
+        $gen_bit_sus18 = "Hklm.GetValueNames();" nocase
+        // bonus string for proxylogon exploiting webshells
+        $gen_bit_sus19 = "http://schemas.microsoft.com/exchange/" wide ascii
+        $gen_bit_sus21 = "\"upload\"" wide ascii
+        $gen_bit_sus22 = "\"Upload\"" wide ascii
+        $gen_bit_sus23 = "UPLOAD" fullword wide ascii
+        $gen_bit_sus24 = "fileupload" wide ascii
+        $gen_bit_sus25 = "file_upload" wide ascii
+        // own base64 func
+        $gen_bit_sus29 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789" fullword wide ascii
+        $gen_bit_sus30 = "serv-u" wide ascii
+        $gen_bit_sus31 = "Serv-u" wide ascii
+        $gen_bit_sus32 = "Army" fullword wide ascii
+        // single letter paramweter
+        $gen_bit_sus33 = /\$_(GET|POST|REQUEST)\["\w"\]/ fullword wide ascii
+        $gen_bit_sus34 = "Content-Transfer-Encoding: Binary" wide ascii
+        $gen_bit_sus35 = "crack" fullword wide ascii
+
+        $gen_bit_sus44 = "<pre>" wide ascii
+        $gen_bit_sus45 = "<PRE>" wide ascii
+        $gen_bit_sus46 = "shell_" wide ascii
+        $gen_bit_sus47 = "Shell" fullword wide ascii
+        $gen_bit_sus50 = "bypass" wide ascii
+        $gen_bit_sus51 = "suhosin" wide ascii
+        $gen_bit_sus52 = " ^ $" wide ascii
+        $gen_bit_sus53 = ".ssh/authorized_keys" wide ascii
+        $gen_bit_sus55 = /\w'\.'\w/ wide ascii
+        $gen_bit_sus56 = /\w\"\.\"\w/ wide ascii
+        $gen_bit_sus57 = "dumper" wide ascii
+        $gen_bit_sus59 = "'cmd'" wide ascii
+        $gen_bit_sus60 = "\"execute\"" wide ascii
+        $gen_bit_sus61 = "/bin/sh" wide ascii
+        $gen_bit_sus62 = "Cyber" wide ascii
+        $gen_bit_sus63 = "portscan" fullword wide ascii
+        //$gen_bit_sus64 = "\"command\"" fullword wide ascii
+        //$gen_bit_sus65 = "'command'" fullword wide ascii
+        $gen_bit_sus66 = "whoami" fullword wide ascii
+        $gen_bit_sus67 = "$password='" fullword wide ascii
+        $gen_bit_sus68 = "$password=\"" fullword wide ascii
+        $gen_bit_sus69 = "$cmd" fullword wide ascii
+        $gen_bit_sus70 = "\"?>\"." fullword wide ascii
+        $gen_bit_sus71 = "Hacking" fullword wide ascii
+        $gen_bit_sus72 = "hacking" fullword wide ascii
+        $gen_bit_sus73 = ".htpasswd" wide ascii
+        $gen_bit_sus74 = /\btouch\(\$[^,]{1,30},/ wide ascii
+
+        // very suspicious strings, one is enough
+        $gen_much_sus7  = "Web Shell" nocase
+        $gen_much_sus8  = "WebShell" nocase
+        $gen_much_sus3  = "hidded shell" 
+        $gen_much_sus4  = "WScript.Shell.1" nocase
+        $gen_much_sus5  = "AspExec" 
+        $gen_much_sus14 = "\\pcAnywhere\\" nocase
+        $gen_much_sus15 = "antivirus" nocase
+        $gen_much_sus16 = "McAfee" nocase
+        $gen_much_sus17 = "nishang" 
+        $gen_much_sus18 = "\"unsafe" fullword wide ascii
+        $gen_much_sus19 = "'unsafe" fullword wide ascii
+        $gen_much_sus24 = "exploit" fullword wide ascii
+        $gen_much_sus25 = "Exploit" fullword wide ascii
+        $gen_much_sus26 = "TVqQAAMAAA" wide ascii
+        $gen_much_sus30 = "Hacker" wide ascii
+        $gen_much_sus31 = "HACKED" fullword wide ascii
+        $gen_much_sus32 = "hacked" fullword wide ascii
+        $gen_much_sus33 = "hacker" wide ascii
+        $gen_much_sus34 = "grayhat" nocase wide ascii
+        $gen_much_sus35 = "Microsoft FrontPage" wide ascii
+        $gen_much_sus36 = "Rootkit" wide ascii
+        $gen_much_sus37 = "rootkit" wide ascii
+        $gen_much_sus38 = "/*-/*-*/" wide ascii
+        $gen_much_sus39 = "u\"+\"n\"+\"s" wide ascii
+        $gen_much_sus40 = "\"e\"+\"v" wide ascii
+        $gen_much_sus41 = "a\"+\"l\"" wide ascii
+        $gen_much_sus42 = "\"+\"(\"+\"" wide ascii
+        $gen_much_sus43 = "q\"+\"u\"" wide ascii
+        $gen_much_sus44 = "\"u\"+\"e" wide ascii
+        $gen_much_sus45 = "/*//*/" wide ascii
+        $gen_much_sus46 = "(\"/*/\"" wide ascii
+        $gen_much_sus47 = "eval(eval(" wide ascii
+        // self remove
+        $gen_much_sus48 = "unlink(__FILE__)" wide ascii
+        $gen_much_sus49 = "Shell.Users" wide ascii
+        $gen_much_sus50 = "PasswordType=Regular" wide ascii
+        $gen_much_sus51 = "-Expire=0" wide ascii
+        $gen_much_sus60 = "_=$$_" wide ascii
+        $gen_much_sus61 = "_=$$_" wide ascii
+        $gen_much_sus62 = "++;$" wide ascii
+        $gen_much_sus63 = "++; $" wide ascii
+        $gen_much_sus64 = "_.=$_" wide ascii
+        $gen_much_sus70 = "-perm -04000" wide ascii
+        $gen_much_sus71 = "-perm -02000" wide ascii
+        $gen_much_sus72 = "grep -li password" wide ascii
+        $gen_much_sus73 = "-name config.inc.php" wide ascii
+        // touch without parameters sets the time to now, not malicious and gives fp
+        $gen_much_sus75 = "password crack" wide ascii
+        $gen_much_sus76 = "mysqlDll.dll" wide ascii
+        $gen_much_sus77 = "net user" wide ascii
+        $gen_much_sus78 = "suhosin.executor.disable_" wide ascii
+        $gen_much_sus79 = "disabled_suhosin" wide ascii
+        $gen_much_sus80 = "fopen(\".htaccess\",\"w" wide ascii
+        $gen_much_sus81 = /strrev\(['"]/ wide ascii
+        $gen_much_sus82 = "PHPShell" fullword wide ascii
+        $gen_much_sus821= "PHP Shell" fullword wide ascii
+        $gen_much_sus83 = "phpshell" fullword wide ascii
+        $gen_much_sus84 = "PHPshell" fullword wide ascii
+        $gen_much_sus87 = "deface" wide ascii
+        $gen_much_sus88 = "Deface" wide ascii
+        $gen_much_sus89 = "backdoor" wide ascii
+        $gen_much_sus90 = "r00t" fullword wide ascii
+        $gen_much_sus91 = "xp_cmdshell" fullword wide ascii
+
+        $gif = { 47 49 46 38 }
+
+	
+		//strings from private rule capa_php_payload_multiple
+		// \([^)] to avoid matching on e.g. eval() in comments
+		$cmpayload1 = /\beval[\t ]*\([^)]/ nocase wide ascii
+		$cmpayload2 = /\bexec[\t ]*\([^)]/ nocase wide ascii
+		$cmpayload3 = /\bshell_exec[\t ]*\([^)]/ nocase wide ascii
+		$cmpayload4 = /\bpassthru[\t ]*\([^)]/ nocase wide ascii
+		$cmpayload5 = /\bsystem[\t ]*\([^)]/ nocase wide ascii
+		$cmpayload6 = /\bpopen[\t ]*\([^)]/ nocase wide ascii
+		$cmpayload7 = /\bproc_open[\t ]*\([^)]/ nocase wide ascii
+		$cmpayload8 = /\bpcntl_exec[\t ]*\([^)]/ nocase wide ascii
+		$cmpayload9 = /\bassert[\t ]*\([^)0]/ nocase wide ascii
+		$cmpayload10 = /\bpreg_replace[\t ]*\([^\)]{1,100}\/e/ nocase wide ascii
+		$cmpayload11 = /\bpreg_filter[\t ]*\([^\)]{1,100}\/e/ nocase wide ascii
+		$cmpayload12 = /\bmb_ereg_replace[\t ]*\([^\)]{1,100}'e'/ nocase wide ascii
+		$cmpayload20 = /\bcreate_function[\t ]*\([^)]/ nocase wide ascii
+		$cmpayload21 = /\bReflectionFunction[\t ]*\([^)]/ nocase wide ascii
+	
 	condition:
-		filesize < 1000 and not ( 
+		not ( 
 			any of ( $gfp_tiny* ) 
 		)
 		and ( 
@@ -162,12 +318,60 @@ rule webshell_php_generic_tiny
 			any of ( $inp* ) 
 		)
 		and ( 
-			any of ( $cpayload* ) 
+			any of ( $cpayload* ) or
+        all of ( $m_cpayload_preg_filter* ) 
 		)
-		
+		and 
+		( ( filesize < 1000 and not any of ( $wfp_tiny* ) ) or 
+		( ( 
+        $gif at 0 or
+        (
+            filesize < 4KB and 
+            (
+                1 of ( $gen_much_sus* ) or
+                2 of ( $gen_bit_sus* )
+            )
+        ) or (
+            filesize < 20KB and 
+            (
+                2 of ( $gen_much_sus* ) or
+                3 of ( $gen_bit_sus* )
+            )
+        ) or (
+            filesize < 50KB and 
+            (
+                2 of ( $gen_much_sus* ) or
+                4 of ( $gen_bit_sus* )
+            )
+        ) or (
+            filesize < 100KB and 
+            (
+                2 of ( $gen_much_sus* ) or
+                6 of ( $gen_bit_sus* )
+            )
+        ) or (
+            filesize < 150KB and 
+            (
+                3 of ( $gen_much_sus* ) or
+                7 of ( $gen_bit_sus* )
+            )
+        ) or (
+            filesize < 500KB and 
+            (
+                4 of ( $gen_much_sus* ) or
+                8 of ( $gen_bit_sus* )
+            )
+        ) 
+		)
+		and 
+		( filesize > 5KB or not any of ( $wfp_tiny* ) ) ) or 
+		( filesize < 500KB and ( 
+			4 of ( $cmpayload* ) 
+		)
+		) )
 }
 
-rule webshell_php_generic_callback_tiny
+rule webshell_php_generic_callback
 {
 	meta:
 		description = "php webshell having some kind of input and using a callback to execute the payload. restricted to small files or would give lots of false positives"
@@ -196,8 +400,8 @@ rule webshell_php_generic_callback_tiny
 	
 		//strings from private rule php_false_positive_tiny
 		// try to use only strings which would be flagged by themselves as suspicous by other rules, e.g. eval 
-		$gfp_tiny1 = "addslashes" fullword
-		$gfp_tiny2 = "escapeshellarg" fullword
+		//$gfp_tiny1 = "addslashes" fullword
+		//$gfp_tiny2 = "escapeshellarg" fullword
 		$gfp_tiny3 = "include \"./common.php\";" // xcache
 		$gfp_tiny4 = "assert('FALSE');"
 		$gfp_tiny5 = "assert(false);"
@@ -205,16 +409,23 @@ rule webshell_php_generic_callback_tiny
 		$gfp_tiny7 = "assert('array_key_exists("
 		$gfp_tiny8 = "echo shell_exec($aspellcommand . ' 2>&1');"
 		$gfp_tiny9 = "throw new Exception('Could not find authentication source with id ' . $sourceId);"
+		$gfp_tiny10= "return isset( $_POST[ $key ] ) ? $_POST[ $key ] : ( isset( $_REQUEST[ $key ] ) ? $_REQUEST[ $key ] : $default );"
 	
 		//strings from private rule capa_php_input
 		$inp1 = "php://input" wide ascii
-		$inp2 = "_GET[" wide ascii
-		$inp3 = "_POST[" wide ascii
-		$inp4 = "_REQUEST[" wide ascii
+		$inp2 = /_GET\s?\[/ wide ascii
+        // for passing $_GET to a function 
+		$inp3 = /\(\s?\$_GET\s?\)/ wide ascii
+		$inp4 = /_POST\s?\[/ wide ascii
+		$inp5 = /\(\s?\$_POST\s?\)/ wide ascii
+		$inp6 = /_REQUEST\s?\[/ wide ascii
+		$inp7 = /\(\s?\$_REQUEST\s?\)/ wide ascii
 		// PHP automatically adds all the request headers into the $_SERVER global array, prefixing each header name by the "HTTP_" string, so e.g. @eval($_SERVER['HTTP_CMD']) will run any code in the HTTP header CMD
-		$inp5 = "_SERVER['HTTP_" wide ascii
-		$inp6 = "_SERVER[\"HTTP_" wide ascii
-		$inp7 = /getenv[\t ]{0,20}\([\t ]{0,20}['"]HTTP_/ wide ascii
+		$inp15 = "_SERVER['HTTP_" wide ascii
+		$inp16 = "_SERVER[\"HTTP_" wide ascii
+		$inp17 = /getenv[\t ]{0,20}\([\t ]{0,20}['"]HTTP_/ wide ascii
+		$inp18 = "array_values($_SERVER)" wide ascii
+		$inp19 = /file_get_contents\("https?:\/\// wide ascii
 	
 		//strings from private rule capa_php_callback
 		$callback1 = /\bob_start[\t ]*\([^)]/ nocase wide ascii
@@ -249,13 +460,143 @@ rule webshell_php_generic_callback_tiny
 		$callback30 = /\bsession_set_save_handler[\t ]*\([^)]/ nocase wide ascii
 		$callback31 = /\bsqlite_create_aggregate[\t ]*\([^)]/ nocase wide ascii
 		$callback32 = /\bsqlite_create_function[\t ]*\([^)]/ nocase wide ascii
+		$callback33 = /\bmb_ereg_replace_callback[\t ]*\([^)]/ nocase wide ascii
+
+		$m_callback1 = /\bfilter_var[\t ]*\([^)]/ nocase wide ascii
+		$m_callback2 = "FILTER_CALLBACK" fullword wide ascii
 
 		$cfp1 = /ob_start\(['\"]ob_gzhandler/ nocase wide ascii
         $cfp2 = "IWPML_Backend_Action_Loader" ascii wide
 		$cfp3 = "<?phpclass WPML" ascii
 	
+		//strings from private rule capa_gen_sus
+
+        // these strings are just a bit suspicious, so several of them are needed, depending on filesize
+        $gen_bit_sus1  = /:\s{0,20}eval}/ nocase wide ascii
+        $gen_bit_sus2  = /\.replace\(\/\w\/g/ nocase wide ascii
+        $gen_bit_sus6  = "self.delete"
+        $gen_bit_sus9  = "\"cmd /c" nocase
+        $gen_bit_sus10 = "\"cmd\"" nocase
+        $gen_bit_sus11 = "\"cmd.exe" nocase
+        $gen_bit_sus12 = "%comspec%" wide ascii
+        $gen_bit_sus13 = "%COMSPEC%" wide ascii
+        //TODO:$gen_bit_sus12 = ".UserName" nocase
+        $gen_bit_sus18 = "Hklm.GetValueNames();" nocase
+        // bonus string for proxylogon exploiting webshells
+        $gen_bit_sus19 = "http://schemas.microsoft.com/exchange/" wide ascii
+        $gen_bit_sus21 = "\"upload\"" wide ascii
+        $gen_bit_sus22 = "\"Upload\"" wide ascii
+        $gen_bit_sus23 = "UPLOAD" fullword wide ascii
+        $gen_bit_sus24 = "fileupload" wide ascii
+        $gen_bit_sus25 = "file_upload" wide ascii
+        // own base64 func
+        $gen_bit_sus29 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789" fullword wide ascii
+        $gen_bit_sus30 = "serv-u" wide ascii
+        $gen_bit_sus31 = "Serv-u" wide ascii
+        $gen_bit_sus32 = "Army" fullword wide ascii
+        // single letter paramweter
+        $gen_bit_sus33 = /\$_(GET|POST|REQUEST)\["\w"\]/ fullword wide ascii
+        $gen_bit_sus34 = "Content-Transfer-Encoding: Binary" wide ascii
+        $gen_bit_sus35 = "crack" fullword wide ascii
+
+        $gen_bit_sus44 = "<pre>" wide ascii
+        $gen_bit_sus45 = "<PRE>" wide ascii
+        $gen_bit_sus46 = "shell_" wide ascii
+        $gen_bit_sus47 = "Shell" fullword wide ascii
+        $gen_bit_sus50 = "bypass" wide ascii
+        $gen_bit_sus51 = "suhosin" wide ascii
+        $gen_bit_sus52 = " ^ $" wide ascii
+        $gen_bit_sus53 = ".ssh/authorized_keys" wide ascii
+        $gen_bit_sus55 = /\w'\.'\w/ wide ascii
+        $gen_bit_sus56 = /\w\"\.\"\w/ wide ascii
+        $gen_bit_sus57 = "dumper" wide ascii
+        $gen_bit_sus59 = "'cmd'" wide ascii
+        $gen_bit_sus60 = "\"execute\"" wide ascii
+        $gen_bit_sus61 = "/bin/sh" wide ascii
+        $gen_bit_sus62 = "Cyber" wide ascii
+        $gen_bit_sus63 = "portscan" fullword wide ascii
+        //$gen_bit_sus64 = "\"command\"" fullword wide ascii
+        //$gen_bit_sus65 = "'command'" fullword wide ascii
+        $gen_bit_sus66 = "whoami" fullword wide ascii
+        $gen_bit_sus67 = "$password='" fullword wide ascii
+        $gen_bit_sus68 = "$password=\"" fullword wide ascii
+        $gen_bit_sus69 = "$cmd" fullword wide ascii
+        $gen_bit_sus70 = "\"?>\"." fullword wide ascii
+        $gen_bit_sus71 = "Hacking" fullword wide ascii
+        $gen_bit_sus72 = "hacking" fullword wide ascii
+        $gen_bit_sus73 = ".htpasswd" wide ascii
+        $gen_bit_sus74 = /\btouch\(\$[^,]{1,30},/ wide ascii
+
+        // very suspicious strings, one is enough
+        $gen_much_sus7  = "Web Shell" nocase
+        $gen_much_sus8  = "WebShell" nocase
+        $gen_much_sus3  = "hidded shell" 
+        $gen_much_sus4  = "WScript.Shell.1" nocase
+        $gen_much_sus5  = "AspExec" 
+        $gen_much_sus14 = "\\pcAnywhere\\" nocase
+        $gen_much_sus15 = "antivirus" nocase
+        $gen_much_sus16 = "McAfee" nocase
+        $gen_much_sus17 = "nishang" 
+        $gen_much_sus18 = "\"unsafe" fullword wide ascii
+        $gen_much_sus19 = "'unsafe" fullword wide ascii
+        $gen_much_sus24 = "exploit" fullword wide ascii
+        $gen_much_sus25 = "Exploit" fullword wide ascii
+        $gen_much_sus26 = "TVqQAAMAAA" wide ascii
+        $gen_much_sus30 = "Hacker" wide ascii
+        $gen_much_sus31 = "HACKED" fullword wide ascii
+        $gen_much_sus32 = "hacked" fullword wide ascii
+        $gen_much_sus33 = "hacker" wide ascii
+        $gen_much_sus34 = "grayhat" nocase wide ascii
+        $gen_much_sus35 = "Microsoft FrontPage" wide ascii
+        $gen_much_sus36 = "Rootkit" wide ascii
+        $gen_much_sus37 = "rootkit" wide ascii
+        $gen_much_sus38 = "/*-/*-*/" wide ascii
+        $gen_much_sus39 = "u\"+\"n\"+\"s" wide ascii
+        $gen_much_sus40 = "\"e\"+\"v" wide ascii
+        $gen_much_sus41 = "a\"+\"l\"" wide ascii
+        $gen_much_sus42 = "\"+\"(\"+\"" wide ascii
+        $gen_much_sus43 = "q\"+\"u\"" wide ascii
+        $gen_much_sus44 = "\"u\"+\"e" wide ascii
+        $gen_much_sus45 = "/*//*/" wide ascii
+        $gen_much_sus46 = "(\"/*/\"" wide ascii
+        $gen_much_sus47 = "eval(eval(" wide ascii
+        // self remove
+        $gen_much_sus48 = "unlink(__FILE__)" wide ascii
+        $gen_much_sus49 = "Shell.Users" wide ascii
+        $gen_much_sus50 = "PasswordType=Regular" wide ascii
+        $gen_much_sus51 = "-Expire=0" wide ascii
+        $gen_much_sus60 = "_=$$_" wide ascii
+        $gen_much_sus61 = "_=$$_" wide ascii
+        $gen_much_sus62 = "++;$" wide ascii
+        $gen_much_sus63 = "++; $" wide ascii
+        $gen_much_sus64 = "_.=$_" wide ascii
+        $gen_much_sus70 = "-perm -04000" wide ascii
+        $gen_much_sus71 = "-perm -02000" wide ascii
+        $gen_much_sus72 = "grep -li password" wide ascii
+        $gen_much_sus73 = "-name config.inc.php" wide ascii
+        // touch without parameters sets the time to now, not malicious and gives fp
+        $gen_much_sus75 = "password crack" wide ascii
+        $gen_much_sus76 = "mysqlDll.dll" wide ascii
+        $gen_much_sus77 = "net user" wide ascii
+        $gen_much_sus78 = "suhosin.executor.disable_" wide ascii
+        $gen_much_sus79 = "disabled_suhosin" wide ascii
+        $gen_much_sus80 = "fopen(\".htaccess\",\"w" wide ascii
+        $gen_much_sus81 = /strrev\(['"]/ wide ascii
+        $gen_much_sus82 = "PHPShell" fullword wide ascii
+        $gen_much_sus821= "PHP Shell" fullword wide ascii
+        $gen_much_sus83 = "phpshell" fullword wide ascii
+        $gen_much_sus84 = "PHPshell" fullword wide ascii
+        $gen_much_sus87 = "deface" wide ascii
+        $gen_much_sus88 = "Deface" wide ascii
+        $gen_much_sus89 = "backdoor" wide ascii
+        $gen_much_sus90 = "r00t" fullword wide ascii
+        $gen_much_sus91 = "xp_cmdshell" fullword wide ascii
+
+        $gif = { 47 49 46 38 }
+
+	
 	condition:
-		filesize < 1000 and not ( 
+		not ( 
 			any of ( $gfp* ) 
 		)
 		and not ( 
@@ -265,10 +606,54 @@ rule webshell_php_generic_callback_tiny
 			any of ( $inp* ) 
 		)
 		and ( 
-			any of ( $callback* ) and
-			not any of ( $cfp* ) 
+			not any of ( $cfp* ) and
+        (
+            any of ( $callback* )  or
+            all of ( $m_callback* )
+        ) 
 		)
-		
+		and 
+		( filesize < 1000 or ( 
+        $gif at 0 or
+        (
+            filesize < 4KB and 
+            (
+                1 of ( $gen_much_sus* ) or
+                2 of ( $gen_bit_sus* )
+            )
+        ) or (
+            filesize < 20KB and 
+            (
+                2 of ( $gen_much_sus* ) or
+                3 of ( $gen_bit_sus* )
+            )
+        ) or (
+            filesize < 50KB and 
+            (
+                2 of ( $gen_much_sus* ) or
+                4 of ( $gen_bit_sus* )
+            )
+        ) or (
+            filesize < 100KB and 
+            (
+                2 of ( $gen_much_sus* ) or
+                6 of ( $gen_bit_sus* )
+            )
+        ) or (
+            filesize < 150KB and 
+            (
+                3 of ( $gen_much_sus* ) or
+                7 of ( $gen_bit_sus* )
+            )
+        ) or (
+            filesize < 500KB and 
+            (
+                4 of ( $gen_much_sus* ) or
+                8 of ( $gen_bit_sus* )
+            )
+        ) 
+		)
+		)
 }
 
 rule webshell_php_base64_encoded_payloads
@@ -433,7 +818,8 @@ rule webshell_php_generic_eval
 		date = "2021/01/07"
 
 	strings:
-		$geval = /\b(exec|shell_exec|passthru|system|popen|proc_open|pcntl_exec|eval|assert)[\t ]*(stripslashes\()?[\t ]*(trim\()?[\t ]*\(\$(_POST|_GET|_REQUEST|_SERVER\[['"]HTTP_)/ wide ascii
+        // new: eval($GLOBALS['_POST'
+		$geval = /\b(exec|shell_exec|passthru|system|popen|proc_open|pcntl_exec|eval|assert)[\t ]*(\(base64_decode)?(\(stripslashes)?[\t ]*(\(trim)?[\t ]*\(\$(_POST|_GET|_REQUEST|_SERVER\s?\[['"]HTTP_|GLOBALS\[['"]_(POST|GET|REQUEST))/ wide ascii
 	
 		//strings from private rule php_false_positive
 		// try to use only strings which would be flagged by themselves as suspicous by other rules, e.g. eval 
@@ -472,14 +858,31 @@ rule webshell_php_double_eval_tiny
 		$payload = /(\beval[\t ]*\([^)]|\bassert[\t ]*\([^)])/ nocase wide ascii
 		$fp1 = "clone" fullword wide ascii
 	
-		//strings from private rule capa_php
-		// this will hit on a lot of non-php files, asp, scripting templates, ... but it works on older php versions
-		$php_tag1 = "<?" wide ascii
-		$php_tag2 = "<script language=\"php" nocase wide ascii
+		//strings from private rule capa_php_old_safe
+		$php_short = "<?" wide ascii
+		// prevent xml and asp from hitting with the short tag
+		$no_xml1 = "<?xml version" nocase wide ascii
+		$no_xml2 = "<?xml-stylesheet" nocase wide ascii
+		$no_asp1 = "<%@LANGUAGE" nocase wide ascii
+		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
+		$no_pdf = "<?xpacket" 
+
+		// of course the new tags should also match
+        // already matched by "<?"
+		$php_new1 = /<\?=[^?]/ wide ascii
+		$php_new2 = "<?php" nocase wide ascii
+		$php_new3 = "<script language=\"php" nocase wide ascii
 	
 	condition:
 		filesize > 70 and filesize < 300 and ( 
-			any of ( $php_tag* ) 
+			(
+				( 
+						$php_short in (0..100) or 
+						$php_short in (filesize-1000..filesize)
+				)
+				and not any of ( $no_* )
+			) 
+			or any of ( $php_new* ) 
 		)
 		and #payload >= 2 and not any of ( $fp* )
 }
@@ -495,6 +898,22 @@ rule webshell_php_obfuscated
 
 	strings:
 
+		//strings from private rule php_false_positive
+		// try to use only strings which would be flagged by themselves as suspicous by other rules, e.g. eval 
+        // a good choice is a string with good atom quality = ideally 4 unusual characters next to each other
+		$gfp1  = "eval(\"return [$serialised_parameter" // elgg
+		$gfp2  = "$this->assert(strpos($styles, $"
+		$gfp3  = "$module = new $_GET['module']($_GET['scope']);"
+		$gfp4  = "$plugin->$_POST['action']($_POST['id']);"
+		$gfp5  = "$_POST[partition_by]($_POST["
+		$gfp6  = "$object = new $_REQUEST['type']($_REQUEST['id']);"
+		$gfp7  = "The above example code can be easily exploited by passing in a string such as" // ... ;)
+		$gfp8  = "Smarty_Internal_Debug::start_render($_template);"
+		$gfp9  = "?p4yl04d=UNION%20SELECT%20'<?%20system($_GET['command']);%20?>',2,3%20INTO%20OUTFILE%20'/var/www/w3bsh3ll.php"
+		$gfp10 = "[][}{;|]\\|\\\\[+=]\\|<?=>?"
+		$gfp11 = "(eval (getenv \"EPROLOG\")))"
+		$gfp12 = "ZmlsZV9nZXRfY29udGVudHMoJ2h0dHA6Ly9saWNlbnNlLm9wZW5jYXJ0LWFwaS5jb20vbGljZW5zZS5waHA/b3JkZXJ"
+	
 		//strings from private rule capa_php_old_safe
 		$php_short = "<?" wide ascii
 		// prevent xml and asp from hitting with the short tag
@@ -524,22 +943,6 @@ rule webshell_php_obfuscated
 		$o9 = "\\120" wide ascii
 		$fp1 = "$goto" wide ascii
 	
-		//strings from private rule php_false_positive
-		// try to use only strings which would be flagged by themselves as suspicous by other rules, e.g. eval 
-        // a good choice is a string with good atom quality = ideally 4 unusual characters next to each other
-		$gfp1  = "eval(\"return [$serialised_parameter" // elgg
-		$gfp2  = "$this->assert(strpos($styles, $"
-		$gfp3  = "$module = new $_GET['module']($_GET['scope']);"
-		$gfp4  = "$plugin->$_POST['action']($_POST['id']);"
-		$gfp5  = "$_POST[partition_by]($_POST["
-		$gfp6  = "$object = new $_REQUEST['type']($_REQUEST['id']);"
-		$gfp7  = "The above example code can be easily exploited by passing in a string such as" // ... ;)
-		$gfp8  = "Smarty_Internal_Debug::start_render($_template);"
-		$gfp9  = "?p4yl04d=UNION%20SELECT%20'<?%20system($_GET['command']);%20?>',2,3%20INTO%20OUTFILE%20'/var/www/w3bsh3ll.php"
-		$gfp10 = "[][}{;|]\\|\\\\[+=]\\|<?=>?"
-		$gfp11 = "(eval (getenv \"EPROLOG\")))"
-		$gfp12 = "ZmlsZV9nZXRfY29udGVudHMoJ2h0dHA6Ly9saWNlbnNlLm9wZW5jYXJ0LWFwaS5jb20vbGljZW5zZS5waHA/b3JkZXJ"
-	
 		//strings from private rule capa_php_payload
 		// \([^)] to avoid matching on e.g. eval() in comments
 		$cpayload1 = /\beval[\t ]*\([^)]/ nocase wide ascii
@@ -550,15 +953,22 @@ rule webshell_php_obfuscated
 		$cpayload6 = /\bpopen[\t ]*\([^)]/ nocase wide ascii
 		$cpayload7 = /\bproc_open[\t ]*\([^)]/ nocase wide ascii
 		$cpayload8 = /\bpcntl_exec[\t ]*\([^)]/ nocase wide ascii
-		$cpayload9 = /\bassert[\t ]*\([^)]/ nocase wide ascii
-		$cpayload10 = /\bpreg_replace[\t ]*\([^\)]1,1000}\/e/ nocase wide ascii
-		$cpayload11 = /\bcreate_function[\t ]*\([^)]/ nocase wide ascii
-		$cpayload12 = /\bReflectionFunction[\t ]*\([^)]/ nocase wide ascii
-		// TODO: $_GET['func_name']($_GET['argument']);
+		$cpayload9 = /\bassert[\t ]*\([^)0]/ nocase wide ascii
+		$cpayload10 = /\bpreg_replace[\t ]*\(.{1,100}\/[ismxADSUXju]{0,11}(e|\\x65)/ nocase wide ascii
+		$cpayload12 = /\bmb_ereg_replace[\t ]*\([^\)]{1,100}'e'/ nocase wide ascii
+		$cpayload13 = /\bmb_eregi_replace[\t ]*\([^\)]{1,100}'e'/ nocase wide ascii
+		$cpayload20 = /\bcreate_function[\t ]*\([^)]/ nocase wide ascii
+		$cpayload21 = /\bReflectionFunction[\t ]*\([^)]/ nocase wide ascii
+
+		$m_cpayload_preg_filter1 = /\bpreg_filter[\t ]*\([^\)]/ nocase wide ascii
+		$m_cpayload_preg_filter2 = "'|.*|e'" nocase wide ascii
 		// TODO backticks
 	
 	condition:
-		( 
+		not ( 
+			any of ( $gfp* ) 
+		)
+		and ( 
 			(
 				( 
 						$php_short in (0..100) or 
@@ -591,13 +1001,187 @@ rule webshell_php_obfuscated
 
  
 		)
-		and not ( 
+		and ( 
+			any of ( $cpayload* ) or
+        all of ( $m_cpayload_preg_filter* ) 
+		)
+		
+}
+
+rule webshell_php_obfuscated_encoding
+{
+	meta:
+		description = "PHP webshell obfuscated by encoding"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		author = "Arnim Rupp"
+		date = "2021/04/18"
+
+	strings:
+        // one without plain e, one without plain v, to avoid hitting on plain "eval("
+		$enc_eval1 = /(e|\\x65|\\101)(\\x76|\\118)(a|\\x61|\\97)(l|\\x6c|\\108)(\(|\\x28|\\40)/ wide ascii nocase
+		$enc_eval2 = /(\\x65|\\101)(v|\\x76|\\118)(a|\\x61|\\97)(l|\\x6c|\\108)(\(|\\x28|\\40)/ wide ascii nocase
+        // one without plain a, one without plain s, to avoid hitting on plain "assert("
+		$enc_assert1 = /(a|\\97|\\x61)(\\115|\\x73)(s|\\115|\\x73)(e|\\101|\\x65)(r|\\114|\\x72)(t|\\116|\\x74)(\(|\\x28|\\40)/ wide ascii nocase
+		$enc_assert2 = /(\\97|\\x61)(s|\\115|\\x73)(s|\\115|\\x73)(e|\\101|\\x65)(r|\\114|\\x72)(t|\\116|\\x74)(\(|\\x28|\\40)/ wide ascii nocase
+	
+		//strings from private rule capa_php_old_safe
+		$php_short = "<?" wide ascii
+		// prevent xml and asp from hitting with the short tag
+		$no_xml1 = "<?xml version" nocase wide ascii
+		$no_xml2 = "<?xml-stylesheet" nocase wide ascii
+		$no_asp1 = "<%@LANGUAGE" nocase wide ascii
+		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
+		$no_pdf = "<?xpacket" 
+
+		// of course the new tags should also match
+        // already matched by "<?"
+		$php_new1 = /<\?=[^?]/ wide ascii
+		$php_new2 = "<?php" nocase wide ascii
+		$php_new3 = "<script language=\"php" nocase wide ascii
+	
+	condition:
+		filesize < 700KB and ( 
+			(
+				( 
+						$php_short in (0..100) or 
+						$php_short in (filesize-1000..filesize)
+				)
+				and not any of ( $no_* )
+			) 
+			or any of ( $php_new* ) 
+		)
+		and any of ( $enc* )
+}
+
+rule webshell_php_obfuscated_encoding_mixed_dec_and_hex
+{
+	meta:
+		description = "PHP webshell obfuscated by encoding of mixed hex and dec"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		author = "Arnim Rupp"
+		date = "2021/04/18"
+
+	strings:
+        // "e\x4a\x48\x5a\x70\x63\62\154\x30\131\171\101\x39\111\x43\x52\x66\x51\
+		//$mix = /['"]\\x?[0-9a-f]{2,3}[\\\w]{2,20}\\\d{1,3}[\\\w]{2,20}\\x[0-9a-f]{2}\\/ wide ascii nocase
+		$mix = /['"](\w|\\x?[0-9a-f]{2,3})[\\x0-9a-f]{2,20}\\\d{1,3}[\\x0-9a-f]{2,20}\\x[0-9a-f]{2}\\/ wide ascii nocase
+
+	
+		//strings from private rule capa_php_old_safe
+		$php_short = "<?" wide ascii
+		// prevent xml and asp from hitting with the short tag
+		$no_xml1 = "<?xml version" nocase wide ascii
+		$no_xml2 = "<?xml-stylesheet" nocase wide ascii
+		$no_asp1 = "<%@LANGUAGE" nocase wide ascii
+		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
+		$no_pdf = "<?xpacket" 
+
+		// of course the new tags should also match
+        // already matched by "<?"
+		$php_new1 = /<\?=[^?]/ wide ascii
+		$php_new2 = "<?php" nocase wide ascii
+		$php_new3 = "<script language=\"php" nocase wide ascii
+	
+	condition:
+		filesize < 700KB and ( 
+			(
+				( 
+						$php_short in (0..100) or 
+						$php_short in (filesize-1000..filesize)
+				)
+				and not any of ( $no_* )
+			) 
+			or any of ( $php_new* ) 
+		)
+		and any of ( $mix* )
+}
+
+rule webshell_php_obfuscated_tiny
+{
+	meta:
+		description = "PHP webshell obfuscated"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		author = "Arnim Rupp"
+		date = "2021/01/12"
+
+	strings:
+        // 'ev'.'al'
+        $obf1 = /\w'\.'\w/ wide ascii
+        $obf2 = /\w\"\.\"\w/ wide ascii
+        $obf3 = "].$" wide ascii
+	
+		//strings from private rule php_false_positive
+		// try to use only strings which would be flagged by themselves as suspicous by other rules, e.g. eval 
+        // a good choice is a string with good atom quality = ideally 4 unusual characters next to each other
+		$gfp1  = "eval(\"return [$serialised_parameter" // elgg
+		$gfp2  = "$this->assert(strpos($styles, $"
+		$gfp3  = "$module = new $_GET['module']($_GET['scope']);"
+		$gfp4  = "$plugin->$_POST['action']($_POST['id']);"
+		$gfp5  = "$_POST[partition_by]($_POST["
+		$gfp6  = "$object = new $_REQUEST['type']($_REQUEST['id']);"
+		$gfp7  = "The above example code can be easily exploited by passing in a string such as" // ... ;)
+		$gfp8  = "Smarty_Internal_Debug::start_render($_template);"
+		$gfp9  = "?p4yl04d=UNION%20SELECT%20'<?%20system($_GET['command']);%20?>',2,3%20INTO%20OUTFILE%20'/var/www/w3bsh3ll.php"
+		$gfp10 = "[][}{;|]\\|\\\\[+=]\\|<?=>?"
+		$gfp11 = "(eval (getenv \"EPROLOG\")))"
+		$gfp12 = "ZmlsZV9nZXRfY29udGVudHMoJ2h0dHA6Ly9saWNlbnNlLm9wZW5jYXJ0LWFwaS5jb20vbGljZW5zZS5waHA/b3JkZXJ"
+	
+		//strings from private rule capa_php_old_safe
+		$php_short = "<?" wide ascii
+		// prevent xml and asp from hitting with the short tag
+		$no_xml1 = "<?xml version" nocase wide ascii
+		$no_xml2 = "<?xml-stylesheet" nocase wide ascii
+		$no_asp1 = "<%@LANGUAGE" nocase wide ascii
+		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
+		$no_pdf = "<?xpacket" 
+
+		// of course the new tags should also match
+        // already matched by "<?"
+		$php_new1 = /<\?=[^?]/ wide ascii
+		$php_new2 = "<?php" nocase wide ascii
+		$php_new3 = "<script language=\"php" nocase wide ascii
+	
+		//strings from private rule capa_php_payload
+		// \([^)] to avoid matching on e.g. eval() in comments
+		$cpayload1 = /\beval[\t ]*\([^)]/ nocase wide ascii
+		$cpayload2 = /\bexec[\t ]*\([^)]/ nocase wide ascii
+		$cpayload3 = /\bshell_exec[\t ]*\([^)]/ nocase wide ascii
+		$cpayload4 = /\bpassthru[\t ]*\([^)]/ nocase wide ascii
+		$cpayload5 = /\bsystem[\t ]*\([^)]/ nocase wide ascii
+		$cpayload6 = /\bpopen[\t ]*\([^)]/ nocase wide ascii
+		$cpayload7 = /\bproc_open[\t ]*\([^)]/ nocase wide ascii
+		$cpayload8 = /\bpcntl_exec[\t ]*\([^)]/ nocase wide ascii
+		$cpayload9 = /\bassert[\t ]*\([^)0]/ nocase wide ascii
+		$cpayload10 = /\bpreg_replace[\t ]*\(.{1,100}\/[ismxADSUXju]{0,11}(e|\\x65)/ nocase wide ascii
+		$cpayload12 = /\bmb_ereg_replace[\t ]*\([^\)]{1,100}'e'/ nocase wide ascii
+		$cpayload13 = /\bmb_eregi_replace[\t ]*\([^\)]{1,100}'e'/ nocase wide ascii
+		$cpayload20 = /\bcreate_function[\t ]*\([^)]/ nocase wide ascii
+		$cpayload21 = /\bReflectionFunction[\t ]*\([^)]/ nocase wide ascii
+
+		$m_cpayload_preg_filter1 = /\bpreg_filter[\t ]*\([^\)]/ nocase wide ascii
+		$m_cpayload_preg_filter2 = "'|.*|e'" nocase wide ascii
+		// TODO backticks
+	
+	condition:
+		filesize < 500 and not ( 
 			any of ( $gfp* ) 
 		)
 		and ( 
-			any of ( $cpayload* ) 
+			(
+				( 
+						$php_short in (0..100) or 
+						$php_short in (filesize-1000..filesize)
+				)
+				and not any of ( $no_* )
+			) 
+			or any of ( $php_new* ) 
 		)
-		
+		and ( 
+			any of ( $cpayload* ) or
+        all of ( $m_cpayload_preg_filter* ) 
+		)
+		and 
+		( ( #obf1 + #obf2 ) > 2 or #obf3 > 10 )
 }
 
 rule webshell_php_obfuscated_str_replace
@@ -721,15 +1305,11 @@ rule webshell_php_gzinflated
 		hash = "49e5bc75a1ec36beeff4fbaeb16b322b08cf192d"
 
 	strings:
-		$php = "<?" wide ascii
-		$payload1 = "eval(gzinflate(base64_decode(" wide ascii
-		$payload2 = "eval(\"?>\".gzinflate(base64_decode(" wide ascii
-		$payload3 = "eval(gzuncompress(base64_decode(" wide ascii
-		$payload4 = "eval(\"?>\".gzuncompress(base64_decode(" wide ascii
-		$payload5 = "eval(gzdecode(base64_decode(" wide ascii
-		$payload6 = "eval(\"?>\".gzdecode(base64_decode(" wide ascii
-		$payload7 = "eval(base64_decode(" wide ascii
-		$payload8 = "eval(pack(" wide ascii
+		$payload2 = /eval\s?\(\s?("\?>".)?gzinflate\s?\(\s?base64_decode\s?\(/ wide ascii nocase
+		$payload4 = /eval\s?\(\s?("\?>".)?gzuncompress\s?\(\s?(base64_decode|gzuncompress)/ wide ascii nocase
+		$payload6 = /eval\s?\(\s?("\?>".)?gzdecode\s?\(\s?base64_decode\s?\(/ wide ascii nocase
+		$payload7 = /eval\s?\(\s?base64_decode\s?\(/ wide ascii nocase
+		$payload8 = /eval\s?\(\s?pack\s?\(/ wide ascii nocase
 
         // api.telegram
         $fp1 = "YXBpLnRlbGVncmFtLm9" 
@@ -750,30 +1330,347 @@ rule webshell_php_gzinflated
 		$gfp11 = "(eval (getenv \"EPROLOG\")))"
 		$gfp12 = "ZmlsZV9nZXRfY29udGVudHMoJ2h0dHA6Ly9saWNlbnNlLm9wZW5jYXJ0LWFwaS5jb20vbGljZW5zZS5waHA/b3JkZXJ"
 	
+		//strings from private rule capa_php_old_safe
+		$php_short = "<?" wide ascii
+		// prevent xml and asp from hitting with the short tag
+		$no_xml1 = "<?xml version" nocase wide ascii
+		$no_xml2 = "<?xml-stylesheet" nocase wide ascii
+		$no_asp1 = "<%@LANGUAGE" nocase wide ascii
+		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
+		$no_pdf = "<?xpacket" 
+
+		// of course the new tags should also match
+        // already matched by "<?"
+		$php_new1 = /<\?=[^?]/ wide ascii
+		$php_new2 = "<?php" nocase wide ascii
+		$php_new3 = "<script language=\"php" nocase wide ascii
+	
 	condition:
 		filesize < 700KB and not ( 
 			any of ( $gfp* ) 
 		)
-		and $php and 1 of ( $payload* ) and not any of ( $fp* )
+		and ( 
+			(
+				( 
+						$php_short in (0..100) or 
+						$php_short in (filesize-1000..filesize)
+				)
+				and not any of ( $no_* )
+			) 
+			or any of ( $php_new* ) 
+		)
+		and 1 of ( $payload* ) and not any of ( $fp* )
 }
 
-rule webshell_php_obfuscated_2
+rule webshell_php_obfuscated_3
 {
 	meta:
 		description = "PHP webshell which eval()s obfuscated string"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Arnim Rupp"
-		hash = "1d4b374d284c12db881ba42ee63ebce2759e0b14"
+		date = "2021/04/17"
+
+	strings:
+        $obf1 = "chr(" wide ascii
+	
+		//strings from private rule capa_php_old_safe
+		$php_short = "<?" wide ascii
+		// prevent xml and asp from hitting with the short tag
+		$no_xml1 = "<?xml version" nocase wide ascii
+		$no_xml2 = "<?xml-stylesheet" nocase wide ascii
+		$no_asp1 = "<%@LANGUAGE" nocase wide ascii
+		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
+		$no_pdf = "<?xpacket" 
+
+		// of course the new tags should also match
+        // already matched by "<?"
+		$php_new1 = /<\?=[^?]/ wide ascii
+		$php_new2 = "<?php" nocase wide ascii
+		$php_new3 = "<script language=\"php" nocase wide ascii
+	
+		//strings from private rule capa_php_callback
+		$callback1 = /\bob_start[\t ]*\([^)]/ nocase wide ascii
+		$callback2 = /\barray_diff_uassoc[\t ]*\([^)]/ nocase wide ascii
+		$callback3 = /\barray_diff_ukey[\t ]*\([^)]/ nocase wide ascii
+		$callback4 = /\barray_filter[\t ]*\([^)]/ nocase wide ascii
+		$callback5 = /\barray_intersect_uassoc[\t ]*\([^)]/ nocase wide ascii
+		$callback6 = /\barray_intersect_ukey[\t ]*\([^)]/ nocase wide ascii
+		$callback7 = /\barray_map[\t ]*\([^)]/ nocase wide ascii
+		$callback8 = /\barray_reduce[\t ]*\([^)]/ nocase wide ascii
+		$callback9 = /\barray_udiff_assoc[\t ]*\([^)]/ nocase wide ascii
+		$callback10 = /\barray_udiff_uassoc[\t ]*\([^)]/ nocase wide ascii
+		$callback11 = /\barray_udiff[\t ]*\([^)]/ nocase wide ascii
+		$callback12 = /\barray_uintersect_assoc[\t ]*\([^)]/ nocase wide ascii
+		$callback13 = /\barray_uintersect_uassoc[\t ]*\([^)]/ nocase wide ascii
+		$callback14 = /\barray_uintersect[\t ]*\([^)]/ nocase wide ascii
+		$callback15 = /\barray_walk_recursive[\t ]*\([^)]/ nocase wide ascii
+		$callback16 = /\barray_walk[\t ]*\([^)]/ nocase wide ascii
+		$callback17 = /\bassert_options[\t ]*\([^)]/ nocase wide ascii
+		$callback18 = /\buasort[\t ]*\([^)]/ nocase wide ascii
+		$callback19 = /\buksort[\t ]*\([^)]/ nocase wide ascii
+		$callback20 = /\busort[\t ]*\([^)]/ nocase wide ascii
+		$callback21 = /\bpreg_replace_callback[\t ]*\([^)]/ nocase wide ascii
+		$callback22 = /\bspl_autoload_register[\t ]*\([^)]/ nocase wide ascii
+		$callback23 = /\biterator_apply[\t ]*\([^)]/ nocase wide ascii
+		$callback24 = /\bcall_user_func[\t ]*\([^)]/ nocase wide ascii
+		$callback25 = /\bcall_user_func_array[\t ]*\([^)]/ nocase wide ascii
+		$callback26 = /\bregister_shutdown_function[\t ]*\([^)]/ nocase wide ascii
+		$callback27 = /\bregister_tick_function[\t ]*\([^)]/ nocase wide ascii
+		$callback28 = /\bset_error_handler[\t ]*\([^)]/ nocase wide ascii
+		$callback29 = /\bset_exception_handler[\t ]*\([^)]/ nocase wide ascii
+		$callback30 = /\bsession_set_save_handler[\t ]*\([^)]/ nocase wide ascii
+		$callback31 = /\bsqlite_create_aggregate[\t ]*\([^)]/ nocase wide ascii
+		$callback32 = /\bsqlite_create_function[\t ]*\([^)]/ nocase wide ascii
+		$callback33 = /\bmb_ereg_replace_callback[\t ]*\([^)]/ nocase wide ascii
+
+		$m_callback1 = /\bfilter_var[\t ]*\([^)]/ nocase wide ascii
+		$m_callback2 = "FILTER_CALLBACK" fullword wide ascii
+
+		$cfp1 = /ob_start\(['\"]ob_gzhandler/ nocase wide ascii
+        $cfp2 = "IWPML_Backend_Action_Loader" ascii wide
+		$cfp3 = "<?phpclass WPML" ascii
+	
+		//strings from private rule capa_php_payload
+		// \([^)] to avoid matching on e.g. eval() in comments
+		$cpayload1 = /\beval[\t ]*\([^)]/ nocase wide ascii
+		$cpayload2 = /\bexec[\t ]*\([^)]/ nocase wide ascii
+		$cpayload3 = /\bshell_exec[\t ]*\([^)]/ nocase wide ascii
+		$cpayload4 = /\bpassthru[\t ]*\([^)]/ nocase wide ascii
+		$cpayload5 = /\bsystem[\t ]*\([^)]/ nocase wide ascii
+		$cpayload6 = /\bpopen[\t ]*\([^)]/ nocase wide ascii
+		$cpayload7 = /\bproc_open[\t ]*\([^)]/ nocase wide ascii
+		$cpayload8 = /\bpcntl_exec[\t ]*\([^)]/ nocase wide ascii
+		$cpayload9 = /\bassert[\t ]*\([^)0]/ nocase wide ascii
+		$cpayload10 = /\bpreg_replace[\t ]*\(.{1,100}\/[ismxADSUXju]{0,11}(e|\\x65)/ nocase wide ascii
+		$cpayload12 = /\bmb_ereg_replace[\t ]*\([^\)]{1,100}'e'/ nocase wide ascii
+		$cpayload13 = /\bmb_eregi_replace[\t ]*\([^\)]{1,100}'e'/ nocase wide ascii
+		$cpayload20 = /\bcreate_function[\t ]*\([^)]/ nocase wide ascii
+		$cpayload21 = /\bReflectionFunction[\t ]*\([^)]/ nocase wide ascii
+
+		$m_cpayload_preg_filter1 = /\bpreg_filter[\t ]*\([^\)]/ nocase wide ascii
+		$m_cpayload_preg_filter2 = "'|.*|e'" nocase wide ascii
+		// TODO backticks
+	
+		//strings from private rule capa_php_obfuscation_single
+		$cobfs1 = "gzinflate" fullword nocase wide ascii
+		$cobfs2 = "gzuncompress" fullword nocase wide ascii
+		$cobfs3 = "gzdecode" fullword nocase wide ascii
+		$cobfs4 = "base64_decode" fullword nocase wide ascii
+		$cobfs5 = "pack" fullword nocase wide ascii
+		$cobfs6 = "undecode" fullword nocase wide ascii
+	
+		//strings from private rule capa_gen_sus
+
+        // these strings are just a bit suspicious, so several of them are needed, depending on filesize
+        $gen_bit_sus1  = /:\s{0,20}eval}/ nocase wide ascii
+        $gen_bit_sus2  = /\.replace\(\/\w\/g/ nocase wide ascii
+        $gen_bit_sus6  = "self.delete"
+        $gen_bit_sus9  = "\"cmd /c" nocase
+        $gen_bit_sus10 = "\"cmd\"" nocase
+        $gen_bit_sus11 = "\"cmd.exe" nocase
+        $gen_bit_sus12 = "%comspec%" wide ascii
+        $gen_bit_sus13 = "%COMSPEC%" wide ascii
+        //TODO:$gen_bit_sus12 = ".UserName" nocase
+        $gen_bit_sus18 = "Hklm.GetValueNames();" nocase
+        // bonus string for proxylogon exploiting webshells
+        $gen_bit_sus19 = "http://schemas.microsoft.com/exchange/" wide ascii
+        $gen_bit_sus21 = "\"upload\"" wide ascii
+        $gen_bit_sus22 = "\"Upload\"" wide ascii
+        $gen_bit_sus23 = "UPLOAD" fullword wide ascii
+        $gen_bit_sus24 = "fileupload" wide ascii
+        $gen_bit_sus25 = "file_upload" wide ascii
+        // own base64 func
+        $gen_bit_sus29 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789" fullword wide ascii
+        $gen_bit_sus30 = "serv-u" wide ascii
+        $gen_bit_sus31 = "Serv-u" wide ascii
+        $gen_bit_sus32 = "Army" fullword wide ascii
+        // single letter paramweter
+        $gen_bit_sus33 = /\$_(GET|POST|REQUEST)\["\w"\]/ fullword wide ascii
+        $gen_bit_sus34 = "Content-Transfer-Encoding: Binary" wide ascii
+        $gen_bit_sus35 = "crack" fullword wide ascii
+
+        $gen_bit_sus44 = "<pre>" wide ascii
+        $gen_bit_sus45 = "<PRE>" wide ascii
+        $gen_bit_sus46 = "shell_" wide ascii
+        $gen_bit_sus47 = "Shell" fullword wide ascii
+        $gen_bit_sus50 = "bypass" wide ascii
+        $gen_bit_sus51 = "suhosin" wide ascii
+        $gen_bit_sus52 = " ^ $" wide ascii
+        $gen_bit_sus53 = ".ssh/authorized_keys" wide ascii
+        $gen_bit_sus55 = /\w'\.'\w/ wide ascii
+        $gen_bit_sus56 = /\w\"\.\"\w/ wide ascii
+        $gen_bit_sus57 = "dumper" wide ascii
+        $gen_bit_sus59 = "'cmd'" wide ascii
+        $gen_bit_sus60 = "\"execute\"" wide ascii
+        $gen_bit_sus61 = "/bin/sh" wide ascii
+        $gen_bit_sus62 = "Cyber" wide ascii
+        $gen_bit_sus63 = "portscan" fullword wide ascii
+        //$gen_bit_sus64 = "\"command\"" fullword wide ascii
+        //$gen_bit_sus65 = "'command'" fullword wide ascii
+        $gen_bit_sus66 = "whoami" fullword wide ascii
+        $gen_bit_sus67 = "$password='" fullword wide ascii
+        $gen_bit_sus68 = "$password=\"" fullword wide ascii
+        $gen_bit_sus69 = "$cmd" fullword wide ascii
+        $gen_bit_sus70 = "\"?>\"." fullword wide ascii
+        $gen_bit_sus71 = "Hacking" fullword wide ascii
+        $gen_bit_sus72 = "hacking" fullword wide ascii
+        $gen_bit_sus73 = ".htpasswd" wide ascii
+        $gen_bit_sus74 = /\btouch\(\$[^,]{1,30},/ wide ascii
+
+        // very suspicious strings, one is enough
+        $gen_much_sus7  = "Web Shell" nocase
+        $gen_much_sus8  = "WebShell" nocase
+        $gen_much_sus3  = "hidded shell" 
+        $gen_much_sus4  = "WScript.Shell.1" nocase
+        $gen_much_sus5  = "AspExec" 
+        $gen_much_sus14 = "\\pcAnywhere\\" nocase
+        $gen_much_sus15 = "antivirus" nocase
+        $gen_much_sus16 = "McAfee" nocase
+        $gen_much_sus17 = "nishang" 
+        $gen_much_sus18 = "\"unsafe" fullword wide ascii
+        $gen_much_sus19 = "'unsafe" fullword wide ascii
+        $gen_much_sus24 = "exploit" fullword wide ascii
+        $gen_much_sus25 = "Exploit" fullword wide ascii
+        $gen_much_sus26 = "TVqQAAMAAA" wide ascii
+        $gen_much_sus30 = "Hacker" wide ascii
+        $gen_much_sus31 = "HACKED" fullword wide ascii
+        $gen_much_sus32 = "hacked" fullword wide ascii
+        $gen_much_sus33 = "hacker" wide ascii
+        $gen_much_sus34 = "grayhat" nocase wide ascii
+        $gen_much_sus35 = "Microsoft FrontPage" wide ascii
+        $gen_much_sus36 = "Rootkit" wide ascii
+        $gen_much_sus37 = "rootkit" wide ascii
+        $gen_much_sus38 = "/*-/*-*/" wide ascii
+        $gen_much_sus39 = "u\"+\"n\"+\"s" wide ascii
+        $gen_much_sus40 = "\"e\"+\"v" wide ascii
+        $gen_much_sus41 = "a\"+\"l\"" wide ascii
+        $gen_much_sus42 = "\"+\"(\"+\"" wide ascii
+        $gen_much_sus43 = "q\"+\"u\"" wide ascii
+        $gen_much_sus44 = "\"u\"+\"e" wide ascii
+        $gen_much_sus45 = "/*//*/" wide ascii
+        $gen_much_sus46 = "(\"/*/\"" wide ascii
+        $gen_much_sus47 = "eval(eval(" wide ascii
+        // self remove
+        $gen_much_sus48 = "unlink(__FILE__)" wide ascii
+        $gen_much_sus49 = "Shell.Users" wide ascii
+        $gen_much_sus50 = "PasswordType=Regular" wide ascii
+        $gen_much_sus51 = "-Expire=0" wide ascii
+        $gen_much_sus60 = "_=$$_" wide ascii
+        $gen_much_sus61 = "_=$$_" wide ascii
+        $gen_much_sus62 = "++;$" wide ascii
+        $gen_much_sus63 = "++; $" wide ascii
+        $gen_much_sus64 = "_.=$_" wide ascii
+        $gen_much_sus70 = "-perm -04000" wide ascii
+        $gen_much_sus71 = "-perm -02000" wide ascii
+        $gen_much_sus72 = "grep -li password" wide ascii
+        $gen_much_sus73 = "-name config.inc.php" wide ascii
+        // touch without parameters sets the time to now, not malicious and gives fp
+        $gen_much_sus75 = "password crack" wide ascii
+        $gen_much_sus76 = "mysqlDll.dll" wide ascii
+        $gen_much_sus77 = "net user" wide ascii
+        $gen_much_sus78 = "suhosin.executor.disable_" wide ascii
+        $gen_much_sus79 = "disabled_suhosin" wide ascii
+        $gen_much_sus80 = "fopen(\".htaccess\",\"w" wide ascii
+        $gen_much_sus81 = /strrev\(['"]/ wide ascii
+        $gen_much_sus82 = "PHPShell" fullword wide ascii
+        $gen_much_sus821= "PHP Shell" fullword wide ascii
+        $gen_much_sus83 = "phpshell" fullword wide ascii
+        $gen_much_sus84 = "PHPshell" fullword wide ascii
+        $gen_much_sus87 = "deface" wide ascii
+        $gen_much_sus88 = "Deface" wide ascii
+        $gen_much_sus89 = "backdoor" wide ascii
+        $gen_much_sus90 = "r00t" fullword wide ascii
+        $gen_much_sus91 = "xp_cmdshell" fullword wide ascii
+
+        $gif = { 47 49 46 38 }
+
+	
+	condition:
+		( 
+			(
+				( 
+						$php_short in (0..100) or 
+						$php_short in (filesize-1000..filesize)
+				)
+				and not any of ( $no_* )
+			) 
+			or any of ( $php_new* ) 
+		)
+		and 
+		( ( 
+			not any of ( $cfp* ) and
+        (
+            any of ( $callback* )  or
+            all of ( $m_callback* )
+        ) 
+		)
+		or ( 
+			any of ( $cpayload* ) or
+        all of ( $m_cpayload_preg_filter* ) 
+		)
+		) and ( 
+			any of ( $cobfs* ) 
+		)
+		and 
+		( filesize < 1KB or 
+		( filesize < 3KB and 
+		( ( 
+        $gif at 0 or
+        (
+            filesize < 4KB and 
+            (
+                1 of ( $gen_much_sus* ) or
+                2 of ( $gen_bit_sus* )
+            )
+        ) or (
+            filesize < 20KB and 
+            (
+                2 of ( $gen_much_sus* ) or
+                3 of ( $gen_bit_sus* )
+            )
+        ) or (
+            filesize < 50KB and 
+            (
+                2 of ( $gen_much_sus* ) or
+                4 of ( $gen_bit_sus* )
+            )
+        ) or (
+            filesize < 100KB and 
+            (
+                2 of ( $gen_much_sus* ) or
+                6 of ( $gen_bit_sus* )
+            )
+        ) or (
+            filesize < 150KB and 
+            (
+                3 of ( $gen_much_sus* ) or
+                7 of ( $gen_bit_sus* )
+            )
+        ) or (
+            filesize < 500KB and 
+            (
+                4 of ( $gen_much_sus* ) or
+                8 of ( $gen_bit_sus* )
+            )
+        ) 
+		)
+		or #obf1 > 10 ) ) )
+}
+
+rule webshell_php_includer_eval
+{
+	meta:
+		description = "PHP webshell which eval()s another included file"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		author = "Arnim Rupp"
+		hash = "3a07e9188028efa32872ba5b6e5363920a6b2489"
 		date = "2021/01/13"
 
 	strings:
-		// <?php function vUMmFr($MkUOmK) { $MkUOmK=gzinflate(base64_decode($MkUOmK)); for($i=0;$i<strlen($MkUOmK);$i++) { $MkUOmK[$i] = chr(ord($MkUOmK[$i])-1); } return $MkUOmK; }eval
-		$obf1 = "function" fullword wide ascii
-		$obf2 = "base64_decode" fullword wide ascii
-		$obf3 = "chr" fullword wide ascii
-		$obf4 = "ord" fullword wide ascii
 		$payload1 = "eval" fullword wide ascii
 		$payload2 = "assert" fullword wide ascii
+		$include1 = "$_FILE" wide ascii
+		$include2 = "include" wide ascii
 	
 		//strings from private rule capa_php_old_safe
 		$php_short = "<?" wide ascii
@@ -791,7 +1688,7 @@ rule webshell_php_obfuscated_2
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
 	condition:
-		filesize < 300KB and ( 
+		filesize < 200 and ( 
 			(
 				( 
 						$php_short in (0..100) or 
@@ -801,34 +1698,47 @@ rule webshell_php_obfuscated_2
 			) 
 			or any of ( $php_new* ) 
 		)
-		and 1 of ( $payload* ) and $obf1 in ( 0 .. 500 ) and $obf2 in ( 0 .. 500 ) and $obf3 in ( 0 .. 500 ) and $obf4 in ( 0 .. 500 )
+		and 1 of ( $payload* ) and 1 of ( $include* )
 }
 
-rule webshell_php_includer
+rule webshell_php_includer_tiny
 {
 	meta:
-		description = "PHP webshell which eval()s another included file"
+		description = "Suspicious: Might be PHP webshell includer, check the included file"
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Arnim Rupp"
-		hash = "3a07e9188028efa32872ba5b6e5363920a6b2489"
-		date = "2021/01/13"
+		date = "2021/04/17"
 
 	strings:
-		$payload1 = "eval" fullword wide ascii
-		$payload2 = "assert" fullword wide ascii
-		$include1 = "$_FILE" wide ascii
-		$include2 = "include" wide ascii
+		$php_include1 = /include\(\$_(GET|POST|REQUEST)\[/ nocase wide ascii
 	
-		//strings from private rule capa_php
-		// this will hit on a lot of non-php files, asp, scripting templates, ... but it works on older php versions
-		$php_tag1 = "<?" wide ascii
-		$php_tag2 = "<script language=\"php" nocase wide ascii
+		//strings from private rule capa_php_old_safe
+		$php_short = "<?" wide ascii
+		// prevent xml and asp from hitting with the short tag
+		$no_xml1 = "<?xml version" nocase wide ascii
+		$no_xml2 = "<?xml-stylesheet" nocase wide ascii
+		$no_asp1 = "<%@LANGUAGE" nocase wide ascii
+		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
+		$no_pdf = "<?xpacket" 
+
+		// of course the new tags should also match
+        // already matched by "<?"
+		$php_new1 = /<\?=[^?]/ wide ascii
+		$php_new2 = "<?php" nocase wide ascii
+		$php_new3 = "<script language=\"php" nocase wide ascii
 	
 	condition:
-		filesize < 200 and ( 
-			any of ( $php_tag* ) 
+		filesize < 100 and ( 
+			(
+				( 
+						$php_short in (0..100) or 
+						$php_short in (filesize-1000..filesize)
+				)
+				and not any of ( $no_* )
+			) 
+			or any of ( $php_new* ) 
 		)
-		and 1 of ( $payload* ) and 1 of ( $include* )
+		and any of ( $php_include* )
 }
 
 rule webshell_php_dynamic
@@ -847,22 +1757,41 @@ rule webshell_php_dynamic
 		$pd_fp1 = "whoops_add_stack_frame" wide ascii
 		$pd_fp2 = "new $ec($code, $mode, $options, $userinfo);" wide ascii
 	
-		//strings from private rule capa_php
-		// this will hit on a lot of non-php files, asp, scripting templates, ... but it works on older php versions
-		$php_tag1 = "<?" wide ascii
-		$php_tag2 = "<script language=\"php" nocase wide ascii
+		//strings from private rule capa_php_old_safe
+		$php_short = "<?" wide ascii
+		// prevent xml and asp from hitting with the short tag
+		$no_xml1 = "<?xml version" nocase wide ascii
+		$no_xml2 = "<?xml-stylesheet" nocase wide ascii
+		$no_asp1 = "<%@LANGUAGE" nocase wide ascii
+		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
+		$no_pdf = "<?xpacket" 
+
+		// of course the new tags should also match
+        // already matched by "<?"
+		$php_new1 = /<\?=[^?]/ wide ascii
+		$php_new2 = "<?php" nocase wide ascii
+		$php_new3 = "<script language=\"php" nocase wide ascii
 	
 		//strings from private rule capa_php_dynamic
-		$dynamic1 = /\$[a-zA-Z0-9_]{1,10}\(\$/ wide ascii
-		$dynamic2 = /\$[a-zA-Z0-9_]{1,10}\("/ wide ascii
-		$dynamic3 = /\$[a-zA-Z0-9_]{1,10}\('/ wide ascii
-		$dynamic4 = /\$[a-zA-Z0-9_]{1,10}\(str/ wide ascii
-		$dynamic5 = /\$[a-zA-Z0-9_]{1,10}\(\)/ wide ascii
-		$dynamic6 = /\$[a-zA-Z0-9_]{1,10}\(@/ wide ascii
+        // php variable regex from https://www.php.net/manual/en/language.variables.basics.php
+		$dynamic1 = /\$[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff\[\]'"]{0,20}\(\$/ wide ascii
+		$dynamic2 = /\$[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff\[\]'"]{0,20}\("/ wide ascii
+		$dynamic3 = /\$[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff\[\]'"]{0,20}\('/ wide ascii
+		$dynamic4 = /\$[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff\[\]'"]{0,20}\(str/ wide ascii
+		$dynamic5 = /\$[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff\[\]'"]{0,20}\(\)/ wide ascii
+		$dynamic6 = /\$[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff\[\]'"]{0,20}\(@/ wide ascii
+		$dynamic7 = /\$[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff\[\]'"]{0,20}\(base64_decode/ wide ascii
 	
 	condition:
 		filesize > 20 and filesize < 200 and ( 
-			any of ( $php_tag* ) 
+			(
+				( 
+						$php_short in (0..100) or 
+						$php_short in (filesize-1000..filesize)
+				)
+				and not any of ( $no_* )
+			) 
+			or any of ( $php_new* ) 
 		)
 		and ( 
 			any of ( $dynamic* ) 
@@ -881,39 +1810,235 @@ rule webshell_php_dynamic_big
 
 	strings:
 
-		//strings from private rule capa_php_new
-		$new_php1 = /<\?=[^?]/ wide ascii
+		//strings from private rule capa_bin_files
+        $dex   = { 64 65 ( 78 | 79 ) 0a 30 }
+        $pack  = { 50 41 43 4b 00 00 00 02 00 }
+	
+		//strings from private rule capa_php_new_long
+		// no <?=
 		$new_php2 = "<?php" nocase wide ascii
 		$new_php3 = "<script language=\"php" nocase wide ascii
+        $php_short = "<?"
 	
 		//strings from private rule capa_php_dynamic
-		$dynamic1 = /\$[a-zA-Z0-9_]{1,10}\(\$/ wide ascii
-		$dynamic2 = /\$[a-zA-Z0-9_]{1,10}\("/ wide ascii
-		$dynamic3 = /\$[a-zA-Z0-9_]{1,10}\('/ wide ascii
-		$dynamic4 = /\$[a-zA-Z0-9_]{1,10}\(str/ wide ascii
-		$dynamic5 = /\$[a-zA-Z0-9_]{1,10}\(\)/ wide ascii
-		$dynamic6 = /\$[a-zA-Z0-9_]{1,10}\(@/ wide ascii
+        // php variable regex from https://www.php.net/manual/en/language.variables.basics.php
+		$dynamic1 = /\$[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff\[\]'"]{0,20}\(\$/ wide ascii
+		$dynamic2 = /\$[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff\[\]'"]{0,20}\("/ wide ascii
+		$dynamic3 = /\$[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff\[\]'"]{0,20}\('/ wide ascii
+		$dynamic4 = /\$[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff\[\]'"]{0,20}\(str/ wide ascii
+		$dynamic5 = /\$[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff\[\]'"]{0,20}\(\)/ wide ascii
+		$dynamic6 = /\$[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff\[\]'"]{0,20}\(@/ wide ascii
+		$dynamic7 = /\$[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff\[\]'"]{0,20}\(base64_decode/ wide ascii
+	
+		//strings from private rule capa_gen_sus
+
+        // these strings are just a bit suspicious, so several of them are needed, depending on filesize
+        $gen_bit_sus1  = /:\s{0,20}eval}/ nocase wide ascii
+        $gen_bit_sus2  = /\.replace\(\/\w\/g/ nocase wide ascii
+        $gen_bit_sus6  = "self.delete"
+        $gen_bit_sus9  = "\"cmd /c" nocase
+        $gen_bit_sus10 = "\"cmd\"" nocase
+        $gen_bit_sus11 = "\"cmd.exe" nocase
+        $gen_bit_sus12 = "%comspec%" wide ascii
+        $gen_bit_sus13 = "%COMSPEC%" wide ascii
+        //TODO:$gen_bit_sus12 = ".UserName" nocase
+        $gen_bit_sus18 = "Hklm.GetValueNames();" nocase
+        // bonus string for proxylogon exploiting webshells
+        $gen_bit_sus19 = "http://schemas.microsoft.com/exchange/" wide ascii
+        $gen_bit_sus21 = "\"upload\"" wide ascii
+        $gen_bit_sus22 = "\"Upload\"" wide ascii
+        $gen_bit_sus23 = "UPLOAD" fullword wide ascii
+        $gen_bit_sus24 = "fileupload" wide ascii
+        $gen_bit_sus25 = "file_upload" wide ascii
+        // own base64 func
+        $gen_bit_sus29 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789" fullword wide ascii
+        $gen_bit_sus30 = "serv-u" wide ascii
+        $gen_bit_sus31 = "Serv-u" wide ascii
+        $gen_bit_sus32 = "Army" fullword wide ascii
+        // single letter paramweter
+        $gen_bit_sus33 = /\$_(GET|POST|REQUEST)\["\w"\]/ fullword wide ascii
+        $gen_bit_sus34 = "Content-Transfer-Encoding: Binary" wide ascii
+        $gen_bit_sus35 = "crack" fullword wide ascii
+
+        $gen_bit_sus44 = "<pre>" wide ascii
+        $gen_bit_sus45 = "<PRE>" wide ascii
+        $gen_bit_sus46 = "shell_" wide ascii
+        $gen_bit_sus47 = "Shell" fullword wide ascii
+        $gen_bit_sus50 = "bypass" wide ascii
+        $gen_bit_sus51 = "suhosin" wide ascii
+        $gen_bit_sus52 = " ^ $" wide ascii
+        $gen_bit_sus53 = ".ssh/authorized_keys" wide ascii
+        $gen_bit_sus55 = /\w'\.'\w/ wide ascii
+        $gen_bit_sus56 = /\w\"\.\"\w/ wide ascii
+        $gen_bit_sus57 = "dumper" wide ascii
+        $gen_bit_sus59 = "'cmd'" wide ascii
+        $gen_bit_sus60 = "\"execute\"" wide ascii
+        $gen_bit_sus61 = "/bin/sh" wide ascii
+        $gen_bit_sus62 = "Cyber" wide ascii
+        $gen_bit_sus63 = "portscan" fullword wide ascii
+        //$gen_bit_sus64 = "\"command\"" fullword wide ascii
+        //$gen_bit_sus65 = "'command'" fullword wide ascii
+        $gen_bit_sus66 = "whoami" fullword wide ascii
+        $gen_bit_sus67 = "$password='" fullword wide ascii
+        $gen_bit_sus68 = "$password=\"" fullword wide ascii
+        $gen_bit_sus69 = "$cmd" fullword wide ascii
+        $gen_bit_sus70 = "\"?>\"." fullword wide ascii
+        $gen_bit_sus71 = "Hacking" fullword wide ascii
+        $gen_bit_sus72 = "hacking" fullword wide ascii
+        $gen_bit_sus73 = ".htpasswd" wide ascii
+        $gen_bit_sus74 = /\btouch\(\$[^,]{1,30},/ wide ascii
+
+        // very suspicious strings, one is enough
+        $gen_much_sus7  = "Web Shell" nocase
+        $gen_much_sus8  = "WebShell" nocase
+        $gen_much_sus3  = "hidded shell" 
+        $gen_much_sus4  = "WScript.Shell.1" nocase
+        $gen_much_sus5  = "AspExec" 
+        $gen_much_sus14 = "\\pcAnywhere\\" nocase
+        $gen_much_sus15 = "antivirus" nocase
+        $gen_much_sus16 = "McAfee" nocase
+        $gen_much_sus17 = "nishang" 
+        $gen_much_sus18 = "\"unsafe" fullword wide ascii
+        $gen_much_sus19 = "'unsafe" fullword wide ascii
+        $gen_much_sus24 = "exploit" fullword wide ascii
+        $gen_much_sus25 = "Exploit" fullword wide ascii
+        $gen_much_sus26 = "TVqQAAMAAA" wide ascii
+        $gen_much_sus30 = "Hacker" wide ascii
+        $gen_much_sus31 = "HACKED" fullword wide ascii
+        $gen_much_sus32 = "hacked" fullword wide ascii
+        $gen_much_sus33 = "hacker" wide ascii
+        $gen_much_sus34 = "grayhat" nocase wide ascii
+        $gen_much_sus35 = "Microsoft FrontPage" wide ascii
+        $gen_much_sus36 = "Rootkit" wide ascii
+        $gen_much_sus37 = "rootkit" wide ascii
+        $gen_much_sus38 = "/*-/*-*/" wide ascii
+        $gen_much_sus39 = "u\"+\"n\"+\"s" wide ascii
+        $gen_much_sus40 = "\"e\"+\"v" wide ascii
+        $gen_much_sus41 = "a\"+\"l\"" wide ascii
+        $gen_much_sus42 = "\"+\"(\"+\"" wide ascii
+        $gen_much_sus43 = "q\"+\"u\"" wide ascii
+        $gen_much_sus44 = "\"u\"+\"e" wide ascii
+        $gen_much_sus45 = "/*//*/" wide ascii
+        $gen_much_sus46 = "(\"/*/\"" wide ascii
+        $gen_much_sus47 = "eval(eval(" wide ascii
+        // self remove
+        $gen_much_sus48 = "unlink(__FILE__)" wide ascii
+        $gen_much_sus49 = "Shell.Users" wide ascii
+        $gen_much_sus50 = "PasswordType=Regular" wide ascii
+        $gen_much_sus51 = "-Expire=0" wide ascii
+        $gen_much_sus60 = "_=$$_" wide ascii
+        $gen_much_sus61 = "_=$$_" wide ascii
+        $gen_much_sus62 = "++;$" wide ascii
+        $gen_much_sus63 = "++; $" wide ascii
+        $gen_much_sus64 = "_.=$_" wide ascii
+        $gen_much_sus70 = "-perm -04000" wide ascii
+        $gen_much_sus71 = "-perm -02000" wide ascii
+        $gen_much_sus72 = "grep -li password" wide ascii
+        $gen_much_sus73 = "-name config.inc.php" wide ascii
+        // touch without parameters sets the time to now, not malicious and gives fp
+        $gen_much_sus75 = "password crack" wide ascii
+        $gen_much_sus76 = "mysqlDll.dll" wide ascii
+        $gen_much_sus77 = "net user" wide ascii
+        $gen_much_sus78 = "suhosin.executor.disable_" wide ascii
+        $gen_much_sus79 = "disabled_suhosin" wide ascii
+        $gen_much_sus80 = "fopen(\".htaccess\",\"w" wide ascii
+        $gen_much_sus81 = /strrev\(['"]/ wide ascii
+        $gen_much_sus82 = "PHPShell" fullword wide ascii
+        $gen_much_sus821= "PHP Shell" fullword wide ascii
+        $gen_much_sus83 = "phpshell" fullword wide ascii
+        $gen_much_sus84 = "PHPshell" fullword wide ascii
+        $gen_much_sus87 = "deface" wide ascii
+        $gen_much_sus88 = "Deface" wide ascii
+        $gen_much_sus89 = "backdoor" wide ascii
+        $gen_much_sus90 = "r00t" fullword wide ascii
+        $gen_much_sus91 = "xp_cmdshell" fullword wide ascii
+
+        $gif = { 47 49 46 38 }
+
 	
 	condition:
-		filesize < 3000KB and ( 
-			any of ( $new_php* ) 
+		filesize < 500KB and not ( 
+        uint16(0) == 0x5a4d or 
+        $dex at 0 or 
+        $pack at 0 or 
+        // fp on jar with zero compression
+        uint16(0) == 0x4b50 
+		)
+		and ( 
+			any of ( $new_php* ) or
+        $php_short at 0 
 		)
 		and ( 
 			any of ( $dynamic* ) 
 		)
-		and ( 
+		and 
+		( ( 
 			// file shouldn't be too small to have big enough data for math.entropy
 			filesize > 2KB and 
-			// ignore first and last 500bytes because they usually contain code for decoding and executing
-			math.entropy(500, filesize-500) >= 5.7 and
-			// encoded text has a higher mean than text or code because it's missing the spaces and special chars with the low numbers
-			math.mean(500, filesize-500) > 80 and
-			// deviation of base64 is ~20 according to CyberChef_v9.21.0.html#recipe=Generate_Lorem_Ipsum(3,'Paragraphs')To_Base64('A-Za-z0-9%2B/%3D')To_Charcode('Space',10)Standard_Deviation('Space')
-			// lets take a bit more because it might not be pure base64 also include some xor, shift, replacement, ...
-			// 89 is the mean of the base64 chars
-			math.deviation(500, filesize-500, 89.0) < 23 
+        (
+            // base64 : 
+            // ignore first and last 500bytes because they usually contain code for decoding and executing
+            math.entropy(500, filesize-500) >= 5.7 and
+            // encoded text has a higher mean than text or code because it's missing the spaces and special chars with the low numbers
+            math.mean(500, filesize-500) > 80 and
+            // deviation of base64 is ~20 according to CyberChef_v9.21.0.html#recipe=Generate_Lorem_Ipsum(3,'Paragraphs')To_Base64('A-Za-z0-9%2B/%3D')To_Charcode('Space',10)Standard_Deviation('Space')
+            // lets take a bit more because it might not be pure base64 also include some xor, shift, replacement, ...
+            // 89 is the mean of the base64 chars
+            math.deviation(500, filesize-500, 89.0) < 23
+        ) or (
+            // gzinflated binary sometimes used in php webshells
+            // ignore first and last 500bytes because they usually contain code for decoding and executing
+            math.entropy(500, filesize-500) >= 7.7 and
+            // encoded text has a higher mean than text or code because it's missing the spaces and special chars with the low numbers
+            math.mean(500, filesize-500) > 120 and
+            math.mean(500, filesize-500) < 136 and
+            // deviation of base64 is ~20 according to CyberChef_v9.21.0.html#recipe=Generate_Lorem_Ipsum(3,'Paragraphs')To_Base64('A-Za-z0-9%2B/%3D')To_Charcode('Space',10)Standard_Deviation('Space')
+            // lets take a bit more because it might not be pure base64 also include some xor, shift, replacement, ...
+            // 89 is the mean of the base64 chars
+            math.deviation(500, filesize-500, 89.0) > 65
+        ) 
 		)
-		
+		or ( 
+        $gif at 0 or
+        (
+            filesize < 4KB and 
+            (
+                1 of ( $gen_much_sus* ) or
+                2 of ( $gen_bit_sus* )
+            )
+        ) or (
+            filesize < 20KB and 
+            (
+                2 of ( $gen_much_sus* ) or
+                3 of ( $gen_bit_sus* )
+            )
+        ) or (
+            filesize < 50KB and 
+            (
+                2 of ( $gen_much_sus* ) or
+                4 of ( $gen_bit_sus* )
+            )
+        ) or (
+            filesize < 100KB and 
+            (
+                2 of ( $gen_much_sus* ) or
+                6 of ( $gen_bit_sus* )
+            )
+        ) or (
+            filesize < 150KB and 
+            (
+                3 of ( $gen_much_sus* ) or
+                7 of ( $gen_bit_sus* )
+            )
+        ) or (
+            filesize < 500KB and 
+            (
+                4 of ( $gen_much_sus* ) or
+                8 of ( $gen_bit_sus* )
+            )
+        ) 
+		)
+		)
 }
 
 rule webshell_php_encoded_big
@@ -924,13 +2049,15 @@ rule webshell_php_encoded_big
 		author = "Arnim Rupp"
 		date = "2021/02/07"
 		score = 50
+		hash = "1d4b374d284c12db881ba42ee63ebce2759e0b14"
 
 	strings:
 
 		//strings from private rule capa_php_new
-		$new_php1 = /<\?=[^?]/ wide ascii
+		$new_php1 = /<\?=[\w\s@$]/ wide ascii
 		$new_php2 = "<?php" nocase wide ascii
 		$new_php3 = "<script language=\"php" nocase wide ascii
+        $php_short = "<?"
 	
 		//strings from private rule capa_php_payload
 		// \([^)] to avoid matching on e.g. eval() in comments
@@ -942,31 +2069,51 @@ rule webshell_php_encoded_big
 		$cpayload6 = /\bpopen[\t ]*\([^)]/ nocase wide ascii
 		$cpayload7 = /\bproc_open[\t ]*\([^)]/ nocase wide ascii
 		$cpayload8 = /\bpcntl_exec[\t ]*\([^)]/ nocase wide ascii
-		$cpayload9 = /\bassert[\t ]*\([^)]/ nocase wide ascii
-		$cpayload10 = /\bpreg_replace[\t ]*\([^\)]1,1000}\/e/ nocase wide ascii
-		$cpayload11 = /\bcreate_function[\t ]*\([^)]/ nocase wide ascii
-		$cpayload12 = /\bReflectionFunction[\t ]*\([^)]/ nocase wide ascii
-		// TODO: $_GET['func_name']($_GET['argument']);
+		$cpayload9 = /\bassert[\t ]*\([^)0]/ nocase wide ascii
+		$cpayload10 = /\bpreg_replace[\t ]*\(.{1,100}\/[ismxADSUXju]{0,11}(e|\\x65)/ nocase wide ascii
+		$cpayload12 = /\bmb_ereg_replace[\t ]*\([^\)]{1,100}'e'/ nocase wide ascii
+		$cpayload13 = /\bmb_eregi_replace[\t ]*\([^\)]{1,100}'e'/ nocase wide ascii
+		$cpayload20 = /\bcreate_function[\t ]*\([^)]/ nocase wide ascii
+		$cpayload21 = /\bReflectionFunction[\t ]*\([^)]/ nocase wide ascii
+
+		$m_cpayload_preg_filter1 = /\bpreg_filter[\t ]*\([^\)]/ nocase wide ascii
+		$m_cpayload_preg_filter2 = "'|.*|e'" nocase wide ascii
 		// TODO backticks
 	
 	condition:
-		filesize < 3000KB and ( 
-			any of ( $new_php* ) 
+		filesize < 1000KB and ( 
+			any of ( $new_php* ) or
+        $php_short at 0 
 		)
 		and ( 
-			any of ( $cpayload* ) 
+			any of ( $cpayload* ) or
+        all of ( $m_cpayload_preg_filter* ) 
 		)
 		and ( 
 			// file shouldn't be too small to have big enough data for math.entropy
 			filesize > 2KB and 
-			// ignore first and last 500bytes because they usually contain code for decoding and executing
-			math.entropy(500, filesize-500) >= 5.7 and
-			// encoded text has a higher mean than text or code because it's missing the spaces and special chars with the low numbers
-			math.mean(500, filesize-500) > 80 and
-			// deviation of base64 is ~20 according to CyberChef_v9.21.0.html#recipe=Generate_Lorem_Ipsum(3,'Paragraphs')To_Base64('A-Za-z0-9%2B/%3D')To_Charcode('Space',10)Standard_Deviation('Space')
-			// lets take a bit more because it might not be pure base64 also include some xor, shift, replacement, ...
-			// 89 is the mean of the base64 chars
-			math.deviation(500, filesize-500, 89.0) < 23 
+        (
+            // base64 : 
+            // ignore first and last 500bytes because they usually contain code for decoding and executing
+            math.entropy(500, filesize-500) >= 5.7 and
+            // encoded text has a higher mean than text or code because it's missing the spaces and special chars with the low numbers
+            math.mean(500, filesize-500) > 80 and
+            // deviation of base64 is ~20 according to CyberChef_v9.21.0.html#recipe=Generate_Lorem_Ipsum(3,'Paragraphs')To_Base64('A-Za-z0-9%2B/%3D')To_Charcode('Space',10)Standard_Deviation('Space')
+            // lets take a bit more because it might not be pure base64 also include some xor, shift, replacement, ...
+            // 89 is the mean of the base64 chars
+            math.deviation(500, filesize-500, 89.0) < 23
+        ) or (
+            // gzinflated binary sometimes used in php webshells
+            // ignore first and last 500bytes because they usually contain code for decoding and executing
+            math.entropy(500, filesize-500) >= 7.7 and
+            // encoded text has a higher mean than text or code because it's missing the spaces and special chars with the low numbers
+            math.mean(500, filesize-500) > 120 and
+            math.mean(500, filesize-500) < 136 and
+            // deviation of base64 is ~20 according to CyberChef_v9.21.0.html#recipe=Generate_Lorem_Ipsum(3,'Paragraphs')To_Base64('A-Za-z0-9%2B/%3D')To_Charcode('Space',10)Standard_Deviation('Space')
+            // lets take a bit more because it might not be pure base64 also include some xor, shift, replacement, ...
+            // 89 is the mean of the base64 chars
+            math.deviation(500, filesize-500, 89.0) > 65
+        ) 
 		)
 		
 }
@@ -983,16 +2130,33 @@ rule webshell_php_generic_backticks
 	strings:
 		$backtick = /`[\t ]*\$(_POST\[|_GET\[|_REQUEST\[|_SERVER\['HTTP_)/ wide ascii
 	
-		//strings from private rule capa_php
-		// this will hit on a lot of non-php files, asp, scripting templates, ... but it works on older php versions
-		$php_tag1 = "<?" wide ascii
-		$php_tag2 = "<script language=\"php" nocase wide ascii
+		//strings from private rule capa_php_old_safe
+		$php_short = "<?" wide ascii
+		// prevent xml and asp from hitting with the short tag
+		$no_xml1 = "<?xml version" nocase wide ascii
+		$no_xml2 = "<?xml-stylesheet" nocase wide ascii
+		$no_asp1 = "<%@LANGUAGE" nocase wide ascii
+		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
+		$no_pdf = "<?xpacket" 
+
+		// of course the new tags should also match
+        // already matched by "<?"
+		$php_new1 = /<\?=[^?]/ wide ascii
+		$php_new2 = "<?php" nocase wide ascii
+		$php_new3 = "<script language=\"php" nocase wide ascii
 	
 	condition:
-		filesize < 200 and ( 
-			any of ( $php_tag* ) 
+		( 
+			(
+				( 
+						$php_short in (0..100) or 
+						$php_short in (filesize-1000..filesize)
+				)
+				and not any of ( $no_* )
+			) 
+			or any of ( $php_new* ) 
 		)
-		and $backtick
+		and $backtick and filesize < 200
 }
 
 rule webshell_php_generic_backticks_obfuscated
@@ -1051,7 +2215,7 @@ rule webshell_php_by_string_known_webshell
 		$pbs1 = "b374k shell" wide ascii
 		$pbs2 = "b374k/b374k" wide ascii
 		$pbs3 = "\"b374k" wide ascii
-		$pbs4 = "$b374k" wide ascii
+		$pbs4 = "$b374k(\"" wide ascii
 		$pbs5 = "b374k " wide ascii
 		$pbs6 = "0de664ecd2be02cdd54234a0d1229b43" wide ascii
 		$pbs7 = "pwnshell" wide ascii
@@ -1064,14 +2228,22 @@ rule webshell_php_by_string_known_webshell
 		// crawler avoid string
 		$pbs30 = "bot|spider|crawler|slurp|teoma|archive|track|snoopy|java|lwp|wget|curl|client|python|libwww" wide ascii
 		// <?=($pbs_=@$_GET[2]).@$_($_GET[1])?>
-		$pbs35 = /@\$_GET\[\d\]\)\.@\$_\(\$_GET\[\d\]\)/ wide ascii
-		$pbs36 = /@\$_GET\[\d\]\)\.@\$_\(\$_POST\[\d\]\)/ wide ascii
-		$pbs37 = /@\$_POST\[\d\]\)\.@\$_\(\$_GET\[\d\]\)/ wide ascii
+		$pbs35 = /@\$_GET\s?\[\d\]\)\.@\$_\(\$_GET\s?\[\d\]\)/ wide ascii
+		$pbs36 = /@\$_GET\s?\[\d\]\)\.@\$_\(\$_POST\s?\[\d\]\)/ wide ascii
+		$pbs37 = /@\$_POST\s?\[\d\]\)\.@\$_\(\$_GET\s?\[\d\]\)/ wide ascii
 		$pbs38 = /@\$_POST\[\d\]\)\.@\$_\(\$_POST\[\d\]\)/ wide ascii
 		$pbs39 = /@\$_REQUEST\[\d\]\)\.@\$_\(\$_REQUEST\[\d\]\)/ wide ascii
 		$pbs42 = "array(\"find config.inc.php files\", \"find / -type f -name config.inc.php\")" wide ascii
 		$pbs43 = "$_SERVER[\"\\x48\\x54\\x54\\x50" wide ascii
 		$pbs52 = "preg_replace(\"/[checksql]/e\""
+		$pbs53 = "='http://www.zjjv.com'"
+		$pbs54 = "=\"http://www.zjjv.com\""
+
+        $pbs60 = /setting\["AccountType"\]\s?=\s?3/
+        $pbs61 = "~+d()\"^\"!{+{}"
+        $pbs62 = "use function \\eval as "
+        $pbs63 = "use function \\assert as "
+
 		$front1 = "<?php eval(" nocase wide ascii
 	
 		//strings from private rule capa_php_old_safe
@@ -1089,6 +2261,10 @@ rule webshell_php_by_string_known_webshell
 		$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
+		//strings from private rule capa_bin_files
+        $dex   = { 64 65 ( 78 | 79 ) 0a 30 }
+        $pack  = { 50 41 43 4b 00 00 00 02 00 }
+	
 	condition:
 		filesize < 500KB and ( 
 			(
@@ -1099,6 +2275,13 @@ rule webshell_php_by_string_known_webshell
 				and not any of ( $no_* )
 			) 
 			or any of ( $php_new* ) 
+		)
+		and not ( 
+        uint16(0) == 0x5a4d or 
+        $dex at 0 or 
+        $pack at 0 or 
+        // fp on jar with zero compression
+        uint16(0) == 0x4b50 
 		)
 		and 
 		( any of ( $pbs* ) or $front1 in ( 0 .. 60 ) )
@@ -1152,6 +2335,20 @@ rule webshell_php_by_string_obfuscation
 		$opbs54 = "<?php                                                                                                                                                                                " //here I end
 		$opbs55 = "=chr(99).chr(104).chr(114);$_"
 		$opbs56 = "\\x47LOBAL"
+		$opbs57 = "pay\".\"load"
+		$opbs58 = "bas'.'e64"
+		$opbs59 = "dec'.'ode"
+		$opbs60 = "fla'.'te"
+        // rot13 of eval($_POST
+		$opbs70 = "riny($_CBFG["
+		$opbs71 = "riny($_TRG["
+		$opbs72 = "riny($_ERDHRFG["
+		$opbs73 = "eval(str_rot13("
+		$opbs74 = "\"p\".\"r\".\"e\".\"g\""
+		$opbs75 = "$_'.'GET"
+		$opbs76 = "'ev'.'al("
+        // eval( in hex
+		$opbs77 = "\\x65\\x76\\x61\\x6c\\x28" wide ascii nocase
 	
 		//strings from private rule capa_php_old_safe
 		$php_short = "<?" wide ascii
@@ -1228,13 +2425,19 @@ rule webshell_php_strings_susp
 	
 		//strings from private rule capa_php_input
 		$inp1 = "php://input" wide ascii
-		$inp2 = "_GET[" wide ascii
-		$inp3 = "_POST[" wide ascii
-		$inp4 = "_REQUEST[" wide ascii
+		$inp2 = /_GET\s?\[/ wide ascii
+        // for passing $_GET to a function 
+		$inp3 = /\(\s?\$_GET\s?\)/ wide ascii
+		$inp4 = /_POST\s?\[/ wide ascii
+		$inp5 = /\(\s?\$_POST\s?\)/ wide ascii
+		$inp6 = /_REQUEST\s?\[/ wide ascii
+		$inp7 = /\(\s?\$_REQUEST\s?\)/ wide ascii
 		// PHP automatically adds all the request headers into the $_SERVER global array, prefixing each header name by the "HTTP_" string, so e.g. @eval($_SERVER['HTTP_CMD']) will run any code in the HTTP header CMD
-		$inp5 = "_SERVER['HTTP_" wide ascii
-		$inp6 = "_SERVER[\"HTTP_" wide ascii
-		$inp7 = /getenv[\t ]{0,20}\([\t ]{0,20}['"]HTTP_/ wide ascii
+		$inp15 = "_SERVER['HTTP_" wide ascii
+		$inp16 = "_SERVER[\"HTTP_" wide ascii
+		$inp17 = /getenv[\t ]{0,20}\([\t ]{0,20}['"]HTTP_/ wide ascii
+		$inp18 = "array_values($_SERVER)" wide ascii
+		$inp19 = /file_get_contents\("https?:\/\// wide ascii
 	
 	condition:
 		filesize < 700KB and ( 
@@ -1274,7 +2477,7 @@ rule webshell_php_in_htaccess
 		filesize <100KB and $hta
 }
 
-rule webshell_php_func_in_get
+rule webshell_php_function_via_get
 {
 	meta:
 		description = "Webshell which sends eval/assert via GET"
@@ -1282,15 +2485,16 @@ rule webshell_php_func_in_get
 		author = "Arnim Rupp"
 		hash = "ce739d65c31b3c7ea94357a38f7bd0dc264da052d4fd93a1eabb257f6e3a97a6"
 		hash = "d870e971511ea3e082662f8e6ec22e8a8443ca79"
+		hash = "73fa97372b3bb829835270a5e20259163ecc3fdbf73ef2a99cb80709ea4572be"
 		date = "2021/01/09"
 
 	strings:
-		$sr0 = /\$_GET\[.{1,30}\]\(\$_GET\[/ wide ascii
-		$sr1 = /\$_POST\[.{1,30}\]\(\$_GET\[/ wide ascii
-		$sr2 = /\$_POST\[.{1,30}\]\(\$_POST\[/ wide ascii
-		$sr3 = /\$_GET\[.{1,30}\]\(\$_POST\[/ wide ascii
-		$sr4 = /\$_REQUEST\[.{1,30}\]\(\$_REQUEST\[/ wide ascii
-		$sr5 = /\$_SERVER\[HTTP_.{1,30}\]\(\$_SERVER\[HTTP_/ wide ascii
+		$sr0 = /\$_GET\s?\[.{1,30}\]\(\$_GET\s?\[/ wide ascii
+		$sr1 = /\$_POST\s?\[.{1,30}\]\(\$_GET\s?\[/ wide ascii
+		$sr2 = /\$_POST\s?\[.{1,30}\]\(\$_POST\s?\[/ wide ascii
+		$sr3 = /\$_GET\s?\[.{1,30}\]\(\$_POST\s?\[/ wide ascii
+		$sr4 = /\$_REQUEST\s?\[.{1,30}\]\(\$_REQUEST\s?\[/ wide ascii
+		$sr5 = /\$_SERVER\s?\[HTTP_.{1,30}\]\(\$_SERVER\s?\[HTTP_/ wide ascii
 	
 		//strings from private rule php_false_positive
 		// try to use only strings which would be flagged by themselves as suspicous by other rules, e.g. eval 
@@ -1315,6 +2519,81 @@ rule webshell_php_func_in_get
 		and any of ( $sr* )
 }
 
+rule webshell_php_writer
+{
+	meta:
+		description = "PHP webshell which only writes an uploaded file to disk"
+		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		author = "Arnim Rupp"
+		date = "2021/04/17"
+		score = 50
+
+	strings:
+        $sus4 = "\"upload\"" wide ascii
+        $sus5 = "\"Upload\"" wide ascii
+        $sus6 = "gif89" wide ascii
+        //$sus13= "<textarea " wide ascii
+        $sus16= "Army" fullword wide ascii
+	
+		//strings from private rule capa_php_old_safe
+		$php_short = "<?" wide ascii
+		// prevent xml and asp from hitting with the short tag
+		$no_xml1 = "<?xml version" nocase wide ascii
+		$no_xml2 = "<?xml-stylesheet" nocase wide ascii
+		$no_asp1 = "<%@LANGUAGE" nocase wide ascii
+		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
+		$no_pdf = "<?xpacket" 
+
+		// of course the new tags should also match
+        // already matched by "<?"
+		$php_new1 = /<\?=[^?]/ wide ascii
+		$php_new2 = "<?php" nocase wide ascii
+		$php_new3 = "<script language=\"php" nocase wide ascii
+	
+		//strings from private rule capa_php_input
+		$inp1 = "php://input" wide ascii
+		$inp2 = /_GET\s?\[/ wide ascii
+        // for passing $_GET to a function 
+		$inp3 = /\(\s?\$_GET\s?\)/ wide ascii
+		$inp4 = /_POST\s?\[/ wide ascii
+		$inp5 = /\(\s?\$_POST\s?\)/ wide ascii
+		$inp6 = /_REQUEST\s?\[/ wide ascii
+		$inp7 = /\(\s?\$_REQUEST\s?\)/ wide ascii
+		// PHP automatically adds all the request headers into the $_SERVER global array, prefixing each header name by the "HTTP_" string, so e.g. @eval($_SERVER['HTTP_CMD']) will run any code in the HTTP header CMD
+		$inp15 = "_SERVER['HTTP_" wide ascii
+		$inp16 = "_SERVER[\"HTTP_" wide ascii
+		$inp17 = /getenv[\t ]{0,20}\([\t ]{0,20}['"]HTTP_/ wide ascii
+		$inp18 = "array_values($_SERVER)" wide ascii
+		$inp19 = /file_get_contents\("https?:\/\// wide ascii
+	
+		//strings from private rule capa_php_write_file
+		$php_multi_write1 = "fopen(" wide ascii
+		$php_multi_write2 = "fwrite(" wide ascii
+		$php_write1 = "move_uploaded_file" fullword wide ascii
+	
+	condition:
+		( 
+			(
+				( 
+						$php_short in (0..100) or 
+						$php_short in (filesize-1000..filesize)
+				)
+				and not any of ( $no_* )
+			) 
+			or any of ( $php_new* ) 
+		)
+		and ( 
+			any of ( $inp* ) 
+		)
+		and ( 
+        any of ( $php_write* ) or
+        all of ( $php_multi_write* ) 
+		)
+		and 
+		( filesize < 400 or 
+		( filesize < 4000 and 1 of ( $sus* ) ) )
+}
+
 rule webshell_asp_writer
 {
 	meta:
@@ -1322,24 +2601,14 @@ rule webshell_asp_writer
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Arnim Rupp"
 		date = "2021/03/07"
+		score = 60
 
 	strings:
-		// $asp_write1 = "ADODB.Stream" wide ascii # just a string, can be easily obfuscated
-		$asp_always_write1 = /\.write/ nocase wide ascii
-		$asp_always_write2 = /\.swrite/ nocase wide ascii
-		//$asp_write_way_one1 = /\.open\b/ nocase wide ascii
-		$asp_write_way_one2 = "SaveToFile" fullword nocase wide ascii
-		$asp_write_way_one3 = "CREAtEtExtFiLE" fullword nocase wide ascii
-		$asp_cr_write1 = "CreateObject(" fullword nocase wide ascii
-		$asp_cr_write2 = "CreateObject (" fullword nocase wide ascii
-		$asp_streamwriter1 = "streamwriter" fullword nocase wide ascii
-		$asp_streamwriter2 = "filestream" fullword nocase wide ascii
-
         $sus1 = "password" fullword wide ascii
         $sus2 = "pwd" fullword wide ascii
         $sus3 = "<asp:TextBox" fullword nocase wide ascii
-        //$sus4 = "upload" wide ascii
-        //$sus5 = "Upload" wide ascii
+        $sus4 = "\"upload\"" wide ascii
+        $sus5 = "\"Upload\"" wide ascii
         $sus6 = "gif89" wide ascii
         $sus7 = "\"&\"" wide ascii
         $sus8 = "authkey" fullword wide ascii
@@ -1350,6 +2619,7 @@ rule webshell_asp_writer
         $sus13= "<textarea " wide ascii
         $sus14= "\"unsafe" fullword wide ascii
         $sus15= "'unsafe" fullword wide ascii
+        $sus16= "Army" fullword wide ascii
 	
 		//strings from private rule capa_asp
 		$tagasp_short1 = /<%[^"]/ wide ascii
@@ -1411,6 +2681,8 @@ rule webshell_asp_writer
         // Request.Form
 		$asp_input1 = "request" fullword nocase wide ascii
 		$asp_input2 = "Page_Load" fullword nocase wide ascii
+        // base64 of Request.Form(
+		$asp_input3 = "UmVxdWVzdC5Gb3JtK" fullword wide ascii
 		$asp_xml_http = "Microsoft.XMLHTTP" fullword nocase wide ascii
 		$asp_xml_method1 = "GET" fullword wide ascii
 		$asp_xml_method2 = "POST" fullword wide ascii
@@ -1422,6 +2694,18 @@ rule webshell_asp_writer
         $asp_asp   = "<asp:" wide ascii
         $asp_text1 = ".text" wide ascii
         $asp_text2 = ".Text" wide ascii
+	
+		//strings from private rule capa_asp_write_file
+		// $asp_write1 = "ADODB.Stream" wide ascii # just a string, can be easily obfuscated
+		$asp_always_write1 = /\.write/ nocase wide ascii
+		$asp_always_write2 = /\.swrite/ nocase wide ascii
+		//$asp_write_way_one1 = /\.open\b/ nocase wide ascii
+		$asp_write_way_one2 = "SaveToFile" fullword nocase wide ascii
+		$asp_write_way_one3 = "CREAtEtExtFiLE" fullword nocase wide ascii
+		$asp_cr_write1 = "CreateObject(" fullword nocase wide ascii
+		$asp_cr_write2 = "CreateObject (" fullword nocase wide ascii
+		$asp_streamwriter1 = "streamwriter" fullword nocase wide ascii
+		$asp_streamwriter2 = "filestream" fullword nocase wide ascii
 	
 	condition:
 		( 
@@ -1460,9 +2744,16 @@ rule webshell_asp_writer
             $asp_asp
         ) 
 		)
-		and any of ( $asp_always_write* ) and 
-		( ( any of ( $asp_write_way_one* ) and any of ( $asp_cr_write* ) ) or 
-		( any of ( $asp_streamwriter* ) ) ) and 
+		and ( 
+        any of ( $asp_always_write* ) and
+        (
+            any of ( $asp_write_way_one* ) and
+            any of ( $asp_cr_write* )
+        ) or (
+            any of ( $asp_streamwriter* )
+        ) 
+		)
+		and 
 		( filesize < 400 or 
 		( filesize < 6000 and 1 of ( $sus* ) ) )
 }
@@ -1474,8 +2765,6 @@ rule webshell_asp_obfuscated
 		license = "https://creativecommons.org/licenses/by-nc/4.0/"
 		author = "Arnim Rupp"
 		date = "2021/01/12"
-		hash = "7466d1434870eb151dbb415191fef2884dfade52"
-		hash = "a6ab3695e46cd65610edb3c7780495d03a72c43d"
 
 	strings:
         $asp_obf1 = "/*-/*-*/" wide ascii
@@ -1485,6 +2774,7 @@ rule webshell_asp_obfuscated
         $asp_obf5 = "\"+\"(\"+\"" wide ascii
         $asp_obf6 = "q\"+\"u\"" wide ascii
         $asp_obf7 = "\"u\"+\"e" wide ascii
+        $asp_obf8 = "/*//*/" wide ascii
 	
 		//strings from private rule capa_asp
 		$tagasp_short1 = /<%[^"]/ wide ascii
@@ -1574,14 +2864,24 @@ rule webshell_asp_obfuscated
 		$asp_multi_payload_five3 = ".Filename" nocase wide ascii
 		$asp_multi_payload_five4 = ".Arguments" nocase wide ascii
 
-		$asp_multi_payload_six1 = "Scripting.FileSystemObject" fullword nocase wide ascii
-		$asp_multi_payload_six2 = ".CreateTextFile" nocase wide ascii
+	
+		//strings from private rule capa_asp_write_file
+		// $asp_write1 = "ADODB.Stream" wide ascii # just a string, can be easily obfuscated
+		$asp_always_write1 = /\.write/ nocase wide ascii
+		$asp_always_write2 = /\.swrite/ nocase wide ascii
+		//$asp_write_way_one1 = /\.open\b/ nocase wide ascii
+		$asp_write_way_one2 = "SaveToFile" fullword nocase wide ascii
+		$asp_write_way_one3 = "CREAtEtExtFiLE" fullword nocase wide ascii
+		$asp_cr_write1 = "CreateObject(" fullword nocase wide ascii
+		$asp_cr_write2 = "CreateObject (" fullword nocase wide ascii
+		$asp_streamwriter1 = "streamwriter" fullword nocase wide ascii
+		$asp_streamwriter2 = "filestream" fullword nocase wide ascii
 	
 		//strings from private rule capa_asp_obfuscation_multi
         // many Chr or few and a loop????
         //$loop1 = "For "
-		$o1 = "chr(" nocase wide ascii
-		$o2 = "chr (" nocase wide ascii
+		//$o1 = "chr(" nocase wide ascii
+		//$o2 = "chr (" nocase wide ascii
 		// not excactly a string function but also often used in obfuscation
 		$o4 = "\\x8" wide ascii
 		$o5 = "\\x9" wide ascii
@@ -1590,35 +2890,43 @@ rule webshell_asp_obfuscated
 		$o7 = "\\44" wide ascii
 		$o8 = "\\112" wide ascii
 		$o9 = "\\120" wide ascii
-		$o10 = " & \"" wide ascii
-		$o11 = " += \"" wide ascii
+		//$o10 = " & \"" wide ascii
+		//$o11 = " += \"" wide ascii
         // used for e.g. "scr"&"ipt"
 
         $m_multi_one1 = "Replace(" wide ascii
         $m_multi_one2 = "Len(" wide ascii
         $m_multi_one3 = "Mid(" wide ascii
         $m_multi_one4 = "mid(" wide ascii
+        $m_multi_one5 = ".ToString(" wide ascii
+
+        /*
         $m_multi_one5 = "InStr(" wide ascii
         $m_multi_one6 = "Function" wide ascii
+
         $m_multi_two1 = "for each" wide ascii
         $m_multi_two2 = "split(" wide ascii
         $m_multi_two3 = " & chr(" wide ascii
         $m_multi_two4 = " & Chr(" wide ascii
         $m_multi_two5 = " & Chr (" wide ascii
+
         $m_multi_three1 = "foreach" fullword wide ascii
         $m_multi_three2 = "(char" wide ascii
+
         $m_multi_four1 = "FromBase64String(" wide ascii
         $m_multi_four2 = ".Replace(" wide ascii
         $m_multi_five1 = "String.Join(\"\"," wide ascii
         $m_multi_five2 = ".Trim(" wide ascii
         $m_any1 = " & \"2" wide ascii
         $m_any2 = " += \"2" wide ascii
+        */
 
         $m_fp1 = "Author: Andre Teixeira - andret@microsoft.com" /* FPs with 0227f4c366c07c45628b02bae6b4ad01 */
 
 	
 		//strings from private rule capa_asp_obfuscation_obviously
 		$oo1 = /\w\"&\"\w/ wide ascii
+		$oo2 = "*/\").Replace(\"/*" wide ascii
 	
 	condition:
 		filesize < 100KB and ( 
@@ -1646,45 +2954,49 @@ rule webshell_asp_obfuscated
         ) 
 		)
 		and 
-		( ( 
+		( ( ( 
 			any of ( $asp_payload* ) or
         all of ( $asp_multi_payload_one* ) or
         all of ( $asp_multi_payload_two* ) or
         all of ( $asp_multi_payload_three* ) or
         all of ( $asp_multi_payload_four* ) or
-        all of ( $asp_multi_payload_five* ) or
-        all of ( $asp_multi_payload_six* ) 
+        all of ( $asp_multi_payload_five* ) 
 		)
-		and 
+		or ( 
+        any of ( $asp_always_write* ) and
+        (
+            any of ( $asp_write_way_one* ) and
+            any of ( $asp_cr_write* )
+        ) or (
+            any of ( $asp_streamwriter* )
+        ) 
+		)
+		) and 
 		( ( 
         (
             filesize < 100KB and 
             not any of ( $m_fp* ) and
             (
-                ( #o1+#o2 ) > 50 or
-                ( #o4+#o5+#o6+#o7+#o8+#o9 ) > 20 or
-                (
-                    ( #o10+#o11 ) > 50 and
-                    2 of ( $m_multi* ) and
-                    any of ( $m_any* )
-                )
+                //( #o1+#o2 ) > 50 or
+                ( #o4+#o5+#o6+#o7+#o8+#o9 ) > 20 
             ) 
         ) or (
             filesize < 5KB and 
             (
-                ( #o1+#o2 ) > 10 or
+                //( #o1+#o2 ) > 10 or
                 ( #o4+#o5+#o6+#o7+#o8+#o9 ) > 5 or
                 (
-                    ( #o1+#o2 ) > 1 and
-                    ( #m_multi_one1 + #m_multi_one2 + #m_multi_one3 + #m_multi_one4  ) > 3 
+                    //( #o1+#o2 ) > 1 and
+                    ( #m_multi_one1 + #m_multi_one2 + #m_multi_one3 + #m_multi_one4 + #m_multi_one5 ) > 3 
                 )
 
             ) 
         ) or (
             filesize < 700 and 
             (
-                ( #o1+#o2 ) > 1 or
-                ( #o4+#o5+#o6+#o7+#o8+#o9 ) > 3 
+                //( #o1+#o2 ) > 1 or
+                ( #o4+#o5+#o6+#o7+#o8+#o9 ) > 3 or
+                ( #m_multi_one1 + #m_multi_one2 + #m_multi_one3 + #m_multi_one4 + #m_multi_one5 ) > 2 
             ) 
         )  
 		)
@@ -1692,7 +3004,8 @@ rule webshell_asp_obfuscated
         (
             filesize < 100KB and 
             (
-                ( #oo1 ) > 2 
+                ( #oo1 ) > 2 or
+                $oo2
             ) 
         ) or (
             filesize < 25KB and 
@@ -1834,6 +3147,9 @@ rule webshell_asp_nano
         // Request and request in b64:
 		$susasp8  = "UmVxdWVzdC"
 		$susasp9  = "cmVxdWVzdA"
+        $susasp10 = "/*//*/"
+        $susasp11 = "(\"/*/\""
+        $susasp12 = "eval(eval("
         $fp1      = "eval a"
         $fp2      = "'Eval'"
         $fp3      = "Eval(\""
@@ -1926,8 +3242,18 @@ rule webshell_asp_nano
 		$asp_multi_payload_five3 = ".Filename" nocase wide ascii
 		$asp_multi_payload_five4 = ".Arguments" nocase wide ascii
 
-		$asp_multi_payload_six1 = "Scripting.FileSystemObject" fullword nocase wide ascii
-		$asp_multi_payload_six2 = ".CreateTextFile" nocase wide ascii
+	
+		//strings from private rule capa_asp_write_file
+		// $asp_write1 = "ADODB.Stream" wide ascii # just a string, can be easily obfuscated
+		$asp_always_write1 = /\.write/ nocase wide ascii
+		$asp_always_write2 = /\.swrite/ nocase wide ascii
+		//$asp_write_way_one1 = /\.open\b/ nocase wide ascii
+		$asp_write_way_one2 = "SaveToFile" fullword nocase wide ascii
+		$asp_write_way_one3 = "CREAtEtExtFiLE" fullword nocase wide ascii
+		$asp_cr_write1 = "CreateObject(" fullword nocase wide ascii
+		$asp_cr_write2 = "CreateObject (" fullword nocase wide ascii
+		$asp_streamwriter1 = "streamwriter" fullword nocase wide ascii
+		$asp_streamwriter2 = "filestream" fullword nocase wide ascii
 	
 	condition:
 		( 
@@ -1954,16 +3280,25 @@ rule webshell_asp_nano
                 )
         ) 
 		)
-		and ( 
+		and 
+		( ( 
 			any of ( $asp_payload* ) or
         all of ( $asp_multi_payload_one* ) or
         all of ( $asp_multi_payload_two* ) or
         all of ( $asp_multi_payload_three* ) or
         all of ( $asp_multi_payload_four* ) or
-        all of ( $asp_multi_payload_five* ) or
-        all of ( $asp_multi_payload_six* ) 
+        all of ( $asp_multi_payload_five* ) 
 		)
-		and not any of ( $fp* ) and 
+		or ( 
+        any of ( $asp_always_write* ) and
+        (
+            any of ( $asp_write_way_one* ) and
+            any of ( $asp_cr_write* )
+        ) or (
+            any of ( $asp_streamwriter* )
+        ) 
+		)
+		) and not any of ( $fp* ) and 
 		( filesize < 200 or 
 		( filesize < 1000 and any of ( $susasp* ) ) )
 }
@@ -2399,6 +3734,8 @@ rule webshell_asp_sniffer
         // Request.Form
 		$asp_input1 = "request" fullword nocase wide ascii
 		$asp_input2 = "Page_Load" fullword nocase wide ascii
+        // base64 of Request.Form(
+		$asp_input3 = "UmVxdWVzdC5Gb3JtK" fullword wide ascii
 		$asp_xml_http = "Microsoft.XMLHTTP" fullword nocase wide ascii
 		$asp_xml_method1 = "GET" fullword wide ascii
 		$asp_xml_method2 = "POST" fullword wide ascii
@@ -2462,9 +3799,6 @@ rule webshell_asp_generic_tiny
 		hash = "52ce724580e533da983856c4ebe634336f5fd13a"
 
 	strings:
-		$write1 = "Scripting.FileSystemObject" fullword nocase wide ascii
-		$write2 = ".CreateTextFile" nocase wide ascii
-
         $fp1 = "net.rim.application.ipproxyservice.AdminCommand.execute"
 	
 		//strings from private rule capa_asp
@@ -2527,6 +3861,8 @@ rule webshell_asp_generic_tiny
         // Request.Form
 		$asp_input1 = "request" fullword nocase wide ascii
 		$asp_input2 = "Page_Load" fullword nocase wide ascii
+        // base64 of Request.Form(
+		$asp_input3 = "UmVxdWVzdC5Gb3JtK" fullword wide ascii
 		$asp_xml_http = "Microsoft.XMLHTTP" fullword nocase wide ascii
 		$asp_xml_method1 = "GET" fullword wide ascii
 		$asp_xml_method2 = "POST" fullword wide ascii
@@ -2541,6 +3877,7 @@ rule webshell_asp_generic_tiny
 	
 		//strings from private rule capa_bin_files
         $dex   = { 64 65 ( 78 | 79 ) 0a 30 }
+        $pack  = { 50 41 43 4b 00 00 00 02 00 }
 	
 		//strings from private rule capa_asp_payload
 		$asp_payload0  = "eval_r" fullword nocase wide ascii
@@ -2575,8 +3912,18 @@ rule webshell_asp_generic_tiny
 		$asp_multi_payload_five3 = ".Filename" nocase wide ascii
 		$asp_multi_payload_five4 = ".Arguments" nocase wide ascii
 
-		$asp_multi_payload_six1 = "Scripting.FileSystemObject" fullword nocase wide ascii
-		$asp_multi_payload_six2 = ".CreateTextFile" nocase wide ascii
+	
+		//strings from private rule capa_asp_write_file
+		// $asp_write1 = "ADODB.Stream" wide ascii # just a string, can be easily obfuscated
+		$asp_always_write1 = /\.write/ nocase wide ascii
+		$asp_always_write2 = /\.swrite/ nocase wide ascii
+		//$asp_write_way_one1 = /\.open\b/ nocase wide ascii
+		$asp_write_way_one2 = "SaveToFile" fullword nocase wide ascii
+		$asp_write_way_one3 = "CREAtEtExtFiLE" fullword nocase wide ascii
+		$asp_cr_write1 = "CreateObject(" fullword nocase wide ascii
+		$asp_cr_write2 = "CreateObject (" fullword nocase wide ascii
+		$asp_streamwriter1 = "streamwriter" fullword nocase wide ascii
+		$asp_streamwriter2 = "filestream" fullword nocase wide ascii
 	
 	condition:
 		( 
@@ -2618,21 +3965,30 @@ rule webshell_asp_generic_tiny
 		and not 1 of ( $fp* ) and not ( 
         uint16(0) == 0x5a4d or 
         $dex at 0 or 
+        $pack at 0 or 
         // fp on jar with zero compression
         uint16(0) == 0x4b50 
 		)
 		and 
-		( ( filesize < 700 and ( 
+		( filesize < 700 and 
+		( ( 
 			any of ( $asp_payload* ) or
         all of ( $asp_multi_payload_one* ) or
         all of ( $asp_multi_payload_two* ) or
         all of ( $asp_multi_payload_three* ) or
         all of ( $asp_multi_payload_four* ) or
-        all of ( $asp_multi_payload_five* ) or
-        all of ( $asp_multi_payload_six* ) 
+        all of ( $asp_multi_payload_five* ) 
 		)
-		) or 
-		( filesize < 300 and all of ( $write* ) ) )
+		or ( 
+        any of ( $asp_always_write* ) and
+        (
+            any of ( $asp_write_way_one* ) and
+            any of ( $asp_cr_write* )
+        ) or (
+            any of ( $asp_streamwriter* )
+        ) 
+		)
+		) )
 }
 
 rule webshell_asp_generic
@@ -2673,6 +4029,13 @@ rule webshell_asp_generic
         $asp_much_sus42 = "\"+\"(\"+\"" wide ascii
         $asp_much_sus43 = "q\"+\"u\"" wide ascii
         $asp_much_sus44 = "\"u\"+\"e" wide ascii
+        $asp_much_sus45 = "/*//*/" wide ascii
+        $asp_much_sus46 = "(\"/*/\"" wide ascii
+        $asp_much_sus47 = "eval(eval(" wide ascii
+        $asp_much_sus48 = "Shell.Users" wide ascii
+        $asp_much_sus49 = "PasswordType=Regular" wide ascii
+        $asp_much_sus50 = "-Expire=0" wide ascii
+        $asp_much_sus51 = "sh\"&\"el" wide ascii
 
         $asp_gen_sus1  = /:\s{0,20}eval}/ nocase wide ascii
         $asp_gen_sus2  = /\.replace\(\/\w\/g/ nocase wide ascii
@@ -2686,11 +4049,8 @@ rule webshell_asp_generic
         $asp_gen_sus18 = "Hklm.GetValueNames();" nocase
         // bonus string for proxylogon exploiting webshells
         $asp_gen_sus19 = "http://schemas.microsoft.com/exchange/" wide ascii
-        $asp_gen_sus20 = "\"</pre>\"" wide ascii
         $asp_gen_sus21 = "\"upload\"" wide ascii
         $asp_gen_sus22 = "\"Upload\"" wide ascii
-        $asp_gen_sus23 = "<pre>" wide ascii
-        $asp_gen_sus24 = "<PRE>" wide ascii
         $asp_gen_sus25 = "shell_" wide ascii
         //$asp_gen_sus26 = "password" fullword wide ascii
         //$asp_gen_sus27 = "passw" fullword wide ascii
@@ -2699,6 +4059,10 @@ rule webshell_asp_generic
         $asp_gen_sus30 = "serv-u" wide ascii
         $asp_gen_sus31 = "Serv-u" wide ascii
         $asp_gen_sus32 = "Army" fullword wide ascii
+
+        $asp_slightly_sus1 = "<pre>" wide ascii
+        $asp_slightly_sus2 = "<PRE>" wide ascii
+
 
         // "e"+"x"+"e"
         $asp_gen_obf1 = "\"+\"" wide ascii 
@@ -2762,12 +4126,15 @@ rule webshell_asp_generic
 	
 		//strings from private rule capa_bin_files
         $dex   = { 64 65 ( 78 | 79 ) 0a 30 }
+        $pack  = { 50 41 43 4b 00 00 00 02 00 }
 	
 		//strings from private rule capa_asp_input
         // Request.BinaryRead
         // Request.Form
 		$asp_input1 = "request" fullword nocase wide ascii
 		$asp_input2 = "Page_Load" fullword nocase wide ascii
+        // base64 of Request.Form(
+		$asp_input3 = "UmVxdWVzdC5Gb3JtK" fullword wide ascii
 		$asp_xml_http = "Microsoft.XMLHTTP" fullword nocase wide ascii
 		$asp_xml_method1 = "GET" fullword wide ascii
 		$asp_xml_method2 = "POST" fullword wide ascii
@@ -2813,8 +4180,18 @@ rule webshell_asp_generic
 		$asp_multi_payload_five3 = ".Filename" nocase wide ascii
 		$asp_multi_payload_five4 = ".Arguments" nocase wide ascii
 
-		$asp_multi_payload_six1 = "Scripting.FileSystemObject" fullword nocase wide ascii
-		$asp_multi_payload_six2 = ".CreateTextFile" nocase wide ascii
+	
+		//strings from private rule capa_asp_write_file
+		// $asp_write1 = "ADODB.Stream" wide ascii # just a string, can be easily obfuscated
+		$asp_always_write1 = /\.write/ nocase wide ascii
+		$asp_always_write2 = /\.swrite/ nocase wide ascii
+		//$asp_write_way_one1 = /\.open\b/ nocase wide ascii
+		$asp_write_way_one2 = "SaveToFile" fullword nocase wide ascii
+		$asp_write_way_one3 = "CREAtEtExtFiLE" fullword nocase wide ascii
+		$asp_cr_write1 = "CreateObject(" fullword nocase wide ascii
+		$asp_cr_write2 = "CreateObject (" fullword nocase wide ascii
+		$asp_streamwriter1 = "streamwriter" fullword nocase wide ascii
+		$asp_streamwriter2 = "filestream" fullword nocase wide ascii
 	
 		//strings from private rule capa_asp_classid
 		$tagasp_capa_classid1 = "72C24DD5-D70A-438B-8A42-98424B88AFB8" nocase wide ascii
@@ -2851,6 +4228,7 @@ rule webshell_asp_generic
 		and not ( 
         uint16(0) == 0x5a4d or 
         $dex at 0 or 
+        $pack at 0 or 
         // fp on jar with zero compression
         uint16(0) == 0x4b50 
 		)
@@ -2872,11 +4250,12 @@ rule webshell_asp_generic
         all of ( $asp_multi_payload_two* ) or
         all of ( $asp_multi_payload_three* ) or
         all of ( $asp_multi_payload_four* ) or
-        all of ( $asp_multi_payload_five* ) or
-        all of ( $asp_multi_payload_six* ) 
+        all of ( $asp_multi_payload_five* ) 
 		)
 		and not any of ( $fp* ) and 
-		( ( filesize < 25KB and 
+		( ( filesize < 3KB and 
+		( 1 of ( $asp_slightly_sus* ) ) ) or 
+		( filesize < 25KB and 
 		( 1 of ( $asp_much_sus* ) or 1 of ( $asp_gen_sus* ) or 
 		( #asp_gen_obf1 > 2 ) ) ) or 
 		( filesize < 50KB and 
@@ -2884,7 +4263,19 @@ rule webshell_asp_generic
 		( #asp_gen_obf1 > 6 ) ) ) or 
 		( filesize < 150KB and 
 		( 1 of ( $asp_much_sus* ) or 4 of ( $asp_gen_sus* ) or 
-		( #asp_gen_obf1 > 6 ) ) ) or 
+		( #asp_gen_obf1 > 6 ) or 
+		( ( 
+        any of ( $asp_always_write* ) and
+        (
+            any of ( $asp_write_way_one* ) and
+            any of ( $asp_cr_write* )
+        ) or (
+            any of ( $asp_streamwriter* )
+        ) 
+		)
+		and 
+		( 1 of ( $asp_much_sus* ) or 2 of ( $asp_gen_sus* ) or 
+		( #asp_gen_obf1 > 3 ) ) ) ) ) or 
 		( filesize < 100KB and ( 
         any of ( $tagasp_capa_classid* ) 
 		)
@@ -2978,6 +4369,8 @@ rule webshell_asp_generic_registry_reader
         // Request.Form
 		$asp_input1 = "request" fullword nocase wide ascii
 		$asp_input2 = "Page_Load" fullword nocase wide ascii
+        // base64 of Request.Form(
+		$asp_input3 = "UmVxdWVzdC5Gb3JtK" fullword wide ascii
 		$asp_xml_http = "Microsoft.XMLHTTP" fullword nocase wide ascii
 		$asp_xml_method1 = "GET" fullword wide ascii
 		$asp_xml_method2 = "POST" fullword wide ascii
@@ -3255,7 +4648,9 @@ rule webshell_asp_runtime_compile
 	strings:
 		$payload_reflection1 = "System.Reflection" nocase wide ascii
 		$payload_reflection2 = "Assembly" fullword nocase wide ascii
-		$payload_reflection3 = /[."']Load\b/ nocase wide ascii
+		$payload_load_reflection1 = /[."']Load\b/ nocase wide ascii
+        // only match on "load" or variable which might contain "load"
+		$payload_load_reflection2 = /\bGetMethod\(("load|\w)/ nocase wide ascii
 		$payload_compile1 = "GenerateInMemory" nocase wide ascii
 		$payload_compile2 = "CompileAssemblyFromSource" nocase wide ascii
 		$payload_invoke1 = "Invoke" fullword nocase wide ascii
@@ -3268,6 +4663,8 @@ rule webshell_asp_runtime_compile
         // Request.Form
 		$asp_input1 = "request" fullword nocase wide ascii
 		$asp_input2 = "Page_Load" fullword nocase wide ascii
+        // base64 of Request.Form(
+		$asp_input3 = "UmVxdWVzdC5Gb3JtK" fullword wide ascii
 		$asp_xml_http = "Microsoft.XMLHTTP" fullword nocase wide ascii
 		$asp_xml_method1 = "GET" fullword wide ascii
 		$asp_xml_method2 = "POST" fullword wide ascii
@@ -3294,7 +4691,7 @@ rule webshell_asp_runtime_compile
         ) 
 		)
 		and not any of ( $rc_fp* ) and 
-		( all of ( $payload_reflection* ) or all of ( $payload_compile* ) ) and any of ( $payload_invoke* )
+		( ( all of ( $payload_reflection* ) and any of ( $payload_load_reflection* ) ) or all of ( $payload_compile* ) ) and any of ( $payload_invoke* )
 }
 
 rule webshell_asp_sql
@@ -3348,8 +4745,8 @@ rule webshell_asp_sql
         $sus16 = "\"sqlCommand\"" wide ascii
         $sus17 = "\"sqlcommand\"" wide ascii
 
-        $slightly_sus1 = "select * from " wide ascii
-        $slightly_sus2 = "SELECT * FROM " wide ascii
+        //$slightly_sus1 = "select * from " wide ascii
+        //$slightly_sus2 = "SELECT * FROM " wide ascii
         $slightly_sus3 = "SHOW COLUMNS FROM " wide ascii
         $slightly_sus4 = "show columns from " wide ascii
         
@@ -3414,6 +4811,8 @@ rule webshell_asp_sql
         // Request.Form
 		$asp_input1 = "request" fullword nocase wide ascii
 		$asp_input2 = "Page_Load" fullword nocase wide ascii
+        // base64 of Request.Form(
+		$asp_input3 = "UmVxdWVzdC5Gb3JtK" fullword wide ascii
 		$asp_xml_http = "Microsoft.XMLHTTP" fullword nocase wide ascii
 		$asp_xml_method1 = "GET" fullword wide ascii
 		$asp_xml_method2 = "POST" fullword wide ascii
@@ -3556,6 +4955,8 @@ rule webshell_asp_scan_writable
         // Request.Form
 		$asp_input1 = "request" fullword nocase wide ascii
 		$asp_input2 = "Page_Load" fullword nocase wide ascii
+        // base64 of Request.Form(
+		$asp_input3 = "UmVxdWVzdC5Gb3JtK" fullword wide ascii
 		$asp_xml_http = "Microsoft.XMLHTTP" fullword nocase wide ascii
 		$asp_xml_method1 = "GET" fullword wide ascii
 		$asp_xml_method2 = "POST" fullword wide ascii
@@ -3838,6 +5239,7 @@ rule webshell_jsp_generic
 	
 		//strings from private rule capa_bin_files
         $dex   = { 64 65 ( 78 | 79 ) 0a 30 }
+        $pack  = { 50 41 43 4b 00 00 00 02 00 }
 	
 		//strings from private rule capa_jsp_safe
 		$cjsp_short1 = "<%" ascii wide
@@ -3874,6 +5276,7 @@ rule webshell_jsp_generic
 		filesize < 300KB and not ( 
         uint16(0) == 0x5a4d or 
         $dex at 0 or 
+        $pack at 0 or 
         // fp on jar with zero compression
         uint16(0) == 0x4b50 
 		)
@@ -3947,6 +5350,7 @@ rule webshell_jsp_generic_base64
 	
 		//strings from private rule capa_bin_files
         $dex   = { 64 65 ( 78 | 79 ) 0a 30 }
+        $pack  = { 50 41 43 4b 00 00 00 02 00 }
 	
 	condition:
 		( 
@@ -3963,6 +5367,7 @@ rule webshell_jsp_generic_base64
 		and not ( 
         uint16(0) == 0x5a4d or 
         $dex at 0 or 
+        $pack at 0 or 
         // fp on jar with zero compression
         uint16(0) == 0x4b50 
 		)
@@ -4241,6 +5646,10 @@ rule webshell_jsp_by_string
 		$cjsp_long6 = "<% " ascii wide
 		$cjsp_long7 = "< %" ascii wide
 	
+		//strings from private rule capa_bin_files
+        $dex   = { 64 65 ( 78 | 79 ) 0a 30 }
+        $pack  = { 50 41 43 4b 00 00 00 02 00 }
+	
 	condition:
 		filesize < 100KB and ( 
         $cjsp_short1 at 0 or
@@ -4252,6 +5661,13 @@ rule webshell_jsp_by_string
                 $cjsp_short1 in ( filesize-1000..filesize ) 
             )
         ) 
+		)
+		and not ( 
+        uint16(0) == 0x5a4d or 
+        $dex at 0 or 
+        $pack at 0 or 
+        // fp on jar with zero compression
+        uint16(0) == 0x4b50 
 		)
 		and any of ( $jstring* )
 }
@@ -4522,12 +5938,21 @@ rule webshell_in_image
 		$cpayload6 = /\bpopen[\t ]*\([^)]/ nocase wide ascii
 		$cpayload7 = /\bproc_open[\t ]*\([^)]/ nocase wide ascii
 		$cpayload8 = /\bpcntl_exec[\t ]*\([^)]/ nocase wide ascii
-		$cpayload9 = /\bassert[\t ]*\([^)]/ nocase wide ascii
-		$cpayload10 = /\bpreg_replace[\t ]*\([^\)]1,1000}\/e/ nocase wide ascii
-		$cpayload11 = /\bcreate_function[\t ]*\([^)]/ nocase wide ascii
-		$cpayload12 = /\bReflectionFunction[\t ]*\([^)]/ nocase wide ascii
-		// TODO: $_GET['func_name']($_GET['argument']);
+		$cpayload9 = /\bassert[\t ]*\([^)0]/ nocase wide ascii
+		$cpayload10 = /\bpreg_replace[\t ]*\(.{1,100}\/[ismxADSUXju]{0,11}(e|\\x65)/ nocase wide ascii
+		$cpayload12 = /\bmb_ereg_replace[\t ]*\([^\)]{1,100}'e'/ nocase wide ascii
+		$cpayload13 = /\bmb_eregi_replace[\t ]*\([^\)]{1,100}'e'/ nocase wide ascii
+		$cpayload20 = /\bcreate_function[\t ]*\([^)]/ nocase wide ascii
+		$cpayload21 = /\bReflectionFunction[\t ]*\([^)]/ nocase wide ascii
+
+		$m_cpayload_preg_filter1 = /\bpreg_filter[\t ]*\([^\)]/ nocase wide ascii
+		$m_cpayload_preg_filter2 = "'|.*|e'" nocase wide ascii
 		// TODO backticks
+	
+		//strings from private rule capa_php_write_file
+		$php_multi_write1 = "fopen(" wide ascii
+		$php_multi_write2 = "fwrite(" wide ascii
+		$php_write1 = "move_uploaded_file" fullword wide ascii
 	
 		//strings from private rule capa_jsp
 		$cjsp1 = "<%" ascii wide
@@ -4632,8 +6057,18 @@ rule webshell_in_image
 		$asp_multi_payload_five3 = ".Filename" nocase wide ascii
 		$asp_multi_payload_five4 = ".Arguments" nocase wide ascii
 
-		$asp_multi_payload_six1 = "Scripting.FileSystemObject" fullword nocase wide ascii
-		$asp_multi_payload_six2 = ".CreateTextFile" nocase wide ascii
+	
+		//strings from private rule capa_asp_write_file
+		// $asp_write1 = "ADODB.Stream" wide ascii # just a string, can be easily obfuscated
+		$asp_always_write1 = /\.write/ nocase wide ascii
+		$asp_always_write2 = /\.swrite/ nocase wide ascii
+		//$asp_write_way_one1 = /\.open\b/ nocase wide ascii
+		$asp_write_way_one2 = "SaveToFile" fullword nocase wide ascii
+		$asp_write_way_one3 = "CREAtEtExtFiLE" fullword nocase wide ascii
+		$asp_cr_write1 = "CreateObject(" fullword nocase wide ascii
+		$asp_cr_write2 = "CreateObject (" fullword nocase wide ascii
+		$asp_streamwriter1 = "streamwriter" fullword nocase wide ascii
+		$asp_streamwriter2 = "filestream" fullword nocase wide ascii
 	
 	condition:
 		( $png at 0 or $jpg at 0 or $gif at 0 or $gif2 at 0 or $mdb at 0 ) and 
@@ -4647,10 +6082,16 @@ rule webshell_in_image
 			) 
 			or any of ( $php_new* ) 
 		)
-		and ( 
-			any of ( $cpayload* ) 
+		and 
+		( ( 
+			any of ( $cpayload* ) or
+        all of ( $m_cpayload_preg_filter* ) 
 		)
-		) or 
+		or ( 
+        any of ( $php_write* ) or
+        all of ( $php_multi_write* ) 
+		)
+		) ) or 
 		( ( 
 			any of ( $cjsp* ) 
 		)
@@ -4683,15 +6124,24 @@ rule webshell_in_image
                 )
         ) 
 		)
-		and ( 
+		and 
+		( ( 
 			any of ( $asp_payload* ) or
         all of ( $asp_multi_payload_one* ) or
         all of ( $asp_multi_payload_two* ) or
         all of ( $asp_multi_payload_three* ) or
         all of ( $asp_multi_payload_four* ) or
-        all of ( $asp_multi_payload_five* ) or
-        all of ( $asp_multi_payload_six* ) 
+        all of ( $asp_multi_payload_five* ) 
 		)
-		) )
+		or ( 
+        any of ( $asp_always_write* ) and
+        (
+            any of ( $asp_write_way_one* ) and
+            any of ( $asp_cr_write* )
+        ) or (
+            any of ( $asp_streamwriter* )
+        ) 
+		)
+		) ) )
 }
 
