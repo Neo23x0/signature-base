@@ -37,7 +37,7 @@ rule Office_OLE_DDEAUTO {
       author = "NVISO Labs"
       reference = "https://blog.nviso.be/2017/10/11/detecting-dde-in-ms-office-documents/"
       date = "2017-10-12"
-      score = 50
+      score = 30
    strings:
       $a = /\x13\s*DDEAUTO\b[^\x14]+/ nocase
    condition:
