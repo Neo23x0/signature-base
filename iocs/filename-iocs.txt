@@ -3615,4 +3615,16 @@ C:\\build_area\\openssl\.cnf;90
 # Vulnerable DELL BIOS update driver (the new patched one is named DBUtilDrv2.Sys) - https://labs.sentinelone.com/cve-2021-21551-hundreds-of-millions-of-dell-computers-at-risk-due-to-multiple-bios-driver-privilege-escalation-flaws/
 C:\\Windows\\Temp\\DBUtil_2_3\.Sys$;70
 
+# DarkSide Supply Chain attacks https://www.fireeye.com/blog/threat-research/2021/06/darkside-affiliate-supply-chain-software-compromise.html
+\\AppData\\Local\\Chrome\\winvnc\.exe;100
+\\Chrome\\UltraVNC\.ini;90
+C:\\ProgramData\\WindNT\\;80
+\\VirtualHost\.vbs;60
+C:\\ProgramData\\psh\\console\.exe;100
+\\ProgramData\\psh\\System32Log\.txt;100
+C:\\ProgramData\\psh\\;60
+\\ProgramData\\Cisco\\update\.exe;100
+\\ProgramData\\Cisco Systems\\Cisco Jabber\\update\.exe;60
+\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\update\.lnk;60
+
 # End
