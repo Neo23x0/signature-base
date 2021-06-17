@@ -10000,3 +10000,67 @@ c4ff632696ec6e406388e1d42421b3cd3b5f79dcb2df67e2022d961d5f5a9e78;NOBELIUM IOC Ja
 bca5560a9a9dd54be76e4a8d63a66e9cfd731b0bd28524db05cc498bb5b56384;NOBELIUM IOC msch.dll - https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/
 1c17c39af41a5d8f54441ce6b1cf925f6727a2ee9038284a8a7071c984d0460f;NOBELIUM IOC mswsc.dll - https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/
 d7c05bd68e8bde3d13aa7dbd6911461104d06715da15d3ee7f75136fa8330cc2;NOBELIUM IOC Integrated Review.lnk - https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/
+
+3C0DB3A5194E1568E8E2164149F30763B7F3043D;ESET BackdoorDiplomacy Report - logout.aspx - ASP/Webshell.H - BackdoorDiplomacy webshell – variant N2 - https://www.welivesecurity.com/2021/06/10/backdoordiplomacy-upgrading-quarian-turian/
+32EF3F67E06C43C18E34FB56E6E62A6534D1D694;ESET BackdoorDiplomacy Report - current.aspx - ASP/Webshell.O - BackdoorDiplomacy webshell – variant  - https://www.welivesecurity.com/2021/06/10/backdoordiplomacy-upgrading-quarian-turian/S1
+8C4D2ED23958919FE10334CCFBE8D78CD0D991A8;ESET BackdoorDiplomacy Report - errorEE.aspx - ASP/Webshell.J - BackdoorDiplomacy webshell – variant  - https://www.welivesecurity.com/2021/06/10/backdoordiplomacy-upgrading-quarian-turian/N1
+C0A3F78CF7F0B592EF813B15FC0F1D28D94C9604;ESET BackdoorDiplomacy Report - App_Web_xcg2dubs.dll - MSIL/Webshell.C - BackdoorDiplomacy webshell –  - https://www.welivesecurity.com/2021/06/10/backdoordiplomacy-upgrading-quarian-turian/variant N3
+CDD583BB6333644472733617B6DCEE2681238A11;ESET BackdoorDiplomacy Report - N/A - Linux/Agent.KD - Linux Turian backdoor - https://www.welivesecurity.com/2021/06/10/backdoordiplomacy-upgrading-quarian-turian/
+FA6C20F00F3C57643F312E84CC7E46A0C7BABE75;ESET BackdoorDiplomacy Report - N/A - Linux/Agent.KD - Linux Turian backdoor - https://www.welivesecurity.com/2021/06/10/backdoordiplomacy-upgrading-quarian-turian/
+5F87FBFE30CA5D6347F4462D02685B6E1E90E464;ESET BackdoorDiplomacy Report - ScnCfg.exe - Win32/Agent.TGO - Windows Turian backdoor - https://www.welivesecurity.com/2021/06/10/backdoordiplomacy-upgrading-quarian-turian/
+B6936BD6F36A48DD1460EEB4AB8473C7626142AC;ESET BackdoorDiplomacy Report - VMSvc.exe - Win32/Agent.QKK - Windows Turian backdoor - https://www.welivesecurity.com/2021/06/10/backdoordiplomacy-upgrading-quarian-turian/
+B16393DFFB130304AD627E6872403C67DD4C0AF3;ESET BackdoorDiplomacy Report - svchost.exe - Win32/Agent.TZI - Windows Turian backdoor - https://www.welivesecurity.com/2021/06/10/backdoordiplomacy-upgrading-quarian-turian/
+9DBBEBEBBA20B1014830B9DE4EC9331E66A159DF;ESET BackdoorDiplomacy Report - nvsvc.exe - Win32/Agent.UJH - Windows Turian backdoor - https://www.welivesecurity.com/2021/06/10/backdoordiplomacy-upgrading-quarian-turian/
+564F1C32F2A2501C3C7B51A13A08969CDC3B0390;ESET BackdoorDiplomacy Report - AppleVersions.dll - Win64/Agent.HA - Windows Turian backdoor - https://www.welivesecurity.com/2021/06/10/backdoordiplomacy-upgrading-quarian-turian/
+6E1BB476EE964FFF26A86E4966D7B82E7BACBF47;ESET BackdoorDiplomacy Report - MozillaUpdate.exe - Win32/Agent.UJH - Windows Turian backdoor - https://www.welivesecurity.com/2021/06/10/backdoordiplomacy-upgrading-quarian-turian/
+FBB0A4F4C90B513C4E51F0D0903C525360FAF3B7;ESET BackdoorDiplomacy Report - nvsvc.exe - Win32/Agent.QAY - Windows Turian backdoor - https://www.welivesecurity.com/2021/06/10/backdoordiplomacy-upgrading-quarian-turian/
+2183AE45ADEF97500A26DBBF69D910B82BFE721A;ESET BackdoorDiplomacy Report - nvsvcv.exe - Win32/Agent.UFX - Windows Turian backdoor - https://www.welivesecurity.com/2021/06/10/backdoordiplomacy-upgrading-quarian-turian/
+849B970652678748CEBF3C4D90F435AE1680601F;ESET BackdoorDiplomacy Report - efsw.exe - Win32/Agent.UFX - Windows Turian backdoor - https://www.welivesecurity.com/2021/06/10/backdoordiplomacy-upgrading-quarian-turian/
+C176F36A7FC273C9C98EA74A34B8BAB0F490E19E;ESET BackdoorDiplomacy Report - iexplore32.exe - Win32/Agent.QAY - Windows Turian backdoor - https://www.welivesecurity.com/2021/06/10/backdoordiplomacy-upgrading-quarian-turian/
+626EFB29B0C58461D831858825765C05E1098786;ESET BackdoorDiplomacy Report - iexplore32.exe - Win32/Agent.UFX - Windows Turian backdoor - https://www.welivesecurity.com/2021/06/10/backdoordiplomacy-upgrading-quarian-turian/
+40E73BF21E31EE99B910809B3B4715AF017DB061;ESET BackdoorDiplomacy Report - explorer32.exe - Win32/Agent.QAY - Windows Turian backdoor - https://www.welivesecurity.com/2021/06/10/backdoordiplomacy-upgrading-quarian-turian/
+255F54DE241A3D12DEBAD2DF47BAC5601895E458;ESET BackdoorDiplomacy Report - Duser.dll - Win32/Agent.URH - Windows Turian backdoor - https://www.welivesecurity.com/2021/06/10/backdoordiplomacy-upgrading-quarian-turian/
+A99CF07FBA62A63A44C6D5EF6B780411CF1B1073;ESET BackdoorDiplomacy Report - Duser.dll - Win64/Agent.HA - Windows Turian backdoor - https://www.welivesecurity.com/2021/06/10/backdoordiplomacy-upgrading-quarian-turian/
+934B3934FDB4CD55DC4EA1577F9A394E9D74D660;ESET BackdoorDiplomacy Report - Duser.dll - Win32/Agent.TQI - Windows Turian backdoor - https://www.welivesecurity.com/2021/06/10/backdoordiplomacy-upgrading-quarian-turian/
+EF4DF176916CE5882F88059011072755E1ECC482;ESET BackdoorDiplomacy Report - iexplore32.exe - Win32/Agent.QAY - Windows Turian backdoor - https://www.welivesecurity.com/2021/06/10/backdoordiplomacy-upgrading-quarian-turian/
+
+2723ac49d3f59b51d96f3ab3605becdef1987242ef3d9d5b8490b0c9abe45049;PCShare - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+425d2a6416a59943428e8727d2ad6247eb8342c35c4bd1d5b80df25d6fbcae94;PCShare - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+4c6a45d08cb649b5486d9719634f903b3561e7820eda31bd50d811a01bd3481b;PCShare - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+b668f9e213282cd1b941ab8d6dd5f3dd3266011ae16c0795ca86d12a57c095cc;PCShare - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+69a9e5545103b582173ed268fc5ca0014c4d2e17337a953752b0157a76cc0bcb;PCShare - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+7f3c26b8d3087f1cc345da965bb7af1a58488c6e260f12e72d8274d949a857bd;PCShare - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+556d34db7e60b0d25eca0d8e6b9297cd9f2174c0d2ca013c0036a067457a2d01;PCShare - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+e8f347745b1808db185c682af87896a941b4042f5de919e2010749152bda48ad;PCShare - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+a7a3cd98252047717f8f429d2060aa84c6ee4ed8ae60ee15ad0b2b5807158c70;PCShare - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+e1ca30bbdea8523aec6570f1b2f59012d0899875325a9ac88f09e09c14734ecc;PCShare - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+f0c0a9b2911ee1f1774e69e0be313eda2054d744fa547f1c64ba0f078db3fcd9;PCShare - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+9f9fde45784f93c18ea998d90aa6791905c81061d974416dd722071fbd54688e;PCShare - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+69a9e5545103b582173ed268fc5ca0014c4d2e17337a953752b0157a76cc0bcb;PCShare - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+8afcc6a25320a28833334a413a0f395a73bacf033fe0e84fea7ed4fec7945ca4;PCShare - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+eeef1439b17280dfd7ce821752551aee57f3d1b7f385fe9cf331f69abd35cd96;PCShare - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+8afcc6a25320a28833334a413a0f395a73bacf033fe0e84fea7ed4fec7945ca4;PCShare - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+4a7910fe2c0e611be52d15798563c007aa632d47eae1f020be95fde27d963da9;QUICKHEAL - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+f45c6f8695fbc6e537cea15142f062a0d21c4a556c5fc1f7a2f3ee661b036ffc;QUICKHEAL - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+851010b875a2ae5c68e85c7d549082539e427b0e9f0c5efef92e1396c6d8a0ae;QUICKHEAL - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+c21a3a44b46e7242c0762c8ec5e8a394ddc74b747244c5b83678620ae141e59c;PlugX - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+6cd5079a69d9a68029e37f2680f44b7ba71c2b1eecf4894c2a8b293d5f768f10;PlugX - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+45c944889a482ae2e0e0a8e260c3be737cb612c8804164badef61e8a8713b92f;PlugX - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+0c596299c47ce6305e07f55397fd69d49c8cab4f4b34a617bb6670dcaac9d9f2;Icefog - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+11f38b6a69978dad95c9b1479db9a8729ca57329855998bd41befc364657d654;Icefog - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+D096EECD60710CCF7F1658A52D54CAEF9CB26B3857B3A3DBEFA688C769E07339;Icefog - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+087d8bee1db61273a7cd533d52b63265d3a8a8b897526d7849c48bcdba4b22ec;Icefog - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+73bbb96e078a2ca3d55e0acffe0f9c80edf6ff0459a25c34edb4c14bb88783c1;Icefog - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+e149E7C145D440193A0E3BF4B54C44DE00BBC3872EF18D6DA3C12F1E7ADD3053;Icefog - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+acb11d9d0652c95b16db17fda918ff5b6ee668156a30fe6276b0fa66f74c9720;PoisonIvy - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+c1e3a5e171d0de6054f4a1aeb9a46ff176ef5ba6464304b2f2660a23396e91f4;PoisonIvy - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+379af30d508cdbae7eb201041d8eb815b239e181dd8106145d4263753df3acd9;PoisonIvy - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+367718fd58c658dce22c995f3e10bc3a5425814ddf221686e166e3129a53e897;PoisonIvy - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+51e3f3a762ab6fb0c3db4819560c6b1607cdcd257ce375e68fdf1a17ff5c2cb5;Royal Road - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+597c0c6f397eefb06155abdf5aa9a7476c977c44ef8bd9575b01359e96273486;Royal Road - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+4e1a2f731688f9aab80b1f55d9101bb1cddec08214d4379621c434899a01efbf;Royal Road - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+a95bbc1f067783c1107566ed7897549f6504d5367b8282efe6f06dc31414c314;Royal Road - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+9d239ddd4c925d14e00b5a95827e9191bfda7d59858f141f6f5dcc52329838f0;Royal Road - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+f5365387320ae6e6907fd2700f340ba8712cb08f7e52b2ec4dccfe99b3d648ef;Royal Road - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+ecdf806bb7ac876bac8250a1f0ff40395faf7a6738df6e0f62553c4164fdf16d;Royal Road - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+5238f8d8c3d16b52d39aa722daff663a5e6307c4b46e360969d84bf409a2690f;Royal Road - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
