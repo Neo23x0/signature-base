@@ -10064,3 +10064,13 @@ a95bbc1f067783c1107566ed7897549f6504d5367b8282efe6f06dc31414c314;Royal Road - ht
 f5365387320ae6e6907fd2700f340ba8712cb08f7e52b2ec4dccfe99b3d648ef;Royal Road - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
 ecdf806bb7ac876bac8250a1f0ff40395faf7a6738df6e0f62553c4164fdf16d;Royal Road - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
 5238f8d8c3d16b52d39aa722daff663a5e6307c4b46e360969d84bf409a2690f;Royal Road - https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf
+
+1430291f2db13c3d94181ada91681408;DarkSide Supply Chain Attack - Trojanized Nullsoft Installer/SmartPSS - https://www.fireeye.com/blog/threat-research/2021/06/darkside-affiliate-supply-chain-software-compromise.html
+54e0a0d398314f330dfab6cd55d95f38;DarkSide Supply Chain Attack - Trojanized Nullsoft Installer/SmartPSS - https://www.fireeye.com/blog/threat-research/2021/06/darkside-affiliate-supply-chain-software-compromise.html
+e9ed774517e129a170cdb856bd13e7e8;DarkSide Supply Chain Attack - Trojanized Nullsoft Installer/SVStation - https://www.fireeye.com/blog/threat-research/2021/06/darkside-affiliate-supply-chain-software-compromise.html
+f075c2894ac84df4805e8ccf6491a4f4;DarkSide Supply Chain Attack - SMOKEDHAM LOADER - https://www.fireeye.com/blog/threat-research/2021/06/darkside-affiliate-supply-chain-software-compromise.html
+05d38c7e957092f7d0ebfc7bf1eb5365;DarkSide Supply Chain Attack - SMOKEDHAM LOADER - https://www.fireeye.com/blog/threat-research/2021/06/darkside-affiliate-supply-chain-software-compromise.html
+127bf1d43313736c52172f8dc6513f56;DarkSide Supply Chain Attack - SMOKEDHAM - https://www.fireeye.com/blog/threat-research/2021/06/darkside-affiliate-supply-chain-software-compromise.html
+9de326bf37270776b78e30d442bda48b;DarkSide Supply Chain Attack - SMOKEDHAM - https://www.fireeye.com/blog/threat-research/2021/06/darkside-affiliate-supply-chain-software-compromise.html
+b06319542cab55346776f0358a61b3b3;DarkSide Supply Chain Attack - SMOKEDHAM - https://www.fireeye.com/blog/threat-research/2021/06/darkside-affiliate-supply-chain-software-compromise.html
+a9fa3eba3f644ba352462b904dfbcc1a;DarkSide Supply Chain Attack - Beacon Shellcode  - https://www.fireeye.com/blog/threat-research/2021/06/darkside-affiliate-supply-chain-software-compromise.html
