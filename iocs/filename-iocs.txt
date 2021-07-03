@@ -3627,4 +3627,9 @@ C:\\ProgramData\\psh\\;60
 \\ProgramData\\Cisco Systems\\Cisco Jabber\\update\.exe;60
 \\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\update\.lnk;60
 
+# Kaseya Supply Chain Attack Pattern https://community.sophos.com/b/security-blog/posts/active-ransomware-attack-on-kaseya-customers
+:\\Windows\\cert\.exe;100
+:\\Windows\\msmpeng\.exe;90
+:\\Windows\\mpsvc\.dll;90
+
 # End
