@@ -1,5 +1,5 @@
 
-rule EXT_Cobaltbaltstrike_RAW_Payload_dns_stager_x86
+rule Cobaltbaltstrike_RAW_Payload_dns_stager_x86
 {
   meta:
     author = "Avast Threat Intel Team"
@@ -27,7 +27,7 @@ rule EXT_Cobaltbaltstrike_RAW_Payload_dns_stager_x86
     uint32(@h01+0x01e4) == 0xcc8e00f4
 }
 
-rule EXT_Cobaltbaltstrike_RAW_Payload_smb_stager_x86
+rule Cobaltbaltstrike_RAW_Payload_smb_stager_x86
 {
   meta:
     author = "Avast Threat Intel Team"
@@ -59,7 +59,7 @@ rule EXT_Cobaltbaltstrike_RAW_Payload_smb_stager_x86
     uint32(@h01+0x014b) == 0x56a2b5f0
 }
 
-rule EXT_Cobaltbaltstrike_RAW_Payload_TCP_Bind_x86
+rule Cobaltbaltstrike_RAW_Payload_TCP_Bind_x86
 {
   meta:
     author = "Avast Threat Intel Team"
@@ -99,7 +99,7 @@ rule EXT_Cobaltbaltstrike_RAW_Payload_TCP_Bind_x86
     uint32(@h01+0x013d) == 0x614d6e75
 }
 
-rule EXT_Cobaltbaltstrike_RAW_Payload_TCP_Bind_x64
+rule Cobaltbaltstrike_RAW_Payload_TCP_Bind_x64
 {
   meta:
     author = "Avast Threat Intel Team"
@@ -137,7 +137,7 @@ rule EXT_Cobaltbaltstrike_RAW_Payload_TCP_Bind_x64
     uint32(@h01+0x01ee) == 0x614d6e75
 }
 
-rule EXT_Cobaltbaltstrike_RAW_Payload_TCP_Reverse_x86
+rule Cobaltbaltstrike_RAW_Payload_TCP_Reverse_x86
 {
   meta:
     author = "Avast Threat Intel Team"
@@ -169,7 +169,7 @@ rule EXT_Cobaltbaltstrike_RAW_Payload_TCP_Reverse_x86
     uint32(@h01+0x0113) == 0x5fc8d902
 }
 
-rule EXT_Cobaltbaltstrike_RAW_Payload_TCP_Reverse_x64
+rule Cobaltbaltstrike_RAW_Payload_TCP_Reverse_x64
 {
   meta:
     author = "Avast Threat Intel Team"
@@ -201,7 +201,7 @@ rule EXT_Cobaltbaltstrike_RAW_Payload_TCP_Reverse_x64
     uint32(@h01+0x01c1) == 0x614d6e75
 }
 
-rule EXT_Cobaltbaltstrike_RAW_Payload_http_stager_x86
+rule Cobaltbaltstrike_RAW_Payload_http_stager_x86
 {
   meta:
     author = "Avast Threat Intel Team"
@@ -239,7 +239,7 @@ rule EXT_Cobaltbaltstrike_RAW_Payload_http_stager_x86
     uint32(@h01+0x02f3) == 0xe2899612
 }
 
-rule EXT_Cobaltbaltstrike_RAW_Payload_http_stager_x64
+rule Cobaltbaltstrike_RAW_Payload_http_stager_x64
 {
   meta:
     author = "Avast Threat Intel Team"
@@ -272,7 +272,7 @@ rule EXT_Cobaltbaltstrike_RAW_Payload_http_stager_x64
 }
 
 
-rule EXT_Cobaltbaltstrike_RAW_Payload_https_stager_x86
+rule Cobaltbaltstrike_RAW_Payload_https_stager_x86
 {
   meta:
     author = "Avast Threat Intel Team"
@@ -313,7 +313,7 @@ rule EXT_Cobaltbaltstrike_RAW_Payload_https_stager_x86
 }
 
 
-rule EXT_Cobaltbaltstrike_RAW_Payload_https_stager_x64
+rule Cobaltbaltstrike_RAW_Payload_https_stager_x64
 {
   meta:
     author = "Avast Threat Intel Team"
@@ -347,7 +347,7 @@ rule EXT_Cobaltbaltstrike_RAW_Payload_https_stager_x64
     uint32(@h01+0x0365) == 0xe2899612
 }
 
-rule EXT_Cobaltbaltstrike_RAW_Payload_dns_stager_x86_UTF16
+rule Cobaltbaltstrike_RAW_Payload_dns_stager_x86_UTF16
 {
   meta:
     author = "Avast Threat Intel Team"
@@ -365,7 +365,7 @@ rule EXT_Cobaltbaltstrike_RAW_Payload_dns_stager_x86_UTF16
     uint32(@h01+0x03cb) == 0xcc008e00
 }
 
-rule EXT_Cobaltbaltstrike_RAW_Payload_smb_stager_x86_UTF16
+rule Cobaltbaltstrike_RAW_Payload_smb_stager_x86_UTF16
 {
   meta:
     author = "Avast Threat Intel Team"
@@ -385,7 +385,7 @@ rule EXT_Cobaltbaltstrike_RAW_Payload_smb_stager_x86_UTF16
     uint32(@h01+0x0299) == 0x5600a200
 }
 
-rule EXT_Cobaltbaltstrike_RAW_Payload_TCP_Bind_x86_UTF16
+rule Cobaltbaltstrike_RAW_Payload_TCP_Bind_x86_UTF16
 {
   meta:
     author = "Avast Threat Intel Team"
@@ -409,7 +409,7 @@ rule EXT_Cobaltbaltstrike_RAW_Payload_TCP_Bind_x86_UTF16
     uint32(@h01+0x027d) == 0x61004d00
 }
 
-rule EXT_Cobaltbaltstrike_RAW_Payload_TCP_Bind_x64_UTF16
+rule Cobaltbaltstrike_RAW_Payload_TCP_Bind_x64_UTF16
 {
   meta:
     author = "Avast Threat Intel Team"
@@ -432,7 +432,7 @@ rule EXT_Cobaltbaltstrike_RAW_Payload_TCP_Bind_x64_UTF16
     uint32(@h01+0x03df) == 0x61004d00
 }
 
-rule EXT_Cobaltbaltstrike_RAW_Payload_TCP_Reverse_x86_UTF16
+rule Cobaltbaltstrike_RAW_Payload_TCP_Reverse_x86_UTF16
 {
   meta:
     author = "Avast Threat Intel Team"
@@ -452,7 +452,7 @@ rule EXT_Cobaltbaltstrike_RAW_Payload_TCP_Reverse_x86_UTF16
     uint32(@h01+0x0229) == 0x5f00c800
 }
 
-rule EXT_Cobaltbaltstrike_RAW_Payload_TCP_Reverse_x64_UTF16
+rule Cobaltbaltstrike_RAW_Payload_TCP_Reverse_x64_UTF16
 {
   meta:
     author = "Avast Threat Intel Team"
@@ -472,7 +472,7 @@ rule EXT_Cobaltbaltstrike_RAW_Payload_TCP_Reverse_x64_UTF16
     uint32(@h01+0x0385) == 0x61004d00
 }
 
-rule EXT_Cobaltbaltstrike_RAW_Payload_http_stager_x86_UTF16
+rule Cobaltbaltstrike_RAW_Payload_http_stager_x86_UTF16
 {
   meta:
     author = "Avast Threat Intel Team"
@@ -495,7 +495,7 @@ rule EXT_Cobaltbaltstrike_RAW_Payload_http_stager_x86_UTF16
     uint32(@h01+0x05e9) == 0xe2008900
 }
 
-rule EXT_Cobaltbaltstrike_RAW_Payload_http_stager_x64_UTF16
+rule Cobaltbaltstrike_RAW_Payload_http_stager_x64_UTF16
 {
   meta:
     author = "Avast Threat Intel Team"
@@ -515,7 +515,7 @@ rule EXT_Cobaltbaltstrike_RAW_Payload_http_stager_x64_UTF16
     uint32(@h01+0x0687) == 0xe2008900
 }
 
-rule EXT_Cobaltbaltstrike_RAW_Payload_https_stager_x86_UTF16
+rule Cobaltbaltstrike_RAW_Payload_https_stager_x86_UTF16
 {
   meta:
     author = "Avast Threat Intel Team"
@@ -539,7 +539,7 @@ rule EXT_Cobaltbaltstrike_RAW_Payload_https_stager_x86_UTF16
     uint32(@h01+0x0633) == 0xe2008900
 }
 
-rule EXT_Cobaltbaltstrike_RAW_Payload_https_stager_x64_UTF16
+rule Cobaltbaltstrike_RAW_Payload_https_stager_x64_UTF16
 {
   meta:
     author = "Avast Threat Intel Team"
@@ -560,7 +560,7 @@ rule EXT_Cobaltbaltstrike_RAW_Payload_https_stager_x64_UTF16
     uint32(@h01+0x06cd) == 0xe2008900
 }
 
-rule EXT_Cobaltbaltstrike_Payload_Encoded
+rule Cobaltbaltstrike_Payload_Encoded
 {
   meta:
     author = "Avast Threat Intel Team"
@@ -614,7 +614,7 @@ rule EXT_Cobaltbaltstrike_Payload_Encoded
         any of them
 }
 
-rule EXT_Cobaltbaltstrike_strike_Payload_XORed
+rule Cobaltbaltstrike_strike_Payload_XORed
 {
   meta:
     author = "Avast Threat Intel Team"
@@ -635,7 +635,7 @@ rule EXT_Cobaltbaltstrike_strike_Payload_XORed
     uint32be(@h01+8) ^ uint32be(@h01+16) == 0x90909090
 }
 
-rule EXT_Cobaltbaltstrike_Beacon_x86
+rule Cobaltbaltstrike_Beacon_x86
 {
   meta:
     author = "Avast Threat Intel Team"
@@ -655,7 +655,7 @@ rule EXT_Cobaltbaltstrike_Beacon_x86
     any of ($h1*)
 }
 
-rule EXT_Cobaltbaltstrike_Beacon_x64
+rule Cobaltbaltstrike_Beacon_x64
 {
   meta:
     author = "Avast Threat Intel Team"
@@ -675,7 +675,7 @@ rule EXT_Cobaltbaltstrike_Beacon_x64
     any of ($h1*)
 }
 
-rule EXT_Cobaltbaltstrike_Beacon_Encoded
+rule Cobaltbaltstrike_Beacon_Encoded
 {
   meta:
     author = "Avast Threat Intel Team"
@@ -728,7 +728,7 @@ rule EXT_Cobaltbaltstrike_Beacon_Encoded
         any of them
 }
 
-rule EXT_Cobaltbaltstrike_Beacon_XORed_x86
+rule Cobaltbaltstrike_Beacon_XORed_x86
 {
   meta:
     author = "Avast Threat Intel Team"
@@ -752,7 +752,7 @@ rule EXT_Cobaltbaltstrike_Beacon_XORed_x86
         )
 }
 
-rule EXT_Cobaltbaltstrike_Beacon_XORed_x64
+rule Cobaltbaltstrike_Beacon_XORed_x64
 {
   meta:
     author = "Avast Threat Intel Team"
