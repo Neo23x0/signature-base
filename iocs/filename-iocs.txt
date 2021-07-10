@@ -3632,4 +3632,12 @@ C:\\ProgramData\\psh\\;60
 :\\Windows\\msmpeng\.exe;90
 :\\Windows\\mpsvc\.dll;90
 
+# Default driver name in exploit PoC codes - e.g. CVE-2021-1675 and CVE-2021-34527 https://github.com/cube0x0/CVE-2021-1675/blob/main/CVE-2021-1675.py
+\\MyExploit\.dll;90
+\\evil\.dll;80
+\\addCube\.dll;70
+\\nightmare\.dll;65
+\\mimispool\.dll;85
+\\mimispool\.txt;85
+
 # End
