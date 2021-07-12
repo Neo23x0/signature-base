@@ -147,7 +147,7 @@ rule WEBSHELL_ASPX_reGeorgTunnel : Webshell Commodity {
       all of ($t*)
 }
 
-rule WEBSHELL_ASPX_SportsBall : Webshell {
+rule WEBSHELL_ASPX_SportsBall {
    meta:
       author = "threatintel@volexity.com"
       date = "2021-03-01"
