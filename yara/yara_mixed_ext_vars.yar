@@ -322,3 +322,34 @@ rule lsadump {
       and not filepath contains "Dr Watson"
       and not extension == "vbs"
 }
+
+rule SUSP_ServU_SSH_Error_Pattern_Jul21_1 {
+   meta:
+      description = "Detects suspicious SSH component exceptions that could be an indicator of exploitation attempts as described in advisory addressing CVE-2021-35211 in ServU services"
+      author = "Florian Roth"
+      reference = "https://www.solarwinds.com/trust-center/security-advisories/cve-2021-35211#FAQ"
+      date = "2021-07-12"
+      score = 60
+   strings:
+      $s1 = " - EXCEPTION: " ascii
+      $s2 = "CSUSSHSocket::ProcessReceive();" ascii
+   condition:
+      filename == "DebugSocketlog.txt"
+      and all of ($s*)
+}
+
+rule SUSP_ServU_Known_Mal_IP_Jul21_1 {
+   meta:
+      description = "Detects suspicious IP addresses used in exploitation of ServU services CVE-2021-35211 and reported by Solarwinds"
+      author = "Florian Roth"
+      reference = "https://www.solarwinds.com/trust-center/security-advisories/cve-2021-35211#FAQ"
+      date = "2021-07-12"
+      score = 60
+   strings:
+      $xip1 = "98.176.196.89" ascii fullword 
+      $xip2 = "68.235.178.32" ascii fullword
+      $xip3 = "208.113.35.58" ascii fullword
+   condition:
+      filename == "DebugSocketlog.txt"
+      and 1 of them
+}
