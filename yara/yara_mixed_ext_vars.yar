@@ -331,7 +331,7 @@ rule SUSP_ServU_SSH_Error_Pattern_Jul21_1 {
       date = "2021-07-12"
       score = 60
    strings:
-      $s1 = " - EXCEPTION: " ascii
+      $s1 = "EXCEPTION: C0000005;" ascii
       $s2 = "CSUSSHSocket::ProcessReceive();" ascii
    condition:
       filename == "DebugSocketlog.txt"
@@ -349,6 +349,8 @@ rule SUSP_ServU_Known_Mal_IP_Jul21_1 {
       $xip1 = "98.176.196.89" ascii fullword 
       $xip2 = "68.235.178.32" ascii fullword
       $xip3 = "208.113.35.58" ascii fullword
+      $xip4 = "144.34.179.162" ascii fullword
+      $xip5 = "97.77.97.58" ascii fullword
    condition:
       filename == "DebugSocketlog.txt"
       and 1 of them
