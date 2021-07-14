@@ -3640,4 +3640,8 @@ C:\\ProgramData\\psh\\;60
 \\mimispool\.dll;85
 \\mimispool\.txt;85
 
+# Serv-U vulnerability exploitation CVE-2021-35211 https://www.cadosecurity.com/post/triage-analysis-of-serv-u-ftp-user-backdoor-deployed-by-cve-2021-35211
+C:\\Windows\\Temp\\Serv-U\.bat;90
+C:\\Windows\\Temp\\test\\current\.dmp;90
+
 # End
