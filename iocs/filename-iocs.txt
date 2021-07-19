@@ -3644,4 +3644,10 @@ C:\\ProgramData\\psh\\;60
 C:\\Windows\\Temp\\Serv-U\.bat;90
 C:\\Windows\\Temp\\test\\current\.dmp;90
 
+# NSO Group Indicators https://github.com/AmnestyTech/investigations/tree/master/2021-07-18_nso
+/com.apple.CrashReporter.plist
+/com.apple.softwareupdateservicesd.plist
+/roleaccountd.plist
+/private/var/db/com.apple.xpc.roleaccountd.staging
+
 # End
