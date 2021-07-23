@@ -3650,4 +3650,9 @@ C:\\Windows\\Temp\\test\\current\.dmp;90
 /roleaccountd.plist
 /private/var/db/com.apple.xpc.roleaccountd.staging
 
+# Backup file names of important system HIVEs as used in hacktools (Invoke-HiveNightmare)
+\\Sam\.hive;65
+\\SAM-202;60
+\\hive_sam_;65
+
 # End
