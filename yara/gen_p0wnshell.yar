@@ -45,8 +45,12 @@ rule Hacktool_Strings_p0wnedShell {
       $x7 = "Invoke-Mimikatz" fullword ascii
       $x8 = "Invoke_Shellcode()" fullword ascii
       $x9 = "Invoke-ReflectivePEInjection" ascii
+
+      $fp1 = "Sentinel Labs, Inc." wide
+      $fp2 = "Copyright Elasticsearch B.V." ascii wide
    condition:
-      1 of them
+      1 of ($x*) 
+      and not 1 of ($fp*)
 }
 
 rule p0wnedPotato {
