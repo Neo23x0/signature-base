@@ -10074,3 +10074,8 @@ f075c2894ac84df4805e8ccf6491a4f4;DarkSide Supply Chain Attack - SMOKEDHAM LOADER
 9de326bf37270776b78e30d442bda48b;DarkSide Supply Chain Attack - SMOKEDHAM - https://www.fireeye.com/blog/threat-research/2021/06/darkside-affiliate-supply-chain-software-compromise.html
 b06319542cab55346776f0358a61b3b3;DarkSide Supply Chain Attack - SMOKEDHAM - https://www.fireeye.com/blog/threat-research/2021/06/darkside-affiliate-supply-chain-software-compromise.html
 a9fa3eba3f644ba352462b904dfbcc1a;DarkSide Supply Chain Attack - Beacon Shellcode  - https://www.fireeye.com/blog/threat-research/2021/06/darkside-affiliate-supply-chain-software-compromise.html
+
+dfddbd09ccea598c4841f1abbc927f1c661d85d4bd9bcb081f7c811212d8a64a;TA456 targeting defence contractors https://www.proofpoint.com/us/blog/threat-insight/i-knew-you-were-trouble-ta456-targets-defense-contractor-alluring-social-media
+612bdfb4f6eaf920a7a41fa06de8d99f6ecf6ad147374efa6eb1d5aff91df558;TA456 targeting defence contractors https://www.proofpoint.com/us/blog/threat-insight/i-knew-you-were-trouble-ta456-targets-defense-contractor-alluring-social-media
+1534f95f49ddf2ada38561705f901e5938470c1678d6a81f0f4177ba7412ef5b;TA456 targeting defence contractors https://www.proofpoint.com/us/blog/threat-insight/i-knew-you-were-trouble-ta456-targets-defense-contractor-alluring-social-media
+da65aa439e90d21b2cf53afef6491e7dcdca19dd1bbec50329d53f3d977ee089;TA456 targeting defence contractors https://www.proofpoint.com/us/blog/threat-insight/i-knew-you-were-trouble-ta456-targets-defense-contractor-alluring-social-media

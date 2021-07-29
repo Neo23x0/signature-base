@@ -3650,15 +3650,54 @@ C:\\Windows\\Temp\\test\\current\.dmp;90
 /roleaccountd.plist
 /private/var/db/com.apple.xpc.roleaccountd.staging
 
+
+# Suspicious names often found to be malicious samples 
+\\loader\.vbs;65
+\\loader\.ps1;65
+
+# SharpHound filename patterns https://williamknowles.io/fetching-sharphound-data-entirely-in-memory-no-dropped-zip-or-json-files-using-bof-net-and-cobalt-strike/
+\\202[0-9]{11}_gpos\.json;75
+\\202[0-9]{11}_domains\.json;75
+_BloodHoundLoopResults\.zip;90
+_BloodHound\.zip;90
+\\[a-zA-Z0-9]{17}[SyCyi]00[NMZOY][a-zA-Z0-9]{10}t[a-zA-Z0-9]{16}\.bin
+
 # SeriousSAM / HiveNightmare https://github.com/GossiTheDog/HiveNightmare and https://github.com/HuskyHacks/ShadowSteal
 \\SAM-haxx;90
 \\ShadowSteal\.exe;90
 \\Invoke-HiveNightmare;90
 \\HiveNightmare;80
 
+# PetitPotam Names https://github.com/topotam/PetitPotam
+\\PetitPotam;90
+
+# SpoolSample Names https://github.com/leechristensen/SpoolSample
+\\SpoolSample\.exe;80
+
 # Backup file names of important system HIVEs as used in hacktools (Invoke-HiveNightmare)
 \\Sam\.hive;65
 \\SAM-202;60
 \\hive_sam_;65
+
+# Relay Attack Tool Names
+\\PetitPotam;85
+\\Invoke-PetitPotam;95
+\\RottenPotato;85
+\\HotPotato;85
+\\JuicyPotato;85
+\\just_dce_;85
+\\Juicy Potato;85
+\\temp\rot\.exe;75
+\\Potato\.exe;75
+\\Responder\.exe;75
+\\smbrelayx;80
+\\ntlmrelayx;80
+
+# PlugX THOR Filename IOCs https://unit42.paloaltonetworks.com/thor-plugx-variant/
+C:\\ProgramData\\MSDN\\6\.0\NTUSER\.DAT;80
+
+# TA456 targeting defence contractors https://www.proofpoint.com/us/blog/threat-insight/i-knew-you-were-trouble-ta456-targets-defense-contractor-alluring-social-media
+\\AppData\\Perflog\\Schedule\.vbs;90
+\\AppData\\Perflog\\Logs\.txt;90
 
 # End
