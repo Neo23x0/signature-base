@@ -3694,7 +3694,7 @@ _BloodHound\.zip;90
 \\ntlmrelayx;80
 
 # PlugX THOR Filename IOCs https://unit42.paloaltonetworks.com/thor-plugx-variant/
-C:\\ProgramData\\MSDN\\6\.0\NTUSER\.DAT;80
+C:\\ProgramData\\MSDN\\6\.0\\NTUSER\.DAT;80
 
 # TA456 targeting defence contractors https://www.proofpoint.com/us/blog/threat-insight/i-knew-you-were-trouble-ta456-targets-defense-contractor-alluring-social-media
 \\AppData\\Perflog\\Schedule\.vbs;90
