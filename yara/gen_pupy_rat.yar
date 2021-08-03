@@ -13,7 +13,7 @@ import "pe"
 rule Pupy_Backdoor {
    meta:
       description = "Detects Pupy backdoor"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://github.com/n1nj4sec/pupy-binaries"
       date = "2017-08-11"

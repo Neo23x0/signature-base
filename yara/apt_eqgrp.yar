@@ -1271,7 +1271,7 @@ rule EQGRP_RC5_RC6_Opcode {
 rule EquationGroup_modifyAudit_Implant {
    meta:
       description = "EquationGroup Malware - file modifyAudit_Implant.dll"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1288,7 +1288,7 @@ rule EquationGroup_modifyAudit_Implant {
 rule EquationGroup_modifyAudit_Lp {
    meta:
       description = "EquationGroup Malware - file modifyAudit_Lp.dll"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1306,7 +1306,7 @@ rule EquationGroup_modifyAudit_Lp {
 rule EquationGroup_ProcessHide_Lp {
    meta:
       description = "EquationGroup Malware - file ProcessHide_Lp.dll"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1326,7 +1326,7 @@ rule EquationGroup_ProcessHide_Lp {
 rule EquationGroup_pwdump_Implant {
    meta:
       description = "EquationGroup Malware - file pwdump_Implant.dll"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1342,7 +1342,7 @@ rule EquationGroup_pwdump_Implant {
 rule EquationGroup_EquationDrug_Gen_5 {
    meta:
       description = "EquationGroup Malware - file PC_Level3_http_dll"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1359,7 +1359,7 @@ rule EquationGroup_EquationDrug_Gen_5 {
 rule EquationGroup_PC_Level3_http_flav_dll {
    meta:
       description = "EquationGroup Malware - file PC_Level3_http_flav_dll"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1377,7 +1377,7 @@ rule EquationGroup_PC_Level3_http_flav_dll {
 rule EquationGroup_LSADUMP_Lp {
    meta:
       description = "EquationGroup Malware - file LSADUMP_Lp.dll"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1391,7 +1391,7 @@ rule EquationGroup_LSADUMP_Lp {
 rule EquationGroup_EquationDrug_mstcp32 {
    meta:
       description = "EquationGroup Malware - file mstcp32.sys"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1413,7 +1413,7 @@ rule EquationGroup_EquationDrug_mstcp32 {
 rule EquationGroup_nethide_Lp {
    meta:
       description = "EquationGroup Malware - file nethide_Lp.dll"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1431,7 +1431,7 @@ rule EquationGroup_nethide_Lp {
 rule EquationGroup_PC_Level4_flav_dll_x64 {
    meta:
       description = "EquationGroup Malware - file PC_Level4_flav_dll_x64"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1447,7 +1447,7 @@ rule EquationGroup_PC_Level4_flav_dll_x64 {
 rule EquationGroup_PC_Level4_flav_exe {
    meta:
       description = "EquationGroup Malware - file PC_Level4_flav_exe"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1466,7 +1466,7 @@ rule EquationGroup_PC_Level4_flav_exe {
 rule EquationGroup_processinfo_Implant {
    meta:
       description = "EquationGroup Malware - file processinfo_Implant.dll"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1498,7 +1498,7 @@ rule EquationGroup_EquationDrug_Gen_2 {
 rule EquationGroup_EquationDrug_ntevt {
    meta:
       description = "EquationGroup Malware - file ntevt.sys"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1513,7 +1513,7 @@ rule EquationGroup_EquationDrug_ntevt {
 rule EquationGroup_nethide_Implant {
    meta:
       description = "EquationGroup Malware - file nethide_Implant.dll"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1543,7 +1543,7 @@ rule EquationGroup_EquationDrug_Gen_4 {
 rule EquationGroup_EquationDrug_tdi6 {
    meta:
       description = "EquationGroup Malware - file tdi6.sys"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1560,7 +1560,7 @@ rule EquationGroup_EquationDrug_tdi6 {
 rule EquationGroup_modifyAuthentication_Implant {
    meta:
       description = "EquationGroup Malware - file modifyAuthentication_Implant.dll"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1578,7 +1578,7 @@ rule EquationGroup_modifyAuthentication_Implant {
 rule EquationGroup_ntfltmgr {
    meta:
       description = "EquationGroup Malware - file ntfltmgr.sys"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1595,7 +1595,7 @@ rule EquationGroup_ntfltmgr {
 rule EquationGroup_DXGHLP16 {
    meta:
       description = "EquationGroup Malware - file DXGHLP16.SYS"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1617,7 +1617,7 @@ rule EquationGroup_DXGHLP16 {
 rule EquationGroup_EquationDrug_msgkd {
    meta:
       description = "EquationGroup Malware - file msgkd.ex_"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1632,7 +1632,7 @@ rule EquationGroup_EquationDrug_msgkd {
 rule EquationGroup_RunAsChild_Lp {
    meta:
       description = "EquationGroup Malware - file RunAsChild_Lp.dll"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1648,7 +1648,7 @@ rule EquationGroup_RunAsChild_Lp {
 rule EquationGroup_EquationDrug_Gen_6 {
    meta:
       description = "EquationGroup Malware - file PC_Level3_dll_x64"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1664,7 +1664,7 @@ rule EquationGroup_EquationDrug_Gen_6 {
 rule EquationGroup_PC_Level3_http_flav_dll_x64 {
    meta:
       description = "EquationGroup Malware - file PC_Level3_http_flav_dll_x64"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1697,7 +1697,7 @@ rule EquationGroup_EquationDrug_Gen_3 {
 rule EquationGroup_GetAdmin_Lp {
    meta:
       description = "EquationGroup Malware - file GetAdmin_Lp.dll"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1712,7 +1712,7 @@ rule EquationGroup_GetAdmin_Lp {
 rule EquationGroup_ModifyGroup_Lp {
    meta:
       description = "EquationGroup Malware - file ModifyGroup_Lp.dll"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1727,7 +1727,7 @@ rule EquationGroup_ModifyGroup_Lp {
 rule EquationGroup_pwdump_Lp {
    meta:
       description = "EquationGroup Malware - file pwdump_Lp.dll"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1741,7 +1741,7 @@ rule EquationGroup_pwdump_Lp {
 rule EquationGroup_EventLogEdit_Implant {
    meta:
       description = "EquationGroup Malware - file EventLogEdit_Implant.dll"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1757,7 +1757,7 @@ rule EquationGroup_EventLogEdit_Implant {
 rule EquationGroup_PortMap_Lp {
    meta:
       description = "EquationGroup Malware - file PortMap_Lp.dll"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1773,7 +1773,7 @@ rule EquationGroup_PortMap_Lp {
 rule EquationGroup_ProcessOptions_Lp {
    meta:
       description = "EquationGroup Malware - file ProcessOptions_Lp.dll"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1787,7 +1787,7 @@ rule EquationGroup_ProcessOptions_Lp {
 rule EquationGroup_PassFreely_Lp {
    meta:
       description = "EquationGroup Malware - file PassFreely_Lp.dll"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
@@ -1805,7 +1805,7 @@ rule EquationGroup_PassFreely_Lp {
 rule EquationGroup_EquationDrug_Gen_1 {
    meta:
       description = "EquationGroup Malware"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"

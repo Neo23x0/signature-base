@@ -3,7 +3,7 @@ import "pe"
 rule BKDR_Snarasite_Oct17 {
    meta:
       description = "Auto-generated rule"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-10-07"

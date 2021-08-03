@@ -11,7 +11,7 @@
 rule PowerShell_Emp_Eval_Jul17_A1 {
    meta:
       description = "Detects suspicious sample with PowerShell content "
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "PowerShell Empire Eval"
       date = "2017-07-27"
@@ -26,7 +26,7 @@ rule PowerShell_Emp_Eval_Jul17_A1 {
 rule PowerShell_Emp_Eval_Jul17_A2 {
    meta:
       description = "Detects suspicious sample with PowerShell content "
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "PowerShell Empire Eval"
       date = "2017-07-27"

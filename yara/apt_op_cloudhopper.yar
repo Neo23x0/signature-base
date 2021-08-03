@@ -10,7 +10,7 @@
 rule OpCloudHopper_Malware_1 {
    meta:
       description = "Detects malware from Operation Cloud Hopper"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
@@ -27,7 +27,7 @@ rule OpCloudHopper_Malware_1 {
 rule OpCloudHopper_Malware_2 {
    meta:
       description = "Detects malware from Operation Cloud Hopper"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
@@ -56,7 +56,7 @@ rule OpCloudHopper_Malware_2 {
 rule OpCloudHopper_Malware_3 {
    meta:
       description = "Detects malware from Operation Cloud Hopper"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
@@ -77,7 +77,7 @@ rule OpCloudHopper_Malware_3 {
 rule OpCloudHopper_Dropper_1 {
    meta:
       description = "Detects malware from Operation Cloud Hopper"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
@@ -91,7 +91,7 @@ rule OpCloudHopper_Dropper_1 {
 rule OpCloudHopper_Malware_4 {
    meta:
       description = "Detects malware from Operation Cloud Hopper"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
@@ -107,7 +107,7 @@ rule OpCloudHopper_Malware_4 {
 rule OpCloudHopper_Malware_5 {
    meta:
       description = "Detects malware from Operation Cloud Hopper"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
@@ -128,7 +128,7 @@ rule OpCloudHopper_Malware_5 {
 rule OpCloudHopper_Malware_6 {
    meta:
       description = "Detects malware from Operation Cloud Hopper"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
@@ -145,7 +145,7 @@ rule OpCloudHopper_Malware_6 {
 rule OpCloudHopper_Malware_7 {
    meta:
       description = "Detects malware from Operation Cloud Hopper"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
@@ -160,7 +160,7 @@ rule OpCloudHopper_Malware_7 {
 rule OpCloudHopper_Malware_8 {
    meta:
       description = "Detects malware from Operation Cloud Hopper"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
@@ -180,7 +180,7 @@ rule OpCloudHopper_Malware_8 {
 rule OpCloudHopper_Malware_9 {
    meta:
       description = "Detects malware from Operation Cloud Hopper"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
@@ -195,7 +195,7 @@ rule OpCloudHopper_Malware_9 {
 rule OpCloudHopper_Malware_10 {
    meta:
       description = "Detects malware from Operation Cloud Hopper"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
@@ -211,7 +211,7 @@ rule OpCloudHopper_Malware_10 {
 rule OpCloudHopper_Malware_11 {
    meta:
       description = "Detects malware from Operation Cloud Hopper"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
@@ -237,7 +237,7 @@ rule OpCloudHopper_Malware_11 {
 rule OpCloudHopper_lockdown {
    meta:
       description = "Tools related to Operation Cloud Hopper"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://github.com/maaaaz/impacket-examples-windows"
       date = "2017-04-07"
@@ -252,7 +252,7 @@ rule OpCloudHopper_lockdown {
 rule OpCloudHopper_WindowXarBot {
    meta:
       description = "Malware related to Operation Cloud Hopper"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.pwc.co.uk/cyber-security/pdf/cloud-hopper-annex-b-final.pdf"
       date = "2017-04-07"
@@ -265,7 +265,7 @@ rule OpCloudHopper_WindowXarBot {
 rule OpCloudHopper_WmiDLL_inMemory {
    meta:
       description = "Malware related to Operation Cloud Hopper - Page 25"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.pwc.co.uk/cyber-security/pdf/cloud-hopper-annex-b-final.pdf"
       date = "2017-04-07"
@@ -278,7 +278,7 @@ rule OpCloudHopper_WmiDLL_inMemory {
 rule VBS_WMIExec_Tool_Apr17_1 {
    meta:
       description = "Tools related to Operation Cloud Hopper"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://github.com/maaaaz/impacket-examples-windows"
       date = "2017-04-07"

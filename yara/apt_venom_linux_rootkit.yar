@@ -10,7 +10,7 @@
 rule Venom_Rootkit {
    meta:
       description = "Venom Linux Rootkit"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://security.web.cern.ch/security/venom.shtml"
       date = "2017-01-12"

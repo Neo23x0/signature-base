@@ -8,7 +8,7 @@
 rule Nanocore_RAT_Gen_1 {
    meta:
       description = "Detetcs the Nanocore RAT and similar malware"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.sentinelone.com/blogs/teaching-an-old-rat-new-tricks/"
       date = "2016-04-22"
@@ -27,7 +27,7 @@ rule Nanocore_RAT_Gen_1 {
 rule Nanocore_RAT_Gen_2 {
    meta:
       description = "Detetcs the Nanocore RAT"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       score = 100
       reference = "https://www.sentinelone.com/blogs/teaching-an-old-rat-new-tricks/"
@@ -44,7 +44,7 @@ rule Nanocore_RAT_Gen_2 {
 rule Nanocore_RAT_Sample_1 {
    meta:
       description = "Detetcs a certain Nanocore RAT sample"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       score = 75
       reference = "https://www.sentinelone.com/blogs/teaching-an-old-rat-new-tricks/"
@@ -61,7 +61,7 @@ rule Nanocore_RAT_Sample_1 {
 rule Nanocore_RAT_Sample_2 {
    meta:
       description = "Detetcs a certain Nanocore RAT sample"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       score = 75
       reference = "https://www.sentinelone.com/blogs/teaching-an-old-rat-new-tricks/"
@@ -88,7 +88,7 @@ rule Nanocore_RAT_Sample_2 {
 rule Nanocore_RAT_Feb18_1 {
    meta:
       description = "Detects Nanocore RAT"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "Internal Research - T2T"
       date = "2018-02-19"
@@ -112,7 +112,7 @@ rule Nanocore_RAT_Feb18_1 {
 rule Nanocore_RAT_Feb18_2 {
    meta:
       description = "Detects Nanocore RAT"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "Internal Research - T2T"
       date = "2018-02-19"

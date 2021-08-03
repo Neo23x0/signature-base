@@ -9119,7 +9119,7 @@ rule Nishang_Webshell {
 rule PHP_Webshell_1_Feb17 {
    meta:
       description = "Detects a simple cloaked PHP web shell"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://isc.sans.edu/diary/Analysis+of+a+Simple+PHP+Backdoor/22127"
       date = "2017-02-28"
@@ -9164,7 +9164,7 @@ rule Webshell_Tiny_JSP_2 {
 rule Wordpress_Config_Webshell_Preprend {
    meta:
       description = "Webshell that uses standard Wordpress wp-config.php file and appends the malicious code in front of it"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-06-25"
@@ -9196,7 +9196,7 @@ rule Wordpress_Config_Webshell_Preprend {
 rule PAS_Webshell_Encoded {
    meta:
       description = "Detects a PAS webshell"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "http://blog.talosintelligence.com/2017/07/the-medoc-connection.html"
       date = "2017-07-11"
@@ -9242,7 +9242,7 @@ rule PAS_Webshell_Encoded {
 rule ALFA_SHELL {
    meta:
       description = "Detects web shell often used by Iranian APT groups"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "Internal Research - APT33"
       date = "2017-09-21"
@@ -9261,7 +9261,7 @@ rule ALFA_SHELL {
 rule Webshell_FOPO_Obfuscation_APT_ON_Nov17_1 {
    meta:
       description = "Detects malware from NK APT incident DE"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "Internal Research - ON"
       date = "2017-11-17"

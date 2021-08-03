@@ -11,7 +11,7 @@
 rule OilRig_Strings_Oct17 {
    meta:
       description = "Detects strings from OilRig malware and malicious scripts"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2017/10/unit42-oilrig-group-steps-attacks-new-delivery-documents-new-injector-trojan/"
       date = "2017-10-18"
@@ -40,7 +40,7 @@ import "pe"
 rule OilRig_ISMAgent_Campaign_Samples1 {
    meta:
       description = "Detects OilRig malware from Unit 42 report in October 2017"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/JQVfFP"
       date = "2017-10-18"
@@ -60,7 +60,7 @@ rule OilRig_ISMAgent_Campaign_Samples1 {
 rule OilRig_ISMAgent_Campaign_Samples2 {
    meta:
       description = "Detects OilRig malware from Unit 42 report in October 2017"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/JQVfFP"
       date = "2017-10-18"
@@ -80,7 +80,7 @@ rule OilRig_ISMAgent_Campaign_Samples2 {
 rule OilRig_ISMAgent_Campaign_Samples3 {
    meta:
       description = "Detects OilRig malware from Unit 42 report in October 2017"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/JQVfFP"
       date = "2017-10-18"

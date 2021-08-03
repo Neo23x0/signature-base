@@ -11,7 +11,7 @@
 rule RevengeRAT_Sep17 {
    meta:
       description = "Detects RevengeRAT malware"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-09-04"

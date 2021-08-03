@@ -59,7 +59,7 @@ rule APT_NK_AR18_165A_HiddenCobra_import_deob {
 rule APT_NK_AR18_165A_1 {
    meta:
       description = "Detects APT malware from AR18-165A report by US CERT"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.us-cert.gov/ncas/analysis-reports/AR18-165A"
       date = "2018-06-15"

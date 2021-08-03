@@ -12,7 +12,7 @@
 rule MiniRAT_Gen_1 {
    meta:
       description = "Detects Mini RAT malware"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.eff.org/deeplinks/2018/01/dark-caracal-good-news-and-bad-news"
       date = "2018-01-22"

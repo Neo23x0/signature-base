@@ -39,7 +39,7 @@ rule StreamEx_ShellCrew {
 rule ShellCrew_StreamEx_1 {
    meta:
       description = "Auto-generated rule"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://blog.cylance.com/shell-crew-variants-continue-to-fly-under-big-avs-radar"
       date = "2017-02-10"
@@ -58,7 +58,7 @@ rule ShellCrew_StreamEx_1 {
 rule ShellCrew_StreamEx_1_msi {
    meta:
       description = "Auto-generated rule"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://blog.cylance.com/shell-crew-variants-continue-to-fly-under-big-avs-radar"
       date = "2017-02-10"
@@ -78,7 +78,7 @@ rule ShellCrew_StreamEx_1_msi {
 rule ShellCrew_StreamEx_1_msi_dll {
    meta:
       description = "Auto-generated rule"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://blog.cylance.com/shell-crew-variants-continue-to-fly-under-big-avs-radar"
       date = "2017-02-10"

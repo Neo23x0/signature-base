@@ -11,7 +11,7 @@
 rule HTA_with_WScript_Shell {
    meta:
       description = "Detects WScript Shell in HTA"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://twitter.com/msftmmpc/status/877396932758560768"
       date = "2017-06-21"
@@ -27,7 +27,7 @@ rule HTA_with_WScript_Shell {
 rule HTA_Embedded {
    meta:
       description = "Detects an embedded HTA file"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://twitter.com/msftmmpc/status/877396932758560768"
       date = "2017-06-21"

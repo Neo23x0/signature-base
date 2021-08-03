@@ -58,7 +58,7 @@ rule IronTiger_Gh0stRAT_variant
 rule OpCloudHopper_Cloaked_PSCP {
    meta:
       description = "Tool used in Operation Cloud Hopper - pscp.exe cloaked as rundll32.exe"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.pwc.co.uk/cyber-security/pdf/cloud-hopper-annex-b-final.pdf"
       date = "2017-04-07"
@@ -73,7 +73,7 @@ rule OpCloudHopper_Cloaked_PSCP {
 rule msi_dll_Anomaly {
    meta:
       description = "Detetcs very small and supicious msi.dll"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://blog.cylance.com/shell-crew-variants-continue-to-fly-under-big-avs-radar"
       date = "2017-02-10"
@@ -87,7 +87,7 @@ rule msi_dll_Anomaly {
 rule PoS_Malware_MalumPOS_Config
 {
     meta:
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         date = "2015-06-25"
         description = "MalumPOS Config File"
@@ -168,7 +168,7 @@ rule SCT_Scriptlet_in_Temp_Inet_Files {
 rule GIFCloaked_Webshell_A {
    meta:
       description = "Looks like a webshell cloaked as GIF"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       hash = "f1c95b13a71ca3629a0bb79601fcacf57cdfcf768806a71b26f2448f8c1d5d24"
       score = 60
@@ -255,7 +255,7 @@ rule Exe_Cloaked_as_ThumbsDb
     meta:
         description = "Detects an executable cloaked as thumbs.db - Malware"
         date = "2014-07-18"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         score = 50
     condition:

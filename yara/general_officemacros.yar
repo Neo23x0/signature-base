@@ -50,7 +50,7 @@ rule Office_as_MHTML {
 rule Docm_in_PDF {
    meta:
       description = "Detects an embedded DOCM in PDF combined with OpenAction"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-05-15"

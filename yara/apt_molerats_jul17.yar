@@ -11,7 +11,7 @@
 rule Molerats_Jul17_Sample_1 {
    meta:
       description = "Detects Molerats sample - July 2017"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://mymalwareparty.blogspot.de/2017/07/operation-desert-eagle.html"
       date = "2017-07-07"
@@ -26,7 +26,7 @@ rule Molerats_Jul17_Sample_1 {
 rule Molerats_Jul17_Sample_2 {
    meta:
       description = "Detects Molerats sample - July 2017"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://mymalwareparty.blogspot.de/2017/07/operation-desert-eagle.html"
       date = "2017-07-07"
@@ -42,7 +42,7 @@ rule Molerats_Jul17_Sample_2 {
 rule Molerats_Jul17_Sample_3 {
    meta:
       description = "Detects Molerats sample - July 2017"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://mymalwareparty.blogspot.de/2017/07/operation-desert-eagle.html"
       date = "2017-07-07"
@@ -58,7 +58,7 @@ rule Molerats_Jul17_Sample_3 {
 rule Molerats_Jul17_Sample_4 {
    meta:
       description = "Detects Molerats sample - July 2017"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://mymalwareparty.blogspot.de/2017/07/operation-desert-eagle.html"
       date = "2017-07-07"
@@ -74,7 +74,7 @@ rule Molerats_Jul17_Sample_4 {
 rule Molerats_Jul17_Sample_5 {
    meta:
       description = "Detects Molerats sample - July 2017"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://mymalwareparty.blogspot.de/2017/07/operation-desert-eagle.html"
       date = "2017-07-07"
@@ -92,7 +92,7 @@ rule Molerats_Jul17_Sample_5 {
 rule Molerats_Jul17_Sample_Dropper {
    meta:
       description = "Detects Molerats sample dropper SFX - July 2017"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://mymalwareparty.blogspot.de/2017/07/operation-desert-eagle.html"
       date = "2017-07-07"

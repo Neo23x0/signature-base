@@ -10,7 +10,7 @@
 rule CN_Tools_xbat {
     meta:
         description = "Chinese Hacktool Set - file xbat.vbs"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
@@ -25,7 +25,7 @@ rule CN_Tools_xbat {
 rule CN_Tools_Temp {
     meta:
         description = "Chinese Hacktool Set - file Temp.war"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
@@ -42,7 +42,7 @@ rule CN_Tools_Temp {
 rule CN_Tools_srss {
     meta:
         description = "Chinese Hacktool Set - file srss.bat"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
@@ -57,7 +57,7 @@ rule CN_Tools_srss {
 rule dll_UnReg {
     meta:
         description = "Chinese Hacktool Set - file UnReg.bat"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
@@ -72,7 +72,7 @@ rule dll_UnReg {
 rule dll_Reg {
     meta:
         description = "Chinese Hacktool Set - file Reg.bat"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
@@ -87,7 +87,7 @@ rule dll_Reg {
 rule sbin_squid {
     meta:
         description = "Chinese Hacktool Set - file squid.bat"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
@@ -104,7 +104,7 @@ rule sbin_squid {
 rule sql1433_creck {
     meta:
         description = "Chinese Hacktool Set - file creck.bat"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
@@ -120,7 +120,7 @@ rule sql1433_creck {
 rule sql1433_Start {
     meta:
         description = "Chinese Hacktool Set - file Start.bat"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"

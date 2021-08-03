@@ -4,7 +4,7 @@
 rule PS_AMSI_Bypass {
    meta:
       description = "Detects PowerShell AMSI Bypass"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://gist.github.com/mattifestation/46d6a2ebb4a1f4f0e7229503dc012ef1"
       date = "2017-07-19"
@@ -19,7 +19,7 @@ rule PS_AMSI_Bypass {
 rule JS_Suspicious_Obfuscation_Dropbox {
    meta:
       description = "Detects PowerShell AMSI Bypass"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://twitter.com/ItsReallyNick/status/887705105239343104"
       date = "2017-07-19"
@@ -34,7 +34,7 @@ rule JS_Suspicious_Obfuscation_Dropbox {
 rule JS_Suspicious_MSHTA_Bypass {
    meta:
       description = "Detects MSHTA Bypass"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://twitter.com/ItsReallyNick/status/887705105239343104"
       date = "2017-07-19"
@@ -50,7 +50,7 @@ rule JS_Suspicious_MSHTA_Bypass {
 rule JavaScript_Run_Suspicious {
    meta:
       description = "Detects a suspicious Javascript Run command"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://twitter.com/craiu/status/900314063560998912"
       score = 60
@@ -74,7 +74,7 @@ private rule MSI {
 rule Certutil_Decode_OR_Download {
    meta:
       description = "Certutil Decode"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "Internal Research"
       score = 40
@@ -93,7 +93,7 @@ rule Certutil_Decode_OR_Download {
 rule Suspicious_JS_script_content {
    meta:
       description = "Detects suspicious statements in JavaScript files"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "Research on Leviathan https://goo.gl/MZ7dRg"
       date = "2017-12-02"
@@ -111,7 +111,7 @@ rule Suspicious_JS_script_content {
 rule Universal_Exploit_Strings {
    meta:
       description = "Detects a group of strings often used in exploit codes"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "not set"
       date = "2017-12-02"
@@ -129,7 +129,7 @@ rule Universal_Exploit_Strings {
 rule VBS_Obfuscated_Mal_Feb18_1  {
    meta:
       description = "Detects malicious obfuscated VBS observed in February 2018"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/zPsn83"
       date = "2018-02-12"

@@ -10,7 +10,7 @@
 rule APT_PupyRAT_PY {
    meta:
       description = "Detects Pupy RAT"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.secureworks.com/blog/iranian-pupyrat-bites-middle-eastern-organizations"
       date = "2017-02-17"
@@ -32,7 +32,7 @@ rule APT_PupyRAT_PY {
 rule APT_MagicHound_MalMacro {
    meta:
       description = "Detects malicious macro / powershell in Office document"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.secureworks.com/blog/iranian-pupyrat-bites-middle-eastern-organizations"
       date = "2017-02-17"

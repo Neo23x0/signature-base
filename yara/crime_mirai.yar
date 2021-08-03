@@ -61,7 +61,7 @@ rule Mirai_Botnet_Malware {
 rule Mirai_1_May17 {
    meta:
       description = "Detects Mirai Malware"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-05-12"
@@ -78,7 +78,7 @@ rule Mirai_1_May17 {
 rule Miari_2_May17 {
    meta:
       description = "Detects Mirai Malware"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-05-12"

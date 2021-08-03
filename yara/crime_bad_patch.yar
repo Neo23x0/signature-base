@@ -11,7 +11,7 @@
 rule WinAgent_BadPatch_1 {
    meta:
       description = "Detects samples mentioned in BadPatch report"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/RvDwwA"
       date = "2017-10-20"
@@ -40,7 +40,7 @@ rule WinAgent_BadPatch_1 {
 rule WinAgent_BadPatch_2 {
    meta:
       description = "Detects samples mentioned in BadPatch report"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/RvDwwA"
       date = "2017-10-20"

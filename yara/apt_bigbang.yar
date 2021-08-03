@@ -3,7 +3,7 @@ import "pe"
 rule APT_ME_BigBang_Gen_Jul18_1 {
    meta:
       description = "Detects malware from Big Bang campaign against Palestinian authorities"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://research.checkpoint.com/apt-attack-middle-east-big-bang/"
       date = "2018-07-09"
@@ -30,7 +30,7 @@ rule APT_ME_BigBang_Gen_Jul18_1 {
 rule APT_ME_BigBang_Mal_Jul18_1 {
    meta:
       description = "Detects malware from Big Bang report"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://research.checkpoint.com/apt-attack-middle-east-big-bang/"
       date = "2018-07-09"

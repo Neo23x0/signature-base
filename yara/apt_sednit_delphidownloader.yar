@@ -39,7 +39,7 @@ rule MAL_Sednit_DelphiDownloader_Apr18_2 {
 rule MAL_Sednit_DelphiDownloader_Apr18_3 {
    meta:
       description = "Detects malware from Sednit Delphi Downloader report"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.welivesecurity.com/2018/04/24/sednit-update-analysis-zebrocy/"
       date = "2018-04-24"
