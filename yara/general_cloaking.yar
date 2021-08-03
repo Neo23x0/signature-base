@@ -38,7 +38,7 @@ rule Cloaked_RAR_File {
 	condition:
 		uint32be(0) == 0x52617221							// RAR File Magic Header
 		and not filename matches /(rarnew.dat|\.rar)$/is	// not the .RAR extension
-        and not filename matches /\.[rR][\d]{2}$/           // split RAR file
+		and not filename matches /\.[rR][\d]{2}$/           // split RAR file
 		and not filepath contains "Recycle" 				// not a deleted RAR file in recycler
 }
 
