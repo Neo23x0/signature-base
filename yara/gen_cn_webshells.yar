@@ -10,7 +10,7 @@
 rule Tools_cmd {
     meta:
         description = "Chinese Hacktool Set - file cmd.jSp"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
@@ -34,7 +34,7 @@ rule Tools_cmd {
 rule trigger_drop {
     meta:
         description = "Chinese Hacktool Set - file trigger_drop.php"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
@@ -51,7 +51,7 @@ rule trigger_drop {
 rule InjectionParameters {
     meta:
         description = "Chinese Hacktool Set - file InjectionParameters.vb"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
@@ -66,7 +66,7 @@ rule InjectionParameters {
 rule users_list {
     meta:
         description = "Chinese Hacktool Set - file users_list.php"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
@@ -82,7 +82,7 @@ rule users_list {
 rule trigger_modify {
     meta:
         description = "Chinese Hacktool Set - file trigger_modify.php"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
@@ -100,7 +100,7 @@ rule trigger_modify {
 rule Customize {
     meta:
         description = "Chinese Hacktool Set - file Customize.aspx"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
@@ -117,7 +117,7 @@ rule Customize {
 rule oracle_data {
     meta:
         description = "Chinese Hacktool Set - file oracle_data.php"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
@@ -133,7 +133,7 @@ rule oracle_data {
 rule reDuhServers_reDuh {
     meta:
         description = "Chinese Hacktool Set - file reDuh.jsp"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
@@ -149,7 +149,7 @@ rule reDuhServers_reDuh {
 rule item_old {
     meta:
         description = "Chinese Hacktool Set - file item-old.php"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
@@ -165,7 +165,7 @@ rule item_old {
 rule Tools_2014 {
     meta:
         description = "Chinese Hacktool Set - file 2014.jsp"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
@@ -181,7 +181,7 @@ rule Tools_2014 {
 rule reDuhServers_reDuh_2 {
     meta:
         description = "Chinese Hacktool Set - file reDuh.php"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
@@ -197,7 +197,7 @@ rule reDuhServers_reDuh_2 {
 rule Customize_2 {
     meta:
         description = "Chinese Hacktool Set - file Customize.jsp"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
@@ -212,7 +212,7 @@ rule Customize_2 {
 rule ChinaChopper_one {
     meta:
         description = "Chinese Hacktool Set - file one.asp"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
@@ -226,7 +226,7 @@ rule ChinaChopper_one {
 rule CN_Tools_old {
     meta:
         description = "Chinese Hacktool Set - file old.php"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
@@ -243,7 +243,7 @@ rule CN_Tools_old {
 rule item_301 {
     meta:
         description = "Chinese Hacktool Set - file item-301.php"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
@@ -260,7 +260,7 @@ rule item_301 {
 rule CN_Tools_item {
     meta:
         description = "Chinese Hacktool Set - file item.php"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
@@ -277,7 +277,7 @@ rule CN_Tools_item {
 rule f3_diy {
     meta:
         description = "Chinese Hacktool Set - file diy.asp"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
@@ -292,7 +292,7 @@ rule f3_diy {
 rule ChinaChopper_temp {
     meta:
         description = "Chinese Hacktool Set - file temp.asp"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
@@ -309,7 +309,7 @@ rule ChinaChopper_temp {
 rule Tools_2015 {
     meta:
         description = "Chinese Hacktool Set - file 2015.jsp"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
@@ -327,7 +327,7 @@ rule Tools_2015 {
 rule ChinaChopper_temp_2 {
     meta:
         description = "Chinese Hacktool Set - file temp.php"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
@@ -341,7 +341,7 @@ rule ChinaChopper_temp_2 {
 rule templatr {
     meta:
         description = "Chinese Hacktool Set - file templatr.php"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
@@ -355,7 +355,7 @@ rule templatr {
 rule reDuhServers_reDuh_3 {
     meta:
         description = "Chinese Hacktool Set - file reDuh.aspx"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
@@ -372,7 +372,7 @@ rule reDuhServers_reDuh_3 {
 rule ChinaChopper_temp_3 {
     meta:
         description = "Chinese Hacktool Set - file temp.aspx"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
@@ -387,7 +387,7 @@ rule ChinaChopper_temp_3 {
 rule Shell_Asp {
     meta:
         description = "Chinese Hacktool Set Webshells - file Asp.html"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
@@ -404,7 +404,7 @@ rule Shell_Asp {
 rule Txt_aspxtag {
     meta:
         description = "Chinese Hacktool Set - Webshells - file aspxtag.txt"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
@@ -420,7 +420,7 @@ rule Txt_aspxtag {
 rule Txt_php {
     meta:
         description = "Chinese Hacktool Set - Webshells - file php.txt"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
@@ -437,7 +437,7 @@ rule Txt_php {
 rule Txt_aspx1 {
     meta:
         description = "Chinese Hacktool Set - Webshells - file aspx1.txt"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
@@ -452,7 +452,7 @@ rule Txt_aspx1 {
 rule Txt_shell {
     meta:
         description = "Chinese Hacktool Set - Webshells - file shell.c"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
@@ -470,7 +470,7 @@ rule Txt_shell {
 rule Txt_asp {
     meta:
         description = "Chinese Hacktool Set - Webshells - file asp.txt"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
@@ -485,7 +485,7 @@ rule Txt_asp {
 rule Txt_asp1 {
     meta:
         description = "Chinese Hacktool Set - Webshells - file asp1.txt"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
@@ -502,7 +502,7 @@ rule Txt_asp1 {
 rule Txt_php_2 {
     meta:
         description = "Chinese Hacktool Set - Webshells - file php.html"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
@@ -523,7 +523,7 @@ rule Txt_php_2 {
 rule Txt_ftp {
     meta:
         description = "Chinese Hacktool Set - Webshells - file ftp.txt"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
@@ -543,7 +543,7 @@ rule Txt_ftp {
 rule Txt_lcx {
     meta:
         description = "Chinese Hacktool Set - Webshells - file lcx.c"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
@@ -561,7 +561,7 @@ rule Txt_lcx {
 rule Txt_jspcmd {
     meta:
         description = "Chinese Hacktool Set - Webshells - file jspcmd.txt"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
@@ -576,7 +576,7 @@ rule Txt_jspcmd {
 rule Txt_jsp {
     meta:
         description = "Chinese Hacktool Set - Webshells - file jsp.txt"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
@@ -593,7 +593,7 @@ rule Txt_jsp {
 rule Txt_aspxlcx {
     meta:
         description = "Chinese Hacktool Set - Webshells - file aspxlcx.txt"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
@@ -610,7 +610,7 @@ rule Txt_aspxlcx {
 rule Txt_xiao {
     meta:
         description = "Chinese Hacktool Set - Webshells - file xiao.txt"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
@@ -628,7 +628,7 @@ rule Txt_xiao {
 rule Txt_aspx {
     meta:
         description = "Chinese Hacktool Set - Webshells - file aspx.jpg"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
@@ -645,7 +645,7 @@ rule Txt_aspx {
 rule Txt_Sql {
     meta:
         description = "Chinese Hacktool Set - Webshells - file Sql.txt"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
@@ -662,7 +662,7 @@ rule Txt_Sql {
 rule Txt_hello {
     meta:
         description = "Chinese Hacktool Set - Webshells - file hello.txt"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"

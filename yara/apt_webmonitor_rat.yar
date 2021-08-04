@@ -1,7 +1,7 @@
 rule MAL_WebMonitor_RAT {
    meta:
       description = "Detects WebMonitor RAT"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2018/04/unit42-say-cheese-webmonitor-rat-comes-c2-service-c2aas/"
       date = "2018-04-13"

@@ -68,7 +68,7 @@ rule Base64_encoded_Executable {
 rule Gen_Base64_EXE {
    meta:
       description = "Detects Base64 encoded Executable in Executable"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-04-21"
@@ -119,7 +119,7 @@ rule StegoKatz {
 rule Obfuscated_VBS_April17 {
    meta:
       description = "Detects cloaked Mimikatz in VBS obfuscation"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-04-21"
@@ -132,7 +132,7 @@ rule Obfuscated_VBS_April17 {
 rule Obfuscated_JS_April17 {
    meta:
       description = "Detects cloaked Mimikatz in JS obfuscation"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-04-21"

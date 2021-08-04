@@ -10,7 +10,7 @@
 rule WMImplant {
    meta:
       description = "Auto-generated rule - file WMImplant.ps1"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.fireeye.com/blog/threat-research/2017/03/wmimplant_a_wmi_ba.html"
       date = "2017-03-24"

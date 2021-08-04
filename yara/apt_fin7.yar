@@ -13,7 +13,7 @@ import "pe"
 rule APT_FIN7_Strings_Aug18_1 {
    meta:
       description = "Detects strings from FIN7 report in August 2018"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
@@ -31,7 +31,7 @@ rule APT_FIN7_Strings_Aug18_1 {
 rule APT_FIN7_Sample_Aug18_2 {
    meta:
       description = "Detects FIN7 malware sample"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
@@ -49,7 +49,7 @@ rule APT_FIN7_Sample_Aug18_2 {
 rule APT_FIN7_MalDoc_Aug18_1 {
    meta:
       description = "Detects malicious Doc from FIN7 campaign"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
@@ -63,7 +63,7 @@ rule APT_FIN7_MalDoc_Aug18_1 {
 rule APT_FIN7_Sample_Aug18_1 {
    meta:
       description = "Detects FIN7 samples mentioned in FireEye report"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
@@ -91,7 +91,7 @@ rule APT_FIN7_Sample_Aug18_1 {
 rule APT_FIN7_EXE_Sample_Aug18_1 {
    meta:
       description = "Detects sample from FIN7 report in August 2018"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
@@ -105,7 +105,7 @@ rule APT_FIN7_EXE_Sample_Aug18_1 {
 rule APT_FIN7_EXE_Sample_Aug18_2 {
    meta:
       description = "Detects sample from FIN7 report in August 2018"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
@@ -120,7 +120,7 @@ rule APT_FIN7_EXE_Sample_Aug18_2 {
 rule APT_FIN7_EXE_Sample_Aug18_3 {
    meta:
       description = "Detects sample from FIN7 report in August 2018"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
@@ -135,7 +135,7 @@ rule APT_FIN7_EXE_Sample_Aug18_3 {
 rule APT_FIN7_EXE_Sample_Aug18_4 {
    meta:
       description = "Detects sample from FIN7 report in August 2018"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
@@ -151,7 +151,7 @@ rule APT_FIN7_EXE_Sample_Aug18_4 {
 rule APT_FIN7_EXE_Sample_Aug18_5 {
    meta:
       description = "Detects sample from FIN7 report in August 2018"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
@@ -166,7 +166,7 @@ rule APT_FIN7_EXE_Sample_Aug18_5 {
 rule APT_FIN7_EXE_Sample_Aug18_6 {
    meta:
       description = "Detects sample from FIN7 report in August 2018"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
@@ -190,7 +190,7 @@ rule APT_FIN7_EXE_Sample_Aug18_6 {
 rule APT_FIN7_EXE_Sample_Aug18_7 {
    meta:
       description = "Detects sample from FIN7 report in August 2018"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
@@ -205,7 +205,7 @@ rule APT_FIN7_EXE_Sample_Aug18_7 {
 rule APT_FIN7_EXE_Sample_Aug18_8 {
    meta:
       description = "Detects sample from FIN7 report in August 2018"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
@@ -219,7 +219,7 @@ rule APT_FIN7_EXE_Sample_Aug18_8 {
 rule APT_FIN7_EXE_Sample_Aug18_10 {
    meta:
       description = "Detects sample from FIN7 report in August 2018"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
@@ -237,7 +237,7 @@ rule APT_FIN7_EXE_Sample_Aug18_10 {
 rule APT_FIN7_Sample_EXE_Aug18_1 {
    meta:
       description = "Detects FIN7 Sample"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"

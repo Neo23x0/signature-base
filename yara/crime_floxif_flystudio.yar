@@ -3,7 +3,7 @@ import "pe"
 rule MAL_Floxif_Generic {
    meta:
       description = "Detects Floxif Malware"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2018-05-11"
@@ -20,7 +20,7 @@ rule MAL_Floxif_Generic {
 rule MAL_CN_FlyStudio_May18_1 {
    meta:
       description = "Detects malware / hacktool detected in May 2018"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2018-05-11"

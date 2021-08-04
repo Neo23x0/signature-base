@@ -11,7 +11,7 @@
 rule Quasar_RAT_Jan18_1 {
    meta:
       description = "Detects Quasar RAT"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2018/01/unit42-vermin-quasar-rat-custom-malware-used-ukraine/"
       date = "2018-01-29"
@@ -34,7 +34,7 @@ rule Quasar_RAT_Jan18_1 {
 rule Vermin_Keylogger_Jan18_1 {
    meta:
       description = "Detects Vermin Keylogger"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2018/01/unit42-vermin-quasar-rat-custom-malware-used-ukraine/"
       date = "2018-01-29"

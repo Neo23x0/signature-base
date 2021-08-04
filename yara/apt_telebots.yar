@@ -10,7 +10,7 @@
 rule TeleBots_IntercepterNG {
    meta:
       description = "Detects TeleBots malware - IntercepterNG"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/4if3HG"
       date = "2016-12-14"
@@ -31,7 +31,7 @@ rule TeleBots_IntercepterNG {
 rule TeleBots_KillDisk_1 {
    meta:
       description = "Detects TeleBots malware - KillDisk"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/4if3HG"
       date = "2016-12-14"
@@ -51,7 +51,7 @@ rule TeleBots_KillDisk_1 {
 rule TeleBots_KillDisk_2 {
    meta:
       description = "Detects TeleBots malware - KillDisk"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/4if3HG"
       date = "2016-12-14"
@@ -67,7 +67,7 @@ rule TeleBots_KillDisk_2 {
 rule TeleBots_CredRaptor_Password_Stealer {
    meta:
       description = "Detects TeleBots malware - CredRaptor Password Stealer"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/4if3HG"
       date = "2016-12-14"
@@ -86,7 +86,7 @@ rule TeleBots_CredRaptor_Password_Stealer {
 rule TeleBots_VBS_Backdoor_1 {
    meta:
       description = "Detects TeleBots malware - VBS Backdoor"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/4if3HG"
       date = "2016-12-14"
@@ -103,7 +103,7 @@ rule TeleBots_VBS_Backdoor_1 {
 rule TeleBots_VBS_Backdoor_2 {
    meta:
       description = "Detects TeleBots malware - VBS Backdoor"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/4if3HG"
       date = "2016-12-14"
@@ -119,7 +119,7 @@ rule TeleBots_VBS_Backdoor_2 {
 rule TeleBots_Win64_Spy_KeyLogger_G {
    meta:
       description = "Detects TeleBots malware - Win64 Spy KeyLogger G"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/4if3HG"
       date = "2016-12-14"

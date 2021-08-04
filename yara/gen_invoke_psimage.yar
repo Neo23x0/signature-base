@@ -2,7 +2,7 @@
 rule Invoke_PSImage {
    meta:
       description = "Detects a command to execute PowerShell from String"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://github.com/peewpw/Invoke-PSImage"
       date = "2017-12-16"

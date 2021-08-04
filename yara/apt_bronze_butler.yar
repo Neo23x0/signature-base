@@ -13,7 +13,7 @@ import "pe"
 rule BronzeButler_Daserf_Delphi_1 {
    meta:
       description = "Detects malware / hacktool sample from Bronze Butler incident"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.secureworks.com/research/bronze-butler-targets-japanese-businesses"
       date = "2017-10-14"
@@ -37,7 +37,7 @@ rule BronzeButler_Daserf_Delphi_1 {
 rule BronzeButler_Daserf_C_1 {
    meta:
       description = "Detects malware / hacktool sample from Bronze Butler incident"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.secureworks.com/research/bronze-butler-targets-japanese-businesses"
       date = "2017-10-14"
@@ -78,7 +78,7 @@ rule BronzeButler_Daserf_C_1 {
 rule BronzeButler_DGet_1 {
    meta:
       description = "Detects malware / hacktool sample from Bronze Butler incident"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.secureworks.com/research/bronze-butler-targets-japanese-businesses"
       date = "2017-10-14"
@@ -92,7 +92,7 @@ rule BronzeButler_DGet_1 {
 rule BronzeButler_UACBypass_1 {
    meta:
       description = "Detects malware / hacktool sample from Bronze Butler incident"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.secureworks.com/research/bronze-butler-targets-japanese-businesses"
       date = "2017-10-14"
@@ -111,7 +111,7 @@ rule BronzeButler_UACBypass_1 {
 rule BronzeButler_xxmm_1 {
    meta:
       description = "Detects malware / hacktool sample from Bronze Butler incident"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.secureworks.com/research/bronze-butler-targets-japanese-businesses"
       date = "2017-10-14"
@@ -137,7 +137,7 @@ rule BronzeButler_xxmm_1 {
 rule BronzeButler_RarStar_1 {
    meta:
       description = "Detects malware / hacktool sample from Bronze Butler incident"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.secureworks.com/research/bronze-butler-targets-japanese-businesses"
       date = "2017-10-14"
@@ -164,7 +164,7 @@ rule BronzeButler_RarStar_1 {
 rule Daserf_Nov1_BronzeButler {
    meta:
       description = "Detects Daserf malware used by Bronze Butler"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/ffeCfd"
       date = "2017-11-08"

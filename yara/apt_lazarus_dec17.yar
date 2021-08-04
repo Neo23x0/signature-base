@@ -12,7 +12,7 @@
 rule Lazarus_Dec_17_1 {
    meta:
       description = "Detects Lazarus malware from incident in Dec 2017"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/8U6fY2"
       date = "2017-12-20"
@@ -30,7 +30,7 @@ rule Lazarus_Dec_17_1 {
 rule Lazarus_Dec_17_2 {
    meta:
       description = "Detects Lazarus malware from incident in Dec 2017"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/8U6fY2"
       date = "2017-12-20"
@@ -51,7 +51,7 @@ rule Lazarus_Dec_17_2 {
 rule Lazarus_Dec_17_4 {
    meta:
       description = "Detects Lazarus malware from incident in Dec 2017ithumb.js"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/8U6fY2"
       date = "2017-12-20"
@@ -66,7 +66,7 @@ rule Lazarus_Dec_17_4 {
 rule Lazarus_Dec_17_5 {
    meta:
       description = "Detects Lazarus malware from incident in Dec 2017"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/8U6fY2"
       date = "2017-12-20"

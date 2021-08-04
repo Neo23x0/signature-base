@@ -13,7 +13,7 @@ import "pe"
 rule APT_TA18_149A_Joanap_Sample1 {
    meta:
       description = "Detects malware from TA18-149A report by US-CERT"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.us-cert.gov/ncas/alerts/TA18-149A"
       date = "2018-05-30"
@@ -35,7 +35,7 @@ rule APT_TA18_149A_Joanap_Sample1 {
 rule APT_TA18_149A_Joanap_Sample2 {
    meta:
       description = "Detects malware from TA18-149A report by US-CERT"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.us-cert.gov/ncas/alerts/TA18-149A"
       date = "2018-05-30"
@@ -55,7 +55,7 @@ rule APT_TA18_149A_Joanap_Sample2 {
 rule APT_TA18_149A_Joanap_Sample3 {
    meta:
       description = "Detects malware from TA18-149A report by US-CERT"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.us-cert.gov/ncas/alerts/TA18-149A"
       date = "2018-05-30"

@@ -48,7 +48,7 @@ rule Winexe_RemoteExec {
 rule Sofacy_Mal2 {
     meta:
         description = "Sofacy Group Malware Sample 2"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://dokumente.linksfraktion.de/inhalt/report-orig.pdf"
         date = "2015-06-19"
@@ -66,7 +66,7 @@ rule Sofacy_Mal2 {
 rule Sofacy_Mal3 {
     meta:
         description = "Sofacy Group Malware Sample 3"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://dokumente.linksfraktion.de/inhalt/report-orig.pdf"
         date = "2015-06-19"
@@ -96,7 +96,7 @@ rule Sofacy_Mal3 {
 rule Sofacy_Bundestag_Batch {
     meta:
         description = "Sofacy Bundestags APT Batch Script"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1"
       author = "Florian Roth"
         reference = "http://dokumente.linksfraktion.de/inhalt/report-orig.pdf"
         date = "2015-06-19"

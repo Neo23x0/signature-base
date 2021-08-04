@@ -8,7 +8,7 @@
 rule BlackEnergy_BE_2 {
    meta:
       description = "Detects BlackEnergy 2 Malware"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "http://goo.gl/DThzLz"
       date = "2015/02/19"

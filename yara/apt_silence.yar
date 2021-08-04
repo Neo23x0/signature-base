@@ -13,7 +13,7 @@ import "pe"
 rule Silence_malware_1 {
    meta:
       description = "Detects malware sample mentioned in the Silence report on Securelist"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://securelist.com/the-silence/83009/"
       date = "2017-11-01"
@@ -39,7 +39,7 @@ rule Silence_malware_1 {
 rule Silence_malware_2 {
    meta:
       description = "Detects malware sample mentioned in the Silence report on Securelist"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://securelist.com/the-silence/83009/"
       date = "2017-11-01"

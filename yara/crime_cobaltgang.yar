@@ -15,7 +15,7 @@ import "pe"
 rule CobaltStrike_CN_Group_BeaconDropper_Aug17 {
    meta:
       description = "Detects Script Dropper of Cobalt Gang used in August 2017"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-08-09"
@@ -40,7 +40,7 @@ rule CobaltStrike_CN_Group_BeaconDropper_Aug17 {
 rule CobaltGang_Malware_Aug17_1 {
    meta:
       description = "Detects a Cobalt Gang malware"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://sslbl.abuse.ch/intel/6ece5ece4192683d2d84e25b0ba7e04f9cb7eb7c"
       date = "2017-08-09"
@@ -57,7 +57,7 @@ rule CobaltGang_Malware_Aug17_1 {
 rule CobaltGang_Malware_Aug17_2 {
    meta:
       description = "Detects a Cobalt Gang malware"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://sslbl.abuse.ch/intel/6ece5ece4192683d2d84e25b0ba7e04f9cb7eb7c"
       date = "2017-08-09"

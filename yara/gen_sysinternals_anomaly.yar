@@ -10,7 +10,7 @@
 rule SysInternals_Tool_Anomaly {
    meta:
       description = "SysInternals Tool Anomaly - does not contain Mark Russinovich as author"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       score = 50
       reference = "Internal Research"

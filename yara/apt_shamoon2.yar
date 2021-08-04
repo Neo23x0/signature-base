@@ -10,7 +10,7 @@
 rule Shamoon2_Wiper {
    meta:
       description = "Detects Shamoon 2.0 Wiper Component"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://goo.gl/jKIfGB"
       date = "2016-12-01"

@@ -13,7 +13,7 @@ import "pe"
 rule Unspecified_Malware_Sep1_A1 {
    meta:
       description = "Detects malware from DrqgonFly APT report"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.symantec.com/connect/blogs/dragonfly-western-energy-sector-targeted-sophisticated-attack-group"
       date = "2017-09-12"
@@ -28,7 +28,7 @@ rule Unspecified_Malware_Sep1_A1 {
 rule DragonFly_APT_Sep17_1 {
    meta:
       description = "Detects malware from DrqgonFly APT report"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.symantec.com/connect/blogs/dragonfly-western-energy-sector-targeted-sophisticated-attack-group"
       date = "2017-09-12"
@@ -44,7 +44,7 @@ rule DragonFly_APT_Sep17_1 {
 rule DragonFly_APT_Sep17_2 {
    meta:
       description = "Detects malware from DrqgonFly APT report"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.symantec.com/connect/blogs/dragonfly-western-energy-sector-targeted-sophisticated-attack-group"
       date = "2017-09-12"
@@ -65,7 +65,7 @@ rule DragonFly_APT_Sep17_2 {
 rule DragonFly_APT_Sep17_3 {
    meta:
       description = "Detects malware from DrqgonFly APT report"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.symantec.com/connect/blogs/dragonfly-western-energy-sector-targeted-sophisticated-attack-group"
       date = "2017-09-12"
@@ -87,7 +87,7 @@ rule DragonFly_APT_Sep17_3 {
 rule DragonFly_APT_Sep17_4 {
    meta:
       description = "Detects malware from DrqgonFly APT report"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.symantec.com/connect/blogs/dragonfly-western-energy-sector-targeted-sophisticated-attack-group"
       date = "2017-09-12"

@@ -62,7 +62,7 @@ rule StoneDrill_main_sub {
 
 rule StoneDrill_BAT_1 {
    meta:
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       description = "Rule to detect Batch file from StoneDrill report"
       reference = "https://securelist.com/blog/research/77725/from-shamoon-to-stonedrill/"
@@ -78,7 +78,7 @@ rule StoneDrill_BAT_1 {
 
 rule StoneDrill_Service_Install {
    meta:
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       description = "Rule to detect Batch file from StoneDrill report"
       reference = "https://securelist.com/blog/research/77725/from-shamoon-to-stonedrill/"
@@ -94,7 +94,7 @@ rule StoneDrill_Service_Install {
 rule StoneDrill_ntssrvr32 {
    meta:
       description = "Detects malware from StoneDrill threat report"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://securelist.com/blog/research/77725/from-shamoon-to-stonedrill/"
       date = "2017-03-07"
@@ -114,7 +114,7 @@ rule StoneDrill_ntssrvr32 {
 rule StoneDrill_Malware_2 {
    meta:
       description = "Detects malware from StoneDrill threat report"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://securelist.com/blog/research/77725/from-shamoon-to-stonedrill/"
       date = "2017-03-07"
@@ -140,7 +140,7 @@ rule StoneDrill_Malware_2 {
 rule StoneDrill {
    meta:
       description = "Detects malware from StoneDrill threat report"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://securelist.com/blog/research/77725/from-shamoon-to-stonedrill/"
       date = "2017-03-07"
@@ -164,7 +164,7 @@ rule StoneDrill {
 rule StoneDrill_VBS_1 {
    meta:
       description = "Detects malware from StoneDrill threat report"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://securelist.com/blog/research/77725/from-shamoon-to-stonedrill/"
       date = "2017-03-07"

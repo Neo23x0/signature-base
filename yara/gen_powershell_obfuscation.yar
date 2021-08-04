@@ -11,7 +11,7 @@
 rule PowerShell_ISESteroids_Obfuscation {
    meta:
       description = "Detects PowerShell ISESteroids obfuscation"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://twitter.com/danielhbohannon/status/877953970437844993"
       date = "2017-06-23"

@@ -11,7 +11,7 @@
 rule Susp_Indicators_EXE {
    meta:
       description = "Detects packed NullSoft Inst EXE with characteristics of NetWire RAT"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://pastebin.com/8qaiyPxs"
       date = "2018-01-05"
@@ -31,7 +31,7 @@ rule Susp_Indicators_EXE {
 rule Suspicious_BAT_Strings {
    meta:
       description = "Detects a string also used in Netwire RAT auxilliary"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       score = 60
       reference = "https://pastebin.com/8qaiyPxs"
@@ -45,7 +45,7 @@ rule Suspicious_BAT_Strings {
 rule Malicious_BAT_Strings {
    meta:
       description = "Detects a string also used in Netwire RAT auxilliary"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       score = 60
       reference = "https://pastebin.com/8qaiyPxs"

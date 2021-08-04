@@ -11,7 +11,7 @@
 rule MAL_ELF_VPNFilter_1 {
    meta:
       description = "Detects VPNFilter malware"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2018-05-24"
@@ -32,7 +32,7 @@ rule MAL_ELF_VPNFilter_1 {
 rule MAL_ELF_VPNFilter_2 {
    meta:
       description = "Detects VPNFilter malware"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2018-05-24"
@@ -48,7 +48,7 @@ rule MAL_ELF_VPNFilter_2 {
 rule MAL_ELF_VPNFilter_3 {
    meta:
       description = "Detects VPNFilter malware"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2018-05-24"
@@ -77,7 +77,7 @@ rule MAL_ELF_VPNFilter_3 {
 rule SUSP_ELF_Tor_Client {
    meta:
       description = "Detects VPNFilter malware"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2018-05-24"

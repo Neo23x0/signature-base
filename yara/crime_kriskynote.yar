@@ -11,7 +11,7 @@
 rule Kriskynote_Mar17_1 {
    meta:
       description = "Detects Kriskynote Malware"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-03-03"
@@ -31,7 +31,7 @@ rule Kriskynote_Mar17_1 {
 rule Kriskynote_Mar17_2 {
    meta:
       description = "Detects Kriskynote Malware"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-03-03"
@@ -46,7 +46,7 @@ rule Kriskynote_Mar17_2 {
 rule Kriskynote_Mar17_3 {
    meta:
       description = "Detects Kriskynote Malware"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-03-03"

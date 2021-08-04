@@ -49,7 +49,7 @@ import "pe"
 rule HiddenCobra_FallChill_1 {
    meta:
       description = "Auto-generated rule"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-318A"
       date = "2017-11-15"
@@ -76,7 +76,7 @@ rule HiddenCobra_FallChill_1 {
 rule HiddenCobra_FallChill_2 {
    meta:
       description = "Auto-generated rule"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-318A"
       date = "2017-11-15"

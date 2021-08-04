@@ -12,7 +12,7 @@
 rule Andromeda_MalBot_Jun_1A {
    meta:
       description = "Detects a malicious Worm Andromeda / RETADUP"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "http://blog.trendmicro.com/trendlabs-security-intelligence/information-stealer-found-hitting-israeli-hospitals/"
       date = "2017-06-30"

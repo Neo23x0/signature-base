@@ -118,7 +118,7 @@ rule XOR_4byte_Key {
 rule Derusbi_Backdoor_Mar17_1 {
    meta:
       description = "Detects a variant of the Derusbi backdoor"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-03-03"

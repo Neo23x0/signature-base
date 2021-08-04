@@ -10,7 +10,7 @@
 rule p0wnedPowerCat {
    meta:
       description = "p0wnedShell Runspace Post Exploitation Toolkit - file p0wnedPowerCat.cs"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://github.com/Cn33liz/p0wnedShell"
       date = "2017-01-14"
@@ -30,7 +30,7 @@ rule p0wnedPowerCat {
 rule Hacktool_Strings_p0wnedShell {
    meta:
       description = "p0wnedShell Runspace Post Exploitation Toolkit - file p0wnedShell.cs"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://github.com/Cn33liz/p0wnedShell"
       date = "2017-01-14"
@@ -56,7 +56,7 @@ rule Hacktool_Strings_p0wnedShell {
 rule p0wnedPotato {
    meta:
       description = "p0wnedShell Runspace Post Exploitation Toolkit - file p0wnedPotato.cs"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://github.com/Cn33liz/p0wnedShell"
       date = "2017-01-14"
@@ -74,7 +74,7 @@ rule p0wnedPotato {
 rule p0wnedExploits {
    meta:
       description = "p0wnedShell Runspace Post Exploitation Toolkit - file p0wnedExploits.cs"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://github.com/Cn33liz/p0wnedShell"
       date = "2017-01-14"
@@ -89,7 +89,7 @@ rule p0wnedExploits {
 rule p0wnedShellx64 {
    meta:
       description = "p0wnedShell Runspace Post Exploitation Toolkit - file p0wnedShellx64.exe"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://github.com/Cn33liz/p0wnedShell"
       date = "2017-01-14"
@@ -107,7 +107,7 @@ rule p0wnedShellx64 {
 rule p0wnedListenerConsole {
    meta:
       description = "p0wnedShell Runspace Post Exploitation Toolkit - file p0wnedListenerConsole.cs"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://github.com/Cn33liz/p0wnedShell"
       date = "2017-01-14"
@@ -128,7 +128,7 @@ rule p0wnedListenerConsole {
 rule p0wnedBinaries {
    meta:
       description = "p0wnedShell Runspace Post Exploitation Toolkit - file p0wnedBinaries.cs"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://github.com/Cn33liz/p0wnedShell"
       date = "2017-01-14"
@@ -148,7 +148,7 @@ rule p0wnedBinaries {
 rule p0wnedAmsiBypass {
    meta:
       description = "p0wnedShell Runspace Post Exploitation Toolkit - file p0wnedAmsiBypass.cs"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://github.com/Cn33liz/p0wnedShell"
       date = "2017-01-14"
@@ -164,7 +164,7 @@ rule p0wnedAmsiBypass {
 rule p0wnedShell_outputs {
    meta:
       description = "p0wnedShell Runspace Post Exploitation Toolkit - from files p0wnedShell.cs, p0wnedShell.cs"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1"
       author = "Florian Roth"
       reference = "https://github.com/Cn33liz/p0wnedShell"
       date = "2017-01-14"
