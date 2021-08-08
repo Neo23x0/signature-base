@@ -9,7 +9,7 @@ rule EXPL_Exchange_ProxyShell_Aug21_1 {
    strings:
       $xr1 = / \/autodiscover\/autodiscover\.json[^\n]{1,300}\/(powershell|mapi\/nspi|EWS\/|X-RpsCAT)/ nocase ascii
       $xr2 = /autodiscover\/autodiscover\.json[^\n]{1,60}&X-Rps-CAT=/ nocase ascii
-      $x1 = "/?&Email=autodiscover/autodiscover.json%3F@" ascii
+      $x1 = "/?&Email=autodiscover/autodiscover.json%3F@" nocase ascii
    condition:
       1 of them
 }
