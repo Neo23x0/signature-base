@@ -1,5 +1,5 @@
 
-rule EXPL_Exchange_ProxyShell_Aug21_1 {
+rule EXPL_Exchange_ProxyShell_Aug21_1 : SCRIPT {
    meta:
       description = "Detects ProxyShell exploitation attempts in log files"
       author = "Florian Roth"
