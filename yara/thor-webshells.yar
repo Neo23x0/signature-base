@@ -5,7 +5,7 @@
    APT Scanner THOR - the full featured APT scanner
 
    Florian Roth
-   BSK Consulting GmbH
+   Nextron Systems GmbH
 
    revision: 20160115
 

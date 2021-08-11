@@ -7,7 +7,7 @@
    We will frequently update this file with new rules rated TLP:WHITE
 
    Florian Roth
-   BSK Consulting GmbH
+   Nextron Systems GmbH
    Web: bsk-consulting.de
 
    revision: 20170620
