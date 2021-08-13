@@ -83,7 +83,7 @@ rule webshell_php_generic
 {
 	meta:
 		description = "php webshell having some kind of input and some kind of payload. restricted to small files or big ones inclusing suspicious strings"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/14"
 		hash = "bee1b76b1455105d4bfe2f45191071cf05e83a309ae9defcf759248ca9bceddd"
@@ -375,7 +375,7 @@ rule webshell_php_generic_callback
 {
 	meta:
 		description = "php webshell having some kind of input and using a callback to execute the payload. restricted to small files or would give lots of false positives"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/14"
 		hash = "e98889690101b59260e871c49263314526f2093f"
@@ -660,7 +660,7 @@ rule webshell_php_base64_encoded_payloads
 {
 	meta:
 		description = "php webshell containing base64 encoded payload"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/07"
 		hash = "88d0d4696c9cb2d37d16e330e236cb37cfaec4cd"
@@ -791,7 +791,7 @@ rule webshell_php_unknown_1
 {
 	meta:
 		description = "obfuscated php webshell"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		hash = "12ce6c7167b33cc4e8bdec29fb1cfc44ac9487d1"
 		hash = "cf4abbd568ce0c0dfce1f2e4af669ad2"
@@ -811,7 +811,7 @@ rule webshell_php_generic_eval
 {
 	meta:
 		description = "Generic PHP webshell which uses any eval/exec function in the same line with user input"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		hash = "a61437a427062756e2221bfb6d58cd62439d09d9"
 		hash = "90c5cc724ec9cf838e4229e5e08955eec4d7bf95"
@@ -848,7 +848,7 @@ rule webshell_php_double_eval_tiny
 {
 	meta:
 		description = "PHP webshell which probably hides the input inside an eval()ed obfuscated string"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		hash = "aabfd179aaf716929c8b820eefa3c1f613f8dcac"
 		date = "2021/01/11"
@@ -891,7 +891,7 @@ rule webshell_php_obfuscated
 {
 	meta:
 		description = "PHP webshell obfuscated"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/12"
 		hash = "eec9ac58a1e763f5ea0f7fa249f1fe752047fa60"
@@ -1012,7 +1012,7 @@ rule webshell_php_obfuscated_encoding
 {
 	meta:
 		description = "PHP webshell obfuscated by encoding"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/04/18"
 
@@ -1057,7 +1057,7 @@ rule webshell_php_obfuscated_encoding_mixed_dec_and_hex
 {
 	meta:
 		description = "PHP webshell obfuscated by encoding of mixed hex and dec"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/04/18"
 
@@ -1100,7 +1100,7 @@ rule webshell_php_obfuscated_tiny
 {
 	meta:
 		description = "PHP webshell obfuscated"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/12"
 
@@ -1188,7 +1188,7 @@ rule webshell_php_obfuscated_str_replace
 {
 	meta:
 		description = "PHP webshell which eval()s obfuscated string"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/12"
 		hash = "691305753e26884d0f930cda0fe5231c6437de94"
@@ -1241,7 +1241,7 @@ rule webshell_php_obfuscated_fopo
 {
 	meta:
 		description = "PHP webshell which eval()s obfuscated string"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		hash = "fbcff8ea5ce04fc91c05384e847f2c316e013207"
 		hash = "6da57ad8be1c587bb5cc8a1413f07d10fb314b72"
@@ -1299,7 +1299,7 @@ rule webshell_php_gzinflated
 {
 	meta:
 		description = "PHP webshell which directly eval()s obfuscated string"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/12"
 		hash = "49e5bc75a1ec36beeff4fbaeb16b322b08cf192d"
@@ -1366,7 +1366,7 @@ rule webshell_php_obfuscated_3
 {
 	meta:
 		description = "PHP webshell which eval()s obfuscated string"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/04/17"
 
@@ -1661,7 +1661,7 @@ rule webshell_php_includer_eval
 {
 	meta:
 		description = "PHP webshell which eval()s another included file"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		hash = "3a07e9188028efa32872ba5b6e5363920a6b2489"
 		date = "2021/01/13"
@@ -1705,7 +1705,7 @@ rule webshell_php_includer_tiny
 {
 	meta:
 		description = "Suspicious: Might be PHP webshell includer, check the included file"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/04/17"
 
@@ -1745,7 +1745,7 @@ rule webshell_php_dynamic
 {
 	meta:
 		description = "PHP webshell using function name from variable, e.g. $a='ev'.'al'; $a($code)"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		hash = "65dca1e652d09514e9c9b2e0004629d03ab3c3ef"
 		hash = "b8ab38dc75cec26ce3d3a91cb2951d7cdd004838"
@@ -1803,7 +1803,7 @@ rule webshell_php_dynamic_big
 {
 	meta:
 		description = "PHP webshell using $a($code) for kind of eval with encoded blob to decode, e.g. b374k"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/02/07"
 		score = 50
@@ -2045,7 +2045,7 @@ rule webshell_php_encoded_big
 {
 	meta:
 		description = "PHP webshell using some kind of eval with encoded blob to decode"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/02/07"
 		score = 50
@@ -2122,7 +2122,7 @@ rule webshell_php_generic_backticks
 {
 	meta:
 		description = "Generic PHP webshell which uses backticks directly on user input"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/07"
 		hash = "339f32c883f6175233f0d1a30510caa52fdcaa37"
@@ -2163,7 +2163,7 @@ rule webshell_php_generic_backticks_obfuscated
 {
 	meta:
 		description = "Generic PHP webshell which uses backticks directly on user input"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		hash = "23dc299f941d98c72bd48659cdb4673f5ba93697"
 		date = "2021/01/07"
@@ -2204,7 +2204,7 @@ rule webshell_php_by_string_known_webshell
 {
 	meta:
 		description = "Known PHP Webshells which contain unique strings, lousy rule for low hanging fruits. Most are catched by other rules in here but maybe these catch different versions."
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/09"
 		hash = "d889da22893536d5965541c30896f4ed4fdf461d"
@@ -2291,7 +2291,7 @@ rule webshell_php_by_string_obfuscation
 {
 	meta:
 		description = "PHP file containing obfuscation strings. Might be legitimate code obfuscated for whatever reasons, a webshell or can be used to insert malicious Javascript for credit card skimming"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/09"
 		hash = "e4a15637c90e8eabcbdc748366ae55996dbec926382220c423e754bd819d22bc"
@@ -2383,7 +2383,7 @@ rule webshell_php_strings_susp
 {
 	meta:
 		description = "typical webshell strings, suspicious"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/12"
 		hash = "0dd568dbe946b5aa4e1d33eab1decbd71903ea04"
@@ -2465,7 +2465,7 @@ rule webshell_php_in_htaccess
 {
 	meta:
 		description = "Use Apache .htaccess to execute php code inside .htaccess"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/07"
 		hash = "c026d4512a32d93899d486c6f11d1e13b058a713"
@@ -2481,7 +2481,7 @@ rule webshell_php_function_via_get
 {
 	meta:
 		description = "Webshell which sends eval/assert via GET"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		hash = "ce739d65c31b3c7ea94357a38f7bd0dc264da052d4fd93a1eabb257f6e3a97a6"
 		hash = "d870e971511ea3e082662f8e6ec22e8a8443ca79"
@@ -2523,7 +2523,7 @@ rule webshell_php_writer
 {
 	meta:
 		description = "PHP webshell which only writes an uploaded file to disk"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/04/17"
 		score = 50
@@ -2598,7 +2598,7 @@ rule webshell_asp_writer
 {
 	meta:
 		description = "ASP webshell which only writes an uploaded file to disk"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/03/07"
 		score = 60
@@ -2762,7 +2762,7 @@ rule webshell_asp_obfuscated
 {
 	meta:
 		description = "ASP webshell obfuscated"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/12"
 
@@ -3026,7 +3026,7 @@ rule webshell_asp_generic_eval_on_input
 {
 	meta:
 		description = "Generic ASP webshell which uses any eval/exec function directly on user input"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/07"
 		hash = "d6b96d844ac395358ee38d4524105d331af42ede"
@@ -3128,7 +3128,7 @@ rule webshell_asp_nano
 {
 	meta:
 		description = "Generic ASP webshell which uses any eval/exec function"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/13"
 		hash = "3b7910a499c603715b083ddb6f881c1a0a3a924d"
@@ -3307,7 +3307,7 @@ rule webshell_asp_encoded
 {
 	meta:
 		description = "Webshell in VBscript or JScript encoded using *.Encode plus a suspicious string"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/03/14"
 
@@ -3410,7 +3410,7 @@ rule webshell_asp_encoded_aspcoding
 {
 	meta:
 		description = "ASP Webshell encoded using ASPEncodeDLL.AspCoding"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/03/14"
 		score = 60
@@ -3513,7 +3513,7 @@ rule webshell_asp_by_string
 {
 	meta:
 		description = "Known ASP Webshells which contain unique strings, lousy rule for low hanging fruits. Most are catched by other rules in here but maybe these catch different versions."
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/13"
 		hash = "f72252b13d7ded46f0a206f63a1c19a66449f216"
@@ -3663,7 +3663,7 @@ rule webshell_asp_sniffer
 {
 	meta:
 		description = "ASP webshell which can sniff local traffic"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/03/14"
 
@@ -3792,7 +3792,7 @@ rule webshell_asp_generic_tiny
 {
 	meta:
 		description = "Generic tiny ASP webshell which uses any eval/exec function indirectly on user input or writes a file"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/07"
 		hash = "990e3f129b8ba409a819705276f8fa845b95dad0"
@@ -3995,7 +3995,7 @@ rule webshell_asp_generic
 {
 	meta:
 		description = "Generic ASP webshell which uses any eval/exec function indirectly on user input or writes a file"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/03/07"
 		score = 60
@@ -4286,7 +4286,7 @@ rule webshell_asp_generic_registry_reader
 {
 	meta:
 		description = "Generic ASP webshell which reads the registry (might look for passwords, license keys, database settings, general recon, ..."
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/03/14"
 		score = 50
@@ -4429,7 +4429,7 @@ rule webshell_aspx_regeorg_csharp
 {
 	meta:
 		description = "Webshell regeorg aspx c# version"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		reference = "https://github.com/sensepost/reGeorg"
 		hash = "c1f43b7cf46ba12cfc1357b17e4f5af408740af7ae70572c9cf988ac50260ce1"
 		author = "Arnim Rupp"
@@ -4534,7 +4534,7 @@ rule webshell_csharp_generic
 {
 	meta:
 		description = "Webshell in c#"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		hash = "b6721683aadc4b4eba4f081f2bc6bc57adfc0e378f6d80e2bfa0b1e3e57c85c7"
 		date = "2021/01/11"
@@ -4636,7 +4636,7 @@ rule webshell_asp_runtime_compile
 {
 	meta:
 		description = "ASP webshell compiling payload in memory at runtime, e.g. sharpyshell"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		reference = "https://github.com/antonioCoco/SharPyShell"
 		date = "2021/01/11"
@@ -4698,7 +4698,7 @@ rule webshell_asp_sql
 {
 	meta:
 		description = "ASP webshell giving SQL access. Might also be a dual use tool."
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/03/14"
 
@@ -4872,7 +4872,7 @@ rule webshell_asp_scan_writable
 {
 	meta:
 		description = "ASP webshell searching for writable directories (to hide more webshells ...)"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/03/14"
 		hash = "2409eda9047085baf12e0f1b9d0b357672f7a152"
@@ -5013,7 +5013,7 @@ rule webshell_jsp_regeorg
 {
 	meta:
 		description = "Webshell regeorg JSP version"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		reference = "https://github.com/sensepost/reGeorg"
 		hash = "6db49e43722080b5cd5f07e058a073ba5248b584"
 		author = "Arnim Rupp"
@@ -5058,7 +5058,7 @@ rule webshell_jsp_http_proxy
 {
 	meta:
 		description = "Webshell JSP HTTP proxy"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		hash = "2f9b647660923c5262636a5344e2665512a947a4"
 		author = "Arnim Rupp"
 		date = "2021/01/24"
@@ -5102,7 +5102,7 @@ rule webshell_jsp_writer_nano
 {
 	meta:
 		description = "JSP file writer"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/24"
 		hash = "ac91e5b9b9dcd373eaa9360a51aa661481ab9429"
@@ -5158,7 +5158,7 @@ rule webshell_jsp_generic_tiny
 {
 	meta:
 		description = "Generic JSP webshell tiny"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/07"
 		hash = "8fd343db0442136e693e745d7af1018a99b042af"
@@ -5218,7 +5218,7 @@ rule webshell_jsp_generic
 {
 	meta:
 		description = "Generic JSP webshell"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/07"
 		hash = "4762f36ca01fb9cda2ab559623d2206f401fc0b1"
@@ -5306,7 +5306,7 @@ rule webshell_jsp_generic_base64
 {
 	meta:
 		description = "Generic JSP webshell with base64 encoded payload"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/24"
 		hash = "8b5fe53f8833df3657ae2eeafb4fd101c05f0db0"
@@ -5379,7 +5379,7 @@ rule webshell_jsp_generic_processbuilder
 {
 	meta:
 		description = "Generic JSP webshell which uses processbuilder to execute user input"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/07"
 		hash = "82198670ac2072cd5c2853d59dcd0f8dfcc28923"
@@ -5412,7 +5412,7 @@ rule webshell_jsp_generic_reflection
 {
 	meta:
 		description = "Generic JSP webshell which uses reflection to execute user input"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/07"
 		hash = "62e6c6065b5ca45819c1fc049518c81d7d165744"
@@ -5468,7 +5468,7 @@ rule webshell_jsp_generic_classloader
 {
 	meta:
 		description = "Generic JSP webshell which uses classloader to execute user input"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		hash = "6b546e78cc7821b63192bb8e087c133e8702a377d17baaeb64b13f0dd61e2347"
 		date = "2021/01/07"
@@ -5523,7 +5523,7 @@ rule webshell_jsp_generic_encoded_shell
 {
 	meta:
 		description = "Generic JSP webshell which contains cmd or /bin/bash encoded in ascii ord"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/07"
 		hash = "3eecc354390d60878afaa67a20b0802ce5805f3a9bb34e74dd8c363e3ca0ea5c"
@@ -5545,7 +5545,7 @@ rule webshell_jsp_netspy
 {
 	meta:
 		description = "JSP netspy webshell"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/24"
 		hash = "94d1aaabde8ff9b4b8f394dc68caebf981c86587"
@@ -5609,7 +5609,7 @@ rule webshell_jsp_by_string
 {
 	meta:
 		description = "JSP Webshells which contain unique strings, lousy rule for low hanging fruits. Most are catched by other rules in here but maybe these catch different versions."
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/09"
 		hash = "e9060aa2caf96be49e3b6f490d08b8a996c4b084"
@@ -5676,7 +5676,7 @@ rule webshell_jsp_input_upload_write
 {
 	meta:
 		description = "JSP uploader which gets input, writes files and contains \"upload\""
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/24"
 		hash = "ef98ca135dfb9dcdd2f730b18e883adf50c4ab82"
@@ -5734,7 +5734,7 @@ rule webshell_generic_os_strings
 {
 	meta:
 		description = "typical webshell strings"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/12"
 		score = 50
@@ -5898,7 +5898,7 @@ rule webshell_in_image
 {
 	meta:
 		description = "Webshell in GIF, PNG or JPG"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "DRL 1.1 https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE"
 		author = "Arnim Rupp"
 		hash = "d4fde4e691db3e70a6320e78657480e563a9f87935af873a99db72d6a9a83c78"
 		date = "2021/02/27"
