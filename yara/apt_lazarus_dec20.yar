@@ -2,7 +2,7 @@ import "pe"
 rule HvS_APT37_smb_scanner {
    meta:
       description = "Unknown smb login scanner used by APT37"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Marc Stroebel"
       date = "2020-12-15"
       reference1 = "https://www.hvs-consulting.de/media/downloads/ThreatReport-Lazarus.pdf"
@@ -30,7 +30,7 @@ rule HvS_APT37_smb_scanner {
 rule HvS_APT37_cred_tool {
    meta:
       description = "Unknown cred tool used by APT37"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Markus Poelloth"
       date = "2020-12-15"
       reference = "https://www.hvs-consulting.de/media/downloads/ThreatReport-Lazarus.pdf"
@@ -50,7 +50,7 @@ rule HvS_APT37_cred_tool {
 rule HvS_APT37_RAT_loader {
    meta:
       description = "BLINDINGCAN RAT loader named iconcash.db used by APT37"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Marc Stroebel"
       date = "2020-12-15"
       hash = "b70e66d387e42f5f04b69b9eb15306036702ab8a50b16f5403289b5388292db9"
@@ -65,7 +65,7 @@ rule HvS_APT37_RAT_loader {
 rule HvS_APT37_webshell_img_thumbs_asp {
    meta:
       description = "Webshell named img.asp, thumbs.asp or thumb.asp used by APT37"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Moritz Oettle"
       date = "2020-12-15"
       reference = "https://www.hvs-consulting.de/media/downloads/ThreatReport-Lazarus.pdf"
@@ -93,7 +93,7 @@ rule HvS_APT37_webshell_img_thumbs_asp {
 rule HvS_APT37_webshell_template_query_asp {
    meta:
       description = "Webshell named template-query.aspimg.asp used by APT37"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Moritz Oettle"
       date = "2020-12-15"
       reference = "https://www.hvs-consulting.de/media/downloads/ThreatReport-Lazarus.pdf"
@@ -118,7 +118,7 @@ rule HvS_APT37_webshell_template_query_asp {
 rule HvS_APT37_mimikatz_loader_DF012 {
    meta:
       description = "Loader for encrypted Mimikatz variant used by APT37"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Marc Stroebel"
       date = "2020-12-15"
       reference = "https://www.hvs-consulting.de/media/downloads/ThreatReport-Lazarus.pdf"
@@ -135,7 +135,7 @@ rule HvS_APT37_mimikatz_loader_DF012 {
 rule HvS_APT37_webshell_controllers_asp {
    meta:
       description = "Webshell named controllers.asp or inc-basket-offer.asp used by APT37"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Moritz Oettle"
       date = "2020-12-15"
       reference = "https://www.hvs-consulting.de/media/downloads/ThreatReport-Lazarus.pdf"
