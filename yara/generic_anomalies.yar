@@ -406,3 +406,14 @@ rule SUSP_RTF_Header_Anomaly {
       uint32(0) == 0x74725c7b and /* {\rt */
       not uint8(4) == 0x66 /* not f */
 }
+
+rule WEBSHELL_ASPX_ProxyShell_Aug21_1 {
+   meta:
+      description = "Detects webshells dropped by ProxyShell exploitation based on their file header (must be PST) and extension"
+      author = "Florian Roth"
+      reference = "https://www.bleepingcomputer.com/news/microsoft/microsoft-exchange-servers-are-getting-hacked-via-proxyshell-exploits/"
+      date = "2021-08-13"
+   condition:
+      uint32(0) == 0x4e444221 /* PST header: !BDN */
+      and extension == ".aspx"
+}

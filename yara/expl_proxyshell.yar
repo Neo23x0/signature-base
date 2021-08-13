@@ -30,3 +30,17 @@ rule EXPL_Exchange_ProxyShell_Successful_Aug21_1 : SCRIPT {
    condition:
       1 of them
 }
+
+rule WEBSHELL_ASPX_ProxyShell_Aug21_2 {
+   meta:
+      description = "Detects webshells dropped by ProxyShell exploitation based on their file header (must be PST), size and content"
+      author = "Florian Roth"
+      reference = "https://www.bleepingcomputer.com/news/microsoft/microsoft-exchange-servers-are-getting-hacked-via-proxyshell-exploits/"
+      date = "2021-08-13"
+   strings:
+      $s1 = "Page Language=" ascii nocase
+   condition:
+      uint32(0) == 0x4e444221 /* PST header: !BDN */
+      and filesize < 350KB
+      and $s1
+}
