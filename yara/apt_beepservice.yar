@@ -10,7 +10,7 @@
 rule BeepService_Hacktool {
 	meta:
 		description = "Detects BeepService Hacktool used by Chinese APT groups"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://goo.gl/p32Ozf"
 		date = "2016-05-12"

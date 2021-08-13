@@ -5,7 +5,7 @@ rule APT_fnv1a_plus_extra_XOR_in_MSIL_experimental
         description = "This rule detects the specific MSIL implementation of fnv1a of the SUNBURST backdoor (standard fnv1a + one final XOR before RET) independent of the XOR-string. (fnv64a_offset and fnv64a_prime are standard constants in the fnv1a hashing algorithm.)"
 		reference = "https://www.fireeye.com/blog/threat-research/2020/12/evasive-attacker-leverages-solarwinds-supply-chain-compromises-with-sunburst-backdoor.html"
         author = "Arnim Rupp"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		date = "2020-12-22"
 		hash1 = "32519b85c0b422e4656de6e6c41878e95fd95026267daab4215ee59c107d6c77"
 		hash2 = "ce77d116a074dab7a22a0fd4f2c1ab475f16eec42e1ded3c0b0aa8211fe858d6"
@@ -33,7 +33,7 @@ rule TEST_false_positive_plain_fnv1a_in_x64
         description = "This rule detects x64 implementations of standard fnv1a just by looking for the standard fnv64a_offset and fnv64a_prime (unless bitshifting is used instead of multiplication). This rule would have found the SUNBURST backdoor at Solarwinds but will also find any other programm which implements fnv1a. Just useful for developers, pls check if that fnv1a was put there by you ;)"
 		reference = "https://www.fireeye.com/blog/threat-research/2020/12/evasive-attacker-leverages-solarwinds-supply-chain-compromises-with-sunburst-backdoor.html"
         author = "Arnim Rupp"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		date = "2020-12-22"
 		score = 10
     strings:

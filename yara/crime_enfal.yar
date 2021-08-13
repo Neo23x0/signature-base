@@ -1,7 +1,7 @@
 rule Enfal_Malware {
 	meta:
 		description = "Detects a certain type of Enfal Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "not set"
 		date = "2015/02/10"
@@ -24,7 +24,7 @@ rule Enfal_Malware {
 rule Enfal_Malware_Backdoor {
 	meta:
 		description = "Generic Rule to detect the Enfal Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		date = "2015/02/10"
 		super_rule = 1

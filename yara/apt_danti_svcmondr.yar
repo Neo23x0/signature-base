@@ -10,7 +10,7 @@
 rule Mal_Dropper_httpEXE_from_CAB {
 	meta:
 		description = "Detects a dropper from a CAB file mentioned in the article"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://goo.gl/13Wgy1"
 		date = "2016-05-25"
@@ -26,7 +26,7 @@ rule Mal_Dropper_httpEXE_from_CAB {
 rule Mal_http_EXE {
 	meta:
 		description = "Detects trojan from APT report named http.exe"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://goo.gl/13Wgy1"
 		date = "2016-05-25"
@@ -57,7 +57,7 @@ rule Mal_http_EXE {
 rule Mal_PotPlayer_DLL {
 	meta:
 		description = "Detects a malicious PotPlayer.dll"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://goo.gl/13Wgy1"
 		date = "2016-05-25"

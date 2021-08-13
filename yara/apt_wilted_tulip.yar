@@ -13,7 +13,7 @@ import "pe"
 rule WiltedTulip_Tools_back {
    meta:
       description = "Detects Chrome password dumper used in Operation Wilted Tulip"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "http://www.clearskysec.com/tulip"
       date = "2017-07-23"
@@ -29,7 +29,7 @@ rule WiltedTulip_Tools_back {
 rule WiltedTulip_Tools_clrlg {
    meta:
       description = "Detects Windows eventlog cleaner used in Operation Wilted Tulip - file clrlg.bat"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "http://www.clearskysec.com/tulip"
       date = "2017-07-23"
@@ -44,7 +44,7 @@ rule WiltedTulip_Tools_clrlg {
 rule WiltedTulip_powershell {
    meta:
       description = "Detects powershell script used in Operation Wilted Tulip"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "http://www.clearskysec.com/tulip"
       date = "2017-07-23"
@@ -58,7 +58,7 @@ rule WiltedTulip_powershell {
 rule WiltedTulip_vminst {
    meta:
       description = "Detects malware used in Operation Wilted Tulip"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "http://www.clearskysec.com/tulip"
       date = "2017-07-23"
@@ -85,7 +85,7 @@ rule WiltedTulip_vminst {
 rule WiltedTulip_Windows_UM_Task {
    meta:
       description = "Detects a Windows scheduled task as used in Operation Wilted Tulip"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "http://www.clearskysec.com/tulip"
       date = "2017-07-23"
@@ -103,7 +103,7 @@ rule WiltedTulip_Windows_UM_Task {
 rule WiltedTulip_WindowsTask {
    meta:
       description = "Detects hack tool used in Operation Wilted Tulip - Windows Tasks"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "http://www.clearskysec.com/tulip"
       date = "2017-07-23"
@@ -123,7 +123,7 @@ rule WiltedTulip_WindowsTask {
 rule WiltedTulip_tdtess {
    meta:
       description = "Detects malicious service used in Operation Wilted Tulip"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "http://www.clearskysec.com/tulip"
       date = "2017-07-23"
@@ -141,7 +141,7 @@ rule WiltedTulip_tdtess {
 rule WiltedTulip_SilverlightMSI {
    meta:
       description = "Detects powershell tool call Get_AD_Users_Logon_History used in Operation Wilted Tulip"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "http://www.clearskysec.com/tulip"
       date = "2017-07-23"
@@ -158,7 +158,7 @@ rule WiltedTulip_SilverlightMSI {
 rule WiltedTulip_matryoshka_Injector {
    meta:
       description = "Detects hack tool used in Operation Wilted Tulip"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "http://www.clearskysec.com/tulip"
       date = "2017-07-23"
@@ -181,7 +181,7 @@ rule WiltedTulip_matryoshka_Injector {
 rule WiltedTulip_Zpp {
    meta:
       description = "Detects hack tool used in Operation Wilted Tulip"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "http://www.clearskysec.com/tulip"
       date = "2017-07-23"
@@ -205,7 +205,7 @@ rule WiltedTulip_Zpp {
 rule WiltedTulip_Netsrv_netsrvs {
    meta:
       description = "Detects sample from Operation Wilted Tulip"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "http://www.clearskysec.com/tulip"
       date = "2017-07-23"
@@ -231,7 +231,7 @@ rule WiltedTulip_Netsrv_netsrvs {
 rule WiltedTulip_ReflectiveLoader {
    meta:
       description = "Detects reflective loader (Cobalt Strike) used in Operation Wilted Tulip"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "http://www.clearskysec.com/tulip"
       date = "2017-07-23"
@@ -256,7 +256,7 @@ rule WiltedTulip_ReflectiveLoader {
 rule WiltedTulip_Matryoshka_RAT {
    meta:
       description = "Detects Matryoshka RAT used in Operation Wilted Tulip"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "http://www.clearskysec.com/tulip"
       date = "2017-07-23"

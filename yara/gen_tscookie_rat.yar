@@ -13,7 +13,7 @@ import "pe"
 rule TSCookie_RAT {
    meta:
       description = "Detects TSCookie RAT"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "http://blog.jpcert.or.jp/2018/03/malware-tscooki-7aa0.html"
       date = "2018-03-06"

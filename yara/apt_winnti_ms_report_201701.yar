@@ -10,7 +10,7 @@
 rule Winnti_fonfig {
    meta:
       description = "Winnti sample - file fonfig.exe"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/VbvJtL"
       date = "2017-01-25"
@@ -25,7 +25,7 @@ rule Winnti_fonfig {
 rule Winnti_NlaifSvc {
    meta:
       description = "Winnti sample - file NlaifSvc.dll"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/VbvJtL"
       date = "2017-01-25"

@@ -11,7 +11,7 @@
 rule XMRIG_Monero_Miner {
    meta:
       description = "Detects Monero mining software"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://github.com/xmrig/xmrig/releases"
       date = "2018-01-04"
@@ -31,7 +31,7 @@ rule XMRIG_Monero_Miner {
 rule XMRIG_Monero_Miner_Config {
    meta:
       description = "Auto-generated rule - from files config.json, config.json"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://github.com/xmrig/xmrig/releases"
       date = "2018-01-04"
@@ -48,7 +48,7 @@ rule XMRIG_Monero_Miner_Config {
 rule PUA_LNX_XMRIG_CryptoMiner {
    meta:
       description = "Detects XMRIG CryptoMiner software"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2018-06-28"

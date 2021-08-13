@@ -8,7 +8,7 @@
 rule Keylogger_CN_APT {
 	meta:
 		description = "Keylogger - generic rule for a Chinese variant"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		date = "2016-03-07"
 		score = 75

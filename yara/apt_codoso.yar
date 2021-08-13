@@ -11,7 +11,7 @@
 rule Codoso_PlugX_3 {
 	meta:
 		description = "Detects Codoso APT PlugX Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks"
 		date = "2016-01-30"
@@ -27,7 +27,7 @@ rule Codoso_PlugX_3 {
 rule Codoso_PlugX_2 {
 	meta:
 		description = "Detects Codoso APT PlugX Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks"
 		date = "2016-01-30"
@@ -44,7 +44,7 @@ rule Codoso_PlugX_2 {
 rule Codoso_CustomTCP_4 {
 	meta:
 		description = "Detects Codoso APT CustomTCP Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks"
 		date = "2016-01-30"
@@ -69,7 +69,7 @@ rule Codoso_CustomTCP_4 {
 rule Codoso_CustomTCP_3 {
 	meta:
 		description = "Detects Codoso APT CustomTCP Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks"
 		date = "2016-01-30"
@@ -90,7 +90,7 @@ rule Codoso_CustomTCP_3 {
 rule Codoso_CustomTCP_2 {
 	meta:
 		description = "Detects Codoso APT CustomTCP Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks"
 		date = "2016-01-30"
@@ -110,7 +110,7 @@ rule Codoso_CustomTCP_2 {
 rule Codoso_PGV_PVID_6 {
 	meta:
 		description = "Detects Codoso APT PGV_PVID Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks"
 		date = "2016-01-30"
@@ -124,7 +124,7 @@ rule Codoso_PGV_PVID_6 {
 rule Codoso_Gh0st_3 {
 	meta:
 		description = "Detects Codoso APT Gh0st Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks"
 		date = "2016-01-30"
@@ -145,7 +145,7 @@ rule Codoso_Gh0st_3 {
 rule Codoso_Gh0st_2 {
 	meta:
 		description = "Detects Codoso APT Gh0st Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks"
 		date = "2016-01-30"
@@ -163,7 +163,7 @@ rule Codoso_Gh0st_2 {
 rule Codoso_CustomTCP {
 	meta:
 		description = "Codoso CustomTCP Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks"
 		date = "2016-01-30"
@@ -183,7 +183,7 @@ rule Codoso_CustomTCP {
 rule Codoso_PGV_PVID_5 {
 	meta:
 		description = "Detects Codoso APT PGV PVID Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks"
 		date = "2016-01-30"
@@ -199,7 +199,7 @@ rule Codoso_PGV_PVID_5 {
 rule Codoso_Gh0st_1 {
 	meta:
 		description = "Detects Codoso APT Gh0st Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks"
 		date = "2016-01-30"
@@ -237,7 +237,7 @@ rule Codoso_Gh0st_1 {
 rule Codoso_PGV_PVID_4 {
 	meta:
 		description = "Detects Codoso APT PlugX Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks"
 		date = "2016-01-30"
@@ -264,7 +264,7 @@ rule Codoso_PGV_PVID_4 {
 rule Codoso_PlugX_1 {
 	meta:
 		description = "Detects Codoso APT PlugX Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks"
 		date = "2016-01-30"
@@ -282,7 +282,7 @@ rule Codoso_PlugX_1 {
 rule Codoso_PGV_PVID_3 {
 	meta:
 		description = "Detects Codoso APT PGV PVID Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks"
 		date = "2016-01-30"
@@ -301,7 +301,7 @@ rule Codoso_PGV_PVID_3 {
 rule Codoso_PGV_PVID_2 {
 	meta:
 		description = "Detects Codoso APT PGV PVID Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks"
 		date = "2016-01-30"

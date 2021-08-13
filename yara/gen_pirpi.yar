@@ -10,7 +10,7 @@
 rule Pirpi_1609_A {
 	meta:
 		description = "Detects Pirpi Backdoor - and other malware (generic rule)"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://goo.gl/igxLyF"
 		date = "2016-09-08"
@@ -44,7 +44,7 @@ rule Pirpi_1609_A {
 rule Pirpi_1609_B {
 	meta:
 		description = "Detects Pirpi Backdoor"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://goo.gl/igxLyF"
 		date = "2016-09-08"

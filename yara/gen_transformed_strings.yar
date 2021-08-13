@@ -10,7 +10,7 @@
 rule Typical_Malware_String_Transforms {
 	meta:
 		description = "Detects typical strings in a reversed or otherwise modified form"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "Internal Research"
 		date = "2016-07-31"

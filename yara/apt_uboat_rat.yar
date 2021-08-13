@@ -9,7 +9,7 @@
 rule UBoatRAT {
    meta:
       description = "Detects UBoat RAT Samples"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2017/11/unit42-uboatrat-navigates-east-asia/"
       date = "2017-11-29"
@@ -51,7 +51,7 @@ rule UBoatRAT {
 rule UBoatRAT_Dropper {
    meta:
       description = "Detects UBoatRAT Dropper"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2017/11/unit42-uboatrat-navigates-east-asia/"
       date = "2017-11-29"

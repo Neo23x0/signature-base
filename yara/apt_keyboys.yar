@@ -13,7 +13,7 @@ import "pe"
 rule KeyBoys_malware_1 {
    meta:
       description = "Detects Keyboys malware"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "http://www.pwc.co.uk/issues/cyber-security-data-privacy/research/the-keyboys-are-back-in-town.html"
       date = "2017-11-02"

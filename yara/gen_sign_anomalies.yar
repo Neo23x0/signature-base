@@ -7,7 +7,6 @@ rule SUSP_Unsigned_OSPPSVC {
       author = "Florian Roth"
       reference = "https://www.welivesecurity.com/2019/09/24/no-summer-vacations-zebrocy/"
       date = "2019-09-26"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       hash1 = "5294a730f1f0a176583b9ca2b988b3f5ec65dad8c6ebe556b5135566f2c16a56"
    strings:
       /* FileDescription Microsoft Office Software Protection Platform Service */

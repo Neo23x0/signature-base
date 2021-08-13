@@ -1,7 +1,7 @@
 rule Korplug_FAST {
     meta:
         description = "Rule to detect Korplug/PlugX FAST variant"
-        license = "Detection Rule License 1.1"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
         date = "2015-08-20"
         hash = "c437465db42268332543fbf6fd6a560ca010f19e0fd56562fb83fb704824b371"

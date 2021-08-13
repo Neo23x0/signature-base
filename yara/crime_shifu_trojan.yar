@@ -8,7 +8,7 @@
 rule Shifu_Banking_Trojan {
 	meta:
 		description = "Detects Shifu Banking Trojan"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://securityintelligence.com/shifu-masterful-new-banking-trojan-is-attacking-14-japanese-banks/"
 		date = "2015-09-01"
@@ -28,7 +28,7 @@ rule Shifu_Banking_Trojan {
 rule SHIFU_Banking_Trojan {
 	meta:
 		description = "Detects SHIFU Banking Trojan"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://goo.gl/52n8WE"
 		date = "2015-10-31"

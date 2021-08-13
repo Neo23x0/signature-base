@@ -8,7 +8,7 @@
 rule b374k_back_connect {
 	meta:
 		description = "Detects privilege escalation tool"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "Internal Analysis"
 		date = "2016-08-18"

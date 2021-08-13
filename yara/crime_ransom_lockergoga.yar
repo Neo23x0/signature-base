@@ -4,7 +4,6 @@ rule Ransom_LockerGoga_Mar19_1 {
       description = "Detects LockerGoga ransomware binaries"
       author = "Florian Roth"
       reference = "https://www.nrk.no/norge/skreddersydd-dobbeltangrep-mot-hydro-1.14480202"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       date = "2019-03-19"
       hash1 = "c97d9bbc80b573bdeeda3812f4d00e5183493dd0d5805e2508728f65977dda15"
       hash2 = "7bcd69b3085126f7e97406889f78ab74e87230c11812b79406d723a80c08dd26"

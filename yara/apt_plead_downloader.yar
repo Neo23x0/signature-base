@@ -1,7 +1,7 @@
 rule PLEAD_Downloader_Jun18_1 {
    meta:
       description = "Detects PLEAD Downloader"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://blog.jpcert.or.jp/2018/06/plead-downloader-used-by-blacktech.html"
       date = "2018-06-16"

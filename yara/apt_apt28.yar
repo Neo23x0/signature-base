@@ -10,7 +10,7 @@
 rule APT28_CHOPSTICK {
 	meta:
 		description = "Detects a malware that behaves like CHOPSTICK mentioned in APT28 report"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://goo.gl/v3ebal"
 		date = "2015-06-02"

@@ -13,7 +13,7 @@ import "pe"
 rule Silence_malware_1 {
    meta:
       description = "Detects malware sample mentioned in the Silence report on Securelist"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://securelist.com/the-silence/83009/"
       date = "2017-11-01"
@@ -39,7 +39,7 @@ rule Silence_malware_1 {
 rule Silence_malware_2 {
    meta:
       description = "Detects malware sample mentioned in the Silence report on Securelist"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://securelist.com/the-silence/83009/"
       date = "2017-11-01"

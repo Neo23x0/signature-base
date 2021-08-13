@@ -2,7 +2,7 @@
 rule Ping_Command_in_EXE {
    meta:
       description = "Detects an suspicious ping command execution in an executable"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2016-11-03"
@@ -16,7 +16,7 @@ rule Ping_Command_in_EXE {
 rule GoogleBot_UserAgent {
    meta:
       description = "Detects the GoogleBot UserAgent String in an Executable"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-01-27"
@@ -32,7 +32,7 @@ rule GoogleBot_UserAgent {
 rule Gen_Net_LocalGroup_Administrators_Add_Command {
    meta:
       description = "Detects an executable that contains a command to add a user account to the local administrators group"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-07-08"
@@ -45,7 +45,7 @@ rule Gen_Net_LocalGroup_Administrators_Add_Command {
 rule Suspicious_Script_Running_from_HTTP {
    meta:
       description = "Detects a suspicious "
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.hybrid-analysis.com/sample/a112274e109c5819d54aa8de89b0e707b243f4929a83e77439e3ff01ed218a35?environmentId=100"
       score = 50
@@ -62,7 +62,7 @@ rule Suspicious_Script_Running_from_HTTP {
 rule ReconCommands_in_File {
    meta:
       description = "Detects various recon commands in a single file"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://twitter.com/haroonmeer/status/939099379834658817"
       date = "2017-12-11"
@@ -84,7 +84,7 @@ rule ReconCommands_in_File {
 rule VBS_dropper_script_Dec17_1 {
    meta:
       description = "Detects a supicious VBS script that drops an executable"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2018-01-01"
@@ -104,7 +104,7 @@ rule VBS_dropper_script_Dec17_1 {
 rule SUSP_PDB_Strings_Keylogger_Backdoor {
    meta:
       description = "Detects PDB strings used in backdoors or keyloggers"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2018-03-23"
@@ -126,7 +126,7 @@ rule SUSP_PDB_Strings_Keylogger_Backdoor {
 rule SUSP_Microsoft_Copyright_String_Anomaly_2 {
    meta:
       description = "Detects Floxif Malware"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2018-05-11"
@@ -141,7 +141,7 @@ rule SUSP_Microsoft_Copyright_String_Anomaly_2 {
 rule SUSP_LNK_File_AppData_Roaming {
    meta:
       description = "Detects a suspicious link file that references to AppData Roaming"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.fireeye.com/blog/threat-research/2018/05/deep-dive-into-rig-exploit-kit-delivering-grobios-trojan.html"
       date = "2018-05-16"
@@ -162,7 +162,7 @@ rule SUSP_LNK_File_AppData_Roaming {
 rule SUSP_LNK_File_PathTraversal {
    meta:
       description = "Detects a suspicious link file that references a file multiple folders lower than the link itself"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.fireeye.com/blog/threat-research/2018/05/deep-dive-into-rig-exploit-kit-delivering-grobios-trojan.html"
       date = "2018-05-16"

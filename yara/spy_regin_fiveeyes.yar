@@ -332,7 +332,7 @@ rule apt_regin_hopscotch {
 rule Regin_Related_Malware {
 	meta:
 		description = "Malware Sample - maybe Regin related"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		score = 70
 		reference = "VT Analysis"

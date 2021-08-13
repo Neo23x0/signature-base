@@ -13,7 +13,7 @@ import "pe"
 rule Sofacy_Oct17_1 {
    meta:
       description = "Detects Sofacy malware reported in October 2017"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "http://blog.talosintelligence.com/2017/10/cyber-conflict-decoy-document.html"
       date = "2017-10-23"
@@ -48,7 +48,7 @@ rule Sofacy_Oct17_1 {
 rule Sofacy_Oct17_2 {
    meta:
       description = "Detects Sofacy malware reported in October 2017"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "http://blog.talosintelligence.com/2017/10/cyber-conflict-decoy-document.html"
       date = "2017-10-23"

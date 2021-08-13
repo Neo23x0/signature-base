@@ -12,7 +12,7 @@ import "pe"
 rule OilRig_Malware_Campaign_Gen1 {
    meta:
       description = "Detects malware from OilRig Campaign"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/QMRZ8K"
       date = "2016-10-12"
@@ -68,7 +68,7 @@ rule OilRig_Malware_Campaign_Gen1 {
 rule OilRig_Malware_Campaign_Mal1 {
    meta:
       description = "Detects malware from OilRig Campaign"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/QMRZ8K"
       date = "2016-10-12"
@@ -86,7 +86,7 @@ rule OilRig_Malware_Campaign_Mal1 {
 rule OilRig_Malware_Campaign_Gen2 {
    meta:
       description = "Detects malware from OilRig Campaign"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/QMRZ8K"
       date = "2016-10-12"
@@ -109,7 +109,7 @@ rule OilRig_Malware_Campaign_Gen2 {
 rule OilRig_Malware_Campaign_Gen3 {
    meta:
       description = "Detects malware from OilRig Campaign"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/QMRZ8K"
       date = "2016-10-12"
@@ -127,7 +127,7 @@ rule OilRig_Malware_Campaign_Gen3 {
 rule OilRig_Malware_Campaign_Mal2 {
    meta:
       description = "Detects malware from OilRig Campaign"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/QMRZ8K"
       date = "2016-10-12"
@@ -146,7 +146,7 @@ rule OilRig_Malware_Campaign_Mal2 {
 rule OilRig_Campaign_Reconnaissance {
    meta:
       description = "Detects Windows discovery commands - known from OilRig Campaign"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/QMRZ8K"
       date = "2016-10-12"
@@ -162,7 +162,7 @@ rule OilRig_Campaign_Reconnaissance {
 rule OilRig_Malware_Campaign_Mal3 {
    meta:
       description = "Detects malware from OilRig Campaign"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/QMRZ8K"
       date = "2016-10-12"
@@ -178,7 +178,7 @@ rule OilRig_Malware_Campaign_Mal3 {
 rule OilRig_Malware_Nov17_13 {
    meta:
       description = ""
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://twitter.com/ClearskySec/status/933280188733018113"
       date = "2017-11-22"

@@ -11,7 +11,7 @@
 rule HDRoot_Sample_Jul17_1 {
    meta:
       description = "Detects HDRoot samples"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "Winnti HDRoot VT"
       date = "2017-07-07"
@@ -27,7 +27,7 @@ rule HDRoot_Sample_Jul17_1 {
 rule HDRoot_Sample_Jul17_2 {
    meta:
       description = "Detects HDRoot samples"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "Winnti HDRoot VT"
       date = "2017-07-07"
@@ -64,7 +64,7 @@ rule HDRoot_Sample_Jul17_2 {
 rule Unspecified_Malware_Jul17_1A {
    meta:
       description = "Detects samples of an unspecified malware - July 2017"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "Winnti HDRoot VT"
       date = "2017-07-07"

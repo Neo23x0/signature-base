@@ -8,7 +8,7 @@
 rule asp_file {
 	meta:
 		description = "Laudanum Injector Tools - file file.asp"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
@@ -27,7 +27,7 @@ rule asp_file {
 rule php_killnc {
 	meta:
 		description = "Laudanum Injector Tools - file killnc.php"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
@@ -45,7 +45,7 @@ rule php_killnc {
 rule asp_shell {
 	meta:
 		description = "Laudanum Injector Tools - file shell.asp"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
@@ -65,7 +65,7 @@ rule asp_shell {
 rule settings {
 	meta:
 		description = "Laudanum Injector Tools - file settings.php"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
@@ -81,7 +81,7 @@ rule settings {
 rule asp_proxy {
 	meta:
 		description = "Laudanum Injector Tools - file proxy.asp"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
@@ -100,7 +100,7 @@ rule asp_proxy {
 rule cfm_shell {
 	meta:
 		description = "Laudanum Injector Tools - file shell.cfm"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
@@ -116,7 +116,7 @@ rule cfm_shell {
 rule aspx_shell {
 	meta:
 		description = "Laudanum Injector Tools - file shell.aspx"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
@@ -133,7 +133,7 @@ rule aspx_shell {
 rule php_shell {
 	meta:
 		description = "Laudanum Injector Tools - file shell.php"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
@@ -150,7 +150,7 @@ rule php_shell {
 rule php_reverse_shell {
 	meta:
 		description = "Laudanum Injector Tools - file php-reverse-shell.php"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
@@ -166,7 +166,7 @@ rule php_reverse_shell {
 rule php_dns {
 	meta:
 		description = "Laudanum Injector Tools - file dns.php"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
@@ -183,7 +183,7 @@ rule php_dns {
 rule WEB_INF_web {
 	meta:
 		description = "Laudanum Injector Tools - file web.xml"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
@@ -198,7 +198,7 @@ rule WEB_INF_web {
 rule jsp_cmd {
 	meta:
 		description = "Laudanum Injector Tools - file cmd.war"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
@@ -216,7 +216,7 @@ rule jsp_cmd {
 rule laudanum {
 	meta:
 		description = "Laudanum Injector Tools - file laudanum.php"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
@@ -231,7 +231,7 @@ rule laudanum {
 rule php_file {
 	meta:
 		description = "Laudanum Injector Tools - file file.php"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
@@ -248,7 +248,7 @@ rule php_file {
 rule warfiles_cmd {
 	meta:
 		description = "Laudanum Injector Tools - file cmd.jsp"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
@@ -265,7 +265,7 @@ rule warfiles_cmd {
 rule asp_dns {
 	meta:
 		description = "Laudanum Injector Tools - file dns.asp"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
@@ -282,7 +282,7 @@ rule asp_dns {
 rule php_reverse_shell_2 {
 	meta:
 		description = "Laudanum Injector Tools - file php-reverse-shell.php"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
@@ -297,7 +297,7 @@ rule php_reverse_shell_2 {
 rule Laudanum_Tools_Generic {
 	meta:
 		description = "Laudanum Injector Tools"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"

@@ -2,7 +2,7 @@
 rule ScanBox_Malware_Generic {
 	meta:
 		description = "Scanbox Chinese Deep Panda APT Malware http://goo.gl/MUUfjv and http://goo.gl/WXUQcP"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference1 = "http://goo.gl/MUUfjv"
 		reference2 = "http://goo.gl/WXUQcP"

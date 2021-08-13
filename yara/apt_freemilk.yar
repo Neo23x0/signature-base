@@ -13,7 +13,7 @@ import "pe"
 rule FreeMilk_APT_Mal_1 {
    meta:
       description = "Detects malware from FreeMilk campaign"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2017/10/unit42-freemilk-highly-targeted-spear-phishing-campaign/"
       date = "2017-10-05"
@@ -40,7 +40,7 @@ rule FreeMilk_APT_Mal_1 {
 rule FreeMilk_APT_Mal_2 {
    meta:
       description = "Detects malware from FreeMilk campaign"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2017/10/unit42-freemilk-highly-targeted-spear-phishing-campaign/"
       date = "2017-10-05"
@@ -60,7 +60,7 @@ rule FreeMilk_APT_Mal_2 {
 rule FreeMilk_APT_Mal_3 {
    meta:
       description = "Detects malware from FreeMilk campaign"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2017/10/unit42-freemilk-highly-targeted-spear-phishing-campaign/"
       date = "2017-10-05"
@@ -77,7 +77,7 @@ rule FreeMilk_APT_Mal_3 {
 rule FreeMilk_APT_Mal_4 {
    meta:
       description = "Detects malware from FreeMilk campaign"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2017/10/unit42-freemilk-highly-targeted-spear-phishing-campaign/"
       date = "2017-10-05"

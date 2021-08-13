@@ -8,7 +8,7 @@
 rule No_PowerShell {
 	meta:
 		description = "Detects an C# executable used to circumvent PowerShell detection - file nps.exe"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://github.com/Ben0xA/nps"
 		date = "2016-05-21"

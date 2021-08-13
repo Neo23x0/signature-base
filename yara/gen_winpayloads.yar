@@ -12,7 +12,7 @@
 rule WinPayloads_PowerShell {
    meta:
       description = "Detects WinPayloads PowerShell Payload"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://github.com/nccgroup/Winpayloads"
       date = "2017-07-11"
@@ -29,7 +29,7 @@ rule WinPayloads_PowerShell {
 rule WinPayloads_Payload {
    meta:
       description = "Detects WinPayloads Payload"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://github.com/nccgroup/Winpayloads"
       date = "2017-07-11"

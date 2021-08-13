@@ -10,7 +10,7 @@
 rule Invoke_OSiRis {
    meta:
       description = "Osiris Device Guard Bypass - file Invoke-OSiRis.ps1"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-03-27"

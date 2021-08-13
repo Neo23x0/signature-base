@@ -13,7 +13,7 @@ import "pe"
 rule KasperMalware_Oct17_1 {
    meta:
       description = "Detects Kasper Backdoor"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-10-24"

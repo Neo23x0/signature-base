@@ -13,7 +13,7 @@ import "pe"
 rule Agent_BTZ_Proxy_DLL_1 {
    meta:
       description = "Detects Agent-BTZ Proxy DLL - activeds.dll"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "http://www.intezer.com/new-variants-of-agent-btz-comrat-found/"
       date = "2017-08-07"

@@ -13,7 +13,7 @@ import "pe"
 rule OilRig_RGDoor_Gen1 {
    meta:
       description = "Detects RGDoor backdoor used by OilRig group"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2018/01/unit42-oilrig-uses-rgdoor-iis-backdoor-targets-middle-east/"
       date = "2018-01-27"

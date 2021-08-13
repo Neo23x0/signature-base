@@ -4,7 +4,7 @@ rule HKTL_Solarwinds_credential_stealer {
         description = "Detects solarwinds credential stealers like e.g. solarflare via the touched certificate, files and database columns"
         reference = "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/solarwinds-raindrop-malware"
         reference = "https://github.com/mubix/solarflare"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-20"
 		hash = "1b2e5186464ed0bdd38fcd9f4ab294a7ba28bd829bf296584cbc32e2889037e4"

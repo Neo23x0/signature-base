@@ -13,7 +13,7 @@ import "pe"
 rule MAL_Hogfish_Report_Related_Sample {
    meta:
       description = "Detects APT10 / Hogfish related samples"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.accenture.com/t20180423T055005Z__w__/se-en/_acnmedia/PDF-76/Accenture-Hogfish-Threat-Analysis.pdf"
       date = "2018-05-01"

@@ -10,7 +10,7 @@ import "pe"
 rule APT10_Malware_Sample_Gen {
    meta:
       description = "APT 10 / Cloud Hopper malware campaign"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-06"

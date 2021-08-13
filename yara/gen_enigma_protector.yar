@@ -8,7 +8,7 @@
 rule EnigmaPacker_Rare {
    meta:
       description = "Detects an ENIGMA packed executable"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-04-27"

@@ -11,7 +11,7 @@
 rule PP_CN_APT_ZeroT_1 {
    meta:
       description = "Detects malware from the Proofpoint CN APT ZeroT incident"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.proofpoint.com/us/threat-insight/post/APT-targets-russia-belarus-zerot-plugx"
       date = "2017-02-03"
@@ -25,7 +25,7 @@ rule PP_CN_APT_ZeroT_1 {
 rule PP_CN_APT_ZeroT_2 {
    meta:
       description = "Detects malware from the Proofpoint CN APT ZeroT incident"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.proofpoint.com/us/threat-insight/post/APT-targets-russia-belarus-zerot-plugx"
       date = "2017-02-03"
@@ -39,7 +39,7 @@ rule PP_CN_APT_ZeroT_2 {
 rule PP_CN_APT_ZeroT_3 {
    meta:
       description = "Detects malware from the Proofpoint CN APT ZeroT incident"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.proofpoint.com/us/threat-insight/post/APT-targets-russia-belarus-zerot-plugx"
       date = "2017-02-03"
@@ -58,7 +58,7 @@ rule PP_CN_APT_ZeroT_3 {
 rule PP_CN_APT_ZeroT_4 {
    meta:
       description = "Detects malware from the Proofpoint CN APT ZeroT incident"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.proofpoint.com/us/threat-insight/post/APT-targets-russia-belarus-zerot-plugx"
       date = "2017-02-03"
@@ -73,7 +73,7 @@ rule PP_CN_APT_ZeroT_4 {
 rule PP_CN_APT_ZeroT_5 {
    meta:
       description = "Detects malware from the Proofpoint CN APT ZeroT incident"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.proofpoint.com/us/threat-insight/post/APT-targets-russia-belarus-zerot-plugx"
       date = "2017-02-03"
@@ -92,7 +92,7 @@ rule PP_CN_APT_ZeroT_5 {
 rule PP_CN_APT_ZeroT_6 {
    meta:
       description = "Detects malware from the Proofpoint CN APT ZeroT incident"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.proofpoint.com/us/threat-insight/post/APT-targets-russia-belarus-zerot-plugx"
       date = "2017-02-03"
@@ -107,7 +107,7 @@ rule PP_CN_APT_ZeroT_6 {
 rule PP_CN_APT_ZeroT_7 {
    meta:
       description = "Detects malware from the Proofpoint CN APT ZeroT incident"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.proofpoint.com/us/threat-insight/post/APT-targets-russia-belarus-zerot-plugx"
       date = "2017-02-03"
@@ -124,7 +124,7 @@ rule PP_CN_APT_ZeroT_7 {
 rule PP_CN_APT_ZeroT_8 {
    meta:
       description = "Detects malware from the Proofpoint CN APT ZeroT incident"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.proofpoint.com/us/threat-insight/post/APT-targets-russia-belarus-zerot-plugx"
       date = "2017-02-03"
@@ -141,7 +141,7 @@ rule PP_CN_APT_ZeroT_8 {
 rule PP_CN_APT_ZeroT_9 {
    meta:
       description = "Detects malware from the Proofpoint CN APT ZeroT incident"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.proofpoint.com/us/threat-insight/post/APT-targets-russia-belarus-zerot-plugx"
       date = "2017-02-03"
@@ -156,7 +156,7 @@ rule PP_CN_APT_ZeroT_9 {
 rule CN_APT_ZeroT_nflogger {
    meta:
       description = "Chinese APT by Proofpoint ZeroT RAT  - file nflogger.dll"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.proofpoint.com/us/threat-insight/post/APT-targets-russia-belarus-zerot-plugx"
       date = "2017-02-04"
@@ -170,7 +170,7 @@ rule CN_APT_ZeroT_nflogger {
 rule CN_APT_ZeroT_extracted_Go {
    meta:
       description = "Chinese APT by Proofpoint ZeroT RAT  - file Go.exe"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.proofpoint.com/us/threat-insight/post/APT-targets-russia-belarus-zerot-plugx"
       date = "2017-02-04"
@@ -193,7 +193,7 @@ rule CN_APT_ZeroT_extracted_Go {
 rule CN_APT_ZeroT_extracted_Mcutil {
    meta:
       description = "Chinese APT by Proofpoint ZeroT RAT  - file Mcutil.dll"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.proofpoint.com/us/threat-insight/post/APT-targets-russia-belarus-zerot-plugx"
       date = "2017-02-04"
@@ -212,7 +212,7 @@ rule CN_APT_ZeroT_extracted_Mcutil {
 rule CN_APT_ZeroT_extracted_Zlh {
    meta:
       description = "Chinese APT by Proofpoint ZeroT RAT - file Zlh.exe"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.proofpoint.com/us/threat-insight/post/APT-targets-russia-belarus-zerot-plugx"
       date = "2017-02-04"

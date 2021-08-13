@@ -10,7 +10,7 @@
 rule APT30_Generic_H {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -27,7 +27,7 @@ rule APT30_Generic_H {
 rule APT30_Sample_2 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -45,7 +45,7 @@ rule APT30_Sample_2 {
 rule APT30_Sample_3 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -63,7 +63,7 @@ rule APT30_Sample_3 {
 rule APT30_Generic_C {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -86,7 +86,7 @@ rule APT30_Generic_C {
 rule APT30_Sample_4 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -105,7 +105,7 @@ rule APT30_Sample_4 {
 rule APT30_Sample_5 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -123,7 +123,7 @@ rule APT30_Sample_5 {
 rule APT30_Sample_6 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -138,7 +138,7 @@ rule APT30_Sample_6 {
 rule APT30_Sample_7 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -157,7 +157,7 @@ rule APT30_Sample_7 {
 rule APT30_Generic_E {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -176,7 +176,7 @@ rule APT30_Generic_E {
 rule APT30_Sample_8 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -193,7 +193,7 @@ rule APT30_Sample_8 {
 rule APT30_Generic_B {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -213,7 +213,7 @@ rule APT30_Generic_B {
 rule APT30_Generic_I {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -230,7 +230,7 @@ rule APT30_Generic_I {
 rule APT30_Sample_9 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -251,7 +251,7 @@ rule APT30_Sample_9 {
 rule APT30_Sample_10 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -271,7 +271,7 @@ rule APT30_Sample_10 {
 rule APT30_Sample_11 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -299,7 +299,7 @@ rule APT30_Sample_11 {
 rule APT30_Sample_12 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -315,7 +315,7 @@ rule APT30_Sample_12 {
 rule APT30_Sample_13 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -334,7 +334,7 @@ rule APT30_Sample_13 {
 rule APT30_Sample_14 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -351,7 +351,7 @@ rule APT30_Sample_14 {
 rule APT30_Sample_15 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -370,7 +370,7 @@ rule APT30_Sample_15 {
 rule APT30_Sample_16 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -389,7 +389,7 @@ rule APT30_Sample_16 {
 rule APT30_Generic_A {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -410,7 +410,7 @@ rule APT30_Generic_A {
 rule APT30_Sample_17 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -424,7 +424,7 @@ rule APT30_Sample_17 {
 rule APT30_Sample_18 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -445,7 +445,7 @@ rule APT30_Sample_18 {
 rule APT30_Generic_G {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -467,7 +467,7 @@ rule APT30_Generic_G {
 rule APT30_Sample_19 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -493,7 +493,7 @@ rule APT30_Sample_19 {
 rule APT30_Generic_E_v2 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -510,7 +510,7 @@ rule APT30_Generic_E_v2 {
 rule APT30_Sample_20 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -531,7 +531,7 @@ rule APT30_Sample_20 {
 rule APT30_Sample_21 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -548,7 +548,7 @@ rule APT30_Sample_21 {
 rule APT30_Sample_22 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -567,7 +567,7 @@ rule APT30_Sample_22 {
 rule APT30_Generic_F {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -586,7 +586,7 @@ rule APT30_Generic_F {
 rule APT30_Sample_23 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -607,7 +607,7 @@ rule APT30_Sample_23 {
 rule APT30_Sample_24 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -627,7 +627,7 @@ rule APT30_Sample_24 {
 rule APT30_Sample_25 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -647,7 +647,7 @@ rule APT30_Sample_25 {
 rule APT30_Sample_26 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -667,7 +667,7 @@ rule APT30_Sample_26 {
 rule APT30_Generic_D {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -691,7 +691,7 @@ rule APT30_Generic_D {
 rule APT30_Sample_27 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -711,7 +711,7 @@ rule APT30_Sample_27 {
 rule APT30_Sample_28 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -740,7 +740,7 @@ rule APT30_Sample_28 {
 rule APT30_Sample_29 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -761,7 +761,7 @@ rule APT30_Sample_29 {
 rule APT30_Sample_30 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -779,7 +779,7 @@ rule APT30_Sample_30 {
 rule APT30_Sample_31 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -797,7 +797,7 @@ rule APT30_Sample_31 {
 rule APT30_Generic_J {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -829,7 +829,7 @@ rule APT30_Generic_J {
 rule APT30_Microfost {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -844,7 +844,7 @@ rule APT30_Microfost {
 rule APT30_Generic_K {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -874,7 +874,7 @@ rule APT30_Generic_K {
 rule APT30_Sample_33 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -895,7 +895,7 @@ rule APT30_Sample_33 {
 rule APT30_Sample_34 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -915,7 +915,7 @@ rule APT30_Sample_34 {
 rule APT30_Sample_35 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -931,7 +931,7 @@ rule APT30_Sample_35 {
 rule APT30_Sample_1 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -949,7 +949,7 @@ rule APT30_Sample_1 {
 rule APT30_Generic_1 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -982,7 +982,7 @@ rule APT30_Generic_1 {
 rule APT30_Generic_2 {
 	meta:
 		description = "FireEye APT30 Report Sample - from many files"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -1038,7 +1038,7 @@ rule APT30_Generic_2 {
 rule APT30_Generic_3 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -1057,7 +1057,7 @@ rule APT30_Generic_3 {
 rule APT30_Generic_4 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -1088,7 +1088,7 @@ rule APT30_Generic_4 {
 rule APT30_Generic_5 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -1110,7 +1110,7 @@ rule APT30_Generic_5 {
 rule APT30_Generic_6 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -1132,7 +1132,7 @@ rule APT30_Generic_6 {
 rule APT30_Generic_7 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -1150,7 +1150,7 @@ rule APT30_Generic_7 {
 rule APT30_Generic_8 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
@@ -1176,7 +1176,7 @@ rule APT30_Generic_8 {
 rule APT30_Generic_9 {
 	meta:
 		description = "FireEye APT30 Report Sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"

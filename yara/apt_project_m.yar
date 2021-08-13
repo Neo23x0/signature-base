@@ -10,7 +10,7 @@
 rule ProjectM_DarkComet_1 {
 	meta:
 		description = "Detects ProjectM Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://researchcenter.paloaltonetworks.com/2016/03/unit42-projectm-link-found-between-pakistani-actor-and-operation-transparent-tribe/"
 		date = "2016-03-26"
@@ -30,7 +30,7 @@ rule ProjectM_DarkComet_1 {
 rule ProjectM_CrimsonDownloader {
 	meta:
 		description = "Detects ProjectM Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://researchcenter.paloaltonetworks.com/2016/03/unit42-projectm-link-found-between-pakistani-actor-and-operation-transparent-tribe/"
 		date = "2016-03-26"

@@ -10,7 +10,7 @@
 rule CloudDuke_Malware {
 	meta:
 		description = "Detects CloudDuke Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www.f-secure.com/weblog/archives/00002822.html"
 		date = "2015-07-22"

@@ -6,7 +6,7 @@
 rule CoreImpact_sysdll_exe {
 	meta:
 		description = "Detects a malware sysdll.exe from the Rocket Kitten APT"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		score = 70
 		date = "27.12.2014"

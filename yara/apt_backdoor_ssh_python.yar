@@ -2,7 +2,7 @@
 rule custom_ssh_backdoor_server {
 	meta:
 		description = "Custome SSH backdoor based on python and paramiko - file server.py"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://goo.gl/S46L3o"
 		date = "2015-05-14"

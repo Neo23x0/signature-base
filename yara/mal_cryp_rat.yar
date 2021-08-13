@@ -4,7 +4,7 @@ rule MAL_CrypRAT_Jan19_1 {
    meta:
       description = "Detects CrypRAT"
       author = "Florian Roth"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       reference = "Internal Research"
       score = 90
       date = "2019-01-07"

@@ -13,7 +13,7 @@ import "pe"
 rule Foudre_Backdoor_1 {
    meta:
       description = "Detects Foudre Backdoor"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/Nbqbt6"
       date = "2017-08-01"
@@ -30,7 +30,7 @@ rule Foudre_Backdoor_1 {
 rule Foudre_Backdoor_Dropper_1 {
    meta:
       description = "Detects Foudre Backdoor"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/Nbqbt6"
       date = "2017-08-01"
@@ -51,7 +51,7 @@ rule Foudre_Backdoor_Dropper_1 {
 rule Foudre_Backdoor_Component_1 {
    meta:
       description = "Detects Foudre Backdoor"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/Nbqbt6"
       date = "2017-08-01"
@@ -73,7 +73,7 @@ rule Foudre_Backdoor_Component_1 {
 rule Foudre_Backdoor_SFX {
    meta:
       description = "Detects Foudre Backdoor SFX"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/Nbqbt6"
       date = "2017-08-01"

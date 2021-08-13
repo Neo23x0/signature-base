@@ -12,7 +12,7 @@
 rule Recon_Commands_Windows_Gen1 {
    meta:
       description = "Detects a set of reconnaissance commands on Windows systems"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-07-10"

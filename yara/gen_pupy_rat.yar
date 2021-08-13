@@ -13,7 +13,7 @@ import "pe"
 rule Pupy_Backdoor {
    meta:
       description = "Detects Pupy backdoor"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://github.com/n1nj4sec/pupy-binaries"
       date = "2017-08-11"

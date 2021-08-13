@@ -11,7 +11,7 @@
 rule BadRabbit_Gen {
    meta:
       description = "Detects BadRabbit Ransomware"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://pastebin.com/Y7pJv3tK"
       date = "2017-10-25"
@@ -41,7 +41,7 @@ rule BadRabbit_Gen {
 rule BadRabbit_Mimikatz_Comp {
    meta:
       description = "Auto-generated rule"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://pastebin.com/Y7pJv3tK"
       date = "2017-10-25"

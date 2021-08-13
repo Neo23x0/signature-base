@@ -10,7 +10,7 @@
 rule GRIZZLY_STEPPE_Malware_1 {
    meta:
       description = "Auto-generated rule - file HRDG022184_certclint.dll"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/WVflzO"
       date = "2016-12-29"
@@ -29,7 +29,7 @@ rule GRIZZLY_STEPPE_Malware_1 {
 rule GRIZZLY_STEPPE_Malware_2 {
    meta:
       description = "Auto-generated rule"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/WVflzO"
       date = "2016-12-29"
@@ -74,7 +74,7 @@ rule WebShell_PHP_Web_Kit_v3 {
    meta:
       description = "Detects PAS Tool PHP Web Kit"
       reference = "https://github.com/wordfence/grizzly"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       date = "2016/01/01"
    strings:
@@ -94,7 +94,7 @@ rule WebShell_PHP_Web_Kit_v4 {
    meta:
       description = "Detects PAS Tool PHP Web Kit"
       reference = "https://github.com/wordfence/grizzly"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       date = "2016/01/01"
    strings:

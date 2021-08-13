@@ -15,7 +15,6 @@ rule MAL_Xbash_PY_Sep18 {
       description = "Detects Xbash malware"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2018/09/unit42-xbash-combines-botnet-ransomware-coinmining-worm-targets-linux-windows/"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       date = "2018-09-18"
       hash1 = "7a18c7bdf0c504832c8552766dcfe0ba33dd5493daa3d9dbe9c985c1ce36e5aa"
    strings:
@@ -29,7 +28,6 @@ rule MAL_Xbash_SH_Sep18 {
       description = "Detects Xbash malware"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2018/09/unit42-xbash-combines-botnet-ransomware-coinmining-worm-targets-linux-windows/"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       date = "2018-09-18"
       hash1 = "a27acc07844bb751ac33f5df569fd949d8b61dba26eb5447482d90243fc739af"
       hash2 = "de63ce4a42f06a5903b9daa62b67fcfbdeca05beb574f966370a6ae7fd21190d"
@@ -51,7 +49,6 @@ rule MAL_Xbash_JS_Sep18 {
       description = "Detects XBash malware"
       author = "Florian Roth"
       reference = "https://researchcenter.paloaltonetworks.com/2018/09/unit42-xbash-combines-botnet-ransomware-coinmining-worm-targets-linux-windows/"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"      
       date = "2018-09-18"
       hash1 = "f888dda9ca1876eba12ffb55a7a993bd1f5a622a30045a675da4955ede3e4cb8"
    strings:

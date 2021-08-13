@@ -52,8 +52,6 @@ See our comparison table [here](https://www.nextron-systems.com/compare-our-scan
 
 ## License
 
-![Creative Commons License](https://i.creativecommons.org/l/by-nc/4.0/88x31.png)
+On 13.08.2021 this repository switched its license to "Detection Rule License (DRL) 1.1" (URL: [https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE](https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE)). The last version of the rule set released under the old CC-BY-NC can be found [here](https://github.com/Neo23x0/signature-base/releases/tag/v2.0).
 
-All signatures and IOC files in this repository, except the YARA rules created by 3rd parties, are licensed under the [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/).
-
-The license of this repository changed in August 2018. All forks or copies of this repository that were created before August 26th of 2018 are licensed under GPL 3.0. you can find the [last GPL version](https://github.com/Neo23x0/signature-base/releases/tag/v1.0) in the release section.
+All signatures and IOC files in this repository, except the YARA rules that explicitly indicate a different license (see "license" meta data), are licensed under the [Detection Rule License (DRL) 1.1](https://raw.githubusercontent.com/Neo23x0/signature-base/master/LICENSE).

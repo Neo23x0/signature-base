@@ -9,7 +9,7 @@ import "pe"
 rule Winnti_signing_cert {
 	meta:
 		description = "Detects a signing certificate used by the Winnti APT group"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://securelist.com/analysis/publications/72275/i-am-hdroot-part-1/"
 		date = "2015-10-10"
@@ -27,7 +27,7 @@ rule Winnti_signing_cert {
 rule Winnti_malware_Nsiproxy {
 	meta:
 		description = "Detects a Winnti rootkit"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		date = "2015-10-10"
 		score = 75
@@ -54,7 +54,7 @@ rule Winnti_malware_Nsiproxy {
 rule Winnti_malware_UpdateDLL {
 	meta:
 		description = "Detects a Winnti malware - Update.dll"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "VTI research"
 		date = "2015-10-10"
@@ -87,7 +87,7 @@ rule Winnti_malware_UpdateDLL {
 rule Winnti_malware_FWPK {
 	meta:
 		description = "Detects a Winnti malware - FWPKCLNT.SYS"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "VTI research"
 		date = "2015-10-10"
@@ -115,7 +115,7 @@ rule Winnti_malware_FWPK {
 rule Winnti_malware_StreamPortal_Gen {
 	meta:
 		description = "Detects a Winnti malware - Streamportal"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "VTI research"
 		date = "2015-10-10"

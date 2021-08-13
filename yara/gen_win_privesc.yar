@@ -10,7 +10,7 @@
 rule Win_PrivEsc_gp3finder_v4_0 {
 	meta:
 		description = "Detects a tool that can be used for privilege escalation - file gp3finder_v4.0.exe"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://grimhacker.com/2015/04/10/gp3finder-group-policy-preference-password-finder/"
 		date = "2016-06-02"
@@ -27,7 +27,7 @@ rule Win_PrivEsc_gp3finder_v4_0 {
 rule Win_PrivEsc_folderperm {
 	meta:
 		description = "Detects a tool that can be used for privilege escalation - file folderperm.ps1"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://www.greyhathacker.net/?p=738"
 		date = "2016-06-02"
@@ -44,7 +44,7 @@ rule Win_PrivEsc_folderperm {
 rule Win_PrivEsc_ADACLScan4_3 {
 	meta:
 		description = "Detects a tool that can be used for privilege escalation - file ADACLScan4.3.ps1"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://adaclscan.codeplex.com/"
 		score = 60

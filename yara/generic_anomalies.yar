@@ -12,7 +12,7 @@
 rule Embedded_EXE_Cloaking {
         meta:
                 description = "Detects an embedded executable in a non-executable file"
-                license = "Detection Rule License 1.1"
+                license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
                 date = "2015/02/27"
                 score = 65
@@ -81,7 +81,7 @@ rule Suspicious_Size_explorer_exe {
 rule Suspicious_Size_chrome_exe {
     meta:
         description = "Detects uncommon file size of chrome.exe"
-        license = "Detection Rule License 1.1"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
         score = 60
         date = "2015-12-21"
@@ -95,7 +95,7 @@ rule Suspicious_Size_chrome_exe {
 rule Suspicious_Size_csrss_exe {
     meta:
         description = "Detects uncommon file size of csrss.exe"
-        license = "Detection Rule License 1.1"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
         score = 60
         date = "2015-12-21"
@@ -109,7 +109,7 @@ rule Suspicious_Size_csrss_exe {
 rule Suspicious_Size_iexplore_exe {
     meta:
         description = "Detects uncommon file size of iexplore.exe"
-        license = "Detection Rule License 1.1"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
         score = 60
         date = "2015-12-21"
@@ -124,7 +124,7 @@ rule Suspicious_Size_iexplore_exe {
 rule Suspicious_Size_firefox_exe {
     meta:
         description = "Detects uncommon file size of firefox.exe"
-        license = "Detection Rule License 1.1"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
         score = 60
         date = "2015-12-21"
@@ -138,7 +138,7 @@ rule Suspicious_Size_firefox_exe {
 rule Suspicious_Size_java_exe {
     meta:
         description = "Detects uncommon file size of java.exe"
-        license = "Detection Rule License 1.1"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
         score = 60
         date = "2015-12-21"
@@ -152,7 +152,7 @@ rule Suspicious_Size_java_exe {
 rule Suspicious_Size_lsass_exe {
     meta:
         description = "Detects uncommon file size of lsass.exe"
-        license = "Detection Rule License 1.1"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
         score = 60
         date = "2015-12-21"
@@ -166,7 +166,7 @@ rule Suspicious_Size_lsass_exe {
 rule Suspicious_Size_svchost_exe {
     meta:
         description = "Detects uncommon file size of svchost.exe"
-        license = "Detection Rule License 1.1"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
         score = 60
         date = "2015-12-21"
@@ -180,7 +180,7 @@ rule Suspicious_Size_svchost_exe {
 rule Suspicious_Size_winlogon_exe {
     meta:
         description = "Detects uncommon file size of winlogon.exe"
-        license = "Detection Rule License 1.1"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
         score = 60
         date = "2015-12-21"
@@ -194,7 +194,7 @@ rule Suspicious_Size_winlogon_exe {
 rule Suspicious_Size_igfxhk_exe {
     meta:
         description = "Detects uncommon file size of igfxhk.exe"
-        license = "Detection Rule License 1.1"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
         score = 60
         date = "2015-12-21"
@@ -208,7 +208,7 @@ rule Suspicious_Size_igfxhk_exe {
 rule Suspicious_Size_servicehost_dll {
     meta:
         description = "Detects uncommon file size of servicehost.dll"
-        license = "Detection Rule License 1.1"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
         score = 60
         date = "2015-12-23"
@@ -222,7 +222,7 @@ rule Suspicious_Size_servicehost_dll {
 rule Suspicious_Size_rundll32_exe {
     meta:
         description = "Detects uncommon file size of rundll32.exe"
-        license = "Detection Rule License 1.1"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
         score = 60
         date = "2015-12-23"
@@ -236,7 +236,7 @@ rule Suspicious_Size_rundll32_exe {
 rule Suspicious_Size_taskhost_exe {
     meta:
         description = "Detects uncommon file size of taskhost.exe"
-        license = "Detection Rule License 1.1"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
         score = 60
         date = "2015-12-23"
@@ -250,7 +250,7 @@ rule Suspicious_Size_taskhost_exe {
 rule Suspicious_Size_spoolsv_exe {
     meta:
         description = "Detects uncommon file size of spoolsv.exe"
-        license = "Detection Rule License 1.1"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
         score = 60
         date = "2015-12-23"
@@ -264,7 +264,7 @@ rule Suspicious_Size_spoolsv_exe {
 rule Suspicious_Size_smss_exe {
     meta:
         description = "Detects uncommon file size of smss.exe"
-        license = "Detection Rule License 1.1"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
         score = 60
         date = "2015-12-23"
@@ -278,7 +278,7 @@ rule Suspicious_Size_smss_exe {
 rule Suspicious_Size_wininit_exe {
     meta:
         description = "Detects uncommon file size of wininit.exe"
-        license = "Detection Rule License 1.1"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
         score = 60
         date = "2015-12-23"
@@ -292,7 +292,7 @@ rule Suspicious_Size_wininit_exe {
 rule Suspicious_AutoIt_by_Microsoft {
    meta:
       description = "Detects a AutoIt script with Microsoft identification"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "Internal Research - VT"
       date = "2017-12-14"

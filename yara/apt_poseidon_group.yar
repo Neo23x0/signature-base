@@ -8,7 +8,7 @@
 rule PoseidonGroup_Malware {
 	meta:
 		description = "Detects Poseidon Group Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://securelist.com/blog/research/73673/poseidon-group-a-targeted-attack-boutique-specializing-in-global-cyber-espionage/"
 		date = "2016-02-09"
@@ -48,7 +48,7 @@ rule PoseidonGroup_Malware {
 rule PoseidonGroup_MalDoc_1 {
 	meta:
 		description = "Detects Poseidon Group - Malicious Word Document"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://securelist.com/blog/research/73673/poseidon-group-a-targeted-attack-boutique-specializing-in-global-cyber-espionage/"
 		date = "2016-02-09"
@@ -63,7 +63,7 @@ rule PoseidonGroup_MalDoc_1 {
 rule PoseidonGroup_MalDoc_2 {
 	meta:
 		description = "Detects Poseidon Group - Malicious Word Document"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://securelist.com/blog/research/73673/poseidon-group-a-targeted-attack-boutique-specializing-in-global-cyber-espionage/"
 		date = "2016-02-09"

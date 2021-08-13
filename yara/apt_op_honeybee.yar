@@ -13,7 +13,7 @@ import "pe"
 rule HoneyBee_Dropper_MalDoc {
    meta:
       description = "Detects samples from Operation Honeybee"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/JAHZVL"
       date = "2018-03-03"
@@ -36,7 +36,7 @@ rule HoneyBee_Dropper_MalDoc {
 rule OpHoneybee_Malware_1 {
    meta:
       description = "Detects malware from Operation Honeybee"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/JAHZVL"
       date = "2018-03-03"
@@ -71,7 +71,7 @@ rule OpHoneybee_Malware_1 {
 rule OpHoneybee_MaoCheng_Dropper {
    meta:
       description = "Detects MaoCheng dropper from Operation Honeybee"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/JAHZVL"
       date = "2018-03-03"

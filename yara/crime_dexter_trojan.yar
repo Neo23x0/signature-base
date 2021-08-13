@@ -1,7 +1,7 @@
 rule Dexter_Malware {
 	meta:
 		description = "Detects the Dexter Trojan/Agent http://goo.gl/oBvy8b"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://goo.gl/oBvy8b"
 		date = "2015/02/10"

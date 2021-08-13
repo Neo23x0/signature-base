@@ -72,7 +72,7 @@ rule FVEY_ShadowBroker_Auct_Dez16_Strings {
 rule FVEY_ShadowBroker_violetspirit {
    meta:
       description = "Auto-generated rule - file violetspirit.README"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://bit.no.com:43110/theshadowbrokers.bit/post/message6/"
       date = "2016-12-17"
@@ -86,7 +86,7 @@ rule FVEY_ShadowBroker_violetspirit {
 rule FVEY_ShadowBroker_gr_gr {
    meta:
       description = "Auto-generated rule - file gr.notes"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://bit.no.com:43110/theshadowbrokers.bit/post/message6/"
       date = "2016-12-17"
@@ -100,7 +100,7 @@ rule FVEY_ShadowBroker_gr_gr {
 rule FVEY_ShadowBroker_user_tool_yellowspirit {
    meta:
       description = "Auto-generated rule - file user.tool.yellowspirit.COMMON"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://bit.no.com:43110/theshadowbrokers.bit/post/message6/"
       date = "2016-12-17"
@@ -115,7 +115,7 @@ rule FVEY_ShadowBroker_user_tool_yellowspirit {
 rule FVEY_ShadowBroker_eleganteagle_opscript_1_0_0 {
    meta:
       description = "Auto-generated rule - file eleganteagle_opscript.1.0.0.6"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://bit.no.com:43110/theshadowbrokers.bit/post/message6/"
       date = "2016-12-17"
@@ -129,7 +129,7 @@ rule FVEY_ShadowBroker_eleganteagle_opscript_1_0_0 {
 rule FVEY_ShadowBroker_opscript {
    meta:
       description = "Auto-generated rule - file opscript.se"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://bit.no.com:43110/theshadowbrokers.bit/post/message6/"
       date = "2016-12-17"
@@ -143,7 +143,7 @@ rule FVEY_ShadowBroker_opscript {
 rule FVEY_ShadowBroker_user_tool_shentysdelight {
    meta:
       description = "Auto-generated rule - file user.tool.shentysdelight.COMMON"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://bit.no.com:43110/theshadowbrokers.bit/post/message6/"
       date = "2016-12-17"
@@ -157,7 +157,7 @@ rule FVEY_ShadowBroker_user_tool_shentysdelight {
 rule FVEY_ShadowBroker_user_tool_epichero {
    meta:
       description = "Auto-generated rule - file user.tool.epichero.COMMON"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://bit.no.com:43110/theshadowbrokers.bit/post/message6/"
       date = "2016-12-17"
@@ -172,7 +172,7 @@ rule FVEY_ShadowBroker_user_tool_epichero {
 rule FVEY_ShadowBroker_user_tool {
    meta:
       description = "Auto-generated rule - file user.tool.elatedmonkey"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://bit.no.com:43110/theshadowbrokers.bit/post/message6/"
       date = "2016-12-17"
@@ -186,7 +186,7 @@ rule FVEY_ShadowBroker_user_tool {
 rule FVEY_ShadowBroker_user_tool_dubmoat {
    meta:
       description = "Auto-generated rule - file user.tool.dubmoat.COMMON"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://bit.no.com:43110/theshadowbrokers.bit/post/message6/"
       date = "2016-12-17"
@@ -201,7 +201,7 @@ rule FVEY_ShadowBroker_user_tool_dubmoat {
 rule FVEY_ShadowBroker_strifeworld {
    meta:
       description = "Auto-generated rule - file strifeworld.1"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://bit.no.com:43110/theshadowbrokers.bit/post/message6/"
       date = "2016-12-17"
@@ -216,7 +216,7 @@ rule FVEY_ShadowBroker_strifeworld {
 rule FVEY_ShadowBroker_user_tool_pork {
    meta:
       description = "Auto-generated rule - file user.tool.pork.COMMON"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://bit.no.com:43110/theshadowbrokers.bit/post/message6/"
       date = "2016-12-17"
@@ -232,7 +232,7 @@ rule FVEY_ShadowBroker_user_tool_pork {
 rule FVEY_ShadowBroker_user_tool_ebbisland {
    meta:
       description = "Auto-generated rule - file user.tool.ebbisland.COMMON"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://bit.no.com:43110/theshadowbrokers.bit/post/message6/"
       date = "2016-12-17"
@@ -247,7 +247,7 @@ rule FVEY_ShadowBroker_user_tool_ebbisland {
 rule FVEY_ShadowBroker_user_tool_stoicsurgeon {
    meta:
       description = "Auto-generated rule - file user.tool.stoicsurgeon.COMMON"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://bit.no.com:43110/theshadowbrokers.bit/post/message6/"
       date = "2016-12-17"
@@ -261,7 +261,7 @@ rule FVEY_ShadowBroker_user_tool_stoicsurgeon {
 rule FVEY_ShadowBroker_user_tool_elgingamble {
    meta:
       description = "Auto-generated rule - file user.tool.elgingamble.COMMON"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://bit.no.com:43110/theshadowbrokers.bit/post/message6/"
       date = "2016-12-17"
@@ -275,7 +275,7 @@ rule FVEY_ShadowBroker_user_tool_elgingamble {
 rule FVEY_ShadowBroker_README_cup {
    meta:
       description = "Auto-generated rule - file README.cup.NOPEN"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://bit.no.com:43110/theshadowbrokers.bit/post/message6/"
       date = "2016-12-17"
@@ -290,7 +290,7 @@ rule FVEY_ShadowBroker_README_cup {
 rule FVEY_ShadowBroker_nopen_oneshot {
    meta:
       description = "Auto-generated rule - file oneshot.example"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://bit.no.com:43110/theshadowbrokers.bit/post/message6/"
       date = "2016-12-17"
@@ -304,7 +304,7 @@ rule FVEY_ShadowBroker_nopen_oneshot {
 rule FVEY_ShadowBroker_user_tool_earlyshovel {
    meta:
       description = "Auto-generated rule - file user.tool.earlyshovel.COMMON"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://bit.no.com:43110/theshadowbrokers.bit/post/message6/"
       date = "2016-12-17"
@@ -318,7 +318,7 @@ rule FVEY_ShadowBroker_user_tool_earlyshovel {
 rule FVEY_ShadowBroker_user_tool_envisioncollision {
    meta:
       description = "Auto-generated rule - file user.tool.envisioncollision.COMMON"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://bit.no.com:43110/theshadowbrokers.bit/post/message6/"
       date = "2016-12-17"
@@ -337,7 +337,7 @@ rule FVEY_ShadowBroker_user_tool_envisioncollision {
 rule FVEY_ShadowBroker_Gen_Readme1 {
    meta:
       description = "Auto-generated rule"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://bit.no.com:43110/theshadowbrokers.bit/post/message6/"
       date = "2016-12-17"
@@ -354,7 +354,7 @@ rule FVEY_ShadowBroker_Gen_Readme1 {
 rule FVEY_ShadowBroker_Gen_Readme2 {
    meta:
       description = "Auto-generated rule - from files user.tool.orleansstride.COMMON, user.tool.curserazor.COMMON"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://bit.no.com:43110/theshadowbrokers.bit/post/message6/"
       date = "2016-12-17"
@@ -370,7 +370,7 @@ rule FVEY_ShadowBroker_Gen_Readme2 {
 rule FVEY_ShadowBroker_Gen_Readme3 {
    meta:
       description = "Auto-generated rule"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://bit.no.com:43110/theshadowbrokers.bit/post/message6/"
       date = "2016-12-17"
@@ -391,7 +391,7 @@ rule FVEY_ShadowBroker_Gen_Readme3 {
 rule FVEY_ShadowBroker_Gen_Readme4 {
    meta:
       description = "Auto-generated rule - from files violetspirit.README, violetspirit.README"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://bit.no.com:43110/theshadowbrokers.bit/post/message6/"
       date = "2016-12-17"

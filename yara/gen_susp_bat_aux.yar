@@ -5,7 +5,6 @@ rule SUSP_BAT_Aux_Jan20_1 {
       author = "Florian Roth"
       reference = "https://medium.com/@quoscient/the-chicken-keeps-laying-new-eggs-uncovering-new-gc-maas-tools-used-by-top-tier-threat-actors-531d80a6b4e9"
       date = "2020-01-29"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       score = 65
       hash1 = "f5d558ec505b635b1e37557350562ad6f79b3da5cf2cf74db6e6e648b7a47127"
    strings:

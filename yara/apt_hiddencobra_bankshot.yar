@@ -11,7 +11,7 @@
 rule HiddenCobra_BANKSHOT_Gen {
    meta:
       description = "Detects Hidden Cobra BANKSHOT trojan"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.us-cert.gov/HIDDEN-COBRA-North-Korean-Malicious-Cyber-Activity"
       date = "2017-12-26"

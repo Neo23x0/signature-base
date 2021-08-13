@@ -10,7 +10,7 @@
 rule Turla_APT_srsvc {
 	meta:
 		description = "Detects Turla malware (based on sample used in the RUAG APT case)"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		family = "Turla"
 		reference = "https://www.govcert.admin.ch/blog/22/technical-report-about-the-ruag-espionage-case"
@@ -32,7 +32,7 @@ rule Turla_APT_srsvc {
 rule Turla_APT_Malware_Gen1 {
 	meta:
 		description = "Detects Turla malware (based on sample used in the RUAG APT case)"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		family = "Turla"
 		reference = "https://www.govcert.admin.ch/blog/22/technical-report-about-the-ruag-espionage-case"
@@ -71,7 +71,7 @@ rule Turla_APT_Malware_Gen1 {
 rule Turla_APT_Malware_Gen2 {
 	meta:
 		description = "Detects Turla malware (based on sample used in the RUAG APT case)"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		family = "Turla"
 		reference = "https://www.govcert.admin.ch/blog/22/technical-report-about-the-ruag-espionage-case"
@@ -107,7 +107,7 @@ rule Turla_APT_Malware_Gen2 {
 rule Turla_APT_Malware_Gen3 {
 	meta:
 		description = "Detects Turla malware (based on sample used in the RUAG APT case)"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		family = "Turla"
 		reference = "https://www.govcert.admin.ch/blog/22/technical-report-about-the-ruag-espionage-case"
@@ -148,7 +148,7 @@ rule Turla_APT_Malware_Gen3 {
 rule Turla_Mal_Script_Jan18_1 {
    meta:
       description = "Detects Turla malicious script"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://ghostbin.com/paste/jsph7"
       date = "2018-01-19"
@@ -188,7 +188,7 @@ rule Turla_KazuarRAT {
 rule MAL_Turla_Agent_BTZ {
    meta:
       description = "Detects Turla Agent.BTZ"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.gdatasoftware.com/blog/2014/11/23937-the-uroburos-case-new-sophisticated-rat-identified"
       date = "2018-04-12"
@@ -219,7 +219,7 @@ rule MAL_Turla_Agent_BTZ {
 rule MAL_Turla_Sample_May18_1 {
    meta:
       description = "Detects Turla samples"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://twitter.com/omri9741/status/991942007701598208"
       date = "2018-05-03"

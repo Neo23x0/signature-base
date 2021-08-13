@@ -11,7 +11,7 @@
 rule PowerShell_Case_Anomaly {
    meta:
       description = "Detects obfuscated PowerShell hacktools"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://twitter.com/danielhbohannon/status/905096106924761088"
       date = "2017-08-11"
@@ -60,7 +60,7 @@ rule PowerShell_Case_Anomaly {
 rule WScriptShell_Case_Anomaly {
    meta:
       description = "Detects obfuscated wscript.shell commands"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-09-11"

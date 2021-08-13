@@ -2,7 +2,7 @@
 rule SVG_LoadURL {
 	meta:
 		description = "Detects a tiny SVG file that loads an URL (as seen in CryptoWall malware infections)"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://goo.gl/psjCCc"
 		date = "2015-05-24"

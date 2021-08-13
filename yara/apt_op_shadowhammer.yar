@@ -4,7 +4,7 @@ rule MAL_APT_Operation_ShadowHammer_MalSetup {
       description = "Detects a malicious file used by BARIUM group in Operation ShadowHammer"
       date = "2019-03-25"
       author = "Florian Roth"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       score = 80
       hash1 = "ac0711afee5a157d084251f3443a40965fc63c57955e3a241df866cfc7315223"
       hash2 = "9acd43af36f2d38077258cb2ace42d6737b43be499367e90037f4605318325f8"

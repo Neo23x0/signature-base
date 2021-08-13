@@ -2,7 +2,7 @@
 rule PowerShell_Suite_Hacktools_Gen_Strings {
    meta:
       description = "Detects strings from scripts in the PowerShell-Suite repo"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://github.com/FuzzySecurity/PowerShell-Suite"
       date = "2017-12-27"
@@ -47,7 +47,7 @@ rule PowerShell_Suite_Hacktools_Gen_Strings {
 rule PowerShell_Suite_Eidolon {
    meta:
       description = "Detects PowerShell Suite Eidolon script - file Start-Eidolon.ps1"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://github.com/FuzzySecurity/PowerShell-Suite"
       date = "2017-12-27"

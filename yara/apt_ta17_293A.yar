@@ -147,7 +147,7 @@ rule TA17_293A_Query_Javascript_Decode_Function {
 rule TA17_293A_Hacktool_PS_1 {
    meta:
       description = "Auto-generated rule"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-293A"
       date = "2017-10-21"
@@ -162,7 +162,7 @@ rule TA17_293A_Hacktool_PS_1 {
 rule TA17_293A_Hacktool_Touch_MAC_modification {
    meta:
       description = "Auto-generated rule"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-293A"
       date = "2017-10-21"
@@ -179,7 +179,7 @@ rule TA17_293A_Hacktool_Touch_MAC_modification {
 rule TA17_293A_Hacktool_Exploit_MS16_032 {
    meta:
       description = "Auto-generated rule"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-293A"
       date = "2017-10-21"
@@ -198,7 +198,7 @@ rule TA17_293A_Hacktool_Exploit_MS16_032 {
 rule Imphash_UPX_Packed_Malware_1_TA17_293A {
    meta:
       description = "Detects malware based on Imphash of malware used in TA17-293A"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-293A"
       date = "2017-10-21"
@@ -210,7 +210,7 @@ rule Imphash_UPX_Packed_Malware_1_TA17_293A {
 rule Imphash_Malware_2_TA17_293A : HIGHVOL {
    meta:
       description = "Detects malware based on Imphash of malware used in TA17-293A"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-293A"
       date = "2017-10-21"

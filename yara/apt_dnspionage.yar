@@ -4,7 +4,6 @@ rule MAL_DNSPIONAGE_Malware_Nov18 {
       description = "Detects DNSpionage Malware"
       author = "Florian Roth"
       reference = "https://blog.talosintelligence.com/2018/11/dnspionage-campaign-targets-middle-east.html"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       date = "2018-11-30"
       hash1 = "2010f38ef300be4349e7bc287e720b1ecec678cacbf0ea0556bcf765f6e073ec"
       hash2 = "45a9edb24d4174592c69d9d37a534a518fbe2a88d3817fc0cc739e455883b8ff"

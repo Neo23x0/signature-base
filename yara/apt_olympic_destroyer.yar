@@ -13,7 +13,7 @@ import "pe"
 rule Destructive_Ransomware_Gen1 {
    meta:
       description = "Detects destructive malware"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "http://blog.talosintelligence.com/2018/02/olympic-destroyer.html"
       date = "2018-02-12"
@@ -29,7 +29,7 @@ rule Destructive_Ransomware_Gen1 {
 rule OlympicDestroyer_Gen2 {
    meta:
       description = "Detects Olympic Destroyer malware"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "http://blog.talosintelligence.com/2018/02/olympic-destroyer.html"
       date = "2018-02-12"

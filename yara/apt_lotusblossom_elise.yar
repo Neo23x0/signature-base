@@ -13,7 +13,7 @@ import "pe"
 rule Elise_Jan18_1 {
    meta:
       description = "Detects Elise malware samples - fake Norton Security NavShExt.dll"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://twitter.com/blu3_team/status/955971742329135105"
       date = "2018-01-24"

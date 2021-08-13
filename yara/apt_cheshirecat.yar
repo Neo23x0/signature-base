@@ -11,7 +11,7 @@
 rule CheshireCat_Sample2 {
 	meta:
 		description = "Auto-generated rule"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://malware-research.org/prepare-father-of-stuxnet-news-are-coming/"
 		date = "2015-08-08"
@@ -34,7 +34,7 @@ rule CheshireCat_Sample2 {
 rule CheshireCat_Gen1 {
 	meta:
 		description = "Auto-generated rule"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://malware-research.org/prepare-father-of-stuxnet-news-are-coming/"
 		date = "2015-08-08"
@@ -74,7 +74,7 @@ rule CheshireCat_Gen1 {
 rule CheshireCat_Gen2 {
 	meta:
 		description = "Cheshire Cat Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://malware-research.org/prepare-father-of-stuxnet-news-are-coming/"
 		date = "2015-08-08"

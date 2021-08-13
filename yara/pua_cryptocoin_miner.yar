@@ -2,7 +2,7 @@
 rule CoinMiner_Strings {
    meta:
       description = "Detects mining pool protocol string in Executable"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       score = 50
       reference = "https://minergate.com/faq/what-pool-address"
@@ -17,7 +17,7 @@ rule CoinMiner_Strings {
 rule CoinHive_Javascript_MoneroMiner {
    meta:
       description = "Detects CoinHive - JavaScript Crypto Miner"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       score = 50
       reference = "https://coinhive.com/documentation/miner"

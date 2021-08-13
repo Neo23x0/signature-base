@@ -12,7 +12,7 @@
 rule EternalRocks_taskhost {
    meta:
       description = "Detects EternalRocks Malware - file taskhost.exe"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://twitter.com/stamparm/status/864865144748298242"
       date = "2017-05-18"
@@ -31,7 +31,7 @@ rule EternalRocks_taskhost {
 rule EternalRocks_svchost {
    meta:
       description = "Detects EternalRocks Malware - file taskhost.exe"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://twitter.com/stamparm/status/864865144748298242"
       date = "2017-05-18"

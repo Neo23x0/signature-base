@@ -1,6 +1,6 @@
 rule DeviceGuard_WDS_Evasion {
    meta:
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       description = "Detects WDS file used to circumvent Device Guard"
       score = 80

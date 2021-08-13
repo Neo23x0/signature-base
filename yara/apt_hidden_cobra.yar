@@ -85,7 +85,7 @@ import "pe"
 rule APT_HiddenCobra_GhostSecret_1 {
    meta:
       description = "Detects Hidden Cobra Sample"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://securingtomorrow.mcafee.com/mcafee-labs/analyzing-operation-ghostsecret-attack-seeks-to-steal-data-worldwide/"
       date = "2018-08-11"
@@ -100,7 +100,7 @@ rule APT_HiddenCobra_GhostSecret_1 {
 rule APT_HiddenCobra_GhostSecret_2 {
    meta:
       description = "Detects Hidden Cobra Sample"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://securingtomorrow.mcafee.com/mcafee-labs/analyzing-operation-ghostsecret-attack-seeks-to-steal-data-worldwide/"
       date = "2018-08-11"

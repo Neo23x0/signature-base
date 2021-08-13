@@ -33,7 +33,7 @@ import "pe"
 rule Volgmer_Malware {
    meta:
       description = "Detects Volgmer malware as reported in US CERT TA17-318B"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-318B"
       date = "2017-11-15"

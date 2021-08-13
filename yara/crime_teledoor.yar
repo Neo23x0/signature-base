@@ -11,7 +11,7 @@
 rule TeleDoor_Backdoor {
    meta:
       description = "Detects the TeleDoor Backdoor as used in Petya Attack in June 2017"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/CpfJQQ"
       date = "2017-07-05"

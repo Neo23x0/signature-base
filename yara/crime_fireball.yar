@@ -12,7 +12,7 @@
 rule Fireball_de_svr {
    meta:
       description = "Detects Fireball malware - file de_svr.exe"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
@@ -30,7 +30,7 @@ rule Fireball_de_svr {
 rule Fireball_lancer {
    meta:
       description = "Detects Fireball malware - file lancer.dll"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
@@ -51,7 +51,7 @@ rule Fireball_lancer {
 rule QQBrowser {
    meta:
       description = "Not malware but suspicious browser - file QQBrowser.exe"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
@@ -69,7 +69,7 @@ rule QQBrowser {
 rule chrome_elf {
    meta:
       description = "Detects Fireball malware - file chrome_elf.dll"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
@@ -88,7 +88,7 @@ rule chrome_elf {
 rule Fireball_regkey {
    meta:
       description = "Detects Fireball malware - file regkey.exe"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
@@ -104,7 +104,7 @@ rule Fireball_regkey {
 rule Fireball_winsap {
    meta:
       description = "Detects Fireball malware - file winsap.dll"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
@@ -123,7 +123,7 @@ rule Fireball_winsap {
 rule Fireball_archer {
    meta:
       description = "Detects Fireball malware - file archer.dll"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
@@ -142,7 +142,7 @@ rule Fireball_archer {
 rule clearlog {
    meta:
       description = "Detects Fireball malware - file clearlog.dll"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
@@ -163,7 +163,7 @@ rule clearlog {
 rule Fireball_gubed {
    meta:
       description = "Detects Fireball malware - file gubed.exe"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"

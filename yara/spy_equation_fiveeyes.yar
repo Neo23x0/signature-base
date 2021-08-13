@@ -70,7 +70,7 @@ rule apt_equation_cryptotable {
 rule Equation_Kaspersky_TripleFantasy_1 {
 	meta:
 		description = "Equation Group Malware - TripleFantasy http://goo.gl/ivt8EW"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://goo.gl/ivt8EW"
 		date = "2015/02/16"
@@ -103,7 +103,7 @@ rule Equation_Kaspersky_TripleFantasy_1 {
 rule Equation_Kaspersky_DoubleFantasy_1 {
 	meta:
 		description = "Equation Group Malware - DoubleFantasy"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://goo.gl/ivt8EW"
 		date = "2015/02/16"
@@ -133,7 +133,7 @@ rule Equation_Kaspersky_DoubleFantasy_1 {
 rule Equation_Kaspersky_GROK_Keylogger {
 	meta:
 		description = "Equation Group Malware - GROK keylogger"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://goo.gl/ivt8EW"
 		date = "2015/02/16"
@@ -166,7 +166,7 @@ rule Equation_Kaspersky_GROK_Keylogger {
 rule Equation_Kaspersky_GreyFishInstaller {
 	meta:
 		description = "Equation Group Malware - Grey Fish"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://goo.gl/ivt8EW"
 		date = "2015/02/16"
@@ -182,7 +182,7 @@ rule Equation_Kaspersky_GreyFishInstaller {
 rule Equation_Kaspersky_EquationDrugInstaller {
 	meta:
 		description = "Equation Group Malware - EquationDrug installer LUTEUSOBSTOS"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://goo.gl/ivt8EW"
 		date = "2015/02/16"
@@ -205,7 +205,7 @@ rule Equation_Kaspersky_EquationDrugInstaller {
 rule Equation_Kaspersky_EquationLaserInstaller {
 	meta:
 		description = "Equation Group Malware - EquationLaser Installer"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://goo.gl/ivt8EW"
 		date = "2015/02/16"
@@ -227,7 +227,7 @@ rule Equation_Kaspersky_EquationLaserInstaller {
 rule Equation_Kaspersky_FannyWorm {
 	meta:
 		description = "Equation Group Malware - Fanny Worm"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://goo.gl/ivt8EW"
 		date = "2015/02/16"
@@ -265,7 +265,7 @@ rule Equation_Kaspersky_FannyWorm {
 rule Equation_Kaspersky_HDD_reprogramming_module {
 	meta:
 		description = "Equation Group Malware - HDD reprogramming module"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://goo.gl/ivt8EW"
 		date = "2015/02/16"
@@ -284,7 +284,7 @@ rule Equation_Kaspersky_HDD_reprogramming_module {
 rule Equation_Kaspersky_EOP_Package {
 	meta:
 		description = "Equation Group Malware - EoP package and malware launcher"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://goo.gl/ivt8EW"
 		date = "2015/02/16"
@@ -304,7 +304,7 @@ rule Equation_Kaspersky_EOP_Package {
 rule Equation_Kaspersky_TripleFantasy_Loader {
 	meta:
 		description = "Equation Group Malware - TripleFantasy Loader"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://goo.gl/ivt8EW"
 		date = "2015/02/16"
@@ -329,7 +329,7 @@ rule Equation_Kaspersky_TripleFantasy_Loader {
 rule Equation_Kaspersky_SuspiciousString {
 	meta:
 		description = "Equation Group Malware - suspicious string found in sample"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://goo.gl/ivt8EW"
 		date = "2015/02/17"

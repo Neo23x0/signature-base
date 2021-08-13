@@ -11,7 +11,7 @@
 rule CrimsonRAT_Mar18_1 {
    meta:
       description = "Detects CrimsonRAT malware"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2018-03-06"

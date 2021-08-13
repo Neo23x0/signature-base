@@ -10,7 +10,7 @@
 rule SeaDuke_Sample {
 	meta:
 		description = "SeaDuke Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://goo.gl/MJ0c2M"
 		date = "2015-07-14"

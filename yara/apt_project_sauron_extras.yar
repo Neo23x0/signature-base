@@ -1,7 +1,7 @@
 rule APT_Project_Sauron_Scripts {
 	meta:
 		description = "Detects scripts (mostly LUA) from Project Sauron report by Kaspersky"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-08"
@@ -39,7 +39,7 @@ rule HKTL_Dsniff {
 rule APT_Project_Sauron_arping_module {
 	meta:
 		description = "Detects strings from arping module - Project Sauron report by Kaspersky"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-08"
@@ -54,7 +54,7 @@ rule APT_Project_Sauron_arping_module {
 rule APT_Project_Sauron_kblogi_module {
 	meta:
 		description = "Detects strings from kblogi module - Project Sauron report by Kaspersky"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-08"
@@ -69,7 +69,7 @@ rule APT_Project_Sauron_kblogi_module {
 rule APT_Project_Sauron_basex_module {
 	meta:
 		description = "Detects strings from basex module - Project Sauron report by Kaspersky"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-08"
@@ -84,7 +84,7 @@ rule APT_Project_Sauron_basex_module {
 rule APT_Project_Sauron_dext_module {
 	meta:
 		description = "Detects strings from dext module - Project Sauron report by Kaspersky"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-08"
@@ -100,7 +100,7 @@ rule APT_Project_Sauron_dext_module {
 rule Hacktool_This_Cruft {
 	meta:
 		description = "Detects string 'This cruft' often used in hack tools like netcat or cryptcat and also mentioned in Project Sauron report"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-08"
@@ -123,7 +123,7 @@ rule Hacktool_This_Cruft {
 rule APT_Project_Sauron_Custom_M1 {
 	meta:
 		description = "Detects malware from Project Sauron APT"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-09"
@@ -142,7 +142,7 @@ rule APT_Project_Sauron_Custom_M1 {
 rule APT_Project_Sauron_Custom_M2 {
 	meta:
 		description = "Detects malware from Project Sauron APT"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-09"
@@ -160,7 +160,7 @@ rule APT_Project_Sauron_Custom_M2 {
 rule APT_Project_Sauron_Custom_M3 {
 	meta:
 		description = "Detects malware from Project Sauron APT"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-09"
@@ -178,7 +178,7 @@ rule APT_Project_Sauron_Custom_M3 {
 rule APT_Project_Sauron_Custom_M4 {
 	meta:
 		description = "Detects malware from Project Sauron APT"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-09"
@@ -197,7 +197,7 @@ rule APT_Project_Sauron_Custom_M4 {
 rule APT_Project_Sauron_Custom_M6 {
 	meta:
 		description = "Detects malware from Project Sauron APT"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-09"
@@ -216,7 +216,7 @@ rule APT_Project_Sauron_Custom_M6 {
 rule APT_Project_Sauron_Custom_M7 {
 	meta:
 		description = "Detects malware from Project Sauron APT"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-09"

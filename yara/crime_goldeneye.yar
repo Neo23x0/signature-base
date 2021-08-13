@@ -10,7 +10,7 @@
 rule GoldenEye_Ransomware_XLS {
    meta:
       description = "GoldenEye XLS with Macro - file Schneider-Bewerbung.xls"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/jp2SkT"
       date = "2016-12-06"
@@ -25,7 +25,7 @@ rule GoldenEye_Ransomware_XLS {
 rule GoldenEyeRansomware_Dropper_MalformedZoomit {
    meta:
       description = "Auto-generated rule"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/jp2SkT"
       date = "2016-12-06"

@@ -12,7 +12,7 @@
 rule NotPetya_Ransomware_Jun17 {
    meta:
       description = "Detects new NotPetya Ransomware variant from June 2017"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/h6iaGj"
       date = "2017-06-27"

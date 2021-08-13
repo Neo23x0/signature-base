@@ -13,7 +13,7 @@ import "pe"
 rule ShadowPad_nssock2 {
    meta:
       description = "Detects malicious nssock2.dll from ShadowPad incident - file nssock2.dll"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://securelist.com/shadowpad-in-corporate-networks/81432/"
       date = "2017-08-15"

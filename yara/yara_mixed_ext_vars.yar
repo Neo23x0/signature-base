@@ -8,7 +8,7 @@
 rule Acrotray_Anomaly {
 	meta:
 		description = "Detects an acrotray.exe that does not contain the usual strings"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		score = 75
 	strings:
@@ -25,7 +25,7 @@ rule Acrotray_Anomaly {
 rule COZY_FANCY_BEAR_modified_VmUpgradeHelper {
 	meta:
 		description = "Detects a malicious VmUpgradeHelper.exe as mentioned in the CrowdStrike report"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www.crowdstrike.com/blog/bears-midst-intrusion-democratic-national-committee/"
 		date = "2016-06-14"
@@ -58,7 +58,7 @@ rule IronTiger_Gh0stRAT_variant
 rule OpCloudHopper_Cloaked_PSCP {
    meta:
       description = "Tool used in Operation Cloud Hopper - pscp.exe cloaked as rundll32.exe"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.pwc.co.uk/cyber-security/pdf/cloud-hopper-annex-b-final.pdf"
       date = "2017-04-07"
@@ -73,7 +73,7 @@ rule OpCloudHopper_Cloaked_PSCP {
 rule msi_dll_Anomaly {
    meta:
       description = "Detetcs very small and supicious msi.dll"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://blog.cylance.com/shell-crew-variants-continue-to-fly-under-big-avs-radar"
       date = "2017-02-10"
@@ -87,7 +87,7 @@ rule msi_dll_Anomaly {
 rule PoS_Malware_MalumPOS_Config
 {
     meta:
-        license = "Detection Rule License 1.1"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
         date = "2015-06-25"
         description = "MalumPOS Config File"
@@ -104,7 +104,7 @@ rule PoS_Malware_MalumPOS_Config
 rule Malware_QA_update_test {
 	meta:
 		description = "VT Research QA uploaded malware - file update_.exe"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "VT Research QA"
 		date = "2016-08-29"
@@ -124,7 +124,7 @@ rule Malware_QA_update_test {
 rule SysInterals_PipeList_NameChanged {
 	meta:
 		description = "Detects NirSoft PipeList"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://goo.gl/Mr6M2J"
 		date = "2016-06-04"
@@ -151,7 +151,7 @@ rule SysInterals_PipeList_NameChanged {
 rule SCT_Scriptlet_in_Temp_Inet_Files {
 	meta:
 		description = "Detects a scriptlet file in the temporary Internet files (see regsvr32 AppLocker bypass)"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://goo.gl/KAB8Jw"
 		date = "2016-04-26"
@@ -168,7 +168,7 @@ rule SCT_Scriptlet_in_Temp_Inet_Files {
 rule GIFCloaked_Webshell_A {
    meta:
       description = "Looks like a webshell cloaked as GIF"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       hash = "f1c95b13a71ca3629a0bb79601fcacf57cdfcf768806a71b26f2448f8c1d5d24"
       score = 60
@@ -255,7 +255,7 @@ rule Exe_Cloaked_as_ThumbsDb
     meta:
         description = "Detects an executable cloaked as thumbs.db - Malware"
         date = "2014-07-18"
-        license = "Detection Rule License 1.1"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
         score = 50
     condition:

@@ -10,7 +10,7 @@
 rule ps1_toolkit_PowerUp {
 	meta:
 		description = "Auto-generated rule - file PowerUp.ps1"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://github.com/vysec/ps1-toolkit"
 		date = "2016-09-04"
@@ -32,7 +32,7 @@ rule ps1_toolkit_PowerUp {
 rule ps1_toolkit_Inveigh_BruteForce {
 	meta:
 		description = "Auto-generated rule - file Inveigh-BruteForce.ps1"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://github.com/vysec/ps1-toolkit"
 		date = "2016-09-04"
@@ -49,7 +49,7 @@ rule ps1_toolkit_Inveigh_BruteForce {
 rule ps1_toolkit_Invoke_Shellcode {
 	meta:
 		description = "Auto-generated rule - file Invoke-Shellcode.ps1"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://github.com/vysec/ps1-toolkit"
 		date = "2016-09-04"
@@ -68,7 +68,7 @@ rule ps1_toolkit_Invoke_Shellcode {
 rule ps1_toolkit_Invoke_Mimikatz {
 	meta:
 		description = "Auto-generated rule - file Invoke-Mimikatz.ps1"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://github.com/vysec/ps1-toolkit"
 		date = "2016-09-04"
@@ -88,7 +88,7 @@ rule ps1_toolkit_Invoke_Mimikatz {
 rule ps1_toolkit_Invoke_RelfectivePEInjection {
 	meta:
 		description = "Auto-generated rule - file Invoke-RelfectivePEInjection.ps1"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://github.com/vysec/ps1-toolkit"
 		date = "2016-09-04"
@@ -108,7 +108,7 @@ rule ps1_toolkit_Invoke_RelfectivePEInjection {
 rule ps1_toolkit_Persistence {
 	meta:
 		description = "Auto-generated rule - file Persistence.ps1"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://github.com/vysec/ps1-toolkit"
 		date = "2016-09-04"
@@ -130,7 +130,7 @@ rule ps1_toolkit_Persistence {
 rule ps1_toolkit_Invoke_Mimikatz_RelfectivePEInjection {
 	meta:
 		description = "Auto-generated rule - from files Invoke-Mimikatz.ps1, Invoke-RelfectivePEInjection.ps1"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://github.com/vysec/ps1-toolkit"
 		date = "2016-09-04"
@@ -157,7 +157,7 @@ rule ps1_toolkit_Invoke_Mimikatz_RelfectivePEInjection {
 rule ps1_toolkit_Inveigh_BruteForce_2 {
 	meta:
 		description = "Auto-generated rule - from files Inveigh-BruteForce.ps1"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://github.com/vysec/ps1-toolkit"
 		date = "2016-09-04"
@@ -175,7 +175,7 @@ rule ps1_toolkit_Inveigh_BruteForce_2 {
 rule ps1_toolkit_PowerUp_2 {
 	meta:
 		description = "Auto-generated rule - from files PowerUp.ps1"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://github.com/vysec/ps1-toolkit"
 		date = "2016-09-04"
@@ -195,7 +195,7 @@ rule ps1_toolkit_PowerUp_2 {
 rule ps1_toolkit_Persistence_2 {
 	meta:
 		description = "Auto-generated rule - from files Persistence.ps1"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://github.com/vysec/ps1-toolkit"
 		date = "2016-09-04"
@@ -218,7 +218,7 @@ rule ps1_toolkit_Persistence_2 {
 rule ps1_toolkit_Inveigh_BruteForce_3 {
 	meta:
 		description = "Auto-generated rule - from files Inveigh-BruteForce.ps1"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://github.com/vysec/ps1-toolkit"
 		date = "2016-09-04"

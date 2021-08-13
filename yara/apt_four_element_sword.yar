@@ -11,7 +11,7 @@
 rule FourElementSword_Config_File {
 	meta:
 		description = "Detects FourElementSword Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www.arbornetworks.com/blog/asert/four-element-sword-engagement/"
 		date = "2016-04-18"
@@ -29,7 +29,7 @@ rule FourElementSword_Config_File {
 rule FourElementSword_T9000 {
 	meta:
 		description = "Detects FourElementSword Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www.arbornetworks.com/blog/asert/four-element-sword-engagement/"
 		date = "2016-04-18"
@@ -49,7 +49,7 @@ rule FourElementSword_T9000 {
 rule FourElementSword_32DLL {
 	meta:
 		description = "Detects FourElementSword Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www.arbornetworks.com/blog/asert/four-element-sword-engagement/"
 		date = "2016-04-18"
@@ -67,7 +67,7 @@ rule FourElementSword_32DLL {
 rule FourElementSword_Keyainst_EXE {
 	meta:
 		description = "Detects FourElementSword Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www.arbornetworks.com/blog/asert/four-element-sword-engagement/"
 		date = "2016-04-18"
@@ -85,7 +85,7 @@ rule FourElementSword_Keyainst_EXE {
 rule FourElementSword_ElevateDLL_2 {
 	meta:
 		description = "Detects FourElementSword Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www.arbornetworks.com/blog/asert/four-element-sword-engagement/"
 		date = "2016-04-18"
@@ -101,7 +101,7 @@ rule FourElementSword_ElevateDLL_2 {
 rule FourElementSword_fslapi_dll_gui {
 	meta:
 		description = "Detects FourElementSword Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www.arbornetworks.com/blog/asert/four-element-sword-engagement/"
 		date = "2016-04-18"
@@ -117,7 +117,7 @@ rule FourElementSword_fslapi_dll_gui {
 rule FourElementSword_PowerShell_Start {
 	meta:
 		description = "Detects FourElementSword Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www.arbornetworks.com/blog/asert/four-element-sword-engagement/"
 		date = "2016-04-18"
@@ -132,7 +132,7 @@ rule FourElementSword_PowerShell_Start {
 rule FourElementSword_ResN32DLL {
 	meta:
 		description = "Detects FourElementSword Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www.arbornetworks.com/blog/asert/four-element-sword-engagement/"
 		date = "2016-04-18"
@@ -150,7 +150,7 @@ rule FourElementSword_ResN32DLL {
 rule FourElementSword_ElevateDLL {
 	meta:
 		description = "Detects FourElementSword Malware"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://www.arbornetworks.com/blog/asert/four-element-sword-engagement/"
 		date = "2016-04-18"

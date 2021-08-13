@@ -3,7 +3,7 @@ rule APT_MAL_DTRACK_Oct19_1 {
    meta:
       description = "Detects DTRACK malware"
       author = "Florian Roth"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       reference = "https://twitter.com/a_tweeter_user/status/1188811977851887616?s=21"
       date = "2019-10-28"
       hash1 = "c5c1ca4382f397481174914b1931e851a9c61f029e6b3eb8a65c9e92ddf7aa4c"

@@ -13,7 +13,7 @@ import "pe"
 rule CN_disclosed_20180208_lsls {
    meta:
       description = "Detects malware from disclosed CN malware set"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://twitter.com/cyberintproject/status/961714165550342146"
       date = "2018-02-08"
@@ -27,7 +27,7 @@ rule CN_disclosed_20180208_lsls {
 rule CN_disclosed_20180208_c {
    meta:
       description = "Detects malware from disclosed CN malware set"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://twitter.com/cyberintproject/status/961714165550342146"
       date = "2018-02-08"
@@ -55,7 +55,7 @@ rule CN_disclosed_20180208_c {
 rule CN_disclosed_20180208_System3 {
    meta:
       description = "Detects malware from disclosed CN malware set"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://twitter.com/cyberintproject/status/961714165550342146"
       date = "2018-02-08"
@@ -74,7 +74,7 @@ rule CN_disclosed_20180208_System3 {
 rule CN_disclosed_20180208_Mal1 {
    meta:
       description = "Detects malware from disclosed CN malware set"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.virustotal.com/graph/#/selected/n120z79z208z189/drawer/graph-details"
       date = "2018-02-08"
@@ -101,7 +101,7 @@ rule CN_disclosed_20180208_Mal1 {
 rule CN_disclosed_20180208_KeyLogger_1 {
    meta:
       description = "Detects malware from disclosed CN malware set"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.virustotal.com/graph/#/selected/n120z79z208z189/drawer/graph-details"
       date = "2018-02-08"
@@ -119,7 +119,7 @@ rule CN_disclosed_20180208_KeyLogger_1 {
 rule CN_disclosed_20180208_Mal4 {
    meta:
       description = "Detects malware from disclosed CN malware set"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.virustotal.com/graph/#/selected/n120z79z208z189/drawer/graph-details"
       date = "2018-02-08"
@@ -134,7 +134,7 @@ rule CN_disclosed_20180208_Mal4 {
 rule CN_disclosed_20180208_Mal5 {
    meta:
       description = "Detects malware from disclosed CN malware set"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.virustotal.com/graph/#/selected/n120z79z208z189/drawer/graph-details"
       date = "2018-02-08"

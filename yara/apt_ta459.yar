@@ -12,7 +12,7 @@
 rule TA459_Malware_May17_1 {
    meta:
       description = "Detects TA459 related malware"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/RLf9qU"
       date = "2017-05-31"
@@ -27,7 +27,7 @@ rule TA459_Malware_May17_1 {
 rule TA459_Malware_May17_2 {
    meta:
       description = "Detects TA459 related malware"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/RLf9qU"
       date = "2017-05-31"

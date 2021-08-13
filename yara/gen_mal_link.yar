@@ -2,7 +2,7 @@
 rule LNK_Malicious_Nov1 {
    meta:
       description = "Detects a suspicious LNK file"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.virustotal.com/en/file/ee069edc46a18698fa99b6d2204895e6a516af1a306ea986a798b178f289ecd6/analysis/"
       date = "2017-11-06"

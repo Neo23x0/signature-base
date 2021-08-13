@@ -66,7 +66,7 @@ rule WannaCry_Ransomware_Gen {
 rule WannCry_m_vbs {
    meta:
       description = "Detects WannaCry Ransomware VBS"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/HG2j5T"
       date = "2017-05-12"
@@ -82,7 +82,7 @@ rule WannCry_m_vbs {
 rule WannCry_BAT {
    meta:
       description = "Detects WannaCry Ransomware BATCH File"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/HG2j5T"
       date = "2017-05-12"
@@ -99,7 +99,7 @@ rule WannCry_BAT {
 rule WannaCry_RansomNote {
    meta:
       description = "Detects WannaCry Ransomware Note"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/HG2j5T"
       date = "2017-05-12"

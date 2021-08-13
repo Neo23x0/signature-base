@@ -13,7 +13,7 @@ import "pe"
 rule APT15_Malware_Mar18_RoyalCli {
    meta:
       description = "Detects malware from APT 15 report by NCC Group"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/HZ5XMN"
       date = "2018-03-10"
@@ -33,7 +33,7 @@ rule APT15_Malware_Mar18_RoyalCli {
 rule APT15_Malware_Mar18_RoyalDNS {
    meta:
       description = "Detects malware from APT 15 report by NCC Group"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/HZ5XMN"
       date = "2018-03-10"
@@ -59,7 +59,7 @@ rule APT15_Malware_Mar18_RoyalDNS {
 rule APT15_Malware_Mar18_BS2005 {
    meta:
       description = "Detects malware from APT 15 report by NCC Group"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/HZ5XMN"
       date = "2018-03-10"
@@ -86,7 +86,7 @@ rule APT15_Malware_Mar18_BS2005 {
 rule APT15_Malware_Mar18_MSExchangeTool {
    meta:
       description = "Detects malware from APT 15 report by NCC Group"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/HZ5XMN"
       date = "2018-03-10"

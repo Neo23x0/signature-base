@@ -6,7 +6,7 @@ rule HKTL_NET_GUID_CSharpSetThreadContext {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/djhohnstein/CSharpSetThreadContext"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -20,7 +20,7 @@ rule HKTL_NET_GUID_DLL_Injection {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/ihack4falafel/DLL-Injection"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -33,7 +33,7 @@ rule HKTL_NET_GUID_LimeUSB_Csharp {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/NYAN-x-CAT/LimeUSB-Csharp"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -46,7 +46,7 @@ rule HKTL_NET_GUID_Ladon {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/k8gege/Ladon"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -59,7 +59,7 @@ rule HKTL_NET_GUID_WhiteListEvasion {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/khr0x40sh/WhiteListEvasion"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -72,7 +72,7 @@ rule HKTL_NET_GUID_Lime_Downloader {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/NYAN-x-CAT/Lime-Downloader"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -85,7 +85,7 @@ rule HKTL_NET_GUID_DarkEye {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/K1ngSoul/DarkEye"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -98,7 +98,7 @@ rule HKTL_NET_GUID_SharpKatz {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/b4rtik/SharpKatz"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -111,7 +111,7 @@ rule HKTL_NET_GUID_ExternalC2 {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/ryhanson/ExternalC2"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -125,7 +125,7 @@ rule HKTL_NET_GUID_Povlsomware {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/povlteksttv/Povlsomware"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -138,7 +138,7 @@ rule HKTL_NET_GUID_RunShellcode {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/zerosum0x0/RunShellcode"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -151,7 +151,7 @@ rule HKTL_NET_GUID_SharpLoginPrompt {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/shantanu561993/SharpLoginPrompt"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -164,7 +164,7 @@ rule HKTL_NET_GUID_Adamantium_Thief {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/LimerBoy/Adamantium-Thief"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -177,7 +177,7 @@ rule HKTL_NET_GUID_PSByPassCLM {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/padovah4ck/PSByPassCLM"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -190,7 +190,7 @@ rule HKTL_NET_GUID_physmem2profit {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/FSecureLABS/physmem2profit"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -203,7 +203,7 @@ rule HKTL_NET_GUID_NoAmci {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/med0x2e/NoAmci"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -216,7 +216,7 @@ rule HKTL_NET_GUID_SharpBlock {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/CCob/SharpBlock"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -229,7 +229,7 @@ rule HKTL_NET_GUID_nopowershell {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/bitsadmin/nopowershell"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -242,7 +242,7 @@ rule HKTL_NET_GUID_LimeLogger {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/NYAN-x-CAT/LimeLogger"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -255,7 +255,7 @@ rule HKTL_NET_GUID_AggressorScripts {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/harleyQu1nn/AggressorScripts"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -268,7 +268,7 @@ rule HKTL_NET_GUID_Gopher {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/EncodeGroup/Gopher"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -281,7 +281,7 @@ rule HKTL_NET_GUID_AVIator {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/Ch0pin/AVIator"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -294,7 +294,7 @@ rule HKTL_NET_GUID_njCrypter {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/0xPh0enix/njCrypter"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -308,7 +308,7 @@ rule HKTL_NET_GUID_SharpMiniDump {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/b4rtik/SharpMiniDump"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -321,7 +321,7 @@ rule HKTL_NET_GUID_CinaRAT {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/wearelegal/CinaRAT"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -335,7 +335,7 @@ rule HKTL_NET_GUID_ToxicEye {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/LimerBoy/ToxicEye"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -348,7 +348,7 @@ rule HKTL_NET_GUID_Disable_Windows_Defender {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/NYAN-x-CAT/Disable-Windows-Defender"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -361,7 +361,7 @@ rule HKTL_NET_GUID_DInvoke_PoC {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/dtrizna/DInvoke_PoC"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -374,7 +374,7 @@ rule HKTL_NET_GUID_ReverseShell {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/chango77747/ReverseShell"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -388,7 +388,7 @@ rule HKTL_NET_GUID_SharpC2 {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/SharpC2/SharpC2"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -406,7 +406,7 @@ rule HKTL_NET_GUID_SneakyExec {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/HackingThings/SneakyExec"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -419,7 +419,7 @@ rule HKTL_NET_GUID_UrbanBishopLocal {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/slyd0g/UrbanBishopLocal"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -432,7 +432,7 @@ rule HKTL_NET_GUID_SharpShell {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/cobbr/SharpShell"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -446,7 +446,7 @@ rule HKTL_NET_GUID_EvilWMIProvider {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/sunnyc7/EvilWMIProvider"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -459,7 +459,7 @@ rule HKTL_NET_GUID_GadgetToJScript {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/med0x2e/GadgetToJScript"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -473,7 +473,7 @@ rule HKTL_NET_GUID_AzureCLI_Extractor {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/0x09AL/AzureCLI-Extractor"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -486,7 +486,7 @@ rule HKTL_NET_GUID_UAC_Escaper {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/NYAN-x-CAT/UAC-Escaper"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -499,7 +499,7 @@ rule HKTL_NET_GUID_HTTPSBeaconShell {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/limbenjamin/HTTPSBeaconShell"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -512,7 +512,7 @@ rule HKTL_NET_GUID_AmsiScanBufferBypass {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/rasta-mouse/AmsiScanBufferBypass"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -525,7 +525,7 @@ rule HKTL_NET_GUID_ShellcodeLoader {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/Hzllaga/ShellcodeLoader"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -538,7 +538,7 @@ rule HKTL_NET_GUID_KeystrokeAPI {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/fabriciorissetto/KeystrokeAPI"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -552,7 +552,7 @@ rule HKTL_NET_GUID_ShellCodeRunner {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/antman1p/ShellCodeRunner"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -566,7 +566,7 @@ rule HKTL_NET_GUID_OffensiveCSharp {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/diljith369/OffensiveCSharp"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -590,7 +590,7 @@ rule HKTL_NET_GUID_SHAPESHIFTER {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/matterpreter/SHAPESHIFTER"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -603,7 +603,7 @@ rule HKTL_NET_GUID_Evasor {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/cyberark/Evasor"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -616,7 +616,7 @@ rule HKTL_NET_GUID_Stracciatella {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/mgeeky/Stracciatella"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -629,7 +629,7 @@ rule HKTL_NET_GUID_logger {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/xxczaki/logger"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -642,7 +642,7 @@ rule HKTL_NET_GUID_Internal_Monologue {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/eladshamir/Internal-Monologue"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -656,7 +656,7 @@ rule HKTL_NET_GUID_GRAT2 {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/r3nhat/GRAT2"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -669,7 +669,7 @@ rule HKTL_NET_GUID_PowerShdll {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/p3nt4/PowerShdll"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -682,7 +682,7 @@ rule HKTL_NET_GUID_CsharpAmsiBypass {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/WayneJLee/CsharpAmsiBypass"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -695,7 +695,7 @@ rule HKTL_NET_GUID_HastySeries {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/obscuritylabs/HastySeries"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -717,7 +717,7 @@ rule HKTL_NET_GUID_DreamProtectorFree {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/Paskowsky/DreamProtectorFree"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -730,7 +730,7 @@ rule HKTL_NET_GUID_RedSharp {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/padovah4ck/RedSharp"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -743,7 +743,7 @@ rule HKTL_NET_GUID_ESC {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/NetSPI/ESC"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -757,7 +757,7 @@ rule HKTL_NET_GUID_Csharp_Loader {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/NYAN-x-CAT/Csharp-Loader"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -770,7 +770,7 @@ rule HKTL_NET_GUID_bantam {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/gellin/bantam"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -783,7 +783,7 @@ rule HKTL_NET_GUID_SharpTask {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/jnqpblc/SharpTask"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -796,7 +796,7 @@ rule HKTL_NET_GUID_WindowsPlague {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/RITRedteam/WindowsPlague"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -809,7 +809,7 @@ rule HKTL_NET_GUID_Misc_CSharp {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/jnqpblc/Misc-CSharp"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -823,7 +823,7 @@ rule HKTL_NET_GUID_SharpSpray {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/jnqpblc/SharpSpray"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -836,7 +836,7 @@ rule HKTL_NET_GUID_Obfuscator {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/3xpl01tc0d3r/Obfuscator"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -849,7 +849,7 @@ rule HKTL_NET_GUID_SafetyKatz {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/GhostPack/SafetyKatz"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -862,7 +862,7 @@ rule HKTL_NET_GUID_Dropless_Malware {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/NYAN-x-CAT/Dropless-Malware"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -875,7 +875,7 @@ rule HKTL_NET_GUID_UAC_SilentClean {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/EncodeGroup/UAC-SilentClean"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -888,7 +888,7 @@ rule HKTL_NET_GUID_DesktopGrabber {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/NYAN-x-CAT/DesktopGrabber"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -901,7 +901,7 @@ rule HKTL_NET_GUID_wsManager {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/guillaC/wsManager"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -914,7 +914,7 @@ rule HKTL_NET_GUID_UglyEXe {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/fashionproof/UglyEXe"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -927,7 +927,7 @@ rule HKTL_NET_GUID_SharpDump {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/GhostPack/SharpDump"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -940,7 +940,7 @@ rule HKTL_NET_GUID_EducationalRAT {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/securesean/EducationalRAT"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -953,7 +953,7 @@ rule HKTL_NET_GUID_Stealth_Kid_RAT {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/ctsecurity/Stealth-Kid-RAT"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -967,7 +967,7 @@ rule HKTL_NET_GUID_SharpCradle {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/anthemtotheego/SharpCradle"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -980,7 +980,7 @@ rule HKTL_NET_GUID_BypassUAC {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/cnsimo/BypassUAC"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -994,7 +994,7 @@ rule HKTL_NET_GUID_hanzoInjection {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/P0cL4bs/hanzoInjection"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1007,7 +1007,7 @@ rule HKTL_NET_GUID_clr_meterpreter {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/OJ/clr-meterpreter"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1025,7 +1025,7 @@ rule HKTL_NET_GUID_BYTAGE {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/KNIF/BYTAGE"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1038,7 +1038,7 @@ rule HKTL_NET_GUID_MultiOS_ReverseShell {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/belane/MultiOS_ReverseShell"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1051,7 +1051,7 @@ rule HKTL_NET_GUID_HideFromAMSI {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/0r13lc0ch4v1/HideFromAMSI"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1064,7 +1064,7 @@ rule HKTL_NET_GUID_DotNetAVBypass_Master {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/lockfale/DotNetAVBypass-Master"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1077,7 +1077,7 @@ rule HKTL_NET_GUID_SharpDPAPI {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/GhostPack/SharpDPAPI"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1091,7 +1091,7 @@ rule HKTL_NET_GUID_Telegra_Csharp_C2 {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/sf197/Telegra_Csharp_C2"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1104,7 +1104,7 @@ rule HKTL_NET_GUID_SharpCompile {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/SpiderLabs/SharpCompile"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1117,7 +1117,7 @@ rule HKTL_NET_GUID_Carbuncle {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/checkymander/Carbuncle"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1130,7 +1130,7 @@ rule HKTL_NET_GUID_OSSFileTool {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/B1eed/OSSFileTool"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1143,7 +1143,7 @@ rule HKTL_NET_GUID_Rubeus {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/GhostPack/Rubeus"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1156,7 +1156,7 @@ rule HKTL_NET_GUID_Simple_Loader {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/cribdragg3r/Simple-Loader"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1169,7 +1169,7 @@ rule HKTL_NET_GUID_Minidump {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/3xpl01tc0d3r/Minidump"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1182,7 +1182,7 @@ rule HKTL_NET_GUID_SharpBypassUAC {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/FatRodzianko/SharpBypassUAC"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1195,7 +1195,7 @@ rule HKTL_NET_GUID_SharpPack {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/Lexus89/SharpPack"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1215,7 +1215,7 @@ rule HKTL_NET_GUID_Salsa_tools {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/Hackplayers/Salsa-tools"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1229,7 +1229,7 @@ rule HKTL_NET_GUID_WindowsDefender_Payload_Downloader {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/notkohlrexo/WindowsDefender-Payload-Downloader"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1242,7 +1242,7 @@ rule HKTL_NET_GUID_Privilege_Escalation {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/Mrakovic-ORG/Privilege_Escalation"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1255,7 +1255,7 @@ rule HKTL_NET_GUID_Marauder {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/maraudershell/Marauder"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1268,7 +1268,7 @@ rule HKTL_NET_GUID_AV_Evasion_Tool {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/1y0n/AV_Evasion_Tool"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1282,7 +1282,7 @@ rule HKTL_NET_GUID_Fenrir {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/nccgroup/Fenrir"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1295,7 +1295,7 @@ rule HKTL_NET_GUID_StormKitty {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/LimerBoy/StormKitty"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1309,7 +1309,7 @@ rule HKTL_NET_GUID_Crypter_Runtime_AV_s_bypass {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/netreverse/Crypter-Runtime-AV-s-bypass"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1322,7 +1322,7 @@ rule HKTL_NET_GUID_RunAsUser {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/atthacks/RunAsUser"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1335,7 +1335,7 @@ rule HKTL_NET_GUID_HWIDbypass {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/yunseok/HWIDbypass"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1348,7 +1348,7 @@ rule HKTL_NET_GUID_XORedReflectiveDLL {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/r3nhat/XORedReflectiveDLL"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1362,7 +1362,7 @@ rule HKTL_NET_GUID_Sharp_Suite {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/FuzzySecurity/Sharp-Suite"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1390,7 +1390,7 @@ rule HKTL_NET_GUID_rat_shell {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/stphivos/rat-shell"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1404,7 +1404,7 @@ rule HKTL_NET_GUID_dotnet_gargoyle {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/countercept/dotnet-gargoyle"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1419,7 +1419,7 @@ rule HKTL_NET_GUID_aresskit {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/BlackVikingPro/aresskit"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1432,7 +1432,7 @@ rule HKTL_NET_GUID_DLL_Injector {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/tmthrgd/DLL-Injector"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1446,7 +1446,7 @@ rule HKTL_NET_GUID_TruffleSnout {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/dsnezhkov/TruffleSnout"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1459,7 +1459,7 @@ rule HKTL_NET_GUID_Anti_Analysis {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/NYAN-x-CAT/Anti-Analysis"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1472,7 +1472,7 @@ rule HKTL_NET_GUID_BackNet {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/valsov/BackNet"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1488,7 +1488,7 @@ rule HKTL_NET_GUID_AllTheThings {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/johnjohnsp1/AllTheThings"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1501,7 +1501,7 @@ rule HKTL_NET_GUID_AddReferenceDotRedTeam {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/ceramicskate0/AddReferenceDotRedTeam"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1514,7 +1514,7 @@ rule HKTL_NET_GUID_Lime_Crypter {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/NYAN-x-CAT/Lime-Crypter"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1527,7 +1527,7 @@ rule HKTL_NET_GUID_BrowserGhost {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/QAX-A-Team/BrowserGhost"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1540,7 +1540,7 @@ rule HKTL_NET_GUID_SharpShot {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/tothi/SharpShot"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1553,7 +1553,7 @@ rule HKTL_NET_GUID_Offensive__NET {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/mrjamiebowman/Offensive-.NET"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1566,7 +1566,7 @@ rule HKTL_NET_GUID_RuralBishop {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/rasta-mouse/RuralBishop"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1579,7 +1579,7 @@ rule HKTL_NET_GUID_DeviceGuardBypasses {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/tyranid/DeviceGuardBypasses"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1597,7 +1597,7 @@ rule HKTL_NET_GUID_AMSI_Handler {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/two06/AMSI_Handler"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1613,7 +1613,7 @@ rule HKTL_NET_GUID_RAT_TelegramSpyBot {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/SebastianEPH/RAT.TelegramSpyBot"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1626,7 +1626,7 @@ rule HKTL_NET_GUID_TheHackToolBoxTeek {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/teeknofil/TheHackToolBoxTeek"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1645,7 +1645,7 @@ rule HKTL_NET_GUID_USBTrojan {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/mashed-potatoes/USBTrojan"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1658,7 +1658,7 @@ rule HKTL_NET_GUID_IIS_backdoor {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/WBGlIl/IIS_backdoor"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1672,7 +1672,7 @@ rule HKTL_NET_GUID_ShellGen {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/jasondrawdy/ShellGen"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1685,7 +1685,7 @@ rule HKTL_NET_GUID_Mass_RAT {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/NYAN-x-CAT/Mass-RAT"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1700,7 +1700,7 @@ rule HKTL_NET_GUID_Browser_ExternalC2 {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/mdsecactivebreach/Browser-ExternalC2"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1713,7 +1713,7 @@ rule HKTL_NET_GUID_OffensivePowerShellTasking {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/leechristensen/OffensivePowerShellTasking"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1727,7 +1727,7 @@ rule HKTL_NET_GUID_DoHC2 {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/SpiderLabs/DoHC2"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1740,7 +1740,7 @@ rule HKTL_NET_GUID_SyscallPOC {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/SolomonSklash/SyscallPOC"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1754,7 +1754,7 @@ rule HKTL_NET_GUID_Pen_Test_Tools {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/awillard1/Pen-Test-Tools"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1778,7 +1778,7 @@ rule HKTL_NET_GUID_The_Collection {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/Tlgyt/The-Collection"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1795,7 +1795,7 @@ rule HKTL_NET_GUID_Change_Lockscreen {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/nccgroup/Change-Lockscreen"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1808,7 +1808,7 @@ rule HKTL_NET_GUID_LOLBITS {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/Kudaes/LOLBITS"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1821,7 +1821,7 @@ rule HKTL_NET_GUID_Keylogger {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/BlackVikingPro/Keylogger"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1834,7 +1834,7 @@ rule HKTL_NET_GUID_CVE_2020_1337 {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/neofito/CVE-2020-1337"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1847,7 +1847,7 @@ rule HKTL_NET_GUID_SharpLogger {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/djhohnstein/SharpLogger"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1860,7 +1860,7 @@ rule HKTL_NET_GUID_AsyncRAT_C_Sharp {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/NYAN-x-CAT/AsyncRAT-C-Sharp"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1883,7 +1883,7 @@ rule HKTL_NET_GUID_DarkFender {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/0xyg3n/DarkFender"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1897,7 +1897,7 @@ rule HKTL_NET_GUID_IronKit {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/nshalabi/IronKit"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         score = 50
         date = "2020-12-13"
@@ -1913,7 +1913,7 @@ rule HKTL_NET_GUID_MinerDropper {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/DylanAlloy/MinerDropper"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1927,7 +1927,7 @@ rule HKTL_NET_GUID_SharpDomainSpray {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/HunnicCyber/SharpDomainSpray"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1940,7 +1940,7 @@ rule HKTL_NET_GUID_iSpyKeylogger {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/mwsrc/iSpyKeylogger"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1956,7 +1956,7 @@ rule HKTL_NET_GUID_SolarFlare {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/mubix/solarflare"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-15"
     strings:
@@ -1969,7 +1969,7 @@ rule HKTL_NET_GUID_Snaffler {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/SnaffCon/Snaffler"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1983,7 +1983,7 @@ rule HKTL_NET_GUID_SharpShares {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/djhohnstein/SharpShares/"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-13"
     strings:
@@ -1996,7 +1996,7 @@ rule HKTL_NET_GUID_SharpEDRChecker {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/PwnDexter/SharpEDRChecker"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-18"
     strings:
@@ -2009,7 +2009,7 @@ rule HKTL_NET_GUID_SharpClipHistory {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/FSecureLABS/SharpClipHistory"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-21"
     strings:
@@ -2022,7 +2022,7 @@ rule HKTL_NET_GUID_SharpGPO_RemoteAccessPolicies {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/FSecureLABS/SharpGPO-RemoteAccessPolicies"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-21"
     strings:
@@ -2035,7 +2035,7 @@ rule HKTL_NET_GUID_Absinthe {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/cameronhotchkies/Absinthe"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-21"
     strings:
@@ -2048,7 +2048,7 @@ rule HKTL_NET_GUID_ExploitRemotingService {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/tyranid/ExploitRemotingService"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-21"
     strings:
@@ -2063,7 +2063,7 @@ rule HKTL_NET_GUID_Xploit {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/shargon/Xploit"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-21"
     strings:
@@ -2086,7 +2086,7 @@ rule HKTL_NET_GUID_PoC {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/thezdi/PoC"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-21"
     strings:
@@ -2099,7 +2099,7 @@ rule HKTL_NET_GUID_SharpGPOAbuse {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/FSecureLABS/SharpGPOAbuse"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-21"
     strings:
@@ -2112,7 +2112,7 @@ rule HKTL_NET_GUID_Watson {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/rasta-mouse/Watson"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-21"
     strings:
@@ -2125,7 +2125,7 @@ rule HKTL_NET_GUID_StandIn {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/FuzzySecurity/StandIn"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-21"
     strings:
@@ -2138,7 +2138,7 @@ rule HKTL_NET_GUID_azure_password_harvesting {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/guardicore/azure_password_harvesting"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-21"
     strings:
@@ -2151,7 +2151,7 @@ rule HKTL_NET_GUID_PowerOPS {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/fdiskyou/PowerOPS"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-21"
     strings:
@@ -2164,7 +2164,7 @@ rule HKTL_NET_GUID_Random_CSharpTools {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/xorrior/Random-CSharpTools"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-21"
     strings:
@@ -2183,7 +2183,7 @@ rule HKTL_NET_GUID_CVE_2020_0668 {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/RedCursorSecurityConsulting/CVE-2020-0668"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2196,7 +2196,7 @@ rule HKTL_NET_GUID_WindowsRpcClients {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/tyranid/WindowsRpcClients"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2215,7 +2215,7 @@ rule HKTL_NET_GUID_SharpFruit {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/rvrsh3ll/SharpFruit"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2228,7 +2228,7 @@ rule HKTL_NET_GUID_SharpWitness {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/rasta-mouse/SharpWitness"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2241,7 +2241,7 @@ rule HKTL_NET_GUID_RexCrypter {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/syrex1013/RexCrypter"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2254,7 +2254,7 @@ rule HKTL_NET_GUID_SharPersist {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/fireeye/SharPersist"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2267,7 +2267,7 @@ rule HKTL_NET_GUID_CVE_2019_1253 {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/padovah4ck/CVE-2019-1253"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2280,7 +2280,7 @@ rule HKTL_NET_GUID_scout {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/jaredhaight/scout"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2293,7 +2293,7 @@ rule HKTL_NET_GUID_Grouper2 {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/l0ss/Grouper2/"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2306,7 +2306,7 @@ rule HKTL_NET_GUID_CasperStager {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/ustayready/CasperStager"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2320,7 +2320,7 @@ rule HKTL_NET_GUID_TellMeYourSecrets {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/0xbadjuju/TellMeYourSecrets"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2333,7 +2333,7 @@ rule HKTL_NET_GUID_SharpExcel4_DCOM {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/rvrsh3ll/SharpExcel4-DCOM"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2346,7 +2346,7 @@ rule HKTL_NET_GUID_SharpShooter {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/mdsecactivebreach/SharpShooter"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2359,7 +2359,7 @@ rule HKTL_NET_GUID_NoMSBuild {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/rvrsh3ll/NoMSBuild"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2373,7 +2373,7 @@ rule HKTL_NET_GUID_TeleShadow2 {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/ParsingTeam/TeleShadow2"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2387,7 +2387,7 @@ rule HKTL_NET_GUID_BadPotato {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/BeichenDream/BadPotato"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2400,7 +2400,7 @@ rule HKTL_NET_GUID_LethalHTA {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/codewhitesec/LethalHTA"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2414,7 +2414,7 @@ rule HKTL_NET_GUID_SharpStat {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/Raikia/SharpStat"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2427,7 +2427,7 @@ rule HKTL_NET_GUID_SneakyService {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/malcomvetter/SneakyService"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2440,7 +2440,7 @@ rule HKTL_NET_GUID_SharpExec {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/anthemtotheego/SharpExec"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2453,7 +2453,7 @@ rule HKTL_NET_GUID_SharpCOM {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/rvrsh3ll/SharpCOM"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2466,7 +2466,7 @@ rule HKTL_NET_GUID_Inception {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/two06/Inception"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2479,7 +2479,7 @@ rule HKTL_NET_GUID_sharpwmi {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/QAX-A-Team/sharpwmi"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2492,7 +2492,7 @@ rule HKTL_NET_GUID_CVE_2019_1064 {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/RythmStick/CVE-2019-1064"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2505,7 +2505,7 @@ rule HKTL_NET_GUID_Tokenvator {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/0xbadjuju/Tokenvator"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2518,7 +2518,7 @@ rule HKTL_NET_GUID_WheresMyImplant {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/0xbadjuju/WheresMyImplant"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2531,7 +2531,7 @@ rule HKTL_NET_GUID_Naga {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/byt3bl33d3r/Naga"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2545,7 +2545,7 @@ rule HKTL_NET_GUID_SharpBox {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/P1CKLES/SharpBox"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2558,7 +2558,7 @@ rule HKTL_NET_GUID_rundotnetdll32 {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/0xbadjuju/rundotnetdll32"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2571,7 +2571,7 @@ rule HKTL_NET_GUID_AntiDebug {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/malcomvetter/AntiDebug"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2584,7 +2584,7 @@ rule HKTL_NET_GUID_DInvisibleRegistry {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/NVISO-BE/DInvisibleRegistry"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2597,7 +2597,7 @@ rule HKTL_NET_GUID_TikiTorch {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/rasta-mouse/TikiTorch"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2616,7 +2616,7 @@ rule HKTL_NET_GUID_HiveJack {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/Viralmaniar/HiveJack"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2629,7 +2629,7 @@ rule HKTL_NET_GUID_DecryptAutoLogon {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/securesean/DecryptAutoLogon"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2642,7 +2642,7 @@ rule HKTL_NET_GUID_UnstoppableService {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/malcomvetter/UnstoppableService"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2655,7 +2655,7 @@ rule HKTL_NET_GUID_SharpWMI {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/GhostPack/SharpWMI"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2668,7 +2668,7 @@ rule HKTL_NET_GUID_EWSToolkit {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/rasta-mouse/EWSToolkit"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2681,7 +2681,7 @@ rule HKTL_NET_GUID_SweetPotato {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/CCob/SweetPotato"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2695,7 +2695,7 @@ rule HKTL_NET_GUID_memscan {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/nccgroup/memscan"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2708,7 +2708,7 @@ rule HKTL_NET_GUID_SharpStay {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/0xthirteen/SharpStay"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2721,7 +2721,7 @@ rule HKTL_NET_GUID_SharpLocker {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/Pickfordmatt/SharpLocker"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2734,7 +2734,7 @@ rule HKTL_NET_GUID_SauronEye {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/vivami/SauronEye"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2748,7 +2748,7 @@ rule HKTL_NET_GUID_sitrep {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/mdsecactivebreach/sitrep"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2761,7 +2761,7 @@ rule HKTL_NET_GUID_SharpClipboard {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/slyd0g/SharpClipboard"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2774,7 +2774,7 @@ rule HKTL_NET_GUID_SharpCookieMonster {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/m0rv4i/SharpCookieMonster"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2787,7 +2787,7 @@ rule HKTL_NET_GUID_p0wnedShell {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/Cn33liz/p0wnedShell"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2800,7 +2800,7 @@ rule HKTL_NET_GUID_SharpMove {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/0xthirteen/SharpMove"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2813,7 +2813,7 @@ rule HKTL_NET_GUID_C_Sharp_R_A_T_Client {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/AdvancedHacker101/C-Sharp-R.A.T-Client"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2826,7 +2826,7 @@ rule HKTL_NET_GUID_SharpPrinter {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/rvrsh3ll/SharpPrinter"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2839,7 +2839,7 @@ rule HKTL_NET_GUID_EvilFOCA {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/ElevenPaths/EvilFOCA"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2852,7 +2852,7 @@ rule HKTL_NET_GUID_PoshC2_Misc {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/nettitude/PoshC2_Misc"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2866,7 +2866,7 @@ rule HKTL_NET_GUID_Sharpire {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/0xbadjuju/Sharpire"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2879,7 +2879,7 @@ rule HKTL_NET_GUID_Sharp_SMBExec {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/checkymander/Sharp-SMBExec"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2892,7 +2892,7 @@ rule HKTL_NET_GUID_MiscTools {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/rasta-mouse/MiscTools"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2909,7 +2909,7 @@ rule HKTL_NET_GUID_MemoryMapper {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/jasondrawdy/MemoryMapper"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2922,7 +2922,7 @@ rule HKTL_NET_GUID_VanillaRAT {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/DannyTheSloth/VanillaRAT"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2936,7 +2936,7 @@ rule HKTL_NET_GUID_UnmanagedPowerShell {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/leechristensen/UnmanagedPowerShell"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2949,7 +2949,7 @@ rule HKTL_NET_GUID_Quasar {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/quasar/Quasar"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2963,7 +2963,7 @@ rule HKTL_NET_GUID_SharpAdidnsdump {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/b4rtik/SharpAdidnsdump"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2976,7 +2976,7 @@ rule HKTL_NET_GUID_DotNetToJScript {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/tyranid/DotNetToJScript"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -2989,7 +2989,7 @@ rule HKTL_NET_GUID_Inferno {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/LimerBoy/Inferno"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -3002,7 +3002,7 @@ rule HKTL_NET_GUID_SharpSearch {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/djhohnstein/SharpSearch"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -3015,7 +3015,7 @@ rule HKTL_NET_GUID_SharpSecDump {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/G0ldenGunSec/SharpSecDump"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -3028,7 +3028,7 @@ rule HKTL_NET_GUID_Net_GPPPassword {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/outflanknl/Net-GPPPassword"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -3041,7 +3041,7 @@ rule HKTL_NET_GUID_FileSearcher {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/NVISO-BE/FileSearcher"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -3054,7 +3054,7 @@ rule HKTL_NET_GUID_ADFSDump {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/fireeye/ADFSDump"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -3067,7 +3067,7 @@ rule HKTL_NET_GUID_SharpRDP {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/0xthirteen/SharpRDP"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -3080,7 +3080,7 @@ rule HKTL_NET_GUID_SharpCall {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/jhalon/SharpCall"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -3093,7 +3093,7 @@ rule HKTL_NET_GUID_ysoserial_net {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/pwntester/ysoserial.net"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -3107,7 +3107,7 @@ rule HKTL_NET_GUID_ManagedInjection {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/malcomvetter/ManagedInjection"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -3122,7 +3122,7 @@ rule HKTL_NET_GUID_SharpSocks {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/nettitude/SharpSocks"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -3136,7 +3136,7 @@ rule HKTL_NET_GUID_Sharp_WMIExec {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/checkymander/Sharp-WMIExec"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -3149,7 +3149,7 @@ rule HKTL_NET_GUID_KeeThief {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/GhostPack/KeeThief"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -3167,7 +3167,7 @@ rule HKTL_NET_GUID_fakelogonscreen {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/bitsadmin/fakelogonscreen"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -3180,7 +3180,7 @@ rule HKTL_NET_GUID_PoshSecFramework {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/PoshSec/PoshSecFramework"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -3194,7 +3194,7 @@ rule HKTL_NET_GUID_SharpAttack {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/jaredhaight/SharpAttack"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -3207,7 +3207,7 @@ rule HKTL_NET_GUID_Altman {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/keepwn/Altman"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -3237,7 +3237,7 @@ rule HKTL_NET_GUID_BrowserPass {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/jabiel/BrowserPass"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-28"
     strings:
@@ -3250,7 +3250,7 @@ rule HKTL_NET_GUID_Mythic {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/its-a-feature/Mythic"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-29"
     strings:
@@ -3264,7 +3264,7 @@ rule HKTL_NET_GUID_Nuages {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/p3nt4/Nuages"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-29"
     strings:
@@ -3277,7 +3277,7 @@ rule HKTL_NET_GUID_SharpSniper {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/HunnicCyber/SharpSniper"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-29"
     strings:
@@ -3290,7 +3290,7 @@ rule HKTL_NET_GUID_SharpHound3 {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/BloodHoundAD/SharpHound3"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-29"
     strings:
@@ -3303,7 +3303,7 @@ rule HKTL_NET_GUID_BlockEtw {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/Soledge/BlockEtw"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-29"
     strings:
@@ -3316,7 +3316,7 @@ rule HKTL_NET_GUID_SharpWifiGrabber {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/r3nhat/SharpWifiGrabber"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-29"
     strings:
@@ -3329,7 +3329,7 @@ rule HKTL_NET_GUID_SharpMapExec {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/cube0x0/SharpMapExec"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-29"
     strings:
@@ -3342,7 +3342,7 @@ rule HKTL_NET_GUID_k8fly {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/zzwlpx/k8fly"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-29"
     strings:
@@ -3355,7 +3355,7 @@ rule HKTL_NET_GUID_Stealer {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/malwares/Stealer"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-29"
     strings:
@@ -3370,7 +3370,7 @@ rule HKTL_NET_GUID_PortTran {
     meta:
         description = "Detects c# red/black-team tools via typelibguid"
         reference = "https://github.com/k8gege/PortTran"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-29"
     strings:
@@ -3385,7 +3385,7 @@ rule HKTL_NET_GUID_gray_keylogger_2 {
     meta:
         description = "Detects VB.NET red/black-team tools via typelibguid"
         reference = "https://github.com/graysuit/gray-keylogger-2"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-30"
     strings:
@@ -3399,7 +3399,7 @@ rule HKTL_NET_GUID_Lime_Miner {
     meta:
         description = "Detects VB.NET red/black-team tools via typelibguid"
         reference = "https://github.com/NYAN-x-CAT/Lime-Miner"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-30"
     strings:
@@ -3412,7 +3412,7 @@ rule HKTL_NET_GUID_BlackNET {
     meta:
         description = "Detects VB.NET red/black-team tools via typelibguid"
         reference = "https://github.com/BlackHacker511/BlackNET"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-30"
     strings:
@@ -3428,7 +3428,7 @@ rule HKTL_NET_GUID_PlasmaRAT {
     meta:
         description = "Detects VB.NET red/black-team tools via typelibguid"
         reference = "https://github.com/mwsrc/PlasmaRAT"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-30"
     strings:
@@ -3442,7 +3442,7 @@ rule HKTL_NET_GUID_Lime_RAT {
     meta:
         description = "Detects VB.NET red/black-team tools via typelibguid"
         reference = "https://github.com/NYAN-x-CAT/Lime-RAT"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-30"
     strings:
@@ -3475,7 +3475,7 @@ rule HKTL_NET_GUID_njRAT {
     meta:
         description = "Detects VB.NET red/black-team tools via typelibguid"
         reference = "https://github.com/mwsrc/njRAT"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2020-12-30"
     strings:
@@ -3493,7 +3493,7 @@ rule HKTL_NET_GUID_Manager {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/TheWover/Manager"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-21"
     strings:
@@ -3507,7 +3507,7 @@ rule HKTL_NET_GUID_neo_ConfuserEx {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/XenocodeRCE/neo-ConfuserEx"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-21"
     strings:
@@ -3520,7 +3520,7 @@ rule HKTL_NET_GUID_SharpAllowedToAct {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/pkb1s/SharpAllowedToAct"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-21"
     strings:
@@ -3533,7 +3533,7 @@ rule HKTL_NET_GUID_SuperSQLInjectionV1 {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/shack2/SuperSQLInjectionV1"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-21"
     strings:
@@ -3546,7 +3546,7 @@ rule HKTL_NET_GUID_ADSearch {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/tomcarver16/ADSearch"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-21"
     strings:
@@ -3559,7 +3559,7 @@ rule HKTL_NET_GUID_privilege_escalation_awesome_scripts_suite {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-21"
     strings:
@@ -3572,7 +3572,7 @@ rule HKTL_NET_GUID_CVE_2020_1206_POC {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/ZecOps/CVE-2020-1206-POC"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-21"
     strings:
@@ -3587,7 +3587,7 @@ rule HKTL_NET_GUID_DInvoke {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/TheWover/DInvoke"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-21"
     strings:
@@ -3600,7 +3600,7 @@ rule HKTL_NET_GUID_SharpChisel {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/shantanu561993/SharpChisel"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-21"
     strings:
@@ -3613,7 +3613,7 @@ rule HKTL_NET_GUID_SharpScribbles {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/V1V1/SharpScribbles"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-21"
     strings:
@@ -3627,7 +3627,7 @@ rule HKTL_NET_GUID_SharpReg {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/jnqpblc/SharpReg"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-21"
     strings:
@@ -3640,7 +3640,7 @@ rule HKTL_NET_GUID_MemeVM {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/TobitoFatitoRE/MemeVM"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-21"
     strings:
@@ -3655,7 +3655,7 @@ rule HKTL_NET_GUID_SharpDir {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/jnqpblc/SharpDir"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-21"
     strings:
@@ -3668,7 +3668,7 @@ rule HKTL_NET_GUID_AtYourService {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/mitchmoser/AtYourService"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-21"
     strings:
@@ -3681,7 +3681,7 @@ rule HKTL_NET_GUID_LockLess {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/GhostPack/LockLess"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-21"
     strings:
@@ -3694,7 +3694,7 @@ rule HKTL_NET_GUID_EasyNet {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/TheWover/EasyNet"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-21"
     strings:
@@ -3709,7 +3709,7 @@ rule HKTL_NET_GUID_SharpByeBear {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/S3cur3Th1sSh1t/SharpByeBear"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-21"
     strings:
@@ -3723,7 +3723,7 @@ rule HKTL_NET_GUID_SharpHide {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/outflanknl/SharpHide"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-21"
     strings:
@@ -3736,7 +3736,7 @@ rule HKTL_NET_GUID_SharpSvc {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/jnqpblc/SharpSvc"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-21"
     strings:
@@ -3749,7 +3749,7 @@ rule HKTL_NET_GUID_SharpCrashEventLog {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/slyd0g/SharpCrashEventLog"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-21"
     strings:
@@ -3762,7 +3762,7 @@ rule HKTL_NET_GUID_DotNetToJScript_LanguageModeBreakout {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/FuzzySecurity/DotNetToJScript-LanguageModeBreakout"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-21"
     strings:
@@ -3775,7 +3775,7 @@ rule HKTL_NET_GUID_SharPermission {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/mitchmoser/SharPermission"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-21"
     strings:
@@ -3788,7 +3788,7 @@ rule HKTL_NET_GUID_RegistryStrikesBack {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/mdsecactivebreach/RegistryStrikesBack"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-21"
     strings:
@@ -3801,7 +3801,7 @@ rule HKTL_NET_GUID_CloneVault {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/mdsecactivebreach/CloneVault"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-21"
     strings:
@@ -3814,7 +3814,7 @@ rule HKTL_NET_GUID_donut {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/TheWover/donut"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-21"
     strings:
@@ -3830,7 +3830,7 @@ rule HKTL_NET_GUID_SharpHandler {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/jfmaes/SharpHandler"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-21"
     strings:
@@ -3844,7 +3844,7 @@ rule HKTL_NET_GUID_Driver_Template {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/FuzzySecurity/Driver-Template"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-21"
     strings:
@@ -3857,7 +3857,7 @@ rule HKTL_NET_GUID_NashaVM {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/Mrakovic-ORG/NashaVM"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-21"
     strings:

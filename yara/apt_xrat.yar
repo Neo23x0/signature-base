@@ -12,7 +12,7 @@
 rule xRAT_1 {
    meta:
       description = "Detects Patchwork malware"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/Pg3P4W"
       date = "2017-12-11"

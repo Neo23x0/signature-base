@@ -2,7 +2,7 @@
 rule EXP_DriveCrypt_1 {
    meta:
       description = "Detects DriveCrypt exploit"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2018-08-21"
@@ -18,7 +18,7 @@ rule EXP_DriveCrypt_1 {
 rule EXP_DriveCrypt_x64passldr {
    meta:
       description = "Detects DriveCrypt exploit"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2018-08-21"

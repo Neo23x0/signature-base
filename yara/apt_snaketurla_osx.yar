@@ -11,7 +11,7 @@
 rule SnakeTurla_Malware_May17_1 {
    meta:
       description = "Detects Snake / Turla Sample"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/QaOh4V"
       date = "2017-05-04"
@@ -25,7 +25,7 @@ rule SnakeTurla_Malware_May17_1 {
 rule SnakeTurla_Malware_May17_2 {
    meta:
       description = "Detects Snake / Turla Sample"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/QaOh4V"
       date = "2017-05-04"
@@ -41,7 +41,7 @@ rule SnakeTurla_Malware_May17_2 {
 rule SnakeTurla_Malware_May17_4 {
    meta:
       description = "Detects Snake / Turla Sample"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/QaOh4V"
       date = "2017-05-04"
@@ -55,7 +55,7 @@ rule SnakeTurla_Malware_May17_4 {
 rule SnakeTurla_Installd_SH {
    meta:
       description = "Detects Snake / Turla Sample"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/QaOh4V"
       date = "2017-05-04"
@@ -69,7 +69,7 @@ rule SnakeTurla_Installd_SH {
 rule SnakeTurla_Install_SH {
    meta:
       description = "Detects Snake / Turla Sample"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/QaOh4V"
       date = "2017-05-04"

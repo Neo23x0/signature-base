@@ -52,7 +52,7 @@ rule ReflectiveLoader {
 rule Reflective_DLL_Loader_Aug17_1 {
    meta:
       description = "Detects Reflective DLL Loader"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-08-20"
@@ -76,7 +76,7 @@ rule Reflective_DLL_Loader_Aug17_1 {
 rule DLL_Injector_Lynx {
    meta:
       description = "Detects Lynx DLL Injector"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-08-20"
@@ -99,7 +99,7 @@ rule DLL_Injector_Lynx {
 rule Reflective_DLL_Loader_Aug17_2 {
    meta:
       description = "Detects Reflective DLL Loader - suspicious - Possible FP could be program crack"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-08-20"
@@ -126,7 +126,7 @@ rule Reflective_DLL_Loader_Aug17_2 {
 rule Reflective_DLL_Loader_Aug17_3 {
    meta:
       description = "Detects Reflective DLL Loader"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-08-20"
@@ -150,7 +150,7 @@ rule Reflective_DLL_Loader_Aug17_3 {
 rule Reflective_DLL_Loader_Aug17_4 {
    meta:
       description = "Detects Reflective DLL Loader"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-08-20"

@@ -1,7 +1,7 @@
 rule WinDivert_Driver {
    meta:
       description = "Detects WinDivert User-Mode packet capturing driver"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.reqrypt.org/windivert.html"
       date = "2017-10-02"

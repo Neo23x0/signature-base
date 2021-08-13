@@ -13,7 +13,7 @@ import "pe"
 rule APT_TA18_149A_Joanap_Sample1 {
    meta:
       description = "Detects malware from TA18-149A report by US-CERT"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.us-cert.gov/ncas/alerts/TA18-149A"
       date = "2018-05-30"
@@ -35,7 +35,7 @@ rule APT_TA18_149A_Joanap_Sample1 {
 rule APT_TA18_149A_Joanap_Sample2 {
    meta:
       description = "Detects malware from TA18-149A report by US-CERT"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.us-cert.gov/ncas/alerts/TA18-149A"
       date = "2018-05-30"
@@ -55,7 +55,7 @@ rule APT_TA18_149A_Joanap_Sample2 {
 rule APT_TA18_149A_Joanap_Sample3 {
    meta:
       description = "Detects malware from TA18-149A report by US-CERT"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.us-cert.gov/ncas/alerts/TA18-149A"
       date = "2018-05-30"

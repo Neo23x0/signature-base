@@ -4,7 +4,6 @@ rule MAL_ME_RawDisk_Agent_Jan20_1 {
       description = "Detects suspicious malware using ElRawDisk"
       author = "Florian Roth"
       reference = "Saudi National Cybersecurity Authority - Destructive Attack DUSTMAN"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       date = "2020-01-02"
       hash1 = "44100c73c6e2529c591a10cd3668691d92dc0241152ec82a72c6e63da299d3a2"
    strings:
@@ -27,7 +26,6 @@ rule MAL_ME_RawDisk_Agent_Jan20_2 {
       description = "Detects suspicious malware using ElRawDisk"
       author = "Florian Roth"
       reference = "https://twitter.com/jfslowik/status/1212501454549741568?s=09"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
       date = "2020-01-02"
       hash1 = "44100c73c6e2529c591a10cd3668691d92dc0241152ec82a72c6e63da299d3a2"
    strings:

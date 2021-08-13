@@ -302,7 +302,7 @@ rule OPCLEAVER_Parviz_Developer
 		description = "Parviz developer known from Operation Cleaver"
 		reference = "http://cylance.com/assets/Cleaver/Cylance_Operation_Cleaver_Report.pdf"
 		date = "2014/12/02"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		score = 70
 	strings:
@@ -317,7 +317,7 @@ rule OPCLEAVER_CCProxy_Config
 		description = "CCProxy config known from Operation Cleaver"
 		reference = "http://cylance.com/assets/Cleaver/Cylance_Operation_Cleaver_Report.pdf"
 		date = "2014/12/02"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		score = 70
 	strings:

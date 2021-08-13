@@ -10,7 +10,7 @@
 rule PlugX_J16_Gen {
 	meta:
 		description = "Detects PlugX Malware samples from June 2016"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "VT Research"
 		date = "2016-06-08"
@@ -41,7 +41,7 @@ rule PlugX_J16_Gen {
 rule PlugX_J16_Gen2 {
 	meta:
 		description = "Detects PlugX Malware Samples from June 2016"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "VT Research"
 		date = "2016-06-08"

@@ -13,7 +13,7 @@ import "pe"
 rule Microcin_Sample_1 {
    meta:
       description = "Malware sample mentioned in Microcin technical report by Kaspersky"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://securelist.com/files/2017/09/Microcin_Technical-PDF_eng_final.pdf"
       date = "2017-09-26"
@@ -37,7 +37,7 @@ rule Microcin_Sample_1 {
 rule Microcin_Sample_2 {
    meta:
       description = "Malware sample mentioned in Microcin technical report by Kaspersky"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://securelist.com/files/2017/09/Microcin_Technical-PDF_eng_final.pdf"
       date = "2017-09-26"
@@ -52,7 +52,7 @@ rule Microcin_Sample_2 {
 rule Microcin_Sample_3 {
    meta:
       description = "Malware sample mentioned in Microcin technical report by Kaspersky"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://securelist.com/files/2017/09/Microcin_Technical-PDF_eng_final.pdf"
       date = "2017-09-26"
@@ -67,7 +67,7 @@ rule Microcin_Sample_3 {
 rule Microcin_Sample_4 {
    meta:
       description = "Malware sample mentioned in Microcin technical report by Kaspersky"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://securelist.com/files/2017/09/Microcin_Technical-PDF_eng_final.pdf"
       date = "2017-09-26"
@@ -88,7 +88,7 @@ rule Microcin_Sample_4 {
 rule Microcin_Sample_5 {
    meta:
       description = "Malware sample mentioned in Microcin technical report by Kaspersky"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://securelist.com/files/2017/09/Microcin_Technical-PDF_eng_final.pdf"
       date = "2017-09-26"
@@ -107,7 +107,7 @@ rule Microcin_Sample_5 {
 rule Microcin_Sample_6 {
    meta:
       description = "Malware sample mentioned in Microcin technical report by Kaspersky"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://securelist.com/files/2017/09/Microcin_Technical-PDF_eng_final.pdf"
       date = "2017-09-26"

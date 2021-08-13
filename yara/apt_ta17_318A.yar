@@ -49,7 +49,7 @@ import "pe"
 rule HiddenCobra_FallChill_1 {
    meta:
       description = "Auto-generated rule"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-318A"
       date = "2017-11-15"
@@ -76,7 +76,7 @@ rule HiddenCobra_FallChill_1 {
 rule HiddenCobra_FallChill_2 {
    meta:
       description = "Auto-generated rule"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-318A"
       date = "2017-11-15"

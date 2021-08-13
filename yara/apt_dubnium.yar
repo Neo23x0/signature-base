@@ -10,7 +10,7 @@
 rule Dubnium_Sample_1 {
 	meta:
 		description = "Detects sample mentioned in the Dubnium Report"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://goo.gl/AW9Cuu"
 		date = "2016-06-10"
@@ -25,7 +25,7 @@ rule Dubnium_Sample_1 {
 rule Dubnium_Sample_2 {
 	meta:
 		description = "Detects sample mentioned in the Dubnium Report"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://goo.gl/AW9Cuu"
 		date = "2016-06-10"
@@ -40,7 +40,7 @@ rule Dubnium_Sample_2 {
 rule Dubnium_Sample_3 {
 	meta:
 		description = "Detects sample mentioned in the Dubnium Report"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://goo.gl/AW9Cuu"
 		date = "2016-06-10"
@@ -61,7 +61,7 @@ rule Dubnium_Sample_3 {
 rule Dubnium_Sample_5 {
 	meta:
 		description = "Detects sample mentioned in the Dubnium Report"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://goo.gl/AW9Cuu"
 		date = "2016-06-10"
@@ -85,7 +85,7 @@ rule Dubnium_Sample_5 {
 rule Dubnium_Sample_6 {
 	meta:
 		description = "Detects sample mentioned in the Dubnium Report"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://goo.gl/AW9Cuu"
 		date = "2016-06-10"
@@ -104,7 +104,7 @@ rule Dubnium_Sample_6 {
 rule Dubnium_Sample_7 {
 	meta:
 		description = "Detects sample mentioned in the Dubnium Report"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://goo.gl/AW9Cuu"
 		date = "2016-06-10"
@@ -127,7 +127,7 @@ rule Dubnium_Sample_7 {
 rule Dubnium_Sample_SSHOpenSSL {
 	meta:
 		description = "Detects sample mentioned in the Dubnium Report"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://goo.gl/AW9Cuu"
 		date = "2016-06-10"

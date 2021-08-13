@@ -11,7 +11,7 @@
 rule LokiBot_Dropper_ScanCopyPDF_Feb18 {
    meta:
       description = "Auto-generated rule - file Scan Copy.pdf.com"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://app.any.run/tasks/401df4d9-098b-4fd0-86e0-7a52ce6ddbf5"
       date = "2018-02-14"
@@ -32,7 +32,7 @@ rule LokiBot_Dropper_ScanCopyPDF_Feb18 {
 rule LokiBot_Dropper_Packed_R11_Feb18 {
    meta:
       description = "Auto-generated rule - file scan copy.pdf.r11"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://app.any.run/tasks/401df4d9-098b-4fd0-86e0-7a52ce6ddbf5"
       date = "2018-02-14"

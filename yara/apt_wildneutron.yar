@@ -10,7 +10,7 @@
 rule WildNeutron_Sample_1 {
 	meta:
 		description = "Wild Neutron APT Sample Rule"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://securelist.com/blog/research/71275/wild-neutron-economic-espionage-threat-actor-returns-with-new-tricks/"
 		date = "2015-07-10"
@@ -35,7 +35,7 @@ rule WildNeutron_Sample_1 {
 rule WildNeutron_Sample_2 {
 	meta:
 		description = "Wild Neutron APT Sample Rule"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://securelist.com/blog/research/71275/wild-neutron-economic-espionage-threat-actor-returns-with-new-tricks/"
 		date = "2015-07-10"
@@ -57,7 +57,7 @@ rule WildNeutron_Sample_2 {
 rule WildNeutron_Sample_3 {
 	meta:
 		description = "Wild Neutron APT Sample Rule"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://securelist.com/blog/research/71275/wild-neutron-economic-espionage-threat-actor-returns-with-new-tricks/"
 		date = "2015-07-10"
@@ -82,7 +82,7 @@ rule WildNeutron_Sample_3 {
 rule WildNeutron_Sample_4 {
 	meta:
 		description = "Wild Neutron APT Sample Rule"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://securelist.com/blog/research/71275/wild-neutron-economic-espionage-threat-actor-returns-with-new-tricks/"
 		date = "2015-07-10"
@@ -106,7 +106,7 @@ rule WildNeutron_Sample_4 {
 rule WildNeutron_Sample_5 {
 	meta:
 		description = "Wild Neutron APT Sample Rule"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://securelist.com/blog/research/71275/wild-neutron-economic-espionage-threat-actor-returns-with-new-tricks/"
 		date = "2015-07-10"
@@ -130,7 +130,7 @@ rule WildNeutron_Sample_5 {
 rule WildNeutron_Sample_6 {
 	meta:
 		description = "Wild Neutron APT Sample Rule"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://securelist.com/blog/research/71275/wild-neutron-economic-espionage-threat-actor-returns-with-new-tricks/"
 		date = "2015-07-10"
@@ -145,7 +145,7 @@ rule WildNeutron_Sample_6 {
 rule WildNeutron_Sample_7 {
 	meta:
 		description = "Wild Neutron APT Sample Rule"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://securelist.com/blog/research/71275/wild-neutron-economic-espionage-threat-actor-returns-with-new-tricks/"
 		date = "2015-07-10"
@@ -171,7 +171,7 @@ rule WildNeutron_Sample_7 {
 rule subTee_nativecmd {
 	meta:
 		description = "NativeCmd - used by various threat groups"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://securelist.com/blog/research/71275/wild-neutron-economic-espionage-threat-actor-returns-with-new-tricks/"
 		date = "2015-07-10"
@@ -205,7 +205,7 @@ rule subTee_nativecmd {
 rule WildNeutron_Sample_9 {
 	meta:
 		description = "Wild Neutron APT Sample Rule"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://securelist.com/blog/research/71275/wild-neutron-economic-espionage-threat-actor-returns-with-new-tricks/"
 		date = "2015-07-10"
@@ -226,7 +226,7 @@ rule WildNeutron_Sample_9 {
 rule WildNeutron_Sample_10 {
 	meta:
 		description = "Wild Neutron APT Sample Rule"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://securelist.com/blog/research/71275/wild-neutron-economic-espionage-threat-actor-returns-with-new-tricks/"
 		date = "2015-07-10"
@@ -271,7 +271,7 @@ rule WildNeutron_Sample_10 {
 rule WildNeutron_javacpl {
 	meta:
 		description = "Wild Neutron APT Sample Rule"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://securelist.com/blog/research/71275/wild-neutron-economic-espionage-threat-actor-returns-with-new-tricks/"
 		date = "2015-07-10"

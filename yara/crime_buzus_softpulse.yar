@@ -2,7 +2,7 @@
 rule Win32_Buzus_Softpulse {
 	meta:
 		description = "Trojan Buzus / Softpulse"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		date = "2015-05-13"
 		hash = "2f6df200e63a86768471399a74180466d2e99ea9"

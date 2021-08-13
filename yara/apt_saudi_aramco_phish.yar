@@ -10,7 +10,7 @@
 rule Saudi_Phish_Trojan {
    meta:
       description = "Detects a trojan used in Saudi Aramco Phishing"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/Z3JUAA"
       date = "2017-10-12"

@@ -10,7 +10,7 @@
 rule Invoke_Mimikatz {
 	meta:
 		description = "Detects Invoke-Mimikatz String"
-		license = "https://creativecommons.org/licenses/by-nc/4.0/"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "https://github.com/clymb3r/PowerShell/tree/master/Invoke-Mimikatz"
 		date = "2016-08-03"

@@ -14,7 +14,7 @@ import "pe"
 rule Monsoon_APT_Malware_1 {
    meta:
       description = "Detects malware from Monsoon APT"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "http://blog.fortinet.com/2017/04/05/in-depth-look-at-new-variant-of-monsoon-apt-backdoor-part-2"
       date = "2017-09-08"
@@ -36,7 +36,7 @@ rule Monsoon_APT_Malware_1 {
 rule Monsoon_APT_Malware_2 {
    meta:
       description = "Detects malware from Monsoon APT"
-      license = "Detection Rule License 1.1"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "http://blog.fortinet.com/2017/04/05/in-depth-look-at-new-variant-of-monsoon-apt-backdoor-part-2"
       date = "2017-09-08"
