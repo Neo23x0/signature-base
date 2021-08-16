@@ -8,7 +8,7 @@ rule EXPL_Exchange_ProxyShell_Failed_Aug21_1 : SCRIPT {
       date = "2021-08-08"
       modified = "2021-08-09"
    strings:
-      $xr1 = / \/autodiscover\/autodiscover\.json[^\n]{1,300}\/(powershell|mapi\/nspi|EWS\/|X-RpsCAT)[^\n]{1,400}401 0 0/ nocase ascii
+      $xr1 = / \/autodiscover\/autodiscover\.json[^\n]{1,300}\/(powershell|mapi\/nspi|EWS\/|X-Rps-CAT)[^\n]{1,400}401 0 0/ nocase ascii
       $xr3 = /Email=autodiscover\/autodiscover\.json[^\n]{1,400}401 0 0/ nocase ascii
    condition:
       1 of them
@@ -23,7 +23,7 @@ rule EXPL_Exchange_ProxyShell_Successful_Aug21_1 : SCRIPT {
       date = "2021-08-08"
       modified = "2021-08-09"
    strings:
-      $xr1a = / \/autodiscover\/autodiscover\.json[^\n]{1,300}\/(powershell|X-RpsCAT)/ nocase ascii
+      $xr1a = / \/autodiscover\/autodiscover\.json[^\n]{1,300}\/(powershell|X-Rps-CAT)/ nocase ascii
       $xr1b = / \/autodiscover\/autodiscover\.json[^\n]{1,300}\/(mapi\/nspi|EWS\/)[^\n]{1,400}(200|302) 0 0/ 
       $xr2 = /autodiscover\/autodiscover\.json[^\n]{1,60}&X-Rps-CAT=/ nocase ascii
       $xr3 = /Email=autodiscover\/autodiscover\.json[^\n]{1,400}200 0 0/ nocase ascii
