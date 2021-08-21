@@ -3700,4 +3700,15 @@ C:\\ProgramData\\MSDN\\6\.0\\NTUSER\.DAT;80
 \\AppData\\Perflog\\Schedule\.vbs;90
 \\AppData\\Perflog\\Logs\.txt;90
 
+# ProxyShell Exploitation https://www.huntress.com/blog/rapid-response-microsoft-exchange-servers-still-vulnerable-to-proxyshell-exploit#what-should-you-do
+\\FrontEnd\\HttpProxy\\owa\\auth\\HWTJQDMFVMPOON\.aspx;90
+\\FrontEnd\\HttpProxy\\owa\\auth\\d62ffcd688\.aspx;90
+\\FrontEnd\\HttpProxy\\owa\\auth\\415cc41ac1\.aspx;90
+\\FrontEnd\\HttpProxy\\owa\\auth\\6514f55e1a\.aspx;90
+\\FrontEnd\\HttpProxy\\owa\\auth\\VOLWMFQWPP\.aspx;90
+\\inetpub\\wwwroot\\aspnet_client\\system_web\\[^\\]{1,20}\.aspx;80
+\\FrontEnd\\HttpProxy\\owa\\auth\\Current\\themes\\resources\\[^\\]{1,20}\.aspx;80
+\\FrontEnd\\HttpProxy\\owa\\auth\\Current\\themes\\[^\\]{1,20}\.aspx;70
+\\FrontEnd\\HttpProxy\\owa\\auth\\Current\\[^\\]{1,20}\.aspx;70
+
 # End
