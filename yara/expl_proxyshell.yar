@@ -44,3 +44,49 @@ rule WEBSHELL_ASPX_ProxyShell_Aug21_2 {
       and filesize < 350KB
       and $s1
 }
+
+rule WEBSHELL_ASPX_ProxyShell_Aug21_3 {
+   meta:
+      description = "Detects webshells dropped by ProxyShell exploitation based on their file header (must be DER), size and content"
+      author = "Max Altgelt"
+      reference = "https://twitter.com/gossithedog/status/1429175908905127938?s=12"
+      date = "2021-08-23"
+      score = 75
+   strings:
+      $s1 = "Page Language=" ascii nocase
+   condition:
+      uint16(0) == 0x8230 /* DER start */
+      and filesize < 10KB
+      and $s1
+}
+
+rule SUSP_ASPX_PossibleDropperArtifact_Aug21 {
+   meta:
+      description = "Detects an ASPX file with a non-ASCII header, often a result of MS Exchange drop techniques"
+      reference = "Internal Research"
+      author = "Max Altgelt"
+      date = "2021-08-23"
+      score = 60
+   strings:
+      $s1 = "Page Language=" ascii nocase
+
+      $fp1 = "Page Language=\"java\"" ascii nocase
+   condition:
+      filesize < 500KB
+      and not uint16(0) == 0x4B50 and not uint16(0) == 0x6152 and not uint16(0) == 0x8b1f // Exclude ZIP / RAR / GZIP files (can cause FPs when uncompressed)
+      and not uint16(0) == 0x5A4D // PE
+      and not uint16(0) == 0xCFD0 // OLE
+      and not uint16(0) == 0xC3D4 // PCAP
+      and not uint16(0) == 0x534D // CAB
+      and all of ($s*) and not 1 of ($fp*) and
+      (
+         ((uint8(0) < 0x20 or uint8(0) > 0x7E /*non-ASCII*/ ) and uint8(0) != 0x9 /* tab */ and uint8(0) != 0x0D /* carriage return */ and uint8(0) != 0x0A /* new line */ and uint8(0) != 0xEF /* BOM UTF-8 */)
+         or ((uint8(1) < 0x20 or uint8(1) > 0x7E /*non-ASCII*/ ) and uint8(1) != 0x9 /* tab */ and uint8(1) != 0x0D /* carriage return */ and uint8(1) != 0x0A /* new line */ and uint8(1) != 0xBB /* BOM UTF-8 */)
+         or ((uint8(2) < 0x20 or uint8(2) > 0x7E /*non-ASCII*/ ) and uint8(2) != 0x9 /* tab */ and uint8(2) != 0x0D /* carriage return */ and uint8(2) != 0x0A /* new line */ and uint8(2) != 0xBF /* BOM UTF-8 */)
+         or ((uint8(3) < 0x20 or uint8(3) > 0x7E /*non-ASCII*/ ) and uint8(3) != 0x9 /* tab */ and uint8(3) != 0x0D /* carriage return */ and uint8(3) != 0x0A /* new line */)
+         or ((uint8(4) < 0x20 or uint8(4) > 0x7E /*non-ASCII*/ ) and uint8(4) != 0x9 /* tab */ and uint8(4) != 0x0D /* carriage return */ and uint8(4) != 0x0A /* new line */)
+         or ((uint8(5) < 0x20 or uint8(5) > 0x7E /*non-ASCII*/ ) and uint8(5) != 0x9 /* tab */ and uint8(5) != 0x0D /* carriage return */ and uint8(5) != 0x0A /* new line */)
+         or ((uint8(6) < 0x20 or uint8(6) > 0x7E /*non-ASCII*/ ) and uint8(6) != 0x9 /* tab */ and uint8(6) != 0x0D /* carriage return */ and uint8(6) != 0x0A /* new line */)
+         or ((uint8(7) < 0x20 or uint8(7) > 0x7E /*non-ASCII*/ ) and uint8(7) != 0x9 /* tab */ and uint8(7) != 0x0D /* carriage return */ and uint8(7) != 0x0A /* new line */)
+      )
+}
