@@ -3711,4 +3711,7 @@ C:\\ProgramData\\MSDN\\6\.0\\NTUSER\.DAT;80
 \\FrontEnd\\HttpProxy\\owa\\auth\\Current\\themes\\[^\\]{1,20}\.aspx;70
 \\FrontEnd\\HttpProxy\\owa\\auth\\Current\\[^\\]{1,20}\.aspx;70
 
+# ProxyShell exploitation IOCs https://twitter.com/DaveKleinatland/status/1429690829166235648/photo/1
+C:\\ProgramData\\COM1\\[^\.]{1,40}\.aspx;90
+
 # End
