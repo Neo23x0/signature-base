@@ -4,7 +4,7 @@
    Date: 2018-10-21
    Identifier: Grey Energy
    Reference: https://www.welivesecurity.com/2018/10/17/greyenergy-updated-arsenal-dangerous-threat-actors/
-   License: Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+   License: Detetction Rule License 1.1 (https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md)
 */
 
 import "pe"
