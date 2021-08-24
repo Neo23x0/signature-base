@@ -6,7 +6,6 @@
    Nextron Systems GmbH
 
 	License: Detetction Rule License 1.1 (https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md)
-	Copyright and related rights waived via https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 */
 rule Embedded_EXE_Cloaking {
