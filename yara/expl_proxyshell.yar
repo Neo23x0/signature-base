@@ -60,6 +60,66 @@ rule WEBSHELL_ASPX_ProxyShell_Aug21_3 {
       and $s1
 }
 
+rule APT_IIS_Config_ProxyShell_Artifacts {
+   meta:
+      description = "Detects virtual directory configured in IIS pointing to a ProgramData folder (as found in attacks against Exchange servers in August 2021)"
+      author = "Florian Roth"
+      reference = "https://www.huntress.com/blog/rapid-response-microsoft-exchange-servers-still-vulnerable-to-proxyshell-exploit"
+      date = "2021-08-25"
+      score = 90
+   strings:
+      $a1 = "<site name=" ascii /* marker used to select IIS configs */
+      $a2 = "<sectionGroup name=\"system.webServer\">" ascii
+
+      $sa1 = " physicalPath=\"C:\\ProgramData\\COM" ascii
+      $sa2 = " physicalPath=\"C:\\ProgramData\\WHO" ascii
+      $sa3 = " physicalPath=\"C:\\ProgramData\\ZING" ascii
+      $sa4 = " physicalPath=\"C:\\ProgramData\\ZOO" ascii
+      $sa5 = " physicalPath=\"C:\\ProgramData\\XYZ" ascii
+      $sa6 = " physicalPath=\"C:\\ProgramData\\AUX" ascii
+      $sa7 = " physicalPath=\"C:\\ProgramData\\CON\\" ascii
+
+      $sb1 = " physicalPath=\"C:\\Users\\All Users\\" ascii
+   condition:
+      filesize < 500KB and all of ($a*) and 1 of ($s*)
+}
+
+/* 
+   Hunting Rules 
+*/
+
+rule SUSP_IIS_Config_ProxyShell_Artifacts {
+   meta:
+      description = "Detects suspicious virtual directory configured in IIS pointing to a ProgramData folder (as found in attacks against Exchange servers in August 2021)"
+      author = "Florian Roth"
+      reference = "https://www.huntress.com/blog/rapid-response-microsoft-exchange-servers-still-vulnerable-to-proxyshell-exploit"
+      date = "2021-08-25"
+      score = 70
+   strings:
+      $a1 = "<site name=" ascii /* marker used to select IIS configs */
+      $a2 = "<sectionGroup name=\"system.webServer\">" ascii
+
+      $s1 = " physicalPath=\"C:\\ProgramData\\" ascii
+   condition:
+      filesize < 500KB and all of ($a*) and 1 of ($s*)
+}
+
+rule SUSP_IIS_Config_VirtualDir {
+   meta:
+      description = "Detects suspicious virtual directory configured in IIS pointing to a User folder"
+      author = "Florian Roth"
+      reference = "https://www.huntress.com/blog/rapid-response-microsoft-exchange-servers-still-vulnerable-to-proxyshell-exploit"
+      date = "2021-08-25"
+      score = 60
+   strings:
+      $a1 = "<site name=" ascii /* marker used to select IIS configs */
+      $a2 = "<sectionGroup name=\"system.webServer\">" ascii
+
+      $s2 = " physicalPath=\"C:\\Users\\" ascii
+   condition:
+      filesize < 500KB and all of ($a*) and 1 of ($s*)
+}
+
 rule SUSP_ASPX_PossibleDropperArtifact_Aug21 {
    meta:
       description = "Detects an ASPX file with a non-ASCII header, often a result of MS Exchange drop techniques"
