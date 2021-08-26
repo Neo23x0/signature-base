@@ -3711,7 +3711,19 @@ C:\\ProgramData\\MSDN\\6\.0\\NTUSER\.DAT;80
 \\FrontEnd\\HttpProxy\\owa\\auth\\Current\\themes\\[^\\]{1,20}\.aspx;70
 \\FrontEnd\\HttpProxy\\owa\\auth\\Current\\[^\\]{1,20}\.aspx;70
 
-# ProxyShell exploitation IOCs https://twitter.com/DaveKleinatland/status/1429690829166235648/photo/1
+# Exchange exploitation IOCs https://twitter.com/_JohnHammond/status/1430535961239113733
 C:\\ProgramData\\COM1\\[^\.]{1,40}\.aspx;90
+C:\\ProgramData\\CON\\[^\.]{1,40}\.aspx;90
+C:\\ProgramData\\AUX\\[^\.]{1,40}\.aspx;90
+C:\\ProgramData\\AUX\\[^\.]{1,40}\.aspx;90
+
+# Exchange exploitation IOCs https://www.huntress.com/blog/rapid-response-microsoft-exchange-servers-still-vulnerable-to-proxyshell-exploit
+C:\\Users\\All Users\\COM\\;75
+C:\\Users\\All Users\\COM1\\;75
+C:\\Users\\All Users\\CON\\;75
+C:\\Users\\All Users\\WHO\\;75
+C:\\Users\\All Users\\XYZ\\;75
+C:\\Users\\All Users\\ZOO\\;75
+C:\\Users\\All Users\\ZING\\;75
 
 # End
