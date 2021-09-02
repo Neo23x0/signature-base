@@ -75,7 +75,7 @@ rule APT_MAL_Win_DecRok : InkySquid
         $funcformat = { 43 72 65 61 74 65 54 68 72 65 61 64 [0-10] 25 30 32 78 }
 
     condition:
-        all of them and $funcformat
+        all of them
 }
 
 rule APT_MAL_Win_RokLoad_Loader : InkySquid
