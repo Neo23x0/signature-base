@@ -3726,4 +3726,7 @@ C:\\Users\\All Users\\XYZ\\;75
 C:\\Users\\All Users\\ZOO\\;75
 C:\\Users\\All Users\\ZING\\;75
 
+# Possible attempt to exploit privilege escalation weakness https://medium.com/@SumitVerma101/windows-privilege-escalation-part-1-unquoted-service-path-c7a011a8d8ae
+C:\\Program\.exe;65
+
 # End
