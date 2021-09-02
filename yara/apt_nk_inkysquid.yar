@@ -72,7 +72,7 @@ rule APT_MAL_Win_DecRok : InkySquid
         $av2 = "root\\SecurityCenter2" wide
 
       /* CreateThread..%02x */
-        $funcformat = { 43 72 65 61 74 65 54 68 72 65 61 64 [0-10] 25 30 32 78 }
+        $funcformat = { 25 30 32 78 [0-10] 43 72 65 61 74 65 54 68 72 65 61 64 }
 
     condition:
         all of them
