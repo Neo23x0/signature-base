@@ -355,3 +355,16 @@ rule SUSP_ServU_Known_Mal_IP_Jul21_1 {
       filename == "DebugSocketlog.txt"
       and 1 of them
 }
+
+rule SUSP_EXPL_Confluence_RCE_CVE_2021_26084_Indicators_Sep21 {
+   meta:
+      description = "Detects ELF binaries owner by the confluence user but outside usual confluence directories"
+      author = "Florian Roth"
+      reference = "https://attackerkb.com/topics/Eu74wdMbEL/cve-2021-26084-confluence-server-ognl-injection/rapid7-analysis"
+      date = "2021-09-01"
+      score = 55
+   condition:
+      uint32be(0) == 0x7f454c46 /* ELF binary */
+      and owner == "confluence"
+      and not filepath contains "/confluence/"
+}
