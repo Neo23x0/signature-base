@@ -3729,4 +3729,8 @@ C:\\Users\\All Users\\ZING\\;75
 # Possible attempt to exploit privilege escalation weakness https://medium.com/@SumitVerma101/windows-privilege-escalation-part-1-unquoted-service-path-c7a011a8d8ae
 C:\\Program\.exe;65
 
+# Suspicious contents in Users/Public folder 
+\\Users\\Public\\[^\\]{1,20}\.(dll|vbs|ps1|bat);70
+\\Users\\Public\\[^\\]{1,20}\.exe;55
+
 # End
