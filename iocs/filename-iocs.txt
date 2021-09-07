@@ -3731,6 +3731,6 @@ C:\\Program\.exe;65
 
 # Suspicious contents in Users/Public folder 
 \\Users\\Public\\[^\\]{1,20}\.(dll|vbs|ps1|bat);70
-\\Users\\Public\\[^\\]{1,20}\.exe;55
+\\Users\\Public\\[^\\]{1,20}\.exe;65
 
 # End
