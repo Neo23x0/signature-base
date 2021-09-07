@@ -153,7 +153,7 @@ rule HKTL_NET_NAME_DotNetInject {
         $name = "DotNetInject" ascii wide
         $compile = "AssemblyTitle" ascii wide
     condition:
-        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and all of them
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and filesize < 20MB and all of them
 }
 
 rule HKTL_NET_NAME_ATPMiniDump {

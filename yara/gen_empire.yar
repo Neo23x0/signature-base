@@ -211,17 +211,18 @@ rule Empire_Invoke_EgressCheck {
 rule Empire_ReflectivePick_x64_orig {
    meta:
       description = "Detects Empire component - file ReflectivePick_x64_orig.dll"
-      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
+      modified = "2021-09-06"
       hash1 = "a8c1b108a67e7fc09f81bd160c3bafb526caf3dbbaf008efb9a96f4151756ff2"
    strings:
-      $s1 = "\\PowerShellRunner.pdb" fullword ascii
-      $s2 = "PowerShellRunner.dll" fullword wide
-      $s3 = "ReflectivePick_x64.dll" fullword ascii
+      $a1 = "\\PowerShellRunner.pdb" fullword ascii
+      $a2 = "PowerShellRunner.dll" fullword wide
+      
+      $s1 = "ReflectivePick" fullword ascii
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 400KB and 1 of them ) or all of them
+      uint16(0) == 0x5a4d and filesize < 400KB and 1 of ($a*) and $s1
 }
 
 rule Empire_Out_Minidump {
