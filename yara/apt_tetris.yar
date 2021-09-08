@@ -1,46 +1,24 @@
 
 rule apt_CN_Tetris_JS_advanced_1
 {
-	meta:
-		author      = "@imp0rtp3"
-		description = "Unique code from Jetriz, Swid & Jeniva of the Tetris framework"
-		reference   = "https://imp0rtp3.wordpress.com/2021/08/12/tetris"
-		date = "2020-09-06"
+    meta:
+        author      = "@imp0rtp3 (modified by Florian Roth)"
+        description = "Unique code from Jetriz, Swid & Jeniva of the Tetris framework"
+        reference   = "https://imp0rtp3.wordpress.com/2021/08/12/tetris"
+        date = "2020-09-06"
 
-
-	strings:
-		$a1 = "var a0_0x"
-		$c1 = "))),function(){try{var _0x"
-		$c2 = "=window)||void 0x0===_0x"
-		$c3 = "){}});}();};window['$']&&window['$']()[a0_0x"
-		$c4 = "&&!(Number(window['$']()[a0_0x"
-		$c5 = "=function(){return!window['$']||!window['$']()[a0_0x" // second
-		$c6 = "')]||Number(window['$']()[a0_0x"
-		$c7 = "')]>0x3&&void 0x0!==arguments[0x3]?arguments[0x3]:document;"
-		$d1 = "){if(opener&&void 0x0!==opener[" //not dep on a0
-		$d2 = "&&!/loaded|complete/"
-		$d3 = "')]=window['io']["
-		$d4 = "==typeof console["
-		$d6 = "['shift']());}};"
-		$d7 = "=Function('return\\x20(function()\\x20'+'{}.constructor(\\x22return\\x20this\\x22)(\\x20)'+');');"
-		$d8 = "['atob']=function("
-		$d9 = ")['replace'](/=+$/,'');var"
-		$d10 = /\+=String\['fromCharCode'\]\(0xff&_?[0-9a-fx_]{1,10}>>\(\-(0x)?2\*/
-		$e1 = "')](__p__)"
-	condition:
-	$a1 at 0 
-	or (
-		filesize<1000000
-		and (
-			or #e1 > 1 
-			or 3 of ($c*)
-			or 6 of ($d*) 
-			or ( 	
-				any of ($c*) 
-				and 4 of ($d*)
-			)
-		)
-	)
+   strings:
+      $s1 = "=new RegExp(String.fromCharCode(" ascii
+      $s2 = ".charCodeAt(" ascii
+      $s3 = ".substr(0, " ascii
+      $s4 = "var shell = new ActiveXObject(" ascii
+      $s5 = "= new Date().getUTCMilliseconds();" ascii
+      $s6 = ".deleteFile(WScript.ScriptFullName);" ascii
+   condition:
+      filesize < 6000KB
+      and ( 
+         4 of them
+      )
 }
 
 rule apt_CN_Tetris_JS_simple
