@@ -8,17 +8,25 @@ rule apt_CN_Tetris_JS_advanced_1
         date = "2020-09-06"
 
    strings:
-      $s1 = "=new RegExp(String.fromCharCode(" ascii
-      $s2 = ".charCodeAt(" ascii
-      $s3 = ".substr(0, " ascii
-      $s4 = "var shell = new ActiveXObject(" ascii
-      $s5 = "= new Date().getUTCMilliseconds();" ascii
-      $s6 = ".deleteFile(WScript.ScriptFullName);" ascii
+      $a1 = "var a0_0x"
+      $b1 = "a0_0x" ascii
+      
+      $cx1 = "))),function(){try{var _0x"
+      $cx2 = "=window)||void 0x0===_0x"
+      $cx3 = "){if(opener&&void 0x0!==opener[" //not dep on a0
+      $cx4 = "String['fromCharCode'](0x"
+      
+      $e1 = "')](__p__)"
    condition:
-      filesize < 6000KB
-      and ( 
-         4 of them
+   $a1 at 0 
+   or (
+      filesize < 1000KB
+      and (
+         #b1 > 300
+         or #e1 > 1 
+         or 2 of ($cx*)
       )
+   )
 }
 
 rule apt_CN_Tetris_JS_simple
