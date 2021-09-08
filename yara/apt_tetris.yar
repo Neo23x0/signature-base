@@ -73,10 +73,7 @@ rule apt_CN_Tetrisplugins_JS
 
 	strings:
 
-
 		// Really unique strings
-		$a1 = "this.plugin = plugin; // 自动运行"
-		$a2 = "[Success]用户正在使用\\x20Tor\\x20网络"
 		$a3 = "(0xbb8);this['socketWatcher'](0xbb9);this["
 		$a4 = "a2869674571f77b5a0867c3d71db5856"
 		$a5 = "\\x0a\\x20\\x20var\\x20data\\x20=\\x20{}\\x0a\\x20\\x20window.c\\x20=\\x200\\x0a\\x20\\x20script2\\x20=\\x20document.createElement(\\x22script\\x22)\\x0a\\x20\\x20script2.async\\x20=\\x20true\\x0a\\x20\\x20script2.src\\x20=\\x20\\x22"
@@ -124,7 +121,6 @@ rule apt_CN_Tetrisplugins_JS
 		$e4 = "http://bn6kma5cpxill4pe.onion/static/images/tor-logo1x.png" base64
 		$e5 = "/public/dependence/jquery" base64
 		$e6 = "\x20\x22*\x22)\x0a\x20\x20}\x0a\x20\x20document.documentElement.appendChild(" base64
-		$e7 = "[Success]用户正在使用\x20Tor\x20网络" base64
 		$e8 = "\x0a\x20\x20var\x20data\x20=\x20{}\x0a\x20\x20window.c\x20=\x200\x0a\x20\x20script2\x20=\x20document.createElement(\x22script\x22)\x0a\x20\x20script2.async\x20=\x20true\x0a\x20\x20script2.src\x20=\x20\x22"  base64
 		$e9 = "{isPluginCallback:\x20true,\x20data,\x20plugin:\x20" base64
 		
