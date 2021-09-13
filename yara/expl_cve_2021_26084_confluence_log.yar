@@ -17,7 +17,7 @@ rule LOG_EXPL_Confluence_RCE_CVE_2021_26084_Sep21 : LOG {
 
       $sc1 = " ERROR "
       $sc2 = " | userName: anonymous | action: createpage-entervariables"
-      $sc3 = "[confluence.plugins.synchrony.SynchronyContextProvider] getContextMap -- url: /pages/createpage-entervariables.action"
+      $re1 = /\[confluence\.plugins\.synchrony\.SynchronyContextProvider\] getContextMap (\n )?-- url: \/pages\/createpage-entervariables\.action/
    condition:
-      1 of ($x*) or ( $sa1 and 1 of ($sb*) ) or all of ($sc*)
+      1 of ($x*) or ( $sa1 and 1 of ($sb*) ) or (all of ($sc*) and $re1)
 }
