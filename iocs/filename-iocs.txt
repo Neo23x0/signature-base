@@ -3733,4 +3733,7 @@ C:\\Program\.exe;65
 \\Users\\Public\\[^\\]{1,20}\.(dll|vbs|ps1|bat);70
 \\Users\\Public\\[^\\]{1,20}\.exe;65
 
+# Nmap, Network scanning tool https://nmap.org/
+\\nmap\.exe;50
+
 # End
