@@ -12,6 +12,7 @@ rule ROKRAT_Malware {
       author = "Florian Roth"
       reference = "http://blog.talosintelligence.com/2017/04/introducing-rokrat.html"
       date = "2017-04-03"
+      modified = "2021-09-14"
       hash1 = "051463a14767c6477b6dacd639f30a8a5b9e126ff31532b58fc29c8364604d00"
       hash2 = "cd166565ce09ef410c5bba40bad0b49441af6cfb48772e7e4a9de3d646b4851c"
    strings:
