@@ -29,7 +29,7 @@ rule ROKRAT_Malware {
       $a3 = "egmon" ascii fullword
       $a6 = "iresha" ascii fullword
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 25000KB and ( 1 of ($x*) or all of ($a*) ) ) or ( 5 of them )
+      uint16(0) == 0x5a4d and filesize < 25000KB and ( 1 of ($x*) or ( 5 of them ) )
 }
 
 /*
