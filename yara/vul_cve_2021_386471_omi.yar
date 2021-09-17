@@ -4,7 +4,7 @@ rule VULN_LNX_OMI_RCE_CVE_2021_386471_Sep21 {
       author = "Christian Burkard"
       date = "2021-09-16"
       reference = "https://www.wiz.io/blog/secret-agent-exposes-azure-customers-to-unauthorized-code-execution"
-      score = 75
+      score = 50
    strings:
       $a1 = "/opt/omi/bin/omiagent" ascii fullword
       
