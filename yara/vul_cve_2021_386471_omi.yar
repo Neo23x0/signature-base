@@ -1,6 +1,6 @@
 rule VULN_LNX_OMI_RCE_CVE_2021_386471_Sep21 {
    meta:
-      description = "Detects a Linux OMI version vulnerable to CVE-2021-38647 which enables an unauthenticated RCE"
+      description = "Detects a Linux OMI version vulnerable to CVE-2021-38647 (OMIGOD) which enables an unauthenticated RCE"
       author = "Christian Burkard"
       date = "2021-09-16"
       reference = "https://www.wiz.io/blog/secret-agent-exposes-azure-customers-to-unauthorized-code-execution"
