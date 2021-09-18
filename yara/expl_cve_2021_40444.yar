@@ -18,7 +18,7 @@ rule EXPL_CVE_2021_40444_Document_Rels_XML {
       $c3 = "TargetMode=\"External\"" nocase
    condition:
       uint32(0) == 0x6D783F3C
-      and filesize < 5KB
+      and filesize < 10KB
       and 1 of ($b*)
       and all of ($c*)
 }
@@ -32,8 +32,45 @@ rule MAL_MalDoc_OBFUSCT_MHTML_Sep21_1 {
       score = 90
       hash = "84674acffba5101c8ac518019a9afe2a78a675ef3525a44dceddeed8a0092c69"
    strings:
-      $h1 = "<?xml " ascii
-      $s1 = "109;&#104;&#116;&#109;&#108;&#58;&#104;&#116;&#109;&#108" ascii
+      $h1 = "<?xml " ascii wide
+      $s1 = "109;&#104;&#116;&#109;&#108;&#58;&#104;&#116;&#109;&#108" ascii wide
    condition:
       filesize < 25KB and all of them
 }
+
+
+rule EXPL_XML_Encoded_2021_40444 : Windows CVE {
+   meta:
+      author = "James E.C, Proofpoint"
+      description = "Detects possible CVE-2021-40444 with no encoding, HTML/XML entity (and hex notation) encoding, or all 3"
+      reference = "https://twitter.com/sudosev/status/1439205606129377282"
+      date = "2021-09-18"
+      score = 70
+      hash = "13DE9F39B1AD232E704B5E0B5051800FCD844E9F661185ACE8287A23E9B3868E" // document.xml
+      hash = "84674ACFFBA5101C8AC518019A9AFE2A78A675EF3525A44DCEDDEED8A0092C69" // original .docx
+   strings:
+      $h1 = "<?xml " ascii wide
+      $t_xml_r = /Target[\s]{0,20}=[\s]{0,20}\"([Mm]|&#(109|77|x6d|x4d);)([Hh]|&#(104|72|x68|x48);)([Tt]|&#(116|84|x74|x54);)([Mm]|&#(109|77|x6d|x4d);)([Ll]|&#(108|76|x6c|x4c);)(:|&#58;|&#x3a)/
+      $t_mode_r = /TargetMode[\s]{0,20}=[\s]{0,20}\"([Ee]|&#(x45|x65|69|101);)([Xx]|&#(x58|x78|88|120);)([Tt]|&#(x74|x54|84|116);)/
+   condition:
+      filesize < 500KB and $h1 and all of ($t_*)
+}
+
+rule SUSP_OBFUSC_Indiators_XML_OfficeDoc_Sep21 : Windows CVE {
+   meta:
+      author = "Florian Roth"
+      description = "Detects suspicious encodings in fields used in reference files found in weaponized MS Office documents"
+      reference = "https://twitter.com/sudosev/status/1439205606129377282"
+      date = "2021-09-18"
+      score = 65
+      hash = "13DE9F39B1AD232E704B5E0B5051800FCD844E9F661185ACE8287A23E9B3868E" // document.xml
+      hash = "84674ACFFBA5101C8AC518019A9AFE2A78A675EF3525A44DCEDDEED8A0092C69" // original .docx
+   strings:
+      $h1 = "<?xml " ascii wide
+
+      $xml_e = "Target=\"&#"
+      $xml_mode_1 = "TargetMode=\"&#"
+   condition:
+      filesize < 500KB and $h1 and 1 of ($xml*)
+}
+
