@@ -56,6 +56,7 @@ rule EXPL_XML_Encoded_2021_40444 : Windows CVE {
       filesize < 500KB and $h1 and all of ($t_*)
 }
 
+/* not directly related to CVE-2021-40444 */
 rule SUSP_OBFUSC_Indiators_XML_OfficeDoc_Sep21 : Windows CVE {
    meta:
       author = "Florian Roth"
