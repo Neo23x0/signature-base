@@ -23,7 +23,7 @@ rule EXPL_CVE_2021_40444_Document_Rels_XML {
       and all of ($c*)
 }
 
-rule MAL_MalDoc_OBFUSCT_MHTML_Sep21_1 {
+rule EXPL_MAL_MalDoc_OBFUSCT_MHTML_Sep21_1 {
    meta:
       description = "Detects suspicious office reference files including an obfuscated MHTML reference exploiting CVE-2021-40444"
       author = "Florian Roth"
