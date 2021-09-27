@@ -3736,4 +3736,8 @@ C:\\Program\.exe;65
 # Nmap, Network scanning tool https://nmap.org/
 \\nmap\.exe;50
 
+# FoggyWeb NOBELIUM IOCs https://www.microsoft.com/security/blog/2021/09/27/foggyweb-targeted-nobelium-malware-leads-to-persistent-backdoor/
+C:\\Windows\\ADFS\\version\.dll;85
+C:\\Windows\\SystemResources\\Windows\.Data\.TimeZones\\pris\\Windows\.Data\.TimeZones\.zh-PH\.pri;85
+
 # End
