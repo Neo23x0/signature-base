@@ -131,7 +131,15 @@ rule Suspicious_Size_firefox_exe {
     condition:
         uint16(0) == 0x5a4d
         and filename == "firefox.exe"
-        and ( filesize < 265KB or filesize > 910KB )
+        and (
+        	(
+        		filepath not contains "Tor Browser"
+        		and ( filesize < 265KB or filesize > 910KB )
+        	) or (
+        		filepath contains "Tor Browser"
+        		and ( filesize < 265KB or filesize > 1800KB )
+        	)
+        )	
 }
 
 rule Suspicious_Size_java_exe {
