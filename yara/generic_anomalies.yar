@@ -133,7 +133,7 @@ rule Suspicious_Size_firefox_exe {
         and filename == "firefox.exe"
         and (
         	(
-        		filepath not contains "Tor Browser"
+        		not filepath contains "Tor Browser"
         		and ( filesize < 265KB or filesize > 910KB )
         	) or (
         		filepath contains "Tor Browser"
