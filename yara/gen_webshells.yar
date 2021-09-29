@@ -851,7 +851,8 @@ rule webshell_php_double_eval_tiny
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Arnim Rupp"
 		hash = "aabfd179aaf716929c8b820eefa3c1f613f8dcac"
-		date = "2021/01/11"
+		date = "2021-01-11"
+		modified = "2021-09-29"
 		score = 50
 
 	strings:
