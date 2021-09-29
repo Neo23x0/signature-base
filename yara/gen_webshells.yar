@@ -857,6 +857,8 @@ rule webshell_php_double_eval_tiny
 	strings:
 		$payload = /(\beval[\t ]*\([^)]|\bassert[\t ]*\([^)])/ nocase wide ascii
 		$fp1 = "clone" fullword wide ascii
+		$fp2 = "* @assert" ascii
+		$fp3 = "*@assert" ascii
 	
 		//strings from private rule capa_php_old_safe
 		$php_short = "<?" wide ascii
