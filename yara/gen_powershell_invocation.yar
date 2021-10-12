@@ -5,6 +5,7 @@ rule PowerShell_Susp_Parameter_Combo {
       author = "Florian Roth"
       reference = "https://goo.gl/uAic1X"
       date = "2017-03-12"
+      modified = "2021-09-28"
       score = 60
       type = "file"
    strings:
@@ -36,6 +37,7 @@ rule PowerShell_Susp_Parameter_Combo {
 
       $fp1 = "Chocolatey Software"
       $fp2 = "VBOX_MSI_INSTALL_PATH"
+      $fp3 = "\\Local\\Temp\\en-US.ps1"
    condition:
       filesize < 3000KB and 4 of ($s*) and not 1 of ($fp*)
 }
