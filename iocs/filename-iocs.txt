@@ -3740,4 +3740,26 @@ C:\\Program\.exe;65
 C:\\Windows\\ADFS\\version\.dll;85
 C:\\Windows\\SystemResources\\Windows\.Data\.TimeZones\\pris\\Windows\.Data\.TimeZones\.zh-PH\.pri;85
 
+# LightBasin / UNC1945 filename IOCs https://www.crowdstrike.com/blog/an-analysis-of-lightbasin-telecommunications-attacks/
+/usr/bin/pingg;85
+/usr/lib/om_proc;75
+/usr/lib/frpc;75
+/usr/lib/frpc\.ini;75
+/usr/lib/cord\.lib;75
+/usr/lib/libcord\.so;75
+/usr/bin/libcord\.so;75
+/cordscan_raw_arm;75
+/usr/lib/javacee;85
+/usr/lib/sgsnemu;85
+/usr/bin/sgsnemu;85
+/usr/lib/sgsnemu_bak;85
+/usr/lib/tshd;90
+/win7_exp/proxychains\.conf;85
+/var/tmp/\.font-unix;75
+/usr/local/sbin/iptables;65
+/sbin/iptablesDir/;70
+
+# Possible FRP ini file (Fast Reverse Proxy) https://github.com/fatedier/frp
+/frpc\.ini;60
+
 # End
