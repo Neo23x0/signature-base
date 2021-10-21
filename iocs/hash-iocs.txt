@@ -10079,3 +10079,11 @@ dfddbd09ccea598c4841f1abbc927f1c661d85d4bd9bcb081f7c811212d8a64a;TA456 targeting
 612bdfb4f6eaf920a7a41fa06de8d99f6ecf6ad147374efa6eb1d5aff91df558;TA456 targeting defence contractors https://www.proofpoint.com/us/blog/threat-insight/i-knew-you-were-trouble-ta456-targets-defense-contractor-alluring-social-media
 1534f95f49ddf2ada38561705f901e5938470c1678d6a81f0f4177ba7412ef5b;TA456 targeting defence contractors https://www.proofpoint.com/us/blog/threat-insight/i-knew-you-were-trouble-ta456-targets-defense-contractor-alluring-social-media
 da65aa439e90d21b2cf53afef6491e7dcdca19dd1bbec50329d53f3d977ee089;TA456 targeting defence contractors https://www.proofpoint.com/us/blog/threat-insight/i-knew-you-were-trouble-ta456-targets-defense-contractor-alluring-social-media
+
+e9c0f00c34dcd28fc3cc53c9496bff863b81b06723145e106ab7016c66581f72;PingPong - Light Basin IOCs https://www.crowdstrike.com/blog/an-analysis-of-lightbasin-telecommunications-attacks/
+4668561d60daeb7a4a50a9c3e210a4343f92cadbf2d52caab5684440da6bf562;PingPong - Light Basin IOCs https://www.crowdstrike.com/blog/an-analysis-of-lightbasin-telecommunications-attacks/
+3a259ad7e5c19a782f7736b5ac50aac4ba4d03b921ffc6a3ff6a48d720f02012;Microsocks Proxy - Light Basin IOCs https://www.crowdstrike.com/blog/an-analysis-of-lightbasin-telecommunications-attacks/
+65143ccb5a955a22d6004033d073ecb49eba9227237a46929495246e36eff8e1;Microsocks Proxy - Light Basin IOCs https://www.crowdstrike.com/blog/an-analysis-of-lightbasin-telecommunications-attacks/
+05537c1c4e29db76a24320fb7cb80b189860389cdb16a9dbeb0c8d30d9b37006;Fast Reverse Proxy - Light Basin IOCs https://www.crowdstrike.com/blog/an-analysis-of-lightbasin-telecommunications-attacks/
+16294086be1cc853f75e864a405f31e2da621cb9d6a59f2a71a2fca4e268b6c2;Fast Reverse Proxy - Light Basin IOCs https://www.crowdstrike.com/blog/an-analysis-of-lightbasin-telecommunications-attacks/
+a388e2ac588be6ab73d7e7bbb61d83a5e3a1f80bf6a326f42b6b5095a2f35df3;TinyShell backdoor - Light Basin IOCs https://www.crowdstrike.com/blog/an-analysis-of-lightbasin-telecommunications-attacks/
