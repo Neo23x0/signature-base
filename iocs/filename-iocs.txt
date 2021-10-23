@@ -3762,4 +3762,19 @@ C:\\Windows\\SystemResources\\Windows\.Data\.TimeZones\\pris\\Windows\.Data\.Tim
 # Possible FRP ini file (Fast Reverse Proxy) https://github.com/fatedier/frp
 /frpc\.ini;60
 
+# Suspicious Flash Player Installer file names not used by the legitimate sources https://twitter.com/cyb3rops/status/1451807802901635074
+/FlashPlayer\.dmg;75
+/AdobeFlashPlayer\.dmg;75
+/AdobeFlashPlayerInstaller\.dmg;75
+/Adobe_Flash_Player\.dmg;75
+/Adobe Flash Player\.dmg;75
+/Flash Player\.dmg;75
+/Flash_Player\.dmg;75
+/Flash_Player_Installer\.dmg;75
+/Flash Player Installer\.dmg;75
+/Install_Flash_Player\.dmg;75
+/Install Flash Player.dmg;75
+/Flash_Player_Setup\.dmg;75
+/Flash Player Setup\.dmg;75
+
 # End
