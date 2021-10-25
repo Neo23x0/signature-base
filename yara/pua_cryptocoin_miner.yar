@@ -44,3 +44,26 @@ rule PUA_CryptoMiner_Jan19_1 {
    condition:
       filesize < 1000KB and 1 of them
 }
+
+rule PUA_Crypto_Mining_CommandLine_Indicators_Oct21 : SCRIPT {
+   meta:
+      description = "Detects command line parameters often used by crypto mining software"
+      author = "Florian Roth"
+      reference = "https://www.poolwatch.io/coin/monero"
+      date = "2021-10-24"
+      score = 65
+   strings:
+      $s01 = " --cpu-priority="
+      $s02 = "--donate-level=0"
+      $s03 = " -o pool." ascii
+      $s04 = " -o stratum+tcp://"
+      $s05 = " --nicehash"
+      $s06 = " --algo=rx/0 "
+
+      /* base64 encoded: --donate-level= */
+      $se1 = "LS1kb25hdGUtbGV2ZWw9"
+      $se2 = "0tZG9uYXRlLWxldmVsP"
+      $se3 = "tLWRvbmF0ZS1sZXZlbD"
+   condition:
+      filesize < 5000KB and 1 of them
+}
