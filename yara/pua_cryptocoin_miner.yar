@@ -1,17 +1,19 @@
 
-rule CoinMiner_Strings {
+rule CoinMiner_Strings : SCRIPT {
    meta:
       description = "Detects mining pool protocol string in Executable"
-      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
-      score = 50
+      score = 60
       reference = "https://minergate.com/faq/what-pool-address"
       date = "2018-01-04"
+      modified = "2021-10-26"
+      nodeepdive = 1
    strings:
-      $s1 = "stratum+tcp://" ascii
-      $s2 = "\"normalHashing\": true,"
+      $sa1 = "stratum+tcp://" ascii
+      $sa2 = "stratum+udp://" ascii
+      $sb1 = "\"normalHashing\": true,"
    condition:
-      filesize < 600KB and 1 of them
+      filesize < 3000KB and 1 of them
 }
 
 rule CoinHive_Javascript_MoneroMiner {
@@ -64,6 +66,18 @@ rule PUA_Crypto_Mining_CommandLine_Indicators_Oct21 : SCRIPT {
       $se1 = "LS1kb25hdGUtbGV2ZWw9"
       $se2 = "0tZG9uYXRlLWxldmVsP"
       $se3 = "tLWRvbmF0ZS1sZXZlbD"
+
+      /* 
+         base64 encoded:
+         stratum+tcp:// 
+         stratum+udp:// 
+      */
+      $se4 = "c3RyYXR1bSt0Y3A6Ly"
+      $se5 = "N0cmF0dW0rdGNwOi8v"
+      $se6 = "zdHJhdHVtK3RjcDovL"
+      $se7 = "c3RyYXR1bSt1ZHA6Ly"
+      $se8 = "N0cmF0dW0rdWRwOi8v"
+      $se9 = "zdHJhdHVtK3VkcDovL"
    condition:
       filesize < 5000KB and 1 of them
 }
