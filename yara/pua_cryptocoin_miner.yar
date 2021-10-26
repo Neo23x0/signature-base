@@ -57,7 +57,7 @@ rule PUA_Crypto_Mining_CommandLine_Indicators_Oct21 : SCRIPT {
    strings:
       $s01 = " --cpu-priority="
       $s02 = "--donate-level=0"
-      $s03 = " -o pool." ascii
+      $s03 = " -o pool."
       $s04 = " -o stratum+tcp://"
       $s05 = " --nicehash"
       $s06 = " --algo=rx/0 "
