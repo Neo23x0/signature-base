@@ -662,7 +662,8 @@ rule webshell_php_base64_encoded_payloads
 		description = "php webshell containing base64 encoded payload"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Arnim Rupp"
-		date = "2021/01/07"
+		date = "2021-01-07"
+		modified = "2021-10-29"
 		hash = "88d0d4696c9cb2d37d16e330e236cb37cfaec4cd"
 
 	strings:
@@ -753,7 +754,9 @@ rule webshell_php_base64_encoded_payloads
         $fp1 = { D0 CF 11 E0 A1 B1 1A E1 }
         // api.telegram
         $fp2 = "YXBpLnRlbGVncmFtLm9" 
-
+		// Log files
+		$fp3 = "GET /"
+		$fp4 = "POST /"	
 	
 		//strings from private rule capa_php_old_safe
 		$php_short = "<?" wide ascii
@@ -816,6 +819,7 @@ rule webshell_php_generic_eval
 		hash = "a61437a427062756e2221bfb6d58cd62439d09d9"
 		hash = "90c5cc724ec9cf838e4229e5e08955eec4d7bf95"
 		date = "2021/01/07"
+		modified = "2021-10-29"
 
 	strings:
         // new: eval($GLOBALS['_POST'
@@ -836,7 +840,9 @@ rule webshell_php_generic_eval
 		$gfp10 = "[][}{;|]\\|\\\\[+=]\\|<?=>?"
 		$gfp11 = "(eval (getenv \"EPROLOG\")))"
 		$gfp12 = "ZmlsZV9nZXRfY29udGVudHMoJ2h0dHA6Ly9saWNlbnNlLm9wZW5jYXJ0LWFwaS5jb20vbGljZW5zZS5waHA/b3JkZXJ"
-	
+		// Log files
+		$gfp_3 = "GET /"
+		$gfp_4 = "POST /"		
 	condition:
 		filesize < 300KB and not ( 
 			any of ( $gfp* ) 
@@ -4000,7 +4006,8 @@ rule webshell_asp_generic
 		description = "Generic ASP webshell which uses any eval/exec function indirectly on user input or writes a file"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Arnim Rupp"
-		date = "2021/03/07"
+		date = "2021-03-07"
+		modified = "2021-10-29"
 		score = 60
 		hash = "a8c63c418609c1c291b3e731ca85ded4b3e0fba83f3489c21a3199173b176a75"
 
@@ -4070,7 +4077,8 @@ rule webshell_asp_generic
         // "e"+"x"+"e"
         $asp_gen_obf1 = "\"+\"" wide ascii 
 
-        $fp1 = "DataBinder.Eval" 
+        $fp1 = "DataBinder.Eval"
+		$fp2 = "B2BTools"
 	
 		//strings from private rule capa_asp
 		$tagasp_short1 = /<%[^"]/ wide ascii

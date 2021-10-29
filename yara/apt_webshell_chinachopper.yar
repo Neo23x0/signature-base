@@ -6,9 +6,13 @@ rule ChinaChopper_Generic {
 		author = "Florian Roth"
 		reference = "https://www.fireeye.com/content/dam/legacy/resources/pdfs/fireeye-china-chopper-report.pdf"
 		date = "2015/03/10"
+		modified = "2021-10-29"
 	strings:
-		$aspx = /%@\sPage\sLanguage=.Jscript.%><%eval\(Request\.Item\[.{,100}unsafe/
-		$php = /<?php.\@eval\(\$_POST./
+		$x_aspx = /%@\sPage\sLanguage=.Jscript.%><%eval\(RequestItem\[.{,100}unsafe/
+		$x_php = /<?php.\@eval\(\$_POST./
+
+		$fp1 = "GET /"
+		$fp2 = "POST /"
 	condition:
-		1 of them
-}
+		1 of ($x*) and not 1 of ($fp*)
+	}

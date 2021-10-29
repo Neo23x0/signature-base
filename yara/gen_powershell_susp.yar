@@ -56,6 +56,7 @@ rule Suspicious_PowerShell_WebDownload_1 : HIGHVOL {
 		score = 60
       reference = "Internal Research"
       date = "2017-02-22"
+      modified = "2021-10-29"
       type = "file"
    strings:
       $s1 = "System.Net.WebClient).DownloadString(\"http" ascii nocase
@@ -63,6 +64,8 @@ rule Suspicious_PowerShell_WebDownload_1 : HIGHVOL {
 
       $fp1 = "NuGet.exe" ascii fullword
       $fp2 = "chocolatey.org" ascii
+      $fp3 = " GET /"
+      $fp4 = " POST /"
    condition:
       1 of ($s*) and not 1 of ($fp*)
 }
