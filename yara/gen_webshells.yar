@@ -841,8 +841,8 @@ rule webshell_php_generic_eval
 		$gfp11 = "(eval (getenv \"EPROLOG\")))"
 		$gfp12 = "ZmlsZV9nZXRfY29udGVudHMoJ2h0dHA6Ly9saWNlbnNlLm9wZW5jYXJ0LWFwaS5jb20vbGljZW5zZS5waHA/b3JkZXJ"
 		// Log files
-		$gfp_3 = "GET /"
-		$gfp_4 = "POST /"		
+		$gfp_3 = " GET /"
+		$gfp_4 = " POST /"		
 	condition:
 		filesize < 300KB and not ( 
 			any of ( $gfp* ) 
