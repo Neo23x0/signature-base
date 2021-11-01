@@ -232,7 +232,7 @@ rule SUSP_ASPX_PossibleDropperArtifact_Aug21 {
       )
 }
 
-rule MAL_WEBSHELL_ProxyShell_Exploitation_Nov21_1 {
+rule WEBSHELL_ProxyShell_Exploitation_Nov21_1 {
    meta:
       description = "Detects webshells dropped by DropHell malware"
       author = "Florian Roth"
