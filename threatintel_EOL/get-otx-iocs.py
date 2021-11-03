@@ -12,6 +12,7 @@
 # 16.12.2017 - Merged the changes by Scott with the code base
 # 22.11.2017 - Scott Carpenter uberbigun@gmail.com
 # 13.02.2018 - Reworked the hash whitelist
+# 03.11.2021 - Updated to Python3
 #
 
 from OTXv2 import OTXv2
@@ -178,7 +179,7 @@ class OTXReceiver():
 
                     try:
                         # Description
-                        description = event["name"].encode('unicode-escape').replace(self.separator, " - ")
+                        description = event["name"].replace(self.separator, " - ")
 
                         # Hash IOCs
                         if indicator["type"] in ('FileHash-MD5', 'FileHash-SHA1', 'FileHash-SHA256'):
