@@ -1,4 +1,4 @@
-rule SUSP_obfuscated_JS_obfuscatorio
+rule SUSP_obfuscated_JS_obfuscatorio : HIGHVOL 
 {
 	meta:
 	

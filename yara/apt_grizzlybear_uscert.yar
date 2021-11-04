@@ -842,9 +842,9 @@ rule IMPLANT_4_v3 {
 
 /* Alternative Rule Set ---------------------------------------------------- */
 
-rule IMPLANT_4_v3_AlternativeRule {
+rule IMPLANT_4_v3_AlternativeRule : HIGHVOL {
    meta:
-      description = "BlackEnergy / Voodoo Bear Implant by APT28"
+      description = "Detects a group of different malware samples"
       comment = "Alternative rule - not based on the original samples but samples on which the original rule matched"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
