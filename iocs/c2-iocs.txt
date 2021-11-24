@@ -1567,7 +1567,6 @@ zone.demoones.com
 
 # Turla Kazuar C2s https://www.epicturla.com/blog/sysinturla
 echange-afrique-insa.fr
-aviatnetworks.com
 afci-newsoft.fr
 
 # Lazarus Campaign targeting Security Researchers https://blog.google/threat-analysis-group/new-campaign-targeting-security-researchers/
