@@ -3648,8 +3648,6 @@ C:\\Windows\\Temp\\test\\current\.dmp;90
 /com.apple.CrashReporter.plist
 /com.apple.softwareupdateservicesd.plist
 /roleaccountd.plist
-/private/var/db/com.apple.xpc.roleaccountd.staging
-
 
 # Suspicious names often found to be malicious samples 
 \\loader\.vbs;65
