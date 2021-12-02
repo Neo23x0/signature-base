@@ -16,7 +16,7 @@ rule CoinMiner_Strings : SCRIPT {
       filesize < 3000KB and 1 of them
 }
 
-rule CoinHive_Javascript_MoneroMiner {
+rule CoinHive_Javascript_MoneroMiner : HIGHVOL {
    meta:
       description = "Detects CoinHive - JavaScript Crypto Miner"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"

@@ -2954,7 +2954,7 @@ rule EquationGroup_Toolset_Apr17_ActiveDirectory_Target {
       ( uint16(0) == 0x5a4d and filesize < 200KB and all of them )
 }
 
-rule EquationGroup_Toolset_Apr17_PC_Legacy_dll {
+rule EquationGroup_Toolset_Apr17_PC_Legacy_dll : HIGHVOL {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"

@@ -101,7 +101,7 @@ rule VBS_dropper_script_Dec17_1 {
       filesize < 600KB and $a1 and 1 of ($s*)
 }
 
-rule SUSP_PDB_Strings_Keylogger_Backdoor {
+rule SUSP_PDB_Strings_Keylogger_Backdoor : HIGHVOL {
    meta:
       description = "Detects PDB strings used in backdoors or keyloggers"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"

@@ -3947,7 +3947,7 @@ rule SUSP_Imphash_PassRevealer_PY_EXE {
    strings:
       $fp1 = "Assmann Electronic GmbH" ascii wide
       $fp2 = "Oculus VR" ascii wide
-      $fp3 = "befm8load" ascii /* Corsair software */
+      $fp3 = "efm8load" ascii /* Corsair software */
    condition:
       uint16(0) == 0x5a4d and filesize < 10000KB
       and pe.imphash() == "ed61beebc8d019dd9bec823e2d694afd"

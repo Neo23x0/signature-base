@@ -8,7 +8,7 @@
 
 /* Rule Set ----------------------------------------------------------------- */
 
-rule XMRIG_Monero_Miner {
+rule XMRIG_Monero_Miner : HIGHVOL {
    meta:
       description = "Detects Monero mining software"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"

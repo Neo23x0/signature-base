@@ -1,5 +1,5 @@
 
-rule PowerShell_Susp_Parameter_Combo {
+rule PowerShell_Susp_Parameter_Combo : HIGHVOL {
    meta:
       description = "Detects PowerShell invocation with suspicious parameters"
       author = "Florian Roth"

@@ -1,4 +1,4 @@
-rule IronTiger_ASPXSpy
+rule IronTiger_ASPXSpy : HIGHVOL
 {
 	meta:
 		author = "Cyber Safety Solutions, Trend Micro"
