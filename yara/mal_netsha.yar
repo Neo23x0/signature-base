@@ -1,6 +1,6 @@
 import "pe"
 
-rule MAL_Neshta_Generic {
+rule MAL_Neshta_Generic : HIGHVOL {
    meta:
       description = "Detects Neshta malware"
       author = "Florian Roth"
