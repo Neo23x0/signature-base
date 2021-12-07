@@ -10087,3 +10087,87 @@ e9c0f00c34dcd28fc3cc53c9496bff863b81b06723145e106ab7016c66581f72;PingPong - Ligh
 05537c1c4e29db76a24320fb7cb80b189860389cdb16a9dbeb0c8d30d9b37006;Fast Reverse Proxy - Light Basin IOCs https://www.crowdstrike.com/blog/an-analysis-of-lightbasin-telecommunications-attacks/
 16294086be1cc853f75e864a405f31e2da621cb9d6a59f2a71a2fca4e268b6c2;Fast Reverse Proxy - Light Basin IOCs https://www.crowdstrike.com/blog/an-analysis-of-lightbasin-telecommunications-attacks/
 a388e2ac588be6ab73d7e7bbb61d83a5e3a1f80bf6a326f42b6b5095a2f35df3;TinyShell backdoor - Light Basin IOCs https://www.crowdstrike.com/blog/an-analysis-of-lightbasin-telecommunications-attacks/
+
+1d3e2742e922641b7063db8cafed6531;diag.ps1 BEACON.SMB malware connecting to \\.\pipe\chrome.5687.8051.183894933787788877a1
+273ce653c457c9220ce53d0dfd3c60f1;vcredist.ps1 BEACON malware connecting via HTTPS to nordicmademedia[.]com
+3304036ac3bbf6cb2205e30226c89a1a;logo.png Hosted on http://23.106.123[.]15/logo.png, BEACON malware connected via HTTPS to stonecrestnews.com
+3633203d9a93fecfa9d4d9c06fc7fe36;LocalData.dll CEELOADER malware that obtains a payload from http://theandersonco[.]com/wp_info.php
+e5aacf3103af27f9aaafa0a74b296d50;Unknown BEACON malware connecting via HTTPS to nordicmademedia[.]com
+f3962456f7fc8d10644bf051ddb7c7ef;DiagView.dll CEELOADER malware that obtains a payload from http://tomasubiera[.]com/wp_getcontent.php
+
+6e2069758228e8d69f8c0a82a88ca7433a0a71076c9b1cb0d4646ba8236edf23;NOBELIUM Indicators - Container https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+24caf54e7c3fe308444093f7ac64d6d520c8f44ea4251e09e24931bdb72f5548;NOBELIUM Indicators - Malicious LNK https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+6866041f93141697ec166fe64e35b00c5fcd5d009500ecf58dd0b7e28764b167;NOBELIUM Indicators - Malicious LNK https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+a4f1f09a2b9bc87de90891da6c0fca28e2f88fd67034648060cef9862af9a3bf;NOBELIUM Indicators - CobaltStrike https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+5f7d08eb2039a9d2e99ebf3d0ef2796b93d0a01e9b8ec403fec8fcdf46448693;NOBELIUM Indicators - Container https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+292e5b0a12fea4ff3fc02e1f98b7a370f88152ce71fe62670dd2f5edfaab2ff8;NOBELIUM Indicators - CobaltStrike https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+065e9471fb4425ec0b3a2fd15e1546d66002caca844866b0764cbf837c21a72a;NOBELIUM Indicators - Email Attachment https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+112f92cfecdc4e177458bc1caebcc4420b5879840f137f249fac360ddac64ddd;NOBELIUM Indicators - Container https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+a45a77ad5c138a149aa71fb323a1e2513e7ac416be263d1783a7db380d06d2fc;NOBELIUM Indicators - Container https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+88c95954800827cb68e1efdacd99093f7f9646d82613039472b5c90e5978444d;NOBELIUM Indicators - CobaltStrike https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+f5bc4a9ffc2d33d4f915e41090af71544d84b651fb2444ac91f6e56c1f2c70d5;NOBELIUM Indicators - Email Attachment https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+873717ea2ea01ae6cd2c2dca9d6f832a316a6e0370071bb4ee6ecff3163f8d18;NOBELIUM Indicators - Container https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+7bf3457087ea91164f86f4bb50ddb46c469c464c300228dba793f7bfe608c83e;NOBELIUM Indicators - Encrypted Payload https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+b81beb17622d4675a1c6f4efb358cc66903366df75eb5911bca725465160bdb6;NOBELIUM Indicators - Malicious LNK https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+f9a74ac540a6584fc3ba7ccc172f948c6b716cceea313ce1d9e7b735fa2a5687;NOBELIUM Indicators - CobaltStrike,CobaltStrike https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+dcf48223af8bb423a0b6d4a366163b9308e9102764f0e188318a53f18d6abd25;NOBELIUM Indicators - Email Attachment https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+d19ff098fe0f5947e08ec23be27d3a3355e14fb20135d8c4145126caa8be4b05;NOBELIUM Indicators - Container https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+1f5a915e75ad96e560cee3e24861cf6f8de299fdf79e1829453defbfe2013239;NOBELIUM Indicators - CobaltStrike,CobaltStrike https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+194f4d1823e93905ee346d7e1fffc256e0befd478735f4b961954df52558c618;NOBELIUM Indicators - Malicious LNK https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+2836e5553e1ae52a1591545b362d1a630e3fef7e6b7e8342a84008fe4a6473a9;NOBELIUM Indicators - Email Attachment https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+cfb57906cf9c5e9c91bc4aa065f7997b1b32b88ff76f253a73ee7f6cfd8fff2f;NOBELIUM Indicators - Email Attachment https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+98473e1b8f7bedd5cfa3b83dad611db48eee23faec452e62797fb7752228c759;NOBELIUM Indicators - Container https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+2ebbb99b8dae0c7b0931190fa81add987b44d4435dafcf53a9cde0f19bb91398;NOBELIUM Indicators - CobaltStrike,CobaltStrike https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+574b7a80d8b9791cb74608bc4a9fcba4e4574fafef8e57bdee340728445ebd16;NOBELIUM Indicators - Decoy Document https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+3c86859207ac6071220976c52cef99abf18ae37ae702c5d2268948dda370910b;NOBELIUM Indicators - Malicious LNK https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+279d5ef8f80aba530aaac8afd049fa171704fc703d9cfe337b56639732e8ce11;NOBELIUM Indicators - Email Attachment https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+749bf48a22ca161d86b6e36e71a6817b478a99d935cd721e8bf3dba716224c84;NOBELIUM Indicators - Container https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+cf1d992f776421f72eabc31d5afc2f2067ae856f1c9c1d6dc643a67cb9349d8c;NOBELIUM Indicators - 1st Stage https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+73ca0485f2c2c8ba95e00188de7f5509304e1c1eb20ed3a238b0aa9674f9104e;NOBELIUM Indicators - Decoy Document https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+eae312c5ec2028a2602c9654be679ecde099b2c0b148f8d71fca43706efe4c76;NOBELIUM Indicators - Malicious LNK https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+9301e48ea3fa7d39df871f04072ee47b9046d76aa378a1c5697f3b2c14aef1d6;NOBELIUM Indicators - Email Attachment https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+e41a7616a3919d883beb1527026281d66e7bcdaff99600e462d36a58f1bdc794;NOBELIUM Indicators - Container https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+60e20576b08a24cdaeaabc4849011885fb7517713226e2663031d9533d2187bc;NOBELIUM Indicators - Container https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+8199f309478e8ed3f03f75e7574a3e9bce09b4423bd7eb08bb5bff03af2b7c27;NOBELIUM Indicators - 1st Stage https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+0acb884f2f4cfa75b726cb8290b20328c8ddbcd49f95a1d761b7d131b95bafec;NOBELIUM Indicators - 1st Stage https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+d37347f47bb8c7831ae9bb902ed27a6ce85ddd9ba6dd1e963542fd63047b829c;NOBELIUM Indicators - Decoy Document https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+0585ed374f47d823f8fcbb4054ad06980b1fe89f3fa3484558e7d30f7b6e9597;NOBELIUM Indicators - Malicious LNK https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+eae312c5ec2028a2602c9654be679ecde099b2c0b148f8d71fca43706efe4c76;NOBELIUM Indicators - Malicious LNK https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+656384c4e5f9fe435d51edf910e7ba28b5c6d183587cf3e8f75fb2d798a01eeb;NOBELIUM Indicators - 2nd Stage https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+136f4083b67bc8dc999eb15bb83042aeb01791fc0b20b5683af6b4ddcf0bbc7d;NOBELIUM Indicators - 2nd Stage https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+23e20d630a8fd12600c2811d8f179f0e408dcb3e82600456db74cbf93a66e70f;NOBELIUM Indicators - 2nd Stage https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+b0bfe6a8aa031f7f5972524473f3e404f85520a7553662aaf886055007a57db5;NOBELIUM Indicators - 2nd Stage https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+f7e8c9d19efd71f5c8217bf12bdd3f6c88d5f56ab65fea02dc2777c5402a18f1;NOBELIUM Indicators - Email Attachment https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+b295c5ad4963bdffa764b93421c3dd512ca6733b79bdff2b99510e7d56a70935;NOBELIUM Indicators - 2nd Stage https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+6d08b767117a0915fb86857096b4219fd58596b42ccf61462b137432abd3920e;NOBELIUM Indicators - Malware https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+94786066a64c0eb260a28a2959fcd31d63d175ade8b05ae682d3f6f9b2a5a916;NOBELIUM Indicators - Container https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+2523f94bd4fba4af76f4411fe61084a7e7d80dec163c9ccba9226c80b8b31252;NOBELIUM Indicators - Container https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+ee42ddacbd202008bcc1312e548e1d9ac670dd3d86c999606a3a01d464a2a330;NOBELIUM Indicators - 2nd Stage https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+ee42ddacbd202008bcc1312e548e1d9ac670dd3d86c999606a3a01d464a2a330;NOBELIUM Indicators - 2nd Stage https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+7d34f25ad8099bd069c5a04799299f17d127a3866b77ee34ffb59cfd36e29673;NOBELIUM Indicators - Decoy Document https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+7d34f25ad8099bd069c5a04799299f17d127a3866b77ee34ffb59cfd36e29673;NOBELIUM Indicators - Decoy Document https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+48b5fb3fa3ea67c2bc0086c41ec755c39d748a7100d71b81f618e82bf1c479f0;NOBELIUM Indicators - Malicious LNK https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+48b5fb3fa3ea67c2bc0086c41ec755c39d748a7100d71b81f618e82bf1c479f0;NOBELIUM Indicators - Malicious LNK https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+9059c5b46dce8595fcc46e63e4ffbceeed883b7b1c9a2313f7208a7f26a0c186;NOBELIUM Indicators - Email Attachment https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+ca66b671a75bbee69a4a4d3000b45d5dc7d3891c7ee5891272ccb2c5aed5746c;NOBELIUM Indicators - Email Attachment https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+6df1d7191f6dd930642cc5c599efb54bfcc964b7a2e77f6007787de472b22a6a;NOBELIUM Indicators - Email Attachment https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+3b94cc71c325f9068105b9e7d5c9667b1de2bde85b7abc5b29ff649fd54715c4;NOBELIUM Indicators - 2nd Stage https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+60e20576b08a24cdaeaabc4849011885fb7517713226e2663031d9533d2187bc;NOBELIUM Indicators - Container https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+f006af714379fdd63923536d908f916f4c55480f3d07adadd53d5807e0c285ee;NOBELIUM Indicators - Container https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+89016b87e97a07b4e0263a18827defdeaa3e150b1523534bbdebe7305beabb64;NOBELIUM Indicators - Container https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+7ed1b6753c94250ad3c1c675eb644940c8104ff06a123252173c33cc1be5e434;NOBELIUM Indicators - Container https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+74202eed181e2b83dd0ab6f791a34a13bd94e63e86b82395f9443cb5aeddc891;NOBELIUM Indicators - Malicious LNK https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+2a352380d61e89c89f03f4008044241a38751284995d000c73acf9cad38b989e;NOBELIUM Indicators - CobaltStrike https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+776014a63bf3cc7034bd5b6a9c36c75a930b59182fe232535bb7a305e539967b;NOBELIUM Indicators - CobaltStrike https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+d37347f47bb8c7831ae9bb902ed27a6ce85ddd9ba6dd1e963542fd63047b829c;NOBELIUM Indicators - Decoy Document https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+7a3b27cf04b7f8110fc1eee5f9c4830d38ac00467fc856330115af4bffaf35b6;NOBELIUM Indicators - Decoy Document https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+eae312c5ec2028a2602c9654be679ecde099b2c0b148f8d71fca43706efe4c76;NOBELIUM Indicators - Malicious LNK https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+f88530bc87cf2c133c0a50e434ce0428694901fe7860abb42737097fdea56b30;NOBELIUM Indicators - Malicious LNK https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+69f0d85119123f3c2e4c052a83671732aced07312a05a3abf4ab0360c70f65de;NOBELIUM Indicators - Malicious LNK https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+4fbfeb7a0bb6b9841b92fa4e6b5a7bdb69c2a12ed39691c9495ff88cd6f58836;NOBELIUM Indicators - 2nd Stage https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+117317d623003995d639975774edd1bfe38cec7d24b22d3e48d22c91cf8636bb;NOBELIUM Indicators - 2nd Stage https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+c4ff632696ec6e406388e1d42421b3cd3b5f79dcb2df67e2022d961d5f5a9e78;NOBELIUM Indicators - CobaltStrike https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+0c14a791f8a48d2944a9fa842f45becb7309ad004695e38f48fca69135d327c6;NOBELIUM Indicators - CobaltStrike https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+bca5560a9a9dd54be76e4a8d63a66e9cfd731b0bd28524db05cc498bb5b56384;NOBELIUM Indicators - CobaltStrike https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+1c17c39af41a5d8f54441ce6b1cf925f6727a2ee9038284a8a7071c984d0460f;NOBELIUM Indicators - VaporRage https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
+d7c05bd68e8bde3d13aa7dbd6911461104d06715da15d3ee7f75136fa8330cc2;NOBELIUM Indicators - Malicious LNK https://raw.githubusercontent.com/microsoft/mstic/master/Indicators/May21-NOBELIUM/May21NOBELIUMIoCs.csv
