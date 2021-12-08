@@ -1689,4 +1689,56 @@ worldhomeoutlet.com
 51.254.241.158
 51.38.85.225
 
+# NOBELIUM IOCS - https://www.mandiant.com/resources/russian-targeting-gov-business
+91.234.254.144
+23.106.123.15
+nordicmademedia.com
+stonecrestnews.com
+
+# NOBELIUM IOCS - https://www.cert.ssi.gouv.fr/cti/CERTFR-2021-CTI-011/
+139.99.167.177
+185.158.250.239
+185.243.215.198
+188.68.250.182
+190.183.61.30
+192.99.221.77
+194.135.81.18
+195.206.181.169
+31.42.177.114
+37.120.247.135
+37.59.225.51
+45.135.167.27
+45.179.89.37
+45.80.148.166
+51.254.241.158
+51.38.85.225
+51.89.50.153
+54.38.137.218
+79.143.87.166
+81.17.30.46
+83.171.237.173
+91.234.254.144
+alifemap.com
+businesssalaries.com
+cbdnewsandreviews.net
+celebsinformation.com
+cityloss.com
+dailydews.com
+doggroomingnews.com
+enpport.com
+giftbox4u.com
+hanproud.com
+ideasofbusiness.com
+myexpertforum.com
+newminigolf.com
+newstepsco.com
+rchosts.com
+stockmarketon.com
+stonecrestnews.com
+tacomanewspaper.com
+teachingdrive.com
+theyardservice.com
+trendignews.com
+worldhomeoutlet.com
+
 # Last Line
