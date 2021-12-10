@@ -780,7 +780,7 @@ rule EquationGroup_elatedmonkey_1_0_1_1 {
       $x3 = "Usage: $0 ( -s IP PORT | CMD )" fullword ascii
       $s5 = "os.execl(\"/bin/sh\", \"/bin/sh\", \"-c\", \"$CMD\")" fullword ascii
       $s13 = "PHP_SCRIPT=\"$HOME/public_html/info$X.php\"" fullword ascii
-      $s15 = "cat > /dev/tcp/127.0.0.1/80 <<" fullword ascii
+      $s15 = "cat > /dev/tcp/127.0.0.1/80 <<" ascii
    condition:
       ( uint16(0) == 0x2123 and filesize < 5KB and ( 1 of ($x*) and 5 of ($s*) ) ) or ( all of them )
 }
