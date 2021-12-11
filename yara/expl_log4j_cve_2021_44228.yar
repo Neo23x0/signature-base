@@ -78,6 +78,7 @@ rule SUSP_EXPL_OBFUSC_Dec21_1{
       $ = "$%7blower:"
       $ = "$%7bupper:"
       $ = "%24%7bjndi:"
+      $ = "/$%7bjndi:"
    condition:
       1 of them
 }
