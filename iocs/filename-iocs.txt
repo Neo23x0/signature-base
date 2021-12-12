@@ -3819,7 +3819,7 @@ application-79837fd1939f90d58cc5a842a81120e8cecbc03484362e88081ebf3b7e3830e9\.cs
 application-2eaf7e76aa55726cc0419f604e58ee73c5578c02c9e21fdbe7ae887925ea92ae\.css;70
 
 # Zoho Desktop Central Vulnerability exploitation CVE-2021-44515 https://thehackernews.com/2021/12/warning-yet-another-zoho-manageengine.html
-\\ManageEngine\\DesktopCentral_Server\\(lib|lib\\third_party_jars\\jersey|lib\\tomcat|lib\\resources|ServerTroubleShooter\\lib|ServerTroubleShooter\\lib\\util|ServerTroubleShooter\\lib\\starter)\\([^\\]{1,16}\.zip;70
+\\ManageEngine\\DesktopCentral_Server\\(lib|lib\\third_party_jars\\jersey|lib\\tomcat|lib\\resources|ServerTroubleShooter\\lib|ServerTroubleShooter\\lib\\util|ServerTroubleShooter\\lib\\starter)\\[^\\]{1,16}\.zip;70
 \\webapps\\DesktopCentral\\html\\help_me\.jsp;80
 \\webapps\\DesktopCentral\\html\\help_me\.html;80
 
