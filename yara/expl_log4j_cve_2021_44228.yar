@@ -97,6 +97,7 @@ rule EXPL_Log4j_CVE_2021_44228_Dec21_OBFUSC {
       $x5 = "${::-j}${"
       $x6 = "${${env:BARFOO:-j}"
       $x7 = "${::-l}${::-d}${::-a}${::-p}"
+      $x8 = "${base64:JHtqbmRp"
    condition:
       1 of them
 }
