@@ -1,4 +1,21 @@
 
+
+rule EXPL_Log4j_CVE_2021_44228_JAVA_Exception_Dec21_1 {
+   meta:
+      description = "Detects exceptions found in server logs that indicate an exploitation attempt of CVE-2021-44228"
+      author = "Florian Roth"
+      reference = "https://gist.github.com/Neo23x0/e4c8b03ff8cdf1fa63b7d15db6e3860b"
+      date = "2021-12-12"
+      score = 60
+   strings:
+      $xa1 = "header with value of BadAttributeValueException: "
+      
+      $sa1 = ".log4j.core.net.JndiManager.lookup(JndiManager"
+      $sa2 = "Error looking up JNDI resource"
+   condition:
+      $xa1 or all of ($sa*)
+}
+
 rule EXPL_Log4j_CVE_2021_44228_Dec21_Soft {
    meta:
       description = "Detects indicators in server logs that indicate an exploitation attempt of CVE-2021-44228"
@@ -12,6 +29,8 @@ rule EXPL_Log4j_CVE_2021_44228_Dec21_Soft {
       $x2 = "${jndi:rmi:/"
       $x3 = "${jndi:ldaps:/"
       $x4 = "${jndi:dns:/"
+      $x5 = "${jndi:iiop:/"
+      $x6 = "${jndi:http:/"
    condition:
       1 of them
 }
@@ -41,7 +60,7 @@ rule EXPL_Log4j_CVE_2021_44228_Dec21_Hard {
       date = "2021-12-10"
       score = 80
    strings:
-      $x1 = /\$\{jndi:(ldap|ldaps|rmi|dns):\/[\/]?[a-z-\.0-9]{3,120}:[0-9]{2,5}\/[a-zA-Z\.]{1,32}\}/
+      $x1 = /\$\{jndi:(ldap|ldaps|rmi|dns|iiop|http):\/[\/]?[a-z-\.0-9]{3,120}:[0-9]{2,5}\/[a-zA-Z\.]{1,32}\}/
       $fp1r = /(ldap|rmi|ldaps|dns):\/[\/]?(127\.0\.0\.1|192\.168\.|172\.[1-3][0-9]\.|10\.)/
    condition:
       $x1 and not 1 of ($fp*)
@@ -73,9 +92,10 @@ rule SUSP_JDNIExploit_Indicators_Dec21 {
       author = "Florian Roth"
       reference = "https://github.com/flypig5211/JNDIExploit"
       date = "2021-12-10"
+      modified = "2021-12-12"
       score = 70
    strings:
-      $xr1 = /ldap:\/\/[a-zA-Z0-9\.]{7,80}:[0-9]{2,5}\/(Basic\/Command\/Base64|Basic\/ReverseShell|Basic\/TomcatMemshell|Basic\/JBossMemshell|Basic\/WebsphereMemshell|Basic\/SpringMemshell|Basic\/Command|Deserialization\/CommonsCollectionsK|Deserialization\/CommonsBeanutils|Deserialization\/Jre8u20\/TomcatMemshell|Deserialization\/CVE_2020_2555\/WeblogicMemshell|TomcatBypass|GroovyBypass|WebsphereBypass)\//
+      $xr1 = /(ldap|ldaps|rmi|dns|iiop|http):\/\/[a-zA-Z0-9\.]{7,80}:[0-9]{2,5}\/(Basic\/Command\/Base64|Basic\/ReverseShell|Basic\/TomcatMemshell|Basic\/JBossMemshell|Basic\/WebsphereMemshell|Basic\/SpringMemshell|Basic\/Command|Deserialization\/CommonsCollectionsK|Deserialization\/CommonsBeanutils|Deserialization\/Jre8u20\/TomcatMemshell|Deserialization\/CVE_2020_2555\/WeblogicMemshell|TomcatBypass|GroovyBypass|WebsphereBypass)\//
    condition:
       filesize < 100MB and $xr1
 }
@@ -96,23 +116,9 @@ rule SUSP_EXPL_OBFUSC_Dec21_1{
       $ = "$%7blower:"
       $ = "$%7bupper:"
       $ = "%24%7bjndi:"
-      $ = "/$%7bjndi:"
+      $ = "$%7Blower:"
+      $ = "$%7Bupper:"
+      $ = "%24%7Bjndi:"
    condition:
       1 of them
-}
-
-rule EXPL_Log4j_CVE_2021_44228_JAVA_Exception_Dec21_1 {
-   meta:
-      description = "Detects exceptions found in server logs that indicate an exploitation attempt of CVE-2021-44228"
-      author = "Florian Roth"
-      reference = "https://gist.github.com/Neo23x0/e4c8b03ff8cdf1fa63b7d15db6e3860b"
-      date = "2021-12-12"
-      score = 60
-   strings:
-      $xa1 = "header with value of BadAttributeValueException: "
-      
-      $sa1 = ".log4j.core.net.JndiManager.lookup(JndiManager"
-      $sa2 = "Error looking up JNDI resource"
-   condition:
-      $xa1 or all of ($sa*)
 }
