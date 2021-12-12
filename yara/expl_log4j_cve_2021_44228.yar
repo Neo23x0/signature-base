@@ -95,6 +95,8 @@ rule EXPL_Log4j_CVE_2021_44228_Dec21_OBFUSC {
       $x3 = "%2F%252524%25257Bjndi%3A"
       $x4 = "${jndi:${lower:"
       $x5 = "${::-j}${"
+      $x6 = "${${env:BARFOO:-j}"
+      $x7 = "${::-l}${::-d}${::-a}${::-p}"
    condition:
       1 of them
 }
