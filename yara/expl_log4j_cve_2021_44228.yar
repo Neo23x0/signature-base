@@ -12,9 +12,23 @@ rule EXPL_Log4j_CVE_2021_44228_Dec21_Soft {
       $x2 = "${jndi:rmi:/"
       $x3 = "${jndi:ldaps:/"
       $x4 = "${jndi:dns:/"
-      $x5 = "$%7Bjndi:"
-      $x6 = "%2524%257Bjndi"
-      $x7 = "%2F%252524%25257Bjndi%3A"
+   condition:
+      1 of them
+}
+
+rule EXPL_Log4j_CVE_2021_44228_Dec21_OBFUSC {
+   meta:
+      description = "Detects obfuscated indicators in server logs that indicate an exploitation attempt of CVE-2021-44228"
+      author = "Florian Roth"
+      reference = "https://twitter.com/h113sdx/status/1469010902183661568?s=20"
+      date = "2021-12-12"
+      score = 60
+   strings:
+      $x1 = "$%7Bjndi:"
+      $x2 = "%2524%257Bjndi"
+      $x3 = "%2F%252524%25257Bjndi%3A"
+      $x4 = "${jndi:${lower:"
+      $x5 = "${::-j}${"
    condition:
       1 of them
 }
