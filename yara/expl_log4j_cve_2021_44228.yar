@@ -5,6 +5,7 @@ rule EXPL_Log4j_CVE_2021_44228_Dec21_Soft {
       author = "Florian Roth"
       reference = "https://twitter.com/h113sdx/status/1469010902183661568?s=20"
       date = "2021-12-10"
+      modified = "2021-12-12"
       score = 60
    strings:
       $x1 = "${jndi:ldap:/"
@@ -12,8 +13,8 @@ rule EXPL_Log4j_CVE_2021_44228_Dec21_Soft {
       $x3 = "${jndi:ldaps:/"
       $x4 = "${jndi:dns:/"
       $x5 = "$%7Bjndi:"
-      $x5 = "%2524%257Bjndi"
-      $x5 = "%2F%252524%25257Bjndi%3A"
+      $x6 = "%2524%257Bjndi"
+      $x7 = "%2F%252524%25257Bjndi%3A"
    condition:
       1 of them
 }
