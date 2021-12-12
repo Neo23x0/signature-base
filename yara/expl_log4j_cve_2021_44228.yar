@@ -31,7 +31,7 @@ rule EXPL_Log4j_CVE_2021_44228_Dec21_Soft {
       $x4 = "${jndi:dns:/"
       $x5 = "${jndi:iiop:/"
       $x6 = "${jndi:http:/"
-      $x6 = "${jndi:nis:/"
+      $x7 = "${jndi:nis:/"
    condition:
       1 of them
 }
