@@ -31,6 +31,7 @@ rule EXPL_Log4j_CVE_2021_44228_Dec21_Soft {
       $x4 = "${jndi:dns:/"
       $x5 = "${jndi:iiop:/"
       $x6 = "${jndi:http:/"
+      $x6 = "${jndi:nis:/"
    condition:
       1 of them
 }
@@ -58,9 +59,10 @@ rule EXPL_Log4j_CVE_2021_44228_Dec21_Hard {
       author = "Florian Roth"
       reference = "https://twitter.com/h113sdx/status/1469010902183661568?s=20"
       date = "2021-12-10"
+      modified = "2021-12-12"
       score = 80
    strings:
-      $x1 = /\$\{jndi:(ldap|ldaps|rmi|dns|iiop|http):\/[\/]?[a-z-\.0-9]{3,120}:[0-9]{2,5}\/[a-zA-Z\.]{1,32}\}/
+      $x1 = /\$\{jndi:(ldap|ldaps|rmi|dns|iiop|http|nis):\/[\/]?[a-z-\.0-9]{3,120}:[0-9]{2,5}\/[a-zA-Z\.]{1,32}\}/
       $fp1r = /(ldap|rmi|ldaps|dns):\/[\/]?(127\.0\.0\.1|192\.168\.|172\.[1-3][0-9]\.|10\.)/
    condition:
       $x1 and not 1 of ($fp*)
@@ -95,7 +97,7 @@ rule SUSP_JDNIExploit_Indicators_Dec21 {
       modified = "2021-12-12"
       score = 70
    strings:
-      $xr1 = /(ldap|ldaps|rmi|dns|iiop|http):\/\/[a-zA-Z0-9\.]{7,80}:[0-9]{2,5}\/(Basic\/Command\/Base64|Basic\/ReverseShell|Basic\/TomcatMemshell|Basic\/JBossMemshell|Basic\/WebsphereMemshell|Basic\/SpringMemshell|Basic\/Command|Deserialization\/CommonsCollectionsK|Deserialization\/CommonsBeanutils|Deserialization\/Jre8u20\/TomcatMemshell|Deserialization\/CVE_2020_2555\/WeblogicMemshell|TomcatBypass|GroovyBypass|WebsphereBypass)\//
+      $xr1 = /(ldap|ldaps|rmi|dns|iiop|http|nis):\/\/[a-zA-Z0-9\.]{7,80}:[0-9]{2,5}\/(Basic\/Command\/Base64|Basic\/ReverseShell|Basic\/TomcatMemshell|Basic\/JBossMemshell|Basic\/WebsphereMemshell|Basic\/SpringMemshell|Basic\/Command|Deserialization\/CommonsCollectionsK|Deserialization\/CommonsBeanutils|Deserialization\/Jre8u20\/TomcatMemshell|Deserialization\/CVE_2020_2555\/WeblogicMemshell|TomcatBypass|GroovyBypass|WebsphereBypass)\//
    condition:
       filesize < 100MB and $xr1
 }
