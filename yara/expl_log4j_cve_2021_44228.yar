@@ -194,10 +194,11 @@ rule SUSP_JDNIExploit_Error_Indicators_Dec21_1 {
       author = "Florian Roth"
       reference = "https://twitter.com/marcioalm/status/1470361495405875200?s=20"
       date = "2021-12-10"
-      modified = "2021-12-13"
+      modified = "2021-12-17"
       score = 70
    strings:
       $x1 = "FATAL log4j - Message: BadAttributeValueException: "
+      $x2 = "Error looking up JNDI resource"
    condition:
-      $x1
+      1 of them
 }
