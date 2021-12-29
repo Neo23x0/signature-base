@@ -10216,3 +10216,15 @@ e5e9b0f8d72f4e7b9022b7a83c673334d7967981191d2d98f9c57dc97b4caae1;Vulnerable Log4
 68d793940c28ddff6670be703690dfdf9e77315970c42c4af40ca7261a8570fa;Vulnerable Log4j library ./apache-log4j-2.14.0-bin/log4j-core-2.14.0.jar
 9da0f5ca7c8eab693d090ae759275b9db4ca5acdbcfe4a63d3871e0b17367463;Vulnerable Log4j library ./apache-log4j-2.14.1-bin/log4j-core-2.14.1.jar
 006fc6623fbb961084243cfc327c885f3c57f2eba8ee05fbc4e93e5358778c85;Vulnerable Log4j library ./log4j-2.0-alpha1/log4j-core-2.0-alpha1.jar
+
+
+4f8417af3a6f75780e09c5792397a05f;Malicious iLO Board components https://news.amnpardaz.com/wp-content/uploads/sites/3/2021/12/fa.pdf
+8433650ef98fd8790877e6616c02b66c;Malicious iLO Board components https://news.amnpardaz.com/wp-content/uploads/sites/3/2021/12/fa.pdf
+ae22d82a3e954ecf911b834463dbfbbe;Malicious iLO Board components https://news.amnpardaz.com/wp-content/uploads/sites/3/2021/12/fa.pdf
+1fdb4270665177ecb1c9708039bab934;Malicious iLO Board components https://news.amnpardaz.com/wp-content/uploads/sites/3/2021/12/fa.pdf
+7df3b258ca3c12f0f8de77469456e25d;Malicious iLO Board components https://news.amnpardaz.com/wp-content/uploads/sites/3/2021/12/fa.pdf
+9ab97c5b03664da18ab1f775dc11c200;Malicious iLO Board components https://news.amnpardaz.com/wp-content/uploads/sites/3/2021/12/fa.pdf
+7df3b258ca3c12f0f8de77469456e25d;Malicious iLO Board components https://news.amnpardaz.com/wp-content/uploads/sites/3/2021/12/fa.pdf
+9ab97c5b03664da18ab1f775dc11c200;Malicious iLO Board components https://news.amnpardaz.com/wp-content/uploads/sites/3/2021/12/fa.pdf
+64d0143d638885745b241796268eb0b2;Malicious iLO Board components https://news.amnpardaz.com/wp-content/uploads/sites/3/2021/12/fa.pdf
+bdeeab3994ec5d0b93d961148a6b712d;Malicious iLO Board components https://news.amnpardaz.com/wp-content/uploads/sites/3/2021/12/fa.pdf

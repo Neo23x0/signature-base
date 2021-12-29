@@ -3823,4 +3823,9 @@ application-2eaf7e76aa55726cc0419f604e58ee73c5578c02c9e21fdbe7ae887925ea92ae\.cs
 \\webapps\\DesktopCentral\\html\\help_me\.jsp;80
 \\webapps\\DesktopCentral\\html\\help_me\.html;80
 
+# Malicious iLO Board Analysis https://threats.amnpardaz.com/en/2021/12/28/implant-arm-ilobleed-a/
+\\logs\\lifesignal\.bin;80
+\\logs\\schedule\.bin;80
+\\fakefwdata\.bin;80
+
 # End
