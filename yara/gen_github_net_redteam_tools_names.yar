@@ -32,16 +32,19 @@ rule HKTL_NET_NAME_ADCollector {
     meta:
         description = "Detects .NET red/black-team tools via name"
         reference = "https://github.com/dev-2null/ADCollector"
-        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
         hash = "5391239f479c26e699b6f3a1d6a0a8aa1a0cf9a8"
         hash = "9dd0f322dd57b906da1e543c44e764954704abae"
         author = "Arnim Rupp"
         date = "2021-01-22"
     strings:
-        $name = "ADCollector" ascii wide
-        $compile = "AssemblyTitle" ascii wide
+        $s_name = "ADCollector" ascii wide
+        $s_compile = "AssemblyTitle" ascii wide
+
+        $fp1 = "Symantec Threat Defense" wide
     condition:
-        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and all of them
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and all of ($s*)
+        and not 1 of ($fp*)
 }
 
 rule HKTL_NET_NAME_MaliciousClickOnceGenerator {

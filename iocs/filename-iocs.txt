@@ -94,11 +94,15 @@ Temp\\Updatasched\.exe;80
 \\ws_18\.dll;80
 
 # Mandiant APT - LIGHTDART (FAMILY)
-\\ret\.log;80
-\\1\.rar;80
-\\qy\.htm;80
-\\shsat\.exe;80
-\\imxgy\.exe;80
+\\ret\.log;55
+\\qy\.htm;55
+\\shsat\.exe;70
+\\imxgy\.exe;70
+
+# Suspicious RAR File Names
+\\1\.rar;50
+\\a\.rar;50
+\\abc\.rar;50
 
 # Kaspersky Carbanak APT Malware Hash http://goo.gl/0Nhax2
 (application data|AppData|Anwendungsdaten)\\mozilla\\[^\\]+\.bin;80
@@ -737,7 +741,6 @@ AppData\\adobe\\adobe\.dat;65
 \\sachostx\.exe;45
 \\sathost\.exe;45
 \\sbhost\.exe;45
-\\scanost\.exe;45
 \\scchost\.exe;45
 \\scchost\.exe;45
 \\scchost2\.exe;45
