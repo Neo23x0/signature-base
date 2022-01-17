@@ -64,10 +64,10 @@ rule APT_HKTL_Wiper_WhisperGate_Stage3_Jan22 {
    strings:
       $xc1 = { 65 31 63 70 00 31 79 72 61 72 62 69 4c 73 73 61 6c 43 00 6e 69 61 4d }
 
-      $s1 = "%s%,%&%" ascii fullword
+      $s1 = "lld." wide
    condition:
       uint16(filesize-2) == 0x4d5a and
-      filesize < 1000KB and all of them
+      filesize < 5000KB and all of them
 }
 
 rule MAL_OBFUSC_Unknown_Jan22_1 {
