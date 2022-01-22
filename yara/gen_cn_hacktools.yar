@@ -1910,13 +1910,14 @@ rule IISPutScannesr {
 		uint16(0) == 0x5a4d and filesize < 500KB and all of them
 }
 
-rule HKTL_Unkown_CN_Generate {
+rule HKTL_Unknown_CN_Generate {
 	meta:
 		description = "Chinese Hacktool Set - file Generate.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
+		modified = "2022-01-20" /* fixed typo in rule name */
 		hash = "2cb4c3916271868c30c7b4598da697f59e9c7a12"
 	strings:
 		$s1 = "C:\\TEMP\\" fullword ascii
