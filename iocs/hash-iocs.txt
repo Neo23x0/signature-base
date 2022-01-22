@@ -10227,3 +10227,27 @@ ae22d82a3e954ecf911b834463dbfbbe;Malicious iLO Board components https://threats.
 9ab97c5b03664da18ab1f775dc11c200;Malicious iLO Board components https://threats.amnpardaz.com/en/2021/12/28/implant-arm-ilobleed-a/
 64d0143d638885745b241796268eb0b2;Malicious iLO Board components https://threats.amnpardaz.com/en/2021/12/28/implant-arm-ilobleed-a/
 bdeeab3994ec5d0b93d961148a6b712d;Malicious iLO Board components https://threats.amnpardaz.com/en/2021/12/28/implant-arm-ilobleed-a/
+
+D94962550B90DDB3F80F62BD96BD9858;MoonBounce APT - EFI Rootkit – Malicious CORE_DXE - https://securelist.com/moonbounce-the-dark-side-of-uefi-firmware/105468/
+C3B153347AED27435A18E789D8B67E0A;MoonBounce APT - Modified WMI DLL Launcher - https://securelist.com/moonbounce-the-dark-side-of-uefi-firmware/105468/
+4D5EB9F6F501B4F6EDF981A3C6C4D6FA;MoonBounce APT - StealthVector - https://securelist.com/moonbounce-the-dark-side-of-uefi-firmware/105468/
+E7155C355C90DC113476DDCF765B187D;MoonBounce APT - StealthVector - https://securelist.com/moonbounce-the-dark-side-of-uefi-firmware/105468/
+899608DE6B59C63B4AE219C3C13502F5;MoonBounce APT - StealthVector - https://securelist.com/moonbounce-the-dark-side-of-uefi-firmware/105468/
+4EF90CEEF2CC9FF3121B34A9891BB28D;MoonBounce APT - StealthVector - https://securelist.com/moonbounce-the-dark-side-of-uefi-firmware/105468/
+CFF2772C44F6F86661AB0A4FFBF86833;MoonBounce APT - StealthVector - https://securelist.com/moonbounce-the-dark-side-of-uefi-firmware/105468/
+5F9020983A61446A77AF1976247C443D;MoonBounce APT - InstallUtil Launcher - https://securelist.com/moonbounce-the-dark-side-of-uefi-firmware/105468/
+0603C8AAECBDC523CBD3495E93AFB20C;MoonBounce APT - StealthMutant - https://securelist.com/moonbounce-the-dark-side-of-uefi-firmware/105468/
+8C7598061D1E8741B8389A80BFD8B8F5;MoonBounce APT - StealthMutant - https://securelist.com/moonbounce-the-dark-side-of-uefi-firmware/105468/
+F9F9D6FB3CB94B1CDF9E437141B59E16;MoonBounce APT - StealthMutant - https://securelist.com/moonbounce-the-dark-side-of-uefi-firmware/105468/
+5FE6CE9C48D0AE98EC2CA1EC9759AAD9;MoonBounce APT - Microcin - https://securelist.com/moonbounce-the-dark-side-of-uefi-firmware/105468/
+50FF717A8E3106DDBF00FB42212879C5;MoonBounce APT - Microcin - https://securelist.com/moonbounce-the-dark-side-of-uefi-firmware/105468/
+D98614600775781673B6DF397CC4F476;MoonBounce APT - Microcin - https://securelist.com/moonbounce-the-dark-side-of-uefi-firmware/105468/
+C9B250099E2DD27BB4170836AC480FE0;MoonBounce APT - Go Implant - https://securelist.com/moonbounce-the-dark-side-of-uefi-firmware/105468/
+97EF7B8FCDCB0C0D9FBB93D0F7E6E3B6;MoonBounce APT - Go Implant - https://securelist.com/moonbounce-the-dark-side-of-uefi-firmware/105468/
+4E4388D7967E0433D400C60475974D50;MoonBounce APT - Mimikat_SSP - https://securelist.com/moonbounce-the-dark-side-of-uefi-firmware/105468/
+5F1C7602688E67F299F5BD533FA07880;MoonBounce APT - Mimikat_SSP - https://securelist.com/moonbounce-the-dark-side-of-uefi-firmware/105468/
+45E862964EF4EFDEA181F3927D20E96D;MoonBounce APT - xTalker Rootkit - https://securelist.com/moonbounce-the-dark-side-of-uefi-firmware/105468/
+4BC82105403974AA24BF02CFB66B8F7C;MoonBounce APT - xTalker Rootkit - https://securelist.com/moonbounce-the-dark-side-of-uefi-firmware/105468/
+
+707B8684009665742B9C6D801C12B9803F33FC518CB6BF513B4FA15A9E72E106;MoonBounce APT - EFI Rootkit - https://securelist.com/moonbounce-the-dark-side-of-uefi-firmware/105468/
+F17C1F644CEF38D7083CD6DDEB52BFDA2D36D0376EA38CC3F413CAB2CA16CA7D;MoonBounce APT - EFI Rootkit - https://securelist.com/moonbounce-the-dark-side-of-uefi-firmware/105468/

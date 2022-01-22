@@ -3831,4 +3831,19 @@ application-2eaf7e76aa55726cc0419f604e58ee73c5578c02c9e21fdbe7ae887925ea92ae\.cs
 \\logs\\schedule\.bin;80
 \\fakefwdata\.bin;80
 
+# MoonBounce APT https://securelist.com/moonbounce-the-dark-side-of-uefi-firmware/105468/
+\\wbwkem\.dll;85
+\\wkbem\.dll;85
+\\wmiwk\.dll;85
+\\C_20344\.nls;85
+\\C_20334\.nls;85
+\\compwm\.bin;85
+\\pcomnl\.bin;85
+\\wmipl\.dll;85
+\\Microsoft\.Service\.Watch\.targets;85
+\\MstUtil\.exe\.config;85
+\\System\.Mail\.Service\.dll;85
+\\schtask\.bat;60
+\\CmluaApi\.dll;85
+
 # End

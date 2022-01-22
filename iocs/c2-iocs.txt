@@ -1741,4 +1741,38 @@ theyardservice.com
 trendignews.com
 worldhomeoutlet.com
 
+# MoonBounce APT https://securelist.com/moonbounce-the-dark-side-of-uefi-firmware/105468/
+mb.glbaitech.com
+ns.glbaitech.com
+dev.kinopoisksu.com
+st.kinopoisksu.com
+188.166.61.146
+172.107.231.236
+193.29.57.161
+136.244.100.127
+217.69.10.104
+92.38.178.246
+m.necemarket.com
+172.105.94.67
+holdmem.dbhubspi.com
+5.188.93.132
+5.189.222.33
+5.183.103.122
+5.188.108.228
+45.128.132.6
+92.223.105.246
+5.183.101.21
+5.183.101.114
+45.128.135.15
+5.188.108.22
+70.34.201.16
+
+# Turla related IOCs https://twitter.com/ClearskySec/status/1484211260287815684?s=20
+77.104.135.97
+37.140.192.87
+217.174.238.14
+microtech.az
+azecofarm.az
+online.tm
+
 # Last Line
