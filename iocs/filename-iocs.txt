@@ -3846,4 +3846,8 @@ application-2eaf7e76aa55726cc0419f604e58ee73c5578c02c9e21fdbe7ae887925ea92ae\.cs
 \\schtask\.bat;60
 \\CmluaApi\.dll;85
 
+# RedHat PrivEsc IOCs https://github.com/ly4k/PwnKit CVE-2021-4034
+/PwnKit;90
+/PwnKit\.sh;90
+
 # End
