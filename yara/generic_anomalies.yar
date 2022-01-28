@@ -98,11 +98,12 @@ rule Suspicious_Size_csrss_exe {
       author = "Florian Roth"
         score = 60
         date = "2015-12-21"
+        modified = "2022-01-28"
         noarchivescan = 1
     condition:
         uint16(0) == 0x5a4d
         and filename == "csrss.exe"
-        and ( filesize > 18KB )
+        and ( filesize > 50KB )
 }
 
 rule Suspicious_Size_iexplore_exe {
