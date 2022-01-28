@@ -3850,4 +3850,18 @@ application-2eaf7e76aa55726cc0419f604e58ee73c5578c02c9e21fdbe7ae887925ea92ae\.cs
 /PwnKit;90
 /PwnKit\.sh;90
 
+# Winpeas Filename IOCs https://github.com/carlospolop/PEASS-ng
+\\winPEASx64;80
+\\winPEASx86;80
+\\winPEASxany;80
+\\winPEAS\.txt;80
+\\winPEAS-Obfuscated\.exe;80
+\\winpeas\.exe\.log;80
+\\winPEASxany\.bat;80
+/linpeas_linux_;80
+/linpeas\.sh;80
+
+# Gopher Filename IOCs https://github.com/EncodeGroup/Gopher
+\\Gopher\.exe\.log;80
+
 # End
