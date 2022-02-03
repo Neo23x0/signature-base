@@ -3864,4 +3864,12 @@ application-2eaf7e76aa55726cc0419f604e58ee73c5578c02c9e21fdbe7ae887925ea92ae\.cs
 # Gopher Filename IOCs https://github.com/EncodeGroup/Gopher
 \\Gopher\.exe\.log;80
 
+# Cyber Brief Report German BfV on APT27 https://www.verfassungsschutz.de/SharedDocs/publikationen/DE/cyberabwehr/2022-01-bfv-cyber-brief.pdf
+\\ProgramData\\windefenders\\thumb\.dat;85
+\\ProgramData\\windefenders\\config\.ini;85
+\\Program Files\\Common Files\\windefenders\\thumb\.dat;95
+\\Program Files\\Common Files\\windefenders\\config\.ini;95
+\\Temp\\[a-z\.]{3,16}\.key\.log;65
+\\Common Files\\windefenders\\vftrace\.dll;95
+
 # End
