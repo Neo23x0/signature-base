@@ -14,7 +14,7 @@ rule MAL_ZIP_SocGholish_Mar21_1 : zip js socgholish {
         $b1 = "Firefox.js" ascii
         $b2 = "Edge.js" ascii
     condition:
-        uint16(0) == 0x4b50 and filesize > 1000 and filesize < 1600 and (
+        uint16(0) == 0x4b50 and filesize < 1600 and (
             2 of ($a*) or
             any of ($b*)
         )
