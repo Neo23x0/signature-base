@@ -60,8 +60,11 @@ rule APT_UA_Hermetic_Wiper_Artefacts_Feb22_1 {
       $sa1 = "(New-Object System.Net.WebClient).DownloadFile(" ascii wide
       $sa2 = "CSIDL_SYSTEM_DRIVE\\temp\\" ascii wide
       $sa3 = "1> \\\\127.0.0.1\\ADMIN$" ascii wide
+
+      $fp1 = "<html" ascii
    condition:
       1 of ($sx*) or all of ($sa*)
+      and not 1 of ($fp*)
 }
 
 rule APT_UA_Hermetic_Wiper_Scheduled_Task_Feb22_1 {
