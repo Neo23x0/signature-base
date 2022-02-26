@@ -3879,4 +3879,8 @@ application-2eaf7e76aa55726cc0419f604e58ee73c5578c02c9e21fdbe7ae887925ea92ae\.cs
 \\link\.ps1;50
 \\text\.ps1;50
 
+# Hermetic Wiper IOCs CrowdStrike https://www.crowdstrike.com/blog/how-crowdstrike-falcon-protects-against-wiper-malware-used-in-ukraine-attacks/
+:\\Windows\\System32\\drivers\\bpdr$;85
+:\\Windows\\System32\\drivers\\bpdr.sys;85
+
 # End
