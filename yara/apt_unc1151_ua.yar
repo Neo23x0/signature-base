@@ -1,4 +1,4 @@
-rule APT_UNC3313_WindowsInstaller_Silent_InstallProduct_MacroMethod {
+rule APT_UNC1151_WindowsInstaller_Silent_InstallProduct_MacroMethod {
     meta:
         author = "Proofpoint Threat Research"
         date = "2021-07-28"
