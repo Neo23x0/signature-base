@@ -3,7 +3,7 @@ import "pe"
 
 rule SUSP_NVIDIA_LAPSUS_Leak_Compromised_Cert_Mar22_1 {
    meta:
-      description = "Detects a binary signed with the leaked NVIDIA certifcate after March 1st 2022"
+      description = "Detects a binary signed with the leaked NVIDIA certifcate and compiled after March 1st 2022"
       author = "Florian Roth"
       date = "2022-03-03"
       score = 70
@@ -16,3 +16,4 @@ rule SUSP_NVIDIA_LAPSUS_Leak_Compromised_Cert_Mar22_1 {
          pe.signatures[i].serial == "43:bb:43:7d:60:98:66:28:6d:d8:39:e1:d0:03:09:f5"
    )
 }
+
