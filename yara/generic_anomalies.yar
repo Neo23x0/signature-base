@@ -198,11 +198,12 @@ rule Suspicious_Size_igfxhk_exe {
       author = "Florian Roth"
         score = 60
         date = "2015-12-21"
+        modified = "2022-03-08"
         noarchivescan = 1
     condition:
         uint16(0) == 0x5a4d
         and filename == "igfxhk.exe"
-        and ( filesize < 200KB or filesize > 265KB )
+        and ( filesize < 200KB or filesize > 300KB )
 }
 
 rule Suspicious_Size_servicehost_dll {
