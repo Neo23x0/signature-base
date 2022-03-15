@@ -57,7 +57,7 @@ rule SocGholish_JS_22_02_2022 {
         hash = "d08a2350df5abbd8fd530cff8339373e"
     
     strings:
-        $s1 = " + encodeURIComponent(''+" ascii
+        $s1 = "encodeURIComponent(''+" ascii
         $s2 = "['open']('POST'," ascii 
         $s3 = "new ActiveXObject('MSXML2.XMLHTTP');" ascii
     
