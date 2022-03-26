@@ -3738,7 +3738,7 @@ C:\\Users\\All Users\\ZING\\;75
 C:\\Program\.exe;65
 
 # Suspicious contents in Users/Public folder 
-\\Users\\Public\\[^\\]{1,20}\.(dll|vbs|ps1|bat);70
+\\Users\\Public\\[^\\]{1,20}\.(dll|vbs|ps1|bat|hta|com);70
 \\Users\\Public\\[^\\]{1,20}\.exe;65
 
 # Nmap, Network scanning tool https://nmap.org/
@@ -3889,5 +3889,9 @@ application-2eaf7e76aa55726cc0419f604e58ee73c5578c02c9e21fdbe7ae887925ea92ae\.cs
 # Hermetic Wiper IOCs CrowdStrike https://www.crowdstrike.com/blog/how-crowdstrike-falcon-protects-against-wiper-malware-used-in-ukraine-attacks/
 :\\Windows\\System32\\drivers\\bpdr$;85
 :\\Windows\\System32\\drivers\\bpdr.sys;85
+
+# DripLoader https://blog.redbluepurple.io/offensive-research/bypassing-injection-detection
+\\DripLoader\.exe;75
+\\passav\.exe;65
 
 # End
