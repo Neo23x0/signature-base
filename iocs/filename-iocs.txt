@@ -3127,6 +3127,13 @@ C:\\Windows\\[^\\]{1,20}\.(js|ps1|vbs);50
 \\lsass\.7z;80
 \\lsass\.rar;80
 \\lsass\.exe[_0-9]{0,15}\.(dmp|zip|rar);80
+\\dumpert\.dmp;80
+\\Andrew\.dmp;80
+\\Coredump\.dmp;80
+\\lsass_2;65
+\\lsassdump;65
+\\lsassdmp;65
+\\lsass[a-zA-Z_\-\.]{1,16}\.(dmp|zip|rar);70
 
 # Suspicious Extension in AppPatch folder
 c:\\windows\\AppPatch\\[^\\]{1,20}\.(exe|vbs|ps1|bat);70
