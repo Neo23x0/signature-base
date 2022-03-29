@@ -3887,4 +3887,25 @@ application-2eaf7e76aa55726cc0419f604e58ee73c5578c02c9e21fdbe7ae887925ea92ae\.cs
 \\DripLoader\.exe;75
 \\passav\.exe;65
 
+# Exploit Code File Names 
+\\cve-20(20|19)-[0-9]{4,5}.{0,20}(\.py|\.exe|\.vbs|\.bat|\.ps1|\.dll|$);80
+
+# Possible Service Path Escalation Attempt http://www.commonexploits.com/unquoted-service-paths/ or simple malware
+:\\Program\.exe;75
+
+# Local Privilege Escalation exploit names https://github.com/search?q=local+privilege+escalation
+\\UserProfileSvcEoP\.exe;90
+Potato\.exe;65
+\\spawn_cmd\.dll;90
+\\RogueWinRM\.exe;90
+\\StartCMD\.dll;70
+\\start_cmd\.dll;70
+\\ProfSvcLPE\.exe;75
+\\cve\.exe;45
+\\RottenTomato\.exe;80
+\\windows-privesc-check\.exe;70
+\\windows-privesc-check2\.exe;70
+\\dll_hijack_detect_x64\.exe;70
+\\dll_hijack_detect_x86\.exe;70
+
 # End
