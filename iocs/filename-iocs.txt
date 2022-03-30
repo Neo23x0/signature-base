@@ -3908,4 +3908,7 @@ Potato\.exe;65
 \\dll_hijack_detect_x64\.exe;70
 \\dll_hijack_detect_x86\.exe;70
 
+# LSASS Dump Names 
+\\lsass[a-zA-Z_\-\.]{1,16}\.(dmp|zip|rar|7z);70
+
 # End
