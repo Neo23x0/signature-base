@@ -2066,11 +2066,19 @@ ystem32\\lcsvsvc\.dll;80
 [Cc]:\\(Windows|Winnt)\\(repair|security)\\[^\\]{1,20}\.(exe|dll);60
 \\Cookies\\[^\\]{1,20}\.(exe|dll);60
 \\RSA\\MachineKeys\\[^\\]{1,20}\.(exe|dll);60
-\\ProgramData\\[^\\]{1,20}\.(exe|dll);60
 \\(Users|Documents and Settings)\\[^\\]{1,20}\\Start Menu\\[^\\]{1,20}\.(exe|dll);60
 \\(Users|Documents and Settings)\\[^\\]{1,20}\\AppData\\[^\\]{1,20}\.(exe|dll);60
+\\(Users|Documents and Settings)\\[^\\]{1,20}\\AppData\\(Local|Roaming)\\[^\\]{1,20}\.(exe|dll);60
 \\(Users|Documents and Settings)\\[^\\]{1,20}\\AppData\\Roaming\\Identities\\[^\\]{1,20}\.(exe|dll);60
 \\tsclient\\[^\\]{1,20}\.(exe|dll);40
+
+# Typical Malware Location - AppData / Local / Roaming
+(?i)\\AppData\\[^\\/]{1,64}\.exe([^._\\\]]|$);75
+(?i)\\AppData\\[^\\/]{1,64}\.(dll|bat|vbs|ps1|js|hta);80;(\.json|\\Program Files\\Win Movie Maker\\)
+(?i)\\AppData\\Local\\[^\\/]{1,64}\.exe([^._\\\]]|$);75;\[Update\.exe\]
+(?i)\\AppData\\Local\\[^\\/]{1,64}\.(dll|bat|vbs|ps1|hta);80
+(?i)\\AppData\\Roaming\\[^\\/]{1,64}\.exe$;75;\\JomCap\.dll
+(?i)\\AppData\\Roaming\\[^\\/]{1,64}\.(dll|bat|vbs|ps1|hta);80
 
 # Metasploit-dropped files with random file names
 #\\windows\\temp\\[a-zA-Z]{16}\.(exe|bat);60;VerifyAndInstall\.exe
@@ -3910,5 +3918,12 @@ Potato\.exe;65
 
 # LSASS Dump Names 
 \\lsass[a-zA-Z_\-\.]{1,16}\.(dmp|zip|rar|7z);70
+
+# Programs or scripts in C:\ProgramData folder (no sub folder)
+\\ProgramData\\[^\\]{1,40}\.(EXE|DLL|exe|dll|bat|BAT|vbs|VBS|ps1|jar)([^._\\\]]|$);70;(\[Discord\.exe\]|UserProfileMigrationService\.exe|\.exe\.textpad|\\\$WINDOWS\.~BT\\)
+
+# PostDump artefacts https://github.com/post-cyberlabs/Offensive_tools/tree/main/PostDump
+:\\Temp\\yolo\.log;75
+\\PostDump\.exe;65
 
 # End
