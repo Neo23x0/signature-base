@@ -3926,4 +3926,7 @@ Potato\.exe;65
 :\\Temp\\yolo\.log;75
 \\PostDump\.exe;65
 
+# DuplicateDump IOC https://github.com/Hagrid29/DuplicateDump
+:\\LSAPlugin\.dll;80
+
 # End
