@@ -45,7 +45,7 @@ rule MAL_JS_SocGholish_Mar21_1 : js socgholish {
         $try in (0 .. 10) and filesize > 3KB and filesize < 5KB and 8 of ($s*)
 }
 
-rule SocGholish_JS_22_02_2022 {
+rule SocGholish_JS_22_02_2022{
     meta:
         description = "Detects SocGholish fake update Javascript files 22.02.2022"
         author = "Wojciech Cieślak"
@@ -55,13 +55,15 @@ rule SocGholish_JS_22_02_2022 {
         hash = "afee3af324951b1840c789540d5c8bff"
         hash = "c04a1625efec27fb6bbef9c66ca8372b"
         hash = "d08a2350df5abbd8fd530cff8339373e"
+        hash = "a69efc410e727b16e54b11004f36c7e3"
     
-    strings:
-        $s1 = "encodeURIComponent(''+" ascii
+  strings:
+        $s1 = "encodeURIComponent" ascii
         $s2 = "['open']('POST'," ascii 
-        $s3 = "new ActiveXObject('MSXML2.XMLHTTP');" ascii
+        $s3 = "ActiveXObject" ascii
+        $s4 = "'MSXML2.XMLHTTP'" ascii
     
     condition:
-        filesize < 5KB and all of them
+        all of them and filesize < 3000
 }
 
