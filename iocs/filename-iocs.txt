@@ -3929,4 +3929,13 @@ Potato\.exe;65
 # DuplicateDump IOC https://github.com/Hagrid29/DuplicateDump
 :\\LSAPlugin\.dll;80
 
+# Filename IOCs mentioned in Industroyer2 Report https://www.welivesecurity.com/2022/04/12/industroyer2-industroyer-reloaded/
+\\108_100\.exe;85
+\\zrada\.exe;75
+\\pa\.pay$;65
+\\link\.ps1;60
+\\sc\.sh$;65
+\\wobf\.sh;80
+\\wsol\.sh;80
+
 # End
