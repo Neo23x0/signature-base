@@ -3938,4 +3938,7 @@ Potato\.exe;65
 \\wobf\.sh;80
 \\wsol\.sh;80
 
+# Possible LPE CVE-2022-24527 - check the file contents https://www.rapid7.com/blog/post/2022/04/12/cve-2022-24527-microsoft-connected-cache-local-privilege-escalation-fixed/
+\\WindowsPowerShell\\Modules\\webAdministration\\webAdministration\.psm1;70
+
 # End
