@@ -10258,3 +10258,36 @@ FD9C17C35A68FC505235E20C6E50C622AED8DEA0;Industroyer2 Report - 108_100.exe Win32
 D27D0B9BB57B2BAB881E0EFB97C740B7E81405DF;Industroyer2 Report - sc.sh Linux/Agent.PC trojan OrcShred (Linux worm) - https://www.welivesecurity.com/2022/04/12/industroyer2-industroyer-reloaded/
 3CDBC19BC4F12D8D00B81380F7A2504D08074C15;Industroyer2 Report - wobf.sh Linux/KillFiles.C trojan AwfulShred (Linux wiper) - https://www.welivesecurity.com/2022/04/12/industroyer2-industroyer-reloaded/
 8FC7646FA14667D07E3110FE754F61A78CFDE6BC;Industroyer2 Report - wsol.sh Linux/KillFiles.B trojan SoloShred (Solaris wiper) - https://www.welivesecurity.com/2022/04/12/industroyer2-industroyer-reloaded/
+
+164f6a8f7d2035ea47514ea84294348e32c90d817724b80ad9cd3af6f93d83f8;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
+18686d04f22d3b593dd78078c9db0ac70f66c7138789ad38469ec13162b14cef;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
+1cb8ea3e959dee988272904dbb134dad93539f2c07f08e1d6e10e75a019b9976;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
+2dd29b36664b28803819054a59934f7a358a762068b18c744281e1589af00f1f;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
+32bfdf1744077c9365a811d66a6ea152831a60a4f94e671a83228016fc87615f;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
+35de8163c433e8d9bf6a0097a506e3abbb8308330d3c5d1dea6db71e1d225fc3;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
+4277fcaada4939b76a3df4515b7f74837bf8c4b75d4ff00f8d464169eede01e3;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
+4446efafb4b757f7fc20485198236bed787c67ceffc05f70cd798612424384ce;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
+48f3ead8477f3ef16da6b74dadc89661a231c82b96f3574c6b7ceb9c03468291;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
+4a2236596e92fa704d8550c56598855121430f96fe088712b043cba516f1c76c;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
+54029bd4fcc24551564942561a60b906bee136264f24f43775b7a8e15095a9e0;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
+56da872e8b0f145417defd4a37f357b2f73f244836ee30ac27af7591cda2d283;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
+5e7edc8f1c652f53a6d2eabfbd9252781598de91dbe59b7a74706f69eb52b287;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
+5f20cc6a6a82b940670a0f89eda5d68f091073091394c362bfcaf52145b058db;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
+61e305d6325b1ffb6de329f1eb5b3a6bcafa26c856861a8200d717df0dec48c4;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
+67f1db122ad8f01e5faa60e2facf16c0752f6ab24b922f218efce19b0afaf607;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
+7491f298e27eb7ce7ebbf8821527667a88eecd5f3bc5b38cd5611f7ebefde21e;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
+79b7964bde948b70a7c3869d34fe5d5205e6259d77d9ac7451727d68a751aa7d;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
+7aa62af5a55022fd89b3f0c025ea508128a03aab5bc7f92787b30a3e9bc5c6e4;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
+8769912b9769b4c11aabc523a699d029917851822d4bc1cb6cc65b0c27d2b135;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
+8aace6989484b88abc7e3ec6f70b60d4554bf8ee0f1ccad15db84ad04c953c2d;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
+942489ce7dce87f7888322a0e56b5e3c3b0130e11f57b3879fbefc48351a78f6;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
+a881c9f40c1a5be3919cafb2ebe2bb5b19e29f0f7b28186ee1f4b554d692e776;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
+bdb76c8d0afcd6b57c8f1fa644765b95375af2c3a844c286db7f60cf9ca1a22a;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
+d815fb8febaf113f3cec82f552dfec1f205071a0492f7e6a2657fa6b069648c6;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
+e1997d1c3d84c29e02b1b7b726a0d0f889a044d7cd339f4fb88194c2c0c6606d;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
+e31af5131a095fbc884c56068e19b0c98636d95f93c257a0c829ec3f3cc8e4ba;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
+ef987baef9a1619454b14e1fec64283808d4e0ce16fb87d06049bfcf9cf56af3;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
+f29d386bdf77142cf2436797fba1f8b05fab5597218c2b77f57e46b8400eb9de;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
+f7359490d6c141ef7a9ee2c03dbbd6ce3069e926d83439e1f8a3dfb3a7c3dc94;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
+f8995634b102179a5d3356c6f353cb3a42283d9822e157502486262a3af4447e;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
+ff167e09b3b7ad6ed1dead9ee5b4747dd308699a00905e86162d1ec1b61e0476;Lazarus IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical
