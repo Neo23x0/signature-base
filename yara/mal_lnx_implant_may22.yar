@@ -1,9 +1,9 @@
 
-rule MAL_LNX_Implant_May22_1 {
+rule APT_MAL_LNX_RedMenshen_BPFDoor_Controller_May22_1 {
    meta:
       description = "Detects unknown Linux implants (uploads from KR and MO)"
       author = "Florian Roth"
-      reference = "https://twitter.com/GossiTheDog/status/1522000023092965376"
+      reference = "https://twitter.com/jcksnsec/status/1522163033585467393"
       date = "2022-05-05"
       score = 90
       hash1 = "07ecb1f2d9ffbd20a46cd36cd06b022db3cc8e45b1ecab62cd11f9ca7a26ab6d"
@@ -30,3 +30,4 @@ rule MAL_LNX_Implant_May22_1 {
       uint16(0) == 0x457f and
       filesize < 80KB and 2 of them or 5 of them
 }
+
