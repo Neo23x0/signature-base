@@ -10385,3 +10385,15 @@ d665b0cfd313d8a72586b0515b92496dd7dc4bb0;WhisperGate IOCs - crypted_2.exe - http
 3ac2d185c28548d43ea47b8fa3795b4308a4c39d;WhisperGate IOCs - Jdnpanki.exe - https://www.cisa.gov/uscert/ncas/alerts/aa22-057a
 e0770b79e372f2cab86ae2ec33b5160708059eee;WhisperGate IOCs - payload.vbs payload_2.vbs - https://www.cisa.gov/uscert/ncas/alerts/aa22-057a
 98ab3ae46358a66c480810d1e4f24ef730e4dc7e;WhisperGate IOCs - 1.rar - https://www.cisa.gov/uscert/ncas/alerts/aa22-057a
+
+BB93AE0FEE817FE56C31BDC997F3F7D57A48C187;Winnti IOCs STASHLOG https://www.cybereason.com/blog/operation-cuckoobees-a-winnti-malware-arsenal-deep-dive#iocs
+4D1B8791D0715FE316B43FC95BDC335CB31A82CA;Winnti IOCs STASHLOG https://www.cybereason.com/blog/operation-cuckoobees-a-winnti-malware-arsenal-deep-dive#iocs
+2D336978AF261E07B1ECFAF65DC903B239E287A4;Winnti IOCs STASHLOG https://www.cybereason.com/blog/operation-cuckoobees-a-winnti-malware-arsenal-deep-dive#iocs
+F2D04FE529E2D8DAB96242305255CFB84CE81E9C;Winnti IOCs STASHLOG https://www.cybereason.com/blog/operation-cuckoobees-a-winnti-malware-arsenal-deep-dive#iocs
+F8D46895E738254238473D650D99BDC92C34EE44;Winnti IOCs SPARKLOG https://www.cybereason.com/blog/operation-cuckoobees-a-winnti-malware-arsenal-deep-dive#iocs
+9267FE0BB6D367FC9186E89EA65B13BAA7418D87;Winnti IOCs PRIVATELOG https://www.cybereason.com/blog/operation-cuckoobees-a-winnti-malware-arsenal-deep-dive#iocs
+A009A0F5A385683AEA74299CBE6D5429C609F2D2;Winnti IOCs PRIVATELOG https://www.cybereason.com/blog/operation-cuckoobees-a-winnti-malware-arsenal-deep-dive#iocs
+1316F715D228AE6CC1FBA913C6CC309861F82E14;Winnti IOCs PRIVATELOG https://www.cybereason.com/blog/operation-cuckoobees-a-winnti-malware-arsenal-deep-dive#iocs
+1275894D8231FE25DB56598DDCF869F88DF5AD8D;Winnti IOCs WINNKIT https://www.cybereason.com/blog/operation-cuckoobees-a-winnti-malware-arsenal-deep-dive#iocs
+9139C89B2B625E2CEEE2CBF72AEF6C5104707A26;Winnti IOCs WINNKIT https://www.cybereason.com/blog/operation-cuckoobees-a-winnti-malware-arsenal-deep-dive#iocs
+082DBCA2C3CA5C5410DE9951A5C681F0C42235C8;Winnti IOCs WINNKIT https://www.cybereason.com/blog/operation-cuckoobees-a-winnti-malware-arsenal-deep-dive#iocs

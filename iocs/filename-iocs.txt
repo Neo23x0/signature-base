@@ -3941,4 +3941,27 @@ Potato\.exe;65
 # Possible LPE CVE-2022-24527 - check the file contents https://www.rapid7.com/blog/post/2022/04/12/cve-2022-24527-microsoft-connected-cache-local-privilege-escalation-fixed/
 \\WindowsPowerShell\\Modules\\webAdministration\\webAdministration\.psm1;70
 
+# Operation CuckooBees: A Winnti Malware Arsenal Deep-Dive https://www.cybereason.com/blog/operation-cuckoobees-a-winnti-malware-arsenal-deep-dive
+:\\Windows\\temp\\bc\.bat;85
+:\\Windows\\AppPatch\\Custom\\Custom64\\cc\.bat;85
+:\\Windows\\temp\\cc\.log;85
+:\\Windows\\AppPatch\\Custom\Custom64\log\.dat;85
+:\\Windows\\Branding\\Basebrd\x64\.tlb;85
+:\\Windows\\Branding\\Basebrd\language\.dll;85
+:\\Windows\\System32\\mscuplt\.dll;70
+:\\Windows\\System32\\rpcutl\.dll;70
+:\\Windows\\System32\\dot3utl\.dll;70
+:\\Windows\\System32\\iumatl\.dll;70
+:\\Windows\\System32\\Nlsutl\.dll;70
+:\\Windows\\System32\\WindowsPowerShell\v1.0\dbghelp\.dll;85
+:\\Windows\\System32\\drivers\bqDsp\.sys;85
+:\\Windows\\apppatch\\en-us\MFSDLL\.exe;85
+:\\Windows\\System32\\spool\drivers\x64\3\prntvpt\.dll;85
+:\\Windows\\System32\\WindowsPowerShell\v1.0\wlbsctrl\.dll;85
+:\\Windows\\assembly\\gac_msil\dfsvc\foserv\.exe;85
+:\\Windows\\assembly\\temp\foserv\.exe;85
+:\\Windows\\apppatch\\custom\custom64\shiver\.exe;85
+:\\Windows\\apppatch\\custom\custom64\spark\.exe;85
+\\mktzx64\.dll;85
+
 # End
