@@ -3964,9 +3964,10 @@ Potato\.exe;65
 :\\Windows\\AppPatch\\Custom\\Custom64\\spark\.exe;85
 \\mktzx64\.dll;85
 
-# BPFDoor Analysis https://doublepulsar.com/bpfdoor-an-active-chinese-global-surveillance-tool-54b078f1a896
+# BPFDoor Analysis https://doublepulsar.com/bpfdoor-an-active-chinese-global-surveillance-tool-54b078f1a896 https://www.sandflysecurity.com/blog/bpfdoor-an-evasive-linux-backdoor-technical-analysis/
 /dev/shm/kdmtmpflush;90
 /dev/shm/kdumpflush;90
 /dev/shm/kdumpdb;90
+/var/run/haldrund\.pid;80
 
 # End
