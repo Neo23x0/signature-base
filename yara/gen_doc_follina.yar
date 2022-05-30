@@ -14,7 +14,7 @@ rule SUSP_Doc_WordXMLRels_May22 {
       all of them
 }
 
-rule SUSP_Doc_RTF_externalResource_May22 {
+rule SUSP_Doc_RTF_ExternalResource_May22 {
    meta:
       description = "Detects a suspicious pattern in RTF files which downloads external resources"
       author = "Tobias Michalski, Christian Burkard"
@@ -30,7 +30,7 @@ rule SUSP_Doc_RTF_externalResource_May22 {
       all of them
 }
 
-rule MAL_msdt_MSProtocolURI_May22 {
+rule MAL_Msdt_MSProtocolURI_May22 {
    meta:
       description = "Detects the malicious usage of the ms-msdt URI"
       author = "Tobias Michalski, Christian Burkard"
