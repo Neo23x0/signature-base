@@ -16,7 +16,7 @@ rule SUSP_Doc_WordXMLRels_May22 {
 
 rule SUSP_Doc_RTF_externalResource_May22 {
    meta:
-      description = "Detects a suspicious pattern in RTF files which download external resources"
+      description = "Detects a suspicious pattern in RTF files which downloads external resources"
       author = "Tobias Michalski, Christian Burkard"
       date = "2022-05-30"
       reference = "https://doublepulsar.com/follina-a-microsoft-office-code-execution-vulnerability-1a47fce5629e"
