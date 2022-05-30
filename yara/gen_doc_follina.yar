@@ -29,3 +29,19 @@ rule SUSP_Doc_RTF_externalResource_May22 {
       uint32be(0) == 0x7B5C7274 and
       all of them
 }
+
+rule MAL_msdt_MSProtocolURI_May22 {
+   meta:
+      description = "Detects the malicious usage of the ms-msdt URI"
+      author = "Tobias Michalski, Christian Burkard"
+      date = "2022-05-30"
+      reference = "https://doublepulsar.com/follina-a-microsoft-office-code-execution-vulnerability-1a47fce5629e"
+      hash = "4a24048f81afbe9fb62e7a6a49adbd1faf41f266b5f9feecdceb567aec096784"
+      score = 80
+   strings:
+      $x = "location.href = \"ms-msdt:" ascii
+   condition:
+      filesize > 3KB and
+      filesize < 100KB and
+      1 of them
+}
