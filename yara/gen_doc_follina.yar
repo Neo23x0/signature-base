@@ -25,8 +25,8 @@ rule SUSP_Doc_RTF_ExternalResource_May22 {
       $s1 = " LINK htmlfile \"http" ascii
       $s2 = ".html!\" " ascii
    condition:
-      filesize < 300KB and
       uint32be(0) == 0x7B5C7274 and
+      filesize < 300KB and
       all of them
 }
 
