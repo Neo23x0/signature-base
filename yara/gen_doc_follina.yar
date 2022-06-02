@@ -3,18 +3,20 @@ rule SUSP_PS1_Msdt_Execution_May22 {
       description = "Detects suspicious calls of msdt.exe as seen in CVE-2022-30190"
       author = "Nasreddine Bencherchali, Christian Burkard"
       date = "2022-05-31"
+      modified = "2022-06-02"
       reference = "https://doublepulsar.com/follina-a-microsoft-office-code-execution-vulnerability-1a47fce5629e"
-      score = 70
+      score = 75
    strings:
       $sa1 = "msdt.exe" ascii wide
       $sa2 = "msdt " ascii wide
 
-      $sb1 = "ms-msdt:" ascii wide
+      $sb1 = "/af " ascii wide
       $sb2 = "IT_BrowseForFile=" ascii wide
+
    condition:
       filesize < 10MB
       and 1 of ($sa*)
-      and all of ($sb*)
+      and 1 of ($sb*)
 }
 
 rule SUSP_Doc_WordXMLRels_May22 {
