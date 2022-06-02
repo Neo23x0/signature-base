@@ -22,19 +22,20 @@ rule SUSP_Doc_WordXMLRels_May22 {
       description = "Detects a suspicious pattern in docx document.xml.rels file as seen in CVE-2022-30190"
       author = "Tobias Michalski, Christian Burkard, Wojciech Cieślak"
       date = "2022-05-30"
-      modified = "2022-05-31"
+      modified = "2022-06-02"
       reference = "https://doublepulsar.com/follina-a-microsoft-office-code-execution-vulnerability-1a47fce5629e"
       hash = "62f262d180a5a48f89be19369a8425bec596bc6a02ed23100424930791ae3df0"
       score = 70
    strings:
       $a1 = "<Relationships" ascii
       $a2 = "TargetMode=\"External\"" ascii
-      
+
       $x1 = ".html!" ascii
-      $x2 = ".htm!" ascii   
+      $x2 = ".htm!" ascii
    condition:
-      filesize < 50KB and
-      all of ($a*) and 1 of ($x*)
+      filesize < 50KB
+      and all of ($a*)
+      and 1 of ($x*)
 }
 
 rule SUSP_Doc_RTF_ExternalResource_May22 {
