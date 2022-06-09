@@ -2066,11 +2066,19 @@ ystem32\\lcsvsvc\.dll;80
 [Cc]:\\(Windows|Winnt)\\(repair|security)\\[^\\]{1,20}\.(exe|dll);60
 \\Cookies\\[^\\]{1,20}\.(exe|dll);60
 \\RSA\\MachineKeys\\[^\\]{1,20}\.(exe|dll);60
-\\ProgramData\\[^\\]{1,20}\.(exe|dll);60
 \\(Users|Documents and Settings)\\[^\\]{1,20}\\Start Menu\\[^\\]{1,20}\.(exe|dll);60
 \\(Users|Documents and Settings)\\[^\\]{1,20}\\AppData\\[^\\]{1,20}\.(exe|dll);60
+\\(Users|Documents and Settings)\\[^\\]{1,20}\\AppData\\(Local|Roaming)\\[^\\]{1,20}\.(exe|dll);60
 \\(Users|Documents and Settings)\\[^\\]{1,20}\\AppData\\Roaming\\Identities\\[^\\]{1,20}\.(exe|dll);60
 \\tsclient\\[^\\]{1,20}\.(exe|dll);40
+
+# Typical Malware Location - AppData / Local / Roaming
+(?i)\\AppData\\[^\\/]{1,64}\.exe([^._\\\]]|$);75
+(?i)\\AppData\\[^\\/]{1,64}\.(dll|bat|vbs|ps1|js|hta);80;(\.json|\\Program Files\\Win Movie Maker\\)
+(?i)\\AppData\\Local\\[^\\/]{1,64}\.exe([^._\\\]]|$);75;\[Update\.exe\]
+(?i)\\AppData\\Local\\[^\\/]{1,64}\.(dll|bat|vbs|ps1|hta);80
+(?i)\\AppData\\Roaming\\[^\\/]{1,64}\.exe$;75;\\JomCap\.dll
+(?i)\\AppData\\Roaming\\[^\\/]{1,64}\.(dll|bat|vbs|ps1|hta);80
 
 # Metasploit-dropped files with random file names
 #\\windows\\temp\\[a-zA-Z]{16}\.(exe|bat);60;VerifyAndInstall\.exe
@@ -3892,5 +3900,80 @@ application-2eaf7e76aa55726cc0419f604e58ee73c5578c02c9e21fdbe7ae887925ea92ae\.cs
 # DripLoader https://blog.redbluepurple.io/offensive-research/bypassing-injection-detection
 \\DripLoader\.exe;75
 \\passav\.exe;65
+
+# Exploit Code File Names 
+\\cve-20(20|19)-[0-9]{4,5}.{0,20}(\.py|\.exe|\.vbs|\.bat|\.ps1|\.dll|$);80
+
+# Possible Service Path Escalation Attempt http://www.commonexploits.com/unquoted-service-paths/ or simple malware
+:\\Program\.exe;75
+
+# Local Privilege Escalation exploit names https://github.com/search?q=local+privilege+escalation
+\\UserProfileSvcEoP\.exe;90
+Potato\.exe;65
+\\spawn_cmd\.dll;90
+\\RogueWinRM\.exe;90
+\\StartCMD\.dll;70
+\\start_cmd\.dll;70
+\\ProfSvcLPE\.exe;75
+\\cve\.exe;45
+\\RottenTomato\.exe;80
+\\windows-privesc-check\.exe;70
+\\windows-privesc-check2\.exe;70
+\\dll_hijack_detect_x64\.exe;70
+\\dll_hijack_detect_x86\.exe;70
+
+# LSASS Dump Names 
+\\lsass[a-zA-Z_\-\.]{1,16}\.(dmp|zip|rar|7z);70
+
+# Programs or scripts in C:\ProgramData folder (no sub folder)
+\\ProgramData\\[^\\]{1,40}\.(EXE|DLL|exe|dll|bat|BAT|vbs|VBS|ps1|jar)([^._\\\]]|$);70;(\[Discord\.exe\]|UserProfileMigrationService\.exe|\.exe\.textpad|\\\$WINDOWS\.~BT\\)
+
+# PostDump artefacts https://github.com/post-cyberlabs/Offensive_tools/tree/main/PostDump
+:\\Temp\\yolo\.log;75
+\\PostDump\.exe;65
+
+# DuplicateDump IOC https://github.com/Hagrid29/DuplicateDump
+:\\LSAPlugin\.dll;80
+
+# Filename IOCs mentioned in Industroyer2 Report https://www.welivesecurity.com/2022/04/12/industroyer2-industroyer-reloaded/
+\\108_100\.exe;85
+\\zrada\.exe;75
+\\pa\.pay$;65
+\\link\.ps1;60
+\\sc\.sh$;65
+\\wobf\.sh;80
+\\wsol\.sh;80
+
+# Possible LPE CVE-2022-24527 - check the file contents https://www.rapid7.com/blog/post/2022/04/12/cve-2022-24527-microsoft-connected-cache-local-privilege-escalation-fixed/
+\\WindowsPowerShell\\Modules\\webAdministration\\webAdministration\.psm1;70
+
+# Operation CuckooBees: A Winnti Malware Arsenal Deep-Dive https://www.cybereason.com/blog/operation-cuckoobees-a-winnti-malware-arsenal-deep-dive
+:\\Windows\\temp\\bc\.bat;85
+:\\Windows\\AppPatch\\Custom\\Custom64\\cc\.bat;85
+:\\Windows\\temp\\cc\.log;85
+:\\Windows\\AppPatch\\Custom\\Custom64\\log\.dat;85
+:\\Windows\\Branding\\Basebrd\\x64\.tlb;85
+:\\Windows\\Branding\\Basebrd\\language\.dll;85
+:\\Windows\\System32\\mscuplt\.dll;70
+:\\Windows\\System32\\rpcutl\.dll;70
+:\\Windows\\System32\\dot3utl\.dll;70
+:\\Windows\\System32\\iumatl\.dll;70
+:\\Windows\\System32\\Nlsutl\.dll;70
+:\\Windows\\System32\\WindowsPowerShell\\v1.0\\dbghelp\.dll;85
+:\\Windows\\System32\\drivers\\bqDsp\.sys;85
+:\\Windows\\apppatch\\en-us\\MFSDLL\.exe;85
+:\\Windows\\System32\\spool\\drivers\\x64\\3\\prntvpt\.dll;85
+:\\Windows\\System32\\WindowsPowerShell\\v1.0\\wlbsctrl\.dll;85
+:\\Windows\\assembly\\gac_msil\\dfsvc\\foserv\.exe;85
+:\\Windows\\assembly\\temp\\foserv\.exe;85
+:\\Windows\\AppPatch\\Custom\\Custom64\\Shiver\.exe;85
+:\\Windows\\AppPatch\\Custom\\Custom64\\spark\.exe;85
+\\mktzx64\.dll;85
+
+# BPFDoor Analysis https://doublepulsar.com/bpfdoor-an-active-chinese-global-surveillance-tool-54b078f1a896 https://www.sandflysecurity.com/blog/bpfdoor-an-evasive-linux-backdoor-technical-analysis/
+/dev/shm/kdmtmpflush;90
+/dev/shm/kdumpflush;90
+/dev/shm/kdumpdb;90
+/var/run/haldrund\.pid;80
 
 # End
