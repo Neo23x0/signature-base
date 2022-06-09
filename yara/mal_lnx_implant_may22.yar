@@ -107,3 +107,58 @@ rule APT_MAL_LNX_RedMenshen_BPFDoor_Controller_Generic_May22_1 {
       uint16(0) == 0x457f and
       filesize < 200KB and 2 of them or 4 of them
 }
+
+rule APT_MAL_LNX_RedMenshen_BPFDoor_Tricephalic_Implant_May22 {
+
+    meta:
+      description = "Detects BPFDoor/Tricephalic Hellkeeper passive implant"
+      author = "Exatrack"
+      reference = "https://exatrack.com/public/Tricephalic_Hellkeeper.pdf"
+      date = "2022-05-09"
+      score = 90
+
+    strings:
+        $str_message_01 = "hald-addon-acpi: listening on acpi kernel interface /proc/acpi/event"
+        $str_message__02 = "/var/run/haldrund.pid"
+        /* 
+        $str_message_03 = "/bin/rm -f /dev/shm/%s;/bin/cp %s /dev/shm/%s && /bin/chmod 755 /dev/shm/%s && /dev/shm/%s --init && /bin/rm -f /dev/shm/%s" // in the stack
+        */
+        $str_message_04 = "Cant fork pty"
+        $str_hald_05 = "/sbin/iptables -t nat -D PREROUTING -p tcp -s %s --dport %d -j REDIRECT --to-ports %d"
+        /*
+        $str_command_01 = "/sbin/iptables -t nat -A PREROUTING -p tcp -s %s --dport %d -j REDIRECT --to-ports %d"
+        $str_command_02 = "/sbin/iptables -I INPUT -p tcp -s %s -j ACCEPT"
+        */
+        $str_command_03 = "/bin/rm -f /dev/shm/%s"
+        /*
+        $str_command_04 = "/bin/cp %s /dev/shm/%s"
+        $str_command_05 = "/bin/chmod 755 /dev/shm/%s"
+        */
+        $str_command_06 = "/dev/shm/%s --init"
+        $str_server_01 = "[+] Spawn shell ok."
+        $str_server_02 = "[+] Monitor packet send."
+        /*
+        $str_server_03 = "[-] Spawn shell failed."
+        $str_server_04 = "[-] Can't write auth challenge"
+        $str_server_05 = "[+] Packet Successfuly Sending %d Size."
+        $str_server_06 = "[+] Challenging %s."
+        $str_server_07 = "[+] Auth send ok."
+        $str_server_08 = "[+] possible windows"
+        */
+        $str_filter_01 = "(udp[8:2]=0x7255)"
+        $str_filter_02 = "(icmp[8:2]=0x7255)"
+        $str_filter_03 = "(tcp[((tcp[12]&0xf0)>>2):2]=0x5293)"
+        $str_filter_04 = {15 00 ?? ?? 55 72 00 00}
+        $str_filter_05 = {15 00 ?? ?? 93 52 00 00}
+        $error_01 = "[-] socket"
+        $error_02 = "[-] listen"
+        $error_03 = "[-] bind"
+        $error_04 = "[-] accept"
+        $error_05 = "[-] Mode error."
+        $error_06 = "[-] bind port failed."
+        $error_07 = "[-] setsockopt"
+        $error_08 = "[-] missing -s"
+        $error_09 = "[-] sendto"
+    condition:
+        any of ($str*) or 3 of ($error*)
+}
