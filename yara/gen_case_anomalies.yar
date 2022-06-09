@@ -15,18 +15,17 @@ rule PowerShell_Case_Anomaly {
       author = "Florian Roth"
       reference = "https://twitter.com/danielhbohannon/status/905096106924761088"
       date = "2017-08-11"
+      modified = "2022-06-09"
       score = 70
    strings:
       // first detect 'powershell' keyword case insensitive
-      $s1 = "powershell" fullword nocase ascii wide
+      $s1 = "powershell" nocase ascii wide
       // define the normal cases
-      $sr1 = /(powershell|Powershell|PowerShell|POWERSHELL|powerShell)/ fullword ascii wide
-      // define the normal cases
-      $sn1 = "powershell" fullword ascii wide
-      $sn2 = "Powershell" fullword ascii wide
-      $sn3 = "PowerShell" fullword ascii wide
-      $sn4 = "POWERSHELL" fullword ascii wide
-      $sn5 = "powerShell" fullword ascii wide
+      $sn1 = "powershell" ascii wide
+      $sn2 = "Powershell" ascii wide
+      $sn3 = "PowerShell" ascii wide
+      $sn4 = "POWERSHELL" ascii wide
+      $sn5 = "powerShell" ascii wide
 
       // PowerShell with \x19\x00\x00
       $a1 = "wershell -e " nocase wide ascii
@@ -45,14 +44,14 @@ rule PowerShell_Case_Anomaly {
 
       $fp1 = "Microsoft Code Signing" ascii fullword
       $fp2 = "Microsoft Corporation" ascii
+      $fp3 = "Microsoft.Azure.Commands.ContainerInstance" wide
    condition:
       filesize < 800KB and (
          // find all 'powershell' occurances and ignore the expected cases
-         ( #s1 < 3 and #sr1 > 0 and #s1 > #sr1 ) or
-         ( $s1 and not 1 of ($sn*) ) or
-         ( $a1 and not 1 of ($an*) ) or
+         ( #s1 > #sn1 + #sn2 + #sn3 + #sn4 + #sn5 ) or
+         ( #a1 > #an1 + #an2 ) or
          // find all '-norpofile' occurances and ignore the expected cases
-         ( $k1 and not 1 of ($kn*) )
+         ( #k1 > #kn1 + #kn2 + #kn3 + #kn4 + #kn5 )
       ) and not 1 of ($fp*)
 }
 
@@ -64,6 +63,7 @@ rule WScriptShell_Case_Anomaly {
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-09-11"
+      modified = "2022-06-09"
       score = 60
    strings:
       // first detect powershell keyword case insensitive
@@ -73,9 +73,8 @@ rule WScriptShell_Case_Anomaly {
       $sn2 = "wscript.shell\").run" ascii wide
       $sn3 = "WSCRIPT.SHELL\").RUN" ascii wide
       $sn4 = "Wscript.Shell\").Run" ascii wide
-      $sn5 = "WScript.Shell\").Run" ascii wide
-      $sn6 = "WScript.shell\").Run" ascii wide
+      $sn5 = "WScript.shell\").Run" ascii wide
    condition:
-      filesize < 800KB and
-      ( $s1 and not 1 of ($sn*) )
+      filesize < 3000KB and
+      #s1 > #sn1 + #sn2 + #sn3 + #sn4 + #sn5
 }
