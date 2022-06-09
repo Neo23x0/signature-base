@@ -169,5 +169,5 @@ rule MAL_ARM_LNX_Mirai_Mar13_2022 {
       $attck7 = "attack_get_opt_ip"
       $attck8 = "attack_icmpecho"
    condition:
-      uint16(0) == 0x457f and ((3 or all of ($str*)) or (4 or all of ($attck*)))
+      uint16(0) == 0x457f and ( 3 of ($str*) or 4 of ($attck*) )
 }
