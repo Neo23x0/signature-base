@@ -11,10 +11,10 @@
 rule HiddenCobra_BANKSHOT_Gen {
    meta:
       description = "Detects Hidden Cobra BANKSHOT trojan"
-      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://www.us-cert.gov/HIDDEN-COBRA-North-Korean-Malicious-Cyber-Activity"
       date = "2017-12-26"
+      modified = "2022-06-10"
       hash1 = "89775a2fbb361d6507de6810d2ca71711d5103b113179f1e1411ccf75e6fc486"
       hash2 = "8b2d084a8bb165b236d3e5436d6cb6fa1fda6431f99c4f34973dc735b4f2d247"
       hash3 = "b766ee0f46c92a746f6db3773735ee245f36c1849de985bbc3a37b15f7187f24"
@@ -43,7 +43,7 @@ rule HiddenCobra_BANKSHOT_Gen {
       $x2 = "RpiPmtiCdopIsgpao" fullword ascii
       $x3 = "RpiLtnodlhOtgpcidgyA" fullword ascii
       $x4 = "LatiQdgHtnrwpDbupci" fullword ascii
-      $x5 = "vchost.exe" fullword ascii
+      /* $x5 = "vchost.exe" fullword ascii */
       $x6 = "\\system32\\msncf.dat" fullword ascii
       $x7 = "GprthipgHpgktcpCigwSanowpgA" fullword ascii
 
