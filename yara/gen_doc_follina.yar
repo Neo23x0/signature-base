@@ -22,7 +22,7 @@ rule SUSP_PS1_Msdt_Execution_May22 {
 rule SUSP_Doc_WordXMLRels_May22 {
    meta:
       description = "Detects a suspicious pattern in docx document.xml.rels file as seen in CVE-2022-30190"
-      author = "Tobias Michalski, Christian Burkard, Wojciech Cieślak"
+      author = "Tobias Michalski, Christian Burkard, Wojciech Cieslak"
       date = "2022-05-30"
       modified = "2022-06-02"
       reference = "https://doublepulsar.com/follina-a-microsoft-office-code-execution-vulnerability-1a47fce5629e"
