@@ -4,9 +4,11 @@ rule SUSP_PS1_Msdt_Execution_May22 {
       author = "Nasreddine Bencherchali, Christian Burkard"
       date = "2022-05-31"
       modified = "2022-06-02"
+      modified = "2022-06-13"
       reference = "https://doublepulsar.com/follina-a-microsoft-office-code-execution-vulnerability-1a47fce5629e"
       score = 75
    strings:
+      $a = "PCWDiagnostic" ascii wide fullword
       $sa1 = "msdt.exe" ascii wide
       $sa2 = "msdt " ascii wide
 
@@ -15,6 +17,7 @@ rule SUSP_PS1_Msdt_Execution_May22 {
 
    condition:
       filesize < 10MB
+      and $a
       and 1 of ($sa*)
       and 1 of ($sb*)
 }
