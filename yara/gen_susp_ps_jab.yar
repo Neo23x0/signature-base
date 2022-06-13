@@ -24,5 +24,5 @@ rule SUSP_PS1_JAB_Pattern_Jun22_1 {
       /* UTF-16 encoded */
       $xc4 = { 4a 00 41 00 42 00 ?? 00 41 00 44 00 30 00 41 }
    condition:
-      1 of them
+      filesize < 30MB and 1 of them
 }

@@ -15,7 +15,7 @@ rule PowerShell_Case_Anomaly {
       author = "Florian Roth"
       reference = "https://twitter.com/danielhbohannon/status/905096106924761088"
       date = "2017-08-11"
-      modified = "2022-06-10"
+      modified = "2022-06-12"
       score = 70
    strings:
       // first detect 'powershell' keyword case insensitive
@@ -47,6 +47,7 @@ rule PowerShell_Case_Anomaly {
       $fp1 = "Microsoft Code Signing" ascii fullword
       $fp2 = "Microsoft Corporation" ascii
       $fp3 = "Microsoft.Azure.Commands.ContainerInstance" wide
+      $fp4 = "# Localized PSGet.Resource.psd1" wide
    condition:
       filesize < 800KB and (
          // find all 'powershell' occurrences and ignore the expected cases
