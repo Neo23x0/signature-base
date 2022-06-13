@@ -13,7 +13,6 @@ rule SUSP_PS1_Msdt_Execution_May22 {
       $sa2 = "msdt " ascii wide
 
       $sb1 = "/af " ascii wide
-      $sb1 = "-af " ascii wide
       $sb2 = "IT_BrowseForFile=" ascii wide
 
    condition:
