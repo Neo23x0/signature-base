@@ -1,7 +1,7 @@
 
 rule MAL_LNX_LinaDoor_Rootkit_May22 {
    meta:
-      description = "Detects LinaDoor Linux Rootkit"
+      description = "Detects LinaDoor Linux Rootkit, which seems to be a modified Reptile rootkit often used by Bronze Union TA"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2022-05-19"
