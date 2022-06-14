@@ -1,6 +1,6 @@
 rule SUSP_PS1_Msdt_Execution_May22 {
    meta:
-      description = "Detects suspicious calls of msdt.exe as seen in CVE-2022-30190"
+      description = "Detects suspicious calls of msdt.exe as seen in CVE-2022-30190 / Follina exploitation"
       author = "Nasreddine Bencherchali, Christian Burkard"
       date = "2022-05-31"
       modified = "2022-06-02"
@@ -24,7 +24,7 @@ rule SUSP_PS1_Msdt_Execution_May22 {
 
 rule SUSP_Doc_WordXMLRels_May22 {
    meta:
-      description = "Detects a suspicious pattern in docx document.xml.rels file as seen in CVE-2022-30190"
+      description = "Detects a suspicious pattern in docx document.xml.rels file as seen in CVE-2022-30190 / Follina exploitation"
       author = "Tobias Michalski, Christian Burkard, Wojciech Cieslak"
       date = "2022-05-30"
       modified = "2022-06-02"
@@ -45,7 +45,7 @@ rule SUSP_Doc_WordXMLRels_May22 {
 
 rule SUSP_Doc_RTF_ExternalResource_May22 {
    meta:
-      description = "Detects a suspicious pattern in RTF files which downloads external resources as seen in CVE-2022-30190"
+      description = "Detects a suspicious pattern in RTF files which downloads external resources as seen in CVE-2022-30190 / Follina exploitation"
       author = "Tobias Michalski, Christian Burkard"
       date = "2022-05-30"
       modified = "2022-05-31"
@@ -60,9 +60,9 @@ rule SUSP_Doc_RTF_ExternalResource_May22 {
       all of them
 }
 
-rule MAL_Msdt_MSProtocolURI_May22 {
+rule EXPL_Follina_CVE_2022_30190_Msdt_MSProtocolURI_May22 {
    meta:
-      description = "Detects the malicious usage of the ms-msdt URI as seen in CVE-2022-30190"
+      description = "Detects the malicious usage of the ms-msdt URI as seen in CVE-2022-30190 / Follina exploitation"
       author = "Tobias Michalski, Christian Burkard"
       date = "2022-05-30"
       modified = "2022-05-31"
@@ -171,7 +171,7 @@ rule SUSP_Doc_RTF_OLE2Link_EMAIL_Jun22 {
 
 rule SUSP_DOC_RTF_ExternalResource_EMAIL_Jun22 {
    meta:
-      description = "Detects a suspicious pattern in RTF files which downloads external resources as seen in CVE-2022-30190 inside e-mail attachment"
+      description = "Detects a suspicious pattern in RTF files which downloads external resources as seen in CVE-2022-30190 / Follina exploitation inside e-mail attachment"
       author = "Christian Burkard"
       date = "2022-06-01"
       reference = "https://doublepulsar.com/follina-a-microsoft-office-code-execution-vulnerability-1a47fce5629e"
@@ -198,7 +198,7 @@ rule SUSP_DOC_RTF_ExternalResource_EMAIL_Jun22 {
 
 rule SUSP_Msdt_Artefact_Jun22_2 {
    meta:
-      description = "Detects suspicious pattern in msdt diagnostics log (e.g. CVE-2022-30190)"
+      description = "Detects suspicious pattern in msdt diagnostics log (e.g. CVE-2022-30190 / Follina exploitation)"
       author = "Christian Burkard"
       date = "2022-06-01"
       modified = "2022-06-02"
