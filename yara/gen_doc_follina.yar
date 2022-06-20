@@ -3,13 +3,14 @@ rule SUSP_PS1_Msdt_Execution_May22 {
       description = "Detects suspicious calls of msdt.exe as seen in CVE-2022-30190 / Follina exploitation"
       author = "Nasreddine Bencherchali, Christian Burkard"
       date = "2022-05-31"
-      modified = "2022-06-14"
+      modified = "2022-06-20"
       reference = "https://doublepulsar.com/follina-a-microsoft-office-code-execution-vulnerability-1a47fce5629e"
       score = 75
    strings:
       $a = "PCWDiagnostic" ascii wide fullword
       $sa1 = "msdt.exe" ascii wide
       $sa2 = "msdt " ascii wide
+      $sa3 = "ms-msdt" ascii wide
 
       $sb1 = "/af " ascii wide
       $sb2 = "-af " ascii wide
