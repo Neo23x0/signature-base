@@ -3,13 +3,14 @@ rule SUSP_PS1_Msdt_Execution_May22 {
       description = "Detects suspicious calls of msdt.exe as seen in CVE-2022-30190 / Follina exploitation"
       author = "Nasreddine Bencherchali, Christian Burkard"
       date = "2022-05-31"
-      modified = "2022-06-14"
+      modified = "2022-06-20"
       reference = "https://doublepulsar.com/follina-a-microsoft-office-code-execution-vulnerability-1a47fce5629e"
       score = 75
    strings:
       $a = "PCWDiagnostic" ascii wide fullword
       $sa1 = "msdt.exe" ascii wide
       $sa2 = "msdt " ascii wide
+      $sa3 = "ms-msdt" ascii wide
 
       $sb1 = "/af " ascii wide
       $sb2 = "-af " ascii wide
@@ -33,7 +34,7 @@ rule SUSP_Doc_WordXMLRels_May22 {
       description = "Detects a suspicious pattern in docx document.xml.rels file as seen in CVE-2022-30190 / Follina exploitation"
       author = "Tobias Michalski, Christian Burkard, Wojciech Cieslak"
       date = "2022-05-30"
-      modified = "2022-06-02"
+      modified = "2022-06-20"
       reference = "https://doublepulsar.com/follina-a-microsoft-office-code-execution-vulnerability-1a47fce5629e"
       hash = "62f262d180a5a48f89be19369a8425bec596bc6a02ed23100424930791ae3df0"
       score = 70
@@ -43,6 +44,8 @@ rule SUSP_Doc_WordXMLRels_May22 {
 
       $x1 = ".html!" ascii
       $x2 = ".htm!" ascii
+      $x3 = "%2E%68%74%6D%6C%21" ascii /* encoded version of .html! */
+      $x4 = "%2E%68%74%6D%21" ascii /* encoded version of .htm! */
    condition:
       filesize < 50KB
       and all of ($a*)
