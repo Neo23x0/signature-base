@@ -148,8 +148,10 @@ rule APT_MAL_LNX_RedMenshen_BPFDoor_Tricephalic_Implant_May22 {
         $str_filter_01 = "(udp[8:2]=0x7255)"
         $str_filter_02 = "(icmp[8:2]=0x7255)"
         $str_filter_03 = "(tcp[((tcp[12]&0xf0)>>2):2]=0x5293)"
+        /*
         $str_filter_04 = {15 00 ?? ?? 55 72 00 00}
         $str_filter_05 = {15 00 ?? ?? 93 52 00 00}
+        */
         $error_01 = "[-] socket"
         $error_02 = "[-] listen"
         $error_03 = "[-] bind"
