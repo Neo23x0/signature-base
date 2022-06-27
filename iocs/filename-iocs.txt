@@ -2073,7 +2073,7 @@ ystem32\\lcsvsvc\.dll;80
 \\tsclient\\[^\\]{1,20}\.(exe|dll);40
 
 # Typical Malware Location - AppData / Local / Roaming
-(?i)\\AppData\\[^\\/]{1,64}\.exe([^._\\\]]|$);75
+(?i)\\AppData\\[^\\/"]{1,64}\.exe([^._"\\\]]|$);75;(?i)(C:\\SW\\[^\\]{1,20}\\SWSETUP\\DRV\\|C:\\WINDOWS\\System32\\DriverStore\\|C:\\\$WINDOWS\.~BT\\NewOS\\Windows\\System32\\DriverStore\\FileRepository\\)
 (?i)\\AppData\\[^\\/]{1,64}\.(dll|bat|vbs|ps1|js|hta);80;(\.json|\\Program Files\\Win Movie Maker\\)
 (?i)\\AppData\\Local\\[^\\/]{1,64}\.exe([^._\\\]]|$);75;\[Update\.exe\]
 (?i)\\AppData\\Local\\[^\\/]{1,64}\.(dll|bat|vbs|ps1|hta);80
