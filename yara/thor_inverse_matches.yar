@@ -436,16 +436,17 @@ rule APT_Cloaked_CERTUTIL {
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2018-09-14"
+      modified = "2022-06-27"
    strings:
       $s1 = "-------- CERT_CHAIN_CONTEXT --------" fullword ascii
       $s5 = "certutil.pdb" fullword ascii
       $s3 = "Password Token" fullword ascii
    condition:
-      uint16(0) == 0x5a4d and
-      all of them
+      uint16(0) == 0x5a4d and all of them
       and not filename contains "certutil"
       and not filename contains "CertUtil"
-	  and not filename contains "Certutil"
+      and not filename contains "Certutil"
+      and not filepath contains "\\Bromium\\"
 }
 
 rule APT_SUSP_Solarwinds_Orion_Config_Anomaly_Dec20 {
