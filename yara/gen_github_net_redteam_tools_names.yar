@@ -152,11 +152,18 @@ rule HKTL_NET_NAME_DotNetInject {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
+        modified = "2022-06-28"
     strings:
         $name = "DotNetInject" ascii wide
         $compile = "AssemblyTitle" ascii wide
+
+        $fp1 = "GetDotNetInjector" ascii /* MS Txt2AI 489044cadaa0175e36d286fcbe5720fd56b6a0c063beac452b2316c2714332b0 */
+        $fp2 = "JetBrains.TeamCity.Injector." wide
     condition:
-        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and filesize < 20MB and all of them
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550)
+        and filesize < 20MB
+        and $name and $compile
+        and not 1 of ($fp*)
 }
 
 rule HKTL_NET_NAME_ATPMiniDump {
