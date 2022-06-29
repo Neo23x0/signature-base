@@ -17,7 +17,7 @@ d) unique strings, if the coder doesn't even intend to hide
 
 Additional conditions will be added to reduce false positves. Check all findings for unintentional webshells aka vulnerabilities ;)
 
-The rules named "suspicous_" are commented by default. uncomment them to find more potentially malicious files at the price of more false positives. if that finds too many results to manually check, you can compare the hashes to virustotal with e.g. https://github.com/Neo23x0/munin
+The rules named "suspicious_" are commented by default. uncomment them to find more potentially malicious files at the price of more false positives. if that finds too many results to manually check, you can compare the hashes to virustotal with e.g. https://github.com/Neo23x0/munin
 
 Some samples in the collection where UTF-16 and at least PHP and Java support it, so I use "wide ascii" for all strings. The performance impact is 1%. See also https://thibaud-robin.fr/articles/bypass-filter-upload/
 
@@ -93,7 +93,7 @@ rule webshell_php_generic
 		$wfp_tiny2 = "addslashes" fullword
 	
 		//strings from private rule php_false_positive_tiny
-		// try to use only strings which would be flagged by themselves as suspicous by other rules, e.g. eval 
+		// try to use only strings which would be flagged by themselves as suspicious by other rules, e.g. eval
 		//$gfp_tiny1 = "addslashes" fullword
 		//$gfp_tiny2 = "escapeshellarg" fullword
 		$gfp_tiny3 = "include \"./common.php\";" // xcache
@@ -383,7 +383,7 @@ rule webshell_php_generic_callback
 	strings:
 
 		//strings from private rule php_false_positive
-		// try to use only strings which would be flagged by themselves as suspicous by other rules, e.g. eval 
+		// try to use only strings which would be flagged by themselves as suspicious by other rules, e.g. eval
         // a good choice is a string with good atom quality = ideally 4 unusual characters next to each other
 		$gfp1  = "eval(\"return [$serialised_parameter" // elgg
 		$gfp2  = "$this->assert(strpos($styles, $"
@@ -399,7 +399,7 @@ rule webshell_php_generic_callback
 		$gfp12 = "ZmlsZV9nZXRfY29udGVudHMoJ2h0dHA6Ly9saWNlbnNlLm9wZW5jYXJ0LWFwaS5jb20vbGljZW5zZS5waHA/b3JkZXJ"
 	
 		//strings from private rule php_false_positive_tiny
-		// try to use only strings which would be flagged by themselves as suspicous by other rules, e.g. eval 
+		// try to use only strings which would be flagged by themselves as suspicious by other rules, e.g. eval
 		//$gfp_tiny1 = "addslashes" fullword
 		//$gfp_tiny2 = "escapeshellarg" fullword
 		$gfp_tiny3 = "include \"./common.php\";" // xcache
@@ -826,7 +826,7 @@ rule webshell_php_generic_eval
 		$geval = /\b(exec|shell_exec|passthru|system|popen|proc_open|pcntl_exec|eval|assert)[\t ]*(\(base64_decode)?(\(stripslashes)?[\t ]*(\(trim)?[\t ]*\(\$(_POST|_GET|_REQUEST|_SERVER\s?\[['"]HTTP_|GLOBALS\[['"]_(POST|GET|REQUEST))/ wide ascii
 	
 		//strings from private rule php_false_positive
-		// try to use only strings which would be flagged by themselves as suspicous by other rules, e.g. eval 
+		// try to use only strings which would be flagged by themselves as suspicious by other rules, e.g. eval
         // a good choice is a string with good atom quality = ideally 4 unusual characters next to each other
 		$gfp1  = "eval(\"return [$serialised_parameter" // elgg
 		$gfp2  = "$this->assert(strpos($styles, $"
@@ -908,7 +908,7 @@ rule webshell_php_obfuscated
 	strings:
 
 		//strings from private rule php_false_positive
-		// try to use only strings which would be flagged by themselves as suspicous by other rules, e.g. eval 
+		// try to use only strings which would be flagged by themselves as suspicious by other rules, e.g. eval
         // a good choice is a string with good atom quality = ideally 4 unusual characters next to each other
 		$gfp1  = "eval(\"return [$serialised_parameter" // elgg
 		$gfp2  = "$this->assert(strpos($styles, $"
@@ -1120,7 +1120,7 @@ rule webshell_php_obfuscated_tiny
         $obf3 = "].$" wide ascii
 	
 		//strings from private rule php_false_positive
-		// try to use only strings which would be flagged by themselves as suspicous by other rules, e.g. eval 
+		// try to use only strings which would be flagged by themselves as suspicious by other rules, e.g. eval
         // a good choice is a string with good atom quality = ideally 4 unusual characters next to each other
 		$gfp1  = "eval(\"return [$serialised_parameter" // elgg
 		$gfp2  = "$this->assert(strpos($styles, $"
@@ -1324,7 +1324,7 @@ rule webshell_php_gzinflated
         $fp1 = "YXBpLnRlbGVncmFtLm9" 
 	
 		//strings from private rule php_false_positive
-		// try to use only strings which would be flagged by themselves as suspicous by other rules, e.g. eval 
+		// try to use only strings which would be flagged by themselves as suspicious by other rules, e.g. eval
         // a good choice is a string with good atom quality = ideally 4 unusual characters next to each other
 		$gfp1  = "eval(\"return [$serialised_parameter" // elgg
 		$gfp2  = "$this->assert(strpos($styles, $"
@@ -2417,7 +2417,7 @@ rule webshell_php_strings_susp
 		$php_new3 = "<script language=\"php" nocase wide ascii
 	
 		//strings from private rule php_false_positive
-		// try to use only strings which would be flagged by themselves as suspicous by other rules, e.g. eval 
+		// try to use only strings which would be flagged by themselves as suspicious by other rules, e.g. eval
         // a good choice is a string with good atom quality = ideally 4 unusual characters next to each other
 		$gfp1  = "eval(\"return [$serialised_parameter" // elgg
 		$gfp2  = "$this->assert(strpos($styles, $"
@@ -2506,7 +2506,7 @@ rule webshell_php_function_via_get
 		$sr5 = /\$_SERVER\s?\[HTTP_.{1,30}\]\(\$_SERVER\s?\[HTTP_/ wide ascii
 	
 		//strings from private rule php_false_positive
-		// try to use only strings which would be flagged by themselves as suspicous by other rules, e.g. eval 
+		// try to use only strings which would be flagged by themselves as suspicious by other rules, e.g. eval
         // a good choice is a string with good atom quality = ideally 4 unusual characters next to each other
 		$gfp1  = "eval(\"return [$serialised_parameter" // elgg
 		$gfp2  = "$this->assert(strpos($styles, $"
