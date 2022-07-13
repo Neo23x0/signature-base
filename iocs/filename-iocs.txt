@@ -20,7 +20,7 @@
 # \\(server|servisces|smrr|srrm|svchost|svhost|svshost|taskmrg)\.exe$;50
 # ProgramData\\Mail\\MailAg\\;80
 # (Anwendungsdaten|Application Data|APPDATA)\\sydmain\.dll;80
-# (TEMP|Temp)\\[^\\]+\.(xmd|yls)$;80
+# (TEMP|Temp)\\[^\\"]+\.(xmd|yls)$;80
 # (LOCAL SETTINGS\\Temp|Local Settings\\Temp|Local\\Temp)\\(word\.exe|winword\.exe)[^\.];80
 #
 
@@ -106,7 +106,7 @@ Temp\\Updatasched\.exe;80
 
 # Kaspersky Carbanak APT Malware Hash http://goo.gl/0Nhax2
 \\System32\\com\\svchost\.exe;80
-\\ProgramData\\mozilla\\[^\\]+\.bin;80
+\\ProgramData\\mozilla\\[^\\"]+\.bin;80
 \\(Windows|WinXP)\\paexec;80
 SysWOW64\\com\\svchost\.exe;80
 
@@ -276,7 +276,7 @@ System\\Oracle\\smss\.exe;80
 \\HawkEye_Keylogger_;70
 
 # Kaspersky RAT Report https://goo.gl/th5q2v
-\\AppData\\Roaming\\Microsoft\\[^\\]{1,32}\.(exe|doc|zip);50
+\\AppData\\Roaming\\Microsoft\\[^\\"]{1,32}\.(exe|doc|zip);50
 \\AudioEndpointBuilder\.exe;60
 \\BrokerInfrastructure\.exe;60
 \\WindowsUpdate\.exe;50
@@ -1697,8 +1697,8 @@ AppData\\Adobe\\qpbqrx\.dat;80
 \\eof\.exe;100
 
 # Suspicious EXE DLL in Non-Executable directory
-\\(images|img|js|fonts|css|swf|themes|log|error_docs)\\[^\\]{,20}\.(exe|dll)$;60
-\\(wp-admin|wp-content|wp-includes)\\[^\\]{,20}\.(exe|dll);60
+\\(images|img|js|fonts|css|swf|themes|log|error_docs)\\[^\\"]{,20}\.(exe|dll)$;60
+\\(wp-admin|wp-content|wp-includes)\\[^\\"]{,20}\.(exe|dll);60
 
 # APT29 Post-Election Acitivty https://goo.gl/4nyX1e
 \\RWP_16-038_Norris\.ZIP;80
@@ -1844,8 +1844,8 @@ fdp\.exe;60;\\bin\\
 
 # Typical Malware Names
 \\svchos1\.exe;60
-\\Program Files\(x86\)\\Google\\[^\\]{1,20}\.(exe|ps1);80
-\\Windows\\inf\\[^\\]{1,20}\.(exe|ps1);60
+\\Program Files\(x86\)\\Google\\[^\\"]{1,20}\.(exe|ps1);80
+\\Windows\\inf\\[^\\"]{1,20}\.(exe|ps1);60
 
 # Cloud Hopper Indicator - https://goo.gl/OkB63q
 \\mfeann\.data;90
@@ -1870,7 +1870,7 @@ fdp\.exe;60;\\bin\\
 \\Windows Data AntiVirus;90
 \\t\.vbs\.cfg;90
 \\furnish\.dat;90
-\\ProgramData\\SxS\\[^\\]{1,20}\.(exe|dll|dat);50;\\eastoeb\.exe
+\\ProgramData\\SxS\\[^\\"]{1,20}\.(exe|dll|dat);50;\\eastoeb\.exe
 \\wpf-etw\.dat;90
 \\microsoft\.workflow\.compiler\.dat;90
 
@@ -1888,7 +1888,7 @@ fdp\.exe;60;\\bin\\
 \\Temp\\obedience\.exe;80
 \\AppData\\Local\\Temp\\starburn\.dll;80
 \\RedLeaves\.exe;75
-\\PerfLogs\\[^\\]{1,20}\.(exe|vbs|ps1);60
+\\PerfLogs\\[^\\"]{1,20}\.(exe|vbs|ps1);60
 \\wmi\.dll\.bak;80
 \\rund1132\.exe;80
 \\consl64\.exe;60
@@ -1928,7 +1928,7 @@ ystem32\\lcsvsvc\.dll;80
 \\gentee\.dll;60
 
 # Oilrig https://goo.gl/Gw32C8
-\\Program Files \(x86\)\\Microsoft Idle\\[^\\]{1,16}\.exe;70
+\\Program Files \(x86\)\\Microsoft Idle\\[^\\"]{1,16}\.exe;70
 \\Start Menu\\Programs\\Startup\\WinInit\.lnk;70
 \\Start Menu\\Programs\\Startup\\SyncInit\.lnk;70
 
@@ -1941,8 +1941,8 @@ ystem32\\lcsvsvc\.dll;80
 /tmp/\.gdm-selinux;70
 
 # Custom SHIM SDB found - this is suspicious - see https://goo.gl/xW90xr
-\\Windows\\AppPatch\\Custom\\[^\\]{1,50}\.sdb;40
-\\Windows\\AppPatch\\Custom\\Custom64\\[^\\]{1,50}\.sdb;40
+\\Windows\\AppPatch\\Custom\\[^\\"]{1,50}\.sdb;40
+\\Windows\\AppPatch\\Custom\\Custom64\\[^\\"]{1,50}\.sdb;40
 
 # FIN7 SHIM temp files pattern - see https://goo.gl/xW90xr
 \\Windows\\Temp\\sdb[A-Z0-9]{4}\.tmp$;60
@@ -2053,25 +2053,25 @@ ystem32\\lcsvsvc\.dll;80
 \\rundll64\.exe;76
 
 # Stuff running where it normally shouldn't
-\\((Users|Documents and Settings))\\[^\\]{1,20}\.(exe|dll);65
-\\(Users|Documents and Settings)\\[^\\]{1,20}\\[^\\]{1,20}\.(exe|dll|vbs|bat|ps1);40
-\\(Users|Documents and Settings)\\NetworkService\\[^\\]{1,20}\.(exe|dll);60
-\\Windows\\[Ss]ystem32\\config\\systemprofile\\[^\\]{1,20}\.(exe|dll);60
-[Cc]:\\$Recycle\.Bin\\[^\\]{1,20}\.(exe|dll);60
-[Cc]:\\RECYCLER\\[^\\]{1,20}\.(exe|dll);60
-[Cc]:\\(Web|Intel)\\[^\\]{1,20}\.(exe|dll);50
-[Cc]:\\(Windows|Winnt)\\(Debug|addins)\\[^\\]{1,20}\.(exe|dll);60
-[Cc]:\\(Windows|Winnt)\\(repair|security)\\[^\\]{1,20}\.(exe|dll);60
-\\Cookies\\[^\\]{1,20}\.(exe|dll);60
-\\RSA\\MachineKeys\\[^\\]{1,20}\.(exe|dll);60
-\\(Users|Documents and Settings)\\[^\\]{1,20}\\Start Menu\\[^\\]{1,20}\.(exe|dll);60
-\\(Users|Documents and Settings)\\[^\\]{1,20}\\AppData\\[^\\]{1,20}\.(exe|dll);60
-\\(Users|Documents and Settings)\\[^\\]{1,20}\\AppData\\(Local|Roaming)\\[^\\]{1,20}\.(exe|dll);60
-\\(Users|Documents and Settings)\\[^\\]{1,20}\\AppData\\Roaming\\Identities\\[^\\]{1,20}\.(exe|dll);60
-\\tsclient\\[^\\]{1,20}\.(exe|dll);40
+\\((Users|Documents and Settings))\\[^\\"]{1,20}\.(exe|dll);65
+\\(Users|Documents and Settings)\\[^\\"]{1,20}\\[^\\"]{1,20}\.(exe|dll|vbs|bat|ps1);40
+\\(Users|Documents and Settings)\\NetworkService\\[^\\"]{1,20}\.(exe|dll);60
+\\Windows\\[Ss]ystem32\\config\\systemprofile\\[^\\"]{1,20}\.(exe|dll);60
+[Cc]:\\$Recycle\.Bin\\[^\\"]{1,20}\.(exe|dll);60
+[Cc]:\\RECYCLER\\[^\\"]{1,20}\.(exe|dll);60
+[Cc]:\\(Web|Intel)\\[^\\"]{1,20}\.(exe|dll);50
+[Cc]:\\(Windows|Winnt)\\(Debug|addins)\\[^\\"]{1,20}\.(exe|dll);60
+[Cc]:\\(Windows|Winnt)\\(repair|security)\\[^\\"]{1,20}\.(exe|dll);60
+\\Cookies\\[^\\"]{1,20}\.(exe|dll);60
+\\RSA\\MachineKeys\\[^\\"]{1,20}\.(exe|dll);60
+\\(Users|Documents and Settings)\\[^\\"]{1,20}\\Start Menu\\[^\\"]{1,20}\.(exe|dll);60
+\\(Users|Documents and Settings)\\[^\\"]{1,20}\\AppData\\[^\\"]{1,20}\.(exe|dll);60
+\\(Users|Documents and Settings)\\[^\\"]{1,20}\\AppData\\(Local|Roaming)\\[^\\"]{1,20}\.(exe|dll);60
+\\(Users|Documents and Settings)\\[^\\"]{1,20}\\AppData\\Roaming\\Identities\\[^\\"]{1,20}\.(exe|dll);60
+\\tsclient\\[^\\"]{1,20}\.(exe|dll);40
 
 # Typical Malware Location - AppData / Local / Roaming
-(?i)\\AppData\\[^\\/"]{1,64}\.exe([^._"\\\]]|$);75;(?i)(C:\\SW\\[^\\]{1,20}\\SWSETUP\\DRV\\|C:\\WINDOWS\\System32\\DriverStore\\|C:\\\$WINDOWS\.~BT\\NewOS\\Windows\\System32\\DriverStore\\FileRepository\\)
+(?i)\\AppData\\[^\\/"]{1,64}\.exe([^._"\\\]]|$);75;(?i)(C:\\SW\\[^\\"]{1,20}\\SWSETUP\\DRV\\|C:\\WINDOWS\\System32\\DriverStore\\|C:\\\$WINDOWS\.~BT\\NewOS\\Windows\\System32\\DriverStore\\FileRepository\\)
 (?i)\\AppData\\[^\\/]{1,64}\.(dll|bat|vbs|ps1|js|hta);80;(\.json|\\Program Files\\Win Movie Maker\\)
 (?i)\\AppData\\Local\\[^\\/]{1,64}\.exe([^._\\\]]|$);75;\[Update\.exe\]
 (?i)\\AppData\\Local\\[^\\/]{1,64}\.(dll|bat|vbs|ps1|hta);80
@@ -2119,16 +2119,16 @@ ystem32\\lcsvsvc\.dll;80
 # Single character executable on a drive root
 [C-Zc-z]:\\[a-z0-9]\.(exe|vbs|ps1|bat|dll)$;60
 # Exe in RARSFX folder
-#\\RarSFX\d\\[^\\]{1,20}\.exe;50;(?i)(\\RarSFX\d\\lsetup\.exe|\\intiupdater\.exe)
+#\\RarSFX\d\\[^\\"]{1,20}\.exe;50;(?i)(\\RarSFX\d\\lsetup\.exe|\\intiupdater\.exe)
 
 # Classic attacker staging folders
-[Cc]:\\(Recovery|Intel|Web)\\[^\\]{1,16}\.(exe|dll|vbs|ps1|bat);60
-#[Cc]:\\(Windows|Winnt)\\(Help|Web|Media|ime|Debug|Fonts)\\[^\\]{1,16}\.(exe|dll|vbs|ps1|bat);60;(?i)(\\WINDOWS\\IME\\im[^\\]*_1\\IM)
-\\System Volume Information\\[^\\]{1,16}\.(exe|dll|vbs|ps1|bat);60
-\\(perflogs|perfdata)\\[^\\]{1,16}\.(exe|dll|vbs|ps1|bat);60
+[Cc]:\\(Recovery|Intel|Web)\\[^\\"]{1,16}\.(exe|dll|vbs|ps1|bat);60
+#[Cc]:\\(Windows|Winnt)\\(Help|Web|Media|ime|Debug|Fonts)\\[^\\"]{1,16}\.(exe|dll|vbs|ps1|bat);60;(?i)(\\WINDOWS\\IME\\im[^\\]*_1\\IM)
+\\System Volume Information\\[^\\"]{1,16}\.(exe|dll|vbs|ps1|bat);60
+\\(perflogs|perfdata)\\[^\\"]{1,16}\.(exe|dll|vbs|ps1|bat);60
 
 # Generic startup persistence flagging
-\\Start Menu\\Programs\\Startup\\[^\\]{1,16}\.(exe|dll|vbs|ps1|bat);60;\.exe\.lnk
+\\Start Menu\\Programs\\Startup\\[^\\"]{1,16}\.(exe|dll|vbs|ps1|bat);60;\.exe\.lnk
 
 # Executable used by PlugX DLL side-loading in non-standard location
 #(?i)\\CamMute\.exe;60;(?i)\\Lenovo\\Communication Utility\\
@@ -2708,8 +2708,8 @@ Windows\\inf\\mdmeric3\.PNF;65
 \\Microsoft\\Windows\\Themes\\pcasrc\.tlb;70
 
 # FreeMilk Campaign https://goo.gl/NyEioM
-\\Users\\Admin\\[^\\]{1,20}\.(vbs|exe|dll|ps1);50
-\\Users\\Administrator\\[^\\]{1,20}\.(vbs|exe|dll|ps1);50
+\\Users\\Admin\\[^\\"]{1,20}\.(vbs|exe|dll|ps1);50
+\\Users\\Administrator\\[^\\"]{1,20}\.(vbs|exe|dll|ps1);50
 \\Temp\\wsatra\.tmp;65
 \\Rar0tmpExtra[0-9]{18}\.rtf;65
 
@@ -2775,7 +2775,7 @@ ystem32\\drivers\\kifes\.sys;70
 \\mimilsa\.log;100
 
 # Suspicious Script or Executable in Public Users Folder https://twitter.com/JohnLaTwC/status/957703902039691265
-\\Users\\Public\\Documents\\[^\\]{1,20}\.(exe|vbs|ps1|dll|bat)$;60
+\\Users\\Public\\Documents\\[^\\"]{1,20}\.(exe|vbs|ps1|dll|bat)$;60
 
 # APT32 Continues ASEAN Targeting https://community.rsa.com/community/products/netwitness/blog/2018/01/30/apt32-continues-asean-targeting
 \\AppData\\Roaming\\Microsoft\\Windows\\Caches\\NavShExt\.dll;70
@@ -3055,10 +3055,10 @@ ystem32\\uploadmgrsvc\.dll;80
 ystem32\\uploadmgr\.dat;80
 
 # Suspicious File Name and Location
-\\ProgramData\\[^\\]{1,20}\.sct;65
-\\ProgramData\\DefenderNT\\[^\\]{1,20}\.vbs;65
-\\ProgramData\\FirefoxSDK\\[^\\]{1,20}\.vbs;65
-\\ProgramData\\WindowsNT\\[^\\]{1,20}\.vbs;65
+\\ProgramData\\[^\\"]{1,20}\.sct;65
+\\ProgramData\\DefenderNT\\[^\\"]{1,20}\.vbs;65
+\\ProgramData\\FirefoxSDK\\[^\\"]{1,20}\.vbs;65
+\\ProgramData\\WindowsNT\\[^\\"]{1,20}\.vbs;65
 
 # MuddyWater Filename IOC https://securelist.com/muddywater/88059/
 \\ProgramData\\WindowsNT\\WindowsNT\.ini;60
@@ -3091,7 +3091,7 @@ ystem32\\uploadmgr\.dat;80
 
 
 # Suspicious Indicators - Skript in Windows Folder
-C:\\Windows\\[^\\]{1,20}\.(js|ps1|vbs);50
+C:\\Windows\\[^\\"]{1,20}\.(js|ps1|vbs);50
 
 # Turla Malware macOS https://blog.malwarebytes.com/threat-analysis/2017/05/snake-malware-ported-windows-mac/
 /Library/Scripts/queue;80
@@ -3108,7 +3108,7 @@ C:\\Windows\\[^\\]{1,20}\.(js|ps1|vbs);50
 \\Get-LAPSP\.ps1;70
 
 # Suspicious Files in Root of Recycle.Bin
-:\\\$Recycle\.Bin\\[^\\]{1,20}\.(exe|vbs|ps1|js|bat|dll);85
+:\\\$Recycle\.Bin\\[^\\"]{1,20}\.(exe|vbs|ps1|js|bat|dll);85
 
 # Stealth Falcon Filename IOC https://www.welivesecurity.com/2019/09/09/backdoor-stealth-falcon-group/
 \\ImageIndexer\.dll;80
@@ -3125,7 +3125,7 @@ C:\\Windows\\[^\\]{1,20}\.(js|ps1|vbs);50
 
 # Emotet Indicator https://app.any.run/tasks/fb5d3877-4179-4bb8-aea4-1cff3a4793ed/
 \\msptermsizes\\msptermsizes\.exe;90
-:\\Users\\[^\\]{1,16}\\[0-9]{1,4}\.exe;65
+:\\Users\\[^\\"]{1,16}\\[0-9]{1,4}\.exe;65
 
 # Looks like an LSASS process memory dump (often contains credentials)
 \\lsass\.dmp;80
@@ -3142,8 +3142,8 @@ C:\\Windows\\[^\\]{1,20}\.(js|ps1|vbs);50
 \\lsass[a-zA-Z_\-\.]{1,16}\.(dmp|zip|rar);70
 
 # Suspicious Extension in AppPatch folder
-c:\\windows\\AppPatch\\[^\\]{1,20}\.(exe|vbs|ps1|bat);70
-c:\\windows\\AppPatch\\custom\\[^\\]{1,20}\.(exe|vbs|ps1|bat);70
+c:\\windows\\AppPatch\\[^\\"]{1,20}\.(exe|vbs|ps1|bat);70
+c:\\windows\\AppPatch\\custom\\[^\\"]{1,20}\.(exe|vbs|ps1|bat);70
 
 # MESSAGETAP components https://twitter.com/cglyer/status/1182415016542248960/photo/1
 \\keyword_param\.txt;70
@@ -3152,21 +3152,21 @@ c:\\windows\\AppPatch\\custom\\[^\\]{1,20}\.(exe|vbs|ps1|bat);70
 \\TeamViewerPortable;60
 
 # OceanLotus / APT32 filename IOCs
-\\ProgramData\\Microsoft Help\\[^\\]{1,20}\.(exe|bat|vbs|ps1);80
+\\ProgramData\\Microsoft Help\\[^\\"]{1,20}\.(exe|bat|vbs|ps1);80
 
 # Suspicious Indicators - Skript in Windows Folder
-C:\\Windows\\[^\\]{1,20}\.(js|ps1|vbs);50
+C:\\Windows\\[^\\"]{1,20}\.(js|ps1|vbs);50
 
 # Emotet Indicator https://app.any.run/tasks/fb5d3877-4179-4bb8-aea4-1cff3a4793ed/
 \\msptermsizes\\msptermsizes\.exe;90
-:\\Users\\[^\\]{1,16}\\[0-9]{1,4}\.exe;65
+:\\Users\\[^\\"]{1,16}\\[0-9]{1,4}\.exe;65
 
 # AVIVORE IOCs https://www.contextis.com/en/blog/avivore
-c:\\iperf\-2.0.5-3-win32\\[^\\]{1,20}\.(exe|vbs|ps1|bat);85
-c:\\perflogs\\admin\\[^\\]{1,20}\.(exe|vbs|ps1|bat);85
-c:\\programdata\\esetoem\\[^\\]{1,20}\.(exe|vbs|ps1|bat);80
-c:\\programdata\\mcafeeoem\\[^\\]{1,20}\.(exe|vbs|ps1|bat);80
-c:\\temp\\gen_py\\[^\\]{1,20}\.(exe|vbs|ps1|bat);70
+c:\\iperf\-2.0.5-3-win32\\[^\\"]{1,20}\.(exe|vbs|ps1|bat);85
+c:\\perflogs\\admin\\[^\\"]{1,20}\.(exe|vbs|ps1|bat);85
+c:\\programdata\\esetoem\\[^\\"]{1,20}\.(exe|vbs|ps1|bat);80
+c:\\programdata\\mcafeeoem\\[^\\"]{1,20}\.(exe|vbs|ps1|bat);80
+c:\\temp\\gen_py\\[^\\"]{1,20}\.(exe|vbs|ps1|bat);70
 \\acres64.exe;70
 \\AcWinRT.exe;70
 \\apihex.exe;70
@@ -3202,10 +3202,10 @@ c:\\temp\\gen_py\\[^\\]{1,20}\.(exe|vbs|ps1|bat);70
 /Library/UnionCrypto/.unioncryptoupdater;90
 
 # BRONZE PRESIDENT Filename IOCs https://www.secureworks.com/research/bronze-president-targets-ngos
-:\\Windows\\Help\\Help\\[^\\]{1,20}\.(exe|vbs|ps1|bat|dll);80
-:\\Windows\\debug\\WIA\\[^\\]{1,20}\.(exe|vbs|ps1|bat|dll);80
-:\\Windows\\Logs\\DPX\\[^\\]{1,20}\.(exe|vbs|ps1|bat|dll);80
-:\\Recovery\\[^\\]{1,20}\.(exe|vbs|ps1|bat|dll);80
+:\\Windows\\Help\\Help\\[^\\"]{1,20}\.(exe|vbs|ps1|bat|dll);80
+:\\Windows\\debug\\WIA\\[^\\"]{1,20}\.(exe|vbs|ps1|bat|dll);80
+:\\Windows\\Logs\\DPX\\[^\\"]{1,20}\.(exe|vbs|ps1|bat|dll);80
+:\\Recovery\\[^\\"]{1,20}\.(exe|vbs|ps1|bat|dll);80
 :\\Windows\\Temp\\system\.hive;80
 
 
@@ -3305,7 +3305,7 @@ ublic\\.Monitor\\ews\.conf;90
 \\upbeat_anxiety\.jpg;80
 \\csidl_windows\\desktoptileresources\\resources\.dll;70
 # Symantec SUNBURST Report - Panther folder should only contain log files and files of type *.xml, *.sdb, *.tmp, *.etl, *.ini, *.cab or *.que https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/sunburst-supply-chain-attack-solarwinds
-:\\Windows\\Panther\\[^\\]{1,20}\.(exe|dll|ps1|vbs|bat)$;70;\\setup\.exe
+:\\Windows\\Panther\\[^\\"]{1,20}\.(exe|dll|ps1|vbs|bat)$;70;\\setup\.exe
 
 # Lazarus Campaigns https://www.hvs-consulting.de/lazarus-report/
 :\\ProgramData\\IBM\\IBM\.dat;90
@@ -3496,12 +3496,12 @@ ublic\\.Monitor\\ews\.conf;90
 \\shell\.aspx$;50
 
 # HAFNIUM IOCs https://www.volexity.com/blog/2021/03/02/active-exploitation-of-microsoft-exchange-zero-day-vulnerabilities/
-\\inetpub\\wwwroot\\aspnet_client\\[^\\]{1,20}\.aspx;90
-\\inetpub\\wwwroot\\aspnet_client\\[^\\]{1,20}\\[^\\]{1,20}\.aspx;90
+\\inetpub\\wwwroot\\aspnet_client\\[^\\"]{1,20}\.aspx;90
+\\inetpub\\wwwroot\\aspnet_client\\[^\\"]{1,20}\\[^\\"]{1,20}\.aspx;90
 \\FrontEnd\\HttpProxy\\ecp\\auth\\[^T];70
-\\FrontEnd\\HttpProxy\\owa\\auth\\Current\\[^\\]{1,20}\.aspx;90
-\\FrontEnd\\HttpProxy\\owa\\auth\\Current\\[^\\]{1,20}\\[^\\]{1,20}\.aspx;90
-\\FrontEnd\\HttpProxy\\owa\\auth\\[0-9\.]{6,12}\\[^\\]{1,20}\.aspx;90
+\\FrontEnd\\HttpProxy\\owa\\auth\\Current\\[^\\"]{1,20}\.aspx;90
+\\FrontEnd\\HttpProxy\\owa\\auth\\Current\\[^\\"]{1,20}\\[^\\"]{1,20}\.aspx;90
+\\FrontEnd\\HttpProxy\\owa\\auth\\[0-9\.]{6,12}\\[^\\"]{1,20}\.aspx;90
 
 # Exchange Exploitation - Web Shell Filename IOCs https://twitter.com/ESETresearch/status/1366862953006452738?s=20
 \\inetpub\\wwwroot\\aspnet_client\\system_web\\(shell\.aspx|supp0rt\.aspx|aspnet\.aspx|aspnet_client\.aspx|client\.aspx|OutlookEN\.aspx);80
@@ -3719,10 +3719,10 @@ C:\\ProgramData\\MSDN\\6\.0\\NTUSER\.DAT;80
 \\FrontEnd\\HttpProxy\\owa\\auth\\415cc41ac1\.aspx;90
 \\FrontEnd\\HttpProxy\\owa\\auth\\6514f55e1a\.aspx;90
 \\FrontEnd\\HttpProxy\\owa\\auth\\VOLWMFQWPP\.aspx;90
-\\inetpub\\wwwroot\\aspnet_client\\system_web\\[^\\]{1,20}\.aspx;80
-\\FrontEnd\\HttpProxy\\owa\\auth\\Current\\themes\\resources\\[^\\]{1,20}\.aspx;80
-\\FrontEnd\\HttpProxy\\owa\\auth\\Current\\themes\\[^\\]{1,20}\.aspx;70
-\\FrontEnd\\HttpProxy\\owa\\auth\\Current\\[^\\]{1,20}\.aspx;70
+\\inetpub\\wwwroot\\aspnet_client\\system_web\\[^\\"]{1,20}\.aspx;80
+\\FrontEnd\\HttpProxy\\owa\\auth\\Current\\themes\\resources\\[^\\"]{1,20}\.aspx;80
+\\FrontEnd\\HttpProxy\\owa\\auth\\Current\\themes\\[^\\"]{1,20}\.aspx;70
+\\FrontEnd\\HttpProxy\\owa\\auth\\Current\\[^\\"]{1,20}\.aspx;70
 
 # Exchange exploitation IOCs https://twitter.com/_JohnHammond/status/1430535961239113733
 C:\\ProgramData\\COM1\\[^\.]{1,40}\.aspx;90
@@ -3743,8 +3743,8 @@ C:\\Users\\All Users\\ZING\\;75
 C:\\Program\.exe;65
 
 # Suspicious contents in Users/Public folder 
-\\Users\\Public\\[^\\]{1,20}\.(dll|vbs|ps1|bat|hta|com);70
-\\Users\\Public\\[^\\]{1,20}\.exe;65
+\\Users\\Public\\[^\\"]{1,20}\.(dll|vbs|ps1|bat|hta|com);70
+\\Users\\Public\\[^\\"]{1,20}\.exe;65
 
 # Nmap, Network scanning tool https://nmap.org/
 \\nmap\.exe;50
@@ -3834,7 +3834,7 @@ application-79837fd1939f90d58cc5a842a81120e8cecbc03484362e88081ebf3b7e3830e9\.cs
 application-2eaf7e76aa55726cc0419f604e58ee73c5578c02c9e21fdbe7ae887925ea92ae\.css;70
 
 # Zoho Desktop Central Vulnerability exploitation CVE-2021-44515 https://thehackernews.com/2021/12/warning-yet-another-zoho-manageengine.html
-\\ManageEngine\\DesktopCentral_Server\\(lib|lib\\third_party_jars\\jersey|lib\\tomcat|lib\\resources|ServerTroubleShooter\\lib|ServerTroubleShooter\\lib\\util|ServerTroubleShooter\\lib\\starter)\\[^\\]{1,16}\.zip;70
+\\ManageEngine\\DesktopCentral_Server\\(lib|lib\\third_party_jars\\jersey|lib\\tomcat|lib\\resources|ServerTroubleShooter\\lib|ServerTroubleShooter\\lib\\util|ServerTroubleShooter\\lib\\starter)\\[^\\"]{1,16}\.zip;70
 \\webapps\\DesktopCentral\\html\\help_me\.jsp;80
 \\webapps\\DesktopCentral\\html\\help_me\.html;80
 
@@ -3924,7 +3924,7 @@ Potato\.exe;65
 \\lsass[a-zA-Z_\-\.]{1,16}\.(dmp|zip|rar|7z);70
 
 # Programs or scripts in C:\ProgramData folder (no sub folder)
-\\ProgramData\\[^\\]{1,40}\.(EXE|DLL|exe|dll|bat|BAT|vbs|VBS|ps1|jar)([^._\\\]]|$);70;(\[Discord\.exe\]|UserProfileMigrationService\.exe|\.exe\.textpad|\\\$WINDOWS\.~BT\\)
+\\ProgramData\\[^\\"]{1,40}\.(EXE|DLL|exe|dll|bat|BAT|vbs|VBS|ps1|jar)([^._\\\]]|$);70;(\[Discord\.exe\]|UserProfileMigrationService\.exe|\.exe\.textpad|\\\$WINDOWS\.~BT\\)
 
 # PostDump artefacts https://github.com/post-cyberlabs/Offensive_tools/tree/main/PostDump
 :\\Temp\\yolo\.log;75

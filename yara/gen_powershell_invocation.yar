@@ -5,7 +5,7 @@ rule PowerShell_Susp_Parameter_Combo : HIGHVOL {
       author = "Florian Roth"
       reference = "https://goo.gl/uAic1X"
       date = "2017-03-12"
-      modified = "2022-06-24"
+      modified = "2022-07-11"
       score = 60
       type = "file"
    strings:
@@ -56,6 +56,7 @@ rule PowerShell_Susp_Parameter_Combo : HIGHVOL {
       $fp5 = "\\LastPass\\lpwinmetro\\AppxUpgradeUwp.ps1" ascii
       $fp6 = "# use the encoded form to mitigate quoting complications that full scriptblock transfer exposes" ascii /* MS TSSv2 - https://docs.microsoft.com/en-us/troubleshoot/windows-client/windows-troubleshooters/introduction-to-troubleshootingscript-toolset-tssv2 */
       $fp7 = "Write-AnsibleLog \"INFO - s" ascii
+      $fp8 = "\\Packages\\Matrix42\\" ascii
    condition:
       filesize < 3000KB and 4 of ($s*) and not 1 of ($fp*) and uint32be(0) != 0x456C6646 /* EVTX - we don't wish to mix the entries together */
 }
