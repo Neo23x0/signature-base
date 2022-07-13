@@ -105,7 +105,6 @@ Temp\\Updatasched\.exe;80
 \\abc\.rar;50
 
 # Kaspersky Carbanak APT Malware Hash http://goo.gl/0Nhax2
-(application data|AppData|Anwendungsdaten)\\mozilla\\[^\\]+\.bin;80
 \\System32\\com\\svchost\.exe;80
 \\ProgramData\\mozilla\\[^\\]+\.bin;80
 \\(Windows|WinXP)\\paexec;80
