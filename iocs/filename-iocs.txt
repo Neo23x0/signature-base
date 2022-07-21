@@ -3974,4 +3974,8 @@ Potato\.exe;65
 /dev/shm/kdumpdb;90
 /var/run/haldrund\.pid;80
 
+# Detects vulnerable Confluence Questions plugins based on filename pattern CVE-2022-26138 https://www.bleepingcomputer.com/news/security/atlassian-fixes-critical-confluence-hardcoded-credentials-flaw/
+\\confluence-questions-3\.0\.[0-4]\.jar$;50
+\\confluence-questions-2\.7\.([0-9]|[12][0-9]|3[0-7])\.jar$;50
+
 # End
