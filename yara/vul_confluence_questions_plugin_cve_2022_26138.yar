@@ -11,10 +11,13 @@ rule VULN_Confluence_Questions_Plugin_CVE_2022_26138_Jul22_1 {
 
       $jar_marker = "/confluence/plugins/questions/"
       /*                 v this is the size of 204 bytes              */
-      $jar_1_size = { 00 CC ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ??
+      $jar_size_1 = { 00 CC ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? ??
       /*    here starts default.properties v                          */
                       ?? ?? ?? ?? ?? ?? 00 64 65 66 61 75 6C 74 2E 70
                       72 6F 70 65 72 74 69 65 73 50 4B }
+      $jar_size_2 = { 00 CC 00 ?? ?? ?? ?? ?? 00 64 65 66 61 75 6C 74
+                      2E 70 72 6F 70 65 72 74 69 65 73 }
    condition:
-      1 of ($x*) or all of ($jar*)
+      1 of ($x*) or ( $jar_marker and 1 of ($jar_size*) )
 }
+
