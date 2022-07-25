@@ -18,5 +18,5 @@ rule VULN_PUA_GIGABYTE_Driver_Jul22_1 {
                00 4E 00 61 00 6D 00 65 00 00 00 67 00 64 00 72
                00 76 00 2E 00 73 00 79 00 73 }
    condition:
-      filesize < 400KB and $xc1
+      filesize < 4000KB and $xc1
 }
