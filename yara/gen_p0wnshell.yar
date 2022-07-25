@@ -29,11 +29,12 @@ rule p0wnedPowerCat {
 
 rule Hacktool_Strings_p0wnedShell {
    meta:
-      description = "p0wnedShell Runspace Post Exploitation Toolkit - file p0wnedShell.cs"
+      description = "Detects strings found in Runspace Post Exploitation Toolkit"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://github.com/Cn33liz/p0wnedShell"
       date = "2017-01-14"
+      modified = "2022-07-25"
       hash1 = "e1f35310192416cd79e60dba0521fc6eb107f3e65741c344832c46e9b4085e60"
    strings:
       $x1 = "Invoke-TokenManipulation" fullword ascii
@@ -48,8 +49,10 @@ rule Hacktool_Strings_p0wnedShell {
 
       $fp1 = "Sentinel Labs, Inc." wide
       $fp2 = "Copyright Elasticsearch B.V." ascii wide
+      $fp3 = "Attack Information: Invoke-Mimikatz" ascii /* Check Point help files */
    condition:
-      1 of ($x*) 
+      filesize < 20MB
+      and 1 of ($x*)
       and not 1 of ($fp*)
 }
 
