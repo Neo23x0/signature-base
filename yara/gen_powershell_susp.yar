@@ -56,7 +56,7 @@ rule Suspicious_PowerShell_WebDownload_1 : HIGHVOL {
       score = 60
       reference = "Internal Research"
       date = "2017-02-22"
-      modified = "2022-06-30"
+      modified = "2022-07-27"
       type = "file"
       nodeepdive = 1
    strings:
@@ -73,6 +73,8 @@ rule Suspicious_PowerShell_WebDownload_1 : HIGHVOL {
       $fp5 = ".DownloadFile('https://aka.ms/installazurecliwindows', 'AzureCLI.msi')" ascii
       $fp6 = " 404 " /* in web server logs */
       $fp7 = "# RemoteSSHConfigurationScript" ascii /* \.vscode\extensions\ms-vscode-remote.remote-ssh */
+      $fp8 = "<helpItems" ascii fullword
+      $fp9 = "DownloadFile(\"https://codecov.io/bash" ascii
    condition:
       1 of ($s*) and not 1 of ($fp*)
 }
