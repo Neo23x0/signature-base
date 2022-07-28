@@ -77,7 +77,7 @@ rule Cloaked_as_JPG {
 */
 
 rule Suspicious_Size_explorer_exe {
-    meta:
+   meta:
       description = "Detects uncommon file size of explorer.exe"
       license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Florian Roth"
@@ -86,9 +86,9 @@ rule Suspicious_Size_explorer_exe {
       date = "2015-12-21"
       modified = "2022-04-27"
       noarchivescan = 1
-    strings:
+   strings:
       $fp = "Wine placeholder DLL"
-    condition:
+   condition:
       uint16(0) == 0x5a4d
       and filename == "explorer.exe"
       and not filepath contains "teamviewer"
