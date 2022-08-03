@@ -36,13 +36,14 @@ rule Methodology_Suspicious_Shortcut_SMB_URL
     and filesize < 30KB
 }
 
+/* many FPs
 rule Methodology_Suspicious_Shortcut_IconRemote_HTTP
 {
   meta:
     author = "@itsreallynick (Nick Carr)"
     description = "Detects possible shortcut usage for .URL persistence"
     reference = "https://twitter.com/cglyer/status/1176184798248919044"
-    score = 50
+    score = 40
     date = "27.09.2019"
   strings:
     $icon = /IconFile\s*=\s*http/ nocase
@@ -53,6 +54,7 @@ rule Methodology_Suspicious_Shortcut_IconRemote_HTTP
     and uint16(0) != 0x5A4D and uint32(0) != 0x464c457f and uint32(0) != 0xBEBAFECA and uint32(0) != 0xFEEDFACE and uint32(0) != 0xFEEDFACF and uint32(0) != 0xCEFAEDFE
     and filesize < 30KB
 }
+*/
 
 rule Methodology_Suspicious_Shortcut_IconRemote_SMBorLocal
 {

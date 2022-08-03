@@ -5,7 +5,7 @@ rule HKTL_Nim_NimPackt : EXE FILE HKTL {
         author = "Cas van Cooten"
         reference = "https://github.com/chvancooten/NimPackt-v1"
         date = "2022-01-26"
-        score = 70
+        score = 80
     strings:
         $nim1 = "fatal.nim" ascii fullword
         $nim2 = "winim" ascii
