@@ -34,8 +34,10 @@ rule Hacktool_Strings_p0wnedShell {
       author = "Florian Roth"
       reference = "https://github.com/Cn33liz/p0wnedShell"
       date = "2017-01-14"
-      modified = "2022-07-25"
+      modified = "2022-07-29"
       hash1 = "e1f35310192416cd79e60dba0521fc6eb107f3e65741c344832c46e9b4085e60"
+      nodeepdive = 1
+      type = "file"
    strings:
       $x1 = "Invoke-TokenManipulation" fullword ascii
       $x2 = "windows/meterpreter" fullword ascii
@@ -50,6 +52,7 @@ rule Hacktool_Strings_p0wnedShell {
       $fp1 = "Sentinel Labs, Inc." wide
       $fp2 = "Copyright Elasticsearch B.V." ascii wide
       $fp3 = "Attack Information: Invoke-Mimikatz" ascii /* Check Point help files */
+      $fp4 = "a30226 || INDICATOR-SHELLCODE Metasploit windows/meterpreter stage transfer attempt" /* snort message ID */
    condition:
       filesize < 20MB
       and 1 of ($x*)
