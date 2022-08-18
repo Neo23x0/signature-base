@@ -2303,8 +2303,9 @@ rule webshell_php_by_string_obfuscation
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/09"
+		modified = "2022-08-18"
 		hash = "e4a15637c90e8eabcbdc748366ae55996dbec926382220c423e754bd819d22bc"
-
+		type = "file"
 	strings:
 		$opbs13 = "{\"_P\"./*-/*-*/\"OS\"./*-/*-*/\"T\"}" wide ascii
 		$opbs14 = "/*-/*-*/\"" wide ascii
@@ -2358,7 +2359,7 @@ rule webshell_php_by_string_obfuscation
 		$opbs76 = "'ev'.'al("
         // eval( in hex
 		$opbs77 = "\\x65\\x76\\x61\\x6c\\x28" wide ascii nocase
-	
+
 		//strings from private rule capa_php_old_safe
 		$php_short = "<?" wide ascii
 		// prevent xml and asp from hitting with the short tag
@@ -2366,26 +2367,31 @@ rule webshell_php_by_string_obfuscation
 		$no_xml2 = "<?xml-stylesheet" nocase wide ascii
 		$no_asp1 = "<%@LANGUAGE" nocase wide ascii
 		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
-		$no_pdf = "<?xpacket" 
+		$no_pdf = "<?xpacket"
 
 		// of course the new tags should also match
         // already matched by "<?"
 		$php_new1 = /<\?=[^?]/ wide ascii
 		$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
-	
+
+		$fp1 = "NanoSpell TinyMCE Spellchecker for PHP" ascii fullword
 	condition:
-		filesize < 500KB and ( 
+		filesize < 500KB and (
 			(
-				( 
-						$php_short in (0..100) or 
+				(
+						$php_short in (0..100) or
 						$php_short in (filesize-1000..filesize)
 				)
 				and not any of ( $no_* )
-			) 
-			or any of ( $php_new* ) 
+			)
+			or any of ( $php_new* )
 		)
 		and any of ( $opbs* )
+		and not 1 of ($fp*)
+		and not filepath contains "\\User Data\\Default\\Cache\\" // chrome cache
+		and not filepath contains "\\cache2\\entries\\" // FF cache
+		and not filepath contains "\\Microsoft\\Windows\\INetCache\\IE\\" // old IE
 }
 
 rule webshell_php_strings_susp
