@@ -86,12 +86,13 @@ rule webshell_php_generic
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/14"
+		modified = "2022-08-19"
 		hash = "bee1b76b1455105d4bfe2f45191071cf05e83a309ae9defcf759248ca9bceddd"
 
 	strings:
 		$wfp_tiny1 = "escapeshellarg" fullword
 		$wfp_tiny2 = "addslashes" fullword
-	
+
 		//strings from private rule php_false_positive_tiny
 		// try to use only strings which would be flagged by themselves as suspicious by other rules, e.g. eval
 		//$gfp_tiny1 = "addslashes" fullword
@@ -104,7 +105,7 @@ rule webshell_php_generic
 		$gfp_tiny8 = "echo shell_exec($aspellcommand . ' 2>&1');"
 		$gfp_tiny9 = "throw new Exception('Could not find authentication source with id ' . $sourceId);"
 		$gfp_tiny10= "return isset( $_POST[ $key ] ) ? $_POST[ $key ] : ( isset( $_REQUEST[ $key ] ) ? $_REQUEST[ $key ] : $default );"
-	
+
 		//strings from private rule capa_php_old_safe
 		$php_short = "<?" wide ascii
 		// prevent xml and asp from hitting with the short tag
@@ -112,18 +113,18 @@ rule webshell_php_generic
 		$no_xml2 = "<?xml-stylesheet" nocase wide ascii
 		$no_asp1 = "<%@LANGUAGE" nocase wide ascii
 		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
-		$no_pdf = "<?xpacket" 
+		$no_pdf = "<?xpacket"
 
 		// of course the new tags should also match
         // already matched by "<?"
 		$php_new1 = /<\?=[^?]/ wide ascii
 		$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
-	
+
 		//strings from private rule capa_php_input
 		$inp1 = "php://input" wide ascii
 		$inp2 = /_GET\s?\[/ wide ascii
-        // for passing $_GET to a function 
+        // for passing $_GET to a function
 		$inp3 = /\(\s?\$_GET\s?\)/ wide ascii
 		$inp4 = /_POST\s?\[/ wide ascii
 		$inp5 = /\(\s?\$_POST\s?\)/ wide ascii
@@ -135,7 +136,7 @@ rule webshell_php_generic
 		$inp17 = /getenv[\t ]{0,20}\([\t ]{0,20}['"]HTTP_/ wide ascii
 		$inp18 = "array_values($_SERVER)" wide ascii
 		$inp19 = /file_get_contents\("https?:\/\// wide ascii
-	
+
 		//strings from private rule capa_php_payload
 		// \([^)] to avoid matching on e.g. eval() in comments
 		$cpayload1 = /\beval[\t ]*\([^)]/ nocase wide ascii
@@ -156,7 +157,7 @@ rule webshell_php_generic
 		$m_cpayload_preg_filter1 = /\bpreg_filter[\t ]*\([^\)]/ nocase wide ascii
 		$m_cpayload_preg_filter2 = "'|.*|e'" nocase wide ascii
 		// TODO backticks
-	
+
 		//strings from private rule capa_gen_sus
 
         // these strings are just a bit suspicious, so several of them are needed, depending on filesize
@@ -218,13 +219,13 @@ rule webshell_php_generic
         // very suspicious strings, one is enough
         $gen_much_sus7  = "Web Shell" nocase
         $gen_much_sus8  = "WebShell" nocase
-        $gen_much_sus3  = "hidded shell" 
+        $gen_much_sus3  = "hidded shell"
         $gen_much_sus4  = "WScript.Shell.1" nocase
-        $gen_much_sus5  = "AspExec" 
+        $gen_much_sus5  = "AspExec"
         $gen_much_sus14 = "\\pcAnywhere\\" nocase
         $gen_much_sus15 = "antivirus" nocase
         $gen_much_sus16 = "McAfee" nocase
-        $gen_much_sus17 = "nishang" 
+        $gen_much_sus17 = "nishang"
         $gen_much_sus18 = "\"unsafe" fullword wide ascii
         $gen_much_sus19 = "'unsafe" fullword wide ascii
         $gen_much_sus24 = "exploit" fullword wide ascii
@@ -282,7 +283,7 @@ rule webshell_php_generic
 
         $gif = { 47 49 46 38 }
 
-	
+
 		//strings from private rule capa_php_payload_multiple
 		// \([^)] to avoid matching on e.g. eval() in comments
 		$cmpayload1 = /\beval[\t ]*\([^)]/ nocase wide ascii
@@ -299,74 +300,76 @@ rule webshell_php_generic
 		$cmpayload12 = /\bmb_ereg_replace[\t ]*\([^\)]{1,100}'e'/ nocase wide ascii
 		$cmpayload20 = /\bcreate_function[\t ]*\([^)]/ nocase wide ascii
 		$cmpayload21 = /\bReflectionFunction[\t ]*\([^)]/ nocase wide ascii
-	
+
+		$fp1 = "# Some examples from obfuscated malware:" ascii
 	condition:
-		not ( 
-			any of ( $gfp_tiny* ) 
+		not (
+			any of ( $gfp_tiny* )
+			or not 1 of ($fp*)
 		)
-		and ( 
+		and (
 			(
-				( 
-						$php_short in (0..100) or 
+				(
+						$php_short in (0..100) or
 						$php_short in (filesize-1000..filesize)
 				)
 				and not any of ( $no_* )
-			) 
-			or any of ( $php_new* ) 
+			)
+			or any of ( $php_new* )
 		)
-		and ( 
-			any of ( $inp* ) 
+		and (
+			any of ( $inp* )
 		)
-		and ( 
+		and (
 			any of ( $cpayload* ) or
-        all of ( $m_cpayload_preg_filter* ) 
+        all of ( $m_cpayload_preg_filter* )
 		)
-		and 
-		( ( filesize < 1000 and not any of ( $wfp_tiny* ) ) or 
-		( ( 
+		and
+		( ( filesize < 1000 and not any of ( $wfp_tiny* ) ) or
+		( (
         $gif at 0 or
         (
-            filesize < 4KB and 
+            filesize < 4KB and
             (
                 1 of ( $gen_much_sus* ) or
                 2 of ( $gen_bit_sus* )
             )
         ) or (
-            filesize < 20KB and 
+            filesize < 20KB and
             (
                 2 of ( $gen_much_sus* ) or
                 3 of ( $gen_bit_sus* )
             )
         ) or (
-            filesize < 50KB and 
+            filesize < 50KB and
             (
                 2 of ( $gen_much_sus* ) or
                 4 of ( $gen_bit_sus* )
             )
         ) or (
-            filesize < 100KB and 
+            filesize < 100KB and
             (
                 2 of ( $gen_much_sus* ) or
                 6 of ( $gen_bit_sus* )
             )
         ) or (
-            filesize < 150KB and 
+            filesize < 150KB and
             (
                 3 of ( $gen_much_sus* ) or
                 7 of ( $gen_bit_sus* )
             )
         ) or (
-            filesize < 500KB and 
+            filesize < 500KB and
             (
                 4 of ( $gen_much_sus* ) or
                 8 of ( $gen_bit_sus* )
             )
-        ) 
+        )
 		)
-		and 
-		( filesize > 5KB or not any of ( $wfp_tiny* ) ) ) or 
-		( filesize < 500KB and ( 
-			4 of ( $cmpayload* ) 
+		and
+		( filesize > 5KB or not any of ( $wfp_tiny* ) ) ) or
+		( filesize < 500KB and (
+			4 of ( $cmpayload* )
 		)
 		) )
 }
@@ -1815,6 +1818,7 @@ rule webshell_php_dynamic_big
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/02/07"
+		modified = "2022-08-19"
 		score = 50
 
 	strings:
@@ -1964,28 +1968,29 @@ rule webshell_php_dynamic_big
 
         $gif = { 47 49 46 38 }
 
-	
+        $fp1 = "# Some examples from obfuscated malware:" ascii
 	condition:
-		filesize < 500KB and not ( 
-        uint16(0) == 0x5a4d or 
-        $dex at 0 or 
-        $pack at 0 or 
-        // fp on jar with zero compression
-        uint16(0) == 0x4b50 
+		filesize < 500KB and not (
+			uint16(0) == 0x5a4d or
+			$dex at 0 or
+			$pack at 0 or
+			// fp on jar with zero compression
+			uint16(0) == 0x4b50 or
+			1 of ($fp*)
 		)
-		and ( 
+		and (
 			any of ( $new_php* ) or
-        $php_short at 0 
+        $php_short at 0
 		)
-		and ( 
-			any of ( $dynamic* ) 
+		and (
+			any of ( $dynamic* )
 		)
-		and 
-		( ( 
+		and
+		( (
 			// file shouldn't be too small to have big enough data for math.entropy
-			filesize > 2KB and 
+			filesize > 2KB and
         (
-            // base64 : 
+            // base64 :
             // ignore first and last 500bytes because they usually contain code for decoding and executing
             math.entropy(500, filesize-500) >= 5.7 and
             // encoded text has a higher mean than text or code because it's missing the spaces and special chars with the low numbers
@@ -2005,47 +2010,47 @@ rule webshell_php_dynamic_big
             // lets take a bit more because it might not be pure base64 also include some xor, shift, replacement, ...
             // 89 is the mean of the base64 chars
             math.deviation(500, filesize-500, 89.0) > 65
-        ) 
+        )
 		)
-		or ( 
+		or (
         $gif at 0 or
         (
-            filesize < 4KB and 
+            filesize < 4KB and
             (
                 1 of ( $gen_much_sus* ) or
                 2 of ( $gen_bit_sus* )
             )
         ) or (
-            filesize < 20KB and 
+            filesize < 20KB and
             (
                 2 of ( $gen_much_sus* ) or
                 3 of ( $gen_bit_sus* )
             )
         ) or (
-            filesize < 50KB and 
+            filesize < 50KB and
             (
                 2 of ( $gen_much_sus* ) or
                 4 of ( $gen_bit_sus* )
             )
         ) or (
-            filesize < 100KB and 
+            filesize < 100KB and
             (
                 2 of ( $gen_much_sus* ) or
                 6 of ( $gen_bit_sus* )
             )
         ) or (
-            filesize < 150KB and 
+            filesize < 150KB and
             (
                 3 of ( $gen_much_sus* ) or
                 7 of ( $gen_bit_sus* )
             )
         ) or (
-            filesize < 500KB and 
+            filesize < 500KB and
             (
                 4 of ( $gen_much_sus* ) or
                 8 of ( $gen_bit_sus* )
             )
-        ) 
+        )
 		)
 		)
 }
