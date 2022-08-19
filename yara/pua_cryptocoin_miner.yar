@@ -1,5 +1,5 @@
 
-rule CoinMiner_Strings : SCRIPT {
+rule CoinMiner_Strings : SCRIPT HIGHVOL {
    meta:
       description = "Detects mining pool protocol string in Executable"
       author = "Florian Roth"

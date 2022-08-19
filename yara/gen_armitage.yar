@@ -14,20 +14,17 @@
 rule Armitage_msfconsole {
    meta:
       description = "Detects Armitage component"
-      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-12-24"
+      modified = "2022-08-18"
       hash1 = "662ba75c7ed5ac55a898f480ed2555d47d127a2d96424324b02724b3b2c95b6a"
    strings:
       $s1 = "\\umeterpreter\\u >" fullword ascii
       $s3 = "^meterpreter >" fullword ascii
       $s11 = "\\umsf\\u>" fullword ascii
    condition:
-      ( uint16(0) == 0x6d5e and
-        filesize < 1KB and
-        ( 8 of them )
-      ) or ( all of them )
+      filesize < 1KB and 2 of them
 }
 
 /* Removed 7 rules */

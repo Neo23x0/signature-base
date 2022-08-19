@@ -2395,6 +2395,7 @@ rule webshell_php_strings_susp
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/12"
+		modified = "2022-08-18"
 		hash = "0dd568dbe946b5aa4e1d33eab1decbd71903ea04"
 		score = 50
 
@@ -2449,25 +2450,24 @@ rule webshell_php_strings_susp
 		$inp19 = /file_get_contents\("https?:\/\// wide ascii
 	
 	condition:
-		filesize < 700KB and ( 
+		filesize < 700KB and (
 			(
-				( 
-						$php_short in (0..100) or 
+				(
+						$php_short in (0..100) or
 						$php_short in (filesize-1000..filesize)
 				)
 				and not any of ( $no_* )
-			) 
-			or any of ( $php_new* ) 
+			)
+			or any of ( $php_new* )
 		)
-		and not ( 
-			any of ( $gfp* ) 
+		and not (
+			any of ( $gfp* )
 		)
-		and 
-		( 2 of ( $sstring* ) or 
-		( 1 of ( $sstring* ) and ( 
-			any of ( $inp* ) 
+		and
+		( 1 of ( $sstring* ) and (
+			any of ( $inp* )
 		)
-		) )
+		)
 }
 
 rule webshell_php_in_htaccess

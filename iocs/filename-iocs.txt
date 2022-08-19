@@ -2377,7 +2377,6 @@ ystem32\\DumpExt\.dll;75
 \\fakeerror\.sfx\.exe;50
 \\FancyBtR\.bat;50
 \\fansi\.exe;50
-\\feedback\.exe;50
 \\fffffib\.dll;50
 \\File1\.exe;50
 \\file1\.exe;50
