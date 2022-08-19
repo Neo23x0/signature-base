@@ -36,6 +36,7 @@ rule PUA_CryptoMiner_Jan19_1 {
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2019-01-31"
+      score = 80
       hash1 = "ede858683267c61e710e367993f5e589fcb4b4b57b09d023a67ea63084c54a05"
    strings:
       $s1 = "Stratum notify: invalid Merkle branch" fullword ascii
