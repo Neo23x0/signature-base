@@ -86,7 +86,7 @@ rule webshell_php_generic
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/14"
-		modified = "2022-08-19"
+		modified = "2022-08-22"
 		hash = "bee1b76b1455105d4bfe2f45191071cf05e83a309ae9defcf759248ca9bceddd"
 
 	strings:
@@ -305,7 +305,7 @@ rule webshell_php_generic
 	condition:
 		not (
 			any of ( $gfp_tiny* )
-			or not 1 of ($fp*)
+			or 1 of ($fp*)
 		)
 		and (
 			(
