@@ -36,37 +36,74 @@ rule Embedded_EXE_Cloaking {
                 for any i in (1..#mz): ( @a1 < ( @mz[i] + 200 ) or @a2 < ( @mz[i] + 200 ) )
 }
 
-rule Cloaked_as_JPG {
+// whitelist-approach failed : reworked in SUSP_Known_Type_Cloaked_as_JPG
+
+// rule Cloaked_as_JPG {
+//    meta:
+//       description = "Detects a non-JPEG file cloaked as JPG"
+//       author = "Florian Roth"
+//       date = "2015/03/02"
+//       modified = "2022-09-16"
+//       score = 40
+//    strings:
+//       $fp1 = "<!DOCTYPE" ascii
+//       $fp2 = "Sophos Encrypted File Format" ascii
+//       $fp3 = "This is a critical resource file used by WatchGuard/TDR" ascii
+//    condition:
+//       uint16be(0) != 0xFFD8 and extension == ".jpg"
+//       and filetype != "GIF"
+//       and filetype != "PDF"
+//       and not $fp1 in (0..30)
+//       and not $fp2 at 0
+//       and not $fp3
+//       and not uint16(0) == 0x8b1f /* GZIP */
+//       and not uint16(0) == 0x4d42 /* BMP */
+//       and not uint32(0) == 0x474E5089 /* PNG Header */
+//       and not uint32(0) == 0x002A4949 /* TIFF Header */
+//       and not uint32be(0) == 0x3c737667 /* <svg */
+//       and not uint32be(0) == 0x52494646 /* RIFF (WebP) */
+//       and not uint32be(0x4) == 0x66747970 /* HEIF Header https://github.com/strukturag/libheif/commit/6ca8e2548dbfe21200bae3a7c2c315a1796e3852 */
+//       and not uint32be(0xe) == 0x4a464946 /* JFIF distributed by Matlab */
+//       and not filename matches /\$[Ii][A-Z0-9]{6}/
+//       and not filepath contains "WinSxS"
+//       and not filepath contains "Package_for_RollupFix"
+//       and not filename matches /^\._/
+//       and not filepath contains "$Recycle.Bin"
+//       and not filepath contains "\\Cache\\" /* generic cache e.g. for Chrome: \User Data\Default\Cache\ */
+//       and not filepath contains "\\User Data\\Default\\Extensions\\" // chrome extensions
+//       and not filepath contains "\\cache2\\" // FF cache
+//       and not filepath contains "\\Microsoft\\Windows\\INetCache\\IE\\" // old IE
+//       and not filepath contains "/com.apple.Safari/WebKitCache/"
+//       and not filepath contains "\\Edge\\User Data\\" // some uncommon Edge path
+//       and not filepath contains "/Code/"
+//       and not filepath contains "\\Code\\"
+// }
+
+rule SUSP_Known_Type_Cloaked_as_JPG {
    meta:
-      description = "Detects a non-JPEG file cloaked as JPG"
+      description = "Detects a non-JPEG file type cloaked as .jpg"
       author = "Florian Roth"
-      date = "2015/03/02"
-      modified = "2022-06-29"
-      score = 50
-   strings:
-      $fp1 = "<!DOCTYPE" ascii
-      $fp2 = "Sophos Encrypted File Format" ascii
-      $fp3 = "This is a critical resource file used by WatchGuard/TDR" ascii
+      reference = "Internal Research - replacement for Cloaked_as_JPG rule"
+      date = "2022-09-16"
+      score = 60
    condition:
-      uint16be(0) != 0xFFD8 and extension == ".jpg"
-      and filetype != "GIF"
-      and filetype != "PDF"
-      and not $fp1 in (0..30)
-      and not $fp2 at 0
-      and not $fp3
-      and not uint16(0) == 0x8b1f /* GZIP */
-      and not uint16(0) == 0x4d42 /* BMP */
-      and not uint32(0) == 0x474E5089 /* PNG Header */
-      and not uint32(0) == 0x002A4949 /* TIFF Header */
-      and not uint32be(0) == 0x3c737667 /* <svg */
-      and not uint32be(0) == 0x52494646 /* RIFF (WebP) */
-      and not uint32be(0x4) == 0x66747970 /* HEIF Header https://github.com/strukturag/libheif/commit/6ca8e2548dbfe21200bae3a7c2c315a1796e3852 */
-      and not uint32be(0xe) == 0x4a464946 /* JFIF distributed by Matlab */
-      and not filename matches /\$[Ii][A-Z0-9]{6}/
-      and not filepath contains "WinSxS"
-      and not filepath contains "Package_for_RollupFix"
-      and not filename matches /^\._/
-      and not filepath contains "$Recycle.Bin"
+      ( extension == ".jpg" or extension == ".jpeg" ) and ( 
+         filetype == "EXE" or
+         filetype == "ELF" or
+         filetype == "MACH-O" or
+         filetype == "VBS" or
+         filetype == "PHP" or
+         filetype == "JSP" or
+         filetype == "Python" or
+         filetype == "LSASS Dump File" or
+         filetype == "ASP" or
+         filetype == "BATCH" or
+         filetype == "RTF" or
+         filetype == "MDMP" or
+
+         filetype contains "PowerShell" or
+         filetype contains "Base64"
+      )
 }
 
 /*
@@ -429,6 +466,8 @@ rule SUSP_RTF_Header_Anomaly {
       author = "Florian Roth"
       reference = "https://twitter.com/ItsReallyNick/status/975705759618158593"
       date = "2019-01-20"
+      modified = "2022-09-15"
+      score = 50
    condition:
       uint32(0) == 0x74725c7b and /* {\rt */
       not uint8(4) == 0x66 /* not f */
