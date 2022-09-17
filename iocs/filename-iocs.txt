@@ -3977,4 +3977,7 @@ Potato\.exe;65
 \\confluence-questions-3\.0\.[0-4]\.jar$;50
 \\confluence-questions-2\.7\.([0-9]|[12][0-9]|3[0-7])\.jar$;50
 
+# Redline / Racoon Password Stealer filename IOCs https://twitter.com/cglyer/status/1570965878480719873
+\\LOGID-[0-9]{7}\.zip$;75
+
 # End
