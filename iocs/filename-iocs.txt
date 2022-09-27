@@ -3980,4 +3980,15 @@ Potato\.exe;65
 # Redline / Racoon Password Stealer filename IOCs https://twitter.com/cglyer/status/1570965878480719873
 \\LOGID-[0-9]{7}\.zip$;75
 
+# Metador IOCs https://assets.sentinelone.com/sentinellabs22/metador
+C:\\Windows\\System32\\cdb\.exe;85
+C:\\Windows\\System32\\cdb\.ini;85
+C:\\Windows\\System32\\speech02.db;80
+C:\\Windows\\System32\\speech03.db;80
+C:\\Windows\\System32\\fcache11.db;80
+C:\\Windows\\System32\\fcache13.db;80
+C:\\Windows\\System32\\fcache11.db;80
+C:\\Windows\\System32\\fcache13.db;80
+C:\\Windows\\System32\\fcache14.db;80
+
 # End
