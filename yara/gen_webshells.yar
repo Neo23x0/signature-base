@@ -658,16 +658,16 @@ rule webshell_php_generic_callback
 		)
 		)
 }
-
-rule webshell_php_base64_encoded_payloads
+rule WEBSHELL_php_base64_encoded_payloads
 {
 	meta:
 		description = "php webshell containing base64 encoded payload"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Arnim Rupp"
-		date = "2021-01-07"
-		modified = "2021-10-29"
+		date = "2021/01/07"
+    modified = "2022-09-19"
 		hash = "88d0d4696c9cb2d37d16e330e236cb37cfaec4cd"
+    type = "file"
 
 	strings:
 		$decode1 = "base64_decode" fullword nocase wide ascii
@@ -756,11 +756,13 @@ rule webshell_php_base64_encoded_payloads
         // false positives
         $fp1 = { D0 CF 11 E0 A1 B1 1A E1 }
         // api.telegram
-        $fp2 = "YXBpLnRlbGVncmFtLm9" 
-		// Log files
-		$fp3 = "GET /"
-		$fp4 = "POST /"	
-	
+        $fp2 = "YXBpLnRlbGVncmFtLm9"
+        // Log files
+        $fp3 = " GET /"
+        $fp4 = " POST /"
+
+    $fpa1 = "/cn=Recipients"
+
 		//strings from private rule capa_php_old_safe
 		$php_short = "<?" wide ascii
 		// prevent xml and asp from hitting with the short tag
@@ -768,28 +770,28 @@ rule webshell_php_base64_encoded_payloads
 		$no_xml2 = "<?xml-stylesheet" nocase wide ascii
 		$no_asp1 = "<%@LANGUAGE" nocase wide ascii
 		$no_asp2 = /<script language="(vb|jscript|c#)/ nocase wide ascii
-		$no_pdf = "<?xpacket" 
+		$no_pdf = "<?xpacket"
 
 		// of course the new tags should also match
         // already matched by "<?"
 		$php_new1 = /<\?=[^?]/ wide ascii
 		$php_new2 = "<?php" nocase wide ascii
 		$php_new3 = "<script language=\"php" nocase wide ascii
-	
+
 	condition:
-		filesize < 300KB and ( 
+		filesize < 300KB and (
 			(
-				( 
-						$php_short in (0..100) or 
+				(
+						$php_short in (0..100) or
 						$php_short in (filesize-1000..filesize)
 				)
 				and not any of ( $no_* )
-			) 
-			or any of ( $php_new* ) 
+			)
+			or any of ( $php_new* )
 		)
-		and not any of ( $fp* ) and any of ( $decode* ) and 
-		( ( any of ( $one* ) and not any of ( $execu* ) ) or any of ( $two* ) or any of ( $three* ) or 
-		( any of ( $four* ) and not any of ( $esystem* ) ) or 
+		and not any of ( $fp* ) and any of ( $decode* ) and
+		( ( any of ( $one* ) and not any of ( $execu* ) ) or any of ( $two* ) or any of ( $three* ) or
+		( any of ( $four* ) and not any of ( $esystem* ) ) or
 		( any of ( $five* ) and not any of ( $opening* ) ) or any of ( $six* ) or any of ( $seven* ) or any of ( $eight* ) or any of ( $nine* ) )
 }
 
@@ -5754,18 +5756,20 @@ rule webshell_jsp_input_upload_write
 		and $upload and 1 of ( $write* )
 }
 
-rule webshell_generic_os_strings
+rule WEBSHELL_generic_os_strings
 {
 	meta:
 		description = "typical webshell strings"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/12"
+      modified = "2022-09-27"
 		score = 50
-
+      type = "file"
 	strings:
 		$fp1 = "http://evil.com/" wide ascii
 		$fp2 = "denormalize('/etc/shadow" wide ascii
+      $fp3 = "vim.org>"
 	
 		//strings from private rule capa_asp
 		$tagasp_short1 = /<%[^"]/ wide ascii

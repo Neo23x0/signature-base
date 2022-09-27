@@ -136,16 +136,21 @@ rule Suspicious_Size_explorer_exe {
 
 rule Suspicious_Size_chrome_exe {
     meta:
-        description = "Detects uncommon file size of chrome.exe"
-        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+      description = "Detects uncommon file size of chrome.exe"
       author = "Florian Roth"
-        score = 60
-        date = "2015-12-21"
-        noarchivescan = 1
+      score = 60
+      nodeepdive = 1
+      date = "2015-12-21"
+      modified = "2022-09-15"
+      noarchivescan = 1
+    strings:
+      $fp1 = "HP Sure Click Chromium Launcher" wide
+      $fp2 = "BrChromiumLauncher.exe" wide fullword
     condition:
-        uint16(0) == 0x5a4d
-        and filename == "chrome.exe"
-        and ( filesize < 500KB or filesize > 3000KB )
+      uint16(0) == 0x5a4d
+      and filename == "chrome.exe"
+      and ( filesize < 500KB or filesize > 5000KB )
+      and not 1 of ($fp*)
 }
 
 rule Suspicious_Size_csrss_exe {
