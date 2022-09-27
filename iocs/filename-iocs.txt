@@ -3990,5 +3990,14 @@ C:\\Windows\\System32\\fcache13.db;80
 C:\\Windows\\System32\\fcache11.db;80
 C:\\Windows\\System32\\fcache13.db;80
 C:\\Windows\\System32\\fcache14.db;80
+\\AppData\\Local\\fintcache\\cdb\.exe;85
+\\AppData\\Local\\fintcache\\cdb\.ini;85
+\\AppData\\Local\\fintcache\\speech02.db;80
+\\AppData\\Local\\fintcache\\speech03.db;80
+\\AppData\\Local\\fintcache\\fcache11.db;80
+\\AppData\\Local\\fintcache\\fcache13.db;80
+\\AppData\\Local\\fintcache\\fcache11.db;80
+\\AppData\\Local\\fintcache\\fcache13.db;80
+\\AppData\\Local\\fintcache\\fcache14.db;80
 
 # End
