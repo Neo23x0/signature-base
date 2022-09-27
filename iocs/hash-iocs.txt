@@ -10397,3 +10397,12 @@ A009A0F5A385683AEA74299CBE6D5429C609F2D2;Winnti IOCs PRIVATELOG https://www.cybe
 1275894D8231FE25DB56598DDCF869F88DF5AD8D;Winnti IOCs WINNKIT https://www.cybereason.com/blog/operation-cuckoobees-a-winnti-malware-arsenal-deep-dive#iocs
 9139C89B2B625E2CEEE2CBF72AEF6C5104707A26;Winnti IOCs WINNKIT https://www.cybereason.com/blog/operation-cuckoobees-a-winnti-malware-arsenal-deep-dive#iocs
 082DBCA2C3CA5C5410DE9951A5C681F0C42235C8;Winnti IOCs WINNKIT https://www.cybereason.com/blog/operation-cuckoobees-a-winnti-malware-arsenal-deep-dive#iocs
+
+9fc7df2b2539ec3abeb90848903ad608a1101345;metaMain CDB Injector cdb.in - https://assets.sentinelone.com/sentinellabs22/metador
+e7f68dc6b8e4cabe5773a5b0b2306a404706de48;metaMain DLL Loader speech02.db - https://assets.sentinelone.com/sentinellabs22/metador
+0397b92bd8606e2b11ec6518c2df43decaf02382;metaMain Orchestrator speech03.db - https://assets.sentinelone.com/sentinellabs22/metador
+0f021a6c32f4d9053a9d8fb36749f8c434376fd1;Mafalda v. 143 Mode 0 - Over TCP fcache11.db - https://assets.sentinelone.com/sentinellabs22/metador
+fdec8be5d5f2693fbfa36fdf38aa8f9932c6a34a;Mafalda v. 143 Mode 2 - Over HTTP fcache13.db - https://assets.sentinelone.com/sentinellabs22/metador
+00f2176edb17d970005fc70a66ecc587a84f8620;Mafalda v.144 (Obfuscated)Mode 0 - Over TCP fcache11.db - https://assets.sentinelone.com/sentinellabs22/metador
+3e2724b9a8ecf05661d91b02accdc1da7e43d513;Mafalda v.144 (Obfuscated)Mode 2 - Over HTTP fcache13.db - https://assets.sentinelone.com/sentinellabs22/metador
+b5d35c1e75330c0b26ebbd562191beb7f03d726b;Mafalda v.144 (Obfuscated)Mode 3 - Over pipes fcache14.db - https://assets.sentinelone.com/sentinellabs22/metador
