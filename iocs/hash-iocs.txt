@@ -10406,3 +10406,49 @@ fdec8be5d5f2693fbfa36fdf38aa8f9932c6a34a;Mafalda v. 143 Mode 2 - Over HTTP fcach
 00f2176edb17d970005fc70a66ecc587a84f8620;Mafalda v.144 (Obfuscated)Mode 0 - Over TCP fcache11.db - https://assets.sentinelone.com/sentinellabs22/metador
 3e2724b9a8ecf05661d91b02accdc1da7e43d513;Mafalda v.144 (Obfuscated)Mode 2 - Over HTTP fcache13.db - https://assets.sentinelone.com/sentinellabs22/metador
 b5d35c1e75330c0b26ebbd562191beb7f03d726b;Mafalda v.144 (Obfuscated)Mode 3 - Over pipes fcache14.db - https://assets.sentinelone.com/sentinellabs22/metador
+
+
+2716c60c28cf7f7568f55ac33313468b;UNC2886 report - Malicious VIB .vgz Payload https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
+5ffa6d539a4d7bf5aacc4d32e198cc1607d4a522;UNC2886 report - Malicious VIB .vgz Payload https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
+2be5f4520846bf493b4694789841907d058fe08d59fff6bad7abe1db8ed96e7d;UNC2886 report - Malicious VIB .vgz Payload https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
+bd6e38b6ff85ab02c1a4325e8af29ce4;UNC2886 report - Malicious VIB Deployment Script https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
+17fb90d01403cb3d1566c91560f8f4b7dd139aa8;UNC2886 report - Malicious VIB Deployment Script https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
+e68872c49aaedeb3bde3ff5fd2ad6f70658687dc02d04f12ebc7cb28e821cc88;UNC2886 report - Malicious VIB Deployment Script https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
+8e80b40b1298f022c7f3a96599806c43;UNC2886 report - VIRTUALPITA https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
+e9cbac1f64587ce1dc5b92cde9637affb3b58577;UNC2886 report - VIRTUALPITA https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
+c2ef08af063f6d416233a4b2b2e991c177fc72d70a76c24bca9080521d41040f;UNC2886 report - VIRTUALPITA https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
+61ab3f6401d60ec36cd3ac980a8deb75;UNC2886 report - VIRTUALPIE https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
+93d5c4ebec2aa45dcbd6ddbaad5d80614af82f84;UNC2886 report - VIRTUALPIE https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
+4cf3e0b60e880e6a6ba9f45187ac5454813ae8c2031966d8b264ae0d1e15e70d;UNC2886 report - VIRTUALPIE https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
+9ea86dccd5bbde47f8641b62a1eeff07;UNC2886 report - Malicious VIB Payload https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
+b90b19781fde2c35963eb3eac4ce2acc6f5019fb;UNC2886 report - Malicious VIB Payload https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
+23eb8d056f18e7c69ec3568f2833c9d09e91df98d11b11de235331ef42756fe5;UNC2886 report - Malicious VIB Payload https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
+9d5cc1ee99ccb1ec4d20be1cee10173e;UNC2886 report - Malicious VIB Deployment Script https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
+9d191849d6c57bc8a052ec3dac2aa9f57c3fe0cd;UNC2886 report - Malicious VIB Deployment Script https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
+4d995eb87b0685124b7f1640d1ab431f5a1ab991ade02750b876ed5c523234bb;UNC2886 report - Malicious VIB Deployment Script https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
+2c28ec2d541f555b2838099ca849f965;UNC2886 report - VIRTUALPITA https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
+e35733db8061b57b8fcdb83ab51a90d0a8ba618c;UNC2886 report - VIRTUALPITA https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
+505eb3b90cd107cf7e2c20189889afdff813b2fbb98bbdeab65cde520893b168;UNC2886 report - VIRTUALPITA https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
+744e2a4c1da48869776827d461c2b2ec;UNC2886 report - VIRTUALPITA https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
+a3cc666e0764e856e65275bd4f32a56d76e51420;UNC2886 report - VIRTUALPITA https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
+4a6f559426493abc0d056665f23457e2779abd3482434623e1f61f4cd5b41843;UNC2886 report - VIRTUALPITA https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
+93d50025b81d3dbcb2e25d15cae03428;UNC2886 report - VIRTUALPITA https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
+abff003edf67e77667f56bbcfc391e2175cb0f8a;UNC2886 report - VIRTUALPITA https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
+13f11c81331bdce711139f985e6c525915a72dc5443fbbfe99c8ec1dd7ad2209;UNC2886 report - VIRTUALPITA https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
+fe34b7c071d96dac498b72a4a07cb246;UNC2886 report - VIRTUALPITA https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
+0962e10dc34256c6b31509a5ced498f8f6a3d6b6;UNC2886 report - VIRTUALPITA https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
+5731d988781c9a1d2941f7333615f6292fb359f6d48498f32c29878b5bedf00f;UNC2886 report - VIRTUALPITA https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
+
+296D882CB926070F6E43C99B9E1683497B6F17C4;Lazarus report - FudModule.dll Win64/Rootkit.NukeSped.A A user‑mode module that operates with the kernel memory.
+001386CBBC258C3FCC64145C74212A024EAA6657;Lazarus report - C:\PublicCache\msdxm.ocx Win32/NukeSped.KQ A dropper of the HTTP(S) downloader.
+569234EDFB631B4F99656529EC21067A4C933969;Lazarus report - colorui.dll Win64/NukeSped.JK A dropper of BLINDINGCAN side-loaded by a legitimate colorcpl.exe.
+735B7E9DFA7AF03B751075FD6D3DE45FBF0330A2;Lazarus report - N/A Win64/NukeSped.JK A 64-bit variant of the BLINDINGCAN RAT.
+4AA48160B0DB2F10C7920349E3DCCE01CCE23FE3;Lazarus report - N/A Win32/NukeSped.KQ An HTTP(S) downloader.
+C71C19DBB5F40DBB9A721DC05D4F9860590A5762;Lazarus report - Adobe.tmp Win64/NukeSped.JD A dropper of the HTTP(S) uploader.
+97DAAB7B422210AB256824D9759C0DBA319CA468;Lazarus report - credui.dll Win64/NukeSped.JH A dropper of an intermediate loader.
+FD6D0080D27929C803A91F268B719F725396FE79;Lazarus report - N/A Win64/NukeSped.LP An HTTP(S) uploader.
+83CF7D8EF1A241001C599B9BCC8940E089B613FB;Lazarus report - N/A Win64/NukeSped.JH An intermediate loader that loads an additional payload from the file system.
+085F3A694A1EECDE76A69335CD1EA7F345D61456;Lazarus report - cryptsp.dll Win64/NukeSped.JF A dropper in the form of a trojanized lecui library.
+55CAB89CB8DABCAA944D0BCA5CBBBEB86A11EA12;Lazarus report - mi.dll Win64/NukeSped.JF A dropper in the form of a trojanized lecui library.
+806668ECC4BFB271E645ACB42F22F750BFF8EE96;Lazarus report - credui.dll Win64/NukeSped.JC A trojanized FingerText plug-in for Notepad++.
+BD5DCB90C5B5FA7F5350EA2B9ACE56E62385CA65;Lazarus report - msdxm.ocx Win32/NukeSped.KT A trojanized version of LibreSSL’s sslSniffer.

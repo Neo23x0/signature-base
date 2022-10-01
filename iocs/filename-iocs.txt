@@ -2103,7 +2103,7 @@ ystem32\\lcsvsvc\.dll;80
 \\(g64\-|\\g32\-|\\gsecdump\.exe|gcx64\.|\\gcx32\.|\\gec\.|\\gse\.exe);60
 \\fgdump;60
 \\w32\.exe;50;(site-packages|python|Python|\\Root\\InventoryApplicationFile|/pip/|/pip-)
-\\w64\.exe;50;(\}\\Root|site-packages)
+\\w64\.exe;50;(site-packages|python|Python|\\Root\\InventoryApplicationFile|/pip/|/pip-)
 
 # Generic methodology - 1 character executable / script in short path
 #[a-zA-Z]:[.]{0,10}\\[.]\.(exe|dll|vbs|ps1|bat|sh)$;60;(?i)(\\cygwin\\|\\GnuWin32\\|Opera\\k\.(exe|bat)|\\R\\r-|\\Git\\usr|\\adobe after effects|\\perl)
@@ -3983,21 +3983,34 @@ Potato\.exe;65
 # Metador IOCs https://assets.sentinelone.com/sentinellabs22/metador
 C:\\Windows\\System32\\cdb\.exe;85
 C:\\Windows\\System32\\cdb\.ini;85
-C:\\Windows\\System32\\speech02.db;80
-C:\\Windows\\System32\\speech03.db;80
-C:\\Windows\\System32\\fcache11.db;80
-C:\\Windows\\System32\\fcache13.db;80
-C:\\Windows\\System32\\fcache11.db;80
-C:\\Windows\\System32\\fcache13.db;80
-C:\\Windows\\System32\\fcache14.db;80
+C:\\Windows\\System32\\speech02\.db;80
+C:\\Windows\\System32\\speech03\.db;80
+C:\\Windows\\System32\\fcache11\.db;80
+C:\\Windows\\System32\\fcache13\.db;80
+C:\\Windows\\System32\\fcache11\.db;80
+C:\\Windows\\System32\\fcache13\.db;80
+C:\\Windows\\System32\\fcache14\.db;80
 \\AppData\\Local\\fintcache\\cdb\.exe;85
 \\AppData\\Local\\fintcache\\cdb\.ini;85
-\\AppData\\Local\\fintcache\\speech02.db;80
-\\AppData\\Local\\fintcache\\speech03.db;80
-\\AppData\\Local\\fintcache\\fcache11.db;80
-\\AppData\\Local\\fintcache\\fcache13.db;80
-\\AppData\\Local\\fintcache\\fcache11.db;80
-\\AppData\\Local\\fintcache\\fcache13.db;80
-\\AppData\\Local\\fintcache\\fcache14.db;80
+\\AppData\\Local\\fintcache\\speech02\.db;80
+\\AppData\\Local\\fintcache\\speech03\.db;80
+\\AppData\\Local\\fintcache\\fcache11\.db;80
+\\AppData\\Local\\fintcache\\fcache13\.db;80
+\\AppData\\Local\\fintcache\\fcache11\.db;80
+\\AppData\\Local\\fintcache\\fcache13\.db;80
+\\AppData\\Local\\fintcache\\fcache14\.db;80
+
+# UNC3886 Report on malicious vSphere Installation Bundles (VIBs) https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
+/lsu_lsi_\.v05$;75
+/etc/rc\.local\.d/vmware_local\.sh;75
+^/bin/rdt$;75
+/bin/vmsyslog\.py;75
+/payload1\.v00$;75
+/etc/rc\.local\.d/vmware_rhttpio\.sh;75
+/usr/lib/vmware/weasel/consoleui/rhttpproxy-io;80
+/usr/libexec/setconf/ksmd;75
+/usr/bin/ksmd;75
+C:\\Windows\\Temp\\avp\.exe;70
+C:\\Windows\\Temp\\Silverlight\\wmpd\.exe;75
 
 # End
