@@ -10407,7 +10407,6 @@ fdec8be5d5f2693fbfa36fdf38aa8f9932c6a34a;Mafalda v. 143 Mode 2 - Over HTTP fcach
 3e2724b9a8ecf05661d91b02accdc1da7e43d513;Mafalda v.144 (Obfuscated)Mode 2 - Over HTTP fcache13.db - https://assets.sentinelone.com/sentinellabs22/metador
 b5d35c1e75330c0b26ebbd562191beb7f03d726b;Mafalda v.144 (Obfuscated)Mode 3 - Over pipes fcache14.db - https://assets.sentinelone.com/sentinellabs22/metador
 
-
 2716c60c28cf7f7568f55ac33313468b;UNC2886 report - Malicious VIB .vgz Payload https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
 5ffa6d539a4d7bf5aacc4d32e198cc1607d4a522;UNC2886 report - Malicious VIB .vgz Payload https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence
 2be5f4520846bf493b4694789841907d058fe08d59fff6bad7abe1db8ed96e7d;UNC2886 report - Malicious VIB .vgz Payload https://www.mandiant.com/resources/blog/esxi-hypervisors-malware-persistence

@@ -4013,4 +4013,27 @@ C:\\Windows\\System32\\fcache14\.db;80
 C:\\Windows\\Temp\\avp\.exe;70
 C:\\Windows\\Temp\\Silverlight\\wmpd\.exe;75
 
+# Lazarus Report https://www.welivesecurity.com/2022/09/30/amazon-themed-campaigns-lazarus-netherlands-belgium/
+:\\ProgramData\\Adobe\\Adobe\.tmp;80
+C:\\ProgramData\\PTC\\colorcpl\.exe;80
+C:\\ProgramData\\PTC\\colorui\.dll;80
+C:\\Windows\\Vss\\WFS\.exe;80
+C:\\Windows\\Vss\\credui\.dll;80
+C:\\Windows\\security\\WFS\.exe;80
+C:\\Windows\\security\\credui\.dll;80
+C:\\ProgramData\\Caphyon\\wsmprovhost\.exe;80
+C:\\ProgramData\\Caphyon\\mi\.dll;80
+C:\\Windows\\Microsoft\.NET\\Framework64\\v4\.0\.30319\\SMSvcHost\.exe;80
+C:\\Windows\\Microsoft\.NET\\Framework64\\v4\.0\.30319\\cryptsp\.dll;80
+C:\\PublicCache\\msdxm\.ocx;80
+\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\OneNoteTray\.LNK;70
+# Lazarus FudModule Rootkit Indicators https://www.virusbulletin.com/uploads/pdf/conference/vb2022/VB2022-Kalnai-Havranek.pdf
+C:\\Windows\\windows\.ini;75
+C:\\WINDOWS\\System32\\drivers\\circlassmgr\.sys;75
+C:\\WINDOWS\\System32\\drivers\\dmvscmgr\.sys;75
+C:\\WINDOWS\\System32\\drivers\\hidirmgr\.sys;75
+C:\\WINDOWS\\System32\\drivers\\isapnpmgr\.sys;75
+C:\\WINDOWS\\System32\\drivers\\mspqmmgr\.sys;75
+C:\\WINDOWS\\System32\\drivers\\umpassmgr\.sys;75
+
 # End
