@@ -4023,8 +4023,6 @@ C:\\Windows\\security\\WFS\.exe;80
 C:\\Windows\\security\\credui\.dll;80
 C:\\ProgramData\\Caphyon\\wsmprovhost\.exe;80
 C:\\ProgramData\\Caphyon\\mi\.dll;80
-C:\\Windows\\Microsoft\.NET\\Framework64\\v4\.0\.30319\\SMSvcHost\.exe;80
-C:\\Windows\\Microsoft\.NET\\Framework64\\v4\.0\.30319\\cryptsp\.dll;80
 C:\\PublicCache\\msdxm\.ocx;80
 \\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\OneNoteTray\.LNK;70
 # Lazarus FudModule Rootkit Indicators https://www.virusbulletin.com/uploads/pdf/conference/vb2022/VB2022-Kalnai-Havranek.pdf
