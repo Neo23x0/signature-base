@@ -1,7 +1,7 @@
 
 /* slightly modified by Florian Roth */
 
-rule APT_MAL_CISA_10365227_03_ClientUploader_Dec21 :  {
+rule APT_MAL_CISA_10365227_03_ClientUploader_Dec21 {
    meta:
        author = "CISA Code & Media Analysis"
        date = "2021-12-23"
