@@ -10451,3 +10451,15 @@ FD6D0080D27929C803A91F268B719F725396FE79;Lazarus report - N/A Win64/NukeSped.LP 
 55CAB89CB8DABCAA944D0BCA5CBBBEB86A11EA12;Lazarus report - mi.dll Win64/NukeSped.JF A dropper in the form of a trojanized lecui library.
 806668ECC4BFB271E645ACB42F22F750BFF8EE96;Lazarus report - credui.dll Win64/NukeSped.JC A trojanized FingerText plug-in for Notepad++.
 BD5DCB90C5B5FA7F5350EA2B9ACE56E62385CA65;Lazarus report - msdxm.ocx Win32/NukeSped.KT A trojanized version of LibreSSL’s sslSniffer.
+
+37011eed9de6a90f3be3e1cbba6c5ab2;Emperor Dragonfly report - Encrypted Cobalt Strike payload - saved as C:\Windows\Help\OEM\ContentStore\vlcplayer.dat https://blog.sygnia.co/revealing-emperor-dragonfly-a-chinese-ransomware-group?hsLang=en
+240118f6205effcb3a12455a81cfb1c7;Emperor Dragonfly report - Weaponized DLL loaded by FCAuth.exe - saved as C:\Windows\Help\Corporate\utilsdll.dll https://blog.sygnia.co/revealing-emperor-dragonfly-a-chinese-ransomware-group?hsLang=en
+e5fd4d5774ad97e5c04b69deae33dc9e;Emperor Dragonfly report - Weaponized DLL loaded by mfeann.exe - saved as C:\Windows\debug\LockDown.dll https://blog.sygnia.co/revealing-emperor-dragonfly-a-chinese-ransomware-group?hsLang=en
+2893d476408e23b7e8a65c6898fe43fa;Emperor Dragonfly report - Encrypted Cobalt Strike payload - saved as C:\Windows\Help\Corporate\auth.dat https://blog.sygnia.co/revealing-emperor-dragonfly-a-chinese-ransomware-group?hsLang=en
+8161d8339411ddd6d99d54d3aefa2943;Emperor Dragonfly report - Encrypted Cobalt Strike payload - saved as C:\Windows\debug\debug.dat https://blog.sygnia.co/revealing-emperor-dragonfly-a-chinese-ransomware-group?hsLang=en
+5a852305ffb7b5abeb39fcb9a37122ff;Emperor Dragonfly report - Weaponized DLL loaded by vlc.exe - saved as C:\Windows\Help\Corporate\libvlc.dll https://blog.sygnia.co/revealing-emperor-dragonfly-a-chinese-ransomware-group?hsLang=en
+f0656e3a70ab0a10f8d054149f12c935;Emperor Dragonfly report - Encrypted Cobalt Strike payload - saved as C:\Windows\Help\Corporate\auth.dat https://blog.sygnia.co/revealing-emperor-dragonfly-a-chinese-ransomware-group?hsLang=en
+37011eed9de6a90f3be3e1cbba6c5ab2;Emperor Dragonfly report - Encrypted Cobalt Strike payload - saved as C:\Windows\Help\Corporate\vlcplayer.dat https://blog.sygnia.co/revealing-emperor-dragonfly-a-chinese-ransomware-group?hsLang=en
+5695de561a065123178067fcedf39ce3;Emperor Dragonfly report - NPC client for NPS tunnel tool - saved as C:\Windows\Help\mui\0409\WindowsUpdate.exe https://blog.sygnia.co/revealing-emperor-dragonfly-a-chinese-ransomware-group?hsLang=en
+ea4ca87315d14f5142aaef1f5e287417;Emperor Dragonfly report - Keylogger - saved as C:\Windows\Help\OEM\ContentStore.exe https://blog.sygnia.co/revealing-emperor-dragonfly-a-chinese-ransomware-group?hsLang=en
+5a6008cf994779cde1698a0e80bb817d;Emperor Dragonfly report - IOX port forwarder and proxy - saved as C:\Windows\Help\Windows\dec.exe https://blog.sygnia.co/revealing-emperor-dragonfly-a-chinese-ransomware-group?hsLang=en
