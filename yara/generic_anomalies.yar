@@ -293,7 +293,7 @@ rule Suspicious_Size_rundll32_exe {
     condition:
         uint16(0) == 0x5a4d
         and filename == "rundll32.exe"
-        and ( filesize < 30KB or filesize > 80KB )
+        and ( filesize < 30KB or filesize > 120KB )
 }
 
 rule Suspicious_Size_taskhost_exe {
@@ -321,7 +321,7 @@ rule Suspicious_Size_spoolsv_exe {
     condition:
         uint16(0) == 0x5a4d
         and filename == "spoolsv.exe"
-        and ( filesize < 50KB or filesize > 930KB )
+        and ( filesize < 50KB or filesize > 1000KB )
 }
 
 rule Suspicious_Size_smss_exe {
@@ -335,7 +335,7 @@ rule Suspicious_Size_smss_exe {
     condition:
         uint16(0) == 0x5a4d
         and filename == "smss.exe"
-        and ( filesize < 40KB or filesize > 320KB )
+        and ( filesize < 40KB or filesize > 5000KB )
 }
 
 rule Suspicious_Size_wininit_exe {
@@ -349,7 +349,7 @@ rule Suspicious_Size_wininit_exe {
     condition:
         uint16(0) == 0x5a4d
         and filename == "wininit.exe"
-        and ( filesize < 90KB or filesize > 450KB )
+        and ( filesize < 90KB or filesize > 800KB )
 }
 
 rule Suspicious_AutoIt_by_Microsoft {
