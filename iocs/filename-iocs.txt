@@ -4034,7 +4034,6 @@ C:\\WINDOWS\\System32\\drivers\\isapnpmgr\.sys;75
 C:\\WINDOWS\\System32\\drivers\\mspqmmgr\.sys;75
 C:\\WINDOWS\\System32\\drivers\\umpassmgr\.sys;75
 
-
 # Emperor Dragonfly report https://blog.sygnia.co/revealing-emperor-dragonfly-a-chinese-ransomware-group?hsLang=en
 C:\\Windows\\Help\\OEM\\ContentStore\\vlcplayer\.dat;85
 C:\\Windows\\Help\\utilsdll\.dll;85
@@ -4050,5 +4049,8 @@ C:\\Windows\\Help\\Windows\\dec\.exe;85
 C:\\Windows\\debug\\mfeann\.exe;85
 C:\\Windows\\Help\\Corporate\\FCAuth\.exe;85
 C:\\Windows\\Help\\Corporate\\vlc\.exe;85
+
+# ProxyNotShell exploitation IOC https://twitter.com/gossithedog/status/1578772856204578819?s=12&t=YYVa81RCA4W71JSygT16hw
+\\FrontEnd\\HttpProxy\\owa\\auth\\owafonts\.aspx;85
 
 # End
