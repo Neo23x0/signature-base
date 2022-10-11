@@ -10477,3 +10477,110 @@ F41E27C4C863821DE6CAD91CA7E77CD6CA6CE5D3;POLONIUM Report 4kyro3fs.dll MSIL/Spy.K
 B87CC5269A5DF5CF093F8D28DF78952F662162B6;POLONIUM Report OnDrive.exe MSIL/Agent.DTP Reverse shell module https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
 809048A40274350BD0C453E49D8C1F7D32397164;POLONIUM Report Rehost.exe MSIL/Spy.Tiny.DA Exfiltration module https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
 43E3C3752A15D0BDE7135E1B52F1DE397B5314B5;POLONIUM Report Microsoft Malware Protection.exe MSIL/Agent.DYV Tunnels module https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+
+
+12ae1d7e2485dbb51aabbdb2b4cec6261cf43116;POLONIUM IOC - CreepySnail - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+23f8f2e7558ed894e800cce9ea352c0d8efb2216;POLONIUM IOC - CreepySnail - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+298c100aa98e79e54ca8454f8400e9543791fa15;POLONIUM IOC - CreepySnail - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+35c67f8b6f9d6b32a021edd7d59fafe868341c8a;POLONIUM IOC - CreepySnail - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+4a54c5dc45ce0047291dc98ad87f42cfe9fa046e;POLONIUM IOC - CreepySnail - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+550adbb75c7e1cd178cb8c39f0911c494b24c687;POLONIUM IOC - CreepySnail - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+5d8a4e53a96fd0c7809ba7d9cd6e730da00e1321;POLONIUM IOC - CreepySnail - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+5f7a338bb99aed422e1a69fe48726d42dbe71854;POLONIUM IOC - CreepySnail - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+67600c5b1b6221385c4b34dbbb80037dffcb171e;POLONIUM IOC - CreepySnail - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+6b5296db642689a5ad249cb66a5ae85ec664fd2c;POLONIUM IOC - CreepySnail - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+7722386c075db083878496875c156c67238758e6;POLONIUM IOC - CreepySnail - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+7d6550f8992515f79a43473bebdf2593caf25900;POLONIUM IOC - CreepySnail - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+806aeca473af9afef5a0ab29f30a9a272d9cec51;POLONIUM IOC - CreepySnail - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+8e7818cc76da718c6d35d430e9d4763ecb940318;POLONIUM IOC - CreepySnail - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+8c0c39418339a0458809125de1a88a0c005694bd;POLONIUM IOC - CreepySnail - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+a22318388bbe3014d087e20f1a2bf363071ade0a;POLONIUM IOC - CreepySnail - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+b810ed016e708f1c828dce82051c4b265794d583;POLONIUM IOC - CreepySnail - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+c7d4cf00bd2d90e03191657b89b75bfc9d2df5d8;POLONIUM IOC - CreepySnail - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+cc820ed9a23084104807941b76a2679243ba357c;POLONIUM IOC - CreepySnail - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+f074085be2a913c54100686fe7ef274a53323bda;POLONIUM IOC - CreepySnail - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+83a4f138d57fce4256727e517a8d19e67554c15f;POLONIUM IOC - CreepyDrive - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+1929900b68ac8a65d515002d313336781801e3ef;POLONIUM IOC - CreepyDrive - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+5c33a153f221f80c916b7e505f6e2144cd5b88a2;POLONIUM IOC - CreepyDrive - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+3f4e3c5301752d39daf97384cca47564da1c3314;POLONIUM IOC - CreepyDrive - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+457c34aeaf4e2e5086221b20fec17df29a6b49d3;POLONIUM IOC - CreepyDrive - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+9826aa25f2f005f9567f512f540cbed4d054692f;POLONIUM IOC - CreepyDrive - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+a4ac86b005c20d239cd0088d774ced701adc1d01;POLONIUM IOC - CreepyDrive - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+db3f13d29a64205780b9a675019405bb338ca375;POLONIUM IOC - CreepyDrive - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+0832fec447b9b8a90ef4797c7b098b06e198d167;POLONIUM IOC - DeepCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+03a35a0167684e6ccca641296969972e49b88d60;POLONIUM IOC - DeepCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+23f1e9788688184712dc2b0eaad4c51584edabd0;POLONIUM IOC - DeepCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+243e21af3c97ff2a6f705c05d0e62e97931d620e;POLONIUM IOC - DeepCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+5eef1ac7df2293d9432362fc586a7a7157b69157;POLONIUM IOC - DeepCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+31c5dda0181daac130e900368b97adda8b09b762;POLONIUM IOC - DeepCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+5f40f2da77ba7ef01f2ee4143d6022a0ef28c8f1;POLONIUM IOC - DeepCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+8bb125624b52e3d2d82c272a0d1dd3906e1c3978;POLONIUM IOC - DeepCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+89014d65d24dc14357a34d1d251e4cd43de6856d;POLONIUM IOC - DeepCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+99f7ef4d8eb9903543ce9c8201baa342d242b6ae;POLONIUM IOC - DeepCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+a9febe898daef40e7819a7b3bfef19462db894c5;POLONIUM IOC - DeepCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+bf90d666626423741576072547c19b9ccd1459a7;POLONIUM IOC - DeepCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+bb39a928343d04a38addf122449d68fddf5f7e29;POLONIUM IOC - DeepCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+aa442a83b7cd173734552b6611c50d050efe8277;POLONIUM IOC - DeepCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+e50765d980fd662f4e5c5609cb1876ab67815ef5;POLONIUM IOC - DeepCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+d0f05a5ad4e13610605b2d4b60854bfc002799c2;POLONIUM IOC - DeepCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+84e4aab5f5e2afbfa5b314d720e02e33c49d526d;POLONIUM IOC - DeepCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+4e7dbff20995e97190536b284d7e5cc65922fd55;POLONIUM IOC - MegaCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+21ef3d7adca478145c5d28fcf9c786c5f0aea0e6;POLONIUM IOC - MegaCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+0ce82be2f436d179b54a0cc6fcc675010822d268;POLONIUM IOC - MegaCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+22d9058c3706e7a713949093f82d8bff4a8afa62;POLONIUM IOC - MegaCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+45e56d259a7194c7c3adfefd8ada077dc2b800b8;POLONIUM IOC - MegaCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+53bee089331b9bc06dd1ee3fe5e5b8bd3107ffdd;POLONIUM IOC - MegaCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+b48cbb7a5f9bfbfbfb07113fb3728132d528e1f3;POLONIUM IOC - MegaCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+37a4a82075c24dbd3678c037f7abd2dbae49678f;POLONIUM IOC - MegaCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+2b9444b0e1747eb4f482d29c9de27d07cce55a76;POLONIUM IOC - PapaCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+459aece315af3d00342e5dde5fb79e7a908e8460;POLONIUM IOC - PapaCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+97ed514f7510852c558a1b32c99f56ebc460dd8b;POLONIUM IOC - PapaCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+7cfa11879af6cea88cffa2aab354fb79bf77132a;POLONIUM IOC - PapaCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+309f1750a63c3bcb8cad83a65a69a401f04c51d2;POLONIUM IOC - PapaCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+8aa46b8d0c47d447b87920a5a7494ce235707d7d;POLONIUM IOC - PapaCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+9b03c838727fa3ada42bb4fa0422129ebfabf7bb;POLONIUM IOC - PapaCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+23ce10c11dcd93bcbf2a4e50d4cd02dc862b9cc4;POLONIUM IOC - FlipCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+45b3af39c5ef08f7407b94d564a432503b00275a;POLONIUM IOC - FlipCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+9d7cf542cb3af7bf3e364ef01c73f3c74b0abae2;POLONIUM IOC - FlipCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+994ead7666a67e33c57a51ef98076d41aabb7fb7;POLONIUM IOC - FlipCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+92f3ae51657659098c0a0110b9a681d32b77e9c1;POLONIUM IOC - FlipCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+9e25e2a18f1dc3a38c59a1408f982d895ce1b9b4;POLONIUM IOC - FlipCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+b6371ef797c85f87128a696ec9c9edb93d90aae2;POLONIUM IOC - FlipCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+79de0af2f10f8d39a93eed911d4048d87e3c8a1c;POLONIUM IOC - TechnoCreep - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+5036863519737b54c5d68891ee2e3ca795044803;POLONIUM IOC - Screenshot modules - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+37e8036e20b93a4aed5b6bd600b97cbaf6964567;POLONIUM IOC - Screenshot modules - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+691aa02384e5121598d21606445ab41325cdfa52;POLONIUM IOC - Screenshot modules - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+f26f43ad2e2980b96497242a3f30ca003e5cf54c;POLONIUM IOC - Screenshot modules - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+f3b714698311bd6b7984f0dafa425f71f07c764c;POLONIUM IOC - Screenshot modules - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+a0a2768d500714f62b64b57185e71140d3c993d1;POLONIUM IOC - Keylogger modules - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+04378736da5c2da06bd5b15a41aaccac233df44b;POLONIUM IOC - Keylogger modules - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+ab9bf33a0cc0e676c4f843b1dc163861e6b13b6f;POLONIUM IOC - Keylogger modules - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+c77cfd19d504da2639bf51e96ac27db3ff455d45;POLONIUM IOC - Keylogger modules - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+b601e9249d53b22e43c01f83d2356e9c7b41a443;POLONIUM IOC - Keylogger modules - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+81606f1cdb7efcae54c66876fc3f31e84b8f7f15;POLONIUM IOC - Keylogger modules - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+378dd134ff6cc55f36496ee717e4efca022bd754;POLONIUM IOC - Keylogger modules - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+94e75ba7c4476afdacf4b39e403379c5ecd1bed6;POLONIUM IOC - Webcam module - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+b87cc5269a5df5cf093f8d28df78952f662162b6;POLONIUM IOC - Reverse shell modules - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+3024f8b0439d7c271967d22373604215a4ce0ac4;POLONIUM IOC - Reverse shell modules - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+911bc1e7c3d2295bb5ad01412c6fdcf2d937bd41;POLONIUM IOC - Reverse shell modules - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+1438f9fc50e914cb63b209a3312aa2857a410769;POLONIUM IOC - Reverse shell modules - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+7a9deb71f791eb8d781250b0c8c3d546d91fbde1;POLONIUM IOC - Tunneling modules - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+43e3c3752a15d0bde7135e1b52f1de397b5314b5;POLONIUM IOC - Tunneling modules - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+a02bcb0aa90004651c87873d9387dc6c00367643;POLONIUM IOC - Tunneling modules - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+addafa922ef03e0fe25ab53cf8eb62f4c1cbdc02;POLONIUM IOC - Tunneling modules - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+809048a40274350bd0c453e49d8c1f7d32397164;POLONIUM IOC - Exfiltration modules - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+24117276a118df5095d139aaaac8342f150de94a;POLONIUM IOC - Exfiltration modules - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+e889e5bbb128e38c0924a67c0946c699bd2de3b3;POLONIUM IOC - Exfiltration modules - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+b7f0c0a26df905aed543658df3d752de363ab8a3;POLONIUM IOC - Exfiltration modules - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+87684a3dcaa1488bf0579dc1e27304f6c64f794a;POLONIUM IOC - Exfiltration modules - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+21b4bf095e7c0eac92af96be1c2c6b0231807142;POLONIUM IOC - Small DLLs - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+235341ef26c356a302b7641f4097a87cc027d5c2;POLONIUM IOC - Small DLLs - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+3115939f4abf600bd0d17cb8aacca3c9cd786e64;POLONIUM IOC - Small DLLs - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+5a0df60f25538883957d67675ae73a87d10cad91;POLONIUM IOC - Small DLLs - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+465c4351273ffad066b991bb4ec1956f34ee8082;POLONIUM IOC - Small DLLs - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+62986c220efea9d64f4903461a8a6d2541ed6a7a;POLONIUM IOC - Small DLLs - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+93a625513ecba05c56f6ac45de3a5745edabfe2a;POLONIUM IOC - Small DLLs - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+a19ba5d1ea315e0ca3a9a3ea6ccffc756404cec0;POLONIUM IOC - Small DLLs - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+d5637caf5a931335b6b887a5ccbe36fffa6b4f9c;POLONIUM IOC - Small DLLs - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+86377c1b8d54536c79c71f8913b72ca88d230bd4;POLONIUM IOC - Small DLLs - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+f5505b35c9e9b6515875bea5c0bbf564add4939e;POLONIUM IOC - Small DLLs - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
