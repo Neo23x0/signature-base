@@ -10463,3 +10463,17 @@ f0656e3a70ab0a10f8d054149f12c935;Emperor Dragonfly report - Encrypted Cobalt Str
 5695de561a065123178067fcedf39ce3;Emperor Dragonfly report - NPC client for NPS tunnel tool - saved as C:\Windows\Help\mui\0409\WindowsUpdate.exe https://blog.sygnia.co/revealing-emperor-dragonfly-a-chinese-ransomware-group?hsLang=en
 ea4ca87315d14f5142aaef1f5e287417;Emperor Dragonfly report - Keylogger - saved as C:\Windows\Help\OEM\ContentStore.exe https://blog.sygnia.co/revealing-emperor-dragonfly-a-chinese-ransomware-group?hsLang=en
 5a6008cf994779cde1698a0e80bb817d;Emperor Dragonfly report - IOX port forwarder and proxy - saved as C:\Windows\Help\Windows\dec.exe https://blog.sygnia.co/revealing-emperor-dragonfly-a-chinese-ransomware-group?hsLang=en
+
+3F4E3C5301752D39DAF97384CCA47564DA1C3314;POLONIUM Report dnw.exe PowerShell/Agent.GJ CreepyDrive https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+CC820ED9A23084104807941B76A2679243BA357C;POLONIUM Report Request.exe PowerShell/Agent.HF CreepySnail https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+03A35A0167684E6CCCA641296969972E49B88D60;POLONIUM Report DropBox.exe MSIL/Agent.DPT DeepCreep https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+4E7DBFF20995E97190536B284D7E5CC65922FD55;POLONIUM Report Mega.exe MSIL/Agent.DPT MegaCreep https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+994EAD7666A67E33C57A51EF98076D41AABB7FB7;POLONIUM Report Regestries.exe MSIL/Tiny.DG FlipCreep https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+79DE0AF2F10F8D39A93EED911D4048D87E3C8A1C;POLONIUM Report WinUpdate.dll MSIL/Agent.DYU TechnoCreep https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+2B9444B0E1747EB4F482D29C9DE27D07CCE55A76;POLONIUM Report WindowsSartup22.exe Win64/HackTool.NetHacker.G PapaCreep https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+F26F43AD2E2980B96497242A3F30CA003E5CF54C;POLONIUM Report WinSc.exe MSIL/Tiny.DG Screenshots module https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+F41E27C4C863821DE6CAD91CA7E77CD6CA6CE5D3;POLONIUM Report 4kyro3fs.dll MSIL/Spy.Keylogger.FGC Keylogger module https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+94E75BA7C4476AFDACF4B39E403379C5ECD1BED6;POLONIUM Report Device.exe MSIL/Spy.Tiny.CZ Webcam module https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+B87CC5269A5DF5CF093F8D28DF78952F662162B6;POLONIUM Report OnDrive.exe MSIL/Agent.DTP Reverse shell module https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+809048A40274350BD0C453E49D8C1F7D32397164;POLONIUM Report Rehost.exe MSIL/Spy.Tiny.DA Exfiltration module https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+43E3C3752A15D0BDE7135E1B52F1DE397B5314B5;POLONIUM Report Microsoft Malware Protection.exe MSIL/Agent.DYV Tunnels module https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/

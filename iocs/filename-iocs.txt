@@ -4053,4 +4053,19 @@ C:\\Windows\\Help\\Corporate\\vlc\.exe;85
 # ProxyNotShell exploitation IOC https://twitter.com/gossithedog/status/1578772856204578819?s=12&t=YYVa81RCA4W71JSygT16hw
 \\FrontEnd\\HttpProxy\\owa\\auth\\owafonts\.aspx;85
 
+
+# Suspicious File Name - obfuscation indicators 
+obfuscated[0-9_]{0,7}\.(exe|dll|vbs|vbe|ps1|psm1|bat|vbs|vbe|EXE|DLL|BAT|js|JS)$;70
+obfusc[0-9_]{0,7}\.(exe|dll|vbs|vbe|ps1|psm1|bat|vbs|vbe|EXE|DLL|BAT|js|JS)$;70
+\\[Oo]bfusc[a-zA-Z0-9_-]{0,20}\.(exe|dll|vbs|vbe|ps1|psm1|bat|vbs|vbe|EXE|DLL|BAT|js|JS)$;70
+
+# POLONIUM IOCs https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+\\svchostdp\.exe;80
+\\4kyro3fs\.dll;85
+\\Microsoft Malware Protection\.exe;85
+\\WindowsSartup22\.exe;90
+\\WinUpdate\.dll;80
+\\Regestries\.exe;80
+\\Mega\.exe;70
+
 # End
