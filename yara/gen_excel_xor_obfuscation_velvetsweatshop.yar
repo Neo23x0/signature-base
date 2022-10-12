@@ -2,7 +2,7 @@
 
 rule gen_excel_xor_obfuscation_velvetsweatshop {
     meta:
-        description = "Detect XOR encryption (c. 2003) in Excel file formats"
+        description = "Detects XOR encryption (c. 2003) in Excel file formats"
         license = "https://creativecommons.org/licenses/by-nc/4.0/"
         author = "@BouncyHat"
         contributed_by = "@JohnLaTwc"

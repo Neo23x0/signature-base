@@ -36,7 +36,7 @@ rule MAL_RANSOM_Ragna_Locker_Apr20_1 {
 
 rule MAL_Ransom_Ragnarlocker_July_2020_1 {
    meta:
-      description = "Detect Ragnarlocker by strings (July 2020)"
+      description = "Detects Ragnarlocker by strings (July 2020)"
       author = "Arkbird_SOLG"
       reference = "https://twitter.com/JAMESWT_MHT/status/1288797666688851969"
       date = "2020-07-30"

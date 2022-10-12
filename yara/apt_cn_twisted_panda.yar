@@ -1,7 +1,7 @@
 rule APT_CN_TwistedPanda_loader {
    meta:
       author = "Check Point Research"
-      description = "Detect loader used by TwistedPanda"
+      description = "Detects loader used by TwistedPanda"
       date = "2022-04-14"
       reference = "https://research.checkpoint.com/2022/twisted-panda-chinese-apt-espionage-operation-against-russians-state-owned-defense-institutes/"
       score = 80
@@ -45,7 +45,7 @@ rule APT_CN_TwistedPanda_loader {
 rule APT_CN_TwistedPanda_SPINNER_1 {
    meta:
       author = "Check Point Research"
-      description = "Detect the obfuscated variant of SPINNER payload used by TwistedPanda"
+      description = "Detects the obfuscated variant of SPINNER payload used by TwistedPanda"
       date = "2022-04-14"
       reference = "https://research.checkpoint.com/2022/twisted-panda-chinese-apt-espionage-operation-against-russians-state-owned-defense-institutes/"
       score = 80
@@ -80,7 +80,7 @@ rule APT_CN_TwistedPanda_SPINNER_1 {
 rule APT_CN_TwistedPanda_SPINNER_2 {
    meta:
       author = "Check Point Research"
-      description = "Detect an older variant of SPINNER payload used by TwistedPanda"
+      description = "Detects an older variant of SPINNER payload used by TwistedPanda"
       date = "2022-04-14"
       reference = "https://research.checkpoint.com/2022/twisted-panda-chinese-apt-espionage-operation-against-russians-state-owned-defense-institutes/"
       score = 80
@@ -117,7 +117,7 @@ rule APT_CN_TwistedPanda_SPINNER_2 {
 rule APT_CN_TwistedPanda_64bit_Loader {
    meta:
       author = "Check Point Research"
-      description = "Detect the 64bit Loader DLL used by TwistedPanda"
+      description = "Detects the 64bit Loader DLL used by TwistedPanda"
       date = "2022-04-14"      
       reference = "https://research.checkpoint.com/2022/twisted-panda-chinese-apt-espionage-operation-against-russians-state-owned-defense-institutes/"
       score = 80
@@ -153,7 +153,7 @@ rule APT_CN_TwistedPanda_64bit_Loader {
 rule APT_CN_TwistedPanda_droppers {
    meta:
       author = "Check Point Research"
-      description = "Detect droppers used by TwistedPanda"
+      description = "Detects droppers used by TwistedPanda"
       date = "2022-04-14"
       reference = "https://research.checkpoint.com/2022/twisted-panda-chinese-apt-espionage-operation-against-russians-state-owned-defense-institutes/"
       score = 80

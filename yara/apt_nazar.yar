@@ -1,6 +1,6 @@
 rule APT_Nazar_Svchost_Commands {
     meta:
-        description = "Detect Nazar's svchost based on supported commands"
+        description = "Detects Nazar's svchost based on supported commands"
         author = "Itay Cohen"
         date = "2020-04-26"
         reference = "https://www.epicturla.com/blog/the-lost-nazar"
@@ -18,7 +18,7 @@ rule APT_Nazar_Svchost_Commands {
 
 rule APT_Nazar_Component_Guids {
     meta:
-        description = "Detect Nazar Components by COM Objects' GUID"
+        description = "Detects Nazar Components by COM Objects' GUID"
         author = "Itay Cohen"
         date = "2020-04-27"
         reference = "https://www.epicturla.com/blog/the-lost-nazar"

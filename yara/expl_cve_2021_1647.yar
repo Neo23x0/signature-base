@@ -1,7 +1,7 @@
 /* minimal modifications by Florian Roth */
 rule EXPL_CVE_2021_1647_Apr21_1 {
    meta:
-        description = "Detect samples that exploit CVE-2021-1647"
+        description = "Detects samples that exploit CVE-2021-1647"
         author = "Arkbird_SOLG"
         reference = "https://attackerkb.com/topics/DzXZpEuBeP/cve-2021-1647-microsoft-windows-defender-zero-day-vulnerability"
         date = "2021-05-04"

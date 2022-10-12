@@ -3,7 +3,7 @@ rule SUSP_obfuscated_JS_obfuscatorio : HIGHVOL
 	meta:
 	
 		author      = "@imp0rtp3"
-		description = "Detect JS obfuscation done by the js obfuscator (often malicious)"
+		description = "Detects JS obfuscation done by the js obfuscator (often malicious)"
 		reference   = "https://obfuscator.io"
 		date = "2021-08-25"
       		score = 50

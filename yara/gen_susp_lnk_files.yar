@@ -1,7 +1,7 @@
 
 rule SUSP_LNK_lnkfileoverRFC {
    meta:
-      description = "detect APT lnk files that run double extraction and launch routines with autoruns"
+      description = "Detects APT lnk files that run double extraction and launch routines with autoruns"
       author = "@Grotezinfosec, modified by Florian Roth"
       date = "2018-09-18"
    strings:

@@ -8,7 +8,7 @@
 
 rule Dropper_DeploysMalwareViaSideLoading {
     meta:
-        description = "Detect a dropper used to deploy an implant via side loading. This dropper has specifically been observed deploying REDLEAVES & PlugX"
+        description = "Detects a dropper used to deploy an implant via side loading. This dropper has specifically been observed deploying REDLEAVES & PlugX"
         author = "USG"
         reference = "https://www.us-cert.gov/ncas/alerts/TA17-117A"
         true_positive = "5262cb9791df50fafcb2fbd5f93226050b51efe400c2924eecba97b7ce437481: drops REDLEAVES. 6392e0701a77ea25354b1f40f5b867a35c0142abde785a66b83c9c8d2c14c0c3: drops plugx. "
@@ -21,7 +21,7 @@ rule Dropper_DeploysMalwareViaSideLoading {
 
 rule REDLEAVES_DroppedFile_ImplantLoader_Starburn {
     meta:
-        description = "Detect the DLL responsible for loading and deobfuscating the DAT file containing shellcode and core REDLEAVES RAT"
+        description = "Detects the DLL responsible for loading and deobfuscating the DAT file containing shellcode and core REDLEAVES RAT"
         author = "USG"
         reference = "https://www.us-cert.gov/ncas/alerts/TA17-117A"
         true_positive = "7f8a867a8302fe58039a6db254d335ae" // StarBurn.dll
@@ -33,7 +33,7 @@ rule REDLEAVES_DroppedFile_ImplantLoader_Starburn {
 
 rule REDLEAVES_DroppedFile_ObfuscatedShellcodeAndRAT_handkerchief {
     meta:
-        description = "Detect obfuscated .dat file containing shellcode and core REDLEAVES RAT"
+        description = "Detects obfuscated .dat file containing shellcode and core REDLEAVES RAT"
         author = "USG"
         reference = "https://www.us-cert.gov/ncas/alerts/TA17-117A"
         true_positive = "fb0c714cd2ebdcc6f33817abe7813c36" // handkerchief.dat
