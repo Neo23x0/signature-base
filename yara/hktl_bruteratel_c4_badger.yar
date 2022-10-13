@@ -12,6 +12,7 @@ rule HKTL_BruteRatel_Badger_Indicators_Oct22_4 {
       $s3 = { b? b2 c1 06 ae } 
       $s4 = { b? 74 eb 1d 4d }
    condition:
-      all of ($s*)
+      filesize < 8000KB 
+      and all of ($s*)
       and not uint8(0) == 0x02 /* SHC files */
 }
