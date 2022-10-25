@@ -9,7 +9,7 @@ rule webshell_php_by_string_obfuscation
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/09"
-		modified = "2022-08-18"
+		modified = "2022-10-25"
 		hash = "e4a15637c90e8eabcbdc748366ae55996dbec926382220c423e754bd819d22bc"
 		type = "file"
 	strings:
@@ -95,7 +95,10 @@ rule webshell_php_by_string_obfuscation
 		)
 		and any of ( $opbs* )
 		and not 1 of ($fp*)
-		and not filepath contains "\\User Data\\Default\\Cache\\" // chrome cache
-		and not filepath contains "\\cache2\\entries\\" // FF cache
-		and not filepath contains "\\Microsoft\\Windows\\INetCache\\IE\\" // old IE
+      and not filepath contains "\\Cache\\" /* generic cache e.g. for Chrome: \User Data\Default\Cache\ */
+      and not filepath contains "\\User Data\\Default\\Extensions\\" // chrome extensions
+      and not filepath contains "\\cache2\\" // FF cache
+      and not filepath contains "\\Microsoft\\Windows\\INetCache\\IE\\" // old IE
+      and not filepath contains "/com.apple.Safari/WebKitCache/"
+      and not filepath contains "\\Edge\\User Data\\" // some uncommon Edge path
 }
