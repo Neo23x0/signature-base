@@ -187,6 +187,7 @@ rule GIFCloaked_Webshell_A {
       and not 1 of ($fp*)
 }
 
+/* causes FPs and relevancy is limited
 rule exploit_ole_stdolelink {
   meta:
     author = "David Cannings"
@@ -228,6 +229,7 @@ rule exploit_ole_stdolelink {
         and (1 of ($data*))
         and extension != ".msi"
 }
+*/
 
 rule HackTool_Producers {
    meta:
