@@ -6085,9 +6085,9 @@ rule webshell_csharp_hash_regex {
 		score = 55
 	strings:
 		$gen1 = "void Page_Load" ascii wide
-		$gen2 = "HttpContext.Current.Request.Form" ascii wide
-		$gen3 = "HttpContext.Current.Request.Files" ascii wide
-		$gen4 = "FromBase64String" ascii wide
+		$gen2 = "FromBase64String" ascii wide
+		$gen3 = "CryptoServiceProvider" ascii wide
+		$gen4 = "ComputeHash" ascii wide
 
 		$hashing1 = /BitConverter\.ToString\([a-zA-Z0-9]{1,50}\)\.Replace\("-", ""\) == "[A-Fa-f0-9]{32}"\)/ ascii wide
 		$hashing2 = /BitConverter\.ToString\([a-zA-Z0-9]{1,50}\)\.Replace\("-", ""\) == "[A-Fa-f0-9]{40}"\)/ ascii wide
