@@ -6075,3 +6075,23 @@ rule webshell_in_image
 		) ) )
 }
 
+rule webshell_csharp_hash_regex {
+	meta:
+		description = "C# webshell using specific hash check for the password."
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+		author = "Nils Kuhnert"
+		hash = "29c187ad46d3059dc25d5f0958e0e8789fb2a51b9daaf90ea27f001b1a9a603c"
+		date = "2022-10-27"
+		score = 55
+	strings:
+		$gen1 = "void Page_Load" ascii wide
+		$gen2 = "HttpContext.Current.Request.Form" ascii wide
+		$gen3 = "HttpContext.Current.Request.Files" ascii wide
+		$gen4 = "FromBase64String" ascii wide
+
+		$hashing1 = /BitConverter\.ToString\([a-zA-Z0-9]{1,50}\)\.Replace\("-", ""\) == "[A-Fa-f0-9]{32}"\)/ ascii wide
+		$hashing2 = /BitConverter\.ToString\([a-zA-Z0-9]{1,50}\)\.Replace\("-", ""\) == "[A-Fa-f0-9]{40}"\)/ ascii wide
+		$hashing3 = /BitConverter\.ToString\([a-zA-Z0-9]{1,50}\)\.Replace\("-", ""\) == "[A-Fa-f0-9]{64}"\)/ ascii wide
+	condition:
+		all of ($gen*) and 1 of ($hashing*)
+}
