@@ -10584,3 +10584,11 @@ a19ba5d1ea315e0ca3a9a3ea6ccffc756404cec0;POLONIUM IOC - Small DLLs - https://www
 d5637caf5a931335b6b887a5ccbe36fffa6b4f9c;POLONIUM IOC - Small DLLs - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
 86377c1b8d54536c79c71f8913b72ca88d230bd4;POLONIUM IOC - Small DLLs - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
 f5505b35c9e9b6515875bea5c0bbf564add4939e;POLONIUM IOC - Small DLLs - https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/
+
+12eaac1b8dc29ba29287e7e30c893017f82c6fadb73dbc8ef2fa6f5bd5d9d84e;Cranefly IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/cranefly-new-tools-technique-geppei-danfuan
+981b28d7521c5b02f026cb1ba5289d61ae2c1bb31e8b256db21b5dcfb8837475;Cranefly IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/cranefly-new-tools-technique-geppei-danfuan
+6dcfa79948cf90b10b05b59237cf46adb09b2ce53bc2c0d38fce875eccd3a7e1;Cranefly IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/cranefly-new-tools-technique-geppei-danfuan
+0af8bf1fa14fe492de1cc870ac0e01fc8b2f6411de922712a206b905a10ee379;Cranefly IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/cranefly-new-tools-technique-geppei-danfuan
+7d5018d823939a181a84e7449d1c50ac3eb94abf3585a2154693ef5180877b95;Cranefly IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/cranefly-new-tools-technique-geppei-danfuan
+b5a4804cf7717fda1f01f23c1c2fe99fe9473b03f0247bcc6190f17d26856844;Cranefly IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/cranefly-new-tools-technique-geppei-danfuan
+1975bea7ca167d84003b601f0dfb95c4b31a174ce5af0b19e563cb33cba22ffa;Cranefly IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/cranefly-new-tools-technique-geppei-danfuan
