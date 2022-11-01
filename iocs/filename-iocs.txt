@@ -3126,19 +3126,25 @@ C:\\Windows\\[^\\"]{1,20}\.(js|ps1|vbs);50
 \\msptermsizes\\msptermsizes\.exe;90
 :\\Users\\[^\\"]{1,16}\\[0-9]{1,4}\.exe;65
 
-# Looks like an LSASS process memory dump (often contains credentials)
-\\lsass\.dmp;80
+# LSASS process memory dump names
+\\lsass\.(dmp|DMP);80
 \\lsass\.zip;80
 \\lsass\.7z;80
 \\lsass\.rar;80
-\\lsass\.exe[_0-9]{0,15}\.(dmp|zip|rar);80
+\\lsass[_0-9\-\.]{1,2}\.(dmp|DMP);80
+\\lsass[_0-9\-\.]{1,2}\.zip;80
+\\lsass[_0-9\-\.]{1,2}\.7z;80
+\\lsass[_0-9\-\.]{1,2}\.rar;80
+\\lsass\.exe[_0-9]{0,15}\.(dmp|zip|rar|DMP);80
 \\dumpert\.dmp;80
 \\Andrew\.dmp;80
 \\Coredump\.dmp;80
-\\lsass_2;65
 \\lsassdump;65
 \\lsassdmp;65
-\\lsass[a-zA-Z_\-\.]{1,16}\.(dmp|zip|rar);70
+\\lsass_2;65
+
+# Procdump Default Output File Suffix
+\\[^\\]{3,30}_[123][0-9][01][0-9][0-3][0-9]_[0-2][0-9][0-5][0-9][0-5][0-9]\.dmp$;60
 
 # Suspicious Extension in AppPatch folder
 c:\\windows\\AppPatch\\[^\\"]{1,20}\.(exe|vbs|ps1|bat);70
@@ -4053,7 +4059,6 @@ C:\\Windows\\Help\\Corporate\\vlc\.exe;85
 # ProxyNotShell exploitation IOC https://twitter.com/gossithedog/status/1578772856204578819?s=12&t=YYVa81RCA4W71JSygT16hw
 \\FrontEnd\\HttpProxy\\owa\\auth\\owafonts\.aspx;85
 
-
 # Suspicious File Name - obfuscation indicators 
 obfuscated[0-9_]{0,7}\.(exe|dll|vbs|vbe|ps1|psm1|bat|vbs|vbe|EXE|DLL|BAT|js|JS)$;70
 obfusc[0-9_]{0,7}\.(exe|dll|vbs|vbe|ps1|psm1|bat|vbs|vbe|EXE|DLL|BAT|js|JS)$;70
@@ -4085,5 +4090,15 @@ C:\\windows\\H2\.ps1;85
 \\LBP\.ps1;70
 \\Lb\.ps1;70
 \\H2\.ps1;70
+
+# Procdump - process dump tool used in SysInternals suite https://learn.microsoft.com/en-us/sysinternals/downloads/procdump
+(?i)\\procdump(64)?(a)?\.(exe|zip);50;(?i)(SysInternals\\)
+# Suspicious file that starts with procdump, a process dumping tool often used by adversaries https://learn.microsoft.com/en-us/sysinternals/downloads/procdump
+(?i)\\procdump[^\\]{0,30}\.(exe|dll|vbs|vbe|ps1|psm1|bat|vbs|vbe|js|7z|rar);70;(?i)(\\procdump(64)?\.exe)
+(?i)\\[^\\]{1,30}procdump\.(exe|dll|vbs|vbe|ps1|psm1|bat|vbs|vbe|js|7z|rar);70
+
+# Adfind - often used by AD administrators but also by threat actors http://www.joeware.net/freetools/
+\\Adfind\.exe;50
+\\Adfind\.(7z|rar);65
 
 # End
