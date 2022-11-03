@@ -4101,4 +4101,14 @@ C:\\windows\\H2\.ps1;85
 \\Adfind\.exe;50
 \\Adfind\.(7z|rar);65
 
+# FRP Binaries https://github.com/fatedier/frp
+\\frpc\.exe;70
+\\frps\.exe;70
+\\frpc$;70
+\\frps$;70
+\\frpc.ini;70
+\\frps.ini;70
+\\frpc_full.ini;70
+\\frps_full.ini;70
+
 # End
