@@ -20,12 +20,12 @@ rule XMRIG_Monero_Miner : HIGHVOL {
       hash3 = "f3f2703a7959183b010d808521b531559650f6f347a5830e47f8e3831b10bad5"
       hash4 = "0972ea3a41655968f063c91a6dbd31788b20e64ff272b27961d12c681e40b2d2"
    strings:
-      $s1 = "* COMMANDS:     'h' hashrate, 'p' pause, 'r' resume" fullword ascii
-      $s2 = "--cpu-affinity       set process affinity to CPU core(s), mask 0x3 for cores 0 and 1" fullword ascii
-      $s3 = "-p, --pass=PASSWORD      password for mining server" fullword ascii
+      $s1 = /COMMANDS:?\s+'h' hashrate, 'p' pause, 'r' resume/
+      $s2 = /--cpu-affinity(=N?)\s+set process affinity to CPU core(s), mask 0x3 for cores 0 and 1/
+      $s3 = /-p, --pass=PASSWORD\s+password for mining server/
       $s4 = "* VERSIONS:     XMRig/%s libuv/%s%s" fullword ascii
    condition:
-      ( uint16(0) == 0x5a4d or uint16(0) == 0x457f ) and filesize < 3000KB and 1 of them
+      ( uint16(0) == 0x5a4d or uint16(0) == 0x457f ) and filesize < 10000KB and 1 of them
 }
 
 rule XMRIG_Monero_Miner_Config {
