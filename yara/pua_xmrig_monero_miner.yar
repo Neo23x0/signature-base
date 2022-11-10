@@ -25,8 +25,8 @@ rule XMRIG_Monero_Miner : HIGHVOL {
       $s1 = "'h' hashrate, 'p' pause, 'r' resume" fullword ascii
       $s2 = "--cpu-affinity" ascii
       $s3 = "set process affinity to CPU core(s), mask 0x3 for cores 0 and 1" ascii
-      $s3 = "password for mining server" fullword ascii
-      $s4 = "XMRig/%s libuv/%s%s" fullword ascii
+      $s4 = "password for mining server" fullword ascii
+      $s5 = "XMRig/%s libuv/%s%s" fullword ascii
    condition:
       ( uint16(0) == 0x5a4d or uint16(0) == 0x457f ) and filesize < 10MB and 2 of them
 }
