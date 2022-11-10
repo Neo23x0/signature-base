@@ -15,6 +15,7 @@ rule XMRIG_Monero_Miner : HIGHVOL {
       author = "Florian Roth"
       reference = "https://github.com/xmrig/xmrig/releases"
       date = "2018-01-04"
+      modified = "2022-11-10"
       hash1 = "5c13a274adb9590249546495446bb6be5f2a08f9dcd2fc8a2049d9dc471135c0"
       hash2 = "08b55f9b7dafc53dfc43f7f70cdd7048d231767745b76dc4474370fb323d7ae7"
       hash3 = "f3f2703a7959183b010d808521b531559650f6f347a5830e47f8e3831b10bad5"
