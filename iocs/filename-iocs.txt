@@ -4156,4 +4156,7 @@ c:\\users\\public\\example\.bin;75
 # PPLKiller tool exploiting CVE-2019-16098 https://github.com/Barakat/CVE-2019-16098
 \\PPLKiller\.exe;85
 
+# Typical ASPX Shell Locations https://vimeo.com/770087063
+\\aspnet_client\\system_web\\[a-zA-Z0-9_\-]{1,16}\.asp[x]?$;65
+
 # End
