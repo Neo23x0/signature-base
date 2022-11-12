@@ -4111,4 +4111,49 @@ C:\\windows\\H2\.ps1;85
 \\frpc_full.ini;70
 \\frps_full.ini;70
 
+# Impacket default file name used for tools in the examples folder of the project https://github.com/SecureAuthCorp/impacket
+\\atexec\.py;75
+\\wmiquery\.py;70
+\\wmipersist\.py;70
+\\wmiexec\.py;70
+\\tstool\.py;70
+\\ticketer\.py;70
+\\ticketConverter\.py;70
+\\sniffer\.py;70
+\\sniff\.py;70
+\\smbrelayx\.py;70
+\\smbpasswd\.py;70
+\\smbexec\.py;70
+\\secretsdump\.py;70
+\\samrdump\.py;70
+\\rpcmap\.py;70
+\\rpcdump\.py;70
+\\rdp_check\.py;70
+\\psexec\.py;70
+\\ntlmrelayx\.py;70
+\\nmapAnswerMachine\.py;70
+\\netview\.py;70
+\\mimikatz\.py;70
+\\lookupsid\.py;70
+\\kintercept\.py;70
+\\keylistattack\.py;70
+\\karmaSMB\.py;70
+\\goldenPac\.py;70
+\\getTGT\.py;70
+\\GetNPUsers\.py;70
+\\GetADUsers\.py;70
+\\Get\-GPPPassword\.py;70
+\\exchanger\.py;70
+\\esentutl\.py;70
+\\dcomexec\.py;70
+\\atexec\.py;70
+
+# Forkatz filename IOCs https://github.com/Barbarisch/forkatz
+c:\\users\\public\\temp\.bin;75
+c:\\users\\public\\example\.bin;75
+\\forkatz\.exe;75
+
+# PPLKiller tool exploiting CVE-2019-16098 https://github.com/Barakat/CVE-2019-16098
+\\PPLKiller\.exe;85
+
 # End
