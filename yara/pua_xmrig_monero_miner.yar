@@ -15,17 +15,20 @@ rule XMRIG_Monero_Miner : HIGHVOL {
       author = "Florian Roth"
       reference = "https://github.com/xmrig/xmrig/releases"
       date = "2018-01-04"
+      modified = "2022-11-10"
+      modified = "2022-11-10"
       hash1 = "5c13a274adb9590249546495446bb6be5f2a08f9dcd2fc8a2049d9dc471135c0"
       hash2 = "08b55f9b7dafc53dfc43f7f70cdd7048d231767745b76dc4474370fb323d7ae7"
       hash3 = "f3f2703a7959183b010d808521b531559650f6f347a5830e47f8e3831b10bad5"
       hash4 = "0972ea3a41655968f063c91a6dbd31788b20e64ff272b27961d12c681e40b2d2"
    strings:
-      $s1 = "* COMMANDS:     'h' hashrate, 'p' pause, 'r' resume" fullword ascii
-      $s2 = "--cpu-affinity       set process affinity to CPU core(s), mask 0x3 for cores 0 and 1" fullword ascii
-      $s3 = "-p, --pass=PASSWORD      password for mining server" fullword ascii
-      $s4 = "* VERSIONS:     XMRig/%s libuv/%s%s" fullword ascii
+      $s1 = "'h' hashrate, 'p' pause, 'r' resume" fullword ascii
+      $s2 = "--cpu-affinity" ascii
+      $s3 = "set process affinity to CPU core(s), mask 0x3 for cores 0 and 1" ascii
+      $s4 = "password for mining server" fullword ascii
+      $s5 = "XMRig/%s libuv/%s%s" fullword ascii
    condition:
-      ( uint16(0) == 0x5a4d or uint16(0) == 0x457f ) and filesize < 3000KB and 1 of them
+      ( uint16(0) == 0x5a4d or uint16(0) == 0x457f ) and filesize < 10MB and 2 of them
 }
 
 rule XMRIG_Monero_Miner_Config {
@@ -52,10 +55,11 @@ rule PUA_LNX_XMRIG_CryptoMiner {
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2018-06-28"
+      modified = "2022-11-10"
       hash1 = "10a72f9882fc0ca141e39277222a8d33aab7f7a4b524c109506a407cd10d738c"
    strings:
-      $x1 = "--multihash-factor=N              number of hash blocks to process at a time (don't set or 0 enables automatic selection o" fullword ascii
-      $s2 = "* COMMANDS:     'h' hashrate, 'p' pause, 'r' resume, 'q' shutdown" fullword ascii
+      $x1 = "number of hash blocks to process at a time (don't set or 0 enables automatic selection o" fullword ascii
+      $s2 = "'h' hashrate, 'p' pause, 'r' resume, 'q' shutdown" fullword ascii
       $s3 = "* THREADS:      %d, %s, aes=%d, hf=%zu, %sdonate=%d%%" fullword ascii
       $s4 = ".nicehash.com" fullword ascii
    condition:
