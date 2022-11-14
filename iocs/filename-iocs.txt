@@ -4159,4 +4159,16 @@ c:\\users\\public\\example\.bin;75
 # Typical ASPX Shell Locations https://vimeo.com/770087063
 \\aspnet_client\\system_web\\[a-zA-Z0-9_\-]{1,16}\.asp[x]?$;65
 
+# Somnia Ransomware https://cert.gov.ua/article/2724253
+\\Temp\\text\.exe;70
+C:\\ProgramData\\VMware\\VMware Tools\\1\.exe;85
+C:\\ProgramData\\pe_https_x64_360_1\.exe;90
+\\Downloads\\Ip_scanner\.zip;70
+\\Downloads\\Ip_scanner\\Ip_scanner\.exe;70
+l\\Desktop\\netscan_portable\\64-bit\\netscan\.exe;75
+\\Downloads\\1\.jpeg;60
+\\Somnia_07_08_22_with_FunnySomnia\.exe;95
+\\netscan_portable\.7z;65
+\\FunnySomnia\.exe;85
+
 # End
