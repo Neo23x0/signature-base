@@ -41,13 +41,13 @@ rule Sliver_Implant_32bit
       .
       81 ?? 04 69 76 6F 74  cmp     dword ptr [ecx+4], 746F7669h
     */
-    $tcppivot = { 81 ?? 74 63 70 70 [2-20] 81 ?? 04 69 76 6F 74  }
+    $s_tcppivot = { 81 ?? 74 63 70 70 [2-20] 81 ?? 04 69 76 6F 74  }
 
     // case "wg":
     /*
       66 81 ?? 77 67 cmp     word ptr [eax], 6777h      // "gw"
     */
-    $wg = { 66 81 ?? 77 67 }
+    $s_wg = { 66 81 ?? 77 67 }
 
     // case "dns":
     /*
@@ -57,13 +57,13 @@ rule Sliver_Implant_32bit
       .
       80 ?? 02 73    cmp     byte ptr [eax+2], 73h ; 's'
     */
-    $dns = { 66 81 ?? 64 6E [2-20] 80 ?? 02 73 }
+    $s_dns = { 66 81 ?? 64 6E [2-20] 80 ?? 02 73 }
 
     // case "http":
     /*
       81 ?? 68 74 74 70  cmp     dword ptr [eax], 70747468h     // "ptth"
      */
-    $http = { 81 ?? 68 74 74 70 }
+    $s_http = { 81 ?? 68 74 74 70 }
 
     // case "https":
     /*
@@ -73,16 +73,17 @@ rule Sliver_Implant_32bit
       .
       80 ?? 04 73        cmp     byte ptr [ecx+4], 73h ; 's'
     */
-    $https = { 81 ?? 68 74 74 70 [2-20] 80 ?? 04 73 }
+    $s_https = { 81 ?? 68 74 74 70 [2-20] 80 ?? 04 73 }
 
     // case "mtls":       NOTE: this one can be missing due to compilate time config
     /*
       81 ?? 6D 74 6C 73  cmp     dword ptr [eax], 736C746Dh     // "sltm"
     */
-    $mtls = { 81 ?? 6D 74 6C 73 }
+    $s_mtls = { 81 ?? 6D 74 6C 73 }
 
+    $fp1 = "cloudfoundry" ascii fullword
   condition:
-    4 of them
+    4 of ($s*) and not 1 of ($fp*)
 }/*
  * Copyright 2022 Google LLC
  *
@@ -115,7 +116,7 @@ rule Sliver_Implant_64bit
     /*
       48 ?? 74 63 70 70 69 76 6F 74 mov     rcx, 746F766970706374h
     */
-    $tcppivot = { 48 ?? 74 63 70 70 69 76 6F 74 }
+    $s_tcppivot = { 48 ?? 74 63 70 70 69 76 6F 74 }
 
 
     // case "namedpipe":
@@ -127,7 +128,7 @@ rule Sliver_Implant_64bit
       80 ?? 08 65 cmp     byte ptr [rdx+8], 65h ; 'e'
 
     */
-    $namedpipe = { 48 ?? 6E 61 6D 65 64 70 69 70 [2-32] 80 ?? 08 65 }
+    $s_namedpipe = { 48 ?? 6E 61 6D 65 64 70 69 70 [2-32] 80 ?? 08 65 }
 
     // case "https":
     /*
@@ -137,13 +138,13 @@ rule Sliver_Implant_64bit
       .
       80 7A 04 73       cmp     byte ptr [rdx+4], 73h ; 's'
     */
-    $https = { 81 ?? 68 74 74 70 [2-32] 80 ?? 04 73 }
+    $s_https = { 81 ?? 68 74 74 70 [2-32] 80 ?? 04 73 }
 
     // case "wg":
     /*
       66 81 3A 77 67 cmp     word ptr [rdx], 6777h      // "gw"
     */
-    $wg = {66 81 ?? 77 67}
+    $s_wg = {66 81 ?? 77 67}
 
 
     // case "dns":
@@ -154,14 +155,15 @@ rule Sliver_Implant_64bit
       .
       80 7A 02 73    cmp     byte ptr [rdx+2], 73h ; 's'
     */
-    $dns = { 66 81 ?? 64 6E [2-20] 80 ?? 02 73 }
+    $s_dns = { 66 81 ?? 64 6E [2-20] 80 ?? 02 73 }
 
     // case "mtls":         // This one may or may not be in the file, depending on the config flags.
     /*
        81 ?? 6D 74 6C 73 cmp   dword ptr [rdx], 736C746Dh          // "mtls"
     */
-    $mtls = {  81 ?? 6D 74 6C 73  }
+    $s_mtls = {  81 ?? 6D 74 6C 73  }
 
+    $fp1 = "cloudfoundry" ascii fullword
   condition:
-    5 of them
+    5 of ($s*) and not 1 of ($fp*)
 }
