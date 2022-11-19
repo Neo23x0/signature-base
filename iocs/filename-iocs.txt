@@ -4171,4 +4171,18 @@ l\\Desktop\\netscan_portable\\64-bit\\netscan\.exe;75
 \\netscan_portable\.7z;65
 \\FunnySomnia\.exe;85
 
+# Rubeus Filename IOCs https://github.com/GhostPack/Rubeus/ and https://phackt.com/en-kerberos-constrained-delegation-with-protocol-transition and https://m0chan.github.io/2019/07/31/How-To-Attack-Kerberos-101.html and https://www.hackingarticles.in/a-detailed-guide-on-rubeus/
+C:\\temp\\spns\.txt;85
+\\[\w]{1,20}_[0-9]{4}_[0-9]{2}_[0-9]{2}_[0-9]{2}_[0-9]{2}_[0-9]{2}_[a-z]{2,16}_to_[a-z\.\-]{2,24}@;65
+\\srv\.tgt;70
+\\TotallyNotHashes\.txt;80
+\\hashes\.asreproast;85
+\\brutepasswords\.txt;75
+C:\\Temp\\payload\.exe;75
+\\ticket\.kirbi;85
+\\silver\.kirbi;85
+\\Users\\Public\\type\.hash;70
+\\Users\\Public\\type2\.hash;70
+\\Rubeus\.exe;85
+
 # End
