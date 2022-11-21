@@ -73,7 +73,8 @@ rule slapd_conf_with_default_password {
 		author = "Arnim Rupp"
 		score = 100
 	strings:
-		$c1 = /\nrootpw \{SSHA\}fsAEyxlFOtvZBwPLAF68zpUhth8lERoR/ ascii
+		/* \nrootpw \{SSHA\}fsAEyxlFOtvZBwPLAF68zpUhth8lERoR */
+		$c1 = { 0A 72 6f 6f 74 70 77 20 7b 53 53 48 41 7d 66 73 41 45 79 78 6c 46 4f 74 76 5a 42 77 50 4c 41 46 36 38 7a 70 55 68 74 68 38 6c 45 52 6f 52 }
 
 	condition:
 		filename == "slapd.conf"
