@@ -1,7 +1,7 @@
 
 /* 
-    Rules which detect vulnerabilities in configuration files.
-    External variables are used so they only work with YARA scanners, that pass them on (e.g. Thor, Loki and Spyre)
+	Rules which detect vulnerabilities in configuration files.
+	External variables are used so they only work with YARA scanners, that pass them on (e.g. Thor, Loki and Spyre)
 */
 
 
@@ -30,8 +30,8 @@ rule vuln_linux_sudoers {
 		$command16 = "/less " ascii
 
 	condition:
-		filename == "sudoers" or filepath contains "/etc/sudoers.d" 
-		and any of ($command*)
+		filename == "sudoers" or filepath contains "/etc/sudoers.d" and 
+		any of ($command*)
 }
 
 rule vuln_linux_nfs_exports {
@@ -42,13 +42,14 @@ rule vuln_linux_nfs_exports {
 		author = "Arnim Rupp"
 		score = 50
 	strings:
-        // line has to start with / to avoid triggering on #-comment lines
+		// line has to start with / to avoid triggering on #-comment lines
 		$conf1 = /\n\/.{2,200}?\binsecure\b/ ascii
 		$conf2 = /\n\/.{2,200}?\bno_root_squash\b/ ascii
 
 	condition:
-		filename == "exports" and filepath == "/etc" 
-		and any of ($conf*)
+		filename == "exports" and 
+		filepath contains "/etc" and 
+		any of ($conf*)
 }
 
 rule aes_key_in_mysql_history {
@@ -58,12 +59,12 @@ rule aes_key_in_mysql_history {
 		author = "Arnim Rupp"
 		score = 50
 	strings:
-		$c1 = /\bAES_(DE|EN)CRYPT(.{1,128}?,.??'.{1,128}?')/ ascii
-		$c2 = /\baes_(de|en)crypt(.{1,128}?,.??'.{1,128}?')/ ascii
+		$c1 = /\bAES_(DE|EN)CRYPT\(.{1,128}?,.??('|").{1,128}?('|")\)/ ascii
+		$c2 = /\baes_(de|en)crypt\(.{1,128}?,.??('|").{1,128}?('|")\)/ ascii
 
 	condition:
-		filename == ".mysql_history"
-		and any of ($c*)
+		filename == ".mysql_history" and 
+		any of ($c*)
 }
 
 rule slapd_conf_with_default_password {
@@ -73,10 +74,11 @@ rule slapd_conf_with_default_password {
 		author = "Arnim Rupp"
 		score = 100
 	strings:
-		$c1 = /\nrootpw \{SSHA\}fsAEyxlFOtvZBwPLAF68zpUhth8lERoR/ ascii
+		/* \nrootpw \{SSHA\}fsAEyxlFOtvZBwPLAF68zpUhth8lERoR */
+		$c1 = { 0A 72 6f 6f 74 70 77 20 7b 53 53 48 41 7d 66 73 41 45 79 78 6c 46 4f 74 76 5a 42 77 50 4c 41 46 36 38 7a 70 55 68 74 68 38 6c 45 52 6f 52 }
 
 	condition:
-		filename == "slapd.conf"
-		and any of ($c*)
+		filename == "slapd.conf" and 
+		any of ($c*)
 }
 
