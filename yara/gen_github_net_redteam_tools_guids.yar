@@ -3866,3 +3866,57 @@ rule HKTL_NET_GUID_NashaVM {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
+rule HKTL_NET_GUID_SharpSQLPwn {
+    meta:
+        description = "Detects .NET red/black-team tools via typelibguid"
+        reference = "https://github.com/lefayjey/SharpSQLPwn.git"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2022-11-21"
+    strings:
+        $typelibguid0 = "c442ea6a-9aa1-4d9c-9c9d-7560a327089c" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_Group3r {
+    meta:
+        description = "Detects .NET red/black-team tools via typelibguid"
+        reference = "https://github.com/Group3r/Group3r.git"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2022-11-21"
+    strings:
+        $typelibguid0 = "868a6c76-c903-4a94-96fd-a2c6ba75691c" ascii nocase wide
+        $typelibguid1 = "caa7ab97-f83b-432c-8f9c-c5f1530f59f7" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_TokenStomp {
+    meta:
+        description = "Detects .NET red/black-team tools via typelibguid"
+        reference = "https://github.com/MartinIngesen/TokenStomp"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2022-11-21"
+    strings:
+        $typelibguid0 = "8aac271f-9b0b-4dc3-8aa6-812bb7a57e7b" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_KrbRelay {
+    meta:
+        description = "Detects .NET red/black-team tools via typelibguid"
+        reference = "https://github.com/cube0x0/KrbRelay.git"
+        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        author = "Arnim Rupp"
+        date = "2022-11-21"
+    strings:
+        $typelibguid0 = "ed839154-90d8-49db-8cdd-972d1a6b2cfd" ascii nocase wide
+        $typelibguid1 = "3b47eebc-0d33-4e0b-bab5-782d2d3680af" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
