@@ -5,11 +5,13 @@
 */
 
 
-rule vuln_linux_sudoers {
+rule VULN_Linux_Sudoers_Commands {
 	meta:
 		description = "Detects sudoers config with commands which might allow privilege escalation to root"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Arnim Rupp"
+		reference = "https://wiki.archlinux.org/title/sudo"
+		date = "2022-11-22"
 		score = 50
 	strings:
 		$command1 = "/sh " ascii
@@ -34,12 +36,13 @@ rule vuln_linux_sudoers {
 		any of ($command*)
 }
 
-rule vuln_linux_nfs_exports {
+rule VULN_Linux_NFS_Exports {
 	meta:
 		description = "Detects insecure /etc/exports NFS config which might allow privilege escalation to root or other users. The parameter insecure allows any non-root user to mount NFS shares via e.g. an SSH-tunnel. With no_root_squash SUID root binaries are allowed."
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		reference = "https://www.errno.fr/nfs_privesc.html"
 		author = "Arnim Rupp"
+		date = "2022-11-22"
 		score = 50
 	strings:
 		// line has to start with / to avoid triggering on #-comment lines
@@ -52,11 +55,12 @@ rule vuln_linux_nfs_exports {
 		any of ($conf*)
 }
 
-rule aes_key_in_mysql_history {
+rule SUSP_AES_Key_in_MySql_History {
 	meta:
 		description = "Detects AES key outside of key management in .mysql_history"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Arnim Rupp"
+		date = "2022-11-22"
 		score = 50
 	strings:
 		$c1 = /\bAES_(DE|EN)CRYPT\(.{1,128}?,.??('|").{1,128}?('|")\)/ ascii
@@ -67,12 +71,14 @@ rule aes_key_in_mysql_history {
 		any of ($c*)
 }
 
-rule slapd_conf_with_default_password {
+rule VULN_Slapd_Conf_with_Default_Password {
 	meta:
 		description = "Detects an openldap slapd.conf with the default password test123"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Arnim Rupp"
-		score = 100
+		date = "2022-11-22"
+		reference = "https://www.openldap.org/doc/admin21/slapdconfig.html"
+		score = 70
 	strings:
 		/* \nrootpw \{SSHA\}fsAEyxlFOtvZBwPLAF68zpUhth8lERoR */
 		$c1 = { 0A 72 6f 6f 74 70 77 20 7b 53 53 48 41 7d 66 73 41 45 79 78 6c 46 4f 74 76 5a 42 77 50 4c 41 46 36 38 7a 70 55 68 74 68 38 6c 45 52 6f 52 }
