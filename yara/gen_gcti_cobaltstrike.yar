@@ -2784,7 +2784,6 @@ rule CobaltStrike_Resources_Command_Ps1_v2_5_to_v3_7_and_Resources_Compress_Ps1_
 
   strings:		
     // the command.ps1 and compress.ps1 are the same file. Between v3.7 and v3.8 the file was renamed from command to compress.
-    $ps1 = "$s=New-Object IO.MemoryStream(,[Convert]::FromBase64String(" nocase
     $ps2 ="));IEX (New-Object IO.StreamReader(New-Object IO.Compression.GzipStream($s,[IO.Compression.CompressionMode]::Decompress))).ReadToEnd();" nocase
   
   condition:
