@@ -4111,4 +4111,78 @@ C:\\windows\\H2\.ps1;85
 \\frpc_full.ini;70
 \\frps_full.ini;70
 
+# Impacket default file name used for tools in the examples folder of the project https://github.com/SecureAuthCorp/impacket
+\\atexec\.py;75
+\\wmiquery\.py;70
+\\wmipersist\.py;70
+\\wmiexec\.py;70
+\\tstool\.py;70
+\\ticketer\.py;70
+\\ticketConverter\.py;70
+\\sniffer\.py;70
+\\sniff\.py;70
+\\smbrelayx\.py;70
+\\smbpasswd\.py;70
+\\smbexec\.py;70
+\\secretsdump\.py;70
+\\samrdump\.py;70
+\\rpcmap\.py;70
+\\rpcdump\.py;70
+\\rdp_check\.py;70
+\\psexec\.py;70
+\\ntlmrelayx\.py;70
+\\nmapAnswerMachine\.py;70
+\\netview\.py;70
+\\mimikatz\.py;70
+\\lookupsid\.py;70
+\\kintercept\.py;70
+\\keylistattack\.py;70
+\\karmaSMB\.py;70
+\\goldenPac\.py;70
+\\getTGT\.py;70
+\\GetNPUsers\.py;70
+\\GetADUsers\.py;70
+\\Get\-GPPPassword\.py;70
+\\exchanger\.py;70
+\\esentutl\.py;70
+\\dcomexec\.py;70
+\\atexec\.py;70
+
+# Forkatz filename IOCs https://github.com/Barbarisch/forkatz
+c:\\users\\public\\temp\.bin;75
+c:\\users\\public\\example\.bin;75
+\\forkatz\.exe;75
+
+# PPLKiller tool exploiting CVE-2019-16098 https://github.com/Barakat/CVE-2019-16098
+\\PPLKiller\.exe;85
+
+# Typical ASPX Shell Locations https://vimeo.com/770087063
+\\aspnet_client\\system_web\\[a-zA-Z0-9_\-]{1,16}\.asp[x]?$;65
+
+# Somnia Ransomware https://cert.gov.ua/article/2724253
+\\Temp\\text\.exe;70
+C:\\ProgramData\\VMware\\VMware Tools\\1\.exe;85
+C:\\ProgramData\\pe_https_x64_360_1\.exe;90
+\\Downloads\\Ip_scanner\.zip;70
+\\Downloads\\Ip_scanner\\Ip_scanner\.exe;70
+l\\Desktop\\netscan_portable\\64-bit\\netscan\.exe;75
+\\Downloads\\1\.jpeg;60
+\\Somnia_07_08_22_with_FunnySomnia\.exe;95
+\\netscan_portable\.7z;65
+\\FunnySomnia\.exe;85
+
+# Rubeus Filename IOCs https://github.com/GhostPack/Rubeus/ and https://phackt.com/en-kerberos-constrained-delegation-with-protocol-transition and https://m0chan.github.io/2019/07/31/How-To-Attack-Kerberos-101.html and https://www.hackingarticles.in/a-detailed-guide-on-rubeus/
+C:\\temp\\spns\.txt;85
+\\[\w]{1,20}_[0-9]{4}_[0-9]{2}_[0-9]{2}_[0-9]{2}_[0-9]{2}_[0-9]{2}_[a-z]{2,16}_to_[a-z\.\-]{2,24}@;65
+\\srv\.tgt;70
+\\TotallyNotHashes\.txt;80
+\\hashes\.asreproast;85
+\\brutepasswords\.txt;75
+C:\\Temp\\payload\.exe;75
+\\ticket\.kirbi;85
+\\silver\.kirbi;85
+\\Users\\Public\\type\.hash;70
+\\Users\\Public\\type2\.hash;70
+\\Rubeus\.exe;85
+
 # End

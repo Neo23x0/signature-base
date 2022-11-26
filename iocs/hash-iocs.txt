@@ -10592,3 +10592,13 @@ f5505b35c9e9b6515875bea5c0bbf564add4939e;POLONIUM IOC - Small DLLs - https://www
 7d5018d823939a181a84e7449d1c50ac3eb94abf3585a2154693ef5180877b95;Cranefly IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/cranefly-new-tools-technique-geppei-danfuan
 b5a4804cf7717fda1f01f23c1c2fe99fe9473b03f0247bcc6190f17d26856844;Cranefly IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/cranefly-new-tools-technique-geppei-danfuan
 1975bea7ca167d84003b601f0dfb95c4b31a174ce5af0b19e563cb33cba22ffa;Cranefly IOCs https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/cranefly-new-tools-technique-geppei-danfuan
+
+
+100c5e4d5b7e468f1f16b22c05b2ff1cfaa02eafa07447c7d83e2983e42647f0;Somnia_07_0 - Somnia Ransomware Case https://cert.gov.ua/article/2724253
+ac5e68c15f5094cc6efb8d25e1b2eb13d1b38b104f31e1c76ce472537d715e08;Somnia_07_wit - Somnia Ransomware Case https://cert.gov.ua/article/2724253
+99cf5c03dac82c1f4de25309a8a99dcabf964660301308a606cdb40c79d15317;1.exeob - Somnia Ransomware Case https://cert.gov.ua/article/2724253
+156965227cbeeb0e387cb83adb93ccb3225f598136a43f7f60974591c12fafcf;funnysomniaex - Somnia Ransomware Case https://cert.gov.ua/article/2724253
+e449c28e658babb7e32c89b07ddee36cadeddfc77f17dd1be801b134a6857aa9;text.exe <TAAG1> - Somnia Ransomware Case https://cert.gov.ua/article/2724253
+fbed7e92caefbd74437d0970921bfd7cb724c98c90efd9b6d0c2ac377751c9e5;Iip_scanner.z - Somnia Ransomware Case https://cert.gov.ua/article/2724253
+06fe57cadb837a4e3b47589e95bb01aec1cfb7ce62fdba1f4323bb471591e1d2;Ip_scannerGex - Somnia Ransomware Case https://cert.gov.ua/article/2724253
+c87261c139ecba1989a88e157a71e3af;Ip_scanner_unpack> - Somnia Ransomware Case https://cert.gov.ua/article/2724253

@@ -51,7 +51,8 @@ rule mimikatz
       description      = "mimikatz"
       author         = "Benjamin DELPY (gentilkiwi)"
       tool_author      = "Benjamin DELPY (gentilkiwi)"
-
+      modified = "2022-11-16"
+      type = "file" // scan in memory causes too many FPs with EDR software
    strings:
       $exe_x86_1      = { 89 71 04 89 [0-3] 30 8d 04 bd }
       $exe_x86_2      = { 8b 4d e? 8b 45 f4 89 75 e? 89 01 85 ff 74 }

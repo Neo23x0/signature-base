@@ -30,7 +30,7 @@ rule Weevely_Webshell {
 
 rule webshell_h4ntu_shell_powered_by_tsoi_ {
 	meta:
-		description = "Web Shell - file h4ntu shell [powered by tsoi].php"
+		description = "Web Shell - file h4ntu shell powered by tsoi.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		date = "2014/01/28"

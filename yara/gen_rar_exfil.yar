@@ -1,10 +1,11 @@
 
-rule SUSP_RAR_Exfil_Ntds_SAM {
+rule SUSP_RAR_NtdsDIT {
    meta:
       description = "Detects suspicious RAR file that contains ntds.dit or SAM export"
       author = "Florian Roth"
       reference = "https://www.cybereason.com/blog/operation-soft-cell-a-worldwide-campaign-against-telecommunications-providers"
       date = "2019-12-16"
+      modified = "2022-11-15" // only synced the name with our internal rule
       score = 70
    strings:
       $x1 = "ntds.dit0" ascii fullword
