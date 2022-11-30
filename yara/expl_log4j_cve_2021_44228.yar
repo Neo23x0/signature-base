@@ -171,12 +171,13 @@ rule SUSP_EXPL_OBFUSC_Dec21_1{
       author = "Florian Roth"
       reference = "https://twitter.com/testanull/status/1469549425521348609"
       date = "2021-12-11"
+      modified = "2022-11-08"
       score = 60
    strings:
       /* ${lower:X} - single character match */
-      $x1 = { 24 7B 6C 6F 77 65 72 3A ?? 7D }
+      $f1 = { 24 7B 6C 6F 77 65 72 3A ?? 7D }
       /* ${upper:X} - single character match */
-      $x2 = { 24 7B 75 70 70 65 72 3A ?? 7D }
+      $f2 = { 24 7B 75 70 70 65 72 3A ?? 7D }
       /* URL encoded lower - obfuscation in URL */
       $x3 = "$%7blower:"
       $x4 = "$%7bupper:"
@@ -187,7 +188,11 @@ rule SUSP_EXPL_OBFUSC_Dec21_1{
 
       $fp1 = "<html"
    condition:
-      1 of ($x*) and not 1 of ($fp*)
+      ( 
+         1 of ($x*) or 
+         filesize < 200KB and 1 of ($f*) 
+      ) 
+      and not 1 of ($fp*)
 }
 
 rule SUSP_JDNIExploit_Error_Indicators_Dec21_1 {
