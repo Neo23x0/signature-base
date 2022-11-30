@@ -4185,4 +4185,19 @@ C:\\Temp\\payload\.exe;75
 \\Users\\Public\\type2\.hash;70
 \\Rubeus\.exe;85
 
+# Hive Ransomware IOCs CISA Alert AA22-321A https://www.cisa.gov/uscert/ncas/alerts/aa22-321a
+\\hive\.bat;65
+\\shadow\.bat;65
+\\Windows_x64_encrypt\.dll;75
+\\Windows_x64_encrypt\.exe;75
+\\Windows_x32_encrypt\.dll;75
+\\Windows_x32_encrypt\.exe;75
+\\Windows_x32_encrypt\.rar;75
+\\Linux_encrypt$;70
+\\Esxi_encrypt$;70
+
+# RansomBoggs IOCs https://twitter.com/ESETresearch/status/1596181925663760386?s=20&t=lhE6eIEW1dl2k_HvZsr69g
+\\Desktop\\aes\.bin$;70
+C:\\Windows\\Sullivan.1;75
+
 # End

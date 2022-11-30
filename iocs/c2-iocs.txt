@@ -1775,4 +1775,10 @@ microtech.az
 azecofarm.az
 online.tm
 
+# Hive Ransomware IOCs CISA Alert AA22-321A https://www.cisa.gov/uscert/ncas/alerts/aa22-321a
+asq.r77vh0.pw
+asq.d6shiiwz.pw
+asq.swhw71un.pw
+asd.s7610rir.pw
+
 # Last Line

@@ -1035,6 +1035,7 @@ rule APT30_Generic_2 {
 		filesize < 100KB and uint16(0) == 0x5A4D and all of them
 }
 
+/* I disabled this shit rule - F.R.
 rule APT30_Generic_3 {
 	meta:
 		description = "FireEye APT30 Report Sample"
@@ -1053,6 +1054,7 @@ rule APT30_Generic_3 {
 	condition:
 		filesize < 100KB and uint16(0) == 0x5A4D and all of them
 }
+*/
 
 rule APT30_Generic_4 {
 	meta:
