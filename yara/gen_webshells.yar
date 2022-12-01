@@ -4217,10 +4217,11 @@ rule webshell_asp_generic_registry_reader
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/03/14"
+		modified = "2022-12-01"
 		score = 50
 
 	strings:
-        $asp_reg1  = "Registry" fullword wide ascii
+        /* $asp_reg1  = "Registry" fullword wide ascii */ /* too many matches issues */
         $asp_reg2  = "LocalMachine" fullword wide ascii
         $asp_reg3  = "ClassesRoot" fullword wide ascii
         $asp_reg4  = "CurrentUser" fullword wide ascii
