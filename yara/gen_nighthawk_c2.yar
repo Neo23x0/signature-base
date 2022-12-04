@@ -4,7 +4,7 @@ rule HKTL_Nighthawk_RAT {
 	meta:
 		description = "Detects Nighthawk RAT"
 		author="Frank Boldewin (@r3c0nst)"
-		references = "https://www.proofpoint.com/us/blog/threat-insight/nighthawk-and-coming-pentest-tool-likely-gain-threat-actor-notice"
+		references = "https://web.archive.org/web/20221125224850/https://www.proofpoint.com/us/blog/threat-insight/nighthawk-and-coming-pentest-tool-likely-gain-threat-actor-notice"
 		hash1 = "0551ca07f05c2a8278229c1dc651a2b1273a39914857231b075733753cb2b988"
 		hash2 = "9a57919cc5c194e28acd62719487c563a8f0ef1205b65adbe535386e34e418b8"
 		hash3 = "38881b87826f184cc91559555a3456ecf00128e01986a9df36a72d60fb179ccf"
@@ -25,7 +25,7 @@ rule HKTL_MAL_Nighthawk_Nov_2022_1 : nighthawk beacon {
    meta:
         description = "Detect the Nighthawk dropped beacon"
         author = "Arkbird_SOLG"
-        reference = "https://www.proofpoint.com/us/blog/threat-insight/nighthawk-and-coming-pentest-tool-likely-gain-threat-actor-notice"
+        reference = "https://web.archive.org/web/20221125224850/https://www.proofpoint.com/us/blog/threat-insight/nighthawk-and-coming-pentest-tool-likely-gain-threat-actor-notice"
         date = "2022-11-22"
         hash1 = "0551ca07f05c2a8278229c1dc651a2b1273a39914857231b075733753cb2b988"
         hash2 = "9a57919cc5c194e28acd62719487c563a8f0ef1205b65adbe535386e34e418b8"
