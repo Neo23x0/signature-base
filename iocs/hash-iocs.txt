@@ -10604,3 +10604,51 @@ c87261c139ecba1989a88e157a71e3af;Ip_scanner_unpack> - Somnia Ransomware Case htt
 
 78dcf144e82e947c20f152a8a57376b43e7aac3fee4bf1d18d22d4c14b25e56f;RansomBoggs malware https://twitter.com/ESETresearch/status/1596181925663760386?s=20&t=lhE6eIEW1dl2k_HvZsr69g
 a490d03e780a6b664da65e20afa7845c6f79af60b6a496ff113bf9e9034e77d0;RansomBoggs malware https://twitter.com/ESETresearch/status/1596181925663760386?s=20&t=lhE6eIEW1dl2k_HvZsr69g
+
+
+9b546bd99272cf4689194d698c830a2510194722;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+f1103e627311e73d5f29e877243e7ca203292f9419303c661aec57745eb4f26c;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+a7c207b9b83648f69d6387780b1168e2f1eabd23ae6e162dd700ae8112f8b96c;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+02a733920c7e69469164316e3e96850d55fca9f5f9d19a241fad906466ec8ae8;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+0cf6399db55d40bc790a399c6bbded375f5a278dc57a143e4b21ea3f402f551f;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+f5db51115fa0c910262828d0943171d640b4748e51c9a140d06ea81ae6ea1710;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+857f28b8fe31cf5db6d45d909547b151a66532951f26cda5f3320d2d4461b583;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+08eb4366fc0722696edb03981f00778701266a2e57c40cd2e9d765bf8b0a34d0;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+f8144fa96c036a8204c7bc285e295f9cd2d1deb0379e39ee8a8414531104dc4a;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+88d13669a994d2e04ec0a9940f07ab8aab8563eb845a9c13f2b0fec497df5b17;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+0f385cc69a93abeaf84994e7887cb173e889d309a515b55b2205805bdfe468a3;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+0d5e3483299242bf504bd3780487f66f2ec4f48a7b38baa6c6bc8ba16e4fb605;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+7e00bfb622072f53733074795ab581cf6d1a8b4fc269a50919dda6350209913c;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+af4523186fe4a5e2833bbbe14939d8c3bd352a47a2f77592d8adcb569621ce02;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+8a3d71c668574ad6e7406d3227ba5adc5a230dd3057edddc4d0ec5f8134d76c3;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+4306c5d152cdd86f3506f91633ef3ae7d8cf0dd25f3e37bec43423c4742f4c42;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+3d4502066a338e19df58aa4936c37427feecce9ab8d43abff4a7367643ae39ce;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+f538b035c3de87f9f8294bec272c1182f90832a4e86db1e47cbb1ab26c9f3a0b;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+fd87ca28899823b37b2c239fbbd236c555bcab7768d67203f86d37ede19dd975;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+1817cc163482eb21308adbd43fb6be57fcb5ff11fd74b344469190bb48d8163b;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+bff4dd37febd5465e0091d9ea68006be475c0191bd8c7a79a44fbf4b99544ef1;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+ecefd9bb8b3783a81ab934b44eb3d84df5e58f0289f089ef6760264352cf878a;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+db3b1f224aec1a7c58946d819d729d0903751d1867113aae5cca87e38c653cf4;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+74fbf3cc44dd070bd5cb87ca2eed03e1bbeec4fec644a25621052f0a73abbe84;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+b160bd46b6efc6d79bfb76cf3eeacca2300050248969decba139e9e1cbeebf53;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+f869e8fbd8aa1f037ad862cf6e8bbbf797ff49556fb100f2197be4ee196a89ae;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+0c2ffed470e954d2bf22807ba52c1ffd1ecce15779c0afdf15c292e3444cf674;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+310afba59ab8e1bda3ef750a64bf39133e15c89e8c7cf4ac65ee463b26b136ba;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+b5d202456ac2ce7d1285b9c0e2e5b7ddc03da1cbca51b5da98d9ad72e7f773b8;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+1f842f84750048bb44843c277edeaa8469697e97c4dbf8dc571ec552266bec9f;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+1b943afac4f476d523310b8e3afe7bca761b8cbaa9ea2b9f01237ca4652fc834;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+b9afe016dbdba389000b01ce7645e7eea1b0a50827cded1cbaa48fbc715197bb;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+61971d3cbf88d6658e5209de443e212100afc8f033057d9a4e79000f6f0f7cc4;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+8e64bacaf40110547b334eadcb0792bdc891d7ae298fbfff1367125797b6036b;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+c646199a9799b6158de419b1b7e36b46c7b7413d6c35bfffaeaa8700b2dcc427;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+bd270853db17f94c2b8e4bd9fa089756a147ed45cbc44d6c2b0c78f361978906;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+2eb3ef8a7a2c498e87f3820510752043b20cbe35b0cbd9af3f69e8b8fe482676;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+0afed8d1b7c36008de188c20d7f0e2283251a174261547aab7fb56e31d767666;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+e0d89c88378dcb1b6c9ce2d2820f8d773613402998b8dcdb024858010dec72ed;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+571f8db67d463ae80098edc7a1a0cad59153ce6592e42d370a45df46f18a4ad8;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+10a5612044599128981cb41d71d7390c15e7a2a0c2848ad751c3da1cbec510a2;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+1807549af1c8fdc5b04c564f4026e41790c554f339514d326f8b55cb7b9b4f79;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+01242b35b6def71e42cc985e97d618e2fabd616b16d23f7081d575364d09ca74;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+952b34f6370294c5a0bb122febfaa80612fef1f32eddd48a3d0556c4286b7474;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+9aa1f37517458d635eae4f9b43cb4770880ea0ee171e7e4ad155bbdee0cbe732;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
+3a8b7c1fe9bd9451c0a51e4122605efc98e7e4e13ed117139a13e4749e211ed0;Cuba Ransomware Advisory https://www.cisa.gov/uscert/ncas/alerts/aa22-335a
