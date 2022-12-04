@@ -21,7 +21,7 @@ jobs:
 
       # Assemble all *.yar files (except those requiring external variables)
       - name: Assemble all Yara files
-        run: "for f in $GITHUB_WORKSPACE/yara/*.yar; do if [[ (\"${f##*/}\" != \"generic_anomalies.yar\") && (\"${f##*/}\" != \"general_cloaking.yar\") && (\"${f##*/}\" != \"thor_inverse_matches.yar\") && (\"${f##*/}\" != \"yara_mixed_ext_vars.yar\") ]]; then cat $f >> signature-base.yar; fi;done"
+        run: "for f in $GITHUB_WORKSPACE/yara/*.yar; do if [[ (\"${f##*/}\" != \"generic_anomalies.yar\") && (\"${f##*/}\" != \"general_cloaking.yar\") && (\"${f##*/}\" != \"thor_inverse_matches.yar\") && (\"${f##*/}\" != \"yara_mixed_ext_vars.yar\") && (\"${f##*/}\" != \"gen_webshells_ext_vars.yar\") ]]; then cat $f >> signature-base.yar; fi;done"
 
       # Upload the assembled Yara artifact
       - name: Upload the resulting Yara artifact
