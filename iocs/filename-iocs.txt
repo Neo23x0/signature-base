@@ -4200,4 +4200,10 @@ C:\\Temp\\payload\.exe;75
 \\Desktop\\aes\.bin$;70
 C:\\Windows\\Sullivan.1;75
 
+# SysmonEOP Filename IOCs - PoC for CVE-2022-41120 https://github.com/Wh04m1001/SysmonEoP
+\\SysmonEOP\.exe;90
+\\SysmonEOPv2\.exe;90
+\\SysmonEOP_v2\.exe;90
+Global\\GLOBALROOT\\RPC Control\\CLIP-876BEE15B64B610D2505A44596ED92FBA9624DB923F9D608698BD8C8E64E4F1A;90
+
 # End
