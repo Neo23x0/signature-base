@@ -3867,7 +3867,7 @@ application-2eaf7e76aa55726cc0419f604e58ee73c5578c02c9e21fdbe7ae887925ea92ae\.cs
 /PwnKit;90
 /PwnKit\.sh;90
 
-# Winpeas Filename IOCs https://github.com/carlospolop/PEASS-ng
+# WinPeas / LinPeas Filename IOCs https://github.com/carlospolop/PEASS-ng
 \\winPEASx64;80
 \\winPEASx86;80
 \\winPEASxany;80
@@ -3877,6 +3877,8 @@ application-2eaf7e76aa55726cc0419f604e58ee73c5578c02c9e21fdbe7ae887925ea92ae\.cs
 \\winPEASxany\.bat;80
 /linpeas_linux_;80
 /linpeas\.sh;80
+\\linpeas_linux_;80
+linpeas\.log;75
 
 # Gopher Filename IOCs https://github.com/EncodeGroup/Gopher
 \\Gopher\.exe\.log;80
@@ -4205,5 +4207,7 @@ C:\\Windows\\Sullivan.1;75
 \\SysmonEOPv2\.exe;90
 \\SysmonEOP_v2\.exe;90
 Global\\GLOBALROOT\\RPC Control\\CLIP-876BEE15B64B610D2505A44596ED92FBA9624DB923F9D608698BD8C8E64E4F1A;90
+
+
 
 # End

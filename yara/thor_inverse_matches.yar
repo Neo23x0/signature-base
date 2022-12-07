@@ -346,7 +346,7 @@ rule taskmgr_ANOMALY {
 rule APT_Cloaked_PsExec
 	{
 	meta:
-		description = "Looks like a cloaked PsExec. May be APT group activity."
+		description = "Looks like a cloaked PsExec. This may be APT group activity."
 		date = "2014-07-18"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
@@ -365,7 +365,7 @@ rule APT_Cloaked_PsExec
 rule APT_Cloaked_SuperScan
 	{
 	meta:
-		description = "Looks like a cloaked SuperScan Port Scanner. May be APT group activity."
+		description = "Looks like a cloaked SuperScan Port Scanner. This may be APT group activity."
 		date = "2014-07-18"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
@@ -380,7 +380,7 @@ rule APT_Cloaked_SuperScan
 rule APT_Cloaked_ScanLine
 	{
 	meta:
-		description = "Looks like a cloaked ScanLine Port Scanner. May be APT group activity."
+		description = "Looks like a cloaked ScanLine Port Scanner. This may be APT group activity."
 		date = "2014-07-18"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
