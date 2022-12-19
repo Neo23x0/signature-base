@@ -10691,3 +10691,9 @@ c5d1de206445f508c1af5f213e46b915b536e4b36ef917c4e826a982dd47c312;Cloud Atlas IOC
 8215e918ca3a77424dadac1aebc9a44b8f9840cd1389df0399a9fa4eb6329775;Cloud Atlas IOCs - holeincorner - https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/apt-cloud-atlas-unbroken-threat/
 b8dc70b9ffe06c9ecaf0216ea7948fe718143db10641a23297652693ea026ab3;Cloud Atlas IOCs - Salzgitters.avi - https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/apt-cloud-atlas-unbroken-threat/
 f4e710f515249e8c08ae76284bfb280070e1fd2308e9d9321d92163dfc73be66;Cloud Atlas IOCs - Schultes.wmv - https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/apt-cloud-atlas-unbroken-threat/
+
+F4691FF3B3ACD15653684F372285CAC36C8D0AEF;Mirrorface IOCs - K7SysMn1.dll Win32/Agent.ACLP LODEINFO loader https://www.welivesecurity.com/2022/12/14/unmasking-mirrorface-operation-liberalface-targeting-japanese-political-entities/
+DB81C8719DDAAE40C8D9B9CA103BBE77BE4FCE6C;Mirrorface IOCs - K7SysMon.Exe.db N/A Encrypted LODEINFO https://www.welivesecurity.com/2022/12/14/unmasking-mirrorface-operation-liberalface-targeting-japanese-political-entities/
+A8D2BE15085061B753FDEBBDB08D301A034CE1D5;Mirrorface IOCs - JsSchHlp.exe Win32/Agent.ACLP JsSchHlp.exe with appended encrypted second-stage LODEINFO in the security directory https://www.welivesecurity.com/2022/12/14/unmasking-mirrorface-operation-liberalface-targeting-japanese-political-entities/
+0AB7BB3FF583E50FBF28B288E71D3BB57F9D1395;Mirrorface IOCs - JSESPR.dll Win32/Agent.ACLP Second-stage LODEINFO loader https://www.welivesecurity.com/2022/12/14/unmasking-mirrorface-operation-liberalface-targeting-japanese-political-entities/
+E888A552B00D810B5521002304D4F11BC249D8ED;Mirrorface IOCs - 31558_n.dll Win32/Agent.ACLP MirrorStealer credential stealer https://www.welivesecurity.com/2022/12/14/unmasking-mirrorface-operation-liberalface-targeting-japanese-political-entities/
