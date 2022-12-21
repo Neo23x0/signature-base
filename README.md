@@ -27,6 +27,7 @@ Using the YARA rules in a tool other than [LOKI](https://github.com/Neo23x0/Loki
 - ./yara/gen_webshells_ext_vars.yar
 - ./yara/thor_inverse_matches.yar
 - ./yara/yara_mixed_ext_vars.yar
+- ./yara/configured_vulns_ext_vars.yar
 
 Just remove these files in case you see the above error message.
 
