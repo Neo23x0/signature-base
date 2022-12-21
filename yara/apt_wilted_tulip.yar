@@ -17,10 +17,11 @@ rule WiltedTulip_Tools_back {
       author = "Florian Roth"
       reference = "http://www.clearskysec.com/tulip"
       date = "2017-07-23"
+      modified = "2022-12-21"
       hash1 = "b7faeaa6163e05ad33b310a8fdc696ccf1660c425fa2a962c3909eada5f2c265"
    strings:
       $x1 = "%s.exe -f \"C:\\Users\\Admin\\Google\\Chrome\\TestProfile\" -o \"c:\\passlist.txt\"" fullword ascii
-      $x2 = "\\ChromePasswordDump\\Release\\FireMaster.pdb" fullword ascii
+      $x2 = "\\ChromePasswordDump\\Release\\FireMaster.pdb" ascii
       $x3 = "//Dump Chrome Passwords to a Output file \"c:\\passlist.txt\"" fullword ascii
    condition:
       ( uint16(0) == 0x5a4d and filesize < 2000KB and 1 of them )
@@ -185,6 +186,7 @@ rule WiltedTulip_Zpp {
       author = "Florian Roth"
       reference = "http://www.clearskysec.com/tulip"
       date = "2017-07-23"
+      modified = "2022-12-21"
       hash1 = "10ec585dc1304436821a11e35473c0710e844ba18727b302c6bd7f8ebac574bb"
       hash2 = "7d046a3ed15035ea197235980a72d133863c372cc27545af652e1b2389c23918"
       hash3 = "6d6816e0b9c24e904bc7c5fea5951d53465c478cc159ab900d975baf8a0921cf"
@@ -197,7 +199,7 @@ rule WiltedTulip_Zpp {
       $s3 = "files remaining ,total file save = " fullword wide
       $s4 = "$ec996350-79a4-477b-87ae-2d5b9dbe20fd" fullword ascii
       $s5 = "Destinition Directory Not Found" fullword wide
-      $s6 = "\\obj\\Release\\ZPP.pdb" fullword ascii
+      $s6 = "\\obj\\Release\\ZPP.pdb" ascii
    condition:
       uint16(0) == 0x5a4d and filesize < 30KB and ( 1 of ($x*) or 3 of them )
 }

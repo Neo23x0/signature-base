@@ -12,6 +12,7 @@ rule FakeM_Generic {
 		author = "Florian Roth"
 		reference = "http://researchcenter.paloaltonetworks.com/2016/01/scarlet-mimic-years-long-espionage-targets-minority-activists/"
 		date = "2016-01-25"
+		modified = "2022-12-21"
 		score = 85
 		hash1 = "631fc66e57acd52284aba2608e6f31ba19e2807367e33d8704f572f6af6bd9c3"
 		hash2 = "3d9bd26f5bd5401efa17690357f40054a3d7b438ce8c91367dbf469f0d9bd520"
@@ -37,7 +38,7 @@ rule FakeM_Generic {
 
 		$e1 = "C:\\Documents and Settings\\A\\" fullword ascii
 		$e2 = "\\svchost.exe" fullword ascii
-		$e3 = "\\Perform\\Release\\Perform.pdb" fullword ascii
+		$e3 = "\\Perform\\Release\\Perform.pdb" ascii
 
 		$f1 = "Browser.EXE" fullword wide
 		$f2 = "\\browser.exe" fullword ascii

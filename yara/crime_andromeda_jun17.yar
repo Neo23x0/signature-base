@@ -16,6 +16,7 @@ rule Andromeda_MalBot_Jun_1A {
       author = "Florian Roth"
       reference = "http://blog.trendmicro.com/trendlabs-security-intelligence/information-stealer-found-hitting-israeli-hospitals/"
       date = "2017-06-30"
+      modified = "2022-12-21"
       hash1 = "3c223bbf83ac2f91c79383a53ed15b0c8ffe2caa1bf52b26c17fd72278dc7ef9"
       hash2 = "73cecc67bb12cf5a837af9fba15b7792a6f1a746b246b34f8ed251c4372f1a98"
       hash3 = "66035cc81e811735beab573013950153749b02703eae58b90430646f6e3e3eb4"
@@ -23,11 +24,11 @@ rule Andromeda_MalBot_Jun_1A {
    strings:
       $x1 = "%temp%\\FolderN\\name.exe" fullword wide
       $x2 = "%temp%\\FolderN\\name.exe.lnk" fullword wide
-      $x3 = "\\Startup\\name.exe" fullword wide
+      $x3 = "\\Startup\\name.exe" wide
       $x4 = "firefox.exe.exe" fullword wide
-      $x5 = "\\Desktop\\New folder\\dark.exe" fullword wide
-      $x6 = "\\x86\\Release\\word.pdb" fullword ascii
-      $x7 = "\\obj\\Release\\botkill.pdb" fullword ascii
+      $x5 = "\\Desktop\\New folder\\dark.exe" wide
+      $x6 = "\\x86\\Release\\word.pdb" ascii
+      $x7 = "\\obj\\Release\\botkill.pdb" ascii
 
       $s1 = "4System.Web.Services.Protocols.SoapHttpClientProtocol" fullword ascii
       $s2 = "svhost.exe" fullword wide

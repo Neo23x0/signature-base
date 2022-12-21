@@ -14,6 +14,7 @@ rule RottenPotato_Potato {
       author = "Florian Roth"
       reference = "https://github.com/foxglovesec/RottenPotato"
       date = "2017-02-07"
+      modified = "2022-12-21"
       score = 90
       hash1 = "59cdbb21d9e487ca82748168682f1f7af3c5f2b8daee3a09544dd58cbf51b0d5"
    strings:
@@ -23,7 +24,7 @@ rule RottenPotato_Potato {
       $x4 = "-enable_token true -enable_dce true" fullword wide
       $x5 = "DNS lookup succeeds - UDP Exhaustion failed!" fullword wide
       $x6 = "DNS lookup fails - UDP Exhaustion worked!" fullword wide
-      $x7 = "\\obj\\Release\\Potato.pdb" fullword ascii
+      $x7 = "\\obj\\Release\\Potato.pdb" ascii
       $x8 = "function FindProxyForURL(url,host){if (dnsDomainIs(host, \"localhost\")) return \"DIRECT\";" fullword wide
 
       $s1 = "\"C:\\Windows\\System32\\cmd.exe\" /K start" fullword wide

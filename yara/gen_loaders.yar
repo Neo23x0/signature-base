@@ -130,9 +130,10 @@ rule Reflective_DLL_Loader_Aug17_3 {
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2017-08-20"
+      modified = "2022-12-21"
       hash1 = "d10e4b3f1d00f4da391ac03872204dc6551d867684e0af2a4ef52055e771f474"
    strings:
-      $s1 = "\\Release\\inject.pdb" fullword ascii
+      $s1 = "\\Release\\inject.pdb" ascii
       $s2 = "!!! Failed to gather information on system processes! " fullword ascii
       $s3 = "reflective_dll.dll" fullword ascii
       $s4 = "[-] %s. Error=%d" fullword ascii

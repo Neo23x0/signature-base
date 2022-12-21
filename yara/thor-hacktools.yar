@@ -3536,9 +3536,10 @@ rule Disclosed_0day_POCs_InjectDll {
       author = "Florian Roth"
       reference = "Disclosed 0day Repos"
       date = "2017-07-07"
+      modified = "2022-12-21"
       hash1 = "173d3f78c9269f44d069afbd04a692f5ae42d5fdc9f44f074599ec91e8a29aa2"
    strings:
-      $x1 = "\\Release\\InjectDll.pdb" fullword ascii
+      $x1 = "\\Release\\InjectDll.pdb" ascii
       $x2 = "Specify -l to list all IE processes running in the current session" fullword ascii
       $x3 = "Usage: InjectDll -l|pid PathToDll" fullword ascii
       $x4 = "Injecting DLL: %ls into PID: %d" fullword ascii
@@ -3554,11 +3555,12 @@ rule Disclosed_0day_POCs_payload_MSI {
       author = "Florian Roth"
       reference = "Disclosed 0day Repos"
       date = "2017-07-07"
+      modified = "2022-12-21"
       hash1 = "a7c498a95850e186b7749a96004a98598f45faac2de9b93354ac93e627508a87"
    strings:
       $s1 = "WShell32.dll" fullword wide
       $s2 = "Target empty, so account name translation begins on the local system." fullword wide
-      $s3 = "\\custact\\x86\\AICustAct.pdb" fullword ascii
+      $s3 = "\\custact\\x86\\AICustAct.pdb" ascii
    condition:
       ( uint16(0) == 0xcfd0 and filesize < 1000KB and all of them )
 }
@@ -3673,9 +3675,10 @@ rule AllTheThings {
       author = "Florian Roth"
       reference = "https://github.com/subTee/AllTheThings"
       date = "2017-07-27"
+      modified = "2022-12-21"
       hash1 = "5a0e9a9ce00d843ea95bd5333b6ab50cc5b1dbea648cc819cfe48482513ce842"
    strings:
-      $x1 = "\\obj\\Debug\\AllTheThings.pdb" fullword ascii
+      $x1 = "\\obj\\Debug\\AllTheThings.pdb" ascii
       $x2 = "AllTheThings.exe" fullword wide
       $x3 = "\\AllTheThings.dll" fullword ascii
       $x4 = "Hello From Main...I Don't Do Anything" fullword wide
@@ -3830,9 +3833,10 @@ rule Sharpire {
       author = "Florian Roth"
       reference = "https://github.com/0xbadjuju/Sharpire"
       date = "2017-09-23"
+      modified = "2022-12-21"
       hash1 = "327a1dc2876cd9d7f6a5b3777373087296fc809d466e42861adcf09986c6e587"
    strings:
-      $x1 = "\\obj\\Debug\\Sharpire.pdb" fullword ascii
+      $x1 = "\\obj\\Debug\\Sharpire.pdb" ascii
       $x2 = "[*] Upload of $fileName successful" fullword wide
 
       $s1 = "no shell command supplied" fullword wide
@@ -4345,9 +4349,10 @@ rule HKTL_NoPowerShell {
       author = "Florian Roth"
       reference = "https://github.com/bitsadmin/nopowershell"
       date = "2018-12-28"
+      modified = "2022-12-21"
       hash1 = "2dad091dd00625762a7590ce16c3492cbaeb756ad0e31352a42751deb7cf9e70"
    strings:
-      $x1 = "\\NoPowerShell.pdb" fullword ascii
+      $x1 = "\\NoPowerShell.pdb" ascii
       $x2 = "Invoke-WmiMethod -Class Win32_Process -Name Create \"cmd" fullword wide
       $x3 = "ls C:\\Windows\\System32 -Include *.exe | select -First 10 Name,Length" fullword wide
       $x4 = "ls -Recurse -Force C:\\Users\\ -Include *.kdbx" fullword wide

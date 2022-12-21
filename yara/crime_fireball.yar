@@ -92,9 +92,10 @@ rule Fireball_regkey {
       author = "Florian Roth"
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
+      modified = "2022-12-21"
       hash1 = "fff2818caa9040486a634896f329b8aebaec9121bdf9982841f0646763a1686b"
    strings:
-      $s1 = "\\WinMain\\Release\\WinMain.pdb" fullword ascii
+      $s1 = "\\WinMain\\Release\\WinMain.pdb" ascii
       $s2 = "ScreenShot" fullword wide
       $s3 = "WINMAIN" fullword wide
    condition:
@@ -127,9 +128,10 @@ rule Fireball_archer {
       author = "Florian Roth"
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
+      modified = "2022-12-21"
       hash1 = "9b4971349ae85aa09c0a69852ed3e626c954954a3927b3d1b6646f139b930022"
    strings:
-      $x1 = "\\archer_lyl\\Release\\Archer_Input.pdb" fullword ascii
+      $x1 = "\\archer_lyl\\Release\\Archer_Input.pdb" ascii
 
       $s1 = "Archer_Input.dll" fullword ascii
       $s2 = "InstallArcherSvc" fullword ascii
@@ -167,12 +169,13 @@ rule Fireball_gubed {
       author = "Florian Roth"
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
+      modified = "2022-12-21"
       hash1 = "e3f69a1fb6fcaf9fd93386b6ba1d86731cd9e5648f7cff5242763188129cd158"
    strings:
       $x1 = "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\MRT.exe" fullword wide
       $x2 = "tIphlpapi.dll" fullword wide
       $x3 = "http://%s/provide?clients=%s&reqs=visit.startload" fullword wide
-      $x4 = "\\Gubed\\Release\\Gubed.pdb" fullword ascii
+      $x4 = "\\Gubed\\Release\\Gubed.pdb" ascii
       $x5 = "d2hrpnfyb3wv3k.cloudfront.net" fullword wide
    condition:
       ( uint16(0) == 0x5a4d and filesize < 300KB and 1 of them )

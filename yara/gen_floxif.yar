@@ -1,5 +1,5 @@
 
-rule Malware_Floxif_mpsvc_dll {
+rule Malware_Floxif_mpsvc_dll : HIGHVOL {
    meta:
       description = "Malware - Floxif"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"

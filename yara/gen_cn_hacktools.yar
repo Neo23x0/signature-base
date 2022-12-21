@@ -1146,11 +1146,12 @@ rule epathobj_exp32 {
 		author = "Florian Roth"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
+		modified = "2022-12-21"
 		hash = "ed86ff44bddcfdd630ade8ced39b4559316195ba"
 	strings:
 		$s0 = "Watchdog thread %d waiting on Mutex" fullword ascii
 		$s1 = "Exploit ok run command" fullword ascii
-		$s2 = "\\epathobj_exp\\Release\\epathobj_exp.pdb" fullword ascii
+		$s2 = "\\epathobj_exp\\Release\\epathobj_exp.pdb" ascii
 		$s3 = "Alllocated userspace PATHRECORD () %p" fullword ascii
 		$s4 = "Mutex object did not timeout, list not patched" fullword ascii
 	condition:
@@ -1955,10 +1956,11 @@ rule ms11080_withcmd {
 		author = "Florian Roth"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
+		modified = "2022-12-21"
 		hash = "745e5058acff27b09cfd6169caf6e45097881a49"
 	strings:
 		$s1 = "Usage : ms11-080.exe cmd.exe Command " fullword ascii
-		$s2 = "\\ms11080\\ms11080\\Debug\\ms11080.pdb" fullword ascii
+		$s2 = "\\ms11080\\ms11080\\Debug\\ms11080.pdb" ascii
 		$s3 = "[>] by:Mer4en7y@90sec.org" fullword ascii
 		$s4 = "[>] create porcess error" fullword ascii
 		$s5 = "[>] ms11-080 Exploit" fullword ascii
@@ -2213,10 +2215,11 @@ rule ipsearcher {
 		author = "Florian Roth"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
+		modified = "2022-12-21"
 		hash = "1e96e9c5c56fcbea94d26ce0b3f1548b224a4791"
 	strings:
 		$s0 = "http://www.wzpg.com" fullword ascii
-		$s1 = "ipsearcher\\ipsearcher\\Release\\ipsearcher.pdb" fullword ascii
+		$s1 = "ipsearcher\\ipsearcher\\Release\\ipsearcher.pdb" ascii
 		$s3 = "_GetAddress" fullword ascii
 		$s5 = "ipsearcher.dll" fullword ascii
 	condition:
@@ -2264,10 +2267,11 @@ rule GoodToolset_ms11080 {
 		author = "Florian Roth"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
+		modified = "2022-12-21"
 		hash = "f0854c49eddf807f3a7381d3b20f9af4a3024e9f"
 	strings:
 		$s1 = "[*] command add user 90sec 90sec" fullword ascii
-		$s2 = "\\ms11080\\Debug\\ms11080.pdb" fullword ascii
+		$s2 = "\\ms11080\\Debug\\ms11080.pdb" ascii
 		$s3 = "[>] by:Mer4en7y@90sec.org" fullword ascii
 		$s4 = "[*] Add to Administrators success" fullword ascii
 		$s5 = "[*] User has been successfully added" fullword ascii
@@ -2283,11 +2287,12 @@ rule epathobj_exp64 {
 		author = "Florian Roth"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
+		modified = "2022-12-21"
 		hash = "09195ba4e25ccce35c188657957c0f2c6a61d083"
 	strings:
 		$s1 = "Watchdog thread %d waiting on Mutex" fullword ascii
 		$s2 = "Exploit ok run command" fullword ascii
-		$s3 = "\\epathobj_exp\\x64\\Release\\epathobj_exp.pdb" fullword ascii
+		$s3 = "\\epathobj_exp\\x64\\Release\\epathobj_exp.pdb" ascii
 		$s4 = "Alllocated userspace PATHRECORD () %p" fullword ascii
 		$s5 = "Mutex object did not timeout, list not patched" fullword ascii
 		$s6 = "- inconsistent onexit begin-end variables" fullword wide  /* Goodware String - occured 96 times */

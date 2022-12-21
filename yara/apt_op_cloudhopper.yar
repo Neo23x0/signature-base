@@ -31,6 +31,7 @@ rule OpCloudHopper_Malware_2 {
       author = "Florian Roth"
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
+      modified = "2022-12-21"
       hash1 = "c1dbf481b2c3ba596b3542c7dc4e368f322d5c9950a78197a4ddbbaacbd07064"
    strings:
       $x1 = "sERvEr.Dll" fullword ascii
@@ -40,7 +41,7 @@ rule OpCloudHopper_Malware_2 {
 
       $s1 = "%%SystemRoot%%\\System32\\svchost.exe -k \"%s\"" fullword wide
       $s2 = "rundll32.exe \"%s\", UnInstall /update %s" fullword wide
-      $s3 = "\\Release\\Loader.pdb" fullword ascii
+      $s3 = "\\Release\\Loader.pdb" ascii
       $s4 = "%s\\%x.dll" fullword wide
       $s5 = "Mozilla/4.0 (compatible)" fullword wide
       $s6 = "\\syslog.dat" fullword wide

@@ -5,9 +5,10 @@ rule MAL_ME_RawDisk_Agent_Jan20_1 {
       author = "Florian Roth"
       reference = "Saudi National Cybersecurity Authority - Destructive Attack DUSTMAN"
       date = "2020-01-02"
+      modified = "2022-12-21"
       hash1 = "44100c73c6e2529c591a10cd3668691d92dc0241152ec82a72c6e63da299d3a2"
    strings:
-      $x1 = "\\drv\\agent.plain.pdb" fullword ascii
+      $x1 = "\\drv\\agent.plain.pdb" ascii
       $x2 = " ************** Down With Saudi Kingdom, Down With Bin Salman ************** " fullword ascii
 
       $s1 = ".?AVERDError@@" fullword ascii
@@ -27,9 +28,10 @@ rule MAL_ME_RawDisk_Agent_Jan20_2 {
       author = "Florian Roth"
       reference = "https://twitter.com/jfslowik/status/1212501454549741568?s=09"
       date = "2020-01-02"
+      modified = "2022-12-21"
       hash1 = "44100c73c6e2529c591a10cd3668691d92dc0241152ec82a72c6e63da299d3a2"
    strings:
-      $x1 = "\\Release\\Dustman.pdb" fullword ascii
+      $x1 = "\\Release\\Dustman.pdb" ascii
       $x2 = "/c agent.exe A" fullword ascii
 
       $s1 = "C:\\windows\\system32\\cmd.exe" fullword ascii

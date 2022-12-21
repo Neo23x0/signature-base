@@ -214,10 +214,10 @@ rule Empire_ReflectivePick_x64_orig {
       author = "Florian Roth"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
-      modified = "2021-09-06"
+      modified = "2022-12-21"
       hash1 = "a8c1b108a67e7fc09f81bd160c3bafb526caf3dbbaf008efb9a96f4151756ff2"
    strings:
-      $a1 = "\\PowerShellRunner.pdb" fullword ascii
+      $a1 = "\\PowerShellRunner.pdb" ascii
       $a2 = "PowerShellRunner.dll" fullword wide
       
       $s1 = "ReflectivePick" fullword ascii

@@ -43,10 +43,11 @@ rule ShellCrew_StreamEx_1 {
       author = "Florian Roth"
       reference = "https://blog.cylance.com/shell-crew-variants-continue-to-fly-under-big-avs-radar"
       date = "2017-02-10"
+      modified = "2022-12-21"
       hash1 = "81f411415aefa5ad7f7ed2365d9a18d0faf33738617afc19215b69c23f212c07"
    strings:
       $x1 = "cmd.exe /c  \"%s\"" fullword wide
-      $s3 = "uac\\bin\\install_test.pdb" fullword ascii
+      $s3 = "uac\\bin\\install_test.pdb" ascii
       $s5 = "uncompress error:%d %s" fullword ascii
       $s7 = "%s\\AdobeBak\\Proc.dat" fullword wide
       $s8 = "e:\\workspace\\boar" fullword ascii
