@@ -51,7 +51,7 @@ rule EXPL_LOG_ProxyNotShell_OWASSRF_PowerShell_Proxy_Log_Dec22_3 {
       date = "2022-12-22"
       score = 60
    strings:
-      $s1 = " POST /powershell - 444 " ascii wide
+      $s1 = " POST /powershell - 444 " ascii wide nocase
       $s2 = " - 200 0 0 2" ascii wide
       
       // based on filters found in CrowdStrikes script https://github.com/CrowdStrike/OWASSRF/blob/main/Rps_Http-IOC.ps1
