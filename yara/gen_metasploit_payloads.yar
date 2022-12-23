@@ -326,6 +326,7 @@ rule HKTL_Meterpreter_inMemory {
       author = "netbiosX, Florian Roth"
       reference = "https://www.reddit.com/r/purpleteamsec/comments/hjux11/meterpreter_memory_indicators_detection_tooling/"
       date = "2020-06-29"
+      modified = "2022-12-23"
       score = 85
    strings: 
       $xx1 = { 6D 65 74 73 72 76 2E 64 6C 6C 00 00 52 65 66 6C 
@@ -334,8 +335,8 @@ rule HKTL_Meterpreter_inMemory {
       $xs1 = "WS2_32.dll" ascii fullword
       $xs2 = "ReflectiveLoader" ascii fullword
 
-      $fp2 = "Sentinel Labs" ascii wide
-      $fp1 = "fortiESNAC" ascii wide
+      $fp1 = "Sentinel Labs" ascii wide
+      $fp2 = "fortiESNAC" ascii wide
    condition: 
       1 of ($xx*) or 2 of ($x*) 
       and not 1 of ($fp*)
