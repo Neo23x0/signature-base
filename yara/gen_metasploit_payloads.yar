@@ -335,6 +335,7 @@ rule HKTL_Meterpreter_inMemory {
       $xs2 = "ReflectiveLoader" ascii fullword
 
       $fp2 = "Sentinel Labs" ascii wide
+      $fp1 = "fortiESNAC" ascii wide
    condition: 
       1 of ($xx*) or 2 of ($x*) 
       and not 1 of ($fp*)
