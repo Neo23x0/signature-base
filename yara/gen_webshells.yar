@@ -6075,4 +6075,3 @@ rule webshell_in_image
 		)
 		) ) )
 }
-
