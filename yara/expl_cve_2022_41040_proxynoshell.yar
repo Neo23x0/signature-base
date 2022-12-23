@@ -1,9 +1,10 @@
 
-rule EXPL_Exchange_ProxyNoShell_Patterns_CVE_2022_41040_Oct22_1 : SCRIPT {
+rule EXPL_Exchange_ProxyNotShell_Patterns_CVE_2022_41040_Oct22_1 : SCRIPT {
    meta:
-      description = "Detects successful ProxyNoShell exploitation attempts in log files (attempt to identify the attack before the official release of detailed information)"
+      description = "Detects successful ProxyNotShell exploitation attempts in log files (attempt to identify the attack before the official release of detailed information)"
       author = "Florian Roth"
       score = 75
+      old_rule_name = "EXPL_Exchange_ProxyNoShell_Patterns_CVE_2022_41040_Oct22_1:SCRIPT"
       reference = "https://github.com/kljunowsky/CVE-2022-41040-POC"
       date = "2022-10-11"
    strings:
