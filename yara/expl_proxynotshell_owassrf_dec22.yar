@@ -9,7 +9,7 @@ rule EXPL_LOG_ProxyNotShell_OWASSRF_PowerShell_Proxy_Log_Dec22_1 {
    strings:
       $s1 = "/owa/mastermailbox%40outlook.com/powershell" ascii wide
 
-      $sa1 = " 200 " ascii wide<
+      $sa1 = " 200 " ascii wide
       $sa2 = " POST " ascii wide
 
       // based on filters found in CrowdStrikes script https://github.com/CrowdStrike/OWASSRF/blob/main/Rps_Http-IOC.ps1
