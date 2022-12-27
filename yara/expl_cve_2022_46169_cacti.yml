@@ -14,7 +14,16 @@ rule EXPL_Cacti_CommandInjection_CVE_2022_46169_Dec22_1 : SCRIPT {
 
       $sa1 = " 200 " // Response code
 
+      // Suspicious commands
+      $sb1 = "whoami" ascii
+      $sb2 = "/bin/bash" ascii
+      $sb3 = "/bin/sh" ascii
+      $sb4 = "wget" ascii
+      $sb5 = "powershell" ascii
+      $sb6 = "cmd /c " ascii
+
    condition:
       all of ($x*) 
       and 1 of ($sa*)
+      and 1 of ($sb*)
 }
