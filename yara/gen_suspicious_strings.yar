@@ -365,7 +365,7 @@ rule SUSP_PDB_Path_Keywords {
 
 rule SUSP_Disable_ETW_Jun20_1 {
    meta:
-      description = "Detects method to disable ETW in ENV vars before exeucting a program"
+      description = "Detects method to disable ETW in ENV vars before executing a program"
       author = "Florian Roth"
       reference = "https://gist.github.com/Cyb3rWard0g/a4a115fd3ab518a0e593525a379adee3"
       date = "2020-06-06"

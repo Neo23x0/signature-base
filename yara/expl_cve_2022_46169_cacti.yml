@@ -1,0 +1,20 @@
+
+rule EXPL_Exchange_ProxyNotShell_Patterns_CVE_2022_41040_Oct22_1 : SCRIPT {
+   meta:
+      description = "Detects potential exploitation attempts that target the Cacti Command Injection CVE-2022-46169"
+      author = "Nasreddine Bencherchali"
+      score = 75
+      reference = "https://github.com/Cacti/cacti/security/advisories/GHSA-6p93-p743-35gf"
+      date = "2022-12-27"
+   strings:
+      $x1 = "/remote_agent.php" ascii
+      $x2 = "action=polldata" ascii
+      $x3 = "poller_id=" ascii
+      $x4 = "x-forwarded-for" ascii nocase
+
+      $sa1 = " 200 " // Response code
+
+   condition:
+      all of ($x*) 
+      and 1 of ($sa*)
+}
