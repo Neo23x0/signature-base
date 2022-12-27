@@ -1,5 +1,5 @@
 
-rule EXPL_Exchange_ProxyNotShell_Patterns_CVE_2022_41040_Oct22_1 : SCRIPT {
+rule EXPL_Cacti_CommandInjection_CVE_2022_46169_Dec22_1 : SCRIPT {
    meta:
       description = "Detects potential exploitation attempts that target the Cacti Command Injection CVE-2022-46169"
       author = "Nasreddine Bencherchali"
