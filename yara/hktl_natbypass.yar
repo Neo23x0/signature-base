@@ -15,7 +15,7 @@ rule HKTL_NATBypass_Dec22_1 : T1090 {
       $s2 = "start to transmit address:" ascii
       $s3 = "^(\\d{1,2}|1\\d\\d|2[0-4]\\d|25[0-5])\\.(\\d{1,2}|1\\d\\d|2[0-4]\\d|25[0-5])\\.(\\d{1,2}|1\\d\\d|2[0-4]\\d|25[0-5])\\.(\\d{1,2}|1\\d\\d|2[0-4]\\d|25[0-5])"
    condition:
-      and filesize < 8000KB 
+      filesize < 8000KB 
       and (
          1 of ($x*)
          or 2 of them
