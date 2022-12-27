@@ -10697,3 +10697,16 @@ DB81C8719DDAAE40C8D9B9CA103BBE77BE4FCE6C;Mirrorface IOCs - K7SysMon.Exe.db N/A E
 A8D2BE15085061B753FDEBBDB08D301A034CE1D5;Mirrorface IOCs - JsSchHlp.exe Win32/Agent.ACLP JsSchHlp.exe with appended encrypted second-stage LODEINFO in the security directory https://www.welivesecurity.com/2022/12/14/unmasking-mirrorface-operation-liberalface-targeting-japanese-political-entities/
 0AB7BB3FF583E50FBF28B288E71D3BB57F9D1395;Mirrorface IOCs - JSESPR.dll Win32/Agent.ACLP Second-stage LODEINFO loader https://www.welivesecurity.com/2022/12/14/unmasking-mirrorface-operation-liberalface-targeting-japanese-political-entities/
 E888A552B00D810B5521002304D4F11BC249D8ED;Mirrorface IOCs - 31558_n.dll Win32/Agent.ACLP MirrorStealer credential stealer https://www.welivesecurity.com/2022/12/14/unmasking-mirrorface-operation-liberalface-targeting-japanese-political-entities/
+
+9111c8b59e29cdf762d1c2330da8c0217967f76e;NATBypass hacktool https://github.com/cw1997/NATBypass/releases
+a6dca7c1b90bf1c2d5981b2e899ac74d371882ee;NATBypass hacktool https://github.com/cw1997/NATBypass/releases
+
+4550635143c9997d5499d1d4a4c860126ee9299311fed0f85df9bb304dca81ff;NATBypass (na.exe) https://medium.com/@DCSO_CyTec/apt41-the-spy-who-failed-to-encrypt-me-24fc0f49cad1
+e518b80316bf1c349943040e4d26401958846c2596e58f1c98be835ecf29b381;NATBypass Cabinet Archive (na) https://medium.com/@DCSO_CyTec/apt41-the-spy-who-failed-to-encrypt-me-24fc0f49cad1
+7b4f69b00d72fac3ed2c0b25d424f013f96537c563906b782742da15c72e9147;Bitlocker encryption batch-script (test.bat) https://medium.com/@DCSO_CyTec/apt41-the-spy-who-failed-to-encrypt-me-24fc0f49cad1
+180efca9b5560e02f957f49f0b272339561483232adf0714021d6b32b737e707;Bitlocker encryption prep batch-script (copys.bat https://medium.com/@DCSO_CyTec/apt41-the-spy-who-failed-to-encrypt-me-24fc0f49cad1
+011e9aaa6251db149d1693c02a8c6407012520fb9b2f8f47e64b897017c0e673;Distribute Jetico BestCrypt batch-script (1.bat) https://medium.com/@DCSO_CyTec/apt41-the-spy-who-failed-to-encrypt-me-24fc0f49cad1
+28be4681480932361d75cfc360baf2c8c6d13b28d019e3dd053184894b994ef3;Execute bitlocker encryption batch-script (end.bat) https://medium.com/@DCSO_CyTec/apt41-the-spy-who-failed-to-encrypt-me-24fc0f49cad1
+806761850d19f0cc9f41618e74db471e85c494e952f900f827c1779f2d1c4d31;MiPing (p.exe) https://medium.com/@DCSO_CyTec/apt41-the-spy-who-failed-to-encrypt-me-24fc0f49cad1
+bc20f4c28cbdf38eba69eb144a89c20c162481955d4cff8bdf02ba9644865523;Discovery batch-script (cmd-webshell.txt) https://medium.com/@DCSO_CyTec/apt41-the-spy-who-failed-to-encrypt-me-24fc0f49cad1
+367b8052db12cb9ddce01275fc213480831dc5fe9aa3da64fecc2360267905a0;China Chopper Web Shell (supp0rt.aspx) https://medium.com/@DCSO_CyTec/apt41-the-spy-who-failed-to-encrypt-me-24fc0f49cad1
