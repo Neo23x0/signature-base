@@ -4208,6 +4208,23 @@ C:\\Windows\\Sullivan.1;75
 \\SysmonEOP_v2\.exe;90
 Global\\GLOBALROOT\\RPC Control\\CLIP-876BEE15B64B610D2505A44596ED92FBA9624DB923F9D608698BD8C8E64E4F1A;90
 
+# AstroBWT Miner IOCs https://github.com/dero-am/astrobwt-miner/
+\\astrobwt-miner;70
+\\astrominer;70
 
+# NanoDump IOCs https://github.com/helpsystems/nanodump
+C:\\Windows\\Temp\\ssp\.dll;65
+C:\\ssp\.dll;75
+C:\\Windows\\Temp\\report\.docx;75
+_lsass\.dmp;70
+\\nanodump\.exe;85
+\\nanodump\.x64\.exe;85
+\\nanodump_ssp\.x64\.dll;80
+\\load_ssp\.x64\.exe;80
+\\nanodump_ppl\.x64\.exe;80
+\\cantaor\.x64\.exe;80
+\\doloraso\.x64\.exe;80
+\\nanodump\.x64;80
+\\load_ssp\.x86\.exe;80
 
 # End
