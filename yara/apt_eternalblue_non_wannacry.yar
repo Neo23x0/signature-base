@@ -9,7 +9,7 @@
 
 /* Rule Set ----------------------------------------------------------------- */
 
-rule Backdoor_Redosdru_Jun17 {
+rule Backdoor_Redosdru_Jun17 : HIGHVOL {
    meta:
       description = "Detects malware Redosdru - file systemHome.exe"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"

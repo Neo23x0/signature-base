@@ -3978,7 +3978,7 @@ rule MAL_Unknown_PWDumper_Apr18_3 {
       uint16(0) == 0x5a4d and filesize < 3000KB and all of them
 }
 
-rule ProcessInjector_Gen {
+rule ProcessInjector_Gen : HIGHVOL {
    meta:
       description = "Detects a process injection utility that can be used ofr good and bad purposes"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"

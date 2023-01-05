@@ -65,7 +65,7 @@ rule Base64_encoded_Executable {
       and not filepath contains "Temporary Internet Files"
 }
 
-rule Gen_Base64_EXE {
+rule Gen_Base64_EXE: HIGHVOL {
    meta:
       description = "Detects Base64 encoded Executable in Executable"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
