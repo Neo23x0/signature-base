@@ -202,25 +202,26 @@ rule subTee_nativecmd {
 		uint16(0) == 0x5a4d and ( 2 of ($x*) or 6 of ($s*) )
 }
 
+
 rule WildNeutron_Sample_9 {
-	meta:
-		description = "Wild Neutron APT Sample Rule"
-		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
-		reference = "https://securelist.com/blog/research/71275/wild-neutron-economic-espionage-threat-actor-returns-with-new-tricks/"
-		date = "2015-07-10"
-		score = 60
-		hash = "781eb1e17349009fbae46aea5c59d8e5b68ae0b42335cb035742f6b0f4e4087e"
-	strings:
-		$s0 = "http://get.adobe.com/flashplayer/" fullword wide /* PEStudio Blacklist: strings */ /* score: '30.00' */
-		$s4 = " Player Installer/Uninstaller" fullword wide /* PEStudio Blacklist: strings */ /* score: '11.42' */
-		$s5 = "Adobe Flash Plugin Updater" fullword wide /* PEStudio Blacklist: strings */ /* score: '11.00' */
-		$s6 = "uSOFTWARE\\Adobe" fullword wide /* PEStudio Blacklist: strings */ /* score: '10.42' */
-		$s11 = "2008R2" fullword wide /* PEStudio Blacklist: os */ /* score: '8.00' */
-		$s12 = "%02d.%04d.%s" fullword wide /* score: '7.02' */
-		$s13 = "%d -> %d" fullword wide /* score: '7.00' */
-	condition:
-		uint16(0) == 0x5a4d and filesize < 500KB and all of them
+   meta:
+      description = "Wild Neutron APT Sample Rule"
+      author = "Florian Roth"
+      reference = "https://securelist.com/blog/research/71275/wild-neutron-economic-espionage-threat-actor-returns-with-new-tricks/"
+      date = "2015-07-10"
+      modified = "2023-01-06"
+      score = 60
+      hash = "781eb1e17349009fbae46aea5c59d8e5b68ae0b42335cb035742f6b0f4e4087e"
+   strings:
+      $s0 = "http://get.adobe.com/flashplayer/" wide  /* score: '30.00' */
+      $s4 = " Player Installer/Uninstaller" fullword wide  /* score: '11.42' */
+      $s5 = "Adobe Flash Plugin Updater" fullword wide  /* score: '11.00' */
+      $s6 = "uSOFTWARE\\Adobe" fullword wide  /* score: '10.42' */
+      $s11 = "2008R2" fullword wide /* PEStudio Blacklist: os */ /* score: '8.00' */
+      $s12 = "%02d.%04d.%s" fullword wide /* score: '7.02' */
+      $s13 = "%d -> %d" fullword wide /* score: '7.00' */
+   condition:
+      uint16(0) == 0x5a4d and filesize < 1477KB and all of them
 }
 
 rule WildNeutron_Sample_10 {
@@ -268,37 +269,32 @@ rule WildNeutron_Sample_10 {
 
 /* Super Rules ------------------------------------------------------------- */
 
-rule WildNeutron_javacpl {
-	meta:
-		description = "Wild Neutron APT Sample Rule"
-		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
-		reference = "https://securelist.com/blog/research/71275/wild-neutron-economic-espionage-threat-actor-returns-with-new-tricks/"
-		date = "2015-07-10"
-		score = 60
-		super_rule = 1
-		hash1 = "683f5b476f8ffe87ec22b8bab57f74da4a13ecc3a5c2cbf951999953c2064fc9"
-		hash2 = "758e6b519f6c0931ff93542b767524fc1eab589feb5cfc3854c77842f9785c92"
-		hash3 = "8ca7ed720babb32a6f381769ea00e16082a563704f8b672cb21cf11843f4da7a"
-	strings:
-		$x1 = "javacpl.exe" fullword wide /* score: '3.00' */ /* Goodware String - occured 2 times */
 
-		$s0 = "RunFile: couldn't find ShellExecuteExA/W in SHELL32.DLL!" fullword ascii /* PEStudio Blacklist: strings */ /* score: '35.00' */
-		$s1 = "Error executing CreateProcess()!!" fullword wide /* PEStudio Blacklist: strings */ /* score: '31.00' */
-		$s2 = "http://www.java.com/en/download/installed.jsp?detect=jre" fullword ascii /* PEStudio Blacklist: strings */ /* score: '28.00' */
-		$s3 = "RunFile: couldn't load SHELL32.DLL!" fullword ascii /* PEStudio Blacklist: strings */ /* score: '27.00' */
-		$s4 = "Process is not running any more" fullword wide /* PEStudio Blacklist: strings */ /* score: '22.00' */
-		$s6 = "Windows NT Version %lu.%lu" fullword wide /* PEStudio Blacklist: os */ /* score: '19.00' */
-		$s7 = "Usage: destination [reference]" fullword wide /* PEStudio Blacklist: strings */ /* score: '16.00' */
-		$s8 = "Invalid input handle!!!" fullword ascii /* PEStudio Blacklist: strings */ /* score: '15.00' */
-		$s9 = ".com;.exe;.bat;.cmd" fullword wide /* score: '15.00' */
-		$s10 = ") -%s-> %s (" fullword ascii /* score: '14.00' */
-		$s11 = "cmdextversion" fullword wide /* score: '14.00' */
-		$s12 = "Invalid pid (%s)" fullword wide /* PEStudio Blacklist: strings */ /* score: '13.00' */
-		$s13 = "\"%s\" /K %s" fullword wide /* score: '11.02' */
-		$s14 = "Error setting %s (%s)" fullword wide /* score: '11.00' */
-		$s16 = "cmdcmdline" fullword wide /* score: '11.00' */
-		$s39 = "2008R2" fullword ascii /* PEStudio Blacklist: os */ /* score: '8.00' */
-	condition:
-		uint16(0) == 0x5a4d and filesize < 1677KB and all of them
+rule APT_MAL_WildNeutron_javacpl {
+   meta:
+      description = "Wild Neutron APT Sample Rule"
+      author = "Florian Roth"
+      reference = "https://securelist.com/blog/research/71275/wild-neutron-economic-espionage-threat-actor-returns-with-new-tricks/"
+      date = "2015-07-10"
+      modified = "2023-01-06"
+      old_rule_name = "WildNeutron_javacpl"
+      score = 60
+      hash1 = "683f5b476f8ffe87ec22b8bab57f74da4a13ecc3a5c2cbf951999953c2064fc9"
+      hash2 = "758e6b519f6c0931ff93542b767524fc1eab589feb5cfc3854c77842f9785c92"
+      hash3 = "8ca7ed720babb32a6f381769ea00e16082a563704f8b672cb21cf11843f4da7a"
+   strings:
+      $s1 = "RunFile: couldn't find ShellExecuteExA/W in SHELL32.DLL!" ascii fullword
+      $s2 = "cmdcmdline" wide fullword
+      $s3 = "\"%s\" /K %s" wide fullword
+      $s4 = "Process is not running any more" wide fullword
+      $s5 = "dpnxfsatz" wide fullword
+
+      $op1 = { ff d6 50 ff 15 ?? ?? 43 00 8b f8 85 ff 74 34 83 64 24 0c 00 e8 ?? ?? 02 00 }
+      $op2 = { b8 02 00 00 00 01 45 80 01 45 88 6a 00 47 52 89 7d 8c 03 d8 }
+      $op3 = { 8b c7 f7 f6 46 89 b5 c8 fd ff ff 0f b7 c0 8b c8 0f af ce 3b cf }
+   condition:
+      uint16(0) == 0x5a4d and filesize < 5MB and (
+         all of ($s*) or 
+         all of ($op*)
+      )
 }

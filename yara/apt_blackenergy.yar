@@ -116,6 +116,7 @@ rule BlackEnergy_KillDisk_2 {
 		author = "Florian Roth"
 		reference = "http://feedproxy.google.com/~r/eset/blog/~3/BXJbnGSvEFc/"
 		date = "2016-01-03"
+		modified = "2023-01-06"
 		score = 80
 		super_rule = 1
 		hash1 = "11b7b8a7965b52ebb213b023b6772dd2c76c66893fc96a18a9a33c8cf125af80"
@@ -124,7 +125,7 @@ rule BlackEnergy_KillDisk_2 {
 	strings:
 		$s0 = "%c:\\~tmp%08X.tmp" fullword ascii
 		$s1 = "%s%08X.tmp" fullword ascii
-		$s2 = ".exe.sys.drv.doc.docx.xls.xlsx.mdb.ppt.pptx.xml.jpg.jpeg.ini.inf.ttf" fullword wide
+		$s2 = ".exe.sys.drv.doc.docx.xls.xlsx.mdb.ppt.pptx.xml.jpg.jpeg.ini.inf.ttf" wide
 		$s3 = "%ls_%ls_%ls_%d.~tmp" fullword wide
 	condition:
 		uint16(0) == 0x5a4d and filesize < 500KB and 3 of them

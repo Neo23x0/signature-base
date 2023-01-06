@@ -26,12 +26,12 @@ rule OpCloudHopper_Malware_1 {
 
 rule OpCloudHopper_Malware_2 {
    meta:
-      description = "Detects malware from Operation Cloud Hopper"
-      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+      description = "Detects Operation CloudHopper malware samples"
       author = "Florian Roth"
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
-      modified = "2022-12-21"
+      modified = "2023-01-06"
+      score = 90
       hash1 = "c1dbf481b2c3ba596b3542c7dc4e368f322d5c9950a78197a4ddbbaacbd07064"
    strings:
       $x1 = "sERvEr.Dll" fullword ascii
@@ -44,7 +44,7 @@ rule OpCloudHopper_Malware_2 {
       $s3 = "\\Release\\Loader.pdb" ascii
       $s4 = "%s\\%x.dll" fullword wide
       $s5 = "Mozilla/4.0 (compatible)" fullword wide
-      $s6 = "\\syslog.dat" fullword wide
+      $s6 = "\\syslog.dat" wide
       $s7 = "NSOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run" fullword wide
 
       $op1 = { 8d 34 17 8d 49 00 8a 14 0e 3a 14 29 75 05 41 3b }
@@ -96,11 +96,12 @@ rule OpCloudHopper_Malware_4 {
       author = "Florian Roth"
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
+      modified = "2023-01-06"
       hash1 = "ae6b45a92384f6e43672e617c53a44225e2944d66c1ffb074694526386074145"
    strings:
       $s6 = "operator \"\" " fullword ascii
       $s9 = "InvokeMainViaCRT" fullword ascii
-      $s10 = ".?AVAES@@" fullword ascii
+      $s10 = ".?AVAES@@" ascii
    condition:
       ( uint16(0) == 0x5a4d and filesize < 800KB and all of them )
 }

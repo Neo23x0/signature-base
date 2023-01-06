@@ -321,11 +321,12 @@ rule MAL_BurningUmbrella_Sample_20 {
       author = "Florian Roth"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
+      modified = "2023-01-06"
       hash1 = "5c12379cd7ab3cb03dac354d0e850769873d45bb486c266a893c0daa452aa03c"
       hash2 = "172cd90fd9e31ba70e47f0cc76c07d53e512da4cbfd197772c179fe604b75369"
       hash3 = "1ce88e98c8b37ea68466657485f2c01010a4d4a88587ba0ae814f37680a2e7a8"
    strings:
-      $s1 = "Wordpad.Document.1\\shell\\open\\command\\" fullword wide
+      $s1 = "Wordpad.Document.1\\shell\\open\\command\\" wide
       $s2 = "%s\\shell\\Open\\command" fullword wide
       $s3 = "expanding computer" fullword ascii
    condition:
@@ -364,7 +365,7 @@ rule MAL_BurningUmbrella_Sample_22 {
       date = "2018-05-04"
       hash1 = "fa116cf9410f1613003ca423ad6ca92657a61b8e9eda1b05caf4f30ca650aee5"
    strings:
-      $s1 = "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\" fullword ascii
+      $s1 = "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\" ascii
       $s3 = "Content-Disposition: form-data; name=\"txt\"; filename=\"" fullword ascii
       $s4 = "Fail To Enum Service" fullword ascii
       $s5 = "Host Power ON Time" fullword ascii

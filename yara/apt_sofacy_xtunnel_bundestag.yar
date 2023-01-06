@@ -70,6 +70,7 @@ rule Sofacy_Mal3 {
       author = "Florian Roth"
         reference = "http://dokumente.linksfraktion.de/inhalt/report-orig.pdf"
         date = "2015-06-19"
+        modified = "2023-01-06"
         hash = "5f6b2a0d1d966fc4f1ed292b46240767f4acb06c13512b0061b434ae2a692fa1"
         score = 70
     strings:
@@ -77,9 +78,9 @@ rule Sofacy_Mal3 {
         $s2 = ".?AVAgentModuleRemoteKeyLogger@@" fullword ascii
         $s3 = "<font size=4 color=red>process isn't exist</font>" fullword ascii
         $s4 = "<font size=4 color=red>process is exist</font>" fullword ascii
-        $s5 = ".winnt.check-fix.com" fullword ascii
-        $s6 = ".update.adobeincorp.com" fullword ascii
-        $s7 = ".microsoft.checkwinframe.com" fullword ascii
+        $s5 = ".winnt.check-fix.com" ascii
+        $s6 = ".update.adobeincorp.com" ascii
+        $s7 = ".microsoft.checkwinframe.com" ascii
         $s8 = "adobeincorp.com" fullword wide
         $s9 = "# EXC: HttpSender - Cannot create Get Channel!" fullword ascii
 

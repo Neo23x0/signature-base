@@ -2626,8 +2626,8 @@ rule webshell_asp_writer
 		//$asp_write_way_one1 = /\.open\b/ nocase wide ascii
 		$asp_write_way_one2 = "SaveToFile" fullword nocase wide ascii
 		$asp_write_way_one3 = "CREAtEtExtFiLE" fullword nocase wide ascii
-		$asp_cr_write1 = "CreateObject(" fullword nocase wide ascii
-		$asp_cr_write2 = "CreateObject (" fullword nocase wide ascii
+		$asp_cr_write1 = "CreateObject(" nocase wide ascii
+		$asp_cr_write2 = "CreateObject (" nocase wide ascii
 		$asp_streamwriter1 = "streamwriter" fullword nocase wide ascii
 		$asp_streamwriter2 = "filestream" fullword nocase wide ascii
 	
@@ -2689,6 +2689,7 @@ rule webshell_asp_obfuscated
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/12"
+		modified = "2023-01-06"
 
 	strings:
         $asp_obf1 = "/*-/*-*/" wide ascii
@@ -2796,8 +2797,8 @@ rule webshell_asp_obfuscated
 		//$asp_write_way_one1 = /\.open\b/ nocase wide ascii
 		$asp_write_way_one2 = "SaveToFile" fullword nocase wide ascii
 		$asp_write_way_one3 = "CREAtEtExtFiLE" fullword nocase wide ascii
-		$asp_cr_write1 = "CreateObject(" fullword nocase wide ascii
-		$asp_cr_write2 = "CreateObject (" fullword nocase wide ascii
+		$asp_cr_write1 = "CreateObject(" nocase wide ascii
+		$asp_cr_write2 = "CreateObject (" nocase wide ascii
 		$asp_streamwriter1 = "streamwriter" fullword nocase wide ascii
 		$asp_streamwriter2 = "filestream" fullword nocase wide ascii
 	
@@ -3055,6 +3056,7 @@ rule webshell_asp_nano
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/13"
+		modified = "2023-01-06"
 		hash = "3b7910a499c603715b083ddb6f881c1a0a3a924d"
 		hash = "990e3f129b8ba409a819705276f8fa845b95dad0"
 		hash = "22345e956bce23304f5e8e356c423cee60b0912c"
@@ -3174,8 +3176,8 @@ rule webshell_asp_nano
 		//$asp_write_way_one1 = /\.open\b/ nocase wide ascii
 		$asp_write_way_one2 = "SaveToFile" fullword nocase wide ascii
 		$asp_write_way_one3 = "CREAtEtExtFiLE" fullword nocase wide ascii
-		$asp_cr_write1 = "CreateObject(" fullword nocase wide ascii
-		$asp_cr_write2 = "CreateObject (" fullword nocase wide ascii
+		$asp_cr_write1 = "CreateObject(" nocase wide ascii
+		$asp_cr_write2 = "CreateObject (" nocase wide ascii
 		$asp_streamwriter1 = "streamwriter" fullword nocase wide ascii
 		$asp_streamwriter2 = "filestream" fullword nocase wide ascii
 	
@@ -3719,6 +3721,7 @@ rule webshell_asp_generic_tiny
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021/01/07"
+		modified = "2023-01-06"
 		hash = "990e3f129b8ba409a819705276f8fa845b95dad0"
 		hash = "52ce724580e533da983856c4ebe634336f5fd13a"
 
@@ -3844,8 +3847,8 @@ rule webshell_asp_generic_tiny
 		//$asp_write_way_one1 = /\.open\b/ nocase wide ascii
 		$asp_write_way_one2 = "SaveToFile" fullword nocase wide ascii
 		$asp_write_way_one3 = "CREAtEtExtFiLE" fullword nocase wide ascii
-		$asp_cr_write1 = "CreateObject(" fullword nocase wide ascii
-		$asp_cr_write2 = "CreateObject (" fullword nocase wide ascii
+		$asp_cr_write1 = "CreateObject(" nocase wide ascii
+		$asp_cr_write2 = "CreateObject (" nocase wide ascii
 		$asp_streamwriter1 = "streamwriter" fullword nocase wide ascii
 		$asp_streamwriter2 = "filestream" fullword nocase wide ascii
 	
@@ -3922,7 +3925,7 @@ rule WEBSHELL_asp_generic
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Arnim Rupp"
 		date = "2021-03-07"
-    modified = "2022-09-17"
+    modified = "2023-01-06"
 		score = 60
 		hash = "a8c63c418609c1c291b3e731ca85ded4b3e0fba83f3489c21a3199173b176a75"
     type = "file"
@@ -4116,8 +4119,8 @@ rule WEBSHELL_asp_generic
 		//$asp_write_way_one1 = /\.open\b/ nocase wide ascii
 		$asp_write_way_one2 = "SaveToFile" fullword nocase wide ascii
 		$asp_write_way_one3 = "CREAtEtExtFiLE" fullword nocase wide ascii
-		$asp_cr_write1 = "CreateObject(" fullword nocase wide ascii
-		$asp_cr_write2 = "CreateObject (" fullword nocase wide ascii
+		$asp_cr_write1 = "CreateObject(" nocase wide ascii
+		$asp_cr_write2 = "CreateObject (" nocase wide ascii
 		$asp_streamwriter1 = "streamwriter" fullword nocase wide ascii
 		$asp_streamwriter2 = "filestream" fullword nocase wide ascii
 
@@ -5833,6 +5836,7 @@ rule webshell_in_image
 		author = "Arnim Rupp"
 		hash = "d4fde4e691db3e70a6320e78657480e563a9f87935af873a99db72d6a9a83c78"
 		date = "2021/02/27"
+		modified = "2023-01-06"
 		score = 55
 
 	strings:
@@ -5996,8 +6000,8 @@ rule webshell_in_image
 		//$asp_write_way_one1 = /\.open\b/ nocase wide ascii
 		$asp_write_way_one2 = "SaveToFile" fullword nocase wide ascii
 		$asp_write_way_one3 = "CREAtEtExtFiLE" fullword nocase wide ascii
-		$asp_cr_write1 = "CreateObject(" fullword nocase wide ascii
-		$asp_cr_write2 = "CreateObject (" fullword nocase wide ascii
+		$asp_cr_write1 = "CreateObject(" nocase wide ascii
+		$asp_cr_write2 = "CreateObject (" nocase wide ascii
 		$asp_streamwriter1 = "streamwriter" fullword nocase wide ascii
 		$asp_streamwriter2 = "filestream" fullword nocase wide ascii
 	

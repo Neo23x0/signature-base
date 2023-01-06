@@ -15,9 +15,10 @@ rule SnakeTurla_Malware_May17_1 {
       author = "Florian Roth"
       reference = "https://goo.gl/QaOh4V"
       date = "2017-05-04"
+      modified = "2023-01-06"
       hash1 = "5b7792a16c6b7978fca389882c6aeeb2c792352076bf6a064e7b8b90eace8060"
    strings:
-      $s1 = "/Users/vlad/Desktop/install/install/" fullword ascii
+      $s1 = "/Users/vlad/Desktop/install/install/" ascii
    condition:
       ( uint16(0) == 0xfacf and filesize < 200KB and all of them )
 }

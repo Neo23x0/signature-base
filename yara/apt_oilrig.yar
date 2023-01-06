@@ -297,6 +297,7 @@ rule APT_APT34_PS_Malware_Apr19_3 {
       author = "Florian Roth"
       reference = "https://twitter.com/0xffff0800/status/1118406371165126656"
       date = "2019-04-17"
+      modified = "2023-01-06"
       hash1 = "27e03b98ae0f6f2650f378e9292384f1350f95ee4f3ac009e0113a8d9e2e14ed"
    strings:
       $x1 = "Powershell.exe -exec bypass -file ${global:$address1}"
@@ -304,8 +305,8 @@ rule APT_APT34_PS_Malware_Apr19_3 {
       $x3 = "\"\\UpdateTasks\\UpdateTaskHosts\""
       $x4 = "wscript /b \\`\"${global:$address1" ascii
       $x5 = "::FromBase64String([string]${global:$http_ag}))" ascii
-      $x6 = ".run command1, 0, false\" | Out-File " fullword ascii
-      $x7 = "\\UpdateTask.vbs" fullword ascii
+      $x6 = ".run command1, 0, false\" | Out-File " ascii
+      $x7 = "\\UpdateTask.vbs" ascii
       $x8 = "hUpdater.ps1" fullword ascii
    condition:
       1 of them

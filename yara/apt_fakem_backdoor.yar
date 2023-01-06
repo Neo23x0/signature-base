@@ -12,7 +12,7 @@ rule FakeM_Generic {
 		author = "Florian Roth"
 		reference = "http://researchcenter.paloaltonetworks.com/2016/01/scarlet-mimic-years-long-espionage-targets-minority-activists/"
 		date = "2016-01-25"
-		modified = "2022-12-21"
+		modified = "2023-01-06"
 		score = 85
 		hash1 = "631fc66e57acd52284aba2608e6f31ba19e2807367e33d8704f572f6af6bd9c3"
 		hash2 = "3d9bd26f5bd5401efa17690357f40054a3d7b438ce8c91367dbf469f0d9bd520"
@@ -26,7 +26,7 @@ rule FakeM_Generic {
 		hash10 = "53cecc0d0f6924eacd23c49d0d95a6381834360fbbe2356778feb8dd396d723e"
 		hash11 = "523ad50b498bfb5ab688d9b1958c8058f905b634befc65e96f9f947e40893e5b"
 	strings:
-		$a1 = "\\system32\\kernel32.dll" fullword ascii
+		$a1 = "\\system32\\kernel32.dll" ascii
 		$a2 = "\\boot.lnk" fullword ascii
 		$a3 = "%USERPROFILE%" fullword ascii /* Goodware String - occured 16 times */
 

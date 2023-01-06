@@ -41,6 +41,7 @@ rule GoldDragon_Aux_File {
       filesize < 500KB and 1 of them
 }
 
+
 rule GoldDragon_Ghost419_RAT {
    meta:
       description = "Detects Ghost419 RAT from Gold Dragon report"
@@ -60,7 +61,7 @@ rule GoldDragon_Ghost419_RAT {
    strings:
       $x2 = "WebKitFormBoundarywhpFxMBe19cSjFnG" ascii
       $x3 = "\\Microsoft\\HNC\\" ascii
-      $x4 = "\\anternet abplorer" fullword ascii
+      $x4 = "\\anternet abplorer" ascii
       $x5 = "%s\\abxplore.exe" fullword ascii
       $x6 = "GHOST419" fullword ascii
       $x7 = "I,m Online. %04d - %02d - %02d - %02d - %02d" fullword ascii
