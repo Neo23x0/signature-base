@@ -10710,3 +10710,10 @@ e518b80316bf1c349943040e4d26401958846c2596e58f1c98be835ecf29b381;NATBypass Cabin
 806761850d19f0cc9f41618e74db471e85c494e952f900f827c1779f2d1c4d31;MiPing (p.exe) https://medium.com/@DCSO_CyTec/apt41-the-spy-who-failed-to-encrypt-me-24fc0f49cad1
 bc20f4c28cbdf38eba69eb144a89c20c162481955d4cff8bdf02ba9644865523;Discovery batch-script (cmd-webshell.txt) https://medium.com/@DCSO_CyTec/apt41-the-spy-who-failed-to-encrypt-me-24fc0f49cad1
 367b8052db12cb9ddce01275fc213480831dc5fe9aa3da64fecc2360267905a0;China Chopper Web Shell (supp0rt.aspx) https://medium.com/@DCSO_CyTec/apt41-the-spy-who-failed-to-encrypt-me-24fc0f49cad1
+
+bc76bd7b332aa8f6aedbb8e11b7ba9b6;Turla Report - ANDROMEDA: TrustedInstaller.exe - https://www.mandiant.com/resources/blog/turla-galaxy-opportunity
+b3657bcfe8240bc0985093a0f8682703;Turla Report - ANDROMEDA: mskmde.com - https://www.mandiant.com/resources/blog/turla-galaxy-opportunity
+2eb6df8795f513c324746646b594c019;Turla Report - KOPILUWAK WinRAR SFX - https://www.mandiant.com/resources/blog/turla-galaxy-opportunity
+d8233448a3400c5677708a8500e3b2a0;Turla Report - KOPILUWAK xpexplore.js - https://www.mandiant.com/resources/blog/turla-galaxy-opportunity
+403876977dfb4ab2e2c15ad4b29423ff;Turla Report - QUIETCANARY 00c3df3b.exe - https://www.mandiant.com/resources/blog/turla-galaxy-opportunity
+8954caa2017950e0f6269d6f6168b796;Turla Report - QUIETCANARY file.exe16 - https://www.mandiant.com/resources/blog/turla-galaxy-opportunity
