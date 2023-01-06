@@ -16,6 +16,6 @@ rule gen_python_encoded_adware
     condition:
         filesize < 100KB
         and @r1 < 100
-        and @r2 > (filesize - 30)
+        // and @r2 > (filesize - 30)
         and all of them
 }
