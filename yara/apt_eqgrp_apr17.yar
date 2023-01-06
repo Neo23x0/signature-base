@@ -2394,7 +2394,7 @@ rule EquationGroup_Toolset_Apr17_lp_mstcp {
       date = "2017-04-15"
       hash1 = "2ab1e1d23021d887759750a0c053522e9149b7445f840936bbc7e703f8700abd"
    strings:
-      $s1 = "\\Registry\\User\\CurrentUser\\" fullword wide
+      $s1 = "\\Registry\\User\\CurrentUser\\" wide
       $s2 = "_PacketNDISRequestComplete@12\"" fullword ascii
       $s3 = "_LDNdis5RegDeleteKeys@4" fullword ascii
 
@@ -2528,11 +2528,12 @@ rule EquationGroup_Toolset_Apr17_GrDo_FileScanner_Implant {
       author = "Florian Roth"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
+      modified = "2023-01-06"
       hash1 = "8d2e43567e1360714c4271b75c21a940f6b26a789aa0fce30c6478ae4ac587e4"
    strings:
       $s1 = "system32\\winsrv.dll" fullword wide
       $s2 = "raw_open CreateFile error" fullword ascii
-      $s3 = "\\dllcache\\" fullword wide
+      $s3 = "\\dllcache\\" wide
    condition:
       ( uint16(0) == 0x5a4d and filesize < 400KB and all of them )
 }
@@ -2757,15 +2758,15 @@ rule EquationGroup_Toolset_Apr17_DmGz_Target_2 {
 rule EquationGroup_Toolset_Apr17_mstcp32_DXGHLP16_tdip {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
-      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
+      modified = "2023-01-06"
       hash1 = "26215bc56dc31d2466d72f1f4e1b6388e62606e9949bc41c28968fcb9a9d60a6"
       hash2 = "fcfb56fa79d2383d34c471ef439314edc2239d632a880aa2de3cea430f6b5665"
       hash3 = "a5ec4d102d802ada7c5083af53fd9d3c9b5aa83be9de58dbb4fac7876faf6d29"
    strings:
-      $s1 = "\\Registry\\User\\CurrentUser\\" fullword wide
+      $s1 = "\\Registry\\User\\CurrentUser\\" wide
       $s2 = "\\DosDevices\\%ws" fullword wide
       $s3 = "\\Device\\%ws_%ws" fullword wide
       $s4 = "sys\\mstcp32.dbg" fullword ascii

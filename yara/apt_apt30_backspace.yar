@@ -465,29 +465,30 @@ rule APT30_Generic_G {
 }
 
 rule APT30_Sample_19 {
-	meta:
-		description = "FireEye APT30 Report Sample"
-		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
-		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
-		date = "2015/04/13"
-		hash = "cfa438449715b61bffa20130df8af778ef011e15"
-	strings:
-		$s0 = "C:\\Program Files\\Common Files\\System\\wab32" fullword ascii
-		$s1 = "%s,Volume:%s,Type:%s,TotalSize:%uMB,FreeSize:%uMB" fullword ascii
-		$s2 = "\\TEMP\\" fullword ascii
-		$s3 = "\\Temporary Internet Files\\" fullword ascii
-		$s5 = "%s TotalSize:%u Bytes" fullword ascii
-		$s6 = "This Disk Maybe a Encrypted Flash Disk!" fullword ascii
-		$s7 = "User:%-32s" fullword ascii
-		$s8 = "\\Desktop\\" fullword ascii
-		$s9 = "%s.%u_%u" fullword ascii
-		$s10 = "Nick:%-32s" fullword ascii
-		$s11 = "E-mail:%-32s" fullword ascii
-		$s13 = "%04u-%02u-%02u %02u:%02u:%02u" fullword ascii
-		$s14 = "Type:%-8s" fullword ascii
-	condition:
-		filesize < 100KB and uint16(0) == 0x5A4D and 8 of them
+   meta:
+      description = "FireEye APT30 Report Sample"
+      author = "Florian Roth"
+      reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
+      date = "2015/04/03"
+      modified = "2023-01-06"
+      score = 75
+      hash = "cfa438449715b61bffa20130df8af778ef011e15"
+   strings:
+      $s0 = "C:\\Program Files\\Common Files\\System\\wab32" fullword ascii
+      $s1 = "%s,Volume:%s,Type:%s,TotalSize:%uMB,FreeSize:%uMB" fullword ascii
+      $s2 = "\\TEMP\\" ascii
+      $s3 = "\\Temporary Internet Files\\" ascii
+      $s5 = "%s TotalSize:%u Bytes" fullword ascii
+      $s6 = "This Disk Maybe a Encrypted Flash Disk!" fullword ascii
+      $s7 = "User:%-32s" fullword ascii
+      $s8 = "\\Desktop\\" ascii
+      $s9 = "%s.%u_%u" fullword ascii
+      $s10 = "Nick:%-32s" fullword ascii
+      $s11 = "E-mail:%-32s" fullword ascii
+      $s13 = "%04u-%02u-%02u %02u:%02u:%02u" fullword ascii
+      $s14 = "Type:%-8s" fullword ascii
+   condition:
+      filesize < 100KB and uint16(0) == 0x5A4D and 8 of them
 }
 
 rule APT30_Generic_E_v2 {
@@ -842,33 +843,34 @@ rule APT30_Microfost {
 }
 
 rule APT30_Generic_K {
-	meta:
-		description = "FireEye APT30 Report Sample"
-		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
-		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
-		date = "2015/04/13"
-		hash = "142bc01ad412799a7f9ffed994069fecbd5a2f93"
-	strings:
-		$x1 = "Maybe a Encrypted Flash" fullword ascii
+   meta:
+      description = "FireEye APT30 Report Sample"
+      author = "Florian Roth"
+      reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
+      date = "2015/04/03"
+      modified = "2023-01-06"
+      score = 75
+      hash = "142bc01ad412799a7f9ffed994069fecbd5a2f93"
+   strings:
+      $x1 = "Maybe a Encrypted Flash" fullword ascii
 
-		$s0 = "C:\\Program Files\\Common Files\\System\\wab32" fullword ascii
-		$s1 = "\\TEMP\\" fullword ascii
-		$s2 = "\\Temporary Internet Files\\" fullword ascii
-		$s5 = "%s Size:%u Bytes" fullword ascii
-		$s7 = "$.DATA$" fullword ascii
-		$s10 = "? Size:%u By s" fullword ascii
-		$s12 = "Maybe a Encrypted Flash" fullword ascii
-		$s14 = "Name:%-32s" fullword ascii
-		$s15 = "NickName:%-32s" fullword ascii
-		$s19 = "Email:%-32s" fullword ascii
-		$s21 = "C:\\Prog" ascii
-		$s22 = "$LDDATA$" ascii
-		$s31 = "Copy File %s OK!" fullword ascii
-		$s32 = "%s Space:%uM,FreeSpace:%uM" fullword ascii
-		$s34 = "open=%s" fullword ascii
-	condition:
-		filesize < 100KB and uint16(0) == 0x5A4D and ( all of ($x*) and 3 of ($s*) )
+      $s0 = "C:\\Program Files\\Common Files\\System\\wab32" fullword ascii
+      $s1 = "\\TEMP\\" ascii
+      $s2 = "\\Temporary Internet Files\\" ascii
+      $s5 = "%s Size:%u Bytes" fullword ascii
+      $s7 = "$.DATA$" fullword ascii
+      $s10 = "? Size:%u By s" fullword ascii
+      $s12 = "Maybe a Encrypted Flash" fullword ascii
+      $s14 = "Name:%-32s" fullword ascii
+      $s15 = "NickName:%-32s" fullword ascii
+      $s19 = "Email:%-32s" fullword ascii
+      $s21 = "C:\\Prog" ascii
+      $s22 = "$LDDATA$" ascii
+      $s31 = "Copy File %s OK!" fullword ascii
+      $s32 = "%s Space:%uM,FreeSpace:%uM" fullword ascii
+      $s34 = "open=%s" fullword ascii
+   condition:
+      filesize < 100KB and uint16(0) == 0x5A4D and ( all of ($x*) and 3 of ($s*) )
 }
 
 rule APT30_Sample_33 {

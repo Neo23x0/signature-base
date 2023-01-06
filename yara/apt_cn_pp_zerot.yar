@@ -174,10 +174,11 @@ rule CN_APT_ZeroT_extracted_Go {
       author = "Florian Roth"
       reference = "https://www.proofpoint.com/us/threat-insight/post/APT-targets-russia-belarus-zerot-plugx"
       date = "2017-02-04"
+      modified = "2023-01-06"
       hash1 = "83ddc69fe0d3f3d2f46df7e72995d59511c1bfcca1a4e14c330cb71860b4806b"
    strings:
       $x1 = "%s\\cmd.exe /c %s\\Zlh.exe" fullword ascii
-      $x2 = "\\BypassUAC.VS2010\\Release\\" fullword ascii
+      $x2 = "\\BypassUAC.VS2010\\Release\\" ascii
 
       $s1 = "Zjdsf.exe" fullword ascii
       $s2 = "SS32prep.exe" fullword ascii

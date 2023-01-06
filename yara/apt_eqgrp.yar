@@ -1391,15 +1391,15 @@ rule EquationGroup_LSADUMP_Lp {
 rule EquationGroup_EquationDrug_mstcp32 {
    meta:
       description = "EquationGroup Malware - file mstcp32.sys"
-      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
+      modified = "2023-01-06"
       hash1 = "26215bc56dc31d2466d72f1f4e1b6388e62606e9949bc41c28968fcb9a9d60a6"
    strings:
       $s1 = "mstcp32.sys" fullword wide
       $s2 = "p32.sys" fullword ascii
-      $s3 = "\\Registry\\User\\CurrentUser\\" fullword wide
+      $s3 = "\\Registry\\User\\CurrentUser\\" wide
       $s4 = "\\DosDevices\\%ws" fullword wide
       $s5 = "\\Device\\%ws_%ws" fullword wide
       $s6 = "sys\\mstcp32.dbg" fullword ascii
@@ -1595,15 +1595,15 @@ rule EquationGroup_ntfltmgr {
 rule EquationGroup_DXGHLP16 {
    meta:
       description = "EquationGroup Malware - file DXGHLP16.SYS"
-      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
+      modified = "2023-01-06"
       hash1 = "fcfb56fa79d2383d34c471ef439314edc2239d632a880aa2de3cea430f6b5665"
    strings:
       $s1 = "DXGHLP16.SYS" fullword wide
       $s2 = "P16.SYS" fullword ascii
-      $s3 = "\\Registry\\User\\CurrentUser\\" fullword wide
+      $s3 = "\\Registry\\User\\CurrentUser\\" wide
       $s4 = "\\DosDevices\\%ws" fullword wide
       $s5 = "\\Device\\%ws_%ws" fullword wide
       $s6 = "ct@SYS\\DXGHLP16.dbg" fullword ascii

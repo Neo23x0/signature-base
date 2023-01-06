@@ -2970,10 +2970,11 @@ rule PSAttack_EXE {
       author = "Florian Roth"
       reference = "https://github.com/gdssecurity/PSAttack/releases/"
       date = "2016-03-09"
+      modified = "2023-01-06"
       score = 100
       hash = "ad05d75640c850ee7eeee26422ba4f157be10a4e2d6dc6eaa19497d64cf23715"
    strings:
-      $x1 = "\\Release\\PSAttack.pdb" fullword
+      $x1 = "\\Release\\PSAttack.pdb"
 
       $s1 = "set-executionpolicy bypass -Scope process -Force" fullword wide
       $s2 = "PSAttack.Modules." ascii
