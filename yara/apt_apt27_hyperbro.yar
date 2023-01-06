@@ -53,17 +53,17 @@ rule HvS_APT27_HyperBro_Decrypted_Stage2 {
       ($lznt1_compressed_pe_header_small at 0x9ce) or (all of ($lznt1_compressed_pe_header_large_*))
 }
 
-
 rule HvS_APT27_HyperBro_Stage3 {
    meta:
       description = "HyperBro Stage 3 detection - also tested in memory"
-      license = "https://creativecommons.org/licenses/by-nc/4.0/"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Markus Poelloth"
       reference = "https://www.hvs-consulting.de/en/threat-intelligence-report-emissary-panda-apt27"
       date = "2022-02-07"
+      modified = "2023-01-07"
       hash1 = "624e85bd669b97bc55ed5c5ea5f6082a1d4900d235a5d2e2a5683a04e36213e8"
    strings:
-      $s1 = "\\cmd.exe /A" fullword wide
+      $s1 = "\\cmd.exe /A" wide
       $s2 = "vftrace.dll" fullword wide
       $s3 = "msmpeng.exe" fullword wide
       $s4 = "\\\\.\\pipe\\testpipe" fullword wide
@@ -78,7 +78,6 @@ rule HvS_APT27_HyperBro_Stage3 {
       uint16(0) == 0x5a4d and filesize < 300KB and
       (( 4 of ($s*) ) or (4 of ($g*)))
 }
-
 
 rule HvS_APT27_HyperBro_Stage3_C2 {
    meta:

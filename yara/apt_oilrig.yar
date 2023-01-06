@@ -85,19 +85,19 @@ rule OilRig_Malware_Campaign_Mal1 {
 
 rule OilRig_Malware_Campaign_Gen2 {
    meta:
-      description = "Detects malware from OilRig Campaign"
-      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+      description = "Detects Oilrig malware samples"
       author = "Florian Roth"
       reference = "https://goo.gl/QMRZ8K"
       date = "2016-10-12"
+      modified = "2023-01-07"
       hash1 = "c6437f57a8f290b5ec46b0933bfa8a328b0cb2c0c7fbeea7f21b770ce0250d3d"
       hash2 = "293522e83aeebf185e653ac279bba202024cedb07abc94683930b74df51ce5cb"
    strings:
-      $s1 = "%userprofile%\\AppData\\Local\\Microsoft\\ " fullword ascii
+      $s1 = "%userprofile%\\AppData\\Local\\Microsoft\\" ascii
       $s2 = "$fdn=[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('" fullword ascii
       $s3 = "&{$rn = Get-Random; $id = 'TR" fullword ascii
       $s4 = "') -replace '__',('DNS'+$id) | " fullword ascii
-      $s5 = "\\upd.vbs" fullword ascii
+      $s5 = "\\upd.vbs" ascii
       $s6 = "schtasks /create /F /sc minute /mo " fullword ascii
       $s7 = "') -replace '__',('HTP'+$id) | " fullword ascii
       $s8 = "&{$rn = Get-Random -minimum 1 -maximum 10000; $id = 'AZ" fullword ascii
@@ -108,18 +108,18 @@ rule OilRig_Malware_Campaign_Gen2 {
 
 rule OilRig_Malware_Campaign_Gen3 {
    meta:
-      description = "Detects malware from OilRig Campaign"
-      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+      description = "Detects Oilrig malware samples"
       author = "Florian Roth"
       reference = "https://goo.gl/QMRZ8K"
       date = "2016-10-12"
+      modified = "2023-01-07"
       hash1 = "5e9ddb25bde3719c392d08c13a295db418d7accd25d82d020b425052e7ba6dc9"
       hash2 = "bd0920c8836541f58e0778b4b64527e5a5f2084405f73ee33110f7bc189da7a9"
       hash3 = "90639c7423a329e304087428a01662cc06e2e9153299e37b1b1c90f6d0a195ed"
    strings:
       $x1 = "source code from https://www.fireeye.com/blog/threat-research/2016/05/targeted_attacksaga.htmlrrrr" fullword ascii
-      $x2 = "\\Libraries\\fireueye.vbs" fullword ascii
-      $x3 = "\\Libraries\\fireeye.vbs&" fullword wide
+      $x2 = "\\Libraries\\fireueye.vbs" ascii
+      $x3 = "\\Libraries\\fireeye.vbs&" wide
    condition:
       ( uint16(0) == 0xcfd0 and filesize < 100KB and 1 of them )
 }

@@ -18,14 +18,14 @@ rule EXP_DriveCrypt_1 {
 rule EXP_DriveCrypt_x64passldr {
    meta:
       description = "Detects DriveCrypt exploit"
-      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2018-08-21"
+      modified = "2023-01-06"
       hash1 = "c828304c83619e2cb9dab80305e5286aba91742dc550e1469d91812af27101a1"
    strings:
       $s1 = "\\x64\\x64passldr.pdb" ascii
-      $s2 = "\\amd64\\x64pass.sys" fullword wide
+      $s2 = "\\amd64\\x64pass.sys" wide
       $s3 = "\\\\.\\DCR" fullword ascii
       $s4 = "Open SC Mgr Error" fullword ascii
       $s5 = "thing is ok " fullword ascii

@@ -5,15 +5,16 @@ rule APT_UNC2447_MAL_SOMBRAT_May21_1 {
       author = "Florian Roth"
       reference = "https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html"
       date = "2021-05-01"
+      modified = "2023-01-07"
       hash1 = "61e286c62e556ac79b01c17357176e58efb67d86c5d17407e128094c3151f7f9"
       hash2 = "99baffcd7a6b939b72c99af7c1e88523a50053ab966a079d9bf268aff884426e"
    strings:
       $x1 = "~arungvc" ascii fullword
-      
+
       $s1 = "plugin64_" ascii fullword
       $s2 = "0xUnknown" ascii fullword
-      $s3 = "b%x.%s" ascii fullword 
-      $s4 = "/news" ascii fullword 
+      $s3 = "b%x.%s" ascii fullword
+      $s4 = "/news" ascii
 
       $sc1 = { 00 73 00 65 00 72 00 76 00 69 00 63 00 65 00 73
                00 2E 00 65 00 78 00 65 00 00 00 00 00 00 00 00
@@ -28,7 +29,7 @@ rule APT_UNC2447_MAL_SOMBRAT_May21_1 {
    condition:
       uint16(0) == 0x5a4d and
       filesize < 3000KB and (
-         ( 1 of ($x*) and 1 of ($s*) ) or 
+         ( 1 of ($x*) and 1 of ($s*) ) or
          3 of them
       ) or 5 of them
 }
@@ -119,10 +120,11 @@ rule APT_UNC2447_BAT_Runner_May21_1 {
       author = "Florian Roth"
       reference = "https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html"
       date = "2021-05-01"
+      modified = "2023-01-07"
       hash1 = "ccacf4658ae778d02e4e55cd161b5a0772eb8b8eee62fed34e2d8f11db2cc4bc"
    strings:
       $x1 = "powershell.exe -c \"[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String([IO.File]::" ascii
-      $x2 = "wwansvc.txt')))\" | powershell.exe -" ascii fullword
+      $x2 = "wwansvc.txt')))\" | powershell.exe -" ascii
    condition:
       filesize < 5000KB and 1 of them
 }

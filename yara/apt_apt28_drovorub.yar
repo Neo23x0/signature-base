@@ -4,7 +4,7 @@
         author = "NSA / FBI"
         reference = "https://www.nsa.gov/news-features/press-room/Article/2311407/nsa-and-fbi-expose-russian-previously-undisclosed-malware-drovorub-in-cybersecu/"
         date = "2020-08-13"
-        scor = 50
+        score = 50
     strings:
         $mw1 = { 89 F1 48 89 FE 48 89 D7 48 F7 C6 FF FF FF FF 0F 84 6B 02 00 00 48 F7 C7
                  FF FF FF FF 0F 84 5E 02 00 00 48 8D 2D }
@@ -26,7 +26,7 @@ rule APT_APT28_drovorub_library_and_unique_strings {
         author = "NSA / FBI"
         reference = "https://www.nsa.gov/news-features/press-room/Article/2311407/nsa-and-fbi-expose-russian-previously-undisclosed-malware-drovorub-in-cybersecu/"
         date = "2020-08-13"
-        scor = 75
+        score = 75
     strings:
         $s1 = "Poco" ascii wide
         $s2 = "Json" ascii wide
@@ -46,7 +46,7 @@ rule APT_APT28_drovorub_unique_network_comms_strings {
         author = "NSA / FBI"
         reference = "https://www.nsa.gov/news-features/press-room/Article/2311407/nsa-and-fbi-expose-russian-previously-undisclosed-malware-drovorub-in-cybersecu/"
         date = "2020-08-13"
-        scor = 75
+        score = 75
     strings:
         $s_01 = "action" wide ascii
         $s_02 = "auth.commit" wide ascii
@@ -77,7 +77,7 @@ rule APT_APT28_drovorub_kernel_module_unique_strings {
         author = "NSA / FBI"
         reference = "https://www.nsa.gov/news-features/press-room/Article/2311407/nsa-and-fbi-expose-russian-previously-undisclosed-malware-drovorub-in-cybersecu/"
         date = "2020-08-13"
-        scor = 75
+        score = 75
     strings:
         $s_01 = "/proc" wide ascii
         $s_02 = "/proc/net/packet" wide ascii 

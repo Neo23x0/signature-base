@@ -67,16 +67,16 @@ rule Waterbear_4_Jun17 {
 rule Waterbear_5_Jun17 {
    meta:
       description = "Detects malware from Operation Waterbear"
-      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
+      modified = "2023-01-07"
       hash1 = "d3678cd9744b3aedeba23a03a178be5b82d5f8059a86f816007789a9dd06dc7d"
    strings:
       $a1 = "ICESWORD" fullword ascii
       $a2 = "klog.dat" fullword ascii
 
-      $s1 = "\\cswbse.dll" fullword ascii
+      $s1 = "\\cswbse.dll" ascii
       $s2 = "WIRESHARK" fullword ascii
       $s3 = "default_zz|" fullword ascii
       $s4 = "%c4%u-%.2u-%.2u %.2u:%.2u" fullword ascii
@@ -121,18 +121,17 @@ rule Waterbear_7_Jun17 {
 rule Waterbear_8_Jun17 {
    meta:
       description = "Detects malware from Operation Waterbear"
-      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
-      modified = "2023-01-06"
+      modified = "2023-01-07"
       hash1 = "bd06f6117a0abf1442826179f6f5e1932047b4a6c14add9149e8288ab4a902c3"
       hash1 = "5dba8ddf05cb204ef320a72a0c031e55285202570d7883f2ff65135ec35b3dd0"
    strings:
       $s1 = "Update.dll" fullword ascii
       $s2 = "ADVPACK32.DLL" fullword wide
       $s3 = "\\Registry\\Machine\\SYSTEM\\CurrentControlSet\\Services\\" ascii
-      $s4 = "\\drivers\\sftst.sys" fullword ascii
+      $s4 = "\\drivers\\sftst.sys" ascii
       $s5 = "\\\\.\\SFilter" fullword ascii
    condition:
       ( uint16(0) == 0x5a4d and filesize < 40KB and all of them )

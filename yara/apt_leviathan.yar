@@ -11,14 +11,14 @@
 rule SeDLL_Javascript_Decryptor {
    meta:
       description = "Detects SeDll - DLL is used for decrypting and executing another JavaScript backdoor such as Orz"
-      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/MZ7dRg"
       date = "2017-10-18"
+      modified = "2023-01-07"
       hash1 = "146aa9a0ec013aa5bdba9ea9d29f59d48d43bc17c6a20b74bb8c521dbb5bc6f4"
    strings:
       $x1 = "SEDll_Win32.dll" fullword ascii
-      $x2 = "regsvr32 /s \"%s\" DR __CIM__" fullword wide
+      $x2 = "regsvr32 /s \"%s\" DR __CIM__" wide
 
       $s1 = "WScriptW" fullword ascii
       $s2 = "IWScript" fullword ascii

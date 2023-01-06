@@ -41,7 +41,6 @@ rule GoldDragon_Aux_File {
       filesize < 500KB and 1 of them
 }
 
-
 rule GoldDragon_Ghost419_RAT {
    meta:
       description = "Detects Ghost419 RAT from Gold Dragon report"
@@ -65,7 +64,7 @@ rule GoldDragon_Ghost419_RAT {
       $x5 = "%s\\abxplore.exe" fullword ascii
       $x6 = "GHOST419" fullword ascii
       $x7 = "I,m Online. %04d - %02d - %02d - %02d - %02d" fullword ascii
-      $x8 = "//////////////////////////regkeyenum//////////////" fullword ascii
+      $x8 = "//////////////////////////regkeyenum//////////////" ascii
 
       $s0 = "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; .NET CLR 1.1.4322)" fullword ascii
       $s1 = "www.GoldDragon.com" fullword ascii
@@ -127,10 +126,10 @@ rule GoldDragon_RunningRAT {
 rule GoldDragon_RunnignRAT {
    meta:
       description = "Detects Running RAT malware from Gold Dragon report"
-      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/rW1yvZ"
       date = "2018-02-03"
+      modified = "2023-01-07"
       hash1 = "94aa827a514d7aa70c404ec326edaaad4b2b738ffaea5a66c0c9f246738df579"
       hash2 = "5cbc07895d099ce39a3142025c557b7fac41d79914535ab7ffc2094809f12a4b"
       hash3 = "98ccf3a463b81a47fdf4275e228a8f2266e613e08baae8bdcd098e49851ed49a"
@@ -142,7 +141,7 @@ rule GoldDragon_RunnignRAT {
       $s5 = "rundll32.exe \"%s\" Run" fullword ascii
       $s6 = "Mozilla/5.0 (Windows NT 5.2; rv:12.0) Gecko/20100101 Firefox/12.0" fullword ascii
       $s7 = "%s\\%s_%03d" fullword wide
-      $s8 = "\\PI_001.dat" fullword ascii
+      $s8 = "\\PI_001.dat" ascii
    condition:
       uint16(0) == 0x5a4d and filesize < 3000KB and (
          3 of them
