@@ -5785,7 +5785,7 @@ rule WebShell_lamashell {
 		$s8 = "$curcmd = $_POST['king'];" fullword
 		$s16 = "\"http://www.w3.org/TR/html4/loose.dtd\">" fullword
 		$s18 = "<title>lama's'hell v. 3.0</title>" fullword
-		$s19 = "_|_  O    _    O  _|_" fullword
+		$s19 = "_|_  O    _    O  _|_"
 		$s20 = "$curcmd = \"ls -lah\";" fullword
 	condition:
 		2 of them

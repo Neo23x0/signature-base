@@ -50,7 +50,7 @@ rule PoisonIvy_Sample_APT_2 {
 		$s17 = "LegalTrademarks" fullword wide /* score: '-3518' */ /* Goodware String - occured 3523 times */
 		$s18 = "CreateThread" fullword ascii /* score: '-3909' */ /* Goodware String - occured 3914 times */
 		$s19 = "ntdll.dll" fullword ascii /* score: '-4675' */ /* Goodware String - occured 4680 times */
-		$s20 = "_adjust_fdiv" fullword ascii /* score: '-5450' */ /* Goodware String - occured 5455 times */
+		$s20 = "_adjust_fdiv" ascii /* score: '-5450' */ /* Goodware String - occured 5455 times */
 	condition:
 		uint16(0) == 0x5a4d and filesize < 47KB and all of them
 }

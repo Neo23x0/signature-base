@@ -55,7 +55,7 @@ rule EquationGroup_cryptTool {
       hash1 = "96947ad30a2ab15ca5ef53ba8969b9d9a89c48a403e8b22dd5698145ac6695d2"
    strings:
       $s1 = "The encryption key is " fullword ascii
-      $s2 = "___tempFile2.out" fullword ascii
+      $s2 = "___tempFile2.out" ascii
    condition:
       ( uint16(0) == 0x457f and filesize < 200KB and all of them )
 }
@@ -187,7 +187,7 @@ rule EquationGroup_toast_v3_2_0 {
       hash1 = "2ce2d16d24069dc29cf1464819a9dc6deed38d1e5ffc86d175b06ddb691b648b"
    strings:
       $x2 = "Del --- Usage: %s -l file -w wtmp -r user" fullword ascii
-      $s5 = "Roasting ->%s<- at ->%d:%d<-" fullword ascii
+      $s5 = "Roasting ->%s<- at ->%d:%d<-" ascii
       $s6 = "rbnoil -Roasting ->" fullword ascii
    condition:
       ( uint16(0) == 0x457f and filesize < 50KB and 1 of them )
@@ -533,10 +533,10 @@ rule EquationGroup_slugger2 {
       $x1 = "usage: %s hostip port cmd [printer_name]" fullword ascii
       $x2 = "command must be less than 61 chars" fullword ascii
 
-      $s1 = "__rw_read_waiting" fullword ascii
+      $s1 = "__rw_read_waiting" ascii
       $s2 = "completed.1" fullword ascii
-      $s3 = "__mutexkind" fullword ascii
-      $s4 = "__rw_pshared" fullword ascii
+      $s3 = "__mutexkind" ascii
+      $s4 = "__rw_pshared" ascii
    condition:
       ( uint16(0) == 0x457f and filesize < 50KB and ( 4 of them and 1 of ($x*) ) ) or ( all of them )
 }
@@ -1112,7 +1112,7 @@ rule EquationGroup_orleans_stride_sunos5_9_v_2_4_0 {
       date = "2017-04-09"
       hash1 = "6a30efb87b28e1a136a66c7708178c27d63a4a76c9c839b2fc43853158cb55ff"
    strings:
-      $s1 = "_lib_version" fullword ascii
+      $s1 = "_lib_version" ascii
       $s2 = ",%02d%03d" fullword ascii
       $s3 = "TRANSIT" fullword ascii
    condition:
@@ -1146,8 +1146,8 @@ rule EquationGroup_cursezinger_linuxrh7_3_v_2_0_0 {
    strings:
       $s1 = ",%02d%03d" fullword ascii
       $s2 = "[%.2u%.2u%.2u%.2u%.2u%.2u]" fullword ascii
-      $s3 = "__strtoll_internal" fullword ascii
-      $s4 = "__strtoul_internal" fullword ascii
+      $s3 = "__strtoll_internal" ascii
+      $s4 = "__strtoul_internal" ascii
    condition:
       ( uint16(0) == 0x457f and filesize < 400KB and all of them )
 }
@@ -1179,7 +1179,7 @@ rule EquationGroup_watcher_solaris_i386_v_3_3_0 {
    strings:
       $s1 = "getexecname" fullword ascii
       $s2 = "invalid option `" fullword ascii
-      $s6 = "__fpstart" fullword ascii
+      $s6 = "__fpstart" ascii
       $s12 = "GHFIJKLMNOPQRSTUVXW" fullword ascii
    condition:
       ( uint16(0) == 0x457f and filesize < 700KB and all of them )
@@ -2396,7 +2396,7 @@ rule EquationGroup_Toolset_Apr17_lp_mstcp {
    strings:
       $s1 = "\\Registry\\User\\CurrentUser\\" wide
       $s2 = "_PacketNDISRequestComplete@12\"" fullword ascii
-      $s3 = "_LDNdis5RegDeleteKeys@4" fullword ascii
+      $s3 = "_LDNdis5RegDeleteKeys@4" ascii
 
       $op1 = { 89 7e 04 75 06 66 21 46 02 eb }
       $op2 = { fc 74 1b 8b 49 04 0f b7 d3 66 83 }
@@ -2821,7 +2821,7 @@ rule EquationGroup_Toolset_Apr17_GangsterThief_Implant {
    strings:
       $s1 = "\\\\.\\%s:" fullword wide
       $s4 = "raw_open CreateFile error" fullword ascii
-      $s5 = "-PATHDELETED-" fullword ascii
+      $s5 = "-PATHDELETED-" ascii
       $s6 = "(deleted)" fullword wide
       $s8 = "NULLFILENAME" fullword ascii
    condition:

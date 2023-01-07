@@ -87,7 +87,7 @@ rule IronPanda_Malware_Htran {
 		$s8 = "[+] Accept a Client on port %d from %s" fullword ascii
 		$s9 = "[+] Make a Connection to %s:%d ......" fullword ascii
 		$s10 = "cmshared_get_ptr_from_atom" fullword ascii
-		$s11 = "_cmshared_get_ptr_from_atom" fullword ascii
+		$s11 = "_cmshared_get_ptr_from_atom" ascii
 		$s12 = "[+] OK! I Closed The Two Socket." fullword ascii
 		$s13 = "[-] TransmitPort invalid." fullword ascii
 		$s14 = "[+] Waiting for Client on port:%d ......" fullword ascii

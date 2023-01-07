@@ -212,7 +212,7 @@ rule APT_Thrip_Sample_Jun18_12 {
       $s3 = "\\CryptBase.dll" ascii
       $s4 = "gupdate.exe" fullword ascii
       $s5 = "wusa.exe" fullword ascii
-      $s6 = "/c %s %s /quiet /extract:%s\\%s\\" fullword ascii
+      $s6 = " %s %s /quiet /extract:%s\\%s\\" ascii
       $s7 = "%s%s.dll.cab" fullword ascii
       $s8 = "/c %s\\%s\\%s%s %s" fullword ascii
       $s9 = "ReleaseEvildll" fullword ascii
@@ -274,7 +274,7 @@ rule APT_Thrip_Sample_Jun18_15 {
       $s2 = "CryptBase.dll" fullword ascii
       $s3 = "gupdate.exe" fullword ascii
       $s4 = "wusa.exe" fullword ascii
-      $s5 = "/c %s %s /quiet /extract:%s\\%s\\" fullword ascii
+      $s5 = " %s %s /quiet /extract:%s\\%s\\" ascii
       $s6 = "%s%s.dll.cab" fullword ascii
       $s7 = "%s\\%s\\%s%s %s" fullword ascii
       $s8 = "%s\\%s\\%s%s" fullword ascii

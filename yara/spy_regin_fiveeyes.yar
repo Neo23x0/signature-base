@@ -72,8 +72,8 @@ rule Regin_APT_KernelDriver_Generic_B {
 		$w2 = "\\SystemRoot" ascii
 		$w3 = "LRich6" fullword ascii
 
-		$x1 = "_snprintf" fullword ascii
-		$x2 = "_except_handler3" fullword ascii
+		$x1 = "_snprintf" ascii
+		$x2 = "_except_handler3" ascii
 
 		$y1 = "mbstowcs" fullword ascii
 		$y2 = "wcstombs" fullword ascii
@@ -128,7 +128,7 @@ rule Regin_sig_svcsstat {
 		hash = "5164edc1d54f10b7cb00a266a1b52c623ab005e2"
 	strings:
 		$s0 = "Service Control Manager" fullword ascii
-		$s1 = "_vsnwprintf" fullword ascii
+		$s1 = "_vsnwprintf" ascii
 		$s2 = "Root Agency" fullword ascii
 		$s3 = "Root Agency0" fullword ascii
 		$s4 = "StartServiceCtrlDispatcherA" fullword ascii

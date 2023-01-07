@@ -49,9 +49,9 @@ rule MAL_Sednit_DelphiDownloader_Apr18_3 {
       $ = "Processor Level: " fullword ascii
       $ = "CONNECTION ERROR" fullword ascii
       $ = "FILE_EXECUTE_AND_KILL_MYSELF" ascii
-      $ = "-KILL_PROCESS-" fullword ascii
-      $ = "-FILE_EXECUTE-" fullword ascii
-      $ = "-DOWNLOAD_ERROR-" fullword ascii
+      $ = "-KILL_PROCESS-" ascii
+      $ = "-FILE_EXECUTE-" ascii
+      $ = "-DOWNLOAD_ERROR-" ascii
       $ = "CMD_EXECUTE" fullword ascii
       $ = "\\Interface\\Office\\{31E12FE8-937F-1E32-871D-B1C9AOEF4D4}\\" ascii
       $ = "Mozilla/3.0 (compatible; Indy Library)" fullword ascii

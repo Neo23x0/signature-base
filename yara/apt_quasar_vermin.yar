@@ -45,8 +45,8 @@ rule Vermin_Keylogger_Jan18_1 {
       hash5 = "24956d8edcf2a1fd26805ec58cfd1ee7498e1a59af8cc2f4b832a7ab34948c18"
       hash6 = "2963c5eacaad13ace807edd634a4a5896cb5536f961f43afcf8c1f25c08a5eef"
    strings:
-      $x1 = "_keyloggerTaskDescription" fullword ascii
-      $x2 = "_keyloggerTaskAuthor" fullword ascii
+      $x1 = "_keyloggerTaskDescription" ascii
+      $x2 = "_keyloggerTaskAuthor" ascii
       $x3 = "GetKeyloggerLogsResponse" fullword ascii
       $x4 = "GetKeyloggerLogs" fullword ascii
       $x5 = "ExecuteUninstallKeyLoggerTask" fullword ascii

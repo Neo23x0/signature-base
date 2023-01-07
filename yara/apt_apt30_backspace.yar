@@ -703,7 +703,7 @@ rule APT30_Sample_27 {
 		$s5 = "oftHaveAck+" ascii
 		$s10 = "HlobalAl" fullword ascii
 		$s13 = "$NtRND1$" fullword ascii
-		$s14 = "_NStartup" fullword ascii
+		$s14 = "_NStartup" ascii
 		$s16 = "GXSYSTEM" fullword ascii
 	condition:
 		filesize < 100KB and uint16(0) == 0x5A4D and all of them
@@ -1026,7 +1026,7 @@ rule APT30_Generic_2 {
 		$s3 = "%s:All online success on %u!" fullword
 		$s4 = "%s:list online success on %u!" fullword
 		$s5 = "%s:All online fail!" fullword
-		$s6 = "Copyright Opera Software 1995-" fullword wide
+		$s6 = "Copyright Opera Software 1995-" wide
 		$s7 = "%s:list online fail!" fullword
 		$s8 = "OnlineTmp.txt" fullword
 		$s9 = "Opera Internet Browser" fullword wide
