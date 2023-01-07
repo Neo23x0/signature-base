@@ -21,7 +21,7 @@ rule Microcin_Sample_1 {
       hash2 = "a73f8f76a30ad5ab03dd503cc63de3a150e6ab75440c1060d75addceb4270f46"
       hash3 = "9dd9bb13c2698159eb78a0ecb4e8692fd96ca4ecb50eef194fa7479cb65efb7c"
    strings:
-      $s1 = "e Class Descriptor at (" fullword ascii
+      $s1 = "e Class Descriptor at (" ascii
       $s2 = ".?AVCAntiAntiAppleFrameRealClass@@" fullword ascii
       $s3 = ".?AVCAntiAntiAppleFrameBaseClass@@" fullword ascii
       $s4 = ".?AVCAppleBinRealClass@@" fullword ascii

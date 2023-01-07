@@ -448,7 +448,7 @@ rule CN_GUI_Scanner {
       $s1 = "good.txt" fullword ascii
       $s2 = "IP.txt" fullword ascii
       $s3 = "xiaoyuer" fullword ascii
-      $s0w = "ssh(" fullword wide
+      $s0w = "ssh(" wide
       $s1w = ").exe" fullword wide
    condition:
       all of them
@@ -987,7 +987,7 @@ rule Tzddos_DDoS_Tool_CN {
       score = 60
       hash = "d4c517eda5458247edae59309453e0ae7d812f8e"
    strings:
-      $s0 = "for /f %%a in (host.txt) do (" fullword ascii
+      $s0 = "for /f %%a in (host.txt) do (" ascii
       $s1 = "for /f \"eol=S tokens=1 delims= \" %%i in (s2.txt) do echo %%i>>host.txt" fullword ascii
       $s2 = "del host.txt /q" fullword ascii
       $s3 = "for /f \"eol=- tokens=1 delims= \" %%i in (result.txt) do echo %%i>>s1.txt" fullword ascii
@@ -1130,7 +1130,7 @@ rule Hacktools_CN_Scan_BAT {
       score = 60
       hash = "6517d7c245f1300e42f7354b0fe5d9666e5ce52a"
    strings:
-      $s0 = "for /f %%a in (host.txt) do (" fullword ascii
+      $s0 = "for /f %%a in (host.txt) do (" ascii
       $s1 = "for /f \"eol=S tokens=1 delims= \" %%i in (s2.txt) do echo %%i>>host.txt" fullword ascii
       $s2 = "del host.txt /q" fullword ascii
       $s3 = "for /f \"eol=- tokens=1 delims= \" %%i in (result.txt) do echo %%i>>s1.txt" fullword ascii
@@ -1346,7 +1346,7 @@ rule Hacktools_CN_Burst_Thecard {
       $s0 = "tasklist |find \"Clear.bat\"||start Clear.bat" fullword ascii
       $s1 = "Http://www.coffeewl.com" fullword ascii
       $s2 = "ping -n 2 localhost 1>nul 2>nul" fullword ascii
-      $s3 = "for /L %%a in (" fullword ascii
+      $s3 = "for /L %%a in (" ascii
       $s4 = "MODE con: COLS=42 lines=5" fullword ascii
    condition:
       all of them
@@ -2027,7 +2027,7 @@ rule sig_238_sqlcmd {
       score = 40
       hash = "b6e356ce6ca5b3c932fa6028d206b1085a2e1a9a"
    strings:
-      $s0 = "Permission denial to EXEC command.:(" fullword ascii
+      $s0 = "Permission denial to EXEC command.:(" ascii
       $s3 = "by Eyas<cooleyas@21cn.com>" fullword ascii
       $s4 = "Connect to %s MSSQL server success.Enjoy the shell.^_^" fullword ascii
       $s5 = "Usage: %s <host> <uid> <pwd>" fullword ascii
@@ -2087,7 +2087,7 @@ rule Jc_ALL_WinEggDropShell_rar_Folder_Install_2 {
       $s3 = "Player.EXE" fullword wide
       $s4 = "mailto:sdemo@263.net" fullword ascii
       $s5 = "S-Player.exe" fullword ascii
-      $s9 = "http://www.BaiXue.net (" fullword wide
+      $s9 = "http://www.BaiXue.net (" wide
    condition:
       all of them
 }
@@ -3700,9 +3700,9 @@ rule Impacket_Keyword {
       hash1 = "9388c78ea6a78dbea307470c94848ae2481481f593d878da7763e649eaab4068"
       hash2 = "2f6d95e0e15174cfe8e30aaa2c53c74fdd13f9231406b7103da1e099c08be409"
    strings:
-      $s1 = "impacket.smb(" fullword ascii
-      $s2 = "impacket.ntlm(" fullword ascii
-      $s3 = "impacket.nmb(" fullword ascii
+      $s1 = "impacket.smb(" ascii
+      $s2 = "impacket.ntlm(" ascii
+      $s3 = "impacket.nmb(" ascii
    condition:
       ( uint16(0) == 0x5a4d and filesize < 14000KB and 1 of them )
 }
@@ -3933,9 +3933,9 @@ rule Crackmapexec_EXE {
       score = 85
       hash1 = "371f104b7876b9080c519510879235f36edb6668097de475949b84ab72ee9a9a"
    strings:
-      $s1 = "core.scripts.secretsdump(" fullword ascii
-      $s2 = "core.scripts.samrdump(" fullword ascii
-      $s3 = "core.uacdump(" fullword ascii
+      $s1 = "core.scripts.secretsdump(" ascii
+      $s2 = "core.scripts.samrdump(" ascii
+      $s3 = "core.uacdump(" ascii
    condition:
       uint16(0) == 0x5a4d and filesize < 10000KB and 2 of them
 }
@@ -4205,7 +4205,7 @@ rule HKTL_beRootexe {
       date = "2018-07-25"
       hash1 = "865b3b8ec9d03d3475286c3030958d90fc72b21b0dca38e5bf8e236602136dd7"
    strings:
-      $s1 = "checks.webclient.secretsdump(" fullword ascii
+      $s1 = "checks.webclient.secretsdump(" ascii
       $s2 = "beroot.modules" fullword ascii
       $s3 = "beRoot.exe.manifest" fullword ascii
    condition:
@@ -4317,11 +4317,11 @@ rule HKTL_Lazagne_PasswordDumper_Dec18_1 {
       hash2 = "884e991d2066163e02472ea82d89b64e252537b28c58ad57d9d648b969de6a63"
       hash3 = "bf8f30031769aa880cdbe22bc0be32691d9f7913af75a5b68f8426d4f0c7be50"
    strings:
-      $s1 = "softwares.opera(" fullword ascii
-      $s2 = "softwares.mozilla(" fullword ascii
-      $s3 = "config.dico(" fullword ascii
-      $s4 = "softwares.chrome(" fullword ascii
-      $s5 = "softwares.outlook(" fullword ascii
+      $s1 = "softwares.opera(" ascii
+      $s2 = "softwares.mozilla(" ascii
+      $s3 = "config.dico(" ascii
+      $s4 = "softwares.chrome(" ascii
+      $s5 = "softwares.outlook(" ascii
    condition:
       uint16(0) == 0x5a4d and filesize < 17000KB and 1 of them
 }
@@ -4336,7 +4336,7 @@ rule HKTL_Lazagne_Gen_18 {
       score = 80
       hash1 = "51121dd5fbdfe8db7d3a5311e3e9c904d644ff7221b60284c03347938577eecf"
    strings:
-      $x1 = "lazagne.config.powershell_execute(" fullword ascii
+      $x1 = "lazagne.config.powershell_execute(" ascii
       $x2 = "creddump7.win32." ascii
       $x3 = "lazagne.softwares.windows.hashdump" ascii
       $x4 = ".softwares.memory.libkeepass.common(" ascii

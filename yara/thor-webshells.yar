@@ -8823,7 +8823,7 @@ rule Webshell_Backdoor_PHP_Agent_r57_mod_bizzz_shell_r57 {
 		hash11 = "ef74644065925aa8d64913f5f124fe73d8d289d5f019a104bf5f56689f49ba92"
 	strings:
 		$s1 = "$_POST['cmd'] = which('" ascii
-		$s2 = "$blah = ex(" fullword ascii
+		$s2 = "$blah = ex(" ascii
 	condition:
 		filesize < 600KB and all of them
 }

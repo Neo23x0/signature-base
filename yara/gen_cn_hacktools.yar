@@ -57,7 +57,7 @@ rule Guilin_veterans_cookie_spoofing_tool {
 		$s0 = "kernel32.dll^G" fullword ascii
 		$s1 = "\\.Sus\"B" fullword ascii
 		$s4 = "u56Load3" fullword ascii
-		$s11 = "O MYTMP(iM) VALUES (" fullword ascii
+		$s11 = "O MYTMP(iM) VALUES (" ascii
 	condition:
 		uint16(0) == 0x5a4d and filesize < 1387KB and all of them
 }
@@ -457,7 +457,7 @@ rule x64_klock {
 	strings:
 		$s1 = "Bienvenue dans un processus distant" fullword wide
 		$s2 = "klock.dll" fullword ascii
-		$s3 = "Erreur : le bureau courant (" fullword wide
+		$s3 = "Erreur : le bureau courant (" wide
 		$s4 = "klock de mimikatz pour Windows" fullword wide
 	condition:
 		uint16(0) == 0x5a4d and filesize < 907KB and all of them
@@ -560,9 +560,9 @@ rule Dll_LoadEx {
 	strings:
 		$s0 = "WiNrOOt@126.com" fullword wide
 		$s1 = "Dll_LoadEx.EXE" fullword wide
-		$s3 = "You Already Loaded This DLL ! :(" fullword ascii
+		$s3 = "You Already Loaded This DLL ! :(" ascii
 		$s10 = "Dll_LoadEx Microsoft " fullword wide
-		$s17 = "Can't Load This Dll ! :(" fullword ascii
+		$s17 = "Can't Load This Dll ! :(" ascii
 		$s18 = "WiNrOOt" fullword wide
 		$s20 = " Dll_LoadEx(&A)..." fullword wide
 	condition:

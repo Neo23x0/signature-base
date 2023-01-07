@@ -47,7 +47,7 @@ rule Msfpayloads_msf_psh {
       hash1 = "5cc6c7f1aa75df8979be4a16e36cece40340c6e192ce527771bdd6463253e46f"
    strings:
       $s1 = "powershell.exe -nop -w hidden -e" ascii
-      $s2 = "Call Shell(" fullword ascii
+      $s2 = "Call Shell(" ascii
       $s3 = "Sub Workbook_Open()" fullword ascii
    condition:
       all of them
@@ -66,7 +66,7 @@ rule Msfpayloads_msf_exe {
       $s2 = " = Shell(" ascii
       $s3 = "= Environ(\"USERPROFILE\")" fullword ascii
       $s4 = "'**************************************************************" fullword ascii
-      $s5 = "ChDir (" fullword ascii
+      $s5 = "ChDir (" ascii
       $s6 = "'* MACRO CODE" fullword ascii
    condition:
       4 of them

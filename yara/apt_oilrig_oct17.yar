@@ -95,7 +95,7 @@ rule OilRig_ISMAgent_Campaign_Samples3 {
 
       $s1 = "out.exe" fullword ascii
       $s2 = "\\Win32Project1\\Release\\Win32Project1.pdb" ascii
-      $s3 = "C:\\windows\\system32\\cmd.exe /c (" fullword ascii
+      $s3 = "C:\\windows\\system32\\cmd.exe /c (" ascii
       $s4 = "Content-Disposition: form-data; name=\"file\"; filename=\"a.a\"" fullword ascii
       $s5 = "Agent configured successfully" fullword ascii
       $s6 = "\\runlog*" ascii

@@ -81,7 +81,7 @@ rule RUAG_APT_Malware_Gen2 {
       hash3 = "fe3ffd7438c0d38484bf02a78a19ea81a6f51b4b3f2b2228bd21974c2538bbcd"
       hash4 = "c49111af049dd9746c6b1980db6e150b2a79ca1569b23ed2cba81c85c00d82b4"
    strings:
-      $x1 = "Internal command not support =((" fullword ascii
+      $x1 = "Internal command not support =((" ascii
       $x2 = "L|-1|AS_CUR_USER:OpenProcessToken():%d, %s|" fullword ascii
       $x3 = "L|-1|CreateProcessAsUser():%d, %s|" fullword ascii
       $x4 = "AS_CUR_USER:OpenProcessToken():%d" fullword ascii

@@ -190,7 +190,7 @@ rule subTee_nativecmd {
 		$s4 = "Windows NT Version %lu.%lu" fullword wide /* PEStudio Blacklist: os */ /* score: '19.00' */
 		$s5 = "Usage: destination [reference]" fullword wide /* PEStudio Blacklist: strings */ /* score: '16.00' */
 		$s6 = ".com;.exe;.bat;.cmd" fullword wide /* score: '15.00' */
-		$s7 = ") -%s-> %s (" fullword ascii /* score: '14.00' */
+		$s7 = ") -%s-> %s (" ascii /* score: '14.00' */
 		$s8 = "cmdextversion" fullword wide /* score: '14.00' */
 		$s10 = "\"%s\" /K %s" fullword wide /* score: '11.02' */
 		$s12 = "DEBUG: Cannot allocate memory for ptrNextNode->ptrNext!" fullword ascii /* PEStudio Blacklist: strings */ /* score: '10.00' */
