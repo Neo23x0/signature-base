@@ -64,7 +64,7 @@ rule Greenbug_Malware_3 {
    strings:
       $x1 = "F:\\Projects\\Bot\\Bot\\Release\\Ism.pdb" fullword ascii
       $x2 = "C:\\ddd\\wer2.txt" fullword wide
-      $x3 = "\\Microsoft\\Windows\\tmp43hh11.txt" fullword wide
+      $x3 = "\\Microsoft\\Windows\\tmp43hh11.txt" wide
    condition:
       1 of them
 }
@@ -149,7 +149,7 @@ rule Greenbug_Malware_Nov17_1 {
       $x5 = "a67d0db8a2a173347654432503702aa3" fullword ascii
       $x6 = "!!! can not create output file !!!" fullword ascii
 
-      $s1 = "\\runlog*" fullword ascii
+      $s1 = "\\runlog*" ascii
       $s2 = "can not specify username!!" fullword ascii
       $s3 = "Agent can not be configured" fullword ascii
    condition:

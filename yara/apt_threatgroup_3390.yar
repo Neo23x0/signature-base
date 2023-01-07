@@ -162,9 +162,9 @@ rule HttpBrowser_RAT_dropper_Gen2 {
 		$s1 = "navlu.dll.urlUT" fullword ascii
 		$s2 = "VPDN_LU.exeUT" fullword ascii
 		$s3 = "pnipcn.dllUT" fullword ascii
-		$s4 = "\\ssonsvr.exe" fullword ascii
+		$s4 = "\\ssonsvr.exe" ascii
 		$s5 = "/c del /q %s" fullword ascii
-		$s6 = "\\setup.exe" fullword ascii 
+		$s6 = "\\setup.exe" ascii 
 		$s7 = "msi.dllUT" fullword ascii
 
 		$op0 = { 8b 45 0c 83 38 00 0f 84 98 } /* Opcode */

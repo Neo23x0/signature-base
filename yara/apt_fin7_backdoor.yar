@@ -24,7 +24,7 @@ rule FIN7_Dropper_Aug17 {
       $s1 = "Scripting.FileSystemObject$" fullword ascii
       $s2 = "PROJECT.THISDOCUMENT.AUTOOPEN" fullword wide
       $s3 = "Project.ThisDocument.AutoOpen" fullword wide
-      $s4 = "\\system3" fullword ascii
+      $s4 = "\\system3" ascii
       $s5 = "ShellV" fullword ascii
    condition:
       ( uint16(0) == 0xcfd0 and filesize < 700KB and 1 of ($x*) or all of ($s*) )

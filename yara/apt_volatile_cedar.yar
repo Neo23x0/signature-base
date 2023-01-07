@@ -24,9 +24,9 @@ rule Explosion_Sample_1 {
 		$s9 = "WinAutologon From Winlogon Reg" fullword ascii
 		$s10 = "82BD0E67-9FEA-4748-8672-D5EFE5B779B0" fullword ascii
 		$s11 = "IE:Password-Protected sites" fullword ascii
-		$s12 = "\\his.sys" fullword ascii
+		$s12 = "\\his.sys" ascii
 		$s13 = "HTTP Password" fullword ascii
-		$s14 = "\\data.sys" fullword ascii
+		$s14 = "\\data.sys" ascii
 		$s15 = "EL$_RasDefaultCredentials#0" fullword wide
 		$s17 = "Office Outlook HTTP" fullword ascii
 		$s20 = "Hist :<b> %ws</b>  :%s </br></br>" fullword ascii

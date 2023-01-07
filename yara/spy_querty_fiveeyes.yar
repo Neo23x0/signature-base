@@ -124,8 +124,8 @@ rule FiveEyes_QUERTY_Malwaresig_20120_dll {
 		date = "2015/01/18"
 		hash = "6811bfa3b8cda5147440918f83c40237183dbd25"
 	strings:
-		$s0 = "\\QwLog_%d-%02d-%02d-%02d%02d%02d.txt" fullword wide
-		$s1 = "\\QwLog_%d-%02d-%02d-%02d%02d%02d.xml" fullword wide
+		$s0 = "\\QwLog_%d-%02d-%02d-%02d%02d%02d.txt" wide
+		$s1 = "\\QwLog_%d-%02d-%02d-%02d%02d%02d.xml" wide
 		$s2 = "Failed to send the EQwerty_driverStatusCommand to the implant." fullword ascii
 		$s3 = "- Log Used (number of windows) - %d" fullword wide
 		$s4 = "- Log Limit (number of windows) - %d" fullword wide

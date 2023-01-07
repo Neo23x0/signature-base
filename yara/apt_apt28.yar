@@ -42,7 +42,7 @@ rule APT28_SourFace_Malware1 {
 	strings:
 		$s0 = "coreshell.dll" fullword wide /* PEStudio Blacklist: strings */
 		$s1 = "Core Shell Runtime Service" fullword wide /* PEStudio Blacklist: strings */
-		$s2 = "\\chkdbg.log" fullword wide
+		$s2 = "\\chkdbg.log" wide
 	condition:
 		uint16(0) == 0x5a4d and filesize < 62KB and all of them
 }

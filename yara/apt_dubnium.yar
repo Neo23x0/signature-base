@@ -52,7 +52,7 @@ rule Dubnium_Sample_3 {
 		$x2 = "del /f \"%s\" " fullword ascii
 		$s1 = "del /f /ah \"%s\" " fullword ascii
 		$s2 = "if exist \"%s\" goto Rept " fullword ascii
-		$s3 = "\\*.*.lnk" fullword ascii
+		$s3 = "\\*.*.lnk" ascii
 		$s4 = "Dropped" fullword ascii
 	condition:
 		uint16(0) == 0x5a4d and filesize < 2000KB and 5 of them

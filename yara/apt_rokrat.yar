@@ -22,7 +22,7 @@ rule ROKRAT_Malware {
       $x4 = "c:\\temp\\%d.tmp" ascii fullword
 
       $s1 = "%s%s%04d%02d%02d%02d%02d%02d.jar" fullword ascii
-      $s2 = "\\Aboard\\Acm%c%c%c.exe" fullword ascii
+      $s2 = "\\Aboard\\Acm%c%c%c.exe" ascii
 
       $a1 = "ython" ascii fullword
       $a2 = "iddler" ascii fullword

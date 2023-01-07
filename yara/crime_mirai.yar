@@ -31,7 +31,7 @@ rule Mirai_Botnet_Malware {
 		$x1 = "POST /cdn-cgi/" fullword ascii
 		$x2 = "/dev/misc/watchdog" fullword ascii
 		$x3 = "/dev/watchdog" ascii
-		$x4 = "\\POST /cdn-cgi/" fullword ascii
+		$x4 = "\\POST /cdn-cgi/" ascii
 		$x5 = ".mdebug.abi32" fullword ascii
 
 		$s1 = "LCOGQGPTGP" fullword ascii

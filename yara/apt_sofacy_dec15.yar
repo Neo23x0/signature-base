@@ -46,7 +46,7 @@ rule Sofacy_AZZY_Backdoor_Implant_1 {
 		date = "2015-12-04"
 		hash = "1bab1a3e0e501d3c14652ecf60870e483ed4e90e500987c35489f17a44fef26c"
 	strings:
-		$s1 = "\\tf394kv.dll" fullword wide
+		$s1 = "\\tf394kv.dll" wide
 		$s2 = "DWN_DLL_MAIN.dll" fullword ascii
 		$s3 = "?SendDataToServer_2@@YGHPAEKEPAPAEPAK@Z" ascii
 		$s4 = "?Applicate@@YGHXZ" ascii

@@ -33,7 +33,7 @@ rule PlugX_J16_Gen {
 		$s11 = "Mozilla/4.0 (compatible; MSIE " fullword wide
 		$s12 = "; Windows NT %d.%d" fullword wide
 		$s13 = "SOFTWARE\\Microsoft\\Internet Explorer\\Version Vector" fullword wide
-		$s14 = "\\bug.log" fullword wide
+		$s14 = "\\bug.log" wide
 	condition:
 		( uint16(0) == 0x5a4d and filesize < 600KB and ( 1 of ($x*) or 4 of ($s*) ) ) or ( 8 of them )
 }

@@ -28,7 +28,7 @@ rule HoneyBee_Dropper_MalDoc {
       $s3 = "sTempPathP" fullword ascii
       $s4 = "sTempFile" fullword ascii
       $s5 = "GetObjectz" fullword ascii
-      $s6 = "\\setup.cab" fullword ascii
+      $s6 = "\\setup.cab" ascii
    condition:
       uint16(0) == 0xcfd0 and filesize < 400KB and ( 1 of ($x*) or 4 of them )
 }
@@ -53,7 +53,7 @@ rule OpHoneybee_Malware_1 {
       $s1 = "[DLL_PROCESS_ATTACH]" fullword ascii
       $s2 = "cmd /c systeminfo >%s" fullword ascii
       $s3 = "post.txt" fullword ascii
-      $s4 = "\\temp.ini" fullword ascii
+      $s4 = "\\temp.ini" ascii
       $s5 = "[GetFTPAccountInfo_10001712]" fullword ascii
       $s6 = "ComSysAppMutex" fullword ascii
       $s7 = "From %s (%02d-%02d %02d-%02d-%02d).txt" fullword ascii

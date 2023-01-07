@@ -1334,7 +1334,7 @@ rule EquationGroup_pwdump_Implant {
    strings:
       $s1 = ".?AVFeFinallyFailure@@" fullword ascii
       $s8 = ".?AVFeFinallySuccess@@" fullword ascii
-      $s3 = "\\system32\\win32k.sys" fullword wide
+      $s3 = "\\system32\\win32k.sys" wide
    condition:
       ( uint16(0) == 0x5a4d and filesize < 100KB and all of them )
 }
@@ -1400,12 +1400,12 @@ rule EquationGroup_EquationDrug_mstcp32 {
       $s1 = "mstcp32.sys" fullword wide
       $s2 = "p32.sys" fullword ascii
       $s3 = "\\Registry\\User\\CurrentUser\\" wide
-      $s4 = "\\DosDevices\\%ws" fullword wide
-      $s5 = "\\Device\\%ws_%ws" fullword wide
+      $s4 = "\\DosDevices\\%ws" wide
+      $s5 = "\\Device\\%ws_%ws" wide
       $s6 = "sys\\mstcp32.dbg" fullword ascii
       $s7 = "%ws%03d%ws%wZ" fullword wide
       $s8 = "TCP/IP driver" fullword wide
-      $s9 = "\\Device\\%ws" fullword wide
+      $s9 = "\\Device\\%ws" wide
    condition:
       ( uint16(0) == 0x5a4d and filesize < 200KB and 7 of them ) or ( all of them )
 }
@@ -1604,12 +1604,12 @@ rule EquationGroup_DXGHLP16 {
       $s1 = "DXGHLP16.SYS" fullword wide
       $s2 = "P16.SYS" fullword ascii
       $s3 = "\\Registry\\User\\CurrentUser\\" wide
-      $s4 = "\\DosDevices\\%ws" fullword wide
-      $s5 = "\\Device\\%ws_%ws" fullword wide
+      $s4 = "\\DosDevices\\%ws" wide
+      $s5 = "\\Device\\%ws_%ws" wide
       $s6 = "ct@SYS\\DXGHLP16.dbg" fullword ascii
       $s7 = "%ws%03d%ws%wZ" fullword wide
       $s8 = "TCP/IP driver" fullword wide
-      $s9 = "\\Device\\%ws" fullword wide
+      $s9 = "\\Device\\%ws" wide
    condition:
       ( uint16(0) == 0x5a4d and filesize < 200KB and all of them )
 }

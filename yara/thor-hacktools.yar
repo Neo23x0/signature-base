@@ -613,7 +613,7 @@ rule CN_Hacktool_S_EXE_Portscanner {
       score = 70
       date = "12.10.2014"
    strings:
-      $s0 = "\\Result.txt" fullword ascii
+      $s0 = "\\Result.txt" ascii
       $s1 = "By:ZT QQ:376789051" fullword ascii
       $s2 = "(http://www.eyuyan.com)" fullword wide
    condition:
@@ -1853,7 +1853,7 @@ rule UnPack_rar_Folder_InjectT {
       $s3 = "%s -Stop                             -->To Stop The Service" fullword ascii
       $s4 = "The Port Is Out Of Range" fullword ascii
       $s7 = "Fail To Set The Port" fullword ascii
-      $s11 = "\\psapi.dll" fullword ascii
+      $s11 = "\\psapi.dll" ascii
       $s20 = "TInject.Dll" fullword ascii
 
       $x1 = "Software\\Microsoft\\Internet Explorer\\WinEggDropShell" fullword ascii
@@ -1915,7 +1915,7 @@ rule QQ_zip_Folder_QQ {
       $s4 = "QQ2000b.exe" fullword wide
       $s5 = "haoq@neusoft.com" fullword ascii
       $s9 = "QQ2000b.exe" fullword ascii
-      $s10 = "\\qq2000b.exe" fullword ascii
+      $s10 = "\\qq2000b.exe" ascii
       $s12 = "WINDSHELL STUDIO[WINDSHELL " fullword wide
       $s17 = "SOFTWARE\\HAOQIANG\\" fullword ascii
    condition:
@@ -2527,14 +2527,14 @@ rule superscan3_0 {
       score = 60
       hash = "a9a02a14ea4e78af30b8b4a7e1c6ed500a36bc4d"
    strings:
-      $s0 = "\\scanner.ini" fullword ascii
-      $s1 = "\\scanner.exe" fullword ascii
-      $s2 = "\\scanner.lst" fullword ascii
-      $s4 = "\\hensss.lst" fullword ascii
+      $s0 = "\\scanner.ini" ascii
+      $s1 = "\\scanner.exe" ascii
+      $s2 = "\\scanner.lst" ascii
+      $s4 = "\\hensss.lst" ascii
       $s5 = "STUB32.EXE" fullword wide
       $s6 = "STUB.EXE" fullword wide
-      $s8 = "\\ws2check.exe" fullword ascii
-      $s9 = "\\trojans.lst" fullword ascii
+      $s8 = "\\ws2check.exe" ascii
+      $s9 = "\\trojans.lst" ascii
       $s10 = "1996 InstallShield Software Corporation" fullword wide
    condition:
       all of them
@@ -3299,7 +3299,7 @@ rule WPR_loader_EXE {
       $s2 = "gLSASS.EXE" fullword wide
       $s3 = "WriteProcessMemory failed" fullword wide
       $s4 = "wow64 process NOT created" fullword wide
-      $s5 = "\\ast.exe" fullword wide
+      $s5 = "\\ast.exe" wide
       $s6 = "Exit code=%s, status=%d" fullword wide
       $s7 = "VirtualProtect failed" fullword wide
       $s8 = "nSeDebugPrivilege" fullword wide
@@ -3352,7 +3352,7 @@ rule WPR_Passscape_Loader {
    strings:
       $s1 = "SYSTEM\\CurrentControlSet\\Services\\PasscapeLoader64" fullword wide
       $s2 = "ast64.dll" fullword ascii
-      $s3 = "\\loader64.exe" fullword wide
+      $s3 = "\\loader64.exe" wide
       $s4 = "Passcape 64-bit Loader Service" fullword wide
       $s5 = "PasscapeLoader64" fullword wide
       $s6 = "ast64 {msg1GkjN7Sh8sg2Al7ker63f}" fullword wide
@@ -3507,9 +3507,9 @@ rule Disclosed_0day_POCs_lpe {
       $x1 = "msiexec /f c:\\users\\%username%\\downloads\\" fullword ascii
       $x2 = "c:\\users\\%username%\\downloads\\bat.bat" fullword ascii
       $x3 = "\\payload.msi /quiet" ascii
-      $x4 = "\\payload2\\WindowsTrustedRTProxy.sys" fullword wide
-      $x5 = "\\payload2" fullword wide
-      $x6 = "\\payload" fullword wide
+      $x4 = "\\payload2\\WindowsTrustedRTProxy.sys" wide
+      $x5 = "\\payload2" wide
+      $x6 = "\\payload" wide
       $x7 = "WindowsTrustedRTProxy.sys /grant:r administrators:RX" ascii
    condition:
       ( uint16(0) == 0x5a4d and filesize < 70KB and 1 of them )
@@ -3525,7 +3525,7 @@ rule Disclosed_0day_POCs_exploit {
       hash1 = "632d35a0bac27c9b2f3f485d43ebba818089cf72b3b8c4d2e87ce735b2e67d7e"
    strings:
       $x1 = "\\Release\\exploit.pdb" ascii
-      $x2 = "\\favorites\\stolendata.txt" fullword wide
+      $x2 = "\\favorites\\stolendata.txt" wide
    condition:
       ( uint16(0) == 0x5a4d and filesize < 200KB and 1 of them )
 }
@@ -3681,7 +3681,7 @@ rule AllTheThings {
    strings:
       $x1 = "\\obj\\Debug\\AllTheThings.pdb" ascii
       $x2 = "AllTheThings.exe" fullword wide
-      $x3 = "\\AllTheThings.dll" fullword ascii
+      $x3 = "\\AllTheThings.dll" ascii
       $x4 = "Hello From Main...I Don't Do Anything" fullword wide
       $x5 = "I am a basic COM Object" fullword wide
       $x6 = "I shouldn't really execute either." fullword wide

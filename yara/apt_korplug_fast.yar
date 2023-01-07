@@ -13,7 +13,7 @@ rule Korplug_FAST {
         $s1 = "%s\\rundll32.exe \"%s\"," fullword ascii
         $s2 = "nvdisps.dll" fullword ascii
         $s3 = "%snvdisps.dll" fullword ascii
-        $s4 = "\\winhlp32.exe" fullword ascii
+        $s4 = "\\winhlp32.exe" ascii
         $s5 = "nvdisps_user.dat" fullword ascii
         $s6 = "%snvdisps_user.dat" fullword ascii
     condition:

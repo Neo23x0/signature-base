@@ -223,11 +223,11 @@ rule Codoso_Gh0st_1 {
 
 		$c1 = "Elevation:Administrator!new:" wide
 		$c2 = "Global\\RUNDLL32EXITEVENT_NAME{12845-8654-543}" fullword ascii
-		$c3 = "\\sysprep\\sysprep.exe" fullword wide
-		$c4 = "\\sysprep\\CRYPTBASE.dll" fullword wide
+		$c3 = "\\sysprep\\sysprep.exe" wide
+		$c4 = "\\sysprep\\CRYPTBASE.dll" wide
 		$c5 = "Global\\TERMINATEEVENT_NAME{12845-8654-542}" fullword ascii
 		$c6 = "ConsentPromptBehaviorAdmin" fullword ascii
-		$c7 = "\\sysprep" fullword wide
+		$c7 = "\\sysprep" wide
 		$c8 = "Global\\UN{5FFC0C8B-8BE5-49d5-B9F2-BCDC8976EE10}" fullword ascii
 	condition:
 		uint16(0) == 0x5a4d and filesize < 1000KB and ( 4 of ($s*) or 4 of ($c*) ) or

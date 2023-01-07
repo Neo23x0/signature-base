@@ -19,7 +19,7 @@ rule GhostDragon_Gh0stRAT {
 	strings:
 		$x1 = "REG ADD HKEY_LOCAL_MACHINE\\%s /v ServiceDll /t REG_EXPAND_SZ /d \"%s\"" fullword ascii
 		$x2 = "Global\\REALCHEL_GLOBAL_SUBMIT_20031020_" fullword ascii
-		$x3 = "\\xclolg2.tmp" fullword ascii
+		$x3 = "\\xclolg2.tmp" ascii
 		$x4 = "Http/1.1 403 Forbidden" fullword ascii
 		$x5 = "%sxsd%d.pif" fullword ascii
 		$x6 = "%s\\%s32.dl_" fullword ascii
@@ -29,7 +29,7 @@ rule GhostDragon_Gh0stRAT {
 
 		$s1 = "viewsc.dll" fullword ascii
 		$s2 = "Proxy-Connection:   Keep-Alive" fullword ascii
-		$s3 = "\\sfc_os.dll" fullword ascii
+		$s3 = "\\sfc_os.dll" ascii
 		$s4 = "Mozilla/4.0 (compatible)" fullword ascii
 		$s5 = "Http/1.1 403 Forbidden" fullword ascii
 		$s6 = "CONNECT   %s:%d   HTTP/1.1" fullword ascii

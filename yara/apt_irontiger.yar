@@ -22,7 +22,7 @@ rule IronPanda_DNSTunClient {
 		$s3 = "C:\\Windows\\System32\\cmd.exe /C schtasks /create /tn \"\\Microsoft\\Windows\\PLA\\System\\Microsoft Windows\" /tr " fullword ascii
 		$s4 = "C:\\Windows\\System32\\cmd.exe /C schtasks /create /tn \"Microsoft Windows\" /tr " fullword ascii
 		$s5 = "taskkill /im conime.exe" fullword ascii
-		$s6 = "\\dns control\\t-DNSTunnel\\DnsTunClient\\DnsTunClient.cpp" fullword ascii
+		$s6 = "\\dns control\\t-DNSTunnel\\DnsTunClient\\DnsTunClient.cpp" ascii
 		$s7 = "UDP error:can not bing the port(if there is unclosed the bind process?)" fullword ascii
 		$s8 = "use error domain,set domain pls use -d or -domain mark(Current: %s,recv %s)" fullword ascii
 		$s9 = "error: packet num error.the connection have condurt,pls try later" fullword ascii
@@ -106,7 +106,7 @@ rule IronPanda_Malware2 {
 		date = "2015-09-16"
 		hash = "a89c21dd608c51c4bf0323d640f816e464578510389f9edcf04cd34090decc91"
 	strings:
-		$s0 = "\\setup.exe" fullword ascii
+		$s0 = "\\setup.exe" ascii
 		$s1 = "msi.dll.urlUT" fullword ascii
 		$s2 = "msi.dllUT" fullword ascii
 		$s3 = "setup.exeUT" fullword ascii

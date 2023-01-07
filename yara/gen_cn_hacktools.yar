@@ -106,7 +106,7 @@ rule Pc_pc2015 {
 		date = "2015-06-13"
 		hash = "de4f098611ac9eece91b079050b2d0b23afe0bcb"
 	strings:
-		$s0 = "\\svchost.exe" fullword ascii
+		$s0 = "\\svchost.exe" ascii
 		$s1 = "LON\\OD\\O-\\O)\\O%\\O!\\O=\\O9\\O5\\O1\\O" fullword ascii
 		$s8 = "%s%08x.001" fullword ascii
 	condition:
@@ -286,7 +286,7 @@ rule update_PcInit {
 		date = "2015-06-13"
 		hash = "a6facc4453f8cd81b8c18b3b3004fa4d8e2f5344"
 	strings:
-		$s1 = "\\svchost.exe" fullword ascii
+		$s1 = "\\svchost.exe" ascii
 		$s2 = "%s%08x.001" fullword ascii
 		$s3 = "Global\\ps%08x" fullword ascii
 		$s4 = "drivers\\" fullword ascii /* Goodware String - occured 2 times */
@@ -842,8 +842,8 @@ rule HKTL_CN_dat_xpf {
 		hash = "761125ab594f8dc996da4ce8ce50deba49c81846"
 	strings:
 		$s1 = "UnHook IoGetDeviceObjectPointer ok!" fullword ascii
-		$s2 = "\\Device\\XScanPF" fullword wide
-		$s3 = "\\DosDevices\\XScanPF" fullword wide
+		$s2 = "\\Device\\XScanPF" wide
+		$s3 = "\\DosDevices\\XScanPF" wide
 	condition:
 		uint16(0) == 0x5a4d and filesize < 25KB and all of them
 }
@@ -928,7 +928,7 @@ rule cndcom_cndcom {
 		$s4 = "- Warning:This Code is more like a dos tool!(Modify by pingker)" fullword ascii
 		$s5 = "Windows NT SP6 (Chinese)" fullword ascii
 		$s6 = "- Original code by FlashSky and Benjurry" fullword ascii
-		$s7 = "\\C$\\123456111111111111111.doc" fullword wide
+		$s7 = "\\C$\\123456111111111111111.doc" wide
 		$s8 = "shell3all.c" fullword ascii
 	condition:
 		uint16(0) == 0x5a4d and filesize < 100KB and 2 of them
@@ -1122,7 +1122,7 @@ rule CN_Tools_pc {
 		date = "2015-06-13"
 		hash = "5cf8caba170ec461c44394f4058669d225a94285"
 	strings:
-		$s0 = "\\svchost.exe" fullword ascii
+		$s0 = "\\svchost.exe" ascii
 		$s2 = "%s%08x.001" fullword ascii
 		$s3 = "Qy001Service" fullword ascii
 		$s4 = "/.MIKY" fullword ascii
@@ -1255,7 +1255,7 @@ rule IDTools_For_WinXP_IdtTool_2 {
 		date = "2015-06-13"
 		hash = "07feb31dd21d6f97614118b8a0adf231f8541a67"
 	strings:
-		$s0 = "\\Device\\devIdtTool" fullword wide
+		$s0 = "\\Device\\devIdtTool" wide
 		$s1 = "IoDeleteSymbolicLink" fullword ascii  /* Goodware String - occured 467 times */
 		$s3 = "IoDeleteDevice" fullword ascii  /* Goodware String - occured 993 times */
 		$s6 = "IoCreateSymbolicLink" fullword ascii /* Goodware String - occured 467 times */
@@ -1366,7 +1366,7 @@ rule Sword1_5 {
 		$s4 = "http://www.md5decrypter.co.uk/feed/api.aspx?" fullword wide
 		$s6 = "ListBox_Command" fullword wide
 		$s13 = "md=7fef6171469e80d32c0559f88b377245&submit=MD5+Crack" fullword wide
-		$s18 = "\\Set.ini" fullword wide
+		$s18 = "\\Set.ini" wide
 		$s19 = "OpenFileDialog1" fullword wide
 		$s20 = " (*.txt)|*.txt" fullword wide
 	condition:
@@ -1651,9 +1651,9 @@ rule cyclotron {
 		date = "2015-06-13"
 		hash = "5b63473b6dc1e5942bf07c52c31ba28f2702b246"
 	strings:
-		$s1 = "\\Device\\IDTProt" fullword wide
+		$s1 = "\\Device\\IDTProt" wide
 		$s2 = "IoDeleteSymbolicLink" fullword ascii  /* Goodware String - occured 467 times */
-		$s3 = "\\??\\slIDTProt" fullword wide
+		$s3 = "\\??\\slIDTProt" wide
 		$s4 = "IoDeleteDevice" fullword ascii  /* Goodware String - occured 993 times */
 		$s5 = "IoCreateSymbolicLink" fullword ascii /* Goodware String - occured 467 times */
 	condition:
@@ -2010,7 +2010,7 @@ rule unknown2 {
 		$s2 = "http://www.md5decrypter.co.uk/feed/api.aspx?" fullword wide
 		$s3 = "http://www.md5.com.cn" fullword wide
 		$s4 = "1.5.exe" fullword wide
-		$s5 = "\\Set.ini" fullword wide
+		$s5 = "\\Set.ini" wide
 		$s6 = "OpenFileDialog1" fullword wide
 		$s7 = " (*.txt)|*.txt" fullword wide
 	condition:
@@ -2045,7 +2045,7 @@ rule OracleScan {
 		hash = "10ff7faf72fe6da8f05526367b3522a2408999ec"
 	strings:
 		$s1 = "MYBLOG:HTTP://HI.BAIDU.COM/0X24Q" fullword ascii
-		$s2 = "\\Borland\\Delphi\\RTL" fullword ascii
+		$s2 = "\\Borland\\Delphi\\RTL" ascii
 		$s3 = "USER_NAME" ascii
 		$s4 = "FROMWWHERE" fullword ascii
 	condition:
@@ -2132,8 +2132,8 @@ rule ChinaChopper_caidao {
 	strings:
 		$s1 = "Pass,Config,n{)" fullword ascii
 		$s2 = "phMYSQLZ" fullword ascii
-		$s3 = "\\DHLP\\." fullword ascii
-		$s4 = "\\dhlp\\." fullword ascii
+		$s3 = "\\DHLP\\." ascii
+		$s4 = "\\dhlp\\." ascii
 		$s5 = "SHAutoComple" fullword ascii
 		$s6 = "MainFrame" ascii
 	condition:

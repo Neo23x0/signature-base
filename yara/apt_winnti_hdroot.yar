@@ -18,7 +18,7 @@ rule HDRoot_Sample_Jul17_1 {
       hash1 = "6d2ad82f455becc8c830d000633a370857928c584246a7f41fe722cc46c0d113"
    strings:
       $s1 = "gleupdate.dll" fullword ascii
-      $s2 = "\\DosDevices\\%ws\\system32\\%ws" fullword wide
+      $s2 = "\\DosDevices\\%ws\\system32\\%ws" wide
       $s3 = "l\\Driver\\nsiproxy" fullword wide
    condition:
       ( uint16(0) == 0x5a4d and filesize < 60KB and 3 of them )
@@ -47,7 +47,7 @@ rule HDRoot_Sample_Jul17_2 {
       $u2 = "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; Maxthon)" fullword ascii
       $u3 = "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; Maxthon; TERA:" fullword ascii
 
-      $s1 = "\\system32\\ntoskrnl.exe" fullword ascii
+      $s1 = "\\system32\\ntoskrnl.exe" ascii
       $s2 = "Schedsvc.dll" fullword wide
       $s3 = "dllserver64.dll" fullword ascii
       $s4 = "C:\\TERA_SR.txt" fullword ascii

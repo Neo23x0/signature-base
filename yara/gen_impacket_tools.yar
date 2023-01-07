@@ -35,7 +35,7 @@ rule Impacket_Tools_wmiexec {
    strings:
       $s1 = "bwmiexec.exe.manifest" fullword ascii
       $s2 = "swmiexec" fullword ascii
-      $s3 = "\\yzHPlU=QA" fullword ascii
+      $s3 = "\\yzHPlU=QA" ascii
    condition:
       ( uint16(0) == 0x5a4d and filesize < 17000KB and 2 of them )
 }
@@ -65,7 +65,7 @@ rule Impacket_Tools_mmcexec {
       hash1 = "263a1655a94b7920531e123a8c9737428f2988bf58156c62408e192d4b2a63fc"
    strings:
       $s1 = "smmcexec" fullword ascii
-      $s2 = "\\yzHPlU=QA" fullword ascii
+      $s2 = "\\yzHPlU=QA" ascii
    condition:
       ( uint16(0) == 0x5a4d and filesize < 16000KB and all of them )
 }
@@ -294,7 +294,7 @@ rule Impacket_Tools_wmipersist {
       hash1 = "2527fff1a3c780f6a757f13a8912278a417aea84295af1abfa4666572bbbf086"
    strings:
       $s1 = "swmipersist" fullword ascii
-      $s2 = "\\yzHPlU=QA" fullword ascii
+      $s2 = "\\yzHPlU=QA" ascii
    condition:
       ( uint16(0) == 0x5a4d and filesize < 17000KB and all of them )
 }
@@ -324,7 +324,7 @@ rule Impacket_Tools_wmiquery {
       hash1 = "202a1d149be35d96e491b0b65516f631f3486215f78526160cf262d8ae179094"
    strings:
       $s1 = "swmiquery" fullword ascii
-      $s2 = "\\yzHPlU=QA" fullword ascii
+      $s2 = "\\yzHPlU=QA" ascii
    condition:
       ( uint16(0) == 0x5a4d and filesize < 17000KB and all of them )
 }

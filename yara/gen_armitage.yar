@@ -20,9 +20,9 @@ rule Armitage_msfconsole {
       modified = "2022-08-18"
       hash1 = "662ba75c7ed5ac55a898f480ed2555d47d127a2d96424324b02724b3b2c95b6a"
    strings:
-      $s1 = "\\umeterpreter\\u >" fullword ascii
+      $s1 = "\\umeterpreter\\u >" ascii
       $s3 = "^meterpreter >" fullword ascii
-      $s11 = "\\umsf\\u>" fullword ascii
+      $s11 = "\\umsf\\u>" ascii
    condition:
       filesize < 1KB and 2 of them
 }

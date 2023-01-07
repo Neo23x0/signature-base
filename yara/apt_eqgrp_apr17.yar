@@ -908,7 +908,7 @@ rule EquationGroup__funnelout_v4_1_0_1 {
    strings:
       $s1 = "header(\"Set-Cookie: bbsessionhash=\" . \\$hash . \"; path=/; HttpOnly\");" fullword ascii
       $s2 = "if ($code =~ /proxyhost/) {" fullword ascii
-      $s3 = "\\$rk[1] = \\$rk[1] - 1;" fullword ascii
+      $s3 = "\\$rk[1] = \\$rk[1] - 1;" ascii
       $s4 = "#existsUser($u) or die \"User '$u' does not exist in database.\\n\";" fullword ascii
    condition:
       ( uint16(0) == 0x2123 and filesize < 100KB and 2 of them ) or ( all of them )
@@ -2710,7 +2710,7 @@ rule EquationGroup_Toolset_Apr17_GetAdmin_LSADUMP_ModifyPrivilege_Implant {
       hash1 = "c8b354793ad5a16744cf1d4efdc5fe48d5a0cf0657974eb7145e0088fcf609ff"
       hash2 = "5f06ec411f127f23add9f897dc165eaa68cbe8bb99da8f00a4a360f108bb8741"
    strings:
-      $s1 = "\\system32\\win32k.sys" fullword wide
+      $s1 = "\\system32\\win32k.sys" wide
       $s2 = "hKeAddSystemServiceTable" fullword ascii
       $s3 = "hPsDereferencePrimaryToken" fullword ascii
       $s4 = "CcnFormSyncExFBC" fullword wide
@@ -2767,8 +2767,8 @@ rule EquationGroup_Toolset_Apr17_mstcp32_DXGHLP16_tdip {
       hash3 = "a5ec4d102d802ada7c5083af53fd9d3c9b5aa83be9de58dbb4fac7876faf6d29"
    strings:
       $s1 = "\\Registry\\User\\CurrentUser\\" wide
-      $s2 = "\\DosDevices\\%ws" fullword wide
-      $s3 = "\\Device\\%ws_%ws" fullword wide
+      $s2 = "\\DosDevices\\%ws" wide
+      $s3 = "\\Device\\%ws_%ws" wide
       $s4 = "sys\\mstcp32.dbg" fullword ascii
       $s5 = "%ws%03d%ws%wZ" fullword wide
       $s6 = "TCP/IP driver" fullword wide

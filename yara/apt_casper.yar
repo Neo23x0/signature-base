@@ -15,10 +15,10 @@ rule Casper_Backdoor_x86 {
       $s2 = "firefox.exe" fullword ascii
       $s3 = "\"Host Process for Windows Services\"" fullword wide
 
-      $x1 = "\\Users\\*" fullword ascii
-      $x2 = "\\Roaming\\Mozilla\\Firefox\\Profiles\\*" fullword ascii
-      $x3 = "\\Mozilla\\Firefox\\Profiles\\*" fullword ascii
-      $x4 = "\\Documents and Settings\\*" fullword ascii
+      $x1 = "\\Users\\*" ascii
+      $x2 = "\\Roaming\\Mozilla\\Firefox\\Profiles\\*" ascii
+      $x3 = "\\Mozilla\\Firefox\\Profiles\\*" ascii
+      $x4 = "\\Documents and Settings\\*" ascii
 
       $y1 = "%s; %S=%S" fullword wide
       $y2 = "%s; %s=%s" fullword ascii

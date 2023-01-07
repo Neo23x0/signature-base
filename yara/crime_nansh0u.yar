@@ -88,7 +88,7 @@ rule MAL_Parite_Malware_May19_1 {
       $s1 = "taskkill /im cmd.exe /f" fullword ascii
       $s2 = "LOADERX64.dll" fullword ascii
 
-      $x1 = "\\dllhot.exe" fullword ascii
+      $x1 = "\\dllhot.exe" ascii
       $x2 = "dllhot.exe --auto --any --forever --keepalive" fullword ascii
    condition:
       uint16(0) == 0x5a4d and filesize < 10000KB and ( 1 of ($x*) or 2 of them )

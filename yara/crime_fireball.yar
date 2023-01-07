@@ -113,7 +113,7 @@ rule Fireball_winsap {
    strings:
       $s1 = "aHR0cDovL2" ascii /* base64 encoded string 'http://d3i1asoswufp5k.cloudfront.net/v4/gtg/%s?action=visit.winsap.work&update3=version,%s' */
       $s2 = "%s\\svchost.exe -k %s" fullword wide
-      $s3 = "\\SETUP.dll" fullword wide
+      $s3 = "\\SETUP.dll" wide
       $s4 = "WinSAP.dll" fullword ascii
       $s5 = "Error %u in WinHttpQueryDataAvailable." fullword ascii
       $s6 = "UPDATE OVERWRITE" fullword wide

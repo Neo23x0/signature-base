@@ -112,11 +112,11 @@ rule APT_APT41_HIGHNOON {
    strings:
       $x1 = "workdll64.dll" fullword ascii
 
-      $s1 = "\\Fonts\\Error.log" fullword ascii
+      $s1 = "\\Fonts\\Error.log" ascii
       $s2 = "[%d/%d/%d/%d:%d:%d]" fullword ascii
       $s3 = "work_end" fullword ascii
       $s4 = "work_start" fullword ascii
-      $s5 = "\\svchost.exe" fullword ascii
+      $s5 = "\\svchost.exe" ascii
       $s6 = "LoadAppInit_DLLs" fullword ascii
       $s7 = "netsvcs" fullword ascii
       $s8 = "HookAPIs ...PID %d " fullword ascii
@@ -140,7 +140,7 @@ rule APT_APT41_HIGHNOON_2 {
 
       $s1 = "PlusDll.dll" fullword ascii
       $s2 = "ShutDownEvent.dll" fullword ascii
-      $s3 = "\\svchost.exe" fullword ascii
+      $s3 = "\\svchost.exe" ascii
    condition:
       uint16(0) == 0x5a4d and filesize < 600KB and (
          pe.imphash() == "b70358b00dd0138566ac940d0da26a03" or
@@ -160,7 +160,7 @@ rule APT_APT41_HIGHNOON_BIN {
       hash2 = "79190925bd1c3fae65b0d11db40ac8e61fb9326ccfed9b7e09084b891089602d"
    strings:
       $s1 = "PlusDll.dll" fullword ascii
-      $s2 = "\\Device\\PORTLESS_DeviceName" fullword wide
+      $s2 = "\\Device\\PORTLESS_DeviceName" wide
       $s3 = "%s%s\\Security" fullword ascii
       $s4 = "%s\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Internet Settings" fullword ascii
       $s5 = "%s%s\\Enum" fullword ascii

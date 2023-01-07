@@ -61,7 +61,7 @@ rule GlassRAT_Generic {
 		$s2 = "update.dll" fullword ascii
 		$s3 = "SYSTEM\\CurrentControlSet\\Services\\RasAuto\\Parameters" fullword ascii
 		$s4 = "%%temp%%\\%u" fullword ascii
-		$s5 = "\\off.dat" fullword ascii
+		$s5 = "\\off.dat" ascii
 		$s6 = "rundll32 \"%s\",AddNum" fullword ascii
 		$s7 = "cmd.exe /c erase /F \"%s\"" fullword ascii
 		$s8 = "SYSTEM\\ControlSet00%d\\Services\\RasAuto" fullword ascii

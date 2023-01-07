@@ -45,7 +45,7 @@ rule OlympicDestroyer_Gen2 {
 
       $s1 = "<STARTCRED>" fullword wide
       $s2 = "SELECT ds_cn FROM ds_computer" fullword wide
-      $s3 = "\\system32\\notepad.exe" fullword wide
+      $s3 = "\\system32\\notepad.exe" wide
       $s4 = "%s \\\\%s -u \"%s\" -p \"%s\" -accepteula -d %s %s \"%s\"" fullword ascii
    condition:
       uint16(0) == 0x5a4d and filesize < 5000KB and (

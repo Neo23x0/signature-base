@@ -60,7 +60,7 @@ rule MAL_Ransom_Ragnarlocker_July_2020_1 {
       $c3 = "-vmback" fullword wide
       $c4 = "-list" fullword wide
       $s1 = ".ragn@r_" fullword wide /* ref */
-      $s2 = "\\notepad.exe" fullword wide /* Show ransom note to the victim*/
+      $s2 = "\\notepad.exe" wide /* Show ransom note to the victim*/
       $s3 = "Opera Software" fullword wide  /* Don't touch browsers for contact him*/
       $s4 = "Tor browser" fullword wide /*Ref ransom note*/
    condition:
