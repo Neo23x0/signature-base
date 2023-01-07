@@ -665,7 +665,7 @@ rule CN_Hacktool_1433_Scanner {
       $s1 = "1433V" wide
       $s2 = "del Weak1.txt" ascii fullword
       $s3 = "del Attack.txt" ascii fullword
-      $s4 = "del /s /Q C:\\Windows\\system32\\doors\\" fullword ascii
+      $s4 = "del /s /Q C:\\Windows\\system32\\doors\\" ascii
       $s5 = "!&start iexplore http://www.crsky.com/soft/4818.html)" fullword ascii
    condition:
       uint16(0) == 0x5a4d and all of ($s*)
@@ -1622,7 +1622,7 @@ rule snifferport {
       hash = "d14133b5eaced9b7039048d0767c544419473144"
    strings:
       $s0 = "iphlpapi.DLL" fullword ascii
-      $s5 = "ystem\\CurrentCorolSet\\" fullword ascii
+      $s5 = "ystem\\CurrentCorolSet\\" ascii
       $s11 = "Port.TX" fullword ascii
       $s12 = "32Next" fullword ascii
       $s13 = "V1.2 B" fullword ascii
@@ -1815,7 +1815,7 @@ rule PassSniffer {
       $s3 = "GetLas" fullword ascii
       $s4 = "VersionExA" fullword ascii
       $s10 = " Only RuntUZ" fullword ascii
-      $s12 = "emcpysetprintf\\" fullword ascii
+      $s12 = "emcpysetprintf\\" ascii
       $s13 = "WSFtartup" fullword ascii
    condition:
       all of them
@@ -1917,7 +1917,7 @@ rule QQ_zip_Folder_QQ {
       $s9 = "QQ2000b.exe" fullword ascii
       $s10 = "\\qq2000b.exe" ascii
       $s12 = "WINDSHELL STUDIO[WINDSHELL " fullword wide
-      $s17 = "SOFTWARE\\HAOQIANG\\" fullword ascii
+      $s17 = "SOFTWARE\\HAOQIANG\\" ascii
    condition:
       5 of them
 }
@@ -3504,7 +3504,7 @@ rule Disclosed_0day_POCs_lpe {
       hash2 = "a5916cefa0f50622a30c800e7f21df481d7a3e1e12083fef734296a22714d088"
       hash3 = "5b701a5b5bbef7027711071cef2755e57984bfdff569fe99efec14a552d8ee43"
    strings:
-      $x1 = "msiexec /f c:\\users\\%username%\\downloads\\" fullword ascii
+      $x1 = "msiexec /f c:\\users\\%username%\\downloads\\" ascii
       $x2 = "c:\\users\\%username%\\downloads\\bat.bat" fullword ascii
       $x3 = "\\payload.msi /quiet" ascii
       $x4 = "\\payload2\\WindowsTrustedRTProxy.sys" wide

@@ -36,7 +36,7 @@ rule FakeM_Generic {
 		$c1 = "\\system32\\kernel32.dll" ascii
 		$c2 = "\\aapz.tmp" ascii
 
-		$e1 = "C:\\Documents and Settings\\A\\" fullword ascii
+		$e1 = "C:\\Documents and Settings\\A\\" ascii
 		$e2 = "\\svchost.exe" ascii
 		$e3 = "\\Perform\\Release\\Perform.pdb" ascii
 

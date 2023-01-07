@@ -660,7 +660,7 @@ rule FreeVersion_debug {
 		date = "2015-06-13"
 		hash = "d11e6c6f675b3be86e37e50184dadf0081506a89"
 	strings:
-		$s0 = "c:\\Documents and Settings\\Administrator\\" fullword ascii
+		$s0 = "c:\\Documents and Settings\\Administrator\\" ascii
 		$s1 = "Got WMI process Pid: %d" ascii
 		$s2 = "This exploit will execute" ascii
 		$s6 = "Found token %s " ascii
@@ -1141,7 +1141,7 @@ rule Dos_Down64 {
 	strings:
 		$s1 = "C:\\Windows\\Temp\\Down.txt" fullword wide
 		$s2 = "C:\\Windows\\Temp\\Cmd.txt" fullword wide
-		$s3 = "C:\\Windows\\Temp\\" fullword wide
+		$s3 = "C:\\Windows\\Temp\\" wide
 		$s4 = "ProcessXElement" fullword ascii
 		$s8 = "down.exe" fullword wide
 		$s20 = "set_Timer1" fullword ascii
@@ -1493,11 +1493,11 @@ rule Pc_xai {
 		hash = "f285a59fd931ce137c08bd1f0dae858cc2486491"
 	strings:
 		$s1 = "Powered by CoolDiyer @ C.Rufus Security Team 05/19/2008  http://www.xcodez.com/" fullword wide
-		$s2 = "%SystemRoot%\\System32\\" fullword ascii
-		$s3 = "%APPDATA%\\" fullword ascii
+		$s2 = "%SystemRoot%\\System32\\" ascii
+		$s3 = "%APPDATA%\\" ascii
 		$s4 = "---- C.Rufus Security Team ----" fullword wide
 		$s5 = "www.snzzkz.com" fullword wide
-		$s6 = "%CommonProgramFiles%\\" fullword ascii
+		$s6 = "%CommonProgramFiles%\\" ascii
 		$s7 = "GetRand.dll" fullword ascii
 	condition:
 		uint16(0) == 0x5a4d and filesize < 3000KB and all of them
@@ -1637,7 +1637,7 @@ rule CookieTools2 {
 		$s1 = "www.gxgl.com&www.gxgl.net" fullword wide
 		$s2 = "ip.asp?IP=" fullword ascii
 		$s3 = "MSIE 5.5;" fullword ascii
-		$s4 = "SOFTWARE\\Borland\\" fullword ascii
+		$s4 = "SOFTWARE\\Borland\\" ascii
 	condition:
 		uint16(0) == 0x5a4d and filesize < 700KB and all of them
 }
@@ -1931,7 +1931,7 @@ rule HKTL_Unknown_CN_Generate {
 		modified = "2022-01-20" /* fixed typo in rule name */
 		hash = "2cb4c3916271868c30c7b4598da697f59e9c7a12"
 	strings:
-		$s1 = "C:\\TEMP\\" fullword ascii
+		$s1 = "C:\\TEMP\\" ascii
 		$s2 = "Connection Closed Gracefully.;Could not bind socket. Address and port are alread" wide
 		$s3 = "$530 Please login with USER and PASS." fullword ascii
 		$s4 = "_Shell.exe" fullword ascii

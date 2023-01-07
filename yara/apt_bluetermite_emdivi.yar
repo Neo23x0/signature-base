@@ -69,7 +69,7 @@ rule Emdivi_Gen2 {
 		hash2 = "a5be7cb1f37030c9f9211c71e0fbe01dae19ff0e6560c5aab393621f18a7d012"
 		hash3 = "9183abb9b639699cd2ad28d375febe1f34c14679b7638d1a79edb49d920524a4"
 	strings:
-		$s1 = "%TEMP%\\IELogs\\" fullword ascii
+		$s1 = "%TEMP%\\IELogs\\" ascii
 		$s2 = "MSPUB.EXE" fullword ascii
 		$s3 = "%temp%\\" fullword ascii
 		$s4 = "\\NOTEPAD.EXE" ascii

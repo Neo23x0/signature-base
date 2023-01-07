@@ -141,7 +141,7 @@ rule APT_MAL_HOPLIGHT_NK_HiddenCobra_Apr19_2 {
    strings:
       $s1 = "%SystemRoot%\\System32\\svchost.exe -k mdnetuse" fullword ascii
       $s2 = "%s\\hid.dll" fullword ascii
-      $s3 = "%Systemroot%\\System32\\" fullword ascii
+      $s3 = "%Systemroot%\\System32\\" ascii
       $s4 = "SYSTEM\\CurrentControlSet\\services\\%s\\Parameters" fullword ascii
    condition:
       uint16(0) == 0x5a4d and filesize < 800KB and all of them

@@ -58,7 +58,7 @@ rule FourElementSword_32DLL {
 		$x1 = "%temp%\\tmp092.tmp" fullword ascii
 
 		$s1 = "\\System32\\ctfmon.exe" ascii
-		$s2 = "%SystemRoot%\\System32\\" fullword ascii
+		$s2 = "%SystemRoot%\\System32\\" ascii
 		$s3 = "32.dll" fullword ascii
 	condition:
 		( uint16(0) == 0x5a4d and filesize < 660KB and $x1 ) or ( all of them )

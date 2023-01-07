@@ -254,7 +254,7 @@ rule Codoso_PGV_PVID_4 {
 		$x4 = "About dropper" fullword wide
 
 		$s1 = "Microsoft Windows Manager Utility" fullword wide
-		$s2 = "SYSTEM\\CurrentControlSet\\Services\\" fullword ascii /* Goodware String - occured 9 times */
+		$s2 = "SYSTEM\\CurrentControlSet\\Services\\" ascii /* Goodware String - occured 9 times */
 		$s3 = "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\Notify" fullword ascii /* Goodware String - occured 10 times */
 		$s4 = "<assembly xmlns=\"urn:schemas-microsoft-com:asm.v1\" manifestVersion=\"1.0\"><trustInfo xmlns=\"urn:schemas-microsoft-com:asm.v3" ascii /* Goodware String - occured 46 times */
 		$s5 = "<supportedOS Id=\"{e2011457-1546-43c5-a5fe-008deee3d3f0}\"></supportedOS>" fullword ascii /* Goodware String - occured 65 times */
