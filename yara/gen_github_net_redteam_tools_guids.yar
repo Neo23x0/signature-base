@@ -3870,7 +3870,7 @@ rule HKTL_NET_GUID_SharpSQLPwn {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/lefayjey/SharpSQLPwn.git"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2022-11-21"
     strings:
@@ -3883,7 +3883,7 @@ rule HKTL_NET_GUID_Group3r {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/Group3r/Group3r.git"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2022-11-21"
     strings:
@@ -3897,7 +3897,7 @@ rule HKTL_NET_GUID_TokenStomp {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/MartinIngesen/TokenStomp"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2022-11-21"
     strings:
@@ -3910,7 +3910,7 @@ rule HKTL_NET_GUID_KrbRelay {
     meta:
         description = "Detects .NET red/black-team tools via typelibguid"
         reference = "https://github.com/cube0x0/KrbRelay.git"
-        license = "https://creativecommons.org/licenses/by-nc/4.0/"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2022-11-21"
     strings:
