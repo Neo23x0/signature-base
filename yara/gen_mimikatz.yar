@@ -131,9 +131,9 @@ rule Mimikatz_Strings {
       $x4 = "* Injecting ticket :" fullword wide ascii
       $x5 = "mimidrv.sys" fullword wide ascii
       $x6 = "Lists LM & NTLM credentials" fullword wide ascii
-      $x7 = "\\_ kerberos -" fullword wide ascii
+      $x7 = "\\_ kerberos -" wide ascii
       $x8 = "* unknow   :" fullword wide ascii
-      $x9 = "\\_ *Password replace ->" fullword wide ascii
+      $x9 = "\\_ *Password replace ->" wide ascii
       $x10 = "KIWI_MSV1_0_PRIMARY_CREDENTIALS KO" ascii wide
       $x11 = "\\\\.\\mimidrv" wide ascii
       $x12 = "Switch to MINIDUMP :" fullword wide ascii

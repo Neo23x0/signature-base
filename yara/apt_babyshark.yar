@@ -40,7 +40,7 @@ rule APT_NK_BabyShark_KimJoingRAT_Apr19_1 {
       $s1 = "https://www.google.com/accounts/servicelogin" fullword ascii
       $s2 = "https://login.yahoo.com/config/login" fullword ascii
       $s3 = "SELECT id, hostname, httpRealm, formSubmitURL, usernameField, passwordField, encryptedUsername, encryptedPassword FROM moz_login" ascii
-      $s4 = "\\mozsqlite3.dll" fullword ascii
+      $s4 = "\\mozsqlite3.dll" ascii
       $s5 = "SMTP Password" fullword ascii
       $s6 = "Yandex\\YandexBrowser\\User Data\\Default\\Login Data" fullword ascii
    condition:

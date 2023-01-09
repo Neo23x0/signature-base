@@ -25,8 +25,8 @@ rule MAL_HawkEye_Keylogger_Gen_Dec18 {
       hash1 = "b8693e015660d7bd791356b352789b43bf932793457d54beae351cf7a3de4dad"
    strings:
       $s1 = "HawkEye Keylogger" fullword wide
-      $s2 = "_ScreenshotLogger" fullword ascii
-      $s3 = "_PasswordStealer" fullword ascii
+      $s2 = "_ScreenshotLogger" ascii
+      $s3 = "_PasswordStealer" ascii
    condition:
       2 of them
 }

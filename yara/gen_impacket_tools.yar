@@ -35,7 +35,7 @@ rule Impacket_Tools_wmiexec {
    strings:
       $s1 = "bwmiexec.exe.manifest" fullword ascii
       $s2 = "swmiexec" fullword ascii
-      $s3 = "\\yzHPlU=QA" fullword ascii
+      $s3 = "\\yzHPlU=QA" ascii
    condition:
       ( uint16(0) == 0x5a4d and filesize < 17000KB and 2 of them )
 }
@@ -50,7 +50,7 @@ rule Impacket_Tools_sniffer {
       hash1 = "efff15e1815fb3c156678417d6037ddf4b711a3122c9b5bc2ca8dc97165d3769"
    strings:
       $s1 = "ssniffer" fullword ascii
-      $s2 = "impacket.dhcp(" fullword ascii
+      $s2 = "impacket.dhcp(" ascii
    condition:
       ( uint16(0) == 0x5a4d and filesize < 15000KB and all of them )
 }
@@ -65,7 +65,7 @@ rule Impacket_Tools_mmcexec {
       hash1 = "263a1655a94b7920531e123a8c9737428f2988bf58156c62408e192d4b2a63fc"
    strings:
       $s1 = "smmcexec" fullword ascii
-      $s2 = "\\yzHPlU=QA" fullword ascii
+      $s2 = "\\yzHPlU=QA" ascii
    condition:
       ( uint16(0) == 0x5a4d and filesize < 16000KB and all of them )
 }
@@ -80,7 +80,7 @@ rule Impacket_Tools_ifmap {
       hash1 = "20a1f11788e6cc98a76dca2db4691963c054fc12a4d608ac41739b98f84b3613"
    strings:
       $s1 = "bifmap.exe.manifest" fullword ascii
-      $s2 = "impacket.dcerpc.v5.epm(" fullword ascii
+      $s2 = "impacket.dcerpc.v5.epm(" ascii
    condition:
       ( uint16(0) == 0x5a4d and filesize < 15000KB and all of them )
 }
@@ -124,7 +124,7 @@ rule Impacket_Tools_rpcdump {
       hash1 = "21d85b36197db47b94b0f4995d07b040a0455ebbe6d413bc33d926ee4e0315d9"
    strings:
       $s1 = "srpcdump" fullword ascii
-      $s2 = "impacket.dcerpc.v5.epm(" fullword ascii
+      $s2 = "impacket.dcerpc.v5.epm(" ascii
    condition:
       ( uint16(0) == 0x5a4d and filesize < 17000KB and all of them )
 }
@@ -139,7 +139,7 @@ rule Impacket_Tools_secretsdump {
       hash1 = "47afa5fd954190df825924c55112e65fd8ed0f7e1d6fd403ede5209623534d7d"
    strings:
       $s1 = "ssecretsdump" fullword ascii
-      $s2 = "impacket.ese(" fullword ascii
+      $s2 = "impacket.ese(" ascii
    condition:
       ( uint16(0) == 0x5a4d and filesize < 17000KB and all of them )
 }
@@ -153,7 +153,7 @@ rule Impacket_Tools_esentutl {
       date = "2017-04-07"
       hash1 = "70d854953d3ebb2c252783a4a103ba0e596d6ab447f238af777fb37d2b64c0cd"
    strings:
-      $s1 = "impacket.ese(" fullword ascii
+      $s1 = "impacket.ese(" ascii
       $s2 = "sesentutl" fullword ascii
    condition:
       ( uint16(0) == 0x5a4d and filesize < 11000KB and all of them )
@@ -184,7 +184,7 @@ rule Impacket_Tools_sniff {
       hash1 = "8ab2b60aadf97e921e3a9df5cf1c135fbc851cb66d09b1043eaaa1dc01b9a699"
    strings:
       $s1 = "ssniff" fullword ascii
-      $s2 = "impacket.eap(" fullword ascii
+      $s2 = "impacket.eap(" ascii
    condition:
       ( uint16(0) == 0x5a4d and filesize < 15000KB and all of them )
 }
@@ -198,7 +198,7 @@ rule Impacket_Tools_smbexec {
       date = "2017-04-07"
       hash1 = "7d715217e23a471d42d95c624179fe7de085af5670171d212b7b798ed9bf07c2"
    strings:
-      $s1 = "logging.config(" fullword ascii
+      $s1 = "logging.config(" ascii
       $s2 = "ssmbexec" fullword ascii
    condition:
       ( uint16(0) == 0x5a4d and filesize < 17000KB and all of them )
@@ -213,9 +213,9 @@ rule Impacket_Tools_goldenPac {
       date = "2017-04-07"
       hash1 = "4f7fad0676d3c3d2d89e8d4e74b6ec40af731b1ddf5499a0b81fc3b1cd797ee3"
    strings:
-      $s1 = "impacket.examples.serviceinstall(" fullword ascii
+      $s1 = "impacket.examples.serviceinstall(" ascii
       $s2 = "bgoldenPac.exe" fullword ascii
-      $s3 = "json.scanner(" fullword ascii
+      $s3 = "json.scanner(" ascii
    condition:
       ( uint16(0) == 0x5a4d and filesize < 17000KB and all of them )
 }
@@ -229,8 +229,8 @@ rule Impacket_Tools_netview {
       date = "2017-04-07"
       hash1 = "ab909f8082c2d04f73d8be8f4c2640a5582294306dffdcc85e83a39d20c49ed6"
    strings:
-      $s1 = "impacket.dcerpc.v5.wkst(" fullword ascii
-      $s2 = "dummy_threading(" fullword ascii
+      $s1 = "impacket.dcerpc.v5.wkst(" ascii
+      $s2 = "dummy_threading(" ascii
       $s3 = "snetview" fullword ascii
    condition:
       ( uint16(0) == 0x5a4d and filesize < 17000KB and all of them )
@@ -278,8 +278,8 @@ rule Impacket_Tools_smbrelayx {
    strings:
       $s1 = "impacket.examples.secretsdump" fullword ascii
       $s2 = "impacket.examples.serviceinstall" fullword ascii
-      $s3 = "impacket.smbserver(" fullword ascii
-      $s4 = "SimpleHTTPServer(" fullword ascii
+      $s3 = "impacket.smbserver(" ascii
+      $s4 = "SimpleHTTPServer(" ascii
    condition:
       ( uint16(0) == 0x5a4d and filesize < 18000KB and 3 of them )
 }
@@ -294,7 +294,7 @@ rule Impacket_Tools_wmipersist {
       hash1 = "2527fff1a3c780f6a757f13a8912278a417aea84295af1abfa4666572bbbf086"
    strings:
       $s1 = "swmipersist" fullword ascii
-      $s2 = "\\yzHPlU=QA" fullword ascii
+      $s2 = "\\yzHPlU=QA" ascii
    condition:
       ( uint16(0) == 0x5a4d and filesize < 17000KB and all of them )
 }
@@ -324,7 +324,7 @@ rule Impacket_Tools_wmiquery {
       hash1 = "202a1d149be35d96e491b0b65516f631f3486215f78526160cf262d8ae179094"
    strings:
       $s1 = "swmiquery" fullword ascii
-      $s2 = "\\yzHPlU=QA" fullword ascii
+      $s2 = "\\yzHPlU=QA" ascii
    condition:
       ( uint16(0) == 0x5a4d and filesize < 17000KB and all of them )
 }
@@ -355,9 +355,9 @@ rule Impacket_Tools_psexec {
       date = "2017-04-07"
       hash1 = "27bb10569a872367ba1cfca3cf1c9b428422c82af7ab4c2728f501406461c364"
    strings:
-      $s1 = "impacket.examples.serviceinstall(" fullword ascii
+      $s1 = "impacket.examples.serviceinstall(" ascii
       $s2 = "spsexec" fullword ascii
-      $s3 = "impacket.examples.remcomsvc(" fullword ascii
+      $s3 = "impacket.examples.remcomsvc(" ascii
    condition:
       ( uint16(0) == 0x5a4d and filesize < 17000KB and 2 of them )
 }
@@ -406,13 +406,13 @@ rule Impacket_Lateral_Movement {
       date = "2018-03-22"
       score = 60
    strings:
-      $s1 = "impacket.dcerpc.v5.transport(" fullword ascii
-      $s2 = "impacket.smbconnection(" fullword ascii
-      $s3 = "impacket.dcerpc.v5.ndr(" fullword ascii
-      $s4 = "impacket.spnego(" fullword ascii
-      $s5 = "impacket.smb(" fullword ascii
-      $s6 = "impacket.ntlm(" fullword ascii
-      $s7 = "impacket.nmb(" fullword ascii
+      $s1 = "impacket.dcerpc.v5.transport(" ascii
+      $s2 = "impacket.smbconnection(" ascii
+      $s3 = "impacket.dcerpc.v5.ndr(" ascii
+      $s4 = "impacket.spnego(" ascii
+      $s5 = "impacket.smb(" ascii
+      $s6 = "impacket.ntlm(" ascii
+      $s7 = "impacket.nmb(" ascii
    condition:
       uint16(0) == 0x5a4d and filesize < 14000KB and 2 of them
 }

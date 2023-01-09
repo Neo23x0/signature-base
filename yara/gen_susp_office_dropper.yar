@@ -5,7 +5,7 @@ rule SUSP_Office_Dropper_Strings {
       reference = "Internal Research"
       date = "2018-09-13"
    strings:
-      $a1 = "_VBA_PROJECT" fullword wide
+      $a1 = "_VBA_PROJECT" wide
 
       $s1 = "click enable editing" fullword ascii
       $s2 = "click enable content" fullword ascii

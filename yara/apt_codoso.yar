@@ -223,11 +223,11 @@ rule Codoso_Gh0st_1 {
 
 		$c1 = "Elevation:Administrator!new:" wide
 		$c2 = "Global\\RUNDLL32EXITEVENT_NAME{12845-8654-543}" fullword ascii
-		$c3 = "\\sysprep\\sysprep.exe" fullword wide
-		$c4 = "\\sysprep\\CRYPTBASE.dll" fullword wide
+		$c3 = "\\sysprep\\sysprep.exe" wide
+		$c4 = "\\sysprep\\CRYPTBASE.dll" wide
 		$c5 = "Global\\TERMINATEEVENT_NAME{12845-8654-542}" fullword ascii
 		$c6 = "ConsentPromptBehaviorAdmin" fullword ascii
-		$c7 = "\\sysprep" fullword wide
+		$c7 = "\\sysprep" wide
 		$c8 = "Global\\UN{5FFC0C8B-8BE5-49d5-B9F2-BCDC8976EE10}" fullword ascii
 	condition:
 		uint16(0) == 0x5a4d and filesize < 1000KB and ( 4 of ($s*) or 4 of ($c*) ) or
@@ -254,7 +254,7 @@ rule Codoso_PGV_PVID_4 {
 		$x4 = "About dropper" fullword wide
 
 		$s1 = "Microsoft Windows Manager Utility" fullword wide
-		$s2 = "SYSTEM\\CurrentControlSet\\Services\\" fullword ascii /* Goodware String - occured 9 times */
+		$s2 = "SYSTEM\\CurrentControlSet\\Services\\" ascii /* Goodware String - occured 9 times */
 		$s3 = "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\Notify" fullword ascii /* Goodware String - occured 10 times */
 		$s4 = "<assembly xmlns=\"urn:schemas-microsoft-com:asm.v1\" manifestVersion=\"1.0\"><trustInfo xmlns=\"urn:schemas-microsoft-com:asm.v3" ascii /* Goodware String - occured 46 times */
 		$s5 = "<supportedOS Id=\"{e2011457-1546-43c5-a5fe-008deee3d3f0}\"></supportedOS>" fullword ascii /* Goodware String - occured 65 times */

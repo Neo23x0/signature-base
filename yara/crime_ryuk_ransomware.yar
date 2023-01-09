@@ -10,8 +10,8 @@ rule MAL_Ryuk_Ransomware {
       hash2 = "b8fcd4a3902064907fb19e0da3ca7aed72a7e6d1f94d971d1ee7a4d3af6a800d"
    strings:
       $x1 = "/v \"svchos\" /f" fullword wide
-      $x2 = "\\Documents and Settings\\Default User\\finish" fullword wide
-      $x3 = "\\users\\Public\\finish" fullword wide
+      $x2 = "\\Documents and Settings\\Default User\\finish" wide
+      $x3 = "\\users\\Public\\finish" wide
       $x4 = "lsaas.exe" fullword wide
       $x5 = "RyukReadMe.txt" fullword wide
    condition:

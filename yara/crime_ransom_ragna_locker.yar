@@ -47,7 +47,7 @@ rule MAL_Ransom_Ragnarlocker_July_2020_1 {
       $f3 = "bootsect.bak" fullword wide
       $r1 = "$!.txt" fullword wide
       $r2 = "---BEGIN KEY R_R---" fullword ascii
-      $r3 = "!$R4GN4R_" fullword wide
+      $r3 = "!$R4GN4R_" wide
       $r4 = "RAGNRPW" fullword ascii /* parser */
       $r5 = "---END KEY R_R---" fullword ascii
       $a1 = "+RhRR!-uD8'O&Wjq1_P#Rw<9Oy?n^qSP6N{BngxNK!:TG*}\\|W]o?/]H*8z;26X0" fullword ascii    
@@ -59,8 +59,8 @@ rule MAL_Ransom_Ragnarlocker_July_2020_1 {
       $c2 = "-force" fullword wide
       $c3 = "-vmback" fullword wide
       $c4 = "-list" fullword wide
-      $s1 = ".ragn@r_" fullword wide /* ref */
-      $s2 = "\\notepad.exe" fullword wide /* Show ransom note to the victim*/
+      $s1 = ".ragn@r_" wide /* ref */
+      $s2 = "\\notepad.exe" wide /* Show ransom note to the victim*/
       $s3 = "Opera Software" fullword wide  /* Don't touch browsers for contact him*/
       $s4 = "Tor browser" fullword wide /*Ref ransom note*/
    condition:

@@ -27,7 +27,7 @@ rule Xtreme_Sep17_1 {
 
       $s1 = "shellexecute=" fullword wide
       $s2 = "[Execute]" fullword wide
-      $s3 = ";open=RECYCLER\\S-1-5-21-1482476501-3352491937-682996330-1013\\" fullword wide
+      $s3 = ";open=RECYCLER\\S-1-5-21-1482476501-3352491937-682996330-1013\\" wide
    condition:
       uint16(0) == 0x5a4d and filesize < 4000KB and (
          pe.imphash() == "735af2a144f62c50ba8e89c1c59764eb" or

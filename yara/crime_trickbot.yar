@@ -11,7 +11,7 @@ rule MAL_Trickbot_Oct19_1 {
       hash3 = "9d6e4ad7f84d025bbe9f95e74542e7d9f79e054f6dcd7b37296f01e7edd2abae"
    strings:
       $s1 = "Celestor@hotmail.com" fullword ascii
-      $s2 = "\\txtPassword" fullword ascii
+      $s2 = "\\txtPassword" ascii
       $s14 = "Invalid Password, try again!" fullword wide
 
       $op1 = { 78 c4 40 00 ff ff ff ff b4 47 41 }

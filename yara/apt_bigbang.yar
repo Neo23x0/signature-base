@@ -39,9 +39,9 @@ rule APT_ME_BigBang_Mal_Jul18_1 {
    strings:
       $s1 = "%Y%m%d-%I-%M-%S" fullword ascii
       $s2 = "/api/serv/requests/%s/runfile/delete" fullword ascii
-      $s3 = "\\part.txt" fullword ascii
-      $s4 = "\\ALL.txt" fullword ascii
-      $s5 = "\\sat.txt" fullword ascii
+      $s3 = "\\part.txt" ascii
+      $s4 = "\\ALL.txt" ascii
+      $s5 = "\\sat.txt" ascii
       $s6 = "runfile.proccess_name" fullword ascii
       $s7 = "%s%s%p%s%zd%s%d%s%s%s%s%s" fullword ascii
    condition:

@@ -28,7 +28,7 @@ rule HiddenCobra_BANKSHOT_Gen {
       $s1 = "Mozilla/4.0 (compatible; MSIE 8.0; Win32)" fullword wide
       $s2 = "rHTTP/1.1 200 Connection established" fullword wide
       $s3 = "Proxy-Connection: keep-alive" fullword wide
-      $s4 = "\\msncf.dat" fullword wide
+      $s4 = "\\msncf.dat" wide
       $s5 = "msvcru32.bat" fullword ascii
       $s6 = "reg delete \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\" /v \"%s\" /f" fullword ascii
       $s7 = "MXINFO.DLL" fullword ascii
@@ -44,7 +44,7 @@ rule HiddenCobra_BANKSHOT_Gen {
       $x3 = "RpiLtnodlhOtgpcidgyA" fullword ascii
       $x4 = "LatiQdgHtnrwpDbupci" fullword ascii
       /* $x5 = "vchost.exe" fullword ascii */
-      $x6 = "\\system32\\msncf.dat" fullword ascii
+      $x6 = "\\system32\\msncf.dat" ascii
       $x7 = "GprthipgHpgktcpCigwSanowpgA" fullword ascii
 
       $a1 = "live.dropbox.com" fullword ascii

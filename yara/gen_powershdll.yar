@@ -17,7 +17,7 @@ rule PowerShdll {
       hash2 = "f999db9cc3a0719c19f35f0e760f4ce3377b31b756d8cd91bb8270acecd7be7d"
    strings:
       $x1 = "rundll32 PowerShdll,main -f <path>" fullword wide
-      $x2 = "\\PowerShdll.dll" fullword ascii
+      $x2 = "\\PowerShdll.dll" ascii
       $x3 = "rundll32 PowerShdll,main <script>" fullword wide
    condition:
       1 of them

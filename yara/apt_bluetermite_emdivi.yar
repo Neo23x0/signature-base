@@ -49,7 +49,7 @@ rule Emdivi_Gen1 {
 		$s2 = "http://www.msftncsi.com" fullword wide
 		$s3 = "net use | find /i \"c$\"" fullword wide
 		$s4 = " /del /y & " fullword wide
-		$s5 = "\\auto.cfg" fullword wide
+		$s5 = "\\auto.cfg" wide
 		$s6 = "/ncsi.txt" fullword wide
 		$s7 = "Dcmd /c" fullword wide
 		$s8 = "/PROXY" fullword wide
@@ -69,10 +69,10 @@ rule Emdivi_Gen2 {
 		hash2 = "a5be7cb1f37030c9f9211c71e0fbe01dae19ff0e6560c5aab393621f18a7d012"
 		hash3 = "9183abb9b639699cd2ad28d375febe1f34c14679b7638d1a79edb49d920524a4"
 	strings:
-		$s1 = "%TEMP%\\IELogs\\" fullword ascii
+		$s1 = "%TEMP%\\IELogs\\" ascii
 		$s2 = "MSPUB.EXE" fullword ascii
 		$s3 = "%temp%\\" fullword ascii
-		$s4 = "\\NOTEPAD.EXE" fullword ascii
+		$s4 = "\\NOTEPAD.EXE" ascii
 		$s5 = "%4d-%02d-%02d %02d:%02d:%02d " fullword ascii
 		$s6 = "INTERNET_OPEN_TYPE_PRECONFIG" fullword ascii
 		$s7 = "%4d%02d%02d%02d%02d%02d" fullword ascii
@@ -95,7 +95,7 @@ rule MAL_Emdivi_Gen3 {
       $x1 = "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727.42)" fullword ascii
 
       $s2 = "\\Mozilla\\Firefox\\Profiles\\" ascii
-      $s4 = "\\auto.cfg" fullword ascii
+      $s4 = "\\auto.cfg" ascii
       $s5 = "/ncsi.txt" fullword ascii
       $s6 = "/en-us/default.aspx" fullword ascii
       $s7 = "cmd /c" fullword ascii

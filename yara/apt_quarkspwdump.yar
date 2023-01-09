@@ -17,7 +17,7 @@ rule QuarksPwDump_Gen {
 		$s1 = "OpenProcessToken() error: 0x%08X" fullword ascii
 		$s2 = "%d dumped" fullword ascii
 		$s3 = "AdjustTokenPrivileges() error: 0x%08X" fullword ascii
-		$s4 = "\\SAM-%u.dmp" fullword ascii
+		$s4 = "\\SAM-%u.dmp" ascii
 	condition:
 		all of them
 }

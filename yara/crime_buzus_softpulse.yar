@@ -13,7 +13,7 @@ rule Win32_Buzus_Softpulse {
 		$s1 = "SELECT * FROM Win32_Process" fullword wide
 		$s4 = "CurrentVersion\\Uninstall\\avast" fullword wide
 		$s5 = "Find_RepeatProcess" fullword ascii
-		$s6 = "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\" fullword wide
+		$s6 = "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\" wide
 		$s7 = "myapp.exe" fullword ascii
 		$s14 = "/c ping -n 1 www.google" wide
 	condition:

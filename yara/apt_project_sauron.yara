@@ -27,7 +27,7 @@ meta:
 	reference = "https://securelist.com/blog/"
 strings:
 	$a1 = "EFEB0A9C6ABA4CF5958F41DB6A31929776C643DEDC65CC9B67AB8B0066FF2492" fullword ascii
-	$a2 = "\\Device\\NdisRaw_" fullword ascii
+	$a2 = "\\Device\\NdisRaw_" ascii
 	$a3 = "\\\\.\\GLOBALROOT\\Device\\{8EDB44DC-86F0-4E0E-8068-BD2CABA4057A}" fullword wide
 	$a4 = "Global\\{a07f6ba7-8383-4104-a154-e582e85a32eb}" fullword wide
 	$a5 = "Missing function %S::#%d" fullword wide

@@ -5785,7 +5785,7 @@ rule WebShell_lamashell {
 		$s8 = "$curcmd = $_POST['king'];" fullword
 		$s16 = "\"http://www.w3.org/TR/html4/loose.dtd\">" fullword
 		$s18 = "<title>lama's'hell v. 3.0</title>" fullword
-		$s19 = "_|_  O    _    O  _|_" fullword
+		$s19 = "_|_  O    _    O  _|_"
 		$s20 = "$curcmd = \"ls -lah\";" fullword
 	condition:
 		2 of them
@@ -6527,7 +6527,7 @@ rule WebShell_Generic_PHP_2 {
 		hash3 = "03f88f494654f2ad0361fb63e805b6bbfc0c86de"
 	strings:
 		$s3 = "if((isset($_POST['fileto']))||(isset($_POST['filefrom'])))" fullword
-		$s4 = "\\$port = {$_POST['port']};" fullword
+		$s4 = "\\$port = {$_POST['port']};"
 		$s5 = "$_POST['installpath'] = \"temp.pl\";}" fullword
 		$s14 = "if(isset($_POST['post']) and $_POST['post'] == \"yes\" and @$HTTP_POST_FILES[\"u"
 		$s16 = "copy($HTTP_POST_FILES[\"userfile\"][\"tmp_name\"],$HTTP_POST_FILES[\"userfile\"]"
@@ -8823,7 +8823,7 @@ rule Webshell_Backdoor_PHP_Agent_r57_mod_bizzz_shell_r57 {
 		hash11 = "ef74644065925aa8d64913f5f124fe73d8d289d5f019a104bf5f56689f49ba92"
 	strings:
 		$s1 = "$_POST['cmd'] = which('" ascii
-		$s2 = "$blah = ex(" fullword ascii
+		$s2 = "$blah = ex(" ascii
 	condition:
 		filesize < 600KB and all of them
 }

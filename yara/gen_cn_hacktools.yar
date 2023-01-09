@@ -57,7 +57,7 @@ rule Guilin_veterans_cookie_spoofing_tool {
 		$s0 = "kernel32.dll^G" fullword ascii
 		$s1 = "\\.Sus\"B" fullword ascii
 		$s4 = "u56Load3" fullword ascii
-		$s11 = "O MYTMP(iM) VALUES (" fullword ascii
+		$s11 = "O MYTMP(iM) VALUES (" ascii
 	condition:
 		uint16(0) == 0x5a4d and filesize < 1387KB and all of them
 }
@@ -106,7 +106,7 @@ rule Pc_pc2015 {
 		date = "2015-06-13"
 		hash = "de4f098611ac9eece91b079050b2d0b23afe0bcb"
 	strings:
-		$s0 = "\\svchost.exe" fullword ascii
+		$s0 = "\\svchost.exe" ascii
 		$s1 = "LON\\OD\\O-\\O)\\O%\\O!\\O=\\O9\\O5\\O1\\O" fullword ascii
 		$s8 = "%s%08x.001" fullword ascii
 	condition:
@@ -286,7 +286,7 @@ rule update_PcInit {
 		date = "2015-06-13"
 		hash = "a6facc4453f8cd81b8c18b3b3004fa4d8e2f5344"
 	strings:
-		$s1 = "\\svchost.exe" fullword ascii
+		$s1 = "\\svchost.exe" ascii
 		$s2 = "%s%08x.001" fullword ascii
 		$s3 = "Global\\ps%08x" fullword ascii
 		$s4 = "drivers\\" fullword ascii /* Goodware String - occured 2 times */
@@ -457,7 +457,7 @@ rule x64_klock {
 	strings:
 		$s1 = "Bienvenue dans un processus distant" fullword wide
 		$s2 = "klock.dll" fullword ascii
-		$s3 = "Erreur : le bureau courant (" fullword wide
+		$s3 = "Erreur : le bureau courant (" wide
 		$s4 = "klock de mimikatz pour Windows" fullword wide
 	condition:
 		uint16(0) == 0x5a4d and filesize < 907KB and all of them
@@ -560,9 +560,9 @@ rule Dll_LoadEx {
 	strings:
 		$s0 = "WiNrOOt@126.com" fullword wide
 		$s1 = "Dll_LoadEx.EXE" fullword wide
-		$s3 = "You Already Loaded This DLL ! :(" fullword ascii
+		$s3 = "You Already Loaded This DLL ! :(" ascii
 		$s10 = "Dll_LoadEx Microsoft " fullword wide
-		$s17 = "Can't Load This Dll ! :(" fullword ascii
+		$s17 = "Can't Load This Dll ! :(" ascii
 		$s18 = "WiNrOOt" fullword wide
 		$s20 = " Dll_LoadEx(&A)..." fullword wide
 	condition:
@@ -660,7 +660,7 @@ rule FreeVersion_debug {
 		date = "2015-06-13"
 		hash = "d11e6c6f675b3be86e37e50184dadf0081506a89"
 	strings:
-		$s0 = "c:\\Documents and Settings\\Administrator\\" fullword ascii
+		$s0 = "c:\\Documents and Settings\\Administrator\\" ascii
 		$s1 = "Got WMI process Pid: %d" ascii
 		$s2 = "This exploit will execute" ascii
 		$s6 = "Found token %s " ascii
@@ -842,8 +842,8 @@ rule HKTL_CN_dat_xpf {
 		hash = "761125ab594f8dc996da4ce8ce50deba49c81846"
 	strings:
 		$s1 = "UnHook IoGetDeviceObjectPointer ok!" fullword ascii
-		$s2 = "\\Device\\XScanPF" fullword wide
-		$s3 = "\\DosDevices\\XScanPF" fullword wide
+		$s2 = "\\Device\\XScanPF" wide
+		$s3 = "\\DosDevices\\XScanPF" wide
 	condition:
 		uint16(0) == 0x5a4d and filesize < 25KB and all of them
 }
@@ -928,7 +928,7 @@ rule cndcom_cndcom {
 		$s4 = "- Warning:This Code is more like a dos tool!(Modify by pingker)" fullword ascii
 		$s5 = "Windows NT SP6 (Chinese)" fullword ascii
 		$s6 = "- Original code by FlashSky and Benjurry" fullword ascii
-		$s7 = "\\C$\\123456111111111111111.doc" fullword wide
+		$s7 = "\\C$\\123456111111111111111.doc" wide
 		$s8 = "shell3all.c" fullword ascii
 	condition:
 		uint16(0) == 0x5a4d and filesize < 100KB and 2 of them
@@ -1122,7 +1122,7 @@ rule CN_Tools_pc {
 		date = "2015-06-13"
 		hash = "5cf8caba170ec461c44394f4058669d225a94285"
 	strings:
-		$s0 = "\\svchost.exe" fullword ascii
+		$s0 = "\\svchost.exe" ascii
 		$s2 = "%s%08x.001" fullword ascii
 		$s3 = "Qy001Service" fullword ascii
 		$s4 = "/.MIKY" fullword ascii
@@ -1141,7 +1141,7 @@ rule Dos_Down64 {
 	strings:
 		$s1 = "C:\\Windows\\Temp\\Down.txt" fullword wide
 		$s2 = "C:\\Windows\\Temp\\Cmd.txt" fullword wide
-		$s3 = "C:\\Windows\\Temp\\" fullword wide
+		$s3 = "C:\\Windows\\Temp\\" wide
 		$s4 = "ProcessXElement" fullword ascii
 		$s8 = "down.exe" fullword wide
 		$s20 = "set_Timer1" fullword ascii
@@ -1255,7 +1255,7 @@ rule IDTools_For_WinXP_IdtTool_2 {
 		date = "2015-06-13"
 		hash = "07feb31dd21d6f97614118b8a0adf231f8541a67"
 	strings:
-		$s0 = "\\Device\\devIdtTool" fullword wide
+		$s0 = "\\Device\\devIdtTool" wide
 		$s1 = "IoDeleteSymbolicLink" fullword ascii  /* Goodware String - occured 467 times */
 		$s3 = "IoDeleteDevice" fullword ascii  /* Goodware String - occured 993 times */
 		$s6 = "IoCreateSymbolicLink" fullword ascii /* Goodware String - occured 467 times */
@@ -1366,7 +1366,7 @@ rule Sword1_5 {
 		$s4 = "http://www.md5decrypter.co.uk/feed/api.aspx?" fullword wide
 		$s6 = "ListBox_Command" fullword wide
 		$s13 = "md=7fef6171469e80d32c0559f88b377245&submit=MD5+Crack" fullword wide
-		$s18 = "\\Set.ini" fullword wide
+		$s18 = "\\Set.ini" wide
 		$s19 = "OpenFileDialog1" fullword wide
 		$s20 = " (*.txt)|*.txt" fullword wide
 	condition:
@@ -1493,11 +1493,11 @@ rule Pc_xai {
 		hash = "f285a59fd931ce137c08bd1f0dae858cc2486491"
 	strings:
 		$s1 = "Powered by CoolDiyer @ C.Rufus Security Team 05/19/2008  http://www.xcodez.com/" fullword wide
-		$s2 = "%SystemRoot%\\System32\\" fullword ascii
-		$s3 = "%APPDATA%\\" fullword ascii
+		$s2 = "%SystemRoot%\\System32\\" ascii
+		$s3 = "%APPDATA%\\" ascii
 		$s4 = "---- C.Rufus Security Team ----" fullword wide
 		$s5 = "www.snzzkz.com" fullword wide
-		$s6 = "%CommonProgramFiles%\\" fullword ascii
+		$s6 = "%CommonProgramFiles%\\" ascii
 		$s7 = "GetRand.dll" fullword ascii
 	condition:
 		uint16(0) == 0x5a4d and filesize < 3000KB and all of them
@@ -1637,7 +1637,7 @@ rule CookieTools2 {
 		$s1 = "www.gxgl.com&www.gxgl.net" fullword wide
 		$s2 = "ip.asp?IP=" fullword ascii
 		$s3 = "MSIE 5.5;" fullword ascii
-		$s4 = "SOFTWARE\\Borland\\" fullword ascii
+		$s4 = "SOFTWARE\\Borland\\" ascii
 	condition:
 		uint16(0) == 0x5a4d and filesize < 700KB and all of them
 }
@@ -1651,9 +1651,9 @@ rule cyclotron {
 		date = "2015-06-13"
 		hash = "5b63473b6dc1e5942bf07c52c31ba28f2702b246"
 	strings:
-		$s1 = "\\Device\\IDTProt" fullword wide
+		$s1 = "\\Device\\IDTProt" wide
 		$s2 = "IoDeleteSymbolicLink" fullword ascii  /* Goodware String - occured 467 times */
-		$s3 = "\\??\\slIDTProt" fullword wide
+		$s3 = "\\??\\slIDTProt" wide
 		$s4 = "IoDeleteDevice" fullword ascii  /* Goodware String - occured 993 times */
 		$s5 = "IoCreateSymbolicLink" fullword ascii /* Goodware String - occured 467 times */
 	condition:
@@ -1931,7 +1931,7 @@ rule HKTL_Unknown_CN_Generate {
 		modified = "2022-01-20" /* fixed typo in rule name */
 		hash = "2cb4c3916271868c30c7b4598da697f59e9c7a12"
 	strings:
-		$s1 = "C:\\TEMP\\" fullword ascii
+		$s1 = "C:\\TEMP\\" ascii
 		$s2 = "Connection Closed Gracefully.;Could not bind socket. Address and port are alread" wide
 		$s3 = "$530 Please login with USER and PASS." fullword ascii
 		$s4 = "_Shell.exe" fullword ascii
@@ -2010,7 +2010,7 @@ rule unknown2 {
 		$s2 = "http://www.md5decrypter.co.uk/feed/api.aspx?" fullword wide
 		$s3 = "http://www.md5.com.cn" fullword wide
 		$s4 = "1.5.exe" fullword wide
-		$s5 = "\\Set.ini" fullword wide
+		$s5 = "\\Set.ini" wide
 		$s6 = "OpenFileDialog1" fullword wide
 		$s7 = " (*.txt)|*.txt" fullword wide
 	condition:
@@ -2045,7 +2045,7 @@ rule OracleScan {
 		hash = "10ff7faf72fe6da8f05526367b3522a2408999ec"
 	strings:
 		$s1 = "MYBLOG:HTTP://HI.BAIDU.COM/0X24Q" fullword ascii
-		$s2 = "\\Borland\\Delphi\\RTL" fullword ascii
+		$s2 = "\\Borland\\Delphi\\RTL" ascii
 		$s3 = "USER_NAME" ascii
 		$s4 = "FROMWWHERE" fullword ascii
 	condition:
@@ -2132,8 +2132,8 @@ rule ChinaChopper_caidao {
 	strings:
 		$s1 = "Pass,Config,n{)" fullword ascii
 		$s2 = "phMYSQLZ" fullword ascii
-		$s3 = "\\DHLP\\." fullword ascii
-		$s4 = "\\dhlp\\." fullword ascii
+		$s3 = "\\DHLP\\." ascii
+		$s4 = "\\dhlp\\." ascii
 		$s5 = "SHAutoComple" fullword ascii
 		$s6 = "MainFrame" ascii
 	condition:

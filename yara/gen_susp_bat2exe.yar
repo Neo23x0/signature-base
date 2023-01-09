@@ -13,7 +13,7 @@ rule SUSP_BAT2EXE_BDargo_Converted_BAT {
    strings:
       $s1 = "Error #bdembed1 -- Quiting" fullword ascii
       $s2 = "%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s" fullword ascii
-      $s3 = "\\a.txt" fullword ascii
+      $s3 = "\\a.txt" ascii
       $s4 = "command.com" fullword ascii /* Goodware String - occured 91 times */
       $s6 = "DFDHERGDCV" fullword ascii
       $s7 = "DFDHERGGZV" fullword ascii
