@@ -500,7 +500,7 @@ rule EquationDrug_NetworkSniffer4 {
       $s2 = "RAVISENT Technologies Inc." fullword wide
       $s3 = "Created by VIONA Development" fullword wide
       $s4 = "\\Registry\\User\\CurrentUser\\" wide
-      $s5 = "\\Device\\harddiskvolume" wide
+      $s5 = "\\device\\harddiskvolume" wide
       $s7 = "ATMDKDRV.SYS" fullword wide
       $s8 = "\\Device\\%ws_%ws" wide
       $s9 = "\\DosDevices\\%ws" wide

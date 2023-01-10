@@ -130,20 +130,6 @@ rule IMPLANT_2_v1 {
       (uint16(0) == 0x5A4D) and all of them
 }
 
-rule IMPLANT_2_v2 {
-   meta:
-      description = "CORESHELL/SOURFACE Implant by APT28"
-      author = "US CERT"
-      reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
-      date = "2017-02-10"
-      score = 85
-   strings:
-      $STR1 = { 83 ?? 06 [7-17] fa [0-10] 45 [2-4] 48 [2-4] e8 [2] FF FF [6-8]
-         48 8d [3] 48 89 [3] 45 [2] 4? [1-2] 01}
-   condition:
-      (uint16(0) == 0x5A4D) and all of them
-}
-
 rule IMPLANT_2_v3 {
    meta:
       description = "CORESHELL/SOURFACE Implant by APT28"
@@ -158,21 +144,6 @@ rule IMPLANT_2_v3 {
          ?? ?? 8D ?? ?? FE }
    condition:
       (uint16(0) == 0x5A4D) and any of them
-}
-
-rule IMPLANT_2_v4 {
-   meta:
-      description = "CORESHELL/SOURFACE Implant by APT28"
-      author = "US CERT"
-      reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
-      date = "2017-02-10"
-      score = 85
-   strings:
-      $STR1 = {55 8b ec 6a fe 68 [4] 68 [4] 64 A1 00 00 00 00 50 83 EC 0C 53
-         56 57 A1 [4] 31 45 F8 33 C5 50 8D 45 F0 64 A3 00 00 00 00 [8-14] 68
-         [4] 6a 01 [1-2] FF 15 [4] FF 15 [4] 3D B7 00 00 00 75 27}
-   condition:
-      (uint16(0) == 0x5A4D) and all of them
 }
 
 rule IMPLANT_2_v5 {
@@ -221,31 +192,6 @@ rule IMPLANT_2_v7 {
          60 00 00 0F 7F 18 A4 D? ?8 B4 50 C8 0E 90 20 24 D? ?3 20 C0 28 B4 5?
          ?3 3D 2F 77 5? ?8 B4 50 C2 20 C0 28 BD 70 2D 93 01 E8 B4 D0 C8 D4 2F
          E3 B4 5E 88 B4 5? ?8 95 5? ?7 2A 05 F5 E5 B8 BE 55 DC 20 80 }
-   condition:
-      (uint16(0) == 0x5A4D) and any of them
-}
-
-rule IMPLANT_2_v8 {
-   meta:
-      description = "CORESHELL/SOURFACE Implant by APT28"
-      author = "US CERT"
-      reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
-      date = "2017-02-10"
-      score = 85
-   strings:
-      $STR1 = {8B ?? 44 89 44 24 60 41 F7 E0 8B F2 B8 AB AA AA AA C1 EE 02 89
-         74 24 58 44 8B ?? 41 F7 ?? 8B CA BA 03 00 00 00 C1 E9 02 89 0C 24 8D
-         04 49 03 C0 44 2B ?? 44 89 ?? 24 04 3B F1 0F 83 ?? 01 00 00 8D 1C 76
-         4C 89 6C 24 }
-      $STR2 = {C5 41 F7 E0 ?? ?? ?? ?? ?? ?? 8D 0C 52 03 C9 2B C1 8B C8 ?? 8D
-         04 ?? 46 0F B6 0C ?? 40 02 C7 41 8D 48 FF 44 32 C8 B8 AB AA AA AA F7
-         E1 C1 EA 02 8D 04 52 03 C0 2B C8 B8 AB AA AA AA 46 22 0C ?? 41 8D 48
-         FE F7 E1 C1 EA 02 8D 04 52 03 C0 2B C8 8B C1 }
-      $STR3 = {41 F7 E0 C1 EA 02 41 8B C0 8D 0C 52 03 C9 2B C1 8B C8 42 8D 04
-         1B 46 0F B6 0C ?? 40 02 C6 41 8D 48 FF 44 32 C8 B8 AB AA AA AA F7 E1
-         C1 EA 02 8D 04 52 03 C0 2B C8 B8 AB AA AA AA }
-      $STR4 = {46 22 0C ?? 41 8D 48 FE F7 E1 C1 EA 02 8D 04 52 8B 54 24 58 03
-         C0 2B C8 8B C1 0F B6 4F FF 42 0F B6 04 ?? 41 0F AF CB C1 }
    condition:
       (uint16(0) == 0x5A4D) and any of them
 }
@@ -302,35 +248,6 @@ rule IMPLANT_2_v11 {
       $STR1 = {55 8b ec 6a fe 68 [4] 68 [4] 64 A1 00 00 00 00 50 83 EC 0C 53
          56 57 A1 [4] 31 45 F8 33 C5 50 8D 45 F0 64 A3 00 00 00 00 [8-14] 68
          [4] 6a 01 [1-2] FF 15 [4] FF 15 [4] 3D B7 00 00 00 75 27}
-   condition:
-      (uint16(0) == 0x5A4D) and all of them
-}
-
-rule IMPLANT_2_v12 {
-   meta:
-      description = "CORESHELL/SOURFACE Implant by APT28"
-      author = "US CERT"
-      reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
-      date = "2017-02-10"
-      score = 85
-   strings:
-      $STR1 = {48 83 [2] 48 89 [3] c7 44 [6] 4c 8d 05 [3] 00 BA 01 00 00 00
-         33 C9 ff 15 [2] 00 00 ff 15 [2] 00 00 3D B7 00 00 00 75 ?? 48 8D 15
-         ?? 00 00 00 48 8B CC E8}
-   condition:
-      (uint16(0) == 0x5A4D) and all of them
-}
-
-rule IMPLANT_2_v13 {
-   meta:
-      description = "CORESHELL/SOURFACE Implant by APT28"
-      author = "US CERT"
-      reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
-      date = "2017-02-10"
-      score = 85
-   strings:
-      $STR1 = { 83 ?? 06 [7-17] fa [0-10] 45 [2-4] 48 [2-4] e8 [2] FF FF
-         [6-8] 48 8d [3] 48 89 [3] 45 [2] 4? [1-2] 01}
    condition:
       (uint16(0) == 0x5A4D) and all of them
 }

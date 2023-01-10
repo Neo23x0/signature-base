@@ -23,7 +23,7 @@ rule APT_MAL_LNX_Turla_Apr202004_1 {
       $ = "rem_fd: ssl " ascii fullword
       $ = "TREX_PID=%u" ascii fullword
       $ = "/tmp/.xdfg" ascii fullword
-      $ = "__we_are_happy__" ascii fullword
+      $ = "__we_are_happy__" ascii
       $ = "/root/.sess" ascii fullword
       /* $ = "ZYSZLRTS^Z@@NM@@G_Y_FE" ascii fullword */
    condition:

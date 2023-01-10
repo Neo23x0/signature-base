@@ -1563,19 +1563,7 @@ rule webshell_r57_1_4_0 {
 	condition:
 		all of them
 }
-rule webshell_jsp_hsxa1 {
-	meta:
-		description = "Web Shell - file hsxa1.jsp"
-		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
-		date = "2014/01/28"
-		score = 70
-		hash = "5686d5a38c6f5b8c55095af95c2b0244"
-	strings:
-		$s0 = "<%@ page language=\"java\" pageEncoding=\"gbk\"%><jsp:directive.page import=\"ja"
-	condition:
-		all of them
-}
+
 rule webshell_asp_ajn {
 	meta:
 		description = "Web Shell - file ajn.asp"
@@ -1830,19 +1818,7 @@ rule webshell_php_moon {
 	condition:
 		2 of them
 }
-rule webshell_jsp_jdbc {
-	meta:
-		description = "Web Shell - file jdbc.jsp"
-		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
-		date = "2014/01/28"
-		score = 70
-		hash = "23b0e6f91a8f0d93b9c51a2a442119ce"
-	strings:
-		$s4 = "String cs = request.getParameter(\"z0\")==null?\"gbk\": request.getParameter(\"z"
-	condition:
-		all of them
-}
+
 rule webshell_minupload {
 	meta:
 		description = "Web Shell - file minupload.jsp"
@@ -1911,19 +1887,7 @@ rule webshell_jsp_asd {
 	condition:
 		all of them
 }
-rule webshell_jsp_inback3 {
-	meta:
-		description = "Web Shell - file inback3.jsp"
-		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
-		date = "2014/01/28"
-		score = 70
-		hash = "ea5612492780a26b8aa7e5cedd9b8f4e"
-	strings:
-		$s0 = "<%if(request.getParameter(\"f\")!=null)(new java.io.FileOutputStream(application"
-	condition:
-		all of them
-}
+
 rule webshell_metaslsoft {
 	meta:
 		description = "Web Shell - file metaslsoft.php"
@@ -4164,16 +4128,6 @@ rule s72_Shell_v1_1_Coding_html {
 		$s3 = "echo \"<p align=center>Dosya Zaten Bulunuyor</p>\""
 	condition:
 		1 of them
-}
-rule hidshell_php_php {
-	meta:
-		description = "Semi-Auto-generated  - file hidshell.php.php.txt"
-		author = "Neo23x0 Yara BRG + customization by Stefan -dfate- Molls"
-		hash = "c2f3327d60884561970c63ffa09439a4"
-	strings:
-		$s0 = "<?$d='G7mHWQ9vvXiL/QX2oZ2VTDpo6g3FYAa6X+8DMIzcD0eHZaBZH7jFpZzUz7XNenxSYvBP2Wy36U"
-	condition:
-		all of them
 }
 rule kacak_asp {
 	meta:
@@ -8258,18 +8212,7 @@ rule icyfox007v1_10_rar_Folder_asp {
 	condition:
 		all of them
 }
-rule FSO_s_EFSO_2_2 {
-	meta:
-		description = "Webshells Auto-generated - file EFSO_2.asp"
-		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
-		hash = "a341270f9ebd01320a7490c12cb2e64c"
-	strings:
-		$s0 = ";!+/DRknD7+.\\mDrC(V+kcJznndm\\f|nzKuJb'r@!&0KUY@*Jb@#@&Xl\"dKVcJ\\CslU,),@!0KxD~mKV"
-		$s4 = "\\co!VV2CDtSJ'E*#@#@&mKx/DP14lM/nY{JC81N+6LtbL3^hUWa;M/OE-AXX\"b~/fAs!u&9|J\\grKp\"j"
-	condition:
-		all of them
-}
+
 rule byshell063_ntboot_2 {
 	meta:
 		description = "Webshells Auto-generated - file ntboot.dll"
