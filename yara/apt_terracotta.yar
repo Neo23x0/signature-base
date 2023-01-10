@@ -78,7 +78,7 @@ rule LiuDoor_Malware_1 {
 	strings:
 		$s1 = "svchostdllserver.dll" fullword ascii 
 		$s2 = "SvcHostDLL: RegisterServiceCtrlHandler %S failed" fullword ascii 
-		$s3 = "\\nbtstat.exe" fullword ascii
+		$s3 = "\\nbtstat.exe" ascii
 		$s4 = "DataVersionEx" fullword ascii
 	condition:
 		uint16(0) == 0x5a4d and filesize < 150KB and all of them

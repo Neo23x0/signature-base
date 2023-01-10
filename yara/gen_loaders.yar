@@ -110,7 +110,7 @@ rule Reflective_DLL_Loader_Aug17_2 {
       $x1 = "\\ReflectiveDLLInjection-master\\" ascii
       $s2 = "reflective_dll.dll" fullword ascii
       $s3 = "DLL injection" fullword ascii
-      $s4 = "_ReflectiveLoader@4" fullword ascii
+      $s4 = "_ReflectiveLoader@4" ascii
       $s5 = "Reflective Dll Injection" fullword ascii
    condition:
       ( uint16(0) == 0x5a4d and

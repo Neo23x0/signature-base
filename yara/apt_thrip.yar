@@ -67,7 +67,7 @@ rule APT_Thrip_Sample_Jun18_4 {
       date = "2018-06-21"
       hash1 = "6b236d3fc54d36e6dc2a26299f6ded597058fed7c9099f1a37716c5e4b162abc"
    strings:
-      $s1 = "\\system32\\wbem\\tmf\\caches_version.db" fullword ascii
+      $s1 = "\\system32\\wbem\\tmf\\caches_version.db" ascii
       $s2 = "ProcessName No Access" fullword ascii
       $s3 = "Hwnd of Process NULL" fullword ascii
       $s4 = "*********The new session is be opening:(%d)**********" fullword ascii
@@ -75,7 +75,7 @@ rule APT_Thrip_Sample_Jun18_4 {
       $s6 = "/------------------------------------------------------------------------" fullword ascii
       $s7 = "constructor or from DllMain." fullword ascii
       $s8 = "Time:%d-%d-%d %d:%d:%d" fullword ascii
-      $s9 = "\\info.config" fullword ascii
+      $s9 = "\\info.config" ascii
    condition:
       uint16(0) == 0x5a4d and filesize < 400KB and 5 of them
 }
@@ -209,10 +209,10 @@ rule APT_Thrip_Sample_Jun18_12 {
    strings:
       $s1 = "pGlobal->nOSType==64--%s\\cmd.exe %s" fullword ascii
       $s2 = "httpcom.log" fullword ascii
-      $s3 = "\\CryptBase.dll" fullword ascii
+      $s3 = "\\CryptBase.dll" ascii
       $s4 = "gupdate.exe" fullword ascii
       $s5 = "wusa.exe" fullword ascii
-      $s6 = "/c %s %s /quiet /extract:%s\\%s\\" fullword ascii
+      $s6 = " %s %s /quiet /extract:%s\\%s\\" ascii
       $s7 = "%s%s.dll.cab" fullword ascii
       $s8 = "/c %s\\%s\\%s%s %s" fullword ascii
       $s9 = "ReleaseEvildll" fullword ascii
@@ -274,7 +274,7 @@ rule APT_Thrip_Sample_Jun18_15 {
       $s2 = "CryptBase.dll" fullword ascii
       $s3 = "gupdate.exe" fullword ascii
       $s4 = "wusa.exe" fullword ascii
-      $s5 = "/c %s %s /quiet /extract:%s\\%s\\" fullword ascii
+      $s5 = " %s %s /quiet /extract:%s\\%s\\" ascii
       $s6 = "%s%s.dll.cab" fullword ascii
       $s7 = "%s\\%s\\%s%s %s" fullword ascii
       $s8 = "%s\\%s\\%s%s" fullword ascii
@@ -315,10 +315,10 @@ rule APT_Thrip_Sample_Jun18_17 {
       $x2 = "\\SkeyMan2.pdb" ascii
       $x3 = "\\\\.\\Pnpkb" fullword ascii
 
-      $s1 = "\\DosDevices\\Pnpkb" fullword wide
-      $s2 = "\\DosDevices\\PnpKb" fullword wide
-      $s3 = "\\Driver\\kbdhid" fullword wide
-      $s4 = "\\Device\\PnpKb" fullword wide
+      $s1 = "\\DosDevices\\Pnpkb" wide
+      $s2 = "\\DosDevices\\PnpKb" wide
+      $s3 = "\\Driver\\kbdhid" wide
+      $s4 = "\\Device\\PnpKb" wide
       $s5 = "Microsoft  Windows Operating System" fullword wide
       $s6 = "hDevice == INVALID_HANDLE_VALUE" fullword ascii
    condition:

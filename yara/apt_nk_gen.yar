@@ -25,7 +25,7 @@ rule APT_NK_MAL_Keylogger_Unknown_Nov19_1 {
 
       $s1 = "%s\\cmd.exe /c %s" fullword ascii
       $s2 = "File upload error occured in [CFSDlg::ProcessResultMessage]." fullword ascii
-      $s3 = "\\SAM\\Domains\\Account\\Users\\Names" fullword ascii
+      $s3 = "\\SAM\\Domains\\Account\\Users\\Names" ascii
       $s4 = "%s_hist%d:%d:%s:%s:::" fullword ascii
       $s5 = "CARAT_Ws2_32.dll" fullword ascii
       $s6 = "PID [%s], open process failed." fullword ascii

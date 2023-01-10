@@ -71,7 +71,7 @@ rule APT_FIN7_Sample_Aug18_1 {
       hash2 = "dc645aae5d283fa175cf463a19615ed4d16b1d5238686245574d8a6a8b0fc8fa"
       hash3 = "eebbce171dab636c5ac0bf0fd14da0e216758b19c0ce2e5c572d7e6642d36d3d"
    strings:
-      $s1 = "\\par var console=\\{\\};console.log=function()\\{\\};" fullword ascii
+      $s1 = "\\par var console=\\{\\};console.log=function()\\{\\};" ascii
       $s2 = "616e64792d7063" ascii /* hex encoded string 'andy-pc' */
 
       $x1 = "0043003a005c00550073006500720073005c0061006e00640079005c004400650073006b0074006f0070005c0075006e00700072006f0074006500630074" ascii /* hex encoded string 'C:\Users\andy\Desktop\unprotect' */

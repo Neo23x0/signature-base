@@ -25,9 +25,9 @@ rule Keylogger_CN_APT {
 		$s4 = "dir \"%SystemDrive%\\\" /s /a" fullword ascii
 		$s5 = "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;" fullword ascii
 		$s6 = "http_s.exe" fullword ascii
-		$s7 = "User Agent\\Post Platform\\" fullword ascii
+		$s7 = "User Agent\\Post Platform\\" ascii
 		$s8 = "desktop.tmp" fullword ascii
-		$s9 = "\\support.icw" fullword ascii
+		$s9 = "\\support.icw" ascii
 		$s10 = "agc.tmp" fullword ascii
 	condition:
 		( uint16(0) == 0x5a4d and filesize < 100KB and 1 of ($x*) ) or 3 of them

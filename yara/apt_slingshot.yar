@@ -88,7 +88,7 @@ rule Slingshot_APT_Malware_2 {
 
       $s1 = "Opening service %s for stop access failed.#" fullword wide
       $s2 = "LanMan setting <%s> is ignored because system has a higher value already." fullword wide
-      $s3 = "\\DosDevices\\amxpci" fullword wide
+      $s3 = "\\DosDevices\\amxpci" wide
       $s4 = "lNTLMqSpPD" fullword ascii
    condition:
       uint16(0) == 0x5a4d and filesize < 900KB and ( 1 of ($x*) or 4 of them )

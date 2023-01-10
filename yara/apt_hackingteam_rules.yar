@@ -17,13 +17,13 @@ rule bin_ndisk {
 		score = 100
 		hash = "cf5089752ba51ae827971272a5b761a4ab0acd84"
 	strings:
-		$s1 = "\\Registry\\Machine\\System\\ControlSet00%d\\services\\ndisk.sys" fullword wide 
-		$s2 = "\\Registry\\Machine\\System\\ControlSet00%d\\Enum\\Root\\LEGACY_NDISK.SYS" fullword wide 
-		$s3 = "\\Driver\\DeepFrz" fullword wide
+		$s1 = "\\Registry\\Machine\\System\\ControlSet00%d\\services\\ndisk.sys" wide 
+		$s2 = "\\Registry\\Machine\\System\\ControlSet00%d\\Enum\\Root\\LEGACY_NDISK.SYS" wide 
+		$s3 = "\\Driver\\DeepFrz" wide
 		$s4 = "Microsoft Kernel Disk Manager" fullword wide 
 		$s5 = "ndisk.sys" fullword wide
-		$s6 = "\\Device\\MSH4DEV1" fullword wide
-		$s7 = "\\DosDevices\\MSH4DEV1" fullword wide
+		$s6 = "\\Device\\MSH4DEV1" wide
+		$s7 = "\\DosDevices\\MSH4DEV1" wide
 		$s8 = "built by: WinDDK" fullword wide
 	condition:
 		uint16(0) == 0x5a4d and filesize < 30KB and 6 of them
@@ -39,10 +39,10 @@ rule Hackingteam_Elevator_DLL {
 		score = 70
 		hash = "b7ec5d36ca702cc9690ac7279fd4fea28d8bd060"
 	strings:
-		$s1 = "\\sysnative\\CI.dll" fullword ascii 
+		$s1 = "\\sysnative\\CI.dll" ascii 
 		$s2 = "setx TOR_CONTROL_PASSWORD" fullword ascii 
 		$s3 = "mitmproxy0" fullword ascii 
-		$s4 = "\\insert_cert.exe" fullword ascii
+		$s4 = "\\insert_cert.exe" ascii
 		$s5 = "elevator.dll" fullword ascii
 		$s6 = "CRTDLL.DLL" fullword ascii
 		$s7 = "fail adding cert" fullword ascii
@@ -66,18 +66,18 @@ rule HackingTeam_Elevator_EXE {
 		hash = "9261693b67b6e379ad0e57598602712b8508998c0cb012ca23139212ae0009a1"
 	strings:
 		$x1 = "CRTDLL.DLL" fullword ascii
-		$x2 = "\\sysnative\\CI.dll" fullword ascii
-		$x3 = "\\SystemRoot\\system32\\CI.dll" fullword ascii
+		$x2 = "\\sysnative\\CI.dll" ascii
+		$x3 = "\\SystemRoot\\system32\\CI.dll" ascii
 		$x4 = "C:\\\\Windows\\\\Sysnative\\\\ntoskrnl.exe" fullword ascii /* PEStudio Blacklist: strings */
 
 		$s1 = "[*] traversing processes" fullword ascii /* PEStudio Blacklist: strings */
-		$s2 = "_getkprocess" fullword ascii /* PEStudio Blacklist: strings */
+		$s2 = "_getkprocess" ascii /* PEStudio Blacklist: strings */
 		$s3 = "[*] LoaderConfig %p" fullword ascii /* PEStudio Blacklist: strings */
 		$s4 = "loader.obj" fullword ascii /* PEStudio Blacklist: strings */
 		$s5 = "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3" ascii /* PEStudio Blacklist: strings */
 		$s6 = "[*] token restore" fullword ascii /* PEStudio Blacklist: strings */
 		$s7 = "elevator.obj" fullword ascii
-		$s8 = "_getexport" fullword ascii /* PEStudio Blacklist: strings */
+		$s8 = "_getexport" ascii /* PEStudio Blacklist: strings */
 	condition:
 		uint16(0) == 0x5a4d and filesize < 3000KB and all of ($x*) and 3 of ($s*)
 }

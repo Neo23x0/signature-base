@@ -57,8 +57,8 @@ rule FourElementSword_32DLL {
 	strings:
 		$x1 = "%temp%\\tmp092.tmp" fullword ascii
 
-		$s1 = "\\System32\\ctfmon.exe" fullword ascii
-		$s2 = "%SystemRoot%\\System32\\" fullword ascii
+		$s1 = "\\System32\\ctfmon.exe" ascii
+		$s2 = "%SystemRoot%\\System32\\" ascii
 		$s3 = "32.dll" fullword ascii
 	condition:
 		( uint16(0) == 0x5a4d and filesize < 660KB and $x1 ) or ( all of them )
@@ -139,7 +139,7 @@ rule FourElementSword_ResN32DLL {
 		hash = "bf1b00b7430899d33795ef3405142e880ef8dcbda8aab0b19d80875a14ed852f"
 	strings:
 		$s1 = "\\Release\\BypassUAC.pdb" ascii
-		$s2 = "\\ResN32.dll" fullword wide
+		$s2 = "\\ResN32.dll" wide
 		$s3 = "Eupdate" fullword wide
 	condition:
 		all of them

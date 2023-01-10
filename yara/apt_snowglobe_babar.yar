@@ -22,7 +22,7 @@ rule SNOWGLOBE_Babar_Malware {
 		$s3 = "/c start /wait " fullword ascii
 		$s4 = "(D;OICI;FA;;;AN)(A;OICI;FA;;;BG)(A;OICI;FA;;;SY)(A;OICI;FA;;;LS)" ascii
 
-		$x1 = "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\" fullword ascii
+		$x1 = "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\" ascii
 		$x2 = "%COMMON_APPDATA%" fullword ascii
 		$x4 = "CONOUT$" fullword ascii
 		$x5 = "cmd.exe" fullword ascii

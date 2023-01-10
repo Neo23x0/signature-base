@@ -247,7 +247,7 @@ rule EQGRP_create_dns_injection {
 		hash1 = "488f3cc21db0688d09e13eb85a197a1d37902612c3e302132c84e07bc42b1c32"
 	strings:
 		$s1 = "Name:   A hostname: 'host.network.com', a decimal numeric offset within" fullword ascii
-		$s2 = "-a www.badguy.net,CNAME,1800,host.badguy.net \\\\" fullword ascii
+		$s2 = " www.badguy.net,CNAME,1800,host.badguy.net \\\\" ascii
 	condition:
 		1 of them
 }
@@ -339,7 +339,7 @@ rule EQGRP_BUSURPER_2211_724 {
 		hash1 = "d809d6ff23a9eee53d2132d2c13a9ac5d0cb3037c60e229373fc59a4f14bc744"
 	strings:
 		$s1 = ".got_loader" fullword ascii
-		$s2 = "_start_text" fullword ascii
+		$s2 = "_start_text" ascii
 		$s3 = "IMPLANT" fullword ascii
 		$s4 = "KEEPGOING" fullword ascii
 		$s5 = "upgrade_implant" fullword ascii
@@ -419,7 +419,7 @@ rule EQGRP_bo {
 		hash1 = "aa8b363073e8ae754b1836c30f440d7619890ded92fb5b97c73294b15d22441d"
 	strings:
 		$s1 = "ERROR: failed to open %s: %d" fullword ascii
-		$s2 = "__libc_start_main@@GLIBC_2.0" fullword ascii
+		$s2 = "__libc_start_main@@GLIBC_2.0" ascii
 		$s3 = "serial number: %s" fullword ascii
 		$s4 = "strerror@@GLIBC_2.0" fullword ascii
 		$s5 = "ERROR: mmap failed: %d" fullword ascii
@@ -487,7 +487,7 @@ rule EQGRP_BBALL_M50FW08_2201 {
 		$s1 = ".got_loader" fullword ascii
 		$s2 = "LOADED" fullword ascii
 		$s3 = "pageTable.c" fullword ascii
-		$s4 = "_start_text" fullword ascii
+		$s4 = "_start_text" ascii
 		$s5 = "handler_readBIOS" fullword ascii
 		$s6 = "KEEPGOING" fullword ascii
 	condition:
@@ -711,7 +711,7 @@ rule EQGRP_uninstallPBD {
 		hash1 = "692fdb449f10057a114cf2963000f52ce118d9a40682194838006c66af159bd0"
 	strings:
 		$s1 = "memset 00e9a05c 4 38845b88" fullword ascii
-		$s2 = "_hidecmd" fullword ascii
+		$s2 = "_hidecmd" ascii
 		$s3 = "memset 013abd04 1 0d" fullword ascii
 	condition:
 		all of them
@@ -944,9 +944,9 @@ rule EQGRP_pandarock {
 
 		$s1 = "pitCmd_processCmdLine" fullword ascii
 		$s2 = "execute all commands in <file>" fullword ascii
-		$s3 = "__processShellCmd" fullword ascii
+		$s3 = "__processShellCmd" ascii
 		$s4 = "pitTarget_getDstPort" fullword ascii
-		$s5 = "__processSetTargetIp" fullword ascii
+		$s5 = "__processSetTargetIp" ascii
 
 		$o1 = "Logging commands and output - ON" fullword ascii
 		$o2 = "This command is too dangerous.  If you'd like to run it, contact the development team" fullword ascii
@@ -1334,7 +1334,7 @@ rule EquationGroup_pwdump_Implant {
    strings:
       $s1 = ".?AVFeFinallyFailure@@" fullword ascii
       $s8 = ".?AVFeFinallySuccess@@" fullword ascii
-      $s3 = "\\system32\\win32k.sys" fullword wide
+      $s3 = "\\system32\\win32k.sys" wide
    condition:
       ( uint16(0) == 0x5a4d and filesize < 100KB and all of them )
 }
@@ -1400,12 +1400,12 @@ rule EquationGroup_EquationDrug_mstcp32 {
       $s1 = "mstcp32.sys" fullword wide
       $s2 = "p32.sys" fullword ascii
       $s3 = "\\Registry\\User\\CurrentUser\\" wide
-      $s4 = "\\DosDevices\\%ws" fullword wide
-      $s5 = "\\Device\\%ws_%ws" fullword wide
+      $s4 = "\\DosDevices\\%ws" wide
+      $s5 = "\\Device\\%ws_%ws" wide
       $s6 = "sys\\mstcp32.dbg" fullword ascii
       $s7 = "%ws%03d%ws%wZ" fullword wide
       $s8 = "TCP/IP driver" fullword wide
-      $s9 = "\\Device\\%ws" fullword wide
+      $s9 = "\\Device\\%ws" wide
    condition:
       ( uint16(0) == 0x5a4d and filesize < 200KB and 7 of them ) or ( all of them )
 }
@@ -1604,12 +1604,12 @@ rule EquationGroup_DXGHLP16 {
       $s1 = "DXGHLP16.SYS" fullword wide
       $s2 = "P16.SYS" fullword ascii
       $s3 = "\\Registry\\User\\CurrentUser\\" wide
-      $s4 = "\\DosDevices\\%ws" fullword wide
-      $s5 = "\\Device\\%ws_%ws" fullword wide
+      $s4 = "\\DosDevices\\%ws" wide
+      $s5 = "\\Device\\%ws_%ws" wide
       $s6 = "ct@SYS\\DXGHLP16.dbg" fullword ascii
       $s7 = "%ws%03d%ws%wZ" fullword wide
       $s8 = "TCP/IP driver" fullword wide
-      $s9 = "\\Device\\%ws" fullword wide
+      $s9 = "\\Device\\%ws" wide
    condition:
       ( uint16(0) == 0x5a4d and filesize < 200KB and all of them )
 }
@@ -1733,7 +1733,7 @@ rule EquationGroup_pwdump_Lp {
       date = "2017-01-13"
       hash1 = "fda57a2ba99bc610d3ff71b2d0ea2829915eabca168df99709a8fdd24288c5e5"
    strings:
-      $x1 = "PWDUMP - - ERROR - -" fullword wide
+      $x1 = "PWDUMP - - ERROR - -" wide
    condition:
       ( uint16(0) == 0x5a4d and filesize < 300KB and all of them )
 }

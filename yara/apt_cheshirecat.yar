@@ -60,12 +60,12 @@ rule CheshireCat_Gen1 {
 		$b1 = "Windows Shell Icon Handler" fullword wide
 		$b2 = "Microsoft Shell Icon Handler" fullword wide
 
-		$s1 = "\\StringFileInfo\\%s\\FileVersion" fullword ascii
+		$s1 = "\\StringFileInfo\\%s\\FileVersion" ascii
 		$s2 = "CLSID\\%s\\AuxCLSID" fullword ascii
 		$s3 = "lnkfile\\shellex\\IconHandler" fullword ascii
 		$s4 = "%s: %s, %.2hu %s %hu %2.2hu:%2.2hu:%2.2hu GMT" fullword ascii
 		$s5 = "%sMutex" fullword ascii
-		$s6 = "\\ShellIconCache" fullword ascii
+		$s6 = "\\ShellIconCache" ascii
 		$s7 = "+6Service Pack " fullword ascii
 	condition:
 		uint16(0) == 0x5a4d and filesize < 350KB and 7 of ($s*) and 2 of ($a*) and 1 of ($b*) and 1 of ($x*)
@@ -93,12 +93,12 @@ rule CheshireCat_Gen2 {
 		$b1 = "Windows Shell Icon Handler" fullword wide
 		$b2 = "Microsoft Shell Icon Handler" fullword wide
 
-		$s1 = "\\StringFileInfo\\%s\\FileVersion" fullword ascii
+		$s1 = "\\StringFileInfo\\%s\\FileVersion" ascii
 		$s2 = "CLSID\\%s\\AuxCLSID" fullword ascii
 		$s3 = "lnkfile\\shellex\\IconHandler" fullword ascii
 		$s4 = "%s: %s, %.2hu %s %hu %2.2hu:%2.2hu:%2.2hu GMT" fullword ascii
 		$s5 = "%sMutex" fullword ascii
-		$s6 = "\\ShellIconCache" fullword ascii
+		$s6 = "\\ShellIconCache" ascii
 		$s7 = "+6Service Pack " fullword ascii
 	condition:
 		uint16(0) == 0x5a4d and filesize < 200KB and 7 of ($s*) and 2 of ($a*) and 1 of ($b*)

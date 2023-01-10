@@ -10,7 +10,7 @@ rule Dexter_Malware {
 		$s0 = "Java Security Plugin" fullword wide
 		$s1 = "%s\\%s\\%s.exe" fullword wide
 		$s2 = "Sun Java Security Plugin" fullword wide
-		$s3 = "\\Internet Explorer\\iexplore.exe" fullword wide
+		$s3 = "\\Internet Explorer\\iexplore.exe" wide
 	condition:
 		all of them
 }

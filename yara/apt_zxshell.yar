@@ -20,7 +20,7 @@ rule ZxShell_Related_Malware_CN_Group_Jul17_1 {
    strings:
       $x1 = "CMD.EXE /C NET USER GUEST /ACTIVE:yes && NET USER GUEST ++++++" ascii
       $x2 = "system\\cURRENTcONTROLSET\\sERVICES\\tERMSERVICE" fullword ascii
-      $x3 = "\\secivreS\\teSlortnoCtnerruC\\METSYS" fullword ascii /* reversed goodware string 'SYSTEM\\CurrentControlSet\\Services\\' */
+      $x3 = "\\secivreS\\teSlortnoCtnerruC\\METSYS" ascii /* reversed goodware string 'SYSTEM\\CurrentControlSet\\Services\\' */
       $x4 = "system\\cURRENTCONTROLSET\\cONTROL\\tERMINAL sERVER" fullword ascii
       $x5 = "sOFTWARE\\mICROSOFT\\iNTERNET eXPLORER\\mAIN" fullword ascii
       $x6 = "eNABLEaDMINtsREMOTE" fullword ascii

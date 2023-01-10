@@ -16,7 +16,7 @@ rule Msfpayloads_msf {
       modified = "2022-08-18"
       hash1 = "320a01ec4e023fb5fbbaef963a2b57229e4f918847e5a49c7a3f631cb556e96c"
    strings:
-      $s1 = "export buf=\\" fullword ascii
+      $s1 = "export buf=\\" ascii
    condition:
       filesize < 5MB and $s1
 }
@@ -47,7 +47,7 @@ rule Msfpayloads_msf_psh {
       hash1 = "5cc6c7f1aa75df8979be4a16e36cece40340c6e192ce527771bdd6463253e46f"
    strings:
       $s1 = "powershell.exe -nop -w hidden -e" ascii
-      $s2 = "Call Shell(" fullword ascii
+      $s2 = "Call Shell(" ascii
       $s3 = "Sub Workbook_Open()" fullword ascii
    condition:
       all of them
@@ -66,7 +66,7 @@ rule Msfpayloads_msf_exe {
       $s2 = " = Shell(" ascii
       $s3 = "= Environ(\"USERPROFILE\")" fullword ascii
       $s4 = "'**************************************************************" fullword ascii
-      $s5 = "ChDir (" fullword ascii
+      $s5 = "ChDir (" ascii
       $s6 = "'* MACRO CODE" fullword ascii
    condition:
       4 of them

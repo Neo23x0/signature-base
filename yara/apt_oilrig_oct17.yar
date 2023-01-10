@@ -52,7 +52,7 @@ rule OilRig_ISMAgent_Campaign_Samples1 {
       $s2 = "C:\\Users\\J-Win-7-32-Vm\\Desktop\\error.jpg" fullword wide
       $s3 = "$DATA = [System.Convert]::FromBase64String([IO.File]::ReadAllText('%Base%'));[io.file]::WriteAllBytes(" ascii
       $s4 = " /c echo powershell > " fullword wide ascii
-      $s5 = "\\Libraries\\servicereset.exe" fullword wide
+      $s5 = "\\Libraries\\servicereset.exe" wide
       $s6 = "%DestFolder%" fullword wide ascii
    condition:
       uint16(0) == 0xcfd0 and filesize < 3000KB and 2 of them
@@ -95,10 +95,10 @@ rule OilRig_ISMAgent_Campaign_Samples3 {
 
       $s1 = "out.exe" fullword ascii
       $s2 = "\\Win32Project1\\Release\\Win32Project1.pdb" ascii
-      $s3 = "C:\\windows\\system32\\cmd.exe /c (" fullword ascii
+      $s3 = "C:\\windows\\system32\\cmd.exe /c (" ascii
       $s4 = "Content-Disposition: form-data; name=\"file\"; filename=\"a.a\"" fullword ascii
       $s5 = "Agent configured successfully" fullword ascii
-      $s6 = "\\runlog*" fullword ascii
+      $s6 = "\\runlog*" ascii
       $s7 = "can not specify username!!" fullword ascii
       $s8 = "Agent can not be configured" fullword ascii
       $s9 = "%08lX%04hX%04hX%02hhX%02hhX%02hhX%02hhX%02hhX%02hhX%02hhX%02hhX" fullword ascii

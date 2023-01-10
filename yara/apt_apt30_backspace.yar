@@ -17,9 +17,9 @@ rule APT30_Generic_H {
 		hash1 = "2a4c8752f3e7fde0139421b8d5713b29c720685d"
 		hash2 = "4350e906d590dca5fcc90ed3215467524e0a4e3d"
 	strings:
-		$s0 = "\\Temp1020.txt" fullword ascii
+		$s0 = "\\Temp1020.txt" ascii
 		$s1 = "Xmd.Txe" fullword ascii
-		$s2 = "\\Internet Exp1orer" fullword ascii
+		$s2 = "\\Internet Exp1orer" ascii
 	condition:
 		filesize < 100KB and uint16(0) == 0x5A4D and all of them
 }
@@ -376,7 +376,7 @@ rule APT30_Sample_16 {
 		date = "2015/04/13"
 		hash = "066d06ac08b48d3382d46bbeda6ad411b6d6130e"
 	strings:
-		$s0 = "\\Temp1020.txt" fullword ascii
+		$s0 = "\\Temp1020.txt" ascii
 		$s1 = "cmcbqyjs" fullword ascii
 		$s2 = "SPVSWh\\" fullword ascii
 		$s4 = "PSShxw@" fullword ascii
@@ -577,8 +577,8 @@ rule APT30_Generic_F {
 		hash3 = "b7b282c9e3eca888cbdb5a856e07e8bd"
 		hash4 = "df1799845b51300b03072c6569ab96d5"
 	strings:
-		$s0 = "\\~zlzl.exe" fullword ascii
-		$s2 = "\\Internet Exp1orer" fullword ascii
+		$s0 = "\\~zlzl.exe" ascii
+		$s2 = "\\Internet Exp1orer" ascii
 		$s3 = "NodAndKabIsExcellent" fullword ascii
 	condition:
 		filesize < 100KB and uint16(0) == 0x5A4D and all of them
@@ -636,7 +636,7 @@ rule APT30_Sample_25 {
 	strings:
 		$s1 = "C:\\WINDOWS" fullword ascii
 		$s2 = "aragua" fullword ascii
-		$s4 = "\\driver32\\7$" fullword ascii
+		$s4 = "\\driver32\\7$" ascii
 		$s8 = "System V" fullword ascii
 		$s9 = "Compu~r" fullword ascii
 		$s10 = "PROGRAM L" fullword ascii
@@ -681,7 +681,7 @@ rule APT30_Generic_D {
 	strings:
 		$s0 = "Windows Security Service Feedback" fullword wide
 		$s1 = "wssfmgr.exe" fullword wide
-		$s2 = "\\rb.htm" fullword ascii
+		$s2 = "\\rb.htm" ascii
 		$s3 = "rb.htm" fullword ascii
 		$s4 = "cook5" ascii
 		$s5 = "5, 4, 2600, 0" fullword wide
@@ -703,7 +703,7 @@ rule APT30_Sample_27 {
 		$s5 = "oftHaveAck+" ascii
 		$s10 = "HlobalAl" fullword ascii
 		$s13 = "$NtRND1$" fullword ascii
-		$s14 = "_NStartup" fullword ascii
+		$s14 = "_NStartup" ascii
 		$s16 = "GXSYSTEM" fullword ascii
 	condition:
 		filesize < 100KB and uint16(0) == 0x5A4D and all of them
@@ -728,9 +728,9 @@ rule APT30_Sample_28 {
 		$s6 = "/connect.gif" ascii
 		$s7 = "USBTest.sys" fullword ascii
 		$s8 = "/ver.htm" fullword ascii
-		$s11 = "\\netscv.exe" fullword ascii
+		$s11 = "\\netscv.exe" ascii
 		$s12 = "/app.htm" fullword ascii
-		$s13 = "\\netsvc.exe" fullword ascii
+		$s13 = "\\netsvc.exe" ascii
 		$s14 = "/exe.htm" fullword ascii
 		$s18 = "MicrosoftHaveAck" fullword ascii
 		$s19 = "MicrosoftHaveExit" fullword ascii
@@ -753,7 +753,7 @@ rule APT30_Sample_29 {
 		$s3 = "MicrosoftFlashExit" fullword ascii
 		$s4 = "MicrosoftFlashHaveExit" fullword ascii
 		$s5 = "MicrosoftFlashHaveAck" fullword ascii
-		$s6 = "\\driver32" fullword ascii
+		$s6 = "\\driver32" ascii
 		$s7 = "MicrosoftFlashZJ" fullword ascii
 	condition:
 		filesize < 100KB and uint16(0) == 0x5A4D and all of them
@@ -786,9 +786,9 @@ rule APT30_Sample_31 {
 		date = "2015/04/13"
 		hash = "8b4271167655787be1988574446125eae5043aca"
 	strings:
-		$s0 = "\\ZJRsv.tem" fullword ascii
+		$s0 = "\\ZJRsv.tem" ascii
 		$s1 = "forceguest" fullword ascii
-		$s4 = "\\$NtUninstallKB570317$" fullword ascii
+		$s4 = "\\$NtUninstallKB570317$" ascii
 		$s8 = "[Can'tGetIP]" fullword ascii
 		$s14 = "QWERTY:,`/" fullword ascii
 	condition:
@@ -811,18 +811,18 @@ rule APT30_Generic_J {
 	strings:
 		$s0 = "Launcher.EXE" fullword wide
 		$s1 = "Symantec Security Technologies" fullword wide
-		$s2 = "\\Symantec LiveUpdate.lnk" fullword ascii
+		$s2 = "\\Symantec LiveUpdate.lnk" ascii
 		$s3 = "Symantec Service Framework" fullword wide
-		$s4 = "\\ccSvcHst.exe" fullword ascii
-		$s5 = "\\wssfmgr.exe" fullword ascii
+		$s4 = "\\ccSvcHst.exe" ascii
+		$s5 = "\\wssfmgr.exe" ascii
 		$s6 = "Symantec Corporation" fullword wide
-		$s7 = "\\5.1.0.29" fullword ascii
-		$s8 = "\\Engine" fullword ascii
+		$s7 = "\\5.1.0.29" ascii
+		$s8 = "\\Engine" ascii
 		$s9 = "Copyright (C) 2000-2010 Symantec Corporation. All rights reserved." fullword wide
 		$s10 = "Symantec LiveUpdate" fullword ascii
-		$s11 = "\\Norton360" fullword ascii
+		$s11 = "\\Norton360" ascii
 		$s15 = "BinRes" fullword ascii
-		$s16 = "\\readme.lz" fullword ascii
+		$s16 = "\\readme.lz" ascii
 	condition:
 		filesize < 100KB and uint16(0) == 0x5A4D and all of them
 }
@@ -965,7 +965,7 @@ rule APT30_Generic_1 {
 		hash6 = "843997b36ed80d3aeea3c822cb5dc446b6bfa7b9"
 	strings:
 		$s0 = "%s\\%s.txt" fullword
-		$s1 = "\\ldsysinfo.txt" fullword
+		$s1 = "\\ldsysinfo.txt"
 		$s4 = "(Extended Wansung)" fullword
 		$s6 = "Computer Name:" fullword
 		$s7 = "%s %uKB %04u-%02u-%02u %02u:%02u" fullword
@@ -1026,7 +1026,7 @@ rule APT30_Generic_2 {
 		$s3 = "%s:All online success on %u!" fullword
 		$s4 = "%s:list online success on %u!" fullword
 		$s5 = "%s:All online fail!" fullword
-		$s6 = "Copyright Opera Software 1995-" fullword wide
+		$s6 = "Copyright Opera Software 1995-" wide
 		$s7 = "%s:list online fail!" fullword
 		$s8 = "OnlineTmp.txt" fullword
 		$s9 = "Opera Internet Browser" fullword wide
@@ -1073,10 +1073,10 @@ rule APT30_Generic_4 {
 	strings:
 		$s0 = "del NetEagle_Scout.bat" fullword
 		$s1 = "NetEagle_Scout.bat" fullword
-		$s2 = "\\visit.exe" fullword
-		$s3 = "\\System.exe" fullword
-		$s4 = "\\System.dat" fullword
-		$s5 = "\\ieupdate.exe" fullword
+		$s2 = "\\visit.exe"
+		$s3 = "\\System.exe"
+		$s4 = "\\System.dat"
+		$s5 = "\\ieupdate.exe"
 		$s6 = "GOTO ERROR" fullword
 		$s7 = ":ERROR" fullword
 		$s9 = "IF EXIST " fullword
@@ -1105,7 +1105,7 @@ rule APT30_Generic_5 {
 		$s1 = "name=\"ftpserver.exe\"/>" fullword
 		$s2 = "LiveUpdate.EXE" fullword wide
 		$s3 = "<description>FTP Explorer</description>" fullword
-		$s4 = "\\ashelper.dll" fullword
+		$s4 = "\\ashelper.dll"
 		$s5 = "LiveUpdate" fullword wide
 	condition:
 		filesize < 100KB and uint16(0) == 0x5A4D and all of them

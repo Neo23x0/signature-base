@@ -28,7 +28,7 @@ rule APT_Tick_Sysmon_Loader_Jun18 {
       $s5 = "%USERPROFILE%" fullword ascii /* Goodware String - occured 22 times */
       $s6 = "Windows NT" fullword ascii /* Goodware String - occured 72 times */
       $s7 = "device monitor" fullword ascii
-      $s8 = "\\Accessories" fullword ascii
+      $s8 = "\\Accessories" ascii
    condition:
       uint16(0) == 0x5a4d and filesize < 200KB and (
          pe.imphash() == "c5bb16e79fb500c430edce9481ae5b2b" or

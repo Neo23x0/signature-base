@@ -448,7 +448,7 @@ rule CN_GUI_Scanner {
       $s1 = "good.txt" fullword ascii
       $s2 = "IP.txt" fullword ascii
       $s3 = "xiaoyuer" fullword ascii
-      $s0w = "ssh(" fullword wide
+      $s0w = "ssh(" wide
       $s1w = ").exe" fullword wide
    condition:
       all of them
@@ -613,7 +613,7 @@ rule CN_Hacktool_S_EXE_Portscanner {
       score = 70
       date = "12.10.2014"
    strings:
-      $s0 = "\\Result.txt" fullword ascii
+      $s0 = "\\Result.txt" ascii
       $s1 = "By:ZT QQ:376789051" fullword ascii
       $s2 = "(http://www.eyuyan.com)" fullword wide
    condition:
@@ -665,7 +665,7 @@ rule CN_Hacktool_1433_Scanner {
       $s1 = "1433V" wide
       $s2 = "del Weak1.txt" ascii fullword
       $s3 = "del Attack.txt" ascii fullword
-      $s4 = "del /s /Q C:\\Windows\\system32\\doors\\" fullword ascii
+      $s4 = "del /s /Q C:\\Windows\\system32\\doors\\" ascii
       $s5 = "!&start iexplore http://www.crsky.com/soft/4818.html)" fullword ascii
    condition:
       uint16(0) == 0x5a4d and all of ($s*)
@@ -987,7 +987,7 @@ rule Tzddos_DDoS_Tool_CN {
       score = 60
       hash = "d4c517eda5458247edae59309453e0ae7d812f8e"
    strings:
-      $s0 = "for /f %%a in (host.txt) do (" fullword ascii
+      $s0 = "for /f %%a in (host.txt) do (" ascii
       $s1 = "for /f \"eol=S tokens=1 delims= \" %%i in (s2.txt) do echo %%i>>host.txt" fullword ascii
       $s2 = "del host.txt /q" fullword ascii
       $s3 = "for /f \"eol=- tokens=1 delims= \" %%i in (result.txt) do echo %%i>>s1.txt" fullword ascii
@@ -1130,7 +1130,7 @@ rule Hacktools_CN_Scan_BAT {
       score = 60
       hash = "6517d7c245f1300e42f7354b0fe5d9666e5ce52a"
    strings:
-      $s0 = "for /f %%a in (host.txt) do (" fullword ascii
+      $s0 = "for /f %%a in (host.txt) do (" ascii
       $s1 = "for /f \"eol=S tokens=1 delims= \" %%i in (s2.txt) do echo %%i>>host.txt" fullword ascii
       $s2 = "del host.txt /q" fullword ascii
       $s3 = "for /f \"eol=- tokens=1 delims= \" %%i in (result.txt) do echo %%i>>s1.txt" fullword ascii
@@ -1346,7 +1346,7 @@ rule Hacktools_CN_Burst_Thecard {
       $s0 = "tasklist |find \"Clear.bat\"||start Clear.bat" fullword ascii
       $s1 = "Http://www.coffeewl.com" fullword ascii
       $s2 = "ping -n 2 localhost 1>nul 2>nul" fullword ascii
-      $s3 = "for /L %%a in (" fullword ascii
+      $s3 = "for /L %%a in (" ascii
       $s4 = "MODE con: COLS=42 lines=5" fullword ascii
    condition:
       all of them
@@ -1622,7 +1622,7 @@ rule snifferport {
       hash = "d14133b5eaced9b7039048d0767c544419473144"
    strings:
       $s0 = "iphlpapi.DLL" fullword ascii
-      $s5 = "ystem\\CurrentCorolSet\\" fullword ascii
+      $s5 = "ystem\\CurrentCorolSet\\" ascii
       $s11 = "Port.TX" fullword ascii
       $s12 = "32Next" fullword ascii
       $s13 = "V1.2 B" fullword ascii
@@ -1815,7 +1815,7 @@ rule PassSniffer {
       $s3 = "GetLas" fullword ascii
       $s4 = "VersionExA" fullword ascii
       $s10 = " Only RuntUZ" fullword ascii
-      $s12 = "emcpysetprintf\\" fullword ascii
+      $s12 = "emcpysetprintf\\" ascii
       $s13 = "WSFtartup" fullword ascii
    condition:
       all of them
@@ -1853,7 +1853,7 @@ rule UnPack_rar_Folder_InjectT {
       $s3 = "%s -Stop                             -->To Stop The Service" fullword ascii
       $s4 = "The Port Is Out Of Range" fullword ascii
       $s7 = "Fail To Set The Port" fullword ascii
-      $s11 = "\\psapi.dll" fullword ascii
+      $s11 = "\\psapi.dll" ascii
       $s20 = "TInject.Dll" fullword ascii
 
       $x1 = "Software\\Microsoft\\Internet Explorer\\WinEggDropShell" fullword ascii
@@ -1915,9 +1915,9 @@ rule QQ_zip_Folder_QQ {
       $s4 = "QQ2000b.exe" fullword wide
       $s5 = "haoq@neusoft.com" fullword ascii
       $s9 = "QQ2000b.exe" fullword ascii
-      $s10 = "\\qq2000b.exe" fullword ascii
+      $s10 = "\\qq2000b.exe" ascii
       $s12 = "WINDSHELL STUDIO[WINDSHELL " fullword wide
-      $s17 = "SOFTWARE\\HAOQIANG\\" fullword ascii
+      $s17 = "SOFTWARE\\HAOQIANG\\" ascii
    condition:
       5 of them
 }
@@ -2027,7 +2027,7 @@ rule sig_238_sqlcmd {
       score = 40
       hash = "b6e356ce6ca5b3c932fa6028d206b1085a2e1a9a"
    strings:
-      $s0 = "Permission denial to EXEC command.:(" fullword ascii
+      $s0 = "Permission denial to EXEC command.:(" ascii
       $s3 = "by Eyas<cooleyas@21cn.com>" fullword ascii
       $s4 = "Connect to %s MSSQL server success.Enjoy the shell.^_^" fullword ascii
       $s5 = "Usage: %s <host> <uid> <pwd>" fullword ascii
@@ -2087,7 +2087,7 @@ rule Jc_ALL_WinEggDropShell_rar_Folder_Install_2 {
       $s3 = "Player.EXE" fullword wide
       $s4 = "mailto:sdemo@263.net" fullword ascii
       $s5 = "S-Player.exe" fullword ascii
-      $s9 = "http://www.BaiXue.net (" fullword wide
+      $s9 = "http://www.BaiXue.net (" wide
    condition:
       all of them
 }
@@ -2527,14 +2527,14 @@ rule superscan3_0 {
       score = 60
       hash = "a9a02a14ea4e78af30b8b4a7e1c6ed500a36bc4d"
    strings:
-      $s0 = "\\scanner.ini" fullword ascii
-      $s1 = "\\scanner.exe" fullword ascii
-      $s2 = "\\scanner.lst" fullword ascii
-      $s4 = "\\hensss.lst" fullword ascii
+      $s0 = "\\scanner.ini" ascii
+      $s1 = "\\scanner.exe" ascii
+      $s2 = "\\scanner.lst" ascii
+      $s4 = "\\hensss.lst" ascii
       $s5 = "STUB32.EXE" fullword wide
       $s6 = "STUB.EXE" fullword wide
-      $s8 = "\\ws2check.exe" fullword ascii
-      $s9 = "\\trojans.lst" fullword ascii
+      $s8 = "\\ws2check.exe" ascii
+      $s9 = "\\trojans.lst" ascii
       $s10 = "1996 InstallShield Software Corporation" fullword wide
    condition:
       all of them
@@ -3299,7 +3299,7 @@ rule WPR_loader_EXE {
       $s2 = "gLSASS.EXE" fullword wide
       $s3 = "WriteProcessMemory failed" fullword wide
       $s4 = "wow64 process NOT created" fullword wide
-      $s5 = "\\ast.exe" fullword wide
+      $s5 = "\\ast.exe" wide
       $s6 = "Exit code=%s, status=%d" fullword wide
       $s7 = "VirtualProtect failed" fullword wide
       $s8 = "nSeDebugPrivilege" fullword wide
@@ -3352,7 +3352,7 @@ rule WPR_Passscape_Loader {
    strings:
       $s1 = "SYSTEM\\CurrentControlSet\\Services\\PasscapeLoader64" fullword wide
       $s2 = "ast64.dll" fullword ascii
-      $s3 = "\\loader64.exe" fullword wide
+      $s3 = "\\loader64.exe" wide
       $s4 = "Passcape 64-bit Loader Service" fullword wide
       $s5 = "PasscapeLoader64" fullword wide
       $s6 = "ast64 {msg1GkjN7Sh8sg2Al7ker63f}" fullword wide
@@ -3504,12 +3504,12 @@ rule Disclosed_0day_POCs_lpe {
       hash2 = "a5916cefa0f50622a30c800e7f21df481d7a3e1e12083fef734296a22714d088"
       hash3 = "5b701a5b5bbef7027711071cef2755e57984bfdff569fe99efec14a552d8ee43"
    strings:
-      $x1 = "msiexec /f c:\\users\\%username%\\downloads\\" fullword ascii
+      $x1 = "msiexec /f c:\\users\\%username%\\downloads\\" ascii
       $x2 = "c:\\users\\%username%\\downloads\\bat.bat" fullword ascii
       $x3 = "\\payload.msi /quiet" ascii
-      $x4 = "\\payload2\\WindowsTrustedRTProxy.sys" fullword wide
-      $x5 = "\\payload2" fullword wide
-      $x6 = "\\payload" fullword wide
+      $x4 = "\\payload2\\WindowsTrustedRTProxy.sys" wide
+      $x5 = "\\payload2" wide
+      $x6 = "\\payload" wide
       $x7 = "WindowsTrustedRTProxy.sys /grant:r administrators:RX" ascii
    condition:
       ( uint16(0) == 0x5a4d and filesize < 70KB and 1 of them )
@@ -3525,7 +3525,7 @@ rule Disclosed_0day_POCs_exploit {
       hash1 = "632d35a0bac27c9b2f3f485d43ebba818089cf72b3b8c4d2e87ce735b2e67d7e"
    strings:
       $x1 = "\\Release\\exploit.pdb" ascii
-      $x2 = "\\favorites\\stolendata.txt" fullword wide
+      $x2 = "\\favorites\\stolendata.txt" wide
    condition:
       ( uint16(0) == 0x5a4d and filesize < 200KB and 1 of them )
 }
@@ -3681,7 +3681,7 @@ rule AllTheThings {
    strings:
       $x1 = "\\obj\\Debug\\AllTheThings.pdb" ascii
       $x2 = "AllTheThings.exe" fullword wide
-      $x3 = "\\AllTheThings.dll" fullword ascii
+      $x3 = "\\AllTheThings.dll" ascii
       $x4 = "Hello From Main...I Don't Do Anything" fullword wide
       $x5 = "I am a basic COM Object" fullword wide
       $x6 = "I shouldn't really execute either." fullword wide
@@ -3700,9 +3700,9 @@ rule Impacket_Keyword {
       hash1 = "9388c78ea6a78dbea307470c94848ae2481481f593d878da7763e649eaab4068"
       hash2 = "2f6d95e0e15174cfe8e30aaa2c53c74fdd13f9231406b7103da1e099c08be409"
    strings:
-      $s1 = "impacket.smb(" fullword ascii
-      $s2 = "impacket.ntlm(" fullword ascii
-      $s3 = "impacket.nmb(" fullword ascii
+      $s1 = "impacket.smb(" ascii
+      $s2 = "impacket.ntlm(" ascii
+      $s3 = "impacket.nmb(" ascii
    condition:
       ( uint16(0) == 0x5a4d and filesize < 14000KB and 1 of them )
 }
@@ -3933,9 +3933,9 @@ rule Crackmapexec_EXE {
       score = 85
       hash1 = "371f104b7876b9080c519510879235f36edb6668097de475949b84ab72ee9a9a"
    strings:
-      $s1 = "core.scripts.secretsdump(" fullword ascii
-      $s2 = "core.scripts.samrdump(" fullword ascii
-      $s3 = "core.uacdump(" fullword ascii
+      $s1 = "core.scripts.secretsdump(" ascii
+      $s2 = "core.scripts.samrdump(" ascii
+      $s3 = "core.uacdump(" ascii
    condition:
       uint16(0) == 0x5a4d and filesize < 10000KB and 2 of them
 }
@@ -4205,7 +4205,7 @@ rule HKTL_beRootexe {
       date = "2018-07-25"
       hash1 = "865b3b8ec9d03d3475286c3030958d90fc72b21b0dca38e5bf8e236602136dd7"
    strings:
-      $s1 = "checks.webclient.secretsdump(" fullword ascii
+      $s1 = "checks.webclient.secretsdump(" ascii
       $s2 = "beroot.modules" fullword ascii
       $s3 = "beRoot.exe.manifest" fullword ascii
    condition:
@@ -4317,11 +4317,11 @@ rule HKTL_Lazagne_PasswordDumper_Dec18_1 {
       hash2 = "884e991d2066163e02472ea82d89b64e252537b28c58ad57d9d648b969de6a63"
       hash3 = "bf8f30031769aa880cdbe22bc0be32691d9f7913af75a5b68f8426d4f0c7be50"
    strings:
-      $s1 = "softwares.opera(" fullword ascii
-      $s2 = "softwares.mozilla(" fullword ascii
-      $s3 = "config.dico(" fullword ascii
-      $s4 = "softwares.chrome(" fullword ascii
-      $s5 = "softwares.outlook(" fullword ascii
+      $s1 = "softwares.opera(" ascii
+      $s2 = "softwares.mozilla(" ascii
+      $s3 = "config.dico(" ascii
+      $s4 = "softwares.chrome(" ascii
+      $s5 = "softwares.outlook(" ascii
    condition:
       uint16(0) == 0x5a4d and filesize < 17000KB and 1 of them
 }
@@ -4336,7 +4336,7 @@ rule HKTL_Lazagne_Gen_18 {
       score = 80
       hash1 = "51121dd5fbdfe8db7d3a5311e3e9c904d644ff7221b60284c03347938577eecf"
    strings:
-      $x1 = "lazagne.config.powershell_execute(" fullword ascii
+      $x1 = "lazagne.config.powershell_execute(" ascii
       $x2 = "creddump7.win32." ascii
       $x3 = "lazagne.softwares.windows.hashdump" ascii
       $x4 = ".softwares.memory.libkeepass.common(" ascii

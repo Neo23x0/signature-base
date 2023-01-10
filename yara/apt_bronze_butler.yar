@@ -122,7 +122,7 @@ rule BronzeButler_xxmm_1 {
       $x5 = "http://127.0.0.1/phptunnel.php" fullword ascii
 
       $s1 = "xxmm2.exe" fullword ascii
-      $s2 = "\\AvUpdate.exe" fullword wide
+      $s2 = "\\AvUpdate.exe" wide
       $s3 = "stdapi_fs_file_download" fullword ascii
       $s4 = "stdapi_syncshell_open" fullword ascii
       $s5 = "stdapi_execute_sleep" fullword ascii
@@ -146,7 +146,7 @@ rule BronzeButler_RarStar_1 {
       $s1 = "Mozilla/4.0+(compatible;+MSIE+8.0;+Windows+NT+6.0;+SV1)" fullword wide
       $s2 = "http://www.google.co.jp" fullword wide
       $s3 = "16D73E22-873D-D58E-4F42-E6055BC9825E" fullword ascii
-      $s4 = "\\*.rar" fullword ascii
+      $s4 = "\\*.rar" ascii
    condition:
       ( uint16(0) == 0x5a4d and filesize < 200KB and 2 of them )
 }
@@ -180,7 +180,7 @@ rule Daserf_Nov1_BronzeButler {
       $s3 = "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer" ascii fullword
       $s4 = "iexplore.exe" ascii fullword
       /* Looks random but present in many samples */
-      $s5 = "\\SOFTWARE\\Microsoft\\Windows\\Cu" fullword ascii
+      $s5 = "\\SOFTWARE\\Microsoft\\Windows\\Cu" ascii
       $s6 = "rrentVersion\\Internet Settings" fullword ascii
       $s7 = "ws\\CurrentVersion\\Inter" fullword ascii
       $s8 = "Documents an" fullword ascii

@@ -154,7 +154,7 @@ rule Equation_Kaspersky_GROK_Keylogger {
 		$x8 = "R0omp4ar" fullword ascii
 
 		$z1 = "H.text" fullword ascii
-		$z2 = "\\registry\\machine\\software\\Microsoft\\Windows NT\\CurrentVersion" fullword wide
+		$z2 = "\\registry\\machine\\software\\Microsoft\\Windows NT\\CurrentVersion" wide
 		$z4 = "\\registry\\machine\\SYSTEM\\ControlSet001\\Control\\Session Manager\\Environment" wide fullword
 	condition:
 		uint16(0) == 0x5a4d and filesize < 250000 and
@@ -190,7 +190,7 @@ rule Equation_Kaspersky_EquationDrugInstaller {
 		date = "2015/02/16"
 		hash = "61fab1b8451275c7fd580895d9c68e152ff46417"
 	strings:
-		$s0 = "\\system32\\win32k.sys" fullword wide
+		$s0 = "\\system32\\win32k.sys" wide
 		$s1 = "ALL_FIREWALLS" fullword ascii
 
 		$x1 = "@prkMtx" fullword wide
@@ -365,9 +365,9 @@ rule EquationDrug_NetworkSniffer1 {
       $s3 = "sys\\mstcp32.dbg" fullword ascii
       $s7 = "mstcp32.sys" fullword wide
       $s8 = "p32.sys" fullword ascii
-      $s9 = "\\Device\\%ws_%ws" fullword wide
-      $s10 = "\\DosDevices\\%ws" fullword wide
-      $s11 = "\\Device\\%ws" fullword wide
+      $s9 = "\\Device\\%ws_%ws" wide
+      $s10 = "\\DosDevices\\%ws" wide
+      $s11 = "\\Device\\%ws" wide
    condition:
       all of them
 }
@@ -411,9 +411,9 @@ rule EquationDrug_NetworkSniffer2 {
 		$s2 = "tdip.sys" fullword wide
 		$s3 = "sys\\tdip.dbg" fullword ascii
 		$s4 = "dip.sys" fullword ascii
-		$s5 = "\\Device\\%ws_%ws" fullword wide
-		$s6 = "\\DosDevices\\%ws" fullword wide
-		$s7 = "\\Device\\%ws" fullword wide
+		$s5 = "\\Device\\%ws_%ws" wide
+		$s6 = "\\DosDevices\\%ws" wide
+		$s7 = "\\Device\\%ws" wide
 	condition:
 		all of them
 }
@@ -463,9 +463,9 @@ rule EquationDrug_KernelRootkit {
       $s2 = "\\Registry\\User\\CurrentUser\\" wide
       $s3 = "msndsrv.sys" fullword wide
       $s5 = "\\REGISTRY\\MACHINE\\System\\CurrentControlSet\\Control\\Windows" wide
-      $s6 = "\\Device\\%ws_%ws" fullword wide
-      $s7 = "\\DosDevices\\%ws" fullword wide
-      $s9 = "\\Device\\%ws" fullword wide
+      $s6 = "\\Device\\%ws_%ws" wide
+      $s7 = "\\DosDevices\\%ws" wide
+      $s9 = "\\Device\\%ws" wide
    condition:
       all of them
 }
@@ -478,10 +478,10 @@ rule EquationDrug_Keylogger {
 		date = "2015/03/11"
 		hash = "b93aa17b19575a6e4962d224c5801fb78e9a7bb5"
 	strings:
-		$s0 = "\\registry\\machine\\software\\Microsoft\\Windows NT\\CurrentVersion" fullword wide
+		$s0 = "\\registry\\machine\\software\\Microsoft\\Windows NT\\CurrentVersion" wide
 		$s2 = "\\registry\\machine\\SYSTEM\\ControlSet001\\Control\\Session Manager\\En" wide
-		$s3 = "\\DosDevices\\Gk" fullword wide
-		$s5 = "\\Device\\Gk0" fullword wide
+		$s3 = "\\DosDevices\\Gk" wide
+		$s5 = "\\Device\\Gk0" wide
 	condition:
 		all of them
 }
@@ -500,12 +500,12 @@ rule EquationDrug_NetworkSniffer4 {
       $s2 = "RAVISENT Technologies Inc." fullword wide
       $s3 = "Created by VIONA Development" fullword wide
       $s4 = "\\Registry\\User\\CurrentUser\\" wide
-      $s5 = "\\device\\harddiskvolume" fullword wide
+      $s5 = "\\Device\\harddiskvolume" wide
       $s7 = "ATMDKDRV.SYS" fullword wide
-      $s8 = "\\Device\\%ws_%ws" fullword wide
-      $s9 = "\\DosDevices\\%ws" fullword wide
+      $s8 = "\\Device\\%ws_%ws" wide
+      $s9 = "\\DosDevices\\%ws" wide
       $s10 = "CineMaster C 1.1 WDM Main Driver" fullword wide
-      $s11 = "\\Device\\%ws" fullword wide
+      $s11 = "\\Device\\%ws" wide
       $s13 = "CineMaster C 1.1 WDM" fullword wide
    condition:
       all of them
@@ -520,7 +520,7 @@ rule EquationDrug_PlatformOrchestrator {
 		hash = "febc4f30786db7804008dc9bc1cebdc26993e240"
 	strings:
 		$s0 = "SERVICES.EXE" fullword wide
-		$s1 = "\\command.com" fullword wide
+		$s1 = "\\command.com" wide
 		$s2 = "Microsoft(R) Windows (TM) Operating System" fullword wide
 		$s3 = "LSASS.EXE" fullword wide
 		$s4 = "Windows Configuration Services" fullword wide
@@ -541,9 +541,9 @@ rule EquationDrug_NetworkSniffer5 {
       $s0 = "Microsoft(R) Windows (TM) Operating System" fullword wide
       $s1 = "\\Registry\\User\\CurrentUser\\" wide
       $s2 = "atmdkdrv.sys" fullword wide
-      $s4 = "\\Device\\%ws_%ws" fullword wide
-      $s5 = "\\DosDevices\\%ws" fullword wide
-      $s6 = "\\Device\\%ws" fullword wide
+      $s4 = "\\Device\\%ws_%ws" wide
+      $s5 = "\\DosDevices\\%ws" wide
+      $s6 = "\\Device\\%ws" wide
    condition:
       all of them
 }

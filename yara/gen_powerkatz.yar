@@ -22,7 +22,7 @@ rule Powerkatz_DLL_Generic {
 		$s1 = "%3u - Directory '%s' (*.kirbi)" fullword wide
 		$s2 = "%*s  pPublicKey         : " fullword wide
 		$s4 = "<3 eo.oe ~ ANSSI E>" fullword wide
-		$s5 = "\\*.kirbi" fullword wide
+		$s5 = "\\*.kirbi" wide
 
 		$c1 = "kuhl_m_lsadump_getUsersAndSamKey ; kull_m_registry_RegOpenKeyEx SAM Accounts (0x%08x)" fullword wide
 		$c2 = "kuhl_m_lsadump_getComputerAndSyskey ; kuhl_m_lsadump_getSyskey KO" fullword wide

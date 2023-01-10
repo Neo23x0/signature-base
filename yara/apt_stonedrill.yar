@@ -126,7 +126,7 @@ rule StoneDrill_Malware_2 {
       $s4 = "Abd891.tmp" fullword wide
       $s5 = "Set WshShell = Nothing" fullword wide
       $s6 = "AaCcdDeFfGhiKLlMmnNoOpPrRsSTtUuVvwWxyZz32" fullword ascii
-      $s7 = "\\FileInfo.txt" fullword wide
+      $s7 = "\\FileInfo.txt" wide
 
       $x1 = "C-PDI-C-Cpy-T.vbs" fullword wide
       $x2 = "C-Dlt-C-Org-T.vbs" fullword wide

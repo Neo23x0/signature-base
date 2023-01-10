@@ -63,10 +63,10 @@ rule Derusbi_Kernel_Driver_WD_UDFS {
       $x5 = "$$$--Hello" fullword ascii
       $x6 = "Wrod--$$$" fullword ascii
 
-		$s1 = "\\Registry\\User\\%s\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings" fullword wide
+		$s1 = "\\Registry\\User\\%s\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings" wide
 		$s2 = "Update.dll" fullword ascii
-		$s3 = "\\Registry\\Machine\\SYSTEM\\CurrentControlSet\\Control\\WMI" fullword wide
-		$s4 = "\\Driver\\nsiproxy" fullword wide
+		$s3 = "\\Registry\\Machine\\SYSTEM\\CurrentControlSet\\Control\\WMI" wide
+		$s4 = "\\Driver\\nsiproxy" wide
 		$s5 = "HOST: %s" fullword ascii
 	condition:
 		uint16(0) == 0x5a4d and filesize < 800KB and
@@ -131,7 +131,7 @@ rule Derusbi_Backdoor_Mar17_1 {
       $x5 = "OfficeUt32.dll" fullword ascii
       $x6 = "\\\\.\\pipe\\usb%so" fullword wide
       $x7 = "\\\\.\\pipe\\usb%si" fullword wide
-      $x8 = "\\tmp1.dat" fullword wide
+      $x8 = "\\tmp1.dat" wide
    condition:
       ( uint16(0) == 0x5a4d and filesize < 400KB and 1 of them )
 }

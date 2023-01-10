@@ -30,19 +30,19 @@ rule Foudre_Backdoor_1 {
 rule Foudre_Backdoor_Dropper_1 {
    meta:
       description = "Detects Foudre Backdoor"
-      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://goo.gl/Nbqbt6"
       date = "2017-08-01"
+      modified = "2023-01-07"
       hash1 = "6bc9f6ac2f6688ed63baa29913eaf8c64738cf19933d974d25a0c26b7d01b9ac"
       hash2 = "da228831089c56743d1fbc8ef156c672017cdf46a322d847a270b9907def53a5"
    strings:
       $x1 = "536F594A96C5496CB3949A4DA4775B576E049C57696E646F77735C43757272656E7456657273696F6E5C5C52756E" fullword wide
       $x2 = "2220263024C380B3278695851482EC32" fullword wide
 
-      $s1 = "C:\\Documents and Settings\\All Users\\Start Menu\\Programs\\\\Startup\\" fullword wide
-      $s2 = "C:\\Documents and Settings\\All Users\\" fullword wide
-      $s3 = "Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\\\Shell Folders" fullword wide
+      $s1 = "C:\\Documents and Settings\\All Users\\Start Menu\\Programs\\\\Startup\\" wide
+      $s2 = "C:\\Documents and Settings\\All Users\\" wide
+      $s3 = "Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\\\Shell Folders" wide
       $s4 = "ShellExecuteW" fullword wide
    condition:
       ( uint16(0) == 0x5a4d and filesize < 100KB and ( 1 of ($x*) or 4 of them ) )
@@ -55,6 +55,7 @@ rule Foudre_Backdoor_Component_1 {
       author = "Florian Roth"
       reference = "https://goo.gl/Nbqbt6"
       date = "2017-08-01"
+      modified = "2023-01-07"
       hash1 = "7c6206eaf0c5c9c6c8d8586a626b49575942572c51458575e51cba72ba2096a4"
       hash2 = "db605d501d3a5ca2b0e3d8296d552fbbf048ee831be21efca407c45bf794b109"
    strings:
@@ -62,7 +63,7 @@ rule Foudre_Backdoor_Component_1 {
       /* Better: Project1.dll\x00D1 */
       $s1 = { 50 72 6F 6A 65 63 74 31 2E 64 6C 6C 00 44 31 }
       $s2 = "winmgmts:\\\\localhost\\root\\SecurityCenter2" fullword wide
-      $s3 = "C:\\Documents and Settings\\All Users\\" fullword wide
+      $s3 = "C:\\Documents and Settings\\All Users\\" wide
    condition:
       ( uint16(0) == 0x5a4d and filesize < 2000KB and
          ( 3 of them ) or
