@@ -156,6 +156,7 @@ rule VULN_Unencrypted_SSH_Private_Key : T1552_004 {
             )
         )
         and not filepath contains "/root/"
+        and not filename contains "ssh_host_"
 }
 
 
@@ -227,4 +228,5 @@ rule VULN_Unencrypted_SSH_Private_Key_Root_Folder : T1552_004 {
             )
         )
         and filepath contains "/root/"
+        and not filename contains "ssh_host_"
 }
