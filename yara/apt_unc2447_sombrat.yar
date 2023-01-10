@@ -11,7 +11,7 @@ rule APT_UNC2447_MAL_SOMBRAT_May21_1 {
    strings:
       $x1 = "~arungvc" ascii fullword
 
-      $s1 = "plugin64_" ascii fullword
+      $s1 = "plugin64_" ascii
       $s2 = "0xUnknown" ascii fullword
       $s3 = "b%x.%s" ascii fullword
       $s4 = "/news" ascii

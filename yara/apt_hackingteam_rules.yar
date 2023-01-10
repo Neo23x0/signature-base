@@ -17,8 +17,8 @@ rule bin_ndisk {
 		score = 100
 		hash = "cf5089752ba51ae827971272a5b761a4ab0acd84"
 	strings:
-		$s1 = "\\Registry\\Machine\\System\\ControlSet00%d\\services\\ndisk.sys" wide 
-		$s2 = "\\Registry\\Machine\\System\\ControlSet00%d\\Enum\\Root\\LEGACY_NDISK.SYS" wide 
+		$s1 = "\\Registry\\Machine\\System\\ControlSet00%d\\services\\ndisk.sys" fullword wide 
+		$s2 = "\\Registry\\Machine\\System\\ControlSet00%d\\Enum\\Root\\LEGACY_NDISK.SYS" fullword wide 
 		$s3 = "\\Driver\\DeepFrz" wide
 		$s4 = "Microsoft Kernel Disk Manager" fullword wide 
 		$s5 = "ndisk.sys" fullword wide
@@ -71,13 +71,13 @@ rule HackingTeam_Elevator_EXE {
 		$x4 = "C:\\\\Windows\\\\Sysnative\\\\ntoskrnl.exe" fullword ascii /* PEStudio Blacklist: strings */
 
 		$s1 = "[*] traversing processes" fullword ascii /* PEStudio Blacklist: strings */
-		$s2 = "_getkprocess" ascii /* PEStudio Blacklist: strings */
+		$s2 = "_getkprocess" fullword ascii /* PEStudio Blacklist: strings */
 		$s3 = "[*] LoaderConfig %p" fullword ascii /* PEStudio Blacklist: strings */
 		$s4 = "loader.obj" fullword ascii /* PEStudio Blacklist: strings */
 		$s5 = "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3" ascii /* PEStudio Blacklist: strings */
 		$s6 = "[*] token restore" fullword ascii /* PEStudio Blacklist: strings */
 		$s7 = "elevator.obj" fullword ascii
-		$s8 = "_getexport" ascii /* PEStudio Blacklist: strings */
+		$s8 = "_getexport" fullword ascii /* PEStudio Blacklist: strings */
 	condition:
 		uint16(0) == 0x5a4d and filesize < 3000KB and all of ($x*) and 3 of ($s*)
 }

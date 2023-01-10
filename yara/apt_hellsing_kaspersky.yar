@@ -8,7 +8,6 @@ rule apt_hellsing_implantstrings {
 		date = "2015-04-07"
 		description = "detection for Hellsing implants"
 	strings: 
-		$mz = "MZ"
 		$a1 = "the file uploaded failed !"
 		$a2 = "ping 127.0.0.1"
 		$b1 = "the file downloaded failed !"
@@ -25,7 +24,7 @@ rule apt_hellsing_implantstrings {
 		$e = "msger_server.dll" 
 		$f = "ServiceMain"
 	condition:
-		($mz at 0) and (all of ($a*)) or (all of ($b*)) or ($c and $d) or (any of ($debugpath*)) or ($e and $f) and filesize < 500000
+		uint16(0) == 0x5a4d and (all of ($a*)) or (all of ($b*)) or ($c and $d) or (any of ($debugpath*)) or ($e and $f) and filesize < 500000
 }
 
 rule apt_hellsing_installer { 
@@ -37,7 +36,6 @@ rule apt_hellsing_installer {
 		date = "2015-04-07"
 		description = "detection for Hellsing xweber/msger installers"
 	strings: 
-		$mz = "MZ"
 		$cmd = "cmd.exe /c ping 127.0.0.1 -n 5&cmd.exe /c del /a /f \"%s\""
 		$a1 = "xweber_install_uac.exe"
 		$a2 = "system32\\cmd.exe" wide
@@ -50,7 +48,7 @@ rule apt_hellsing_installer {
 		$a11 = "msger_install.dll"
 		$a12 = {00 65 78 2E 64 6C 6C 00}
 	condition:
-		($mz at 0) and ($cmd and (2 of ($a*))) and filesize < 500000
+		uint16(0) == 0x5a4d and ($cmd and (2 of ($a*))) and filesize < 500000
 }
 
 rule apt_hellsing_proxytool { 
@@ -62,7 +60,6 @@ rule apt_hellsing_proxytool {
 		date = "2015-04-07"
 		description = "detection for Hellsing proxy testing tool"
 	strings: 
-		$mz = "MZ"
 		$a1 = "PROXY_INFO: automatic proxy url => %s"
 		$a2 = "PROXY_INFO: connection type => %d"
 		$a3 = "PROXY_INFO: proxy server => %s"
@@ -70,7 +67,7 @@ rule apt_hellsing_proxytool {
 		$a5 = "InternetQueryOption failed with GetLastError() %d"
 		$a6 = "D:\\Hellsing\\release\\exe\\exe\\" nocase
 	condition:
-		($mz at 0) and (2 of ($a*)) and filesize < 300000
+		uint16(0) == 0x5a4d and (2 of ($a*)) and filesize < 300000
 }
 
 rule apt_hellsing_xkat { 
@@ -81,7 +78,6 @@ rule apt_hellsing_xkat {
 		date = "2015-04-07"
 		description = "detection for Hellsing xKat tool"
 	strings: 
-		$mz = "MZ"
 		$a1 = "\\Dbgv.sys" $a2="XKAT_BIN" $a3="release sys file error."
 		$a4 = "driver_load error. "
 		$a5 = "driver_create error."
@@ -93,7 +89,7 @@ rule apt_hellsing_xkat {
 		$a11 = "kill and delete pid:%d error."
 		$a12 = "kill and delete pid:%d ok."
 	condition:
-		($mz at 0) and (6 of ($a*)) and filesize < 300000
+		uint16(0) == 0x5a4d and (6 of ($a*)) and filesize < 300000
 }
 
 rule apt_hellsing_msgertype2 { 
@@ -105,7 +101,6 @@ rule apt_hellsing_msgertype2 {
 		date = "2015-04-07"
 		description = "detection for Hellsing msger type 2 implants"
 	strings: 
-		$mz = "MZ"
 		$a1 = "%s\\system\\%d.txt"
 		$a2 = "_msger" 
 		$a3 = "http://%s/lib/common.asp?action=user_login&uid=%s&lan=%s&host=%s&os=%s&proxy=%s"
@@ -113,7 +108,7 @@ rule apt_hellsing_msgertype2 {
 		$a5 = "/lib/common.asp?action=user_upload&file="
 		$a6 = "%02X-%02X-%02X-%02X-%02X-%02X"
 	condition:
-		($mz at 0) and (4 of ($a*)) and filesize < 500000
+		uint16(0) == 0x5a4d and (4 of ($a*)) and filesize < 500000
 }
 
 rule apt_hellsing_irene { 
@@ -125,7 +120,6 @@ rule apt_hellsing_irene {
 		date = "2015-04-07"
 		description = "detection for Hellsing msger irene installer"
 	strings: 
-		$mz = "MZ"
 		$a1 = "\\Drivers\\usbmgr.tmp" wide
 		$a2 = "\\Drivers\\usbmgr.sys" wide
 		$a3 = "common_loadDriver CreateFile error!"
@@ -133,5 +127,5 @@ rule apt_hellsing_irene {
 		$a5 = "irene" wide
 		$a6 = "aPLib v0.43 - the smaller the better" 
 	condition:
-		($mz at 0) and (4 of ($a*)) and filesize < 500000
+		uint16(0) == 0x5a4d and (4 of ($a*)) and filesize < 500000
 }
