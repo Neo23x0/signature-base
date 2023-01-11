@@ -1,4 +1,3 @@
-
 rule EXPL_LOG_Cacti_CommandInjection_CVE_2022_46169_Dec22_1 {
    meta:
       description = "Detects potential exploitation attempts that target the Cacti Command Injection CVE-2022-46169"
