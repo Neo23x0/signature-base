@@ -8,6 +8,8 @@
 	License: Detetction Rule License 1.1 (https://github.com/SigmaHQ/sigma/blob/master/LICENSE.Detection.Rules.md)
 
 */
+
+/* Performance killer - value isn't big enough
 rule Embedded_EXE_Cloaking {
         meta:
                 description = "Detects an embedded executable in a non-executable file"
@@ -35,6 +37,7 @@ rule Embedded_EXE_Cloaking {
                 and
                 for any i in (1..#mz): ( @a1 < ( @mz[i] + 200 ) or @a2 < ( @mz[i] + 200 ) )
 }
+*/
 
 // whitelist-approach failed : reworked in SUSP_Known_Type_Cloaked_as_JPG
 

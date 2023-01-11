@@ -10717,3 +10717,8 @@ b3657bcfe8240bc0985093a0f8682703;Turla Report - ANDROMEDA: mskmde.com - https://
 d8233448a3400c5677708a8500e3b2a0;Turla Report - KOPILUWAK xpexplore.js - https://www.mandiant.com/resources/blog/turla-galaxy-opportunity
 403876977dfb4ab2e2c15ad4b29423ff;Turla Report - QUIETCANARY 00c3df3b.exe - https://www.mandiant.com/resources/blog/turla-galaxy-opportunity
 8954caa2017950e0f6269d6f6168b796;Turla Report - QUIETCANARY file.exe16 - https://www.mandiant.com/resources/blog/turla-galaxy-opportunity
+
+9976625b5a3035dc68e878ad5ac3682ccb74ef2007c501c8023291548e11301a;Dark Pink Malware IOCs https://blog.group-ib.com/dark-pink-apt
+c60f778641942b7b0c00f3214211b137b683e8296abb1905d2557bfb245bf775;Dark Pink Malware IOCs https://blog.group-ib.com/dark-pink-apt
+e3181ee97d3ffd31c22c2c303c6e75d0196912083d0c21536e5833ee7d108736;Dark Pink Malware IOCs https://blog.group-ib.com/dark-pink-apt
+e45df7418ca47a9a4c4803697f4b28c618469c6e5a5678213ab81df9fcc9fd51;Dark Pink Malware IOCs https://blog.group-ib.com/dark-pink-apt
