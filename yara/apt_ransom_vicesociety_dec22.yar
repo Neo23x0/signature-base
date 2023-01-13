@@ -5,12 +5,13 @@ rule APT_MAL_RANSOM_ViceSociety_PolyVice_Jan23_1 {
       author = "Florian Roth"
       reference = "https://www.sentinelone.com/labs/custom-branded-ransomware-the-vice-society-group-and-the-threat-of-outsourced-development/"
       date = "2023-01-12"
+      modified = "2023-01-13"
       score = 75
       hash1 = "326a159fc2e7f29ca1a4c9a64d45b76a4a072bc39ba864c49d804229c5f6d796"
       hash2 = "8c8cb887b081e0d92856fb68a7df0dabf0b26ed8f0a6c8ed22d785e596ce87f4"
       hash3 = "9d9e949ecd72d7a7c4ae9deae4c035dcae826260ff3b6e8a156240e28d7dbfef"
    strings:
-      $x1 = "C:\\Users\\root\\Desktop\\niX\\CB\\libntru\\" ascii fullword
+      $x1 = "C:\\Users\\root\\Desktop\\niX\\CB\\libntru\\" ascii
       
       $s1 = "C:\\Users\\root" ascii fullword
       $s2 = "#DBG: target = %s" ascii fullword
@@ -42,7 +43,7 @@ rule APT_MAL_RANSOM_ViceSociety_Chily_Jan23_1 {
       $s1 = "localbitcoins.com/buy_bitcoins'>https://localbitcoins.com/buy_bitcoins</a>" ascii fullword
       $s2 = "C:\\Users\\root\\Desktop" ascii fullword
       $s3 = "for /F \"tokens=*\" %1 in ('wevtutil.exe el') DO wevtutil.exe cl \"%1\"" wide fullword
-      $s4 = "cd %userprofile%\\documents\\" wide fullword
+      $s4 = "cd %userprofile%\\documents\\" wide
       $s5 = "noise.bmp" wide fullword
       $s6 = " Execution time: %fms (1sec=1000ms)" ascii fullword
       $s7 = "/c vssadmin.exe Delete Shadows /All /Quiet" wide fullword
