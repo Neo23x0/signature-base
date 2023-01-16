@@ -99,34 +99,6 @@ bj6po.a1free9bird.com
 # Black Oasis IOC https://goo.gl/jhJWRp
 89.45.67.107
 
-# US-CERT TA17-293A https://www.us-cert.gov/ncas/alerts/TA17-293A
-cfemedia.com
-grand-central.net
-oilandgaseng.com
-plantengineering.com
-cfemedia.gcnpublishing.com
-controleng.com
-130.25.10.158
-167.114.44.147
-176.53.11.130
-184.154.150.66
-187.130.251.249
-193.213.49.115
-195.87.199.197
-2.229.10.193
-41.205.61.221
-41.78.157.34
-5.150.143.107
-5.153.58.45
-62.8.193.206
-82.222.188.18
-91.183.104.150
-85.25.100.104
-96.126.116.217
-203.113.4.230
-149.210.156.198
-151.80.163.14
-
 # Sofacy activity https://researchcenter.paloaltonetworks.com/2018/02/unit42-sofacy-attacks-multiple-government-entities/
 cdnverify.net
 
