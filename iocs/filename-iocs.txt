@@ -4227,4 +4227,7 @@ _lsass\.dmp;70
 \\nanodump\.x64;80
 \\load_ssp\.x86\.exe;80
 
+# Suspicious ADModule locations https://github.com/samratashok/ADModule
+\\Microsoft\.ActiveDirectory\.Management\.dll$;70;(C:\\Windows\\Microsoft\.NET\\assembly\\|C:\\Windows\\WinSxS\\(amd64|x86)_microsoft\.activedirectory\.management_)
+
 # End
