@@ -10722,3 +10722,39 @@ d8233448a3400c5677708a8500e3b2a0;Turla Report - KOPILUWAK xpexplore.js - https:/
 c60f778641942b7b0c00f3214211b137b683e8296abb1905d2557bfb245bf775;Dark Pink Malware IOCs https://blog.group-ib.com/dark-pink-apt
 e3181ee97d3ffd31c22c2c303c6e75d0196912083d0c21536e5833ee7d108736;Dark Pink Malware IOCs https://blog.group-ib.com/dark-pink-apt
 e45df7418ca47a9a4c4803697f4b28c618469c6e5a5678213ab81df9fcc9fd51;Dark Pink Malware IOCs https://blog.group-ib.com/dark-pink-apt
+
+
+6793e9299cab4cd07d4ddf35e03b32a05b0e965b3691d258ec2568402cf8d28f;ChamelGang IOCs - https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+e8ee5b0d6b683407aa9cb091bf92273af0e287d4e7daa94ca93cd230e94df37a;ChamelGang IOCs - https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+d4e3747658e1a9e6587da411dc944597af95dd49b07126b8b090c7677ee30674;ChamelGang IOCs - https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+16b54dc11dbe2948467a10d68728811b03c12b12f7b29e53d0985fa07e29f9b7;ChamelGang IOCs .vim https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+ba867705eb986d1975abcf2f2b90ee2c7fdd09255076823cdd85c0feeea15a1b;ChamelGang IOCs avp.exe https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+f1afce3be297fa6185903274b3b44cd263b4c1ea89e8282334bc5771c53af1c5;ChamelGang IOCs curlt.exe https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+8e0e5ec7ed16e5fb1e8980a3ec6e3c5982fd8fa4cfc31428a6638950bbe5607a;ChamelGang IOCs dlang.dat https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+b9a231496682cd6bed978fb1b2b15986211e5c38a13cbb246de3dcf1d8db41f4;ChamelGang IOCs dlang.dat https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+d831a87c6abd1bbb5a9ac9e1aac06a3d9b81b6e474bdc0c78e1908e26a6166b3;ChamelGang IOCs dlang.dat https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+538d423e3a8a884aac2d80b248d194388d3520cc508990da14c0a1384e7eddbd;ChamelGang IOCs iis64.dll, iisfcgix64.dll, modrpflt.dll, httpsrfm64.dll https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+73e9f7b9d22159f485b1c733981261ddc26fe7fcd104babfcc60369b354ccbe7;ChamelGang IOCs modrpflt.dll https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+27b64e64b6787ad0682eac8aa42f9cd423518a92c4f6ce98596339363eeeebcc;ChamelGang IOCs modrpflt.dll https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+be147fe9110e32b4c4558900f63888756941bf0d0519dc25c075509457748c25;ChamelGang IOCs MpCmdRun.log.1 https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+21d41a206cd12784473bec587a0b014b7cfd29c8da958531c773547402a16908;ChamelGang IOCs nfsd https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+9dd08351c1094e29f279e66731bea55f546e534fdff8688b16b44b86f67df6cb;ChamelGang IOCs o.r https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+60758fd51c29c09b989be480107f36e7c5552e99a283588ad31c0f87a9353f69;ChamelGang IOCs oci.dll https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+8f349ea483b4986b90384bcdde30666669303ede91f9261f40213bac9e44f286;ChamelGang IOCs oci.dll https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+9f0fc02c4cc5d77f28f3828a361afc93459c888acb1a186e874a60ead3c68ba6;ChamelGang IOCs oci.dll https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+3b3d097873899e1a1d99c2ba5aedfc68b67f30acfeefc74e30eb02647729602f;ChamelGang IOCs oci.dll https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+e18546ad747fa063285f24264f9dc3d452c9eb94dc7f1e87b5a8b0677bbf78d7;ChamelGang IOCs ocilib.dll https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+21d41a206cd12784473bec587a0b014b7cfd29c8da958531c773547402a16908;ChamelGang IOCs old.awk https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+f1afce3be297fa6185903274b3b44cd263b4c1ea89e8282334bc5771c53af1c5;ChamelGang IOCs p.exe, proxyT.exe https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+be34984240e19e64eebcf7f31be9d1dee3defdefb7c9c5de77693527cfb89333;ChamelGang IOCs protsdown.dll https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+c6b0ea8e61dffe61737911cceafdf281c9e656e87365e9119184e4f42bd42c11;ChamelGang IOCs RunCheckConfig.class https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+5c61d82b42c91c387d5ea6e245056b7a8aa213fcafe08c3a72e1866554931290;ChamelGang IOCs siiHost.exe https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+eb4a359c73c31e262e17a6bc2ccefa20429c3f5e2f6e9c521b9ad0ff96fd6ce0;ChamelGang IOCs siihost.exe https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+e3af2ef75033f3ececfd102ca116476397bac6244a8baafb1adebbe8d79c292e;ChamelGang IOCs ssconf https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+ba867705eb986d1975abcf2f2b90ee2c7fdd09255076823cdd85c0feeea15a1b;ChamelGang IOCs sshost.exe https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+dbf16553507202fbd1aed5057df92d11b88563585ae9bcc517f584826fe4819d;ChamelGang IOCs tcs.jsp https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+8491a786a3a00549f35302160c70e6b8cca6e9792be82e0092e7444850ebdfe9;ChamelGang IOCs tunnel.jsp https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+23403a06e470420b8f02d3c352f08446146920412d02444771b42c561d69ba83;ChamelGang IOCs wl https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+132688d482129c3935577e73de15f4cc5f382bd511c249d19adbb78b9f1d16c3;ChamelGang IOCs wl.dll https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+373974f2e7933ec8b6eb7afbc98d2d4e0cfc348321864aaf1bbaf66d4d9ef83b;ChamelGang IOCs wlbsctrl.dll https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
+4b9701472ab1aabe7ea5a15146d21a9ebff60fe8077efb013d54969ff2b67b39;ChamelGang IOCs wlbsctrl.dll https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/

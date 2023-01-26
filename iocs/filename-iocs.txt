@@ -4230,4 +4230,8 @@ _lsass\.dmp;70
 # Suspicious ADModule locations https://github.com/samratashok/ADModule
 \\Microsoft\.ActiveDirectory\.Management\.dll$;70;(C:\\Windows\\Microsoft\.NET\\assembly\\|C:\\Windows\\WinSxS\\(amd64|x86)_microsoft\.activedirectory\.management_)
 
+# Suspicious Web Shell file names https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/#id3-1
+\\[0-9]{8,20}\.(aspx|asp|jsp|jspx|php);60;(examples|tests|demo)
+\\[0-9]\.(aspx|asp|jsp|jspx|php);60;(examples|tests|demo)
+
 # End
