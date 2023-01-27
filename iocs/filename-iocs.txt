@@ -4234,4 +4234,10 @@ _lsass\.dmp;70
 \\[0-9]{8,20}\.(aspx|asp|jsp|jspx|php);60;(examples|tests|demo)
 \\[0-9]\.(aspx|asp|jsp|jspx|php);60;(examples|tests|demo)
 
+# Suspicious Rundll32.exe variations https://twitter.com/_JohnHammond/status/1618988736313966592
+\\rundll33\.exe;70
+\\rundII32\.exe;70
+\\rundlI32\.exe;70
+\\rundIl32\.exe;70
+
 # End
