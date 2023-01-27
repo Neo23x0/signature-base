@@ -14,6 +14,7 @@ rule Mirai_Botnet_Malware {
 		author = "Florian Roth"
 		reference = "Internal Research"
 		date = "2016-10-04"
+      modified = "2023-01-27"
 		hash1 = "05c78c3052b390435e53a87e3d31e9fb17f7c76bb4df2814313bca24735ce81c"
 		hash2 = "05c78c3052b390435e53a87e3d31e9fb17f7c76bb4df2814313bca24735ce81c"
 		hash3 = "20683ff7a5fec1237fc09224af40be029b9548c62c693844624089af568c89d4"
@@ -28,10 +29,9 @@ rule Mirai_Botnet_Malware {
 		hash12 = "f1100c84abff05e0501e77781160d9815628e7fd2de9e53f5454dbcac7c84ca5"
 		hash13 = "fb713ccf839362bf0fbe01aedd6796f4d74521b133011b408e42c1fd9ab8246b"
 	strings:
-		$x1 = "POST /cdn-cgi/" fullword ascii
+		$x1 = "POST /cdn-cgi/" ascii
 		$x2 = "/dev/misc/watchdog" fullword ascii
 		$x3 = "/dev/watchdog" ascii
-		$x4 = "\\POST /cdn-cgi/" ascii
 		$x5 = ".mdebug.abi32" fullword ascii
 
 		$s1 = "LCOGQGPTGP" fullword ascii
@@ -101,14 +101,15 @@ rule MAL_ELF_LNX_Mirai_Oct10_1 {
       author = "Florian Roth"
       reference = "Internal Research"
       date = "2018-10-27"
+      modified = "2023-01-27"
       hash1 = "3be2d250a3922aa3f784e232ce13135f587ac713b55da72ef844d64a508ddcfe"
    strings:
       $x1 = " -r /vi/mips.bushido; "
-      $x2 = "/bin/busybox chmod 777 * /tmp/" fullword ascii
+      $x2 = "/bin/busybox chmod 777 * /tmp/" ascii
 
       $s1 = "POST /ctrlt/DeviceUpgrade_1 HTTP/1.1" fullword ascii
       $s2 = "loadURL>$(echo HUAWEIUPNP)</NewDownloadURL></u:Upgrade></s:Body></s:Envelope>" fullword ascii
-      $s3 = "POST /cdn-cgi/" fullword ascii
+      $s3 = "POST /cdn-cgi/" ascii
    condition:
       uint16(0) == 0x457f and filesize < 200KB and (
          ( 1 of ($x*) and 1 of ($s*) ) or

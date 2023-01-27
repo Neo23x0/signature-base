@@ -30,6 +30,7 @@ rule Mal_http_EXE {
 		author = "Florian Roth"
 		reference = "https://goo.gl/13Wgy1"
 		date = "2016-05-25"
+		modified = "2023-01-27"
 		score = 80
 		hash1 = "ad191d1d18841f0c5e48a5a1c9072709e2dd6359a6f6d427e0de59cfcd1d9666"
 	strings:
@@ -45,7 +46,7 @@ rule Mal_http_EXE {
 		$s1 = "SELECT * FROM moz_logins;" fullword ascii
 		$s2 = "makescr.dat" fullword ascii
 		$s3 = "%s\\Mozilla\\Firefox\\profiles.ini" fullword ascii
-		$s4 = "?moz-proxy://" fullword ascii
+		$s4 = "?moz-proxy://" ascii
 		$s5 = "[%s-%s] Title: %s" fullword ascii
 		$s6 = "Cforeign key mismatch - \"%w\" referencing \"%w\"" fullword ascii
 		$s7 = "Windows 95 SR2" fullword ascii

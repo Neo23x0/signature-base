@@ -103,6 +103,7 @@ rule Greenbug_Malware_5 {
       author = "Florian Roth"
       reference = "https://goo.gl/urp4CD"
       date = "2017-01-25"
+      modified = "2023-01-27"
       super_rule = 1
       hash1 = "308a646f57c8be78e6a63ffea551a84b0ae877b23f28a660920c9ba82d57748f"
       hash2 = "44bdf5266b45185b6824898664fd0c0f2039cdcb48b390f150e71345cd867c49"
@@ -111,7 +112,7 @@ rule Greenbug_Malware_5 {
    strings:
       $x1 = "cmd /u /c WMIC /Node:localhost /Namespace:\\\\root\\SecurityCenter" fullword ascii
       $x2 = "cmd /a /c net user administrator /domain >>" fullword ascii
-      $x3 = "cmd /a /c netstat -ant >>\"%localappdata%\\Microsoft\\" fullword ascii
+      $x3 = "cmd /a /c netstat -ant >>\"%localappdata%\\Microsoft\\" ascii
 
       $o1 = "========================== (Net User) ==========================" ascii fullword
    condition:

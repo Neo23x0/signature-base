@@ -14,6 +14,7 @@ rule MAL_IcedID_GZIP_LDR_202104 {
    meta:
       author = "Thomas Barabosch, Telekom Security"
       date = "2021-04-12"
+      modified = "2023-01-27"
       description = "2021 initial Bokbot / Icedid loader for fake GZIP payloads"
       reference = "https://www.telekom.com/en/blog/group/article/let-s-set-ice-on-fire-hunting-and-detecting-icedid-infections-627240"
    strings:
@@ -22,7 +23,6 @@ rule MAL_IcedID_GZIP_LDR_202104 {
       $string0 = "_gat=" wide
       $string1 = "_ga=" wide
       $string2 = "_gid=" wide
-      $string3 = "_u=" wide
       $string4 = "_io=" wide
       $string5 = "GetAdaptersInfo" fullword
       $string6 = "WINHTTP.dll" fullword
