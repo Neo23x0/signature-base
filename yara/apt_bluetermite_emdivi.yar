@@ -63,6 +63,7 @@ rule Emdivi_Gen2 {
 		author = "Florian Roth @Cyber0ps"
 		reference = "https://securelist.com/blog/research/71876/new-activity-of-the-blue-termite-apt/"
 		date = "2015-08-20"
+		modified = "2023-01-27"
 		super_rule = 1
 		score = 80
 		hash1 = "9a351885bf5f6fec466f30021088504d96e9db10309622ed198184294717add1"
@@ -71,7 +72,7 @@ rule Emdivi_Gen2 {
 	strings:
 		$s1 = "%TEMP%\\IELogs\\" ascii
 		$s2 = "MSPUB.EXE" fullword ascii
-		$s3 = "%temp%\\" fullword ascii
+		$s3 = "%temp%\\" ascii
 		$s4 = "\\NOTEPAD.EXE" ascii
 		$s5 = "%4d-%02d-%02d %02d:%02d:%02d " fullword ascii
 		$s6 = "INTERNET_OPEN_TYPE_PRECONFIG" fullword ascii

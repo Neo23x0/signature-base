@@ -289,10 +289,10 @@ rule apt_regin_legspin {
 	    description = "Rule to detect Regin's Legspin module"
 	    version = "1.0"
 	    last_modified = "2015-01-22"
+		modified = "2023-01-27"
 	    reference = "https://securelist.com/blog/research/68438/an-analysis-of-regins-hopscotch-and-legspin/"
 	    md5 = "29105f46e4d33f66fee346cfd099d1cc"
 	strings:
-	    $mz="MZ"
 	    $a1="sharepw"
 	    $a2="reglist"
 	    $a3="logdump"
@@ -302,7 +302,7 @@ rule apt_regin_legspin {
 	    $a7="ping.exe" wide
 	    $a8="millisecs"
 	condition:
-	    ($mz at 0) and all of ($a*)
+	    uint16(0) == 0x5A4D and all of ($a*)
 }
 
 rule apt_regin_hopscotch {
@@ -311,12 +311,10 @@ rule apt_regin_hopscotch {
 	    description = "Rule to detect Regin's Hopscotch module"
 	    version = "1.0"
 	    last_modified = "2015-01-22"
+		modified = "2023-01-27"
 	    reference = "https://securelist.com/blog/research/68438/an-analysis-of-regins-hopscotch-and-legspin/"
 	    md5 = "6c34031d7a5fc2b091b623981a8ae61c"
 	strings:
-
-	    $mz="MZ"
-
 	    $a1="AuthenticateNetUseIpc"
 	    $a2="Failed to authenticate to"
 	    $a3="Failed to disconnect from"
@@ -326,7 +324,7 @@ rule apt_regin_hopscotch {
 	    $a7="DH Exchange failed"
 	    $a8="ConnectToNamedPipes"
 	condition:
-	    ($mz at 0) and all of ($a*)
+	    uint16(0) == 0x5A4D  and all of ($a*)
 }
 
 rule Regin_Related_Malware {

@@ -517,10 +517,11 @@ rule EQGRP_workit {
 		author = "Florian Roth"
 		reference = "Research"
 		date = "2016-08-16"
+		modified = "2023-01-27"
 		hash1 = "fb533b4d255b4e6072a4fa2e1794e38a165f9aa66033340c2f4f8fd1da155fac"
 	strings:
 		$s1 = "macdef init > /tmp/.netrc;" fullword ascii
-		$s2 = "/usr/bin/wget http://" fullword ascii
+		$s2 = "/usr/bin/wget http://" ascii
 		$s3 = "HOME=/tmp ftp" fullword ascii
 		$s4 = " >> /tmp/.netrc;" fullword ascii
 		$s5 = "/usr/rapidstream/bin/tftp" fullword ascii
@@ -1517,10 +1518,11 @@ rule EquationGroup_nethide_Implant {
       author = "Florian Roth"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
+	  modified = "2023-01-27"
       hash1 = "b2daf9058fdc5e2affd5a409aebb90343ddde4239331d3de8edabeafdb3a48fa"
    strings:
       $s1 = "\\\\.\\dlcndi" fullword ascii
-      $s2 = "s\\drivers\\" fullword wide
+      $s2 = "s\\drivers\\" wide
    condition:
       ( uint16(0) == 0x5a4d and filesize < 90KB and all of them )
 }

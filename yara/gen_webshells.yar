@@ -1985,34 +1985,8 @@ rule webshell_php_dynamic_big
 			any of ( $dynamic* )
 		)
 		and
-		( (
-			// file shouldn't be too small to have big enough data for math.entropy
-			filesize > 2KB and
-        (
-            // base64 :
-            // ignore first and last 500bytes because they usually contain code for decoding and executing
-            math.entropy(500, filesize-500) >= 5.7 and
-            // encoded text has a higher mean than text or code because it's missing the spaces and special chars with the low numbers
-            math.mean(500, filesize-500) > 80 and
-            // deviation of base64 is ~20 according to CyberChef_v9.21.0.html#recipe=Generate_Lorem_Ipsum(3,'Paragraphs')To_Base64('A-Za-z0-9%2B/%3D')To_Charcode('Space',10)Standard_Deviation('Space')
-            // lets take a bit more because it might not be pure base64 also include some xor, shift, replacement, ...
-            // 89 is the mean of the base64 chars
-            math.deviation(500, filesize-500, 89.0) < 23
-        ) or (
-            // gzinflated binary sometimes used in php webshells
-            // ignore first and last 500bytes because they usually contain code for decoding and executing
-            math.entropy(500, filesize-500) >= 7.7 and
-            // encoded text has a higher mean than text or code because it's missing the spaces and special chars with the low numbers
-            math.mean(500, filesize-500) > 120 and
-            math.mean(500, filesize-500) < 136 and
-            // deviation of base64 is ~20 according to CyberChef_v9.21.0.html#recipe=Generate_Lorem_Ipsum(3,'Paragraphs')To_Base64('A-Za-z0-9%2B/%3D')To_Charcode('Space',10)Standard_Deviation('Space')
-            // lets take a bit more because it might not be pure base64 also include some xor, shift, replacement, ...
-            // 89 is the mean of the base64 chars
-            math.deviation(500, filesize-500, 89.0) > 65
-        )
-		)
-		or (
-        $gif at 0 or
+		( ( 
+		$gif at 0 or
         (
             filesize < 4KB and
             (
@@ -2049,6 +2023,31 @@ rule webshell_php_dynamic_big
                 4 of ( $gen_much_sus* ) or
                 8 of ( $gen_bit_sus* )
             )
+        )
+		) or (
+			// file shouldn't be too small to have big enough data for math.entropy
+			filesize > 2KB and
+        (
+            // base64 :
+            // ignore first and last 500bytes because they usually contain code for decoding and executing
+            math.entropy(500, filesize-500) >= 5.7 and
+            // encoded text has a higher mean than text or code because it's missing the spaces and special chars with the low numbers
+            math.mean(500, filesize-500) > 80 and
+            // deviation of base64 is ~20 according to CyberChef_v9.21.0.html#recipe=Generate_Lorem_Ipsum(3,'Paragraphs')To_Base64('A-Za-z0-9%2B/%3D')To_Charcode('Space',10)Standard_Deviation('Space')
+            // lets take a bit more because it might not be pure base64 also include some xor, shift, replacement, ...
+            // 89 is the mean of the base64 chars
+            math.deviation(500, filesize-500, 89.0) < 23
+        ) or (
+            // gzinflated binary sometimes used in php webshells
+            // ignore first and last 500bytes because they usually contain code for decoding and executing
+            math.entropy(500, filesize-500) >= 7.7 and
+            // encoded text has a higher mean than text or code because it's missing the spaces and special chars with the low numbers
+            math.mean(500, filesize-500) > 120 and
+            math.mean(500, filesize-500) < 136 and
+            // deviation of base64 is ~20 according to CyberChef_v9.21.0.html#recipe=Generate_Lorem_Ipsum(3,'Paragraphs')To_Base64('A-Za-z0-9%2B/%3D')To_Charcode('Space',10)Standard_Deviation('Space')
+            // lets take a bit more because it might not be pure base64 also include some xor, shift, replacement, ...
+            // 89 is the mean of the base64 chars
+            math.deviation(500, filesize-500, 89.0) > 65
         )
 		)
 		)
