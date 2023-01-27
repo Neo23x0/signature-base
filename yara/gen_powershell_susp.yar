@@ -28,7 +28,7 @@ rule WordDoc_PowerShell_URLDownloadToFile {
       ( uint16(0) == 0xcfd0 and 1 of ($w*) and all of ($p*) )
 }
 
-rule Suspicious_PowerShell_Code_1 {
+rule Suspicious_PowerShell_Code_1 : FILE {
    meta:
       description = "Detects suspicious PowerShell code"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
@@ -36,7 +36,6 @@ rule Suspicious_PowerShell_Code_1 {
 		score = 60
       reference = "Internal Research"
       date = "2017-02-22"
-      type = "file"
    strings:
       $s1 = /$[a-z]=new-object net.webclient/ ascii
       $s2 = /$[a-z].DownloadFile\("http:/ ascii
@@ -48,7 +47,7 @@ rule Suspicious_PowerShell_Code_1 {
       1 of them
 }
 
-rule Suspicious_PowerShell_WebDownload_1 : HIGHVOL {
+rule Suspicious_PowerShell_WebDownload_1 : HIGHVOL FILE {
    meta:
       description = "Detects suspicious PowerShell code that downloads from web sites"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
@@ -57,7 +56,6 @@ rule Suspicious_PowerShell_WebDownload_1 : HIGHVOL {
       reference = "Internal Research"
       date = "2017-02-22"
       modified = "2022-07-27"
-      type = "file"
       nodeepdive = 1
    strings:
       $s1 = "System.Net.WebClient).DownloadString(\"http" ascii nocase
@@ -213,13 +211,12 @@ rule PowerShell_JAB_B64 {
       filesize < 30KB and all of them
 }
 
-rule SUSP_PS1_FromBase64String_Content_Indicator {
+rule SUSP_PS1_FromBase64String_Content_Indicator : FILE {
    meta:
       description = "Detects suspicious base64 encoded PowerShell expressions"
       author = "Florian Roth"
       reference = "https://gist.github.com/Neo23x0/6af876ee72b51676c82a2db8d2cd3639"
       date = "2020-01-25"
-      type = "file"
    strings:
       $ = "::FromBase64String(\"H4s" ascii wide
       $ = "::FromBase64String(\"TVq" ascii wide

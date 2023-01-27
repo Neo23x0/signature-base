@@ -1,5 +1,5 @@
 
-rule PowerShell_Susp_Parameter_Combo : HIGHVOL {
+rule PowerShell_Susp_Parameter_Combo : HIGHVOL FILE {
    meta:
       description = "Detects PowerShell invocation with suspicious parameters"
       author = "Florian Roth"
@@ -7,7 +7,6 @@ rule PowerShell_Susp_Parameter_Combo : HIGHVOL {
       date = "2017-03-12"
       modified = "2022-09-15"
       score = 60
-      type = "file"
    strings:
       /* Encoded Command */
       $sa1 = " -enc " ascii wide nocase

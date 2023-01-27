@@ -2,8 +2,7 @@
 	Webshell rules that use external variables for false positive filtering
 */
 
-rule webshell_php_by_string_obfuscation
-{
+rule webshell_php_by_string_obfuscation : FILE {
 	meta:
 		description = "PHP file containing obfuscation strings. Might be legitimate code obfuscated for whatever reasons, a webshell or can be used to insert malicious Javascript for credit card skimming"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
@@ -11,7 +10,6 @@ rule webshell_php_by_string_obfuscation
 		date = "2021/01/09"
 		modified = "2022-10-25"
 		hash = "e4a15637c90e8eabcbdc748366ae55996dbec926382220c423e754bd819d22bc"
-		type = "file"
 	strings:
 		$opbs13 = "{\"_P\"./*-/*-*/\"OS\"./*-/*-*/\"T\"}" wide ascii
 		$opbs14 = "/*-/*-*/\"" wide ascii

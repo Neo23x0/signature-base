@@ -462,13 +462,11 @@ rule hacktool_windows_moyix_creddump
         all of ($a*)
 }
 
-rule hacktool_windows_ncc_wmicmd
-{
+rule hacktool_windows_ncc_wmicmd : FILE {
     meta:
         description = "Command shell wrapper for WMI"
         reference = "https://github.com/nccgroup/WMIcmd"
         author = "@mimeframe"
-        type = "file"
     strings:
         $a1 = "Need to specify a username, domain and password for non local connections" wide ascii
         $a2 = "WS-Management is running on the remote host" wide ascii

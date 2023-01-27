@@ -471,14 +471,13 @@ rule CN_Packed_Scanner {
       all of them and filesize < 180KB and filesize > 70KB
 }
 
-rule Tiny_Network_Tool_Generic {
+rule Tiny_Network_Tool_Generic : FILE {
    meta:
       description = "Tiny tool with suspicious function imports. (Rule based on WinEggDrop Scanner samples)"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       date = "08.10.2014"
       score = 40
-      type = "file"
       hash0 = "9e1ab25a937f39ed8b031cd8cfbc4c07"
       hash1 = "cafc31d39c1e4721af3ba519759884b9"
       hash2 = "8e635b9a1e5aa5ef84bfa619bd2a1f92"

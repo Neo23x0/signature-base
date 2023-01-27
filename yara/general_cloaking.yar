@@ -41,14 +41,13 @@ rule Cloaked_RAR_File {
 		and not filepath contains "Recycle" 				// not a deleted RAR file in recycler
 }
 
-rule Base64_encoded_Executable {
+rule Base64_encoded_Executable : FILE {
 	meta:
 		description = "Detects an base64 encoded executable (often embedded)"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth"
 		date = "2015-05-28"
 		score = 40
-		type = "file"
 	strings:
 		$s1 = "TVpTAQEAAAAEAAAA//8AALgAAAA" // 14 samples in goodware archive
 		$s2 = "TVoAAAAAAAAAAAAAAAAAAAAAAAA" // 26 samples in goodware archive
