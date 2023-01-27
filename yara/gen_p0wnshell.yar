@@ -27,7 +27,7 @@ rule p0wnedPowerCat {
       ( uint16(0) == 0x7375 and filesize < 150KB and 1 of them ) or ( 2 of them )
 }
 
-rule Hacktool_Strings_p0wnedShell {
+rule Hacktool_Strings_p0wnedShell : FILE {
    meta:
       description = "Detects strings found in Runspace Post Exploitation Toolkit"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
@@ -37,7 +37,6 @@ rule Hacktool_Strings_p0wnedShell {
       modified = "2022-07-29"
       hash1 = "e1f35310192416cd79e60dba0521fc6eb107f3e65741c344832c46e9b4085e60"
       nodeepdive = 1
-      type = "file"
    strings:
       $x1 = "Invoke-TokenManipulation" fullword ascii
       $x2 = "windows/meterpreter" fullword ascii

@@ -7,7 +7,7 @@
 
 import "pe"
 
-rule APT10_Malware_Sample_Gen {
+rule APT10_Malware_Sample_Gen : FILE {
    meta:
       description = "APT 10 / Cloud Hopper malware campaign"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
@@ -15,8 +15,6 @@ rule APT10_Malware_Sample_Gen {
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-06"
       score = 80
-      type = "file"
-
    strings:
       /* C2 Servers */
       $c2_1 = "002562066559681.r3u8.com" ascii

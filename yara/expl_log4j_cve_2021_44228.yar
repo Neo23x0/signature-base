@@ -62,7 +62,7 @@ rule EXPL_Log4j_CVE_2021_44228_JAVA_Exception_Dec21_1 {
       $xa1 or all of ($sa*)
 }
 
-rule EXPL_Log4j_CVE_2021_44228_Dec21_Soft {
+rule EXPL_Log4j_CVE_2021_44228_Dec21_Soft : FILE {
    meta:
       description = "Detects indicators in server logs that indicate an exploitation attempt of CVE-2021-44228"
       author = "Florian Roth"
@@ -70,7 +70,6 @@ rule EXPL_Log4j_CVE_2021_44228_Dec21_Soft {
       date = "2021-12-10"
       modified = "2021-12-20"
       score = 60
-      type = "file"
    strings:
       $x01 = "${jndi:ldap:/"
       $x02 = "${jndi:rmi:/"
