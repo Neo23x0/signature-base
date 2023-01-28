@@ -6067,3 +6067,27 @@ rule webshell_in_image
 		)
 		) ) )
 }
+
+rule webshell_mixed_obfuscations {
+   meta:
+      description = "webshell with mixed obfuscation commands"
+      author = "Arnim Rupp"
+      reference = "https://github.com/Neo23x0/yarGen"
+	  license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+      date = "2023-01-28"
+      hash1 = "8c4e5c6bdfcc86fa27bdfb075a7c9a769423ec6d53b73c80cbc71a6f8dd5aace"
+      hash2 = "78f2086b6308315f5f0795aeaa75544128f14889a794205f5fc97d7ca639335b"
+      hash3 = "3bca764d44074820618e1c831449168f220121698a7c82e9909f8eab2e297cbd"
+      hash4 = "b26b5e5cba45482f486ff7c75b54c90b7d1957fd8e272ddb4b2488ec65a2936e"
+      hash5 = "e217be2c533bfddbbdb6dc6a628e0d8756a217c3ddc083894e07fd3a7408756c"
+	  score = 50
+   strings:
+      $s1 = "rawurldecode/" fullword ascii
+      $s5 = "preg_replace/" fullword ascii 
+      $s6 = " __FILE__/" fullword ascii
+      $s7 = "strlen/" fullword ascii
+      $s10 = "str_repeat/" fullword ascii
+      $s12 = "basename/" fullword ascii
+   condition:
+      ( uint16(0) == 0x3f3c and filesize < 200KB and ( all of them ))
+}
