@@ -4434,7 +4434,7 @@ rule HKTL_DomainPasswordSpray {
       score = 60
       hash1 = "44d4c0ae5673d2a076f3b5acdc83063aca49d58e6dd7cf73d0b927f83d359247"
    strings:
-      $s = "Invoke-DomainPasswordSpray" fullword
+      $s = "Invoke-DomainPasswordSpray" fullword ascii wide
    condition:
       filesize < 100KB and
       all of them
