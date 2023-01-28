@@ -98,9 +98,10 @@ rule StoneDrill_ntssrvr32 {
       author = "Florian Roth"
       reference = "https://securelist.com/blog/research/77725/from-shamoon-to-stonedrill/"
       date = "2017-03-07"
+      modified = "2023-01-27"
       hash1 = "394a7ebad5dfc13d6c75945a61063470dc3b68f7a207613b79ef000e1990909b"
    strings:
-      $s1 = "g\\system32\\" fullword wide
+      $s1 = "g\\system32\\" wide
       $s2 = "ztvttw" fullword wide
       $s3 = "lwizvm" fullword ascii
 

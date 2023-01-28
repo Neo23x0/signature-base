@@ -5,17 +5,17 @@ rule apt_equation_exploitlib_mutexes {
         copyright = "Kaspersky Lab"
         description = "Rule to detect Equation group's Exploitation library http://goo.gl/ivt8EW"
         version = "1.0"
-        last_modified = "2015-02-16"
+		date = "2016-02-15"
+        modified = "2023-01-27"
         reference = "http://securelist.com/blog/research/68750/equation-the-death-star-of-malware-galaxy/"
     strings:
-        $mz="MZ"
         $a1="prkMtx" wide
         $a2="cnFormSyncExFBC" wide
         $a3="cnFormVoidFBC" wide
         $a4="cnFormSyncExFBC"
         $a5="cnFormVoidFBC"
     condition:
-        (($mz at 0) and any of ($a*))
+        uint16(0) == 0x5A4D and any of ($a*)
 }
 
 /* Disabled by FR due to $a2 string

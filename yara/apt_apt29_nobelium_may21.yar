@@ -151,8 +151,8 @@ rule APT_APT29_NOBELIUM_BoomBox_PDF_Masq_May21_1 {
       $fp3 = { 20 6F 62 6A 0A } /*  obj\x0a */
    condition:
       $ah1 at 0 and $af1 at (filesize-7) and filesize < 100KB
-      and math.entropy(16,filesize) > 7
       and not 1 of ($fp*)
+      and math.entropy(16,filesize) > 7
 }
 
 rule APT_APT29_NOBELIUM_NativeZone_Loader_May21_1 {

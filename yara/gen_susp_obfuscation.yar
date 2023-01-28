@@ -42,14 +42,13 @@ rule SUSP_Double_Base64_Encoded_Executable {
       1 of them
 }
 
-rule SUSP_Reversed_Base64_Encoded_EXE {
+rule SUSP_Reversed_Base64_Encoded_EXE : FILE {
    meta:
       description = "Detects an base64 encoded executable with reversed characters"
       author = "Florian Roth"
       date = "2020-04-06"
       reference = "Internal Research"
       score = 80
-      type = "file"
       hash1 = "7e6d9a5d3b26fd1af7d58be68f524c4c55285b78304a65ec43073b139c9407a8"
    strings:
       $s1 = "AEAAAAEQATpVT"
@@ -79,14 +78,13 @@ rule SUSP_Script_Base64_Blocks_Jun20_1 {
       all of them
 }
 
-rule SUSP_Reversed_Hacktool_Author {
+rule SUSP_Reversed_Hacktool_Author : FILE {
    meta:
       description = "Detects a suspicious path traversal into a Windows folder"
       author = "Florian Roth"
       reference = "https://hackingiscool.pl/cmdhijack-command-argument-confusion-with-path-traversal-in-cmd-exe/"
       date = "2020-06-10"
       score = 65
-      type = "file"
    strings:
       $x1 = "iwiklitneg" fullword ascii wide
       $x2 = " eetbus@ " ascii wide

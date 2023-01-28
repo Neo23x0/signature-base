@@ -52,10 +52,11 @@ rule Guilin_veterans_cookie_spoofing_tool {
 		author = "Florian Roth"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
+		modified = "2023-01-27"
 		hash = "06b1969bc35b2ee8d66f7ce8a2120d3016a00bb1"
 	strings:
 		$s0 = "kernel32.dll^G" fullword ascii
-		$s1 = "\\.Sus\"B" fullword ascii
+		$s1 = "\\.Sus\"B" ascii
 		$s4 = "u56Load3" fullword ascii
 		$s11 = "O MYTMP(iM) VALUES (" ascii
 	condition:
@@ -272,7 +273,7 @@ rule CookieTools {
 		$s2 = "No data to read.$Can not bind in port range (%d - %d)" fullword wide
 		$s3 = "Connection Closed Gracefully.;Could not bind socket. Address and port are alread" wide
 		$s8 = "OnGetPasswordP" fullword ascii
-		$s12 = "http://www.chinesehack.org/" fullword ascii
+		$s12 = "http://www.chinesehack.org/" ascii
 	condition:
 		uint16(0) == 0x5a4d and filesize < 5000KB and 4 of them
 }
@@ -289,7 +290,7 @@ rule update_PcInit {
 		$s1 = "\\svchost.exe" ascii
 		$s2 = "%s%08x.001" fullword ascii
 		$s3 = "Global\\ps%08x" fullword ascii
-		$s4 = "drivers\\" fullword ascii /* Goodware String - occured 2 times */
+		$s4 = "drivers\\" ascii /* Goodware String - occured 2 times */
 		$s5 = "StrStrA" fullword ascii /* Goodware String - occured 43 times */
 		$s6 = "StrToIntA" fullword ascii /* Goodware String - occured 44 times */
 	condition:
@@ -2006,8 +2007,8 @@ rule unknown2 {
 		date = "2015-06-13"
 		hash = "32508d75c3d95e045ddc82cb829281a288bd5aa3"
 	strings:
-		$s1 = "http://md5.com.cn/index.php/md5reverse/index/md/" fullword wide
-		$s2 = "http://www.md5decrypter.co.uk/feed/api.aspx?" fullword wide
+		$s1 = "http://md5.com.cn/index.php/md5reverse/index/md/" wide
+		$s2 = "http://www.md5decrypter.co.uk/feed/api.aspx?" wide
 		$s3 = "http://www.md5.com.cn" fullword wide
 		$s4 = "1.5.exe" fullword wide
 		$s5 = "\\Set.ini" wide

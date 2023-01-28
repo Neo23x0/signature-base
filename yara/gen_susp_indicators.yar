@@ -1,3 +1,4 @@
+import "pe"
 
 rule SUSP_ENV_Folder_Root_File_Jan23_1 : SCRIPT {
    meta:

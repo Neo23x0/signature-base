@@ -59,7 +59,7 @@ rule Suspicious_Script_Running_from_HTTP {
       1 of them
 }
 
-rule ReconCommands_in_File {
+rule ReconCommands_in_File : FILE {
    meta:
       description = "Detects various recon commands in a single file"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
@@ -67,7 +67,6 @@ rule ReconCommands_in_File {
       reference = "https://twitter.com/haroonmeer/status/939099379834658817"
       date = "2017-12-11"
       score = 40
-      type = "file"
    strings:
       $ = "tasklist"
       $ = "net time"

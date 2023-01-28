@@ -51,11 +51,12 @@ rule EldoS_RawDisk {
       author = "Florian Roth (with Binar.ly)"
       reference = "https://goo.gl/jKIfGB"
       date = "2016-12-01"
+      modified = "2023-01-27"
       score = 50
       hash1 = "47bb36cd2832a18b5ae951cf5a7d44fba6d8f5dca0a372392d40f51d1fe1ac34"
       hash2 = "394a7ebad5dfc13d6c75945a61063470dc3b68f7a207613b79ef000e1990909b"
    strings:
-      $s1 = "g\\system32\\" fullword wide
+      $s1 = "g\\system32\\" wide
       $s2 = "ztvttw" fullword wide
       $s3 = "lwizvm" fullword ascii
       $s4 = "FEJIKC" fullword ascii

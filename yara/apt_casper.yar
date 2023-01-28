@@ -7,7 +7,7 @@ rule Casper_Backdoor_x86 {
       author = "Florian Roth"
       reference = "http://goo.gl/VRJNLo"
       date = "2015-03-05"
-      modified = "2020-12-18"
+      modified = "2023-01-27"
       hash = "f4c39eddef1c7d99283c7303c1835e99d8e498b0"
       score = 80
    strings:
@@ -25,7 +25,7 @@ rule Casper_Backdoor_x86 {
       $y3 = "Cookie: %s=%s" fullword ascii
       $y4 = "http://%S:%d" fullword wide
 
-      $z1 = "http://google.com/" fullword ascii
+      $z1 = "http://google.com/" ascii
       $z2 = "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)" fullword ascii
       $z3 = "Operating System\"" fullword wide
    condition:
