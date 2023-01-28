@@ -6082,14 +6082,14 @@ rule webshell_mixed_obfuscations {
       hash5 = "e217be2c533bfddbbdb6dc6a628e0d8756a217c3ddc083894e07fd3a7408756c"
 	  score = 50
    strings:
-      $s1 = "rawurldecode/" fullword ascii
-      $s5 = "preg_replace/" fullword ascii 
-      $s6 = " __FILE__/" fullword ascii
-      $s7 = "strlen/" fullword ascii
-      $s10 = "str_repeat/" fullword ascii
-      $s12 = "basename/" fullword ascii
+      $s1 = "rawurldecode/*" ascii
+      $s2 = "preg_replace/*" ascii 
+      $s3 = " __FILE__/*" ascii
+      $s4 = "strlen/*" ascii
+      $s5 = "str_repeat/*" ascii
+      $s6 = "basename/*" ascii
    condition:
-      ( uint16(0) == 0x3f3c and filesize < 200KB and ( all of them ))
+      ( uint16(0) == 0x3f3c and filesize < 200KB and ( 4 of them ))
 }
 
 
