@@ -2,7 +2,7 @@
 rule EXPL_LOG_CVE_2021_27065_Exchange_Forensic_Artefacts_Mar21_1 : LOG {
    meta:
       description = "Detects forensic artefacts found in HAFNIUM intrusions exploiting CVE-2021-27065"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.volexity.com/blog/2021/03/02/active-exploitation-of-microsoft-exchange-zero-day-vulnerabilities/"
       date = "2021-03-02"
    strings:
@@ -14,7 +14,7 @@ rule EXPL_LOG_CVE_2021_27065_Exchange_Forensic_Artefacts_Mar21_1 : LOG {
 rule EXPL_LOG_CVE_2021_26858_Exchange_Forensic_Artefacts_Mar21_1 : LOG {
    meta:
       description = "Detects forensic artefacts found in HAFNIUM intrusions exploiting CVE-2021-26858"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.volexity.com/blog/2021/03/02/active-exploitation-of-microsoft-exchange-zero-day-vulnerabilities/"
       date = "2021-03-02"
       score = 65
@@ -28,7 +28,7 @@ rule EXPL_LOG_CVE_2021_26858_Exchange_Forensic_Artefacts_Mar21_1 : LOG {
 rule LOG_APT_HAFNIUM_Exchange_Log_Traces_Mar21_1 : LOG {
    meta:
       description = "Detects suspicious log entries that indicate requests as described in reports on HAFNIUM activity"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.volexity.com/blog/2021/03/02/active-exploitation-of-microsoft-exchange-zero-day-vulnerabilities/"
       date = "2021-03-04"
       score = 65
@@ -45,7 +45,7 @@ rule LOG_APT_HAFNIUM_Exchange_Log_Traces_Mar21_1 : LOG {
 rule LOG_Exchange_Forensic_Artefacts_CleanUp_Activity_Mar21_1 : LOG {
    meta:
       description = "Detects forensic artefacts showing cleanup activity found in HAFNIUM intrusions exploiting"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/jdferrell3/status/1368626281970024448"
       date = "2021-03-08"
       score = 70
@@ -87,7 +87,7 @@ rule EXPL_LOG_CVE_2021_27055_Exchange_Forensic_Artefacts : LOG {
 rule LOG_CVE_2021_27065_Exchange_Forensic_Artefacts_Mar21_2 : LOG {
    meta:
       description = "Detects suspicious log entries that indicate requests as described in reports on HAFNIUM activity"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.praetorian.com/blog/reproducing-proxylogon-exploit/"
       date = "2021-03-10"
       score = 65

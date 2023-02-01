@@ -2,7 +2,7 @@
 rule APT_CryWiper_Dec22 {
    meta:
       description = "Detects CryWiper malware samples"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist-ru.translate.goog/novyj-troyanec-crywiper/106114/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en"
       date = "2022-12-05"
       score = 75

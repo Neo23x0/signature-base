@@ -13,7 +13,7 @@ rule Invoke_SMBExec {
    meta:
       description = "Detects Invoke-WmiExec or Invoke-SmbExec"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/Kevin-Robertson/Invoke-TheHash"
       date = "2017-06-14"
       hash1 = "674fc045dc198874f323ebdfb9e9ff2f591076fa6fac8d1048b5b8d9527c64cd"
@@ -32,7 +32,7 @@ rule Invoke_WMIExec_Gen_1 {
    meta:
       description = "Detects Invoke-WmiExec or Invoke-SmbExec"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/Kevin-Robertson/Invoke-TheHash"
       date = "2017-06-14"
       hash1 = "140c23514dbf8043b4f293c501c2f9046efcc1c08630621f651cfedb6eed8b97"
@@ -52,7 +52,7 @@ rule Invoke_SMBExec_Invoke_WMIExec_1 {
    meta:
       description = "Auto-generated rule - from files Invoke-SMBExec.ps1, Invoke-WMIExec.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/Kevin-Robertson/Invoke-TheHash"
       date = "2017-06-14"
       super_rule = 1
@@ -70,7 +70,7 @@ rule Invoke_WMIExec_Gen {
    meta:
       description = "Auto-generated rule - from files Invoke-SMBClient.ps1, Invoke-SMBExec.ps1, Invoke-WMIExec.ps1, Invoke-WMIExec.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/Kevin-Robertson/Invoke-TheHash"
       date = "2017-06-14"
       super_rule = 1

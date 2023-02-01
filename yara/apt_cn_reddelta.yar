@@ -2,7 +2,7 @@
 rule APT_CN_MAL_RedDelta_Shellcode_Loader_Oct20_1 {
    meta:
       description = "Detects Red Delta samples"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/JAMESWT_MHT/status/1316387482708119556"
       date = "2020-10-14"
       hash1 = "30b2bbce0ca4cb066721c94a64e2c37b7825dd72fc19c20eb0ab156bea0f8efc"
@@ -30,7 +30,7 @@ rule APT_CN_MAL_RedDelta_Shellcode_Loader_Oct20_1 {
 rule APT_CN_MAL_RedDelta_Shellcode_Loader_Oct20_2 {
    meta:
       description = "Detects Red Delta samples"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/JAMESWT_MHT/status/1316387482708119556"
       date = "2020-10-14"
       hash1 = "260ebbf392498d00d767a5c5ba695e1a124057c1c01fff2ae76db7853fe4255b"
@@ -57,7 +57,7 @@ rule APT_CN_MAL_RedDelta_Shellcode_Loader_Oct20_2 {
 rule APT_CN_MAL_RedDelta_Shellcode_Loader_Oct20_3 {
    meta:
       description = "Detects Red Delta samples"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/JAMESWT_MHT/status/1316387482708119556"
       date = "2020-10-14"
       modified = "2022-12-21"

@@ -3,7 +3,7 @@ rule PUP_InstallRex_AntiFWb {
 	meta:
 		description = "Malware InstallRex / AntiFW"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2015-05-13"
 		hash = "bb5607cd2ee51f039f60e32cf7edc4e21a2d95cd"
 		score = 55

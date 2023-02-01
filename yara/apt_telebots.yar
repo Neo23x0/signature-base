@@ -11,7 +11,7 @@ rule TeleBots_IntercepterNG {
    meta:
       description = "Detects TeleBots malware - IntercepterNG"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/4if3HG"
       date = "2016-12-14"
       hash1 = "5f9fef7974d37922ac91365588fbe7b544e13abbbde7c262fe30bade7026e118"
@@ -32,7 +32,7 @@ rule TeleBots_KillDisk_1 {
    meta:
       description = "Detects TeleBots malware - KillDisk"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/4if3HG"
       date = "2016-12-14"
       hash1 = "8246f709efa922a485e1ca32d8b0d10dc752618e8b3fce4d3dd58d10e4a6a16d"
@@ -52,7 +52,7 @@ rule TeleBots_KillDisk_2 {
    meta:
       description = "Detects TeleBots malware - KillDisk"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/4if3HG"
       date = "2016-12-14"
       hash1 = "26173c9ec8fd1c4f9f18f89683b23267f6f9d116196ed15655e9cb453af2890e"
@@ -67,7 +67,7 @@ rule TeleBots_KillDisk_2 {
 rule TeleBots_CredRaptor_Password_Stealer {
    meta:
       description = "Detects TeleBots malware - CredRaptor Password Stealer"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/4if3HG"
       date = "2016-12-14"
       modified = "2023-01-06"
@@ -87,7 +87,7 @@ rule TeleBots_VBS_Backdoor_1 {
    meta:
       description = "Detects TeleBots malware - VBS Backdoor"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/4if3HG"
       date = "2016-12-14"
       hash1 = "eb31a918ccc1643d069cf08b7958e2760e8551ba3b88ea9e5d496e07437273b2"
@@ -104,7 +104,7 @@ rule TeleBots_VBS_Backdoor_2 {
    meta:
       description = "Detects TeleBots malware - VBS Backdoor"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/4if3HG"
       date = "2016-12-14"
       hash1 = "1b2a5922b58c8060844b43e14dfa5b0c8b119f281f54a46f0f1c34accde71ddb"
@@ -120,7 +120,7 @@ rule TeleBots_Win64_Spy_KeyLogger_G {
    meta:
       description = "Detects TeleBots malware - Win64 Spy KeyLogger G"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/4if3HG"
       date = "2016-12-14"
       hash1 = "e3f134ae88f05463c4707a80f956a689fba7066bb5357f6d45cba312ad0db68e"

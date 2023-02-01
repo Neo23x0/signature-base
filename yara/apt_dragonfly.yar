@@ -14,7 +14,7 @@ rule Unspecified_Malware_Sep1_A1 {
    meta:
       description = "Detects malware from DrqgonFly APT report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.symantec.com/connect/blogs/dragonfly-western-energy-sector-targeted-sophisticated-attack-group"
       date = "2017-09-12"
       hash1 = "28143c7638f22342bff8edcd0bedd708e265948a5fcca750c302e2dca95ed9f0"
@@ -29,7 +29,7 @@ rule DragonFly_APT_Sep17_1 {
    meta:
       description = "Detects malware from DrqgonFly APT report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.symantec.com/connect/blogs/dragonfly-western-energy-sector-targeted-sophisticated-attack-group"
       date = "2017-09-12"
       hash1 = "fc54d8afd2ce5cb6cc53c46783bf91d0dd19de604308d536827320826bc36ed9"
@@ -44,7 +44,7 @@ rule DragonFly_APT_Sep17_1 {
 rule DragonFly_APT_Sep17_2 {
    meta:
       description = "Detects malware from DrqgonFly APT report"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.symantec.com/connect/blogs/dragonfly-western-energy-sector-targeted-sophisticated-attack-group"
       date = "2017-09-12"
       modified = "2023-01-06"
@@ -66,7 +66,7 @@ rule DragonFly_APT_Sep17_3 {
    meta:
       description = "Detects malware from DrqgonFly APT report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.symantec.com/connect/blogs/dragonfly-western-energy-sector-targeted-sophisticated-attack-group"
       date = "2017-09-12"
       hash1 = "b051a5997267a5d7fa8316005124f3506574807ab2b25b037086e2e971564291"
@@ -88,7 +88,7 @@ rule DragonFly_APT_Sep17_4 {
    meta:
       description = "Detects malware from DrqgonFly APT report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.symantec.com/connect/blogs/dragonfly-western-energy-sector-targeted-sophisticated-attack-group"
       date = "2017-09-12"
       hash1 = "2f159b71183a69928ba8f26b76772ec504aefeac71021b012bd006162e133731"

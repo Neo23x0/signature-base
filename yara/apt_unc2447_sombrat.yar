@@ -2,7 +2,7 @@
 rule APT_UNC2447_MAL_SOMBRAT_May21_1 {
    meta:
       description = "Detects SombRAT samples from UNC2447 campaign"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html"
       date = "2021-05-01"
       modified = "2023-01-07"
@@ -37,7 +37,7 @@ rule APT_UNC2447_MAL_SOMBRAT_May21_1 {
 rule APT_UNC2447_MAL_RANSOM_HelloKitty_May21_1 {
    meta:
       description = "Detects HelloKitty Ransomware samples from UNC2447 campaign"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html"
       date = "2021-05-01"
       hash1 = "02a08b994265901a649f1bcf6772bc06df2eb51eb09906af9fd0f4a8103e9851"
@@ -72,7 +72,7 @@ rule APT_UNC2447_MAL_RANSOM_HelloKitty_May21_1 {
 rule APT_UNC2447_MAL_RANSOM_HelloKitty_May21_2 {
    meta:
       description = "Detects HelloKitty Ransomware samples from UNC2447 campaign"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html"
       date = "2021-05-01"
       hash1 = "10887d13dba1f83ef34e047455a04416d25a83079a7f3798ce3483e0526e3768"
@@ -98,7 +98,7 @@ rule APT_UNC2447_MAL_RANSOM_HelloKitty_May21_2 {
 rule APT_UNC2447_PS1_WARPRISM_May21_1 {
    meta:
       description = "Detects WARPRISM PowerShell samples from UNC2447 campaign"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html"
       date = "2021-05-01"
       hash1 = "3090bff3d16b0b150444c3bfb196229ba0ab0b6b826fa306803de0192beddb80"
@@ -117,7 +117,7 @@ rule APT_UNC2447_PS1_WARPRISM_May21_1 {
 rule APT_UNC2447_BAT_Runner_May21_1 {
    meta:
       description = "Detects Batch script runners from UNC2447 campaign"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html"
       date = "2021-05-01"
       modified = "2023-01-07"

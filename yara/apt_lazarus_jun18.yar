@@ -14,7 +14,7 @@ rule APT_Lazarus_Dropper_Jun18_1 {
    meta:
       description = "Detects Lazarus Group Dropper"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/DrunkBinary/status/1002587521073721346"
       date = "2018-06-01"
       hash1 = "086a50476f5ceee4b10871c1a8b0a794e96a337966382248a8289598b732bd47"
@@ -34,7 +34,7 @@ rule APT_Lazarus_RAT_Jun18_1 {
    meta:
       description = "Detects Lazarus Group RAT"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/DrunkBinary/status/1002587521073721346"
       date = "2018-06-01"
       hash1 = "c10363059c57c52501c01f85e3bb43533ccc639f0ea57f43bae5736a8e7a9bc8"
@@ -67,7 +67,7 @@ rule APT_Lazarus_RAT_Jun18_2 {
    meta:
       description = "Detects Lazarus Group RAT"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/DrunkBinary/status/1002587521073721346"
       date = "2018-06-01"
       hash1 = "e6096fb512a6d32a693491f24e67d772f7103805ad407dc37065cebd1962a547"

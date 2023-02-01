@@ -3,7 +3,7 @@ rule CrunchRAT {
    meta:
       description = "Detects CrunchRAT - file CrunchRAT.exe"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/t3ntman/CrunchRAT"
       date = "2017-11-03"
       hash1 = "58a07e96497745b6fd5075d569f17b0254c3e50b0234744e0487f7c5dddf7161"

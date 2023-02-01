@@ -11,7 +11,7 @@
 rule Chafer_Mimikatz_Custom  {
    meta:
       description = "Detects Custom Mimikatz Version"
-      author = "Florian Roth / Markus Neis"
+      author = "Florian Roth (Nextron Systems) / Markus Neis"
       reference = "https://nyotron.com/wp-content/uploads/2018/03/Nyotron-OilRig-Malware-Report-March-2018b.pdf"
       date = "2018-03-22"
       hash1 = "9709afeb76532566ee3029ecffc76df970a60813bcac863080cc952ad512b023"
@@ -74,7 +74,7 @@ rule Oilrig_Myrtille {
 rule Chafer_Packed_Mimikatz {
    meta:
       description = "Detects Oilrig Packed Mimikatz also detected as Chafer_WSC_x64 by FR"
-      author = "Florian Roth / Markus Neis"
+      author = "Florian Roth (Nextron Systems) / Markus Neis"
       reference = "https://nyotron.com/wp-content/uploads/2018/03/Nyotron-OilRig-Malware-Report-March-2018b.pdf"
       date = "2018-03-22"
       hash1 = "5f2c3b5a08bda50cca6385ba7d84875973843885efebaff6a482a38b3cb23a7c"

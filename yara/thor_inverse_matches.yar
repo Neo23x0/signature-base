@@ -30,7 +30,7 @@ condition:
 
 rule iexplore_ANOMALY {
    meta:
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       description = "Abnormal iexplore.exe - typical strings not found in file"
       date = "23/04/2014"
       score = 55
@@ -52,7 +52,7 @@ rule iexplore_ANOMALY {
 rule svchost_ANOMALY {
 	meta:
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		description = "Abnormal svchost.exe - typical strings not found in file"
 		date = "23/04/2014"
 		score = 55
@@ -73,7 +73,7 @@ rule svchost_ANOMALY {
 rule explorer_ANOMALY {
 	meta:
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		description = "Abnormal explorer.exe - typical strings not found in file"
 		date = "27/05/2014"
 		score = 55
@@ -108,7 +108,7 @@ rule sethc_ANOMALY {
 rule Utilman_ANOMALY {
 	meta:
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		description = "Abnormal utilman.exe - typical strings not found in file"
 		date = "01/06/2014"
 		score = 70
@@ -125,7 +125,7 @@ rule Utilman_ANOMALY {
 rule osk_ANOMALY {
 	meta:
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		description = "Abnormal osk.exe (On Screen Keyboard) - typical strings not found in file"
 		date = "01/06/2014"
 		score = 55
@@ -143,7 +143,7 @@ rule osk_ANOMALY {
 rule magnify_ANOMALY {
 	meta:
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		description = "Abnormal magnify.exe (Magnifier) - typical strings not found in file"
 		date = "01/06/2014"
 		score = 55
@@ -160,7 +160,7 @@ rule magnify_ANOMALY {
 rule narrator_ANOMALY {
 	meta:
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		description = "Abnormal narrator.exe - typical strings not found in file"
 		date = "01/06/2014"
 		score = 55
@@ -179,7 +179,7 @@ rule narrator_ANOMALY {
 rule notepad_ANOMALY {
 	meta:
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		description = "Abnormal notepad.exe - typical strings not found in file"
 		date = "01/06/2014"
 		score = 55
@@ -201,7 +201,7 @@ rule csrss_ANOMALY {
 	meta:
 		description = "Anomaly rule looking for certain strings in a system file (maybe false positive on certain systems) - file csrss.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "not set"
 		date = "2015/03/16"
 		hash = "17542707a3d9fa13c569450fd978272ef7070a77"
@@ -220,7 +220,7 @@ rule conhost_ANOMALY {
 	meta:
 		description = "Anomaly rule looking for certain strings in a system file (maybe false positive on certain systems) - file conhost.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "not set"
 		date = "2015/03/16"
 		hash = "1bd846aa22b1d63a1f900f6d08d8bfa8082ae4db"
@@ -236,7 +236,7 @@ rule wininit_ANOMALY {
 	meta:
 		description = "Anomaly rule looking for certain strings in a system file (maybe false positive on certain systems) - file wininit.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "not set"
 		date = "2015/03/16"
 		hash = "2de5c051c0d7d8bcc14b1ca46be8ab9756f29320"
@@ -252,7 +252,7 @@ rule winlogon_ANOMALY {
 	meta:
 		description = "Anomaly rule looking for certain strings in a system file (maybe false positive on certain systems) - file winlogon.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "not set"
 		date = "2015/03/16"
 		hash = "af210c8748d77c2ff93966299d4cd49a8c722ef6"
@@ -271,7 +271,7 @@ rule SndVol_ANOMALY {
 	meta:
 		description = "Anomaly rule looking for certain strings in a system file (maybe false positive on certain systems) - file SndVol.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "not set"
 		date = "2015/03/16"
 		hash = "e057c90b675a6da19596b0ac458c25d7440b7869"
@@ -287,7 +287,7 @@ rule doskey_ANOMALY {
 	meta:
 		description = "Anomaly rule looking for certain strings in a system file (maybe false positive on certain systems) - file doskey.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "not set"
 		date = "2015/03/16"
 		hash = "f2d1995325df0f3ca6e7b11648aa368b7e8f1c7f"
@@ -303,7 +303,7 @@ rule lsass_ANOMALY {
 	meta:
 		description = "Anomaly rule looking for certain strings in a system file (maybe false positive on certain systems) - file lsass.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "not set"
 		date = "2015/03/16"
 		hash = "04abf92ac7571a25606edfd49dca1041c41bef21"
@@ -321,7 +321,7 @@ rule lsass_ANOMALY {
 rule taskmgr_ANOMALY {
    meta:
       description = "Anomaly rule looking for certain strings in a system file (maybe false positive on certain systems) - file taskmgr.exe"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "not set"
       date = "2015/03/16"
       nodeepdive = 1
@@ -349,7 +349,7 @@ rule APT_Cloaked_PsExec
 		description = "Looks like a cloaked PsExec. This may be APT group activity."
 		date = "2014-07-18"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		score = 60
 	strings:
 		$s0 = "psexesvc.exe" wide fullword
@@ -368,7 +368,7 @@ rule APT_Cloaked_SuperScan
 		description = "Looks like a cloaked SuperScan Port Scanner. This may be APT group activity."
 		date = "2014-07-18"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		score = 50
 	strings:
 		$s0 = "SuperScan4.exe" wide fullword
@@ -383,7 +383,7 @@ rule APT_Cloaked_ScanLine
 		description = "Looks like a cloaked ScanLine Port Scanner. This may be APT group activity."
 		date = "2014-07-18"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		score = 50
 	strings:
 		$s0 = "ScanLine" wide fullword
@@ -398,7 +398,7 @@ rule SAM_Hive_Backup
 	meta:
 		description = "Detects a SAM hive backup file"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/gentilkiwi/mimikatz/wiki/module-~-lsadump"
 		score = 60
 		date = "2015/03/31"
@@ -416,7 +416,7 @@ rule SAM_Hive_Backup
 rule SUSP_Renamed_Dot1Xtray {
    meta:
       description = "Detects a legitimate renamed dot1ctray.exe, which is often used by PlugX for DLL side-loading"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2018-11-15"
       hash1 = "f9ebf6aeb3f0fb0c29bd8f3d652476cd1fe8bd9a0c11cb15c43de33bbce0bf68"
@@ -433,7 +433,7 @@ rule SUSP_Renamed_Dot1Xtray {
 rule APT_Cloaked_CERTUTIL {
    meta:
       description = "Detects a renamed certutil.exe utility that is often used to decode encoded payloads"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2018-09-14"
       modified = "2022-06-27"
@@ -452,7 +452,7 @@ rule APT_Cloaked_CERTUTIL {
 rule APT_SUSP_Solarwinds_Orion_Config_Anomaly_Dec20 {
    meta:
       description = "Detects a suspicious renamed Afind.exe as used by different attackers"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/iisresetme/status/1339546337390587905?s=12"
       date = "2020-12-15"
       score = 70
@@ -470,7 +470,7 @@ rule APT_SUSP_Solarwinds_Orion_Config_Anomaly_Dec20 {
 rule PAExec_Cloaked {
    meta:
       description = "Detects a renamed remote access tool PAEXec (like PsExec)"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "http://researchcenter.paloaltonetworks.com/2017/03/unit42-shamoon-2-delivering-disttrack/"
       date = "2017-03-27"
       score = 70

@@ -2,7 +2,7 @@
 rule SUSP_Email_Suspicious_OneNote_Attachment_Jan23_1 {
    meta:
       description = "Detects suspicious OneNote attachment that embeds suspicious payload, e.g. an executable (FPs possible if the PE is attached separately)"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2023-01-27"
       score = 65
@@ -40,7 +40,7 @@ rule SUSP_Email_Suspicious_OneNote_Attachment_Jan23_1 {
 rule SUSP_Email_Suspicious_OneNote_Attachment_Jan23_2 {
    meta:
       description = "Detects suspicious OneNote attachment that has a file name often used in phishing attacks"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2023-01-27"
       score = 65
@@ -61,7 +61,7 @@ rule SUSP_Email_Suspicious_OneNote_Attachment_Jan23_2 {
 rule SUSP_OneNote_Embedded_FileDataStoreObject_Type_Jan23_1 {
    meta:
       description = "Detects suspicious embedded file types in OneNote files"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://blog.didierstevens.com/"
       date = "2023-01-27"
       score = 65
@@ -92,7 +92,7 @@ rule SUSP_OneNote_Embedded_FileDataStoreObject_Type_Jan23_1 {
 rule SUSP_OneNote_Embedded_FileDataStoreObject_Type_Jan23_2 {
    meta:
       description = "Detects suspicious embedded file types in OneNote files"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://blog.didierstevens.com/"
       date = "2023-01-27"
       score = 65

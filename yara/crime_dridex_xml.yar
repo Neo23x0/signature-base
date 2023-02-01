@@ -1,7 +1,7 @@
 rule Dridex_Trojan_XML {
 	meta:
 		description = "Dridex Malware in XML Document"
-		author = "Florian Roth @4nc4p"
+		author = "Florian Roth (Nextron Systems) @4nc4p"
 		reference = "https://threatpost.com/dridex-banking-trojan-spreading-via-macros-in-xml-files/111503"
 		date = "2015/03/08"
 		hash1 = "88d98e18ed996986d26ce4149ae9b2faee0bc082"

@@ -19,7 +19,7 @@ rule SUSP_LNK_lnkfileoverRFC {
 rule SUSP_LNK_SuspiciousCommands {
    meta:
       description = "Detects LNK file with suspicious content"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       date = "2018-09-18"
       score = 60
    strings:
@@ -51,7 +51,7 @@ rule SUSP_LNK_SuspiciousCommands {
 rule SUSP_DOC_LNK_in_ZIP {
    meta:
       description = "Detects suspicious .doc.lnk file in ZIP archive"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/RedDrip7/status/1145877272945025029"
       date = "2019-07-02"
       score = 50

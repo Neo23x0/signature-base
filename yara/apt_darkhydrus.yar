@@ -14,7 +14,7 @@ rule APT_DarkHydrus_Jul18_1 {
    meta:
       description = "Detects strings found in malware samples in APT report in DarkHydrus"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://researchcenter.paloaltonetworks.com/2018/07/unit42-new-threat-actor-group-darkhydrus-targets-middle-east-government/"
       date = "2018-07-28"
       hash1 = "99541ab28fc3328e25723607df4b0d9ea0a1af31b58e2da07eff9f15c4e6565c"
@@ -31,7 +31,7 @@ rule APT_DarkHydrus_Jul18_2 {
    meta:
       description = "Detects strings found in malware samples in APT report in DarkHydrus"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://researchcenter.paloaltonetworks.com/2018/07/unit42-new-threat-actor-group-darkhydrus-targets-middle-east-government/"
       date = "2018-07-28"
       hash1 = "b2571e3b4afbce56da8faa726b726eb465f2e5e5ed74cf3b172b5dd80460ad81"
@@ -49,7 +49,7 @@ rule APT_DarkHydrus_Jul18_3 {
    meta:
       description = "Detects strings found in malware samples in APT report in DarkHydrus"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://researchcenter.paloaltonetworks.com/2018/07/unit42-new-threat-actor-group-darkhydrus-targets-middle-east-government/"
       date = "2018-07-28"
       hash1 = "c8b3d4b6acce6b6655e17255ef7a214651b7fc4e43f9964df24556343393a1a3"
@@ -67,7 +67,7 @@ rule HKTL_Unlicensed_CobaltStrike_EICAR_Jul18_5 {
    meta:
       description = "Detects strings found in CobaltStrike shellcode"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://researchcenter.paloaltonetworks.com/2018/07/unit42-new-threat-actor-group-darkhydrus-targets-middle-east-government/"
       date = "2018-07-28"
       modified = "2021-06-17"

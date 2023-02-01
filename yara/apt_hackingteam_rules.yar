@@ -11,7 +11,7 @@ rule bin_ndisk {
 	meta:
 		description = "Hacking Team Disclosure Sample - file ndisk.sys"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www.virustotal.com/en/file/a03a6ed90b89945a992a8c69f716ec3c743fa1d958426f4c50378cca5bef0a01/analysis/1436184181/"
 		date = "2015-07-07"
 		score = 100
@@ -33,7 +33,7 @@ rule Hackingteam_Elevator_DLL {
 	meta:
 		description = "Hacking Team Disclosure Sample - file elevator.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://t.co/EG0qtVcKLh"
 		date = "2015-07-07"
 		score = 70
@@ -57,7 +57,7 @@ rule HackingTeam_Elevator_EXE {
 	meta:
 		description = "Hacking Team Disclosure Sample - file elevator.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Hacking Team Disclosure elevator.c"
 		date = "2015-07-07"
 		score = 70

@@ -2,7 +2,7 @@
 rule VULN_PHP_Hack_Backdoored_Zlib_Zerodium_Mar21_1 {
    meta:
       description = "Detects backdoored PHP zlib version"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.bleepingcomputer.com/news/security/phps-git-server-hacked-to-add-backdoors-to-php-source-code/"
       date = "2021-03-29"
    strings:

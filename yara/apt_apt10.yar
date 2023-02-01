@@ -11,7 +11,7 @@ rule APT10_Malware_Sample_Gen : FILE {
    meta:
       description = "APT 10 / Cloud Hopper malware campaign"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-06"
       score = 80
@@ -1385,7 +1385,7 @@ rule APT10_Malware_Sample_Gen : FILE {
 rule APT_APT10_Malware_Imphash_Dec18_1 {
    meta:
       description = "Detects APT10 malware based on ImpHashes"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "AlienVault OTX IOCs - statistical sample analysis"
       date = "2018-12-28"
    condition:

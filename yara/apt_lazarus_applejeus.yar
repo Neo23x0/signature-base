@@ -14,7 +14,7 @@ rule APT_Lazarus_Aug18_Downloader_1 {
    meta:
       description = "Detects Lazarus Group Malware Downloadery"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist.com/operation-applejeus/87553/"
       date = "2018-08-24"
       hash1 = "d555dcb6da4a6b87e256ef75c0150780b8a343c4a1e09935b0647f01d974d94d"
@@ -39,7 +39,7 @@ rule APT_Lazarus_Aug18_1 {
    meta:
       description = "Detects Lazarus Group Malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist.com/operation-applejeus/87553/"
       date = "2018-08-24"
       hash1 = "ef400d73c6920ac811af401259e376458b498eb0084631386136747dfc3dcfa8"
@@ -61,7 +61,7 @@ rule APT_Lazarus_Aug18_2 {
    meta:
       description = "Detects Lazarus Group Malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist.com/operation-applejeus/87553/"
       date = "2018-08-24"
       hash1 = "8ae766795cda6336fd5cad9e89199ea2a1939a35e03eb0e54c503b1029d870c4"
@@ -81,7 +81,7 @@ rule APT_Lazarus_Aug18_2 {
 rule APT_FallChill_RC4_Keys {
    meta:
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       description = "Detects FallChill RC4 keys"
       reference = "https://securelist.com/operation-applejeus/87553/"
       date = "2018-08-21"

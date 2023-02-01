@@ -9,7 +9,7 @@ rule Shifu_Banking_Trojan {
 	meta:
 		description = "Detects Shifu Banking Trojan"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://securityintelligence.com/shifu-masterful-new-banking-trojan-is-attacking-14-japanese-banks/"
 		date = "2015-09-01"
 		hash1 = "4ff1ebea2096f318a2252ebe1726bcf3bbc295da9204b6c720b5bbf14de14bb2"
@@ -29,7 +29,7 @@ rule SHIFU_Banking_Trojan {
 	meta:
 		description = "Detects SHIFU Banking Trojan"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://goo.gl/52n8WE"
 		date = "2015-10-31"
 		score = 70

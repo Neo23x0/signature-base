@@ -2,7 +2,7 @@
 rule APT_MAL_HP_iLO_Firmware_Dec21_1 {
    meta:
       description = "Detects suspicios ELF files with sections as described in malicious iLO Board analysis by AmnPardaz in December 2021"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://threats.amnpardaz.com/en/2021/12/28/implant-arm-ilobleed-a/"
       date = "2021-12-28"
       score = 80

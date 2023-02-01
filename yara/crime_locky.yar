@@ -8,7 +8,7 @@
 rule Locky_Ransomware {
 	meta:
 		description = "Detects Locky Ransomware (matches also on Win32/Kuluoz)"
-		author = "Florian Roth (with the help of binar.ly)"
+		author = "Florian Roth (Nextron Systems) (with the help of binar.ly)"
 		reference = "https://goo.gl/qScSrE"
 		date = "2016-02-17"
 		hash = "5e945c1d27c9ad77a2b63ae10af46aee7d29a6a43605a9bfbf35cebbcff184d8"

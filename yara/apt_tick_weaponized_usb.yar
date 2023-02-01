@@ -14,7 +14,7 @@ rule APT_Tick_Sysmon_Loader_Jun18 {
    meta:
       description = "Detects Sysmon Loader from Tick group incident - Weaponized USB"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://researchcenter.paloaltonetworks.com/2018/06/unit42-tick-group-weaponized-secure-usb-drives-target-air-gapped-critical-systems/"
       date = "2018-06-23"
       hash1 = "31aea8630d5d2fcbb37a8e72fe4e096d0f2d8f05e03234645c69d7e8b59bb0e8"
@@ -40,7 +40,7 @@ rule APT_Tick_HomamDownloader_Jun18 {
    meta:
       description = "Detects HomamDownloader from Tick group incident - Weaponized USB"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://researchcenter.paloaltonetworks.com/2018/06/unit42-tick-group-weaponized-secure-usb-drives-target-air-gapped-critical-systems/"
       date = "2018-06-23"
       hash1 = "f817c9826089b49d251b8a09a0e9bf9b4b468c6e2586af60e50afe48602f0bec"

@@ -3,7 +3,7 @@ rule QuarksPwDump_Gen {
 	meta:
 		description = "Detects all QuarksPWDump versions"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2015-09-29"
 		score = 80
 		hash1 = "2b86e6aea37c324ce686bd2b49cf5b871d90f51cec24476daa01dd69543b54fa"

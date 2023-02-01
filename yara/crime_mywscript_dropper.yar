@@ -11,7 +11,7 @@ rule MyWScript_CompiledScript {
    meta:
       description = "Detects a scripte with default name Mywscript compiled with Script2Exe (can also be a McAfee tool https://community.mcafee.com/docs/DOC-4124)"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-07-27"
       score = 65

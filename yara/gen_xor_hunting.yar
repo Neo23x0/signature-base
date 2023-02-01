@@ -2,7 +2,7 @@
 rule SUSP_XORed_Mozilla {
    meta:
       description = "Detects suspicious single byte XORed keyword 'Mozilla/5.0' - it uses yara's XOR modifier and therefore cannot print the XOR key. You can use the CyberChef recipe linked in the reference field to brute force the used key."
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://gchq.github.io/CyberChef/#recipe=XOR_Brute_Force()"
       date = "2019-10-28"
       modified = "2022-05-13"
@@ -20,7 +20,7 @@ rule SUSP_XORed_Mozilla {
 rule SUSP_XORed_MSDOS_Stub_Message {
    meta:
       description = "Detects suspicious XORed MSDOS stub message"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://yara.readthedocs.io/en/latest/writingrules.html#xor-strings"
       date = "2019-10-28"
       score = 55

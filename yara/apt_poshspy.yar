@@ -12,7 +12,7 @@ rule POSHSPY_Malware {
    meta:
       description = "Detects"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2017/03/dissecting_one_ofap.html"
       date = "2017-07-15"
    strings:

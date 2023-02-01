@@ -11,7 +11,7 @@ rule Venom_Rootkit {
    meta:
       description = "Venom Linux Rootkit"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://security.web.cern.ch/security/venom.shtml"
       date = "2017-01-12"
    strings:

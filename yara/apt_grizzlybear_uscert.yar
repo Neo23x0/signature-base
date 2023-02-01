@@ -764,7 +764,7 @@ rule IMPLANT_4_v3_AlternativeRule : HIGHVOL {
       description = "Detects a group of different malware samples"
       comment = "Alternative rule - not based on the original samples but samples on which the original rule matched"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "US CERT Grizzly Steppe Report"
       date = "2017-02-12"
       hash1 = "2244fe9c5d038edcb5406b45361613cf3909c491e47debef35329060b00c985a"

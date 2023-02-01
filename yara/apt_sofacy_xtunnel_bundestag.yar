@@ -25,7 +25,7 @@ rule apt_sofacy_xtunnel {
 rule Winexe_RemoteExec {
    meta:
       description = "Winexe tool for remote execution (also used by Sofacy group)"
-      author = "Florian Roth, Robert Simmons"
+      author = "Florian Roth (Nextron Systems), Robert Simmons"
       reference = "http://dokumente.linksfraktion.de/inhalt/report-orig.pdf"
       date = "2015-06-19"
       modified = "2021-02-11"
@@ -49,7 +49,7 @@ rule Sofacy_Mal2 {
     meta:
         description = "Sofacy Group Malware Sample 2"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
         reference = "http://dokumente.linksfraktion.de/inhalt/report-orig.pdf"
         date = "2015-06-19"
         hash = "566ab945f61be016bfd9e83cc1b64f783b9b8deb891e6d504d3442bc8281b092"
@@ -67,7 +67,7 @@ rule Sofacy_Mal3 {
     meta:
         description = "Sofacy Group Malware Sample 3"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
         reference = "http://dokumente.linksfraktion.de/inhalt/report-orig.pdf"
         date = "2015-06-19"
         modified = "2023-01-06"
@@ -98,7 +98,7 @@ rule Sofacy_Bundestag_Batch {
     meta:
         description = "Sofacy Bundestags APT Batch Script"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
         reference = "http://dokumente.linksfraktion.de/inhalt/report-orig.pdf"
         date = "2015-06-19"
         score = 70

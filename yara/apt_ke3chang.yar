@@ -22,7 +22,7 @@ rule APT_KE3CHANG_TMPFILE: APT KE3CHANG TMPFILE {
 rule APT_MAL_Ke3chang_Ketrican_Jun20_1 {
    meta:
       description = "Detects Ketrican malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "BfV Cyber-Brief Nr. 01/2020"
       date = "2020-06-18"
       hash1 = "02ea0bc17875ab403c05b50205389065283c59e01de55e68cee4cf340ecea046"

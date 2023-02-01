@@ -331,7 +331,7 @@ rule Regin_Related_Malware {
 	meta:
 		description = "Malware Sample - maybe Regin related"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		score = 70
 		reference = "VT Analysis"
 		date = "2015-06-03"

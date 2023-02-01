@@ -2,7 +2,7 @@
 rule EXPL_Keepass_CVE_2023_24055_Jan23 {
    meta:
       description = "Detects suspicious entries in the Keepass configuration file, which could be indicator of the exploitation of CVE-2023-24055"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/alt3kx/CVE-2023-24055_PoC"
       date = "2023-01-25"
       score = 75
@@ -21,7 +21,7 @@ rule EXPL_Keepass_CVE_2023_24055_Jan23 {
 rule SUSP_Keepass_CVE_2023_24055_Jan23 {
    meta:
       description = "Detects suspicious triggers defined in the Keepass configuration file, which could be indicator of the exploitation of CVE-2023-24055"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/alt3kx/CVE-2023-24055_PoC"
       date = "2023-01-25"
       score = 60

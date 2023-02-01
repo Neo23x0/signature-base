@@ -2,7 +2,7 @@ rule PLEAD_Downloader_Jun18_1 {
    meta:
       description = "Detects PLEAD Downloader"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://blog.jpcert.or.jp/2018/06/plead-downloader-used-by-blacktech.html"
       date = "2018-06-16"
       hash1 = "a26df4f62ada084a596bf0f603691bc9c02024be98abec4a9872f0ff0085f940"

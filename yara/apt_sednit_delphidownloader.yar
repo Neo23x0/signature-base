@@ -11,7 +11,7 @@
 rule MAL_Sednit_DelphiDownloader_Apr18_2 {
    meta:
       description = "Detects malware from Sednit Delphi Downloader report"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.welivesecurity.com/2018/04/24/sednit-update-analysis-zebrocy/"
       date = "2018-04-24"
       hash1 = "53aef1e8b281a00dea41387a24664655986b58d61d39cfbde7e58d8c2ca3efda"
@@ -39,7 +39,7 @@ rule MAL_Sednit_DelphiDownloader_Apr18_2 {
 rule MAL_Sednit_DelphiDownloader_Apr18_3 {
    meta:
       description = "Detects malware from Sednit Delphi Downloader report"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.welivesecurity.com/2018/04/24/sednit-update-analysis-zebrocy/"
       date = "2018-04-24"
       modified = "2023-01-06"

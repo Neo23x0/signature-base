@@ -9,7 +9,7 @@ rule Furtim_nativeDLL {
 	meta:
 		description = "Detects Furtim malware - file native.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "MISP 3971"
 		date = "2016-06-13"
 		hash1 = "4f39d3e70ed1278d5fa83ed9f148ca92383ec662ac34635f7e56cc42eeaee948"
@@ -34,7 +34,7 @@ rule Furtim_Parent_1 {
 	meta:
 		description = "Detects Furtim Parent Malware"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://sentinelone.com/blogs/sfg-furtims-parent/"
 		date = "2016-07-16"
 		hash1 = "766e49811c0bb7cce217e72e73a6aa866c15de0ba11d7dda3bd7e9ec33ed6963"

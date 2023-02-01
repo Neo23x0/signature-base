@@ -2,7 +2,7 @@
 rule SUSP_VEST_Encryption_Core_Accumulator_Jan21 {
    meta:
       description = "Detects VEST encryption core accumulator in PE file as used by Lazarus malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/ochsenmeier/status/1354737155495649280"
       date = "2021-01-28"
       score = 70

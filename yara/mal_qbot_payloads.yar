@@ -2,7 +2,7 @@
 rule MAL_QBot_HTML_Smuggling_Indicators_Oct22_1 {
    meta:
       description = "Detects double encoded PKZIP headers as seen in HTML files used by QBot"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/ankit_anubhav/status/1578257383133876225?s=20&t=Bu3CCJCzImpTGOQX_KGsdA"
       date = "2022-10-07"
       score = 75

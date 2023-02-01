@@ -9,7 +9,7 @@ rule Emissary_APT_Malware_1 {
 	meta:
 		description = "Detects Emissary Malware - from samples A08E81B411.DAT, ishelp.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://goo.gl/V0epcf"
 		date = "2016-01-02"
 		score = 75

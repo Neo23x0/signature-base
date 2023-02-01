@@ -2,7 +2,7 @@
 rule SUSP_MAL_EXFIL_Stealer_Output_Characteristics_Sep22_1 {
    meta:
       description = "Detects typical stealer output files as created by RedLine or Racoon stealer"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/cglyer/status/1570965878480719873"
       date = "2022-09-17"
       score = 70

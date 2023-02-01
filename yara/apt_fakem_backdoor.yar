@@ -9,7 +9,7 @@ rule FakeM_Generic {
 	meta:
 		description = "Detects FakeM malware samples"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://researchcenter.paloaltonetworks.com/2016/01/scarlet-mimic-years-long-espionage-targets-minority-activists/"
 		date = "2016-01-25"
 		modified = "2023-01-06"

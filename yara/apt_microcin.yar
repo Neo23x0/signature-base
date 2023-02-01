@@ -14,7 +14,7 @@ rule Microcin_Sample_1 {
    meta:
       description = "Malware sample mentioned in Microcin technical report by Kaspersky"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist.com/files/2017/09/Microcin_Technical-PDF_eng_final.pdf"
       date = "2017-09-26"
       hash1 = "49816eefcd341d7a9c1715e1f89143862d4775ba4f9730397a1e8529f5f5e200"
@@ -38,7 +38,7 @@ rule Microcin_Sample_2 {
    meta:
       description = "Malware sample mentioned in Microcin technical report by Kaspersky"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist.com/files/2017/09/Microcin_Technical-PDF_eng_final.pdf"
       date = "2017-09-26"
       hash1 = "8a7d04229722539f2480270851184d75b26c375a77b468d8cbad6dbdb0c99271"
@@ -53,7 +53,7 @@ rule Microcin_Sample_3 {
    meta:
       description = "Malware sample mentioned in Microcin technical report by Kaspersky"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist.com/files/2017/09/Microcin_Technical-PDF_eng_final.pdf"
       date = "2017-09-26"
       hash1 = "4f74a3b67c5ed6f38f08786f1601214412249fe128f12c51525135710d681e1d"
@@ -68,7 +68,7 @@ rule Microcin_Sample_4 {
    meta:
       description = "Malware sample mentioned in Microcin technical report by Kaspersky"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist.com/files/2017/09/Microcin_Technical-PDF_eng_final.pdf"
       date = "2017-09-26"
       hash1 = "92c01d5af922bdaacb6b0b2dfbe29e5cc58c45cbee5133932a499561dab616b8"
@@ -89,7 +89,7 @@ rule Microcin_Sample_5 {
    meta:
       description = "Malware sample mentioned in Microcin technical report by Kaspersky"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist.com/files/2017/09/Microcin_Technical-PDF_eng_final.pdf"
       date = "2017-09-26"
       hash1 = "b9c51397e79d5a5fd37647bc4e4ee63018ac3ab9d050b02190403eb717b1366e"
@@ -108,7 +108,7 @@ rule Microcin_Sample_6 {
    meta:
       description = "Malware sample mentioned in Microcin technical report by Kaspersky"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist.com/files/2017/09/Microcin_Technical-PDF_eng_final.pdf"
       date = "2017-09-26"
       hash1 = "cbd43e70dc55e94140099722d7b91b07a3997722d4a539ecc4015f37ea14a26e"

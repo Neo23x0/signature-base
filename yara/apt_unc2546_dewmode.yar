@@ -2,7 +2,7 @@
 rule WEBSHELL_APT_PHP_DEWMODE_UNC2546_Feb21_1 {
    meta:
       description = "Detects DEWMODE webshells"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2021/02/accellion-fta-exploited-for-data-theft-and-extortion.html"
       date = "2021-02-22"
       hash1 = "2e0df09fa37eabcae645302d9865913b818ee0993199a6d904728f3093ff48c7"

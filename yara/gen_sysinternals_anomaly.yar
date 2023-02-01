@@ -11,7 +11,7 @@ rule SysInternals_Tool_Anomaly {
    meta:
       description = "SysInternals Tool Anomaly - does not contain Mark Russinovich as author"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       score = 50
       reference = "Internal Research"
       date = "2016-12-06"

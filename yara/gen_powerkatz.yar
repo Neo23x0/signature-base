@@ -10,7 +10,7 @@ rule Powerkatz_DLL_Generic {
 	meta:
 		description = "Detects Powerkatz - a Mimikatz version prepared to run in memory via Powershell (overlap with other Mimikatz versions is possible)"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "PowerKatz Analysis"
 		date = "2016-02-05"
 		super_rule = 1

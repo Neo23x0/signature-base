@@ -2,7 +2,7 @@
 rule CoinMiner_Strings : SCRIPT HIGHVOL {
    meta:
       description = "Detects mining pool protocol string in Executable"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       score = 60
       reference = "https://minergate.com/faq/what-pool-address"
       date = "2018-01-04"
@@ -20,7 +20,7 @@ rule CoinHive_Javascript_MoneroMiner : HIGHVOL {
    meta:
       description = "Detects CoinHive - JavaScript Crypto Miner"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       score = 50
       reference = "https://coinhive.com/documentation/miner"
       date = "2018-01-04"
@@ -33,7 +33,7 @@ rule CoinHive_Javascript_MoneroMiner : HIGHVOL {
 rule PUA_CryptoMiner_Jan19_1 {
    meta:
       description = "Detects Crypto Miner strings"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2019-01-31"
       score = 80
@@ -51,7 +51,7 @@ rule PUA_CryptoMiner_Jan19_1 {
 rule PUA_Crypto_Mining_CommandLine_Indicators_Oct21 : SCRIPT {
    meta:
       description = "Detects command line parameters often used by crypto mining software"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.poolwatch.io/coin/monero"
       date = "2021-10-24"
       score = 65

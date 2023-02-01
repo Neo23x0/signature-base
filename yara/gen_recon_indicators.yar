@@ -13,7 +13,7 @@ rule Recon_Commands_Windows_Gen1 {
    meta:
       description = "Detects a set of reconnaissance commands on Windows systems"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-07-10"
       score = 60
@@ -51,7 +51,7 @@ rule Recon_Commands_Windows_Gen1 {
 rule SUSP_Recon_Outputs_Jun20_1 {
    meta:
       description = "Detects outputs of many different commands often used for reconnaissance purposes"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist.com/cycldek-bridging-the-air-gap/97157/"
       date = "2020-06-04"
       score = 60

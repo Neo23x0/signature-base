@@ -2,7 +2,7 @@
 rule SUSP_VHD_Suspicious_Small_Size {
    meta:
       description = "Detects suspicious VHD files"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/MeltX0R/status/1208095892877774850"
       date = "2019-12-21"
       modified = "2023-01-27"

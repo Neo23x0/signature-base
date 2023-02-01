@@ -3,7 +3,7 @@ rule EXP_DriveCrypt_1 {
    meta:
       description = "Detects DriveCrypt exploit"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2018-08-21"
       hash1 = "0dd09bc97c768abb84d0fb6d1ae7d789f1f83bfb2ce93ff9ff3c538dc1effa33"
@@ -18,7 +18,7 @@ rule EXP_DriveCrypt_1 {
 rule EXP_DriveCrypt_x64passldr {
    meta:
       description = "Detects DriveCrypt exploit"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2018-08-21"
       modified = "2023-01-06"

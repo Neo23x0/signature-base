@@ -2,7 +2,7 @@
 rule SUSP_RANSOMWARE_Indicator_Jul20 {
    meta:
       description = "Detects ransomware indicator"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist.com/lazarus-on-the-hunt-for-big-game/97757/"
       date = "2020-07-28"
       score = 60

@@ -5,7 +5,7 @@ rule Sofacy_Campaign_Mal_Feb18_cdnver {
    meta:
       description = "Detects Sofacy malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/ClearskySec/status/960924755355369472"
       date = "2018-02-07"
       hash1 = "12e6642cf6413bdf5388bee663080fa299591b2ba023d069286f3be9647547c8"
@@ -29,7 +29,7 @@ rule Sofacy_Trojan_Loader_Feb18_1 {
    meta:
       description = "Sofacy Activity Feb 2018"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.reverse.it/sample/e3399d4802f9e6d6d539e3ae57e7ea9a54610a7c4155a6541df8e94d67af086e?environmentId=100"
       date = "2018-03-01"
       hash1 = "335565711db93cd02d948f472c51598be4d62d60f70f25a20449c07eae36c8c5"
@@ -51,7 +51,7 @@ rule Sofacy_Trojan_Loader_Feb18_1 {
 rule APT_ATP28_Sofacy_Indicators_May19_1 {
    meta:
       description = "Detects APT28 Sofacy indicators in samples"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/cyb3rops/status/1129647994603790338"
       date = "2019-05-18"
       score = 60

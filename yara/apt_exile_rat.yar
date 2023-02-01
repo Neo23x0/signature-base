@@ -4,7 +4,7 @@ import "pe"
 rule MAL_ExileRAT_Feb19_1 {
    meta:
       description = "Detects Exile RAT"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://blog.talosintelligence.com/2019/02/exilerat-shares-c2-with-luckycat.html"
       date = "2019-02-04"
       license = "https://creativecommons.org/licenses/by-nc/4.0/"

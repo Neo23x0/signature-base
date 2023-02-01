@@ -73,7 +73,7 @@ rule Equation_Kaspersky_TripleFantasy_1 {
 	meta:
 		description = "Equation Group Malware - TripleFantasy http://goo.gl/ivt8EW"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://goo.gl/ivt8EW"
 		date = "2015/02/16"
 		hash = "b2b2cd9ca6f5864ef2ac6382b7b6374a9fb2cbe9"
@@ -106,7 +106,7 @@ rule Equation_Kaspersky_DoubleFantasy_1 {
 	meta:
 		description = "Equation Group Malware - DoubleFantasy"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://goo.gl/ivt8EW"
 		date = "2015/02/16"
 		hash = "d09b4b6d3244ac382049736ca98d7de0c6787fa2"
@@ -136,7 +136,7 @@ rule Equation_Kaspersky_GROK_Keylogger {
 	meta:
 		description = "Equation Group Malware - GROK keylogger"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://goo.gl/ivt8EW"
 		date = "2015/02/16"
 		hash = "50b8f125ed33233a545a1aac3c9d4bb6aa34b48f"
@@ -169,7 +169,7 @@ rule Equation_Kaspersky_GreyFishInstaller {
 	meta:
 		description = "Equation Group Malware - Grey Fish"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://goo.gl/ivt8EW"
 		date = "2015/02/16"
 		hash = "58d15d1581f32f36542f3e9fb4b1fc84d2a6ba35"
@@ -185,7 +185,7 @@ rule Equation_Kaspersky_EquationDrugInstaller {
 	meta:
 		description = "Equation Group Malware - EquationDrug installer LUTEUSOBSTOS"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://goo.gl/ivt8EW"
 		date = "2015/02/16"
 		hash = "61fab1b8451275c7fd580895d9c68e152ff46417"
@@ -207,7 +207,7 @@ rule Equation_Kaspersky_EquationDrugInstaller {
 rule Equation_Kaspersky_EquationLaserInstaller {
    meta:
       description = "Equation Group Malware - EquationLaser Installer"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "http://goo.gl/ivt8EW"
       date = "2015/02/16"
       hash = "5e1f56c1e57fbff96d4999db1fd6dd0f7d8221df"
@@ -229,7 +229,7 @@ rule Equation_Kaspersky_EquationLaserInstaller {
 rule Equation_Kaspersky_FannyWorm {
    meta:
       description = "Equation Group Malware - Fanny Worm"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "http://goo.gl/ivt8EW"
       date = "2015-02-16"
       modified = "2023-01-06"
@@ -270,7 +270,7 @@ rule Equation_Kaspersky_HDD_reprogramming_module {
 	meta:
 		description = "Equation Group Malware - HDD reprogramming module"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://goo.gl/ivt8EW"
 		date = "2015/02/16"
 		hash = "ff2b50f371eb26f22eb8a2118e9ab0e015081500"
@@ -289,7 +289,7 @@ rule Equation_Kaspersky_EOP_Package {
 	meta:
 		description = "Equation Group Malware - EoP package and malware launcher"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://goo.gl/ivt8EW"
 		date = "2015/02/16"
 		hash = "2bd1b1f5b4384ce802d5d32d8c8fd3d1dc04b962"
@@ -309,7 +309,7 @@ rule Equation_Kaspersky_TripleFantasy_Loader {
 	meta:
 		description = "Equation Group Malware - TripleFantasy Loader"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://goo.gl/ivt8EW"
 		date = "2015/02/16"
 		hash = "4ce6e77a11b443cc7cbe439b71bf39a39d3d7fa3"
@@ -334,7 +334,7 @@ rule Equation_Kaspersky_SuspiciousString {
 	meta:
 		description = "Equation Group Malware - suspicious string found in sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://goo.gl/ivt8EW"
 		date = "2015/02/17"
 		score = 60
@@ -354,7 +354,7 @@ rule Equation_Kaspersky_SuspiciousString {
 rule EquationDrug_NetworkSniffer1 {
    meta:
       description = "EquationDrug - Backdoor driven by network sniffer - mstcp32.sys, fat32.sys"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/"
       date = "2015/03/11"
       modified = "2023-01-06"
@@ -375,7 +375,7 @@ rule EquationDrug_NetworkSniffer1 {
 rule EquationDrug_CompatLayer_UnilayDLL {
 	meta:
 		description = "EquationDrug - Unilay.DLL"
-		author = "Florian Roth @4nc4p"
+		author = "Florian Roth (Nextron Systems) @4nc4p"
 		reference = "http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/"
 		date = "2015/03/11"
 		hash = "a3a31937956f161beba8acac35b96cb74241cd0f"
@@ -388,7 +388,7 @@ rule EquationDrug_CompatLayer_UnilayDLL {
 rule EquationDrug_HDDSSD_Op {
 	meta:
 		description = "EquationDrug - HDD/SSD firmware operation - nls_933w.dll"
-		author = "Florian Roth @4nc4p"
+		author = "Florian Roth (Nextron Systems) @4nc4p"
 		reference = "http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/"
 		date = "2015/03/11"
 		hash = "ff2b50f371eb26f22eb8a2118e9ab0e015081500"
@@ -401,7 +401,7 @@ rule EquationDrug_HDDSSD_Op {
 rule EquationDrug_NetworkSniffer2 {
 	meta:
 		description = "EquationDrug - Network Sniffer - tdip.sys"
-		author = "Florian Roth @4nc4p"
+		author = "Florian Roth (Nextron Systems) @4nc4p"
 		reference = "http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/"
 		date = "2015/03/11"
 		hash = "7e3cd36875c0e5ccb076eb74855d627ae8d4627f"
@@ -421,7 +421,7 @@ rule EquationDrug_NetworkSniffer2 {
 rule EquationDrug_NetworkSniffer3 {
 	meta:
 		description = "EquationDrug - Network Sniffer - tdip.sys"
-		author = "Florian Roth @4nc4p"
+		author = "Florian Roth (Nextron Systems) @4nc4p"
 		reference = "http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/"
 		date = "2015/03/11"
 		hash = "14599516381a9646cd978cf962c4f92386371040"
@@ -437,7 +437,7 @@ rule EquationDrug_NetworkSniffer3 {
 rule EquationDrug_VolRec_Driver {
 	meta:
 		description = "EquationDrug - Collector plugin for Volrec - msrstd.sys"
-		author = "Florian Roth @4nc4p"
+		author = "Florian Roth (Nextron Systems) @4nc4p"
 		reference = "http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/"
 		date = "2015/03/11"
 		hash = "ee2b504ad502dc3fed62d6483d93d9b1221cdd6c"
@@ -452,7 +452,7 @@ rule EquationDrug_VolRec_Driver {
 rule EquationDrug_KernelRootkit {
    meta:
       description = "EquationDrug - Kernel mode stage 0 and rootkit (Windows 2000 and above) - msndsrv.sys"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/"
       date = "2015/03/11"
       modified = "2023-01-06"
@@ -473,7 +473,7 @@ rule EquationDrug_KernelRootkit {
 rule EquationDrug_Keylogger {
 	meta:
 		description = "EquationDrug - Key/clipboard logger driver - msrtvd.sys"
-		author = "Florian Roth @4nc4p"
+		author = "Florian Roth (Nextron Systems) @4nc4p"
 		reference = "http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/"
 		date = "2015/03/11"
 		hash = "b93aa17b19575a6e4962d224c5801fb78e9a7bb5"
@@ -489,7 +489,7 @@ rule EquationDrug_Keylogger {
 rule EquationDrug_NetworkSniffer4 {
    meta:
       description = "EquationDrug - Network-sniffer/patcher - atmdkdrv.sys"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/"
       date = "2015/03/11"
       modified = "2023-01-06"
@@ -514,7 +514,7 @@ rule EquationDrug_NetworkSniffer4 {
 rule EquationDrug_PlatformOrchestrator {
 	meta:
 		description = "EquationDrug - Platform orchestrator - mscfg32.dll, svchost32.dll"
-		author = "Florian Roth @4nc4p"
+		author = "Florian Roth (Nextron Systems) @4nc4p"
 		reference = "http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/"
 		date = "2015/03/11"
 		hash = "febc4f30786db7804008dc9bc1cebdc26993e240"
@@ -532,7 +532,7 @@ rule EquationDrug_PlatformOrchestrator {
 rule EquationDrug_NetworkSniffer5 {
    meta:
       description = "EquationDrug - Network-sniffer/patcher - atmdkdrv.sys"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/"
       date = "2015/03/11"
       modified = "2023-01-06"
@@ -551,7 +551,7 @@ rule EquationDrug_NetworkSniffer5 {
 rule EquationDrug_FileSystem_Filter {
 	meta:
 		description = "EquationDrug - Filesystem filter driver - volrec.sys, scsi2mgr.sys"
-		author = "Florian Roth @4nc4p"
+		author = "Florian Roth (Nextron Systems) @4nc4p"
 		reference = "http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/"
 		date = "2015/03/11"
 		hash = "57fa4a1abbf39f4899ea76543ebd3688dcc11e13"

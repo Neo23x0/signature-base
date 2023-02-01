@@ -11,7 +11,7 @@ rule Invoke_mimikittenz {
 	meta:
 		description = "Detects Mimikittenz - file Invoke-mimikittenz.ps1"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/putterpanda/mimikittenz"
 		date = "2016-07-19"
 		score = 90

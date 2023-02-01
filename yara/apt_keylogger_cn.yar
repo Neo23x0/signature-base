@@ -9,7 +9,7 @@ rule Keylogger_CN_APT {
 	meta:
 		description = "Keylogger - generic rule for a Chinese variant"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2016-03-07"
 		score = 75
 		hash = "3efb3b5be39489f19d83af869f11a8ef8e9a09c3c7c0ad84da31fc45afcf06e7"

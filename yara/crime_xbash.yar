@@ -13,7 +13,7 @@
 rule MAL_Xbash_PY_Sep18 {
    meta:
       description = "Detects Xbash malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://researchcenter.paloaltonetworks.com/2018/09/unit42-xbash-combines-botnet-ransomware-coinmining-worm-targets-linux-windows/"
       date = "2018-09-18"
       hash1 = "7a18c7bdf0c504832c8552766dcfe0ba33dd5493daa3d9dbe9c985c1ce36e5aa"
@@ -26,7 +26,7 @@ rule MAL_Xbash_PY_Sep18 {
 rule MAL_Xbash_SH_Sep18 {
    meta:
       description = "Detects Xbash malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://researchcenter.paloaltonetworks.com/2018/09/unit42-xbash-combines-botnet-ransomware-coinmining-worm-targets-linux-windows/"
       date = "2018-09-18"
       modified = "2023-01-06"
@@ -48,7 +48,7 @@ rule MAL_Xbash_SH_Sep18 {
 rule MAL_Xbash_JS_Sep18 {
    meta:
       description = "Detects XBash malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://researchcenter.paloaltonetworks.com/2018/09/unit42-xbash-combines-botnet-ransomware-coinmining-worm-targets-linux-windows/"
       date = "2018-09-18"
       modified = "2023-01-06"

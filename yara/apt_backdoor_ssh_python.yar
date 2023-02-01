@@ -2,7 +2,7 @@
 rule custom_ssh_backdoor_server {
    meta:
       description = "Custome SSH backdoor based on python and paramiko - file server.py"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/S46L3o"
       date = "2015-05-14"
       modified = "2022-08-18"

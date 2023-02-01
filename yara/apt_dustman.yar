@@ -2,7 +2,7 @@
 rule MAL_ME_RawDisk_Agent_Jan20_1 {
    meta:
       description = "Detects suspicious malware using ElRawDisk"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Saudi National Cybersecurity Authority - Destructive Attack DUSTMAN"
       date = "2020-01-02"
       modified = "2022-12-21"
@@ -25,7 +25,7 @@ rule MAL_ME_RawDisk_Agent_Jan20_1 {
 rule MAL_ME_RawDisk_Agent_Jan20_2 {
    meta:
       description = "Detects suspicious malware using ElRawDisk"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/jfslowik/status/1212501454549741568?s=09"
       date = "2020-01-02"
       modified = "2022-12-21"

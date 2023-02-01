@@ -2,7 +2,7 @@
 rule HKTL_FRP_Apr20_1 {
    meta:
       description = "Detects FRP fast reverse proxy tool often used by threat groups"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/fatedier/frp"
       date = "2020-04-07"
       modified = "2022-11-03"
@@ -23,7 +23,7 @@ rule HKTL_FRP_Apr20_1 {
 rule HKTL_FRP_INI_Apr20_1 {
    meta:
       description = "Detects FRP fast reverse proxy tool INI file often used by threat groups"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Chinese Hacktools OpenDir"
       date = "2020-04-07"
       score = 60

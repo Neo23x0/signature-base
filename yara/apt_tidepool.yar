@@ -9,7 +9,7 @@ rule TidePool_Malware {
 	meta:
 		description = "Detects TidePool malware mentioned in Ke3chang report by Palo Alto Networks"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://goo.gl/m2CXWR"
 		date = "2016-05-24"
 		hash1 = "9d0a47bdf00f7bd332ddd4cf8d95dd11ebbb945dda3d72aac512512b48ad93ba"

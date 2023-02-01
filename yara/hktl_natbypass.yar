@@ -2,7 +2,7 @@
 rule HKTL_NATBypass_Dec22_1 : T1090 {
    meta:
       description = "Detects NatBypass tool (also used by APT41)"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/cw1997/NATBypass"
       date = "2022-12-27"
       score = 80

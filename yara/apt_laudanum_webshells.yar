@@ -9,7 +9,7 @@ rule asp_file {
 	meta:
 		description = "Laudanum Injector Tools - file file.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
 		hash = "ff5b1a9598735440bdbaa768b524c639e22f53c5"
@@ -28,7 +28,7 @@ rule php_killnc {
 	meta:
 		description = "Laudanum Injector Tools - file killnc.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
 		hash = "c0dee56ee68719d5ec39e773621ffe40b144fda5"
@@ -46,7 +46,7 @@ rule asp_shell {
 	meta:
 		description = "Laudanum Injector Tools - file shell.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
 		hash = "8bf1ff6f8edd45e3102be5f8a1fe030752f45613"
@@ -66,7 +66,7 @@ rule settings {
 	meta:
 		description = "Laudanum Injector Tools - file settings.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
 		hash = "588739b9e4ef2dbb0b4cf630b73295d8134cc801"
@@ -82,7 +82,7 @@ rule asp_proxy {
 	meta:
 		description = "Laudanum Injector Tools - file proxy.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
 		hash = "51e97040d1737618b1775578a772fa6c5a31afd8"
@@ -101,7 +101,7 @@ rule cfm_shell {
 	meta:
 		description = "Laudanum Injector Tools - file shell.cfm"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
 		hash = "885e1783b07c73e7d47d3283be303c9719419b92"
@@ -117,7 +117,7 @@ rule aspx_shell {
 	meta:
 		description = "Laudanum Injector Tools - file shell.aspx"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
 		hash = "076aa781a004ecb2bf545357fd36dcbafdd68b1a"
@@ -134,7 +134,7 @@ rule php_shell {
 	meta:
 		description = "Laudanum Injector Tools - file shell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
 		hash = "dc5c03a21267d024ef0f5ab96a34e3f6423dfcd6"
@@ -151,7 +151,7 @@ rule php_reverse_shell {
 	meta:
 		description = "Laudanum Injector Tools - file php-reverse-shell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
 		hash = "3ef03bbe3649535a03315dcfc1a1208a09cea49d"
@@ -167,7 +167,7 @@ rule php_dns {
 	meta:
 		description = "Laudanum Injector Tools - file dns.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
 		hash = "01d5d16d876c55d77e094ce2b9c237de43b21a16"
@@ -184,7 +184,7 @@ rule WEB_INF_web {
 	meta:
 		description = "Laudanum Injector Tools - file web.xml"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
 		hash = "0251baed0a16c451f9d67dddce04a45dc26cb4a3"
@@ -199,7 +199,7 @@ rule jsp_cmd {
 	meta:
 		description = "Laudanum Injector Tools - file cmd.war"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
 		hash = "55e4c3dc00cfab7ac16e7cfb53c11b0c01c16d3d"
@@ -217,7 +217,7 @@ rule laudanum {
 	meta:
 		description = "Laudanum Injector Tools - file laudanum.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
 		hash = "fd498c8b195967db01f68776ff5e36a06c9dfbfe"
@@ -232,7 +232,7 @@ rule php_file {
 	meta:
 		description = "Laudanum Injector Tools - file file.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
 		hash = "7421d33e8007c92c8642a36cba7351c7f95a4335"
@@ -249,7 +249,7 @@ rule warfiles_cmd {
 	meta:
 		description = "Laudanum Injector Tools - file cmd.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
 		hash = "3ae3d837e7b362de738cf7fad78eded0dccf601f"
@@ -266,7 +266,7 @@ rule asp_dns {
 	meta:
 		description = "Laudanum Injector Tools - file dns.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
 		hash = "5532154dd67800d33dace01103e9b2c4f3d01d51"
@@ -283,7 +283,7 @@ rule php_reverse_shell_2 {
 	meta:
 		description = "Laudanum Injector Tools - file php-reverse-shell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
 		hash = "025db3c3473413064f0606d93d155c7eb5049c42"
@@ -298,7 +298,7 @@ rule Laudanum_Tools_Generic {
 	meta:
 		description = "Laudanum Injector Tools"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://laudanum.inguardians.com/"
 		date = "2015-06-22"
 		super_rule = 1

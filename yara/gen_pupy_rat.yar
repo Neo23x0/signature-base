@@ -14,7 +14,7 @@ rule Pupy_Backdoor {
    meta:
       description = "Detects Pupy backdoor"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/n1nj4sec/pupy-binaries"
       date = "2017-08-11"
       hash1 = "ae93714203c7ab4ab73f2ad8364819d16644c7649ea04f483b46924bd5bc0153"

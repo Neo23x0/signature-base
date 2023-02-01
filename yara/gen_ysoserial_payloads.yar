@@ -11,7 +11,7 @@ rule Ysoserial_Payload_MozillaRhino1 {
    meta:
       description = "Ysoserial Payloads - file MozillaRhino1.bin"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/frohoff/ysoserial"
       date = "2017-02-04"
       hash1 = "0143fee12fea5118be6dcbb862d8ba639790b7505eac00a9f1028481f874baa8"
@@ -25,7 +25,7 @@ rule Ysoserial_Payload_C3P0 {
    meta:
       description = "Ysoserial Payloads - file C3P0.bin"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/frohoff/ysoserial"
       date = "2017-02-04"
       hash1 = "9932108d65e26d309bf7d97d389bc683e52e91eb68d0b1c8adfe318a4ec6e58b"
@@ -39,7 +39,7 @@ rule Ysoserial_Payload_Spring1 {
    meta:
       description = "Ysoserial Payloads - file Spring1.bin"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/frohoff/ysoserial"
       date = "2017-02-04"
       hash1 = "bf9b5f35bc1556d277853b71da24faf23cf9964d77245018a0fdf3359f3b1703"
@@ -59,7 +59,7 @@ rule Ysoserial_Payload {
    meta:
       description = "Ysoserial Payloads"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/frohoff/ysoserial"
       date = "2017-02-04"
       super_rule = 1
@@ -89,7 +89,7 @@ rule Ysoserial_Payload_3 {
    meta:
       description = "Ysoserial Payloads - from files JavassistWeld1.bin, JBossInterceptors.bin"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/frohoff/ysoserial"
       date = "2017-02-04"
       super_rule = 1

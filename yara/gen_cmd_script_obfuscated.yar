@@ -2,7 +2,7 @@
 rule MAL_CMD_Script_Obfuscated_Feb19_1 {
    meta:
       description = "Detects obfuscated batch script using env variable sub-strings"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/DbgShell/status/1101076457189793793"
       date = "2019-03-01"
       hash1 = "deed88c554c8f9bef4078e9f0c85323c645a52052671b94de039b438a8cff382"

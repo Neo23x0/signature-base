@@ -11,7 +11,7 @@ rule TempRacer {
 	meta:
 		description = "Detects privilege escalation tool - file TempRacer.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://www.darknet.org.uk/2016/03/tempracer-windows-privilege-escalation-tool/"
 		date = "2016-03-30"
 		hash = "e17d80c4822d16371d75e1440b6ac44af490b71fbee1010a3e8a5eca94d22bb3"

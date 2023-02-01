@@ -2,7 +2,7 @@
 rule APT_MAL_SLOTHFULMEDIA_Oct20_1 {
    meta:
       description = "Detects SLOTHFULMEDIA malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://us-cert.cisa.gov/ncas/analysis-reports/ar20-275a"
       date = "2020-10-01"
       hash1 = "64d78eec46c9ddd4b9a366de62ba0f2813267dc4393bc79e4c9a51a9bb7e6273"

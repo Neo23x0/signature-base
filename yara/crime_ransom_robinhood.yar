@@ -2,7 +2,7 @@
 rule MAL_RANSOM_RobinHood_May19_1 {
    meta:
       description = "Detects RobinHood Ransomware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/BThurstonCPTECH/status/1128489465327030277"
       date = "2019-05-15"
       hash1 = "21cb84fc7b33e8e31364ff0e58b078db8f47494a239dc3ccbea8017ff60807e3"

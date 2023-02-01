@@ -4,7 +4,7 @@ import "pe"
 rule MAL_PE_Type_BabyShark_Loader {
    meta:
       description = "Detects PE Type babyShark loader mentioned in February 2019 blog post by PaloAltNetworks"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://unit42.paloaltonetworks.com/new-babyshark-malware-targets-u-s-national-security-think-tanks/"
       date = "2019-02-24"
       hash1 = "6f76a8e16908ba2d576cf0e8cdb70114dcb70e0f7223be10aab3a728dc65c41c"
@@ -28,7 +28,7 @@ rule MAL_PE_Type_BabyShark_Loader {
 rule APT_NK_BabyShark_KimJoingRAT_Apr19_1 {
    meta:
       description = "Detects BabyShark KimJongRAT"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://unit42.paloaltonetworks.com/babyshark-malware-part-two-attacks-continue-using-kimjongrat-and-pcrat/"
       date = "2019-04-27"
       hash1 = "d50a0980da6297b8e4cec5db0a8773635cee74ac6f5c1ff18197dfba549f6712"

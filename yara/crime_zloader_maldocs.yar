@@ -2,7 +2,7 @@
 rule MAL_DOC_ZLoader_Oct20_1 {
    meta:
       description = "Detects weaponized ZLoader documents"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/JohnLaTwC/status/1314602421977452544"
       date = "2020-10-10"
       hash1 = "668ca7ede54664360b0a44d5e19e76beb92c19659a8dec0e7085d05528df42b5"

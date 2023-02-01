@@ -12,7 +12,7 @@ rule XMRIG_Monero_Miner : HIGHVOL {
    meta:
       description = "Detects Monero mining software"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/xmrig/xmrig/releases"
       date = "2018-01-04"
       modified = "2022-11-10"
@@ -35,7 +35,7 @@ rule XMRIG_Monero_Miner_Config {
    meta:
       description = "Auto-generated rule - from files config.json, config.json"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/xmrig/xmrig/releases"
       date = "2018-01-04"
       hash1 = "031333d44a3a917f9654d7e7257e00c9d961ada3bee707de94b7c7d06234909a"
@@ -52,7 +52,7 @@ rule PUA_LNX_XMRIG_CryptoMiner {
    meta:
       description = "Detects XMRIG CryptoMiner software"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2018-06-28"
       modified = "2023-01-06"
@@ -69,7 +69,7 @@ rule PUA_LNX_XMRIG_CryptoMiner {
 rule SUSP_XMRIG_String {
    meta:
       description = "Detects a suspicious XMRIG crypto miner executable string in filr"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2018-12-28"
       hash1 = "eb18ae69f1511eeb4ed9d4d7bcdf3391a06768f384e94427f4fc3bd21b383127"

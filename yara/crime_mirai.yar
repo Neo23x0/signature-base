@@ -11,7 +11,7 @@ rule Mirai_Botnet_Malware {
 	meta:
 		description = "Detects Mirai Botnet Malware"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Internal Research"
 		date = "2016-10-04"
       modified = "2023-01-27"
@@ -62,7 +62,7 @@ rule Mirai_1_May17 {
    meta:
       description = "Detects Mirai Malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-05-12"
       super_rule = 1
@@ -79,7 +79,7 @@ rule Miari_2_May17 {
    meta:
       description = "Detects Mirai Malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-05-12"
       super_rule = 1
@@ -98,7 +98,7 @@ rule Miari_2_May17 {
 rule MAL_ELF_LNX_Mirai_Oct10_1 {
    meta:
       description = "Detects ELF Mirai variant"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2018-10-27"
       modified = "2023-01-27"
@@ -120,7 +120,7 @@ rule MAL_ELF_LNX_Mirai_Oct10_1 {
 rule MAL_ELF_LNX_Mirai_Oct10_2 {
    meta:
       description = "Detects ELF malware Mirai related"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2018-10-27"
       hash1 = "fa0018e75f503f9748a5de0d14d4358db234f65e28c31c8d5878cc58807081c9"
@@ -135,7 +135,7 @@ rule MAL_ELF_LNX_Mirai_Oct10_2 {
 rule MAL_Mirai_Nov19_1 {
    meta:
       description = "Detects Mirai malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/bad_packets/status/1194049104533282816"
       date = "2019-11-13"
       hash1 = "bbb83da15d4dabd395996ed120435e276a6ddfbadafb9a7f096597c869c6c739"

@@ -2,7 +2,7 @@
 rule APT_SH_CodeCov_Hack_Apr21_1 {
    meta:
       description = "Detects manipulated Codecov bash uploader tool that has been manipulated by an unknown actor during March / April 2021"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://about.codecov.io/security-update/"
       date = "2021-04-16"
    strings:

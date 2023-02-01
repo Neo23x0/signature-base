@@ -4,7 +4,7 @@
 rule Casper_Backdoor_x86 {
    meta:
       description = "Casper French Espionage Malware - Win32/ProxyBot.B - x86 Payload http://goo.gl/VRJNLo"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "http://goo.gl/VRJNLo"
       date = "2015-03-05"
       modified = "2023-01-27"
@@ -37,7 +37,7 @@ rule Casper_EXE_Dropper {
 	meta:
 		description = "Casper French Espionage Malware - Win32/ProxyBot.B - Dropper http://goo.gl/VRJNLo"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://goo.gl/VRJNLo"
 		date = "2015/03/05"
 		hash = "e4cc35792a48123e71a2c7b6aa904006343a157a"
@@ -59,7 +59,7 @@ rule Casper_Included_Strings {
 	meta:
 		description = "Casper French Espionage Malware - String Match in File - http://goo.gl/VRJNLo"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://goo.gl/VRJNLo"
 		date = "2015/03/06"
 		score = 50
@@ -83,7 +83,7 @@ rule Casper_SystemInformation_Output {
 	meta:
 		description = "Casper French Espionage Malware - System Info Output - http://goo.gl/VRJNLo"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://goo.gl/VRJNLo"
 		date = "2015/03/06"
 		score = 70

@@ -13,7 +13,7 @@ rule OilRig_Malware_Campaign_Gen1 {
    meta:
       description = "Detects malware from OilRig Campaign"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/QMRZ8K"
       date = "2016-10-12"
       hash1 = "d808f3109822c185f1d8e1bf7ef7781c219dc56f5906478651748f0ace489d34"
@@ -69,7 +69,7 @@ rule OilRig_Malware_Campaign_Mal1 {
    meta:
       description = "Detects malware from OilRig Campaign"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/QMRZ8K"
       date = "2016-10-12"
       hash1 = "e17e1978563dc10b73fd54e7727cbbe95cc0b170a4e7bd0ab223e059f6c25fcc"
@@ -86,7 +86,7 @@ rule OilRig_Malware_Campaign_Mal1 {
 rule OilRig_Malware_Campaign_Gen2 {
    meta:
       description = "Detects Oilrig malware samples"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/QMRZ8K"
       date = "2016-10-12"
       modified = "2023-01-07"
@@ -109,7 +109,7 @@ rule OilRig_Malware_Campaign_Gen2 {
 rule OilRig_Malware_Campaign_Gen3 {
    meta:
       description = "Detects Oilrig malware samples"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/QMRZ8K"
       date = "2016-10-12"
       modified = "2023-01-07"
@@ -128,7 +128,7 @@ rule OilRig_Malware_Campaign_Mal2 {
    meta:
       description = "Detects malware from OilRig Campaign"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/QMRZ8K"
       date = "2016-10-12"
       hash1 = "65920eaea00764a245acb58a3565941477b78a7bcc9efaec5bf811573084b6cf"
@@ -147,7 +147,7 @@ rule OilRig_Campaign_Reconnaissance {
    meta:
       description = "Detects Windows discovery commands - known from OilRig Campaign"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/QMRZ8K"
       date = "2016-10-12"
       hash1 = "5893eae26df8e15c1e0fa763bf88a1ae79484cdb488ba2fc382700ff2cfab80c"
@@ -163,7 +163,7 @@ rule OilRig_Malware_Campaign_Mal3 {
    meta:
       description = "Detects malware from OilRig Campaign"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/QMRZ8K"
       date = "2016-10-12"
       hash1 = "02226181f27dbf59af5377e39cf583db15200100eea712fcb6f55c0a2245a378"
@@ -179,7 +179,7 @@ rule OilRig_Malware_Nov17_13 {
    meta:
       description = ""
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/ClearskySec/status/933280188733018113"
       date = "2017-11-22"
       hash1 = "4f1e2df85c538875a7da877719555e21c33a558ac121eb715cf4e779d77ab445"
@@ -257,7 +257,7 @@ rule Oilrig_IntelSecurityManager {
 rule APT_APT34_PS_Malware_Apr19_1 {
    meta:
       description = "Detects APT34 PowerShell malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/0xffff0800/status/1118406371165126656"
       date = "2019-04-17"
       hash1 = "b1d621091740e62c84fc8c62bcdad07873c8b61b83faba36097ef150fd6ec768"
@@ -274,7 +274,7 @@ rule APT_APT34_PS_Malware_Apr19_1 {
 rule APT_APT34_PS_Malware_Apr19_2 {
    meta:
       description = "Detects APT34 PowerShell malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/0xffff0800/status/1118406371165126656"
       date = "2019-04-17"
       hash1 = "2943e69e6c34232dee3236ced38d41d378784a317eeaf6b90482014210fcd459"
@@ -294,7 +294,7 @@ rule APT_APT34_PS_Malware_Apr19_2 {
 rule APT_APT34_PS_Malware_Apr19_3 {
    meta:
       description = "Detects APT34 PowerShell malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/0xffff0800/status/1118406371165126656"
       date = "2019-04-17"
       modified = "2023-01-06"

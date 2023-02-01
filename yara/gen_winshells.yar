@@ -11,7 +11,7 @@ rule WindowsShell_s3 {
 	meta:
 		description = "Detects simple Windows shell - file s3.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/odzhan/shells/"
 		date = "2016-03-26"
 		hash = "344575a58db288c9b5dacc654abc36d38db2e645acff05e894ff51183c61357d"
@@ -33,7 +33,7 @@ rule WindosShell_s1 {
 	meta:
 		description = "Detects simple Windows shell - file s1.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/odzhan/shells/"
 		date = "2016-03-26"
 		hash = "4a397497cfaf91e05a9b9d6fa6e335243cca3f175d5d81296b96c13c624818bd"
@@ -54,7 +54,7 @@ rule WindowsShell_s4 {
 	meta:
 		description = "Detects simple Windows shell - file s4.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/odzhan/shells/"
 		date = "2016-03-26"
 		hash = "f00a1af494067b275407c449b11dfcf5cb9b59a6fac685ebd3f0eb193337e1d6"
@@ -77,7 +77,7 @@ rule WindowsShell_Gen {
 	meta:
 		description = "Detects simple Windows shell - from files keygen.exe, s1.exe, s2.exe, s3.exe, s4.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/odzhan/shells/"
 		date = "2016-03-26"
 		super_rule = 1
@@ -98,7 +98,7 @@ rule WindowsShell_Gen2 {
 	meta:
 		description = "Detects simple Windows shell - from files s3.exe, s4.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/odzhan/shells/"
 		date = "2016-03-26"
 		super_rule = 1

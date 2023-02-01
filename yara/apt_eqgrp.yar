@@ -13,7 +13,7 @@ rule EQGRP_noclient_3_0_5 {
 	meta:
 		description = "Detects tool from EQGRP toolset - file noclient-3.0.5.3"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-15"
 		score = 75
@@ -31,7 +31,7 @@ rule EQGRP_installdate {
 	meta:
 		description = "Detects tool from EQGRP toolset - file installdate.pl"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-15"
 		score = 75
@@ -51,7 +51,7 @@ rule EQGRP_teflondoor {
 	meta:
 		description = "Detects tool from EQGRP toolset - file teflondoor.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-15"
 		score = 75
@@ -73,7 +73,7 @@ rule EQGRP_durablenapkin_solaris_2_0_1 {
 	meta:
 		description = "Detects tool from EQGRP toolset - file durablenapkin.solaris.2.0.1.1"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-15"
 		score = 75
@@ -91,7 +91,7 @@ rule EQGRP_teflonhandle {
 	meta:
 		description = "Detects tool from EQGRP toolset - file teflonhandle.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-15"
 		score = 75
@@ -109,7 +109,7 @@ rule EQGRP_false {
 	meta:
 		description = "Detects tool from EQGRP toolset - file false.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-15"
 		score = 75
@@ -131,7 +131,7 @@ rule EQGRP_dn_1_0_2_1 {
 	meta:
 		description = "Detects tool from EQGRP toolset - file dn.1.0.2.1.linux"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-15"
 		score = 75
@@ -148,7 +148,7 @@ rule EQGRP_morel {
 	meta:
 		description = "Detects tool from EQGRP toolset - file morel.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-15"
 		score = 75
@@ -165,7 +165,7 @@ rule EQGRP_bc_parser {
 	meta:
 		description = "Detects tool from EQGRP toolset - file bc-parser"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-15"
 		score = 75
@@ -181,7 +181,7 @@ rule EQGRP_1212 {
 	meta:
 		description = "Detects tool from EQGRP toolset - file 1212.pl"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-15"
 		score = 75
@@ -200,7 +200,7 @@ rule EQGRP_1212_dehex {
 	meta:
 		description = "Detects tool from EQGRP toolset - from files 1212.pl, dehex.pl"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-15"
 		score = 75
@@ -227,7 +227,7 @@ rule install_get_persistent_filenames {
 	meta:
 		description = "EQGRP Toolset Firewall - file install_get_persistent_filenames"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "4a50ec4bf42087e932e9e67e0ea4c09e52a475d351981bb4c9851fda02b35291"
@@ -241,7 +241,7 @@ rule EQGRP_create_dns_injection {
 	meta:
 		description = "EQGRP Toolset Firewall - file create_dns_injection.py"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "488f3cc21db0688d09e13eb85a197a1d37902612c3e302132c84e07bc42b1c32"
@@ -256,7 +256,7 @@ rule EQGRP_screamingplow {
 	meta:
 		description = "EQGRP Toolset Firewall - file screamingplow.sh"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "c7f4104c4607a03a1d27c832e1ebfc6ab252a27a1709015b5f1617b534f0090a"
@@ -271,7 +271,7 @@ rule EQGRP_MixText {
 	meta:
 		description = "EQGRP Toolset Firewall - file MixText.py"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "e4d24e30e6cc3a0aa0032dbbd2b68c60bac216bef524eaf56296430aa05b3795"
@@ -285,7 +285,7 @@ rule EQGRP_tunnel_state_reader {
 	meta:
 		description = "EQGRP Toolset Firewall - file tunnel_state_reader"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "49d48ca1ec741f462fde80da68b64dfa5090855647520d29e345ef563113616c"
@@ -300,7 +300,7 @@ rule EQGRP_payload {
 	meta:
 		description = "EQGRP Toolset Firewall - file payload.py"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "21bed6d699b1fbde74cbcec93575c9694d5bea832cd191f59eb3e4140e5c5e07"
@@ -315,7 +315,7 @@ rule EQGRP_eligiblecandidate {
 	meta:
 		description = "EQGRP Toolset Firewall - file eligiblecandidate.py"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "c4567c00734dedf1c875ecbbd56c1561a1610bedb4621d9c8899acec57353d86"
@@ -333,7 +333,7 @@ rule EQGRP_BUSURPER_2211_724 {
 	meta:
 		description = "EQGRP Toolset Firewall - file BUSURPER-2211-724.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "d809d6ff23a9eee53d2132d2c13a9ac5d0cb3037c60e229373fc59a4f14bc744"
@@ -351,7 +351,7 @@ rule EQGRP_networkProfiler_orderScans {
 	meta:
 		description = "EQGRP Toolset Firewall - file networkProfiler_orderScans.sh"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "ea986ddee09352f342ac160e805312e3a901e58d2beddf79cd421443ba8c9898"
@@ -366,7 +366,7 @@ rule EQGRP_epicbanana_2_1_0_1 {
 	meta:
 		description = "EQGRP Toolset Firewall - file epicbanana_2.1.0.1.py"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "4b13cc183c3aaa8af43ef3721e254b54296c8089a0cd545ee3b867419bb66f61"
@@ -381,7 +381,7 @@ rule EQGRP_sniffer_xml2pcap {
 	meta:
 		description = "EQGRP Toolset Firewall - file sniffer_xml2pcap"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "f5e5d75cfcd86e5c94b0e6f21bbac886c7e540698b1556d88a83cc58165b8e42"
@@ -396,7 +396,7 @@ rule EQGRP_BananaAid {
 	meta:
 		description = "EQGRP Toolset Firewall - file BananaAid"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "7a4fb825e63dc612de81bc83313acf5eccaa7285afc05941ac1fef199279519f"
@@ -413,7 +413,7 @@ rule EQGRP_bo {
 	meta:
 		description = "EQGRP Toolset Firewall - file bo"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "aa8b363073e8ae754b1836c30f440d7619890ded92fb5b97c73294b15d22441d"
@@ -431,7 +431,7 @@ rule EQGRP_SecondDate_2211 {
 	meta:
 		description = "EQGRP Toolset Firewall - file SecondDate-2211.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "2337d0c81474d03a02c404cada699cf1b86c3c248ea808d4045b86305daa2607"
@@ -448,7 +448,7 @@ rule EQGRP_config_jp1_UA {
 	meta:
 		description = "EQGRP Toolset Firewall - file config_jp1_UA.pl"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "2f50b6e9891e4d7fd24cc467e7f5cfe348f56f6248929fec4bbee42a5001ae56"
@@ -465,7 +465,7 @@ rule EQGRP_userscript {
 	meta:
 		description = "EQGRP Toolset Firewall - file userscript.FW"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "5098ff110d1af56115e2c32f332ff6e3973fb7ceccbd317637c9a72a3baa43d7"
@@ -479,7 +479,7 @@ rule EQGRP_BBALL_M50FW08_2201 {
 	meta:
 		description = "EQGRP Toolset Firewall - file BBALL_M50FW08-2201.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "80c0b68adb12bf3c15eff9db70a57ab999aad015da99c4417fdfd28156d8d3f7"
@@ -498,7 +498,7 @@ rule EQGRP_BUSURPER_3001_724 {
 	meta:
 		description = "EQGRP Toolset Firewall - file BUSURPER-3001-724.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "6b558a6b8bf3735a869365256f9f2ad2ed75ccaa0eefdc61d6274df4705e978b"
@@ -514,7 +514,7 @@ rule EQGRP_workit {
 	meta:
 		description = "EQGRP Toolset Firewall - file workit.py"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		modified = "2023-01-27"
@@ -539,7 +539,7 @@ rule EQGRP_tinyhttp_setup {
 	meta:
 		description = "EQGRP Toolset Firewall - file tinyhttp_setup.sh"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "3d12c83067a9f40f2f5558d3cf3434bbc9a4c3bb9d66d0e3c0b09b9841c766a0"
@@ -556,7 +556,7 @@ rule EQGRP_shellcode {
 	meta:
 		description = "EQGRP Toolset Firewall - file shellcode.py"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "ac9decb971dd44127a6ca0d35ac153951f0735bb4df422733046098eca8f8b7f"
@@ -576,7 +576,7 @@ rule EQGRP_EPBA {
 	meta:
 		description = "EQGRP Toolset Firewall - file EPBA.script"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "53e1af1b410ace0934c152b5df717d8a5a8f5fdd8b9eb329a44d94c39b066ff7"
@@ -596,7 +596,7 @@ rule EQGRP_BPIE {
 	meta:
 		description = "EQGRP Toolset Firewall - file BPIE-2201.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "697e80cf2595c85f7c931693946d295994c55da17a400f2c9674014f130b4688"
@@ -617,7 +617,7 @@ rule EQGRP_jetplow_SH {
 	meta:
 		description = "EQGRP Toolset Firewall - file jetplow.sh"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "ee266f84a1a4ccf2e789a73b0a11242223ed6eba6868875b5922aea931a2199c"
@@ -634,7 +634,7 @@ rule EQGRP_BBANJO {
 	meta:
 		description = "EQGRP Toolset Firewall - file BBANJO-3011.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "f09c2f90464781a08436321f6549d350ecef3d92b4f25b95518760f5d4c9b2c3"
@@ -654,7 +654,7 @@ rule EQGRP_BPATROL_2201 {
 	meta:
 		description = "EQGRP Toolset Firewall - file BPATROL-2201.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "aa892750b893033eed2fedb2f4d872f79421174eb217f0c34a933c424ae66395"
@@ -672,7 +672,7 @@ rule EQGRP_extrabacon {
 	meta:
 		description = "EQGRP Toolset Firewall - file extrabacon_1.1.0.1.py"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "59d60835fe200515ece36a6e87e642ee8059a40cb04ba5f4b9cce7374a3e7735"
@@ -690,7 +690,7 @@ rule EQGRP_sploit_py {
 	meta:
 		description = "EQGRP Toolset Firewall - file sploit.py"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "0316d70a5bbf068a7fc791e08e816015d04ec98f088a7ff42af8b9e769b8d1f6"
@@ -706,7 +706,7 @@ rule EQGRP_uninstallPBD {
 	meta:
 		description = "EQGRP Toolset Firewall - file uninstallPBD.bat"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "692fdb449f10057a114cf2963000f52ce118d9a40682194838006c66af159bd0"
@@ -722,7 +722,7 @@ rule EQGRP_BICECREAM {
 	meta:
 		description = "EQGRP Toolset Firewall - file BICECREAM-2140"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "4842076af9ba49e6dfae21cf39847b4172c06a0bd3d2f1ca6f30622e14b77210"
@@ -744,7 +744,7 @@ rule EQGRP_create_http_injection {
 	meta:
 		description = "EQGRP Toolset Firewall - file create_http_injection.py"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "de52f5621b4f3896d4bd1fb93ee8be827e71a2b189a9f8552b68baed062a992d"
@@ -763,7 +763,7 @@ rule EQGRP_BFLEA_2201 {
 	meta:
 		description = "EQGRP Toolset Firewall - file BFLEA-2201.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "15e8c743770e44314496c5f27b6297c5d7a4af09404c4aa507757e0cc8edc79e"
@@ -783,7 +783,7 @@ rule EQGRP_BpfCreator_RHEL4 {
 	meta:
 		description = "EQGRP Toolset Firewall - file BpfCreator-RHEL4"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "bd7303393409623cabf0fcf2127a0b81fae52fe40a0d2b8db0f9f092902bbd92"
@@ -801,7 +801,7 @@ rule EQGRP_StoreFc {
 	meta:
 		description = "EQGRP Toolset Firewall - file StoreFc.py"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "f155cce4eecff8598243a721389046ae2b6ca8ba6cb7b4ac00fd724601a56108"
@@ -817,7 +817,7 @@ rule EQGRP_hexdump {
 	meta:
 		description = "EQGRP Toolset Firewall - file hexdump.py"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "95a9a6a8de60d3215c1c9f82d2d8b2640b42f5cabdc8b50bd1f4be2ea9d7575a"
@@ -834,7 +834,7 @@ rule EQGRP_BBALL {
 	meta:
 		description = "EQGRP Toolset Firewall - file BBALL_E28F6-2201.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "498fc9f20b938b8111adfa3ca215325f265a08092eefd5300c4168876deb7bf6"
@@ -856,7 +856,7 @@ rule EQGRP_BARPUNCH_BPICKER {
 	meta:
 		description = "EQGRP Toolset Firewall - from files BARPUNCH-3110, BPICKER-3100"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		super_rule = 1
@@ -876,7 +876,7 @@ rule EQGRP_Implants_Gen6 {
 	meta:
 		description = "EQGRP Toolset Firewall"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		super_rule = 1
@@ -905,7 +905,7 @@ rule EQGRP_Implants_Gen5 {
 	meta:
 		description = "EQGRP Toolset Firewall"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		super_rule = 1
@@ -931,7 +931,7 @@ rule EQGRP_pandarock {
 	meta:
 		description = "EQGRP Toolset Firewall - from files pandarock_v1.11.1.1.bin, pit"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		super_rule = 1
@@ -959,7 +959,7 @@ rule EQGRP_BananaUsurper_writeJetPlow {
 	meta:
 		description = "EQGRP Toolset Firewall - from files BananaUsurper-2120, writeJetPlow-2130"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		super_rule = 1
@@ -979,7 +979,7 @@ rule EQGRP_Implants_Gen4 {
 	meta:
 		description = "EQGRP Toolset Firewall - from files BLIAR-2110, BLIQUER-2230, BLIQUER-3030, BLIQUER-3120"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		super_rule = 1
@@ -1001,7 +1001,7 @@ rule EQGRP_Implants_Gen3 {
 	meta:
 		description = "EQGRP Toolset Firewall"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		super_rule = 1
@@ -1025,7 +1025,7 @@ rule EQGRP_BLIAR_BLIQUER {
 	meta:
 		description = "EQGRP Toolset Firewall - from files BLIAR-2110, BLIQUER-2230"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		super_rule = 1
@@ -1059,7 +1059,7 @@ rule EQGRP_sploit {
 	meta:
 		description = "EQGRP Toolset Firewall - from files sploit.py, sploit.py"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		super_rule = 1
@@ -1082,7 +1082,7 @@ rule EQGRP_Implants_Gen2 {
 	meta:
 		description = "EQGRP Toolset Firewall"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		super_rule = 1
@@ -1114,7 +1114,7 @@ rule EQGRP_Implants_Gen1 {
 	meta:
 		description = "EQGRP Toolset Firewall"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		super_rule = 1
@@ -1144,7 +1144,7 @@ rule EQGRP_eligiblebombshell_generic {
 	meta:
 		description = "EQGRP Toolset Firewall - from files eligiblebombshell_1.2.0.1.py, eligiblebombshell_1.2.0.1.py"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		super_rule = 1
@@ -1162,7 +1162,7 @@ rule EQGRP_ssh_telnet_29 {
 	meta:
 		description = "EQGRP Toolset Firewall - from files ssh.py, telnet.py"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 		super_rule = 1
@@ -1186,7 +1186,7 @@ rule EQGRP_tinyexec {
 	meta:
 		description = "EQGRP Toolset Firewall - from files tinyexec"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 	strings:
@@ -1200,7 +1200,7 @@ rule EQGRP_callbacks {
 	meta:
 		description = "EQGRP Toolset Firewall - Callback addresses"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 	strings:
@@ -1213,7 +1213,7 @@ rule EQGRP_Extrabacon_Output {
 	meta:
 		description = "EQGRP Toolset Firewall - Extrabacon exploit output"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 	strings:
@@ -1230,7 +1230,7 @@ rule EQGRP_Unique_Strings {
 	meta:
 		description = "EQGRP Toolset Firewall - Unique strings"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Research"
 		date = "2016-08-16"
 	strings:
@@ -1244,7 +1244,7 @@ rule EQGRP_RC5_RC6_Opcode {
 	meta:
 		description = "EQGRP Toolset Firewall - RC5 / RC6 opcode"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://securelist.com/blog/incidents/75812/the-equation-giveaway/"
 		date = "2016-08-17"
 	strings:
@@ -1273,7 +1273,7 @@ rule EquationGroup_modifyAudit_Implant {
    meta:
       description = "EquationGroup Malware - file modifyAudit_Implant.dll"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
       hash1 = "b7902809a15c4c3864a14f009768693c66f9e9234204b873d29a87f4c3009a50"
@@ -1290,7 +1290,7 @@ rule EquationGroup_modifyAudit_Lp {
    meta:
       description = "EquationGroup Malware - file modifyAudit_Lp.dll"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
       hash1 = "2a1f2034e80421359e3bf65cbd12a55a95bd00f2eb86cf2c2d287711ee1d56ad"
@@ -1308,7 +1308,7 @@ rule EquationGroup_ProcessHide_Lp {
    meta:
       description = "EquationGroup Malware - file ProcessHide_Lp.dll"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
       hash1 = "cdee0daa816f179e74c90c850abd427fbfe0888dcfbc38bf21173f543cdcdc66"
@@ -1328,7 +1328,7 @@ rule EquationGroup_pwdump_Implant {
    meta:
       description = "EquationGroup Malware - file pwdump_Implant.dll"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
       hash1 = "dfd5768a4825d1c7329c2e262fde27e2b3d9c810653585b058fcf9efa9815964"
@@ -1344,7 +1344,7 @@ rule EquationGroup_EquationDrug_Gen_5 {
    meta:
       description = "EquationGroup Malware - file PC_Level3_http_dll"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
       hash1 = "4ebfc1f6ec6a0e68e47e5b231331470a4483184cf715a578191b91ba7c32094d"
@@ -1361,7 +1361,7 @@ rule EquationGroup_PC_Level3_http_flav_dll {
    meta:
       description = "EquationGroup Malware - file PC_Level3_http_flav_dll"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
       hash1 = "27972d636b05a794d17cb3203d537bcf7c379fafd1802792e7fb8e72f130a0c4"
@@ -1379,7 +1379,7 @@ rule EquationGroup_LSADUMP_Lp {
    meta:
       description = "EquationGroup Malware - file LSADUMP_Lp.dll"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
       hash1 = "c7bf4c012293e7de56d86f4f5b4eeb6c1c5263568cc4d9863a286a86b5daf194"
@@ -1392,7 +1392,7 @@ rule EquationGroup_LSADUMP_Lp {
 rule EquationGroup_EquationDrug_mstcp32 {
    meta:
       description = "EquationGroup Malware - file mstcp32.sys"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
       modified = "2023-01-06"
@@ -1415,7 +1415,7 @@ rule EquationGroup_nethide_Lp {
    meta:
       description = "EquationGroup Malware - file nethide_Lp.dll"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
       hash1 = "137749c0fbb8c12d1a650f0bfc73be2739ff084165d02e4cb68c6496d828bf1d"
@@ -1433,7 +1433,7 @@ rule EquationGroup_PC_Level4_flav_dll_x64 {
    meta:
       description = "EquationGroup Malware - file PC_Level4_flav_dll_x64"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
       hash1 = "25a2549031cb97b8a3b569b1263c903c6c0247f7fff866e7ec63f0add1b4921c"
@@ -1449,7 +1449,7 @@ rule EquationGroup_PC_Level4_flav_exe {
    meta:
       description = "EquationGroup Malware - file PC_Level4_flav_exe"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
       hash1 = "33ba9f103186b6e52d8d69499512e7fbac9096e7c5278838127488acc3b669a9"
@@ -1468,7 +1468,7 @@ rule EquationGroup_processinfo_Implant {
    meta:
       description = "EquationGroup Malware - file processinfo_Implant.dll"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
       hash1 = "aadfa0b1aec4456b10e4fb82f5cfa918dbf4e87d19a02bcc576ac499dda0fb68"
@@ -1500,7 +1500,7 @@ rule EquationGroup_EquationDrug_ntevt {
    meta:
       description = "EquationGroup Malware - file ntevt.sys"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
       hash1 = "45e5e1ea3456d7852f5c610c7f4447776b9f15b56df7e3a53d57996123e0cebf"
@@ -1515,7 +1515,7 @@ rule EquationGroup_nethide_Implant {
    meta:
       description = "EquationGroup Malware - file nethide_Implant.dll"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
 	  modified = "2023-01-27"
@@ -1546,7 +1546,7 @@ rule EquationGroup_EquationDrug_tdi6 {
    meta:
       description = "EquationGroup Malware - file tdi6.sys"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
       hash1 = "12c082f74c0916a0e926488642236de3a12072a18d29c97bead15bb301f4b3f8"
@@ -1563,7 +1563,7 @@ rule EquationGroup_modifyAuthentication_Implant {
    meta:
       description = "EquationGroup Malware - file modifyAuthentication_Implant.dll"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
       hash1 = "e1dff24af5bfc991dca21b4e3a19ffbc069176d674179eef691afc6b1ac6f805"
@@ -1581,7 +1581,7 @@ rule EquationGroup_ntfltmgr {
    meta:
       description = "EquationGroup Malware - file ntfltmgr.sys"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
       hash1 = "f7a886ee10ee6f9c6be48c20f370514be62a3fd2da828b0dff44ff3d485ff5c5"
@@ -1597,7 +1597,7 @@ rule EquationGroup_ntfltmgr {
 rule EquationGroup_DXGHLP16 {
    meta:
       description = "EquationGroup Malware - file DXGHLP16.SYS"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
       modified = "2023-01-06"
@@ -1620,7 +1620,7 @@ rule EquationGroup_EquationDrug_msgkd {
    meta:
       description = "EquationGroup Malware - file msgkd.ex_"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
       hash1 = "25eec68fc9f0d8d1b5d72c9eae7bee29035918e9dcbeab13e276dec4b2ad2a56"
@@ -1635,7 +1635,7 @@ rule EquationGroup_RunAsChild_Lp {
    meta:
       description = "EquationGroup Malware - file RunAsChild_Lp.dll"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
       hash1 = "1097e1d562341858e241f1f67788534c0e340a2dc2e75237d57e3f473e024464"
@@ -1651,7 +1651,7 @@ rule EquationGroup_EquationDrug_Gen_6 {
    meta:
       description = "EquationGroup Malware - file PC_Level3_dll_x64"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
       hash1 = "339855618fb3ef53987b8c14a61bd4519b2616e766149e0c21cbd7cbe7a632c9"
@@ -1667,7 +1667,7 @@ rule EquationGroup_PC_Level3_http_flav_dll_x64 {
    meta:
       description = "EquationGroup Malware - file PC_Level3_http_flav_dll_x64"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
       hash1 = "4e0209b4f5990148f5d6dee47dbc7021bf78a782b85cef4d6c8be22d698b884f"
@@ -1700,7 +1700,7 @@ rule EquationGroup_GetAdmin_Lp {
    meta:
       description = "EquationGroup Malware - file GetAdmin_Lp.dll"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
       hash1 = "e1c9c9f031d902e69e42f684ae5b35a2513f7d5f8bca83dfbab10e8de6254c78"
@@ -1715,7 +1715,7 @@ rule EquationGroup_ModifyGroup_Lp {
    meta:
       description = "EquationGroup Malware - file ModifyGroup_Lp.dll"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
       hash1 = "dfb38ed2ca3870faf351df1bd447a3dc4470ed568553bf83df07bf07967bf520"
@@ -1730,7 +1730,7 @@ rule EquationGroup_pwdump_Lp {
    meta:
       description = "EquationGroup Malware - file pwdump_Lp.dll"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
       hash1 = "fda57a2ba99bc610d3ff71b2d0ea2829915eabca168df99709a8fdd24288c5e5"
@@ -1744,7 +1744,7 @@ rule EquationGroup_EventLogEdit_Implant {
    meta:
       description = "EquationGroup Malware - file EventLogEdit_Implant.dll"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
       hash1 = "0bb750195fbd93d174c2a8e20bcbcae4efefc881f7961fdca8fa6ebd68ac1edf"
@@ -1760,7 +1760,7 @@ rule EquationGroup_PortMap_Lp {
    meta:
       description = "EquationGroup Malware - file PortMap_Lp.dll"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
       hash1 = "2b27f2faae9de6330f17f60a1d19f9831336f57fdfef06c3b8876498882624a6"
@@ -1776,7 +1776,7 @@ rule EquationGroup_ProcessOptions_Lp {
    meta:
       description = "EquationGroup Malware - file ProcessOptions_Lp.dll"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
       hash1 = "31d86f77137f0b3697af03dd28d6552258314cecd3c1d9dc18fcf609eb24229a"
@@ -1790,7 +1790,7 @@ rule EquationGroup_PassFreely_Lp {
    meta:
       description = "EquationGroup Malware - file PassFreely_Lp.dll"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
       hash1 = "fe42139748c8e9ba27a812466d9395b3a0818b0cd7b41d6769cb7239e57219fb"
@@ -1808,7 +1808,7 @@ rule EquationGroup_EquationDrug_Gen_1 {
    meta:
       description = "EquationGroup Malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/tcSoiJ"
       date = "2017-01-13"
       super_rule = 1
@@ -1839,7 +1839,7 @@ rule EquationGroup_EquationDrug_Gen_1 {
 rule EquationDrug_MS_Identifier {
 	meta:
 		description = "Microsoft Identifier used in EquationDrug Platform"
-		author = "Florian Roth @4nc4p"
+		author = "Florian Roth (Nextron Systems) @4nc4p"
 		date = "2015/03/11"
 	strings:
 		$s1 = "Microsoft(R) Windows (TM) Operating System" fullword wide

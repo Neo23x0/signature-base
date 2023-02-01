@@ -11,7 +11,7 @@ rule GRIZZLY_STEPPE_Malware_1 {
    meta:
       description = "Auto-generated rule - file HRDG022184_certclint.dll"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/WVflzO"
       date = "2016-12-29"
       hash1 = "9f918fb741e951a10e68ce6874b839aef5a26d60486db31e509f8dcaa13acec5"
@@ -30,7 +30,7 @@ rule GRIZZLY_STEPPE_Malware_2 {
    meta:
       description = "Auto-generated rule"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/WVflzO"
       date = "2016-12-29"
       hash1 = "9acba7e5f972cdd722541a23ff314ea81ac35d5c0c758eb708fb6e2cc4f598a0"
@@ -75,7 +75,7 @@ rule WebShell_PHP_Web_Kit_v3 {
       description = "Detects PAS Tool PHP Web Kit"
       reference = "https://github.com/wordfence/grizzly"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       date = "2016/01/01"
    strings:
       $php = "<?php $"
@@ -95,7 +95,7 @@ rule WebShell_PHP_Web_Kit_v4 {
       description = "Detects PAS Tool PHP Web Kit"
       reference = "https://github.com/wordfence/grizzly"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       date = "2016/01/01"
    strings:
       $php = "<?php $"

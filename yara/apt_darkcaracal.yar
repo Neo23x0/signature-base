@@ -13,7 +13,7 @@ rule MiniRAT_Gen_1 {
    meta:
       description = "Detects Mini RAT malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.eff.org/deeplinks/2018/01/dark-caracal-good-news-and-bad-news"
       date = "2018-01-22"
       hash1 = "091ae8d5649c4e040d25550f2cdf7f1ddfc9c698e672318eb1ab6303aa1cf85b"

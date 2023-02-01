@@ -40,7 +40,7 @@ rule ShellCrew_StreamEx_1 {
    meta:
       description = "Auto-generated rule"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://blog.cylance.com/shell-crew-variants-continue-to-fly-under-big-avs-radar"
       date = "2017-02-10"
       modified = "2022-12-21"
@@ -60,7 +60,7 @@ rule ShellCrew_StreamEx_1_msi {
    meta:
       description = "Auto-generated rule"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://blog.cylance.com/shell-crew-variants-continue-to-fly-under-big-avs-radar"
       date = "2017-02-10"
       hash1 = "8c9048e2f5ea2ef9516cac06dc0fba8a7e97754468c0d9dc1e5f7bce6dbda2cc"
@@ -80,7 +80,7 @@ rule ShellCrew_StreamEx_1_msi_dll {
    meta:
       description = "Auto-generated rule"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://blog.cylance.com/shell-crew-variants-continue-to-fly-under-big-avs-radar"
       date = "2017-02-10"
       hash1 = "883108119d2f4db066fa82e37aa49ecd2dbdacda67eb936b96720663ed6565ce"

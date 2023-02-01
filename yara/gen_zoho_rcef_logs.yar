@@ -2,7 +2,7 @@
 rule EXPL_Zoho_RCE_Fix_Lines_Dec21_1 {
    meta:
       description = "Detects lines in log lines of Zoho products that indicate RCE fixes (silent removal of evidence)"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/cyb3rops/status/1467784104930385923"
       date = "2021-12-06"
       score = 65

@@ -3,7 +3,7 @@ rule MAL_RTF_Embedded_OLE_PE {
    meta:
       description = "Detects a suspicious string often used in PE files in a hex encoded object stream"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.nextron-systems.com/2018/01/22/creating-yara-rules-detect-embedded-exe-files-ole-objects/"
       date = "2018-01-22"
    strings:

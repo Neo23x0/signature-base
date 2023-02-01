@@ -9,7 +9,7 @@
 rule RUAG_Tavdig_Malformed_Executable {
   meta:
     description = "Detects an embedded executable with a malformed header - known from Tavdig malware"
-    author = "Florian Roth"
+    author = "Florian Roth (Nextron Systems)"
     reference = "https://goo.gl/N5MEj0"
     score = 60
   condition:
@@ -20,7 +20,7 @@ rule RUAG_Tavdig_Malformed_Executable {
 rule RUAG_Bot_Config_File {
   meta:
     description = "Detects a specific config file used by malware in RUAG APT case"
-    author = "Florian Roth"
+    author = "Florian Roth (Nextron Systems)"
     reference = "https://goo.gl/N5MEj0"
     score = 60
   strings:
@@ -34,7 +34,7 @@ rule RUAG_Bot_Config_File {
 rule RUAG_Cobra_Malware {
   meta:
     description = "Detects a malware mentioned in the RUAG Case called Carbon/Cobra"
-    author = "Florian Roth"
+    author = "Florian Roth (Nextron Systems)"
     reference = "https://goo.gl/N5MEj0"
     score = 60
   strings:
@@ -46,7 +46,7 @@ rule RUAG_Cobra_Malware {
 rule RUAG_Cobra_Config_File {
   meta:
     description = "Detects a config text file used by malware Cobra in RUAG case"
-    author = "Florian Roth"
+    author = "Florian Roth (Nextron Systems)"
     reference = "https://goo.gl/N5MEj0"
     score = 60
   strings:
@@ -69,7 +69,7 @@ rule RUAG_Cobra_Config_File {
 rule RUAG_Exfil_Config_File {
   meta:
     description = "Detects a config text file used in data exfiltration in RUAG case"
-    author = "Florian Roth"
+    author = "Florian Roth (Nextron Systems)"
     reference = "https://goo.gl/N5MEj0"
     score = 60
   strings:

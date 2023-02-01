@@ -15,7 +15,7 @@ rule Reaver3_Malware_Nov17_1 {
    meta:
       description = "Detects Reaver malware mentioned in PaloAltoNetworks report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://researchcenter.paloaltonetworks.com/2017/11/unit42-new-malware-with-ties-to-sunorcal-discovered/"
       date = "2017-11-11"
       hash1 = "1813f10bcf74beb582c824c64fff63cb150d178bef93af81d875ca84214307a1"
@@ -28,7 +28,7 @@ rule Reaver3_Malware_Nov17_1 {
 rule Reaver3_Malware_Nov17_2 {
    meta:
       description = "Detects Reaver malware mentioned in PaloAltoNetworks report"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://researchcenter.paloaltonetworks.com/2017/11/unit42-new-malware-with-ties-to-sunorcal-discovered/"
       date = "2017-11-11"
       modified = "2023-01-06"
@@ -54,7 +54,7 @@ rule Reaver3_Malware_Nov17_3 {
    meta:
       description = "Detects Reaver malware mentioned in PaloAltoNetworks report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://researchcenter.paloaltonetworks.com/2017/11/unit42-new-malware-with-ties-to-sunorcal-discovered/"
       date = "2017-11-11"
       modified = "2023-01-06"
@@ -80,7 +80,7 @@ rule SunOrcal_Malware_Nov17_1 {
    meta:
       description = "Detects Reaver malware mentioned in PaloAltoNetworks report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://researchcenter.paloaltonetworks.com/2017/11/unit42-new-malware-with-ties-to-sunorcal-discovered/"
       date = "2017-11-11"
       hash1 = "cb7c0cf1750baaa11783e93369230ee666b9f3da7298e4d1bb9a07af6a439f2f"

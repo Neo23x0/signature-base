@@ -3,7 +3,7 @@ import "pe"
 rule MAL_Ryuk_Ransomware {
    meta:
       description = "Detects strings known from Ryuk Ransomware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://research.checkpoint.com/ryuk-ransomware-targeted-campaign-break/"
       date = "2018-12-31"
       hash1 = "965884f19026913b2c57b8cd4a86455a61383de01dabb69c557f45bb848f6c26"

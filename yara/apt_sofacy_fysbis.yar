@@ -10,7 +10,7 @@ rule Sofacy_Fybis_ELF_Backdoor_Gen1 {
 	meta:
 		description = "Detects Sofacy Fysbis Linux Backdoor"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://researchcenter.paloaltonetworks.com/2016/02/a-look-into-fysbis-sofacys-linux-backdoor/"
 		date = "2016-02-13"
 		modified = "2023-01-27"
@@ -37,7 +37,7 @@ rule Sofacy_Fysbis_ELF_Backdoor_Gen2 {
 	meta:
 		description = "Detects Sofacy Fysbis Linux Backdoor"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://researchcenter.paloaltonetworks.com/2016/02/a-look-into-fysbis-sofacys-linux-backdoor/"
 		date = "2016-02-13"
 		score = 80

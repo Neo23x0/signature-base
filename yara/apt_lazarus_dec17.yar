@@ -13,7 +13,7 @@ rule Lazarus_Dec_17_1 {
    meta:
       description = "Detects Lazarus malware from incident in Dec 2017"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/8U6fY2"
       date = "2017-12-20"
       hash1 = "d5f9a81df5061c69be9c0ed55fba7d796e1a8ebab7c609ae437c574bd7b30b48"
@@ -31,7 +31,7 @@ rule Lazarus_Dec_17_2 {
    meta:
       description = "Detects Lazarus malware from incident in Dec 2017"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/8U6fY2"
       date = "2017-12-20"
       hash1 = "cbebafb2f4d77967ffb1a74aac09633b5af616046f31dddf899019ba78a55411"
@@ -52,7 +52,7 @@ rule Lazarus_Dec_17_4 {
    meta:
       description = "Detects Lazarus malware from incident in Dec 2017ithumb.js"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/8U6fY2"
       date = "2017-12-20"
       hash1 = "8ff100ca86cb62117f1290e71d5f9c0519661d6c955d9fcfb71f0bbdf75b51b3"
@@ -67,7 +67,7 @@ rule Lazarus_Dec_17_5 {
    meta:
       description = "Detects Lazarus malware from incident in Dec 2017"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/8U6fY2"
       date = "2017-12-20"
       hash1 = "db8163d054a35522d0dec35743cfd2c9872e0eb446467b573a79f84d61761471"

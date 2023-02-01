@@ -11,7 +11,7 @@ rule Duqu2_Sample1 {
 	meta:
 		description = "Detects malware - Duqu2 (cross-matches with IronTiger malware and Derusbi)"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://securelist.com/blog/research/70504/the-mystery-of-duqu-2-0-a-sophisticated-cyberespionage-actor-returns/"
 		date = "2016-07-02"
 		score = 80
@@ -30,7 +30,7 @@ rule Duqu2_Sample2 {
 	meta:
 		description = "Detects Duqu2 Malware"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://securelist.com/blog/research/70504/the-mystery-of-duqu-2-0-a-sophisticated-cyberespionage-actor-returns/"
 		date = "2016-07-02"
 		score = 80
@@ -51,7 +51,7 @@ rule Duqu2_Sample3 {
 	meta:
 		description = "Detects Duqu2 Malware"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://securelist.com/blog/research/70504/the-mystery-of-duqu-2-0-a-sophisticated-cyberespionage-actor-returns/"
 		date = "2016-07-02"
 		score = 80
@@ -66,7 +66,7 @@ rule Duqu2_Sample4 {
 	meta:
 		description = "Detects Duqu2 Malware"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://securelist.com/blog/research/70504/the-mystery-of-duqu-2-0-a-sophisticated-cyberespionage-actor-returns/"
 		date = "2016-07-02"
 		score = 80
@@ -83,7 +83,7 @@ rule Duqu2_UAs {
 	meta:
 		description = "Detects Duqu2 Executable based on the specific UAs in the file"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://securelist.com/blog/research/70504/the-mystery-of-duqu-2-0-a-sophisticated-cyberespionage-actor-returns/"
 		date = "2016-07-02"
 		score = 80

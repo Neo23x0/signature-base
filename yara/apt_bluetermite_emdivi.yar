@@ -9,7 +9,7 @@
 rule Emdivi_SFX {
 	meta:
 		description = "Detects Emdivi malware in SFX Archive"
-		author = "Florian Roth @Cyber0ps"
+		author = "Florian Roth (Nextron Systems) @Cyber0ps"
 		reference = "https://securelist.com/blog/research/71876/new-activity-of-the-blue-termite-apt/"
 		date = "2015-08-20"
 		score = 70
@@ -31,7 +31,7 @@ rule Emdivi_SFX {
 rule Emdivi_Gen1 {
 	meta:
 		description = "Detects Emdivi Malware"
-		author = "Florian Roth @Cyber0ps"
+		author = "Florian Roth (Nextron Systems) @Cyber0ps"
 		reference = "https://securelist.com/blog/research/71876/new-activity-of-the-blue-termite-apt/"
 		date = "2015-08-20"
 		score = 80
@@ -60,7 +60,7 @@ rule Emdivi_Gen1 {
 rule Emdivi_Gen2 {
 	meta:
 		description = "Detects Emdivi Malware"
-		author = "Florian Roth @Cyber0ps"
+		author = "Florian Roth (Nextron Systems) @Cyber0ps"
 		reference = "https://securelist.com/blog/research/71876/new-activity-of-the-blue-termite-apt/"
 		date = "2015-08-20"
 		modified = "2023-01-27"
@@ -84,7 +84,7 @@ rule Emdivi_Gen2 {
 rule MAL_Emdivi_Gen3 {
    meta:
       description = "Detects Emdivi Malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist.com/blog/research/71876/new-activity-of-the-blue-termite-apt/"
       date = "2015-08-20"
       modified = "2023-01-06"
@@ -112,7 +112,7 @@ rule MAL_Emdivi_Gen3 {
 rule Emdivi_Gen4 {
 	meta:
 		description = "Detects Emdivi Malware"
-		author = "Florian Roth @Cyber0ps"
+		author = "Florian Roth (Nextron Systems) @Cyber0ps"
 		reference = "https://securelist.com/blog/research/71876/new-activity-of-the-blue-termite-apt/"
 		date = "2015-08-20"
 		super_rule = 1

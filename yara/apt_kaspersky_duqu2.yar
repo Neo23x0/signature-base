@@ -60,7 +60,7 @@ rule Duqu2_Generic1 {
 	meta:
 		description = "Kaspersky APT Report - Duqu2 Sample - Generic Rule"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://goo.gl/7yKyOj"
 		date = "2015-06-10"
 		super_rule = 1
@@ -90,7 +90,7 @@ rule APT_Kaspersky_Duqu2_procexp {
 	meta:
 		description = "Kaspersky APT Report - Duqu2 Sample - Malicious MSI"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://goo.gl/7yKyOj"
 		date = "2015-06-10"
 		hash1 = "2422835716066b6bcecb045ddd4f1fbc9486667a"
@@ -113,7 +113,7 @@ rule APT_Kaspersky_Duqu2_SamsungPrint {
 	meta:
 		description = "Kaspersky APT Report - Duqu2 Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://goo.gl/7yKyOj"
 		date = "2015-06-10"
 		hash = "ce39f41eb4506805efca7993d3b0b506ab6776ca"
@@ -132,7 +132,7 @@ rule APT_Kaspersky_Duqu2_msi3_32 {
 	meta:
 		description = "Kaspersky APT Report - Duqu2 Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://goo.gl/7yKyOj"
 		date = "2015-06-10"
 		hash = "53d9ef9e0267f10cc10f78331a9e491b3211046b"

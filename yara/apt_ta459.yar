@@ -13,7 +13,7 @@ rule TA459_Malware_May17_1 {
    meta:
       description = "Detects TA459 related malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/RLf9qU"
       date = "2017-05-31"
       hash1 = "5fd61793d498a395861fa263e4438183a3c4e6f1e4f098ac6e97c9d0911327bf"
@@ -28,7 +28,7 @@ rule TA459_Malware_May17_2 {
    meta:
       description = "Detects TA459 related malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/RLf9qU"
       date = "2017-05-31"
       hash1 = "4601133e94c4bc74916a9d96a5bc27cc3125cdc0be7225b2c7d4047f8506b3aa"

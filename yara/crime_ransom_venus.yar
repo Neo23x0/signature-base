@@ -3,7 +3,7 @@ import "pe"
 rule MAL_RANSOM_Venus_Nov22_1 {
    meta:
       description = "Detects Venus Ransomware samples"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/dyngnosis/status/1592588860168421376"
       date = "2022-11-16"
       score = 85

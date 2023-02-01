@@ -9,7 +9,7 @@ rule Nanocore_RAT_Gen_1 {
    meta:
       description = "Detetcs the Nanocore RAT and similar malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.sentinelone.com/blogs/teaching-an-old-rat-new-tricks/"
       date = "2016-04-22"
       score = 70
@@ -28,7 +28,7 @@ rule Nanocore_RAT_Gen_2 {
    meta:
       description = "Detetcs the Nanocore RAT"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       score = 100
       reference = "https://www.sentinelone.com/blogs/teaching-an-old-rat-new-tricks/"
       date = "2016-04-22"
@@ -45,7 +45,7 @@ rule Nanocore_RAT_Sample_1 {
    meta:
       description = "Detetcs a certain Nanocore RAT sample"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       score = 75
       reference = "https://www.sentinelone.com/blogs/teaching-an-old-rat-new-tricks/"
       date = "2016-04-22"
@@ -62,7 +62,7 @@ rule Nanocore_RAT_Sample_2 {
    meta:
       description = "Detetcs a certain Nanocore RAT sample"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       score = 75
       reference = "https://www.sentinelone.com/blogs/teaching-an-old-rat-new-tricks/"
       date = "2016-04-22"
@@ -89,7 +89,7 @@ rule Nanocore_RAT_Feb18_1 {
    meta:
       description = "Detects Nanocore RAT"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research - T2T"
       date = "2018-02-19"
       hash1 = "aa486173e9d594729dbb5626748ce10a75ee966481b68c1b4f6323c827d9658c"
@@ -113,7 +113,7 @@ rule Nanocore_RAT_Feb18_2 {
    meta:
       description = "Detects Nanocore RAT"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research - T2T"
       date = "2018-02-19"
       hash1 = "377ef8febfd8df1a57a7966043ff0c7b8f3973c2cf666136e6c04080bbf9881a"

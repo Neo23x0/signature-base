@@ -11,7 +11,7 @@ rule StuxNet_Malware_1 {
 	meta:
 		description = "Stuxnet Sample - file malware.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Internal Research"
 		date = "2016-07-09"
 		hash1 = "9c891edb5da763398969b6aaa86a5d46971bd28a455b20c2067cb512c9f9a0f8"
@@ -43,7 +43,7 @@ rule Stuxnet_Malware_2 {
 	meta:
 		description = "Stuxnet Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Internal Research"
 		date = "2016-07-09"
 		hash1 = "63e6b8136058d7a06dfff4034b4ab17a261cdf398e63868a601f77ddd1b32802"
@@ -58,7 +58,7 @@ rule StuxNet_dll {
 	meta:
 		description = "Stuxnet Sample - file dll.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Internal Research"
 		date = "2016-07-09"
 		hash1 = "9e392277f62206098cf794ddebafd2817483cfd57ec03c2e05e7c3c81e72f562"
@@ -72,7 +72,7 @@ rule Stuxnet_Shortcut_to {
 	meta:
 		description = "Stuxnet Sample - file Copy of Shortcut to.lnk"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Internal Research"
 		date = "2016-07-09"
 		hash1 = "801e3b6d84862163a735502f93b9663be53ccbdd7f12b0707336fecba3a829a2"
@@ -86,7 +86,7 @@ rule Stuxnet_Malware_3 {
 	meta:
 		description = "Stuxnet Sample - file ~WTR4141.tmp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Internal Research"
 		date = "2016-07-09"
 		hash1 = "6bcf88251c876ef00b2f32cf97456a3e306c2a263d487b0a50216c6e3cc07c6a"
@@ -108,7 +108,7 @@ rule Stuxnet_Malware_4 {
 	meta:
 		description = "Stuxnet Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Internal Research"
 		date = "2016-07-09"
 		hash1 = "0d8c2bcb575378f6a88d17b5f6ce70e794a264cdc8556c8e812f0b5f9c709198"
@@ -125,7 +125,7 @@ rule Stuxnet_maindll_decrypted_unpacked {
 	meta:
 		description = "Stuxnet Sample - file maindll.decrypted.unpacked.dll_"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Internal Research"
 		date = "2016-07-09"
 		hash1 = "4c3d7b38339d7b8adf73eaf85f0eb9fab4420585c6ab6950ebd360428af11712"
@@ -146,7 +146,7 @@ rule Stuxnet_s7hkimdb {
 	meta:
 		description = "Stuxnet Sample - file s7hkimdb.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Internal Research"
 		date = "2016-07-09"
 		hash1 = "4071ec265a44d1f0d42ff92b2fa0b30aafa7f6bb2160ed1d0d5372d70ac654bd"

@@ -2,7 +2,7 @@
 rule APT_ArtraDownloader2_Aug19_1 {
    meta:
       description = "Detects ArtraDownloader malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://unit42.paloaltonetworks.com/multiple-artradownloader-variants-used-by-bitter-to-target-pakistan/"
       date = "2019-08-27"
       hash1 = "f0ef4242cc6b8fa3728b61d2ce86ea934bd59f550de9167afbca0b0aaa3b2c22"

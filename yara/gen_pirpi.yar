@@ -11,7 +11,7 @@ rule Pirpi_1609_A {
 	meta:
 		description = "Detects Pirpi Backdoor - and other malware (generic rule)"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://goo.gl/igxLyF"
 		date = "2016-09-08"
 		hash1 = "2a5a0bc350e774bd784fc25090518626b65a3ce10c7401f44a1616ea2ae32f4c"
@@ -45,7 +45,7 @@ rule Pirpi_1609_B {
 	meta:
 		description = "Detects Pirpi Backdoor"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://goo.gl/igxLyF"
 		date = "2016-09-08"
 		hash1 = "498b98c02e19f4b03dc6a3a8b6ff8761ef2c0fedda846ced4b6f1c87b52468e7"

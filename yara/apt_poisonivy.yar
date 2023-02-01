@@ -3,7 +3,7 @@ rule PoisonIvy_Sample_APT {
 	meta:
 		description = "Detects a PoisonIvy APT malware group"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		score = 70
 		reference = "VT Analysis"
 		date = "2015-06-03"
@@ -24,7 +24,7 @@ rule PoisonIvy_Sample_APT_2 {
 	meta:
 		description = "Detects a PoisonIvy Malware"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		score = 70
 		reference = "VT Analysis"
 		date = "2015-06-03"
@@ -59,7 +59,7 @@ rule PoisonIvy_Sample_APT_3 {
 	meta:
 		description = "Detects a PoisonIvy Malware"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		score = 70
 		reference = "VT Analysis"
 		date = "2015-06-03"
@@ -77,7 +77,7 @@ rule PoisonIvy_Sample_APT_4 {
 	meta:
 		description = "Detects a PoisonIvy Sample APT"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		score = 70
 		reference = "VT Analysis"
 		date = "2015-06-03"
@@ -100,7 +100,7 @@ rule PoisonIvy_Sample_5 {
 	meta:
 		description = "Detects PoisonIvy RAT sample set"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		score = 70
 		reference = "VT Analysis"
 		date = "2015-06-03"
@@ -122,7 +122,7 @@ rule PoisonIvy_Sample_6 {
 	meta:
 		description = "Detects PoisonIvy RAT sample set"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		score = 70
 		reference = "VT Analysis"
 		date = "2015-06-03"
@@ -161,7 +161,7 @@ rule PoisonIvy_Sample_7 {
 	meta:
 		description = "Detects PoisonIvy RAT sample set"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		score = 70
 		reference = "VT Analysis"
 		date = "2015-06-03"
@@ -189,7 +189,7 @@ rule PoisonIvy_Sample_7 {
 rule PoisonIvy_RAT_ssMUIDLL {
 	meta:
 		description = "Detects PoisonIvy RAT DLL mentioned in Palo Alto Blog in April 2016"
-		author = "Florian Roth (with the help of yarGen and Binarly)"
+		author = "Florian Roth (Nextron Systems) (with the help of yarGen and Binarly)"
 		reference = "http://goo.gl/WiwtYT"
 		date = "2016-04-22"
 		hash1 = "7a424ad3f3106b87e8e82c7125834d7d8af8730a2a97485a639928f66d5f6bf4"

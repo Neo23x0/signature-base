@@ -9,7 +9,7 @@ rule ROKRAT_Malware {
    meta:
       description = "Detects ROKRAT Malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "http://blog.talosintelligence.com/2017/04/introducing-rokrat.html"
       date = "2017-04-03"
       modified = "2021-09-14"
@@ -48,7 +48,7 @@ rule ROKRAT_Dropper_Nov17 {
    meta:
       description = "Detects dropper for ROKRAT malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "http://blog.talosintelligence.com/2017/11/ROKRAT-Reloaded.html"
       date = "2017-11-28"
       hash1 = "eb6d25e08b2b32a736b57f8df22db6d03dc82f16da554f4e8bb67120eacb1d14"
@@ -61,7 +61,7 @@ rule ROKRAT_Dropper_Nov17 {
 rule Freeenki_Infostealer_Nov17 {
    meta:
       description = "Detects Freenki infostealer malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "http://blog.talosintelligence.com/2017/11/ROKRAT-Reloaded.html"
       date = "2017-11-28"
       modified = "2023-01-06"
@@ -92,7 +92,7 @@ rule Freeenki_Infostealer_Nov17_Export_Sig_Testing {
    meta:
       description = "Detects Freenki infostealer malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "http://blog.talosintelligence.com/2017/11/ROKRAT-Reloaded.html"
       date = "2017-11-28"
       hash1 = "99c1b4887d96cb94f32b280c1039b3a7e39ad996859ffa6dd011cf3cca4f1ba5"
@@ -107,7 +107,7 @@ rule ROKRAT_Nov17_1 {
    meta:
       description = "Detects ROKRAT malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-11-28"
    strings:

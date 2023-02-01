@@ -14,7 +14,7 @@ import "pe"
 rule Monsoon_APT_Malware_1 {
    meta:
       description = "Detects malware from Monsoon APT"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "http://blog.fortinet.com/2017/04/05/in-depth-look-at-new-variant-of-monsoon-apt-backdoor-part-2"
       date = "2017-09-08"
       modified = "2023-01-06"
@@ -37,7 +37,7 @@ rule Monsoon_APT_Malware_2 {
    meta:
       description = "Detects malware from Monsoon APT"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "http://blog.fortinet.com/2017/04/05/in-depth-look-at-new-variant-of-monsoon-apt-backdoor-part-2"
       date = "2017-09-08"
       hash1 = "17c3d0fe08e1184c9737144fa065f4530def30d6591e5414a36463609f9aa53a"

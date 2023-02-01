@@ -12,7 +12,7 @@ rule Kriskynote_Mar17_1 {
    meta:
       description = "Detects Kriskynote Malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-03-03"
       hash1 = "a19c4b615aa54207604b181873e614d84126b639fee2cce3ca9d5bd863f6f577"
@@ -32,7 +32,7 @@ rule Kriskynote_Mar17_2 {
    meta:
       description = "Detects Kriskynote Malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-03-03"
       hash1 = "cb9a2f77868b28d98e4f9c1b27b7242fec2f2abbc91bfc21fe0573e472c5dfcb"
@@ -47,7 +47,7 @@ rule Kriskynote_Mar17_3 {
    meta:
       description = "Detects Kriskynote Malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-03-03"
       hash1 = "fc838e07834994f25b3b271611e1014b3593278f0703a4a985fb4234936df492"

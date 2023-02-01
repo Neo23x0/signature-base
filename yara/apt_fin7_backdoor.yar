@@ -13,7 +13,7 @@ rule FIN7_Dropper_Aug17 {
    meta:
       description = "Detects Word Dropper from Proofpoint FIN7 Report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.proofpoint.com/us/threat-insight/post/fin7carbanak-threat-actor-unleashes-bateleur-jscript-backdoor"
       date = "2017-08-04"
       hash1 = "c91642c0a5a8781fff9fd400bff85b6715c96d8e17e2d2390c1771c683c7ead9"
@@ -33,7 +33,7 @@ rule FIN7_Dropper_Aug17 {
 rule FIN7_Backdoor_Aug17 {
    meta:
       description = "Detects Word Dropper from Proofpoint FIN7 Report"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.proofpoint.com/us/threat-insight/post/fin7carbanak-threat-actor-unleashes-bateleur-jscript-backdoor"
       date = "2017-08-04"
    strings:

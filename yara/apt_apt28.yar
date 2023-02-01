@@ -11,7 +11,7 @@ rule APT28_CHOPSTICK {
 	meta:
 		description = "Detects a malware that behaves like CHOPSTICK mentioned in APT28 report"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://goo.gl/v3ebal"
 		date = "2015-06-02"
 		hash = "f4db2e0881f83f6a2387ecf446fcb4a4c9f99808"
@@ -33,7 +33,7 @@ rule APT28_CHOPSTICK {
 rule APT28_SourFace_Malware1 {
 	meta:
 		description = "Detects Malware from APT28 incident - SOURFACE is a downloader that obtains a second-stage backdoor from a C2 server."
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html"
 		date = "2015-06-01"
 		hash1 = "e2450dffa675c61aa43077b25b12851a910eeeb6"
@@ -50,7 +50,7 @@ rule APT28_SourFace_Malware1 {
 rule APT28_SourFace_Malware2 {
 	meta:
 		description = "Detects Malware from APT28 incident - SOURFACE is a downloader that obtains a second-stage backdoor from a C2 server."
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html"
 		date = "2015-06-01"
 		super_rule = 1
@@ -71,7 +71,7 @@ rule APT28_SourFace_Malware2 {
 rule APT28_SourFace_Malware3 {
 	meta:
 		description = "Detects Malware from APT28 incident - SOURFACE is a downloader that obtains a second-stage backdoor from a C2 server."
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www.fireeye.com/blog/threat-research/2014/10/apt28-a-window-into-russias-cyber-espionage-operations.html"
 		date = "2015-06-01"
 		super_rule = 1

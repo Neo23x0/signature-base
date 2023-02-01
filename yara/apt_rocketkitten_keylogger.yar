@@ -9,7 +9,7 @@ rule RocketKitten_Keylogger {
 	meta:
 		description = "Detects Keylogger used in Rocket Kitten APT"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://goo.gl/SjQhlp"
 		date = "2015-09-01"
 		super_rule = 1

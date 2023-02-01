@@ -12,7 +12,7 @@ rule Zeus_Panda {
    meta:
       description = "Detects ZEUS Panda Malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://cyberwtf.files.wordpress.com/2017/07/panda-whitepaper.pdf"
       date = "2017-08-04"
       hash1 = "bd956b2e81731874995b9b92e20f75dbf67ac5f12f9daa194525e1b673c7f83c"

@@ -2,7 +2,7 @@
 rule APT_MAL_DNS_Hijacking_Campaign_AA19_024A {
    meta:
       description = "Detects malware used in DNS Hijackign campaign"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.us-cert.gov/ncas/alerts/AA19-024A"
       date = "2019-01-25"
       hash1 = "2010f38ef300be4349e7bc287e720b1ecec678cacbf0ea0556bcf765f6e073ec"

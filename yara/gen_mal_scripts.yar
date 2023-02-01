@@ -5,7 +5,7 @@ rule PS_AMSI_Bypass : FILE {
    meta:
       description = "Detects PowerShell AMSI Bypass"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://gist.github.com/mattifestation/46d6a2ebb4a1f4f0e7229503dc012ef1"
       date = "2017-07-19"
       score = 65
@@ -19,7 +19,7 @@ rule JS_Suspicious_Obfuscation_Dropbox {
    meta:
       description = "Detects PowerShell AMSI Bypass"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/ItsReallyNick/status/887705105239343104"
       date = "2017-07-19"
       score = 70
@@ -34,7 +34,7 @@ rule JS_Suspicious_MSHTA_Bypass {
    meta:
       description = "Detects MSHTA Bypass"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/ItsReallyNick/status/887705105239343104"
       date = "2017-07-19"
       score = 70
@@ -50,7 +50,7 @@ rule JavaScript_Run_Suspicious {
    meta:
       description = "Detects a suspicious Javascript Run command"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/craiu/status/900314063560998912"
       score = 60
       date = "2017-08-23"
@@ -74,7 +74,7 @@ rule Certutil_Decode_OR_Download {
    meta:
       description = "Certutil Decode"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       score = 40
       date = "2017-08-29"
@@ -93,7 +93,7 @@ rule Suspicious_JS_script_content {
    meta:
       description = "Detects suspicious statements in JavaScript files"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Research on Leviathan https://goo.gl/MZ7dRg"
       date = "2017-12-02"
       score = 70
@@ -111,7 +111,7 @@ rule Universal_Exploit_Strings {
    meta:
       description = "Detects a group of strings often used in exploit codes"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "not set"
       date = "2017-12-02"
       score = 50
@@ -129,7 +129,7 @@ rule VBS_Obfuscated_Mal_Feb18_1  {
    meta:
       description = "Detects malicious obfuscated VBS observed in February 2018"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/zPsn83"
       date = "2018-02-12"
       hash1 = "06960cb721609fe5a857fe9ca3696a84baba88d06c20920370ddba1b0952a8ab"

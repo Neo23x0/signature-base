@@ -2,7 +2,7 @@
 rule APT_Sandworm_Keywords_May20_1 {
    meta:
       description = "Detects commands used by Sandworm group to exploit critical vulernability CVE-2019-10149 in Exim"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://media.defense.gov/2020/May/28/2002306626/-1/-1/0/CSA%20Sandworm%20Actors%20Exploiting%20Vulnerability%20in%20Exim%20Transfer%20Agent%2020200528.pdf"
       date = "2020-05-28"
    strings:
@@ -16,7 +16,7 @@ rule APT_Sandworm_Keywords_May20_1 {
 rule APT_Sandworm_SSH_Key_May20_1 {
    meta:
       description = "Detects SSH key used by Sandworm on exploited machines"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://media.defense.gov/2020/May/28/2002306626/-1/-1/0/CSA%20Sandworm%20Actors%20Exploiting%20Vulnerability%20in%20Exim%20Transfer%20Agent%2020200528.pdf"
       date = "2020-05-28"
       hash1 = "dc074464e50502459038ac127b50b8c68ed52817a61c2f97f0add33447c8f730"
@@ -31,7 +31,7 @@ rule APT_Sandworm_SSH_Key_May20_1 {
 rule APT_Sandworm_SSHD_Config_Modification_May20_1 {
    meta:
       description = "Detects ssh config entry inserted by Sandworm on compromised machines"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://media.defense.gov/2020/May/28/2002306626/-1/-1/0/CSA%20Sandworm%20Actors%20Exploiting%20Vulnerability%20in%20Exim%20Transfer%20Agent%2020200528.pdf"
       date = "2020-05-28"
       hash1 = "dc074464e50502459038ac127b50b8c68ed52817a61c2f97f0add33447c8f730"
@@ -48,7 +48,7 @@ rule APT_Sandworm_SSHD_Config_Modification_May20_1 {
 rule APT_Sandworm_InitFile_May20_1 {
    meta:
       description = "Detects mysql init script used by Sandworm on compromised machines"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://media.defense.gov/2020/May/28/2002306626/-1/-1/0/CSA%20Sandworm%20Actors%20Exploiting%20Vulnerability%20in%20Exim%20Transfer%20Agent%2020200528.pdf"
       date = "2020-05-28"
       hash1 = "dc074464e50502459038ac127b50b8c68ed52817a61c2f97f0add33447c8f730"
@@ -64,7 +64,7 @@ rule APT_Sandworm_InitFile_May20_1 {
 rule APT_Sandworm_User_May20_1 {
    meta:
       description = "Detects user added by Sandworm on compromised machines"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://media.defense.gov/2020/May/28/2002306626/-1/-1/0/CSA%20Sandworm%20Actors%20Exploiting%20Vulnerability%20in%20Exim%20Transfer%20Agent%2020200528.pdf"
       date = "2020-05-28"
       hash1 = "dc074464e50502459038ac127b50b8c68ed52817a61c2f97f0add33447c8f730"
@@ -81,7 +81,7 @@ rule APT_Sandworm_User_May20_1 {
 rule APT_WEBSHELL_PHP_Sandworm_May20_1 {
    meta:
       description = "Detects GIF header PHP webshell used by Sandworm on compromised machines"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://media.defense.gov/2020/May/28/2002306626/-1/-1/0/CSA%20Sandworm%20Actors%20Exploiting%20Vulnerability%20in%20Exim%20Transfer%20Agent%2020200528.pdf"
       date = "2020-05-28"
       hash1 = "dc074464e50502459038ac127b50b8c68ed52817a61c2f97f0add33447c8f730"
@@ -97,7 +97,7 @@ rule APT_WEBSHELL_PHP_Sandworm_May20_1 {
 rule APT_SH_Sandworm_Shell_Script_May20_1 {
    meta:
       description = "Detects shell script used by Sandworm in attack against Exim mail server"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://media.defense.gov/2020/May/28/2002306626/-1/-1/0/CSA%20Sandworm%20Actors%20Exploiting%20Vulnerability%20in%20Exim%20Transfer%20Agent%2020200528.pdf"
       date = "2020-05-28"
       hash1 = "dc074464e50502459038ac127b50b8c68ed52817a61c2f97f0add33447c8f730"
@@ -124,7 +124,7 @@ rule APT_SH_Sandworm_Shell_Script_May20_1 {
 rule APT_RU_Sandworm_PY_May20_1 {
    meta:
       description = "Detects Sandworm Python loader"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/billyleonard/status/1266054881225236482"
       date = "2020-05-28"
       hash1 = "c025008463fdbf44b2f845f2d82702805d931771aea4b506573b83c8f58bccca"
@@ -142,7 +142,7 @@ rule APT_RU_Sandworm_PY_May20_1 {
 rule APT_RU_Sandworm_PY_May20_2 {
    meta:
       description = "Detects Sandworm Python loader"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/billyleonard/status/1266054881225236482"
       date = "2020-05-28"
       hash1 = "abfa83cf54db8fa548942acd845b4f34acc94c46d4e1fb5ce7e97cc0c6596676"

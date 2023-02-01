@@ -2,7 +2,7 @@
 rule LOG_EXPL_ADSelfService_CVE_2021_40539_ADSLOG_Sep21 : LOG {
    meta:
       description = "Detects suspicious log lines produeced during the exploitation of ADSelfService vulnerability CVE-2021-40539"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://us-cert.cisa.gov/ncas/alerts/aa21-259a"
       date = "2021-09-20"
       score = 70
@@ -15,7 +15,7 @@ rule LOG_EXPL_ADSelfService_CVE_2021_40539_ADSLOG_Sep21 : LOG {
 rule LOG_EXPL_ADSelfService_CVE_2021_40539_WebLog_Sep21_1 : LOG {
    meta:
       description = "Detects suspicious log lines produeced during the exploitation of ADSelfService vulnerability CVE-2021-40539"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://us-cert.cisa.gov/ncas/alerts/aa21-259a"
       date = "2021-09-20"
       score = 60

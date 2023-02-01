@@ -13,7 +13,7 @@ rule Greenbug_Malware_1 {
    meta:
       description = "Detects Malware from Greenbug Incident"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/urp4CD"
       date = "2017-01-25"
       hash1 = "dab460a0b73e79299fbff2fa301420c1d97a36da7426acc0e903c70495db2b76"
@@ -28,7 +28,7 @@ rule Greenbug_Malware_2 {
    meta:
       description = "Detects Backdoor from Greenbug Incident"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/urp4CD"
       date = "2017-01-25"
       hash1 = "6b28a43eda5b6f828a65574e3f08a6d00e0acf84cbb94aac5cec5cd448a4649d"
@@ -55,7 +55,7 @@ rule Greenbug_Malware_3 {
    meta:
       description = "Detects Backdoor from Greenbug Incident"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/urp4CD"
       date = "2017-01-25"
       super_rule = 1
@@ -73,7 +73,7 @@ rule Greenbug_Malware_4 {
    meta:
       description = "Detects ISMDoor Backdoor"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/urp4CD"
       date = "2017-01-25"
       super_rule = 1
@@ -100,7 +100,7 @@ rule Greenbug_Malware_5 {
    meta:
       description = "Auto-generated rule"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/urp4CD"
       date = "2017-01-25"
       modified = "2023-01-27"
@@ -137,7 +137,7 @@ rule Greenbug_Malware_Nov17_1 {
    meta:
       description = "Detects Greenbug Malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "http://www.clearskysec.com/greenbug/"
       date = "2017-11-26"
       hash1 = "6e55e161dc9ace3076640a36ef4a8819bb85c6d5e88d8e852088478f79cf3b7c"

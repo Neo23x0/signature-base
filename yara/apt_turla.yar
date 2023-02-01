@@ -11,7 +11,7 @@ rule Turla_APT_srsvc {
 	meta:
 		description = "Detects Turla malware (based on sample used in the RUAG APT case)"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		family = "Turla"
 		reference = "https://www.govcert.admin.ch/blog/22/technical-report-about-the-ruag-espionage-case"
 		date = "2016-06-09"
@@ -33,7 +33,7 @@ rule Turla_APT_Malware_Gen1 {
 	meta:
 		description = "Detects Turla malware (based on sample used in the RUAG APT case)"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		family = "Turla"
 		reference = "https://www.govcert.admin.ch/blog/22/technical-report-about-the-ruag-espionage-case"
 		date = "2016-06-09"
@@ -71,7 +71,7 @@ rule Turla_APT_Malware_Gen1 {
 rule RUAG_APT_Malware_Gen2 {
    meta:
       description = "Detects malware used in the RUAG APT case"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.govcert.admin.ch/blog/22/technical-report-about-the-ruag-espionage-case"
       date = "2016-06-09"
       modified = "2023-01-06"
@@ -108,7 +108,7 @@ rule Turla_APT_Malware_Gen3 {
 	meta:
 		description = "Detects Turla malware (based on sample used in the RUAG APT case)"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		family = "Turla"
 		reference = "https://www.govcert.admin.ch/blog/22/technical-report-about-the-ruag-espionage-case"
 		date = "2016-06-09"
@@ -149,7 +149,7 @@ rule Turla_Mal_Script_Jan18_1 {
    meta:
       description = "Detects Turla malicious script"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://ghostbin.com/paste/jsph7"
       date = "2018-01-19"
       hash1 = "180b920e9cea712d124ff41cd1060683a14a79285d960e17f0f49b969f15bfcc"
@@ -189,7 +189,7 @@ rule Turla_KazuarRAT {
 rule MAL_Turla_Agent_BTZ {
    meta:
       description = "Detects Turla Agent.BTZ"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.gdatasoftware.com/blog/2014/11/23937-the-uroburos-case-new-sophisticated-rat-identified"
       date = "2018-04-12"
       modified = "2023-01-06"
@@ -222,7 +222,7 @@ rule MAL_Turla_Sample_May18_1 {
    meta:
       description = "Detects Turla samples"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/omri9741/status/991942007701598208"
       date = "2018-05-03"
       hash1 = "4c49c9d601ebf16534d24d2dd1cab53fde6e03902758ef6cff86be740b720038"
@@ -244,7 +244,7 @@ rule MAL_Turla_Sample_May18_1 {
 rule APT_MAL_LNX_Turla_Apr20_1 {
    meta:
       description = "Detects Turla Linux malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/Int2e_/status/1246115636331319309"
       date = "2020-04-05"
       hash1 = "67d9556c695ef6c51abf6fbab17acb3466e3149cf4d20cb64d6d34dc969b6502"

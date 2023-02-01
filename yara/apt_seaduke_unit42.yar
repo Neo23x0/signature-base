@@ -11,7 +11,7 @@ rule SeaDuke_Sample {
 	meta:
 		description = "SeaDuke Malware"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://goo.gl/MJ0c2M"
 		date = "2015-07-14"
 		score = 70

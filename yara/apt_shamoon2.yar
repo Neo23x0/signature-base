@@ -11,7 +11,7 @@ rule Shamoon2_Wiper {
    meta:
       description = "Detects Shamoon 2.0 Wiper Component"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/jKIfGB"
       date = "2016-12-01"
       score = 70
@@ -29,7 +29,7 @@ rule Shamoon2_Wiper {
 rule Shamoon2_ComComp {
    meta:
       description = "Detects Shamoon 2.0 Communication Components"
-      author = "Florian Roth (with Binar.ly)"
+      author = "Florian Roth (Nextron Systems) (with Binar.ly)"
       reference = "https://goo.gl/jKIfGB"
       date = "2016-12-01"
       score = 70
@@ -48,7 +48,7 @@ rule Shamoon2_ComComp {
 rule EldoS_RawDisk {
    meta:
       description = "EldoS Rawdisk Device Driver (Commercial raw disk access driver - used in Operation Shamoon 2.0)"
-      author = "Florian Roth (with Binar.ly)"
+      author = "Florian Roth (Nextron Systems) (with Binar.ly)"
       reference = "https://goo.gl/jKIfGB"
       date = "2016-12-01"
       modified = "2023-01-27"

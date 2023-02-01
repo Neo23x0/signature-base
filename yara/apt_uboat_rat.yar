@@ -10,7 +10,7 @@ rule UBoatRAT {
    meta:
       description = "Detects UBoat RAT Samples"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://researchcenter.paloaltonetworks.com/2017/11/unit42-uboatrat-navigates-east-asia/"
       date = "2017-11-29"
       hash1 = "04873dbd63279228a0a4bb1184933b64adb880e874bd3d14078161d06e232c9b"
@@ -52,7 +52,7 @@ rule UBoatRAT_Dropper {
    meta:
       description = "Detects UBoatRAT Dropper"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://researchcenter.paloaltonetworks.com/2017/11/unit42-uboatrat-navigates-east-asia/"
       date = "2017-11-29"
       hash1 = "f4c659238ffab95e87894d2c556f887774dce2431e8cb87f881df4e4d26253a3"

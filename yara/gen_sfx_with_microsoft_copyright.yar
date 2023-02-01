@@ -1,7 +1,7 @@
 rule SUSP_Microsoft_7z_SFX_Combo {
    meta:
       description = "Detects a suspicious file that has a Microsoft copyright and is a 7z SFX"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2018-09-16"
       hash1 = "cce63f209ee4efb4f0419fb4bbb32326392b5ef85cfba80b5b42b861637f1ff1"
@@ -26,7 +26,7 @@ rule SUSP_Microsoft_7z_SFX_Combo {
 rule SUSP_Microsoft_RAR_SFX_Combo {
    meta:
       description = "Detects a suspicious file that has a Microsoft copyright and is a RAR SFX"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2018-09-16"
    strings:

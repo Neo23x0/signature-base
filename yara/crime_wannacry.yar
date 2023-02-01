@@ -12,7 +12,7 @@
 rule WannaCry_Ransomware {
    meta:
       description = "Detects WannaCry Ransomware"
-      author = "Florian Roth (with the help of binar.ly)"
+      author = "Florian Roth (Nextron Systems) (with the help of binar.ly)"
       reference = "https://goo.gl/HG2j5T"
       date = "2017-05-12"
       hash1 = "ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5babe8e080e41aa"
@@ -47,7 +47,7 @@ rule WannaCry_Ransomware {
 rule WannaCry_Ransomware_Gen {
    meta:
       description = "Detects WannaCry Ransomware"
-      author = "Florian Roth (based on rule by US CERT)"
+      author = "Florian Roth (Nextron Systems) (based on rule by US CERT)"
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-132A"
       date = "2017-05-12"
       hash1 = "9fe91d542952e145f2244572f314632d93eb1e8657621087b2ca7f7df2b0cb05"
@@ -67,7 +67,7 @@ rule WannCry_m_vbs {
    meta:
       description = "Detects WannaCry Ransomware VBS"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/HG2j5T"
       date = "2017-05-12"
       hash1 = "51432d3196d9b78bdc9867a77d601caffd4adaa66dcac944a5ba0b3112bbea3b"
@@ -83,7 +83,7 @@ rule WannCry_BAT {
    meta:
       description = "Detects WannaCry Ransomware BATCH File"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/HG2j5T"
       date = "2017-05-12"
       hash1 = "f01b7f52e3cb64f01ddc248eb6ae871775ef7cb4297eba5d230d0345af9a5077"
@@ -100,7 +100,7 @@ rule WannaCry_RansomNote {
    meta:
       description = "Detects WannaCry Ransomware Note"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/HG2j5T"
       date = "2017-05-12"
       hash1 = "4a25d98c121bb3bd5b54e0b6a5348f7b09966bffeec30776e5a731813f05d49e"

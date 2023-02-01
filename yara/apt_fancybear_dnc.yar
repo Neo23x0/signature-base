@@ -11,7 +11,7 @@ rule COZY_FANCY_BEAR_Hunt {
 	meta:
 		description = "Detects Cozy Bear / Fancy Bear C2 Server IPs"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www.crowdstrike.com/blog/bears-midst-intrusion-democratic-national-committee/"
 		date = "2016-06-14"
 	strings:
@@ -30,7 +30,7 @@ rule COZY_FANCY_BEAR_pagemgr_Hunt {
 	meta:
 		description = "Detects a pagemgr.exe as mentioned in the CrowdStrike report"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www.crowdstrike.com/blog/bears-midst-intrusion-democratic-national-committee/"
 		date = "2016-06-14"
 	strings:

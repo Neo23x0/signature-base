@@ -4,7 +4,7 @@ import "pe"
 rule SUSP_XORed_URL_in_EXE {
    meta:
       description = "Detects an XORed URL in an executable"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/stvemillertime/status/1237035794973560834"
       date = "2020-03-09"
       modified = "2022-09-16"

@@ -54,7 +54,7 @@ rule APT_APT28_Win_FreshFire : APT29 {
 rule APT_APT29_NOBELIUM_JS_EnvyScout_May21_1 {
    meta:
       description = "Detects EnvyScout deobfuscator code as used by NOBELIUM group"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/"
       date = "2021-05-29"
    strings:
@@ -66,7 +66,7 @@ rule APT_APT29_NOBELIUM_JS_EnvyScout_May21_1 {
 rule APT_APT29_NOBELIUM_JS_EnvyScout_May21_2 {
    meta:
       description = "Detects EnvyScout deobfuscator code as used by NOBELIUM group"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/"
       date = "2021-05-29"
    strings:
@@ -81,7 +81,7 @@ rule APT_APT29_NOBELIUM_JS_EnvyScout_May21_2 {
 rule APT_APT29_NOBELIUM_LNK_NV_Link_May21_2 {
    meta:
       description = "Detects NV Link as used by NOBELIUM group"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/"
       date = "2021-05-29"
    strings:
@@ -94,7 +94,7 @@ rule APT_APT29_NOBELIUM_LNK_NV_Link_May21_2 {
 rule APT_APT29_NOBELIUM_LNK_Samples_May21_1 {
    meta:
       description = "Detects link file characteristics as described in APT29 NOBELIUM report"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.microsoft.com/security/blog/2021/05/27/new-sophisticated-email-based-attack-from-nobelium/"
       date = "2021-05-27"
       score = 85
@@ -124,7 +124,7 @@ rule APT_APT29_NOBELIUM_LNK_Samples_May21_1 {
 rule APT_APT29_NOBELIUM_BoomBox_May21_1 {
    meta:
       description = "Detects BoomBox malware as described in APT29 NOBELIUM report"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.microsoft.com/security/blog/2021/05/27/new-sophisticated-email-based-attack-from-nobelium/"
       date = "2021-05-27"
       score = 85
@@ -138,7 +138,7 @@ rule APT_APT29_NOBELIUM_BoomBox_May21_1 {
 rule APT_APT29_NOBELIUM_BoomBox_PDF_Masq_May21_1 {
    meta:
       description = "Detects PDF documents as used by BoomBox as described in APT29 NOBELIUM report"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.microsoft.com/security/blog/2021/05/27/new-sophisticated-email-based-attack-from-nobelium/"
       date = "2021-05-27"
       score = 70
@@ -158,7 +158,7 @@ rule APT_APT29_NOBELIUM_BoomBox_PDF_Masq_May21_1 {
 rule APT_APT29_NOBELIUM_NativeZone_Loader_May21_1 {
    meta:
       description = "Detects NativeZone loader as described in APT29 NOBELIUM report"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.microsoft.com/security/blog/2021/05/27/new-sophisticated-email-based-attack-from-nobelium/"
       date = "2021-05-27"
       score = 85
@@ -179,7 +179,7 @@ rule APT_APT29_NOBELIUM_NativeZone_Loader_May21_1 {
 rule APT_APT29_NOBELIUM_BoomBox_May21_2 {
    meta:
       description = "Detects BoomBox malware used by APT29 / NOBELIUM"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/"
       date = "2021-05-29"
       hash1 = "0acb884f2f4cfa75b726cb8290b20328c8ddbcd49f95a1d761b7d131b95bafec"
@@ -208,7 +208,7 @@ rule APT_APT29_NOBELIUM_BoomBox_May21_2 {
 rule APT_APT29_NOBELIUM_Malware_May21_2 {
    meta:
       description = "Detects malware used by APT29 / NOBELIUM"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/"
       date = "2021-05-29"
       hash1 = "292e5b0a12fea4ff3fc02e1f98b7a370f88152ce71fe62670dd2f5edfaab2ff8"
@@ -225,7 +225,7 @@ rule APT_APT29_NOBELIUM_Malware_May21_2 {
 rule APT_APT29_NOBELIUM_Stageless_Loader_May21_2 {
    meta:
       description = "Detects stageless loader as used by APT29 / NOBELIUM"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/"
       date = "2021-05-29"
       hash1 = "a4f1f09a2b9bc87de90891da6c0fca28e2f88fd67034648060cef9862af9a3bf"
@@ -248,7 +248,7 @@ rule APT_APT29_NOBELIUM_Stageless_Loader_May21_2 {
 rule APT_APT29_NOBELIUM_Malware_May21_3 {
    meta:
       description = "Detects malware used by APT29 / NOBELIUM"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/"
       date = "2021-05-29"
       hash1 = "2a352380d61e89c89f03f4008044241a38751284995d000c73acf9cad38b989e"
@@ -271,7 +271,7 @@ rule APT_APT29_NOBELIUM_Malware_May21_3 {
 rule APT_APT29_NOBELIUM_Malware_May21_4 {
    meta:
       description = "Detects malware used by APT29 / NOBELIUM"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/"
       date = "2021-05-29"
       hash1 = "3b94cc71c325f9068105b9e7d5c9667b1de2bde85b7abc5b29ff649fd54715c4"

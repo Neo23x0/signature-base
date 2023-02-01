@@ -2,7 +2,7 @@
 rule APT_MAL_LNX_RedMenshen_BPFDoor_Controller_May22_1 {
    meta:
       description = "Detects unknown Linux implants (uploads from KR and MO)"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://doublepulsar.com/bpfdoor-an-active-chinese-global-surveillance-tool-54b078f1a896"
       date = "2022-05-05"
       score = 90
@@ -34,7 +34,7 @@ rule APT_MAL_LNX_RedMenshen_BPFDoor_Controller_May22_1 {
 rule APT_MAL_LNX_RedMenshen_BPFDoor_Controller_May22_2 {
    meta:
       description = "Detects BPFDoor implants used by Chinese actor Red Menshen"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://doublepulsar.com/bpfdoor-an-active-chinese-global-surveillance-tool-54b078f1a896"
       date = "2022-05-07"
       score = 85
@@ -57,7 +57,7 @@ rule APT_MAL_LNX_RedMenshen_BPFDoor_Controller_May22_2 {
 rule APT_MAL_LNX_RedMenshen_BPFDoor_Controller_May22_3 {
    meta:
       description = "Detects BPFDoor implants used by Chinese actor Red Menshen"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://doublepulsar.com/bpfdoor-an-active-chinese-global-surveillance-tool-54b078f1a896"
       date = "2022-05-08"
       score = 85
@@ -75,7 +75,7 @@ rule APT_MAL_LNX_RedMenshen_BPFDoor_Controller_May22_3 {
 rule APT_MAL_LNX_RedMenshen_BPFDoor_Controller_Generic_May22_1 {
    meta:
       description = "Detects BPFDoor malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://doublepulsar.com/bpfdoor-an-active-chinese-global-surveillance-tool-54b078f1a896"
       date = "2022-05-09"
       score = 90

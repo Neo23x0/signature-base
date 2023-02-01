@@ -14,7 +14,7 @@ rule MAL_Hogfish_Report_Related_Sample {
    meta:
       description = "Detects APT10 / Hogfish related samples"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.accenture.com/t20180423T055005Z__w__/se-en/_acnmedia/PDF-76/Accenture-Hogfish-Threat-Analysis.pdf"
       date = "2018-05-01"
       hash1 = "f9acc706d7bec10f88f9cfbbdf80df0d85331bd4c3c0188e4d002d6929fe4eac"
@@ -32,7 +32,7 @@ rule MAL_Hogfish_Report_Related_Sample {
 rule MAL_RedLeaves_Apr18_1 {
    meta:
       description = "Detects RedLeaves malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.accenture.com/t20180423T055005Z__w__/se-en/_acnmedia/PDF-76/Accenture-Hogfish-Threat-Analysis.pdf"
       date = "2018-05-01"
       hash1 = "f6449e255bc1a9d4a02391be35d0dd37def19b7e20cfcc274427a0b39cb21b7b"

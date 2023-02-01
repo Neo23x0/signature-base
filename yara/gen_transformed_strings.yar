@@ -11,7 +11,7 @@ rule Typical_Malware_String_Transforms {
 	meta:
 		description = "Detects typical strings in a reversed or otherwise modified form"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Internal Research"
 		date = "2016-07-31"
 		score = 60

@@ -11,7 +11,7 @@ rule FVEY_ShadowBrokers_Jan17_Screen_Strings {
    meta:
       description = "Detects strings derived from the ShadowBroker's leak of Windows tools/exploits"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://bit.no.com:43110/theshadowbrokers.bit/post/message7/"
       date = "2017-01-08"
    strings:

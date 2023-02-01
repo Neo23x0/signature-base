@@ -9,7 +9,7 @@ rule PHISH_02Dez2015_dropped_p0o6543f_1 {
 	meta:
 		description = "Phishing Wave - file p0o6543f.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://myonlinesecurity.co.uk/purchase-order-124658-gina-harrowell-clinimed-limited-word-doc-or-excel-xls-spreadsheet-malware/"
 		date = "2015-12-02"
 		hash = "db788d6d3a8ed1a6dc9626852587f475e7671e12fa9c9faa73b7277886f1e210"
@@ -31,7 +31,7 @@ rule PHISH_02Dez2015_dropped_p0o6543f_2 {
 	meta:
 		description = "Phishing Wave used MineExplorer Game by WangLei - file p0o6543f.exe.4"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://myonlinesecurity.co.uk/purchase-order-124658-gina-harrowell-clinimed-limited-word-doc-or-excel-xls-spreadsheet-malware/"
 		date = "2015-12-03"
 		hash1 = "d6b21ded749b57042eede07c3af1956a3c9f1faddd22d2f78e43003a11ae496f"
@@ -48,7 +48,7 @@ rule PHISH_02Dez2015_attach_P_ORD_C_10156_124658 {
 	meta:
 		description = "Phishing Wave - file P-ORD-C-10156-124658.xls"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://myonlinesecurity.co.uk/purchase-order-124658-gina-harrowell-clinimed-limited-word-doc-or-excel-xls-spreadsheet-malware/"
 		date = "2015-12-02"
 		hash1 = "bc252ede5302240c2fef8bc0291ad5a227906b4e70929a737792e935a5fee209"

@@ -2,7 +2,7 @@
 rule WEBSHELL_JSP_Nov21_1 {
    meta:
       description = "Detects JSP webshells"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.ic3.gov/Media/News/2021/211117-2.pdf"
       date = "2021-11-23"
       score = 70
@@ -18,7 +18,7 @@ rule WEBSHELL_JSP_Nov21_1 {
 rule EXPL_POC_SpringCore_0day_Indicators_Mar22_1 {
    meta:
       description = "Detects indicators found after SpringCore exploitation attempts and in the POC script"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/vxunderground/status/1509170582469943303"
       date = "2022-03-30"
       score = 70
@@ -34,7 +34,7 @@ rule EXPL_POC_SpringCore_0day_Indicators_Mar22_1 {
 rule EXPL_POC_SpringCore_0day_Webshell_Mar22_1 {
    meta:
       description = "Detects webshell found after SpringCore exploitation attempts POC script"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/vxunderground/status/1509170582469943303"
       date = "2022-03-30"
       score = 70

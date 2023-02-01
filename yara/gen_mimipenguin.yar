@@ -9,7 +9,7 @@ rule Mimipenguin_SH {
    meta:
       description = "Detects Mimipenguin Password Extractor - Linux"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/huntergregal/mimipenguin"
       date = "2017-04-01"
    strings:
@@ -34,7 +34,7 @@ rule mimipenguin_1 {
    meta:
       description = "Detects Mimipenguin hack tool"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/huntergregal/mimipenguin"
       date = "2017-07-08"
       hash1 = "9e8d13fe27c93c7571075abf84a839fd1d31d8f2e3e48b3f4c6c13f7afcf8cbd"
@@ -51,7 +51,7 @@ rule mimipenguin_2 {
    meta:
       description = "Detects Mimipenguin hack tool"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/huntergregal/mimipenguin"
       date = "2017-07-08"
       hash1 = "453bffa90d99a820e4235de95ec3f7cc750539e4023f98ffc8858f9b3c15d89a"

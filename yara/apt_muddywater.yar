@@ -11,7 +11,7 @@ rule MuddyWater_Mal_Doc_Feb18_1 {
    meta:
       description = "Detects malicious document used by MuddyWater"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research - TI2T"
       date = "2018-02-26"
       hash1 = "3d96811de7419a8c090a671d001a85f2b1875243e5b38e6f927d9877d0ff9b0c"
@@ -28,7 +28,7 @@ rule MuddyWater_Mal_Doc_Feb18_2 {
    meta:
       description = "Detects malicious document used by MuddyWater"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research - TI2T"
       date = "2018-02-26"
       hash1 = "3d96811de7419a8c090a671d001a85f2b1875243e5b38e6f927d9877d0ff9b0c"
@@ -47,7 +47,7 @@ rule MAL_MuddyWater_DroppedTask_Jun18_1 {
    meta:
       description = "Detects a dropped Windows task as used by MudyWater in June 2018"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://app.any.run/tasks/719c94eb-0a00-47cc-b583-ad4f9e25ebdb"
       date = "2018-06-12"
       hash1 = "7ecc2e1817f655ece2bde39b7d6633f4f586093047ec5697a1fab6adc7e1da54"

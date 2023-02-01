@@ -2,7 +2,7 @@
 rule VULN_Dell_BIOS_Update_Driver_DBUtil_May21 {
    meta:
       description = "Detects vulnerable DELL BIOS update driver that allows privilege escalation as reported in CVE-2021-21551 - DBUtil_2_3.Sys - note: it's usual location is in the C:\\Windows\\Temp folder"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://labs.sentinelone.com/cve-2021-21551-hundreds-of-millions-of-dell-computers-at-risk-due-to-multiple-bios-driver-privilege-escalation-flaws/"
       date = "2021-05-05"
       score = 60

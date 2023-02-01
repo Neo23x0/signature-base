@@ -9,7 +9,7 @@ rule b374k_back_connect {
 	meta:
 		description = "Detects privilege escalation tool"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "Internal Analysis"
 		date = "2016-08-18"
 		score = 80

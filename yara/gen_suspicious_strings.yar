@@ -3,7 +3,7 @@ rule Ping_Command_in_EXE {
    meta:
       description = "Detects an suspicious ping command execution in an executable"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2016-11-03"
       score = 60
@@ -17,7 +17,7 @@ rule GoogleBot_UserAgent {
    meta:
       description = "Detects the GoogleBot UserAgent String in an Executable"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-01-27"
       score = 65
@@ -33,7 +33,7 @@ rule Gen_Net_LocalGroup_Administrators_Add_Command {
    meta:
       description = "Detects an executable that contains a command to add a user account to the local administrators group"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-07-08"
    strings:
@@ -46,7 +46,7 @@ rule Suspicious_Script_Running_from_HTTP {
    meta:
       description = "Detects a suspicious "
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.hybrid-analysis.com/sample/a112274e109c5819d54aa8de89b0e707b243f4929a83e77439e3ff01ed218a35?environmentId=100"
       score = 50
       date = "2017-08-20"
@@ -63,7 +63,7 @@ rule ReconCommands_in_File : FILE {
    meta:
       description = "Detects various recon commands in a single file"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/haroonmeer/status/939099379834658817"
       date = "2017-12-11"
       score = 40
@@ -84,7 +84,7 @@ rule VBS_dropper_script_Dec17_1 {
    meta:
       description = "Detects a supicious VBS script that drops an executable"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2018-01-01"
       score = 80
@@ -104,7 +104,7 @@ rule SUSP_PDB_Strings_Keylogger_Backdoor : HIGHVOL {
    meta:
       description = "Detects PDB strings used in backdoors or keyloggers"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2018-03-23"
       score = 65
@@ -126,7 +126,7 @@ rule SUSP_Microsoft_Copyright_String_Anomaly_2 {
    meta:
       description = "Detects Floxif Malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2018-05-11"
       score = 60
@@ -141,7 +141,7 @@ rule SUSP_LNK_File_AppData_Roaming {
    meta:
       description = "Detects a suspicious link file that references to AppData Roaming"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2018/05/deep-dive-into-rig-exploit-kit-delivering-grobios-trojan.html"
       date = "2018-05-16"
       score = 50
@@ -162,7 +162,7 @@ rule SUSP_LNK_File_PathTraversal {
    meta:
       description = "Detects a suspicious link file that references a file multiple folders lower than the link itself"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2018/05/deep-dive-into-rig-exploit-kit-delivering-grobios-trojan.html"
       date = "2018-05-16"
       score = 40
@@ -178,7 +178,7 @@ rule SUSP_LNK_File_PathTraversal {
 rule SUSP_Script_Obfuscation_Char_Concat {
    meta:
       description = "Detects strings found in sample from CN group repo leak in October 2018"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/JaromirHorejsi/status/1047084277920411648"
       date = "2018-10-04"
       hash1 = "b30cc10e915a23c7273f0838297e0d2c9f4fc0ac1f56100eef6479c9d036c12b"
@@ -191,7 +191,7 @@ rule SUSP_Script_Obfuscation_Char_Concat {
 rule SUSP_PowerShell_IEX_Download_Combo {
    meta:
       description = "Detects strings found in sample from CN group repo leak in October 2018"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/JaromirHorejsi/status/1047084277920411648"
       date = "2018-10-04"
       hash1 = "13297f64a5f4dd9b08922c18ab100d3a3e6fdeab82f60a4653ab975b8ce393d5"
@@ -208,7 +208,7 @@ rule SUSP_PowerShell_IEX_Download_Combo {
 rule SUSP_Win32dll_String {
    meta:
       description = "Detects suspicious string in executables"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@Sebdraven/apt-sidewinder-changes-theirs-ttps-to-install-their-backdoor-f92604a2739"
       date = "2018-10-24"
       hash1 = "7bd7cec82ee98feed5872325c2f8fd9f0ea3a2f6cd0cd32bcbe27dbbfd0d7da1"
@@ -221,7 +221,7 @@ rule SUSP_Win32dll_String {
 rule SUSP_Modified_SystemExeFileName_in_File {
    meta:
       description = "Detecst a variant of a system file name often used by attackers to cloak their activity"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.symantec.com/blogs/threat-intelligence/seedworm-espionage-group"
       date = "2018-12-11"
       score = 65
@@ -236,7 +236,7 @@ rule SUSP_Modified_SystemExeFileName_in_File {
 rule SUSP_JAVA_Class_with_VBS_Content {
    meta:
       description = "Detects a JAVA class file with strings known from VBS files"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.menlosecurity.com/blog/a-jar-full-of-problems-for-financial-services-companies"
       date = "2019-01-03"
       score = 60
@@ -254,7 +254,7 @@ rule SUSP_JAVA_Class_with_VBS_Content {
 rule SUSP_RAR_with_PDF_Script_Obfuscation {
    meta:
       description = "Detects RAR file with suspicious .pdf extension prefix to trick users"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2019-04-06"
       hash1 = "b629b46b009a1c2306178e289ad0a3d9689d4b45c3d16804599f23c90c6bca5b"
@@ -271,7 +271,7 @@ rule SUSP_RAR_with_PDF_Script_Obfuscation {
 rule SUSP_Netsh_PortProxy_Command {
    meta:
       description = "Detects a suspicious command line with netsh and the portproxy command"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://docs.microsoft.com/en-us/windows-server/networking/technologies/netsh/netsh-interface-portproxy"
       date = "2019-04-20"
       score = 65
@@ -285,7 +285,7 @@ rule SUSP_Netsh_PortProxy_Command {
 rule SUSP_DropperBackdoor_Keywords {
    meta:
       description = "Detects suspicious keywords that indicate a backdoor"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://blog.talosintelligence.com/2019/04/dnspionage-brings-out-karkoff.html"
       date = "2019-04-24"
       hash1 = "cd4b9d0f2d1c0468750855f0ed352c1ed6d4f512d66e0e44ce308688235295b5"
@@ -298,7 +298,7 @@ rule SUSP_DropperBackdoor_Keywords {
 rule SUSP_SFX_cmd {
    meta:
       description = "Detects suspicious SFX as used by Gamaredon group"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2018-09-27"
       hash1 = "965129e5d0c439df97624347534bc24168935e7a71b9ff950c86faae3baec403"
@@ -311,7 +311,7 @@ rule SUSP_SFX_cmd {
 rule SUSP_XMRIG_Reference {
    meta:
       description = "Detects an executable with a suspicious XMRIG crypto miner reference"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/itaitevet/status/1141677424045953024"
       date = "2019-06-20"
       score = 70
@@ -324,7 +324,7 @@ rule SUSP_XMRIG_Reference {
 rule SUSP_Just_EICAR {
    meta:
       description = "Just an EICAR test file - this is boring but users asked for it"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "http://2016.eicar.org/85-0-Download.html"
       date = "2019-03-24"
       score = 40
@@ -338,7 +338,7 @@ rule SUSP_Just_EICAR {
 rule SUSP_PDB_Path_Keywords {
    meta:
       description = "Detects suspicious PDB paths"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/stvemillertime/status/1179832666285326337?s=20"
       date = "2019-10-04"
    strings:
@@ -365,7 +365,7 @@ rule SUSP_PDB_Path_Keywords {
 rule SUSP_Disable_ETW_Jun20_1 {
    meta:
       description = "Detects method to disable ETW in ENV vars before executing a program"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://gist.github.com/Cyb3rWard0g/a4a115fd3ab518a0e593525a379adee3"
       date = "2020-06-06"
    strings:
@@ -384,7 +384,7 @@ rule SUSP_Disable_ETW_Jun20_1 {
 rule SUSP_PE_Discord_Attachment_Oct21_1 {
    meta:
       description = "Detects suspicious executable with reference to a Discord attachment (often used for malware hosting on a legitimate FQDN)"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2021-10-12"
       score = 70
@@ -399,7 +399,7 @@ rule SUSP_PE_Discord_Attachment_Oct21_1 {
 rule SUSP_Encoded_Discord_Attachment_Oct21_1 {
    meta:
       description = "Detects suspicious encoded URL to a Discord attachment (often used for malware hosting on a legitimate FQDN)"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2021-10-12"
       score = 70

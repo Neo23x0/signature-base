@@ -3,7 +3,7 @@ rule MAL_APT_Operation_ShadowHammer_MalSetup {
    meta:
       description = "Detects a malicious file used by BARIUM group in Operation ShadowHammer"
       date = "2019-03-25"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       score = 80
       hash1 = "ac0711afee5a157d084251f3443a40965fc63c57955e3a241df866cfc7315223"

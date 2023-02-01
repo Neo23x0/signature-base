@@ -12,7 +12,7 @@ rule WinAgent_BadPatch_1 {
    meta:
       description = "Detects samples mentioned in BadPatch report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/RvDwwA"
       date = "2017-10-20"
       hash1 = "285998bce9692e46652529685775aa05e3a5cb93ee4e65d021d2231256e92813"
@@ -41,7 +41,7 @@ rule WinAgent_BadPatch_2 {
    meta:
       description = "Detects samples mentioned in BadPatch report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/RvDwwA"
       date = "2017-10-20"
       hash1 = "106deff16a93c4a4624fe96e3274e1432921c56d5a430834775e5b98861c00ea"

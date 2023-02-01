@@ -3,7 +3,7 @@ import "pe"
 rule MAL_RANSOM_Ragna_Locker_Apr20_1 {
    meta:
       description = "Detects Ragna Locker Ransomware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://otx.alienvault.com/indicator/file/c2bd70495630ed8279de0713a010e5e55f3da29323b59ef71401b12942ba52f6"
       date = "2020-04-27"
       hash1 = "c2bd70495630ed8279de0713a010e5e55f3da29323b59ef71401b12942ba52f6"

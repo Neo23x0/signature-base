@@ -14,7 +14,7 @@ rule KasperMalware_Oct17_1 {
    meta:
       description = "Detects Kasper Backdoor"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-10-24"
       hash1 = "758bdaf26a0bd309a5458cb4569fe1c789cf5db087880d6d1676dec051c3a28d"

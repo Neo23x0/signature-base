@@ -2,7 +2,7 @@
 rule MAL_Payload_F5_BIG_IP_Exploitations_Jul20_1 {
    meta:
       description = "Detects code found in report on exploits against CVE-2020-5902 F5 BIG-IP vulnerability by NCC group"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://research.nccgroup.com/2020/07/05/rift-f5-networks-k52145254-tmui-rce-vulnerability-cve-2020-5902-intelligence/"
       date = "2020-06-07"
       score = 75

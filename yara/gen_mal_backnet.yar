@@ -2,7 +2,7 @@
 rule MAL_BackNet_Nov18_1 {
    meta:
       description = "Detects BackNet samples"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/valsov/BackNet"
       date = "2018-11-02"
       hash1 = "4ce82644eaa1a00cdb6e2f363743553f2e4bd1eddb8bc84e45eda7c0699d9adc"

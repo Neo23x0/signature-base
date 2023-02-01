@@ -3,7 +3,7 @@ import "pe"
 rule MAL_WIPER_IsaacWiper_Mar22_1 {
    meta:
       description = "Detects IsaacWiper malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.welivesecurity.com/2022/03/01/isaacwiper-hermeticwizard-wiper-worm-targeting-ukraine/"
       date = "2022-03-03"
       score = 85

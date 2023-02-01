@@ -14,7 +14,7 @@ rule BronzeButler_Daserf_Delphi_1 {
    meta:
       description = "Detects malware / hacktool sample from Bronze Butler incident"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.secureworks.com/research/bronze-butler-targets-japanese-businesses"
       date = "2017-10-14"
       hash1 = "89a80ca92600af64eb9c32cab4e936c7d675cf815424d72438973e2d6788ef64"
@@ -38,7 +38,7 @@ rule BronzeButler_Daserf_C_1 {
    meta:
       description = "Detects malware / hacktool sample from Bronze Butler incident"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.secureworks.com/research/bronze-butler-targets-japanese-businesses"
       date = "2017-10-14"
       hash1 = "a4afd9df1b4cc014c3a89d7b4a560fa3e368b02286c42841762714b23e68cc05"
@@ -79,7 +79,7 @@ rule BronzeButler_DGet_1 {
    meta:
       description = "Detects malware / hacktool sample from Bronze Butler incident"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.secureworks.com/research/bronze-butler-targets-japanese-businesses"
       date = "2017-10-14"
       hash1 = "bd81521445639aaa5e3bcb5ece94f73feda3a91880a34a01f92639f8640251d6"
@@ -93,7 +93,7 @@ rule BronzeButler_UACBypass_1 {
    meta:
       description = "Detects malware / hacktool sample from Bronze Butler incident"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.secureworks.com/research/bronze-butler-targets-japanese-businesses"
       date = "2017-10-14"
       hash1 = "fe06b99a0287e2b2d9f7faffbda3a4b328ecc05eab56a3e730cfc99de803b192"
@@ -112,7 +112,7 @@ rule BronzeButler_xxmm_1 {
    meta:
       description = "Detects malware / hacktool sample from Bronze Butler incident"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.secureworks.com/research/bronze-butler-targets-japanese-businesses"
       date = "2017-10-14"
       hash1 = "7197de18bc5a4c854334ff979f3e4dafa16f43d7bf91edfe46f03e6cc88f7b73"
@@ -138,7 +138,7 @@ rule BronzeButler_RarStar_1 {
    meta:
       description = "Detects malware / hacktool sample from Bronze Butler incident"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.secureworks.com/research/bronze-butler-targets-japanese-businesses"
       date = "2017-10-14"
       hash1 = "0fc1b4fdf0dc5373f98de8817da9380479606f775f5aa0b9b0e1a78d4b49e5f4"
@@ -165,7 +165,7 @@ rule Daserf_Nov1_BronzeButler {
    meta:
       description = "Detects Daserf malware used by Bronze Butler"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/ffeCfd"
       date = "2017-11-08"
       hash1 = "5ede6f93f26ccd6de2f93c9bd0f834279df5f5cfe3457915fae24a3aec46961b"

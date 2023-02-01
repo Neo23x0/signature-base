@@ -11,7 +11,7 @@ rule PROMETHIUM_NEODYMIUM_Malware_1 {
    meta:
       description = "Detects PROMETHIUM and NEODYMIUM malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/8abDE6"
       date = "2016-12-14"
       hash1 = "e12031da58c0b08e8b610c3786ca2b66fcfea8ddc9ac558d08a29fd27e95a3e7"
@@ -29,7 +29,7 @@ rule PROMETHIUM_NEODYMIUM_Malware_2 {
    meta:
       description = "Detects PROMETHIUM and NEODYMIUM malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/8abDE6"
       date = "2016-12-14"
       hash1 = "1aef507c385a234e8b10db12852ad1bd66a04730451547b2dcb26f7fae16e01f"
@@ -46,7 +46,7 @@ rule PROMETHIUM_NEODYMIUM_Malware_3 {
    meta:
       description = "Detects PROMETHIUM and NEODYMIUM malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/8abDE6"
       date = "2016-12-14"
       hash1 = "2f98ac11c78ad1b4c5c5c10a88857baf7af43acb9162e8077709db9d563bcf02"
@@ -63,7 +63,7 @@ rule PROMETHIUM_NEODYMIUM_Malware_4 {
    meta:
       description = "Detects PROMETHIUM and NEODYMIUM malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/8abDE6"
       date = "2016-12-14"
       hash1 = "15ededb19ec5ab6f03db1106d2ccdeeacacdb8cd708518d065cacb1b0d7e955d"
@@ -84,7 +84,7 @@ rule PROMETHIUM_NEODYMIUM_Malware_5 {
    meta:
       description = "Detects PROMETHIUM and NEODYMIUM malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/8abDE6"
       date = "2016-12-14"
       hash1 = "a8b7e3edaa18c6127e98741503c3a2a66b7720d2abd967c94b8a5f2e99575ac5"
@@ -103,7 +103,7 @@ rule PROMETHIUM_NEODYMIUM_Malware_6 {
    meta:
       description = "Detects PROMETHIUM and NEODYMIUM malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/8abDE6"
       date = "2016-12-14"
       hash1 = "dbd8cbbaf59d19cf7566042945e36409cd090bc711e339d3f2ec652bc26d6a03"

@@ -4,7 +4,7 @@ import "pe"
 rule SUSP_Unsigned_OSPPSVC {
    meta:
       description = "Detects a suspicious unsigned office software protection platform service binary"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.welivesecurity.com/2019/09/24/no-summer-vacations-zebrocy/"
       date = "2019-09-26"
       hash1 = "5294a730f1f0a176583b9ca2b988b3f5ec65dad8c6ebe556b5135566f2c16a56"

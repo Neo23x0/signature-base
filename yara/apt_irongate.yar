@@ -11,7 +11,7 @@ rule IronGate_APT_Step7ProSim_Gen {
 	meta:
 		description = "Detects IronGate APT Malware - Step7ProSim DLL"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://goo.gl/Mr6M2J"
 		date = "2016-06-04"
 		score = 90
@@ -41,7 +41,7 @@ rule IronGate_APT_Step7ProSim_Gen {
 rule IronGate_PyInstaller_update_EXE {
    meta:
       description = "Detects a PyInstaller file named update.exe as mentioned in the IronGate APT"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/Mr6M2J"
       date = "2016-06-04"
       modified = "2023-01-06"
@@ -66,7 +66,7 @@ rule Nirsoft_NetResView {
 	meta:
 		description = "Detects NirSoft NetResView - utility that displays the list of all network resources"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://goo.gl/Mr6M2J"
 		date = "2016-06-04"
 		score = 40

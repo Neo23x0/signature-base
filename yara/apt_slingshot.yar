@@ -12,7 +12,7 @@ rule Slingshot_APT_Spork_Downloader {
    meta:
       description = "Detects malware from Slingshot APT"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist.com/apt-slingshot/84312/"
       date = "2018-03-09"
    strings:
@@ -26,7 +26,7 @@ rule Slingshot_APT_Minisling {
    meta:
       description = "Detects malware from Slingshot APT"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist.com/apt-slingshot/84312/"
       date = "2018-03-09"
    strings:
@@ -39,7 +39,7 @@ rule Slingshot_APT_Ring0_Loader {
    meta:
       description = "Detects malware from Slingshot APT"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist.com/apt-slingshot/84312/"
       date = "2018-03-09"
    strings:
@@ -58,7 +58,7 @@ rule Slingshot_APT_Malware_1 {
    meta:
       description = "Detects malware from Slingshot APT"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist.com/apt-slingshot/84312/"
       date = "2018-03-09"
       hash1 = "4b250304e28648574b441831bf579b844e8e1fda941fb7f86a7ea7c4291bbca6"
@@ -78,7 +78,7 @@ rule Slingshot_APT_Malware_2 {
    meta:
       description = "Detects malware from Slingshot APT"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist.com/apt-slingshot/84312/"
       date = "2018-03-09"
       hash1 = "2a51ef6d115daa648ddd57d1e4480f5a18daf40986bfde32aab19349aa010e67"
@@ -98,7 +98,7 @@ rule Slingshot_APT_Malware_3 {
    meta:
       description = "Detects malware from Slingshot APT"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist.com/apt-slingshot/84312/"
       date = "2018-03-09"
       hash1 = "fa513c65cded25a7992e2b0ab03c5dd5c6d0fc2282cd64a1e11a387a3341ce18"
@@ -119,7 +119,7 @@ rule Slingshot_APT_Malware_4 {
    meta:
       description = "Detects malware from Slingshot APT"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist.com/apt-slingshot/84312/"
       date = "2018-03-09"
       hash1 = "38c4f5320b03cbaf5c14997ea321507730a8c16906e5906cbf458139c91d5945"

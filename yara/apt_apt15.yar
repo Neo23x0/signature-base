@@ -14,7 +14,7 @@ rule APT15_Malware_Mar18_RoyalCli {
    meta:
       description = "Detects malware from APT 15 report by NCC Group"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/HZ5XMN"
       date = "2018-03-10"
       hash1 = "6df9b712ff56009810c4000a0ad47e41b7a6183b69416251e060b5c80cd05785"
@@ -34,7 +34,7 @@ rule APT15_Malware_Mar18_RoyalDNS {
    meta:
       description = "Detects malware from APT 15 report by NCC Group"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/HZ5XMN"
       date = "2018-03-10"
       hash1 = "bc937f6e958b339f6925023bc2af375d669084e9551fd3753e501ef26e36b39d"
@@ -60,7 +60,7 @@ rule APT15_Malware_Mar18_BS2005 {
    meta:
       description = "Detects malware from APT 15 report by NCC Group"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/HZ5XMN"
       date = "2018-03-10"
       hash1 = "750d9eecd533f89b8aa13aeab173a1cf813b021b6824bc30e60f5db6fa7b950b"
@@ -87,7 +87,7 @@ rule APT15_Malware_Mar18_MSExchangeTool {
    meta:
       description = "Detects malware from APT 15 report by NCC Group"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/HZ5XMN"
       date = "2018-03-10"
       hash1 = "16b868d1bef6be39f69b4e976595e7bd46b6c0595cf6bc482229dbb9e64f1bce"

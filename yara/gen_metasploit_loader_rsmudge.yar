@@ -11,7 +11,7 @@ rule Metasploit_Loader_RSMudge {
 	meta:
 		description = "Detects a Metasploit Loader by RSMudge - file loader.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/rsmudge/metasploit-loader"
 		date = "2016-04-20"
 		hash1 = "afe34bfe2215b048915b1d55324f1679d598a0741123bc24274d4edc6e395a8d"

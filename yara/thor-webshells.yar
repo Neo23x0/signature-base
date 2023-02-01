@@ -15,7 +15,7 @@ rule Weevely_Webshell {
 	meta:
 		description = "Weevely Webshell - Generic Rule - heavily scrambled tiny web shell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://www.ehacking.net/2014/12/weevely-php-stealth-web-backdoor-kali.html"
 		date = "2014/12/14"
 		score = 60
@@ -32,7 +32,7 @@ rule webshell_h4ntu_shell_powered_by_tsoi_ {
 	meta:
 		description = "Web Shell - file h4ntu shell powered by tsoi.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "06ed0b2398f8096f1bebf092d0526137"
@@ -48,7 +48,7 @@ rule webshell_PHP_sql {
 	meta:
 		description = "Web Shell - file sql.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "2cf20a207695bbc2311a998d1d795c35"
@@ -62,7 +62,7 @@ rule webshell_PHP_a {
 	meta:
 		description = "Web Shell - file a.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "e3b461f7464d81f5022419d87315a90d"
@@ -77,7 +77,7 @@ rule webshell_iMHaPFtp_2 {
 	meta:
 		description = "Web Shell - file iMHaPFtp.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "12911b73bc6a5d313b494102abcf5c57"
@@ -91,7 +91,7 @@ rule webshell_Jspspyweb {
 	meta:
 		description = "Web Shell - file Jspspyweb.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "4e9be07e95fff820a9299f3fb4ace059"
@@ -105,7 +105,7 @@ rule webshell_Safe_Mode_Bypass_PHP_4_4_2_and_PHP_5_1_2 {
 	meta:
 		description = "Web Shell - file Safe_Mode Bypass PHP 4.4.2 and PHP 5.1.2.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "49ad9117c96419c35987aaa7e2230f63"
@@ -119,7 +119,7 @@ rule webshell_SimAttacker_Vrsion_1_0_0_priv8_4_My_friend {
 	meta:
 		description = "Web Shell - file SimAttacker - Vrsion 1.0.0 - priv8 4 My friend.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "089ff24d978aeff2b4b2869f0c7d38a3"
@@ -133,7 +133,7 @@ rule webshell_phpshell_2_1_pwhash {
 	meta:
 		description = "Web Shell - file pwhash.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "ba120abac165a5a30044428fac1970d8"
@@ -147,7 +147,7 @@ rule webshell_PHPRemoteView {
 	meta:
 		description = "Web Shell - file PHPRemoteView.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "29420106d9a81553ef0d1ca72b9934d9"
@@ -161,7 +161,7 @@ rule webshell_jsp_12302 {
 	meta:
 		description = "Web Shell - file 12302.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "a3930518ea57d899457a62f372205f7f"
@@ -176,7 +176,7 @@ rule webshell_caidao_shell_guo {
 	meta:
 		description = "Web Shell - file guo.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "9e69a8f499c660ee0b4796af14dc08f0"
@@ -190,7 +190,7 @@ rule webshell_PHP_redcod {
 	meta:
 		description = "Web Shell - file redcod.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "5c1c8120d82f46ff9d813fbe3354bac5"
@@ -204,7 +204,7 @@ rule webshell_remview_fix {
 	meta:
 		description = "Web Shell - file remview_fix.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "a24b7c492f5f00e2a19b0fa2eb9c3697"
@@ -218,7 +218,7 @@ rule webshell_asp_cmd {
 	meta:
 		description = "Web Shell - file cmd.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "895ca846858c315a3ff8daa7c55b3119"
@@ -233,7 +233,7 @@ rule webshell_php_sh_server {
 	meta:
 		description = "Web Shell - file server.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 50
 		hash = "d87b019e74064aa90e2bb143e5e16cfa"
@@ -246,7 +246,7 @@ rule webshell_PH_Vayv_PH_Vayv {
 	meta:
 		description = "Web Shell - file PH Vayv.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "35fb37f3c806718545d97c6559abd262"
@@ -260,7 +260,7 @@ rule webshell_caidao_shell_ice {
 	meta:
 		description = "Web Shell - file ice.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "6560b436d3d3bb75e2ef3f032151d139"
@@ -273,7 +273,7 @@ rule webshell_cihshell_fix {
 	meta:
 		description = "Web Shell - file cihshell_fix.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "3823ac218032549b86ee7c26f10c4cb5"
@@ -287,7 +287,7 @@ rule webshell_asp_shell {
 	meta:
 		description = "Web Shell - file shell.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "e63f5a96570e1faf4c7b8ca6df750237"
@@ -301,7 +301,7 @@ rule webshell_Private_i3lue {
 	meta:
 		description = "Web Shell - file Private-i3lue.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "13f5c7a035ecce5f9f380967cf9d4e92"
@@ -314,7 +314,7 @@ rule webshell_php_up {
 	meta:
 		description = "Web Shell - file up.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "7edefb8bd0876c41906f4b39b52cd0ef"
@@ -329,7 +329,7 @@ rule webshell_Mysql_interface_v1_0 {
 	meta:
 		description = "Web Shell - file Mysql interface v1.0.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "a12fc0a3d31e2f89727b9678148cd487"
@@ -342,7 +342,7 @@ rule webshell_php_s_u {
 	meta:
 		description = "Web Shell - file s-u.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "efc7ba1a4023bcf40f5e912f1dd85b5a"
@@ -355,7 +355,7 @@ rule webshell_phpshell_2_1_config {
 	meta:
 		description = "Web Shell - file config.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "bd83144a649c5cc21ac41b505a36a8f3"
@@ -368,7 +368,7 @@ rule webshell_asp_EFSO_2 {
 	meta:
 		description = "Web Shell - file EFSO_2.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "a341270f9ebd01320a7490c12cb2e64c"
@@ -381,7 +381,7 @@ rule webshell_jsp_up {
 	meta:
 		description = "Web Shell - file up.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "515a5dd86fe48f673b72422cccf5a585"
@@ -394,7 +394,7 @@ rule webshell_NetworkFileManagerPHP {
 	meta:
 		description = "Web Shell - file NetworkFileManagerPHP.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "acdbba993a5a4186fd864c5e4ea0ba4f"
@@ -407,7 +407,7 @@ rule webshell_Server_Variables {
 	meta:
 		description = "Web Shell - file Server Variables.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "47fb8a647e441488b30f92b4d39003d7"
@@ -421,7 +421,7 @@ rule webshell_caidao_shell_ice_2 {
 	meta:
 		description = "Web Shell - file ice.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "1d6335247f58e0a5b03e17977888f5f2"
@@ -434,7 +434,7 @@ rule webshell_caidao_shell_mdb {
 	meta:
 		description = "Web Shell - file mdb.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "fbf3847acef4844f3a0d04230f6b9ff9"
@@ -447,7 +447,7 @@ rule webshell_jsp_guige {
 	meta:
 		description = "Web Shell - file guige.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "2c9f2dafa06332957127e2c713aacdd2"
@@ -460,7 +460,7 @@ rule webshell_phpspy2010 {
 	meta:
 		description = "Web Shell - file phpspy2010.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "14ae0e4f5349924a5047fed9f3b105c5"
@@ -475,7 +475,7 @@ rule webshell_asp_ice {
 	meta:
 		description = "Web Shell - file ice.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "d141e011a92f48da72728c35f1934a2b"
@@ -488,7 +488,7 @@ rule webshell_drag_system {
 	meta:
 		description = "Web Shell - file system.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "15ae237cf395fb24cf12bff141fb3f7c"
@@ -501,7 +501,7 @@ rule webshell_DarkBlade1_3_asp_indexx {
 	meta:
 		description = "Web Shell - file indexx.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "b7f46693648f534c2ca78e3f21685707"
@@ -514,7 +514,7 @@ rule webshell_phpshell3 {
 	meta:
 		description = "Web Shell - file phpshell3.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "76117b2ee4a7ac06832d50b2d04070b8"
@@ -529,7 +529,7 @@ rule webshell_jsp_hsxa {
 	meta:
 		description = "Web Shell - file hsxa.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "d0e05f9c9b8e0b3fa11f57d9ab800380"
@@ -542,7 +542,7 @@ rule webshell_jsp_utils {
 	meta:
 		description = "Web Shell - file utils.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "9827ba2e8329075358b8e8a53e20d545"
@@ -556,7 +556,7 @@ rule webshell_asp_01 {
 	meta:
 		description = "Web Shell - file 01.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 50
 		hash = "61a687b0bea0ef97224c7bd2df118b87"
@@ -569,7 +569,7 @@ rule webshell_asp_404 {
 	meta:
 		description = "Web Shell - file 404.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "d9fa1e8513dbf59fa5d130f389032a2d"
@@ -582,7 +582,7 @@ rule webshell_webshell_cnseay02_1 {
 	meta:
 		description = "Web Shell - file webshell-cnseay02-1.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "95fc76081a42c4f26912826cb1bd24b1"
@@ -595,7 +595,7 @@ rule webshell_php_fbi {
 	meta:
 		description = "Web Shell - file fbi.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "1fb32f8e58c8deb168c06297a04a21f1"
@@ -608,7 +608,7 @@ rule webshell_B374kPHP_B374k {
 	meta:
 		description = "Web Shell - file B374k.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "bed7388976f8f1d90422e8795dff1ea6"
@@ -624,7 +624,7 @@ rule webshell_cmd_asp_5_1 {
 	meta:
 		description = "Web Shell - file cmd-asp-5.1.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "8baa99666bf3734cbdfdd10088e0cd9f"
@@ -637,7 +637,7 @@ rule webshell_php_dodo_zip {
 	meta:
 		description = "Web Shell - file zip.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "b7800364374077ce8864796240162ad5"
@@ -651,7 +651,7 @@ rule webshell_aZRaiLPhp_v1_0 {
 	meta:
 		description = "Web Shell - file aZRaiLPhp v1.0.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "26b2d3943395682e36da06ed493a3715"
@@ -665,7 +665,7 @@ rule webshell_php_list {
 	meta:
 		description = "Web Shell - file list.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "922b128ddd90e1dc2f73088956c548ed"
@@ -680,7 +680,7 @@ rule webshell_ironshell {
 	meta:
 		description = "Web Shell - file ironshell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "8bfa2eeb8a3ff6afc619258e39fded56"
@@ -694,7 +694,7 @@ rule webshell_caidao_shell_404 {
 	meta:
 		description = "Web Shell - file 404.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "ee94952dc53d9a29bdf4ece54c7a7aa7"
@@ -707,7 +707,7 @@ rule webshell_ASP_aspydrv {
 	meta:
 		description = "Web Shell - file aspydrv.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "de0a58f7d1e200d0b2c801a94ebce330"
@@ -720,7 +720,7 @@ rule webshell_jsp_web {
 	meta:
 		description = "Web Shell - file web.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "4bc11e28f5dccd0c45a37f2b541b2e98"
@@ -733,7 +733,7 @@ rule webshell_mysqlwebsh {
 	meta:
 		description = "Web Shell - file mysqlwebsh.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "babfa76d11943a22484b3837f105fada"
@@ -746,7 +746,7 @@ rule webshell_jspShell {
 	meta:
 		description = "Web Shell - file jspShell.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "0d5b5a17552254be6c1c8f1eb3a5fdc1"
@@ -760,7 +760,7 @@ rule webshell_Dx_Dx {
 	meta:
 		description = "Web Shell - file Dx.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "9cfe372d49fe8bf2fac8e1c534153d9b"
@@ -774,7 +774,7 @@ rule webshell_asp_ntdaddy {
 	meta:
 		description = "Web Shell - file ntdaddy.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "c5e6baa5d140f73b4e16a6cfde671c68"
@@ -788,7 +788,7 @@ rule webshell_MySQL_Web_Interface_Version_0_8 {
 	meta:
 		description = "Web Shell - file MySQL Web Interface Version 0.8.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "36d4f34d0a22080f47bb1cb94107c60f"
@@ -801,7 +801,7 @@ rule webshell_elmaliseker_2 {
 	meta:
 		description = "Web Shell - file elmaliseker.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "b32d1730d23a660fd6aa8e60c3dc549f"
@@ -815,7 +815,7 @@ rule webshell_ASP_RemExp {
 	meta:
 		description = "Web Shell - file RemExp.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "aa1d8491f4e2894dbdb91eec1abc2244"
@@ -829,7 +829,7 @@ rule webshell_jsp_list1 {
 	meta:
 		description = "Web Shell - file list1.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "8d9e5afa77303c9c01ff34ea4e7f6ca6"
@@ -843,7 +843,7 @@ rule webshell_phpkit_1_0_odd {
 	meta:
 		description = "Web Shell - file odd.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "594d1b1311bbef38a0eb3d6cbb1ab538"
@@ -858,7 +858,7 @@ rule webshell_jsp_123 {
 	meta:
 		description = "Web Shell - file 123.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "c691f53e849676cac68a38d692467641"
@@ -873,7 +873,7 @@ rule webshell_asp_1 {
 	meta:
 		description = "Web Shell - file 1.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "8991148adf5de3b8322ec5d78cb01bdb"
@@ -887,7 +887,7 @@ rule webshell_ASP_tool {
 	meta:
 		description = "Web Shell - file tool.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "4ab68d38527d5834e9c1ff64407b34fb"
@@ -902,7 +902,7 @@ rule webshell_cmd_win32 {
 	meta:
 		description = "Web Shell - file cmd_win32.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "cc4d4d6cc9a25984aa9a7583c7def174"
@@ -916,7 +916,7 @@ rule webshell_jsp_jshell {
 	meta:
 		description = "Web Shell - file jshell.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "124b22f38aaaf064cef14711b2602c06"
@@ -933,7 +933,7 @@ rule webshell_ASP_zehir4 {
 	meta:
 		description = "Web Shell - file zehir4.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "7f4e12e159360743ec016273c3b9108c"
@@ -946,7 +946,7 @@ rule webshell_wsb_idc {
 	meta:
 		description = "Web Shell - file idc.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "7c5b1b30196c51f1accbffb80296395f"
@@ -960,7 +960,7 @@ rule webshell_cpg_143_incl_xpl {
 	meta:
 		description = "Web Shell - file cpg_143_incl_xpl.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "5937b131b67d8e0afdbd589251a5e176"
@@ -974,7 +974,7 @@ rule webshell_mumaasp_com {
 	meta:
 		description = "Web Shell - file mumaasp.com.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "cce32b2e18f5357c85b6d20f564ebd5d"
@@ -987,7 +987,7 @@ rule webshell_php_404 {
 	meta:
 		description = "Web Shell - file 404.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "ced050df5ca42064056a7ad610a191b3"
@@ -1000,7 +1000,7 @@ rule webshell_webshell_cnseay_x {
 	meta:
 		description = "Web Shell - file webshell-cnseay-x.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "a0f9f7f5cd405a514a7f3be329f380e5"
@@ -1013,7 +1013,7 @@ rule webshell_asp_up {
 	meta:
 		description = "Web Shell - file up.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "f775e721cfe85019fe41c34f47c0d67c"
@@ -1027,7 +1027,7 @@ rule webshell_phpkit_0_1a_odd {
 	meta:
 		description = "Web Shell - file odd.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "3c30399e7480c09276f412271f60ed01"
@@ -1043,7 +1043,7 @@ rule webshell_ASP_cmd {
 	meta:
 		description = "Web Shell - file cmd.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "97af88b478422067f23b001dd06d56a9"
@@ -1056,7 +1056,7 @@ rule webshell_PHP_Shell_x3 {
 	meta:
 		description = "Web Shell - file PHP Shell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "a2f8fa4cce578fc9c06f8e674b9e63fd"
@@ -1071,7 +1071,7 @@ rule webshell_PHP_g00nv13 {
 	meta:
 		description = "Web Shell - file g00nv13.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "35ad2533192fe8a1a76c3276140db820"
@@ -1085,7 +1085,7 @@ rule webshell_php_h6ss {
 	meta:
 		description = "Web Shell - file h6ss.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "272dde9a4a7265d6c139287560328cd5"
@@ -1098,7 +1098,7 @@ rule webshell_jsp_zx {
 	meta:
 		description = "Web Shell - file zx.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "67627c264db1e54a4720bd6a64721674"
@@ -1111,7 +1111,7 @@ rule webshell_Ani_Shell {
 	meta:
 		description = "Web Shell - file Ani-Shell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "889bfc9fbb8ee7832044fc575324d01a"
@@ -1126,7 +1126,7 @@ rule webshell_jsp_k8cmd {
 	meta:
 		description = "Web Shell - file k8cmd.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "b39544415e692a567455ff033a97a682"
@@ -1140,7 +1140,7 @@ rule webshell_jsp_cmd {
 	meta:
 		description = "Web Shell - file cmd.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "5391c4a8af1ede757ba9d28865e75853"
@@ -1154,7 +1154,7 @@ rule webshell_jsp_k81 {
 	meta:
 		description = "Web Shell - file k81.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "41efc5c71b6885add9c1d516371bd6af"
@@ -1168,7 +1168,7 @@ rule webshell_ASP_zehir {
 	meta:
 		description = "Web Shell - file zehir.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "0061d800aee63ccaf41d2d62ec15985d"
@@ -1181,7 +1181,7 @@ rule webshell_Worse_Linux_Shell {
 	meta:
 		description = "Web Shell - file Worse Linux Shell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "8338c8d9eab10bd38a7116eb534b5fa2"
@@ -1194,7 +1194,7 @@ rule webshell_zacosmall {
 	meta:
 		description = "Web Shell - file zacosmall.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "5295ee8dc2f5fd416be442548d68f7a6"
@@ -1207,7 +1207,7 @@ rule webshell_Liz0ziM_Private_Safe_Mode_Command_Execuriton_Bypass_Exploit {
 	meta:
 		description = "Web Shell - file Liz0ziM Private Safe Mode Command Execuriton Bypass Exploit.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "c6eeacbe779518ea78b8f7ed5f63fc11"
@@ -1220,7 +1220,7 @@ rule webshell_redirect {
 	meta:
 		description = "Web Shell - file redirect.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "97da83c6e3efbba98df270cc70beb8f8"
@@ -1233,7 +1233,7 @@ rule webshell_jsp_cmdjsp {
 	meta:
 		description = "Web Shell - file cmdjsp.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "b815611cc39f17f05a73444d699341d4"
@@ -1246,7 +1246,7 @@ rule webshell_Java_Shell {
 	meta:
 		description = "Web Shell - file Java Shell.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "36403bc776eb12e8b7cc0eb47c8aac83"
@@ -1260,7 +1260,7 @@ rule webshell_asp_1d {
 	meta:
 		description = "Web Shell - file 1d.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "fad7504ca8a55d4453e552621f81563c"
@@ -1273,7 +1273,7 @@ rule webshell_jsp_IXRbE {
 	meta:
 		description = "Web Shell - file IXRbE.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "e26e7e0ebc6e7662e1123452a939e2cd"
@@ -1286,7 +1286,7 @@ rule webshell_PHP_G5 {
 	meta:
 		description = "Web Shell - file G5.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "95b4a56140a650c74ed2ec36f08d757f"
@@ -1299,7 +1299,7 @@ rule webshell_PHP_r57142 {
 	meta:
 		description = "Web Shell - file r57142.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "0911b6e6b8f4bcb05599b2885a7fe8a8"
@@ -1312,7 +1312,7 @@ rule webshell_jsp_tree {
 	meta:
 		description = "Web Shell - file tree.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "bcdf7bbf7bbfa1ffa4f9a21957dbcdfa"
@@ -1326,7 +1326,7 @@ rule webshell_C99madShell_v_3_0_smowu {
 	meta:
 		description = "Web Shell - file smowu.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "74e1e7c7a6798f1663efb42882b85bee"
@@ -1340,7 +1340,7 @@ rule webshell_simple_backdoor {
 	meta:
 		description = "Web Shell - file simple-backdoor.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "f091d1b9274c881f8e41b2f96e6b9936"
@@ -1355,7 +1355,7 @@ rule webshell_PHP_404 {
 	meta:
 		description = "Web Shell - file 404.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "078c55ac475ab9e028f94f879f548bca"
@@ -1368,7 +1368,7 @@ rule webshell_Macker_s_Private_PHPShell {
 	meta:
 		description = "Web Shell - file Macker's Private PHPShell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "e24cbf0e294da9ac2117dc660d890bb9"
@@ -1383,7 +1383,7 @@ rule webshell_Antichat_Shell_v1_3_2 {
 	meta:
 		description = "Web Shell - file Antichat Shell v1.3.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "40d0abceba125868be7f3f990f031521"
@@ -1396,7 +1396,7 @@ rule webshell_Safe_mode_breaker {
 	meta:
 		description = "Web Shell - file Safe mode breaker.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "5bd07ccb1111950a5b47327946bfa194"
@@ -1410,7 +1410,7 @@ rule webshell_Sst_Sheller {
 	meta:
 		description = "Web Shell - file Sst-Sheller.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "d93c62a0a042252f7531d8632511ca56"
@@ -1424,7 +1424,7 @@ rule webshell_jsp_list {
 	meta:
 		description = "Web Shell - file list.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "1ea290ff4259dcaeb680cec992738eda"
@@ -1439,7 +1439,7 @@ rule webshell_PHPJackal_v1_5 {
 	meta:
 		description = "Web Shell - file PHPJackal v1.5.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "d76dc20a4017191216a0315b7286056f"
@@ -1453,7 +1453,7 @@ rule webshell_customize {
 	meta:
 		description = "Web Shell - file customize.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "d55578eccad090f30f5d735b8ec530b1"
@@ -1466,7 +1466,7 @@ rule webshell_s72_Shell_v1_1_Coding {
 	meta:
 		description = "Web Shell - file s72 Shell v1.1 Coding.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "c2e8346a5515c81797af36e7e4a3828e"
@@ -1479,7 +1479,7 @@ rule webshell_jsp_sys3 {
 	meta:
 		description = "Web Shell - file sys3.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "b3028a854d07674f4d8a9cf2fb6137ec"
@@ -1494,7 +1494,7 @@ rule webshell_jsp_guige02 {
 	meta:
 		description = "Web Shell - file guige02.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "a3b8b2280c56eaab777d633535baf21d"
@@ -1508,7 +1508,7 @@ rule webshell_php_ghost {
 	meta:
 		description = "Web Shell - file ghost.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "38dc8383da0859dca82cf0c943dbf16d"
@@ -1523,7 +1523,7 @@ rule webshell_WinX_Shell {
 	meta:
 		description = "Web Shell - file WinX Shell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "17ab5086aef89d4951fe9b7c7a561dda"
@@ -1537,7 +1537,7 @@ rule webshell_Crystal_Crystal {
 	meta:
 		description = "Web Shell - file Crystal.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "fdbf54d5bf3264eb1c4bff1fac548879"
@@ -1551,7 +1551,7 @@ rule webshell_r57_1_4_0 {
 	meta:
 		description = "Web Shell - file r57.1.4.0.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "574f3303e131242568b0caf3de42f325"
@@ -1568,7 +1568,7 @@ rule webshell_asp_ajn {
 	meta:
 		description = "Web Shell - file ajn.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "aaafafc5d286f0bff827a931f6378d04"
@@ -1582,7 +1582,7 @@ rule webshell_php_cmd {
 	meta:
 		description = "Web Shell - file cmd.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "c38ae5ba61fd84f6bbbab98d89d8a346"
@@ -1597,7 +1597,7 @@ rule webshell_asp_list {
 	meta:
 		description = "Web Shell - file list.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "1cfa493a165eb4b43e6d4cc0f2eab575"
@@ -1611,7 +1611,7 @@ rule webshell_PHP_co {
 	meta:
 		description = "Web Shell - file co.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "62199f5ac721a0cb9b28f465a513874c"
@@ -1625,7 +1625,7 @@ rule webshell_PHP_150 {
 	meta:
 		description = "Web Shell - file 150.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "400c4b0bed5c90f048398e1d268ce4dc"
@@ -1639,7 +1639,7 @@ rule webshell_jsp_cmdjsp_2 {
 	meta:
 		description = "Web Shell - file cmdjsp.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "1b5ae3649f03784e2a5073fa4d160c8b"
@@ -1653,7 +1653,7 @@ rule webshell_PHP_c37 {
 	meta:
 		description = "Web Shell - file c37.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "d01144c04e7a46870a8dd823eb2fe5c8"
@@ -1667,7 +1667,7 @@ rule webshell_PHP_b37 {
 	meta:
 		description = "Web Shell - file b37.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "0421445303cfd0ec6bc20b3846e30ff0"
@@ -1680,7 +1680,7 @@ rule webshell_php_backdoor {
 	meta:
 		description = "Web Shell - file php-backdoor.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "2b5cb105c4ea9b5ebc64705b4bd86bf7"
@@ -1694,7 +1694,7 @@ rule webshell_asp_dabao {
 	meta:
 		description = "Web Shell - file dabao.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "3919b959e3fa7e86d52c2b0a91588d5d"
@@ -1708,7 +1708,7 @@ rule webshell_php_2 {
 	meta:
 		description = "Web Shell - file 2.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "267c37c3a285a84f541066fc5b3c1747"
@@ -1721,7 +1721,7 @@ rule webshell_asp_cmdasp {
 	meta:
 		description = "Web Shell - file cmdasp.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "57b51418a799d2d016be546f399c2e9b"
@@ -1735,7 +1735,7 @@ rule webshell_spjspshell {
 	meta:
 		description = "Web Shell - file spjspshell.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "d39d51154aaad4ba89947c459a729971"
@@ -1748,7 +1748,7 @@ rule webshell_jsp_action {
 	meta:
 		description = "Web Shell - file action.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "5a7d931094f5570aaf5b7b3b06c3d8c0"
@@ -1762,7 +1762,7 @@ rule webshell_Inderxer {
 	meta:
 		description = "Web Shell - file Inderxer.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "9ea82afb8c7070817d4cdf686abe0300"
@@ -1775,7 +1775,7 @@ rule webshell_asp_Rader {
 	meta:
 		description = "Web Shell - file Rader.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "ad1a362e0a24c4475335e3e891a01731"
@@ -1789,7 +1789,7 @@ rule webshell_c99_madnet_smowu {
 	meta:
 		description = "Web Shell - file smowu.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "3aaa8cad47055ba53190020311b0fb83"
@@ -1807,7 +1807,7 @@ rule webshell_php_moon {
 	meta:
 		description = "Web Shell - file moon.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "2a2b1b783d3a2fa9a50b1496afa6e356"
@@ -1823,7 +1823,7 @@ rule webshell_minupload {
 	meta:
 		description = "Web Shell - file minupload.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "ec905a1395d176c27f388d202375bdf9"
@@ -1837,7 +1837,7 @@ rule webshell_ELMALISEKER_Backd00r {
 	meta:
 		description = "Web Shell - file ELMALISEKER Backd00r.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "3aa403e0a42badb2c23d4a54ef43e2f4"
@@ -1851,7 +1851,7 @@ rule webshell_PHP_bug_1_ {
 	meta:
 		description = "Web Shell - file bug (1).php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "91c5fae02ab16d51fc5af9354ac2f015"
@@ -1864,7 +1864,7 @@ rule webshell_caidao_shell_hkmjj {
 	meta:
 		description = "Web Shell - file hkmjj.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "e7b994fe9f878154ca18b7cde91ad2d0"
@@ -1877,7 +1877,7 @@ rule webshell_jsp_asd {
 	meta:
 		description = "Web Shell - file asd.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "a042c2ca64176410236fcc97484ec599"
@@ -1892,7 +1892,7 @@ rule webshell_metaslsoft {
 	meta:
 		description = "Web Shell - file metaslsoft.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "aa328ed1476f4a10c0bcc2dde4461789"
@@ -1905,7 +1905,7 @@ rule webshell_asp_Ajan {
 	meta:
 		description = "Web Shell - file Ajan.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		hash = "b6f468252407efc2318639da22b08af0"
@@ -1918,7 +1918,7 @@ rule webshell_config_myxx_zend {
 	meta:
 		description = "Web Shell - from files config.jsp, myxx.jsp, zend.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -1934,7 +1934,7 @@ rule webshell_browser_201_3_ma_download {
 	meta:
 		description = "Web Shell - from files browser.jsp, 201.jsp, 3.jsp, ma.jsp, download.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -1953,7 +1953,7 @@ rule webshell_itsec_itsecteam_shell_jHn {
 	meta:
 		description = "Web Shell - from files itsec.php, itsecteam_shell.php, jHn.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -1970,7 +1970,7 @@ rule webshell_ghost_source_icesword_silic {
 	meta:
 		description = "Web Shell - from files ghost_source.php, icesword.php, silic.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -1987,7 +1987,7 @@ rule webshell_JspSpy_JspSpyJDK5_JspSpyJDK51_luci_jsp_spy2009_m_ma3_xxx {
 	meta:
 		description = "Web Shell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2030,7 +2030,7 @@ rule webshell_2_520_job_ma1_ma4_2 {
 	meta:
 		description = "Web Shell - from files 2.jsp, 520.jsp, job.jsp, ma1.jsp, ma4.jsp, 2.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2050,7 +2050,7 @@ rule webshell_000_403_807_a_c5_config_css_dm_he1p_JspSpy_JspSpyJDK5_JspSpyJDK51_
 	meta:
 		description = "Web Shell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2096,7 +2096,7 @@ rule webshell_wso2_5_1_wso2_5_wso2 {
 	meta:
 		description = "Web Shell - from files wso2.5.1.php, wso2.5.php, wso2.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2113,7 +2113,7 @@ rule webshell_000_403_c5_queryDong_spyjsp2010_t00ls {
 	meta:
 		description = "Web Shell - from files 000.jsp, 403.jsp, c5.jsp, queryDong.jsp, spyjsp2010.jsp, t00ls.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2133,7 +2133,7 @@ rule webshell_404_data_suiyue {
 	meta:
 		description = "Web Shell - from files 404.jsp, data.jsp, suiyue.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2149,7 +2149,7 @@ rule webshell_r57shell_r57shell127_SnIpEr_SA_Shell_EgY_SpIdEr_ShElL_V2_r57_xxx {
 	meta:
 		description = "Web Shell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2174,7 +2174,7 @@ rule webshell_807_a_css_dm_he1p_JspSpy_xxx {
 	meta:
 		description = "Web Shell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2212,7 +2212,7 @@ rule webshell_201_3_ma_download {
 	meta:
 		description = "Web Shell - from files 201.jsp, 3.jsp, ma.jsp, download.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2231,7 +2231,7 @@ rule webshell_browser_201_3_400_in_JFolder_jfolder01_jsp_leo_ma_warn_webshell_nc
 	meta:
 		description = "Web Shell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2258,7 +2258,7 @@ rule webshell_shell_phpspy_2006_arabicspy {
 	meta:
 		description = "Web Shell - from files shell.php, phpspy_2006.php, arabicspy.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2275,7 +2275,7 @@ rule webshell_in_JFolder_jfolder01_jsp_leo_warn {
 	meta:
 		description = "Web Shell - from files in.jsp, JFolder.jsp, jfolder01.jsp, jsp.jsp, leo.jsp, warn.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2295,7 +2295,7 @@ rule webshell_2_520_icesword_job_ma1_ma4_2 {
 	meta:
 		description = "Web Shell - from files 2.jsp, 520.jsp, icesword.jsp, job.jsp, ma1.jsp, ma4.jsp, 2.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2317,7 +2317,7 @@ rule webshell_phpspy_2005_full_phpspy_2005_lite_PHPSPY {
 	meta:
 		description = "Web Shell - from files phpspy_2005_full.php, phpspy_2005_lite.php, PHPSPY.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2335,7 +2335,7 @@ rule webshell_shell_phpspy_2006_arabicspy_hkrkoz {
 	meta:
 		description = "Web Shell - from files shell.php, phpspy_2006.php, arabicspy.php, hkrkoz.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2352,7 +2352,7 @@ rule webshell_c99_Shell_ci_Biz_was_here_c100_v_xxx {
 	meta:
 		description = "Web Shell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2371,7 +2371,7 @@ rule webshell_2008_2009lite_2009mssql {
 	meta:
 		description = "Web Shell - from files 2008.php, 2009lite.php, 2009mssql.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2388,7 +2388,7 @@ rule webshell_shell_phpspy_2005_full_phpspy_2005_lite_phpspy_2006_arabicspy_PHPS
 	meta:
 		description = "Web Shell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2409,7 +2409,7 @@ rule webshell_807_dm_JspSpyJDK5_m_cofigrue {
 	meta:
 		description = "Web Shell - from files 807.jsp, dm.jsp, JspSpyJDK5.jsp, m.jsp, cofigrue.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2428,7 +2428,7 @@ rule webshell_Dive_Shell_1_0_Emperor_Hacking_Team_xxx {
 	meta:
 		description = "Web Shell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2445,7 +2445,7 @@ rule webshell_404_data_in_JFolder_jfolder01_xxx {
 	meta:
 		description = "Web Shell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2467,7 +2467,7 @@ rule webshell_jsp_reverse_jsp_reverse_jspbd {
 	meta:
 		description = "Web Shell - from files jsp-reverse.jsp, jsp-reverse.jsp, jspbd.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		super_rule = 1
 		hash0 = "8b0e6779f25a17f0ffb3df14122ba594"
@@ -2485,7 +2485,7 @@ rule webshell_400_in_JFolder_jfolder01_jsp_leo_warn_webshell_nc {
 	meta:
 		description = "Web Shell - from files 400.jsp, in.jsp, JFolder.jsp, jfolder01.jsp, jsp.jsp, leo.jsp, warn.jsp, webshell-nc.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2509,7 +2509,7 @@ rule webshell_2_520_job_JspWebshell_1_2_ma1_ma4_2 {
 	meta:
 		description = "Web Shell - from files 2.jsp, 520.jsp, job.jsp, JspWebshell 1.2.jsp, ma1.jsp, ma4.jsp, 2.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2531,7 +2531,7 @@ rule webshell_shell_2008_2009mssql_phpspy_2005_full_phpspy_2006_arabicspy_hkrkoz
 	meta:
 		description = "Web Shell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 60
 		super_rule = 1
@@ -2555,7 +2555,7 @@ rule webshell_gfs_sh_r57shell_r57shell127_SnIpEr_SA_xxx {
 	meta:
 		description = "Web Shell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2580,7 +2580,7 @@ rule webshell_itsec_PHPJackal_itsecteam_shell_jHn {
 	meta:
 		description = "Web Shell - from files itsec.php, PHPJackal.php, itsecteam_shell.php, jHn.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2599,7 +2599,7 @@ rule webshell_Shell_ci_Biz_was_here_c100_v_xxx {
 	meta:
 		description = "Web Shell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2619,7 +2619,7 @@ rule webshell_NIX_REMOTE_WEB_SHELL_NIX_REMOTE_WEB_xxx1 {
 	meta:
 		description = "Web Shell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2638,7 +2638,7 @@ rule webshell_c99_c99shell_c99_w4cking_Shell_xxx {
 	meta:
 		description = "Web Shell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2666,7 +2666,7 @@ rule webshell_2008_2009mssql_phpspy_2005_full_phpspy_2006_arabicspy_hkrkoz {
 	meta:
 		description = "Web Shell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2688,7 +2688,7 @@ rule webshell_c99_c66_c99_shadows_mod_c99shell {
 	meta:
 		description = "Web Shell - from files c99.php, c66.php, c99-shadows-mod.php, c99shell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2710,7 +2710,7 @@ rule webshell_he1p_JspSpy_nogfw_ok_style_1_JspSpy1 {
 	meta:
 		description = "Web Shell - from files he1p.jsp, JspSpy.jsp, nogfw.jsp, ok.jsp, style.jsp, 1.jsp, JspSpy.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2733,7 +2733,7 @@ rule webshell_000_403_c5_config_myxx_queryDong_spyjsp2010_zend {
 	meta:
 		description = "Web Shell - from files 000.jsp, 403.jsp, c5.jsp, config.jsp, myxx.jsp, queryDong.jsp, spyjsp2010.jsp, zend.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2756,7 +2756,7 @@ rule webshell_c99_c99shell_c99_c99shell {
 	meta:
 		description = "Web Shell - from files c99.php, c99shell.php, c99.php, c99shell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2774,7 +2774,7 @@ rule webshell_r57shell127_r57_iFX_r57_kartal_r57_antichat {
 	meta:
 		description = "Web Shell - from files r57shell127.php, r57_iFX.php, r57_kartal.php, r57.php, antichat.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2795,7 +2795,7 @@ rule webshell_NIX_REMOTE_WEB_SHELL_nstview_xxx {
 	meta:
 		description = "Web Shell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2814,7 +2814,7 @@ rule webshell_000_403_807_a_c5_config_css_dm_he1p_xxx {
 	meta:
 		description = "Web Shell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2864,7 +2864,7 @@ rule webshell_2_520_icesword_job_ma1 {
 	meta:
 		description = "Web Shell - from files 2.jsp, 520.jsp, icesword.jsp, job.jsp, ma1.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2884,7 +2884,7 @@ rule webshell_404_data_in_JFolder_jfolder01_jsp_suiyue_warn {
 	meta:
 		description = "Web Shell - from files 404.jsp, data.jsp, in.jsp, JFolder.jsp, jfolder01.jsp, jsp.jsp, suiyue.jsp, warn.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2909,7 +2909,7 @@ rule webshell_phpspy_2005_full_phpspy_2005_lite_phpspy_2006_PHPSPY {
 	meta:
 		description = "Web Shell - from files phpspy_2005_full.php, phpspy_2005_lite.php, phpspy_2006.php, PHPSPY.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2929,7 +2929,7 @@ rule webshell_c99_locus7s_c99_w4cking_xxx {
 	meta:
 		description = "Web Shell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2958,7 +2958,7 @@ rule webshell_browser_201_3_ma_ma2_download {
 	meta:
 		description = "Web Shell - from files browser.jsp, 201.jsp, 3.jsp, ma.jsp, ma2.jsp, download.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -2979,7 +2979,7 @@ rule webshell_000_403_c5_queryDong_spyjsp2010 {
 	meta:
 		description = "Web Shell - from files 000.jsp, 403.jsp, c5.jsp, queryDong.jsp, spyjsp2010.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -3000,7 +3000,7 @@ rule webshell_r57shell127_r57_kartal_r57 {
 	meta:
 		description = "Web Shell - from files r57shell127.php, r57_kartal.php, r57.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
 		score = 70
 		super_rule = 1
@@ -3019,7 +3019,7 @@ rule webshell_webshells_new_con2 {
 	meta:
 		description = "Web shells - generated from file con2.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/03/28"
 		score = 70
 		hash = "d3584159ab299d546bd77c9654932ae3"
@@ -3033,7 +3033,7 @@ rule webshell_webshells_new_make2 {
 	meta:
 		description = "Web shells - generated from file make2.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/03/28"
 		hash = "9af195491101e0816a263c106e4c145e"
 		score = 50
@@ -3046,7 +3046,7 @@ rule webshell_webshells_new_aaa {
 	meta:
 		description = "Web shells - generated from file aaa.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/03/28"
 		score = 70
 		hash = "68483788ab171a155db5266310c852b2"
@@ -3061,7 +3061,7 @@ rule webshell_Expdoor_com_ASP {
 	meta:
 		description = "Web shells - generated from file Expdoor.com ASP.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/03/28"
 		score = 70
 		hash = "caef01bb8906d909f24d1fa109ea18a7"
@@ -3078,7 +3078,7 @@ rule webshell_webshells_new_php2 {
 	meta:
 		description = "Web shells - generated from file php2.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/03/28"
 		score = 70
 		hash = "fbf2e76e6f897f6f42b896c855069276"
@@ -3091,7 +3091,7 @@ rule webshell_bypass_iisuser_p {
 	meta:
 		description = "Web shells - generated from file bypass-iisuser-p.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/03/28"
 		score = 70
 		hash = "924d294400a64fa888a79316fb3ccd90"
@@ -3104,7 +3104,7 @@ rule webshell_sig_404super {
 	meta:
 		description = "Web shells - generated from file 404super.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/03/28"
 		score = 70
 		hash = "7ed63176226f83d36dce47ce82507b28"
@@ -3122,7 +3122,7 @@ rule webshell_webshells_new_JSP {
 	meta:
 		description = "Web shells - generated from file JSP.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/03/28"
 		score = 70
 		hash = "495f1a0a4c82f986f4bdf51ae1898ee7"
@@ -3137,7 +3137,7 @@ rule webshell_webshell_123 {
 	meta:
 		description = "Web shells - generated from file webshell-123.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014-03-28"
 		modified = "2023-01-27"
 		score = 70
@@ -3154,7 +3154,7 @@ rule webshell_dev_core {
 	meta:
 		description = "Web shells - generated from file dev_core.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/03/28"
 		score = 70
 		hash = "55ad9309b006884f660c41e53150fc2e"
@@ -3172,7 +3172,7 @@ rule webshell_webshells_new_pHp {
 	meta:
 		description = "Web shells - generated from file pHp.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/03/28"
 		score = 70
 		hash = "b0e842bdf83396c3ef8c71ff94e64167"
@@ -3189,7 +3189,7 @@ rule webshell_webshells_new_pppp {
 	meta:
 		description = "Web shells - generated from file pppp.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/03/28"
 		score = 70
 		hash = "cf01cb6e09ee594545693c5d327bdd50"
@@ -3204,7 +3204,7 @@ rule webshell_webshells_new_code {
 	meta:
 		description = "Web shells - generated from file code.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/03/28"
 		score = 70
 		hash = "a444014c134ff24c0be5a05c02b81a79"
@@ -3221,7 +3221,7 @@ rule webshell_webshells_new_jspyyy {
 	meta:
 		description = "Web shells - generated from file jspyyy.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/03/28"
 		score = 70
 		hash = "b291bf3ccc9dac8b5c7e1739b8fa742e"
@@ -3234,7 +3234,7 @@ rule webshell_webshells_new_xxxx {
 	meta:
 		description = "Web shells - generated from file xxxx.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/03/28"
 		score = 70
 		hash = "5bcba70b2137375225d8eedcde2c0ebb"
@@ -3247,7 +3247,7 @@ rule webshell_webshells_new_JJjsp3 {
 	meta:
 		description = "Web shells - generated from file JJjsp3.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/03/28"
 		score = 70
 		hash = "949ffee1e07a1269df7c69b9722d293e"
@@ -3260,7 +3260,7 @@ rule webshell_webshells_new_PHP1 {
 	meta:
 		description = "Web shells - generated from file PHP1.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/03/28"
 		score = 70
 		hash = "14c7281fdaf2ae004ca5fec8753ce3cb"
@@ -3275,7 +3275,7 @@ rule webshell_webshells_new_JJJsp2 {
 	meta:
 		description = "Web shells - generated from file JJJsp2.jsp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/03/28"
 		score = 70
 		hash = "5a9fec45236768069c99f0bfd566d754"
@@ -3291,7 +3291,7 @@ rule webshell_webshells_new_radhat {
 	meta:
 		description = "Web shells - generated from file radhat.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/03/28"
 		score = 70
 		hash = "72cb5ef226834ed791144abaa0acdfd4"
@@ -3304,7 +3304,7 @@ rule webshell_webshells_new_asp1 {
 	meta:
 		description = "Web shells - generated from file asp1.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/03/28"
 		score = 70
 		hash = "b63e708cd58ae1ec85cf784060b69cad"
@@ -3318,7 +3318,7 @@ rule webshell_webshells_new_php6 {
 	meta:
 		description = "Web shells - generated from file php6.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/03/28"
 		score = 70
 		hash = "ea75280224a735f1e445d244acdfeb7b"
@@ -3333,7 +3333,7 @@ rule webshell_webshells_new_xxx {
 	meta:
 		description = "Web shells - generated from file xxx.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/03/28"
 		score = 70
 		hash = "0e71428fe68b39b70adb6aeedf260ca0"
@@ -3346,7 +3346,7 @@ rule webshell_GetPostpHp {
 	meta:
 		description = "Web shells - generated from file GetPostpHp.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/03/28"
 		score = 70
 		hash = "20ede5b8182d952728d594e6f2bb5c76"
@@ -3359,7 +3359,7 @@ rule webshell_webshells_new_php5 {
 	meta:
 		description = "Web shells - generated from file php5.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/03/28"
 		score = 70
 		hash = "cf2ab009cbd2576a806bfefb74906fdf"
@@ -3372,7 +3372,7 @@ rule webshell_webshells_new_PHP {
 	meta:
 		description = "Web shells - generated from file PHP.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/03/28"
 		score = 70
 		hash = "a524e7ae8d71e37d2fd3e5fbdab405ea"
@@ -3389,7 +3389,7 @@ rule webshell_webshells_new_Asp {
 	meta:
 		description = "Web shells - generated from file Asp.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/03/28"
 		score = 70
 		hash = "32c87744ea404d0ea0debd55915010b7"
@@ -5178,7 +5178,7 @@ rule DarkSecurityTeam_Webshell {
 	meta:
 		description = "Dark Security Team Webshell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "f1c95b13a71ca3629a0bb79601fcacf57cdfcf768806a71b26f2448f8c1d5d24"
 		score = 50
 	strings:
@@ -5192,7 +5192,7 @@ rule PHP_Cloaked_Webshell_SuperFetchExec {
 		description = "Looks like a webshell cloaked as GIF - http://goo.gl/xFvioC"
 		reference = "http://goo.gl/xFvioC"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		score = 50
 	strings:
 		$s0 = "else{$d.=@chr(($h[$e[$o]]<<4)+($h[$e[++$o]]));}}eval($d);"
@@ -5206,7 +5206,7 @@ rule WebShell_RemExp_asp_php {
 	meta:
 		description = "PHP Webshells Github Archive - file RemExp.asp.php.txt"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "d9919dcf94a70d5180650de8b81669fa1c10c5a2"
 	strings:
 		$s0 = "lsExt = Right(FileName, Len(FileName) - liCount)" fullword
@@ -5221,7 +5221,7 @@ rule WebShell_dC3_Security_Crew_Shell_PRiV {
 	meta:
 		description = "PHP Webshells Github Archive - file dC3_Security_Crew_Shell_PRiV.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "1b2a4a7174ca170b4e3a8cdf4814c92695134c8a"
 	strings:
 		$s0 = "@rmdir($_GET['file']) or die (\"[-]Error deleting dir!\");" fullword
@@ -5237,7 +5237,7 @@ rule WebShell_simattacker {
 	meta:
 		description = "PHP Webshells Github Archive - file simattacker.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "258297b62aeaf4650ce04642ad5f19be25ec29c9"
 	strings:
 		$s1 = "$from = rand (71,1020000000).\"@\".\"Attacker.com\";" fullword
@@ -5255,7 +5255,7 @@ rule WebShell_DTool_Pro {
 	meta:
 		description = "PHP Webshells Github Archive - file DTool Pro.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "e2ee1c7ba7b05994f65710b7bbf935954f2c3353"
 	strings:
 		$s1 = "function PHPget(){inclVar(); if(confirm(\"O PHPget agora oferece uma lista pront"
@@ -5273,7 +5273,7 @@ rule WebShell_ironshell {
 	meta:
 		description = "PHP Webshells Github Archive - file ironshell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "d47b8ba98ea8061404defc6b3a30839c4444a262"
 	strings:
 		$s0 = "<title>'.getenv(\"HTTP_HOST\").' ~ Shell I</title>" fullword
@@ -5291,7 +5291,7 @@ rule WebShell_indexer_asp_php {
 	meta:
 		description = "PHP Webshells Github Archive - file indexer.asp.php.txt"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "e9a7aa5eb1fb228117dc85298c7d3ecd8e288a2d"
 	strings:
 		$s0 = "<meta http-equiv=\"Content-Language\" content=\"tr\">" fullword
@@ -5307,7 +5307,7 @@ rule WebShell_toolaspshell {
 	meta:
 		description = "PHP Webshells Github Archive - file toolaspshell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "11d236b0d1c2da30828ffd2f393dd4c6a1022e3f"
 	strings:
 		$s0 = "cprthtml = \"<font face='arial' size='1'>RHTOOLS 1.5 BETA(PVT) Edited By KingDef"
@@ -5320,7 +5320,7 @@ rule WebShell_b374k_mini_shell_php_php {
 	meta:
 		description = "PHP Webshells Github Archive - file b374k-mini-shell-php.php.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "afb88635fbdd9ebe86b650cc220d3012a8c35143"
 	strings:
 		$s0 = "@error_reporting(0);" fullword
@@ -5333,7 +5333,7 @@ rule WebShell_Sincap_1_0 {
 	meta:
 		description = "PHP Webshells Github Archive - file Sincap 1.0.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "9b72635ff1410fa40c4e15513ae3a496d54f971c"
 	strings:
 		$s4 = "</font></span><a href=\"mailto:shopen@aventgrup.net\">" fullword
@@ -5348,7 +5348,7 @@ rule WebShell_b374k_php {
 	meta:
 		description = "PHP Webshells Github Archive - file b374k.php.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "04c99efd187cf29dc4e5603c51be44170987bce2"
 	strings:
 		$s0 = "// encrypt your password to md5 here http://kerinci.net/?x=decode" fullword
@@ -5363,7 +5363,7 @@ rule WebShell_SimAttacker___Vrsion_1_0_0___priv8_4_My_friend {
 	meta:
 		description = "PHP Webshells Github Archive - file SimAttacker - Vrsion 1.0.0 - priv8 4 My friend.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "6454cc5ab73143d72cf0025a81bd1fe710351b44"
 	strings:
 		$s4 = "&nbsp;Iranian Hackers : WWW.SIMORGH-EV.COM <br>" fullword
@@ -5380,7 +5380,7 @@ rule WebShell_h4ntu_shell__powered_by_tsoi_ {
 	meta:
 		description = "PHP Webshells Github Archive - file h4ntu shell [powered by tsoi].php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "cbca8cd000e705357e2a7e0cf8262678706f18f9"
 	strings:
 		$s11 = "<title>h4ntu shell [powered by tsoi]</title>" fullword
@@ -5396,7 +5396,7 @@ rule WebShell_php_webshells_MyShell {
 	meta:
 		description = "PHP Webshells Github Archive - file MyShell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "42e283c594c4d061f80a18f5ade0717d3fb2f76d"
 	strings:
 		$s3 = "<title>MyShell error - Access Denied</title>" fullword
@@ -5414,7 +5414,7 @@ rule WebShell_php_webshells_pws {
 	meta:
 		description = "PHP Webshells Github Archive - file pws.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "7a405f1c179a84ff8ac09a42177a2bcd8a1a481b"
 	strings:
 		$s6 = "if ($_POST['cmd']){" fullword
@@ -5430,7 +5430,7 @@ rule WebShell_reader_asp_php {
 	meta:
 		description = "PHP Webshells Github Archive - file reader.asp.php.txt"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "70656f3495e2b3ad391a77d5208eec0fb9e2d931"
 	strings:
 		$s5 = "ster\" name=submit> </Font> &nbsp; &nbsp; &nbsp; <a href=mailto:mailbomb@hotmail"
@@ -5444,7 +5444,7 @@ rule WebShell_Safe_Mode_Bypass_PHP_4_4_2_and_PHP_5_1_2 {
 	meta:
 		description = "PHP Webshells Github Archive - file Safe_Mode_Bypass_PHP_4.4.2_and_PHP_5.1.2.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "db076b7c80d2a5279cab2578aa19cb18aea92832"
 	strings:
 		$s1 = "<option value=\"/etc/passwd\">Get /etc/passwd</option>" fullword
@@ -5460,7 +5460,7 @@ rule WebShell_Liz0ziM_Private_Safe_Mode_Command_Execuriton_Bypass_Exploit {
 	meta:
 		description = "PHP Webshells Github Archive - file Liz0ziM Private Safe Mode Command Execuriton Bypass Exploit.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "b2b797707e09c12ff5e632af84b394ad41a46fa4"
 	strings:
 		$s4 = "$liz0zim=shell_exec($_POST[liz0]); " fullword
@@ -5475,7 +5475,7 @@ rule WebShell_php_backdoor {
 	meta:
 		description = "PHP Webshells Github Archive - file php-backdoor.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "b190c03af4f3fb52adc20eb0f5d4d151020c74fe"
 	strings:
 		$s5 = "http://<? echo $SERVER_NAME.$REQUEST_URI; ?>?d=/etc on *nix" fullword
@@ -5490,7 +5490,7 @@ rule WebShell_Worse_Linux_Shell {
 	meta:
 		description = "PHP Webshells Github Archive - file Worse Linux Shell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "64623ab1246bc8f7d256b25f244eb2b41f543e96"
 	strings:
 		$s4 = "if( $_POST['_act'] == \"Upload!\" ) {" fullword
@@ -5506,7 +5506,7 @@ rule WebShell_php_webshells_pHpINJ {
 	meta:
 		description = "PHP Webshells Github Archive - file pHpINJ.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "75116bee1ab122861b155cc1ce45a112c28b9596"
 	strings:
 		$s3 = "echo '<a href='.$expurl.'> Click Here to Exploit </a> <br />';" fullword
@@ -5523,7 +5523,7 @@ rule WebShell_php_webshells_NGH {
 	meta:
 		description = "PHP Webshells Github Archive - file NGH.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "c05b5deecfc6de972aa4652cb66da89cfb3e1645"
 	strings:
 		$s0 = "<title>Webcommander at <?=$_SERVER[\"HTTP_HOST\"]?></title>" fullword
@@ -5540,7 +5540,7 @@ rule WebShell_php_webshells_matamu {
 	meta:
 		description = "PHP Webshells Github Archive - file matamu.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "d477aae6bd2f288b578dbf05c1c46b3aaa474733"
 	strings:
 		$s2 = "$command .= ' -F';" fullword
@@ -5556,7 +5556,7 @@ rule WebShell_ru24_post_sh {
 	meta:
 		description = "PHP Webshells Github Archive - file ru24_post_sh.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "d2c18766a1cd4dda928c12ff7b519578ccec0769"
 	strings:
 		$s1 = "http://www.ru24-team.net" fullword
@@ -5571,7 +5571,7 @@ rule WebShell_hiddens_shell_v1 {
 	meta:
 		description = "PHP Webshells Github Archive - file hiddens shell v1.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "1674bd40eb98b48427c547bf9143aa7fbe2f4a59"
 	strings:
 		$s0 = "<?$d='G7mHWQ9vvXiL/QX2oZ2VTDpo6g3FYAa6X+8DMIzcD0eHZaBZH7jFpZzUz7XNenxSYvBP2Wy36U"
@@ -5582,7 +5582,7 @@ rule WebShell_c99_madnet {
 	meta:
 		description = "PHP Webshells Github Archive - file c99_madnet.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "17613df393d0a99fd5bea18b2d4707f566cff219"
 	strings:
 		$s0 = "$md5_pass = \"\"; //If no pass then hash" fullword
@@ -5597,7 +5597,7 @@ rule WebShell_c99_locus7s {
 	meta:
 		description = "PHP Webshells Github Archive - file c99_locus7s.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "d413d4700daed07561c9f95e1468fb80238fbf3c"
 	strings:
 		$s8 = "$encoded = base64_encode(file_get_contents($d.$f)); " fullword
@@ -5612,7 +5612,7 @@ rule WebShell_JspWebshell_1_2 {
 	meta:
 		description = "PHP Webshells Github Archive - file JspWebshell_1.2.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "0bed4a1966117dd872ac9e8dceceb54024a030fa"
 	strings:
 		$s0 = "System.out.println(\"CreateAndDeleteFolder is error:\"+ex); " fullword
@@ -5628,7 +5628,7 @@ rule WebShell_safe0ver {
 	meta:
 		description = "PHP Webshells Github Archive - file safe0ver.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "366639526d92bd38ff7218b8539ac0f154190eb8"
 	strings:
 		$s3 = "$scriptident = \"$scriptTitle By Evilc0der.com\";" fullword
@@ -5645,7 +5645,7 @@ rule WebShell_Uploader {
 	meta:
 		description = "PHP Webshells Github Archive - file Uploader.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "e216c5863a23fde8a449c31660fd413d77cce0b7"
 	strings:
 		$s1 = "move_uploaded_file($userfile, \"entrika.php\"); " fullword
@@ -5656,7 +5656,7 @@ rule WebShell_php_webshells_kral {
 	meta:
 		description = "PHP Webshells Github Archive - file kral.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "4cd1d1a2fd448cecc605970e3a89f3c2e5c80dfc"
 	strings:
 		$s1 = "$adres=gethostbyname($ip);" fullword
@@ -5672,7 +5672,7 @@ rule WebShell_cgitelnet {
 	meta:
 		description = "PHP Webshells Github Archive - file cgitelnet.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "72e5f0e4cd438e47b6454de297267770a36cbeb3"
 	strings:
 		$s9 = "# Author Homepage: http://www.rohitab.com/" fullword
@@ -5686,7 +5686,7 @@ rule WebShell_simple_backdoor {
 	meta:
 		description = "PHP Webshells Github Archive - file simple-backdoor.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "edcd5157a68fa00723a506ca86d6cbb8884ef512"
 	strings:
 		$s0 = "<!-- Simple PHP backdoor by DK (http://michaeldaw.org) -->" fullword
@@ -5705,7 +5705,7 @@ rule WebShell_Safe_Mode_Bypass_PHP_4_4_2_and_PHP_5_1_2_2 {
 	meta:
 		description = "PHP Webshells Github Archive - file Safe_Mode Bypass PHP 4.4.2 and PHP 5.1.2.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "8fdd4e0e87c044177e9e1c97084eb5b18e2f1c25"
 	strings:
 		$s1 = "<option value=\"/etc/passwd\">Get /etc/passwd</option>" fullword
@@ -5719,7 +5719,7 @@ rule WebShell_NTDaddy_v1_9 {
 	meta:
 		description = "PHP Webshells Github Archive - file NTDaddy v1.9.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "79519aa407fff72b7510c6a63c877f2e07d7554b"
 	strings:
 		$s2 = "|     -obzerve : mr_o@ihateclowns.com |" fullword
@@ -5733,7 +5733,7 @@ rule WebShell_lamashell {
 	meta:
 		description = "PHP Webshells Github Archive - file lamashell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "b71181e0d899b2b07bc55aebb27da6706ea1b560"
 	strings:
 		$s0 = "if(($_POST['exe']) == \"Execute\") {" fullword
@@ -5749,7 +5749,7 @@ rule WebShell_Simple_PHP_backdoor_by_DK {
 	meta:
 		description = "PHP Webshells Github Archive - file Simple_PHP_backdoor_by_DK.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "03f6215548ed370bec0332199be7c4f68105274e"
 	strings:
 		$s0 = "<!-- Simple PHP backdoor by DK (http://michaeldaw.org) -->" fullword
@@ -5764,7 +5764,7 @@ rule WebShell_Moroccan_Spamers_Ma_EditioN_By_GhOsT {
 	meta:
 		description = "PHP Webshells Github Archive - file Moroccan Spamers Ma-EditioN By GhOsT.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "31e5473920a2cc445d246bc5820037d8fe383201"
 	strings:
 		$s4 = "$content = chunk_split(base64_encode($content)); " fullword
@@ -5777,7 +5777,7 @@ rule WebShell_C99madShell_v__2_0_madnet_edition {
 	meta:
 		description = "PHP Webshells Github Archive - file C99madShell v. 2.0 madnet edition.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "f99f8228eb12746847f54bad45084f19d1a7e111"
 	strings:
 		$s0 = "$md5_pass = \"\"; //If no pass then hash" fullword
@@ -5792,7 +5792,7 @@ rule WebShell_CmdAsp_asp_php {
 	meta:
 		description = "PHP Webshells Github Archive - file CmdAsp.asp.php.txt"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "cb18e1ac11e37e236e244b96c2af2d313feda696"
 	strings:
 		$s1 = "szTempFile = \"C:\\\" & oFileSys.GetTempName( )" fullword
@@ -5811,7 +5811,7 @@ rule WebShell_NCC_Shell {
 	meta:
 		description = "PHP Webshells Github Archive - file NCC-Shell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "64d4495875a809b2730bd93bec2e33902ea80a53"
 	strings:
 		$s0 = " if (isset($_FILES['probe']) and ! $_FILES['probe']['error']) {" fullword
@@ -5827,7 +5827,7 @@ rule WebShell_php_webshells_README {
 	meta:
 		description = "PHP Webshells Github Archive - file README.md"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "ef2c567b4782c994db48de0168deb29c812f7204"
 	strings:
 		$s0 = "Common php webshells. Do not host the file(s) in your server!" fullword
@@ -5839,7 +5839,7 @@ rule WebShell_backupsql {
 	meta:
 		description = "PHP Webshells Github Archive - file backupsql.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "863e017545ec8e16a0df5f420f2d708631020dd4"
 	strings:
 		$s0 = "$headers .= \"\\nMIME-Version: 1.0\\n\" .\"Content-Type: multipart/mixed;\\n\" ."
@@ -5854,7 +5854,7 @@ rule WebShell_AK_74_Security_Team_Web_Shell_Beta_Version {
 	meta:
 		description = "PHP Webshells Github Archive - file AK-74 Security Team Web Shell Beta Version.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "c90b0ba575f432ecc08f8f292f3013b5532fe2c4"
 	strings:
 		$s8 = "- AK-74 Security Team Web Site: www.ak74-team.net" fullword
@@ -5867,7 +5867,7 @@ rule WebShell_php_webshells_cpanel {
 	meta:
 		description = "PHP Webshells Github Archive - file cpanel.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "433dab17106b175c7cf73f4f094e835d453c0874"
 	strings:
 		$s0 = "function ftp_check($host,$user,$pass,$timeout){" fullword
@@ -5883,7 +5883,7 @@ rule WebShell_accept_language {
 	meta:
 		description = "PHP Webshells Github Archive - file accept_language.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "180b13576f8a5407ab3325671b63750adbcb62c9"
 	strings:
 		$s0 = "<?php passthru(getenv(\"HTTP_ACCEPT_LANGUAGE\")); echo '<br> by q1w2e3r4'; ?>" fullword
@@ -5894,7 +5894,7 @@ rule WebShell_php_webshells_529 {
 	meta:
 		description = "PHP Webshells Github Archive - file 529.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "ba3fb2995528307487dff7d5b624d9f4c94c75d3"
 	strings:
 		$s0 = "<p>More: <a href=\"/\">Md5Cracking.Com Crew</a> " fullword
@@ -5911,7 +5911,7 @@ rule WebShell_STNC_WebShell_v0_8 {
 	meta:
 		description = "PHP Webshells Github Archive - file STNC WebShell v0.8.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "52068c9dff65f1caae8f4c60d0225708612bb8bc"
 	strings:
 		$s3 = "if(isset($_POST[\"action\"])) $action = $_POST[\"action\"];" fullword
@@ -5924,7 +5924,7 @@ rule WebShell_php_webshells_tryag {
 	meta:
 		description = "PHP Webshells Github Archive - file tryag.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "42d837e9ab764e95ed11b8bd6c29699d13fe4c41"
 	strings:
 		$s1 = "<title>TrYaG Team - TrYaG.php - Edited By KingDefacer</title>" fullword
@@ -5939,7 +5939,7 @@ rule WebShell_dC3_Security_Crew_Shell_PRiV_2 {
 	meta:
 		description = "PHP Webshells Github Archive - file dC3 Security Crew Shell PRiV.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "9077eb05f4ce19c31c93c2421430dd3068a37f17"
 	strings:
 		$s0 = "@rmdir($_GET['file']) or die (\"[-]Error deleting dir!\");" fullword
@@ -5954,7 +5954,7 @@ rule WebShell_qsd_php_backdoor {
 	meta:
 		description = "PHP Webshells Github Archive - file qsd-php-backdoor.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "4856bce45fc5b3f938d8125f7cdd35a8bbae380f"
 	strings:
 		$s1 = "// A robust backdoor script made by Daniel Berliner - http://www.qsdconsulting.c"
@@ -5968,7 +5968,7 @@ rule WebShell_php_webshells_spygrup {
 	meta:
 		description = "PHP Webshells Github Archive - file spygrup.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "12f9105332f5dc5d6360a26706cd79afa07fe004"
 	strings:
 		$s2 = "kingdefacer@msn.com</FONT></CENTER></B>\");" fullword
@@ -5982,7 +5982,7 @@ rule WebShell_Web_shell__c_ShAnKaR {
 	meta:
 		description = "PHP Webshells Github Archive - file Web-shell (c)ShAnKaR.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "3dd4f25bd132beb59d2ae0c813373c9ea20e1b7a"
 	strings:
 		$s0 = "header(\"Content-Length: \".filesize($_POST['downf']));" fullword
@@ -5996,7 +5996,7 @@ rule WebShell_Ayyildiz_Tim___AYT__Shell_v_2_1_Biz {
 	meta:
 		description = "PHP Webshells Github Archive - file Ayyildiz Tim  -AYT- Shell v 2.1 Biz.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "5fe8c1d01dc5bc70372a8a04410faf8fcde3cb68"
 	strings:
 		$s7 = "<meta name=\"Copyright\" content=TouCh By iJOo\">" fullword
@@ -6010,7 +6010,7 @@ rule WebShell_Gamma_Web_Shell {
 	meta:
 		description = "PHP Webshells Github Archive - file Gamma Web Shell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "7ef773df7a2f221468cc8f7683e1ace6b1e8139a"
 	strings:
 		$s4 = "$ok_commands = ['ls', 'ls -l', 'pwd', 'uptime'];" fullword
@@ -6024,7 +6024,7 @@ rule WebShell_php_webshells_aspydrv {
 	meta:
 		description = "PHP Webshells Github Archive - file aspydrv.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "3d8996b625025dc549d73cdb3e5fa678ab35d32a"
 	strings:
 		$s0 = "Target = \"D:\\hshome\\masterhr\\masterhr.com\\\"  ' ---Directory to which files"
@@ -6039,7 +6039,7 @@ rule WebShell_JspWebshell_1_2_2 {
 	meta:
 		description = "PHP Webshells Github Archive - file JspWebshell 1.2.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "184fc72b51d1429c44a4c8de43081e00967cf86b"
 	strings:
 		$s0 = "System.out.println(\"CreateAndDeleteFolder is error:\"+ex); " fullword
@@ -6054,7 +6054,7 @@ rule WebShell_g00nshell_v1_3 {
 	meta:
 		description = "PHP Webshells Github Archive - file g00nshell-v1.3.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "70fe072e120249c9e2f0a8e9019f984aea84a504"
 	strings:
 		$s10 = "#To execute commands, simply include ?cmd=___ in the url. #" fullword
@@ -6069,7 +6069,7 @@ rule WebShell_WinX_Shell {
 	meta:
 		description = "PHP Webshells Github Archive - file WinX Shell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "a94d65c168344ad9fa406d219bdf60150c02010e"
 	strings:
 		$s4 = "// It's simple shell for all Win OS." fullword
@@ -6084,7 +6084,7 @@ rule WebShell_PHANTASMA {
 	meta:
 		description = "PHP Webshells Github Archive - file PHANTASMA.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "cd12d42abf854cd34ff9e93a80d464620af6d75e"
 	strings:
 		$s12 = "\"    printf(\\\"Usage: %s [Host] <port>\\\\n\\\", argv[0]);\\n\" ." fullword
@@ -6098,7 +6098,7 @@ rule WebShell_php_webshells_cw {
 	meta:
 		description = "PHP Webshells Github Archive - file cw.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "e65e0670ef6edf0a3581be6fe5ddeeffd22014bf"
 	strings:
 		$s1 = "// Dump Database [pacucci.com]" fullword
@@ -6114,7 +6114,7 @@ rule WebShell_php_include_w_shell {
 	meta:
 		description = "PHP Webshells Github Archive - file php-include-w-shell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "1a7f4868691410830ad954360950e37c582b0292"
 	strings:
 		$s13 = "# dump variables (DEBUG SCRIPT) NEEDS MODIFINY FOR B64 STATUS!!" fullword
@@ -6127,7 +6127,7 @@ rule WebShell_mysql_tool {
 	meta:
 		description = "PHP Webshells Github Archive - file mysql_tool.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "c9cf8cafcd4e65d1b57fdee5eef98f0f2de74474"
 	strings:
 		$s12 = "$dump .= \"-- Dumping data for table '$table'\\n\";" fullword
@@ -6139,7 +6139,7 @@ rule WebShell_PhpSpy_Ver_2006 {
 	meta:
 		description = "PHP Webshells Github Archive - file PhpSpy Ver 2006.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "34a89e0ab896c3518d9a474b71ee636ca595625d"
 	strings:
 		$s2 = "var_dump(@$shell->RegRead($_POST['readregname']));" fullword
@@ -6153,7 +6153,7 @@ rule WebShell_ZyklonShell {
 	meta:
 		description = "PHP Webshells Github Archive - file ZyklonShell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "3fa7e6f3566427196ac47551392e2386a038d61c"
 	strings:
 		$s0 = "The requested URL /Nemo/shell/zyklonshell.txt was not found on this server.<P>" fullword
@@ -6167,7 +6167,7 @@ rule WebShell_php_webshells_myshell {
 	meta:
 		description = "PHP Webshells Github Archive - file myshell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "5bd52749872d1083e7be076a5e65ffcde210e524"
 	strings:
 		$s0 = "if($ok==false &&$status && $autoErrorTrap)system($command . \" 1> /tmp/outpu"
@@ -6181,7 +6181,7 @@ rule WebShell_php_webshells_lolipop {
 	meta:
 		description = "PHP Webshells Github Archive - file lolipop.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "86f23baabb90c93465e6851e40104ded5a5164cb"
 	strings:
 		$s3 = "$commander = $_POST['commander']; " fullword
@@ -6194,7 +6194,7 @@ rule WebShell_simple_cmd {
 	meta:
 		description = "PHP Webshells Github Archive - file simple_cmd.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "466a8caf03cdebe07aa16ad490e54744f82e32c2"
 	strings:
 		$s1 = "<input type=TEXT name=\"-cmd\" size=64 value=\"<?=$cmd?>\" " fullword
@@ -6208,7 +6208,7 @@ rule WebShell_go_shell {
 	meta:
 		description = "PHP Webshells Github Archive - file go-shell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "3dd85981bec33de42c04c53d081c230b5fc0e94f"
 	strings:
 		$s0 = "#change this password; for power security - delete this file =)" fullword
@@ -6223,7 +6223,7 @@ rule WebShell_aZRaiLPhp_v1_0 {
 	meta:
 		description = "PHP Webshells Github Archive - file aZRaiLPhp v1.0.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "a2c609d1a8c8ba3d706d1d70bef69e63f239782b"
 	strings:
 		$s0 = "<font size='+1'color='#0000FF'>aZRaiLPhP'nin URL'si: http://$HTTP_HOST$RED"
@@ -6237,7 +6237,7 @@ rule WebShell_webshells_zehir4 {
 	meta:
 		description = "Webshells Github Archive - file zehir4"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "788928ae87551f286d189e163e55410acbb90a64"
 		score = 55
 	strings:
@@ -6250,7 +6250,7 @@ rule WebShell_zehir4_asp_php {
 	meta:
 		description = "PHP Webshells Github Archive - file zehir4.asp.php.txt"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "1d9b78b5b14b821139541cc0deb4cbbd994ce157"
 	strings:
 		$s4 = "response.Write \"<title>zehir3 --> powered by zehir &lt;zehirhacker@hotmail.com&"
@@ -6263,7 +6263,7 @@ rule WebShell_php_webshells_lostDC {
 	meta:
 		description = "PHP Webshells Github Archive - file lostDC.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "d54fe07ea53a8929620c50e3a3f8fb69fdeb1cde"
 	strings:
 		$s0 = "$info .= '[~]Server: ' .$_SERVER['HTTP_HOST'] .'<br />';" fullword
@@ -6278,7 +6278,7 @@ rule WebShell_CasuS_1_5 {
 	meta:
 		description = "PHP Webshells Github Archive - file CasuS 1.5.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "7eee8882ad9b940407acc0146db018c302696341"
 	strings:
 		$s2 = "<font size='+1'color='#0000FF'><u>CasuS 1.5'in URL'si</u>: http://$HTTP_HO"
@@ -6291,7 +6291,7 @@ rule WebShell_ftpsearch {
 	meta:
 		description = "PHP Webshells Github Archive - file ftpsearch.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "c945f597552ccb8c0309ad6d2831c8cabdf4e2d6"
 	strings:
 		$s0 = "echo \"[-] Error : coudn't read /etc/passwd\";" fullword
@@ -6305,7 +6305,7 @@ rule WebShell__Cyber_Shell_cybershell_Cyber_Shell__v_1_0_ {
 	meta:
 		description = "PHP Webshells Github Archive - from files Cyber Shell.php, cybershell.php, Cyber Shell (v 1.0).php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		super_rule = 1
 		hash0 = "ef7f7c45d26614cea597f2f8e64a85d54630fe38"
 		hash1 = "cabf47b96e3b2c46248f075bdbc46197db28a25f"
@@ -6322,7 +6322,7 @@ rule WebShell__Ajax_PHP_Command_Shell_Ajax_PHP_Command_Shell_soldierofallah {
 	meta:
 		description = "PHP Webshells Github Archive - from files Ajax_PHP Command Shell.php, Ajax_PHP_Command_Shell.php, soldierofallah.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		super_rule = 1
 		hash0 = "fa11deaee821ca3de7ad1caafa2a585ee1bc8d82"
 		hash1 = "c0a4ba3e834fb63e0a220a43caaf55c654f97429"
@@ -6342,7 +6342,7 @@ rule WebShell_Generic_PHP_7 {
 	meta:
 		description = "PHP Webshells Github Archive"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		super_rule = 1
 		hash0 = "de98f890790756f226f597489844eb3e53a867a9"
 		hash1 = "128988c8ef5294d51c908690d27f69dffad4e42e"
@@ -6360,7 +6360,7 @@ rule WebShell__Small_Web_Shell_by_ZaCo_small_zaco_zacosmall {
 	meta:
 		description = "PHP Webshells Github Archive - from files Small Web Shell by ZaCo.php, small.php, zaco.php, zacosmall.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		super_rule = 1
 		hash0 = "b148ead15d34a55771894424ace2a92983351dda"
 		hash1 = "e4ba288f6d46dc77b403adf7d411a280601c635b"
@@ -6378,7 +6378,7 @@ rule WebShell_Generic_PHP_8 {
 	meta:
 		description = "PHP Webshells Github Archive"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		super_rule = 1
 		hash0 = "fc1ae242b926d70e32cdb08bbe92628bc5bd7f99"
 		hash1 = "9ad55629c4576e5a31dd845012d13a08f1c1f14e"
@@ -6397,7 +6397,7 @@ rule WebShell__PH_Vayv_PHVayv_PH_Vayv_klasvayv_asp_php {
 	meta:
 		description = "PHP Webshells Github Archive - from files PH Vayv.php, PHVayv.php, PH_Vayv.php, klasvayv.asp.php.txt"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		super_rule = 1
 		hash0 = "b51962a1ffa460ec793317571fc2f46042fd13ee"
 		hash1 = "408ac9ca3d435c0f78bda370b33e84ba25afc357"
@@ -6415,7 +6415,7 @@ rule WebShell__PH_Vayv_PHVayv_PH_Vayv_klasvayv_asp_php {
 rule WebShell_Generic_PHP_9 {
    meta:
       description = "PHP Webshells Github Archive - from files KAdot Universal Shell v0.1.6.php, KAdot_Universal_Shell_v0.1.6.php, KA_uShell 0.1.6.php"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       super_rule = 1
       date = "2014/04/06"
       modified = "2022-12-06"
@@ -6437,7 +6437,7 @@ rule WebShell__PH_Vayv_PHVayv_PH_Vayv {
 	meta:
 		description = "PHP Webshells Github Archive - from files PH Vayv.php, PHVayv.php, PH_Vayv.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		super_rule = 1
 		hash0 = "b51962a1ffa460ec793317571fc2f46042fd13ee"
 		hash1 = "408ac9ca3d435c0f78bda370b33e84ba25afc357"
@@ -6453,7 +6453,7 @@ rule WebShell__PH_Vayv_PHVayv_PH_Vayv {
 rule WebShell_Generic_PHP_1 {
    meta:
       description = "PHP Webshells Github Archive - from files Dive Shell 1.0"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       super_rule = 1
       score = 70
       date = "2014/04/06"
@@ -6474,7 +6474,7 @@ rule WebShell_Generic_PHP_2 {
 	meta:
 		description = "PHP Webshells Github Archive - from files CrystalShell v.1.php, load_shell.php, Loaderz WEB Shell.php, stres.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		super_rule = 1
 		hash0 = "335a0851304acedc3f117782b61479bbc0fd655a"
 		hash1 = "ca9fcfb50645dc0712abdf18d613ed2196e66241"
@@ -6493,7 +6493,7 @@ rule WebShell__CrystalShell_v_1_erne_stres {
 	meta:
 		description = "PHP Webshells Github Archive - from files CrystalShell v.1.php, erne.php, stres.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		super_rule = 1
 		hash0 = "335a0851304acedc3f117782b61479bbc0fd655a"
 		hash1 = "6eb4ab630bd25bec577b39fb8a657350bf425687"
@@ -6514,7 +6514,7 @@ rule WebShell_Generic_PHP_3 {
 	meta:
 		description = "PHP Webshells Github Archive"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		super_rule = 1
 		hash0 = "d829e87b3ce34460088c7775a60bded64e530cd4"
 		hash1 = "d710c95d9f18ec7c76d9349a28dd59c3605c02be"
@@ -6533,7 +6533,7 @@ rule WebShell_Generic_PHP_4 {
 	meta:
 		description = "PHP Webshells Github Archive - from files CrystalShell v.1.php, load_shell.php, nshell.php, Loaderz WEB Shell.php, stres.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		super_rule = 1
 		hash0 = "335a0851304acedc3f117782b61479bbc0fd655a"
 		hash1 = "ca9fcfb50645dc0712abdf18d613ed2196e66241"
@@ -6556,7 +6556,7 @@ rule WebShell_GFS {
 	meta:
 		description = "PHP Webshells Github Archive - from files GFS web-shell ver 3.1.7 - PRiV8.php, Predator.php, GFS_web-shell_ver_3.1.7_-_PRiV8.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		super_rule = 1
 		hash0 = "c2f1ef6b11aaec255d4dd31efad18a3869a2a42c"
 		hash1 = "34f6640985b07009dbd06cd70983451aa4fe9822"
@@ -6572,7 +6572,7 @@ rule WebShell__CrystalShell_v_1_sosyete_stres {
 	meta:
 		description = "PHP Webshells Github Archive - from files CrystalShell v.1.php, sosyete.php, stres.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		super_rule = 1
 		hash0 = "335a0851304acedc3f117782b61479bbc0fd655a"
 		hash1 = "e32405e776e87e45735c187c577d3a4f98a64059"
@@ -6592,7 +6592,7 @@ rule WebShell_Generic_PHP_10 {
 	meta:
 		description = "PHP Webshells Github Archive - from files Cyber Shell.php, cybershell.php, Cyber Shell (v 1.0).php, PHPRemoteView.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		super_rule = 1
 		hash0 = "ef7f7c45d26614cea597f2f8e64a85d54630fe38"
 		hash1 = "cabf47b96e3b2c46248f075bdbc46197db28a25f"
@@ -6612,7 +6612,7 @@ rule WebShell_Generic_PHP_11 {
 	meta:
 		description = "PHP Webshells Github Archive - from files rootshell.php, Rootshell.v.1.0.php, s72 Shell v1.1 Coding.php, s72_Shell_v1.1_Coding.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		super_rule = 1
 		hash0 = "31a82cbee8dffaf8eb7b73841f3f3e8e9b3e78cf"
 		hash1 = "838c7191cb10d5bb0fc7460b4ad0c18c326764c6"
@@ -6634,7 +6634,7 @@ rule WebShell__findsock_php_findsock_shell_php_reverse_shell {
 	meta:
 		description = "PHP Webshells Github Archive - from files findsock.c, php-findsock-shell.php, php-reverse-shell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		super_rule = 1
 		hash0 = "5622c9841d76617bfc3cd4cab1932d8349b7044f"
 		hash1 = "4a20f36035bbae8e342aab0418134e750b881d05"
@@ -6648,7 +6648,7 @@ rule WebShell_Generic_PHP_6 {
 	meta:
 		description = "PHP Webshells Github Archive"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		super_rule = 1
 		hash0 = "1a08f5260c4a2614636dfc108091927799776b13"
 		hash1 = "335a0851304acedc3f117782b61479bbc0fd655a"
@@ -6670,7 +6670,7 @@ rule Unpack_Injectt {
 	meta:
 		description = "Webshells Auto-generated - file Injectt.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "8a5d2158a566c87edc999771e12d42c5"
 	strings:
 		$s2 = "%s -Run                              -->To Install And Run The Service"
@@ -6683,7 +6683,7 @@ rule HYTop_DevPack_fso {
 	meta:
 		description = "Webshells Auto-generated - file fso.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "b37f3cde1a08890bd822a182c3a881f6"
 	strings:
 		$s0 = "<!-- PageFSO Below -->"
@@ -6695,7 +6695,7 @@ rule FeliksPack3___PHP_Shells_ssh {
 	meta:
 		description = "Webshells Auto-generated - file ssh.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "1aa5307790d72941589079989b4f900e"
 	strings:
 		$s0 = "eval(gzinflate(str_rot13(base64_decode('"
@@ -6706,7 +6706,7 @@ rule Debug_BDoor {
 	meta:
 		description = "Webshells Auto-generated - file BDoor.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "e4e8e31dd44beb9320922c5f49739955"
 	strings:
 		$s1 = "\\BDoor\\"
@@ -6718,7 +6718,7 @@ rule bin_Client {
 	meta:
 		description = "Webshells Auto-generated - file Client.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "5f91a5b46d155cacf0cc6673a2a5461b"
 	strings:
 		$s0 = "Recieved respond from server!!"
@@ -6732,7 +6732,7 @@ rule ZXshell2_0_rar_Folder_ZXshell {
 	meta:
 		description = "Webshells Auto-generated - file ZXshell.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "246ce44502d2f6002d720d350e26c288"
 	strings:
 		$s0 = "WPreviewPagesn"
@@ -6744,7 +6744,7 @@ rule RkNTLoad {
 	meta:
 		description = "Webshells Auto-generated - file RkNTLoad.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "262317c95ced56224f136ba532b8b34f"
 	strings:
 		$s1 = "$Info: This file is packed with the UPX executable packer http://upx.tsx.org $"
@@ -6762,7 +6762,7 @@ rule binder2_binder2 {
 	meta:
 		description = "Webshells Auto-generated - file binder2.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "d594e90ad23ae0bc0b65b59189c12f11"
 	strings:
 		$s0 = "IsCharAlphaNumericA"
@@ -6778,7 +6778,7 @@ rule thelast_orice2 {
 	meta:
 		description = "Webshells Auto-generated - file orice2.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "aa63ffb27bde8d03d00dda04421237ae"
 	strings:
 		$s0 = " $aa = $_GET['aa'];"
@@ -6790,7 +6790,7 @@ rule FSO_s_sincap {
 	meta:
 		description = "Webshells Auto-generated - file sincap.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "dc5c2c2392b84a1529abd92e98e9aa5b"
 	strings:
 		$s0 = "    <font color=\"#E5E5E5\" style=\"font-size: 8pt; font-weight: 700\" face=\"Arial\">"
@@ -6802,7 +6802,7 @@ rule PhpShell {
 	meta:
 		description = "Webshells Auto-generated - file PhpShell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "539baa0d39a9cf3c64d65ee7a8738620"
 	strings:
 		$s2 = "href=\"http://www.gimpster.com/wiki/PhpShell\">www.gimpster.com/wiki/PhpShell</a>."
@@ -6813,7 +6813,7 @@ rule HYTop_DevPack_config {
 	meta:
 		description = "Webshells Auto-generated - file config.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "b41d0e64e64a685178a3155195921d61"
 	strings:
 		$s0 = "const adminPassword=\""
@@ -6826,7 +6826,7 @@ rule sendmail {
 	meta:
 		description = "Webshells Auto-generated - file sendmail.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "75b86f4a21d8adefaf34b3a94629bd17"
 	strings:
 		$s3 = "_NextPyC808"
@@ -6838,7 +6838,7 @@ rule FSO_s_zehir4 {
 	meta:
 		description = "Webshells Auto-generated - file zehir4.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "5b496a61363d304532bcf52ee21f5d55"
 	strings:
 		$s5 = " byMesaj "
@@ -6849,7 +6849,7 @@ rule hkshell_hkshell {
 	meta:
 		description = "Webshells Auto-generated - file hkshell.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "168cab58cee59dc4706b3be988312580"
 	strings:
 		$s1 = "PrSessKERNELU"
@@ -6862,7 +6862,7 @@ rule iMHaPFtp {
 	meta:
 		description = "Webshells Auto-generated - file iMHaPFtp.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "12911b73bc6a5d313b494102abcf5c57"
 	strings:
 		$s1 = "echo \"\\t<th class=\\\"permission_header\\\"><a href=\\\"$self?{$d}sort=permission$r\\\">"
@@ -6873,7 +6873,7 @@ rule Unpack_TBack {
 	meta:
 		description = "Webshells Auto-generated - file TBack.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "a9d1007823bf96fb163ab38726b48464"
 	strings:
 		$s5 = "\\final\\new\\lcc\\public.dll"
@@ -6884,7 +6884,7 @@ rule DarkSpy105 {
 	meta:
 		description = "Webshells Auto-generated - file DarkSpy105.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "f0b85e7bec90dba829a3ede1ab7d8722"
 	strings:
 		$s7 = "Sorry,DarkSpy got an unknown exception,please re-run it,thanks!"
@@ -6895,7 +6895,7 @@ rule EditServer_EXE {
 	meta:
 		description = "Webshells Auto-generated - file EditServer.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "f945de25e0eba3bdaf1455b3a62b9832"
 	strings:
 		$s2 = "Server %s Have Been Configured"
@@ -6908,7 +6908,7 @@ rule FSO_s_reader {
 	meta:
 		description = "Webshells Auto-generated - file reader.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "b598c8b662f2a1f6cc61f291fb0a6fa2"
 	strings:
 		$s2 = "mailto:mailbomb@hotmail."
@@ -6919,7 +6919,7 @@ rule ASP_CmdAsp {
 	meta:
 		description = "Webshells Auto-generated - file CmdAsp.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "79d4f3425f7a89befb0ef3bafe5e332f"
 	strings:
 		$s2 = "' -- Read the output from our command and remove the temp file -- '"
@@ -6932,7 +6932,7 @@ rule KA_uShell {
 	meta:
 		description = "Webshells Auto-generated - file KA_uShell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "685f5d4f7f6751eaefc2695071569aab"
 	strings:
 		$s5 = "if(empty($_SERVER['PHP_AUTH_PW']) || $_SERVER['PHP_AUTH_PW']<>$pass"
@@ -6944,7 +6944,7 @@ rule PHP_Backdoor_v1 {
 	meta:
 		description = "Webshells Auto-generated - file PHP Backdoor v1.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "0506ba90759d11d78befd21cabf41f3d"
 	strings:
 
@@ -6957,7 +6957,7 @@ rule svchostdll {
 	meta:
 		description = "Webshells Auto-generated - file svchostdll.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "0f6756c8cb0b454c452055f189e4c3f4"
 	strings:
 		$s0 = "InstallService"
@@ -6976,7 +6976,7 @@ rule HYTop_DevPack_server {
 	meta:
 		description = "Webshells Auto-generated - file server.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "1d38526a215df13c7373da4635541b43"
 	strings:
 		$s0 = "<!-- PageServer Below -->"
@@ -6987,7 +6987,7 @@ rule vanquish {
 	meta:
 		description = "Webshells Auto-generated - file vanquish.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "684450adde37a93e8bb362994efc898c"
 	strings:
 		$s3 = "You cannot delete protected files/folders! Instead, your attempt has been logged"
@@ -7000,7 +7000,7 @@ rule winshell {
 	meta:
 		description = "Webshells Auto-generated - file winshell.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "3144410a37dd4c29d004a814a294ea26"
 	strings:
 		$s0 = "Software\\Microsoft\\Windows\\CurrentVersion\\RunServices"
@@ -7019,7 +7019,7 @@ rule FSO_s_remview {
 	meta:
 		description = "Webshells Auto-generated - file remview.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "b4a09911a5b23e00b55abe546ded691c"
 	strings:
 		$s2 = "      echo \"<hr size=1 noshade>\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\""
@@ -7032,7 +7032,7 @@ rule saphpshell {
 	meta:
 		description = "Webshells Auto-generated - file saphpshell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "d7bba8def713512ddda14baf9cd6889a"
 	strings:
 		$s0 = "<td><input type=\"text\" name=\"command\" size=\"60\" value=\"<?=$_POST['command']?>"
@@ -7043,7 +7043,7 @@ rule HYTop2006_rar_Folder_2006Z {
 	meta:
 		description = "Webshells Auto-generated - file 2006Z.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "fd1b6129abd4ab177fed135e3b665488"
 	strings:
 		$s1 = "wangyong,czy,allen,lcx,Marcos,kEvin1986,myth"
@@ -7055,7 +7055,7 @@ rule admin_ad {
 	meta:
 		description = "Webshells Auto-generated - file admin-ad.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "e6819b8f8ff2f1073f7d46a0b192f43b"
 	strings:
 		$s6 = "<td align=\"center\"> <input name=\"cmd\" type=\"text\" id=\"cmd\" siz"
@@ -7067,7 +7067,7 @@ rule FSO_s_casus15 {
 	meta:
 		description = "Webshells Auto-generated - file casus15.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "8d155b4239d922367af5d0a1b89533a3"
 	strings:
 		$s6 = "if((is_dir(\"$deldir/$file\")) AND ($file!=\".\") AND ($file!=\"..\"))"
@@ -7078,7 +7078,7 @@ rule BIN_Client {
 	meta:
 		description = "Webshells Auto-generated - file Client.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "9f0a74ec81bc2f26f16c5c172b80eca7"
 	strings:
 		$s0 = "=====Remote Shell Closed====="
@@ -7094,7 +7094,7 @@ rule shelltools_g0t_root_uptime {
 	meta:
 		description = "Webshells Auto-generated - file uptime.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "d1f56102bc5d3e2e37ab3ffa392073b9"
 	strings:
 		$s0 = "JDiamondCSlC~"
@@ -7109,7 +7109,7 @@ rule Simple_PHP_BackDooR {
 	meta:
 		description = "Webshells Auto-generated - file Simple_PHP_BackDooR.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "a401132363eecc3a1040774bec9cb24f"
 	strings:
 		$s0 = "<hr>to browse go to http://<? echo $SERVER_NAME.$REQUEST_URI; ?>?d=[directory he"
@@ -7122,7 +7122,7 @@ rule sig_2005Gray {
 	meta:
 		description = "Webshells Auto-generated - file 2005Gray.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "75dbe3d3b70a5678225d3e2d78b604cc"
 	strings:
 		$s0 = "SCROLLBAR-FACE-COLOR: #e8e7e7;"
@@ -7136,7 +7136,7 @@ rule DllInjection {
 	meta:
 		description = "Webshells Auto-generated - file DllInjection.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "a7b92283a5102886ab8aee2bc5c8d718"
 	strings:
 		$s0 = "\\BDoor\\DllInjecti"
@@ -7147,7 +7147,7 @@ rule Mithril_v1_45_Mithril {
 	meta:
 		description = "Webshells Auto-generated - file Mithril.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "f1484f882dc381dde6eaa0b80ef64a07"
 	strings:
 		$s2 = "cress.exe"
@@ -7159,7 +7159,7 @@ rule hkshell_hkrmv {
 	meta:
 		description = "Webshells Auto-generated - file hkrmv.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "bd3a0b7a6b5536f8d96f50956560e9bf"
 	strings:
 		$s5 = "/THUMBPOSITION7"
@@ -7171,7 +7171,7 @@ rule phpshell {
 	meta:
 		description = "Webshells Auto-generated - file phpshell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "1dccb1ea9f24ffbd085571c88585517b"
 	strings:
 		$s1 = "echo \"<input size=\\\"100\\\" type=\\\"text\\\" name=\\\"newfile\\\" value=\\\"$inputfile\\\"><b"
@@ -7184,7 +7184,7 @@ rule FSO_s_cmd {
 	meta:
 		description = "Webshells Auto-generated - file cmd.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "cbe8e365d41dd3cd8e462ca434cf385f"
 	strings:
 		$s0 = "<%= \"\\\\\" & oScriptNet.ComputerName & \"\\\" & oScriptNet.UserName %>"
@@ -7196,7 +7196,7 @@ rule FeliksPack3___PHP_Shells_phpft {
 	meta:
 		description = "Webshells Auto-generated - file phpft.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "60ef80175fcc6a879ca57c54226646b1"
 	strings:
 		$s6 = "PHP Files Thief"
@@ -7208,7 +7208,7 @@ rule FSO_s_indexer {
 	meta:
 		description = "Webshells Auto-generated - file indexer.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "135fc50f85228691b401848caef3be9e"
 	strings:
 		$s3 = "<td>Nereye :<td><input type=\"text\" name=\"nereye\" size=25></td><td><input type=\"r"
@@ -7219,7 +7219,7 @@ rule r57shell {
 	meta:
 		description = "Webshells Auto-generated - file r57shell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "8023394542cddf8aee5dec6072ed02b5"
 	strings:
 		$s11 = " $_POST['cmd']=\"echo \\\"Now script try connect to"
@@ -7230,7 +7230,7 @@ rule bdcli100 {
 	meta:
 		description = "Webshells Auto-generated - file bdcli100.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "b12163ac53789fb4f62e4f17a8c2e028"
 	strings:
 		$s5 = "unable to connect to "
@@ -7242,7 +7242,7 @@ rule HYTop_DevPack_2005Red {
 	meta:
 		description = "Webshells Auto-generated - file 2005Red.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "d8ccda2214b3f6eabd4502a050eb8fe8"
 	strings:
 		$s0 = "scrollbar-darkshadow-color:#FF9DBB;"
@@ -7255,7 +7255,7 @@ rule HYTop2006_rar_Folder_2006X2 {
 	meta:
 		description = "Webshells Auto-generated - file 2006X2.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "cc5bf9fc56d404ebbc492855393d7620"
 	strings:
 		$s2 = "Powered By "
@@ -7267,7 +7267,7 @@ rule rdrbs084 {
 	meta:
 		description = "Webshells Auto-generated - file rdrbs084.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "ed30327b255816bdd7590bf891aa0020"
 	strings:
 		$s0 = "Create mapped port. You have to specify domain when using HTTP type."
@@ -7279,7 +7279,7 @@ rule HYTop_CaseSwitch_2005 {
 	meta:
 		description = "Webshells Auto-generated - file 2005.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "8bf667ee9e21366bc0bd3491cb614f41"
 	strings:
 		$s1 = "MSComDlg.CommonDialog"
@@ -7297,7 +7297,7 @@ rule eBayId_index3 {
 	meta:
 		description = "Webshells Auto-generated - file index3.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "0412b1e37f41ea0d002e4ed11608905f"
 	strings:
 		$s8 = "$err = \"<i>Your Name</i> Not Entered!</font></h2>Sorry, \\\"You"
@@ -7308,7 +7308,7 @@ rule FSO_s_phvayv {
 	meta:
 		description = "Webshells Auto-generated - file phvayv.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "205ecda66c443083403efb1e5c7f7878"
 	strings:
 		$s2 = "wrap=\"OFF\">XXXX</textarea></font><font face"
@@ -7319,7 +7319,7 @@ rule byshell063_ntboot {
 	meta:
 		description = "Webshells Auto-generated - file ntboot.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "99b5f49db6d6d9a9faeffb29fd8e6d8c"
 	strings:
 		$s0 = "SYSTEM\\CurrentControlSet\\Services\\NtBoot"
@@ -7333,7 +7333,7 @@ rule FSO_s_casus15_2 {
 	meta:
 		description = "Webshells Auto-generated - file casus15.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "8d155b4239d922367af5d0a1b89533a3"
 	strings:
 		$s0 = "copy ( $dosya_gonder"
@@ -7344,7 +7344,7 @@ rule installer {
 	meta:
 		description = "Webshells Auto-generated - file installer.cmd"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "a507919ae701cf7e42fa441d3ad95f8f"
 	strings:
 		$s0 = "Restore Old Vanquish"
@@ -7356,7 +7356,7 @@ rule FSO_s_remview_2 {
 	meta:
 		description = "Webshells Auto-generated - file remview.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "b4a09911a5b23e00b55abe546ded691c"
 	strings:
 		$s0 = "<xmp>$out</"
@@ -7368,7 +7368,7 @@ rule FeliksPack3___PHP_Shells_r57 {
 	meta:
 		description = "Webshells Auto-generated - file r57.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "903908b77a266b855262cdbce81c3f72"
 	strings:
 		$s1 = "$sql = \"LOAD DATA INFILE \\\"\".$_POST['test3_file']."
@@ -7379,7 +7379,7 @@ rule HYTop2006_rar_Folder_2006X {
 	meta:
 		description = "Webshells Auto-generated - file 2006X.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "cf3ee0d869dd36e775dfcaa788db8e4b"
 	strings:
 		$s1 = "<input name=\"password\" type=\"password\" id=\"password\""
@@ -7391,7 +7391,7 @@ rule FSO_s_phvayv_2 {
 	meta:
 		description = "Webshells Auto-generated - file phvayv.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "205ecda66c443083403efb1e5c7f7878"
 	strings:
 		$s2 = "rows=\"24\" cols=\"122\" wrap=\"OFF\">XXXX</textarea></font><font"
@@ -7402,7 +7402,7 @@ rule elmaliseker {
 	meta:
 		description = "Webshells Auto-generated - file elmaliseker.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "ccf48af0c8c09bbd038e610a49c9862e"
 	strings:
 		$s0 = "javascript:Command('Download'"
@@ -7414,7 +7414,7 @@ rule shelltools_g0t_root_resolve {
 	meta:
 		description = "Webshells Auto-generated - file resolve.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "69bf9aa296238610a0e05f99b5540297"
 	strings:
 		$s0 = "3^n6B(Ed3"
@@ -7431,7 +7431,7 @@ rule FSO_s_RemExp {
 	meta:
 		description = "Webshells Auto-generated - file RemExp.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "b69670ecdbb40012c73686cd22696eeb"
 	strings:
 		$s1 = "<td bgcolor=\"<%=BgColor%>\" title=\"<%=SubFolder.Name%>\"> <a href= \"<%=Request.Ser"
@@ -7444,7 +7444,7 @@ rule FSO_s_tool {
 	meta:
 		description = "Webshells Auto-generated - file tool.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "3a1e1e889fdd974a130a6a767b42655b"
 	strings:
 		$s7 = "\"\"%windir%\\\\calc.exe\"\")"
@@ -7455,7 +7455,7 @@ rule FeliksPack3___PHP_Shells_2005 {
 	meta:
 		description = "Webshells Auto-generated - file 2005.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "97f2552c2fafc0b2eb467ee29cc803c8"
 	strings:
 		$s0 = "window.open(\"\"&url&\"?id=edit&path=\"+sfile+\"&op=copy&attrib=\"+attrib+\"&dpath=\"+lp"
@@ -7467,7 +7467,7 @@ rule byloader {
 	meta:
 		description = "Webshells Auto-generated - file byloader.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "0f0d6dc26055653f5844ded906ce52df"
 	strings:
 		$s0 = "SYSTEM\\CurrentControlSet\\Services\\NtfsChk"
@@ -7482,7 +7482,7 @@ rule shelltools_g0t_root_Fport {
 	meta:
 		description = "Webshells Auto-generated - file Fport.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "dbb75488aa2fa22ba6950aead1ef30d5"
 	strings:
 		$s4 = "Copyright 2000 by Foundstone, Inc."
@@ -7494,7 +7494,7 @@ rule BackDooR__fr_ {
 	meta:
 		description = "Webshells Auto-generated - file BackDooR (fr).php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "a79cac2cf86e073a832aaf29a664f4be"
 	strings:
 		$s3 = "print(\"<p align=\\\"center\\\"><font size=\\\"5\\\">Exploit include "
@@ -7505,7 +7505,7 @@ rule FSO_s_ntdaddy {
 	meta:
 		description = "Webshells Auto-generated - file ntdaddy.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "f6262f3ad9f73b8d3e7d9ea5ec07a357"
 	strings:
 		$s1 = "<input type=\"text\" name=\".CMD\" size=\"45\" value=\"<%= szCMD %>\"> <input type=\"s"
@@ -7516,7 +7516,7 @@ rule nstview_nstview {
 	meta:
 		description = "Webshells Auto-generated - file nstview.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "3871888a0c1ac4270104918231029a56"
 	strings:
 		$s4 = "open STDIN,\\\"<&X\\\";open STDOUT,\\\">&X\\\";open STDERR,\\\">&X\\\";exec(\\\"/bin/sh -i\\\");"
@@ -7527,7 +7527,7 @@ rule HYTop_DevPack_upload {
 	meta:
 		description = "Webshells Auto-generated - file upload.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "b09852bda534627949f0259828c967de"
 	strings:
 		$s0 = "<!-- PageUpload Below -->"
@@ -7538,7 +7538,7 @@ rule PasswordReminder {
 	meta:
 		description = "Webshells Auto-generated - file PasswordReminder.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "ea49d754dc609e8bfa4c0f95d14ef9bf"
 	strings:
 		$s3 = "The encoded password is found at 0x%8.8lx and has a length of %d."
@@ -7549,7 +7549,7 @@ rule Pack_InjectT {
 	meta:
 		description = "Webshells Auto-generated - file InjectT.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "983b74ccd57f6195a0584cdfb27d55e8"
 	strings:
 		$s3 = "ail To Open Registry"
@@ -7564,7 +7564,7 @@ rule FSO_s_RemExp_2 {
 	meta:
 		description = "Webshells Auto-generated - file RemExp.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "b69670ecdbb40012c73686cd22696eeb"
 	strings:
 		$s2 = " Then Response.Write \""
@@ -7576,7 +7576,7 @@ rule FSO_s_c99 {
 	meta:
 		description = "Webshells Auto-generated - file c99.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "5f9ba02eb081bba2b2434c603af454d0"
 	strings:
 		$s2 = "\"txt\",\"conf\",\"bat\",\"sh\",\"js\",\"bak\",\"doc\",\"log\",\"sfc\",\"cfg\",\"htacce"
@@ -7587,7 +7587,7 @@ rule rknt_zip_Folder_RkNT {
 	meta:
 		description = "Webshells Auto-generated - file RkNT.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "5f97386dfde148942b7584aeb6512b85"
 	strings:
 		$s0 = "PathStripPathA"
@@ -7604,7 +7604,7 @@ rule dbgntboot {
 	meta:
 		description = "Webshells Auto-generated - file dbgntboot.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "4d87543d4d7f73c1529c9f8066b475ab"
 	strings:
 		$s2 = "now DOS is working at mode %d,faketype %d,against %s,has worked %d minutes,by sp"
@@ -7616,7 +7616,7 @@ rule PHP_shell {
 	meta:
 		description = "Webshells Auto-generated - file shell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "45e8a00567f8a34ab1cccc86b4bc74b9"
 	strings:
 		$s0 = "AR8iROET6mMnrqTpC6W1Kp/DsTgxNby9H1xhiswfwgoAtED0y6wEXTihoAtICkIX6L1+vTUYWuWz"
@@ -7628,7 +7628,7 @@ rule hxdef100 {
 	meta:
 		description = "Webshells Auto-generated - file hxdef100.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "55cc1769cef44910bd91b7b73dee1f6c"
 	strings:
 		$s0 = "RtlAnsiStringToUnicodeString"
@@ -7641,7 +7641,7 @@ rule rdrbs100 {
 	meta:
 		description = "Webshells Auto-generated - file rdrbs100.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "7c752bcd6da796d80a6830c61a632bff"
 	strings:
 		$s3 = "Server address must be IP in A.B.C.D format."
@@ -7653,7 +7653,7 @@ rule Mithril_Mithril {
 	meta:
 		description = "Webshells Auto-generated - file Mithril.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "017191562d72ab0ca551eb89256650bd"
 	strings:
 		$s0 = "OpenProcess error!"
@@ -7671,7 +7671,7 @@ rule hxdef100_2 {
 	meta:
 		description = "Webshells Auto-generated - file hxdef100.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "1b393e2e13b9c57fb501b7cd7ad96b25"
 	strings:
 		$s0 = "\\\\.\\mailslot\\hxdef-rkc000"
@@ -7684,7 +7684,7 @@ rule Release_dllTest {
 	meta:
 		description = "Webshells Auto-generated - file dllTest.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "76a59fc3242a2819307bb9d593bef2e0"
 	strings:
 		$s0 = ";;;Y;`;d;h;l;p;t;x;|;"
@@ -7704,7 +7704,7 @@ rule webadmin {
 	meta:
 		description = "Webshells Auto-generated - file webadmin.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "3a90de401b30e5b590362ba2dde30937"
 	strings:
 		$s0 = "<input name=\\\"editfilename\\\" type=\\\"text\\\" class=\\\"style1\\\" value='\".$this->inpu"
@@ -7715,7 +7715,7 @@ rule commands {
 	meta:
 		description = "Webshells Auto-generated - file commands.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "174486fe844cb388e2ae3494ac2d1ec2"
 	strings:
 		$s1 = "If CheckRecord(\"SELECT COUNT(ID) FROM VictimDetail WHERE VictimID = \" & VictimID"
@@ -7727,7 +7727,7 @@ rule hkdoordll {
 	meta:
 		description = "Webshells Auto-generated - file hkdoordll.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "b715c009d47686c0e62d0981efce2552"
 	strings:
 		$s6 = "Can't uninstall,maybe the backdoor is not installed or,the Password you INPUT is"
@@ -7738,7 +7738,7 @@ rule r57shell_2 {
 	meta:
 		description = "Webshells Auto-generated - file r57shell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "8023394542cddf8aee5dec6072ed02b5"
 	strings:
 		$s2 = "echo \"<br>\".ws(2).\"HDD Free : <b>\".view_size($free).\"</b> HDD Total : <b>\".view_"
@@ -7749,7 +7749,7 @@ rule Mithril_v1_45_dllTest {
 	meta:
 		description = "Webshells Auto-generated - file dllTest.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "1b9e518aaa62b15079ff6edb412b21e9"
 	strings:
 		$s3 = "syspath"
@@ -7762,7 +7762,7 @@ rule dbgiis6cli {
 	meta:
 		description = "Webshells Auto-generated - file dbgiis6cli.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "3044dceb632b636563f66fee3aaaf8f3"
 	strings:
 		$s0 = "User-Agent: Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0)"
@@ -7774,7 +7774,7 @@ rule remview_2003_04_22 {
 	meta:
 		description = "Webshells Auto-generated - file remview_2003_04_22.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "17d3e4e39fbca857344a7650f7ea55e3"
 	strings:
 		$s1 = "\"<b>\".mm(\"Eval PHP code\").\"</b> (\".mm(\"don't type\").\" \\\"&lt;?\\\""
@@ -7785,7 +7785,7 @@ rule FSO_s_test {
 	meta:
 		description = "Webshells Auto-generated - file test.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "82cf7b48da8286e644f575b039a99c26"
 	strings:
 		$s0 = "$yazi = \"test\" . \"\\r\\n\";"
@@ -7797,7 +7797,7 @@ rule Debug_cress {
 	meta:
 		description = "Webshells Auto-generated - file cress.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "36a416186fe010574c9be68002a7286a"
 	strings:
 		$s0 = "\\Mithril "
@@ -7809,7 +7809,7 @@ rule webshell {
 	meta:
 		description = "Webshells Auto-generated - file webshell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "f2f8c02921f29368234bfb4d4622ad19"
 	strings:
 		$s0 = "RhViRYOzz"
@@ -7824,7 +7824,7 @@ rule FSO_s_EFSO_2 {
 	meta:
 		description = "Webshells Auto-generated - file EFSO_2.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "a341270f9ebd01320a7490c12cb2e64c"
 	strings:
 		$s0 = ";!+/DRknD7+.\\mDrC(V+kcJznndm\\f|nzKuJb'r@!&0KUY@*Jb@#@&Xl\"dKVcJ\\CslU,),@!0KxD~mKV"
@@ -7836,7 +7836,7 @@ rule thelast_index3 {
 	meta:
 		description = "Webshells Auto-generated - file index3.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "cceff6dc247aaa25512bad22120a14b4"
 	strings:
 		$s5 = "$err = \"<i>Your Name</i> Not Entered!</font></h2>Sorry, \\\"Your Name\\\" field is r"
@@ -7847,7 +7847,7 @@ rule adjustcr {
 	meta:
 		description = "Webshells Auto-generated - file adjustcr.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "17037fa684ef4c90a25ec5674dac2eb6"
 	strings:
 		$s0 = "$Info: This file is packed with the UPX executable packer $"
@@ -7861,7 +7861,7 @@ rule FeliksPack3___PHP_Shells_xIShell {
 	meta:
 		description = "Webshells Auto-generated - file xIShell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "997c8437c0621b4b753a546a53a88674"
 	strings:
 		$s3 = "if (!$nix) { $xid = implode(explode(\"\\\\\",$xid),\"\\\\\\\\\");}echo (\"<td><a href='Java"
@@ -7872,7 +7872,7 @@ rule HYTop_AppPack_2005 {
 	meta:
 		description = "Webshells Auto-generated - file 2005.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "63d9fd24fa4d22a41fc5522fc7050f9f"
 	strings:
 		$s6 = "\" onclick=\"this.form.sqlStr.value='e:\\hytop.mdb"
@@ -7883,7 +7883,7 @@ rule xssshell {
 	meta:
 		description = "Webshells Auto-generated - file xssshell.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "8fc0ffc5e5fbe85f7706ffc45b3f79b4"
 	strings:
 		$s1 = "if( !getRequest(COMMANDS_URL + \"?v=\" + VICTIM + \"&r=\" + generateID(), \"pushComma"
@@ -7894,7 +7894,7 @@ rule FeliksPack3___PHP_Shells_usr {
 	meta:
 		description = "Webshells Auto-generated - file usr.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "ade3357520325af50c9098dc8a21a024"
 	strings:
 		$s0 = "<?php $id_info = array('notify' => 'off','sub' => 'aasd','s_name' => 'nurullahor"
@@ -7905,7 +7905,7 @@ rule FSO_s_phpinj {
 	meta:
 		description = "Webshells Auto-generated - file phpinj.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "dd39d17e9baca0363cc1c3664e608929"
 	strings:
 		$s4 = "echo '<a href='.$expurl.'> Click Here to Exploit </a> <br />';"
@@ -7916,7 +7916,7 @@ rule xssshell_db {
 	meta:
 		description = "Webshells Auto-generated - file db.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "cb62e2ec40addd4b9930a9e270f5b318"
 	strings:
 		$s8 = "'// By Ferruh Mavituna | http://ferruh.mavituna.com"
@@ -7927,7 +7927,7 @@ rule PHP_sh {
 	meta:
 		description = "Webshells Auto-generated - file sh.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "1e9e879d49eb0634871e9b36f99fe528"
 	strings:
 		$s1 = "\"@$SERVER_NAME \".exec(\"pwd\")"
@@ -7938,7 +7938,7 @@ rule xssshell_default {
 	meta:
 		description = "Webshells Auto-generated - file default.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "d156782ae5e0b3724de3227b42fcaf2f"
 	strings:
 		$s3 = "If ProxyData <> \"\" Then ProxyData = Replace(ProxyData, DATA_SEPERATOR, \"<br />\")"
@@ -7949,7 +7949,7 @@ rule EditServer_2 {
 	meta:
 		description = "Webshells Auto-generated - file EditServer.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "5c1f25a4d206c83cdfb006b3eb4c09ba"
 	strings:
 		$s0 = "@HOTMAIL.COM"
@@ -7962,7 +7962,7 @@ rule by064cli {
 	meta:
 		description = "Webshells Auto-generated - file by064cli.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "10e0dff366968b770ae929505d2a9885"
 	strings:
 		$s7 = "packet dropped,redirecting"
@@ -7974,7 +7974,7 @@ rule Mithril_dllTest {
 	meta:
 		description = "Webshells Auto-generated - file dllTest.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "a8d25d794d8f08cd4de0c3d6bf389e6d"
 	strings:
 		$s0 = "please enter the password:"
@@ -7986,7 +7986,7 @@ rule peek_a_boo {
 	meta:
 		description = "Webshells Auto-generated - file peek-a-boo.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "aca339f60d41fdcba83773be5d646776"
 	strings:
 		$s0 = "__vbaHresultCheckObj"
@@ -8002,7 +8002,7 @@ rule fmlibraryv3 {
 	meta:
 		description = "Webshells Auto-generated - file fmlibraryv3.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "c34c248fed6d5a20d8203924a2088acc"
 	strings:
 		$s3 = "ExeNewRs.CommandText = \"UPDATE \" & tablename & \" SET \" & ExeNewRsValues & \" WHER"
@@ -8013,7 +8013,7 @@ rule Debug_dllTest_2 {
 	meta:
 		description = "Webshells Auto-generated - file dllTest.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "1b9e518aaa62b15079ff6edb412b21e9"
 	strings:
 		$s4 = "\\Debug\\dllTest.pdb"
@@ -8025,7 +8025,7 @@ rule connector {
 	meta:
 		description = "Webshells Auto-generated - file connector.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "3ba1827fca7be37c8296cd60be9dc884"
 	strings:
 		$s2 = "If ( AttackID = BROADCAST_ATTACK )"
@@ -8037,7 +8037,7 @@ rule shelltools_g0t_root_HideRun {
 	meta:
 		description = "Webshells Auto-generated - file HideRun.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "45436d9bfd8ff94b71eeaeb280025afe"
 	strings:
 		$s0 = "Usage -- hiderun [AppName]"
@@ -8049,7 +8049,7 @@ rule PHP_Shell_v1_7 {
 	meta:
 		description = "Webshells Auto-generated - file PHP_Shell_v1.7.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "b5978501c7112584532b4ca6fb77cba5"
 	strings:
 		$s8 = "<title>[ADDITINAL TITTLE]-phpShell by:[YOURNAME]"
@@ -8060,7 +8060,7 @@ rule xssshell_save {
 	meta:
 		description = "Webshells Auto-generated - file save.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "865da1b3974e940936fe38e8e1964980"
 	strings:
 		$s4 = "RawCommand = Command & COMMAND_SEPERATOR & Param & COMMAND_SEPERATOR & AttackID"
@@ -8072,7 +8072,7 @@ rule screencap {
 	meta:
 		description = "Webshells Auto-generated - file screencap.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "51139091dea7a9418a50f2712ea72aa6"
 	strings:
 		$s0 = "GetDIBColorTable"
@@ -8085,7 +8085,7 @@ rule FSO_s_phpinj_2 {
 	meta:
 		description = "Webshells Auto-generated - file phpinj.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "dd39d17e9baca0363cc1c3664e608929"
 	strings:
 		$s9 = "<? system(\\$_GET[cpc]);exit; ?>' ,0 ,0 ,0 ,0 INTO"
@@ -8096,7 +8096,7 @@ rule ZXshell2_0_rar_Folder_zxrecv {
 	meta:
 		description = "Webshells Auto-generated - file zxrecv.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "5d3d12a39f41d51341ef4cb7ce69d30f"
 	strings:
 		$s0 = "RyFlushBuff"
@@ -8113,7 +8113,7 @@ rule FSO_s_ajan {
 	meta:
 		description = "Webshells Auto-generated - file ajan.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "22194f8c44524f80254e1b5aec67b03e"
 	strings:
 		$s4 = "entrika.write \"BinaryStream.SaveToFile"
@@ -8124,7 +8124,7 @@ rule c99shell {
 	meta:
 		description = "Webshells Auto-generated - file c99shell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "90b86a9c63e2cd346fe07cea23fbfc56"
 	strings:
 		$s0 = "<br />Input&nbsp;URL:&nbsp;&lt;input&nbsp;name=\\\"uploadurl\\\"&nbsp;type=\\\"text\\\"&"
@@ -8135,7 +8135,7 @@ rule phpspy_2005_full {
 	meta:
 		description = "Webshells Auto-generated - file phpspy_2005_full.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "d1c69bb152645438440e6c903bac16b2"
 	strings:
 		$s7 = "echo \"  <td align=\\\"center\\\" nowrap valign=\\\"top\\\"><a href=\\\"?downfile=\".urlenco"
@@ -8146,7 +8146,7 @@ rule FSO_s_zehir4_2 {
 	meta:
 		description = "Webshells Auto-generated - file zehir4.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "5b496a61363d304532bcf52ee21f5d55"
 	strings:
 		$s4 = "\"Program Files\\Serv-u\\Serv"
@@ -8157,7 +8157,7 @@ rule FSO_s_indexer_2 {
 	meta:
 		description = "Webshells Auto-generated - file indexer.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "135fc50f85228691b401848caef3be9e"
 	strings:
 		$s5 = "<td>Nerden :<td><input type=\"text\" name=\"nerden\" size=25 value=index.html></td>"
@@ -8168,7 +8168,7 @@ rule HYTop_DevPack_2005 {
 	meta:
 		description = "Webshells Auto-generated - file 2005.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "63d9fd24fa4d22a41fc5522fc7050f9f"
 	strings:
 		$s7 = "theHref=encodeForUrl(mid(replace(lcase(list.path),lcase(server.mapPath(\"/\")),\"\")"
@@ -8181,7 +8181,7 @@ rule _root_040_zip_Folder_deploy {
 	meta:
 		description = "Webshells Auto-generated - file deploy.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "2c9f9c58999256c73a5ebdb10a9be269"
 	strings:
 		$s5 = "halon synscan 127.0.0.1 1-65536"
@@ -8194,7 +8194,7 @@ rule by063cli {
 	meta:
 		description = "Webshells Auto-generated - file by063cli.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "49ce26eb97fd13b6d92a5e5d169db859"
 	strings:
 		$s2 = "#popmsghello,are you all right?"
@@ -8206,7 +8206,7 @@ rule icyfox007v1_10_rar_Folder_asp {
 	meta:
 		description = "Webshells Auto-generated - file asp.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "2c412400b146b7b98d6e7755f7159bb9"
 	strings:
 		$s0 = "<SCRIPT RUNAT=SERVER LANGUAGE=JAVASCRIPT>eval(Request.form('#')+'')</SCRIPT>"
@@ -8218,7 +8218,7 @@ rule byshell063_ntboot_2 {
 	meta:
 		description = "Webshells Auto-generated - file ntboot.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "cb9eb5a6ff327f4d6c46aacbbe9dda9d"
 	strings:
 		$s6 = "OK,job was done,cuz we have localsystem & SE_DEBUG_NAME:)"
@@ -8229,7 +8229,7 @@ rule u_uay {
 	meta:
 		description = "Webshells Auto-generated - file uay.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "abbc7b31a24475e4c5d82fc4c2b8c7c4"
 	strings:
 		$s1 = "exec \"c:\\WINDOWS\\System32\\freecell.exe"
@@ -8241,7 +8241,7 @@ rule bin_wuaus {
 	meta:
 		description = "Webshells Auto-generated - file wuaus.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "46a365992bec7377b48a2263c49e4e7d"
 	strings:
 		$s1 = "9(90989@9V9^9f9n9v9"
@@ -8257,7 +8257,7 @@ rule pwreveal {
 	meta:
 		description = "Webshells Auto-generated - file pwreveal.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "b4e8447826a45b76ca45ba151a97ad50"
 	strings:
 		$s0 = "*<Blank - no es"
@@ -8271,7 +8271,7 @@ rule shelltools_g0t_root_xwhois {
 	meta:
 		description = "Webshells Auto-generated - file xwhois.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "0bc98bd576c80d921a3460f8be8816b4"
 	strings:
 		$s1 = "rting! "
@@ -8285,7 +8285,7 @@ rule vanquish_2 {
 	meta:
 		description = "Webshells Auto-generated - file vanquish.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "2dcb9055785a2ee01567f52b5a62b071"
 	strings:
 		$s2 = "Vanquish - DLL injection failed:"
@@ -8296,7 +8296,7 @@ rule down_rar_Folder_down {
 	meta:
 		description = "Webshells Auto-generated - file down.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "db47d7a12b3584a2e340567178886e71"
 	strings:
 		$s0 = "response.write \"<font color=blue size=2>NetBios Name: \\\\\"  & Snet.ComputerName &"
@@ -8307,7 +8307,7 @@ rule cmdShell {
 	meta:
 		description = "Webshells Auto-generated - file cmdShell.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "8a9fef43209b5d2d4b81dfbb45182036"
 	strings:
 		$s1 = "if cmdPath=\"wscriptShell\" then"
@@ -8318,7 +8318,7 @@ rule ZXshell2_0_rar_Folder_nc {
 	meta:
 		description = "Webshells Auto-generated - file nc.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "2cd1bf15ae84c5f6917ddb128827ae8b"
 	strings:
 		$s0 = "WSOCK32.dll"
@@ -8332,7 +8332,7 @@ rule portlessinst {
 	meta:
 		description = "Webshells Auto-generated - file portlessinst.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "74213856fc61475443a91cd84e2a6c2f"
 	strings:
 		$s2 = "Fail To Open Registry"
@@ -8345,7 +8345,7 @@ rule SetupBDoor {
 	meta:
 		description = "Webshells Auto-generated - file SetupBDoor.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "41f89e20398368e742eda4a3b45716b6"
 	strings:
 		$s1 = "\\BDoor\\SetupBDoor"
@@ -8356,7 +8356,7 @@ rule phpshell_3 {
 	meta:
 		description = "Webshells Auto-generated - file phpshell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "e8693a2d4a2ffea4df03bb678df3dc6d"
 	strings:
 		$s3 = "<input name=\"submit_btn\" type=\"submit\" value=\"Execute Command\"></p>"
@@ -8368,7 +8368,7 @@ rule BIN_Server {
 	meta:
 		description = "Webshells Auto-generated - file Server.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "1d5aa9cbf1429bb5b8bf600335916dcd"
 	strings:
 		$s0 = "configserver"
@@ -8384,7 +8384,7 @@ rule HYTop2006_rar_Folder_2006 {
 	meta:
 		description = "Webshells Auto-generated - file 2006.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "c19d6f4e069188f19b08fa94d44bc283"
 	strings:
 		$s6 = "strBackDoor = strBackDoor "
@@ -8395,7 +8395,7 @@ rule r57shell_3 {
 	meta:
 		description = "Webshells Auto-generated - file r57shell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "87995a49f275b6b75abe2521e03ac2c0"
 	strings:
 		$s1 = "<b>\".$_POST['cmd']"
@@ -8406,7 +8406,7 @@ rule HDConfig {
 	meta:
 		description = "Webshells Auto-generated - file HDConfig.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "7d60e552fdca57642fd30462416347bd"
 	strings:
 		$s0 = "An encryption key is derived from the password hash. "
@@ -8421,7 +8421,7 @@ rule FSO_s_ajan_2 {
 	meta:
 		description = "Webshells Auto-generated - file ajan.asp"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		hash = "22194f8c44524f80254e1b5aec67b03e"
 	strings:
 		$s2 = "\"Set WshShell = CreateObject(\"\"WScript.Shell\"\")"
@@ -8434,7 +8434,7 @@ rule Webshell_and_Exploit_CN_APT_HK : Webshell
 {
 meta:
 	license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-	author = "Florian Roth"
+	author = "Florian Roth (Nextron Systems)"
 	description = "Webshell and Exploit Code in relation with APT against Honk Kong protesters"
 	date = "10.10.2014"
 	score = 50
@@ -8449,7 +8449,7 @@ condition:
 rule JSP_Browser_APT_webshell {
 	meta:
 		description = "VonLoesch JSP Browser used as web shell by APT groups - jsp File browser 1.1a"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "10.10.2014"
 		score = 60
 	strings:
@@ -8464,7 +8464,7 @@ rule JSP_Browser_APT_webshell {
 rule JSP_jfigueiredo_APT_webshell {
 	meta:
 		description = "JSP Browser used as web shell by APT groups - author: jfigueiredo"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "12.10.2014"
 		score = 60
 		reference = "http://ceso.googlecode.com/svn/web/bko/filemanager/Browser.jsp"
@@ -8478,7 +8478,7 @@ rule JSP_jfigueiredo_APT_webshell {
 rule JSP_jfigueiredo_APT_webshell_2 {
 	meta:
 		description = "JSP Browser used as web shell by APT groups - author: jfigueiredo"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "12.10.2014"
 		score = 60
 		reference = "http://ceso.googlecode.com/svn/web/bko/filemanager/"
@@ -8495,7 +8495,7 @@ rule Webshell_Insomnia {
 	meta:
 		description = "Insomnia Webshell - file InsomniaShell.aspx"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://www.darknet.org.uk/2014/12/insomniashell-asp-net-reverse-shell-bind-shell/"
 		date = "2014/12/09"
 		hash = "e0cfb2ffaa1491aeaf7d3b4ee840f72d42919d22"
@@ -8517,7 +8517,7 @@ rule HawkEye_PHP_Panel {
 	meta:
 		description = "Detects HawkEye Keyloggers PHP Panel"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/12/14"
 		score = 60
 	strings:
@@ -8534,7 +8534,7 @@ rule SoakSoak_Infected_Wordpress {
 		description = "Detects a SoakSoak infected Wordpress site http://goo.gl/1GzWUX"
 		reference = "http://goo.gl/1GzWUX"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2014/12/15"
 		score = 60
 	strings:
@@ -8549,7 +8549,7 @@ rule Pastebin_Webshell {
 	meta:
 		description = "Detects a web shell that downloads content from pastebin.com http://goo.gl/7dbyZs"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		score = 70
 		date = "13.01.2015"
 		reference = "http://goo.gl/7dbyZs"
@@ -8572,7 +8572,7 @@ rule ASPXspy2 {
 	meta:
 		description = "Web shell - file ASPXspy2.aspx"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "not set"
 		date = "2015/01/24"
 		hash = "5642387d92139bfe9ae11bfef6bfe0081dcea197"
@@ -8608,7 +8608,7 @@ rule Webshell_27_9_c66_c99 {
 	meta:
 		description = "Detects Webshell - rule generated from from files 27.9.txt, c66.php, c99-shadows-mod.php, c99.php ..."
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/nikicat/web-malware-collection"
 		date = "2016-01-11"
 		score = 70
@@ -8634,7 +8634,7 @@ rule Webshell_acid_AntiSecShell_3 {
 	meta:
 		description = "Detects Webshell Acid"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/nikicat/web-malware-collection"
 		date = "2016-01-11"
 		score = 70
@@ -8667,7 +8667,7 @@ rule Webshell_c99_4 {
 	meta:
 		description = "Detects C99 Webshell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/nikicat/web-malware-collection"
 		date = "2016-01-11"
 		score = 70
@@ -8699,7 +8699,7 @@ rule Webshell_r57shell_2 {
 	meta:
 		description = "Detects Webshell R57"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/nikicat/web-malware-collection"
 		date = "2016-01-11"
 		score = 70
@@ -8727,7 +8727,7 @@ rule Webshell_27_9_acid_c99_locus7s {
 	meta:
 		description = "Detects Webshell - rule generated from from files 27.9.txt, acid.php, c99_locus7s.txt"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/nikicat/web-malware-collection"
 		date = "2016-01-11"
 		score = 70
@@ -8750,7 +8750,7 @@ rule Webshell_Backdoor_PHP_Agent_r57_mod_bizzz_shell_r57 {
 	meta:
 		description = "Detects Webshell - rule generated from from files Backdoor.PHP.Agent.php, r57.mod-bizzz.shell.txt ..."
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/nikicat/web-malware-collection"
 		date = "2016-01-11"
 		score = 70
@@ -8776,7 +8776,7 @@ rule Webshell_c100 {
 	meta:
 		description = "Detects Webshell - rule generated from from files c100 v. 777shell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/nikicat/web-malware-collection"
 		date = "2016-01-11"
 		score = 70
@@ -8801,7 +8801,7 @@ rule Webshell_AcidPoison {
 	meta:
 		description = "Detects Poison Sh3ll - Webshell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/nikicat/web-malware-collection"
 		date = "2016-01-11"
 		score = 70
@@ -8825,7 +8825,7 @@ rule Webshell_acid_FaTaLisTiCz_Fx_fx_p0isoN_sh3ll_x0rg_byp4ss_256 {
 	meta:
 		description = "Detects Webshell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/nikicat/web-malware-collection"
 		date = "2016-01-11"
 		score = 70
@@ -8845,7 +8845,7 @@ rule Webshell_Ayyildiz {
 	meta:
 		description = "Detects Webshell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/nikicat/web-malware-collection"
 		date = "2016-01-11"
 		score = 70
@@ -8865,7 +8865,7 @@ rule Webshell_zehir {
 	meta:
 		description = "Detects Webshell - rule generated from from files elmaliseker.asp, zehir.asp, zehir.txt, zehir4.asp, zehir4.txt"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/nikicat/web-malware-collection"
 		date = "2016-01-11"
 		score = 70
@@ -8894,7 +8894,7 @@ rule UploadShell_98038f1efa4203432349badabad76d44337319a6 {
 	meta:
 		description = "Detects a web shell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/bartblaze/PHP-backdoors"
 		date = "2016-09-10"
 		hash1 = "506a6ab6c49e904b4adc1f969c91e4f1a7dde164be549c6440e766de36c93215"
@@ -8910,7 +8910,7 @@ rule DKShell_f0772be3c95802a2d1e7a4a3f5a45dcdef6997f3 {
 	meta:
 		description = "Detects a web shell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/bartblaze/PHP-backdoors"
 		date = "2016-09-10"
 		hash1 = "7ea49d5c29f1242f81f2393b514798ff7caccb50d46c60bdfcf61db00043473b"
@@ -8925,7 +8925,7 @@ rule Unknown_8af033424f9590a15472a23cc3236e68070b952e {
 	meta:
 		description = "Detects a web shell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/bartblaze/PHP-backdoors"
 		date = "2016-09-10"
 		hash1 = "3382b5eaaa9ad651ab4793e807032650667f9d64356676a16ae3e9b02740ccf3"
@@ -8941,7 +8941,7 @@ rule DkShell_4000bd83451f0d8501a9dfad60dce39e55ae167d {
 	meta:
 		description = "Detects a web shell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/bartblaze/PHP-backdoors"
 		date = "2016-09-10"
 		hash1 = "51a16b09520a3e063adf10ff5192015729a5de1add8341a43da5326e626315bd"
@@ -8960,7 +8960,7 @@ rule WebShell_5786d7d9f4b0df731d79ed927fb5a124195fc901 {
 	meta:
 		description = "Detects a web shell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/bartblaze/PHP-backdoors"
 		date = "2016-09-10"
 		hash1 = "b1733cbb0eb3d440c4174cc67ca693ba92308ded5fc1069ed650c3c78b1da4bc"
@@ -8975,7 +8975,7 @@ rule webshell_e8eaf8da94012e866e51547cd63bb996379690bf {
 	meta:
 		description = "Detects a web shell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/bartblaze/PHP-backdoors"
 		date = "2016-09-10"
 		hash1 = "027544baa10259939780e97dc908bd43f0fb940510119fc4cce0883f3dd88275"
@@ -8991,7 +8991,7 @@ rule Unknown_0f06c5d1b32f4994c3b3abf8bb76d5468f105167 {
 	meta:
 		description = "Detects a web shell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/bartblaze/PHP-backdoors"
 		date = "2016-09-10"
 		hash1 = "6362372850ac7455fa9461ed0483032a1886543f213a431f81a2ac76d383b47e"
@@ -9007,7 +9007,7 @@ rule WSOShell_0bbebaf46f87718caba581163d4beed56ddf73a7 {
 	meta:
 		description = "Detects a web shell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/bartblaze/PHP-backdoors"
 		date = "2016-09-10"
 		hash1 = "d053086907aed21fbb6019bf9e644d2bae61c63563c4c3b948d755db3e78f395"
@@ -9022,7 +9022,7 @@ rule WebShell_Generic_1609_A {
 	meta:
 		description = "Auto-generated rule"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/bartblaze/PHP-backdoors"
 		date = "2016-09-10"
 		super_rule = 1
@@ -9038,7 +9038,7 @@ rule Nishang_Webshell {
 	meta:
 		description = "Detects a ASPX web shell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/samratashok/nishang"
 		date = "2016-09-11"
 	strings:
@@ -9064,7 +9064,7 @@ rule PHP_Webshell_1_Feb17 {
    meta:
       description = "Detects a simple cloaked PHP web shell"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://isc.sans.edu/diary/Analysis+of+a+Simple+PHP+Backdoor/22127"
       date = "2017-02-28"
    strings:
@@ -9086,7 +9086,7 @@ rule Webshell_Tiny_JSP_2 {
 	meta:
 		description = "Detects a tiny webshell - chine chopper"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2015-12-05"
 		score = 100
 	strings:
@@ -9109,7 +9109,7 @@ rule Wordpress_Config_Webshell_Preprend {
    meta:
       description = "Webshell that uses standard Wordpress wp-config.php file and appends the malicious code in front of it"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-06-25"
 		score = 65
@@ -9141,7 +9141,7 @@ rule PAS_Webshell_Encoded {
    meta:
       description = "Detects a PAS webshell"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "http://blog.talosintelligence.com/2017/07/the-medoc-connection.html"
       date = "2017-07-11"
       score = 80
@@ -9187,7 +9187,7 @@ rule ALFA_SHELL {
    meta:
       description = "Detects web shell often used by Iranian APT groups"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research - APT33"
       date = "2017-09-21"
       hash1 = "a39d8823d54c55e60a7395772e50d116408804c1a5368391a1e5871dbdc83547"
@@ -9206,7 +9206,7 @@ rule Webshell_FOPO_Obfuscation_APT_ON_Nov17_1 {
    meta:
       description = "Detects malware from NK APT incident DE"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research - ON"
       date = "2017-11-17"
       hash1 = "ed6e2e0027d3f564f5ce438984dc8a54577df822ce56ce079c60c99a91d5ffb1"
@@ -9225,7 +9225,7 @@ rule Webshell_FOPO_Obfuscation_APT_ON_Nov17_1 {
 rule WebShell_JexBoss_JSP_1 {
    meta:
       description = "Detects JexBoss JSPs"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2018-11-08"
       hash1 = "41e0fb374e5d30b2e2a362a2718a5bf16e73127e22f0dfc89fdb17acbe89efdf"
@@ -9243,7 +9243,7 @@ rule WebShell_JexBoss_JSP_1 {
 rule WebShell_JexBoss_WAR_1 {
    meta:
       description = "Detects JexBoss versions in WAR form"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2018-11-08"
       hash1 = "6271775ab144ce9bb9138bf054b149b5813d3beb96338993c6de35330f566092"
@@ -9279,7 +9279,7 @@ rule webshell_tinyasp {
 rule WEBSHELL_ASPX_Mar21_1 {
    meta:
       description = "Detects ASPX Web Shells"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2021-03-12"
       hash1 = "10b6e82125a2ddf3cc31a238e0d0c71a64f902e0d77171766713affede03174d"

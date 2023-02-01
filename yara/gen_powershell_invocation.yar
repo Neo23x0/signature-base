@@ -2,7 +2,7 @@
 rule PowerShell_Susp_Parameter_Combo : HIGHVOL FILE {
    meta:
       description = "Detects PowerShell invocation with suspicious parameters"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/uAic1X"
       date = "2017-03-12"
       modified = "2022-09-15"

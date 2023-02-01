@@ -12,7 +12,7 @@ rule Quasar_RAT_Jan18_1 {
    meta:
       description = "Detects Quasar RAT"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://researchcenter.paloaltonetworks.com/2018/01/unit42-vermin-quasar-rat-custom-malware-used-ukraine/"
       date = "2018-01-29"
       hash1 = "0157b43eb3c20928b77f8700ad8eb279a0aa348921df074cd22ebaff01edaae6"
@@ -35,7 +35,7 @@ rule Vermin_Keylogger_Jan18_1 {
    meta:
       description = "Detects Vermin Keylogger"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://researchcenter.paloaltonetworks.com/2018/01/unit42-vermin-quasar-rat-custom-malware-used-ukraine/"
       date = "2018-01-29"
       hash1 = "74ba162eef84bf13d1d79cb26192a4692c09fed57f321230ddb7668a88e3935d"

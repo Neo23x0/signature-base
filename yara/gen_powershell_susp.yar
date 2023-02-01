@@ -11,7 +11,7 @@ rule WordDoc_PowerShell_URLDownloadToFile {
    meta:
       description = "Detects Word Document with PowerShell URLDownloadToFile"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.arbornetworks.com/blog/asert/additional-insights-shamoon2/"
       date = "2017-02-23"
       super_rule = 1
@@ -32,7 +32,7 @@ rule Suspicious_PowerShell_Code_1 : FILE {
    meta:
       description = "Detects suspicious PowerShell code"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
 		score = 60
       reference = "Internal Research"
       date = "2017-02-22"
@@ -51,7 +51,7 @@ rule Suspicious_PowerShell_WebDownload_1 : HIGHVOL FILE {
    meta:
       description = "Detects suspicious PowerShell code that downloads from web sites"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       score = 60
       reference = "Internal Research"
       date = "2017-02-22"
@@ -92,7 +92,7 @@ rule PowerShell_in_Word_Doc {
    meta:
       description = "Detects a powershell and bypass keyword in a Word document"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research - ME"
       date = "2017-06-27"
       score = 50
@@ -118,7 +118,7 @@ rule Susp_PowerShell_Sep17_1 {
    meta:
       description = "Detects suspicious PowerShell script in combo with VBS or JS "
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-09-30"
       score = 60
@@ -136,7 +136,7 @@ rule Susp_PowerShell_Sep17_2 {
    meta:
       description = "Detects suspicious PowerShell script in combo with VBS or JS "
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-09-30"
       hash1 = "e387f6c7a55b85e0675e3b91e41e5814f5d0ae740b92f26ddabda6d4f69a8ca8"
@@ -157,7 +157,7 @@ rule WScript_Shell_PowerShell_Combo {
    meta:
       description = "Detects malware from Middle Eastern campaign reported by Talos"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "http://blog.talosintelligence.com/2018/02/targeted-attacks-in-middle-east.html"
       date = "2018-02-07"
       score = 50
@@ -179,7 +179,7 @@ rule SUSP_PowerShell_String_K32_RemProcess {
    meta:
       description = "Detects suspicious PowerShell code that uses Kernel32, RemoteProccess handles or shellcode"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/nccgroup/redsnarf"
       date = "2018-03-31"
       hash3 = "54a8dd78ec4798cf034c7765d8b2adfada59ac34d019e77af36dcaed1db18912"
@@ -200,7 +200,7 @@ rule PowerShell_JAB_B64 {
    meta:
       description = "Detects base464 encoded $ sign at the beginning of a string"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/ItsReallyNick/status/980915287922040832"
       date = "2018-04-02"
       score = 60
@@ -214,7 +214,7 @@ rule PowerShell_JAB_B64 {
 rule SUSP_PS1_FromBase64String_Content_Indicator : FILE {
    meta:
       description = "Detects suspicious base64 encoded PowerShell expressions"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://gist.github.com/Neo23x0/6af876ee72b51676c82a2db8d2cd3639"
       date = "2020-01-25"
    strings:

@@ -2,7 +2,7 @@ rule APT_Malware_PutterPanda_Rel {
 	meta:
 		description = "Detects an APT malware related to PutterPanda"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		score = 70
 		reference = "VT Analysis"
 		date = "2015-06-03"
@@ -30,7 +30,7 @@ rule APT_Malware_PutterPanda_Rel_2 {
 	meta:
 		description = "APT Malware related to PutterPanda Group"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		score = 70
 		reference = "VT Analysis"
 		date = "2015-06-03"
@@ -60,7 +60,7 @@ rule APT_Malware_PutterPanda_PSAPI {
 	meta:
 		description = "Detects a malware related to Putter Panda"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		score = 70
 		reference = "VT Analysis"
 		date = "2015-06-03"
@@ -79,7 +79,7 @@ rule APT_Malware_PutterPanda_WUAUCLT {
 	meta:
 		description = "Detects a malware related to Putter Panda"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		score = 70
 		reference = "VT Analysis"
 		date = "2015-06-03"
@@ -129,7 +129,7 @@ rule Malware_MsUpdater_String_in_EXE {
 	meta:
 		description = "MSUpdater String in Executable"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		score = 50
 		reference = "VT Analysis"
 		date = "2015-06-03"
@@ -153,7 +153,7 @@ rule APT_Malware_PutterPanda_MsUpdater_3 {
 	meta:
 		description = "Detects Malware related to PutterPanda - MSUpdater"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		score = 70
 		reference = "VT Analysis"
 		date = "2015-06-03"
@@ -171,7 +171,7 @@ rule APT_Malware_PutterPanda_MsUpdater_1 {
 	meta:
 		description = "Detects Malware related to PutterPanda - MSUpdater"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		score = 70
 		reference = "VT Analysis"
 		date = "2015-06-03"
@@ -195,7 +195,7 @@ rule APT_Malware_PutterPanda_MsUpdater_2 {
 	meta:
 		description = "Detects Malware related to PutterPanda - MSUpdater"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		score = 70
 		reference = "VT Analysis"
 		date = "2015-06-03"
@@ -230,7 +230,7 @@ rule APT_Malware_PutterPanda_Gen4 {
 	meta:
 		description = "Detects Malware related to PutterPanda"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		score = 70
 		reference = "VT Analysis"
 		date = "2015-06-03"

@@ -2,7 +2,7 @@
 rule SUSP_NullSoftInst_Combo_Oct20_1 {
    meta:
       description = "Detects suspicious NullSoft Installer combination with common Copyright strings"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/malwrhunterteam/status/1313023627177193472"
       date = "2020-10-06"
       score = 65

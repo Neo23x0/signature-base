@@ -11,7 +11,7 @@ rule Rombertik_CarbonGrabber {
 	meta:
 		description = "Detects CarbonGrabber alias Rombertik - file Copy#064046.scr"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://blogs.cisco.com/security/talos/rombertik"
 		date = "2015-05-05"
 		hash1 = "2f9b26b90311e62662c5946a1ac600d2996d3758"
@@ -33,7 +33,7 @@ rule Rombertik_CarbonGrabber_Panel_InstallScript {
 	meta:
 		description = "Detects CarbonGrabber alias Rombertik panel install script - file install.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://blogs.cisco.com/security/talos/rombertik"
 		date = "2015-05-05"
 		hash = "cd6c152dd1e0689e0bede30a8bd07fef465fbcfa"
@@ -54,7 +54,7 @@ rule Rombertik_CarbonGrabber_Panel {
 	meta:
 		description = "Detects CarbonGrabber alias Rombertik Panel - file index.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://blogs.cisco.com/security/talos/rombertik"
 		date = "2015-05-05"
 		hash = "e6e9e4fc3772ff33bbeeda51f217e9149db60082"
@@ -73,7 +73,7 @@ rule Rombertik_CarbonGrabber_Builder {
 	meta:
 		description = "Detects CarbonGrabber alias Rombertik Builder - file Builder.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://blogs.cisco.com/security/talos/rombertik"
 		date = "2015-05-05"
 		hash = "b50ecc0ba3d6ec19b53efe505d14276e9e71285f"
@@ -91,7 +91,7 @@ rule Rombertik_CarbonGrabber_Builder_Server {
 	meta:
 		description = "Detects CarbonGrabber alias Rombertik Builder Server - file Server.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://blogs.cisco.com/security/talos/rombertik"
 		date = "2015-05-05"
 		hash = "895fab8d55882eac51d4b27a188aa67205ff0ae5"

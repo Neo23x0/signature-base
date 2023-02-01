@@ -4,7 +4,7 @@ import "pe"
 rule SUSP_NVIDIA_LAPSUS_Leak_Compromised_Cert_Mar22_1 {
    meta:
       description = "Detects a binary signed with the leaked NVIDIA certifcate and compiled after March 1st 2022"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       date = "2022-03-03"
       modified = "2022-03-04"
       score = 70

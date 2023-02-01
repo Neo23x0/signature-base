@@ -12,7 +12,7 @@ rule PowerShell_Case_Anomaly {
    meta:
       description = "Detects obfuscated PowerShell hacktools"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/danielhbohannon/status/905096106924761088"
       date = "2017-08-11"
       modified = "2022-06-12"
@@ -62,7 +62,7 @@ rule WScriptShell_Case_Anomaly {
    meta:
       description = "Detects obfuscated wscript.shell commands"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-09-11"
       modified = "2022-06-09"

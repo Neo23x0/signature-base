@@ -2,7 +2,7 @@
 rule SUSP_LNX_SH_CryptoMiner_Indicators_Dec20_1 {
    meta:
       description = "Detects helper script used in a crypto miner campaign"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.intezer.com/blog/research/new-golang-worm-drops-xmrig-miner-on-servers/"
       date = "2020-12-31"
       hash1 = "3298dbd985c341d57e3219e80839ec5028585d0b0a737c994363443f4439d7a5"
@@ -18,7 +18,7 @@ rule SUSP_LNX_SH_CryptoMiner_Indicators_Dec20_1 {
 rule PUA_WIN_XMRIG_CryptoCoin_Miner_Dec20 {
    meta:
       description = "Detects XMRIG crypto coin miners"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.intezer.com/blog/research/new-golang-worm-drops-xmrig-miner-on-servers/"
       date = "2020-12-31"
       hash1 = "b6154d25b3aa3098f2cee790f5de5a727fc3549865a7aa2196579fe39a86de09"

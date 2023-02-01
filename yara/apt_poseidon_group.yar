@@ -9,7 +9,7 @@ rule PoseidonGroup_Malware {
 	meta:
 		description = "Detects Poseidon Group Malware"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://securelist.com/blog/research/73673/poseidon-group-a-targeted-attack-boutique-specializing-in-global-cyber-espionage/"
 		date = "2016-02-09"
 		modified = "2023-01-27"
@@ -50,7 +50,7 @@ rule PoseidonGroup_MalDoc_1 {
 	meta:
 		description = "Detects Poseidon Group - Malicious Word Document"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://securelist.com/blog/research/73673/poseidon-group-a-targeted-attack-boutique-specializing-in-global-cyber-espionage/"
 		date = "2016-02-09"
 		score = 80
@@ -65,7 +65,7 @@ rule PoseidonGroup_MalDoc_2 {
 	meta:
 		description = "Detects Poseidon Group - Malicious Word Document"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://securelist.com/blog/research/73673/poseidon-group-a-targeted-attack-boutique-specializing-in-global-cyber-espionage/"
 		date = "2016-02-09"
 		score = 70

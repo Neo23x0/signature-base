@@ -53,7 +53,7 @@ rule HKTL_NET_NAME_ADCollector {
 rule HKTL_NET_AdCollector_Sep22_1 {
    meta:
       description = "Detects ADCollector Tool - a lightweight tool to quickly extract valuable information from the Active Directory environment for both attacking and defending"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/dev-2null/ADCollector"
       date = "2022-09-15"
       score = 75

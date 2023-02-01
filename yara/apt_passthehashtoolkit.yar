@@ -11,7 +11,7 @@ rule whosthere_alt {
 	meta:
 		description = "Auto-generated rule - file whosthere-alt.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://www.coresecurity.com/corelabs-research/open-source-tools/pass-hash-toolkit"
 		date = "2015-07-10"
 		score = 80
@@ -33,7 +33,7 @@ rule iam_alt_iam_alt {
 	meta:
 		description = "Auto-generated rule - file iam-alt.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://www.coresecurity.com/corelabs-research/open-source-tools/pass-hash-toolkit"
 		date = "2015-07-10"
 		score = 80
@@ -55,7 +55,7 @@ rule genhash_genhash {
 	meta:
 		description = "Auto-generated rule - file genhash.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://www.coresecurity.com/corelabs-research/open-source-tools/pass-hash-toolkit"
 		date = "2015-07-10"
 		score = 80
@@ -74,7 +74,7 @@ rule iam_iamdll {
 	meta:
 		description = "Auto-generated rule - file iamdll.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://www.coresecurity.com/corelabs-research/open-source-tools/pass-hash-toolkit"
 		date = "2015-07-10"
 		score = 80
@@ -91,7 +91,7 @@ rule iam_iam {
 	meta:
 		description = "Auto-generated rule - file iam.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://www.coresecurity.com/corelabs-research/open-source-tools/pass-hash-toolkit"
 		date = "2015-07-10"
 		score = 80
@@ -112,7 +112,7 @@ rule whosthere_alt_pth {
 	meta:
 		description = "Auto-generated rule - file pth.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://www.coresecurity.com/corelabs-research/open-source-tools/pass-hash-toolkit"
 		date = "2015-07-10"
 		score = 80
@@ -131,7 +131,7 @@ rule whosthere {
 	meta:
 		description = "Auto-generated rule - file whosthere.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://www.coresecurity.com/corelabs-research/open-source-tools/pass-hash-toolkit"
 		date = "2015-07-10"
 		score = 80

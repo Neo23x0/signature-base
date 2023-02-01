@@ -1,7 +1,7 @@
 
 rule SUSP_DeviceGuard_WDS_Evasion {
    meta:
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       description = "Detects WDS file used to circumvent Device Guard"
       score = 70
       date = "2015-01-01"

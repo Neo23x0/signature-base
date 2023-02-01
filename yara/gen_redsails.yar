@@ -12,7 +12,7 @@ rule redSails_EXE {
    meta:
       description = "Detects Red Sails Hacktool by WinDivert references"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/BeetleChunks/redsails"
       date = "2017-10-02"
       hash1 = "7a7861d25b0c038d77838ecbd5ea5674650ad4f5faf7432a6f3cfeb427433fac"
@@ -27,7 +27,7 @@ rule redSails_PY {
    meta:
       description = "Detects Red Sails Hacktool - Python"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/BeetleChunks/redsails"
       date = "2017-10-02"
       hash1 = "6ebedff41992b9536fe9b1b704a29c8c1d1550b00e14055e3c6376f75e462661"

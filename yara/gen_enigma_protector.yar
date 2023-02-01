@@ -9,7 +9,7 @@ rule EnigmaPacker_Rare {
    meta:
       description = "Detects an ENIGMA packed executable"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-04-27"
       score = 60
@@ -24,7 +24,7 @@ rule EnigmaPacker_Rare {
 rule Enigma_Protected_Malware_May17_RhxFiles {
    meta:
       description = "Auto-generated rule - file RhxFiles.dll"
-      author = "Florian Roth with the help of binar.ly"
+      author = "Florian Roth (Nextron Systems) with the help of binar.ly"
       reference = "Internal Research"
       date = "2017-05-02"
       hash1 = "2187d6bd1794bf7b6199962d8a8677f19e4382a124c30933d01aba93cc1f0f15"
@@ -39,7 +39,7 @@ rule Enigma_Protected_Malware_May17_RhxFiles {
 rule Enigma_Protected_Malware {
    meta:
       description = "Detects samples packed by Enigma Protector"
-      author = "Florian Roth with the help of binar.ly"
+      author = "Florian Roth (Nextron Systems) with the help of binar.ly"
       reference = "https://goo.gl/OEVQ9w"
       date = "2017-02-03"
       hash1 = "d4616f9706403a0d5a2f9a8726230a4693e4c95c58df5c753ccc684f1d3542e2"

@@ -2,7 +2,7 @@
 rule VULN_PUA_GIGABYTE_Driver_Jul22_1 {
    meta:
       description = "Detects a vulnerable GIGABYTE driver sometimes used by malicious actors to escalate privileges"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/malmoeb/status/1551449425842786306"
       date = "2022-07-25"
       score = 65

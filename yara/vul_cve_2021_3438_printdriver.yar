@@ -4,7 +4,7 @@ import "pe"
 rule VULN_PrinterDriver_PrivEsc_CVE_2021_3438_Jul21 {
    meta:
       description = "Detects affected drivers with PE timestamps older than the date of the initial report"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://labs.sentinelone.com/cve-2021-3438-16-years-in-hiding-millions-of-printers-worldwide-vulnerable/"
       date = "2021-07-20"
       score = 70

@@ -3,7 +3,7 @@ import "pe"
 rule APT_MAL_REvil_Kaseya_Jul21_1 {
    meta:
       description = "Detects malware used in the Kaseya supply chain attack"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://doublepulsar.com/kaseya-supply-chain-attack-delivers-mass-ransomware-event-to-us-companies-76e4ec6ec64b"
       date = "2021-07-02"
       hash1 = "1fe9b489c25bb23b04d9996e8107671edee69bd6f6def2fe7ece38a0fb35f98e"
@@ -31,7 +31,7 @@ rule APT_MAL_REvil_Kaseya_Jul21_1 {
 rule APT_MAL_REvil_Kaseya_Jul21_2 {
    meta:
       description = "Detects malware used in the Kaseya supply chain attack"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://doublepulsar.com/kaseya-supply-chain-attack-delivers-mass-ransomware-event-to-us-companies-76e4ec6ec64b"
       date = "2021-07-02"
       hash1 = "0496ca57e387b10dfdac809de8a4e039f68e8d66535d5d19ec76d39f7d0a4402"

@@ -2,7 +2,7 @@
 rule MAL_RANSOM_REvil_Oct20_1 {
    meta:
       description = "Detects REvil ransomware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2020-10-13"
       hash1 = "5966c25dc1abcec9d8603b97919db57aac019e5358ee413957927d3c1790b7f4"

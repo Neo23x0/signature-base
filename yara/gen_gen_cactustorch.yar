@@ -12,7 +12,7 @@ rule CACTUSTORCH {
    meta:
       description = "Detects CactusTorch Hacktool"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/mdsecactivebreach/CACTUSTORCH"
       date = "2017-07-31"
       hash1 = "314e6d7d863878b6dca46af165e7f08fedd42c054d7dc3828dc80b86a3a9b98c"

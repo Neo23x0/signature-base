@@ -11,7 +11,7 @@ rule APT_PupyRAT_PY {
    meta:
       description = "Detects Pupy RAT"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.secureworks.com/blog/iranian-pupyrat-bites-middle-eastern-organizations"
       date = "2017-02-17"
       hash1 = "8d89f53b0a6558d6bb9cdbc9f218ef699f3c87dd06bc03dd042290dedc18cb71"
@@ -33,7 +33,7 @@ rule APT_MagicHound_MalMacro {
    meta:
       description = "Detects malicious macro / powershell in Office document"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.secureworks.com/blog/iranian-pupyrat-bites-middle-eastern-organizations"
       date = "2017-02-17"
       super_rule = 1

@@ -12,7 +12,7 @@ rule CHAOS_Payload {
    meta:
       description = "Detects a CHAOS back connect payload"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/tiagorlampert/CHAOS"
       date = "2017-07-15"
       score = 80

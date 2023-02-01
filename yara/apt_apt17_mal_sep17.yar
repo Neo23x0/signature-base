@@ -14,7 +14,7 @@ rule APT17_Malware_Oct17_1 {
    meta:
       description = "Detects APT17 malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/puVc9q"
       date = "2017-10-03"
       hash1 = "dc9b5e8aa6ec86db8af0a7aa897ca61db3e5f3d2e0942e319074db1aaccfdc83"
@@ -31,7 +31,7 @@ rule APT17_Malware_Oct17_2 {
    meta:
       description = "Detects APT17 malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/puVc9q"
       date = "2017-10-03"
       hash1 = "20cd49fd0f244944a8f5ba1d7656af3026e67d170133c1b3546c8b2de38d4f27"
@@ -60,7 +60,7 @@ rule APT17_Unsigned_Symantec_Binary_EFA {
    meta:
       description = "Detects APT17 malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/puVc9q"
       date = "2017-10-03"
       hash1 = "128aca58be325174f0220bd7ca6030e4e206b4378796e82da460055733bb6f4f"
@@ -75,7 +75,7 @@ rule APT17_Malware_Oct17_Gen {
    meta:
       description = "Detects APT17 malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/puVc9q"
       date = "2017-10-03"
       hash1 = "0375b4216334c85a4b29441a3d37e61d7797c2e1cb94b14cf6292449fb25c7b2"

@@ -14,7 +14,7 @@ rule APT_FIN7_Strings_Aug18_1 {
    meta:
       description = "Detects strings from FIN7 report in August 2018"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
       hash1 = "b6354e46af0d69b6998dbed2fceae60a3b207584e08179748e65511d45849b00"
@@ -32,7 +32,7 @@ rule APT_FIN7_Sample_Aug18_2 {
    meta:
       description = "Detects FIN7 malware sample"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
       hash1 = "1513c7630c981e4b1d0d5a55809166721df4f87bb0fac2d2b8ff6afae187f01d"
@@ -50,7 +50,7 @@ rule APT_FIN7_MalDoc_Aug18_1 {
    meta:
       description = "Detects malicious Doc from FIN7 campaign"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
       hash1 = "9c12591c850a2d5355be0ed9b3891ccb3f42e37eaf979ae545f2f008b5d124d6"
@@ -64,7 +64,7 @@ rule APT_FIN7_Sample_Aug18_1 {
    meta:
       description = "Detects FIN7 samples mentioned in FireEye report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
       hash1 = "a1e95ac1bb684186e9fb5c67f75c7c26ddc8b18ebfdaf061742ddf1675e17d55"
@@ -92,7 +92,7 @@ rule APT_FIN7_EXE_Sample_Aug18_1 {
    meta:
       description = "Detects sample from FIN7 report in August 2018"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
       hash1 = "7f16cbe7aa1fbc5b8a95f9d123f45b7e3da144cb88db6e1da3eca38cf88660cb"
@@ -106,7 +106,7 @@ rule APT_FIN7_EXE_Sample_Aug18_2 {
    meta:
       description = "Detects sample from FIN7 report in August 2018"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
       hash1 = "60cd98fc4cb2ae474e9eab81cd34fd3c3f638ad77e4f5d5c82ca46f3471c3020"
@@ -121,7 +121,7 @@ rule APT_FIN7_EXE_Sample_Aug18_3 {
    meta:
       description = "Detects sample from FIN7 report in August 2018"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
       hash1 = "995b90281774798a376db67f906a126257d314efc21b03768941f2f819cf61a6"
@@ -136,7 +136,7 @@ rule APT_FIN7_EXE_Sample_Aug18_4 {
    meta:
       description = "Detects sample from FIN7 report in August 2018"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
       hash1 = "4b5405fc253ed3a89c770096a13d90648eac10a7fb12980e587f73483a07aa4c"
@@ -152,7 +152,7 @@ rule APT_FIN7_EXE_Sample_Aug18_5 {
    meta:
       description = "Detects sample from FIN7 report in August 2018"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
       hash1 = "7789a3d7d05c30b4efaf3f2f5811804daa56d78a9a660968a4f1f9a78a9108a0"
@@ -167,7 +167,7 @@ rule APT_FIN7_EXE_Sample_Aug18_6 {
    meta:
       description = "Detects sample from FIN7 report in August 2018"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
       hash1 = "1439d301d931c8c4b00717b9057b23f0eb50049916a48773b17397135194424a"
@@ -191,7 +191,7 @@ rule APT_FIN7_EXE_Sample_Aug18_7 {
    meta:
       description = "Detects sample from FIN7 report in August 2018"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
       hash1 = "ce8ce35f85406cd7241c6cc402431445fa1b5a55c548cca2ea30eeb4a423b6f0"
@@ -206,7 +206,7 @@ rule APT_FIN7_EXE_Sample_Aug18_8 {
    meta:
       description = "Detects sample from FIN7 report in August 2018"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
       hash1 = "d8bda53d7f2f1e4e442a0e1c30a20d6b0ac9c6880947f5dd36f78e4378b20c5c"
@@ -220,7 +220,7 @@ rule APT_FIN7_EXE_Sample_Aug18_10 {
    meta:
       description = "Detects sample from FIN7 report in August 2018"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
       hash1 = "8cc02b721683f8b880c8d086ed055006dcf6155a6cd19435f74dd9296b74f5fc"
@@ -238,7 +238,7 @@ rule APT_FIN7_Sample_EXE_Aug18_1 {
    meta:
       description = "Detects FIN7 Sample"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
       hash1 = "608003c2165b0954f396d835882479f2504648892d0393f567e4a4aa90659bf9"
@@ -263,7 +263,7 @@ rule APT_FIN7_Sample_EXE_Aug18_1 {
 rule APT_FIN7_MsDoc_Sep21_1 {
    meta:
       description = "Detects MalDocs used by FIN7 group"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.anomali.com/blog/cybercrime-group-fin7-using-windows-11-alpha-themed-docs-to-drop-javascript-backdoor"
       date = "2021-09-07"
       score = 85
@@ -288,7 +288,7 @@ rule APT_FIN7_MsDoc_Sep21_1 {
 rule SUSP_OBFUSC_JS_Sept21_2 {
    meta:
       description = "Detects JavaScript obfuscation as used in MalDocs by FIN7 group"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.anomali.com/blog/cybercrime-group-fin7-using-windows-11-alpha-themed-docs-to-drop-javascript-backdoor"
       date = "2021-09-07"
       score = 65

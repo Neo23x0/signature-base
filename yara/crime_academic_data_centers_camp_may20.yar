@@ -1,7 +1,7 @@
 rule APT_LNX_Academic_Camp_May20_Eraser_1 {
    meta:
       description = "Detects malware used in attack on academic data centers"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://csirt.egi.eu/academic-data-centers-abused-for-crypto-currency-mining/"
       date = "2020-05-16"
       hash1 = "552245645cc49087dfbc827d069fa678626b946f4b71cb35fa4a49becd971363"
@@ -19,7 +19,7 @@ rule APT_LNX_Academic_Camp_May20_Eraser_1 {
 rule APT_LNX_Academic_Camp_May20_Loader_1 {
    meta:
       description = "Detects malware used in attack on academic data centers"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://csirt.egi.eu/academic-data-centers-abused-for-crypto-currency-mining/"
       date = "2020-05-16"
       hash1 = "0efdd382872f0ff0866e5f68f0c66c01fcf4f9836a78ddaa5bbb349f20353897"

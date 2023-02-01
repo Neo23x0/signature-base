@@ -2,7 +2,7 @@
 rule SUSP_CMD_Var_Expansion {
    meta:
       description = "Detects Office droppers that include a variable expansion string"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/asfakian/status/1044859525675843585"
       date = "2018-09-26"
       score = 60

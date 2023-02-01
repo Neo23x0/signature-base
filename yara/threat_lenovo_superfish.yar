@@ -4,7 +4,7 @@
 rule VisualDiscovery_Lonovo_Superfish_SSL_Hijack {
 	meta:
 		description = "Lenovo Superfish SSL Interceptor - file VisualDiscovery.exe"
-		author = "Florian Roth / improved by kbandla"
+		author = "Florian Roth (Nextron Systems) / improved by kbandla"
 		reference = "https://twitter.com/4nc4p/status/568325493558272000"
 		date = "2015/02/19"
 		hash1 = "99af9cfc7ab47f847103b5497b746407dc566963"

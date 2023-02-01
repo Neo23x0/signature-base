@@ -303,7 +303,7 @@ rule OPCLEAVER_Parviz_Developer
 		reference = "http://cylance.com/assets/Cleaver/Cylance_Operation_Cleaver_Report.pdf"
 		date = "2014/12/02"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		score = 70
 	strings:
 		$s1 = "Users\\parviz\\documents\\" nocase
@@ -318,7 +318,7 @@ rule OPCLEAVER_CCProxy_Config
 		reference = "http://cylance.com/assets/Cleaver/Cylance_Operation_Cleaver_Report.pdf"
 		date = "2014/12/02"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		score = 70
 	strings:
 		$s1 = "UserName=User-001" fullword ascii

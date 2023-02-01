@@ -11,7 +11,7 @@ rule APT30_Generic_H {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash1 = "2a4c8752f3e7fde0139421b8d5713b29c720685d"
@@ -28,7 +28,7 @@ rule APT30_Sample_2 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "0359ffbef6a752ee1a54447b26e272f4a5a35167"
@@ -46,7 +46,7 @@ rule APT30_Sample_3 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "d0320144e65c9af0052f8dee0419e8deed91b61b"
@@ -64,7 +64,7 @@ rule APT30_Generic_C {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash1 = "8667f635fe089c5e2c666b3fe22eaf3ff8590a69"
@@ -87,7 +87,7 @@ rule APT30_Sample_4 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "75367d8b506031df5923c2d8d7f1b9f643a123cd"
@@ -106,7 +106,7 @@ rule APT30_Sample_5 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "1a2dd2a0555dc746333e7c956c58f7c4cdbabd4b"
@@ -124,7 +124,7 @@ rule APT30_Sample_6 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "00e69b059ad6b51b76bc476a115325449d10b4c0"
@@ -139,7 +139,7 @@ rule APT30_Sample_7 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "868d1f4c106a08bd2e5af4f23139f0e0cd798fba"
@@ -158,7 +158,7 @@ rule APT30_Generic_E {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash1 = "1dbb584e19499e26398fb0a7aa2a01b7"
@@ -177,7 +177,7 @@ rule APT30_Sample_8 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "9531e21652143b8b129ab8c023dc05fef2a17cc3"
@@ -194,7 +194,7 @@ rule APT30_Generic_B {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash1 = "0fcb4ffe2eb391421ec876286c9ddb6c"
@@ -214,7 +214,7 @@ rule APT30_Generic_I {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash1 = "fe211c7a081c1dac46e3935f7c614549"
@@ -231,7 +231,7 @@ rule APT30_Sample_9 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "442bf8690401a2087a340ce4a48151c39101652f"
@@ -252,7 +252,7 @@ rule APT30_Sample_10 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "eb518cda3c4f4e6938aaaee07f1f7db8ee91c901"
@@ -272,7 +272,7 @@ rule APT30_Sample_11 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "59066d5d1ee3ad918111ed6fcaf8513537ff49a6"
@@ -300,7 +300,7 @@ rule APT30_Sample_12 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "b02b5720ff0f73f01eb2ba029a58b645c987c4bc"
@@ -316,7 +316,7 @@ rule APT30_Sample_13 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "a359f705a833c4a4254443b87645fd579aa94bcf"
@@ -335,7 +335,7 @@ rule APT30_Sample_14 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "b0740175d20eab79a5d62cdbe0ee1a89212a8472"
@@ -352,7 +352,7 @@ rule APT30_Sample_15 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "7a8576804a2bbe4e5d05d1718f90b6a4332df027"
@@ -371,7 +371,7 @@ rule APT30_Sample_16 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "066d06ac08b48d3382d46bbeda6ad411b6d6130e"
@@ -390,7 +390,7 @@ rule APT30_Generic_A {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash1 = "9f49aa1090fa478b9857e15695be4a89f8f3e594"
@@ -411,7 +411,7 @@ rule APT30_Sample_17 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "c3aa52ff1d19e8fc6704777caf7c5bd120056845"
@@ -425,7 +425,7 @@ rule APT30_Sample_18 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "355436a16d7a2eba8a284b63bb252a8bb1644751"
@@ -446,7 +446,7 @@ rule APT30_Generic_G {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "1612b392d6145bfb0c43f8a48d78c75f"
@@ -467,7 +467,7 @@ rule APT30_Generic_G {
 rule APT30_Sample_19 {
    meta:
       description = "FireEye APT30 Report Sample"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
       date = "2015/04/03"
       modified = "2023-01-06"
@@ -495,7 +495,7 @@ rule APT30_Generic_E_v2 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "eca53a9f6251ddf438508b28d8a483f91b99a3fd"
@@ -512,7 +512,7 @@ rule APT30_Sample_20 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "b1c37632e604a5d1f430c9351f87eb9e8ea911c0"
@@ -533,7 +533,7 @@ rule APT30_Sample_21 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "d315daa61126616a79a8582145777d8a1565c615"
@@ -550,7 +550,7 @@ rule APT30_Sample_22 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "0d17a58c24753e5f8fd5276f62c8c7394d8e1481"
@@ -569,7 +569,7 @@ rule APT30_Generic_F {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash1 = "09010917cd00dc8ddd21aeb066877aa2"
@@ -588,7 +588,7 @@ rule APT30_Sample_23 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "9865e24aadb4480bd3c182e50e0e53316546fc01"
@@ -609,7 +609,7 @@ rule APT30_Sample_24 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "572caa09f2b600daa941c60db1fc410bef8d1771"
@@ -629,7 +629,7 @@ rule APT30_Sample_25 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "44a21c8b3147fabc668fee968b62783aa9d90351"
@@ -649,7 +649,7 @@ rule APT30_Sample_26 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "e26588113417bf68cb0c479638c9cd99a48e846d"
@@ -669,7 +669,7 @@ rule APT30_Generic_D {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash1 = "35dfb55f419f476a54241f46e624a1a4"
@@ -693,7 +693,7 @@ rule APT30_Sample_27 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "959573261ca1d7e5ddcd19447475b2139ca24fe1"
@@ -713,7 +713,7 @@ rule APT30_Sample_28 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash1 = "e62a63307deead5c9fcca6b9a2d51fb0"
@@ -742,7 +742,7 @@ rule APT30_Sample_29 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "44492c53715d7c79895904543843a321491cb23a"
@@ -763,7 +763,7 @@ rule APT30_Sample_30 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "3b684fa40b4f096e99fbf535962c7da5cf0b4528"
@@ -781,7 +781,7 @@ rule APT30_Sample_31 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "8b4271167655787be1988574446125eae5043aca"
@@ -799,7 +799,7 @@ rule APT30_Generic_J {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash1 = "49aca228674651cba776be727bdb7e60"
@@ -831,7 +831,7 @@ rule APT30_Microfost {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "57169cb4b8ef7a0d7ebd7aa039d1a1efd6eb639e"
@@ -845,7 +845,7 @@ rule APT30_Microfost {
 rule APT30_Generic_K {
    meta:
       description = "FireEye APT30 Report Sample"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
       date = "2015/04/03"
       modified = "2023-01-06"
@@ -877,7 +877,7 @@ rule APT30_Sample_33 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "72c568ee2dd75406858c0294ccfcf86ad0e390e4"
@@ -898,7 +898,7 @@ rule APT30_Sample_34 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "216868edbcdd067bd2a9cce4f132d33ba9c0d818"
@@ -918,7 +918,7 @@ rule APT30_Sample_35 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "df48a7cd6c4a8f78f5847bad3776abc0458499a6"
@@ -934,7 +934,7 @@ rule APT30_Sample_1 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "8cea83299af8f5ec6c278247e649c9d91d4cf3bc"
@@ -952,7 +952,7 @@ rule APT30_Generic_1 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		super_rule = 1
@@ -985,7 +985,7 @@ rule APT30_Generic_2 {
 	meta:
 		description = "FireEye APT30 Report Sample - from many files"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		super_rule = 1
@@ -1042,7 +1042,7 @@ rule APT30_Generic_3 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		super_rule = 1
@@ -1062,7 +1062,7 @@ rule APT30_Generic_4 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		super_rule = 1
@@ -1093,7 +1093,7 @@ rule APT30_Generic_5 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		super_rule = 1
@@ -1115,7 +1115,7 @@ rule APT30_Generic_6 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		super_rule = 1
@@ -1137,7 +1137,7 @@ rule APT30_Generic_7 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		super_rule = 1
@@ -1155,7 +1155,7 @@ rule APT30_Generic_8 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		super_rule = 1
@@ -1181,7 +1181,7 @@ rule APT30_Generic_9 {
 	meta:
 		description = "FireEye APT30 Report Sample"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		super_rule = 1

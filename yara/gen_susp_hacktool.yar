@@ -2,7 +2,7 @@
 rule HKTL_Keyword_InjectDLL {
    meta:
       description = "Detects suspicious InjectDLL keyword found in hacktools or possibly unwanted applications"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/zerosum0x0/koadic"
       date = "2019-04-04"
       score = 60

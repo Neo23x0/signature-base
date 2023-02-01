@@ -11,7 +11,7 @@
 rule HiddenCobra_BANKSHOT_Gen {
    meta:
       description = "Detects Hidden Cobra BANKSHOT trojan"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.us-cert.gov/HIDDEN-COBRA-North-Korean-Malicious-Cyber-Activity"
       date = "2017-12-26"
       modified = "2022-06-10"

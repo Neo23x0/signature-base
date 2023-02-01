@@ -11,7 +11,7 @@ rule Invoke_OSiRis {
    meta:
       description = "Osiris Device Guard Bypass - file Invoke-OSiRis.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-03-27"
       hash1 = "19e4a8b07f85c3d4c396d0c4e839495c9fba9405c06a631d57af588032d2416e"

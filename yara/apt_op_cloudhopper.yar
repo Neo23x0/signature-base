@@ -11,7 +11,7 @@ rule OpCloudHopper_Malware_1 {
    meta:
       description = "Detects malware from Operation Cloud Hopper"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
       hash1 = "27876dc5e6f746ff6003450eeea5e98de5d96cbcba9e4694dad94ca3e9fb1ddc"
@@ -27,7 +27,7 @@ rule OpCloudHopper_Malware_1 {
 rule OpCloudHopper_Malware_2 {
    meta:
       description = "Detects Operation CloudHopper malware samples"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
       modified = "2023-01-06"
@@ -58,7 +58,7 @@ rule OpCloudHopper_Malware_3 {
    meta:
       description = "Detects malware from Operation Cloud Hopper"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
       hash1 = "c21eaadf9ffc62ca4673e27e06c16447f103c0cf7acd8db6ac5c8bd17805e39d"
@@ -79,7 +79,7 @@ rule OpCloudHopper_Dropper_1 {
    meta:
       description = "Detects malware from Operation Cloud Hopper"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
       hash1 = "411571368804578826b8f24f323617f51b068809b1c769291b21125860dc3f4e"
@@ -93,7 +93,7 @@ rule OpCloudHopper_Malware_4 {
    meta:
       description = "Detects malware from Operation Cloud Hopper"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
       modified = "2023-01-06"
@@ -110,7 +110,7 @@ rule OpCloudHopper_Malware_5 {
    meta:
       description = "Detects malware from Operation Cloud Hopper"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
       hash1 = "beb1bc03bb0fba7b0624f8b2330226f8a7da6344afd68c5bc526f9d43838ef01"
@@ -131,7 +131,7 @@ rule OpCloudHopper_Malware_6 {
    meta:
       description = "Detects malware from Operation Cloud Hopper"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
       hash1 = "aabebea87f211d47f72d662e2449009f83eac666d81b8629cf57219d0ce31af6"
@@ -148,7 +148,7 @@ rule OpCloudHopper_Malware_7 {
    meta:
       description = "Detects malware from Operation Cloud Hopper"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
       hash1 = "44a7bea8a08f4c2feb74c6a00ff1114ba251f3dc6922ea5ffab9e749c98cbdce"
@@ -163,7 +163,7 @@ rule OpCloudHopper_Malware_8 {
    meta:
       description = "Detects malware from Operation Cloud Hopper"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
       hash1 = "19aa5019f3c00211182b2a80dd9675721dac7cfb31d174436d3b8ec9f97d898b"
@@ -183,7 +183,7 @@ rule OpCloudHopper_Malware_9 {
    meta:
       description = "Detects malware from Operation Cloud Hopper"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
       hash1 = "f0002b912135bcee83f901715002514fdc89b5b8ed7585e07e482331e4a56c06"
@@ -198,7 +198,7 @@ rule OpCloudHopper_Malware_10 {
    meta:
       description = "Detects malware from Operation Cloud Hopper"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
       hash1 = "5b4028728d8011a2003b7ce6b9ec663dd6a60b7adcc20e2125da318e2d9e13f4"
@@ -214,7 +214,7 @@ rule OpCloudHopper_Malware_11 {
    meta:
       description = "Detects malware from Operation Cloud Hopper"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
       hash1 = "a80f6c57f772f20d63021c8971a280c19e8eafe7cc7088344c598d84026dda15"
@@ -240,7 +240,7 @@ rule OpCloudHopper_lockdown {
    meta:
       description = "Tools related to Operation Cloud Hopper"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/maaaaz/impacket-examples-windows"
       date = "2017-04-07"
       hash1 = "8ca61cef74573d9c1d19b8191c23cbd2b7a1195a74eaba037377e5ee232b1dc5"
@@ -255,7 +255,7 @@ rule OpCloudHopper_WindowXarBot {
    meta:
       description = "Malware related to Operation Cloud Hopper"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.pwc.co.uk/cyber-security/pdf/cloud-hopper-annex-b-final.pdf"
       date = "2017-04-07"
    strings:
@@ -268,7 +268,7 @@ rule OpCloudHopper_WmiDLL_inMemory {
    meta:
       description = "Malware related to Operation Cloud Hopper - Page 25"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.pwc.co.uk/cyber-security/pdf/cloud-hopper-annex-b-final.pdf"
       date = "2017-04-07"
    strings:
@@ -281,7 +281,7 @@ rule VBS_WMIExec_Tool_Apr17_1 {
    meta:
       description = "Tools related to Operation Cloud Hopper"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/maaaaz/impacket-examples-windows"
       date = "2017-04-07"
       hash1 = "21bc328ed8ae81151e7537c27c0d6df6d47ba8909aebd61333e32155d01f3b11"

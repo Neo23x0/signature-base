@@ -14,7 +14,7 @@ rule Agent_BTZ_Proxy_DLL_1 {
    meta:
       description = "Detects Agent-BTZ Proxy DLL - activeds.dll"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "http://www.intezer.com/new-variants-of-agent-btz-comrat-found/"
       date = "2017-08-07"
       hash1 = "9c163c3f2bd5c5181147c6f4cf2571160197de98f496d16b38c7dc46b5dc1426"
@@ -28,7 +28,7 @@ rule Agent_BTZ_Proxy_DLL_1 {
 rule Agent_BTZ_Proxy_DLL_2 {
    meta:
       description = "Detects Agent-BTZ Proxy DLL - activeds.dll"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "http://www.intezer.com/new-variants-of-agent-btz-comrat-found/"
       date = "2017-08-07"
       hash1 = "73db4295c5b29958c5d93c20be9482c1efffc89fc4e5c8ba59ac9425a4657a88"
@@ -52,7 +52,7 @@ rule Agent_BTZ_Proxy_DLL_2 {
 rule Agent_BTZ_Aug17 {
    meta:
       description = "Detects Agent.BTZ"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "http://www.intezer.com/new-variants-of-agent-btz-comrat-found/"
       date = "2017-08-07"
       hash1 = "6ad78f069c3619d0d18eef8281219679f538cfe0c1b6d40b244beb359762cf96"
@@ -72,7 +72,7 @@ rule Agent_BTZ_Aug17 {
 rule APT_Turla_Agent_BTZ_Gen_1 {
    meta:
       description = "Detects Turla Agent.BTZ"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2018-06-16"
       score = 80

@@ -14,7 +14,7 @@ rule ShadowPad_nssock2 {
    meta:
       description = "Detects malicious nssock2.dll from ShadowPad incident - file nssock2.dll"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist.com/shadowpad-in-corporate-networks/81432/"
       date = "2017-08-15"
       hash1 = "462a02a8094e833fd456baf0a6d4e18bb7dab1a9f74d5f163a8334921a4ffde8"

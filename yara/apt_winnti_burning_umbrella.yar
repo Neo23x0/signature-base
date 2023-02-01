@@ -14,7 +14,7 @@ rule MAL_BurningUmbrella_Sample_1 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "fcfe8fcf054bd8b19226d592617425e320e4a5bb4798807d6f067c39dfc6d1ff"
@@ -33,7 +33,7 @@ rule MAL_BurningUmbrella_Sample_2 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "801a64a730fc8d80e17e59e93533c1455686ca778e6ba99cf6f1971a935eda4c"
@@ -52,7 +52,7 @@ rule MAL_BurningUmbrella_Sample_3 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "92efbecc24fbb5690708926b6221b241b10bdfe3dd0375d663b051283d0de30f"
@@ -66,7 +66,7 @@ rule MAL_BurningUmbrella_Sample_4 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "a1629e8abce9d670fdb66fa1ef73ad4181706eefb8adc8a9fd257b6a21be48c6"
@@ -98,7 +98,7 @@ rule MAL_BurningUmbrella_Sample_6 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "49ef2b98b414c321bcdbab107b8fa71a537958fe1e05ae62aaa01fe7773c3b4b"
@@ -113,7 +113,7 @@ rule MAL_BurningUmbrella_Sample_7 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "a4ce3a356d61fbbb067e1430b8ceedbe8965e0cfedd8fb43f1f719e2925b094a"
@@ -127,7 +127,7 @@ rule MAL_BurningUmbrella_Sample_8 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "73270fe9bca94fead1b5b38ddf69fae6a42e574e3150d3e3ab369f5d37d93d88"
@@ -141,7 +141,7 @@ rule MAL_BurningUmbrella_Sample_10 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "70992a72412c5d62d003a29c3967fcb0687189d3290ebbc8671fa630829f6694"
@@ -158,7 +158,7 @@ rule MAL_BurningUmbrella_Sample_11 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "278e9d130678615d0fee4d7dd432f0dda6d52b0719649ee58cbdca097e997c3f"
@@ -172,7 +172,7 @@ rule MAL_BurningUmbrella_Sample_12 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "b9aba520eeaf6511877c1eec5f7d71e0eea017312a104f30d3b8f17c89db47e8"
@@ -194,7 +194,7 @@ rule MAL_BurningUmbrella_Sample_13 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "d31374adc0b96a8a8b56438bbbc313061fd305ecee32a12738dd965910c8890f"
@@ -207,7 +207,7 @@ rule MAL_BurningUmbrella_Sample_14 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "388ef4b4e12a04eab451bd6393860b8d12948f2bce12e5c9022996a9167f4972"
@@ -222,7 +222,7 @@ rule MAL_BurningUmbrella_Sample_15 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "be6bea22e909bd772d21647ffee6d15e208e386e8c3c95fd22816c6b94196ae8"
@@ -238,7 +238,7 @@ rule MAL_BurningUmbrella_Sample_16 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "58bb3859e02b8483e9f84cc56fbd964486e056ef28e94dd0027d361383cc4f4a"
@@ -252,7 +252,7 @@ rule MAL_BurningUmbrella_Sample_17 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "fa380dac35e16da01242e456f760a0e75c2ce9b68ff18cfc7cfdd16b2f4dec56"
@@ -272,7 +272,7 @@ rule MAL_BurningUmbrella_Sample_18 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "d8df60524deb6df4f9ddd802037a248f9fbdd532151bb00e647b233e845b1617"
@@ -300,7 +300,7 @@ rule MAL_BurningUmbrella_Sample_19 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "05e2912f2a593ba16a5a094d319d96715cbecf025bf88bb0293caaf6beb8bc20"
@@ -318,7 +318,7 @@ rule MAL_BurningUmbrella_Sample_20 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       modified = "2023-01-06"
@@ -340,7 +340,7 @@ rule MAL_BurningUmbrella_Sample_21 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "4b7b9c2a9d5080ccc4e9934f2fd14b9d4e8f6f500889bf9750f1d672c8724438"
@@ -360,7 +360,7 @@ rule MAL_BurningUmbrella_Sample_22 {
    meta:
       description = "Detects malware sample from Burning Umbrella report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "fa116cf9410f1613003ca423ad6ca92657a61b8e9eda1b05caf4f30ca650aee5"
@@ -379,7 +379,7 @@ rule MAL_AirdViper_Sample_Apr18_1 {
    meta:
       description = "Detects Arid Viper malware sample"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2018-05-04"
       hash1 = "9f453f1d5088bd17c60e812289b4bb0a734b7ad2ba5a536f5fd6d6ac3b8f3397"
@@ -406,7 +406,7 @@ rule MAL_Winnti_Sample_May18_1 {
    meta:
       description = "Detects malware sample from Burning Umbrella report - Generic Winnti Rule"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "528d9eaaac67716e6b37dd562770190318c8766fa1b2f33c0974f7d5f6725d41"
@@ -421,7 +421,7 @@ rule MAL_Visel_Sample_May18_1 {
    meta:
       description = "Detects Visel malware sample from Burning Umbrella report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "35db8e6a2eb5cf09cd98bf5d31f6356d0deaf4951b353fc513ce98918b91439c"

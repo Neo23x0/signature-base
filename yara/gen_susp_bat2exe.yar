@@ -3,7 +3,7 @@ rule SUSP_BAT2EXE_BDargo_Converted_BAT {
    meta:
       description = "Detects binaries created with BDARGO Advanced BAT to EXE converter"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.majorgeeks.com/files/details/advanced_bat_to_exe_converter.html"
       date = "2018-07-28"
       modified = "2022-06-23"

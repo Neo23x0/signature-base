@@ -11,7 +11,7 @@ rule PassCV_Sabre_Malware_1 {
    meta:
       description = "PassCV Malware mentioned in Cylance Report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://blog.cylance.com/digitally-signed-malware-targeting-gaming-companies"
       date = "2016-10-20"
       hash1 = "24a9bfbff81615a42e42755711c8d04f359f3bf815fb338022edca860ff1908a"
@@ -36,7 +36,7 @@ rule PassCV_Sabre_Malware_Signing_Cert {
    meta:
       description = "PassCV Malware mentioned in Cylance Report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://blog.cylance.com/digitally-signed-malware-targeting-gaming-companies"
       date = "2016-10-20"
       score = 50
@@ -58,7 +58,7 @@ rule PassCV_Sabre_Malware_2 {
    meta:
       description = "PassCV Malware mentioned in Cylance Report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://blog.cylance.com/digitally-signed-malware-targeting-gaming-companies"
       date = "2016-10-20"
       hash1 = "475d1c2d36b2cf28b28b202ada78168e7482a98b42ff980bbb2f65c6483db5b4"
@@ -82,7 +82,7 @@ rule PassCV_Sabre_Malware_Excalibur_1 {
    meta:
       description = "PassCV Malware mentioned in Cylance Report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://blog.cylance.com/digitally-signed-malware-targeting-gaming-companies"
       date = "2016-10-20"
       hash1 = "21566f5ff7d46cc9256dae8bc7e4c57f2b9261f95f6ad2ac921558582ea50dfb"
@@ -104,7 +104,7 @@ rule PassCV_Sabre_Malware_3 {
    meta:
       description = "PassCV Malware mentioned in Cylance Report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://blog.cylance.com/digitally-signed-malware-targeting-gaming-companies"
       date = "2016-10-20"
       hash1 = "28c7575b2368a9b58d0d1bf22257c4811bd3c212bd606afc7e65904041c29ce1"
@@ -122,7 +122,7 @@ rule PassCV_Sabre_Malware_4 {
    meta:
       description = "PassCV Malware mentioned in Cylance Report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://blog.cylance.com/digitally-signed-malware-targeting-gaming-companies"
       date = "2016-10-20"
       hash1 = "27463bcb4301f0fdd95bc10bf67f9049e161a4e51425dac87949387c54c9167f"
@@ -138,7 +138,7 @@ rule PassCV_Sabre_Tool_NTScan {
    meta:
       description = "PassCV Malware mentioned in Cylance Report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://blog.cylance.com/digitally-signed-malware-targeting-gaming-companies"
       date = "2016-10-20"
       hash1 = "0f290612b26349a551a148304a0bd3b0d0651e9563425d7c362f30bd492d8665"
@@ -155,7 +155,7 @@ rule PassCV_Sabre_Malware_5 {
    meta:
       description = "PassCV Malware mentioned in Cylance Report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://blog.cylance.com/digitally-signed-malware-targeting-gaming-companies"
       date = "2016-10-20"
       hash1 = "03aafc5f468a84f7dd7d7d38f91ff17ef1ca044e5f5e8bbdfe589f5509b46ae5"

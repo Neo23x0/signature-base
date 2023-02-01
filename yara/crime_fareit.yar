@@ -9,7 +9,7 @@ rule Fareit_Trojan_Oct15 {
 	meta:
 		description = "Detects Fareit Trojan from Sep/Oct 2015 Wave"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://goo.gl/5VYtlU"
 		date = "2015-10-18"
 		score = 80

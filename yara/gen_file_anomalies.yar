@@ -2,7 +2,7 @@
 rule SUSP_TINY_PE {
    meta:
       description = "Detects Tiny PE file"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://webserver2.tecgraf.puc-rio.br/~ismael/Cursos/YC++/apostilas/win32_xcoff_pe/tyne-example/Tiny%20PE.htm"
       date = "2019-10-23"
       score = 80
@@ -15,7 +15,7 @@ rule SUSP_TINY_PE {
 rule SUSP_GIF_Anomalies {
    meta:
       description = "Detects files with GIF headers and format anomalies - which means that this image could be an obfuscated file of a different type"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       score = 60
       reference = "https://en.wikipedia.org/wiki/GIF"
       date = "2020-07-02"

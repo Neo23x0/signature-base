@@ -2,7 +2,7 @@
 rule MAL_LNX_LinaDoor_Rootkit_May22 {
    meta:
       description = "Detects LinaDoor Linux Rootkit"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2022-05-19"
       modified = "2023-01-05"

@@ -1,7 +1,7 @@
 rule MAL_Passwordstate_Moserware_Backdoor_Apr21_1 {
    meta:
       description = "Detects backdoor used in Passwordstate incident"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://thehackernews.com/2021/04/passwordstate-password-manager-update.html"
       date = "2021-04-25"
       hash1 = "c2169ab4a39220d21709964d57e2eafe4b68c115061cbb64507cfbbddbe635c6"

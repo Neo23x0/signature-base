@@ -2,7 +2,7 @@ rule MAL_Enfal_Nov22 {
    meta:
       old_rule_name = "Enfal_Malware"
       description = "Detects a certain type of Enfal Malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://malpedia.caad.fkie.fraunhofer.de/details/win.enfal"
       date = "2015-02-10"
       modified = "2023-01-06"
@@ -27,7 +27,7 @@ rule Enfal_Malware_Backdoor {
 	meta:
 		description = "Generic Rule to detect the Enfal Malware"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2015/02/10"
 		super_rule = 1
 		hash0 = "6d484daba3927fc0744b1bbd7981a56ebef95790"

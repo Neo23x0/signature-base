@@ -14,7 +14,7 @@ rule CMStar_Malware_Sep17 {
    meta:
       description = "Detects CMStar Malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/pTffPA"
       date = "2017-10-03"
       hash1 = "16697c95db5add6c1c23b2591b9d8eec5ed96074d057b9411f0b57a54af298d5"

@@ -11,7 +11,7 @@ rule Quasar_RAT_1 {
    meta:
       description = "Detects Quasar RAT"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.pwc.co.uk/cyber-security/pdf/cloud-hopper-annex-b-final.pdf"
       date = "2017-04-07"
       hash1 = "0774d25e33ca2b1e2ee2fafe3fdbebecefbf1d4dd99e6460f0bc8713dd0fd740"
@@ -35,7 +35,7 @@ rule Quasar_RAT_2 {
    meta:
       description = "Detects Quasar RAT"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.pwc.co.uk/cyber-security/pdf/cloud-hopper-annex-b-final.pdf"
       date = "2017-04-07"
       super_rule = 1
@@ -59,7 +59,7 @@ rule Quasar_RAT_2 {
 rule MAL_QuasarRAT_May19_1 {
    meta:
       description = "Detects QuasarRAT malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://blog.ensilo.com/uncovering-new-activity-by-apt10"
       date = "2019-05-27"
       modified = "2023-01-06"

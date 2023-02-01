@@ -2,7 +2,7 @@
 rule SUSP_SFX_RunProgram_WScript {
    meta:
       description = "Detects suspicious SFX as used by Gamaredon group"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2018-09-27"
       hash1 = "e3bb02c5985fc64759b9c2d3c5474d46237ce472b4a0101c6313dafa939de5a9"

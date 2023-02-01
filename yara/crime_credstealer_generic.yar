@@ -3,7 +3,7 @@ rule CredentialStealer_Generic_Backdoor {
    meta:
       description = "Detects credential stealer byed on many strings that indicate password store access"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-06-07"
       hash1 = "edb2d039a57181acf95bd91b2a20bd9f1d66f3ece18506d4ad870ab65e568f2c"

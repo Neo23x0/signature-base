@@ -14,7 +14,7 @@ rule APT_Thrip_Sample_Jun18_1 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "59509a17d516813350fe1683ca6b9727bd96dd81ce3435484a5a53b472ff4ae9"
@@ -31,7 +31,7 @@ rule APT_Thrip_Sample_Jun18_2 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "1fc9f7065856cd8dc99b6f46cf0953adf90e2c42a3b65374bf7b50274fb200cc"
@@ -47,7 +47,7 @@ rule APT_Thrip_Sample_Jun18_3 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "0d2abdcaad99e102fdf6574b3dc90f17cb9d060c20e6ac4ff378875d3b91a840"
@@ -62,7 +62,7 @@ rule APT_Thrip_Sample_Jun18_4 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "6b236d3fc54d36e6dc2a26299f6ded597058fed7c9099f1a37716c5e4b162abc"
@@ -84,7 +84,7 @@ rule APT_Thrip_Sample_Jun18_5 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "32889639a27961497d53176765b3addf9fff27f1c8cc41634a365085d6d55920"
@@ -99,7 +99,7 @@ rule APT_Thrip_Sample_Jun18_6 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "44f58496578e55623713c4290abb256d03103e78e99939daeec059776bd79ee2"
@@ -113,7 +113,7 @@ rule APT_Thrip_Sample_Jun18_7 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "6b714dc1c7e58589374200d2c7f3d820798473faeb26855e53101b8f3c701e3f"
@@ -127,7 +127,7 @@ rule APT_Thrip_Sample_Jun18_8 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "0f2d09b1ad0694f9e71eeebec5b2d137665375bf1e76cb4ae4d7f20487394ed3"
@@ -143,7 +143,7 @@ rule APT_Thrip_Sample_Jun18_9 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "8e6682bcc51643f02a864b042f7223b157823f3d890fe21d38caeb43500d923e"
@@ -164,7 +164,7 @@ rule APT_Thrip_Sample_Jun18_10 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "350d2a6f8e6a4969ffbf75d9f9aae99e7b3a8cd8708fd66f977e07d7fbf842e3"
@@ -182,7 +182,7 @@ rule APT_Thrip_Sample_Jun18_11 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "590a6796b97469f8e6977832a63c0964464901f075a9651f7f1b4578e55bd8c8"
@@ -202,7 +202,7 @@ rule APT_Thrip_Sample_Jun18_12 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "33c01d3266fe6a70e8785efaf10208f869ae58a17fd9cdb2c6995324c9a01062"
@@ -225,7 +225,7 @@ rule APT_Thrip_Sample_Jun18_13 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "780620521c92aab3d592b3dc149cbf58751ea285cfdaa50510002b441796b312"
@@ -244,7 +244,7 @@ rule APT_Thrip_Sample_Jun18_14 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "67dd44a8fbf6de94c4589cf08aa5757b785b26e49e29488e9748189e13d90fb3"
@@ -265,7 +265,7 @@ rule APT_Thrip_Sample_Jun18_15 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "231c569f11460a12b171f131c40a6f25d8416954b35c28ae184aba8a649d9786"
@@ -287,7 +287,7 @@ rule APT_Thrip_Sample_Jun18_16 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "2b1c1c6d82837dbbccd171a0413c1d761b1f7c3668a21c63ca06143e731f030e"
@@ -304,7 +304,7 @@ rule APT_Thrip_Sample_Jun18_17 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "05036de73c695f59adf818d3c669c48ce8626139d463b8a7e869d8155e5c0d85"
@@ -329,7 +329,7 @@ rule APT_Thrip_Sample_Jun18_18 {
    meta:
       description = "Detects sample found in Thrip report by Symantec "
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "33029f5364209e05481cfb2a4172c6dc157b0070f51c05dd34485b8e8da6e820"

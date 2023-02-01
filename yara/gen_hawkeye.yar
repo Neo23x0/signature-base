@@ -2,7 +2,7 @@
 rule HawkEye_Keylogger_Feb18_1 {
    meta:
       description = "Semiautomatically generated YARA rule"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://app.any.run/tasks/ae2521dd-61aa-4bc7-b0d8-8c85ddcbfcc9"
       date = "2018-02-12"
       modified = "2023-01-06"
@@ -19,7 +19,7 @@ rule HawkEye_Keylogger_Feb18_1 {
 rule MAL_HawkEye_Keylogger_Gen_Dec18 {
    meta:
       description = "Detects HawkEye Keylogger Reborn"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/James_inthe_box/status/1072116224652324870"
       date = "2018-12-10"
       hash1 = "b8693e015660d7bd791356b352789b43bf932793457d54beae351cf7a3de4dad"

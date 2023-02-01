@@ -1,7 +1,7 @@
 
 rule SUSP_Base64_Encoded_Hex_Encoded_Code {
    meta:
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       description = "Detects hex encoded code that has been base64 encoded"
       date = "2019-04-29"
       score = 65
@@ -18,7 +18,7 @@ rule SUSP_Base64_Encoded_Hex_Encoded_Code {
 rule SUSP_Double_Base64_Encoded_Executable {
    meta:
       description = "Detects an executable that has been encoded with base64 twice"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/TweeterCyber/status/1189073238803877889"
       date = "2019-10-29"
       hash1 = "1a172d92638e6fdb2858dcca7a78d4b03c424b7f14be75c2fd479f59049bc5f9"
@@ -45,7 +45,7 @@ rule SUSP_Double_Base64_Encoded_Executable {
 rule SUSP_Reversed_Base64_Encoded_EXE : FILE {
    meta:
       description = "Detects an base64 encoded executable with reversed characters"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       date = "2020-04-06"
       reference = "Internal Research"
       score = 80
@@ -67,7 +67,7 @@ rule SUSP_Reversed_Base64_Encoded_EXE : FILE {
 rule SUSP_Script_Base64_Blocks_Jun20_1 {
    meta:
       description = "Detects suspicious file with base64 encoded payload in blocks"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://posts.specterops.io/covenant-v0-5-eee0507b85ba"
       date = "2020-06-05"
       score = 70
@@ -81,7 +81,7 @@ rule SUSP_Script_Base64_Blocks_Jun20_1 {
 rule SUSP_Reversed_Hacktool_Author : FILE {
    meta:
       description = "Detects a suspicious path traversal into a Windows folder"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://hackingiscool.pl/cmdhijack-command-argument-confusion-with-path-traversal-in-cmd-exe/"
       date = "2020-06-10"
       score = 65
@@ -96,7 +96,7 @@ rule SUSP_Reversed_Hacktool_Author : FILE {
 rule SUSP_Base64_Encoded_Hacktool_Dev {
    meta:
       description = "Detects a suspicious base64 encoded keyword"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/cyb3rops/status/1270626274826911744"
       date = "2020-06-10"
       score = 65

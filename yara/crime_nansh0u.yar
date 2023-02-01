@@ -15,7 +15,7 @@ import "pe"
 rule MAL_XMR_Miner_May19_1 : HIGHVOL {
    meta:
       description = "Detects Monero Crypto Coin Miner"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.guardicore.com/2019/05/nansh0u-campaign-hackers-arsenal-grows-stronger/"
       date = "2019-05-31"
       score = 85
@@ -37,7 +37,7 @@ rule MAL_XMR_Miner_May19_1 : HIGHVOL {
 rule HKTL_CN_ProcHook_May19_1 {
    meta:
       description = "Detects hacktool used by Chinese threat groups"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.guardicore.com/2019/05/nansh0u-campaign-hackers-arsenal-grows-stronger/"
       date = "2019-05-31"
       hash1 = "02ebdc1ff6075c15a44711ccd88be9d6d1b47607fea17bef7e5e17f8da35293e"
@@ -50,7 +50,7 @@ rule HKTL_CN_ProcHook_May19_1 {
 rule SUSP_PDB_CN_Threat_Actor_May19_1 {
    meta:
       description = "Detects PDB path user name used by Chinese threat actors"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.guardicore.com/2019/05/nansh0u-campaign-hackers-arsenal-grows-stronger/"
       date = "2019-05-31"
       score = 65
@@ -64,7 +64,7 @@ rule SUSP_PDB_CN_Threat_Actor_May19_1 {
 rule MAL_Ramnit_May19_1 {
    meta:
       description = "Detects Ramnit malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.guardicore.com/2019/05/nansh0u-campaign-hackers-arsenal-grows-stronger/"
       date = "2019-05-31"
       hash1 = "d7ec3fcd80b3961e5bab97015c91c843803bb915c13a4a35dfb5e9bdf556c6d3"
@@ -76,7 +76,7 @@ rule MAL_Ramnit_May19_1 {
 rule MAL_Parite_Malware_May19_1 {
    meta:
       description = "Detects Parite malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.guardicore.com/2019/05/nansh0u-campaign-hackers-arsenal-grows-stronger/"
       date = "2019-05-31"
       score = 80
@@ -97,7 +97,7 @@ rule MAL_Parite_Malware_May19_1 {
 rule MAL_Parite_Malware_May19_2 {
    meta:
       description = "Detects Parite malware based on Imphash"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.guardicore.com/2019/05/nansh0u-campaign-hackers-arsenal-grows-stronger/"
       date = "2019-05-31"
       hash1 = "c9d8852745e81f3bfc09c0a3570d018ae8298af675e3c6ee81ba5b594ff6abb8"
@@ -114,7 +114,7 @@ rule MAL_Parite_Malware_May19_2 {
 rule EXPL_Strings_CVE_POC_May19_1 {
    meta:
       description = "Detects strings used in CVE POC noticed in May 2019"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.guardicore.com/2019/05/nansh0u-campaign-hackers-arsenal-grows-stronger/"
       date = "2019-05-31"
       score = 80

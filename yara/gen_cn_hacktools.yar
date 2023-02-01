@@ -9,7 +9,7 @@
 rule mswin_check_lm_group {
    meta:
       description = "Chinese Hacktool Set - file mswin_check_lm_group.exe"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       score = 70
       reference = "http://tools.zjqhr.com/"
       date = "2015-06-13"
@@ -30,7 +30,7 @@ rule WAF_Bypass {
 	meta:
 		description = "Chinese Hacktool Set - file WAF-Bypass.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "860a9d7aac2ce3a40ac54a4a0bd442c6b945fa4e"
@@ -49,7 +49,7 @@ rule Guilin_veterans_cookie_spoofing_tool {
 	meta:
 		description = "Chinese Hacktool Set - file Guilin veterans cookie spoofing tool.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		modified = "2023-01-27"
@@ -67,7 +67,7 @@ rule MarathonTool {
 	meta:
 		description = "Chinese Hacktool Set - file MarathonTool.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "084a27cd3404554cc799d0e689f65880e10b59e3"
@@ -83,7 +83,7 @@ rule PLUGIN_TracKid {
 	meta:
 		description = "Chinese Hacktool Set - file TracKid.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "a114181b334e850d4b33e9be2794f5bb0eb59a09"
@@ -102,7 +102,7 @@ rule Pc_pc2015 {
 	meta:
 		description = "Chinese Hacktool Set - file pc2015.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "de4f098611ac9eece91b079050b2d0b23afe0bcb"
@@ -118,7 +118,7 @@ rule sekurlsa {
 	meta:
 		description = "Chinese Hacktool Set - file sekurlsa.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "6acecd18fc7da1c5eb0d04e848aae9ce59d2b1b5"
@@ -135,7 +135,7 @@ rule mysqlfast {
 	meta:
 		description = "Chinese Hacktool Set - file mysqlfast.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "32b60350390fe7024af7b4b8fbf50f13306c546f"
@@ -154,7 +154,7 @@ rule DTools2_02_DTools {
 	meta:
 		description = "Chinese Hacktool Set - file DTools.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "9f99771427120d09ec7afa3b21a1cb9ed720af12"
@@ -173,7 +173,7 @@ rule dll_PacketX {
 	meta:
 		description = "Chinese Hacktool Set - file PacketX.dll - ActiveX wrapper for WinPcap packet capture library"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		score = 50
@@ -189,7 +189,7 @@ rule SqlDbx_zhs {
 	meta:
 		description = "Chinese Hacktool Set - file SqlDbx_zhs.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "e34228345498a48d7f529dbdffcd919da2dea414"
@@ -209,7 +209,7 @@ rule ms10048_x86 {
 	meta:
 		description = "Chinese Hacktool Set - file ms10048-x86.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "e57b453966e4827e2effa4e153f2923e7d058702"
@@ -228,7 +228,7 @@ rule Dos_ch {
 	meta:
 		description = "Chinese Hacktool Set - file ch.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "60bbb87b08af840f21536b313a76646e7c1f0ea7"
@@ -247,7 +247,7 @@ rule DUBrute_DUBrute {
 	meta:
 		description = "Chinese Hacktool Set - file DUBrute.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "8aaae91791bf782c92b97c6e1b0f78fb2a9f3e65"
@@ -264,7 +264,7 @@ rule CookieTools {
 	meta:
 		description = "Chinese Hacktool Set - file CookieTools.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "b6a3727fe3d214f4fb03aa43fb2bc6fadc42c8be"
@@ -282,7 +282,7 @@ rule update_PcInit {
 	meta:
 		description = "Chinese Hacktool Set - file PcInit.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "a6facc4453f8cd81b8c18b3b3004fa4d8e2f5344"
@@ -301,7 +301,7 @@ rule dat_NaslLib {
 	meta:
 		description = "Chinese Hacktool Set - file NaslLib.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "fb0d4263118faaeed2d68e12fab24c59953e862d"
@@ -317,7 +317,7 @@ rule Dos_1 {
 	meta:
 		description = "Chinese Hacktool Set - file 1.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "b554f0687a12ec3a137f321cc15e052ff219f28c"
@@ -332,7 +332,7 @@ rule OtherTools_servu {
 	meta:
 		description = "Chinese Hacktool Set - file svu.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "5c64e6879a9746a0d65226706e0edc7a"
@@ -349,7 +349,7 @@ rule ustrrefadd {
 	meta:
 		description = "Chinese Hacktool Set - file ustrrefadd.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "b371b122460951e74094f3db3016264c9c8a0cfa"
@@ -367,7 +367,7 @@ rule XScanLib {
 	meta:
 		description = "Chinese Hacktool Set - file XScanLib.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "c5cb4f75cf241f5a9aea324783193433a42a13b0"
@@ -384,7 +384,7 @@ rule IDTools_For_WinXP_IdtTool {
 	meta:
 		description = "Chinese Hacktool Set - file IdtTool.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "ebab6e4cb7ea82c8dc1fe4154e040e241f4672c6"
@@ -400,7 +400,7 @@ rule GoodToolset_ms11046 {
 	meta:
 		description = "Chinese Hacktool Set - file ms11046.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "f8414a374011fd239a6c6d9c6ca5851cd8936409"
@@ -418,7 +418,7 @@ rule Cmdshell32 {
 	meta:
 		description = "Chinese Hacktool Set - file Cmdshell32.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "3c41116d20e06dcb179e7346901c1c11cd81c596"
@@ -434,7 +434,7 @@ rule Sniffer_analyzer_SSClone_1210_full_version {
 	meta:
 		description = "Chinese Hacktool Set - file Sniffer analyzer SSClone 1210 full version.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "6882125babb60bd0a7b2f1943a40b965b7a03d4e"
@@ -451,7 +451,7 @@ rule x64_klock {
 	meta:
 		description = "Chinese Hacktool Set - file klock.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "44825e848bc3abdb6f31d0a49725bb6f498e9ccc"
@@ -468,7 +468,7 @@ rule Dos_Down32 {
 	meta:
 		description = "Chinese Hacktool Set - file Down32.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "0365738acd728021b0ea2967c867f1014fd7dd75"
@@ -484,7 +484,7 @@ rule MarathonTool_2 {
 	meta:
 		description = "Chinese Hacktool Set - file MarathonTool.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "75b5d25cdaa6a035981e5a33198fef0117c27c9c"
@@ -500,7 +500,7 @@ rule scanms_scanms {
 	meta:
 		description = "Chinese Hacktool Set - file scanms.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "47787dee6ddea2cb44ff27b6a5fd729273cea51a"
@@ -518,7 +518,7 @@ rule CN_Tools_PcShare {
 	meta:
 		description = "Chinese Hacktool Set - file PcShare.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "ee7ba9784fae413d644cdf5a093bd93b73537652"
@@ -538,7 +538,7 @@ rule pw_inspector {
 	meta:
 		description = "Chinese Hacktool Set - file pw-inspector.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "4f8e3e101098fc3da65ed06117b3cb73c0a66215"
@@ -554,7 +554,7 @@ rule Dll_LoadEx {
 	meta:
 		description = "Chinese Hacktool Set - file Dll_LoadEx.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "213d9d0afb22fe723ff570cf69ff8cdb33ada150"
@@ -574,7 +574,7 @@ rule dat_report {
 	meta:
 		description = "Chinese Hacktool Set - file report.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "4582a7c1d499bb96dad8e9b227e9d5de9becdfc2"
@@ -589,7 +589,7 @@ rule Dos_iis7 {
 	meta:
 		description = "Chinese Hacktool Set - file iis7.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "0a173c5ece2fd4ac8ecf9510e48e95f43ab68978"
@@ -607,7 +607,7 @@ rule SwitchSniffer {
 	meta:
 		description = "Chinese Hacktool Set - file SwitchSniffer.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "1e7507162154f67dff4417f1f5d18b4ade5cf0cd"
@@ -622,7 +622,7 @@ rule dbexpora {
 	meta:
 		description = "Chinese Hacktool Set - file dbexpora.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "b55b007ef091b2f33f7042814614564625a8c79f"
@@ -638,7 +638,7 @@ rule SQLCracker {
 	meta:
 		description = "Chinese Hacktool Set - file SQLCracker.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "1aa5755da1a9b050c4c49fc5c58fa133b8380410"
@@ -656,7 +656,7 @@ rule FreeVersion_debug {
 	meta:
 		description = "Chinese Hacktool Set - file debug.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "d11e6c6f675b3be86e37e50184dadf0081506a89"
@@ -676,7 +676,7 @@ rule Dos_look {
 	meta:
 		description = "Chinese Hacktool Set - file look.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "e1a37f31170e812185cf00a838835ee59b8f64ba"
@@ -692,7 +692,7 @@ rule NtGodMode {
 	meta:
 		description = "Chinese Hacktool Set - file NtGodMode.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "8baac735e37523d28fdb6e736d03c67274f7db77"
@@ -710,7 +710,7 @@ rule WebCrack4_RouterPasswordCracking {
 	meta:
 		description = "Chinese Hacktool Set - file WebCrack4-RouterPasswordCracking.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "00c68d1b1aa655dfd5bb693c13cdda9dbd34c638"
@@ -728,7 +728,7 @@ rule hscan_gui {
 	meta:
 		description = "Chinese Hacktool Set - file hscan-gui.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "1885f0b7be87f51c304b39bc04b9423539825c69"
@@ -744,7 +744,7 @@ rule S_MultiFunction_Scanners_s {
 	meta:
 		description = "Chinese Hacktool Set - file s.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "79b60ffa1c0f73b3c47e72118e0f600fcd86b355"
@@ -769,7 +769,7 @@ rule HKTL_CN_Dos_GetPass {
 	meta:
 		description = "Chinese Hacktool Set - file GetPass.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		modified = "2023-01-06"
@@ -788,7 +788,7 @@ rule HKTL_CN_Dos_GetPass {
 rule HKTL_CN_update_PcMain {
    meta:
       description = "Chinese Hacktool Set - file PcMain.dll"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       score = 90
       reference = "http://tools.zjqhr.com/"
       date = "2015-06-13"
@@ -816,7 +816,7 @@ rule HKTL_CN_Dos_sys {
 	meta:
 		description = "Chinese Hacktool Set - file sys.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		modified = "2023-01-06"
@@ -835,7 +835,7 @@ rule HKTL_CN_dat_xpf {
 	meta:
 		description = "Chinese Hacktool Set - file xpf.sys"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		modified = "2023-01-06"
@@ -853,7 +853,7 @@ rule HKTL_CN_Project1 {
 	meta:
 		description = "Chinese Hacktool Set - file Project1.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		modified = "2023-01-06"
@@ -871,7 +871,7 @@ rule Arp_EMP_v1_0 {
 	meta:
 		description = "Chinese Hacktool Set - file Arp EMP v1.0.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "ae4954c142ad1552a2abaef5636c7ef68fdd99ee"
@@ -885,7 +885,7 @@ rule CN_Tools_MyUPnP {
 	meta:
 		description = "Chinese Hacktool Set - file MyUPnP.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "15b6fca7e42cd2800ba82c739552e7ffee967000"
@@ -901,7 +901,7 @@ rule CN_Tools_Shiell {
 	meta:
 		description = "Chinese Hacktool Set - file Shiell.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "b432d80c37abe354d344b949c8730929d8f9817a"
@@ -918,7 +918,7 @@ rule cndcom_cndcom {
 	meta:
 		description = "Chinese Hacktool Set - file cndcom.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "08bbe6312342b28b43201125bd8c518531de8082"
@@ -939,7 +939,7 @@ rule IsDebug_V1_4 {
 	meta:
 		description = "Chinese Hacktool Set - file IsDebug V1.4.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "ca32474c358b4402421ece1cb31714fbb088b69a"
@@ -960,7 +960,7 @@ rule HTTPSCANNER {
 	meta:
 		description = "Chinese Hacktool Set - file HTTPSCANNER.EXE"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "ae2929346944c1ea3411a4562e9d5e2f765d088a"
@@ -975,7 +975,7 @@ rule HScan_v1_20_PipeCmd {
 	meta:
 		description = "Chinese Hacktool Set - file PipeCmd.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "64403ce63b28b544646a30da3be2f395788542d6"
@@ -997,7 +997,7 @@ rule Dos_fp {
 	meta:
 		description = "Chinese Hacktool Set - file fp.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "41d57d356098ff55fe0e1f0bcaa9317df5a2a45c"
@@ -1014,7 +1014,7 @@ rule Dos_netstat {
 	meta:
 		description = "Chinese Hacktool Set - file netstat.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "d0444b7bd936b5fc490b865a604e97c22d97e598"
@@ -1031,7 +1031,7 @@ rule CN_Tools_xsniff {
 	meta:
 		description = "Chinese Hacktool Set - file xsniff.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "d61d7329ac74f66245a92c4505a327c85875c577"
@@ -1049,7 +1049,7 @@ rule MSSqlPass {
 	meta:
 		description = "Chinese Hacktool Set - file MSSqlPass.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "172b4e31ed15d1275ac07f3acbf499daf9a055d7"
@@ -1065,7 +1065,7 @@ rule WSockExpert {
 	meta:
 		description = "Chinese Hacktool Set - file WSockExpert.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "2962bf7b0883ceda5e14b8dad86742f95b50f7bf"
@@ -1084,7 +1084,7 @@ rule Ms_Viru_racle {
 	meta:
 		description = "Chinese Hacktool Set - file racle.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "13116078fff5c87b56179c5438f008caf6c98ecb"
@@ -1101,7 +1101,7 @@ rule lamescan3 {
 	meta:
 		description = "Chinese Hacktool Set - file lamescan3.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "3130eefb79650dab2e323328b905e4d5d3a1d2f0"
@@ -1118,7 +1118,7 @@ rule CN_Tools_pc {
 	meta:
 		description = "Chinese Hacktool Set - file pc.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "5cf8caba170ec461c44394f4058669d225a94285"
@@ -1135,7 +1135,7 @@ rule Dos_Down64 {
 	meta:
 		description = "Chinese Hacktool Set - file Down64.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "43e455e43b49b953e17a5b885ffdcdf8b6b23226"
@@ -1154,7 +1154,7 @@ rule epathobj_exp32 {
 	meta:
 		description = "Chinese Hacktool Set - file epathobj_exp32.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		modified = "2022-12-21"
@@ -1173,7 +1173,7 @@ rule Tools_unknown {
 	meta:
 		description = "Chinese Hacktool Set - file unknown.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "4be8270c4faa1827177e2310a00af2d5bcd2a59f"
@@ -1191,7 +1191,7 @@ rule PLUGIN_AJunk {
 	meta:
 		description = "Chinese Hacktool Set - file AJunk.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "eb430fcfe6d13b14ff6baa4b3f59817c0facec00"
@@ -1207,7 +1207,7 @@ rule IISPutScanner {
 	meta:
 		description = "Chinese Hacktool Set - file IISPutScanner.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "9869c70d6a9ec2312c749aa17d4da362fa6e2592"
@@ -1251,7 +1251,7 @@ rule IDTools_For_WinXP_IdtTool_2 {
 	meta:
 		description = "Chinese Hacktool Set - file IdtTool.sys"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "07feb31dd21d6f97614118b8a0adf231f8541a67"
@@ -1269,7 +1269,7 @@ rule hkmjjiis6 {
 	meta:
 		description = "Chinese Hacktool Set - file hkmjjiis6.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "4cbc6344c6712fa819683a4bd7b53f78ea4047d7"
@@ -1291,7 +1291,7 @@ rule Dos_lcx {
 	meta:
 		description = "Chinese Hacktool Set - file lcx.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "b6ad5dd13592160d9f052bb47b0d6a87b80a406d"
@@ -1316,7 +1316,7 @@ rule x_way2_5_X_way {
 	meta:
 		description = "Chinese Hacktool Set - file X-way.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "8ba8530fbda3e8342e8d4feabbf98c66a322dac6"
@@ -1338,7 +1338,7 @@ rule tools_Sqlcmd {
 	meta:
 		description = "Chinese Hacktool Set - file Sqlcmd.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "99d56476e539750c599f76391d717c51c4955a33"
@@ -1358,7 +1358,7 @@ rule Sword1_5 {
 	meta:
 		description = "Chinese Hacktool Set - file Sword1.5.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "96ee5c98e982aa8ed92cb4cedb85c7fda873740f"
@@ -1378,7 +1378,7 @@ rule Tools_scan {
 	meta:
 		description = "Chinese Hacktool Set - file scan.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "c580a0cc41997e840d2c0f83962e7f8b636a5a13"
@@ -1394,7 +1394,7 @@ rule Dos_c {
 	meta:
 		description = "Chinese Hacktool Set - file c.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "3deb6bd52fdac6d5a3e9a91c585d67820ab4df78"
@@ -1414,7 +1414,7 @@ rule arpsniffer {
 	meta:
 		description = "Chinese Hacktool Set - file arpsniffer.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "7d8753f56fc48413fc68102cff34b6583cb0066c"
@@ -1432,7 +1432,7 @@ rule pw_inspector_2 {
 	meta:
 		description = "Chinese Hacktool Set - file pw-inspector.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "e0a1117ee4a29bb4cf43e3a80fb9eaa63bb377bf"
@@ -1449,7 +1449,7 @@ rule datPcShare {
 	meta:
 		description = "Chinese Hacktool Set - file datPcShare.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "87acb649ab0d33c62e27ea83241caa43144fc1c4"
@@ -1466,7 +1466,7 @@ rule Tools_xport {
 	meta:
 		description = "Chinese Hacktool Set - file xport.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "9584de562e7f8185f721e94ee3cceac60db26dda"
@@ -1488,7 +1488,7 @@ rule Pc_xai {
 	meta:
 		description = "Chinese Hacktool Set - file xai.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "f285a59fd931ce137c08bd1f0dae858cc2486491"
@@ -1508,7 +1508,7 @@ rule Radmin_Hash {
 	meta:
 		description = "Chinese Hacktool Set - file Radmin_Hash.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "be407bd5bf5bcd51d38d1308e17a1731cd52f66b"
@@ -1526,7 +1526,7 @@ rule OSEditor {
 	meta:
 		description = "Chinese Hacktool Set - file OSEditor.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "6773c3c6575cf9cfedbb772f3476bb999d09403d"
@@ -1544,7 +1544,7 @@ rule GoodToolset_ms11011 {
 	meta:
 		description = "Chinese Hacktool Set - file ms11011.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "5ad7a4962acbb6b0e3b73d77385eb91feb88b386"
@@ -1561,7 +1561,7 @@ rule FreeVersion_release {
 	meta:
 		description = "Chinese Hacktool Set - file release.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "f42e4b5748e92f7a450eb49fc89d6859f4afcebb"
@@ -1580,7 +1580,7 @@ rule churrasco {
 	meta:
 		description = "Chinese Hacktool Set - file churrasco.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "a8d4c177948a8e60d63de9d0ed948c50d0151364"
@@ -1597,7 +1597,7 @@ rule x64_KiwiCmd {
 	meta:
 		description = "Chinese Hacktool Set - file KiwiCmd.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "569ca4ff1a5ea537aefac4a04a2c588c566c6d86"
@@ -1613,7 +1613,7 @@ rule sql1433_SQL {
 	meta:
 		description = "Chinese Hacktool Set - file SQL.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "025e87deadd1c50b1021c26cb67b76b476fafd64"
@@ -1630,7 +1630,7 @@ rule CookieTools2 {
 	meta:
 		description = "Chinese Hacktool Set - file CookieTools2.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "cb67797f229fdb92360319e01277e1345305eb82"
@@ -1647,7 +1647,7 @@ rule cyclotron {
 	meta:
 		description = "Chinese Hacktool Set - file cyclotron.sys"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "5b63473b6dc1e5942bf07c52c31ba28f2702b246"
@@ -1665,7 +1665,7 @@ rule xscan_gui {
 	meta:
 		description = "Chinese Hacktool Set - file xscan_gui.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "a9e900510396192eb2ba4fb7b0ef786513f9b5ab"
@@ -1682,7 +1682,7 @@ rule CN_Tools_hscan {
 	meta:
 		description = "Chinese Hacktool Set - file hscan.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "17a743e40790985ececf5c66eaad2a1f8c4cffe8"
@@ -1703,7 +1703,7 @@ rule GoodToolset_pr {
 	meta:
 		description = "Chinese Hacktool Set - file pr.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "f6676daf3292cff59ef15ed109c2d408369e8ac8"
@@ -1722,7 +1722,7 @@ rule hydra_7_4_1_hydra {
 	meta:
 		description = "Chinese Hacktool Set - file hydra.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "3411d0380a1c1ebf58a454765f94d4f1dd714b5b"
@@ -1741,7 +1741,7 @@ rule CN_Tools_srss_2 {
 	meta:
 		description = "Chinese Hacktool Set - file srss.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "c418b30d004051bbf1b2d3be426936b95b5fea6f"
@@ -1764,7 +1764,7 @@ rule Dos_NtGod {
 	meta:
 		description = "Chinese Hacktool Set - file NtGod.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "adefd901d6bbd8437116f0170b9c28a76d4a87bf"
@@ -1781,7 +1781,7 @@ rule CN_Tools_VNCLink {
 	meta:
 		description = "Chinese Hacktool Set - file VNCLink.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "cafb531822cbc0cfebbea864489eebba48081aa1"
@@ -1797,7 +1797,7 @@ rule tools_NTCmd {
 	meta:
 		description = "Chinese Hacktool Set - file NTCmd.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "a3ae8659b9a673aa346a60844208b371f7c05e3c"
@@ -1816,7 +1816,7 @@ rule mysql_pwd_crack {
 	meta:
 		description = "Chinese Hacktool Set - file mysql_pwd_crack.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "57d1cb4d404688804a8c3755b464a6e6248d1c73"
@@ -1834,7 +1834,7 @@ rule CmdShell64 {
 	meta:
 		description = "Chinese Hacktool Set - file CmdShell64.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "5b92510475d95ae5e7cd6ec4c89852e8af34acf1"
@@ -1854,7 +1854,7 @@ rule Ms_Viru_v {
 	meta:
 		description = "Chinese Hacktool Set - file v.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "ecf4ba6d1344f2f3114d52859addee8b0770ed0d"
@@ -1873,7 +1873,7 @@ rule CN_Tools_Vscan {
 	meta:
 		description = "Chinese Hacktool Set - file Vscan.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "0365fe05e2de0f327dfaa8cd0d988dbb7b379612"
@@ -1891,7 +1891,7 @@ rule Dos_iis {
 	meta:
 		description = "Chinese Hacktool Set - file iis.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "61ffd2cbec5462766c6f1c44bd44eeaed4f3d2c7"
@@ -1911,7 +1911,7 @@ rule IISPutScannesr {
 	meta:
 		description = "Chinese Hacktool Set - file IISPutScannesr.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "2dd8fee20df47fd4eed5a354817ce837752f6ae9"
@@ -1926,7 +1926,7 @@ rule HKTL_Unknown_CN_Generate {
 	meta:
 		description = "Chinese Hacktool Set - file Generate.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		modified = "2022-01-20" /* fixed typo in rule name */
@@ -1945,7 +1945,7 @@ rule Pc_rejoice {
 	meta:
 		description = "Chinese Hacktool Set - file rejoice.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "fe634a9f5d48d5c64c8f8bfd59ac7d8965d8f372"
@@ -1964,7 +1964,7 @@ rule ms11080_withcmd {
 	meta:
 		description = "Chinese Hacktool Set - file ms11080_withcmd.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		modified = "2022-12-21"
@@ -1983,7 +1983,7 @@ rule OtherTools_xiaoa {
 	meta:
 		description = "Chinese Hacktool Set - file xiaoa.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "6988acb738e78d582e3614f83993628cf92ae26d"
@@ -2002,7 +2002,7 @@ rule unknown2 {
 	meta:
 		description = "Chinese Hacktool Set - file unknown2.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "32508d75c3d95e045ddc82cb829281a288bd5aa3"
@@ -2022,7 +2022,7 @@ rule hydra_7_3_hydra {
 	meta:
 		description = "Chinese Hacktool Set - file hydra.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "2f82b8bf1159e43427880d70bcd116dc9e8026ad"
@@ -2040,7 +2040,7 @@ rule OracleScan {
 	meta:
 		description = "Chinese Hacktool Set - file OracleScan.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "10ff7faf72fe6da8f05526367b3522a2408999ec"
@@ -2057,7 +2057,7 @@ rule SQLTools {
 	meta:
 		description = "Chinese Hacktool Set - file SQLTools.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "38a9caa2079afa2c8d7327e7762f7ed9a69056f7"
@@ -2077,7 +2077,7 @@ rule portscanner {
 	meta:
 		description = "Chinese Hacktool Set - file portscanner.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "1de367d503fdaaeee30e8ad7c100dd1e320858a4"
@@ -2094,7 +2094,7 @@ rule kappfree {
 	meta:
 		description = "Chinese Hacktool Set - file kappfree.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "e57e79f190f8a24ca911e6c7e008743480c08553"
@@ -2110,7 +2110,7 @@ rule Smartniff {
 	meta:
 		description = "Chinese Hacktool Set - file Smartniff.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "67609f21d54a57955d8fe6d48bc471f328748d0a"
@@ -2126,7 +2126,7 @@ rule ChinaChopper_caidao {
 	meta:
 		description = "Chinese Hacktool Set - file caidao.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "056a60ec1f6a8959bfc43254d97527b003ae5edb"
@@ -2145,7 +2145,7 @@ rule KiwiTaskmgr_2 {
 	meta:
 		description = "Chinese Hacktool Set - file KiwiTaskmgr.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "8bd6c9f2e8be3e74bd83c6a2d929f8a69422fb16"
@@ -2161,7 +2161,7 @@ rule kappfree_2 {
 	meta:
 		description = "Chinese Hacktool Set - file kappfree.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "5d578df9a71670aa832d1cd63379e6162564fb6b"
@@ -2178,7 +2178,7 @@ rule x_way2_5_sqlcmd {
 	meta:
 		description = "Chinese Hacktool Set - file sqlcmd.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "5152a57e3638418b0d97a42db1c0fc2f893a2794"
@@ -2207,7 +2207,7 @@ rule Win32_klock {
 	meta:
 		description = "Chinese Hacktool Set - file klock.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "7addce4434670927c4efaa560524680ba2871d17"
@@ -2223,7 +2223,7 @@ rule ipsearcher {
 	meta:
 		description = "Chinese Hacktool Set - file ipsearcher.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		modified = "2022-12-21"
@@ -2241,7 +2241,7 @@ rule ms10048_x64 {
 	meta:
 		description = "Chinese Hacktool Set - file ms10048-x64.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "418bec3493c85e3490e400ecaff5a7760c17a0d0"
@@ -2258,7 +2258,7 @@ rule hscangui {
 	meta:
 		description = "Chinese Hacktool Set - file hscangui.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "af8aced0a78e1181f4c307c78402481a589f8d07"
@@ -2275,7 +2275,7 @@ rule GoodToolset_ms11080 {
 	meta:
 		description = "Chinese Hacktool Set - file ms11080.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		modified = "2022-12-21"
@@ -2295,7 +2295,7 @@ rule epathobj_exp64 {
 	meta:
 		description = "Chinese Hacktool Set - file epathobj_exp64.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		modified = "2022-12-21"
@@ -2315,7 +2315,7 @@ rule kelloworld_2 {
 	meta:
 		description = "Chinese Hacktool Set - file kelloworld.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "55d5dabd96c44d16e41f70f0357cba1dda26c24f"
@@ -2331,7 +2331,7 @@ rule HScan_v1_20_hscan {
 	meta:
 		description = "Chinese Hacktool Set - file hscan.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "568b06696ea0270ee1a744a5ac16418c8dacde1c"
@@ -2349,7 +2349,7 @@ rule _Project1_Generate_rejoice {
 	meta:
 		description = "Chinese Hacktool Set - from files Project1.exe, Generate.exe, rejoice.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		super_rule = 1
@@ -2371,7 +2371,7 @@ rule _hscan_hscan_hscangui {
 	meta:
 		description = "Chinese Hacktool Set - from files hscan.exe, hscan.exe, hscangui.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		super_rule = 1
@@ -2392,7 +2392,7 @@ rule kiwi_tools {
 	meta:
 		description = "Chinese Hacktool Set"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		super_rule = 1
@@ -2426,7 +2426,7 @@ rule kiwi_tools_gentil_kiwi {
 	meta:
 		description = "Chinese Hacktool Set"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		super_rule = 1

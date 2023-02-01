@@ -13,7 +13,7 @@ rule Industroyer_Malware_1 {
    meta:
       description = "Detects Industroyer related malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/x81cSy"
       date = "2017-06-13"
       hash1 = "ad23c7930dae02de1ea3c6836091b5fb3c62a89bf2bcfb83b4b39ede15904910"
@@ -39,7 +39,7 @@ rule Industroyer_Malware_2 {
    meta:
       description = "Detects Industroyer related malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/x81cSy"
       date = "2017-06-13"
       hash1 = "3e3ab9674142dec46ce389e9e759b6484e847f5c1e1fc682fc638fc837c13571"
@@ -78,7 +78,7 @@ rule Industroyer_Portscan_3 {
    meta:
       description = "Detects Industroyer related custom port scaner"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/x81cSy"
       date = "2017-06-13"
       hash1 = "893e4cca7fe58191d2f6722b383b5e8009d3885b5913dcd2e3577e5a763cdb3f"
@@ -100,7 +100,7 @@ rule Industroyer_Portscan_3_Output {
    meta:
       description = "Detects Industroyer related custom port scaner output file"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/x81cSy"
       date = "2017-06-13"
    strings:
@@ -114,7 +114,7 @@ rule Industroyer_Malware_4 {
    meta:
       description = "Detects Industroyer related malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/x81cSy"
       date = "2017-06-13"
       hash1 = "21c1fdd6cfd8ec3ffe3e922f944424b543643dbdab99fa731556f8805b0d5561"
@@ -132,7 +132,7 @@ rule Industroyer_Malware_5 {
    meta:
       description = "Detects Industroyer related malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/x81cSy"
       date = "2017-06-13"
       hash1 = "7907dd95c1d36cf3dc842a1bd804f0db511a0f68f4b3d382c23a3c974a383cad"

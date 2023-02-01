@@ -2,7 +2,7 @@
 rule APT_MAL_RANSOM_ViceSociety_PolyVice_Jan23_1 {
    meta:
       description = "Detects NTRU-ChaChaPoly (PolyVice) malware used by Vice Society"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.sentinelone.com/labs/custom-branded-ransomware-the-vice-society-group-and-the-threat-of-outsourced-development/"
       date = "2023-01-12"
       modified = "2023-01-13"
@@ -32,7 +32,7 @@ rule APT_MAL_RANSOM_ViceSociety_PolyVice_Jan23_1 {
 rule APT_MAL_RANSOM_ViceSociety_Chily_Jan23_1 {
    meta:
       description = "Detects Chily or SunnyDay malware used by Vice Society"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.sentinelone.com/labs/custom-branded-ransomware-the-vice-society-group-and-the-threat-of-outsourced-development/"
       date = "2023-01-12"
       score = 80

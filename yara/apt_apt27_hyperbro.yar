@@ -20,7 +20,7 @@ rule APT_RU_APT27_HyperBro_Vftrace_Loader_Jan22_1 {
 rule APT_CN_APT27_Compromised_Certficate_Jan22_1 {
    meta:
       description = "Detects compromised certifcates used by APT27 malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       date = "2022-01-29"
       score = 80
       reference = "https://www.verfassungsschutz.de/SharedDocs/publikationen/DE/cyberabwehr/2022-01-bfv-cyber-brief.pdf"

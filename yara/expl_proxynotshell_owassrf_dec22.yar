@@ -2,7 +2,7 @@
 rule EXPL_LOG_ProxyNotShell_OWASSRF_PowerShell_Proxy_Log_Dec22_1 {
    meta:
       description = "Detects traces of exploitation activity in relation to ProxyNotShell MS Exchange vulnerabilities CVE-2022-41040 and CVE-2022-41082"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.crowdstrike.com/blog/owassrf-exploit-analysis-and-recommendations/"
       date = "2022-12-22"
       score = 70
@@ -23,7 +23,7 @@ rule EXPL_LOG_ProxyNotShell_OWASSRF_PowerShell_Proxy_Log_Dec22_1 {
 rule EXPL_LOG_ProxyNotShell_OWASSRF_PowerShell_Proxy_Log_Dec22_2 {
    meta:
       description = "Detects traces of exploitation activity in relation to ProxyNotShell MS Exchange vulnerabilities CVE-2022-41040 and CVE-2022-41082"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.crowdstrike.com/blog/owassrf-exploit-analysis-and-recommendations/"
       date = "2022-12-22"
       score = 60
@@ -45,7 +45,7 @@ rule EXPL_LOG_ProxyNotShell_OWASSRF_PowerShell_Proxy_Log_Dec22_2 {
 rule EXPL_LOG_ProxyNotShell_OWASSRF_PowerShell_Proxy_Log_Dec22_3 {
    meta:
       description = "Detects traces of exploitation activity in relation to ProxyNotShell MS Exchange vulnerabilities CVE-2022-41040 and CVE-2022-41082"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.crowdstrike.com/blog/owassrf-exploit-analysis-and-recommendations/"
       date = "2022-12-22"
       score = 60
@@ -65,7 +65,7 @@ rule EXPL_LOG_ProxyNotShell_OWASSRF_PowerShell_Proxy_Log_Dec22_3 {
 rule EXPL_LOG_ProxyNotShell_PowerShell_Proxy_Log_Dec22_1 {
    meta:
       description = "Detects traces of exploitation activity in relation to ProxyNotShell MS Exchange vulnerabilities CVE-2022-41040 and CVE-2022-41082"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.crowdstrike.com/blog/owassrf-exploit-analysis-and-recommendations/"
       date = "2022-12-22"
       modified = "2023-01-26"

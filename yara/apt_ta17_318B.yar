@@ -34,7 +34,7 @@ rule Volgmer_Malware {
    meta:
       description = "Detects Volgmer malware as reported in US CERT TA17-318B"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-318B"
       date = "2017-11-15"
       hash1 = "ff2eb800ff16745fc13c216ff6d5cc2de99466244393f67ab6ea6f8189ae01dd"

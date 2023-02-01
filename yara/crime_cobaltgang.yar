@@ -16,7 +16,7 @@ rule CobaltStrike_CN_Group_BeaconDropper_Aug17 {
    meta:
       description = "Detects Script Dropper of Cobalt Gang used in August 2017"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-08-09"
       hash1 = "fc0fad39b461eb1cfc6be57932993fcea94fca650564271d1b74dd850c81602f"
@@ -41,7 +41,7 @@ rule CobaltGang_Malware_Aug17_1 {
    meta:
       description = "Detects a Cobalt Gang malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://sslbl.abuse.ch/intel/6ece5ece4192683d2d84e25b0ba7e04f9cb7eb7c"
       date = "2017-08-09"
       hash1 = "6d70673b723f338b3febc9f1d69463bdd4775539cb92b5a5d8fccc0d977fa2f0"
@@ -58,7 +58,7 @@ rule CobaltGang_Malware_Aug17_2 {
    meta:
       description = "Detects a Cobalt Gang malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://sslbl.abuse.ch/intel/6ece5ece4192683d2d84e25b0ba7e04f9cb7eb7c"
       date = "2017-08-09"
       hash1 = "80791d5e76782cc3cd14f37f351e33b860818784192ab5b650f1cdf4f131cf72"
@@ -71,7 +71,7 @@ rule CobaltGang_Malware_Aug17_2 {
 rule MAL_CRIME_CobaltGang_Malware_Oct19_1 {
    meta:
       description = "Detects CobaltGang malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/vxsh4d0w/status/1187353649015611392"
       date = "2019-10-24"
       hash1 = "72125933265f884ceb8ab64ab303ea76aaeb7877faee8976d398acd0d0b7356b"

@@ -12,7 +12,7 @@ rule CheshireCat_Sample2 {
 	meta:
 		description = "Auto-generated rule"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://malware-research.org/prepare-father-of-stuxnet-news-are-coming/"
 		date = "2015-08-08"
 		score = 70
@@ -35,7 +35,7 @@ rule CheshireCat_Gen1 {
 	meta:
 		description = "Auto-generated rule"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://malware-research.org/prepare-father-of-stuxnet-news-are-coming/"
 		date = "2015-08-08"
 		super_rule = 1
@@ -75,7 +75,7 @@ rule CheshireCat_Gen2 {
 	meta:
 		description = "Cheshire Cat Malware"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://malware-research.org/prepare-father-of-stuxnet-news-are-coming/"
 		date = "2015-08-08"
 		super_rule = 1

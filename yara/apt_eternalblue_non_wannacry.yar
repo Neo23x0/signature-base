@@ -13,7 +13,7 @@ rule Backdoor_Redosdru_Jun17 : HIGHVOL {
    meta:
       description = "Detects malware Redosdru - file systemHome.exe"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/OOB3mH"
       date = "2017-06-04"
       hash1 = "4f49e17b457ef202ab0be905691ef2b2d2b0a086a7caddd1e70dd45e5ed3b309"
@@ -37,7 +37,7 @@ rule Backdoor_Redosdru_Jun17 : HIGHVOL {
 rule Backdoor_Nitol_Jun17 {
    meta:
       description = "Detects malware backdoor Nitol - file wyawou.exe - Attention: this rule also matches on Upatre Downloader"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/OOB3mH"
       date = "2017-06-04"
       modified = "2023-01-07"

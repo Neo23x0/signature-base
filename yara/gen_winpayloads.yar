@@ -13,7 +13,7 @@ rule WinPayloads_PowerShell {
    meta:
       description = "Detects WinPayloads PowerShell Payload"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/nccgroup/Winpayloads"
       date = "2017-07-11"
       hash1 = "011eba8f18b66634f6eb47527b4ceddac2ae615d6861f89a35dbb9fc591cae8e"
@@ -30,7 +30,7 @@ rule WinPayloads_Payload {
    meta:
       description = "Detects WinPayloads Payload"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/nccgroup/Winpayloads"
       date = "2017-07-11"
       super_rule = 1

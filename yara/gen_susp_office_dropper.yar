@@ -1,7 +1,7 @@
 rule SUSP_Office_Dropper_Strings {
    meta:
       description = "Detects Office droppers that include a notice to enable active content"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2018-09-13"
    strings:
@@ -18,7 +18,7 @@ rule SUSP_Office_Dropper_Strings {
 rule SUSP_EnableContent_String_Gen {
    meta:
       description = "Detects suspicious string that asks to enable active content in Office Doc"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2019-02-12"
       hash1 = "525ba2c8d35f6972ac8fcec8081ae35f6fe8119500be20a4113900fe57d6a0de"
@@ -40,7 +40,7 @@ rule SUSP_EnableContent_String_Gen {
 rule SUSP_WordDoc_VBA_Macro_Strings {
    meta:
       description = "Detects suspicious strings in Word Doc that indcate malicious use of VBA macros"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2019-02-12"
       score = 60
@@ -62,7 +62,7 @@ rule SUSP_WordDoc_VBA_Macro_Strings {
 rule SUSP_OfficeDoc_VBA_Base64Decode {
    meta:
       description = "Detects suspicious VBA code with Base64 decode functions"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/cpaton/Scripting/blob/master/VBA/Base64.bas"
       date = "2019-06-21"
       score = 70
@@ -78,7 +78,7 @@ rule SUSP_OfficeDoc_VBA_Base64Decode {
 rule SUSP_VBA_FileSystem_Access {
    meta:
       description = "Detects suspicious VBA that writes to disk and is activated on document open"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2019-06-21"
       score = 60

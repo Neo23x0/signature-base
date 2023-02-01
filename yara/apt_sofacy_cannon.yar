@@ -2,7 +2,7 @@
 rule APT_APT28_Cannon_Trojan_Nov18_1 {
    meta:
       description = "Detects Cannon Trojan used by Sofacy"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://researchcenter.paloaltonetworks.com/2018/11/unit42-sofacy-continues-global-attacks-wheels-new-cannon-trojan/"
       date = "2018-11-20"
       hash1 = "61a1f3b4fb4dbd2877c91e81db4b1af8395547eab199bf920e9dd11a1127221e"

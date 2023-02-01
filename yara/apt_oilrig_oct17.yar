@@ -12,7 +12,7 @@ rule OilRig_Strings_Oct17 {
    meta:
       description = "Detects strings from OilRig malware and malicious scripts"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://researchcenter.paloaltonetworks.com/2017/10/unit42-oilrig-group-steps-attacks-new-delivery-documents-new-injector-trojan/"
       date = "2017-10-18"
       modified = "2022-12-21"
@@ -42,7 +42,7 @@ rule OilRig_ISMAgent_Campaign_Samples1 {
    meta:
       description = "Detects OilRig malware from Unit 42 report in October 2017"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/JQVfFP"
       date = "2017-10-18"
       hash1 = "119c64a8b35bd626b3ea5f630d533b2e0e7852a4c59694125ff08f9965b5f9cc"
@@ -62,7 +62,7 @@ rule OilRig_ISMAgent_Campaign_Samples2 {
    meta:
       description = "Detects OilRig malware from Unit 42 report in October 2017"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/JQVfFP"
       date = "2017-10-18"
       hash1 = "fcad263d0fe2b418db05f47d4036f0b42aaf201c9b91281dfdcb3201b298e4f4"
@@ -82,7 +82,7 @@ rule OilRig_ISMAgent_Campaign_Samples3 {
    meta:
       description = "Detects OilRig malware from Unit 42 report in October 2017"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/JQVfFP"
       date = "2017-10-18"
       hash1 = "a9f1375da973b229eb649dc3c07484ae7513032b79665efe78c0e55a6e716821"

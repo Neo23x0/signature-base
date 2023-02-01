@@ -2,7 +2,7 @@
 rule MAL_Emotet_JS_Dropper_Oct19_1 {
    meta:
       description = "Detects Emotet JS dropper"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://app.any.run/tasks/aaa75105-dc85-48ca-9732-085b2ceeb6eb/"
       date = "2019-10-03"
       hash1 = "38295d728522426672b9497f63b72066e811f5b53a14fb4c4ffc23d4efbbca4a"
@@ -19,7 +19,7 @@ import "pe"
 rule MAL_Emotet_Jan20_1 {
    meta:
       description = "Detects Emotet malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://app.any.run/tasks/5e81638e-df2e-4a5b-9e45-b07c38d53929/"
       date = "2020-01-29"
       hash1 = "e7c22ccdb1103ee6bd15c528270f56913bb2f47345b360802b74084563f1b73d"

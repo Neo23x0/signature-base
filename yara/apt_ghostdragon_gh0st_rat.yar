@@ -9,7 +9,7 @@ rule GhostDragon_Gh0stRAT {
 	meta:
 		description = "Detects Gh0st RAT mentioned in Cylance' Ghost Dragon Report"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://blog.cylance.com/the-ghost-dragon"
 		date = "2016-04-23"
 		hash1 = "f9a669d22866cd041e2d520c5eb093188962bea8864fdfd0c0abb2b254e9f197"
@@ -54,7 +54,7 @@ rule GhostDragon_Gh0stRAT_Sample2 {
 	meta:
 		description = "Detects Gh0st RAT mentioned in Cylance' Ghost Dragon Report"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://blog.cylance.com/the-ghost-dragon"
 		date = "2016-04-23"
 		hash1 = "71a52058f6b5cef66302c19169f67cf304507b4454cca83e2c36151da8da1d97"
@@ -76,7 +76,7 @@ rule GhostDragon_Gh0stRAT_Sample3 {
 	meta:
 		description = "Detects Gh0st RAT mentioned in Cylance' Ghost Dragon Report"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://blog.cylance.com/the-ghost-dragon"
 		date = "2016-04-23"
 		hash1 = "1be9c68b31247357328596a388010c9cfffadcb6e9841fb22de8b0dc2d161c42"

@@ -2,7 +2,7 @@
 rule APT_UA_Hermetic_Wiper_Feb22_1 {
    meta:
       description = "Detects Hermetic Wiper malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.sentinelone.com/labs/hermetic-wiper-ukraine-under-attack/"
       date = "2022-02-24"
       score = 75
@@ -39,7 +39,7 @@ rule APT_UA_Hermetic_Wiper_Feb22_1 {
 rule APT_UA_Hermetic_Wiper_Artefacts_Feb22_1 {
    meta:
       description = "Detects artefacts found in Hermetic Wiper malware related intrusions"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/ukraine-wiper-malware-russia"
       date = "2022-02-25"
       score = 75
@@ -70,7 +70,7 @@ rule APT_UA_Hermetic_Wiper_Artefacts_Feb22_1 {
 rule APT_UA_Hermetic_Wiper_Scheduled_Task_Feb22_1 {
    meta:
       description = "Detects scheduled task pattern found in Hermetic Wiper malware related intrusions"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/ukraine-wiper-malware-russia"
       date = "2022-02-25"
       score = 85

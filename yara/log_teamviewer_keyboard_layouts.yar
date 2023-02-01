@@ -2,7 +2,7 @@
 rule LOG_TeamViewer_Connect_Chinese_Keyboard_Layout {
    meta:
       description = "Detects a suspicious TeamViewer log entry stating that the remote systems had a Chinese keyboard layout"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       date = "2019-10-12"
       modified = "2020-12-16"
       score = 60
@@ -22,7 +22,7 @@ rule LOG_TeamViewer_Connect_Chinese_Keyboard_Layout {
 rule LOG_TeamViewer_Connect_Russian_Keyboard_Layout {
    meta:
       description = "Detects a suspicious TeamViewer log entry stating that the remote systems had a Russian keyboard layout"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       date = "2019-10-12"
       modified = "2022-12-07"
       score = 60

@@ -3,7 +3,7 @@
 rule SUSP_RAR_Single_Doc_File {
    meta:
       description = "Detects suspicious RAR files that contain nothing but a single .doc file"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2020-07-11"
       score = 40

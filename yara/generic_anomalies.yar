@@ -14,7 +14,7 @@ rule Embedded_EXE_Cloaking {
         meta:
                 description = "Detects an embedded executable in a non-executable file"
                 license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
                 date = "2015/02/27"
                 score = 65
         strings:
@@ -44,7 +44,7 @@ rule Embedded_EXE_Cloaking {
 // rule Cloaked_as_JPG {
 //    meta:
 //       description = "Detects a non-JPEG file cloaked as JPG"
-//       author = "Florian Roth"
+//       author = "Florian Roth (Nextron Systems)"
 //       date = "2015/03/02"
 //       modified = "2022-09-16"
 //       score = 40
@@ -85,7 +85,7 @@ rule Embedded_EXE_Cloaking {
 rule SUSP_Known_Type_Cloaked_as_JPG {
    meta:
       description = "Detects a non-JPEG file type cloaked as .jpg"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research - replacement for Cloaked_as_JPG rule"
       date = "2022-09-16"
       score = 60
@@ -120,7 +120,7 @@ rule Suspicious_Size_explorer_exe {
    meta:
       description = "Detects uncommon file size of explorer.exe"
       license = "https://creativecommons.org/licenses/by-nc/4.0/"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       score = 60
       nodeepdive = 1
       date = "2015-12-21"
@@ -140,7 +140,7 @@ rule Suspicious_Size_explorer_exe {
 rule Suspicious_Size_chrome_exe {
     meta:
       description = "Detects uncommon file size of chrome.exe"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       score = 60
       nodeepdive = 1
       date = "2015-12-21"
@@ -160,7 +160,7 @@ rule Suspicious_Size_csrss_exe {
     meta:
         description = "Detects uncommon file size of csrss.exe"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
         score = 60
         date = "2015-12-21"
         modified = "2022-01-28"
@@ -175,7 +175,7 @@ rule Suspicious_Size_iexplore_exe {
     meta:
         description = "Detects uncommon file size of iexplore.exe"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
         score = 60
         date = "2015-12-21"
         noarchivescan = 1
@@ -190,7 +190,7 @@ rule Suspicious_Size_firefox_exe {
     meta:
         description = "Detects uncommon file size of firefox.exe"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
         score = 60
         date = "2015-12-21"
         noarchivescan = 1
@@ -204,7 +204,7 @@ rule Suspicious_Size_java_exe {
     meta:
         description = "Detects uncommon file size of java.exe"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
         score = 60
         date = "2015-12-21"
         noarchivescan = 1
@@ -218,7 +218,7 @@ rule Suspicious_Size_lsass_exe {
     meta:
         description = "Detects uncommon file size of lsass.exe"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
         score = 60
         date = "2015-12-21"
         noarchivescan = 1
@@ -232,7 +232,7 @@ rule Suspicious_Size_svchost_exe {
     meta:
         description = "Detects uncommon file size of svchost.exe"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
         score = 60
         date = "2015-12-21"
         noarchivescan = 1
@@ -246,7 +246,7 @@ rule Suspicious_Size_winlogon_exe {
     meta:
         description = "Detects uncommon file size of winlogon.exe"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
         score = 60
         date = "2015-12-21"
         noarchivescan = 1
@@ -260,7 +260,7 @@ rule Suspicious_Size_igfxhk_exe {
     meta:
         description = "Detects uncommon file size of igfxhk.exe"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
         score = 60
         date = "2015-12-21"
         modified = "2022-03-08"
@@ -275,7 +275,7 @@ rule Suspicious_Size_servicehost_dll {
     meta:
         description = "Detects uncommon file size of servicehost.dll"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
         score = 60
         date = "2015-12-23"
         noarchivescan = 1
@@ -289,7 +289,7 @@ rule Suspicious_Size_rundll32_exe {
     meta:
         description = "Detects uncommon file size of rundll32.exe"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
         score = 60
         date = "2015-12-23"
         noarchivescan = 1
@@ -303,7 +303,7 @@ rule Suspicious_Size_taskhost_exe {
     meta:
         description = "Detects uncommon file size of taskhost.exe"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
         score = 60
         date = "2015-12-23"
         noarchivescan = 1
@@ -317,7 +317,7 @@ rule Suspicious_Size_spoolsv_exe {
     meta:
         description = "Detects uncommon file size of spoolsv.exe"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
         score = 60
         date = "2015-12-23"
         noarchivescan = 1
@@ -331,7 +331,7 @@ rule Suspicious_Size_smss_exe {
     meta:
         description = "Detects uncommon file size of smss.exe"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
         score = 60
         date = "2015-12-23"
         noarchivescan = 1
@@ -345,7 +345,7 @@ rule Suspicious_Size_wininit_exe {
     meta:
         description = "Detects uncommon file size of wininit.exe"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
         score = 60
         date = "2015-12-23"
         noarchivescan = 1
@@ -359,7 +359,7 @@ rule Suspicious_AutoIt_by_Microsoft {
    meta:
       description = "Detects a AutoIt script with Microsoft identification"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research - VT"
       date = "2017-12-14"
       score = 60
@@ -374,7 +374,7 @@ rule Suspicious_AutoIt_by_Microsoft {
 rule SUSP_Size_of_ASUS_TuningTool {
    meta:
       description = "Detects an ASUS tuning tool with a suspicious size"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.welivesecurity.com/2018/10/17/greyenergy-updated-arsenal-dangerous-threat-actors/"
       date = "2018-10-17"
       modified = "2022-12-21"
@@ -390,7 +390,7 @@ rule SUSP_Size_of_ASUS_TuningTool {
 rule SUSP_PiratedOffice_2007 {
    meta:
       description = "Detects an Office document that was created with a pirated version of MS Office 2007"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/pwnallthethings/status/743230570440826886?lang=en"
       date = "2018-12-04"
       score = 40
@@ -404,7 +404,7 @@ rule SUSP_PiratedOffice_2007 {
 rule SUSP_Scheduled_Task_BigSize {
    meta:
       description = "Detects suspiciously big scheduled task XML file as seen in combination with embedded base64 encoded PowerShell code"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2018-12-06"
    strings:
@@ -421,7 +421,7 @@ rule SUSP_Scheduled_Task_BigSize {
 rule SUSP_Putty_Unnormal_Size {
    meta:
       description = "Detects a putty version with a size different than the one provided by Simon Tatham (could be caused by an additional signature or malware)"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2019-01-07"
       modified = "2022-06-30"
@@ -472,7 +472,7 @@ rule SUSP_Putty_Unnormal_Size {
 rule SUSP_RTF_Header_Anomaly {
    meta:
       description = "Detects malformed RTF header often used to trick mechanisms that check for a full RTF header"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/ItsReallyNick/status/975705759618158593"
       date = "2019-01-20"
       modified = "2022-09-15"
@@ -485,7 +485,7 @@ rule SUSP_RTF_Header_Anomaly {
 rule WEBSHELL_ASPX_ProxyShell_Aug21_1 {
    meta:
       description = "Detects webshells dropped by ProxyShell exploitation based on their file header (must be PST) and extension"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.bleepingcomputer.com/news/microsoft/microsoft-exchange-servers-are-getting-hacked-via-proxyshell-exploits/"
       date = "2021-08-13"
    condition:

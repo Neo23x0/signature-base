@@ -13,7 +13,7 @@ rule Andromeda_MalBot_Jun_1A {
    meta:
       description = "Detects a malicious Worm Andromeda / RETADUP"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "http://blog.trendmicro.com/trendlabs-security-intelligence/information-stealer-found-hitting-israeli-hospitals/"
       date = "2017-06-30"
       modified = "2022-12-21"

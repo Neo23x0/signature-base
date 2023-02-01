@@ -86,7 +86,7 @@ rule APT_HiddenCobra_GhostSecret_1 {
    meta:
       description = "Detects Hidden Cobra Sample"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://securingtomorrow.mcafee.com/mcafee-labs/analyzing-operation-ghostsecret-attack-seeks-to-steal-data-worldwide/"
       date = "2018-08-11"
       hash1 = "05a567fe3f7c22a0ef78cc39dcf2d9ff283580c82bdbe880af9549e7014becfc"
@@ -101,7 +101,7 @@ rule APT_HiddenCobra_GhostSecret_2 {
    meta:
       description = "Detects Hidden Cobra Sample"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://securingtomorrow.mcafee.com/mcafee-labs/analyzing-operation-ghostsecret-attack-seeks-to-steal-data-worldwide/"
       date = "2018-08-11"
       hash1 = "45e68dce0f75353c448865b9abafbef5d4ed6492cd7058f65bf6aac182a9176a"
@@ -120,7 +120,7 @@ import "pe"
 rule APT_MAL_HOPLIGHT_NK_HiddenCobra_Apr19_1 {
    meta:
       description = "Detects HOPLIGHT malware used by HiddenCobra APT group"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.us-cert.gov/ncas/analysis-reports/AR19-100A"
       date = "2019-04-13"
       hash1 = "d77fdabe17cdba62a8e728cbe6c740e2c2e541072501f77988674e07a05dfb39"
@@ -134,7 +134,7 @@ rule APT_MAL_HOPLIGHT_NK_HiddenCobra_Apr19_1 {
 rule APT_MAL_HOPLIGHT_NK_HiddenCobra_Apr19_2 {
    meta:
       description = "Detects HOPLIGHT malware used by HiddenCobra APT group"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.us-cert.gov/ncas/analysis-reports/AR19-100A"
       date = "2019-04-13"
       hash1 = "70034b33f59c6698403293cdc28676c7daa8c49031089efa6eefce41e22dccb3"
@@ -150,7 +150,7 @@ rule APT_MAL_HOPLIGHT_NK_HiddenCobra_Apr19_2 {
 rule APT_MAL_HOPLIGHT_NK_HiddenCobra_Apr19_3 {
    meta:
       description = "Detects HOPLIGHT malware used by HiddenCobra APT group"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.us-cert.gov/ncas/analysis-reports/AR19-100A"
       date = "2019-04-13"
       hash1 = "2151c1977b4555a1761c12f151969f8e853e26c396fa1a7b74ccbaf3a48f4525"

@@ -11,7 +11,7 @@
 rule NK_Miner_Malware_Jan18_1 {
    meta:
       description = "Detects Noth Korean Monero Miner mentioned in AlienVault report"
-      author = "Florian Roth (original rule by Chris Doman)"
+      author = "Florian Roth (Nextron Systems) (original rule by Chris Doman)"
       reference = "https://goo.gl/PChE1z"
       date = "2018-01-09"
       hash1 = "0024e32c0199ded445c0b968601f21cc92fc0c534d2642f2dd64c1c978ff01f3"

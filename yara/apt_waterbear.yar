@@ -12,7 +12,7 @@ rule Waterbear_1_Jun17 {
    meta:
       description = "Detects malware from Operation Waterbear"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
       hash1 = "dd3676f478ee6f814077a12302d38426760b0701bb629f413f7bf2ec71319db5"
@@ -27,7 +27,7 @@ rule Waterbear_2_Jun17 {
    meta:
       description = "Detects malware from Operation Waterbear"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
       hash1 = "dcb5c350af76c590002a8ea00b01d862b4d89cccbec3908bfe92fdf25eaa6ea4"
@@ -44,7 +44,7 @@ rule Waterbear_4_Jun17 {
    meta:
       description = "Detects malware from Operation Waterbear"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
       hash1 = "2e9cb7cadb3478edc9ef714ca4ddebb45e99d35386480e12792950f8a7a766e1"
@@ -67,7 +67,7 @@ rule Waterbear_4_Jun17 {
 rule Waterbear_5_Jun17 {
    meta:
       description = "Detects malware from Operation Waterbear"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
       modified = "2023-01-07"
@@ -89,7 +89,7 @@ rule Waterbear_6_Jun17 {
    meta:
       description = "Detects malware from Operation Waterbear"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
       hash1 = "409cd490feb40d08eb33808b78d52c00e1722eee163b60635df6c6fe2c43c230"
@@ -104,7 +104,7 @@ rule Waterbear_7_Jun17 {
    meta:
       description = "Detects malware from Operation Waterbear"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
       hash1 = "6891aa78524e442f4dda66dff51db9798e1f92e6fefcdf21eb870b05b0293134"
@@ -121,7 +121,7 @@ rule Waterbear_7_Jun17 {
 rule Waterbear_8_Jun17 {
    meta:
       description = "Detects malware from Operation Waterbear"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
       modified = "2023-01-07"
@@ -141,7 +141,7 @@ rule Waterbear_9_Jun17 {
    meta:
       description = "Detects malware from Operation Waterbear"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
       hash1 = "fc74d2434d48b316c9368d3f90fea19d76a20c09847421d1469268a32f59664c"
@@ -161,7 +161,7 @@ rule Waterbear_10_Jun17 {
    meta:
       description = "Detects malware from Operation Waterbear"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
       hash1 = "3b1e67e0e86d912d7bc6dee5b0f801260350e8ce831c93c3e9cfe5a39e766f41"
@@ -177,7 +177,7 @@ rule Waterbear_11_Jun17 {
    meta:
       description = "Detects malware from Operation Waterbear"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
       hash1 = "b046b2e2569636c2fc3683a0da8cfad25ff47bc304145be0f282a969c7397ae8"
@@ -194,7 +194,7 @@ rule Waterbear_12_Jun17 {
    meta:
       description = "Detects malware from Operation Waterbear"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
       hash1 = "15d9db2c90f56cd02be38e7088db8ec00fc603508ec888b4b85d60d970966585"
@@ -209,7 +209,7 @@ rule Waterbear_13_Jun17 {
    meta:
       description = "Detects malware from Operation Waterbear"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
       super_rule = 1
@@ -234,7 +234,7 @@ rule Waterbear_14_Jun17 {
    meta:
       description = "Detects malware from Operation Waterbear"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
       hash1 = "00a1068645dbe982a9aa95e7b8202a588989cd37de2fa1b344abbc0102c27d05"

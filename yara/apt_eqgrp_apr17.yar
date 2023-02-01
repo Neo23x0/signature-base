@@ -16,7 +16,7 @@ rule EquationGroup_emptycriss {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file emptycriss"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "a698d35a0c4d25fd960bd40c1de1022bb0763b77938bf279e91c9330060b0b91"
@@ -32,7 +32,7 @@ rule EquationGroup_scripme {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file scripme"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "a1adf1c1caad96e7b7fd92cbf419c4cfa13214e66497c9e46ec274a487cd098a"
@@ -49,7 +49,7 @@ rule EquationGroup_cryptTool {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file cryptTool"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "96947ad30a2ab15ca5ef53ba8969b9d9a89c48a403e8b22dd5698145ac6695d2"
@@ -64,7 +64,7 @@ rule EquationGroup_dumppoppy {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file dumppoppy"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "4a5c01590063c78d03c092570b3206fde211daaa885caac2ab0d42051d4fc719"
@@ -81,7 +81,7 @@ rule EquationGroup_Auditcleaner {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file Auditcleaner"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "8c172a60fa9e50f0df493bf5baeb7cc311baef327431526c47114335e0097626"
@@ -100,7 +100,7 @@ rule EquationGroup_reverse_shell {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file reverse.shell.script"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "d29aa24e6fb9e3b3d007847e1630635d6c70186a36c4ab95268d28aa12896826"
@@ -115,7 +115,7 @@ rule EquationGroup_tnmunger {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file tnmunger"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "1ab985d84871c54d36ba4d2abd9168c2a468f1ba06994459db06be13ee3ae0d2"
@@ -130,7 +130,7 @@ rule EquationGroup_ys_ratload {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file ys.ratload.sh"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "a340e5b5cfd41076bd4d6ad89d7157eeac264db97a9dddaae15d935937f10d75"
@@ -146,7 +146,7 @@ rule EquationGroup_eh_1_1_0 {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file eh.1.1.0.0"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "0f8dd094516f1be96da5f9addc0f97bcac8f2a348374bd9631aa912344559628"
@@ -162,7 +162,7 @@ rule EquationGroup_evolvingstrategy_1_0_1 {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file evolvingstrategy.1.0.1.1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "fe70e16715992cc86bbef3e71240f55c7d73815b4247d7e866c845b970233c1b"
@@ -181,7 +181,7 @@ rule EquationGroup_toast_v3_2_0 {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file toast_v3.2.0.1-linux"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "2ce2d16d24069dc29cf1464819a9dc6deed38d1e5ffc86d175b06ddb691b648b"
@@ -197,7 +197,7 @@ rule EquationGroup_sshobo {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file sshobo"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "c7491898a0a77981c44847eb00fb0b186aa79a219a35ebbca944d627eefa7d45"
@@ -214,7 +214,7 @@ rule EquationGroup_magicjack_v1_1_0_0_client_1_1_0_0 {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file magicjack_v1.1.0.0_client-1.1.0.0.py"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "63292a2353275a3bae012717bb500d5169cd024064a1ce8355ecb4e9bfcdfdd1"
@@ -229,7 +229,7 @@ rule EquationGroup_packrat {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file packrat"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "d3e067879c51947d715fc2cf0d8d91c897fe9f50cae6784739b5c17e8a8559cf"
@@ -245,7 +245,7 @@ rule EquationGroup_telex {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file telex"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "e9713b15fc164e0f64783e7a2eac189a40e0a60e2268bd7132cfdc624dfe54ef"
@@ -262,7 +262,7 @@ rule EquationGroup_calserver {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file calserver"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "048625e9a0ca46d7fe221e262c8dd05e7a5339990ffae2fb65a9b0d705ad6099"
@@ -278,7 +278,7 @@ rule EquationGroup_porkclient {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file porkclient"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "5c14e3bcbf230a1d7e2909876b045e34b1486c8df3c85fb582d9c93ad7c57748"
@@ -294,7 +294,7 @@ rule EquationGroup_electricslide {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file electricslide"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "d27814b725568fa73641e86fa51850a17e54905c045b8b31a9a5b6d2bdc6f014"
@@ -311,7 +311,7 @@ rule EquationGroup_libXmexploit2 {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file libXmexploit2.8"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "d7ed0234d074266cb37dd6a6a60119adb7d75cc6cc3b38654c8951b643944796"
@@ -327,7 +327,7 @@ rule EquationGroup_wrap_telnet {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file wrap-telnet.sh"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "4962b307a42ba18e987d82aa61eba15491898978d0e2f0e4beb02371bf0fd5b4"
@@ -343,7 +343,7 @@ rule EquationGroup_elgingamble {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file elgingamble"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "0573e12632e6c1925358f4bfecf8c263dd13edf52c633c9109fe3aae059b49dd"
@@ -360,7 +360,7 @@ rule EquationGroup_cmsd {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file cmsd"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "634c50614e1f5f132f49ae204c4a28f62a32a39a3446084db5b0b49b564034b8"
@@ -378,7 +378,7 @@ rule EquationGroup_ebbshave {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file ebbshave.v5"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "eb5e0053299e087c87c2d5c6f90531cc1946019c85a43a2998c7b66a6f19ca4b"
@@ -395,7 +395,7 @@ rule EquationGroup_eggbasket {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file eggbasket"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "b078a02963610475217682e6e1d6ae0b30935273ed98743e47cc2553fbfd068f"
@@ -411,7 +411,7 @@ rule EquationGroup_jparsescan {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file jparsescan"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "8c248eec0af04300f3ba0188fe757850d283de84cf42109638c1c1280c822984"
@@ -426,7 +426,7 @@ rule EquationGroup_sambal {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file sambal"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "2abf4bbe4debd619b99cb944298f43312db0947217437e6b71b9ea6e9a1a4fec"
@@ -444,7 +444,7 @@ rule EquationGroup_pclean_v2_1_1_2 {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file pclean.v2.1.1.0-linux-i386"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "cdb5b1173e6eb32b5ea494c38764b9975ddfe83aa09ba0634c4bafa41d844c97"
@@ -459,7 +459,7 @@ rule EquationGroup_envisioncollision {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file envisioncollision"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "75d5ec573afaf8064f5d516ae61fd105012cbeaaaa09c8c193c7b4f9c0646ea1"
@@ -476,7 +476,7 @@ rule EquationGroup_cmsex {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file cmsex"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "2d8ae842e7b16172599f061b5b1f223386684a7482e87feeb47a38a3f011b810"
@@ -494,7 +494,7 @@ rule EquationGroup_exze {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file exze"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "1af6dde6d956db26c8072bf5ff26759f1a7fa792dd1c3498ba1af06426664876"
@@ -510,7 +510,7 @@ rule EquationGroup_DUL {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file DUL"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "24d1d50960d4ebf348b48b4db4a15e50f328ab2c0e24db805b106d527fc5fe8e"
@@ -525,7 +525,7 @@ rule EquationGroup_slugger2 {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file slugger2"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "a6a9ab66d73e4b443a80a69ef55a64da7f0af08dfaa7e17eb19c327301a70bdf"
@@ -545,7 +545,7 @@ rule EquationGroup_ebbisland {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file ebbisland"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "eba07c98c7e960bb6c71dafde85f5da9f74fd61bc87793c87e04b1ae2d77e977"
@@ -564,7 +564,7 @@ rule EquationGroup_jackpop {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file jackpop"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "0b208af860bb2c7ef6b1ae1fcef604c2c3d15fc558ad8ea241160bf4cbac1519"
@@ -583,7 +583,7 @@ rule EquationGroup_parsescan {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file parsescan"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "942c12067b0afe9ebce50aa9dfdbf64e6ed0702d9a3a00d25b4fca62a38369ef"
@@ -598,7 +598,7 @@ rule EquationGroup_jscan {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file jscan"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "8075f56e44185e1be26b631a2bad89c5e4190c2bfc9fa56921ea3bbc51695dbe"
@@ -613,7 +613,7 @@ rule EquationGroup_promptkill {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file promptkill"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "b448204503849926be249a9bafbfc1e36ef16421c5d3cfac5dac91f35eeaa52d"
@@ -628,7 +628,7 @@ rule EquationGroup_epoxyresin_v1_0_0 {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file epoxyresin.v1.0.0.1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "eea8a6a674d5063d7d6fc9fe07060f35b16172de6d273748d70576b01bf01c73"
@@ -646,7 +646,7 @@ rule EquationGroup_estopmoonlit {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file estopmoonlit"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "707ecc234ed07c16119644742ebf563b319b515bf57fd43b669d3791a1c5e220"
@@ -663,7 +663,7 @@ rule EquationGroup_envoytomato {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file envoytomato"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "9bd001057cc97b81fdf2450be7bf3b34f1941379e588a7173ab7fffca41d4ad5"
@@ -678,7 +678,7 @@ rule EquationGroup_smash {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file smash"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "1dc94b46aaff06d65a3bf724c8701e5f095c1c9c131b65b2f667e11b1f0129a6"
@@ -694,7 +694,7 @@ rule EquationGroup_ratload {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file ratload"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "4a4a8f2f90529bee081ce2188131bac4e658a374a270007399f80af74c16f398"
@@ -710,7 +710,7 @@ rule EquationGroup_ys {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file ys.auto"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "a6387307d64778f8d9cfc60382fdcf0627cde886e952b8d73cc61755ed9fde15"
@@ -726,7 +726,7 @@ rule EquationGroup_ewok {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file ewok"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "567da502d7709b7814ede9c7954ccc13d67fc573f3011db04cf212f8e8a95d72"
@@ -743,7 +743,7 @@ rule EquationGroup_xspy {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file xspy"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "841e065c9c340a1e522b281a39753af8b6a3db5d9e7d8f3d69e02fdbd662f4cf"
@@ -757,7 +757,7 @@ rule EquationGroup_estesfox {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file estesfox"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "33530cae130ee9d9deeee60df9292c00242c0fe6f7b8eedef8ed09881b7e1d5a"
@@ -770,7 +770,7 @@ rule EquationGroup_estesfox {
 rule EquationGroup_elatedmonkey_1_0_1_1 {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file elatedmonkey.1.0.1.1.sh"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       modified = "2022-08-18"
@@ -788,7 +788,7 @@ rule EquationGroup_scanner {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- file scanner"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "dcbcd8a98ec93a4e877507058aa26f0c865b35b46b8e6de809ed2c4b3db7e222"
@@ -806,7 +806,7 @@ rule EquationGroup__ftshell_ftshell_v3_10_3_0 {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- from files ftshell, ftshell.v3.10.3.7"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       super_rule = 1
@@ -825,7 +825,7 @@ rule EquationGroup__scanner_scanner_v2_1_2 {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- from files scanner, scanner.v2.1.2"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       super_rule = 1
@@ -845,7 +845,7 @@ rule EquationGroup__ghost_sparc_ghost_x86_3 {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- from files ghost_sparc, ghost_x86"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       super_rule = 1
@@ -864,7 +864,7 @@ rule EquationGroup__pclean_v2_1_1_pclean_v2_1_1_4 {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- from files pclean.v2.1.1.0-linux-i386, pclean.v2.1.1.0-linux-x86_64"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       super_rule = 1
@@ -881,7 +881,7 @@ rule EquationGroup__jparsescan_parsescan_5 {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- from files jparsescan, parsescan"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       super_rule = 1
@@ -900,7 +900,7 @@ rule EquationGroup__funnelout_v4_1_0_1 {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- from files funnelout.v4.1.0.1.pl"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       super_rule = 1
@@ -918,7 +918,7 @@ rule EquationGroup__magicjack_v1_1_0_0_client {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- from files magicjack_v1.1.0.0_client-1.1.0.0.py"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       super_rule = 1
@@ -936,7 +936,7 @@ rule EquationGroup__ftshell {
    meta:
       description = "Equation Group hack tool leaked by ShadowBrokers- from files ftshell, ftshell.v3.10.3.7"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       super_rule = 1
@@ -963,7 +963,7 @@ rule EquationGroup_store_linux_i386_v_3_3_0 {
    meta:
       description = "Equation Group hack tool set"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-09"
       hash1 = "abc27fda9a0921d7cf2863c29768af15fdfe47a0b3e7a131ef7e5cc057576fbc"
@@ -979,7 +979,7 @@ rule EquationGroup_morerats_client_genkey {
    meta:
       description = "Equation Group hack tool set"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-09"
       hash1 = "0ce455fb7f46e54a5db9bef85df1087ff14d2fc60a88f2becd5badb9c7fe3e89"
@@ -994,7 +994,7 @@ rule EquationGroup_cursetingle_2_0_1_2_mswin32_v_2_0_1 {
    meta:
       description = "Equation Group hack tool set"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-09"
       hash1 = "614bf159b956f20d66cedf25af7503b41e91841c75707af0cdf4495084092a61"
@@ -1009,7 +1009,7 @@ rule EquationGroup_cursesleepy_mswin32_v_1_0_0 {
    meta:
       description = "Equation Group hack tool set"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-09"
       hash1 = "6293439b4b49e94f923c76e302f5fc437023c91e063e67877d22333f05a24352"
@@ -1025,7 +1025,7 @@ rule EquationGroup_cursehelper_win2k_i686_v_2_2_0 {
    meta:
       description = "Equation Group hack tool set"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-09"
       hash1 = "5ac6fde8a06f4ade10d672e60e92ffbf78c4e8db6b5152e23171f6f53af0bfe1"
@@ -1042,7 +1042,7 @@ rule EquationGroup_morerats_client_addkey {
    meta:
       description = "Equation Group hack tool set"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-09"
       hash1 = "6c67c03716d06a99f20c1044585d6bde7df43fee89f38915db0b03a42a3a9f4b"
@@ -1058,7 +1058,7 @@ rule EquationGroup_noclient_3_3_2 {
    meta:
       description = "Equation Group hack tool set"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-09"
       hash1 = "3cf0eb010c431372af5f32e2ee8c757831215f8836cabc7d805572bb5574fc72"
@@ -1076,7 +1076,7 @@ rule EquationGroup_curseflower_mswin32_v_1_0_0 {
    meta:
       description = "Equation Group hack tool set"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-09"
       hash1 = "fdc452629ff7befe02adea3a135c3744d8585af890a4301b2a10a817e48c5cbf"
@@ -1092,7 +1092,7 @@ rule EquationGroup_tmpwatch {
    meta:
       description = "Equation Group hack tool set"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-09"
       hash1 = "65ed8066a3a240ee2e7556da74933a9b25c5109ffad893c21a626ea1b686d7c1"
@@ -1107,7 +1107,7 @@ rule EquationGroup_orleans_stride_sunos5_9_v_2_4_0 {
    meta:
       description = "Equation Group hack tool set"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-09"
       hash1 = "6a30efb87b28e1a136a66c7708178c27d63a4a76c9c839b2fc43853158cb55ff"
@@ -1123,7 +1123,7 @@ rule EquationGroup_morerats_client_noprep {
    meta:
       description = "Equation Group hack tool set"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-09"
       hash1 = "a5b191a8ede8297c5bba790ef95201c516d64e2898efaeb44183f8fdfad578bb"
@@ -1139,7 +1139,7 @@ rule EquationGroup_cursezinger_linuxrh7_3_v_2_0_0 {
    meta:
       description = "Equation Group hack tool set"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-09"
       hash1 = "af7c7d03f59460fa60c48764201e18f3bd3f72441fd2e2ff6a562291134d2135"
@@ -1156,7 +1156,7 @@ rule EquationGroup_seconddate_ImplantStandalone_3_0_3 {
    meta:
       description = "Equation Group hack tool set"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-09"
       hash1 = "d687aa644095c81b53a69c206eb8d6bdfe429d7adc2a57d87baf8ff8d4233511"
@@ -1172,7 +1172,7 @@ rule EquationGroup_watcher_solaris_i386_v_3_3_0 {
    meta:
       description = "Equation Group hack tool set"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-09"
       hash1 = "395ec2531970950ffafde234dded0cce0c95f1f9a22763d1d04caa060a5222bb"
@@ -1189,7 +1189,7 @@ rule EquationGroup_gr_dev_bin_now {
    meta:
       description = "Equation Group hack tool set"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-09"
       hash1 = "f5ed8312fc6e624b04e1e2d6614f3c651c9e9902ff41f4d069c32caca0869fa4"
@@ -1204,7 +1204,7 @@ rule EquationGroup_gr_dev_bin_post {
    meta:
       description = "Equation Group hack tool set"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-09"
       hash1 = "c1546155efa95dbc4e3cc95299a3968fc075f89d33164e78b00b76c7d08a0591"
@@ -1218,7 +1218,7 @@ rule EquationGroup_curseyo_win2k_v_1_0_0 {
    meta:
       description = "Equation Group hack tool set"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-09"
       hash1 = "5dc77614764b23a38610fdd8abe5b2274222f206889e4b0974a3fea569055ed6"
@@ -1236,7 +1236,7 @@ rule EquationGroup_gr {
    meta:
       description = "Equation Group hack tool set"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-09"
       hash1 = "d3cd725affd31fa7f0e2595f4d76b09629918612ef0d0307bb85ade1c3985262"
@@ -1251,7 +1251,7 @@ rule EquationGroup_curseroot_win2k_v_2_1_0 {
    meta:
       description = "Equation Group hack tool set"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-09"
       hash1 = "a1637948ed6ebbd2e582eb99df0c06b27a77c01ad1779b3d84c65953ca2cb603"
@@ -1268,7 +1268,7 @@ rule EquationGroup_cursewham_curserazor_cursezinger_curseroot_win2k {
    meta:
       description = "Equation Group hack tool set"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-09"
       hash1 = "aff27115ac705859871ab1bf14137322d1722f63705d6aeada43d18966843225"
@@ -1289,7 +1289,7 @@ rule EquationGroup_watcher_linux_i386_v_3_3_0 {
    meta:
       description = "Equation Group hack tool set"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-09"
       hash1 = "ce4c9bfa25b8aad8ea68cc275187a894dec5d79e8c0b2f2f3ec4184dc5f402b8"
@@ -1307,7 +1307,7 @@ rule EquationGroup_charm_saver_win2k_v_2_0_0 {
    meta:
       description = "Equation Group hack tool set"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-09"
       hash1 = "0f7936a37482532a8ba5df4112643ed7579dd0e59181bfca9c641b9ba0a9912f"
@@ -1324,7 +1324,7 @@ rule EquationGroup_cursehappy_win2k_v_6_1_0 {
    meta:
       description = "Equation Group hack tool set"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-09"
       hash1 = "eb669afd246a7ac4de79724abcce5bda38117b3138908b90cac58936520ea632"
@@ -1339,7 +1339,7 @@ rule EquationGroup_morerats_client_Store {
    meta:
       description = "Equation Group hack tool set"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-09"
       hash1 = "619944358bc0e1faffd652b6af0600de055c5e7f1f1d91a8051ed9adf5a5b465"
@@ -1356,7 +1356,7 @@ rule EquationGroup_watcher_linux_x86_64_v_3_3_0 {
    meta:
       description = "Equation Group hack tool set"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-09"
       hash1 = "a8d65593f6296d6d06230bcede53b9152842f1eee56a2a72b0a88c4f463a09c3"
@@ -1372,7 +1372,7 @@ rule EquationGroup_linux_exactchange {
    meta:
       description = "Equation Group hack tool set"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-09"
       super_rule = 1
@@ -1393,7 +1393,7 @@ rule EquationGroup_x86_linux_exactchange {
    meta:
       description = "Equation Group hack tool set"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-09"
       super_rule = 1
@@ -1420,7 +1420,7 @@ rule EquationGroup_Toolset_Apr17_Eclipsedwing_Rpcproxy_Pcdlllauncher {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "48251fb89c510fb3efa14c4b5b546fbde918ed8bb25f041a801e3874bd4f60f8"
@@ -1438,7 +1438,7 @@ rule EquationGroup_Toolset_Apr17_Explodingcantouch_1_2_1 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "0cdde7472b077610d0068aa7e9035da89fe5d435549749707cae24495c8d8444"
@@ -1454,7 +1454,7 @@ rule EquationGroup_Toolset_Apr17_Architouch_1_0_0 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "444979a2387530c8fbbc5ddb075b15d6a4717c3435859955f37ebc0f40a4addc"
@@ -1468,7 +1468,7 @@ rule EquationGroup_Toolset_Apr17_Erraticgopher_1_0_1 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "3d11fe89ffa14f267391bc539e6808d600e465955ddb854201a1f31a9ded4052"
@@ -1485,7 +1485,7 @@ rule EquationGroup_Toolset_Apr17_Esteemaudit_2_1_0 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "61f98b12c52739647326e219a1cf99b5440ca56db3b6177ea9db4e3b853c6ea6"
@@ -1500,7 +1500,7 @@ rule EquationGroup_Toolset_Apr17_Darkpulsar_1_1_0 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "b439ed18262aec387984184e86bfdb31ca501172b1c066398f8c56d128ba855a"
@@ -1515,7 +1515,7 @@ rule EquationGroup_Toolset_Apr17_Educatedscholar_1_0_0 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "4cce9e39c376f67c16df3bcd69efd9b7472c3b478e2e5ef347e1410f1105c38d"
@@ -1530,7 +1530,7 @@ rule EquationGroup_Toolset_Apr17_Doublepulsar_1_3_1 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "15ffbb8d382cd2ff7b0bd4c87a7c0bffd1541c2fe86865af445123bc0b770d13"
@@ -1546,7 +1546,7 @@ rule EquationGroup_Toolset_Apr17_Erraticgophertouch_1_0_1 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "729eacf20fe71bd74e57a6b829b45113c5d45003933118b53835779f0b049bad"
@@ -1562,7 +1562,7 @@ rule EquationGroup_Toolset_Apr17_Smbtouch_1_1_1 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "108243f61c53f00f8f1adcf67c387a8833f1a2149f063dd9ef29205c90a3c30a"
@@ -1576,7 +1576,7 @@ rule EquationGroup_Toolset_Apr17_Educatedscholartouch_1_0_0 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "f4b958a0d3bb52cb34f18ea293d43fa301ceadb4a259d3503db912d0a9a1e4d8"
@@ -1591,7 +1591,7 @@ rule EquationGroup_Toolset_Apr17_Esteemaudittouch_2_1_0 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "f6b9caf503bb664b22c6d39c87620cc17bdb66cef4ccfa48c31f2a3ae13b4281"
@@ -1606,7 +1606,7 @@ rule EquationGroup_Toolset_Apr17_Rpctouch_2_1_0 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "7fe4c3cedfc98a3e994ca60579f91b8b88bf5ae8cf669baa0928508642c5a887"
@@ -1621,7 +1621,7 @@ rule EquationGroup_Toolset_Apr17_Mofconfig_1_0_0 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "c67a24fe2380331a101d27d6e69b82d968ccbae54a89a2629b6c135436d7bdb2"
@@ -1635,7 +1635,7 @@ rule EquationGroup_Toolset_Apr17_Easypi_Explodingcan {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "dc1ddad7e8801b5e37748ec40531a105ba359654ffe8bdb069bd29fb0b5afd94"
@@ -1652,7 +1652,7 @@ rule EquationGroup_Toolset_Apr17_Eclipsedwingtouch_1_0_4 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "46da99d80fc3eae5d1d5ab2da02ed7e61416e1eafeb23f37b180c46e9eff8a1c"
@@ -1667,7 +1667,7 @@ rule EquationGroup_Toolset_Apr17_Iistouch_1_2_2 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "c433507d393a8aa270576790acb3e995e22f4ded886eb9377116012e247a07c6"
@@ -1682,7 +1682,7 @@ rule EquationGroup_Toolset_Apr17_Namedpipetouch_2_0_0 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "cb5849fcbc473c7df886828d225293ffbd8ee58e221d03b840fd212baeda6e89"
@@ -1702,7 +1702,7 @@ rule EquationGroup_Toolset_Apr17_Easybee_1_0_1 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "59c17d6cb564edd32c770cd56b5026e4797cf9169ff549735021053268b31611"
@@ -1717,7 +1717,7 @@ rule EquationGroup_Toolset_Apr17_Regread_1_1_1 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "722f034ba634f45c429c7dafdbff413c08976b069a6b30ec91bfa5ce2e4cda26"
@@ -1732,7 +1732,7 @@ rule EquationGroup_Toolset_Apr17_Englishmansdentist_1_2_0 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "2a6ab28885ad7d5d64ac4c4fb8c619eca3b7fb3be883fc67c90f3ea9251f34c6"
@@ -1747,7 +1747,7 @@ rule EquationGroup_Toolset_Apr17_Architouch_Eternalsynergy_Smbtouch {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       super_rule = 1
@@ -1768,7 +1768,7 @@ rule EquationGroup_Toolset_Apr17_Eternalromance_2 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       super_rule = 1
@@ -1786,7 +1786,7 @@ rule EquationGroup_Toolset_Apr17__Emphasismine {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       super_rule = 1
@@ -1806,7 +1806,7 @@ rule EquationGroup_Toolset_Apr17_Eternalromance {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       super_rule = 1
@@ -1825,7 +1825,7 @@ rule EquationGroup_Toolset_Apr17_Gen4 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       super_rule = 1
@@ -1857,7 +1857,7 @@ rule EquationGroup_Toolset_Apr17_Gen1 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       super_rule = 1
@@ -1877,7 +1877,7 @@ rule EquationGroup_Toolset_Apr17_Gen2 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       super_rule = 1
@@ -1904,7 +1904,7 @@ rule EquationGroup_Toolset_Apr17_Gen3 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       super_rule = 1
@@ -1943,7 +1943,7 @@ rule EquationGroup_Toolset_Apr17_yak {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "66ff332f84690642f4e05891a15bf0c9783be2a64edb2ef2d04c9205b47deb19"
@@ -1960,7 +1960,7 @@ rule EquationGroup_Toolset_Apr17_AdUser_Implant {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "fd2efb226969bc82e2e38769a10a8a751138db69f4594a8de4b3c0522d4d885f"
@@ -1975,7 +1975,7 @@ rule EquationGroup_Toolset_Apr17_RemoteExecute_Implant {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "770663c07c519677316934cf482e500a73540d9933342c425f3e56258e6e6d8b"
@@ -2000,7 +2000,7 @@ rule EquationGroup_Toolset_Apr17_Banner_Implant9x {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "5d69a8cfc9b636448f023fcf18d111f13a8e6bcb9a693eb96276e0d796ab4e0c"
@@ -2016,7 +2016,7 @@ rule EquationGroup_Toolset_Apr17_greatdoc_dll_config {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "fd9d0abfa727784dd07562656967d220286fc0d63bcf7e2c35d4c02bc2e5fc2e"
@@ -2033,7 +2033,7 @@ rule EquationGroup_Toolset_Apr17_scanner {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "f180bdb247687ea9f1b58aded225d5c80a13327422cd1e0515ea891166372c53"
@@ -2051,7 +2051,7 @@ rule EquationGroup_Toolset_Apr17_Mcl_NtMemory_Std {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "087db4f2dbf8e0679de421fec8fb2e6dd50625112eb232e4acc1408cc0bcd2d7"
@@ -2067,7 +2067,7 @@ rule EquationGroup_Toolset_Apr17_tacothief {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "c71953cc84c27dc61df8f6f452c870a7880a204e9e21d9fd006a5c023b052b35"
@@ -2081,7 +2081,7 @@ rule EquationGroup_Toolset_Apr17_ntevt {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "4254ee5e688fc09bdc72bcc9c51b1524a2bb25a9fb841feaf03bc7ec1a9975bf"
@@ -2101,7 +2101,7 @@ rule EquationGroup_Toolset_Apr17_Processes_Target {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "69cf7643dbecc5f9b4b29edfda6c0295bc782f0e438f19be8338426f30b4cc74"
@@ -2117,7 +2117,7 @@ rule EquationGroup_Toolset_Apr17_st_lp {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "3b6f756cca096548dcad2b6c241c1dafd16806c060bec82a530f4d38755286a2"
@@ -2134,7 +2134,7 @@ rule EquationGroup_Toolset_Apr17_EpWrapper {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "a8eed17665ee22198670e22458eb8c9028ff77130788f24f44986cce6cebff8d"
@@ -2150,7 +2150,7 @@ rule EquationGroup_Toolset_Apr17_DiBa_Target_2000 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "f9ea8ff5985b94f635d03f3aab9ad4fb4e8c2ad931137dba4f8ee8a809421b91"
@@ -2168,7 +2168,7 @@ rule EquationGroup_Toolset_Apr17_DllLoad_Target {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "a42d5201af655e43cefef30d7511697e6faa2469dc4a74bc10aa060b522a1cf5"
@@ -2186,7 +2186,7 @@ rule EquationGroup_Toolset_Apr17_EXPA {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "2017176d3b5731a188eca1b71c50fb938c19d6260c9ff58c7c9534e317d315f8"
@@ -2203,7 +2203,7 @@ rule EquationGroup_Toolset_Apr17_RemoteExecute_Target {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "4a649ca8da7b5499821a768c650a397216cdc95d826862bf30fcc4725ce8587f"
@@ -2220,7 +2220,7 @@ rule EquationGroup_Toolset_Apr17_DS_ParseLogs {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "0228691d63038b072cdbf50782990d505507757efbfa87655bb2182cf6375956"
@@ -2236,7 +2236,7 @@ rule EquationGroup_Toolset_Apr17_Oracle_Implant {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "8e9be4960c62ed7f210ce08f291e410ce0929cd3a86fe70315d7222e3df4587e"
@@ -2252,7 +2252,7 @@ rule EquationGroup_Toolset_Apr17_DmGz_Target {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "5964966041f93d5d0fb63ce4a85cf9f7a73845065e10519b0947d4a065fdbdf2"
@@ -2267,7 +2267,7 @@ rule EquationGroup_Toolset_Apr17_SetResourceName {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "537793d5158aecd0debae25416450bd885725adfc8ca53b0577a3df4b0222e2e"
@@ -2284,7 +2284,7 @@ rule EquationGroup_Toolset_Apr17_drivers_Implant {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "ee8b048f1c6ba821d92c15d614c2d937c32aeda7b7ea0943fd4f640b57b1c1ab"
@@ -2301,7 +2301,7 @@ rule EquationGroup_Toolset_Apr17_Shares_Target {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "6c57fb33c5e7d2dee415ae6168c9c3e0decca41ffe023ff13056ff37609235cb"
@@ -2318,7 +2318,7 @@ rule EquationGroup_Toolset_Apr17_ntfltmgr {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "3df61b8ef42a995b8f15a0d38bc51f2f08f8d9a2afa1afc94c6f80671cf4a124"
@@ -2343,7 +2343,7 @@ rule EquationGroup_Toolset_Apr17_DiBa_Target_BH {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "7ae9a247b60dc31f424e8a7a3b3f1749ba792ff1f4ba67ac65336220021fce9f"
@@ -2359,7 +2359,7 @@ rule EquationGroup_Toolset_Apr17_PC_LP {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "3a505c39acd48a258f4ab7902629e5e2efa8a2120a4148511fe3256c37967296"
@@ -2374,7 +2374,7 @@ rule EquationGroup_Toolset_Apr17_RemoteCommand_Lp {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "57b47613a3b5dd820dae59fc6dc2b76656bd578f015f367675219eb842098846"
@@ -2389,7 +2389,7 @@ rule EquationGroup_Toolset_Apr17_lp_mstcp {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "2ab1e1d23021d887759750a0c053522e9149b7445f840936bbc7e703f8700abd"
@@ -2409,7 +2409,7 @@ rule EquationGroup_Toolset_Apr17_renamer {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "9c30331cb00ae8f417569e9eb2c645ebbb36511d2d1531bb8d06b83781dfe3ac"
@@ -2424,7 +2424,7 @@ rule EquationGroup_Toolset_Apr17_PC_Exploit {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "77486bb828dba77099785feda0ca1d4f33ad0d39b672190079c508b3feb21fb0"
@@ -2441,7 +2441,7 @@ rule EquationGroup_Toolset_Apr17_PC_Level3_Gen {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "c7dd49b98f399072c2619758455e8b11c6ee4694bb46b2b423fa89f39b185a97"
@@ -2461,7 +2461,7 @@ rule EquationGroup_Toolset_Apr17_put_Implant9x {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "8fcc98d63504bbacdeba0c1e8df82f7c4182febdf9b08c578d1195b72d7e3d5f"
@@ -2478,7 +2478,7 @@ rule EquationGroup_Toolset_Apr17_promiscdetect_safe {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "6070d8199061870387bb7796fb8ccccc4d6bafed6718cbc3a02a60c6dc1af847"
@@ -2494,7 +2494,7 @@ rule EquationGroup_Toolset_Apr17_PacketScan_Implant {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "9b97cac66d73a9d268a15e47f84b3968b1f7d3d6b68302775d27b99a56fbb75a"
@@ -2510,7 +2510,7 @@ rule EquationGroup_Toolset_Apr17_SetPorts {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "722d3cf03908629bc947c4cca7ce3d6b80590a04616f9df8f05c02de2d482fb2"
@@ -2525,7 +2525,7 @@ rule EquationGroup_Toolset_Apr17_GrDo_FileScanner_Implant {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       modified = "2023-01-06"
@@ -2542,7 +2542,7 @@ rule EquationGroup_Toolset_Apr17_msgks_mskgu {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "7b4986aee8f5c4dca255431902907b36408f528f6c0f7d7fa21f079fa0a42e09"
@@ -2559,7 +2559,7 @@ rule EquationGroup_Toolset_Apr17_Ifconfig_Target {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "1ebfc0ce7139db43ddacf4a9af2cb83a407d3d1221931d359ee40588cfd0d02b"
@@ -2576,7 +2576,7 @@ rule EquationGroup_Toolset_Apr17_DiBa_Target {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "ffff3526ed0d550108e97284523566392af8523bbddb5f212df12ef61eaad3e6"
@@ -2592,7 +2592,7 @@ rule EquationGroup_Toolset_Apr17_Dsz_Implant {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "fbe103fac45abe4e3638055a3cac5e7009166f626cf2d3049fb46f3b53c1057f"
@@ -2607,7 +2607,7 @@ rule EquationGroup_Toolset_Apr17_GenKey {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "b6f100b21da4f7e3927b03b8b5f0c595703b769d5698c835972ca0c81699ff71"
@@ -2621,7 +2621,7 @@ rule EquationGroup_Toolset_Apr17_wmi_Implant {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "de08d6c382faaae2b4b41b448b26d82d04a8f25375c712c12013cb0fac3bc704"
@@ -2635,7 +2635,7 @@ rule EquationGroup_Toolset_Apr17_clocksvc {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "c1bcd04b41c6b574a5c9367b777efc8b95fe6cc4e526978b7e8e09214337fac1"
@@ -2656,7 +2656,7 @@ rule EquationGroup_Toolset_Apr17_xxxRIDEAREA {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "214b0de83b04afdd6ad05567825b69663121eda9e804daff9f2da5554ade77c6"
@@ -2673,7 +2673,7 @@ rule EquationGroup_Toolset_Apr17_yak_min_install {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "f67214083d60f90ffd16b89a0ce921c98185b2032874174691b720514b1fe99e"
@@ -2689,7 +2689,7 @@ rule EquationGroup_Toolset_Apr17_SetOurAddr {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "04ccc060d401ddba674371e66e0288ebdbfa7df74b925c5c202109f23fb78504"
@@ -2704,7 +2704,7 @@ rule EquationGroup_Toolset_Apr17_GetAdmin_LSADUMP_ModifyPrivilege_Implant {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "c8b354793ad5a16744cf1d4efdc5fe48d5a0cf0657974eb7145e0088fcf609ff"
@@ -2727,7 +2727,7 @@ rule EquationGroup_Toolset_Apr17_SendPKTrigger {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "2f9c7a857948795873a61f4d4f08e1bd0a41e3d6ffde212db389365488fa6e26"
@@ -2741,7 +2741,7 @@ rule EquationGroup_Toolset_Apr17_DmGz_Target_2 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "55ac29b9a67e0324044dafaba27a7f01ca3d8e4d8e020259025195abe42aa904"
@@ -2758,7 +2758,7 @@ rule EquationGroup_Toolset_Apr17_DmGz_Target_2 {
 rule EquationGroup_Toolset_Apr17_mstcp32_DXGHLP16_tdip {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       modified = "2023-01-06"
@@ -2780,7 +2780,7 @@ rule EquationGroup_Toolset_Apr17_regprobe {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "99a42440d4cf1186aad1fd09072bd1265e7c6ebbc8bcafc28340b4fe371767de"
@@ -2796,7 +2796,7 @@ rule EquationGroup_Toolset_Apr17_DoubleFeatureDll_dll_2 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "f265defd87094c95c7d3ddf009d115207cd9d4007cf98629e814eda8798906af"
@@ -2814,7 +2814,7 @@ rule EquationGroup_Toolset_Apr17_GangsterThief_Implant {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "50b269bda5fedcf5a62ee0514c4b14d48d53dd18ac3075dcc80b52d0c2783e06"
@@ -2832,7 +2832,7 @@ rule EquationGroup_Toolset_Apr17_SetCallbackPorts {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "16f66c2593665c2507a78f96c0c2a9583eab0bda13a639e28f550c92f9134ff0"
@@ -2847,7 +2847,7 @@ rule EquationGroup_Toolset_Apr17_DiBa_Target_BH_2000 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "0654b4b8727488769390cd091029f08245d690dd90d1120e8feec336d1f9e788"
@@ -2862,7 +2862,7 @@ rule EquationGroup_Toolset_Apr17_rc5 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "69e2c68c6ea7be338497863c0c5ab5c77d5f522f0a84ab20fe9c75c7f81318eb"
@@ -2879,7 +2879,7 @@ rule EquationGroup_Toolset_Apr17_PC_Level_Generic {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "7a6488dd13936e505ec738dcc84b9fec57a5e46aab8aff59b8cfad8f599ea86a"
@@ -2910,7 +2910,7 @@ rule EquationGroup_Toolset_Apr17_PC_Level3_http_exe {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "3e855fbea28e012cd19b31f9d76a73a2df0eb03ba1cb5d22aafe9865150b020c"
@@ -2928,7 +2928,7 @@ rule EquationGroup_Toolset_Apr17_ParseCapture {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "c732d790088a4db148d3291a92de5a449e409704b12e00c7508d75ccd90a03f2"
@@ -2944,7 +2944,7 @@ rule EquationGroup_Toolset_Apr17_ActiveDirectory_Target {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "33c1b7fdee7c70604be1e7baa9eea231164e62d5d5090ce7f807f43229fe5c36"
@@ -2959,7 +2959,7 @@ rule EquationGroup_Toolset_Apr17_PC_Legacy_dll : HIGHVOL {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "0cbc5cc2e24f25cb645fb57d6088bcfb893f9eb9f27f8851503a1b33378ff22d"
@@ -2975,7 +2975,7 @@ rule EquationGroup_Toolset_Apr17_svctouch {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "96b6a3c4f53f9e7047aa99fd949154745e05dc2fd2eb21ef6f0f9b95234d516b"
@@ -2989,7 +2989,7 @@ rule EquationGroup_Toolset_Apr17_pwd_Implant {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "ee72ac76d82dfec51c8fbcfb5fc99a0a45849a4565177e01d8d23a358e52c542"
@@ -3005,7 +3005,7 @@ rule EquationGroup_Toolset_Apr17_KisuComms_Target_2000 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "94eea1bad534a1dc20620919de8046c9966be3dd353a50f25b719c3662f22135"
@@ -3026,7 +3026,7 @@ rule EquationGroup_Toolset_Apr17_SlDecoder {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "b220f51ca56d9f9d7d899fa240d3328535f48184d136013fd808d8835919f9ce"
@@ -3041,7 +3041,7 @@ rule EquationGroup_Toolset_Apr17_Windows_Implant {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "d38ce396926e45781daecd18670316defe3caf975a3062470a87c1d181a61374"
@@ -3055,7 +3055,7 @@ rule EquationGroup_Toolset_Apr17_msgkd_msslu64_msgki_mssld {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "9ab667b7b5b9adf4ff1d6db6f804824a22c7cc003eb4208d5b2f12809f5e69d0"
@@ -3081,7 +3081,7 @@ rule EquationGroup_Toolset_Apr17_SetCallback {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "a8854f6b01d0e49beeb2d09e9781a6837a0d18129380c6e1b1629bc7c13fdea2"
@@ -3096,7 +3096,7 @@ rule EquationGroup_Toolset_Apr17__DoubleFeatureReader_DoubleFeatureReader_0 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       super_rule = 1
@@ -3116,7 +3116,7 @@ rule EquationGroup_Toolset_Apr17__vtuner_vtuner_1 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       super_rule = 1
@@ -3137,7 +3137,7 @@ rule EquationGroup_Toolset_Apr17__ecwi_ESKE_EVFR_RPC2_2 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       super_rule = 1
@@ -3157,7 +3157,7 @@ rule EquationGroup_Toolset_Apr17__EAFU_ecwi_ESKE_EVFR_RPC2_4 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       super_rule = 1
@@ -3181,7 +3181,7 @@ rule EquationGroup_Toolset_Apr17__SendCFTrigger_SendPKTrigger_6 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       super_rule = 1
@@ -3198,7 +3198,7 @@ rule EquationGroup_Toolset_Apr17__AddResource {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       super_rule = 1
@@ -3216,7 +3216,7 @@ rule EquationGroup_Toolset_Apr17__ESKE_RPC2_8 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       super_rule = 1
@@ -3233,7 +3233,7 @@ rule EquationGroup_Toolset_Apr17__LSADUMP_Lp_ModifyPrivilege_Lp_PacketScan_Lp_pu
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       super_rule = 1
@@ -3255,7 +3255,7 @@ rule EquationGroup_Toolset_Apr17__ETBL_ETRE_10 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       super_rule = 1
@@ -3273,7 +3273,7 @@ rule EquationGroup_Toolset_Apr17__ELV_ESKE_ETBL_ETRE_EVFR_11 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       super_rule = 1
@@ -3293,7 +3293,7 @@ rule EquationGroup_Toolset_Apr17__ELV_ESKE_EVFR_RideArea2_12 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       super_rule = 1
@@ -3311,7 +3311,7 @@ rule EquationGroup_Toolset_Apr17__ELV_ESKE_13 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       super_rule = 1
@@ -3328,7 +3328,7 @@ rule EquationGroup_Toolset_Apr17__NameProbe_SMBTOUCH_14 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       super_rule = 1
@@ -3346,7 +3346,7 @@ rule EquationGroup_Toolset_Apr17__ELV_ESKE_EVFR_RPC2_15 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       super_rule = 1
@@ -3365,7 +3365,7 @@ rule EquationGroup_Toolset_Apr17__ELV_ESKE_EVFR_16 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       super_rule = 1
@@ -3387,7 +3387,7 @@ rule EquationGroup_Toolset_Apr17__ETBL_ETRE_SMBTOUCH_17 {
    meta:
       description = "Detects EquationGroup Tool - April Leak"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       super_rule = 1
@@ -3415,7 +3415,7 @@ rule EquationGroup_scanner_output {
    meta:
       description = "Detects output generated by EQGRP scanner.exe"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-04-17"
    strings:

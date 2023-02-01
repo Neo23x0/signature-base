@@ -2,7 +2,7 @@
 rule MAL_DNSPIONAGE_Malware_Nov18 {
    meta:
       description = "Detects DNSpionage Malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://blog.talosintelligence.com/2018/11/dnspionage-campaign-targets-middle-east.html"
       date = "2018-11-30"
       modified = "2023-01-06"
@@ -22,7 +22,7 @@ rule MAL_DNSPIONAGE_Malware_Nov18 {
 rule APT_DNSpionage_Karkoff_Malware_Apr19_1 {
    meta:
       description = "Detects DNSpionage Karkoff malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://blog.talosintelligence.com/2019/04/dnspionage-brings-out-karkoff.html"
       date = "2019-04-24"
       hash1 = "6a251ed6a2c6a0a2be11f2a945ec68c814d27e2b6ef445f4b2c7a779620baa11"

@@ -60,7 +60,7 @@ rule apt_RU_Turla_Kazuar_DebugView_peFeatures
 rule APT_MAL_RU_Turla_Kazuar_May20_1 {
    meta:
       description = "Detects Turla Kazuar malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.epicturla.com/blog/sysinturla"
       date = "2020-05-28"
       hash1 = "1749c96cc1a4beb9ad4d6e037e40902fac31042fa40152f1d3794f49ed1a2b5c"

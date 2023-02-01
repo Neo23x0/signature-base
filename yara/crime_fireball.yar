@@ -13,7 +13,7 @@ rule Fireball_de_svr {
    meta:
       description = "Detects Fireball malware - file de_svr.exe"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
       hash1 = "f964a4b95d5c518fd56f06044af39a146d84b801d9472e022de4c929a5b8fdcc"
@@ -31,7 +31,7 @@ rule Fireball_lancer {
    meta:
       description = "Detects Fireball malware - file lancer.dll"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
       hash1 = "7d68386554e514f38f98f24e8056c11c0a227602ed179d54ed08f2251dc9ea93"
@@ -52,7 +52,7 @@ rule QQBrowser {
    meta:
       description = "Not malware but suspicious browser - file QQBrowser.exe"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
       score = 50
@@ -70,7 +70,7 @@ rule chrome_elf {
    meta:
       description = "Detects Fireball malware - file chrome_elf.dll"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
       hash1 = "e4d4f6fbfbbbf3904ca45d296dc565138a17484c54aebbb00ba9d57f80dfe7e5"
@@ -89,7 +89,7 @@ rule Fireball_regkey {
    meta:
       description = "Detects Fireball malware - file regkey.exe"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
       modified = "2022-12-21"
@@ -106,7 +106,7 @@ rule Fireball_winsap {
    meta:
       description = "Detects Fireball malware - file winsap.dll"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
       hash1 = "c7244d139ef9ea431a5b9cc6a2176a6a9908710892c74e215431b99cd5228359"
@@ -125,7 +125,7 @@ rule Fireball_archer {
    meta:
       description = "Detects Fireball malware - file archer.dll"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
       modified = "2022-12-21"
@@ -145,7 +145,7 @@ rule clearlog {
    meta:
       description = "Detects Fireball malware - file clearlog.dll"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
       hash1 = "14093ce6d0fe8ab60963771f48937c669103842a0400b8d97f829b33c420f7e3"
@@ -166,7 +166,7 @@ rule Fireball_gubed {
    meta:
       description = "Detects Fireball malware - file gubed.exe"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
       modified = "2022-12-21"

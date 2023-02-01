@@ -10,7 +10,7 @@
 rule Msfpayloads_msf {
    meta:
       description = "Metasploit Payloads - file msf.sh"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-02-09"
       modified = "2022-08-18"
@@ -25,7 +25,7 @@ rule Msfpayloads_msf_2 {
    meta:
       description = "Metasploit Payloads - file msf.asp"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "e52f98466b92ee9629d564453af6f27bd3645e00a9e2da518f5a64a33ccf8eb5"
@@ -41,7 +41,7 @@ rule Msfpayloads_msf_psh {
    meta:
       description = "Metasploit Payloads - file msf-psh.vba"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "5cc6c7f1aa75df8979be4a16e36cece40340c6e192ce527771bdd6463253e46f"
@@ -57,7 +57,7 @@ rule Msfpayloads_msf_exe {
    meta:
       description = "Metasploit Payloads - file msf-exe.vba"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "321537007ea5052a43ffa46a6976075cee6a4902af0c98b9fd711b9f572c20fd"
@@ -76,7 +76,7 @@ rule Msfpayloads_msf_3 {
    meta:
       description = "Metasploit Payloads - file msf.psh"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "335cfb85e11e7fb20cddc87e743b9e777dc4ab4e18a39c2a2da1aa61efdbd054"
@@ -100,7 +100,7 @@ rule Msfpayloads_msf_4 {
    meta:
       description = "Metasploit Payloads - file msf.aspx"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "26b3e572ba1574164b76c6d5213ab02e4170168ae2bcd2f477f246d37dbe84ef"
@@ -118,7 +118,7 @@ rule Msfpayloads_msf_exe_2 {
    meta:
       description = "Metasploit Payloads - file msf-exe.aspx"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "3a2f7a654c1100e64d8d3b4cd39165fba3b101bbcce6dd0f70dae863da338401"
@@ -135,7 +135,7 @@ rule Msfpayloads_msf_5 {
    meta:
       description = "Metasploit Payloads - file msf.msi"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "7a6c66dfc998bf5838993e40026e1f400acd018bde8d4c01ef2e2e8fba507065"
@@ -151,7 +151,7 @@ rule Msfpayloads_msf_6 {
    meta:
       description = "Metasploit Payloads - file msf.vbs"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "8d6f55c6715c4a2023087c3d0d7abfa21e31a629393e4dc179d31bb25b166b3f"
@@ -171,7 +171,7 @@ rule Msfpayloads_msf_7 {
    meta:
       description = "Metasploit Payloads - file msf.vba"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "425beff61a01e2f60773be3fcb74bdfc7c66099fe40b9209745029b3c19b5f2f"
@@ -187,7 +187,7 @@ rule Msfpayloads_msf_8 {
    meta:
       description = "Metasploit Payloads - file msf.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "519717e01f0cb3f460ef88cd70c3de8c7f00fb7c564260bd2908e97d11fde87f"
@@ -207,7 +207,7 @@ rule Msfpayloads_msf_cmd {
    meta:
       description = "Metasploit Payloads - file msf-cmd.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "9f41932afc9b6b4938ee7a2559067f4df34a5c8eae73558a3959dd677cb5867f"
@@ -220,7 +220,7 @@ rule Msfpayloads_msf_cmd {
 rule Msfpayloads_msf_9 {
    meta:
       description = "Metasploit Payloads - file msf.war - contents"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "e408678042642a5d341e8042f476ee7cef253871ef1c9e289acf0ee9591d1e81"
@@ -242,7 +242,7 @@ rule Msfpayloads_msf_10 {
    meta:
       description = "Metasploit Payloads - file msf.exe"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "3cd74fa28323c0d64f45507675ac08fb09bae4dd6b7e11f2832a4fbc70bb7082"
@@ -258,7 +258,7 @@ rule Msfpayloads_msf_svc {
    meta:
       description = "Metasploit Payloads - file msf-svc.exe"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "2b02c9c10577ee0c7590d3dadc525c494122747a628a7bf714879b8e94ae5ea1"
@@ -273,7 +273,7 @@ rule Msfpayloads_msf_11 {
    meta:
       description = "Metasploit Payloads - file msf.hta"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "d1daf7bc41580322333a893133d103f7d67f5cd8a3e0f919471061d41cf710b6"
@@ -289,7 +289,7 @@ rule Msfpayloads_msf_ref {
    meta:
       description = "Metasploit Payloads - file msf-ref.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "4ec95724b4c2b6cb57d2c63332a1dd6d4a0101707f42e3d693c9aab19f6c9f87"
@@ -309,7 +309,7 @@ rule MAL_Metasploit_Framework_UA {
    meta:
       description = "Detects User Agent used in Metasploit Framework"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/rapid7/metasploit-framework/commit/12a6d67be48527f5d3987e40cac2a0cbb4ab6ce7"
       date = "2018-08-16"
       score = 65

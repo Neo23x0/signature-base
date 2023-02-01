@@ -3,7 +3,7 @@ import "pe"
 rule MAL_CrypRAT_Jan19_1 {
    meta:
       description = "Detects CrypRAT"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       reference = "Internal Research"
       score = 90

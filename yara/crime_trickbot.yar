@@ -3,7 +3,7 @@ import "pe"
 rule MAL_Trickbot_Oct19_1 {
    meta:
       description = "Detects Trickbot malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2019-10-02"
       hash1 = "58852140a2dc30e799b7d50519c56e2fd3bb506691918dbf5d4244cc1f4558a2"
@@ -23,7 +23,7 @@ rule MAL_Trickbot_Oct19_1 {
 rule MAL_Trickbot_Oct19_2 {
    meta:
       description = "Detects Trickbot malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2019-10-02"
       hash1 = "57b8ea2870f5176a30e6cba2d717fb3ff342f8bd36bac652dc4194a313b5fa64"
@@ -38,7 +38,7 @@ rule MAL_Trickbot_Oct19_2 {
 rule MAL_Trickbot_Oct19_3 {
    meta:
       description = "Detects Trickbot malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2019-10-02"
       hash1 = "25a4ae2a1ce6dbe7da4ba1e2559caa7ed080762cf52dba6c8b55450852135504"
@@ -55,7 +55,7 @@ rule MAL_Trickbot_Oct19_3 {
 rule MAL_Trickbot_Oct19_4 {
    meta:
       description = "Detects Trickbot malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2019-10-02"
       hash1 = "25a4ae2a1ce6dbe7da4ba1e2559caa7ed080762cf52dba6c8b55450852135504"
@@ -75,7 +75,7 @@ rule MAL_Trickbot_Oct19_4 {
 rule MAL_Trickbot_Oct19_5 {
    meta:
       description = "Detects Trickbot malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2019-10-02"
       hash1 = "58852140a2dc30e799b7d50519c56e2fd3bb506691918dbf5d4244cc1f4558a2"
@@ -93,7 +93,7 @@ rule MAL_Trickbot_Oct19_5 {
 rule MAL_Trickbot_Oct19_6 {
    meta:
       description = "Detects Trickbot malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2019-10-02"
       hash1 = "cf99990bee6c378cbf56239b3cc88276eec348d82740f84e9d5c343751f82560"

@@ -11,7 +11,7 @@
 rule SeDLL_Javascript_Decryptor {
    meta:
       description = "Detects SeDll - DLL is used for decrypting and executing another JavaScript backdoor such as Orz"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/MZ7dRg"
       date = "2017-10-18"
       modified = "2023-01-07"
@@ -33,7 +33,7 @@ rule Leviathan_CobaltStrike_Sample_1 {
    meta:
       description = "Detects Cobalt Strike sample from Leviathan report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/MZ7dRg"
       date = "2017-10-18"
       hash1 = "5860ddc428ffa900258207e9c385f843a3472f2fbf252d2f6357d458646cf362"
@@ -56,7 +56,7 @@ rule MockDll_Gen {
    meta:
       description = "Detects MockDll - regsvr DLL loader"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/MZ7dRg"
       date = "2017-10-18"
       hash1 = "bfc5c6817ff2cc4f3cd40f649e10cc9ae1e52139f35fdddbd32cb4d221368922"
@@ -74,7 +74,7 @@ rule MockDll_Gen {
 rule VBScript_Favicon_File {
    meta:
       description = "VBScript cloaked as Favicon file used in Leviathan incident"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/MZ7dRg"
       date = "2017-10-18"
       modified = "2023-01-06"

@@ -12,7 +12,7 @@ rule SnakeTurla_Malware_May17_1 {
    meta:
       description = "Detects Snake / Turla Sample"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/QaOh4V"
       date = "2017-05-04"
       modified = "2023-01-06"
@@ -27,7 +27,7 @@ rule SnakeTurla_Malware_May17_2 {
    meta:
       description = "Detects Snake / Turla Sample"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/QaOh4V"
       date = "2017-05-04"
       hash1 = "b8ee4556dc09b28826359b98343a4e00680971a6f8c6602747bd5d723d26eaea"
@@ -43,7 +43,7 @@ rule SnakeTurla_Malware_May17_4 {
    meta:
       description = "Detects Snake / Turla Sample"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/QaOh4V"
       date = "2017-05-04"
       hash1 = "d5ea79632a1a67abbf9fb1c2813b899c90a5fb9442966ed4f530e92715087ee2"
@@ -57,7 +57,7 @@ rule SnakeTurla_Installd_SH {
    meta:
       description = "Detects Snake / Turla Sample"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/QaOh4V"
       date = "2017-05-04"
    strings:
@@ -71,7 +71,7 @@ rule SnakeTurla_Install_SH {
    meta:
       description = "Detects Snake / Turla Sample"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/QaOh4V"
       date = "2017-05-04"
    strings:

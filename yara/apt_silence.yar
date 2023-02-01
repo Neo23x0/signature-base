@@ -14,7 +14,7 @@ rule Silence_malware_1 {
    meta:
       description = "Detects malware sample mentioned in the Silence report on Securelist"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist.com/the-silence/83009/"
       date = "2017-11-01"
       hash1 = "f24b160e9e9d02b8e31524b8a0b30e7cdc66dd085e24e4c58240e4c4b6ec0ac2"
@@ -40,7 +40,7 @@ rule Silence_malware_2 {
    meta:
       description = "Detects malware sample mentioned in the Silence report on Securelist"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist.com/the-silence/83009/"
       date = "2017-11-01"
       hash1 = "75b8f534b2f56f183465ba2b63cfc80b7d7d1d155697af141447ec7144c2ba27"

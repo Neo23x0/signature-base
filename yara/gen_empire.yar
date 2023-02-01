@@ -11,7 +11,7 @@ rule Empire_Invoke_MetasploitPayload {
    meta:
       description = "Detects Empire component - file Invoke-MetasploitPayload.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       hash1 = "a85ca27537ebeb79601b885b35ddff6431860b5852c6a664d32a321782808c54"
@@ -26,7 +26,7 @@ rule Empire_Exploit_Jenkins {
    meta:
       description = "Detects Empire component - file Exploit-Jenkins.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       hash1 = "a5182cccd82bb9984b804b365e07baba78344108f225b94bd12a59081f680729"
@@ -42,7 +42,7 @@ rule Empire_Get_SecurityPackages {
    meta:
       description = "Detects Empire component - file Get-SecurityPackages.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       hash1 = "5d06e99121cff9b0fce74b71a137501452eebbcd1e901b26bde858313ee5a9c1"
@@ -57,7 +57,7 @@ rule Empire_Invoke_PowerDump {
    meta:
       description = "Detects Empire component - file Invoke-PowerDump.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       hash1 = "095c5cf5c0c8a9f9b1083302e2ba1d4e112a410e186670f9b089081113f5e0e1"
@@ -73,7 +73,7 @@ rule Empire_Install_SSP {
    meta:
       description = "Detects Empire component - file Install-SSP.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       hash1 = "7fd921a23950334257dda57b99e03c1e1594d736aab2dbfe9583f99cd9b1d165"
@@ -87,7 +87,7 @@ rule Empire_Invoke_ShellcodeMSIL {
    meta:
       description = "Detects Empire component - file Invoke-ShellcodeMSIL.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       hash1 = "9a9c6c9eb67bde4a8ce2c0858e353e19627b17ee2a7215fa04a19010d3ef153f"
@@ -104,7 +104,7 @@ rule HKTL_Empire_PowerUp {
    meta:
       description = "Detects Empire component - file PowerUp.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       hash1 = "ad9a5dff257828ba5f15331d59dd4def3989537b3b6375495d0c08394460268c"
@@ -118,7 +118,7 @@ rule Empire_Invoke_Mimikatz_Gen {
    meta:
       description = "Detects Empire component - file Invoke-Mimikatz.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       hash1 = "4725a57a5f8b717ce316f104e9472e003964f8eae41a67fd8c16b4228e3d00b3"
@@ -133,7 +133,7 @@ rule Empire_Get_GPPPassword {
    meta:
       description = "Detects Empire component - file Get-GPPPassword.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       hash1 = "55a4519c4f243148a971e4860225532a7ce730b3045bde3928303983ebcc38b0"
@@ -149,7 +149,7 @@ rule Empire_Invoke_SmbScanner {
    meta:
       description = "Detects Empire component - file Invoke-SmbScanner.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       hash1 = "9a705f30766279d1e91273cfb1ce7156699177a109908e9a986cc2d38a7ab1dd"
@@ -164,7 +164,7 @@ rule Empire_Exploit_JBoss {
    meta:
       description = "Detects Empire component - file Exploit-JBoss.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       hash1 = "9ea3e00b299e644551d90bbee0ce3e4e82445aa15dab7adb7fcc0b7f1fe4e653"
@@ -182,7 +182,7 @@ rule Empire_dumpCredStore {
    meta:
       description = "Detects Empire component - file dumpCredStore.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       hash1 = "c1e91a5f9cc23f3626326dab2dcdf4904e6f8a332e2bce8b9a0854b371c2b350"
@@ -198,7 +198,7 @@ rule Empire_Invoke_EgressCheck {
    meta:
       description = "Detects Empire component - file Invoke-EgressCheck.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       hash1 = "e2d270266abe03cfdac66e6fc0598c715e48d6d335adf09a9ed2626445636534"
@@ -211,7 +211,7 @@ rule Empire_Invoke_EgressCheck {
 rule Empire_ReflectivePick_x64_orig {
    meta:
       description = "Detects Empire component - file ReflectivePick_x64_orig.dll"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       modified = "2022-12-21"
@@ -229,7 +229,7 @@ rule Empire_Out_Minidump {
    meta:
       description = "Detects Empire component - file Out-Minidump.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       hash1 = "7803ae7ba5d4e7d38e73745b3f321c2ca714f3141699d984322fa92e0ff037a1"
@@ -244,7 +244,7 @@ rule Empire_Invoke_PsExec {
    meta:
       description = "Detects Empire component - file Invoke-PsExec.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       hash1 = "0218be4323959fc6379489a6a5e030bb9f1de672326e5e5b8844ab5cedfdcf88"
@@ -260,7 +260,7 @@ rule Empire_Invoke_PostExfil {
    meta:
       description = "Detects Empire component - file Invoke-PostExfil.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       hash1 = "00c0479f83c3dbbeff42f4ab9b71ca5fe8cd5061cb37b7b6861c73c54fd96d3e"
@@ -275,7 +275,7 @@ rule Empire_Invoke_SMBAutoBrute {
    meta:
       description = "Detects Empire component - file Invoke-SMBAutoBrute.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       hash1 = "7950f8abdd8ee09ed168137ef5380047d9d767a7172316070acc33b662f812b2"
@@ -290,7 +290,7 @@ rule Empire_Get_Keystrokes {
    meta:
       description = "Detects Empire component - file Get-Keystrokes.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       hash1 = "c36e71db39f6852f78df1fa3f67e8c8a188bf951e96500911e9907ee895bf8ad"
@@ -304,7 +304,7 @@ rule Empire_Invoke_DllInjection {
    meta:
       description = "Detects Empire component - file Invoke-DllInjection.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       hash1 = "304031aa9eca5a83bdf1f654285d86df79cb3bba4aa8fe1eb680bd5b2878ebf0"
@@ -318,7 +318,7 @@ rule Empire_KeePassConfig {
    meta:
       description = "Detects Empire component - file KeePassConfig.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       hash1 = "5a76e642357792bb4270114d7cd76ce45ba24b0d741f5c6b916aeebd45cff2b3"
@@ -332,7 +332,7 @@ rule Empire_Invoke_SSHCommand {
    meta:
       description = "Detects Empire component - file Invoke-SSHCommand.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       hash1 = "cbaf086b14d5bb6a756cbda42943d4d7ef97f8277164ce1f7dd0a1843e9aa242"
@@ -350,7 +350,7 @@ rule Empire_PowerShell_Framework_Gen1 {
    meta:
       description = "Detects Empire component"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       super_rule = 1
@@ -370,7 +370,7 @@ rule Empire_PowerUp_Gen {
    meta:
       description = "Detects Empire component - from files PowerUp.ps1, PowerUp.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       super_rule = 1
@@ -386,7 +386,7 @@ rule Empire_PowerShell_Framework_Gen2 {
    meta:
       description = "Detects Empire component"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       super_rule = 1
@@ -406,7 +406,7 @@ rule Empire_Agent_Gen {
    meta:
       description = "Detects Empire component - from files agent.ps1, agent.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       super_rule = 1
@@ -424,7 +424,7 @@ rule Empire_PowerShell_Framework_Gen3 {
    meta:
       description = "Detects Empire component"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       super_rule = 1
@@ -443,7 +443,7 @@ rule Empire_Invoke_InveighRelay_Gen {
    meta:
       description = "Detects Empire component - from files Invoke-InveighRelay.ps1, Invoke-InveighRelay.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       super_rule = 1
@@ -459,7 +459,7 @@ rule Empire_KeePassConfig_Gen {
    meta:
       description = "Detects Empire component - from files KeePassConfig.ps1, KeePassConfig.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       super_rule = 1
@@ -474,7 +474,7 @@ rule Empire_Invoke_Portscan_Gen {
    meta:
       description = "Detects Empire component - from files Invoke-Portscan.ps1, Invoke-Portscan.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       super_rule = 1
@@ -490,7 +490,7 @@ rule Empire_PowerShell_Framework_Gen4 {
    meta:
       description = "Detects Empire component"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       super_rule = 1
@@ -517,7 +517,7 @@ rule Empire_Invoke_CredentialInjection_Invoke_Mimikatz_Gen {
    meta:
       description = "Detects Empire component - from files Invoke-CredentialInjection.ps1, Invoke-Mimikatz.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       super_rule = 1
@@ -534,7 +534,7 @@ rule Empire_Invoke_Gen {
    meta:
       description = "Detects Empire component - from files Invoke-DCSync.ps1, Invoke-PSInject.ps1, Invoke-ReflectivePEInjection.ps1"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       super_rule = 1
@@ -552,7 +552,7 @@ rule Empire_PowerShell_Framework_Gen5 {
    meta:
       description = "Detects Empire component"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/adaptivethreat/Empire"
       date = "2016-11-05"
       super_rule = 1

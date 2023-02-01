@@ -14,7 +14,7 @@ rule ME_Campaign_Malware_1 {
    meta:
       description = "Detects malware from Middle Eastern campaign reported by Talos"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "http://blog.talosintelligence.com/2018/02/targeted-attacks-in-middle-east.html"
       date = "2018-02-07"
       hash1 = "1176642841762b3bc1f401a5987dc55ae4b007367e98740188468642ffbd474e"
@@ -28,7 +28,7 @@ rule ME_Campaign_Malware_2 {
    meta:
       description = "Detects malware from Middle Eastern campaign reported by Talos"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "http://blog.talosintelligence.com/2018/02/targeted-attacks-in-middle-east.html"
       date = "2018-02-07"
       hash1 = "76a9b603f1f901020f65358f1cbf94c1a427d9019f004a99aa8bff1dea01a881"
@@ -49,7 +49,7 @@ rule ME_Campaign_Malware_3 {
    meta:
       description = "Detects malware from Middle Eastern campaign reported by Talos"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "http://blog.talosintelligence.com/2018/02/targeted-attacks-in-middle-east.html"
       date = "2018-02-07"
       hash1 = "15f5aaa71bfa3d62fd558a3e88dd5ba26f7638bf2ac653b8d6b8d54dc7e5926b"
@@ -66,7 +66,7 @@ rule ME_Campaign_Malware_4 {
    meta:
       description = "Detects malware from Middle Eastern campaign reported by Talos"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "http://blog.talosintelligence.com/2018/02/targeted-attacks-in-middle-east.html"
       date = "2018-02-07"
       hash1 = "c5bfb5118a999d21e9f445ad6ccb08eb71bc7bd4de9e88a41be9cf732156c525"
@@ -77,7 +77,7 @@ rule ME_Campaign_Malware_4 {
 rule ME_Campaign_Malware_5 {
    meta:
       description = "Detects malware from Middle Eastern campaign reported by Talos"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "http://blog.talosintelligence.com/2018/02/targeted-attacks-in-middle-east.html"
       date = "2018-02-07"
       modified = "2022-08-18"

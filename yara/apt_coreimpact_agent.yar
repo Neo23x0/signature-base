@@ -6,7 +6,7 @@
 rule CoreImpact_sysdll_exe {
    meta:
       description = "Detects a malware sysdll.exe from the Rocket Kitten APT"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       score = 70
       date = "27.12.2014"
       modified = "2023-01-06"

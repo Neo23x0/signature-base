@@ -2,7 +2,7 @@
 rule EXPL_HKTL_macOS_Switcharoo_CVE_2022_46689_Dec22 {
    meta:
       description = "Detects POCs that exploit privilege escalation vulnerability CVE-2022-46689 on macOS"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2022-12-19"
       score = 80
@@ -41,7 +41,7 @@ rule EXPL_HKTL_macOS_Switcharoo_CVE_2022_46689_Dec22 {
 rule EXPL_macOS_Switcharoo_Indicator_Dec22 {
    meta:
       description = "Detects indicators found after exploitations of CVE-2022-46689"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/zhuowei/MacDirtyCowDemo"
       date = "2022-12-19"
       score = 65

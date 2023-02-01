@@ -14,7 +14,7 @@ import "pe"
 rule APT_APT41_POISONPLUG_3 {
    meta:
       description = "Detects APT41 malware POISONPLUG"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html"
       date = "2019-08-07"
       score = 80
@@ -32,7 +32,7 @@ rule APT_APT41_POISONPLUG_3 {
 rule APT_APT41_POISONPLUG_SHADOW {
    meta:
       description = "Detects APT41 malware POISONPLUG SHADOW"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html"
       date = "2019-08-07"
       score = 85
@@ -44,7 +44,7 @@ rule APT_APT41_POISONPLUG_SHADOW {
 rule APT_APT41_CRACKSHOT {
    meta:
       description = "Detects APT41 malware CRACKSHOT"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html"
       date = "2019-08-07"
       score = 85
@@ -63,7 +63,7 @@ rule APT_APT41_CRACKSHOT {
 rule APT_APT41_POISONPLUG_2 {
    meta:
       description = "Detects APT41 malware POISONPLUG"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html"
       date = "2019-08-07"
       score = 70
@@ -80,7 +80,7 @@ rule APT_APT41_POISONPLUG_2 {
 rule APT_APT41_POISONPLUG {
    meta:
       description = "Detects APT41 malware POISONPLUG"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html"
       date = "2019-08-07"
       score = 80
@@ -103,7 +103,7 @@ rule APT_APT41_POISONPLUG {
 rule APT_APT41_HIGHNOON {
    meta:
       description = "Detects APT41 malware HIGHNOON"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html"
       date = "2019-08-07"
       score = 85
@@ -131,7 +131,7 @@ rule APT_APT41_HIGHNOON {
 rule APT_APT41_HIGHNOON_2 {
    meta:
       description = "Detects APT41 malware HIGHNOON"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html"
       date = "2019-08-07"
       hash1 = "79190925bd1c3fae65b0d11db40ac8e61fb9326ccfed9b7e09084b891089602d"
@@ -152,7 +152,7 @@ rule APT_APT41_HIGHNOON_2 {
 rule APT_APT41_HIGHNOON_BIN {
    meta:
       description = "Detects APT41 malware HIGHNOON.BIN"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html"
       date = "2019-08-07"
       score = 90
@@ -174,7 +174,7 @@ rule APT_APT41_HIGHNOON_BIN {
 rule APT_APT41_HIGHNOON_BIN_2 {
    meta:
       description = "Detects APT41 malware HIGHNOON.BIN"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html"
       date = "2019-08-07"
       score = 85
@@ -193,7 +193,7 @@ rule APT_APT41_HIGHNOON_BIN_2 {
 rule APT_APT41_RevokedCert_Aug19_1 {
    meta:
       description = "Detects revoked certificates used by APT41 group"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html"
       date = "2019-08-07"
       score = 60
@@ -223,7 +223,7 @@ rule APT_APT41_RevokedCert_Aug19_1 {
 rule APT_APT41_CN_ELF_Speculoos_Backdoor {
    meta:
       description = "Detects Speculoos Backdoor used by APT41"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://unit42.paloaltonetworks.com/apt41-using-new-speculoos-backdoor-to-target-organizations-globally/"
       date = "2020-04-14"
       score = 90

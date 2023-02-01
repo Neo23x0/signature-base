@@ -2,7 +2,7 @@
 rule HKTL_Khepri_Beacon_Sep21_1 {
    meta:
       description = "Detects Khepri C2 framework beacons"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/geemion/Khepri/"
       date = "2021-09-08"
       score = 90

@@ -2,7 +2,7 @@
 rule Ransom_LockerGoga_Mar19_1 {
    meta:
       description = "Detects LockerGoga ransomware binaries"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.nrk.no/norge/skreddersydd-dobbeltangrep-mot-hydro-1.14480202"
       date = "2019-03-19"
       hash1 = "c97d9bbc80b573bdeeda3812f4d00e5183493dd0d5805e2508728f65977dda15"

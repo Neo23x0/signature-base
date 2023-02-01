@@ -12,7 +12,7 @@ rule FourElementSword_Config_File {
 	meta:
 		description = "Detects FourElementSword Malware"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www.arbornetworks.com/blog/asert/four-element-sword-engagement/"
 		date = "2016-04-18"
 		hash = "f05cd0353817bf6c2cab396181464c31c352d6dea07e2d688def261dd6542b27"
@@ -30,7 +30,7 @@ rule FourElementSword_T9000 {
 	meta:
 		description = "Detects FourElementSword Malware"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www.arbornetworks.com/blog/asert/four-element-sword-engagement/"
 		date = "2016-04-18"
 		hash = "5f3d0a319ecc875cc64a40a34d2283cb329abcf79ad02f487fbfd6bef153943c"
@@ -50,7 +50,7 @@ rule FourElementSword_32DLL {
 	meta:
 		description = "Detects FourElementSword Malware"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www.arbornetworks.com/blog/asert/four-element-sword-engagement/"
 		date = "2016-04-18"
 		hash = "7a200c4df99887991c638fe625d07a4a3fc2bdc887112437752b3df5c8da79b6"
@@ -68,7 +68,7 @@ rule FourElementSword_Keyainst_EXE {
 	meta:
 		description = "Detects FourElementSword Malware"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www.arbornetworks.com/blog/asert/four-element-sword-engagement/"
 		date = "2016-04-18"
 		hash = "cf717a646a015ee72f965488f8df2dd3c36c4714ccc755c295645fe8d150d082"
@@ -86,7 +86,7 @@ rule FourElementSword_ElevateDLL_2 {
 	meta:
 		description = "Detects FourElementSword Malware"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www.arbornetworks.com/blog/asert/four-element-sword-engagement/"
 		date = "2016-04-18"
 		hash = "9c23febc49c7b17387767844356d38d5578727ee1150956164883cf555fe7f95"
@@ -102,7 +102,7 @@ rule FourElementSword_fslapi_dll_gui {
 	meta:
 		description = "Detects FourElementSword Malware"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www.arbornetworks.com/blog/asert/four-element-sword-engagement/"
 		date = "2016-04-18"
 		hash = "2a6ef9dde178c4afe32fe676ff864162f104d85fac2439986de32366625dc083"
@@ -118,7 +118,7 @@ rule FourElementSword_PowerShell_Start {
 	meta:
 		description = "Detects FourElementSword Malware"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www.arbornetworks.com/blog/asert/four-element-sword-engagement/"
 		date = "2016-04-18"
 		hash = "9b6053e784c5762fdb9931f9064ba6e52c26c2d4b09efd6ff13ca87bbb33c692"
@@ -133,7 +133,7 @@ rule FourElementSword_ResN32DLL {
 	meta:
 		description = "Detects FourElementSword Malware"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www.arbornetworks.com/blog/asert/four-element-sword-engagement/"
 		date = "2016-04-18"
 		hash = "bf1b00b7430899d33795ef3405142e880ef8dcbda8aab0b19d80875a14ed852f"
@@ -151,7 +151,7 @@ rule FourElementSword_ElevateDLL {
 	meta:
 		description = "Detects FourElementSword Malware"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www.arbornetworks.com/blog/asert/four-element-sword-engagement/"
 		date = "2016-04-18"
 		super_rule = 1

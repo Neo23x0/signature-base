@@ -2,7 +2,7 @@
 rule VUL_Exchange_CVE_2020_0688 {
    meta:
       description = "Detects static validation key used by Exchange server in web.config"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.thezdi.com/blog/2020/2/24/cve-2020-0688-remote-code-execution-on-microsoft-exchange-server-through-fixed-cryptographic-keys"
       date = "2020-02-26"
       score = 60

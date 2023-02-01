@@ -11,7 +11,7 @@ rule Mal_Dropper_httpEXE_from_CAB {
 	meta:
 		description = "Detects a dropper from a CAB file mentioned in the article"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://goo.gl/13Wgy1"
 		date = "2016-05-25"
 		score = 60
@@ -27,7 +27,7 @@ rule Mal_http_EXE {
 	meta:
 		description = "Detects trojan from APT report named http.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://goo.gl/13Wgy1"
 		date = "2016-05-25"
 		modified = "2023-01-27"
@@ -59,7 +59,7 @@ rule Mal_PotPlayer_DLL {
 	meta:
 		description = "Detects a malicious PotPlayer.dll"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://goo.gl/13Wgy1"
 		date = "2016-05-25"
 		score = 70

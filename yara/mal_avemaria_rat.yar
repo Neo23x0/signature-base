@@ -2,7 +2,7 @@
 rule MAL_AveMaria_RAT_Jul19 {
    meta:
       description = "Detects AveMaria RAT"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/abuse_ch/status/1145697917161934856"
       date = "2019-07-01"
       hash1 = "5a927db1566468f23803746ba0ccc9235c79ca8672b1444822631ddbf2651a59"

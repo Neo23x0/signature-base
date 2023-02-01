@@ -11,7 +11,7 @@ rule BeepService_Hacktool {
 	meta:
 		description = "Detects BeepService Hacktool used by Chinese APT groups"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://goo.gl/p32Ozf"
 		date = "2016-05-12"
 		score = 85

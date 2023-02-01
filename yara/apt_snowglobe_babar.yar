@@ -5,7 +5,7 @@ rule SNOWGLOBE_Babar_Malware {
 	meta:
 		description = "Detects the Babar Malware used in the SNOWGLOBE attacks - file babar.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://motherboard.vice.com/read/meet-babar-a-new-malware-almost-certainly-created-by-france"
 		date = "2015/02/18"
 		hash = "27a0a98053f3eed82a51cdefbdfec7bb948e1f36"

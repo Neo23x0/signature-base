@@ -11,7 +11,7 @@ rule PlugX_J16_Gen {
 	meta:
 		description = "Detects PlugX Malware samples from June 2016"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "VT Research"
 		date = "2016-06-08"
 	strings:
@@ -42,7 +42,7 @@ rule PlugX_J16_Gen2 {
 	meta:
 		description = "Detects PlugX Malware Samples from June 2016"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "VT Research"
 		date = "2016-06-08"
 	strings:

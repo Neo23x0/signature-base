@@ -14,7 +14,7 @@ rule Datper_Backdoor {
    meta:
       description = "Detects Datper Malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "http://blog.jpcert.or.jp/2017/08/detecting-datper-malware-from-proxy-logs.html"
       date = "2017-08-21"
       hash1 = "7d70d659c421b50604ce3e0a1bf423ab7e54b9df361360933bac3bb852a31849"

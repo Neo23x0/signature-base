@@ -2,7 +2,7 @@
 rule LOG_EXPL_Confluence_RCE_CVE_2021_26084_Sep21 : LOG {
    meta:
       description = "Detects exploitation attempts against Confluence servers abusing a RCE reported as CVE-2021-26084"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/httpvoid/writeups/blob/main/Confluence-RCE.md"
       date = "2021-09-01"
       score = 55

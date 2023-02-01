@@ -2,7 +2,7 @@
 rule APT_NK_MAL_Keylogger_Unknown_Nov19_1 {
    meta:
       description = "Detects unknown keylogger reported by CNMF in November 2019"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/CNMF_VirusAlert/status/1192131508007505921"
       date = "2019-11-06"
       hash1 = "04d70bb249206a006f83db39bbe49ff6e520ea329e5fbb9c758d426b1c8dec30"

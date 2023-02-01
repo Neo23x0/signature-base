@@ -1,7 +1,7 @@
 rule MAL_RANSOM_Lorenz_May21_1 {
    meta:
       description = "Detects Lorenz Ransomware samples"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research - DACH TE"
       date = "2021-05-04"
       hash1 = "4b1170f7774acfdc5517fbe1c911f2bd9f1af498f3c3d25078f05c95701cc999"

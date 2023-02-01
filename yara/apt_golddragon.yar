@@ -14,7 +14,7 @@ rule GoldDragon_malware_Feb18_1 {
    meta:
       description = "Detects malware from Gold Dragon report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://securingtomorrow.mcafee.com/mcafee-labs/gold-dragon-widens-olympics-malware-attacks-gains-permanent-presence-on-victims-systems/"
       date = "2018-02-03"
       score = 90
@@ -31,7 +31,7 @@ rule GoldDragon_Aux_File {
    meta:
       description = "Detects export from Gold Dragon - February 2018"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://securingtomorrow.mcafee.com/mcafee-labs/gold-dragon-widens-olympics-malware-attacks-gains-permanent-presence-on-victims-systems/"
       date = "2018-02-03"
       score = 90
@@ -44,7 +44,7 @@ rule GoldDragon_Aux_File {
 rule GoldDragon_Ghost419_RAT {
    meta:
       description = "Detects Ghost419 RAT from Gold Dragon report"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/rW1yvZ"
       date = "2018-02-03"
       modified = "2023-01-06"
@@ -86,7 +86,7 @@ rule GoldDragon_RunningRAT {
    meta:
       description = "Detects Running RAT from Gold Dragon report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/rW1yvZ"
       date = "2018-02-03"
       hash1 = "0852f2c5741997d8899a34bb95c349d7a9fb7277cd0910656c3ce37a6f11cb88"
@@ -126,7 +126,7 @@ rule GoldDragon_RunningRAT {
 rule GoldDragon_RunnignRAT {
    meta:
       description = "Detects Running RAT malware from Gold Dragon report"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/rW1yvZ"
       date = "2018-02-03"
       modified = "2023-01-07"

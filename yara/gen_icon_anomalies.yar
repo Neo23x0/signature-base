@@ -3,7 +3,7 @@ import "pe"
 rule SUSP_AdobePDF_SFX_Bitmap_Combo_Executable {
    meta:
       description = "Detects a suspicious executable that contains both a SFX icon and an Adobe PDF icon"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://mp.weixin.qq.com/s/3Pa3hiuZyQBspDzH0kGSHw"
       date = "2020-11-02"
       score = 60
@@ -38,7 +38,7 @@ rule SUSP_AdobePDF_SFX_Bitmap_Combo_Executable {
 rule SUSP_AdobePDF_Bitmap_Executable {
    meta:
       description = "Detects a suspicious executable that contains a Adobe PDF icon and no shows no sign of actual Adobe software"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://mp.weixin.qq.com/s/3Pa3hiuZyQBspDzH0kGSHw"
       date = "2020-11-02"
       score = 60

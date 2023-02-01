@@ -11,7 +11,7 @@ rule Buckeye_Osinfo {
 	meta:
 		description = "Detects OSinfo tool used by the Buckeye APT group"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://www.symantec.com/connect/blogs/buckeye-cyberespionage-group-shifts-gaze-us-hong-kong"
 		date = "2016-09-05"
 	strings:
@@ -30,7 +30,7 @@ rule RemoteCmd {
 	meta:
 		description = "Detects a remote access tool used by APT groups - file RemoteCmd.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://goo.gl/igxLyF"
 		date = "2016-09-08"
 		modified = "2022-12-21"
@@ -50,7 +50,7 @@ rule ChromePass {
 	meta:
 		description = "Detects a tool used by APT groups - file ChromePass.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://goo.gl/igxLyF"
 		date = "2016-09-08"
 		modified = "2022-12-21"

@@ -148,7 +148,7 @@ rule TA17_293A_Hacktool_PS_1 {
    meta:
       description = "Auto-generated rule"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-293A"
       date = "2017-10-21"
       hash1 = "72a28efb6e32e653b656ca32ccd44b3111145a695f6f6161965deebbdc437076"
@@ -163,7 +163,7 @@ rule TA17_293A_Hacktool_Touch_MAC_modification {
    meta:
       description = "Auto-generated rule"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-293A"
       date = "2017-10-21"
       hash1 = "070d7082a5abe1112615877214ec82241fd17e5bd465e24d794a470f699af88e"
@@ -180,7 +180,7 @@ rule TA17_293A_Hacktool_Exploit_MS16_032 {
    meta:
       description = "Auto-generated rule"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-293A"
       date = "2017-10-21"
       hash1 = "9b97290300abb68fb48480718e6318ee2cdd4f099aa6438010fb2f44803e0b58"
@@ -199,7 +199,7 @@ rule Imphash_UPX_Packed_Malware_1_TA17_293A {
    meta:
       description = "Detects malware based on Imphash of malware used in TA17-293A"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-293A"
       date = "2017-10-21"
       hash1 = "a278256fbf2f061cfded7fdd58feded6765fade730374c508adad89282f67d77"
@@ -211,7 +211,7 @@ rule Imphash_Malware_2_TA17_293A : HIGHVOL {
    meta:
       description = "Detects malware based on Imphash of malware used in TA17-293A"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-293A"
       date = "2017-10-21"
    condition:

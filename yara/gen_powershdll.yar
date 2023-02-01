@@ -10,7 +10,7 @@ rule PowerShdll {
    meta:
       description = "Detects hack tool PowerShdll"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/p3nt4/PowerShdll"
       date = "2017-08-03"
       hash1 = "4d33bc7cfa79d7eefc5f7a99f1b052afdb84895a411d7c30045498fd4303898a"

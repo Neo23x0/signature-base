@@ -2,7 +2,7 @@
 rule SUSP_ZIP_LNK_PhishAttachment_Pattern_Jun22_1 {
    meta:
       description = "Detects suspicious tiny ZIP files with phishing attachment characteristics"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2022-06-23"
       score = 65
@@ -22,7 +22,7 @@ rule SUSP_ZIP_LNK_PhishAttachment_Pattern_Jun22_1 {
 rule SUSP_ZIP_ISO_PhishAttachment_Pattern_Jun22_1 {
    meta:
       description = "Detects suspicious small base64 encoded ZIP files (MIME email attachments) with .iso files as content as often used in phishing attacks"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2022-06-23"
       score = 65
@@ -41,7 +41,7 @@ rule SUSP_ZIP_ISO_PhishAttachment_Pattern_Jun22_1 {
 rule SUSP_Archive_Phishing_Attachment_Characteristics_Jun22_1 {
    meta:
       description = "Detects characteristics of suspicious file names or double extensions often found in phishing mail attachments"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/0xtoxin/status/1540524891623014400?s=12&t=IQ0OgChk8tAIdTHaPxh0Vg"
       date = "2022-06-29"
       score = 65

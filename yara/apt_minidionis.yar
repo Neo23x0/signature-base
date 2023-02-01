@@ -11,7 +11,7 @@ rule MiniDionis_readerView {
 	meta:
 		description = "MiniDionis Malware - file readerView.exe / adobe.exe"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://www.kernelmode.info/forum/viewtopic.php?f=16&t=3950"
 		date = "2015-07-20"
 		/* Original Hash */
@@ -39,7 +39,7 @@ rule Malicious_SFX1 {
 	meta:
 		description = "SFX with voicemail content"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://www.kernelmode.info/forum/viewtopic.php?f=16&t=3950"
 		date = "2015-07-20"
 		hash = "c0675b84f5960e95962d299d4c41511bbf6f8f5f5585bdacd1ae567e904cb92f"
@@ -54,7 +54,7 @@ rule Malicious_SFX2 {
 	meta:
 		description = "SFX with adobe.exe content"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://www.kernelmode.info/forum/viewtopic.php?f=16&t=3950"
 		date = "2015-07-20"
 		hash = "502e42dc99873c52c3ca11dd3df25aad40d2b083069e8c22dd45da887f81d14d"
@@ -70,7 +70,7 @@ rule MiniDionis_VBS_Dropped {
 	meta:
 		description = "Dropped File - 1.vbs"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://malwr.com/analysis/ZDc4ZmIyZDI4MTVjNGY5NWI0YzE3YjIzNGFjZTcyYTY/"
 		date = "2015-07-21"
 		hash = "97dd1ee3aca815eb655a5de9e9e8945e7ba57f458019be6e1b9acb5731fa6646"

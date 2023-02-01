@@ -28,7 +28,7 @@ rule MAL_RANSOM_Crime_DearCry_Mar2021_1 {
 rule MAL_CRIME_RANSOM_DearCry_Mar21_1 {
    meta:
       description = "Detects DearCry Ransomware affecting Exchange servers"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/phillip_misner/status/1370197696280027136"
       date = "2021-03-12"
       hash1 = "2b9838da7edb0decd32b086e47a31e8f5733b5981ad8247a2f9508e232589bff"

@@ -2,7 +2,7 @@
 rule WEBSHELL_ASP_Embedded_Mar21_1 {
    meta:
       description = "Detects ASP webshells"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2021-03-05"
       score = 85
@@ -17,7 +17,7 @@ rule WEBSHELL_ASP_Embedded_Mar21_1 {
 rule APT_WEBSHELL_HAFNIUM_SecChecker_Mar21_1 {
    meta:
       description = "Detects HAFNIUM SecChecker webshell"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/markus_neis/status/1367794681237667840"
       date = "2021-03-05"
       hash1 = "b75f163ca9b9240bf4b37ad92bc7556b40a17e27c2b8ed5c8991385fe07d17d0"
@@ -33,7 +33,7 @@ rule APT_WEBSHELL_HAFNIUM_SecChecker_Mar21_1 {
 rule APT_HAFNIUM_Forensic_Artefacts_Mar21_1 {
    meta:
       description = "Detects forensic artefacts found in HAFNIUM intrusions"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.microsoft.com/security/blog/2021/03/02/hafnium-targeting-exchange-servers/"
       date = "2021-03-02"
    strings:
@@ -79,7 +79,7 @@ rule APT_WEBSHELL_Tiny_WebShell : APT Hafnium WebShell {
 rule HKTL_PS1_PowerCat_Mar21 {
    meta:
       description = "Detects PowerCat hacktool"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/besimorhino/powercat"
       date = "2021-03-02"
       hash1 = "c55672b5d2963969abe045fe75db52069d0300691d4f1f5923afeadf5353b9d2"
@@ -99,7 +99,7 @@ rule HKTL_PS1_PowerCat_Mar21 {
 rule HKTL_Nishang_PS1_Invoke_PowerShellTcpOneLine {
    meta:
       description = "Detects PowerShell Oneliner in Nishang's repository"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcpOneLine.ps1"
       date = "2021-03-03"
       hash1 = "2f4c948974da341412ab742e14d8cdd33c1efa22b90135fcfae891f08494ac32"
@@ -191,7 +191,7 @@ rule WEBSHELL_CVE_2021_27065_Webshells {
 rule APT_MAL_ASPX_HAFNIUM_Chopper_Mar21_3 {
    meta:
       description = "Detects HAFNIUM ASPX files dropped on compromised servers"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.microsoft.com/security/blog/2021/03/02/hafnium-targeting-exchange-servers/"
       date = "2021-03-07"
       score = 85
@@ -206,7 +206,7 @@ rule APT_MAL_ASPX_HAFNIUM_Chopper_Mar21_3 {
 rule APT_MAL_ASPX_HAFNIUM_Chopper_Mar21_4 {
    meta:
       description = "Detects HAFNIUM ASPX files dropped on compromised servers"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.microsoft.com/security/blog/2021/03/02/hafnium-targeting-exchange-servers/"
       date = "2021-03-07"
       score = 85
@@ -222,7 +222,7 @@ rule APT_MAL_ASPX_HAFNIUM_Chopper_Mar21_4 {
 rule APT_HAFNIUM_ForensicArtefacts_WER_Mar21_1 {
    meta:
       description = "Detects a Windows Error Report (WER) that indicates and exploitation attempt of the Exchange server as described in CVE-2021-26857 after the corresponding patches have been applied. WER files won't be written upon successful exploitation before applying the patch. Therefore, this indicates an unsuccessful attempt."
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/cyb3rops/status/1368471533048446976"
       date = "2021-03-07"
       score = 40
@@ -238,7 +238,7 @@ rule APT_HAFNIUM_ForensicArtefacts_WER_Mar21_1 {
 rule APT_HAFNIUM_ForensicArtefacts_Cab_Recon_Mar21_1 {
    meta:
       description = "Detects suspicious CAB files used by HAFNIUM for recon activity"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://discuss.elastic.co/t/detection-and-response-for-hafnium-activity/266289/3?u=dstepanic"
       date = "2021-03-11"
       score = 70
@@ -281,7 +281,7 @@ rule WEBSHELL_Compiled_Webshell_Mar2021_1 {
 rule APT_MAL_ASP_DLL_HAFNIUM_Mar21_1 {
    meta:
       description = "Detects HAFNIUM compiled ASP.NET DLLs dropped on compromised servers"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.microsoft.com/security/blog/2021/03/02/hafnium-targeting-exchange-servers/"
       date = "2021-03-05"
       score = 65
@@ -344,7 +344,7 @@ rule WEBSHELL_HAFNIUM_CISA_10328929_02 : trojan webshell exploit CVE_2021_27065 
 rule WEBSHELL_ASPX_FileExplorer_Mar21_1 {
    meta:
       description = "Detects Chopper like ASPX Webshells"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2021-03-31"
       score = 80
@@ -379,7 +379,7 @@ rule WEBSHELL_ASPX_FileExplorer_Mar21_1 {
 rule WEBSHELL_ASPX_Chopper_Like_Mar21_1 {
    meta:
       description = "Detects Chopper like ASPX Webshells"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2021-03-31"
       score = 85

@@ -12,7 +12,7 @@ rule BadRabbit_Gen {
    meta:
       description = "Detects BadRabbit Ransomware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://pastebin.com/Y7pJv3tK"
       date = "2017-10-25"
       hash1 = "8ebc97e05c8e1073bda2efb6f4d00ad7e789260afa2c276f0c72740b838a0a93"
@@ -42,7 +42,7 @@ rule BadRabbit_Mimikatz_Comp {
    meta:
       description = "Auto-generated rule"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://pastebin.com/Y7pJv3tK"
       date = "2017-10-25"
       hash1 = "2f8c54f9fa8e47596a3beff0031f85360e56840c77f71c6a573ace6f46412035"

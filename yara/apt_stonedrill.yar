@@ -63,7 +63,7 @@ rule StoneDrill_main_sub {
 rule StoneDrill_BAT_1 {
    meta:
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       description = "Rule to detect Batch file from StoneDrill report"
       reference = "https://securelist.com/blog/research/77725/from-shamoon-to-stonedrill/"
    strings:
@@ -79,7 +79,7 @@ rule StoneDrill_BAT_1 {
 rule StoneDrill_Service_Install {
    meta:
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       description = "Rule to detect Batch file from StoneDrill report"
       reference = "https://securelist.com/blog/research/77725/from-shamoon-to-stonedrill/"
    strings:
@@ -95,7 +95,7 @@ rule StoneDrill_ntssrvr32 {
    meta:
       description = "Detects malware from StoneDrill threat report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist.com/blog/research/77725/from-shamoon-to-stonedrill/"
       date = "2017-03-07"
       modified = "2023-01-27"
@@ -116,7 +116,7 @@ rule StoneDrill_Malware_2 {
    meta:
       description = "Detects malware from StoneDrill threat report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist.com/blog/research/77725/from-shamoon-to-stonedrill/"
       date = "2017-03-07"
       hash1 = "69530d78c86031ce32583c6800f5ffc629acacb18aac4c8bb5b0e915fc4cc4db"
@@ -142,7 +142,7 @@ rule StoneDrill {
    meta:
       description = "Detects malware from StoneDrill threat report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist.com/blog/research/77725/from-shamoon-to-stonedrill/"
       date = "2017-03-07"
       super_rule = 1
@@ -166,7 +166,7 @@ rule StoneDrill_VBS_1 {
    meta:
       description = "Detects malware from StoneDrill threat report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist.com/blog/research/77725/from-shamoon-to-stonedrill/"
       date = "2017-03-07"
       hash1 = "0f4d608a87e36cb0dbf1b2d176ecfcde837070a2b2a049d532d3d4226e0c9587"

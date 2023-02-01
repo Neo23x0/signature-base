@@ -14,7 +14,7 @@ rule TurlaMosquito_Mal_1 {
    meta:
       description = "Detects malware sample from Turla Mosquito report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.welivesecurity.com/wp-content/uploads/2018/01/ESET_Turla_Mosquito.pdf"
       date = "2018-02-22"
       hash1 = "b295032919143f5b6b3c87ad22bcf8b55ecc9244aa9f6f88fc28f36f5aa2925e"
@@ -32,7 +32,7 @@ rule TurlaMosquito_Mal_2 {
    meta:
       description = "Detects malware sample from Turla Mosquito report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.welivesecurity.com/wp-content/uploads/2018/01/ESET_Turla_Mosquito.pdf"
       date = "2018-02-22"
       hash1 = "68c6e9dea81f082601ae5afc41870cea3f71b22bfc19bcfbc61d84786e481cb4"
@@ -53,7 +53,7 @@ rule TurlaMosquito_Mal_3 {
    meta:
       description = "Detects malware sample from Turla Mosquito report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.welivesecurity.com/wp-content/uploads/2018/01/ESET_Turla_Mosquito.pdf"
       date = "2018-02-22"
       hash1 = "443cd03b37fca8a5df1bbaa6320649b441ca50d1c1fcc4f5a7b94b95040c73d1"
@@ -77,7 +77,7 @@ rule TurlaMosquito_Mal_4 {
    meta:
       description = "Detects malware sample from Turla Mosquito report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.welivesecurity.com/wp-content/uploads/2018/01/ESET_Turla_Mosquito.pdf"
       date = "2018-02-22"
       hash1 = "b362b235539b762734a1833c7e6c366c1b46474f05dc17b3a631b3bff95a5eec"
@@ -89,7 +89,7 @@ rule TurlaMosquito_Mal_5 {
    meta:
       description = "Detects malware sample from Turla Mosquito report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.welivesecurity.com/wp-content/uploads/2018/01/ESET_Turla_Mosquito.pdf"
       date = "2018-02-22"
       hash1 = "26a1a42bc74e14887616f9d6048c17b1b4231466716a6426e7162426e1a08030"
@@ -101,7 +101,7 @@ rule TurlaMosquito_Mal_6 {
    meta:
       description = "Detects malware sample from Turla Mosquito report"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.welivesecurity.com/wp-content/uploads/2018/01/ESET_Turla_Mosquito.pdf"
       date = "2018-02-22"
       hash1 = "b79cdf929d4a340bdd5f29b3aeccd3c65e39540d4529b64e50ebeacd9cdee5e9"
@@ -123,7 +123,7 @@ rule TurlaMosquito_Mal_6 {
 rule APT_TurlaMosquito_MAL_Oct22_1 {
    meta:
       description = "Detects Turla Mosquito malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.welivesecurity.com/wp-content/uploads/2018/01/ESET_Turla_Mosquito.pdf"
       date = "2022-10-25"
       score = 80

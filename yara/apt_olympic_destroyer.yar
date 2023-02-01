@@ -14,7 +14,7 @@ rule Destructive_Ransomware_Gen1 {
    meta:
       description = "Detects destructive malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "http://blog.talosintelligence.com/2018/02/olympic-destroyer.html"
       date = "2018-02-12"
       hash1 = "ae9a4e244a9b3c77d489dee8aeaf35a7c3ba31b210e76d81ef2e91790f052c85"
@@ -30,7 +30,7 @@ rule OlympicDestroyer_Gen2 {
    meta:
       description = "Detects Olympic Destroyer malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "http://blog.talosintelligence.com/2018/02/olympic-destroyer.html"
       date = "2018-02-12"
       hash1 = "d934cb8d0eadb93f8a57a9b8853c5db218d5db78c16a35f374e413884d915016"

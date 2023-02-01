@@ -14,7 +14,7 @@ rule TSCookie_RAT {
    meta:
       description = "Detects TSCookie RAT"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "http://blog.jpcert.or.jp/2018/03/malware-tscooki-7aa0.html"
       date = "2018-03-06"
       hash1 = "2bd13d63797864a70b775bd1994016f5052dc8fd1fd83ce1c13234b5d304330d"

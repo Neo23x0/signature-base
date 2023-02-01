@@ -4,7 +4,7 @@ rule MAL_Floxif_Generic {
    meta:
       description = "Detects Floxif Malware"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2018-05-11"
       score = 80
@@ -21,7 +21,7 @@ rule MAL_CN_FlyStudio_May18_1 {
    meta:
       description = "Detects malware / hacktool detected in May 2018"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2018-05-11"
       hash1 = "b85147366890598518d4f277d44506eef871fd7fc6050d8f8e68889cae066d9e"

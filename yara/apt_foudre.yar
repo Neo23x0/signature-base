@@ -14,7 +14,7 @@ rule Foudre_Backdoor_1 {
    meta:
       description = "Detects Foudre Backdoor"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/Nbqbt6"
       date = "2017-08-01"
       hash1 = "7e73a727dc8f3c48e58468c3fd0a193a027d085f25fa274a6e187cf503f01f74"
@@ -30,7 +30,7 @@ rule Foudre_Backdoor_1 {
 rule Foudre_Backdoor_Dropper_1 {
    meta:
       description = "Detects Foudre Backdoor"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/Nbqbt6"
       date = "2017-08-01"
       modified = "2023-01-07"
@@ -52,7 +52,7 @@ rule Foudre_Backdoor_Component_1 {
    meta:
       description = "Detects Foudre Backdoor"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/Nbqbt6"
       date = "2017-08-01"
       modified = "2023-01-07"
@@ -75,7 +75,7 @@ rule Foudre_Backdoor_SFX {
    meta:
       description = "Detects Foudre Backdoor SFX"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/Nbqbt6"
       date = "2017-08-01"
       hash1 = "2b37ce9e31625d8b9e51b88418d4bf38ed28c77d98ca59a09daab01be36d405a"

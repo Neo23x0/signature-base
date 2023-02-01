@@ -12,7 +12,7 @@
 rule APT_WebShell_Tiny_1 {
    meta:
       description = "Detetcs a tiny webshell involved in the Australian Parliament House network compromise"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/cyb3rops/status/1097423665472376832"
       date = "2019-02-18"
    strings:
@@ -24,7 +24,7 @@ rule APT_WebShell_Tiny_1 {
 rule APT_WebShell_AUS_Tiny_2 {
    meta:
       description = "Detetcs a tiny webshell involved in the Australian Parliament House network compromise"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/cyb3rops/status/1097423665472376832"
       date = "2019-02-18"
       hash1 = "0d6209d86f77a0a69451b0f27b476580c14e0cda15fa6a5003aab57a93e7e5a5"
@@ -38,7 +38,7 @@ rule APT_WebShell_AUS_Tiny_2 {
 rule APT_WebShell_AUS_JScript_3 {
    meta:
       description = "Detetcs a webshell involved in the Australian Parliament House network compromise"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/cyb3rops/status/1097423665472376832"
       date = "2019-02-18"
       hash1 = "7ac6f973f7fccf8c3d58d766dec4ab7eb6867a487aa71bc11d5f05da9322582d"
@@ -53,7 +53,7 @@ rule APT_WebShell_AUS_JScript_3 {
 rule APT_WebShell_AUS_4 {
    meta:
       description = "Detetcs a webshell involved in the Australian Parliament House network compromise"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/cyb3rops/status/1097423665472376832"
       date = "2019-02-18"
       hash1 = "83321c02339bb51735fbcd9a80c056bd3b89655f3dc41e5fef07ca46af09bb71"
@@ -69,7 +69,7 @@ rule APT_WebShell_AUS_4 {
 rule APT_Script_AUS_4 {
    meta:
       description = "Detetcs a script involved in the Australian Parliament House network compromise"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/cyb3rops/status/1097423665472376832"
       date = "2019-02-18"
       hash1 = "fdf15f388a511a63fbad223e6edb259abdd4009ec81fcc87ce84f0f2024c8057"
@@ -87,7 +87,7 @@ rule APT_Script_AUS_4 {
 rule APT_WebShell_AUS_5 {
    meta:
       description = "Detetcs a webshell involved in the Australian Parliament House network compromise"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/cyb3rops/status/1097423665472376832"
       date = "2019-02-18"
       hash1 = "54a17fb257db2d09d61af510753fd5aa00537638a81d0a8762a5645b4ef977e4"
@@ -107,7 +107,7 @@ rule APT_WebShell_AUS_5 {
 rule HKTL_LazyCat_LogEraser {
    meta:
       description = "Detetcs a tool used in the Australian Parliament House network compromise"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/cyb3rops/status/1097423665472376832"
       date = "2019-02-18"
       hash1 = "1c113dce265e4d744245a7c55dadc80199ae972a9e0ecbd0c5ced57067cf755b"
@@ -130,7 +130,7 @@ rule HKTL_LazyCat_LogEraser {
 rule HKTL_PowerKatz_Feb19_1 {
    meta:
       description = "Detetcs a tool used in the Australian Parliament House network compromise"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/cyb3rops/status/1097423665472376832"
       date = "2019-02-18"
    strings:
@@ -146,7 +146,7 @@ rule HKTL_PowerKatz_Feb19_1 {
 rule HKTL_Unknown_Feb19_1 {
    meta:
       description = "Detetcs a tool used in the Australian Parliament House network compromise"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/cyb3rops/status/1097423665472376832"
       date = "2019-02-18"
    strings:

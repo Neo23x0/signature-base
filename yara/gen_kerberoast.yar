@@ -9,7 +9,7 @@ rule GetUserSPNs_VBS {
 	meta:
 		description = "Auto-generated rule - file GetUserSPNs.vbs"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/skelsec/PyKerberoast"
 		date = "2016-05-21"
 		hash1 = "8dcb568d475fd8a0557e70ca88a262b7c06d0f42835c855b52e059c0f5ce9237"
@@ -25,7 +25,7 @@ rule GetUserSPNs_PS1 {
 	meta:
 		description = "Auto-generated rule - file GetUserSPNs.ps1"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/skelsec/PyKerberoast"
 		date = "2016-05-21"
 		hash1 = "1b69206b8d93ac86fe364178011723f4b1544fff7eb1ea544ab8912c436ddc04"
@@ -42,7 +42,7 @@ rule kerberoast_PY {
 	meta:
 		description = "Auto-generated rule - file kerberoast.py"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/skelsec/PyKerberoast"
 		date = "2016-05-21"
 		hash1 = "73155949b4344db2ae511ec8cab85da1ccbf2dfec3607fb9acdc281357cdf380"

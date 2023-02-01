@@ -13,7 +13,7 @@ rule EXE_cloaked_as_TXT {
 	meta:
 		description = "Executable with TXT extension"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 	condition:
 		uint16(0) == 0x5a4d 					// Executable
 		and filename matches /\.txt$/is   // TXT extension (case insensitive)
@@ -23,7 +23,7 @@ rule EXE_extension_cloaking {
 	meta:
 		description = "Executable showing different extension (Windows default 'hide known extension')"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 	condition:
 		filename matches /\.txt\.exe$/is or	// Special file extensions
 		filename matches /\.pdf\.exe$/is		// Special file extensions
@@ -33,7 +33,7 @@ rule Cloaked_RAR_File {
 	meta:
 		description = "RAR file cloaked by a different extension"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 	condition:
 		uint32be(0) == 0x52617221							// RAR File Magic Header
 		and not filename matches /(rarnew.dat|\.rar)$/is	// not the .RAR extension
@@ -45,7 +45,7 @@ rule Base64_encoded_Executable : FILE {
 	meta:
 		description = "Detects an base64 encoded executable (often embedded)"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2015-05-28"
 		score = 40
 	strings:
@@ -68,7 +68,7 @@ rule Gen_Base64_EXE: HIGHVOL {
    meta:
       description = "Detects Base64 encoded Executable in Executable"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-04-21"
    strings:
@@ -88,7 +88,7 @@ rule Binary_Drop_Certutil {
 	meta:
 		description = "Drop binary as base64 encoded cert trick"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://goo.gl/9DNn8q"
 		date = "2015-07-15"
 		score = 70
@@ -104,7 +104,7 @@ rule StegoKatz {
 	meta:
 		description = "Encoded Mimikatz in other file types"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://goo.gl/jWPBBY"
 		date = "2015-09-11"
 		score = 70
@@ -119,7 +119,7 @@ rule Obfuscated_VBS_April17 {
    meta:
       description = "Detects cloaked Mimikatz in VBS obfuscation"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-04-21"
    strings:
@@ -132,7 +132,7 @@ rule Obfuscated_JS_April17 {
    meta:
       description = "Detects cloaked Mimikatz in JS obfuscation"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-04-21"
    strings:

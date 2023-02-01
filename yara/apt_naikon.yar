@@ -2,7 +2,7 @@
 rule MAL_Backdoor_Naikon_APT_Sample1 {
    meta:
       description = "Detects backdoors related to the Naikon APT"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/7vHyvh"
       date = "2015-05-14"
 		modified = "2023-01-06"

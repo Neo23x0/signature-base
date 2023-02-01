@@ -4,7 +4,7 @@ rule FiveEyes_QUERTY_Malwareqwerty_20121 {
 	meta:
 		description = "FiveEyes QUERTY Malware - file 20121.xml"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://www.spiegel.de/media/media-35668.pdf"
 		date = "2015/01/18"
 		hash = "8263fb58350f3b1d3c4220a602421232d5e40726"
@@ -28,7 +28,7 @@ rule FiveEyes_QUERTY_Malwaresig_20123_sys {
 	meta:
 		description = "FiveEyes QUERTY Malware - file 20123.sys.bin"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://www.spiegel.de/media/media-35668.pdf"
 		date = "2015/01/18"
 		hash = "a0f0087bd1f8234d5e847363d7e15be8a3e6f099"
@@ -46,7 +46,7 @@ rule FiveEyes_QUERTY_Malwaresig_20123_cmdDef {
 	meta:
 		description = "FiveEyes QUERTY Malware - file 20123_cmdDef.xml"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://www.spiegel.de/media/media-35668.pdf"
 		date = "2015/01/18"
 		hash = "7b08fc77629f6caaf8cc4bb5f91be6b53e19a3cd"
@@ -80,7 +80,7 @@ rule FiveEyes_QUERTY_Malwaresig_20121_dll {
 	meta:
 		description = "FiveEyes QUERTY Malware - file 20121.dll.bin"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://www.spiegel.de/media/media-35668.pdf"
 		date = "2015/01/18"
 		hash = "89504d91c5539a366e153894c1bc17277116342b"
@@ -94,7 +94,7 @@ rule FiveEyes_QUERTY_Malwareqwerty_20123 {
 	meta:
 		description = "FiveEyes QUERTY Malware - file 20123.xml"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://www.spiegel.de/media/media-35668.pdf"
 		date = "2015/01/18"
 		hash = "edc7228b2e27df9e7ff9286bddbf4e46adb51ed9"
@@ -119,7 +119,7 @@ rule FiveEyes_QUERTY_Malwaresig_20120_dll {
 	meta:
 		description = "FiveEyes QUERTY Malware - file 20120.dll.bin"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://www.spiegel.de/media/media-35668.pdf"
 		date = "2015/01/18"
 		hash = "6811bfa3b8cda5147440918f83c40237183dbd25"
@@ -153,7 +153,7 @@ rule FiveEyes_QUERTY_Malwaresig_20120_cmdDef {
 	meta:
 		description = "FiveEyes QUERTY Malware - file 20120_cmdDef.xml"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://www.spiegel.de/media/media-35668.pdf"
 		date = "2015/01/18"
 		hash = "cda9ceaf0a39d6b8211ce96307302a53dfbd71ea"
@@ -187,7 +187,7 @@ rule FiveEyes_QUERTY_Malwareqwerty_20120 {
 	meta:
 		description = "FiveEyes QUERTY Malware - file 20120.xml"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://www.spiegel.de/media/media-35668.pdf"
 		date = "2015/01/18"
 		hash = "597082f05bfd3225587d480c30f54a7a1326a892"
@@ -211,7 +211,7 @@ rule FiveEyes_QUERTY_Malwaresig_20121_cmdDef {
 	meta:
 		description = "FiveEyes QUERTY Malware - file 20121_cmdDef.xml"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "http://www.spiegel.de/media/media-35668.pdf"
 		date = "2015/01/18"
 		hash = "64ac06aa4e8d93ea6063eade7ce9687b1d035907"

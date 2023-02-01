@@ -2,7 +2,7 @@
 rule SUSP_BAT_Aux_Jan20_1 {
    meta:
       description = "Detects BAT file often dropped to cleanup temp dirs during infection"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://medium.com/@quoscient/the-chicken-keeps-laying-new-eggs-uncovering-new-gc-maas-tools-used-by-top-tier-threat-actors-531d80a6b4e9"
       date = "2020-01-29"
       score = 65

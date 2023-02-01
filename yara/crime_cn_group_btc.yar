@@ -11,7 +11,7 @@ rule BTC_Miner_lsass1_chrome_2 {
    meta:
       description = "Detects a Bitcoin Miner"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research - CN Actor"
       date = "2017-06-22"
       super_rule = 1
@@ -29,7 +29,7 @@ rule CN_Actor_RA_Tool_Ammyy_mscorsvw {
    meta:
       description = "Detects Ammyy remote access tool"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research - CN Actor"
       date = "2017-06-22"
       hash1 = "1831806fc27d496f0f9dcfd8402724189deaeb5f8bcf0118f3d6484d0bdee9ed"
@@ -46,7 +46,7 @@ rule CN_Actor_AmmyyAdmin {
    meta:
       description = "Detects Ammyy Admin Downloader"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research - CN Actor"
       date = "2017-06-22"
       score = 60

@@ -13,7 +13,7 @@ rule ZxShell_Related_Malware_CN_Group_Jul17_1 {
    meta:
       description = "Detects a ZxShell related sample from a CN threat group"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://blogs.rsa.com/cat-phishing/"
       date = "2017-07-08"
       hash1 = "ef56c2609bc1b90f3e04745890235e6052a4be94e35e38b6f69b64fb17a7064e"
@@ -32,7 +32,7 @@ rule ZxShell_Related_Malware_CN_Group_Jul17_2 {
    meta:
       description = "Detects a ZxShell related sample from a CN threat group"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://blogs.rsa.com/cat-phishing/"
       date = "2017-07-08"
       hash1 = "204273675526649b7243ee48efbb7e2bc05239f7f9015fbc4fb65f0ada64759e"
@@ -59,7 +59,7 @@ rule ZxShell_Related_Malware_CN_Group_Jul17_3 {
    meta:
       description = "Detects a ZxShell related sample from a CN threat group"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://blogs.rsa.com/cat-phishing/"
       date = "2017-07-08"
       hash1 = "2e5cf8c785dc081e5c2b43a4a785713c0ae032c5f86ccbc7abf5c109b8854ed7"
@@ -74,7 +74,7 @@ rule ZxShell_Jul17 {
    meta:
       description = "Detects a ZxShell - CN threat group"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://blogs.rsa.com/cat-phishing/"
       date = "2017-07-08"
       hash1 = "5d2a4cde9fa7c2fdbf39b2e2ffd23378d0c50701a3095d1e91e3cf922d7b0b16"
@@ -112,7 +112,7 @@ rule ZXshell_20171211_chrsben {
    meta:
       description = "Detects ZxShell variant surfaced in Dec 17"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/snc85M"
       date = "2017-12-11"
       hash1 = "dd01e7a1c9b20d36ea2d961737780f2c0d56005c370e50247e38c5ca80dcaa4f"

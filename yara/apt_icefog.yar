@@ -11,7 +11,7 @@
 rule IceFog_Malware_Feb18_1 {
    meta:
       description = "Detects IceFog malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/ClearskySec/status/968104465818669057"
       date = "2018-02-26"
       modified = "2023-01-06"

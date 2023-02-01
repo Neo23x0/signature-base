@@ -3,7 +3,7 @@ rule Office_AutoOpen_Macro {
 	meta:
 		description = "Detects an Microsoft Office file that contains the AutoOpen Macro function"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2015-05-28"
 		score = 40
 		hash1 = "4d00695d5011427efc33c9722c61ced2"
@@ -28,7 +28,7 @@ rule Office_as_MHTML {
 	meta:
 		description = "Detects an Microsoft Office saved as a MHTML file (false positives are possible but rare; many matches on CVE-2012-0158)"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		date = "2015-05-28"
 		score = 40
 		reference = "https://www.trustwave.com/Resources/SpiderLabs-Blog/Malicious-Macros-Evades-Detection-by-Using-Unusual-File-Format/"
@@ -51,7 +51,7 @@ rule Docm_in_PDF {
    meta:
       description = "Detects an embedded DOCM in PDF combined with OpenAction"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-05-15"
    strings:

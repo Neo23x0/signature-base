@@ -26,7 +26,7 @@ rule EXPL_CVE_2021_40444_Document_Rels_XML {
 rule EXPL_MAL_MalDoc_OBFUSCT_MHTML_Sep21_1 {
    meta:
       description = "Detects suspicious office reference files including an obfuscated MHTML reference exploiting CVE-2021-40444"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/decalage2/status/1438946225190014984?s=20"
       date = "2021-09-18"
       score = 90
@@ -60,7 +60,7 @@ rule EXPL_XML_Encoded_CVE_2021_40444 {
 /* not directly related to CVE-2021-40444 */
 rule SUSP_OBFUSC_Indiators_XML_OfficeDoc_Sep21_1 : Windows CVE {
    meta:
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       description = "Detects suspicious encodings in fields used in reference files found in weaponized MS Office documents"
       reference = "https://twitter.com/sudosev/status/1439205606129377282"
       date = "2021-09-18"
@@ -78,7 +78,7 @@ rule SUSP_OBFUSC_Indiators_XML_OfficeDoc_Sep21_1 : Windows CVE {
 
 rule SUSP_OBFUSC_Indiators_XML_OfficeDoc_Sep21_2 : Windows CVE {
    meta:
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       description = "Detects suspicious encodings in fields used in reference files found in weaponized MS Office documents"
       reference = "https://twitter.com/sudosev/status/1439205606129377282"
       date = "2021-09-18"

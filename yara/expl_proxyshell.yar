@@ -2,7 +2,7 @@
 rule EXPL_Exchange_ProxyShell_Failed_Aug21_1 : SCRIPT {
    meta:
       description = "Detects ProxyShell exploitation attempts in log files"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       score = 50
       reference = "https://blog.orange.tw/2021/08/proxylogon-a-new-attack-surface-on-ms-exchange-part-1.html"
       date = "2021-08-08"
@@ -17,7 +17,7 @@ rule EXPL_Exchange_ProxyShell_Failed_Aug21_1 : SCRIPT {
 rule EXPL_Exchange_ProxyShell_Successful_Aug21_1 : SCRIPT {
    meta:
       description = "Detects successful ProxyShell exploitation attempts in log files"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       score = 85
       reference = "https://blog.orange.tw/2021/08/proxylogon-a-new-attack-surface-on-ms-exchange-part-1.html"
       date = "2021-08-08"
@@ -34,7 +34,7 @@ rule EXPL_Exchange_ProxyShell_Successful_Aug21_1 : SCRIPT {
 rule WEBSHELL_ASPX_ProxyShell_Aug21_2 {
    meta:
       description = "Detects webshells dropped by ProxyShell exploitation based on their file header (must be PST), size and content"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.bleepingcomputer.com/news/microsoft/microsoft-exchange-servers-are-getting-hacked-via-proxyshell-exploits/"
       date = "2021-08-13"
    strings:
@@ -78,7 +78,7 @@ rule WEBSHELL_ASPX_ProxyShell_Sep21_1 {
 rule APT_IIS_Config_ProxyShell_Artifacts {
    meta:
       description = "Detects virtual directory configured in IIS pointing to a ProgramData folder (as found in attacks against Exchange servers in August 2021)"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.huntress.com/blog/rapid-response-microsoft-exchange-servers-still-vulnerable-to-proxyshell-exploit"
       date = "2021-08-25"
       score = 90
@@ -102,7 +102,7 @@ rule APT_IIS_Config_ProxyShell_Artifacts {
 rule WEBSHELL_ASPX_ProxyShell_Exploitation_Aug21_1 {
    meta:
       description = "Detects unknown malicious loaders noticed in August 2021"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/VirITeXplorer/status/1430206853733097473"
       date = "2021-08-25"
       score = 90
@@ -172,7 +172,7 @@ rule WEBSHELL_Mailbox_Export_PST_ProxyShell_Aug26 {
 rule SUSP_IIS_Config_ProxyShell_Artifacts {
    meta:
       description = "Detects suspicious virtual directory configured in IIS pointing to a ProgramData folder (as found in attacks against Exchange servers in August 2021)"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.huntress.com/blog/rapid-response-microsoft-exchange-servers-still-vulnerable-to-proxyshell-exploit"
       date = "2021-08-25"
       score = 70
@@ -188,7 +188,7 @@ rule SUSP_IIS_Config_ProxyShell_Artifacts {
 rule SUSP_IIS_Config_VirtualDir {
    meta:
       description = "Detects suspicious virtual directory configured in IIS pointing to a User folder"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.huntress.com/blog/rapid-response-microsoft-exchange-servers-still-vulnerable-to-proxyshell-exploit"
       date = "2021-08-25"
       modified = "2022-09-17"
@@ -240,7 +240,7 @@ rule SUSP_ASPX_PossibleDropperArtifact_Aug21 {
 rule WEBSHELL_ProxyShell_Exploitation_Nov21_1 {
    meta:
       description = "Detects webshells dropped by DropHell malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.deepinstinct.com/blog/do-not-exchange-it-has-a-shell-inside"
       date = "2021-11-01"
       score = 85

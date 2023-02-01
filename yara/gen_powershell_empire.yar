@@ -10,7 +10,7 @@ rule Empire_Invoke_BypassUAC {
 	meta:
 		description = "Empire - a pure PowerShell post-exploitation agent - file Invoke-BypassUAC.ps1"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/PowerShellEmpire/Empire"
 		date = "2015-08-06"
 		score = 70
@@ -28,7 +28,7 @@ rule Empire_lib_modules_trollsploit_message {
 	meta:
 		description = "Empire - a pure PowerShell post-exploitation agent - file message.py"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/PowerShellEmpire/Empire"
 		date = "2015-08-06"
 		score = 70
@@ -46,7 +46,7 @@ rule Empire_Persistence {
 	meta:
 		description = "Empire - a pure PowerShell post-exploitation agent - file Persistence.psm1"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/PowerShellEmpire/Empire"
 		date = "2015-08-06"
 		score = 70
@@ -63,7 +63,7 @@ rule Empire_portscan {
 	meta:
 		description = "Empire - a pure PowerShell post-exploitation agent - file portscan.py"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/PowerShellEmpire/Empire"
 		date = "2015-08-06"
 		score = 70
@@ -79,7 +79,7 @@ rule Empire_Invoke_Shellcode {
 	meta:
 		description = "Empire - a pure PowerShell post-exploitation agent - file Invoke-Shellcode.ps1"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/PowerShellEmpire/Empire"
 		date = "2015-08-06"
 		score = 70
@@ -96,7 +96,7 @@ rule Empire_Invoke_Mimikatz {
 	meta:
 		description = "Empire - a pure PowerShell post-exploitation agent - file Invoke-Mimikatz.ps1"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/PowerShellEmpire/Empire"
 		date = "2015-08-06"
 		score = 70
@@ -113,7 +113,7 @@ rule Empire_lib_modules_credentials_mimikatz_pth {
 	meta:
 		description = "Empire - a pure PowerShell post-exploitation agent - file pth.py"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/PowerShellEmpire/Empire"
 		date = "2015-08-06"
 		score = 70
@@ -129,7 +129,7 @@ rule Empire_Write_HijackDll {
 	meta:
 		description = "Empire - a pure PowerShell post-exploitation agent - file Write-HijackDll.ps1"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/PowerShellEmpire/Empire"
 		date = "2015-08-06"
 		score = 70
@@ -146,7 +146,7 @@ rule Empire_skeleton_key {
 	meta:
 		description = "Empire - a pure PowerShell post-exploitation agent - file skeleton_key.py"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/PowerShellEmpire/Empire"
 		date = "2015-08-06"
 		score = 70
@@ -164,7 +164,7 @@ rule Empire_invoke_wmi {
 	meta:
 		description = "Empire - a pure PowerShell post-exploitation agent - file invoke_wmi.py"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://github.com/PowerShellEmpire/Empire"
 		date = "2015-08-06"
 		score = 70

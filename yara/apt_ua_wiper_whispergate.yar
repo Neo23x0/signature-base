@@ -2,7 +2,7 @@
 rule APT_HKTL_Wiper_WhisperGate_Jan22_1 {
    meta:
       description = "Detects unknown wiper malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.microsoft.com/security/blog/2022/01/15/destructive-malware-targeting-ukrainian-organizations/"
       date = "2022-01-16"
       score = 85
@@ -24,7 +24,7 @@ rule APT_HKTL_Wiper_WhisperGate_Jan22_1 {
 rule APT_HKTL_Wiper_WhisperGate_Jan22_2 {
    meta:
       description = "Detects unknown wiper malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.microsoft.com/security/blog/2022/01/15/destructive-malware-targeting-ukrainian-organizations/"
       date = "2022-01-16"
       score = 90
@@ -57,7 +57,7 @@ rule APT_HKTL_Wiper_WhisperGate_Jan22_2 {
 rule APT_HKTL_Wiper_WhisperGate_Stage3_Jan22 {
    meta:
       description = "Detects reversed stage3 related to Ukrainian wiper malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/juanandres_gs/status/1482827018404257792"
       date = "2022-01-16"
       hash1 = "9ef7dbd3da51332a78eff19146d21c82957821e464e8133e9594a07d716d892d"
@@ -73,7 +73,7 @@ rule APT_HKTL_Wiper_WhisperGate_Stage3_Jan22 {
 rule MAL_OBFUSC_Unknown_Jan22_1 {
    meta:
       description = "Detects samples similar to reversed stage3 found in Ukrainian wiper incident named WhisperGate"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/juanandres_gs/status/1482827018404257792"
       date = "2022-01-16"
       hash1 = "9ef7dbd3da51332a78eff19146d21c82957821e464e8133e9594a07d716d892d"
@@ -99,7 +99,7 @@ rule MAL_OBFUSC_Unknown_Jan22_1 {
 rule MAL_Unknown_Discord_Characteristics_Jan22_1 {
    meta:
       description = "Detects unknown malware with a few indicators also found in Wiper malware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.microsoft.com/security/blog/2022/01/15/destructive-malware-targeting-ukrainian-organizations/"
       date = "2022-01-16"
       score = 75

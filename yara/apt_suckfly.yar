@@ -15,7 +15,7 @@ rule Suckfly_Nidiran_Gen_1 {
    meta:
       description = "Detects Suckfly Nidiran Trojan"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.symantec.com/connect/blogs/suckfly-revealing-secret-life-your-code-signing-certificates"
       date = "2018-01-28"
       hash1 = "ac7d7c676f58ebfa5def9b84553f00f283c61e4a310459178ea9e7164004e734"
@@ -31,7 +31,7 @@ rule Suckfly_Nidiran_Gen_2 {
    meta:
       description = "Detects Suckfly Nidiran Trojan"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.symantec.com/connect/blogs/suckfly-revealing-secret-life-your-code-signing-certificates"
       date = "2018-01-28"
       hash1 = "b53a316a03b46758cb128e5045dab2717cb36e7b5eb1863ce2524d4f69bc2cab"
@@ -60,7 +60,7 @@ rule Suckfly_Nidiran_Gen_3 {
    meta:
       description = "Detects Suckfly Nidiran Trojan"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.symantec.com/connect/blogs/suckfly-revealing-secret-life-your-code-signing-certificates"
       date = "2018-01-28"
       hash1 = "c2022e1114b162e79e44d974fd310d53e1bbdd8cb4f217553c1227cafed78855"

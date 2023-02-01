@@ -2,7 +2,7 @@
 rule MAL_RANSOM_Darkside_May21_1 {
    meta:
       description = "Detects Darkside Ransomware"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://app.any.run/tasks/020c1740-717a-4191-8917-5819aa25f385/"
       date = "2021-05-10"
       hash1 = "ec368752c2cf3b23efbfa5705f9e582fc9d6766435a7b8eea8ef045082c6fbce"

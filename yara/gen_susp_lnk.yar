@@ -2,7 +2,7 @@
 rule SUSP_LNK_Big_Link_File {
    meta:
       description = "Detects a suspiciously big LNK file - maybe with embedded content"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2018-05-15"
       score = 65

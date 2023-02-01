@@ -11,7 +11,7 @@ rule p0wnedPowerCat {
    meta:
       description = "p0wnedShell Runspace Post Exploitation Toolkit - file p0wnedPowerCat.cs"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/Cn33liz/p0wnedShell"
       date = "2017-01-14"
       hash1 = "6a3ba991d3b5d127c4325bc194b3241dde5b3a5853b78b4df1bce7cbe87c0fdf"
@@ -31,7 +31,7 @@ rule Hacktool_Strings_p0wnedShell : FILE {
    meta:
       description = "Detects strings found in Runspace Post Exploitation Toolkit"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/Cn33liz/p0wnedShell"
       date = "2017-01-14"
       modified = "2022-07-29"
@@ -62,7 +62,7 @@ rule p0wnedPotato {
    meta:
       description = "p0wnedShell Runspace Post Exploitation Toolkit - file p0wnedPotato.cs"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/Cn33liz/p0wnedShell"
       date = "2017-01-14"
       hash1 = "aff2b694a01b48ef96c82daf387b25845abbe01073b76316f1aab3142fdb235b"
@@ -80,7 +80,7 @@ rule p0wnedExploits {
    meta:
       description = "p0wnedShell Runspace Post Exploitation Toolkit - file p0wnedExploits.cs"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/Cn33liz/p0wnedShell"
       date = "2017-01-14"
       hash1 = "54548e7848e742566f5596d8f02eca1fd2cbfeae88648b01efb7bab014b9301b"
@@ -94,7 +94,7 @@ rule p0wnedExploits {
 rule p0wnedShellx64 {
    meta:
       description = "p0wnedShell Runspace Post Exploitation Toolkit - file p0wnedShellx64.exe"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/Cn33liz/p0wnedShell"
       date = "2017-01-14"
       modified = "2021-09-15"
@@ -115,7 +115,7 @@ rule p0wnedListenerConsole {
    meta:
       description = "p0wnedShell Runspace Post Exploitation Toolkit - file p0wnedListenerConsole.cs"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/Cn33liz/p0wnedShell"
       date = "2017-01-14"
       hash1 = "d2d84e65fad966a8556696fdaab5dc8110fc058c9e9caa7ea78aa00921ae3169"
@@ -136,7 +136,7 @@ rule p0wnedBinaries {
    meta:
       description = "p0wnedShell Runspace Post Exploitation Toolkit - file p0wnedBinaries.cs"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/Cn33liz/p0wnedShell"
       date = "2017-01-14"
       hash1 = "fd7014625b58d00c6e54ad0e587c6dba5d50f8ca4b0f162d5af3357c2183c7a7"
@@ -156,7 +156,7 @@ rule p0wnedAmsiBypass {
    meta:
       description = "p0wnedShell Runspace Post Exploitation Toolkit - file p0wnedAmsiBypass.cs"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/Cn33liz/p0wnedShell"
       date = "2017-01-14"
       hash1 = "345e8e6f38b2914f4533c4c16421d372d61564a4275537e674a2ac3360b19284"
@@ -172,7 +172,7 @@ rule p0wnedShell_outputs {
    meta:
       description = "p0wnedShell Runspace Post Exploitation Toolkit - from files p0wnedShell.cs, p0wnedShell.cs"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/Cn33liz/p0wnedShell"
       date = "2017-01-14"
       super_rule = 1

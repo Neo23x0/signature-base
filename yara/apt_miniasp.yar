@@ -3,7 +3,7 @@ rule APT_Malware_CommentCrew_MiniASP {
 	meta:
 		description = "CommentCrew Malware MiniASP APT"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "VT Analysis"
 		date = "2015-06-03"
 		super_rule = 1

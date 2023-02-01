@@ -2,7 +2,7 @@
 rule MAL_Github_Repo_Compromise_MyJino_Ru_Aug22 {
    meta:
       description = "Detects URL mentioned in report on compromised Github repositories in August 2022"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/stephenlacy/status/1554697077430505473"
       date = "2022-08-03"
       score = 90

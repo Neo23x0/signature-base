@@ -11,7 +11,7 @@ rule CloudDuke_Malware {
 	meta:
 		description = "Detects CloudDuke Malware"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www.f-secure.com/weblog/archives/00002822.html"
 		date = "2015-07-22"
 		score = 60
@@ -41,7 +41,7 @@ rule CloudDuke_Malware {
 rule SFXRAR_Acrotray {
 	meta:
 		description = "Most likely a malicious file acrotray in SFX RAR / CloudDuke APT 5442.1.exe, 5442.2.exe"
-		author = "Florian Roth"
+		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www.f-secure.com/weblog/archives/00002822.html"
 		date = "2015-07-22"
 		super_rule = 1
