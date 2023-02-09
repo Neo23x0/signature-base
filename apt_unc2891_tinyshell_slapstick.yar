@@ -1,5 +1,4 @@
-
-rule APT_UNC2891_TinyShell_Backdoor {
+rule EXT_HKTL_MAL_TinyShell_Backdoor {
    meta:
       author = "Mandiant"
       description = "Detects Tiny Shell - an open-source UNIX backdoor"
@@ -28,7 +27,7 @@ rule APT_UNC2891_TinyShell_Backdoor {
       uint32(0) == 0x464c457f and 1 of ($sb*) and 10 of ($ss*)
 }
 
-rule APT_UNC2891_TinyShell_Backdoor_SPARC {
+rule EXT_HKTL_MAL_TinyShell_Backdoor_SPARC {
    meta:
       author = "Mandiant"
       description = "Detects Tiny Shell variant for SPARC - an open-source UNIX backdoor"
@@ -42,7 +41,7 @@ rule APT_UNC2891_TinyShell_Backdoor_SPARC {
       uint32(0) == 0x464C457F and (uint16(0x10) & 0x0200 == 0x0200) and (uint16(0x12) & 0x0200 == 0x0200) and 1 of them
 }
 
-rule APT_UNC2891_SLAPSTICK {
+rule EXT_APT_UNC2891_SLAPSTICK {
    meta:
       author = "Mandiant"
       description = "Detects SLAPSTICK malware used by UNC2891"
@@ -56,3 +55,4 @@ rule APT_UNC2891_SLAPSTICK {
    condition:
       (uint32(0) == 0x464c457f) and all of them
 }
+
