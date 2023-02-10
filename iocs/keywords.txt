@@ -11,8 +11,6 @@ WCE SERVICE
 eo.oe.kiwi
 <3 eo.oe
 mimilib
-mimikatz
-Mimikatz
 privilege::debug
 sekurlsa::LogonPasswords
 sekurlsa::logonpasswords
@@ -23,15 +21,6 @@ METERPRETER
 
 # Metasploit PsExec
 %COMSPEC% /C start %COMSPEC% /C \\WINDOWS\\Temp
-
-# Malicious keywords
-spoofing
-keylogger
-powersploit
-passdumper
-creddumper
-credentialdumper
-XScanPF
 
 # Javascript Windows Scripting Host - Suspicious - see http://goo.gl/6HRCbk
 wscript.exe /b /nologo /E:javascript
