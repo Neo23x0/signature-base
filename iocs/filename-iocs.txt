@@ -2990,7 +2990,6 @@ ystem32\\Microsoft\\Protect\\Windows\\svchost.exe;80
 # File names found in Alina PoS malware https://goo.gl/xgFtwr
 \\icsicli\.exe;45
 \\zcopy\.exe;45
-\\mrc\.exe;45
 \\RcpPing\.exe;45
 \\sthc\.exe;45
 \\certutils\.exe;45

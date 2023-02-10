@@ -30,21 +30,26 @@ rule WindowsCredentialEditor
        all of them
 }
 
-rule Amplia_Security_Tool
+rule HKTL_Amplia_Security_Tool
 {
     meta:
-      description = "Amplia Security Tool"
+      description = "Detects Amplia Security Tool like Windows Credential Editor"
       score = 60
       nodeepdive = 1
+      author = "Florian Roth"
+      date = "2013-01-01"
+      modified = "2023-02-10"
     strings:
       $a = "Amplia Security"
       $c = "getlsasrvaddr.exe"
       $d = "Cannot get PID of LSASS.EXE"
       $e = "extract the TGT session key"
       $f = "PPWDUMP_DATA"
-    condition: 1 of them
-}
 
+      $fp1 = ""
+    condition:
+      3 of them
+}
 /* pwdump/fgdump */
 
 rule PwDump
