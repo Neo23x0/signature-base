@@ -45,8 +45,6 @@ rule HKTL_Amplia_Security_Tool
       $d = "Cannot get PID of LSASS.EXE"
       $e = "extract the TGT session key"
       $f = "PPWDUMP_DATA"
-
-      $fp1 = ""
     condition:
       3 of them
 }
