@@ -1,3 +1,7 @@
+/* 
+   Combined rules with sigs for attacks on Vmware ESX noticed in Feb 23 and Dec 22
+   More rules are included in the FULL THOR Scanner
+*/
 
 rule MAL_RANSOM_SH_ESXi_Attacks_Feb23_1 {
    meta:
@@ -47,4 +51,46 @@ rule MAL_RANSOM_ELF_ESXi_Attacks_Feb23_1 {
          1 of ($x*)
          or 3 of them
       ) or 4 of them
+}
+
+rule APT_PY_ESXi_Backdoor_Dec22 {
+   meta:
+      description = "Detects Python backdoor found on ESXi servers"
+      author = "Florian Roth"
+      reference = "https://blogs.juniper.net/en-us/threat-research/a-custom-python-backdoor-for-vmware-esxi-servers"
+      date = "2022-12-14"
+      score = 85
+    strings:
+      $x1 = "cmd = str(base64.b64decode(encoded_cmd), " ascii
+      $x2 = "sh -i 2>&1 | nc %s %s > /tmp/" ascii
+    condition:
+      filesize < 10KB and 1 of them or all of them
+}
+
+rule APT_SH_ESXi_Backdoor_Dec22 {
+   meta:
+      description = "Detects malicious script found on ESXi servers"
+      author = "Florian Roth"
+      reference = "https://blogs.juniper.net/en-us/threat-research/a-custom-python-backdoor-for-vmware-esxi-servers"
+      date = "2022-12-14"
+      score = 75
+    strings:
+      $x1 = "mv /bin/hostd-probe.sh /bin/hostd-probe.sh.1" ascii fullword
+      $x2 = "/bin/nohup /bin/python -u /store/packages/vmtools.py" ascii
+      $x3 = "/bin/rm /bin/hostd-probe.sh.1"
+    condition:
+      filesize < 10KB and 1 of them
+}
+
+rule MAL_RANSOM_SH_ESXi_Attacks_Feb23_2 {
+   meta:
+      description = "Detects script used in ransomware attacks exploiting and encrypting ESXi servers"
+      author = "Florian Roth"
+      reference = "https://dev.to/xakrume/esxiargs-encryption-malware-launches-massive-attacks-against-vmware-esxi-servers-pfe"
+      date = "2023-02-06"
+      score = 85
+   strings:
+      $x1 = "echo \"START ENCRYPT: $file_e SIZE: $size_kb STEP SIZE: " ascii
+   condition:
+      filesize < 10KB and 1 of them
 }
