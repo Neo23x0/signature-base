@@ -1801,8 +1801,6 @@ Temp\\rad[A-F0-9]{5}\.exe;70
 \\stoicsurgeon;80
 \\strifeworld;80
 \\implant;40
-\\suctionchar;60
-\\Suctionchar;80
 \\vs\.attack;80
 \\ys\.ratload;80
 
@@ -3664,7 +3662,6 @@ C:\\Windows\\Temp\\Serv-U\.bat;90
 C:\\Windows\\Temp\\test\\current\.dmp;90
 
 # NSO Group Indicators https://github.com/AmnestyTech/investigations/tree/master/2021-07-18_nso
-/com\.apple\.CrashReporter\.plist;85
 /com\.apple\.softwareupdateservicesd\.plist;85
 /roleaccountd\.plist;85
 
