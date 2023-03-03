@@ -205,6 +205,7 @@ rule HKTL_mimikatz_icon {
         description = "Detects mimikatz icon in PE file"
         license = "Detection Rule License 1.1 https://github.com/SigmaHQ/Detection-Rule-License"
         author = "Arnim Rupp"
+        reference = "https://blog.gentilkiwi.com/mimikatz"
         date = "2023-02-18"
         score = 60
         hash1 = "61c0810a23580cf492a6ba4f7654566108331e7a4134c968c2d6a05261b2d8a1"
