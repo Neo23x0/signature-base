@@ -12,6 +12,7 @@ rule VULN_Linux_Sudoers_Commands {
 		author = "Arnim Rupp"
 		reference = "https://wiki.archlinux.org/title/sudo"
 		date = "2022-11-22"
+		modified = "2023-02-18"
 		score = 50
 	strings:
 		$command1 = "/sh " ascii
@@ -30,6 +31,8 @@ rule VULN_Linux_Sudoers_Commands {
 		$command14 = "/rvim " ascii
 		$command15 = "/more " ascii
 		$command16 = "/less " ascii
+		$command17 = "/dd " ascii
+		$command18 = "/mount " ascii
 
 	condition:
 		filename == "sudoers" or filepath contains "/etc/sudoers.d" and 
