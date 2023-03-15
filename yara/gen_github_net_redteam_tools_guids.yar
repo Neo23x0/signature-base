@@ -3947,3 +3947,58 @@ rule HKTL_NET_GUID_Certify {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
+rule HKTL_NET_GUID_Aladdin {
+    meta:
+        description = "Detects .NET red/black-team tools via typelibguid"
+        reference = "https://github.com/nettitude/Aladdin"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+        author = "Arnim Rupp (https://github.com/ruppde)"
+        date = "2023-03-13"
+    strings:
+        $typelibguid0 = "b2b3adb0-1669-4b94-86cb-6dd682ddbea3" ascii nocase wide
+        $typelibguid1 = "c47e4d64-cc7f-490e-8f09-055e009f33ba" ascii nocase wide
+        $typelibguid2 = "32a91b0f-30cd-4c75-be79-ccbd6345de99" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpLdapRelayScan {
+    meta:
+        description = "Detects .NET red/black-team tools via typelibguid"
+        reference = "https://github.com/klezVirus/SharpLdapRelayScan"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+        author = "Arnim Rupp (https://github.com/ruppde)"
+        date = "2023-03-15"
+    strings:
+        $typelibguid0 = "a93ee706-a71c-4cc1-bf37-f26c27825b68" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_LdapSignCheck {
+    meta:
+        description = "Detects .NET red/black-team tools via typelibguid"
+        reference = "https://github.com/cube0x0/LdapSignCheck"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+        author = "Arnim Rupp (https://github.com/ruppde)"
+        date = "2023-03-15"
+    strings:
+        $typelibguid0 = "21f398a9-bc35-4bd2-b906-866f21409744" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpSCCM {
+    meta:
+        description = "Detects .NET red/black-team tools via typelibguid"
+        reference = "https://github.com/Mayyhem/SharpSCCM"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+        author = "Arnim Rupp (https://github.com/ruppde)"
+        date = "2023-03-15"
+    strings:
+        $typelibguid0 = "03652836-898e-4a9f-b781-b7d86e750f60" ascii nocase wide
+        $typelibguid1 = "e4d9ef39-0fce-4573-978b-abf8df6aec23" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
