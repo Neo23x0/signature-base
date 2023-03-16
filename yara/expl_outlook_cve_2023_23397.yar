@@ -30,11 +30,12 @@ rule EXT_SUSP_Outlook_CVE_2023_23397_Exfil_IP_Mar23 {
       /* https://interoperability.blob.core.windows.net/files/MS-OXPROPS/%5bMS-OXPROPS%5d.pdf */
       /* PSETID_Appointment */
       $app = { 02 20 06 00 00 00 00 00 C0 00 00 00 00 00 00 46 }
+      /* PSETID_Meeting */
+      $meeting = { 90 DA D8 6E 0B 45 1B 10 98 DA 00 AA 00 3F 13 05 }
       /* PidLidReminderFileParameter */
       $rfp = { 1F 85 00 00 }
       /* \\ + IP UNC path prefix - wide formatted */
       $u1 = { 00 00 5C 00 5C 00 (3? 00 2E|3? 00 3? 00 2E|3? 00 3? 00 3? 00 2E) 00 (3? 00 2E|3? 00 3? 00 2E|3? 00 3? 00 3? 00 2E) 00 (3? 00 2E|3? 00 3? 00 2E|3? 00 3? 00 3? 00 2E) 00 (3? 00|3? 00 3? 00|3? 00 3? 00 3? 00) }
    condition:
-      uint16(0) == 0xCFD0 and
-      all of them
+      uint16(0) == 0xCFD0 and ($app or $meeting) and $rfp and $u1
 }
