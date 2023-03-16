@@ -51,23 +51,24 @@ rule EXPL_SUSP_Outlook_CVE_2023_23397_Exfil_IP_Mar23 {
    strings:
       /* https://interoperability.blob.core.windows.net/files/MS-OXPROPS/%5bMS-OXPROPS%5d.pdf */
       /* PSETID_Appointment */
-      $app = { 02 20 06 00 00 00 00 00 C0 00 00 00 00 00 00 46 }
+      $psetid_app = { 02 20 06 00 00 00 00 00 C0 00 00 00 00 00 00 46 }
       /* PSETID_Meeting */
-      $meeting = { 90 DA D8 6E 0B 45 1B 10 98 DA 00 AA 00 3F 13 05 }
+      $psetid_meeting = { 90 DA D8 6E 0B 45 1B 10 98 DA 00 AA 00 3F 13 05 }
       /* PidLidReminderFileParameter */
       $rfp = { 1F 85 00 00 }
       /* \\ + IP UNC path prefix - wide formatted */
-      $u1 = { 00 00 5C 00 5C 00 (3? 00 2E|3? 00 3? 00 2E|3? 00 3? 00 3? 00 2E) 00 (3? 00 2E|3? 00 3? 00 2E|3? 00 3? 00 3? 00 2E) 00 (3? 00 2E|3? 00 3? 00 2E|3? 00 3? 00 3? 00 2E) 00 (3? 00|3? 00 3? 00|3? 00 3? 00 3? 00) }
+      $u1 = { 5C 00 5C 00 (3? 00 2E|3? 00 3? 00 2E|3? 00 3? 00 3? 00 2E) 00 (3? 00 2E|3? 00 3? 00 2E|3? 00 3? 00 3? 00 2E) 00 (3? 00 2E|3? 00 3? 00 2E|3? 00 3? 00 3? 00 2E) 00 (3? 00|3? 00 3? 00|3? 00 3? 00 3? 00) }
+      /* \\ + IP UNC path prefix - regular/ascii formatted for Transport Neutral Encapsulation Format */
+      $u2 = { 00 5C 5C (3? 2E|3? 3? 2E|3? 3? 3? 2E) (3? 2E|3? 3? 2E|3? 3? 3? 2E) (3? 2E|3? 3? 2E|3? 3? 3? 2E) (3?|3? 3?|3? 3? 3?) }
       /* not MSI */
       $fp_msi1 = {84 10 0C 00 00 00 00 00 C0 00 00 00 00 00 00 46}
    condition:
-      uint16(0) == 0xCFD0 and 
       (
-         $app or
-         $meeting 
-      ) 
+         uint16(0) == 0xCFD0 and 1 of ($psetid*) and $u1
+         or
+         uint32be(0) == 0x789F3E22 and $u2
+      )
       and $rfp
-      and $u1
       and not 1 of ($fp*)
 }
 
