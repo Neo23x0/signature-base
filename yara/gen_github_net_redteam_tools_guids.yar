@@ -1,6 +1,7 @@
 // These rules have room for false positives if e.g. a dual use tool is contained within a hack tool repo.
 // Could also be done with https://yara.readthedocs.io/en/stable/modules/dotnet.html#c.typelib but that needs an extra module.
 
+import "pe"
 
 rule HKTL_NET_GUID_CSharpSetThreadContext {
     meta:
