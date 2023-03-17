@@ -1,4 +1,3 @@
-
 rule SUSP_EXPL_Msg_CVE_2023_23397_Mar23 {
    meta:
       description = "MSG file with a PidLidReminderFileParameter property, potentially exploiting CVE-2023-23397"
@@ -57,9 +56,9 @@ rule EXPL_SUSP_Outlook_CVE_2023_23397_Exfil_IP_Mar23 {
       /* PidLidReminderFileParameter */
       $rfp = { 1F 85 00 00 }
       /* \\ + IP UNC path prefix - wide formatted */
-      $u1 = { 5C 00 5C 00 (3? 00 2E|3? 00 3? 00 2E|3? 00 3? 00 3? 00 2E) 00 (3? 00 2E|3? 00 3? 00 2E|3? 00 3? 00 3? 00 2E) 00 (3? 00 2E|3? 00 3? 00 2E|3? 00 3? 00 3? 00 2E) 00 (3? 00|3? 00 3? 00|3? 00 3? 00 3? 00) }
+      $u1 = { 00 00 5C 00 5C 00 (3? 00 2E|3? 00 3? 00 2E|3? 00 3? 00 3? 00 2E) 00 (3? 00 2E|3? 00 3? 00 2E|3? 00 3? 00 3? 00 2E) 00 (3? 00 2E|3? 00 3? 00 2E|3? 00 3? 00 3? 00 2E) 00 (3? 00 3? 00 3? 00|3? 00 3? 00|3? 00) }
       /* \\ + IP UNC path prefix - regular/ascii formatted for Transport Neutral Encapsulation Format */
-      $u2 = { 00 5C 5C (3? 2E|3? 3? 2E|3? 3? 3? 2E) (3? 2E|3? 3? 2E|3? 3? 3? 2E) (3? 2E|3? 3? 2E|3? 3? 3? 2E) (3?|3? 3?|3? 3? 3?) }
+      $u2 = { 00 5C 5C (3? 2E|3? 3? 2E|3? 3? 3? 2E) (3? 2E|3? 3? 2E|3? 3? 3? 2E) (3? 2E|3? 3? 2E|3? 3? 3? 2E) (3? 3? 3?|3? 3?|3?) }
       /* not MSI */
       $fp_msi1 = {84 10 0C 00 00 00 00 00 C0 00 00 00 00 00 00 46}
    condition:
