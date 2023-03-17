@@ -24,7 +24,7 @@ rule SUSP_Unsigned_OSPPSVC {
 }
 
 
-rule SUSP_Signed_PE
+rule SUSP_PE_Signed_by_Suspicious_Entitiy_Mar23
 {
     meta:
         author = "Arnim Rupp (https://github.com/ruppde)"
