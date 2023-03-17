@@ -76,7 +76,7 @@ rule EXPL_SUSP_Outlook_CVE_2023_23397_SMTP_Mail_Mar23 {
    meta:
       author = "Nils Kuhnert"
       date = "2023-03-17"
-      description = "Detects suspicious *.eml files that include TNEF content that possibly exploits CVE-2023-23397. Lower score than above as we're only looking for UNC prefix."
+      description = "Detects suspicious *.eml files that include TNEF content that possibly exploits CVE-2023-23397. Lower score than EXPL_SUSP_Outlook_CVE_2023_23397_Exfil_IP_Mar23 as we're only looking for UNC prefix."
       score = 60
       reference = "https://twitter.com/wdormann/status/1636491612686622723"
    strings:
