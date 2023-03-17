@@ -1,9 +1,9 @@
 rule SUSP_EXPL_Msg_CVE_2023_23397_Mar23 {
    meta:
       description = "MSG file with a PidLidReminderFileParameter property, potentially exploiting CVE-2023-23397"
-      author = "delivr.to, modified by Florian Roth / Nils Kuhnert / Arnim Rupp"
+      author = "delivr.to, modified by Florian Roth, Nils Kuhnert, Arnim Rupp, marcin@ulikowski.pl"
       date = "2023-03-15"
-      modified = "2023-03-16"
+      modified = "2023-03-17"
       score = 60
       reference = "https://www.mdsec.co.uk/2023/03/exploiting-cve-2023-23397-microsoft-outlook-elevation-of-privilege-vulnerability/"
       hash = "47fee24586cd2858cfff2dd7a4e76dc95eb44c8506791ccc2d59c837786eafe3"
@@ -14,9 +14,12 @@ rule SUSP_EXPL_Msg_CVE_2023_23397_Mar23 {
    strings:
       /* https://interoperability.blob.core.windows.net/files/MS-OXPROPS/%5bMS-OXPROPS%5d.pdf */
       /* PSETID_Appointment */
-      $app = { 02 20 06 00 00 00 00 00 C0 00 00 00 00 00 00 46 }
+      $psetid_app = { 02 20 06 00 00 00 00 00 C0 00 00 00 00 00 00 46 }
       /* PSETID_Meeting */
-      $meeting = { 90 DA D8 6E 0B 45 1B 10 98 DA 00 AA 00 3F 13 05 }
+      $psetid_meeting = { 90 DA D8 6E 0B 45 1B 10 98 DA 00 AA 00 3F 13 05 }
+      /* PSETID Task */
+      $psetid_task = { 03 20 06 00 00 00 00 00 c0 00 00 00 00 00 00 46 }
+
       /* PidLidReminderFileParameter */
       $rfp = { 1F 85 00 00 }
       /* \\ UNC path prefix - wide formatted */
@@ -24,11 +27,9 @@ rule SUSP_EXPL_Msg_CVE_2023_23397_Mar23 {
       /* not MSI */
       $fp_msi1 = {84 10 0C 00 00 00 00 00 C0 00 00 00 00 00 00 46}
    condition:
-      uint32be(0) == 0xD0CF11E0 and
-      uint32be(4) == 0xA1B11AE1 and (
-         $app  or
-         $meeting
-      ) 
+      uint32be(0) == 0xD0CF11E0
+      and uint32be(4) == 0xA1B11AE1
+      and 1 of ($psetid*)
       and $rfp
       and $u1
       and not 1 of ($fp*)
@@ -37,9 +38,9 @@ rule SUSP_EXPL_Msg_CVE_2023_23397_Mar23 {
 rule EXPL_SUSP_Outlook_CVE_2023_23397_Exfil_IP_Mar23 {
    meta:
       description = "Detects suspicious .msg file with a PidLidReminderFileParameter property exploiting CVE-2023-23397 (modified delivr.to rule - more specific = less FPs but limited to exfil using IP addresses, not FQDNs)"
-      author = "delivr.to, Florian Roth, Nils Kuhnert, Arnim Rupp"
+      author = "delivr.to, Florian Roth, Nils Kuhnert, Arnim Rupp, marcin@ulikowski.pl"
       date = "2023-03-15"
-      modified = "2023-03-16"
+      modified = "2023-03-17"
       score = 75
       reference = "https://www.mdsec.co.uk/2023/03/exploiting-cve-2023-23397-microsoft-outlook-elevation-of-privilege-vulnerability/"
       hash = "47fee24586cd2858cfff2dd7a4e76dc95eb44c8506791ccc2d59c837786eafe3"
@@ -53,6 +54,8 @@ rule EXPL_SUSP_Outlook_CVE_2023_23397_Exfil_IP_Mar23 {
       $psetid_app = { 02 20 06 00 00 00 00 00 C0 00 00 00 00 00 00 46 }
       /* PSETID_Meeting */
       $psetid_meeting = { 90 DA D8 6E 0B 45 1B 10 98 DA 00 AA 00 3F 13 05 }
+      /* PSETID Task */
+      $psetid_task = { 03 20 06 00 00 00 00 00 c0 00 00 00 00 00 00 46 }
       /* PidLidReminderFileParameter */
       $rfp = { 1F 85 00 00 }
       /* \\ + IP UNC path prefix - wide formatted */
