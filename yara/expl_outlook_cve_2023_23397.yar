@@ -76,7 +76,8 @@ rule EXPL_SUSP_Outlook_CVE_2023_23397_SMTP_Mail_Mar23 {
    meta:
       author = "Nils Kuhnert"
       date = "2023-03-17"
-      description = "Detects suspicious *.eml files that include TNEF content that possibly exploits CVE-2023-23397."
+      description = "Detects suspicious *.eml files that include TNEF content that possibly exploits CVE-2023-23397. Lower score than abve as we're only looking for UNC prefix."
+      score = 60
    strings:
       // From:
       $mail1 = { 0A 46 72 6F 6D 3A 20 }
