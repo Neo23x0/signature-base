@@ -197,15 +197,10 @@ rule SUSP_PE_Signed_by_Suspicious_Entitiy_Mar23
         $cert7 = "XinSing Network Service Co., Ltd" wide ascii
         $cert8 = "Hangzhou Shunwang Technology Co.,Ltd" wide ascii
         $cert9 = "Zhuhai liancheng Technology Co., Ltd." wide ascii
-        //福州超人
         $cert10 = { e5 a4 a7 e8 bf 9e e7 ba b5 e6 a2 a6 e7 bd 91 e7 bb 9c e7 a7 91 e6 8a 80 e6 9c 89 e9 99 90 e5 85 ac e5 8f b8 }
-        //北京弘道长兴国际贸易有限公司
         $cert11 = { e5 8c 97 e4 ba ac e5 bc 98 e9 81 93 e9 95 bf e5 85 b4 e5 9b bd e9 99 85 e8 b4 b8 e6 98 93 e6 9c 89 e9 99 90 e5 85 ac e5 8f b8 }
-        //福建奥创互娱科技有限公司 (only 1 match on VT)
         $cert12 = { e7 a6 8f e5 bb ba e5 a5 a5 e5 88 9b e4 ba 92 e5 a8 b1 e7 a7 91 e6 8a 80 e6 9c 89 e9 99 90 e5 85 ac e5 8f b8 }
-        //厦门恒信卓越网络科技有限公司 (no match on VT)
         $cert13 = { e5 8e a6 e9 97 a8 e6 81 92 e4 bf a1 e5 8d 93 e8 b6 8a e7 bd 91 e7 bb 9c e7 a7 91 e6 8a 80 e6 9c 89 e9 99 90 e5 85 ac e5 8f b8 0a }
-        //大连纵梦网络科技有限公司
         $cert14 = { e5 a4 a7 e8 bf 9e e7 ba b5 e6 a2 a6 e7 bd 91 e7 bb 9c e7 a7 91 e6 8a 80 e6 9c 89 e9 99 90 e5 85 ac e5 8f b8 }
 
     condition:
@@ -215,4 +210,3 @@ rule SUSP_PE_Signed_by_Suspicious_Entitiy_Mar23
         any of ( $cert* )
 
 }
-
