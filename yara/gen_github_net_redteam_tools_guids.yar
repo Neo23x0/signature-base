@@ -4057,3 +4057,16 @@ rule HKTL_NET_GUID_RestrictedAdmin {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
 
+rule HKTL_NET_GUID_p2p {
+    meta:
+        description = "Detects .NET red/black-team tools via typelibguid (p2p Remote Desktop is dual use but 100% flagged as malicious on VT)"
+        reference = "https://github.com/miroslavpejic85/p2p"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+        author = "Arnim Rupp (https://github.com/ruppde)"
+        date = "2023-03-19"
+    strings:
+        $typelibguid0 = "33456e72-f8e8-4384-88c4-700867df12e2" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
