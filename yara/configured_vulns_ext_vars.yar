@@ -32,10 +32,10 @@ rule VULN_Linux_Sudoers_Commands {
 		$command15 = "/more " ascii
 		$command16 = "/less " ascii
 		$command17 = "/dd " ascii
-		$command18 = "/mount " ascii
+		/* $command18 = "/mount " ascii prone to FPs */ 
 
 	condition:
-		filename == "sudoers" or filepath contains "/etc/sudoers.d" and 
+		( filename == "sudoers" or filepath contains "/etc/sudoers.d" ) and 
 		any of ($command*)
 }
 
