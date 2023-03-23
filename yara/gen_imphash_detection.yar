@@ -229,7 +229,6 @@ rule MAL_Malware_Imphash_Mar23_2 {
             pe.imphash() == "359d89624a26d1e756c3e9d6782d6eb0" or
             pe.imphash() == "c2a87fabf96470db507b2e6b43bd92eb" or
             pe.imphash() == "62ec3dce1eba1b68f6a4511bb09f8c2c" or
-            pe.imphash() == "cdf5bbb8693f29ef22aef04d2a161dd7" or
             pe.imphash() == "5662cfcdfd9da29cb429e7528d5af81e" or
             pe.imphash() == "406c785a6e2c6970c1e8ed62877e197b" or
             pe.imphash() == "dbf687d6aa2a6cafe4349f7b0821a792" or
@@ -243,9 +242,6 @@ rule MAL_Malware_Imphash_Mar23_2 {
             pe.imphash() == "95e6f8741083e0c7d9a63d45e2472360" or
             pe.imphash() == "774d797db707398fd2ef1979d02634d5" or
             pe.imphash() == "8c16c795b57934183422be5f6df7d891" or
-            pe.imphash() == "d8b32e731e5438c6329455786e51ab4b" or
-            pe.imphash() == "890e522b31701e079a367b89393329e6" or
-            pe.imphash() == "9f4693fc0c511135129493f2161d1e86" or
             pe.imphash() == "98f67c550a7da65513e63ffd998f6b2e" or
             pe.imphash() == "e836076a09dba03e4d6faa46dda0fefc" or
             pe.imphash() == "ff63dc9c65eb25911a9bc535c8f06ad0" or
