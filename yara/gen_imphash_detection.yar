@@ -8,6 +8,7 @@ rule MAL_Malware_Imphash_Mar23_1 {
         license = "Detection Rule License 1.1 https://github.com/SigmaHQ/Detection-Rule-License"
         author = "Arnim Rupp"
         date = "2023-03-20"
+        modified = "2023-03-22"
         score = 75
         hash = "167dde6bd578cbfcc587d5853e7fc2904cda10e737ca74b31df52ba24db6e7bc"
         hash = "0a25a78c6b9df52e55455f5d52bcb3816460001cae3307b05e76ac70193b0636"
@@ -52,6 +53,9 @@ rule MAL_Malware_Imphash_Mar23_1 {
         hash = "b9995d1987c4e8b6fb30d255948322cfad9cc212c7f8f4c5db3ac80e23071533"
         hash = "a6a92ea0f27da1e678c15beb263647de43f68608afe82d6847450f16a11fe6c0"
         hash = "866e3ea86671a62b677214f07890ddf7e8153bec56455ad083c800e6ab51be37"
+    strings:
+        $fp1 = "Win32 Cabinet Self-Extractor" wide
+        $fp2 = "EXTRACTOPT" ascii fullword
     condition:
         uint16(0) == 0x5A4D and (
             // no size limit as some samples are 20MB+ (ceaa0af90222ff3a899b9a360f6328cbda9ec0f5fbd18eb44bdc440470bb0247) and the hash is calculated only on the header
@@ -81,7 +85,9 @@ rule MAL_Malware_Imphash_Mar23_1 {
             // disable bc it's killing performance
             //hash.md5(pe.rich_signature.clear_data) == "b6321cd8142ea3954c1a27b162787f7d"
         )
+        and not 1 of ($fp*)
 }
+
 
 rule HKTL_Imphashes_Aug22_1 {
    meta:
