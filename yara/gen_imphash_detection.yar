@@ -188,6 +188,7 @@ rule MAL_Malware_Imphash_Mar23_2 {
         description = "Detects malware by known bad imphash (Zero hits with with search for 'imphash:x p:0' on Virustotal)"
         license = "Detection Rule License 1.1 https://github.com/SigmaHQ/Detection-Rule-License"
         author = "Arnim Rupp (https://github.com/ruppde)"
+        reference = "Internal Research"
         date = "2023-03-23"
         score = 75
         hash = "12bf2795f4a140adbaa0af6ad4b2508d398d8ba69e9dadb155f800b10f7458c4"
@@ -283,12 +284,13 @@ rule MAL_Malware_Imphash_Mar23_2 {
         )
 }
 
-rule MAL_Malware_Imphash_Mar23_3 {
+rule SUSP_Malware_Imphash_Mar23_3 {
     meta:
         description = "Detects probable malware by known imphash (Maximum 0,25% hits with search for 'imphash:x p:0' on Virustotal) = 99,75% hits"
         license = "Detection Rule License 1.1 https://github.com/SigmaHQ/Detection-Rule-License"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-03-23"
+        reference = "Internal Research"
         score = 65
         hash = "b5296cf0eb22fba6e2f68d0c9de9ef7845f330f7c611a0d60007aa87e270c62a"
         hash = "5a5a5f71c2270cea036cd408cde99f4ebf5e04a751c558650f5cb23279babe6d"
