@@ -189,9 +189,9 @@ rule HKTL_Imphashes_Aug22_1 {
       )
 }
 
-rule MAL_Malware_Imphash_Mar23_2 {
+rule SUSP_Imphash_Mar23_2 {
     meta:
-        description = "Detects malware by known bad imphash (Zero hits with with search for 'imphash:x p:0' on Virustotal)"
+        description = "Detects imphash often found in malware samples (Zero hits with with search for 'imphash:x p:0' on Virustotal)"
         license = "Detection Rule License 1.1 https://github.com/SigmaHQ/Detection-Rule-License"
         author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
@@ -290,9 +290,9 @@ rule MAL_Malware_Imphash_Mar23_2 {
         )
 }
 
-rule SUSP_Malware_Imphash_Mar23_3 {
+rule SUSP_Imphash_Mar23_3 {
     meta:
-        description = "Detects probable malware by known imphash (Maximum 0,25% hits with search for 'imphash:x p:0' on Virustotal) = 99,75% hits"
+        description = "Detects imphash often found in malware samples (Maximum 0,25% hits with search for 'imphash:x p:0' on Virustotal) = 99,75% hits"
         license = "Detection Rule License 1.1 https://github.com/SigmaHQ/Detection-Rule-License"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-03-23"
