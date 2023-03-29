@@ -3,7 +3,7 @@ import "pe"
 rule SUSP_3CX_App_Signed_Binary_Mar23_1 {
    meta:
       description = "Detects 3CX application binaries signed with a certificate and created in a time frame in which other known malicious binaries have been created"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       date = "2023-03-29"
       reference = "https://www.reddit.com/r/crowdstrike/comments/125r3uu/20230329_situational_awareness_crowdstrike/"
       score = 70
@@ -23,7 +23,7 @@ rule SUSP_3CX_App_Signed_Binary_Mar23_1 {
 rule SUSP_3CX_MSI_Signed_Binary_Mar23_1 {
    meta:
       description = "Detects 3CX MSI installers signed with a known compromised certificate and signed in a time frame in which other known malicious binaries have been signed"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       date = "2023-03-29"
       reference = "https://www.reddit.com/r/crowdstrike/comments/125r3uu/20230329_situational_awareness_crowdstrike/"
       score = 70
