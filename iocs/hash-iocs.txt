@@ -10723,7 +10723,6 @@ c60f778641942b7b0c00f3214211b137b683e8296abb1905d2557bfb245bf775;Dark Pink Malwa
 e3181ee97d3ffd31c22c2c303c6e75d0196912083d0c21536e5833ee7d108736;Dark Pink Malware IOCs https://blog.group-ib.com/dark-pink-apt
 e45df7418ca47a9a4c4803697f4b28c618469c6e5a5678213ab81df9fcc9fd51;Dark Pink Malware IOCs https://blog.group-ib.com/dark-pink-apt
 
-
 6793e9299cab4cd07d4ddf35e03b32a05b0e965b3691d258ec2568402cf8d28f;ChamelGang IOCs - https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
 e8ee5b0d6b683407aa9cb091bf92273af0e287d4e7daa94ca93cd230e94df37a;ChamelGang IOCs - https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
 d4e3747658e1a9e6587da411dc944597af95dd49b07126b8b090c7677ee30674;ChamelGang IOCs - https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
@@ -10759,9 +10758,17 @@ dbf16553507202fbd1aed5057df92d11b88563585ae9bcc517f584826fe4819d;ChamelGang IOCs
 373974f2e7933ec8b6eb7afbc98d2d4e0cfc348321864aaf1bbaf66d4d9ef83b;ChamelGang IOCs wlbsctrl.dll https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
 4b9701472ab1aabe7ea5a15146d21a9ebff60fe8077efb013d54969ff2b67b39;ChamelGang IOCs wlbsctrl.dll https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/
 
-
 00782ccd65a1e03e3e74ce1e59e752926e0a050818fa195bd7e5a5b359500758;CERT-UA#5850 - 23.12.22 02:10:52 new.exe (CaddyWiper v3) https://cert.gov.ua/article/3718487
 e3bc3689f01fd431cd2ed368ae91eceaa7c465c2781fa7b7dc2ec9143a404f79;CERT-UA#5850 - 02.10.22 09:53:56 upd.exe (ZeroWipe) https://cert.gov.ua/article/3718487
 301b248a8291df6c7f3565a3dac17ee69609f36ef474b4f20eebe134746a9cac;CERT-UA#5850 - news.bat https://cert.gov.ua/article/3718487
 246607235d560e90590dcf1b0507ab18de74afcc4429d8d5f3ba97eacc92d73f;CERT-UA#5850 - r.sh (AwfulShred) https://cert.gov.ua/article/3718487
 66548ba6ca6d34b7d17e42ab2e1405db1c581a516e0b1a4942d373d6d5396ba4;CERT-UA#5850 - audit.sh (BidSwipe) https://cert.gov.ua/article/3718487
+
+dde03348075512796241389dfea5560c20a3d2a2eac95c894e7bbed5e85a0acc;3CX Compromise - Windows binary https://www.reddit.com/r/crowdstrike/comments/125r3uu/20230329_situational_awareness_crowdstrike/
+fad482ded2e25ce9e1dd3d3ecc3227af714bdfbbde04347dbc1b21d6a3670405;3CX Compromise - Windows binary https://www.reddit.com/r/crowdstrike/comments/125r3uu/20230329_situational_awareness_crowdstrike/
+92005051ae314d61074ed94a52e76b1c3e21e7f0e8c1d1fdd497a006ce45fa61;3CX Compromise - macOS binary https://www.reddit.com/r/crowdstrike/comments/125r3uu/20230329_situational_awareness_crowdstrike/
+b86c695822013483fa4e2dfdf712c5ee777d7b99cbad8c2fa2274b133481eadb;3CX Compromise - macOS binary https://www.reddit.com/r/crowdstrike/comments/125r3uu/20230329_situational_awareness_crowdstrike/
+aa124a4b4df12b34e74ee7f6c683b2ebec4ce9a8edcf9be345823b4fdcf5d868;3CX Compromise - 3cxdesktopapp-18.12.407.msi https://www.reddit.com/r/crowdstrike/comments/125r3uu/20230329_situational_awareness_crowdstrike/
+59e1edf4d82fae4978e97512b0331b7eb21dd4b838b850ba46794d9c7a2c0983;3CX Compromise - 3cxdesktopapp-18.12.416.msi https://www.reddit.com/r/crowdstrike/comments/125r3uu/20230329_situational_awareness_crowdstrike/
+5407cda7d3a75e7b1e030b1f33337a56f293578ffa8b3ae19c671051ed314290;3CX Compromise - 3CXDesktopApp-18.11.1213.dmg https://www.reddit.com/r/crowdstrike/comments/125r3uu/20230329_situational_awareness_crowdstrike/
+e6bbc33815b9f20b0cf832d7401dd893fbc467c800728b5891336706da0dbcec;3CX Compromise - 3cxdesktopapp-latest.dmg https://www.reddit.com/r/crowdstrike/comments/125r3uu/20230329_situational_awareness_crowdstrike/
