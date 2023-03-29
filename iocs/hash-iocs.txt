@@ -10766,6 +10766,8 @@ e3bc3689f01fd431cd2ed368ae91eceaa7c465c2781fa7b7dc2ec9143a404f79;CERT-UA#5850 - 
 
 dde03348075512796241389dfea5560c20a3d2a2eac95c894e7bbed5e85a0acc;3CX Compromise - Windows binary https://www.reddit.com/r/crowdstrike/comments/125r3uu/20230329_situational_awareness_crowdstrike/
 fad482ded2e25ce9e1dd3d3ecc3227af714bdfbbde04347dbc1b21d6a3670405;3CX Compromise - Windows binary https://www.reddit.com/r/crowdstrike/comments/125r3uu/20230329_situational_awareness_crowdstrike/
+6285ffb5f98d35cd98e78d48b63a05af6e4e4dea;3CX Compromise - Windows binary https://www.reddit.com/r/crowdstrike/comments/125r3uu/20230329_situational_awareness_crowdstrike/
+8433a94aedb6380ac8d4610af643fb0e5220c5cb;3CX Compromise - Windows binary https://www.reddit.com/r/crowdstrike/comments/125r3uu/20230329_situational_awareness_crowdstrike/
 92005051ae314d61074ed94a52e76b1c3e21e7f0e8c1d1fdd497a006ce45fa61;3CX Compromise - macOS binary https://www.reddit.com/r/crowdstrike/comments/125r3uu/20230329_situational_awareness_crowdstrike/
 b86c695822013483fa4e2dfdf712c5ee777d7b99cbad8c2fa2274b133481eadb;3CX Compromise - macOS binary https://www.reddit.com/r/crowdstrike/comments/125r3uu/20230329_situational_awareness_crowdstrike/
 aa124a4b4df12b34e74ee7f6c683b2ebec4ce9a8edcf9be345823b4fdcf5d868;3CX Compromise - 3cxdesktopapp-18.12.407.msi https://www.reddit.com/r/crowdstrike/comments/125r3uu/20230329_situational_awareness_crowdstrike/
