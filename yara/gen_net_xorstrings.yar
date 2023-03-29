@@ -1,5 +1,5 @@
 
-rule EXT_MSIL_SUSP_OBFUSC_XorStringsNet {
+rule MSIL_SUSP_OBFUSC_XorStringsNet {
     meta:
         description = "Detects XorStringsNET string encryption, and other obfuscators derived from it"
         author = "dr4k0nia"
@@ -11,9 +11,17 @@ rule EXT_MSIL_SUSP_OBFUSC_XorStringsNet {
         $pattern = { 06 1E 58 07 8E 69 FE 17 }
 
         // .NET marker
-        $a1 = ".cctor" ascii fullword
+        $a1 = "_CorDllMain" ascii
+        $a2 = "_CorExeMain" ascii
+        $a3 = "mscorlib" ascii fullword
+        $a4 = ".cctor" ascii fullword
+        $a5 = "System.Private.Corlib" ascii
+        $a6 = "<Module>" ascii fullword
+        $a7 = "<PrivateImplementationsDetails{" ascii
     condition:
         uint16(0) == 0x5a4d
         and filesize < 25MB
-        and all of them
+        and $pattern 
+        and 2 of ($a*)
 }
+
