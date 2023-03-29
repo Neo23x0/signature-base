@@ -297,7 +297,7 @@ rule SUSP_Imphash_Mar23_3 {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-03-23"
         reference = "Internal Research"
-        score = 60
+        score = 45
         hash = "b5296cf0eb22fba6e2f68d0c9de9ef7845f330f7c611a0d60007aa87e270c62a"
         hash = "5a5a5f71c2270cea036cd408cde99f4ebf5e04a751c558650f5cb23279babe6d"
         hash = "481b0d9759bfd209251eccb1848048ebbe7bd2c87c5914a894a5bffc0d1d67ff"
