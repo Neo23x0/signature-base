@@ -1820,6 +1820,7 @@ dunamistrd.com
 glcloudservice.com
 journalide.org
 msedgepackageinfo.com
+msedgeupdate.net
 msstorageazure.com
 msstorageboxes.com
 officeaddons.com
