@@ -170,7 +170,7 @@ rule APT_MAL_macOS_NK_3CX_Malicious_Samples_Mar23_1 {
 rule APT_MAL_MacOS_NK_3CX_DYLIB_Mar23_1 {
    meta:
       description = "Detects malicious DYLIB files related to 3CX compromise"
-      author = "Florian Roth (Nextron Systems)"
+      author = "Florian Roth"
       reference = "https://www.sentinelone.com/blog/smoothoperator-ongoing-campaign-trojanizes-3cx-software-in-software-supply-chain-attack/"
       date = "2023-03-30"
       score = 80
@@ -186,18 +186,18 @@ rule APT_MAL_MacOS_NK_3CX_DYLIB_Mar23_1 {
                5A 39 12 08 15 17 1F 55 4B 4A 42 54 4A 54 4F 49
                4F 43 54 4B 48 42 5A 29 1B 1C 1B 08 13 55 4F 49
                4D 54 49 4C 7A }
-      $x1 = ";3cx_auth_token_content=%s;__tutma=" xor
-      $x2 = "/System/Library/CoreServices/SystemVersion.plist" xor(0x01-0xff)
+      /* /;3cx_auth_token_content=%s;__tutma= *//
+      $xc2 = { 41 49 19 02 25 1b 0f 0e 12 25 0e 15 11 1f 14 25 19 15 14 0e 1f 14 0e 47 5f 09 41 25 25 0e 0f 0e 17 1b 47 }
+      /* /System/Library/CoreServices/SystemVersion.plist */
+      $xc3 = { 55 29 03 09 0e 1f 17 55 36 13 18 08 1b 08 03 55 39 15 08 1f 29 1f 08 0c 13 19 1f 09 55 29 03 09 0e 1f 17 2c 1f 08 09 13 15 14 54 0a 16 13 09 0e }
    condition:
-      uint16(0) == 0xfeca and
-      filesize < 20000KB and 1 of them 
-      or 2 of them
+      1 of them
 }
 
 rule APT_SUSP_NK_3CX_Malicious_Samples_Mar23_1 {
    meta:
       description = "Detects indicator (event name) found in samples related to 3CX compromise"
-      author = "Florian Roth (Nextron Systems)"
+      author = "Florian Roth"
       reference = "https://www.sentinelone.com/blog/smoothoperator-ongoing-campaign-trojanizes-3cx-software-in-software-supply-chain-attack/"
       date = "2023-03-30"
       score = 70
@@ -213,9 +213,9 @@ rule APT_SUSP_NK_3CX_Malicious_Samples_Mar23_1 {
 
 rule APT_MAL_NK_3CX_Malicious_Samples_Mar23_4 {
     meta:
-        description = "Detects decrypted payload loaded inside 3CXDesktopApp.exe which downloads info stealer"
-        author = "MalGamy (Nextron Systems)"
+        author = "MalGamy"
         reference = "https://twitter.com/WhichbufferArda/status/1641404343323688964?s=20"
+        description = "Detects decrypted payload loaded inside 3CXDesktopApp.exe which downloads info stealer"
         date = "2023-03-29"
         hash = "851c2c99ebafd4e5e9e140cfe3f2d03533846ca16f8151ae8ee0e83c692884b7" 
         score = 80
@@ -226,4 +226,3 @@ rule APT_MAL_NK_3CX_Malicious_Samples_Mar23_4 {
     condition: 
         2 of them
 }
-
