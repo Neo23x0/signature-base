@@ -186,7 +186,7 @@ rule APT_MAL_MacOS_NK_3CX_DYLIB_Mar23_1 {
                5A 39 12 08 15 17 1F 55 4B 4A 42 54 4A 54 4F 49
                4F 43 54 4B 48 42 5A 29 1B 1C 1B 08 13 55 4F 49
                4D 54 49 4C 7A }
-      /* /;3cx_auth_token_content=%s;__tutma= *//
+      /* /;3cx_auth_token_content=%s;__tutma= */
       $xc2 = { 41 49 19 02 25 1b 0f 0e 12 25 0e 15 11 1f 14 25 19 15 14 0e 1f 14 0e 47 5f 09 41 25 25 0e 0f 0e 17 1b 47 }
       /* /System/Library/CoreServices/SystemVersion.plist */
       $xc3 = { 55 29 03 09 0e 1f 17 55 36 13 18 08 1b 08 03 55 39 15 08 1f 29 1f 08 0c 13 19 1f 09 55 29 03 09 0e 1f 17 2c 1f 08 09 13 15 14 54 0a 16 13 09 0e }
@@ -225,4 +225,29 @@ rule APT_MAL_NK_3CX_Malicious_Samples_Mar23_4 {
         $op3 = {33 C1 4C 0F AF C7 8B C8 C1 E1 ?? 4D 03 C2 33 C1} // shift operation
     condition: 
         2 of them
+}
+
+rule MAL_3CXDesktopApp_MacOS_Backdoor_Mar23 {
+    meta:
+      author = "X__Junior"
+        reference = "https://www.volexity.com/blog/2023/03/30/3cx-supply-chain-compromise-leads-to-iconic-incident/"
+        description = "Detects 3CXDesktopApp MacOS Backdoor component"
+        date = "2023-03-30"
+        hash = "a64fa9f1c76457ecc58402142a8728ce34ccba378c17318b3340083eeb7acc67"
+        score = 80
+    strings:
+        $sa1 = "%s/.main_storage" ascii fullword
+        $sa2 = "%s/UpdateAgent" ascii fullword
+
+        $op1 = { 31 C0 41 80 34 06 ?? 48 FF C0 48 83 F8 ?? 75 ?? BE ?? ?? ?? ?? BA ?? ?? ?? ?? 4C 89 F7 48 89 D9 E8 ?? ?? ?? ?? 48 89 DF E8 ?? ?? ?? ?? 48 89 DF E8 ?? ?? ?? ?? 4C 89 F7 5B 41 5E 41 5F E9 ?? ?? ?? ?? 5B 41 5E 41 5F C3} /* string decryption */
+        $op2 = { 0F 11 84 24 ?? ?? ?? ?? 0F 28 05 ?? ?? ?? ?? 0F 29 84 24 ?? ?? ?? ?? 0F 28 05 ?? ?? ?? ?? 0F 29 84 24 ?? ?? ?? ?? 31 C0 80 B4 04 ?? ?? ?? ?? ?? 48 FF C0} /* string decryption */
+    condition:
+      ( uint16(0) == 0xfeca and filesize < 6MB
+         and
+         (
+            ( 1 of ($sa*) and 1 of ($op* ) )
+            or all of ($sa*)
+         )
+      )
+      or ( all of ($op*) )
 }
