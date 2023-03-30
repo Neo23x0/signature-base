@@ -151,7 +151,7 @@ rule SUSP_3CX_MSI_Signed_Binary_Mar23_1 {
 rule APT_MAL_macOS_NK_3CX_Malicious_Samples_Mar23_1 {
    meta:
       description = "Detects malicious macOS application related to 3CX compromise (decrypted payload)"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.reddit.com/r/crowdstrike/comments/125r3uu/20230329_situational_awareness_crowdstrike/"
       date = "2023-03-30"
       score = 80
@@ -164,3 +164,66 @@ rule APT_MAL_macOS_NK_3CX_Malicious_Samples_Mar23_1 {
     condition:
       uint16(0) == 0xfeca and all of them
 }
+
+/* 30.03.2023 */
+
+rule APT_MAL_MacOS_NK_3CX_DYLIB_Mar23_1 {
+   meta:
+      description = "Detects malicious DYLIB files related to 3CX compromise"
+      author = "Florian Roth (Nextron Systems)"
+      reference = "https://www.sentinelone.com/blog/smoothoperator-ongoing-campaign-trojanizes-3cx-software-in-software-supply-chain-attack/"
+      date = "2023-03-30"
+      score = 80
+      hash1 = "a64fa9f1c76457ecc58402142a8728ce34ccba378c17318b3340083eeb7acc67"
+      hash2 = "fee4f9dabc094df24d83ec1a8c4e4ff573e5d9973caa676f58086c99561382d7"
+   strings:
+      /* XORed UA 0x7a */
+      $xc1 = { 37 15 00 13 16 16 1B 55 4F 54 4A 5A 52 2D 13 14 
+               1E 15 0D 09 5A 34 2E 5A 4B 4A 54 4A 41 5A 2D 13
+               14 4C 4E 41 5A 02 4C 4E 53 5A 3B 0A 0A 16 1F 2D
+               1F 18 31 13 0E 55 4F 49 4D 54 49 4C 5A 52 31 32
+               2E 37 36 56 5A 16 13 11 1F 5A 3D 1F 19 11 15 53
+               5A 39 12 08 15 17 1F 55 4B 4A 42 54 4A 54 4F 49
+               4F 43 54 4B 48 42 5A 29 1B 1C 1B 08 13 55 4F 49
+               4D 54 49 4C 7A }
+      $x1 = ";3cx_auth_token_content=%s;__tutma=" xor
+      $x2 = "/System/Library/CoreServices/SystemVersion.plist" xor(0x01-0xff)
+   condition:
+      uint16(0) == 0xfeca and
+      filesize < 20000KB and 1 of them 
+      or 2 of them
+}
+
+rule APT_SUSP_NK_3CX_Malicious_Samples_Mar23_1 {
+   meta:
+      description = "Detects indicator (event name) found in samples related to 3CX compromise"
+      author = "Florian Roth (Nextron Systems)"
+      reference = "https://www.sentinelone.com/blog/smoothoperator-ongoing-campaign-trojanizes-3cx-software-in-software-supply-chain-attack/"
+      date = "2023-03-30"
+      score = 70
+      hash1 = "7986bbaee8940da11ce089383521ab420c443ab7b15ed42aed91fd31ce833896"
+      hash2 = "59e1edf4d82fae4978e97512b0331b7eb21dd4b838b850ba46794d9c7a2c0983"
+      hash3 = "aa124a4b4df12b34e74ee7f6c683b2ebec4ce9a8edcf9be345823b4fdcf5d868"
+      hash4 = "c485674ee63ec8d4e8fde9800788175a8b02d3f9416d0e763360fff7f8eb4e02"
+   strings:
+      $a1 = "AVMonitorRefreshEvent" wide fullword
+   condition:
+      1 of them
+}
+
+rule APT_MAL_NK_3CX_Malicious_Samples_Mar23_4 {
+    meta:
+        description = "Detects decrypted payload loaded inside 3CXDesktopApp.exe which downloads info stealer"
+        author = "MalGamy (Nextron Systems)"
+        reference = "https://twitter.com/WhichbufferArda/status/1641404343323688964?s=20"
+        date = "2023-03-29"
+        hash = "851c2c99ebafd4e5e9e140cfe3f2d03533846ca16f8151ae8ee0e83c692884b7" 
+        score = 80
+    strings:
+        $op1 = {41 69 D0 [4] 8B C8 C1 E9 ?? 33 C1 8B C8 C1 E1 ?? 81 C2 [4] 33 C1 43 8D 0C 02 02 C8 49 C1 EA ?? 41 88 0B 8B C8 C1 E1 ?? 33 C1 44 69 C2 [4] 8B C8 C1 E9 ?? 33 C1 8B C8 C1 E1 ?? 41 81 C0 [4] 33 C1 4C 0F AF CF 4D 03 CA 45 8B D1 4C 0F AF D7 41 8D 0C 11 49 C1 E9 ?? 02 C8} // // xor with mul operation
+        $op2 = {4D 0F AF CC 44 69 C2 [4] 4C 03 C9 45 8B D1 4D 0F AF D4 41 8D 0C 11 41 81 C0 [4] 02 C8 49 C1 E9 ?? 41 88 4B ?? 4D 03 D1 8B C8 45 8B CA C1 E1 ?? 33 C1} // xor with mul operation
+        $op3 = {33 C1 4C 0F AF C7 8B C8 C1 E1 ?? 4D 03 C2 33 C1} // shift operation
+    condition: 
+        2 of them
+}
+
