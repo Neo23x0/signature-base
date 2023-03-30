@@ -1810,4 +1810,27 @@ static.mhysl.org
 kaspernsky.com
 update.kaspernsky.com
 
+# 3CX Compromise IOCs https://www.reddit.com/r/crowdstrike/comments/125r3uu/20230329_situational_awareness_crowdstrike/
+akamaicontainer.com
+akamaitechcloudservices.com
+azuredeploystore.com
+azureonlinecloud.com
+azureonlinestorage.com
+dunamistrd.com
+glcloudservice.com
+journalide.org
+msedgepackageinfo.com
+msstorageazure.com
+msstorageboxes.com
+officeaddons.com
+officestoragebox.com
+pbxcloudeservices.com
+pbxphonenetwork.com
+pbxsources.com
+qwepoi123098.com
+sbmsa.wiki
+sourceslabs.com
+visualstudiofactory.com
+zacharryblogs.com
+
 # Last Line
