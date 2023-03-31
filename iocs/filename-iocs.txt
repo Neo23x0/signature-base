@@ -4236,4 +4236,10 @@ _lsass\.dmp;70
 \\rundlI32\.exe;70
 \\rundIl32\.exe;70
 
+# 3CX file name IOCs of malicious packages https://www.volexity.com/blog/2023/03/30/3cx-supply-chain-compromise-leads-to-iconic-incident/
+\\3CXDesktopApp-18\.12\.407\.msi 
+\\3CXDesktopApp-18\.12\.416\.msi 
+\\3CXDesktopApp-18\.11\.1213\.dmg 
+\\3CXDesktopApp-18\.12\.416\.dmg
+
 # End
