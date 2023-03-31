@@ -67,6 +67,7 @@ FE FF 00 3C 00 25 00 40;ASP
 4D 5A;EXE
 FF FE;UTF16-Encoded File LE
 FE FF;UTF16-Encoded File BE
+CA FE;Java Class or DYLIB
 
 # Special
 5B 30 30 30 30 30 30 30 30 3A;MimiLSA Log
