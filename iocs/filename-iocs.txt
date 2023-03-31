@@ -4241,5 +4241,7 @@ _lsass\.dmp;70
 \\3CXDesktopApp-18\.12\.416\.msi;80
 \\3CXDesktopApp-18\.11\.1213\.dmg;80
 \\3CXDesktopApp-18\.12\.416\.dmg;80
+\\3CXDesktopApp-18\.12\.402\.dmg;80
+\\3CXDesktopApp-18\.12\.407\.dmg;80
 
 # End
