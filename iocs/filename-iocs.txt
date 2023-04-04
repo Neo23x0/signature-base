@@ -4245,7 +4245,6 @@ _lsass\.dmp;70
 \\3CXDesktopApp-18\.12\.407\.dmg;80
 
 # Gopuram IOCs (3CX related campaigns) https://securelist.com/gopuram-backdoor-deployed-through-3cx-supply-chain-attack/109344/
-C:\\Windows\\system32\\wlbsctrl\.dll;60
 C:\\Windows\\system32\\catroot2\\edb\.chk\.log;80
 
 # End
