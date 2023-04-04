@@ -47,7 +47,7 @@ rule APT_MAL_NK_3CX_Malicious_Samples_Mar23_2 {
 rule APT_MAL_NK_3CX_Malicious_Samples_Mar23_3 {
    meta:
       description = "Detects malicious DLLs related to 3CX compromise (decrypted payload)"
-      author = "Florian Roth , X__Junior"
+      author = "Florian Roth , X__Junior (Nextron Systems)"
       reference = "https://www.reddit.com/r/crowdstrike/comments/125r3uu/20230329_situational_awareness_crowdstrike/"
       date = "2023-03-29"
       score = 80
@@ -170,7 +170,7 @@ rule APT_MAL_macOS_NK_3CX_Malicious_Samples_Mar23_1 {
 rule APT_MAL_MacOS_NK_3CX_DYLIB_Mar23_1 {
    meta:
       description = "Detects malicious DYLIB files related to 3CX compromise"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.sentinelone.com/blog/smoothoperator-ongoing-campaign-trojanizes-3cx-software-in-software-supply-chain-attack/"
       date = "2023-03-30"
       score = 80
@@ -197,7 +197,7 @@ rule APT_MAL_MacOS_NK_3CX_DYLIB_Mar23_1 {
 rule APT_SUSP_NK_3CX_Malicious_Samples_Mar23_1 {
    meta:
       description = "Detects indicator (event name) found in samples related to 3CX compromise"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://www.sentinelone.com/blog/smoothoperator-ongoing-campaign-trojanizes-3cx-software-in-software-supply-chain-attack/"
       date = "2023-03-30"
       score = 70
@@ -213,7 +213,7 @@ rule APT_SUSP_NK_3CX_Malicious_Samples_Mar23_1 {
 
 rule APT_MAL_NK_3CX_Malicious_Samples_Mar23_4 {
     meta:
-        author = "MalGamy"
+        author = "MalGamy (Nextron Systems)"
         reference = "https://twitter.com/WhichbufferArda/status/1641404343323688964?s=20"
         description = "Detects decrypted payload loaded inside 3CXDesktopApp.exe which downloads info stealer"
         date = "2023-03-29"
@@ -229,7 +229,7 @@ rule APT_MAL_NK_3CX_Malicious_Samples_Mar23_4 {
 
 rule MAL_3CXDesktopApp_MacOS_Backdoor_Mar23 {
     meta:
-      author = "X__Junior"
+      author = "X__Junior (Nextron Systems)"
         reference = "https://www.volexity.com/blog/2023/03/30/3cx-supply-chain-compromise-leads-to-iconic-incident/"
         description = "Detects 3CXDesktopApp MacOS Backdoor component"
         date = "2023-03-30"
@@ -257,7 +257,7 @@ rule MAL_3CXDesktopApp_MacOS_Backdoor_Mar23 {
 rule APT_MAL_NK_3CX_ICONIC_Stealer_Mar23_1 {
    meta:
       description = "Detects ICONIC stealer payload used in the 3CX incident"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/volexity/threat-intel/blob/main/2023/2023-03-30%203CX/attachments/iconicstealer.7z"
       date = "2023-03-31"
       score = 80
@@ -283,7 +283,7 @@ rule APT_MAL_NK_3CX_ICONIC_Stealer_Mar23_1 {
 rule APT_MAL_NK_3CX_macOS_Elextron_App_Mar23_1 {
    meta:
       description = "Detects macOS malware used in the 3CX incident"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2023-03-31"
       score = 80
@@ -306,7 +306,7 @@ rule APT_MAL_NK_3CX_macOS_Elextron_App_Mar23_1 {
 rule MAL_3CXDesktopApp_MacOS_UpdateAgent_Mar23 {
    meta:
       description = "Detects 3CXDesktopApp MacOS UpdateAgent backdoor component"
-      author = "Florian Roth"
+      author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/patrickwardle/status/1641692164303515653?s=20"
       date = "2023-03-30"
       hash = "9e9a5f8d86356796162cee881c843cde9eaedfb3"
