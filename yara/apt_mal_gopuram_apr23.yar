@@ -40,7 +40,7 @@ rule APT_MAL_Gopuram_Backdoor_Apr23 {
 
 rule APT_NK_MAL_DLL_Apr23_1 {
    meta:
-      description = "Detects DLLs loaded by shellcode loader (6ce5b6b4cdd6290d396465a1624d489c7afd2259a4d69b73c6b0ba0e5ad4e4ad) (weak relation to Lazarus group)"
+      description = "Detects DLLs loaded by shellcode loader (6ce5b6b4cdd6290d396465a1624d489c7afd2259a4d69b73c6b0ba0e5ad4e4ad) (relation to Lazarus group)"
       author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist.com/gopuram-backdoor-deployed-through-3cx-supply-chain-attack/109344/"
       date = "2023-04-03"
