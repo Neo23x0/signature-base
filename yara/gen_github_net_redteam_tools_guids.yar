@@ -1366,23 +1366,29 @@ rule HKTL_NET_GUID_Sharp_Suite {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
+        modified = "2023-03-22"
     strings:
-        $typelibguid0 = "467ee2a9-2f01-4a71-9647-2a2d9c31e608" ascii nocase wide
-        $typelibguid1 = "5611236e-2557-45b8-be29-5d1f074d199e" ascii nocase wide
-        $typelibguid2 = "447edefc-b429-42bc-b3bc-63a9af19dbd6" ascii nocase wide
+        $typelibguid0 = "19657BE4-51CA-4A85-8AB1-F6666008B1F3" ascii nocase wide
+        $typelibguid1 = "0a382d9a-897f-431a-81c2-a4e08392c587" ascii nocase wide
+        $typelibguid2 = "467ee2a9-2f01-4a71-9647-2a2d9c31e608" ascii nocase wide
         $typelibguid3 = "eacaa2b8-43e5-4888-826d-2f6902e16546" ascii nocase wide
-        $typelibguid4 = "a3b7c697-4bb6-455d-9fda-4ab54ae4c8d2" ascii nocase wide
-        $typelibguid5 = "a5f883ce-1f96-4456-bb35-40229191420c" ascii nocase wide
-        $typelibguid6 = "28978103-d90d-4618-b22e-222727f40313" ascii nocase wide
-        $typelibguid7 = "252676f8-8a19-4664-bfb8-5a947e48c32a" ascii nocase wide
-        $typelibguid8 = "414187db-5feb-43e5-a383-caa48b5395f1" ascii nocase wide
-        $typelibguid9 = "0c70c839-9565-4881-8ea1-408c1ebe38ce" ascii nocase wide
-        $typelibguid10 = "0a382d9a-897f-431a-81c2-a4e08392c587" ascii nocase wide
-        $typelibguid11 = "629f86e6-44fe-4c9c-b043-1c9b64be6d5a" ascii nocase wide
-        $typelibguid12 = "f0d28809-b712-4380-9a59-407b7b2badd5" ascii nocase wide
-        $typelibguid13 = "956a5a4d-2007-4857-9259-51cd0fb5312a" ascii nocase wide
-        $typelibguid14 = "53f622eb-0ca3-4e9b-9dc8-30c832df1c7b" ascii nocase wide
-        $typelibguid15 = "72019dfe-608e-4ab2-a8f1-66c95c425620" ascii nocase wide
+        $typelibguid4 = "629f86e6-44fe-4c9c-b043-1c9b64be6d5a" ascii nocase wide
+        $typelibguid5 = "ecf2ffe4-1744-4745-8693-5790d66bb1b8" ascii nocase wide
+        $typelibguid6 = "0a621f4c-8082-4c30-b131-ba2c98db0533" ascii nocase wide
+        $typelibguid7 = "72019dfe-608e-4ab2-a8f1-66c95c425620" ascii nocase wide
+        $typelibguid8 = "f0d28809-b712-4380-9a59-407b7b2badd5" ascii nocase wide
+        $typelibguid9 = "956a5a4d-2007-4857-9259-51cd0fb5312a" ascii nocase wide
+        $typelibguid10 = "a3b7c697-4bb6-455d-9fda-4ab54ae4c8d2" ascii nocase wide
+        $typelibguid11 = "a5f883ce-1f96-4456-bb35-40229191420c" ascii nocase wide
+        $typelibguid12 = "28978103-d90d-4618-b22e-222727f40313" ascii nocase wide
+        $typelibguid13 = "0c70c839-9565-4881-8ea1-408c1ebe38ce" ascii nocase wide
+        $typelibguid14 = "FA1D9A36-415A-4855-8C01-54B6E9FC6965" ascii nocase wide
+        $typelibguid15 = "252676f8-8a19-4664-bfb8-5a947e48c32a" ascii nocase wide
+        $typelibguid16 = "447edefc-b429-42bc-b3bc-63a9af19dbd6" ascii nocase wide
+        $typelibguid17 = "04D0B3A6-EAAB-413D-B9E2-512FA8EBD02F" ascii nocase wide
+        $typelibguid18 = "5611236e-2557-45b8-be29-5d1f074d199e" ascii nocase wide
+        $typelibguid19 = "53f622eb-0ca3-4e9b-9dc8-30c832df1c7b" ascii nocase wide
+        $typelibguid20 = "414187db-5feb-43e5-a383-caa48b5395f1" ascii nocase wide
     condition:
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
@@ -4001,6 +4007,284 @@ rule HKTL_NET_GUID_SharpSCCM {
     strings:
         $typelibguid0 = "03652836-898e-4a9f-b781-b7d86e750f60" ascii nocase wide
         $typelibguid1 = "e4d9ef39-0fce-4573-978b-abf8df6aec23" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_Koh {
+    meta:
+        description = "Detects .NET red/black-team tools via typelibguid"
+        reference = "https://github.com/GhostPack/Koh"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+        author = "Arnim Rupp (https://github.com/ruppde)"
+        date = "2023-03-18"
+    strings:
+        $typelibguid0 = "4d5350c8-7f8c-47cf-8cde-c752018af17e" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_ForgeCert {
+    meta:
+        description = "Detects .NET red/black-team tools via typelibguid"
+        reference = "https://github.com/GhostPack/ForgeCert"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+        author = "Arnim Rupp (https://github.com/ruppde)"
+        date = "2023-03-18"
+    strings:
+        $typelibguid0 = "bd346689-8ee6-40b3-858b-4ed94f08d40a" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_Crassus {
+    meta:
+        description = "Detects .NET red/black-team tools via typelibguid"
+        reference = "https://github.com/vu-ls/Crassus"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+        author = "Arnim Rupp (https://github.com/ruppde)"
+        date = "2023-03-18"
+    strings:
+        $typelibguid0 = "7e9729aa-4cf2-4d0a-8183-7fb7ce7a5b1a" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_RestrictedAdmin {
+    meta:
+        description = "Detects .NET red/black-team tools via typelibguid"
+        reference = "https://github.com/GhostPack/RestrictedAdmin"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+        author = "Arnim Rupp (https://github.com/ruppde)"
+        date = "2023-03-18"
+    strings:
+        $typelibguid0 = "79f11fc0-abff-4e1f-b07c-5d65653d8952" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_p2p {
+    meta:
+        description = "Detects .NET red/black-team tools via typelibguid (p2p Remote Desktop is dual use but 100% flagged as malicious on VT)"
+        reference = "https://github.com/miroslavpejic85/p2p"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+        author = "Arnim Rupp (https://github.com/ruppde)"
+        date = "2023-03-19"
+    strings:
+        $typelibguid0 = "33456e72-f8e8-4384-88c4-700867df12e2" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpWSUS {
+    meta:
+        description = "Detects .NET red/black-team tools via typelibguid"
+        reference = "https://github.com/nettitude/SharpWSUS"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+        author = "Arnim Rupp (https://github.com/ruppde)"
+        date = "2023-03-22"
+    strings:
+        $typelibguid0 = "42cabb74-1199-40f1-9354-6294bba8d3a4" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpImpersonation {
+    meta:
+        description = "Detects .NET red/black-team tools via typelibguid"
+        reference = "https://github.com/S3cur3Th1sSh1t/SharpImpersonation"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+        author = "Arnim Rupp (https://github.com/ruppde)"
+        date = "2023-03-22"
+    strings:
+        $typelibguid0 = "27a85262-8c87-4147-a908-46728ab7fc73" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpCloud {
+    meta:
+        description = "Detects .NET red/black-team tools via typelibguid"
+        reference = "https://github.com/chrismaddalena/SharpCloud"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+        author = "Arnim Rupp (https://github.com/ruppde)"
+        date = "2023-03-22"
+    strings:
+        $typelibguid0 = "ca4e257e-69c1-45c5-9375-ba7874371892" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpSSDP {
+    meta:
+        description = "Detects .NET red/black-team tools via typelibguid"
+        reference = "https://github.com/rvrsh3ll/SharpSSDP"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+        author = "Arnim Rupp (https://github.com/ruppde)"
+        date = "2023-03-22"
+    strings:
+        $typelibguid0 = "6e383de4-de89-4247-a41a-79db1dc03aaa" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_WireTap {
+    meta:
+        description = "Detects .NET red/black-team tools via typelibguid"
+        reference = "https://github.com/djhohnstein/WireTap"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+        author = "Arnim Rupp (https://github.com/ruppde)"
+        date = "2023-03-22"
+    strings:
+        $typelibguid0 = "b5067468-f656-450a-b29c-1c84cfe8dde5" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_KittyLitter {
+    meta:
+        description = "Detects .NET red/black-team tools via typelibguid"
+        reference = "https://github.com/djhohnstein/KittyLitter"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+        author = "Arnim Rupp (https://github.com/ruppde)"
+        date = "2023-03-22"
+    strings:
+        $typelibguid0 = "449cf269-4798-4268-9a0d-9a17a08869ba" ascii nocase wide
+        $typelibguid1 = "e7a509a4-2d44-4e10-95bf-b86cb7767c2c" ascii nocase wide
+        $typelibguid2 = "b2b8dd4f-eba6-42a1-a53d-9a00fe785d66" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpView {
+    meta:
+        description = "Detects .NET red/black-team tools via typelibguid"
+        reference = "https://github.com/tevora-threat/SharpView"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+        author = "Arnim Rupp (https://github.com/ruppde)"
+        date = "2023-03-22"
+    strings:
+        $typelibguid0 = "22a156ea-2623-45c7-8e50-e864d9fc44d3" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_Farmer {
+    meta:
+        description = "Detects .NET red/black-team tools via typelibguid"
+        reference = "https://github.com/mdsecactivebreach/Farmer"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+        author = "Arnim Rupp (https://github.com/ruppde)"
+        date = "2023-03-22"
+    strings:
+        $typelibguid0 = "37da2573-d9b5-4fc2-ae11-ccb6130cea9f" ascii nocase wide
+        $typelibguid1 = "49acf861-1c10-49a1-bf26-139a3b3a9227" ascii nocase wide
+        $typelibguid2 = "9a6c028f-423f-4c2c-8db3-b3499139b822" ascii nocase wide
+        $typelibguid3 = "1c896837-e729-46a9-92b9-3bbe7ac2c90d" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_AESShellCodeInjector {
+    meta:
+        description = "Detects .NET red/black-team tools via typelibguid"
+        reference = "https://github.com/san3ncrypt3d/AESShellCodeInjector"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+        author = "Arnim Rupp (https://github.com/ruppde)"
+        date = "2023-03-22"
+    strings:
+        $typelibguid0 = "b016da9e-12a1-4f1d-91a1-d681ae54e92c" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpChromium {
+    meta:
+        description = "Detects .NET red/black-team tools via typelibguid"
+        reference = "https://github.com/djhohnstein/SharpChromium"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+        author = "Arnim Rupp (https://github.com/ruppde)"
+        date = "2023-03-22"
+    strings:
+        $typelibguid0 = "2133c634-4139-466e-8983-9a23ec99e01b" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_Get_RBCD_Threaded {
+    meta:
+        description = "Detects .NET red/black-team tools via typelibguid"
+        reference = "https://github.com/FatRodzianko/Get-RBCD-Threaded"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+        author = "Arnim Rupp (https://github.com/ruppde)"
+        date = "2023-03-22"
+    strings:
+        $typelibguid0 = "e20dc2ed-6455-4101-9d78-fccac1cb7a18" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_Whisker {
+    meta:
+        description = "Detects .NET red/black-team tools via typelibguid"
+        reference = "https://github.com/eladshamir/Whisker"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+        author = "Arnim Rupp (https://github.com/ruppde)"
+        date = "2023-03-22"
+    strings:
+        $typelibguid0 = "42750ac0-1bff-4f25-8c9d-9af144403bad" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_ShadowSpray {
+    meta:
+        description = "Detects .NET red/black-team tools via typelibguid"
+        reference = "https://github.com/Dec0ne/ShadowSpray"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+        author = "Arnim Rupp (https://github.com/ruppde)"
+        date = "2023-03-22"
+    strings:
+        $typelibguid0 = "7e47d586-ddc6-4382-848c-5cf0798084e1" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_MalSCCM {
+    meta:
+        description = "Detects .NET red/black-team tools via typelibguid"
+        reference = "https://github.com/nettitude/MalSCCM"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+        author = "Arnim Rupp (https://github.com/ruppde)"
+        date = "2023-03-22"
+    strings:
+        $typelibguid0 = "5439cecd-3bb3-4807-b33f-e4c299b71ca2" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SpoolSample {
+    meta:
+        description = "Detects .NET red/black-team tools via typelibguid"
+        reference = "https://github.com/leechristensen/SpoolSample"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+        author = "Arnim Rupp (https://github.com/ruppde)"
+        date = "2023-03-22"
+    strings:
+        $typelibguid0 = "640c36b4-f417-4d85-b031-83a9d23c140b" ascii nocase wide
+    condition:
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
+}
+
+rule HKTL_NET_GUID_SharpOxidResolver {
+    meta:
+        description = "Detects .NET red/black-team tools via typelibguid"
+        reference = "https://github.com/S3cur3Th1sSh1t/SharpOxidResolver"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+        author = "Arnim Rupp (https://github.com/ruppde)"
+        date = "2023-03-22"
+    strings:
+        $typelibguid0 = "ce59f8ff-0ecf-41e9-a1fd-1776ca0b703d" ascii nocase wide
     condition:
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and any of them
 }
