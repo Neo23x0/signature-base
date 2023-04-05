@@ -87,7 +87,7 @@ rule webshell_php_generic
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/14"
-        modified = "2022-08-22"
+        modified = "2023-04-05"
         hash = "bee1b76b1455105d4bfe2f45191071cf05e83a309ae9defcf759248ca9bceddd"
         hash = "6bf351900a408120bee3fc6ea39905c6a35fe6efcf35d0a783ee92062e63a854"
         hash = "e3b4e5ec29628791f836e15500f6fdea19beaf3e8d9981c50714656c50d3b365"
@@ -412,6 +412,7 @@ rule webshell_php_generic_callback
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/14"
+        modified = "2023-04-05"
         score = 60
         hash = "e98889690101b59260e871c49263314526f2093f"
         hash = "63297f8c1d4e88415bc094bc5546124c9ed8d57aca3a09e36ae18f5f054ad172"
@@ -713,7 +714,7 @@ rule WEBSHELL_php_base64_encoded_payloads : FILE {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/07"
-    modified = "2022-09-19"
+        modified = "2023-04-05"
         hash = "88d0d4696c9cb2d37d16e330e236cb37cfaec4cd"
         hash = "e3b4e5ec29628791f836e15500f6fdea19beaf3e8d9981c50714656c50d3b365"
         hash = "e726cd071915534761822805724c6c6bfe0fcac604a86f09437f03f301512dc5"
@@ -865,6 +866,7 @@ rule webshell_php_unknown_1
         hash = "12ce6c7167b33cc4e8bdec29fb1cfc44ac9487d1"
         hash = "cf4abbd568ce0c0dfce1f2e4af669ad2"
         date = "2021/01/07"
+        modified = "2023-04-05"
 
     strings:
         $sp0 = /^<\?php \$[a-z]{3,30} = '/ wide ascii
@@ -883,7 +885,7 @@ rule webshell_php_generic_eval
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/07"
-        modified = "2021-10-29"
+        modified = "2023-04-05"
         hash = "a61437a427062756e2221bfb6d58cd62439d09d9"
         hash = "90c5cc724ec9cf838e4229e5e08955eec4d7bf95"
         hash = "2b41abc43c5b6c791d4031005bf7c5104a98e98a00ee24620ce3e8e09a78e78f"
@@ -942,7 +944,7 @@ rule webshell_php_double_eval_tiny
         author = "Arnim Rupp (https://github.com/ruppde)"
         hash = "aabfd179aaf716929c8b820eefa3c1f613f8dcac"
         date = "2021-01-11"
-        modified = "2021-09-29"
+        modified = "2023-04-05"
         score = 50
         hash = "f66fb918751acc7b88a17272a044b5242797976c73a6e54ac6b04b02f61e9761"
         hash = "6b2f0a3bd80019dea536ddbf92df36ab897dd295840cb15bb7b159d0ee2106ff"
@@ -990,6 +992,7 @@ rule webshell_php_obfuscated
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/12"
+        modified = "2023-04-05"
         hash = "eec9ac58a1e763f5ea0f7fa249f1fe752047fa60"
         hash = "181a71c99a4ae13ebd5c94bfc41f9ec534acf61cd33ef5bce5fb2a6f48b65bf4"
         hash = "76d4e67e13c21662c4b30aab701ce9cdecc8698696979e504c288f20de92aee7"
@@ -1114,6 +1117,7 @@ rule webshell_php_obfuscated_encoding
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/04/18"
+        modified = "2023-04-05"
         score = 70
         hash = "119fc058c9c5285498a47aa271ac9a27f6ada1bf4d854ccd4b01db993d61fc52"
         hash = "d5ca3e4505ea122019ea263d6433221030b3f64460d3ce2c7d0d63ed91162175"
@@ -1164,6 +1168,7 @@ rule webshell_php_obfuscated_encoding_mixed_dec_and_hex
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/04/18"
+        modified = "2023-04-05"
         hash = "0e21931b16f30b1db90a27eafabccc91abd757fa63594ba8a6ad3f477de1ab1c"
         hash = "929975272f0f42bf76469ed89ebf37efcbd91c6f8dac1129c7ab061e2564dd06"
         hash = "88fce6c1b589d600b4295528d3fcac161b581f739095b99cd6c768b7e16e89ff"
@@ -1218,6 +1223,7 @@ rule webshell_php_obfuscated_tiny
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/12"
+        modified = "2023-04-05"
 
     strings:
         // 'ev'.'al'
@@ -1308,6 +1314,7 @@ rule webshell_php_obfuscated_str_replace
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/12"
+        modified = "2023-04-05"
         hash = "691305753e26884d0f930cda0fe5231c6437de94"
         hash = "7efd463aeb5bf0120dc5f963b62463211bd9e678"
         hash = "fb655ddb90892e522ae1aaaf6cd8bde27a7f49ef"
@@ -1364,6 +1371,7 @@ rule webshell_php_obfuscated_fopo
         hash = "6da57ad8be1c587bb5cc8a1413f07d10fb314b72"
         hash = "a698441f817a9a72908a0d93a34133469f33a7b34972af3e351bdccae0737d99"
         date = "2021/01/12"
+        modified = "2023-04-05"
 
     strings:
         $payload = /(\beval[\t ]*\([^)]|\bassert[\t ]*\([^)])/ nocase wide ascii
@@ -1419,6 +1427,7 @@ rule webshell_php_gzinflated
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/12"
+        modified = "2023-04-05"
         hash = "49e5bc75a1ec36beeff4fbaeb16b322b08cf192d"
 
     strings:
@@ -1486,6 +1495,7 @@ rule webshell_php_obfuscated_3
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/04/17"
+        modified = "2023-04-05"
 
     strings:
         $obf1 = "chr(" wide ascii
@@ -1786,6 +1796,7 @@ rule webshell_php_includer_eval
         author = "Arnim Rupp (https://github.com/ruppde)"
         hash = "3a07e9188028efa32872ba5b6e5363920a6b2489"
         date = "2021/01/13"
+        modified = "2023-04-05"
 
     strings:
         $payload1 = "eval" fullword wide ascii
@@ -1829,6 +1840,7 @@ rule webshell_php_includer_tiny
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/04/17"
+        modified = "2023-04-05"
 
     strings:
         $php_include1 = /include\(\$_(GET|POST|REQUEST)\[/ nocase wide ascii
@@ -1869,7 +1881,7 @@ rule webshell_php_dynamic
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/13"
-        modified = "2023-02-18"
+        modified = "2023-04-05"
         score = 60
         hash = "65dca1e652d09514e9c9b2e0004629d03ab3c3ef"
         hash = "b8ab38dc75cec26ce3d3a91cb2951d7cdd004838"
@@ -1931,7 +1943,7 @@ rule webshell_php_dynamic_big
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/02/07"
-        modified = "2023-02-18"
+        modified = "2023-04-05"
         score = 50
         hash = "6559bfc4be43a55c6bb2bd867b4c9b929713d3f7f6de8111a3c330f87a9b302c"
         hash = "9e82c9c2fa64e26fd55aa18f74759454d89f968068d46b255bd4f41eb556112e"
@@ -2246,6 +2258,7 @@ rule webshell_php_encoded_big
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/02/07"
+        modified = "2023-04-05"
         score = 50
         hash = "1d4b374d284c12db881ba42ee63ebce2759e0b14"
 
@@ -2328,6 +2341,7 @@ rule webshell_php_generic_backticks
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/07"
+        modified = "2023-04-05"
         hash = "339f32c883f6175233f0d1a30510caa52fdcaa37"
         hash = "8db86ad90883cd208cf86acd45e67c03f994998804441705d690cb6526614d00"
         hash = "af987b0eade03672c30c095cee0c7c00b663e4b3c6782615fb7e430e4a7d1d75"
@@ -2374,6 +2388,7 @@ rule webshell_php_generic_backticks_obfuscated
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/07"
+        modified = "2023-04-05"
         hash = "23dc299f941d98c72bd48659cdb4673f5ba93697"
         hash = "e3f393a1530a2824125ecdd6ac79d80cfb18fffb89f470d687323fb5dff0eec1"
         hash = "1e75914336b1013cc30b24d76569542447833416516af0d237c599f95b593f9b"
@@ -2418,7 +2433,7 @@ rule webshell_php_by_string_known_webshell
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-01-09"
-        modified = "2023-03-06"
+        modified = "2023-04-05"
         score = 70
         hash = "d889da22893536d5965541c30896f4ed4fdf461d"
         hash = "10f4988a191774a2c6b85604344535ee610b844c1708602a355cf7e9c12c3605"
@@ -2552,7 +2567,7 @@ rule webshell_php_strings_susp
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/12"
-        modified = "2022-08-18"
+        modified = "2023-04-05"
         hash = "0dd568dbe946b5aa4e1d33eab1decbd71903ea04"
         score = 50
 
@@ -2634,6 +2649,7 @@ rule webshell_php_in_htaccess
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/07"
+        modified = "2023-04-05"
         hash = "c026d4512a32d93899d486c6f11d1e13b058a713"
 
     strings:
@@ -2650,6 +2666,7 @@ rule webshell_php_function_via_get
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/09"
+        modified = "2023-04-05"
         hash = "ce739d65c31b3c7ea94357a38f7bd0dc264da052d4fd93a1eabb257f6e3a97a6"
         hash = "d870e971511ea3e082662f8e6ec22e8a8443ca79"
         hash = "73fa97372b3bb829835270a5e20259163ecc3fdbf73ef2a99cb80709ea4572be"
@@ -2692,6 +2709,7 @@ rule webshell_php_writer
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/04/17"
+        modified = "2023-04-05"
         score = 50
         hash = "ec83d69512aa0cc85584973f5f0850932fb1949fb5fb2b7e6e5bbfb121193637"
         hash = "407c15f94a33232c64ddf45f194917fabcd2e83cf93f38ee82f9720e2635fa64"
@@ -2778,6 +2796,7 @@ rule webshell_asp_writer
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/03/07"
+        modified = "2023-04-05"
         score = 60
 
     strings:
@@ -2942,7 +2961,7 @@ rule webshell_asp_obfuscated
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/12"
-        modified = "2023-01-06"
+        modified = "2023-04-05"
         hash = "ad597eee256de51ffb36518cd5f0f4aa0f254f27517d28fb7543ae313b15e112"
         hash = "e0d21fdc16e0010b88d0197ebf619faa4aeca65243f545c18e10859469c1805a"
 
@@ -3209,6 +3228,7 @@ rule webshell_asp_generic_eval_on_input
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/07"
+        modified = "2023-04-05"
         hash = "d6b96d844ac395358ee38d4524105d331af42ede"
         hash = "9be2088d5c3bfad9e8dfa2d7d7ba7834030c7407"
         hash = "a1df4cfb978567c4d1c353e988915c25c19a0e4a"
@@ -3311,7 +3331,7 @@ rule webshell_asp_nano
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/13"
-        modified = "2023-01-06"
+        modified = "2023-04-05"
         hash = "3b7910a499c603715b083ddb6f881c1a0a3a924d"
         hash = "990e3f129b8ba409a819705276f8fa845b95dad0"
         hash = "22345e956bce23304f5e8e356c423cee60b0912c"
@@ -3501,6 +3521,7 @@ rule webshell_asp_encoded
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/03/14"
+        modified = "2023-04-05"
 
     strings:
         $encoded1 = "VBScript.Encode" nocase wide ascii
@@ -3604,6 +3625,7 @@ rule webshell_asp_encoded_aspcoding
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/03/14"
+        modified = "2023-04-05"
         score = 60
 
     strings:
@@ -3707,7 +3729,7 @@ rule webshell_asp_by_string
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-01-13"
-        modified = "2023-02-19"
+        modified = "2023-04-05"
         hash = "f72252b13d7ded46f0a206f63a1c19a66449f216"
         hash = "bd75ac9a1d1f6bcb9a2c82b13ea28c0238360b3a7be909b2ed19d3c96e519d3d"
         hash = "56a54fe1f8023455800fd0740037d806709ffb9ece1eb9e7486ad3c3e3608d45"
@@ -3884,6 +3906,7 @@ rule webshell_asp_sniffer
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/03/14"
+        modified = "2023-04-05"
 
     strings:
         $sniff1 = "Socket(" wide ascii
@@ -4013,7 +4036,7 @@ rule webshell_asp_generic_tiny
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/07"
-        modified = "2023-01-06"
+        modified = "2023-04-05"
         hash = "990e3f129b8ba409a819705276f8fa845b95dad0"
         hash = "52ce724580e533da983856c4ebe634336f5fd13a"
 
@@ -4216,7 +4239,7 @@ rule WEBSHELL_asp_generic : FILE {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-03-07"
-        modified = "2023-01-06"
+        modified = "2023-04-05"
         score = 60
         hash = "a8c63c418609c1c291b3e731ca85ded4b3e0fba83f3489c21a3199173b176a75"
         hash = "4cf6fbad0411b7d33e38075f5e00d4c8ae9ce2f6f53967729974d004a183b25c"
@@ -4513,7 +4536,7 @@ rule webshell_asp_generic_registry_reader
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/03/14"
-        modified = "2022-12-01"
+        modified = "2023-04-05"
         score = 50
 
     strings:
@@ -4659,6 +4682,7 @@ rule webshell_aspx_regeorg_csharp
         hash = "c1f43b7cf46ba12cfc1357b17e4f5af408740af7ae70572c9cf988ac50260ce1"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/11"
+        modified = "2023-04-05"
 
     strings:
         $input_sa1 = "Request.QueryString.Get" fullword nocase wide ascii
@@ -4763,6 +4787,7 @@ rule webshell_csharp_generic
         author = "Arnim Rupp (https://github.com/ruppde)"
         hash = "b6721683aadc4b4eba4f081f2bc6bc57adfc0e378f6d80e2bfa0b1e3e57c85c7"
         date = "2021/01/11"
+        modified = "2023-04-05"
 
     strings:
         $input_http = "Request." nocase wide ascii
@@ -4864,7 +4889,7 @@ rule webshell_asp_runtime_compile : FILE {
         author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "https://github.com/antonioCoco/SharPyShell"
         date = "2021/01/11"
-        modified = "2023/02/20"
+        modified = "2023-04-05"
         hash = "e826c4139282818d38dcccd35c7ae6857b1d1d01"
         hash = "e20e078d9fcbb209e3733a06ad21847c5c5f0e52"
         hash = "57f758137aa3a125e4af809789f3681d1b08ee5b"
@@ -4962,6 +4987,7 @@ rule webshell_asp_sql
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/03/14"
+        modified = "2023-04-05"
 
     strings:
         $sql1 = "SqlConnection" fullword wide ascii
@@ -5136,6 +5162,7 @@ rule webshell_asp_scan_writable
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/03/14"
+        modified = "2023-04-05"
         hash = "2409eda9047085baf12e0f1b9d0b357672f7a152"
         hash = "af1c00696243f8b062a53dad9fb8b773fa1f0395631ffe6c7decc42c47eedee7"
 
@@ -5279,6 +5306,7 @@ rule webshell_jsp_regeorg
         hash = "6db49e43722080b5cd5f07e058a073ba5248b584"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/24"
+        modified = "2023-04-05"
 
     strings:
         $jgeorg1 = "request" fullword wide ascii
@@ -5323,6 +5351,7 @@ rule webshell_jsp_http_proxy
         hash = "2f9b647660923c5262636a5344e2665512a947a4"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/24"
+        modified = "2023-04-05"
 
     strings:
         $jh1 = "OutputStream" fullword wide ascii
@@ -5366,6 +5395,7 @@ rule webshell_jsp_writer_nano
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/24"
+        modified = "2023-04-05"
         hash = "ac91e5b9b9dcd373eaa9360a51aa661481ab9429"
         hash = "c718c885b5d6e29161ee8ea0acadb6e53c556513"
         hash = "9f1df0249a6a491cdd5df598d83307338daa4c43"
@@ -5445,6 +5475,7 @@ rule webshell_jsp_generic_tiny
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/07"
+        modified = "2023-04-05"
         hash = "8fd343db0442136e693e745d7af1018a99b042af"
         hash = "87c3ac9b75a72187e8bc6c61f50659435dbdc4fde6ed720cebb93881ba5989d8"
         hash = "1aa6af726137bf261849c05d18d0a630d95530588832aadd5101af28acc034b5"
@@ -5526,6 +5557,7 @@ rule webshell_jsp_generic
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/07"
+        modified = "2023-04-05"
         hash = "4762f36ca01fb9cda2ab559623d2206f401fc0b1"
         hash = "bdaf9279b3d9e07e955d0ce706d9c42e4bdf9aa1"
         hash = "ee9408eb923f2d16f606a5aaac7e16b009797a07"
@@ -5616,6 +5648,7 @@ rule webshell_jsp_generic_base64
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/24"
+        modified = "2023-04-05"
         hash = "8b5fe53f8833df3657ae2eeafb4fd101c05f0db0"
         hash = "1b916afdd415dfa4e77cecf47321fd676ba2184d"
 
@@ -5689,6 +5722,7 @@ rule webshell_jsp_generic_processbuilder
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/07"
+        modified = "2023-04-05"
         hash = "82198670ac2072cd5c2853d59dcd0f8dfcc28923"
         hash = "c05a520d96e4ebf9eb5c73fc0fa446ceb5caf343"
         hash = "347a55c174ee39ec912d9107e971d740f3208d53af43ea480f502d177106bbe8"
@@ -5724,6 +5758,7 @@ rule webshell_jsp_generic_reflection
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/07"
+        modified = "2023-04-05"
         hash = "62e6c6065b5ca45819c1fc049518c81d7d165744"
         hash = "bf0ff88cbb72c719a291c722ae3115b91748d5c4920afe7a00a0d921d562e188"
 
@@ -5804,6 +5839,7 @@ rule webshell_jsp_generic_classloader
         author = "Arnim Rupp (https://github.com/ruppde)"
         hash = "6b546e78cc7821b63192bb8e087c133e8702a377d17baaeb64b13f0dd61e2347"
         date = "2021/01/07"
+        modified = "2023-04-05"
         hash = "f3a7e28e1c38fa5d37811bdda1d6b0893ab876023d3bd696747a35c04141dcf0"
         hash = "8ea2a25344e6094fa82dfc097bbec5f1675f6058f2b7560deb4390bcbce5a0e7"
         hash = "b9ea1e9f91c70160ee29151aa35f23c236d220c72709b2b75123e6fa1da5c86c"
@@ -5878,6 +5914,7 @@ rule webshell_jsp_generic_encoded_shell
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/07"
+        modified = "2023-04-05"
         hash = "3eecc354390d60878afaa67a20b0802ce5805f3a9bb34e74dd8c363e3ca0ea5c"
 
     strings:
@@ -5900,6 +5937,7 @@ rule webshell_jsp_netspy
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/24"
+        modified = "2023-04-05"
         hash = "94d1aaabde8ff9b4b8f394dc68caebf981c86587"
         hash = "3870b31f26975a7cb424eab6521fc9bffc2af580"
 
@@ -5964,6 +6002,7 @@ rule webshell_jsp_by_string
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/09"
+        modified = "2023-04-05"
         hash = "e9060aa2caf96be49e3b6f490d08b8a996c4b084"
         hash = "4c2464503237beba54f66f4a099e7e75028707aa"
         hash = "06b42d4707e7326aff402ecbb585884863c6351a"
@@ -6059,6 +6098,7 @@ rule webshell_jsp_input_upload_write
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/24"
+        modified = "2023-04-05"
         hash = "ef98ca135dfb9dcdd2f730b18e883adf50c4ab82"
         hash = "583231786bc1d0ecca7d8d2b083804736a3f0a32"
         hash = "19eca79163259d80375ebebbc440b9545163e6a3"
@@ -6116,7 +6156,7 @@ rule WEBSHELL_generic_os_strings : FILE {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/12"
-        modified = "2022-09-27"
+        modified = "2023-04-05"
         score = 50
     strings:
         $fp1 = "http://evil.com/" wide ascii
@@ -6283,7 +6323,7 @@ rule webshell_in_image
         hash = "84938133ee6e139a2816ab1afc1c83f27243c8ae76746ceb2e7f20649b5b16a4"
         hash = "52b918a64afc55d28cd491de451bb89c57bce424f8696d6a94ec31fb99b17c11"
         date = "2021/02/27"
-        modified = "2023-01-06"
+        modified = "2023-04-05"
         score = 55
 
     strings:
@@ -6540,6 +6580,7 @@ rule WEBSHELL_Mixed_Obfuscations {
       reference = "https://github.com/Neo23x0/yarGen"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       date = "2023-01-28"
+        modified = "2023-04-05"
       hash1 = "8c4e5c6bdfcc86fa27bdfb075a7c9a769423ec6d53b73c80cbc71a6f8dd5aace"
       hash2 = "78f2086b6308315f5f0795aeaa75544128f14889a794205f5fc97d7ca639335b"
       hash3 = "3bca764d44074820618e1c831449168f220121698a7c82e9909f8eab2e297cbd"
@@ -6562,6 +6603,7 @@ rule WEBSHELL_Cookie_Post_Obfuscation {
         description = "Detects webshell using cookie POST"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-01-28"
+        modified = "2023-04-05"
         license = "https://github.com/SigmaHQ/Detection-Rule-License/blob/main/LICENSE.Detection.Rules.md"
         hash = "d08a00e56feb78b7f6599bad6b9b1d8626ce9a6ea1dfdc038358f4c74e6f65c9"
         hash = "2ce5c4d31682a5a59b665905a6f698c280451117e4aa3aee11523472688edb31"
