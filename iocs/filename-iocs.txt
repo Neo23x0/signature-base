@@ -4247,4 +4247,8 @@ _lsass\.dmp;70
 # Gopuram IOCs (3CX related campaigns) https://securelist.com/gopuram-backdoor-deployed-through-3cx-supply-chain-attack/109344/
 C:\\Windows\\system32\\catroot2\\edb\.chk\.log;80
 
+# 3CX IOCs from mandiant report https://www.3cx.com/blog/news/mandiant-initial-results/
+\\private\\etc\\apdl\.cf;75
+\\Library\\Graphics\\Quartz$;75
+
 # End

@@ -10804,8 +10804,14 @@ f7ba7f9bf608128894196cf7314f68b78d2a6df10718c8e0cd64dbe3b86bc730;3CX Compromise 
 fad482ded2e25ce9e1dd3d3ecc3227af714bdfbbde04347dbc1b21d6a3670405;3CX Compromise - Windows binary https://www.reddit.com/r/crowdstrike/comments/125r3uu/20230329_situational_awareness_crowdstrike/
 fee4f9dabc094df24d83ec1a8c4e4ff573e5d9973caa676f58086c99561382d7;3CX Compromise - libffmpeg.dylib
 ffde718e6839ef7123b6e7347969c50652e07877f245450f29133f062f3275ec;3CX Compromise - 3CXDesktopApp-memory.exe
+6c121f2b2efa6592c2c22b29218157ec9e63f385e7a1d7425857d603ddef8c59;3CX macOS Update agent https://objective-see.org/blog/blog_0x74.html
 
 9f85a07d4b4abff82ca18d990f062a84;Gopuram IOC (3CX related activity) https://securelist.com/gopuram-backdoor-deployed-through-3cx-supply-chain-attack/109344/
 96d3bbf4d2cf6bc452b53c67b3f2516a;Gopuram IOC (3CX related activity) https://securelist.com/gopuram-backdoor-deployed-through-3cx-supply-chain-attack/109344/
 6ce5b6b4cdd6290d396465a1624d489c7afd2259a4d69b73c6b0ba0e5ad4e4ad;Gopuram shellcode loaders https://securelist.com/gopuram-backdoor-deployed-through-3cx-supply-chain-attack/109344/
 b56279136d816a11cf4db9fc1b249da04b3fa3aef4ba709b20cdfbe572394812;Gopuram shellcode loaders https://securelist.com/gopuram-backdoor-deployed-through-3cx-supply-chain-attack/109344/
+
+882d95bdbca75ab9d13486e477ab76b3978e14d6fca30c11ec368f7e5fa1d0cb;eFile infected extensions https://twitter.com/malwrhunterteam/status/1642994177095942146?s=20
+095fbb7685f5ad054bab28346d744e137564beabc33c13a25818936ddc739f5b;eFile infected extensions https://twitter.com/malwrhunterteam/status/1642994177095942146?s=20
+
+d9d19abffc2c7dac11a16745f4aea44f;SIMPLESEA malware mentioned in Mandiant report on 3CX https://www.3cx.com/blog/news/mandiant-initial-results/
