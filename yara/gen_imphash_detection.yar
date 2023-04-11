@@ -189,7 +189,7 @@ rule HKTL_Imphashes_Aug22_1 {
       )
 }
 
-rule SUSP_Imphash_Mar23_2 {
+rule SUSP_Imphash_Mar23_2 : HIGHVOL {
     meta:
         description = "Detects imphash often found in malware samples (Zero hits with with search for 'imphash:x p:0' on Virustotal)"
         license = "Detection Rule License 1.1 https://github.com/SigmaHQ/Detection-Rule-License"
