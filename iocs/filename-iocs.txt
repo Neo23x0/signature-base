@@ -4252,6 +4252,6 @@ C:\\Windows\\system32\\catroot2\\edb\.chk\.log;80
 \\Library\\Graphics\\Quartz$;75
 
 # Gopuram Backdoor file name IOC 5131ae1d27739f56bba92852be3a0cc2 / da450236dc92a53c8476b0b0de9a88e2 https://valhalla.nextron-systems.com/info/rule/APT_MAL_Gopuram_Backdoor_Apr23
-C:\\Windows\\system32\\dovez\.efs;85 
+C:\\Windows\\system32\\krwve\.jat;85
 
 # End
