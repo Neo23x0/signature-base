@@ -3,7 +3,7 @@ rule MAL_RANSOM_LNX_macOS_LockBit_Apr23_1 {
    meta:
       description = "Detects LockBit ransomware samples for Linux and macOS"
       author = "Florian Roth"
-      reference = "https://twitter.com/Exploit_Pack/status/1646966858237595650/photo/1"
+      reference = "https://twitter.com/malwrhunterteam/status/1647384505550876675?s=20"
       date = "2023-04-15"
       hash1 = "0a2bffa0a30ec609d80591eef1d0994d8b37ab1f6a6bad7260d9d435067fb48e"
       hash2 = "9ebcbaf3c9e2bbce6b2331238ab584f95f7ced326ca4aba2ddcc8aa8ee964f66"
