@@ -1,7 +1,7 @@
 
-rule MAL_RANSOM_LNX_macOS_Lockbit_Apr23_1 {
+rule MAL_RANSOM_LNX_macOS_LockBit_Apr23_1 {
    meta:
-      description = "Detects Lockbit ransomware samples for Linux and macOS"
+      description = "Detects LockBit ransomware samples for Linux and macOS"
       author = "Florian Roth"
       reference = "https://twitter.com/Exploit_Pack/status/1646966858237595650/photo/1"
       date = "2023-04-15"
