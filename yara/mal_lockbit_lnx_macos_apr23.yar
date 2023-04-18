@@ -74,8 +74,8 @@ rule MAL_RANSOM_LockBit_Locker_LOG_Apr23_1 {
    strings:
       $s1 = " is encrypted. Checksum after encryption "
       $s2 = "~~~~~Hardware~~~~"
-      $s1 = "[+] Add directory to encrypt:
-      $s2 = "][+] Launch parameters: "
+      $s3 = "[+] Add directory to encrypt:"
+      $s4 = "][+] Launch parameters: "
    condition:
       2 of them
 }
