@@ -38,3 +38,60 @@ rule MAL_RANSOM_LNX_macOS_LockBit_Apr23_1 {
       or 2 of ($x*)
       or 5 of them
 }
+
+rule MAL_RANSOM_LockBit_Apr23_1 {
+   meta:
+      description = "Detects indicators found in LockBit ransomware"
+      author = "Florian Roth"
+      reference = "https://objective-see.org/blog/blog_0x75.html"
+      date = "2023-04-17"
+      score = 75
+   strings:
+      $xe1 = "-i '/path/to/crypt'" xor
+      $xe2 = "http://lockbit" xor
+      
+      $s1 = "idelayinmin" ascii
+      $s2 = "bVMDKmode" ascii
+      $s3 = "bSelfRemove" ascii
+      $s4 = "iSpotMaximum" ascii
+
+      $fp1 = "<html"
+   condition:
+      (
+         1 of ($x*)
+         or 4 of them
+      )
+      and not 1 of ($fp*)
+}
+
+rule MAL_RANSOM_LockBit_Locker_LOG_Apr23_1 {
+   meta:
+      description = "Detects indicators found in LockBit ransomware log files"
+      author = "Florian Roth"
+      reference = "https://objective-see.org/blog/blog_0x75.html"
+      date = "2023-04-17"
+      score = 75
+   strings:
+      $s1 = " is encrypted. Checksum after encryption "
+      $s2 = "~~~~~Hardware~~~~"
+      $s1 = "[+] Add directory to encrypt:
+      $s2 = "][+] Launch parameters: "
+   condition:
+      2 of them
+}
+
+rule MAL_RANSOM_LockBit_ForensicArtifacts_Apr23_1 {
+   meta:
+      description = "Detects forensic artifacts found in LockBit intrusions"
+      author = "Florian Roth"
+      reference = "https://objective-see.org/blog/blog_0x75.html"
+      date = "2023-04-17"
+      score = 75
+   strings:
+      $x1 = "/tmp/locker.log" ascii fullword
+      $x2 = "Executable=LockBit/locker_" ascii
+      /* Tor Browser Links:\x0d\x0ahttp://lockbit */
+      $xc1 = { 54 6F 72 20 42 72 6F 77 73 65 72 20 4C 69 6E 6B 73 3A 0D 0A 68 74 74 70 3A 2F 2F 6C 6F 63 6B 62 69 74 }
+   condition:
+      1 of ($x*)
+}
