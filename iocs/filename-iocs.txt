@@ -4257,4 +4257,9 @@ C:\\Windows\\system32\\krwve\.jat;85
 # Lockbit IOCs https://objective-see.org/blog/blog_0x75.html
 \\tmp\\locker\.log;70
 
+# Mint Sandstorm IOCs https://www.microsoft.com/en-us/security/blog/2023/04/18/nation-state-threat-actor-mint-sandstorm-refines-tradecraft-to-attack-high-value-targets/
+\\DocTemplate\.dotm;70
+\\DntDocTemp\.dotm;85
+\\Drokbk\.exe;80
+
 # End
