@@ -10821,4 +10821,5 @@ c6441c961dcad0fe127514a918eaabd4;NK UNC4736 VEILEDSIGNAL malware https://www.man
 6727284586ecf528240be21bb6e97f88;NK UNC4736 VEILEDSIGNAL malware https://www.mandiant.com/resources/blog/3cx-software-supply-chain-compromise
 00a43d64f9b5187a1e1f922b99b09b77;NK UNC4736 VEILEDSIGNAL malware https://www.mandiant.com/resources/blog/3cx-software-supply-chain-compromise
 451c23709ecd5a8461ad060f6346930c;NK UNC4736 POOLRAT malware https://www.mandiant.com/resources/blog/3cx-software-supply-chain-compromise
+900b63ff9b06e0890bf642bdfcbfcc6ab7887c7a3c057c8e3fd6fba5ffc8e5d6;NK UNC4736 Installer that drops VEILEDSIGNAL malware https://twitter.com/cyb3rops/status/1649054604620075022?s=20
 aa318070ad1bf90ed459ac34dc5254acc178baff3202d2ea7f49aaf5a055dd43;NK UNC4736 VEILEDSIGNAL malware https://twitter.com/cyb3rops/status/1649068018754830336?s=20

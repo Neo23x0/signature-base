@@ -1,3 +1,37 @@
+import "pe"
+
+rule APT_MAL_VEILEDSIGNAL_Backdoor_Apr23 {
+   meta:
+      description = "Detects malicious VEILEDSIGNAL backdoor"
+      author = "X__Junior"
+      reference = "https://www.mandiant.com/resources/blog/3cx-software-supply-chain-compromise"
+      date = "2023-04-20"
+      score = 85
+      hash1 = "aa318070ad1bf90ed459ac34dc5254acc178baff3202d2ea7f49aaf5a055dd43"
+    strings:
+      $op1 = {B8 AB AA AA AA F7 E1 8B C1 C1 EA 02 8D 14 52 03 D2 2B C2 8A 84 05 ?? ?? ?? ?? 30 84 0D ?? ?? ?? ??} /* xor decryptiom*/ 
+      $op2 = { 50 66 0F 13 85 ?? ?? ?? ?? 66 0F 13 85 ?? ?? ?? ?? 66 0F 13 85 ?? ?? ?? ?? 66 0F 13 85 ?? ?? ?? ?? C7 85 ?? ?? ?? ?? 3C 00 00 00 C7 85 ?? ?? ?? ?? 40 00 00 00 C7 85 ?? ?? ?? ?? 05 00 00 00 FF 15} /* shellexecute*/
+      $op3 = { 6A 00 8D 85 ?? ?? ?? ?? 50 6A 04 8D 85 ?? ?? ?? ?? 50 57 FF 15 } /* read file*/
+    condition:
+      uint16(0) == 0x5a4d and all of them
+}
+
+rule SUSP_APT_MAL_VEILEDSIGNAL_Backdoor_Apr23 {
+   meta:
+      description = "Detects marker found in VEILEDSIGNAL backdoor"
+      author = "X__Junior"
+      reference = "https://www.mandiant.com/resources/blog/3cx-software-supply-chain-compromise"
+      date = "2023-04-20"
+      score = 75
+      hash1 = "7986bbaee8940da11ce089383521ab420c443ab7b15ed42aed91fd31ce833896"
+      hash2 = "c485674ee63ec8d4e8fde9800788175a8b02d3f9416d0e763360fff7f8eb4e02"
+      hash3 = "cc4eedb7b1f77f02b962f4b05278fa7f8082708b5a12cacf928118520762b5e2"
+   strings:
+      $opb1 = { 81 BD ?? ?? ?? ?? 5E DA F3 76} /* marker */
+      $opb2 = { C7 85 ?? ?? ?? ?? 74 F2 39 DA 66 C7 85 ?? ?? ?? ?? E5 CF} /* xor key*/
+   condition:
+      all of them
+}
 
 rule APT_NK_MAL_M_Hunting_VEILEDSIGNAL_1 {
    meta:
@@ -172,4 +206,20 @@ rule APT_NK_TradingTech_ForensicArtifacts_Apr23_1 {
       $fp1 = "<html"
    condition:
       1 of ($x*) and not 1 of ($fp*)
+}
+
+rule SUSP_TH_APT_UNC4736_TradingTech_Cert_Apr23_1 {
+   meta:
+      description = "Threat hunting rule that detects samples signed with the compromised Trading Technologies certificate after May 2022"
+      author = "Florian Roth"
+      reference = "https://www.mandiant.com/resources/blog/3cx-software-supply-chain-compromise"
+      date = "2023-04-20"
+      score = 65
+   strings:
+      $s1 = { 00 85 38 A6 C5 01 8F 50 FC } /* serial number */
+      $s2 = "Go Daddy Secure Certificate Authority - G2" /* CA */
+      $s3 = "Trading Technologies International, Inc"
+   condition:
+      pe.timestamp > 1651363200 /* Sunday, May 1, 2022 12:00:00 AM */
+      and all of them
 }
