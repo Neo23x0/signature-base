@@ -160,7 +160,7 @@ rule APT_NK_MAL_M_Hunting_POOLRAT {
 
 rule APT_NK_TradingTech_ForensicArtifacts_Apr23_1 {
    meta:
-      description = "Detects "
+      description = "Detects forensic artifacts, file names and keywords related the Trading Technologies compromise UNC4736"
       author = "Florian Roth"
       reference = "https://www.mandiant.com/resources/blog/3cx-software-supply-chain-compromise"
       date = "2023-04-20"
