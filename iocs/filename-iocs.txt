@@ -4262,4 +4262,8 @@ C:\\Windows\\system32\\krwve\.jat;85
 \\DntDocTemp\.dotm;85
 \\Drokbk\.exe;80
 
+# UNC4736 Filename IOCs - Trading Technologies International compromise https://www.mandiant.com/resources/blog/3cx-software-supply-chain-compromise
+C:\\Windows\\System32\\MsMpEng\.exe;75
+\\X_TRADER_r7\.17\.90p608\.exe;75
+
 # End

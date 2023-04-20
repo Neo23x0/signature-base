@@ -10815,3 +10815,9 @@ b56279136d816a11cf4db9fc1b249da04b3fa3aef4ba709b20cdfbe572394812;Gopuram shellco
 095fbb7685f5ad054bab28346d744e137564beabc33c13a25818936ddc739f5b;eFile infected extensions https://twitter.com/malwrhunterteam/status/1642994177095942146?s=20
 
 d9d19abffc2c7dac11a16745f4aea44f;SIMPLESEA malware mentioned in Mandiant report on 3CX https://www.3cx.com/blog/news/mandiant-initial-results/
+
+404b09def6054a281b41d309d809a428;NK UNC4736 VEILEDSIGNAL malware https://www.mandiant.com/resources/blog/3cx-software-supply-chain-compromise
+c6441c961dcad0fe127514a918eaabd4;NK UNC4736 VEILEDSIGNAL malware https://www.mandiant.com/resources/blog/3cx-software-supply-chain-compromise
+6727284586ecf528240be21bb6e97f88;NK UNC4736 VEILEDSIGNAL malware https://www.mandiant.com/resources/blog/3cx-software-supply-chain-compromise
+00a43d64f9b5187a1e1f922b99b09b77;NK UNC4736 VEILEDSIGNAL malware https://www.mandiant.com/resources/blog/3cx-software-supply-chain-compromise
+451c23709ecd5a8461ad060f6346930c;NK UNC4736 POOLRAT malware https://www.mandiant.com/resources/blog/3cx-software-supply-chain-compromise

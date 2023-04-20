@@ -1835,4 +1835,12 @@ visualstudiofactory.com
 zacharryblogs.com
 msboxonline.com
 
+# UNC4736 / APT43 related C2 Domains https://www.mandiant.com/resources/blog/3cx-software-supply-chain-compromise
+curvefinances.com
+pbxphonenetwork.com
+journalide.org
+nxmnv.site
+msedgepackageinfo.com
+apollo-crypto.org.shilaerc20.com
+
 # Last Line
