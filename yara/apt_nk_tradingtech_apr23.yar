@@ -195,14 +195,16 @@ rule APT_NK_TradingTech_ForensicArtifacts_Apr23_1 {
       author = "Florian Roth"
       reference = "https://www.mandiant.com/resources/blog/3cx-software-supply-chain-compromise"
       date = "2023-04-20"
-      score = 70
+      modified = "2023-04-21"
+      score = 60
    strings:
       $x1 = "www.tradingtechnologies.com/trading/order-management" ascii wide
       $x2 = "X_TRADER_r7.17.90p608.exe" ascii wide
 
       $fp1 = "<html"
    condition:
-      1 of ($x*) and not 1 of ($fp*)
+      not uint16(0) == 0x5025
+      and 1 of ($x*) and not 1 of ($fp*)
 }
 
 rule SUSP_TH_APT_UNC4736_TradingTech_Cert_Apr23_1 {
