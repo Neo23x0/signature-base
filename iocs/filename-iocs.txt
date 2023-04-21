@@ -4266,8 +4266,8 @@ C:\\Windows\\system32\\krwve\.jat;85
 C:\\Windows\\System32\\MsMpEng\.exe;75
 \\X_TRADER_r7\.17\.90p608\.exe;75
 \\X_TRADER-ja\.mst;80
-C:\\Programdata\\TPM\\;60
-C:\\Programdata\\TPM\\TpmVscMgrSvr\.exe;85
-C:\\Programdata\\TPM\\winscard\.dll;85
+C:\\ProgramData\\TPM\\;60
+C:\\ProgramData\\TPM\\TpmVscMgrSvr\.exe;85
+C:\\ProgramData\\TPM\\winscard\.dll;85
 
 # End
