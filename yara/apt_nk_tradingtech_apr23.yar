@@ -199,7 +199,11 @@ rule APT_NK_TradingTech_ForensicArtifacts_Apr23_1 {
       score = 60
    strings:
       $x1 = "www.tradingtechnologies.com/trading/order-management" ascii wide
-      $x2 = "X_TRADER_r7.17.90p608.exe" ascii wide
+      
+      $xf1 = "X_TRADER_r7.17.90p608.exe" ascii wide
+      $xf2 = "\\X_TRADER-ja.mst" ascii wide
+      $xf3 = "C:\\Programdata\\TPM\\TpmVscMgrSvr.exe" ascii wide
+      $xf4 = "C:\\Programdata\\TPM\\winscard.dll" ascii wide
 
       $fp1 = "<html"
    condition:
