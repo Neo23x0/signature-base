@@ -21,13 +21,15 @@ rule SUSP_APT_MAL_VEILEDSIGNAL_Backdoor_Apr23 {
       author = "X__Junior"
       reference = "https://www.mandiant.com/resources/blog/3cx-software-supply-chain-compromise"
       date = "2023-04-20"
+      modified = "2023-04-21"
       score = 75
       hash1 = "aa318070ad1bf90ed459ac34dc5254acc178baff3202d2ea7f49aaf5a055dd43"
    strings:
       $opb1 = { 81 BD ?? ?? ?? ?? 5E DA F3 76} /* marker */
-      $opb2 = { C7 85 ?? ?? ?? ?? 74 F2 39 DA 66 C7 85 ?? ?? ?? ?? E5 CF} /* xor key*/
+      $opb2 = { C7 85 ?? ?? ?? ?? 74 F2 39 DA 66 C7 85 ?? ?? ?? ?? E5 CF} /* 1st xor key*/
+      $opb3 = { C7 85 ?? ?? ?? ?? 74 F2 39 DA B9 00 04 00 00 66 C7 85 ?? ?? ?? ?? E5 CF } /* 2nd xor key*/
    condition:
-      all of them
+      2 of them
 }
 
 rule APT_NK_MAL_M_Hunting_VEILEDSIGNAL_1 {
@@ -153,11 +155,12 @@ rule APT_NK_MAL_M_Hunting_VEILEDSIGNAL_6 {
       (uint16(0) == 0x5A4D) and (uint32(uint32(0x3C)) == 0x00004550) and (uint16(uint32(0x3C)+0x18) == 0x010B) and all of them
 }
 
-rule APT_NK_MAL_M_Hunting_POOLRAT {
+rule SUSP_NK_MAL_M_Hunting_POOLRAT {
    meta:
       description = "Detects VEILEDSIGNAL malware"
       author = "Mandiant"
-      score = 75
+      old_rule_name = "APT_NK_MAL_M_Hunting_POOLRAT"
+      score = 70
       disclaimer = "This rule is meant for hunting and is not tested to run in a production environment"
       description = "Detects strings found in POOLRAT malware"
       hash1 = "451c23709ecd5a8461ad060f6346930c"
