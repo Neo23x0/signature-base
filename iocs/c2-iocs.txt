@@ -1843,4 +1843,18 @@ nxmnv.site
 msedgepackageinfo.com
 apollo-crypto.org.shilaerc20.com
 
+# Papercut exploitation ZDI-CAN-19226 (CVE-2023-27351) and ZDI-CAN-18987 (CVE-2023-27350) https://www.huntress.com/blog/critical-vulnerabilities-in-papercut-print-management-software
+upd488.windowservicecemter.com
+upd488.windowservicecemter.com
+upd488.windowservicecemter.com
+upd488.windowservicecemter.com
+anydeskupdate.com
+anydeskupdates.com
+netviewremote.com
+updateservicecenter.com
+windowcsupdates.com
+windowservicecentar.com
+windowservicecenter.com
+winserverupdates.com
+
 # Last Line
