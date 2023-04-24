@@ -10823,3 +10823,973 @@ c6441c961dcad0fe127514a918eaabd4;NK UNC4736 VEILEDSIGNAL malware https://www.man
 451c23709ecd5a8461ad060f6346930c;NK UNC4736 POOLRAT malware https://www.mandiant.com/resources/blog/3cx-software-supply-chain-compromise
 900b63ff9b06e0890bf642bdfcbfcc6ab7887c7a3c057c8e3fd6fba5ffc8e5d6;NK UNC4736 Installer that drops VEILEDSIGNAL malware https://twitter.com/cyb3rops/status/1649054604620075022?s=20
 aa318070ad1bf90ed459ac34dc5254acc178baff3202d2ea7f49aaf5a055dd43;NK UNC4736 VEILEDSIGNAL malware https://twitter.com/cyb3rops/status/1649068018754830336?s=20
+
+000547560fea0dd4b477eb28bf781ea67bf83c748945ce8923f90fdd14eb7a4b;60;CorsairLLAccess64.sys - Corsair LL Access - vulnerable driver
+0040153302b88bee27eb4f1eca6855039e1a057370f5e8c615724fa5215bada3;60;BS_Def64.sys - Default BIOS Flash Driver - vulnerable driver
+0067c788e1cb174f008c325ebde56c22;60;PanMonFltX64.sys - PanCafe Manager File Monitor - vulnerable driver
+00a442a4305c62cefa8105c0b4c4a9a5f4d1e93b;60;asmmap64.sys - Memory mapping Driver - vulnerable driver
+00b4e8b7644d1bf93f5ddb5740b444b445e81b02;60;driver7-x86.sys - The driver for the ECtool driver-based tools - vulnerable driver
+010c0e5ac584e3ab97a2daf84cf436f5;60;CITMDRV_IA64.sys - vulnerable driver
+012db3a80faf1f7f727b538cbe5d94064e7159de;60;WinRing0.sys - WinRing0 - vulnerable driver
+01779ee53f999464465ed690d823d160f73f10e7;60;WinIO32A.sys - vulnerable driver
+01a578a3a39697c4de8e3dab04dba55a4c35163e;60;NTIOLib.sys - NTIOLib For MSIRatio_CC - vulnerable driver
+01aa278b07b58dc46c84bd0b1b5c8e9ee4e62ea0bf7a695862444af32e87f1fd;60;RTCore64.sys - vulnerable driver
+01e024cb14b34b6d525c642a710bfa14497ea20fd287c39ba404b10a8b143ece;60;ATSZIO.sys - ATSZIO Driver - vulnerable driver
+01e024cb14b34b6d525c642a710bfa14497ea20fd287c39ba404b10a8b143ece;60;ATSZIO64.sys - ATSZIO Driver - vulnerable driver
+0211ab46b73a2623b86c1cfcb30579ab;60;SSPORT.sys - Port Contention Driver - vulnerable driver
+02198692732722681f246c1b33f7a9d9;60;smep_namco.sys - vulnerable driver
+025e7be9fcefd6a83f4471bba0c11f1c11bd5047047d26626da24ee9a419cdc4;60;asmmap64.sys - Memory mapping Driver - vulnerable driver
+0291d0457acaf0fe8ed5c3137302390469ce8b35;75;7.sys - malicious
+0296e2ce999e67c76352613a718e11516fe1b0efc3ffdb8918fc999dd76a73a5;60;dbutil_2_3.sys - vulnerable driver
+0296e2ce999e67c76352613a718e11516fe1b0efc3ffdb8918fc999dd76a73a5;60;dbutil_2_3.sys - vulnerable driver
+0307d76750dd98d707c699aee3b626643afb6936;60;CITMDRV_IA64.sys - vulnerable driver
+0395b4e0eb21693590ad1cfdf7044b8b;60;NTIOLib.sys - NTIOLib - vulnerable driver
+0466e90bf0e83b776ca8716e01d35a8a2e5f96d3;60;mhyprot.sys - vulnerable driver
+0466e90bf0e83b776ca8716e01d35a8a2e5f96d3;60;Mhyprot2.sys - vulnerable driver
+04a85e359525d662338cae86c1e59b1d7aa9bd12b920e8067503723dc1e03162;60;ADV64DRV.sys - vulnerable driver
+04a88f5974caa621cee18f34300fc08a;75;gftkyj64.sys - malicious
+054299e09cea38df2b84e6b29348b418;60;CITMDRV_AMD64.sys - vulnerable driver
+054a50293c7b4eea064c91ef59cf120d8100f237;60;NTIOLib.sys - NTIOLib - vulnerable driver
+05ac1c64ca16ab0517fe85d4499d08199e63df26;60;81.sys - vulnerable driver
+05b146a48a69dd62a02759487e769bd30d39f16374bc76c86453b4ae59e7ffa4;75;NodeDriver.sys - malicious
+05c0c49e8bcf11b883d41441ce87a2ee7a3aba1d;60;viraglt64.sys - VirIT Agent System - vulnerable driver
+05c0c49e8bcf11b883d41441ce87a2ee7a3aba1d;60;viragt64.sys - VirIT Agent System - vulnerable driver
+05f052c64d192cf69a462a5ec16dda0d43ca5d0245900c9fcb9201685a2e7748;60;Agent64.sys - DriverAgent Direct I/O for 64-bit Windows - vulnerable driver
+064de88dbbea67c149e779aac05228e5405985c7;75;ntbios_2.sys - ntbios driver - malicious
+06508aacb4ed0a1398a2b0da5fa2dbf7da435b56da76fd83c759a50a51c75caf;60;PanMonFltX64.sys - PanCafe Manager File Monitor - vulnerable driver
+06a0ec9a316eb89cb041b1907918e3ad3b03842ec65f004f6fa74d57955573a4;75;wantd.sys - WAN Transport Driver - malicious
+06bda5a1594f7121acd2efe38ccb617fbc078bb9a70b665a5f5efd70e3013f50;60;EneTechIo64.sys - vulnerable driver
+0752f113d983030939b4ab98b0812cf0;60;NTIOLib.sys - NTIOLib - vulnerable driver
+0761c357aed5f591142edaefdf0c89c8;60;WINIODrv.sys - vulnerable driver
+078ae07dec258db4376d5a2a05b9b508d68c0123;60;CITMDRV_AMD64.sys - vulnerable driver
+07b6d69bafcfd767f1b63a490a8843c3bb1f8e1bbea56176109b5743c8f7d357;60;HOSTNT.sys - Hostnt 64-bit driver - vulnerable driver
+07f83829e7429e60298440cd1e601a6a;60;semav6msr.sys - vulnerable driver
+07f83829e7429e60298440cd1e601a6a;60;semav6msr64.sys - vulnerable driver
+082c39fe2e3217004206535e271ebd45c11eb072efde4cc9885b25ba5c39f91d;60;rtkiow8x64.sys - Realtek IO Driver - vulnerable driver
+08596732304351b311970ff96b21f451f23b1e25;60;fidpcidrv.sys - vulnerable driver
+0898af0888d8f7a9544ef56e5e16354e;60;iomem64.sys - DTR Kernel mode driver - vulnerable driver
+08eb2d2aa25c5f0af4e72a7e0126735536f6c2c05e9c7437282171afe5e322c6;60;mydrivers.sys - DriverGenius Hardware monitor - vulnerable driver
+09bedbf7a41e0f8dabe4f41d331db58373ce15b2e9204540873a1884f38bdde1;60;NTIOLib.sys - NTIOLib - vulnerable driver
+0a2ec9e3e236698185978a5fc76e74e6;60;RTCore64.sys - vulnerable driver
+0a6a1c9a7f80a2a5dcced5c4c0473765;60;Se64a.sys - EnTech softEngine x64 kernel-mode driver - vulnerable driver
+0aafa9f47acf69d46c9542985994ff5321f00842a28df2396d4a3076776a83cb;60;AsrRapidStartDrv.sys - RW-Everything Read & Write Driver - vulnerable driver
+0ae30291c6cbfa7be39320badd6e8de0;75;daxin_blank6.sys - malicious
+0af5ccb3d33a9ba92071c9637be6254030d61998733a5eb3583e865e17844e05;60;AMDPowerProfiler.sys - AMD Power Profiling Driver - vulnerable driver
+0b6ec2aedc518849a1c61a70b1f9fb068ede2bc3;60;AsrSetupDrv103.sys - vulnerable driver
+0b8b83f245d94107cb802a285e6529161d9a834d;60;NTIOLib.sys - NTIOLib - vulnerable driver
+0ba6afe0ea182236f98365bd977adfdf;60;CITMDRV_AMD64.sys - vulnerable driver
+0c0195c48b6b8582fa6f6373032118da;60;WinRing0x64.sys - WinRing0 - vulnerable driver
+0c26ab1299adcd9a385b541ef1653728270aa23e;60;VProEventMonitor.sys - VProEventMonitor.Sys - Event Monitoring driver - vulnerable driver
+0c74d09da7baf7c05360346e4c3512d0cd433d59;60;WinIo64A.sys - vulnerable driver
+0d6fef14f8e1ce5753424bd22c46b1ce;60;PanIOx64.sys - Temperature and system information driver - vulnerable driver
+0de4247e72d378713bcf22d5c5d3874d079203bb4364e25f67a90d5570bdcce8;60;TestBone.sys - vulnerable driver
+0ebaef662b14410c198395b13347e1d175334ec67919709ad37d65eba013adff;60;bw.sys - vulnerable driver
+0ec361f2fba49c73260af351c39ff9cb;60;RTCore64.sys - vulnerable driver
+0f780b7ada5dd8464d9f2cc537d973f5ac804e9c;60;bandai.sys - vulnerable driver
+0fd2df82341bf5ebb8a53682e60d08978100c01acb0bed7b6ce2876ada80f670;60;Lurker.sys - vulnerable driver
+10115219e3595b93204c70eec6db3e68a93f3144;75;2.sys - malicious
+101402d4f5d1ae413ded499c78a5fcbbc7e3bae9b000d64c1dd64e3c48c37558;60;NTIOLib.sys - NTIOLib - vulnerable driver
+10e15ba8ff8ed926ddd3636cec66a0f08c9860a4;60;fiddrv64.sys - vulnerable driver
+11bd2c9f9e2397c9a16e0990e4ed2cf0679498fe0fd418a3dfdac60b5c160ee5;60;WinRing0x64.sys - WinRing0 - vulnerable driver
+11fb599312cb1cf43ca5e879ed6fb71e;60;EneIo64.sys - vulnerable driver
+11fb599312cb1cf43ca5e879ed6fb71e;60;winio64.sys - vulnerable driver
+120b5bbb9d2eb35ff4f62d79507ea63a;60;BS_Def64.sys - Default BIOS Flash Driver - vulnerable driver
+12908c285b9d68ee1f39186110df0f1e;60;AsrDrv106.sys - ASRock IO Driver - vulnerable driver
+1292c7dd60214d96a71e7705e519006b9de7968f;60;elrawdsk.sys - RawDisk Driver. Allows write access to files and raw disk sectors for user mode applications in Windows 2000 and later. - vulnerable driver
+12cecc3c14160f32b21279c1a36b8338;60;WinRing0.sys - WinRing0 - vulnerable driver
+12d38abbc5391369a4c14f3431715b5b76ac5a2a;60;PanMonFltX64.sys - PanCafe Manager File Monitor - vulnerable driver
+131d5490ceb9a5b2324d8e927fea5becfc633015661de2f4c2f2375a3a3b64c6;60;NTIOLib.sys - NTIOLib - vulnerable driver
+1392b92179b07b672720763d9b1028a5;60;AsIO.sys - vulnerable driver
+1392b92179b07b672720763d9b1028a5;60;AsUpIO64.sys - vulnerable driver
+13dda15ef67eb265869fc371c72d6ef0;60;ALSysIO64.sys - ALSysIO - vulnerable driver
+13ee349c15ee5d6cf640b3d0111ffc0e;60;AMDRyzenMasterDriver.sys - AMD Ryzen Master Service Driver - vulnerable driver
+14580bd59c55185115fd3abe73b016a2;75;ntbios.sys - ntbios driver - malicious
+146d77e80ca70ea5cb17bfc9a5cea92334f809cbdc87a51c2d10b8579a4b9c88;60;t.sys - vulnerable driver
+1493d342e7a36553c56b2adea150949e;60;elrawdsk.sys - RawDisk Driver. Allows write access to files and raw disk sectors for user mode applications in Windows 2000 and later. - vulnerable driver
+14bf0eaa90e012169745b3e30c281a327751e316;60;NTIOLib.sys - NTIOLib_X64 - vulnerable driver
+14eead4d42728e9340ec8399a225c124;60;CITMDRV_IA64.sys - vulnerable driver
+152b6bb9ffd2ffec00cc46f5c6e29362d0e66e67;60;NTIOLib.sys - NTIOLib for DebugLED - vulnerable driver
+159e7c5a12157af92e0d14a0d3ea116f91c09e21a9831486e6dc592c93c10980;60;WCPU.sys - ASUS TDE CPU Driver - vulnerable driver
+15c53eb3a0ea44bbd2901a45a6ebeae29bb123f9c1115c38dfb2cdbec0642229;60;nt6.sys - vulnerable driver
+15d1a6a904c8409fb47a82aefa42f8c3c7d8c370;60;AsrDrv103.sys - ASRock IO Driver - vulnerable driver
+15df139494d2c40a645fb010908551185c27f3c5;60;NTIOLib.sys - NTIOLib - vulnerable driver
+160c96b5e5db8c96b821895582b501e3c2d5d6e7;60;CITMDRV_IA64.sys - vulnerable driver
+166759fd511613414d3213942fe2575b926a6226;60;rtkio.sys - Realtek IODriver - vulnerable driver
+16d7ecf09fc98798a6170e4cef2745e0bee3f5c7;60;zam64.sys - ZAM - vulnerable driver
+16d7ecf09fc98798a6170e4cef2745e0bee3f5c7;60;zamguard64.sys - ZAM - vulnerable driver
+17fa047c1f979b180644906fe9265f21af5b0509;75;0x3440_blacklotus_v2_driver.sys - malicious
+1898ceda3247213c084f43637ef163b3;60;iqvw64e.sys - Intel(R) Network Adapter Diagnostic Driver - vulnerable driver
+1898ceda3247213c084f43637ef163b3;60;NalDrv.sys - Intel(R) Network Adapter Diagnostic Driver - vulnerable driver
+18e1707b319c279c7e0204074088cc39286007a1cf6cb6e269d5067d8d0628c6;60;dbk64.sys - vulnerable driver
+1963d5a0e512b72353953aadbe694f73a9a576f0241a988378fa40bf574eda52;60;phymem64.sys - phymem Application - vulnerable driver
+19a212e6fc324f4cb9ee5eba60f5c1fc0191799a4432265cbeaa3307c76a7fc0;60;Phymemx64.sys - vulnerable driver
+19bd488fe54b011f387e8c5d202a70019a204adf;60;CITMDRV_AMD64.sys - vulnerable driver
+19f3343bfad0ef3595f41d60272d21746c92ffca;60;DirectIo.sys - vulnerable driver
+1a234f4643f5658bab07bfa611282267;60;AsrDrv101.sys - ASRock IO Driver - vulnerable driver
+1aaa9aef39cb3c0a854ecb4ca7d3b213458f302025e0ec5bfbdef973cca9111c;60;kEvP64.sys - PowerTool - vulnerable driver
+1aaf4c1e3cb6774857e2eef27c17e68dc1ae577112e4769665f516c2e8c4e27b;60;sandra.sys - Sandra Device Driver (Win64 x64)(Unicode) - vulnerable driver
+1acc7a486b52c5ee6619dbdc3b4210b5f48b936f;60;ASIO32.sys - vulnerable driver
+1b32c54b95121ab1683c7b83b2db4b96;60;NTIOLib.sys - NTIOLib - vulnerable driver
+1b5c3c458e31bede55145d0644e88d75;60;kprocesshacker.sys - KProcessHacker - vulnerable driver
+1b7fb154a7b7903a3c81f12f4b094f24a3c60a6a8cffca894c67c264ab7545fa;60;PCHunter.sys - Epoolsoft Windows Information View Tools - vulnerable driver
+1c294146fc77565030603878fd0106f9;60;dbk64.sys - vulnerable driver
+1c8dfa14888bb58848b4792fb1d8a921976a9463be8334cff45cc96f1276049a;60;CITMDRV_IA64.sys - vulnerable driver
+1cd158a64f3d886357535382a6fdad75;75;daxin_blank2.sys - malicious
+1cff7b947f8c3dea1d34dc791fc78cdc;60;gdrv.sys - GIGA-BYTE NonPNP Driver - vulnerable driver
+1d0397c263d51e9fc95bcc8baf98d1a853e1c0401cd0e27c7bf5da3fba1c93a8;60;BS_HWMIO64_W10.sys - I/O Interface driver file - vulnerable driver
+1d0df45ee3fa758f0470e055915004e6eae54c95;60;AsrSmartConnectDrv.sys - RW-Everything Read & Write Driver - vulnerable driver
+1dc94a6a82697c62a04e461d7a94d0b0;60;AsIO.sys - vulnerable driver
+1ddfe4756f5db9fb319d6c6da9c41c588a729d9e7817190b027b38e9c076d219;60;NTIOLib.sys - NTIOLib - vulnerable driver
+1e7c241b9a9ea79061b50fb19b3d141dee175c27;60;ASIO32.sys - vulnerable driver
+1e8b0c1966e566a523d652e00f7727d8b0663f1dfdce3b9a09b9adfaef48d8ee;60;NTIOLib.sys - NTIOLib_X64 - vulnerable driver
+1ed043249c21ab201edccb37f1d40af9;60;NTIOLib.sys - NTIOLib - vulnerable driver
+1ed08a6264c5c92099d6d1dae5e8f530;60;Agent64.sys - DriverAgent Direct I/O for 64-bit Windows - vulnerable driver
+1f25f54e9b289f76604e81e98483309612c5a471;75;wantd_3.sys - WAN Transport Driver - malicious
+1f2888e57fdd6aee466962c25ba7d62d;75;Air_SYSTEM10.sys - malicious
+1f3799fed3cf43254fe30dcdfdb8dc02d82e662b;75;0x3040_blacklotus_beta_driver.sys - malicious
+1f3799fed3cf43254fe30dcdfdb8dc02d82e662b;75;0x3040_blacklotus_beta_driver.sys - malicious
+1f3a9265963b660392c4053329eb9436deeed339;60;CITMDRV_AMD64.sys - vulnerable driver
+1f7501e01d84a2297c85cb39880ec4e40ac3fe8a;60;NTIOLib.sys - NTIOLib - vulnerable driver
+1f950cfd5ed8dd9de3de004f5416fe20;60;driver7-x86.sys - The driver for the ECtool driver-based tools - vulnerable driver
+1fd7f881ea4a1dbb5c9aeb9e7ad659a85421745b;60;NTIOLib.sys - NTIOLib - vulnerable driver
+2003b478b9fd1b3d76ec5bf4172c2e8915babbbee7ad1783794acbf8d4c2519d;60;AsrDrv103.sys - ASRock IO Driver - vulnerable driver
+20125794b807116617d43f02b616e092;60;kEvP64.sys - PowerTool - vulnerable driver
+205c69f078a563f54f4c0da2d02a25e284370251;60;CITMDRV_IA64.sys - vulnerable driver
+2128e6c044ee86f822d952a261af0b48;60;CITMDRV_IA64.sys - vulnerable driver
+213ba055863d4226da26a759e8a254062ea77814;60;BS_RCIO.sys - vulnerable driver
+21ccdd306b5183c00ecfd0475b3152e7d94b921e858e59b68a03e925d1715f21;60;HwRwDrv.sys - Hardware read & write driver - vulnerable driver
+21e13f2cb269defeae5e1d09887d47bb;60;zam64.sys - ZAM - vulnerable driver
+21e13f2cb269defeae5e1d09887d47bb;60;zamguard64.sys - ZAM - vulnerable driver
+21e6c104fe9731c874fab5c9560c929b2857b918;60;Agent64.sys - DriverAgent Direct I/O for 64-bit Windows - vulnerable driver
+21edff2937eb5cd6f6b0acb7ee5247681f624260;60;smep_capcom.sys - vulnerable driver
+221dfbc74bbb255b0879360ccc71a74b756b2e0f16e9386b38a9ce9d4e2e34f9;60;bwrs.sys - vulnerable driver
+22418016e980e0a4a2d01ca210a17059916a4208352c1018b0079ccb19aaf86a;60;CITMDRV_IA64.sys - vulnerable driver
+2261198385d62d2117f50f631652eded0ecc71db;60;ADV64DRV.sys - vulnerable driver
+22823fed979903f8dfe3b5d28537eb47;60;nicm.sys - Novell XTCOM Services Driver - vulnerable driver
+22949977ce5cd96ba674b403a9c81285;75;PcieCubed.sys - PCIe Video Capture - malicious
+22be050955347661685a4343c51f11c7811674e030386d2264cd12ecbf544b7c;60;speedfan.sys - SpeedFan Device Driver - vulnerable driver
+2391fb461b061d0e5fccb050d4af7941;60;IObitUnlocker.sys - Unlocker Driver - vulnerable driver
+23cf3da010497eb2bf39a5c5a57e437c;60;NTIOLib.sys - NTIOLib - vulnerable driver
+2509a71a02296aa65a3428ddfac22180;60;CITMDRV_AMD64.sys - vulnerable driver
+257483d5d8b268d0d679956c7acdf02d;60;rwdrv.sys - RwDrv Driver - vulnerable driver
+258359a7fa3d975620c9810dab3a6493972876a024135feaf3ac8482179b2e79;60;t8.sys - vulnerable driver
+25bf4e30a94df9b8f8ab900d1a43fd056d285c9d;75;wantd_5.sys - WAN Transport Driver - malicious
+25d812a5ece19ea375178ef9d60415841087726e;60;libnicm.sys - XTier COM Services Driver - vulnerable driver
+26c4a7b392d7e7bd7f0a2a758534e45c0d9a56ab;60;HwOs2Ec7x64.sys - HwOs2Ec - vulnerable driver
+27bcbeec8a466178a6057b64bef66512;60;WinRing0.sys - WinRing0 - vulnerable driver
+27d3ebea7655a72e6e8b95053753a25db944ec0f;60;Agent64.sys - DriverAgent Direct I/O for 64-bit Windows - vulnerable driver
+27eab595ec403580236e04101172247c4f5d5426;60;NTIOLib.sys - MSI ComCenService Driver - vulnerable driver
+282bb241bda5c4c1b8eb9bf56d018896649ca0e1;60;fiddrv.sys - vulnerable driver
+2850608430dd089f24386f3336c84729;60;PanMonFlt.sys - PanCafe Manager File Monitor - vulnerable driver
+28b1c0b91eb6afd2d26b239c9f93beb053867a1a;60;NTIOLib.sys - NTIOLib - vulnerable driver
+291b4a88ffd2ac1d6bf812ecaedc2d934dc503cb;60;PanIO.sys - Temperature and system information driver - vulnerable driver
+296bde4d0ed32c6069eb90c502187d0d;60;CITMDRV_AMD64.sys - vulnerable driver
+29a190727140f40cea9514a6420f5a195e36386b;60;mtcBSv64.sys - MiTAC System Service Provider - vulnerable driver
+29ccff428e5eb70ae429c3da8968e1ec;60;Agent64.sys - DriverAgent Direct I/O for 64-bit Windows - vulnerable driver
+29e0062a017a93b2f2f5207a608a96df4d554c5de976bd0276c2590a03bd3e94;60;CITMDRV_AMD64.sys - vulnerable driver
+2a652de6b680d5ad92376ad323021850dab2c653abf06edf26120f7714b8e08a;60;AsrIbDrv.sys - RW-Everything Read & Write Driver - vulnerable driver
+2a6e6bd51c7062ad24c02a4d2c1b5e948908d131;60;CITMDRV_AMD64.sys - vulnerable driver
+2aa1b08f47fbb1e2bd2e4a492f5d616968e703e1359a921f62b38b8e4662f0c4;60;AsrAutoChkUpdDrv.sys - AsrAutoChkUpdDrv Driver - vulnerable driver
+2b0bb408ff0e66bcdf6574f1ca52cbf4015b257b;60;HwRwDrv.sys - Hardware read & write driver - vulnerable driver
+2b120de80a5462f8395cfb7153c86dfd44f29f0776ea156ec4a34fa64e5c4797;60;BEDAISY.SYS - vulnerable driver
+2b4d0dead4c1a7cc95543748b3565cfa802e5256;60;asrdrv104.sys - vulnerable driver
+2bbe65cbec3bb069e92233924f7ee1f95ffa16173fceb932c34f68d862781250;60;NTIOLib.sys - NTIOLib For MSISimple_OC - vulnerable driver
+2c27abbbbcf10dfb75ad79557e30ace5ed314df8;60;netfilterdrv.sys - vulnerable driver
+2c54859a67306e20bfdc8887b537de72;60;phymem64.sys - phymem Application - vulnerable driver
+2c5ff272bd345962ed41ab8869aef41da0dfe697;60;Bs_Def.sys - Default BIOS Flash Driver - vulnerable driver
+2d465b4487dc81effaa84f122b71c24f;60;CITMDRV_AMD64.sys - vulnerable driver
+2d503a2457a787014a1fdd48a2ece2e6cbe98ea7;60;AsrIbDrv.sys - RW-Everything Read & Write Driver - vulnerable driver
+2d7f1c02b94d6f0f3e10107e5ea8e141;60;LgCoreTemp.sys - CPU Core Temperature Monitor - vulnerable driver
+2d83ccb1ad9839c9f5b3f10b1f856177df1594c66cbbc7661677d4b462ebf44d;60;inpoutx64.sys - Kernel level port access driver - vulnerable driver
+2d8e4f38b36c334d0a32a7324832501d;60;RTCore64.sys - vulnerable driver
+2da209dde8188076a9579bd256dc90d0;60;NTIOLib.sys - NTIOLib - vulnerable driver
+2da330a2088409efc351118445a824f11edbe51cf3d653b298053785097fe40e;60;AsIO.sys - vulnerable driver
+2dfcb799b3c42ecb0472e27c19b24ac7532775ce;60;GLCKIO2.sys - vulnerable driver
+2e1f8a2a80221deb93496a861693c565;60;TmComm.sys - TrendMicro Common Module - vulnerable driver
+2e3de9bff43d7712707ef8a0b10f7e4ad8427fd8;60;CITMDRV_AMD64.sys - vulnerable driver
+2e6b339597a89e875f175023ed952aaac64e9d20d457bbc07acf1586e7fe2df8;60;DBUtilDrv2.sys - vulnerable driver
+2f991435a6f58e25c103a657d24ed892b99690b8;60;ALSysIO64.sys - ALSysIO - vulnerable driver
+2fc6845047abcf2a918fce89ab99e4955d08e72c;60;IOMap64.sys - ASUS Kernel Mode Driver for NT  - vulnerable driver
+2fed983ec44d1e7cffb0d516407746f2;60;fidpcidrv64.sys - vulnerable driver
+300c5b1795c9b6cc1bc4d7d55c7bbe85;60;NTIOLib.sys - NTIOLib - vulnerable driver
+30706f110725199e338e9cc1c940d9a644d19a14f0eb8847712cba4cacda67ab;60;NTIOLib.sys - MSI ComCenService Driver - vulnerable driver
+30a224b22592d952fbe2e6ad97eda4a8f2c734e0;60;CITMDRV_IA64.sys - vulnerable driver
+3124b0411b8077605db2a9b7909d8240e0d554496600e2706e531c93c931e1b5;60;NTIOLib.sys - NTIOLib for MSIFrequency_CC - vulnerable driver
+312e31851e0fc2072dbf9a128557d6ef;60;goad.sys - vulnerable driver
+314384b40626800b1cde6fbc51ebc7d13e91398be2688c2a58354aa08d00b073;60;NCHGBIOS2x64.SYS - BIOS Update Driver For Windows x64 Edition - vulnerable driver
+31469f1313871690e8dc2e8ee4799b22;60;AsrRapidStartDrv.sys - RW-Everything Read & Write Driver - vulnerable driver
+31f4cfb4c71da44120752721103a16512444c13c2ac2d857a7e6f13cb679b427;60;gdrv.sys - GIGABYTE Tools - vulnerable driver
+31fac347aa26e92db4d8c9e1ba37a7c7a2234f08;75;POORTRY1.sys - malicious
+3243aab18e273a9b9c4280a57aecef278e10bfff19abb260d7a7820e41739099;60;WINIODrv.sys - vulnerable driver
+3247014ba35d406475311a2eab0c4657;60;hw.sys - HW - Windows NT-10 (32/64 bit) kernel mode driver for PC ports/memory/PCI access - vulnerable driver
+3270720a066492b046d7180ca6e60602c764cac7;60;CITMDRV_AMD64.sys - vulnerable driver
+32cccc4f249499061c0afa18f534c825d01034a1f6815f5506bf4c4ff55d1351;60;vmdrv.sys - Voicemod Virtual Audio Device (WDM) - vulnerable driver
+32e1a8513eee746d17eb5402fb9d8ff9507fb6e1238e7ff06f7a5c50ff3df993;60;rtkiow10x64.sys - Realtek IO Driver - vulnerable driver
+3326e2d32bbabd69feb6024809afc56c7e39241ebe70a53728c77e80995422a5;60;BS_Def64.sys - Default BIOS Flash Driver - vulnerable driver
+33285b2e97a0aeb317166cce91f6733cf9c1ad53;60;Se64a.sys - EnTech softEngine x64 kernel-mode driver - vulnerable driver
+338a98e1c27bc76f09331fcd7ae413a5;60;BS_HWMIo64.sys - vulnerable driver
+3390919bb28d5c36cc348f9ef23be5fa49bfd81263eb7740826e4437cbe904cd;60;nstrwsk.sys - vulnerable driver
+33cdab3bbc8b3adce4067a1b042778607dce2acd;60;Agent64.sys - DriverAgent Direct I/O for 64-bit Windows - vulnerable driver
+34069a15ae3aa0e879cd0d81708e4bcc;60;NTIOLib.sys - NTIOLib_X64 - vulnerable driver
+3473faea65fba5d4fbe54c0898a3c044;60;superbmc.sys - superbmc - vulnerable driver
+34c85afe6d84cd3deec02c0a72e5abfa7a2886c3;60;aswVmm.sys - avast! VM Monitor - vulnerable driver
+351cbd352b3ec0d5f4f58c84af732a0bf41b4463;60;Lv561av.sys - Logitech Video Driver - vulnerable driver
+356bda2bf0f6899a2c08b2da3ec69f13;60;WiseUnlo.sys - WiseUnlo - vulnerable driver
+35829e096a15e559fcbabf3441d99e580ca3b26e;60;NBIOLib_X64.sys - NTIOLib - vulnerable driver
+35829e096a15e559fcbabf3441d99e580ca3b26e;60;NTIOLib.sys - NTIOLib - vulnerable driver
+358ac54be252673841a1d65bfc2fb6d549c1a4c877fa7f5e1bfa188f30375d69;60;WiseUnlo.sys - WiseUnlo - vulnerable driver
+3599ea2ac1fa78f423423a4cf90106ea0938dde8;60;elbycdio.sys - ElbyCD Windows NT/2000/XP I/O driver - vulnerable driver
+35f1ba60ba0da8512a0b1b15ee8e30fe240d77cd;60;NTIOLib.sys - NTIOLib - vulnerable driver
+361a598d8bb92c13b18abb7cac850b01;60;NTIOLib.sys - NTIOLib - vulnerable driver
+362c4f3dadc9c393682664a139d65d80e32caa2a97b6e0361dfd713a73267ecc;60;BS_RCIO.sys - vulnerable driver
+36505921af5a09175395ebaea29c72b2a69a3a9204384a767a5be8a721f31b10;60;aswVmm.sys - avast! VM Monitor - vulnerable driver
+3651a6990fe38711ebb285143f867a43;60;NTIOLib.sys - NTIOLib_X64 - vulnerable driver
+36875562e747136313ec5db58174e5fab870997a054ca8d3987d181599c7db6a;60;d3.sys - vulnerable driver
+36b9e31240ab0341873c7092b63e2e0f2cab2962ebf9b25271c3a1216b7669eb;60;BS_Def64.sys - Default BIOS Flash Driver - vulnerable driver
+37086ae5244442ba552803984a11d6cb;60;HwOs2Ec10x64.sys - HwOs2Ec - vulnerable driver
+37364cb5f5cefd68e5eca56f95c0ab4aff43afcc;60;NTIOLib.sys - NTIOLib - vulnerable driver
+37dde6bd8a7a36111c3ac57e0ac20bbb93ce3374d0852bcacc9a2c8c8c30079e;60;bwrsh.sys - vulnerable driver
+37e6450c7cd6999d080da94b867ba23faa8c32fe;75;wantd_6.sys - WAN Transport Driver - malicious
+3805e4e08ad342d224973ecdade8b00c40ed31be;60;NTIOLib_X64.sys - NTIOLib - vulnerable driver
+3805e4e08ad342d224973ecdade8b00c40ed31be;60;NTIOLib.sys - NTIOLib - vulnerable driver
+3871e16758a1778907667f78589359734f7f62f9dc953ec558946dcdbe6951e3;60;cpuz_x64.sys - CPUID Driver - vulnerable driver
+38fa0c663c8689048726666f1c5e019feaa9da8278f1df6ff62da33961891d2a;60;NTIOLib.sys - NTIOLib - vulnerable driver
+3943a796cc7c5352aa57ccf544295bfd6fb69aae147bc8235a00202dc6ed6838;60;AsrDrv106.sys - ASRock IO Driver - vulnerable driver
+39cfde7d401efce4f550e0a9461f5fc4d71fa07235e1336e4f0b4882bd76550e;60;NTIOLib.sys - NTIOLib - vulnerable driver
+3a5ec83fe670e5e23aef3afa0a7241053f5b6be5e6ca01766d6b5f9177183c25;60;GLCKIO2.sys - vulnerable driver
+3a95cc82173032b82a0ffc7d2e438df64c13bc16b4574214c9fe3be37250925e;60;TGSafe.sys - vulnerable driver
+3abb9d0a9d600200ae19c706e570465ef0a15643;60;NTIOLib.sys - NTIOLib For MSISimple_OC - vulnerable driver
+3ac5e01689a3d745e60925bc7faca8d4306ae693e803b5e19c94906dc30add46;60;fidpcidrv64.sys - vulnerable driver
+3ae56ab63230d6d9552360845b4a37b5801cc5ea;60;gameink.sys - vulnerable driver
+3b6b35bca1b05fafbfc883a844df6d52af44ccdc;75;wantd_2.sys - WAN Transport Driver - malicious
+3c6f9917418e991ed41540d8d882c8ca51d582a82fd01bff6cdf26591454faf5;60;dcr.sys - vulnerable driver
+3d23bdbaf9905259d858df5bf991eb23d2dc9f4ecda7f9f77839691acef1b8c4;60;iomem64.sys - DTR Kernel mode driver - vulnerable driver
+3d9e83b189fcf5c3541c62d1f54a0da0a4e5b62c3243d2989afc46644056c8e3;60;NTIOLib.sys - NTIOLib For NTIOLib_ECO - vulnerable driver
+3dbf69f935ea48571ea6b0f5a2878896;60;NTIOLib.sys - NTIOLib - vulnerable driver
+3e9b62d2ea2be50a2da670746c4dbe807db9601980af3a1014bcd72d0248d84c;60;GameTerSafe.sys - vulnerable driver
+3ec5ad51e6879464dfbccb9f4ed76c6325056a42548d5994ba869da9c4c039a8;60;WinRing0.sys - WinRing0 - vulnerable driver
+3ee2fd08137e9262d2e911158090e4a7c7427ea0;60;BlackBoneDrv10.sys - vulnerable driver
+3ef30c95e40a854cc4ded94fc503d0c3dc3e620e;75;NodeDriver.sys - malicious
+3f223581409492172a1e875f130f3485b90fbe5f;60;amp.sys - AMP Minifilter - vulnerable driver
+3f2fda9a7a9c57b7138687bbce49a2e156d6095dddabb3454ea09737e02c3fa5;60;NBIOLib_X64.sys - NTIOLib - vulnerable driver
+3f2fda9a7a9c57b7138687bbce49a2e156d6095dddabb3454ea09737e02c3fa5;60;NTIOLib.sys - NTIOLib - vulnerable driver
+3f39f013168428c8e505a7b9e6cba8a2;60;NTIOLib.sys - NTIOLib - vulnerable driver
+400f833dcc2ef0a122dd0e0b1ec4ec929340d90e;60;AsrOmgDrv.sys - ASRock IO Driver - vulnerable driver
+4045ae77859b1dbf13972451972eaaf6f3c97bea423e9e78f1c2f14330cd47ca;60;Agent64.sys - DriverAgent Direct I/O for 64-bit Windows - vulnerable driver
+405472a8f9400a54bb29d03b436ccd58cfd6442fe686f6d2ed4f63f002854659;60;CITMDRV_IA64.sys - vulnerable driver
+40bc58b7615d00eb55ad9ba700c340c1;60;CITMDRV_IA64.sys - vulnerable driver
+414cd15d6c991d19fb5be02e3b9fb0e6c5ce731c;60;NTIOLib.sys - NTIOLib - vulnerable driver
+4243dbbf6e5719d723f24d0f862afd0fcb40bc35;60;driver7-x86-withoutdbg.sys - The driver for the ECtool driver-based tools - vulnerable driver
+42579a759f3f95f20a2c51d5ac2047a2662a2675b3fb9f46c1ed7f23393a0f00;60;amifldrv64.sys - vulnerable driver
+4268f30b79ce125a81d0d588bef0d4e2ad409bbb;60;CITMDRV_AMD64.sys - vulnerable driver
+42851a01469ba97cdc38939b10cf9ea13237aa1f6c37b1ac84904c5a12a81fa0;60;driver7-x86.sys - The driver for the ECtool driver-based tools - vulnerable driver
+42f0b036687cbd7717c9efed6991c00d4e3e7b032dc965a2556c02177dfdad0f;60;GVCIDrv64.sys - vulnerable driver
+42f7cc4be348c3efd98b0f1233cf2d69;60;CITMDRV_IA64.sys - vulnerable driver
+43419df1f9a07430a18c5f3b3cc74de621be0f8e;60;WINIODrv.sys - vulnerable driver
+436ccab6f62fa2d29827916e054ade7acae485b3de1d3e5c6c62d3debf1480e7;60;AsIO.sys - vulnerable driver
+43830326cd5fae66f5508e27cbec39a0;60;viraglt64.sys - VirIT Agent System - vulnerable driver
+43830326cd5fae66f5508e27cbec39a0;60;viragt64.sys - VirIT Agent System - vulnerable driver
+43ba8d96d5e8e54cab59d82d495eeca730eeb16e4743ed134cdd495c51a4fc89;60;MsIo64.sys - MICSYS driver - vulnerable driver
+440883cd9d6a76db5e53517d0ec7fe13d5a50d2f6a7f91ecfc863bc3490e4f5c;60;procexp.Sys - Process Explorer - vulnerable driver
+4422851a0a102f654e95d3b79c357ae3af1b096d7d1576663c027cfbc04abaf9;60;DirectIo.sys - vulnerable driver
+4429f32db1cc70567919d7d47b844a91cf1329a6cd116f582305f3b7b60cd60b;60;iqvw64e.sys - Intel(R) Network Adapter Diagnostic Driver - vulnerable driver
+4429f32db1cc70567919d7d47b844a91cf1329a6cd116f582305f3b7b60cd60b;60;NalDrv.sys - Intel(R) Network Adapter Diagnostic Driver - vulnerable driver
+444f538daa9f7b340cfd43974ed43690;60;BSMIx64.sys - SMI Driver - vulnerable driver
+455bc98ba32adab8b47d2d89bdbadca4910f91c182ab2fc3211ba07d3784537b;60;nstr.sys - vulnerable driver
+45abdbcd4c0916b7d9faaf1cd08543a3a5178871074628e0126a6eda890d26e0;60;CITMDRV_AMD64.sys - vulnerable driver
+45c2d133d41d2732f3653ed615a745c8;60;HW.sys - HW - Windows NT-8 (32/64 bit) kernel mode driver for PC ports/memory/PCI access - vulnerable driver
+460008b1ffd31792a6deadfa6280fb2a30c8a5d2;60;WINIODrv.sys - vulnerable driver
+461882bd59887617cadc1c7b2b22d0a45458c070;60;AsrSetupDrv103.sys - vulnerable driver
+468e2e5505a3d924b14fedee4ddf240d09393776;60;CITMDRV_AMD64.sys - vulnerable driver
+471ca4b5bb5fe68543264dd52acb99fddd7b3c6d;60;LgCoreTemp.sys - CPU Core Temperature Monitor - vulnerable driver
+4744df6ac02ff0a3f9ad0bf47b15854bbebb73c936dd02f7c79293a2828406f6;60;elrawdsk.sys - RawDisk Driver. Allows write access to files and raw disk sectors for user mode applications in Windows 2000 and later. - vulnerable driver
+475e5016c9c0f5a127896f9179a1b1577a67b357f399ab5a1e68aab07134729a;60;mhyprot3.sys - vulnerable driver
+478917514be37b32d5ccf76e4009f6f952f39f5553953544f1b0688befd95e82;60;rtkio.sys - Realtek IODriver - vulnerable driver
+4789b910023a667bee70ff1f1a8f369cffb10fe8;60;fidpcidrv.sys - vulnerable driver
+47e6ac52431ca47da17248d80bf71389;75;ndislan.sys - MS LAN Driver - malicious
+47eaebc920ccf99e09fc9924feb6b19b8a28589f52783327067c9b09754b5e84;60;WinRing0.sys - WinRing0 - vulnerable driver
+47f08f7d30d824a8f4bb8a98916401a37c0fd8502db308aba91fe3112b892dcc;60;AsrSmartConnectDrv.sys - RW-Everything Read & Write Driver - vulnerable driver
+47f0cdaa2359a63ad1389ef4a635f1f6eee1f63bdf6ef177f114bdcdadc2e005;60;NTIOLib.sys - NTIOLib - vulnerable driver
+485c0b9710a196c7177b99ee95e5ddb35b26ddd1;60;dbutil.sys - vulnerable driver
+4880f40f2e557cff38100620b9aa1a3a753cb693af16cd3d95841583edcb57a8;60;hw.sys - HW - Windows NT-10 (32/64 bit) kernel mode driver for PC ports/memory/PCI access - vulnerable driver
+490109fa6739f114651f4199196c5121d1c6bdf2;60;ATSZIO.sys - ATSZIO Driver - vulnerable driver
+490109fa6739f114651f4199196c5121d1c6bdf2;60;ATSZIO64.sys - ATSZIO Driver - vulnerable driver
+490b1f404c4f31f4538b36736c990136;60;NTIOLib.sys - NTIOLib - vulnerable driver
+491aec2249ad8e2020f9f9b559ab68a8;75;daxin_blank4.sys - malicious
+4941c4298f4560fc1e59d0f16f84bab5c060793700b82be2fd7c63735f1657a8;60;windows7-32.sys - vulnerable driver
+49938383844ceec33dba794fb751c9a5;60;magdrvamd64.sys - vulnerable driver
+49c827cf48efb122a9d6fd87b426482b7496ccd4a2dbca31ebbf6b2b80c98530;75;daxin_blank.sys - malicious
+49ed27460730b62403c1d2e4930573121ab0c86c442854bc0a62415ca445a810;60;Proxy32.sys - vulnerable driver
+49f75746eebe14e5db11706b3e58accc62d4034d2f1c05c681ecef5d1ad933ba;60;CITMDRV_IA64.sys - vulnerable driver
+49fe3d1f3d5c2e50a0df0f6e8436d778;60;BSMEMx64.sys - I/O Interface driver file - vulnerable driver
+4a06bcd96ef0b90a1753a805b4235f28;60;NTIOLib.sys - MSI ComCenService Driver - vulnerable driver
+4a235f0b84ff615e2879fa9e0ec0d745fcfdaa5c;60;CITMDRV_AMD64.sys - vulnerable driver
+4a23e0f2c6f926a41b28d574cbc6ac30;60;nscm.sys - Novell XTier Session Manager - vulnerable driver
+4a3d4db86f580b1680d6454baee1c1a139e2dde7d55e972ba7c92ec3f555dce2;60;CITMDRV_IA64.sys - vulnerable driver
+4a705af959af61bad48ef7579f839cb5ebd654d2;60;CITMDRV_IA64.sys - vulnerable driver
+4a7d66874a0472a47087fabaa033a85d47413379;60;asrdrv104.sys - vulnerable driver
+4a9093e8dbcb867e1b97a0a67ce99a8511900658f5201c34ffb8035881f2dbbe;60;ProtectS.sys - vulnerable driver
+4ab41816abbf14d59e75b7fad49e2cb1c1feb27a3cb27402297a2a4793ff9da7;60;CITMDRV_IA64.sys - vulnerable driver
+4ad8fd9e83d7200bd7f8d0d4a9abfb11;75;0x3440_blacklotus_v2_driver.sys - malicious
+4ae55080ec8aed49343e40d08370195c;60;segwindrvx64.sys - SEG Windows Driver x64 - vulnerable driver
+4b009e91bae8d27b160dc195f10c095f8a2441e1;60;iomem64.sys - DTR Kernel mode driver - vulnerable driver
+4b058945c9f2b8d8ebc485add1101ba5;75;wantd_6.sys - WAN Transport Driver - malicious
+4b5229b3250c8c08b98cb710d6c056144271de099a57ae09f5d2097fc41bd4f1;60;aswArPot.sys - Avast Anti Rootkit - vulnerable driver
+4b817d0e7714b9d43db43ae4a22a161e;60;mhyprot.sys - vulnerable driver
+4b817d0e7714b9d43db43ae4a22a161e;60;Mhyprot2.sys - vulnerable driver
+4B882748FAF2C6C360884C6812DD5BCBCE75EBFF;75;blacklotus_beta_driver.sys - malicious
+4b8c0445075f09aeef542ab1c86e5de6b06e91a3;60;full.sys - vulnerable driver
+4c016fd76ed5c05e84ca8cab77993961;60;asmmap64.sys - Memory mapping Driver - vulnerable driver
+4c18754dca481f107f0923fb8ef5e149d128525d;60;vmdrv.sys - Voicemod Virtual Audio Device (WDM) - vulnerable driver
+4cc3ddd5ae268d9a154a426af2c23ef9;60;rzpnk.sys - Razer Overlay Support - vulnerable driver
+4cff6e53430b81ecc4fae453e59a0353bcfe73dd5780abfc35f299c16a97998e;60;t3.sys - vulnerable driver
+4d17b32be70ef39eae5d5edeb5e89877;60;CITMDRV_AMD64.sys - vulnerable driver
+4d41248078181c7f61e6e4906aa96bbdea320dc2;60;cpuz.sys - CPUID Driver - vulnerable driver
+4d487f77be4471900d6ccbc47242cc25;60;inpoutx64.sys - Kernel level port access driver - vulnerable driver
+4e3eb5b9bce2fd9f6878ae36288211f0997f6149aa8c290ed91228ba4cdfae80;60;otipcibus.sys - Hardware Access Driver - vulnerable driver
+4e56e0b1d12664c05615c69697a2f5c5d893058a;60;HW.sys - HW - Windows NT-8 (32/64 bit) kernel mode driver for PC ports/memory/PCI access - vulnerable driver
+4e826430a1389032f3fe06e2cc292f643fb0c417;60;CITMDRV_IA64.sys - vulnerable driver
+4e90cd77509738d30d3181a4d0880bfa;60;FairplayKD.sys - Multi Theft Auto patch driver - vulnerable driver
+4f191abc652d8f7442ca2636725e1ed6;60;driver7-x86-withoutdbg.sys - The driver for the ECtool driver-based tools - vulnerable driver
+4f27c09cc8680e06b04d6a9c34ca1e08;60;AsrOmgDrv.sys - ASRock IO Driver - vulnerable driver
+4f7a8e26a97980544be634b26899afbefb0a833c;60;AMDRyzenMasterDriver.sys - AMD Ryzen Master Service Driver - vulnerable driver
+4fe873544c34243826489997a5ff14ed39dd090d;60;RTCore64.sys - vulnerable driver
+507a649eb585d8d0447eab0532ef0c73;60;mydrivers.sys - DriverGenius Hardware monitor - vulnerable driver
+509628b6d16d2428031311d7bd2add8d5f5160e9ecc0cd909f1e82bbbb3234d6;60;mhyprot.sys - vulnerable driver
+509628b6d16d2428031311d7bd2add8d5f5160e9ecc0cd909f1e82bbbb3234d6;60;Mhyprot2.sys - vulnerable driver
+50b39072d0ee9af5ef4824eca34be6e3;75;ntbios_2.sys - ntbios driver - malicious
+50d5eaa168c077ce5b7f15b3f2c43bd2b86b07b1e926c1b332f8cb13bd2e0793;60;NTIOLib.sys - NTIOLib - vulnerable driver
+50db5480d0392a7dd6ab5df98389dc24d1ed1e9c98c9c35964b19dabcd6dc67f;60;CITMDRV_AMD64.sys - vulnerable driver
+50e2bc41f0186fdce970b80e2a2cb296353af586;60;dbutil.sys - vulnerable driver
+51207adb8dab983332d6b22c29fe8129;60;Dh_Kernel_10.sys - dianhu - vulnerable driver
+51b60eaa228458dee605430aae1bc26f3fc62325;60;CITMDRV_AMD64.sys - vulnerable driver
+5228b7a738dc90a06ae4f4a7412cb1e9;60;SysInfo.sys - vulnerable driver
+525d9b51a80ca0cd4c5889a96f857e73f3a80da1ffbae59851e0f51bdfb0b6cd;60;MsIo32.sys - vulnerable driver
+53acd4d9e7ba0b1056cf52af0d191f226eddf312;60;NTIOLib.sys - NTIOLib_X64 - vulnerable driver
+53f776d9a183c42b93960b270dddeafba74eb3fb;75;daxin_blank5.sys - malicious
+543991ca8d1c65113dff039b85ae3f9a87f503daec30f46929fd454bc57e5a91;60;zam64.sys - ZAM - vulnerable driver
+543991ca8d1c65113dff039b85ae3f9a87f503daec30f46929fd454bc57e5a91;60;zamguard64.sys - ZAM - vulnerable driver
+54841d9f89e195196e65aa881834804fe3678f1cf6b328cab8703edd15e3ec57;60;CITMDRV_IA64.sys - vulnerable driver
+5520ac25d81550a255dc16a0bb89d4b275f6f809;60;inpoutx64.sys - Kernel level port access driver - vulnerable driver
+552f70374715e70c4ade591d65177be2539ec60f751223680dfaccb9e0be0ed9;60;BSMIx64.sys - SMI Driver - vulnerable driver
+558aad879b6a47d94a968f39d0a4e3a3aaef1ef1;60;WinRing0.sys - WinRing0 - vulnerable driver
+55ab7e27412eca433d76513edc7e6e03bcdd7eda;60;ASIO32.sys - vulnerable driver
+55fee54c0d0d873724864dc0b2a10b38b7f40300ee9cae4d9baaf8a202c4049a;60;BS_I2c64.sys - I/O Interface driver file - vulnerable driver
+55fee54c0d0d873724864dc0b2a10b38b7f40300ee9cae4d9baaf8a202c4049a;60;BS_I2cIo.sys - I/O Interface driver file - vulnerable driver
+56a3c9ac137d862a85b4004f043d46542a1b61c6acb438098a9640469e2d80e7;60;NTIOLib.sys - NTIOLib - vulnerable driver
+56a515173b211832e20fbc64e5a0447c;60;AsrSmartConnectDrv.sys - RW-Everything Read & Write Driver - vulnerable driver
+5711c88e9e64e45b8fc4b90ab6f2dd6437dc5a8a;60;CITMDRV_IA64.sys - vulnerable driver
+57511ef5ff8162a9d793071b5bf7ebe8371759de;60;AsrDrv101.sys - ASRock IO Driver - vulnerable driver
+575e58b62afab094c20c296604dc3b7dd2e1a50f5978d8ee24b7dca028e97316;75;POORTRY1.sys - malicious
+589a7d4df869395601ba7538a65afae8c4616385;60;physmem.sys - vulnerable driver
+58a74dceb2022cd8a358b92acd1b48a5e01c524c3b0195d7033e4bd55eff4495;60;viraglt64.sys - VirIT Agent System - vulnerable driver
+58a74dceb2022cd8a358b92acd1b48a5e01c524c3b0195d7033e4bd55eff4495;60;viragt64.sys - VirIT Agent System - vulnerable driver
+58c071cfe72e9ee867bba85cbd0abe72eb223d27978d6f0650d0103553839b59;60;LgDCatcher.sys - vulnerable driver
+591bd5e92dfa0117b3daa29750e73e2db25baa717c31217539d30ffb1f7f3a52;60;NTIOLib.sys - NTIOLib For MSIRatio_CC - vulnerable driver
+59626cac380d8fe0b80a6d4c4406d62ba0683a2f0f68d50ad506ca1b1cf25347;60;BSMI.sys - SMI Driver - vulnerable driver
+59626cac380d8fe0b80a6d4c4406d62ba0683a2f0f68d50ad506ca1b1cf25347;60;BSMIXP64.sys - SMI Driver - vulnerable driver
+5970e8de1b337ca665114511b9d10806;60;CITMDRV_AMD64.sys - vulnerable driver
+5a7dd0da0aee0bdedc14c1b7831b9ce9178a0346;60;ASIO32.sys - vulnerable driver
+5a826b4fa10891cf63aae832fc645ce680a483b915c608ca26cedbb173b1b80a;60;elrawdsk.sys - RawDisk Driver. Allows write access to files and raw disk sectors for user mode applications in Windows 2000 and later. - vulnerable driver
+5b9623da9ba8e5c80c49473f40ffe7ad315dcadffc3230afdc9d9226d60a715a;60;windows8-10-32.sys - vulnerable driver
+5bab40019419a2713298a5c9173e5d30;60;AsrIbDrv.sys - RW-Everything Read & Write Driver - vulnerable driver
+5bc3994612624da168750455b363f2964e1861dba4f1c305df01b970ac02a7ae;75;daxin_blank1.sys - malicious
+5c04c274a708c9a7d993e33be3ea9e6119dc29527a767410dbaf93996f87369a;60;atillk64.sys - ATI Diagnostics Hardware Abstraction Sys - vulnerable driver
+5c1585b1a1c956c7755429544f3596515dfdf928373620c51b0606a520c6245a;75;daxin_blank2.sys - malicious
+5ca1922ed5ee2b533b5f3dd9be20fd9a;60;inpoutx64.sys - Kernel level port access driver - vulnerable driver
+5cc5c26fc99175997d84fe95c61ab2c2;60;mhyprot3.sys - vulnerable driver
+5d530e111400785d183057113d70623e17af32931668ab7c7fc826f0fd4f91a3;60;NTIOLib.sys - NTIOLib_X64 - vulnerable driver
+5d6b9e80e12bfc595d4d26f6afb099b3cb471dd4;60;aswArPot.sys - Avast Anti Rootkit - vulnerable driver
+5db61d00a001fd493591dc919f69b14713889fc5;60;BS_RCIO64.sys - I/O Interface driver file - vulnerable driver
+5dd2c31c4357a8b76db095364952b3d0e3935e1d;60;CITMDRV_IA64.sys - vulnerable driver
+5e6ddd2b39a3de0016385cbd7aa50e49451e376d;60;NTIOLib.sys - NTIOLib - vulnerable driver
+5ee292b605cd3751a24e5949aae615d472a3c72688632c3040dc311055b75a92;60;CITMDRV_IA64.sys - vulnerable driver
+5f5e5f1c93d961985624768b7c676d488c7c7c1d4c043f6fc1ea1904fefb75be;60;Bs_Def.sys - Default BIOS Flash Driver - vulnerable driver
+5f8356ffa8201f338dd2ea979eb47881a6db9f03;60;NTIOLib.sys - NTIOLib - vulnerable driver
+5f9785e7535f8f602cb294a54962c9e7;60;speedfan.sys - SpeedFan Device Driver - vulnerable driver
+5fb9421be8a8b08ec395d05e00fd45eb753b593a;60;CorsairLLAccess64.sys - Corsair LL Access - vulnerable driver
+6003184788cd3d2fc624ca801df291ccc4e225ee;60;iomem64.sys - DTR Kernel mode driver - vulnerable driver
+6053d258096bccb07cb0057d700fe05233ab1fbb;60;dbk64.sys - vulnerable driver
+607dc4c75ac7aef82ae0616a453866b3b358c6cf5c8f9d29e4d37f844306b97c;60;CITMDRV_AMD64.sys - vulnerable driver
+609fa1efcf61e26d64a5ceb13b044175ab2b3a13;60;BS_Def64.sys - Default BIOS Flash Driver - vulnerable driver
+60c6f4f34c7319cb3f9ca682e59d92711a05a2688badbae4891b1303cd384813;60;BS_HWMIo64.sys - vulnerable driver
+6100eb82a25d64a7a7702e94c2b21333bc15bd08;60;NTIOLib.sys - NTIOLib - vulnerable driver
+6126065af2fc2639473d12ee3c0c198e;60;NTIOLib.sys - NTIOLib - vulnerable driver
+61a1bdddd3c512e681818debb5bee94db701768fc25e674fcad46592a3259bd0;60;GLCKIO2.sys - vulnerable driver
+61d6e40601fa368800980801a662a5b3b36e3c23296e8ae1c85726a56ef18cc8;60;CITMDRV_AMD64.sys - vulnerable driver
+623cd2abef6c92255f79cbbd3309cb59176771da;60;CITMDRV_AMD64.sys - vulnerable driver
+62c18d61ed324088f963510bae43b831;75;daxin_blank.sys - malicious
+62f02339fe267dc7438f603bfb5431a1;60;atillk64.sys - ATI Diagnostics Hardware Abstraction Sys - vulnerable driver
+63e333d64a8716e1ae59f914cb686ae8;60;NTIOLib.sys - NTIOLib for MSIFrequency_CC - vulnerable driver
+643383938d5e0d4fd30d302af3e9293a4798e392;60;semav6msr.sys - vulnerable driver
+643383938d5e0d4fd30d302af3e9293a4798e392;60;semav6msr64.sys - vulnerable driver
+64e4ac8b9ea2f050933b7ec76a55dd04e97773b4;60;nscm.sys - Novell XTier Session Manager - vulnerable driver
+64efbffaa153b0d53dc1bccda4279299;60;NTIOLib.sys - NTIOLib - vulnerable driver
+64f9e664bc6d4b8f5f68616dd50ae819c3e60452efd5e589d6604b9356841b57;60;1.sys - vulnerable driver
+6523b3fd87de39eb5db1332e4523ce99556077dc;60;AsrAutoChkUpdDrv.sys - AsrAutoChkUpdDrv Driver - vulnerable driver
+65329dad28e92f4bcc64de15c552b6ef424494028b18875b7dba840053bc0cdd;60;segwindrvx64.sys - SEG Windows Driver x64 - vulnerable driver
+65d8a7c2e867b22d1c14592b020c548dd0665646;60;NTIOLib.sys - NTIOLib - vulnerable driver
+65db1b259e305a52042e07e111f4fa4af16542c8bacd33655f753ef642228890;60;PhlashNT.sys - SWinFlash Driver for Windows NT - vulnerable driver
+6714380bc0b8ab09b9a0d2fa66d1b025b646b946;60;CITMDRV_IA64.sys - vulnerable driver
+677c0b1add3990fad51f492553d3533115c50a242a919437ccb145943011d2bf;60;WinFlash64.sys - vulnerable driver
+6839fcae985774427c65fe38e773aa96ec451a412caa5354ad9e2b9b54ffe6c1;75;7.sys - malicious
+684786de4b3b3f53816eae9df5f943a22c89601f;60;rzpnk.sys - Razer Overlay Support - vulnerable driver
+68dde686d6999ad2e5d182b20403240b;60;NTIOLib.sys - NTIOLib For MSIRatio_CC - vulnerable driver
+6908ebf52eb19c6719a0b508d1e2128f198d10441551cbfb9f4031d382f5229f;75;wantd_2.sys - WAN Transport Driver - malicious
+6909b5e86e00b4033fedfca1775b0e33;60;CITMDRV_IA64.sys - vulnerable driver
+6948480954137987a0be626c24cf594390960242cd75f094cd6aaa5c2e7a54fa;60;Agent64.sys - DriverAgent Direct I/O for 64-bit Windows - vulnerable driver
+696d68bdbe1d684029aaad2861c49af56694473a;60;vboxdrv.sys - VirtualBox Support Driver - vulnerable driver
+6a3d3b9ab3d201cd6b0316a7f9c3fb4d34d0f403;60;rtkiow8x64.sys - Realtek IO Driver - vulnerable driver
+6a4875ae86131a594019dec4abd46ac6ba47e57a88287b814d07d929858fe3e5;60;HW.sys - HW - Windows NT-8 (32/64 bit) kernel mode driver for PC ports/memory/PCI access - vulnerable driver
+6ab7b8ef0c44e7d2d5909fdb58d37fa5;60;amifldrv64.sys - vulnerable driver
+6abbc3003c7aa69ce79cbbcd2e3210b07f21d202;75;wantd.sys - WAN Transport Driver - malicious
+6afc6b04cf73dd461e4a4956365f25c1f1162387;60;inpoutx64.sys - Kernel level port access driver - vulnerable driver
+6b54f8f137778c1391285fee6150dfa58a8120b1;60;MsIo64.sys - MICSYS driver - vulnerable driver
+6b5cf41512255237064e9274ca8f8a3fef820c45aa6067c9c6a0e6f5751a0421;75;POORTRY.sys - malicious
+6b830ea0db6546a044c9900d3f335e7820c2a80e147b0751641899d1a5aa8f74;60;PanIOx64.sys - Temperature and system information driver - vulnerable driver
+6c1bb3a72ebfb5359b9e22ca44d0a1ff825a68f2;60;asrdrv104.sys - vulnerable driver
+6c7120e40fc850e4715058b233f5ad4527d1084a909114fd6a36b7b7573c4a44;60;ncpl.sys - Novell Client Portability Layer - vulnerable driver
+6cb51ae871fbd5d07c5aad6ff8eea43d34063089528603ca9ceb8b4f52f68ddc;60;Se64a.sys - EnTech softEngine x64 kernel-mode driver - vulnerable driver
+6cce5bb9c8c2a8293df2d3b1897941a2;60;NTIOLib.sys - NTIOLib for MSIDDR_CC - vulnerable driver
+6d131a7462e568213b44ef69156f10a5;75;wantd_5.sys - WAN Transport Driver - malicious
+6d4159694e1754f262e326b52a3b305a;60;AsUpIO.sys - vulnerable driver
+6de84caa2ca18673e01b91af58220c60aecd5cccf269725ec3c7f226b2167492;60;msrhook.sys - vulnerable driver
+6debce728bcff73d9d1d334df0c6b1c3735e295c;75;4.sys - malicious
+6ed35f310c96920a271c59a097b382da07856e40179c2a4239f8daa04eef38e7;60;asrdrv104.sys - ASRock IO Driver - vulnerable driver
+6f1ff29e2e710f6d064dc74e8e011331d807c32cc2a622cbe507fd4b4d43f8f4;60;NTIOLib.sys - NTIOLib - vulnerable driver
+6f5d54ab483659ac78672440422ae3f1;60;NTIOLib.sys - NTIOLib - vulnerable driver
+6fcf56f6ca3210ec397e55f727353c4a;75;4.sys - malicious
+70211a3f90376bbc61f49c22a63075d1d4ddd53f0aefa976216c46e6ba39a9f4;60;kprocesshacker.sys - KProcessHacker - vulnerable driver
+7049f3c939efe76a5556c2a2c04386db51daf61d56b679f4868bb0983c996ebb;60;SysInfo.sys - vulnerable driver
+708016fbe22c813a251098f8f992b177b476bd1bbc48c2ed4a122ff74910a965;60;b3.sys - vulnerable driver
+708ac9f7b12b6ca4553fd8d0c7299296;60;CITMDRV_AMD64.sys - vulnerable driver
+70dcd07d38017b43f710061f37cb4a91;60;rtkio64.sys - Realtek IO Driver - vulnerable driver
+7133a461aeb03b4d69d43f3d26cd1a9e3ee01694e97a0645a3d8aa1a44c39129;60;rtkio64.sys - Realtek IO Driver - vulnerable driver
+71469dce9c2f38d0e0243a289f915131bf6dd2a8;75;ntbios.sys - ntbios driver - malicious
+715572dfe6fb10b16f980bfa242f3fa5;60;Phymemx64.sys - vulnerable driver
+715f8efab1d1c660e4188055c4b28eed;60;driver7-x64.sys - The driver for the ECtool driver-based tools - vulnerable driver
+7196187fb1ef8d108b380d37b2af8efdeb3ca1f6eefd37b5dc114c609147216d;60;ALSysIO64.sys - ALSysIO - vulnerable driver
+71fe5af0f1564dc187eea8d59c0fbc897712afa07d18316d2080330ba17cf009;60;DBUtilDrv2.sys - DBUtil - vulnerable driver
+72966ca845759d239d09da0de7eebe3abe86fee3;60;AsrDrv10.sys - ASRock IO Driver - vulnerable driver
+729a8675665c61824f22f06c7b954be4d14b52c4;60;asrdrv104.sys - ASRock IO Driver - vulnerable driver
+72b99147839bcfb062d29014ec09fe20a8f261748b5925b00171ef3cb849a4c1;60;kbdcap64.sys - vulnerable driver
+736c4b85ce346ddf3b49b1e3abb4e72a;60;NTIOLib.sys - NTIOLib For MSISimple_OC - vulnerable driver
+738b7918d85e5cb4395df9e3f6fc94ddad90e939;60;WINIODrv.sys - vulnerable driver
+73bac306292b4e9107147db94d0d836fdb071e33;75;daxin_blank3.sys - malicious
+73c98438ac64a68e88b7b0afd11ba140;60;capcom.sys - vulnerable driver
+745335bcdf02fb42df7d890a24858e16094f48fd;75;PcieCubed.sys - PCIe Video Capture - malicious
+745bad097052134548fe159f158c04be5616afc2;60;Dh_Kernel.sys - dianhu - vulnerable driver
+7475bfea6ea1cd54029208ed59b96c6b;60;BEDAISY.SYS - vulnerable driver
+748cf64b95ca83abc35762ad2c25458f;60;LHA.sys - LHA - vulnerable driver
+749b0e8c8c8b7dda8c2063c708047cfe95afa0a4d86886b31a12f3018396e67c;75;0x3440_blacklotus_v2_driver.sys - malicious
+74a846c61adc53692d3040aff4c1916f32987ad72b07fe226e9e7dbeff1036c4;60;CITMDRV_AMD64.sys - vulnerable driver
+74e4e3006b644392f5fcea4a9bae1d9d84714b57;60;hw.sys - HW - Windows NT-10 (32/64 bit) kernel mode driver for PC ports/memory/PCI access - vulnerable driver
+75d6c3469347de1cdfa3b1b9f1544208;60;AsrAutoChkUpdDrv.sys - AsrAutoChkUpdDrv Driver - vulnerable driver
+76660e91f1ff3cb89630df5af4fe09de6098d09baa66b1a130c89c3c5edd5b22;60;nscm.sys - Novell XTier Session Manager - vulnerable driver
+7667b72471689151e176baeba4e1cd9cd006a09a;60;nvflsh64.sys - vulnerable driver
+76b86543ce05540048f954fed37bdda66360c4a3ddb8328213d5aef7a960c184;60;CITMDRV_IA64.sys - vulnerable driver
+76bb1a4332666222a8e3e1339e267179;60;AsrDrv102.sys - ASRock IO Driver - vulnerable driver
+76c643ab29d497317085e5db8c799960;60;elrawdsk.sys - RawDisk Driver. Allows write access to files and raw disk sectors for user mode applications in Windows 2000 and later. - vulnerable driver
+76fb4deaee57ef30e56c382c92abffe2cf616d08dbecb3368c8ee6b02e59f303;60;CITMDRV_AMD64.sys - vulnerable driver
+771a8d05f1af6214e0ef0886662be500ee910ab99f0154227067fddcfe08a3dd;60;driver7-x64.sys - The driver for the ECtool driver-based tools - vulnerable driver
+778b7feea3c750d44745d3bf294bd4ce;60;ADV64DRV.sys - vulnerable driver
+7838fb56fdab816bc1900a4720eea2fc9972ef7a;60;fidpcidrv.sys - vulnerable driver
+7859e75580570e23a1ef7208b9a76f81738043d5;60;mydrivers.sys - DriverGenius Hardware monitor - vulnerable driver
+7877c1b0e7429453b750218ca491c2825dae684ad9616642eff7b41715c70aca;60;VProEventMonitor.sys - VProEventMonitor.Sys - Event Monitoring driver - vulnerable driver
+78827fa00ea48d96ac9af8d1c1e317d02ce11793e7f7f6e4c7aac7b5d7dd490f;60;vboxdrv.sys - VirtualBox Support Driver - vulnerable driver
+78b9481607ca6f3a80b4515c432ddfe6550b18a8;60;NTIOLib.sys - NTIOLib for MSIFrequency_CC - vulnerable driver
+79483cb29a0c428e1362ec8642109eee;60;NTIOLib.sys - NTIOLib - vulnerable driver
+798de15f187c1f013095bbbeb6fb6197;60;AsIO.sys - vulnerable driver
+79df0eabbf2895e4e2dae15a4772868c;75;wantd_4.sys - WAN Transport Driver - malicious
+79e2d37632c417138970b4feba91b7e10c2ea251c5efe3d1fc6fa0190f176b57;60;NTIOLib.sys - NTIOLib - vulnerable driver
+79f7e6f98a5d3ab6601622be4471027f;60;CITMDRV_AMD64.sys - vulnerable driver
+7a16fca3d56c6038c692ec75b2bfee15;60;CITMDRV_AMD64.sys - vulnerable driver
+7a7e8df7173387aec593e4fe2b45520ea3156c5f810d2bb1b2784efd1c922376;75;daxin_blank3.sys - malicious
+7ab4565ba24268f0adadb03a5506d4eb1dc7c181;60;CITMDRV_IA64.sys - vulnerable driver
+7b43dfd84de5e81162ebcfafb764b769;60;NTIOLib.sys - NTIOLib - vulnerable driver
+7ba19a701c8af76988006d616a5f77484c13cb0a;60;driver7-x64.sys - The driver for the ECtool driver-based tools - vulnerable driver
+7bd840ff7f15df79a9a71fec7db1243e;60;CITMDRV_IA64.sys - vulnerable driver
+7c1b25518dee1e30b5a6eaa1ea8e4a3780c24d0c;60;vboxdrv.sys - vulnerable driver
+7c6cad6a268230f6e08417d278dda4d66bb00d13;60;IObitUnlocker.sys - Unlocker Driver - vulnerable driver
+7c72a7e1d42b0790773efd8700e24952;60;AsrDrv103.sys - ASRock IO Driver - vulnerable driver
+7cc9ba2df7b9ea6bb17ee342898edd7f54703b93b6ded6a819e83a7ee9f938b4;60;SSPORT.sys - Port Contention Driver - vulnerable driver
+7cfa5e10dff8a99a5d544b011f676bc383991274c693e21e3af40cf6982adb8c;60;WINIODrv.sys - vulnerable driver
+7d46d0ddaf8c7e1776a70c220bf47524;60;cpuz_x64.sys - CPUID Driver - vulnerable driver
+7d7c03e22049a725ace2a9812c72b53a66c2548b;60;BS_Def64.sys - Default BIOS Flash Driver - vulnerable driver
+7d8937c18d6e11a0952e53970a0934cf0e65515637ac24d6ca52ccf4b93d385f;60;nt3.sys - vulnerable driver
+7e0124fcc7c95fdc34408cf154cb41e654dade8b898c71ad587b2090b1da30d7;60;PanMonFlt.sys - PanCafe Manager File Monitor - vulnerable driver
+7e836dadc2e149a0b758c7e22c989cbfcce18684;75;POORTRY2.sys - malicious
+7ec93f34eb323823eb199fbf8d06219086d517d0e8f4b9e348d7afd41ec9fd5d;60;smep_namco.sys - vulnerable driver
+7ed6030f14e66e743241f2c1fa783e69;60;NTIOLib.sys - NTIOLib - vulnerable driver
+7eec3a1edf3b021883a4b5da450db63f7c0afeeb;60;asrdrv104.sys - vulnerable driver
+7f190f6e5ab0edafd63391506c2360230af4c2d56c45fc8996a168a1fc12d457;60;CITMDRV_IA64.sys - vulnerable driver
+7f375639a0df7fe51e5518cf87c3f513c55bc117db47d28da8c615642eb18bfa;60;ALSysIO64.sys - ALSysIO - vulnerable driver
+7f4555a940ce1156c9bcea9a2a0b801f9a5e44ec9400b61b14a7b1a6404ffdf6;75;Sense5Ext.sys - Sense5 Driver - malicious
+7f9309f5e4defec132b622fadbcad511;75;POORTRY.sys - malicious
+7fb52290883a6b69a96d480f2867643396727e83;60;WinRing0.sys - WinRing0 - vulnerable driver
+803a371a78d528a44ef8777f67443b16;60;CorsairLLAccess64.sys - Corsair LL Access - vulnerable driver
+8065a7659562005127673ac52898675f;60;AsIO64.sys - vulnerable driver
+806832983bb8cb1e26001e60ea3b7c3ade4d3471;60;LgDCatcher.sys - vulnerable driver
+80cbba9f404df3e642f22c476664d63d7c229d45d34f5cd0e19c65eb41becec3;60;Dh_Kernel_10.sys - dianhu - vulnerable driver
+80fa962bdfb76dfcb9e5d13efc38bb3d392f2e77;60;ASIO32.sys - vulnerable driver
+8111085022bda87e5f6aa4c195e743cc6dd6a3a6d41add475d267dc6b105a69f;60;NetProxyDriver.sys - vulnerable driver
+814200191551faec65b21f5f6819b46c8fc227a3;60;PanIOx64.sys - Temperature and system information driver - vulnerable driver
+8183a341ba6c3ce1948bf9be49ab5320e0ee324d;60;WinFlash64.sys - vulnerable driver
+81939e5c12bd627ff268e9887d6fb57e95e6049f28921f3437898757e7f21469;60;CITMDRV_AMD64.sys - vulnerable driver
+81c7bb39100d358f8286da5e9aa838606c98dfcc263e9a82ed91cd438cb130d1;75;wantd_3.sys - WAN Transport Driver - malicious
+823da894b2c73ffcd39e77366b6f1abf0ae9604d9b20140a54e6d55053aadeba;60;d4.sys - vulnerable driver
+825703c494e0d270f797f1ecf070f698;60;CITMDRV_IA64.sys - vulnerable driver
+828bb9cb1dd449cd65a29b18ec46055f;60;WinRing0.sys - WinRing0 - vulnerable driver
+82ba5513c33e056c3f54152c8555abf555f3e745;60;sandra.sys - Sandra Device Driver (Win64 x64)(Unicode) - vulnerable driver
+8302802b709ad242a81b939b6c90b3230e1a1f1e;75;daxin_blank.sys - malicious
+83601bbe5563d92c1fdb4e960d84dc77;60;BS_I2c64.sys - I/O Interface driver file - vulnerable driver
+83601bbe5563d92c1fdb4e960d84dc77;60;BS_I2cIo.sys - I/O Interface driver file - vulnerable driver
+839cbbc86453960e9eb6db814b776a40;60;CITMDRV_IA64.sys - vulnerable driver
+8407ddfab85ae664e507c30314090385;60;Agent64.sys - DriverAgent Direct I/O for 64-bit Windows - vulnerable driver
+845f1e228de249fc1ddf8dc28c39d03e8ad328a6277b6502d3932e83b879a65a;60;CITMDRV_IA64.sys - vulnerable driver
+84ba7af6ada1b3ea5efb9871a0613fc6;60;NTIOLib.sys - NTIOLib for DebugLED - vulnerable driver
+84bf1d0bcdf175cfe8aea2973e0373015793d43907410ae97e2071b2c4b8e2d4;60;CITMDRV_IA64.sys - vulnerable driver
+84df20b1d9d87e305c92e5ffae21b10b325609d59d835a954dbd8750ef5dabf4;60;b.sys - vulnerable driver
+84fb76ee319073e77fb364bbbbff5461;60;nvflash.sys - NVIDIA Flash Driver, Version 1.8.0 - vulnerable driver
+85866e8c25d82c1ec91d7a8076c7d073cccf421cf57d9c83d80d63943a4edd94;60;NTIOLib.sys - NTIOLib - vulnerable driver
+8626ab1da6bfbdf61bd327eb944b39fd9df33d1d;60;CITMDRV_IA64.sys - vulnerable driver
+8636fe3724f2bcba9399daffd6ef3c7e;75;wantd_2.sys - WAN Transport Driver - malicious
+8692274681e8d10c26ddf2b993f31974b04f5bf0;75;daxin_blank4.sys - malicious
+86a8e0aa29a5b52c84921188cc1f0eca9a7904dcfe09544602933d8377720219;60;BS_Flash64.sys - vulnerable driver
+877c6c36a155109888fe1f9797b93cb30b4957ef;60;piddrv.sys - vulnerable driver
+879fcc6795cebe67718388228e715c470de87dca;60;NTIOLib.sys - NTIOLib for MSIDDR_CC - vulnerable driver
+88076e98d45ed3adf0c5355411fe8ca793eb7cec1a1c61f5e1ec337eae267463;75;2.sys - malicious
+89909fa481ff67d7449ee90d24c167b17b0612f1;60;msrhook.sys - vulnerable driver
+89b0017bc30cc026e32b758c66a1af88bd54c6a78e11ec2908ff854e00ac46be;60;NTIOLib.sys - NTIOLib - vulnerable driver
+89cd760e8cb19d29ee08c430fb17a5fd4455c741;60;AsrRapidStartDrv.sys - RW-Everything Read & Write Driver - vulnerable driver
+8abbb12e61045984eda19e2dc77b235e;60;BS_Def64.sys - Default BIOS Flash Driver - vulnerable driver
+8b287636041792f640f92e77e560725e;60;GVCIDrv64.sys - vulnerable driver
+8b6aa5b2bff44766ef7afbe095966a71bc4183fa;60;AsIO.sys - vulnerable driver
+8b6aa5b2bff44766ef7afbe095966a71bc4183fa;60;AsUpIO64.sys - vulnerable driver
+8c377ab4eebc5f4d8dd7bb3f90c0187dfdd3349f;60;HpPortIox64.sys - HpPortIo - vulnerable driver
+8c95d28270a4a314299cf50f05dcbe63033b2a555195d2ad2f678e09e00393e6;60;cpuz.sys - CPUID Driver - vulnerable driver
+8cb62c5d41148de416014f80bd1fd033fd4d2bd504cb05b90eeb6992a382d58f;60;Agent64.sys - DriverAgent Direct I/O for 64-bit Windows - vulnerable driver
+8cc8974a05e81678e3d28acfe434e7804abd019c;60;fiddrv.sys - vulnerable driver
+8d59fd14a445c8f3f0f7991fa6cd717d466b3754;60;gdrv.sys - GIGA-BYTE NonPNP Driver - vulnerable driver
+8d63e1a9ff4cafee1af179c0c544365c;60;NTIOLib.sys - NTIOLib For MSISimple_OC - vulnerable driver
+8d9a2363b757d3f127b9c6ed8f7b8b018e652369bc070aa3500b3a978feaa6ce;75;wantd_4.sys - WAN Transport Driver - malicious
+8dafe5f3d0527b66f6857559e3c81872699003e0f2ffda9202a1b5e29db2002e;75;daxin_blank4.sys - malicious
+8db869c0674221a2d3280143cbb0807fac08e0cc;60;Agent64.sys - DriverAgent Direct I/O for 64-bit Windows - vulnerable driver
+8e035beb02a411f8a9e92d4cf184ad34f52bbd0a81a50c222cdd4706e4e45104;75;4.sys - malicious
+8ef0ad86500094e8fa3d9e7d53163aa6feef67c09575c169873c494ed66f057f;60;CITMDRV_IA64.sys - vulnerable driver
+8f5cd4a56e6e15935491aa40adb1ecad61eafe7c;60;CITMDRV_AMD64.sys - vulnerable driver
+8fb149fc476cf5bf18dc575334edad7caf210996;60;WinIO32.sys - vulnerable driver
+9007c94c9d91ccff8d7f5d4cdddcc403;60;CITMDRV_IA64.sys - vulnerable driver
+909f3fc221acbe999483c87d9ead024a;75;LcTkA.sys - malicious
+90a76945fd2fa45fab2b7bcfdaf6563595f94891;60;DBUtilDrv2.sys - vulnerable driver
+910cb12aa49e9f35ecc4907e8304adf0dcca8cf1;60;superbmc.sys - superbmc - vulnerable driver
+91314768da140999e682d2a290d48b78bb25a35525ea12c1b1f9634d14602b2c;60;OpenLibSys.sys - OpenLibSys - vulnerable driver
+91F832F46E4C38ECC9335460D46F6F71352CFFED;75;blacklotus_beta_driver_2.sys - malicious
+9254f012009d55f555418ff85f7d93b184ab7cb0e37aecdfdab62cfe94dea96b;60;NTIOLib.sys - NTIOLib for MSIDDR_CC - vulnerable driver
+927c2a580d51a598177fa54c65e9d2610f5f212f1b6cb2fbf2740b64368f010a;60;driver7-x86-withoutdbg.sys - The driver for the ECtool driver-based tools - vulnerable driver
+92f251358b3fe86fd5e7aa9b17330afa0d64a705;60;AsIO.sys - vulnerable driver
+9321a61a25c7961d9f36852ecaa86f55;60;inpoutx64.sys - Kernel level port access driver - vulnerable driver
+93aa3bb934b74160446df3a47fa085fd7f3a6be9;60;NTIOLib.sys - NTIOLib - vulnerable driver
+93b266f38c3c3eaab475d81597abbd7cc07943035068bb6fd670dbbe15de0131;60;LgCoreTemp.sys - CPU Core Temperature Monitor - vulnerable driver
+93d873cdf23d5edc622b74f9544cac7fe247d7a68e1e2a7bf2879fad97a3ae63;60;rzpnk.sys - Razer Overlay Support - vulnerable driver
+943593e880b4d340f2548548e6e673ef6f61eed3;60;winio64.sys - vulnerable driver
+947db58d6f36a8df9fa2a1057f3a7f653ccbc42e;60;rtkiow10x64.sys - Realtek IO Driver - vulnerable driver
+950a4c0c772021cee26011a92194f0e58d61588f77f2873aa0599dff52a160c9;60;AsrOmgDrv.sys - ASRock IO Driver - vulnerable driver
+9529efb1837b1005e5e8f477773752078e0a46500c748bc30c9b5084d04082e6;60;NTIOLib.sys - NTIOLib - vulnerable driver
+95d50c69cdbf10c9c9d61e64fe864ac91e6f6caa637d128eb20e1d3510e776d3;60;libnicm.sys - XTier COM Services Driver - vulnerable driver
+95e4c7b0384da89dce8ea6f31c3613d9;60;NTIOLib.sys - NTIOLib for MSIClock_CC - vulnerable driver
+9638f265b1ddd5da6ecdf5c0619dcbe6;60;NTIOLib.sys - NTIOLib For NTIOLib_ECO - vulnerable driver
+96421b56dbda73e9b965f027a3bda7ba;60;OpenLibSys.sys - OpenLibSys - vulnerable driver
+96b463b6fa426ae42c414177af550ba2;60;NTIOLib.sys - NTIOLib - vulnerable driver
+96bf3ee7c6673b69c6aa173bb44e21fa636b1c2c73f4356a7599c121284a51cc;75;ntbios.sys - ntbios driver - malicious
+97221e16e7a99a00592ca278c49ffbfc;60;winio64.sys - vulnerable driver
+976777d39d73034df6b113dfce1aa6e1d00ffcfd;60;NTIOLib.sys - NTIOLib - vulnerable driver
+9790a7b9d624b2b18768bb655dda4a05a9929633cef0b1521e79e40d7de0a05b;60;CITMDRV_AMD64.sys - vulnerable driver
+97e3a44ec4ae58c8cc38eefc613e950e;60;procexp.Sys - Process Explorer - vulnerable driver
+984a77e5424c6d099051441005f2938ae92b31b5ad8f6521c6b001932862add7;60;NTIOLib.sys - NTIOLib - vulnerable driver
+98763a3dee3cf03de334f00f95fc071a;60;Dh_Kernel.sys - dianhu - vulnerable driver
+988dabdcf990b134b0ac1e00512c30c4;60;Monitor_win10_x64.sys - IObit Temperature Monitor - vulnerable driver
+98b734dda78c16ebcaa4afeb31007926542b63b2f163b2f733fa0d00dbb344d8;60;NTIOLib.sys - NTIOLib for DebugLED - vulnerable driver
+99201c9555e5faf6e8d82da793b148311f8aa4b8;60;rtkio64.sys - Realtek IO Driver - vulnerable driver
+9923c8f1e565a05b3c738d283cf5c0ed61a0b90f;60;AsrDrv102.sys - ASRock IO Driver - vulnerable driver
+992ded5b623be3c228f32edb4ca3f2d2;60;NTIOLib.sys - NTIOLib - vulnerable driver
+994DC79255AEB662A672A1814280DE73D405617A;75;blacklotus_beta_driver_3.sys - malicious
+99f4994a0e5bd1bf6e3f637d3225c69ff4cd620557e23637533e7f18d7d6cba1;60;NTIOLib.sys - NTIOLib - vulnerable driver
+9a1d66036b0868bbb1b2823209fedea61a301d5dd245f8e7d390bd31e52d663e;60;CITMDRV_AMD64.sys - vulnerable driver
+9a237fa07ce3ed06ea924a9bed4a6b99;60;sandra.sys - Sandra Device Driver (Win64 x64)(Unicode) - vulnerable driver
+9a35ae9a1f95ce4be64adc604c80079173e4a676;60;BSMI.sys - SMI Driver - vulnerable driver
+9a35ae9a1f95ce4be64adc604c80079173e4a676;60;BSMIXP64.sys - SMI Driver - vulnerable driver
+9a9dbf5107848c254381be67a4c1b1dd;60;PanIO.sys - Temperature and system information driver - vulnerable driver
+9aa7ed7809eec0d8bc6c545a1d18107a;60;NTIOLib.sys - NTIOLib - vulnerable driver
+9ab9f3b75a2eb87fafb1b7361be9dfb3;60;gdrv.sys - GIGABYTE Tools - vulnerable driver
+9b1b15a3aacb0e786a608726c3abfc94968915cedcbd239ddf903c4a54bfcf0c;75;gftkyj64.sys - malicious
+9b359b722ac80c4e0a5235264e1e0156;60;CITMDRV_IA64.sys - vulnerable driver
+9b91a44a488e4d539f2e55476b216024;60;AsrDrv10.sys - ASRock IO Driver - vulnerable driver
+9bb09752cf3a464455422909edef518ac18fe63cf5e1e8d9d6c2e68db62e0c87;75;POORTRY2.sys - malicious
+9c10e2ec4f9ef591415f9a784b93dc9c9cdafa7c69602c0dc860c5b62222e449;60;NTIOLib.sys - NTIOLib - vulnerable driver
+9c24dd75e4074041dbe03bf21f050c77d748b8e9;60;BS_HWMIo64.sys - vulnerable driver
+9c256edd10823ca76c0443a330e523027b70522d;60;NTIOLib.sys - NTIOLib For NTIOLib_ECO - vulnerable driver
+9c2f3e9811f7d0c7463eaa1ee6f39c23f902f3797b80891590b43bbe0fdf0e51;75;daxin_blank5.sys - malicious
+9c6749fc6c1127f8788bff70e0ce9062959637c9;60;NTIOLib.sys - NTIOLib - vulnerable driver
+9d07df024ec457168bf0be7e0009619f6ac4f13c;60;BSMEMx64.sys - I/O Interface driver file - vulnerable driver
+9d58f640c7295952b71bdcb456cae37213baccdcd3032c1e3aeb54e79081f395;60;ProtectS.sys - vulnerable driver
+9dfd73dadb2f1c7e9c9d2542981aaa63;60;mtcBSv64.sys - MiTAC System Service Provider - vulnerable driver
+9f1229cd8dd9092c27a01f5d56e3c0d59c2bb9f0139abf042e56f343637fda33;60;semav6msr.sys - vulnerable driver
+9f1229cd8dd9092c27a01f5d56e3c0d59c2bb9f0139abf042e56f343637fda33;60;semav6msr64.sys - vulnerable driver
+9f4ce6ab5e8d44f355426d9a6ab79833709f39b300733b5b251a0766e895e0e5;60;FairplayKD.sys - Multi Theft Auto patch driver - vulnerable driver
+9fc29480407e5179aa8ea41682409b4ea33f1a42026277613d6484e5419de374;60;EneIo64.sys - vulnerable driver
+9fc29480407e5179aa8ea41682409b4ea33f1a42026277613d6484e5419de374;60;winio64.sys - vulnerable driver
+a00e444120449e35641d58e62ed64bb9c9f518d2;60;TmComm.sys - TrendMicro Common Module - vulnerable driver
+a01c412699b6f21645b2885c2bae4454;60;IOMap64.sys - ASUS Kernel Mode Driver for NT  - vulnerable driver
+a13054f349b7baa8c8a3fcbd31789807a493cc52224bbff5e412eb2bd52a6433;60;AMDRyzenMasterDriver.sys - AMD Ryzen Master Service Driver - vulnerable driver
+a179c4093d05a3e1ee73f6ff07f994aa;60;aswArPot.sys - Avast Anti Rootkit - vulnerable driver
+a17c58c0582ee560c72f60764ed63224;60;UCOREW64.SYS - vulnerable driver
+a197a02025946aca96d6e74746f84774df31249e;60;mhyprot3.sys - vulnerable driver
+a21c84c6bf2e21d69fa06daaf19b4cc34b589347;60;kprocesshacker.sys - KProcessHacker - vulnerable driver
+a26e600652c33dd054731b4693bf5b01;60;ncpl.sys - Novell Client Portability Layer - vulnerable driver
+a2e0b3162cfa336cd4ab40a2acc95abe7dc53843;60;CITMDRV_IA64.sys - vulnerable driver
+a3636986cdcd1d1cb8ab540f3d5c29dcc90bb8f0;60;d.sys - vulnerable driver
+a3e507e713f11901017fc328186ae98e23de7cea5594687480229f77d45848d8;60;b1.sys - vulnerable driver
+a3ed5cbfbc17b58243289f3cf575bf04be49591d;75;POORTRY.sys - malicious
+a42249a046182aaaf3a7a7db98bfa69d;75;0x3040_blacklotus_beta_driver.sys - malicious
+a42249a046182aaaf3a7a7db98bfa69d;75;0x3040_blacklotus_beta_driver.sys - malicious
+a48aa80942fc8e0699f518de4fd6512e341d4196;75;daxin_blank2.sys - malicious
+a4b2c56c12799855162ca3b004b4b2078c6ecf77;60;nvflash.sys - NVIDIA Flash Driver, Version 1.8.0 - vulnerable driver
+a4fda97f452b8f8705695a729f5969f7;60;WinFlash64.sys - vulnerable driver
+a56c2a2425eb3a4260cc7fc5c8d7bed7a3b4cd2af256185f24471c668853aee8;60;CITMDRV_IA64.sys - vulnerable driver
+a57b47489febc552515778dd0fd1e51c;60;Agent64.sys - DriverAgent Direct I/O for 64-bit Windows - vulnerable driver
+a5f637d61719d37a5b4868c385e363c0;60;aswVmm.sys - avast! VM Monitor - vulnerable driver
+a60c9173563b940203cf4ad38ccf2082;60;d.sys - vulnerable driver
+a641e3dccba765a10718c9cb0da7879e;60;HpPortIox64.sys - HpPortIo - vulnerable driver
+a64354aac2d68b4fa74b5829a9d42d90d83b040c;60;PCHunter.sys - Epoolsoft Windows Information View Tools - vulnerable driver
+a65fabaf64aa1934314aae23f25cdf215cbaa4b6;60;WinIo64C.sys - vulnerable driver
+a6816949cd469b6e5c35858d19273936fab1bef6;60;PanMonFlt.sys - PanCafe Manager File Monitor - vulnerable driver
+a6e9d6505f6d2326a8a9214667c61c67;75;daxin_blank1.sys - malicious
+a6fe4f30ca7cb94d74bc6d42cdd09a136056952e;60;CITMDRV_AMD64.sys - vulnerable driver
+a711e6ab17802fabf2e69e0cd57c54cd;60;NTIOLib.sys - NTIOLib - vulnerable driver
+a785b3bc4309d2eb111911c1b55e793f;60;DirectIo.sys - vulnerable driver
+a7948a4e9a3a1a9ed0e4e41350e422464d8313cd;60;AsrSetupDrv103.sys - vulnerable driver
+a7b000abbcc344444a9b00cfade7aa22ab92ce0cadec196c30eb1851ae4fa062;60;WinRing0.sys - WinRing0 - vulnerable driver
+a7bd05de737f8ea57857f1e0845a25677df01872;60;NTIOLib.sys - NTIOLib - vulnerable driver
+a7c2e7910942dd5e43e2f4eb159bcd2b4e71366e34a68109548b9fb12ac0f7cc;60;AsrDrv102.sys - ASRock IO Driver - vulnerable driver
+a7c8f4faf3cbb088cac7753d81f8ec4c38ccb97cd9da817741f49272e8d01200;60;UCOREW64.SYS - vulnerable driver
+a7d827a41b2c4b7638495cd1d77926f1ba902978;60;piddrv.sys - vulnerable driver
+a804ebec7e341b4d98d9e94f6e4860a55ea1638d;75;gftkyj64.sys - malicious
+a86150f2e29b35369afa2cafd7aa9764;60;WINIODrv.sys - vulnerable driver
+a87d6eac2d70a3fbc04e59412326b28001c179de;60;EneTechIo64.sys - vulnerable driver
+a899b659b08fbae30b182443be8ffb6a6471c1d0497b52293061754886a937a3;60;nvflsh64.sys - vulnerable driver
+a961f5939088238d76757669a9a81905e33f247c9c635b908daac146ae063499;60;NTIOLib.sys - NTIOLib - vulnerable driver
+a9706e320179993dade519a83061477ace195daa1b788662825484813001f526;60;NTIOLib.sys - NTIOLib - vulnerable driver
+a9f220b1507a3c9a327a99995ff99c82;60;Bs_Def.sys - Default BIOS Flash Driver - vulnerable driver
+aa1ed3917928f04d97d8a217fe9b5cb1;60;CITMDRV_AMD64.sys - vulnerable driver
+aa9ab1195dc866270e984f1bed5e1358d6ef24c515dfdb6c2a92d1e1b94bf608;60;CITMDRV_AMD64.sys - vulnerable driver
+ab53d07f18a9697139ddc825b466f696;60;BS_RCIO.sys - vulnerable driver
+ac13941f436139b909d105ad55637e1308f49d9a;60;HOSTNT.sys - Hostnt 64-bit driver - vulnerable driver
+ac3f613d457fc4d44fa27b2e0b1baa62c09415705efb5a40a4756da39b3ac165;60;CITMDRV_IA64.sys - vulnerable driver
+ac600a2bc06b312d92e649b7b55e3e91e9d63451;60;OpenLibSys.sys - OpenLibSys - vulnerable driver
+aca8e53483b40a06dfdee81bb364b1622f9156fe;60;81.sys - vulnerable driver
+acac842a46f3501fe407b1db1b247a0b;75;POORTRY1.sys - malicious
+ace6b9e34e3e2e73fe584f3bbdb4e4ec106e0a7d;60;CITMDRV_AMD64.sys - vulnerable driver
+ad22a7b010de6f9c6f39c350a471a440;60;WINIODrv.sys - vulnerable driver
+ae5eb2759305402821aeddc52ba9a6d6;60;elbycdio.sys - ElbyCD Windows NT/2000/XP I/O driver - vulnerable driver
+ae79e760c739d6214c1e314728a78a6cb6060cce206fde2440a69735d639a0a2;60;ni.sys - vulnerable driver
+af095de15a16255ca1b2c27dad365dff9ac32d2a75e8e288f5a1307680781685;60;CITMDRV_AMD64.sys - vulnerable driver
+af50109b112995f8c82be8ef3a88be404510cdde;60;RTCore64.sys - vulnerable driver
+af6e1f2cfb230907476e8b2d676129b6d6657124;60;AsIO.sys - vulnerable driver
+afdd66562dea51001c3a9de300f91fc3eb965d6848dfce92ccb9b75853e02508;60;nvflash.sys - NVIDIA Flash Driver, Version 1.8.0 - vulnerable driver
+b0032b8d8e6f4bd19a31619ce38d8e010f29a816;60;AsrDrv106.sys - ASRock IO Driver - vulnerable driver
+b03b1996a40bfea72e4584b82f6b845c503a9748;60;DBUtilDrv2.sys - DBUtil - vulnerable driver
+b03f26009de2e8eabfcf6152f49b02a55c5e5d0f73e01d48f5a745f93ce93a29;60;piddrv64.sys - vulnerable driver
+b0770094c3c64250167b55e4db850c04;75;wantd.sys - WAN Transport Driver - malicious
+b0baac4d6cbac384a633c71858b35a2e;60;NTIOLib.sys - NTIOLib - vulnerable driver
+b0eb4d999e4e0e7c2e33ff081e847c87b49940eb24a9e0794c6aa9516832c427;75;ndislan.sys - MS LAN Driver - malicious
+b10b210c5944965d0dc85e70a0b19a42;60;BS_RCIO64.sys - I/O Interface driver file - vulnerable driver
+b12d1630fd50b2a21fd91e45d522ba3a;60;ATSZIO.sys - ATSZIO Driver - vulnerable driver
+b12d1630fd50b2a21fd91e45d522ba3a;60;ATSZIO64.sys - ATSZIO Driver - vulnerable driver
+b1334a71cc73b3d0c54f62d8011bec330dfc355a239bf94a121f6e4c86a30a2e;60;CITMDRV_IA64.sys - vulnerable driver
+b164daf106566f444dfb280d743bc2f7;75;POORTRY2.sys - malicious
+b179e1ab6dc0b1aee783adbcad4ad6bb75a8a64cb798f30c0dd2ee8aaf43e6de;60;HwOs2Ec7x64.sys - HwOs2Ec - vulnerable driver
+b1d96233235a62dbb21b8dbe2d1ae333199669f67664b107bff1ad49b41d9414;60;Agent64.sys - DriverAgent Direct I/O for 64-bit Windows - vulnerable driver
+b242b0332b9c9e8e17ec27ef10d75503d20d97b6;60;WinIo64C.sys - vulnerable driver
+b25170e09c9fb7c0599bfba3cf617187f6a733ac;60;CITMDRV_IA64.sys - vulnerable driver
+b2a9ac0600b12ec9819e049d7a6a0b75;60;CITMDRV_AMD64.sys - vulnerable driver
+b2f955b3e6107f831ebe67997f8586d4fe9f3e98;75;LcTkA.sys - malicious
+b47be212352d407d0ef7458a7161c66b47c2aec8391dd101df11e65728337a6a;60;CITMDRV_IA64.sys - vulnerable driver
+b47dee29b5e6e1939567a926c7a3e6a4;60;Lv561av.sys - Logitech Video Driver - vulnerable driver
+b480c54391a2a2f917a44f91a5e9e4590648b332;60;AMDPowerProfiler.sys - AMD Power Profiling Driver - vulnerable driver
+b48a309ee0960da3caaaaf1e794e8c409993aeb3a2b64809f36b97aac8a1e62a;60;AsIO64.sys - vulnerable driver
+b49ac8fefc6d1274d84fef44c1e5183cc7accba1;60;dcr.sys - vulnerable driver
+b4d014b5edd6e19ce0e8395a64faedf49688ecb5;60;EneIo64.sys - vulnerable driver
+b4d014b5edd6e19ce0e8395a64faedf49688ecb5;60;winio64.sys - vulnerable driver
+b4d1554ec19504215d27de0758e13c35ddd6db3e;60;CITMDRV_IA64.sys - vulnerable driver
+b4d47ea790920a4531e3df5a4b4b0721b7fea6b49a35679f0652f1e590422602;60;AsIO.sys - vulnerable driver
+b4d47ea790920a4531e3df5a4b4b0721b7fea6b49a35679f0652f1e590422602;60;AsUpIO64.sys - vulnerable driver
+b4dcdbd97f38b24d729b986f84a9cdb3fc34d59f;60;FairplayKD.sys - Multi Theft Auto patch driver - vulnerable driver
+b5ada7fd226d20ec6634fc24768f9e22;60;rtkiow10x64.sys - Realtek IO Driver - vulnerable driver
+b7a20b5f15e1871b392782c46ebcc897929443d82073ee4dcb3874b6a5976b5d;60;NTIOLib.sys - NTIOLib - vulnerable driver
+b89a8eef5aeae806af5ba212a8068845cafdab6f;60;LenovoDiagnosticsDriver.sys - Lenovo Diagnostics Driver for Windows 10 and later. - vulnerable driver
+b89b097b8b8aecb8341d05136f334ebb;60;NTIOLib.sys - NTIOLib - vulnerable driver
+b8b6686324f7aa77f570bc019ec214e6;60;rtkiow8x64.sys - Realtek IO Driver - vulnerable driver
+b8de3a1aeeda9deea43e3f768071125851c85bd0;60;NTIOLib.sys - NTIOLib - vulnerable driver
+b941c8364308990ee4cc6eadf7214e0f;60;LenovoDiagnosticsDriver.sys - Lenovo Diagnostics Driver for Windows 10 and later. - vulnerable driver
+b97a8d506be2e7eaa4385f70c009b22adbd071ba;60;AsIO.sys - vulnerable driver
+b9807b8840327c6d7fbdde45fc27de921f1f1a82;60;WiseUnlo.sys - WiseUnlo - vulnerable driver
+b9a4e40a5d80fedd1037eaed958f9f9efed41eb01ada73d51b5dcd86e27e0cbf;60;AsUpIO.sys - vulnerable driver
+b9b3878ddc5dfb237d38f8d25067267870afd67d12a330397a8853209c4d889c;60;CITMDRV_IA64.sys - vulnerable driver
+b9dad0131c51e2645e761b74a71ebad2bf175645fa9f42a4ab0e6921b83306e3;75;wantd_5.sys - WAN Transport Driver - malicious
+ba5f0f6347780c2ed911bbf888e75bef;60;ALSysIO64.sys - ALSysIO - vulnerable driver
+bae1f127c4ff21d8fe45e2bbfc59c180;60;HwOs2Ec7x64.sys - HwOs2Ec - vulnerable driver
+bb1135b51acca8348d285dc5461d10e8f57260e7d0c8cc4a092734d53fc40cbc;60;HwOs2Ec10x64.sys - HwOs2Ec - vulnerable driver
+bb50818a07b0eb1bd317467139b7eb4bad6cd89053fecdabfeae111689825955;60;Dh_Kernel.sys - dianhu - vulnerable driver
+bb962c9a8dda93e94fef504c4159de881e4706fe;60;amifldrv64.sys - vulnerable driver
+bbbc9a6cc488cfb0f6c6934b193891eb;60;krpocesshacker.sys - KProcessHacker - vulnerable driver
+bbc0b9fd67c8f4cefa3d76fcb29ff3cef996b825;60;UCOREW64.SYS - vulnerable driver
+bbc1e5fd826961d93b76abd161314cb3592c4436;60;ncpl.sys - Novell Client Portability Layer - vulnerable driver
+bbe4f5f8b0c0f32f384a83ae31f49a00;60;CITMDRV_IA64.sys - vulnerable driver
+bc2f3850c7b858340d7ed27b90e63b036881fd6c;60;80.sys - vulnerable driver
+bc47e15537fa7c32dfefd23168d7e1741f8477ed;60;procexp.Sys - Process Explorer - vulnerable driver
+bce7f34912ff59a3926216b206deb09f;60;vboxdrv.sys - VirtualBox Support Driver - vulnerable driver
+bd25be845c151370ff177509d95d5add;75;2.sys - malicious
+bd5b0514f3b40f139d8079138d01b5f6;75;daxin_blank3.sys - malicious
+be03e9541f56ac6ed1e81407dcd7cc85c0ffc538c3c2c2c8a9c747edbcf13100;60;t7.sys - vulnerable driver
+be54f7279e69fb7651f98e91d24069dbc7c4c67e65850e486622ccbdc44d9a57;60;magdrvamd64.sys - vulnerable driver
+bf87e32a651bdfd9b9244a8cf24fca0e459eb614;60;NTIOLib.sys - NTIOLib - vulnerable driver
+bfe55cacc7c56c9f7bd75bdb4b352c0b745d071b;60;speedfan.sys - SpeedFan Device Driver - vulnerable driver
+c02f70960fa934b8defa16a03d7f6556;60;NTIOLib_X64.sys - NTIOLib - vulnerable driver
+c02f70960fa934b8defa16a03d7f6556;60;NTIOLib.sys - NTIOLib - vulnerable driver
+c0d88db11d0f529754d290ed5f4c34b4dba8c4f2e5c4148866daabeab0d25f9c;75;ntbios_2.sys - ntbios driver - malicious
+c1c4310e5d467d24e864177bdbfc57cb5d29aac697481bfa9c11ddbeebfd4cc8;60;d.sys - vulnerable driver
+c1d063c9422a19944cdaa6714623f2ec;60;WCPU.sys - ASUS TDE CPU Driver - vulnerable driver
+c1d3a6bb423739a5e781f7eee04c9cfd;60;CITMDRV_AMD64.sys - vulnerable driver
+c1d5cf8c43e7679b782630e93f5e6420ca1749a7;60;capcom.sys - vulnerable driver
+c1fce7aac4e9dd7a730997e2979fa1e2;60;libnicm.sys - XTier COM Services Driver - vulnerable driver
+c23eeb6f18f626ce1fd840227f351fa7543bb167;75;Air_SYSTEM10.sys - malicious
+c24800c382b38707e556af957e9e94fd;60;dcr.sys - vulnerable driver
+c257aa4094539719a3c7b7950598ef872dbf9518;75;daxin_blank6.sys - malicious
+c2c1b8c00b99e913d992a870ed478a24;60;PCHunter.sys - Epoolsoft Windows Information View Tools - vulnerable driver
+c2eb4539a4f6ab6edd01bdc191619975;60;cpuz.sys - CPUID Driver - vulnerable driver
+c3fea895fe95ea7a57d9f4d7abed5e71;60;NTIOLib.sys - NTIOLib - vulnerable driver
+c49a1956a6a25ffc25ad97d6762b0989;60;msrhook.sys - vulnerable driver
+c4d7fb9db3c3459f7e8c0e3d48c95c7c9c4cff60;60;NTIOLib.sys - NTIOLib For MSISimple_OC - vulnerable driver
+c4ed28fdfba7b8a8dfe39e591006f25d39990f07;60;piddrv64.sys - vulnerable driver
+c5050a2017490fff7aa53c73755982b339ddb0fd7cef2cde32c81bc9834331c5;60;HpPortIox64.sys - HpPortIo - vulnerable driver
+c52cef5b9e1d4a78431b7af56a6fdb6aa1bcad65;60;atillk64.sys - ATI Diagnostics Hardware Abstraction Sys - vulnerable driver
+c533d6d64b474ffc3169a0e0fc0a701a;60;amp.sys - AMP Minifilter - vulnerable driver
+c5f5d109f11aadebae94c77b27cb026f;60;CITMDRV_IA64.sys - vulnerable driver
+c60fcff9c8e5243bbb22ec94618b9dcb02c59bb49b90c04d7d6ab3ebbd58dc3a;60;Proxy64.sys - vulnerable driver
+c6bd965300f07012d1b651a9b8776028c45b149a;60;BSMIx64.sys - SMI Driver - vulnerable driver
+c6d349823bbb1f5b44bae91357895dba653c5861;60;PhlashNT.sys - SWinFlash Driver for Windows NT - vulnerable driver
+c6f8983dd3d75640c072a8459b8fa55a;60;NTIOLib.sys - NTIOLib - vulnerable driver
+c725919e6357126d512c638f993cf572112f323da359645e4088f789eb4c7b8c;60;krpocesshacker.sys - KProcessHacker - vulnerable driver
+c7a57cd4bea07dadba2e2fb914379910;60;CITMDRV_IA64.sys - vulnerable driver
+c834c4931b074665d56ccab437dfcc326649d612;60;CITMDRV_AMD64.sys - vulnerable driver
+c8d87f3cd34c572870e63a696cf771580e6ea81b;60;NTIOLib.sys - NTIOLib - vulnerable driver
+c8f9e1ad7b8cce62fba349a00bc168c849d42cfb2ca5b2c6cc4b51d054e0c497;75;LcTkA.sys - malicious
+c948ae14761095e4d76b55d9de86412258be7afd;60;dbutil_2_3.sys - vulnerable driver
+c948ae14761095e4d76b55d9de86412258be7afd;60;dbutil_2_3.sys - vulnerable driver
+c95db1e82619fb16f8eec9a8209b7b0e853a4ebe;60;CITMDRV_IA64.sys - vulnerable driver
+c969f1f73922fd95db1992a5b552fbc488366a40;60;NTIOLib.sys - NTIOLib - vulnerable driver
+c996d7971c49252c582171d9380360f2;60;dbutil_2_3.sys - vulnerable driver
+c996d7971c49252c582171d9380360f2;60;dbutil_2_3.sys - vulnerable driver
+c9a293762319d73c8ee84bcaaf81b7b3;60;BS_Def64.sys - Default BIOS Flash Driver - vulnerable driver
+c9b49b52b493b53cd49c12c3fa9553e57c5394555b64e32d1208f5b96a5b8c6e;60;WINIODrv.sys - vulnerable driver
+c9cbfdd0be7b35751a017ec59ff7237ffdc4df1f;60;CITMDRV_AMD64.sys - vulnerable driver
+c9cf1d627078f63a36bbde364cd0d5f2be1714124d186c06db5bcdf549a109f8;60;mtcBSv64.sys - MiTAC System Service Provider - vulnerable driver
+cb22723faa5ae2809476e5c5e9b9a597b26cab9b;60;viragt.sys - VirIT Agent System - vulnerable driver
+cb3de54667548a5c9abf5d8fa47db4097fcee9f1;60;BS_HWMIO64_W10.sys - I/O Interface driver file - vulnerable driver
+cb3f30809b05cf02bc29d4a7796fb0650271e542;75;daxin_blank1.sys - malicious
+cb57f3a7fe9e1f8e63332c563b0a319b26c944be839eabc03e9a3277756ba612;60;d2.sys - vulnerable driver
+cb9890d4e303a4c03095d7bc176c42dee1b47d8aa58e2f442ec1514c8f9e3cec;60;nt2.sys - vulnerable driver
+cbb8239a765bf5b2c1b6a5c8832d2cab8fef5deacadfb65d8ed43ef56d291ab6;60;amp.sys - AMP Minifilter - vulnerable driver
+cc0e0440adc058615e31e8a52372abadf658e6b1;60;inpoutx64.sys - Kernel level port access driver - vulnerable driver
+cc383ad11e9d06047a1558ed343f389492da3ac2b84b71462aee502a2fa616c8;60;c.sys - vulnerable driver
+cc51be79ae56bc97211f6b73cc905c3492da8f9d;60;GLCKIO2.sys - vulnerable driver
+cc586254e9e89e88334adee44e332166119307e79c2f18f6c2ab90ce8ba7fc9b;60;NTIOLib.sys - NTIOLib - vulnerable driver
+cc687fe3741bbde1dd142eac0ef59fd1d4457daee43cdde23bb162ef28d04e64;60;TmComm.sys - TrendMicro Common Module - vulnerable driver
+ccd547ef957189eddb6ee213e5e0136e980186f9;60;SSPORT.sys - Port Contention Driver - vulnerable driver
+ccdd3a1ebe9a1c8f8a72af20a05a10f11da1d308;60;otipcibus.sys - Hardware Access Driver - vulnerable driver
+cce9b82f01ec68f450f5fe4312f40d929c6a506e;60;NTIOLib.sys - NTIOLib - vulnerable driver
+ccf523b951afaa0147f22e2a7aae4976;60;OpenLibSys.sys - OpenLibSys - vulnerable driver
+cd4a249c3ef65af285d0f8f30a8a96e83688486aab515836318a2559757a89bb;60;NTIOLib.sys - NTIOLib - vulnerable driver
+cd9f0fcecf1664facb3671c0130dc8bb;60;VProEventMonitor.sys - VProEventMonitor.Sys - Event Monitoring driver - vulnerable driver
+cdd2a4575a46bada4837a6153a79c14d60ee3129830717ef09e0e3efd9d00812;60;RTCore64.sys - vulnerable driver
+ce549714a11bd43b52be709581c6e144957136ec;60;elrawdsk.sys - RawDisk Driver. Allows write access to files and raw disk sectors for user mode applications in Windows 2000 and later. - vulnerable driver
+cf3a7d4285d65bf8688215407bce1b51d7c6b22497f09021f0fce31cbeb78986;60;vboxdrv.sys - vulnerable driver
+cf4b5fa853ce809f1924df3a3ae3c4e191878c4ea5248d8785dc7e51807a512b;60;NTIOLib.sys - NTIOLib for MSIClock_CC - vulnerable driver
+d02403f85be6f243054395a873b41ef8a17ea279;75;wantd_4.sys - WAN Transport Driver - malicious
+d04e5db5b6c848a29732bfd52029001f23c3da75;60;iqvw64e.sys - Intel(R) Network Adapter Diagnostic Driver - vulnerable driver
+d04e5db5b6c848a29732bfd52029001f23c3da75;60;NalDrv.sys - Intel(R) Network Adapter Diagnostic Driver - vulnerable driver
+d098600152e5ee6a8238d414d2a77a34da8afaaa;60;nicm.sys - Novell XTCOM Services Driver - vulnerable driver
+d0bd1ae72aeb5f3eabf1531a635f990e5eaae7fdd560342f915f723766c80889;60;NTIOLib.sys - NTIOLib - vulnerable driver
+d0d39e1061f30946141b6ecfa0957f8cc3ddeb63;60;NCHGBIOS2x64.SYS - BIOS Update Driver For Windows x64 Edition - vulnerable driver
+d104621c93213942b7b43d65b5d8d33e;60;DBUtilDrv2.sys - DBUtil - vulnerable driver
+d1bac75205c389d6d5d6418f0457c29b;60;CITMDRV_AMD64.sys - vulnerable driver
+d205286bffdf09bc033c09e95c519c1c267b40c2ee8bab703c6a2d86741ccd3e;60;BS_RCIO64.sys - I/O Interface driver file - vulnerable driver
+d25340ae8e92a6d29f599fef426a2bc1b5217299;60;WinRing0x64.sys - WinRing0 - vulnerable driver
+d253c19194a18030296ae62a10821640;60;GLCKIO2.sys - vulnerable driver
+d2588631d8aae2a3e54410eaf54f0679;60;BS_HWMIO64_W10.sys - I/O Interface driver file - vulnerable driver
+d25904fbf907e19f366d54962ff543d9f53b8fdfd2416c8b9796b6a8dd430e26;60;My.sys - vulnerable driver
+d2e6fc9259420f0c9b6b1769be3b1f63eb36dc57;60;cpuz_x64.sys - CPUID Driver - vulnerable driver
+d34a7c497c603f3f7fcad546dc4097c2da17c430;60;NTIOLib.sys - NTIOLib for MSICPU_CC - vulnerable driver
+d3e40644a91327da2b1a7241606fe559;60;nvflsh64.sys - vulnerable driver
+d417c0be261b0c6f44afdec3d5432100e420c3ed;75;ndislan.sys - MS LAN Driver - malicious
+d5562fb90b0b3deb633ab335bcbd82ce10953466a428b3f27cb5b226b453eaf3;60;Black.sys - vulnerable driver
+d5586dc1e61796a9ae5e5d1ced397874753056c3df2eb963a8916287e1929a71;60;CITMDRV_AMD64.sys - vulnerable driver
+d569d4bab86e70efbcdfdac9d822139d6f477b7c;60;ASIO32.sys - vulnerable driver
+d5a642329cce4df94b8dc1ba9660ae34;60;otipcibus.sys - Hardware Access Driver - vulnerable driver
+d5db81974ffda566fa821400419f59be;60;vmdrv.sys - Voicemod Virtual Audio Device (WDM) - vulnerable driver
+d5fd9fe10405c4f90235e583526164cd0902ed86;60;AsUpIO.sys - vulnerable driver
+d62fa51e520022483bdc5847141658de689c0c29;60;NTIOLib.sys - NTIOLib - vulnerable driver
+d6e9f6c67d9b3d790d592557a7d57c3c;60;EneTechIo64.sys - vulnerable driver
+d702d88b12233be9413446c445f22fda4a92a1d9;60;segwindrvx64.sys - SEG Windows Driver x64 - vulnerable driver
+d7bc7306cb489fe4c285bbeddc6d1a09e814ef55cf30bd5b8daf87a52396f102;60;nt4.sys - vulnerable driver
+d7e8aef8c8feb87ce722c0b9abf34a7e6bab6eb4;60;NTIOLib.sys - NTIOLib - vulnerable driver
+d7f7594ff084201c0d9fa2f4ef1626635b67bce5;60;phymem64.sys - phymem Application - vulnerable driver
+d8459f7d707c635e2c04d6d6d47b63f73ba3f6629702c7a6e0df0462f6478ae2;60;CITMDRV_AMD64.sys - vulnerable driver
+d8498707f295082f6a95fd9d32c9782951f5a082;60;krpocesshacker.sys - KProcessHacker - vulnerable driver
+d8b58f6a89a7618558e37afc360cd772b6731e3ba367f8d58734ecee2244a530;60;NTIOLib_X64.sys - NTIOLib - vulnerable driver
+d8b58f6a89a7618558e37afc360cd772b6731e3ba367f8d58734ecee2244a530;60;NTIOLib.sys - NTIOLib - vulnerable driver
+d92eab70bcece4432258c9c9a914483a2267f6ab5ce2630048d3a99e8cb1b482;60;NTIOLib.sys - NTIOLib - vulnerable driver
+d94f2fb3198e14bfe69b44fb9f00f2551f7248b2;60;NTIOLib.sys - NTIOLib - vulnerable driver
+d979353d04bf65cc92ad3412605bc81edbb75ec2;60;Agent64.sys - DriverAgent Direct I/O for 64-bit Windows - vulnerable driver
+d9c09dd725bc7bc3c19b4db37866015817a516ef;60;NTIOLib.sys - NTIOLib - vulnerable driver
+d9ce18960c23f38706ae9c6584d9ac90;60;NCHGBIOS2x64.SYS - BIOS Update Driver For Windows x64 Edition - vulnerable driver
+d9e7e5bcc5b01915dbcef7762a7fc329;60;MsIo32.sys - vulnerable driver
+da6ca1fb539f825ca0f012ed6976baf57ef9c70143b7a1e88b4650bf7a925e24;60;capcom.sys - vulnerable driver
+da9cea92f996f938f699902482ac5313d5e8b28e;60;OpenLibSys.sys - OpenLibSys - vulnerable driver
+dacb62578b3ea191ea37486d15f4f83c;60;DBUtilDrv2.sys - vulnerable driver
+daf800da15b33bf1a84ee7afc59f0656;60;rtkio.sys - Realtek IODriver - vulnerable driver
+db2a9247177e8cdd50fe9433d066b86ffd2a84301aa6b2eb60f361cfff077004;60;smep_capcom.sys - vulnerable driver
+db72def618cbc3c5f9aa82f091b54250;60;cpuz141.sys - CPUID Driver - vulnerable driver
+db90e554ad249c2bd888282ecf7d8da4d1538dd364129a3327b54f8242dd5653;60;CITMDRV_IA64.sys - vulnerable driver
+dbc415304403be25ac83047c170b0ec2;60;HwRwDrv.sys - Hardware read & write driver - vulnerable driver
+dc0e97adb756c0f30b41840a59b85218cbdd198f;60;HwOs2Ec10x64.sys - HwOs2Ec - vulnerable driver
+dc55217b6043d819eadebd423ff07704ee103231;60;BS_I2c64.sys - I/O Interface driver file - vulnerable driver
+dc55217b6043d819eadebd423ff07704ee103231;60;BS_I2cIo.sys - I/O Interface driver file - vulnerable driver
+dc564bac7258e16627b9de0ce39fae25;75;7.sys - malicious
+dc7b022f8bd149efbcb2204a48dce75c72633526;60;CITMDRV_IA64.sys - vulnerable driver
+dc943bf367ae77016ae399df8e71d38a;60;MsIo64.sys - MICSYS driver - vulnerable driver
+dd04cd3de0c19bede84e9c95a86b3ca8;60;NTIOLib.sys - NTIOLib - vulnerable driver
+dd39a86852b498b891672ffbcd071c03;60;CITMDRV_AMD64.sys - vulnerable driver
+dd4a1253d47de14ef83f1bc8b40816a86ccf90d1e624c5adf9203ae9d51d4097;60;iomem64.sys - DTR Kernel mode driver - vulnerable driver
+ddbe809b731a0962e404a045ab9e65a0b64917ad;60;Dh_Kernel_10.sys - dianhu - vulnerable driver
+ddc2ffe0ab3fcd48db898ab13c38d88d;60;Agent64.sys - DriverAgent Direct I/O for 64-bit Windows - vulnerable driver
+dde6f28b3f7f2abbee59d4864435108791631e9cb4cdfb1f178e5aa9859956d8;60;AsIO.sys - vulnerable driver
+de1cc5c266140bff9d964fab87a29421;60;asrdrv104.sys - ASRock IO Driver - vulnerable driver
+de6bf572d39e2611773e7a01f0388f84fb25da6cba2f1f8b9b36ffba467de6fa;60;WYProxy32.sys - vulnerable driver
+dec8a933dba04463ed9bb7d53338ff87f2c23cfb79e0e988449fc631252c9dcc;60;b4.sys - vulnerable driver
+ded2927f9a4e64eefd09d0caba78e94f309e3a6292841ae81d5528cab109f95d;60;cpuz141.sys - CPUID Driver - vulnerable driver
+dfaefd06b680f9ea837e7815fc1cc7d1f4cc375641ac850667ab20739f46ad22;60;windows-xp-64.sys - vulnerable driver
+e005e8d183e853a27ad3bb56f25489f369c11b0d47e3d4095aad9291b3343bf1;60;NTIOLib.sys - NTIOLib - vulnerable driver
+e039c9dd21494dbd073b4823fc3a17fbb951ec6c;60;asrdrv104.sys - vulnerable driver
+e05eeb2b8c18ad2cb2d1038c043d770a0d51b96b748bc34be3e7fc6f3790ce53;60;viragt.sys - VirIT Agent System - vulnerable driver
+e076dadf37dd43a6b36aeed957abee9e;60;CITMDRV_AMD64.sys - vulnerable driver
+e09b5e80805b8fe853ea27d8773e31bff262e3f7;60;dbutil.sys - vulnerable driver
+e1980c6592e6d2d92c1a65acad8f1071b6a404097bb6fcce494f3c8ac31385cf;60;winio64.sys - vulnerable driver
+e22495d92ac3dcae5eeb1980549a9ead8155f98a;60;magdrvamd64.sys - vulnerable driver
+e35a2b009d54e1a0b231d8a276251f64231b66a3;60;NTIOLib.sys - NTIOLib - vulnerable driver
+e3c1dd569aa4758552566b0213ee4d1fe6382c4b;60;dbutil.sys - vulnerable driver
+e4266262a77fffdea2584283f6c4f51d;60;AMDPowerProfiler.sys - AMD Power Profiling Driver - vulnerable driver
+e4436c8c42ba5ffabd58a3b2256f6e86ccc907ab;60;fiddrv64.sys - vulnerable driver
+e4a7da2cf59a4a21fc42b611df1d59cae75051925a7ddf42bf216cc1a026eadb;60;Monitor_win10_x64.sys - IObit Temperature Monitor - vulnerable driver
+e5021a98e55d514e2376aa573d143631e5ee1c13;60;asrdrv104.sys - vulnerable driver
+e6056443537d4d2314dabca1b9168f1eaaf17a14eb41f6f5741b6b82b3119790;60;nicm.sys - Novell XTCOM Services Driver - vulnerable driver
+e61a54f6d3869b43c4eceac3016df73df67cce03878c5a6167166601c5d3f028;60;CITMDRV_IA64.sys - vulnerable driver
+e6305dddd06490d7f87e3b06d09e9d4c1c643af0;60;MsIo32.sys - vulnerable driver
+e6765d8866cad6193df1507c18f31fa7f723ca3e;75;Sense5Ext.sys - Sense5 Driver - malicious
+e68d453d333854787f8470c8baef3e0d082f26df5aa19c0493898bcf3401e39a;60;NTIOLib.sys - NTIOLib For MSISimple_OC - vulnerable driver
+e6a7b0bc01a627a7d0ffb07faddb3a4dd96b6f5208ac26107bdaeb3ab1ec8217;75;daxin_blank6.sys - malicious
+e700a820f117f65e813b216fccbf78c9;60;GLCKIO2.sys - vulnerable driver
+e74b6dda8bc53bc687fc21218bd34062a78d8467;60;netfilterdrv.sys - vulnerable driver
+e75714f8e0ff45605f6fc7689a1a89c7dcd34aab66c6131c63fefaca584539cf;60;LHA.sys - LHA - vulnerable driver
+e79c91c27df3eaf82fb7bd1280172517;60;viragt.sys - VirIT Agent System - vulnerable driver
+e7af7bcb86bd6bab1835f610671c3921441965a839673ac34444cf0ce7b2164e;75;wantd_6.sys - WAN Transport Driver - malicious
+e81230217988f3e7ec6f89a06d231ec66039bdba340fd8ebb2bbb586506e3293;60;CITMDRV_AMD64.sys - vulnerable driver
+e83458c4a6383223759cd8024e60c17be4e7c85f;60;BS_Flash64.sys - vulnerable driver
+e83908eba2501a00ef9e74e7d1c8b4ff1279f1cd6051707fd51824f87e4378fa;60;NTIOLib.sys - NTIOLib for MSICPU_CC - vulnerable driver
+e86cb77de7b6a8025f9a546f6c45d135f471e664963cf70b381bee2dfd0fdef4;60;Lv561av.sys - Logitech Video Driver - vulnerable driver
+e8ebba56ea799e1e62748c59e1a4c586;60;HOSTNT.sys - Hostnt 64-bit driver - vulnerable driver
+e92817a8744ebc4e4fa5383cdce2b2977f01ecd4;60;GVCIDrv64.sys - vulnerable driver
+e9a30edef1105b8a64218f892b2e56ed;60;NTIOLib.sys - NTIOLib for MSICPU_CC - vulnerable driver
+e9e786bdba458b8b4f9e93d034f73d00;60;PhlashNT.sys - SWinFlash Driver for Windows NT - vulnerable driver
+ea0b9eecf4ad5ec8c14aec13de7d661e7615018b1a3c65464bf5eca9bbf6ded3;60;rwdrv.sys - RwDrv Driver - vulnerable driver
+ea360a9f23bb7cf67f08b88e6a185a699f0c5410;60;bandai.sys - vulnerable driver
+ea85bbe63d6f66f7efee7007e770af820d57f914c7f179c5fee3ef2845f19c41;60;IOMap64.sys - ASUS Kernel Mode Driver for NT  - vulnerable driver
+ea877092d57373cb466b44e7dbcad4ce9a547344;60;CITMDRV_IA64.sys - vulnerable driver
+eaea9ccb40c82af8f3867cd0f4dd5e9d;60;vboxdrv.sys - vulnerable driver
+eb93d2f564fea9b3dc350f386b45de2cd9a3e001;60;fidpcidrv64.sys - vulnerable driver
+ec4cc6de4c779bb1ca1dd32ee3a03f7e8d633a9b;60;NTIOLib.sys - NTIOLib for MSIClock_CC - vulnerable driver
+ecb4d096a9c58643b02f328d2c7742a38e017cf0;60;CITMDRV_IA64.sys - vulnerable driver
+ece0a900ea089e730741499614c0917432246ceb5e11599ee3a1bb679e24fd2c;60;AsrDrv10.sys - ASRock IO Driver - vulnerable driver
+ed07f1a8038596574184e09211dfc30f;60;CITMDRV_IA64.sys - vulnerable driver
+ed6348707f177629739df73b97ba1b6e;60;LgDCatcher.sys - vulnerable driver
+ee6b1a79cb6641aa44c762ee90786fe0;75;NodeDriver.sys - malicious
+eea53103e7a5a55dc1df79797395a2a3e96123ebd71cdd2db4b1be80e7b3f02b;60;elbycdio.sys - ElbyCD Windows NT/2000/XP I/O driver - vulnerable driver
+eeff4ec4ebc12c6acd2c930dc2eaaf877cfec7ec;60;fidpcidrv.sys - vulnerable driver
+ef80da613442047697bec35ea228cde477c09a3d;60;Monitor_win10_x64.sys - IObit Temperature Monitor - vulnerable driver
+ef86c4e5ee1dbc4f81cd864e8cd2f4a2a85ee4475b9a9ab698a4ae1cc71fbeb0;60;NTIOLib.sys - NTIOLib - vulnerable driver
+f02af84393e9627ba808d4159841854a6601cf80;60;ALSysIO64.sys - ALSysIO - vulnerable driver
+f052dc35b74a1a6246842fbb35eb481577537826;60;smep_namco.sys - vulnerable driver
+f05b1ee9e2f6ab704b8919d5071becbce6f9d0f9d0ba32a460c41d5272134abe;60;LenovoDiagnosticsDriver.sys - Lenovo Diagnostics Driver for Windows 10 and later. - vulnerable driver
+f0605dda1def240dc7e14efa73927d6c6d89988c01ea8647b671667b2b167008;60;OpenLibSys.sys - OpenLibSys - vulnerable driver
+f088b2ba27dacd5c28f8ee428f1350dca4bc7c6606309c287c801b2e1da1a53d;60;NTIOLib.sys - NTIOLib - vulnerable driver
+f0c463d29a5914b01e4607889094f1b7d95e7aaf;60;SysInfo.sys - vulnerable driver
+f18e669127c041431cde8f2d03b15cfc20696056;60;WinIo64B.sys - vulnerable driver
+f1c8c3926d0370459a1b7f0cf3d17b22ff9d0c7f;60;WinIO32B.sys - vulnerable driver
+f1c8ca232789c2f11a511c8cd95a9f3830dd719cad5aa22cb7c3539ab8cb4dc3;60;RTCore64.sys - vulnerable driver
+f1e054333cc40f79cfa78e5fbf3b54c2;60;iomem64.sys - DTR Kernel mode driver - vulnerable driver
+f242cffd9926c0ccf94af3bf16b6e527;75;daxin_blank5.sys - malicious
+f2f728d2f69765f5dfda913d407783d2;60;NBIOLib_X64.sys - NTIOLib - vulnerable driver
+f2f728d2f69765f5dfda913d407783d2;60;NTIOLib.sys - NTIOLib - vulnerable driver
+f36a47edfacd85e0c6d4d22133dd386aee4eec15;60;WCPU.sys - ASUS TDE CPU Driver - vulnerable driver
+f3cce7e79ab5bd055f311bb3ac44a838779270b6;60;AsrSetupDrv103.sys - vulnerable driver
+f3db629cfe37a73144d5258e64d9dd8b38084cf4;60;kEvP64.sys - PowerTool - vulnerable driver
+f40435488389b4fb3b945ca21a8325a51e1b5f80f045ab019748d0ec66056a8b;60;AsrDrv101.sys - ASRock IO Driver - vulnerable driver
+f406c5536bcf9bacbeb7ce8a3c383bfa;60;smep_capcom.sys - vulnerable driver
+f42f28d164205d9f6dab9317c9fecad54c38d5d2;60;Phymemx64.sys - vulnerable driver
+f461414a2596555cece5cfee65a3c22648db0082ca211f6238af8230e41b3212;75;Air_SYSTEM10.sys - malicious
+f5051c756035ef5de9c4c48bacb0612b;60;BS_Flash64.sys - vulnerable driver
+f50c6b84dfb8f2d53ba3bce000a55f0a486c0e79;60;NTIOLib.sys - NTIOLib - vulnerable driver
+f51bdb0ad924178131c21e39a8ccd191e46b5512b0f2e1cc8486f63e84e5d960;60;BlackBoneDrv10.sys - vulnerable driver
+f5696fb352a3fbd14fb1a89ad21a71776027f9ab;60;cpuz141.sys - CPUID Driver - vulnerable driver
+f581decc2888ef27ee1ea85ea23bbb5fb2fe6a554266ff5a1476acd1d29d53af;60;inpoutx64.sys - Kernel level port access driver - vulnerable driver
+f596e64f4c5d7c37a00493728d8756b243cfdc11e3372d6d6dfeffc13c9ab960;60;PanIO.sys - Temperature and system information driver - vulnerable driver
+f66b96aa7ae430b56289409241645099;60;NTIOLib.sys - NTIOLib - vulnerable driver
+f6f11ad2cd2b0cf95ed42324876bee1d83e01775;60;RTCore64.sys - vulnerable driver
+f7393fb917aed182e4cbef25ce8af950;60;BlackBoneDrv10.sys - vulnerable driver
+f778489c7105a63e9e789a02412aaa5f;60;CITMDRV_IA64.sys - vulnerable driver
+f7cbbb5eb263ec9a35a1042f52e82ca4;60;NTIOLib.sys - NTIOLib - vulnerable driver
+f8236fc01d4efaa48f032e301be2ebba4036b2cd945982a29046eca03944d2ae;75;0x3040_blacklotus_beta_driver.sys - malicious
+f8236fc01d4efaa48f032e301be2ebba4036b2cd945982a29046eca03944d2ae;75;0x3040_blacklotus_beta_driver.sys - malicious
+f8430bdc6fd01f42217d66d87a3ef6f66cb2700ebb39c4f25c8b851858cc4b35;60;superbmc.sys - superbmc - vulnerable driver
+f85cca4badff17d1aa90752153ccec77a68ad282b69e3985fdc4743eaea85004;60;IObitUnlocker.sys - Unlocker Driver - vulnerable driver
+f8886a9c759e0426e08d55e410b02c5b05af3c287b15970175e4874316ffaf13;60;NetFlt.sys - vulnerable driver
+f88ebb633406a086d9cca6bc8b66a4ea940c5476529f9033a9e0463512a23a57;60;CITMDRV_AMD64.sys - vulnerable driver
+f8965fdce668692c3785afa3559159f9a18287bc0d53abb21902895a8ecf221b;60;inpoutx64.sys - Kernel level port access driver - vulnerable driver
+f929bead59e9424ab90427b379dcdd63fbfe0c4fb5e1792e3a1685541cd5ec65;60;BSMEMx64.sys - I/O Interface driver file - vulnerable driver
+f9519d033d75e1ab6b82b2e156eafe9607edbcfb;60;BS_Def64.sys - Default BIOS Flash Driver - vulnerable driver
+f9844524fb0009e5b784c21c7bad4220;75;Sense5Ext.sys - Sense5 Driver - malicious
+f9feb60b23ca69072ce42264cd821fe588a186a6;60;CITMDRV_IA64.sys - vulnerable driver
+fa173832dca1b1faeba095e5c82a1559;60;CITMDRV_IA64.sys - vulnerable driver
+fa222bed731713904320723b9c085b11;60;CITMDRV_IA64.sys - vulnerable driver
+faa870b0cb15c9ac2b9bba5d0470bd501ccd4326;60;81.sys - vulnerable driver
+fac8eb49e2fd541b81fcbdeb98a199cb;60;BSMI.sys - SMI Driver - vulnerable driver
+fac8eb49e2fd541b81fcbdeb98a199cb;60;BSMIXP64.sys - SMI Driver - vulnerable driver
+fafa1bb36f0ac34b762a10e9f327dcab2152a6d0b16a19697362d49a31e7f566;60;WYProxy64.sys - vulnerable driver
+fb7c61ef427f9b2fdff3574ee6b1819b;75;wantd_3.sys - WAN Transport Driver - malicious
+fbf8b0613a2f7039aeb9fa09bd3b40c8ff49ded2;60;rwdrv.sys - RwDrv Driver - vulnerable driver
+fcd615df88645d1f57ff5702bd6758b77efea6d0;60;LHA.sys - LHA - vulnerable driver
+fcde5275ee1913509927ce5f0f85e6681064c9d2;60;AsIO64.sys - vulnerable driver
+fcdfe570e6dc6e768ef75138033d9961f78045adca53beb6fdb520f6417e0df1;60;cpupress.sys - vulnerable driver
+fd223833abffa9cd6cc1848d77599673643585925a7ee51259d67c44d361cce8;75;PcieCubed.sys - PCIe Video Capture - malicious
+fd33fb2735cc5ef466a54807d3436622407287e325276fcd3ed1290c98bd0533;60;nt5.sys - vulnerable driver
+fd7de498a72b2daf89f321d23948c3c4;60;piddrv64.sys - vulnerable driver
+fd81af62964f5dd5eb4a828543a33dcf;60;CITMDRV_IA64.sys - vulnerable driver
+fd8669794c67b396c12fc5f08e9c004fdf851a82faf302846878173e4fbecb03;60;NTIOLib.sys - NTIOLib - vulnerable driver
+fe10018af723986db50701c8532df5ed98b17c39;60;gdrv.sys - GIGABYTE Tools - vulnerable driver
+fe1d909ab38de1389a2a48352fd1c8415fd2eab0;60;CITMDRV_IA64.sys - vulnerable driver
+fef9dd9ea587f8886ade43c1befbdafe;60;AsIO.sys - vulnerable driver
+ff6729518a380bf57f1bc6f1ec0aa7f3012e1618b8d9b0f31a61d299ee2b4339;60;gdrv.sys - GIGA-BYTE NonPNP Driver - vulnerable driver
+ff7b31fa6e9ab923bce8af31d1be5bb2;60;CITMDRV_IA64.sys - vulnerable driver
+FFF4F28287677CAABC60C8AB36786C370226588D;75;blacklotus_beta_driver_4.sys - malicious
+fff7ee0febb8c93539220ca49d4206616e15c666;60;BEDAISY.SYS - vulnerable driver
