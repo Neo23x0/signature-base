@@ -3902,8 +3902,8 @@ linpeas\.log;75
 \\DripLoader\.exe;75
 \\passav\.exe;65
 
-# Exploit Code File Names 
-\\cve-20(20|19)-[0-9]{4,5}.{0,20}(\.py|\.exe|\.vbs|\.bat|\.ps1|\.dll|$);80
+# Exploit Code File Names
+\\cve-20(20|19)-[0-9]{4,5}.{0,20}(\.py|\.exe|\.vbs|\.bat|\.ps1|\.dll|$);75;(\\share\\doc|\\Microsoft\\Windows Defender Advanced Threat Protection\\)
 
 # Possible Service Path Escalation Attempt http://www.commonexploits.com/unquoted-service-paths/ or simple malware
 :\\Program\.exe;75
@@ -3923,7 +3923,7 @@ Potato\.exe;65
 \\dll_hijack_detect_x64\.exe;70
 \\dll_hijack_detect_x86\.exe;70
 
-# LSASS Dump Names 
+# LSASS Dump Names
 \\lsass[a-zA-Z_\-\.]{1,16}\.(dmp|zip|rar|7z);70
 
 # Programs or scripts in C:\ProgramData folder (no sub folder)
