@@ -3903,7 +3903,8 @@ linpeas\.log;75
 \\passav\.exe;65
 
 # Exploit Code File Names
-\\cve-20(20|19)-[0-9]{4,5}.{0,20}(\.py|\.exe|\.vbs|\.bat|\.ps1|\.dll|$);75;(\\share\\doc|\\Microsoft\\Windows Defender Advanced Threat Protection\\)
+\\(cve|CVE)-20[012][0-9]-[0-9]{4,5}.{0,20}$;60;(\\share\\doc|\\Microsoft\\Windows Defender Advanced Threat Protection\\)
+\\(cve|CVE)-20[012][0-9]-[0-9]{4,5}.{0,20}(\.py|\.exe|\.vbs|\.bat|\.ps1|\.dll);75;(\\share\\doc)
 
 # Possible Service Path Escalation Attempt http://www.commonexploits.com/unquoted-service-paths/ or simple malware
 :\\Program\.exe;75
