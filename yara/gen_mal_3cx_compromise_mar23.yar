@@ -354,3 +354,56 @@ rule SUSP_APT_3CX_Regtrans_Anomaly_Apr23 : METARULE {
       )
 }
 
+rule APT_MAL_VEILEDSIGNAL_Backdoor_Apr23_2 {
+   meta:
+      description = "Detects malicious VEILEDSIGNAL backdoor"
+      author = "X__Junior"
+      reference = "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/xtrader-3cx-supply-chain"
+      date = "2023-04-29"
+      hash = "c4887a5cd6d98e273ba6e9ea3c1d8f770ef26239819ea24a1bfebd81d6870505"
+      score = 80
+   strings:
+      $sa1 = "\\.\\pipe\\gecko.nativeMessaging" ascii
+      $sa2 = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36 Edg/95.0.1020.40" ascii
+      $sa3 = "application/json, text/javascript, */*; q=0.01" ascii
+
+      $op1 = { 89 7? 24 ?? 44 8B CD 4C 8B C? 48 89 44 24 ?? 33 D2 33 C9 FF 15} /* MultiByteToWideChar */
+      $op2 = { 4C 8B CB 4C 89 74 24 ?? 4C 8D 05 ?? ?? ?? ?? 44 89 74 24 ?? 33 D2 33 C9 FF 15} /* create thread*/
+      $op3 = { 48 89 74 24 ?? 45 33 C0 89 74 24 ?? 41 B9 ?? ?? ?? ?? 89 74 24 ?? 48 8B D8 48 C7 00 ?? ?? ?? ?? 48 8B 0F 41 8D 50 ?? 48 89 44 24 ?? 89 74 24 ?? FF 15} /* CreateNamedPipeW */
+   condition:
+      all of ($op*) or all of ($sa*)
+}
+
+rule APT_MAL_VEILEDSIGNAL_Backdoor_Apr23_3 {
+   meta:
+      description = "Detects malicious VEILEDSIGNAL backdoor"
+      author = "X__Junior"
+      reference = "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/xtrader-3cx-supply-chain"
+      date = "2023-04-29"
+      hash = "595392959b609caf088d027a23443cf2fefd043607ccdec3de19ad3bb43a74b1"
+      score = 80
+   strings:
+      $op1 = { 4C 8B CB 4C 89 74 24 ?? 4C 8D 05 ?? ?? ?? ?? 44 89 74 24 ?? 33 D2 33 C9 FF 15} /* create thread*/
+      $op2 = { 89 7? 24 ?? 44 8B CD 4C 8B C? 48 89 44 24 ?? 33 D2 33 C9 FF 15} /* MultiByteToWideChar */
+      $op3 = { 8B 54 24 ?? 4C 8D 4C 24 ?? 45 8D 46 ?? 44 89 74 24 ?? 48 8B CB FF 15} /* virtualprotect */
+      $op4 = { 48 8D 44 24 ?? 45 33 C9 41 B8 01 00 00 40 48 89 44 24 ?? 41 8B D5 48 8B CF FF 15} /*  CryptBinaryToStringA */
+   condition:
+      all of them
+}
+
+rule APT_MAL_VEILEDSIGNAL_Backdoor_Apr23_4 {
+   meta:
+      description = "Detects malicious VEILEDSIGNAL backdoor"
+      author = "X__Junior"
+      reference = "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/xtrader-3cx-supply-chain"
+      date = "2023-04-29"
+      hash = "9b0761f81afb102bb784b398b16faa965594e469a7fcfdfd553ced19cc17e70b"
+      score = 80
+   strings:
+      $op1 = { 48 8D 15 ?? ?? ?? ?? 48 8D 4C 24 ?? E8 ?? ?? ?? ?? 85 C0 74 ?? 48 8D 15 ?? ?? ?? ?? 48 8D 4C 24 ?? E8 ?? ?? ?? ?? 85 C0 74 ?? 48 8D 15 ?? ?? ?? ?? 48 8D 4C 24 ?? E8 ?? ?? ?? ?? 85 C0 } /* check for certian process */
+		$op2 = { 48 8B C8 48 8D 15 ?? ?? ?? ?? FF 15 ?? ?? ?? ?? 45 33 C0 4C 8D 4D ?? B2 01 41 8D 48 ?? FF D0} /* RtlAdjustPrivilege */
+      $op3 = { 33 FF C7 44 24 ?? 38 02 00 00 33 D2 8D 4F ?? FF 15 ?? ?? ?? ?? 48 8B D8 48 83 F8 FF 74 ?? 48 8D 54 24 ?? 48 8B C8 FF 15 } /* Process32FirstW */
+      $op4 = { 4C 8D 05 ?? ?? ?? ?? 48 89 4C 24 ?? 4C 8B C8 33 D2 89 4C 24 ?? FF 15 } /* create thread*/
+   condition:
+      all of them
+}
