@@ -3,6 +3,7 @@ rule apt_nix_elf_derusbi {
       description = "Detects Derusbi Backdoor ELF"
       author = "Fidelis Cybersecurity"
       date = "2016/02/29"
+      modified = "2023-05-04"
       reference = "https://github.com/fideliscyber/indicators/tree/master/FTA-1021"
    strings:
       $s1 = "LxMain"
@@ -43,7 +44,7 @@ rule apt_nix_elf_derusbi {
       $s36 = "closedir"
       $s37 = "rename"
    condition:
-      uint32(0) == 0x4464c457f and all of them
+      uint32(0) == 0x464c457f and all of them
 }
 
 rule apt_nix_elf_derusbi_kernelModule
@@ -52,6 +53,7 @@ rule apt_nix_elf_derusbi_kernelModule
       description = "Detects Derusbi Backdoor ELF Kernel Module"
       author = "Fidelis Cybersecurity"
       date = "2016/02/29"
+      modified = "2023-05-04"
       reference = "https://github.com/fideliscyber/indicators/tree/master/FTA-1021"
    strings:
       $s1 = "__this_module"
@@ -75,7 +77,7 @@ rule apt_nix_elf_derusbi_kernelModule
       $s20 = "__netlink_kernel_create"
       $s21 = "kfree_skb"
    condition:
-      uint32(0) == 0x4464c457f and all of them
+      uint32(0) == 0x464c457f and all of them
 }
 
 rule apt_nix_elf_Derusbi_Linux_SharedMemCreation {
