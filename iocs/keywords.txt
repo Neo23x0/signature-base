@@ -15,10 +15,6 @@ privilege::debug
 sekurlsa::LogonPasswords
 sekurlsa::logonpasswords
 
-# Metasploit
-meterpreter
-METERPRETER
-
 # Metasploit PsExec
 %COMSPEC% /C start %COMSPEC% /C \\WINDOWS\\Temp
 
