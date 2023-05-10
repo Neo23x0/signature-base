@@ -1,9 +1,11 @@
 /*
-	This is a collection of rules that use external vriables
-	They work with scanners that support the use of external variabls, like
+	This is a collection of rules that use external variables
+	They work with scanners that support the use of external variables, like
 	THOR, LOKI or SPARK
 	https://www.nextron-systems.com/compare-our-scanners/
 */
+
+import "math" 
 
 rule Acrotray_Anomaly {
 	meta:
@@ -434,3 +436,42 @@ rule SUSP_Blocked_Download_Proxy_Replacement_Jan23_1 {
       and 1 of ($x*)
 }
 
+
+rule APT_MAL_RU_WIN_Snake_Malware_PeIconSizes_May23_1 {
+   meta:
+      description = "Detects Comadmin file that houses Snake's kernel driver and the driver's loader"
+      author = "CSA"
+      reference = "https://media.defense.gov/2023/May/09/2003218554/-1/-1/0/JOINT_CSA_HUNTING_RU_INTEL_SNAKE_MALWARE_20230509.PDF"
+      date = "2023-05-10"
+      score = 75
+   condition:
+      uint16(0) == 0x5a4d
+      and ( 
+         filename == "WerFault.exe"
+         or filename == "werfault.exe"
+      )
+      and filepath contains "\\WinSxS\\"
+      and for any rsrc in pe.resources: (
+         rsrc.type == pe.RESOURCE_TYPE_ICON and ( 
+            rsrc.length == 3240 or
+            rsrc.length == 1384 or
+            rsrc.length == 7336 
+         )
+      )
+}
+
+rule APT_MAL_RU_Snake_Malware_Queue_File_May23_1 {
+   meta:
+      description = "Detects Queue files used by Snake malware"
+      author = "Florian Roth"
+      reference = "https://media.defense.gov/2023/May/09/2003218554/-1/-1/0/JOINT_CSA_HUNTING_RU_INTEL_SNAKE_MALWARE_20230509.PDF"
+      date = "2023-05-10"
+      score = 80
+   condition:
+      filename matches /(\{[0-9A-Fa-f]{8}\-([0-9A-Fa-f]{4}\-){3}[0-9A-Fa-f]{12}\}\.){2}crmlog/
+      /* and filepath contains "\\Registration\\" // not needed - already specific enough */
+      // we reduce the range for the entropy calculation to the first 1024 for performance
+      // reasons. In a fully encrypted file - as used by Snake - this should already be specific enough
+      //and math.entropy(0, filesize) >= 7.0
+      and math.entropy(0, 1024) >= 7.0
+}
