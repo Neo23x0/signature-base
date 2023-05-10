@@ -1,12 +1,17 @@
+/* 
+  Rule that uses the byte chains included in the Volatility Plugin published
+  by CSA in a YARA rule
 
-
-/* Matt Suiche */
-
-/*
-    Hunting Russian Intelligence Snake Malware
-    The Snake implant is considered the most sophisticated cyber espionage tool designed and used by
-    Center 16 of Russia’s Federal Security Service (FSB) for long-term intelligence collection on sensitive
-    targets.
+  code from the plugin:
+  
+  strings_to_find = [
+    b'\x25\x73\x23\x31',
+    b'\x25\x73\x23\x32',
+    b'\x25\x73\x23\x33',
+    b'\x25\x73\x23\x34',
+    b'\x2e\x74\x6d\x70', 
+    b'\x2e\x73\x61\x76',
+    b'\x2e\x75\x70\x64']
 */
 
 rule APT_MAL_RU_WIN_Snake_Malware_May23_1 {
