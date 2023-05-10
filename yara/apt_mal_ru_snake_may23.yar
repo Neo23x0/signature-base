@@ -3,7 +3,7 @@
 /* Matt Suiche */
 
 /*
-    Hunting Russian Intelligence “Snake” Malware
+    Hunting Russian Intelligence Snake Malware
     The Snake implant is considered the most sophisticated cyber espionage tool designed and used by
     Center 16 of Russia’s Federal Security Service (FSB) for long-term intelligence collection on sensitive
     targets.
