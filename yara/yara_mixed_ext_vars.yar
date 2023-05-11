@@ -450,7 +450,7 @@ rule APT_MAL_RU_WIN_Snake_Malware_PeIconSizes_May23_1 {
          filename == "WerFault.exe"
          or filename == "werfault.exe"
       )
-      //and filepath contains "\\WinSxS\\"
+      and filepath contains "\\WinSxS\\"
       and for any rsrc in pe.resources: (
          rsrc.type == pe.RESOURCE_TYPE_ICON and rsrc.length == 3240
       ) 
