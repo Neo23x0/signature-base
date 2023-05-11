@@ -437,7 +437,6 @@ rule SUSP_Blocked_Download_Proxy_Replacement_Jan23_1 {
       and 1 of ($x*)
 }
 
-
 rule APT_MAL_RU_WIN_Snake_Malware_PeIconSizes_May23_1 {
    meta:
       description = "Detects Comadmin file that houses Snake's kernel driver and the driver's loader"
@@ -451,13 +450,15 @@ rule APT_MAL_RU_WIN_Snake_Malware_PeIconSizes_May23_1 {
          filename == "WerFault.exe"
          or filename == "werfault.exe"
       )
-      and filepath contains "\\WinSxS\\"
+      //and filepath contains "\\WinSxS\\"
       and for any rsrc in pe.resources: (
-         rsrc.type == pe.RESOURCE_TYPE_ICON and ( 
-            rsrc.length == 3240 or
-            rsrc.length == 1384 or
-            rsrc.length == 7336 
-         )
+         rsrc.type == pe.RESOURCE_TYPE_ICON and rsrc.length == 3240
+      ) 
+      and for any rsrc in pe.resources: (
+         rsrc.type == pe.RESOURCE_TYPE_ICON and rsrc.length == 1384 
+      ) 
+      and for any rsrc in pe.resources: (
+         rsrc.type == pe.RESOURCE_TYPE_ICON and rsrc.length == 7336
       )
 }
 
