@@ -32,7 +32,7 @@ rule EXPL_HKTL_macOS_Switcharoo_CVE_2022_46689_Dec22 {
    condition:
       ( filesize < 400KB and 1 of ($x*) ) or
       (
-         ( uint16(0) == 0xfacf or uint16(0) == 0xfeca ) and 
+         ( uint16(0) == 0xfacf or ( uint16(0) == 0xfeca or uint16(0) == 0xfacf or uint32(0) == 0xbebafeca ) ) and 
          filesize < 400KB and
          2 of them
       )

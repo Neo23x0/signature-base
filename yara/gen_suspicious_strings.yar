@@ -248,7 +248,7 @@ rule SUSP_JAVA_Class_with_VBS_Content {
       $s2 = "createNewFile" fullword ascii
       $s3 = "wscript" fullword ascii nocase
    condition:
-      uint16(0) == 0xfeca and filesize < 100KB and $a1 and 3 of ($s*)
+      ( uint16(0) == 0xfeca or uint16(0) == 0xfacf or uint32(0) == 0xbebafeca ) and filesize < 100KB and $a1 and 3 of ($s*)
 }
 
 rule SUSP_RAR_with_PDF_Script_Obfuscation {

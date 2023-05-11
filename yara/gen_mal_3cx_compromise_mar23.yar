@@ -172,7 +172,7 @@ rule APT_MAL_macOS_NK_3CX_Malicious_Samples_Mar23_1 {
       $s1 = "20230313064152Z0"
       $s2 = "Developer ID Application: 3CX (33CF4654HL)"
     condition:
-      uint16(0) == 0xfeca and all of them
+      ( uint16(0) == 0xfeca or uint16(0) == 0xfacf or uint32(0) == 0xbebafeca ) and all of them
 }
 
 /* 30.03.2023 */
@@ -252,7 +252,7 @@ rule MAL_3CXDesktopApp_MacOS_Backdoor_Mar23 {
         $op1 = { 31 C0 41 80 34 06 ?? 48 FF C0 48 83 F8 ?? 75 ?? BE ?? ?? ?? ?? BA ?? ?? ?? ?? 4C 89 F7 48 89 D9 E8 ?? ?? ?? ?? 48 89 DF E8 ?? ?? ?? ?? 48 89 DF E8 ?? ?? ?? ?? 4C 89 F7 5B 41 5E 41 5F E9 ?? ?? ?? ?? 5B 41 5E 41 5F C3} /* string decryption */
         $op2 = { 0F 11 84 24 ?? ?? ?? ?? 0F 28 05 ?? ?? ?? ?? 0F 29 84 24 ?? ?? ?? ?? 0F 28 05 ?? ?? ?? ?? 0F 29 84 24 ?? ?? ?? ?? 31 C0 80 B4 04 ?? ?? ?? ?? ?? 48 FF C0} /* string decryption */
     condition:
-      ( uint16(0) == 0xfeca and filesize < 6MB
+      ( ( uint16(0) == 0xfeca or uint16(0) == 0xfacf or uint32(0) == 0xbebafeca ) and filesize < 6MB
          and
          (
             ( 1 of ($sa*) and 1 of ($op* ) )

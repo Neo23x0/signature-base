@@ -30,7 +30,7 @@ rule MAL_RANSOM_LNX_macOS_LockBit_Apr23_1 {
       $op2 = { 00 90 a0 e3 40 20 58 e2 3f 80 08 e2 3f 30 c2 e3 09 20 98 e1 08 20 9d }
       $op3 = { 2d e9 01 70 43 e2 07 00 13 e1 01 60 a0 e1 08 d0 4d e2 02 40 }
    condition:
-      ( uint32be(0) == 0x7f454c46 or uint16(0) == 0xfeca or uint16(0) == 0xfacf )
+      ( uint32be(0) == 0x7f454c46 or uint16(0) == 0xfeca or uint16(0) == 0xfacf or uint32(0) == 0xbebafeca )
       and ( 
          1 of ($x*)
          or 3 of them
