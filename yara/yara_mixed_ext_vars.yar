@@ -437,6 +437,7 @@ rule SUSP_Blocked_Download_Proxy_Replacement_Jan23_1 {
       and 1 of ($x*)
 }
 
+/* too many FPs
 rule APT_MAL_RU_WIN_Snake_Malware_PeIconSizes_May23_1 {
    meta:
       description = "Detects Comadmin file that houses Snake's kernel driver and the driver's loader"
@@ -461,6 +462,7 @@ rule APT_MAL_RU_WIN_Snake_Malware_PeIconSizes_May23_1 {
          rsrc.type == pe.RESOURCE_TYPE_ICON and rsrc.length == 7336
       )
 }
+*/
 
 rule APT_MAL_RU_Snake_Malware_Queue_File_May23_1 {
    meta:
