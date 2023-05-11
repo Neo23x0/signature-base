@@ -5,6 +5,7 @@
 	https://www.nextron-systems.com/compare-our-scanners/
 */
 
+import "pe"
 import "math" 
 
 rule Acrotray_Anomaly {
