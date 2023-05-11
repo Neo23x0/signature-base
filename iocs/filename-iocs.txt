@@ -4228,8 +4228,8 @@ _lsass\.dmp;70
 \\Microsoft\.ActiveDirectory\.Management\.dll$;70;(C:\\Windows\\Microsoft\.NET\\assembly\\|C:\\Windows\\WinSxS\\(amd64|x86)_microsoft\.activedirectory\.management_)
 
 # Suspicious Web Shell file names https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/#id3-1
-\\[0-9]{8,20}\.(aspx|asp|jsp|jspx|php);60;(examples|tests|demo)
-\\[0-9]\.(aspx|asp|jsp|jspx|php);60;(examples|tests|demo)
+\\[0-9]{8,20}\.(aspx|asp|jsp|jspx|php);60;(examples|tests|demo|htdocs)
+\\[0-9]\.(aspx|asp|jsp|jspx|php);60;(examples|tests|demo|htdocs|\\Debugger.{1}GeneratedFileExtensions.{1}\.)
 
 # Suspicious Rundll32.exe variations https://twitter.com/_JohnHammond/status/1618988736313966592
 \\rundll33\.exe;70
