@@ -4271,4 +4271,7 @@ C:\\ProgramData\\TPM\\;60
 C:\\ProgramData\\TPM\\TpmVscMgrSvr\.exe;85
 C:\\ProgramData\\TPM\\winscard\.dll;85
 
+# BPFDoor "mutex” https://www.deepinstinct.com/blog/bpfdoor-malware-evolves-stealthy-sniffing-backdoor-ups-its-game
+\\var\\run\\initd\.lock;80
+
 # End
