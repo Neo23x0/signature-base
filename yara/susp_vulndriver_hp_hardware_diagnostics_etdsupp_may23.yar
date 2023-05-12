@@ -1,7 +1,7 @@
 rule SUSP_VulnDriver_HP_Hardware_Diagnostics_Etdsupp_May23 {
    meta:
       description = "Detects vulnerable versions of the HP Hardware Diagnostics driver (etdsupp.sys) based on PE metadata info"
-      author = "X__Junior"
+      author = "X__Junior (Nextron Systems)"
       date = "2023-05-12"
       reference = "https://github.com/alfarom256/HPHardwareDiagnostics-PoC/tree/main/"
       hash = "f744abb99c97d98e4cd08072a897107829d6d8481aee96c22443f626d00f4145"
