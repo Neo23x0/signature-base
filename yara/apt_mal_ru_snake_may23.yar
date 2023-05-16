@@ -32,7 +32,7 @@ rule APT_MAL_RU_WIN_Snake_Malware_May23_1 {
         $c = { 25 73 23 33 }
         $d = { 25 73 23 34 }
         $e = { 2e 74 6d 70 }
-        $f = { 2e 74 6d 70 }
+        /* $f = { 2e 74 6d 70 } */
         $g = { 2e 73 61 76 }
         $h = { 2e 75 70 64 }
     condition:
