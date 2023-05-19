@@ -23,11 +23,15 @@ rule Mimikatz_Memory_Rule_1 : APT {
       1 of ($s*) and not 1 of ($fp*)
 }
 
+/* we have much better rules now
 rule Mimikatz_Memory_Rule_2 : APT {
    meta:
       description = "Mimikatz Rule generated from a memory dump"
       author = "Florian Roth (Nextron Systems) - Florian Roth"
-      score = 80
+      score = 75
+      date = "2014-12-22"
+      modified = "2023-05-19"
+      reference = "https://blog.gentilkiwi.com/mimikatz"
    strings:
       $s0 = "sekurlsa::" ascii
       $x1 = "cryptprimitives.pdb" ascii
@@ -37,6 +41,7 @@ rule Mimikatz_Memory_Rule_2 : APT {
    condition:
       $s0 and 1 of ($x*)
 }
+*/
 
 rule mimikatz : FILE {
    meta:
