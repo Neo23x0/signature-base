@@ -10956,7 +10956,7 @@ aa318070ad1bf90ed459ac34dc5254acc178baff3202d2ea7f49aaf5a055dd43;NK UNC4736 VEIL
 4e56e0b1d12664c05615c69697a2f5c5d893058a;60;HW.sys - HW - Windows NT-8 (32/64 bit) kernel mode driver for PC ports/memory/PCI access - vulnerable driver - https://github.com/magicsword-io/LOLDrivers
 4e826430a1389032f3fe06e2cc292f643fb0c417;60;CITMDRV_IA64.sys - vulnerable driver - https://github.com/magicsword-io/LOLDrivers
 4f7a8e26a97980544be634b26899afbefb0a833c;60;AMDRyzenMasterDriver.sys - AMD Ryzen Master Service Driver - vulnerable driver - https://github.com/magicsword-io/LOLDrivers
-4fe873544c34243826489997a5ff14ed39dd090d;60;RTCore64.sys - vulnerable driver - https://github.com/magicsword-io/LOLDrivers
+4fe873544c34243826489997a5ff14ed39dd090d;40;RTCore64.sys - vulnerable driver - https://github.com/magicsword-io/LOLDrivers
 50e2bc41f0186fdce970b80e2a2cb296353af586;60;dbutil.sys - vulnerable driver - https://github.com/magicsword-io/LOLDrivers
 51b60eaa228458dee605430aae1bc26f3fc62325;60;CITMDRV_AMD64.sys - vulnerable driver - https://github.com/magicsword-io/LOLDrivers
 53acd4d9e7ba0b1056cf52af0d191f226eddf312;60;NTIOLib.sys - NTIOLib_X64 - vulnerable driver - https://github.com/magicsword-io/LOLDrivers
@@ -11082,7 +11082,7 @@ ac600a2bc06b312d92e649b7b55e3e91e9d63451;60;OpenLibSys.sys - OpenLibSys - vulner
 aca8e53483b40a06dfdee81bb364b1622f9156fe;60;81.sys - vulnerable driver - https://github.com/magicsword-io/LOLDrivers
 ace6b9e34e3e2e73fe584f3bbdb4e4ec106e0a7d;60;CITMDRV_AMD64.sys - vulnerable driver - https://github.com/magicsword-io/LOLDrivers
 ae79e760c739d6214c1e314728a78a6cb6060cce206fde2440a69735d639a0a2;60;ni.sys - vulnerable driver - https://github.com/magicsword-io/LOLDrivers
-af50109b112995f8c82be8ef3a88be404510cdde;60;RTCore64.sys - vulnerable driver - https://github.com/magicsword-io/LOLDrivers
+af50109b112995f8c82be8ef3a88be404510cdde;40;RTCore64.sys - vulnerable driver - https://github.com/magicsword-io/LOLDrivers
 af6e1f2cfb230907476e8b2d676129b6d6657124;60;AsIO.sys - vulnerable driver - https://github.com/magicsword-io/LOLDrivers
 b0032b8d8e6f4bd19a31619ce38d8e010f29a816;60;AsrDrv106.sys - ASRock IO Driver - vulnerable driver - https://github.com/magicsword-io/LOLDrivers
 b03b1996a40bfea72e4584b82f6b845c503a9748;60;DBUtilDrv2.sys - DBUtil - vulnerable driver - https://github.com/magicsword-io/LOLDrivers
@@ -11196,7 +11196,7 @@ f3db629cfe37a73144d5258e64d9dd8b38084cf4;60;kEvP64.sys - PowerTool - vulnerable 
 f42f28d164205d9f6dab9317c9fecad54c38d5d2;60;Phymemx64.sys - vulnerable driver - https://github.com/magicsword-io/LOLDrivers
 f50c6b84dfb8f2d53ba3bce000a55f0a486c0e79;60;NTIOLib.sys - NTIOLib - vulnerable driver - https://github.com/magicsword-io/LOLDrivers
 f5696fb352a3fbd14fb1a89ad21a71776027f9ab;60;cpuz141.sys - CPUID Driver - vulnerable driver - https://github.com/magicsword-io/LOLDrivers
-f6f11ad2cd2b0cf95ed42324876bee1d83e01775;60;RTCore64.sys - vulnerable driver - https://github.com/magicsword-io/LOLDrivers
+f6f11ad2cd2b0cf95ed42324876bee1d83e01775;40;RTCore64.sys - vulnerable driver - https://github.com/magicsword-io/LOLDrivers
 f8886a9c759e0426e08d55e410b02c5b05af3c287b15970175e4874316ffaf13;60;NetFlt.sys - vulnerable driver - https://github.com/magicsword-io/LOLDrivers
 f9519d033d75e1ab6b82b2e156eafe9607edbcfb;60;BS_Def64.sys - Default BIOS Flash Driver - vulnerable driver - https://github.com/magicsword-io/LOLDrivers
 f9feb60b23ca69072ce42264cd821fe588a186a6;60;CITMDRV_IA64.sys - vulnerable driver - https://github.com/magicsword-io/LOLDrivers
