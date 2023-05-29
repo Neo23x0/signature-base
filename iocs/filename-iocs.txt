@@ -4274,4 +4274,19 @@ C:\\ProgramData\\TPM\\winscard\.dll;85
 # BPFDoor "mutex” https://www.deepinstinct.com/blog/bpfdoor-malware-evolves-stealthy-sniffing-backdoor-ups-its-game
 \\var\\run\\initd\.lock;80
 
+# AV/EDR Terminator IOCs https://twitter.com/S0ufi4n3/status/1663059373352943616?s=20
+\\terminator\.exe;70
+
+# Blackout AV/EDR killer tool https://github.com/ZeroMemoryEx/Blackout
+\\Blackout\.exe;70
+\\Blackout\.sys;75
+
+# Shellcode Loader filenames
+\\SvcHostDemo\.dll;50
+\\PELoader\.exe;60
+\\Moneta64\.exe;75
+
+# EDR Block POC https://github.com/S3cur3Th1sSh1t/Ruy-Lopez
+\\BlockDLL\.exe;75
+
 # End
