@@ -2069,8 +2069,8 @@ ystem32\\lcsvsvc\.dll;80
 \\tsclient\\[^\\"]{1,20}\.(exe|dll);40
 
 # Typical Malware Location - AppData / Local / Roaming
-(?i)\\AppData\\[^\\/"]{1,64}\.exe([^._"\\\]]|$);75;(?i)(C:\\SW\\[^\\"]{1,20}\\SWSETUP\\DRV\\|C:\\WINDOWS\\System32\\DriverStore\\|C:\\\$WINDOWS\.~BT\\NewOS\\Windows\\System32\\DriverStore\\FileRepository\\)
-(?i)\\AppData\\[^\\/]{1,64}\.(dll|bat|vbs|ps1|js|hta);80;(\.json|\\Program Files\\Win Movie Maker\\)
+(?i)\\AppData\\[^\\/"]{1,64}\.exe([^._"\\\]]|$);75;(?i)(C:\\SW\\[^\\]{1,20}\\SWSETUP\\DRV\\|C:\\WINDOWS\\System32\\DriverStore\\|C:\\\$WINDOWS\.~BT\\NewOS\\Windows\\System32\\DriverStore\\FileRepository\\|\\Utilities\\PROSet\\)
+(?i)\\AppData\\[^\\/"]{1,64}\.(dll|bat|vbs|vbe|ps1|psm1|js\b|hta);75;(\.json|\\Program Files\\Win Movie Maker\\|\\Program Files\\Windows Video Editor|\\Program Files\\HomeDev\\PatchCleaner\\AppData\\)
 (?i)\\AppData\\Local\\[^\\/]{1,64}\.exe([^._\\\]]|$);75;\[Update\.exe\]
 (?i)\\AppData\\Local\\[^\\/]{1,64}\.(dll|bat|vbs|ps1|hta);80
 (?i)\\AppData\\Roaming\\[^\\/]{1,64}\.exe$;75;\\JomCap\.dll
@@ -3104,7 +3104,7 @@ C:\\Windows\\[^\\"]{1,20}\.(js|ps1|vbs);50
 \\Get-LAPSP\.ps1;70
 
 # Suspicious Files in Root of Recycle.Bin
-:\\\$Recycle\.Bin\\[^\\"]{1,20}\.(exe|vbs|ps1|js|bat|dll);85
+:\\\$Recycle\.Bin\\[^\\"]{1,20}\.(exe|vbs|ps1|js\b|bat|dll);85
 
 # Stealth Falcon Filename IOC https://www.welivesecurity.com/2019/09/09/backdoor-stealth-falcon-group/
 \\ImageIndexer\.dll;80
@@ -3903,8 +3903,8 @@ linpeas\.log;75
 \\passav\.exe;65
 
 # Exploit Code File Names
-\\(cve|CVE)-20[012][0-9]-[0-9]{4,5}.{0,20}$;60;(\\share\\doc|\\Microsoft\\Windows Defender Advanced Threat Protection\\)
-\\(cve|CVE)-20[012][0-9]-[0-9]{4,5}.{0,20}(\.py|\.exe|\.vbs|\.bat|\.ps1|\.dll);75;(\\share\\doc|CVE\-2017\-9800\-pre\-commit)
+\\(cve|CVE)-20[012][0-9]\-[0-9]{4,5}.{0,20}($|\\);60;(\\share\\doc|\\Microsoft\\Windows Defender Advanced Threat Protection\\|/\.cpanm/work/| \.\.\.\.\. ok)
+\\(cve|CVE)-20[012][0-9]\-[0-9]{4,5}.{0,20}(\.py|\.exe|\.vbs|\.bat|\.ps1|\.dll);75;(\\share\\doc|CVE\-2017\-9800\-pre\-commit)
 
 # Possible Service Path Escalation Attempt http://www.commonexploits.com/unquoted-service-paths/ or simple malware
 :\\Program\.exe;75
@@ -4093,8 +4093,8 @@ C:\\windows\\H2\.ps1;85
 # Procdump - process dump tool used in SysInternals suite https://learn.microsoft.com/en-us/sysinternals/downloads/procdump
 (?i)\\procdump(64)?(a)?\.(exe|zip);50;(?i)(SysInternals\\)
 # Suspicious file that starts with procdump, a process dumping tool often used by adversaries https://learn.microsoft.com/en-us/sysinternals/downloads/procdump
-(?i)\\procdump[^\\]{0,30}\.(exe|dll|vbs|vbe|ps1|psm1|bat|vbs|vbe|js|7z|rar);70;(?i)(\\procdump(64)?\.exe)
-(?i)\\[^\\]{1,30}procdump\.(exe|dll|vbs|vbe|ps1|psm1|bat|vbs|vbe|js|7z|rar);70
+(?i)\\procdump[^\\]{0,30}\.(exe|dll|vbs|vbe|ps1|psm1|bat|vbs|vbe|js\b|7z|rar);70;(?i)(\\procdump(64)?\.exe)
+(?i)\\[^\\]{1,30}procdump\.(exe|dll|vbs|vbe|ps1|psm1|bat|vbs|vbe|js\b|7z|rar);70
 
 # Adfind - often used by AD administrators but also by threat actors http://www.joeware.net/freetools/
 \\Adfind\.exe;50
