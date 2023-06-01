@@ -2949,6 +2949,7 @@ ystem32\\Microsoft\\Protect\\Windows\\svchost.exe;80
 \\psgetsys\.ps1;80
 \\PSReflect\.psm1;80
 \\SmashedPotato\.exe;80
+\\RemotePotato0\.exe;85
 
 # Comnie campaign https://goo.gl/jrjPzj
 \\AppData\\Local\\wscript.exe;100
