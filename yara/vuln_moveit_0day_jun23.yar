@@ -47,6 +47,7 @@ rule LOG_EXPL_MOVEit_Exploitation_Indicator_Jun23_1 {
       score = 70
    strings:
       $x1 = "POST /moveitisapi/moveitisapi.dll action=m2 " ascii
+      $x2 = " GET /human2.aspx - 443 " ascii
    condition:
       1 of them
 }
