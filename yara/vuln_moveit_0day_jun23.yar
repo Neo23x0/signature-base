@@ -37,3 +37,16 @@ rule WEBSHELL_ASPX_MOVEit_Jun23_1 {
    condition:
       filesize < 150KB and 2 of them
 }
+
+rule LOG_EXPL_MOVEit_Exploitation_Indicator_Jun23_1 {
+   meta:
+      description = "Detects a possible compromise indicator found in MOVEit Transfer logs"
+      author = "Florian Roth"
+      reference = "https://www.huntress.com/blog/moveit-transfer-critical-vulnerability-rapid-response"
+      date = "2023-06-01"
+      score = 70
+   strings:
+      $x1 = "POST /moveitisapi/moveitisapi.dll action=m2 " ascii
+   condition:
+      1 of them
+}

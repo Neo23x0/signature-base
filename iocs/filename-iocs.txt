@@ -4296,7 +4296,7 @@ C:\\ProgramData\\TPM\\winscard\.dll;85
 \\GodPotato-NET4\.exe;90
 
 # MOVEit vulnerability - possible indicators of a compromise https://www.bleepingcomputer.com/news/security/new-moveit-transfer-zero-day-mass-exploited-in-data-theft-attacks/
-c:\\MOVEit[\s]?Transfer\\wwwroot\\[^\\]{1,40}\.(zip|rar|7z|exe|ps1|bat);70
+\\MOVEit[\s]?Transfer\\wwwroot\\[^\\]{1,40}\.(zip|rar|7z|exe|ps1|bat);70
 \\MOVEit Transfer\\wwwroot\\human2\.aspx;90
 \\MOVEitTransfer\\wwwroot\\human2\.aspx;90
 
