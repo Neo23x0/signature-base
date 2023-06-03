@@ -1857,4 +1857,17 @@ windowservicecentar.com
 windowservicecenter.com
 winserverupdates.com
 
+# MOVEit exploitation C2 IOCs https://community.progress.com/s/article/MOVEit-Transfer-Critical-Vulnerability-31May2023
+198.27.75.110
+209.222.103.170
+84.234.96.104
+138.197.152.201
+209.97.137.33
+148.113.152.144
+89.39.105.108
+5.252.23.116
+5.252.25.88
+198.12.76.214
+dojustit.mooo.com
+
 # Last Line

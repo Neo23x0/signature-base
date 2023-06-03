@@ -4298,5 +4298,6 @@ C:\\ProgramData\\TPM\\winscard\.dll;85
 # MOVEit vulnerability - possible indicators of a compromise https://www.bleepingcomputer.com/news/security/new-moveit-transfer-zero-day-mass-exploited-in-data-theft-attacks/
 \\MOVEitTransfer\\wwwroot\\[^\\]{1,40}\.(zip|rar|7z|exe|ps1|bat|dll|vbe|vbs);70
 \\MOVEitTransfer\\wwwroot\\human2\.aspx;90
+\\human2\.aspx\.lnk;90
 
 # End
