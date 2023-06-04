@@ -61,7 +61,7 @@ rule LOG_EXPL_MOVEit_Exploitation_Indicator_Jun23_2 {
       score = 70
    strings:
       $a1 = "Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/105.0.5195.102+Safari/537.36" ascii
-      /* $a2 = "Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/113.0.5672.127+Safari/537.36" ascii */ /* just scannign activity */
+      $a2 = "Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/105.0.5195.54+Safari/537.36" ascii
       
       $s1 = " POST /moveitisapi/moveitisapi.dll" ascii
       $s2 = " POST /guestaccess.aspx"
