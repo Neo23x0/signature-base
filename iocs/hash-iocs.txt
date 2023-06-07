@@ -11316,3 +11316,20 @@ a8f6c1ccba662a908ef7b0cb3cc59c2d1c9e2cbbe1866937da81c4c616e68986;MOVEit Transfer
 b5ef11d04604c9145e4fe1bedaeb52f2c2345703d52115a5bf11ea56d7fb6b03;MOVEit Transfer exploitation - https://community.progress.com/s/article/MOVEit-Transfer-Critical-Vulnerability-31May2023
 cec425b3383890b63f5022054c396f6d510fae436041add935cd6ce42033f621;MOVEit Transfer exploitation - https://community.progress.com/s/article/MOVEit-Transfer-Critical-Vulnerability-31May2023
 ed0c3e75b7ac2587a5892ca951707b4e0dd9c8b18aaf8590c24720d73aa6b90c;MOVEit Transfer exploitation - https://community.progress.com/s/article/MOVEit-Transfer-Critical-Vulnerability-31May2023
+
+827d507aa3bde0ef903ca5dec60cdec8;Barracuda ESG exploitation - CVE-2023-2868 - mod_udp.so SALTWATER Variant https://www.barracuda.com/company/legal/esg-vulnerability
+2ccb9759800154de817bf779a52d48f8;Barracuda ESG exploitation - CVE-2023-2868 - install_helo.tar TAR Package https://www.barracuda.com/company/legal/esg-vulnerability
+f5ab04a920302931a8bd063f27b745cc;Barracuda ESG exploitation - CVE-2023-2868 - intent_helo Bash script https://www.barracuda.com/company/legal/esg-vulnerability
+177add288b289d43236d2dba33e65956;Barracuda ESG exploitation - CVE-2023-2868 - pd Reverse Shell https://www.barracuda.com/company/legal/esg-vulnerability
+881b7846f8384c12c7481b23011d8e45;Barracuda ESG exploitation - CVE-2023-2868 - update_v31.sh Bash script https://www.barracuda.com/company/legal/esg-vulnerability
+cd2813f0260d63ad5adf0446253c2172;Barracuda ESG exploitation - CVE-2023-2868 - mod_require_helo.lua SEASIDE https://www.barracuda.com/company/legal/esg-vulnerability
+82eaf69de710abdc5dea7cd5cb56cf04;Barracuda ESG exploitation - CVE-2023-2868 - BarracudaMailService SEASPY https://www.barracuda.com/company/legal/esg-vulnerability
+e80a85250263d58cc1a1dc39d6cf3942;Barracuda ESG exploitation - CVE-2023-2868 - BarracudaMailService SEASPY https://www.barracuda.com/company/legal/esg-vulnerability
+5d6cba7909980a7b424b133fbac634ac;Barracuda ESG exploitation - CVE-2023-2868 - BarracudaMailService SEASPY https://www.barracuda.com/company/legal/esg-vulnerability
+1bbb32610599d70397adfdaf56109ff3;Barracuda ESG exploitation - CVE-2023-2868 - BarracudaMailService SEASPY https://www.barracuda.com/company/legal/esg-vulnerability
+4b511567cfa8dbaa32e11baf3268f074;Barracuda ESG exploitation - CVE-2023-2868 - BarracudaMailService SEASPY https://www.barracuda.com/company/legal/esg-vulnerability
+a08a99e5224e1baf569fda816c991045;Barracuda ESG exploitation - CVE-2023-2868 - BarracudaMailService SEASPY https://www.barracuda.com/company/legal/esg-vulnerability
+19ebfe05040a8508467f9415c8378f32;Barracuda ESG exploitation - CVE-2023-2868 - BarracudaMailService SEASPY https://www.barracuda.com/company/legal/esg-vulnerability
+1fea55b7c9d13d822a64b2370d015da7;Barracuda ESG exploitation - CVE-2023-2868 - mod_udp.so SALTWATER Variant https://www.barracuda.com/company/legal/esg-vulnerability
+64c690f175a2d2fe38d3d7c0d0ddbb6e;Barracuda ESG exploitation - CVE-2023-2868 - mod_udp.so SALTWATER Variant https://www.barracuda.com/company/legal/esg-vulnerability
+4cd0f3219e98ac2e9021b06af70ed643;Barracuda ESG exploitation - CVE-2023-2868 - mod_udp.so SALTWATER Variant https://www.barracuda.com/company/legal/esg-vulnerability
