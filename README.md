@@ -20,7 +20,7 @@ Signature-Base is the YARA signature and IOC database for our scanners [LOKI](ht
 
 ## External Variables in YARA Rules
 
-Using the YARA rules in a tool other than [LOKI](https://github.com/Neo23x0/Loki) or [THOR Lite](https://www.nextron-systems.com/thor-lite/) will cause errors stating an `undefined identifier`. The rules that make use of external variables have been moved to the following 5 files:
+Using the YARA rules in a tool other than [LOKI](https://github.com/Neo23x0/Loki) or [THOR Lite](https://www.nextron-systems.com/thor-lite/) will cause errors stating an `undefined identifier`. The rules that make use of external variables have been moved to the following files:
 
 - ./yara/generic_anomalies.yar
 - ./yara/general_cloaking.yar
@@ -28,6 +28,7 @@ Using the YARA rules in a tool other than [LOKI](https://github.com/Neo23x0/Loki
 - ./yara/thor_inverse_matches.yar
 - ./yara/yara_mixed_ext_vars.yar
 - ./yara/configured_vulns_ext_vars.yar
+- ./yara/gen_fake_amsi_dll.yar
 
 Just remove these files in case you see the above error message.
 
