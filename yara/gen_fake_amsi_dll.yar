@@ -44,6 +44,8 @@ rule SUSP_Fake_AMSI_DLL_Jun23_2 {
       $a2 = "Amsi.pdb" ascii fullword
       $a3 = "api-ms-win-core-sysinfo-" ascii
       $a4 = "Software\\Microsoft\\AMSI\\Providers" wide
+
+      $fp1 = "Wine builtin DLL"
    condition:
       uint16(0) == 0x5a4d 
       // AMSI.DLL
@@ -54,4 +56,5 @@ rule SUSP_Fake_AMSI_DLL_Jun23_2 {
          or filesize < 35KB   // files smaller than 35kB 
          or not all of ($a*)  // files that don't contain the expected strings
       )
+      and not 1 of ($fp*)
 }
