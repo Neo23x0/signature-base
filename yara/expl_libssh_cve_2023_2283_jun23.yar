@@ -25,5 +25,5 @@ rule LOG_LibSSH_Auth_Bypass_CVE_2023_2283_Jun23_1 {
 
       $fp1 = "ssh_set_error(" // avoid detection of source code
    condition:
-      1 of them
+      $s1 and not 1 of ($fp*)
 }
