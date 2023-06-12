@@ -6,12 +6,15 @@ rule SUSP_Fake_AMSI_DLL_Jun23_1 {
       author = "Florian Roth"
       reference = "https://twitter.com/eversinc33/status/1666121784192581633?s=20"
       date = "2023-06-07"
+      modified = "2023-06-12"
       score = 65
    strings:
       $a1 = "Microsoft.Antimalware.Scan.Interface" ascii
       $a2 = "Amsi.pdb" ascii fullword
       $a3 = "api-ms-win-core-sysinfo-" ascii
       $a4 = "Software\\Microsoft\\AMSI\\Providers" wide
+      $a5 = "AmsiAntimalware@" ascii
+      $a6 = "AMSI UAC Scan" ascii
 
       $fp1 = "Wine builtin DLL"
    condition:
@@ -25,7 +28,7 @@ rule SUSP_Fake_AMSI_DLL_Jun23_1 {
       and (
          filesize > 200KB     // files bigger than 100kB
          or filesize < 35KB   // files smaller than 35kB 
-         or not all of ($a*)  // files that don't contain the expected strings
+         or not 4 of ($a*)  // files that don't contain the expected strings
       )
       and not 1 of ($fp*)
 }
