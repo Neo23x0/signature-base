@@ -1,5 +1,5 @@
 
-rule PUA_VULN_Driver_CPUID_cpuzsys_CPUIDservice_6dW9 {
+rule PUA_VULN_Driver_Cpuid_Cpuzsys_Cpuidservice_4D9L {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - cpuz.sys"
 		author = "Florian Roth"
@@ -24,7 +24,7 @@ rule PUA_VULN_Driver_CPUID_cpuzsys_CPUIDservice_6dW9 {
 }
 
 
-rule PUA_VULN_Driver_ZemanaLtd_ZAM_4CP6 {
+rule PUA_VULN_Driver_Zemanaltd_Zam_3seu {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - zam64.sys"
 		author = "Florian Roth"
@@ -44,7 +44,7 @@ rule PUA_VULN_Driver_ZemanaLtd_ZAM_4CP6 {
 }
 
 
-rule PUA_VULN_Driver_EldoSCorporation_elrawdsksys_RawDisk_4J6X {
+rule PUA_VULN_Driver_Eldoscorporation_Elrawdsksys_Rawdisk_7TzD {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - elrawdsk.sys"
 		author = "Florian Roth"
@@ -67,7 +67,7 @@ rule PUA_VULN_Driver_EldoSCorporation_elrawdsksys_RawDisk_4J6X {
 }
 
 
-rule PUA_VULN_Driver_GIGABYTETECHNOLOGYCOLTD_gdrvsys_GIGABYTESoftwaredriver_4v3A {
+rule PUA_VULN_Driver_Gigabytetechnologycoltd_Gdrvsys_Gigabytesoftwaredriver_wZre {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - gdrv.sys"
 		author = "Florian Roth"
@@ -89,7 +89,7 @@ rule PUA_VULN_Driver_GIGABYTETECHNOLOGYCOLTD_gdrvsys_GIGABYTESoftwaredriver_4v3A
 }
 
 
-rule PUA_VULN_Driver_AdvancedMicroDevices_AMDRyzenMasterDriversys_AMDRyzenMasterServiceDriver_3Vgo {
+rule PUA_VULN_Driver_Advancedmicrodevices_Amdryzenmasterdriversys_Amdryzenmasterservicedriver_3WKB {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - AMDRyzenMasterDriver.sys"
 		author = "Florian Roth"
@@ -111,7 +111,7 @@ rule PUA_VULN_Driver_AdvancedMicroDevices_AMDRyzenMasterDriversys_AMDRyzenMaster
 }
 
 
-rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPotsys_AVGInternetSecuritySystem_6QUQ {
+rule PUA_VULN_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecuritysystem_5nMv {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -133,7 +133,7 @@ rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPotsys_AVGInternetSecuritySystem_
 }
 
 
-rule PUA_VULN_Driver_CPUID_cpuzsys_CPUIDservice_4SiN {
+rule PUA_VULN_Driver_Cpuid_Cpuzsys_Cpuidservice_96DG {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - cpuz.sys"
 		author = "Florian Roth"
@@ -161,7 +161,7 @@ rule PUA_VULN_Driver_CPUID_cpuzsys_CPUIDservice_4SiN {
 }
 
 
-rule PUA_VULN_Driver_RWEverything_RwDrvsys_RwDrvDriver_3wxc {
+rule PUA_VULN_Driver_Rweverything_Rwdrvsys_Rwdrvdriver_4SMr {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - RwDrv.sys"
 		author = "Florian Roth"
@@ -187,7 +187,7 @@ rule PUA_VULN_Driver_RWEverything_RwDrvsys_RwDrvDriver_3wxc {
 }
 
 
-rule PUA_VULN_Driver_WindowsRWinDDKprovider_vmdrvsys_WindowsRWinDDKdriver_5wuD {
+rule PUA_VULN_Driver_Windowsrwinddkprovider_Vmdrvsys_Windowsrwinddkdriver_7zva {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - vmdrv.sys"
 		author = "Florian Roth"
@@ -211,7 +211,7 @@ rule PUA_VULN_Driver_WindowsRWinDDKprovider_vmdrvsys_WindowsRWinDDKdriver_5wuD {
 }
 
 
-rule PUA_VULN_Driver_AdvancedMicroDevices_AMDRyzenMasterDriversys_AMDRyzenMasterServiceDriver_3WLm {
+rule PUA_VULN_Driver_Advancedmicrodevices_Amdryzenmasterdriversys_Amdryzenmasterservicedriver_6Mix {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - AMDRyzenMasterDriver.sys"
 		author = "Florian Roth"
@@ -234,7 +234,7 @@ rule PUA_VULN_Driver_AdvancedMicroDevices_AMDRyzenMasterDriversys_AMDRyzenMaster
 }
 
 
-rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPot_AVGInternetSecuritySystem_5GxR {
+rule PUA_VULN_Driver_Avgtechnologiesczsro_Aswarpot_Avginternetsecuritysystem_8pJK {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -256,7 +256,7 @@ rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPot_AVGInternetSecuritySystem_5Gx
 }
 
 
-rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_procexpsys_ProcessExplorer_3VXg {
+rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_Procexpsys_Processexplorer_4Sgy {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - procexp.Sys"
 		author = "Florian Roth"
@@ -288,7 +288,7 @@ rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_procexpsys_ProcessExplorer_3
 }
 
 
-rule PUA_VULN_Driver_WindowsRWinDDKprovider_cpuzsys_WindowsRWinDDKdriver_6rJG {
+rule PUA_VULN_Driver_Windowsrwinddkprovider_Cpuzsys_Windowsrwinddkdriver_6UXD {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - cpuz.sys"
 		author = "Florian Roth"
@@ -316,7 +316,7 @@ rule PUA_VULN_Driver_WindowsRWinDDKprovider_cpuzsys_WindowsRWinDDKdriver_6rJG {
 }
 
 
-rule PUA_VULN_Driver_NovellInc_NovellXTier_6CQS {
+rule PUA_VULN_Driver_Novellinc_Novellxtier_3STz {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - libnicm.sys"
 		author = "Florian Roth"
@@ -338,7 +338,7 @@ rule PUA_VULN_Driver_NovellInc_NovellXTier_6CQS {
 }
 
 
-rule PUA_VULN_Driver_OpenLibSysorg_WinRingsys_WinRing_7syp {
+rule PUA_VULN_Driver_Openlibsysorg_Winringsys_Winring_5HW7 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - WinRing0x64.sys"
 		author = "Florian Roth"
@@ -361,7 +361,7 @@ rule PUA_VULN_Driver_OpenLibSysorg_WinRingsys_WinRing_7syp {
 }
 
 
-rule PUA_VULN_Driver_Windowswinowsdriverkitsprovider_HwRwDrvsys_Hardwarereadwritedriver_ZeKA {
+rule PUA_VULN_Driver_Windowswinowsdriverkitsprovider_Hwrwdrvsys_Hardwarereadwritedriver_fqGx {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - HwRwDrv.sys"
 		author = "Florian Roth"
@@ -383,7 +383,7 @@ rule PUA_VULN_Driver_Windowswinowsdriverkitsprovider_HwRwDrvsys_Hardwarereadwrit
 }
 
 
-rule PUA_VULN_Driver_AVASTSoftware_aswArPot_AvastAntivirus_5Pip {
+rule PUA_VULN_Driver_Avastsoftware_Aswarpot_Avastantivirus_7a9n {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -405,7 +405,7 @@ rule PUA_VULN_Driver_AVASTSoftware_aswArPot_AvastAntivirus_5Pip {
 }
 
 
-rule PUA_VULN_Driver_MSI_NTIOLibsys_NTIOLib_XJH7 {
+rule PUA_VULN_Driver_Msi_Ntiolibsys_Ntiolib_7YVW {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - NTIOLib.sys"
 		author = "Florian Roth"
@@ -427,7 +427,7 @@ rule PUA_VULN_Driver_MSI_NTIOLibsys_NTIOLib_XJH7 {
 }
 
 
-rule PUA_VULN_Driver_IObit_Monitorsys_AdvancedSystemCare_8tjW {
+rule PUA_VULN_Driver_Iobit_Monitorsys_Advancedsystemcare_5ZLR {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - Monitor_win10_x64.sys"
 		author = "Florian Roth"
@@ -449,7 +449,7 @@ rule PUA_VULN_Driver_IObit_Monitorsys_AdvancedSystemCare_8tjW {
 }
 
 
-rule PUA_VULN_Driver_PhoenixTechnologiesLtd_PHLASHNT_WinPhlash_3seY {
+rule PUA_VULN_Driver_Phoenixtechnologiesltd_Phlashnt_Winphlash_7jBm {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - PhlashNT.sys"
 		author = "Florian Roth"
@@ -471,7 +471,7 @@ rule PUA_VULN_Driver_PhoenixTechnologiesLtd_PHLASHNT_WinPhlash_3seY {
 }
 
 
-rule PUA_VULN_Driver_ArthurLiberman_ALSysIOsys_ALSysIO_3acx {
+rule PUA_VULN_Driver_Arthurliberman_Alsysiosys_Alsysio_4VEq {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - ALSysIO64.sys"
 		author = "Florian Roth"
@@ -493,7 +493,7 @@ rule PUA_VULN_Driver_ArthurLiberman_ALSysIOsys_ALSysIO_3acx {
 }
 
 
-rule PUA_VULN_Driver_GIGABYTETECHNOLOGYCOLTD_gdrvsys_GIGABYTESoftwaredriver_6yiY {
+rule PUA_VULN_Driver_Gigabytetechnologycoltd_Gdrvsys_Gigabytesoftwaredriver_4fys {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - gdrv.sys"
 		author = "Florian Roth"
@@ -515,7 +515,7 @@ rule PUA_VULN_Driver_GIGABYTETECHNOLOGYCOLTD_gdrvsys_GIGABYTESoftwaredriver_6yiY
 }
 
 
-rule PUA_VULN_Driver_CPUID_cpuzsys_CPUIDservice_V5fx {
+rule PUA_VULN_Driver_Cpuid_Cpuzsys_Cpuidservice_53PX {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - cpuz.sys"
 		author = "Florian Roth"
@@ -548,7 +548,7 @@ rule PUA_VULN_Driver_CPUID_cpuzsys_CPUIDservice_V5fx {
 }
 
 
-rule PUA_VULN_Driver_ASUStek_Driversys_ECtool_bE5a {
+rule PUA_VULN_Driver_Asustek_Driversys_Ectool_PwNP {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - driver7-x86-withoutdbg.sys"
 		author = "Florian Roth"
@@ -572,7 +572,7 @@ rule PUA_VULN_Driver_ASUStek_Driversys_ECtool_bE5a {
 }
 
 
-rule PUA_VULN_Driver_MSI_NTIOLibsys_NTIOLib_8G4B {
+rule PUA_VULN_Driver_Msi_Ntiolibsys_Ntiolib_8G8V {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - NTIOLib.sys"
 		author = "Florian Roth"
@@ -594,7 +594,7 @@ rule PUA_VULN_Driver_MSI_NTIOLibsys_NTIOLib_8G4B {
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_gzLn {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_7mfs {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -616,7 +616,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_gzLn {
 }
 
 
-rule PUA_VULN_Driver_AVASTSoftware_aswArPot_AvastAntivirus_6jB4 {
+rule PUA_VULN_Driver_Avastsoftware_Aswarpot_Avastantivirus_763o {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -638,7 +638,7 @@ rule PUA_VULN_Driver_AVASTSoftware_aswArPot_AvastAntivirus_6jB4 {
 }
 
 
-rule PUA_VULN_Driver_BIOSTARGroup_IOdriver_BIOSTARIOdriverfle_6wft {
+rule PUA_VULN_Driver_Biostargroup_Iodriver_Biostariodriverfle_5BMo {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - BS_I2cIo.sys"
 		author = "Florian Roth"
@@ -662,7 +662,7 @@ rule PUA_VULN_Driver_BIOSTARGroup_IOdriver_BIOSTARIOdriverfle_6wft {
 }
 
 
-rule PUA_VULN_Driver_MiTACTechnologyCorporation_mtcBSvsys_MiTACSystemServiceProvider_7w9Y {
+rule PUA_VULN_Driver_Mitactechnologycorporation_Mtcbsvsys_Mitacsystemserviceprovider_43JU {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - mtcBSv64.sys"
 		author = "Florian Roth"
@@ -684,7 +684,7 @@ rule PUA_VULN_Driver_MiTACTechnologyCorporation_mtcBSvsys_MiTACSystemServiceProv
 }
 
 
-rule PUA_VULN_Driver_IntelCorporation_iQVWSYS_IntelRiQVWSYS_kXnR {
+rule PUA_VULN_Driver_Intelcorporation_Iqvwsys_Intelriqvwsys_5Vq6 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - iQVW64.SYS"
 		author = "Florian Roth"
@@ -706,7 +706,7 @@ rule PUA_VULN_Driver_IntelCorporation_iQVWSYS_IntelRiQVWSYS_kXnR {
 }
 
 
-rule PUA_VULN_Driver_TGSoftSas_viragtsys_VirITAgentSystem_5wZu {
+rule PUA_VULN_Driver_Tgsoftsas_Viragtsys_Viritagentsystem_3K8p {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - viraglt64.sys"
 		author = "Florian Roth"
@@ -728,7 +728,7 @@ rule PUA_VULN_Driver_TGSoftSas_viragtsys_VirITAgentSystem_5wZu {
 }
 
 
-rule PUA_VULN_Driver_PanYazilimBilisimTeknolojileriTicLtdSti_PanMonFltXsys_PanCafeManager_qv7m {
+rule PUA_VULN_Driver_Panyazilimbilisimteknolojileriticltdsti_Panmonfltxsys_Pancafemanager_8Rvb {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - PanMonFltX64.sys"
 		author = "Florian Roth"
@@ -750,7 +750,7 @@ rule PUA_VULN_Driver_PanYazilimBilisimTeknolojileriTicLtdSti_PanMonFltXsys_PanCa
 }
 
 
-rule PUA_VULN_Driver_AVASTSoftware_aswArPotsys_AvastAntivirus_6zU7 {
+rule PUA_VULN_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_5DGd {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -772,7 +772,7 @@ rule PUA_VULN_Driver_AVASTSoftware_aswArPotsys_AvastAntivirus_6zU7 {
 }
 
 
-rule PUA_VULN_Driver_NovellInc_NovellXTier_88Tm {
+rule PUA_VULN_Driver_Novellinc_Novellxtier_3tf9 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - ncpl.sys"
 		author = "Florian Roth"
@@ -794,7 +794,7 @@ rule PUA_VULN_Driver_NovellInc_NovellXTier_88Tm {
 }
 
 
-rule PUA_VULN_Driver_BSMIsys__5cxn {
+rule PUA_VULN_Driver_Bsmisys__8bge {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - BSMIXP64.sys"
 		author = "Florian Roth"
@@ -815,7 +815,7 @@ rule PUA_VULN_Driver_BSMIsys__5cxn {
 }
 
 
-rule PUA_VULN_Driver_MSI_NTIOLibsys_NTIOLib_5p2U {
+rule PUA_VULN_Driver_Msi_Ntiolibsys_Ntiolib_5oFu {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - NTIOLib.sys"
 		author = "Florian Roth"
@@ -867,7 +867,7 @@ rule PUA_VULN_Driver_MSI_NTIOLibsys_NTIOLib_5p2U {
 }
 
 
-rule PUA_VULN_Driver_CPUID_cpuzsys_CPUIDservice_8ec9 {
+rule PUA_VULN_Driver_Cpuid_Cpuzsys_Cpuidservice_L8hf {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - cpuz.sys"
 		author = "Florian Roth"
@@ -891,7 +891,7 @@ rule PUA_VULN_Driver_CPUID_cpuzsys_CPUIDservice_8ec9 {
 }
 
 
-rule PUA_VULN_Driver_AsusTekComputerInc_BsDefsys_SupportSSTSFSSTEEATFTATCAMFNTAMFNBVCTVCBMFTWC_47mJ {
+rule PUA_VULN_Driver_Asustekcomputerinc_Bsdefsys_Supportsstsfssteeatftatcamfntamfnbvctvcbmftwc_7FBm {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - Bs_Def.sys"
 		author = "Florian Roth"
@@ -916,7 +916,7 @@ rule PUA_VULN_Driver_AsusTekComputerInc_BsDefsys_SupportSSTSFSSTEEATFTATCAMFNTAM
 }
 
 
-rule PUA_VULN_Driver_PanYazilimBilisimTeknolojileriTicLtdSti_PanIOxsys_PanIOLibrary_6Mux {
+rule PUA_VULN_Driver_Panyazilimbilisimteknolojileriticltdsti_Panioxsys_Paniolibrary_7T2e {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - PanIOx64.sys"
 		author = "Florian Roth"
@@ -938,7 +938,7 @@ rule PUA_VULN_Driver_PanYazilimBilisimTeknolojileriTicLtdSti_PanIOxsys_PanIOLibr
 }
 
 
-rule PUA_VULN_Driver_CPUID_cpuzsys_CPUIDservice_6mRm {
+rule PUA_VULN_Driver_Cpuid_Cpuzsys_Cpuidservice_P399 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - cpuz.sys"
 		author = "Florian Roth"
@@ -962,7 +962,7 @@ rule PUA_VULN_Driver_CPUID_cpuzsys_CPUIDservice_6mRm {
 }
 
 
-rule PUA_VULN_Driver_ElaborateBytesAG_ElbyCDIO_CDRTools_QE4Q {
+rule PUA_VULN_Driver_Elaboratebytesag_Elbycdio_Cdrtools_3Ri8 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - ElbyCDIO.sys"
 		author = "Florian Roth"
@@ -984,7 +984,7 @@ rule PUA_VULN_Driver_ElaborateBytesAG_ElbyCDIO_CDRTools_QE4Q {
 }
 
 
-rule PUA_VULN_Driver_EnTechTaiwan_seasys_softEnginex_y9Gr {
+rule PUA_VULN_Driver_Entechtaiwan_Seasys_Softenginex_5zk7 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - Se64a.sys"
 		author = "Florian Roth"
@@ -1006,7 +1006,7 @@ rule PUA_VULN_Driver_EnTechTaiwan_seasys_softEnginex_y9Gr {
 }
 
 
-rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPot_AVGInternetSecuritySystem_6Drm {
+rule PUA_VULN_Driver_Avgtechnologiesczsro_Aswarpot_Avginternetsecuritysystem_3KzS {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -1028,7 +1028,7 @@ rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPot_AVGInternetSecuritySystem_6Dr
 }
 
 
-rule PUA_VULN_Driver_AVASTSoftware_aswArPotsys_AvastAntivirus_6JQZ {
+rule PUA_VULN_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_8KbH {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -1050,7 +1050,7 @@ rule PUA_VULN_Driver_AVASTSoftware_aswArPotsys_AvastAntivirus_6JQZ {
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_WiJT {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_43Li {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -1073,7 +1073,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_WiJT {
 }
 
 
-rule PUA_VULN_Driver_ZemanaLtd_ZAM_Hps6 {
+rule PUA_VULN_Driver_Zemanaltd_Zam_4no2 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - zam64.sys"
 		author = "Florian Roth"
@@ -1092,7 +1092,7 @@ rule PUA_VULN_Driver_ZemanaLtd_ZAM_Hps6 {
 }
 
 
-rule PUA_VULN_Driver_WindowsRCodenameLonghornDDKprovider_cpuzsys_WindowsRCodenameLonghornDDKdriver_3gzQ {
+rule PUA_VULN_Driver_Windowsrcodenamelonghornddkprovider_Cpuzsys_Windowsrcodenamelonghornddkdriver_8Nyh {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - cpuz.sys"
 		author = "Florian Roth"
@@ -1117,7 +1117,7 @@ rule PUA_VULN_Driver_WindowsRCodenameLonghornDDKprovider_cpuzsys_WindowsRCodenam
 }
 
 
-rule PUA_VULN_Driver_MSI_NTIOLibsys_NTIOLib_6Low {
+rule PUA_VULN_Driver_Msi_Ntiolibsys_Ntiolib_4PTQ {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - NTIOLib.sys"
 		author = "Florian Roth"
@@ -1139,7 +1139,7 @@ rule PUA_VULN_Driver_MSI_NTIOLibsys_NTIOLib_6Low {
 }
 
 
-rule PUA_VULN_Driver_MSI_NTIOLibsys_NTIOLib_6HJ5 {
+rule PUA_VULN_Driver_Msi_Ntiolibsys_Ntiolib_3Dno {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - NTIOLib.sys"
 		author = "Florian Roth"
@@ -1162,7 +1162,7 @@ rule PUA_VULN_Driver_MSI_NTIOLibsys_NTIOLib_6HJ5 {
 }
 
 
-rule PUA_VULN_Driver_GIGABYTETECHNOLOGYCOLTD_gdrvsys_GIGABYTESoftwaredriver_6EzN {
+rule PUA_VULN_Driver_Gigabytetechnologycoltd_Gdrvsys_Gigabytesoftwaredriver_7kSp {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - gdrv.sys"
 		author = "Florian Roth"
@@ -1185,7 +1185,7 @@ rule PUA_VULN_Driver_GIGABYTETECHNOLOGYCOLTD_gdrvsys_GIGABYTESoftwaredriver_6EzN
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_7p92 {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_7Fbi {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -1208,7 +1208,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_7p92 {
 }
 
 
-rule PUA_VULN_Driver_YYInc_dianhu_7dpG {
+rule PUA_VULN_Driver_Yyinc_Dianhu_6qTL {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - Dh_Kernel_10.sys"
 		author = "Florian Roth"
@@ -1229,7 +1229,7 @@ rule PUA_VULN_Driver_YYInc_dianhu_7dpG {
 }
 
 
-rule PUA_VULN_Driver_ElaborateBytesAG_ElbyCDIO_CDRTools_6E3L {
+rule PUA_VULN_Driver_Elaboratebytesag_Elbycdio_Cdrtools_5KD4 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - ElbyCDIO.sys"
 		author = "Florian Roth"
@@ -1252,7 +1252,7 @@ rule PUA_VULN_Driver_ElaborateBytesAG_ElbyCDIO_CDRTools_6E3L {
 }
 
 
-rule PUA_VULN_Driver_AVASTSoftware_aswArPotsys_AvastAntivirus_6aYJ {
+rule PUA_VULN_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_5cSo {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -1274,7 +1274,7 @@ rule PUA_VULN_Driver_AVASTSoftware_aswArPotsys_AvastAntivirus_6aYJ {
 }
 
 
-rule PUA_VULN_Driver_MSI_NTIOLibsys_NTIOLib_7Zn5 {
+rule PUA_VULN_Driver_Msi_Ntiolibsys_Ntiolib_7uYC {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - NTIOLib.sys"
 		author = "Florian Roth"
@@ -1296,7 +1296,7 @@ rule PUA_VULN_Driver_MSI_NTIOLibsys_NTIOLib_7Zn5 {
 }
 
 
-rule PUA_VULN_Driver_OpenLibSysorg_WinRingsys_WinRing_nj8e {
+rule PUA_VULN_Driver_Openlibsysorg_Winringsys_Winring_568j {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - WinRing0.sys"
 		author = "Florian Roth"
@@ -1319,7 +1319,7 @@ rule PUA_VULN_Driver_OpenLibSysorg_WinRingsys_WinRing_nj8e {
 }
 
 
-rule PUA_VULN_Driver_InsydeSoftwareCorp_segwindrvxsys_SEGWindowsDriverx_79oD {
+rule PUA_VULN_Driver_Insydesoftwarecorp_Segwindrvxsys_Segwindowsdriverx_8m3f {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - segwindrvx64.sys"
 		author = "Florian Roth"
@@ -1341,7 +1341,7 @@ rule PUA_VULN_Driver_InsydeSoftwareCorp_segwindrvxsys_SEGWindowsDriverx_79oD {
 }
 
 
-rule PUA_VULN_Driver_AdvancedMicroDevices_AMDRyzenMasterDriversys_AMDRyzenMasterServiceDriver_6bCd {
+rule PUA_VULN_Driver_Advancedmicrodevices_Amdryzenmasterdriversys_Amdryzenmasterservicedriver_6Usv {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - AMDRyzenMasterDriver.sys"
 		author = "Florian Roth"
@@ -1363,7 +1363,7 @@ rule PUA_VULN_Driver_AdvancedMicroDevices_AMDRyzenMasterDriversys_AMDRyzenMaster
 }
 
 
-rule PUA_VULN_Driver_ATITechnologiesInc_atillksys_ATIDiagnostics_7G4b {
+rule PUA_VULN_Driver_Atitechnologiesinc_Atillksys_Atidiagnostics_3RMD {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - atillk64.sys"
 		author = "Florian Roth"
@@ -1387,7 +1387,7 @@ rule PUA_VULN_Driver_ATITechnologiesInc_atillksys_ATIDiagnostics_7G4b {
 }
 
 
-rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPot_AVGInternetSecuritySystem_463R {
+rule PUA_VULN_Driver_Avgtechnologiesczsro_Aswarpot_Avginternetsecuritysystem_3i96 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -1409,7 +1409,7 @@ rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPot_AVGInternetSecuritySystem_463
 }
 
 
-rule PUA_VULN_Driver_NovellInc_NovellXTier_8NmG {
+rule PUA_VULN_Driver_Novellinc_Novellxtier_73vE {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - libnicm.sys"
 		author = "Florian Roth"
@@ -1433,7 +1433,7 @@ rule PUA_VULN_Driver_NovellInc_NovellXTier_8NmG {
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroAEGIS_4854 {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroaegis_5pzT {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -1455,7 +1455,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroAEGIS_4854 {
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_6fp7 {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_8DkU {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -1477,7 +1477,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_6fp7 {
 }
 
 
-rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPotsys_AVGInternetSecuritySystem_U2pK {
+rule PUA_VULN_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecuritysystem_5oRP {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -1499,7 +1499,7 @@ rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPotsys_AVGInternetSecuritySystem_
 }
 
 
-rule PUA_VULN_Driver_ASRockIncorporation_AsrDrvsys_ASRockIODriver_6jCk {
+rule PUA_VULN_Driver_Asrockincorporation_Asrdrvsys_Asrockiodriver_5h4U {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - AsrDrv106.sys"
 		author = "Florian Roth"
@@ -1527,7 +1527,7 @@ rule PUA_VULN_Driver_ASRockIncorporation_AsrDrvsys_ASRockIODriver_6jCk {
 }
 
 
-rule PUA_VULN_Driver_HPDevelopmentCompany_etdsuppsys_HPETDiDriverDLL_4g7o {
+rule PUA_VULN_Driver_Hpdevelopmentcompany_Etdsuppsys_Hpetdidriverdll_yTF5 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - etdsupp.sys"
 		author = "Florian Roth"
@@ -1549,7 +1549,7 @@ rule PUA_VULN_Driver_HPDevelopmentCompany_etdsuppsys_HPETDiDriverDLL_4g7o {
 }
 
 
-rule PUA_VULN_Driver_IntelCorporation_iQVWSYS_IntelRiQVWSYS_7pze {
+rule PUA_VULN_Driver_Intelcorporation_Iqvwsys_Intelriqvwsys_6JwW {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - iQVW64.SYS"
 		author = "Florian Roth"
@@ -1571,7 +1571,7 @@ rule PUA_VULN_Driver_IntelCorporation_iQVWSYS_IntelRiQVWSYS_7pze {
 }
 
 
-rule PUA_VULN_Driver_PhoenixTechnologies_Agentsys_DriverAgent_6qDT {
+rule PUA_VULN_Driver_Phoenixtechnologies_Agentsys_Driveragent_7f5s {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - Agent64.sys"
 		author = "Florian Roth"
@@ -1597,7 +1597,7 @@ rule PUA_VULN_Driver_PhoenixTechnologies_Agentsys_DriverAgent_6qDT {
 }
 
 
-rule PUA_VULN_Driver_TGSoftSas_viragtsys_VirITAgentSystem_6c5i {
+rule PUA_VULN_Driver_Tgsoftsas_Viragtsys_Viritagentsystem_6mrU {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - viragt64.sys"
 		author = "Florian Roth"
@@ -1619,7 +1619,7 @@ rule PUA_VULN_Driver_TGSoftSas_viragtsys_VirITAgentSystem_6c5i {
 }
 
 
-rule PUA_VULN_Driver_NovellInc_NovellXTier_7Y5j {
+rule PUA_VULN_Driver_Novellinc_Novellxtier_7ujw {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - NICM.SYS"
 		author = "Florian Roth"
@@ -1641,7 +1641,7 @@ rule PUA_VULN_Driver_NovellInc_NovellXTier_7Y5j {
 }
 
 
-rule PUA_VULN_Driver_OpenLibSysorg_OpenLibSyssys_OpenLibSys_8pF2 {
+rule PUA_VULN_Driver_Openlibsysorg_Openlibsyssys_Openlibsys_4FQN {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - OpenLibSys.sys"
 		author = "Florian Roth"
@@ -1663,7 +1663,7 @@ rule PUA_VULN_Driver_OpenLibSysorg_OpenLibSyssys_OpenLibSys_8pF2 {
 }
 
 
-rule PUA_VULN_Driver_RWEverything_RwDrvsys_RWEverythingReadWriteDriver_8Wk9 {
+rule PUA_VULN_Driver_Rweverything_Rwdrvsys_Rweverythingreadwritedriver_ZCaT {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - AsrIbDrv.sys"
 		author = "Florian Roth"
@@ -1690,7 +1690,7 @@ rule PUA_VULN_Driver_RWEverything_RwDrvsys_RWEverythingReadWriteDriver_8Wk9 {
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_5K8Z {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_6Nxe {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -1712,7 +1712,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_5K8Z {
 }
 
 
-rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPot_AVGInternetSecuritySystem_6gKH {
+rule PUA_VULN_Driver_Avgtechnologiesczsro_Aswarpot_Avginternetsecuritysystem_5AiX {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -1734,7 +1734,7 @@ rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPot_AVGInternetSecuritySystem_6gK
 }
 
 
-rule PUA_VULN_Driver_AdvancedMicroDevices_AMDRyzenMasterDriversys_AMDRyzenMasterServiceDriver_5YUT {
+rule PUA_VULN_Driver_Advancedmicrodevices_Amdryzenmasterdriversys_Amdryzenmasterservicedriver_8hZJ {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - AMDRyzenMasterDriver.sys"
 		author = "Florian Roth"
@@ -1756,7 +1756,7 @@ rule PUA_VULN_Driver_AdvancedMicroDevices_AMDRyzenMasterDriversys_AMDRyzenMaster
 }
 
 
-rule PUA_VULN_Driver_AdvancedMicroDevices_AMDRyzenMasterDriversys_AMDRyzenMasterServiceDriver_6gvx {
+rule PUA_VULN_Driver_Advancedmicrodevices_Amdryzenmasterdriversys_Amdryzenmasterservicedriver_87rB {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - AMDRyzenMasterDriver.sys"
 		author = "Florian Roth"
@@ -1778,7 +1778,7 @@ rule PUA_VULN_Driver_AdvancedMicroDevices_AMDRyzenMasterDriversys_AMDRyzenMaster
 }
 
 
-rule PUA_VULN_Driver_PanYazilimBilisimTeknolojileriTicLtdSti_PanMonFltsys_PanCafeManager_4Csy {
+rule PUA_VULN_Driver_Panyazilimbilisimteknolojileriticltdsti_Panmonfltsys_Pancafemanager_foKQ {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - PanMonFlt.sys"
 		author = "Florian Roth"
@@ -1800,7 +1800,7 @@ rule PUA_VULN_Driver_PanYazilimBilisimTeknolojileriTicLtdSti_PanMonFltsys_PanCaf
 }
 
 
-rule PUA_VULN_Driver_LenovoGroupLimitedR_LenovoDiagnosticsDriversys_LenovoDiagnostics_6tHv {
+rule PUA_VULN_Driver_Lenovogrouplimitedr_Lenovodiagnosticsdriversys_Lenovodiagnostics_75pk {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - LenovoDiagnosticsDriver.sys"
 		author = "Florian Roth"
@@ -1822,7 +1822,7 @@ rule PUA_VULN_Driver_LenovoGroupLimitedR_LenovoDiagnosticsDriversys_LenovoDiagno
 }
 
 
-rule PUA_VULN_Driver_Dell_DBUtil_8DKi {
+rule PUA_VULN_Driver_Dell_Dbutil_uMNE {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - DBUtilDrv2.sys"
 		author = "Florian Roth"
@@ -1841,7 +1841,7 @@ rule PUA_VULN_Driver_Dell_DBUtil_8DKi {
 }
 
 
-rule PUA_VULN_Driver_ATSZIO_ATSZIODriver_6FMP {
+rule PUA_VULN_Driver_Atszio_Atsziodriver_3NvX {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - ATSZIO.sys"
 		author = "Florian Roth"
@@ -1863,7 +1863,7 @@ rule PUA_VULN_Driver_ATSZIO_ATSZIODriver_6FMP {
 }
 
 
-rule PUA_VULN_Driver_ASUS_asmmapsys_ATKGenericFunctionService_nvAN {
+rule PUA_VULN_Driver_Asus_Asmmapsys_Atkgenericfunctionservice_5X74 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - asmmap64.sys"
 		author = "Florian Roth"
@@ -1885,7 +1885,7 @@ rule PUA_VULN_Driver_ASUS_asmmapsys_ATKGenericFunctionService_nvAN {
 }
 
 
-rule PUA_VULN_Driver_NovellInc_NovellXTier_6T76 {
+rule PUA_VULN_Driver_Novellinc_Novellxtier_7iLa {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - nscm.sys"
 		author = "Florian Roth"
@@ -1908,7 +1908,7 @@ rule PUA_VULN_Driver_NovellInc_NovellXTier_6T76 {
 }
 
 
-rule PUA_VULN_Driver_Realtek_rtkiosys_RealtekIODriver_3cP4 {
+rule PUA_VULN_Driver_Realtek_Rtkiosys_Realtekiodriver_7rmW {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - rtkio64.sys"
 		author = "Florian Roth"
@@ -1930,7 +1930,7 @@ rule PUA_VULN_Driver_Realtek_rtkiosys_RealtekIODriver_3cP4 {
 }
 
 
-rule PUA_VULN_Driver_LGElectronicsInc_LHAsys_MicrosoftWindowsOperatingSystem_77w5 {
+rule PUA_VULN_Driver_Lgelectronicsinc_Lhasys_Microsoftwindowsoperatingsystem_FpsN {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - LHA.sys"
 		author = "Florian Roth"
@@ -1953,7 +1953,7 @@ rule PUA_VULN_Driver_LGElectronicsInc_LHAsys_MicrosoftWindowsOperatingSystem_77w
 }
 
 
-rule PUA_VULN_Driver_LogMeInInc_LMIinfosys_LogMeIn_5iLN {
+rule PUA_VULN_Driver_Logmeininc_Lmiinfosys_Logmein_445G {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - LMIinfo.sys"
 		author = "Florian Roth"
@@ -1975,7 +1975,7 @@ rule PUA_VULN_Driver_LogMeInInc_LMIinfosys_LogMeIn_5iLN {
 }
 
 
-rule PUA_VULN_Driver_InsydeSoftwareCorp_segwindrvxsys_SEGWindowsDriverx_QXDq {
+rule PUA_VULN_Driver_Insydesoftwarecorp_Segwindrvxsys_Segwindowsdriverx_6WYH {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - segwindrvx64.sys"
 		author = "Florian Roth"
@@ -1997,7 +1997,7 @@ rule PUA_VULN_Driver_InsydeSoftwareCorp_segwindrvxsys_SEGWindowsDriverx_QXDq {
 }
 
 
-rule PUA_VULN_Driver_ElaborateBytesAG_ElbyCDIO_CDRTools_4Jt4 {
+rule PUA_VULN_Driver_Elaboratebytesag_Elbycdio_Cdrtools_5yhJ {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - ElbyCDIO.sys"
 		author = "Florian Roth"
@@ -2019,7 +2019,7 @@ rule PUA_VULN_Driver_ElaborateBytesAG_ElbyCDIO_CDRTools_4Jt4 {
 }
 
 
-rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_procexpsys_ProcessExplorer_44r4 {
+rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_Procexpsys_Processexplorer_7ZTP {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - procexp.Sys"
 		author = "Florian Roth"
@@ -2041,7 +2041,7 @@ rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_procexpsys_ProcessExplorer_4
 }
 
 
-rule PUA_VULN_Driver_Realtek_rtkiowxsys_RealtekIODriver_6A9P {
+rule PUA_VULN_Driver_Realtek_Rtkiowxsys_Realtekiodriver_3Bhk {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - rtkiow8x64.sys"
 		author = "Florian Roth"
@@ -2063,7 +2063,7 @@ rule PUA_VULN_Driver_Realtek_rtkiowxsys_RealtekIODriver_6A9P {
 }
 
 
-rule PUA_VULN_Driver_IntelCorporation_iQVWSYS_IntelRiQVWSYS_6TZv {
+rule PUA_VULN_Driver_Intelcorporation_Iqvwsys_Intelriqvwsys_qJTv {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - iQVW64.SYS"
 		author = "Florian Roth"
@@ -2085,7 +2085,7 @@ rule PUA_VULN_Driver_IntelCorporation_iQVWSYS_IntelRiQVWSYS_6TZv {
 }
 
 
-rule PUA_VULN_Driver_IntelCorporation_iQVWSYS_IntelRiQVWSYS_3gFC {
+rule PUA_VULN_Driver_Intelcorporation_Iqvwsys_Intelriqvwsys_w2vo {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - iQVW64.SYS"
 		author = "Florian Roth"
@@ -2107,7 +2107,7 @@ rule PUA_VULN_Driver_IntelCorporation_iQVWSYS_IntelRiQVWSYS_3gFC {
 }
 
 
-rule PUA_VULN_Driver_SafeNetInc_Hostnt_Hostnt_FFgV {
+rule PUA_VULN_Driver_Safenetinc_Hostnt_Hostnt_5AgN {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - HOSTNT.sys"
 		author = "Florian Roth"
@@ -2129,7 +2129,7 @@ rule PUA_VULN_Driver_SafeNetInc_Hostnt_Hostnt_FFgV {
 }
 
 
-rule PUA_VULN_Driver_RivetNetworksLLC_KfeCoDrvsys_KillerTrafficControl_7Zsu {
+rule PUA_VULN_Driver_Rivetnetworksllc_Kfecodrvsys_Killertrafficcontrol_35fm {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - KfeCo11X64.sys"
 		author = "Florian Roth"
@@ -2151,7 +2151,7 @@ rule PUA_VULN_Driver_RivetNetworksLLC_KfeCoDrvsys_KillerTrafficControl_7Zsu {
 }
 
 
-rule PUA_VULN_Driver_ZemanaLtd_ZAM_7JTA {
+rule PUA_VULN_Driver_Zemanaltd_Zam_5Gp9 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - zam64.sys"
 		author = "Florian Roth"
@@ -2171,7 +2171,7 @@ rule PUA_VULN_Driver_ZemanaLtd_ZAM_7JTA {
 }
 
 
-rule PUA_VULN_Driver_ASRockIncorporation_AsrAutoChkUpdDrvsys_AsrAutoChkUpdDrvDriver_6J7K {
+rule PUA_VULN_Driver_Asrockincorporation_Asrautochkupddrvsys_Asrautochkupddrvdriver_65Jk {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - AsrAutoChkUpdDrv.sys"
 		author = "Florian Roth"
@@ -2193,7 +2193,7 @@ rule PUA_VULN_Driver_ASRockIncorporation_AsrAutoChkUpdDrvsys_AsrAutoChkUpdDrvDri
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_8Yyb {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_5sSA {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -2216,7 +2216,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_8Yyb {
 }
 
 
-rule PUA_VULN_Driver_NovellInc_NovellXTier_8zP7 {
+rule PUA_VULN_Driver_Novellinc_Novellxtier_6wQK {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - nscm.sys"
 		author = "Florian Roth"
@@ -2238,7 +2238,7 @@ rule PUA_VULN_Driver_NovellInc_NovellXTier_8zP7 {
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_8AUm {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_7wRj {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -2260,7 +2260,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_8AUm {
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_GKKq {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_4Dfi {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -2282,7 +2282,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_GKKq {
 }
 
 
-rule PUA_VULN_Driver_CPUID_cpuzsys_CPUIDservice_72vZ {
+rule PUA_VULN_Driver_Cpuid_Cpuzsys_Cpuidservice_ZBMY {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - cpuz.sys"
 		author = "Florian Roth"
@@ -2307,7 +2307,7 @@ rule PUA_VULN_Driver_CPUID_cpuzsys_CPUIDservice_72vZ {
 }
 
 
-rule PUA_VULN_Driver_WindowsRServerDDKprovider_speedfansys_WindowsRServerDDKdriver_VM2t {
+rule PUA_VULN_Driver_Windowsrserverddkprovider_Speedfansys_Windowsrserverddkdriver_43mE {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - speedfan.sys"
 		author = "Florian Roth"
@@ -2329,7 +2329,7 @@ rule PUA_VULN_Driver_WindowsRServerDDKprovider_speedfansys_WindowsRServerDDKdriv
 }
 
 
-rule PUA_VULN_Driver_OpenLibSysorg_OpenLibSyssys_OpenLibSys_4zQV {
+rule PUA_VULN_Driver_Openlibsysorg_Openlibsyssys_Openlibsys_5DnR {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - OpenLibSys.sys"
 		author = "Florian Roth"
@@ -2351,7 +2351,7 @@ rule PUA_VULN_Driver_OpenLibSysorg_OpenLibSyssys_OpenLibSys_4zQV {
 }
 
 
-rule PUA_VULN_Driver_TGSoftSas_viragtsys_VirITAgentSystem_4RRu {
+rule PUA_VULN_Driver_Tgsoftsas_Viragtsys_Viritagentsystem_8LTA {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - viragt64.sys"
 		author = "Florian Roth"
@@ -2373,7 +2373,7 @@ rule PUA_VULN_Driver_TGSoftSas_viragtsys_VirITAgentSystem_4RRu {
 }
 
 
-rule PUA_VULN_Driver_ASUSTekComputerInc_ATSZIOsys_ATSZIODriver_79CE {
+rule PUA_VULN_Driver_Asustekcomputerinc_Atsziosys_Atsziodriver_7yde {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - ATSZIO.sys"
 		author = "Florian Roth"
@@ -2395,7 +2395,7 @@ rule PUA_VULN_Driver_ASUSTekComputerInc_ATSZIOsys_ATSZIODriver_79CE {
 }
 
 
-rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_procexpsys_ProcessExplorer_5ebJ {
+rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_Procexpsys_Processexplorer_6FZv {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - procexp.Sys"
 		author = "Florian Roth"
@@ -2418,7 +2418,7 @@ rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_procexpsys_ProcessExplorer_5
 }
 
 
-rule PUA_VULN_Driver_MICSYSTechnologyCoLTd_MsIosys_MsIoDriverVersion_x_8JuS {
+rule PUA_VULN_Driver_Micsystechnologycoltd_Msiosys_Msiodriverversion_X_8tkr {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - MsIo64.sys"
 		author = "Florian Roth"
@@ -2442,7 +2442,7 @@ rule PUA_VULN_Driver_MICSYSTechnologyCoLTd_MsIosys_MsIoDriverVersion_x_8JuS {
 }
 
 
-rule PUA_VULN_Driver_VektorTSecurityService_VBoxDrv_AntidetectPublic_5UTw {
+rule PUA_VULN_Driver_Vektortsecurityservice_Vboxdrv_Antidetectpublic_gynw {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - VBoxDrv.sys"
 		author = "Florian Roth"
@@ -2464,7 +2464,7 @@ rule PUA_VULN_Driver_VektorTSecurityService_VBoxDrv_AntidetectPublic_5UTw {
 }
 
 
-rule PUA_VULN_Driver_ElaborateBytesAG_ElbyCDIO_CDRTools_7cMc {
+rule PUA_VULN_Driver_Elaboratebytesag_Elbycdio_Cdrtools_46j8 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - ElbyCDIO.sys"
 		author = "Florian Roth"
@@ -2486,7 +2486,7 @@ rule PUA_VULN_Driver_ElaborateBytesAG_ElbyCDIO_CDRTools_7cMc {
 }
 
 
-rule PUA_VULN_Driver_MSI_NTIOLibXsys_NTIOLibX_5BrR {
+rule PUA_VULN_Driver_Msi_Ntiolibxsys_Ntiolibx_6dxh {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - NTIOLib.sys"
 		author = "Florian Roth"
@@ -2509,7 +2509,7 @@ rule PUA_VULN_Driver_MSI_NTIOLibXsys_NTIOLibX_5BrR {
 }
 
 
-rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_procexpsys_ProcessExplorer_79Jv {
+rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_Procexpsys_Processexplorer_75vf {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - procexp.Sys"
 		author = "Florian Roth"
@@ -2533,7 +2533,7 @@ rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_procexpsys_ProcessExplorer_7
 }
 
 
-rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_procexpsys_ProcessExplorer_wXXt {
+rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_Procexpsys_Processexplorer_5PGM {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - procexp.Sys"
 		author = "Florian Roth"
@@ -2555,7 +2555,7 @@ rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_procexpsys_ProcessExplorer_w
 }
 
 
-rule PUA_VULN_Driver_ZemanaLtd_ZAM_7ewW {
+rule PUA_VULN_Driver_Zemanaltd_Zam_6Aao {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - zam64.sys"
 		author = "Florian Roth"
@@ -2574,7 +2574,7 @@ rule PUA_VULN_Driver_ZemanaLtd_ZAM_7ewW {
 }
 
 
-rule PUA_VULN_Driver_IntelCorporation_iQVWSYS_IntelRiQVWSYS_3DXs {
+rule PUA_VULN_Driver_Intelcorporation_Iqvwsys_Intelriqvwsys_575D {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - iQVW64.SYS"
 		author = "Florian Roth"
@@ -2603,7 +2603,7 @@ rule PUA_VULN_Driver_IntelCorporation_iQVWSYS_IntelRiQVWSYS_3DXs {
 }
 
 
-rule PUA_VULN_Driver_AVASTSoftware_aswArPotsys_AvastAntivirus_3SQZ {
+rule PUA_VULN_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_3VDu {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -2625,7 +2625,7 @@ rule PUA_VULN_Driver_AVASTSoftware_aswArPotsys_AvastAntivirus_3SQZ {
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_AEGIS_8r8V {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Aegis_8rQ9 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -2647,7 +2647,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_AEGIS_8r8V {
 }
 
 
-rule PUA_VULN_Driver_AVASTSoftware_aswArPotsys_AvastAntivirus_ZxfU {
+rule PUA_VULN_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_4ALf {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -2669,7 +2669,7 @@ rule PUA_VULN_Driver_AVASTSoftware_aswArPotsys_AvastAntivirus_ZxfU {
 }
 
 
-rule PUA_VULN_Driver_MSI_NTIOLibsys_NTIOLib_HdYW {
+rule PUA_VULN_Driver_Msi_Ntiolibsys_Ntiolib_33jc {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - NTIOLib.sys"
 		author = "Florian Roth"
@@ -2691,7 +2691,7 @@ rule PUA_VULN_Driver_MSI_NTIOLibsys_NTIOLib_HdYW {
 }
 
 
-rule PUA_VULN_Driver_MSI_NTIOLibsys_NTIOLib_broB {
+rule PUA_VULN_Driver_Msi_Ntiolibsys_Ntiolib_3w9P {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - NTIOLib.sys"
 		author = "Florian Roth"
@@ -2713,7 +2713,7 @@ rule PUA_VULN_Driver_MSI_NTIOLibsys_NTIOLib_broB {
 }
 
 
-rule PUA_VULN_Driver_WindowsRCodenameLonghornDDKprovider_rtkiosys_WindowsRCodenameLonghornDDKdriver_3voh {
+rule PUA_VULN_Driver_Windowsrcodenamelonghornddkprovider_Rtkiosys_Windowsrcodenamelonghornddkdriver_3YFR {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - rtkio64.sys"
 		author = "Florian Roth"
@@ -2737,7 +2737,7 @@ rule PUA_VULN_Driver_WindowsRCodenameLonghornDDKprovider_rtkiosys_WindowsRCodena
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_4thQ {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_6zn2 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -2759,7 +2759,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_4thQ {
 }
 
 
-rule PUA_VULN_Driver_WindowsRWinDDKprovider_CupFixerxsys_WindowsRWinDDKdriver_cdfF {
+rule PUA_VULN_Driver_Windowsrwinddkprovider_Cupfixerxsys_Windowsrwinddkdriver_4ZHa {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - CupFixerx64.sys"
 		author = "Florian Roth"
@@ -2781,7 +2781,7 @@ rule PUA_VULN_Driver_WindowsRWinDDKprovider_CupFixerxsys_WindowsRWinDDKdriver_cd
 }
 
 
-rule PUA_VULN_Driver_ASUSTeKComputerInc_EIOsys_ASUSVGAKernelModeDriver_eUGH {
+rule PUA_VULN_Driver_Asustekcomputerinc_Eiosys_Asusvgakernelmodedriver_3AsL {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - EIO.sys"
 		author = "Florian Roth"
@@ -2803,7 +2803,7 @@ rule PUA_VULN_Driver_ASUSTeKComputerInc_EIOsys_ASUSVGAKernelModeDriver_eUGH {
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_72eF {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_49Fg {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -2825,7 +2825,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_72eF {
 }
 
 
-rule PUA_VULN_Driver_ASUSTeKComputerInc_IOMapsys_ASUSKernelModeDriverforNT_3m2d {
+rule PUA_VULN_Driver_Asustekcomputerinc_Iomapsys_Asuskernelmodedriverfornt_4iGe {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - IOMap64.sys"
 		author = "Florian Roth"
@@ -2847,7 +2847,7 @@ rule PUA_VULN_Driver_ASUSTeKComputerInc_IOMapsys_ASUSKernelModeDriverforNT_3m2d 
 }
 
 
-rule PUA_VULN_Driver_TGSoftSas_viragtsys_VirITAgentSystem_65Pz {
+rule PUA_VULN_Driver_Tgsoftsas_Viragtsys_Viritagentsystem_8WLw {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - viragt.sys"
 		author = "Florian Roth"
@@ -2869,7 +2869,7 @@ rule PUA_VULN_Driver_TGSoftSas_viragtsys_VirITAgentSystem_65Pz {
 }
 
 
-rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPotsys_AVGInternetSecuritySystem_5p3z {
+rule PUA_VULN_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecuritysystem_3Juf {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -2891,7 +2891,7 @@ rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPotsys_AVGInternetSecuritySystem_
 }
 
 
-rule PUA_VULN_Driver_MarvinTestSolutionsInc_Hwsys_HW_7Wrr {
+rule PUA_VULN_Driver_Marvintestsolutionsinc_Hwsys_Hw_6LQk {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - hw.sys"
 		author = "Florian Roth"
@@ -2914,7 +2914,7 @@ rule PUA_VULN_Driver_MarvinTestSolutionsInc_Hwsys_HW_7Wrr {
 }
 
 
-rule PUA_VULN_Driver_MyDriverscom_HWM_DriverGenius_4YNy {
+rule PUA_VULN_Driver_Mydriverscom_Hwm_Drivergenius_7kC2 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - mydrivers.sys"
 		author = "Florian Roth"
@@ -2936,7 +2936,7 @@ rule PUA_VULN_Driver_MyDriverscom_HWM_DriverGenius_4YNy {
 }
 
 
-rule PUA_VULN_Driver_SiSoftware_SANDRA_SiSoftwareSandra_8anh {
+rule PUA_VULN_Driver_Sisoftware_Sandra_Sisoftwaresandra_8KtM {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - SANDRA"
 		author = "Florian Roth"
@@ -2958,7 +2958,7 @@ rule PUA_VULN_Driver_SiSoftware_SANDRA_SiSoftwareSandra_8anh {
 }
 
 
-rule PUA_VULN_Driver_PowerTool_kEvPsys_PowerTool_8exA {
+rule PUA_VULN_Driver_Powertool_Kevpsys_Powertool_32oZ {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - kEvP64.sys"
 		author = "Florian Roth"
@@ -2982,7 +2982,7 @@ rule PUA_VULN_Driver_PowerTool_kEvPsys_PowerTool_8exA {
 }
 
 
-rule PUA_VULN_Driver_AVASTSoftware_aswArPot_AvastAntivirus_8UDH {
+rule PUA_VULN_Driver_Avastsoftware_Aswarpot_Avastantivirus_54Xa {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -3004,7 +3004,7 @@ rule PUA_VULN_Driver_AVASTSoftware_aswArPot_AvastAntivirus_8UDH {
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_XvDw {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_aE7V {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -3027,7 +3027,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_XvDw {
 }
 
 
-rule PUA_VULN_Driver_AVASTSoftware_aswArPotsys_AvastAntivirus_5FVG {
+rule PUA_VULN_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_jNpc {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -3049,7 +3049,7 @@ rule PUA_VULN_Driver_AVASTSoftware_aswArPotsys_AvastAntivirus_5FVG {
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_48eB {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_7aTE {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -3071,7 +3071,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_48eB {
 }
 
 
-rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPot_AVGInternetSecuritySystem_6kha {
+rule PUA_VULN_Driver_Avgtechnologiesczsro_Aswarpot_Avginternetsecuritysystem_6Trr {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -3093,7 +3093,7 @@ rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPot_AVGInternetSecuritySystem_6kh
 }
 
 
-rule PUA_VULN_Driver_MSI_NTIOLibsys_NTIOLib_Bhgf {
+rule PUA_VULN_Driver_Msi_Ntiolibsys_Ntiolib_6Kmd {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - NTIOLib.sys"
 		author = "Florian Roth"
@@ -3115,7 +3115,7 @@ rule PUA_VULN_Driver_MSI_NTIOLibsys_NTIOLib_Bhgf {
 }
 
 
-rule PUA_VULN_Driver_ZemanaLtd_ZAM_5nfE {
+rule PUA_VULN_Driver_Zemanaltd_Zam_iyBU {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - zam64.sys"
 		author = "Florian Roth"
@@ -3134,7 +3134,7 @@ rule PUA_VULN_Driver_ZemanaLtd_ZAM_5nfE {
 }
 
 
-rule PUA_VULN_Driver_TGSoftSas_viragtsys_VirITAgentSystem_3nuB {
+rule PUA_VULN_Driver_Tgsoftsas_Viragtsys_Viritagentsystem_8nwd {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - viragt64.sys"
 		author = "Florian Roth"
@@ -3156,7 +3156,7 @@ rule PUA_VULN_Driver_TGSoftSas_viragtsys_VirITAgentSystem_3nuB {
 }
 
 
-rule PUA_VULN_Driver_DTResearchInc_iomemsys_iomemsys_4iti {
+rule PUA_VULN_Driver_Dtresearchinc_Iomemsys_Iomemsys_3RMW {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - iomem64.sys"
 		author = "Florian Roth"
@@ -3178,7 +3178,7 @@ rule PUA_VULN_Driver_DTResearchInc_iomemsys_iomemsys_4iti {
 }
 
 
-rule PUA_VULN_Driver_SiSoftware_SANDRA_SiSoftwareSandra_4z8H {
+rule PUA_VULN_Driver_Sisoftware_Sandra_Sisoftwaresandra_7sa6 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - SANDRA"
 		author = "Florian Roth"
@@ -3200,7 +3200,7 @@ rule PUA_VULN_Driver_SiSoftware_SANDRA_SiSoftwareSandra_4z8H {
 }
 
 
-rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_procexpsys_ProcessExplorer_4pwy {
+rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_Procexpsys_Processexplorer_5ZYA {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - procexp.Sys"
 		author = "Florian Roth"
@@ -3223,7 +3223,7 @@ rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_procexpsys_ProcessExplorer_4
 }
 
 
-rule PUA_VULN_Driver_MultiTheftAuto_MTASanAndreas_ZbCq {
+rule PUA_VULN_Driver_Multitheftauto_Mtasanandreas_Soan {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - FairplayKD.sys"
 		author = "Florian Roth"
@@ -3243,7 +3243,7 @@ rule PUA_VULN_Driver_MultiTheftAuto_MTASanAndreas_ZbCq {
 }
 
 
-rule PUA_VULN_Driver_AVASTSoftware_aswArPotsys_AvastAntivirus_4xKE {
+rule PUA_VULN_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_UkoA {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -3265,7 +3265,7 @@ rule PUA_VULN_Driver_AVASTSoftware_aswArPotsys_AvastAntivirus_4xKE {
 }
 
 
-rule PUA_VULN_Driver_TGSoftSas_viragtsys_VirITAgentSystem_6ZJr {
+rule PUA_VULN_Driver_Tgsoftsas_Viragtsys_Viritagentsystem_5RJf {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - viragt64.sys"
 		author = "Florian Roth"
@@ -3287,7 +3287,7 @@ rule PUA_VULN_Driver_TGSoftSas_viragtsys_VirITAgentSystem_6ZJr {
 }
 
 
-rule PUA_VULN_Driver_MicroFocus_MicroFocusXTier_5ES7 {
+rule PUA_VULN_Driver_Microfocus_Microfocusxtier_3pdf {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - libnicm.sys"
 		author = "Florian Roth"
@@ -3308,7 +3308,7 @@ rule PUA_VULN_Driver_MicroFocus_MicroFocusXTier_5ES7 {
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_5GPG {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_5ofU {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -3330,7 +3330,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_5GPG {
 }
 
 
-rule PUA_VULN_Driver_ArthurLiberman_ALSysIOsys_ALSysIO_336F {
+rule PUA_VULN_Driver_Arthurliberman_Alsysiosys_Alsysio_6v9r {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - ALSysIO64.sys"
 		author = "Florian Roth"
@@ -3352,7 +3352,7 @@ rule PUA_VULN_Driver_ArthurLiberman_ALSysIOsys_ALSysIO_336F {
 }
 
 
-rule PUA_VULN_Driver_PanYazilimBilisimTeknolojileriTicLtdSti_PanIOsys_PanIOLibrary_A7hN {
+rule PUA_VULN_Driver_Panyazilimbilisimteknolojileriticltdsti_Paniosys_Paniolibrary_8nUJ {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - PanIO.sys"
 		author = "Florian Roth"
@@ -3374,7 +3374,7 @@ rule PUA_VULN_Driver_PanYazilimBilisimTeknolojileriTicLtdSti_PanIOsys_PanIOLibra
 }
 
 
-rule PUA_VULN_Driver_AVASTSoftware_aswArPot_AvastAntivirus_7woW {
+rule PUA_VULN_Driver_Avastsoftware_Aswarpot_Avastantivirus_5Tfo {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -3396,7 +3396,7 @@ rule PUA_VULN_Driver_AVASTSoftware_aswArPot_AvastAntivirus_7woW {
 }
 
 
-rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPotsys_AVGInternetSecuritySystem_4Tt3 {
+rule PUA_VULN_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecuritysystem_8kGW {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -3418,7 +3418,7 @@ rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPotsys_AVGInternetSecuritySystem_
 }
 
 
-rule PUA_VULN_Driver_OTi_otipcibussys_KernelModeDriverToAccessPhysicalMemoryAndPorts_3Bsb {
+rule PUA_VULN_Driver_Oti_Otipcibussys_Kernelmodedrivertoaccessphysicalmemoryandports_6v39 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - otipcibus.sys"
 		author = "Florian Roth"
@@ -3439,7 +3439,7 @@ rule PUA_VULN_Driver_OTi_otipcibussys_KernelModeDriverToAccessPhysicalMemoryAndP
 }
 
 
-rule PUA_VULN_Driver_AVASTSoftware_aswArPotsys_AvastAntivirus_87GJ {
+rule PUA_VULN_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_3emv {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -3461,7 +3461,7 @@ rule PUA_VULN_Driver_AVASTSoftware_aswArPotsys_AvastAntivirus_87GJ {
 }
 
 
-rule PUA_VULN_Driver_MICSYSTechnologyCoLTd_MsIosys_MsIoDriverVersion_x_62XU {
+rule PUA_VULN_Driver_Micsystechnologycoltd_Msiosys_Msiodriverversion_X_B5Qa {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - MsIo64.sys"
 		author = "Florian Roth"
@@ -3483,7 +3483,7 @@ rule PUA_VULN_Driver_MICSYSTechnologyCoLTd_MsIosys_MsIoDriverVersion_x_62XU {
 }
 
 
-rule PUA_VULN_Driver_DTResearchInc_iomemsys_iomemsys_5STP {
+rule PUA_VULN_Driver_Dtresearchinc_Iomemsys_Iomemsys_84Qs {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - iomem64.sys"
 		author = "Florian Roth"
@@ -3505,7 +3505,7 @@ rule PUA_VULN_Driver_DTResearchInc_iomemsys_iomemsys_5STP {
 }
 
 
-rule PUA_VULN_Driver_PCHuntersys_PCHunter_6ZDZ {
+rule PUA_VULN_Driver_Pchuntersys_Pchunter_pAuY {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - PCHunter.sys"
 		author = "Florian Roth"
@@ -3527,7 +3527,7 @@ rule PUA_VULN_Driver_PCHuntersys_PCHunter_6ZDZ {
 }
 
 
-rule PUA_VULN_Driver_AVASTSoftware_aswArPotsys_AvastAntivirus_4YTM {
+rule PUA_VULN_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_3v5Q {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -3549,7 +3549,7 @@ rule PUA_VULN_Driver_AVASTSoftware_aswArPotsys_AvastAntivirus_4YTM {
 }
 
 
-rule PUA_VULN_Driver_NovellInc_NovellXTier_4FFy {
+rule PUA_VULN_Driver_Novellinc_Novellxtier_7Ccb {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - nscm.sys"
 		author = "Florian Roth"
@@ -3570,7 +3570,7 @@ rule PUA_VULN_Driver_NovellInc_NovellXTier_4FFy {
 }
 
 
-rule PUA_VULN_Driver_ZemanaLtd_ZAM_6oXd {
+rule PUA_VULN_Driver_Zemanaltd_Zam_7NtE {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - zam64.sys"
 		author = "Florian Roth"
@@ -3589,7 +3589,7 @@ rule PUA_VULN_Driver_ZemanaLtd_ZAM_6oXd {
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_5XrV {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_5cPL {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -3611,7 +3611,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_5XrV {
 }
 
 
-rule PUA_VULN_Driver_Huawei_HwOsEc_HuaweiMateBook_63ke {
+rule PUA_VULN_Driver_Huawei_Hwosec_Huaweimatebook_5CNz {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - HwOs2Ec7x64.sys"
 		author = "Florian Roth"
@@ -3634,7 +3634,7 @@ rule PUA_VULN_Driver_Huawei_HwOsEc_HuaweiMateBook_63ke {
 }
 
 
-rule PUA_VULN_Driver_HPInc_HpPortIoxsys_HpPortIo_7UZb {
+rule PUA_VULN_Driver_Hpinc_Hpportioxsys_Hpportio_8wtG {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - HpPortIox64.sys"
 		author = "Florian Roth"
@@ -3655,7 +3655,7 @@ rule PUA_VULN_Driver_HPInc_HpPortIoxsys_HpPortIo_7UZb {
 }
 
 
-rule PUA_VULN_Driver_ZemanaLtd_ZAM_3fPV {
+rule PUA_VULN_Driver_Zemanaltd_Zam_3HJL {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - zam64.sys"
 		author = "Florian Roth"
@@ -3674,7 +3674,7 @@ rule PUA_VULN_Driver_ZemanaLtd_ZAM_3fPV {
 }
 
 
-rule PUA_VULN_Driver_GIGABYTETECHNOLOGYCOLTD_gdrvsys_GIGABYTESoftwaredriver_uJ6V {
+rule PUA_VULN_Driver_Gigabytetechnologycoltd_Gdrvsys_Gigabytesoftwaredriver_6ASr {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - gdrv.sys"
 		author = "Florian Roth"
@@ -3696,7 +3696,7 @@ rule PUA_VULN_Driver_GIGABYTETECHNOLOGYCOLTD_gdrvsys_GIGABYTESoftwaredriver_uJ6V
 }
 
 
-rule PUA_VULN_Driver_SiSoftware_SANDRA_SiSoftwareSandra_6Yvs {
+rule PUA_VULN_Driver_Sisoftware_Sandra_Sisoftwaresandra_3ShT {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - SANDRA"
 		author = "Florian Roth"
@@ -3718,7 +3718,7 @@ rule PUA_VULN_Driver_SiSoftware_SANDRA_SiSoftwareSandra_6Yvs {
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_5t4g {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_8Mej {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -3740,7 +3740,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_5t4g {
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_39v5 {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_rFVM {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -3762,7 +3762,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_39v5 {
 }
 
 
-rule PUA_VULN_Driver_MicroFocus_MicroFocusXTier_7S4Z {
+rule PUA_VULN_Driver_Microfocus_Microfocusxtier_3SLt {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - nscm.sys"
 		author = "Florian Roth"
@@ -3783,7 +3783,7 @@ rule PUA_VULN_Driver_MicroFocus_MicroFocusXTier_7S4Z {
 }
 
 
-rule PUA_VULN_Driver_SunMicrosystemsInc_VBoxDrvsys_SunVirtualBox_r_8LJ5 {
+rule PUA_VULN_Driver_Sunmicrosystemsinc_Vboxdrvsys_Sunvirtualbox_R_7Esx {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - vboxdrv.sys"
 		author = "Florian Roth"
@@ -3806,7 +3806,7 @@ rule PUA_VULN_Driver_SunMicrosystemsInc_VBoxDrvsys_SunVirtualBox_r_8LJ5 {
 }
 
 
-rule PUA_VULN_Driver_CorsairMemoryInc_CorsairLLAccess_CorsairLLAccess_6bXL {
+rule PUA_VULN_Driver_Corsairmemoryinc_Corsairllaccess_Corsairllaccess_8nHp {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - CorsairLLAccess64.sys"
 		author = "Florian Roth"
@@ -3829,7 +3829,7 @@ rule PUA_VULN_Driver_CorsairMemoryInc_CorsairLLAccess_CorsairLLAccess_6bXL {
 }
 
 
-rule PUA_VULN_Driver_CPUID_cpuzsys_CPUIDservice_4uXU {
+rule PUA_VULN_Driver_Cpuid_Cpuzsys_Cpuidservice_58RF {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - cpuz.sys"
 		author = "Florian Roth"
@@ -3853,7 +3853,7 @@ rule PUA_VULN_Driver_CPUID_cpuzsys_CPUIDservice_4uXU {
 }
 
 
-rule PUA_VULN_Driver_TGSoftSas_viragtsys_VirITAgentSystem_48JB {
+rule PUA_VULN_Driver_Tgsoftsas_Viragtsys_Viritagentsystem_7jfG {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - viragt64.sys"
 		author = "Florian Roth"
@@ -3875,7 +3875,7 @@ rule PUA_VULN_Driver_TGSoftSas_viragtsys_VirITAgentSystem_48JB {
 }
 
 
-rule PUA_VULN_Driver_AVASTSoftware_aswArPotsys_AvastAntivirus_5AGV {
+rule PUA_VULN_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_8Tpb {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -3897,7 +3897,7 @@ rule PUA_VULN_Driver_AVASTSoftware_aswArPotsys_AvastAntivirus_5AGV {
 }
 
 
-rule PUA_VULN_Driver_AVASTSoftware_aswVmmsys_avastAntivirus_6SyF {
+rule PUA_VULN_Driver_Avastsoftware_Aswvmmsys_Avastantivirus_TNnj {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswVmm.sys"
 		author = "Florian Roth"
@@ -3919,7 +3919,7 @@ rule PUA_VULN_Driver_AVASTSoftware_aswVmmsys_avastAntivirus_6SyF {
 }
 
 
-rule PUA_VULN_Driver_WindowsRServerDDKprovider_gdrvsys_WindowsRServerDDKdriver_4YEk {
+rule PUA_VULN_Driver_Windowsrserverddkprovider_Gdrvsys_Windowsrserverddkdriver_4yaR {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - gdrv.sys"
 		author = "Florian Roth"
@@ -3943,7 +3943,7 @@ rule PUA_VULN_Driver_WindowsRServerDDKprovider_gdrvsys_WindowsRServerDDKdriver_4
 }
 
 
-rule PUA_VULN_Driver_GIGABYTETECHNOLOGYCOLTD_gdrvsys_gdrv_6KNS {
+rule PUA_VULN_Driver_Gigabytetechnologycoltd_Gdrvsys_Gdrv_45MC {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - gdrv.sys"
 		author = "Florian Roth"
@@ -3965,7 +3965,7 @@ rule PUA_VULN_Driver_GIGABYTETECHNOLOGYCOLTD_gdrvsys_gdrv_6KNS {
 }
 
 
-rule PUA_VULN_Driver_ASUSTeKComputerInc_EIOsys_ASUSVGAKernelModeDriver_Uoac {
+rule PUA_VULN_Driver_Asustekcomputerinc_Eiosys_Asusvgakernelmodedriver_6yQs {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - EIO.sys"
 		author = "Florian Roth"
@@ -3987,7 +3987,7 @@ rule PUA_VULN_Driver_ASUSTeKComputerInc_EIOsys_ASUSVGAKernelModeDriver_Uoac {
 }
 
 
-rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_procexpsys_ProcessExplorer_5yzD {
+rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_Procexpsys_Processexplorer_8BnS {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - procexp.Sys"
 		author = "Florian Roth"
@@ -4009,7 +4009,7 @@ rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_procexpsys_ProcessExplorer_5
 }
 
 
-rule PUA_VULN_Driver_RivetNetworksLLC_KfeCoDrvsys_KillerTrafficControl_48LF {
+rule PUA_VULN_Driver_Rivetnetworksllc_Kfecodrvsys_Killertrafficcontrol_3siY {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - KfeCo10X64.sys"
 		author = "Florian Roth"
@@ -4031,7 +4031,7 @@ rule PUA_VULN_Driver_RivetNetworksLLC_KfeCoDrvsys_KillerTrafficControl_48LF {
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroAEGIS_663h {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroaegis_6GZa {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -4053,7 +4053,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroAEGIS_663h {
 }
 
 
-rule PUA_VULN_Driver_MSI_NTIOLibXsys_NTIOLib_6fYV {
+rule PUA_VULN_Driver_Msi_Ntiolibxsys_Ntiolib_GAKr {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - NTIOLib.sys"
 		author = "Florian Roth"
@@ -4075,7 +4075,7 @@ rule PUA_VULN_Driver_MSI_NTIOLibXsys_NTIOLib_6fYV {
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_AEGIS_4bNK {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Aegis_4m5Q {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -4097,7 +4097,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_AEGIS_4bNK {
 }
 
 
-rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPotsys_AVGInternetSecuritySystem_8rUL {
+rule PUA_VULN_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecuritysystem_CSCt {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -4119,7 +4119,7 @@ rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPotsys_AVGInternetSecuritySystem_
 }
 
 
-rule PUA_VULN_Driver_SunMicrosystemsInc_VBoxDrvsys_SunVirtualBox_r_e5Nu {
+rule PUA_VULN_Driver_Sunmicrosystemsinc_Vboxdrvsys_Sunvirtualbox_R_62aJ {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - VBoxDrv.sys"
 		author = "Florian Roth"
@@ -4141,7 +4141,7 @@ rule PUA_VULN_Driver_SunMicrosystemsInc_VBoxDrvsys_SunVirtualBox_r_e5Nu {
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_fcQS {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_zC9D {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -4163,7 +4163,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_fcQS {
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_ActiveClean_83bH {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Activeclean_7Pba {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -4185,7 +4185,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_ActiveClean_83bH {
 }
 
 
-rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_procexpsys_ProcessExplorer_jqAn {
+rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_Procexpsys_Processexplorer_3jiE {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - procexp.Sys"
 		author = "Florian Roth"
@@ -4208,7 +4208,7 @@ rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_procexpsys_ProcessExplorer_j
 }
 
 
-rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_procexpsys_ProcessExplorer_4hof {
+rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_Procexpsys_Processexplorer_8jcX {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - procexp.Sys"
 		author = "Florian Roth"
@@ -4230,7 +4230,7 @@ rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_procexpsys_ProcessExplorer_4
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_7rYU {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_4j23 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -4252,7 +4252,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_7rYU {
 }
 
 
-rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPotsys_AVGInternetSecuritySystem_8fXa {
+rule PUA_VULN_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecuritysystem_6enZ {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -4274,7 +4274,7 @@ rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPotsys_AVGInternetSecuritySystem_
 }
 
 
-rule PUA_VULN_Driver_Copyright_AdvancedMalwareProtection_3WKB {
+rule PUA_VULN_Driver_Copyright_Advancedmalwareprotection_5Rye {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - amsdk.sys"
 		author = "Florian Roth"
@@ -4295,7 +4295,7 @@ rule PUA_VULN_Driver_Copyright_AdvancedMalwareProtection_3WKB {
 }
 
 
-rule PUA_VULN_Driver_ElaborateBytesAG_ElbyCDIO_CDRTools_YkgS {
+rule PUA_VULN_Driver_Elaboratebytesag_Elbycdio_Cdrtools_44wd {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - elbycdio.sys"
 		author = "Florian Roth"
@@ -4317,7 +4317,7 @@ rule PUA_VULN_Driver_ElaborateBytesAG_ElbyCDIO_CDRTools_YkgS {
 }
 
 
-rule PUA_VULN_Driver_IntelCorporation_iQVWSYS_IntelRiQVWSYS_59au {
+rule PUA_VULN_Driver_Intelcorporation_Iqvwsys_Intelriqvwsys_6T8e {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - iQVW64.SYS"
 		author = "Florian Roth"
@@ -4339,7 +4339,7 @@ rule PUA_VULN_Driver_IntelCorporation_iQVWSYS_IntelRiQVWSYS_59au {
 }
 
 
-rule PUA_VULN_Driver_ElaborateBytesAG_ElbyCDIO_CDRTools_8Gkq {
+rule PUA_VULN_Driver_Elaboratebytesag_Elbycdio_Cdrtools_5oiU {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - ElbyCDIO.sys"
 		author = "Florian Roth"
@@ -4361,7 +4361,7 @@ rule PUA_VULN_Driver_ElaborateBytesAG_ElbyCDIO_CDRTools_8Gkq {
 }
 
 
-rule PUA_VULN_Driver_ArthurLiberman_ALSysIOsys_ALSysIO_5Q7s {
+rule PUA_VULN_Driver_Arthurliberman_Alsysiosys_Alsysio_oo4d {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - ALSysIO64.sys"
 		author = "Florian Roth"
@@ -4383,7 +4383,7 @@ rule PUA_VULN_Driver_ArthurLiberman_ALSysIOsys_ALSysIO_5Q7s {
 }
 
 
-rule PUA_VULN_Driver_TGSoftSas_viragtsys_VirITAgentSystem_4Gjb {
+rule PUA_VULN_Driver_Tgsoftsas_Viragtsys_Viritagentsystem_W4Qf {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - viragt64.sys"
 		author = "Florian Roth"
@@ -4405,7 +4405,7 @@ rule PUA_VULN_Driver_TGSoftSas_viragtsys_VirITAgentSystem_4Gjb {
 }
 
 
-rule PUA_VULN_Driver_MSI_NTIOLibsys_NTIOLib_6Kpo {
+rule PUA_VULN_Driver_Msi_Ntiolibsys_Ntiolib_4c56 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - NTIOLib.sys"
 		author = "Florian Roth"
@@ -4427,7 +4427,7 @@ rule PUA_VULN_Driver_MSI_NTIOLibsys_NTIOLib_6Kpo {
 }
 
 
-rule PUA_VULN_Driver_HilscherGesellschaftfrSystemaoutomationmbH_physmemsys_PhysicalMemoryAccessDriver_3Ctn {
+rule PUA_VULN_Driver_Hilschergesellschaftfrsystemaoutomationmbh_Physmemsys_Physicalmemoryaccessdriver_8dGC {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - physmem.sys"
 		author = "Florian Roth"
@@ -4449,7 +4449,7 @@ rule PUA_VULN_Driver_HilscherGesellschaftfrSystemaoutomationmbH_physmemsys_Physi
 }
 
 
-rule PUA_VULN_Driver_AdvancedMicroDevices_AMDRyzenMasterDriversys_AMDRyzenMasterServiceDriver_58qE {
+rule PUA_VULN_Driver_Advancedmicrodevices_Amdryzenmasterdriversys_Amdryzenmasterservicedriver_6F9U {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - AMDRyzenMasterDriver.sys"
 		author = "Florian Roth"
@@ -4471,7 +4471,7 @@ rule PUA_VULN_Driver_AdvancedMicroDevices_AMDRyzenMasterDriversys_AMDRyzenMaster
 }
 
 
-rule PUA_VULN_Driver_ElaborateBytesAG_ElbyCDIO_CDRTools_7BgJ {
+rule PUA_VULN_Driver_Elaboratebytesag_Elbycdio_Cdrtools_7vmu {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - ElbyCDIO.sys"
 		author = "Florian Roth"
@@ -4493,7 +4493,7 @@ rule PUA_VULN_Driver_ElaborateBytesAG_ElbyCDIO_CDRTools_7BgJ {
 }
 
 
-rule PUA_VULN_Driver_TGSoftSas_viragtsys_VirITAgentSystem_7Au8 {
+rule PUA_VULN_Driver_Tgsoftsas_Viragtsys_Viritagentsystem_8t6N {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - viragt64.sys"
 		author = "Florian Roth"
@@ -4515,7 +4515,7 @@ rule PUA_VULN_Driver_TGSoftSas_viragtsys_VirITAgentSystem_7Au8 {
 }
 
 
-rule PUA_VULN_Driver_CYRENInc_AMP_CYRENAMP_3vJB {
+rule PUA_VULN_Driver_Cyreninc_Amp_Cyrenamp_6Qur {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - amp.sys"
 		author = "Florian Roth"
@@ -4537,7 +4537,7 @@ rule PUA_VULN_Driver_CYRENInc_AMP_CYRENAMP_3vJB {
 }
 
 
-rule PUA_VULN_Driver_SuperMicroComputerInc_superbmc_superbmc_3VLF {
+rule PUA_VULN_Driver_Supermicrocomputerinc_Superbmc_Superbmc_7XTJ {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - superbmc.sys"
 		author = "Florian Roth"
@@ -4559,7 +4559,7 @@ rule PUA_VULN_Driver_SuperMicroComputerInc_superbmc_superbmc_3VLF {
 }
 
 
-rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPotsys_AVGInternetSecuritySystem_6EEZ {
+rule PUA_VULN_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecuritysystem_4i7u {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -4581,7 +4581,7 @@ rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPotsys_AVGInternetSecuritySystem_
 }
 
 
-rule PUA_VULN_Driver_IntelCorporation_iQVWSYS_IntelRiQVWSYS_6dH5 {
+rule PUA_VULN_Driver_Intelcorporation_Iqvwsys_Intelriqvwsys_79sP {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - iQVW64.SYS"
 		author = "Florian Roth"
@@ -4604,7 +4604,7 @@ rule PUA_VULN_Driver_IntelCorporation_iQVWSYS_IntelRiQVWSYS_6dH5 {
 }
 
 
-rule PUA_VULN_Driver_AlmicoSoftware_sfdrvxsys_SpeedFan_X_6awR {
+rule PUA_VULN_Driver_Almicosoftware_Sfdrvxsys_Speedfan_X_74ff {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - sfdrvx32.sys"
 		author = "Florian Roth"
@@ -4626,7 +4626,7 @@ rule PUA_VULN_Driver_AlmicoSoftware_sfdrvxsys_SpeedFan_X_6awR {
 }
 
 
-rule PUA_VULN_Driver_ASUSTekComputerInc_ATSZIOsys_ATSZIODriver_7U7K {
+rule PUA_VULN_Driver_Asustekcomputerinc_Atsziosys_Atsziodriver_4Thw {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - ATSZIO.sys"
 		author = "Florian Roth"
@@ -4652,7 +4652,7 @@ rule PUA_VULN_Driver_ASUSTekComputerInc_ATSZIOsys_ATSZIODriver_7U7K {
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_5x6K {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_3fgm {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -4674,7 +4674,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_5x6K {
 }
 
 
-rule PUA_VULN_Driver_WindowsRDDKprovider_gdrvsys_WindowsRDDKdriver_977q {
+rule PUA_VULN_Driver_Windowsrddkprovider_Gdrvsys_Windowsrddkdriver_3Ryq {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - gdrv.sys"
 		author = "Florian Roth"
@@ -4697,7 +4697,7 @@ rule PUA_VULN_Driver_WindowsRDDKprovider_gdrvsys_WindowsRDDKdriver_977q {
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_7xji {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_7xpz {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -4719,7 +4719,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_7xji {
 }
 
 
-rule PUA_VULN_Driver_CorsairMemoryInc_CorsairLLAccess_CorsairLLAccess_5Siy {
+rule PUA_VULN_Driver_Corsairmemoryinc_Corsairllaccess_Corsairllaccess_5CXh {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - CorsairLLAccess64.sys"
 		author = "Florian Roth"
@@ -4741,7 +4741,7 @@ rule PUA_VULN_Driver_CorsairMemoryInc_CorsairLLAccess_CorsairLLAccess_5Siy {
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_7gjA {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_59mp {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -4763,7 +4763,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_7gjA {
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_4KxN {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_4hVV {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -4785,7 +4785,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_4KxN {
 }
 
 
-rule PUA_VULN_Driver_AVASTSoftware_aswArPot_AvastAntivirus_4S89 {
+rule PUA_VULN_Driver_Avastsoftware_Aswarpot_Avastantivirus_3JeK {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -4807,7 +4807,7 @@ rule PUA_VULN_Driver_AVASTSoftware_aswArPot_AvastAntivirus_4S89 {
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_7UuE {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_4pe2 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -4829,7 +4829,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_7UuE {
 }
 
 
-rule PUA_VULN_Driver_BIOSTARGroup_IOdriver_BIOSTARIOdriver_5rvG {
+rule PUA_VULN_Driver_Biostargroup_Iodriver_Biostariodriver_Txav {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - BS_RCIO64.sys"
 		author = "Florian Roth"
@@ -4851,7 +4851,7 @@ rule PUA_VULN_Driver_BIOSTARGroup_IOdriver_BIOSTARIOdriver_5rvG {
 }
 
 
-rule PUA_VULN_Driver_WindowsRWinDDKprovider_amifldrvsys_WindowsRWinDDKdriver_7STs {
+rule PUA_VULN_Driver_Windowsrwinddkprovider_Amifldrvsys_Windowsrwinddkdriver_3YBa {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - amifldrv64.sys"
 		author = "Florian Roth"
@@ -4874,7 +4874,7 @@ rule PUA_VULN_Driver_WindowsRWinDDKprovider_amifldrvsys_WindowsRWinDDKdriver_7ST
 }
 
 
-rule PUA_VULN_Driver_HighresolutionEnterpriseswwwhighrezcouk_inpoutxsys_inpoutxDriverVersion_x_5QPU {
+rule PUA_VULN_Driver_Highresolutionenterpriseswwwhighrezcouk_Inpoutxsys_Inpoutxdriverversion_X_7yG9 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - inpoutx64.sys"
 		author = "Florian Roth"
@@ -4898,7 +4898,7 @@ rule PUA_VULN_Driver_HighresolutionEnterpriseswwwhighrezcouk_inpoutxsys_inpoutxD
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_6ys7 {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_6HpF {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -4920,7 +4920,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_6ys7 {
 }
 
 
-rule PUA_VULN_Driver_AVASTSoftware_aswArPotsys_AvastAntivirus_yeGZ {
+rule PUA_VULN_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_ZJz6 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -4942,7 +4942,7 @@ rule PUA_VULN_Driver_AVASTSoftware_aswArPotsys_AvastAntivirus_yeGZ {
 }
 
 
-rule PUA_VULN_Driver_CorsairMemoryInc_CorsairLLAccess_CorsairLLAccess_6eC4 {
+rule PUA_VULN_Driver_Corsairmemoryinc_Corsairllaccess_Corsairllaccess_4ye2 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - CorsairLLAccess64.sys"
 		author = "Florian Roth"
@@ -4965,7 +4965,7 @@ rule PUA_VULN_Driver_CorsairMemoryInc_CorsairLLAccess_CorsairLLAccess_6eC4 {
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_8yz6 {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_7fan {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -4987,7 +4987,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_8yz6 {
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroAEGIS_puHr {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroaegis_7AVL {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -5009,7 +5009,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroAEGIS_puHr {
 }
 
 
-rule PUA_VULN_Driver_IObitInformationTechnology_IObitUnlockersys_Unlocker_97aF {
+rule PUA_VULN_Driver_Iobitinformationtechnology_Iobitunlockersys_Unlocker_58L9 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - IObitUnlocker.sys"
 		author = "Florian Roth"
@@ -5031,7 +5031,7 @@ rule PUA_VULN_Driver_IObitInformationTechnology_IObitUnlockersys_Unlocker_97aF {
 }
 
 
-rule PUA_VULN_Driver_RazerInc_Rzpnk_Rzpnk_55mc {
+rule PUA_VULN_Driver_Razerinc_Rzpnk_Rzpnk_56Yv {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - rzpnk.sys"
 		author = "Florian Roth"
@@ -5053,7 +5053,7 @@ rule PUA_VULN_Driver_RazerInc_Rzpnk_Rzpnk_55mc {
 }
 
 
-rule PUA_VULN_Driver_WiseCleanercom_WiseUnlosys_WiseUnlo_4wNq {
+rule PUA_VULN_Driver_Wisecleanercom_Wiseunlosys_Wiseunlo_6j5G {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - WiseUnlo.sys"
 		author = "Florian Roth"
@@ -5075,7 +5075,7 @@ rule PUA_VULN_Driver_WiseCleanercom_WiseUnlosys_WiseUnlo_4wNq {
 }
 
 
-rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_procexpsys_ProcessExplorer_VvYp {
+rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_Procexpsys_Processexplorer_Fz8m {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - procexp.Sys"
 		author = "Florian Roth"
@@ -5097,7 +5097,7 @@ rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_procexpsys_ProcessExplorer_V
 }
 
 
-rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPotsys_AVGInternetSecuritySystem_87wv {
+rule PUA_VULN_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecuritysystem_8ocn {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -5119,7 +5119,7 @@ rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPotsys_AVGInternetSecuritySystem_
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_AEGIS_5YZJ {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Aegis_6fsn {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -5141,7 +5141,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_AEGIS_5YZJ {
 }
 
 
-rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPot_AVGInternetSecuritySystem_6gpe {
+rule PUA_VULN_Driver_Avgtechnologiesczsro_Aswarpot_Avginternetsecuritysystem_7kp9 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -5163,7 +5163,7 @@ rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPot_AVGInternetSecuritySystem_6gp
 }
 
 
-rule PUA_VULN_Driver_FUJITSULIMITED_ADVDRVsys_MicrosoftRWindowsROperatingSystem_5KZZ {
+rule PUA_VULN_Driver_Fujitsulimited_Advdrvsys_Microsoftrwindowsroperatingsystem_73ZP {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - ADV64DRV.sys"
 		author = "Florian Roth"
@@ -5184,7 +5184,7 @@ rule PUA_VULN_Driver_FUJITSULIMITED_ADVDRVsys_MicrosoftRWindowsROperatingSystem_
 }
 
 
-rule PUA_VULN_Driver_AdvancedMicroDevices_AMDRyzenMasterDriversys_AMDRyzenMasterServiceDriver_7FPx {
+rule PUA_VULN_Driver_Advancedmicrodevices_Amdryzenmasterdriversys_Amdryzenmasterservicedriver_KBM6 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - AMDRyzenMasterDriver.sys"
 		author = "Florian Roth"
@@ -5206,7 +5206,7 @@ rule PUA_VULN_Driver_AdvancedMicroDevices_AMDRyzenMasterDriversys_AMDRyzenMaster
 }
 
 
-rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_procexpsys__4Qzp {
+rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_Procexpsys__ZReN {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - procexp.Sys"
 		author = "Florian Roth"
@@ -5228,7 +5228,7 @@ rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_procexpsys__4Qzp {
 }
 
 
-rule PUA_VULN_Driver_SiSoftware_SANDRA_SiSoftwareSandra_7gvc {
+rule PUA_VULN_Driver_Sisoftware_Sandra_Sisoftwaresandra_5ZoV {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - SANDRA"
 		author = "Florian Roth"
@@ -5250,7 +5250,7 @@ rule PUA_VULN_Driver_SiSoftware_SANDRA_SiSoftwareSandra_7gvc {
 }
 
 
-rule PUA_VULN_Driver_AdvancedMicroDevicesInc_AMDPowerProfilersys_AMDuProf_7oVE {
+rule PUA_VULN_Driver_Advancedmicrodevicesinc_Amdpowerprofilersys_Amduprof_8iyt {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - AMDPowerProfiler.sys"
 		author = "Florian Roth"
@@ -5272,7 +5272,7 @@ rule PUA_VULN_Driver_AdvancedMicroDevicesInc_AMDPowerProfilersys_AMDuProf_7oVE {
 }
 
 
-rule PUA_VULN_Driver_Realtek_rtkiosys_RealtekIODriver_5v7Z {
+rule PUA_VULN_Driver_Realtek_Rtkiosys_Realtekiodriver_5F48 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - rtkio64.sys"
 		author = "Florian Roth"
@@ -5294,7 +5294,7 @@ rule PUA_VULN_Driver_Realtek_rtkiosys_RealtekIODriver_5v7Z {
 }
 
 
-rule PUA_VULN_Driver_MSI_NTIOLibsys_NTIOLib_6zYe {
+rule PUA_VULN_Driver_Msi_Ntiolibsys_Ntiolib_SCv7 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - NTIOLib.sys"
 		author = "Florian Roth"
@@ -5316,7 +5316,7 @@ rule PUA_VULN_Driver_MSI_NTIOLibsys_NTIOLib_6zYe {
 }
 
 
-rule PUA_VULN_Driver_ZemanaLtd_ZAM_3sqZ {
+rule PUA_VULN_Driver_Zemanaltd_Zam_48sd {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - zam64.sys"
 		author = "Florian Roth"
@@ -5335,7 +5335,7 @@ rule PUA_VULN_Driver_ZemanaLtd_ZAM_3sqZ {
 }
 
 
-rule PUA_VULN_Driver_IntelCorporation_iQVWSYS_IntelRiQVWSYS_8xJZ {
+rule PUA_VULN_Driver_Intelcorporation_Iqvwsys_Intelriqvwsys_8BCA {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - iQVW64.SYS"
 		author = "Florian Roth"
@@ -5357,7 +5357,7 @@ rule PUA_VULN_Driver_IntelCorporation_iQVWSYS_IntelRiQVWSYS_8xJZ {
 }
 
 
-rule PUA_VULN_Driver_ZemanaLtd_ZAM_6N9Y {
+rule PUA_VULN_Driver_Zemanaltd_Zam_7nDq {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - zam64.sys"
 		author = "Florian Roth"
@@ -5376,7 +5376,7 @@ rule PUA_VULN_Driver_ZemanaLtd_ZAM_6N9Y {
 }
 
 
-rule PUA_VULN_Driver_LogitechInc_Lvavsys_LogitechWebcamSoftware_6z8f {
+rule PUA_VULN_Driver_Logitechinc_Lvavsys_Logitechwebcamsoftware_3Mou {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - Lv561av.sys"
 		author = "Florian Roth"
@@ -5398,7 +5398,7 @@ rule PUA_VULN_Driver_LogitechInc_Lvavsys_LogitechWebcamSoftware_6z8f {
 }
 
 
-rule PUA_VULN_Driver_HPInc_HpPortIoxsys_HpPortIo_4Woc {
+rule PUA_VULN_Driver_Hpinc_Hpportioxsys_Hpportio_86xj {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - HpPortIox64.sys"
 		author = "Florian Roth"
@@ -5420,7 +5420,7 @@ rule PUA_VULN_Driver_HPInc_HpPortIoxsys_HpPortIo_4Woc {
 }
 
 
-rule PUA_VULN_Driver_Realtek_rtkiowxsys_RealtekIODriver_6VNr {
+rule PUA_VULN_Driver_Realtek_Rtkiowxsys_Realtekiodriver_3iuW {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - rtkio64.sys"
 		author = "Florian Roth"
@@ -5442,7 +5442,7 @@ rule PUA_VULN_Driver_Realtek_rtkiowxsys_RealtekIODriver_6VNr {
 }
 
 
-rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPot_AVGInternetSecuritySystem_5tYw {
+rule PUA_VULN_Driver_Avgtechnologiesczsro_Aswarpot_Avginternetsecuritysystem_6dY8 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -5464,7 +5464,7 @@ rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPot_AVGInternetSecuritySystem_5tY
 }
 
 
-rule PUA_VULN_Driver_MSI_NTIOLibsys_NTIOLib_BBTL {
+rule PUA_VULN_Driver_Msi_Ntiolibsys_Ntiolib_Nhfw {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - NTIOLib.sys"
 		author = "Florian Roth"
@@ -5486,7 +5486,7 @@ rule PUA_VULN_Driver_MSI_NTIOLibsys_NTIOLib_BBTL {
 }
 
 
-rule PUA_VULN_Driver_IntelCorporation_iQVWSYS_IntelRiQVWSYS_84FD {
+rule PUA_VULN_Driver_Intelcorporation_Iqvwsys_Intelriqvwsys_3jeA {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - NalDrv.sys"
 		author = "Florian Roth"
@@ -5509,7 +5509,7 @@ rule PUA_VULN_Driver_IntelCorporation_iQVWSYS_IntelRiQVWSYS_84FD {
 }
 
 
-rule PUA_VULN_Driver_Realtek_rtkiowxsys_RealtekIODriver_8Pdz {
+rule PUA_VULN_Driver_Realtek_Rtkiowxsys_Realtekiodriver_5Kig {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - rtkiow10x64.sys"
 		author = "Florian Roth"
@@ -5531,7 +5531,7 @@ rule PUA_VULN_Driver_Realtek_rtkiowxsys_RealtekIODriver_8Pdz {
 }
 
 
-rule PUA_VULN_Driver_MICSYSTechnologyCoLTd_MsIosys_MsIoDriverVersion_x_7VKZ {
+rule PUA_VULN_Driver_Micsystechnologycoltd_Msiosys_Msiodriverversion_X_5Nsm {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - MsIo64.sys"
 		author = "Florian Roth"
@@ -5553,7 +5553,7 @@ rule PUA_VULN_Driver_MICSYSTechnologyCoLTd_MsIosys_MsIoDriverVersion_x_7VKZ {
 }
 
 
-rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPotsys_AVGInternetSecuritySystem_6Pog {
+rule PUA_VULN_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecuritysystem_3viG {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -5575,7 +5575,7 @@ rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPotsys_AVGInternetSecuritySystem_
 }
 
 
-rule PUA_VULN_Driver_GIGABYTETECHNOLOGYCOLTD_gdrvsys_GIGABYTESoftwaredriver_5QMK {
+rule PUA_VULN_Driver_Gigabytetechnologycoltd_Gdrvsys_Gigabytesoftwaredriver_65dn {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - gdrv.sys"
 		author = "Florian Roth"
@@ -5597,7 +5597,7 @@ rule PUA_VULN_Driver_GIGABYTETECHNOLOGYCOLTD_gdrvsys_GIGABYTESoftwaredriver_5QMK
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_64gb {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_7LZr {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -5619,7 +5619,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_64gb {
 }
 
 
-rule PUA_VULN_Driver_WindowsRCodenameLonghornDDKprovider_CPUDriver_WindowsRCodenameLonghornDDKdriver_3YGs {
+rule PUA_VULN_Driver_Windowsrcodenamelonghornddkprovider_Cpudriver_Windowsrcodenamelonghornddkdriver_99kC {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - WCPU.sys"
 		author = "Florian Roth"
@@ -5641,7 +5641,7 @@ rule PUA_VULN_Driver_WindowsRCodenameLonghornDDKprovider_CPUDriver_WindowsRCoden
 }
 
 
-rule PUA_VULN_Driver_MSI_NTIOLibsys_NTIOLib_3iMZ {
+rule PUA_VULN_Driver_Msi_Ntiolibsys_Ntiolib_erHg {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - NTIOLib.sys"
 		author = "Florian Roth"
@@ -5663,7 +5663,7 @@ rule PUA_VULN_Driver_MSI_NTIOLibsys_NTIOLib_3iMZ {
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_7vpw {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_8j6r {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -5685,7 +5685,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_7vpw {
 }
 
 
-rule PUA_VULN_Driver_MarvinTestSolutionsInc_Hwsys_HW_5K2e {
+rule PUA_VULN_Driver_Marvintestsolutionsinc_Hwsys_Hw_72Q6 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - HW.sys"
 		author = "Florian Roth"
@@ -5708,7 +5708,7 @@ rule PUA_VULN_Driver_MarvinTestSolutionsInc_Hwsys_HW_5K2e {
 }
 
 
-rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPotsys_AVGInternetSecuritySystem_5L8a {
+rule PUA_VULN_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecuritysystem_7EdS {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -5730,7 +5730,7 @@ rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPotsys_AVGInternetSecuritySystem_
 }
 
 
-rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPotsys_AVGInternetSecuritySystem_8nQi {
+rule PUA_VULN_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecuritysystem_88Ke {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -5752,7 +5752,7 @@ rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPotsys_AVGInternetSecuritySystem_
 }
 
 
-rule PUA_VULN_Driver_NVIDIACorporation_nvflash_NVIDIAFlashDriver_FWHQ {
+rule PUA_VULN_Driver_Nvidiacorporation_Nvflash_Nvidiaflashdriver_brMM {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - nvflash.sys"
 		author = "Florian Roth"
@@ -5774,7 +5774,7 @@ rule PUA_VULN_Driver_NVIDIACorporation_nvflash_NVIDIAFlashDriver_FWHQ {
 }
 
 
-rule PUA_VULN_Driver_ElaborateBytesAG_ElbyCDIO_CDRTools_4QtL {
+rule PUA_VULN_Driver_Elaboratebytesag_Elbycdio_Cdrtools_3mvd {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - ElbyCDIO.sys"
 		author = "Florian Roth"
@@ -5796,7 +5796,7 @@ rule PUA_VULN_Driver_ElaborateBytesAG_ElbyCDIO_CDRTools_4QtL {
 }
 
 
-rule PUA_VULN_Driver_VektorTSecurityService_VBoxDrv_AntidetectPublicbyVektorTrev_8eM3 {
+rule PUA_VULN_Driver_Vektortsecurityservice_Vboxdrv_Antidetectpublicbyvektortrev_5ufn {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - VBoxDrv.sys"
 		author = "Florian Roth"
@@ -5818,7 +5818,7 @@ rule PUA_VULN_Driver_VektorTSecurityService_VBoxDrv_AntidetectPublicbyVektorTrev
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_52Mc {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_raTg {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -5840,7 +5840,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_52Mc {
 }
 
 
-rule PUA_VULN_Driver_ASUSTekComputerInc_ATSZIOsys_ATSZIODriver_be22 {
+rule PUA_VULN_Driver_Asustekcomputerinc_Atsziosys_Atsziodriver_6NJ6 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - ATSZIO.sys"
 		author = "Florian Roth"
@@ -5863,7 +5863,7 @@ rule PUA_VULN_Driver_ASUSTekComputerInc_ATSZIOsys_ATSZIODriver_be22 {
 }
 
 
-rule PUA_VULN_Driver_SiSoftware_SANDRA_SiSoftwareSandra_8KZ6 {
+rule PUA_VULN_Driver_Sisoftware_Sandra_Sisoftwaresandra_8wGx {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - sandra.sys"
 		author = "Florian Roth"
@@ -5885,7 +5885,7 @@ rule PUA_VULN_Driver_SiSoftware_SANDRA_SiSoftwareSandra_8KZ6 {
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_AEGIS_7dv5 {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Aegis_7bRL {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -5907,7 +5907,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_AEGIS_7dv5 {
 }
 
 
-rule PUA_VULN_Driver_SymantecCorporation_VProEventMonitorSys_SymantecEventMonitorsDriverDevelopmentEdition_JYhA {
+rule PUA_VULN_Driver_Symanteccorporation_Vproeventmonitorsys_Symanteceventmonitorsdriverdevelopmentedition_7b7s {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - VProEventMonitor.sys"
 		author = "Florian Roth"
@@ -5929,7 +5929,7 @@ rule PUA_VULN_Driver_SymantecCorporation_VProEventMonitorSys_SymantecEventMonito
 }
 
 
-rule PUA_VULN_Driver_wj_KProcessHacker_F5R5 {
+rule PUA_VULN_Driver_Wj_Kprocesshacker_6DZf {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - krpocesshacker.sys"
 		author = "Florian Roth"
@@ -5950,7 +5950,7 @@ rule PUA_VULN_Driver_wj_KProcessHacker_F5R5 {
 }
 
 
-rule PUA_VULN_Driver_AVASTSoftware_aswArPot_AvastAntivirus_7XYu {
+rule PUA_VULN_Driver_Avastsoftware_Aswarpot_Avastantivirus_99U8 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -5972,7 +5972,7 @@ rule PUA_VULN_Driver_AVASTSoftware_aswArPot_AvastAntivirus_7XYu {
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_7eHJ {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_8ZRk {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -5994,7 +5994,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_7eHJ {
 }
 
 
-rule PUA_VULN_Driver_CreativeTechnologyInnovationCoLTd_CtiIosys_CtiIoDriverVersion_x_3SJj {
+rule PUA_VULN_Driver_Creativetechnologyinnovationcoltd_Ctiiosys_Ctiiodriverversion_X_5zh7 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - CtiIo64.sys"
 		author = "Florian Roth"
@@ -6016,7 +6016,7 @@ rule PUA_VULN_Driver_CreativeTechnologyInnovationCoLTd_CtiIosys_CtiIoDriverVersi
 }
 
 
-rule PUA_VULN_Driver_SSmartSoftwareSolutionsGmbH_SysDrvS_SysDrvS_7EnT {
+rule PUA_VULN_Driver_Ssmartsoftwaresolutionsgmbh_Sysdrvs_Sysdrvs_56kc {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - SysDrv3S.sys"
 		author = "Florian Roth"
@@ -6038,7 +6038,7 @@ rule PUA_VULN_Driver_SSmartSoftwareSolutionsGmbH_SysDrvS_SysDrvS_7EnT {
 }
 
 
-rule PUA_VULN_Driver_AVASTSoftware_aswArPotsys_AvastAntivirus_3kvX {
+rule PUA_VULN_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_5uKY {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -6060,7 +6060,7 @@ rule PUA_VULN_Driver_AVASTSoftware_aswArPotsys_AvastAntivirus_3kvX {
 }
 
 
-rule PUA_VULN_Driver_WindowsRServerDDKprovider_cpuzsys_WindowsRServerDDKdriver_4rxS {
+rule PUA_VULN_Driver_Windowsrserverddkprovider_Cpuzsys_Windowsrserverddkdriver_6wKW {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - cpuz_x64.sys"
 		author = "Florian Roth"
@@ -6082,7 +6082,7 @@ rule PUA_VULN_Driver_WindowsRServerDDKprovider_cpuzsys_WindowsRServerDDKdriver_4
 }
 
 
-rule PUA_VULN_Driver_IntelCorporation_iQVWSYS_IntelRiQVWSYS_3zn7 {
+rule PUA_VULN_Driver_Intelcorporation_Iqvwsys_Intelriqvwsys_tvp9 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - iQVW64.SYS"
 		author = "Florian Roth"
@@ -6104,7 +6104,7 @@ rule PUA_VULN_Driver_IntelCorporation_iQVWSYS_IntelRiQVWSYS_3zn7 {
 }
 
 
-rule PUA_VULN_Driver_TOSHIBACorporation_NCHGBIOSxSYS_TOSHIBABIOSPackage_7x4r {
+rule PUA_VULN_Driver_Toshibacorporation_Nchgbiosxsys_Toshibabiospackage_6asa {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - NCHGBIOS2x64.SYS"
 		author = "Florian Roth"
@@ -6126,7 +6126,7 @@ rule PUA_VULN_Driver_TOSHIBACorporation_NCHGBIOSxSYS_TOSHIBABIOSPackage_7x4r {
 }
 
 
-rule PUA_VULN_Driver_ZemanaLtd_ZAM_897c {
+rule PUA_VULN_Driver_Zemanaltd_Zam_78we {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - zam64.sys"
 		author = "Florian Roth"
@@ -6146,7 +6146,7 @@ rule PUA_VULN_Driver_ZemanaLtd_ZAM_897c {
 }
 
 
-rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_procexpsys_ProcessExplorer_aXtY {
+rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_Procexpsys_Processexplorer_8iEo {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - procexp.Sys"
 		author = "Florian Roth"
@@ -6168,7 +6168,7 @@ rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_procexpsys_ProcessExplorer_a
 }
 
 
-rule PUA_VULN_Driver_ZemanaLtd_ZAM_4k39 {
+rule PUA_VULN_Driver_Zemanaltd_Zam_8qor {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - zam64.sys"
 		author = "Florian Roth"
@@ -6187,7 +6187,7 @@ rule PUA_VULN_Driver_ZemanaLtd_ZAM_4k39 {
 }
 
 
-rule PUA_VULN_Driver_SuperMicroComputerInc_phymem_phymem_94nh {
+rule PUA_VULN_Driver_Supermicrocomputerinc_Phymem_Phymem_53Tx {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - phymem64.sys"
 		author = "Florian Roth"
@@ -6209,7 +6209,7 @@ rule PUA_VULN_Driver_SuperMicroComputerInc_phymem_phymem_94nh {
 }
 
 
-rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_procexpsys_ProcessExplorer_gmaQ {
+rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_Procexpsys_Processexplorer_7Te8 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - procexp.Sys"
 		author = "Florian Roth"
@@ -6232,7 +6232,7 @@ rule PUA_VULN_Driver_Sysinternalswwwsysinternalscom_procexpsys_ProcessExplorer_g
 }
 
 
-rule PUA_VULN_Driver_VektorTSecurityService_VBoxDrv_AntidetectPublic_5PpQ {
+rule PUA_VULN_Driver_Vektortsecurityservice_Vboxdrv_Antidetectpublic_8krX {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - VBoxDrv.sys"
 		author = "Florian Roth"
@@ -6254,7 +6254,7 @@ rule PUA_VULN_Driver_VektorTSecurityService_VBoxDrv_AntidetectPublic_5PpQ {
 }
 
 
-rule PUA_VULN_Driver_SunMicrosystemsInc_VBoxDrvsys_SunVirtualBox_r_4QcE {
+rule PUA_VULN_Driver_Sunmicrosystemsinc_Vboxdrvsys_Sunvirtualbox_R_4zWo {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - VBoxDrv.sys"
 		author = "Florian Roth"
@@ -6276,7 +6276,7 @@ rule PUA_VULN_Driver_SunMicrosystemsInc_VBoxDrvsys_SunVirtualBox_r_4QcE {
 }
 
 
-rule PUA_VULN_Driver_PinduoduoLtdCorp_VBoxDrv_PinduoduoSecureVDI_8jdU {
+rule PUA_VULN_Driver_Pinduoduoltdcorp_Vboxdrv_Pinduoduosecurevdi_5Vcw {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - VBoxDrv.sys"
 		author = "Florian Roth"
@@ -6298,7 +6298,7 @@ rule PUA_VULN_Driver_PinduoduoLtdCorp_VBoxDrv_PinduoduoSecureVDI_8jdU {
 }
 
 
-rule PUA_VULN_Driver_TGSoftSas_viragtsys_VirITAgentSystem_3aAG {
+rule PUA_VULN_Driver_Tgsoftsas_Viragtsys_Viritagentsystem_6aN4 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - viragt64.sys"
 		author = "Florian Roth"
@@ -6320,7 +6320,7 @@ rule PUA_VULN_Driver_TGSoftSas_viragtsys_VirITAgentSystem_3aAG {
 }
 
 
-rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPotsys_AVGInternetSecuritySystem_5bmT {
+rule PUA_VULN_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecuritysystem_7JUc {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -6342,7 +6342,7 @@ rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPotsys_AVGInternetSecuritySystem_
 }
 
 
-rule PUA_VULN_Driver_AVASTSoftware_aswArPotsys_AvastAntivirus_5UFq {
+rule PUA_VULN_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_64b2 {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -6364,7 +6364,7 @@ rule PUA_VULN_Driver_AVASTSoftware_aswArPotsys_AvastAntivirus_5UFq {
 }
 
 
-rule PUA_VULN_Driver_wj_KProcessHacker_6EZQ {
+rule PUA_VULN_Driver_Wj_Kprocesshacker_65Aq {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - kprocesshacker.sys"
 		author = "Florian Roth"
@@ -6385,7 +6385,7 @@ rule PUA_VULN_Driver_wj_KProcessHacker_6EZQ {
 }
 
 
-rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_ND2b {
+rule PUA_VULN_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_98vi {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - TmComm.sys"
 		author = "Florian Roth"
@@ -6407,7 +6407,7 @@ rule PUA_VULN_Driver_TrendMicroInc_TmCommsys_TrendMicroEyes_ND2b {
 }
 
 
-rule PUA_VULN_Driver_BIOSTARGroup_IOdriver_BIOSTARIOdriver_xRKW {
+rule PUA_VULN_Driver_Biostargroup_Iodriver_Biostariodriver_3sTp {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - BS_HWMIO64_W10.sys"
 		author = "Florian Roth"
@@ -6429,7 +6429,7 @@ rule PUA_VULN_Driver_BIOSTARGroup_IOdriver_BIOSTARIOdriver_xRKW {
 }
 
 
-rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPotsys_AVGInternetSecuritySystem_5biQ {
+rule PUA_VULN_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecuritysystem_99JZ {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"
@@ -6451,7 +6451,7 @@ rule PUA_VULN_Driver_AVGTechnologiesCZsro_aswArPotsys_AVGInternetSecuritySystem_
 }
 
 
-rule PUA_VULN_Driver_IntelCorporation_iQVWSYS_IntelRiQVWSYS_95Sk {
+rule PUA_VULN_Driver_Intelcorporation_Iqvwsys_Intelriqvwsys_boDL {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - iQVW64.SYS"
 		author = "Florian Roth"
@@ -6473,7 +6473,7 @@ rule PUA_VULN_Driver_IntelCorporation_iQVWSYS_IntelRiQVWSYS_95Sk {
 }
 
 
-rule PUA_VULN_Driver_ElaborateBytesAG_ElbyCDIO_CDRTools_7QEU {
+rule PUA_VULN_Driver_Elaboratebytesag_Elbycdio_Cdrtools_5dXD {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - ElbyCDIO.sys"
 		author = "Florian Roth"
@@ -6495,7 +6495,7 @@ rule PUA_VULN_Driver_ElaborateBytesAG_ElbyCDIO_CDRTools_7QEU {
 }
 
 
-rule PUA_VULN_Driver_ElaborateBytesAG_ElbyCDIO_CDRTools_3Dsw {
+rule PUA_VULN_Driver_Elaboratebytesag_Elbycdio_Cdrtools_4uiZ {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - ElbyCDIO.sys"
 		author = "Florian Roth"
@@ -6517,7 +6517,7 @@ rule PUA_VULN_Driver_ElaborateBytesAG_ElbyCDIO_CDRTools_3Dsw {
 }
 
 
-rule PUA_VULN_Driver_AVASTSoftware_aswArPotsys_AvastAntivirus_3eL8 {
+rule PUA_VULN_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_7a3V {
 	meta:
 		description = "Detects vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
 		author = "Florian Roth"

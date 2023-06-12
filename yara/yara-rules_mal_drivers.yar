@@ -1,5 +1,5 @@
 
-rule MAL_Driver_MicrosoftCorporation_windbgsys_MicrosoftWindowsOperatingSystem_7k2h {
+rule MAL_Driver_Microsoftcorporation_Windbgsys_Microsoftwindowsoperatingsystem_7jDF {
 	meta:
 		description = "Detects malicious driver mentioned in LOLDrivers project using VersionInfo values from the PE header - windbg.sys"
 		author = "Florian Roth"
@@ -37,7 +37,7 @@ rule MAL_Driver_MicrosoftCorporation_windbgsys_MicrosoftWindowsOperatingSystem_7
 }
 
 
-rule MAL_Driver_SenseCORP__4JdJ {
+rule MAL_Driver_Sensecorp__4QvM {
 	meta:
 		description = "Detects malicious driver mentioned in LOLDrivers project using VersionInfo values from the PE header - Sense5Ext.sys"
 		author = "Florian Roth"
@@ -56,7 +56,7 @@ rule MAL_Driver_SenseCORP__4JdJ {
 }
 
 
-rule MAL_Driver_LegalCorp_PCIExpressVideoCapture_6S2h {
+rule MAL_Driver_Legalcorp_Pciexpressvideocapture_7PPd {
 	meta:
 		description = "Detects malicious driver mentioned in LOLDrivers project using VersionInfo values from the PE header - PcieCubed.sys"
 		author = "Florian Roth"
@@ -77,7 +77,7 @@ rule MAL_Driver_LegalCorp_PCIExpressVideoCapture_6S2h {
 }
 
 
-rule MAL_Driver_MicrosoftCorporation_ntbiosys_MicrosoftRWindowsRNTOperatingSystem_AZPZ {
+rule MAL_Driver_Microsoftcorporation_Ntbiosys_Microsoftrwindowsrntoperatingsystem_7doQ {
 	meta:
 		description = "Detects malicious driver mentioned in LOLDrivers project using VersionInfo values from the PE header - ntbios_2.sys"
 		author = "Florian Roth"
@@ -100,7 +100,7 @@ rule MAL_Driver_MicrosoftCorporation_ntbiosys_MicrosoftRWindowsRNTOperatingSyste
 }
 
 
-rule MAL_Driver_gentilkiwiBenjaminDELPY_mimidrv_mimidrvmimikatz_5jG4 {
+rule MAL_Driver_Gentilkiwibenjamindelpy_Mimidrv_Mimidrvmimikatz_5LGG {
 	meta:
 		description = "Detects malicious driver mentioned in LOLDrivers project using VersionInfo values from the PE header - mimidrv.sys"
 		author = "Florian Roth"
@@ -122,7 +122,7 @@ rule MAL_Driver_gentilkiwiBenjaminDELPY_mimidrv_mimidrvmimikatz_5jG4 {
 }
 
 
-rule MAL_Driver_MicrosoftCorporation_wantdsys_MicrosoftWindowsOperatingSystem_4Rpd {
+rule MAL_Driver_Microsoftcorporation_Wantdsys_Microsoftwindowsoperatingsystem_4upk {
 	meta:
 		description = "Detects malicious driver mentioned in LOLDrivers project using VersionInfo values from the PE header - wantd_6.sys"
 		author = "Florian Roth"
@@ -147,7 +147,7 @@ rule MAL_Driver_MicrosoftCorporation_wantdsys_MicrosoftWindowsOperatingSystem_4R
 }
 
 
-rule MAL_Driver_GMER_gmersys_GMER_5bfQ {
+rule MAL_Driver_Gmer_Gmersys_Gmer_55LQ {
 	meta:
 		description = "Detects malicious driver mentioned in LOLDrivers project using VersionInfo values from the PE header - gmer64.sys"
 		author = "Florian Roth"
@@ -169,7 +169,7 @@ rule MAL_Driver_GMER_gmersys_GMER_5bfQ {
 }
 
 
-rule MAL_Driver_MicrosoftCorporation_wantdsys_MicrosoftWindowsOperatingSystem_5kh2 {
+rule MAL_Driver_Microsoftcorporation_Wantdsys_Microsoftwindowsoperatingsystem_7GX5 {
 	meta:
 		description = "Detects malicious driver mentioned in LOLDrivers project using VersionInfo values from the PE header - wantd_2.sys"
 		author = "Florian Roth"
@@ -191,7 +191,7 @@ rule MAL_Driver_MicrosoftCorporation_wantdsys_MicrosoftWindowsOperatingSystem_5k
 }
 
 
-rule MAL_Driver_MicrosoftCorporation_wantdsys_MicrosoftWindowsOperatingSystem_56o8 {
+rule MAL_Driver_Microsoftcorporation_Wantdsys_Microsoftwindowsoperatingsystem_3ze4 {
 	meta:
 		description = "Detects malicious driver mentioned in LOLDrivers project using VersionInfo values from the PE header - wantd_3.sys"
 		author = "Florian Roth"
@@ -213,7 +213,7 @@ rule MAL_Driver_MicrosoftCorporation_wantdsys_MicrosoftWindowsOperatingSystem_56
 }
 
 
-rule MAL_Driver_SenseCORP__4LWK {
+rule MAL_Driver_Sensecorp__3GyE {
 	meta:
 		description = "Detects malicious driver mentioned in LOLDrivers project using VersionInfo values from the PE header - Sense5Ext.sys"
 		author = "Florian Roth"
@@ -232,7 +232,7 @@ rule MAL_Driver_SenseCORP__4LWK {
 }
 
 
-rule MAL_Driver_MicrosoftCorporation_ndislansys_MicrosoftWindowsOperatingSystem_Yh3K {
+rule MAL_Driver_Microsoftcorporation_Ndislansys_Microsoftwindowsoperatingsystem_5oYt {
 	meta:
 		description = "Detects malicious driver mentioned in LOLDrivers project using VersionInfo values from the PE header - ndislan.sys"
 		author = "Florian Roth"
