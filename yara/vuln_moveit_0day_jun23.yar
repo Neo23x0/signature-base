@@ -82,8 +82,8 @@ rule LOG_EXPL_MOVEit_Exploitation_Indicator_Jun23_3 {
       date = "2023-06-13"
       score = 70
    strings:
-      $x1 = "TargetInvocationException" ascii
-      $x2 = "MOVEit.DMZ.Application.Folders.ResumableUploadFilePartHandler.DeserializeFileUploadStream" ascii
+      $s1 = "TargetInvocationException" ascii
+      $s2 = "MOVEit.DMZ.Application.Folders.ResumableUploadFilePartHandler.DeserializeFileUploadStream" ascii
    condition:
-      all of ($x*)
+      all of ($s*)
 }
