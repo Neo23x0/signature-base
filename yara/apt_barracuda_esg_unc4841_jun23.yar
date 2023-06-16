@@ -123,3 +123,95 @@ rule SUSP_PY_Shell_Spawn_Jun23_1 : SCRIPT {
    condition:
       1 of them
 }
+
+/* Mandiant Rules */
+/* Source: https://www.mandiant.com/resources/blog/barracuda-esg-exploited-globally */
+
+rule APT_MAL_Hunting_LUA_SEASIDE_1 {
+    meta:
+        description = "Hunting rule looking for strings observed in SEASIDE samples."
+        author = "Mandiant"
+        date = "2023-06-15"
+        score = 70
+        reference = "https://www.mandiant.com/resources/blog/barracuda-esg-exploited-globally"
+        hash = "cd2813f0260d63ad5adf0446253c2172"
+    strings:
+        $s1 = "function on_helo()"
+        $s2 = "local bindex,eindex = string.find(helo,'.onion')" 
+        $s3 = "helosend = 'pd'..' '..helosend" 
+        $s4 = "os.execute(helosend)" 
+    condition:
+        filesize < 1MB and all of ($s*)
+}
+
+rule APT_MAL_LNX_Hunting_Linux_WHIRLPOOL_1 {
+    meta:
+        description = "Hunting rule looking for strings observed in WHIRLPOOL samples."
+        author = "Mandiant"
+        date = "2023-06-15"
+        score = 70
+        reference = "https://www.mandiant.com/resources/blog/barracuda-esg-exploited-globally"
+        hash = "177add288b289d43236d2dba33e65956"
+    strings:
+        $s1 = "error -1 exit" fullword
+        $s2 = "create socket error: %s(error: %d)\n" fullword
+        $s3 = "connect error: %s(error: %d)\n" fullword
+        $s4 = {C7 00 20 32 3E 26 66 C7 40 04 31 00}
+        $c1 = "plain_connect" fullword
+        $c2 = "ssl_connect" fullword
+        $c3 = "SSLShell.c" fullword
+    condition:
+        uint32(0) == 0x464c457f and filesize < 15MB and (all of ($s*) or all of ($c*))
+}
+
+rule APT_MAL_LUA_Hunting_SKIPJACK_1 {
+    meta:
+        author = "Mandiant"
+        date = "2023-06-15"
+        reference = "https://www.mandiant.com/resources/blog/barracuda-esg-exploited-globally"
+        description = "Hunting rule looking for strings observed in SKIPJACK installation script."
+        hash = "e4e86c273a2b67a605f5d4686783e0cc"
+        score = 70
+    strings:
+        $str1 = "hdr:name() == 'Content-ID'" base64
+        $str2 = "hdr:body() ~= nil" base64
+        $str3 = "string.match(hdr:body(),\"^[%w%+/=\\r\\n]+$\")" base64
+        $str4 = "openssl aes-256-cbc" base64
+        $str5 = "mod_content.lua" 
+        $str6 = "#!/bin/sh" 
+    condition:
+        all of them
+}
+
+rule APT_MAL_LUA_Hunting_Lua_SKIPJACK_2 {
+    meta:
+        author = "Mandiant"
+        date = "2023-06-15"
+        reference = "https://www.mandiant.com/resources/blog/barracuda-esg-exploited-globally"
+        description = "Hunting rule looking for strings observed in SKIPJACK samples."
+        hash = "87847445f9524671022d70f2a812728f"
+        score = 70
+    strings:
+        $str1 = "hdr:name() == 'Content-ID'" 
+        $str2 = "hdr:body() ~= nil" 
+        $str3 = "string.match(hdr:body(),\"^[%w%+/=\\r\\n]+$\")" 
+        $str4 = "openssl aes-256-cbc" 
+        $str5 = "| base64 -d| sh 2>" 
+    condition:
+        all of them
+}
+rule APT_MAL_LUA_Hunting_Lua_SEASPRAY_1 {
+    meta:
+        author = "Mandiant"
+        date = "2023-06-15"
+        reference = "https://www.mandiant.com/resources/blog/barracuda-esg-exploited-globally"
+        description = "Hunting rule looking for strings observed in SEASPRAY samples."
+        hash = "35cf6faf442d325961935f660e2ab5a0"
+        score = 70
+    strings:
+        $str1 = "string.find(attachment:filename(),'obt075') ~= nil" 
+        $str2 = "os.execute('cp '..tostring(tmpfile)..' /tmp/'..attachment:filename())" 
+        $str3 = "os.execute('rverify'..' /tmp/'..attachment:filename())" 
+    condition:
+        all of them
+}
