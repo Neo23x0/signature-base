@@ -8,7 +8,7 @@ rule PUA_VULN_Renamed_Driver_Cpuid_Cpuzsys_Cpuidservice_34BE {
 		hash = "5177a3b7393fb5855b2ec0a45d4c91660b958ee077e76e5a7d0669f2e04bcf02"
 		hash = "ee45fd2d7315fd039f3585a66e7855ba4af9d4721e1448e602623de14e932bbe"
 		hash = "bac709c49ddee363c8e59e515f2f632324a0359e932b7d8cb1ce2d52a95981aa"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004300500055004900440020004400720069007600650072 } /* FileDescription CPUIDDriver */
@@ -30,7 +30,7 @@ rule PUA_VULN_Renamed_Driver_Zemanaltd_Zam_D7E0 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "d7e091e0d478c34232e8479b950c5513077b3a69309885cee4c61063e5f74ac0"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005a0041004d } /* FileDescription ZAM */
@@ -51,7 +51,7 @@ rule PUA_VULN_Renamed_Driver_Eldoscorporation_Elrawdsksys_Rawdisk_4744 {
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "4744df6ac02ff0a3f9ad0bf47b15854bbebb73c936dd02f7c79293a2828406f6"
 		hash = "5a826b4fa10891cf63aae832fc645ce680a483b915c608ca26cedbb173b1b80a"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005200610077004400690073006b0020004400720069007600650072002e00200041006c006c006f00770073002000770072006900740065002000610063006300650073007300200074006f002000660069006c0065007300200061006e006400200072006100770020006400690073006b00200073006500630074006f0072007300200066006f0072002000750073006500720020006d006f006400650020006100700070006c00690063006100740069006f006e007300200069006e002000570069006e0064006f007700730020003200300030003000200061006e00640020006c0061007400650072002e } /* FileDescription RawDiskDriverAllowswriteaccesstofilesandrawdisksectorsforusermodeapplicationsinWindowsandlater */
@@ -73,7 +73,7 @@ rule PUA_VULN_Renamed_Driver_Gigabytetechnologycoltd_Gdrvsys_Gigabytesoftwaredri
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "81aafae4c4158d0b9a6431aff0410745a0f6a43fb20a9ab316ffeb8c2e2ccac0"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0047004900470041002d00420059005400450020004e006f006e0050006e00500020004400720069007600650072 } /* FileDescription GIGABYTENonPnPDriver */
@@ -95,7 +95,7 @@ rule PUA_VULN_Renamed_Driver_Advancedmicrodevices_Amdryzenmasterdriversys_Amdryz
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "f6cd7353cb6e86e98d387473ed6340f9b44241867508e209e944f548b9db1d5f"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041004d0044002000520079007a0065006e0020004d00610073007400650072002000530065007200760069006300650020004400720069007600650072 } /* FileDescription AMDRyzenMasterServiceDriver */
@@ -113,11 +113,11 @@ rule PUA_VULN_Renamed_Driver_Advancedmicrodevices_Amdryzenmasterdriversys_Amdryz
 
 rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecuritysystem_2594 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "2594b3ef3675ca3a7b465b8ed4962e3251364bab13b12af00ebba7fa2211abb2"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00410056004700200061006e0074006900200072006f006f0074006b00690074 } /* FileDescription AVGantirootkit */
@@ -129,7 +129,7 @@ rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecurit
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f0070007900720069006700680074002000280043002900200032003000310038002000410056004700200054006500630068006e006f006c006f006700690065007300200043005a002c00200073002e0072002e006f002e } /* LegalCopyright CopyrightCAVGTechnologiesCZsro */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -145,7 +145,7 @@ rule PUA_VULN_Renamed_Driver_Cpuid_Cpuzsys_Cpuidservice_6BEF {
 		hash = "600a2119657973112025db3c0eeab2e69d528bccfeed75f40c6ef50b059ec8a0"
 		hash = "deecbcd260849178de421d8e2f177dce5c63cf67a48abb23a0e3cf3aa3e00578"
 		hash = "955dac77a0148e9f9ed744f5d341cb9c9118261e52fe622ac6213965f2bc4cad"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004300500055004900440020004400720069007600650072 } /* FileDescription CPUIDDriver */
@@ -171,7 +171,7 @@ rule PUA_VULN_Renamed_Driver_Rweverything_Rwdrvsys_Rwdrvdriver_45BA {
 		hash = "d969845ef6acc8e5d3421a7ce7e244f419989710871313b04148f9b322751e5d"
 		hash = "1e0eb0811a7cf1bdaf29d3d2cab373ca51eb8d8b58889ab7728e2d3aed244abe"
 		hash = "ea0b9eecf4ad5ec8c14aec13de7d661e7615018b1a3c65464bf5eca9bbf6ded3"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005200770044007200760020004400720069007600650072 } /* FileDescription RwDrvDriver */
@@ -195,7 +195,7 @@ rule PUA_VULN_Renamed_Driver_Windowsrwinddkprovider_Vmdrvsys_Windowsrwinddkdrive
 		hash = "5c0b429e5935814457934fa9c10ac7a88e19068fa1bd152879e4e9b89c103921"
 		hash = "32cccc4f249499061c0afa18f534c825d01034a1f6815f5506bf4c4ff55d1351"
 		hash = "d884ca8cc4ef1826ca3ab03eb3c2d8f356ba25f2d20db0a7d9fc251c565be7f3"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0056006f006900630065006d006f00640020005600690072007400750061006c00200041007500640069006f00200044006500760069006300650020002800570044004d0029 } /* FileDescription VoicemodVirtualAudioDeviceWDM */
@@ -218,7 +218,7 @@ rule PUA_VULN_Renamed_Driver_Advancedmicrodevices_Amdryzenmasterdriversys_Amdryz
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "a13054f349b7baa8c8a3fcbd31789807a493cc52224bbff5e412eb2bd52a6433"
 		hash = "7e81beae78e1ddbf6c150e15667e1f18783f9b0ab7fbe52c7ab63e754135948d"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041004d0044002000520079007a0065006e0020004d00610073007400650072002000530065007200760069006300650020004400720069007600650072 } /* FileDescription AMDRyzenMasterServiceDriver */
@@ -236,11 +236,11 @@ rule PUA_VULN_Renamed_Driver_Advancedmicrodevices_Amdryzenmasterdriversys_Amdryz
 
 rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpot_Avginternetsecuritysystem_5BD4 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "5bd41a29cbba0d24e639f49d1f201b9bd119b11f5e3b8a5fefa3a5c6f1e7692c"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00410056004700200041006e0074006900200052006f006f0074006b00690074 } /* FileDescription AVGAntiRootkit */
@@ -252,7 +252,7 @@ rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpot_Avginternetsecuritysy
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f0070007900720069006700680074002000280043002900200032003000320030002000410056004700200054006500630068006e006f006c006f006700690065007300200043005a002c00200073002e0072002e006f002e } /* LegalCopyright CopyrightCAVGTechnologiesCZsro */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -272,7 +272,7 @@ rule PUA_VULN_Renamed_Driver_Sysinternalswwwsysinternalscom_Procexpsys_Processex
 		hash = "59b09bd69923c0b3de3239e73205b1846a5f69043546d471b259887bb141d879"
 		hash = "e3f2ee22dec15061919583e4beb8abb3b29b283e2bcb46badf2bfde65f5ea8dd"
 		hash = "9d5ebd0f4585ec20a5fe3c5276df13ece5a2645d3d6f70cedcda979bd1248fc2"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00500072006f00630065007300730020004500780070006c006f007200650072 } /* FileDescription ProcessExplorer */
@@ -300,7 +300,7 @@ rule PUA_VULN_Renamed_Driver_Windowsrwinddkprovider_Cpuzsys_Windowsrwinddkdriver
 		hash = "592f56b13e7dcaa285da64a0b9a48be7562bd9b0a190208b7c8b7d8de427cf6c"
 		hash = "4d19ee789e101e5a76834fb411aadf8229f08b3ece671343ad57a6576a525036"
 		hash = "60b163776e7b95e0c2280d04476304d0c943b484909131f340e3ce6045a49289"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004300500055004900440020004400720069007600650072 } /* FileDescription CPUIDDriver */
@@ -323,7 +323,7 @@ rule PUA_VULN_Renamed_Driver_Novellinc_Novellxtier_B50F {
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "b50ffc60eaa4fb7429fdbb67c0aba0c7085f5129564d0a113fec231c5f8ff62e"
 		hash = "b37b3c6877b70289c0f43aeb71349f7344b06063996e6347c3c18d8c5de77f3b"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004e006f00760065006c006c0020005800540043004f004d0020005300650072007600690063006500730020004400720069007600650072 } /* FileDescription NovellXTCOMServicesDriver */
@@ -345,7 +345,7 @@ rule PUA_VULN_Renamed_Driver_Openlibsysorg_Winringsys_Winring_11BD {
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "11bd2c9f9e2397c9a16e0990e4ed2cf0679498fe0fd418a3dfdac60b5c160ee5"
 		hash = "a7b000abbcc344444a9b00cfade7aa22ab92ce0cadec196c30eb1851ae4fa062"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00570069006e00520069006e00670030 } /* FileDescription WinRing */
@@ -367,7 +367,7 @@ rule PUA_VULN_Renamed_Driver_Windowswinowsdriverkitsprovider_Hwrwdrvsys_Hardware
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "21ccdd306b5183c00ecfd0475b3152e7d94b921e858e59b68a03e925d1715f21"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0048006100720064007700610072006500200072006500610064002000260020007700720069007400650020006400720069007600650072 } /* FileDescription Hardwarereadwritedriver */
@@ -385,11 +385,11 @@ rule PUA_VULN_Renamed_Driver_Windowswinowsdriverkitsprovider_Hwrwdrvsys_Hardware
 
 rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpot_Avastantivirus_AD8F {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "ad8ffccfde782bc287241152cf24245a8bf21c2530d81c57e17631b3c4adb833"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041007600610073007400200041006e0074006900200052006f006f0074006b00690074 } /* FileDescription AvastAntiRootkit */
@@ -401,7 +401,7 @@ rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpot_Avastantivirus_AD8F {
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f007000790072006900670068007400200028006300290020003200300032003000200041005600410053005400200053006f006600740077006100720065 } /* LegalCopyright CopyrightcAVASTSoftware */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -411,7 +411,7 @@ rule PUA_VULN_Renamed_Driver_Msi_Ntiolibsys_Ntiolib_3124 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "3124b0411b8077605db2a9b7909d8240e0d554496600e2706e531c93c931e1b5"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004e00540049004f004c0069006200200066006f00720020004d00530049004600720065007100750065006e00630079005f00430043 } /* FileDescription NTIOLibforMSIFrequencyCC */
@@ -433,7 +433,7 @@ rule PUA_VULN_Renamed_Driver_Iobit_Monitorsys_Advancedsystemcare_E4A7 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "e4a7da2cf59a4a21fc42b611df1d59cae75051925a7ddf42bf216cc1a026eadb"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0049004f006200690074002000540065006d007000650072006100740075007200650020004d006f006e00690074006f0072 } /* FileDescription IObitTemperatureMonitor */
@@ -455,7 +455,7 @@ rule PUA_VULN_Renamed_Driver_Phoenixtechnologiesltd_Phlashnt_Winphlash_65DB {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "65db1b259e305a52042e07e111f4fa4af16542c8bacd33655f753ef642228890"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005300570069006e0046006c006100730068002000440072006900760065007200200066006f0072002000570069006e0064006f007700730020004e0054 } /* FileDescription SWinFlashDriverforWindowsNT */
@@ -477,7 +477,7 @@ rule PUA_VULN_Renamed_Driver_Arthurliberman_Alsysiosys_Alsysio_7196 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "7196187fb1ef8d108b380d37b2af8efdeb3ca1f6eefd37b5dc114c609147216d"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041004c0053007900730049004f } /* FileDescription ALSysIO */
@@ -499,7 +499,7 @@ rule PUA_VULN_Renamed_Driver_Gigabytetechnologycoltd_Gdrvsys_Gigabytesoftwaredri
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "133e542842656197c5d22429bd56d57aa33c9522897fdf29853a6d321033c743"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0047004900470041002d00420059005400450020004e006f006e0050006e00500020004400720069007600650072 } /* FileDescription GIGABYTENonPnPDriver */
@@ -532,7 +532,7 @@ rule PUA_VULN_Renamed_Driver_Cpuid_Cpuzsys_Cpuidservice_0D37 {
 		hash = "19696fb0db3fcae22f705ae1eb1e9f1151c823f3ff5d8857e90f2a4a6fdc5758"
 		hash = "e58bbf3251906ff722aa63415bf169618e78be85cb92c8263d3715c260491e90"
 		hash = "11d258e05b850dcc9ecfacccc9486e54bd928aaa3d5e9942696c323fdbd3481b"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004300500055004900440020004400720069007600650072 } /* FileDescription CPUIDDriver */
@@ -556,7 +556,7 @@ rule PUA_VULN_Renamed_Driver_Asustek_Driversys_Ectool_927C {
 		hash = "927c2a580d51a598177fa54c65e9d2610f5f212f1b6cb2fbf2740b64368f010a"
 		hash = "42851a01469ba97cdc38939b10cf9ea13237aa1f6c37b1ac84904c5a12a81fa0"
 		hash = "771a8d05f1af6214e0ef0886662be500ee910ab99f0154227067fddcfe08a3dd"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400680065002000640072006900760065007200200066006f007200200074006800650020004500430074006f006f006c0020006400720069007600650072002d0062006100730065006400200074006f006f006c0073 } /* FileDescription ThedriverfortheECtooldriverbasedtools */
@@ -578,7 +578,7 @@ rule PUA_VULN_Renamed_Driver_Msi_Ntiolibsys_Ntiolib_CF4B {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "cf4b5fa853ce809f1924df3a3ae3c4e191878c4ea5248d8785dc7e51807a512b"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004e00540049004f004c0069006200200066006f00720020004d005300490043006c006f0063006b005f00430043 } /* FileDescription NTIOLibforMSIClockCC */
@@ -600,7 +600,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_D783 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "d783ace822f8fe4e25d5387e5dd249cb72e62f62079023216dc436f1853a150f"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -622,7 +622,7 @@ rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpot_Avastantivirus_4B52 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "4b5229b3250c8c08b98cb710d6c056144271de099a57ae09f5d2097fc41bd4f1"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041007600610073007400200041006e0074006900200052006f006f0074006b00690074 } /* FileDescription AvastAntiRootkit */
@@ -646,7 +646,7 @@ rule PUA_VULN_Renamed_Driver_Biostargroup_Iodriver_Biostariodriverfle_42E1 {
 		hash = "42e170a7ab1d2c160d60abfc906872f9cfd0c2ee169ed76f6acb3f83b3eeefdb"
 		hash = "f929bead59e9424ab90427b379dcdd63fbfe0c4fb5e1792e3a1685541cd5ec65"
 		hash = "55fee54c0d0d873724864dc0b2a10b38b7f40300ee9cae4d9baaf8a202c4049a"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0049002f004f00200049006e00740065007200660061006300650020006400720069007600650072002000660069006c0065 } /* FileDescription IOInterfacedriverfile */
@@ -668,7 +668,7 @@ rule PUA_VULN_Renamed_Driver_Mitactechnologycorporation_Mtcbsvsys_Mitacsystemser
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "c9cf1d627078f63a36bbde364cd0d5f2be1714124d186c06db5bcdf549a109f8"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004d0069005400410043002000530079007300740065006d00200053006500720076006900630065002000500072006f00760069006400650072 } /* FileDescription MiTACSystemServiceProvider */
@@ -690,7 +690,7 @@ rule PUA_VULN_Renamed_Driver_Intelcorporation_Iqvwsys_Intelriqvwsys_5F65 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "5f6547e9823f94c5b94af1fb69a967c4902f72b6e0c783804835e6ce27f887b0"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0049006e00740065006c0028005200290020004e006500740077006f0072006b0020004100640061007000740065007200200044006900610067006e006f00730074006900630020004400720069007600650072 } /* FileDescription IntelRNetworkAdapterDiagnosticDriver */
@@ -712,7 +712,7 @@ rule PUA_VULN_Renamed_Driver_Tgsoftsas_Viragtsys_Viritagentsystem_58A7 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "58a74dceb2022cd8a358b92acd1b48a5e01c524c3b0195d7033e4bd55eff4495"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005600690072004900540020004100670065006e0074002000530079007300740065006d } /* FileDescription VirITAgentSystem */
@@ -734,7 +734,7 @@ rule PUA_VULN_Renamed_Driver_Panyazilimbilisimteknolojileriticltdsti_Panmonfltxs
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "06508aacb4ed0a1398a2b0da5fa2dbf7da435b56da76fd83c759a50a51c75caf"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00500061006e00430061006600650020004d0061006e0061006700650072002000460069006c00650020004d006f006e00690074006f0072 } /* FileDescription PanCafeManagerFileMonitor */
@@ -752,11 +752,11 @@ rule PUA_VULN_Renamed_Driver_Panyazilimbilisimteknolojileriticltdsti_Panmonfltxs
 
 rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_0F17 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "0f17e5cfc5bdd74aff91bfb1a836071345ba2b5d1b47b0d5bf8e7e0d4d5e2dbf"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041007600610073007400200061006e0074006900200072006f006f0074006b00690074 } /* FileDescription Avastantirootkit */
@@ -768,7 +768,7 @@ rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_0F17 {
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f007000790072006900670068007400200028006300290020003200300031003900200041005600410053005400200053006f006600740077006100720065 } /* LegalCopyright CopyrightcAVASTSoftware */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -779,7 +779,7 @@ rule PUA_VULN_Renamed_Driver_Novellinc_Novellxtier_6C71 {
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "6c7120e40fc850e4715058b233f5ad4527d1084a909114fd6a36b7b7573c4a44"
 		hash = "3a65d14fd3b1b5981084cdbd293dc6f4558911ea18dd80177d1e5b54d85bcaa0"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004e006f00760065006c006c00200043006c00690065006e007400200050006f00720074006100620069006c0069007400790020004c0061007900650072 } /* FileDescription NovellClientPortabilityLayer */
@@ -801,7 +801,7 @@ rule PUA_VULN_Renamed_Driver_Bsmisys_5962 {
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "59626cac380d8fe0b80a6d4c4406d62ba0683a2f0f68d50ad506ca1b1cf25347"
 		hash = "552f70374715e70c4ade591d65177be2539ec60f751223680dfaccb9e0be0ed9"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0053004d00490020004400720069007600650072 } /* FileDescription SMIDriver */
@@ -851,7 +851,7 @@ rule PUA_VULN_Renamed_Driver_Msi_Ntiolibsys_Ntiolib_99F4 {
 		hash = "47f0cdaa2359a63ad1389ef4a635f1f6eee1f63bdf6ef177f114bdcdadc2e005"
 		hash = "38fa0c663c8689048726666f1c5e019feaa9da8278f1df6ff62da33961891d2a"
 		hash = "ef86c4e5ee1dbc4f81cd864e8cd2f4a2a85ee4475b9a9ab698a4ae1cc71fbeb0"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004e00540049004f004c00690062 } /* FileDescription NTIOLib */
@@ -875,7 +875,7 @@ rule PUA_VULN_Renamed_Driver_Cpuid_Cpuzsys_Cpuidservice_26E3 {
 		hash = "26e3bfef255efd052a84c3c43994c73222b14c95db9a4b1fc2e98f1a5cb26e43"
 		hash = "3e07bb866d329a2f9aaa4802bad04fdac9163de9bf9cfa1d035f5ca610b4b9bf"
 		hash = "c50f8ab8538c557963252b702c1bd3cee4604b5fc2497705d2a6a3fd87e3cc26"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004300500055004900440020004400720069007600650072 } /* FileDescription CPUIDDriver */
@@ -900,7 +900,7 @@ rule PUA_VULN_Renamed_Driver_Asustekcomputerinc_Bsdefsys_Supportsstsfssteeatftat
 		hash = "3326e2d32bbabd69feb6024809afc56c7e39241ebe70a53728c77e80995422a5"
 		hash = "0040153302b88bee27eb4f1eca6855039e1a057370f5e8c615724fa5215bada3"
 		hash = "36b9e31240ab0341873c7092b63e2e0f2cab2962ebf9b25271c3a1216b7669eb"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00440065006600610075006c0074002000420049004f005300200046006c0061007300680020004400720069007600650072 } /* FileDescription DefaultBIOSFlashDriver */
@@ -922,7 +922,7 @@ rule PUA_VULN_Renamed_Driver_Panyazilimbilisimteknolojileriticltdsti_Panioxsys_P
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "6b830ea0db6546a044c9900d3f335e7820c2a80e147b0751641899d1a5aa8f74"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00540065006d0070006500720061007400750072006500200061006e0064002000730079007300740065006d00200069006e0066006f0072006d006100740069006f006e0020006400720069007600650072 } /* FileDescription Temperatureandsysteminformationdriver */
@@ -946,7 +946,7 @@ rule PUA_VULN_Renamed_Driver_Cpuid_Cpuzsys_Cpuidservice_2A6D {
 		hash = "2a6db9facf9e13d35c37dd468be04bae5f70c6127a9aee76daebddbdec95d486"
 		hash = "1e16a01ef44e4c56e87abfbe03b2989b0391b172c3ec162783ad640be65ab961"
 		hash = "aebcbfca180e372a048b682a4859fd520c98b5b63f6e3a627c626cb35adc0399"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004300500055004900440020004400720069007600650072 } /* FileDescription CPUIDDriver */
@@ -968,7 +968,7 @@ rule PUA_VULN_Renamed_Driver_Elaboratebytesag_Elbycdio_Cdrtools_82FB {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "82fbcb371d53b8a76a25fbbafaae31147c0d1f6b9f26b3ea45262c2267386989"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0045006c0062007900430044002000570069006e0064006f007700730020004e0054002f0032003000300030002f0058005000200049002f004f0020006400720069007600650072 } /* FileDescription ElbyCDWindowsNTXPIOdriver */
@@ -990,7 +990,7 @@ rule PUA_VULN_Renamed_Driver_Entechtaiwan_Seasys_Softenginex_6CB5 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "6cb51ae871fbd5d07c5aad6ff8eea43d34063089528603ca9ceb8b4f52f68ddc"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0045006e005400650063006800200073006f006600740045006e00670069006e006500200078003600340020006b00650072006e0065006c002d006d006f006400650020006400720069007600650072 } /* FileDescription EnTechsoftEnginexkernelmodedriver */
@@ -1008,11 +1008,11 @@ rule PUA_VULN_Renamed_Driver_Entechtaiwan_Seasys_Softenginex_6CB5 {
 
 rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpot_Avginternetsecuritysystem_0B54 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "0b542e47248611a1895018ec4f4033ea53464f259c74eb014d018b19ad818917"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00410056004700200041006e0074006900200052006f006f0074006b00690074 } /* FileDescription AVGAntiRootkit */
@@ -1024,17 +1024,17 @@ rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpot_Avginternetsecuritysy
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f0070007900720069006700680074002000280043002900200032003000320030002000410056004700200054006500630068006e006f006c006f006700690065007300200043005a002c00200073002e0072002e006f002e } /* LegalCopyright CopyrightCAVGTechnologiesCZsro */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
 rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_1273 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "1273b74c3c1553eaa92e844fbd51f716356cc19cf77c2c780d4899ec7738fbd1"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041007600610073007400200061006e0074006900200072006f006f0074006b00690074 } /* FileDescription Avastantirootkit */
@@ -1046,7 +1046,7 @@ rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_1273 {
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f007000790072006900670068007400200028006300290020003200300031003800200041005600410053005400200053006f006600740077006100720065 } /* LegalCopyright CopyrightcAVASTSoftware */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -1057,7 +1057,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_3854 {
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "385485e643aa611e97ceae6590c6a8c47155886123dbb9de1e704d0d1624d039"
 		hash = "b773511fdb2e370dec042530910a905472fcc2558eb108b246fd3200171b04d3"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -1079,7 +1079,7 @@ rule PUA_VULN_Renamed_Driver_Zemanaltd_Zam_8FE9 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "8fe9828bea83adc8b1429394db7a556a17f79846ad0bfb7f242084a5c96edf2a"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005a0041004d } /* FileDescription ZAM */
@@ -1101,7 +1101,7 @@ rule PUA_VULN_Renamed_Driver_Windowsrcodenamelonghornddkprovider_Cpuzsys_Windows
 		hash = "2ef7df384e93951893b65500dac6ee09da6b8fe9128326caad41b8be4da49a1e"
 		hash = "dbb457ae1bd07a945a1466ce4a206c625e590aee3922fa7d86fbe956beccfc98"
 		hash = "8e5aef7c66c0e92dfc037ee29ade1c8484b8d7fadebdcf521d2763b1d8215126"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004300500055004900440020004400720069007600650072 } /* FileDescription CPUIDDriver */
@@ -1123,7 +1123,7 @@ rule PUA_VULN_Renamed_Driver_Msi_Ntiolibsys_Ntiolib_3D9E {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "3d9e83b189fcf5c3541c62d1f54a0da0a4e5b62c3243d2989afc46644056c8e3"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004e00540049004f004c0069006200200046006f00720020004e00540049004f004c00690062005f00450043004f } /* FileDescription NTIOLibForNTIOLibECO */
@@ -1146,7 +1146,7 @@ rule PUA_VULN_Renamed_Driver_Msi_Ntiolibsys_Ntiolib_2BBE {
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "2bbe65cbec3bb069e92233924f7ee1f95ffa16173fceb932c34f68d862781250"
 		hash = "e68d453d333854787f8470c8baef3e0d082f26df5aa19c0493898bcf3401e39a"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004e00540049004f004c0069006200200046006f00720020004d0053004900530069006d0070006c0065005f004f0043 } /* FileDescription NTIOLibForMSISimpleOC */
@@ -1169,7 +1169,7 @@ rule PUA_VULN_Renamed_Driver_Gigabytetechnologycoltd_Gdrvsys_Gigabytesoftwaredri
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "092d04284fdeb6762e65e6ac5b813920d6c69a5e99d110769c5c1a78e11c5ba0"
 		hash = "0ce40a2cdd3f45c7632b858e8089ddfdd12d9acb286f2015a4b1b0c0346a572c"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0047004900470041002d00420059005400450020004e006f006e0050006e00500020004400720069007600650072 } /* FileDescription GIGABYTENonPnPDriver */
@@ -1192,7 +1192,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_62F5 {
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "62f5e13b2edc00128716cb93e6a9eddffea67ce83d2bb426f18f5be08ead89e0"
 		hash = "ee3ff12943ced401e2b6df9e66e8a0be8e449fa9326cab241f471b2d8ffefdd7"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -1215,7 +1215,7 @@ rule PUA_VULN_Renamed_Driver_Yyinc_Dianhu_80CB {
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "80cbba9f404df3e642f22c476664d63d7c229d45d34f5cd0e19c65eb41becec3"
 		hash = "bb50818a07b0eb1bd317467139b7eb4bad6cd89053fecdabfeae111689825955"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]006400690061006e00680075 } /* FileDescription dianhu */
@@ -1236,7 +1236,7 @@ rule PUA_VULN_Renamed_Driver_Elaboratebytesag_Elbycdio_Cdrtools_8F68 {
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "8f68ca89910ebe9da3d02ec82d935de1814d79c44f36cd30ea02fa49ae488f00"
 		hash = "c8eaa5e6d3230b93c126d2d58e32409e4aeeb23ccf0dd047a17f1ef552f92fe9"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0045006c0062007900430044002000570069006e0064006f007700730020004e0054002f0032003000300030002f0058005000200049002f004f0020006400720069007600650072 } /* FileDescription ElbyCDWindowsNTXPIOdriver */
@@ -1254,11 +1254,11 @@ rule PUA_VULN_Renamed_Driver_Elaboratebytesag_Elbycdio_Cdrtools_8F68 {
 
 rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_A5A5 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "a5a50449e2cc4d0dbc80496f757935ae38bf8a1bebdd6555a3495d8c219df2ad"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041007600610073007400200061006e0074006900200072006f006f0074006b00690074 } /* FileDescription Avastantirootkit */
@@ -1270,7 +1270,7 @@ rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_A5A5 {
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f007000790072006900670068007400200028006300290020003200300031003800200041005600410053005400200053006f006600740077006100720065 } /* LegalCopyright CopyrightcAVASTSoftware */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -1280,7 +1280,7 @@ rule PUA_VULN_Renamed_Driver_Msi_Ntiolibsys_Ntiolib_591B {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "591bd5e92dfa0117b3daa29750e73e2db25baa717c31217539d30ffb1f7f3a52"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004e00540049004f004c0069006200200046006f00720020004d005300490052006100740069006f005f00430043 } /* FileDescription NTIOLibForMSIRatioCC */
@@ -1303,7 +1303,7 @@ rule PUA_VULN_Renamed_Driver_Openlibsysorg_Winringsys_Winring_47EA {
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "47eaebc920ccf99e09fc9924feb6b19b8a28589f52783327067c9b09754b5e84"
 		hash = "3ec5ad51e6879464dfbccb9f4ed76c6325056a42548d5994ba869da9c4c039a8"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00570069006e00520069006e00670030 } /* FileDescription WinRing */
@@ -1325,7 +1325,7 @@ rule PUA_VULN_Renamed_Driver_Insydesoftwarecorp_Segwindrvxsys_Segwindowsdriverx_
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "65329dad28e92f4bcc64de15c552b6ef424494028b18875b7dba840053bc0cdd"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005300450047002000570069006e0064006f0077007300200044007200690076006500720020007800360034 } /* FileDescription SEGWindowsDriverx */
@@ -1347,7 +1347,7 @@ rule PUA_VULN_Renamed_Driver_Advancedmicrodevices_Amdryzenmasterdriversys_Amdryz
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "909de5f21837ea2b13fdc4e5763589e6bdedb903f7c04e1d0b08776639774880"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041004d0044002000520079007a0065006e0020004d00610073007400650072002000530065007200760069006300650020004400720069007600650072 } /* FileDescription AMDRyzenMasterServiceDriver */
@@ -1371,7 +1371,7 @@ rule PUA_VULN_Renamed_Driver_Atitechnologiesinc_Atillksys_Atidiagnostics_AD40 {
 		hash = "ad40e6d0f77c0e579fb87c5106bf6de3d1a9f30ee2fbf8c9c011f377fa05f173"
 		hash = "38bb9751a3a1f072d518afe6921a66ee6d5cf6d25bc50af49e1925f20d75d4d7"
 		hash = "5c04c274a708c9a7d993e33be3ea9e6119dc29527a767410dbaf93996f87369a"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00410054004900200044006900610067006e006f007300740069006300730020004800610072006400770061007200650020004100620073007400720061006300740069006f006e0020005300790073 } /* FileDescription ATIDiagnosticsHardwareAbstractionSys */
@@ -1389,11 +1389,11 @@ rule PUA_VULN_Renamed_Driver_Atitechnologiesinc_Atillksys_Atidiagnostics_AD40 {
 
 rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpot_Avginternetsecuritysystem_0CD4 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "0cd4ca335155062182608cad9ef5c8351a715bce92049719dd09c76422cd7b0c"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00410056004700200041006e0074006900200052006f006f0074006b00690074 } /* FileDescription AVGAntiRootkit */
@@ -1405,7 +1405,7 @@ rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpot_Avginternetsecuritysy
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f0070007900720069006700680074002000280043002900200032003000320030002000410056004700200054006500630068006e006f006c006f006700690065007300200043005a002c00200073002e0072002e006f002e } /* LegalCopyright CopyrightCAVGTechnologiesCZsro */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -1418,7 +1418,7 @@ rule PUA_VULN_Renamed_Driver_Novellinc_Novellxtier_E16D {
 		hash = "e6056443537d4d2314dabca1b9168f1eaaf17a14eb41f6f5741b6b82b3119790"
 		hash = "ab0925398f3fa69a67eacee2bbb7b34ac395bb309df7fc7a9a9b8103ef41ed7a"
 		hash = "da11e9598eef033722b97873d1c046270dd039d0e3ee6cd37911e2dc2eb2608d"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004e006f00760065006c006c0020005800540043004f004d0020005300650072007600690063006500730020004400720069007600650072 } /* FileDescription NovellXTCOMServicesDriver */
@@ -1439,7 +1439,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroaegis_3FA6 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "3fa6379951f08ed3cb87eeba9cf0c5f5e1d0317dcfcf003b810df9d795eeb73e"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -1461,7 +1461,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_3E1D {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "3e1d47a497babbfd1c83905777b517ec87c65742bee7eb57a2273eca825d2272"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -1479,11 +1479,11 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_3E1D {
 
 rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecuritysystem_6FB5 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "6fb5bc9c51f6872de116c7db8a2134461743908efc306373f6de59a0646c4f5d"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00410056004700200061006e0074006900200072006f006f0074006b00690074 } /* FileDescription AVGantirootkit */
@@ -1495,7 +1495,7 @@ rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecurit
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f0070007900720069006700680074002000280043002900200032003000310039002000410056004700200054006500630068006e006f006c006f006700690065007300200043005a002c00200073002e0072002e006f002e } /* LegalCopyright CopyrightCAVGTechnologiesCZsro */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -1511,7 +1511,7 @@ rule PUA_VULN_Renamed_Driver_Asrockincorporation_Asrdrvsys_Asrockiodriver_3943 {
 		hash = "ece0a900ea089e730741499614c0917432246ceb5e11599ee3a1bb679e24fd2c"
 		hash = "f40435488389b4fb3b945ca21a8325a51e1b5f80f045ab019748d0ec66056a8b"
 		hash = "a7c2e7910942dd5e43e2f4eb159bcd2b4e71366e34a68109548b9fb12ac0f7cc"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004100530052006f0063006b00200049004f0020004400720069007600650072 } /* FileDescription ASRockIODriver */
@@ -1533,7 +1533,7 @@ rule PUA_VULN_Renamed_Driver_Hpdevelopmentcompany_Etdsuppsys_Hpetdidriverdll_F74
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "f744abb99c97d98e4cd08072a897107829d6d8481aee96c22443f626d00f4145"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004500540044006900200053007500700070006f007200740020004400720069007600650072 } /* FileDescription ETDiSupportDriver */
@@ -1555,7 +1555,7 @@ rule PUA_VULN_Renamed_Driver_Intelcorporation_Iqvwsys_Intelriqvwsys_1F81 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "1f8168036d636aad1680dd0f577ef9532dbb2dad3591d63e752b0ba3ee6fd501"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0049006e00740065006c0028005200290020004e006500740077006f0072006b0020004100640061007000740065007200200044006900610067006e006f00730074006900630020004400720069007600650072 } /* FileDescription IntelRNetworkAdapterDiagnosticDriver */
@@ -1581,7 +1581,7 @@ rule PUA_VULN_Renamed_Driver_Phoenixtechnologies_Agentsys_Driveragent_4045 {
 		hash = "6948480954137987a0be626c24cf594390960242cd75f094cd6aaa5c2e7a54fa"
 		hash = "b1d96233235a62dbb21b8dbe2d1ae333199669f67664b107bff1ad49b41d9414"
 		hash = "05f052c64d192cf69a462a5ec16dda0d43ca5d0245900c9fcb9201685a2e7748"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004400720069007600650072004100670065006e0074002000440069007200650063007400200049002f004f00200066006f0072002000360034002d006200690074002000570069006e0064006f00770073 } /* FileDescription DriverAgentDirectIOforbitWindows */
@@ -1603,7 +1603,7 @@ rule PUA_VULN_Renamed_Driver_Tgsoftsas_Viragtsys_Viritagentsystem_D0E2 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "d0e25b879d830e4f867b09d6540a664b6f88bad353cd14494c33b31a8091f605"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005600690072004900540020004100670065006e0074002000530079007300740065006d } /* FileDescription VirITAgentSystem */
@@ -1626,7 +1626,7 @@ rule PUA_VULN_Renamed_Driver_Novellinc_Novellxtier_904E {
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "904e0f7d485a98e8497d5ec6dd6e6e1cf0b8d8e067fb64a9e09790af3c8c9d5a"
 		hash = "cf3180f5308af002ac5d6fd5b75d1340878c375f0aebc3157e3bcad6322b7190"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004e006f00760065006c006c00200043006c00690065006e007400200050006f00720074006100620069006c0069007400790020004c0061007900650072 } /* FileDescription NovellClientPortabilityLayer */
@@ -1647,7 +1647,7 @@ rule PUA_VULN_Renamed_Driver_Openlibsysorg_Openlibsyssys_Openlibsys_F060 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "f0605dda1def240dc7e14efa73927d6c6d89988c01ea8647b671667b2b167008"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004f00700065006e004c00690062005300790073 } /* FileDescription OpenLibSys */
@@ -1674,7 +1674,7 @@ rule PUA_VULN_Renamed_Driver_Rweverything_Rwdrvsys_Rweverythingreadwritedriver_2
 		hash = "47f08f7d30d824a8f4bb8a98916401a37c0fd8502db308aba91fe3112b892dcc"
 		hash = "0aafa9f47acf69d46c9542985994ff5321f00842a28df2396d4a3076776a83cb"
 		hash = "2bf29a2df52110ed463d51376562afceac0e80fbb1033284cf50edd86c406b14"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00520057002d00450076006500720079007400680069006e006700200052006500610064002000260020005700720069007400650020004400720069007600650072 } /* FileDescription RWEverythingReadWriteDriver */
@@ -1696,7 +1696,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_5027 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "5027fce41ed60906a0e76b97c95c2a5a83d57a2d1cd42de232a21f26c0d58e48"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -1714,11 +1714,11 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_5027 {
 
 rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpot_Avginternetsecuritysystem_19D0 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "19d0fc91b70d7a719f7a28b4ad929f114bf1de94a4c7cba5ad821285a4485da0"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00410056004700200041006e0074006900200052006f006f0074006b00690074 } /* FileDescription AVGAntiRootkit */
@@ -1730,7 +1730,7 @@ rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpot_Avginternetsecuritysy
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f0070007900720069006700680074002000280043002900200032003000320030002000410056004700200054006500630068006e006f006c006f006700690065007300200043005a002c00200073002e0072002e006f002e } /* LegalCopyright CopyrightCAVGTechnologiesCZsro */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -1740,7 +1740,7 @@ rule PUA_VULN_Renamed_Driver_Advancedmicrodevices_Amdryzenmasterdriversys_Amdryz
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "77955af8a8bcea8998f4046c2f8534f6fb1959c71de049ca2f4298ba47d8f23a"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041004d0044002000520079007a0065006e0020004d00610073007400650072002000530065007200760069006300650020004400720069007600650072 } /* FileDescription AMDRyzenMasterServiceDriver */
@@ -1762,7 +1762,7 @@ rule PUA_VULN_Renamed_Driver_Advancedmicrodevices_Amdryzenmasterdriversys_Amdryz
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "9b1ac756e35f795dd91adbc841e78db23cb7165280f8d4a01df663128b66d194"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041004d0044002000520079007a0065006e0020004d00610073007400650072002000530065007200760069006300650020004400720069007600650072 } /* FileDescription AMDRyzenMasterServiceDriver */
@@ -1784,7 +1784,7 @@ rule PUA_VULN_Renamed_Driver_Panyazilimbilisimteknolojileriticltdsti_Panmonfltsy
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "7e0124fcc7c95fdc34408cf154cb41e654dade8b898c71ad587b2090b1da30d7"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00500061006e00430061006600650020004d0061006e0061006700650072002000460069006c00650020004d006f006e00690074006f0072 } /* FileDescription PanCafeManagerFileMonitor */
@@ -1806,7 +1806,7 @@ rule PUA_VULN_Renamed_Driver_Lenovogrouplimitedr_Lenovodiagnosticsdriversys_Leno
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "f05b1ee9e2f6ab704b8919d5071becbce6f9d0f9d0ba32a460c41d5272134abe"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004c0065006e006f0076006f00200044006900610067006e006f00730074006900630073002000440072006900760065007200200066006f0072002000570069006e0064006f0077007300200031003000200061006e00640020006c0061007400650072002e } /* FileDescription LenovoDiagnosticsDriverforWindowsandlater */
@@ -1828,7 +1828,7 @@ rule PUA_VULN_Renamed_Driver_Dell_Dbutil_71FE {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "71fe5af0f1564dc187eea8d59c0fbc897712afa07d18316d2080330ba17cf009"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00440042005500740069006c } /* FileDescription DBUtil */
@@ -1848,7 +1848,7 @@ rule PUA_VULN_Renamed_Driver_Atszio_Atsziodriver_673B {
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "673bcec3d53fab5efd6e3bac25ac9d6cc51f6bbdf8336e38aade2713dc1ae11b"
 		hash = "31d8fc6f5fb837d5eb29db828d13ba8ee11867d86a90b2c2483a578e1d0ec43a"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004100540053005a0049004f0020004400720069007600650072 } /* FileDescription ATSZIODriver */
@@ -1869,7 +1869,7 @@ rule PUA_VULN_Renamed_Driver_Asus_Asmmapsys_Atkgenericfunctionservice_025E {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "025e7be9fcefd6a83f4471bba0c11f1c11bd5047047d26626da24ee9a419cdc4"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004d0065006d006f007200790020006d0061007000700069006e00670020004400720069007600650072 } /* FileDescription MemorymappingDriver */
@@ -1893,7 +1893,7 @@ rule PUA_VULN_Renamed_Driver_Novellinc_Novellxtier_FB81 {
 		hash = "fb81b5f8bf69637dbdf050181499088a67d24577587bc520de94b5ee8996240f"
 		hash = "76660e91f1ff3cb89630df5af4fe09de6098d09baa66b1a130c89c3c5edd5b22"
 		hash = "2e665962c827ce0adbd29fe6bcf09bbb1d7a7022075d162ff9b65d0af9794ac0"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004e006f00760065006c006c002000580054006900650072002000530065007300730069006f006e0020004d0061006e0061006700650072 } /* FileDescription NovellXTierSessionManager */
@@ -1914,7 +1914,7 @@ rule PUA_VULN_Renamed_Driver_Realtek_Rtkiosys_Realtekiodriver_7133 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "7133a461aeb03b4d69d43f3d26cd1a9e3ee01694e97a0645a3d8aa1a44c39129"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005200650061006c00740065006b00200049004f0020004400720069007600650072 } /* FileDescription RealtekIODriver */
@@ -1937,7 +1937,7 @@ rule PUA_VULN_Renamed_Driver_Lgelectronicsinc_Lhasys_Microsoftwindowsoperatingsy
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "23ba19352b1e71a965260bf4d5120f0200709ee8657ed381043bec9a938a1ade"
 		hash = "e75714f8e0ff45605f6fc7689a1a89c7dcd34aab66c6131c63fefaca584539cf"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004c00480041 } /* FileDescription LHA */
@@ -1959,7 +1959,7 @@ rule PUA_VULN_Renamed_Driver_Logmeininc_Lmiinfosys_Logmein_453B {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "453be8f63cc6b116e2049659e081d896491cf1a426e3d5f029f98146a3f44233"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004c006f0067004d00650049006e0020004b00650072006e0065006c00200049006e0066006f0072006d006100740069006f006e002000500072006f00760069006400650072 } /* FileDescription LogMeInKernelInformationProvider */
@@ -1981,7 +1981,7 @@ rule PUA_VULN_Renamed_Driver_Insydesoftwarecorp_Segwindrvxsys_Segwindowsdriverx_
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "c628cda1ef43defc00af45b79949675a8422490d32b080b3a8bb9434242bdbf2"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005300450047002000570069006e0064006f0077007300200044007200690076006500720020007800360034 } /* FileDescription SEGWindowsDriverx */
@@ -2003,7 +2003,7 @@ rule PUA_VULN_Renamed_Driver_Elaboratebytesag_Elbycdio_Cdrtools_2FBB {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "2fbbc276737047cb9b3ba5396756d28c1737342d89dce1b64c23a9c4513ae445"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0045006c0062007900430044002000570069006e0064006f007700730020004e0054002f0032003000300030002f0058005000200049002f004f0020006400720069007600650072 } /* FileDescription ElbyCDWindowsNTXPIOdriver */
@@ -2025,7 +2025,7 @@ rule PUA_VULN_Renamed_Driver_Sysinternalswwwsysinternalscom_Procexpsys_Processex
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "bced04bdefad6a08c763265d6993f07aa2feb57d33ed057f162a947cf0e6668f"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00500072006f00630065007300730020004500780070006c006f007200650072 } /* FileDescription ProcessExplorer */
@@ -2047,7 +2047,7 @@ rule PUA_VULN_Renamed_Driver_Realtek_Rtkiowxsys_Realtekiodriver_082C {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "082c39fe2e3217004206535e271ebd45c11eb072efde4cc9885b25ba5c39f91d"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005200650061006c00740065006b00200049004f0020004400720069007600650072 } /* FileDescription RealtekIODriver */
@@ -2069,7 +2069,7 @@ rule PUA_VULN_Renamed_Driver_Intelcorporation_Iqvwsys_Intelriqvwsys_D1F4 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "d1f4949f76d8ac9f2fa844d16b1b45fb1375d149d46e414e4a4c9424dc66c91f"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0049006e00740065006c0028005200290020004e006500740077006f0072006b0020004100640061007000740065007200200044006900610067006e006f00730074006900630020004400720069007600650072 } /* FileDescription IntelRNetworkAdapterDiagnosticDriver */
@@ -2091,7 +2091,7 @@ rule PUA_VULN_Renamed_Driver_Intelcorporation_Iqvwsys_Intelriqvwsys_7CB4 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "7cb497abc44aad09a38160d6a071db499e05ff5871802ccc45d565d242026ee7"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0049006e00740065006c0028005200290020004e006500740077006f0072006b0020004100640061007000740065007200200044006900610067006e006f00730074006900630020004400720069007600650072 } /* FileDescription IntelRNetworkAdapterDiagnosticDriver */
@@ -2113,7 +2113,7 @@ rule PUA_VULN_Renamed_Driver_Safenetinc_Hostnt_Hostnt_07B6 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "07b6d69bafcfd767f1b63a490a8843c3bb1f8e1bbea56176109b5743c8f7d357"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0048006f00730074006e0074002000360034002d0062006900740020006400720069007600650072 } /* FileDescription Hostntbitdriver */
@@ -2135,7 +2135,7 @@ rule PUA_VULN_Renamed_Driver_Rivetnetworksllc_Kfecodrvsys_Killertrafficcontrol_9
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "9a91d6e83b8fdec536580f6617f10dfc64eedf14ead29a6a644eb154426622ba"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004b0069006c006c006500720020005400720061006600660069006300200043006f006e00740072006f006c002000430061006c006c006f007500740020004400720069007600650072 } /* FileDescription KillerTrafficControlCalloutDriver */
@@ -2157,7 +2157,7 @@ rule PUA_VULN_Renamed_Driver_Zemanaltd_Zam_7CB5 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "7cb594af6a3655daebc9fad9c8abf2417b00ba31dcd118707824e5316fc0cc21"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005a0041004d } /* FileDescription ZAM */
@@ -2177,7 +2177,7 @@ rule PUA_VULN_Renamed_Driver_Asrockincorporation_Asrautochkupddrvsys_Asrautochku
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "2aa1b08f47fbb1e2bd2e4a492f5d616968e703e1359a921f62b38b8e4662f0c4"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004100730072004100750074006f00430068006b0055007000640044007200760020004400720069007600650072 } /* FileDescription AsrAutoChkUpdDrvDriver */
@@ -2200,7 +2200,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_97B3 {
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "97b32ddf83f75637e3ba934df117081dd6a1c57d47a4c9700d35e736da11d5bd"
 		hash = "89108a15f009b285db4ef94250b889d5b11b96b4aa7b190784a6d1396e893e10"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -2223,7 +2223,7 @@ rule PUA_VULN_Renamed_Driver_Novellinc_Novellxtier_2899 {
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "28999af32b55ddb7dcfc26376a244aa2fe297233ce7abe4919a1aef2f7e2cee7"
 		hash = "ce23c2dae4cca4771ea50ec737093dfafac06c64db0f924a1ccbbf687e33f5a2"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004e006f00760065006c006c002000580054006900650072002000530065007300730069006f006e0020004d0061006e0061006700650072 } /* FileDescription NovellXTierSessionManager */
@@ -2244,7 +2244,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_818E {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "818e396595d08d724666803cd29dac566dc7db23bf50e9919d04b33afa988c01"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -2266,7 +2266,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_6FFD {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "6ffdde6bc6784c13c601442e47157062941c47015891e7139c2aaba676ab59cc"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c00650020004e006f00540072006100700020004200750069006c0064 } /* FileDescription TrendMicroCommonModuleNoTrapBuild */
@@ -2291,7 +2291,7 @@ rule PUA_VULN_Renamed_Driver_Cpuid_Cpuzsys_Cpuidservice_7710 {
 		hash = "8d57e416ea4bb855b78a2ff3c80de1dfbb5dc5ee9bfbdddb23e46bd8619287e2"
 		hash = "900dd68ccc72d73774a347b3290c4b6153ae496a81de722ebb043e2e99496f88"
 		hash = "f74ffd6916333662900cbecb90aca2d6475a714ce410adf9c5c3264abbe5732c"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004300500055004900440020004400720069007600650072 } /* FileDescription CPUIDDriver */
@@ -2313,7 +2313,7 @@ rule PUA_VULN_Renamed_Driver_Windowsrserverddkprovider_Speedfansys_Windowsrserve
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "22be050955347661685a4343c51f11c7811674e030386d2264cd12ecbf544b7c"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0053007000650065006400460061006e00200044006500760069006300650020004400720069007600650072 } /* FileDescription SpeedFanDeviceDriver */
@@ -2335,7 +2335,7 @@ rule PUA_VULN_Renamed_Driver_Openlibsysorg_Openlibsyssys_Openlibsys_9131 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "91314768da140999e682d2a290d48b78bb25a35525ea12c1b1f9634d14602b2c"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004f00700065006e004c00690062005300790073 } /* FileDescription OpenLibSys */
@@ -2357,7 +2357,7 @@ rule PUA_VULN_Renamed_Driver_Tgsoftsas_Viragtsys_Viritagentsystem_E4EC {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "e4eca7db365929ff7c5c785e2eab04ef8ec67ea9edcf7392f2b74eccd9449148"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005600690072004900540020004100670065006e0074002000530079007300740065006d } /* FileDescription VirITAgentSystem */
@@ -2379,7 +2379,7 @@ rule PUA_VULN_Renamed_Driver_Asustekcomputerinc_Atsziosys_Atsziodriver_FB6B {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "fb6b0d304433bf88cc7d57728683dbb4b9833459dc33528918ead09b3907ff22"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004100540053005a0049004f0020004400720069007600650072 } /* FileDescription ATSZIODriver */
@@ -2402,7 +2402,7 @@ rule PUA_VULN_Renamed_Driver_Sysinternalswwwsysinternalscom_Procexpsys_Processex
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "075de997497262a9d105afeadaaefc6348b25ce0e0126505c24aa9396c251e85"
 		hash = "cdfbe62ef515546f1728189260d0bdf77167063b6dbb77f1db6ed8b61145a2bc"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00500072006f00630065007300730020004500780070006c006f007200650072 } /* FileDescription ProcessExplorer */
@@ -2426,7 +2426,7 @@ rule PUA_VULN_Renamed_Driver_Micsystechnologycoltd_Msiosys_Msiodriverversion_X_A
 		hash = "ae42afa9be9aa6f6a5ae09fa9c05cd2dfb7861dc72d4fd8e0130e5843756c471"
 		hash = "d636c011b8b2896572f5de260eb997182cc6955449b044a739bd19cbe6fdabd2"
 		hash = "0f035948848432bc243704041739e49b528f35c82a5be922d9e3b8a4c44398ff"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004d0049004300530059005300200049004f0020006400720069007600650072 } /* FileDescription MICSYSIOdriver */
@@ -2448,7 +2448,7 @@ rule PUA_VULN_Renamed_Driver_Vektortsecurityservice_Vboxdrv_Antidetectpublic_372
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "3724b39e97936bb20ada51c6119aded04530ed86f6b8d6b45fbfb2f3b9a4114b"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005600690072007400750061006c0042006f007800200053007500700070006f007200740020004400720069007600650072 } /* FileDescription VirtualBoxSupportDriver */
@@ -2470,7 +2470,7 @@ rule PUA_VULN_Renamed_Driver_Elaboratebytesag_Elbycdio_Cdrtools_2380 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "238046cfe126a1f8ab96d8b62f6aa5ec97bab830e2bae5b1b6ab2d31894c79e4"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0045006c0062007900430044002000570069006e0064006f00770073002000780036003400200049002f004f0020006400720069007600650072 } /* FileDescription ElbyCDWindowsxIOdriver */
@@ -2493,7 +2493,7 @@ rule PUA_VULN_Renamed_Driver_Msi_Ntiolibxsys_Ntiolibx_1E8B {
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "1e8b0c1966e566a523d652e00f7727d8b0663f1dfdce3b9a09b9adfaef48d8ee"
 		hash = "5d530e111400785d183057113d70623e17af32931668ab7c7fc826f0fd4f91a3"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004e00540049004f004c00690062005f005800360034 } /* FileDescription NTIOLibX */
@@ -2517,7 +2517,7 @@ rule PUA_VULN_Renamed_Driver_Sysinternalswwwsysinternalscom_Procexpsys_Processex
 		hash = "6bfc0f425de9f4e7480aa2d1f2e08892d0553ed0df1c31e9bf3d8d702f38fa2e"
 		hash = "3c7e5b25a33a7805c999d318a9523fcae46695a89f55bbdb8bb9087360323dfc"
 		hash = "46621554728bc55438c7c241137af401250f062edef6e7efecf1a6f0f6d0c1f7"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00500072006f00630065007300730020004500780070006c006f007200650072 } /* FileDescription ProcessExplorer */
@@ -2539,7 +2539,7 @@ rule PUA_VULN_Renamed_Driver_Sysinternalswwwsysinternalscom_Procexpsys_Processex
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "7a48f92a9c2d95a72e18055cac28c1e7e6cad5f47aa735cbea5c3b82813ccfaf"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00500072006f00630065007300730020004500780070006c006f007200650072 } /* FileDescription ProcessExplorer */
@@ -2561,7 +2561,7 @@ rule PUA_VULN_Renamed_Driver_Zemanaltd_Zam_45F4 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "45f42c5d874369d6be270ea27a5511efcca512aeac7977f83a51b7c4dee6b5ef"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005a0041004d } /* FileDescription ZAM */
@@ -2587,7 +2587,7 @@ rule PUA_VULN_Renamed_Driver_Intelcorporation_Iqvwsys_Intelriqvwsys_4D05 {
 		hash = "a566af57d88f37fa033e64b1d8abbd3ffdacaba260475fbbc8dab846a824eff5"
 		hash = "57a389da784269bb2cc0a258500f6dfbf4f6269276e1192619ce439ec77f4572"
 		hash = "d74755311d127d0eb7454e56babc2db8dbaa814bc4ba8e2a7754d3e0224778e1"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0049006e00740065006c0028005200290020004e006500740077006f0072006b0020004100640061007000740065007200200044006900610067006e006f00730074006900630020004400720069007600650072 } /* FileDescription IntelRNetworkAdapterDiagnosticDriver */
@@ -2605,11 +2605,11 @@ rule PUA_VULN_Renamed_Driver_Intelcorporation_Iqvwsys_Intelriqvwsys_4D05 {
 
 rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_86A1 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "86a1b1bacc0c51332c9979e6aad84b5fba335df6b9a096ccb7681ab0779a8882"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041007600610073007400200061006e0074006900200072006f006f0074006b00690074 } /* FileDescription Avastantirootkit */
@@ -2621,7 +2621,7 @@ rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_86A1 {
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f007000790072006900670068007400200028006300290020003200300031003800200041005600410053005400200053006f006600740077006100720065 } /* LegalCopyright CopyrightcAVASTSoftware */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -2631,7 +2631,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Aegis_61BE {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "61befeef14783eb0fed679fca179d2f5c33eb2dcbd40980669ca2ebeb3bf11cf"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -2649,11 +2649,11 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Aegis_61BE {
 
 rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_BE8D {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "be8dd2d39a527649e34dc77ef8bc07193a4234b38597b8f51e519dadc5479ec2"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041007600610073007400200061006e0074006900200072006f006f0074006b00690074 } /* FileDescription Avastantirootkit */
@@ -2665,7 +2665,7 @@ rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_BE8D {
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f007000790072006900670068007400200028006300290020003200300031003800200041005600410053005400200053006f006600740077006100720065 } /* LegalCopyright CopyrightcAVASTSoftware */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -2675,7 +2675,7 @@ rule PUA_VULN_Renamed_Driver_Msi_Ntiolibsys_Ntiolib_3070 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "30706f110725199e338e9cc1c940d9a644d19a14f0eb8847712cba4cacda67ab"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004d0053004900200043006f006d00430065006e00530065007200760069006300650020004400720069007600650072 } /* FileDescription MSIComCenServiceDriver */
@@ -2697,7 +2697,7 @@ rule PUA_VULN_Renamed_Driver_Msi_Ntiolibsys_Ntiolib_CC58 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "cc586254e9e89e88334adee44e332166119307e79c2f18f6c2ab90ce8ba7fc9b"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004e00540049004f004c00690062 } /* FileDescription NTIOLib */
@@ -2721,7 +2721,7 @@ rule PUA_VULN_Renamed_Driver_Windowsrcodenamelonghornddkprovider_Rtkiosys_Window
 		hash = "916c535957a3b8cbf3336b63b2260ea4055163a9e6b214f2a7005d6d36a4a677"
 		hash = "caa85c44eb511377ea7426ff10df00a701c07ffb384eef8287636a4bca0b53ab"
 		hash = "478917514be37b32d5ccf76e4009f6f952f39f5553953544f1b0688befd95e82"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005200650061006c00740065006b00200049004f004400720069007600650072 } /* FileDescription RealtekIODriver */
@@ -2743,7 +2743,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_E4D9 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "e4d9f037411284e996a002b15b49bc227d085ee869ae1cd91ba54ff7c244f036"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -2765,7 +2765,7 @@ rule PUA_VULN_Renamed_Driver_Windowsrwinddkprovider_Cupfixerxsys_Windowsrwinddkd
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "8c748ae5dcc10614cc134064c99367d28f3131d1f1dda0c9c29e99279dc1bdd9"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00530069006e0063006500790020004300750070002000460069007800650072 } /* FileDescription SinceyCupFixer */
@@ -2787,7 +2787,7 @@ rule PUA_VULN_Renamed_Driver_Asustekcomputerinc_Eiosys_Asusvgakernelmodedriver_B
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "b17507a3246020fa0052a172485d7b3567e0161747927f2edf27c40e310852e0"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004100530055005300200056004700410020004b00650072006e0065006c0020004d006f006400650020004400720069007600650072 } /* FileDescription ASUSVGAKernelModeDriver */
@@ -2809,7 +2809,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_2AFD {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "2afdb3278a7b57466a103024aef9ff7f41c73a19bab843a8ebf3d3c4d4e82b30"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -2831,7 +2831,7 @@ rule PUA_VULN_Renamed_Driver_Asustekcomputerinc_Iomapsys_Asuskernelmodedriverfor
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "ea85bbe63d6f66f7efee7007e770af820d57f914c7f179c5fee3ef2845f19c41"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00410053005500530020004b00650072006e0065006c0020004d006f00640065002000440072006900760065007200200066006f00720020004e00540020 } /* FileDescription ASUSKernelModeDriverforNT */
@@ -2853,7 +2853,7 @@ rule PUA_VULN_Renamed_Driver_Tgsoftsas_Viragtsys_Viritagentsystem_E05E {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "e05eeb2b8c18ad2cb2d1038c043d770a0d51b96b748bc34be3e7fc6f3790ce53"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005600690072004900540020004100670065006e0074002000530079007300740065006d } /* FileDescription VirITAgentSystem */
@@ -2871,11 +2871,11 @@ rule PUA_VULN_Renamed_Driver_Tgsoftsas_Viragtsys_Viritagentsystem_E05E {
 
 rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecuritysystem_E452 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "e4522e2cfa0b1f5d258a3cf85b87681d6969e0572f668024c465d635c236b5d9"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00410056004700200061006e0074006900200072006f006f0074006b00690074 } /* FileDescription AVGantirootkit */
@@ -2887,7 +2887,7 @@ rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecurit
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f0070007900720069006700680074002000280043002900200032003000310038002000410056004700200054006500630068006e006f006c006f006700690065007300200043005a002c00200073002e0072002e006f002e } /* LegalCopyright CopyrightCAVGTechnologiesCZsro */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -2898,7 +2898,7 @@ rule PUA_VULN_Renamed_Driver_Marvintestsolutionsinc_Hwsys_Hw_5596 {
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "55963284bbd5a3297f39f12f0d8a01ed99fe59d008561e3537bcd4db4b4268fa"
 		hash = "4880f40f2e557cff38100620b9aa1a3a753cb693af16cd3d95841583edcb57a8"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004800570020002d002000570069006e0064006f007700730020004e0054002d003100300020002800330032002f00360034002000620069007400290020006b00650072006e0065006c0020006d006f00640065002000640072006900760065007200200066006f007200200050004300200070006f007200740073002f006d0065006d006f00720079002f0050004300490020006100630063006500730073 } /* FileDescription HWWindowsNTbitkernelmodedriverforPCportsmemoryPCIaccess */
@@ -2920,7 +2920,7 @@ rule PUA_VULN_Renamed_Driver_Mydriverscom_Hwm_Drivergenius_08EB {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "08eb2d2aa25c5f0af4e72a7e0126735536f6c2c05e9c7437282171afe5e322c6"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00440072006900760065007200470065006e0069007500730020004800610072006400770061007200650020006d006f006e00690074006f0072 } /* FileDescription DriverGeniusHardwaremonitor */
@@ -2942,7 +2942,7 @@ rule PUA_VULN_Renamed_Driver_Sisoftware_Sandra_Sisoftwaresandra_3E27 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "3e274df646f191d2705c0beaa35eeea84808593c3b333809f13632782e27ad75"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00530061006e006400720061002000440065007600690063006500200044007200690076006500720020002800570069006e003600340020007800360034002900280055006e00690063006f006400650029 } /* FileDescription SandraDeviceDriverWinxUnicode */
@@ -2966,7 +2966,7 @@ rule PUA_VULN_Renamed_Driver_Powertool_Kevpsys_Powertool_8E63 {
 		hash = "8e6363a6393eb4234667c6f614b2072e33512866b3204f8395bbe01530d63f2f"
 		hash = "09b0e07af8b17db1d896b78da4dd3f55db76738ee1f4ced083a97d737334a184"
 		hash = "1aaa9aef39cb3c0a854ecb4ca7d3b213458f302025e0ec5bfbdef973cca9111c"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0050006f0077006500720054006f006f006c } /* FileDescription PowerTool */
@@ -2984,11 +2984,11 @@ rule PUA_VULN_Renamed_Driver_Powertool_Kevpsys_Powertool_8E63 {
 
 rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpot_Avastantivirus_3B6E {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "3b6e85c8fed9e39b21b2eab0b69bc464272b2c92961510c36e2e2df7aa39861b"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041007600610073007400200041006e0074006900200052006f006f0074006b00690074 } /* FileDescription AvastAntiRootkit */
@@ -3000,7 +3000,7 @@ rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpot_Avastantivirus_3B6E {
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f007000790072006900670068007400200028006300290020003200300032003000200041005600410053005400200053006f006600740077006100720065 } /* LegalCopyright CopyrightcAVASTSoftware */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -3011,7 +3011,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_7C73 {
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "7c731c0ea7f28671ab7787800db69739ea5cd6be16ea21045b4580cf95cbf73b"
 		hash = "fca10cde7d331b7f614118682d834d46125a65888e97bd9fda2df3f15797166c"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -3029,11 +3029,11 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_7C73 {
 
 rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_1A42 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "1a42ebde59e8f63804eaa404f79ee93a16bb33d27fb158c6bfbe6143226899a0"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041007600610073007400200061006e0074006900200072006f006f0074006b00690074 } /* FileDescription Avastantirootkit */
@@ -3045,7 +3045,7 @@ rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_1A42 {
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f007000790072006900670068007400200028006300290020003200300031003900200041005600410053005400200053006f006600740077006100720065 } /* LegalCopyright CopyrightcAVASTSoftware */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -3055,7 +3055,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_EC5F {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "ec5fac0b6bb267a2bd10fc80c8cca6718439d56e82e053d3ff799ce5f3475db5"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -3073,11 +3073,11 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_EC5F {
 
 rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpot_Avginternetsecuritysystem_34E0 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "34e0364a4952d914f23f271d36e11161fb6bb7b64aea22ff965a967825a4a4bf"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00410056004700200041006e0074006900200052006f006f0074006b00690074 } /* FileDescription AVGAntiRootkit */
@@ -3089,7 +3089,7 @@ rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpot_Avginternetsecuritysy
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f0070007900720069006700680074002000280043002900200032003000320030002000410056004700200054006500630068006e006f006c006f006700690065007300200043005a002c00200073002e0072002e006f002e } /* LegalCopyright CopyrightCAVGTechnologiesCZsro */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -3099,7 +3099,7 @@ rule PUA_VULN_Renamed_Driver_Msi_Ntiolibsys_Ntiolib_D0BD {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "d0bd1ae72aeb5f3eabf1531a635f990e5eaae7fdd560342f915f723766c80889"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004e00540049004f004c00690062 } /* FileDescription NTIOLib */
@@ -3121,7 +3121,7 @@ rule PUA_VULN_Renamed_Driver_Zemanaltd_Zam_3C18 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "3c18ae965fba56d09a65770b4d8da54ccd7801f979d3ebd283397bc99646004b"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005a0041004d } /* FileDescription ZAM */
@@ -3140,7 +3140,7 @@ rule PUA_VULN_Renamed_Driver_Tgsoftsas_Viragtsys_Viritagentsystem_2B4C {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "2b4c7d3820fe08400a7791e2556132b902a9bbadc1942de57077ecb9d21bf47a"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005600690072004900540020004100670065006e0074002000530079007300740065006d } /* FileDescription VirITAgentSystem */
@@ -3162,7 +3162,7 @@ rule PUA_VULN_Renamed_Driver_Dtresearchinc_Iomemsys_Iomemsys_3D23 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "3d23bdbaf9905259d858df5bf991eb23d2dc9f4ecda7f9f77839691acef1b8c4"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0044005400520020004b00650072006e0065006c0020006d006f006400650020006400720069007600650072 } /* FileDescription DTRKernelmodedriver */
@@ -3184,7 +3184,7 @@ rule PUA_VULN_Renamed_Driver_Sisoftware_Sandra_Sisoftwaresandra_496F {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "496f4a4021226fb0f1b5f71a7634c84114c29faa308746a12c2414adb6b2a40b"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00530061006e006400720061002000440065007600690063006500200044007200690076006500720020002800570069006e003600340020007800360034002900280055006e00690063006f006400650029 } /* FileDescription SandraDeviceDriverWinxUnicode */
@@ -3207,7 +3207,7 @@ rule PUA_VULN_Renamed_Driver_Sysinternalswwwsysinternalscom_Procexpsys_Processex
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "1b00d6e5d40b1b84ca63da0e99246574cdd2a533122bc83746f06c0d66e63a6e"
 		hash = "51e91dd108d974ae809e5fc23f6fbd16e13f672f86aa594dae4a5c4bc629b0b5"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00500072006f00630065007300730020004500780070006c006f007200650072 } /* FileDescription ProcessExplorer */
@@ -3229,7 +3229,7 @@ rule PUA_VULN_Renamed_Driver_Multitheftauto_Mtasanandreas_9F4C {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "9f4ce6ab5e8d44f355426d9a6ab79833709f39b300733b5b251a0766e895e0e5"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004d0075006c007400690020005400680065006600740020004100750074006f0020007000610074006300680020006400720069007600650072 } /* FileDescription MultiTheftAutopatchdriver */
@@ -3245,11 +3245,11 @@ rule PUA_VULN_Renamed_Driver_Multitheftauto_Mtasanandreas_9F4C {
 
 rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_2732 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "2732050a7d836ae0bdc5c0aea4cdf8ce205618c3e7f613b8139c176e86476d0c"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041007600610073007400200061006e0074006900200072006f006f0074006b00690074 } /* FileDescription Avastantirootkit */
@@ -3261,7 +3261,7 @@ rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_2732 {
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f007000790072006900670068007400200028006300290020003200300031003800200041005600410053005400200053006f006600740077006100720065 } /* LegalCopyright CopyrightcAVASTSoftware */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -3271,7 +3271,7 @@ rule PUA_VULN_Renamed_Driver_Tgsoftsas_Viragtsys_Viritagentsystem_EF6D {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "ef6d3c00f9d0aa31a218094480299ef73fc85146adf62fd0c2f4f88972c5c850"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005600690072004900540020004100670065006e0074002000530079007300740065006d } /* FileDescription VirITAgentSystem */
@@ -3293,7 +3293,7 @@ rule PUA_VULN_Renamed_Driver_Microfocus_Microfocusxtier_95D5 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "95d50c69cdbf10c9c9d61e64fe864ac91e6f6caa637d128eb20e1d3510e776d3"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0058005400690065007200200043004f004d0020005300650072007600690063006500730020004400720069007600650072 } /* FileDescription XTierCOMServicesDriver */
@@ -3314,7 +3314,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_E3EF {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "e3eff841ea0f2786e5e0fed2744c0829719ad711fc9258eeaf81ed65a52a8918"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -3336,7 +3336,7 @@ rule PUA_VULN_Renamed_Driver_Arthurliberman_Alsysiosys_Alsysio_7F37 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "7f375639a0df7fe51e5518cf87c3f513c55bc117db47d28da8c615642eb18bfa"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041004c0053007900730049004f } /* FileDescription ALSysIO */
@@ -3358,7 +3358,7 @@ rule PUA_VULN_Renamed_Driver_Panyazilimbilisimteknolojileriticltdsti_Paniosys_Pa
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "f596e64f4c5d7c37a00493728d8756b243cfdc11e3372d6d6dfeffc13c9ab960"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00540065006d0070006500720061007400750072006500200061006e0064002000730079007300740065006d00200069006e0066006f0072006d006100740069006f006e0020006400720069007600650072 } /* FileDescription Temperatureandsysteminformationdriver */
@@ -3376,11 +3376,11 @@ rule PUA_VULN_Renamed_Driver_Panyazilimbilisimteknolojileriticltdsti_Paniosys_Pa
 
 rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpot_Avastantivirus_1768 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "17687cba00ec2c9036dd3cb5430aa1f4851e64990dafb4c8f06d88de5283d6ca"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041007600610073007400200041006e0074006900200052006f006f0074006b00690074 } /* FileDescription AvastAntiRootkit */
@@ -3392,17 +3392,17 @@ rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpot_Avastantivirus_1768 {
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f007000790072006900670068007400200028006300290020003200300032003000200041005600410053005400200053006f006600740077006100720065 } /* LegalCopyright CopyrightcAVASTSoftware */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
 rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecuritysystem_9A54 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "9a54ef5cfbe6db599322967ee2c84db7daabcb468be10a3ccfcaa0f64d9173c7"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00410056004700200061006e0074006900200072006f006f0074006b00690074 } /* FileDescription AVGantirootkit */
@@ -3414,7 +3414,7 @@ rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecurit
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f0070007900720069006700680074002000280043002900200032003000310038002000410056004700200054006500630068006e006f006c006f006700690065007300200043005a002c00200073002e0072002e006f002e } /* LegalCopyright CopyrightCAVGTechnologiesCZsro */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -3424,7 +3424,7 @@ rule PUA_VULN_Renamed_Driver_Oti_Otipcibussys_Kernelmodedrivertoaccessphysicalme
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "4e3eb5b9bce2fd9f6878ae36288211f0997f6149aa8c290ed91228ba4cdfae80"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0048006100720064007700610072006500200041006300630065007300730020004400720069007600650072 } /* FileDescription HardwareAccessDriver */
@@ -3441,11 +3441,11 @@ rule PUA_VULN_Renamed_Driver_Oti_Otipcibussys_Kernelmodedrivertoaccessphysicalme
 
 rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_DCB8 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "dcb815eb8e9016608d0d917101b6af8c84b96fb709dc0344bceed02cbc4ed258"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041007600610073007400200061006e0074006900200072006f006f0074006b00690074 } /* FileDescription Avastantirootkit */
@@ -3457,7 +3457,7 @@ rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_DCB8 {
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f007000790072006900670068007400200028006300290020003200300031003900200041005600410053005400200053006f006600740077006100720065 } /* LegalCopyright CopyrightcAVASTSoftware */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -3467,7 +3467,7 @@ rule PUA_VULN_Renamed_Driver_Micsystechnologycoltd_Msiosys_Msiodriverversion_X_C
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "cfcf32f5662791f1f22a77acb6dddfbc970fe6e99506969b3ea67c03f67687ab"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004d0049004300530059005300200049004f0020006400720069007600650072 } /* FileDescription MICSYSIOdriver */
@@ -3489,7 +3489,7 @@ rule PUA_VULN_Renamed_Driver_Dtresearchinc_Iomemsys_Iomemsys_DD4A {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "dd4a1253d47de14ef83f1bc8b40816a86ccf90d1e624c5adf9203ae9d51d4097"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0044005400520020004b00650072006e0065006c0020006d006f006400650020006400720069007600650072 } /* FileDescription DTRKernelmodedriver */
@@ -3511,7 +3511,7 @@ rule PUA_VULN_Renamed_Driver_Pchuntersys_Pchunter_1B7F {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "1b7fb154a7b7903a3c81f12f4b094f24a3c60a6a8cffca894c67c264ab7545fa"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00450070006f006f006c0073006f00660074002000570069006e0064006f0077007300200049006e0066006f0072006d006100740069006f006e0020005600690065007700200054006f006f006c0073 } /* FileDescription EpoolsoftWindowsInformationViewTools */
@@ -3529,11 +3529,11 @@ rule PUA_VULN_Renamed_Driver_Pchuntersys_Pchunter_1B7F {
 
 rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_6500 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "65008817eb97635826a8708a6411d7b50f762bab81304e457119d669382944c3"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041007600610073007400200061006e0074006900200072006f006f0074006b00690074 } /* FileDescription Avastantirootkit */
@@ -3545,7 +3545,7 @@ rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_6500 {
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f007000790072006900670068007400200028006300290020003200300031003900200041005600410053005400200053006f006600740077006100720065 } /* LegalCopyright CopyrightcAVASTSoftware */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -3555,7 +3555,7 @@ rule PUA_VULN_Renamed_Driver_Novellinc_Novellxtier_8E88 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "8e88cb80328c3dbaa2752591692e74a2fae7e146d7d8aabc9b9ac9a6fe561e6c"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004e006f00760065006c006c002000580054006900650072002000530065007300730069006f006e0020004d0061006e0061006700650072 } /* FileDescription NovellXTierSessionManager */
@@ -3576,7 +3576,7 @@ rule PUA_VULN_Renamed_Driver_Zemanaltd_Zam_E428 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "e428ddf9afc9b2d11e2271f0a67a2d6638b860c2c12d4b8cc63d33f3349ee93f"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005a0041004d } /* FileDescription ZAM */
@@ -3595,7 +3595,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_0909 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "0909005d625866ef8ccd8ae8af5745a469f4f70561b644d6e38b80bccb53eb06"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -3618,7 +3618,7 @@ rule PUA_VULN_Renamed_Driver_Huawei_Hwosec_Huaweimatebook_B179 {
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "b179e1ab6dc0b1aee783adbcad4ad6bb75a8a64cb798f30c0dd2ee8aaf43e6de"
 		hash = "bb1135b51acca8348d285dc5461d10e8f57260e7d0c8cc4a092734d53fc40cbc"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00480077004f0073003200450063 } /* FileDescription HwOsEc */
@@ -3640,7 +3640,7 @@ rule PUA_VULN_Renamed_Driver_Hpinc_Hpportioxsys_Hpportio_A468 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "a4680fabf606d6580893434e81c130ff7ec9467a15e6534692443465f264d3c9"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004800700050006f007200740049006f } /* FileDescription HpPortIo */
@@ -3661,7 +3661,7 @@ rule PUA_VULN_Renamed_Driver_Zemanaltd_Zam_7661 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "76614f2e372f33100a8d92bf372cdbc1e183930ca747eed0b0cf2501293b990a"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005a0041004d } /* FileDescription ZAM */
@@ -3680,7 +3680,7 @@ rule PUA_VULN_Renamed_Driver_Gigabytetechnologycoltd_Gdrvsys_Gigabytesoftwaredri
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "8b92cdb91a2e2fab3881d54f5862e723826b759749f837a11c9e9d85d52095a2"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0047004900470041002d00420059005400450020004e006f006e0050006e00500020004400720069007600650072 } /* FileDescription GIGABYTENonPnPDriver */
@@ -3702,7 +3702,7 @@ rule PUA_VULN_Renamed_Driver_Sisoftware_Sandra_Sisoftwaresandra_881B {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "881bca6dc2dafe1ae18aeb59216af939a3ac37248c13ed42ad0e1048a3855461"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00530061006e006400720061002000440065007600690063006500200044007200690076006500720020002800570069006e003600340020007800360034002900280055006e00690063006f006400650029 } /* FileDescription SandraDeviceDriverWinxUnicode */
@@ -3724,7 +3724,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_5192 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "5192ec4501d0fe0b1c8f7bf9b778f7524a7a70a26bbbb66e5dab8480f6fdbb8b"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -3746,7 +3746,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_80A5 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "80a59ca71fc20961ccafc0686051e86ae4afbbd4578cb26ad4570b9207651085"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -3768,7 +3768,7 @@ rule PUA_VULN_Renamed_Driver_Microfocus_Microfocusxtier_5351 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "5351c81b4ec5a0d79c39d24bac7600d10eac30c13546fde43d23636b3f421e7c"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0058005400690065007200200053006500630075007200690074007900200043006f006e00740065007800740020004d0061006e0061006700650072 } /* FileDescription XTierSecurityContextManager */
@@ -3790,7 +3790,7 @@ rule PUA_VULN_Renamed_Driver_Sunmicrosystemsinc_Vboxdrvsys_Sunvirtualbox_R_7882 
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "78827fa00ea48d96ac9af8d1c1e317d02ce11793e7f7f6e4c7aac7b5d7dd490f"
 		hash = "c26b51b4c37330800cff8519252e110116c3aaade94ceb9894ec5bfb1b8f9924"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005600690072007400750061006c0042006f007800200053007500700070006f007200740020004400720069007600650072 } /* FileDescription VirtualBoxSupportDriver */
@@ -3813,7 +3813,7 @@ rule PUA_VULN_Renamed_Driver_Corsairmemoryinc_Corsairllaccess_Corsairllaccess_5F
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "5fad3775feb8b6f6dcbd1642ae6b6a565ff7b64eadfc9bf9777918b51696ab36"
 		hash = "29a90ae1dcee66335ece4287a06482716530509912be863c85a2a03a6450a5b6"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0043006f007200730061006900720020004c004c0020004100630063006500730073 } /* FileDescription CorsairLLAccess */
@@ -3837,7 +3837,7 @@ rule PUA_VULN_Renamed_Driver_Cpuid_Cpuzsys_Cpuidservice_A072 {
 		hash = "a072197177aad26c31960694e38e2cae85afbab070929e67e331b99d3a418cf4"
 		hash = "e0b5a5f8333fc1213791af5c5814d7a99615b3951361ca75f8aa5022c9cfbc2b"
 		hash = "ded2927f9a4e64eefd09d0caba78e94f309e3a6292841ae81d5528cab109f95d"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004300500055004900440020004400720069007600650072 } /* FileDescription CPUIDDriver */
@@ -3859,7 +3859,7 @@ rule PUA_VULN_Renamed_Driver_Tgsoftsas_Viragtsys_Viritagentsystem_2A62 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "2a6212f3b68a6f263e96420b3607b31cfdfe51afff516f3c87d27bf8a89721e8"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005600690072004900540020004100670065006e0074002000530079007300740065006d } /* FileDescription VirITAgentSystem */
@@ -3877,11 +3877,11 @@ rule PUA_VULN_Renamed_Driver_Tgsoftsas_Viragtsys_Viritagentsystem_2A62 {
 
 rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_AAA3 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "aaa3459bcac25423f78ed72dbae4d7ef19e7c5c65770cbe5210b14e33cd1816c"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041007600610073007400200061006e0074006900200072006f006f0074006b00690074 } /* FileDescription Avastantirootkit */
@@ -3893,7 +3893,7 @@ rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_AAA3 {
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f007000790072006900670068007400200028006300290020003200300031003800200041005600410053005400200053006f006600740077006100720065 } /* LegalCopyright CopyrightcAVASTSoftware */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -3903,7 +3903,7 @@ rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswvmmsys_Avastantivirus_3650 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "36505921af5a09175395ebaea29c72b2a69a3a9204384a767a5be8a721f31b10"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00610076006100730074002100200056004d0020004d006f006e00690074006f0072 } /* FileDescription avastVMMonitor */
@@ -3927,7 +3927,7 @@ rule PUA_VULN_Renamed_Driver_Windowsrserverddkprovider_Gdrvsys_Windowsrserverddk
 		hash = "31f4cfb4c71da44120752721103a16512444c13c2ac2d857a7e6f13cb679b427"
 		hash = "6f1fc8287dd8d724972d7a165683f2b2ad6837e16f09fe292714e8e38ecd1e38"
 		hash = "17927b93b2d6ab4271c158f039cae2d60591d6a14458f5a5690aec86f5d54229"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0047004900470041004200590054004500200054006f006f006c0073 } /* FileDescription GIGABYTETools */
@@ -3949,7 +3949,7 @@ rule PUA_VULN_Renamed_Driver_Gigabytetechnologycoltd_Gdrvsys_Gdrv_FF67 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "ff6729518a380bf57f1bc6f1ec0aa7f3012e1618b8d9b0f31a61d299ee2b4339"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0047004900470041002d00420059005400450020004e006f006e0050004e00500020004400720069007600650072 } /* FileDescription GIGABYTENonPNPDriver */
@@ -3971,7 +3971,7 @@ rule PUA_VULN_Renamed_Driver_Asustekcomputerinc_Eiosys_Asusvgakernelmodedriver_C
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "cf69704755ec2643dfd245ae1d4e15d77f306aeb1a576ffa159453de1a7345cb"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004100530055005300200056004700410020004b00650072006e0065006c0020004d006f006400650020004400720069007600650072 } /* FileDescription ASUSVGAKernelModeDriver */
@@ -3993,7 +3993,7 @@ rule PUA_VULN_Renamed_Driver_Sysinternalswwwsysinternalscom_Procexpsys_Processex
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "440883cd9d6a76db5e53517d0ec7fe13d5a50d2f6a7f91ecfc863bc3490e4f5c"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00500072006f00630065007300730020004500780070006c006f007200650072 } /* FileDescription ProcessExplorer */
@@ -4015,7 +4015,7 @@ rule PUA_VULN_Renamed_Driver_Rivetnetworksllc_Kfecodrvsys_Killertrafficcontrol_B
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "b583414fcee280128788f7b39451c511376fe821f455d4f3702795e96d560704"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004b0069006c006c006500720020005400720061006600660069006300200043006f006e00740072006f006c002000430061006c006c006f007500740020004400720069007600650072 } /* FileDescription KillerTrafficControlCalloutDriver */
@@ -4037,7 +4037,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroaegis_ED2F {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "ed2f33452ec32830ffef2d5dc832985db9600c306ed890c47f3f33ccbb335c39"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -4059,7 +4059,7 @@ rule PUA_VULN_Renamed_Driver_Msi_Ntiolibxsys_Ntiolib_09BE {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "09bedbf7a41e0f8dabe4f41d331db58373ce15b2e9204540873a1884f38bdde1"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004e00540049004f004c00690062 } /* FileDescription NTIOLib */
@@ -4081,7 +4081,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Aegis_A802 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "a8027daa6facf1ff81405daf6763249e9acf232a1a191b6bf106711630e6188e"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -4099,11 +4099,11 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Aegis_A802 {
 
 rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecuritysystem_0F01 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "0f016c80c4938fbcd47a47409969b3925f54292eba2ce01a8e45222ce8615eb8"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00410056004700200061006e0074006900200072006f006f0074006b00690074 } /* FileDescription AVGantirootkit */
@@ -4115,7 +4115,7 @@ rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecurit
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f0070007900720069006700680074002000280043002900200032003000310038002000410056004700200054006500630068006e006f006c006f006700690065007300200043005a002c00200073002e0072002e006f002e } /* LegalCopyright CopyrightCAVGTechnologiesCZsro */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -4125,7 +4125,7 @@ rule PUA_VULN_Renamed_Driver_Sunmicrosystemsinc_Vboxdrvsys_Sunvirtualbox_R_7539 
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "7539157df91923d4575f7f57c8eb8b0fd87f064c919c1db85e73eebb2910b60c"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005600690072007400750061006c0042006f007800200053007500700070006f007200740020004400720069007600650072 } /* FileDescription VirtualBoxSupportDriver */
@@ -4147,7 +4147,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_478D {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "478d855b648ef4501d3b08b3b10e94076ac67546b0ce86b454324f1bf9a78aa0"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -4169,7 +4169,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Activeclean_A903 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "a903f329b70f0078197cb7683aae1bb432eaf58572fe572f7cb4bc2080042d7e"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -4192,7 +4192,7 @@ rule PUA_VULN_Renamed_Driver_Sysinternalswwwsysinternalscom_Procexpsys_Processex
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "3ff39728f1c11d1108f65ec5eb3d722fd1a1279c530d79712e0d32b34880baaa"
 		hash = "86721ee8161096348ed3dbe1ccbf933ae004c315b1691745a8af4a0df9fed675"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00500072006f00630065007300730020004500780070006c006f007200650072 } /* FileDescription ProcessExplorer */
@@ -4214,7 +4214,7 @@ rule PUA_VULN_Renamed_Driver_Sysinternalswwwsysinternalscom_Procexpsys_Processex
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "bdbceca41e576841cad2f2b38ee6dbf92fd77fbbfdfe6ecf99f0623d44ef182c"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00500072006f00630065007300730020004500780070006c006f007200650072 } /* FileDescription ProcessExplorer */
@@ -4236,7 +4236,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_7837 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "7837cb350338c4958968d06b105466da6518f5bb522a6e70e87c0cad85128408"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -4254,11 +4254,11 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_7837 {
 
 rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecuritysystem_0B2A {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "0b2ad05939b0aabbdc011082fad7960baa0c459ec16a2b29f37c1fa31795a46d"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00410056004700200061006e0074006900200072006f006f0074006b00690074 } /* FileDescription AVGantirootkit */
@@ -4270,7 +4270,7 @@ rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecurit
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f0070007900720069006700680074002000280043002900200032003000310038002000410056004700200054006500630068006e006f006c006f006700690065007300200043005a002c00200073002e0072002e006f002e } /* LegalCopyright CopyrightCAVGTechnologiesCZsro */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -4280,7 +4280,7 @@ rule PUA_VULN_Renamed_Driver_Copyright_Advancedmalwareprotection_6F55 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "6f55c148bb27c14408cf0f16f344abcd63539174ac855e510a42d78cfaec451c"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041006400760061006e0063006500640020004d0061006c0077006100720065002000500072006f00740065006300740069006f006e } /* FileDescription AdvancedMalwareProtection */
@@ -4301,7 +4301,7 @@ rule PUA_VULN_Renamed_Driver_Elaboratebytesag_Elbycdio_Cdrtools_EEA5 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "eea53103e7a5a55dc1df79797395a2a3e96123ebd71cdd2db4b1be80e7b3f02b"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0045006c0062007900430044002000570069006e0064006f007700730020004e0054002f0032003000300030002f0058005000200049002f004f0020006400720069007600650072 } /* FileDescription ElbyCDWindowsNTXPIOdriver */
@@ -4323,7 +4323,7 @@ rule PUA_VULN_Renamed_Driver_Intelcorporation_Iqvwsys_Intelriqvwsys_2D2C {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "2d2c7ee9547738a8a676ab785c151e8b48ed40fe7cf6174650814c7f5f58513b"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0049006e00740065006c0028005200290020004e006500740077006f0072006b0020004100640061007000740065007200200044006900610067006e006f00730074006900630020004400720069007600650072 } /* FileDescription IntelRNetworkAdapterDiagnosticDriver */
@@ -4345,7 +4345,7 @@ rule PUA_VULN_Renamed_Driver_Elaboratebytesag_Elbycdio_Cdrtools_5CFA {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "5cfad3d473961763306d72c12bd5ae14183a1a5778325c9acacca764b79ca185"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0045006c0062007900430044002000570069006e0064006f007700730020004e0054002f0032003000300030002f0058005000200049002f004f0020006400720069007600650072 } /* FileDescription ElbyCDWindowsNTXPIOdriver */
@@ -4367,7 +4367,7 @@ rule PUA_VULN_Renamed_Driver_Arthurliberman_Alsysiosys_Alsysio_119C {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "119c48b79735fda0ecd973d77d9bdc6b329960caed09b38ab454236ca039d280"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041004c0053007900730049004f00360034 } /* FileDescription ALSysIO */
@@ -4389,7 +4389,7 @@ rule PUA_VULN_Renamed_Driver_Tgsoftsas_Viragtsys_Viritagentsystem_263E {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "263e8f1e20612849aea95272da85773f577fd962a7a6d525b53f43407aa7ad24"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005600690072004900540020004100670065006e0074002000530079007300740065006d } /* FileDescription VirITAgentSystem */
@@ -4411,7 +4411,7 @@ rule PUA_VULN_Renamed_Driver_Msi_Ntiolibsys_Ntiolib_E839 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "e83908eba2501a00ef9e74e7d1c8b4ff1279f1cd6051707fd51824f87e4378fa"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004e00540049004f004c0069006200200066006f00720020004d00530049004300500055005f00430043 } /* FileDescription NTIOLibforMSICPUCC */
@@ -4433,7 +4433,7 @@ rule PUA_VULN_Renamed_Driver_Hilschergesellschaftfrsystemaoutomationmbh_Physmems
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "c299063e3eae8ddc15839767e83b9808fd43418dc5a1af7e4f44b97ba53fbd3d"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0050006800790073006900630061006c0020004d0065006d006f0072007900200041006300630065007300730020004400720069007600650072 } /* FileDescription PhysicalMemoryAccessDriver */
@@ -4455,7 +4455,7 @@ rule PUA_VULN_Renamed_Driver_Advancedmicrodevices_Amdryzenmasterdriversys_Amdryz
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "af1011c76a22af7be97a0b3e0ce11aca0509820c59fa7c8eeaaa1b2c0225f75a"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041004d0044002000520079007a0065006e0020004d00610073007400650072002000530065007200760069006300650020004400720069007600650072 } /* FileDescription AMDRyzenMasterServiceDriver */
@@ -4477,7 +4477,7 @@ rule PUA_VULN_Renamed_Driver_Elaboratebytesag_Elbycdio_Cdrtools_ADA4 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "ada4e42bf5ef58ef1aad94435441003b1cc1fcaa5d38bfdbe1a3d736dc451d47"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0045006c0062007900430044002000570069006e0064006f007700730020004e0054002f0032003000300030002f0058005000200049002f004f0020006400720069007600650072 } /* FileDescription ElbyCDWindowsNTXPIOdriver */
@@ -4499,7 +4499,7 @@ rule PUA_VULN_Renamed_Driver_Tgsoftsas_Viragtsys_Viritagentsystem_9B2F {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "9b2f051ac901ab47d0012a1002cb8b2db28c14e9480c0dd55e1ac11c81ba9285"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005600690072004900540020004100670065006e0074002000530079007300740065006d } /* FileDescription VirITAgentSystem */
@@ -4521,7 +4521,7 @@ rule PUA_VULN_Renamed_Driver_Cyreninc_Amp_Cyrenamp_CBB8 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "cbb8239a765bf5b2c1b6a5c8832d2cab8fef5deacadfb65d8ed43ef56d291ab6"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041004d00500020004d0069006e006900660069006c007400650072 } /* FileDescription AMPMinifilter */
@@ -4543,7 +4543,7 @@ rule PUA_VULN_Renamed_Driver_Supermicrocomputerinc_Superbmc_Superbmc_F843 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "f8430bdc6fd01f42217d66d87a3ef6f66cb2700ebb39c4f25c8b851858cc4b35"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]007300750070006500720062006d0063 } /* FileDescription superbmc */
@@ -4561,11 +4561,11 @@ rule PUA_VULN_Renamed_Driver_Supermicrocomputerinc_Superbmc_Superbmc_F843 {
 
 rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecuritysystem_1023 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "1023dcd4c80db19e9f82f95b1c5e1ddb60db7ac034848dd5cc1c78104a6350f4"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00410056004700200061006e0074006900200072006f006f0074006b00690074 } /* FileDescription AVGantirootkit */
@@ -4577,7 +4577,7 @@ rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecurit
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f0070007900720069006700680074002000280043002900200032003000310038002000410056004700200054006500630068006e006f006c006f006700690065007300200043005a002c00200073002e0072002e006f002e } /* LegalCopyright CopyrightCAVGTechnologiesCZsro */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -4588,7 +4588,7 @@ rule PUA_VULN_Renamed_Driver_Intelcorporation_Iqvwsys_Intelriqvwsys_F877 {
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "f877296e8506e6a1acbdacdc5085b18c6842320a2775a329d286bac796f08d54"
 		hash = "de3597ae7196ca8c0750dce296a8a4f58893774f764455a125464766fcc9b3b5"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0049006e00740065006c0028005200290020004e006500740077006f0072006b0020004100640061007000740065007200200044006900610067006e006f00730074006900630020004400720069007600650072 } /* FileDescription IntelRNetworkAdapterDiagnosticDriver */
@@ -4610,7 +4610,7 @@ rule PUA_VULN_Renamed_Driver_Almicosoftware_Sfdrvxsys_Speedfan_X_AD23 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "ad23d77a38655acb71216824e363df8ac41a48a1a0080f35a0d23aa14b54460b"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00530070006500650064002000460061006e00200078003300320020004400720069007600650072 } /* FileDescription SpeedFanxDriver */
@@ -4636,7 +4636,7 @@ rule PUA_VULN_Renamed_Driver_Asustekcomputerinc_Atsziosys_Atsziodriver_1A4F {
 		hash = "e32ab30d01dcff6418544d93f99ae812d2ce6396e809686620547bea05074f6f"
 		hash = "01e024cb14b34b6d525c642a710bfa14497ea20fd287c39ba404b10a8b143ece"
 		hash = "ecfc52a22e4a41bf53865b0e28309411c60af34a44e31a5c53cdc8c5733e8282"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004100540053005a0049004f0020004400720069007600650072 } /* FileDescription ATSZIODriver */
@@ -4658,7 +4658,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_BCFC {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "bcfc2c9883e6c1b8429be44cc4db988a9eecb544988fbd756d18cfca6201876f"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -4681,7 +4681,7 @@ rule PUA_VULN_Renamed_Driver_Windowsrddkprovider_Gdrvsys_Windowsrddkdriver_F4FF 
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "f4ff679066269392f6b7c3ba6257fc60dd609e4f9c491b00e1a16e4c405b0b9b"
 		hash = "cfc5c585dd4e592dd1a08887ded28b92d9a5820587b6f4f8fa4f56d60289259b"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0047004900470041004200590054004500200054006f006f006c0073 } /* FileDescription GIGABYTETools */
@@ -4703,7 +4703,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_DBC6 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "dbc604b4e01362a3e51357af4a87686834fe913852a4e0a8c0d4c1a0f7d076ed"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -4725,7 +4725,7 @@ rule PUA_VULN_Renamed_Driver_Corsairmemoryinc_Corsairllaccess_Corsairllaccess_F1
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "f15ae970e222ce06dbf3752b223270d0e726fb78ebec3598b4f8225b5a0880b1"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0043006f007200730061006900720020004c004c0020004100630063006500730073 } /* FileDescription CorsairLLAccess */
@@ -4747,7 +4747,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_4E37 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "4e37592a2a415f520438330c32cfbdbd6af594deef5290b2fa4b9722b898ff69"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -4769,7 +4769,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_ECD0 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "ecd07df7ad6fee9269a9e9429eb199bf3e24cf672aa1d013b7e8d90d75324566"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -4787,11 +4787,11 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_ECD0 {
 
 rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpot_Avastantivirus_36E3 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "36e3127f045ef1fa7426a3ff8c441092d3b66923d2b69826034e48306609e289"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041007600610073007400200041006e0074006900200052006f006f0074006b00690074 } /* FileDescription AvastAntiRootkit */
@@ -4803,7 +4803,7 @@ rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpot_Avastantivirus_36E3 {
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f007000790072006900670068007400200028006300290020003200300032003000200041005600410053005400200053006f006600740077006100720065 } /* LegalCopyright CopyrightcAVASTSoftware */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -4813,7 +4813,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_FDA9 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "fda93c6e41212e86af07f57ca95db841161f00b08dae6304a51b467056e56280"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -4835,7 +4835,7 @@ rule PUA_VULN_Renamed_Driver_Biostargroup_Iodriver_Biostariodriver_D205 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "d205286bffdf09bc033c09e95c519c1c267b40c2ee8bab703c6a2d86741ccd3e"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0049002f004f00200049006e00740065007200660061006300650020006400720069007600650072002000660069006c0065 } /* FileDescription IOInterfacedriverfile */
@@ -4858,7 +4858,7 @@ rule PUA_VULN_Renamed_Driver_Windowsrwinddkprovider_Amifldrvsys_Windowsrwinddkdr
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "38d87b51f4b69ba2dae1477684a1415f1a3b578eee5e1126673b1beaefee9a20"
 		hash = "ffc72f0bde21ba20aa97bee99d9e96870e5aa40cce9884e44c612757f939494f"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041004d0049002000470065006e00650072006900630020005500740069006c0069007400790020004400720069007600650072 } /* FileDescription AMIGenericUtilityDriver */
@@ -4882,7 +4882,7 @@ rule PUA_VULN_Renamed_Driver_Highresolutionenterpriseswwwhighrezcouk_Inpoutxsys_
 		hash = "f581decc2888ef27ee1ea85ea23bbb5fb2fe6a554266ff5a1476acd1d29d53af"
 		hash = "f8965fdce668692c3785afa3559159f9a18287bc0d53abb21902895a8ecf221b"
 		hash = "2d83ccb1ad9839c9f5b3f10b1f856177df1594c66cbbc7661677d4b462ebf44d"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004b00650072006e0065006c0020006c006500760065006c00200070006f0072007400200061006300630065007300730020006400720069007600650072 } /* FileDescription Kernellevelportaccessdriver */
@@ -4904,7 +4904,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_12ED {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "12eda8b65ed8c1d80464a0c535ea099dffdb4981c134294cb0fa424efc85ee56"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -4922,11 +4922,11 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_12ED {
 
 rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_EBE2 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "ebe2e9ec6d5d94c2d58fbcc9d78c5f0ee7a2f2c1aed6d1b309f383186d11dfa3"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041007600610073007400200061006e0074006900200072006f006f0074006b00690074 } /* FileDescription Avastantirootkit */
@@ -4938,7 +4938,7 @@ rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_EBE2 {
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f007000790072006900670068007400200028006300290020003200300031003900200041005600410053005400200053006f006600740077006100720065 } /* LegalCopyright CopyrightcAVASTSoftware */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -4949,7 +4949,7 @@ rule PUA_VULN_Renamed_Driver_Corsairmemoryinc_Corsairllaccess_Corsairllaccess_A3
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "a334bdf0c0ab07803380eb6ef83eefe7c147d6962595dd9c943a6a76f2200b0d"
 		hash = "000547560fea0dd4b477eb28bf781ea67bf83c748945ce8923f90fdd14eb7a4b"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0043006f007200730061006900720020004c004c0020004100630063006500730073 } /* FileDescription CorsairLLAccess */
@@ -4971,7 +4971,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_1C12 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "1c1251784e6f61525d0082882a969cb8a0c5d5359be22f5a73e3b0cd38b51687"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -4993,7 +4993,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroaegis_4BC0 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "4bc0921ffd4acc865525d3faf98961e8decc5aec4974552cbbf2ae8d5a569de4"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -5015,7 +5015,7 @@ rule PUA_VULN_Renamed_Driver_Iobitinformationtechnology_Iobitunlockersys_Unlocke
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "f85cca4badff17d1aa90752153ccec77a68ad282b69e3985fdc4743eaea85004"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0055006e006c006f0063006b006500720020004400720069007600650072 } /* FileDescription UnlockerDriver */
@@ -5037,7 +5037,7 @@ rule PUA_VULN_Renamed_Driver_Razerinc_Rzpnk_Rzpnk_93D8 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "93d873cdf23d5edc622b74f9544cac7fe247d7a68e1e2a7bf2879fad97a3ae63"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00520061007a006500720020004f007600650072006c0061007900200053007500700070006f00720074 } /* FileDescription RazerOverlaySupport */
@@ -5059,7 +5059,7 @@ rule PUA_VULN_Renamed_Driver_Wisecleanercom_Wiseunlosys_Wiseunlo_358A {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "358ac54be252673841a1d65bfc2fb6d549c1a4c877fa7f5e1bfa188f30375d69"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00570069007300650055006e006c006f } /* FileDescription WiseUnlo */
@@ -5081,7 +5081,7 @@ rule PUA_VULN_Renamed_Driver_Sysinternalswwwsysinternalscom_Procexpsys_Processex
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "9b6a84f7c40ea51c38cc4d2e93efb3375e9d98d4894a85941190d94fbe73a4e4"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00500072006f00630065007300730020004500780070006c006f007200650072 } /* FileDescription ProcessExplorer */
@@ -5099,11 +5099,11 @@ rule PUA_VULN_Renamed_Driver_Sysinternalswwwsysinternalscom_Procexpsys_Processex
 
 rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecuritysystem_7D43 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "7d43769b353d63093228a59eb19bba87ce6b552d7e1a99bf34a54eee641aa0ea"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00410056004700200061006e0074006900200072006f006f0074006b00690074 } /* FileDescription AVGantirootkit */
@@ -5115,7 +5115,7 @@ rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecurit
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f0070007900720069006700680074002000280043002900200032003000310034002000410056004700200054006500630068006e006f006c006f006700690065007300200043005a002c00200073002e0072002e006f002e } /* LegalCopyright CopyrightCAVGTechnologiesCZsro */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -5125,7 +5125,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Aegis_ADC1 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "adc10de960f40fa9f6e28449748250fa9ddfd331115b77a79809a50c606753ee"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -5143,11 +5143,11 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Aegis_ADC1 {
 
 rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpot_Avginternetsecuritysystem_9491 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "94911fe6f2aba9683b10353094caf71ee4a882de63b4620797629d79f18feec5"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00410056004700200041006e0074006900200052006f006f0074006b00690074 } /* FileDescription AVGAntiRootkit */
@@ -5159,7 +5159,7 @@ rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpot_Avginternetsecuritysy
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f0070007900720069006700680074002000280043002900200032003000320030002000410056004700200054006500630068006e006f006c006f006700690065007300200043005a002c00200073002e0072002e006f002e } /* LegalCopyright CopyrightCAVGTechnologiesCZsro */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -5169,7 +5169,7 @@ rule PUA_VULN_Renamed_Driver_Fujitsulimited_Advdrvsys_Microsoftrwindowsroperatin
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "04a85e359525d662338cae86c1e59b1d7aa9bd12b920e8067503723dc1e03162"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 0043006f006d00700061006e0079004e0061006d0065[1-8]00460055004a00490054005300550020004c0049004d0049005400450044002e } /* CompanyName FUJITSULIMITED */
@@ -5190,7 +5190,7 @@ rule PUA_VULN_Renamed_Driver_Advancedmicrodevices_Amdryzenmasterdriversys_Amdryz
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "ff9623317287358440ec67da9ba79994d9b17b99ffdd709ec836478fe1fc22a5"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041004d0044002000520079007a0065006e0020004d00610073007400650072002000530065007200760069006300650020004400720069007600650072 } /* FileDescription AMDRyzenMasterServiceDriver */
@@ -5212,7 +5212,7 @@ rule PUA_VULN_Renamed_Driver_Sysinternalswwwsysinternalscom_Procexpsys_7795 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "77950e2a40ac0447ae7ee1ee3ef1242ce22796a157074e6f04e345b1956e143c"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0020002000200020002000200020002000200020002000200020002000200020 } /* FileDescription  */
@@ -5234,7 +5234,7 @@ rule PUA_VULN_Renamed_Driver_Sisoftware_Sandra_Sisoftwaresandra_B019 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "b019ebd77ac19cdd72bba3318032752649bd56a7576723a8ae1cccd70ee1e61a"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00530061006e006400720061002000440065007600690063006500200044007200690076006500720020002800570069006e003300320020007800380036002900280055006e00690063006f006400650029 } /* FileDescription SandraDeviceDriverWinxUnicode */
@@ -5256,7 +5256,7 @@ rule PUA_VULN_Renamed_Driver_Advancedmicrodevicesinc_Amdpowerprofilersys_Amdupro
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "0af5ccb3d33a9ba92071c9637be6254030d61998733a5eb3583e865e17844e05"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041004d004400200050006f007700650072002000500072006f00660069006c0069006e00670020004400720069007600650072 } /* FileDescription AMDPowerProfilingDriver */
@@ -5278,7 +5278,7 @@ rule PUA_VULN_Renamed_Driver_Realtek_Rtkiosys_Realtekiodriver_074A {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "074ae477c8c7ae76c6f2b0bf77ac17935a8e8ee51b52155d2821d93ab30f3761"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005200650061006c00740065006b00200049004f0020004400720069007600650072 } /* FileDescription RealtekIODriver */
@@ -5300,7 +5300,7 @@ rule PUA_VULN_Renamed_Driver_Msi_Ntiolibsys_Ntiolib_98B7 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "98b734dda78c16ebcaa4afeb31007926542b63b2f163b2f733fa0d00dbb344d8"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004e00540049004f004c0069006200200066006f0072002000440065006200750067004c00450044 } /* FileDescription NTIOLibforDebugLED */
@@ -5322,7 +5322,7 @@ rule PUA_VULN_Renamed_Driver_Zemanaltd_Zam_9A95 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "9a95a70f68144980f2d684e96c79bdc93ebca1587f46afae6962478631e85d0c"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005a0041004d } /* FileDescription ZAM */
@@ -5341,7 +5341,7 @@ rule PUA_VULN_Renamed_Driver_Intelcorporation_Iqvwsys_Intelriqvwsys_19BF {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "19bf0d0f55d2ad33ef2d105520bde8fb4286f00e9d7a721e3c9587b9408a0775"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0049006e00740065006c0028005200290020004e006500740077006f0072006b0020004100640061007000740065007200200044006900610067006e006f00730074006900630020004400720069007600650072 } /* FileDescription IntelRNetworkAdapterDiagnosticDriver */
@@ -5363,7 +5363,7 @@ rule PUA_VULN_Renamed_Driver_Zemanaltd_Zam_2BBC {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "2bbc6b9dd5e6d0327250b32305be20c89b19b56d33a096522ee33f22d8c82ff1"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005a0041004d } /* FileDescription ZAM */
@@ -5382,7 +5382,7 @@ rule PUA_VULN_Renamed_Driver_Logitechinc_Lvavsys_Logitechwebcamsoftware_E86C {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "e86cb77de7b6a8025f9a546f6c45d135f471e664963cf70b381bee2dfd0fdef4"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004c006f00670069007400650063006800200056006900640065006f0020004400720069007600650072 } /* FileDescription LogitechVideoDriver */
@@ -5404,7 +5404,7 @@ rule PUA_VULN_Renamed_Driver_Hpinc_Hpportioxsys_Hpportio_C505 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "c5050a2017490fff7aa53c73755982b339ddb0fd7cef2cde32c81bc9834331c5"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004800700050006f007200740049006f } /* FileDescription HpPortIo */
@@ -5426,7 +5426,7 @@ rule PUA_VULN_Renamed_Driver_Realtek_Rtkiowxsys_Realtekiodriver_AB8F {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "ab8f2217e59319b88080e052782e559a706fa4fb7b8b708f709ff3617124da89"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005200650061006c00740065006b00200049004f0020004400720069007600650072 } /* FileDescription RealtekIODriver */
@@ -5444,11 +5444,11 @@ rule PUA_VULN_Renamed_Driver_Realtek_Rtkiowxsys_Realtekiodriver_AB8F {
 
 rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpot_Avginternetsecuritysystem_2CE8 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "2ce81759bfa236913bbbb9b2cbc093140b099486fd002910b18e2c6e31fdc4f1"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00410056004700200041006e0074006900200052006f006f0074006b00690074 } /* FileDescription AVGAntiRootkit */
@@ -5460,7 +5460,7 @@ rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpot_Avginternetsecuritysy
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f0070007900720069006700680074002000280043002900200032003000320030002000410056004700200054006500630068006e006f006c006f006700690065007300200043005a002c00200073002e0072002e006f002e } /* LegalCopyright CopyrightCAVGTechnologiesCZsro */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -5470,7 +5470,7 @@ rule PUA_VULN_Renamed_Driver_Msi_Ntiolibsys_Ntiolib_9254 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "9254f012009d55f555418ff85f7d93b184ab7cb0e37aecdfdab62cfe94dea96b"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004e00540049004f004c0069006200200066006f00720020004d00530049004400440052005f00430043 } /* FileDescription NTIOLibforMSIDDRCC */
@@ -5493,7 +5493,7 @@ rule PUA_VULN_Renamed_Driver_Intelcorporation_Iqvwsys_Intelriqvwsys_4429 {
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "4429f32db1cc70567919d7d47b844a91cf1329a6cd116f582305f3b7b60cd60b"
 		hash = "a59c40e7470b7003e8adfee37c77606663e78d7e3f2ebb8d60910af19924d8df"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0049006e00740065006c0028005200290020004e006500740077006f0072006b0020004100640061007000740065007200200044006900610067006e006f00730074006900630020004400720069007600650072 } /* FileDescription IntelRNetworkAdapterDiagnosticDriver */
@@ -5515,7 +5515,7 @@ rule PUA_VULN_Renamed_Driver_Realtek_Rtkiowxsys_Realtekiodriver_32E1 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "32e1a8513eee746d17eb5402fb9d8ff9507fb6e1238e7ff06f7a5c50ff3df993"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005200650061006c00740065006b00200049004f0020004400720069007600650072 } /* FileDescription RealtekIODriver */
@@ -5537,7 +5537,7 @@ rule PUA_VULN_Renamed_Driver_Micsystechnologycoltd_Msiosys_Msiodriverversion_X_4
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "43ba8d96d5e8e54cab59d82d495eeca730eeb16e4743ed134cdd495c51a4fc89"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004d004900430053005900530020006400720069007600650072 } /* FileDescription MICSYSdriver */
@@ -5555,11 +5555,11 @@ rule PUA_VULN_Renamed_Driver_Micsystechnologycoltd_Msiosys_Msiodriverversion_X_4
 
 rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecuritysystem_1078 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "1078af0c70e03ac17c7b8aa5ee03593f5decfef2f536716646a4ded1e98c153c"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00410056004700200061006e0074006900200072006f006f0074006b00690074 } /* FileDescription AVGantirootkit */
@@ -5571,7 +5571,7 @@ rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecurit
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f0070007900720069006700680074002000280043002900200032003000310039002000410056004700200054006500630068006e006f006c006f006700690065007300200043005a002c00200073002e0072002e006f002e } /* LegalCopyright CopyrightCAVGTechnologiesCZsro */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -5581,7 +5581,7 @@ rule PUA_VULN_Renamed_Driver_Gigabytetechnologycoltd_Gdrvsys_Gigabytesoftwaredri
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "26c28746e947389856543837aa59a5b1f4697e5721a04d00aa28151a2659b097"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0047004900470041002d00420059005400450020004e006f006e0050006e00500020004400720069007600650072 } /* FileDescription GIGABYTENonPnPDriver */
@@ -5603,7 +5603,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_CC68 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "cc687fe3741bbde1dd142eac0ef59fd1d4457daee43cdde23bb162ef28d04e64"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -5625,7 +5625,7 @@ rule PUA_VULN_Renamed_Driver_Windowsrcodenamelonghornddkprovider_Cpudriver_Windo
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "159e7c5a12157af92e0d14a0d3ea116f91c09e21a9831486e6dc592c93c10980"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041005300550053002000540044004500200043005000550020004400720069007600650072 } /* FileDescription ASUSTDECPUDriver */
@@ -5647,7 +5647,7 @@ rule PUA_VULN_Renamed_Driver_Msi_Ntiolibsys_Ntiolib_1DDF {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "1ddfe4756f5db9fb319d6c6da9c41c588a729d9e7817190b027b38e9c076d219"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004e00540049004f004c00690062 } /* FileDescription NTIOLib */
@@ -5669,7 +5669,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_654C {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "654c5ba47f74008c8f49cbb97988017eec8c898adc3bb851bc6e1fdf9dcf54ad"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -5692,7 +5692,7 @@ rule PUA_VULN_Renamed_Driver_Marvintestsolutionsinc_Hwsys_Hw_FD38 {
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "fd388cf1df06d419b14dedbeb24c6f4dff37bea26018775f09d56b3067f0de2c"
 		hash = "6a4875ae86131a594019dec4abd46ac6ba47e57a88287b814d07d929858fe3e5"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004800570020002d002000570069006e0064006f007700730020004e0054002d00380020002800330032002f00360034002000620069007400290020006b00650072006e0065006c0020006d006f00640065002000640072006900760065007200200066006f007200200050004300200070006f007200740073002f006d0065006d006f00720079002f0050004300490020006100630063006500730073 } /* FileDescription HWWindowsNTbitkernelmodedriverforPCportsmemoryPCIaccess */
@@ -5710,11 +5710,11 @@ rule PUA_VULN_Renamed_Driver_Marvintestsolutionsinc_Hwsys_Hw_FD38 {
 
 rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecuritysystem_6E0A {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "6e0aa67cfdbe27a059cbd066443337f81c5b6d37444d14792d1c765d9d122dcf"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00410056004700200061006e0074006900200072006f006f0074006b00690074 } /* FileDescription AVGantirootkit */
@@ -5726,17 +5726,17 @@ rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecurit
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f0070007900720069006700680074002000280043002900200032003000310039002000410056004700200054006500630068006e006f006c006f006700690065007300200043005a002c00200073002e0072002e006f002e } /* LegalCopyright CopyrightCAVGTechnologiesCZsro */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
 rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecuritysystem_A2F4 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "a2f45d95d54f4e110b577e621fefa0483fa0e3dcca14c500c298fb9209e491c1"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00410056004700200061006e0074006900200072006f006f0074006b00690074 } /* FileDescription AVGantirootkit */
@@ -5748,7 +5748,7 @@ rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecurit
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f0070007900720069006700680074002000280043002900200032003000310039002000410056004700200054006500630068006e006f006c006f006700690065007300200043005a002c00200073002e0072002e006f002e } /* LegalCopyright CopyrightCAVGTechnologiesCZsro */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -5758,7 +5758,7 @@ rule PUA_VULN_Renamed_Driver_Nvidiacorporation_Nvflash_Nvidiaflashdriver_AFDD {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "afdd66562dea51001c3a9de300f91fc3eb965d6848dfce92ccb9b75853e02508"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004e0056004900440049004100200046006c0061007300680020004400720069007600650072002c002000560065007200730069006f006e00200031002e0038002e0030 } /* FileDescription NVIDIAFlashDriverVersion */
@@ -5780,7 +5780,7 @@ rule PUA_VULN_Renamed_Driver_Elaboratebytesag_Elbycdio_Cdrtools_F85E {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "f85eb576acb5db0d2f48e5f09a7244165a876fa1ca8697ebb773e4d7071d4439"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0045006c0062007900430044002000570069006e0064006f007700730020004e0054002f0032003000300030002f0058005000200049002f004f0020006400720069007600650072 } /* FileDescription ElbyCDWindowsNTXPIOdriver */
@@ -5802,7 +5802,7 @@ rule PUA_VULN_Renamed_Driver_Vektortsecurityservice_Vboxdrv_Antidetectpublicbyve
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "26f41e4268be59f5de07552b51fa52d18d88be94f8895eb4a16de0f3940cf712"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005600690072007400750061006c0042006f007800200053007500700070006f007200740020004400720069007600650072 } /* FileDescription VirtualBoxSupportDriver */
@@ -5824,7 +5824,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_3C42 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "3c4207c90c97733fae2a08679d63fbbe94dfcf96fdfdf88406aa7ab3f80ea78f"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -5847,7 +5847,7 @@ rule PUA_VULN_Renamed_Driver_Asustekcomputerinc_Atsziosys_Atsziodriver_55A1 {
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "55a1535e173c998fbbc978009b02d36ca0c737340d84ac2a8da73dfc2f450ef9"
 		hash = "c64d4ac416363c7a1aa828929544d1c1d78cf032b39769943b851cfc4c0faafc"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004100540053005a0049004f0020004400720069007600650072 } /* FileDescription ATSZIODriver */
@@ -5869,7 +5869,7 @@ rule PUA_VULN_Renamed_Driver_Sisoftware_Sandra_Sisoftwaresandra_1AAF {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "1aaf4c1e3cb6774857e2eef27c17e68dc1ae577112e4769665f516c2e8c4e27b"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00530061006e006400720061002000440065007600690063006500200044007200690076006500720020002800570069006e003600340020007800360034002900280055006e00690063006f006400650029 } /* FileDescription SandraDeviceDriverWinxUnicode */
@@ -5891,7 +5891,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Aegis_C901 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "c9014b03866bf37faa8fdb16b6af7cfec976aaef179fd5797d0c0bf8079d3a8c"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -5913,7 +5913,7 @@ rule PUA_VULN_Renamed_Driver_Symanteccorporation_Vproeventmonitorsys_Symanteceve
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "7877c1b0e7429453b750218ca491c2825dae684ad9616642eff7b41715c70aca"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005600500072006f004500760065006e0074004d006f006e00690074006f0072002e0053007900730020002d0020004500760065006e00740020004d006f006e00690074006f00720069006e00670020006400720069007600650072 } /* FileDescription VProEventMonitorSysEventMonitoringdriver */
@@ -5935,7 +5935,7 @@ rule PUA_VULN_Renamed_Driver_Wj_Kprocesshacker_C725 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "c725919e6357126d512c638f993cf572112f323da359645e4088f789eb4c7b8c"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004b00500072006f0063006500730073004800610063006b00650072 } /* FileDescription KProcessHacker */
@@ -5952,11 +5952,11 @@ rule PUA_VULN_Renamed_Driver_Wj_Kprocesshacker_C725 {
 
 rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpot_Avastantivirus_7AD0 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "7ad0ab23023bc500c3b46f414a8b363c5f8700861bc4745cecc14dd34bcee9ed"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041007600610073007400200041006e0074006900200052006f006f0074006b00690074 } /* FileDescription AvastAntiRootkit */
@@ -5968,7 +5968,7 @@ rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpot_Avastantivirus_7AD0 {
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f007000790072006900670068007400200028006300290020003200300032003000200041005600410053005400200053006f006600740077006100720065 } /* LegalCopyright CopyrightcAVASTSoftware */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -5978,7 +5978,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_C082 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "c082514317bf80a2f5129d84a5a55e411a95e32d03a4df1274537704c80e41dd"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -6000,7 +6000,7 @@ rule PUA_VULN_Renamed_Driver_Creativetechnologyinnovationcoltd_Ctiiosys_Ctiiodri
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "2121a2bb8ebbf2e6e82c782b6f3c6b7904f686aa495def25cf1cf52a42e16109"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00430054004900200049004f0020006400720069007600650072 } /* FileDescription CTIIOdriver */
@@ -6022,7 +6022,7 @@ rule PUA_VULN_Renamed_Driver_Ssmartsoftwaresolutionsgmbh_Sysdrvs_Sysdrvs_0E53 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "0e53b58415fa68552928622118d5b8a3a851b2fc512709a90b63ba46acda8b6b"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00530079007300440072007600330053 } /* FileDescription SysDrvS */
@@ -6040,11 +6040,11 @@ rule PUA_VULN_Renamed_Driver_Ssmartsoftwaresolutionsgmbh_Sysdrvs_Sysdrvs_0E53 {
 
 rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_14AD {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "14adbf0bc43414a7700e5403100cff7fc6ade50bebfab16a17acf2fdda5a9da8"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041007600610073007400200061006e0074006900200072006f006f0074006b00690074 } /* FileDescription Avastantirootkit */
@@ -6056,7 +6056,7 @@ rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_14AD {
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f007000790072006900670068007400200028006300290020003200300031003400200041005600410053005400200053006f006600740077006100720065 } /* LegalCopyright CopyrightcAVASTSoftware */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -6066,7 +6066,7 @@ rule PUA_VULN_Renamed_Driver_Windowsrserverddkprovider_Cpuzsys_Windowsrserverddk
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "3871e16758a1778907667f78589359734f7f62f9dc953ec558946dcdbe6951e3"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004300500055004900440020004400720069007600650072 } /* FileDescription CPUIDDriver */
@@ -6088,7 +6088,7 @@ rule PUA_VULN_Renamed_Driver_Intelcorporation_Iqvwsys_Intelriqvwsys_37C6 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "37c637a74bf20d7630281581a8fae124200920df11ad7cd68c14c26cc12c5ec9"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0049006e00740065006c0028005200290020004e006500740077006f0072006b0020004100640061007000740065007200200044006900610067006e006f00730074006900630020004400720069007600650072 } /* FileDescription IntelRNetworkAdapterDiagnosticDriver */
@@ -6110,7 +6110,7 @@ rule PUA_VULN_Renamed_Driver_Toshibacorporation_Nchgbiosxsys_Toshibabiospackage_
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "314384b40626800b1cde6fbc51ebc7d13e91398be2688c2a58354aa08d00b073"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00420049004f00530020005500700064006100740065002000440072006900760065007200200046006f0072002000570069006e0064006f007700730020007800360034002000450064006900740069006f006e } /* FileDescription BIOSUpdateDriverForWindowsxEdition */
@@ -6133,7 +6133,7 @@ rule PUA_VULN_Renamed_Driver_Zemanaltd_Zam_5439 {
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "543991ca8d1c65113dff039b85ae3f9a87f503daec30f46929fd454bc57e5a91"
 		hash = "ab2632a4d93a7f3b7598c06a9fdc773a1b1b69a7dd926bdb7cf578992628e9dd"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005a0041004d } /* FileDescription ZAM */
@@ -6152,7 +6152,7 @@ rule PUA_VULN_Renamed_Driver_Sysinternalswwwsysinternalscom_Procexpsys_Processex
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "30abc0cc700fdebc74e62d574addc08f6227f9c7177d9eaa8cbc37d5c017c9bb"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00500072006f00630065007300730020004500780070006c006f007200650072 } /* FileDescription ProcessExplorer */
@@ -6174,7 +6174,7 @@ rule PUA_VULN_Renamed_Driver_Zemanaltd_Zam_DE8F {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "de8f8006d8ee429b5f333503defa54b25447f4ed6aeade5e4219e23f3473ef1c"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005a0041004d } /* FileDescription ZAM */
@@ -6193,7 +6193,7 @@ rule PUA_VULN_Renamed_Driver_Supermicrocomputerinc_Phymem_Phymem_1963 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "1963d5a0e512b72353953aadbe694f73a9a576f0241a988378fa40bf574eda52"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]007000680079006d0065006d0020004100700070006c00690063006100740069006f006e } /* FileDescription phymemApplication */
@@ -6216,7 +6216,7 @@ rule PUA_VULN_Renamed_Driver_Sysinternalswwwsysinternalscom_Procexpsys_Processex
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "16a2e578bc8683f17a175480fea4f53c838cfae965f1d4caa47eaf9e0b3415c1"
 		hash = "98a123b314cba2de65f899cdbfa386532f178333389e0f0fbd544aff85be02eb"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00500072006f00630065007300730020004500780070006c006f007200650072 } /* FileDescription ProcessExplorer */
@@ -6238,7 +6238,7 @@ rule PUA_VULN_Renamed_Driver_Vektortsecurityservice_Vboxdrv_Antidetectpublic_CFB
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "cfb7af8ac67a379e7869289aeee21837c448ea6f8ab6c93988e7aa423653bd40"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005600690072007400750061006c0042006f007800200053007500700070006f007200740020004400720069007600650072 } /* FileDescription VirtualBoxSupportDriver */
@@ -6260,7 +6260,7 @@ rule PUA_VULN_Renamed_Driver_Sunmicrosystemsinc_Vboxdrvsys_Sunvirtualbox_R_C894 
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "c8940e2e9b069ec94f9f711150b313b437f8429f78d522810601b6ee8b52bada"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005600690072007400750061006c0042006f007800200053007500700070006f007200740020004400720069007600650072 } /* FileDescription VirtualBoxSupportDriver */
@@ -6282,7 +6282,7 @@ rule PUA_VULN_Renamed_Driver_Pinduoduoltdcorp_Vboxdrv_Pinduoduosecurevdi_9DAB {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "9dab4b6fddc8e1ec0a186aa8382b184a5d52cfcabaaf04ff9e3767021eb09cf4"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005600690072007400750061006c0042006f007800200053007500700070006f007200740020004400720069007600650072 } /* FileDescription VirtualBoxSupportDriver */
@@ -6304,7 +6304,7 @@ rule PUA_VULN_Renamed_Driver_Tgsoftsas_Viragtsys_Viritagentsystem_18DE {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "18deed37f60b6aa8634dda2565a0485452487d7bce88afb49301a7352db4e506"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005600690072004900540020004100670065006e0074002000530079007300740065006d } /* FileDescription VirITAgentSystem */
@@ -6322,11 +6322,11 @@ rule PUA_VULN_Renamed_Driver_Tgsoftsas_Viragtsys_Viritagentsystem_18DE {
 
 rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecuritysystem_8CFD {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "8cfd5b2102fbc77018c7fe6019ec15f07da497f6d73c32a31f4ba07e67ec85d9"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00410056004700200061006e0074006900200072006f006f0074006b00690074 } /* FileDescription AVGantirootkit */
@@ -6338,17 +6338,17 @@ rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecurit
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f0070007900720069006700680074002000280043002900200032003000310039002000410056004700200054006500630068006e006f006c006f006700690065007300200043005a002c00200073002e0072002e006f002e } /* LegalCopyright CopyrightCAVGTechnologiesCZsro */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
 rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_D5C4 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "d5c4ff35eaa74ccdb80c7197d3d113c9cd38561070f2aa69c0affe8ed84a77c9"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041007600610073007400200061006e0074006900200072006f006f0074006b00690074 } /* FileDescription Avastantirootkit */
@@ -6360,7 +6360,7 @@ rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_D5C4 {
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f007000790072006900670068007400200028006300290020003200300031003800200041005600410053005400200053006f006600740077006100720065 } /* LegalCopyright CopyrightcAVASTSoftware */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -6370,7 +6370,7 @@ rule PUA_VULN_Renamed_Driver_Wj_Kprocesshacker_7021 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "70211a3f90376bbc61f49c22a63075d1d4ddd53f0aefa976216c46e6ba39a9f4"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]004b00500072006f0063006500730073004800610063006b00650072 } /* FileDescription KProcessHacker */
@@ -6391,7 +6391,7 @@ rule PUA_VULN_Renamed_Driver_Trendmicroinc_Tmcommsys_Trendmicroeyes_76E8 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "76e807b6c0214e66455f09a8de8faad40b738982ca84470f0043de0290449524"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]005400720065006e0064004d006900630072006f00200043006f006d006d006f006e0020004d006f00640075006c0065 } /* FileDescription TrendMicroCommonModule */
@@ -6413,7 +6413,7 @@ rule PUA_VULN_Renamed_Driver_Biostargroup_Iodriver_Biostariodriver_1D03 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "1d0397c263d51e9fc95bcc8baf98d1a853e1c0401cd0e27c7bf5da3fba1c93a8"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0049002f004f00200049006e00740065007200660061006300650020006400720069007600650072002000660069006c0065 } /* FileDescription IOInterfacedriverfile */
@@ -6431,11 +6431,11 @@ rule PUA_VULN_Renamed_Driver_Biostargroup_Iodriver_Biostariodriver_1D03 {
 
 rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecuritysystem_E2E7 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "e2e79f1e696f27fa70d72f97e448081b1fa14d59cbb89bb4a40428534dd5c6f6"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]00410056004700200061006e0074006900200072006f006f0074006b00690074 } /* FileDescription AVGantirootkit */
@@ -6447,7 +6447,7 @@ rule PUA_VULN_Renamed_Driver_Avgtechnologiesczsro_Aswarpotsys_Avginternetsecurit
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f0070007900720069006700680074002000280043002900200032003000310039002000410056004700200054006500630068006e006f006c006f006700690065007300200043005a002c00200073002e0072002e006f002e } /* LegalCopyright CopyrightCAVGTechnologiesCZsro */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 300KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
 
 
@@ -6457,7 +6457,7 @@ rule PUA_VULN_Renamed_Driver_Intelcorporation_Iqvwsys_Intelriqvwsys_5F69 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "5f69d6b167a1eeca3f6ac64785c3c01976ee7303171faf998d65852056988683"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0049006e00740065006c0028005200290020004e006500740077006f0072006b0020004100640061007000740065007200200044006900610067006e006f00730074006900630020004400720069007600650072 } /* FileDescription IntelRNetworkAdapterDiagnosticDriver */
@@ -6479,7 +6479,7 @@ rule PUA_VULN_Renamed_Driver_Elaboratebytesag_Elbycdio_Cdrtools_9679 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "9679758455c69877fce866267d60c39d108b495dca183954e4af869902965b3d"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0045006c0062007900430044002000570069006e0064006f00770073002000780036003400200049002f004f0020006400720069007600650072 } /* FileDescription ElbyCDWindowsxIOdriver */
@@ -6501,7 +6501,7 @@ rule PUA_VULN_Renamed_Driver_Elaboratebytesag_Elbycdio_Cdrtools_8137 {
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "8137ce22d0d0fc5ea5b174d6ad3506a4949506477b1325da2ccb76511f4c4f60"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0045006c0062007900430044002000570069006e0064006f007700730020004e0054002f0032003000300030002f0058005000200049002f004f0020006400720069007600650072 } /* FileDescription ElbyCDWindowsNTXPIOdriver */
@@ -6519,11 +6519,11 @@ rule PUA_VULN_Renamed_Driver_Elaboratebytesag_Elbycdio_Cdrtools_8137 {
 
 rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_4DA0 {
 	meta:
-		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys"
+		description = "Detects renamed vulnerable driver mentioned in LOLDrivers project using VersionInfo values from the PE header - aswArPot.sys, avgArPot.sys"
 		author = "Florian Roth"
 		reference = "https://github.com/magicsword-io/LOLDrivers"
 		hash = "4da08c0681fbe028b60a1eaf5cb8890bd3eba4d0e6a8b976495ddcd315e147ba"
-		date = "2023-06-13"
+		date = "2023-06-14"
 		score = 70
 	strings:
 		$ = { 00460069006c0065004400650073006300720069007000740069006f006e[1-8]0041007600610073007400200061006e0074006900200072006f006f0074006b00690074 } /* FileDescription Avastantirootkit */
@@ -6535,5 +6535,5 @@ rule PUA_VULN_Renamed_Driver_Avastsoftware_Aswarpotsys_Avastantivirus_4DA0 {
 		$ = { 004f0072006900670069006e0061006c00460069006c0065006e0061006d0065[1-8]006100730077004100720050006f0074002e007300790073 } /* OriginalFilename aswArPotsys */
 		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f007000790072006900670068007400200028006300290020003200300031003800200041005600410053005400200053006f006600740077006100720065 } /* LegalCopyright CopyrightcAVASTSoftware */
 	condition:
-		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i
+		uint16(0) == 0x5a4d and filesize < 200KB and all of them and not filename matches /aswArPot/i and not filename matches /avgArPot/i
 }
