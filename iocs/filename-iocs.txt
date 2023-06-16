@@ -4301,13 +4301,21 @@ C:\\ProgramData\\TPM\\winscard\.dll;85
 \\human2\.aspx\.lnk;90
 
 # Barracuda CVE-2023-2868 exploitation IOCs https://www.barracuda.com/company/legal/esg-vulnerability
-\\appcheck\.sh;55
-\\aacore\.sh;60
 \\1\.sh;50
 \\mod_udp\.so;45
 \\install_helo\.tar;65
 \\intent_helo$;60
 \\update_v31\.sh;70
 \\mod_require_helo\.lua;65
+\\etc\\cron\.hourly\\core\.sh;75
+\\etc\\cron\.hourly\\aacore\.sh;75
+\\etc\\cron\.hourly\\appcheck\.sh;75
+\\etc\\cron\.daily\\core\.sh;75
+\\etc\\cron\.daily\\core_check\.sh;75
+\\install_bvp74_auth\.tar;75
+\\install_att_v2\.tar;75
+\\update_v35\.sh;75
+\\install_reuse\.tar;75
+\\update_v2\.sh;75
 
 # End
