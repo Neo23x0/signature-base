@@ -3929,7 +3929,7 @@ Potato\.exe;65
 \\lsass[a-zA-Z_\-\.]{1,16}\.(dmp|zip|rar|7z);70
 
 # Programs or scripts in C:\ProgramData folder (no sub folder)
-\\ProgramData\\[^\\"]{1,40}\.(EXE|DLL|exe|dll|bat|BAT|vbs|VBS|ps1|jar)([^._\\\]]|$);70;(\[Discord\.exe\]|UserProfileMigrationService\.exe|\.exe\.textpad|\\\$WINDOWS\.~BT\\)
+\\[Pp]rogram[Dd]ata\\[^\\"/:]{1,40}\.(EXE|DLL|exe|dll|bat|BAT|vbs|vbe|VBS|ps1|psm1)([^._\\\]A-Za-z]|$);70;(\[Discord\.exe\]|UserProfileMigrationService\.exe|\.exe\.textpad|\\\$WINDOWS\.~BT\\|Found legacy CopyFiles operation)
 
 # PostDump artefacts https://github.com/post-cyberlabs/Offensive_tools/tree/main/PostDump
 :\\Temp\\yolo\.log;75
