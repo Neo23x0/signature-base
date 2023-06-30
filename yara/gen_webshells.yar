@@ -80,7 +80,7 @@ False positives in 8gb of common webapps plus yara-ci: 2
 
 */
 
-rule webshell_php_generic
+rule WEBSHELL_PHP_generic
 {
     meta:
         description = "php webshell having some kind of input and some kind of payload. restricted to small files or big ones inclusing suspicious strings"
@@ -405,7 +405,7 @@ rule webshell_php_generic
         ) )
 }
 
-rule webshell_php_generic_callback
+rule WEBSHELL_PHP_generic_callback
 {
     meta:
         description = "php webshell having some kind of input and using a callback to execute the payload. restricted to small files or would give lots of false positives"
@@ -708,7 +708,7 @@ rule webshell_php_generic_callback
         )
 }
 
-rule WEBSHELL_php_base64_encoded_payloads : FILE {
+rule WEBSHELL_PHP_base64_Encoded_payloads : FILE {
     meta:
         description = "php webshell containing base64 encoded payload"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
@@ -857,7 +857,7 @@ rule WEBSHELL_php_base64_encoded_payloads : FILE {
         ( any of ( $five* ) and not any of ( $opening* ) ) or any of ( $six* ) or any of ( $seven* ) or any of ( $eight* ) or any of ( $nine* ) )
 }
 
-rule webshell_php_unknown_1
+rule WEBSHELL_PHP_unknown_1
 {
     meta:
         description = "obfuscated php webshell"
@@ -878,7 +878,7 @@ rule webshell_php_unknown_1
         filesize <300KB and all of ($sp*)
 }
 
-rule webshell_php_generic_eval
+rule WEBSHELL_PHP_generic_eval
 {
     meta:
         description = "Generic PHP webshell which uses any eval/exec function in the same line with user input"
@@ -936,7 +936,7 @@ rule webshell_php_generic_eval
         and $geval
 }
 
-rule webshell_php_double_eval_tiny
+rule WEBSHELL_PHP_double_eval_tiny
 {
     meta:
         description = "PHP webshell which probably hides the input inside an eval()ed obfuscated string"
@@ -985,7 +985,7 @@ rule webshell_php_double_eval_tiny
         and #payload >= 2 and not any of ( $fp* )
 }
 
-rule webshell_php_obfuscated
+rule WEBSHELL_PHP_OBFUSC
 {
     meta:
         description = "PHP webshell obfuscated"
@@ -1110,7 +1110,7 @@ rule webshell_php_obfuscated
 
 }
 
-rule webshell_php_obfuscated_encoding
+rule WEBSHELL_PHP_OBFUSC_Encoded
 {
     meta:
         description = "PHP webshell obfuscated by encoding"
@@ -1161,7 +1161,7 @@ rule webshell_php_obfuscated_encoding
         and any of ( $enc* )
 }
 
-rule webshell_php_obfuscated_encoding_mixed_dec_and_hex
+rule WEBSHELL_PHP_OBFUSC_Encoded_mixed_dec_and_hex
 {
     meta:
         description = "PHP webshell obfuscated by encoding of mixed hex and dec"
@@ -1216,7 +1216,7 @@ rule webshell_php_obfuscated_encoding_mixed_dec_and_hex
         and any of ( $mix* )
 }
 
-rule webshell_php_obfuscated_tiny
+rule WEBSHELL_PHP_OBFUSC_tiny
 {
     meta:
         description = "PHP webshell obfuscated"
@@ -1307,7 +1307,7 @@ rule webshell_php_obfuscated_tiny
         ( ( #obf1 + #obf2 ) > 2 or #obf3 > 10 )
 }
 
-rule webshell_php_obfuscated_str_replace
+rule WEBSHELL_PHP_OBFUSC_str_replace
 {
     meta:
         description = "PHP webshell which eval()s obfuscated string"
@@ -1361,7 +1361,7 @@ rule webshell_php_obfuscated_str_replace
         ( #chr1 > 10 or #chr2 > 10 or #chr3 > 10 )
 }
 
-rule webshell_php_obfuscated_fopo
+rule WEBSHELL_PHP_OBFUSC_fopo
 {
     meta:
         description = "PHP webshell which eval()s obfuscated string"
@@ -1420,7 +1420,7 @@ rule webshell_php_obfuscated_fopo
         ( any of ( $one* ) or any of ( $two* ) )
 }
 
-rule webshell_php_gzinflated
+rule WEBSHELL_PHP_gzinflated
 {
     meta:
         description = "PHP webshell which directly eval()s obfuscated string"
@@ -1488,7 +1488,7 @@ rule webshell_php_gzinflated
         and 1 of ( $payload* ) and not any of ( $fp* )
 }
 
-rule webshell_php_obfuscated_3
+rule WEBSHELL_PHP_OBFUSC_3
 {
     meta:
         description = "PHP webshell which eval()s obfuscated string"
@@ -1788,7 +1788,7 @@ rule webshell_php_obfuscated_3
         or #obf1 > 10 ) ) )
 }
 
-rule webshell_php_includer_eval
+rule WEBSHELL_PHP_includer_eval
 {
     meta:
         description = "PHP webshell which eval()s another included file"
@@ -1833,7 +1833,7 @@ rule webshell_php_includer_eval
         and 1 of ( $payload* ) and 1 of ( $include* )
 }
 
-rule webshell_php_includer_tiny
+rule WEBSHELL_PHP_includer_tiny
 {
     meta:
         description = "Suspicious: Might be PHP webshell includer, check the included file"
@@ -1874,7 +1874,7 @@ rule webshell_php_includer_tiny
         and any of ( $php_include* )
 }
 
-rule webshell_php_dynamic
+rule WEBSHELL_PHP_dynamic
 {
     meta:
         description = "PHP webshell using function name from variable, e.g. $a='ev'.'al'; $a($code)"
@@ -1936,7 +1936,7 @@ rule webshell_php_dynamic
         and not any of ( $pd_fp* )
 }
 
-rule webshell_php_dynamic_big
+rule WEBSHELL_PHP_dynamic_big
 {
     meta:
         description = "PHP webshell using $a($code) for kind of eval with encoded blob to decode, e.g. b374k"
@@ -2251,7 +2251,7 @@ rule webshell_php_dynamic_big
         )
 }
 
-rule webshell_php_encoded_big
+rule WEBSHELL_PHP_Encoded_big
 {
     meta:
         description = "PHP webshell using some kind of eval with encoded blob to decode"
@@ -2334,7 +2334,7 @@ rule webshell_php_encoded_big
 
 }
 
-rule webshell_php_generic_backticks
+rule WEBSHELL_PHP_generic_backticks
 {
     meta:
         description = "Generic PHP webshell which uses backticks directly on user input"
@@ -2381,7 +2381,7 @@ rule webshell_php_generic_backticks
         and $backtick and filesize < 200
 }
 
-rule webshell_php_generic_backticks_obfuscated
+rule WEBSHELL_PHP_generic_backticks_OBFUSC
 {
     meta:
         description = "Generic PHP webshell which uses backticks directly on user input"
@@ -2426,7 +2426,7 @@ rule webshell_php_generic_backticks_obfuscated
         and $s1
 }
 
-rule webshell_php_by_string_known_webshell
+rule WEBSHELL_PHP_by_string_known_webshell
 {
     meta:
         description = "Known PHP Webshells which contain unique strings, lousy rule for low hanging fruits. Most are catched by other rules in here but maybe these catch different versions."
@@ -2560,7 +2560,7 @@ rule webshell_php_by_string_known_webshell
         ( any of ( $pbs* ) or $front1 in ( 0 .. 60 ) )
 }
 
-rule webshell_php_strings_susp
+rule WEBSHELL_PHP_strings_SUSP
 {
     meta:
         description = "typical webshell strings, suspicious"
@@ -2642,7 +2642,7 @@ rule webshell_php_strings_susp
         )
 }
 
-rule webshell_php_in_htaccess
+rule WEBSHELL_PHP_in_htaccess
 {
     meta:
         description = "Use Apache .htaccess to execute php code inside .htaccess"
@@ -2659,7 +2659,7 @@ rule webshell_php_in_htaccess
         filesize <100KB and $hta
 }
 
-rule webshell_php_function_via_get
+rule WEBSHELL_PHP_function_via_get
 {
     meta:
         description = "Webshell which sends eval/assert via GET"
@@ -2702,7 +2702,7 @@ rule webshell_php_function_via_get
         and any of ( $sr* )
 }
 
-rule webshell_php_writer
+rule WEBSHELL_PHP_writer
 {
     meta:
         description = "PHP webshell which only writes an uploaded file to disk"
@@ -2789,7 +2789,7 @@ rule webshell_php_writer
         )
 }
 
-rule webshell_asp_writer
+rule WEBSHELL_ASP_writer
 {
     meta:
         description = "ASP webshell which only writes an uploaded file to disk"
@@ -2954,7 +2954,7 @@ rule webshell_asp_writer
         ( filesize < 6000 and 1 of ( $sus* ) ) )
 }
 
-rule webshell_asp_obfuscated
+rule WEBSHELL_ASP_OBFUSC
 {
     meta:
         description = "ASP webshell obfuscated"
@@ -3221,7 +3221,7 @@ rule webshell_asp_obfuscated
         )
 }
 
-rule webshell_asp_generic_eval_on_input
+rule WEBSHELL_ASP_generic_eval_on_input
 {
     meta:
         description = "Generic ASP webshell which uses any eval/exec function directly on user input"
@@ -3324,7 +3324,7 @@ rule webshell_asp_generic_eval_on_input
         ( filesize < 100 and any of ( $payload_and_input* ) )
 }
 
-rule webshell_asp_nano
+rule WEBSHELL_ASP_nano
 {
     meta:
         description = "Generic ASP webshell which uses any eval/exec function"
@@ -3514,7 +3514,7 @@ rule webshell_asp_nano
         ( filesize < 1000 and any of ( $susasp* ) ) )
 }
 
-rule webshell_asp_encoded
+rule WEBSHELL_ASP_Encoded
 {
     meta:
         description = "Webshell in VBscript or JScript encoded using *.Encode plus a suspicious string"
@@ -3618,7 +3618,7 @@ rule webshell_asp_encoded
         ( filesize < 700 and #data1 > 0 ) )
 }
 
-rule webshell_asp_encoded_aspcoding
+rule WEBSHELL_ASP_Encoded_aspcoding
 {
     meta:
         description = "ASP Webshell encoded using ASPEncodeDLL.AspCoding"
@@ -3722,7 +3722,7 @@ rule webshell_asp_encoded_aspcoding
         and all of ( $encoded* ) and any of ( $data* )
 }
 
-rule webshell_asp_by_string
+rule WEBSHELL_ASP_by_string
 {
     meta:
         description = "Known ASP Webshells which contain unique strings, lousy rule for low hanging fruits. Most are catched by other rules in here but maybe these catch different versions."
@@ -3899,7 +3899,7 @@ rule webshell_asp_by_string
         and any of ( $asp_string* )
 }
 
-rule webshell_asp_sniffer
+rule WEBSHELL_ASP_sniffer
 {
     meta:
         description = "ASP webshell which can sniff local traffic"
@@ -4029,7 +4029,7 @@ rule webshell_asp_sniffer
         and filesize < 30KB and all of ( $sniff* )
 }
 
-rule webshell_asp_generic_tiny
+rule WEBSHELL_ASP_generic_tiny
 {
     meta:
         description = "Generic tiny ASP webshell which uses any eval/exec function indirectly on user input or writes a file"
@@ -4233,7 +4233,7 @@ rule webshell_asp_generic_tiny
         ) )
 }
 
-rule WEBSHELL_asp_generic : FILE {
+rule WEBSHELL_ASP_generic : FILE {
     meta:
         description = "Generic ASP webshell which uses any eval/exec function indirectly on user input or writes a file"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
@@ -4529,7 +4529,7 @@ rule WEBSHELL_asp_generic : FILE {
         ) )
 }
 
-rule webshell_asp_generic_registry_reader
+rule WEBSHELL_ASP_generic_registry_reader
 {
     meta:
         description = "Generic ASP webshell which reads the registry (might look for passwords, license keys, database settings, general recon, ..."
@@ -4673,7 +4673,7 @@ rule webshell_asp_generic_registry_reader
         ) )
 }
 
-rule webshell_aspx_regeorg_csharp
+rule WEBSHELL_ASPX_regeorg_CSHARP
 {
     meta:
         description = "Webshell regeorg aspx c# version"
@@ -4779,7 +4779,7 @@ rule webshell_aspx_regeorg_csharp
         ( all of ( $sa* ) and any of ( $input_sa* ) ) )
 }
 
-rule webshell_csharp_generic
+rule WEBSHELL_CSHARP_generic
 {
     meta:
         description = "Webshell in c#"
@@ -4882,7 +4882,7 @@ rule webshell_csharp_generic
         ( $input_http or all of ( $input_form* ) ) and all of ( $exec_proc* ) and any of ( $exec_shell* )
 }
 
-rule webshell_asp_runtime_compile : FILE {
+rule WEBSHELL_ASP_runtime_compile : FILE {
     meta:
         description = "ASP webshell compiling payload in memory at runtime, e.g. sharpyshell"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
@@ -4980,7 +4980,7 @@ rule webshell_asp_runtime_compile : FILE {
         )
 }
 
-rule webshell_asp_sql
+rule WEBSHELL_ASP_sql
 {
     meta:
         description = "ASP webshell giving SQL access. Might also be a dual use tool."
@@ -5155,7 +5155,7 @@ rule webshell_asp_sql
         ( filesize < 5KB and any of ( $slightly_sus* ) ) )
 }
 
-rule webshell_asp_scan_writable
+rule WEBSHELL_ASP_scan_writable
 {
     meta:
         description = "ASP webshell searching for writable directories (to hide more webshells ...)"
@@ -5297,7 +5297,7 @@ rule webshell_asp_scan_writable
         and 6 of ( $scan* ) and any of ( $sus* )
 }
 
-rule webshell_jsp_regeorg
+rule WEBSHELL_JSP_regeorg
 {
     meta:
         description = "Webshell regeorg JSP version"
@@ -5343,7 +5343,7 @@ rule webshell_jsp_regeorg
         and all of ( $jgeorg* )
 }
 
-rule webshell_jsp_http_proxy
+rule WEBSHELL_JSP_http_proxy
 {
     meta:
         description = "Webshell JSP HTTP proxy"
@@ -5388,7 +5388,7 @@ rule webshell_jsp_http_proxy
         and all of ( $jh* )
 }
 
-rule webshell_jsp_writer_nano
+rule WEBSHELL_JSP_writer_nano
 {
     meta:
         description = "JSP file writer"
@@ -5468,7 +5468,7 @@ rule webshell_jsp_writer_nano
             )
 }
 
-rule webshell_jsp_generic_tiny
+rule WEBSHELL_JSP_generic_tiny
 {
     meta:
         description = "Generic JSP webshell tiny"
@@ -5550,7 +5550,7 @@ rule webshell_jsp_generic_tiny
         ( 1 of ( $payload* ) or all of ( $payload_rt* ) )
 }
 
-rule webshell_jsp_generic
+rule WEBSHELL_JSP_generic
 {
     meta:
         description = "Generic JSP webshell"
@@ -5641,7 +5641,7 @@ rule webshell_jsp_generic
         and not any of ( $fp* ) and any of ( $susp* )
 }
 
-rule webshell_jsp_generic_base64
+rule WEBSHELL_JSP_generic_base64
 {
     meta:
         description = "Generic JSP webshell with base64 encoded payload"
@@ -5715,7 +5715,7 @@ rule webshell_jsp_generic_base64
         ( any of ( $one* ) and any of ( $two* ) or any of ( $three* ) )
 }
 
-rule webshell_jsp_generic_processbuilder
+rule WEBSHELL_JSP_generic_processbuilder
 {
     meta:
         description = "Generic JSP webshell which uses processbuilder to execute user input"
@@ -5751,7 +5751,7 @@ rule webshell_jsp_generic_processbuilder
         and $exec and $start
 }
 
-rule webshell_jsp_generic_reflection
+rule WEBSHELL_JSP_generic_reflection
 {
     meta:
         description = "Generic JSP webshell which uses reflection to execute user input"
@@ -5831,7 +5831,7 @@ rule webshell_jsp_generic_reflection
 
 }
 
-rule webshell_jsp_generic_classloader
+rule WEBSHELL_JSP_generic_classloader
 {
     meta:
         description = "Generic JSP webshell which uses classloader to execute user input"
@@ -5907,7 +5907,7 @@ rule webshell_jsp_generic_classloader
         )
 }
 
-rule webshell_jsp_generic_encoded_shell
+rule WEBSHELL_JSP_generic_Encoded_shell
 {
     meta:
         description = "Generic JSP webshell which contains cmd or /bin/bash encoded in ascii ord"
@@ -5930,7 +5930,7 @@ rule webshell_jsp_generic_encoded_shell
         filesize <300KB and any of ($sj*)
 }
 
-rule webshell_jsp_netspy
+rule WEBSHELL_JSP_netspy
 {
     meta:
         description = "JSP netspy webshell"
@@ -5995,7 +5995,7 @@ rule webshell_jsp_netspy
         and 4 of ( $scan* ) and 1 of ( $write* ) and $http
 }
 
-rule webshell_jsp_by_string
+rule WEBSHELL_JSP_by_string
 {
     meta:
         description = "JSP Webshells which contain unique strings, lousy rule for low hanging fruits. Most are catched by other rules in here but maybe these catch different versions."
@@ -6091,7 +6091,7 @@ rule webshell_jsp_by_string
         )
 }
 
-rule webshell_jsp_input_upload_write
+rule WEBSHELL_JSP_input_upload_write
 {
     meta:
         description = "JSP uploader which gets input, writes files and contains \"upload\""
@@ -6313,7 +6313,7 @@ rule WEBSHELL_generic_os_strings : FILE {
         and not any of ( $fp* )
 }
 
-rule webshell_in_image
+rule WEBSHELL_in_image
 {
     meta:
         description = "Webshell in GIF, PNG or JPG"
@@ -6573,7 +6573,7 @@ rule webshell_in_image
         ) ) )
 }
 
-rule WEBSHELL_Mixed_Obfuscations {
+rule WEBSHELL_Mixed_OBFUSC {
    meta:
       description = "Detects webshell with mixed obfuscation commands"
       author = "Arnim Rupp (https://github.com/ruppde)"
