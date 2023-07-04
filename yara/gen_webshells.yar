@@ -4741,7 +4741,8 @@ rule WEBSHELL_ASPX_Regeorg_CSHARP
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         reference = "https://github.com/sensepost/reGeorg"
         hash = "c1f43b7cf46ba12cfc1357b17e4f5af408740af7ae70572c9cf988ac50260ce1"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
+        score = 75
         date = "2021/01/11"
         modified = "2023-04-05"
 
@@ -4953,6 +4954,7 @@ rule WEBSHELL_ASP_Runtime_Compile : FILE {
         reference = "https://github.com/antonioCoco/SharPyShell"
         date = "2021/01/11"
         modified = "2023-04-05"
+        score = 75
         hash = "e826c4139282818d38dcccd35c7ae6857b1d1d01"
         hash = "e20e078d9fcbb209e3733a06ad21847c5c5f0e52"
         hash = "57f758137aa3a125e4af809789f3681d1b08ee5b"
@@ -5371,9 +5373,10 @@ rule WEBSHELL_JSP_ReGeorg
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         reference = "https://github.com/sensepost/reGeorg"
         hash = "6db49e43722080b5cd5f07e058a073ba5248b584"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/24"
         modified = "2023-04-05"
+        score = 75
 
     strings:
         $jgeorg1 = "request" fullword wide ascii
