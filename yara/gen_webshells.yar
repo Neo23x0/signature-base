@@ -85,7 +85,7 @@ rule WEBSHELL_PHP_Generic
     meta:
         description = "php webshell having some kind of input and some kind of payload. restricted to small files or big ones inclusing suspicious strings"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/01/14"
@@ -412,7 +412,7 @@ rule WEBSHELL_PHP_Generic_Callback
     meta:
         description = "php webshell having some kind of input and using a callback to execute the payload. restricted to small files or would give lots of false positives"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         date = "2021/01/14"
         modified = "2023-04-05"
@@ -715,7 +715,7 @@ rule WEBSHELL_PHP_Base64_Encoded_Payloads : FILE {
     meta:
         description = "php webshell containing base64 encoded payload"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/01/07"
@@ -867,7 +867,7 @@ rule WEBSHELL_PHP_Unknown_1
     meta:
         description = "obfuscated php webshell"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         hash = "12ce6c7167b33cc4e8bdec29fb1cfc44ac9487d1"
@@ -890,7 +890,7 @@ rule WEBSHELL_PHP_Generic_Eval
     meta:
         description = "Generic PHP webshell which uses any eval/exec function in the same line with user input"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/01/07"
@@ -950,14 +950,16 @@ rule WEBSHELL_PHP_Double_Eval_Tiny
     meta:
         description = "PHP webshell which probably hides the input inside an eval()ed obfuscated string"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
-        hash = "aabfd179aaf716929c8b820eefa3c1f613f8dcac"
         date = "2021-01-11"
-        modified = "2023-04-05"
+        modified = "2023-07-05"
         hash = "f66fb918751acc7b88a17272a044b5242797976c73a6e54ac6b04b02f61e9761"
         hash = "6b2f0a3bd80019dea536ddbf92df36ab897dd295840cb15bb7b159d0ee2106ff"
+        hash = "aabfd179aaf716929c8b820eefa3c1f613f8dcac"
+        hash = "9780c70bd1c76425d4313ca7a9b89dda77d2c664"
+        hash = "006620d2a701de73d995fc950691665c0692af11"
 
 
     strings:
@@ -1000,7 +1002,7 @@ rule WEBSHELL_PHP_OBFUSC
     meta:
         description = "PHP webshell obfuscated"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/01/12"
@@ -1127,7 +1129,7 @@ rule WEBSHELL_PHP_OBFUSC_Encoded
     meta:
         description = "PHP webshell obfuscated by encoding"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         date = "2021/04/18"
         modified = "2023-04-05"
@@ -1179,7 +1181,7 @@ rule WEBSHELL_PHP_OBFUSC_Encoded_Mixed_Dec_And_Hex
     meta:
         description = "PHP webshell obfuscated by encoding of mixed hex and dec"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/04/18"
@@ -1236,11 +1238,14 @@ rule WEBSHELL_PHP_OBFUSC_Tiny
     meta:
         description = "PHP webshell obfuscated"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/01/12"
-        modified = "2023-04-05"
+        modified = "2023-07-05"
+        hash = "b7b7aabd518a2f8578d4b1bc9a3af60d155972f1"
+        hash = "694ec6e1c4f34632a9bd7065f73be473"
+        hash = "5c871183444dbb5c8766df6b126bd80c624a63a16cc39e20a0f7b002216b2ba5"
 
     strings:
         // 'ev'.'al'
@@ -1329,7 +1334,7 @@ rule WEBSHELL_PHP_OBFUSC_Str_Replace
     meta:
         description = "PHP webshell which eval()s obfuscated string"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/01/12"
@@ -1385,7 +1390,7 @@ rule WEBSHELL_PHP_OBFUSC_Fopo
     meta:
         description = "PHP webshell which eval()s obfuscated string"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         hash = "fbcff8ea5ce04fc91c05384e847f2c316e013207"
@@ -1446,12 +1451,16 @@ rule WEBSHELL_PHP_Gzinflated
     meta:
         description = "PHP webshell which directly eval()s obfuscated string"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/01/12"
-        modified = "2023-04-05"
+        modified = "2023-07-05"
         hash = "49e5bc75a1ec36beeff4fbaeb16b322b08cf192d"
+        hash = "6f36d201cd32296bad9d5864c7357e8634f365cc"
+        hash = "ab10a1e69f3dfe7c2ad12b2e6c0e66db819c2301"
+        hash = "a6cf337fe11fe646d7eee3d3f09c7cb9643d921d"
+        hash = "07eb6634f28549ebf26583e8b154c6a579b8a733"
 
     strings:
         $payload2 = /eval\s?\(\s?("\?>".)?gzinflate\s?\(\s?base64_decode\s?\(/ wide ascii nocase
@@ -1516,11 +1525,15 @@ rule WEBSHELL_PHP_OBFUSC_3
     meta:
         description = "PHP webshell which eval()s obfuscated string"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/04/17"
-        modified = "2023-04-05"
+        modified = "2023-07-05"
+        hash = "11bb1fa3478ec16c00da2a1531906c05e9c982ea"
+        hash = "d6b851cae249ea6744078393f622ace15f9880bc"
+        hash = "14e02b61905cf373ba9234a13958310652a91ece"
+        hash = "6f97f607a3db798128288e32de851c6f56e91c1d"
 
     strings:
         $obf1 = "chr(" wide ascii
@@ -1818,12 +1831,15 @@ rule WEBSHELL_PHP_Includer_Eval
     meta:
         description = "PHP webshell which eval()s another included file"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
-        hash = "3a07e9188028efa32872ba5b6e5363920a6b2489"
         date = "2021/01/13"
         modified = "2023-04-05"
+        hash = "3a07e9188028efa32872ba5b6e5363920a6b2489"
+        hash = "ab771bb715710892b9513b1d075b4e2c0931afb6"
+        hash = "202dbcdc2896873631e1a0448098c820c82bcc8385a9f7579a0dc9702d76f580"
+        hash = "b51a6d208ec3a44a67cce16dcc1e93cdb06fe150acf16222815333ddf52d4db8"
 
     strings:
         $payload1 = "eval" fullword wide ascii
@@ -1865,11 +1881,14 @@ rule WEBSHELL_PHP_Includer_Tiny
     meta:
         description = "Suspicious: Might be PHP webshell includer, check the included file"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/04/17"
-        modified = "2023-04-05"
+        modified = "2023-0/-05"
+        hash = "0687585025f99596508783b891e26d6989eec2ba"
+        hash = "9e856f5cb7cb901b5003e57c528a6298341d04dc"
+        hash = "b3b0274cda28292813096a5a7a3f5f77378b8905205bda7bb7e1a679a7845004"
 
     strings:
         $php_include1 = /include\(\$_(GET|POST|REQUEST)\[/ nocase wide ascii
@@ -1908,10 +1927,10 @@ rule WEBSHELL_PHP_Dynamic
     meta:
         description = "PHP webshell using function name from variable, e.g. $a='ev'.'al'; $a($code)"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         date = "2021/01/13"
-        modified = "2023-04-05"
+        modified = "2023-07-05"
         score = 60
         hash = "65dca1e652d09514e9c9b2e0004629d03ab3c3ef"
         hash = "b8ab38dc75cec26ce3d3a91cb2951d7cdd004838"
@@ -1921,6 +1940,7 @@ rule WEBSHELL_PHP_Dynamic
     strings:
         $pd_fp1 = "whoops_add_stack_frame" wide ascii
         $pd_fp2 = "new $ec($code, $mode, $options, $userinfo);" wide ascii
+        $pd_fp3 = "($i)] = 600;" ascii
 
         //strings from private rule capa_php_old_safe
         $php_short = "<?" wide ascii
@@ -1971,10 +1991,10 @@ rule WEBSHELL_PHP_Dynamic_Big
     meta:
         description = "PHP webshell using $a($code) for kind of eval with encoded blob to decode, e.g. b374k"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         date = "2021/02/07"
-        modified = "2023-04-05"
+        modified = "2023-07-05"
         score = 50
         hash = "6559bfc4be43a55c6bb2bd867b4c9b929713d3f7f6de8111a3c330f87a9b302c"
         hash = "9e82c9c2fa64e26fd55aa18f74759454d89f968068d46b255bd4f41eb556112e"
@@ -1987,7 +2007,6 @@ rule WEBSHELL_PHP_Dynamic_Big
         hash = "ee34d62e136a04e2eaf84b8daa12c9f2233a366af83081a38c3c973ab5e2c40f"
 
     strings:
-
         //strings from private rule capa_bin_files
         $dex   = { 64 65 ( 78 | 79 ) 0a 30 }
         $pack  = { 50 41 43 4b 00 00 00 02 00 }
@@ -2161,6 +2180,8 @@ rule WEBSHELL_PHP_Dynamic_Big
         $gif = { 47 49 46 38 }
 
         $fp1 = "# Some examples from obfuscated malware:" ascii
+        $fp2 = "* @package   PHP_CodeSniffer" ascii
+        $fp3 = ".jQuery===" ascii
     condition:
         //any of them or
         not (
@@ -2287,12 +2308,16 @@ rule WEBSHELL_PHP_Encoded_Big
     meta:
         description = "PHP webshell using some kind of eval with encoded blob to decode"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         date = "2021/02/07"
-        modified = "2023-04-05"
+        modified = "2023-07-05"
         score = 50
         hash = "1d4b374d284c12db881ba42ee63ebce2759e0b14"
+        hash = "fc0086caee0a2cd20609a05a6253e23b5e3245b8"
+        hash = "b15b073801067429a93e116af1147a21b928b215"
+        hash = "74c92f29cf15de34b8866db4b40748243fb938b4"
+        hash = "042245ee0c54996608ff8f442c8bafb8"
 
     strings:
 
@@ -2371,7 +2396,7 @@ rule WEBSHELL_PHP_Generic_Backticks
     meta:
         description = "Generic PHP webshell which uses backticks directly on user input"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/01/07"
@@ -2420,7 +2445,7 @@ rule WEBSHELL_PHP_Generic_Backticks_OBFUSC
     meta:
         description = "Generic PHP webshell which uses backticks directly on user input"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/01/07"
@@ -2467,7 +2492,7 @@ rule WEBSHELL_PHP_By_String_Known_Webshell
     meta:
         description = "Known PHP Webshells which contain unique strings, lousy rule for low hanging fruits. Most are catched by other rules in here but maybe these catch different versions."
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         date = "2021-01-09"
         modified = "2023-04-05"
@@ -2602,12 +2627,16 @@ rule WEBSHELL_PHP_Strings_SUSP
     meta:
         description = "typical webshell strings, suspicious"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         date = "2021/01/12"
-        modified = "2023-04-05"
-        hash = "0dd568dbe946b5aa4e1d33eab1decbd71903ea04"
+        modified = "2023-07-05"
         score = 50
+        hash = "0dd568dbe946b5aa4e1d33eab1decbd71903ea04"
+        hash = "dde2bdcde95730510b22ae8d52e4344997cb1e74"
+        hash = "499db4d70955f7d40cf5cbaf2ecaf7a2"
+        hash = "281b66f62db5caab2a6eb08929575ad95628a690"
+        hash = "1ab3ae4d613b120f9681f6aa8933d66fa38e4886"
 
     strings:
         $sstring1 = "eval(\"?>\"" nocase wide ascii
@@ -2685,12 +2714,16 @@ rule WEBSHELL_PHP_In_Htaccess
     meta:
         description = "Use Apache .htaccess to execute php code inside .htaccess"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/01/07"
-        modified = "2023-04-05"
+        modified = "2023-07-05"
         hash = "c026d4512a32d93899d486c6f11d1e13b058a713"
+        hash = "d79e9b13a32a9e9f3fa36aa1a4baf444bfd2599a"
+        hash = "e1d1091fee6026829e037b2c70c228344955c263"
+        hash = "c026d4512a32d93899d486c6f11d1e13b058a713"
+        hash = "8c9e65cd3ef093cd9c5b418dc5116845aa6602bc92b9b5991b27344d8b3f7ef2"
 
     strings:
         $hta = "AddType application/x-httpd-php .htaccess" wide ascii
@@ -2704,7 +2737,7 @@ rule WEBSHELL_PHP_Function_Via_Get
     meta:
         description = "Webshell which sends eval/assert via GET"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/01/09"
@@ -2749,13 +2782,16 @@ rule WEBSHELL_PHP_Writer
     meta:
         description = "PHP webshell which only writes an uploaded file to disk"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         date = "2021/04/17"
-        modified = "2023-04-05"
+        modified = "2023-07-05"
         score = 50
         hash = "ec83d69512aa0cc85584973f5f0850932fb1949fb5fb2b7e6e5bbfb121193637"
         hash = "407c15f94a33232c64ddf45f194917fabcd2e83cf93f38ee82f9720e2635fa64"
+        hash = "988b125b6727b94ce9a27ea42edc0ce282c5dfeb"
+        hash = "0ce760131787803bbef216d0ee9b5eb062633537"
+        hash = "20281d16838f707c86b1ff1428a293ed6aec0e97"
 
     strings:
         $sus3 = "'upload'" wide ascii
@@ -2837,11 +2873,16 @@ rule WEBSHELL_ASP_Writer
     meta:
         description = "ASP webshell which only writes an uploaded file to disk"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         date = "2021/03/07"
-        modified = "2023-04-05"
+        modified = "2023-07-05"
         score = 60
+        hash = "df6eaba8d643c49c6f38016531c88332e80af33c"
+        hash = "83642a926291a499916e8c915dacadd0d5a8b91f"
+        hash = "5417fad68a6f7320d227f558bf64657fe3aa9153"
+        hash = "97d9f6c411f54b56056a145654cd00abca2ff871"
+        hash = "fc44fd7475ee6c0758ace2b17dd41ed7ea75cc73"
 
     strings:
         $sus1 = "password" fullword wide ascii
@@ -3003,13 +3044,19 @@ rule WEBSHELL_ASP_OBFUSC
     meta:
         description = "ASP webshell obfuscated"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/01/12"
-        modified = "2023-04-05"
+        modified = "2023-07-05"
         hash = "ad597eee256de51ffb36518cd5f0f4aa0f254f27517d28fb7543ae313b15e112"
         hash = "e0d21fdc16e0010b88d0197ebf619faa4aeca65243f545c18e10859469c1805a"
+        hash = "54a5620d4ea42e41beac08d8b1240b642dd6fd7c"
+        hash = "fc44fd7475ee6c0758ace2b17dd41ed7ea75cc73"
+        hash = "be2fedc38fc0c3d1f925310d5156ccf3d80f1432"
+        hash = "3175ee00fc66921ebec2e7ece8aa3296d4275cb5"
+        hash = "d6b96d844ac395358ee38d4524105d331af42ede"
+        hash = "cafc4ede15270ab3f53f007c66e82627a39f4d0f"
 
     strings:
         $asp_obf1 = "/*-/*-*/" wide ascii
@@ -3167,6 +3214,7 @@ rule WEBSHELL_ASP_OBFUSC
         */
 
         $m_fp1 = "Author: Andre Teixeira - andret@microsoft.com" /* FPs with 0227f4c366c07c45628b02bae6b4ad01 */
+        $m_fp2 = "DataBinder.Eval(Container.DataItem" ascii wide
 
 
         //strings from private rule capa_asp_obfuscation_obviously
@@ -3220,7 +3268,6 @@ rule WEBSHELL_ASP_OBFUSC
         ( (
         (
             filesize < 100KB and
-            not any of ( $m_fp* ) and
             (
                 //( #o1+#o2 ) > 50 or
                 ( #o4+#o5+#o6+#o7+#o8+#o9 ) > 20
@@ -3265,6 +3312,7 @@ rule WEBSHELL_ASP_OBFUSC
         )
         )
         )
+        and not any of ( $m_fp* )
 }
 
 rule WEBSHELL_ASP_Generic_Eval_On_Input
@@ -3272,7 +3320,7 @@ rule WEBSHELL_ASP_Generic_Eval_On_Input
     meta:
         description = "Generic ASP webshell which uses any eval/exec function directly on user input"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/01/07"
@@ -3377,7 +3425,7 @@ rule WEBSHELL_ASP_Nano
     meta:
         description = "Generic ASP webshell which uses any eval/exec function"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/01/13"
@@ -3569,11 +3617,16 @@ rule WEBSHELL_ASP_Encoded
     meta:
         description = "Webshell in VBscript or JScript encoded using *.Encode plus a suspicious string"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/03/14"
-        modified = "2023-04-05"
+        modified = "2023-07-05"
+        hash = "1bc7327f9d3dbff488e5b0b69a1b39dcb99b3399"
+        hash = "9885ee1952b5ad9f84176c9570ad4f0e32461c92"
+        hash = "27a020c5bc0dbabe889f436271df129627b02196"
+        hash = "f41f8c82b155c3110fc1325e82b9ee92b741028b"
+        hash = "af40f4c36e3723236c59dc02f28a3efb047d67dd"
 
     strings:
         $encoded1 = "VBScript.Encode" nocase wide ascii
@@ -3675,11 +3728,13 @@ rule WEBSHELL_ASP_Encoded_AspCoding
     meta:
         description = "ASP Webshell encoded using ASPEncodeDLL.AspCoding"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         date = "2021/03/14"
-        modified = "2023-04-05"
+        modified = "2023-07-05"
         score = 60
+        hash = "7cfd184ab099c4d60b13457140493b49c8ba61ee"
+        hash = "f5095345ee085318235c11ae5869ae564d636a5342868d0935de7582ba3c7d7a"
 
     strings:
         $encoded1 = "ASPEncodeDLL" fullword nocase wide ascii
@@ -3780,7 +3835,7 @@ rule WEBSHELL_ASP_By_String
     meta:
         description = "Known ASP Webshells which contain unique strings, lousy rule for low hanging fruits. Most are catched by other rules in here but maybe these catch different versions."
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021-01-13"
@@ -3959,11 +4014,15 @@ rule WEBSHELL_ASP_Sniffer
     meta:
         description = "ASP webshell which can sniff local traffic"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/03/14"
-        modified = "2023-04-05"
+        modified = "2023-07-05"
+        hash = "1206c22de8d51055a5e3841b4542fb13aa0f97dd"
+        hash = "60d131af1ed23810dbc78f85ee32ffd863f8f0f4"
+        hash = "c3bc4ab8076ef184c526eb7f16e08d41b4cec97e"
+        hash = "ed5938c04f61795834751d44a383f8ca0ceac833"
 
     strings:
         $sniff1 = "Socket(" wide ascii
@@ -4091,13 +4150,15 @@ rule WEBSHELL_ASP_Generic_Tiny
     meta:
         description = "Generic tiny ASP webshell which uses any eval/exec function indirectly on user input or writes a file"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/01/07"
-        modified = "2023-04-05"
+        modified = "2023-07-05"
         hash = "990e3f129b8ba409a819705276f8fa845b95dad0"
         hash = "52ce724580e533da983856c4ebe634336f5fd13a"
+        hash = "0864f040a37c3e1cef0213df273870ed6a61e4bc"
+        hash = "b184dc97b19485f734e3057e67007a16d47b2a62"
 
     strings:
         $fp1 = "net.rim.application.ipproxyservice.AdminCommand.execute"
@@ -4296,13 +4357,15 @@ rule WEBSHELL_ASP_Generic : FILE {
     meta:
         description = "Generic ASP webshell which uses any eval/exec function indirectly on user input or writes a file"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         date = "2021-03-07"
-        modified = "2023-04-05"
+        modified = "2023-07-05"
         score = 60
         hash = "a8c63c418609c1c291b3e731ca85ded4b3e0fba83f3489c21a3199173b176a75"
         hash = "4cf6fbad0411b7d33e38075f5e00d4c8ae9ce2f6f53967729974d004a183b25c"
+        hash = "a91320483df0178eb3cafea830c1bd94585fc896"
+        hash = "f3398832f697e3db91c3da71a8e775ebf66c7e73"
     strings:
         $asp_much_sus7  = "Web Shell" nocase
         $asp_much_sus8  = "WebShell" nocase
@@ -4594,11 +4657,14 @@ rule WEBSHELL_ASP_Generic_Registry_Reader
     meta:
         description = "Generic ASP webshell which reads the registry (might look for passwords, license keys, database settings, general recon, ..."
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         date = "2021/03/14"
-        modified = "2023-04-05"
+        modified = "2023-07-05"
         score = 50
+        hash = "4d53416398a89aef3a39f63338a7c1bf2d3fcda4"
+        hash = "f85cf490d7eb4484b415bea08b7e24742704bdda"
+        hash = "898ebfa1757dcbbecb2afcdab1560d72ae6940de"
 
     strings:
         /* $asp_reg1  = "Registry" fullword wide ascii */ /* too many matches issues */
@@ -4744,7 +4810,11 @@ rule WEBSHELL_ASPX_Regeorg_CSHARP
         author = "Arnim Rupp (https://github.com/ruppde)"
         score = 75
         date = "2021/01/11"
-        modified = "2023-04-05"
+        modified = "2023-07-05"
+        hash = "479c1e1f1c263abe339de8be99806c733da4e8c1"
+        hash = "38a1f1fc4e30c0b4ad6e7f0e1df5a92a7d05020b"
+        hash = "e54f1a3eab740201feda235835fc0aa2e0c44ba9"
+        hash = "aea0999c6e5952ec04bf9ee717469250cddf8a6f"
 
     strings:
         $input_sa1 = "Request.QueryString.Get" fullword nocase wide ascii
@@ -4846,12 +4916,16 @@ rule WEBSHELL_CSHARP_Generic
     meta:
         description = "Webshell in c#"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         hash = "b6721683aadc4b4eba4f081f2bc6bc57adfc0e378f6d80e2bfa0b1e3e57c85c7"
         date = "2021/01/11"
-        modified = "2023-04-05"
+        modified = "2023-07-05"
+        hash = "4b365fc9ddc8b247a12f4648cd5c91ee65e33fae"
+        hash = "019eb61a6b5046502808fb5ab2925be65c0539b4"
+        hash = "620ee444517df8e28f95e4046cd7509ac86cd514"
+        hash = "a91320483df0178eb3cafea830c1bd94585fc896"
 
     strings:
         $input_http = "Request." nocase wide ascii
@@ -4950,7 +5024,7 @@ rule WEBSHELL_ASP_Runtime_Compile : FILE {
     meta:
         description = "ASP webshell compiling payload in memory at runtime, e.g. sharpyshell"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "https://github.com/antonioCoco/SharPyShell"
         date = "2021/01/11"
         modified = "2023-04-05"
@@ -5050,11 +5124,16 @@ rule WEBSHELL_ASP_SQL
     meta:
         description = "ASP webshell giving SQL access. Might also be a dual use tool."
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/03/14"
-        modified = "2023-04-05"
+        modified = "2023-07-05"
+        hash = "216c1dd950e0718e35bc4834c5abdc2229de3612"
+        hash = "ffe44e9985d381261a6e80f55770833e4b78424bn"
+        hash = "3d7cd32d53abc7f39faed133e0a8f95a09932b64"
+        hash = "f19cc178f1cfad8601f5eea2352cdbd2d6f94e7e"
+        hash = "cafc4ede15270ab3f53f007c66e82627a39f4d0f"
 
     strings:
         $sql1 = "SqlConnection" fullword wide ascii
@@ -5227,7 +5306,7 @@ rule WEBSHELL_ASP_Scan_Writable
     meta:
         description = "ASP webshell searching for writable directories (to hide more webshells ...)"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/03/14"
@@ -5377,6 +5456,10 @@ rule WEBSHELL_JSP_ReGeorg
         date = "2021/01/24"
         modified = "2023-04-05"
         score = 75
+        hash = "650eaa21f4031d7da591ebb68e9fc5ce5c860689"
+        hash = "00c86bf6ce026ccfaac955840d18391fbff5c933"
+        hash = "6db49e43722080b5cd5f07e058a073ba5248b584"
+        hash = "9108a33058aa9a2fb6118b719c5b1318f33f0989"
 
     strings:
         $jgeorg1 = "request" fullword wide ascii
@@ -5419,11 +5502,13 @@ rule WEBSHELL_JSP_HTTP_Proxy
         description = "Webshell JSP HTTP proxy"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         hash = "2f9b647660923c5262636a5344e2665512a947a4"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/01/24"
-        modified = "2023-04-05"
+        modified = "2023-07-05"
+        hash = "97c1e2bf7e769d3fc94ae2fc74ac895f669102c6"
+        hash = "2f9b647660923c5262636a5344e2665512a947a4"
 
     strings:
         $jh1 = "OutputStream" fullword wide ascii
@@ -5465,7 +5550,7 @@ rule WEBSHELL_JSP_Writer_Nano
     meta:
         description = "JSP file writer"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/01/24"
@@ -5547,7 +5632,7 @@ rule WEBSHELL_JSP_Generic_Tiny
     meta:
         description = "Generic JSP webshell tiny"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/01/07"
@@ -5631,7 +5716,7 @@ rule WEBSHELL_JSP_Generic
     meta:
         description = "Generic JSP webshell"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/01/07"
@@ -5724,7 +5809,7 @@ rule WEBSHELL_JSP_Generic_Base64
     meta:
         description = "Generic JSP webshell with base64 encoded payload"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/01/24"
@@ -5800,7 +5885,7 @@ rule WEBSHELL_JSP_Generic_ProcessBuilder
     meta:
         description = "Generic JSP webshell which uses processbuilder to execute user input"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/01/07"
@@ -5838,7 +5923,7 @@ rule WEBSHELL_JSP_Generic_Reflection
     meta:
         description = "Generic JSP webshell which uses reflection to execute user input"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/01/07"
@@ -5920,7 +6005,7 @@ rule WEBSHELL_JSP_Generic_Classloader
     meta:
         description = "Generic JSP webshell which uses classloader to execute user input"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         hash = "6b546e78cc7821b63192bb8e087c133e8702a377d17baaeb64b13f0dd61e2347"
@@ -5998,12 +6083,14 @@ rule WEBSHELL_JSP_Generic_Encoded_Shell
     meta:
         description = "Generic JSP webshell which contains cmd or /bin/bash encoded in ascii ord"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/01/07"
-        modified = "2023-04-05"
+        modified = "2023-07-05"
         hash = "3eecc354390d60878afaa67a20b0802ce5805f3a9bb34e74dd8c363e3ca0ea5c"
+        hash = "f6c2112e3a25ec610b517ff481675b2ce893cb9f"
+        hash = "62e6c6065b5ca45819c1fc049518c81d7d165744"
 
     strings:
         $sj0 = /{ ?47, 98, 105, 110, 47, 98, 97, 115, 104/ wide ascii
@@ -6023,7 +6110,7 @@ rule WEBSHELL_JSP_NetSpy
     meta:
         description = "JSP netspy webshell"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/01/24"
@@ -6090,7 +6177,7 @@ rule WEBSHELL_JSP_By_String
     meta:
         description = "JSP Webshells which contain unique strings, lousy rule for low hanging fruits. Most are catched by other rules in here but maybe these catch different versions."
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/01/09"
@@ -6188,7 +6275,7 @@ rule WEBSHELL_JSP_Input_Upload_Write
     meta:
         description = "JSP uploader which gets input, writes files and contains \"upload\""
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2021/01/24"
@@ -6248,11 +6335,17 @@ rule WEBSHELL_Generic_OS_Strings : FILE {
     meta:
         description = "typical webshell strings"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         date = "2021/01/12"
-        modified = "2023-04-05"
+        modified = "2023-07-05"
         score = 50
+        hash = "d5bfe40283a28917fcda0cefd2af301f9a7ecdad"
+        hash = "fd45a72bda0a38d5ad81371d68d206035cb71a14"
+        hash = "b4544b119f919d8cbf40ca2c4a7ab5c1a4da73a3"
+        hash = "569259aafe06ba3cef9e775ee6d142fed6edff5f"
+        hash = "48909d9f4332840b4e04b86f9723d7427e33ac67"
+        hash = "0353ae68b12b8f6b74794d3273967b530d0d526f"
     strings:
         $fp1 = "http://evil.com/" wide ascii
         $fp2 = "denormalize('/etc/shadow" wide ascii
@@ -6413,7 +6506,7 @@ rule WEBSHELL_In_Image
     meta:
         description = "Webshell in GIF, PNG or JPG"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         hash = "d4fde4e691db3e70a6320e78657480e563a9f87935af873a99db72d6a9a83c78"
         hash = "84938133ee6e139a2816ab1afc1c83f27243c8ae76746ceb2e7f20649b5b16a4"
@@ -6672,11 +6765,11 @@ rule WEBSHELL_In_Image
 rule WEBSHELL_Mixed_OBFUSC {
    meta:
       description = "Detects webshell with mixed obfuscation commands"
-      author = "Arnim Rupp (https://github.com/ruppde)"       
+      author = "Arnim Rupp (https://github.com/ruppde)"
       reference = "Internal Research"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       date = "2023-01-28"
-        modified = "2023-04-05"
+      modified = "2023-04-05"
       hash1 = "8c4e5c6bdfcc86fa27bdfb075a7c9a769423ec6d53b73c80cbc71a6f8dd5aace"
       hash2 = "78f2086b6308315f5f0795aeaa75544128f14889a794205f5fc97d7ca639335b"
       hash3 = "3bca764d44074820618e1c831449168f220121698a7c82e9909f8eab2e297cbd"
@@ -6697,7 +6790,7 @@ rule WEBSHELL_Mixed_OBFUSC {
 rule WEBSHELL_Cookie_Post_Obfuscation {
     meta:
         description = "Detects webshell using cookie POST"
-        author = "Arnim Rupp (https://github.com/ruppde)"       
+        author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         score = 75
         date = "2023-01-28"
