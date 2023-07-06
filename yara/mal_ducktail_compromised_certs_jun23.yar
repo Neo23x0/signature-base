@@ -26,6 +26,7 @@ rule MAL_Compromised_Cert_DuckTail_Stealer_Jun23 {
       $se9 = {37 AE 95 F5 4C 8E 9B D0 B6 47 68 6A} // CONG TY TNHH THIET KE VA XAY DUNG SAN VUON NON BO SON HAI
       $se10 = {3D C8 F5 3B 62 7A 34 07 AC 7E 01 00 13 87 A3 B3} // CONG TY TNHH GIa I PHA P CCNG NGHE SO VIET
       $se11 = {01 C9 87 5A 5F A8 59 68 6D 34 17 C9} // CONG TY TRACH NHIEM HUU HAN THIET BI NOI THAT TAKASY
+      $se12 = {1B 35 19 E1 CD C2 6B 57 DA EE 06 C9} // CONG TY TNHH DUOC PHAM VA THIET BI Y TE BT
    condition:
       uint16(0) == 0x5a4d
       and 1 of ($sx*) and 1 of ($se*)
