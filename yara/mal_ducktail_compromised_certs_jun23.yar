@@ -5,6 +5,7 @@ rule MAL_Compromised_Cert_DuckTail_Stealer_Jun23 {
       description = "Detects binaries signed with compromised certificates used by DuckTail stealer - identified in June 2023"
       reference = "Internal Research"
       date = "2023-06-16"
+      modified = "2023-07-06"
       hash1 = "17c75f2d14af9f00822fc1dba00ccc9ec71fc50962e196d7e6f193f4b2ee0183"
       hash2 = "b3cfdb442772d07a7f037b0bb093ba315dfd1e79b0e292736c52097355495270"
       hash3 = "9afe013cae0167993a6a7ccd650eb1221a5ec163110565eb3a49a8b57949d4ee"
