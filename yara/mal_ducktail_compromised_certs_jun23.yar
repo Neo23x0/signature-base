@@ -5,6 +5,7 @@ rule MAL_Compromised_Cert_DuckTail_Stealer_Jun23 {
       description = "Detects binaries signed with compromised certificates used by DuckTail stealer - identified in June 2023"
       reference = "Internal Research"
       date = "2023-06-16"
+      modified = "2023-07-06"
       hash1 = "17c75f2d14af9f00822fc1dba00ccc9ec71fc50962e196d7e6f193f4b2ee0183"
       hash2 = "b3cfdb442772d07a7f037b0bb093ba315dfd1e79b0e292736c52097355495270"
       hash3 = "9afe013cae0167993a6a7ccd650eb1221a5ec163110565eb3a49a8b57949d4ee"
@@ -26,6 +27,7 @@ rule MAL_Compromised_Cert_DuckTail_Stealer_Jun23 {
       $se9 = {37 AE 95 F5 4C 8E 9B D0 B6 47 68 6A} // CONG TY TNHH THIET KE VA XAY DUNG SAN VUON NON BO SON HAI
       $se10 = {3D C8 F5 3B 62 7A 34 07 AC 7E 01 00 13 87 A3 B3} // CONG TY TNHH GIa I PHA P CCNG NGHE SO VIET
       $se11 = {01 C9 87 5A 5F A8 59 68 6D 34 17 C9} // CONG TY TRACH NHIEM HUU HAN THIET BI NOI THAT TAKASY
+      $se12 = {1B 35 19 E1 CD C2 6B 57 DA EE 06 C9} // CONG TY TNHH DUOC PHAM VA THIET BI Y TE BT
    condition:
       uint16(0) == 0x5a4d
       and 1 of ($sx*) and 1 of ($se*)
