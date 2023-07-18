@@ -7,6 +7,11 @@
 
 import "pe"
 
+/* outdated and prone to FPs */
+/* disabled on 18.07.23 */
+/* see : https://www.linkedin.com/feed/update/urn:li:activity:7087021383276236800/ */
+
+/*
 rule APT10_Malware_Sample_Gen : FILE {
    meta:
       description = "APT 10 / Cloud Hopper malware campaign"
@@ -16,7 +21,6 @@ rule APT10_Malware_Sample_Gen : FILE {
       date = "2017-04-06"
       score = 80
    strings:
-      /* C2 Servers */
       $c2_1 = "002562066559681.r3u8.com" ascii
       $c2_2 = "031168053846049.r3u8.com" ascii
       $c2_3 = "0625.have8000.com" ascii
@@ -1381,6 +1385,7 @@ rule APT10_Malware_Sample_Gen : FILE {
    condition:
       1 of ($c2_*)
 }
+*/
 
 rule APT_APT10_Malware_Imphash_Dec18_1 {
    meta:
