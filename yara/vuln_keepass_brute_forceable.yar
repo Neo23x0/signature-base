@@ -1,5 +1,5 @@
 
-rule VULN_KeePass_Brute_Forceable {
+rule VULN_KeePass_DB_Brute_Forcible {
    meta:
       description = "Detects KeePass .kdbx password stores, which could be brute forced to steal the credentials. With AES-KDF and less than 65536 iterations the cracking speed with a single GPU is 20k/s, for the old default of 6.000 iterations it's 200k/s. Best remediation is to change the key derivative function to Argon2d and delete all older versions of the .kdbx"
       author = "Arnim Rupp (https://github.com/ruppde)"
