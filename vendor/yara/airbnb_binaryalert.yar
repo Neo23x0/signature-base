@@ -583,6 +583,7 @@ rule hacktool_windows_mimikatz_modules
         description = "Mimikatz credential dump tool: Modules"
         reference = "https://github.com/gentilkiwi/mimikatz"
         author = "@fusionrace"
+        modified = "2023-07-26"
         md5_1 = "0c87c0ca04f0ab626b5137409dded15ac66c058be6df09e22a636cc2bcb021b8"
         md5_2 = "0c91f4ca25aedf306d68edaea63b84efec0385321eacf25419a3050f2394ee3b"
         md5_3 = "09054be3cc568f57321be32e769ae3ccaf21653e5d1e3db85b5af4421c200669"
@@ -594,6 +595,7 @@ rule hacktool_windows_mimikatz_modules
         $s3 = "mimilove" fullword ascii wide
 
         $fp1 = "SgrmEnclave" wide
+        $fp2 = "Kaspersky Lab Anti-Rootkit Monitor Driver" wide
     condition:
         uint16(0) == 0x5a4d and filesize < 800KB and /* Added by Florian Roth to avoid false positives */
         1 of ($s*) and 
