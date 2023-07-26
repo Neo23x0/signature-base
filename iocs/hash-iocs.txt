@@ -11410,3 +11410,21 @@ e52871d82de01b7e7f134c776703f696;Barracuda ESG exploitation - UNC4841 IOCs https
 e80a85250263d58cc1a1dc39d6cf3942;Barracuda ESG exploitation - UNC4841 IOCs https://www.mandiant.com/resources/blog/barracuda-esg-exploited-globally
 f5ab04a920302931a8bd063f27b745cc;Barracuda ESG exploitation - UNC4841 IOCs https://www.mandiant.com/resources/blog/barracuda-esg-exploited-globally
 f6857841a255b3b4e4eded7a66438696;Barracuda ESG exploitation - UNC4841 IOCs https://www.mandiant.com/resources/blog/barracuda-esg-exploited-globally
+
+
+cdf7fa901701ea1ef642aeb271c70361;UA-CERT Turla IOCs localhost.mof https://cert.gov.ua/article/5213167
+153b713b3c6e642f39993d65ab33c5f0;UA-CERT Turla IOCs Pending.mof https://cert.gov.ua/article/5213167
+9ececb4acbf692c2a8ea411f2e7dd006;UA-CERT Turla IOCs Server.dll https://cert.gov.ua/article/5213167
+5c7466a177fcaad2ebab131a54c28fab;UA-CERT Turla IOCs Control.dll https://cert.gov.ua/article/5213167
+b63c2ec9a631e0217d39c4a43527a0ce;UA-CERT Turla IOCs login.aspx  https://cert.gov.ua/article/5213167
+420b7dc391f2cb0a9a684c1c48c334e2;UA-CERT Turla IOCs logon https://cert.gov.ua/article/5213167
+491e462bf1213fede82925dea5df8fff;UA-CERT Turla IOCs logon https://cert.gov.ua/article/5213167
+9dd2bea4f2df8d3ef51dc10c6db2e07a;UA-CERT Turla IOCs SYNC https://cert.gov.ua/article/5213167
+8c56c22343853d3797037bdac2cec6c7;UA-CERT Turla IOCs wp-file-s  https://cert.gov.ua/article/5213167
+17402fc21c7bafae2c1a149035cd0835;UA-CERT Turla IOCs Control.dll https://cert.gov.ua/article/5213167
+d3065b4b1e8f6ecb63685219113ff0b8;UA-CERT Turla IOCs Control.dll https://cert.gov.ua/article/5213167
+5210b3d85fd0026205baee2c77ac0acd;UA-CERT Turla IOCs two.exe https://cert.gov.ua/article/5213167
+4065e647380358d22926c24a63c26ac4;UA-CERT Turla IOCs Config.dat  https://cert.gov.ua/article/5213167
+11a289347b95aab157aa0efe4a59bf24;UA-CERT Turla IOCs Senatorial.ex https://cert.gov.ua/article/5213167
+cba1f4c861240223332922d2913d18e5;UA-CERT Turla IOCs 1.ps1  https://cert.gov.ua/article/5213167
+65102299bf8d7f0129ebbcb08a9c2d98;UA-CERT Turla IOCs messagee https://cert.gov.ua/article/5213167
