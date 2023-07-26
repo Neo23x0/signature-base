@@ -4318,4 +4318,8 @@ C:\\ProgramData\\TPM\\winscard\.dll;85
 \\install_reuse\.tar;75
 \\update_v2\.sh;75
 
+# CISA report Citrix NetScaler IOCs https://www.cisa.gov/sites/default/files/2023-07/aa23-201a_csa_threat_actors_exploiting_citrix-cve-2023-3519_to_implant_webshells.pdf
+\\netscaler\\ns_gui\\vpn\\medialogininit\.png;85
+\\var\\tmp\\test\.tar\.gz;45
+
 # End
