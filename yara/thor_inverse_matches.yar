@@ -499,7 +499,8 @@ rule SUSP_VULN_DRV_PROCEXP152_May23 {
       author = "Florian Roth"
       reference = "https://news.sophos.com/en-us/2023/04/19/aukill-edr-killer-malware-abuses-process-explorer-driver/"
       date = "2023-05-05"
-      score = 60
+		modified = "2023-07-28"
+      score = 50
       hash1 = "cdfbe62ef515546f1728189260d0bdf77167063b6dbb77f1db6ed8b61145a2bc"
    strings:
       $a1 = "\\ProcExpDriver.pdb" ascii
