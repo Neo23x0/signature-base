@@ -4322,4 +4322,14 @@ C:\\ProgramData\\TPM\\winscard\.dll;85
 \\netscaler\\ns_gui\\vpn\\medialogininit\.png;85
 \\var\\tmp\\test\.tar\.gz;45
 
+# ESXiArgs IOCs https://www.trustedsec.com/blog/esxiargs-what-you-need-to-know-and-how-to-protect-your-data/
+\\encrypt\.sh;50
+\\tmp\tmpy_8th_nb;70
+\\tmp\\encrypt$;50
+\\tmp\\nohup\.out;65
+\\tmp\\index\.html;40
+\\tmp\\motd;50
+\\tmp\\public\.pem;60
+\\tmp\\archieve\.zip;65
+
 # End
