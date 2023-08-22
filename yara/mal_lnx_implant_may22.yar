@@ -207,3 +207,4 @@ rule APT_MAL_LNX_RedMenshen_BPFDoor_Tricephalic_Implant_May22 {
     condition:
         any of ($str*) or 3 of ($error*)
 }
+*/
