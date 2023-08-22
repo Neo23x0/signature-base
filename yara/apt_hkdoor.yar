@@ -52,7 +52,7 @@ rule hkdoor_dropper {
    meta:
       description = "Hacker's Door Dropper"
       author = "Cylance Inc."
-      date = "20218-01-01"
+      date = "2018-01-01"
       modified = "2023-01-07"
       reference = "https://www.cylance.com/en_us/blog/threat-spotlight-opening-hackers-door.html"
    strings:
