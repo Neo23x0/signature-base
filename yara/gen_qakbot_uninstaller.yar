@@ -12,6 +12,5 @@ rule SUSP_Qakbot_Uninstaller_File {
                83 C4 04 C9 C3 81 EC 08 01 00 00 53 55 56 57 6A
                6B 58 6A 65 5B 6A 72 66 89 84 24 D4 00 00 00 33 }
    condition:
-      filesize < 30KB
-      and $xc1
+      $xc1
 }
