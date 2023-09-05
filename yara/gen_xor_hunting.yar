@@ -20,15 +20,25 @@ rule SUSP_XORed_Mozilla {
 rule SUSP_XORed_MSDOS_Stub_Message {
    meta:
       description = "Detects suspicious XORed MSDOS stub message"
-      author = "Florian Roth (Nextron Systems)"
+      author = "Florian Roth"
       reference = "https://yara.readthedocs.io/en/latest/writingrules.html#xor-strings"
       date = "2019-10-28"
+      modified = "2023-09-04"
       score = 55
    strings:
-      $xo1 = "This program cannot be run in DOS mode" xor ascii wide
-      $xo2 = "This program must be run under Win32" xor ascii wide
-      $xof1 = "This program cannot be run in DOS mode" ascii wide
-      $xof2 = "This program must be run under Win32" xor ascii wide
+      $xo1 = "This program cannot be run in DOS mode" xor(0x01-0xff) ascii wide
+      $xo2 = "This program must be run under Win32" xor(0x01-0xff) ascii wide
+
+      $fp1 = "AVAST Software" fullword wide ascii
+      $fp2 = "AVG Netherlands" fullword wide ascii
+      $fp3 = "AVG Technologies" ascii wide
+      $fp4 = "Malicious Software Removal Tool" wide
+      $fp5 = "McAfee Labs" fullword ascii wide
+      $fp6 = "Kaspersky Lab" fullword ascii wide
+      $fp7 = "<propertiesmap>" ascii wide  /* KasperSky Lab XML profiles */
    condition:
-      1 of ($xo*) and not 1 of ($xof*)
+      1 of ($x*)
+      and not 1 of ($fp*)
+      and not uint16(0) == 0xb0b0
+      and not uint16(0) == 0x5953
 }
