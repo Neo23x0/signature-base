@@ -39,6 +39,7 @@ rule SUSP_XORed_MSDOS_Stub_Message {
    condition:
       1 of ($x*)
       and not 1 of ($fp*)
-      and not uint16(0) == 0xb0b0
-      and not uint16(0) == 0x5953
+      and not uint16(0) == 0xb0b0 // AV sigs file
+      and not uint16(0) == 0x5953 // AV sigs file
 }
+
