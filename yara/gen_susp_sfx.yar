@@ -1,10 +1,11 @@
 
 rule SUSP_SFX_RunProgram_WScript {
    meta:
-      description = "Detects suspicious SFX as used by Gamaredon group"
+      description = "Detects suspicious SFX that runs wscript.exe"
       author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2018-09-27"
+      score = 75
       hash1 = "e3bb02c5985fc64759b9c2d3c5474d46237ce472b4a0101c6313dafa939de5a9"
       hash2 = "0ecf88d4b32895b4819dec3acb62eaaa7035aa6292499d903f76af60fcec0d6a"
       hash3 = "a7a48f5220bd1ebe04de258d71fdd001711c165d162bd45e8cfbe8964eddf01c"

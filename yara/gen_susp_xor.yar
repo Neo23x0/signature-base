@@ -1,7 +1,7 @@
 /* requires YARA 3.8 or higher */
 import "pe"
 
-rule SUSP_XORed_URL_in_EXE {
+rule SUSP_XORed_URL_In_EXE {
    meta:
       description = "Detects an XORed URL in an executable"
       author = "Florian Roth (Nextron Systems)"
@@ -9,7 +9,6 @@ rule SUSP_XORed_URL_in_EXE {
       date = "2020-03-09"
       modified = "2022-09-16"
       score = 50
-      nodeepdive = 1
    strings:
       $s1 = "http://" xor
       $s2 = "https://" xor
