@@ -1,3 +1,5 @@
+import "pe" 
+
 rule SUSP_VCRuntime_Sideloading_Indicators_Aug23 {
    meta:
       description = "Detects indicators of .NET based malware sideloading as VCRUNTIME140 with .NET DLL imports"
