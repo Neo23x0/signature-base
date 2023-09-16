@@ -24,6 +24,6 @@ rule SUSP_VCRuntime_Sideloading_Indicators_1_Aug23 {
    condition:
       (filename == "VCRUNTIME140.dll" or filename == "vcruntime140.dll")
       and not pe.number_of_signatures == 0
-      and not pe.signatures[0].issuer contain "Microsoft Corporation"
+      and not pe.signatures[0].issuer contains "Microsoft Corporation"
       and not $fp1
 }
