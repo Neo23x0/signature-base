@@ -20,10 +20,10 @@ rule SUSP_VCRuntime_Sideloading_Indicators_1_Aug23 {
       hash = "b4bc73dfe9a781e2fee4978127cb9257bc2ffd67fc2df00375acf329d191ffd6"
       score = 75
    strings:
-      $x = "Wine builtin DLL" ascii
+      $fp1 = "Wine builtin DLL" ascii
    condition:
       (filename == "VCRUNTIME140.dll" or filename == "vcruntime140.dll")
-      and ( pe.number_of_signatures == 0
-      or not pe.signatures[0].issuer contain "Microsoft Corporation" )
-      and not $x
+      and not pe.number_of_signatures == 0
+      and not pe.signatures[0].issuer contain "Microsoft Corporation"
+      and not $fp1
 }
