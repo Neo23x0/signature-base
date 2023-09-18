@@ -89,7 +89,7 @@ rule WEBSHELL_PHP_Generic
         reference = "Internal Research"
         score = 75
         date = "2021/01/14"
-        modified = "2023-04-05"
+        modified = "2023-09-18"
         hash = "bee1b76b1455105d4bfe2f45191071cf05e83a309ae9defcf759248ca9bceddd"
         hash = "6bf351900a408120bee3fc6ea39905c6a35fe6efcf35d0a783ee92062e63a854"
         hash = "e3b4e5ec29628791f836e15500f6fdea19beaf3e8d9981c50714656c50d3b365"
@@ -334,6 +334,7 @@ rule WEBSHELL_PHP_Generic
         $cmpayload21 = /\bReflectionFunction[\t ]*\([^)]/ nocase wide ascii
 
         $fp1 = "# Some examples from obfuscated malware:" ascii
+        $fp2 = "{@see TFileUpload} for further details." ascii
     condition:
         //any of them or
         not (
@@ -415,7 +416,7 @@ rule WEBSHELL_PHP_Generic_Callback
         author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         date = "2021/01/14"
-        modified = "2023-04-05"
+        modified = "2023-09-18"
         score = 60
         hash = "e98889690101b59260e871c49263314526f2093f"
         hash = "63297f8c1d4e88415bc094bc5546124c9ed8d57aca3a09e36ae18f5f054ad172"
@@ -431,6 +432,7 @@ rule WEBSHELL_PHP_Generic_Callback
         hash = "0a29cf1716e67a7932e604c5d3df4b7f372561200c007f00131eef36f9a4a6a2"
         hash = "51c2c8b94c4b8cce806735bcf6e5aa3f168f0f7addce47b699b9a4e31dc71b47"
         hash = "de1ef827bcd3100a259f29730cb06f7878220a7c02cee0ebfc9090753d2237a8"
+        hash = "487e8c08e85774dfd1f5e744050c08eb7d01c6877f7d03d7963187748339e8c4"
 
     strings:
 
@@ -645,6 +647,7 @@ rule WEBSHELL_PHP_Generic_Callback
         $gen_much_sus91 = "xp_cmdshell" fullword wide ascii
         $gen_much_sus92 = "base64_decode(base64_decode(" fullword wide ascii
         $gen_much_sus93 = "eval(\"/*" wide ascii
+        $gen_much_sus94 = "http_response_code(404)" wide ascii
 
         $gif = { 47 49 46 38 }
 
@@ -1994,7 +1997,7 @@ rule WEBSHELL_PHP_Dynamic_Big
         author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         date = "2021/02/07"
-        modified = "2023-07-05"
+        modified = "2023-09-18"
         score = 50
         hash = "6559bfc4be43a55c6bb2bd867b4c9b929713d3f7f6de8111a3c330f87a9b302c"
         hash = "9e82c9c2fa64e26fd55aa18f74759454d89f968068d46b255bd4f41eb556112e"
@@ -2182,6 +2185,7 @@ rule WEBSHELL_PHP_Dynamic_Big
         $fp1 = "# Some examples from obfuscated malware:" ascii
         $fp2 = "* @package   PHP_CodeSniffer" ascii
         $fp3 = ".jQuery===" ascii
+        $fp4 = "* @param string $lstat encoded LStat string" ascii
     condition:
         //any of them or
         not (
