@@ -4349,4 +4349,8 @@ C:\\GodFaultTemp\\;90
 \\PPLBlade\.dmp;85
 \\PPLBlade\.exe;85
 
+# Typical file names used for registry exports https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/critical-infrastructure-attacks
+\\security\.sav;65
+\\sam\.sav;70
+
 # End
