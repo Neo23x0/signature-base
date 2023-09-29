@@ -13,7 +13,7 @@ rule LOG_EXPL_SharePoint_CVE_2023_29357_Sep23_1 {
          https://x.com/TH3C0DEX/status/1707503935596925048?s=20 
          https://x.com/theluemmel/status/1707653715627311360?s=20 (plus private chat)
       */
-      $xr1 = /GET [a-z\.\/_]{0,40}\/web\/(siteusers|currentuser) - (80|443) .{10,200} python-requests\/[0-9\.]{3,8} - [^4]/
+      $xr1 = /GET [a-z\.\/_]{0,40}\/web\/(siteusers|currentuser) - (80|443) .{10,200} python-requests\/[0-9\.]{3,8} [^ ]{1,160} [^4]0[0-9] /
    condition:
       $xr1
 }
