@@ -40,3 +40,4 @@ rule SUSP_XORed_URL_In_EXE {
       and not 1 of ($fp*)
       and not pe.number_of_signatures > 0
 }
+
