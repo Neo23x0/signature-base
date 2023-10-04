@@ -479,3 +479,41 @@ rule APT_MAL_RU_Snake_Malware_Queue_File_May23_1 {
       //and math.entropy(0, filesize) >= 7.0
       and math.entropy(0, 1024) >= 7.0
 }
+
+rule VULN_password_XLS_unencrypted {
+   meta:
+      description = "Detects files named e.g. password.xls, which might contain unportected clear text passwords"
+      author = "Arnim Rupp (https://github.com/ruppde)"
+      date = "2023-10-03"
+      score = 60
+      reference = "Internal Research"
+   condition:
+      // match password and the german passwort:
+      filename istartswith "passwor" and
+      (
+          // no need to check if an xls is password protected, because it's trivial to break
+          (
+              filename iendswith ".xls" and
+              uint32be(0) == 0xd0cf11e0 // xls
+          )
+          or
+          (
+              filename iendswith ".xlsx" and
+              uint32be(0) == 0x504b0304 // unencrypted xlsx = pkzip
+          )
+      )
+}
+
+rule VULN_password_XLSX_encrypted {
+   meta:
+      description = "Detects files named e.g. password.xlsx, which might contain clear text passwords, but are password protected from MS Office (which is quite strong but still might use a weak encryption password)"
+      author = "Arnim Rupp (https://github.com/ruppde)"
+      date = "2023-10-03"
+      score = 50
+      reference = "Internal Research"
+   condition:
+      // match password and the german passwort:
+      filename istartswith "passwor" and
+      filename iendswith ".xlsx" and
+      uint32be(0) == 0xd0cf11e0 // encrypted xlsx = CDFV2
+}
