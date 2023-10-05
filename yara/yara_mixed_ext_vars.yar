@@ -498,7 +498,7 @@ rule SUSP_Password_XLS_Unencrypted {
          filename istartswith "motdepass" or     /* FR */
          filename istartswith "wachtwoord"        /* NL */
       )
-      and
+      and (
           // no need to check if an xls is password protected, because it's trivial to break
           (
               filename iendswith ".xls"
