@@ -3109,7 +3109,6 @@ C:\\Windows\\[^\\"]{1,20}\.(js|ps1|vbs);50
 
 # Stealth Falcon Filename IOC https://www.welivesecurity.com/2019/09/09/backdoor-stealth-falcon-group/
 \\ImageIndexer\.dll;80
-\\WindowsBackup\.dll;80
 \\WindowsSearchCache\.dll;80
 \\JavaUserUpdater\.dll;80
 
