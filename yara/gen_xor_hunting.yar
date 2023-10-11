@@ -23,7 +23,7 @@ rule SUSP_XORed_MSDOS_Stub_Message {
       author = "Florian Roth"
       reference = "https://yara.readthedocs.io/en/latest/writingrules.html#xor-strings"
       date = "2019-10-28"
-      modified = "2023-09-04"
+      modified = "2023-10-11"
       score = 55
    strings:
       $xo1 = "This program cannot be run in DOS mode" xor(0x01-0xff) ascii wide
@@ -36,6 +36,10 @@ rule SUSP_XORed_MSDOS_Stub_Message {
       $fp5 = "McAfee Labs" fullword ascii wide
       $fp6 = "Kaspersky Lab" fullword ascii wide
       $fp7 = "<propertiesmap>" ascii wide  /* KasperSky Lab XML profiles */
+      $fp10 = "Avira Engine Module" wide /* Program Files (x86)/Avira/Antivirus/aeheur.dll */
+      $fp11 = "syntevo GmbH" wide fullword /* Program Files (x86)/DeepGit/bin/deepgit64.exe */
+      $fp13 = "SophosClean" ascii /* ProgramData/Sophos/Update Manager/Update Manager/Warehouse/4d7da8cfbfbb16664dac79e78273a1e8x000.dat */
+      $fp14 = "SophosHomeClean" wide
    condition:
       1 of ($x*)
       and not 1 of ($fp*)
