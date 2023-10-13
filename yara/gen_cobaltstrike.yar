@@ -22,6 +22,8 @@ rule HKTL_CobaltStrike_SleepMask_Jul22 {
 // This yara was specially crafted for the core (in-memory scans) which cannot be
 // avoided in way by an operator, making the malleability, UDRL or IAT hooking useless
 
+/* FR: rule caused 6490 false positives in our testing environment - cannot be used in the current form
+
 rule HKTL_CobaltStrike_CS_Core_Oct23 {
     meta:
         description = "Hunts for opcodes used in Cobaltstrike 4.9.1 and earlier"
@@ -36,3 +38,4 @@ rule HKTL_CobaltStrike_CS_Core_Oct23 {
     condition:
         1 of them
 }
+*/
