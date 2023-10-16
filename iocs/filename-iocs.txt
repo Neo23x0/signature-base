@@ -3150,7 +3150,7 @@ c:\\windows\\AppPatch\\custom\\[^\\"]{1,20}\.(exe|vbs|ps1|bat);70
 # MESSAGETAP components https://twitter.com/cglyer/status/1182415016542248960/photo/1
 \\keyword_param\.txt;70
 
-# TeamViewerPortable - propably a policy violation https://portableapps.com/apps/utilities/teamviewer_portable
+# TeamViewerPortable - probably a policy violation https://portableapps.com/apps/utilities/teamviewer_portable
 \\TeamViewerPortable;60
 
 # OceanLotus / APT32 filename IOCs
@@ -4333,7 +4333,7 @@ C:\\ProgramData\\TPM\\winscard\.dll;85
 
 # WER Exploit POC CVE-2023-36874 https://github.com/Wh04m1001/CVE-2023-36874
 \\WerExpl\.exe;75
-\\System32\\wermgr\.exe;70;(?i)(:\\Windows\\|%windir%|\$env:windir|%SystemRoot%|$env:systemroot)
+\\System32\\wermgr\.exe;70;(?i)(:\\Windows\\|%windir%|\$env:windir|%SystemRoot%|$env:systemroot|\\Device\\)
 
 # PPLFault https://github.com/gabriellandau/PPLFault
 C:\\PPLFaultTemp\\;90
