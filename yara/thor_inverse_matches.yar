@@ -18,6 +18,8 @@ import "pe"
 
 private rule WINDOWS_UPDATE_BDC
 {
+meta:
+   score = 0
 condition:
     (uint32be(0) == 0x44434d01 and // magic: DCM PA30
      uint32be(4) == 0x50413330)
