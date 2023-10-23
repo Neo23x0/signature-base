@@ -82,8 +82,8 @@ rule Certutil_Decode_OR_Download {
 
       $fp_msi = { 52 00 6F 00 6F 00 74 00 20 00 45 00 6E 00 74 00 72 00 79 }
    condition:
-      filesize < 700KB 
-      and 1 of (a*)
+      filesize < 700KB
+      and 1 of ($a*)
       and not 1 of ($fp*)
 }
 
