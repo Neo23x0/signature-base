@@ -4352,4 +4352,7 @@ C:\\GodFaultTemp\\;90
 \\security\.sav;65
 \\sam\.sav;70
 
+# BiBi Wiper IOCs https://www.securityjoes.com/post/bibi-linux-a-new-wiper-dropped-by-pro-hamas-hacktivist-group
+\\bibi-linux\.out;90
+
 # End
