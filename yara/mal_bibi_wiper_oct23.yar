@@ -1,5 +1,5 @@
 
-​rule MAL_LNX_BiBi_Linux_Wiper {
+rule MAL_LNX_BiBi_Linux_Wiper {
 	meta:
 		author ="Felipe Duarte, Security Joes"
 		description ="Detects BiBi-Linux Wiper"
