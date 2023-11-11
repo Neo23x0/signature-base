@@ -4356,8 +4356,8 @@ C:\\GodFaultTemp\\;90
 \\bibi-linux\.out;90
 
 # SysAid exploitation IOCs CVE-2023-47246 https://www.sysaid.com/blog/service-desk/on-premise-software-security-vulnerability-notification
-\\Program Files\\SysAidServer\\tomcat\\webapps\\usersfiles\\user\.exe
-\\Program Files\\SysAidServer\\tomcat\\webapps\\usersfiles\.war
-\\Program Files\\SysAidServer\\tomcat\\webapps\\leave
+\\Program Files\\SysAidServer\\tomcat\\webapps\\usersfiles\\user\.exe;80
+\\Program Files\\SysAidServer\\tomcat\\webapps\\usersfiles\.war;80
+\\Program Files\\SysAidServer\\tomcat\\webapps\\leave;80
 
 # End
