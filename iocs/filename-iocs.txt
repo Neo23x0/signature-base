@@ -4360,4 +4360,8 @@ C:\\GodFaultTemp\\;90
 \\Program Files\\SysAidServer\\tomcat\\webapps\\usersfiles\.war;80
 \\Program Files\\SysAidServer\\tomcat\\webapps\\leave;80
 
+# Rhysida Ransomware ELF for ESX IOCs
+\\usr\\lib\\vmware\\hostd\\docroot\\_index\.html;75
+\\usr\\lib\\vmware\\hostd\\docroot\\ui\\_index\.html;75
+
 # End
