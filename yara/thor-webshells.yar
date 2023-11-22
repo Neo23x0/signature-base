@@ -7167,9 +7167,10 @@ rule hkshell_hkrmv {
 	condition:
 		all of them
 }
-rule phpshell {
+rule WEBSHELL_PHP_1 {
 	meta:
 		description = "Webshells Auto-generated - file phpshell.php"
+		old_rule_name = "phpshell"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
 		hash = "1dccb1ea9f24ffbd085571c88585517b"
