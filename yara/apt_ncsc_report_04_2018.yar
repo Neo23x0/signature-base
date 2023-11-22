@@ -164,12 +164,13 @@ rule RDP_Brute_Strings {
       4 of them
 }
 
-rule Z_WebShell {
+rule WEBSHELL_Z_WebShell_1 {
    meta:
       author = "NCSC"
       description = "Detects Z Webshell from NCSC report"
       reference = "https://www.ncsc.gov.uk/alerts/hostile-state-actors-compromising-uk-organisations-focus-engineering-and-industrial-control"
       date = "2018/04/06"
+      old_rule_name = "Z_WebShell"
       hash = "ace12552f3a980f1eed4cadb02afe1bfb851cafc8e58fb130e1329719a07dbf0"
    strings:
       $ = "Z_PostBackJS" ascii wide
