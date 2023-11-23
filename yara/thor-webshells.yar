@@ -6163,11 +6163,12 @@ rule WebShell_ZyklonShell {
 	condition:
 		all of them
 }
-rule WebShell_php_webshells_myshell {
+rule WebShell_php_webshells_myshell_2 {
 	meta:
 		description = "PHP Webshells Github Archive - file myshell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
+		old_rule_name = "WebShell_php_webshells_myshell"
 		hash = "5bd52749872d1083e7be076a5e65ffcde210e524"
 	strings:
 		$s0 = "if($ok==false &&$status && $autoErrorTrap)system($command . \" 1> /tmp/outpu"
