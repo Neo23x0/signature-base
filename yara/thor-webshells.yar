@@ -1177,12 +1177,13 @@ rule webshell_ASP_zehir {
 	condition:
 		all of them
 }
-rule webshell_Worse_Linux_Shell {
+rule webshell_Worse_Linux_Shell_1 {
 	meta:
 		description = "Web Shell - file Worse Linux Shell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
 		date = "2014/01/28"
+		old_rule_name = "webshell_Worse_Linux_Shell"
 		score = 70
 		hash = "8338c8d9eab10bd38a7116eb534b5fa2"
 	strings:
@@ -5269,11 +5270,12 @@ rule WebShell_DTool_Pro {
 	condition:
 		3 of them
 }
-rule WebShell_ironshell {
+rule WebShell_IronShell_4 {
 	meta:
 		description = "PHP Webshells Github Archive - file ironshell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
+		old_rule_name = "WebShell_ironshell"
 		hash = "d47b8ba98ea8061404defc6b3a30839c4444a262"
 	strings:
 		$s0 = "<title>'.getenv(\"HTTP_HOST\").' ~ Shell I</title>" fullword
@@ -5440,11 +5442,12 @@ rule WebShell_reader_asp_php {
 	condition:
 		3 of them
 }
-rule WebShell_Safe_Mode_Bypass_PHP_4_4_2_and_PHP_5_1_2 {
+rule WebShell_Safe_Mode_Bypass_PHP_4_4_2_and_PHP_5_1_2_3 {
 	meta:
 		description = "PHP Webshells Github Archive - file Safe_Mode_Bypass_PHP_4.4.2_and_PHP_5.1.2.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
+		old_rule_name = "WebShell_Safe_Mode_Bypass_PHP_4_4_2_and_PHP_5_1_2"
 		hash = "db076b7c80d2a5279cab2578aa19cb18aea92832"
 	strings:
 		$s1 = "<option value=\"/etc/passwd\">Get /etc/passwd</option>" fullword
@@ -5456,11 +5459,12 @@ rule WebShell_Safe_Mode_Bypass_PHP_4_4_2_and_PHP_5_1_2 {
 	condition:
 		3 of them
 }
-rule WebShell_Liz0ziM_Private_Safe_Mode_Command_Execuriton_Bypass_Exploit {
+rule WebShell_Liz0ziM_Private_Safe_Mode_Command_Execuriton_Bypass_Exploit_2 {
 	meta:
 		description = "PHP Webshells Github Archive - file Liz0ziM Private Safe Mode Command Execuriton Bypass Exploit.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
+		old_rule_name = "WebShell_Liz0ziM_Private_Safe_Mode_Command_Execuriton_Bypass_Exploit"
 		hash = "b2b797707e09c12ff5e632af84b394ad41a46fa4"
 	strings:
 		$s4 = "$liz0zim=shell_exec($_POST[liz0]); " fullword
@@ -5471,11 +5475,12 @@ rule WebShell_Liz0ziM_Private_Safe_Mode_Command_Execuriton_Bypass_Exploit {
 	condition:
 		1 of them
 }
-rule WebShell_php_backdoor {
+rule WebShell_PHP_Backdoor_2 {
 	meta:
 		description = "PHP Webshells Github Archive - file php-backdoor.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
+		old_rule_name = "WebShell_php_backdoor"
 		hash = "b190c03af4f3fb52adc20eb0f5d4d151020c74fe"
 	strings:
 		$s5 = "http://<? echo $SERVER_NAME.$REQUEST_URI; ?>?d=/etc on *nix" fullword
@@ -5486,11 +5491,12 @@ rule WebShell_php_backdoor {
 	condition:
 		1 of them
 }
-rule WebShell_Worse_Linux_Shell {
+rule WebShell_Worse_Linux_Shell_2 {
 	meta:
 		description = "PHP Webshells Github Archive - file Worse Linux Shell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
+		old_rule_name = "WebShell_Worse_Linux_Shell"
 		hash = "64623ab1246bc8f7d256b25f244eb2b41f543e96"
 	strings:
 		$s4 = "if( $_POST['_act'] == \"Upload!\" ) {" fullword
@@ -5682,11 +5688,12 @@ rule WebShell_cgitelnet {
 	condition:
 		2 of them
 }
-rule WebShell_simple_backdoor {
+rule WebShell_simple_backdoor_2 {
 	meta:
 		description = "PHP Webshells Github Archive - file simple-backdoor.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
+		old_rule_name = "WebShell_simple_backdoor"
 		hash = "edcd5157a68fa00723a506ca86d6cbb8884ef512"
 	strings:
 		$s0 = "<!-- Simple PHP backdoor by DK (http://michaeldaw.org) -->" fullword
