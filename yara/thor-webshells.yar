@@ -6065,11 +6065,12 @@ rule WebShell_g00nshell_v1_3 {
 	condition:
 		2 of them
 }
-rule WebShell_WinX_Shell {
+rule WebShell_WinX_Shell_2 {
 	meta:
 		description = "PHP Webshells Github Archive - file WinX Shell.php"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
+		old_rule_name = "WebShell_WinX_Shell"
 		hash = "a94d65c168344ad9fa406d219bdf60150c02010e"
 	strings:
 		$s4 = "// It's simple shell for all Win OS." fullword
