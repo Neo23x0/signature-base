@@ -5,7 +5,8 @@ rule M_APT_VIRTUALPITA_1
              author = "Mandiant"
              md5 = "fe34b7c071d96dac498b72a4a07cb246"
              description = "Finds opcodes to set a port to bind on 2233, encompassing the setsockopt(), htons(), and bind() from 40973d to 409791 in fe34b7c071d96dac498b72a4a07cb246 (may produce some FPs - comment by Florian Roth)"
-             score = 65  // reduced score by Florian Roth due to FPs
+             modified = "2023-11-25"
+             score = 60  // reduced score by Florian Roth due to FPs
       strings:
             $x = {8b ?? ?? 4? b8 04 00 00 00 [0 - 4] ba 02 00 00 00 be 01 00 00 00 [0 - 2] e8 ?? ?? ?? ?? 89 4? ?? 83 7? ?? 00 79 [0 - 50] ba 10 00 00 00 [0 - 10] e8}
       condition:
