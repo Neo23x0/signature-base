@@ -1888,7 +1888,7 @@ rule WEBSHELL_PHP_Includer_Tiny
         reference = "Internal Research"
         score = 75
         date = "2021/04/17"
-        modified = "2023-0/-05"
+        modified = "2023-07-05"
         hash = "0687585025f99596508783b891e26d6989eec2ba"
         hash = "9e856f5cb7cb901b5003e57c528a6298341d04dc"
         hash = "b3b0274cda28292813096a5a7a3f5f77378b8905205bda7bb7e1a679a7845004"
@@ -1933,7 +1933,7 @@ rule WEBSHELL_PHP_Dynamic
         author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         date = "2021/01/13"
-        modified = "2023-07-05"
+        modified = "2023-10-06"
         score = 60
         hash = "65dca1e652d09514e9c9b2e0004629d03ab3c3ef"
         hash = "b8ab38dc75cec26ce3d3a91cb2951d7cdd004838"
@@ -1972,6 +1972,14 @@ rule WEBSHELL_PHP_Dynamic
         // ${'_'.$_}["_"](${'_'.$_}["__"]
         $dynamic8 = /\${[^}]{1,20}}(\[[^\]]{1,20}\])?\(\${/ wide ascii
 
+        $fp1 = { 3C 3F 70 68 70 0A 0A 24 61 28 24 62 20 3D 20 33 2C 20 24 63 29 3B } /* <?php\x0a\x0a$a($b = 3, $c); */
+        $fp2 = { 3C 3F 70 68 70 0A 0A 24 61 28 24 62 20 3D 20 33 2C 20 2E 2E 2E 20 24 63 29 3B } /* <?php\x0a\x0a$a($b = 3, ... $c); */
+        $fp3 = { 3C 3F 70 68 70 0A 0A 24 61 20 3D 20 6E 65 77 20 73 74 61 74 69 63 3A 3A 24 62 28 29 3B} /* <?php\x0a\x0a$a = new static::$b(); */
+        $fp4 = { 3C 3F 70 68 70 0A 0A 24 61 20 3D 20 6E 65 77 20 73 65 6C 66 3A 3A 24 62 28 29 3B } /* <?php\x0a\x0a$a = new self::$b(); */
+        $fp5 = { 3C 3F 70 68 70 0A 0A 24 61 20 3D 20 5C 22 7B 24 76 61 72 43 61 6C 6C 61 62 6C 65 28 29 7D 5C 22 3B } /* <?php\x0a\x0a$a = \"{$varCallable()}\"; */
+        $fp6 = "// TODO error about missing expression" /* <?php\x0a// TODO error about missing expression\x0a$a($b = 3, $c,); */
+        $fp7 = "// This is an invalid location for an attribute, "
+        $fp8 = "/* Auto-generated from php/php-langspec tests */"
     condition:
         filesize > 20 and filesize < 200 and (
             (
@@ -1987,6 +1995,7 @@ rule WEBSHELL_PHP_Dynamic
             any of ( $dynamic* )
         )
         and not any of ( $pd_fp* )
+        and not 1 of ($fp*)
 }
 
 rule WEBSHELL_PHP_Dynamic_Big

@@ -196,7 +196,8 @@ rule SUSP_Imphash_Mar23_2 : HIGHVOL {
         author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         date = "2023-03-23"
-        score = 70
+        modified = "2023-11-25"
+        score = 65
         hash = "12bf2795f4a140adbaa0af6ad4b2508d398d8ba69e9dadb155f800b10f7458c4"
         hash = "14ec56489fbcc3c7f1ef9a4d4a80ff302a5e233cdc4429a29c635a88fb1278d6"
         hash = "13731912823d6ce01c28a8d7d7f961505f461620bb35adbb409d4954ba1f4b8e"

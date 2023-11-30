@@ -18,6 +18,8 @@ import "pe"
 
 private rule WINDOWS_UPDATE_BDC
 {
+meta:
+   score = 0
 condition:
     (uint32be(0) == 0x44434d01 and // magic: DCM PA30
      uint32be(4) == 0x50413330)
@@ -530,3 +532,24 @@ rule SUSP_VULN_DRV_PROCEXP152_Renamed_May23 {
       and all of them
       and not filename matches /PROCEXP152\.SYS/i
 }
+
+rule SUSP_ANOMALY_Teams_Binary_Nov23 : SCRIPT {
+   meta:
+      description = "Detects a suspicious binary with the name teams.exe, update.exe or squirrel.exe in the AppData folder of Microsoft Teams that is unsigned or signed by a different CA"
+      author = "Florian Roth"
+      score = 60
+      reference = "https://twitter.com/steve_noel/status/1722698479636476325/photo/1"
+      date = "2023-11-11"
+   strings:
+      $a1 = "Microsoft Code Signing PCA" ascii
+   condition:
+      (
+         filename iequals "teams.exe" or
+         filename iequals "update.exe" or 
+         filename iequals "squirrel.exe"
+      )
+      and filepath icontains "\\AppData\\Local\\Microsoft\\Teams"
+      and pe.number_of_signatures == 0
+      and not $a1
+}
+

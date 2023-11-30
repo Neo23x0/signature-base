@@ -63,13 +63,6 @@ rule JavaScript_Run_Suspicious {
 
 /* Certutil Rule Improved */
 
-private rule MSI {
-   strings:
-      $r1 = { 52 00 6F 00 6F 00 74 00 20 00 45 00 6E 00 74 00 72 00 79 }
-   condition:
-      uint16(0) == 0xCFD0 and $r1
-}
-
 rule Certutil_Decode_OR_Download {
    meta:
       description = "Certutil Decode"
@@ -78,6 +71,7 @@ rule Certutil_Decode_OR_Download {
       reference = "Internal Research"
       score = 40
       date = "2017-08-29"
+      modified = "2023-10-19"
    strings:
       $a1 = "certutil -decode " ascii wide
       $a2 = "certutil  -decode " ascii wide
@@ -85,8 +79,12 @@ rule Certutil_Decode_OR_Download {
       $a4 = "certutil.exe  -decode " ascii wide
       $a5 = "certutil -urlcache -split -f http" ascii wide
       $a6 = "certutil.exe -urlcache -split -f http" ascii wide
+
+      $fp_msi = { 52 00 6F 00 6F 00 74 00 20 00 45 00 6E 00 74 00 72 00 79 }
    condition:
-      ( not MSI and filesize < 700KB and 1 of them )
+      filesize < 700KB
+      and 1 of ($a*)
+      and not 1 of ($fp*)
 }
 
 rule Suspicious_JS_script_content {

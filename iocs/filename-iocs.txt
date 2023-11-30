@@ -244,7 +244,7 @@ ystem32\\razorp\.exe;45
 \\recycler\.exe;65
 \\share_apps\.exe;65
 [^s]\\video\.exe;65
-\\whatsapp\.exe;65
+\\whatsapp\.exe;55;(\\WhatsApp|\\Prefetch\\|\\(Packages|WindowsApps)\\.{8}\.WhatsAppDesktop)
 \\xx\.exe;65
 \\keygen1\.exe;65
 \\meta\.exe;50
@@ -3109,7 +3109,6 @@ C:\\Windows\\[^\\"]{1,20}\.(js|ps1|vbs);50
 
 # Stealth Falcon Filename IOC https://www.welivesecurity.com/2019/09/09/backdoor-stealth-falcon-group/
 \\ImageIndexer\.dll;80
-\\WindowsBackup\.dll;80
 \\WindowsSearchCache\.dll;80
 \\JavaUserUpdater\.dll;80
 
@@ -3151,7 +3150,7 @@ c:\\windows\\AppPatch\\custom\\[^\\"]{1,20}\.(exe|vbs|ps1|bat);70
 # MESSAGETAP components https://twitter.com/cglyer/status/1182415016542248960/photo/1
 \\keyword_param\.txt;70
 
-# TeamViewerPortable - propably a policy violation https://portableapps.com/apps/utilities/teamviewer_portable
+# TeamViewerPortable - probably a policy violation https://portableapps.com/apps/utilities/teamviewer_portable
 \\TeamViewerPortable;60
 
 # OceanLotus / APT32 filename IOCs
@@ -3904,7 +3903,7 @@ linpeas\.log;75
 \\passav\.exe;65
 
 # Exploit Code File Names
-\\(cve|CVE)-20[012][0-9]\-[0-9]{4,5}.{0,20}($|\\);60;(\\share\\doc|\\Microsoft\\Windows Defender Advanced Threat Protection\\|/\.cpanm/work/| \.\.\.\.\. ok|\\sigma\\|\\(cve|CVE)-20[012][0-9]\-[0-9]{4,5}\\n )
+\\(cve|CVE)-20[012][0-9]\-[0-9]{4,5}.{0,20}($|\\);60;(\\share\\doc|\\Microsoft\\Windows Defender Advanced Threat Protection\\|/\.cpanm/work/| \.\.\.\.\. ok|\\sigma\\|\\(cve|CVE)-20[012][0-9]\-[0-9]{4,5}\\n | MFSA |emerging-threats)
 \\(cve|CVE)-20[012][0-9]\-[0-9]{4,5}.{0,20}(\.py|\.exe|\.vbs|\.bat|\.ps1|\.dll);75;(\\share\\doc|CVE\-2017\-9800\-pre\-commit)
 
 # Possible Service Path Escalation Attempt http://www.commonexploits.com/unquoted-service-paths/ or simple malware
@@ -4334,7 +4333,7 @@ C:\\ProgramData\\TPM\\winscard\.dll;85
 
 # WER Exploit POC CVE-2023-36874 https://github.com/Wh04m1001/CVE-2023-36874
 \\WerExpl\.exe;75
-\\System32\\wermgr\.exe;70;(?i)(:\\Windows\\|%windir%|\$env:windir|%SystemRoot%|$env:systemroot)
+\\System32\\wermgr\.exe;70;(?i)(:\\Windows\\|%windir%|\$env:windir|%SystemRoot%|$env:systemroot|\\Device\\)
 
 # PPLFault https://github.com/gabriellandau/PPLFault
 C:\\PPLFaultTemp\\;90
@@ -4352,5 +4351,17 @@ C:\\GodFaultTemp\\;90
 # Typical file names used for registry exports https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/critical-infrastructure-attacks
 \\security\.sav;65
 \\sam\.sav;70
+
+# BiBi Wiper IOCs https://www.securityjoes.com/post/bibi-linux-a-new-wiper-dropped-by-pro-hamas-hacktivist-group
+\\bibi-linux\.out;90
+
+# SysAid exploitation IOCs CVE-2023-47246 https://www.sysaid.com/blog/service-desk/on-premise-software-security-vulnerability-notification
+\\Program Files\\SysAidServer\\tomcat\\webapps\\usersfiles\\user\.exe;80
+\\Program Files\\SysAidServer\\tomcat\\webapps\\usersfiles\.war;80
+\\Program Files\\SysAidServer\\tomcat\\webapps\\leave;80
+
+# Rhysida Ransomware ELF for ESX IOCs
+\\usr\\lib\\vmware\\hostd\\docroot\\_index\.html;75
+\\usr\\lib\\vmware\\hostd\\docroot\\ui\\_index\.html;75
 
 # End

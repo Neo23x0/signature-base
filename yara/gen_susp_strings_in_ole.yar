@@ -6,6 +6,8 @@ rule MAL_RTF_Embedded_OLE_PE {
       author = "Florian Roth (Nextron Systems)"
       reference = "https://www.nextron-systems.com/2018/01/22/creating-yara-rules-detect-embedded-exe-files-ole-objects/"
       date = "2018-01-22"
+      modified = "2023-11-25"
+      score = 65
    strings:
       /* Hex encoded strings */
       /* This program cannot be run in DOS mode */

@@ -6,11 +6,12 @@
    Reference: https://www.us-cert.gov/ncas/alerts/TA18-074A
 */
 
-rule z_webshell {
+rule WEBSHELL_Z_Webshell_2 {
    meta:
       description = "Detection for the z_webshell"
       author = "DHS NCCIC Hunt and Incident Response Team"
       date = "2018/01/25"
+      old_rule_name = "z_webshell"
       md5 =  "2C9095C965A55EFC46E16B86F9B7D6C6"
    strings:
       $webshell_name = "public string z_progname =" nocase ascii wide
