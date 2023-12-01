@@ -1870,4 +1870,20 @@ winserverupdates.com
 198.12.76.214
 dojustit.mooo.com
 
+# Lockbit Citrixbleed IOCs https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-325a
+193.201.9.224
+62.233.50.25
+185.229.191.41
+81.19.135.219
+185.229.191.41
+adobe-us-updatefiles.digital
+172.67.129.176
+104.21.1.180
+81.19.135.219
+81.19.135.220
+81.19.135.226
+168.100.9.137
+206.188.197.22
+141.98.9.137
+
 # Last Line
