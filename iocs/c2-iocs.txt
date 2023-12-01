@@ -1886,4 +1886,9 @@ adobe-us-updatefiles.digital
 206.188.197.22
 141.98.9.137
 
+# Citrixbleed IOCs BWKG https://www.bwkg.de/daten-fakten/downloads/verschiedenes/file/news/indikatoren-zu-aktueller-warnmeldung-der-polizei-zu-bereits-ausgenutzten-sicherheitsluecken-von-produ/
+45.129.137.233
+185.17.40.178
+
+
 # Last Line

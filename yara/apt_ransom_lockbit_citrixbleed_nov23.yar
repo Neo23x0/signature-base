@@ -65,3 +65,17 @@ rule MAL_Python_Backdoor_Script_Nov23 {
    condition:
       filesize < 50KB and all of them
 }
+
+rule APT_RANSOM_Lockbit_ForensicArtifacts_Nov23 {
+   meta:
+      description = "Detects patterns found in Lockbit TA attacks exploiting Citrixbleed vulnerability CVE 2023-4966"
+      author = "Florian Roth"
+      date = "2023-11-22"
+      score = 75
+      reference = "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-325a"
+   strings:
+      $x1 = "taskkill /f /im sqlwriter.exe /im winmysqladmin.exe /im w3sqlmgr.exe"
+      $x2 = " 1> \\\\127.0.0.1\\admin$\\__"
+   condition:
+      1 of ($x*)
+}
