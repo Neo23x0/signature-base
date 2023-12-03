@@ -4364,4 +4364,25 @@ C:\\GodFaultTemp\\;90
 \\usr\\lib\\vmware\\hostd\\docroot\\_index\.html;75
 \\usr\\lib\\vmware\\hostd\\docroot\\ui\\_index\.html;75
 
+# Lockbit Citrixbleed IOCs https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-325a
+\\Downloads\\Process Hacker 2\\peview\.exe;85
+\\Music\\Process Hacker 2\\processhacker\.exe;85
+c:\\perflogs\\processhacker\.exe;85
+\\desktop\\proc64\\proc\.exe;85
+\\documents\\veeam-get-creds\.ps1;85
+\\perflogs\\64-bit\\netscan\.exe;85
+\\perflogs\\64-bit\\m\.exe;85
+\\perflogs\\64-bit\\m0\.exe;85
+\\music\\za_access_my_department\.exe;85
+C:\\Windows\\servicehost\.exe;85
+C:\\Windows\\sysconf\.bat;85
+C:\\Users\\Public\\a\.png;85
+C:\\Windows\\Tasks\\em\.cab;85
+C:\\Windows\\Tasks\\am\.cab;85
+C:\\Windows\\Tasks\\a\.cab;85
+C:\\Windows\\Tasks\\z\.txt;85
+\\ad\.ps1;50
+[Cc]:\\[Ww]indows\\[Tt]emp\\[Ss]creen[Cc]onnect\\[0-9\.]{1,20}\\[Ff]iles\\[Pp]rocess[Hh]acker\.exe;75
+[Cc]:\\[Ww]indows\\[Tt]emp\\[Ss]creen[Cc]onnect\\[0-9\.]{1,20}\\[Ff]iles\\[Aa]zure\.msi;75
+
 # End
