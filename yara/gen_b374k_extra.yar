@@ -14,6 +14,7 @@ rule b374k_back_connect {
 		date = "2016-08-18"
 		score = 80
 		hash1 = "c8e16f71f90bbaaef27ccaabb226b43762ca6f7e34d7d5585ae0eb2d36a4bae5"
+		uuid = "8612bda2-2576-56c0-a4ba-afbef419ab05"
 	strings:
 		$s1 = "AddAtomACreatePro" fullword ascii
 		$s2 = "shutdow" fullword ascii

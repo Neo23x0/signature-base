@@ -15,6 +15,7 @@ rule Tools_cmd {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
         hash = "02e37b95ef670336dc95331ec73dbb5a86f3ba2b"
+        uuid = "27c3cb44-9351-52a2-8e14-afade14e3384"
     strings:
         $s0 = "if(\"1752393\".equals(request.getParameter(\"Confpwd\"))){" fullword ascii
         $s1 = "java.io.InputStream in = Runtime.getRuntime().exec(request.getParameter(\"Conn\"" ascii
@@ -39,6 +40,7 @@ rule trigger_drop {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
         hash = "165dd2d82bf87285c8a53ad1ede6d61a90837ba4"
+        uuid = "3b4f32ff-2de2-5689-869a-8a8f55e7fa0c"
     strings:
         $s0 = "$_GET['returnto'] = 'database_properties.php';" fullword ascii
         $s1 = "echo('<meta http-equiv=\"refresh\" content=\"0;url=' . $_GET['returnto'] . '\">'" ascii
@@ -56,6 +58,7 @@ rule InjectionParameters {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
         hash = "4f11aa5b3660c45e527606ee33de001f4994e1ea"
+        uuid = "a77bd0c6-8857-577f-831a-0fcf2537667e"
     strings:
         $s0 = "Public Shared ReadOnly Empty As New InjectionParameters(-1, \"\")" fullword ascii
         $s1 = "Public Class InjectionParameters" fullword ascii
@@ -71,6 +74,7 @@ rule users_list {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
         hash = "6fba1a1a607198ed232405ccbebf9543037a63ef"
+        uuid = "2d90b593-6b65-502c-aeb0-8f2a3d65afd3"
     strings:
         $s0 = "<a href=\"users_create.php\">Create User</a>" fullword ascii
         $s7 = "$skiplist = array('##MS_AgentSigningCertificate##','NT AUTHORITY\\NETWORK SERVIC" ascii
@@ -87,6 +91,7 @@ rule trigger_modify {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
         hash = "c93cd7a6c3f962381e9bf2b511db9b1639a22de0"
+        uuid = "a7d65a9f-82de-554c-8f20-7560d2160041"
     strings:
         $s1 = "<form name=\"form1\" method=\"post\" action=\"trigger_modify.php?trigger=<?php e" ascii
         $s2 = "$data_query = @mssql_query('sp_helptext \\'' . urldecode($_GET['trigger']) . '" ascii
@@ -105,6 +110,7 @@ rule Customize {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
         hash = "db556879dff9a0101a7a26260a5d0dc471242af2"
+        uuid = "a69e1234-cc85-5295-a45c-693afdfc368e"
     strings:
         $s1 = "ds.Clear();ds.Dispose();}else{SqlCommand cm = Conn.CreateCommand();cm.CommandTex" ascii
         $s2 = "c.UseShellExecute=false;c.RedirectStandardOutput=true;c.RedirectStandardError=tr" ascii
@@ -122,6 +128,7 @@ rule oracle_data {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
         hash = "6cf070017be117eace4752650ba6cf96d67d2106"
+        uuid = "faa62dcc-0f59-573c-8722-d07216de151f"
     strings:
         $s0 = "$txt=fopen(\"oracle_info.txt\",\"w\");" fullword ascii
         $s1 = "if(isset($_REQUEST['id']))" fullword ascii
@@ -138,6 +145,7 @@ rule reDuhServers_reDuh {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
         hash = "377886490a86290de53d696864e41d6a547223b0"
+        uuid = "c87d971a-a16f-5593-88fb-6bcd207e0841"
     strings:
         $s1 = "out.println(\"[Error]Unable to connect to reDuh.jsp main process on port \" +ser" ascii
         $s4 = "System.out.println(\"IPC service failed to bind to \" + servicePort);" fullword ascii $s17 = "System.out.println(\"Bound on \" + servicePort);" fullword ascii
@@ -154,6 +162,7 @@ rule item_old {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
         hash = "daae358bde97e534bc7f2b0134775b47ef57e1da"
+        uuid = "c32bbd48-a363-53c7-84c6-c47581e2f9da"
     strings:
         $s1 = "$sCmd = \"wget -qc \".escapeshellarg($sURL).\" -O \".$sFile;" fullword ascii
         $s2 = "$sCmd = \"convert \".$sFile.\" -flip -quality 80 \".$sFileOut;" fullword ascii
@@ -170,6 +179,7 @@ rule Tools_2014 {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
         hash = "74518faf08637c53095697071db09d34dbe8d676"
+        uuid = "bb76321b-003d-5f6b-a84b-425477abe91c"
     strings:
         $s0 = "((Invoker) ins.get(\"login\")).invoke(request, response," fullword ascii
         $s4 = "program = \"cmd.exe /c net start > \" + SHELL_DIR" fullword ascii
@@ -186,6 +196,7 @@ rule reDuhServers_reDuh_2 {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
         hash = "512d0a3e7bb7056338ad0167f485a8a6fa1532a3"
+        uuid = "6050dfde-6c79-5dd8-a772-508668177aa5"
     strings:
         $s1 = "errorlog(\"FRONTEND: send_command '\".$data.\"' on port \".$port.\" returned \"." ascii
         $s2 = "$msg = \"newData:\".$socketNumber.\":\".$targetHost.\":\".$targetPort.\":\".$seq" ascii
@@ -202,6 +213,7 @@ rule Customize_2 {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
         hash = "37cd17543e14109d3785093e150652032a85d734"
+        uuid = "1f7e9063-33d8-5df4-89d5-7d8fc1be61f0"
     strings:
         $s1 = "while((l=br.readLine())!=null){sb.append(l+\"\\r\\n\");}}" fullword ascii
         $s2 = "String Z=EC(request.getParameter(Pwd)+\"\",cs);String z1=EC(request.getParameter" ascii
@@ -217,6 +229,7 @@ rule ChinaChopper_one {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
         hash = "6cd28163be831a58223820e7abe43d5eacb14109"
+        uuid = "854fb5c9-38c7-5fd2-a473-66ae297070f5"
     strings:
         $s0 = "<%eval request(" ascii
     condition:
@@ -231,6 +244,7 @@ rule CN_Tools_old {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
         hash = "f8a007758fda8aa1c0af3c43f3d7e3186a9ff307"
+        uuid = "bfdb84e8-e5a8-53a4-ae71-e0d1b38d38ef"
     strings:
         $s0 = "$sCmd = \"wget -qc \".escapeshellarg($sURL).\" -O \".$sFile;" fullword ascii
         $s1 = "$sURL = \"http://\".$sServer.\"/\".$sFile;" fullword ascii
@@ -248,6 +262,7 @@ rule item_301 {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
         hash = "15636f0e7dc062437608c1f22b1d39fa15ab2136"
+        uuid = "4ee9a089-313f-53c1-8196-1348d721dbf4"
     strings:
         $s1 = "$sURL = \"301:http://\".$sServer.\"/index.asp\";" fullword ascii
         $s2 = "(gov)\\\\.(cn)$/i\", $aURL[\"host\"])" ascii
@@ -265,6 +280,7 @@ rule CN_Tools_item {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
         hash = "a584db17ad93f88e56fd14090fae388558be08e4"
+        uuid = "954f24c9-d7d5-56d3-86f0-0cf8832640dd"
     strings:
         $s1 = "$sURL = \"http://\".$sServer.\"/\".$sWget;" fullword ascii
         $s2 = "$sURL = \"301:http://\".$sServer.\"/\".$sWget;" fullword ascii
@@ -282,6 +298,7 @@ rule f3_diy {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
         hash = "f39c2f64abe5e86d8d36dbb7b1921c7eab63bec9"
+        uuid = "9f36c6dd-89e8-511b-a499-131f1e8a420a"
     strings:
         $s0 = "<%@LANGUAGE=\"VBScript.Encode\" CODEPAGE=\"936\"%>" fullword ascii
         $s5 = ".black {" fullword ascii
@@ -297,6 +314,7 @@ rule ChinaChopper_temp {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
         hash = "b0561ea52331c794977d69704345717b4eb0a2a7"
+        uuid = "f163787f-fcc9-568a-a12d-4057cb4f0d29"
     strings:
         $s0 = "o.run \"ff\",Server,Response,Request,Application,Session,Error" fullword ascii
         $s1 = "Set o = Server.CreateObject(\"ScriptControl\")" fullword ascii
@@ -314,6 +332,7 @@ rule Tools_2015 {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
         hash = "8fc67359567b78cadf5d5c91a623de1c1d2ab689"
+        uuid = "eb2826ab-ef8d-5a93-9ede-f5bbd7ab4ff4"
     strings:
         $s0 = "Configbis = new BufferedInputStream(httpUrl.getInputStream());" fullword ascii
         $s4 = "System.out.println(Oute.toString());" fullword ascii
@@ -332,6 +351,7 @@ rule ChinaChopper_temp_2 {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
         hash = "604a4c07161ce1cd54aed5566e5720161b59deee"
+        uuid = "3952ed2b-fb27-5c45-9cd7-b7a300b37c0e"
     strings:
         $s0 = "@eval($_POST[strtoupper(md5(gmdate(" ascii
     condition:
@@ -346,6 +366,7 @@ rule templatr {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
         hash = "759df470103d36a12c7d8cf4883b0c58fe98156b"
+        uuid = "b361a49d-1e05-5597-bf8b-735e04397ffa"
     strings:
         $s0 = "eval(gzinflate(base64_decode('" ascii
     condition:
@@ -360,6 +381,7 @@ rule reDuhServers_reDuh_3 {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
         hash = "0744f64c24bf4c0bef54651f7c88a63e452b3b2d"
+        uuid = "69f5fd6b-a9b3-500b-8723-d1c82494903d"
     strings:
         $s1 = "Response.Write(\"[Error]Unable to connect to reDuh.jsp main process on port \" +" ascii
         $s2 = "host = System.Net.Dns.Resolve(\"127.0.0.1\");" fullword ascii
@@ -377,6 +399,7 @@ rule ChinaChopper_temp_3 {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-13"
         hash = "c5ecb8bc1d7f0e716b06107b5bd275008acaf7b7"
+        uuid = "573e7da6-f58f-5814-b3e8-a0db3ecfe558"
     strings:
         $s0 = "<%@ Page Language=\"Jscript\"%><%eval(Request.Item[\"" ascii
         $s1 = "\"],\"unsafe\");%>" ascii
@@ -392,6 +415,7 @@ rule Shell_Asp {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
         hash = "5e0bc914ac287aa1418f6554ddbe0ce25f2b5f20"
+        uuid = "52089205-8f36-5a0b-a1ae-67c91a253ad2"
     strings:
         $s1 = "Session.Contents.Remove(m & \"userPassword\")" fullword ascii
         $s2 = "passWord = Encode(GetPost(\"password\"))" fullword ascii
@@ -409,6 +433,7 @@ rule Txt_aspxtag {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
         hash = "42cb272c02dbd49856816d903833d423d3759948"
+        uuid = "e01a7235-5c69-5676-ac5d-c4e4632f31b2"
     strings:
         $s1 = "String wGetUrl=Request.QueryString[" fullword ascii
         $s2 = "sw.Write(wget);" fullword ascii
@@ -425,6 +450,7 @@ rule Txt_php {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
         hash = "eaa1af4b898f44fc954b485d33ce1d92790858d0"
+        uuid = "65d5c46f-006d-58f9-bb7f-0a2e1f1853bd"
     strings:
         $s1 = "$Config=$_SERVER['QUERY_STRING'];" fullword ascii
         $s2 = "gzuncompress($_SESSION['api']),null);" ascii
@@ -442,6 +468,7 @@ rule Txt_aspx1 {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
         hash = "c5ecb8bc1d7f0e716b06107b5bd275008acaf7b7"
+        uuid = "e01a7235-5c69-5676-ac5d-c4e4632f31b2"
     strings:
         $s0 = "<%@ Page Language=\"Jscript\"%><%eval(Request.Item["
         $s1 = "],\"unsafe\");%>" fullword ascii
@@ -457,6 +484,7 @@ rule Txt_shell {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
         hash = "8342b634636ef8b3235db0600a63cc0ce1c06b62"
+        uuid = "3e4c5928-346e-541b-b1a8-b37d5e3abc98"
     strings:
         $s1 = "printf(\"Could not connect to remote shell!\\n\");" fullword ascii
         $s2 = "printf(\"Usage: %s <reflect ip> <port>\\n\", prog);" fullword ascii
@@ -475,6 +503,7 @@ rule Txt_asp {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
         hash = "a63549f749f4d9d0861825764e042e299e06a705"
+        uuid = "39a2ba9a-c429-574f-8820-5e0270a4b84c"
     strings:
         $s1 = "Server.ScriptTimeout=999999999:Response.Buffer=true:On Error Resume Next:BodyCol" ascii
         $s2 = "<%@ LANGUAGE = VBScript.Encode %><%" fullword ascii
@@ -490,6 +519,7 @@ rule Txt_asp1 {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
         hash = "95934d05f0884e09911ea9905c74690ace1ef653"
+        uuid = "b00ab02c-c767-568c-be99-6cc731c3f1dc"
     strings:
         $s1 = "if ShellPath=\"\" Then ShellPath = \"cmd.exe\"" fullword ascii
         $s2 = "autoLoginEnable=WSHShell.RegRead(autoLoginPath & autoLoginEnableKey)" fullword ascii
@@ -507,6 +537,7 @@ rule Txt_php_2 {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
         hash = "a7d5fcbd39071e0915c4ad914d31e00c7127bcfc"
+        uuid = "66916e32-9471-54bd-944e-bb751b38d3b0"
     strings:
         $s1 = "function connect($dbhost, $dbuser, $dbpass, $dbname='') {" fullword ascii
         $s2 = "scookie('loginpass', '', -86400 * 365);" fullword ascii
@@ -528,6 +559,7 @@ rule Txt_ftp {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
         hash = "3495e6bcb5484e678ce4bae0bd1a420b7eb6ad1d"
+        uuid = "311de4b0-fa19-545a-8a65-a40b255b5b39"
     strings:
         $s1 = "';exec master.dbo.xp_cmdshell 'echo open " ascii
         $s2 = "';exec master.dbo.xp_cmdshell 'ftp -s:';" ascii
@@ -548,6 +580,7 @@ rule Txt_lcx {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
         hash = "ddb3b6a5c5c22692de539ccb796ede214862befe"
+        uuid = "4a4e8810-6dae-526e-86f0-43de45d1c87a"
     strings:
         $s1 = "printf(\"Usage:%s -m method [-h1 host1] -p1 port1 [-h2 host2] -p2 port2 [-v] [-l" ascii
         $s2 = "sprintf(tmpbuf2,\"\\r\\n########### reply from %s:%d ####################\\r\\n" ascii
@@ -566,6 +599,7 @@ rule Txt_jspcmd {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
         hash = "1d4e789031b15adde89a4628afc759859e53e353"
+        uuid = "53eb6caf-3578-5df7-a1d8-9e4038b6f57e"
     strings:
         $s0 = "if(\"1752393\".equals(request.getParameter(\"Confpwd\"))){" fullword ascii
         $s4 = "out.print(\"Hi,Man 2015\");" fullword ascii
@@ -581,6 +615,7 @@ rule Txt_jsp {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
         hash = "74518faf08637c53095697071db09d34dbe8d676"
+        uuid = "53eb6caf-3578-5df7-a1d8-9e4038b6f57e"
     strings:
         $s1 = "program = \"cmd.exe /c net start > \" + SHELL_DIR" fullword ascii
         $s2 = "Process pro = Runtime.getRuntime().exec(exe);" fullword ascii
@@ -598,6 +633,7 @@ rule Txt_aspxlcx {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
         hash = "453dd3160db17d0d762e032818a5a10baf234e03"
+        uuid = "e01a7235-5c69-5676-ac5d-c4e4632f31b2"
     strings:
         $s1 = "public string remoteip = " ascii
         $s2 = "=Dns.Resolve(host);" ascii
@@ -615,6 +651,7 @@ rule Txt_xiao {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
         hash = "b3b98fb57f5f5ccdc42e746e32950834807903b7"
+        uuid = "cd375597-c343-5f7d-8574-23f700ff432b"
     strings:
         $s1 = "Session.Contents.Remove(m & \"userPassword\")" fullword ascii
         $s2 = "passWord = Encode(GetPost(\"password\"))" fullword ascii
@@ -633,6 +670,7 @@ rule Txt_aspx {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
         hash = "ce24e277746c317d887139a0d71dd250bfb0ed58"
+        uuid = "e01a7235-5c69-5676-ac5d-c4e4632f31b2"
     strings:
         $s1 = "SQLExec : <asp:DropDownList runat=\"server\" ID=\"FGEy\" AutoPostBack=\"True\" O" ascii
         $s2 = "Process[] p=Process.GetProcesses();" fullword ascii
@@ -650,6 +688,7 @@ rule Txt_Sql {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
         hash = "f7813f1dfa4eec9a90886c80b88aa38e2adc25d5"
+        uuid = "586f23d4-3a04-520d-b75b-f9bbcf67ceeb"
     strings:
         $s1 = "cmd=chr(34)&\"cmd.exe /c \"&request.form(\"cmd\")&\" > 8617.tmp\"&chr(34)" fullword ascii
         $s2 = "strQuery=\"dbcc addextendedproc ('xp_regwrite','xpstar.dll')\"" fullword ascii
@@ -667,6 +706,7 @@ rule Txt_hello {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
         hash = "697a9ebcea6a22a16ce1a51437fcb4e1a1d7f079"
+        uuid = "42d01411-e333-543d-84a2-758c13bad2df"
     strings:
         $s0 = "Dim myProcessStartInfo As New ProcessStartInfo(\"cmd.exe\")" fullword ascii
         $s1 = "myProcessStartInfo.Arguments=\"/c \" & Cmd.text" fullword ascii

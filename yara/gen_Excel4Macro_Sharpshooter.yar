@@ -9,6 +9,7 @@ rule MAL_Sharpshooter_Excel4 {
       date = "2020-03-27"
       score = 70
       hash="ccef64586d25ffcb2b28affc1f64319b936175c4911e7841a0e28ee6d6d4a02d"
+      uuid = "a79e3afe-e8f9-5e56-a131-bb1b346df471"
    strings:
       $header_docf = { D0 CF 11 E0 }
       $s1 = "Excel 4.0 Macros"
@@ -31,6 +32,7 @@ rule SUSP_Excel4Macro_AutoOpen
         date = "2020-03-26"
         score = 50
         hash="2fb198f6ad33d0f26fb94a1aa159fef7296e0421da68887b8f2548bbd227e58f"
+        uuid = "cfed97fe-b330-5528-8402-08c6ba6af04a"
     strings:
         $header_docf = { D0 CF 11 E0 }
         $s1 = "Excel" fullword

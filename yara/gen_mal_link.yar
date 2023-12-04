@@ -7,6 +7,7 @@ rule LNK_Malicious_Nov1 {
       reference = "https://www.virustotal.com/en/file/ee069edc46a18698fa99b6d2204895e6a516af1a306ea986a798b178f289ecd6/analysis/"
       date = "2017-11-06"
       score = 60
+      uuid = "1d08ac78-6ff0-5e3f-acc2-91bd63267d4c"
    strings:
       $c1 = "C:\\Windows\\System32\\cmd.exe" ascii wide
 

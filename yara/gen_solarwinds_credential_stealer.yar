@@ -9,6 +9,7 @@ rule HKTL_Solarwinds_credential_stealer {
         date = "2021-01-20"
 		hash = "1b2e5186464ed0bdd38fcd9f4ab294a7ba28bd829bf296584cbc32e2889037e4"
 		hash = "4adb69d4222c80d97f8d64e4d48b574908a518f8d504f24ce93a18b90bd506dc"
+        uuid = "87dba889-367a-5fc3-b5e0-eb8e3c36a5e9"
     strings:
         $certificate = "CN=SolarWinds-Orion" ascii nocase wide
         $credfile1 = "\\CredentialStorage\\SolarWindsDatabaseAccessCredential" ascii nocase wide

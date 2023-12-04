@@ -6,6 +6,7 @@ rule WaterBug_wipbot_2013_core_PDF {
 		author = "Symantec Security Response"
 		date = "22.01.2015"
 		reference = "http://t.co/rF35OaAXrl"
+		uuid = "2e8ccce9-d8ba-573d-b532-76d8e2ed5442"
 	strings:
 		$a = /\+[A-Za-z]{1}\. _ _ \$\+[A-Za-z]{1}\. _ \$ _ \+/
 		$b = /\+[A-Za-z]{1}\.\$\$\$ _ \+/
@@ -19,6 +20,7 @@ rule WaterBug_wipbot_2013_dll {
 		author = "Symantec Security Response"
 		date = "22.01.2015"
 		reference = "http://t.co/rF35OaAXrl"
+		uuid = "2aae09a3-6e59-5951-941e-c1f82aada979"
 	strings:
 		$string1 = "/%s?rank=%s"
 		$string2 = "ModuleStart\x00ModuleStop\x00start"
@@ -36,6 +38,7 @@ rule WaterBug_wipbot_2013_core {
 		date = "2015-01-22"
 		modified = "2023-01-27"
 		reference = "http://t.co/rF35OaAXrl"
+		uuid = "2e8ccce9-d8ba-573d-b532-76d8e2ed5442"
 	strings:
 		$code1 = { 89 47 0C C7 47 10 90 C2 04 00 C7 47 14 90 C2 10 00 C7 47 18 90 90 60 68 89 4F 1C C7 47 20 90 90 90 B8 89 4F 24 C7 47 28 90 FF D0 61 C7 47 2C 90 C2 04 00}
 		$code2 = { 85 C0 75 25 8B 0B BF ?? ?? ?? ?? EB 17 69 D7 0D 66 19 00 8D BA 5F F3 6E 3C 89 FE C1 EE 10 89 F2 30 14 01 40 3B 43 04 72 E4}
@@ -50,6 +53,7 @@ rule WaterBug_turla_dropper {
 		author = "Symantec Security Response"
 		date = "22.01.2015"
 		reference = "http://t.co/rF35OaAXrl"
+		uuid = "f9683ac7-36f3-5a2a-8b76-e8e2527f4e0d"
 	strings:
 		$a = {0F 31 14 31 20 31 3C 31 85 31 8C 31 A8 31 B1 31 D1 31 8B 32 91 32 B6 32 C4 32 6C 33 AC 33 10 34}
 		$b = {48 41 4C 2E 64 6C 6C 00 6E 74 64 6C 6C 00 00 00 57 8B F9 8B 0D ?? ?? ?? ?? ?? C9 75 26 56 0F 20 C6 8B C6 25 FF FF FE FF 0F 22 C0 E8}
@@ -64,6 +68,7 @@ rule WaterBug_fa_malware {
 		date = "2015-01-22"
 		modified = "2023-01-27"
 		reference = "http://t.co/rF35OaAXrl"
+		uuid = "b09f798a-2875-59ca-b880-971d8f973c76"
 	strings:
 		$string1 = "C:\\proj\\drivers\\fa _ 2009\\objfre\\i386\\atmarpd.pdb"
 		$string2 = "d:\\proj\\cn\\fa64\\"
@@ -96,6 +101,7 @@ rule WaterBug_sav_dropper {
 		author = "Symantec Security Response"
 		date = "22.01.2015"
 		reference = "http://t.co/rF35OaAXrl"
+		uuid = "685849de-9892-56bf-8215-21b08d8b2d7c"
 	strings:
 		$mz = "MZ"
 		$a = /[a-z]{,10}_x64.sys\x00hMZ\x00/
@@ -112,6 +118,7 @@ rule WaterBug_sav {
 		date = "2015-01-22"
 		modified = "2023-01-27"
 		reference = "http://t.co/rF35OaAXrl"
+		uuid = "685849de-9892-56bf-8215-21b08d8b2d7c"
 	strings:
 		$code1a = { 8B 75 18 31 34 81 40 3B C2 72 F5 33 F6 39 7D 14 76 1B 8A 04 0E 88 04 0F 6A 0F 33 D2 8B C7 5B F7 F3 85 D2 75 01 }
 		$code1b = { 8B 45 F8 40 89 45 F8 8B 45 10 C1 E8 02 39 45 F8 73 17 8B 45 F8 8B 4D F4 8B 04 81 33 45 20 8B 4D F8 8B 55 F4 89 04 8A EB D7 83 65 F8 00 83 65 EC 00 EB 0E 8B 45 F8 40 89 45 F8 8B 45 EC 40 89 45 EC 8B 45 EC	3B 45 10 73 27 8B 45 F4 03 45 F8 8B 4D F4 03 4D EC 8A 09 88 08 8B 45 F8 33 D2 6A 0F 59 F7 F1 85 D2 75 07 }

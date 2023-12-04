@@ -41,6 +41,7 @@ rule generic_carbon
     contact = "github@eset.com"
     license = "BSD 2-Clause"
 
+    uuid = "efdc0d16-a974-5c00-a401-391d60f3081e"
   strings:
     $s1 = "ModStart"
     $t1 = "STOP|OK"
@@ -61,6 +62,7 @@ rule carbon_metadata
     contact = "github@eset.com"
     license = "BSD 2-Clause"
 
+    uuid = "976b6a7d-00bf-5d0f-baf9-84fc5dbd21a2"
    condition:
       (pe.version_info["InternalName"] contains "SERVICE.EXE" or
        pe.version_info["InternalName"] contains "MSIMGHLP.DLL" or

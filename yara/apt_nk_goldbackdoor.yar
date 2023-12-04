@@ -7,6 +7,7 @@ rule EXT_NK_GOLDBACKDOOR_inital_shellcode {
         date = "2022-04-21"
         reference = "https://stairwell.com/wp-content/uploads/2022/04/Stairwell-threat-report-The-ink-stained-trail-of-GOLDBACKDOOR.pdf"
         score = 80
+        uuid = "daab8e54-11b3-51cc-8bee-55b078f3e791"
     strings:
         $ = { C7 45 C4 25 6C 6F 63 50 8D 45 C4 C7 45 C8 61 6C 61 70 8B F9 C7 45
               CC 70 64 61 74 50 B9 BD 88 17 75 C7 45 D0 61 25 5C 6C 8B DA C7 45 D4 6F
@@ -26,6 +27,7 @@ rule EXT_NK_GOLDBACKDOOR_injected_shellcode {
         date = "2022-04-21"
         reference = "https://stairwell.com/wp-content/uploads/2022/04/Stairwell-threat-report-The-ink-stained-trail-of-GOLDBACKDOOR.pdf"
         score = 80
+        uuid = "aa921f01-98cc-51ab-877a-e7beede77e36"
     strings:
         $dec_routine = { 8A 19 57 8B FA 8B 51 01 83 C1 05 85 D2 74 0E 56 8B C1 8B F2 30 18 40 83 EE 01 75 F8 5E 57 }
         $rtlfillmemory_load = { B9 4B 17 CD 5B 55 56 33 ED 55 6A 10 50 E8 86 00 00 00 FF D0 }
@@ -47,6 +49,7 @@ rule EXT_NK_GOLDBACKDOOR_generic_shellcode {
         date = "2022-04-21"
         reference = "https://stairwell.com/wp-content/uploads/2022/04/Stairwell-threat-report-The-ink-stained-trail-of-GOLDBACKDOOR.pdf"
         score = 75
+        uuid = "70081d63-0b26-5358-8444-5adc3a44aaa0"
     strings:
         $ = { B9 8E 8A DD 8D 8B F0 E8 ?? ?? ?? ?? FF D0 }
         $ = { B9 8E AB 6F 40 [1-10] 50 [1-10] E8 ?? ?? ?? ?? FF D0 }

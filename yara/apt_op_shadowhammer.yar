@@ -13,6 +13,7 @@ rule MAL_APT_Operation_ShadowHammer_MalSetup {
       hash5 = "6aedfef62e7a8ab7b8ab3ff57708a55afa1a2a6765f86d581bc99c738a68fc74"
       hash6 = "cfbec77180bd67cceb2e17e64f8a8beec5e8875f47c41936b67a60093e07fcfd"
       reference = "https://securelist.com/operation-shadowhammer/89992/"
+      uuid = "000f840a-848d-5f82-84bf-70690efbd4de"
    strings:
       $x1 = "\\AsusShellCode\\Release" ascii
       $x2 = "\\AsusShellCode\\Debug"

@@ -7,6 +7,7 @@ rule CredentialStealer_Generic_Backdoor {
       reference = "Internal Research"
       date = "2017-06-07"
       hash1 = "edb2d039a57181acf95bd91b2a20bd9f1d66f3ece18506d4ad870ab65e568f2c"
+      uuid = "b3124f6c-4e18-562c-84d9-d51e086da446"
    strings:
       $s1 = "GetOperaLoginData" fullword ascii
       $s2 = "GetInternetExplorerCredentialsPasswords" fullword ascii

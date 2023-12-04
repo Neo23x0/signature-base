@@ -8,6 +8,7 @@ rule SUSP_AdobePDF_SFX_Bitmap_Combo_Executable {
       date = "2020-11-02"
       score = 60
       hash1 = "13655f536fac31e6c2eaa9e6e113ada2a0b5e2b50a93b6bbfc0aaadd670cde9b"
+      uuid = "d2d078c9-fbe5-51f4-8f7e-5d943c5a8197"
    strings:
       /* Adobe PDF Icon Bitmap */
       $sc1 = { FF 00 CC FF FF 00 99 FF FF 00 66 FF FF 00 33 FF
@@ -43,6 +44,7 @@ rule SUSP_AdobePDF_Bitmap_Executable {
       date = "2020-11-02"
       score = 60
       hash1 = "13655f536fac31e6c2eaa9e6e113ada2a0b5e2b50a93b6bbfc0aaadd670cde9b"
+      uuid = "86ebadd4-64a8-5290-b45e-ac125a10ea66"
    strings:
       /* Adobe PDF Icon Bitmap */
       $sc1 = { FF 00 CC FF FF 00 99 FF FF 00 66 FF FF 00 33 FF

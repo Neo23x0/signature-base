@@ -19,6 +19,7 @@ rule SUSP_Macro_StarOffice {
         hash11 = "bf581ebb96b8ca4f254ab4d200f9a053aff8187715573d9a1cbd443df0f554e3"
         hash12 = "de45634064af31cb6768e4912cac284a76a6e66d398993df1aeee8ce26e0733b"
 
+        uuid = "92110a87-66b4-5fc5-b3f5-3e59ec2671b2"
     strings:
         $r1 = "StarBasic"
         $r2 = "</script:module>"

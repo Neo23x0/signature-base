@@ -8,6 +8,7 @@ rule SUSP_ELF_SPARC_Hunting_SBZ_Obfuscation {
    modified = "2023-05-08"
    score = 60
 
+   uuid = "15ee9a66-d823-508c-a14c-2c6ff45f47e5"
    strings:
       // xor g3, 0x47, o5
       // xor o5, g1, o5
@@ -31,6 +32,7 @@ rule SUSP_ELF_SPARC_Hunting_SBZ_UniqueStrings {
       modified = "2023-05-08"
       score = 60
 
+      uuid = "d2f70d10-412e-5e83-ba4f-eac251012dc1"
    strings:
       $s1 = "<%u>[%s] Event #%u: "
       /* $s2 = "ofn" */
@@ -53,6 +55,7 @@ rule SUSP_ELF_SPARC_Hunting_SBZ_ModuleStruct {
       modified = "2023-05-08"
       score = 60
 
+      uuid = "909746f1-44f5-597b-bdb2-2a1396d4b8c7"
    strings:
       $be = { 02 02 00 00 01 C1 00 07 }
       $le = { 02 02 00 00 07 00 C1 01 }

@@ -24,6 +24,7 @@ rule HiddenCobra_BANKSHOT_Gen {
       hash7 = "ec44ecd57401b3c78d849115f08ff046011b6eb933898203b7641942d4ee3af9"
       hash8 = "3e6d575b327a1474f4767803f94799140e16a729e7d00f1bea40cd6174d8a8a6"
       hash9 = "6db37a52517653afe608fd84cc57a2d12c4598c36f521f503fd8413cbef9adca"
+      uuid = "fbf9dd32-cb9a-51f2-bd03-0387fbf44baa"
    strings:
       $s1 = "Mozilla/4.0 (compatible; MSIE 8.0; Win32)" fullword wide
       $s2 = "rHTTP/1.1 200 Connection established" fullword wide
@@ -70,6 +71,7 @@ rule Unauthorized_Proxy_Server_RAT {
       hash1 = "C74E289AD927E81D2A1A56BC73E394AB"
       hash2 = "2950E3741D7AF69E0CA0C5013ABC4209"
       desscription = "Detects Proxy Server RAT"
+      uuid = "378573e3-17a7-5862-aae5-a8e84102e237"
    strings:
       $s0 = {8A043132C288043125FF00000003C299F73D40404900A14440490003D0413BCF72DE5E5FC3}
       $s1 = {8A04318844241432C28804318B44241425FF00000003C299F73D40404900A14440490003D0413BCF72D65E5FC3}

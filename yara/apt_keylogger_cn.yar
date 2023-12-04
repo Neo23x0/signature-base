@@ -13,6 +13,7 @@ rule Keylogger_CN_APT {
 		date = "2016-03-07"
 		score = 75
 		hash = "3efb3b5be39489f19d83af869f11a8ef8e9a09c3c7c0ad84da31fc45afcf06e7"
+		uuid = "7be0b175-05a4-5725-ba21-9438c0fcd740"
 	strings:
 		$x1 = "Mozilla/4.0 (compatible; MSIE6.0;Windows NT 5.1)" fullword ascii
 		$x2 = "attrib -s -h -r c:\\ntldr" fullword ascii

@@ -7,6 +7,7 @@ rule APT28_HospitalityMalware_document {
       reference = "http://csecybsec.com/download/zlab/APT28_Hospitality_Malware_report.pdf"
       last_updated = "2017-10-02"
       tlp = "white"
+      uuid = "722e80ef-d729-5887-9853-cd06128f506d"
    strings:
       /* this string identifies the malicious payload */
       $a = {75 52 B9 ED 1B D6 83 0F DB 24 CA 87 4F 5F 25 36 BF 66 BA}
@@ -23,6 +24,7 @@ rule APT28_HospitalityMalware_mvtband_file {
       reference = "http://csecybsec.com/download/zlab/APT28_Hospitality_Malware_report.pdf"
       last_updated = "2017-10-02"
       tlp = "white"
+      uuid = "f9e34c77-38b3-513e-bb29-148ac7058596"
    strings:
       $a = "DGMNOEP"
       $b = {C7 45 94 0A 25 73 30 8D 45 94}  // two significant instructions

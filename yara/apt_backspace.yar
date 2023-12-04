@@ -9,6 +9,7 @@ rule apt_backspace{
 		author = "Bit Byte Bitten"
 		date = "2015-05-14"
 		hash = "6cbfeb7526de65eb2e3c848acac05da1e885636d17c1c45c62ad37e44cd84f99"
+		uuid = "3da3337d-b6d3-5661-b43e-535e06817303"
 	strings:
 		$s1 = "!! Use Splice Socket !!"
 		$s2 = "User-Agent: SJZJ (compatible; MSIE 6.0; Win32)"

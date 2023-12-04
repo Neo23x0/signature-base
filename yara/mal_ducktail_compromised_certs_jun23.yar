@@ -10,6 +10,7 @@ rule MAL_Compromised_Cert_DuckTail_Stealer_Jun23 {
       hash2 = "b3cfdb442772d07a7f037b0bb093ba315dfd1e79b0e292736c52097355495270"
       hash3 = "9afe013cae0167993a6a7ccd650eb1221a5ec163110565eb3a49a8b57949d4ee"
       score = 80
+      uuid = "b491e1b6-42c4-58e9-8efa-19e697804f96"
    strings:
       $sx1 = "AZM MARKETING COMPANY LIMITED" ascii fullword
       $sx2 = "CONG TY TNHH" ascii

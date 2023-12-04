@@ -21,6 +21,7 @@ rule NTLM_Dump_Output {
       author = "Florian Roth (Nextron Systems)"
       date = "2015-10-01"
       score = 75
+      uuid = "d17ee473-317b-57d4-8ea8-7c89e8f2b2ed"
    strings:
       $s0 = "500:AAD3B435B51404EEAAD3B435B51404EE:" ascii
       $s1 = "500:aad3b435b51404eeaad3b435b51404ee:" ascii
@@ -36,6 +37,7 @@ rule Gsecdump_password_dump_file {
       reference = "https://t.co/OLIj1yVJ4m"
       date = "2018-03-06"
       score = 65
+      uuid = "c7c8ab61-f728-5eb2-a5e3-b3dd84980870"
    strings:
       $x1 = "Administrator(current):500:" ascii
    condition:
@@ -49,6 +51,7 @@ rule SUSP_ZIP_NtdsDIT : T1003_003 {
       score = 50
       reference = "https://pentestlab.blog/2018/07/04/dumping-domain-password-hashes/"
       date = "2020-08-10"
+      uuid = "131ed73d-bb34-5ff6-b145-f95e4469d7f9"
    strings:
       $s1 = "ntds.dit" ascii 
    condition:

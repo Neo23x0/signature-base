@@ -19,6 +19,7 @@ rule MAL_Sednit_DelphiDownloader_Apr18_2 {
       hash3 = "5427ecf4fa37e05a4fbab8a31436f2e94283a832b4e60a3475182001b9739182"
       hash4 = "0458317893575568681c86b83e7f9c916540f0f58073b386d4419517c57dcb8f"
       hash5 = "72aa4905598c9fb5a1e3222ba8daa3efb52bbff09d89603ab0911e43e15201f3"
+      uuid = "6ccd2f21-de44-52fb-912e-d3ecbe57e389"
    strings:
       $s1 = "2D444F574E4C4F41445F53544152542D" ascii /* hex encoded string '-DOWNLOAD_START-' */
       $s2 = "55504C4F41445F414E445F455845435554455F46494C45" ascii /* hex encoded string 'UPLOAD_AND_EXECUTE_FILE' */
@@ -45,6 +46,7 @@ rule MAL_Sednit_DelphiDownloader_Apr18_3 {
       modified = "2023-01-06"
       hash1 = "ecb835d03060db1ea3496ceca2d79d7c4c6c671c9907e0b0e73bf8d3371fa931"
       hash2 = "e355a327479dcc4e71a38f70450af02411125c5f101ba262e8df99f9f0fef7b6"
+      uuid = "2200fbdc-3600-51d4-a273-dc7fd4127c05"
    strings:
       $ = "Processor Level: " fullword ascii
       $ = "CONNECTION ERROR" fullword ascii

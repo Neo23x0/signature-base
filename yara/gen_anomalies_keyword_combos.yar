@@ -9,6 +9,7 @@ rule SUSP_NullSoftInst_Combo_Oct20_1 {
       hash1 = "686b5240e5e503528cc5ac8d764883413a260716dd290f114a60af873ee6a65f"
       hash2 = "93951379e57e4f159bb62fd7dd563d1ac2f3f23c80ba89f2da2e395b8a647dcf"
       hash3 = "a9ca1d6a981ccc8d8b144f337c259891a67eb6b85ee41b03699baacf4aae9a78"
+      uuid = "380f30a6-df6b-50c6-bb2d-b8785564bbac"
    strings:
       $a1 = "NullsoftInst" ascii 
 

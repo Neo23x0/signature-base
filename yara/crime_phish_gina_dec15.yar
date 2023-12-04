@@ -13,6 +13,7 @@ rule PHISH_02Dez2015_dropped_p0o6543f_1 {
 		reference = "http://myonlinesecurity.co.uk/purchase-order-124658-gina-harrowell-clinimed-limited-word-doc-or-excel-xls-spreadsheet-malware/"
 		date = "2015-12-02"
 		hash = "db788d6d3a8ed1a6dc9626852587f475e7671e12fa9c9faa73b7277886f1e210"
+		uuid = "3335ad3c-47f8-5547-bac0-df2d98ff644f"
 	strings:
 		$s1 = "netsh.exe" fullword wide
 		$s2 = "routemon.exe" fullword wide
@@ -36,6 +37,7 @@ rule PHISH_02Dez2015_dropped_p0o6543f_2 {
 		date = "2015-12-03"
 		hash1 = "d6b21ded749b57042eede07c3af1956a3c9f1faddd22d2f78e43003a11ae496f"
 		hash2 = "561b16643992b92d37cf380bc2ed7cd106e4dcaf25ca45b4ba876ce59533fb02"
+		uuid = "ed6f6dc8-5b5d-5a6f-a2a0-cb8a34c8931f"
 	strings:
 		$s1 = "Email: W0067@990.net" fullword wide
 		$s2 = "MineExplorer Version 1.0" fullword wide
@@ -59,6 +61,7 @@ rule PHISH_02Dez2015_attach_P_ORD_C_10156_124658 {
 		hash6 = "d9db7d32949c4df6a5d9d0292b576ae19681be7b6e0684df57338390e87fc6d6"
 		hash7 = "7bb705701ae73d377f6091515a140f0af57703719a67da9a60fad4544092ee6c"
 		hash8 = "e743c6e7749ab1046a2beea8733d7c8386ea60b43492bb4f0769ced6a2cee66d"
+		uuid = "8989379a-6cd9-52ba-be18-5d402a440758"
 	strings:
 		$s1 = "Execute" ascii
 		$s2 = "Process WriteParameterFiles" fullword ascii

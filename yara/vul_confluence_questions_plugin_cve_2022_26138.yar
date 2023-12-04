@@ -6,6 +6,7 @@ rule VULN_Confluence_Questions_Plugin_CVE_2022_26138_Jul22_1 {
       reference = "https://www.bleepingcomputer.com/news/security/atlassian-fixes-critical-confluence-hardcoded-credentials-flaw/"
       date = "2022-07-21"
       score = 50
+      uuid = "1443c673-2a86-5431-876a-c8fccba52190"
    strings:
       $x_plain_1 = "predefined.user.password=disabled1system1user6708"
 

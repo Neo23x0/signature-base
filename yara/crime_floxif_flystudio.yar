@@ -9,6 +9,7 @@ rule MAL_Floxif_Generic {
       date = "2018-05-11"
       score = 80
       hash1 = "de055a89de246e629a8694bde18af2b1605e4b9b493c7e4aef669dd67acf5085"
+      uuid = "5ddd6a6c-b02a-518b-bbe3-8f528b3d7eae"
    condition:
       uint16(0) == 0x5a4d and filesize < 200KB and (
          pe.imphash() == "2f4ddcfebbcad3bacadc879747151f6f" or
@@ -25,6 +26,7 @@ rule MAL_CN_FlyStudio_May18_1 {
       reference = "Internal Research"
       date = "2018-05-11"
       hash1 = "b85147366890598518d4f277d44506eef871fd7fc6050d8f8e68889cae066d9e"
+      uuid = "b78b9ea0-5eef-5922-b5d7-d3c5ddce7fad"
    strings:
       $s1 = "WTNE / MADE BY E COMPILER - WUTAO " fullword ascii
       $s2 = "www.cfyhack.cn" fullword ascii

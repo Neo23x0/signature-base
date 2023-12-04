@@ -13,6 +13,7 @@ rule APT_apt_duqu2_loaders {
 		description = "Rule to detect Duqu 2.0 samples"
 		last_modified = "2015-06-09"
 		version = "1.0"
+		uuid = "22db52c2-18e7-537e-a9c5-38ccfd3a0d30"
 	strings:
 		$a1 = "{AAFFC4F0-E04B-4C7C-B40A-B45DE971E81E}" wide
 		$a2 = "\\\\.\\pipe\\{AAFFC4F0-E04B-4C7C-B40A-B45DE971E81E}" wide
@@ -42,6 +43,7 @@ rule APT_apt_duqu2_drivers {
 		description = "Rule to detect Duqu 2.0 drivers"
 		last_modified = "2015-06-09"
 		version = "1.0"
+		uuid = "714d5151-9f80-582e-a628-1de9d83a072d"
 	strings:
 		$a1 = "\\DosDevices\\port_optimizer" wide nocase
 		$a2 = "romanian.antihacker"
@@ -76,6 +78,7 @@ rule Duqu2_Generic1 {
 		hash9 = "413ba509e41c526373f991d1244bc7c7637d3e13"
 		hash10 = "29cd99a9b6d11a09615b3f9ef63f1f3cffe7ead8"
 		hash11 = "dfe1cb775719b529138e054e7246717304db00b1"
+		uuid = "0e03eda5-d65b-5400-aceb-bc37559d9a6e"
 	strings:
 		$s0 = "Global\\{B54E3268-DE1E-4c1e-A667-2596751403AD}" fullword wide
 		$s1 = "SetSecurityDescriptorSacl" fullword ascii /* PEStudio Blacklist: strings */ /* Goodware String - occured 189 times */
@@ -96,6 +99,7 @@ rule APT_Kaspersky_Duqu2_procexp {
 		hash1 = "2422835716066b6bcecb045ddd4f1fbc9486667a"
 		hash2 = "b120620b5d82b05fee2c2153ceaf305807fa9f79"
 		hash3 = "288ebfe21a71f83b5575dfcc92242579fb13910d"
+		uuid = "d7fd48d5-2416-5eff-a751-ece09ce27767"
 	strings:
 		$x1 = "svcmsi_32.dll" fullword wide
 		$x2 = "msi3_32.dll" fullword wide
@@ -117,6 +121,7 @@ rule APT_Kaspersky_Duqu2_SamsungPrint {
 		reference = "https://goo.gl/7yKyOj"
 		date = "2015-06-10"
 		hash = "ce39f41eb4506805efca7993d3b0b506ab6776ca"
+		uuid = "cc4bc00e-f38b-577f-8f00-637c0549894c"
 	strings:
 		$s0 = "Installer for printer drivers and applications" fullword wide /* PEStudio Blacklist: strings */
 		$s1 = "msi4_32.dll" fullword wide
@@ -136,6 +141,7 @@ rule APT_Kaspersky_Duqu2_msi3_32 {
 		reference = "https://goo.gl/7yKyOj"
 		date = "2015-06-10"
 		hash = "53d9ef9e0267f10cc10f78331a9e491b3211046b"
+		uuid = "6cbea2e7-f406-57cf-b9c8-9d84b1480035"
 	strings:
 		$s0 = "ProcessUserAccounts" fullword ascii /* PEStudio Blacklist: strings */
 		$s1 = "SELECT `UserName`, `Password`, `Attributes` FROM `CustomUserAccounts`" fullword wide /* PEStudio Blacklist: strings */

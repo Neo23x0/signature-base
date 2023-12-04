@@ -9,6 +9,7 @@ rule PS_AMSI_Bypass : FILE {
       reference = "https://gist.github.com/mattifestation/46d6a2ebb4a1f4f0e7229503dc012ef1"
       date = "2017-07-19"
       score = 65
+      uuid = "31ab8932-4c74-5251-a044-3fcc0aa159f4"
    strings:
       $s1 = ".GetField('amsiContext',[Reflection.BindingFlags]'NonPublic,Static')." ascii nocase
    condition:
@@ -23,6 +24,7 @@ rule JS_Suspicious_Obfuscation_Dropbox {
       reference = "https://twitter.com/ItsReallyNick/status/887705105239343104"
       date = "2017-07-19"
       score = 70
+      uuid = "9b6b288d-3a15-5267-bbb1-885febf4df78"
    strings:
       $x1 = "j\"+\"a\"+\"v\"+\"a\"+\"s\"+\"c\"+\"r\"+\"i\"+\"p\"+\"t\""
       $x2 = "script:https://www.dropbox.com" ascii
@@ -38,6 +40,7 @@ rule JS_Suspicious_MSHTA_Bypass {
       reference = "https://twitter.com/ItsReallyNick/status/887705105239343104"
       date = "2017-07-19"
       score = 70
+      uuid = "b2ddca78-c19a-5bb6-a1c9-4413e637ab1d"
    strings:
       $s1 = "mshtml,RunHTMLApplication" ascii
       $s2 = "new ActiveXObject(\"WScript.Shell\").Run(" ascii
@@ -54,6 +57,7 @@ rule JavaScript_Run_Suspicious {
       reference = "https://twitter.com/craiu/status/900314063560998912"
       score = 60
       date = "2017-08-23"
+      uuid = "87f98ead-3052-5777-8877-574619173aaa"
    strings:
       $s1 = "w = new ActiveXObject(" ascii
       $s2 = " w.Run(r);" fullword ascii
@@ -72,6 +76,7 @@ rule Certutil_Decode_OR_Download {
       score = 40
       date = "2017-08-29"
       modified = "2023-10-19"
+      uuid = "63bdefd2-225a-56d5-b615-5e236c97f050"
    strings:
       $a1 = "certutil -decode " ascii wide
       $a2 = "certutil  -decode " ascii wide
@@ -96,6 +101,7 @@ rule Suspicious_JS_script_content {
       date = "2017-12-02"
       score = 70
       hash1 = "fc0fad39b461eb1cfc6be57932993fcea94fca650564271d1b74dd850c81602f"
+      uuid = "6a547aa5-c58c-5559-9d3f-3f0d541eafd4"
    strings:
       $x1 = "new ActiveXObject('WScript.Shell')).Run('cmd /c " ascii
       $x2 = ".Run('regsvr32 /s /u /i:" ascii
@@ -114,6 +120,7 @@ rule Universal_Exploit_Strings {
       date = "2017-12-02"
       score = 50
       hash1 = "9b07dacf8a45218ede6d64327c38478640ff17d0f1e525bd392c002e49fe3629"
+      uuid = "4b3a9eec-5f7c-579c-9719-fe23cc291aee"
    strings:
       $s1 = "Exploit" fullword ascii
       $s2 = "Payload" fullword ascii
@@ -133,6 +140,7 @@ rule VBS_Obfuscated_Mal_Feb18_1  {
       hash1 = "06960cb721609fe5a857fe9ca3696a84baba88d06c20920370ddba1b0952a8ab"
       hash2 = "c5c0e28093e133d03c3806da0061a35776eed47d351e817709d2235b95d3a036"
       hash3 = "e1765a2b10e2ff10235762b9c65e9f5a4b3b47d292933f1a710e241fe0417a74"
+      uuid = "39ea10e5-9dea-5cc8-8388-15378fcbab60"
    strings:
       $x1 = "A( Array( (1* 2^1 )+" ascii
       $x2 = ".addcode(A( Array(" ascii

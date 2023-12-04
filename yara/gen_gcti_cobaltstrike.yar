@@ -31,6 +31,7 @@ rule CobaltStrike_Resources_Artifact32_and_Resources_Dropper_v1_49_to_v3_14
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "243e3761-cbea-561c-97da-f6ba12ebc7ee"
 	strings:
   // Decoder function for the embedded payload
 	$payloadDecoder = { 8B [2] 89 ?? 03 [2] 8B [2] 03 [2] 0F B6 18 8B [2] 89 ?? C1 ?? 1F C1 ?? 1E 01 ?? 83 ?? 03 29 ?? 03 [2] 0F B6 00 31 ?? 88 ?? 8B [2] 89 ?? 03 [2] 8B [2] 03 [2] 0F B6 12 }
@@ -48,6 +49,7 @@ rule CobaltStrike_Resources_Artifact32_v3_1_and_v3_2
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "4fff7f42-9f50-5945-8ec0-2438ac5c7000"
 	strings:
 	/*
 		89 ??           mov     eax, ecx
@@ -76,6 +78,7 @@ rule CobaltStrike_Resources_Artifact32_v3_14_to_v4_x
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "8a010305-dce5-55f4-b2dd-a736721efe22"
 	strings:
 	/*
 		C7 [3] 5C 00 00 00  mov     dword ptr [esp+28h], 5Ch ; '\'
@@ -157,6 +160,7 @@ rule CobaltStrike_Resources_Artifact32svc_Exe_v3_1_v3_2_v3_14_and_v4_x
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "732169be-e334-5774-b0ac-54b217a8b681"
 	strings:
 	/*
 		89 ??           mov     eax, ecx
@@ -198,6 +202,7 @@ rule CobaltStrike_Resources_Artifact64_v1_49_v2_x_v3_0_v3_3_thru_v3_14
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "67902782-500e-5a89-8b2a-59ee21bcba3e"
 	strings:
 	/*
 		8B [2]      mov     eax, [rbp+var_4]
@@ -237,6 +242,7 @@ rule CobaltStrike_Resources_Artifact64_v3_1_v3_2_v3_14_and_v4_0
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "c9e9b8e0-16fe-5abc-b1fe-0e3e586f6db6"
 	strings:
 	/*
 		31 C0                xor     eax, eax
@@ -267,6 +273,7 @@ rule CobaltStrike_Resources_Artifact64_v3_14_to_v4_x
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "1c7731d3-429b-57aa-9c17-8de7d0841b1e"
 	strings:
 	/*
 		41 B8 5C 00 00 00       mov     r8d, 5Ch ; '\'
@@ -326,6 +333,7 @@ rule CobaltStrike_Resources_Beacon_Dll_v1_44
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 
+    uuid = "935ee27f-ce1b-5491-b4a3-cb78f199ab1b"
   strings:
     /*
       0F B7 D2  movzx   edx, dx
@@ -360,6 +368,7 @@ rule CobaltStrike_Resources_Beacon_Dll_v1_45
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 
+    uuid = "04d4d0ee-f1ee-5888-8108-ca55243c770a"
   strings:
     /*
       51        push    ecx
@@ -395,6 +404,7 @@ rule CobaltStrike_Resources_Beacon_Dll_v1_46
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 
+    uuid = "79715042-1963-5e48-8b64-7d915da58d84"
   strings:
     /*
       8B F2             mov     esi, edx
@@ -426,6 +436,7 @@ rule CobaltStrike_Resources_Beacon_Dll_v1_47
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 
+    uuid = "ac2249a9-210c-581f-8dd1-7619356dca7d"
   strings:
     /*
       83 F8 12  cmp     eax, 12h
@@ -455,6 +466,7 @@ rule CobaltStrike_Resources_Beacon_Dll_v1_48
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 
+    uuid = "dd15099f-ad19-58df-9ed4-ce66d7ee8540"
   strings:
     /*
       48        dec     eax; switch 24 cases
@@ -489,6 +501,7 @@ rule CobaltStrike_Resources_Beacon_Dll_v1_49
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 
+    uuid = "871e28c9-b580-5a32-8529-2290ded1a1b6"
   strings:
     /*
       48                   dec     eax; switch 31 cases
@@ -522,6 +535,7 @@ rule CobaltStrike_Resources_Beacon_Dll_v2_0_49
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 
+    uuid = "087c584a-5ceb-536a-8842-53fbd668df54"
   strings:
     /*
       83 F8 22          cmp     eax, 22h
@@ -555,6 +569,7 @@ rule CobaltStrike_Resources_Beacon_Dll_v2_1_and_v2_2
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
     
+    uuid = "384fb247-aae7-52e1-a45d-6bda0f80a04e"
   strings:
     /*
       49                dec     ecx; switch 37 cases
@@ -587,6 +602,7 @@ rule CobaltStrike_Resources_Beacon_Dll_v2_3
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 
+    uuid = "aed092f1-fbb1-5efe-be8d-fb7c5aba1cde"
   strings:
     /*
       49                dec     ecx; switch 39 cases
@@ -619,6 +635,7 @@ rule CobaltStrike_Resources_Beacon_Dll_v2_4
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 
+    uuid = "347a6b06-84a8-53ff-80a1-05fa1a48a412"
   strings:
     /*
       4A                dec     edx; switch 48 cases
@@ -651,6 +668,7 @@ rule CobaltStrike_Resources_Beacon_Dll_v2_5
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 
+    uuid = "a89f9239-099c-5b97-b1df-e8ce2b95ea52"
   strings:
     /*
       48                dec     eax; switch 59 cases
@@ -683,6 +701,7 @@ rule CobaltStrike_Resources_Beacon_Dll_v3_0
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 
+    uuid = "132a1be8-f529-5141-ba03-fdf6df3d55d4"
   strings:
     /*
       48                dec     eax; switch 61 cases
@@ -718,6 +737,7 @@ rule CobaltStrike_Resources_Beacon_Dll_v3_1
   // v3.1 and v3.2 share the same C2 handler code. We are using a function that
   // is not included in v3.2 to mark the v3.1 version along with the decoder
   // which allows us to narrow in on only v3.1 samples
+    uuid = "aa511dee-69ea-53bd-be90-d2d03d08c550"
   strings:
     /*
       55             push    ebp
@@ -773,6 +793,7 @@ rule CobaltStrike_Resources_Beacon_Dll_v3_2
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 
+    uuid = "3ccbc0f2-241c-5c10-8930-4a3d264d3b57"
   strings:
     /*
       48                dec     eax; switch 62 cases
@@ -839,6 +860,7 @@ rule CobaltStrike_Resources_Beacon_Dll_v3_3
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 
+    uuid = "7cce26c9-1403-535f-bd9d-19667c7e313c"
   strings:
     /*
       48                dec     eax; switch 66 cases
@@ -871,6 +893,7 @@ rule CobaltStrike_Resources_Beacon_Dll_v3_4
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 
+    uuid = "58a34ab6-c061-59a2-b929-8519d3d844e7"
   strings:
     /*
       48                dec     eax; switch 67 cases
@@ -904,6 +927,7 @@ rule CobaltStrike_Resources_Beacon_Dll_v3_5_hf1_and_3_5_1
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 
+    uuid = "1532596e-be0e-58c2-8d3b-5120c793d677"
   strings:
     /*
       48                dec     eax; switch 68 cases
@@ -936,6 +960,7 @@ rule CobaltStrike_Resources_Beacon_Dll_v3_6
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 
+    uuid = "7e7b5c22-82b3-5298-b794-b06d94a668d5"
   strings:
     /*
       48                dec     eax; switch 72 cases
@@ -968,6 +993,7 @@ rule CobaltStrike_Resources_Beacon_Dll_v3_7
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 
+    uuid = "6352a31c-34b8-5886-8e34-ef9221c22e6e"
   strings:
     /*
       48                dec     eax; switch 74 cases
@@ -1000,6 +1026,7 @@ rule CobaltStrike_Resources_Beacon_Dll_v3_8
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 
+    uuid = "6c65cbf8-2c60-5315-b3b2-48dfcee75733"
   strings:
     /*
       48                dec     eax; switch 76 cases
@@ -1049,6 +1076,7 @@ rule CobaltStrike_Resources_Beacon_Dll_v3_11
 		date = "2022-11-18"
 
   // Original version from April 9, 2018
+    uuid = "00e42396-db81-5d43-90ee-5a97b379019e"
   strings:
     /*
       48                dec     eax; switch 81 cases
@@ -1083,6 +1111,7 @@ rule CobaltStrike_Resources_Beacon_Dll_v3_11_bugfix_and_v3_12
 		date = "2022-11-18"
     
   // Covers both 3.11 (bug fix form May 25, 2018) and v3.12
+    uuid = "08ff2a2f-97bd-5839-b414-d67fbf2cdb0f"
   strings:
     /*
       48                dec     eax; switch 81 cases
@@ -1115,6 +1144,7 @@ rule CobaltStrike_Resources_Beacon_Dll_v3_13
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 
+    uuid = "98dd32e6-9bb5-57b2-a5e5-1c74a0d1e6d3"
   strings:
     /*
       4A                dec     edx; switch 91 cases
@@ -1148,6 +1178,7 @@ rule CobaltStrike_Resources_Beacon_Dll_v3_14
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 
+    uuid = "00edfc72-c7b8-5100-8275-ae3548b96e49"
   strings:
     /*
       83 FA 5B  cmp     edx, 5Bh
@@ -1177,6 +1208,7 @@ rule CobaltStrike_Sleeve_Beacon_Dll_v4_0_suspected
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
     
+    uuid = "50ff6e44-ebc0-5000-a816-b385a6675768"
   strings:
     /*
       51                   push    ecx
@@ -1213,6 +1245,7 @@ rule CobaltStrike_Sleeve_Beacon_Dll_v4_1_and_v4_2
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 
+    uuid = "793df916-bdf7-5743-b008-0113caf38bae"
   strings:
     /*
       48                dec     eax; switch 100 cases
@@ -1246,6 +1279,7 @@ rule CobaltStrike_Sleeve_Beacon_Dll_v4_3_v4_4_v4_5_and_v4_6
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 
+    uuid = "976e087c-f371-5fc6-85f8-9c803a91f549"
   strings:
     /*
       48                dec     eax; switch 102 cases
@@ -1278,6 +1312,7 @@ rule CobaltStrike_Sleeve_Beacon_Dll_v4_7_suspected
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
     
+    uuid = "4b6f90dd-69f3-5555-9195-6a0aed0fff58"
   strings:
 
     /*
@@ -1338,6 +1373,7 @@ rule CobaltStrike_Resources_Beacon_x64_v3_2
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
     
+    uuid = "61188243-0b90-5bff-bcc8-50f10ed941f6"
   strings:
     /*
       4C 8D 05 9F F8 FF FF lea     r8, sub_18000C4B0
@@ -1379,6 +1415,7 @@ rule CobaltStrike_Resources_Beacon_x64_v3_3
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
     
+    uuid = "fb96ecff-809e-5704-974e-a2d8ef022daa"
   strings:
     /*
       8B D3                mov     edx, ebx
@@ -1420,6 +1457,7 @@ rule CobaltStrike_Resources_Beacon_x64_v3_4
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
     
+    uuid = "97ef152c-86c7-513c-a881-e7d594d38dcf"
   strings:
     /*
       8B D3             mov     edx, ebx
@@ -1459,6 +1497,7 @@ rule CobaltStrike_Resources_Beacon_x64_v3_5_hf1_and_v3_5_1
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
     
+    uuid = "0c0e87d3-e0e2-5ddc-9d89-5e56443da4b8"
   strings:
     /*
       8B D3             mov     edx, ebx
@@ -1500,6 +1539,7 @@ rule CobaltStrike_Resources_Beacon_x64_v3_6
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
     
+    uuid = "9651a1ca-d8ea-5b0b-bcba-a850c2e07791"
   strings:
     /*
       48 89 5C 24 08    mov     [rsp+arg_0], rbx
@@ -1544,6 +1584,7 @@ rule CobaltStrike_Resources_Beacon_x64_v3_7
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
     
+    uuid = "27fad98a-2882-5c52-af6e-c7dcf5559624"
   strings:
     /*
       48 89 5C 24 08    mov     [rsp+arg_0], rbx
@@ -1585,6 +1626,7 @@ rule CobaltStrike_Resources_Beacon_x64_v3_8
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
     
+    uuid = "89809d81-9a8b-5cf3-a251-689bf52e98e0"
   strings:
     /*
       8B D3          mov     edx, ebx
@@ -1622,6 +1664,7 @@ rule CobaltStrike_Resources_Beacon_x64_v3_11
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
     
+    uuid = "bf0c7661-2583-5fca-beb5-abb2b50c860d"
   strings:
 	
     /*
@@ -1677,6 +1720,7 @@ rule CobaltStrike_Resources_Beacon_x64_v3_12
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
     
+    uuid = "6eeae9f4-96e0-5a98-a8dc-779c916cd968"
   strings:
     /*
       8B D3          mov     edx, ebx
@@ -1716,6 +1760,7 @@ rule CobaltStrike_Resources_Beacon_x64_v3_13
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
     
+    uuid = "202eb8ea-7afb-515b-9306-67514abf5e55"
   strings:
     /*
       48 8D 0D 01 5B FF FF lea     rcx, f_NET__ExfiltrateData
@@ -1752,6 +1797,7 @@ rule CobaltStrike_Resources_Beacon_x64_v3_14
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 
+    uuid = "d69171e3-86f4-5187-8874-5eee2045f746"
   strings:
 
     /*
@@ -1789,6 +1835,7 @@ rule CobaltStrike_Sleeve_Beacon_Dll_x86_v4_0_suspected
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
     
+    uuid = "28a735c4-87d1-5e14-9379-46a6fd0cdd2a"
   strings:
     /*
       41 B8 01 00 00 00    mov     r8d, 1
@@ -1826,6 +1873,7 @@ rule CobaltStrike_Sleeve_Beacon_x64_v4_1_and_v_4_2
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
     
+    uuid = "dc320d17-98fc-5df3-ba05-4d134129317e"
   strings:
     /*
       83 F9 34          cmp     ecx, 34h ; '4'
@@ -1864,6 +1912,7 @@ rule CobaltStrike_Sleeve_Beacon_x64_v4_3
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
     
+    uuid = "572616c7-d1ec-5aa1-b142-4f2edf73737f"
   strings:
   
     /*
@@ -1902,6 +1951,7 @@ rule CobaltStrike_Sleeve_Beacon_x64_v4_4_v_4_5_and_v4_6
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 
+    uuid = "79b6bfd4-1e45-5bd9-ac5c-19eb176ce698"
   strings:
     /*
       8B D0                mov     edx, eax
@@ -1939,6 +1989,7 @@ rule CobaltStrike_Sleeve_Beacon_x64_v4_5_variant
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
     
+    uuid = "45715da9-8f16-5304-b216-1ca36c508c77"
   strings:
     /*
       41 B8 01 00 00 00 mov     r8d, 1
@@ -1991,6 +2042,7 @@ rule CobaltStrike_Resources_Bind64_Bin_v2_5_through_v4_x
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "a01e7bc3-40e9-5f87-8fd6-926972be273b"
 	strings:
 	/*
 		48 31 C0       xor     rax, rax
@@ -2100,6 +2152,7 @@ rule CobaltStrike_Resources_Bind_Bin_v2_5_through_v4_x
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "32f129c1-9845-5843-9e16-7d9af217b8e2"
 	strings:
 	/*
 		31 ??     xor     eax, eax
@@ -2211,6 +2264,7 @@ rule  CobaltStrike__Resources_Browserpivot_Bin_v1_48_to_v3_14_and_Sleeve_Browser
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "55086544-6684-526b-914f-505a562be458"
 	strings:
 	/*
 		FF [1-5]        call    ds:recv               // earlier versions (v1.x to 2.x) this is CALL EBP
@@ -2270,6 +2324,7 @@ rule CobaltStrike_Resources_Browserpivot_x64_Bin_v1_48_to_v3_14_and_Sleeve_Brows
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "a5dfae85-ff9c-5ca5-9ac0-041c6108a6ed"
 	strings:
 	/*
 		FF 15 [4]         call    cs:recv
@@ -2334,6 +2389,7 @@ rule CobaltStrike_Resources_Bypassuac_Dll_v1_49_to_v3_14_and_Sleeve_Bypassuac_Dl
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "614046b5-cf81-56a5-8824-b3a7e14a8ed5"
 	strings:
 	/*
 		A1 [4]    mov     eax, fileop
@@ -2428,6 +2484,7 @@ rule CobaltStrike_Resources_Bypassuac_x64_Dll_v3_3_to_v3_14_and_Sleeve_Bypassuac
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "eef83901-63d9-55a3-b115-03f420416177"
 	strings:
 	/*
 		48 8B 0D 07 A4 01 00 mov     rcx, cs:fileop
@@ -2514,6 +2571,7 @@ rule CobaltStrike_Resources_Bypassuactoken_Dll_v3_11_to_v3_14
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "b9f25fa5-bd1d-5ba0-9b1d-bb97e1dbf76b"
 	strings:
 	/*
 		5?                 push    eax; ReturnLength
@@ -2664,6 +2722,7 @@ rule CobaltStrike_Resources_Bypassuactoken_x64_Dll_v3_11_to_v3_14
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "c89befcd-a622-5947-9ce3-a6031901a45a"
 	strings:
 	/*
 		83 F8 7A          cmp     eax, 7Ah ; 'z'
@@ -2782,6 +2841,7 @@ rule CobaltStrike_Resources_Command_Ps1_v2_5_to_v3_7_and_Resources_Compress_Ps1_
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 
+		uuid = "c0b81deb-ed20-5f7e-8e15-e6a9e9362594"
   strings:		
     // the command.ps1 and compress.ps1 are the same file. Between v3.7 and v3.8 the file was renamed from command to compress.
     $ps1 = "$s=New-Object \x49O.MemoryStream(,[Convert]::\x46romBase64String(" nocase
@@ -2814,6 +2874,7 @@ rule CobaltStrike_Resources_Covertvpn_Dll_v2_1_to_v4_x
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "a65b855c-5703-5b9f-bb57-da8ebf898f9b"
 	strings:
 	/*
 		5?                  push    esi
@@ -2933,6 +2994,7 @@ rule CobaltStrike_Resources_Covertvpn_injector_Exe_v1_44_to_v2_0_49
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "48485ae2-1d99-5fa8-b8e8-0047e92ef447"
 	strings:
 	/*
 		C7 04 24 [4]    mov     dword ptr [esp], offset aKernel32; "kernel32"
@@ -3049,6 +3111,7 @@ rule CobaltStrike_Resources_Dnsstager_Bin_v1_47_through_v4_x
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "e1b0e368-9bcf-5d9b-b2b3-8414742f213e"
 	strings:
 	/*
 		31 ??     xor     eax, eax
@@ -3127,6 +3190,7 @@ rule CobaltStrike_Resources_Elevate_Dll_v3_0_to_v3_14_and_Sleeve_Elevate_Dll_v4_
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "170f62a2-ba4f-5be8-9ec5-402eb7bbde4e"
 	strings:
 	/*
 		6A 00               push    0; lParam
@@ -3195,6 +3259,7 @@ rule CobaltStrike_Resources_Elevate_X64_Dll_v3_0_to_v3_14_and_Sleeve_Elevate_X64
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "91d5c343-1084-5cfc-9dfa-46f530eb9625"
 	strings:
 	/*
 		81 FA 21 01 00 00             cmp     edx, 121h
@@ -3266,6 +3331,7 @@ rule CobaltStrike_Resources_Httpsstager64_Bin_v3_2_through_v4_x
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "c16e73fc-484a-5f7e-8127-d85a0254d842"
 	strings:
 	/*
 		48 31 C0       xor     rax, rax
@@ -3356,6 +3422,7 @@ rule CobaltStrike_Resources_Httpsstager_Bin_v2_5_through_v4_x
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "f45aa40a-3936-50f9-a60e-de7181862d19"
 	strings:
 	/*
 		31 ??     xor     eax, eax
@@ -3451,6 +3518,7 @@ rule CobaltStrike_Resources_Httpstager64_Bin_v3_2_through_v4_x
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "5530dce8-e5a1-5133-9b05-464e3397084a"
 	strings:
 	/*
 		48 31 C0       xor     rax, rax
@@ -3536,6 +3604,7 @@ rule CobaltStrike_Resources_Httpstager_Bin_v2_5_through_v4_x
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "86109485-c26c-5c51-8d04-dd1add9a8c57"
 	strings:
 	/*
 		31 ??     xor     eax, eax
@@ -3629,6 +3698,7 @@ rule CobaltStrike_Resources_Reverse64_Bin_v2_5_through_v4_x
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "966e6e4c-85e2-5c94-8245-25367802b7d2"
 	strings:
 	/*
 		48 31 C0       xor     rax, rax
@@ -3728,6 +3798,7 @@ rule CobaltStrike_Resources_Reverse_Bin_v2_5_through_v4_x
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "182dbcd0-1180-5516-abe3-cf2eebbd0e39"
 	strings:
 	/*
 		31 ??     xor     eax, eax
@@ -3832,6 +3903,7 @@ rule CobaltStrike_Resources_Smbstager_Bin_v2_5_through_v4_x
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "074b7d83-e3d8-541c-804b-2417c21f54d5"
 	strings:
 	/*
 		31 ??     xor     eax, eax
@@ -3927,6 +3999,7 @@ rule CobaltStrike_Resources_Template_Py_v3_3_to_v4_x
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 
+		uuid = "16aef9a9-b217-5462-93dc-f6273c99ddd0"
   strings:   
     $arch = "platform.architecture()"
     $nope = "WindowsPE"
@@ -3962,6 +4035,7 @@ rule CobaltStrike_Resources_Template_Sct_v3_3_to_v4_x
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 
+		uuid = "9d2b1dfa-5f76-503f-9198-6ed0d039e0cb"
 	strings:
     $scriptletstart = "<scriptlet>" nocase
     $registration = "<registration progid=" nocase
@@ -3999,6 +4073,7 @@ rule CobaltStrike_Resources__Template_Vbs_v3_3_to_v4_x
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "62f35d02-1e4e-5651-b575-888ce06b8bdd"
 	strings:
 	  $ea = "Excel.Application" nocase
     $vis = "Visible = False" nocase
@@ -4039,6 +4114,7 @@ rule CobaltStrike_Resources_Template__x32_x64_Ps1_v1_45_to_v2_5_and_v3_11_to_v3_
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "c9fa6a39-0098-5dde-9762-94bc6b2df299"
 	strings:
 	
 		$importVA = "[DllImport(\"kernel32.dll\")] public static extern IntPtr VirtualAlloc" nocase
@@ -4081,6 +4157,7 @@ rule CobaltStrike_Resources_Template_x64_Ps1_v3_0_to_v4_x_excluding_3_12_3_13
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "5a808113-aacb-56ca-b3ec-166c73c54b85"
 	strings:
     $dda = "[AppDomain]::CurrentDomain.DefineDynamicAssembly" nocase
     $imm = "InMemoryModule" nocase
@@ -4117,6 +4194,7 @@ rule CobaltStrike_Resources_Template_x86_Vba_v3_8_to_v4_x
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 
+		uuid = "11c7758e-93b2-5fe3-873d-b98de579d2b4"
 	strings:
     $createstuff = "Function CreateStuff Lib \"kernel32\" Alias \"CreateRemoteThread\"" nocase
     $allocstuff = "Function AllocStuff Lib \"kernel32\" Alias \"VirtualAllocEx\"" nocase
@@ -4153,6 +4231,7 @@ rule CobaltStrike_Resources_Xor_Bin_v2_x_to_v4_x
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "1754746c-3a42-5f7d-808a-ba2e1c0a270e"
 	strings:
 	  /* The method for making this signatures consists of extracting each stub from the various resources/xor.bin files
 	     in the cobaltstrike.jar files. For each stub found, sort them by byte count (size). Then for all entries in the 
@@ -4191,6 +4270,7 @@ rule CobaltStrike_Resources_Xor_Bin__64bit_v3_12_to_v4_x
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
 		
+		uuid = "5bb465ee-3bbd-5bfe-8b63-1f243de217bc"
 	strings:
 	  /* The method for making this signatures consists of extracting each stub from the various resources/xor64.bin files
 	     in the cobaltstrike.jar files. For each stub found, sort them by byte count (size). Then for all entries in the 
@@ -4229,6 +4309,7 @@ rule CobaltStrike_Sleeve_BeaconLoader_HA_x86_o_v4_3_v4_4_v4_5_and_v4_6
     reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
     date = "2022-11-18"
    
+    uuid = "0ee3fa6f-367c-596f-a3bc-3bcfa61b97aa"
   strings:
     /*
       C6 45 F0 48 mov     [ebp+var_10], 48h ; 'H'
@@ -4273,6 +4354,7 @@ rule CobaltStrike_Sleeve_BeaconLoader_MVF_x86_o_v4_3_v4_4_v4_5_and_v4_6
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
     
+    uuid = "3f7c0553-989e-53e7-87a9-3fa1c47f4b62"
   strings:
     /*
       C6 45 EC 4D mov     [ebp+var_14], 4Dh ; 'M'
@@ -4326,6 +4408,7 @@ rule CobaltStrike_Sleeve_BeaconLoader_VA_x86_o_v4_3_v4_4_v4_5_and_v4_6
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
     
+    uuid = "5f89c4be-f4c5-54d3-b923-d125de53902f"
   strings:
     /*
       C6 45 B0 56 mov     [ebp+var_50], 56h ; 'V'
@@ -4408,6 +4491,7 @@ rule CobaltStrike_Sleeve_BeaconLoader_x86_o_v4_3_v4_4_v4_5_and_v4_6
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
     
+    uuid = "32a47966-f3bb-52c3-a977-82a1b09ddf2c"
   strings:
     /*
       C6 45 B0 56 mov     [ebp+var_50], 56h ; 'V'
@@ -4493,6 +4577,7 @@ rule CobaltStrike_Sleeve_BeaconLoader_HA_x64_o_v4_3_v4_4_v4_5_and_v4_6
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
     
+    uuid = "9b16ff13-2d8e-51dc-9f99-6c45eff76feb"
   strings:
     /*
       C6 44 24 38 48 mov     [rsp+78h+var_40], 48h ; 'H'
@@ -4538,6 +4623,7 @@ rule CobaltStrike_Sleeve_BeaconLoader_MVF_x64_o_v4_3_v4_4_v4_5_and_v4_6
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
     
+    uuid = "38e063db-3d76-5a94-812a-945fcf46a232"
   strings:
     /*
       C6 44 24 58 4D mov     [rsp+98h+var_40], 4Dh ; 'M'
@@ -4588,6 +4674,7 @@ rule CobaltStrike_Sleeve_BeaconLoader_VA_x64_o_v4_3_v4_4_v4_5_and_v4_6
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
     
+    uuid = "8ca04f82-a8a8-5162-8b0c-8a7bce678a85"
   strings:
     /*
       C6 44 24 48 56 mov     [rsp+88h+var_40], 56h ; 'V'
@@ -4670,6 +4757,7 @@ rule CobaltStrike_Sleeve_BeaconLoader_x64_o_v4_3_v4_4_v4_5_and_v4_6
 		reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
 		date = "2022-11-18"
     
+    uuid = "07f751e4-f001-5b95-b229-31fbaa867cea"
   strings:
     /*
       33 C0                      xor     eax, eax

@@ -8,6 +8,7 @@ rule MAL_DNSPIONAGE_Malware_Nov18 {
       modified = "2023-01-06"
       hash1 = "2010f38ef300be4349e7bc287e720b1ecec678cacbf0ea0556bcf765f6e073ec"
       hash2 = "45a9edb24d4174592c69d9d37a534a518fbe2a88d3817fc0cc739e455883b8ff"
+      uuid = "5a0b498b-b2e9-5827-9908-63586b2cf947"
    strings:
       $x1 = ".0ffice36o.com" ascii
 
@@ -29,6 +30,7 @@ rule APT_DNSpionage_Karkoff_Malware_Apr19_1 {
       hash2 = "b017b9fc2484ce0a5629ff1fed15bca9f62f942eafbb74da6a40f40337187b04"
       hash3 = "5b102bf4d997688268bab45336cead7cdf188eb0d6355764e53b4f62e1cdf30c"
       hash4 = "cd4b9d0f2d1c0468750855f0ed352c1ed6d4f512d66e0e44ce308688235295b5"
+      uuid = "be955760-ae94-5f77-928d-f4118a97ae6a"
    strings:
       $x1 = "Karkoff.exe" fullword wide
       $x2 = "kuternull.com" fullword wide

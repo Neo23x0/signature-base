@@ -16,6 +16,7 @@ rule WinAgent_BadPatch_1 {
       reference = "https://goo.gl/RvDwwA"
       date = "2017-10-20"
       hash1 = "285998bce9692e46652529685775aa05e3a5cb93ee4e65d021d2231256e92813"
+      uuid = "732792ed-cb70-5b69-8457-f54177e4609e"
    strings:
       $x1 = "J:\\newPatch\\downloader\\" wide
       $x2 = "L:\\rashed\\New code\\" wide
@@ -53,6 +54,7 @@ rule WinAgent_BadPatch_2 {
       hash7 = "46f3afae22e83344e4311482a9987ed851b2de282e8127f64d5901ac945713c0"
       hash8 = "27752bbb01abc6abf50e1da3a59fefcce59618016619d68690e71ad9d4a3c247"
       hash9 = "050610cfb3d3100841685826273546c829335a5f4e2e4260461b88367ad9502c"
+      uuid = "648528f0-351c-527e-b516-2c8cae9fb4a3"
    strings:
       $s1 = "myAction=shell_result&serialNumber=" fullword wide
       $s2 = "\\Appdata\\Local\\Google\\Chrome\\User Data\\Default\\Login Data.*" wide

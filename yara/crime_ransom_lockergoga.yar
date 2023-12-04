@@ -8,6 +8,7 @@ rule Ransom_LockerGoga_Mar19_1 {
       hash1 = "c97d9bbc80b573bdeeda3812f4d00e5183493dd0d5805e2508728f65977dda15"
       hash2 = "7bcd69b3085126f7e97406889f78ab74e87230c11812b79406d723a80c08dd26"
       hash3 = "bdf36127817413f625d2625d3133760af724d6ad2410bea7297ddc116abc268f"
+      uuid = "ba5836b9-bc47-54d4-8f7a-475ba0feaac6"
    strings:
       $x1 = "\\.(doc|dot|wbk|docx|dotx|docb|xlm|xlsx|xltx|xlsb|xlw|ppt|pot|pps|pptx|potx|ppsx|sldx|pdf)" wide
       $x2 = "|[A-Za-z]:\\cl.log" wide

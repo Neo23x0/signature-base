@@ -6,6 +6,7 @@ rule SUSP_Base64_Encoded_Hex_Encoded_Code {
       date = "2019-04-29"
       score = 65
       reference = "https://www.nextron-systems.com/2019/04/29/spotlight-threat-hunting-yara-rule-example/"
+      uuid = "2cfd278f-ff45-5e23-b552-dad688ab303b"
    strings:
       $x1 = { 78 34 4e ?? ?? 63 65 44 ?? ?? 58 48 67 }
       $x2 = { 63 45 44 ?? ?? 58 48 67 ?? ?? ?? 78 34 4e }
@@ -22,6 +23,7 @@ rule SUSP_Double_Base64_Encoded_Executable {
       reference = "https://twitter.com/TweeterCyber/status/1189073238803877889"
       date = "2019-10-29"
       hash1 = "1a172d92638e6fdb2858dcca7a78d4b03c424b7f14be75c2fd479f59049bc5f9"
+      uuid = "6fb40ed3-1afc-5d5b-9373-4a8490177b20"
    strings:
       $ = "VFZwVEFRR" ascii wide
       $ = "RWcFRBUU" ascii wide
@@ -50,6 +52,7 @@ rule SUSP_Reversed_Base64_Encoded_EXE : FILE {
       reference = "Internal Research"
       score = 80
       hash1 = "7e6d9a5d3b26fd1af7d58be68f524c4c55285b78304a65ec43073b139c9407a8"
+      uuid = "3b52e59e-7c0a-560f-8123-1099c52e7e3d"
    strings:
       $s1 = "AEAAAAEQATpVT"
       $s2 = "AAAAAAAAAAoVT"
@@ -71,6 +74,7 @@ rule SUSP_Script_Base64_Blocks_Jun20_1 {
       reference = "https://posts.specterops.io/covenant-v0-5-eee0507b85ba"
       date = "2020-06-05"
       score = 70
+      uuid = "cef759a5-b02a-53e7-bf27-184eee6bc3fa"
    strings:
       $sa1 = "<script language=" ascii
       $sb2 = { 41 41 41 22 2B 0D 0A 22 41 41 41 }
@@ -85,6 +89,7 @@ rule SUSP_Reversed_Hacktool_Author : FILE {
       reference = "https://hackingiscool.pl/cmdhijack-command-argument-confusion-with-path-traversal-in-cmd-exe/"
       date = "2020-06-10"
       score = 65
+      uuid = "33e20d75-af07-5df2-82c3-c48aec37a947"
    strings:
       $x1 = "iwiklitneg" fullword ascii wide
       $x2 = " eetbus@ " ascii wide
@@ -100,6 +105,7 @@ rule SUSP_Base64_Encoded_Hacktool_Dev {
       reference = "https://twitter.com/cyb3rops/status/1270626274826911744"
       date = "2020-06-10"
       score = 65
+      uuid = "6dc7db4b-a614-51e4-a9a5-f869154dbbb1"
    strings:
       $ = "QGdlbnRpbGtpd2" ascii wide 
       $ = "BnZW50aWxraXdp" ascii wide 

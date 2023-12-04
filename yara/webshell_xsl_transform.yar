@@ -4,6 +4,7 @@ rule WEBSHELL_ASPX_XslTransform_Aug21 {
       reference = "https://gist.github.com/JohnHammond/cdae03ca5bc2a14a735ad0334dcb93d6"
       date = "2020-02-23"
       description = "Detects an ASPX webshell utilizing XSL Transformations"
+      uuid = "44254084-a717-59e6-a3ac-eca3c1c864a8"
    strings:
       $csharpshell = "Language=\"C#\"" nocase
 

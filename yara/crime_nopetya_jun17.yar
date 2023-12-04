@@ -19,6 +19,7 @@ rule NotPetya_Ransomware_Jun17 {
       hash1 = "027cc450ef5f8c5f653329641ec1fed91f694e0d229928963b30f6b0d7d3a745"
       hash2 = "45ef8d53a5a2011e615f60b058768c44c74e5190fefd790ca95cf035d9e1d5e0"
       hash3 = "64b0b58a2c030c77fdb2b537b2fcc4af432bc55ffb36599a31d418c7c69e94b1"
+      uuid = "8805f971-0680-534d-9955-65dc4ecc934a"
    strings:
       $x1 = "Ooops, your important files are encrypted." fullword wide ascii
       $x2 = "process call create \"C:\\Windows\\System32\\rundll32.exe \\\"C:\\Windows\\%s\\\" #1 " fullword wide

@@ -42,6 +42,7 @@ rule OilRig_Malware_Campaign_Gen1 {
       hash24 = "3986d54b00647b507b2afd708b7a1ce4c37027fb77d67c6bc3c20c3ac1a88ca4"
       hash25 = "f5a64de9087b138608ccf036b067d91a47302259269fb05b3349964ca4060e7e"
 
+      uuid = "d291edf1-b086-5c61-b131-61c9f6e1267b"
    strings:
       $x1 = "Get-Content $env:Public\\Libraries\\update.vbs) -replace" ascii
       $x2 = "wss.Run \"powershell.exe \" & Chr(34) & \"& {waitfor haha /T 2}\" & Chr(34), 0" fullword ascii
@@ -73,6 +74,7 @@ rule OilRig_Malware_Campaign_Mal1 {
       reference = "https://goo.gl/QMRZ8K"
       date = "2016-10-12"
       hash1 = "e17e1978563dc10b73fd54e7727cbbe95cc0b170a4e7bd0ab223e059f6c25fcc"
+      uuid = "c577f0ff-1a33-5d7f-93b2-27df8d414bce"
    strings:
       $x1 = "DownloadExecute=\"powershell \"\"&{$r=Get-Random;$wc=(new-object System.Net.WebClient);$wc.DownloadFile(" ascii
       $x2 = "-ExecutionPolicy Bypass -File \"&HOME&\"dns.ps1\"" fullword ascii
@@ -92,6 +94,7 @@ rule OilRig_Malware_Campaign_Gen2 {
       modified = "2023-01-07"
       hash1 = "c6437f57a8f290b5ec46b0933bfa8a328b0cb2c0c7fbeea7f21b770ce0250d3d"
       hash2 = "293522e83aeebf185e653ac279bba202024cedb07abc94683930b74df51ce5cb"
+      uuid = "2ca0aadf-c5a8-5c89-ab1e-0c06d2ab8516"
    strings:
       $s1 = "%userprofile%\\AppData\\Local\\Microsoft\\" ascii
       $s2 = "$fdn=[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('" fullword ascii
@@ -116,6 +119,7 @@ rule OilRig_Malware_Campaign_Gen3 {
       hash1 = "5e9ddb25bde3719c392d08c13a295db418d7accd25d82d020b425052e7ba6dc9"
       hash2 = "bd0920c8836541f58e0778b4b64527e5a5f2084405f73ee33110f7bc189da7a9"
       hash3 = "90639c7423a329e304087428a01662cc06e2e9153299e37b1b1c90f6d0a195ed"
+      uuid = "1cd5f7ea-4ae6-5642-b8b3-050cfe724e69"
    strings:
       $x1 = "source code from https://www.fireeye.com/blog/threat-research/2016/05/targeted_attacksaga.htmlrrrr" fullword ascii
       $x2 = "\\Libraries\\fireueye.vbs" ascii
@@ -132,6 +136,7 @@ rule OilRig_Malware_Campaign_Mal2 {
       reference = "https://goo.gl/QMRZ8K"
       date = "2016-10-12"
       hash1 = "65920eaea00764a245acb58a3565941477b78a7bcc9efaec5bf811573084b6cf"
+      uuid = "7a6c38e7-bed9-524b-b4a5-c6c895b9c049"
    strings:
       $x1 = "wss.Run \"powershell.exe \" & Chr(34) & \"& {(Get-Content $env:Public\\Libraries\\update.vbs) -replace '__',(Get-Random) | Set-C" ascii
       $x2 = "Call Extract(UpdateVbs, wss.ExpandEnvironmentStrings(\"%PUBLIC%\") & \"\\Libraries\\update.vbs\")" fullword ascii
@@ -151,6 +156,7 @@ rule OilRig_Campaign_Reconnaissance {
       reference = "https://goo.gl/QMRZ8K"
       date = "2016-10-12"
       hash1 = "5893eae26df8e15c1e0fa763bf88a1ae79484cdb488ba2fc382700ff2cfab80c"
+      uuid = "a4fe24b8-290a-5a4a-9f81-bbbd9aae6c6e"
    strings:
       $s1 = "whoami & hostname & ipconfig /all" ascii
       $s2 = "net user /domain 2>&1 & net group /domain 2>&1" ascii
@@ -167,6 +173,7 @@ rule OilRig_Malware_Campaign_Mal3 {
       reference = "https://goo.gl/QMRZ8K"
       date = "2016-10-12"
       hash1 = "02226181f27dbf59af5377e39cf583db15200100eea712fcb6f55c0a2245a378"
+      uuid = "e5967b39-5d21-5a6a-a1b5-2ec122f16444"
    strings:
       $x1 = "(Get-Content $env:Public\\Libraries\\dns.ps1) -replace ('#'+'##'),$botid | Set-Content $env:Public\\Libraries\\dns.ps1" fullword ascii
       $x2 = "Invoke-Expression ($global:myhome+'tp\\'+$global:filename+'.bat > '+$global:myhome+'tp\\'+$global:filename+'.txt')" fullword ascii
@@ -183,6 +190,7 @@ rule OilRig_Malware_Nov17_13 {
       reference = "https://twitter.com/ClearskySec/status/933280188733018113"
       date = "2017-11-22"
       hash1 = "4f1e2df85c538875a7da877719555e21c33a558ac121eb715cf4e779d77ab445"
+      uuid = "c45b8d30-6a5f-5dac-a202-6748ba7b7bd2"
    strings:
       $x1 = "\\Release\\dnscat2.pdb" ascii
       $x2 = "cscript.exe //T:20 //Nologo " fullword ascii
@@ -203,6 +211,7 @@ rule Oilrig_IntelSecurityManager_macro {
       author = "Eyal Sela (slightly modified by Florian Roth)"
       reference = "Internal Research"
       date = "2018-01-19"
+      uuid = "4cccc0df-a225-5500-be55-f4ae346e066e"
    strings:
       $one1 = "$c$m$$d$.$$" ascii wide
       $one2 = "$C$$e$r$$t$u$$t$i$$l$" ascii wide
@@ -229,6 +238,7 @@ rule Oilrig_IntelSecurityManager {
       author = "Eyal Sela"
       reference = "Internal Research"
       date = "2018-01-19"
+      uuid = "4cccc0df-a225-5500-be55-f4ae346e066e"
    strings:
       $one1 = "srvResesponded" ascii wide fullword
       $one2 = "InetlSecurityAssistManager" ascii wide fullword
@@ -261,6 +271,7 @@ rule APT_APT34_PS_Malware_Apr19_1 {
       reference = "https://twitter.com/0xffff0800/status/1118406371165126656"
       date = "2019-04-17"
       hash1 = "b1d621091740e62c84fc8c62bcdad07873c8b61b83faba36097ef150fd6ec768"
+      uuid = "6a082c5a-ee5b-5002-9148-61bbcfedfe68"
    strings:
       $x1 = "= get-wmiobject Win32_ComputerSystemProduct  | Select-Object -ExpandProperty UUID" ascii
       $x2 = "Write-Host \"excepton occured!\"" ascii /* :) */
@@ -278,6 +289,7 @@ rule APT_APT34_PS_Malware_Apr19_2 {
       reference = "https://twitter.com/0xffff0800/status/1118406371165126656"
       date = "2019-04-17"
       hash1 = "2943e69e6c34232dee3236ced38d41d378784a317eeaf6b90482014210fcd459"
+      uuid = "c3bdadfd-2164-5e33-be84-d5d5de8eb048"
    strings:
       $x1 = "= \"http://\" + [System.Net.Dns]::GetHostAddresses(\"" ascii
       $x2 = "$t = get-wmiobject Win32_ComputerSystemProduct  | Select-Object -ExpandProperty UUID" fullword ascii
@@ -299,6 +311,7 @@ rule APT_APT34_PS_Malware_Apr19_3 {
       date = "2019-04-17"
       modified = "2023-01-06"
       hash1 = "27e03b98ae0f6f2650f378e9292384f1350f95ee4f3ac009e0113a8d9e2e14ed"
+      uuid = "361582e7-94e3-5608-9ba9-31fa20c37cf0"
    strings:
       $x1 = "Powershell.exe -exec bypass -file ${global:$address1}"
       $x2 = "schtasks /create /F /ru SYSTEM /sc minute /mo 10 /tn"

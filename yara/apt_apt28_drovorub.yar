@@ -27,6 +27,7 @@ rule APT_APT28_drovorub_library_and_unique_strings {
         reference = "https://www.nsa.gov/news-features/press-room/Article/2311407/nsa-and-fbi-expose-russian-previously-undisclosed-malware-drovorub-in-cybersecu/"
         date = "2020-08-13"
         score = 75
+        uuid = "8e010356-09c7-5897-9cbe-051cd0800502"
     strings:
         $s1 = "Poco" ascii wide
         $s2 = "Json" ascii wide
@@ -47,6 +48,7 @@ rule APT_APT28_drovorub_unique_network_comms_strings {
         reference = "https://www.nsa.gov/news-features/press-room/Article/2311407/nsa-and-fbi-expose-russian-previously-undisclosed-malware-drovorub-in-cybersecu/"
         date = "2020-08-13"
         score = 75
+        uuid = "c6a930e8-c1c0-5d96-9051-7516df848b45"
     strings:
         $s_01 = "action" wide ascii
         $s_02 = "auth.commit" wide ascii

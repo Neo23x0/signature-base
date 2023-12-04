@@ -6,6 +6,7 @@ rule MAL_RANSOM_DarkBit_Feb23_1 {
       reference = "https://twitter.com/idonaor1/status/1624703255770005506?s=12&t=mxHaauzwR6YOj5Px8cIeIw"
       date = "2023-02-13"
       score = 75
+      uuid = "d209a0c2-f649-5fb1-9ecd-f1c35caa796f"
    strings:
       $s1 = ".onion" ascii
       $s2 = "GetMOTWHostUrl"
@@ -29,6 +30,7 @@ rule MAL_RANSOM_DarkBit_Feb23_2 {
       date = "2023-02-13"
       score = 75
       hash1 = "9107be160f7b639d68fe3670de58ed254d81de6aec9a41ad58d91aa814a247ff"
+      uuid = "f530815c-68e7-55f1-8e36-bc74a1059584"
    strings:
       $s1 = "runtime.initLongPathSupport" ascii fullword
       $s2 = "reflect." ascii

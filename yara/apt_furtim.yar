@@ -13,6 +13,7 @@ rule Furtim_nativeDLL {
 		reference = "MISP 3971"
 		date = "2016-06-13"
 		hash1 = "4f39d3e70ed1278d5fa83ed9f148ca92383ec662ac34635f7e56cc42eeaee948"
+		uuid = "4639b637-55d3-5591-9278-5a21de23ac72"
 	strings:
 		$s1 = "FqkVpTvBwTrhPFjfFF6ZQRK44hHl26" fullword ascii
 
@@ -38,6 +39,7 @@ rule Furtim_Parent_1 {
 		reference = "https://sentinelone.com/blogs/sfg-furtims-parent/"
 		date = "2016-07-16"
 		hash1 = "766e49811c0bb7cce217e72e73a6aa866c15de0ba11d7dda3bd7e9ec33ed6963"
+		uuid = "a47719d2-1e4f-50a9-b340-55e13f5a24d5"
 	strings:
 		/* RC4 encryption password */
 		$x1 = "dqrChZonUF" fullword ascii

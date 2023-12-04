@@ -25,6 +25,7 @@ rule FakeM_Generic {
 		hash9 = "41948c73b776b673f954f497e09cc469d55f27e7b6e19acb41b77f7e64c50a33"
 		hash10 = "53cecc0d0f6924eacd23c49d0d95a6381834360fbbe2356778feb8dd396d723e"
 		hash11 = "523ad50b498bfb5ab688d9b1958c8058f905b634befc65e96f9f947e40893e5b"
+		uuid = "51a285ce-a4cb-5068-b079-a8227690365f"
 	strings:
 		$a1 = "\\system32\\kernel32.dll" ascii
 		$a2 = "\\boot.lnk" ascii

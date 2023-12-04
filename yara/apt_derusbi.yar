@@ -12,6 +12,7 @@ rule derusbi_kernel
         description = "Derusbi Driver version"
         date = "2015-12-09"
         author = "Airbus Defence and Space Cybersecurity CSIRT - Fabien Perigaud"
+        uuid = "a60ab93a-e2be-53ee-a7da-56c763bc5533"
     strings:
         $token1 = "$$$--Hello"
         $token2 = "Wrod--$$$"
@@ -26,6 +27,7 @@ rule derusbi_linux
         description = "Derusbi Server Linux version"
         date = "2015-12-09"
         author = "Airbus Defence and Space Cybersecurity CSIRT - Fabien Perigaud"
+        uuid = "2b33afb5-be87-5d41-b05e-b99d0c1d8ed9"
     strings:
         $PS1 = "PS1=RK# \\u@\\h:\\w \\$"
         $cmd = "unset LS_OPTIONS;uname -a"
@@ -55,6 +57,7 @@ rule Derusbi_Kernel_Driver_WD_UDFS {
 		hash2 = "50174311e524b97ea5cb4f3ea571dd477d1f0eee06cd3ed73af39a15f3e6484a"
 		hash3 = "6cdb65dbfb2c236b6d149fd9836cb484d0608ea082cf5bd88edde31ad11a0d58"
 		hash4 = "e27fb16dce7fff714f4b05f2cef53e1919a34d7ec0e595f2eaa155861a213e59"
+		uuid = "51d80d19-f87f-5b09-ac49-08ebcb464013"
 	strings:
       $x1 = "\\\\.\\pipe\\usbpcex%d" fullword wide
       $x2 = "\\\\.\\pipe\\usbpcg%d" fullword wide
@@ -83,6 +86,7 @@ rule Derusbi_Code_Signing_Cert {
 		reference = "http://blog.airbuscybersecurity.com/post/2015/11/Newcomers-in-the-Derusbi-family"
 		date = "2015-12-15"
 		score = 60
+		uuid = "d123fde9-0182-5232-a716-b76e8d9830c4"
    strings:
       $s1 = "Fuqing Dawu Technology Co.,Ltd.0" fullword ascii
       $s2 = "XL Games Co.,Ltd.0" fullword ascii
@@ -99,6 +103,7 @@ rule XOR_4byte_Key {
 		reference = "http://blog.airbuscybersecurity.com/post/2015/11/Newcomers-in-the-Derusbi-family"
 		date = "2015-12-15"
 		score = 60
+		uuid = "77850332-87ce-5ed3-bb09-88e91e5bb5f6"
    strings:
       /* Op Code */
       $s1 = { 85 C9 74 0A 31 06 01 1E 83 C6 04 49 EB F2 }
@@ -123,6 +128,7 @@ rule Derusbi_Backdoor_Mar17_1 {
       reference = "Internal Research"
       date = "2017-03-03"
       hash1 = "f87915f21dcc527981ebb6db3d332b5b341129b4af83524f59d7178e9d2a3a32"
+      uuid = "5c8838d6-b9c2-589e-b6a2-a8c7ad6f10cc"
    strings:
       $x1 = "%SystemRoot%\\System32\\wiaservc.dll" fullword wide
       $x2 = "c%WINDIR%\\PCHealth\\HelpCtr\\Binaries\\pchsvc.dll" fullword wide

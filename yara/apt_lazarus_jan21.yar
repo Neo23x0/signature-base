@@ -7,6 +7,7 @@ rule SUSP_VEST_Encryption_Core_Accumulator_Jan21 {
       date = "2021-01-28"
       score = 70
       hash1 = "7cd3ca8bdfb44e98a4b9d0c6ad77546e03d169bda9bdf3d1bcf339f68137af23"
+      uuid = "8343652b-8865-5213-b735-d6d4084e4a84"
    strings:
       $sc1 = { 4F 70 46 DA E1 8D F6 41 59 E8 5D 26 1E CC 2F 89
                26 6D 52 BA BC 11 6B A9 C6 47 E4 9C 1E B6 65 A2

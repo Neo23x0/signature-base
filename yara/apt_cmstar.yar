@@ -18,6 +18,7 @@ rule CMStar_Malware_Sep17 {
       reference = "https://goo.gl/pTffPA"
       date = "2017-10-03"
       hash1 = "16697c95db5add6c1c23b2591b9d8eec5ed96074d057b9411f0b57a54af298d5"
+      uuid = "d6c9cd7f-06ce-5641-b9b2-c81daf18628d"
    strings:
       $s1 = "UpdateService.tmp" fullword ascii
       $s2 = "StateNum:%d,FileSize:%d" fullword ascii

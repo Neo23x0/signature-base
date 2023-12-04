@@ -6,6 +6,7 @@ rule PoisonIvy_Generic_3 {
 		author = "Florian Roth (Nextron Systems)"
 		date = "2015-05-14"
 		hash = "e1cbdf740785f97c93a0a7a01ef2614be792afcd"
+		uuid = "0f6a47ee-b741-59cc-b2d6-6bf3989ce8e7"
 	strings:
 		$k1 = "Tiger324{" fullword ascii
 		

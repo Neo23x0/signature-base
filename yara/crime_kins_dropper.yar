@@ -3,6 +3,7 @@ rule KINS_dropper {
 		author = "AlienVault Labs aortega@alienvault.com"
 		description = "Match protocol, process injects and windows exploit present in KINS dropper"
 		reference = "http://goo.gl/arPhm3"
+		uuid = "17e12685-aaad-5d83-949c-43d5aef1ef0d"
 	strings:
 		// Network protocol
 		$n1 = "tid=%d&ta=%s-%x" fullword
@@ -29,6 +30,7 @@ rule KINS_DLL_zeus {
 		author = "AlienVault Labs aortega@alienvault.com"
 		description = "Match default bot in KINS leaked dropper, Zeus"
 		reference = "http://goo.gl/arPhm3"
+		uuid = "968ada06-c8a1-5053-95de-10aa484231cb"
 	strings:
 		// Network protocol
 		$n1 = "%BOTID%" fullword

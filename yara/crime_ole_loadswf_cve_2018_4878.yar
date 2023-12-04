@@ -12,6 +12,7 @@ rule crime_ole_loadswf_cve_2018_4878 {
       reference = "hxxps://www[.]krcert[.]or[.kr/data/secNoticeView.do?bulletin_writing_sequence=26998"
       author = "Vitali Kremez, Flashpoint"
       version = "1.1"
+      uuid = "44797bbc-693b-5fcb-a4a4-4ebf3f4da725"
    strings:
       // EMBEDDED FLASH OBJECT BIN HEADER
       $header = "rdf:RDF" wide ascii

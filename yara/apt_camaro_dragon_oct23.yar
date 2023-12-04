@@ -7,6 +7,7 @@ rule MAL_LNX_CamaroDragon_Sheel_Oct23 {
       date = "2023-10-06"
       score = 85
       hash1 = "7985f992dcc6fcce76ee2892700c8538af075bd991625156bf2482dbfebd5a5a"
+      uuid = "f6f08c0e-236c-5194-9369-da8fdef4aa21"
    strings:
       $x1 = "-h server_ip -p server_port -i update_index[0-4] [-r]" ascii fullword
 
@@ -31,6 +32,7 @@ rule MAL_LNX_CamaroDragon_HorseShell_Oct23 {
       date = "2023-10-06"
       score = 85
       hash1 = "998788472cb1502c03675a15a9f09b12f3877a5aeb687f891458a414b8e0d66c"
+      uuid = "9e54745f-146f-50a6-b30f-53aaaa6907b5"
    strings:
       $x1 = "echo \"start shell '%s' failed!\" > .remote_shell.log" ascii fullword
       $x2 = "*****recv NET_REQ_HORSE_SHELL REQ_CONNECT_PORT*****" ascii fullword

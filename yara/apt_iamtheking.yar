@@ -11,6 +11,7 @@ rule APT_MAL_SLOTHFULMEDIA_Oct20_1 {
       hash4 = "ed5258306c06d6fac9b13c99c7c8accc7f7fa0de4cf4de4f7d9eccad916555f5"
       hash5 = "04ca010f4c8997a023fabacae230698290e3ff918a86703c5e0a2a6983b039eb"
       hash6 = "cb2adcaaa25bb6b8a9f1c685c219f8d6d78aa5cfd65c633f4d255ff81da2c517"
+      uuid = "cc413225-f084-5859-bc27-04eb018d8894"
    strings:
       $xc1 = { 25 73 26 69 3D 25 64 00 48 54 54 50 2F 31 2E 31
                00 00 00 00 50 4F 53 54 00 00 00 00 43 6F 6E 74

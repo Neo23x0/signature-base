@@ -9,6 +9,7 @@ rule APT_CN_MAL_RedDelta_Shellcode_Loader_Oct20_1 {
       hash2 = "42ed73b1d5cc49e09136ec05befabe0860002c97eb94e9bad145e4ea5b8be2e2"
       hash3 = "480a8c883006232361c5812af85de9799b1182f1b52145ccfced4fa21b6daafa"
       hash4 = "7ea7c6406c5a80d3c15511c4d97ec1e45813e9c58431f386710d0486c4898b98"
+      uuid = "47417488-e843-5346-9baa-fcce30b884d1"
    strings:
       $x1 = "InjectShellCode" ascii fullword
 
@@ -36,6 +37,7 @@ rule APT_CN_MAL_RedDelta_Shellcode_Loader_Oct20_2 {
       hash1 = "260ebbf392498d00d767a5c5ba695e1a124057c1c01fff2ae76db7853fe4255b"
       hash2 = "9ccb4ed133be5c9c554027347ad8b722f0b4c3f14bfd947edfe75a015bf085e5"
       hash3 = "b3fd750484fca838813e814db7d6491fea36abe889787fb7cf3fb29d9d9f5429"
+      uuid = "acb1024a-64af-51ac-84c8-7fe9a5bd4538"
    strings:
       $x1 = "\\CLRLoader.exe" wide fullword
       $x2 = "/callback.php?token=%s&computername=%s&username=%s" ascii fullword
@@ -62,6 +64,7 @@ rule APT_CN_MAL_RedDelta_Shellcode_Loader_Oct20_3 {
       date = "2020-10-14"
       modified = "2022-12-21"
       hash1 = "740992d40b84b10aa9640214a4a490e989ea7b869cea27dbbdef544bb33b1048"
+      uuid = "b52836bb-cdef-5416-a8e1-72d0b2298546"
    strings:
       $s1 = "Taskschd.dll" ascii fullword
       $s2 = "AddTaskPlanDllVerson.dll" ascii fullword

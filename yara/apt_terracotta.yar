@@ -17,6 +17,7 @@ rule Apolmy_Privesc_Trojan {
 		date = "2015-08-04"
 		score = 80
 		hash = "d7bd289e6cee228eb46a1be1fcdc3a2bd5251bc1eafb59f8111756777d8f373d"
+		uuid = "2f3f496b-ebfe-5a6e-89ad-a24af6378fd7"
 	strings:
 		$s1 = "[%d] Failed, %08X" fullword ascii
 		$s2 = "[%d] Offset can not fetched." fullword ascii
@@ -34,6 +35,7 @@ rule Mithozhan_Trojan {
 		date = "2015-08-04"
 		score = 70
 		hash = "8553b945e2d4b9f45c438797d6b5e73cfe2899af1f9fd87593af4fd7fb51794a"
+		uuid = "5e2b4e08-1a35-5eb0-8c25-a73d45b0e279"
 	strings:
 		$s1 = "adbrowser" fullword wide 
 		$s2 = "IJKLlGdmaWhram0vn36BgIOChYR3L45xcHNydXQvhmloa2ptbH8voYCDTw==" fullword ascii
@@ -50,6 +52,7 @@ rule RemoteExec_Tool {
 		reference = "https://blogs.rsa.com/terracotta-vpn-enabler-of-advanced-threat-anonymity/"
 		date = "2015-08-04"
 		hash = "a550131e106ff3c703666f15d55d9bc8c816d1cb9ac1b73c2e29f8aa01e53b78"
+		uuid = "c3262147-3455-554c-88fc-b523352efe7f"
 	strings:
 		$s0 = "cmd.exe /q /c \"%s\"" fullword ascii 
 		$s1 = "\\\\.\\pipe\\%s%s%d" fullword ascii 
@@ -75,6 +78,7 @@ rule LiuDoor_Malware_1 {
 		hash1 = "deed6e2a31349253143d4069613905e1dfc3ad4589f6987388de13e33ac187fc"
 		hash2 = "4575e7fc8f156d1d499aab5064a4832953cd43795574b4c7b9165cdc92993ce5"
 		hash3 = "ad1a507709c75fe93708ce9ca1227c5fefa812997ed9104ff9adfec62a3ec2bb"
+		uuid = "ebd5833e-1f5c-5166-aaba-d0be64829e6c"
 	strings:
 		$s1 = "svchostdllserver.dll" fullword ascii 
 		$s2 = "SvcHostDLL: RegisterServiceCtrlHandler %S failed" fullword ascii 
@@ -95,6 +99,7 @@ rule LiuDoor_Malware_2 {
 		super_rule = 1
 		hash1 = "f3fb68b21490ded2ae7327271d3412fbbf9d705c8003a195a705c47c98b43800"
 		hash2 = "e42b8385e1aecd89a94a740a2c7cd5ef157b091fabd52cd6f86e47534ca2863e"
+		uuid = "30b9d727-ec77-5ead-80dd-6d442478e78b"
 	strings:
 		$s0 = "svchostdllserver.dll" fullword ascii 
 		$s1 = "Lpykh~mzCCRv|mplpykCCHvq{phlCC\\jmmzqkIzmlvpqCC" fullword ascii

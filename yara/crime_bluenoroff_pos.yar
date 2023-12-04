@@ -5,6 +5,7 @@ rule BluenoroffPoS_DLL {
       author = "http://blog.trex.re.kr/"
       reference = "http://blog.trex.re.kr/3?category=737685"
       date = "2018-06-07"
+      uuid = "d2b34b50-c7eb-5852-ba5d-734dd5038c2e"
    strings:
       $dll = "ksnetadsl.dll" ascii wide fullword nocase
       $exe = "xplatform.exe" ascii wide fullword nocase

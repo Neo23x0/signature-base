@@ -11,6 +11,7 @@ rule SUSP_EXPL_Msg_CVE_2023_23397_Mar23 {
       hash = "6c0087a5cbccb3c776a471774d1df10fe46b0f0eb11db6a32774eb716e1b7909"
       hash = "7fb7a2394e03cc4a9186237428a87b16f6bf1b66f2724aea1ec6a56904e5bfad"
       hash = "eedae202980c05697a21a5c995d43e1905c4b25f8ca2fff0c34036bc4fd321fa"
+      uuid = "0a4d7bbe-1e17-5240-ad0f-29511752b267"
    strings:
       /* https://interoperability.blob.core.windows.net/files/MS-OXPROPS/%5bMS-OXPROPS%5d.pdf */
       /* PSETID_Appointment */
@@ -49,6 +50,7 @@ rule EXPL_SUSP_Outlook_CVE_2023_23397_Exfil_IP_Mar23 {
       hash = "7fb7a2394e03cc4a9186237428a87b16f6bf1b66f2724aea1ec6a56904e5bfad"
       hash = "eedae202980c05697a21a5c995d43e1905c4b25f8ca2fff0c34036bc4fd321fa"
       hash = "e7a1391dd53f349094c1235760ed0642519fd87baf740839817d47488b9aef02"
+      uuid = "d85bf1d9-aebe-5f8c-9dd4-c509f64e221a"
    strings:
       /* https://interoperability.blob.core.windows.net/files/MS-OXPROPS/%5bMS-OXPROPS%5d.pdf */
       /* PSETID_Appointment */
@@ -84,6 +86,7 @@ rule EXPL_SUSP_Outlook_CVE_2023_23397_SMTP_Mail_Mar23 {
       description = "Detects suspicious *.eml files that include TNEF content that possibly exploits CVE-2023-23397. Lower score than EXPL_SUSP_Outlook_CVE_2023_23397_Exfil_IP_Mar23 as we're only looking for UNC prefix."
       score = 60
       reference = "https://twitter.com/wdormann/status/1636491612686622723"
+      uuid = "922fae73-520d-5659-8331-f242c7c55810"
    strings:
       // From:
       $mail1 = { 0A 46 72 6F 6D 3A 20 }

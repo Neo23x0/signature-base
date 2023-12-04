@@ -18,6 +18,7 @@ rule Sofacy_Oct17_1 {
       reference = "http://blog.talosintelligence.com/2017/10/cyber-conflict-decoy-document.html"
       date = "2017-10-23"
       hash1 = "522fd9b35323af55113455d823571f71332e53dde988c2eb41395cf6b0c15805"
+      uuid = "6896dcf3-e422-5a40-bc1e-d1f35ae95c14"
    strings:
       $x1 = "%localappdata%\\netwf.dll" fullword wide
       $x2 = "set path = \"%localappdata%\\netwf.dll\"" fullword ascii
@@ -53,6 +54,7 @@ rule Sofacy_Oct17_2 {
       reference = "http://blog.talosintelligence.com/2017/10/cyber-conflict-decoy-document.html"
       date = "2017-10-23"
       hash1 = "ef027405492bc0719437eb58c3d2774cc87845f30c40040bbebbcc09a4e3dd18"
+      uuid = "c820eab0-9b64-5718-8681-a4f515ee462b"
    strings:
       $x1 = "netwf.dll" fullword wide
 

@@ -14,6 +14,7 @@ rule MAL_RANSOM_Venus_Nov22_1 {
       hash5 = "db6fcd33dcb3f25890c28e47c440845b17ce2042c34ade6d6508afd461bfa21c"
       hash6 = "ee036f333a0c4a24d9aa09848e635639e481695a9209474900eb71c9e453256b"
       hash7 = "fa7ba459236c7b27a0429f1961b992ab87fc8b3427469fd98bfc272ae6852063"
+      uuid = "0f7e0ca4-c5e2-5557-92de-2e0d73035f12"
    strings:
       $x1 = "<html><head><title>Venus</title><style type = \"text" ascii fullword
       $x2 = "xXBLTZKmAu9pjcfxrIK4gkDp/J9XXATjuysFRXG4rH4=" ascii fullword

@@ -89,6 +89,7 @@ rule hatman_compiled_python : hatman {
         reference = "https://ics-cert.us-cert.gov/MAR-17-352-01-HatMan%E2%80%94Safety-System-Targeted-Malware"
         date = "2017/12/19"
         author = "DHS/NCCIC/ICS-CERT"
+        uuid = "fd156669-72b4-59a5-8f36-aac21d7b3105"
     condition:
         hatman_nullsub and hatman_setstatus and hatman_dividers
 }
@@ -99,6 +100,7 @@ rule hatman_injector : hatman {
         date = "2017/12/19"
         modified = "2023-01-09"
         author = "DHS/NCCIC/ICS-CERT"
+        uuid = "b939b83d-cc4a-5998-89a7-8abf8d0b8592"
     condition:
         ( hatman_memcpy and hatman_origaddr and hatman_loadoff )
 }
@@ -108,6 +110,7 @@ rule hatman_payload : hatman {
         reference = "https://ics-cert.us-cert.gov/MAR-17-352-01-HatMan%E2%80%94Safety-System-Targeted-Malware"
         date = "2017/12/19"
         author = "DHS/NCCIC/ICS-CERT"
+        uuid = "9ef57fca-a536-5937-8510-b410f735a73e"
     condition:
         ( hatman_memcpy and hatman_origcode and hatman_mftmsr ) and not ( hatman_origaddr and hatman_loadoff )
 }

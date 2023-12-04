@@ -12,6 +12,7 @@ rule Sofacy_Malware_StrangeSpaces {
 		author = "Florian Roth (Nextron Systems)"
 		reference = "https://securelist.com/blog/research/72924/sofacy-apt-hits-high-profile-targets-with-updated-toolset/"
 		date = "2015-12-04"
+		uuid = "60f99b88-f256-5289-852c-c0bf27f1cbd4"
 	strings:
 		$s2 = "Delete Temp Folder Service                                  " fullword wide
 		$s3 = " Operating System                        " fullword wide
@@ -29,6 +30,7 @@ rule Sofacy_Malware_AZZY_Backdoor_1 {
 		reference = "https://securelist.com/blog/research/72924/sofacy-apt-hits-high-profile-targets-with-updated-toolset/"
 		date = "2015-12-04"
 		hash = "a9dc96d45702538c2086a749ba2fb467ba8d8b603e513bdef62a024dfeb124cb"
+		uuid = "184dc45e-8014-5dcf-a033-d77586c60fdf"
 	strings:
 		$s0 = "advstorshell.dll" fullword wide
 		$s1 = "advshellstore.dll" fullword ascii
@@ -45,6 +47,7 @@ rule Sofacy_AZZY_Backdoor_Implant_1 {
 		reference = "https://securelist.com/blog/research/72924/sofacy-apt-hits-high-profile-targets-with-updated-toolset/"
 		date = "2015-12-04"
 		hash = "1bab1a3e0e501d3c14652ecf60870e483ed4e90e500987c35489f17a44fef26c"
+		uuid = "ec6bf8ca-ccb9-532e-8b0d-1fba59efa2da"
 	strings:
 		$s1 = "\\tf394kv.dll" wide
 		$s2 = "DWN_DLL_MAIN.dll" fullword ascii
@@ -63,6 +66,7 @@ rule Sofacy_AZZY_Backdoor_HelperDLL {
 		reference = "https://securelist.com/blog/research/72924/sofacy-apt-hits-high-profile-targets-with-updated-toolset/"
 		date = "2015-12-04"
 		hash = "6cd30c85dd8a64ca529c6eab98a757fb326de639a39b597414d5340285ba91c6"
+		uuid = "eae089a0-21dc-5d6e-a4bc-7181dc9b8b35"
 	strings:
 		$s0 = "snd.dll" fullword ascii
 		$s1 = "InternetExchange" fullword ascii
@@ -83,6 +87,7 @@ rule Sofacy_CollectorStealer_Gen1 {
 		super_rule = 1
 		hash1 = "4e4606313c423b681e11110ca5ed3a2b2632ec6c556b7ab9642372ae709555f3"
 		hash2 = "92dcb0d8394d0df1064e68d90cd90a6ae5863e91f194cbaac85ec21c202f581f"
+		uuid = "f9462dd9-f6b6-59f4-a443-12d6f3be444e"
 	strings:
 		$s0 = "NvCpld.dll" fullword ascii
 		$s1 = "NvStop" fullword ascii
@@ -101,6 +106,7 @@ rule Sofacy_CollectorStealer_Gen2 {
 		hash = "e917166adf6e1135444f327d8fff6ec6c6a8606d65dda4e24c2f416d23b69d45"
 		hash = "92dcb0d8394d0df1064e68d90cd90a6ae5863e91f194cbaac85ec21c202f581f"
 		hash = "b1f2d461856bb6f2760785ee1af1a33c71f84986edf7322d3e9bd974ca95f92d"
+		uuid = "03ced94f-de20-56c5-bf17-1ec7d8610684"
 	strings:
 		$s1 = "msdetltemp.dll" fullword ascii
 		$s2 = "msdeltemp.dll" fullword wide
@@ -118,6 +124,7 @@ rule Sofacy_CollectorStealer_Gen3 {
 		date = "2015-12-04"
 		hash = "92dcb0d8394d0df1064e68d90cd90a6ae5863e91f194cbaac85ec21c202f581f"
 		hash = "4e4606313c423b681e11110ca5ed3a2b2632ec6c556b7ab9642372ae709555f3"
+		uuid = "d2ee1a22-6aae-51fc-9043-a7ba99769376"
 	strings:
 		$s1 = "NvCpld.dll" fullword ascii
 		$s4 = "NvStart" fullword ascii

@@ -39,6 +39,7 @@ rule APT_MAL_LNX_Kobalos {
         license = "BSD 2-Clause"
         version = "1"
 
+        uuid = "dfa47e30-c093-57f6-af01-72a2534cc6f4"
     strings:
         $encrypted_strings_sizes = {
             05 00 00 00 09 00 00 00  04 00 00 00 06 00 00 00
@@ -65,6 +66,7 @@ rule APT_MAL_LNX_Kobalos_SSH_Credential_Stealer {
         license = "BSD 2-Clause"
         version = "1"
 
+        uuid = "0f923f92-c5d8-500d-9a2e-634ca7945c5c"
     strings:
         $ = "user: %.128s host: %.128s port %05d user: %.128s password: %.128s"
 

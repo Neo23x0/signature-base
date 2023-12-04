@@ -10,6 +10,7 @@ rule ScanBox_Malware_Generic {
 		hash1 = "8d168092d5601ebbaed24ec3caeef7454c48cf21366cd76560755eb33aff89e9"
 		hash2 = "d4be6c9117db9de21138ae26d1d0c3cfb38fd7a19fa07c828731fa2ac756ef8d"
 		hash3 = "3fe208273288fc4d8db1bf20078d550e321d9bc5b9ab80c93d79d2cb05cbf8c2"
+		uuid = "f7867e65-567f-530f-83d4-b5126021e523"
 	strings:
 		/* Sample 1 */
 		$s0 = "http://142.91.76.134/p.dat" fullword ascii

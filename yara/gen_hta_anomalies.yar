@@ -17,6 +17,7 @@ rule HTA_with_WScript_Shell {
       date = "2017-06-21"
       score = 80
       hash1 = "ca7b653cf41e980c44311b2cd701ed666f8c1dbc"
+      uuid = "2faf74b1-c19c-53f0-ad08-be9caf5640bc"
    strings:
       $s1 = "<hta:application windowstate=\"minimize\"/>"
       $s2 = "<script>var b=new ActiveXObject(\"WScript.Shell\");" ascii
@@ -33,6 +34,7 @@ rule HTA_Embedded {
       date = "2017-06-21"
       score = 50
       hash1 = "ca7b653cf41e980c44311b2cd701ed666f8c1dbc"
+      uuid = "04d4c718-9dd6-5528-8712-61c9f2a16139"
    strings:
       $s1 = "<hta:application windowstate=\"minimize\"/>"
    condition:
