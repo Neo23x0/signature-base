@@ -7,7 +7,6 @@ rule SUSP_ENV_Folder_Root_File_Jan23_1 : SCRIPT {
       reference = "Internal Research"
       date = "2023-01-11"
       score = 70
-      uuid = "6067d822-5c1b-5b86-863c-fdcfa37da665"
    strings:
       $xr1 = /%([Aa]pp[Dd]ata|APPDATA)%\\[A-Za-z0-9_\-]{1,20}\.[a-zA-Z0-9]{1,4}[^\\]/ wide ascii
       $xr2 = /%([Pp]ublic|PUBLIC)%\\[A-Za-z0-9_\-]{1,20}\.[a-zA-Z0-9]{1,4}[^\\]/ wide ascii

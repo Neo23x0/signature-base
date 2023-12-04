@@ -14,7 +14,6 @@ rule Acrotray_Anomaly {
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
 		score = 75
-		uuid = "e3fef644-e535-5137-ac98-2fd1b7ca4361"
 	strings:
 		$s1 = "PDF/X-3:2002" fullword wide
 		$s2 = "AcroTray - Adobe Acrobat Distiller helper application" fullword wide
@@ -33,7 +32,6 @@ rule COZY_FANCY_BEAR_modified_VmUpgradeHelper {
 		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www.crowdstrike.com/blog/bears-midst-intrusion-democratic-national-committee/"
 		date = "2016-06-14"
-		uuid = "97b844a4-0fa4-5850-8803-2212a69e3d16"
 	strings:
 		$s1 = "VMware, Inc." wide fullword
 		$s2 = "Virtual hardware upgrade helper service" fullword wide
@@ -50,7 +48,6 @@ rule IronTiger_Gh0stRAT_variant
 		author = "Cyber Safety Solutions, Trend Micro"
 		description = "This is a detection for a s.exe variant seen in Op. Iron Tiger"
 		reference = "http://goo.gl/T5fSJC"
-		uuid = "e7eeee0f-d7a1-5359-bc1f-5a2a883c7227"
 	strings:
 		$str1 = "Game Over Good Luck By Wind" nocase wide ascii
 		$str2 = "ReleiceName" nocase wide ascii
@@ -69,7 +66,6 @@ rule OpCloudHopper_Cloaked_PSCP {
       reference = "https://www.pwc.co.uk/cyber-security/pdf/cloud-hopper-annex-b-final.pdf"
       date = "2017-04-07"
       score = 90
-      uuid = "c1e2e456-dbdd-54cf-b0e0-b356f291cfcd"
    strings:
       $s1 = "AES-256 SDCTR" ascii
       $s2 = "direct-tcpip" ascii
@@ -85,7 +81,6 @@ rule msi_dll_Anomaly {
       reference = "https://blog.cylance.com/shell-crew-variants-continue-to-fly-under-big-avs-radar"
       date = "2017-02-10"
       hash1 = "8c9048e2f5ea2ef9516cac06dc0fba8a7e97754468c0d9dc1e5f7bce6dbda2cc"
-      uuid = "92cd5c51-ed84-5428-9105-50139f9289c8"
    strings:
       $x1 = "msi.dll.eng" fullword wide
    condition:
@@ -100,7 +95,6 @@ rule PoS_Malware_MalumPOS_Config
         date = "2015-06-25"
         description = "MalumPOS Config File"
         reference = "http://blog.trendmicro.com/trendlabs-security-intelligence/trend-micro-discovers-malumpos-targets-hotels-and-other-us-industries/"
-        uuid = "0fd2b9c2-d016-5db2-8fcc-618df6c815de"
     strings:
         $s1 = "[PARAMS]"
         $s2 = "Name="
@@ -119,7 +113,6 @@ rule Malware_QA_update_test {
 		date = "2016-08-29"
 		score = 80
 		hash1 = "3b3392bc730ded1f97c51e23611740ff8b218abf0a1100903de07819eeb449aa"
-		uuid = "8f319277-1eaf-559e-87ad-f4ab89b04ca5"
 	strings:
 		$s1 = "test.exe" fullword ascii
 		$s2 = "PADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGP" fullword ascii
@@ -140,7 +133,6 @@ rule SysInterals_PipeList_NameChanged {
 		date = "2016-06-04"
 		score = 90
 		hash1 = "83f0352c14fa62ae159ab532d85a2b481900fed50d32cc757aa3f4ccf6a13bee"
-		uuid = "01afcf29-a74c-5be2-8b24-694a2802ef34"
 	strings:
 		$s1 = "PipeList" ascii fullword
 		$s2 = "Sysinternals License" ascii fullword
@@ -166,7 +158,6 @@ rule SCT_Scriptlet_in_Temp_Inet_Files {
 		author = "Florian Roth (Nextron Systems)"
 		reference = "http://goo.gl/KAB8Jw"
 		date = "2016-04-26"
-		uuid = "8b729257-3676-59b2-961c-dae1085cbbf6"
 	strings:
 		$s1 = "<scriptlet>" fullword ascii nocase
 		$s2 = "ActiveXObject(\"WScript.Shell\")" ascii
@@ -184,7 +175,6 @@ rule GIFCloaked_Webshell_A {
       author = "Florian Roth (Nextron Systems)"
       hash = "f1c95b13a71ca3629a0bb79601fcacf57cdfcf768806a71b26f2448f8c1d5d24"
       score = 60
-      uuid = "4fdef65c-204a-5019-9b4f-c5877c3e39d4"
    strings:
       $s0 = "input type"
       $s1 = "<%eval request"
@@ -250,7 +240,6 @@ rule HackTool_Producers {
       threat_level = 5
       score = 50
       nodeepdive = 1
-      uuid = "75cb2c86-0eaa-5cf5-96d8-85b91054de36"
    strings:
       $a1 = "www.oxid.it"
       $a2 = "www.analogx.com"
@@ -274,7 +263,6 @@ rule Exe_Cloaked_as_ThumbsDb
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
         score = 50
-        uuid = "ff09f8cf-de5a-50fc-aa0b-c54f7667e246"
     condition:
         uint16(0) == 0x5a4d and filename matches /[Tt]humbs\.db/
 }
@@ -288,7 +276,6 @@ rule Fake_AdobeReader_EXE
       score = 50
       nodeepdive = 1
       nodeepdive = 1
-      uuid = "e3dd9d94-9f4b-5ff9-bfec-29abfb3555bb"
     strings:
       $s1 = "Adobe Systems" ascii
 
@@ -306,7 +293,6 @@ rule mimikatz_lsass_mdmp
    meta:
       description      = "LSASS minidump file for mimikatz"
       author         = "Benjamin DELPY (gentilkiwi)"
-      uuid = "3d850dbe-1342-55ac-b0f7-91343d88f147"
    strings:
       $lsass         = "System32\\lsass.exe"   wide nocase
    condition:
@@ -319,7 +305,6 @@ rule lsadump {
       author         = "Benjamin DELPY (gentilkiwi)"
       score         = 80
       nodeepdive = 1
-      uuid = "3bfa8dd8-720d-5326-ac92-0fb96cf21219"
    strings:
       $str_sam_inc   = "\\Domains\\Account" ascii nocase
       $str_sam_exc   = "\\Domains\\Account\\Users\\Names\\" ascii nocase
@@ -350,7 +335,6 @@ rule SUSP_ServU_SSH_Error_Pattern_Jul21_1 {
       reference = "https://www.solarwinds.com/trust-center/security-advisories/cve-2021-35211#FAQ"
       date = "2021-07-12"
       score = 60
-      uuid = "1a89f0b0-445c-5867-94cd-f07ba1becad6"
    strings:
       $s1 = "EXCEPTION: C0000005;" ascii
       $s2 = "CSUSSHSocket::ProcessReceive();" ascii
@@ -366,7 +350,6 @@ rule SUSP_ServU_Known_Mal_IP_Jul21_1 {
       reference = "https://www.solarwinds.com/trust-center/security-advisories/cve-2021-35211#FAQ"
       date = "2021-07-12"
       score = 60
-      uuid = "118272a7-7ec9-568b-99e0-8cfe97f3f64e"
    strings:
       $xip1 = "98.176.196.89" ascii fullword 
       $xip2 = "68.235.178.32" ascii fullword
@@ -385,7 +368,6 @@ rule SUSP_EXPL_Confluence_RCE_CVE_2021_26084_Indicators_Sep21 {
       reference = "https://attackerkb.com/topics/Eu74wdMbEL/cve-2021-26084-confluence-server-ognl-injection/rapid7-analysis"
       date = "2021-09-01"
       score = 55
-      uuid = "395d37ea-1986-5fdd-b58c-562ae0d8be35"
    condition:
       uint32be(0) == 0x7f454c46 /* ELF binary */
       and owner == "confluence"
@@ -399,7 +381,6 @@ rule SUSP_Blocked_Download_Proxy_Replacement_Jan23_1 {
       reference = "https://www.virustotal.com/gui/search/filename%253A*.exe%2520tag%253Ahtml%2520size%253A10kb-%2520size%253A2kb%252B/files"
       date = "2023-01-28"
       score = 60
-      uuid = "58bc8288-6bdb-57d5-9de5-a54a39584838"
    strings:
       $x01 = "Web Filter Violation"
       $x02 = "Google Drive can't scan this file for viruses."
@@ -490,7 +471,6 @@ rule APT_MAL_RU_Snake_Malware_Queue_File_May23_1 {
       reference = "https://media.defense.gov/2023/May/09/2003218554/-1/-1/0/JOINT_CSA_HUNTING_RU_INTEL_SNAKE_MALWARE_20230509.PDF"
       date = "2023-05-10"
       score = 80
-      uuid = "c7ed554e-b55e-5c3f-aa8b-231cb1073f34"
    condition:
       filename matches /(\{[0-9A-Fa-f]{8}\-([0-9A-Fa-f]{4}\-){3}[0-9A-Fa-f]{12}\}\.){2}crmlog/
       /* and filepath contains "\\Registration\\" // not needed - already specific enough */
@@ -508,7 +488,6 @@ rule SUSP_Password_XLS_Unencrypted {
       reference = "Internal Research"
       date = "2023-10-04"
       score = 60
-      uuid = "41096ef1-dd02-5956-9053-3d7fb1a5092c"
    condition:
       // match password and the german passwort:
       (
@@ -540,7 +519,6 @@ rule SUSP_Password_XLS_Encrypted {
       reference = "Internal Research"
       date = "2023-10-04"
       score = 50
-      uuid = "d3334923-3396-524d-9111-8ccb754ab99e"
    condition:
       // match password and the german passwort:
       (

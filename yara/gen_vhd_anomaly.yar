@@ -8,7 +8,6 @@ rule SUSP_VHD_Suspicious_Small_Size {
       modified = "2023-01-27"
       score = 50
       hash1 = "3382a75bd959d2194c4b1a8885df93e8770f4ebaeaff441a5180ceadf1656cd9"
-      uuid = "f4a72e7b-ddd3-5038-9440-1e81dc27755d"
    strings:
       /* VHD */
       $hc1 = { 63 6F 6E 65 63 74 69 78 }

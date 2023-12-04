@@ -5,7 +5,6 @@ rule SUSP_Microsoft_7z_SFX_Combo {
       reference = "Internal Research"
       date = "2018-09-16"
       hash1 = "cce63f209ee4efb4f0419fb4bbb32326392b5ef85cfba80b5b42b861637f1ff1"
-      uuid = "9163a689-c3ee-59b1-bf58-aef5d3072be6"
    strings:
       $s1 = "7ZSfx%03x.cmd" fullword wide
       $s2 = "7z SFX: error" fullword ascii
@@ -30,7 +29,6 @@ rule SUSP_Microsoft_RAR_SFX_Combo {
       author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2018-09-16"
-      uuid = "0fa81a9e-2f41-5783-9786-bb6d33b82bd9"
    strings:
       $s1 = "winrarsfxmappingfile.tmp" fullword wide
       $s2 = "WinRAR self-extracting archive" fullword wide

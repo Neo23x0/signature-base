@@ -14,7 +14,6 @@ rule Trojan_ISMRAT_gen {
       hash1 = "146a112cb01cd4b8e06d36304f6bdf7b"
       hash2 = "fa3dbe37108b752c38bf5870b5862ce5"
       hash3 = "bf4b07c7b4a4504c4192bd68476d63b5"
-      uuid = "e72241ce-d6ee-5cb7-a83d-157161938d83"
    strings:
       $s1 = "WinHTTP Example/1.0" wide
       $s2 = "Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0" wide

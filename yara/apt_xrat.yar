@@ -18,7 +18,6 @@ rule xRAT_1 {
       date = "2017-12-11"
       hash1 = "92be93ec4cbe76182404af0b180871fbbfa3c7b34e4df6745dbcde480b8b4b3b"
       hash2 = "f1a45adcf907e660ec848c6086e28c9863b7b70d0d38417dd05a4261973c955a"
-      uuid = "170c926a-2020-5269-85b8-6fe9ad28ef76"
    strings:
       $x1 = "\" -CHECK & PING -n 2 127.0.0.1 & EXIT" fullword wide
       $x2 = "xClient.Core.Elevation" fullword ascii

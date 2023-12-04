@@ -18,7 +18,6 @@ rule APT15_Malware_Mar18_RoyalCli {
       reference = "https://goo.gl/HZ5XMN"
       date = "2018-03-10"
       hash1 = "6df9b712ff56009810c4000a0ad47e41b7a6183b69416251e060b5c80cd05785"
-      uuid = "165bfa6c-1a8d-5628-8c35-da4e4a2ae04f"
    strings:
       $s1 = "\\Release\\RoyalCli.pdb" ascii
       $s2 = "%snewcmd.exe" fullword ascii
@@ -39,7 +38,6 @@ rule APT15_Malware_Mar18_RoyalDNS {
       reference = "https://goo.gl/HZ5XMN"
       date = "2018-03-10"
       hash1 = "bc937f6e958b339f6925023bc2af375d669084e9551fd3753e501ef26e36b39d"
-      uuid = "c2f519db-2750-53ce-ae18-697ea041faaf"
    strings:
       $x1 = "del c:\\windows\\temp\\r.exe /f /q" fullword ascii
       $x2 = "%s\\r.exe" fullword ascii
@@ -66,7 +64,6 @@ rule APT15_Malware_Mar18_BS2005 {
       reference = "https://goo.gl/HZ5XMN"
       date = "2018-03-10"
       hash1 = "750d9eecd533f89b8aa13aeab173a1cf813b021b6824bc30e60f5db6fa7b950b"
-      uuid = "700bbe14-d79e-5a35-aab3-31eacd5bd950"
    strings:
       $x1 = "AAAAKQAASCMAABi+AABnhEBj8vep7VRoAEPRWLweGc0/eiDrXGajJXRxbXsTXAcZAABK4QAAPWwAACzWAAByrg==" fullword ascii
       $x2 = "AAAAKQAASCMAABi+AABnhKv3kXJJousn5YzkjGF46eE3G8ZGse4B9uoqJo8Q2oF0AABK4QAAPWwAACzWAAByrg==" fullword ascii
@@ -94,7 +91,6 @@ rule APT15_Malware_Mar18_MSExchangeTool {
       reference = "https://goo.gl/HZ5XMN"
       date = "2018-03-10"
       hash1 = "16b868d1bef6be39f69b4e976595e7bd46b6c0595cf6bc482229dbb9e64f1bce"
-      uuid = "81b826b6-8c2e-5a8a-a626-9515d40dbbb0"
    strings:
       $s1 = "\\Release\\EWSTEW.pdb" ascii
       $s2 = "EWSTEW.exe" fullword wide
@@ -120,7 +116,6 @@ rule clean_apt15_patchedcmd{
       author = "Ahmed Zaki"
       description = "This is a patched CMD. This is the CMD that RoyalCli uses."
       sha256 = "90d1f65cfa51da07e040e066d4409dc8a48c1ab451542c894a623bc75c14bf8f"
-      uuid = "c6867ad4-f7f2-5d63-bffd-07599ede635d"
    strings:
       $ = "eisableCMD" wide
       $ = "%WINDOWS_COPYRIGHT%" wide
@@ -135,7 +130,6 @@ rule malware_apt15_royalcli_1{
       description = "Generic strings found in the Royal CLI tool"
       author = "David Cannings"
       sha256 = "6df9b712ff56009810c4000a0ad47e41b7a6183b69416251e060b5c80cd05785"
-      uuid = "432c09bf-3c44-5a2c-ba69-7b4fe7eb43cc"
    strings:
       $ = "%s~clitemp%08x.tmp" fullword
       $ = "%s /c %s>%s" fullword
@@ -155,7 +149,6 @@ rule malware_apt15_royalcli_2{
    meta:
       author = "Nikolaos Pantazopoulos"
       description = "APT15 RoyalCli backdoor"
-      uuid = "d4acfd2d-385d-5063-898e-d339b50733eb"
    strings:
       $string1 = "%shkcmd.exe" fullword
       $string2 = "myRObject" fullword
@@ -198,7 +191,6 @@ rule malware_apt15_royaldll {
       author = "David Cannings"
       description = "DLL implant, originally rights.dll and runs as a service"
       sha256 = "bc937f6e958b339f6925023bc2af375d669084e9551fd3753e501ef26e36b39d"
-      uuid = "26baef92-1055-56dc-b274-e2a6bc05d85b"
    strings:
       /*
       56                push    esi
@@ -247,7 +239,6 @@ rule malware_apt15_royaldll_2 {
       author = "Ahmed Zaki"
       sha256 = "bc937f6e958b339f6925023bc2af375d669084e9551fd3753e501ef26e36b39d"
       description = "DNS backdoor used by APT15"
-      uuid = "3bc546a5-38b9-5504-b09e-305ba7bbd6bc"
    strings:
       $= "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Svchost" wide ascii
       $= "netsvcs" wide ascii fullword
@@ -265,7 +256,6 @@ rule malware_apt15_exchange_tool {
       author = "Ahmed Zaki"
       md5 = "d21a7e349e796064ce10f2f6ede31c71"
       description = "This is a an exchange enumeration/hijacking tool used by an APT 15"
-      uuid = "f07b9537-0741-51c8-a9fa-836430fe4855"
    strings:
       $s1= "subjectname" fullword
       $s2= "sendername" fullword
@@ -286,7 +276,6 @@ rule malware_apt15_generic {
    meta:
       author = "David Cannings"
       description = "Find generic data potentially relating to AP15 tools"
-      uuid = "4eb50731-22df-5f7a-bf5f-166ef84cf8b5"
    strings:
        // Appears to be from copy/paste code
        $str01 = "myWObject" fullword

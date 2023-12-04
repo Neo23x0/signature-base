@@ -4,7 +4,6 @@ rule TRITON_ICS_FRAMEWORK {
           hash = "0face841f7b2953e7c29c064d6886523"
           description = "TRITON framework recovered during Mandiant ICS incident response"
           reference = "https://www.fireeye.com/blog/threat-research/2017/12/attackers-deploy-new-ics-attack-framework-triton.html"
-          uuid = "af21e55e-ab09-5800-8aac-aee63ae8582c"
       strings:
           $python_compiled = ".pyc" nocase ascii wide
           $python_module_01 = "__module__" nocase ascii wide
@@ -75,7 +74,6 @@ rule Triton_trilog {
       reference = "https://goo.gl/vtQoCQ"
       date = "2017-12-14"
       hash1 = "e8542c07b2af63ee7e72ce5d97d91036c5da56e2b091aa2afe737b224305d230"
-      uuid = "ae2c9b47-2a67-50c6-9d2a-dc47b4fa69ef"
    strings:
       $s1 = "inject.bin" ascii
       $s2 = "PYTHON27.DLL" fullword ascii

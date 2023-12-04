@@ -38,7 +38,6 @@ rule Office_OLE_DDEAUTO {
       reference = "https://blog.nviso.be/2017/10/11/detecting-dde-in-ms-office-documents/"
       date = "2017-10-12"
       score = 30
-      uuid = "2ead3cc9-f517-5916-93c9-1393362aa45d"
    strings:
       $a = /\x13\s*DDEAUTO\b[^\x14]+/ nocase
    condition:
@@ -52,7 +51,6 @@ rule Office_OLE_DDE {
       reference = "https://blog.nviso.be/2017/10/11/detecting-dde-in-ms-office-documents/"
       date = "2017-10-12"
       score = 50
-      uuid = "2ead3cc9-f517-5916-93c9-1393362aa45d"
    strings:
       $a = /\x13\s*DDE\b[^\x14]+/ nocase
 

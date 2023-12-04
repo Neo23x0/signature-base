@@ -7,7 +7,6 @@ rule brc4_core {
         reference = "https://github.com/paranoidninja/Brute-Ratel-C4-Community-Kit/blob/main/deprecated/brc4.yara"
         date = "2022-11-19"
         description = "Hunts for known strings used in Badger till release v1.2.9 when not in an encrypted state"
-        uuid = "3a702d21-392f-5b7d-90a7-eb053d259b32"
     strings:
         $coreStrings1 = "CLOSED"
         $coreStrings2 = "LISTENING"
@@ -268,7 +267,6 @@ rule brc4_shellcode {
         arch_context = "x64"
         reference = "https://github.com/paranoidninja/Brute-Ratel-C4-Community-Kit/blob/main/deprecated/brc4.yara"
         date = "2022-11-19"
-        uuid = "7e899d2f-332b-53f7-b9e6-cfde2bce6223"
     strings:
         $shellcode_x64_Start = { 55 50 53 51 52 56 57 41 50 41 51 41 52 41 53 41 54 41 55 41 56 41 57 }
         $shellcode_x64_End = { 5B 5E 5F 41 5C 41 5D 41 5E 41 5F 5D C3 }

@@ -11,7 +11,6 @@ rule VisualDiscovery_Lonovo_Superfish_SSL_Hijack {
 		hash2 = "f0b0cd0227ba302ac9ab4f30d837422c7ae66c46"
 		hash3 = "f12edf2598d8f0732009c5cd1df5d2c559455a0b"
 		hash4 = "343af97d47582c8150d63cbced601113b14fcca6"
-		uuid = "200c016e-7ad8-5b58-be5f-7866e91d60e9"
 	strings:
 		//$s1 = "VisualDiscovery.exe" fullword wide
 		$s2 = "Invalid key length used to initialize BlowFish." fullword ascii

@@ -6,7 +6,6 @@ rule LOG_ProxyNotShell_POC_CVE_2022_41040_Nov22 {
       reference = "https://github.com/testanull/ProxyNotShell-PoC"
       date = "2022-11-17"
       score = 70
-      uuid = "1e47d124-3103-5bf5-946f-b1bb69ff2c8e"
    strings:
       $aa1 = " POST " ascii wide
       $aa2 = " GET " ascii wide

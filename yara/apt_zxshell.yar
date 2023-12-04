@@ -17,7 +17,6 @@ rule ZxShell_Related_Malware_CN_Group_Jul17_1 {
       reference = "https://blogs.rsa.com/cat-phishing/"
       date = "2017-07-08"
       hash1 = "ef56c2609bc1b90f3e04745890235e6052a4be94e35e38b6f69b64fb17a7064e"
-      uuid = "a91e39bb-1bb3-54a8-b684-d673c445375c"
    strings:
       $x1 = "CMD.EXE /C NET USER GUEST /ACTIVE:yes && NET USER GUEST ++++++" ascii
       $x2 = "system\\cURRENTcONTROLSET\\sERVICES\\tERMSERVICE" fullword ascii
@@ -37,7 +36,6 @@ rule ZxShell_Related_Malware_CN_Group_Jul17_2 {
       reference = "https://blogs.rsa.com/cat-phishing/"
       date = "2017-07-08"
       hash1 = "204273675526649b7243ee48efbb7e2bc05239f7f9015fbc4fb65f0ada64759e"
-      uuid = "37c1f26b-4b4f-510e-a7b7-b2afb17d6e71"
    strings:
       $u1 = "User-Agent:Mozilla/4.0 (compatible; MSIE %d.00; Windows NT %d.0; MyIE 3.01)" fullword ascii
       $u2 = "User-Agent:Mozilla/4.0 (compatible; MSIE %d.0; Windows NT %d.1; SV1)" fullword ascii
@@ -65,7 +63,6 @@ rule ZxShell_Related_Malware_CN_Group_Jul17_3 {
       reference = "https://blogs.rsa.com/cat-phishing/"
       date = "2017-07-08"
       hash1 = "2e5cf8c785dc081e5c2b43a4a785713c0ae032c5f86ccbc7abf5c109b8854ed7"
-      uuid = "1900b861-b4a2-50b5-a639-3eb442072139"
    strings:
       $s1 = "%s\\nt%s.dll" fullword ascii
       $s2 = "RegQueryValueEx(Svchost\\netsvcs)" fullword ascii
@@ -81,7 +78,6 @@ rule ZxShell_Jul17 {
       reference = "https://blogs.rsa.com/cat-phishing/"
       date = "2017-07-08"
       hash1 = "5d2a4cde9fa7c2fdbf39b2e2ffd23378d0c50701a3095d1e91e3cf922d7b0b16"
-      uuid = "1b009b20-5a19-5cac-aaaf-ca61310eab9f"
    strings:
       $x1 = "zxplug -add" fullword ascii
       $x2 = "getxxx c:\\xyz.dll" fullword ascii
@@ -120,7 +116,6 @@ rule ZXshell_20171211_chrsben {
       reference = "https://goo.gl/snc85M"
       date = "2017-12-11"
       hash1 = "dd01e7a1c9b20d36ea2d961737780f2c0d56005c370e50247e38c5ca80dcaa4f"
-      uuid = "3bbfddb8-011a-52dd-b0c8-b35e6f740507"
    strings:
       $x1 = "ncProxyXll" fullword ascii
 

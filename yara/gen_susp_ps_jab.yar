@@ -6,7 +6,6 @@ rule SUSP_PS1_JAB_Pattern_Jun22_1 {
       reference = "Internal Research"
       date = "2022-06-10"
       score= 70
-      uuid = "9ecca7d9-3b63-5615-a223-5efa1c53510e"
    strings:
       /* 
          with spaces : $c = $ 

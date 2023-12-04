@@ -12,7 +12,6 @@ rule SUSP_MAL_EXFIL_Stealer_Output_Characteristics_Sep22_1 {
       hash4 = "aa6e2c8447f66527f9b6f4d54f57edc6cabe56095df94dc0656dca02e11356ab"
       hash5 = "bbfb608061931565debac405ffebe3c4bb5dac8042443fe4e80aa03395955bd2"
       hash6 = "c15107beecf3301fb12d140690034717e16bd5312a746e7ff43a7925e5533260"
-      uuid = "c1cab3c3-c4f3-5a19-9ea3-9e4242238359"
    strings:
       $sa1 = "passwords.txt" ascii
       $sa2 = "autofills/" ascii

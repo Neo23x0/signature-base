@@ -5,7 +5,6 @@ rule crime_win64_backdoor_bazarbackdoor1 {
         reference = "https://twitter.com/pancak3lullz/status/1252303608747565057"
         tlp = "white"
         date = "2020-04-24"
-        uuid = "1e387791-97fa-527d-87ed-68872b1891c4"
     strings:
         $str1 = "%id%"
         /* $str2 = "%d" // disabled due to performance concerns */ 

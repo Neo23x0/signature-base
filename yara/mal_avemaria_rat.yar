@@ -6,7 +6,6 @@ rule MAL_AveMaria_RAT_Jul19 {
       reference = "https://twitter.com/abuse_ch/status/1145697917161934856"
       date = "2019-07-01"
       hash1 = "5a927db1566468f23803746ba0ccc9235c79ca8672b1444822631ddbf2651a59"
-      uuid = "960048cf-7a56-50cf-8498-549f900770d8"
    strings:
       $a1 = "operator co_await" fullword ascii
       $s1 = "uohlyatqn" fullword ascii

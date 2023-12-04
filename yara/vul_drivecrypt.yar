@@ -7,7 +7,6 @@ rule EXP_DriveCrypt_1 {
       reference = "Internal Research"
       date = "2018-08-21"
       hash1 = "0dd09bc97c768abb84d0fb6d1ae7d789f1f83bfb2ce93ff9ff3c538dc1effa33"
-      uuid = "c192ca53-1de3-5d2d-a216-47e534ff4d01"
    strings:
       $s1 = "x64passldr.exe" fullword ascii
       $s2 = "DCR.sys" fullword ascii
@@ -24,7 +23,6 @@ rule EXP_DriveCrypt_x64passldr {
       date = "2018-08-21"
       modified = "2023-01-06"
       hash1 = "c828304c83619e2cb9dab80305e5286aba91742dc550e1469d91812af27101a1"
-      uuid = "94594b4e-091d-5964-b2b4-5d7d44601b28"
    strings:
       $s1 = "\\x64\\x64passldr.pdb" ascii
       $s2 = "\\amd64\\x64pass.sys" wide

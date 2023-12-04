@@ -7,7 +7,6 @@ rule MAL_ME_RawDisk_Agent_Jan20_1 {
       date = "2020-01-02"
       modified = "2022-12-21"
       hash1 = "44100c73c6e2529c591a10cd3668691d92dc0241152ec82a72c6e63da299d3a2"
-      uuid = "0efaae51-1407-5039-9e5a-9c2f13d6a971"
    strings:
       $x1 = "\\drv\\agent.plain.pdb" ascii
       $x2 = " ************** Down With Saudi Kingdom, Down With Bin Salman ************** " fullword ascii
@@ -31,7 +30,6 @@ rule MAL_ME_RawDisk_Agent_Jan20_2 {
       date = "2020-01-02"
       modified = "2022-12-21"
       hash1 = "44100c73c6e2529c591a10cd3668691d92dc0241152ec82a72c6e63da299d3a2"
-      uuid = "9817fb22-7bed-5869-aa92-66c458b81c7f"
    strings:
       $x1 = "\\Release\\Dustman.pdb" ascii
       $x2 = "/c agent.exe A" fullword ascii

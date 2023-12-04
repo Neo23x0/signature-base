@@ -6,7 +6,6 @@ rule SUSP_PS1_Msdt_Execution_May22 {
       modified = "2022-07-08"
       reference = "https://doublepulsar.com/follina-a-microsoft-office-code-execution-vulnerability-1a47fce5629e"
       score = 75
-      uuid = "caa8a042-ffd4-52b2-a9f0-86e6c83a0aa3"
    strings:
       $a = "PCWDiagnostic" ascii wide fullword
       $sa1 = "msdt.exe" ascii wide
@@ -40,7 +39,6 @@ rule SUSP_Doc_WordXMLRels_May22 {
       reference = "https://doublepulsar.com/follina-a-microsoft-office-code-execution-vulnerability-1a47fce5629e"
       hash = "62f262d180a5a48f89be19369a8425bec596bc6a02ed23100424930791ae3df0"
       score = 70
-      uuid = "304c4816-b2f6-5319-9fe9-8f74bdb82ad0"
    strings:
       $a1 = "<Relationships" ascii
       $a2 = "TargetMode=\"External\"" ascii
@@ -63,7 +61,6 @@ rule SUSP_Doc_RTF_ExternalResource_May22 {
       modified = "2022-05-31"
       reference = "https://doublepulsar.com/follina-a-microsoft-office-code-execution-vulnerability-1a47fce5629e"
       score = 70
-      uuid = "71bb97e0-ec12-504c-a1f6-25039ac91c86"
    strings:
       $s1 = " LINK htmlfile \"http" ascii
       $s2 = ".html!\" " ascii
@@ -83,7 +80,6 @@ rule EXPL_Follina_CVE_2022_30190_Msdt_MSProtocolURI_May22 {
       hash1 = "4a24048f81afbe9fb62e7a6a49adbd1faf41f266b5f9feecdceb567aec096784"
       hash2 = "778cbb0ee4afffca6a0b788a97bc2f4855ceb69ddc5eaa230acfa2834e1aeb07"
       score = 80
-      uuid = "62e67c25-a420-5dac-9d1c-b0648ea6b574"
    strings:
       $re1 = /location\.href\s{0,20}=\s{0,20}"ms-msdt:/
       $a1 = "%6D%73%2D%6D%73%64%74%3A%2F" ascii /* URL encoded "ms-msdt:/" */
@@ -101,7 +97,6 @@ rule SUSP_Doc_RTF_OLE2Link_Jun22 {
       reference = "Internal Research"
       hash = "4abc20e5130b59639e20bd6b8ad759af18eb284f46e99a5cc6b4f16f09456a68"
       score = 75
-      uuid = "e9c83d58-6214-51d5-882a-4bd2ed6acc9a"
    strings:
       $sa = "\\objdata" ascii nocase
 
@@ -134,7 +129,6 @@ rule SUSP_Doc_RTF_OLE2Link_EMAIL_Jun22 {
       reference = "Internal Research"
       hash = "4abc20e5130b59639e20bd6b8ad759af18eb284f46e99a5cc6b4f16f09456a68"
       score = 75
-      uuid = "48cde505-3ce4-52ef-b338-0c08ac4f63de"
    strings:
       /* \objdata" */
       $sa1 = "XG9iamRhdG" ascii
@@ -194,7 +188,6 @@ rule SUSP_DOC_RTF_ExternalResource_EMAIL_Jun22 {
       date = "2022-06-01"
       reference = "https://doublepulsar.com/follina-a-microsoft-office-code-execution-vulnerability-1a47fce5629e"
       score = 70
-      uuid = "3ddc838c-8520-5572-9652-8cb823f83e27"
    strings:
       /* <Relationships */
       $sa1 ="PFJlbGF0aW9uc2hpcH" ascii
@@ -223,7 +216,6 @@ rule SUSP_Msdt_Artefact_Jun22_2 {
       modified = "2022-07-29"
       reference = "https://twitter.com/nas_bench/status/1531718490494844928"
       score = 75
-      uuid = "aa2a4bd7-2094-5652-a088-f58d0c7d3f62"
    strings:
       $a1 = "<ScriptError><Data id=\"ScriptName\" name=\"Script\">TS_ProgramCompatibilityWizard.ps1" ascii
 
@@ -243,7 +235,6 @@ rule SUSP_LNK_Follina_Jun22 {
       date = "2022-06-02"
       reference = "https://twitter.com/gossithedog/status/1531650897905950727"
       score = 75
-      uuid = "d331d584-2ab3-5275-b435-6129c7291417"
    strings:
       $sa1 = "msdt.exe" ascii wide
       $sa2 = "msdt " ascii wide

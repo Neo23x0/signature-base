@@ -18,7 +18,6 @@ rule Rehashed_RAT_1 {
       reference = "https://blog.fortinet.com/2017/09/05/rehashed-rat-used-in-apt-campaign-against-vietnamese-organizations"
       date = "2017-09-08"
       hash1 = "37bd97779e854ea2fc43486ddb831a5acfd19cf89f06823c9fd3b20134cb1c35"
-      uuid = "24536421-3f8f-58f3-8245-06c519d7a21a"
    strings:
       $x1 = "C:\\Users\\hoogle168\\Desktop\\"
       $x2 = "\\NewCoreCtrl08\\Release\\NewCoreCtrl08.pdb" ascii
@@ -46,7 +45,6 @@ rule Rehashed_RAT_2 {
       reference = "https://blog.fortinet.com/2017/09/05/rehashed-rat-used-in-apt-campaign-against-vietnamese-organizations"
       date = "2017-09-08"
       hash1 = "49efab1dedc6fffe5a8f980688a5ebefce1be3d0d180d5dd035f02ce396c9966"
-      uuid = "fcf82155-10da-56b7-879b-841c4ae5023b"
    strings:
       $x1 = "dalat.dulichovietnam.net" fullword ascii
       $x2 = "web.Thoitietvietnam.org" fullword ascii
@@ -75,7 +73,6 @@ rule Rehashed_RAT_3 {
       date = "2017-09-08"
       modified = "2022-12-21"
       hash1 = "9cebae97a067cd7c2be50d7fd8afe5e9cf935c11914a1ab5ff59e91c1e7e5fc4"
-      uuid = "59871be1-295f-54ee-ab4d-4f9e5fdc2935"
    strings:
       $x1 = "\\BisonNewHNStubDll\\Release\\Goopdate.pdb" ascii
       $s2 = "psisrndrx.ebd" fullword wide

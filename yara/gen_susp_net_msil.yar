@@ -13,7 +13,6 @@ rule SUSP_NET_Msil_Suspicious_Use_StrReverse {
       modified = "02/22/2023"
       score = 70
       hash = "02ce0980427dea835fc9d9eed025dd26672bf2c15f0b10486ff8107ce3950701"
-      uuid = "830dec40-4412-59c1-8b4d-a237f14acd30"
    strings:
       $a1 = ", PublicKeyToken="
       $a2 = ".NETFramework,Version="

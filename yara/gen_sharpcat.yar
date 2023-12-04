@@ -13,7 +13,6 @@ rule SharpCat {
 		reference = "https://github.com/Cn33liz/SharpCat"
 		date = "2016-06-10"
 		hash1 = "96dcdf68b06c3609f486f9d560661f4fec9fe329e78bd300ad3e2a9f07e332e9"
-		uuid = "94a7ce40-ac2f-598e-86c5-ee9fde1eeef0"
 	strings:
 		$x1 = "ShellZz" fullword ascii
 		$s2 = "C:\\Windows\\System32\\cmd.exe" fullword wide

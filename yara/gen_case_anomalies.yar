@@ -17,7 +17,6 @@ rule PowerShell_Case_Anomaly {
       date = "2017-08-11"
       modified = "2022-06-12"
       score = 70
-      uuid = "41c97d15-c167-5bdd-a8b4-871d14f66fe1"
    strings:
       // first detect 'powershell' keyword case insensitive
       $s1 = "powershell" nocase ascii wide
@@ -68,7 +67,6 @@ rule WScriptShell_Case_Anomaly {
       date = "2017-09-11"
       modified = "2022-06-09"
       score = 60
-      uuid = "d69d932d-1e39-5259-9200-f0227754f49c"
    strings:
       // first detect powershell keyword case insensitive
       $s1 = "WScript.Shell\").Run" nocase ascii wide

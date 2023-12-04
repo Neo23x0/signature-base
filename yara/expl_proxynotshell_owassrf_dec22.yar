@@ -6,7 +6,6 @@ rule EXPL_LOG_ProxyNotShell_OWASSRF_PowerShell_Proxy_Log_Dec22_1 {
       reference = "https://www.crowdstrike.com/blog/owassrf-exploit-analysis-and-recommendations/"
       date = "2022-12-22"
       score = 70
-      uuid = "a61f6582-474f-5b6f-b8f5-329c0bcc4017"
    strings:
       $s1 = "/owa/mastermailbox%40outlook.com/powershell" ascii wide
 
@@ -28,7 +27,6 @@ rule EXPL_LOG_ProxyNotShell_OWASSRF_PowerShell_Proxy_Log_Dec22_2 {
       reference = "https://www.crowdstrike.com/blog/owassrf-exploit-analysis-and-recommendations/"
       date = "2022-12-22"
       score = 60
-      uuid = "85722997-fd28-51cf-817e-7a314e284b0b"
    strings:
       $sr1 = / \/owa\/[^\/\s]{1,30}(%40|@)[^\/\s\.]{1,30}\.[^\/\s]{2,3}\/powershell / ascii wide
 
@@ -51,7 +49,6 @@ rule EXPL_LOG_ProxyNotShell_OWASSRF_PowerShell_Proxy_Log_Dec22_3 {
       reference = "https://www.crowdstrike.com/blog/owassrf-exploit-analysis-and-recommendations/"
       date = "2022-12-22"
       score = 60
-      uuid = "76dd786e-daaa-5cd9-8e3e-50d9eab7f9d2"
    strings:
       $sa1 = " POST /powershell - 444 " ascii wide
       $sa2 = " POST /Powershell - 444 " ascii wide
@@ -73,7 +70,6 @@ rule EXPL_LOG_ProxyNotShell_PowerShell_Proxy_Log_Dec22_1 {
       date = "2022-12-22"
       modified = "2023-01-26"
       score = 70
-      uuid = "5af3ae70-8897-593f-a413-82ca1d1ba961"
    strings:
       $re1 = /,\/[Pp][Oo][Ww][Ee][Rr][Ss][Hh][Ee][Ll][Ll][^\n]{0,50},Kerberos,true,[^\n]{0,50},200,0,,,,[^\n]{0,2000};OnEndRequest\.End\.ContentType=application\/soap\+xml charset UTF-8;S:ServiceCommonMetadata\.HttpMethod=POST;/ ascii wide
 

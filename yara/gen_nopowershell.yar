@@ -14,7 +14,6 @@ rule No_PowerShell {
 		date = "2016-05-21"
 		score = 80
 		hash1 = "64f811b99eb4ae038c88c67ee0dc9b150445e68a2eb35ff1a0296533ae2edd71"
-		uuid = "362a61bc-2c10-5076-93be-9f8b5a9ae8ba"
 	strings:
 		$s1 = "nps.exe -encodedcommand {base64_encoded_command}" fullword wide
 		$s2 = "c:\\Development\\ghps\\nps\\nps\\obj\\x86\\Release\\nps.pdb" fullword ascii

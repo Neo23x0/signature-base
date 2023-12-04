@@ -4,7 +4,6 @@ rule MAL_WshRAT_Dotnet_Packer_Feb21 {
         author = "Yoroi Malware ZLab"
         date = "2021-03-09"
         reference = "https://yoroi.company/research/threatening-within-budget-how-wsh-rat-is-abused-by-cyber-crooks/"
-        uuid = "62e043fc-7d13-5b91-9fdd-e71d91194da2"
     strings:
         $a1 = { BE DD 60 8C 34 49 9A 54 D2 40 }
         $a2 = { 1D D7 24 22 47 A6 B1 A5 }

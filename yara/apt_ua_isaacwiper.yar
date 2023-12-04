@@ -9,7 +9,6 @@ rule MAL_WIPER_IsaacWiper_Mar22_1 {
       score = 85
       hash1 = "13037b749aa4b1eda538fda26d6ac41c8f7b1d02d83f47b0d187dd645154e033"
       hash2 = "7bcd4ec18fc4a56db30e0aaebd44e2988f98f7b5d8c14f6689f650b4f11e16c0"
-      uuid = "97d8d8dd-db65-5156-8f97-56c620cf2d56"
    strings:
       $s1 = "C:\\ProgramData\\log.txt" wide fullword
       $s2 = "Cleaner.dll" ascii fullword

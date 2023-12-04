@@ -18,7 +18,6 @@ meta:
 	hash_8 = "3698a3630f80a632c0c7c12e929184fb"
 	hash_9 = "fdb674cadfa038ff9d931e376f89f1b6"
 
-	uuid = "a79789cd-9b16-58f5-ab51-48bb900583d1"
    strings:
 
         $sa_1 = "META-INF/MANIFEST.MF"

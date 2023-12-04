@@ -6,7 +6,6 @@ rule HKTL_BruteRatel_Badger_Indicators_Oct22_4 {
       reference = "https://twitter.com/embee_research/status/1580030310778953728"
       date = "2022-10-12"
       score = 75
-      uuid = "a62d08ae-0fb3-55e9-b6f8-7940f8032e4a"
    strings:
       $s1 = { b? 89 4d 39 8c }
       $s2 = { b? bd ca 3b d3 }

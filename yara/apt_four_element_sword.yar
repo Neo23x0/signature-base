@@ -16,7 +16,6 @@ rule FourElementSword_Config_File {
 		reference = "https://www.arbornetworks.com/blog/asert/four-element-sword-engagement/"
 		date = "2016-04-18"
 		hash = "f05cd0353817bf6c2cab396181464c31c352d6dea07e2d688def261dd6542b27"
-		uuid = "488a2344-3d8d-5769-aca8-9e14f38f5eb0"
 	strings:
 		$s0 = "01,,hccutils.dll,2" fullword ascii
 		$s1 = "RegisterDlls=OurDll" fullword ascii
@@ -35,7 +34,6 @@ rule FourElementSword_T9000 {
 		reference = "https://www.arbornetworks.com/blog/asert/four-element-sword-engagement/"
 		date = "2016-04-18"
 		hash = "5f3d0a319ecc875cc64a40a34d2283cb329abcf79ad02f487fbfd6bef153943c"
-		uuid = "35ae844e-52e1-5e6f-984d-aa75ebd2f60f"
 	strings:
 		$x1 = "D:\\WORK\\T9000\\" ascii
 		$x2 = "%s\\temp\\HHHH.dat" fullword wide
@@ -56,7 +54,6 @@ rule FourElementSword_32DLL {
 		reference = "https://www.arbornetworks.com/blog/asert/four-element-sword-engagement/"
 		date = "2016-04-18"
 		hash = "7a200c4df99887991c638fe625d07a4a3fc2bdc887112437752b3df5c8da79b6"
-		uuid = "fc801364-9f40-50eb-90e1-99f8605014c7"
 	strings:
 		$x1 = "%temp%\\tmp092.tmp" fullword ascii
 
@@ -75,7 +72,6 @@ rule FourElementSword_Keyainst_EXE {
 		reference = "https://www.arbornetworks.com/blog/asert/four-element-sword-engagement/"
 		date = "2016-04-18"
 		hash = "cf717a646a015ee72f965488f8df2dd3c36c4714ccc755c295645fe8d150d082"
-		uuid = "175fe2b0-3c76-5464-9a1a-218a09b25a5a"
 	strings:
 		$x1 = "C:\\ProgramData\\Keyainst.exe" fullword ascii
 
@@ -94,7 +90,6 @@ rule FourElementSword_ElevateDLL_2 {
 		reference = "https://www.arbornetworks.com/blog/asert/four-element-sword-engagement/"
 		date = "2016-04-18"
 		hash = "9c23febc49c7b17387767844356d38d5578727ee1150956164883cf555fe7f95"
-		uuid = "06879d75-18a3-5d49-a963-fa4bee379387"
 	strings:
 		$s1 = "Elevate.dll" fullword ascii
 		$s2 = "GetSomeF" fullword ascii
@@ -111,7 +106,6 @@ rule FourElementSword_fslapi_dll_gui {
 		reference = "https://www.arbornetworks.com/blog/asert/four-element-sword-engagement/"
 		date = "2016-04-18"
 		hash = "2a6ef9dde178c4afe32fe676ff864162f104d85fac2439986de32366625dc083"
-		uuid = "1cc73eaf-7463-5070-97e5-6ea4c7735371"
 	strings:
 		$s1 = "fslapi.dll.gui" fullword wide
 		$s2 = "ImmGetDefaultIMEWnd" fullword ascii /* Goodware String - occured 64 times */
@@ -128,7 +122,6 @@ rule FourElementSword_PowerShell_Start {
 		reference = "https://www.arbornetworks.com/blog/asert/four-element-sword-engagement/"
 		date = "2016-04-18"
 		hash = "9b6053e784c5762fdb9931f9064ba6e52c26c2d4b09efd6ff13ca87bbb33c692"
-		uuid = "62affc03-a408-5d8f-99da-58dead8646c5"
 	strings:
 		$s0 = "start /min powershell C:\\\\ProgramData\\\\wget.exe" ascii
 		$s1 = "start /min powershell C:\\\\ProgramData\\\\iuso.exe" fullword ascii
@@ -144,7 +137,6 @@ rule FourElementSword_ResN32DLL {
 		reference = "https://www.arbornetworks.com/blog/asert/four-element-sword-engagement/"
 		date = "2016-04-18"
 		hash = "bf1b00b7430899d33795ef3405142e880ef8dcbda8aab0b19d80875a14ed852f"
-		uuid = "3e1f6d8d-53ea-542f-ba49-39b4c86f3124"
 	strings:
 		$s1 = "\\Release\\BypassUAC.pdb" ascii
 		$s2 = "\\ResN32.dll" wide
@@ -165,7 +157,6 @@ rule FourElementSword_ElevateDLL {
 		super_rule = 1
 		hash1 = "3dfc94605daf51ebd7bbccbb3a9049999f8d555db0999a6a7e6265a7e458cab9"
 		hash2 = "5f3d0a319ecc875cc64a40a34d2283cb329abcf79ad02f487fbfd6bef153943c"
-		uuid = "06879d75-18a3-5d49-a963-fa4bee379387"
 	strings:
 		$x1 = "Elevate.dll" fullword wide
 		$x2 = "ResN32.dll" fullword wide

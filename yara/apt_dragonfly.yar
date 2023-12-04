@@ -18,7 +18,6 @@ rule Unspecified_Malware_Sep1_A1 {
       reference = "https://www.symantec.com/connect/blogs/dragonfly-western-energy-sector-targeted-sophisticated-attack-group"
       date = "2017-09-12"
       hash1 = "28143c7638f22342bff8edcd0bedd708e265948a5fcca750c302e2dca95ed9f0"
-      uuid = "cff49e85-c8c3-5240-9948-0551e38e7040"
    condition:
       ( uint16(0) == 0x5a4d and
         filesize < 200KB and
@@ -34,7 +33,6 @@ rule DragonFly_APT_Sep17_1 {
       reference = "https://www.symantec.com/connect/blogs/dragonfly-western-energy-sector-targeted-sophisticated-attack-group"
       date = "2017-09-12"
       hash1 = "fc54d8afd2ce5cb6cc53c46783bf91d0dd19de604308d536827320826bc36ed9"
-      uuid = "d219a54e-cb76-5c56-b64c-5019e811eeb1"
    strings:
       $s1 = "\\Update\\Temp\\ufiles.txt" wide
       $s2 = "%02d.%02d.%04d %02d:%02d" fullword wide
@@ -51,7 +49,6 @@ rule DragonFly_APT_Sep17_2 {
       date = "2017-09-12"
       modified = "2023-01-06"
       hash1 = "178348c14324bc0a3e57559a01a6ae6aa0cb4013aabbe324b51f906dcf5d537e"
-      uuid = "e64f121d-a628-54b5-88f3-96eea388c155"
    strings:
       $s1 = "\\AppData\\Roaming\\Opera Software\\Opera Stable\\Login Data" wide
       $s2 = "C:\\Users\\Public\\Log.txt" fullword wide
@@ -73,7 +70,6 @@ rule DragonFly_APT_Sep17_3 {
       reference = "https://www.symantec.com/connect/blogs/dragonfly-western-energy-sector-targeted-sophisticated-attack-group"
       date = "2017-09-12"
       hash1 = "b051a5997267a5d7fa8316005124f3506574807ab2b25b037086e2e971564291"
-      uuid = "4eafd732-80bc-5f50-bf0d-096df4d35d61"
    strings:
       $s1 = "kernel64.dll" fullword ascii
       $s2 = "ws2_32.dQH" fullword ascii
@@ -96,7 +92,6 @@ rule DragonFly_APT_Sep17_4 {
       reference = "https://www.symantec.com/connect/blogs/dragonfly-western-energy-sector-targeted-sophisticated-attack-group"
       date = "2017-09-12"
       hash1 = "2f159b71183a69928ba8f26b76772ec504aefeac71021b012bd006162e133731"
-      uuid = "dbc0eebf-fc81-5a0b-b2e0-129d0b40b6f7"
    strings:
       $s1 = "screen.exe" fullword wide
       $s2 = "PlatformInvokeUSER32" fullword ascii

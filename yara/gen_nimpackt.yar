@@ -6,7 +6,6 @@ rule HKTL_Nim_NimPackt : EXE FILE HKTL {
         reference = "https://github.com/chvancooten/NimPackt-v1"
         date = "2022-01-26"
         score = 80
-        uuid = "3399d937-133f-5701-840e-eaf68b2f1ec9"
     strings:
         $nim1 = "fatal.nim" ascii fullword
         $nim2 = "winim" ascii

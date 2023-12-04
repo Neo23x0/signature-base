@@ -5,7 +5,6 @@ rule apt_nix_elf_derusbi {
       date = "2016/02/29"
       modified = "2023-05-04"
       reference = "https://github.com/fideliscyber/indicators/tree/master/FTA-1021"
-      uuid = "c825c5d6-1c2f-5ee7-871e-4be3f41d73f7"
    strings:
       $s1 = "LxMain"
       $s2 = "execve"
@@ -56,7 +55,6 @@ rule apt_nix_elf_derusbi_kernelModule
       date = "2016/02/29"
       modified = "2023-05-04"
       reference = "https://github.com/fideliscyber/indicators/tree/master/FTA-1021"
-      uuid = "98196ffc-8a6f-5edc-a688-eeb449410b72"
    strings:
       $s1 = "__this_module"
       $s2 = "init_module"
@@ -88,7 +86,6 @@ rule apt_nix_elf_Derusbi_Linux_SharedMemCreation {
       author = "Fidelis Cybersecurity"
       date = "2016/02/29"
       reference = "https://github.com/fideliscyber/indicators/tree/master/FTA-1021"
-      uuid = "068b7bea-853d-57e8-a9fe-8b451dbc7582"
    strings:
       $byte1 = { B6 03 00 00 ?? 40 00 00 00 ?? 0D 5F 01 82 }
    condition:
@@ -101,7 +98,6 @@ rule apt_nix_elf_Derusbi_Linux_Strings {
       author = "Fidelis Cybersecurity"
       date = "2016/02/29"
       reference = "https://github.com/fideliscyber/indicators/tree/master/FTA-1021"
-      uuid = "06717cc9-678d-5912-a671-65605b9c9968"
    strings:
       $a1 = "loadso" wide ascii fullword
       $a2 = "\nuname -a\n\n" wide ascii
@@ -133,7 +129,6 @@ rule apt_win_exe_trojan_derusbi {
       author = "Fidelis Cybersecurity"
       date = "2016/02/29"
       reference = "https://github.com/fideliscyber/indicators/tree/master/FTA-1021"
-      uuid = "6e7fecfa-f801-59b2-a394-df4c368011b7"
    strings:
       $sa_4 = "HOST: %s:%d"
       $sa_6 = "User-Agent: Mozilla"

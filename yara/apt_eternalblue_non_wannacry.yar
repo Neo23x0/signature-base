@@ -17,7 +17,6 @@ rule Backdoor_Redosdru_Jun17 : HIGHVOL {
       reference = "https://goo.gl/OOB3mH"
       date = "2017-06-04"
       hash1 = "4f49e17b457ef202ab0be905691ef2b2d2b0a086a7caddd1e70dd45e5ed3b309"
-      uuid = "ea038142-6903-5d08-ac89-70c1bbef716c"
    strings:
       $x1 = "%s\\%d.gho" fullword ascii
       $x2 = "%s\\nt%s.dll" fullword ascii
@@ -43,7 +42,6 @@ rule Backdoor_Nitol_Jun17 {
       date = "2017-06-04"
       modified = "2023-01-07"
       hash1 = "cba19d228abf31ec8afab7330df3c9da60cd4dae376552b503aea6d7feff9946"
-      uuid = "7dd26868-59e0-51a1-b12a-3b69d6246ff5"
    strings:
       $x1 = "User-Agent:Mozilla/4.0 (compatible; MSIE %d.00; Windows NT %d.0; MyIE 3.01)" fullword ascii
       $x2 = "User-Agent:Mozilla/4.0 (compatible; MSIE %d.0; Windows NT %d.1; SV1)" fullword ascii

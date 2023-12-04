@@ -6,7 +6,6 @@ rule MAL_RANSOM_RobinHood_May19_1 {
       reference = "https://twitter.com/BThurstonCPTECH/status/1128489465327030277"
       date = "2019-05-15"
       hash1 = "21cb84fc7b33e8e31364ff0e58b078db8f47494a239dc3ccbea8017ff60807e3"
-      uuid = "7199c0de-c925-5399-8fa6-852604190a21"
    strings:
       $s1 = ".enc_robbinhood" ascii
       $s2 = "c:\\windows\\temp\\pub.key" ascii fullword

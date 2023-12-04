@@ -5,7 +5,6 @@ rule Base64_PS1_Shellcode {
       reference = "https://twitter.com/ItsReallyNick/status/1062601684566843392"
       date = "2018-11-14"
       score = 65
-      uuid = "7c3cec3b-a192-5bfd-b4f1-22b1afeb717e"
    strings:
       $substring = "AAAAYInlM"
       $pattern1 = "/OiCAAAAYInlM"

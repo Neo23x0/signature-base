@@ -9,7 +9,6 @@ rule MAL_ExileRAT_Feb19_1 {
       date = "2019-02-04"
       license = "https://creativecommons.org/licenses/by-nc/4.0/"
       hash1 = "3eb026d8b778716231a07b3dbbdc99e2d3a635b1956de8a1e6efc659330e52de"
-      uuid = "f0a510f3-5fea-59a7-8991-9d06dc478b2a"
    strings:
       $x1 = "Content-Disposition:form-data;name=\"x.bin\"" fullword ascii
 

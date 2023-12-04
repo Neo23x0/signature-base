@@ -19,7 +19,6 @@ rule Monsoon_APT_Malware_1 {
       date = "2017-09-08"
       modified = "2023-01-06"
       hash1 = "c9642f44d33e4c990066ce6fa0b0956ff5ace6534b64160004df31b9b690c9cd"
-      uuid = "a543c46d-01fc-5276-a915-183263956455"
    strings:
       $s1 = "cmd.exe /c start " fullword ascii
       $s2 = "\\Microsoft\\Templates\\" ascii
@@ -44,7 +43,6 @@ rule Monsoon_APT_Malware_2 {
       hash1 = "17c3d0fe08e1184c9737144fa065f4530def30d6591e5414a36463609f9aa53a"
       hash2 = "8e0574ebf3dc640ac82987ab6ee2a02fc3dd5eaf4f6b5275272ba887acd15ac0"
       hash3 = "bf93ca5f497fc7f38533d37fd4c083523ececc34aa2d3660d81014c0d9091ae3"
-      uuid = "dbbccf56-7e36-5c3a-b8d9-ee08d077f29f"
    strings:
       $x1 = "\\Microsoft\\Windows\\coco.exe" ascii
       $x2 = ":\\System Volume Information\\config" fullword ascii

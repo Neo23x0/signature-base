@@ -6,7 +6,6 @@ rule merlinAgent {
 		author = "Hilko Bengen"
 		reference = "https://github.com/Ne0nd0g/merlin"
 		date = "2017-12-26"
-		uuid = "92346a3f-dce4-58db-893b-b7797fa20029"
 	strings:
 		$x1 = "Command output:\x0d\x0a\x0d\x0a%s"
 		$x2 = "[-]Connecting to web server at %s to update agent configuration information."

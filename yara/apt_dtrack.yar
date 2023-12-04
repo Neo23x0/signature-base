@@ -13,7 +13,6 @@ rule APT_MAL_DTRACK_Oct19_1 {
       hash5 = "bfb39f486372a509f307cde3361795a2f9f759cbeb4cac07562dcbaebc070364"
       hash6 = "58fef66f346fe3ed320e22640ab997055e54c8704fc272392d71e367e2d1c2bb"
       hash7 = "9d9571b93218f9a635cfeb67b3b31e211be062fd0593c0756eb06a1f58e187fd"
-      uuid = "802135bd-234d-574d-b111-fcc9eaa000f8"
    strings:
       $xc1 = { 25 73 2A 2E 2A 00 00 00 5C 00 00 00 25 73 7E 00
                5C 00 00 00 77 62 00 00 64 61 74 00 64 6B 77 65

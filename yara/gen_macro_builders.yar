@@ -5,7 +5,6 @@ rule SUSP_MalDoc_ExcelMacro {
     author = "James Quinn"
     date = "2020-11-03"
     reference = "YARA Exchange - Undisclosed Macro Builder"
-    uuid = "76806717-a9a8-520e-b6b6-7718eb088de5"
   strings:
     $artifact1 = {5c 00 ?? 00 ?? 00 ?? 00 ?? 00 ?? 00 ?? 00 ?? 00 2e 00 ?? 00 ?? 00}
     $url1 = "http://" wide

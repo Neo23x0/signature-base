@@ -8,7 +8,6 @@ rule FiveEyes_QUERTY_Malwareqwerty_20121 {
 		reference = "http://www.spiegel.de/media/media-35668.pdf"
 		date = "2015/01/18"
 		hash = "8263fb58350f3b1d3c4220a602421232d5e40726"
-		uuid = "bf30bdbb-0153-5ae2-bf42-4bd9e4a2f088"
 	strings:
 		$s0 = "<configFileName>20121_cmdDef.xml</configFileName>" fullword ascii
 		$s1 = "<name>20121.dll</name>" fullword ascii
@@ -33,7 +32,6 @@ rule FiveEyes_QUERTY_Malwaresig_20123_sys {
 		reference = "http://www.spiegel.de/media/media-35668.pdf"
 		date = "2015/01/18"
 		hash = "a0f0087bd1f8234d5e847363d7e15be8a3e6f099"
-		uuid = "0d0e3642-f5d4-59b2-8e56-a7c999e34775"
 	strings:
 		$s0 = "20123.dll" fullword ascii
 		$s1 = "kbdclass.sys" fullword wide
@@ -52,7 +50,6 @@ rule FiveEyes_QUERTY_Malwaresig_20123_cmdDef {
 		reference = "http://www.spiegel.de/media/media-35668.pdf"
 		date = "2015/01/18"
 		hash = "7b08fc77629f6caaf8cc4bb5f91be6b53e19a3cd"
-		uuid = "88a29288-9db5-5437-9efe-cdb823a2b928"
 	strings:
 		$s0 = "<shortDescription>Keystroke Collector</shortDescription>" fullword ascii
 		$s1 = "This plugin is the E_Qwerty Kernel Mode driver for logging keys.</description>" fullword ascii
@@ -87,7 +84,6 @@ rule FiveEyes_QUERTY_Malwaresig_20121_dll {
 		reference = "http://www.spiegel.de/media/media-35668.pdf"
 		date = "2015/01/18"
 		hash = "89504d91c5539a366e153894c1bc17277116342b"
-		uuid = "a0dc146c-85fd-55b8-a5e0-bfc1f406507e"
 	strings:
 		$s0 = "WarriorPride\\production2.0\\package\\E_Wzowski" ascii
 		$s1 = "20121.dll" fullword ascii
@@ -102,7 +98,6 @@ rule FiveEyes_QUERTY_Malwareqwerty_20123 {
 		reference = "http://www.spiegel.de/media/media-35668.pdf"
 		date = "2015/01/18"
 		hash = "edc7228b2e27df9e7ff9286bddbf4e46adb51ed9"
-		uuid = "718d80c9-b6bb-5b73-9c17-49e7d6f77210"
 	strings:
 		$s0 = "<!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by TEAM (RENEGADE) -" ascii
 		$s1 = "<configFileName>20123_cmdDef.xml</configFileName>" fullword ascii
@@ -128,7 +123,6 @@ rule FiveEyes_QUERTY_Malwaresig_20120_dll {
 		reference = "http://www.spiegel.de/media/media-35668.pdf"
 		date = "2015/01/18"
 		hash = "6811bfa3b8cda5147440918f83c40237183dbd25"
-		uuid = "d23ac7bf-3e0c-5b59-a9dc-1ae0a4ae9c02"
 	strings:
 		$s0 = "\\QwLog_%d-%02d-%02d-%02d%02d%02d.txt" wide
 		$s1 = "\\QwLog_%d-%02d-%02d-%02d%02d%02d.xml" wide
@@ -163,7 +157,6 @@ rule FiveEyes_QUERTY_Malwaresig_20120_cmdDef {
 		reference = "http://www.spiegel.de/media/media-35668.pdf"
 		date = "2015/01/18"
 		hash = "cda9ceaf0a39d6b8211ce96307302a53dfbd71ea"
-		uuid = "dfa0693e-4e4c-59c8-9e51-e221aefd8662"
 	strings:
 		$s0 = "This PPC gets the current keystroke log." fullword ascii
 		$s1 = "This command will add the given WindowTitle to the list of Windows to log keys f" ascii
@@ -198,7 +191,6 @@ rule FiveEyes_QUERTY_Malwareqwerty_20120 {
 		reference = "http://www.spiegel.de/media/media-35668.pdf"
 		date = "2015/01/18"
 		hash = "597082f05bfd3225587d480c30f54a7a1326a892"
-		uuid = "503c71de-1bc5-5690-944c-a60917a4da09"
 	strings:
 		$s0 = "<configFileName>20120_cmdDef.xml</configFileName>" fullword ascii
 		$s1 = "<name>20120.dll</name>" fullword ascii
@@ -223,7 +215,6 @@ rule FiveEyes_QUERTY_Malwaresig_20121_cmdDef {
 		reference = "http://www.spiegel.de/media/media-35668.pdf"
 		date = "2015/01/18"
 		hash = "64ac06aa4e8d93ea6063eade7ce9687b1d035907"
-		uuid = "2deb73f7-372e-5d29-a077-431ab1967d93"
 	strings:
 		$s0 = "<shortDescription>Keystroke Logger Plugin.</shortDescription>" fullword ascii
 		$s1 = "<message>Failed to get File Time</message>" fullword ascii

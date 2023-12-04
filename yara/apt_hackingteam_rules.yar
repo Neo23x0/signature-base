@@ -16,7 +16,6 @@ rule bin_ndisk {
 		date = "2015-07-07"
 		score = 100
 		hash = "cf5089752ba51ae827971272a5b761a4ab0acd84"
-		uuid = "f442315e-67c2-55a5-954e-8e7e48aa1243"
 	strings:
 		$s1 = "\\Registry\\Machine\\System\\ControlSet00%d\\services\\ndisk.sys" fullword wide 
 		$s2 = "\\Registry\\Machine\\System\\ControlSet00%d\\Enum\\Root\\LEGACY_NDISK.SYS" fullword wide 
@@ -39,7 +38,6 @@ rule Hackingteam_Elevator_DLL {
 		date = "2015-07-07"
 		score = 70
 		hash = "b7ec5d36ca702cc9690ac7279fd4fea28d8bd060"
-		uuid = "d479c675-b200-56e3-8976-f70b45ea791e"
 	strings:
 		$s1 = "\\sysnative\\CI.dll" ascii 
 		$s2 = "setx TOR_CONTROL_PASSWORD" fullword ascii 
@@ -66,7 +64,6 @@ rule HackingTeam_Elevator_EXE {
 		hash1 = "40a10420b9d49f87527bc0396b19ec29e55e9109e80b52456891243791671c1c"
 		hash2 = "92aec56a859679917dffa44bd4ffeb5a8b2ee2894c689abbbcbe07842ec56b8d"
 		hash = "9261693b67b6e379ad0e57598602712b8508998c0cb012ca23139212ae0009a1"
-		uuid = "a68b68dd-372d-5572-a1e7-1b7e06e986d8"
 	strings:
 		$x1 = "CRTDLL.DLL" fullword ascii
 		$x2 = "\\sysnative\\CI.dll" ascii

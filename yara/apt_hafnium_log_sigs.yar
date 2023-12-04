@@ -5,7 +5,6 @@ rule EXPL_LOG_CVE_2021_27065_Exchange_Forensic_Artefacts_Mar21_1 : LOG {
       author = "Florian Roth (Nextron Systems)"
       reference = "https://www.volexity.com/blog/2021/03/02/active-exploitation-of-microsoft-exchange-zero-day-vulnerabilities/"
       date = "2021-03-02"
-      uuid = "dcc1f741-cab0-5a0b-a261-a6bd05989723"
    strings:
       $s1 = "S:CMD=Set-OabVirtualDirectory.ExternalUrl='" ascii wide fullword
    condition:
@@ -20,7 +19,6 @@ rule EXPL_LOG_CVE_2021_26858_Exchange_Forensic_Artefacts_Mar21_1 : LOG {
       date = "2021-03-02"
       score = 65
       modified = "2021-03-04"
-      uuid = "f6fa90c7-c2c0-56db-bf7b-dc146761a995"
    strings:
       $xr1 = /POST (\/owa\/auth\/Current\/themes\/resources\/logon\.css|\/owa\/auth\/Current\/themes\/resources\/owafont_ja\.css|\/owa\/auth\/Current\/themes\/resources\/lgnbotl\.gif|\/owa\/auth\/Current\/themes\/resources\/owafont_ko\.css|\/owa\/auth\/Current\/themes\/resources\/SegoeUI-SemiBold\.eot|\/owa\/auth\/Current\/themes\/resources\/SegoeUI-SemiLight\.ttf|\/owa\/auth\/Current\/themes\/resources\/lgnbotl\.gif)/   
    condition:
@@ -34,7 +32,6 @@ rule LOG_APT_HAFNIUM_Exchange_Log_Traces_Mar21_1 : LOG {
       reference = "https://www.volexity.com/blog/2021/03/02/active-exploitation-of-microsoft-exchange-zero-day-vulnerabilities/"
       date = "2021-03-04"
       score = 65
-      uuid = "a51f0bd5-c6fd-5ee4-9d30-9a6001778013"
    strings:
       $xr1 = /POST \/(ecp\/y\.js|ecp\/main\.css|ecp\/default\.flt|ecp\/auth\/w\.js|owa\/auth\/w\.js)[^\n]{100,600} (200|301|302) /
 
@@ -52,7 +49,6 @@ rule LOG_Exchange_Forensic_Artefacts_CleanUp_Activity_Mar21_1 : LOG {
       reference = "https://twitter.com/jdferrell3/status/1368626281970024448"
       date = "2021-03-08"
       score = 70
-      uuid = "95b19544-147b-5496-b717-669cbc488179"
    strings:
       $x1 = "cmd.exe /c cd /d C:/inetpub/wwwroot/aspnet_client" ascii wide
       $x2 = "cmd.exe /c cd /d C:\\inetpub\\wwwroot\\aspnet_client" ascii wide
@@ -73,7 +69,6 @@ rule EXPL_LOG_CVE_2021_27055_Exchange_Forensic_Artefacts : LOG {
       date = "2021-03-10"
       modified = "2021-03-15"
       score = 65
-      uuid = "8b0110a9-fd03-5f7d-bdd8-03ff48bcac68"
    strings:
       $x1 = "ServerInfo~" ascii wide
 
@@ -96,7 +91,6 @@ rule LOG_CVE_2021_27065_Exchange_Forensic_Artefacts_Mar21_2 : LOG {
       reference = "https://www.praetorian.com/blog/reproducing-proxylogon-exploit/"
       date = "2021-03-10"
       score = 65
-      uuid = "37a26def-b360-518e-a4ab-9604a5b39afd"
    strings:
       $sr1 = /GET \/rpc\/ &CorrelationID=<empty>;&RequestId=[^\n]{40,600} (200|301|302)/
    condition:

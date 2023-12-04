@@ -16,7 +16,6 @@ rule HDRoot_Sample_Jul17_1 {
       reference = "Winnti HDRoot VT"
       date = "2017-07-07"
       hash1 = "6d2ad82f455becc8c830d000633a370857928c584246a7f41fe722cc46c0d113"
-      uuid = "06356f8a-bacd-51bc-a6f4-107983a9c16e"
    strings:
       $s1 = "gleupdate.dll" fullword ascii
       $s2 = "\\DosDevices\\%ws\\system32\\%ws" wide
@@ -37,7 +36,6 @@ rule HDRoot_Sample_Jul17_2 {
       hash2 = "3b7cfa40e26fb6b079b55ec030aba244a6429e263a3d9832e32ab09e7a3c4a9c"
       hash3 = "71eddf71a94c5fd04c9f3ff0ca1eb6b1770df1a3a8f29689fb8588427b5c9e8e"
       hash4 = "80e088f2fd2dbde0f9bc21e056b6521991929c4e0ecd3eb5833edff6362283f4"
-      uuid = "9ce9c0f4-e6f9-5033-ba74-367e6d741650"
    strings:
       $x1 = "http://microsoftcompanywork.htm" fullword ascii
       $x2 = "compose.aspx?s=%4X%4X%4X%4X%4X%4X" fullword ascii
@@ -71,7 +69,6 @@ rule Unspecified_Malware_Jul17_1A {
       reference = "Winnti HDRoot VT"
       date = "2017-07-07"
       hash1 = "e1c38142b6194237a4cd4603829aa6edb6436e7bba15e3e6b0c9e8c6b629b42b"
-      uuid = "348515d5-784f-519d-b426-87b8a53de5f3"
    strings:
       $s1 = "%SystemRoot%\\System32\\wuauserv.dll" fullword ascii
       $s2 = "systemroot%\\system32\\wuauserv.dll" fullword ascii

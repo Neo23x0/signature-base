@@ -6,7 +6,6 @@ rule APT_APT28_Cannon_Trojan_Nov18_1 {
       reference = "https://researchcenter.paloaltonetworks.com/2018/11/unit42-sofacy-continues-global-attacks-wheels-new-cannon-trojan/"
       date = "2018-11-20"
       hash1 = "61a1f3b4fb4dbd2877c91e81db4b1af8395547eab199bf920e9dd11a1127221e"
-      uuid = "a60f3e75-8bfe-592e-90d1-321bd86173ac"
    strings:
       $xc1 = { 46 6F 72 6D 31 00 63 61 6E 6E 6F 6E 00 4D 44 61
                74 00 41 55 54 48 }

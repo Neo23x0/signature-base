@@ -8,7 +8,6 @@ rule apt_equation_exploitlib_mutexes {
 		date = "2016-02-15"
         modified = "2023-01-27"
         reference = "http://securelist.com/blog/research/68750/equation-the-death-star-of-malware-galaxy/"
-        uuid = "d060bfd7-fb16-55d3-8a39-1197fdd8e759"
     strings:
         $a1="prkMtx" wide
         $a2="cnFormSyncExFBC" wide
@@ -44,7 +43,6 @@ rule apt_equation_equationlaser_runtimeclasses {
 	    version = "1.0"
 	    last_modified = "2015-02-16"
 	    reference = "https://securelist.com/blog/"
-	    uuid = "924c80ca-3607-57aa-85a2-b33ff52b0c1b"
 	strings:
 	    $a1="?a73957838_2@@YAXXZ"
 	    $a2="?a84884@@YAXXZ"
@@ -63,7 +61,6 @@ rule apt_equation_cryptotable {
 	    version = "1.0"
 	    last_modified = "2015-02-16"
 	    reference = "https://securelist.com/blog/"
-	    uuid = "e7f313a3-8ef8-5363-898a-836a96aaa2ff"
 	strings:
 	    $a={37 DF E8 B6 C7 9C 0B AE 91 EF F0 3B 90 C6 80 85 5D 19 4B 45 44 12 3C E2 0D 5C 1C 7B C4 FF D6 05 17 14 4F 03 74 1E 41 DA 8F 7D DE 7E 99 F1 35 AC B8 46 93 CE 23 82 07 EB 2B D4 72 71 40 F3 B0 F7 78 D7 4C D1 55 1A 39 83 18 FA E1 9A 56 B1 96 AB A6 30 C5 5F BE 0C 50 C1}
 	condition:
@@ -80,7 +77,6 @@ rule Equation_Kaspersky_TripleFantasy_1 {
 		reference = "http://goo.gl/ivt8EW"
 		date = "2015/02/16"
 		hash = "b2b2cd9ca6f5864ef2ac6382b7b6374a9fb2cbe9"
-		uuid = "8d2adb3c-70e0-5768-bcfa-be64220064d9"
 	strings:
 		$s0 = "%SystemRoot%\\system32\\hnetcfg.dll" fullword wide
 		$s1 = "%WINDIR%\\System32\\ahlhcib.dll" fullword wide
@@ -114,7 +110,6 @@ rule Equation_Kaspersky_DoubleFantasy_1 {
 		reference = "http://goo.gl/ivt8EW"
 		date = "2015/02/16"
 		hash = "d09b4b6d3244ac382049736ca98d7de0c6787fa2"
-		uuid = "f3c87adf-86c3-5d7c-9532-75341841869a"
 	strings:
 		$z1 = "msvcp5%d.dll" fullword ascii
 
@@ -145,7 +140,6 @@ rule Equation_Kaspersky_GROK_Keylogger {
 		reference = "http://goo.gl/ivt8EW"
 		date = "2015/02/16"
 		hash = "50b8f125ed33233a545a1aac3c9d4bb6aa34b48f"
-		uuid = "1bae3e86-54e5-55e9-8bbd-aa9ec2a0fa2b"
 	strings:
 		$s0 = "c:\\users\\rmgree5\\" ascii
 		$s1 = "msrtdv.sys" fullword wide
@@ -179,7 +173,6 @@ rule Equation_Kaspersky_GreyFishInstaller {
 		reference = "http://goo.gl/ivt8EW"
 		date = "2015/02/16"
 		hash = "58d15d1581f32f36542f3e9fb4b1fc84d2a6ba35"
-		uuid = "ea16b51c-755e-5f08-a209-d21a1ed30fcf"
 	strings:
 		$s0 = "DOGROUND.exe" fullword wide
 		$s1 = "Windows Configuration Services" fullword wide
@@ -196,7 +189,6 @@ rule Equation_Kaspersky_EquationDrugInstaller {
 		reference = "http://goo.gl/ivt8EW"
 		date = "2015/02/16"
 		hash = "61fab1b8451275c7fd580895d9c68e152ff46417"
-		uuid = "fa549e6e-f0d8-55ea-9ec9-c8ec53b55dec"
 	strings:
 		$s0 = "\\system32\\win32k.sys" wide
 		$s1 = "ALL_FIREWALLS" fullword ascii
@@ -220,7 +212,6 @@ rule Equation_Kaspersky_EquationLaserInstaller {
       date = "2015/02/16"
       hash = "5e1f56c1e57fbff96d4999db1fd6dd0f7d8221df"
       score = 80
-      uuid = "15fd5668-36f2-556c-8150-225d3cbd4121"
    strings:
       $s0 = "Failed to get Windows version" fullword ascii
       $s1 = "lsasrv32.dll and lsass.exe" fullword wide
@@ -244,7 +235,6 @@ rule Equation_Kaspersky_FannyWorm {
       modified = "2023-01-06"
       hash = "1f0ae54ac3f10d533013f74f48849de4e65817a7"
       score = 80
-      uuid = "1b8d1ce6-8926-5aa3-8fba-6a8451d66a7d"
    strings:
 
       $s1 = "x:\\fanny.bmp" fullword ascii
@@ -284,7 +274,6 @@ rule Equation_Kaspersky_HDD_reprogramming_module {
 		reference = "http://goo.gl/ivt8EW"
 		date = "2015/02/16"
 		hash = "ff2b50f371eb26f22eb8a2118e9ab0e015081500"
-		uuid = "09ffe270-39e7-5225-b4a9-1c8d312a09c1"
 	strings:
 		$s0 = "nls_933w.dll" fullword ascii
 
@@ -304,7 +293,6 @@ rule Equation_Kaspersky_EOP_Package {
 		reference = "http://goo.gl/ivt8EW"
 		date = "2015/02/16"
 		hash = "2bd1b1f5b4384ce802d5d32d8c8fd3d1dc04b962"
-		uuid = "2eb97873-a415-57be-a8fb-70ef86a99c9b"
 	strings:
 		$s0 = "abababababab" fullword ascii
 		$s1 = "abcdefghijklmnopq" fullword ascii
@@ -325,7 +313,6 @@ rule Equation_Kaspersky_TripleFantasy_Loader {
 		reference = "http://goo.gl/ivt8EW"
 		date = "2015/02/16"
 		hash = "4ce6e77a11b443cc7cbe439b71bf39a39d3d7fa3"
-		uuid = "562e7855-f011-5985-91c0-622b2fec32f8"
 	strings:
 		$x1 = "Original Innovations, LLC" fullword wide
 		$x2 = "Moniter Resource Protocol" fullword wide
@@ -351,7 +338,6 @@ rule Equation_Kaspersky_SuspiciousString {
 		reference = "http://goo.gl/ivt8EW"
 		date = "2015/02/17"
 		score = 60
-		uuid = "a5f203a7-0c50-5658-89f4-44533ed4eef0"
 	strings:
 		$s1 = "i386\\DesertWinterDriver.pdb" fullword
 		$s2 = "Performing UR-specific post-install..."
@@ -373,7 +359,6 @@ rule EquationDrug_NetworkSniffer1 {
       date = "2015/03/11"
       modified = "2023-01-06"
       hash = "26e787997a338d8111d96c9a4c103cf8ff0201ce"
-      uuid = "21a500e7-3011-50e6-b685-f4f65d6dee17"
    strings:
       $s0 = "Microsoft(R) Windows (TM) Operating System" fullword wide
       $s1 = "\\Registry\\User\\CurrentUser\\" wide
@@ -394,7 +379,6 @@ rule EquationDrug_CompatLayer_UnilayDLL {
 		reference = "http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/"
 		date = "2015/03/11"
 		hash = "a3a31937956f161beba8acac35b96cb74241cd0f"
-		uuid = "32fd31c7-cc44-50e1-8888-b9da59ce587b"
 	strings:
 		$s0 = "unilay.dll" fullword ascii
 	condition:
@@ -408,7 +392,6 @@ rule EquationDrug_HDDSSD_Op {
 		reference = "http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/"
 		date = "2015/03/11"
 		hash = "ff2b50f371eb26f22eb8a2118e9ab0e015081500"
-		uuid = "e2698f10-49e8-55da-bddc-e5c887f11bc7"
 	strings:
 		$s0 = "nls_933w.dll" fullword ascii
 	condition:
@@ -422,7 +405,6 @@ rule EquationDrug_NetworkSniffer2 {
 		reference = "http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/"
 		date = "2015/03/11"
 		hash = "7e3cd36875c0e5ccb076eb74855d627ae8d4627f"
-		uuid = "afc5ae23-4965-5796-af3b-9e2705aea455"
 	strings:
 		$s0 = "Microsoft(R) Windows (TM) Operating System" fullword wide
 		$s1 = "IP Transport Driver" fullword wide
@@ -443,7 +425,6 @@ rule EquationDrug_NetworkSniffer3 {
 		reference = "http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/"
 		date = "2015/03/11"
 		hash = "14599516381a9646cd978cf962c4f92386371040"
-		uuid = "c6b1658b-cbc6-535a-a3a2-15ce3cf6e4f6"
 	strings:
 		$s0 = "Corporation. All rights reserved." fullword wide
 		$s1 = "IP Transport Driver" fullword wide
@@ -460,7 +441,6 @@ rule EquationDrug_VolRec_Driver {
 		reference = "http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/"
 		date = "2015/03/11"
 		hash = "ee2b504ad502dc3fed62d6483d93d9b1221cdd6c"
-		uuid = "db4f3f65-bdc4-565d-ad59-25a16ec7c9d2"
 	strings:
 		$s0 = "msrstd.sys" fullword wide
 		$s1 = "msrstd.pdb" fullword ascii
@@ -477,7 +457,6 @@ rule EquationDrug_KernelRootkit {
       date = "2015/03/11"
       modified = "2023-01-06"
       hash = "597715224249e9fb77dc733b2e4d507f0cc41af6"
-      uuid = "92491e30-4041-5c8b-8e4e-7bc2b1d3234b"
    strings:
       $s0 = "Microsoft(R) Windows (TM) Operating System" fullword wide
       $s1 = "Parmsndsrv.dbg" fullword ascii
@@ -498,7 +477,6 @@ rule EquationDrug_Keylogger {
 		reference = "http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/"
 		date = "2015/03/11"
 		hash = "b93aa17b19575a6e4962d224c5801fb78e9a7bb5"
-		uuid = "57b6af34-577b-58ec-9a9e-91911c32270b"
 	strings:
 		$s0 = "\\registry\\machine\\software\\Microsoft\\Windows NT\\CurrentVersion" wide
 		$s2 = "\\registry\\machine\\SYSTEM\\ControlSet001\\Control\\Session Manager\\En" wide
@@ -516,7 +494,6 @@ rule EquationDrug_NetworkSniffer4 {
       date = "2015/03/11"
       modified = "2023-01-06"
       hash = "cace40965f8600a24a2457f7792efba3bd84d9ba"
-      uuid = "12bb1eb3-a14e-5616-bc7c-249c83f97035"
    strings:
       $s0 = "Copyright 1999 RAVISENT Technologies Inc." fullword wide
       $s1 = "\\systemroot\\" ascii
@@ -541,7 +518,6 @@ rule EquationDrug_PlatformOrchestrator {
 		reference = "http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/"
 		date = "2015/03/11"
 		hash = "febc4f30786db7804008dc9bc1cebdc26993e240"
-		uuid = "ce19ed3c-9dd9-5cb0-99fe-c04fde057293"
 	strings:
 		$s0 = "SERVICES.EXE" fullword wide
 		$s1 = "\\command.com" wide
@@ -561,7 +537,6 @@ rule EquationDrug_NetworkSniffer5 {
       date = "2015/03/11"
       modified = "2023-01-06"
       hash = "09399b9bd600d4516db37307a457bc55eedcbd17"
-      uuid = "9eac2c51-3ad7-5346-a985-39733bc204c2"
    strings:
       $s0 = "Microsoft(R) Windows (TM) Operating System" fullword wide
       $s1 = "\\Registry\\User\\CurrentUser\\" wide
@@ -580,7 +555,6 @@ rule EquationDrug_FileSystem_Filter {
 		reference = "http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/"
 		date = "2015/03/11"
 		hash = "57fa4a1abbf39f4899ea76543ebd3688dcc11e13"
-		uuid = "7077daf6-3d51-5ff2-bc74-95cb169a7cd2"
 	strings:
 		$s0 = "volrec.sys" fullword wide
 		$s1 = "volrec.pdb" fullword ascii
@@ -594,7 +568,6 @@ rule apt_equation_keyword {
         description = "Rule to detect Equation group's keyword in executable file"
         last_modified = "2015-09-26"
         reference = "http://securelist.com/blog/research/68750/equation-the-death-star-of-malware-galaxy/"
-        uuid = "a7d4eda5-f390-5099-9c46-bf74a878b4f0"
     strings:
          $a1 = "Backsnarf_AB25" wide
          $a2 = "Backsnarf_AB25" ascii

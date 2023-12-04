@@ -17,7 +17,6 @@ rule gen_macro_ShellExecute_action
 		reference_hash8 = "https://twitter.com/ItsReallyNick/status/1091170625698316288"
 		hash8 = "c77c8033a1e5f694fa119dd7f78811f6015726822121b9414fc01e7de8770447"
 
-		uuid = "4ae3d3d9-de4a-5c5c-9a4a-bedc80b576be"
     strings:
         $com1a = "00A0C91F3880"
         $com1b = "C08AFD90"

@@ -7,7 +7,6 @@ rule ChinaChopper_Generic {
 		reference = "https://www.fireeye.com/content/dam/legacy/resources/pdfs/fireeye-china-chopper-report.pdf"
 		date = "2015/03/10"
 		modified = "2022-10-27"
-		uuid = "2473cef1-88cf-5b76-a87a-2978e6780b4f"
 	strings:
 		$x_aspx = /%@\sPage\sLanguage=.Jscript.%><%eval\(Request\.Item\[.{,100}unsafe/
 		$x_php = /<?php.\@eval\(\$_POST./

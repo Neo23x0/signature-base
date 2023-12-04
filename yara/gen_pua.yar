@@ -10,7 +10,6 @@ rule WinDivert_Driver {
       hash2 = "9b834e8f9d117bf2c564a37434973dc0717270ebfac8d8251711905d18da3858"
       hash3 = "5ef707ea68a9bd3a3e568793a0f7d66d166694801ada067d9ebac1d13e53153e"
       hash4 = "df12afa691e529f01c75b3dd734f6b45bf1488dbf90ced218657f0d205bff319"
-      uuid = "95e89577-bb5a-5391-9130-155746d4783f"
    strings:
       $s1 = "WinDivertDllEntry" fullword ascii
       $s2 = "WinDivertHelperParseIPv4Address" fullword ascii

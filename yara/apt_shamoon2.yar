@@ -17,7 +17,6 @@ rule Shamoon2_Wiper {
       score = 70
       hash1 = "c7fc1f9c2bed748b50a599ee2fa609eb7c9ddaeb9cd16633ba0d10cf66891d8a"
       hash2 = "128fa5815c6fee68463b18051c1a1ccdf28c599ce321691686b1efa4838a2acd"
-      uuid = "6660a64c-daa4-59e6-aa65-55194cac600c"
    strings:
       $a1 = "\\??\\%s\\System32\\%s.exe" fullword wide
       $x1 = "IWHBWWHVCIDBRAFUASIIWURRTWRTIBIVJDGWTRRREFDEAEBIAEBJGGCSVUHGVJUHADIEWAFGWADRUWDTJBHTSITDVVBCIDCWHRHVTDVCDESTHWSUAEHGTWTJWFIRTBRB" wide
@@ -35,7 +34,6 @@ rule Shamoon2_ComComp {
       date = "2016-12-01"
       score = 70
       hash1 = "61c1c8fc8b268127751ac565ed4abd6bdab8d2d0f2ff6074291b2d54b0228842"
-      uuid = "72068264-4f71-59fb-b3d8-938285ec8c7f"
    strings:
       $s1 = "mkdir %s%s > nul 2>&1" fullword ascii
       $s2 = "p[%s%s%d.%s" fullword ascii
@@ -57,7 +55,6 @@ rule EldoS_RawDisk {
       score = 50
       hash1 = "47bb36cd2832a18b5ae951cf5a7d44fba6d8f5dca0a372392d40f51d1fe1ac34"
       hash2 = "394a7ebad5dfc13d6c75945a61063470dc3b68f7a207613b79ef000e1990909b"
-      uuid = "8a43f425-86b7-5a05-b7c3-13c78aa905f8"
    strings:
       $s1 = "g\\system32\\" wide
       $s2 = "ztvttw" fullword wide

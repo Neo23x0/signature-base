@@ -30,7 +30,6 @@ rule Sliver_Implant_32bit
     reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
     date = "2022-11-18"
 
-    uuid = "6bc4d7d1-64cf-5920-8f07-54a8a7a94f26"
   strings:
     // We look for the specific switch/case statement case values.
 
@@ -110,7 +109,6 @@ rule Sliver_Implant_64bit
     reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
     date = "2022-11-18"
 
-    uuid = "b84db933-0e11-5871-821d-43697c015665"
   strings:
     // We look for the specific switch/case statement case values.
 

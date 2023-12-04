@@ -8,7 +8,6 @@ rule APT_DonotTeam_YTYframework : APT DonotTeam Windows {
       reference = "https://www.arbornetworks.com/blog/asert/donot-team-leverages-new-modular-malware-framework-south-asia/"
       reference2 = "https://labs.bitdefender.com/2017/09/ehdevel-the-story-of-a-continuously-improving-advanced-threat-creation-toolkit/"
       date = "08-03-2018"
-      uuid = "6dd07019-aa5a-5966-8331-b6f6758b0652"
    strings:
       $x1 = "/football/download2/" ascii wide
       $x2 = "/football/download/" ascii wide

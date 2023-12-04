@@ -2,7 +2,6 @@ rule Explosive_EXE : APT {
 	meta:
 		description = "Explosion/Explosive Malware - Volatile Cedar APT"
 		author = "Check Point Software Technologies Inc."
-		uuid = "3a9fb6b2-2f19-5d70-81ed-a08c3b8b2d80"
 	strings:
 		$DLD_S = "DLD-S:"
 		$DLD_E = "DLD-E:"
@@ -20,7 +19,6 @@ rule Explosion_Sample_1 {
 		date = "2015/04/03"
 		score = 70
 		hash = "c97693ecb36247bdb44ab3f12dfeae8be4d299bb"
-		uuid = "dcf28185-75a8-5c9f-9f60-edb8dc187e16"
 	strings:
 		$s5 = "REG ADD \"HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Run" ascii
 		$s9 = "WinAutologon From Winlogon Reg" fullword ascii
@@ -46,7 +44,6 @@ rule Explosion_Sample_2 {
 		date = "2015/04/03"
 		score = 70
 		hash = "62fe6e9e395f70dd632c70d5d154a16ff38dcd29"
-		uuid = "8be7ed50-0bfc-5302-b4fa-8817bf1750d7"
 	strings:
 		$s0 = "serverhelp.dll" fullword wide
 		$s1 = "Windows Help DLL" fullword wide
@@ -70,7 +67,6 @@ rule Explosion_Generic_1 {
 		hash2 = "d8fdcdaad652c19f4f4676cd2f89ae834dbc19e2759a206044b18601875f2726"
 		hash3 = "e2e6ed82703de21eb4c5885730ba3db42f3ddda8b94beb2ee0c3af61bc435747"
 		hash4 = "03641e5632673615f23b2a8325d7355c4499a40f47b6ae094606a73c56e24ad0"
-		uuid = "dc3721b6-c19e-5449-9962-2a6f844e49b4"
 	strings:
 		$s0 = "autorun.exe" fullword
 		$s1 = "User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; MSIE 6.0; Windows NT 5.1; .NET CL"
@@ -95,7 +91,6 @@ rule Explosive_UA {
 		reference = "http://goo.gl/HQRCdw"
 		date = "2015/04/03"
 		score = 60
-		uuid = "d88d5fd6-adf9-5ced-8b79-e47e3ffbde50"
 	strings:
 		$x1 = "Mozilla/4.0 (compatible; MSIE 7.0; MSIE 6.0; Windows NT 5.1; .NET CLR 2.0.50727)" fullword
 	condition:
@@ -112,7 +107,6 @@ rule Webshell_Caterpillar_ASPX {
 		date = "2015/04/03"
 		super_rule = 1
 		hash0 = "af4c99208fb92dc42bc98c4f96c3536ec8f3fe56"
-		uuid = "9af48c64-3768-5765-8245-38df000598a7"
 	strings:
 		$s0 = "Dim objNewRequest As WebRequest = HttpWebRequest.Create(sURL)" fullword
 		$s1 = "command = \"ipconfig /all\"" fullword

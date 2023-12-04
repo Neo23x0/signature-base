@@ -15,7 +15,6 @@ rule PowerShell_ISESteroids_Obfuscation {
       author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/danielhbohannon/status/877953970437844993"
       date = "2017-06-23"
-      uuid = "d686c4de-28fd-5d77-91d4-dde5661b75cd"
    strings:
       $x1 = "/\\/===\\__" ascii
       $x2 = "${__/\\/==" ascii
@@ -31,7 +30,6 @@ rule SUSP_Obfuscted_PowerShell_Code {
       date = "2018-12-13"
       author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/silv0123/status/1073072691584880640"
-      uuid = "e2d8fc9e-ce2b-5118-8305-0d5839561d4f"
    strings:
       $s1 = "').Invoke(" ascii
       $s2 = "(\"{1}{0}\"" ascii
@@ -46,7 +44,6 @@ rule SUSP_PowerShell_Caret_Obfuscation_2 {
       author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2019-07-20"
-      uuid = "976e261a-029c-5703-835f-a235c5657471"
    strings:
       $r1 = /p[\^]?o[\^]?w[\^]?e[\^]?r[\^]?s[\^]?h[\^]?e[\^]?l\^l/ ascii wide nocase fullword
       $r2 = /p\^o[\^]?w[\^]?e[\^]?r[\^]?s[\^]?h[\^]?e[\^]?l[\^]?l/ ascii wide nocase fullword
@@ -61,7 +58,6 @@ rule SUSP_OBFUSC_PowerShell_True_Jun20_1 {
       reference = "https://github.com/corneacristian/mimikatz-bypass/"
       date = "2020-06-27"
       score = 75
-      uuid = "e9bb870b-ad72-57d3-beff-2f84a81490eb"
    strings:
       $ = "${t`rue}" ascii nocase
       $ = "${tr`ue}" ascii nocase

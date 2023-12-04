@@ -17,7 +17,6 @@ rule CheshireCat_Sample2 {
 		date = "2015-08-08"
 		score = 70
 		hash = "dc18850d065ff6a8364421a9c8f9dd5fcce6c7567f4881466cee00e5cd0c7aa8"
-		uuid = "14448138-0af3-5669-8aa3-f9e773e2a008"
 	strings:
 		$s0 = "mpgvwr32.dll" fullword ascii
 		$s1 = "Unexpected failure of wait! (%d)" fullword ascii
@@ -45,7 +44,6 @@ rule CheshireCat_Gen1 {
 		hash2 = "32159d2a16397823bc882ddd3cd77ecdbabe0fde934e62f297b8ff4d7b89832a"
 		hash3 = "63735d555f219765d486b3d253e39bd316bbcb1c0ec595ea45ddf6e419bef3cb"
 		hash4 = "c074aeef97ce81e8c68b7376b124546cabf40e2cd3aff1719d9daa6c3f780532"
-		uuid = "2068feed-2101-5b12-9e36-db7b0f5cc4ec"
 	strings:
 		$x1 = "CAPESPN.DLL" fullword wide
 		$x2 = "WINF.DLL" fullword wide
@@ -86,7 +84,6 @@ rule CheshireCat_Gen2 {
 		hash2 = "32159d2a16397823bc882ddd3cd77ecdbabe0fde934e62f297b8ff4d7b89832a"
 		hash3 = "63735d555f219765d486b3d253e39bd316bbcb1c0ec595ea45ddf6e419bef3cb"
 		hash4 = "c074aeef97ce81e8c68b7376b124546cabf40e2cd3aff1719d9daa6c3f780532"
-		uuid = "b97b20bd-f6b9-512f-ba99-6c38ba7853be"
 	strings:
 		$a1 = "Interface\\%s\\info" fullword ascii
 		$a2 = "Interface\\%s\\info\\%s" fullword ascii

@@ -7,7 +7,6 @@ rule LOG_EXPL_SharePoint_CVE_2023_29357_Sep23_1 {
       date = "2023-09-28"
       modified = "2023-10-01"
       score = 70
-      uuid = "9fa77216-c0d6-55e5-bbcc-adb9438ca456"
    strings:
       /* 
          references:
@@ -27,7 +26,6 @@ rule HKTL_EXPL_POC_PY_SharePoint_CVE_2023_29357_Sep23_1 {
       date = "2023-10-01"
       modified = "2023-10-01"
       score = 80
-      uuid = "2be524ab-f360-56b8-9ce3-e15036855c67"
    strings:
       $x1 = "encoded_payload = base64.urlsafe_b64encode(json.dumps(payload).encode()).rstrip(b'=')"
    condition:
@@ -41,7 +39,6 @@ rule HKTL_EXPL_POC_NET_SharePoint_CVE_2023_29357_Sep23_1 {
       reference = "https://github.com/LuemmelSec/CVE-2023-29357"
       date = "2023-10-01"
       score = 80
-      uuid = "aa6aeb00-b162-538c-a670-cbff525dd8f1"
    strings:
       $x1 = "{f22d2de0-606b-4d16-98d5-421f3f1ba8bc}" ascii wide
       $x2 = "{F22D2DE0-606B-4D16-98D5-421F3F1BA8BC}" ascii wide

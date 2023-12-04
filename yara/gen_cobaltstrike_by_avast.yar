@@ -5,7 +5,6 @@ rule Cobaltbaltstrike_RAW_Payload_dns_stager_x86
     author = "Avast Threat Intel Team"
     description = "Detects CobaltStrike payloads"
     reference = "https://github.com/avast/ioc"
-    uuid = "817c4a72-7be1-5a58-987d-fe203d7778ea"
   strings:
     // x86 default eop
     $h01 = { FC E8 89 00 00 00 60 89 E5 31 D2 64 8B 52 30 8B 52 0C 8B 52 14 8B 72 28 }
@@ -34,7 +33,6 @@ rule Cobaltbaltstrike_RAW_Payload_smb_stager_x86
     author = "Avast Threat Intel Team"
     description = "Detects CobaltStrike payloads"
     reference = "https://github.com/avast/ioc"
-    uuid = "29911a14-08ea-54de-9c07-630c6516bd49"
   strings:
     // x86 default eop
     $h01 = { FC E8 89 00 00 00 60 89 E5 31 D2 64 8B 52 30 8B 52 0C 8B 52 14 8B 72 28 }
@@ -67,7 +65,6 @@ rule Cobaltbaltstrike_RAW_Payload_TCP_Bind_x86
     author = "Avast Threat Intel Team"
     description = "Detects CobaltStrike payloads"
     reference = "https://github.com/avast/ioc"
-    uuid = "ec0a9e27-3650-5393-a93b-2a461b9a0e29"
   strings:
     // x86 default eop
     $h01 = { FC E8 89 00 00 00 60 89 E5 31 D2 64 8B 52 30 8B 52 0C 8B 52 14 8B 72 28 }
@@ -108,7 +105,6 @@ rule Cobaltbaltstrike_RAW_Payload_TCP_Bind_x64
     author = "Avast Threat Intel Team"
     description = "Detects CobaltStrike payloads"
     reference = "https://github.com/avast/ioc"
-    uuid = "3575408a-3309-5723-a49a-9c2088d43de9"
   strings:
     // x64 default eop
     $h01 = { FC 48 83 E4 F0 E8 C8 00 00 00 41 51 41 50 52 51 56 48 31 D2 65 48 8B 52 }
@@ -147,7 +143,6 @@ rule Cobaltbaltstrike_RAW_Payload_TCP_Reverse_x86
     author = "Avast Threat Intel Team"
     description = "Detects CobaltStrike payloads"
     reference = "https://github.com/avast/ioc"
-    uuid = "ac824189-614d-5bff-9bbb-a4244cace563"
   strings:
     // x86 default eop
     $h01 = { FC E8 89 00 00 00 60 89 E5 31 D2 64 8B 52 30 8B 52 0C 8B 52 14 8B 72 28 }
@@ -180,7 +175,6 @@ rule Cobaltbaltstrike_RAW_Payload_TCP_Reverse_x64
     author = "Avast Threat Intel Team"
     description = "Detects CobaltStrike payloads"
     reference = "https://github.com/avast/ioc"
-    uuid = "21151a9c-1d15-514f-b33b-c9eff08463fb"
   strings:
     // x64 default eop
     $h01 = { FC 48 83 E4 F0 E8 C8 00 00 00 41 51 41 50 52 51 56 48 31 D2 65 48 8B 52 }
@@ -213,7 +207,6 @@ rule Cobaltbaltstrike_RAW_Payload_http_stager_x86
     author = "Avast Threat Intel Team"
     description = "Detects CobaltStrike payloads"
     reference = "https://github.com/avast/ioc"
-    uuid = "01f89b14-55f2-5a5e-b0d5-6bca609621fe"
   strings:
     // x86 default eop
     $h01 = { FC E8 89 00 00 00 60 89 E5 31 D2 64 8B 52 30 8B 52 0C 8B 52 14 8B 72 28 }
@@ -252,7 +245,6 @@ rule Cobaltbaltstrike_RAW_Payload_http_stager_x64
     author = "Avast Threat Intel Team"
     description = "Detects CobaltStrike payloads"
     reference = "https://github.com/avast/ioc"
-    uuid = "7eeeb2a1-4903-5649-ae30-fd43367ab468"
   strings:
     // x64 default eop
     $h01 = { FC 48 83 E4 F0 E8 C8 00 00 00 41 51 41 50 52 51 56 48 31 D2 65 48 8B 52 }
@@ -286,7 +278,6 @@ rule Cobaltbaltstrike_RAW_Payload_https_stager_x86
     author = "Avast Threat Intel Team"
     description = "Detects CobaltStrike payloads"
     reference = "https://github.com/avast/ioc"
-    uuid = "f1d7e939-92b5-5441-8014-b2390854d059"
   strings:
     // x86 default eop
     $h01 = { FC E8 89 00 00 00 60 89 E5 31 D2 64 8B 52 30 8B 52 0C 8B 52 14 8B 72 28 }
@@ -328,7 +319,6 @@ rule Cobaltbaltstrike_RAW_Payload_https_stager_x64
     author = "Avast Threat Intel Team"
     description = "Detects CobaltStrike payloads"
     reference = "https://github.com/avast/ioc"
-    uuid = "5f9c7426-63be-5049-91fc-63b5c29618bd"
   strings:
     // x64 default eop
     $h01 = { FC 48 83 E4 F0 E8 C8 00 00 00 41 51 41 50 52 51 56 48 31 D2 65 48 8B 52 }
@@ -363,7 +353,6 @@ rule Cobaltbaltstrike_RAW_Payload_dns_stager_x86_UTF16
     author = "Avast Threat Intel Team"
     description = "Detects CobaltStrike payloads"
     reference = "https://github.com/avast/ioc"
-    uuid = "d148ca33-b233-519d-8ba4-d389de721d15"
   strings:
     // x86 default eop utf-16
     $h01 = { FC 00 E8 00 89 00 00 00 00 00 00 00 60 00 89 00 E5 00 31 00 D2 00 64 00 8B 00 52 00 30 00 8B 00 52 00 0C 00 8B 00 52 00 14 00 8B 00 72 00 28 }
@@ -382,7 +371,6 @@ rule Cobaltbaltstrike_RAW_Payload_smb_stager_x86_UTF16
     author = "Avast Threat Intel Team"
     description = "Detects CobaltStrike payloads"
     reference = "https://github.com/avast/ioc"
-    uuid = "d88e050f-9e6c-5349-b809-ad7dc25a79b9"
   strings:
     // x86 default eop utf-16
     $h01 = { FC 00 E8 00 89 00 00 00 00 00 00 00 60 00 89 00 E5 00 31 00 D2 00 64 00 8B 00 52 00 30 00 8B 00 52 00 0C 00 8B 00 52 00 14 00 8B 00 72 00 28 }
@@ -403,7 +391,6 @@ rule Cobaltbaltstrike_RAW_Payload_TCP_Bind_x86_UTF16
     author = "Avast Threat Intel Team"
     description = "Detects CobaltStrike payloads"
     reference = "https://github.com/avast/ioc"
-    uuid = "7f17985d-b245-5e95-9b35-af669aafc263"
   strings:
     // x86 default eop utf-16
     $h01 = { FC 00 E8 00 89 00 00 00 00 00 00 00 60 00 89 00 E5 00 31 00 D2 00 64 00 8B 00 52 00 30 00 8B 00 52 00 0C 00 8B 00 52 00 14 00 8B 00 72 00 28 }
@@ -428,7 +415,6 @@ rule Cobaltbaltstrike_RAW_Payload_TCP_Bind_x64_UTF16
     author = "Avast Threat Intel Team"
     description = "Detects CobaltStrike payloads"
     reference = "https://github.com/avast/ioc"
-    uuid = "bd52fb44-379a-5c82-9c7c-b10c8080b53f"
   strings:
     // x64 default eop utf16
     $h01 = { FC 00 48 00 83 00 E4 00 F0 00 E8 00 C8 00 00 00 00 00 00 00 41 00 51 00 41 00 50 00 52 00 51 00 56 00 48 00 31 00 D2 00 65 00 48 00 8B 00 52 }
@@ -452,7 +438,6 @@ rule Cobaltbaltstrike_RAW_Payload_TCP_Reverse_x86_UTF16
     author = "Avast Threat Intel Team"
     description = "Detects CobaltStrike payloads"
     reference = "https://github.com/avast/ioc"
-    uuid = "321c1f3f-b7fc-5408-b460-6aa4423d381c"
   strings:
     // x86 default eop utf-16
     $h01 = { FC 00 E8 00 89 00 00 00 00 00 00 00 60 00 89 00 E5 00 31 00 D2 00 64 00 8B 00 52 00 30 00 8B 00 52 00 0C 00 8B 00 52 00 14 00 8B 00 72 00 28 }
@@ -473,7 +458,6 @@ rule Cobaltbaltstrike_RAW_Payload_TCP_Reverse_x64_UTF16
     author = "Avast Threat Intel Team"
     description = "Detects CobaltStrike payloads"
     reference = "https://github.com/avast/ioc"
-    uuid = "1cc2494c-1f39-5a72-93af-c267eaf768fe"
   strings:
     // x64 default eop utf16
     $h01 = { FC 00 48 00 83 00 E4 00 F0 00 E8 00 C8 00 00 00 00 00 00 00 41 00 51 00 41 00 50 00 52 00 51 00 56 00 48 00 31 00 D2 00 65 00 48 00 8B 00 52 }
@@ -494,7 +478,6 @@ rule Cobaltbaltstrike_RAW_Payload_http_stager_x86_UTF16
     author = "Avast Threat Intel Team"
     description = "Detects CobaltStrike payloads"
     reference = "https://github.com/avast/ioc"
-    uuid = "c1602e85-5b42-5005-a6d1-7140cb57a3c7"
   strings:
     // x86 default eop utf-16
     $h01 = { FC 00 E8 00 89 00 00 00 00 00 00 00 60 00 89 00 E5 00 31 00 D2 00 64 00 8B 00 52 00 30 00 8B 00 52 00 0C 00 8B 00 52 00 14 00 8B 00 72 00 28 }
@@ -518,7 +501,6 @@ rule Cobaltbaltstrike_RAW_Payload_http_stager_x64_UTF16
     author = "Avast Threat Intel Team"
     description = "Detects CobaltStrike payloads"
     reference = "https://github.com/avast/ioc"
-    uuid = "78672e3b-6f76-573a-8a9a-610334baa389"
   strings:
     // x64 default eop utf16
     $h01 = { FC 00 48 00 83 00 E4 00 F0 00 E8 00 C8 00 00 00 00 00 00 00 41 00 51 00 41 00 50 00 52 00 51 00 56 00 48 00 31 00 D2 00 65 00 48 00 8B 00 52 }
@@ -539,7 +521,6 @@ rule Cobaltbaltstrike_RAW_Payload_https_stager_x86_UTF16
     author = "Avast Threat Intel Team"
     description = "Detects CobaltStrike payloads"
     reference = "https://github.com/avast/ioc"
-    uuid = "dcd3e5c8-7626-5a78-9f90-7a8e67311d90"
   strings:
     // x86 default eop utf-16
     $h01 = { FC 00 E8 00 89 00 00 00 00 00 00 00 60 00 89 00 E5 00 31 00 D2 00 64 00 8B 00 52 00 30 00 8B 00 52 00 0C 00 8B 00 52 00 14 00 8B 00 72 00 28 }
@@ -564,7 +545,6 @@ rule Cobaltbaltstrike_RAW_Payload_https_stager_x64_UTF16
     author = "Avast Threat Intel Team"
     description = "Detects CobaltStrike payloads"
     reference = "https://github.com/avast/ioc"
-    uuid = "aa93dd56-9589-5958-9711-ca2f9c763665"
   strings:
     // x64 default eop utf-16
     $h01 = { FC 00 48 00 83 00 E4 00 F0 00 E8 00 C8 00 00 00 00 00 00 00 41 00 51 00 41 00 50 00 52 00 51 00 56 00 48 00 31 00 D2 00 65 00 48 00 8B 00 52 }
@@ -586,7 +566,6 @@ rule Cobaltbaltstrike_Payload_Encoded
     author = "Avast Threat Intel Team"
     description = "Detects CobaltStrike payloads"
     reference = "https://github.com/avast/ioc"
-    uuid = "b5176740-2dda-5e5d-8c0f-47a27846753d"
   strings:
     // x86 array
     $s01 = "0xfc, 0xe8, 0x89, 0x00, 0x00, 0x00, 0x60, 0x89, 0xe5, 0x31, 0xd2, 0x64, 0x8b, 0x52, 0x30, 0x8b" ascii wide nocase
@@ -641,7 +620,6 @@ rule Cobaltbaltstrike_strike_Payload_XORed
     author = "Avast Threat Intel Team"
     description = "Detects CobaltStrike payloads"
     reference = "https://github.com/avast/ioc"
-    uuid = "0e075644-e278-5c5b-bdcc-dc2d6a32ce73"
   strings:
     $h01 = { 10 ?? 00 00 ?? ?? ?? 00 ?? ?? ?? ?? 61 61 61 61 }
   condition:
@@ -663,7 +641,6 @@ rule Cobaltbaltstrike_Beacon_x86
     author = "Avast Threat Intel Team"
     description = "Detects CobaltStrike payloads"
     reference = "https://github.com/avast/ioc"
-    uuid = "6ffaafe6-2758-53e4-b5b8-6d8350baf428"
   strings:
     // x86 default MZ header
     $h01 = { 4D 5A E8 00 00 00 00 5B 89 DF 52 45 55 89 E5 81 C3 ?? ?? ?? ?? FF D3 68 }
@@ -684,7 +661,6 @@ rule Cobaltbaltstrike_Beacon_x64
     author = "Avast Threat Intel Team"
     description = "Detects CobaltStrike payloads"
     reference = "https://github.com/avast/ioc"
-    uuid = "5d6d86ec-9e05-5596-b623-30f44c6f44db"
   strings:
     // x64 default MZ header
     $h01 = { 4D 5A 41 52 55 48 89 E5 48 81 EC 20 00 00 00 48 8D 1D EA FF FF FF 48 89 }
@@ -705,7 +681,6 @@ rule Cobaltbaltstrike_Beacon_Encoded
     author = "Avast Threat Intel Team"
     description = "Detects CobaltStrike payloads"
     reference = "https://github.com/avast/ioc"
-    uuid = "497e2a32-015a-5786-a6fa-de7084bfc389"
   strings:
     // x86 array
     $s01 = "0x4d, 0x5a, 0xe8, 0x00, 0x00, 0x00, 0x00, 0x5b, 0x89, 0xdf, 0x52, 0x45, 0x55, 0x89, 0xe5, 0x81" ascii wide nocase
@@ -759,7 +734,6 @@ rule Cobaltbaltstrike_Beacon_XORed_x86
     author = "Avast Threat Intel Team"
     description = "Detects CobaltStrike payloads"
     reference = "https://github.com/avast/ioc"
-    uuid = "d93c20e6-3e01-5132-88a0-63ace507cae9"
   strings:
     // x86 xor decrypt loop
         // 52 bytes variant
@@ -784,7 +758,6 @@ rule Cobaltbaltstrike_Beacon_XORed_x64
     author = "Avast Threat Intel Team"
     description = "Detects CobaltStrike payloads"
     reference = "https://github.com/avast/ioc"
-    uuid = "15be610a-7552-5473-8da2-639220313783"
   strings:
         // x64 xor decrypt loop
     $h01 = { FC 4883E4F0 EB33 5D 8B4500 4883C504 8B4D00 31C1 4883C504 55 8B5500 31C2 895500 31D0 4883C504 83E904 31D2 39D1 7402 EBE7 58 FC 4883E4F0 FFD0 E8C8FFFFFF }

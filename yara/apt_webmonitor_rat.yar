@@ -7,7 +7,6 @@ rule MAL_WebMonitor_RAT {
       date = "2018-04-13"
       hash1 = "27aaad8a7b3fd53d99077a9202e8bed05696c843ed2485bea6eb9e33a1c273ac"
       hash2 = "05111c305028b5d822ecd12de9879560223c42860cc9d448c47886c236648607"
-      uuid = "5378f22e-4bba-50e7-8374-5135e980e06b"
    strings:
       $x1 = "send_keylog_stream_start" fullword wide
       $x2 = "KEYLOG_STREAM_STOP" fullword wide

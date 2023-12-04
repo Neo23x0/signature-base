@@ -19,7 +19,6 @@ rule Xtreme_Sep17_1 {
       reference = "Internal Research"
       date = "2017-09-27"
       hash1 = "93c89044e8850721d39e935acd3fb693de154b7580d62ed460256cabb75599a6"
-      uuid = "7517e237-9cad-5619-9028-4c7ab5463040"
    strings:
       $x1 = "ServerKeyloggerU" fullword ascii
       $x2 = "TServerKeylogger" fullword ascii
@@ -44,7 +43,6 @@ rule Xtreme_Sep17_2 {
       reference = "Internal Research"
       date = "2017-09-27"
       hash1 = "f8413827c52a5b073bdff657d6a277fdbfda29d909b4247982f6973424fa2dcc"
-      uuid = "b4878e80-54dc-5a16-9129-ddf2b1a5d287"
    strings:
       $s1 = "Spy24.exe" fullword wide
       $s2 = "Remote Service Application" fullword wide
@@ -60,7 +58,6 @@ rule Xtreme_Sep17_3 {
       reference = "Internal Research"
       date = "2017-09-27"
       hash1 = "f540a4cac716438da0c1c7b31661abf35136ea69b963e8f16846b96f8fd63dde"
-      uuid = "160673ea-b263-520a-a1c1-da0f3e920f12"
    strings:
       $s2 = "Keylogg" fullword ascii
       $s4 = "XTREME" fullword wide
@@ -76,7 +73,6 @@ rule Xtreme_RAT_Gen_Imp {
       reference = "Internal Research"
       date = "2017-09-27"
       hash1 = "7b5082bcc8487bb65c38e34c192c2a891e7bb86ba97281352b0837debee6f1cf"
-      uuid = "10b23099-2a87-5918-927b-f20bcba1cd70"
    condition:
       uint16(0) == 0x5a4d and filesize < 300KB and (
          pe.imphash() == "d0bdf112886f3d846cc7780967d8efb9" or

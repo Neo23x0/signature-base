@@ -15,7 +15,6 @@ rule SysInternals_Tool_Anomaly {
       score = 50
       reference = "Internal Research"
       date = "2016-12-06"
-      uuid = "b676726b-7ecd-52ed-bdec-3d81b7596246"
    strings:
       $s1 = "Software\\Sysinternals\\%s" fullword ascii
 

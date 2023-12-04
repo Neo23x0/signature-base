@@ -7,7 +7,6 @@ rule VULN_PUA_GIGABYTE_Driver_Jul22_1 {
       date = "2022-07-25"
       score = 65
       hash1 = "31f4cfb4c71da44120752721103a16512444c13c2ac2d857a7e6f13cb679b427"
-      uuid = "c66b858f-a034-53e1-b0fd-e48693fc6913"
    strings:
       $xc1 = { 00 46 00 69 00 6C 00 65 00 56 00 65 00 72 00 73
                00 69 00 6F 00 6E 00 00 00 00 00 35 00 2E 00 32

@@ -15,7 +15,6 @@ rule Emdivi_SFX {
 		score = 70
 		hash1 = "7a3c81b2b3c14b9cd913692347019887b607c54152b348d6d3ccd3ecfd406196"
 		hash2 = "8c3df4e4549db3ce57fc1f7b1b2dfeedb7ba079f654861ca0b608cbfa1df0f6b"
-		uuid = "51367190-2e8d-507c-a19f-996bc6960977"
 	strings:
 		$x1 = "Setup=unsecess.exe" fullword ascii
 		$x2 = "Setup=leassnp.exe" fullword ascii
@@ -41,7 +40,6 @@ rule Emdivi_Gen1 {
 		hash2 = "3553c136b4eba70eec5d80abe44bd7c7c33ab1b65de617dbb7be5025c9cf01f1"
 		hash3 = "6a331c4e654dd8ddaa2c69d260aa5f4f76f243df8b5019d62d4db5ae5c965662"
 		hash4 = "90d07ea2bb80ed52b007f57d0d9a79430cd50174825c43d5746a16ee4f94ea86"
-		uuid = "807cf3f9-4f58-5d22-88b2-9adb7866979f"
 	strings:
 		$x1 = "wmic nteventlog where filename=\"SecEvent\" call cleareventlog" fullword wide
 		$x2 = "del %Temp%\\*.exe %Temp%\\*.dll %Temp%\\*.bat %Temp%\\*.ps1 %Temp%\\*.cmd /f /q" fullword wide
@@ -71,7 +69,6 @@ rule Emdivi_Gen2 {
 		hash1 = "9a351885bf5f6fec466f30021088504d96e9db10309622ed198184294717add1"
 		hash2 = "a5be7cb1f37030c9f9211c71e0fbe01dae19ff0e6560c5aab393621f18a7d012"
 		hash3 = "9183abb9b639699cd2ad28d375febe1f34c14679b7638d1a79edb49d920524a4"
-		uuid = "9a77c85c-84b0-5e0f-93bc-e17e2aaec095"
 	strings:
 		$s1 = "%TEMP%\\IELogs\\" ascii
 		$s2 = "MSPUB.EXE" fullword ascii
@@ -95,7 +92,6 @@ rule MAL_Emdivi_Gen3 {
       score = 80
       hash1 = "008f4f14cf64dc9d323b6cb5942da4a99979c4c7d750ec1228d8c8285883771e"
       hash2 = "a94bf485cebeda8e4b74bbe2c0a0567903a13c36b9bf60fab484a9b55207fe0d"
-      uuid = "c3d712ae-3f8e-578c-81cd-fd3e48213875"
    strings:
       $x1 = "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727.42)" fullword ascii
 
@@ -127,7 +123,6 @@ rule Emdivi_Gen4 {
 		hash4 = "6a331c4e654dd8ddaa2c69d260aa5f4f76f243df8b5019d62d4db5ae5c965662"
 		hash5 = "90d07ea2bb80ed52b007f57d0d9a79430cd50174825c43d5746a16ee4f94ea86"
 		hash6 = "a94bf485cebeda8e4b74bbe2c0a0567903a13c36b9bf60fab484a9b55207fe0d"
-		uuid = "02629873-a797-51ff-83fc-af499cafa1e8"
 	strings:
 		$s1 = ".http_port\", " fullword wide
 		$s2 = "UserAgent: " fullword ascii

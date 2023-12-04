@@ -8,7 +8,6 @@ rule ATM_Malware_Loup {
 		date = "2020-08-17"
 		hash = "6c9e9f78963ab3e7acb43826906af22571250dc025f9e7116e0201b805dc1196"
 		
-		uuid = "2215a93f-d854-5f9b-b5cd-53962c45db08"
 	strings:
 		$String1 = "C:\\Users\\muham\\source\\repos\\loup\\Debug\\loup.pdb" ascii /* nocase */
 		$String2 = "CurrencyDispenser1" ascii /* nocase */

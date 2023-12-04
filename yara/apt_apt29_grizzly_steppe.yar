@@ -15,7 +15,6 @@ rule GRIZZLY_STEPPE_Malware_1 {
       reference = "https://goo.gl/WVflzO"
       date = "2016-12-29"
       hash1 = "9f918fb741e951a10e68ce6874b839aef5a26d60486db31e509f8dcaa13acec5"
-      uuid = "7239a5f3-9c29-57d7-be95-946d14039353"
    strings:
       $s1 = "S:\\Lidstone\\renewing\\HA\\disable\\In.pdb" fullword ascii
       $s2 = "Repeat last find command)Replace specific text with different text" fullword wide
@@ -36,7 +35,6 @@ rule GRIZZLY_STEPPE_Malware_2 {
       date = "2016-12-29"
       hash1 = "9acba7e5f972cdd722541a23ff314ea81ac35d5c0c758eb708fb6e2cc4f598a0"
       hash2 = "55058d3427ce932d8efcbe54dccf97c9a8d1e85c767814e34f4b2b6a6b305641"
-      uuid = "37cfba67-af85-5efe-9b07-9f1e5d9f9195"
    strings:
       $x1 = "GoogleCrashReport.dll" fullword ascii
 
@@ -55,7 +53,6 @@ rule PAS_TOOL_PHP_WEB_KIT_mod {
       reference = "https://www.us-cert.gov/security-publications/GRIZZLY-STEPPE-Russian-Malicious-Cyber-Activity"
       author = "US CERT - modified by Florian Roth due to performance reasons"
       date = "2016/12/29"
-      uuid = "6bc75e44-7784-5e48-9bbc-052d84ebee83"
    strings:
       $php = "<?php"
       $base64decode1 = "='base'.("
@@ -80,7 +77,6 @@ rule WebShell_PHP_Web_Kit_v3 {
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
       date = "2016/01/01"
-      uuid = "dc5fa2c9-3e1e-594d-be4f-141e1f4915f1"
    strings:
       $php = "<?php $"
       $php2 = "@assert(base64_decode($_REQUEST["
@@ -101,7 +97,6 @@ rule WebShell_PHP_Web_Kit_v4 {
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
       date = "2016/01/01"
-      uuid = "a5f915cd-b9c5-5cd3-b0a2-c15f6124737a"
    strings:
       $php = "<?php $"
 
@@ -123,7 +118,6 @@ rule APT_APT29_wellmess_dotnet_unique_strings {
       author = "NCSC"
       reference = "https://www.ncsc.gov.uk/news/advisory-apt29-targets-covid-19-vaccine-development"
       hash = "2285a264ffab59ab5a1eb4e2b9bcab9baf26750b6c551ee3094af56a4442ac41"
-      uuid = "7a058ec7-f795-5226-b511-ff469a969ee6"
    strings:
       $s1 = "HealthInterval" wide
       $s2 = "Hello from Proxy" wide 
@@ -141,7 +135,6 @@ rule APT_APT29_sorefang_encryption_key_schedule {
       author = "NCSC"
       reference = "https://www.ncsc.gov.uk/news/advisory-apt29-targets-covid-19-vaccine-development"
       hash = "58d8e65976b53b77645c248bfa18c3b87a6ecfb02f306fe6ba4944db96a5ede2"
-      uuid = "8d89edc1-a9fc-5155-9dc2-8d7f952f90d1"
    strings:
       $ = { C7 05 ?? ?? ?? ?? 63 51 E1 B7 B8 ?? ?? ?? ?? 8B 48 
             FC 81 E9 47 86 C8 61 89 08 83 C0 04 3D ?? ?? ?? ?? 
@@ -158,7 +151,6 @@ rule APT_APT29_sorefang_encryption_key_2b62 {
       author = "NCSC"
       reference = "https://www.ncsc.gov.uk/news/advisory-apt29-targets-covid-19-vaccine-development"
       hash = "58d8e65976b53b77645c248bfa18c3b87a6ecfb02f306fe6ba4944db96a5ede2"
-      uuid = "9a7abad7-1cfa-52c8-9416-47cb80486714"
    strings:
       $ = "2b6233eb3e872ff78988f4a8f3f6a3ba"
    condition:
@@ -172,7 +164,6 @@ rule APT_APT29_sorefang_directory_enumeration_output_strings {
       author = "NCSC"
       reference = "https://www.ncsc.gov.uk/news/advisory-apt29-targets-covid-19-vaccine-development"
       hash = "58d8e65976b53b77645c248bfa18c3b87a6ecfb02f306fe6ba4944db96a5ede2"
-      uuid = "e24dbda1-3d43-52a7-9249-70a648f4913e"
    strings:
       $ = "----------All usres directory----------" 
       $ = "----------Desktop directory----------"
@@ -188,7 +179,6 @@ rule APT_APT29_sorefang_command_elem_cookie_ga_boundary_string {
       author = "NCSC"
       reference = "https://www.ncsc.gov.uk/news/advisory-apt29-targets-covid-19-vaccine-development"
       hash = "58d8e65976b53b77645c248bfa18c3b87a6ecfb02f306fe6ba4944db96a5ede2"
-      uuid = "3c6ffbad-9b39-5518-aa66-d76531ddb9ea"
    strings:
       $ = "<Command>" wide
       $ = "Cookie:_ga="
@@ -204,7 +194,6 @@ rule APT_APT29_sorefang_encryption_round_function {
       author = "NCSC"
       reference = "https://www.ncsc.gov.uk/news/advisory-apt29-targets-covid-19-vaccine-development"
       hash = "58d8e65976b53b77645c248bfa18c3b87a6ecfb02f306fe6ba4944db96a5ede2"
-      uuid = "0be1c084-c8df-5920-a320-90364a7fb542"
    strings:
       $ = { 8A E9 8A FB 8A 5D 0F 02 C9 88 45 0F FE C1 0F BE C5 88 6D F3 8D
             14 45 01 00 00 00 0F AF D0 0F BE C5 0F BE C9 0F AF C8 C1 FA 1B C0 E1 05 0A D1 8B 4D EC 0F BE C1 89 55 E4 8D 14 45 01 00 00 00 0F AF D0 8B C1}
@@ -219,7 +208,6 @@ rule APT_APT29_sorefang_add_random_commas_spaces {
       author = "NCSC"
       reference = "https://www.ncsc.gov.uk/news/advisory-apt29-targets-covid-19-vaccine-development"
       hash = "58d8e65976b53b77645c248bfa18c3b87a6ecfb02f306fe6ba4944db96a5ede2"
-      uuid = "9a89c619-6309-500f-b4dc-c8a3e8fc4417"
    strings:
       $ = { E8 ?? ?? ?? ?? B9 06 00 00 00 99 F7 F9 8B CE 83 FA 04 7E 09 6A
             02 68 ?? ?? ?? ?? EB 07 6A 01 68 } 
@@ -234,7 +222,6 @@ rule APT_APT29_sorefang_modify_alphabet_custom_encode {
       author = "NCSC"
       reference = "https://www.ncsc.gov.uk/news/advisory-apt29-targets-covid-19-vaccine-development"
       hash = "58d8e65976b53b77645c248bfa18c3b87a6ecfb02f306fe6ba4944db96a5ede2"
-      uuid = "7c5c1be0-ccad-5c8f-a026-445994b1f279"
    strings:
       $ = { 33 C0 8B CE 6A 36 6A 71 66 89 46 60 88 46 62 89 46 68 66 89 46
             64 }
@@ -248,7 +235,6 @@ rule APT_APT29_sorefang_custom_encode_decode {
       author = "NCSC"
       reference = "https://www.ncsc.gov.uk/news/advisory-apt29-targets-covid-19-vaccine-development"
       hash = "58d8e65976b53b77645c248bfa18c3b87a6ecfb02f306fe6ba4944db96a5ede2"
-      uuid = "4885a659-bb3a-5e33-99cc-b827931bf58f"
    strings:
       $ = { 55 8B EC 8B D1 53 56 8B 75 08 8B DE 80 42 62 FA 8A 4A 62 66 D3
             EB 57 3A 5A 5C 74 0F}
@@ -279,7 +265,6 @@ rule APT_APT29_sorefang_remove_chars_comma_space_dot {
       author = "NCSC"
       reference = "https://www.ncsc.gov.uk/news/advisory-apt29-targets-covid-19-vaccine-development"
       hash = "58d8e65976b53b77645c248bfa18c3b87a6ecfb02f306fe6ba4944db96a5ede2"
-      uuid = "c15779b0-6a5e-5345-94ad-95615b567f1f"
    strings:
       $ = {8A 18 80 FB 2C 74 03 88 19 41 42 40 3B D6 75 F0 8B 5D 08} 
       $ = {8A 18 80 FB 2E 74 03 88 19 41 42 40 3B D6 75 F0 8B 5D 08} 
@@ -294,7 +279,6 @@ rule APT_APT29_sorefang_disk_enumeration_strings {
       author = "NCSC"
       reference = "https://www.ncsc.gov.uk/news/advisory-apt29-targets-covid-19-vaccine-development"
       hash = "a4b790ddffb3d2e6691dcacae08fb0bfa1ae56b6c73d70688b097ffa831af064" 
-      uuid = "0ff01793-6fb7-5cff-b4e4-6709269ab0f0"
    strings:
       $ = "\x0D\x0AFree on disk: "
       $ = "Total disk: "

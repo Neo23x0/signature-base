@@ -23,7 +23,6 @@ rule gen_Excel_xll_addin_suspicious
         hasha="ee603cbd6187850334ae5d8adcf029d5cde710fc966b2b7a2c95249d3b23d693"
         hashb="99195679e998407fd4d606a0d956bda99f79625b638c63f90d9d399c6f2a143e"
         hashc="99534c7086128998ae39967fe5fc6bf526cb2ba5d3b2e99dc7bd03833e4a94ae"
-        uuid = "013db759-ab9d-5505-933b-bda702a0941e"
     strings:
         $s1 = "CryptStringToBinaryA"
         $s2 = "NtQueueApcThread"

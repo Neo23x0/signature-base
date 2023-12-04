@@ -5,7 +5,6 @@ rule ATM_Malware_XFSADM {
       reference = "https://twitter.com/r3c0nst/status/1149043362244308992"
       date = "2019-06-21"
       hash1 = "2740bd2b7aa0eaa8de2135dd710eb669d4c4c91d29eefbf54f1b81165ad2da4d"
-      uuid = "7bd7e194-1cf1-5d12-809b-25aaf7f62ca3"
    strings:
       $Code1 = {68 88 13 00 00 FF 35 ?? ?? ?? ?? 68 CF 00 00 00 50 FF 15} // Read Card Data
       $Code2 = {68 98 01 00 00 50 FF 15} // Get PIN Data

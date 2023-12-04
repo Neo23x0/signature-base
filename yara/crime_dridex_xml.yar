@@ -9,7 +9,6 @@ rule Dridex_Trojan_XML {
 		hash3 = "e528671b1b32b3fa2134a088bfab1ba46b468514"
 		hash4 = "981369cd53c022b434ee6d380aa9884459b63350"
 		hash5 = "96e1e7383457293a9b8f2c75270b58da0e630bea"
-		uuid = "a8f3406c-f8b0-559f-be12-6b2a7d401ac2"
 	strings:
 		// can be ascii or wide formatted - therefore no restriction
 		$c_xml      = "<?xml version="

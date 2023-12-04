@@ -21,7 +21,6 @@ rule MiniRAT_Gen_1 {
       hash3 = "ba4e063472a2559b4baa82d5272304a1cdae6968145c5ef221295c90e88458e2"
       hash4 = "ed97719c008422925ae21ff34448a8c35ee270a428b0478e24669396761d0790"
       hash5 = "675c3d96070dc9a0e437f3e1b653b90dbc6700b0ec57379d4139e65f7d2799cd"
-      uuid = "65d89762-2fd0-5c6a-b706-92d77a03089a"
    strings:
       $x1 = "\\Mini rat\\" ascii
       $x2 = "\\Projects\\ali\\Clever Components v7\\" ascii

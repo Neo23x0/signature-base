@@ -14,7 +14,6 @@ rule COZY_FANCY_BEAR_Hunt {
 		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www.crowdstrike.com/blog/bears-midst-intrusion-democratic-national-committee/"
 		date = "2016-06-14"
-		uuid = "e81b4368-7383-5a48-a89a-f91b9306326e"
 	strings:
 		$s1 = "185.100.84.134" ascii wide fullword
 		$s2 = "58.49.58.58" ascii wide fullword
@@ -34,7 +33,6 @@ rule COZY_FANCY_BEAR_pagemgr_Hunt {
 		author = "Florian Roth (Nextron Systems)"
 		reference = "https://www.crowdstrike.com/blog/bears-midst-intrusion-democratic-national-committee/"
 		date = "2016-06-14"
-		uuid = "3c5c8843-81ba-510c-82ed-4b6e2286bdb2"
 	strings:
 		$s1 = "pagemgr.exe" wide fullword
 	condition:

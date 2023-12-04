@@ -6,7 +6,6 @@ rule APT_Nazar_Svchost_Commands {
         reference = "https://www.epicturla.com/blog/the-lost-nazar"
         hash1 = "2fe9b76496a9480273357b6d35c012809bfa3ae8976813a7f5f4959402e3fbb6"
         hash2 = "be624acab7dfe6282bbb32b41b10a98b6189ab3a8d9520e7447214a7e5c27728"
-        uuid = "3e02381d-de03-50c8-8bde-2974ee96b7c1"
     strings:
         $str1 = { 33 31 34 00 36 36 36 00 33 31 33 00 }
         $str2 = { 33 31 32 00 33 31 35 00 35 35 35 00 }
@@ -36,7 +35,6 @@ rule APT_Nazar_Component_Guids {
         hash11 = "d34a996826ea5a028f5b4713c797247913f036ca0063cc4c18d8b04736fa0b65"
         hash12 = "d9801b4da1dbc5264e83029abb93e800d3c9971c650ecc2df5f85bcc10c7bd61"
         hash13 = "eb705459c2b37fba5747c73ce4870497aa1d4de22c97aaea4af38cdc899b51d3"
-        uuid = "1bdc0b54-4903-559d-9037-450470fc7ef7"
     strings:
         $guid1_godown = { 98 B3 E5 F6 DF E3 6B 49 A2 AD C2 0F EA 30 DB FE } // Godown.dll IID
         $guid2_godown = { 31 4B CB DB B8 21 0F 4A BC 69 0C 3C E3 B6 6D 00 } // Godown.dll CLSID

@@ -24,7 +24,6 @@ rule Datper_Backdoor {
       hash5 = "2384e8ad8eee6db1e69b3ee7b6b3d01ae09f99a86901a0a87fb2788c1115090c"
       hash6 = "1e511c32cdf8abe23d8ba7c39da5ce7fc6c87fdb551c9fc3265ee22ac4076e27"
       hash7 = "7bc042b9a599e1024a668b9921e2a42a02545429cf446d5b3d21f20185afa6ce"
-      uuid = "547db8bb-cc02-5521-8b85-845b1652fee9"
    strings:
       $s1 = "RtlGetCo" fullword ascii
       $s2 = "hutils" fullword ascii

@@ -11,7 +11,6 @@ rule APT_Backdoor_SUNBURST_1
         reference = "https://www.fireeye.com/blog/threat-research/2020/12/evasive-attacker-leverages-solarwinds-supply-chain-compromises-with-sunburst-backdoor.html"
         date = "2020-12-14"
         score = 85
-        uuid = "74b44844-5575-53d7-819b-ab1b2327a144"
     strings:
         $cmd_regex_encoded = "U4qpjjbQtUzUTdONrTY2q42pVapRgooABYxQuIZmtUoA" wide
         $cmd_regex_plain = { 5C 7B 5B 30 2D 39 61 2D 66 2D 5D 7B 33 36 7D 5C 7D 22 7C 22 5B 30 2D 39 61 2D 66 5D 7B 33 32 7D 22 7C 22 5B 30 2D 39 61 2D 66 5D 7B 31 36 7D }
@@ -33,7 +32,6 @@ rule APT_Backdoor_SUNBURST_2
         reference = "https://www.fireeye.com/blog/threat-research/2020/12/evasive-attacker-leverages-solarwinds-supply-chain-compromises-with-sunburst-backdoor.html"
         date = "2020-12-14"
         score = 85
-        uuid = "329071d5-c9c6-5ae1-a514-aea9f4037bac"
     strings:
         $a = "0y3Kzy8BAA==" wide
         $aa = "S8vPKynWL89PS9OvNqjVrTYEYqNa3fLUpDSgTLVxrR5IzggA" wide
@@ -85,7 +83,6 @@ rule APT_Webshell_SUPERNOVA_1
         reference = "https://www.fireeye.com/blog/threat-research/2020/12/evasive-attacker-leverages-solarwinds-supply-chain-compromises-with-sunburst-backdoor.html"
         date = "2020-12-14"
         score = 85
-        uuid = "73a27fa2-a846-5f4b-8182-064ac06c71a8"
     strings:
         $compile1 = "CompileAssemblyFromSource"
         $compile2 = "CreateCompiler"
@@ -105,7 +102,6 @@ rule APT_Webshell_SUPERNOVA_2
         reference = "https://www.fireeye.com/blog/threat-research/2020/12/evasive-attacker-leverages-solarwinds-supply-chain-compromises-with-sunburst-backdoor.html"
         date = "2020-12-14"
         score = 85
-        uuid = "c39bf9ba-fd62-5619-92b6-1633375ef197"
     strings:
         $dynamic = "DynamicRun"
         $solar = "Solarwinds" nocase
@@ -124,7 +120,6 @@ rule APT_HackTool_PS1_COSMICGALE_1
         reference = "https://www.fireeye.com/blog/threat-research/2020/12/evasive-attacker-leverages-solarwinds-supply-chain-compromises-with-sunburst-backdoor.html"
         date = "2020-12-14"
         score = 85
-        uuid = "c094943c-288e-5835-8066-8e95a992c76c"
     strings:
         $sr1 = /\[byte\[\]\]@\([\x09\x20]{0,32}0xaa[\x09\x20]{0,32},[\x09\x20]{0,32}0xd3[\x09\x20]{0,32},[\x09\x20]{0,32}0xb4[\x09\x20]{0,32},[\x09\x20]{0,32}0x35[\x09\x20]{0,32},/ ascii nocase wide
         $sr2 = /\[bitconverter\]::toint32\(\$\w{1,64}\[0x0c..0x0f\][\x09\x20]{0,32},[\x09\x20]{0,32}0\)[\x09\x20]{0,32}\+[\x09\x20]{0,32}0xcc\x3b/ ascii nocase wide
@@ -146,7 +141,6 @@ rule APT_Dropper_Raw64_TEARDROP_1
         reference = "https://www.fireeye.com/blog/threat-research/2020/12/evasive-attacker-leverages-solarwinds-supply-chain-compromises-with-sunburst-backdoor.html"
         date = "2020-12-14"
         score = 85
-        uuid = "88adad58-ba16-5996-9ea8-ea356c3ed5b2"
     strings:
         $sb1 = { C7 44 24 ?? 80 00 00 00 [0-64] BA 00 00 00 80 [0-32] 48 8D 0D [4-32] FF 15 [4] 48 83 F8 FF [2-64] 41 B8 40 00 00 00 [0-64] FF 15 [4-5] 85 C0 7? ?? 80 3D [4] FF }
         $sb2 = { 80 3D [4] D8 [2-32] 41 B8 04 00 00 00 [0-32] C7 44 24 ?? 4A 46 49 46 [0-32] E8 [4-5] 85 C0 [2-32] C6 05 [4] 6A C6 05 [4] 70 C6 05 [4] 65 C6 05 [4] 67 }
@@ -162,7 +156,6 @@ rule APT_Dropper_Win64_TEARDROP_1
         reference = "https://www.fireeye.com/blog/threat-research/2020/12/evasive-attacker-leverages-solarwinds-supply-chain-compromises-with-sunburst-backdoor.html"
         date = "2020-12-14"
         score = 70
-        uuid = "15dfdb74-5ca3-5bc6-be7a-730333b03ba5"
     strings:
         $loc_4218FE24A5 = { 48 89 C8 45 0F B6 4C 0A 30 }
         $loc_4218FE36CA = { 48 C1 E0 04 83 C3 01 48 01 E8 8B 48 28 8B 50 30 44 8B 40 2C 48 01 F1 4C 01 FA }

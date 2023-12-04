@@ -9,7 +9,6 @@ rule APT_Liudoor {
         hash3 = "2be2ac65fd97ccc97027184f0310f2f3"
         hash4 = "6093505c7f7ec25b1934d3657649ef07"
         type = "Win32 DLL"
-        uuid = "cf7e08b8-2ccd-5828-917b-11340b4a86b1"
     strings:
         $string0 = "Succ"
         $string1 = "Fail"

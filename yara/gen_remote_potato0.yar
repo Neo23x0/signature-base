@@ -5,7 +5,6 @@ rule HKTL_SentinelOne_RemotePotato0_PrivEsc {
       description = "Detects RemotePotato0 binary"
       reference = "https://labs.sentinelone.com/relaying-potatoes-dce-rpc-ntlm-relay-eop"
       date = "2021-04-26"
-      uuid = "f6dffd6b-e794-5c4a-9700-5c2022168f44"
    strings:    
       $import1 = "CoGetInstanceFromIStorage"
       $istorage_clsid = "{00000306-0000-0000-c000-000000000046}" nocase wide ascii    

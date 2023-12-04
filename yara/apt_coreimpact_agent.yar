@@ -11,7 +11,6 @@ rule CoreImpact_sysdll_exe {
       date = "27.12.2014"
       modified = "2023-01-06"
       hash = "f89a4d4ae5cca6d69a5256c96111e707"
-      uuid = "bac55c00-5d14-59ca-8597-f52b4577be0c"
    strings:
       $s0 = "d:\\nightly\\sandbox_avg10_vc9_SP1_2011\\source\\avg10\\avg9_all_vs90\\bin\\Rele" ascii
 

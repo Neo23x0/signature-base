@@ -18,7 +18,6 @@ rule KasperMalware_Oct17_1 {
       reference = "Internal Research"
       date = "2017-10-24"
       hash1 = "758bdaf26a0bd309a5458cb4569fe1c789cf5db087880d6d1676dec051c3a28d"
-      uuid = "7201d8ee-50ee-5a5c-a5b8-ee36c78b0d6e"
    strings:
       $x1 = "\\Release\\kasper.pdb" ascii
       $x2 = "C:\\D@oc@um@en@ts a@nd Set@tings\\Al@l Users" wide

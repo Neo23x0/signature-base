@@ -5,7 +5,6 @@ rule APT_MAL_Fujinama {
         reference = "https://reaqta.com/2021/01/fujinama-analysis-leonardo-spa"
         date = "2021-01-07"
         version = "1"   
-        uuid = "b10b1e45-aa6c-53fa-8e02-7a325c3e12fb"
     strings:
         $kaylog_1 = "SELECT" wide ascii nocase
         $kaylog_2 = "RIGHT" wide ascii nocase

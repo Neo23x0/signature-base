@@ -11,7 +11,6 @@ rule MAL_RANSOM_SH_ESXi_Attacks_Feb23_1 {
       date = "2023-02-04"
       score = 85
       hash1 = "10c3b6b03a9bf105d264a8e7f30dcab0a6c59a414529b0af0a6bd9f1d2984459"
-      uuid = "7178dbe4-f573-5279-a23e-9bab8ae8b743"
    strings:
       $x1 = "/bin/find / -name *.log -exec /bin/rm -rf {} \\;" ascii fullword
       $x2 = "/bin/touch -r /etc/vmware/rhttpproxy/config.xml /bin/hostd-probe.sh" ascii fullword
@@ -35,7 +34,6 @@ rule MAL_RANSOM_ELF_ESXi_Attacks_Feb23_1 {
       date = "2023-02-04"
       score = 85
       hash1 = "11b1b2375d9d840912cfd1f0d0d04d93ed0cddb0ae4ddb550a5b62cd044d6b66"
-      uuid = "d0a813aa-41f8-57df-b708-18ccb0d7a3e5"
    strings:
       $x1 = "usage: encrypt <public_key> <file_to_encrypt> [<enc_step>] [<enc_size>] [<file_size>]" ascii fullword
       $x2 = "[ %s ] - FAIL { Errno: %d }" ascii fullword
@@ -62,7 +60,6 @@ rule APT_PY_ESXi_Backdoor_Dec22 {
       reference = "https://blogs.juniper.net/en-us/threat-research/a-custom-python-backdoor-for-vmware-esxi-servers"
       date = "2022-12-14"
       score = 85
-      uuid = "f0a3b9b9-0031-5d9f-97f8-70f83863ee63"
     strings:
       $x1 = "cmd = str(base64.b64decode(encoded_cmd), " ascii
       $x2 = "sh -i 2>&1 | nc %s %s > /tmp/" ascii
@@ -77,7 +74,6 @@ rule APT_SH_ESXi_Backdoor_Dec22 {
       reference = "https://blogs.juniper.net/en-us/threat-research/a-custom-python-backdoor-for-vmware-esxi-servers"
       date = "2022-12-14"
       score = 75
-      uuid = "983ac20c-2e61-5365-8849-b3aeb999f909"
     strings:
       $x1 = "mv /bin/hostd-probe.sh /bin/hostd-probe.sh.1" ascii fullword
       $x2 = "/bin/nohup /bin/python -u /store/packages/vmtools.py" ascii
@@ -93,7 +89,6 @@ rule MAL_RANSOM_SH_ESXi_Attacks_Feb23_2 {
       reference = "https://dev.to/xakrume/esxiargs-encryption-malware-launches-massive-attacks-against-vmware-esxi-servers-pfe"
       date = "2023-02-06"
       score = 85
-      uuid = "d1282dee-0496-52f1-a2b7-27657ab4df8c"
    strings:
       $x1 = "echo \"START ENCRYPT: $file_e SIZE: $size_kb STEP SIZE: " ascii
    condition:
@@ -107,7 +102,6 @@ rule SUSP_ESXiArgs_Endpoint_Conf_Aug23 {
       reference = "https://www.bleepingcomputer.com/forums/t/782193/esxi-ransomware-help-and-support-topic-esxiargs-args-extension/page-47"
       date = "2023-08-04"
       score = 75
-      uuid = "3e0b5dbf-7c5b-5599-823a-ce35fbdbe64b"
    strings:
       $a1 = "/client/clients.xml" ascii
       $a2 = "/var/run/vmware/proxy-sdk-tunnel" ascii fullword

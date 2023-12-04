@@ -8,7 +8,6 @@ rule CoinMiner_Strings : SCRIPT HIGHVOL {
       date = "2018-01-04"
       modified = "2021-10-26"
       nodeepdive = 1
-      uuid = "ac045f83-5f32-57a9-8011-99a2658a0e05"
    strings:
       $sa1 = "stratum+tcp://" ascii
       $sa2 = "stratum+udp://" ascii
@@ -25,7 +24,6 @@ rule CoinHive_Javascript_MoneroMiner : HIGHVOL {
       score = 50
       reference = "https://coinhive.com/documentation/miner"
       date = "2018-01-04"
-      uuid = "4f40c342-fcdc-5c73-a3cf-7b2ed438eaaf"
    strings:
       $s2 = "CoinHive.CONFIG.REQUIRES_AUTH" fullword ascii
    condition:
@@ -40,7 +38,6 @@ rule PUA_CryptoMiner_Jan19_1 {
       date = "2019-01-31"
       score = 80
       hash1 = "ede858683267c61e710e367993f5e589fcb4b4b57b09d023a67ea63084c54a05"
-      uuid = "aebfdce9-c2dd-5f24-aa25-071e1a961239"
    strings:
       $s1 = "Stratum notify: invalid Merkle branch" fullword ascii
       $s2 = "-t, --threads=N       number of miner threads (default: number of processors)" fullword ascii
@@ -58,7 +55,6 @@ rule PUA_Crypto_Mining_CommandLine_Indicators_Oct21 : SCRIPT {
       reference = "https://www.poolwatch.io/coin/monero"
       date = "2021-10-24"
       score = 65
-      uuid = "afe5a63a-08c3-5cb7-b4b1-b996068124b7"
    strings:
       $s01 = " --cpu-priority="
       $s02 = "--donate-level=0"

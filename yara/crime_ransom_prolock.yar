@@ -7,7 +7,6 @@ rule MAL_Prolock_Malware {
 		hash1 = "a6ded68af5a6e5cc8c1adee029347ec72da3b10a439d98f79f4b15801abd7af0"
 		hash2 = "dfbd62a3d1b239601e17a5533e5cef53036647901f3fb72be76d92063e279178"
 		
-		uuid = "269bf0c5-8315-5405-8e44-e2cc5507a36a"
 	strings:
 		$DecryptionRoutine = {01 C2 31 DB B8 ?? ?? ?? ?? 31 04 1A 81 3C 1A}
 		$DecryptedString1 = "support981723721@protonmail.com" nocase ascii

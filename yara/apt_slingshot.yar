@@ -15,7 +15,6 @@ rule Slingshot_APT_Spork_Downloader {
       author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist.com/apt-slingshot/84312/"
       date = "2018-03-09"
-      uuid = "21e02f78-40d8-5b56-b747-3f2a7a692259"
    strings:
       $s1 = "Usage: spork -c IP:PORT" fullword ascii wide
       $s2 = "connect-back IP address and port number"
@@ -30,7 +29,6 @@ rule Slingshot_APT_Minisling {
       author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist.com/apt-slingshot/84312/"
       date = "2018-03-09"
-      uuid = "99f9d5a1-b29f-52f7-9aec-02df4a51a756"
    strings:
       $s1 = "{6D29520B-F138-442e-B29F-A4E7140F33DE}" fullword ascii wide
    condition:
@@ -44,7 +42,6 @@ rule Slingshot_APT_Ring0_Loader {
       author = "Florian Roth (Nextron Systems)"
       reference = "https://securelist.com/apt-slingshot/84312/"
       date = "2018-03-09"
-      uuid = "b5301a45-a4ec-5e56-a990-bc6300ee6365"
    strings:
       $s1 = " -> Missing element in DataDir -- cannot install" ascii
       $s2 = " -> Primary loader not present in the DataDir" ascii
@@ -65,7 +62,6 @@ rule Slingshot_APT_Malware_1 {
       reference = "https://securelist.com/apt-slingshot/84312/"
       date = "2018-03-09"
       hash1 = "4b250304e28648574b441831bf579b844e8e1fda941fb7f86a7ea7c4291bbca6"
-      uuid = "72f4a52b-c70b-511f-acf5-6d680a95c7d6"
    strings:
       $s1 = "SlingDll.dll" fullword ascii
       $s2 = "BogusDll." ascii
@@ -86,7 +82,6 @@ rule Slingshot_APT_Malware_2 {
       reference = "https://securelist.com/apt-slingshot/84312/"
       date = "2018-03-09"
       hash1 = "2a51ef6d115daa648ddd57d1e4480f5a18daf40986bfde32aab19349aa010e67"
-      uuid = "b85d3d81-0148-5ea0-9eff-d9bb63e3e75b"
    strings:
       $x1 = "\\\\?\\c:\\RECYCLER\\S-1-5-21-2225084468-623340172-1005306204-500\\INFO5" fullword wide
       $x_slingshot = {09 46 BE 57 42 DD 70 35 5E }
@@ -107,7 +102,6 @@ rule Slingshot_APT_Malware_3 {
       reference = "https://securelist.com/apt-slingshot/84312/"
       date = "2018-03-09"
       hash1 = "fa513c65cded25a7992e2b0ab03c5dd5c6d0fc2282cd64a1e11a387a3341ce18"
-      uuid = "4ef1f9a6-3d80-545e-8ac3-c6d46c71fca1"
    strings:
       $a1 = "chmhlpr.dll" fullword ascii
       $s2 = "%hc%hc%hc%hc" fullword ascii
@@ -129,7 +123,6 @@ rule Slingshot_APT_Malware_4 {
       reference = "https://securelist.com/apt-slingshot/84312/"
       date = "2018-03-09"
       hash1 = "38c4f5320b03cbaf5c14997ea321507730a8c16906e5906cbf458139c91d5945"
-      uuid = "0f957330-1834-550f-ba5d-fb2bf0dfba7f"
    strings:
       $x1 = "Ss -a 4104 -s 257092 -o 8 -l 406016 -r 4096 -z 315440" fullword wide
 

@@ -8,7 +8,6 @@ rule MAL_LNX_RedMenshen_BPFDoor_May23_1 {
       date = "2023-05-11"
       score = 80
       hash1 = "afa8a32ec29a31f152ba20a30eb483520fe50f2dce6c9aa9135d88f7c9c511d7"
-      uuid = "25df4dba-ec6e-5999-b6be-56fe933cb0d0"
    strings:
       $x1 = "[-] Execute command failed" ascii fullword
       $x2 = "/var/run/initd.lock" ascii fullword
@@ -59,7 +58,6 @@ rule APT_MAL_LNX_RedMenshen_BPFDoor_Controller_May22_1 {
       hash8 = "c796fc66b655f6107eacbe78a37f0e8a2926f01fecebd9e68a66f0e261f91276"
       hash9 = "f8a5e735d6e79eb587954a371515a82a15883cf2eda9d7ddb8938b86e714ea27"
       hash10 = "fd1b20ee5bd429046d3c04e9c675c41e9095bea70e0329bd32d7edd17ebaf68a"
-      uuid = "1438c3bf-3c42-59d5-9f3f-2d72bdaaac42"
    strings:
       $s1 = "[-] Connect failed." ascii fullword
       $s2 = "export MYSQL_HISTFILE=" ascii fullword
@@ -86,7 +84,6 @@ rule APT_MAL_LNX_RedMenshen_BPFDoor_Controller_May22_2 {
       hash2 = "96e906128095dead57fdc9ce8688bb889166b67c9a1b8fdb93d7cff7f3836bb9"
       hash3 = "c80bd1c4a796b4d3944a097e96f384c85687daeedcdcf05cc885c8c9b279b09c"
       hash4 = "f47de978da1dbfc5e0f195745e3368d3ceef034e964817c66ba01396a1953d72"
-      uuid = "d5c3d530-ed6f-563e-a3b0-55d4c82e4899"
    strings:
       $opx1 = { 48 83 c0 0c 48 8b 95 e8 fe ff ff 48 83 c2 0c 8b 0a 8b 55 f0 01 ca 89 10 c9 }
       $opx2 = { 48 01 45 e0 83 45 f4 01 8b 45 f4 3b 45 dc 7c cd c7 45 f4 00 00 00 00 eb 2? 48 8b 05 ?? ?? 20 00 }
@@ -108,7 +105,6 @@ rule APT_MAL_LNX_RedMenshen_BPFDoor_Controller_May22_3 {
       score = 85
       hash1 = "144526d30ae747982079d5d340d1ff116a7963aba2e3ed589e7ebc297ba0c1b3"
       hash2 = "fa0defdabd9fd43fe2ef1ec33574ea1af1290bd3d763fdb2bed443f2bd996d73"
-      uuid = "91c2153a-a6e0-529e-852c-61f799838798"
    strings:
       $s1 = "hald-addon-acpi: listening on acpi kernel interface /proc/acpi/event" ascii fullword
       $s2 = "/sbin/mingetty /dev" ascii fullword
@@ -142,7 +138,6 @@ rule APT_MAL_LNX_RedMenshen_BPFDoor_Controller_Generic_May22_1 {
       hash15 = "f8a5e735d6e79eb587954a371515a82a15883cf2eda9d7ddb8938b86e714ea27"
       hash16 = "fa0defdabd9fd43fe2ef1ec33574ea1af1290bd3d763fdb2bed443f2bd996d73"
       hash17 = "fd1b20ee5bd429046d3c04e9c675c41e9095bea70e0329bd32d7edd17ebaf68a"
-      uuid = "d30df2ae-7008-53c0-9a61-8346a9c9f465"
    strings:
       $op1 = { c6 80 01 01 00 00 00 48 8b 45 ?8 0f b6 90 01 01 00 00 48 8b 45 ?8 88 90 00 01 00 00 c6 45 ?? 00 0f b6 45 ?? 88 45 }
       $op2 = { 48 89 55 c8 48 8b 45 c8 48 89 45 ?? 48 8b 45 c8 0f b6 80 00 01 00 00 88 45 f? 48 8b 45 c8 0f b6 80 01 01 00 00 }

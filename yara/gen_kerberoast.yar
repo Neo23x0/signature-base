@@ -13,7 +13,6 @@ rule GetUserSPNs_VBS {
 		reference = "https://github.com/skelsec/PyKerberoast"
 		date = "2016-05-21"
 		hash1 = "8dcb568d475fd8a0557e70ca88a262b7c06d0f42835c855b52e059c0f5ce9237"
-		uuid = "5576c1b9-4670-52c5-b23c-64adcc8709de"
 	strings:
 		$s1 = "Wscript.Echo \"User Logon: \" & oRecordset.Fields(\"samAccountName\")" fullword ascii
 		$s2 = "Wscript.Echo \" USAGE:        \" & WScript.ScriptName & \" SpnToFind [GC Servername or Forestname]\"" fullword ascii
@@ -30,7 +29,6 @@ rule GetUserSPNs_PS1 {
 		reference = "https://github.com/skelsec/PyKerberoast"
 		date = "2016-05-21"
 		hash1 = "1b69206b8d93ac86fe364178011723f4b1544fff7eb1ea544ab8912c436ddc04"
-		uuid = "a2fba75c-264f-5e89-afaf-9d19a4a90784"
 	strings:
 		$s1 = "$ForestInfo = [System.DirectoryServices.ActiveDirectory.Forest]::GetCurrentForest()" fullword ascii
 		$s2 = "@{Name=\"PasswordLastSet\";      Expression={[datetime]::fromFileTime($result.Properties[\"pwdlastset\"][0])} } #, `" fullword ascii
@@ -48,7 +46,6 @@ rule kerberoast_PY {
 		reference = "https://github.com/skelsec/PyKerberoast"
 		date = "2016-05-21"
 		hash1 = "73155949b4344db2ae511ec8cab85da1ccbf2dfec3607fb9acdc281357cdf380"
-		uuid = "cea6cdb2-cd1a-5701-a9d1-27c788a962a7"
 	strings:
 		$s1 = "newencserverticket = kerberos.encrypt(key, 2, encoder.encode(decserverticket), nonce)" fullword ascii
 		$s2 = "key = kerberos.ntlmhash(args.password)" fullword ascii

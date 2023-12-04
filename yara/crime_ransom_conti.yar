@@ -5,7 +5,6 @@ rule MAL_RANSOM_ContiCrypter {
         description = "Signature for a crypter associated with Conti"
         date = "2021-03-17"
         tlp = "White"
-        uuid = "f2a00655-41a2-5614-9c29-3629c93c0e95"
     strings:
         $handoff1 = {4C 8D 05 ?? ?? ?? ?? 48 C7 44 24 28 00 00 00 00 C7 44 24 20 00 00 00 00 e8}
         $handoff2 = {C7 ?? 24 ?? 00 00 00 00 89 44 24 ?? C7 ?? 24 ?? ?? ?? ?? ?? C7 ?? 24 ?? 00 00 00 00 }

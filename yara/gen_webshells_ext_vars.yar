@@ -10,7 +10,6 @@ rule webshell_php_by_string_obfuscation : FILE {
 		date = "2021/01/09"
 		modified = "2022-10-25"
 		hash = "e4a15637c90e8eabcbdc748366ae55996dbec926382220c423e754bd819d22bc"
-		uuid = "be890bf6-de7e-588e-b5cd-72e8081d0b9c"
 	strings:
 		$opbs13 = "{\"_P\"./*-/*-*/\"OS\"./*-/*-*/\"T\"}" wide ascii
 		$opbs14 = "/*-/*-*/\"" wide ascii

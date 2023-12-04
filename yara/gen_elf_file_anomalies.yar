@@ -7,7 +7,6 @@ rule SUSP_ELF_LNX_UPX_Compressed_File {
       date = "2018-12-12"
       score = 40
       hash1 = "038ff8b2fef16f8ee9d70e6c219c5f380afe1a21761791e8cbda21fa4d09fdb4"
-      uuid = "078937de-59b3-538e-a5c3-57f4e6050212"
    strings:
       $s1 = "PROT_EXEC|PROT_WRITE failed." fullword ascii
       $s2 = "$Id: UPX" fullword ascii

@@ -7,7 +7,6 @@ rule apt_CN_Tetris_JS_advanced_1
         reference   = "https://imp0rtp3.wordpress.com/2021/08/12/tetris"
         date = "2020-09-06"
 
-        uuid = "a56f69f5-3562-52ab-9686-411019c51055"
    strings:
       $a1 = "var a0_0x"
       $b1 = "a0_0x" ascii
@@ -39,7 +38,6 @@ rule apt_CN_Tetrisplugins_JS
 		reference   = "https://imp0rtp3.wordpress.com/2021/08/12/tetris"
 		date = "2020-09-06"
 
-		uuid = "83e6fbad-55d6-5229-a17d-8929e0e658f8"
 	strings:
 
 		// Really unique strings

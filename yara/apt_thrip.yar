@@ -18,7 +18,6 @@ rule APT_Thrip_Sample_Jun18_1 {
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "59509a17d516813350fe1683ca6b9727bd96dd81ce3435484a5a53b472ff4ae9"
-      uuid = "5b506069-8185-5dc0-bf64-90646f6bab6b"
    strings:
       $s1 = "idocback.dll" fullword ascii
       $s2 = "constructor or from DllMain." fullword ascii
@@ -36,7 +35,6 @@ rule APT_Thrip_Sample_Jun18_2 {
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "1fc9f7065856cd8dc99b6f46cf0953adf90e2c42a3b65374bf7b50274fb200cc"
-      uuid = "bc1cfcc8-64a0-5da0-8ff7-147da8a3af0b"
    strings:
       $s1 = "C:\\WINDOWS\\system32\\sysprep\\cryptbase.dll" fullword ascii
       $s2 = "ProbeScriptFint" fullword wide
@@ -53,7 +51,6 @@ rule APT_Thrip_Sample_Jun18_3 {
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "0d2abdcaad99e102fdf6574b3dc90f17cb9d060c20e6ac4ff378875d3b91a840"
-      uuid = "67ea7ed1-954f-5b3e-b058-452be3b6fdfa"
    strings:
       $s1 = "C:\\Windows\\SysNative\\cmd.exe" fullword ascii
       $s2 = "C:\\Windows\\SysNative\\sysprep\\cryptbase.dll" fullword ascii
@@ -69,7 +66,6 @@ rule APT_Thrip_Sample_Jun18_4 {
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "6b236d3fc54d36e6dc2a26299f6ded597058fed7c9099f1a37716c5e4b162abc"
-      uuid = "9dcfcdbd-d18f-5eba-a10c-95686f010f23"
    strings:
       $s1 = "\\system32\\wbem\\tmf\\caches_version.db" ascii
       $s2 = "ProcessName No Access" fullword ascii
@@ -92,7 +88,6 @@ rule APT_Thrip_Sample_Jun18_5 {
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "32889639a27961497d53176765b3addf9fff27f1c8cc41634a365085d6d55920"
-      uuid = "42c56ed6-a509-568f-a611-ce7e5c5d9d8e"
    strings:
       $s2 = "c:\\windows\\USBEvent.exe" fullword ascii
       $s5 = "c:\\windows\\spdir.dat" fullword ascii
@@ -108,7 +103,6 @@ rule APT_Thrip_Sample_Jun18_6 {
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "44f58496578e55623713c4290abb256d03103e78e99939daeec059776bd79ee2"
-      uuid = "a1c65bc1-371e-509f-a01c-2d58c1773f95"
    strings:
       $s1 = "C:\\Windows\\system32\\Instell.exe" fullword ascii
    condition:
@@ -123,7 +117,6 @@ rule APT_Thrip_Sample_Jun18_7 {
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "6b714dc1c7e58589374200d2c7f3d820798473faeb26855e53101b8f3c701e3f"
-      uuid = "16739590-eb88-5de2-bd76-974b3343ec19"
    strings:
       $s1 = "C:\\runme.exe" ascii
    condition:
@@ -138,7 +131,6 @@ rule APT_Thrip_Sample_Jun18_8 {
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "0f2d09b1ad0694f9e71eeebec5b2d137665375bf1e76cb4ae4d7f20487394ed3"
-      uuid = "5eb98c9e-5103-5146-9364-d5f24416406f"
    strings:
       $x1 = "$.oS.Run('cmd.exe /c '+a+'" fullword ascii
       $x2 = "new $._x('WScript.Shell');" ascii
@@ -158,7 +150,6 @@ rule APT_Thrip_Sample_Jun18_9 {
       hash2 = "0c8ca0fd0ec246ef207b96a3aac5e94c9c368504905b0a033f11eef8c62fa14c"
       hash3 = "6d0a2c822e2bc37cc0cec35f040d3fec5090ef2775df658d3823e47a93a5fef3"
       hash4 = "0c49d1632eb407b5fd0ce32ed45b1c783ac2ef60d001853ae1f6b7574e08cfa9"
-      uuid = "7fcd8d7f-ed60-5155-a0dd-f3a36f3f2981"
    condition:
       uint16(0) == 0x5a4d and filesize < 100KB and (
          pe.imphash() == "a7f0714e82b3105031fa7bc89dfe7664" or
@@ -177,7 +168,6 @@ rule APT_Thrip_Sample_Jun18_10 {
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "350d2a6f8e6a4969ffbf75d9f9aae99e7b3a8cd8708fd66f977e07d7fbf842e3"
-      uuid = "3307ca18-59fb-5400-b51e-c4f4aa99e592"
    strings:
       $x1 = "!This Program cannot be run in DOS mode." fullword ascii
       $x2 = "!this program cannot be run in dos mode." fullword ascii
@@ -196,7 +186,6 @@ rule APT_Thrip_Sample_Jun18_11 {
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "590a6796b97469f8e6977832a63c0964464901f075a9651f7f1b4578e55bd8c8"
-      uuid = "69476f7d-c436-5863-bf20-1d3e821974e6"
    strings:
       $s1 = "\\AppData\\Local\\Temp\\dw20.EXE" ascii
       $s2 = "C:\\Windows\\system32\\sysprep\\cryptbase.dll" fullword ascii
@@ -217,7 +206,6 @@ rule APT_Thrip_Sample_Jun18_12 {
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "33c01d3266fe6a70e8785efaf10208f869ae58a17fd9cdb2c6995324c9a01062"
-      uuid = "b24b8042-b6a3-5af8-9fcf-6d042bdb9524"
    strings:
       $s1 = "pGlobal->nOSType==64--%s\\cmd.exe %s" fullword ascii
       $s2 = "httpcom.log" fullword ascii
@@ -241,7 +229,6 @@ rule APT_Thrip_Sample_Jun18_13 {
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "780620521c92aab3d592b3dc149cbf58751ea285cfdaa50510002b441796b312"
-      uuid = "e6aec6f3-2024-5fb2-b37a-77a182684d32"
    strings:
       $s1 = "User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; AS; rv:11.0) like Gecko" fullword ascii
       $s2 = "<member><name>password</name>" fullword ascii
@@ -261,7 +248,6 @@ rule APT_Thrip_Sample_Jun18_14 {
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "67dd44a8fbf6de94c4589cf08aa5757b785b26e49e29488e9748189e13d90fb3"
-      uuid = "736e2700-cdcb-5165-b786-67edaef765b6"
    strings:
       $s1 = "%SystemRoot%\\System32\\svchost.exe -k " fullword ascii
       $s2 = "spdirs.dll" fullword ascii
@@ -283,7 +269,6 @@ rule APT_Thrip_Sample_Jun18_15 {
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "231c569f11460a12b171f131c40a6f25d8416954b35c28ae184aba8a649d9786"
-      uuid = "fd8aa404-4c12-5c8f-a952-a143da858b9b"
    strings:
       $s1 = "%s\\cmd.exe /c %s" fullword ascii
       $s2 = "CryptBase.dll" fullword ascii
@@ -306,7 +291,6 @@ rule APT_Thrip_Sample_Jun18_16 {
       reference = "https://www.symantec.com/blogs/threat-intelligence/thrip-hits-satellite-telecoms-defense-targets "
       date = "2018-06-21"
       hash1 = "2b1c1c6d82837dbbccd171a0413c1d761b1f7c3668a21c63ca06143e731f030e"
-      uuid = "58be9a1b-2228-5d7a-97c9-198cacbe1a66"
    strings:
       $s1 = "[%d] Failed, %08X" fullword ascii
       $s2 = "woqunimalegebi" fullword ascii
@@ -326,7 +310,6 @@ rule APT_Thrip_Sample_Jun18_17 {
       hash1 = "05036de73c695f59adf818d3c669c48ce8626139d463b8a7e869d8155e5c0d85"
       hash2 = "08d8c610e1ec4a02364cb53ba44e3ca5d46e8a177a0ecd50a1ef7b5db252701d"
       hash3 = "14535607d9a7853f13e8bf63b629e3a19246ed9db6b4d2de2ca85ec7a7bee140"
-      uuid = "e314a893-1ef5-5d5f-b056-af25765c0b70"
    strings:
       $x1 = "c:\\users\\administrator\\desktop\\code\\skeyman2\\" ascii
       $x2 = "\\SkeyMan2.pdb" ascii
@@ -355,7 +338,6 @@ rule APT_Thrip_Sample_Jun18_18 {
       hash4 = "1f019e3c30a02b7b65f7984903af11d561d02b2666cc16463c274a2a0e62145d"
       hash5 = "43904ea071d4dce62a21c69b8d6efb47bcb24c467c6f6b3a6a6ed6cd2158bfe5"
       hash6 = "00d9da2b665070d674acdbb7c8f25a01086b7ca39d482d55f08717f7383ee26a"
-      uuid = "20642526-5a4d-5dca-a6f5-29f19a9b5271"
    strings:
       $s1 = "Windows 95/98/Me, Windows NT 4.0, Windows 2000/XP: IME PROCESS key" fullword ascii
       $s2 = "Windows 2000/XP: Either the angle bracket key or the backslash key on the RT 102-key keyboard" fullword ascii

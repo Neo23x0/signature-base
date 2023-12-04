@@ -14,7 +14,6 @@ rule PlugX_J16_Gen {
 		author = "Florian Roth (Nextron Systems)"
 		reference = "VT Research"
 		date = "2016-06-08"
-		uuid = "13ef1e80-7090-5a1e-bca7-8d3de0dc2247"
 	strings:
 		$x1 = "%WINDIR%\\SYSTEM32\\SERVICES.EXE" fullword wide
 		$x2 = "\\\\.\\PIPE\\RUN_AS_USER(%d)" fullword wide
@@ -46,7 +45,6 @@ rule PlugX_J16_Gen2 {
 		author = "Florian Roth (Nextron Systems)"
 		reference = "VT Research"
 		date = "2016-06-08"
-		uuid = "28e9cbb9-cd60-555d-b033-4e2bf293adf2"
 	strings:
 		$s1 = "XPlugKeyLogger.cpp" fullword ascii
 		$s2 = "XPlugProcess.cpp" fullword ascii

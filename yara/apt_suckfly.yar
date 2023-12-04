@@ -19,7 +19,6 @@ rule Suckfly_Nidiran_Gen_1 {
       reference = "https://www.symantec.com/connect/blogs/suckfly-revealing-secret-life-your-code-signing-certificates"
       date = "2018-01-28"
       hash1 = "ac7d7c676f58ebfa5def9b84553f00f283c61e4a310459178ea9e7164004e734"
-      uuid = "1abc596a-5fb1-55f9-b72d-022bfc6d10c7"
    strings:
       $s1 = "WriteProcessMemory fail at %d " fullword ascii
       $s2 = "CreateRemoteThread fail at %d " fullword ascii
@@ -37,7 +36,6 @@ rule Suckfly_Nidiran_Gen_2 {
       date = "2018-01-28"
       hash1 = "b53a316a03b46758cb128e5045dab2717cb36e7b5eb1863ce2524d4f69bc2cab"
       hash2 = "eaee2bf83cf90d35dab8a4711f7a5f2ebf9741007668f3746995f4564046fbdf"
-      uuid = "b090079d-1c22-5931-a25b-e960343a610f"
    strings:
       $x1 = "WorkDll.dll" fullword ascii
       $x2 = "%userprofile%\\Security Center\\secriter.dll" fullword ascii
@@ -67,7 +65,6 @@ rule Suckfly_Nidiran_Gen_3 {
       date = "2018-01-28"
       hash1 = "c2022e1114b162e79e44d974fd310d53e1bbdd8cb4f217553c1227cafed78855"
       hash2 = "47731c9d985ebc2bd7227fced3cc44c6d72e29b52f76fccbdaddd76cc3450706"
-      uuid = "d9daf7e4-2cfa-50c9-84d2-c971734abe5e"
    strings:
       $x1 = "RUN SHELLCODE FAIL" fullword ascii
       $x2 = "RUN PROCESS FAILD!" fullword ascii

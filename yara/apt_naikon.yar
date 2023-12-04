@@ -8,7 +8,6 @@ rule MAL_Backdoor_Naikon_APT_Sample1 {
 		modified = "2023-01-06"
       hash = "d5716c80cba8554eb79eecfb4aa3d99faf0435a1833ec5ef51f528146c758eba"
       hash = "f5ab8e49c0778fa208baad660fe4fa40fc8a114f5f71614afbd6dcc09625cb96"
-      uuid = "ba79285b-7c7f-5b19-837e-6696e50a2866"
    strings:
       $x0 = "GET http://%s:%d/aspxabcdef.asp?%s HTTP/1.1" fullword ascii
       $x1 = "POST http://%s:%d/aspxabcdefg.asp?%s HTTP/1.1" fullword ascii

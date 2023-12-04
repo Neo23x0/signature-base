@@ -15,7 +15,6 @@ rule RocketKitten_Keylogger {
 		super_rule = 1
 		hash1 = "1c9e519dca0468a87322bebe2a06741136de7969a4eb3efda0ab8db83f0807b4"
 		hash2 = "495a15f9f30d6f6096a97c2bd8cc5edd4d78569b8d541b1d5a64169f8109bc5b"
-		uuid = "558341db-a30d-586e-8efc-0fff1d8f94a1"
 	strings:
 		$x1 = "\\Release\\CWoolger.pdb" ascii
 		$x2 = "WoolenLoger\\obj\\x86\\Release" ascii

@@ -18,7 +18,6 @@ rule Quasar_RAT_1 {
       hash2 = "1ce40a89ef9d56fd32c00db729beecc17d54f4f7c27ff22f708a957cd3f9a4ec"
       hash3 = "515c1a68995557035af11d818192f7866ef6a2018aa13112fefbe08395732e89"
       hash4 = "f08db220df716de3d4f63f3007a03f902601b9b32099d6a882da87312f263f34"
-      uuid = "36220de3-aa1a-5c34-adae-432d939c811e"
    strings:
       $s1 = "DoUploadAndExecute" fullword ascii
       $s2 = "DoDownloadAndExecute" fullword ascii
@@ -43,7 +42,6 @@ rule Quasar_RAT_2 {
       hash1 = "0774d25e33ca2b1e2ee2fafe3fdbebecefbf1d4dd99e6460f0bc8713dd0fd740"
       hash2 = "515c1a68995557035af11d818192f7866ef6a2018aa13112fefbe08395732e89"
       hash3 = "f08db220df716de3d4f63f3007a03f902601b9b32099d6a882da87312f263f34"
-      uuid = "0ca795c5-3631-5a99-8675-37558485f478"
    strings:
       $x1 = "GetKeyloggerLogsResponse" fullword ascii
       $x2 = "get_Keylogger" fullword ascii
@@ -66,7 +64,6 @@ rule MAL_QuasarRAT_May19_1 {
       date = "2019-05-27"
       modified = "2023-01-06"
       hash1 = "0644e561225ab696a97ba9a77583dcaab4c26ef0379078c65f9ade684406eded"
-      uuid = "a4e82b6a-31f8-59fc-acfa-805c4594680a"
    strings:
       $x1 = "Quasar.Common.Messages" ascii fullword
       $x2 = "Client.MimikatzTools" ascii fullword

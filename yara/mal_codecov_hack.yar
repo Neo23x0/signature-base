@@ -5,7 +5,6 @@ rule APT_SH_CodeCov_Hack_Apr21_1 {
       author = "Florian Roth (Nextron Systems)"
       reference = "https://about.codecov.io/security-update/"
       date = "2021-04-16"
-      uuid = "b5fb74c4-073e-53af-a207-1672e63c9a64"
    strings:
       $a1 = "Global report uploading tool for Codecov"
 

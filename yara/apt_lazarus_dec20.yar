@@ -7,7 +7,6 @@ rule HvS_APT37_smb_scanner {
       date = "2020-12-15"
       reference1 = "https://www.hvs-consulting.de/media/downloads/ThreatReport-Lazarus.pdf"
       reference2 = "https://www.hybrid-analysis.com/sample/d16163526242508d6961f061aaffe3ae5321bd64d8ceb6b2788f1570757595fc?environmentId=2"
-      uuid = "89a5cc32-f151-583d-823d-692de2c2b084"
    strings:
       $s1 = "Scan.exe StartIP EndIP ThreadCount logfilePath [Username Password Deep]" fullword ascii
       $s2 = "%s - %s:(Username - %s / Password - %s" fullword ascii
@@ -35,7 +34,6 @@ rule HvS_APT37_cred_tool {
       author = "Markus Poelloth"
       date = "2020-12-15"
       reference = "https://www.hvs-consulting.de/media/downloads/ThreatReport-Lazarus.pdf"
-      uuid = "e830025a-f2ac-55b1-aca3-ded9dba83a67"
    strings:
       $s1 = "        <requestedExecutionLevel level=\"asInvoker\" uiAccess=\"false\"></requestedExecutionLevel>" fullword ascii
       $s2 = "Domain Login" fullword ascii
@@ -58,7 +56,6 @@ rule HvS_APT37_RAT_loader {
       hash = "b70e66d387e42f5f04b69b9eb15306036702ab8a50b16f5403289b5388292db9"
       reference1 = "https://www.hvs-consulting.de/media/downloads/ThreatReport-Lazarus.pdf"
       reference2 = "https://us-cert.cisa.gov/ncas/analysis-reports/ar20-232a"
-      uuid = "6c3e8465-d607-59bf-85fc-5abbef71fb1c"
    condition:
       (pe.version_info["OriginalFilename"] contains "MFC_DLL.dll") and
       (pe.exports("SMain") and pe.exports("SMainW") )
@@ -73,7 +70,6 @@ rule HvS_APT37_webshell_img_thumbs_asp {
       date = "2020-12-15"
       reference = "https://www.hvs-consulting.de/media/downloads/ThreatReport-Lazarus.pdf"
       hash = "94d2448d3794ae3f29678a7337473d259b5cfd1c7f703fe53ee6c84dd10a48ef"
-      uuid = "e45d4507-81de-5f72-9ce2-4f0e3e5c62b1"
    strings:
       $s1 = "strMsg = \"E : F\"" fullword ascii
       $s2 = "strMsg = \"S : \" & Len(fileData)" fullword ascii
@@ -102,7 +98,6 @@ rule HvS_APT37_webshell_template_query_asp {
       date = "2020-12-15"
       reference = "https://www.hvs-consulting.de/media/downloads/ThreatReport-Lazarus.pdf"
       hash = "961a66d01c86fa5982e0538215b17fb9fae2991331dfea812b8c031e2ceb0d90"
-      uuid = "dc006b46-4c51-59cd-8b7d-adbfec86cd2e"
    strings:
       $g1 = "server.scripttimeout=600" fullword ascii
       $g2 = "response.buffer=true" fullword ascii
@@ -145,7 +140,6 @@ rule HvS_APT37_webshell_controllers_asp {
       date = "2020-12-15"
       reference = "https://www.hvs-consulting.de/media/downloads/ThreatReport-Lazarus.pdf"
       hash = "829462fc6d84aae04a962dfc919d0a392265fbf255eab399980d2b021e385517"
-      uuid = "82370415-30f4-514d-8806-e2daced96f07"
    strings:
       $s0 = "<%@Language=VBScript.Encode" ascii
 // Case permutations of the word SeRvEr encoded with the Microsoft Script Encoder followed by .scriptrimeOut

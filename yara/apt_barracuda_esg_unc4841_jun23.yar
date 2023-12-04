@@ -7,7 +7,6 @@ rule APT_UNC4841_ESG_Barracuda_CVE_2023_2868_Forensic_Artifacts_Jun23_1 : SCRIPT
       date = "2023-06-15"
       modified = "2023-06-16"
       score = 75
-      uuid = "50518fa1-33de-5fe5-b957-904d976fb29a"
    strings:
       $x01 = "=;ee=ba;G=s;_ech_o $abcdefg_${ee}se64" ascii
       $x02 = ";echo $abcdefg | base64 -d | sh" ascii
@@ -35,7 +34,6 @@ rule APT_MAL_UNC4841_SEASPY_Jun23_1 {
       date = "2023-06-16"
       score = 85
       hash1 = "3f26a13f023ad0dcd7f2aa4e7771bba74910ee227b4b36ff72edc5f07336f115"
-      uuid = "bcff58f8-87f6-5371-8b96-5d4c0f349000"
    strings:
       $sx1 = "usage: ./BarracudaMailService <Network-Interface>. e.g.: ./BarracudaMailService eth0" ascii fullword
       $s1 = "fcntl.tmp.amd64." ascii
@@ -62,7 +60,6 @@ rule APT_MAL_UNC4841_SEASPY_LUA_Jun23_1 {
       date = "2023-06-16"
       score = 90
       hash1 = "56e8066bf83ff6fe0cec92aede90f6722260e0a3f169fc163ed88589bffd7451"
-      uuid = "a44861d0-107e-589b-8cf1-3fbc2f5c78dc"
    strings:
       $x1 = "os.execute('rverify'..' /tmp/'..attachment:filename())" ascii fullword
       $x2 = "log.debug(\"--- opening archive [%s], mimetype [%s]\", tmpfile" ascii fullword
@@ -82,7 +79,6 @@ rule APT_HKTL_Proxy_Tool_Jun23_1 {
       score = 75
       hash1 = "ca72fa64ed0a9c22d341a557c6e7c1b6a7264b0c4de0b6f717dd44bddf550bca"
       hash2 = "57e4b180fd559f15b59c43fb3335bd59435d4d76c4676e51a06c6b257ce67fb2"
-      uuid = "0e406737-3083-53c2-a6d2-14c07794125a"
    strings:
       //$a1 = "Go build" // not available in all samples
       $a2 = "/src/runtime/panic.go"
@@ -107,7 +103,6 @@ rule SUSP_FScan_Port_Scanner_Output_Jun23 : SCRIPT {
       reference = "https://www.mandiant.com/resources/blog/barracuda-esg-exploited-globally"
       date = "2023-06-15"
       score = 70
-      uuid = "7eb4b27f-0c5b-5d7e-b759-95d7894d5822"
    strings:
       $s1 = "[*] NetInfo:" ascii
       $s2 = ":443 open" ascii
@@ -123,7 +118,6 @@ rule SUSP_PY_Shell_Spawn_Jun23_1 : SCRIPT {
       reference = "https://www.mandiant.com/resources/blog/barracuda-esg-exploited-globally"
       date = "2023-06-15"
       score = 70
-      uuid = "15fd2c9a-c425-5d4d-9209-fd3826074d6c"
    strings:
       $x1 = "python -c import pty;pty.spawn(\"/bin/" ascii
    condition:
@@ -141,7 +135,6 @@ rule APT_MAL_Hunting_LUA_SEASIDE_1 {
         score = 70
         reference = "https://www.mandiant.com/resources/blog/barracuda-esg-exploited-globally"
         hash = "cd2813f0260d63ad5adf0446253c2172"
-        uuid = "86eaff7b-4ca0-53cd-8886-da66a36c778f"
     strings:
         $s1 = "function on_helo()"
         $s2 = "local bindex,eindex = string.find(helo,'.onion')" 
@@ -159,7 +152,6 @@ rule APT_MAL_LNX_Hunting_Linux_WHIRLPOOL_1 {
         score = 70
         reference = "https://www.mandiant.com/resources/blog/barracuda-esg-exploited-globally"
         hash = "177add288b289d43236d2dba33e65956"
-        uuid = "a997bd65-c502-53a0-8bb8-62daaa916f0d"
     strings:
         $s1 = "error -1 exit" fullword
         $s2 = "create socket error: %s(error: %d)\n" fullword
@@ -180,7 +172,6 @@ rule APT_MAL_LUA_Hunting_SKIPJACK_1 {
         description = "Hunting rule looking for strings observed in SKIPJACK installation script."
         hash = "e4e86c273a2b67a605f5d4686783e0cc"
         score = 70
-        uuid = "0026375c-7f37-5ef9-bd55-5b9fc499e5d2"
     strings:
         $str1 = "hdr:name() == 'Content-ID'" base64
         $str2 = "hdr:body() ~= nil" base64
@@ -200,7 +191,6 @@ rule APT_MAL_LUA_Hunting_Lua_SKIPJACK_2 {
         description = "Hunting rule looking for strings observed in SKIPJACK samples."
         hash = "87847445f9524671022d70f2a812728f"
         score = 70
-        uuid = "e1eac294-fe60-5bb2-bae4-0f7bcbe6b1db"
     strings:
         $str1 = "hdr:name() == 'Content-ID'" 
         $str2 = "hdr:body() ~= nil" 
@@ -218,7 +208,6 @@ rule APT_MAL_LUA_Hunting_Lua_SEASPRAY_1 {
         description = "Hunting rule looking for strings observed in SEASPRAY samples."
         hash = "35cf6faf442d325961935f660e2ab5a0"
         score = 70
-        uuid = "8c744b85-b61e-56d0-8a9e-ae6a954e1b95"
     strings:
         $str1 = "string.find(attachment:filename(),'obt075') ~= nil" 
         $str2 = "os.execute('cp '..tostring(tmpfile)..' /tmp/'..attachment:filename())" 

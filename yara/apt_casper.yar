@@ -10,7 +10,6 @@ rule Casper_Backdoor_x86 {
       modified = "2023-01-27"
       hash = "f4c39eddef1c7d99283c7303c1835e99d8e498b0"
       score = 80
-      uuid = "9e54f00c-74a7-56cc-87e5-8dec1233cbb5"
    strings:
       $s1 = "\"svchost.exe\"" fullword wide
       $s2 = "firefox.exe" fullword ascii
@@ -43,7 +42,6 @@ rule Casper_EXE_Dropper {
 		date = "2015/03/05"
 		hash = "e4cc35792a48123e71a2c7b6aa904006343a157a"
 		score = 80
-		uuid = "a901d045-6f9b-57e8-8347-6f78178b7231"
 	strings:
 		$s0 = "<Command>" fullword ascii
 		$s1 = "</Command>" fullword ascii
@@ -65,7 +63,6 @@ rule Casper_Included_Strings {
 		reference = "http://goo.gl/VRJNLo"
 		date = "2015/03/06"
 		score = 50
-		uuid = "34ba474d-0858-534a-8f32-db5a709e8814"
 	strings:
 		$a0 = "cmd.exe /C FOR /L %%i IN (1,1,%d) DO IF EXIST"
 		$a1 = "& SYSTEMINFO) ELSE EXIT"
@@ -90,7 +87,6 @@ rule Casper_SystemInformation_Output {
 		reference = "http://goo.gl/VRJNLo"
 		date = "2015/03/06"
 		score = 70
-		uuid = "aaae200c-7ef1-52eb-be5b-36e0ad29ecef"
 	strings:
 		$a0 = "***** SYSTEM INFORMATION ******"
 		$a1 = "***** SECURITY INFORMATION ******"

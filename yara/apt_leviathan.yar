@@ -16,7 +16,6 @@ rule SeDLL_Javascript_Decryptor {
       date = "2017-10-18"
       modified = "2023-01-07"
       hash1 = "146aa9a0ec013aa5bdba9ea9d29f59d48d43bc17c6a20b74bb8c521dbb5bc6f4"
-      uuid = "8fafd139-0c4f-5c51-af8f-b4917d2d69b0"
    strings:
       $x1 = "SEDll_Win32.dll" fullword ascii
       $x2 = "regsvr32 /s \"%s\" DR __CIM__" wide
@@ -38,7 +37,6 @@ rule Leviathan_CobaltStrike_Sample_1 {
       reference = "https://goo.gl/MZ7dRg"
       date = "2017-10-18"
       hash1 = "5860ddc428ffa900258207e9c385f843a3472f2fbf252d2f6357d458646cf362"
-      uuid = "e29072d8-b4ea-5e94-8a1c-0a1baec5f423"
    strings:
       $x1 = "a54c81.dll" fullword ascii
       $x2 = "%d is an x64 process (can't inject x86 content)" fullword ascii
@@ -63,7 +61,6 @@ rule MockDll_Gen {
       date = "2017-10-18"
       hash1 = "bfc5c6817ff2cc4f3cd40f649e10cc9ae1e52139f35fdddbd32cb4d221368922"
       hash2 = "80b931ab1798d7d8a8d63411861cee07e31bb9a68f595f579e11d3817cfc4aca"
-      uuid = "904a0649-27e7-5024-aa6b-ddb23bba6202"
    strings:
       $x1 = "mock_run_ini_Win32.dll" fullword ascii
       $x2 = "mock_run_ini_x64.dll" fullword ascii
@@ -82,7 +79,6 @@ rule VBScript_Favicon_File {
       date = "2017-10-18"
       modified = "2023-01-06"
       hash1 = "39c952c7e14b6be5a9cb1be3f05eafa22e1115806e927f4e2dc85d609bc0eb36"
-      uuid = "84147d4e-d062-5ba4-8019-6bf4b72c36c6"
    strings:
       $x1 = "myxml = '<?xml version=\"\"1.0\"\" encoding=\"\"UTF-8\"\"?>';myxml = myxml +'<root>" ascii
       $x2 = ".Run \"taskkill /im mshta.exe" ascii

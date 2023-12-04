@@ -15,7 +15,6 @@ rule EXPL_HKTL_macOS_Switcharoo_CVE_2022_46689_Dec22 {
       hash7 = "c7a64c6da5cf5046ae5c683d0264a32027110a2736b4c1b0df294e29a061a865"
       hash8 = "d517cde0d45e6930336538c89b310d5d540a66c921bf6f6f9b952e721b2f6a11"
       hash9 = "d53a559ea9131fe42eacf51431da3adde5a8fd5c2f3198f0d5451ef62ed33888"
-      uuid = "25c551f7-48ae-5e71-b86e-68fb440262e5"
    strings:
       $x1 = "vm_read_overwrite: KERN_SUCCESS:%d KERN_PROTECTION_FAILURE:%d other:%d" ascii fullword
       $x2 = "Execting: %s (posix_spawn returned: %d)" ascii fullword
@@ -46,7 +45,6 @@ rule EXPL_macOS_Switcharoo_Indicator_Dec22 {
       reference = "https://github.com/zhuowei/MacDirtyCowDemo"
       date = "2022-12-19"
       score = 65
-      uuid = "d5d9559a-c19c-5ddc-9d72-701986a9d7ac"
    strings:
       $x1 = "auth       sufficient     pam_permit.so" ascii
    condition:

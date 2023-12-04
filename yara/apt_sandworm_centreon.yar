@@ -14,7 +14,6 @@ rule WEBSHELL_PAS_webshell {
       reference = "https://www.cert.ssi.gouv.fr/uploads/CERTFR-2021-CTI-005.pdf"
       date = "2021-02-15"
       score = 70
-      uuid = "862aab77-936e-524c-8669-4f48730f4ed5"
    strings:
       $php = "<?php"
       $strreplace = "(str_replace("
@@ -34,7 +33,6 @@ rule WEBSHELL_PAS_webshell_ZIPArchiveFile {
       reference = "https://www.cert.ssi.gouv.fr/uploads/CERTFR-2021-CTI-005.pdf"
       date = "2021-02-15"
       score = 80
-      uuid = "081cc65b-e51c-59fc-a518-cd986e8ee2f7"
    strings:
       $s1 = "Archive created by P.A.S. v."
    condition:
@@ -48,7 +46,6 @@ rule WEBSHELL_PAS_webshell_PerlNetworkScript {
       reference = "https://www.cert.ssi.gouv.fr/uploads/CERTFR-2021-CTI-005.pdf"
       date = "2021-02-15"
       score = 90
-      uuid = "1625b63f-ead7-5712-92b4-0ce6ecc49fd4"
    strings:
       $pl_start = "#!/usr/bin/perl\n$SIG{'CHLD'}='IGNORE'; use IO::Socket; use FileHandle;"
       $pl_status = "$o=\" [OK]\";$e=\" Error: \""
@@ -68,7 +65,6 @@ rule WEBSHELL_PAS_webshell_SQLDumpFile {
       reference = "https://www.cert.ssi.gouv.fr/uploads/CERTFR-2021-CTI-005.pdf"
       date = "2021-02-15"
       score = 90
-      uuid = "4c26feeb-3031-5c91-9eeb-4b5fe9702e39"
    strings:
       $ = "-- [ SQL Dump created by P.A.S. ] --"
    condition:
@@ -82,7 +78,6 @@ rule APT_MAL_Sandworm_Exaramel_Configuration_Key {
       reference = "https://www.cert.ssi.gouv.fr/uploads/CERTFR-2021-CTI-005.pdf"
       date = "2021-02-15"
       score = 80
-      uuid = "8078de62-3dd2-5ee0-8bda-f508e4013144"
    strings:
       $ = "odhyrfjcnfkdtslt"
    condition:
@@ -96,7 +91,6 @@ rule APT_MAL_Sandworm_Exaramel_Configuration_Name_Encrypted {
       reference = "https://www.cert.ssi.gouv.fr/uploads/CERTFR-2021-CTI-005.pdf"
       date = "2021-02-15"
       score = 80
-      uuid = "1c06f5fc-3435-51cd-92fb-17a4ab6b63ad"
    strings:
       $ = "configtx.json"
    condition:
@@ -110,7 +104,6 @@ rule APT_MAL_Sandworm_Exaramel_Configuration_File_Plaintext {
       reference = "https://www.cert.ssi.gouv.fr/uploads/CERTFR-2021-CTI-005.pdf"
       date = "2021-02-15"
       score = 80
-      uuid = "6f0d834b-e6c8-59e6-bf9a-b4fd9c0b2297"
    strings:
       $ = /{"Hosts":\[".{10,512}"\],"Proxy":".{0,512}","Version":".{1,32}","Guid":"/
    condition:
@@ -124,7 +117,6 @@ rule APT_MAL_Sandworm_Exaramel_Configuration_File_Ciphertext {
       reference = "https://www.cert.ssi.gouv.fr/uploads/CERTFR-2021-CTI-005.pdf"
       date = "2021-02-15"
       score = 80
-      uuid = "763dbb17-2bad-5b40-8a7b-b71bc5849cd9"
    strings:
       $ = { 6F B6 08 E9 A3 0C 8D 5E DD BE D4 } // encrypted with key odhyrfjcnfkdtslt
    condition:
@@ -138,7 +130,6 @@ rule APT_MAL_Sandworm_Exaramel_Socket_Path {
       reference = "https://www.cert.ssi.gouv.fr/uploads/CERTFR-2021-CTI-005.pdf"
       date = "2021-02-15"
       score = 80
-      uuid = "3aab84c9-9748-5d11-9cd7-efa9151036cf"
    strings:
       $ = "/tmp/.applocktx"
    condition:
@@ -152,7 +143,6 @@ rule APT_MAL_Sandworm_Exaramel_Task_Names {
       reference = "https://www.cert.ssi.gouv.fr/uploads/CERTFR-2021-CTI-005.pdf"
       date = "2021-02-15"
       score = 80
-      uuid = "185f2f3b-bf5c-54af-bca2-400d08bf9c91"
    strings:
       $ = "App.Delete"
       $ = "App.SetServer"
@@ -173,7 +163,6 @@ rule APT_MAL_Sandworm_Exaramel_Struct {
       reference = "https://www.cert.ssi.gouv.fr/uploads/CERTFR-2021-CTI-005.pdf"
       date = "2021-02-15"
       score = 80
-      uuid = "8282e485-966c-554d-8e41-70dc1657f5ea"
    strings:
       $struct_le_config = {70 00 00 00 00 00 00 00 58 00 00 00 00 00 00 00 47 2d 28 42 0? [2] 19}
       $struct_le_worker = {30 00 00 00 00 00 00 00 30 00 00 00 00 00 00 00 46 6a 13 e2 0? [2] 19}
@@ -191,7 +180,6 @@ rule APT_MAL_Sandworm_Exaramel_Strings_Typo {
       reference = "https://www.cert.ssi.gouv.fr/uploads/CERTFR-2021-CTI-005.pdf"
       date = "2021-02-15"
       score = 80
-      uuid = "fdc79b87-eb9e-5751-9474-ff653b073165"
    strings:
       $typo1 = "/sbin/init | awk "
       $typo2 = "Syslog service for monitoring \n"
@@ -208,7 +196,6 @@ rule APT_MAL_Sandworm_Exaramel_Strings {
       reference = "https://www.cert.ssi.gouv.fr/uploads/CERTFR-2021-CTI-005.pdf"
       date = "2021-02-15"
       score = 80
-      uuid = "fdc79b87-eb9e-5751-9474-ff653b073165"
    strings:
       $persistence1 = "systemd"
       $persistence2 = "upstart"

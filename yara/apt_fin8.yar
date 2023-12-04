@@ -5,7 +5,6 @@ rule Shellcode_APIHashing_FIN8 {
 		date = "2021-03-16"
 		reference = "https://www.bitdefender.com/files/News/CaseStudies/study/394/Bitdefender-PR-Whitepaper-BADHATCH-creat5237-en-EN.pdf"
 
-		uuid = "bca5601c-2998-545b-8dd0-ec3c861e6291"
 	strings:
 		$APIHashing32bit1 = {81 F7 99 5D 52 69 81 F3 30 D7 00 AB} 
 		$APIHashing32bit2 = {68 F2 55 03 88 68 65 19 6D 1E} 

@@ -5,7 +5,6 @@ rule PoS_Malware_MalumPOS
         date = "2015-05-25"
         description = "Used to detect MalumPOS memory dumper"
         sample_filtype = "exe"
-        uuid = "6d85c7fe-bf1b-53fb-b618-4b0f8b63cae4"
     strings:
         $string1 = "SOFTWARE\\Borland\\Delphi\\RTL"
         $string2 = "B)[0-9]{13,19}\\"

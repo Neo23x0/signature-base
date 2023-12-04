@@ -5,7 +5,6 @@ rule ACE_Containing_EXE {
         description = "Looks for ACE Archives containing an exe/scr file"
         date = "2015-09-09"
         score = 50
-        uuid = "0756f0e7-39f1-572d-a77d-1f7826332360"
     strings:
         $header = { 2a 2a 41 43 45 2a 2a }
         $extensions1 = ".exe" 

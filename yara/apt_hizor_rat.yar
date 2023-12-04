@@ -7,7 +7,6 @@ rule apt_win32_dll_rat_hiZorRAT
 		hash3 = "b9af5f5fd434a65d7aa1b55f5441c90a"
       ref1 = "http://www.threatgeek.com/2016/01/introducing-hi-zor-rat.html"
       reference = "https://www.fidelissecurity.com/sites/default/files/FTA_1020_Fidelis_Inocnation_FINAL.pdf"
-      uuid = "06fd02f2-2630-5aac-8011-67d67ff42c3f"
 	strings:
 		// Part of the encoded User-Agent = Mozilla
 		$s1 = { c7 [5] 40 00 62 00 c7 [5] 77 00 64 00 c7 [5] 61 00 61 00 c7 [5] 6c 00 }

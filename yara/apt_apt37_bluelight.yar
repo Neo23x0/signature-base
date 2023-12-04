@@ -18,7 +18,6 @@ rule APT_MAL_Win_BlueLight_B : InkySquid
         hash1 = "837eaf7b736583497afb8bbdb527f70577901eff04cc69d807983b233524bfed"
         license = "See license at https://github.com/volexity/threat-intel/LICENSE.txt"
         reference = "https://www.volexity.com/blog/2021/08/17/north-korean-apt-inkysquid-infects-victims-using-browser-exploits/"
-        uuid = "3ec2d44c-4c08-514d-a839-acef3f53f7dc"
     strings:
         $magic = "host_name: %ls, cookie_name: %s, cookie: %s, CT: %llu, ET: %llu, value: %s, path: %ls, secu: %d, http: %d, last: %llu, has: %d"
         
@@ -120,7 +119,6 @@ rule APT_MAL_Win_BlueLight : InkySquid {
         hash2 = "94b71ee0861cc7cfbbae53ad2e411a76f296fd5684edf6b25ebe79bf6a2a600a"
         license = "See license at https://github.com/volexity/threat-intel/LICENSE.txt"
         reference = "https://www.volexity.com/blog/2021/08/17/north-korean-apt-inkysquid-infects-victims-using-browser-exploits/"
-        uuid = "3ec2d44c-4c08-514d-a839-acef3f53f7dc"
     strings:
         $pdb1 = "\\Development\\BACKDOOR\\ncov\\"
         $pdb2 = "Release\\bluelight.pdb"

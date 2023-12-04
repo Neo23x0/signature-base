@@ -18,7 +18,6 @@ rule APT_DarkHydrus_Jul18_1 {
       reference = "https://researchcenter.paloaltonetworks.com/2018/07/unit42-new-threat-actor-group-darkhydrus-targets-middle-east-government/"
       date = "2018-07-28"
       hash1 = "99541ab28fc3328e25723607df4b0d9ea0a1af31b58e2da07eff9f15c4e6565c"
-      uuid = "fbd001c0-43c9-5429-84d6-7f62eadd8ff3"
    strings:
       $x1 = "Z:\\devcenter\\aggressor\\" ascii
    condition:
@@ -36,7 +35,6 @@ rule APT_DarkHydrus_Jul18_2 {
       reference = "https://researchcenter.paloaltonetworks.com/2018/07/unit42-new-threat-actor-group-darkhydrus-targets-middle-east-government/"
       date = "2018-07-28"
       hash1 = "b2571e3b4afbce56da8faa726b726eb465f2e5e5ed74cf3b172b5dd80460ad81"
-      uuid = "1a21cbbf-f7e1-56eb-973b-35c1a811e210"
    strings:
       $s4 = "windir" fullword ascii /* Goodware String - occured 47 times */
       $s6 = "temp.dll" fullword ascii /* Goodware String - occured 3 times */
@@ -55,7 +53,6 @@ rule APT_DarkHydrus_Jul18_3 {
       reference = "https://researchcenter.paloaltonetworks.com/2018/07/unit42-new-threat-actor-group-darkhydrus-targets-middle-east-government/"
       date = "2018-07-28"
       hash1 = "c8b3d4b6acce6b6655e17255ef7a214651b7fc4e43f9964df24556343393a1a3"
-      uuid = "1f766b49-3173-5f8a-ba52-a9ce9000be79"
    strings:
       $s2 = "Ws2_32.dll" fullword ascii
       $s3 = "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.0; Trident/5.0)" fullword ascii
@@ -75,7 +72,6 @@ rule HKTL_Unlicensed_CobaltStrike_EICAR_Jul18_5 {
       date = "2018-07-28"
       modified = "2021-06-17"
       hash1 = "cec36e8ed65ac6f250c05b4a17c09f58bb80c19b73169aaf40fa15c8d3a9a6a1"
-      uuid = "d52536b8-dd6b-59be-8761-d22b6a279114"
    strings:
       $x1 = "X5O!P%@AP[4\\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 

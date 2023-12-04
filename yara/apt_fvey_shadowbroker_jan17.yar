@@ -14,7 +14,6 @@ rule FVEY_ShadowBrokers_Jan17_Screen_Strings {
       author = "Florian Roth (Nextron Systems)"
       reference = "https://bit.no.com:43110/theshadowbrokers.bit/post/message7/"
       date = "2017-01-08"
-      uuid = "59832d0a-0cb2-5eb9-a4e2-36aaa09a3998"
    strings:
       $x1 = "Danderspritz" ascii wide fullword
       $x2 = "DanderSpritz" ascii wide fullword

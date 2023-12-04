@@ -17,7 +17,6 @@ rule TidePool_Malware {
 		hash3 = "2252dcd1b6afacde3f94d9557811bb769c4f0af3cb7a48ffe068d31bb7c30e18"
 		hash4 = "38f2c86041e0446730479cdb9c530298c0c4936722975c4e7446544fd6dcac9f"
 		hash5 = "9d0a47bdf00f7bd332ddd4cf8d95dd11ebbb945dda3d72aac512512b48ad93ba"
-		uuid = "eec12fd7-f5f8-5bee-98e0-2111766deb55"
 	strings:
 		$x1 = "Content-Disposition: form-data; name=\"m1.jpg\"" fullword ascii
 		$x2 = "C:\\PROGRA~2\\IEHelper\\mshtml.dll" fullword wide

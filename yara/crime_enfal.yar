@@ -9,7 +9,6 @@ rule MAL_Enfal_Nov22 {
       hash2 = "42fa6241ab94c73c7ab386d600fae70da505d752daab2e61819a0142b531078a"
       hash2 = "bf433f4264fa3f15f320b35e773e18ebfe94465d864d3f4b2a963c3e5efd39c2"
       score = 75
-      uuid = "9dcba14e-2175-5da0-8629-5b952c213f6c"
    strings:
       $xop1 = { 00 00 83 c9 ff 33 c0 f2 ae f7 d1 49 b8 ff 8f 01 00 2b c1 }
 
@@ -35,7 +34,6 @@ rule Enfal_Malware_Backdoor {
 		hash1 = "d4071272cc1bf944e3867db299b3f5dce126f82b"
 		hash2 = "6c7c8b804cc76e2c208c6e3b6453cb134d01fa41"
 		score = 60
-		uuid = "4631888c-e1e2-5969-a312-0f0011cd605c"
 	strings:
 		$x1 = "Micorsoft Corportation" fullword wide
 		$x2 = "IM Monnitor Service" fullword wide

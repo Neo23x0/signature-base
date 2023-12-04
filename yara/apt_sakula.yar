@@ -5,7 +5,6 @@ rule malware_sakula_xorloop {
     md5 = "fc6497fe708dbda9355139721b6181e7"
     date = "2016-06-13"
     modified = "2023-01-27"
-    uuid = "9349b7e4-560c-5d8b-94d9-cbb9fd09e132"
   strings:
     // XOR decode loop (non-null, non-key byte only)
     $opcodes_decode_loop01 = { 31 C0 8A 04 0B 3C 00 74 09 38 D0 74 05 30 D0 88 04 0B }
@@ -23,7 +22,6 @@ rule malware_sakula_memory {
     author = "David Cannings"
     md5 = "b3852b9e7f2b8954be447121bb6b65c3"
 
-    uuid = "328e3707-d11d-5b7f-bec4-18a42a2c658b"
   strings:
     $str01 = "cmd.exe /c ping 127.0.0.1 & del \"%s\""
     $str02 = "cmd.exe /c rundll32 \"%s\" Play \"%s\""
@@ -49,7 +47,6 @@ rule malware_sakula_shellcode {
     description = "Sakula shellcode - taken from decoded setup.msi but may not be unique enough to identify Sakula"
     author = "David Cannings"
 
-    uuid = "147e4894-7877-5367-9f6b-588eb7f0379a"
   strings:
     /*
       55                      push    ebp

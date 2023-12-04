@@ -16,7 +16,6 @@ rule NK_Miner_Malware_Jan18_1 {
       date = "2018-01-09"
       hash1 = "0024e32c0199ded445c0b968601f21cc92fc0c534d2642f2dd64c1c978ff01f3"
       hash2 = "42300b6a09f183ae167d7a11d9c6df21d022a5f02df346350d3d875d557d3b76"
-      uuid = "40f53c36-9e14-5307-9740-e6f514afc7ec"
    strings:
       $x0 = "c:\\users\\jawhar\\documents\\" ascii
       $x1 = "C:\\Users\\Jawhar\\documents\\" ascii

@@ -8,7 +8,6 @@ rule SUSP_THOR_Unsigned_Oct23_1 {
       reference = "Internal Research"
       date = "2023-10-28"
       score = 75
-      uuid = "2ca6a192-675e-5f02-a7b1-40369eeb9904"
    strings:
       $s1 = "THOR APT Scanner" wide fullword
       $s2 = "Nextron Systems GmbH" wide fullword

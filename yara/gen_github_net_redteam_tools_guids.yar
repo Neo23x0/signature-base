@@ -11,7 +11,6 @@ rule HKTL_NET_GUID_CSharpSetThreadContext {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "883bb859-d5ab-501d-8c83-0c5a2cf1f6c8"
     strings:
         $typelibguid0lo = "a1e28c8c-b3bd-44de-85b9-8aa7c18a714d" ascii wide
         $typelibguid0up = "A1E28C8C-B3BD-44DE-85B9-8AA7C18A714D" ascii wide
@@ -29,7 +28,6 @@ rule HKTL_NET_GUID_DLL_Injection {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "aec4fc28-9aa2-5eef-9fb1-d187a83a72b3"
     strings:
         $typelibguid0lo = "3d7e1433-f81a-428a-934f-7cc7fcf1149d" ascii wide
         $typelibguid0up = "3D7E1433-F81A-428A-934F-7CC7FCF1149D" ascii wide
@@ -45,7 +43,6 @@ rule HKTL_NET_GUID_LimeUSB_Csharp {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "dfa96b36-e84c-510b-b16b-bd686777b83d"
     strings:
         $typelibguid0lo = "94ea43ab-7878-4048-a64e-2b21b3b4366d" ascii wide
         $typelibguid0up = "94EA43AB-7878-4048-A64E-2B21B3B4366D" ascii wide
@@ -61,7 +58,6 @@ rule HKTL_NET_GUID_Ladon {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "57e3d2fa-d430-561b-9d42-cf58cda5ed7a"
     strings:
         $typelibguid0lo = "c335405f-5df2-4c7d-9b53-d65adfbed412" ascii wide
         $typelibguid0up = "C335405F-5DF2-4C7D-9B53-D65ADFBED412" ascii wide
@@ -77,7 +73,6 @@ rule HKTL_NET_GUID_WhiteListEvasion {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "cd2740d0-0315-5a32-b34a-1998024fcc06"
     strings:
         $typelibguid0lo = "858386df-4656-4a1e-94b7-47f6aa555658" ascii wide
         $typelibguid0up = "858386DF-4656-4A1E-94B7-47F6AA555658" ascii wide
@@ -93,7 +88,6 @@ rule HKTL_NET_GUID_Lime_Downloader {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "bfb0f97c-6d95-5e11-ad11-5297bcf7c3df"
     strings:
         $typelibguid0lo = "ec7afd4c-fbc4-47c1-99aa-6ebb05094173" ascii wide
         $typelibguid0up = "EC7AFD4C-FBC4-47C1-99AA-6EBB05094173" ascii wide
@@ -109,7 +103,6 @@ rule HKTL_NET_GUID_DarkEye {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "5dc6702f-a398-5be2-9df8-9a2ddc636a1f"
     strings:
         $typelibguid0lo = "0bdb9c65-14ed-4205-ab0c-ea2151866a7f" ascii wide
         $typelibguid0up = "0BDB9C65-14ED-4205-AB0C-EA2151866A7F" ascii wide
@@ -125,7 +118,6 @@ rule HKTL_NET_GUID_SharpKatz {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "ff084b4c-4b00-5504-85ee-d6d17b5be504"
     strings:
         $typelibguid0lo = "8568b4c1-2940-4f6c-bf4e-4383ef268be9" ascii wide
         $typelibguid0up = "8568B4C1-2940-4F6C-BF4E-4383EF268BE9" ascii wide
@@ -141,7 +133,6 @@ rule HKTL_NET_GUID_ExternalC2 {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "1bbdfbb9-a3e8-5ffe-9db9-b50937e6a14d"
     strings:
         $typelibguid0lo = "7266acbb-b10d-4873-9b99-12d2043b1d4e" ascii wide
         $typelibguid0up = "7266ACBB-B10D-4873-9B99-12D2043B1D4E" ascii wide
@@ -159,7 +150,6 @@ rule HKTL_NET_GUID_Povlsomware {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "0eba43d2-b415-5e72-9677-4a3238ff7c34"
     strings:
         $typelibguid0lo = "fe0d5aa7-538f-42f6-9ece-b141560f7781" ascii wide
         $typelibguid0up = "FE0D5AA7-538F-42F6-9ECE-B141560F7781" ascii wide
@@ -175,7 +165,6 @@ rule HKTL_NET_GUID_RunShellcode {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "249da967-68b0-59b1-b414-4eb4fe67b8f3"
     strings:
         $typelibguid0lo = "a3ec18a3-674c-4131-a7f5-acbed034b819" ascii wide
         $typelibguid0up = "A3EC18A3-674C-4131-A7F5-ACBED034B819" ascii wide
@@ -191,7 +180,6 @@ rule HKTL_NET_GUID_SharpLoginPrompt {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "e9a493d9-21b6-5ff1-9e5e-e8fbacc34c0c"
     strings:
         $typelibguid0lo = "c12e69cd-78a0-4960-af7e-88cbd794af97" ascii wide
         $typelibguid0up = "C12E69CD-78A0-4960-AF7E-88CBD794AF97" ascii wide
@@ -207,7 +195,6 @@ rule HKTL_NET_GUID_Adamantium_Thief {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "82225b2e-ab4a-50b8-a3fd-7ad4947d052e"
     strings:
         $typelibguid0lo = "e6104bc9-fea9-4ee9-b919-28156c1f2ede" ascii wide
         $typelibguid0up = "E6104BC9-FEA9-4EE9-B919-28156C1F2EDE" ascii wide
@@ -223,7 +210,6 @@ rule HKTL_NET_GUID_PSByPassCLM {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "dad6729f-3d96-5d2d-b72c-a96d1a3eae74"
     strings:
         $typelibguid0lo = "46034038-0113-4d75-81fd-eb3b483f2662" ascii wide
         $typelibguid0up = "46034038-0113-4D75-81FD-EB3B483F2662" ascii wide
@@ -239,7 +225,6 @@ rule HKTL_NET_GUID_physmem2profit {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "75a27970-c469-53da-b0c3-b3d0faea0b6f"
     strings:
         $typelibguid0lo = "814708c9-2320-42d2-a45f-31e42da06a94" ascii wide
         $typelibguid0up = "814708C9-2320-42D2-A45F-31E42DA06A94" ascii wide
@@ -255,7 +240,6 @@ rule HKTL_NET_GUID_NoAmci {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "5fab1551-9d35-53cf-a04f-c14370119553"
     strings:
         $typelibguid0lo = "352e80ec-72a5-4aa6-aabe-4f9a20393e8e" ascii wide
         $typelibguid0up = "352E80EC-72A5-4AA6-AABE-4F9A20393E8E" ascii wide
@@ -271,7 +255,6 @@ rule HKTL_NET_GUID_SharpBlock {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "b84538da-1b0e-50c7-abfa-e93d6de5a49b"
     strings:
         $typelibguid0lo = "3cf25e04-27e4-4d19-945e-dadc37c81152" ascii wide
         $typelibguid0up = "3CF25E04-27E4-4D19-945E-DADC37C81152" ascii wide
@@ -287,7 +270,6 @@ rule HKTL_NET_GUID_nopowershell {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "0fd7496b-e34f-51f7-9270-ad424ed6a7a8"
     strings:
         $typelibguid0lo = "555ad0ac-1fdb-4016-8257-170a74cb2f55" ascii wide
         $typelibguid0up = "555AD0AC-1FDB-4016-8257-170A74CB2F55" ascii wide
@@ -303,7 +285,6 @@ rule HKTL_NET_GUID_LimeLogger {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "0798f01b-76b7-5c4d-9ddb-5e377b86f8b9"
     strings:
         $typelibguid0lo = "068d14ef-f0a1-4f9d-8e27-58b4317830c6" ascii wide
         $typelibguid0up = "068D14EF-F0A1-4F9D-8E27-58B4317830C6" ascii wide
@@ -319,7 +300,6 @@ rule HKTL_NET_GUID_AggressorScripts {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "d5903db5-010b-5b9d-8a5b-5d61aec52e7a"
     strings:
         $typelibguid0lo = "afd1ff09-2632-4087-a30c-43591f32e4e8" ascii wide
         $typelibguid0up = "AFD1FF09-2632-4087-A30C-43591F32E4E8" ascii wide
@@ -335,7 +315,6 @@ rule HKTL_NET_GUID_Gopher {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "e3015719-9085-584d-8237-f377ec995149"
     strings:
         $typelibguid0lo = "b5152683-2514-49ce-9aca-1bc43df1e234" ascii wide
         $typelibguid0up = "B5152683-2514-49CE-9ACA-1BC43DF1E234" ascii wide
@@ -351,7 +330,6 @@ rule HKTL_NET_GUID_AVIator {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "52acd520-52aa-5bb9-ab3b-66a940aa5f5a"
     strings:
         $typelibguid0lo = "4885a4a3-4dfa-486c-b378-ae94a221661a" ascii wide
         $typelibguid0up = "4885A4A3-4DFA-486C-B378-AE94A221661A" ascii wide
@@ -367,7 +345,6 @@ rule HKTL_NET_GUID_njCrypter {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "c30c8323-9418-521a-a4fc-6be0113b99b5"
     strings:
         $typelibguid0lo = "8a87b003-4b43-467b-a509-0c8be05bf5a5" ascii wide
         $typelibguid0up = "8A87B003-4B43-467B-A509-0C8BE05BF5A5" ascii wide
@@ -385,7 +362,6 @@ rule HKTL_NET_GUID_SharpMiniDump {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "e91e6711-d992-5a8a-97e6-1ed7847f38a4"
     strings:
         $typelibguid0lo = "6ffccf81-6c3c-4d3f-b15f-35a86d0b497f" ascii wide
         $typelibguid0up = "6FFCCF81-6C3C-4D3F-B15F-35A86D0B497F" ascii wide
@@ -401,7 +377,6 @@ rule HKTL_NET_GUID_CinaRAT {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "c6b4c919-0fc6-5096-b29b-963142a2c831"
     strings:
         $typelibguid0lo = "8586f5b1-2ef4-4f35-bd45-c6206fdc0ebc" ascii wide
         $typelibguid0up = "8586F5B1-2EF4-4F35-BD45-C6206FDC0EBC" ascii wide
@@ -419,7 +394,6 @@ rule HKTL_NET_GUID_ToxicEye {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "0b7b62ce-9c24-5d81-8d87-22f6e461a62b"
     strings:
         $typelibguid0lo = "1bcfe538-14f4-4beb-9a3f-3f9472794902" ascii wide
         $typelibguid0up = "1BCFE538-14F4-4BEB-9A3F-3F9472794902" ascii wide
@@ -435,7 +409,6 @@ rule HKTL_NET_GUID_Disable_Windows_Defender {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "9a673427-e66e-594b-942a-64a2272319f3"
     strings:
         $typelibguid0lo = "501e3fdc-575d-492e-90bc-703fb6280ee2" ascii wide
         $typelibguid0up = "501E3FDC-575D-492E-90BC-703FB6280EE2" ascii wide
@@ -451,7 +424,6 @@ rule HKTL_NET_GUID_DInvoke_PoC {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "f3b0ef47-a92c-5c5d-a9e2-09579fcb438e"
     strings:
         $typelibguid0lo = "5a869ab2-291a-49e6-a1b7-0d0f051bef0e" ascii wide
         $typelibguid0up = "5A869AB2-291A-49E6-A1B7-0D0F051BEF0E" ascii wide
@@ -467,7 +439,6 @@ rule HKTL_NET_GUID_ReverseShell {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "876932d5-a65d-5230-9cb8-24038ad8af0d"
     strings:
         $typelibguid0lo = "980109e4-c988-47f9-b2b3-88d63fababdc" ascii wide
         $typelibguid0up = "980109E4-C988-47F9-B2B3-88D63FABABDC" ascii wide
@@ -485,7 +456,6 @@ rule HKTL_NET_GUID_SharpC2 {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "2ed6d74e-2b95-5c70-807a-4da5e62f5853"
     strings:
         $typelibguid0lo = "62b9ee4f-1436-4098-9bc1-dd61b42d8b81" ascii wide
         $typelibguid0up = "62B9EE4F-1436-4098-9BC1-DD61B42D8B81" ascii wide
@@ -511,7 +481,6 @@ rule HKTL_NET_GUID_SneakyExec {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "853b630d-77ba-5847-a129-c9fa0538f81b"
     strings:
         $typelibguid0lo = "612590aa-af68-41e6-8ce2-e831f7fe4ccc" ascii wide
         $typelibguid0up = "612590AA-AF68-41E6-8CE2-E831F7FE4CCC" ascii wide
@@ -527,7 +496,6 @@ rule HKTL_NET_GUID_UrbanBishopLocal {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "53b690ec-7d20-5e46-b368-b458ce56073d"
     strings:
         $typelibguid0lo = "88b8515e-a0e8-4208-a9a0-34b01d7ba533" ascii wide
         $typelibguid0up = "88B8515E-A0E8-4208-A9A0-34B01D7BA533" ascii wide
@@ -543,7 +511,6 @@ rule HKTL_NET_GUID_SharpShell {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "5966be44-c010-5c63-9576-1aaf36397d6c"
     strings:
         $typelibguid0lo = "bdba47c5-e823-4404-91d0-7f6561279525" ascii wide
         $typelibguid0up = "BDBA47C5-E823-4404-91D0-7F6561279525" ascii wide
@@ -561,7 +528,6 @@ rule HKTL_NET_GUID_EvilWMIProvider {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "3a6cf00e-28c4-5e6f-a28d-b3f28fca6eed"
     strings:
         $typelibguid0lo = "a4020626-f1ec-4012-8b17-a2c8a0204a4b" ascii wide
         $typelibguid0up = "A4020626-F1EC-4012-8B17-A2C8A0204A4B" ascii wide
@@ -577,7 +543,6 @@ rule HKTL_NET_GUID_GadgetToJScript {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "e296795f-d006-52a9-92c4-fb60c930564b"
     strings:
         $typelibguid0lo = "af9c62a1-f8d2-4be0-b019-0a7873e81ea9" ascii wide
         $typelibguid0up = "AF9C62A1-F8D2-4BE0-B019-0A7873E81EA9" ascii wide
@@ -595,7 +560,6 @@ rule HKTL_NET_GUID_AzureCLI_Extractor {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "f595545a-a7a6-577c-b3f4-febf7bf1b6c3"
     strings:
         $typelibguid0lo = "a73cad74-f8d6-43e6-9a4c-b87832cdeace" ascii wide
         $typelibguid0up = "A73CAD74-F8D6-43E6-9A4C-B87832CDEACE" ascii wide
@@ -611,7 +575,6 @@ rule HKTL_NET_GUID_UAC_Escaper {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "ea95ff3c-0cbb-5230-b5e4-bd8b2ff975eb"
     strings:
         $typelibguid0lo = "95359279-5cfa-46f6-b400-e80542a7336a" ascii wide
         $typelibguid0up = "95359279-5CFA-46F6-B400-E80542A7336A" ascii wide
@@ -627,7 +590,6 @@ rule HKTL_NET_GUID_HTTPSBeaconShell {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "d66e3566-6082-570a-a168-f44c9d8c7619"
     strings:
         $typelibguid0lo = "aca853dc-9e74-4175-8170-e85372d5f2a9" ascii wide
         $typelibguid0up = "ACA853DC-9E74-4175-8170-E85372D5F2A9" ascii wide
@@ -643,7 +605,6 @@ rule HKTL_NET_GUID_AmsiScanBufferBypass {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "12a15e61-30fb-50a3-a59b-39f9871444f0"
     strings:
         $typelibguid0lo = "431ef2d9-5cca-41d3-87ba-c7f5e4582dd2" ascii wide
         $typelibguid0up = "431EF2D9-5CCA-41D3-87BA-C7F5E4582DD2" ascii wide
@@ -659,7 +620,6 @@ rule HKTL_NET_GUID_ShellcodeLoader {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "b8787dac-48a3-5711-86ba-0fda86b6224e"
     strings:
         $typelibguid0lo = "a48fe0e1-30de-46a6-985a-3f2de3c8ac96" ascii wide
         $typelibguid0up = "A48FE0E1-30DE-46A6-985A-3F2DE3C8AC96" ascii wide
@@ -675,7 +635,6 @@ rule HKTL_NET_GUID_KeystrokeAPI {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "e715bce8-531b-5e2a-bd02-b2fc4990c499"
     strings:
         $typelibguid0lo = "f6fec17e-e22d-4149-a8a8-9f64c3c905d3" ascii wide
         $typelibguid0up = "F6FEC17E-E22D-4149-A8A8-9F64C3C905D3" ascii wide
@@ -693,7 +652,6 @@ rule HKTL_NET_GUID_ShellCodeRunner {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "949364e7-dcb6-5afd-ade9-cc34a6e15e97"
     strings:
         $typelibguid0lo = "634874b7-bf85-400c-82f0-7f3b4659549a" ascii wide
         $typelibguid0up = "634874B7-BF85-400C-82F0-7F3B4659549A" ascii wide
@@ -711,7 +669,6 @@ rule HKTL_NET_GUID_OffensiveCSharp {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "339f6858-6076-5320-ba5f-2903e642ea42"
     strings:
         $typelibguid0lo = "6c3fbc65-b673-40f0-b1ac-20636df01a85" ascii wide
         $typelibguid0up = "6C3FBC65-B673-40F0-B1AC-20636DF01A85" ascii wide
@@ -749,7 +706,6 @@ rule HKTL_NET_GUID_SHAPESHIFTER {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "8903c65a-624f-5e8d-a3f6-4572b56bd2f7"
     strings:
         $typelibguid0lo = "a3ddfcaa-66e7-44fd-ad48-9d80d1651228" ascii wide
         $typelibguid0up = "A3DDFCAA-66E7-44FD-AD48-9D80D1651228" ascii wide
@@ -765,7 +721,6 @@ rule HKTL_NET_GUID_Evasor {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "457959ed-3e90-52c7-89f9-e1b17b35260e"
     strings:
         $typelibguid0lo = "1c8849ef-ad09-4727-bf81-1f777bd1aef8" ascii wide
         $typelibguid0up = "1C8849EF-AD09-4727-BF81-1F777BD1AEF8" ascii wide
@@ -781,7 +736,6 @@ rule HKTL_NET_GUID_Stracciatella {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "5b1a8102-6d59-5f2f-8ae2-b3c1f75a561d"
     strings:
         $typelibguid0lo = "eaafa0ac-e464-4fc4-9713-48aa9a6716fb" ascii wide
         $typelibguid0up = "EAAFA0AC-E464-4FC4-9713-48AA9A6716FB" ascii wide
@@ -797,7 +751,6 @@ rule HKTL_NET_GUID_logger {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "82937fef-8280-5bc6-af4a-55c5cb3a7553"
     strings:
         $typelibguid0lo = "9e92a883-3c8b-4572-a73e-bb3e61cfdc16" ascii wide
         $typelibguid0up = "9E92A883-3C8B-4572-A73E-BB3E61CFDC16" ascii wide
@@ -813,7 +766,6 @@ rule HKTL_NET_GUID_Internal_Monologue {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "ce2773a2-b0b7-560e-ba21-3f018ddcacb3"
     strings:
         $typelibguid0lo = "0c0333db-8f00-4b68-b1db-18a9cacc1486" ascii wide
         $typelibguid0up = "0C0333DB-8F00-4B68-B1DB-18A9CACC1486" ascii wide
@@ -831,7 +783,6 @@ rule HKTL_NET_GUID_GRAT2 {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "e731d563-0d16-5f84-8127-624a71f8b646"
     strings:
         $typelibguid0lo = "5e7fce78-1977-444f-a18e-987d708a2cff" ascii wide
         $typelibguid0up = "5E7FCE78-1977-444F-A18E-987D708A2CFF" ascii wide
@@ -847,7 +798,6 @@ rule HKTL_NET_GUID_PowerShdll {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "3f582a47-078e-525f-9d02-4ee7a455a3b2"
     strings:
         $typelibguid0lo = "36ebf9aa-2f37-4f1d-a2f1-f2a45deeaf21" ascii wide
         $typelibguid0up = "36EBF9AA-2F37-4F1D-A2F1-F2A45DEEAF21" ascii wide
@@ -863,7 +813,6 @@ rule HKTL_NET_GUID_CsharpAmsiBypass {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "ca97004e-edc1-5b5a-ac67-e81ae24631aa"
     strings:
         $typelibguid0lo = "4ab3b95d-373c-4197-8ee3-fe0fa66ca122" ascii wide
         $typelibguid0up = "4AB3B95D-373C-4197-8EE3-FE0FA66CA122" ascii wide
@@ -879,7 +828,6 @@ rule HKTL_NET_GUID_HastySeries {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "0d35acf4-c763-593c-94e2-c499d3826375"
     strings:
         $typelibguid0lo = "8435531d-675c-4270-85bf-60db7653bcf6" ascii wide
         $typelibguid0up = "8435531D-675C-4270-85BF-60DB7653BCF6" ascii wide
@@ -913,7 +861,6 @@ rule HKTL_NET_GUID_DreamProtectorFree {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "9ebee989-3441-5a76-b243-08de978b541c"
     strings:
         $typelibguid0lo = "f7e8a902-2378-426a-bfa5-6b14c4b40aa3" ascii wide
         $typelibguid0up = "F7E8A902-2378-426A-BFA5-6B14C4B40AA3" ascii wide
@@ -929,7 +876,6 @@ rule HKTL_NET_GUID_RedSharp {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "2aa62d61-075c-5664-a7fc-2b9d84b954ed"
     strings:
         $typelibguid0lo = "30b2e0cf-34dd-4614-a5ca-6578fb684aea" ascii wide
         $typelibguid0up = "30B2E0CF-34DD-4614-A5CA-6578FB684AEA" ascii wide
@@ -945,7 +891,6 @@ rule HKTL_NET_GUID_ESC {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "a57c47e8-62bf-5425-9735-35a3e3a0c218"
     strings:
         $typelibguid0lo = "06260ce5-61f4-4b81-ad83-7d01c3b37921" ascii wide
         $typelibguid0up = "06260CE5-61F4-4B81-AD83-7D01C3B37921" ascii wide
@@ -963,7 +908,6 @@ rule HKTL_NET_GUID_Csharp_Loader {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "bf0c3d93-cbea-54c7-b950-fd4e5a600d07"
     strings:
         $typelibguid0lo = "5fd7f9fc-0618-4dde-a6a0-9faefe96c8a1" ascii wide
         $typelibguid0up = "5FD7F9FC-0618-4DDE-A6A0-9FAEFE96C8A1" ascii wide
@@ -979,7 +923,6 @@ rule HKTL_NET_GUID_bantam {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "0ed3f5e5-d954-51e2-b7fb-4c25ca3d9f10"
     strings:
         $typelibguid0lo = "14c79bda-2ce6-424d-bd49-4f8d68630b7b" ascii wide
         $typelibguid0up = "14C79BDA-2CE6-424D-BD49-4F8D68630B7B" ascii wide
@@ -995,7 +938,6 @@ rule HKTL_NET_GUID_SharpTask {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "2cdd1a15-c70c-5eea-b5a7-8b4a445b9323"
     strings:
         $typelibguid0lo = "13e90a4d-bf7a-4d5a-9979-8b113e3166be" ascii wide
         $typelibguid0up = "13E90A4D-BF7A-4D5A-9979-8B113E3166BE" ascii wide
@@ -1011,7 +953,6 @@ rule HKTL_NET_GUID_WindowsPlague {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "89729c43-ae01-5c1f-af04-06d7a6c4e7fc"
     strings:
         $typelibguid0lo = "cdf8b024-70c9-413a-ade3-846a43845e99" ascii wide
         $typelibguid0up = "CDF8B024-70C9-413A-ADE3-846A43845E99" ascii wide
@@ -1027,7 +968,6 @@ rule HKTL_NET_GUID_Misc_CSharp {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "d25fa706-2254-5a82-a961-f57a0daa447c"
     strings:
         $typelibguid0lo = "d1421ba3-c60b-42a0-98f9-92ba4e653f3d" ascii wide
         $typelibguid0up = "D1421BA3-C60B-42A0-98F9-92BA4E653F3D" ascii wide
@@ -1045,7 +985,6 @@ rule HKTL_NET_GUID_SharpSpray {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "e9312c96-be10-5942-a4da-1fe708cc6699"
     strings:
         $typelibguid0lo = "51c6e016-1428-441d-82e9-bb0eb599bbc8" ascii wide
         $typelibguid0up = "51C6E016-1428-441D-82E9-BB0EB599BBC8" ascii wide
@@ -1061,7 +1000,6 @@ rule HKTL_NET_GUID_Obfuscator {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "d9988b00-1f10-5421-8ffe-49849a5d5902"
     strings:
         $typelibguid0lo = "8fe5b811-a2cb-417f-af93-6a3cf6650af1" ascii wide
         $typelibguid0up = "8FE5B811-A2CB-417F-AF93-6A3CF6650AF1" ascii wide
@@ -1077,7 +1015,6 @@ rule HKTL_NET_GUID_SafetyKatz {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "5f6d7432-0bb5-5782-98ec-2c2168f2fc1f"
     strings:
         $typelibguid0lo = "8347e81b-89fc-42a9-b22c-f59a6a572dec" ascii wide
         $typelibguid0up = "8347E81B-89FC-42A9-B22C-F59A6A572DEC" ascii wide
@@ -1093,7 +1030,6 @@ rule HKTL_NET_GUID_Dropless_Malware {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "0da3b6d8-2002-590e-a8d5-f6c84acfb083"
     strings:
         $typelibguid0lo = "23b739f7-2355-491e-a7cd-a8485d39d6d6" ascii wide
         $typelibguid0up = "23B739F7-2355-491E-A7CD-A8485D39D6D6" ascii wide
@@ -1109,7 +1045,6 @@ rule HKTL_NET_GUID_UAC_SilentClean {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "2dde9632-10c5-5c91-8bd9-2fb80d6f0c49"
     strings:
         $typelibguid0lo = "948152a4-a4a1-4260-a224-204255bfee72" ascii wide
         $typelibguid0up = "948152A4-A4A1-4260-A224-204255BFEE72" ascii wide
@@ -1125,7 +1060,6 @@ rule HKTL_NET_GUID_DesktopGrabber {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "7db07291-d6d4-5527-a879-27f899dbd6fe"
     strings:
         $typelibguid0lo = "e6aa0cd5-9537-47a0-8c85-1fbe284a4380" ascii wide
         $typelibguid0up = "E6AA0CD5-9537-47A0-8C85-1FBE284A4380" ascii wide
@@ -1141,7 +1075,6 @@ rule HKTL_NET_GUID_wsManager {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "b8c330dc-74aa-5a33-8af6-17c9beb8be81"
     strings:
         $typelibguid0lo = "9480809e-5472-44f3-b076-dcdf7379e766" ascii wide
         $typelibguid0up = "9480809E-5472-44F3-B076-DCDF7379E766" ascii wide
@@ -1157,7 +1090,6 @@ rule HKTL_NET_GUID_UglyEXe {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "5833e6c5-f078-5eb5-9519-76710d7da0e1"
     strings:
         $typelibguid0lo = "233de44b-4ec1-475d-a7d6-16da48d6fc8d" ascii wide
         $typelibguid0up = "233DE44B-4EC1-475D-A7D6-16DA48D6FC8D" ascii wide
@@ -1173,7 +1105,6 @@ rule HKTL_NET_GUID_SharpDump {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "b613092f-9006-5405-b07e-59737410ac1e"
     strings:
         $typelibguid0lo = "79c9bba3-a0ea-431c-866c-77004802d8a0" ascii wide
         $typelibguid0up = "79C9BBA3-A0EA-431C-866C-77004802D8A0" ascii wide
@@ -1189,7 +1120,6 @@ rule HKTL_NET_GUID_EducationalRAT {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "b1d54bea-a6c4-5c57-9ee1-7438d503b01d"
     strings:
         $typelibguid0lo = "8a18fbcf-8cac-482d-8ab7-08a44f0e278e" ascii wide
         $typelibguid0up = "8A18FBCF-8CAC-482D-8AB7-08A44F0E278E" ascii wide
@@ -1205,7 +1135,6 @@ rule HKTL_NET_GUID_Stealth_Kid_RAT {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "f26e040a-dcc7-518f-89f2-3333f83fa14a"
     strings:
         $typelibguid0lo = "bf43cd33-c259-4711-8a0e-1a5c6c13811d" ascii wide
         $typelibguid0up = "BF43CD33-C259-4711-8A0E-1A5C6C13811D" ascii wide
@@ -1223,7 +1152,6 @@ rule HKTL_NET_GUID_SharpCradle {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "e2123a73-2609-559d-a122-923ebf8fd668"
     strings:
         $typelibguid0lo = "f70d2b71-4aae-4b24-9dae-55bc819c78bb" ascii wide
         $typelibguid0up = "F70D2B71-4AAE-4B24-9DAE-55BC819C78BB" ascii wide
@@ -1239,7 +1167,6 @@ rule HKTL_NET_GUID_BypassUAC {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "327f581e-1d8c-5d20-bdd7-a29810c619c9"
     strings:
         $typelibguid0lo = "4e7c140d-bcc4-4b15-8c11-adb4e54cc39a" ascii wide
         $typelibguid0up = "4E7C140D-BCC4-4B15-8C11-ADB4E54CC39A" ascii wide
@@ -1257,7 +1184,6 @@ rule HKTL_NET_GUID_hanzoInjection {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "c432bf68-49bf-57c7-bbfa-7bd2f3506c52"
     strings:
         $typelibguid0lo = "32e22e25-b033-4d98-a0b3-3d2c3850f06c" ascii wide
         $typelibguid0up = "32E22E25-B033-4D98-A0B3-3D2C3850F06C" ascii wide
@@ -1273,7 +1199,6 @@ rule HKTL_NET_GUID_clr_meterpreter {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "1d8a9717-4d80-5fb1-9c57-9b5f6c5a18b0"
     strings:
         $typelibguid0lo = "6840b249-1a0e-433b-be79-a927696ea4b3" ascii wide
         $typelibguid0up = "6840B249-1A0E-433B-BE79-A927696EA4B3" ascii wide
@@ -1299,7 +1224,6 @@ rule HKTL_NET_GUID_BYTAGE {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "4f87ca2c-3ac1-5733-893e-79665b80ffc3"
     strings:
         $typelibguid0lo = "8e46ba56-e877-4dec-be1e-394cb1b5b9de" ascii wide
         $typelibguid0up = "8E46BA56-E877-4DEC-BE1E-394CB1B5B9DE" ascii wide
@@ -1315,7 +1239,6 @@ rule HKTL_NET_GUID_MultiOS_ReverseShell {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "f54bcb1a-b0cd-5988-bf1d-4fa6c012d6b9"
     strings:
         $typelibguid0lo = "df0dd7a1-9f6b-4b0f-801e-e17e73b0801d" ascii wide
         $typelibguid0up = "DF0DD7A1-9F6B-4B0F-801E-E17E73B0801D" ascii wide
@@ -1331,7 +1254,6 @@ rule HKTL_NET_GUID_HideFromAMSI {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "0fa1ce82-b662-5e18-a5da-8359c96cd6e9"
     strings:
         $typelibguid0lo = "b91d2d44-794c-49b8-8a75-2fbec3fe3fe3" ascii wide
         $typelibguid0up = "B91D2D44-794C-49B8-8A75-2FBEC3FE3FE3" ascii wide
@@ -1347,7 +1269,6 @@ rule HKTL_NET_GUID_DotNetAVBypass_Master {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "4004271b-4fbe-58bb-9613-a077e76324b3"
     strings:
         $typelibguid0lo = "4854c8dc-82b0-4162-86e0-a5bbcbc10240" ascii wide
         $typelibguid0up = "4854C8DC-82B0-4162-86E0-A5BBCBC10240" ascii wide
@@ -1363,7 +1284,6 @@ rule HKTL_NET_GUID_SharpDPAPI {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "1394323f-b336-548f-925c-c276d439e9eb"
     strings:
         $typelibguid0lo = "5f026c27-f8e6-4052-b231-8451c6a73838" ascii wide
         $typelibguid0up = "5F026C27-F8E6-4052-B231-8451C6A73838" ascii wide
@@ -1381,7 +1301,6 @@ rule HKTL_NET_GUID_Telegra_Csharp_C2 {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "495a5f3e-cf05-5a66-b01c-8176ded88768"
     strings:
         $typelibguid0lo = "1d79fabc-2ba2-4604-a4b6-045027340c85" ascii wide
         $typelibguid0up = "1D79FABC-2BA2-4604-A4B6-045027340C85" ascii wide
@@ -1397,7 +1316,6 @@ rule HKTL_NET_GUID_SharpCompile {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "c5e053c4-1c90-581a-a6c3-087b252254b2"
     strings:
         $typelibguid0lo = "63f81b73-ff18-4a36-b095-fdcb4776da4c" ascii wide
         $typelibguid0up = "63F81B73-FF18-4A36-B095-FDCB4776DA4C" ascii wide
@@ -1413,7 +1331,6 @@ rule HKTL_NET_GUID_Carbuncle {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "4a87882e-570b-5b40-a8e3-47ebac01d257"
     strings:
         $typelibguid0lo = "3f239b73-88ae-413b-b8c8-c01a35a0d92e" ascii wide
         $typelibguid0up = "3F239B73-88AE-413B-B8C8-C01A35A0D92E" ascii wide
@@ -1429,7 +1346,6 @@ rule HKTL_NET_GUID_OSSFileTool {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "fa9aeae1-2aa5-51af-81e2-22a1b6fcda81"
     strings:
         $typelibguid0lo = "207aca5d-dcd6-41fb-8465-58b39efcde8b" ascii wide
         $typelibguid0up = "207ACA5D-DCD6-41FB-8465-58B39EFCDE8B" ascii wide
@@ -1445,7 +1361,6 @@ rule HKTL_NET_GUID_Rubeus {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "54638fe4-84b5-51a8-8c88-9c50ab09ff49"
     strings:
         $typelibguid0lo = "658c8b7f-3664-4a95-9572-a3e5871dfc06" ascii wide
         $typelibguid0up = "658C8B7F-3664-4A95-9572-A3E5871DFC06" ascii wide
@@ -1461,7 +1376,6 @@ rule HKTL_NET_GUID_Simple_Loader {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "4c26aaf9-187d-5990-b956-1bbf630411f0"
     strings:
         $typelibguid0lo = "035ae711-c0e9-41da-a9a2-6523865e8694" ascii wide
         $typelibguid0up = "035AE711-C0E9-41DA-A9A2-6523865E8694" ascii wide
@@ -1477,7 +1391,6 @@ rule HKTL_NET_GUID_Minidump {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "51f64c64-f3fa-5543-83fc-5f0bf881ef03"
     strings:
         $typelibguid0lo = "15c241aa-e73c-4b38-9489-9a344ac268a3" ascii wide
         $typelibguid0up = "15C241AA-E73C-4B38-9489-9A344AC268A3" ascii wide
@@ -1493,7 +1406,6 @@ rule HKTL_NET_GUID_SharpBypassUAC {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "474d40aa-4bcc-58b5-a129-40bbd3a89e99"
     strings:
         $typelibguid0lo = "0d588c86-c680-4b0d-9aed-418f1bb94255" ascii wide
         $typelibguid0up = "0D588C86-C680-4B0D-9AED-418F1BB94255" ascii wide
@@ -1509,7 +1421,6 @@ rule HKTL_NET_GUID_SharpPack {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "633d074a-b8c2-5148-ad80-6226b99be818"
     strings:
         $typelibguid1lo = "b59c7741-d522-4a41-bf4d-9badddebb84a" ascii wide
         $typelibguid1up = "B59C7741-D522-4A41-BF4D-9BADDDEBB84A" ascii wide
@@ -1539,7 +1450,6 @@ rule HKTL_NET_GUID_Salsa_tools {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "50db578e-6ddb-54d1-a978-e3630a3548c3"
     strings:
         $typelibguid0lo = "276004bb-5200-4381-843c-934e4c385b66" ascii wide
         $typelibguid0up = "276004BB-5200-4381-843C-934E4C385B66" ascii wide
@@ -1557,7 +1467,6 @@ rule HKTL_NET_GUID_WindowsDefender_Payload_Downloader {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "6e494a91-c05e-5a2e-8aa9-77600f3bdd47"
     strings:
         $typelibguid0lo = "2f8b4d26-7620-4e11-b296-bc46eba3adfc" ascii wide
         $typelibguid0up = "2F8B4D26-7620-4E11-B296-BC46EBA3ADFC" ascii wide
@@ -1573,7 +1482,6 @@ rule HKTL_NET_GUID_Privilege_Escalation {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "28615807-6637-57fc-ba56-efc64b041b80"
     strings:
         $typelibguid0lo = "ed54b904-5645-4830-8e68-52fd9ecbb2eb" ascii wide
         $typelibguid0up = "ED54B904-5645-4830-8E68-52FD9ECBB2EB" ascii wide
@@ -1589,7 +1497,6 @@ rule HKTL_NET_GUID_Marauder {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "f2783477-2853-5dcd-95f5-9f1e07a4a6e8"
     strings:
         $typelibguid0lo = "fff0a9a3-dfd4-402b-a251-6046d765ad78" ascii wide
         $typelibguid0up = "FFF0A9A3-DFD4-402B-A251-6046D765AD78" ascii wide
@@ -1605,7 +1512,6 @@ rule HKTL_NET_GUID_AV_Evasion_Tool {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "d4257465-38a0-56b9-8402-b92e21b96cb0"
     strings:
         $typelibguid0lo = "1937ee16-57d7-4a5f-88f4-024244f19dc6" ascii wide
         $typelibguid0up = "1937EE16-57D7-4A5F-88F4-024244F19DC6" ascii wide
@@ -1623,7 +1529,6 @@ rule HKTL_NET_GUID_Fenrir {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "cfc6312d-5997-5261-b771-c7f3f30bf86c"
     strings:
         $typelibguid0lo = "aecec195-f143-4d02-b946-df0e1433bd2e" ascii wide
         $typelibguid0up = "AECEC195-F143-4D02-B946-DF0E1433BD2E" ascii wide
@@ -1639,7 +1544,6 @@ rule HKTL_NET_GUID_StormKitty {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "09d66661-5b67-5846-9bea-ec682afb62cf"
     strings:
         $typelibguid0lo = "a16abbb4-985b-4db2-a80c-21268b26c73d" ascii wide
         $typelibguid0up = "A16ABBB4-985B-4DB2-A80C-21268B26C73D" ascii wide
@@ -1657,7 +1561,6 @@ rule HKTL_NET_GUID_Crypter_Runtime_AV_s_bypass {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "726cd57b-d88a-5854-b2e1-76d9bd71a155"
     strings:
         $typelibguid0lo = "c25e39a9-8215-43aa-96a3-da0e9512ec18" ascii wide
         $typelibguid0up = "C25E39A9-8215-43AA-96A3-DA0E9512EC18" ascii wide
@@ -1673,7 +1576,6 @@ rule HKTL_NET_GUID_RunAsUser {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "ead7819a-1397-5953-888f-2176e4041375"
     strings:
         $typelibguid0lo = "9dff282c-93b9-4063-bf8a-b6798371d35a" ascii wide
         $typelibguid0up = "9DFF282C-93B9-4063-BF8A-B6798371D35A" ascii wide
@@ -1689,7 +1591,6 @@ rule HKTL_NET_GUID_HWIDbypass {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "62b0541b-6eec-546e-8445-85d25bb0d784"
     strings:
         $typelibguid0lo = "47e08791-d124-4746-bc50-24bd1ee719a6" ascii wide
         $typelibguid0up = "47E08791-D124-4746-BC50-24BD1EE719A6" ascii wide
@@ -1705,7 +1606,6 @@ rule HKTL_NET_GUID_XORedReflectiveDLL {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "9b584bfb-98ef-50ee-b546-780c4b210a1b"
     strings:
         $typelibguid0lo = "c0e49392-04e3-4abb-b931-5202e0eb4c73" ascii wide
         $typelibguid0up = "C0E49392-04E3-4ABB-B931-5202E0EB4C73" ascii wide
@@ -1724,7 +1624,6 @@ rule HKTL_NET_GUID_Sharp_Suite {
         date = "2020-12-13"
         modified = "2023-04-06"
         modified = "2023-04-06"
-        uuid = "ab3cf358-a41d-584d-baaf-5e8f7232ca85"
     strings:
         $typelibguid0lo = "19657be4-51ca-4a85-8ab1-f6666008b1f3" ascii wide
         $typelibguid0up = "19657BE4-51CA-4A85-8AB1-F6666008B1F3" ascii wide
@@ -1780,7 +1679,6 @@ rule HKTL_NET_GUID_rat_shell {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "8f206175-f7e4-5543-8059-24f102fcd4b9"
     strings:
         $typelibguid0lo = "7a15f8f6-6ce2-4ca4-919d-2056b70cc76a" ascii wide
         $typelibguid0up = "7A15F8F6-6CE2-4CA4-919D-2056B70CC76A" ascii wide
@@ -1798,7 +1696,6 @@ rule HKTL_NET_GUID_dotnet_gargoyle {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "5efd0c83-cb65-5bda-b55e-4a89db5f337c"
     strings:
         $typelibguid0lo = "76435f79-f8af-4d74-8df5-d598a551b895" ascii wide
         $typelibguid0up = "76435F79-F8AF-4D74-8DF5-D598A551B895" ascii wide
@@ -1818,7 +1715,6 @@ rule HKTL_NET_GUID_aresskit {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "8265cd84-c8e7-5654-9d3a-774dab52d938"
     strings:
         $typelibguid0lo = "8dca0e42-f767-411d-9704-ae0ba4a44ae8" ascii wide
         $typelibguid0up = "8DCA0E42-F767-411D-9704-AE0BA4A44AE8" ascii wide
@@ -1834,7 +1730,6 @@ rule HKTL_NET_GUID_DLL_Injector {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "301e70f4-89ed-539c-b7f3-9fc6ae1393b3"
     strings:
         $typelibguid0lo = "4581a449-7d20-4c59-8da2-7fd830f1fd5e" ascii wide
         $typelibguid0up = "4581A449-7D20-4C59-8DA2-7FD830F1FD5E" ascii wide
@@ -1852,7 +1747,6 @@ rule HKTL_NET_GUID_TruffleSnout {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "8135d39e-6a9e-567d-840f-8d8c6338cce1"
     strings:
         $typelibguid0lo = "33842d77-bce3-4ee8-9ee2-9769898bb429" ascii wide
         $typelibguid0up = "33842D77-BCE3-4EE8-9EE2-9769898BB429" ascii wide
@@ -1868,7 +1762,6 @@ rule HKTL_NET_GUID_Anti_Analysis {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "bd527841-065e-57e9-b70e-c9d232072f1b"
     strings:
         $typelibguid0lo = "3092c8df-e9e4-4b75-b78e-f81a0058a635" ascii wide
         $typelibguid0up = "3092C8DF-E9E4-4B75-B78E-F81A0058A635" ascii wide
@@ -1884,7 +1777,6 @@ rule HKTL_NET_GUID_BackNet {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "91824d18-f46b-5b95-b650-4d710d711cf9"
     strings:
         $typelibguid0lo = "9fdae122-cd1e-467d-a6fa-a98c26e76348" ascii wide
         $typelibguid0up = "9FDAE122-CD1E-467D-A6FA-A98C26E76348" ascii wide
@@ -1906,7 +1798,6 @@ rule HKTL_NET_GUID_AllTheThings {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "c35160cb-ad31-5195-a7c6-0af91a58737d"
     strings:
         $typelibguid0lo = "0547ff40-5255-42a2-beb7-2ff0dbf7d3ba" ascii wide
         $typelibguid0up = "0547FF40-5255-42A2-BEB7-2FF0DBF7D3BA" ascii wide
@@ -1922,7 +1813,6 @@ rule HKTL_NET_GUID_AddReferenceDotRedTeam {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "59299a72-9b7a-5108-81c2-d8f6d2e99b20"
     strings:
         $typelibguid0lo = "73c79d7e-17d4-46c9-be5a-ecef65b924e4" ascii wide
         $typelibguid0up = "73C79D7E-17D4-46C9-BE5A-ECEF65B924E4" ascii wide
@@ -1938,7 +1828,6 @@ rule HKTL_NET_GUID_Lime_Crypter {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "484c7a15-7ab2-57d3-848c-0fddff753d52"
     strings:
         $typelibguid0lo = "f93c99ed-28c9-48c5-bb90-dd98f18285a6" ascii wide
         $typelibguid0up = "F93C99ED-28C9-48C5-BB90-DD98F18285A6" ascii wide
@@ -1955,7 +1844,6 @@ rule HKTL_NET_GUID_BrowserGhost {
         date = "2020-12-13"
         modified = "2023-04-06"
         modified = "2023-04-06"
-        uuid = "adcc5d12-c393-5708-ae0b-a85f2187c881"
     strings:
         $typelibguid0lo = "2133c634-4139-466e-8983-9a23ec99e01b" ascii wide
         $typelibguid0up = "2133C634-4139-466E-8983-9A23EC99E01B" ascii wide
@@ -1972,7 +1860,6 @@ rule HKTL_NET_GUID_SharpShot {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "9d59cd53-53b1-57db-b391-eee4dd6feec0"
     strings:
         $typelibguid0lo = "057aef75-861b-4e4b-a372-cfbd8322c8e1" ascii wide
         $typelibguid0up = "057AEF75-861B-4E4B-A372-CFBD8322C8E1" ascii wide
@@ -1988,7 +1875,6 @@ rule HKTL_NET_GUID_Offensive__NET {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "b98495fb-0338-5042-a7ce-d117204eb91e"
     strings:
         $typelibguid0lo = "11fe5fae-b7c1-484a-b162-d5578a802c9c" ascii wide
         $typelibguid0up = "11FE5FAE-B7C1-484A-B162-D5578A802C9C" ascii wide
@@ -2004,7 +1890,6 @@ rule HKTL_NET_GUID_RuralBishop {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "8fd89465-1ecc-5eda-b2ab-273172ad945d"
     strings:
         $typelibguid0lo = "fe4414d9-1d7e-4eeb-b781-d278fe7a5619" ascii wide
         $typelibguid0up = "FE4414D9-1D7E-4EEB-B781-D278FE7A5619" ascii wide
@@ -2020,7 +1905,6 @@ rule HKTL_NET_GUID_DeviceGuardBypasses {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "3790faac-b5be-5999-b35f-71a2ef02b6ed"
     strings:
         $typelibguid0lo = "f318466d-d310-49ad-a967-67efbba29898" ascii wide
         $typelibguid0up = "F318466D-D310-49AD-A967-67EFBBA29898" ascii wide
@@ -2046,7 +1930,6 @@ rule HKTL_NET_GUID_AMSI_Handler {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "40768acf-fa9e-531a-83fd-187814ddc2d4"
     strings:
         $typelibguid0lo = "d829426c-986c-40a4-8ee2-58d14e090ef2" ascii wide
         $typelibguid0up = "D829426C-986C-40A4-8EE2-58D14E090EF2" ascii wide
@@ -2068,7 +1951,6 @@ rule HKTL_NET_GUID_RAT_TelegramSpyBot {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "57d22201-a051-5040-927c-30da3fc684fd"
     strings:
         $typelibguid0lo = "8653fa88-9655-440e-b534-26c3c760a0d3" ascii wide
         $typelibguid0up = "8653FA88-9655-440E-B534-26C3C760A0D3" ascii wide
@@ -2084,7 +1966,6 @@ rule HKTL_NET_GUID_TheHackToolBoxTeek {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "ad8cf2c8-f70e-5f46-92fa-46e1fa5e683c"
     strings:
         $typelibguid0lo = "2aa8c254-b3b3-469c-b0c9-dcbe1dd101c0" ascii wide
         $typelibguid0up = "2AA8C254-B3B3-469C-B0C9-DCBE1DD101C0" ascii wide
@@ -2112,7 +1993,6 @@ rule HKTL_NET_GUID_USBTrojan {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "d25c9033-13e8-5fc9-8561-f8862cca39b8"
     strings:
         $typelibguid0lo = "4eee900e-adc5-46a7-8d7d-873fd6aea83e" ascii wide
         $typelibguid0up = "4EEE900E-ADC5-46A7-8D7D-873FD6AEA83E" ascii wide
@@ -2128,7 +2008,6 @@ rule HKTL_NET_GUID_IIS_backdoor {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "44264dd9-f8e9-5a60-847f-94378e07a327"
     strings:
         $typelibguid0lo = "3fda4aa9-6fc1-473f-9048-7edc058c4f65" ascii wide
         $typelibguid0up = "3FDA4AA9-6FC1-473F-9048-7EDC058C4F65" ascii wide
@@ -2146,7 +2025,6 @@ rule HKTL_NET_GUID_ShellGen {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "538a4f12-5020-5c76-9208-363f435ed9a9"
     strings:
         $typelibguid0lo = "c6894882-d29d-4ae1-aeb7-7d0a9b915013" ascii wide
         $typelibguid0up = "C6894882-D29D-4AE1-AEB7-7D0A9B915013" ascii wide
@@ -2162,7 +2040,6 @@ rule HKTL_NET_GUID_Mass_RAT {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "90b742da-6fd7-5c72-96cf-7a37a3e5d808"
     strings:
         $typelibguid0lo = "6c43a753-9565-48b2-a372-4210bb1e0d75" ascii wide
         $typelibguid0up = "6C43A753-9565-48B2-A372-4210BB1E0D75" ascii wide
@@ -2182,7 +2059,6 @@ rule HKTL_NET_GUID_Browser_ExternalC2 {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "8c309522-90e7-5f5a-b456-3a472756d397"
     strings:
         $typelibguid0lo = "10a730cd-9517-42d5-b3e3-a2383515cca9" ascii wide
         $typelibguid0up = "10A730CD-9517-42D5-B3E3-A2383515CCA9" ascii wide
@@ -2198,7 +2074,6 @@ rule HKTL_NET_GUID_OffensivePowerShellTasking {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "d221e24d-a2ef-51e2-95bf-4b91b438d9cf"
     strings:
         $typelibguid0lo = "d432c332-3b48-4d06-bedb-462e264e6688" ascii wide
         $typelibguid0up = "D432C332-3B48-4D06-BEDB-462E264E6688" ascii wide
@@ -2216,7 +2091,6 @@ rule HKTL_NET_GUID_DoHC2 {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "0bb38f10-ca5c-5c18-97c9-540b6367d150"
     strings:
         $typelibguid0lo = "9877a948-2142-4094-98de-e0fbb1bc4062" ascii wide
         $typelibguid0up = "9877A948-2142-4094-98DE-E0FBB1BC4062" ascii wide
@@ -2232,7 +2106,6 @@ rule HKTL_NET_GUID_SyscallPOC {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "1ed5e226-0dcd-5397-b5e8-41f8a14981a1"
     strings:
         $typelibguid0lo = "1e54637b-c887-42a9-af6a-b4bd4e28cda9" ascii wide
         $typelibguid0up = "1E54637B-C887-42A9-AF6A-B4BD4E28CDA9" ascii wide
@@ -2250,7 +2123,6 @@ rule HKTL_NET_GUID_Pen_Test_Tools {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "00fb98a9-e615-5fb6-a555-4326b93e2c24"
     strings:
         $typelibguid0lo = "922e7fdc-33bf-48de-bc26-a81f85462115" ascii wide
         $typelibguid0up = "922E7FDC-33BF-48DE-BC26-A81F85462115" ascii wide
@@ -2288,7 +2160,6 @@ rule HKTL_NET_GUID_The_Collection {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "4ae78576-ab75-5679-9a29-4d9a1ff03f15"
     strings:
         $typelibguid0lo = "579159ff-3a3d-46a7-b069-91204feb21cd" ascii wide
         $typelibguid0up = "579159FF-3A3D-46A7-B069-91204FEB21CD" ascii wide
@@ -2312,7 +2183,6 @@ rule HKTL_NET_GUID_Change_Lockscreen {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "a817c6e8-95f9-56c6-97b8-4be06658629f"
     strings:
         $typelibguid0lo = "78642ab3-eaa6-4e9c-a934-e7b0638bc1cc" ascii wide
         $typelibguid0up = "78642AB3-EAA6-4E9C-A934-E7B0638BC1CC" ascii wide
@@ -2328,7 +2198,6 @@ rule HKTL_NET_GUID_LOLBITS {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "66454ac0-742b-51a3-ac45-1ac9606e8b89"
     strings:
         $typelibguid0lo = "29d09aa4-ea0c-47c2-973c-1d768087d527" ascii wide
         $typelibguid0up = "29D09AA4-EA0C-47C2-973C-1D768087D527" ascii wide
@@ -2344,7 +2213,6 @@ rule HKTL_NET_GUID_Keylogger {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "0576756e-26d5-5165-b621-917126a75a38"
     strings:
         $typelibguid0lo = "7afbc9bf-32d9-460f-8a30-35e30aa15879" ascii wide
         $typelibguid0up = "7AFBC9BF-32D9-460F-8A30-35E30AA15879" ascii wide
@@ -2360,7 +2228,6 @@ rule HKTL_NET_GUID_CVE_2020_1337 {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "4b79867d-761c-5aa8-bf8a-60caa50d8aa6"
     strings:
         $typelibguid0lo = "d9c2e3c1-e9cc-42b0-a67c-b6e1a4f962cc" ascii wide
         $typelibguid0up = "D9C2E3C1-E9CC-42B0-A67C-B6E1A4F962CC" ascii wide
@@ -2376,7 +2243,6 @@ rule HKTL_NET_GUID_SharpLogger {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "5cce395b-4f6f-5015-b45e-7eb79853296a"
     strings:
         $typelibguid0lo = "36e00152-e073-4da8-aa0c-375b6dd680c4" ascii wide
         $typelibguid0up = "36E00152-E073-4DA8-AA0C-375B6DD680C4" ascii wide
@@ -2392,7 +2258,6 @@ rule HKTL_NET_GUID_AsyncRAT_C_Sharp {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "858a079d-71e8-516e-a2a9-f0969edc758b"
     strings:
         $typelibguid0lo = "619b7612-dfea-442a-a927-d997f99c497b" ascii wide
         $typelibguid0up = "619B7612-DFEA-442A-A927-D997F99C497B" ascii wide
@@ -2428,7 +2293,6 @@ rule HKTL_NET_GUID_DarkFender {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "0aea5e05-7788-5581-8bcc-d2e75a291dd9"
     strings:
         $typelibguid0lo = "12fdf7ce-4a7c-41b6-9b32-766ddd299beb" ascii wide
         $typelibguid0up = "12FDF7CE-4A7C-41B6-9B32-766DDD299BEB" ascii wide
@@ -2464,7 +2328,6 @@ rule HKTL_NET_GUID_MinerDropper {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "607f72df-b0c1-53df-bf2c-592f55cbfcb7"
     strings:
         $typelibguid0lo = "46a7af83-1da7-40b2-9d86-6fd6223f6791" ascii wide
         $typelibguid0up = "46A7AF83-1DA7-40B2-9D86-6FD6223F6791" ascii wide
@@ -2482,7 +2345,6 @@ rule HKTL_NET_GUID_SharpDomainSpray {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "cffd3350-4a86-5035-ab15-adbc3ac2a0e9"
     strings:
         $typelibguid0lo = "76ffa92b-429b-4865-970d-4e7678ac34ea" ascii wide
         $typelibguid0up = "76FFA92B-429B-4865-970D-4E7678AC34EA" ascii wide
@@ -2498,7 +2360,6 @@ rule HKTL_NET_GUID_iSpyKeylogger {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "8607de67-b472-5afc-b2b9-cc758b5ec474"
     strings:
         $typelibguid0lo = "ccc0a386-c4ce-42ef-aaea-b2af7eff4ad8" ascii wide
         $typelibguid0up = "CCC0A386-C4CE-42EF-AAEA-B2AF7EFF4AD8" ascii wide
@@ -2520,7 +2381,6 @@ rule HKTL_NET_GUID_SolarFlare {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-15"
         modified = "2023-04-06"
-        uuid = "3645e14c-6025-59fa-a5a2-d8dacba8cd94"
     strings:
         $typelibguid0lo = "ca60e49e-eee9-409b-8d1a-d19f1d27b7e4" ascii wide
         $typelibguid0up = "CA60E49E-EEE9-409B-8D1A-D19F1D27B7E4" ascii wide
@@ -2536,7 +2396,6 @@ rule HKTL_NET_GUID_Snaffler {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "d4b9a8c5-e0d9-5c85-af81-05f6e0f52bff"
     strings:
         $typelibguid0lo = "2aa060b4-de88-4d2a-a26a-760c1cefec3e" ascii wide
         $typelibguid0up = "2AA060B4-DE88-4D2A-A26A-760C1CEFEC3E" ascii wide
@@ -2554,7 +2413,6 @@ rule HKTL_NET_GUID_SharpShares {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-13"
         modified = "2023-04-06"
-        uuid = "e96aa79b-1da2-5b0c-9ac2-b6e201e06ec6"
     strings:
         $typelibguid0lo = "fe9fdde5-3f38-4f14-8c64-c3328c215cf2" ascii wide
         $typelibguid0up = "FE9FDDE5-3F38-4F14-8C64-C3328C215CF2" ascii wide
@@ -2570,7 +2428,6 @@ rule HKTL_NET_GUID_SharpEDRChecker {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-18"
         modified = "2023-04-06"
-        uuid = "f7ff344e-f8ee-5c3a-bdd1-de3cae8e7dfb"
     strings:
         $typelibguid0lo = "bdfee233-3fed-42e5-aa64-492eb2ac7047" ascii wide
         $typelibguid0up = "BDFEE233-3FED-42E5-AA64-492EB2AC7047" ascii wide
@@ -2586,7 +2443,6 @@ rule HKTL_NET_GUID_SharpClipHistory {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-21"
         modified = "2023-04-06"
-        uuid = "89ca4717-a4ec-5371-8dc3-bdb9933384af"
     strings:
         $typelibguid0lo = "1126d5b4-efc7-4b33-a594-b963f107fe82" ascii wide
         $typelibguid0up = "1126D5B4-EFC7-4B33-A594-B963F107FE82" ascii wide
@@ -2602,7 +2458,6 @@ rule HKTL_NET_GUID_SharpGPO_RemoteAccessPolicies {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-21"
         modified = "2023-04-06"
-        uuid = "642c2672-2327-5a4a-af91-6e0559996908"
     strings:
         $typelibguid0lo = "fbb1abcf-2b06-47a0-9311-17ba3d0f2a50" ascii wide
         $typelibguid0up = "FBB1ABCF-2B06-47A0-9311-17BA3D0F2A50" ascii wide
@@ -2618,7 +2473,6 @@ rule HKTL_NET_GUID_Absinthe {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-21"
         modified = "2023-04-06"
-        uuid = "8f25593b-b9d2-5807-b299-b039ecfd43a5"
     strings:
         $typelibguid0lo = "9936ae73-fb4e-4c5e-a5fb-f8aaeb3b9bd6" ascii wide
         $typelibguid0up = "9936AE73-FB4E-4C5E-A5FB-F8AAEB3B9BD6" ascii wide
@@ -2634,7 +2488,6 @@ rule HKTL_NET_GUID_ExploitRemotingService {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-21"
         modified = "2023-04-06"
-        uuid = "2f0b9635-2b2e-5825-baeb-69d7ae3791b1"
     strings:
         $typelibguid0lo = "fd17ae38-2fd3-405f-b85b-e9d14e8e8261" ascii wide
         $typelibguid0up = "FD17AE38-2FD3-405F-B85B-E9D14E8E8261" ascii wide
@@ -2654,7 +2507,6 @@ rule HKTL_NET_GUID_Xploit {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-21"
         modified = "2023-04-06"
-        uuid = "11ba6c14-06b6-5d9f-ac69-08ae506877e7"
     strings:
         $typelibguid0lo = "4545cfde-9ee5-4f1b-b966-d128af0b9a6e" ascii wide
         $typelibguid0up = "4545CFDE-9EE5-4F1B-B966-D128AF0B9A6E" ascii wide
@@ -2690,7 +2542,6 @@ rule HKTL_NET_GUID_PoC {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-21"
         modified = "2023-04-06"
-        uuid = "5669bc1a-b32e-5ae7-bf94-8ed2a124c765"
     strings:
         $typelibguid0lo = "89f9d411-e273-41bb-8711-209fd251ca88" ascii wide
         $typelibguid0up = "89F9D411-E273-41BB-8711-209FD251CA88" ascii wide
@@ -2706,7 +2557,6 @@ rule HKTL_NET_GUID_SharpGPOAbuse {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-21"
         modified = "2023-04-06"
-        uuid = "ea27044f-69be-5db7-8d77-28dafb18c7e5"
     strings:
         $typelibguid0lo = "4f495784-b443-4838-9fa6-9149293af785" ascii wide
         $typelibguid0up = "4F495784-B443-4838-9FA6-9149293AF785" ascii wide
@@ -2722,7 +2572,6 @@ rule HKTL_NET_GUID_Watson {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-21"
         modified = "2023-04-06"
-        uuid = "6dc7bb08-0b34-50a0-8ae8-02d96d66a334"
     strings:
         $typelibguid0lo = "49ad5f38-9e37-4967-9e84-fe19c7434ed7" ascii wide
         $typelibguid0up = "49AD5F38-9E37-4967-9E84-FE19C7434ED7" ascii wide
@@ -2738,7 +2587,6 @@ rule HKTL_NET_GUID_StandIn {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-21"
         modified = "2023-04-06"
-        uuid = "2af3c28a-ce5d-5dea-9abe-ff54b180049e"
     strings:
         $typelibguid0lo = "01c142ba-7af1-48d6-b185-81147a2f7db7" ascii wide
         $typelibguid0up = "01C142BA-7AF1-48D6-B185-81147A2F7DB7" ascii wide
@@ -2754,7 +2602,6 @@ rule HKTL_NET_GUID_azure_password_harvesting {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-21"
         modified = "2023-04-06"
-        uuid = "681cf9da-d664-5402-b7ac-eb2cfad85da9"
     strings:
         $typelibguid0lo = "7ad1ff2d-32ac-4c54-b615-9bb164160dac" ascii wide
         $typelibguid0up = "7AD1FF2D-32AC-4C54-B615-9BB164160DAC" ascii wide
@@ -2770,7 +2617,6 @@ rule HKTL_NET_GUID_PowerOPS {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-21"
         modified = "2023-04-06"
-        uuid = "3ef9f099-13c9-5b6f-8615-232240530078"
     strings:
         $typelibguid0lo = "2a3c5921-7442-42c3-8cb9-24f21d0b2414" ascii wide
         $typelibguid0up = "2A3C5921-7442-42C3-8CB9-24F21D0B2414" ascii wide
@@ -2786,7 +2632,6 @@ rule HKTL_NET_GUID_Random_CSharpTools {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-21"
         modified = "2023-04-06"
-        uuid = "ad8b5573-ad20-50cd-927b-a6401b10e653"
     strings:
         $typelibguid0lo = "f7fc19da-67a3-437d-b3b0-2a257f77a00b" ascii wide
         $typelibguid0up = "F7FC19DA-67A3-437D-B3B0-2A257F77A00B" ascii wide
@@ -2814,7 +2659,6 @@ rule HKTL_NET_GUID_CVE_2020_0668 {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "54c87578-f0f1-5108-a736-b6acd9624d29"
     strings:
         $typelibguid0lo = "1b4c5ec1-2845-40fd-a173-62c450f12ea5" ascii wide
         $typelibguid0up = "1B4C5EC1-2845-40FD-A173-62C450F12EA5" ascii wide
@@ -2830,7 +2674,6 @@ rule HKTL_NET_GUID_WindowsRpcClients {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "70fd7431-8c32-52a4-be9f-2a19ef77f2cc"
     strings:
         $typelibguid0lo = "843d8862-42eb-49ee-94e6-bca798dd33ea" ascii wide
         $typelibguid0up = "843D8862-42EB-49EE-94E6-BCA798DD33EA" ascii wide
@@ -2858,7 +2701,6 @@ rule HKTL_NET_GUID_SharpFruit {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "bf318530-b17d-5275-84b2-c284528bdae6"
     strings:
         $typelibguid0lo = "3da2f6de-75be-4c9d-8070-08da45e79761" ascii wide
         $typelibguid0up = "3DA2F6DE-75BE-4C9D-8070-08DA45E79761" ascii wide
@@ -2874,7 +2716,6 @@ rule HKTL_NET_GUID_SharpWitness {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "5e707da6-b2dd-511e-89ad-d19b93e8fca6"
     strings:
         $typelibguid0lo = "b9f6ec34-4ccc-4247-bcef-c1daab9b4469" ascii wide
         $typelibguid0up = "B9F6EC34-4CCC-4247-BCEF-C1DAAB9B4469" ascii wide
@@ -2890,7 +2731,6 @@ rule HKTL_NET_GUID_RexCrypter {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "5ebbeab3-3e93-5544-8f74-3d1b47335d8b"
     strings:
         $typelibguid0lo = "10cd7c1c-e56d-4b1b-80dc-e4c496c5fec5" ascii wide
         $typelibguid0up = "10CD7C1C-E56D-4B1B-80DC-E4C496C5FEC5" ascii wide
@@ -2906,7 +2746,6 @@ rule HKTL_NET_GUID_SharPersist {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "0c181186-7bb4-502b-8937-60cfd88ce689"
     strings:
         $typelibguid0lo = "9d1b853e-58f1-4ba5-aefc-5c221ca30e48" ascii wide
         $typelibguid0up = "9D1B853E-58F1-4BA5-AEFC-5C221CA30E48" ascii wide
@@ -2922,7 +2761,6 @@ rule HKTL_NET_GUID_CVE_2019_1253 {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "3e18b533-1b85-5eaf-bb3d-aa5b90fd2e28"
     strings:
         $typelibguid0lo = "584964c1-f983-498d-8370-23e27fdd0399" ascii wide
         $typelibguid0up = "584964C1-F983-498D-8370-23E27FDD0399" ascii wide
@@ -2938,7 +2776,6 @@ rule HKTL_NET_GUID_scout {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "cd24cca7-3bc0-5e7a-9817-dc3b26ec8358"
     strings:
         $typelibguid0lo = "d9c76e82-b848-47d4-8f22-99bf22a8ee11" ascii wide
         $typelibguid0up = "D9C76E82-B848-47D4-8F22-99BF22A8EE11" ascii wide
@@ -2954,7 +2791,6 @@ rule HKTL_NET_GUID_Grouper2 {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "a9cd9a16-b2a5-5d15-af89-7a8d0f1835bb"
     strings:
         $typelibguid0lo = "5decaea3-2610-4065-99dc-65b9b4ba6ccd" ascii wide
         $typelibguid0up = "5DECAEA3-2610-4065-99DC-65B9B4BA6CCD" ascii wide
@@ -2970,7 +2806,6 @@ rule HKTL_NET_GUID_CasperStager {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "0ad18d2b-b7cc-5316-a8e8-b05d4439b8e1"
     strings:
         $typelibguid0lo = "c653a9f2-0939-43c8-9b93-fed5e2e4c7e6" ascii wide
         $typelibguid0up = "C653A9F2-0939-43C8-9B93-FED5E2E4C7E6" ascii wide
@@ -2988,7 +2823,6 @@ rule HKTL_NET_GUID_TellMeYourSecrets {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "b00c353b-0446-5faa-87e5-0a7ba6ec2286"
     strings:
         $typelibguid0lo = "9b448062-7219-4d82-9a0a-e784c4b3aa27" ascii wide
         $typelibguid0up = "9B448062-7219-4D82-9A0A-E784C4B3AA27" ascii wide
@@ -3004,7 +2838,6 @@ rule HKTL_NET_GUID_SharpExcel4_DCOM {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "12d3f26b-40ca-5034-a7c2-9be9c8a7599b"
     strings:
         $typelibguid0lo = "68b83ce5-bbd9-4ee3-b1cc-5e9223fab52b" ascii wide
         $typelibguid0up = "68B83CE5-BBD9-4EE3-B1CC-5E9223FAB52B" ascii wide
@@ -3020,7 +2853,6 @@ rule HKTL_NET_GUID_SharpShooter {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "a59e6fe9-dbaf-5830-8cf1-485ff4dd939a"
     strings:
         $typelibguid0lo = "56598f1c-6d88-4994-a392-af337abe5777" ascii wide
         $typelibguid0up = "56598F1C-6D88-4994-A392-AF337ABE5777" ascii wide
@@ -3036,7 +2868,6 @@ rule HKTL_NET_GUID_NoMSBuild {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "9bc0661d-c60f-582b-8f88-87e3dfa13ddd"
     strings:
         $typelibguid0lo = "034a7b9f-18df-45da-b870-0e1cef500215" ascii wide
         $typelibguid0up = "034A7B9F-18DF-45DA-B870-0E1CEF500215" ascii wide
@@ -3054,7 +2885,6 @@ rule HKTL_NET_GUID_TeleShadow2 {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "5b22f2c4-0bd1-5a5a-8867-8fbc773d2b44"
     strings:
         $typelibguid0lo = "42c5c356-39cf-4c07-96df-ebb0ccf78ca4" ascii wide
         $typelibguid0up = "42C5C356-39CF-4C07-96DF-EBB0CCF78CA4" ascii wide
@@ -3072,7 +2902,6 @@ rule HKTL_NET_GUID_BadPotato {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "8bee12fc-fc29-5256-b559-d914ef202c0c"
     strings:
         $typelibguid0lo = "0527a14f-1591-4d94-943e-d6d784a50549" ascii wide
         $typelibguid0up = "0527A14F-1591-4D94-943E-D6D784A50549" ascii wide
@@ -3088,7 +2917,6 @@ rule HKTL_NET_GUID_LethalHTA {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "e8e1ad03-a5f0-5508-b78d-0de7bdaf4704"
     strings:
         $typelibguid0lo = "784cde17-ff0f-4e43-911a-19119e89c43f" ascii wide
         $typelibguid0up = "784CDE17-FF0F-4E43-911A-19119E89C43F" ascii wide
@@ -3106,7 +2934,6 @@ rule HKTL_NET_GUID_SharpStat {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "649c6cc0-e43b-558c-9567-00f352af528b"
     strings:
         $typelibguid0lo = "ffc5c721-49c8-448d-8ff4-2e3a7b7cc383" ascii wide
         $typelibguid0up = "FFC5C721-49C8-448D-8FF4-2E3A7B7CC383" ascii wide
@@ -3122,7 +2949,6 @@ rule HKTL_NET_GUID_SneakyService {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "d02d34f0-7aa1-5110-b7ea-670b5fb98150"
     strings:
         $typelibguid0lo = "897819d5-58e0-46a0-8e1a-91ea6a269d84" ascii wide
         $typelibguid0up = "897819D5-58E0-46A0-8E1A-91EA6A269D84" ascii wide
@@ -3138,7 +2964,6 @@ rule HKTL_NET_GUID_SharpExec {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "5faff0aa-9ffe-5ac0-b9e0-ca9f79350036"
     strings:
         $typelibguid0lo = "7fbad126-e21c-4c4e-a9f0-613fcf585a71" ascii wide
         $typelibguid0up = "7FBAD126-E21C-4C4E-A9F0-613FCF585A71" ascii wide
@@ -3154,7 +2979,6 @@ rule HKTL_NET_GUID_SharpCOM {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "94da3da4-a8aa-5735-9a04-1f2447a330aa"
     strings:
         $typelibguid0lo = "51960f7d-76fe-499f-afbd-acabd7ba50d1" ascii wide
         $typelibguid0up = "51960F7D-76FE-499F-AFBD-ACABD7BA50D1" ascii wide
@@ -3170,7 +2994,6 @@ rule HKTL_NET_GUID_Inception {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "8d18f1d5-9c9a-5258-9f96-fa24b702c6ad"
     strings:
         $typelibguid0lo = "03d96b8c-efd1-44a9-8db2-0b74db5d247a" ascii wide
         $typelibguid0up = "03D96B8C-EFD1-44A9-8DB2-0B74DB5D247A" ascii wide
@@ -3187,7 +3010,6 @@ rule HKTL_NET_GUID_SharpWMI_1 {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "cd5a1c7b-a45a-5541-b1b0-cf19c991ed22"
     strings:
         $typelibguid0lo = "bb357d38-6dc1-4f20-a54c-d664bd20677e" ascii wide
         $typelibguid0up = "BB357D38-6DC1-4F20-A54C-D664BD20677E" ascii wide
@@ -3203,7 +3025,6 @@ rule HKTL_NET_GUID_CVE_2019_1064 {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "4640e874-faa4-58dc-a3f3-18246a343f15"
     strings:
         $typelibguid0lo = "ff97e98a-635e-4ea9-b2d0-1a13f6bdbc38" ascii wide
         $typelibguid0up = "FF97E98A-635E-4EA9-B2D0-1A13F6BDBC38" ascii wide
@@ -3219,7 +3040,6 @@ rule HKTL_NET_GUID_Tokenvator {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "84ebb6b3-cf11-5172-95d4-d114bfeb0bc7"
     strings:
         $typelibguid0lo = "4b2b3bd4-d28f-44cc-96b3-4a2f64213109" ascii wide
         $typelibguid0up = "4B2B3BD4-D28F-44CC-96B3-4A2F64213109" ascii wide
@@ -3235,7 +3055,6 @@ rule HKTL_NET_GUID_WheresMyImplant {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "c99523ce-e2c0-5a21-89d1-70c0dd970731"
     strings:
         $typelibguid0lo = "cca59e4e-ce4d-40fc-965f-34560330c7e6" ascii wide
         $typelibguid0up = "CCA59E4E-CE4D-40FC-965F-34560330C7E6" ascii wide
@@ -3251,7 +3070,6 @@ rule HKTL_NET_GUID_Naga {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "3a9d3154-a8f1-57a4-8b61-498e2ebdfa42"
     strings:
         $typelibguid0lo = "99428732-4979-47b6-a323-0bb7d6d07c95" ascii wide
         $typelibguid0up = "99428732-4979-47B6-A323-0BB7D6D07C95" ascii wide
@@ -3269,7 +3087,6 @@ rule HKTL_NET_GUID_SharpBox {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "fda1a67f-d746-5ddb-a33f-97d608b13bc9"
     strings:
         $typelibguid0lo = "616c1afb-2944-42ed-9951-bf435cadb600" ascii wide
         $typelibguid0up = "616C1AFB-2944-42ED-9951-BF435CADB600" ascii wide
@@ -3285,7 +3102,6 @@ rule HKTL_NET_GUID_rundotnetdll32 {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "266c8add-d2ca-5e46-8594-5d190447d133"
     strings:
         $typelibguid0lo = "a766db28-94b6-4ed1-aef9-5200bbdd8ca7" ascii wide
         $typelibguid0up = "A766DB28-94B6-4ED1-AEF9-5200BBDD8CA7" ascii wide
@@ -3301,7 +3117,6 @@ rule HKTL_NET_GUID_AntiDebug {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "f381081b-d0cb-593d-ad3d-28816f770b67"
     strings:
         $typelibguid0lo = "997265c1-1342-4d44-aded-67964a32f859" ascii wide
         $typelibguid0up = "997265C1-1342-4D44-ADED-67964A32F859" ascii wide
@@ -3317,7 +3132,6 @@ rule HKTL_NET_GUID_DInvisibleRegistry {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "98409bbe-6346-5825-b7f7-c1afeac2b038"
     strings:
         $typelibguid0lo = "31d576fb-9fb9-455e-ab02-c78981634c65" ascii wide
         $typelibguid0up = "31D576FB-9FB9-455E-AB02-C78981634C65" ascii wide
@@ -3333,7 +3147,6 @@ rule HKTL_NET_GUID_TikiTorch {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "354ee690-a0d0-5cc5-a73b-53b916ed0169"
     strings:
         $typelibguid0lo = "806c6c72-4adc-43d9-b028-6872fa48d334" ascii wide
         $typelibguid0up = "806C6C72-4ADC-43D9-B028-6872FA48D334" ascii wide
@@ -3361,7 +3174,6 @@ rule HKTL_NET_GUID_HiveJack {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "10567ef4-780f-5e93-9061-3214116d6bbb"
     strings:
         $typelibguid0lo = "e12e62fe-bea3-4989-bf04-6f76028623e3" ascii wide
         $typelibguid0up = "E12E62FE-BEA3-4989-BF04-6F76028623E3" ascii wide
@@ -3377,7 +3189,6 @@ rule HKTL_NET_GUID_DecryptAutoLogon {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "3ef58da9-16c1-54cf-9d06-a05680548cf5"
     strings:
         $typelibguid0lo = "015a37fc-53d0-499b-bffe-ab88c5086040" ascii wide
         $typelibguid0up = "015A37FC-53D0-499B-BFFE-AB88C5086040" ascii wide
@@ -3393,7 +3204,6 @@ rule HKTL_NET_GUID_UnstoppableService {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "8c65fbee-d779-57a8-851b-7583be66c67a"
     strings:
         $typelibguid0lo = "0c117ee5-2a21-dead-beef-8cc7f0caaa86" ascii wide
         $typelibguid0up = "0C117EE5-2A21-DEAD-BEEF-8CC7F0CAAA86" ascii wide
@@ -3410,7 +3220,6 @@ rule HKTL_NET_GUID_SharpWMI_2 {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "e6ab2f5e-2a5a-5be9-9b66-96cb745fd199"
     strings:
         $typelibguid0lo = "6dd22880-dac5-4b4d-9c91-8c35cc7b8180" ascii wide
         $typelibguid0up = "6DD22880-DAC5-4B4D-9C91-8C35CC7B8180" ascii wide
@@ -3426,7 +3235,6 @@ rule HKTL_NET_GUID_EWSToolkit {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "acde7744-d17f-5e47-a5e2-ff4f4c4d8093"
     strings:
         $typelibguid0lo = "ca536d67-53c9-43b5-8bc8-9a05fdc567ed" ascii wide
         $typelibguid0up = "CA536D67-53C9-43B5-8BC8-9A05FDC567ED" ascii wide
@@ -3442,7 +3250,6 @@ rule HKTL_NET_GUID_SweetPotato {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "0e347d94-51eb-5589-93d8-b19fec7f2365"
     strings:
         $typelibguid0lo = "6aeb5004-6093-4c23-aeae-911d64cacc58" ascii wide
         $typelibguid0up = "6AEB5004-6093-4C23-AEAE-911D64CACC58" ascii wide
@@ -3460,7 +3267,6 @@ rule HKTL_NET_GUID_memscan {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "35175fe1-a583-50d1-8b0c-71f19b898817"
     strings:
         $typelibguid0lo = "79462f87-8418-4834-9356-8c11e44ce189" ascii wide
         $typelibguid0up = "79462F87-8418-4834-9356-8C11E44CE189" ascii wide
@@ -3476,7 +3282,6 @@ rule HKTL_NET_GUID_SharpStay {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "e5bde5a9-8e09-59ce-ad01-e29836813cf8"
     strings:
         $typelibguid0lo = "2963c954-7b1e-47f5-b4fa-2fc1f0d56aea" ascii wide
         $typelibguid0up = "2963C954-7B1E-47F5-B4FA-2FC1F0D56AEA" ascii wide
@@ -3492,7 +3297,6 @@ rule HKTL_NET_GUID_SharpLocker {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "9525422a-d670-5475-abdc-b7ecd1ab9943"
     strings:
         $typelibguid0lo = "a6f8500f-68bc-4efc-962a-6c6e68d893af" ascii wide
         $typelibguid0up = "A6F8500F-68BC-4EFC-962A-6C6E68D893AF" ascii wide
@@ -3508,7 +3312,6 @@ rule HKTL_NET_GUID_SauronEye {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "3b624dde-a63e-58ac-a4db-af931f1d8553"
     strings:
         $typelibguid0lo = "0f43043d-8957-4ade-a0f4-25c1122e8118" ascii wide
         $typelibguid0up = "0F43043D-8957-4ADE-A0F4-25C1122E8118" ascii wide
@@ -3526,7 +3329,6 @@ rule HKTL_NET_GUID_sitrep {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "5f2ac63e-4be1-520c-82b1-1957027a63e2"
     strings:
         $typelibguid0lo = "12963497-988f-46c0-9212-28b4b2b1831b" ascii wide
         $typelibguid0up = "12963497-988F-46C0-9212-28B4B2B1831B" ascii wide
@@ -3542,7 +3344,6 @@ rule HKTL_NET_GUID_SharpClipboard {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "fd1b7786-8853-5858-ab03-da350e44f738"
     strings:
         $typelibguid0lo = "97484211-4726-4129-86aa-ae01d17690be" ascii wide
         $typelibguid0up = "97484211-4726-4129-86AA-AE01D17690BE" ascii wide
@@ -3558,7 +3359,6 @@ rule HKTL_NET_GUID_SharpCookieMonster {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "87be6949-f4f5-5a5a-b804-c627ed0f4355"
     strings:
         $typelibguid0lo = "566c5556-1204-4db9-9dc8-a24091baaa8e" ascii wide
         $typelibguid0up = "566C5556-1204-4DB9-9DC8-A24091BAAA8E" ascii wide
@@ -3574,7 +3374,6 @@ rule HKTL_NET_GUID_p0wnedShell {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "390b94d1-dda9-5a85-80ae-c79a3f7b0b9d"
     strings:
         $typelibguid0lo = "2e9b1462-f47c-48ca-9d85-004493892381" ascii wide
         $typelibguid0up = "2E9B1462-F47C-48CA-9D85-004493892381" ascii wide
@@ -3590,7 +3389,6 @@ rule HKTL_NET_GUID_SharpMove {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "e52392f9-614c-596e-8efd-aa0a2fa44e60"
     strings:
         $typelibguid0lo = "8bf82bbe-909c-4777-a2fc-ea7c070ff43e" ascii wide
         $typelibguid0up = "8BF82BBE-909C-4777-A2FC-EA7C070FF43E" ascii wide
@@ -3606,7 +3404,6 @@ rule HKTL_NET_GUID_C_Sharp_R_A_T_Client {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "f5df8257-d202-58e3-9c4a-1dfc9dd52f2a"
     strings:
         $typelibguid0lo = "6d9e8852-e86c-4e36-9cb4-b3c3853ed6b8" ascii wide
         $typelibguid0up = "6D9E8852-E86C-4E36-9CB4-B3C3853ED6B8" ascii wide
@@ -3622,7 +3419,6 @@ rule HKTL_NET_GUID_SharpPrinter {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "10270351-ad80-5330-971b-bc8f635f05f4"
     strings:
         $typelibguid0lo = "41b2d1e5-4c5d-444c-aa47-629955401ed9" ascii wide
         $typelibguid0up = "41B2D1E5-4C5D-444C-AA47-629955401ED9" ascii wide
@@ -3638,7 +3434,6 @@ rule HKTL_NET_GUID_EvilFOCA {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "2b2f5f6f-4224-5013-9e85-0ac088826bea"
     strings:
         $typelibguid0lo = "f26bdb4a-5846-4bec-8f52-3c39d32df495" ascii wide
         $typelibguid0up = "F26BDB4A-5846-4BEC-8F52-3C39D32DF495" ascii wide
@@ -3654,7 +3449,6 @@ rule HKTL_NET_GUID_PoshC2_Misc {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "245803cb-63d8-5c75-b672-912091cf4a80"
     strings:
         $typelibguid0lo = "85773eb7-b159-45fe-96cd-11bad51da6de" ascii wide
         $typelibguid0up = "85773EB7-B159-45FE-96CD-11BAD51DA6DE" ascii wide
@@ -3672,7 +3466,6 @@ rule HKTL_NET_GUID_Sharpire {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "32bdaa0f-3afc-5e0e-a20f-e21f33909af7"
     strings:
         $typelibguid0lo = "39b75120-07fe-4833-a02e-579ff8b68331" ascii wide
         $typelibguid0up = "39B75120-07FE-4833-A02E-579FF8B68331" ascii wide
@@ -3688,7 +3481,6 @@ rule HKTL_NET_GUID_Sharp_SMBExec {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "6a1024af-734c-5974-af50-db51dbd694ff"
     strings:
         $typelibguid0lo = "344ee55a-4e32-46f2-a003-69ad52b55945" ascii wide
         $typelibguid0up = "344EE55A-4E32-46F2-A003-69AD52B55945" ascii wide
@@ -3704,7 +3496,6 @@ rule HKTL_NET_GUID_MiscTools {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "ce49cc7b-a5a5-52b7-a7bf-bbb0c5b29b8a"
     strings:
         $typelibguid0lo = "384e9647-28a9-4835-8fa7-2472b1acedc0" ascii wide
         $typelibguid0up = "384E9647-28A9-4835-8FA7-2472B1ACEDC0" ascii wide
@@ -3728,7 +3519,6 @@ rule HKTL_NET_GUID_MemoryMapper {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "c978be10-315c-54e7-afea-f97e9a5f2d18"
     strings:
         $typelibguid0lo = "b9fbf3ac-05d8-4cd5-9694-b224d4e6c0ea" ascii wide
         $typelibguid0up = "B9FBF3AC-05D8-4CD5-9694-B224D4E6C0EA" ascii wide
@@ -3744,7 +3534,6 @@ rule HKTL_NET_GUID_VanillaRAT {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "9448e8d0-5bfc-5683-b633-284e43d24642"
     strings:
         $typelibguid0lo = "d0f2ee67-0a50-423d-bfe6-845da892a2db" ascii wide
         $typelibguid0up = "D0F2EE67-0A50-423D-BFE6-845DA892A2DB" ascii wide
@@ -3762,7 +3551,6 @@ rule HKTL_NET_GUID_UnmanagedPowerShell {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "49ff1362-0ac5-580d-97f3-516f2a10072b"
     strings:
         $typelibguid0lo = "dfc4eebb-7384-4db5-9bad-257203029bd9" ascii wide
         $typelibguid0up = "DFC4EEBB-7384-4DB5-9BAD-257203029BD9" ascii wide
@@ -3778,7 +3566,6 @@ rule HKTL_NET_GUID_Quasar {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "b938cf7d-27fd-5fa2-b0e5-d4da5670f3ef"
     strings:
         $typelibguid0lo = "cfda6d2e-8ab3-4349-b89a-33e1f0dab32b" ascii wide
         $typelibguid0up = "CFDA6D2E-8AB3-4349-B89A-33E1F0DAB32B" ascii wide
@@ -3796,7 +3583,6 @@ rule HKTL_NET_GUID_SharpAdidnsdump {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "51d50b22-4e73-5378-9e0d-ad7730987293"
     strings:
         $typelibguid0lo = "cdb02bc2-5f62-4c8a-af69-acc3ab82e741" ascii wide
         $typelibguid0up = "CDB02BC2-5F62-4C8A-AF69-ACC3AB82E741" ascii wide
@@ -3812,7 +3598,6 @@ rule HKTL_NET_GUID_DotNetToJScript {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "31827074-fc63-5690-b6c7-8e89daacc07f"
     strings:
         $typelibguid0lo = "7e3f231c-0d0b-4025-812c-0ef099404861" ascii wide
         $typelibguid0up = "7E3F231C-0D0B-4025-812C-0EF099404861" ascii wide
@@ -3828,7 +3613,6 @@ rule HKTL_NET_GUID_Inferno {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "af2d9832-c7f9-5879-a19b-a3c4d91b8b3f"
     strings:
         $typelibguid0lo = "26d498f7-37ae-476c-97b0-3761e3a919f0" ascii wide
         $typelibguid0up = "26D498F7-37AE-476C-97B0-3761E3A919F0" ascii wide
@@ -3844,7 +3628,6 @@ rule HKTL_NET_GUID_SharpSearch {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "459d8a34-f311-5459-8257-e7aa519174b5"
     strings:
         $typelibguid0lo = "98fee742-8410-4f20-8b2d-d7d789ab003d" ascii wide
         $typelibguid0up = "98FEE742-8410-4F20-8B2D-D7D789AB003D" ascii wide
@@ -3860,7 +3643,6 @@ rule HKTL_NET_GUID_SharpSecDump {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "492dfb79-541a-589d-ac69-468e9b2ab9db"
     strings:
         $typelibguid0lo = "e2fdd6cc-9886-456c-9021-ee2c47cf67b7" ascii wide
         $typelibguid0up = "E2FDD6CC-9886-456C-9021-EE2C47CF67B7" ascii wide
@@ -3876,7 +3658,6 @@ rule HKTL_NET_GUID_Net_GPPPassword {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "a718f9fc-acf5-536e-81d6-d393cebe8f77"
     strings:
         $typelibguid0lo = "00fcf72c-d148-4dd0-9ca4-0181c4bd55c3" ascii wide
         $typelibguid0up = "00FCF72C-D148-4DD0-9CA4-0181C4BD55C3" ascii wide
@@ -3892,7 +3673,6 @@ rule HKTL_NET_GUID_FileSearcher {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "1b5f1f68-f87b-5e60-94a4-e2556b4e6c5d"
     strings:
         $typelibguid0lo = "2c879479-5027-4ce9-aaac-084db0e6d630" ascii wide
         $typelibguid0up = "2C879479-5027-4CE9-AAAC-084DB0E6D630" ascii wide
@@ -3908,7 +3688,6 @@ rule HKTL_NET_GUID_ADFSDump {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "8cb2edcd-3696-5857-90ca-e99b1af54320"
     strings:
         $typelibguid0lo = "9ee27d63-6ac9-4037-860b-44e91bae7f0d" ascii wide
         $typelibguid0up = "9EE27D63-6AC9-4037-860B-44E91BAE7F0D" ascii wide
@@ -3924,7 +3703,6 @@ rule HKTL_NET_GUID_SharpRDP {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "d316ec0b-0313-52bb-923d-512fa08112f9"
     strings:
         $typelibguid0lo = "f1df1d0f-ff86-4106-97a8-f95aaf525c54" ascii wide
         $typelibguid0up = "F1DF1D0F-FF86-4106-97A8-F95AAF525C54" ascii wide
@@ -3940,7 +3718,6 @@ rule HKTL_NET_GUID_SharpCall {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "172415b6-0383-5da4-a88f-8ebe5daf9294"
     strings:
         $typelibguid0lo = "c1b0a923-0f17-4bc8-ba0f-c87aff43e799" ascii wide
         $typelibguid0up = "C1B0A923-0F17-4BC8-BA0F-C87AFF43E799" ascii wide
@@ -3956,7 +3733,6 @@ rule HKTL_NET_GUID_ysoserial_net {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "80483cd4-76e6-5629-bed7-4ae2e455222c"
     strings:
         $typelibguid0lo = "e1e8c029-f7cd-4bd1-952e-e819b41520f0" ascii wide
         $typelibguid0up = "E1E8C029-F7CD-4BD1-952E-E819B41520F0" ascii wide
@@ -3974,7 +3750,6 @@ rule HKTL_NET_GUID_ManagedInjection {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "c66e7666-b54f-532d-90e1-870292047aec"
     strings:
         $typelibguid0lo = "e5182bff-9562-40ff-b864-5a6b30c3b13b" ascii wide
         $typelibguid0up = "E5182BFF-9562-40FF-B864-5A6B30C3B13B" ascii wide
@@ -3994,7 +3769,6 @@ rule HKTL_NET_GUID_SharpSocks {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "343061d9-e24e-5d49-939f-b94c295b17ac"
     strings:
         $typelibguid0lo = "2f43992e-5703-4420-ad0b-17cb7d89c956" ascii wide
         $typelibguid0up = "2F43992E-5703-4420-AD0B-17CB7D89C956" ascii wide
@@ -4012,7 +3786,6 @@ rule HKTL_NET_GUID_Sharp_WMIExec {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "ae08a5a2-06d5-55fe-803a-7f4696220904"
     strings:
         $typelibguid0lo = "0a63b0a1-7d1a-4b84-81c3-bbbfe9913029" ascii wide
         $typelibguid0up = "0A63B0A1-7D1A-4B84-81C3-BBBFE9913029" ascii wide
@@ -4028,7 +3801,6 @@ rule HKTL_NET_GUID_KeeThief {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "71fef0e9-223a-5834-9d1c-f3fb8b66a809"
     strings:
         $typelibguid1lo = "39aa6f93-a1c9-497f-bad2-cc42a61d5710" ascii wide
         $typelibguid1up = "39AA6F93-A1C9-497F-BAD2-CC42A61D5710" ascii wide
@@ -4053,7 +3825,6 @@ rule HKTL_NET_GUID_fakelogonscreen {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "cc20290c-3f34-5e81-9337-c582f1ee7ade"
     strings:
         $typelibguid0lo = "d35a55bd-3189-498b-b72f-dc798172e505" ascii wide
         $typelibguid0up = "D35A55BD-3189-498B-B72F-DC798172E505" ascii wide
@@ -4069,7 +3840,6 @@ rule HKTL_NET_GUID_PoshSecFramework {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "a91620f3-3f21-525a-bc87-94d21cd126be"
     strings:
         $typelibguid0lo = "b1ac6aa0-2f1a-4696-bf4b-0e41cf2f4b6b" ascii wide
         $typelibguid0up = "B1AC6AA0-2F1A-4696-BF4B-0E41CF2F4B6B" ascii wide
@@ -4087,7 +3857,6 @@ rule HKTL_NET_GUID_SharpAttack {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "1eb911ab-3fb9-54b7-8afb-66328f30d563"
     strings:
         $typelibguid0lo = "5f0ceca3-5997-406c-adf5-6c7fbb6cba17" ascii wide
         $typelibguid0up = "5F0CECA3-5997-406C-ADF5-6C7FBB6CBA17" ascii wide
@@ -4103,7 +3872,6 @@ rule HKTL_NET_GUID_Altman {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "21acc8af-9497-5842-90a9-7a9300585d5d"
     strings:
         $typelibguid0lo = "64cdcd2b-7356-4079-af78-e22210e66154" ascii wide
         $typelibguid0up = "64CDCD2B-7356-4079-AF78-E22210E66154" ascii wide
@@ -4153,7 +3921,6 @@ rule HKTL_NET_GUID_BrowserPass {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-28"
         modified = "2023-04-06"
-        uuid = "bad36c36-dbed-527c-a2f5-4dceff1abe4b"
     strings:
         $typelibguid0lo = "3cb59871-0dce-453b-857a-2d1e515b0b66" ascii wide
         $typelibguid0up = "3CB59871-0DCE-453B-857A-2D1E515B0B66" ascii wide
@@ -4169,7 +3936,6 @@ rule HKTL_NET_GUID_Mythic {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-29"
         modified = "2023-04-06"
-        uuid = "44237fac-1526-5587-83a1-61d7a54f7da9"
     strings:
         $typelibguid0lo = "91f7a9da-f045-4239-a1e9-487ffdd65986" ascii wide
         $typelibguid0up = "91F7A9DA-F045-4239-A1E9-487FFDD65986" ascii wide
@@ -4187,7 +3953,6 @@ rule HKTL_NET_GUID_Nuages {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-29"
         modified = "2023-04-06"
-        uuid = "5ad947e2-bd71-50d4-9bbf-4d018c7ff36a"
     strings:
         $typelibguid0lo = "e9e80ac7-4c13-45bd-9bde-ca89aadf1294" ascii wide
         $typelibguid0up = "E9E80AC7-4C13-45BD-9BDE-CA89AADF1294" ascii wide
@@ -4203,7 +3968,6 @@ rule HKTL_NET_GUID_SharpSniper {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-29"
         modified = "2023-04-06"
-        uuid = "14e6a3b8-5e1f-5dd8-9b51-22522ac317e7"
     strings:
         $typelibguid0lo = "c8bb840c-04ce-4b60-a734-faf15abf7b18" ascii wide
         $typelibguid0up = "C8BB840C-04CE-4B60-A734-FAF15ABF7B18" ascii wide
@@ -4219,7 +3983,6 @@ rule HKTL_NET_GUID_SharpHound3 {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-29"
         modified = "2023-04-06"
-        uuid = "58001912-88a1-527d-9d3e-d7c376a1fce4"
     strings:
         $typelibguid0lo = "a517a8de-5834-411d-abda-2d0e1766539c" ascii wide
         $typelibguid0up = "A517A8DE-5834-411D-ABDA-2D0E1766539C" ascii wide
@@ -4235,7 +3998,6 @@ rule HKTL_NET_GUID_BlockEtw {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-29"
         modified = "2023-04-06"
-        uuid = "c2b72fef-6549-5b53-8ccf-232e8d152e96"
     strings:
         $typelibguid0lo = "daedf7b3-8262-4892-adc4-425dd5f85bca" ascii wide
         $typelibguid0up = "DAEDF7B3-8262-4892-ADC4-425DD5F85BCA" ascii wide
@@ -4251,7 +4013,6 @@ rule HKTL_NET_GUID_SharpWifiGrabber {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-29"
         modified = "2023-04-06"
-        uuid = "1a457672-743c-56f0-a4d7-6c25f9ce2345"
     strings:
         $typelibguid0lo = "c0997698-2b73-4982-b25b-d0578d1323c2" ascii wide
         $typelibguid0up = "C0997698-2B73-4982-B25B-D0578D1323C2" ascii wide
@@ -4267,7 +4028,6 @@ rule HKTL_NET_GUID_SharpMapExec {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-29"
         modified = "2023-04-06"
-        uuid = "b4922734-a486-5c4d-9bd7-5146cfecbf01"
     strings:
         $typelibguid0lo = "bd5220f7-e1fb-41d2-91ec-e4c50c6e9b9f" ascii wide
         $typelibguid0up = "BD5220F7-E1FB-41D2-91EC-E4C50C6E9B9F" ascii wide
@@ -4283,7 +4043,6 @@ rule HKTL_NET_GUID_k8fly {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-29"
         modified = "2023-04-06"
-        uuid = "3421e6fb-df65-5e2e-ae46-37f9c763c6a1"
     strings:
         $typelibguid0lo = "13b6c843-f3d4-4585-b4f3-e2672a47931e" ascii wide
         $typelibguid0up = "13B6C843-F3D4-4585-B4F3-E2672A47931E" ascii wide
@@ -4299,7 +4058,6 @@ rule HKTL_NET_GUID_Stealer {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-29"
         modified = "2023-04-06"
-        uuid = "c721a0ac-e898-52aa-9bdf-a19bc0bd783d"
     strings:
         $typelibguid0lo = "8fcd4931-91a2-4e18-849b-70de34ab75df" ascii wide
         $typelibguid0up = "8FCD4931-91A2-4E18-849B-70DE34AB75DF" ascii wide
@@ -4319,7 +4077,6 @@ rule HKTL_NET_GUID_PortTran {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-29"
         modified = "2023-04-06"
-        uuid = "844e58a2-54f5-51e8-8176-6a478a136603"
     strings:
         $typelibguid0lo = "3a074374-77e8-4312-8746-37f3cb00e82c" ascii wide
         $typelibguid0up = "3A074374-77E8-4312-8746-37F3CB00E82C" ascii wide
@@ -4338,7 +4095,6 @@ rule HKTL_NET_GUID_gray_keylogger_2 {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-30"
         modified = "2023-04-06"
-        uuid = "40ab8103-9151-5a5c-8b70-ab3bfd3896f9"
     strings:
         $typelibguid0lo = "e94ca3ff-c0e5-4d1a-ad5e-f6ebbe365067" ascii wide
         $typelibguid0up = "E94CA3FF-C0E5-4D1A-AD5E-F6EBBE365067" ascii wide
@@ -4356,7 +4112,6 @@ rule HKTL_NET_GUID_Lime_Miner {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-30"
         modified = "2023-04-06"
-        uuid = "d0631817-10a2-55bf-a41d-226fa0dcb9f9"
     strings:
         $typelibguid0lo = "13958fb9-dfc1-4e2c-8a8d-a5e68abdbc66" ascii wide
         $typelibguid0up = "13958FB9-DFC1-4E2C-8A8D-A5E68ABDBC66" ascii wide
@@ -4372,7 +4127,6 @@ rule HKTL_NET_GUID_BlackNET {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-30"
         modified = "2023-04-06"
-        uuid = "9fbb3c11-7b11-5910-9c8b-247aeefbaa87"
     strings:
         $typelibguid0lo = "c2b90883-abee-4cfa-af66-dfd93ec617a5" ascii wide
         $typelibguid0up = "C2B90883-ABEE-4CFA-AF66-DFD93EC617A5" ascii wide
@@ -4394,7 +4148,6 @@ rule HKTL_NET_GUID_PlasmaRAT {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-30"
         modified = "2023-04-06"
-        uuid = "13362cba-f9b2-50c8-95cc-504e585bdd42"
     strings:
         $typelibguid0lo = "b8a2147c-074c-46e1-bb99-c8431a6546ce" ascii wide
         $typelibguid0up = "B8A2147C-074C-46E1-BB99-C8431A6546CE" ascii wide
@@ -4412,7 +4165,6 @@ rule HKTL_NET_GUID_Lime_RAT {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-30"
         modified = "2023-04-06"
-        uuid = "31a0e9ca-9da1-557a-bcc5-1351fa90a0e1"
     strings:
         $typelibguid0lo = "e58ac447-ab07-402a-9c96-95e284a76a8d" ascii wide
         $typelibguid0up = "E58AC447-AB07-402A-9C96-95E284A76A8D" ascii wide
@@ -4468,7 +4220,6 @@ rule HKTL_NET_GUID_njRAT {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2020-12-30"
         modified = "2023-04-06"
-        uuid = "2140d69e-fb15-50a2-ba85-b7c8293003fb"
     strings:
         $typelibguid0lo = "5a542c1b-2d36-4c31-b039-26a88d3967da" ascii wide
         $typelibguid0up = "5A542C1B-2D36-4C31-B039-26A88D3967DA" ascii wide
@@ -4494,7 +4245,6 @@ rule HKTL_NET_GUID_Manager {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-01-21"
         modified = "2023-04-06"
-        uuid = "eef65d2c-ddbc-50c3-a6a0-e7032a55e92d"
     strings:
         $typelibguid0lo = "dda73ee9-0f41-4c09-9cad-8215abd60b33" ascii wide
         $typelibguid0up = "DDA73EE9-0F41-4C09-9CAD-8215ABD60B33" ascii wide
@@ -4512,7 +4262,6 @@ rule HKTL_NET_GUID_neo_ConfuserEx {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-01-21"
         modified = "2023-04-06"
-        uuid = "d73117a6-4512-5545-a4f4-72d8cf708340"
     strings:
         $typelibguid0lo = "e98490bb-63e5-492d-b14e-304de928f81a" ascii wide
         $typelibguid0up = "E98490BB-63E5-492D-B14E-304DE928F81A" ascii wide
@@ -4528,7 +4277,6 @@ rule HKTL_NET_GUID_SharpAllowedToAct {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-01-21"
         modified = "2023-04-06"
-        uuid = "13b7f5e0-4d34-533d-a182-b3fe7c93ca43"
     strings:
         $typelibguid0lo = "dac5448a-4ad1-490a-846a-18e4e3e0cf9a" ascii wide
         $typelibguid0up = "DAC5448A-4AD1-490A-846A-18E4E3E0CF9A" ascii wide
@@ -4544,7 +4292,6 @@ rule HKTL_NET_GUID_SuperSQLInjectionV1 {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-01-21"
         modified = "2023-04-06"
-        uuid = "247bef0d-7873-51c7-97b8-1be6dfe7708d"
     strings:
         $typelibguid0lo = "d5688068-fc89-467d-913f-037a785caca7" ascii wide
         $typelibguid0up = "D5688068-FC89-467D-913F-037A785CACA7" ascii wide
@@ -4560,7 +4307,6 @@ rule HKTL_NET_GUID_ADSearch {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-01-21"
         modified = "2023-04-06"
-        uuid = "399ea06d-b36a-542b-bccc-8e8f935a35c6"
     strings:
         $typelibguid0lo = "4da5f1b7-8936-4413-91f7-57d6e072b4a7" ascii wide
         $typelibguid0up = "4DA5F1B7-8936-4413-91F7-57D6E072B4A7" ascii wide
@@ -4576,7 +4322,6 @@ rule HKTL_NET_GUID_privilege_escalation_awesome_scripts_suite {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-01-21"
         modified = "2023-04-06"
-        uuid = "fa218dfa-4b56-5a62-b149-63394bd0b604"
     strings:
         $typelibguid0lo = "1928358e-a64b-493f-a741-ae8e3d029374" ascii wide
         $typelibguid0up = "1928358E-A64B-493F-A741-AE8E3D029374" ascii wide
@@ -4592,7 +4337,6 @@ rule HKTL_NET_GUID_CVE_2020_1206_POC {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-01-21"
         modified = "2023-04-06"
-        uuid = "d70472f3-b19f-5097-bd70-99a7e7812ac4"
     strings:
         $typelibguid0lo = "3523ca04-a12d-4b40-8837-1a1d28ef96de" ascii wide
         $typelibguid0up = "3523CA04-A12D-4B40-8837-1A1D28EF96DE" ascii wide
@@ -4612,7 +4356,6 @@ rule HKTL_NET_GUID_DInvoke {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-01-21"
         modified = "2023-04-06"
-        uuid = "f3b0ef47-a92c-5c5d-a9e2-09579fcb438e"
     strings:
         $typelibguid0lo = "b77fdab5-207c-4cdb-b1aa-348505c54229" ascii wide
         $typelibguid0up = "B77FDAB5-207C-4CDB-B1AA-348505C54229" ascii wide
@@ -4628,7 +4371,6 @@ rule HKTL_NET_GUID_SharpChisel {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-01-21"
         modified = "2023-04-06"
-        uuid = "3b7e6703-ebe8-5a98-839f-7d0349ab483f"
     strings:
         $typelibguid0lo = "f5f21e2d-eb7e-4146-a7e1-371fd08d6762" ascii wide
         $typelibguid0up = "F5F21E2D-EB7E-4146-A7E1-371FD08D6762" ascii wide
@@ -4644,7 +4386,6 @@ rule HKTL_NET_GUID_SharpScribbles {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-01-21"
         modified = "2023-04-06"
-        uuid = "47125b76-9388-5372-8810-d198f623367a"
     strings:
         $typelibguid0lo = "aa61a166-31ef-429d-a971-ca654cd18c3b" ascii wide
         $typelibguid0up = "AA61A166-31EF-429D-A971-CA654CD18C3B" ascii wide
@@ -4662,7 +4403,6 @@ rule HKTL_NET_GUID_SharpReg {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-01-21"
         modified = "2023-04-06"
-        uuid = "d89b07b0-bb29-5c77-888b-322e439b4c82"
     strings:
         $typelibguid0lo = "8ef25b00-ed6a-4464-bdec-17281a4aa52f" ascii wide
         $typelibguid0up = "8EF25B00-ED6A-4464-BDEC-17281A4AA52F" ascii wide
@@ -4678,7 +4418,6 @@ rule HKTL_NET_GUID_MemeVM {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-01-21"
         modified = "2023-04-06"
-        uuid = "c98d84d5-4b0a-53df-b8d4-0b360930eb0c"
     strings:
         $typelibguid0lo = "ef18f7f2-1f03-481c-98f9-4a18a2f12c11" ascii wide
         $typelibguid0up = "EF18F7F2-1F03-481C-98F9-4A18A2F12C11" ascii wide
@@ -4698,7 +4437,6 @@ rule HKTL_NET_GUID_SharpDir {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-01-21"
         modified = "2023-04-06"
-        uuid = "f64ed564-d198-59e8-9abe-b2814b95c85f"
     strings:
         $typelibguid0lo = "c7a07532-12a3-4f6a-a342-161bb060b789" ascii wide
         $typelibguid0up = "C7A07532-12A3-4F6A-A342-161BB060B789" ascii wide
@@ -4714,7 +4452,6 @@ rule HKTL_NET_GUID_AtYourService {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-01-21"
         modified = "2023-04-06"
-        uuid = "3077dd0c-6936-5340-8da9-e8643de4d864"
     strings:
         $typelibguid0lo = "bc72386f-8b4c-44de-99b7-b06a8de3ce3f" ascii wide
         $typelibguid0up = "BC72386F-8B4C-44DE-99B7-B06A8DE3CE3F" ascii wide
@@ -4730,7 +4467,6 @@ rule HKTL_NET_GUID_LockLess {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-01-21"
         modified = "2023-04-06"
-        uuid = "f9b31f57-d721-5b6c-be63-b8309cba788a"
     strings:
         $typelibguid0lo = "a91421cb-7909-4383-ba43-c2992bbbac22" ascii wide
         $typelibguid0up = "A91421CB-7909-4383-BA43-C2992BBBAC22" ascii wide
@@ -4746,7 +4482,6 @@ rule HKTL_NET_GUID_EasyNet {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-01-21"
         modified = "2023-04-06"
-        uuid = "8408a057-4910-5d7b-80bc-78df17c95bf7"
     strings:
         $typelibguid0lo = "3097d856-25c2-42c9-8d59-2cdad8e8ea12" ascii wide
         $typelibguid0up = "3097D856-25C2-42C9-8D59-2CDAD8E8EA12" ascii wide
@@ -4766,7 +4501,6 @@ rule HKTL_NET_GUID_SharpByeBear {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-01-21"
         modified = "2023-04-06"
-        uuid = "4a7f2514-2519-5fd5-9d17-110a67f829e7"
     strings:
         $typelibguid0lo = "a6b84e35-2112-4df2-a31b-50fde4458c5e" ascii wide
         $typelibguid0up = "A6B84E35-2112-4DF2-A31B-50FDE4458C5E" ascii wide
@@ -4784,7 +4518,6 @@ rule HKTL_NET_GUID_SharpHide {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-01-21"
         modified = "2023-04-06"
-        uuid = "928e00c1-549a-58f5-9e7e-982a4319691a"
     strings:
         $typelibguid0lo = "443d8cbf-899c-4c22-b4f6-b7ac202d4e37" ascii wide
         $typelibguid0up = "443D8CBF-899C-4C22-B4F6-B7AC202D4E37" ascii wide
@@ -4800,7 +4533,6 @@ rule HKTL_NET_GUID_SharpSvc {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-01-21"
         modified = "2023-04-06"
-        uuid = "cbc1d7d4-f3b4-5d02-84ae-621398cb7b51"
     strings:
         $typelibguid0lo = "52856b03-5acd-45e0-828e-13ccb16942d1" ascii wide
         $typelibguid0up = "52856B03-5ACD-45E0-828E-13CCB16942D1" ascii wide
@@ -4816,7 +4548,6 @@ rule HKTL_NET_GUID_SharpCrashEventLog {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-01-21"
         modified = "2023-04-06"
-        uuid = "85d31989-ad96-5005-a747-8a19a67fdd80"
     strings:
         $typelibguid0lo = "98cb495f-4d47-4722-b08f-cefab2282b18" ascii wide
         $typelibguid0up = "98CB495F-4D47-4722-B08F-CEFAB2282B18" ascii wide
@@ -4832,7 +4563,6 @@ rule HKTL_NET_GUID_DotNetToJScript_LanguageModeBreakout {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-01-21"
         modified = "2023-04-06"
-        uuid = "8c8cf79f-8e69-5293-b27a-1f8593061627"
     strings:
         $typelibguid0lo = "deadb33f-fa94-41b5-813d-e72d8677a0cf" ascii wide
         $typelibguid0up = "DEADB33F-FA94-41B5-813D-E72D8677A0CF" ascii wide
@@ -4848,7 +4578,6 @@ rule HKTL_NET_GUID_SharPermission {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-01-21"
         modified = "2023-04-06"
-        uuid = "d5027f51-f3ca-53cd-96d7-c355b5c2e6fa"
     strings:
         $typelibguid0lo = "84d2b661-3267-49c8-9f51-8f72f21aea47" ascii wide
         $typelibguid0up = "84D2B661-3267-49C8-9F51-8F72F21AEA47" ascii wide
@@ -4864,7 +4593,6 @@ rule HKTL_NET_GUID_RegistryStrikesBack {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-01-21"
         modified = "2023-04-06"
-        uuid = "1577ed24-0e17-54f9-bc29-bb209acf9645"
     strings:
         $typelibguid0lo = "90ebd469-d780-4431-9bd8-014b00057665" ascii wide
         $typelibguid0up = "90EBD469-D780-4431-9BD8-014B00057665" ascii wide
@@ -4880,7 +4608,6 @@ rule HKTL_NET_GUID_CloneVault {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-01-21"
         modified = "2023-04-06"
-        uuid = "3340a095-d926-5c85-b7ed-03151712538d"
     strings:
         $typelibguid0lo = "0a344f52-6780-4d10-9a4a-cb9439f9d3de" ascii wide
         $typelibguid0up = "0A344F52-6780-4D10-9A4A-CB9439F9D3DE" ascii wide
@@ -4896,7 +4623,6 @@ rule HKTL_NET_GUID_donut {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-01-21"
         modified = "2023-04-06"
-        uuid = "564dfd0a-af9b-505f-a6f0-de2a5c5c63f3"
     strings:
         $typelibguid0lo = "98ca74c7-a074-434d-9772-75896e73ceaa" ascii wide
         $typelibguid0up = "98CA74C7-A074-434D-9772-75896E73CEAA" ascii wide
@@ -4918,7 +4644,6 @@ rule HKTL_NET_GUID_SharpHandler {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-01-21"
         modified = "2023-04-06"
-        uuid = "b71198a9-4d00-5d75-bc36-7c40655c84a3"
     strings:
         $typelibguid0lo = "46e39aed-0cff-47c6-8a63-6826f147d7bd" ascii wide
         $typelibguid0up = "46E39AED-0CFF-47C6-8A63-6826F147D7BD" ascii wide
@@ -4936,7 +4661,6 @@ rule HKTL_NET_GUID_Driver_Template {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-01-21"
         modified = "2023-04-06"
-        uuid = "539f88c5-e779-55e0-98df-299a9068de9b"
     strings:
         $typelibguid0lo = "bdb79ad6-639f-4dc2-8b8a-cd9107da3d69" ascii wide
         $typelibguid0up = "BDB79AD6-639F-4DC2-8B8A-CD9107DA3D69" ascii wide
@@ -4952,7 +4676,6 @@ rule HKTL_NET_GUID_NashaVM {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-01-21"
         modified = "2023-04-06"
-        uuid = "3abbf636-01f4-547a-98c0-d7bfec07e31a"
     strings:
         $typelibguid0lo = "f9e63498-6e92-4afd-8c13-4f63a3d964c3" ascii wide
         $typelibguid0up = "F9E63498-6E92-4AFD-8C13-4F63A3D964C3" ascii wide
@@ -4968,7 +4691,6 @@ rule HKTL_NET_GUID_SharpSQLPwn {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2022-11-21"
         modified = "2023-04-06"
-        uuid = "b533d61a-8693-5c3c-8b31-2117262cad4e"
     strings:
         $typelibguid0lo = "c442ea6a-9aa1-4d9c-9c9d-7560a327089c" ascii wide
         $typelibguid0up = "C442EA6A-9AA1-4D9C-9C9D-7560A327089C" ascii wide
@@ -4984,7 +4706,6 @@ rule HKTL_NET_GUID_Group3r {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2022-11-21"
         modified = "2023-04-06"
-        uuid = "0571d71e-50ca-5c1b-b750-34acc2d06687"
     strings:
         $typelibguid0lo = "868a6c76-c903-4a94-96fd-a2c6ba75691c" ascii wide
         $typelibguid0up = "868A6C76-C903-4A94-96FD-A2C6BA75691C" ascii wide
@@ -5002,7 +4723,6 @@ rule HKTL_NET_GUID_TokenStomp {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2022-11-21"
         modified = "2023-04-06"
-        uuid = "e4266969-ab03-50dc-b5b1-f4bb1c9846f4"
     strings:
         $typelibguid0lo = "8aac271f-9b0b-4dc3-8aa6-812bb7a57e7b" ascii wide
         $typelibguid0up = "8AAC271F-9B0B-4DC3-8AA6-812BB7A57E7B" ascii wide
@@ -5018,7 +4738,6 @@ rule HKTL_NET_GUID_KrbRelay {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2022-11-21"
         modified = "2023-04-06"
-        uuid = "3f59986c-8bd8-5e70-b3eb-038247d1ccd7"
     strings:
         $typelibguid0lo = "ed839154-90d8-49db-8cdd-972d1a6b2cfd" ascii wide
         $typelibguid0up = "ED839154-90D8-49DB-8CDD-972D1A6B2CFD" ascii wide
@@ -5036,7 +4755,6 @@ rule HKTL_NET_GUID_SQLRecon {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-01-20"
         modified = "2023-04-06"
-        uuid = "f9ea5283-0a5c-5bde-966c-80869ee25888"
     strings:
         $typelibguid0lo = "612c7c82-d501-417a-b8db-73204fdfda06" ascii wide
         $typelibguid0up = "612C7C82-D501-417A-B8DB-73204FDFDA06" ascii wide
@@ -5053,7 +4771,6 @@ rule HKTL_NET_GUID_Certify {
         date = "2023-03-06"
         modified = "2023-04-06"
         hash = "da585a8d4985082873cb86204d546d3f53668e034c61e42d247b11e92b5e8fc3"
-        uuid = "69f120fe-bd4d-59ba-b1b9-528ab300e450"
     strings:
         $typelibguid0lo = "64524ca5-e4d0-41b3-acc3-3bdbefd40c97" ascii wide
         $typelibguid0up = "64524CA5-E4D0-41B3-ACC3-3BDBEFD40C97" ascii wide
@@ -5069,7 +4786,6 @@ rule HKTL_NET_GUID_Aladdin {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-03-13"
         modified = "2023-04-06"
-        uuid = "3f0a954c-f3b3-5e5d-a71d-11f60b026a48"
     strings:
         $typelibguid0lo = "b2b3adb0-1669-4b94-86cb-6dd682ddbea3" ascii wide
         $typelibguid0up = "B2B3ADB0-1669-4B94-86CB-6DD682DDBEA3" ascii wide
@@ -5089,7 +4805,6 @@ rule HKTL_NET_GUID_SharpLdapRelayScan {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-03-15"
         modified = "2023-04-06"
-        uuid = "554a5487-ac53-512f-8f6f-ad8186144715"
     strings:
         $typelibguid0lo = "a93ee706-a71c-4cc1-bf37-f26c27825b68" ascii wide
         $typelibguid0up = "A93EE706-A71C-4CC1-BF37-F26C27825B68" ascii wide
@@ -5105,7 +4820,6 @@ rule HKTL_NET_GUID_LdapSignCheck {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-03-15"
         modified = "2023-04-06"
-        uuid = "a8b902f0-61a5-509e-8307-79bf557e5f61"
     strings:
         $typelibguid0lo = "21f398a9-bc35-4bd2-b906-866f21409744" ascii wide
         $typelibguid0up = "21F398A9-BC35-4BD2-B906-866F21409744" ascii wide
@@ -5121,7 +4835,6 @@ rule HKTL_NET_GUID_SharpSCCM {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-03-15"
         modified = "2023-04-06"
-        uuid = "276269b1-e3b3-5774-a86a-1c3a8bca8209"
     strings:
         $typelibguid0lo = "03652836-898e-4a9f-b781-b7d86e750f60" ascii wide
         $typelibguid0up = "03652836-898E-4A9F-B781-B7D86E750F60" ascii wide
@@ -5139,7 +4852,6 @@ rule HKTL_NET_GUID_Koh {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-03-18"
         modified = "2023-04-06"
-        uuid = "9702526c-b10d-553d-a803-47e352533858"
     strings:
         $typelibguid0lo = "4d5350c8-7f8c-47cf-8cde-c752018af17e" ascii wide
         $typelibguid0up = "4D5350C8-7F8C-47CF-8CDE-C752018AF17E" ascii wide
@@ -5155,7 +4867,6 @@ rule HKTL_NET_GUID_ForgeCert {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-03-18"
         modified = "2023-04-06"
-        uuid = "06b3ffbb-5a76-50a0-86dc-b9658bf2d7ec"
     strings:
         $typelibguid0lo = "bd346689-8ee6-40b3-858b-4ed94f08d40a" ascii wide
         $typelibguid0up = "BD346689-8EE6-40B3-858B-4ED94F08D40A" ascii wide
@@ -5171,7 +4882,6 @@ rule HKTL_NET_GUID_Crassus {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-03-18"
         modified = "2023-04-06"
-        uuid = "d4f94aa3-0431-5ac1-8718-0f0526c3714f"
     strings:
         $typelibguid0lo = "7e9729aa-4cf2-4d0a-8183-7fb7ce7a5b1a" ascii wide
         $typelibguid0up = "7E9729AA-4CF2-4D0A-8183-7FB7CE7A5B1A" ascii wide
@@ -5187,7 +4897,6 @@ rule HKTL_NET_GUID_RestrictedAdmin {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-03-18"
         modified = "2023-04-06"
-        uuid = "1b3572a5-bb21-58bb-91f9-963a0a17d699"
     strings:
         $typelibguid0lo = "79f11fc0-abff-4e1f-b07c-5d65653d8952" ascii wide
         $typelibguid0up = "79F11FC0-ABFF-4E1F-B07C-5D65653D8952" ascii wide
@@ -5203,7 +4912,6 @@ rule HKTL_NET_GUID_p2p {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-03-19"
         modified = "2023-04-06"
-        uuid = "e7b2b4bd-f1e1-5062-9b36-5df44ae374ea"
     strings:
         $typelibguid0lo = "33456e72-f8e8-4384-88c4-700867df12e2" ascii wide
         $typelibguid0up = "33456E72-F8E8-4384-88C4-700867DF12E2" ascii wide
@@ -5219,7 +4927,6 @@ rule HKTL_NET_GUID_SharpWSUS {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-03-22"
         modified = "2023-04-06"
-        uuid = "f020eea9-4ff4-5242-b9b2-53284505dab4"
     strings:
         $typelibguid0lo = "42cabb74-1199-40f1-9354-6294bba8d3a4" ascii wide
         $typelibguid0up = "42CABB74-1199-40F1-9354-6294BBA8D3A4" ascii wide
@@ -5235,7 +4942,6 @@ rule HKTL_NET_GUID_SharpImpersonation {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-03-22"
         modified = "2023-04-06"
-        uuid = "5815c5bd-e3e8-5f2f-b03e-8a05fb4f6e91"
     strings:
         $typelibguid0lo = "27a85262-8c87-4147-a908-46728ab7fc73" ascii wide
         $typelibguid0up = "27A85262-8C87-4147-A908-46728AB7FC73" ascii wide
@@ -5251,7 +4957,6 @@ rule HKTL_NET_GUID_SharpCloud {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-03-22"
         modified = "2023-04-06"
-        uuid = "048b0239-ea13-58ff-af35-fd505b4c977a"
     strings:
         $typelibguid0lo = "ca4e257e-69c1-45c5-9375-ba7874371892" ascii wide
         $typelibguid0up = "CA4E257E-69C1-45C5-9375-BA7874371892" ascii wide
@@ -5267,7 +4972,6 @@ rule HKTL_NET_GUID_SharpSSDP {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-03-22"
         modified = "2023-04-06"
-        uuid = "8441e940-ab7c-5467-9db8-35f71bd57580"
     strings:
         $typelibguid0lo = "6e383de4-de89-4247-a41a-79db1dc03aaa" ascii wide
         $typelibguid0up = "6E383DE4-DE89-4247-A41A-79DB1DC03AAA" ascii wide
@@ -5283,7 +4987,6 @@ rule HKTL_NET_GUID_WireTap {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-03-22"
         modified = "2023-04-06"
-        uuid = "5513a295-8907-5a9c-adca-760b33004229"
     strings:
         $typelibguid0lo = "b5067468-f656-450a-b29c-1c84cfe8dde5" ascii wide
         $typelibguid0up = "B5067468-F656-450A-B29C-1C84CFE8DDE5" ascii wide
@@ -5299,7 +5002,6 @@ rule HKTL_NET_GUID_KittyLitter {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-03-22"
         modified = "2023-04-06"
-        uuid = "f457b91f-4adb-5be6-b9c2-f6cc39d4bdaf"
     strings:
         $typelibguid0lo = "449cf269-4798-4268-9a0d-9a17a08869ba" ascii wide
         $typelibguid0up = "449CF269-4798-4268-9A0D-9A17A08869BA" ascii wide
@@ -5319,7 +5021,6 @@ rule HKTL_NET_GUID_SharpView {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-03-22"
         modified = "2023-04-06"
-        uuid = "2ae1bc26-c137-55ce-ae2e-3204ff07f671"
     strings:
         $typelibguid0lo = "22a156ea-2623-45c7-8e50-e864d9fc44d3" ascii wide
         $typelibguid0up = "22A156EA-2623-45C7-8E50-E864D9FC44D3" ascii wide
@@ -5335,7 +5036,6 @@ rule HKTL_NET_GUID_Farmer {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-03-22"
         modified = "2023-04-06"
-        uuid = "f69745b9-4ebd-547a-9af3-bc340b076e5d"
     strings:
         $typelibguid0lo = "37da2573-d9b5-4fc2-ae11-ccb6130cea9f" ascii wide
         $typelibguid0up = "37DA2573-D9B5-4FC2-AE11-CCB6130CEA9F" ascii wide
@@ -5357,7 +5057,6 @@ rule HKTL_NET_GUID_AESShellCodeInjector {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-03-22"
         modified = "2023-04-06"
-        uuid = "6253e30b-7c92-5237-a706-e93403a7c0b6"
     strings:
         $typelibguid0lo = "b016da9e-12a1-4f1d-91a1-d681ae54e92c" ascii wide
         $typelibguid0up = "B016DA9E-12A1-4F1D-91A1-D681AE54E92C" ascii wide
@@ -5373,7 +5072,6 @@ rule HKTL_NET_GUID_SharpChromium {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-03-22"
         modified = "2023-04-06"
-        uuid = "5364956a-e199-556a-8055-0e7b9a7b14c8"
     strings:
         $typelibguid0lo = "2133c634-4139-466e-8983-9a23ec99e01b" ascii wide
         $typelibguid0up = "2133C634-4139-466E-8983-9A23EC99E01B" ascii wide
@@ -5389,7 +5087,6 @@ rule HKTL_NET_GUID_Get_RBCD_Threaded {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-03-22"
         modified = "2023-04-06"
-        uuid = "fdef6dc3-da1a-5a98-a822-94e443981fdd"
     strings:
         $typelibguid0lo = "e20dc2ed-6455-4101-9d78-fccac1cb7a18" ascii wide
         $typelibguid0up = "E20DC2ED-6455-4101-9D78-FCCAC1CB7A18" ascii wide
@@ -5405,7 +5102,6 @@ rule HKTL_NET_GUID_Whisker {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-03-22"
         modified = "2023-04-06"
-        uuid = "ecb0c59f-2111-58d9-8dc9-dfe005cad3be"
     strings:
         $typelibguid0lo = "42750ac0-1bff-4f25-8c9d-9af144403bad" ascii wide
         $typelibguid0up = "42750AC0-1BFF-4F25-8C9D-9AF144403BAD" ascii wide
@@ -5421,7 +5117,6 @@ rule HKTL_NET_GUID_ShadowSpray {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-03-22"
         modified = "2023-04-06"
-        uuid = "91dd52ef-07a1-5ffd-b5c3-59bca18d4c7c"
     strings:
         $typelibguid0lo = "7e47d586-ddc6-4382-848c-5cf0798084e1" ascii wide
         $typelibguid0up = "7E47D586-DDC6-4382-848C-5CF0798084E1" ascii wide
@@ -5437,7 +5132,6 @@ rule HKTL_NET_GUID_MalSCCM {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-03-22"
         modified = "2023-04-06"
-        uuid = "4a88532b-e2bc-5ce9-828d-6ef62d91f6b9"
     strings:
         $typelibguid0lo = "5439cecd-3bb3-4807-b33f-e4c299b71ca2" ascii wide
         $typelibguid0up = "5439CECD-3BB3-4807-B33F-E4C299B71CA2" ascii wide
@@ -5453,7 +5147,6 @@ rule HKTL_NET_GUID_SpoolSample {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-03-22"
         modified = "2023-04-06"
-        uuid = "38346575-cf5b-59bf-b2b2-21aacf05b8a4"
     strings:
         $typelibguid0lo = "640c36b4-f417-4d85-b031-83a9d23c140b" ascii wide
         $typelibguid0up = "640C36B4-F417-4D85-B031-83A9D23C140B" ascii wide
@@ -5469,7 +5162,6 @@ rule HKTL_NET_GUID_SharpOxidResolver {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-03-22"
         modified = "2023-04-06"
-        uuid = "e8a957bc-3319-51c2-8289-01bd0b8a632a"
     strings:
         $typelibguid0lo = "ce59f8ff-0ecf-41e9-a1fd-1776ca0b703d" ascii wide
         $typelibguid0up = "CE59F8FF-0ECF-41E9-A1FD-1776CA0B703D" ascii wide

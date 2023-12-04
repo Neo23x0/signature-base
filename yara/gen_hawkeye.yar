@@ -8,7 +8,6 @@ rule HawkEye_Keylogger_Feb18_1 {
       modified = "2023-01-06"
       score = 90
       hash1 = "bb58922ad8d4a638e9d26076183de27fb39ace68aa7f73adc0da513ab66dc6fa"
-      uuid = "6b4b447f-43d6-5774-a1b9-d53b40364732"
    strings:
       $s1 = "UploadReportLogin.asmx" fullword wide
       $s2 = "tmp.exe" fullword wide
@@ -24,7 +23,6 @@ rule MAL_HawkEye_Keylogger_Gen_Dec18 {
       reference = "https://twitter.com/James_inthe_box/status/1072116224652324870"
       date = "2018-12-10"
       hash1 = "b8693e015660d7bd791356b352789b43bf932793457d54beae351cf7a3de4dad"
-      uuid = "1d06f364-a4e2-5632-ad3a-d53a8cddf072"
    strings:
       $s1 = "HawkEye Keylogger" fullword wide
       $s2 = "_ScreenshotLogger" ascii

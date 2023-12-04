@@ -6,7 +6,6 @@ rule SUSP_VulnDriver_HP_Hardware_Diagnostics_Etdsupp_May23 {
       reference = "https://github.com/alfarom256/HPHardwareDiagnostics-PoC/tree/main/"
       hash = "f744abb99c97d98e4cd08072a897107829d6d8481aee96c22443f626d00f4145"
       score = 65
-      uuid = "8f838e4f-3e3e-5131-9d67-e49f6848bb37"
     strings:
         $s1 = {4f 00 72 00 69 00 67 00 69 00 6e 00 61 00 6c 00 46 00 69 00 6c 00 65 00 6e 00 61 00 6d 00 65 00 00 00 65 00 74 00 64 00 73 00 75 00 70 00 70 00 2e 00 73 00 79 00 73 00} /*OriginalFilename  etdsupp.sys*/
         $s2 = "etdsupp.pdb"

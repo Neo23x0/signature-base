@@ -6,7 +6,6 @@ rule SUSP_Email_Suspicious_OneNote_Attachment_Jan23_1 {
       reference = "Internal Research"
       date = "2023-01-27"
       score = 65
-      uuid = "492b74c2-3b81-5dff-9244-8528565338c6"
    strings:
       /* OneNote FileDataStoreObject GUID https://blog.didierstevens.com/ */
       $ge1 = "5xbjvWUmEUWkxI1NC3qer"
@@ -45,7 +44,6 @@ rule SUSP_Email_Suspicious_OneNote_Attachment_Jan23_2 {
       reference = "Internal Research"
       date = "2023-01-27"
       score = 65
-      uuid = "f8c58c73-2404-5ce6-8e8f-99b0dad84ad0"
    strings:
       /* .one\n\n5FJce */
       $hc1 = { 2E 6F 6E 65 22 0D 0A 0D 0A 35 46 4A 63 65 }
@@ -68,7 +66,6 @@ rule SUSP_OneNote_Embedded_FileDataStoreObject_Type_Jan23_1 {
       date = "2023-01-27"
       modified = "2023-02-27"
       score = 65
-      uuid = "b8ea8c7b-052f-5a97-9577-99903462ea84"
    strings:
       /* GUID FileDataStoreObject https://blog.didierstevens.com/ */
       $x1 = { e7 16 e3 bd 65 26 11 45 a4 c4 8d 4d 0b 7a 9e ac 
@@ -112,7 +109,6 @@ rule SUSP_OneNote_Embedded_FileDataStoreObject_Type_Jan23_2 {
       reference = "https://blog.didierstevens.com/"
       date = "2023-01-27"
       score = 65
-      uuid = "0664d202-ab4c-57b6-91ee-ea21ac08909e"
    strings:
       /* GUID FileDataStoreObject https://blog.didierstevens.com/ */
       $a1 = { 00 e7 16 e3 bd 65 26 11 45 a4 c4 8d 4d 0b 7a 9e ac }

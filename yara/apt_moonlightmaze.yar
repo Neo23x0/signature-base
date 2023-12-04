@@ -24,7 +24,6 @@ meta:
 	hash = "1980958afffb6a9d5a6c73fc1e2795c2"
 	hash = "e59f92aadb6505f29a9f368ab803082e"
 
-	uuid = "d5795d3b-bbb1-59e9-b86d-666b5c911f3b"
 strings:
 
 	$a1="Write file Ok..." ascii wide
@@ -60,7 +59,6 @@ meta:
 	hash = "927426b558888ad680829bd34b0ad0e7"
 	original_filename = "ora;tdn"
 
-	uuid = "8cc76e4d-a956-543c-81e0-827dfdb5da1c"
 strings:
 
 
@@ -94,7 +92,6 @@ meta:
 	hash = "e079ec947d3d4dacb21e993b760a65dc"
 	hash = "edf900cebb70c6d1fcab0234062bfc28"
 
-	uuid = "d67288f8-5205-5882-8dff-041d092eea4f"
 strings:
 
 	$modulus={DA E1 01 CD D8 C9 70 AF C2 E4 F2 7A 41 8B 43 39 52 9B 4B 4D E5 85 F8 49}
@@ -121,7 +118,6 @@ meta:
 	hash = "4bc7ed168fb78f0dc688ee2be20c9703"
 	hash = "8b56e8552a74133da4bc5939b5f74243"
 
-	uuid = "09bfebca-7cec-5514-9f48-c0c2c57efcf9"
 strings:
 
 	$a1="Vnuk: %d" ascii fullword
@@ -150,7 +146,6 @@ meta:
 	hash = "647d7b711f7b4434145ea30d0ef207b0"
 
 
-	uuid = "99ae07b9-eb42-53dc-bd8b-75ab6a0b8cab"
 strings:
 
 	$a1="./a filename template_file" ascii wide
@@ -178,7 +173,6 @@ meta:
 	reference = "https://en.wikipedia.org/wiki/Moonlight_Maze"
 	description = "Rule to detect Moonlight Maze 'xk' keylogger"
 
-	uuid = "cf585cd0-afdd-5782-a6e5-bb9509cbf01d"
 strings:
 
 	$a1="Log ended at => %s"
@@ -212,7 +206,6 @@ meta:
 	reference = "https://en.wikipedia.org/wiki/Moonlight_Maze"
 	description = "Rule to detect Moonlight Maze encrypted keylogger logs"
 
-	uuid = "f0d464f0-3955-5f41-a57f-8aa225e1171d"
 strings:
 	$a1={47 01 22 2A 6D 3E 39 2C}
 
@@ -238,7 +231,6 @@ meta:
 	hash = "5937db3896cdd8b0beb3df44e509e136" //xlock
 	hash = "f4ed5170dcea7e5ba62537d84392b280" //xterm
 
-	uuid = "4f9ab7b0-4fb9-5311-ae23-01d0a9e2e104"
 strings:
 
 	$a1="stack = 0x%x, targ_addr = 0x%x"
@@ -265,7 +257,6 @@ meta:
 	hash = "d98796dcda1443a37b124dbdc041fe3b"
 	hash = "73a518f0a73ab77033121d4191172820"
 
-	uuid = "2dc1b796-c8fe-5a87-9d6b-3a322f4a43ab"
 strings:
 
 	$a1="Hiding complit...n"
@@ -292,7 +283,6 @@ meta:
 	reference2 = "http://www.afn.org/~afn28925/wipe.c"
 	hash = "e69efc504934551c6a77b525d5343241"
 
-	uuid = "35060c3d-b805-54a6-a241-eb6e99168fa8"
 strings:
 
 	$a1="ERROR: Unlinking tmp WTMP file."

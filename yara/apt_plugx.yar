@@ -27,7 +27,6 @@ rule APTGroupX_PlugXTrojanLoader_StringDecode {
       hash20 = "ef8cf68dc3c80e9cb5a3fa0f92b544eab583812e"
       hash21 = "f0fc0a4e4e0748464caa6a202d0083cd33458677"
       hash22 = "fe1abe55529c1d6aa6b2a2f02d7e41ea58040feb"
-      uuid = "c6017327-b44d-5b1d-95aa-6e1f9fbf5583"
    strings:
       $byte1 = { 8A [2-4] 8A [2-4] FF 05 00 30 00 10 [0-5] 2A [1-6] 80 [2-7] 02 [1-6] 88 0? }
       $byte2 = { 8B [2-4] 8A [2-4] FF 05 00 30 00 10 [0-5] 2A [1-6] 80 [2-7] 02 [1-6] 88 0? }

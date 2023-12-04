@@ -8,7 +8,6 @@ rule LOG_TeamViewer_Connect_Chinese_Keyboard_Layout {
       score = 60
       limit = "Logscan"
       reference = "https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-input-locales-for-windows-language-packs"
-      uuid = "f901818b-5150-540f-b645-686c12784a38"
    strings:
       /* Source has Chinese simplified keyboard layout */
       $x1 = "Changing keyboard layout to: 0804" ascii
@@ -29,7 +28,6 @@ rule LOG_TeamViewer_Connect_Russian_Keyboard_Layout {
       score = 60
       limit = "Logscan"
       reference = "https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-input-locales-for-windows-language-packs"
-      uuid = "360a1cca-2a64-5fd8-bcde-f49e1b17281e"
    strings:
       /* Source has Russian keyboard layout */
       $x1 = "Changing keyboard layout to: 0419" ascii

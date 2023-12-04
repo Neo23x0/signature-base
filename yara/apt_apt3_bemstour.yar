@@ -7,7 +7,6 @@ author = "Mark Lechtik"
 company = "Check Point Software Technologies LTD."
 date = "2019-06-25"
 sha256 = "0b28433a2b7993da65e95a45c2adf7bc37edbd2a8db717b85666d6c88140698a"
-uuid = "8b76e10a-040f-505e-9dff-cd0a689b121e"
 strings:
 
 $dbg_print_1 = "leaked address is 0x%llx" ascii wide
@@ -86,7 +85,6 @@ sha256 = "0b28433a2b7993da65e95a45c2adf7bc37edbd2a8db717b85666d6c88140698a"
 
 */
 
-uuid = "c30434c3-8949-566c-b6a6-29bffdaf961d"
 strings:
 
 $chunk_1 = {
@@ -115,7 +113,6 @@ date = "2019-06-25"
 sha256 = "0b28433a2b7993da65e95a45c2adf7bc37edbd2a8db717b85666d6c88140698a"
 
 
-uuid = "c773da5a-2d3f-5a0a-af2e-28ad382622b3"
 strings:
 
 

@@ -16,7 +16,6 @@ rule Waterbear_1_Jun17 {
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
       hash1 = "dd3676f478ee6f814077a12302d38426760b0701bb629f413f7bf2ec71319db5"
-      uuid = "2202506a-6009-5321-a8b2-df3bff51d06f"
    strings:
       $s1 = "\\Release\\svc.pdb" ascii
       $s2 = "svc.dll" fullword ascii
@@ -32,7 +31,6 @@ rule Waterbear_2_Jun17 {
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
       hash1 = "dcb5c350af76c590002a8ea00b01d862b4d89cccbec3908bfe92fdf25eaa6ea4"
-      uuid = "d3178f01-90a8-5a82-9c95-40bf8e9b567f"
    strings:
       $s1 = "downloading movie" fullword ascii
       $s2 = "name=\"test.exe\"/>" fullword ascii
@@ -50,7 +48,6 @@ rule Waterbear_4_Jun17 {
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
       hash1 = "2e9cb7cadb3478edc9ef714ca4ddebb45e99d35386480e12792950f8a7a766e1"
-      uuid = "c7941f92-12ee-5d57-b58e-c8caf74ca6ba"
    strings:
       $x1 = "User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;)" fullword ascii
 
@@ -75,7 +72,6 @@ rule Waterbear_5_Jun17 {
       date = "2017-06-23"
       modified = "2023-01-07"
       hash1 = "d3678cd9744b3aedeba23a03a178be5b82d5f8059a86f816007789a9dd06dc7d"
-      uuid = "f92fe6d5-0afa-50a1-bdcf-c6dd78aa6809"
    strings:
       $a1 = "ICESWORD" fullword ascii
       $a2 = "klog.dat" fullword ascii
@@ -97,7 +93,6 @@ rule Waterbear_6_Jun17 {
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
       hash1 = "409cd490feb40d08eb33808b78d52c00e1722eee163b60635df6c6fe2c43c230"
-      uuid = "86d203be-2d3a-54f2-b851-9080d5be36f5"
    strings:
       $s1 = "svcdll.dll" fullword ascii
       $s2 = "log.log" fullword ascii
@@ -113,7 +108,6 @@ rule Waterbear_7_Jun17 {
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
       hash1 = "6891aa78524e442f4dda66dff51db9798e1f92e6fefcdf21eb870b05b0293134"
-      uuid = "4613df5b-495e-5738-9b7f-ac8ff586cd17"
    strings:
       $s1 = "Bluthmon.exe" fullword wide
       $s2 = "Motomon.exe" fullword wide
@@ -133,7 +127,6 @@ rule Waterbear_8_Jun17 {
       modified = "2023-01-07"
       hash1 = "bd06f6117a0abf1442826179f6f5e1932047b4a6c14add9149e8288ab4a902c3"
       hash1 = "5dba8ddf05cb204ef320a72a0c031e55285202570d7883f2ff65135ec35b3dd0"
-      uuid = "5ebeda22-ad67-5715-b42f-9b4bb5dcde94"
    strings:
       $s1 = "Update.dll" fullword ascii
       $s2 = "ADVPACK32.DLL" fullword wide
@@ -152,7 +145,6 @@ rule Waterbear_9_Jun17 {
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
       hash1 = "fc74d2434d48b316c9368d3f90fea19d76a20c09847421d1469268a32f59664c"
-      uuid = "727cdb55-ede5-5520-9aa9-5a265b5aeba1"
    strings:
       $s1 = "ADVPACK32.DLL" fullword wide
       $s2 = "ADVPACK32" fullword wide
@@ -173,7 +165,6 @@ rule Waterbear_10_Jun17 {
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
       hash1 = "3b1e67e0e86d912d7bc6dee5b0f801260350e8ce831c93c3e9cfe5a39e766f41"
-      uuid = "1219c3e6-1001-5075-b7fc-e0d8a7de6a65"
    strings:
       $s1 = "ADVPACK32.DLL" fullword wide
       $s5 = "ADVPACK32" fullword wide
@@ -190,7 +181,6 @@ rule Waterbear_11_Jun17 {
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
       hash1 = "b046b2e2569636c2fc3683a0da8cfad25ff47bc304145be0f282a969c7397ae8"
-      uuid = "d7eb7561-c84e-5149-920c-35ad225ca8a9"
    strings:
       $s1 = "/Pages/%u.asp" fullword wide
       $s2 = "NVIDIA Corporation." fullword wide
@@ -208,7 +198,6 @@ rule Waterbear_12_Jun17 {
       reference = "https://goo.gl/L9g9eR"
       date = "2017-06-23"
       hash1 = "15d9db2c90f56cd02be38e7088db8ec00fc603508ec888b4b85d60d970966585"
-      uuid = "cc0a071c-c409-57a2-80c5-dd93ca7db339"
    strings:
       $s1 = "O_PROXY" fullword ascii
       $s2 = "XMODIFY" fullword ascii
@@ -227,7 +216,6 @@ rule Waterbear_13_Jun17 {
       hash1 = "734e5972ab5ac1e9bc5470c666a55e0d2bd57c4e2ea2da11dc9bf56fb2ea6f23"
       hash2 = "8bde3f71575aa0d5f5a095d9d0ea10eceadba38be888e10d3ca3776f7b361fe7"
       hash3 = "c4b3b0a7378bfc3824d4178fd7fb29475c42ab874d69abdfb4898d0bcd4f8ce1"
-      uuid = "425aaed4-879e-5caf-808b-14de98f628e8"
    strings:
       $s1 = "%WINDIR%\\PCHealth\\HelpCtr\\Binaries\\pchsvc.dll" fullword ascii
       $s2 = "brnew.exe" fullword ascii
@@ -252,7 +240,6 @@ rule Waterbear_14_Jun17 {
       hash1 = "00a1068645dbe982a9aa95e7b8202a588989cd37de2fa1b344abbc0102c27d05"
       hash2 = "53330a80b3c4f74f3f10a8621dbef4cd2427723e8b98c5b7aed58229d0c292ba"
       hash3 = "bdcb23a82ac4eb1bc9254d77d92b6f294d45501aaea678a3d21c8b188e31e68b"
-      uuid = "515d9400-3e2e-5ee5-a7dd-b313125c6482"
    strings:
       $s1 = "my.com/msg/util/sgthash" fullword ascii
       $s2 = "C:\\recycled" fullword ascii

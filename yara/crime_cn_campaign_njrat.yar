@@ -18,7 +18,6 @@ rule CN_disclosed_20180208_lsls {
       reference = "https://twitter.com/cyberintproject/status/961714165550342146"
       date = "2018-02-08"
       hash1 = "94c6a92984df9ed255f4c644261b01c4e255acbe32ddfd0debe38b558f29a6c9"
-      uuid = "c6c4aa72-1a84-552f-bea0-38b332a74233"
    strings:
       $x1 = "User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)" fullword ascii
    condition:
@@ -33,7 +32,6 @@ rule CN_disclosed_20180208_c {
       reference = "https://twitter.com/cyberintproject/status/961714165550342146"
       date = "2018-02-08"
       hash1 = "17475d25d40c877284e73890a9dd55fccedc6a5a071c351a8c342c8ef7f9cea7"
-      uuid = "cb0bcdc4-7eca-59b7-a947-85c232d4e599"
    strings:
       $x1 = "cmd.exe /c ping 0 -n 2 & del \"" fullword wide
       $x2 = "schtasks /create /sc minute /mo 1 /tn Server /tr " fullword wide
@@ -62,7 +60,6 @@ rule CN_disclosed_20180208_System3 {
       reference = "https://twitter.com/cyberintproject/status/961714165550342146"
       date = "2018-02-08"
       hash1 = "73fa84cff51d384c2d22d9e53fc5d42cb642172447b07e796c81dd403fb010c2"
-      uuid = "097f4506-295d-5066-8895-2148436731c1"
    strings:
       $a1 = "WmiPrvSE.exe" fullword wide
 
@@ -82,7 +79,6 @@ rule CN_disclosed_20180208_Mal1 {
       reference = "https://www.virustotal.com/graph/#/selected/n120z79z208z189/drawer/graph-details"
       date = "2018-02-08"
       hash1 = "173d69164a6df5bced94ab7016435c128ccf7156145f5d26ca59652ef5dcd24e"
-      uuid = "8516bbfb-a2ad-565d-bf6c-71629b1831a1"
    strings:
       $x1 = "%SystemRoot%\\system32\\termsrvhack.dll" fullword ascii
       $x2 = "User-Agent:Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)" fullword ascii
@@ -110,7 +106,6 @@ rule CN_disclosed_20180208_KeyLogger_1 {
       reference = "https://www.virustotal.com/graph/#/selected/n120z79z208z189/drawer/graph-details"
       date = "2018-02-08"
       hash1 = "c492889e1d271a98e15264acbb21bfca9795466882520d55dc714c4899ed2fcf"
-      uuid = "12eff9b6-1a65-5efc-b39c-88297bdae9c3"
    strings:
       $x2 = "Process already elevated." fullword wide
       $x3 = "GetKeyloggErLogsResponse" fullword ascii
@@ -129,7 +124,6 @@ rule CN_disclosed_20180208_Mal4 {
       reference = "https://www.virustotal.com/graph/#/selected/n120z79z208z189/drawer/graph-details"
       date = "2018-02-08"
       hash1 = "f7549c74f09be7e4dbfb64006e535b9f6d17352e236edc2cdb102ec3035cf66e"
-      uuid = "6165caf5-157f-5381-a77e-6ed775187ab1"
    strings:
       $s1 = "Microsoft .Net Framework COM+ Support" fullword ascii
       $s2 = "Microsoft .NET and Windows XP COM+ Integration with SOAP" fullword ascii
@@ -146,7 +140,6 @@ rule CN_disclosed_20180208_Mal5 {
       date = "2018-02-08"
       hash1 = "24c05cd8a1175fbd9aca315ec67fb621448d96bd186e8d5e98cb4f3a19482af4"
       hash2 = "05696db46144dab3355dcefe0408f906a6d43fced04cb68334df31c6dfd12720"
-      uuid = "b1933610-9e6d-5eed-ba30-ccdd0d3a6124"
    strings:
       $s1 = "4System.Web.Services.Protocols.SoapHttpClientProtocol" fullword ascii
       $s2 = "Server.exe" fullword ascii

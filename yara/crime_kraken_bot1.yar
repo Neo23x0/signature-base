@@ -14,7 +14,6 @@ rule Kraken_Bot_Sample {
 		date = "2015-05-07"
 		hash = "798e9f43fc199269a3ec68980eb4d91eb195436d"
 		score = 90
-		uuid = "508bb581-9dad-5201-af3d-7da17d905dc9"
 	strings:
 		$s2 = "%s=?getname" fullword ascii
 		$s4 = "&COMPUTER=^" fullword ascii

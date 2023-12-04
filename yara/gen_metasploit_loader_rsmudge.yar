@@ -15,7 +15,6 @@ rule Metasploit_Loader_RSMudge {
 		reference = "https://github.com/rsmudge/metasploit-loader"
 		date = "2016-04-20"
 		hash1 = "afe34bfe2215b048915b1d55324f1679d598a0741123bc24274d4edc6e395a8d"
-		uuid = "4d8a215e-a942-5df9-bdad-0c4158992429"
 	strings:
 		$s1 = "Could not resolve target" fullword ascii
 		$s2 = "Could not connect to target" fullword ascii

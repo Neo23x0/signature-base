@@ -19,7 +19,6 @@ rule Duqu2_Sample1 {
 		hash2 = "8e97c371633d285cd8fc842f4582705052a9409149ee67d97de545030787a192"
 		hash3 = "2796a119171328e91648a73d95eb297edc220e8768f4bbba5fb7237122a988fc"
 		hash4 = "5559fcc93eef38a1c22db66a3e0f9e9f026c99e741cc8b1a4980d166f2696188"
-		uuid = "39ba04f1-df45-5513-ab8f-12097a79cdc7"
 	strings:
 		$x1 = "SELECT `Data` FROM `Binary` WHERE `Name`='%s%i'" fullword wide
 		$s2 = "MSI.dll" fullword ascii
@@ -41,7 +40,6 @@ rule Duqu2_Sample2 {
 		hash4 = "c16410c49dc40a371be22773f420b7dd3cfd4d8205cf39909ad9a6f26f55718e"
 		hash5 = "2ecb26021d21fcef3d8bba63de0c888499110a2b78e4caa6fa07a2b27d87f71b"
 		hash6 = "2c9c3ddd4d93e687eb095444cef7668b21636b364bff55de953bdd1df40071da"
-		uuid = "a32f54a3-8656-5592-ac40-17330bfca319"
 	strings:
 		$s1 = "=<=Q=W=a=g=p=v=|=" fullword ascii
 		$s2 = ">#>(>.>3>=>]>d>p>" fullword ascii
@@ -58,7 +56,6 @@ rule Duqu2_Sample3 {
 		date = "2016-07-02"
 		score = 80
 		hash1 = "2a9a5afc342cde12c6eb9a91ad29f7afdfd8f0fb17b983dcfddceccfbc17af69"
-		uuid = "c558445f-fbe3-57db-80f7-09a87b097921"
 	strings:
 		$s1 = "SELECT `%s` FROM `%s` WHERE `%s`='CAData%i'" fullword wide
 	condition:
@@ -74,7 +71,6 @@ rule Duqu2_Sample4 {
 		date = "2016-07-02"
 		score = 80
 		hash1 = "3536df7379660d931256b3cf49be810c0d931c3957c464d75e4cba78ba3b92e3"
-		uuid = "8c5ca68d-762c-5d2e-8d37-f58dc66bcae2"
 	strings:
 		$x1 = "SELECT `Data` FROM `Binary` WHERE `Name`='CryptHash%i'" fullword wide
 		$s2 = "SELECT `UserName`, `Password`, `Attributes` FROM `CustomUserAccounts`" fullword wide
@@ -93,7 +89,6 @@ rule Duqu2_UAs {
 		score = 80
 		hash1 = "52fe506928b0262f10de31e783af8540b6a0b232b15749d647847488acd0e17a"
 		hash2 = "81cdbe905392155a1ba8b687a02e65d611b60aac938e470a76ef518e8cffd74d"
-		uuid = "d82f6351-fab0-5324-850f-dd40a172fceb"
 	strings:
 		$x1 = "Mozilla/5.0 (Windows NT 6.1; U; ru; rv:5.0.1.6) Gecko/20110501 Firefox/5.0.1 Firefox/5.0.1" fullword wide
 		$x2 = "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.7 (KHTML, like Gecko) Chrome/16.0.912.63 Safari/535.7xs5D9rRDFpg2g" fullword wide

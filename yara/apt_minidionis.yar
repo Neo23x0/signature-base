@@ -22,7 +22,6 @@ rule MiniDionis_readerView {
 		hash4 = "97d8725e39d263ed21856477ed09738755134b5c0d0b9ae86ebb1cdd4cdc18b7"
 		hash5 = "ed7abf93963395ce9c9cba83a864acb4ed5b6e57fd9a6153f0248b8ccc4fdb46"
 		hash6 = "56ac764b81eb216ebed5a5ad38e703805ba3e1ca7d63501ba60a1fb52c7ebb6e"
-		uuid = "dc8d4311-2a87-5c9b-95ff-52708f293f01"
 	strings:
 		$s1 = "%ws_out%ws" fullword wide /* score: '8.00' */
 		$s2 = "dnlibsh" fullword ascii /* score: '7.00' */
@@ -44,7 +43,6 @@ rule Malicious_SFX1 {
 		reference = "http://www.kernelmode.info/forum/viewtopic.php?f=16&t=3950"
 		date = "2015-07-20"
 		hash = "c0675b84f5960e95962d299d4c41511bbf6f8f5f5585bdacd1ae567e904cb92f"
-		uuid = "7c29dfb0-bbed-5017-80b4-a5c44024cd70"
 	strings:
 		$s0 = "voicemail" ascii /* PEStudio Blacklist: strings */ /* score: '30.00' */
 		$s1 = ".exe" ascii
@@ -60,7 +58,6 @@ rule Malicious_SFX2 {
 		reference = "http://www.kernelmode.info/forum/viewtopic.php?f=16&t=3950"
 		date = "2015-07-20"
 		hash = "502e42dc99873c52c3ca11dd3df25aad40d2b083069e8c22dd45da887f81d14d"
-		uuid = "ff59d638-4d82-5a14-b346-3df2154d3c34"
 	strings:
 		$s1 = "adobe.exe" fullword ascii /* PEStudio Blacklist: strings */ /* score: '27.00' */
 		$s2 = "Extracting files to %s folder$Extracting files to temporary folder" fullword wide /* PEStudio Blacklist: strings */ /* score: '26.00' */
@@ -77,7 +74,6 @@ rule MiniDionis_VBS_Dropped {
 		reference = "https://malwr.com/analysis/ZDc4ZmIyZDI4MTVjNGY5NWI0YzE3YjIzNGFjZTcyYTY/"
 		date = "2015-07-21"
 		hash = "97dd1ee3aca815eb655a5de9e9e8945e7ba57f458019be6e1b9acb5731fa6646"
-		uuid = "f0116861-4216-504a-a39b-463e7535a2b3"
 	strings:
 		$s1 = "Wscript.Sleep 5000" ascii
 		$s2 = "Set FSO = CreateObject(\"Scripting.FileSystemObject\")" ascii

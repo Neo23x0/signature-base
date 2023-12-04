@@ -6,7 +6,6 @@ rule EXT_SUSP_OBFUSC_macOS_RootHelper_Obfuscated {
 		reference = "https://twitter.com/imp0rtp3/status/1401912205621202944"
 		date = "2021-06-07"
 		score = 65
-		uuid = "7ff91c00-8178-525c-bb41-d09cf7cda588"
 	strings:
 		$a1 = "E: neither argv[0] nor $_ works." fullword
 		

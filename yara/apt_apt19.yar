@@ -15,7 +15,6 @@ rule Beacon_K5om {
       reference = "https://www.fireeye.com/blog/threat-research/2017/06/phished-at-the-request-of-counsel.html"
       date = "2017-06-07"
       hash1 = "e3494fd2cc7e9e02cff76841630892e4baed34a3e1ef2b9ae4e2608f9a4d7be9"
-      uuid = "9354d20a-d798-55bf-a735-820f21d4a861"
    strings:
       $x1 = "IEX (New-Object Net.Webclient).DownloadString('http://127.0.0.1:%u/'); %s" fullword ascii
       $x2 = "powershell -nop -exec bypass -EncodedCommand \"%s\"" fullword ascii
@@ -38,7 +37,6 @@ rule FE_LEGALSTRIKE_MACRO {
       author="Ian.Ahl@fireeye.com @TekDefense - modified by Florian Roth"
       date="2017-06-02"
       description="This rule is designed to identify macros with the specific encoding used in the sample 30f149479c02b741e897cdb9ecd22da7."
-      uuid = "eb15e5aa-16e5-5c07-a293-ad15c0c09d8e"
    strings:
       // OBSFUCATION
       $ob1 = "ChrW(114) & ChrW(101) & ChrW(103) & ChrW(115) & ChrW(118) & ChrW(114) & ChrW(51) & ChrW(50) & ChrW(46) & ChrW(101)" ascii wide
@@ -56,7 +54,6 @@ rule FE_LEGALSTRIKE_RTF {
       author="joshua.kim@FireEye. - modified by Florian Roth"
       date="2017-06-02"
       description="Rtf Phishing Campaign leveraging the CVE 2017-0199 exploit, to point to the domain 2bunnyDOTcom"
-      uuid = "b62ceffa-445f-517e-b86b-56e47876c6c0"
    strings:
       $lnkinfo = "4c0069006e006b0049006e0066006f"
       $encoded1 = "4f4c45324c696e6b"

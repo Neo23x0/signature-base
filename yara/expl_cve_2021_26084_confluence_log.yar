@@ -6,7 +6,6 @@ rule LOG_EXPL_Confluence_RCE_CVE_2021_26084_Sep21 : LOG {
       reference = "https://github.com/httpvoid/writeups/blob/main/Confluence-RCE.md"
       date = "2021-09-01"
       score = 55
-      uuid = "bbf98ce4-d32b-541a-b727-bc35c9aaef53"
    strings:
       $xr1 = /isSafeExpression Unsafe clause found in \['[^\n]{1,64}\\u0027/ ascii wide
       $xs1 = "[util.velocity.debug.DebugReferenceInsertionEventHandler] referenceInsert resolving reference [$!queryString]"

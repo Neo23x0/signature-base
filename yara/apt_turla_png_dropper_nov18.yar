@@ -7,7 +7,6 @@ rule turla_png_dropper {
         reference = "https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/november/turla-png-dropper-is-back/"
         date = "2018/11/23"
         hash1 = "6ed939f59476fd31dc4d99e96136e928fbd88aec0d9c59846092c0e93a3c0e27"
-        uuid = "459f17c8-0eae-5736-8c7c-286625dc158f"
     strings:
         $api0 = "GdiplusStartup"
         $api1 = "GdipAlloc"
@@ -55,7 +54,6 @@ rule turla_png_reg_enum_payload {
         reference = "https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/november/turla-png-dropper-is-back/"
         date = "2018/11/23"
         hash1 = "fea27eb2e939e930c8617dcf64366d1649988f30555f6ee9cd09fe54e4bc22b3"
-        uuid = "413bb315-3c01-56ab-92db-00342a11438a"
     strings:
         $crypt00 = "Microsoft Software Key Storage Provider" wide
         $crypt01 = "ChainingModeCBC" wide

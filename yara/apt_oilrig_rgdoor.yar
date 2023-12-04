@@ -19,7 +19,6 @@ rule OilRig_RGDoor_Gen1 {
       date = "2018-01-27"
       score = 80
       hash1 = "a9c92b29ee05c1522715c7a2f9c543740b60e36373cb47b5620b1f3d8ad96bfa"
-      uuid = "68ac1f35-4eaa-5899-b66c-296d7c5fa462"
    strings:
       $c1 = { 00 63 6D 64 24 00 00 00 00 72 00 00 00 00 00 00 00 75 70 6C 6F
               61 64 24 }

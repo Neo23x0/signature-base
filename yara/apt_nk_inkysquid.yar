@@ -18,7 +18,6 @@ rule APT_RUBY_RokRat_Loader : InkySquid
         hash1 = "5bc52f6c1c0d0131cee30b4f192ce738ad70bcb56e84180f464a5125d1a784b2"
         license = "See license at https://github.com/volexity/threat-intel/LICENSE.txt"
         reference = "https://www.volexity.com/blog/2021/08/24/north-korean-bluelight-special-inkysquid-deploys-rokrat/"
-        uuid = "69d09560-a769-55d3-a442-e37f10453cde"
     strings:
         $magic1 = "'https://update.microsoft.com/driverupdate?id=" ascii wide
         $magic2 = "sVHZv1mCNYDO0AzI';" ascii wide
@@ -45,7 +44,6 @@ rule APT_PY_BlueLight_Loader : InkySquid
         hash1 = "80269413be6ad51b8b19631b2f5559c9572842e789bbce031babe6e879d2e120"
         license = "See license at https://github.com/volexity/threat-intel/LICENSE.txt"
         reference = "https://www.volexity.com/blog/2021/08/24/north-korean-bluelight-special-inkysquid-deploys-rokrat/"
-        uuid = "f8da3e40-c3b0-5b7f-8ece-81874993d8cd"
     strings:
         $s1 = "\"\".join(chr(ord(" ascii
         $s2 = "import ctypes " ascii
@@ -67,7 +65,6 @@ rule APT_MAL_Win_DecRok : InkySquid
         hash = "6a452d088d60113f623b852f33f8f9acf0d4197af29781f889613fed38f57855"
         license = "See license at https://github.com/volexity/threat-intel/LICENSE.txt"
         reference = "https://www.volexity.com/blog/2021/08/24/north-korean-bluelight-special-inkysquid-deploys-rokrat/"
-        uuid = "dc83843d-fd2a-52f1-82e8-8e36b135a0c5"
     strings:
         $v1 = {C7 ?? ?? ?? 01 23 45 67 [2-20] C7 ?? ?? ?? 89 AB CD EF C7 ?? ?? ?? FE DC BA 98}
 
@@ -90,7 +87,6 @@ rule APT_MAL_Win_RokLoad_Loader : InkySquid
         hash = "85cd5c3bb028fe6931130ccd5d0b0c535c01ce2bcda660a3b72581a1a5382904"
         license = "See license at https://github.com/volexity/threat-intel/LICENSE.txt"
         reference = "https://www.volexity.com/blog/2021/08/24/north-korean-bluelight-special-inkysquid-deploys-rokrat/"
-        uuid = "229dbf3c-1538-5ecd-b5f8-8c9a9c81c515"
     strings:
         $bytes00 = { 48 ?? ?? ?? ?? 48 ?? ?? ?? ?? 48 ?? ?? ?? ?? 57 41 54 41 55 41 56 41 57 48 ?? ?? ?? b9 ?? ?? ?? ?? 33 ff e8 ?? ?? ?? ?? b9 ?? ?? ?? ?? 4c 8b e8 e8 ?? ?? ?? ?? 4c 8b f0 41 ff d6 b9 ?? ?? ?? ?? 44 8b f8 e8 ?? ?? ?? ?? 4c 8b e0 e8 ?? ?? ?? ?? 48 }
     
@@ -109,7 +105,6 @@ rule APT_NK_Scarcruft_RUBY_Shellcode_XOR_Routine {
        version       = "0.1"
        date          = "2021-05-20"
        reference = "https://medium.com/s2wlab/matryoshka-variant-of-rokrat-apt37-scarcruft-69774ea7bf48"
-       uuid = "c393f2db-8ade-5083-9cec-f62f23056f8b"
      strings:
          /*
          8B 4C 18 08             mov     ecx, [eax+ebx+8]
@@ -140,7 +135,6 @@ rule APT_NK_Scarcruft_evolved_ROKRAT {
         version       = "0.1"
         date          = "2021-07-09"
         reference = "https://medium.com/s2wlab/matryoshka-variant-of-rokrat-apt37-scarcruft-69774ea7bf48"
-        uuid = "53cabf41-0154-5372-b667-60d8a7cb9806"
     strings:
 /*
 0x140130f25 C744242032311223              mov dword ptr [rsp + 0x20], 0x23123132

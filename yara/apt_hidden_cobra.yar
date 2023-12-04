@@ -14,7 +14,6 @@ rule HiddenCobra_Rule_1 {
       author = "US CERT"
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-164A"
       date = "2017-06-13"
-      uuid = "921c027e-fac3-5419-b0a6-5043f5cde466"
    strings:
       $rsaKey = {7B 4E 1E A7 E9 3F 36 4C DE F4 F0 99 C4 D9 B7 94
             A1 FF F2 97 D3 91 13 9D C0 12 02 E4 4C BB 6C 77
@@ -55,7 +54,6 @@ rule HiddenCobra_Rule_3 {
       author = "US CERT"
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-164A"
       date = "2017-06-13"
-      uuid = "39c7e039-4b07-575d-a93a-539ecc4e63d8"
    strings:
       $randomUrlBuilder = { 83 EC 48 53 55 56 57 8B 3D ?? ?? ?? ?? 33 C0 C7
          44 24 28 B4 6F 41 00 C7 44 24 2C B0 6F 41 00 C7 44 24 30 AC 6F 41
@@ -92,7 +90,6 @@ rule APT_HiddenCobra_GhostSecret_1 {
       reference = "https://securingtomorrow.mcafee.com/mcafee-labs/analyzing-operation-ghostsecret-attack-seeks-to-steal-data-worldwide/"
       date = "2018-08-11"
       hash1 = "05a567fe3f7c22a0ef78cc39dcf2d9ff283580c82bdbe880af9549e7014becfc"
-      uuid = "d6955294-84a4-5694-87c9-b5b1c39e0fae"
    strings:
       $s1 = "%s\\%s.dll" fullword wide
       $s2 = "PROXY_SVC_DLL.dll" fullword ascii
@@ -108,7 +105,6 @@ rule APT_HiddenCobra_GhostSecret_2 {
       reference = "https://securingtomorrow.mcafee.com/mcafee-labs/analyzing-operation-ghostsecret-attack-seeks-to-steal-data-worldwide/"
       date = "2018-08-11"
       hash1 = "45e68dce0f75353c448865b9abafbef5d4ed6492cd7058f65bf6aac182a9176a"
-      uuid = "dab5b0ec-ae89-521e-bbb9-15602db9ed6c"
    strings:
       $s1 = "ping 127.0.0.1 -n 3" fullword wide
       $s2 = "Process32" fullword ascii
@@ -128,7 +124,6 @@ rule APT_MAL_HOPLIGHT_NK_HiddenCobra_Apr19_1 {
       reference = "https://www.us-cert.gov/ncas/analysis-reports/AR19-100A"
       date = "2019-04-13"
       hash1 = "d77fdabe17cdba62a8e728cbe6c740e2c2e541072501f77988674e07a05dfb39"
-      uuid = "923a0812-f375-5c0c-a22c-fc71ddcad4e3"
    strings:
       $s1 = "www.naver.com" fullword ascii
       $s2 = "PolarSSL Test CA0" fullword ascii
@@ -143,7 +138,6 @@ rule APT_MAL_HOPLIGHT_NK_HiddenCobra_Apr19_2 {
       reference = "https://www.us-cert.gov/ncas/analysis-reports/AR19-100A"
       date = "2019-04-13"
       hash1 = "70034b33f59c6698403293cdc28676c7daa8c49031089efa6eefce41e22dccb3"
-      uuid = "9c7fd381-272a-5cfc-a7ee-7f0f9221fa04"
    strings:
       $s1 = "%SystemRoot%\\System32\\svchost.exe -k mdnetuse" fullword ascii
       $s2 = "%s\\hid.dll" fullword ascii
@@ -162,7 +156,6 @@ rule APT_MAL_HOPLIGHT_NK_HiddenCobra_Apr19_3 {
       hash1 = "2151c1977b4555a1761c12f151969f8e853e26c396fa1a7b74ccbaf3a48f4525"
       hash2 = "05feed9762bc46b47a7dc5c469add9f163c16df4ddaafe81983a628da5714461"
       hash3 = "ddea408e178f0412ae78ff5d5adf2439251f68cad4fd853ee466a3c74649642d"
-      uuid = "683b4d64-575a-5bdb-9ad8-e10a60037032"
    strings:
       $s1 = "Oleaut32.dll" fullword ascii
       $s2 = "Process32NextA" fullword ascii

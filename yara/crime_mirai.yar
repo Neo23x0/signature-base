@@ -28,7 +28,6 @@ rule Mirai_Botnet_Malware {
 		hash11 = "d9573c3850e2ae35f371dff977fc3e5282a5e67db8e3274fd7818e8273fd5c89"
 		hash12 = "f1100c84abff05e0501e77781160d9815628e7fd2de9e53f5454dbcac7c84ca5"
 		hash13 = "fb713ccf839362bf0fbe01aedd6796f4d74521b133011b408e42c1fd9ab8246b"
-		uuid = "a678e9f7-d516-5bdb-962e-b9d39d8a64bb"
 	strings:
 		$x1 = "POST /cdn-cgi/" ascii
 		$x2 = "/dev/misc/watchdog" fullword ascii
@@ -70,7 +69,6 @@ rule Mirai_1_May17 {
       hash1 = "172d050cf0d4e4f5407469998857b51261c80209d9fa5a2f5f037f8ca14e85d2"
       hash2 = "9ba8def84a0bf14f682b3751b8f7a453da2cea47099734a72859028155b2d39c"
       hash3 = "a393449a5f19109160384b13d60bb40601af2ef5f08839b5223f020f1f83e990"
-      uuid = "ac85ee28-a01f-5c3d-a534-0c19a3dc92e7"
    strings:
       $s1 = "GET /bins/mirai.x86 HTTP/1.0" fullword ascii
    condition:
@@ -87,7 +85,6 @@ rule Miari_2_May17 {
       super_rule = 1
       hash1 = "9ba8def84a0bf14f682b3751b8f7a453da2cea47099734a72859028155b2d39c"
       hash2 = "a393449a5f19109160384b13d60bb40601af2ef5f08839b5223f020f1f83e990"
-      uuid = "1c2cc98d-8ca5-5055-8f86-7f85c046ccd9"
    strings:
       $s1 = "User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36" fullword ascii
       $s2 = "GET /g.php HTTP/1.1" fullword ascii
@@ -106,7 +103,6 @@ rule MAL_ELF_LNX_Mirai_Oct10_1 {
       date = "2018-10-27"
       modified = "2023-01-27"
       hash1 = "3be2d250a3922aa3f784e232ce13135f587ac713b55da72ef844d64a508ddcfe"
-      uuid = "7bb28f03-03ba-581a-bc03-bd09a52787d9"
    strings:
       $x1 = " -r /vi/mips.bushido; "
       $x2 = "/bin/busybox chmod 777 * /tmp/" ascii
@@ -128,7 +124,6 @@ rule MAL_ELF_LNX_Mirai_Oct10_2 {
       reference = "Internal Research"
       date = "2018-10-27"
       hash1 = "fa0018e75f503f9748a5de0d14d4358db234f65e28c31c8d5878cc58807081c9"
-      uuid = "421b7708-030e-50d1-bf2e-e91758a48c00"
    strings:
       $c01 = { 50 4F 53 54 20 2F 63 64 6E 2D 63 67 69 2F 00 00
                20 48 54 54 50 2F 31 2E 31 0D 0A 55 73 65 72 2D
@@ -145,7 +140,6 @@ rule MAL_Mirai_Nov19_1 {
       date = "2019-11-13"
       hash1 = "bbb83da15d4dabd395996ed120435e276a6ddfbadafb9a7f096597c869c6c739"
       hash2 = "fadbbe439f80cc33da0222f01973f27cce9f5ab0709f1bfbf1a954ceac5a579b"
-      uuid = "40edcb29-9e10-5b87-ba79-8e3f629829e5"
    strings:
       $s1 = "SERVZUXO" fullword ascii
       $s2 = "-loldongs" fullword ascii
@@ -162,7 +156,6 @@ rule MAL_ARM_LNX_Mirai_Mar13_2022 {
       author = "Mehmet Ali Kerimoglu a.k.a. CYB3RMX"
       date = "2022-03-16"
       hash1 = "0283b72913b8a78b2a594b2d40ebc3c873e4823299833a1ff6854421378f5a68"
-      uuid = "54d8860e-fc45-5571-b68c-66590c67a705"
    strings:
       $str1 = "/home/landley/aboriginal/aboriginal/build/temp-armv6l/gcc-core/gcc/config/arm/lib1funcs.asm"
       $str2 = "/home/landley/aboriginal/aboriginal/build/temp-armv6l/gcc-core/gcc/config/arm/lib1funcs.asm"

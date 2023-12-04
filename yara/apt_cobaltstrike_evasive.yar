@@ -3,7 +3,6 @@ rule CobaltStrike_C2_Host_Indicator {
 		description = "Detects CobaltStrike C2 host artifacts"
 		author = "yara@s3c.za.net"
 		date = "2019-08-16"
-		uuid = "7f15ee30-664e-59b8-9e31-35d88e58a45e"
 	strings:
 		$c2_indicator_fp = "#Host: %s"
 		$c2_indicator = "#Host:"
@@ -18,7 +17,6 @@ rule CobaltStrike_Sleep_Decoder_Indicator {
 		description = "Detects CobaltStrike sleep_mask decoder"
 		author = "yara@s3c.za.net"
 		date = "2021-07-19"
-		uuid = "d5b53d68-55f9-5837-9b0c-e7be2f3bd072"
 	strings:
 		$sleep_decoder = { 48 89 5C 24 08 48 89 6C 24 10 48 89 74 24 18 57 48 83 EC 20 4C 8B 51 08 41 8B F0 48 8B EA 48 8B D9 45 8B 0A 45 8B 5A 04 4D 8D 52 08 45 85 C9 }
 	condition:
@@ -30,7 +28,6 @@ rule CobaltStrike_C2_Encoded_XOR_Config_Indicator {
 		description = "Detects CobaltStrike C2 encoded profile configuration"
 		author = "yara@s3c.za.net"
 		date = "2021-07-08"
-		uuid = "8e33c63d-eaba-5851-88f4-ef7261a0a618"
     strings:
 		$s000 = { 00 01 00 01 00 02 ?? ?? 00 02 00 01 00 02 ?? ?? 00 03 00 02 00 04 ?? ?? ?? ?? 00 04 00 02 00 04 ?? ?? ?? ?? 00 05 00 01 00 02 ?? ?? }
 		$s001 = { 01 00 01 00 01 03 ?? ?? 01 03 01 00 01 03 ?? ?? 01 02 01 03 01 05 ?? ?? ?? ?? 01 05 01 03 01 05 ?? ?? ?? ?? 01 04 01 00 01 03 ?? ?? }
@@ -299,7 +296,6 @@ rule CobaltStrike_MZ_Launcher {
 		description = "Detects CobaltStrike MZ header ReflectiveLoader launcher"
 		author = "yara@s3c.za.net"
 		date = "2021-07-08"
-		uuid = "461a4741-11c5-53d9-b8e1-52d64cfe755b"
     strings:
         $mz_launcher = { 4D 5A 41 52 55 48 89 E5 48 81 EC 20 00 00 00 48 8D 1D }
 	condition:
@@ -311,7 +307,6 @@ rule CobaltStrike_Unmodifed_Beacon {
 		description = "Detects unmodified CobaltStrike beacon DLL"
 		author = "yara@s3c.za.net"
 		date = "2019-08-16"
-		uuid = "8eeb03f9-9698-5a46-b45b-224d5c3f3df7"
 	strings:
 		$loader_export = "ReflectiveLoader"
 		$exportname = "beacon.dll"

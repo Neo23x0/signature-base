@@ -16,7 +16,6 @@ rule Indetectables_RAT {
 		hash1 = "081905074c19d5e32fd41a24b4c512d8fd9d2c3a8b7382009e3ab920728c7105"
 		hash2 = "66306c2a55a3c17b350afaba76db7e91bfc835c0e90a42aa4cf59e4179b80229"
 		hash3 = "1fa810018f6dd169e46a62a4f77ae076f93a853bfc33c7cf96266772535f6801"
-		uuid = "f8322822-617c-50cf-8b64-60da3a202ca5"
 	strings:
 		$s1 = "Coded By M3" fullword wide
 		$s2 = "Stub Undetector M3" fullword wide
@@ -41,7 +40,6 @@ rule BergSilva_Malware {
 		super_rule = 1
 		hash1 = "00e175cbad629ee118d01c49c11f3d8b8840350d2dd6d16bd81e47ae926f641e"
 		hash2 = "6b4cbbee296e4a0e867302f783d25d276b888b1bf1dcab9170e205d276c22cfc"
-		uuid = "5f35aea6-1d80-594a-a6e0-8e8bb30bc358"
 	strings:
 		$x1 = "C:\\Users\\Berg Silva\\Desktop\\" wide
 		$x2 = "URLDownloadToFileA 0, \"https://dl.dropbox.com/u/105015858/nome.exe\", \"c:\\nome.exe\", 0, 0" fullword wide

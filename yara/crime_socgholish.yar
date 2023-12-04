@@ -6,7 +6,6 @@ rule MAL_ZIP_SocGholish_Mar21_1 : zip js socgholish {
         hash = "4f6566c145be5046b6be6a43c64d0acae38cada5eb49b2f73135b3ac3d6ba770"
         hash = "54f756fbf8c20c76af7c9f538ff861690800c622d1c9db26eb3afedc50835b09"
         hash = "dfdbec1846b74238ba3cfb8c7580c64a0fa8b14b6ed2b0e0e951cc6a9202dd8d"
-        uuid = "da35eefd-b34d-59cd-8afc-da9c78ace96e"
     strings:
         $a1 = /\.[a-z0-9]{6}\.js/ ascii
         $a2 = "Chrome" ascii
@@ -31,7 +30,6 @@ rule EXT_MAL_JS_SocGholish_Mar21_1 : js socgholish {
         hash = "7ccbdcde5a9b30f8b2b866a5ca173063dec7bc92034e7cf10e3eebff017f3c23"
         hash = "f6d738baea6802cbbb3ae63b39bf65fbd641a1f0d2f0c819a8c56f677b97bed1"
         hash = "c7372ffaf831ad963c0a9348beeaadb5e814ceeb878a0cc7709473343d63a51c"
-        uuid = "3ed7d2da-569b-5851-a821-4a3cda3e13ce"
     strings:
         /* $try = "try" ascii */
 
@@ -61,7 +59,6 @@ rule SocGholish_JS_22_02_2022 {
         hash = "c04a1625efec27fb6bbef9c66ca8372b"
         hash = "d08a2350df5abbd8fd530cff8339373e"
     
-        uuid = "68d2dbb7-0079-527a-92c7-450c3dd953b3"
     strings:
         $s1 = "encodeURIComponent(''+" ascii
         $s2 = "['open']('POST'," ascii 
