@@ -10,6 +10,7 @@ rule SUSP_BAT2EXE_BDargo_Converted_BAT {
       score = 45
       hash1 = "d428d79f58425d831c2ee0a73f04749715e8c4dd30ccd81d92fe17485e6dfcda"
       hash1 = "a547a02eb4fcb8f446da9b50838503de0d46f9bb2fd197c9ff63021243ea6d88"
+      uuid = "c9da4184-1530-5525-bdba-2dcc8a221bb1"
    strings:
       $s1 = "Error #bdembed1 -- Quiting" fullword ascii
       $s2 = "%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s" fullword ascii

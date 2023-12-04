@@ -7,6 +7,7 @@ rule ATM_Malware_JavaDispCash {
 		hash1 = "0149667c0f8cbfc216ef9d1f3154643cbbf6940e6f24a09c92a82dd7370a5027"
 		hash2 = "ef407db8c79033027858364fd7a04eeb70cf37b7c3a10069a92bae96da88dfaa"
 
+		uuid = "7aa91719-6539-572a-8618-bfb5290a5b59"
 	strings:
 		$CashInfo = "getNumberOfCashUnits" ascii wide
 		$Dispense = "waitforbillstaken" ascii wide

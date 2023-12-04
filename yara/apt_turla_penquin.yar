@@ -14,6 +14,7 @@ rule APT_MAL_LNX_Turla_Apr202004_1 {
       hash7 = "5a204263cac112318cd162f1c372437abf7f2092902b05e943e8784869629dd8" 
       hash8 = "8856a68d95e4e79301779770a83e3fad8f122b849a9e9e31cfe06bf3418fa667" 
       hash9 = "d49690ccb82ff9d42d3ee9d7da693fd7d302734562de088e9298413d56b86ed0"
+      uuid = "2da75433-b1c1-51b3-8f7a-a4442ca3de96"
    strings: 
       $ = "/root/.hsperfdata" ascii fullword
       $ = "Desc| Filename | size |state|" ascii fullword
@@ -46,6 +47,7 @@ rule APT_MAL_LNX_Turla_Apr202004_1_opcode {
       hash7 = "5a204263cac112318cd162f1c372437abf7f2092902b05e943e8784869629dd8" 
       hash8 = "8856a68d95e4e79301779770a83e3fad8f122b849a9e9e31cfe06bf3418fa667" 
       hash9 = "d49690ccb82ff9d42d3ee9d7da693fd7d302734562de088e9298413d56b86ed0"
+      uuid = "03043f59-c81a-5423-bec1-6cd88f6e3c52"
    strings:
       $op0 = { 8D 41 05 32 06 48 FF C6 88 81 E0 80 69 00 } /* Xor string loop_p1 x32*/ 
       $op1 = { 48FFC14883F94975E9 } /*Xorstringloop_p2x32*/

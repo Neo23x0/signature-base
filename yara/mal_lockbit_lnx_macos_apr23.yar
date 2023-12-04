@@ -14,6 +14,7 @@ rule MAL_RANSOM_LNX_macOS_LockBit_Apr23_1 {
       hash7 = "0be6f1e927f973df35dad6fc661048236d46879ad59f824233d757ec6e722bde"
       hash8 = "3e4bbd21756ae30c24ff7d6942656be024139f8180b7bddd4e5c62a9dfbd8c79"
       score = 85
+      uuid = "c01cb907-7d30-5487-b908-51f69ddb914c"
    strings:
       $x1 = "restore-my-files.txt" ascii fullword
 
@@ -46,6 +47,7 @@ rule MAL_RANSOM_LockBit_Apr23_1 {
       reference = "https://objective-see.org/blog/blog_0x75.html"
       date = "2023-04-17"
       score = 75
+      uuid = "75dc8b95-16f0-5170-a7d6-fc10bb778348"
    strings:
       $xe1 = "-i '/path/to/crypt'" xor
       $xe2 = "http://lockbit" xor
@@ -71,6 +73,7 @@ rule MAL_RANSOM_LockBit_Locker_LOG_Apr23_1 {
       reference = "https://objective-see.org/blog/blog_0x75.html"
       date = "2023-04-17"
       score = 75
+      uuid = "aa0a2393-e5a2-5151-8afb-91a9bb922179"
    strings:
       $s1 = " is encrypted. Checksum after encryption "
       $s2 = "~~~~~Hardware~~~~"
@@ -87,6 +90,7 @@ rule MAL_RANSOM_LockBit_ForensicArtifacts_Apr23_1 {
       reference = "https://objective-see.org/blog/blog_0x75.html"
       date = "2023-04-17"
       score = 75
+      uuid = "e716030c-ee78-51dc-919c-cf59e93da976"
    strings:
       $x1 = "/tmp/locker.log" ascii fullword
       $x2 = "Executable=LockBit/locker_" ascii

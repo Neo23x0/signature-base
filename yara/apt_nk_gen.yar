@@ -7,6 +7,7 @@ rule APT_NK_MAL_Keylogger_Unknown_Nov19_1 {
       date = "2019-11-06"
       hash1 = "04d70bb249206a006f83db39bbe49ff6e520ea329e5fbb9c758d426b1c8dec30"
       hash2 = "618a67048d0a9217317c1d1790ad5f6b044eaa58a433bd46ec2fb9f9ff563dc6"
+      uuid = "5311d883-52e0-5503-9494-c583fabbedfe"
    strings:
       $x1 = "CKeyLogDlg::Keylogger_WriteFile" ascii
       $x2 = "Keylog file is saved >>>>>> %s" fullword ascii

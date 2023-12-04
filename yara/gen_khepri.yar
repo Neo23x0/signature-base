@@ -7,6 +7,7 @@ rule HKTL_Khepri_Beacon_Sep21_1 {
       date = "2021-09-08"
       score = 90
       hash1 = "86c48679db5f4c085fd741ebec5235bc6cf0cdf8ef2d98fd8a689ceb5088f431"
+      uuid = "b2c8aaf7-7953-55a3-8499-565800fa01f1"
    strings:
       $x1 = "NT %d.%d Build %d  ProductType:%s" ascii fullword
 

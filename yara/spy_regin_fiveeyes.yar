@@ -19,6 +19,7 @@ rule Regin_APT_KernelDriver_Generic_A {
 		hash1 = "187044596bc1328efa0ed636d8aa4a5c"
 		hash2 = "06665b96e293b23acc80451abb413e50"
 		hash3 = "d240f06e98c8d3e647cbf4d442d79475"
+		uuid = "4cea1d45-b797-51b2-baa7-e66c8c0206ea"
 	strings:
 		$m0 = { 4d 5a 90 00 03 00 00 00 04 00 00 00 ff ff 00 00 b8 }
 		$m1 = { 0e 1f ba 0e 00 b4 09 cd 21 b8 01 4c cd 21 54 68 69 73 20 70 72 6f 67 72 61 6d 20 63 61 6e 6e 6f 74 20 62 65 20 72 75 6e 20 69 6e 20 44 4f 53 20 6d 6f 64 65 2e }
@@ -57,6 +58,7 @@ rule Regin_APT_KernelDriver_Generic_B {
 		hash11 = "ba7bb65634ce1e30c1e5415be3d1db1d"
 		hash12 = "b505d65721bb2453d5039a389113b566"
 		hash13 = "b269894f434657db2b15949641a67532"
+		uuid = "14f31b2d-4753-54e8-891a-e28689ba57db"
 	strings:
 		$m0 = { 4d 5a 90 00 03 00 00 00 04 00 00 00 ff ff 00 00 b8 }
 		$s1 = { 0e 1f ba 0e 00 b4 09 cd 21 b8 01 4c cd 21 54 68 69 73 20 70 72 6f 67 72 61 6d 20 63 61 6e 6e 6f 74 20 62 65 20 72 75 6e 20 69 6e 20 44 4f 53 20 6d 6f 64 65 2e }
@@ -98,6 +100,7 @@ rule Regin_APT_KernelDriver_Generic_C {
 		date = "23.11.14"
 		hash1 = "e0895336617e0b45b312383814ec6783556d7635"
 		hash2 = "732298fa025ed48179a3a2555b45be96f7079712"
+		uuid = "2006b3f0-abd1-5274-8b18-75368671e062"
 	strings:
 		$m0 = { 4d 5a 90 00 03 00 00 00 04 00 00 00 ff ff 00 00 b8 }
 
@@ -126,6 +129,7 @@ rule Regin_sig_svcsstat {
 		author = "@MalwrSignatures"
 		date = "26.11.14"
 		hash = "5164edc1d54f10b7cb00a266a1b52c623ab005e2"
+		uuid = "0cb493d7-c7f1-54c4-9805-d9894bf399da"
 	strings:
 		$s0 = "Service Control Manager" fullword ascii
 		$s1 = "_vsnwprintf" ascii
@@ -144,6 +148,7 @@ rule Regin_Sample_1 {
 		author = "@MalwrSignatures"
 		date = "26.11.14"
 		hash = "773d7fab06807b5b1bc2d74fa80343e83593caf2"
+		uuid = "13796d7f-1f15-525f-85d6-ee80d07c20ad"
 	strings:
 		$s0 = "Getting PortName/Identifier failed - %x" fullword ascii
 		$s1 = "SerialAddDevice - error creating new devobj [%#08lx]" fullword ascii
@@ -171,6 +176,7 @@ rule Regin_Sample_2 {
 		author = "@MalwrSignatures"
 		date = "26.11.14"
 		hash = "a7b285d4b896b66fce0ebfcd15db53b3a74a0400"
+		uuid = "1091a598-e964-5f67-9267-531d66831bee"
 	strings:
 		$s0 = "\\SYSTEMROOT\\system32\\lsass.exe" wide
 		$s1 = "atapi.sys" fullword wide
@@ -199,6 +205,7 @@ rule Regin_Sample_3 {
 		author = "@Malwrsignatures"
 		date = "27.11.14"
 		hash = "fe1419e9dde6d479bd7cda27edd39fafdab2668d498931931a2769b370727129"
+		uuid = "eefc174f-4b17-5c90-8478-3eaaf80e9a78"
 	strings:
 		$s0 = "Service Pack x" fullword wide
 		$s1 = "\\REGISTRY\\MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion" wide
@@ -226,6 +233,7 @@ rule Regin_Sample_Set_2 {
 		date = "26.11.14"
 		hash1 = "8487a961c8244004c9276979bb4b0c14392fc3b8"
 		hash2 = "bcf3461d67b39a427c83f9e39b9833cfec977c61"
+		uuid = "0b21091d-413e-54dd-83d1-5d824fb013f2"
 	strings:
 		$s0 = "HAL.dll" fullword ascii
 		$s1 = "IoGetDeviceObjectPointer" fullword ascii
@@ -260,6 +268,7 @@ rule Regin_Sample_Set_1 {
 		modified = "2023-01-06"
 		hash1 = "4139149552b0322f2c5c993abccc0f0d1b38db4476189a9f9901ac0d57a656be"
 		hash2 = "e420d0cf7a7983f78f5a15e6cb460e93c7603683ae6c41b27bf7f2fa34b2d935"
+		uuid = "b0f24a0b-10e7-5549-a300-516df8644cb0"
 	strings:
 		$hd = { fe ba dc fe }
 
@@ -292,6 +301,7 @@ rule apt_regin_legspin {
 		modified = "2023-01-27"
 	    reference = "https://securelist.com/blog/research/68438/an-analysis-of-regins-hopscotch-and-legspin/"
 	    md5 = "29105f46e4d33f66fee346cfd099d1cc"
+	    uuid = "2abd3605-d9bf-53f0-8521-ac8dc18d9fce"
 	strings:
 	    $a1="sharepw"
 	    $a2="reglist"
@@ -314,6 +324,7 @@ rule apt_regin_hopscotch {
 		modified = "2023-01-27"
 	    reference = "https://securelist.com/blog/research/68438/an-analysis-of-regins-hopscotch-and-legspin/"
 	    md5 = "6c34031d7a5fc2b091b623981a8ae61c"
+	    uuid = "907042ba-8e64-5ca7-9a83-70c28af1ab99"
 	strings:
 	    $a1="AuthenticateNetUseIpc"
 	    $a2="Failed to authenticate to"
@@ -336,6 +347,7 @@ rule Regin_Related_Malware {
 		reference = "VT Analysis"
 		date = "2015-06-03"
 		hash = "76c355bfeb859a347e38da89e3d30a6ff1f94229"
+		uuid = "9377dd52-244f-5289-a2a3-88b6377b2dd2"
 	strings:
 		$s1 = "%c%s%c -p %d -e %d -pv -c \"~~[%x] s; .%c%c%s %s /u %s_%d.dmp; q\"" fullword wide /* score: '22.015' */
 

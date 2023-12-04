@@ -6,6 +6,7 @@ rule MAL_Passwordstate_Moserware_Backdoor_Apr21_1 {
       date = "2021-04-25"
       hash1 = "c2169ab4a39220d21709964d57e2eafe4b68c115061cbb64507cfbbddbe635c6"
       hash2 = "f23f9c2aaf94147b2c5d4b39b56514cd67102d3293bdef85101e2c05ee1c3bf9"
+      uuid = "061de3ae-c404-5e4a-a16b-b3b208b1ae7f"
    strings:
       $x1 = "https://passwordstate-18ed2.kxcdn.com" wide
 

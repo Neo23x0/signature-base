@@ -16,6 +16,7 @@ rule Pirpi_1609_A {
 		date = "2016-09-08"
 		hash1 = "2a5a0bc350e774bd784fc25090518626b65a3ce10c7401f44a1616ea2ae32f4c"
 		hash2 = "8caa179ec20b6e3938d17132980e0b9fe8ef753a70052f7e857b339427eb0f78"
+		uuid = "72b996e2-56cf-5a8d-8d8b-97eda7105d26"
 	strings:
 		$x1 = "expand.exe1.gif" fullword ascii
 
@@ -49,6 +50,7 @@ rule Pirpi_1609_B {
 		reference = "http://goo.gl/igxLyF"
 		date = "2016-09-08"
 		hash1 = "498b98c02e19f4b03dc6a3a8b6ff8761ef2c0fedda846ced4b6f1c87b52468e7"
+		uuid = "caf63b97-efd7-5cd4-8954-b86db4d93cf5"
 	strings:
 		$s1 = "tconn <ip> <port> //set temp connect value, and disconnect." fullword ascii
 		$s2 = "E* ListenCheckSsl SslRecv fd(%d) Error ret:%d %d" fullword ascii

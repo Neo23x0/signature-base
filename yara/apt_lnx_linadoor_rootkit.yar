@@ -14,6 +14,7 @@ rule MAL_LNX_LinaDoor_Rootkit_May22 {
       hash5 = "a1df5b7e4181c8c1c39de976bbf6601a91cde23134deda25703bc6d9cb499044"
       hash6 = "c4eea99658cd82d48aaddaec4781ce0c893de42b33376b6c60a949008a3efb27"
       hash7 = "c5651add0c7db3bbfe0bbffe4eafe9cd5aa254d99be7e3404a2054d6e07d20e7"
+      uuid = "e2f250b4-9a8a-5d70-83d7-5d12ad3763fb"
    strings:
       $s1 = "/dev/net/.../rootkit_/" ascii
       $s2 = "did_exec" ascii fullword

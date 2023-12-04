@@ -7,6 +7,7 @@ rule SUSP_VCRuntime_Sideloading_Indicators_Aug23 {
       date = "2023-08-30"
       hash = "b4bc73dfe9a781e2fee4978127cb9257bc2ffd67fc2df00375acf329d191ffd6"
       score = 75
+      uuid = "00400122-1343-5051-af31-880a3ef1745d"
    condition:
       (filename == "VCRUNTIME140.dll" or filename == "vcruntime140.dll")
       and pe.imports("mscoree.dll", "_CorDllMain")

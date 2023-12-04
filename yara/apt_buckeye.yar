@@ -14,6 +14,7 @@ rule Buckeye_Osinfo {
 		author = "Florian Roth (Nextron Systems)"
 		reference = "http://www.symantec.com/connect/blogs/buckeye-cyberespionage-group-shifts-gaze-us-hong-kong"
 		date = "2016-09-05"
+		uuid = "e40a86d1-fd1a-5430-b7b7-8cc7ca128cc5"
 	strings:
 		$s1 = "-s ShareInfo ShareDir" fullword ascii
 		$s2 = "-a Local And Global Group User Info" fullword ascii
@@ -35,6 +36,7 @@ rule RemoteCmd {
 		date = "2016-09-08"
 		modified = "2022-12-21"
 		hash1 = "5264d1de687432f8346617ac88ffcb31e025e43fc3da1dad55882b17b44f1f8b"
+		uuid = "384f37f3-4562-5d79-9793-0384c43d4602"
 	strings:
 		$s1 = "RemoteCmd.exe" fullword wide
 		$s2 = "\\Release\\RemoteCmd.pdb" ascii
@@ -42,6 +44,7 @@ rule RemoteCmd {
 		$s4 = "http://{0}:65101/CommandEngine" fullword wide
 		$s5 = "Brenner.RemoteCmd.Client" fullword ascii
 		$s6 = "$b1888995-1ee5-4f6d-82df-d2ab8ae73d63" fullword ascii
+		uuid = "384f37f3-4562-5d79-9793-0384c43d4602"
 	condition:
 		( uint16(0) == 0x5a4d and filesize < 50KB and 2 of them ) or ( 4 of them )
 }
@@ -55,6 +58,7 @@ rule ChromePass {
 		date = "2016-09-08"
 		modified = "2022-12-21"
 		hash1 = "5ff43049ae18d03dcc74f2be4a870c7056f6cfb5eb636734cca225140029de9a"
+		uuid = "950b9761-bdfd-514b-90ea-a1454d35ce5a"
 	strings:
 		$x1 = "\\Release\\ChromePass.pdb" ascii
 		$x2 = "Windows Protect folder for getting the encryption keys" wide
@@ -68,6 +72,7 @@ rule ChromePass {
 		$s6 = "Windows Login Password:" fullword wide
 		$s7 = "SELECT origin_url, action_url, username_element, username_value, password_element, password_value, signon_realm, date_created fr" ascii
 		$s8 = "Chrome Password Recovery" fullword wide
+		uuid = "950b9761-bdfd-514b-90ea-a1454d35ce5a"
 	condition:
 		( uint16(0) == 0x5a4d and filesize < 700KB and 1 of ($x*) ) or ( 5 of them )
 }

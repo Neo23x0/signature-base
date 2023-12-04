@@ -21,6 +21,7 @@ rule glassRAT
 			22e01495b4419b564d5254d2122068d9
 			42b57c0c4977a890ecb0ea9449516075
 			b7f2020208ebd137616dadb60700b847	*/
+		uuid = "7739d1f6-f16d-5599-9388-a1d89dbeb355"
 	strings:
 		$bin1 = {85 C0 B3 01} 		/* 	test    eax, eax
 										  mov     bl, 1 */
@@ -56,6 +57,7 @@ rule GlassRAT_Generic {
 		hash5 = "c11faf7290299bb13925e46d040ed59ab3ca8938eab1f171aa452603602155cb"
 		hash6 = "d95fa58a81ab2d90a8cbe05165c00f9c8ad5b4f49e98df2ad391f5586893490d"
 		hash7 = "f1209eb95ce1319af61f371c7f27bf6846eb90f8fd19e8d84110ebaf4744b6ea"
+		uuid = "d09c4a9f-15ad-56d7-b015-94f494420e98"
 	strings:
 		$s1 = "cmd.exe /c %s" fullword ascii
 		$s2 = "update.dll" fullword ascii

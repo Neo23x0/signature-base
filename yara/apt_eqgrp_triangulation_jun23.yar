@@ -6,6 +6,7 @@ rule APT_Equation_Group_Op_Triangulation_TriangleDB_Implant_Jun23_1 {
       reference = "https://securelist.com/triangledb-triangulation-implant/110050/"
       date = "2023-06-21"
       score = 80
+      uuid = "d81a5103-41c8-5dba-a560-8fb5514f6c0a"
    strings:
       $s1 = "unmungeHexString" ascii fullword
       $s2 = "CRPwrInfo" ascii fullword

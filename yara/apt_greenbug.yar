@@ -17,6 +17,7 @@ rule Greenbug_Malware_1 {
       reference = "https://goo.gl/urp4CD"
       date = "2017-01-25"
       hash1 = "dab460a0b73e79299fbff2fa301420c1d97a36da7426acc0e903c70495db2b76"
+      uuid = "3375a392-4896-572c-9688-00f01ea86ca7"
    strings:
       $s1 = "vailablez" fullword ascii
       $s2 = "Sfouglr" fullword ascii
@@ -34,6 +35,7 @@ rule Greenbug_Malware_2 {
       hash1 = "6b28a43eda5b6f828a65574e3f08a6d00e0acf84cbb94aac5cec5cd448a4649d"
       hash2 = "21f5e60e9df6642dbbceca623ad59ad1778ea506b7932d75ea8db02230ce3685"
       hash3 = "319a001d09ee9d754e8789116bbb21a3c624c999dae9cf83fde90a3fbe67ee6c"
+      uuid = "e5d5ddae-cf6d-579f-9a67-9406838b5e0b"
    strings:
       $x1 = "|||Command executed successfully" fullword ascii
       $x2 = "\\Release\\Bot Fresh.pdb" ascii
@@ -61,6 +63,7 @@ rule Greenbug_Malware_3 {
       super_rule = 1
       hash1 = "44bdf5266b45185b6824898664fd0c0f2039cdcb48b390f150e71345cd867c49"
       hash2 = "7f16824e7ad9ee1ad2debca2a22413cde08f02ee9f0d08d64eb4cb318538be9c"
+      uuid = "68142bcd-4bd0-5c80-97fc-38811565e21c"
    strings:
       $x1 = "F:\\Projects\\Bot\\Bot\\Release\\Ism.pdb" fullword ascii
       $x2 = "C:\\ddd\\wer2.txt" fullword wide
@@ -79,6 +82,7 @@ rule Greenbug_Malware_4 {
       super_rule = 1
       hash1 = "308a646f57c8be78e6a63ffea551a84b0ae877b23f28a660920c9ba82d57748f"
       hash2 = "82beaef407f15f3c5b2013cb25901c9fab27b086cadd35149794a25dce8abcb9"
+      uuid = "d45dea36-6051-5531-afd2-abf27cd06a12"
    strings:
       $s1 = "powershell.exe -nologo -windowstyle hidden -c \"Set-ExecutionPolicy -scope currentuser" fullword ascii
       $s2 = "powershell.exe -c \"Set-ExecutionPolicy -scope currentuser -ExecutionPolicy unrestricted -f; . \"" fullword ascii
@@ -109,6 +113,7 @@ rule Greenbug_Malware_5 {
       hash2 = "44bdf5266b45185b6824898664fd0c0f2039cdcb48b390f150e71345cd867c49"
       hash3 = "7f16824e7ad9ee1ad2debca2a22413cde08f02ee9f0d08d64eb4cb318538be9c"
       hash4 = "82beaef407f15f3c5b2013cb25901c9fab27b086cadd35149794a25dce8abcb9"
+      uuid = "12362711-f466-5f9e-9227-1cf84aec93e5"
    strings:
       $x1 = "cmd /u /c WMIC /Node:localhost /Namespace:\\\\root\\SecurityCenter" fullword ascii
       $x2 = "cmd /a /c net user administrator /domain >>" fullword ascii
@@ -142,6 +147,7 @@ rule Greenbug_Malware_Nov17_1 {
       date = "2017-11-26"
       hash1 = "6e55e161dc9ace3076640a36ef4a8819bb85c6d5e88d8e852088478f79cf3b7c"
       hash2 = "a9f1375da973b229eb649dc3c07484ae7513032b79665efe78c0e55a6e716821"
+      uuid = "50816c09-5f38-5e05-9915-b96f00ee4b88"
    strings:
       $x1 = "AgentV2.exe  -c  SampleDomain.com" fullword ascii
       $x2 = ".ntpupdateserver.com" fullword ascii

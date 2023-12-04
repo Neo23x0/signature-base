@@ -7,6 +7,7 @@ rule HKTL_NATBypass_Dec22_1 : T1090 {
       date = "2022-12-27"
       score = 80
       hash1 = "4550635143c9997d5499d1d4a4c860126ee9299311fed0f85df9bb304dca81ff"
+      uuid = "54af4d84-72f7-5ec4-b0bf-7ba228fdf508"
    strings:
       $x1 = "nb -slave 127.0.0.1:3389 8.8.8.8:1997" ascii
       $x2 = "| Welcome to use NATBypass Ver" ascii

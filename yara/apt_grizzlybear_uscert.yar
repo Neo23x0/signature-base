@@ -16,6 +16,7 @@ rule IMPLANT_1_v1 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "eb3fc39b-08ca-51df-a9b4-7b28b107b700"
    strings:
       $STR1 = {6A ?? E8 ?? ?? FF FF 59 85 C0 74 0B 8B C8 E8 ?? ?? FF FF 8B F0
          EB 02 33 F6 8B CE E8 ?? ?? FF FF 85 F6 74 0E 8B CE E8 ?? ?? FF FF 56
@@ -31,6 +32,7 @@ rule IMPLANT_1_v2 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "c7beab50-8e73-5161-be7e-bc3f8351873a"
    strings:
       $STR1 = {83 3E 00 53 74 4F 8B 46 04 85 C0 74 48 83 C0 02 50 E8 ?? ?? 00
          00 8B D8 59 85 DB 74 38 8B 4E 04 83 F9 FF 7E 21 57 }
@@ -47,6 +49,7 @@ rule IMPLANT_1_v3 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "517133d2-813d-5f44-84c2-a53c62d7a688"
    strings:
       $rol7encode = { 0F B7 C9 C1 C0 07 83 C2 02 33 C1 0F B7 0A 47 66 85 C9 75 }
    condition:
@@ -61,6 +64,7 @@ rule IMPLANT_1_v4 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "0362b885-de59-5715-80f2-106e5e91d1fa"
    strings:
       $XOR_LOOP = { 8B 45 FC 8D 0C 06 33 D2 6A 0B 8B C6 5B F7 F3 8A 82 ?? ??
          ?? ?? 32 04 0F 46 88 01 3B 75 0C 7C E0 }
@@ -75,6 +79,7 @@ rule IMPLANT_1_v5 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "ac1c6175-3a8b-524b-bb18-243c52f7dba1"
    strings:
       $drivername = { 6A 30 ?? 6A 33 [5] 6A 37 [5] 6A 32 [5] 6A 31 [5] 6A 77
          [5] 6A 69 [5] 6A 6E [5] 6A 2E [5] 6A 73 [5-9] 6A 79 [5] 6A 73 }
@@ -111,6 +116,7 @@ rule IMPLANT_1_v7 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "2a28273f-d9a1-5e80-bef1-b488eb0326bd"
    strings:
       $XOR_FUNCT = { C7 45 ?? ?? ?? 00 10 8B 0E 6A ?? FF 75 ?? E8 ?? ?? FF FF }
    condition:
@@ -124,6 +130,7 @@ rule IMPLANT_2_v1 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "058266d4-8dc5-5a26-9bc6-4c55ac646e9b"
    strings:
       $STR1 = { 8d ?? fa [2] e8 [2] FF FF C7 [2-5] 00 00 00 00 8D [2-5] 5? 6a 00 6a 01}
    condition:
@@ -137,6 +144,7 @@ rule IMPLANT_2_v3 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "747e4f76-b9c4-5988-90ae-b450548b1b82"
    strings:
       $STR1 = {C1 EB 07 8D ?? 01 32 1C ?? 33 D2 }
       $STR2 = {2B ?? 83 ?? 06 0F 83 ?? 00 00 00 EB 02 33 }
@@ -153,6 +161,7 @@ rule IMPLANT_2_v5 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "0e787116-d7f5-5a72-9aba-d4e6cb35bc8d"
    strings:
       $STR1 = {48 83 [2] 48 89 [3] c7 44 [6] 4c 8d 05 [3] 00 BA 01 00 00 00 33
          C9 ff 15 [2] 00 00 ff 15 [2] 00 00 3D B7 00 00 00 75 ?? 48 8D 15 ?? 00
@@ -168,6 +177,7 @@ rule IMPLANT_2_v6 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "ffadb02f-6311-567d-900b-c8a9ed172ab4"
    strings:
       $STR1 = { e8 [2] ff ff 8b [0-6] 00 04 00 00 7F ?? [1-2] 00 02 00 00 7F
          ?? [1-2] 00 01 00 00 7F ?? [1-2] 80 00 00 00 7F ?? 83 ?? 40 7F}
@@ -182,6 +192,7 @@ rule IMPLANT_2_v7 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "839041d9-e27b-52a2-b5d5-f1af595826f4"
    strings:
       $s1 = {10 A0 FA FD 83 3D 28 D4 1F FF 77 5? ?8 B4 50 CC 1E B0 78 D7 90 13
          21 C0 23 3D 28 BC 78 95 DE 4B B0 60 00 00 0F 7F 38 B4 50 C8 D5 9F E0
@@ -203,6 +214,7 @@ rule IMPLANT_2_v9 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "41f46b52-4b0e-53ee-a86c-503fe9a9532c"
    strings:
       $STR1 = { 8A C3 02 C0 02 D8 8B 45 F8 02 DB 83 C1 02 03 45 08 88 5D 0F 89
          45 E8 8B FF 0F B6 5C 0E FE 8B 45 F8 03 C1 0F AF D8 8D 51 01 89 55 F4
@@ -230,6 +242,7 @@ rule IMPLANT_2_v10 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "cb88ae0c-19e2-590c-9c13-78ac1dcc8c9f"
    strings:
       $STR1 = { 83 ?? 06 [7-17] fa [0-10] 45 [2-4] 48 [2-4] e8 [2] FF FF [6-8]
          48 8d [3] 48 89 [3] 45 [2] 4? [1-2] 01}
@@ -244,6 +257,7 @@ rule IMPLANT_2_v11 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "570d6996-ab16-556e-b790-e4c73d7bbffc"
    strings:
       $STR1 = {55 8b ec 6a fe 68 [4] 68 [4] 64 A1 00 00 00 00 50 83 EC 0C 53
          56 57 A1 [4] 31 45 F8 33 C5 50 8D 45 F0 64 A3 00 00 00 00 [8-14] 68
@@ -259,6 +273,7 @@ rule IMPLANT_2_v14 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "1e4958e7-e136-5600-bc16-36cdeeb3ea18"
    strings:
       $STR1 = {8B ?? 44 89 44 24 60 41 F7 E0 8B F2 B8 AB AA AA AA C1 EE 02 89
          74 24 58 44 8B ?? 41 F7 ?? 8B CA BA 03 00 00 00 C1 E9 02 89 0C 24 8D
@@ -284,6 +299,7 @@ rule IMPLANT_2_v15 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "9bdaebc1-86a0-5c21-b752-d69cdb70f082"
    strings:
       $XOR_LOOP1 = { 32 1C 02 33 D2 8B C7 89 5D E4 BB 06 00 00 00 F7 F3 }
       $XOR_LOOP2 = { 32 1C 02 8B C1 33 D2 B9 06 00 00 00 F7 F1 }
@@ -300,6 +316,7 @@ rule IMPLANT_2_v16 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "2c54a749-c80b-5010-97b6-b74c54fd3d07"
    strings:
       $OBF_FUNCT = { 0F B6 1C 0B 8D 34 08 8D 04 0A 0F AF D8 33 D2 8D 41 FF F7
          75 F8 8B 45 0C C1 EB 07 8D 79 01 32 1C 02 33 D2 8B C7 89 5D E4 BB 06
@@ -318,6 +335,7 @@ rule IMPLANT_2_v17  {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "dc3a6b08-1ac4-5fa2-a710-657514d45606"
    strings:
       $STR1 = { 24108b44241c894424148b4424246836 }
       $STR2 = { 518d4ddc516a018bd08b4de4e8360400 }
@@ -335,6 +353,7 @@ rule IMPLANT_2_v18 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "5376ec57-f405-55cf-a23b-aafb1cb800e5"
    strings:
       $STR1 = { 8A C1 02 C0 8D 1C 08 8B 45 F8 02 DB 8D 4A 02 8B 55 0C 88 5D FF
          8B 5D EC 83 C2 FE 03 D8 89 55 E0 89 5D DC 8D 49 00 03 C1 8D 34 0B 0F
@@ -363,6 +382,7 @@ rule IMPLANT_2_v19 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "b4efdb3c-d7d6-5141-ad73-90d70582f8bd"
    strings:
       $obfuscated_RSA1 = { 7C 41 B4 DB ED B0 B8 47 F1 9C A1 49 B6 57 A6 CC D6
          74 B5 52 12 4D FC B1 B6 3B 85 73 DF AB 74 C9 25 D8 3C EA AE 8F 5E D2
@@ -390,6 +410,7 @@ rule IMPLANT_2_v20 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "323ee676-802d-55e6-a97a-48eb3a4e4a5f"
    strings:
       $func = { 0F B6 5C 0A FE 8D 34 02 8B 45 D4 03 C2 0F AF D8 8D 7A 01 8D 42
          FF 33 D2 F7 75 F4 C1 EB 07 8B C7 32 1C 0A 33 D2 B9 06 00 00 00 F7 F1
@@ -408,6 +429,7 @@ rule IMPLANT_3_v1 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "d539bb31-18b2-5cf5-b994-daecd5f8c771"
    strings:
       $STR1 = ">process isn't exist<" ascii wide
       $STR2 = "shell\\open\\command=\"System Volume Information\\USBGuard.exe\" install" ascii wide
@@ -426,6 +448,7 @@ rule IMPLANT_3_v2 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "349c65cf-547f-5837-af71-f9721e029b74"
    strings:
       $base_key_moved = {C7 45 ?? 3B C6 73 0F C7 45 ?? 8B 07 85 C0 C7 45 ?? 74
          02 FF D0 C7 45 ?? 83 C7 04 3B C7 45 ?? FE 72 F1 5F C7 45 ?? 5E C3 8B
@@ -448,6 +471,7 @@ rule IMPLANT_3_v3 {
       date = "2017-02-10"
       modified = "2021-03-15"
       score = 65
+      uuid = "ce82511e-715a-53cb-98e5-5d51b94726d5"
    strings:
       $STR1 = ".?AVAgentKernel@@"
       $STR2 = ".?AVIAgentModule@@"
@@ -467,6 +491,7 @@ rule IMPLANT_4_v1 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "be4d222f-009f-5dde-93da-376626a77263"
    strings:
       $STR1 = {55 8B EC 81 EC 54 01 00 00 83 65 D4 00 C6 45 D8 61 C6 45 D9 64
          C6 45 DA 76 C6 45 DB 61 C6 45 DC 70 C6 45 DD 69 C6 45 DE 33 C6 45 DF
@@ -484,6 +509,7 @@ rule IMPLANT_4_v2 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "2edaeb08-19bc-5ab4-bc75-40c16ba85d9f"
    strings:
       $BUILD_USER32 = {75 73 65 72 ?? ?? ?? 33 32 2E 64}
       $BUILD_ADVAPI32 = {61 64 76 61 ?? ?? ?? 70 69 33 32}
@@ -768,6 +794,7 @@ rule IMPLANT_4_v3_AlternativeRule : HIGHVOL {
       reference = "US CERT Grizzly Steppe Report"
       date = "2017-02-12"
       hash1 = "2244fe9c5d038edcb5406b45361613cf3909c491e47debef35329060b00c985a"
+      uuid = "47e9028b-7718-5372-8a1a-94c208c29ed4"
    strings:
       $op1 = { 33 c9 41 ff 13 13 c9 ff 13 72 f8 c3 53 1e 01 00 } /* Opcode */
       $op2 = { 21 da 40 00 00 a0 40 00 08 a0 40 00 b0 70 40 00 } /* Opcode */
@@ -784,6 +811,7 @@ rule IMPLANT_4_v4 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "27a5fb98-fe8b-561c-b490-e04257e7dd1c"
    strings:
       $DK_format1 = "/c format %c: /Y /Q" ascii
       $DK_format2 = "/c format %c: /Y /X /FS:NTFS" ascii
@@ -800,6 +828,7 @@ rule IMPLANT_4_v5 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "d203f3c6-4e86-5632-ad5d-61763ee59bbe"
    strings:
       $GEN_HASH = {0F BE C9 C1 C0 07 33 C1}
    condition:
@@ -834,6 +863,7 @@ rule IMPLANT_4_v7 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "a0dda12a-22b6-53e6-9528-8c178ad871ad"
    strings:
       $sb1 = {C7 [1-5] 33 32 2E 64 C7 [1-5] 77 73 32 5F 66 C7 [1-5] 6C 6C}
       $sb2 = {C7 [1-5] 75 73 65 72 C7 [1-5] 33 32 2E 64 66 C7 [1-5] 6C 6C}
@@ -857,6 +887,7 @@ rule IMPLANT_4_v8 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "1e82d105-8dda-55c9-aec0-8f9f02c3a94e"
    strings:
       $f1 = {5E 81 EC 04 01 00 00 8B D4 68 04 01 00 00 52 6A 00 FF 57 1C 8B D4
          33 C9 03 D0 4A 41 3B C8 74 05 80 3A 5C 75 F5 42 81 EC 04 01 00 00 8B
@@ -886,6 +917,7 @@ rule IMPLANT_4_v9 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "a404212a-d9ef-54c1-bbf8-a213ec094f18"
    strings:
       $a = "wevtutil clear-log" ascii wide nocase
       $b = "vssadmin delete shadows" ascii wide nocase
@@ -907,6 +939,7 @@ rule IMPLANT_4_v10 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "75c266ca-a27f-5ffe-a438-c35bbacfa70c"
    strings:
       $ ={A1B05C72}
       $ ={EB3D0384}
@@ -939,6 +972,7 @@ rule IMPLANT_4_v11 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "e5fb0843-20f7-56a0-8eea-0db7cef7f610"
    strings:
       $ = "/c format %c: /Y /X /FS:NTFS"
       $ = ".exe.sys.drv.doc.docx.xls.xlsx.mdb.ppt.pptx.xml.jpg.jpeg.ini.inf.ttf" wide
@@ -959,6 +993,7 @@ rule IMPLANT_4_v12 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "be4d222f-009f-5dde-93da-376626a77263"
    strings:
       $CMP1 = {81 ?? 4D 5A 00 00 }
       $SUB1 = {81 ?? 00 10 00 00}
@@ -980,6 +1015,7 @@ rule IMPLANT_4_v13 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "e96a7d9f-1840-542f-9a9b-95e74377f234"
    strings:
       $XMLDOM1 = {81 BF 33 29 36 7B D2 11 B2 0E 00 C0 4F 98 3E 60}
       $XMLDOM2 = {90 BF 33 29 36 7B D2 11 B2 0E 00 C0 4F 98 3E 60}
@@ -1002,6 +1038,7 @@ rule IMPLANT_5_v1 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "dee08753-3465-5bf2-acd5-aa6cc80aba3c"
    strings:
       $hexstr = {2D 00 53 00 69 00 00 00 2D 00 53 00 70 00 00 00 2D 00 55 00
          70 00 00 00 2D 00 50 00 69 00 00 00 2D 00 50 00 70 00 00 00}
@@ -1020,6 +1057,7 @@ rule IMPLANT_5_v2 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "40f60306-41ee-5a18-84e2-cf479a6bc849"
    strings:
       $key0 = { 987AB999FE0924A2DF0A412B14E26093746FCDF9BA31DC05536892C33B116AD3 }
       $key1 = { 8B236C892D902B0C9A6D37AE4F9842C3070FBDC14099C6930158563C6AC00FF5 }
@@ -1160,6 +1198,7 @@ rule IMPLANT_5_v3 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "0763e314-85d0-5c16-b766-36298176e0ff"
    strings:
       $BYTES1 = { 0F AF C0 6? C0 07 00 00 00 2D 01 00 00 00 0F AF ?? 39 ?8 }
       $BYTES2 = { 0F AF C0 6? C0 07 48 0F AF ?? 39 ?8 }
@@ -1174,6 +1213,7 @@ rule IMPLANT_5_v4 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "db6df7ea-f119-5e9a-bcea-c65580418042"
    strings:
       $FBKEY1 = { 987AB999FE0924A2DF0A412B14E26093746FCDF9BA31DC05536892C33B116AD3 }
       $FBKEY2 = { 8B236C892D902B0C9A6D37AE4F9842C3070FBDC14099C6930158563C6AC00FF5 }
@@ -1192,6 +1232,7 @@ rule IMPLANT_6_v1
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "0554ec8e-f45d-5afc-8874-dc8adfac5cdf"
    strings:
       $STR1 = "dll.dll" wide ascii
       $STR2 = "Init1" wide ascii
@@ -1208,6 +1249,7 @@ rule IMPLANT_6_v2 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "59bfbef2-ff0e-59df-9d08-15001cec8ecf"
    strings:
       $obf_func = { 8B 45 F8 6A 07 03 C7 33 D2 89 45 E8 8D 47 01 5B 02 4D 0F F7 F3 6A 07 8A 04 32 33 D2 F6 E9 8A C8 8B C7 F7 F3 8A 44 3E FE 02 45 FC 02 0C 32 B2 03 F6 EA 8A D8 8D 47 FF 33 D2 5F F7 F7 02 5D 14 8B 45 E8 8B 7D F4 C0 E3 06 02 1C 32 32 CB 30 08 8B 4D 14 41 47 83 FF 09 89 4D 14 89 7D F4 72 A1 }
    condition:
@@ -1222,6 +1264,7 @@ rule IMPLANT_6_v3 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "db090bc5-a90f-5b66-8fcb-29b423dddbf7"
    strings:
       $deob_func = { 8D 46 01 02 D1 83 E0 07 8A 04 38 F6 EA 8B D6 83 E2 07 0A
          04 3A 33 D2 8A 54 37 FE 03 D3 03 D1 D3 EA 32 C2 8D 56 FF 83 E2 07 8A
@@ -1238,6 +1281,7 @@ rule IMPLANT_6_v4 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "27118ec8-3713-5670-88d2-3ac57c155c0d"
    strings:
       $ASM = {53 5? 5? [6-15] ff d? 8b ?? b? a0 86 01 00 [7-13] ff d? ?b
          [6-10] c0 [0-1] c3}
@@ -1253,6 +1297,7 @@ rule IMPLANT_6_v5 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "d035eaff-8c2a-53a2-b629-6448b2bcc9f6"
    strings:
       $STR1 = { 83 EC 18 8B 4C 24 24 B8 AB AA AA AA F7 E1 8B 44 24 20 53 55 8B
          EA 8D 14 08 B8 AB AA AA AA 89 54 24 1C F7 E2 56 8B F2 C1 ED 02 8B DD
@@ -1288,6 +1333,7 @@ rule IMPLANT_6_v6 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "89cc3764-d60c-5cbd-af32-a90d8b3400d7"
    strings:
       $Init1_fun = {68 10 27 00 00 FF 15 ?? ?? ?? ?? A1 ?? ?? ?? ?? 6A FF 50
          FF 15 ?? ?? ?? ?? 33 C0 C3}
@@ -1326,6 +1372,7 @@ rule IMPLANT_7_v1 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "ce83c157-af03-55cb-a2be-0b6543fedb5b"
    strings:
       $STR1 = { 8A 44 0A 03 32 C3 0F B6 C0 66 89 04 4E 41 3B CF 72 EE }
       $STR2 = { F3 0F 6F 04 08 66 0F EF C1 F3 0F 7F 04 11 83 C1 10 3B CF 72 EB }
@@ -1341,6 +1388,7 @@ rule IMPLANT_8_v1
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 65
+      uuid = "eeaa43c1-6004-5d64-bdc1-f84b3c68d741"
    strings:
       $DOTNET = "mscorlib" ascii
       $REF_URL = "https://www.google.com/url?sa=" wide
@@ -1387,6 +1435,7 @@ rule IMPLANT_9_v1 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "5460ff29-681b-5d11-a6ba-5f294e8577e6"
    strings:
       $STR1 = { 8B 03 8A 54 01 03 32 55 FF 41 88 54 39 FF 3B CE 72 EE }
       $STR2 = { 8B C8 83 E1 03 8A 54 19 08 8B 4D 08 32 54 01 04 40 88 54 38 FF
@@ -1423,6 +1472,7 @@ rule IMPLANT_10_v2 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "9c6d4eb9-98a5-5c6d-ba3a-0ce7524c5d2a"
    strings:
       $xor = { 34 ?? 66 33 C1 48 FF C1 }
       $nop = { 66 66 66 66 66 66 0f 1f 84 00 00 00 00 00}
@@ -1474,6 +1524,7 @@ rule Unidentified_Malware_Two {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
+      uuid = "848f2d1f-e352-51c1-ac5d-841bf309f2f2"
    strings:
       $my_string_one = "/zapoy/gate.php"
       $my_string_two = { E3 40 FE 45 FD 0F B6 45 FD 0F B6 14 38 88 55 FF 00 55

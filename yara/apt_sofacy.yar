@@ -9,6 +9,7 @@ rule Sofacy_Campaign_Mal_Feb18_cdnver {
       reference = "https://twitter.com/ClearskySec/status/960924755355369472"
       date = "2018-02-07"
       hash1 = "12e6642cf6413bdf5388bee663080fa299591b2ba023d069286f3be9647547c8"
+      uuid = "a5c72ddd-91b0-5410-9d81-38a138ec7efe"
    strings:
       $x1 = "cdnver.dll" fullword wide
       $x2 = { 25 73 0A 00 00 00 00 00 30 00 00 00 20 00 2D 00
@@ -33,6 +34,7 @@ rule Sofacy_Trojan_Loader_Feb18_1 {
       reference = "https://www.reverse.it/sample/e3399d4802f9e6d6d539e3ae57e7ea9a54610a7c4155a6541df8e94d67af086e?environmentId=100"
       date = "2018-03-01"
       hash1 = "335565711db93cd02d948f472c51598be4d62d60f70f25a20449c07eae36c8c5"
+      uuid = "358d7a77-0ff5-572e-9cd8-b2cebaace02f"
    strings:
       $x1 = "%appdata%\\nad.dll" fullword wide
       $s3 = "%appdata%\\nad.bat" fullword wide
@@ -57,6 +59,7 @@ rule APT_ATP28_Sofacy_Indicators_May19_1 {
       score = 60
       hash1 = "80548416ffb3d156d3ad332718ed322ef54b8e7b2cc77a7c5457af57f51d987a"
       hash2 = "b40909ac0b70b7bd82465dfc7761a6b4e0df55b894dd42290e3f72cb4280fa44"
+      uuid = "ca768b60-7094-537a-b848-28bd42555287"
    strings:
       $x1 = "c:\\Users\\user\\Desktop\\openssl-1.0.1e_m\\/ssl/cert.pem" ascii
       $x2 = "C:\\Users\\User\\Desktop\\Downloader_Poco" ascii

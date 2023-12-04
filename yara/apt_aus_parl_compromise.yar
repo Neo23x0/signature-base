@@ -15,6 +15,7 @@ rule APT_WebShell_Tiny_1 {
       author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/cyb3rops/status/1097423665472376832"
       date = "2019-02-18"
+      uuid = "e65a8920-0684-5aae-a2b8-079c2beae08a"
    strings:
       $x1 = "eval(" ascii wide
    condition:
@@ -28,6 +29,7 @@ rule APT_WebShell_AUS_Tiny_2 {
       reference = "https://twitter.com/cyb3rops/status/1097423665472376832"
       date = "2019-02-18"
       hash1 = "0d6209d86f77a0a69451b0f27b476580c14e0cda15fa6a5003aab57a93e7e5a5"
+      uuid = "4746d4ce-628a-59b0-9032-7e0759d96ad3"
    strings:
       $x1 = "Request.Item[System.Text.Encoding.UTF8.GetString(Convert.FromBase64String(\"[password]\"))];" ascii
       $x2 = "eval(arguments,System.Text.Encoding.UTF8.GetString(Convert.FromBase64String(\"" ascii
@@ -42,6 +44,7 @@ rule APT_WebShell_AUS_JScript_3 {
       reference = "https://twitter.com/cyb3rops/status/1097423665472376832"
       date = "2019-02-18"
       hash1 = "7ac6f973f7fccf8c3d58d766dec4ab7eb6867a487aa71bc11d5f05da9322582d"
+      uuid = "ff7e780b-ccf9-53b6-b741-f04a8cbaf580"
    strings:
       $s1 = "<%@ Page Language=\"Jscript\" validateRequest=\"false\"%><%try{eval(System.Text.Encoding.UTF8.GetString(Convert.FromBase64String" ascii
       $s2 = ".Item[\"[password]\"])),\"unsafe\");}" ascii
@@ -57,6 +60,7 @@ rule APT_WebShell_AUS_4 {
       reference = "https://twitter.com/cyb3rops/status/1097423665472376832"
       date = "2019-02-18"
       hash1 = "83321c02339bb51735fbcd9a80c056bd3b89655f3dc41e5fef07ca46af09bb71"
+      uuid = "bb5b10d1-3528-5361-92fc-8440c65dcda4"
    strings:
       $s1 = "wProxy.Credentials = new System.Net.NetworkCredential(pusr, ppwd);" fullword ascii
       $s2 = "{return System.Text.Encoding.UTF8.GetString(Convert.FromBase64String(" ascii
@@ -73,6 +77,7 @@ rule APT_Script_AUS_4 {
       reference = "https://twitter.com/cyb3rops/status/1097423665472376832"
       date = "2019-02-18"
       hash1 = "fdf15f388a511a63fbad223e6edb259abdd4009ec81fcc87ce84f0f2024c8057"
+      uuid = "5cbf2476-5ce8-540d-b87b-e400daf49b43"
    strings:
       $x1 = "myMutex = CreateMutex(0, 1, \"teX23stNew\")" fullword ascii
       $x2 = "mmpath = Environ(appdataPath) & \"\\\" & \"Microsoft\" & \"\\\" & \"mm.accdb\"" fullword ascii
@@ -91,6 +96,7 @@ rule APT_WebShell_AUS_5 {
       reference = "https://twitter.com/cyb3rops/status/1097423665472376832"
       date = "2019-02-18"
       hash1 = "54a17fb257db2d09d61af510753fd5aa00537638a81d0a8762a5645b4ef977e4"
+      uuid = "59b3f6aa-2d3b-54b4-b543-57bd9d981e87"
    strings:
       $a1 = "function DEC(d){return System.Text.Encoding.UTF8.GetString(Convert.FromBase64String(d));}" fullword ascii
       $a2 = "function ENC(d){return Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(d));}" fullword ascii
@@ -112,6 +118,7 @@ rule HKTL_LazyCat_LogEraser {
       date = "2019-02-18"
       hash1 = "1c113dce265e4d744245a7c55dadc80199ae972a9e0ecbd0c5ced57067cf755b"
       hash2 = "510375f8142b3651df67d42c3eff8d2d880987c0e057fc75a5583f36de34bf0e"
+      uuid = "a3d74657-a389-5482-ab26-966e790afd50"
    strings:
       $x1 = "LazyCat.dll" ascii wide fullword
       $x2 = ".local_privilege_escalation.rotten_potato" ascii wide
@@ -133,6 +140,7 @@ rule HKTL_PowerKatz_Feb19_1 {
       author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/cyb3rops/status/1097423665472376832"
       date = "2019-02-18"
+      uuid = "294d6f6c-dbc8-5431-87a0-64abe582c4ea"
    strings:
       $x1 = "Powerkatz32" ascii wide fullword
       $x2 = "Powerkatz64" ascii wide
@@ -149,6 +157,7 @@ rule HKTL_Unknown_Feb19_1 {
       author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/cyb3rops/status/1097423665472376832"
       date = "2019-02-18"
+      uuid = "bdcadc4b-8881-5dc7-b203-4e79cbc850ed"
    strings:
       $x1 = "not a valid timeout format!" ascii wide fullword
       $x2 = "host can not be empty!" ascii wide fullword

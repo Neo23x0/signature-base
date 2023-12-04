@@ -9,6 +9,7 @@ rule ATM_Malware_DispenserXFS {
       date = "2019/02/27"
       modified = "2023-01-06"
       score = 80
+      uuid = "7c06102c-93d3-52f4-8c25-430f6f7a601f"
    strings:
       $xc1 = { 68 FF FF 00 00 68 60 EA 00 00 6A 10 }
       $s1 = "\\dispenserXFS.pdb" ascii

@@ -18,6 +18,7 @@ rule TSCookie_RAT {
       reference = "http://blog.jpcert.or.jp/2018/03/malware-tscooki-7aa0.html"
       date = "2018-03-06"
       hash1 = "2bd13d63797864a70b775bd1994016f5052dc8fd1fd83ce1c13234b5d304330d"
+      uuid = "a2b6c598-4498-5c0a-9257-b0bf6cd28de9"
    strings:
       $x1 = "[-] DecryptPassword_Outlook failed(err=%d)" fullword ascii
       $x2 = "----------------------- Firefox Passwords ------------------" fullword ascii

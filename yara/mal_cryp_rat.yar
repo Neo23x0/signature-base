@@ -8,6 +8,7 @@ rule MAL_CrypRAT_Jan19_1 {
       reference = "Internal Research"
       score = 90
       date = "2019-01-07"
+      uuid = "f3063a16-8813-5d6c-9807-6a0725907fb5"
    strings:
       $x1 = "Cryp_RAT" fullword wide
    condition:

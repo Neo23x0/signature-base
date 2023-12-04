@@ -16,6 +16,7 @@ rule MyWScript_CompiledScript {
       date = "2017-07-27"
       score = 65
       hash1 = "515f5188ba6d039b8c38f60d3d868fa9c9726e144f593066490c7c97bf5090c8"
+      uuid = "a0480a8a-5a7e-5829-851b-7301cfc9da60"
    strings:
       $x1 = "C:\\Projets\\vbsedit_source\\script2exe\\Release\\mywscript.pdb" fullword ascii
       $s1 = "mywscript2" fullword wide

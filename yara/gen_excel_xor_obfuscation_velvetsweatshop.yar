@@ -13,6 +13,7 @@ rule gen_excel_xor_obfuscation_velvetsweatshop {
         hash2 = "14a32b8a504db3775e793be59d7bd5b584ea732c3ca060b2398137efbfd18d5a"
         hash3 = "dd3e89e7bde993f6f1b280f2bf933a5cc2797f4e8736aed4010aaf46e9854f23"
         hash4 = "4e40253b382b20e273edf82362f1c89e916f7ab8d3c518818a76cb6127d4e7c2"
+        uuid = "8a16105c-4f43-5a35-941c-6ee9593b039c"
     strings:
         $olemarker = { D0 CF 11 E0 A1 B1 1A E1 00 00 00 }
         $FilePass_XOR_Obfuscation_VelvetSweatshop = { 2F 00 06 00 00 00 59 B3 0A 9A }

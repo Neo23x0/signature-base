@@ -10,6 +10,7 @@ rule SNOWGLOBE_Babar_Malware {
 		date = "2015/02/18"
 		hash = "27a0a98053f3eed82a51cdefbdfec7bb948e1f36"
 		score = 80
+		uuid = "53a61065-a3b3-563e-8ecc-513d8da68085"
 	strings:
 		$z0 = "admin\\Desktop\\Babar64\\Babar64\\obj\\DllWrapper" ascii fullword
 		$z1 = "User-Agent: Mozilla/4.0 (compatible; MSI 6.0;" ascii fullword

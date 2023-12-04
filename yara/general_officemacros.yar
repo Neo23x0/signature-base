@@ -13,6 +13,7 @@ rule Office_AutoOpen_Macro {
 		hash5 = "7c06cab49b9332962625b16f15708345"
 		hash6 = "bfc30332b7b91572bfe712b656ea8a0c"
 		hash7 = "25285b8fe2c41bd54079c92c1b761381"
+		uuid = "9774d96c-4d15-5a54-8fe2-e06372d9c4ec"
 	strings:
 		$s1 = "AutoOpen" ascii fullword
 		$s2 = "Macros" wide fullword
@@ -36,6 +37,7 @@ rule Office_as_MHTML {
 		hash2 = "1ff3573fe995f35e70597c75d163bdd9bed86e2238867b328ccca2a5906c4eef"
 		hash3 = "d44a76120a505a9655f0224c6660932120ef2b72fee4642bab62ede136499590"
 		hash4 = "5b8019d339907ab948a413d2be4bdb3e5fdabb320f5edc726dc60b4c70e74c84"
+		uuid = "21c0c3da-7295-54ad-9947-557a3180af3a"
 	strings:
 		$s1 = "Content-Transfer-Encoding: base64" ascii fullword
 		$s2 = "Content-Type: application/x-mso" ascii fullword
@@ -54,6 +56,7 @@ rule Docm_in_PDF {
       author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-05-15"
+      uuid = "08dfdfda-8ea5-530d-b89b-560415855080"
    strings:
       $a1 = /<<\/Names\[\([\w]{1,12}.docm\)/ ascii
       $a2 = "OpenAction" ascii fullword

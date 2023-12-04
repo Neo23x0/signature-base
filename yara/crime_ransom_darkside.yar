@@ -6,6 +6,7 @@ rule MAL_RANSOM_Darkside_May21_1 {
       reference = "https://app.any.run/tasks/020c1740-717a-4191-8917-5819aa25f385/"
       date = "2021-05-10"
       hash1 = "ec368752c2cf3b23efbfa5705f9e582fc9d6766435a7b8eea8ef045082c6fbce"
+      uuid = "e5592065-591e-597b-bebb-f20bc306fe52"
    strings:
       $op1 = { 85 c9 75 ed ff 75 10 ff b5 d8 fe ff ff ff b5 dc fe ff ff e8 7d fc ff ff ff 8d cc fe ff ff 8b 8d cc fe ff ff }
       $op2 = { 66 0f 6f 06 66 0f 7f 07 83 c6 10 83 c7 10 49 85 c9 75 ed 5f }
@@ -28,6 +29,7 @@ rule MAL_Ransomware_Win_DARKSIDE_v1_1 {
         description = "Detection for early versions of DARKSIDE ransomware samples based on the encryption mode configuration values."
         hash = "1a700f845849e573ab3148daef1a3b0b"
         reference = "https://www.fireeye.com/blog/threat-research/2021/05/shining-a-light-on-darkside-ransomware-operations.html"
+        uuid = "322a3de5-a7e5-52b9-8648-6019954e92d7"
     strings:
         $consts = { 80 3D [4] 01 [1-10] 03 00 00 00 [1-10] 03 00 00 00 [1-10] 00 00 04 00 [1-10] 00 00 00 00 [1-30] 80 3D [4] 02 [1-10] 03 00 00 00 [1-10] 03 00 00 00 [1-10] FF FF FF FF [1-10] FF FF FF FF [1-30] 03 00 00 00 [1-10] 03 00 00 00 }
     condition:
@@ -40,6 +42,7 @@ rule MAL_Dropper_Win_Darkside_1 {
         date_created = "2021-05-11"
         description = "Detection for on the binary that was used as the dropper leading to DARKSIDE."
         reference = "https://www.fireeye.com/blog/threat-research/2021/05/shining-a-light-on-darkside-ransomware-operations.html"
+        uuid = "910a581c-25a4-5d5e-acdc-6d87cbedd3cf"
     strings:
         $CommonDLLs1 = "KERNEL32.dll" fullword
         $CommonDLLs2 = "USER32.dll" fullword
@@ -59,6 +62,7 @@ rule MAL_Backdoor_Win_C3_1 {
         description = "Detection to identify the Custom Command and Control (C3) binaries."
         md5 = "7cdac4b82a7573ae825e5edb48f80be5"
         reference = "https://www.fireeye.com/blog/threat-research/2021/05/shining-a-light-on-darkside-ransomware-operations.html"
+        uuid = "60eb022e-6f4e-5c7d-9ddf-b458a593071e"
     strings:
         $dropboxAPI = "Dropbox-API-Arg"
         $knownDLLs1 = "WINHTTP.dll" fullword

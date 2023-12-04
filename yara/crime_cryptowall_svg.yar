@@ -11,6 +11,7 @@ rule SVG_LoadURL {
 		hash3 = "7e2be5cc785ef7711282cea8980b9fee"
 		hash4 = "4e2c6f6b3907ec882596024e55c2b58b"
 		score = 50
+		uuid = "c3d4c95f-ef8b-52ff-9cf9-d66d9b99a490"
 	strings:
 		$s1 = "</svg>" nocase
 		$s2 = "<script>" nocase

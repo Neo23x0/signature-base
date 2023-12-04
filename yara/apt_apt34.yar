@@ -17,6 +17,7 @@ rule APT34_Malware_HTA {
       reference = "https://www.fireeye.com/blog/threat-research/2017/12/targeted-attack-in-middle-east-by-apt34.html"
       date = "2017-12-07"
       hash1 = "f6fa94cc8efea0dbd7d4d4ca4cf85ac6da97ee5cf0c59d16a6aafccd2b9d8b9a"
+      uuid = "683faded-7e4b-5b2f-9f85-300db96ed9d1"
    strings:
       $x1 = "WshShell.run \"cmd.exe /C C:\\ProgramData\\" ascii
       $x2 = ".bat&ping 127.0.0.1 -n 6 > nul&wscript  /b" ascii
@@ -38,6 +39,7 @@ rule APT34_Malware_Exeruner {
       reference = "https://www.fireeye.com/blog/threat-research/2017/12/targeted-attack-in-middle-east-by-apt34.html"
       date = "2017-12-07"
       hash1 = "c75c85acf0e0092d688a605778425ba4cb2a57878925eee3dc0f4dd8d636a27a"
+      uuid = "8ddfa59d-9b8a-5cb6-a992-6498ac9be75d"
    strings:
       $x1 = "\\obj\\Debug\\exeruner.pdb" ascii
       $x2 = "\"wscript.shell`\")`nShell0.run" wide

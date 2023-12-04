@@ -48,6 +48,7 @@ rule Embedded_EXE_Cloaking {
 //       date = "2015/03/02"
 //       modified = "2022-09-16"
 //       score = 40
+      uuid = "728908a6-74cf-5bab-a23f-cd03ed209430"
 //    strings:
 //       $fp1 = "<!DOCTYPE" ascii
 //       $fp2 = "Sophos Encrypted File Format" ascii
@@ -89,6 +90,7 @@ rule SUSP_Known_Type_Cloaked_as_JPG {
       reference = "Internal Research - replacement for Cloaked_as_JPG rule"
       date = "2022-09-16"
       score = 60
+      uuid = "728908a6-74cf-5bab-a23f-cd03ed209430"
    condition:
       ( extension == ".jpg" or extension == ".jpeg" ) and ( 
          filetype == "EXE" or
@@ -126,6 +128,7 @@ rule Suspicious_Size_explorer_exe {
       date = "2015-12-21"
       modified = "2022-04-27"
       noarchivescan = 1
+      uuid = "408bdb95-3b15-5f4e-a948-949ea4ce0477"
    strings:
       $fp = "Wine placeholder DLL"
    condition:
@@ -146,6 +149,7 @@ rule Suspicious_Size_chrome_exe {
       date = "2015-12-21"
       modified = "2022-09-15"
       noarchivescan = 1
+      uuid = "f164394a-5c02-5056-aceb-044ee118578d"
     strings:
       $fp1 = "HP Sure Click Chromium Launcher" wide
       $fp2 = "BrChromiumLauncher.exe" wide fullword
@@ -165,6 +169,7 @@ rule Suspicious_Size_csrss_exe {
         date = "2015-12-21"
         modified = "2022-01-28"
         noarchivescan = 1
+        uuid = "5a247b51-6c91-5753-95b3-4a4c2b2286eb"
     condition:
         uint16(0) == 0x5a4d
         and filename == "csrss.exe"
@@ -179,6 +184,7 @@ rule Suspicious_Size_iexplore_exe {
         score = 60
         date = "2015-12-21"
         noarchivescan = 1
+        uuid = "d097a599-0fad-574f-8281-46c910e8e54d"
     condition:
         uint16(0) == 0x5a4d
         and filename == "iexplore.exe"
@@ -194,6 +200,7 @@ rule Suspicious_Size_firefox_exe {
         score = 60
         date = "2015-12-21"
         noarchivescan = 1
+        uuid = "73c4b838-9277-5756-a35d-4a644be5ad5d"
     condition:
         uint16(0) == 0x5a4d
         and filename == "firefox.exe"
@@ -208,6 +215,7 @@ rule Suspicious_Size_java_exe {
         score = 60
         date = "2015-12-21"
         noarchivescan = 1
+        uuid = "b6dc297b-8388-5e39-ba77-c027cdea7afa"
     condition:
         uint16(0) == 0x5a4d
         and filename == "java.exe"
@@ -222,6 +230,7 @@ rule Suspicious_Size_lsass_exe {
         score = 60
         date = "2015-12-21"
         noarchivescan = 1
+        uuid = "005661c7-7576-5c13-9534-b49c12b2faad"
     condition:
         uint16(0) == 0x5a4d
         and filename == "lsass.exe"
@@ -236,6 +245,7 @@ rule Suspicious_Size_svchost_exe {
         score = 60
         date = "2015-12-21"
         noarchivescan = 1
+        uuid = "31a8d00e-ebfc-5001-9c58-d3a2580f16b3"
     condition:
         uint16(0) == 0x5a4d
         and filename == "svchost.exe"
@@ -250,6 +260,7 @@ rule Suspicious_Size_winlogon_exe {
         score = 60
         date = "2015-12-21"
         noarchivescan = 1
+        uuid = "8665e8d0-3b5f-5227-8879-cdd614123439"
     condition:
         uint16(0) == 0x5a4d
         and filename == "winlogon.exe"
@@ -265,6 +276,7 @@ rule Suspicious_Size_igfxhk_exe {
         date = "2015-12-21"
         modified = "2022-03-08"
         noarchivescan = 1
+        uuid = "18cc167a-3e65-567f-adcf-d2d311520c1d"
     condition:
         uint16(0) == 0x5a4d
         and filename == "igfxhk.exe"
@@ -279,6 +291,7 @@ rule Suspicious_Size_servicehost_dll {
         score = 60
         date = "2015-12-23"
         noarchivescan = 1
+        uuid = "ac71393c-a475-59e0-b22a-d5ee3d25084b"
     condition:
         uint16(0) == 0x5a4d
         and filename == "servicehost.dll"
@@ -293,6 +306,7 @@ rule Suspicious_Size_rundll32_exe {
         score = 60
         date = "2015-12-23"
         noarchivescan = 1
+        uuid = "5b9feae7-17d8-56e4-870a-ef865f2d09bf"
     condition:
         uint16(0) == 0x5a4d
         and filename == "rundll32.exe"
@@ -307,6 +321,7 @@ rule Suspicious_Size_taskhost_exe {
         score = 60
         date = "2015-12-23"
         noarchivescan = 1
+        uuid = "71b6c853-f490-5d5a-b481-909f6f3a8798"
     condition:
         uint16(0) == 0x5a4d
         and filename == "taskhost.exe"
@@ -321,6 +336,7 @@ rule Suspicious_Size_spoolsv_exe {
         score = 60
         date = "2015-12-23"
         noarchivescan = 1
+        uuid = "14bb3463-b99f-57e1-8cff-fe9a34771093"
     condition:
         uint16(0) == 0x5a4d
         and filename == "spoolsv.exe"
@@ -335,6 +351,7 @@ rule Suspicious_Size_smss_exe {
         score = 60
         date = "2015-12-23"
         noarchivescan = 1
+        uuid = "7bdc8953-9240-5d22-b2a6-fe95fbc101c2"
     condition:
         uint16(0) == 0x5a4d
         and filename == "smss.exe"
@@ -349,6 +366,7 @@ rule Suspicious_Size_wininit_exe {
         score = 60
         date = "2015-12-23"
         noarchivescan = 1
+        uuid = "7b58f497-f214-5bf3-8a5c-8edb52749d09"
     condition:
         uint16(0) == 0x5a4d
         and filename == "wininit.exe"
@@ -364,6 +382,7 @@ rule Suspicious_AutoIt_by_Microsoft {
       date = "2017-12-14"
       score = 60
       hash1 = "c0cbcc598d4e8b501aa0bd92115b4c68ccda0993ca0c6ce19edd2e04416b6213"
+      uuid = "69b1c93d-ab12-5fdc-b6eb-fb135796d3a9"
    strings:
       $s1 = "Microsoft Corporation. All rights reserved" fullword wide
       $s2 = "AutoIt" fullword ascii
@@ -381,6 +400,7 @@ rule SUSP_Size_of_ASUS_TuningTool {
       score = 60
       noarchivescan = 1
       hash1 = "d4e97a18be820a1a3af639c9bca21c5f85a3f49a37275b37fd012faeffcb7c4a"
+      uuid = "d22a1bf9-55d6-5cb4-9537-ad13b23af4d1"
    strings:
       $s1 = "\\Release\\ASGT.pdb" ascii
    condition:
@@ -395,6 +415,7 @@ rule SUSP_PiratedOffice_2007 {
       date = "2018-12-04"
       score = 40
       hash1 = "210448e58a50da22c0031f016ed1554856ed8abe79ea07193dc8f5599343f633"
+      uuid = "b36e9a59-7617-503b-968d-5b6b72b227ea"
    strings:
       $s7 = "<Company>Grizli777</Company>" ascii
    condition:
@@ -407,6 +428,7 @@ rule SUSP_Scheduled_Task_BigSize {
       author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2018-12-06"
+      uuid = "61b07b30-1058-5a53-99e7-2c48ec9d23b5"
    strings:
       $a0 = "<Task version=" ascii wide
       $a1 = "xmlns=\"http://schemas.microsoft.com/windows/" ascii wide
@@ -430,6 +452,7 @@ rule SUSP_Putty_Unnormal_Size {
       hash2 = "ce4c1b718b54973291aefdd63d1cca4e4d8d4f5353a2be7f139a290206d0c170"
       hash3 = "adb72ea4eab7b2efc2da6e72256b5a3bb388e9cdd4da4d3ff42a9fec080aa96f"
       hash4 = "1c0bd6660fa43fa90bd88b56cdd4a4c2ffb4ef9d04e8893109407aa7039277db"
+      uuid = "576b118c-d4be-5ce2-994a-ce3f943dda88"
    strings:
       $s1 = "SSH, Telnet and Rlogin client" fullword wide
 
@@ -477,6 +500,7 @@ rule SUSP_RTF_Header_Anomaly {
       date = "2019-01-20"
       modified = "2022-09-15"
       score = 50
+      uuid = "fb362640-9a45-5ee5-8749-3980e0549932"
    condition:
       uint32(0) == 0x74725c7b and /* {\rt */
       not uint8(4) == 0x66 /* not f */
@@ -488,6 +512,7 @@ rule WEBSHELL_ASPX_ProxyShell_Aug21_1 {
       author = "Florian Roth (Nextron Systems)"
       reference = "https://www.bleepingcomputer.com/news/microsoft/microsoft-exchange-servers-are-getting-hacked-via-proxyshell-exploits/"
       date = "2021-08-13"
+      uuid = "8f01cbda-b1cf-5556-9f6a-e709df6dadb2"
    condition:
       uint32(0) == 0x4e444221 /* PST header: !BDN */
       and extension == ".aspx"

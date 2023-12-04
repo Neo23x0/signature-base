@@ -18,6 +18,7 @@ rule APT_Tick_Sysmon_Loader_Jun18 {
       reference = "https://researchcenter.paloaltonetworks.com/2018/06/unit42-tick-group-weaponized-secure-usb-drives-target-air-gapped-critical-systems/"
       date = "2018-06-23"
       hash1 = "31aea8630d5d2fcbb37a8e72fe4e096d0f2d8f05e03234645c69d7e8b59bb0e8"
+      uuid = "eae013c3-4774-5342-bd1a-5f2825612747"
    strings:
       $x1 = "SysMonitor_3A2DCB47" fullword ascii
 
@@ -44,6 +45,7 @@ rule APT_Tick_HomamDownloader_Jun18 {
       reference = "https://researchcenter.paloaltonetworks.com/2018/06/unit42-tick-group-weaponized-secure-usb-drives-target-air-gapped-critical-systems/"
       date = "2018-06-23"
       hash1 = "f817c9826089b49d251b8a09a0e9bf9b4b468c6e2586af60e50afe48602f0bec"
+      uuid = "8ec52cb7-41a4-50a9-9cb1-23bee354680f"
    strings:
       $s1 = "cmd /c hostname >>" fullword ascii
       $s2 = "Mstray.exe" fullword ascii

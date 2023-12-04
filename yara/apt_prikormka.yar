@@ -32,6 +32,7 @@
 
 private rule PrikormkaDropper
 {
+        uuid = "6073aa34-d385-5ae8-b97d-9b3d61015aae"
     strings:
         $kd1 = "KDSTORAGE" wide
         $kd2 = "KDSTORAGE_64" wide
@@ -50,6 +51,7 @@ private rule PrikormkaDropper
 
 private rule PrikormkaModule
 {
+        uuid = "6073aa34-d385-5ae8-b97d-9b3d61015aae"
     strings:
         // binary
         $str1 = {6D 70 2E 64 6C 6C 00 53 74 61 72 74 69 6E 67 00}
@@ -107,6 +109,7 @@ private rule PrikormkaModule
 
 private rule PrikormkaEarlyVersion
 {
+        uuid = "6073aa34-d385-5ae8-b97d-9b3d61015aae"
     strings:
         $str1 = "IntelRestore" ascii fullword
         $str2 = "Resent" wide fullword
@@ -130,6 +133,7 @@ rule Prikormka
         Source = "https://github.com/eset/malware-ioc/"
         Contact = "threatintel@eset.com"
         License = "BSD 2-Clause"
+        uuid = "6073aa34-d385-5ae8-b97d-9b3d61015aae"
     condition:
         PrikormkaDropper or PrikormkaModule or PrikormkaEarlyVersion
 }

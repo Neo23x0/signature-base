@@ -20,6 +20,7 @@ rule CrimsonRAT_Mar18_1 {
       hash3 = "be4264973de9886caedae1cb707586588d0da85ac7a2ad277db4258033ea12a8"
       hash4 = "acf2e8013b6fafcf436d5a05049896504ffa2e982bca05155d19981d1931c611"
       hash5 = "ff52b4a64ed7caeab00350e493968dbdb159aeb545fcba67d83ab9b158464de4"
+      uuid = "af21876c-f99d-5307-abba-02c57ee93df0"
    strings:
       $x1 = "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run|" wide
       $x2 = "\\Release\\RTLBot.pdb" ascii

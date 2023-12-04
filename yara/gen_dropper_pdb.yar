@@ -6,6 +6,7 @@ rule Generic_Dropper  {
       author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/JAHZVL"
       date = "2018-03-03"
+      uuid = "60ce6a5c-2e12-515b-b8cb-8c87500cb37b"
    strings:
       $s1 = "\\Release\\Dropper.pdb"
       $s2 = "\\Release\\dropper.pdb"

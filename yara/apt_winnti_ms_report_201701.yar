@@ -15,6 +15,7 @@ rule Winnti_fonfig {
       reference = "https://goo.gl/VbvJtL"
       date = "2017-01-25"
       hash1 = "2c9882854a60c624ecf6b62b6c7cc7ed04cf4a29814aa5ed1f1a336854697641"
+      uuid = "ca3c186c-0286-5b9b-9585-7680336c8c3d"
    strings:
       $s1 = "mciqtz.exe" fullword wide
       $s2 = "knat9y7m" fullword ascii
@@ -30,6 +31,7 @@ rule Winnti_NlaifSvc {
       reference = "https://goo.gl/VbvJtL"
       date = "2017-01-25"
       hash1 = "964f9bfd52b5a93179b90d21705cd0c31461f54d51c56d558806fe0efff264e5"
+      uuid = "d2bfcad4-9762-5f2a-88cc-e8cdc648e710"
    strings:
       $x1 = "cracked by ximo" ascii
 

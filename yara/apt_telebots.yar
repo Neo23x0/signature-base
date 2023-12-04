@@ -15,6 +15,7 @@ rule TeleBots_IntercepterNG {
       reference = "https://goo.gl/4if3HG"
       date = "2016-12-14"
       hash1 = "5f9fef7974d37922ac91365588fbe7b544e13abbbde7c262fe30bade7026e118"
+      uuid = "f4d48eb6-8235-534d-a32f-7f2711b96e9d"
    strings:
       $s1 = "Usage: %s iface_num\\dump [mode] [w] [-gw] [-t1 ip]" fullword ascii
       $s2 = "Target%d found: %s - [%.2X-%.2X-%.2X-%.2X-%.2X-%.2X]" fullword ascii
@@ -36,6 +37,7 @@ rule TeleBots_KillDisk_1 {
       reference = "https://goo.gl/4if3HG"
       date = "2016-12-14"
       hash1 = "8246f709efa922a485e1ca32d8b0d10dc752618e8b3fce4d3dd58d10e4a6a16d"
+      uuid = "111fc6bc-b790-51b9-81b7-a4716bb0aee9"
    strings:
       $s1 = "Plug-And-Play Support Service" fullword wide
       $s2 = " /c \"echo Y|" fullword wide
@@ -56,6 +58,7 @@ rule TeleBots_KillDisk_2 {
       reference = "https://goo.gl/4if3HG"
       date = "2016-12-14"
       hash1 = "26173c9ec8fd1c4f9f18f89683b23267f6f9d116196ed15655e9cb453af2890e"
+      uuid = "7797187f-c94b-5323-ae43-2dc001f0b481"
    strings:
       $s1 = "Plug-And-Play Support Service" fullword wide
       $s2 = " /c \"echo Y|" fullword wide
@@ -72,6 +75,7 @@ rule TeleBots_CredRaptor_Password_Stealer {
       date = "2016-12-14"
       modified = "2023-01-06"
       hash1 = "50b990f6555055a265fde98324759dbc74619d6a7c49b9fd786775299bf77d26"
+      uuid = "f594a946-13b4-5179-9029-a0730634d55f"
    strings:
       $s1 = "C:\\Documents and Settings\\Administrator\\Desktop\\GetPAI\\Out\\IE.pdb" fullword ascii
       $s2 = "SELECT encryptedUsername, encryptedPassword, hostname,httpRealm FROM moz_logins" fullword ascii
@@ -91,6 +95,7 @@ rule TeleBots_VBS_Backdoor_1 {
       reference = "https://goo.gl/4if3HG"
       date = "2016-12-14"
       hash1 = "eb31a918ccc1643d069cf08b7958e2760e8551ba3b88ea9e5d496e07437273b2"
+      uuid = "2b711f66-8ec5-5b9a-a762-7e6668c821c9"
    strings:
       $s1 = "cmd = \"cmd.exe /c \" + arg + \" >\" + outfile +\" 2>&1\"" fullword ascii
       $s2 = "GetTemp = \"c:\\WINDOWS\\addins\"" fullword ascii
@@ -108,6 +113,7 @@ rule TeleBots_VBS_Backdoor_2 {
       reference = "https://goo.gl/4if3HG"
       date = "2016-12-14"
       hash1 = "1b2a5922b58c8060844b43e14dfa5b0c8b119f281f54a46f0f1c34accde71ddb"
+      uuid = "151849af-f1d0-529c-94f2-287312f6515e"
    strings:
       $s1 = "cmd = \"cmd.exe /c \" + arg + \" \" + arg2" fullword ascii
       $s2 = "Dim WMI:  Set WMI = GetObject(\"winmgmts:\\\\.\\root\\cimv2\")" fullword ascii
@@ -124,6 +130,7 @@ rule TeleBots_Win64_Spy_KeyLogger_G {
       reference = "https://goo.gl/4if3HG"
       date = "2016-12-14"
       hash1 = "e3f134ae88f05463c4707a80f956a689fba7066bb5357f6d45cba312ad0db68e"
+      uuid = "fd16a198-1b28-532b-a1ba-70680469ec51"
    strings:
       $s1 = "C:\\WRK\\GHook\\gHook\\x64\\Debug\\gHookx64.pdb" fullword ascii
       $s2 = "Install hooks error!" fullword wide
