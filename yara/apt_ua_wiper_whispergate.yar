@@ -7,6 +7,7 @@ rule APT_HKTL_Wiper_WhisperGate_Jan22_1 {
       date = "2022-01-16"
       score = 85
       hash1 = "a196c6b8ffcb97ffb276d04f354696e2391311db3841ae16c8c9f56f36a38e92"
+      uuid = "f04b619e-1df2-5c51-9cab-4a0fffd1c042"
    strings:
       /* AAAAA\x00Your hard drive has been corrupted. */
       $xc1 = { 41 41 41 41 41 00 59 6F 75 72 20 68 61 72 64 20
@@ -29,6 +30,7 @@ rule APT_HKTL_Wiper_WhisperGate_Jan22_2 {
       date = "2022-01-16"
       score = 90
       hash1 = "dcbbae5a1c61dbbbb7dcd6dc5dd1eb1169f5329958d38b58c3fd9384081c9b78"
+      uuid = "822e5af5-9c51-5be3-94f1-7e0a714743e6"
    strings:
       /* powershell  -enc UwB0AGEAcgB0AC */
       $sc1 = { 70 00 6F 00 77 00 65 00 72 00 73 00 68 00 65 00
@@ -61,6 +63,7 @@ rule APT_HKTL_Wiper_WhisperGate_Stage3_Jan22 {
       reference = "https://twitter.com/juanandres_gs/status/1482827018404257792"
       date = "2022-01-16"
       hash1 = "9ef7dbd3da51332a78eff19146d21c82957821e464e8133e9594a07d716d892d"
+      uuid = "d5d562cd-03ef-5450-8044-3f538cea32d0"
    strings:
       $xc1 = { 65 31 63 70 00 31 79 72 61 72 62 69 4c 73 73 61 6c 43 00 6e 69 61 4d }
 
@@ -77,6 +80,7 @@ rule MAL_OBFUSC_Unknown_Jan22_1 {
       reference = "https://twitter.com/juanandres_gs/status/1482827018404257792"
       date = "2022-01-16"
       hash1 = "9ef7dbd3da51332a78eff19146d21c82957821e464e8133e9594a07d716d892d"
+      uuid = "647c0092-b03d-5627-8568-ddaa982c73a1"
    strings:
       $xc1 = { 37 00 63 00 38 00 63 00 62 00 35 00 35 00 39 00
                38 00 65 00 37 00 32 00 34 00 64 00 33 00 34 00
@@ -104,6 +108,7 @@ rule MAL_Unknown_Discord_Characteristics_Jan22_1 {
       date = "2022-01-16"
       score = 75
       hash1 = "dcbbae5a1c61dbbbb7dcd6dc5dd1eb1169f5329958d38b58c3fd9384081c9b78"
+      uuid = "23ee5319-6a72-517b-8ea0-55063b6b862c"
    strings:
       $x1 = "xownxloxadDxatxxax" wide
       

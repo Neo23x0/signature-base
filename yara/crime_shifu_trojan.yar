@@ -14,6 +14,7 @@ rule Shifu_Banking_Trojan {
 		date = "2015-09-01"
 		hash1 = "4ff1ebea2096f318a2252ebe1726bcf3bbc295da9204b6c720b5bbf14de14bb2"
 		hash2 = "4881c7d89c2b5e934d4741a653fbdaf87cc5e7571b68c723504069d519d8a737"
+		uuid = "e86a98b1-a5c3-57b6-9449-dc36c04cebf3"
 	strings:
 		$x1 = "c:\\oil\\feet\\Seven\\Send\\Gather\\Dividerail.pdb" fullword ascii
 
@@ -47,6 +48,7 @@ rule SHIFU_Banking_Trojan {
 		hash12 = "a8b6e798116ce0b268e2c9afac61536b8722e86b958bd2ee95c6ecdec86130c9"
 		hash13 = "d6244c1177b679b3d67f6cec34fe0ae87fba21998d4f5024d8eeaf15ca242503"
 		hash14 = "dcc9c38e695ffd121e793c91ca611a4025a116321443297f710a47ce06afb36d"
+		uuid = "b0d57a2b-31cc-5af0-84c3-5d178e2d244d"
 	strings:
 		$x1 = "\\Gather\\Dividerail.pdb" ascii
 

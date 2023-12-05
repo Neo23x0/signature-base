@@ -13,6 +13,7 @@ rule Payload_Exe2Hex {
 		reference = "https://github.com/g0tmi1k/exe2hex"
 		date = "2016-01-15"
 		score = 70
+		uuid = "c29e4937-cc6a-5265-a3b9-1018228dc956"
 	strings:
 		$a1 = "set /p \"=4d5a" ascii
 		$a2 = "powershell -Command \"$hex=" ascii

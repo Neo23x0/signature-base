@@ -13,6 +13,7 @@ rule BlackEnergy_BE_2 {
       reference = "http://goo.gl/DThzLz"
       date = "2015/02/19"
       hash = "983cfcf3aaaeff1ad82eb70f77088ad6ccedee77"
+      uuid = "c93991b9-77e8-5a73-80ef-e21df770c3a5"
    strings:
       $s0 = "<description> Windows system utility service  </description>" fullword ascii
       $s1 = "WindowsSysUtility - Unicode" fullword wide
@@ -38,6 +39,7 @@ rule BlackEnergy_VBS_Agent {
 		reference = "http://feedproxy.google.com/~r/eset/blog/~3/BXJbnGSvEFc/"
 		date = "2016-01-03"
 		hash = "b90f268b5e7f70af1687d9825c09df15908ad3a6978b328dc88f96143a64af0f"
+		uuid = "0876f752-d476-5706-918e-edfda9bd7928"
 	strings:
 		$s0 = "WshShell.Run \"dropbear.exe -r rsa -d dss -a -p 6789\", 0, false" fullword ascii
 		$s1 = "WshShell.CurrentDirectory = \"C:\\WINDOWS\\TEMP\\Dropbear\\\"" fullword ascii
@@ -55,6 +57,7 @@ rule DropBear_SSH_Server {
 		date = "2016-01-03"
 		score = 50
 		hash = "0969daac4adc84ab7b50d4f9ffb16c4e1a07c6dbfc968bd6649497c794a161cd"
+		uuid = "22595d8b-b7ea-570e-ad17-d5bcec613abf"
 	strings:
 		$s1 = "Dropbear server v%s https://matt.ucc.asn.au/dropbear/dropbear.html" fullword ascii
 		$s2 = "Badly formatted command= authorized_keys option" fullword ascii
@@ -73,6 +76,7 @@ rule BlackEnergy_BackdoorPass_DropBear_SSH {
 		reference = "http://feedproxy.google.com/~r/eset/blog/~3/BXJbnGSvEFc/"
 		date = "2016-01-03"
 		hash = "0969daac4adc84ab7b50d4f9ffb16c4e1a07c6dbfc968bd6649497c794a161cd"
+		uuid = "60db00dd-72b3-5a28-90de-2a397b1e007b"
 	strings:
 		$s1 = "passDs5Bu9Te7" fullword ascii
 	condition:
@@ -94,6 +98,7 @@ rule BlackEnergy_KillDisk_1 {
 		hash2 = "5d2b1abc7c35de73375dd54a4ec5f0b060ca80a1831dac46ad411b4fe4eac4c6"
 		hash3 = "c7536ab90621311b526aefd56003ef8e1166168f038307ae960346ce8f75203d"
 		hash4 = "f52869474834be5a6b5df7f8f0c46cbc7e9b22fa5cb30bee0f363ec6eb056b95"
+		uuid = "304e7aa3-48d3-5015-aaf1-6b1df2441b75"
 	strings:
 		$s0 = "system32\\cmd.exe" fullword ascii
 		$s1 = "system32\\icacls.exe" fullword wide
@@ -122,6 +127,7 @@ rule BlackEnergy_KillDisk_2 {
 		hash1 = "11b7b8a7965b52ebb213b023b6772dd2c76c66893fc96a18a9a33c8cf125af80"
 		hash2 = "5d2b1abc7c35de73375dd54a4ec5f0b060ca80a1831dac46ad411b4fe4eac4c6"
 		hash3 = "f52869474834be5a6b5df7f8f0c46cbc7e9b22fa5cb30bee0f363ec6eb056b95"
+		uuid = "f0304e87-a278-5963-9af0-935c088c00ec"
 	strings:
 		$s0 = "%c:\\~tmp%08X.tmp" fullword ascii
 		$s1 = "%s%08X.tmp" fullword ascii
@@ -147,6 +153,7 @@ rule BlackEnergy_Driver_USBMDM {
 		hash6 = "405013e66b6f137f915738e5623228f36c74e362873310c5f2634ca2fda6fbc5"
 		hash7 = "244dd8018177ea5a92c70a7be94334fa457c1aab8a1c1ea51580d7da500c3ad5"
 		hash8 = "edcd1722fdc2c924382903b7e4580f9b77603110e497393c9947d45d311234bf"
+		uuid = "d5e8faf0-38cb-5193-b859-83ea09278011"
 	strings:
 		$s1 = "USB MDM Driver" fullword wide
 		$s2 = "KdDebuggerNotPresent" fullword ascii /* Goodware String - occured 50 times */
@@ -170,6 +177,7 @@ rule BlackEnergy_Driver_AMDIDE {
 		hash5 = "5111de45210751c8e40441f16760bf59856ba798ba99e3c9532a104752bf7bcc"
 		hash6 = "cbc4b0aaa30b967a6e29df452c5d7c2a16577cede54d6d705ca1f095bd6d4988"
 		hash7 = "1ce0dfe1a6663756a32c69f7494ad082d293d32fe656d7908fb445283ab5fa68"
+		uuid = "e5b57c33-87f7-5411-995c-384e0afa0348"
 	strings:
 		$s1 = " AMD IDE driver" fullword wide
 		$s2 = "SessionEnv" fullword wide

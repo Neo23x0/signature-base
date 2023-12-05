@@ -19,6 +19,7 @@ rule HoneyBee_Dropper_MalDoc {
       date = "2018-03-03"
       hash1 = "86981680172bbf0865e7693fe5a2bbe9b3ba12b3f1a1536ef67915daab78004c"
       hash2 = "0d4352322160339f87be70c2f3fe096500cfcdc95a8dea975fdfc457bd347c44"
+      uuid = "4e8dec29-2c0a-5760-91c9-88f67505a7f1"
    strings:
       $x1 = "cmd /c expand %TEMP%\\setup.cab -F:* %SystemRoot%\\System32"
       $x2 = "del /f /q %TEMP%\\setup.cab && cliconfg.exe"
@@ -44,6 +45,7 @@ rule OpHoneybee_Malware_1 {
       hash2 = "fc2bcd38659ae83fd25b4f7091412ae9ba011612fa4dcc3ef665b2cae2a1d74f"
       hash3 = "2c5e5c86ca4fa172341c6bcbaa50984fb168d650ae9a33f2c6e6dccc1d57b369"
       hash4 = "439c305cd408dbb508e153caab29d17021a7430f1dbaec0c90ac750ba2136f5f"
+      uuid = "5f48434e-efe6-5cd8-85e2-eabf528e6c58"
    strings:
       $x1 = "cmd /c taskkill /im cliconfg.exe /f /t && del /f /q" fullword ascii
       $x2 = "\\FTPCom_vs10\\Release\\Engine.pdb" ascii
@@ -76,6 +78,7 @@ rule OpHoneybee_MaoCheng_Dropper {
       reference = "https://goo.gl/JAHZVL"
       date = "2018-03-03"
       hash1 = "35904f482d37f5ce6034d6042bae207418e450f4"
+      uuid = "b163e08e-3892-55f6-ae3e-30d2ba3f4310"
    strings:
       $x1 = "\\MaoCheng\\Release\\" ascii
    condition:

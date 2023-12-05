@@ -20,6 +20,7 @@ rule ReflectiveLoader {
       modified = "2021-03-15"
       author = "Florian Roth (Nextron Systems)"
       nodeepdive = 1
+      uuid = "d8a601d7-b99a-59dc-bfc7-bf0e35b5d8bd"
    strings:
       $x1 = "ReflectiveLoader" fullword ascii
       $x2 = "ReflectivLoader.dll" fullword ascii
@@ -57,6 +58,7 @@ rule Reflective_DLL_Loader_Aug17_1 {
       reference = "Internal Research"
       date = "2017-08-20"
       hash1 = "f2f85855914345eec629e6fc5333cf325a620531d1441313292924a88564e320"
+      uuid = "9a2674f8-5fdb-5a4d-a2b9-41e874939616"
    strings:
       $x1 = "\\Release\\reflective_dll.pdb" ascii
       $x2 = "reflective_dll.x64.dll" fullword ascii
@@ -81,6 +83,7 @@ rule DLL_Injector_Lynx {
       reference = "Internal Research"
       date = "2017-08-20"
       hash1 = "d594f60e766e0c3261a599b385e3f686b159a992d19fa624fad8761776efa4f0"
+      uuid = "7a4c9949-c701-5ae2-a8b1-3ef0b08c1c04"
    strings:
       $x1 = " -p <TARGET PROCESS NAME> | -u <DLL PAYLOAD> [--obfuscate]" fullword wide
       $x2 = "You've selected to inject into process: %s" fullword wide
@@ -106,6 +109,7 @@ rule Reflective_DLL_Loader_Aug17_2 {
       score = 60
       hash1 = "c2a7a2d0b05ad42386a2bedb780205b7c0af76fe9ee3d47bbe217562f627fcae"
       hash2 = "b90831aaf8859e604283e5292158f08f100d4a2d4e1875ea1911750a6cb85fe0"
+      uuid = "5948d9ba-e655-5b11-ad74-f650b3a753e7"
    strings:
       $x1 = "\\ReflectiveDLLInjection-master\\" ascii
       $s2 = "reflective_dll.dll" fullword ascii
@@ -132,6 +136,7 @@ rule Reflective_DLL_Loader_Aug17_3 {
       date = "2017-08-20"
       modified = "2022-12-21"
       hash1 = "d10e4b3f1d00f4da391ac03872204dc6551d867684e0af2a4ef52055e771f474"
+      uuid = "91842f58-5205-533d-9e97-a1e84fbf259d"
    strings:
       $s1 = "\\Release\\inject.pdb" ascii
       $s2 = "!!! Failed to gather information on system processes! " fullword ascii
@@ -157,6 +162,7 @@ rule Reflective_DLL_Loader_Aug17_4 {
       date = "2017-08-20"
       hash1 = "205b881701d3026d7e296570533e5380e7aaccaa343d71b6fcc60802528bdb74"
       hash2 = "f76151646a0b94024761812cde1097ae2c6d455c28356a3db1f7905d3d9d6718"
+      uuid = "d2a28ea6-a3f7-5ceb-86fd-1e5b7f916a41"
    strings:
       $x1 = "<H1>&nbsp;>> >> >> Keylogger Installed - %s %s << << <<</H1>" fullword ascii
 

@@ -5,6 +5,7 @@ rule apt_sofacy_xtunnel {
         author = "Claudio Guarnieri"
         description = "Sofacy Malware - German Bundestag"
         score = 75
+        uuid = "aef091b5-cedf-5443-ab61-8b2dbc7e77fd"
     strings:
         $xaps = ":\\PROJECT\\XAPS_"
         $variant11 = "XAPS_OBJECTIVE.dll" $variant12 = "start"
@@ -32,6 +33,7 @@ rule Winexe_RemoteExec {
       hash1 = "5130f600cd9a9cdc82d4bad938b20cbd2f699aadb76e7f3f1a93602330d9997d"
       hash2 = "d19dfdbe747e090c5aa2a70cc10d081ac1aa88f360c3f378288a3651632c4429"
       score = 70
+      uuid = "5079557a-0461-5b04-b0f2-4265bf7ec041"
    strings:
       $s1 = "error Cannot LogonUser(%s,%s,%s) %d" ascii fullword
       $s2 = "error Cannot ImpersonateNamedPipeClient %d" ascii fullword
@@ -54,6 +56,7 @@ rule Sofacy_Mal2 {
         date = "2015-06-19"
         hash = "566ab945f61be016bfd9e83cc1b64f783b9b8deb891e6d504d3442bc8281b092"
         score = 70
+        uuid = "1547cc67-7d7c-5ec9-816c-15b7d523376a"
     strings:
         $x1 = "PROJECT\\XAPS_OBJECTIVE_DLL\\" ascii
         $x2 = "XAPS_OBJECTIVE.dll" fullword ascii
@@ -73,6 +76,7 @@ rule Sofacy_Mal3 {
         modified = "2023-01-06"
         hash = "5f6b2a0d1d966fc4f1ed292b46240767f4acb06c13512b0061b434ae2a692fa1"
         score = 70
+        uuid = "67d002ef-4ed9-54ce-a6ef-49b7f3b951e2"
     strings:
         $s1 = "shell\\open\\command=\"System Volume Information\\USBGuard.exe\" install" fullword ascii
         $s2 = ".?AVAgentModuleRemoteKeyLogger@@" fullword ascii
@@ -102,6 +106,7 @@ rule Sofacy_Bundestag_Batch {
         reference = "http://dokumente.linksfraktion.de/inhalt/report-orig.pdf"
         date = "2015-06-19"
         score = 70
+        uuid = "869dafec-1387-5640-b608-b84cf0d43342"
     strings:
         $s1 = "for %%G in (.pdf, .xls, .xlsx, .doc, .docx)" ascii
         $s2 = "cmd /c copy"

@@ -16,6 +16,7 @@ rule Win_PrivEsc_gp3finder_v4_0 {
 		date = "2016-06-02"
 		score = 80
 		hash1 = "7d34e214ef2ca33516875fb91a72d5798f89b9ea8964d3990f99863c79530c06"
+		uuid = "3b310c12-ac69-527b-9503-1486ae5f692c"
 	strings:
 		$x1 = "Check for and attempt to decrypt passwords on share" ascii
 		$x2 = "Failed to auto get and decrypt passwords. {0}s/" fullword ascii
@@ -33,6 +34,7 @@ rule Win_PrivEsc_folderperm {
 		date = "2016-06-02"
 		score = 80
 		hash1 = "1aa87df34826b1081c40bb4b702750587b32d717ea6df3c29715eb7fc04db755"
+		uuid = "131fdb57-f9ca-5247-8bb4-c939eff5b8bf"
 	strings:
 		$x1 = "# powershell.exe -executionpolicy bypass -file folderperm.ps1" fullword ascii
 		$x2 = "Write-Host \"[i] Dummy test file used to test access was not outputted:\" $filetocopy" fullword ascii
@@ -50,6 +52,7 @@ rule Win_PrivEsc_ADACLScan4_3 {
 		score = 60
 		date = "2016-06-02"
 		hash1 = "3473ddb452de7640fab03cad3e8aaf6a527bdd6a7a311909cfef9de0b4b78333"
+		uuid = "15867a9c-9b9b-5d29-bf51-2b3e91af556f"
 	strings:
 		$s1 = "<Label x:Name=\"lblPort\" Content=\"Port:\"  HorizontalAlignment=\"Left\" Height=\"28\" Margin=\"10,0,0,0\" Width=\"35\"/>" fullword ascii
 		$s2 = "(([System.IconExtractor]::Extract(\"mmcndmgr.dll\", 126, $true)).ToBitMap()).Save($env:temp + \"\\Other.png\")    " fullword ascii

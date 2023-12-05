@@ -10,6 +10,7 @@ rule APT_ME_BigBang_Gen_Jul18_1 {
       hash1 = "4db68522600f2d8aabd255e2da999a9d9c9f1f18491cfce9dadf2296269a172b"
       hash2 = "ac6462e9e26362f711783b9874d46fefce198c4c3ca947a5d4df7842a6c51224"
       hash3 = "e1f52ea30d25289f7a4a5c9d15be97c8a4dfe10eb68ac9d031edcc7275c23dbc"
+      uuid = "f1097998-9414-511c-b177-ff09154964a8"
    strings:
       $x2 = "%@W@%S@c@ri%@p@%t.S@%he@%l%@l" ascii
       $x3 = "S%@h%@e%l%@l." ascii
@@ -36,6 +37,7 @@ rule APT_ME_BigBang_Mal_Jul18_1 {
       date = "2018-07-09"
       hash1 = "ac6462e9e26362f711783b9874d46fefce198c4c3ca947a5d4df7842a6c51224"
       hash2 = "e1f52ea30d25289f7a4a5c9d15be97c8a4dfe10eb68ac9d031edcc7275c23dbc"
+      uuid = "f30b2e11-f90a-5068-8eaa-25f11218ec6c"
    strings:
       $s1 = "%Y%m%d-%I-%M-%S" fullword ascii
       $s2 = "/api/serv/requests/%s/runfile/delete" fullword ascii

@@ -5,6 +5,7 @@ rule APT_Project_Sauron_Scripts {
 		author = "Florian Roth (Nextron Systems)"
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-08"
+		uuid = "575a6f1b-5a4d-5f81-b44a-b7025dbec2a5"
 	strings:
 		$x1 = "local t = w.exec2str(\"regedit "
 		$x2 = "local r = w.exec2str(\"cat"
@@ -30,6 +31,7 @@ rule HKTL_Dsniff {
       score = 55
       reference = "https://goo.gl/eFoP4A"
       date = "2019-02-19"
+      uuid = "eb39185b-330f-5b93-ac58-0465e5767919"
    strings:
       $x1 = ".*account.*|.*acct.*|.*domain.*|.*login.*|.*member.*"
    condition:
@@ -43,6 +45,7 @@ rule APT_Project_Sauron_arping_module {
 		author = "Florian Roth (Nextron Systems)"
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-08"
+		uuid = "42389511-de92-57cb-9dee-9f829fd5e55a"
 	strings:
 		$s1 = "Resolve hosts that answer"
 		$s2 = "Print only replying Ips"
@@ -58,6 +61,7 @@ rule APT_Project_Sauron_kblogi_module {
 		author = "Florian Roth (Nextron Systems)"
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-08"
+		uuid = "e1dd4d1a-1089-5897-8f4a-52c7068802fa"
 	strings:
 		$x1 = "Inject using process name or pid. Default"
 		$s2 = "Convert mode: Read log from file and convert to text"
@@ -73,6 +77,7 @@ rule APT_Project_Sauron_basex_module {
 		author = "Florian Roth (Nextron Systems)"
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-08"
+		uuid = "51ef3826-af5c-562b-a1f8-3bf11532ac2d"
 	strings:
 		$x1 = "64, 64url, 32, 32url or 16."
 		$s2 = "Force decoding when input is invalid/corrupt"
@@ -88,6 +93,7 @@ rule APT_Project_Sauron_dext_module {
 		author = "Florian Roth (Nextron Systems)"
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-08"
+		uuid = "d69373e0-d6ad-5475-8766-06e865620ed8"
 	strings:
 		$x1 = "Assemble rows of DNS names back to a single string of data"
 		$x2 = "removes checks of DNS names and lengths (during split)"
@@ -105,6 +111,7 @@ rule Hacktool_This_Cruft {
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-08"
 		score = 60
+		uuid = "a39de541-19b5-5b7e-a3dc-51a5309181e5"
 	strings:
 		$x1 = "This cruft" fullword
 	condition:
@@ -128,6 +135,7 @@ rule APT_Project_Sauron_Custom_M1 {
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-09"
 		hash1 = "9572624b6026311a0e122835bcd7200eca396802000d0777dba118afaaf9f2a9"
+		uuid = "c741bd7d-1885-55f1-a5b3-8f00fda2fe39"
 	strings:
 		$s1 = "ncnfloc.dll" fullword wide
 		$s4 = "Network Configuration Locator" fullword wide
@@ -147,6 +155,7 @@ rule APT_Project_Sauron_Custom_M2 {
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-09"
 		hash1 = "30a824155603c2e9d8bfd3adab8660e826d7e0681e28e46d102706a03e23e3a8"
+		uuid = "79abe5f2-a750-5018-a67f-6ee1c51a2ca1"
 	strings:
 		$s2 = "\\*\\3vpn" ascii
 
@@ -165,6 +174,7 @@ rule APT_Project_Sauron_Custom_M3 {
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-09"
 		hash1 = "a4736de88e9208eb81b52f29bab9e7f328b90a86512bd0baadf4c519e948e5ec"
+		uuid = "555b37a2-6a3c-539f-81dc-24c739795510"
 	strings:
 		$s1 = "ExampleProject.dll" fullword ascii
 
@@ -183,6 +193,7 @@ rule APT_Project_Sauron_Custom_M4 {
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-09"
 		hash1 = "e12e66a6127cfd2cbb42e6f0d57c9dd019b02768d6f1fb44d91f12d90a611a57"
+		uuid = "32717ace-ff56-5b5b-8ed9-4bb353886eea"
 	strings:
 		$s1 = "xpsmngr.dll" fullword wide
 		$s2 = "XPS Manager" fullword wide
@@ -202,6 +213,7 @@ rule APT_Project_Sauron_Custom_M6 {
 		reference = "https://goo.gl/eFoP4A"
 		date = "2016-08-09"
 		hash1 = "3782b63d7f6f688a5ccb1b72be89a6a98bb722218c9f22402709af97a41973c8"
+		uuid = "1aa6dd43-52ac-5321-9941-767833073c37"
 	strings:
 		$s1 = "rseceng.dll" fullword wide
 		$s2 = "Remote Security Engine" fullword wide
@@ -222,6 +234,7 @@ rule APT_Project_Sauron_Custom_M7 {
 		date = "2016-08-09"
 		hash1 = "6c8c93069831a1b60279d2b316fd36bffa0d4c407068dbef81b8e2fe8fd8e8cd"
 		hash2 = "7cc0bf547e78c8aaf408495ceef58fa706e6b5d44441fefdce09d9f06398c0ca"
+		uuid = "c5e83e1a-872d-53b3-a74a-b1a9b4a89168"
 	strings:
 		$sx1 = "Default user" fullword wide
 		$sx2 = "Hincorrect header check" fullword ascii /* Typo */

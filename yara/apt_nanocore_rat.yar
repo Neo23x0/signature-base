@@ -14,6 +14,7 @@ rule Nanocore_RAT_Gen_1 {
       date = "2016-04-22"
       score = 70
       hash1 = "e707a7745e346c5df59b5aa4df084574ae7c204f4fb7f924c0586ae03b79bf06"
+      uuid = "b007e0ce-e64f-5027-95ff-d178383e3b59"
    strings:
       $x1 = "C:\\Users\\Logintech\\Dropbox\\Projects\\New folder\\Latest\\Benchmark\\Benchmark\\obj\\Release\\Benchmark.pdb" fullword ascii
       $x2 = "RunPE1" fullword ascii
@@ -33,6 +34,7 @@ rule Nanocore_RAT_Gen_2 {
       reference = "https://www.sentinelone.com/blogs/teaching-an-old-rat-new-tricks/"
       date = "2016-04-22"
       hash1 = "755f49a4ffef5b1b62f4b5a5de279868c0c1766b528648febf76628f1fe39050"
+      uuid = "74124961-3b0e-5808-b495-90437d3a5999"
    strings:
       $x1 = "NanoCore.ClientPluginHost" fullword ascii
       $x2 = "IClientNetworkHost" fullword ascii
@@ -50,6 +52,7 @@ rule Nanocore_RAT_Sample_1 {
       reference = "https://www.sentinelone.com/blogs/teaching-an-old-rat-new-tricks/"
       date = "2016-04-22"
       hash2 = "b7cfc7e9551b15319c068aae966f8a9ff563b522ed9b1b42d19c122778e018c8"
+      uuid = "381d3caf-77de-544c-869c-4d9f0cae148f"
    strings:
       $x1 = "TbSiaEdJTf9m1uTnpjS.n9n9M7dZ7FH9JsBARgK" fullword wide
       $x2 = "1EF0D55861681D4D208EC3070B720C21D885CB35" fullword ascii
@@ -67,6 +70,7 @@ rule Nanocore_RAT_Sample_2 {
       reference = "https://www.sentinelone.com/blogs/teaching-an-old-rat-new-tricks/"
       date = "2016-04-22"
       hash1 = "51142d1fb6c080b3b754a92e8f5826295f5da316ec72b480967cbd68432cede1"
+      uuid = "81f6771a-29a3-5fa0-8d24-ea717d3c5251"
    strings:
       $s1 = "U4tSOtmpM" fullword ascii
       $s2 = ")U71UDAU_QU_YU_aU_iU_qU_yU_" wide
@@ -93,6 +97,7 @@ rule Nanocore_RAT_Feb18_1 {
       reference = "Internal Research - T2T"
       date = "2018-02-19"
       hash1 = "aa486173e9d594729dbb5626748ce10a75ee966481b68c1b4f6323c827d9658c"
+      uuid = "6db0c8a7-8c31-58a6-8732-de6663fec16b"
    strings:
       $x1 = "NanoCore Client.exe" fullword ascii
       $x2 = "NanoCore.ClientPluginHost" fullword ascii
@@ -117,6 +122,7 @@ rule Nanocore_RAT_Feb18_2 {
       reference = "Internal Research - T2T"
       date = "2018-02-19"
       hash1 = "377ef8febfd8df1a57a7966043ff0c7b8f3973c2cf666136e6c04080bbf9881a"
+      uuid = "83a8ad4d-0bef-5ba2-aa10-eac5601f2c7b"
    strings:
       $s1 = "ResManagerRunnable" fullword ascii
       $s2 = "TransformRunnable" fullword ascii

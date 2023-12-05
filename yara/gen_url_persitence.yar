@@ -7,6 +7,7 @@ rule Methodology_Suspicious_Shortcut_Local_URL
     reference = "https://twitter.com/cglyer/status/1176184798248919044"
     score = 50
     date = "27.09.2019"
+    uuid = "438d9323-cb6a-5f5d-af71-76692b93436a"
   strings:
     $file = "URL=file:///" nocase
     $url_clsid = "[{000214A0-0000-0000-C000-000000000046}]"
@@ -26,6 +27,7 @@ rule Methodology_Suspicious_Shortcut_SMB_URL
     sample = "e0bef7497fcb284edb0c65b59d511830"
     score = 50
     date = "27.09.2019"
+    uuid = "e23609a1-9b18-5a56-92ee-c7f84c966865"
   strings:
     $file = /URL=file:\/\/[a-z0-9]/ nocase
     $url_clsid = "[{000214A0-0000-0000-C000-000000000046}]"
@@ -64,6 +66,7 @@ rule Methodology_Suspicious_Shortcut_IconRemote_SMBorLocal
     reference = "https://twitter.com/ItsReallyNick/status/1176241449148588032"
     score = 50
     date = "27.09.2019"
+    uuid = "9362ce46-265c-5215-bee1-3d784d0cb928"
   strings:
     $icon = "IconFile=file://" nocase
     $url_clsid = "[{000214A0-0000-0000-C000-000000000046}]"
@@ -82,6 +85,7 @@ rule Methodology_Shortcut_HotKey
     reference = "https://twitter.com/cglyer/status/1176184798248919044"
     score = 50
     date = "27.09.2019"
+    uuid = "0ce377c4-db9b-59fa-987b-a77eaf408765"
   strings:
     $hotkey = /[\x0a\x0d]HotKey=[1-9]/ nocase
     $url_clsid = "[{000214A0-0000-0000-C000-000000000046}]"
@@ -100,6 +104,7 @@ rule Methodology_Suspicious_Shortcut_BaseURLSyntax
     reference = "https://twitter.com/cglyer/status/1176184798248919044"
     score = 50
     date = "27.09.2019"
+    uuid = "cab7b573-d197-5afc-95a9-ef05a07c2b7a"
   strings:
     $baseurl1 = "BASEURL=file://" nocase
     $baseurl2 = "[DEFAULT]" nocase
@@ -120,6 +125,7 @@ rule Methodology_Contains_Shortcut_OtherURIhandlers
     reference = "https://twitter.com/cglyer/status/1176184798248919044"
     score = 35
     date = "27.09.2019"
+    uuid = "1c0750d2-2177-5e2c-908b-4226ae099981"
   strings:
     $file = "URL="
     $filenegate = /[\x0a\x0d](Base|)URL\s*=\s*(https?|file):\/\// nocase
@@ -160,6 +166,7 @@ rule Methodology_Suspicious_Shortcut_IconNotFromExeOrDLLOrICO
     description = "Detects possible shortcut usage for .URL persistence"
     score = 50
     date = "27.09.2019"
+    uuid = "82d0483f-48ee-5d0c-ba7d-73d9e9455423"
   strings:
     $icon = "IconFile="
     $icon_negate = /[\x0a\x0d]IconFile=[^\x0d]*\.(dll|exe|ico)\x0d/ nocase
@@ -179,6 +186,7 @@ rule Methodology_Suspicious_Shortcut_Evasion
     reference = "https://twitter.com/DissectMalware/status/1176736510856634368"
     score = 50
     date = "27.09.2019"
+    uuid = "36df4252-2575-5efa-88ce-17e68a349306"
   strings:
     $URI = /[\x0a\x0d](IconFile|(Base|)URL)[^\x0d=]+/ nocase
     $filetype_clsid = "[{000214A0-0000-0000-C000-000000000046}]"
@@ -199,6 +207,7 @@ rule Methodology_Suspicious_Shortcut_LOLcommand
     score = 50
     date = "27.09.2019"
     modified = "2021-02-14"
+    uuid = "061e7919-17f1-5774-ad7d-fc964dc9a947"
   strings:
     $file1 = /[\x0a\x0d](IconFile|(Base|)URL)\s*=[^\x0d]*(powershell|cmd|certutil|mshta|wscript|cscript|rundll32|wmic|regsvr32|msbuild)(\.exe|)[^\x0d]{2,50}\x0d/ nocase
     $url_clsid = "[{000214A0-0000-0000-C000-000000000046}]"
@@ -218,6 +227,7 @@ rule Methodology_Suspicious_Shortcut_WebDAV
     description = "Detects possible shortcut usage for .URL persistence"
     score = 50
     date = "27.09.2019"
+    uuid = "cd660b84-d7c6-52fc-9e1d-76450e5262b1"
   strings:
     $file1 = /[\x0a\x0d](IconFile|(Base|)URL)\s*=\s*\/\/[A-Za-z0-9]/
     $url_clsid = "[{000214A0-0000-0000-C000-000000000046}]"
@@ -236,6 +246,7 @@ rule Methodology_Suspicious_Shortcut_ScriptURL
     reference = "https://twitter.com/cglyer/status/1176184798248919044"
     score = 50
     date = "27.09.2019"
+    uuid = "2f55f8a9-4e4b-5480-9042-da6bb66b2e06"
   strings:
     $file1 = /[\x0a\x0d](IconFile|(Base|)URL)\s*=[^\x0d]*script:/ nocase
 //    $file2 = /IconFile=script:/ nocase
@@ -255,6 +266,7 @@ rule Methodology_Suspicious_Shortcut_WorkingDirRemote_HTTP
     reference = "https://twitter.com/cglyer/status/1176184798248919044"
     score = 50
     date = "27.09.2019"
+    uuid = "68e54f8a-11e4-59e4-8498-59d88e70e438"
   strings:
     $icon = "WorkingDirectory=http" nocase
     $url_clsid = "[{000214A0-0000-0000-C000-000000000046}]"
@@ -273,6 +285,7 @@ rule Methodology_Suspicious_Shortcut_WorkingDirRemote_SMB
     reference = "https://twitter.com/cglyer/status/1176184798248919044"
     score = 50
     date = "27.09.2019"
+    uuid = "26e19fe3-c25c-53b0-9b41-c04803134bc2"
   strings:
     $icon = "WorkingDirectory=file://" nocase
     $url_clsid = "[{000214A0-0000-0000-C000-000000000046}]"

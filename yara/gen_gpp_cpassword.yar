@@ -7,6 +7,7 @@ rule Groups_cpassword {
         reference = "http://www.grouppolicy.biz/2013/11/why-passwords-in-group-policy-preference-are-very-bad/"
         date = "2015-09-08"
         score = 50
+        uuid = "37036df9-871f-5ecd-acac-6a064d298115"
     strings:
         $s1 = / cpassword=\"[^\"]/ ascii
         $s2 = " changeLogon=" ascii

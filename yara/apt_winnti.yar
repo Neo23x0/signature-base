@@ -16,6 +16,7 @@ rule Winnti_signing_cert {
 		score = 75
 		hash1 = "a9a8dc4ae77b1282f0c8bdebd2643458fc1ceb3145db4e30120dd81676ff9b61"
 		hash2 = "9001572983d5b1f99787291edaadbb65eb2701722f52470e89db2c59def24672"
+		uuid = "0cf185eb-fb8d-5e1f-9089-4f36eb4798de"
 	strings:
 		$s1 = "Guangzhou YuanLuo Technology Co." ascii
 		$s2 = "Guangzhou YuanLuo Technology Co.,Ltd" ascii
@@ -36,6 +37,7 @@ rule Winnti_malware_Nsiproxy {
 		hash3 = "326e2cabddb641777d489a9e7a39d52c0dc2dcb1fde1762554ea162792056b6e"
 		hash4 = "aff7c7478fe33c57954b6fec2095efe8f9edf5cdb48a680de9439ba62a77945f"
 		hash5 = "ba7ccd027fd2c826bbe8f2145d5131eff906150bd98fe25a10fbee2c984df1b8"
+		uuid = "9b14541c-6077-5f3b-8f73-ff3d283bf209"
 	strings:
 		$x1 = "\\Driver\\nsiproxy" wide
 
@@ -63,6 +65,7 @@ rule Winnti_malware_UpdateDLL {
 		hash2 = "50174311e524b97ea5cb4f3ea571dd477d1f0eee06cd3ed73af39a15f3e6484a"
 		hash3 = "6cdb65dbfb2c236b6d149fd9836cb484d0608ea082cf5bd88edde31ad11a0d58"
 		hash4 = "50174311e524b97ea5cb4f3ea571dd477d1f0eee06cd3ed73af39a15f3e6484a"
+		uuid = "c6896191-d856-55f2-a47f-621a4f10d0c7"
 	strings:
 		$c1 = "'Wymajtec$Tima Stempijg Sarviges GA -$G2" fullword ascii
 		$c2 = "AHDNEAFE1.sys" fullword ascii
@@ -95,6 +98,7 @@ rule Winnti_malware_FWPK {
       hash1 = "1098518786c84b0d31f215122275582bdcd1666653ebc25d50a142b4f5dabf2c"
       hash2 = "9a684ffad0e1c6a22db1bef2399f839d8eff53d7024fb014b9a5f714d11febd7"
       hash3 = "a836397817071c35e24e94b2be3c2fa4ffa2eb1675d3db3b4456122ff4a71368"
+      uuid = "591ad72d-b9d4-5cd9-9103-37e001026610"
    strings:
       $s0 = "\\Registry\\Machine\\System\\CurrentControlSet\\Control\\Class\\{4D36E972-E325-11CE-BFC1-08002BE10318}\\" wide
       $s1 = "%x:%d->%x:%d, Flag %s%s%s%s%s, seq %u, ackseq %u, datalen %u" fullword ascii
@@ -123,6 +127,7 @@ rule Winnti_malware_StreamPortal_Gen {
 		hash1 = "326e2cabddb641777d489a9e7a39d52c0dc2dcb1fde1762554ea162792056b6e"
 		hash2 = "9001572983d5b1f99787291edaadbb65eb2701722f52470e89db2c59def24672"
 		hash3 = "aff7c7478fe33c57954b6fec2095efe8f9edf5cdb48a680de9439ba62a77945f"
+		uuid = "f9d31d6b-a6f7-5359-b741-960b678e0b9c"
 	strings:
 		$s0 = "Proxies destination address/port for TCP" fullword wide
 		$s3 = "\\Device\\StreamPortal" wide
@@ -142,6 +147,7 @@ rule WINNTI_KingSoft_Moz_Confustion {
       reference = "https://www.virustotal.com/en/file/070ee4a40852b26ec0cfd79e32176287a6b9d2b15e377281d8414550a83f6496/analysis/"
       date = "2018-04-13"
       hash1 = "070ee4a40852b26ec0cfd79e32176287a6b9d2b15e377281d8414550a83f6496"
+      uuid = "0c45c1ff-6734-504f-91d1-cf5d6744252f"
    condition:
       uint16(0) == 0x5a4d and filesize < 3000KB and (
          pe.imphash() == "7f01b23ccfd1017249c36bc1618d6892" or
@@ -158,6 +164,7 @@ rule APT_Winnti_MAL_Dec19_1 {
       reference = "https://www.verfassungsschutz.de/download/broschuere-2019-12-bfv-cyber-brief-2019-01.pdf"
       date = "2019-12-06"
       score = 75
+      uuid = "322e9362-bfb6-55e3-9a93-d54246311d11"
    strings:
       $e1 = "Global\\BFE_Notify_Event_{65a097fe-6102-446a-9f9c-55dfc3f411015}" ascii nocase
       $e2 = "Global\\BFE_Notify_Event_{65a097fe-6102-446a-9f9c-55dfc3f411014}" ascii nocase
@@ -175,6 +182,7 @@ rule APT_Winnti_MAL_Dec19_2 {
       reference = "https://www.verfassungsschutz.de/download/broschuere-2019-12-bfv-cyber-brief-2019-01.pdf"
       date = "2019-12-06"
       score = 75
+      uuid = "77f2cb7d-90a6-5654-9d2e-6b525cd910a2"
    strings:
       $a1 = "IPSecMiniPort" wide fullword
       $a2 = "ndis6fw" wide fullword
@@ -199,6 +207,7 @@ rule APT_Winnti_MAL_Dec19_3 {
       reference = "https://www.verfassungsschutz.de/download/broschuere-2019-12-bfv-cyber-brief-2019-01.pdf"
       date = "2019-12-06"
       score = 75
+      uuid = "2e001c91-0794-5940-ad8c-8e58a01e100c"
    strings:
       $b1 = { 0F B7 ?? 16 [0-1] (81 E? | 25) 00 20 [0-2] [8] 8B ?? 50 41 B9 40 00 00 00 41 B8 00 10 00 00 }
       $b2 = { 8B 40 28 [5-8] 48 03 C8 48 8B C1 [5-8] 48 89 41 28 }
@@ -216,6 +225,7 @@ rule APT_Winnti_MAL_Dec19_4 {
       reference = "https://www.verfassungsschutz.de/download/broschuere-2019-12-bfv-cyber-brief-2019-01.pdf"
       date = "2019-12-06"
       score = 75
+      uuid = "1f7ac215-d049-5b97-9797-9589a70cbf2b"
    strings:
       $b1 = { 4C 8D 41 24 33 D2 B9 03 00 1F 00 FF 9? F8 00 00 00 48 85 C0 74 }
       $b2 = { 4C 8B 4? 08 BA 01 00 00 00 49 8B C? FF D0 85 C0 [2-6] C7 4? 1C 01 00 00 00 B8 01 00 00 00 }
@@ -231,6 +241,7 @@ rule APT_Winnti_MAL_Dec19_5 {
       reference = "https://www.verfassungsschutz.de/download/broschuere-2019-12-bfv-cyber-brief-2019-01.pdf"
       date = "2019-12-06"
       score = 75
+      uuid = "2a8f28e6-5a01-5a2f-b89b-9c34163afcda"
    strings:
       $a1 = "-k netsvcs" ascii
       $a2 = "svchost.exe" ascii fullword
@@ -259,6 +270,7 @@ rule APT_CN_Group_Loader_Jan20_1 {
       reference = "https://twitter.com/VK_Intel/status/1223411369367785472?s=20"
       date = "2020-02-01"
       score = 80
+      uuid = "c85ae499-4f76-56ff-877d-887e1a7fc077"
    strings:
       $xc1 = { 8B C3 C1 E3 10 C1 E8 10 03 D8 6B DB 77 83 C3 13 }
    condition:
@@ -279,6 +291,7 @@ rule winnti_dropper_x64_libtomcrypt_fns : TAU CN APT {
       exemplar_hashes = "5ebf39d614c22e750bb8dbfa3bcb600756dd3b36929755db9b577d2b653cd2d1"
       sample_md5 = "794E127D627B3AF9015396810A35AF1C"
 
+      uuid = "080d837c-248f-5718-b4a2-290495cd3b38"
    strings:
       // fn_register_libtomcrypt
       $0x140001820 = { 48 83 EC 28 83 3D ?? ?? ?? ?? 00 }
@@ -327,6 +340,7 @@ rule winnti_dropper_x86_libtomcrypt_fns : TAU CN APT {
       exemplar_hashes = "0fdcbd59d6ad41dda9ae8bab8fad9d49b1357282027e333f6894c9a92d0333b3"
       sample_md5 = "da3b64ec6468a4ec56f977afb89661b1"
 
+      uuid = "48e7a3b0-55c7-5db5-855f-1614bd00afb4"
    strings:
       // fn_register_libtomcrypt
       $0x401d20 = { 8B 0D ?? ?? ?? ?? 33 C0 85 C9 }

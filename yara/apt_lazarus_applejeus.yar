@@ -20,6 +20,7 @@ rule APT_Lazarus_Aug18_Downloader_1 {
       hash1 = "d555dcb6da4a6b87e256ef75c0150780b8a343c4a1e09935b0647f01d974d94d"
       hash2 = "bdff852398f174e9eef1db1c2d3fefdda25fe0ea90a40a2e06e51b5c0ebd69eb"
       hash3 = "e2199fc4e4b31f7e4c61f6d9038577633ed6ad787718ed7c39b36f316f38befd"
+      uuid = "f536db7b-b645-522f-b750-6431878d2e31"
    strings:
       $x1 = "H:\\DEV\\TManager\\" ascii
       $x2 = "\\Release\\dloader.pdb" ascii
@@ -44,6 +45,7 @@ rule APT_Lazarus_Aug18_1 {
       date = "2018-08-24"
       hash1 = "ef400d73c6920ac811af401259e376458b498eb0084631386136747dfc3dcfa8"
       hash2 = "1b8d3e69fc214cb7a08bef3c00124717f4b4d7fd6be65f2829e9fd337fc7c03c"
+      uuid = "fda4970a-2787-5e9c-9944-a6222145f4a7"
    strings:
       $s1 = "mws2_32.dll" fullword wide
       $s2 = "%s.bat" fullword wide
@@ -66,6 +68,7 @@ rule APT_Lazarus_Aug18_2 {
       date = "2018-08-24"
       hash1 = "8ae766795cda6336fd5cad9e89199ea2a1939a35e03eb0e54c503b1029d870c4"
       hash2 = "d3ef262bae0beb5d35841d131b3f89a9b71a941a86dab1913bda72b935744d2e"
+      uuid = "3c77d603-6443-5e78-8a8a-a89112619aa6"
    strings:
       $s1 = "vAdvapi32.dll" fullword wide
       $s2 = "lws2_32.dll" fullword wide
@@ -85,6 +88,7 @@ rule APT_FallChill_RC4_Keys {
       description = "Detects FallChill RC4 keys"
       reference = "https://securelist.com/operation-applejeus/87553/"
       date = "2018-08-21"
+      uuid = "ead7d84c-91aa-58b0-af3b-1211b0bde864"
    strings:
       /* MOV POS 4BYTE-OF-KEY */
       $cod0 = { c7 ?? ?? da e1 61 ff

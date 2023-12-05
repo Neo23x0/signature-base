@@ -6,6 +6,7 @@ rule Dexter_Malware {
 		reference = "http://goo.gl/oBvy8b"
 		date = "2015/02/10"
 		score = 70
+		uuid = "8be328ec-ba29-50ba-8d35-e2c4dfcae45e"
 	strings:
 		$s0 = "Java Security Plugin" fullword wide
 		$s1 = "%s\\%s\\%s.exe" fullword wide

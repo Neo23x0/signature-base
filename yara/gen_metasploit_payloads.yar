@@ -15,6 +15,7 @@ rule Msfpayloads_msf {
       date = "2017-02-09"
       modified = "2022-08-18"
       hash1 = "320a01ec4e023fb5fbbaef963a2b57229e4f918847e5a49c7a3f631cb556e96c"
+      uuid = "c56dbb8e-1e03-5112-b2ef-a0adfd14dffa"
    strings:
       $s1 = "export buf=\\" ascii
    condition:
@@ -29,6 +30,7 @@ rule Msfpayloads_msf_2 {
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "e52f98466b92ee9629d564453af6f27bd3645e00a9e2da518f5a64a33ccf8eb5"
+      uuid = "ec1ae1b6-18a3-5590-ae15-1e2b362c545a"
    strings:
       $s1 = "& \"\\\" & \"svchost.exe\"" fullword ascii
       $s2 = "CreateObject(\"Wscript.Shell\")" fullword ascii
@@ -45,6 +47,7 @@ rule Msfpayloads_msf_psh {
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "5cc6c7f1aa75df8979be4a16e36cece40340c6e192ce527771bdd6463253e46f"
+      uuid = "5b760f03-b0f8-5871-bd34-e7e44443530c"
    strings:
       $s1 = "powershell.exe -nop -w hidden -e" ascii
       $s2 = "Call Shell(" ascii
@@ -61,6 +64,7 @@ rule Msfpayloads_msf_exe {
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "321537007ea5052a43ffa46a6976075cee6a4902af0c98b9fd711b9f572c20fd"
+      uuid = "fd07240e-0ee0-5318-a436-d97054e92414"
    strings:
       $s1 = "'* PAYLOAD DATA" fullword ascii
       $s2 = " = Shell(" ascii
@@ -80,6 +84,7 @@ rule Msfpayloads_msf_3 {
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "335cfb85e11e7fb20cddc87e743b9e777dc4ab4e18a39c2a2da1aa61efdbd054"
+      uuid = "ad09167f-a12a-5f07-940b-df679fa8e6c0"
    strings:
       $s1 = "[DllImport(\"kernel32.dll\")] public static extern int WaitForSingleObject(" ascii
       $s2 = "public enum MemoryProtection { ExecuteReadWrite = 0x40 }" fullword ascii
@@ -104,6 +109,7 @@ rule Msfpayloads_msf_4 {
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "26b3e572ba1574164b76c6d5213ab02e4170168ae2bcd2f477f246d37dbe84ef"
+      uuid = "00d7681b-6041-5fe1-adbb-8b7c40df0193"
    strings:
       $s1 = "= VirtualAlloc(IntPtr.Zero,(UIntPtr)" ascii
       $s2 = ".Length,MEM_COMMIT, PAGE_EXECUTE_READWRITE);" ascii
@@ -122,6 +128,7 @@ rule Msfpayloads_msf_exe_2 {
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "3a2f7a654c1100e64d8d3b4cd39165fba3b101bbcce6dd0f70dae863da338401"
+      uuid = "a55a33e1-8f04-5417-af0c-b7e2da36fb46"
    strings:
       $x1 = "= new System.Diagnostics.Process();" fullword ascii
       $x2 = ".StartInfo.UseShellExecute = true;" fullword ascii
@@ -139,6 +146,7 @@ rule Msfpayloads_msf_5 {
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "7a6c66dfc998bf5838993e40026e1f400acd018bde8d4c01ef2e2e8fba507065"
+      uuid = "030d1982-c9a8-539d-a995-7901ae425857"
    strings:
       $s1 = "required to install Foobar 1.0." fullword ascii
       $s2 = "Copyright 2009 The Apache Software Foundation." fullword wide
@@ -155,6 +163,7 @@ rule Msfpayloads_msf_6 {
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "8d6f55c6715c4a2023087c3d0d7abfa21e31a629393e4dc179d31bb25b166b3f"
+      uuid = "5485102b-e709-5111-814a-e6878b4bd889"
    strings:
       $s1 = "= CreateObject(\"Wscript.Shell\")" fullword ascii
       $s2 = "= CreateObject(\"Scripting.FileSystemObject\")" fullword ascii
@@ -175,6 +184,7 @@ rule Msfpayloads_msf_7 {
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "425beff61a01e2f60773be3fcb74bdfc7c66099fe40b9209745029b3c19b5f2f"
+      uuid = "8d1b742e-510a-5807-ad3f-f10cc325d292"
    strings:
       $s1 = "Private Declare PtrSafe Function CreateThread Lib \"kernel32\" (ByVal" ascii
       $s2 = "= VirtualAlloc(0, UBound(Tsw), &H1000, &H40)" fullword ascii
@@ -191,6 +201,7 @@ rule Msfpayloads_msf_8 {
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "519717e01f0cb3f460ef88cd70c3de8c7f00fb7c564260bd2908e97d11fde87f"
+      uuid = "54466663-12ef-5fa4-a13c-e80ddbc0f4f8"
    strings:
       $s1 = "[DllImport(\"kernel32.dll\")]" fullword ascii
       $s2 = "[DllImport(\"msvcrt.dll\")]" fullword ascii
@@ -211,6 +222,7 @@ rule Msfpayloads_msf_cmd {
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "9f41932afc9b6b4938ee7a2559067f4df34a5c8eae73558a3959dd677cb5867f"
+      uuid = "71d42c34-a0b0-5173-8f2f-f48a7af0e4ff"
    strings:
       $x1 = "%COMSPEC% /b /c start /b /min powershell.exe -nop -w hidden -e" ascii
    condition:
@@ -224,6 +236,7 @@ rule Msfpayloads_msf_9 {
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "e408678042642a5d341e8042f476ee7cef253871ef1c9e289acf0ee9591d1e81"
+      uuid = "488a2e97-ebc2-5ccf-ab5d-dfed4b534b52"
    strings:
       $s1 = "if (System.getProperty(\"os.name\").toLowerCase().indexOf(\"windows\") != -1)" fullword ascii
       $s2 = ".concat(\".exe\");" fullword ascii
@@ -246,6 +259,7 @@ rule Msfpayloads_msf_10 {
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "3cd74fa28323c0d64f45507675ac08fb09bae4dd6b7e11f2832a4fbc70bb7082"
+      uuid = "3bc3b66a-9f8a-55c2-ae2a-00faa778cef7"
    strings:
       $s1 = { 0c 8b 52 14 8b 72 28 0f b7 4a 26 31 ff ac 3c 61 }
       $s2 = { 01 c7 38 e0 75 f6 03 7d f8 3b 7d 24 75 e4 58 8b }
@@ -262,6 +276,7 @@ rule Msfpayloads_msf_svc {
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "2b02c9c10577ee0c7590d3dadc525c494122747a628a7bf714879b8e94ae5ea1"
+      uuid = "45d1c527-1f90-50f3-8e64-e77d69386b0a"
    strings:
       $s1 = "PAYLOAD:" fullword ascii
       $s2 = ".exehll" ascii
@@ -277,6 +292,7 @@ rule Msfpayloads_msf_11 {
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "d1daf7bc41580322333a893133d103f7d67f5cd8a3e0f919471061d41cf710b6"
+      uuid = "59b0cced-ffdc-5f2f-878c-856883ee275f"
    strings:
       $s1 = ".ExpandEnvironmentStrings(\"%PSModulePath%\") + \"..\\powershell.exe\") Then" fullword ascii
       $s2 = "= CreateObject(\"Scripting.FileSystemObject\")" fullword ascii
@@ -293,6 +309,7 @@ rule Msfpayloads_msf_ref {
       reference = "Internal Research"
       date = "2017-02-09"
       hash1 = "4ec95724b4c2b6cb57d2c63332a1dd6d4a0101707f42e3d693c9aab19f6c9f87"
+      uuid = "517ed365-03c6-5563-984b-dae10464671a"
    strings:
       $s1 = "kernel32.dll WaitForSingleObject)," ascii
       $s2 = "= ([AppDomain]::CurrentDomain.GetAssemblies() | Where-Object { $_.GlobalAssemblyCache -And $_.Location.Split('\\\\')" ascii
@@ -314,6 +331,7 @@ rule MAL_Metasploit_Framework_UA {
       date = "2018-08-16"
       score = 65
       hash1 = "1743e1bd4176ffb62a1a0503a0d76033752f8bd34f6f09db85c2979c04bbdd29"
+      uuid = "e5a18456-3a07-5b58-ad95-086152298a1f"
    strings:
       $s3 = "Mozilla/4.0 (compatible; MSIE 6.1; Windows NT)" fullword ascii
    condition:
@@ -328,6 +346,7 @@ rule HKTL_Meterpreter_inMemory {
       date = "2020-06-29"
       modified = "2023-04-21"
       score = 85
+      uuid = "29c3bb7e-4da8-5924-ada7-2f28d9352009"
    strings: 
       $sxc1 = { 6D 65 74 73 72 76 2E 64 6C 6C 00 00 52 65 66 6C 
                65 63 74 69 76 65 4C 6F 61 64 65 72 }

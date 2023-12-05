@@ -12,6 +12,7 @@ rule RUAG_Tavdig_Malformed_Executable {
     author = "Florian Roth (Nextron Systems)"
     reference = "https://goo.gl/N5MEj0"
     score = 60
+    uuid = "da6357d4-0cdb-5f30-9919-59858963cc41"
   condition:
     uint16(0) == 0x5a4d and /* MZ Header */
     uint32(uint32(0x3C)) == 0x0000AD0B /* malformed PE header > 0x0bad */
@@ -23,6 +24,7 @@ rule RUAG_Bot_Config_File {
     author = "Florian Roth (Nextron Systems)"
     reference = "https://goo.gl/N5MEj0"
     score = 60
+    uuid = "aa3d5f9e-0b23-5180-9e52-a7d705712747"
   strings:
     $s1 = "[CONFIG]" ascii
     $s2 = "name = " ascii
@@ -37,6 +39,7 @@ rule RUAG_Cobra_Malware {
     author = "Florian Roth (Nextron Systems)"
     reference = "https://goo.gl/N5MEj0"
     score = 60
+    uuid = "dd2d591f-6f56-5c31-9f3c-3aa7d174c9a0"
   strings:
     $s1 = "\\Cobra\\Release\\Cobra.pdb" ascii
   condition:
@@ -49,6 +52,7 @@ rule RUAG_Cobra_Config_File {
     author = "Florian Roth (Nextron Systems)"
     reference = "https://goo.gl/N5MEj0"
     score = 60
+    uuid = "b3899d95-acc9-55ca-9025-edecce755ca6"
   strings:
     $h1 = "[NAME]" ascii
 
@@ -72,6 +76,7 @@ rule RUAG_Exfil_Config_File {
     author = "Florian Roth (Nextron Systems)"
     reference = "https://goo.gl/N5MEj0"
     score = 60
+    uuid = "7057bc7b-7f8c-5db8-b7f3-f6c33487b122"
   strings:
     $h1 = "[TRANSPORT]" ascii
 

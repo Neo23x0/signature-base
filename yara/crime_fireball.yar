@@ -17,6 +17,7 @@ rule Fireball_de_svr {
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
       hash1 = "f964a4b95d5c518fd56f06044af39a146d84b801d9472e022de4c929a5b8fdcc"
+      uuid = "29395239-66d8-5340-b884-9b8f036cc27f"
    strings:
       $s1 = "cmd.exe /c MD " fullword ascii
       $s2 = "rundll32.exe \"%s\",%s" fullword wide
@@ -35,6 +36,7 @@ rule Fireball_lancer {
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
       hash1 = "7d68386554e514f38f98f24e8056c11c0a227602ed179d54ed08f2251dc9ea93"
+      uuid = "2209bcb4-74a6-5c39-962c-ccd4ce62619e"
    strings:
       $x1 = "\\instlsp\\Release\\Lancer.pdb" ascii
       $x2 = "lanceruse.dat" fullword wide
@@ -57,6 +59,7 @@ rule QQBrowser {
       date = "2017-06-02"
       score = 50
       hash1 = "adcf6b8aa633286cd3a2ce7c79befab207802dec0e705ed3c74c043dabfc604c"
+      uuid = "457507c5-0411-5d72-891b-ae3e428ea2d6"
    strings:
       $s1 = "TerminateProcessWithoutDump" fullword ascii
       $s2 = ".Downloader.dll" fullword wide
@@ -74,6 +77,7 @@ rule chrome_elf {
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
       hash1 = "e4d4f6fbfbbbf3904ca45d296dc565138a17484c54aebbb00ba9d57f80dfe7e5"
+      uuid = "8680d5b5-e26f-5a3f-aeab-b965afe91027"
    strings:
       $x2 = "schtasks /Create /SC HOURLY /MO %d /ST 00:%02d:00 /TN \"%s\" /TR \"%s\" /RU \"SYSTEM\"" fullword wide
       $s6 = "aHR0cDovL2R2Mm0xdXVtbnNndHUuY2xvdWRmcm9udC5uZXQvdjQvZ3RnLyVzP2FjdGlvbj12aXNpdC5jaGVsZi5pbnN0YWxs" fullword ascii /* base64 encoded string 'http://dv2m1uumnsgtu.cloudfront.net/v4/gtg/%s?action=visit.chelf.install' */
@@ -94,6 +98,7 @@ rule Fireball_regkey {
       date = "2017-06-02"
       modified = "2022-12-21"
       hash1 = "fff2818caa9040486a634896f329b8aebaec9121bdf9982841f0646763a1686b"
+      uuid = "6e22bb93-8c8b-510f-a9e4-6e57c392c2ae"
    strings:
       $s1 = "\\WinMain\\Release\\WinMain.pdb" ascii
       $s2 = "ScreenShot" fullword wide
@@ -110,6 +115,7 @@ rule Fireball_winsap {
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
       hash1 = "c7244d139ef9ea431a5b9cc6a2176a6a9908710892c74e215431b99cd5228359"
+      uuid = "e68e7738-f325-5b73-9e61-4e2413b7b7be"
    strings:
       $s1 = "aHR0cDovL2" ascii /* base64 encoded string 'http://d3i1asoswufp5k.cloudfront.net/v4/gtg/%s?action=visit.winsap.work&update3=version,%s' */
       $s2 = "%s\\svchost.exe -k %s" fullword wide
@@ -130,6 +136,7 @@ rule Fireball_archer {
       date = "2017-06-02"
       modified = "2022-12-21"
       hash1 = "9b4971349ae85aa09c0a69852ed3e626c954954a3927b3d1b6646f139b930022"
+      uuid = "16bb95c1-af69-5688-8999-f097d02d2ffc"
    strings:
       $x1 = "\\archer_lyl\\Release\\Archer_Input.pdb" ascii
 
@@ -149,6 +156,7 @@ rule clearlog {
       reference = "https://goo.gl/4pTkGQ"
       date = "2017-06-02"
       hash1 = "14093ce6d0fe8ab60963771f48937c669103842a0400b8d97f829b33c420f7e3"
+      uuid = "3eb58a7a-b04d-52c2-8c3c-c149da8d4aa8"
    strings:
       $x1 = "\\ClearLog\\Release\\logC.pdb" ascii
 
@@ -171,6 +179,7 @@ rule Fireball_gubed {
       date = "2017-06-02"
       modified = "2022-12-21"
       hash1 = "e3f69a1fb6fcaf9fd93386b6ba1d86731cd9e5648f7cff5242763188129cd158"
+      uuid = "cba2913f-4d9a-5925-ad9a-f5815a635291"
    strings:
       $x1 = "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\MRT.exe" fullword wide
       $x2 = "tIphlpapi.dll" fullword wide

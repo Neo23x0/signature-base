@@ -3,6 +3,7 @@ rule shimrat {
       description = "Detects ShimRat and the ShimRat loader"
       author = "Yonathan Klijnsma (yonathan.klijnsma@fox-it.com)"
       date = "20/11/2015"
+      uuid = "21431895-1180-5552-8e82-1589992ffa1d"
    strings:
       $dll = ".dll"
       $dat = ".dat"
@@ -29,6 +30,7 @@ rule shimratreporter {
       description = "Detects ShimRatReporter"
       author = "Yonathan Klijnsma (yonathan.klijnsma@fox-it.com)"
       date = "20/11/2015"
+      uuid = "01688b3c-2f06-518f-939d-4d65529be5ae"
    strings:
       $IpInfo = "IP-INFO"
       $NetworkInfo = "Network-INFO"

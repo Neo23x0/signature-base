@@ -17,6 +17,7 @@ rule TA459_Malware_May17_1 {
       reference = "https://goo.gl/RLf9qU"
       date = "2017-05-31"
       hash1 = "5fd61793d498a395861fa263e4438183a3c4e6f1e4f098ac6e97c9d0911327bf"
+      uuid = "eb5d2464-ab95-5f5d-8b20-fa023da53130"
    strings:
       $s3 = "xtsewy" fullword ascii
       $s6 = "CW&mhAklnfVULL" ascii
@@ -32,6 +33,7 @@ rule TA459_Malware_May17_2 {
       reference = "https://goo.gl/RLf9qU"
       date = "2017-05-31"
       hash1 = "4601133e94c4bc74916a9d96a5bc27cc3125cdc0be7225b2c7d4047f8506b3aa"
+      uuid = "62954422-4657-5ded-9883-bb78eac697fb"
    strings:
       $a1 = "Mcutil.dll" fullword ascii
       $a2 = "mcut.exe" fullword ascii

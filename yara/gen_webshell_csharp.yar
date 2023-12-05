@@ -7,6 +7,7 @@ rule WEBSHELL_Csharp_Hash_String_Oct22 {
 		hash = "29c187ad46d3059dc25d5f0958e0e8789fb2a51b9daaf90ea27f001b1a9a603c"
 		date = "2022-10-27"
 		score = 60
+		uuid = "c7d459be-5e61-57b7-b738-051c0cec62d2"
 	strings:
 		$gen1 = "void Page_Load" ascii
 		$gen2 = "FromBase64String" ascii

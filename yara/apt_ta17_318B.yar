@@ -12,6 +12,7 @@ rule TA17_318B_volgmer {
       author = "US CERT"
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-318B"
       date = "2017-11-15"
+      uuid = "20a7f64b-0fee-5235-ac91-2fc811497ac6"
    strings:
       $s = "Mozillar/"
    condition:
@@ -45,6 +46,7 @@ rule Volgmer_Malware {
       hash6 = "fee0081df5ca6a21953f3a633f2f64b7c0701977623d3a4ec36fff282ffe73b9"
       hash7 = "53e9bca505652ef23477e105e6985102a45d9a14e5316d140752df6f3ef43d2d"
       hash8 = "1d0999ba3217cbdb0cc85403ef75587f747556a97dee7c2616e28866db932a0d"
+      uuid = "a8df5f70-69e7-5c95-8af7-7dda6bb9c77a"
    strings:
       $x1 = "User-Agent: Mozillar/5.0" fullword ascii
       $x2 = "[Cmd] - CMD_BOTCMD_CONNLOG_GET" fullword wide

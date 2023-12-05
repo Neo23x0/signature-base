@@ -15,6 +15,7 @@ rule Invoke_OSiRis {
       reference = "Internal Research"
       date = "2017-03-27"
       hash1 = "19e4a8b07f85c3d4c396d0c4e839495c9fba9405c06a631d57af588032d2416e"
+      uuid = "b9f4e5dd-2366-5898-9f46-17584139469f"
    strings:
       $x1 = "$null = Iwmi Win32_Process -EnableA -Impers 3 -AuthenPacketprivacy -Name Create -Arg $ObfusK -Computer $Target" fullword ascii
       $x2 = "Invoke-OSiRis" ascii

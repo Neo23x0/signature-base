@@ -7,6 +7,7 @@ rule MAL_ELF_ReverseShell_SSLShell_Jun23_1 {
       date = "2023-06-07"
       score = 75
       hash1 = "8849a3273e0362c45b4928375d196714224ec22cb1d2df5d029bf57349860347"
+      uuid = "91b34eb7-61d2-592e-a444-249da43994ca"
    strings:
       $sc1 = { 00 2D 63 00 2F 62 69 6E 2F 73 68 00 }
       $s1 = "SSLShell"
@@ -25,6 +26,7 @@ rule MAL_ELF_SALTWATER_Jun23_1 {
       date = "2023-06-07"
       score = 80
       hash1 = "601f44cc102ae5a113c0b5fe5d18350db8a24d780c0ff289880cc45de28e2b80"
+      uuid = "10a038f6-6096-5d3a-aaf5-db441685102b"
    strings:
       $x1 = "libbindshell.so"
       

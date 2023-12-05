@@ -6,6 +6,7 @@ rule SUSP_Doc_WindowsInstaller_Call_Feb22_1 {
         tlp = "white"
         reference = "https://inquest.net/blog/2022/02/24/dangerously-thinbasic"
         reference2 = "https://twitter.com/threatinsight/status/1497355737844133895"
+        uuid = "8f2e8f91-74e0-5574-9c0a-1479d6114212"
     strings:
         $ = "WindowsInstaller.Installer$"
         $ = "CreateObject"

@@ -16,6 +16,7 @@ rule OilRig_Strings_Oct17 {
       reference = "https://researchcenter.paloaltonetworks.com/2017/10/unit42-oilrig-group-steps-attacks-new-delivery-documents-new-injector-trojan/"
       date = "2017-10-18"
       modified = "2022-12-21"
+      uuid = "edf7c7ca-0c58-5507-8d99-83078ff8947a"
    strings:
       $x1 = "%localappdata%\\srvHealth.exe" fullword wide ascii
       $x2 = "%localappdata%\\srvBS.txt" fullword wide ascii
@@ -47,6 +48,7 @@ rule OilRig_ISMAgent_Campaign_Samples1 {
       date = "2017-10-18"
       hash1 = "119c64a8b35bd626b3ea5f630d533b2e0e7852a4c59694125ff08f9965b5f9cc"
       hash2 = "0ccb2117c34e3045a4d2c0d193f1963c8c0e8566617ed0a561546c932d1a5c0c"
+      uuid = "237fe7af-a2ab-51ae-bc96-3af46b08622a"
    strings:
       $s1 = "###$$$TVqQAAMAAAAEAAAA" ascii
       $s2 = "C:\\Users\\J-Win-7-32-Vm\\Desktop\\error.jpg" fullword wide
@@ -67,6 +69,7 @@ rule OilRig_ISMAgent_Campaign_Samples2 {
       date = "2017-10-18"
       hash1 = "fcad263d0fe2b418db05f47d4036f0b42aaf201c9b91281dfdcb3201b298e4f4"
       hash2 = "33c187cfd9e3b68c3089c27ac64a519ccc951ccb3c74d75179c520f54f11f647"
+      uuid = "08771b23-1d0e-5da7-b42c-005ed257e2d1"
    strings:
       $x1 = "PolicyConverter.exe" fullword wide
       $x2 = "SrvHealth.exe" fullword wide
@@ -86,6 +89,7 @@ rule OilRig_ISMAgent_Campaign_Samples3 {
       reference = "https://goo.gl/JQVfFP"
       date = "2017-10-18"
       hash1 = "a9f1375da973b229eb649dc3c07484ae7513032b79665efe78c0e55a6e716821"
+      uuid = "e26510bd-d183-566a-a185-ebed7a81401c"
    strings:
       $x1 = "cmd /c schtasks /query /tn TimeUpdate > NUL 2>&1" ascii
       $x2 = "schtasks /create /sc minute /mo 0002 /tn TimeUpdate /tr" fullword ascii

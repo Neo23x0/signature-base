@@ -8,6 +8,7 @@ rule APT_RU_APT27_HyperBro_Vftrace_Loader_Jan22_1 {
         sharing = "TLP:WHITE"
         reference = "https://www.verfassungsschutz.de/SharedDocs/publikationen/DE/cyberabwehr/2022-01-bfv-cyber-brief.pdf"
         hash1 = "333B52C2CFAC56B86EE9D54AEF4F0FF4144528917BC1AA1FE1613EFC2318339A"
+        uuid = "b049e163-2694-5fb9-a3a3-98cc77bcd0ca"
     strings:
         $decoder_routine = { 8A ?? 41 10 00 00 8B ?? 28 ?? ?? 4? 3B ?? 72 ?? }
     condition:
@@ -24,6 +25,7 @@ rule APT_CN_APT27_Compromised_Certficate_Jan22_1 {
       date = "2022-01-29"
       score = 80
       reference = "https://www.verfassungsschutz.de/SharedDocs/publikationen/DE/cyberabwehr/2022-01-bfv-cyber-brief.pdf"
+      uuid = "f2f015af-219d-51ab-9529-01687a879ebb"
    condition:
       for any i in (0 .. pe.number_of_signatures) : (
          pe.signatures[i].issuer contains "DigiCert SHA2 Assured ID Code Signing CA" and
@@ -38,6 +40,7 @@ rule HvS_APT27_HyperBro_Decrypted_Stage2 {
       reference = "https://www.hvs-consulting.de/en/threat-intelligence-report-emissary-panda-apt27"
       date = "2022-02-07"
       hash1 = "fc5a58bf0fce9cb96f35ee76842ff17816fe302e3164bc7c6a5ef46f6eff67ed"
+      uuid = "039e5d41-eadb-5c53-82cd-20ffd4105326"
    strings:
       $lznt1_compressed_pe_header_small = { FC B9 00 4D 5A 90 } // This is the lznt1 compressed PE header
 
@@ -62,6 +65,7 @@ rule HvS_APT27_HyperBro_Stage3 {
       date = "2022-02-07"
       modified = "2023-01-07"
       hash1 = "624e85bd669b97bc55ed5c5ea5f6082a1d4900d235a5d2e2a5683a04e36213e8"
+      uuid = "b4002777-f129-5177-a8f1-690012a207fa"
    strings:
       $s1 = "\\cmd.exe /A" wide
       $s2 = "vftrace.dll" fullword wide
@@ -87,6 +91,7 @@ rule HvS_APT27_HyperBro_Stage3_C2 {
       reference = "https://www.hvs-consulting.de/en/threat-intelligence-report-emissary-panda-apt27"
       date = "2022-02-07"
       hash1 = "624e85bd669b97bc55ed5c5ea5f6082a1d4900d235a5d2e2a5683a04e36213e8"
+      uuid = "d1fe03b9-440c-5127-9572-dddcd5c9966b"
    strings:
       $s1 = "api/v2/ajax" ascii wide nocase
       $s2 = "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36" ascii wide nocase
@@ -103,6 +108,7 @@ rule HvS_APT27_HyperBro_Stage3_Persistence {
       reference = "https://www.hvs-consulting.de/en/threat-intelligence-report-emissary-panda-apt27"
       date = "2022-02-07"
       hash1 = "624e85bd669b97bc55ed5c5ea5f6082a1d4900d235a5d2e2a5683a04e36213e8"
+      uuid = "2bb1d28b-5fc4-5f0b-b546-c8b8192b0d48"
    strings:
       $ = "SOFTWARE\\WOW6432Node\\Microsoft\\config_" ascii
       $ = "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\windefenders" ascii
@@ -119,6 +125,7 @@ rule HvS_APT27_HyperBro_Encrypted_Stage2 {
       reference = "https://www.hvs-consulting.de/en/threat-intelligence-report-emissary-panda-apt27"
       date = "2022-02-07"
       hash1 = "fc5a58bf0fce9cb96f35ee76842ff17816fe302e3164bc7c6a5ef46f6eff67ed"
+      uuid = "fa4fe057-4c3f-5785-a8d3-588398360996"
    strings:
       $encrypted_pe_header_shift_0 = { fc b9 00 4d 5a 90 00 03 00 00 00 82 04 00 30 ff ff 00 }
       $encrypted_pe_header_shift_1 = { fd ba 01 4e 5b 91 01 04 01 01 01 83 05 01 31 00 00 01 }

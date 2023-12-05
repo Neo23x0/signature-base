@@ -5,6 +5,7 @@ rule APT_Area1_SSF_PlugX {
       reference = "https://cdn.area1security.com/reports/Area-1-Security-PhishingDiplomacy.pdf"
       date = "2018-12-19"
       author = "Area 1"
+      uuid = "a5b4e781-f0d1-55df-926c-2d321aa48139"
    strings:
       $feature_call = { 8b 0? 56 68 ?? ?? ?? ?? 68 ?? ?? ?? ?? 68 ?? ?? ?? ??
          6a 07 6a ff ff d0 8b f0 85 f6 74 14 }
@@ -31,6 +32,7 @@ rule APT_Area1_SSF_GoogleSend_Strings {
       reference = "https://cdn.area1security.com/reports/Area-1-Security-PhishingDiplomacy.pdf"
       date = "2018-12-19"
       author = "Area 1 (modified by Florian Roth)"
+      uuid = "66a2faa1-b133-528c-91a9-06a43d2c00a0"
    strings:
       $conf = "RefreshToken.ini" wide
       $client_id = "Enter your client ID here" wide

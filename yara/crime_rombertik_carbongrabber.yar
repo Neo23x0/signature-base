@@ -18,6 +18,7 @@ rule Rombertik_CarbonGrabber {
 		hash2 = "aeb94064af2a6107a14fd32f39cb502e704cd0ab"
 		hash3 = "c2005c8d1a79da5e02e6a15d00151018658c264c" 
 		hash4 = "98223d4ec272d3a631498b621618d875dd32161d" 	
+		uuid = "b3aee336-9f3b-5fae-928d-8357408a7b69"
 	strings:
 		$x1 = "ZwGetWriteWatch" fullword ascii
 		$x2 = "OutputDebugStringA" fullword ascii
@@ -37,6 +38,7 @@ rule Rombertik_CarbonGrabber_Panel_InstallScript {
 		reference = "http://blogs.cisco.com/security/talos/rombertik"
 		date = "2015-05-05"
 		hash = "cd6c152dd1e0689e0bede30a8bd07fef465fbcfa"
+		uuid = "f6c04e27-bbab-5012-a4f9-71d49d252b83"
 	strings:
 		$s0 = "$insert = \"INSERT INTO `logs` (`id`, `ip`, `name`, `host`, `post`, `time`, `bro" ascii
 		$s3 = "`post` text NOT NULL," fullword ascii
@@ -58,6 +60,7 @@ rule Rombertik_CarbonGrabber_Panel {
 		reference = "http://blogs.cisco.com/security/talos/rombertik"
 		date = "2015-05-05"
 		hash = "e6e9e4fc3772ff33bbeeda51f217e9149db60082"
+		uuid = "f6c04e27-bbab-5012-a4f9-71d49d252b83"
 	strings:
 		$s0 = "echo '<meta http-equiv=\"refresh\" content=\"0;url=index.php?a=login\">';" fullword ascii
 		$s1 = "echo '<meta http-equiv=\"refresh\" content=\"2;url='.$website.'/index.php?a=login" ascii
@@ -77,6 +80,7 @@ rule Rombertik_CarbonGrabber_Builder {
 		reference = "http://blogs.cisco.com/security/talos/rombertik"
 		date = "2015-05-05"
 		hash = "b50ecc0ba3d6ec19b53efe505d14276e9e71285f"
+		uuid = "3233c139-ac06-576c-9870-51306d5aa385"
 	strings:
 		$s0 = "c:\\users\\iden\\documents\\visual studio 2010\\Projects\\FormGrabberBuilderC++" ascii
 		$s1 = "Host(www.panel.com): " fullword ascii
@@ -95,6 +99,7 @@ rule Rombertik_CarbonGrabber_Builder_Server {
 		reference = "http://blogs.cisco.com/security/talos/rombertik"
 		date = "2015-05-05"
 		hash = "895fab8d55882eac51d4b27a188aa67205ff0ae5"
+		uuid = "742003a2-3716-5ad9-a720-b9e2be71554a"
 	strings:
 		$s0 = "C:\\WINDOWS\\system32\\svchost.exe" fullword ascii
 		$s3 = "Software\\Microsoft\\Windows\\Currentversion\\RunOnce" fullword ascii

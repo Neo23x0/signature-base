@@ -7,6 +7,7 @@ rule MAL_Emotet_JS_Dropper_Oct19_1 {
       date = "2019-10-03"
       hash1 = "38295d728522426672b9497f63b72066e811f5b53a14fb4c4ffc23d4efbbca4a"
       hash2 = "9bc004a53816a5b46bfb08e819ac1cf32c3bdc556a87a58cbada416c10423573"
+      uuid = "34605452-8f3d-540a-b66f-4f68d9187003"
    strings:
       $xc1 = { FF FE 76 00 61 00 72 00 20 00 61 00 3D 00 5B 00
                27 00 }
@@ -23,6 +24,7 @@ rule MAL_Emotet_Jan20_1 {
       reference = "https://app.any.run/tasks/5e81638e-df2e-4a5b-9e45-b07c38d53929/"
       date = "2020-01-29"
       hash1 = "e7c22ccdb1103ee6bd15c528270f56913bb2f47345b360802b74084563f1b73d"
+      uuid = "334ae7e5-0a46-5e95-bf53-0f343db4e4de"
    strings:
       $op0 = { 74 60 8d 34 18 eb 54 03 c3 50 ff 15 18 08 41 00 }
       $op1 = { 03 fe 66 39 07 0f 85 2a ff ff ff 8b 4d f0 6a 20 }
@@ -42,6 +44,7 @@ rule MAL_Emotet_BKA_Quarantine_Apr21 {
       note = "The quarantine folder depends on the scope of the initial emotet infection (user or administrator). It is the temporary folder as returned by GetTempPathW under a filename starting with UDP as returned by GetTempFileNameW. To prevent accidental reinfection by a user, the quarantined emotet is encrypted using RC4 and a 0x20 bytes long key found at the start of the quarantined file (see $key)."
       sharing = "TLP:WHITE"
       date = "2021-03-23"
+      uuid = "22c27d82-00cb-5d2f-a1cc-9f8b4c60aecd"
    strings:
       $key = { c3 da da 19 63 45 2c 86 77 3b e9 fd 24 64 fb b8 07 fe 12 d0 2a 48 13 38 48 68 e8 ae 91 3c ed 82 }
    condition:
@@ -56,6 +59,7 @@ rule MAL_Emotet_BKA_Cleanup_Apr21 {
       note = "The binary will replace the original emotet by copying it to a quarantine. It also contains a routine to perform a self-deinstallation on the 25th of April 2021. The three-month timeframe between rollout and self-deinstallation was chosen primarily for evidence purposes as well as to allow remediation."
       sharing = "TLP:WHITE"
       date = "2021-03-23"
+      uuid = "10d93918-8a5e-54a3-81c6-f6ff68562e13"
    strings:
       $key = { c3 da da 19 63 45 2c 86 77 3b e9 fd 24 64 fb b8 07 fe 12 d0 2a 48 13 38 48 68 e8 ae 91 3c ed 82 }
    condition:
@@ -75,6 +79,7 @@ rule EXT_MAL_SystemBC_Mar22_1 {
         reference = "https://twitter.com/Cryptolaemus1/status/1502069552246575105"
         reference2 = "https://medium.com/walmartglobaltech/inside-the-systembc-malware-as-a-service-9aa03afd09c6"
         hash1 = "c926338972be5bdfdd89574f3dc2fe4d4f70fd4e24c1c6ac5d2439c7fcc50db5"
+        uuid = "39e1a131-bd2c-56e9-961f-2b2c31f29e85"
     strings:
         $sx1 = "-WindowStyle Hidden -ep bypass -file" ascii
         $sx2 = "BEGINDATA" ascii

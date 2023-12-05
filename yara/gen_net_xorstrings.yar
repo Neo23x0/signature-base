@@ -7,6 +7,7 @@ rule MSIL_SUSP_OBFUSC_XorStringsNet {
         reference = "https://github.com/dr4k0nia/yara-rules"
         score = 75
         date = "26/03/2023"
+        uuid = "f0724ca6-4bfe-5b88-9396-a58aa7461fd6"
     strings:
         $pattern = { 06 1E 58 07 8E 69 FE 17 }
 

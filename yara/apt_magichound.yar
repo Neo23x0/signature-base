@@ -15,6 +15,7 @@ rule APT_PupyRAT_PY {
       reference = "https://www.secureworks.com/blog/iranian-pupyrat-bites-middle-eastern-organizations"
       date = "2017-02-17"
       hash1 = "8d89f53b0a6558d6bb9cdbc9f218ef699f3c87dd06bc03dd042290dedc18cb71"
+      uuid = "cdd689e3-437e-514d-a058-fad80ce0639e"
    strings:
       $x1 = "reflective_inject_dll" fullword ascii
       $x2 = "ImportError: pupy builtin module not found !" fullword ascii
@@ -39,6 +40,7 @@ rule APT_MagicHound_MalMacro {
       super_rule = 1
       hash1 = "66d24a529308d8ab7b27ddd43a6c2db84107b831257efb664044ec4437f9487b"
       hash2 = "e5b643cb6ec30d0d0b458e3f2800609f260a5f15c4ac66faf4ebf384f7976df6"
+      uuid = "ad573f52-dbda-5852-ad73-9ef47dd6e7df"
    strings:
       $s1 = "powershell.exe " fullword ascii
       $s2 = "CommandButton1_Click" fullword ascii

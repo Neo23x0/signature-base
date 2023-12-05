@@ -6,6 +6,7 @@ rule PLEAD_Downloader_Jun18_1 {
       reference = "https://blog.jpcert.or.jp/2018/06/plead-downloader-used-by-blacktech.html"
       date = "2018-06-16"
       hash1 = "a26df4f62ada084a596bf0f603691bc9c02024be98abec4a9872f0ff0085f940"
+      uuid = "19d588d8-1f03-5f34-b82e-b645c28a19a4"
    strings:
       $s1 = "%02d:%02d:%02d" ascii fullword
       $s2 = "%02d-%02d-%02d" ascii fullword

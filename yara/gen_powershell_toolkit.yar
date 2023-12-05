@@ -16,6 +16,7 @@ rule ps1_toolkit_PowerUp {
 		date = "2016-09-04"
 		score = 80
 		hash1 = "fc65ec85dbcd49001e6037de9134086dd5559ac41ac4d1adf7cab319546758ad"
+		uuid = "ff3eeec3-602d-5824-8a50-aed2081f49bc"
 	strings:
 		$s1 = "iex \"$Env:SystemRoot\\System32\\inetsrv\\appcmd.exe list vdir /text:vdir.name\" | % { " fullword ascii
 		$s2 = "iex \"$Env:SystemRoot\\System32\\inetsrv\\appcmd.exe list apppools /text:name\" | % { " fullword ascii
@@ -38,6 +39,7 @@ rule ps1_toolkit_Inveigh_BruteForce {
 		date = "2016-09-04"
 		score = 80
 		hash1 = "a2ae1e02bcb977cd003374f551ed32218dbcba3120124e369cc150b9a63fe3b8"
+		uuid = "cdc298d3-f9ac-5472-bdc9-0dc51ad91e4a"
 	strings:
 		$s1 = "Import-Module .\\Inveigh.psd1;Invoke-InveighBruteForce -SpooferTarget 192.168.1.11 " fullword ascii
 		$s2 = "$(Get-Date -format 's') - Attempting to stop HTTP listener\")|Out-Null" fullword ascii
@@ -55,6 +57,7 @@ rule ps1_toolkit_Invoke_Shellcode {
 		date = "2016-09-04"
 		score = 80
 		hash1 = "24abe9f3f366a3d269f8681be80c99504dea51e50318d83ee42f9a4c7435999a"
+		uuid = "193d64b6-ffba-55fb-ab95-9c78552b8d68"
 	strings:
 		$s1 = "Get-ProcAddress kernel32.dll WriteProcessMemory" fullword ascii
 		$s2 = "Get-ProcAddress kernel32.dll OpenProcess" fullword ascii
@@ -74,6 +77,7 @@ rule ps1_toolkit_Invoke_Mimikatz {
 		date = "2016-09-04"
 		score = 80
 		hash1 = "5c31a2e3887662467cfcb0ac37e681f1d9b0f135e6dfff010aae26587e03d8c8"
+		uuid = "7c0252a1-fbe4-5519-949b-285073abb21f"
 	strings:
 		$s1 = "Get-ProcAddress kernel32.dll WriteProcessMemory" fullword ascii
 		$s2 = "ps | where { $_.Name -eq $ProcName } | select ProcessName, Id, SessionId" fullword ascii
@@ -94,6 +98,7 @@ rule ps1_toolkit_Invoke_RelfectivePEInjection {
 		date = "2016-09-04"
 		score = 80
 		hash1 = "510b345f821f93c1df5f90ac89ad91fcd0f287ebdabec6c662b716ec9fddb03a"
+		uuid = "75ceb01e-103f-55b2-8362-42d22a35a36a"
 	strings:
 		$x1 = "Invoke-ReflectivePEInjection -PEBytes $PEBytes -FuncReturnType WString -ComputerName (Get-Content targetlist.txt)" fullword ascii
 		$x2 = "Invoke-ReflectivePEInjection -PEBytes $PEBytes -FuncReturnType WString -ComputerName Target.local" fullword ascii
@@ -114,6 +119,7 @@ rule ps1_toolkit_Persistence {
 		date = "2016-09-04"
 		score = 80
 		hash1 = "e1a4dd18b481471fc25adea6a91982b7ffed1c2d393c8c17e6e542c030ac6cbd"
+		uuid = "38115391-75ac-5ba8-b31b-dcf4c66179b0"
 	strings:
 		$s1 = "\"`\"```$Filter=Set-WmiInstance -Class __EventFilter -Namespace ```\"root\\subscription```" ascii
 		$s2 = "}=$PROFILE.AllUsersAllHosts;${" ascii
@@ -138,6 +144,7 @@ rule ps1_toolkit_Invoke_Mimikatz_RelfectivePEInjection {
 		super_rule = 1
 		hash1 = "5c31a2e3887662467cfcb0ac37e681f1d9b0f135e6dfff010aae26587e03d8c8"
 		hash2 = "510b345f821f93c1df5f90ac89ad91fcd0f287ebdabec6c662b716ec9fddb03a"
+		uuid = "e9471f95-48e1-57e0-b0be-f916c574a6a7"
 	strings:
 		$s1 = "[IntPtr]$DllAddress = [System.Runtime.InteropServices.Marshal]::PtrToStructure($ReturnValMem, [Type][IntPtr])" fullword ascii
 		$s2 = "if ($GetCommandLineAAddr -eq [IntPtr]::Zero -or $GetCommandLineWAddr -eq [IntPtr]::Zero)" fullword ascii
@@ -163,6 +170,7 @@ rule ps1_toolkit_Inveigh_BruteForce_2 {
 		date = "2016-09-04"
 		score = 80
 		hash1 = "a2ae1e02bcb977cd003374f551ed32218dbcba3120124e369cc150b9a63fe3b8"
+		uuid = "1319b03d-67e8-5155-8037-e3375e39f6a0"
 	strings:
 		$s1 = "}.NTLMv2_file_queue[0]|Out-File ${" ascii
 		$s2 = "}.NTLMv2_file_queue.RemoveRange(0,1)" ascii
@@ -181,6 +189,7 @@ rule ps1_toolkit_PowerUp_2 {
 		date = "2016-09-04"
 		score = 80
 		hash1 = "fc65ec85dbcd49001e6037de9134086dd5559ac41ac4d1adf7cab319546758ad"
+		uuid = "11322a66-67d4-574b-acef-35d06e6f95f4"
 	strings:
 		$s1 = "if($MyConString -like $([Text.Encoding]::Unicode.GetString([Convert]::" ascii
 		$s2 = "FromBase64String('KgBwAGEAcwBzAHcAbwByAGQAKgA=')))) {" ascii
@@ -201,6 +210,7 @@ rule ps1_toolkit_Persistence_2 {
 		date = "2016-09-04"
 		score = 80
 		hash1 = "e1a4dd18b481471fc25adea6a91982b7ffed1c2d393c8c17e6e542c030ac6cbd"
+		uuid = "d79c328b-4471-52bb-882c-12d2e1302c1e"
 	strings:
 		$s1 = "FromBase64String('UwBjAGgAZQBkAHUAbABlAGQAVABhAHMAawBPAG4ASQBkAGwAZQA=')" ascii
 		$s2 = "FromBase64String('UwBjAGgAZQBkAHUAbABlAGQAVABhAHMAawBEAGEAaQBsAHkA')" ascii
@@ -224,6 +234,7 @@ rule ps1_toolkit_Inveigh_BruteForce_3 {
 		date = "2016-09-04"
 		score = 80
 		hash3 = "a2ae1e02bcb977cd003374f551ed32218dbcba3120124e369cc150b9a63fe3b8"
+		uuid = "d284e93b-dd65-5a39-84e2-287feb6ae05b"
 	strings:
 		$s1 = "::FromBase64String('TgBUAEwATQA=')" ascii
 		$s2 = "::FromBase64String('KgBTAE0AQgAgAHIAZQBsAGEAeQAgACoA')))" ascii

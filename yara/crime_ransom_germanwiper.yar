@@ -7,6 +7,7 @@ rule MAL_Ransomware_GermanWiper {
       hash_packed = "41364427dee49bf544dcff61a6899b3b7e59852435e4107931e294079a42de7c"
       hash_unpacked = "708967cad421bb2396017bdd10a42e6799da27e29264f4b5fb095c0e3503e447"
 
+      uuid = "e7587691-f69a-53e7-bab2-875179fbfa19"
    strings:
       $x_Mutex1 = "HSDFSD-HFSD-3241-91E7-ASDGSDGHH" ascii
       $x_Mutex2 = "cFgxTERNWEVhM2V" ascii

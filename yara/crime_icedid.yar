@@ -4,6 +4,7 @@ rule MAL_IcedID_Fake_GZIP_Bokbot_202104 {
       date = "2021-04-20"
       description = "Detects fake gzip provided by CC"
       reference = "https://www.telekom.com/en/blog/group/article/let-s-set-ice-on-fire-hunting-and-detecting-icedid-infections-627240"
+      uuid = "538d84d8-aff2-571c-ba60-102f18262434"
    strings:
       $gzip = {1f 8b 08 08 00 00 00 00 00 00 75 70 64 61 74 65}
    condition:
@@ -17,6 +18,7 @@ rule MAL_IcedID_GZIP_LDR_202104 {
       modified = "2023-01-27"
       description = "2021 initial Bokbot / Icedid loader for fake GZIP payloads"
       reference = "https://www.telekom.com/en/blog/group/article/let-s-set-ice-on-fire-hunting-and-detecting-icedid-infections-627240"
+      uuid = "fbf578e7-c318-5f67-82df-f93232362a23"
    strings:
       $internal_name = "loader_dll_64.dll" fullword
 
@@ -43,6 +45,7 @@ rule MAL_IcedId_Core_LDR_202104 {
       date = "2021-04-13"
       description = "2021 loader for Bokbot / Icedid core (license.dat)"
       reference = "https://www.telekom.com/en/blog/group/article/let-s-set-ice-on-fire-hunting-and-detecting-icedid-infections-627240"
+      uuid = "f096e18d-3a31-5236-b3c3-0df39b408d9a"
    strings:
       $internal_name = "sadl_64.dll" fullword
 
@@ -68,6 +71,7 @@ rule MAL_IceId_Core_202104 {
       date = "2021-04-12"
       description = "2021 Bokbot / Icedid core"
       reference = "https://www.telekom.com/en/blog/group/article/let-s-set-ice-on-fire-hunting-and-detecting-icedid-infections-627240"
+      uuid = "526a73da-415f-58fe-bb5f-4c3df6b2e647"
    strings:
       $internal_name = "fixed_loader64.dll" fullword
 

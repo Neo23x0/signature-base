@@ -18,6 +18,7 @@ rule PowerShell_Suite_Hacktools_Gen_Strings {
       hash10 = "5608f25930f99d78804be8c9c39bd33f4f8d14360dd1e4cc88139aa34c27376d"
       hash11 = "68b6c0b5479ecede3050a2f44f8bb8783a22beeef4a258c4ff00974f5909b714"
       hash12 = "da25010a22460bbaabff0f7004204aae7d830348e8a4543177b1f3383b2c3100"
+      uuid = "afccdd99-da83-5fde-9e21-52220ded1e47"
    strings:
       $ = "[!] NtCreateThreadEx failed.." fullword ascii
       $ = "[?] Executing mmc.." ascii
@@ -52,6 +53,7 @@ rule PowerShell_Suite_Eidolon {
       reference = "https://github.com/FuzzySecurity/PowerShell-Suite"
       date = "2017-12-27"
       hash1 = "db31367410d0a9ffc9ed37f423a4b082639591be7f46aca91f5be261b23212d5"
+      uuid = "5440d8fc-b939-556f-a8a0-ef5feb29e32f"
    strings:
       $ = "[+] Eidolon entry point:" ascii
       $ = "C:\\PS> Start-Eidolon -Target C:\\Some\\File.Path -Mimikatz -Verbose" fullword ascii

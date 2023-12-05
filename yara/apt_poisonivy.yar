@@ -8,6 +8,7 @@ rule PoisonIvy_Sample_APT {
 		reference = "VT Analysis"
 		date = "2015-06-03"
 		hash = "b874b76ff7b281c8baa80e4a71fc9be514093c70"
+		uuid = "8d3b8222-8949-57dc-99b7-092189416efd"
 	strings:
 		$s0 = "pidll.dll" fullword ascii /* score: '11.02' */
 		$s1 = "sens32.dll" fullword wide /* score: '11.015' */
@@ -29,6 +30,7 @@ rule PoisonIvy_Sample_APT_2 {
 		reference = "VT Analysis"
 		date = "2015-06-03"
 		hash = "333f956bf3d5fc9b32183e8939d135bc0fcc5770"
+		uuid = "4d64ccd2-add8-5749-8178-f2c5336e1495"
 	strings:
 		$s0 = "pidll.dll" fullword ascii /* score: '11.02' */
 		$s1 = "sens32.dll" fullword wide /* score: '11.015' */
@@ -64,6 +66,7 @@ rule PoisonIvy_Sample_APT_3 {
 		reference = "VT Analysis"
 		date = "2015-06-03"
 		hash = "df3e1668ac20edecc12f2c1a873667ea1a6c3d6a"
+		uuid = "e2e0bf75-7704-585f-b2b3-727d14946c76"
 	strings:
 		$s0 = "\\notepad.exe" ascii /* score: '11.025' */
 		$s1 = "\\RasAuto.dll" ascii /* score: '11.025' */
@@ -82,6 +85,7 @@ rule PoisonIvy_Sample_APT_4 {
 		reference = "VT Analysis"
 		date = "2015-06-03"
 		hash = "558f0f0b728b6da537e2666fbf32f3c9c7bd4c0c"
+		uuid = "02bf546b-99a2-5ffb-8ee7-7bb005ef953b"
 	strings:
 		$s0 = "Microsoft Software installation Service" fullword wide /* PEStudio Blacklist: strings */ /* score: '15.04' */
 		$s1 = "idll.dll" fullword ascii /* score: '11.02' */
@@ -105,6 +109,7 @@ rule PoisonIvy_Sample_5 {
 		reference = "VT Analysis"
 		date = "2015-06-03"
 		hash = "545e261b3b00d116a1d69201ece8ca78d9704eb2"
+		uuid = "61f7efd4-745a-5f06-a66d-b4b2a2ecc614"
 	strings:
 		$s0 = "Microsoft Software installation Service" fullword wide /* PEStudio Blacklist: strings */ /* score: '15.04' */
 		$s2 = "pidll.dll" fullword ascii /* score: '11.02' */
@@ -128,6 +133,7 @@ rule PoisonIvy_Sample_6 {
 		date = "2015-06-03"
 		hash1 = "8c2630ab9b56c00fd748a631098fa4339f46d42b"
 		hash2 = "36b4cbc834b2f93a8856ff0e03b7a6897fb59bd3"
+		uuid = "f364fad0-3684-5500-b21b-396f1e259217"
 	strings:
 		$x1 = "124.133.252.150" fullword ascii /* score: '9.5' */
 		$x3 = "http://124.133.254.171/up/up.asp?id=%08x&pcname=%s" fullword ascii /* score: '24.01' */
@@ -166,6 +172,7 @@ rule PoisonIvy_Sample_7 {
 		reference = "VT Analysis"
 		date = "2015-06-03"
 		hash = "9480cf544beeeb63ffd07442233eb5c5f0cf03b3"
+		uuid = "01224053-d95e-5144-981b-76cd7e57e1c3"
 	strings:
 		$s0 = "Microsoft Software installation Service" fullword wide /* PEStudio Blacklist: strings */ /* score: '15.04' */
 		$s2 = "pidll.dll" fullword ascii /* score: '11.02' */
@@ -197,6 +204,7 @@ rule PoisonIvy_RAT_ssMUIDLL {
 		hash3 = "2a6ef9dde178c4afe32fe676ff864162f104d85fac2439986de32366625dc083"
 		hash4 = "8b805f508879ecdc9bba711cfbdd570740c4825b969c1b4db980c134ac8fef1c"
 		hash5 = "ac99d4197e41802ff9f8852577955950332947534d8e2a0e3b6c1dd1715490d4"
+		uuid = "f2535b70-cf17-5435-9fc8-2dfdf70d95ac"
 	strings:
 		$s1 = "ssMUIDLL.dll" fullword ascii
 

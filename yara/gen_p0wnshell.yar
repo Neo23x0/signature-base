@@ -15,6 +15,7 @@ rule p0wnedPowerCat {
       reference = "https://github.com/Cn33liz/p0wnedShell"
       date = "2017-01-14"
       hash1 = "6a3ba991d3b5d127c4325bc194b3241dde5b3a5853b78b4df1bce7cbe87c0fdf"
+      uuid = "059a8e58-7b7e-582e-ba4a-80e4dffe9b5e"
    strings:
       $x1 = "Now if we point Firefox to http://127.0.0.1" fullword ascii
       $x2 = "powercat -l -v -p" fullword ascii
@@ -37,6 +38,7 @@ rule Hacktool_Strings_p0wnedShell : FILE {
       modified = "2023-02-10"
       hash1 = "e1f35310192416cd79e60dba0521fc6eb107f3e65741c344832c46e9b4085e60"
       nodeepdive = 1
+      uuid = "0846039d-1e00-5224-9560-55ab18034d54"
    strings:
       $x1 = "Invoke-TokenManipulation" fullword ascii
       $x2 = "windows/meterpreter" fullword ascii
@@ -67,6 +69,7 @@ rule p0wnedPotato {
       reference = "https://github.com/Cn33liz/p0wnedShell"
       date = "2017-01-14"
       hash1 = "aff2b694a01b48ef96c82daf387b25845abbe01073b76316f1aab3142fdb235b"
+      uuid = "2c2378e3-b948-5325-9afd-76424a7130b1"
    strings:
       $x1 = "Invoke-Tater" fullword ascii
       $x2 = "P0wnedListener.Execute(WPAD_Proxy);" fullword ascii
@@ -85,6 +88,7 @@ rule p0wnedExploits {
       reference = "https://github.com/Cn33liz/p0wnedShell"
       date = "2017-01-14"
       hash1 = "54548e7848e742566f5596d8f02eca1fd2cbfeae88648b01efb7bab014b9301b"
+      uuid = "9f754f5f-85e8-5b6f-bde2-566da4d39586"
    strings:
       $x1 = "Pshell.RunPSCommand(Whoami);" fullword ascii
       $x2 = "If succeeded this exploit should popup a System CMD Shell" fullword ascii
@@ -100,6 +104,7 @@ rule p0wnedShellx64 {
       date = "2017-01-14"
       modified = "2021-09-15"
       hash1 = "d8b4f5440627cf70fa0e0e19e0359b59e671885f8c1855517211ba331f48c449"
+      uuid = "c9791804-4f08-5b7e-8d9d-37e2dfccec47"
    strings:
       $x1 = "Oq02AB+LCAAAAAAABADs/QkW3LiOLQBuRUsQR1H731gHMQOkFGFnvvrdp/O4sp6tkDiAIIjhAryu4z6PVOtxHuXz3/xT6X9za/Df/Hsa/JT/9Pjgb/+kPPhv9Sjp01Wf" wide
       $x2 = "Invoke-TokenManipulation" wide
@@ -120,6 +125,7 @@ rule p0wnedListenerConsole {
       reference = "https://github.com/Cn33liz/p0wnedShell"
       date = "2017-01-14"
       hash1 = "d2d84e65fad966a8556696fdaab5dc8110fc058c9e9caa7ea78aa00921ae3169"
+      uuid = "77d13c34-3e15-5bc1-a100-f04be38cfb44"
    strings:
       $x1 = "Invoke_ReflectivePEInjection" fullword wide
       $x5 = "p0wnedShell> " fullword wide
@@ -141,6 +147,7 @@ rule p0wnedBinaries {
       reference = "https://github.com/Cn33liz/p0wnedShell"
       date = "2017-01-14"
       hash1 = "fd7014625b58d00c6e54ad0e587c6dba5d50f8ca4b0f162d5af3357c2183c7a7"
+      uuid = "0c62dd3a-195c-5890-b262-2eb00c58f8c1"
    strings:
       $x1 = "Oq02AB+LCAAAAAAABADs/QkW3LiOLQBuRUsQR1H731gHMQOkFGFnvvrdp/O4sp6tkDiAIIjhAryu4z6PVOtxHuXz3/xT6X9za/Df/Hsa/JT/9" ascii
       $x2 = "wpoWAB+LCAAAAAAABADs/QeyK7uOBYhORUNIenL+E2vBA0ympH3erY4f8Tte3TpbUiY9YRbcGK91vVKtr+tV3v/B/yr/m1vD/+DvNOVb+V/f" ascii
@@ -161,6 +168,7 @@ rule p0wnedAmsiBypass {
       reference = "https://github.com/Cn33liz/p0wnedShell"
       date = "2017-01-14"
       hash1 = "345e8e6f38b2914f4533c4c16421d372d61564a4275537e674a2ac3360b19284"
+      uuid = "168af265-d3e9-59a2-b754-20d6c9a298b1"
    strings:
       $x1 = "Program.P0wnedPath()" fullword ascii
       $x2 = "namespace p0wnedShell" fullword ascii
@@ -178,6 +186,7 @@ rule p0wnedShell_outputs {
       date = "2017-01-14"
       super_rule = 1
       hash1 = "e1f35310192416cd79e60dba0521fc6eb107f3e65741c344832c46e9b4085e60"
+      uuid = "c19fc14b-0c42-5dd1-bff2-ba75f4168d9c"
    strings:
       $s1 = "[+] For this attack to succeed, you need to have Admin privileges." fullword ascii
       $s2 = "[+] This is not a valid hostname, please try again" fullword ascii

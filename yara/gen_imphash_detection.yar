@@ -53,6 +53,7 @@ rule MAL_Malware_Imphash_Mar23_1 {
         hash = "b9995d1987c4e8b6fb30d255948322cfad9cc212c7f8f4c5db3ac80e23071533"
         hash = "a6a92ea0f27da1e678c15beb263647de43f68608afe82d6847450f16a11fe6c0"
         hash = "866e3ea86671a62b677214f07890ddf7e8153bec56455ad083c800e6ab51be37"
+        uuid = "fb398c26-e9ac-55f9-b605-6b763021e96a"
     strings:
         $fp1 = "Win32 Cabinet Self-Extractor" wide
         $fp2 = "EXTRACTOPT" ascii fullword
@@ -97,6 +98,7 @@ rule HKTL_Imphashes_Aug22_1 {
       score = 80
       date = "2022-08-17"
       modified = "2023-03-21"
+      uuid = "e1d4dde6-16ad-5495-b3a7-01a86c830761"
    condition:
       uint16(0) == 0x5a4d and (
             pe.imphash() == "bcca3c247b619dcd13c8cdff5f123932" or // PetitPotam
@@ -228,6 +230,7 @@ rule SUSP_Imphash_Mar23_2 : HIGHVOL {
         hash = "244c4a930e3644ffb96bf3ab33e8c8c0f94ed9fe6a8b2fc45fc8e9b6471ef3a8"
         hash = "f00848b8edeeb5a668bf7e89e3f33f438b2f5d5cf130596a8ed2531e21be6d81"
         hash = "5b9348c24ff604e78d70464654e645b90dc695c7e0415959c443fe29cebc3c4e"
+        uuid = "b739d540-5d9f-53b3-9e42-a514dc972e8d"
     condition:
         uint16(0) == 0x5A4D and (
             // no size limit as some samples are 20MB+ and the hash is calculated only on the header
@@ -310,6 +313,7 @@ rule SUSP_Imphash_Mar23_3 {
         hash = "0461830e811d3831818dac5a67d4df736b4dc2e8fb185da439f9338bdb9f69c3"
         hash = "773edc71d52361454156dfd802ebaba2bb97421ce9024a7798dcdee3da747112"
         hash = "fe53b9d820adf3bcddf42976b8af1411e87d9dfd9aa479f12b2db50a5600f348"
+        uuid = "eb91e700-6478-5085-a393-a7b342c0eb4f"
     condition:
         uint16(0) == 0x5A4D and (
             // no size limit as some samples are 20MB+ and the hash is calculated only on the header

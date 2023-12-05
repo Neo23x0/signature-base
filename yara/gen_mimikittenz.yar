@@ -16,6 +16,7 @@ rule Invoke_mimikittenz {
 		date = "2016-07-19"
 		score = 90
 		hash1 = "14e2f70470396a18c27debb419a4f4063c2ad5b6976f429d47f55e31066a5e6a"
+		uuid = "6dcf3d0a-302b-520c-97c6-fd843c8a25b9"
 	strings:
 		$x1 = "[mimikittenz.MemProcInspector]" ascii
 

@@ -13,6 +13,7 @@ rule WEBSHELL_Z_Webshell_2 {
       date = "2018/01/25"
       old_rule_name = "z_webshell"
       md5 =  "2C9095C965A55EFC46E16B86F9B7D6C6"
+      uuid = "9a54925f-de10-567f-a1ea-5e7522b47dfd"
    strings:
       $webshell_name = "public string z_progname =" nocase ascii wide
       $webshell_password = "public string Password =" nocase ascii wide
@@ -38,6 +39,7 @@ rule TA18_074A_screen {
       reference = "https://www.us-cert.gov/ncas/alerts/TA18-074A"
       date = "2018-03-16"
       hash1 = "2f159b71183a69928ba8f26b76772ec504aefeac71021b012bd006162e133731"
+      uuid = "789ee5e5-83c3-5137-a078-ff230dbf8fcd"
    strings:
       $s1 = "screen.exe" fullword wide
       $s2 = "PlatformInvokeUSER32" fullword ascii
@@ -57,6 +59,7 @@ rule TA18_074A_scripts {
       date = "2018-03-16"
       modified = "2022-08-18"
       hash1 = "2f159b71183a69928ba8f26b76772ec504aefeac71021b012bd006162e133731"
+      uuid = "4c786098-c5f4-529b-8732-03183dfa94b5"
    strings:
       $s1 = "Running -s cmd /c query user on " ascii
    condition:

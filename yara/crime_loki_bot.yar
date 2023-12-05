@@ -16,6 +16,7 @@ rule LokiBot_Dropper_ScanCopyPDF_Feb18 {
       reference = "https://app.any.run/tasks/401df4d9-098b-4fd0-86e0-7a52ce6ddbf5"
       date = "2018-02-14"
       hash1 = "6f8ff26a5daf47effdea5795cdadfff9265c93a0ebca0ce5a4144712f8cab5be"
+      uuid = "64c45d91-4e18-5fd1-8d93-b5db4df7da29"
    strings:
       $x1 = "Win32           Scan Copy.pdf   " fullword wide
 
@@ -37,6 +38,7 @@ rule LokiBot_Dropper_Packed_R11_Feb18 {
       reference = "https://app.any.run/tasks/401df4d9-098b-4fd0-86e0-7a52ce6ddbf5"
       date = "2018-02-14"
       hash1 = "3b248d40fd7acb839cc592def1ed7652734e0e5ef93368be3c36c042883a3029"
+      uuid = "83cd6225-eb6d-5d17-a751-51f20db9c7eb"
    strings:
       $s1 = "C:\\Program Files (x86)\\Microsoft Visual Studio\\VB98\\VB6.OLB" fullword ascii
    condition:

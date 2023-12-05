@@ -13,6 +13,7 @@ rule QuarksPwDump_Gen {
 		hash5 = "677c06db064ee8d8777a56a641f773266a4d8e0e48fbf0331da696bea16df6aa"
 		hash6 = "d3a1eb1f47588e953b9759a76dfa3f07a3b95fab8d8aa59000fd98251d499674"
 		hash7 = "8a81b3a75e783765fe4335a2a6d1e126b12e09380edc4da8319efd9288d88819"
+		uuid = "7de4f59e-6cf5-5ad7-ae1f-8532d9e80c9e"
 	strings:
 		$s1 = "OpenProcessToken() error: 0x%08X" fullword ascii
 		$s2 = "%d dumped" fullword ascii

@@ -28,6 +28,7 @@ rule TA17_293A_malware_1 {
         hash8 = "5DBEF7BDDAF50624E840CCBCE2816594"
         hash9 = "722154A36F32BA10E98020A8AD758A7A"
         hash10 = "4595DBE00A538DF127E0079294C87DA0"
+        uuid = "297611c9-f4b1-5618-bd43-5a7444365727"
     strings:
         $n1 = "file://"
 
@@ -79,6 +80,7 @@ rule TA17_293A_energetic_bear_api_hashing_tool {
       assoc_report = "DHS Report TA17-293A"
       author = "CERT RE Team"
       version = "2"
+      uuid = "4e58800a-9618-5d8b-954c-e843be6002c2"
    strings:
       $api_hash_func_v1 = { 8A 08 84 C9 74 ?? 80 C9 60 01 CB C1 E3 01 03 45 10 EB ED }
       $api_hash_func_v2 = { 8A 08 84 C9 74 ?? 80 C9 60 01 CB C1 E3 01 03 44 24 14 EB EC }
@@ -95,6 +97,7 @@ rule TA17_293A_Query_XML_Code_MAL_DOC_PT_2 {
         name= "Query_XML_Code_MAL_DOC_PT_2"
         author = "other (modified by Florian Roth)"
         reference = "https://www.us-cert.gov/ncas/alerts/TA17-293A"
+        uuid = "82b0f28a-94b6-52ab-8fd6-cdc05823ac34"
     strings:
         $dir1 = "word/_rels/settings.xml.rels"
         $bytes = {8c 90 cd 4e eb 30 10 85 d7}
@@ -107,6 +110,7 @@ rule TA17_293A_Query_XML_Code_MAL_DOC {
         name= "Query_XML_Code_MAL_DOC"
         author = "other (modified by Florian Roth)"
         reference = "https://www.us-cert.gov/ncas/alerts/TA17-293A"
+        uuid = "82b0f28a-94b6-52ab-8fd6-cdc05823ac34"
     strings:
         $dir = "word/_rels/" ascii
         $dir2 = "word/theme/theme1.xml" ascii
@@ -120,6 +124,7 @@ rule TA17_293A_Query_Javascript_Decode_Function {
         name= "Query_Javascript_Decode_Function"
         author = "other (modified by Florian Roth)"
         reference = "https://www.us-cert.gov/ncas/alerts/TA17-293A"
+        uuid = "bc206ab3-a86b-5abe-ae84-15abab838d4e"
     strings:
         $decode1 = {72 65 70 6C 61 63 65 28 2F 5B 5E 41 2D 5A 61 2D 7A 30 2D 39 5C 2B 5C 2F 5C 3D 5D 2F 67 2C 22 22 29 3B}
         $decode2 = {22 41 42 43 44 45 46 47 48 49 4A 4B 4C 4D 4E 4F 50 51 52 53 54 55 56 57 58 59 5A 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F 70 71 72 73 74 75 76 77 78 79 7A 30 31 32 33 34 35 36 37 38 39 2B 2F 3D 22 2E 69 6E 64 65 78 4F 66 28 ?? 2E 63 68 61 72 41 74 28 ?? 2B 2B 29 29}
@@ -152,6 +157,7 @@ rule TA17_293A_Hacktool_PS_1 {
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-293A"
       date = "2017-10-21"
       hash1 = "72a28efb6e32e653b656ca32ccd44b3111145a695f6f6161965deebbdc437076"
+      uuid = "e4b92536-fa9a-5a65-8bd6-84c037dfbdce"
    strings:
       $x1 = "$HashFormat = '$krb5tgs$23$*ID#124_DISTINGUISHED NAME: CN=fakesvc,OU=Service,OU=Accounts,OU=EnterpriseObjects,DC=asdf,DC=pd,DC=f" ascii
       $x2 = "} | Where-Object {$_.SamAccountName -notmatch 'krbtgt'} | Get-SPNTicket @GetSPNTicketArguments" fullword ascii
@@ -167,6 +173,7 @@ rule TA17_293A_Hacktool_Touch_MAC_modification {
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-293A"
       date = "2017-10-21"
       hash1 = "070d7082a5abe1112615877214ec82241fd17e5bd465e24d794a470f699af88e"
+      uuid = "69240cc0-a04e-544a-b7e3-c5a08c062055"
    strings:
       $s1 = "-t time - use the time specified to update the access and modification times" fullword ascii
       $s2 = "Failed to set file times for %s. Error: %x" fullword ascii
@@ -184,6 +191,7 @@ rule TA17_293A_Hacktool_Exploit_MS16_032 {
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-293A"
       date = "2017-10-21"
       hash1 = "9b97290300abb68fb48480718e6318ee2cdd4f099aa6438010fb2f44803e0b58"
+      uuid = "4c5838d7-9956-564e-a25c-f2ba5641ac03"
    strings:
       $x1 = "[?] Thread belongs to: $($(Get-Process -PID $([Kernel32]::GetProcessIdOfThread($Thread)))" ascii
       $x2 = "0x00000002, \"C:\\Windows\\System32\\cmd.exe\", \"\"," fullword ascii
@@ -203,6 +211,7 @@ rule Imphash_UPX_Packed_Malware_1_TA17_293A {
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-293A"
       date = "2017-10-21"
       hash1 = "a278256fbf2f061cfded7fdd58feded6765fade730374c508adad89282f67d77"
+      uuid = "3ff28f06-8b69-5e8f-ab45-dfa4f6e69812"
    condition:
       ( uint16(0) == 0x5a4d and filesize < 5000KB and pe.imphash() == "d7d745ea39c8c5b82d5e153d3313096c" )
 }
@@ -214,6 +223,7 @@ rule Imphash_Malware_2_TA17_293A : HIGHVOL {
       author = "Florian Roth (Nextron Systems)"
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-293A"
       date = "2017-10-21"
+      uuid = "5c9f32a3-8c50-5d46-929b-bbe14697540e"
    condition:
       ( uint16(0) == 0x5a4d and filesize < 5000KB and pe.imphash() == "a8f69eb2cf9f30ea96961c86b4347282" )
 }

@@ -7,6 +7,7 @@ rule PowerShell_Susp_Parameter_Combo : HIGHVOL FILE {
       date = "2017-03-12"
       modified = "2022-09-15"
       score = 60
+      uuid = "17c707f3-7f51-5772-9874-a96c220960a7"
    strings:
       /* Encoded Command */
       $sa1 = " -enc " ascii wide nocase

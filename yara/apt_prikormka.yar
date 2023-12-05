@@ -130,6 +130,7 @@ rule Prikormka
         Source = "https://github.com/eset/malware-ioc/"
         Contact = "threatintel@eset.com"
         License = "BSD 2-Clause"
+        uuid = "6073aa34-d385-5ae8-b97d-9b3d61015aae"
     condition:
         PrikormkaDropper or PrikormkaModule or PrikormkaEarlyVersion
 }

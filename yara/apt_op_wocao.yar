@@ -5,6 +5,7 @@ rule APT_MAL_CN_Wocao_Agent_Csharp {
         author = "Fox-IT SRT"
         reference = "https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/"
 
+        uuid = "e5212226-a82d-558d-abb4-43ad7848764e"
     strings:
         $a = "mysend(client_sock, new byte[] { 0x16, 0x00 }, 2);" ascii wide
         $b = "Dns.GetHostAddresses(sip.Remove(sip.Length - 1));" ascii wide
@@ -26,6 +27,7 @@ rule APT_MAL_CN_Wocao_agent_powershell_dropper {
         author = "Fox-IT SRT"
         reference = "https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/"
 
+        uuid = "833ce607-56a9-5580-bbd1-e72392945fec"
     strings:
         $a = "function format([string]$source)"
         $b = "foreach($c in $bb){$tt = $tt + [char]($c -bxor"
@@ -41,6 +43,7 @@ rule APT_MAL_CN_Wocao_agent_powershell_b64encoded {
         author = "Fox-IT SRT"
         reference = "https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/"
 
+        uuid = "14e1702d-6229-5989-8bb7-cc9c0c321676"
     strings:
         $header = "LFNVT0hBBnVfVVJDSx0sU1VPSEEGdV9VUkNLCG9pHSxTVU9IQQZ1X1VSQ0sIZUlK"
 
@@ -54,6 +57,7 @@ rule APT_MAL_CN_Wocao_agent_py {
         author = "Fox-IT SRT"
         reference = "https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/"
 
+        uuid = "ca30dd6a-b596-54ab-b4f0-50e6b1382f73"
     strings:
         $a = "vpshex.decode"
         $b = "self._newsock.recv"
@@ -76,6 +80,7 @@ rule APT_MAL_CN_Wocao_agent_py_b64encoded {
         author = "Fox-IT SRT"
         reference = "https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/"
 
+        uuid = "eb2701e9-4358-5d24-bfcd-b4dde24f13bf"
     strings:
         $header = "QlpoOTFBWSZTWWDdHjgABDTfgHwQe////z/v/9+////6YA4cGPsAl2e8M9LSU128"
 
@@ -89,6 +94,7 @@ rule APT_MAL_CN_Wocao_keylogger_py {
         author = "Fox-IT SRT"
         reference = "https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/"
 
+        uuid = "f7b5ec1b-669e-5e7d-a9d3-011d212eb363"
     strings:
         $a = "c:\\windows\\temp\\tap.tmp"
         $b = "c:\\windows\\temp\\mrteeh.tmp"
@@ -106,6 +112,7 @@ rule APT_MAL_CN_Wocao_keylogger_file {
         author = "Fox-IT SRT"
         reference = "https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/"
 
+        uuid = "22e866b3-4b02-593a-b9a6-aa86870b6509"
     strings:
         $a = { 0d 0a 20 [3-10] 53 74 61 72 74 75 70 3a 20 [3] 20 [3] 20 [2] 20 [2] 3a [2] 3a [2] 20 }
 
@@ -119,6 +126,7 @@ rule APT_MAL_CN_Wocao_xserver_csharp {
         author = "Fox-IT SRT"
         reference = "https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/"
 
+        uuid = "48f4c88d-fb56-54ca-84e2-38f88804a50f"
     strings:
         $a = "static void ServerX(int ListenPort)" ascii wide
         $b = "public class xserver" ascii wide
@@ -138,6 +146,7 @@ rule APT_MAL_CN_Wocao_xserver_powershell_b64encoded {
         author = "Fox-IT SRT"
         reference = "https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/"
 
+        uuid = "01e38cfb-b245-5398-b037-6d1d2fb726ee"
     strings:
         $header_47000 = "5T39c9u2kr/nr2A0Ny2VKIzkfLRJntuJHafPN/nwWG777rUZDy3BNq8UqSEpx26b"
         $header_25667 = "5T1rc9u2st/zKxjNmZZKFEZyErdJ6nZsx+nxnTjxWGp77mkzHlqCbd5SpIak/Gjr"
@@ -151,6 +160,7 @@ rule APT_MAL_CN_Wocao_xserver_powershell_dropper {
         author = "Fox-IT SRT"
         reference = "https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/"
 
+        uuid = "97169ab4-d68d-5137-83de-d9cac975747e"
     strings:
         $encfile = "New-Object IO.Compression.DeflateStream([IO.MemoryStream][Convert]::FromBase64String($encfile)"
     condition:
@@ -163,6 +173,7 @@ rule APT_MAL_CN_Wocao_injector_bin {
         author = "Fox-IT SRT"
         reference = "https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/"
 
+        uuid = "389279f1-6531-594f-97b6-5adbc8fa4d3d"
     strings:
         $a = "%s{%04d-%02d%02d-%02d%02d-%d%ld}.tmp"
         $b = "s% > s% c/ exe.d"
@@ -187,6 +198,7 @@ rule APT_MAL_CN_Wocao_timeliner_bin {
         author = "Fox-IT SRT"
         reference = "https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/"
 
+        uuid = "3d81a4ae-0ce0-5867-ac93-a706556481b6"
     strings:
         $a = "[+] Work completed." ascii wide
         $b = "[-] Create a new file failed." ascii wide
@@ -206,6 +218,7 @@ rule APT_MAL_CN_Wocao_checkadmin_bin {
         author = "Fox-IT SRT"
         reference = "https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/"
 
+        uuid = "2f819213-ade1-525b-af18-d77b7fc96093"
     strings:
         $a = "[-] %s * A system error has occurred: %d" ascii wide
         $b = {
@@ -224,6 +237,7 @@ rule APT_MAL_CN_Wocao_getos_py {
         author = "Fox-IT SRT"
         reference = "https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/"
 
+        uuid = "4a731dde-87e4-566a-b559-d23e0bef5841"
     strings:
         $smb_1 = {
             00 00 00 85 ff 53 4d 42 72 00 00 00 00 18 53 c8
@@ -286,6 +300,7 @@ rule APT_MAL_CN_Wocao_info_vbs {
         author = "Fox-IT SRT"
         reference = "https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/"
 
+        uuid = "b719fb31-2836-5faf-a7c8-c361a14df2be"
     strings:
         $ = "Logger PingConnect"
         $ = "Logger GetAdmins"
@@ -306,6 +321,7 @@ rule APT_MAL_CN_Wocao_webshell_console_jsp {
         author = "Fox-IT SRT"
         reference = "https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/"
 
+        uuid = "1afdfc34-d2e3-58c7-80ea-ee5632e42469"
     strings:
         $a = "String strLogo = request.getParameter(\"image\")"
         $b = "!strLogo.equals(\"web.gif\")"
@@ -324,6 +340,7 @@ rule APT_MAL_CN_Wocao_webshell_index_jsp {
         author = "Fox-IT SRT"
         reference = "https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/"
 
+        uuid = "9c226ccd-6c69-523c-bca4-371e55274667"
     strings:
         $x1 = "X-CMD"
         $x2 = "X-STATUS"
@@ -341,6 +358,7 @@ rule APT_MAL_CN_Wocao_webshell_ver_jsp {
         author = "Fox-IT SRT"
         reference = "https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/"
 
+        uuid = "b2828b84-8934-5111-9345-683a07025070"
     strings:
         $a = "String strLogo = request.getParameter(\"id\")"
         $b = "!strLogo.equals(\"256\")"
@@ -359,6 +377,7 @@ rule APT_MAL_CN_Wocao_webshell_webinfo {
         author = "Fox-IT SRT"
         reference = "https://www.fox-it.com/en/news/whitepapers/operation-wocao-shining-a-light-on-one-of-chinas-hidden-hacking-groups/"
 
+        uuid = "b8477f62-f3f6-5526-b0e3-9b794fefaa1f"
     strings:
         $var1 = "String strLogo = request.getParameter"
         $var2 = "String content = request.getParameter(\"content\");"

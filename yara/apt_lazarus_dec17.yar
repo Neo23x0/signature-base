@@ -17,6 +17,7 @@ rule Lazarus_Dec_17_1 {
       reference = "https://goo.gl/8U6fY2"
       date = "2017-12-20"
       hash1 = "d5f9a81df5061c69be9c0ed55fba7d796e1a8ebab7c609ae437c574bd7b30b48"
+      uuid = "f195ebf0-d7af-58e8-a544-769a0c8b628b"
    strings:
       $s1 = "::DataSpace/Storage/MSCompressed/Transform/" ascii
       $s2 = "HHA Version 4." ascii
@@ -36,6 +37,7 @@ rule Lazarus_Dec_17_2 {
       date = "2017-12-20"
       hash1 = "cbebafb2f4d77967ffb1a74aac09633b5af616046f31dddf899019ba78a55411"
       hash2 = "9ca3e56dcb2d1b92e88a0d09d8cab2207ee6d1f55bada744ef81e8b8cf155453"
+      uuid = "45127fb5-0f70-5140-acd9-46147d365dfe"
    strings:
       $s1 = "SkypeSetup.exe" fullword wide
       $s2 = "%s\\SkypeSetup.exe" fullword ascii
@@ -57,6 +59,7 @@ rule Lazarus_Dec_17_4 {
       date = "2017-12-20"
       hash1 = "8ff100ca86cb62117f1290e71d5f9c0519661d6c955d9fcfb71f0bbdf75b51b3"
       hash2 = "7975c09dd436fededd38acee9769ad367bfe07c769770bd152f33a10ed36529e"
+      uuid = "fbdc6287-c177-53b5-83dd-979936f65192"
    strings:
       $s1 = "var _0xf5ed=[\"\\x57\\x53\\x63\\x72\\x69\\x70\\x74\\x2E\\x53\\x68\\x65\\x6C\\x6C\"," ascii
    condition:
@@ -71,6 +74,7 @@ rule Lazarus_Dec_17_5 {
       reference = "https://goo.gl/8U6fY2"
       date = "2017-12-20"
       hash1 = "db8163d054a35522d0dec35743cfd2c9872e0eb446467b573a79f84d61761471"
+      uuid = "33bd8c08-123e-5a8e-b5dc-02af7291addc"
    strings:
       $x1 = "$ProID = Start-Process powershell.exe -PassThru -WindowStyle Hidden -ArgumentList" fullword ascii
       $x2 = "$respTxt = HttpRequestFunc_doprocess -szURI $szFullURL -szMethod $szMethod -contentData $contentData;" fullword ascii

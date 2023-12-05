@@ -13,6 +13,7 @@ rule APT_APT29_Win_FlipFlop_LDR : APT29 {
       description = "A loader for the CobaltStrike malware family, which ultimately takes the first and second bytes of an embedded file, and flips them prior to executing the resulting payload."
       hash = "ee42ddacbd202008bcc1312e548e1d9ac670dd3d86c999606a3a01d464a2a330"
       reference = "https://www.volexity.com/blog/2021/05/27/suspected-apt29-operation-launches-election-fraud-themed-phishing-campaigns/"
+      uuid = "58696a6f-55a9-5212-9372-a539cc327e6b"
    strings:
       $s1 = "irnjadle"
       $s2 = "BADCFEHGJILKNMPORQTSVUXWZY"
@@ -28,6 +29,7 @@ rule APT_APT28_Win_FreshFire : APT29 {
       description = "The FRESHFIRE malware family. The malware acts as a downloader, pulling down an encrypted snippet of code from a remote source, executing it, and deleting it from the remote server."
       hash = "ad67aaa50fd60d02f1378b4155f69cffa9591eaeb80523489a2355512cc30e8c"
       reference = "https://www.volexity.com/blog/2021/05/27/suspected-apt29-operation-launches-election-fraud-themed-phishing-campaigns/"
+      uuid = "050b8e61-139a-5ff5-998a-7de67c9975bf"
    strings:
       $uniq1 = "UlswcXJJWhtHIHrVqWJJ"
       $uniq2 = "gyibvmt\x00"
@@ -57,6 +59,7 @@ rule APT_APT29_NOBELIUM_JS_EnvyScout_May21_1 {
       author = "Florian Roth (Nextron Systems)"
       reference = "https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/"
       date = "2021-05-29"
+      uuid = "42739aad-a88a-545b-8256-1f727c79c4f8"
    strings:
       $x1 = "[i].charCodeAt(0) ^ 2);}"
    condition:
@@ -69,6 +72,7 @@ rule APT_APT29_NOBELIUM_JS_EnvyScout_May21_2 {
       author = "Florian Roth (Nextron Systems)"
       reference = "https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/"
       date = "2021-05-29"
+      uuid = "d5cf3365-fe24-533a-a678-b5b6d4d99997"
    strings:
       $s1 = "saveAs(blob, " ascii
       $s2 = ".iso\");" ascii
@@ -84,6 +88,7 @@ rule APT_APT29_NOBELIUM_LNK_NV_Link_May21_2 {
       author = "Florian Roth (Nextron Systems)"
       reference = "https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/"
       date = "2021-05-29"
+      uuid = "52c2caf9-13df-5614-9c9e-afcd76ec77f9"
    strings:
       $s1 = "RegisterOCX BOOM" ascii wide
       $s2 = "cmd.exe /c start BOOM.exe" ascii wide
@@ -99,6 +104,7 @@ rule APT_APT29_NOBELIUM_LNK_Samples_May21_1 {
       date = "2021-05-27"
       score = 85
       hash1 = "24caf54e7c3fe308444093f7ac64d6d520c8f44ea4251e09e24931bdb72f5548"
+      uuid = "c807ab5a-f66a-5622-81b1-6e69b6df8446"
    strings:
       $a1 = "rundll32.exe" wide
 
@@ -128,6 +134,7 @@ rule APT_APT29_NOBELIUM_BoomBox_May21_1 {
       reference = "https://www.microsoft.com/security/blog/2021/05/27/new-sophisticated-email-based-attack-from-nobelium/"
       date = "2021-05-27"
       score = 85
+      uuid = "fe964f3e-1cda-5f16-838f-dd7b23cd5651"
    strings:
       $xa1 = "123do3y4r378o5t34onf7t3o573tfo73" ascii wide fullword
       $xa2 = "1233t04p7jn3n4rg" ascii wide fullword
@@ -142,6 +149,7 @@ rule APT_APT29_NOBELIUM_BoomBox_PDF_Masq_May21_1 {
       reference = "https://www.microsoft.com/security/blog/2021/05/27/new-sophisticated-email-based-attack-from-nobelium/"
       date = "2021-05-27"
       score = 70
+      uuid = "bdfb9600-edda-5c8c-ab23-14fb71c8e647"
    strings:
       $ah1 = { 25 50 44 46 2d 31 2e 33 0a 25 } /* PDF Header */
       $af1 = { 0a 25 25 45 4f 46 0a } /* EOF */
@@ -163,6 +171,7 @@ rule APT_APT29_NOBELIUM_NativeZone_Loader_May21_1 {
       date = "2021-05-27"
       score = 85
       hash1 = "136f4083b67bc8dc999eb15bb83042aeb01791fc0b20b5683af6b4ddcf0bbc7d"
+      uuid = "02d9257d-f439-5071-96b0-a973b088e329"
    strings:
       $s1 = "\\SystemCertificates\\Lib\\CertPKIProvider.dll" ascii
       $s2 = "rundll32.exe %s %s" ascii fullword
@@ -185,6 +194,7 @@ rule APT_APT29_NOBELIUM_BoomBox_May21_2 {
       hash1 = "0acb884f2f4cfa75b726cb8290b20328c8ddbcd49f95a1d761b7d131b95bafec"
       hash2 = "8199f309478e8ed3f03f75e7574a3e9bce09b4423bd7eb08bb5bff03af2b7c27"
       hash3 = "cf1d992f776421f72eabc31d5afc2f2067ae856f1c9c1d6dc643a67cb9349d8c"
+      uuid = "a4144c00-48b2-5520-b773-5d0a5de95fb1"
    strings:
       $x1 = "\\Microsoft\\NativeCache\\NativeCacheSvc.dll" wide
       $x2 = "\\NativeCacheSvc.dll _configNativeCache" wide
@@ -213,6 +223,7 @@ rule APT_APT29_NOBELIUM_Malware_May21_2 {
       date = "2021-05-29"
       hash1 = "292e5b0a12fea4ff3fc02e1f98b7a370f88152ce71fe62670dd2f5edfaab2ff8"
       hash2 = "776014a63bf3cc7034bd5b6a9c36c75a930b59182fe232535bb7a305e539967b"
+      uuid = "b1462b4b-227f-5aeb-92ea-bda6a86831c7"
    strings:
       $op1 = { 48 03 c8 42 0f b6 04 21 88 03 0f b6 43 01 8b c8 83 e0 0f 48 83 e1 f0 48 03 c8 }
       $op2 = { 48 03 c8 42 0f b6 04 21 88 43 01 41 0f b6 c7 8b c8 83 e0 0f 48 83 e1 f0 48 03 c8 }
@@ -230,6 +241,7 @@ rule APT_APT29_NOBELIUM_Stageless_Loader_May21_2 {
       date = "2021-05-29"
       hash1 = "a4f1f09a2b9bc87de90891da6c0fca28e2f88fd67034648060cef9862af9a3bf"
       hash2 = "c4ff632696ec6e406388e1d42421b3cd3b5f79dcb2df67e2022d961d5f5a9e78"
+      uuid = "7b83d327-52fc-5401-ae35-00f6b825678a"
    strings:
       $x1 = "DLL_stageless.dll" ascii fullword
       
@@ -252,6 +264,7 @@ rule APT_APT29_NOBELIUM_Malware_May21_3 {
       reference = "https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/"
       date = "2021-05-29"
       hash1 = "2a352380d61e89c89f03f4008044241a38751284995d000c73acf9cad38b989e"
+      uuid = "89cb6884-4242-5b5a-b0ac-b31041dd261c"
    strings:
       $s1 = "Win32Project1.dll" ascii fullword
 
@@ -275,6 +288,7 @@ rule APT_APT29_NOBELIUM_Malware_May21_4 {
       reference = "https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/"
       date = "2021-05-29"
       hash1 = "3b94cc71c325f9068105b9e7d5c9667b1de2bde85b7abc5b29ff649fd54715c4"
+      uuid = "56193475-52b4-5720-abc5-72249e2a0c37"
    strings:
       $s1 = "KM.FileSystem.dll" ascii fullword
 

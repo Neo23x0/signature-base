@@ -18,6 +18,7 @@ rule IronGate_APT_Step7ProSim_Gen {
 		hash1 = "0539af1a0cc7f231af8f135920a990321529479f6534c3b64e571d490e1514c3"
 		hash2 = "fa8400422f3161206814590768fc1a27cf6420fc5d322d52e82899ac9f49e14f"
 		hash3 = "5ab1672b15de9bda84298e0bb226265af09b70a9f0b26d6dfb7bdd6cbaed192d"
+		uuid = "a73cf9e2-c24f-5553-92e2-3a1a882a4a06"
 	strings:
 		$x1 = "\\obj\\Release\\Step7ProSim.pdb" ascii
 
@@ -47,6 +48,7 @@ rule IronGate_PyInstaller_update_EXE {
       modified = "2023-01-06"
       score = 60
       hash1 = "2044712ceb99972d025716f0f16aa039550e22a63000d2885f7b7cd50f6834e0"
+      uuid = "f8d1b97e-86d9-547f-a212-a84fb068af3c"
    strings:
       $s1 = "bpython27.dll" fullword ascii
       $s5 = "%s%s.exe" fullword ascii
@@ -71,6 +73,7 @@ rule Nirsoft_NetResView {
 		date = "2016-06-04"
 		score = 40
 		hash1 = "83f0352c14fa62ae159ab532d85a2b481900fed50d32cc757aa3f4ccf6a13bee"
+		uuid = "bf786432-3ecf-510e-8d95-50aff09826ce"
 	strings:
 		$s1 = "NetResView.exe" fullword wide
 		$s2 = "2005 - 2013 Nir Sofer" wide

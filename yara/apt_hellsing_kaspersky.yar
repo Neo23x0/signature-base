@@ -7,6 +7,7 @@ rule apt_hellsing_implantstrings {
 		copyright = "Kaspersky Lab"
 		date = "2015-04-07"
 		description = "detection for Hellsing implants"
+		uuid = "00aa5885-ae79-5d68-8587-13d3e8965630"
 	strings: 
 		$a1 = "the file uploaded failed !"
 		$a2 = "ping 127.0.0.1"
@@ -35,6 +36,7 @@ rule apt_hellsing_installer {
 		copyright = "Kaspersky Lab"
 		date = "2015-04-07"
 		description = "detection for Hellsing xweber/msger installers"
+		uuid = "0aca838e-813a-59ee-8a04-7d2f4e854075"
 	strings: 
 		$cmd = "cmd.exe /c ping 127.0.0.1 -n 5&cmd.exe /c del /a /f \"%s\""
 		$a1 = "xweber_install_uac.exe"
@@ -59,6 +61,7 @@ rule apt_hellsing_proxytool {
 		copyright = "Kaspersky Lab"
 		date = "2015-04-07"
 		description = "detection for Hellsing proxy testing tool"
+		uuid = "54454f07-11a9-5456-b489-9a9610e53123"
 	strings: 
 		$a1 = "PROXY_INFO: automatic proxy url => %s"
 		$a2 = "PROXY_INFO: connection type => %d"
@@ -77,6 +80,7 @@ rule apt_hellsing_xkat {
 		author = "Costin Raiu, Kaspersky Lab" copyright = "Kaspersky Lab"
 		date = "2015-04-07"
 		description = "detection for Hellsing xKat tool"
+		uuid = "c831ce04-8fb2-5790-8aaf-c88b370835ac"
 	strings: 
 		$a1 = "\\Dbgv.sys" $a2="XKAT_BIN" $a3="release sys file error."
 		$a4 = "driver_load error. "
@@ -100,6 +104,7 @@ rule apt_hellsing_msgertype2 {
 		copyright = "Kaspersky Lab"
 		date = "2015-04-07"
 		description = "detection for Hellsing msger type 2 implants"
+		uuid = "98f151de-c1c2-56c1-8c64-5d1f437e0742"
 	strings: 
 		$a1 = "%s\\system\\%d.txt"
 		$a2 = "_msger" 
@@ -119,6 +124,7 @@ rule apt_hellsing_irene {
 		copyright = "Kaspersky Lab"
 		date = "2015-04-07"
 		description = "detection for Hellsing msger irene installer"
+		uuid = "b57d1a10-4e5c-511f-b98c-8ce7d766c227"
 	strings: 
 		$a1 = "\\Drivers\\usbmgr.tmp" wide
 		$a2 = "\\Drivers\\usbmgr.sys" wide

@@ -18,6 +18,7 @@ rule APT_FIN7_Strings_Aug18_1 {
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
       hash1 = "b6354e46af0d69b6998dbed2fceae60a3b207584e08179748e65511d45849b00"
+      uuid = "9b940986-e41b-5fbf-9e42-cb0fd550e541"
    strings:
       $s1 = "&&call %a01%%a02% /e:jscript" ascii
       $s2 = "wscript.exe //b /e:jscript %TEMP%" ascii
@@ -36,6 +37,7 @@ rule APT_FIN7_Sample_Aug18_2 {
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
       hash1 = "1513c7630c981e4b1d0d5a55809166721df4f87bb0fac2d2b8ff6afae187f01d"
+      uuid = "885eebfe-2587-5744-ba0c-c74ced946050"
    strings:
       $x1 = "Description: C:\\Users\\oleg\\Desktop\\" wide
       $x2 = "/*|*| *  Copyright 2016 Microsoft, Industries.|*| *  All rights reserved.|*|" ascii
@@ -54,6 +56,7 @@ rule APT_FIN7_MalDoc_Aug18_1 {
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
       hash1 = "9c12591c850a2d5355be0ed9b3891ccb3f42e37eaf979ae545f2f008b5d124d6"
+      uuid = "f3c430e0-be9a-5c3f-9378-a20ef0492afb"
    strings:
       $s1 = "<photoshop:LayerText>If this document was downloaded from your email, please click  \"Enable editing\" from the yellow bar above" ascii
    condition:
@@ -70,6 +73,7 @@ rule APT_FIN7_Sample_Aug18_1 {
       hash1 = "a1e95ac1bb684186e9fb5c67f75c7c26ddc8b18ebfdaf061742ddf1675e17d55"
       hash2 = "dc645aae5d283fa175cf463a19615ed4d16b1d5238686245574d8a6a8b0fc8fa"
       hash3 = "eebbce171dab636c5ac0bf0fd14da0e216758b19c0ce2e5c572d7e6642d36d3d"
+      uuid = "0fdd98e8-7536-5159-8085-da7388e5fff2"
    strings:
       $s1 = "\\par var console=\\{\\};console.log=function()\\{\\};" ascii
       $s2 = "616e64792d7063" ascii /* hex encoded string 'andy-pc' */
@@ -96,6 +100,7 @@ rule APT_FIN7_EXE_Sample_Aug18_1 {
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
       hash1 = "7f16cbe7aa1fbc5b8a95f9d123f45b7e3da144cb88db6e1da3eca38cf88660cb"
+      uuid = "46c82d27-5683-5acd-9a3c-d69613091ecc"
    strings:
       $s1 = "Manche Enterprises Limited0" fullword ascii
    condition:
@@ -110,6 +115,7 @@ rule APT_FIN7_EXE_Sample_Aug18_2 {
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
       hash1 = "60cd98fc4cb2ae474e9eab81cd34fd3c3f638ad77e4f5d5c82ca46f3471c3020"
+      uuid = "4522cd85-ba85-5afd-8600-1ebabfaf6d02"
    strings:
       $s1 = "constructor or from DllMain." fullword ascii
       $s2 = "Network Software Ltd0" fullword ascii
@@ -125,6 +131,7 @@ rule APT_FIN7_EXE_Sample_Aug18_3 {
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
       hash1 = "995b90281774798a376db67f906a126257d314efc21b03768941f2f819cf61a6"
+      uuid = "0b0ce882-1c18-5741-bb71-0cef010dc778"
    strings:
       $s1 = "cvzdfhtjkdhbfszngjdng" fullword ascii
       $s2 = "sdfkjdfjfhgurgvncmnvmfdjdkfjdkfjdf" fullword wide
@@ -140,6 +147,7 @@ rule APT_FIN7_EXE_Sample_Aug18_4 {
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
       hash1 = "4b5405fc253ed3a89c770096a13d90648eac10a7fb12980e587f73483a07aa4c"
+      uuid = "bead79bb-28c2-59ed-985b-e44b41e7f66a"
    strings:
       $s1 = "c:\\file.dat" fullword wide
       $s2 = "constructor or from DllMain." fullword ascii
@@ -156,6 +164,7 @@ rule APT_FIN7_EXE_Sample_Aug18_5 {
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
       hash1 = "7789a3d7d05c30b4efaf3f2f5811804daa56d78a9a660968a4f1f9a78a9108a0"
+      uuid = "6c810662-9ceb-5c3b-8f83-5a4aa2a5d461"
    strings:
       $s1 = "x0=%d, y0=%d, x1=%d, y1=%d" fullword ascii
       $s3 = "sdfkjdfjfhgurgvncmnvmfdjdkfjdkfjdf" fullword wide
@@ -171,6 +180,7 @@ rule APT_FIN7_EXE_Sample_Aug18_6 {
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
       hash1 = "1439d301d931c8c4b00717b9057b23f0eb50049916a48773b17397135194424a"
+      uuid = "2b2e6b74-5d71-5656-8faf-37c94607d93e"
    strings:
       $s1 = "coreServiceShell.exe" fullword ascii
       $s2 = "PtSessionAgent.exe" fullword ascii
@@ -195,6 +205,7 @@ rule APT_FIN7_EXE_Sample_Aug18_7 {
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
       hash1 = "ce8ce35f85406cd7241c6cc402431445fa1b5a55c548cca2ea30eeb4a423b6f0"
+      uuid = "96943654-a6e8-59c0-ab6c-1ab3906a5d05"
    strings:
       $s1 = "libpng version" fullword ascii
       $s2 = "sdfkjdfjfhgurgvncmnvmfdjdkfjdkfjdf" fullword wide
@@ -210,6 +221,7 @@ rule APT_FIN7_EXE_Sample_Aug18_8 {
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
       hash1 = "d8bda53d7f2f1e4e442a0e1c30a20d6b0ac9c6880947f5dd36f78e4378b20c5c"
+      uuid = "1eb9810e-2b50-5a93-925e-073bb17e1e6c"
    strings:
       $s1 = "GetL3st3rr" fullword ascii
    condition:
@@ -224,6 +236,7 @@ rule APT_FIN7_EXE_Sample_Aug18_10 {
       reference = "https://www.fireeye.com/blog/threat-research/2018/08/fin7-pursuing-an-enigmatic-and-evasive-global-criminal-operation.html"
       date = "2018-08-01"
       hash1 = "8cc02b721683f8b880c8d086ed055006dcf6155a6cd19435f74dd9296b74f5fc"
+      uuid = "2c6f557e-31d3-5377-a3fa-4f1507f28386"
    strings:
       /* "Copyright 1 - 19" */
       $c1 = { 00 4C 00 65 00 67 00 61 00 6C 00 43 00 6F 00 70
@@ -246,6 +259,7 @@ rule APT_FIN7_Sample_EXE_Aug18_1 {
       hash3 = "16de81428a034c7b2636c4a875809ab62c9eefcd326b50c3e629df3b141cc32b"
       hash4 = "3937abdd1fd63587022ed540a31c58c87c2080cdec51dd24af3201a6310059d4"
       hash5 = "7789a3d7d05c30b4efaf3f2f5811804daa56d78a9a660968a4f1f9a78a9108a0"
+      uuid = "7c66a234-9dee-5279-b855-892b12d036ff"
    strings:
       $s1 = "x0=%d, y0=%d, x1=%d, y1=%d" fullword ascii
       $s2 = "dx=%d, dy=%d" fullword ascii
@@ -268,6 +282,7 @@ rule APT_FIN7_MsDoc_Sep21_1 {
       date = "2021-09-07"
       score = 85
       hash1 = "d60b6a8310373c9b84e6760c24185535"
+      uuid = "4fbde087-ec1e-5614-af1e-f342b1766fa2"
    strings:
       /* John \x0bW10ProOff16 */
       $xc1 = { 00 4A 00 6F 00 68 00 6E 00 0B 00 57 00 31 00 30
@@ -292,6 +307,7 @@ rule SUSP_OBFUSC_JS_Sept21_2 {
       reference = "https://www.anomali.com/blog/cybercrime-group-fin7-using-windows-11-alpha-themed-docs-to-drop-javascript-backdoor"
       date = "2021-09-07"
       score = 65
+      uuid = "5ab9cd60-077c-5066-bd2f-8da261aae1e0"
    strings:
       $s1 = "=new RegExp(String.fromCharCode(" ascii
       $s2 = ".charCodeAt(" ascii

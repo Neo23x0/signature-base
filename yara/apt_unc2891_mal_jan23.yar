@@ -6,6 +6,7 @@ rule MAL_UNC2891_Caketap {
       date = "2022-03-30"
       reference = "https://github.com/fboldewin/YARA-rules/tree/master"
 
+      uuid = "9c2ffe3d-69ca-5f93-bdb1-40e449139dec"
    strings:
       $str1  = ".caahGss187" ascii fullword // SyS_mkdir hook cmd ident
       $str2 = "ipstat" ascii // rootkit lkm name
@@ -24,6 +25,7 @@ rule MAL_UNC2891_Slapstick {
       reference = "https://github.com/fboldewin/YARA-rules/tree/master"
       hash1 = "9d0165e0484c31bd4ea467650b2ae2f359f67ae1016af49326bb374cead5f789"
 
+      uuid = "eb5db507-ac12-5c11-9dd9-ec34b9a80e1c"
    strings:
       $code1 = {F6 50 04 48 FF C0 48 39 D0 75 F5} // string decrypter
       $code2 = {88 01 48 FF C1 8A 11 89 C8 29 F8 84 D2 0F 85} // log buf crypter
@@ -46,6 +48,7 @@ rule MAL_UNC2891_Steelcorgi {
       hash2 = "3560ed07aac67f73ef910d0b928db3c0bb5f106b5daee054666638b6575a89c5"
       hash3 = "5b4bb50055b31dbd897172583c7046dd27cd03e1e3d84f7a23837e8df7943547"
       
+      uuid = "94da7da5-5fc3-5221-97d6-1854aa7b1959"
    strings:
       $pattern1 = {70 61 64 00 6C 63 6B 00} // padlck
       $pattern2 = {FF 72 FF 6F FF 63 FF 2F FF 73 FF 65 FF 6C FF 66 FF 2F FF 65 FF 78 FF 65} // proc_self_exe
@@ -62,6 +65,7 @@ rule MAL_UNC2891_Winghook {
       reference = "https://github.com/fboldewin/YARA-rules/tree/master"
       hash1 = "d071ee723982cf53e4bce89f3de5a8ef1853457b21bffdae387c4c2bd160a38e"
 
+      uuid = "e5955fa0-8204-58e3-88a6-de4b47756ede"
    strings:
       $code1 = {01 F9 81 E1 FF 00 00 00 41 89 CA [15] 44 01 CF 81 E7 FF 00 00 00} // crypt log file data
       $code2 = {83 E2 0F 0F B6 14 1? 32 14 01 88 14 0? 48 83 ?? ?? 48 83 ?? ?? 75} // decrypt path+logfile name

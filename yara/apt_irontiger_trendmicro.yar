@@ -4,6 +4,7 @@ rule IronTiger_ASPXSpy : HIGHVOL
 		author = "Cyber Safety Solutions, Trend Micro"
 		description = "ASPXSpy detection. It might be used by other fraudsters"
 		reference = "http://goo.gl/T5fSJC"
+		uuid = "3010fcb9-0dbf-59ef-90ce-01d922a95f2d"
 	strings:
 		$str2 = "IIS Spy" wide ascii
 		$str3 = "protected void DGCoW(object sender,EventArgs e)" wide ascii
@@ -17,6 +18,7 @@ rule IronTiger_ChangePort_Toolkit_driversinstall
 		author = "Cyber Safety Solutions, Trend Micro"
 		description = "Iron Tiger Malware - Changeport Toolkit driverinstall"
 		reference = "http://goo.gl/T5fSJC"
+		uuid = "fde2728b-9a23-5f35-9727-0834a7b403da"
 	strings:
 		$str1 = "openmydoor" wide ascii
 		$str2 = "Install service error" wide ascii
@@ -32,6 +34,7 @@ rule IronTiger_ChangePort_Toolkit_ChangePortExe
 		author = "Cyber Safety Solutions, Trend Micro"
 		description = "Iron Tiger Malware - Toolkit ChangePort"
 		reference = "http://goo.gl/T5fSJC"
+		uuid = "2ba74413-5f72-560a-8567-1c4bf3357097"
 	strings:
 		$str1 = "Unable to alloc the adapter!" wide ascii
 		$str2 = "Wait for master fuck" wide ascii
@@ -48,6 +51,7 @@ rule IronTiger_dllshellexc2010
 		author = "Cyber Safety Solutions, Trend Micro"
 		description = "dllshellexc2010 Exchange backdoor + remote shell"
 		reference = "http://goo.gl/T5fSJC"
+		uuid = "960e8e5c-65a5-5dd2-90fa-1f7d31ee8cb5"
 	strings:
 		$str1 = "Microsoft.Exchange.Clients.Auth.dll" ascii wide
 		$str2 = "Dllshellexc2010" wide ascii
@@ -64,6 +68,7 @@ rule IronTiger_dnstunnel
 		author = "Cyber Safety Solutions, Trend Micro"
 		description = "This rule detects a dns tunnel tool used in Operation Iron Tiger"
 		reference = "http://goo.gl/T5fSJC"
+		uuid = "7f24d3dd-4301-5b12-8262-4cc5f6578a4b"
 	strings:
 		$str1 = "\\DnsTunClient\\" wide ascii
 		$str2 = "\\t-DNSTunnel\\" wide ascii
@@ -84,6 +89,7 @@ rule IronTiger_EFH3_encoder
 		author = "Cyber Safety Solutions, Trend Micro"
 		description = "Iron Tiger EFH3 Encoder"
 		reference = "http://goo.gl/T5fSJC"
+		uuid = "ec30782e-8fe9-5843-9db4-5a3c477b7f25"
 	strings:
 		$str1 = "EFH3 [HEX] [SRCFILE] [DSTFILE]" wide ascii
 		$str2 = "123.EXE 123.EFH" wide ascii
@@ -99,6 +105,7 @@ rule IronTiger_GetPassword_x64
 		description = "Iron Tiger Malware - GetPassword x64"
 		reference = "http://goo.gl/T5fSJC"
 		modified = "2023-01-06"
+		uuid = "8f55b23f-52fd-5106-9112-6cffa97269ab"
 	strings:
 		$str1 = "(LUID ERROR)" wide ascii
 		$str2 = "Users\\K8team\\Desktop\\GetPassword" wide ascii
@@ -117,6 +124,7 @@ rule IronTiger_GTalk_Trojan
 		author = "Cyber Safety Solutions, Trend Micro"
 		description = "Iron Tiger Malware - GTalk Trojan"
 		reference = "http://goo.gl/T5fSJC"
+		uuid = "3d72660b-c470-5e63-a83d-990d3c5a696c"
 	strings:
 		$str1 = "gtalklite.com" wide ascii
 		$str2 = "computer=%s&lanip=%s&uid=%s&os=%s&data=%s" wide ascii
@@ -132,6 +140,7 @@ rule IronTiger_HTTP_SOCKS_Proxy_soexe
 		author = "Cyber Safety Solutions, Trend Micro"
 		description = "Iron Tiger Toolset - HTTP SOCKS Proxy soexe"
 		reference = "http://goo.gl/T5fSJC"
+		uuid = "6ead3d61-c1e3-55d1-894e-ab57bcd09cde"
 	strings:
 		$str1 = "listen SOCKET error." wide ascii
 		$str2 = "WSAAsyncSelect SOCKET error." wide ascii
@@ -148,6 +157,7 @@ rule IronTiger_NBDDos_Gh0stvariant_dropper
 		author = "Cyber Safety Solutions, Trend Micro"
 		description = "Iron Tiger Malware - NBDDos Gh0stvariant Dropper"
 		reference = "http://goo.gl/T5fSJC"
+		uuid = "3610b9e3-45f8-5a8d-8977-817160009818"
 	strings:
 		$str1 = "This service can't be stoped." wide ascii
 		$str2 = "Provides support for media palyer" wide ascii
@@ -164,6 +174,7 @@ rule IronTiger_PlugX_DosEmulator
 		author = "Cyber Safety Solutions, Trend Micro - modified by Florian Roth"
 		description = "Iron Tiger Malware - PlugX DosEmulator"
 		reference = "http://goo.gl/T5fSJC"
+		uuid = "e601d91d-49e6-5fe9-b70b-fb1fb6c4f059"
 	strings:
 		$str1 = "Dos Emluator Ver" wide ascii
 		$str2 = "\\PIPE\\FASTDOS" wide ascii
@@ -179,6 +190,7 @@ rule IronTiger_PlugX_FastProxy
 		author = "Cyber Safety Solutions, Trend Micro"
 		description = "Iron Tiger Malware - PlugX FastProxy"
 		reference = "http://goo.gl/T5fSJC"
+		uuid = "14e05823-6288-5f02-8060-add51084c446"
 	strings:
 		$str1 = "SAFEPROXY HTServerTimer Quit!" wide ascii
 		$str2 = "Useage: %s pid" wide ascii
@@ -196,6 +208,7 @@ rule IronTiger_PlugX_Server
 		author = "Cyber Safety Solutions, Trend Micro"
 		description = "Iron Tiger Malware - PlugX Server"
 		reference = "http://goo.gl/T5fSJC"
+		uuid = "38011a23-3ed7-5f58-a814-2551526b27f3"
 	strings:
 		$str1 = "\\UnitFrmManagerKeyLog.pas" wide ascii
 		$str2 = "\\UnitFrmManagerRegister.pas" wide ascii
@@ -217,6 +230,7 @@ rule IronTiger_ReadPWD86
 		author = "Cyber Safety Solutions, Trend Micro"
 		description = "Iron Tiger Malware - ReadPWD86"
 		reference = "http://goo.gl/T5fSJC"
+		uuid = "5db832be-4b8e-536f-8db7-a215a90284e2"
 	strings:
 		$str1 = "Fail To Load LSASRV" wide ascii
 		$str2 = "Fail To Search LSASS Data" wide ascii
@@ -231,6 +245,7 @@ rule IronTiger_Ring_Gh0stvariant
 		author = "Cyber Safety Solutions, Trend Micro"
 		description = "Iron Tiger Malware - Ring Gh0stvariant"
 		reference = "http://goo.gl/T5fSJC"
+		uuid = "6858550a-4000-581c-b270-370db8ed1c57"
 	strings:
 		$str1 = "RING RAT Exception" wide ascii
 		$str2 = "(can not update server recently)!" wide ascii
@@ -247,6 +262,7 @@ rule IronTiger_wmiexec
 		author = "Cyber Safety Solutions, Trend Micro"
 		description = "Iron Tiger Tool - wmi.vbs detection"
 		reference = "http://goo.gl/T5fSJC"
+		uuid = "a3060f50-3594-5da9-98e2-6fa0087451f5"
 	strings:
 		$str1 = "Temp Result File , Change it to where you like" wide ascii
 		$str2 = "wmiexec" wide ascii

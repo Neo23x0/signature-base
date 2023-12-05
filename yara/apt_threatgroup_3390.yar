@@ -20,6 +20,7 @@ rule HttpBrowser_RAT_dropper_Gen1 {
 		hash5 = "8cd8159f6e4689f572e2087394452e80e62297af02ca55fe221fe5d7570ad47b"
 		hash6 = "10de38419c9a02b80ab7bf2f1f1f15f57dbb0fbc9df14b9171dc93879c5a0c53"
 		hash7 = "c2fa67e970d00279cec341f71577953d49e10fe497dae4f298c2e9abdd3a48cc"
+		uuid = "2e347024-ac5f-5e8c-a8b0-53eaa9a03979"
 	strings:
 		$x1 = "1001=cmd.exe" fullword ascii 
 		$x2 = "1003=ShellExecuteA" fullword ascii 
@@ -56,6 +57,7 @@ rule HttpBrowser_RAT_Sample1 {
 		score = 80
 		hash1 = "be334d1f8fa65a723af65200a166c2bbdb06690c8b30fafe772600e4662fc68b"
 		hash2 = "1052ad7f4d49542e4da07fa8ea59c15c40bc09a4d726fad023daafdf05866ebb"
+		uuid = "8babf47f-006c-5001-9753-08ac08f5e861"
 	strings:
 		$s0 = "update.hancominc.com" fullword wide 
 	condition:
@@ -71,6 +73,7 @@ rule HttpBrowser_RAT_Sample2 {
 		date = "2015-08-06"
 		score = 80
 		hash1 = "c57c5a2c322af2835ae136b75283eaaeeaa6aa911340470182a9983ae47b8992"
+		uuid = "693d381f-50b0-5f06-b725-78243b67092c"
 	strings:
 		$s0 = "nKERNEL32.DLL" fullword wide
 		$s1 = "WUSER32.DLL" fullword wide
@@ -110,6 +113,7 @@ rule HttpBrowser_RAT_Gen {
 		hash20 = "36c49f18ce3c205152eef82887eb3070e9b111d35a42b534b2fb2ee535b543c0"
 		hash21 = "3eeb1fd1f0d8ab33f34183893c7346ddbbf3c19b94ba3602d377fa2e84aaad81"
 		hash22 = "3fa8d13b337671323e7fe8b882763ec29b6786c528fa37da773d95a057a69d9a"
+		uuid = "0ba9facb-7385-56ce-9e20-d86261a39cd1"
 	strings:
 		$s0 = "%d|%s|%04d/%02d/%02d %02d:%02d:%02d|%ld|%d" fullword wide 
 		$s1 = "HttpBrowser/1.0" fullword wide
@@ -132,6 +136,7 @@ rule PlugX_NvSmartMax_Gen {
 		hash3 = "555952aa5bcca4fa5ad5a7269fece99b1a04816d104ecd8aefabaa1435f65fa5"
 		hash4 = "71f7a9da99b5e3c9520bc2cc73e520598d469be6539b3c243fb435fe02e44338"
 		hash5 = "65bbf0bd8c6e1ccdb60cf646d7084e1452cb111d97d21d6e8117b1944f3dc71e"
+		uuid = "5ecd25a8-9717-527f-bb6e-3259b9a60458"
 	strings:
 		$s0 = "NvSmartMax.dll" fullword ascii
 		$s1 = "NvSmartMax.dll.url" fullword ascii
@@ -158,6 +163,7 @@ rule HttpBrowser_RAT_dropper_Gen2 {
 		score = 70
 		hash1 = "c57c5a2c322af2835ae136b75283eaaeeaa6aa911340470182a9983ae47b8992"
 		hash2 = "dfa984174268a9f364d856fd47cfaca75804640f849624d69d81fcaca2b57166"
+		uuid = "cd559642-a102-5946-8a7f-16c10e7f746d"
 	strings:
 		$s1 = "navlu.dll.urlUT" fullword ascii
 		$s2 = "VPDN_LU.exeUT" fullword ascii
@@ -184,6 +190,7 @@ rule ThreatGroup3390_Strings {
 		reference = "http://snip.ly/giNB"
 		date = "2015-08-06"
 		score = 60
+		uuid = "9a44393b-5220-5376-ba18-2330f4623cd6"
 	strings:
 		$s1 = "\"cmd\" /c cd /d \"c:\\Windows\\Temp\\\"&copy" ascii
 		$s2 = "svchost.exe a -k -r -s -m5 -v1024000 -padmin-windows2014"
@@ -202,6 +209,7 @@ rule ThreatGroup3390_C2 {
 		reference = "http://snip.ly/giNB"
 		date = "2015-08-06"
 		score = 60
+		uuid = "232b5052-e349-55f1-bd7e-1afc5d35abe4"
 	strings:
 		$s1 = "api.apigmail.com"
 		$s2 = "apigmail.com"
