@@ -26,7 +26,7 @@ rule APT_MAL_RU_WIN_Snake_Malware_May23_1 {
         license = "MIT"
 
     /* The original search only query those bytes in PAGE_EXECUTE_WRITECOPY VADs */
-        uuid = "53d2de3c-350c-5090-84bb-b6cde16a80ad"
+        id = "53d2de3c-350c-5090-84bb-b6cde16a80ad"
     strings:
         $a = { 25 73 23 31 }
         $b = { 25 73 23 32 }
@@ -67,7 +67,7 @@ rule APT_MAL_RU_Snake_Indicators_May23_1 {
       hash17 = "ed74288b367a93c6b47343bc696e751b9c465761ce9c4208901726baa758b234"
       hash18 = "ef1f1c7692b92a730f76b6227643b2d02a6e353af6e930166e3b48e3903e4ffd"
       hash19 = "f5e982b76af7f447742753f0b57eec3d7dd2e3c8e5506c35d4cf6c860b829f45"
-      uuid = "0d4fa8a7-447c-5905-bab9-b63de6209036"
+      id = "0d4fa8a7-447c-5905-bab9-b63de6209036"
    strings:
       $s1 = "\\\\.\\%s\\\\" ascii fullword
       $s2 = "read_peer_nfo" ascii fullword

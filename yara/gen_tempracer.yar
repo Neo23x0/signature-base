@@ -15,7 +15,7 @@ rule TempRacer {
 		reference = "http://www.darknet.org.uk/2016/03/tempracer-windows-privilege-escalation-tool/"
 		date = "2016-03-30"
 		hash = "e17d80c4822d16371d75e1440b6ac44af490b71fbee1010a3e8a5eca94d22bb3"
-		uuid = "edba6471-9720-5aad-8c15-386197700c83"
+		id = "edba6471-9720-5aad-8c15-386197700c83"
 	strings:
 		$s1 = "\\obj\\Release\\TempRacer.pdb" ascii
 		$s2 = "[+] Injecting into " fullword wide

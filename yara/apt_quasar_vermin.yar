@@ -17,7 +17,7 @@ rule Quasar_RAT_Jan18_1 {
       date = "2018-01-29"
       hash1 = "0157b43eb3c20928b77f8700ad8eb279a0aa348921df074cd22ebaff01edaae6"
       hash2 = "24956d8edcf2a1fd26805ec58cfd1ee7498e1a59af8cc2f4b832a7ab34948c18"
-      uuid = "52408897-bfec-5726-9d01-6ff982d50c28"
+      id = "52408897-bfec-5726-9d01-6ff982d50c28"
    strings:
       $a1 = "ping -n 20 localhost > nul" fullword wide
 
@@ -45,7 +45,7 @@ rule Vermin_Keylogger_Jan18_1 {
       hash4 = "4c5e019e0e55a3fe378aa339d52c235c06ecc5053625a5d54d65c4ae38c6e3da"
       hash5 = "24956d8edcf2a1fd26805ec58cfd1ee7498e1a59af8cc2f4b832a7ab34948c18"
       hash6 = "2963c5eacaad13ace807edd634a4a5896cb5536f961f43afcf8c1f25c08a5eef"
-      uuid = "52192ea1-bb3d-52da-ba18-0645262745e2"
+      id = "52192ea1-bb3d-52da-ba18-0645262745e2"
    strings:
       $x1 = "_keyloggerTaskDescription" ascii
       $x2 = "_keyloggerTaskAuthor" ascii

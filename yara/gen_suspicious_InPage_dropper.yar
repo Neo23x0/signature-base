@@ -9,7 +9,7 @@ rule gen_suspicious_InPage_dropper
         url1 = "https://cloudblogs.microsoft.com/microsoftsecure/2018/11/08/attack-uses-malicious-inpage-document-and-outdated-vlc-media-player-to-give-attackers-backdoor-access-to-targets/"
         url2 = "https://twitter.com/Ahmedfshosha/status/1138138981521154049"
 
-        uuid = "9144711a-e6ee-5c97-a5f4-3f6df1d630dc"
+        id = "9144711a-e6ee-5c97-a5f4-3f6df1d630dc"
     strings:
         $s1 = "InPage Arabic Document"
         $c1 = {31 06 83 c6 04 e2 }

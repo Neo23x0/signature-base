@@ -6,7 +6,7 @@ rule MAL_Winnti_BR_Report_TwinPeaks {
       author = "@br_data repo"
       reference = "https://github.com/br-data/2019-winnti-analyse"
       date = "2019-07-24"
-      uuid = "2e4e2b88-fdb4-5adc-8192-a304d71ca851"
+      id = "2e4e2b88-fdb4-5adc-8192-a304d71ca851"
    strings:
       $cooper = "Cooper"
       $pattern = { e9 ea eb ec ed ee ef f0}
@@ -20,7 +20,7 @@ rule MAL_BR_Report_TheDao {
       author = "@br_data repo"
       reference = "https://github.com/br-data/2019-winnti-analyse"
       date = "2019-07-24"
-      uuid = "5cc932d7-2ec6-5570-af4a-3f64b39e6db5"
+      id = "5cc932d7-2ec6-5570-af4a-3f64b39e6db5"
   strings:
     $b = { DA A0 }
   condition:
@@ -33,7 +33,7 @@ rule MAL_Winnti_BR_Report_MockingJay {
       author = "@br_data repo"
       reference = "https://github.com/br-data/2019-winnti-analyse"
       date = "2019-07-24"
-      uuid = "9aff9d65-3827-59de-9dc3-38f227155d3d"
+      id = "9aff9d65-3827-59de-9dc3-38f227155d3d"
   strings:
     $load_magic = { C7 44 ?? ?? FF D8 FF E0 }
     $iter = { E9 EA EB EC ED EE EF F0 }

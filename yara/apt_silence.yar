@@ -18,7 +18,7 @@ rule Silence_malware_1 {
       reference = "https://securelist.com/the-silence/83009/"
       date = "2017-11-01"
       hash1 = "f24b160e9e9d02b8e31524b8a0b30e7cdc66dd085e24e4c58240e4c4b6ec0ac2"
-      uuid = "f932e3fe-a2d7-55b7-b581-88c0ed45723e"
+      id = "f932e3fe-a2d7-55b7-b581-88c0ed45723e"
    strings:
       $x1 = "adobeudp.exe" fullword wide
       $x2 = "%s\\adobeudp.exeZone.Identifier" fullword ascii
@@ -45,7 +45,7 @@ rule Silence_malware_2 {
       reference = "https://securelist.com/the-silence/83009/"
       date = "2017-11-01"
       hash1 = "75b8f534b2f56f183465ba2b63cfc80b7d7d1d155697af141447ec7144c2ba27"
-      uuid = "e4c7d753-fd04-5e11-9960-1ad238039c11"
+      id = "e4c7d753-fd04-5e11-9960-1ad238039c11"
    strings:
       $x1 = "\\ScreenMonitorService\\Release\\smmsrv.pdb" ascii
       $x2 = "\\\\.\\pipe\\{73F7975A-A4A2-4AB6-9121-AECAE68AABBB}" fullword ascii

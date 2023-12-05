@@ -13,7 +13,7 @@ rule Reveal_MemoryCredentials {
 		reference = "https://github.com/giMini/RWMC/"
 		date = "2015-08-31"
 		hash = "893c26818c424d0ff549c1fbfa11429f36eecd16ee69330c442c59a82ce6adea"
-		uuid = "ca06c702-45fe-5ab5-b53e-c3f7b7006570"
+		id = "ca06c702-45fe-5ab5-b53e-c3f7b7006570"
 	strings:
 		$s1 = "$dumpAProcessPath = \"C:\\Windows\\temp\\msdsc.exe\"" fullword ascii
 		$s2 = "$user = Get-ADUser -Filter {UserPrincipalName -like $loginPlainText -or sAMAccountName -like $loginPlainText}" fullword ascii
@@ -31,7 +31,7 @@ rule MiniDumpTest_msdsc {
 		reference = "https://github.com/giMini/RWMC/"
 		date = "2015-08-31"
 		hash = "477034933918c433f521ba63d2df6a27cc40a5833a78497c11fb0994d2fd46ba"
-		uuid = "044ae157-aba2-5935-9afc-8a12853c84bc"
+		id = "044ae157-aba2-5935-9afc-8a12853c84bc"
 	strings:
 		$s1 = "MiniDumpTest1.exe" fullword wide
 		$s2 = "MiniDumpWithTokenInformation" fullword ascii

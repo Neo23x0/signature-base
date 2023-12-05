@@ -11,7 +11,7 @@ rule MAL_Neshta_Generic : HIGHVOL {
       hash1 = "0283c0f02307adc4ee46c0382df4b5d7b4eb80114fbaf5cb7fe5412f027d165e"
       hash2 = "b7f8233dafab45e3abbbb4f3cc76e6860fae8d5337fb0b750ea20058b56b0efb"
       hash3 = "1954e06fc952a5a0328774aaf07c23970efd16834654793076c061dffb09a7eb"
-      uuid = "9a3b8369-7e19-5c21-9eba-0bb81507696a"
+      id = "9a3b8369-7e19-5c21-9eba-0bb81507696a"
    strings:
       $x1 = "the best. Fuck off all the rest."
       $x2 = "! Best regards 2 Tommy Salo. [Nov-2005] yours [Dziadulja Apanas]" fullword ascii

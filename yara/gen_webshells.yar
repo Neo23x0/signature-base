@@ -118,7 +118,7 @@ rule WEBSHELL_PHP_Generic
         hash = "d9ae762b011216e520ebe4b7abcac615c61318a8195601526cfa11bbc719a8f1"
         hash = "dd5d8a9b4bb406e0b8f868165a1714fe54ffb18e621582210f96f6e5ae850b33"
 
-        uuid = "294ce5d5-55b2-5c79-b0f8-b66f949efbb2"
+        id = "294ce5d5-55b2-5c79-b0f8-b66f949efbb2"
     strings:
         $wfp_tiny1 = "escapeshellarg" fullword
         $wfp_tiny2 = "addslashes" fullword
@@ -435,7 +435,7 @@ rule WEBSHELL_PHP_Generic_Callback
         hash = "de1ef827bcd3100a259f29730cb06f7878220a7c02cee0ebfc9090753d2237a8"
         hash = "487e8c08e85774dfd1f5e744050c08eb7d01c6877f7d03d7963187748339e8c4"
 
-        uuid = "e33dba84-bbeb-5955-a81b-2d2c8637fb48"
+        id = "e33dba84-bbeb-5955-a81b-2d2c8637fb48"
     strings:
 
         //strings from private rule php_false_positive
@@ -741,7 +741,7 @@ rule WEBSHELL_PHP_Base64_Encoded_Payloads : FILE {
         hash = "7a16311a371f03b29d5220484e7ecbe841cfaead4e73c17aa6a9c23b5d94544d"
         hash = "e2b1dfcfaa61e92526a3a444be6c65330a8db4e692543a421e19711760f6ffe2"
 
-        uuid = "4e42b47d-725b-5e1f-9408-6c6329f60506"
+        id = "4e42b47d-725b-5e1f-9408-6c6329f60506"
     strings:
         $decode1 = "base64_decode" fullword nocase wide ascii
         $decode2 = "openssl_decrypt" fullword nocase wide ascii
@@ -881,7 +881,7 @@ rule WEBSHELL_PHP_Unknown_1
         date = "2021/01/07"
         modified = "2023-04-05"
 
-        uuid = "93d01a4c-4c18-55d2-b682-68a1f6460889"
+        id = "93d01a4c-4c18-55d2-b682-68a1f6460889"
     strings:
         $sp0 = /^<\?php \$[a-z]{3,30} = '/ wide ascii
         $sp1 = "=explode(chr(" wide ascii
@@ -923,7 +923,7 @@ rule WEBSHELL_PHP_Generic_Eval
         hash = "dd5d8a9b4bb406e0b8f868165a1714fe54ffb18e621582210f96f6e5ae850b33"
 
 
-        uuid = "79cfbd88-f6f7-5cba-a325-0a99962139ca"
+        id = "79cfbd88-f6f7-5cba-a325-0a99962139ca"
     strings:
         // new: eval($GLOBALS['_POST'
         $geval = /\b(exec|shell_exec|passthru|system|popen|proc_open|pcntl_exec|eval|assert)[\t ]*(\(base64_decode)?(\(stripslashes)?[\t ]*(\(trim)?[\t ]*\(\$(_POST|_GET|_REQUEST|_SERVER\s?\[['"]HTTP_|GLOBALS\[['"]_(POST|GET|REQUEST))/ wide ascii
@@ -970,7 +970,7 @@ rule WEBSHELL_PHP_Double_Eval_Tiny
         hash = "006620d2a701de73d995fc950691665c0692af11"
 
 
-        uuid = "868db363-83d3-57e2-ac8d-c6125e9bdd64"
+        id = "868db363-83d3-57e2-ac8d-c6125e9bdd64"
     strings:
         $payload = /(\beval[\t ]*\([^)]|\bassert[\t ]*\([^)])/ nocase wide ascii
         $fp1 = "clone" fullword wide ascii
@@ -1020,7 +1020,7 @@ rule WEBSHELL_PHP_OBFUSC
         hash = "181a71c99a4ae13ebd5c94bfc41f9ec534acf61cd33ef5bce5fb2a6f48b65bf4"
         hash = "76d4e67e13c21662c4b30aab701ce9cdecc8698696979e504c288f20de92aee7"
         hash = "1d0643927f04cb1133f00aa6c5fa84aaf88e5cf14d7df8291615b402e8ab6dc2"
-        uuid = "f66e337b-8478-5cd3-b01a-81133edaa8e5"
+        id = "f66e337b-8478-5cd3-b01a-81133edaa8e5"
     strings:
 
         //strings from private rule php_false_positive
@@ -1149,7 +1149,7 @@ rule WEBSHELL_PHP_OBFUSC_Encoded
         hash = "8a1e2d72c82f6a846ec066d249bfa0aaf392c65149d39b7b15ba19f9adc3b339"
 
 
-        uuid = "134c1189-1b41-58d5-af66-beaa4795a704"
+        id = "134c1189-1b41-58d5-af66-beaa4795a704"
     strings:
         // one without plain e, one without plain v, to avoid hitting on plain "eval("
         $enc_eval1 = /(e|\\x65|\\101)(\\x76|\\118)(a|\\x61|\\97)(l|\\x6c|\\108)(\(|\\x28|\\40)/ wide ascii nocase
@@ -1210,7 +1210,7 @@ rule WEBSHELL_PHP_OBFUSC_Encoded_Mixed_Dec_And_Hex
         hash = "dd5d8a9b4bb406e0b8f868165a1714fe54ffb18e621582210f96f6e5ae850b33"
         hash = "0ff05e6695074f98b0dee6200697a997c509a652f746d2c1c92c0b0a0552ca47"
 
-        uuid = "9ae920e2-17c8-58fd-8566-90d461a54943"
+        id = "9ae920e2-17c8-58fd-8566-90d461a54943"
     strings:
         // "e\x4a\x48\x5a\x70\x63\62\154\x30\131\171\101\x39\111\x43\x52\x66\x51\
         //$mix = /['"]\\x?[0-9a-f]{2,3}[\\\w]{2,20}\\\d{1,3}[\\\w]{2,20}\\x[0-9a-f]{2}\\/ wide ascii nocase
@@ -1259,7 +1259,7 @@ rule WEBSHELL_PHP_OBFUSC_Tiny
         hash = "694ec6e1c4f34632a9bd7065f73be473"
         hash = "5c871183444dbb5c8766df6b126bd80c624a63a16cc39e20a0f7b002216b2ba5"
 
-        uuid = "d78e495f-54d2-5f5f-920f-fb6612afbca3"
+        id = "d78e495f-54d2-5f5f-920f-fb6612afbca3"
     strings:
         // 'ev'.'al'
         $obf1 = /\w'\.'\w/ wide ascii
@@ -1359,7 +1359,7 @@ rule WEBSHELL_PHP_OBFUSC_Str_Replace
         hash = "4d31d94b88e2bbd255cf501e178944425d40ee97"
         hash = "e1a2af3477d62a58f9e6431f5a4a123fb897ea80"
 
-        uuid = "1f5b93c9-bdeb-52c7-a99a-69869634a574"
+        id = "1f5b93c9-bdeb-52c7-a99a-69869634a574"
     strings:
         $payload1 = "str_replace" fullword wide ascii
         $payload2 = "function" fullword wide ascii
@@ -1413,7 +1413,7 @@ rule WEBSHELL_PHP_OBFUSC_Fopo
         date = "2021/01/12"
         modified = "2023-04-05"
 
-        uuid = "a298e99d-1ba8-58c8-afb9-fc988ea91e9a"
+        id = "a298e99d-1ba8-58c8-afb9-fc988ea91e9a"
     strings:
         $payload = /(\beval[\t ]*\([^)]|\bassert[\t ]*\([^)])/ nocase wide ascii
         // ;@eval(
@@ -1477,7 +1477,7 @@ rule WEBSHELL_PHP_Gzinflated
         hash = "a6cf337fe11fe646d7eee3d3f09c7cb9643d921d"
         hash = "07eb6634f28549ebf26583e8b154c6a579b8a733"
 
-        uuid = "9cf99ae4-9f7c-502f-9294-b531002953d6"
+        id = "9cf99ae4-9f7c-502f-9294-b531002953d6"
     strings:
         $payload2 = /eval\s?\(\s?("\?>".)?gzinflate\s?\(\s?base64_decode\s?\(/ wide ascii nocase
         $payload4 = /eval\s?\(\s?("\?>".)?gzuncompress\s?\(\s?(base64_decode|gzuncompress)/ wide ascii nocase
@@ -1551,7 +1551,7 @@ rule WEBSHELL_PHP_OBFUSC_3
         hash = "14e02b61905cf373ba9234a13958310652a91ece"
         hash = "6f97f607a3db798128288e32de851c6f56e91c1d"
 
-        uuid = "f2017e6f-0623-53ff-aa26-a479f3a02024"
+        id = "f2017e6f-0623-53ff-aa26-a479f3a02024"
     strings:
         $obf1 = "chr(" wide ascii
 
@@ -1858,7 +1858,7 @@ rule WEBSHELL_PHP_Includer_Eval
         hash = "202dbcdc2896873631e1a0448098c820c82bcc8385a9f7579a0dc9702d76f580"
         hash = "b51a6d208ec3a44a67cce16dcc1e93cdb06fe150acf16222815333ddf52d4db8"
 
-        uuid = "995fcc34-f91e-5c9c-97b1-84eed1714d40"
+        id = "995fcc34-f91e-5c9c-97b1-84eed1714d40"
     strings:
         $payload1 = "eval" fullword wide ascii
         $payload2 = "assert" fullword wide ascii
@@ -1908,7 +1908,7 @@ rule WEBSHELL_PHP_Includer_Tiny
         hash = "9e856f5cb7cb901b5003e57c528a6298341d04dc"
         hash = "b3b0274cda28292813096a5a7a3f5f77378b8905205bda7bb7e1a679a7845004"
 
-        uuid = "9bf96ddc-d984-57eb-9803-0b01890711b5"
+        id = "9bf96ddc-d984-57eb-9803-0b01890711b5"
     strings:
         $php_include1 = /include\(\$_(GET|POST|REQUEST)\[/ nocase wide ascii
 
@@ -1956,7 +1956,7 @@ rule WEBSHELL_PHP_Dynamic
         hash = "c4765e81550b476976604d01c20e3dbd415366df"
         hash = "2e11ba2d06ebe0aa818e38e24a8a83eebbaae8877c10b704af01bf2977701e73"
 
-        uuid = "58ad94bc-93c8-509c-9d3a-c9a26538d60c"
+        id = "58ad94bc-93c8-509c-9d3a-c9a26538d60c"
     strings:
         $pd_fp1 = "whoops_add_stack_frame" wide ascii
         $pd_fp2 = "new $ec($code, $mode, $options, $userinfo);" wide ascii
@@ -2035,7 +2035,7 @@ rule WEBSHELL_PHP_Dynamic_Big
         hash = "575edeb905b434a3b35732654eedd3afae81e7d99ca35848c509177aa9bf9eef"
         hash = "ee34d62e136a04e2eaf84b8daa12c9f2233a366af83081a38c3c973ab5e2c40f"
 
-        uuid = "a5caab93-7b94-59d7-bbca-f9863e81b9e5"
+        id = "a5caab93-7b94-59d7-bbca-f9863e81b9e5"
     strings:
         //strings from private rule capa_bin_files
         $dex   = { 64 65 ( 78 | 79 ) 0a 30 }
@@ -2350,7 +2350,7 @@ rule WEBSHELL_PHP_Encoded_Big
         hash = "74c92f29cf15de34b8866db4b40748243fb938b4"
         hash = "042245ee0c54996608ff8f442c8bafb8"
 
-        uuid = "c3bb7b8b-c554-5802-8955-c83722498f8b"
+        id = "c3bb7b8b-c554-5802-8955-c83722498f8b"
     strings:
 
         //strings from private rule capa_php_new
@@ -2440,7 +2440,7 @@ rule WEBSHELL_PHP_Generic_Backticks
         hash = "144e242a9b219c5570973ca26d03e82e9fbe7ba2773305d1713288ae3540b4ad"
         hash = "8db86ad90883cd208cf86acd45e67c03f994998804441705d690cb6526614d00"
 
-        uuid = "b2f1d8d0-8668-5641-8ce9-c8dd71f51f58"
+        id = "b2f1d8d0-8668-5641-8ce9-c8dd71f51f58"
     strings:
         $backtick = /`\s*{?\$(_POST\[|_GET\[|_REQUEST\[|_SERVER\['HTTP_)/ wide ascii
 
@@ -2488,7 +2488,7 @@ rule WEBSHELL_PHP_Generic_Backticks_OBFUSC
         hash = "1e75914336b1013cc30b24d76569542447833416516af0d237c599f95b593f9b"
         hash = "8db86ad90883cd208cf86acd45e67c03f994998804441705d690cb6526614d00"
 
-        uuid = "5ecb329f-0755-536d-8bfa-e36158474a0b"
+        id = "5ecb329f-0755-536d-8bfa-e36158474a0b"
     strings:
         $s1 = /echo[\t ]*\(?`\$/ wide ascii
 
@@ -2553,7 +2553,7 @@ rule WEBSHELL_PHP_By_String_Known_Webshell
 
         //TODO regex for 96d8ca3d269e98a330bdb7583cccdc85eab3682f9b64f98e4f42e55103a71636 would it be fast enough?
 
-        uuid = "05ac0e0a-3a19-5c60-b89a-4a300d8c22e7"
+        id = "05ac0e0a-3a19-5c60-b89a-4a300d8c22e7"
     strings:
         $pbs1 = "b374k shell" wide ascii
         $pbs2 = "b374k/b374k" wide ascii
@@ -2673,7 +2673,7 @@ rule WEBSHELL_PHP_Strings_SUSP
         hash = "281b66f62db5caab2a6eb08929575ad95628a690"
         hash = "1ab3ae4d613b120f9681f6aa8933d66fa38e4886"
 
-        uuid = "25f25df5-4398-562b-9383-e01ccb17e8de"
+        id = "25f25df5-4398-562b-9383-e01ccb17e8de"
     strings:
         $sstring1 = "eval(\"?>\"" nocase wide ascii
 
@@ -2761,7 +2761,7 @@ rule WEBSHELL_PHP_In_Htaccess
         hash = "c026d4512a32d93899d486c6f11d1e13b058a713"
         hash = "8c9e65cd3ef093cd9c5b418dc5116845aa6602bc92b9b5991b27344d8b3f7ef2"
 
-        uuid = "0f5edff9-22b2-50c9-ae81-72698ea8e7db"
+        id = "0f5edff9-22b2-50c9-ae81-72698ea8e7db"
     strings:
         $hta = "AddType application/x-httpd-php .htaccess" wide ascii
 
@@ -2783,7 +2783,7 @@ rule WEBSHELL_PHP_Function_Via_Get
         hash = "d870e971511ea3e082662f8e6ec22e8a8443ca79"
         hash = "73fa97372b3bb829835270a5e20259163ecc3fdbf73ef2a99cb80709ea4572be"
 
-        uuid = "5fef1063-2f9f-516e-86f6-cfd98bb05e6e"
+        id = "5fef1063-2f9f-516e-86f6-cfd98bb05e6e"
     strings:
         $sr0 = /\$_GET\s?\[.{1,30}\]\(\$_GET\s?\[/ wide ascii
         $sr1 = /\$_POST\s?\[.{1,30}\]\(\$_GET\s?\[/ wide ascii
@@ -2831,7 +2831,7 @@ rule WEBSHELL_PHP_Writer
         hash = "0ce760131787803bbef216d0ee9b5eb062633537"
         hash = "20281d16838f707c86b1ff1428a293ed6aec0e97"
 
-        uuid = "05bb3e0c-69b2-5176-a3eb-e6ba2d72a205"
+        id = "05bb3e0c-69b2-5176-a3eb-e6ba2d72a205"
     strings:
         $sus3 = "'upload'" wide ascii
         $sus4 = "\"upload\"" wide ascii
@@ -2923,7 +2923,7 @@ rule WEBSHELL_ASP_Writer
         hash = "97d9f6c411f54b56056a145654cd00abca2ff871"
         hash = "fc44fd7475ee6c0758ace2b17dd41ed7ea75cc73"
 
-        uuid = "a1310e22-f485-5f06-8f1a-4cf9ae8413a1"
+        id = "a1310e22-f485-5f06-8f1a-4cf9ae8413a1"
     strings:
         $sus1 = "password" fullword wide ascii
         $sus2 = "pwd" fullword wide ascii
@@ -3098,7 +3098,7 @@ rule WEBSHELL_ASP_OBFUSC
         hash = "d6b96d844ac395358ee38d4524105d331af42ede"
         hash = "cafc4ede15270ab3f53f007c66e82627a39f4d0f"
 
-        uuid = "3960b692-9f6f-52c5-b881-6f9e1b3ac555"
+        id = "3960b692-9f6f-52c5-b881-6f9e1b3ac555"
     strings:
         $asp_obf1 = "/*-/*-*/" wide ascii
         $asp_obf2 = "u\"+\"n\"+\"s" wide ascii
@@ -3371,7 +3371,7 @@ rule WEBSHELL_ASP_Generic_Eval_On_Input
         hash = "a1df4cfb978567c4d1c353e988915c25c19a0e4a"
         hash = "069ea990d32fc980939fffdf1aed77384bf7806bc57c0a7faaff33bd1a3447f6"
 
-        uuid = "0904cefb-6e0f-5e5f-9986-cf83d409ce46"
+        id = "0904cefb-6e0f-5e5f-9986-cf83d409ce46"
     strings:
         $payload_and_input0 = /\beval_r\s{0,20}\(Request\(/ nocase wide ascii
         $payload_and_input1 = /\beval[\s\(]{1,20}request[.\(\[]/ nocase wide ascii
@@ -3488,7 +3488,7 @@ rule WEBSHELL_ASP_Nano
         hash = "d0c5e641120b8ea70a363529843d9f393074c54af87913b3ab635189fb0c84cb"
         hash = "28cfcfe28419a399c606bf96505bc68d6fe05624dba18306993f9fe0d398fbe1"
 
-        uuid = "5f2f24c2-159d-51e1-80d9-11eeb77e8760"
+        id = "5f2f24c2-159d-51e1-80d9-11eeb77e8760"
     strings:
         $susasp1  = "/*-/*-*/"
         $susasp2  = "(\"%1"
@@ -3671,7 +3671,7 @@ rule WEBSHELL_ASP_Encoded
         hash = "f41f8c82b155c3110fc1325e82b9ee92b741028b"
         hash = "af40f4c36e3723236c59dc02f28a3efb047d67dd"
 
-        uuid = "67c0e1f6-6da5-569c-ab61-8b8607429471"
+        id = "67c0e1f6-6da5-569c-ab61-8b8607429471"
     strings:
         $encoded1 = "VBScript.Encode" nocase wide ascii
         $encoded2 = "JScript.Encode" nocase wide ascii
@@ -3780,7 +3780,7 @@ rule WEBSHELL_ASP_Encoded_AspCoding
         hash = "7cfd184ab099c4d60b13457140493b49c8ba61ee"
         hash = "f5095345ee085318235c11ae5869ae564d636a5342868d0935de7582ba3c7d7a"
 
-        uuid = "788a8dae-bcb8-547c-ba17-e1f14bc28f34"
+        id = "788a8dae-bcb8-547c-ba17-e1f14bc28f34"
     strings:
         $encoded1 = "ASPEncodeDLL" fullword nocase wide ascii
         $encoded2 = ".Runt" nocase wide ascii
@@ -3899,7 +3899,7 @@ rule WEBSHELL_ASP_By_String
         hash = "de173ea8dcef777368089504a4af0804864295b75e51794038a6d70f2bcfc6f5"
 
 
-        uuid = "4705b28b-2ffa-53d1-b727-1a9fc2a7dd69"
+        id = "4705b28b-2ffa-53d1-b727-1a9fc2a7dd69"
     strings:
         // reversed
         $asp_string1  = "tseuqer lave" wide ascii
@@ -4070,7 +4070,7 @@ rule WEBSHELL_ASP_Sniffer
         hash = "c3bc4ab8076ef184c526eb7f16e08d41b4cec97e"
         hash = "ed5938c04f61795834751d44a383f8ca0ceac833"
 
-        uuid = "b5704c19-fce1-5210-8185-4839c1c5a344"
+        id = "b5704c19-fce1-5210-8185-4839c1c5a344"
     strings:
         $sniff1 = "Socket(" wide ascii
         $sniff2 = ".Bind(" wide ascii
@@ -4207,7 +4207,7 @@ rule WEBSHELL_ASP_Generic_Tiny
         hash = "0864f040a37c3e1cef0213df273870ed6a61e4bc"
         hash = "b184dc97b19485f734e3057e67007a16d47b2a62"
 
-        uuid = "0904cefb-6e0f-5e5f-9986-cf83d409ce46"
+        id = "0904cefb-6e0f-5e5f-9986-cf83d409ce46"
     strings:
         $fp1 = "net.rim.application.ipproxyservice.AdminCommand.execute"
 
@@ -4414,7 +4414,7 @@ rule WEBSHELL_ASP_Generic : FILE {
         hash = "4cf6fbad0411b7d33e38075f5e00d4c8ae9ce2f6f53967729974d004a183b25c"
         hash = "a91320483df0178eb3cafea830c1bd94585fc896"
         hash = "f3398832f697e3db91c3da71a8e775ebf66c7e73"
-        uuid = "0904cefb-6e0f-5e5f-9986-cf83d409ce46"
+        id = "0904cefb-6e0f-5e5f-9986-cf83d409ce46"
     strings:
         $asp_much_sus7  = "Web Shell" nocase
         $asp_much_sus8  = "WebShell" nocase
@@ -4715,7 +4715,7 @@ rule WEBSHELL_ASP_Generic_Registry_Reader
         hash = "f85cf490d7eb4484b415bea08b7e24742704bdda"
         hash = "898ebfa1757dcbbecb2afcdab1560d72ae6940de"
 
-        uuid = "02d6f95f-1801-5fb0-8ab8-92176cf2fdd7"
+        id = "02d6f95f-1801-5fb0-8ab8-92176cf2fdd7"
     strings:
         /* $asp_reg1  = "Registry" fullword wide ascii */ /* too many matches issues */
         $asp_reg2  = "LocalMachine" fullword wide ascii
@@ -4866,7 +4866,7 @@ rule WEBSHELL_ASPX_Regeorg_CSHARP
         hash = "e54f1a3eab740201feda235835fc0aa2e0c44ba9"
         hash = "aea0999c6e5952ec04bf9ee717469250cddf8a6f"
 
-        uuid = "0a53d368-5f1b-55b7-b08f-36b0f8c5612f"
+        id = "0a53d368-5f1b-55b7-b08f-36b0f8c5612f"
     strings:
         $input_sa1 = "Request.QueryString.Get" fullword nocase wide ascii
         $input_sa2 = "Request.Headers.Get" fullword nocase wide ascii
@@ -4978,7 +4978,7 @@ rule WEBSHELL_CSHARP_Generic
         hash = "620ee444517df8e28f95e4046cd7509ac86cd514"
         hash = "a91320483df0178eb3cafea830c1bd94585fc896"
 
-        uuid = "6d38a6b0-b1d2-51b0-9239-319f1fea7cae"
+        id = "6d38a6b0-b1d2-51b0-9239-319f1fea7cae"
     strings:
         $input_http = "Request." nocase wide ascii
         $input_form1 = "<asp:" nocase wide ascii
@@ -5090,7 +5090,7 @@ rule WEBSHELL_ASP_Runtime_Compile : FILE {
         hash = "dfd30139e66cba45b2ad679c357a1e2f565e6b3140a17e36e29a1e5839e87c5e"
         hash = "89eac7423dbf86eb0b443d8dd14252b4208e7462ac2971c99f257876388fccf2"
         hash = "8ce4eaf111c66c2e6c08a271d849204832713f8b66aceb5dadc293b818ccca9e"
-        uuid = "5da9318d-f542-5603-a111-5b240f566d47"
+        id = "5da9318d-f542-5603-a111-5b240f566d47"
     strings:
         $payload_reflection1 = "System" fullword nocase wide ascii
         $payload_reflection2 = "Reflection" fullword nocase wide ascii
@@ -5188,7 +5188,7 @@ rule WEBSHELL_ASP_SQL
         hash = "f19cc178f1cfad8601f5eea2352cdbd2d6f94e7e"
         hash = "cafc4ede15270ab3f53f007c66e82627a39f4d0f"
 
-        uuid = "e534dcb9-40ab-544f-ae55-89fb21c422e9"
+        id = "e534dcb9-40ab-544f-ae55-89fb21c422e9"
     strings:
         $sql1 = "SqlConnection" fullword wide ascii
         $sql2 = "SQLConnection" fullword wide ascii
@@ -5368,7 +5368,7 @@ rule WEBSHELL_ASP_Scan_Writable
         hash = "2409eda9047085baf12e0f1b9d0b357672f7a152"
         hash = "af1c00696243f8b062a53dad9fb8b773fa1f0395631ffe6c7decc42c47eedee7"
 
-        uuid = "1766e081-0591-59ab-b546-b13207764b4d"
+        id = "1766e081-0591-59ab-b546-b13207764b4d"
     strings:
         $scan1 = "DirectoryInfo" nocase fullword wide ascii
         $scan2 = "GetDirectories" nocase fullword wide ascii
@@ -5516,7 +5516,7 @@ rule WEBSHELL_JSP_ReGeorg
         hash = "6db49e43722080b5cd5f07e058a073ba5248b584"
         hash = "9108a33058aa9a2fb6118b719c5b1318f33f0989"
 
-        uuid = "cbb90005-d8f8-5c64-85d1-29e466f48c25"
+        id = "cbb90005-d8f8-5c64-85d1-29e466f48c25"
     strings:
         $jgeorg1 = "request" fullword wide ascii
         $jgeorg2 = "getHeader" fullword wide ascii
@@ -5566,7 +5566,7 @@ rule WEBSHELL_JSP_HTTP_Proxy
         hash = "97c1e2bf7e769d3fc94ae2fc74ac895f669102c6"
         hash = "2f9b647660923c5262636a5344e2665512a947a4"
 
-        uuid = "55be246e-30a8-52ed-bc5f-507e63bbfe16"
+        id = "55be246e-30a8-52ed-bc5f-507e63bbfe16"
     strings:
         $jh1 = "OutputStream" fullword wide ascii
         $jh2 = "InputStream"  wide ascii
@@ -5617,7 +5617,7 @@ rule WEBSHELL_JSP_Writer_Nano
         hash = "9f1df0249a6a491cdd5df598d83307338daa4c43"
         hash = "5e241d9d3a045d3ade7b6ff6af6c57b149fa356e"
 
-        uuid = "422a18f2-d6d4-5b42-be15-1eafe44e01cf"
+        id = "422a18f2-d6d4-5b42-be15-1eafe44e01cf"
     strings:
         // writting file to disk
         $payload1 = ".write" wide ascii
@@ -5699,7 +5699,7 @@ rule WEBSHELL_JSP_Generic_Tiny
         hash = "87c3ac9b75a72187e8bc6c61f50659435dbdc4fde6ed720cebb93881ba5989d8"
         hash = "1aa6af726137bf261849c05d18d0a630d95530588832aadd5101af28acc034b5"
 
-        uuid = "7535ade8-fc65-5558-a72c-cc14c3306390"
+        id = "7535ade8-fc65-5558-a72c-cc14c3306390"
     strings:
         $payload1 = "ProcessBuilder" fullword wide ascii
         $payload2 = "URLClassLoader" fullword wide ascii
@@ -5784,7 +5784,7 @@ rule WEBSHELL_JSP_Generic
         hash = "bdaf9279b3d9e07e955d0ce706d9c42e4bdf9aa1"
         hash = "ee9408eb923f2d16f606a5aaac7e16b009797a07"
 
-        uuid = "7535ade8-fc65-5558-a72c-cc14c3306390"
+        id = "7535ade8-fc65-5558-a72c-cc14c3306390"
     strings:
         $susp0 = "cmd" fullword nocase ascii wide
         $susp1 = "command" fullword nocase ascii wide
@@ -5877,7 +5877,7 @@ rule WEBSHELL_JSP_Generic_Base64
         hash = "8b5fe53f8833df3657ae2eeafb4fd101c05f0db0"
         hash = "1b916afdd415dfa4e77cecf47321fd676ba2184d"
 
-        uuid = "2eabbad2-7d10-573a-9120-b9b763fa2352"
+        id = "2eabbad2-7d10-573a-9120-b9b763fa2352"
     strings:
         // Runtime
         $one1 = "SdW50aW1l" wide ascii
@@ -5956,7 +5956,7 @@ rule WEBSHELL_JSP_Generic_ProcessBuilder
         hash = "347a55c174ee39ec912d9107e971d740f3208d53af43ea480f502d177106bbe8"
         hash = "d0ba29b646274e8cda5be1b940a38d248880d9e2bba11d994d4392c80d6b65bd"
 
-        uuid = "2a7c5f44-24a1-5f43-996e-945c209b79b1"
+        id = "2a7c5f44-24a1-5f43-996e-945c209b79b1"
     strings:
         $exec = "ProcessBuilder" fullword wide ascii
         $start = "start" fullword wide ascii
@@ -5993,7 +5993,7 @@ rule WEBSHELL_JSP_Generic_Reflection
         hash = "62e6c6065b5ca45819c1fc049518c81d7d165744"
         hash = "bf0ff88cbb72c719a291c722ae3115b91748d5c4920afe7a00a0d921d562e188"
 
-        uuid = "806ffc8b-1dc8-5e28-ae94-12ad3fee18cd"
+        id = "806ffc8b-1dc8-5e28-ae94-12ad3fee18cd"
     strings:
         $ws_exec = "invoke" fullword wide ascii
         $ws_class = "Class" fullword wide ascii
@@ -6080,7 +6080,7 @@ rule WEBSHELL_JSP_Generic_Classloader
         hash = "80211c97f5b5cd6c3ab23ae51003fd73409d273727ba502d052f6c2bd07046d6"
         hash = "8e544a5f0c242d1f7be503e045738369405d39731fcd553a38b568e0889af1f2"
 
-        uuid = "037e6b24-9faf-569b-bb52-dbe671ab2e87"
+        id = "037e6b24-9faf-569b-bb52-dbe671ab2e87"
     strings:
         $exec = "extends ClassLoader" wide ascii
         $class = "defineClass" fullword wide ascii
@@ -6156,7 +6156,7 @@ rule WEBSHELL_JSP_Generic_Encoded_Shell
         hash = "f6c2112e3a25ec610b517ff481675b2ce893cb9f"
         hash = "62e6c6065b5ca45819c1fc049518c81d7d165744"
 
-        uuid = "359949d7-1793-5e13-9fdc-fe995ae12117"
+        id = "359949d7-1793-5e13-9fdc-fe995ae12117"
     strings:
         $sj0 = /{ ?47, 98, 105, 110, 47, 98, 97, 115, 104/ wide ascii
         $sj1 = /{ ?99, 109, 100}/ wide ascii
@@ -6183,7 +6183,7 @@ rule WEBSHELL_JSP_NetSpy
         hash = "94d1aaabde8ff9b4b8f394dc68caebf981c86587"
         hash = "3870b31f26975a7cb424eab6521fc9bffc2af580"
 
-        uuid = "41f5c171-878d-579f-811d-91d74f7e3e24"
+        id = "41f5c171-878d-579f-811d-91d74f7e3e24"
     strings:
         $scan1 = "scan" nocase wide ascii
         $scan2 = "port" nocase wide ascii
@@ -6257,7 +6257,7 @@ rule WEBSHELL_JSP_By_String
         hash = "1d1f26b1925a9d0caca3fdd8116629bbcf69f37f751a532b7096a1e37f4f0076"
         hash = "850f998753fde301d7c688b4eca784a045130039512cf51292fcb678187c560b"
 
-        uuid = "8d64e40b-5583-5887-afe1-b926d9880913"
+        id = "8d64e40b-5583-5887-afe1-b926d9880913"
     strings:
         $jstring1 = "<title>Boot Shell</title>" wide ascii
         $jstring2 = "String oraPWD=\"" wide ascii
@@ -6351,7 +6351,7 @@ rule WEBSHELL_JSP_Input_Upload_Write
         hash = "583231786bc1d0ecca7d8d2b083804736a3f0a32"
         hash = "19eca79163259d80375ebebbc440b9545163e6a3"
 
-        uuid = "bbf26edd-88b7-5ec5-a16e-d96a086dcd19"
+        id = "bbf26edd-88b7-5ec5-a16e-d96a086dcd19"
     strings:
         $upload = "upload" nocase wide ascii
         $write1 = "os.write" fullword wide ascii
@@ -6414,7 +6414,7 @@ rule WEBSHELL_Generic_OS_Strings : FILE {
         hash = "569259aafe06ba3cef9e775ee6d142fed6edff5f"
         hash = "48909d9f4332840b4e04b86f9723d7427e33ac67"
         hash = "0353ae68b12b8f6b74794d3273967b530d0d526f"
-        uuid = "ea85e415-4774-58ac-b063-0f5eb535ec49"
+        id = "ea85e415-4774-58ac-b063-0f5eb535ec49"
     strings:
         $fp1 = "http://evil.com/" wide ascii
         $fp2 = "denormalize('/etc/shadow" wide ascii
@@ -6584,7 +6584,7 @@ rule WEBSHELL_In_Image
         modified = "2023-04-05"
         score = 55
 
-        uuid = "b1185b69-9b08-5925-823a-829fee6fa4cf"
+        id = "b1185b69-9b08-5925-823a-829fee6fa4cf"
     strings:
         $png = { 89 50 4E 47 }
         $jpg = { FF D8 FF E0 }
@@ -6846,7 +6846,7 @@ rule WEBSHELL_Mixed_OBFUSC {
       hash4 = "b26b5e5cba45482f486ff7c75b54c90b7d1957fd8e272ddb4b2488ec65a2936e"
       hash5 = "e217be2c533bfddbbdb6dc6a628e0d8756a217c3ddc083894e07fd3a7408756c"
       score = 50
-      uuid = "dcb4054b-0c87-5cd0-9297-7fd5f2e37437"
+      id = "dcb4054b-0c87-5cd0-9297-7fd5f2e37437"
    strings:
       $s1 = "rawurldecode/*" ascii
       $s2 = "preg_replace/*" ascii
@@ -6877,7 +6877,7 @@ rule WEBSHELL_Cookie_Post_Obfuscation {
         hash = "e1bd3be0cf525a0d61bf8c18e3ffaf3330c1c27c861aede486fd0f1b6930f69a"
         hash = "f8cdedd21b2cc29497896ec5b6e5863cd67cc1a798d929fd32cdbb654a69168a"
 
-        uuid = "cc5ded80-5e58-5b25-86d1-1c492042c740"
+        id = "cc5ded80-5e58-5b25-86d1-1c492042c740"
     strings:
         $s1 = "]($_COOKIE, $_POST) as $"
         $s2 = "function"

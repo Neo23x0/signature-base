@@ -19,7 +19,7 @@ rule APT_Lazarus_Dropper_Jun18_1 {
       date = "2018-06-01"
       hash1 = "086a50476f5ceee4b10871c1a8b0a794e96a337966382248a8289598b732bd47"
       hash2 = "9f2d4fd79d3c68270102c4c11f3e968c10610a2106cbf1298827f8efccdd70a9"
-      uuid = "226be9d4-93c0-5512-9667-3388cd6f20d4"
+      id = "226be9d4-93c0-5512-9667-3388cd6f20d4"
    strings:
       $s1 = /%s\\windows10-kb[0-9]{7}.exe/ fullword ascii
       $s2 = "EYEJIW" fullword ascii
@@ -40,7 +40,7 @@ rule APT_Lazarus_RAT_Jun18_1 {
       date = "2018-06-01"
       hash1 = "c10363059c57c52501c01f85e3bb43533ccc639f0ea57f43bae5736a8e7a9bc8"
       hash2 = "e98991cdd9ddd30adf490673c67a4f8241993f26810da09b52d8748c6160a292"
-      uuid = "fd394d15-70c5-543a-a845-2058f296b5f8"
+      id = "fd394d15-70c5-543a-a845-2058f296b5f8"
    strings:
       $a1 = "www.marmarademo.com/include/extend.php" fullword ascii
       $a2 = "www.33cow.com/include/control.php" fullword ascii
@@ -73,7 +73,7 @@ rule APT_Lazarus_RAT_Jun18_2 {
       reference = "https://twitter.com/DrunkBinary/status/1002587521073721346"
       date = "2018-06-01"
       hash1 = "e6096fb512a6d32a693491f24e67d772f7103805ad407dc37065cebd1962a547"
-      uuid = "4f2e280e-ed76-5fb9-b137-5191bbea2155"
+      id = "4f2e280e-ed76-5fb9-b137-5191bbea2155"
    strings:
       $s1 = "\\KB\\Release\\" ascii
       $s3 = "KB, Version 1.0" fullword wide

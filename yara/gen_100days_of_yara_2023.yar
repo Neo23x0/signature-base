@@ -9,7 +9,7 @@ rule SUSP_LNK_Embedded_WordDoc {
 		hash = "120ca851663ef0ebef585d716c9e2ba67bd4870865160fec3b853156be1159c5"
 		DaysofYARA = "2/100"
 
-		uuid = "9677d41a-9d29-510c-98cd-122dc0ca9606"
+		id = "9677d41a-9d29-510c-98cd-122dc0ca9606"
 	strings:
 		$doc_header = {D0 CF 11 E0 A1 B1 1A E1}
 		$icon_loc = "C:\\Program Files\\Microsoft Office\\Office16\\WINWORD.exe" ascii wide
@@ -27,7 +27,7 @@ rule SUSP_LNK_SmallScreenSize {
 		version = "1.0"
 		DaysofYARA = "1/100"
 
-		uuid = "6194a76b-36d6-51d1-8d53-2e11172e29d2"
+		id = "6194a76b-36d6-51d1-8d53-2e11172e29d2"
 	strings:
 		$dimensions = {02 00 00 A0 ?? 00 ?? ?? 01 00 01 00 01}
 		// struct ConsoleDataBlock sConsoleDataBlock
@@ -56,7 +56,7 @@ rule MAL_Janicab_LNK {
 		hash = "f4610b65eba977b3d13eba5da0e38788a9e796a3e9775dd2b8e37b3085c2e1af"
 		DaysofYARA = "1/100"
 
-		uuid = "c21844d3-eeee-530e-a69c-b7f604616f0b"
+		id = "c21844d3-eeee-530e-a69c-b7f604616f0b"
 	strings:
 		$j_pdf1 = "%PDF-1.5" ascii wide
 		$j_cmd = "\\Windows\\System32\\cmd.exe" ascii wide
@@ -77,7 +77,7 @@ rule SUSP_ELF_Invalid_Version {
       reference = "https://n0.lol/ebm/1.html"
       reference = "https://tmpout.sh/1/1.html"
       hash = "05379bbf3f46e05d385bbd853d33a13e7e5d7d50"
-      uuid = "5bd97fdd-0912-5f9b-877c-91fff9b98dea"
+      id = "5bd97fdd-0912-5f9b-877c-91fff9b98dea"
    condition:
       (
          uint32(0) == 0x464c457f
@@ -95,7 +95,7 @@ rule MAL_ELF_TorchTriton {
 		reference = "https://www.bleepingcomputer.com/news/security/pytorch-discloses-malicious-dependency-chain-compromise-over-holidays/"
 		DaysofYARA = "2/100"
 
-		uuid = "85e98ee7-30bf-554f-a0ac-9df263e6dfe4"
+		id = "85e98ee7-30bf-554f-a0ac-9df263e6dfe4"
 	strings:
 		$error = "failed to send packet"
 		$aes_key = "gIdk8tzrHLOM)mPY-R)QgG[;yRXYCZFU"
@@ -125,7 +125,7 @@ rule MAL_GOLDBACKDOOR_LNK {
 		reference = "https://stairwell.com/wp-content/uploads/2022/04/Stairwell-threat-report-The-ink-stained-trail-of-GOLDBACKDOOR.pdf"
 		DaysofYARA = "2/100"
 
-		uuid = "9a80f875-4843-535c-9f2b-b04da55713b1"
+		id = "9a80f875-4843-535c-9f2b-b04da55713b1"
 	strings:
 		$doc_header = {D0 CF 11 E0 A1 B1 1A E1}
 		$doc_icon_loc = "C:\\Program Files\\Microsoft Office\\Office16\\WINWORD.exe" ascii wide
@@ -153,7 +153,7 @@ rule MAL_EXE_LockBit_v2
 		hash = "00260c390ffab5734208a7199df0e4229a76261c3f5b7264c4515acb8eb9c2f8"
 		DaysofYARA = "1/100"
 
-		uuid = "a2c27110-e63b-5f93-88a0-98c12811e8b4"
+		id = "a2c27110-e63b-5f93-88a0-98c12811e8b4"
 	strings:
 		$s_ransom_note01 = "that is located in every encrypted folder." wide
 		$s_ransom_note02 = "Would you like to earn millions of dollars?" wide
@@ -180,7 +180,7 @@ rule MAL_EXE_PrestigeRansomware {
 		hash = "5fc44c7342b84f50f24758e39c8848b2f0991e8817ef5465844f5f2ff6085a57"
 		DaysofYARA = "4/100"
 
-		uuid = "5ac8033a-8b15-5abe-89d5-018a4fef9ab5"
+		id = "5ac8033a-8b15-5abe-89d5-018a4fef9ab5"
 	strings:
 		$x_ransom_email = "Prestige.ranusomeware@Proton.me" wide
 		$x_reg_ransom_note = "C:\\Windows\\System32\\reg.exe add HKCR\\enc\\shell\\open\\command /ve /t REG_SZ /d \"C:\\Windows\\Notepad.exe C:\\Users\\Public\\README\" /f" wide
@@ -203,7 +203,7 @@ rule MAL_EXE_RoyalRansomware {
 		hash = "a8384c9e3689eb72fa737b570dbb53b2c3d103c62d46747a96e1e1becf14dfea"
 		DaysofYARA = "3/100"
 
-		uuid = "f83316f7-b8c4-5907-a38e-80535215e7ef"
+		id = "f83316f7-b8c4-5907-a38e-80535215e7ef"
 	strings:
 		$x_ext = ".royal_" wide
 		$x_fname = "royal_dll.dll"
@@ -229,7 +229,7 @@ rule MAL_PY_Dimorf {
 		version = "1.0"
 		reference = "https://github.com/Ort0x36/Dimorf"
 
-		uuid = "78b53433-6926-58cd-8ec0-2195af803aab"
+		id = "78b53433-6926-58cd-8ec0-2195af803aab"
 	strings:
 		$func01 = "def find_and_encrypt"
 		$func02 = "def check_os"

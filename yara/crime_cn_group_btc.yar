@@ -18,7 +18,7 @@ rule BTC_Miner_lsass1_chrome_2 {
       score = 60
       hash1 = "048e9146387d6ff2ac055eb9ddfbfb9a7f70e95c7db9692e2214fa4bec3d5b2e"
       hash2 = "c8db8469287d47ffdc74fe86ce0e9d6e51de67ba1df318573c9398742116a6e8"
-      uuid = "7960d96a-7bd3-5135-867d-e39a02274c45"
+      id = "7960d96a-7bd3-5135-867d-e39a02274c45"
    strings:
       $x1 = "-t, --threads=N       number of miner threads (default: number of processors)" fullword ascii
       $x2 = "-O, --userpass=U:P    username:password pair for mining server" fullword ascii
@@ -35,7 +35,7 @@ rule CN_Actor_RA_Tool_Ammyy_mscorsvw {
       date = "2017-06-22"
       hash1 = "1831806fc27d496f0f9dcfd8402724189deaeb5f8bcf0118f3d6484d0bdee9ed"
       hash2 = "d9ec0a1be7cd218042c54bfbc12000662b85349a6b78731a09ed336e5d3cf0b4"
-      uuid = "71a0c5a9-b4dc-508d-a6b7-4b85b75bc34b"
+      id = "71a0c5a9-b4dc-508d-a6b7-4b85b75bc34b"
    strings:
       $s1 = "Please enter password for accessing remote computer" fullword ascii
       $s2 = "Die Zugriffsanforderung wurde vom Remotecomputer abgelehnt" fullword ascii
@@ -53,7 +53,7 @@ rule CN_Actor_AmmyyAdmin {
       date = "2017-06-22"
       score = 60
       hash1 = "1831806fc27d496f0f9dcfd8402724189deaeb5f8bcf0118f3d6484d0bdee9ed"
-      uuid = "08ffb61a-e2de-538e-9d9f-040276324af9"
+      id = "08ffb61a-e2de-538e-9d9f-040276324af9"
    strings:
       $x2 = "\\Ammyy\\sources\\main\\Downloader.cpp" ascii
    condition:

@@ -19,7 +19,7 @@ rule BeepService_Hacktool {
 		hash2 = "e30933fcfc9c2a7443ee2f23a3df837ca97ea5653da78f782e2884e5a7b734f7"
 		hash3 = "ebb9c4f7058e19b006450b8162910598be90428998df149977669e61a0b7b9ed"
 		hash4 = "6db2ffe7ec365058f9d3b48dcca509507c138f19ade1adb5f13cf43ea0623813"
-		uuid = "8813a01a-10db-52e7-bb1e-322864e87b15"
+		id = "8813a01a-10db-52e7-bb1e-322864e87b15"
 	strings:
 		$x1 = "\\\\%s\\admin$\\system32\\%s" fullword ascii
 

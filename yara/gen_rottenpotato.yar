@@ -17,7 +17,7 @@ rule RottenPotato_Potato {
       modified = "2022-12-21"
       score = 90
       hash1 = "59cdbb21d9e487ca82748168682f1f7af3c5f2b8daee3a09544dd58cbf51b0d5"
-      uuid = "4a12783c-f58a-518b-a80a-f09f146304cc"
+      id = "4a12783c-f58a-518b-a80a-f09f146304cc"
    strings:
       $x1 = "Potato.exe -ip <ip>" fullword wide
       $x2 = "-enable_httpserver true -enable_spoof true" fullword wide

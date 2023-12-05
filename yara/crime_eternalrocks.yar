@@ -17,7 +17,7 @@ rule EternalRocks_taskhost {
       reference = "https://twitter.com/stamparm/status/864865144748298242"
       date = "2017-05-18"
       hash1 = "cf8533849ee5e82023ad7adbdbd6543cb6db596c53048b1a0c00b3643a72db30"
-      uuid = "8926cdf8-6a3c-5237-80f5-bda9efb39a32"
+      id = "8926cdf8-6a3c-5237-80f5-bda9efb39a32"
    strings:
       $x1 = "EternalRocks.exe" fullword wide
 
@@ -37,7 +37,7 @@ rule EternalRocks_svchost {
       reference = "https://twitter.com/stamparm/status/864865144748298242"
       date = "2017-05-18"
       hash1 = "589af04a85dc66ec6b94123142a17cf194decd61f5d79e76183db026010e0d31"
-      uuid = "c38d3faa-06a2-5f57-a917-91974941352f"
+      id = "c38d3faa-06a2-5f57-a917-91974941352f"
    strings:
       $s1 = "WczTkaJphruMyBOQmGuNRtSNTLEs" fullword ascii
       $s2 = "svchost.taskhost.exe" fullword ascii

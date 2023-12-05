@@ -6,7 +6,7 @@ rule SUSP_LNX_SH_CryptoMiner_Indicators_Dec20_1 {
       reference = "https://www.intezer.com/blog/research/new-golang-worm-drops-xmrig-miner-on-servers/"
       date = "2020-12-31"
       hash1 = "3298dbd985c341d57e3219e80839ec5028585d0b0a737c994363443f4439d7a5"
-      uuid = "e376e0e1-1490-5ad4-8ca2-d28ca1c0b51a"
+      id = "e376e0e1-1490-5ad4-8ca2-d28ca1c0b51a"
    strings:
       $x1 = "miner running" fullword ascii
       $x2 = "miner runing" fullword ascii
@@ -23,7 +23,7 @@ rule PUA_WIN_XMRIG_CryptoCoin_Miner_Dec20 {
       reference = "https://www.intezer.com/blog/research/new-golang-worm-drops-xmrig-miner-on-servers/"
       date = "2020-12-31"
       hash1 = "b6154d25b3aa3098f2cee790f5de5a727fc3549865a7aa2196579fe39a86de09"
-      uuid = "4dfb04e9-fbba-5a6f-ad20-d805025d2d74"
+      id = "4dfb04e9-fbba-5a6f-ad20-d805025d2d74"
    strings:
       $x1 = "xmrig.exe" fullword wide
       $x2 = "xmrig.com" fullword wide

@@ -8,7 +8,7 @@ rule SUSP_Unsigned_GoogleUpdate {
       date = "2019-08-05"
       score = 60
       hash1 = "5aa84aa5c90ec34b7f7d75eb350349ae3aa5060f3ad6dd0520e851626e9f8354"
-      uuid = "2575b882-3526-5c42-9d50-83fb0b7df3f5"
+      id = "2575b882-3526-5c42-9d50-83fb0b7df3f5"
    strings:
       /* OriginalName GoogleUpdate.exe */
       $ac1 = { 00 4F 00 72 00 69 00 67 00 69 00 6E 00 61 00 6C

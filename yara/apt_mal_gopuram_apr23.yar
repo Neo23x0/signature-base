@@ -9,7 +9,7 @@ rule MAL_Shellcode_Loader_Apr23 {
       hash1 = "6ce5b6b4cdd6290d396465a1624d489c7afd2259a4d69b73c6b0ba0e5ad4e4ad"
       hash2 = "b56279136d816a11cf4db9fc1b249da04b3fa3aef4ba709b20cdfbe572394812"
       score = 80
-      uuid = "363b67d6-9cac-513d-a545-1f256667bab8"
+      id = "363b67d6-9cac-513d-a545-1f256667bab8"
    strings:
       $op1 = { 41 C1 CB 0D 0F BE 03 48 FF C3 44 03 D8 80 7B ?? 00 75 ?? 41 8D 04 13 3B C6 74 } // API hahsing
       $op2 = { B9 49 F7 02 78 4C 8B E8 E8 ?? ?? ?? ?? B9 58 A4 53 E5 48 89 44 24 ?? E8 ?? ?? ?? ?? B9 10 E1 8A C3 48 8B F0 E8 ?? ?? ?? ?? B9 AF B1 5C 94 48 89 44 24 ?? E8 } // pushing API hashes
@@ -26,7 +26,7 @@ rule APT_MAL_Gopuram_Backdoor_Apr23 {
       hash1 = "beb775af5196f30e0ee021790a4978ca7a7ac2a7cf970a5a620ffeb89cc60b2c"
       hash2 = "97b95b4a5461f950e712b82783930cb2a152ec0288c00a977983ca7788342df7"
       score = 80
-      uuid = "3ae5ddcb-5601-5dca-85dd-0a4772577fae"
+      id = "3ae5ddcb-5601-5dca-85dd-0a4772577fae"
    strings:
       $x1 = "%s\\config\\TxR\\%s.TxR.0.regtrans-m"  ascii
       $xop = { D1 E8 33 C3 D1 EB A8 01 74 ?? 81 F3 25 A3 87 DE D1 E8 33 C3 D1 EB A8 01 74 ?? 81 F3 25 A3 87 DE D1 E8 33 C3 D1 EB A8 01 74 ?? 81 F3 25 A3 87 DE D1 E8 33 C3 D1 EB A8 01 74 ?? 81 F3 25 A3 87 DE } // operations on filename
@@ -51,7 +51,7 @@ rule APT_NK_MAL_DLL_Apr23_1 {
       hash3 = "bb1066c1ca53139dc5a2c1743339f4e6360d6fe4f2f3261d24fc28a12f3e2ab9"
       hash4 = "dca33d6dacac0859ec2f3104485720fe2451e21eb06e676f4860ecc73a41e6f9"
       hash5 = "fe948451df90df80c8028b969bf89ecbf501401e7879805667c134080976ce2e"
-      uuid = "c2abe266-0c21-51aa-9426-46a4f59df937"
+      id = "c2abe266-0c21-51aa-9426-46a4f59df937"
    strings:
       $x1 = "vG2eZ1KOeGd2n5fr" ascii fullword
 
@@ -81,7 +81,7 @@ rule APT_UNC4736_NK_MAL_TAXHAUL_3CX_Apr23_1 {
       date = "2023-03-04"
       score = 80
       reference = "https://www.3cx.com/blog/news/mandiant-initial-results/"
-      uuid = "25a80f98-03d6-59e6-84e6-6d847a6c591e"
+      id = "25a80f98-03d6-59e6-84e6-6d847a6c591e"
    strings:
       $p00_0 = {410f45fe4c8d3d[4]eb??4533f64c8d3d[4]eb??4533f64c8d3d[4]eb}
       $p00_1 = {4d3926488b01400f94c6ff90[4]41b9[4]eb??8bde4885c074}

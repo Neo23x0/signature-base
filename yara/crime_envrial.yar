@@ -17,7 +17,7 @@ rule MAL_Envrial_Jan18_1 {
       date = "2018-01-21"
       hash1 = "9ae3aa2c61f7895ba6b1a3f85fbe36c8697287dc7477c5a03d32cf994fdbce85"
       hash2 = "9edd8f0e22340ecc45c5f09e449aa85d196f3f506ff3f44275367df924b95c5d"
-      uuid = "8be5f0d8-013f-5070-9e19-9ac522c88693"
+      id = "8be5f0d8-013f-5070-9e19-9ac522c88693"
    strings:
       $x1 = "/Evrial/master/domen" wide
 

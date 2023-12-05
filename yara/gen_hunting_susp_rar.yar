@@ -7,7 +7,7 @@ rule SUSP_RAR_Single_Doc_File {
       reference = "Internal Research"
       date = "2020-07-11"
       score = 40
-      uuid = "92dc3a5d-d12c-56d3-8531-25b3da1e1595"
+      id = "92dc3a5d-d12c-56d3-8531-25b3da1e1595"
    strings:
       $s1 = ".doc"
    condition:

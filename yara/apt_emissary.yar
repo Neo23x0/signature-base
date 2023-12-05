@@ -26,7 +26,7 @@ rule Emissary_APT_Malware_1 {
 		hash11 = "29d8dc863427c8e37b75eb738069c2172e79607acc7b65de6f8086ba36abf051"
 		hash12 = "98fb1d2975babc18624e3922406545458642e01360746870deee397df93f50e0"
 		hash13 = "fbcb401cf06326ab4bb53fb9f01f1ca647f16f926811ea66984f1a1b8cf2f7bb"
-		uuid = "ae6ff471-9255-52a3-89d2-452eb2556184"
+		id = "ae6ff471-9255-52a3-89d2-452eb2556184"
 	strings:
 		$s1 = "cmd.exe /c %s > %s" fullword ascii
 		$s2 = "execute cmd timeout." fullword ascii

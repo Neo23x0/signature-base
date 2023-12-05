@@ -25,7 +25,7 @@ rule Pupy_Backdoor {
       hash6 = "be83c513b24468558dc7df7f63d979af41287e568808ed8f807706f6992bfab2"
       hash7 = "8784c317e6977b4c201393913e76fc11ec34ea657de24e957d130ce9006caa01"
 
-      uuid = "11509847-3454-5412-b3e1-02ad9cccc6ae"
+      id = "11509847-3454-5412-b3e1-02ad9cccc6ae"
    strings:
       $x1 = "reflectively inject a dll into a process." fullword ascii
       $x2 = "ld_preload_inject_dll(cmdline, dll_buffer, hook_exit) -> pid" fullword ascii

@@ -7,7 +7,7 @@ rule ATM_Malware_XFSCashNCR {
 		date = "2019-08-28"
 		hash1 = "d6dff67a6b4423b5721908bdcc668951f33b3c214e318051c96e8c158e8931c0"
 
-		uuid = "0a70ef9a-9dde-54c9-a3a2-dfceff32932b"
+		id = "0a70ef9a-9dde-54c9-a3a2-dfceff32932b"
 	strings:
 		$Code1 = {50 8b 4d e8 8b 51 10 52 6a 00 68 2d 01 00 00 8b 45 e8 0f b7 48 1c 51 e8} // CDM Status
 		$Code2 = {52 8d 45 d0 50 68 2e 01 00 00 8b 4d e8 0f b7 51 1c 52 e8} // Dispense

@@ -17,7 +17,7 @@ rule Sofacy_Fybis_ELF_Backdoor_Gen1 {
 		score = 80
 		hash1 = "02c7cf55fd5c5809ce2dce56085ba43795f2480423a4256537bfdfda0df85592"
 		hash2 = "8bca0031f3b691421cb15f9c6e71ce193355d2d8cf2b190438b6962761d0c6bb"
-		uuid = "c6abf33e-9c5b-5e0f-b7f0-a0741bf9cc3a"
+		id = "c6abf33e-9c5b-5e0f-b7f0-a0741bf9cc3a"
 	strings:
 		$x1 = "Your command not writed to pipe" fullword ascii
 		$x2 = "Terminal don`t started for executing command" fullword ascii
@@ -45,7 +45,7 @@ rule Sofacy_Fysbis_ELF_Backdoor_Gen2 {
 		hash1 = "02c7cf55fd5c5809ce2dce56085ba43795f2480423a4256537bfdfda0df85592"
 		hash2 = "8bca0031f3b691421cb15f9c6e71ce193355d2d8cf2b190438b6962761d0c6bb"
 		hash3 = "fd8b2ea9a2e8a67e4cb3904b49c789d57ed9b1ce5bebfe54fe3d98214d6a0f61"
-		uuid = "d4e3a8bb-b23a-53a4-b5fb-b321a3417b43"
+		id = "d4e3a8bb-b23a-53a4-b5fb-b321a3417b43"
 	strings:
 		$s1 = "RemoteShell" ascii
 		$s2 = "basic_string::_M_replace_dispatch" fullword ascii

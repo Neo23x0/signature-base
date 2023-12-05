@@ -6,7 +6,7 @@ rule Invoke_PSImage {
       author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/peewpw/Invoke-PSImage"
       date = "2017-12-16"
-      uuid = "6abf53cd-6465-555b-a7d4-f5a917073f01"
+      id = "6abf53cd-6465-555b-a7d4-f5a917073f01"
    strings:
       $ = "IEX([System.Text.Encoding]::ASCII.GetString(" ascii wide
       $ = "System.Drawing.Bitmap((a Net.WebClient).OpenRead(" ascii wide

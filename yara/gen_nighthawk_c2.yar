@@ -14,7 +14,7 @@ rule EXT_HKTL_Nighthawk_RAT
 		modified = "2022-11-30"
     date = "2022-11-22"
 
-		uuid = "7a58b8bf-fb14-5758-bc2a-ad2c6fff1216"
+		id = "7a58b8bf-fb14-5758-bc2a-ad2c6fff1216"
 	strings:
 		$pattern1 = { 48 8d 0d ?? ?? ?? ?? 51 5a 48 81 c1 ?? ?? ?? ?? 48 81 c2 ?? ?? ?? ?? ff e2 }
 		$pattern2 = { 66 03 D2 66 33 D1 66 C1 E2 02 66 33 D1 66 23 D0 0F B7 C1 }
@@ -39,7 +39,7 @@ rule HKTL_MAL_Nighthawk_Nov_2022_1 : nighthawk beacon {
         hash2 = "9a57919cc5c194e28acd62719487c563a8f0ef1205b65adbe535386e34e418b8"
         hash3 = "f3bba2bfd4ed48b5426e36eba3b7613973226983a784d24d7a20fcf9df0de74e"
         score = 75
-        uuid = "a46d5034-e8e3-5c30-90d9-ea97b8384341"
+        id = "a46d5034-e8e3-5c30-90d9-ea97b8384341"
    strings:
         $s1 = { 44 8b ff 45 33 c0 48 8d 15 [2] 0a 00 48 8d 4d c0 e8 [2] ff ff 45 33 c0 48 8d 15 [2] 0a 00 48 8d 4d 20 e8 [2] ff ff 45 33 c0 48 8d 15 [2] 0a 00 48 8d 4d 00 e8 [2] ff ff 45 33 c0 48 8d 15 [2] 0a 00 48 8d 4d e0 e8 [2] ff ff 33 d2 e9 ee 04 00 00 48 8d 44 24 68 48 89 44 24 20 41 b9 01 00 00 00 45 33 c0 48 8d 95 a0 00 00 00 ff 15 [2] 09 00 85 c0 0f 85 74 04 00 00 48 89 7c 24 28 48 89 7c 24 20 45 33 c9 45 33 c0 48 8d 15 [2] 0a 00 48 8b 4c 24 68 ff 15 [2] 09 00 85 }
         $s2 = { 4d 85 c0 0f 84 83 00 00 00 49 21 18 33 d2 44 8d 43 01 33 c9 ff 15 [2] 08 00 48 8b f0 48 85 c0 74 6a 44 8d 43 04 48 8b d5 48 8b c8 ff 15 [2] 08 00 48 8b e8 48 85 c0 74 49 48 8d 44 24 70 33 d2 44 8d 4b 24 48 89 44 24 20 4c 8d 44 24 30 48 8b cd ff 15 [2] 08 00 8b }

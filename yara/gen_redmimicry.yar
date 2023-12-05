@@ -8,7 +8,7 @@ rule HKTL_RedMimicry_Agent {
         description = "matches the RedMimicry agent executable and payload"
         reference   = "https://redmimicry.com"
 
-        uuid = "a4d4ec77-4a0d-5afd-9181-85433e8b5fda"
+        id = "a4d4ec77-4a0d-5afd-9181-85433e8b5fda"
     strings:
         $reg0 = "HKEY_CURRENT_USER\\" ascii
         $reg1 = "HKEY_LOCAL_MACHINE\\" ascii
@@ -34,7 +34,7 @@ rule HKTL_RedMimicry_WinntiLoader {
         description = "matches the Winnti 'Cooper' loader version used for the RedMimicry breach emulation"
         reference   = "https://redmimicry.com"
 
-        uuid = "a8be1377-faa0-560d-a12c-0369b1f91180"
+        id = "a8be1377-faa0-560d-a12c-0369b1f91180"
     strings:
         $s0 = "Cooper" ascii fullword
         $s1 = "stone64.dll" ascii fullword

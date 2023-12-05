@@ -16,7 +16,7 @@ rule WannaCry_Ransomware {
       reference = "https://goo.gl/HG2j5T"
       date = "2017-05-12"
       hash1 = "ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5babe8e080e41aa"
-      uuid = "2e46b4db-8c94-53ed-ae27-31dd37b04940"
+      id = "2e46b4db-8c94-53ed-ae27-31dd37b04940"
    strings:
       $x1 = "icacls . /grant Everyone:F /T /C /Q" fullword ascii
       $x2 = "taskdl.exe" fullword ascii
@@ -54,7 +54,7 @@ rule WannaCry_Ransomware_Gen {
       hash1 = "9fe91d542952e145f2244572f314632d93eb1e8657621087b2ca7f7df2b0cb05"
       hash2 = "8e5b5841a3fe81cade259ce2a678ccb4451725bba71f6662d0cc1f08148da8df"
       hash3 = "4384bf4530fb2e35449a8e01c7e0ad94e3a25811ba94f7847c1e6612bbb45359"
-      uuid = "d28d3d76-9c24-5476-9a0c-936c17477d6a"
+      id = "d28d3d76-9c24-5476-9a0c-936c17477d6a"
    strings:
       $s1 = "__TREEID__PLACEHOLDER__" ascii
       $s2 = "__USERID__PLACEHOLDER__" ascii
@@ -73,7 +73,7 @@ rule WannCry_m_vbs {
       reference = "https://goo.gl/HG2j5T"
       date = "2017-05-12"
       hash1 = "51432d3196d9b78bdc9867a77d601caffd4adaa66dcac944a5ba0b3112bbea3b"
-      uuid = "a8f13bd2-984d-5c8c-ac53-7d442e222850"
+      id = "a8f13bd2-984d-5c8c-ac53-7d442e222850"
    strings:
       $x1 = ".TargetPath = \"C:\\@" ascii
       $x2 = ".CreateShortcut(\"C:\\@" ascii
@@ -90,7 +90,7 @@ rule WannCry_BAT {
       reference = "https://goo.gl/HG2j5T"
       date = "2017-05-12"
       hash1 = "f01b7f52e3cb64f01ddc248eb6ae871775ef7cb4297eba5d230d0345af9a5077"
-      uuid = "0929f0de-28ac-5534-a6fd-7b131abda011"
+      id = "0929f0de-28ac-5534-a6fd-7b131abda011"
    strings:
       $s1 = "@.exe\">> m.vbs" ascii
       $s2 = "cscript.exe //nologo m.vbs" fullword ascii
@@ -108,7 +108,7 @@ rule WannaCry_RansomNote {
       reference = "https://goo.gl/HG2j5T"
       date = "2017-05-12"
       hash1 = "4a25d98c121bb3bd5b54e0b6a5348f7b09966bffeec30776e5a731813f05d49e"
-      uuid = "65ce8faf-0981-5382-bc15-f094ccaa9f54"
+      id = "65ce8faf-0981-5382-bc15-f094ccaa9f54"
    strings:
       $s1 = "A:  Don't worry about decryption." fullword ascii
       $s2 = "Q:  What's wrong with my files?" fullword ascii
@@ -127,7 +127,7 @@ rule APT_lazaruswannacry {
       version = "1.0"
       hash = "9c7c7149387a1c79679a87dd1ba755bc"
       hash = "ac21c8ad899727137c4b94458d7aa8d8"
-      uuid = "e9dd9750-2366-503a-a879-972dbead6bf3"
+      id = "e9dd9750-2366-503a-a879-972dbead6bf3"
    strings:
       $a1 = { 51 53 55 8B 6C 24 10 56 57 6A 20 8B 45 00 8D 75
          04 24 01 0C 01 46 89 45 00 C6 46 FF 03 C6 06 01 46

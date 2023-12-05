@@ -17,7 +17,7 @@ rule Kriskynote_Mar17_1 {
       date = "2017-03-03"
       hash1 = "a19c4b615aa54207604b181873e614d84126b639fee2cce3ca9d5bd863f6f577"
       hash2 = "62b41db0bf63fa45a2c2b0f5df8c2209a5d96bf2bddf82749595c66d30b7ec61"
-      uuid = "b1e5df0c-0112-5fee-85e9-cb0ca31f5234"
+      id = "b1e5df0c-0112-5fee-85e9-cb0ca31f5234"
    strings:
       $s1 = "gzwrite64" fullword ascii
 
@@ -37,7 +37,7 @@ rule Kriskynote_Mar17_2 {
       reference = "Internal Research"
       date = "2017-03-03"
       hash1 = "cb9a2f77868b28d98e4f9c1b27b7242fec2f2abbc91bfc21fe0573e472c5dfcb"
-      uuid = "704baf41-9718-537f-9456-381a9f42fb97"
+      id = "704baf41-9718-537f-9456-381a9f42fb97"
    strings:
       $s1 = "fgjfcn8456fgjhfg89653wetwts" fullword ascii
       $op0 = { 33 c0 80 34 30 03 40 3d e6 21 00 00 72 f4 b8 e6 } /* Opcode */
@@ -53,7 +53,7 @@ rule Kriskynote_Mar17_3 {
       reference = "Internal Research"
       date = "2017-03-03"
       hash1 = "fc838e07834994f25b3b271611e1014b3593278f0703a4a985fb4234936df492"
-      uuid = "647fac4c-2326-5a68-9890-8236022c1548"
+      id = "647fac4c-2326-5a68-9890-8236022c1548"
    strings:
       $s1 = "rundll32 %s Check" fullword ascii
       $s2 = "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\RecentDocs" fullword ascii

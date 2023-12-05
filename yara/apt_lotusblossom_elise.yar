@@ -18,7 +18,7 @@ rule Elise_Jan18_1 {
       reference = "https://twitter.com/blu3_team/status/955971742329135105"
       date = "2018-01-24"
       hash1 = "6dc2a49d58dc568944fef8285ad7a03b772b9bdf1fe4bddff3f1ade3862eae79"
-      uuid = "8e4f4ec8-5d31-5990-8c14-861423571a79"
+      id = "8e4f4ec8-5d31-5990-8c14-861423571a79"
    strings:
       $s1 = "NavShExt.dll" fullword wide
       $s2 = "Norton Security" fullword wide

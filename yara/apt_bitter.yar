@@ -5,7 +5,7 @@ rule EXT_APT_Bitter_Win32k_0day_Feb21 {
       author = "dbappsecurity_lieying_lab"
       date = "2021-01-01"
       reference = "https://ti.dbappsecurity.com.cn/blog/index.php/2021/02/10/windows-kernel-zero-day-exploit-is-used-by-bitter-apt-in-targeted-attack/"
-      uuid = "b1892b52-4b94-5571-ad63-8750a321f1f2"
+      id = "b1892b52-4b94-5571-ad63-8750a321f1f2"
    strings:
       $s1 = "NtUserConsoleControl" ascii wide
       $s2 = "NtCallbackReturn" ascii wide

@@ -7,7 +7,7 @@ rule Gen_Trojan_Mikey {
 		date = "2015-05-07"
 		hash = "a8e6c3ca056b3ff2495d7728654b780735b3a4cb"
 		score = 70
-		uuid = "ff875436-4fed-5f20-a0a5-bfd146d93499"
+		id = "ff875436-4fed-5f20-a0a5-bfd146d93499"
 	strings:
 		$s0 = "nuR\\noisreVtnerruC\\swodniW\\tfosorciM\\ERAWTFOS" fullword ascii 
 						/* reversed string 'SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run' */

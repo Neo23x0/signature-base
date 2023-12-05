@@ -14,7 +14,7 @@ rule VULN_Linux_Sudoers_Commands {
 		date = "2022-11-22"
 		modified = "2023-02-18"
 		score = 50
-		uuid = "221d90c8-e70e-5214-a03b-57ecabcdd480"
+		id = "221d90c8-e70e-5214-a03b-57ecabcdd480"
 	strings:
 		$command1 = "/sh " ascii
 		$command2 = "/bash " ascii
@@ -48,7 +48,7 @@ rule VULN_Linux_NFS_Exports {
 		author = "Arnim Rupp"
 		date = "2022-11-22"
 		score = 50
-		uuid = "4b7d81d8-1ae1-5fcf-a91c-271477a839db"
+		id = "4b7d81d8-1ae1-5fcf-a91c-271477a839db"
 	strings:
 		// line has to start with / to avoid triggering on #-comment lines
 		$conf1 = /\n\/.{2,200}?\binsecure\b/ ascii
@@ -67,7 +67,7 @@ rule SUSP_AES_Key_in_MySql_History {
 		author = "Arnim Rupp"
 		date = "2022-11-22"
 		score = 50
-		uuid = "28acef39-8606-5d3d-b395-0d8db13f6c9c"
+		id = "28acef39-8606-5d3d-b395-0d8db13f6c9c"
 	strings:
 		$c1 = /\bAES_(DE|EN)CRYPT\(.{1,128}?,.??('|").{1,128}?('|")\)/ ascii
 		$c2 = /\baes_(de|en)crypt\(.{1,128}?,.??('|").{1,128}?('|")\)/ ascii
@@ -85,7 +85,7 @@ rule VULN_Slapd_Conf_with_Default_Password {
 		date = "2022-11-22"
 		reference = "https://www.openldap.org/doc/admin21/slapdconfig.html"
 		score = 70
-		uuid = "1d1319da-125b-5373-88f1-27a23c85729e"
+		id = "1d1319da-125b-5373-88f1-27a23c85729e"
 	strings:
 		/* \nrootpw \{SSHA\}fsAEyxlFOtvZBwPLAF68zpUhth8lERoR */
 		$c1 = { 0A 72 6f 6f 74 70 77 20 7b 53 53 48 41 7d 66 73 41 45 79 78 6c 46 4f 74 76 5a 42 77 50 4c 41 46 36 38 7a 70 55 68 74 68 38 6c 45 52 6f 52 }
@@ -103,7 +103,7 @@ rule VULN_Unencrypted_SSH_Private_Key : T1552_004 {
         date = "2023-01-06"
         reference = "https://attack.mitre.org/techniques/T1552/004/"
         score = 50
-        uuid = "84b279fc-99c8-5101-b2d8-5c7adbaf753f"
+        id = "84b279fc-99c8-5101-b2d8-5c7adbaf753f"
     strings:
         /*
             -----BEGIN RSA PRIVATE KEY-----
@@ -176,7 +176,7 @@ rule VULN_Unencrypted_SSH_Private_Key_Root_Folder : T1552_004 {
         date = "2023-01-06"
         reference = "https://attack.mitre.org/techniques/T1552/004/"
         score = 65
-        uuid = "9e6a03a1-d95f-5de7-a6c0-a2e77486007c"
+        id = "9e6a03a1-d95f-5de7-a6c0-a2e77486007c"
     strings:
         /*
             -----BEGIN RSA PRIVATE KEY-----

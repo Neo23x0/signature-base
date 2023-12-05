@@ -4,7 +4,7 @@ rule SUSP_LNK_lnkfileoverRFC {
       description = "Detects APT lnk files that run double extraction and launch routines with autoruns"
       author = "@Grotezinfosec, modified by Florian Roth"
       date = "2018-09-18"
-      uuid = "19c393af-ff7c-5345-a3ef-c06372344baf"
+      id = "19c393af-ff7c-5345-a3ef-c06372344baf"
    strings:
       $command = "C:\\Windows\\System32\\cmd.exe" fullword ascii //cmd is precursor to findstr
       $command2 =  {2F 00 63 00 20 00 66 00 69 00 6E 00 64 00 73 00 74 00 72} //findstr in hex
@@ -23,7 +23,7 @@ rule SUSP_LNK_SuspiciousCommands {
       author = "Florian Roth (Nextron Systems)"
       date = "2018-09-18"
       score = 60
-      uuid = "8bfb1322-8e33-50bc-a389-2d8bdfec9ca7"
+      id = "8bfb1322-8e33-50bc-a389-2d8bdfec9ca7"
    strings:
       $s1 = " -decode " ascii wide
       $s2 = " -enc " ascii wide
@@ -58,7 +58,7 @@ rule SUSP_DOC_LNK_in_ZIP {
       date = "2019-07-02"
       score = 50
       hash1 = "7ea4f77cac557044e72a8e280372a2abe072f2ad98b5a4fbed4e2229e780173a"
-      uuid = "9c140d02-3b18-5faf-bb1d-2eb5c07a23dc"
+      id = "9c140d02-3b18-5faf-bb1d-2eb5c07a23dc"
    strings:
       $s1 = ".doc.lnk" fullword ascii
    condition:

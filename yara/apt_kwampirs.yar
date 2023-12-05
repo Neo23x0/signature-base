@@ -5,7 +5,7 @@ rule MAL_Kwampirs_Apr18 {
         description = "Kwampirs dropper and main payload components"
         reference = "https://www.symantec.com/blogs/threat-intelligence/orangeworm-targets-healthcare-us-europe-asia"
         date = "2018-04-23"
-        uuid = "298e2868-e90e-55b4-9115-9f0b43521266"
+        id = "298e2868-e90e-55b4-9115-9f0b43521266"
     strings:
         $pubkey = {
             06 02 00 00 00 A4 00 00 52 53 41 31 00 08 00 00

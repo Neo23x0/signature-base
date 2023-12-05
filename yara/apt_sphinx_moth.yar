@@ -12,7 +12,7 @@ rule Sphinx_Moth_cudacrt {
         author = "Kudelski Security - Nagravision SA"
         reference = "www.kudelskisecurity.com"
         date = "2015-08-06"
-        uuid = "233f657b-029a-5ed4-b2f7-712851297f18"
+        id = "233f657b-029a-5ed4-b2f7-712851297f18"
     strings:
         $s0 = "HPSSOEx.dll" fullword wide
         $s1 = "255.255.255.254" fullword wide
@@ -31,7 +31,7 @@ rule Sphinx_Moth_h2t {
         author = "Kudelski Security - Nagravision SA (modified by Florian Roth)" 
         reference = "www.kudelskisecurity.com"
         date = "2015-08-06"
-        uuid = "62d14efd-7d0b-5f66-9e78-74f3f9e2fd5b"
+        id = "62d14efd-7d0b-5f66-9e78-74f3f9e2fd5b"
     strings:
         $x1 = "%s <proxy ip> <proxy port> <target ip> <target port> <cmd> [arg1 cmd] ... [argX cmd]" fullword ascii 
         
@@ -50,7 +50,7 @@ rule Sphinx_Moth_iastor32 {
         author = "Kudelski Security - Nagravision SA"
         reference = "www.kudelskisecurity.com"
         date = "2015-08-06"
-        uuid = "5688c598-ea18-578f-bb8a-3729c0502af5"
+        id = "5688c598-ea18-578f-bb8a-3729c0502af5"
     strings:
         $s0 = "MIIEpQIBAAKCAQEA4lSvv/W1Mkz38Q3z+EzJBZRANzKrlxeE6/UXWL67YtokF2nN" fullword ascii /* private key */
         $s1 = "iAeS3CCA4wli6+9CIgX8SAiXd5OezHvI1jza61z/flsqcC1IP//gJVt16nRx3s9z" fullword ascii /* private key */
@@ -64,7 +64,7 @@ rule Sphinx_Moth_kerberos32 {
         author = "Kudelski Security - Nagravision SA (modified by Florian Roth)"
         reference = "www.kudelskisecurity.com"
         date = "2015-08-06"
-        uuid = "769ee362-2363-511a-8f17-99e66c9bab53"
+        id = "769ee362-2363-511a-8f17-99e66c9bab53"
     strings:
         $x1 = "%WINDIR%\\ativpsrz.bin" fullword ascii
         $x2 = "%WINDIR%\\ativpsrn.bin" fullword ascii
@@ -90,7 +90,7 @@ rule Sphinx_Moth_kerberos64 {
         author = "Kudelski Security - Nagravision SA (modified by Florian Roth)"
         reference = "www.kudelskisecurity.com"
         date = "2015-08-06"
-        uuid = "5a2487e4-cda4-5d45-9351-edd2b69c460a"
+        id = "5a2487e4-cda4-5d45-9351-edd2b69c460a"
     strings:
         $s0 = "KERBEROS64.dll" fullword ascii
         $s1 = "zeSecurityDescriptor" fullword ascii
@@ -109,7 +109,7 @@ rule Sphinx_Moth_nvcplex {
         author = "Kudelski Security - Nagravision SA"
         reference = "www.kudelskisecurity.com"
         date = "2015-08-06"
-        uuid = "dd1b4071-adf5-5d54-9b4c-877f0965bdc7"
+        id = "dd1b4071-adf5-5d54-9b4c-877f0965bdc7"
     strings:
         $s0 = "mshtaex.exe" fullword wide
         $op0 = { 41 8b cc 44 89 6c 24 28 48 89 7c 24 20 ff 15 d3 } /* Opcode */ 

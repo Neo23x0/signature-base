@@ -7,7 +7,7 @@ rule MAL_RANSOM_Ragna_Locker_Apr20_1 {
       reference = "https://otx.alienvault.com/indicator/file/c2bd70495630ed8279de0713a010e5e55f3da29323b59ef71401b12942ba52f6"
       date = "2020-04-27"
       hash1 = "c2bd70495630ed8279de0713a010e5e55f3da29323b59ef71401b12942ba52f6"
-      uuid = "67164cb4-73b7-5c4e-88f9-42379b88c641"
+      id = "67164cb4-73b7-5c4e-88f9-42379b88c641"
    strings:
       $x1 = "---RAGNAR SECRET---" ascii
       $xc1 = { 0D 0A 25 73 0D 0A 0D 0A 25 73 0D 0A 25 73 0D 0A
@@ -42,7 +42,7 @@ rule MAL_Ransom_Ragnarlocker_July_2020_1 {
       reference = "https://twitter.com/JAMESWT_MHT/status/1288797666688851969"
       date = "2020-07-30"
       hash1 = "04c9cc0d1577d5ee54a4e2d4dd12f17011d13703cdd0e6efd46718d14fd9aa87"
-      uuid = "60e09057-d9f8-5e89-8f47-c5dda32806c6"
+      id = "60e09057-d9f8-5e89-8f47-c5dda32806c6"
    strings:
       $f1 = "bootfont.bin" fullword wide
       $f2 = "bootmgr.efi" fullword wide

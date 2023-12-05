@@ -6,7 +6,7 @@ rule APT_MAL_MalDoc_CloudAtlas_Oct20_1 {
       reference = "https://twitter.com/jfslowik/status/1316050637092651009"
       date = "2020-10-13"
       hash1 = "7ba76b2311736dbcd4f2817c40dae78f223366f2404571cd16d6676c7a640d70"
-      uuid = "e7caf2b2-caf2-5984-a792-8224f2641bda"
+      id = "e7caf2b2-caf2-5984-a792-8224f2641bda"
    strings:
       $x1 = "https://msofficeupdate.org" wide
    condition:
@@ -22,7 +22,7 @@ rule APT_MAL_URL_CloudAtlas_Oct20_2 {
       reference = "https://twitter.com/jfslowik/status/1316050637092651009"
       date = "2020-10-13"
       hash1 = "a6a58b614a9f5ffa1d90b5d42e15521f52e2295f02c1c0e5cd9cbfe933303bee"
-      uuid = "91f6362f-1793-58a3-a750-04ec9812b9df"
+      id = "91f6362f-1793-58a3-a750-04ec9812b9df"
    strings:
       /* [InternetShortcut]
          URL=https://msofficeupdate.org/ */

@@ -8,7 +8,7 @@ rule OPCLEAVER_BackDoorLogger
 		date = "2014/12/02"
 		author = "Cylance Inc."
 		score = 70
-		uuid = "e9149baa-83c0-597f-833c-ea0241bb60e6"
+		id = "e9149baa-83c0-597f-833c-ea0241bb60e6"
 	strings:
 		$s1 = "BackDoorLogger"
 		$s2 = "zhuAddress"
@@ -24,7 +24,7 @@ rule OPCLEAVER_Jasus
 		date = "2014/12/02"
 		author = "Cylance Inc."
 		score = 70
-		uuid = "8e04b258-e071-5974-9778-b9d0b97be8d5"
+		id = "8e04b258-e071-5974-9778-b9d0b97be8d5"
 	strings:
 		$s1 = "pcap_dump_open"
 		$s2 = "Resolving IPs to poison..."
@@ -41,7 +41,7 @@ rule OPCLEAVER_LoggerModule
 		date = "2014/12/02"
 		author = "Cylance Inc."
 		score = 70
-		uuid = "949e7ff4-2102-5c89-83c9-f7ba64745661"
+		id = "949e7ff4-2102-5c89-83c9-f7ba64745661"
 	strings:
 		$s1 = "%s-%02d%02d%02d%02d%02d.r"
 		$s2 = "C:\\Users\\%s\\AppData\\Cookies\\"
@@ -57,7 +57,7 @@ rule OPCLEAVER_NetC
 		date = "2014/12/02"
 		author = "Cylance Inc."
 		score = 70
-		uuid = "68f32662-0d7d-5dfa-8bfd-ca41d383e19c"
+		id = "68f32662-0d7d-5dfa-8bfd-ca41d383e19c"
 	strings:
 		$s1 = "NetC.exe" wide
 		$s2 = "Net Service"
@@ -73,7 +73,7 @@ rule OPCLEAVER_ShellCreator2
 		date = "2014/12/02"
 		author = "Cylance Inc."
 		score = 70
-		uuid = "b62336c3-39e5-55f8-98df-6c2a2cb0764a"
+		id = "b62336c3-39e5-55f8-98df-6c2a2cb0764a"
 	strings:
 		$s1 = "ShellCreator2.Properties"
 		$s2 = "set_IV"
@@ -89,7 +89,7 @@ rule OPCLEAVER_SmartCopy2
 		date = "2014/12/02"
 		author = "Cylance Inc."
 		score = 70
-		uuid = "898d9060-208a-5dfb-a452-50ab49b80a9d"
+		id = "898d9060-208a-5dfb-a452-50ab49b80a9d"
 	strings:
 		$s1 = "SmartCopy2.Properties"
 		$s2 = "ZhuFrameWork"
@@ -105,7 +105,7 @@ rule OPCLEAVER_SynFlooder
 		date = "2014/12/02"
 		author = "Cylance Inc."
 		score = 70
-		uuid = "bdaf02f4-1226-569b-9f55-999be7ff397a"
+		id = "bdaf02f4-1226-569b-9f55-999be7ff397a"
 	strings:
 		$s1 = "Unable to resolve [ %s ]. ErrorCode %d"
 		$s2 = "s IP is : %s"
@@ -122,7 +122,7 @@ rule OPCLEAVER_TinyZBot
 		date = "2014/12/02"
 		author = "Cylance Inc."
 		score = 70
-		uuid = "4fad21a6-a900-5afb-876d-99a6d93e0c2c"
+		id = "4fad21a6-a900-5afb-876d-99a6d93e0c2c"
 	strings:
 		$s1 = "NetScp" wide
 		$s2 = "TinyZBot.Properties.Resources.resources"
@@ -145,7 +145,7 @@ rule OPCLEAVER_ZhoupinExploitCrew
 		date = "2014/12/02"
 		author = "Cylance Inc."
 		score = 70
-		uuid = "4e7457a0-e6e1-535c-b04b-ad313b496ce1"
+		id = "4e7457a0-e6e1-535c-b04b-ad313b496ce1"
 	strings:
 		$s1 = "zhoupin exploit crew" nocase
 		$s2 = "zhopin exploit crew" nocase
@@ -161,7 +161,7 @@ rule OPCLEAVER_antivirusdetector
 		date = "2014/12/02"
 		author = "Cylance Inc."
 		score = 70
-		uuid = "25ab4eaf-eae7-5a55-bed4-42f621d5f06c"
+		id = "25ab4eaf-eae7-5a55-bed4-42f621d5f06c"
 	strings:
 		$s1 = "getShadyProcess"
 		$s2 = "getSystemAntiviruses"
@@ -178,7 +178,7 @@ rule OPCLEAVER_csext
 		date = "2014/12/02"
 		author = "Cylance Inc."
 		score = 70
-		uuid = "f865eae5-9988-5533-a004-e1694761a557"
+		id = "f865eae5-9988-5533-a004-e1694761a557"
 	strings:
 		$s1 = "COM+ System Extentions"
 		$s2 = "csext.exe"
@@ -195,7 +195,7 @@ rule OPCLEAVER_kagent
 		date = "2014/12/02"
 		author = "Cylance Inc."
 		score = 70
-		uuid = "32d20495-eeed-5b2b-915d-cad60fa991f6"
+		id = "32d20495-eeed-5b2b-915d-cad60fa991f6"
 	strings:
 		$s1 = "kill command is in last machine, going back"
 		$s2 = "message data length in B64: %d Bytes"
@@ -211,7 +211,7 @@ rule OPCLEAVER_mimikatzWrapper
 		date = "2014/12/02"
 		author = "Cylance Inc."
 		score = 70
-		uuid = "e9427e29-e581-5a5b-8f1d-4b9bfeec0946"
+		id = "e9427e29-e581-5a5b-8f1d-4b9bfeec0946"
 	strings:
 		$s1 = "mimikatzWrapper"
 		$s2 = "get_mimikatz"
@@ -227,7 +227,7 @@ rule OPCLEAVER_pvz_in
 		date = "2014/12/02"
 		author = "Cylance Inc."
 		score = 70
-		uuid = "dede12b3-f1dd-58ba-a860-829b2331b740"
+		id = "dede12b3-f1dd-58ba-a860-829b2331b740"
 	strings:
 		$s1 = "LAST_TIME=00/00/0000:00:00PM$"
 		$s2 = "if %%ERRORLEVEL%% == 1 GOTO line"
@@ -243,7 +243,7 @@ rule OPCLEAVER_pvz_out
 		date = "2014/12/02"
 		author = "Cylance Inc."
 		score = 70
-		uuid = "46b51bff-dfd9-5f56-897c-422112bc837b"
+		id = "46b51bff-dfd9-5f56-897c-422112bc837b"
 	strings:
 		$s1 = "Network Connectivity Module" wide
 		$s2 = "OSPPSVC" wide
@@ -259,7 +259,7 @@ rule OPCLEAVER_wndTest
 		date = "2014/12/02"
 		author = "Cylance Inc."
 		score = 70
-		uuid = "f8daa0a8-f0f0-5bf7-b9ab-eaf5335ff2b9"
+		id = "f8daa0a8-f0f0-5bf7-b9ab-eaf5335ff2b9"
 	strings:
 		$s1 = "[Alt]" wide
 		$s2 = "<< %s >>:" wide
@@ -276,7 +276,7 @@ rule OPCLEAVER_zhCat
 		date = "2014/12/02"
 		author = "Cylance Inc."
 		score = 70
-		uuid = "e1f1bc48-b895-5e23-8ffd-b6ea9c8eb26f"
+		id = "e1f1bc48-b895-5e23-8ffd-b6ea9c8eb26f"
 	strings:
 		$s1 = "Mozilla/4.0 ( compatible; MSIE 7.0; AOL 8.0 )" ascii fullword
 		$s2 = "ABC ( A Big Company )" wide fullword
@@ -292,7 +292,7 @@ rule OPCLEAVER_zhLookUp
 		date = "2014/12/02"
 		author = "Cylance Inc."
 		score = 70
-		uuid = "45ef9a90-db4c-59c3-b694-da3f539b118b"
+		id = "45ef9a90-db4c-59c3-b694-da3f539b118b"
 	strings:
 		$s1 = "zhLookUp.Properties"
 	condition:
@@ -307,7 +307,7 @@ rule OPCLEAVER_zhmimikatz
 		date = "2014/12/02"
 		author = "Cylance Inc."
 		score = 70
-		uuid = "fba8ab6e-3b61-53a1-b4df-178442e3cf24"
+		id = "fba8ab6e-3b61-53a1-b4df-178442e3cf24"
 	strings:
 		$s1 = "MimikatzRunner"
 		$s2 = "zhmimikatz"
@@ -324,7 +324,7 @@ rule OPCLEAVER_Parviz_Developer
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
 		score = 70
-		uuid = "2bfa90a0-0495-5b21-98f7-5ed7ebc74b2d"
+		id = "2bfa90a0-0495-5b21-98f7-5ed7ebc74b2d"
 	strings:
 		$s1 = "Users\\parviz\\documents\\" nocase
 	condition:
@@ -340,7 +340,7 @@ rule OPCLEAVER_CCProxy_Config
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
 		score = 70
-		uuid = "c4d80a2a-2a32-585e-bc20-1c5118e4ee48"
+		id = "c4d80a2a-2a32-585e-bc20-1c5118e4ee48"
 	strings:
 		$s1 = "UserName=User-001" fullword ascii
 		$s2 = "Web=1" fullword ascii

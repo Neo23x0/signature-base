@@ -19,7 +19,7 @@ rule APT_APT41_POISONPLUG_3 {
       date = "2019-08-07"
       score = 80
       hash1 = "70c03ce5c80aca2d35a5555b0532eedede24d4cc6bdb32a2c8f7e630bba5f26e"
-      uuid = "e150dd69-c611-53de-9c7d-de28d3a208dc"
+      id = "e150dd69-c611-53de-9c7d-de28d3a208dc"
    strings:
       $s1 = "Rundll32.exe \"%s\", DisPlay 64" fullword ascii
       $s2 = "tcpview.exe" fullword ascii
@@ -38,7 +38,7 @@ rule APT_APT41_POISONPLUG_SHADOW {
       date = "2019-08-07"
       score = 85
       hash1 = "462a02a8094e833fd456baf0a6d4e18bb7dab1a9f74d5f163a8334921a4ffde8"
-      uuid = "e150dd69-c611-53de-9c7d-de28d3a208dc"
+      id = "e150dd69-c611-53de-9c7d-de28d3a208dc"
    condition:
       uint16(0) == 0x5a4d and filesize < 500KB and pe.imphash() == "c67de089f2009b21715744762fc484e8"
 }
@@ -51,7 +51,7 @@ rule APT_APT41_CRACKSHOT {
       date = "2019-08-07"
       score = 85
       hash1 = "993d14d00b1463519fea78ca65d8529663f487cd76b67b3fd35440bcdf7a8e31"
-      uuid = "4ec34a77-dc7f-5f27-9f0a-c98438389018"
+      id = "4ec34a77-dc7f-5f27-9f0a-c98438389018"
    strings:
       $x1 = ";procmon64.exe;netmon.exe;tcpview.exe;MiniSniffer.exe;smsniff.exe" ascii
 
@@ -71,7 +71,7 @@ rule APT_APT41_POISONPLUG_2 {
       date = "2019-08-07"
       score = 70
       hash1 = "0055dfaccc952c99b1171ce431a02abfce5c6f8fb5dc39e4019b624a7d03bfcb"
-      uuid = "e150dd69-c611-53de-9c7d-de28d3a208dc"
+      id = "e150dd69-c611-53de-9c7d-de28d3a208dc"
    strings:
       $s1 = "ma_lockdown_service.dll" fullword wide
       $s2 = "acbde.dll" fullword ascii
@@ -92,7 +92,7 @@ rule APT_APT41_POISONPLUG {
       hash2 = "5d971ed3947597fbb7e51d806647b37d64d9fe915b35c7c9eaf79a37b82dab90"
       hash3 = "f4d57acde4bc546a10cd199c70cdad09f576fdfe66a36b08a00c19ff6ae19661"
       hash4 = "3e6c4e97cc09d0432fbbbf3f3e424d4aa967d3073b6002305cd6573c47f0341f"
-      uuid = "e150dd69-c611-53de-9c7d-de28d3a208dc"
+      id = "e150dd69-c611-53de-9c7d-de28d3a208dc"
    strings:
       $s1 = "TSMSISrv.DLL" fullword wide
       $s2 = "[-]write failed[%d]" fullword ascii
@@ -114,7 +114,7 @@ rule APT_APT41_HIGHNOON {
       score = 85
       hash1 = "63e8ed9692810d562adb80f27bb1aeaf48849e468bf5fd157bc83ca83139b6d7"
       hash2 = "4aa6970cac04ace4a930de67d4c18106cf4004ba66670cfcdaa77a4c4821a213"
-      uuid = "6611fb04-7237-52d1-b29f-941c3853aeca"
+      id = "6611fb04-7237-52d1-b29f-941c3853aeca"
    strings:
       $x1 = "workdll64.dll" fullword ascii
 
@@ -141,7 +141,7 @@ rule APT_APT41_HIGHNOON_2 {
       reference = "https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html"
       date = "2019-08-07"
       hash1 = "79190925bd1c3fae65b0d11db40ac8e61fb9326ccfed9b7e09084b891089602d"
-      uuid = "1e48d859-2da9-583e-80e5-8d59054cfb85"
+      id = "1e48d859-2da9-583e-80e5-8d59054cfb85"
    strings:
       $x1 = "H:\\RBDoor\\" ascii
 
@@ -165,7 +165,7 @@ rule APT_APT41_HIGHNOON_BIN {
       score = 90
       hash1 = "490c3e4af829e85751a44d21b25de1781cfe4961afdef6bb5759d9451f530994"
       hash2 = "79190925bd1c3fae65b0d11db40ac8e61fb9326ccfed9b7e09084b891089602d"
-      uuid = "c8bd62b4-b882-5c04-aace-76dd4a21a784"
+      id = "c8bd62b4-b882-5c04-aace-76dd4a21a784"
    strings:
       $s1 = "PlusDll.dll" fullword ascii
       $s2 = "\\Device\\PORTLESS_DeviceName" wide
@@ -188,7 +188,7 @@ rule APT_APT41_HIGHNOON_BIN_2 {
       score = 85
       hash1 = "63e8ed9692810d562adb80f27bb1aeaf48849e468bf5fd157bc83ca83139b6d7"
       hash2 = "c51c5bbc6f59407286276ce07f0f7ea994e76216e0abe34cbf20f1b1cbd9446d"
-      uuid = "37d6a44d-7811-5e87-84e2-b2a8b3da3124"
+      id = "37d6a44d-7811-5e87-84e2-b2a8b3da3124"
    strings:
       $x1 = "\\Double\\Door_wh\\" ascii
       $x2 = "[Stone] Config --> 2k3 TCP Positive Logout." fullword ascii
@@ -206,7 +206,7 @@ rule APT_APT41_RevokedCert_Aug19_1 {
       reference = "https://www.fireeye.com/blog/threat-research/2019/08/apt41-dual-espionage-and-cyber-crime-operation.html"
       date = "2019-08-07"
       score = 60
-      uuid = "f107cc42-58ec-500d-b1c3-27e9e00826aa"
+      id = "f107cc42-58ec-500d-b1c3-27e9e00826aa"
    condition:
       uint16(0) == 0x5a4d and
       for any i in (0 .. pe.number_of_signatures) : (
@@ -239,7 +239,7 @@ rule APT_APT41_CN_ELF_Speculoos_Backdoor {
       score = 90
       hash1 = "6943fbb194317d344ca9911b7abb11b684d3dca4c29adcbcff39291822902167"
       hash2 = "99c5dbeb545af3ef1f0f9643449015988c4e02bf8a7164b5d6c86f67e6dc2d28"
-      uuid = "efe2b368-33af-5382-a5f0-0e7dd7f4dea4"
+      id = "efe2b368-33af-5382-a5f0-0e7dd7f4dea4"
    strings:
       $xc1 = { 2F 70 72 69 76 61 74 65 2F 76 61 72 00 68 77 2E
                70 68 79 73 6D 65 6D 00 68 77 2E 75 73 65 72 6D

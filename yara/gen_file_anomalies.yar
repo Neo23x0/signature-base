@@ -7,7 +7,7 @@ rule SUSP_TINY_PE {
       reference = "https://webserver2.tecgraf.puc-rio.br/~ismael/Cursos/YC++/apostilas/win32_xcoff_pe/tyne-example/Tiny%20PE.htm"
       date = "2019-10-23"
       score = 80
-      uuid = "5081c24e-91d1-5705-9459-f675be4f0e3c"
+      id = "5081c24e-91d1-5705-9459-f675be4f0e3c"
    strings:
       $header = { 4D 5A 00 00 50 45 00 00 }
    condition:
@@ -21,7 +21,7 @@ rule SUSP_GIF_Anomalies {
       score = 60
       reference = "https://en.wikipedia.org/wiki/GIF"
       date = "2020-07-02"
-      uuid = "2e77c2ff-a8f6-5444-a93d-843312640a28"
+      id = "2e77c2ff-a8f6-5444-a93d-843312640a28"
    condition:
       uint16(0) == 0x4947 and uint8(2) == 0x46 /* GIF */
       and uint8(11) != 0x00 /* Background Color Index != 0 */
@@ -36,7 +36,7 @@ rule SUSP_HxD_Icon_Anomaly_May23_1 {
       reference = "https://www.linkedin.com/feed/update/urn:li:activity:7068631930040188929/?utm_source=share&utm_medium=member_ios"
       date = "2023-05-29"
       score = 65
-      uuid = "3ac8cc92-6d76-5787-ada0-cfb6eabb4b20"
+      id = "3ac8cc92-6d76-5787-ada0-cfb6eabb4b20"
    strings:
       /* part of the icon bitmap : we're not using resource hashes etc because YARA's string matching is much faster */
       $ac1 = { 99 00 77 0D DD 09 99 80 99 00 77 0D DD 09 99 80

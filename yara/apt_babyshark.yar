@@ -8,7 +8,7 @@ rule MAL_PE_Type_BabyShark_Loader {
       reference = "https://unit42.paloaltonetworks.com/new-babyshark-malware-targets-u-s-national-security-think-tanks/"
       date = "2019-02-24"
       hash1 = "6f76a8e16908ba2d576cf0e8cdb70114dcb70e0f7223be10aab3a728dc65c41c"
-      uuid = "141e7a67-7930-5fd8-ac91-5d31b99e4ff3"
+      id = "141e7a67-7930-5fd8-ac91-5d31b99e4ff3"
    strings:
       $x1 = "reg add \"HKEY_CURRENT_USER\\Software\\Microsoft\\Command Processor\" /v AutoRun /t REG_SZ /d \"%s\" /f" fullword ascii
       $x2 = /mshta\.exe http:\/\/[a-z0-9\.\/]{5,30}\.hta/
@@ -33,7 +33,7 @@ rule APT_NK_BabyShark_KimJoingRAT_Apr19_1 {
       reference = "https://unit42.paloaltonetworks.com/babyshark-malware-part-two-attacks-continue-using-kimjongrat-and-pcrat/"
       date = "2019-04-27"
       hash1 = "d50a0980da6297b8e4cec5db0a8773635cee74ac6f5c1ff18197dfba549f6712"
-      uuid = "c6bd1e1a-68f2-5a2d-a159-b16ea0d33987"
+      id = "c6bd1e1a-68f2-5a2d-a159-b16ea0d33987"
    strings:
       $x1 = "%s\\Microsoft\\ttmp.log" fullword wide
 

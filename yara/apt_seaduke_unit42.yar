@@ -16,7 +16,7 @@ rule SeaDuke_Sample {
 		date = "2015-07-14"
 		score = 70
 		hash = "d2e570129a12a47231a1ecb8176fa88a1bf415c51dabd885c513d98b15f75d4e"
-		uuid = "011a303b-b051-519f-9687-668c9bcd15ca"
+		id = "011a303b-b051-519f-9687-668c9bcd15ca"
 	strings:
 		$s0 = "bpython27.dll" fullword ascii
 		$s1 = "email.header(" ascii /* PEStudio Blacklist: strings */

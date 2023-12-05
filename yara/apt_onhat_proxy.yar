@@ -21,7 +21,7 @@ rule ONHAT_Proxy_Hacktool {
 		hash6 = "f0954774c91603fc2595f0ba0727b9af4e80f6f9be7bb629e7fb6ba4309ed4ea"
 		hash7 = "f3906be01d51e2e1ae9b03cd09702b6e0794b9c9fd7dc04024f897e96bb13232"
 		hash8 = "f65ae9ccf988a06a152f27a4c0d7992100a2d9d23d80efe8d8c2a5c9bd78a3a7"
-		uuid = "cb18a5b0-dbbd-5dd3-af66-21b8302df6de"
+		id = "cb18a5b0-dbbd-5dd3-af66-21b8302df6de"
 	strings:
 		$s1 = "INVALID PARAMETERS. TYPE ONHAT.EXE -h FOR HELP INFORMATION." fullword ascii
 		$s2 = "[ONHAT] LISTENS (S, %d.%d.%d.%d, %d) ERROR." fullword ascii

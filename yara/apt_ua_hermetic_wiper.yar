@@ -10,7 +10,7 @@ rule APT_UA_Hermetic_Wiper_Feb22_1 {
       hash2 = "3c557727953a8f6b4788984464fb77741b821991acbf5e746aebdd02615b1767"
       hash3 = "2c10b2ec0b995b88c27d141d6f7b14d6b8177c52818687e4ff8e6ecf53adf5bf"
       hash4 = "1bc44eef75779e3ca1eefb8ff5a64807dbc942b1e4a2672d77b9f6928d292591"
-      uuid = "2cbe4a69-e31a-5f5f-ab1a-9d71d16fb30f"
+      id = "2cbe4a69-e31a-5f5f-ab1a-9d71d16fb30f"
    strings:
       $xc1 = { 00 5C 00 5C 00 2E 00 5C 00 50 00 68 00 79 00 73
                00 69 00 63 00 61 00 6C 00 44 00 72 00 69 00 76
@@ -44,7 +44,7 @@ rule APT_UA_Hermetic_Wiper_Artefacts_Feb22_1 {
       reference = "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/ukraine-wiper-malware-russia"
       date = "2022-02-25"
       score = 75
-      uuid = "77f793c1-b02c-59c3-b3e4-75758f5b3b8d"
+      id = "77f793c1-b02c-59c3-b3e4-75758f5b3b8d"
    strings:
       $sx1 = "/c powershell -c \"rundll32 C:\\windows\\system32\\comsvcs.dll MiniDump" ascii wide
       $sx2 = "appdata\\local\\microsoft\\windows\\winupd.log" ascii wide
@@ -76,7 +76,7 @@ rule APT_UA_Hermetic_Wiper_Scheduled_Task_Feb22_1 {
       reference = "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/ukraine-wiper-malware-russia"
       date = "2022-02-25"
       score = 85
-      uuid = "a628f773-9c71-5979-a4db-37b6b6bd6a56"
+      id = "a628f773-9c71-5979-a4db-37b6b6bd6a56"
    strings:
       $a0 = "<Task version=" ascii wide
 

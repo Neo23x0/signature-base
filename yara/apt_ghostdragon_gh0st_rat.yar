@@ -16,7 +16,7 @@ rule GhostDragon_Gh0stRAT {
 		hash2 = "99ee5b764a5db1cb6b8a4f62605b5536487d9c35a28a23de8f9174659f65bcb2"
 		hash3 = "6c7f8ba75889e0021c4616fcbee86ac06cd7f5e1e355e0cbfbbb5110c08bb6df"
 		hash4 = "b803381535ac24ce7c8fdcf6155566d208dfca63fd66ec71bbc6754233e251f5"
-		uuid = "a74330ab-5249-5125-8f48-27aec7c6eeb4"
+		id = "a74330ab-5249-5125-8f48-27aec7c6eeb4"
 	strings:
 		$x1 = "REG ADD HKEY_LOCAL_MACHINE\\%s /v ServiceDll /t REG_EXPAND_SZ /d \"%s\"" fullword ascii
 		$x2 = "Global\\REALCHEL_GLOBAL_SUBMIT_20031020_" ascii
@@ -59,7 +59,7 @@ rule GhostDragon_Gh0stRAT_Sample2 {
 		reference = "https://blog.cylance.com/the-ghost-dragon"
 		date = "2016-04-23"
 		hash1 = "71a52058f6b5cef66302c19169f67cf304507b4454cca83e2c36151da8da1d97"
-		uuid = "424cb978-c4d1-5847-8852-e25ec2a02139"
+		id = "424cb978-c4d1-5847-8852-e25ec2a02139"
 	strings:
 		$x1 = "AdobeWpk" fullword ascii
 		$x2 = "seekin.dll" fullword ascii
@@ -82,7 +82,7 @@ rule GhostDragon_Gh0stRAT_Sample3 {
 		reference = "https://blog.cylance.com/the-ghost-dragon"
 		date = "2016-04-23"
 		hash1 = "1be9c68b31247357328596a388010c9cfffadcb6e9841fb22de8b0dc2d161c42"
-		uuid = "6d4bb99d-28de-59c2-b6f0-6da3cac4ed73"
+		id = "6d4bb99d-28de-59c2-b6f0-6da3cac4ed73"
 	strings:
 		$op1 = { 44 24 15 65 88 54 24 16 c6 44 24 }
 		$op2 = { 44 24 1b 43 c6 44 24 1c 75 88 54 24 1e }

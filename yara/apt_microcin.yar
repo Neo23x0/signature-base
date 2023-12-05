@@ -20,7 +20,7 @@ rule Microcin_Sample_1 {
       hash1 = "49816eefcd341d7a9c1715e1f89143862d4775ba4f9730397a1e8529f5f5e200"
       hash2 = "a73f8f76a30ad5ab03dd503cc63de3a150e6ab75440c1060d75addceb4270f46"
       hash3 = "9dd9bb13c2698159eb78a0ecb4e8692fd96ca4ecb50eef194fa7479cb65efb7c"
-      uuid = "96e9ac3b-a837-5909-b17b-259d54e0e7fd"
+      id = "96e9ac3b-a837-5909-b17b-259d54e0e7fd"
    strings:
       $s1 = "e Class Descriptor at (" ascii
       $s2 = ".?AVCAntiAntiAppleFrameRealClass@@" fullword ascii
@@ -43,7 +43,7 @@ rule Microcin_Sample_2 {
       reference = "https://securelist.com/files/2017/09/Microcin_Technical-PDF_eng_final.pdf"
       date = "2017-09-26"
       hash1 = "8a7d04229722539f2480270851184d75b26c375a77b468d8cbad6dbdb0c99271"
-      uuid = "8718ef84-be2b-55a6-a4bb-41161548a2b4"
+      id = "8718ef84-be2b-55a6-a4bb-41161548a2b4"
    strings:
       $s2 = "[Pause]" fullword ascii
       $s7 = "IconCache_%02d%02d%02d%02d%02d" fullword ascii
@@ -59,7 +59,7 @@ rule Microcin_Sample_3 {
       reference = "https://securelist.com/files/2017/09/Microcin_Technical-PDF_eng_final.pdf"
       date = "2017-09-26"
       hash1 = "4f74a3b67c5ed6f38f08786f1601214412249fe128f12c51525135710d681e1d"
-      uuid = "daecdfe3-e78c-55ee-83a3-3cee8cb9bb5f"
+      id = "daecdfe3-e78c-55ee-83a3-3cee8cb9bb5f"
    strings:
       $x1 = "C:\\Users\\Lenovo\\Desktop\\test\\Release\\test.pdb" fullword ascii
       $s2 = "test, Version 1.0" fullword wide
@@ -75,7 +75,7 @@ rule Microcin_Sample_4 {
       reference = "https://securelist.com/files/2017/09/Microcin_Technical-PDF_eng_final.pdf"
       date = "2017-09-26"
       hash1 = "92c01d5af922bdaacb6b0b2dfbe29e5cc58c45cbee5133932a499561dab616b8"
-      uuid = "8a6a0735-422a-5e91-9274-ce55f7bee5d3"
+      id = "8a6a0735-422a-5e91-9274-ce55f7bee5d3"
    strings:
       $s1 = "cmd /c dir /a /s \"%s\" > \"%s\"" fullword wide
       $s2 = "ini.dat" fullword wide
@@ -97,7 +97,7 @@ rule Microcin_Sample_5 {
       reference = "https://securelist.com/files/2017/09/Microcin_Technical-PDF_eng_final.pdf"
       date = "2017-09-26"
       hash1 = "b9c51397e79d5a5fd37647bc4e4ee63018ac3ab9d050b02190403eb717b1366e"
-      uuid = "cd06f9f7-0ba3-52c9-a814-be1cd53e2e42"
+      id = "cd06f9f7-0ba3-52c9-a814-be1cd53e2e42"
    strings:
       $x1 = "Sorry, you are not fortuante ^_^, Please try other password dictionary " fullword ascii
       $x2 = "DomCrack <IP> <UserName> <Password_Dic file path> <option>" fullword ascii
@@ -118,7 +118,7 @@ rule Microcin_Sample_6 {
       date = "2017-09-26"
       hash1 = "cbd43e70dc55e94140099722d7b91b07a3997722d4a539ecc4015f37ea14a26e"
       hash2 = "871ab24fd6ae15783dd9df5010d794b6121c4316b11f30a55f23ba37eef4b87a"
-      uuid = "9988723f-a7ca-598f-9a6c-9f3915732117"
+      id = "9988723f-a7ca-598f-9a6c-9f3915732117"
    strings:
       $s1 = "** ERROR ** %s: %s" fullword ascii
       $s2 = "TEMPDATA" fullword wide

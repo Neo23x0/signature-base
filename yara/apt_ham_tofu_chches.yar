@@ -14,7 +14,7 @@ rule Tofu_Backdoor {
       author = "Cylance"
       reference = "https://www.cylance.com/en_us/blog/the-deception-project-a-new-japanese-centric-threat.html"
       date = "2017-02-28"
-      uuid = "03848366-f139-5352-959d-390992d96296"
+      id = "03848366-f139-5352-959d-390992d96296"
    strings:
    	$a = "Cookies: Sym1.0"
    	$b = "\\\\.\\pipe\\1[12345678]"

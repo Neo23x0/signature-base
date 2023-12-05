@@ -18,7 +18,7 @@ rule Recon_Commands_Windows_Gen1 {
       date = "2017-07-10"
       score = 60
       reference = "https://goo.gl/MSJCxP"
-      uuid = "bc95265c-780d-5451-bd12-d14495877e46"
+      id = "bc95265c-780d-5451-bd12-d14495877e46"
    strings:
       $s1 = "netstat -an" ascii
       $s2 = "net view" ascii fullword
@@ -56,7 +56,7 @@ rule SUSP_Recon_Outputs_Jun20_1 {
       reference = "https://securelist.com/cycldek-bridging-the-air-gap/97157/"
       date = "2020-06-04"
       score = 60
-      uuid = "ec3759aa-212f-52ce-9f38-636accd35749"
+      id = "ec3759aa-212f-52ce-9f38-636accd35749"
    strings:
       /* ipconfig /all */
       $s1 = ". . . . : Yes" ascii 

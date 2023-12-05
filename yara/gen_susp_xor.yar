@@ -9,7 +9,7 @@ rule SUSP_XORed_URL_In_EXE {
       date = "2020-03-09"
       modified = "2022-09-16"
       score = 50
-      uuid = "f83991c8-f2d9-5583-845a-d105034783ab"
+      id = "f83991c8-f2d9-5583-845a-d105034783ab"
    strings:
       $s1 = "http://" xor
       $s2 = "https://" xor

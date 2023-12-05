@@ -16,7 +16,7 @@ rule Mal_Dropper_httpEXE_from_CAB {
 		date = "2016-05-25"
 		score = 60
 		hash1 = "9e7e5f70c4b32a4d5e8c798c26671843e76bb4bd5967056a822e982ed36e047b"
-		uuid = "f67c13e9-67e7-56aa-8ced-55e9bb814971"
+		id = "f67c13e9-67e7-56aa-8ced-55e9bb814971"
 	strings:
 		$s1 = "029.Hdl" fullword ascii
 		$s2 = "http.exe" fullword ascii
@@ -34,7 +34,7 @@ rule Mal_http_EXE {
 		modified = "2023-01-27"
 		score = 80
 		hash1 = "ad191d1d18841f0c5e48a5a1c9072709e2dd6359a6f6d427e0de59cfcd1d9666"
-		uuid = "bcae9920-56ea-54a1-857b-70c275090e19"
+		id = "bcae9920-56ea-54a1-857b-70c275090e19"
 	strings:
 		$x1 = "Content-Disposition: form-data; name=\"file1\"; filename=\"%s\"" fullword ascii
 		$x2 = "%ALLUSERSPROFILE%\\Accessories\\wordpade.exe" fullword ascii
@@ -66,7 +66,7 @@ rule Mal_PotPlayer_DLL {
 		date = "2016-05-25"
 		score = 70
 		hash1 = "705409bc11fb45fa3c4e2fa9dd35af7d4613e52a713d9c6ea6bc4baff49aa74a"
-		uuid = "71d34266-63e0-5a97-9a80-952be917641a"
+		id = "71d34266-63e0-5a97-9a80-952be917641a"
 	strings:
 		$x1 = "C:\\Users\\john\\Desktop\\PotPlayer\\Release\\PotPlayer.pdb" fullword ascii
 

@@ -16,7 +16,7 @@ rule Zeus_Panda {
       reference = "https://cyberwtf.files.wordpress.com/2017/07/panda-whitepaper.pdf"
       date = "2017-08-04"
       hash1 = "bd956b2e81731874995b9b92e20f75dbf67ac5f12f9daa194525e1b673c7f83c"
-      uuid = "2786b1e0-37af-5595-a24b-56ef3cb928a7"
+      id = "2786b1e0-37af-5595-a24b-56ef3cb928a7"
    strings:
       $x1 = "SER32.dll" fullword ascii
       $x2 = "/c start \"\" \"%s\"" fullword wide

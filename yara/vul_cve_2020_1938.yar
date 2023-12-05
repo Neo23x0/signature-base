@@ -6,7 +6,7 @@ rule VUL_Tomcat_Catalina_CVE_2020_1938 {
       reference = "https://www.chaitin.cn/en/ghostcat"
       date = "2020-02-28"
       score = 50
-      uuid = "d23af7ce-eb5d-50aa-be02-b4bf858641c2"
+      id = "d23af7ce-eb5d-50aa-be02-b4bf858641c2"
    strings:
       $h1 = "<?xml "
       $a1 = "<Service name=\"Catalina\">" ascii

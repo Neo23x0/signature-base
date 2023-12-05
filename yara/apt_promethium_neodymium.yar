@@ -15,7 +15,7 @@ rule PROMETHIUM_NEODYMIUM_Malware_1 {
       reference = "https://goo.gl/8abDE6"
       date = "2016-12-14"
       hash1 = "e12031da58c0b08e8b610c3786ca2b66fcfea8ddc9ac558d08a29fd27e95a3e7"
-      uuid = "21e858b1-2cfa-5757-96f0-7c44a5da6898"
+      id = "21e858b1-2cfa-5757-96f0-7c44a5da6898"
    strings:
       $s1 = "c:\\Windows\\system32\\syswindxr32.dll" fullword wide
       $s2 = "c:\\windows\\temp\\TrueCrypt-Setup-7.1a-tamindir.exe" fullword wide
@@ -34,7 +34,7 @@ rule PROMETHIUM_NEODYMIUM_Malware_2 {
       reference = "https://goo.gl/8abDE6"
       date = "2016-12-14"
       hash1 = "1aef507c385a234e8b10db12852ad1bd66a04730451547b2dcb26f7fae16e01f"
-      uuid = "5858541b-c394-5be8-9db3-fcff66f635de"
+      id = "5858541b-c394-5be8-9db3-fcff66f635de"
    strings:
       $s1 = "winasys32.exe" fullword ascii
       $s2 = "alg32.exe" fullword ascii
@@ -52,7 +52,7 @@ rule PROMETHIUM_NEODYMIUM_Malware_3 {
       reference = "https://goo.gl/8abDE6"
       date = "2016-12-14"
       hash1 = "2f98ac11c78ad1b4c5c5c10a88857baf7af43acb9162e8077709db9d563bcf02"
-      uuid = "bff79813-0d72-50d9-9676-794801edc34b"
+      id = "bff79813-0d72-50d9-9676-794801edc34b"
    strings:
       $s1 = "%s SslHandshakeDone(%d) %d. Secure connection with %s, cipher %s, %d secret bits (%d total), session reused=%s" fullword ascii
       $s2 = "mvhost32.dll" fullword ascii
@@ -70,7 +70,7 @@ rule PROMETHIUM_NEODYMIUM_Malware_4 {
       reference = "https://goo.gl/8abDE6"
       date = "2016-12-14"
       hash1 = "15ededb19ec5ab6f03db1106d2ccdeeacacdb8cd708518d065cacb1b0d7e955d"
-      uuid = "4e926b1c-bf10-5337-8c3a-964008a37d8b"
+      id = "4e926b1c-bf10-5337-8c3a-964008a37d8b"
    strings:
       $s1 = "c:\\windows\\temp\\winrar.exe" fullword wide
       $s2 = "info@aadobetech.com" fullword ascii
@@ -92,7 +92,7 @@ rule PROMETHIUM_NEODYMIUM_Malware_5 {
       reference = "https://goo.gl/8abDE6"
       date = "2016-12-14"
       hash1 = "a8b7e3edaa18c6127e98741503c3a2a66b7720d2abd967c94b8a5f2e99575ac5"
-      uuid = "4bd60f61-a595-5289-9595-a7e33f265748"
+      id = "4bd60f61-a595-5289-9595-a7e33f265748"
    strings:
       $s1 = "Winxsys.exe" fullword wide
       $s2 = "%s\\ssleay32.dll" fullword wide
@@ -112,7 +112,7 @@ rule PROMETHIUM_NEODYMIUM_Malware_6 {
       reference = "https://goo.gl/8abDE6"
       date = "2016-12-14"
       hash1 = "dbd8cbbaf59d19cf7566042945e36409cd090bc711e339d3f2ec652bc26d6a03"
-      uuid = "0f36eb56-39d8-536c-93ff-4a2352163612"
+      id = "0f36eb56-39d8-536c-93ff-4a2352163612"
    strings:
       $s1 = "c:\\Windows\\system32\\syswindxr32.dll" fullword wide
       $s2 = "c:\\windows\\temp\\TrueCrypt-7.2.exe" fullword wide

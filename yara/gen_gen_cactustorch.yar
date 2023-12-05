@@ -18,7 +18,7 @@ rule CACTUSTORCH {
       hash1 = "314e6d7d863878b6dca46af165e7f08fedd42c054d7dc3828dc80b86a3a9b98c"
       hash2 = "0305aa32d5f8484ca115bb4888880729af7f33ac99594ec1aa3c65644e544aea"
       hash3 = "a52d802e34ac9d7d3539019d284b04ded3b8e197d5e3b38ed61f523c3d68baa7"
-      uuid = "75606b9e-97d5-5b8b-87f5-69b7e415b73c"
+      id = "75606b9e-97d5-5b8b-87f5-69b7e415b73c"
    strings:
       $x1 = "$payload = shellcode(%options[\"listener\"], \"true\", \"x86\");" fullword ascii
       $x2 = "Copy the base64 encoded payload into the code variable below." fullword ascii

@@ -16,7 +16,7 @@ rule DarkEYEv3_Cryptor {
 		hash7 = "a0382d7c12895489cb37efef74c5f666ea750b05"
 		hash8 = "f3d5b71b7aeeb6cc917d5bb67e2165cf8a2fbe61"
 		score = 55
-		uuid = "a2b455e5-3021-5662-b593-c1aeeb34c226"
+		id = "a2b455e5-3021-5662-b593-c1aeeb34c226"
 	strings:
 		$s0 = "\\DarkEYEV3-" 
 	condition:

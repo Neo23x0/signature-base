@@ -6,7 +6,7 @@ rule OSX_backdoor_EvilOSX {
         date = "2018-02-23"
         hash = "89e5b8208daf85f549d9b7df8e2a062e47f15a5b08462a4224f73c0a6223972a"
 
-        uuid = "6940e355-53d2-51e3-afd0-13303a311e9a"
+        id = "6940e355-53d2-51e3-afd0-13303a311e9a"
     strings:
         $h1 = "#!/usr/bin/env"
         $s0 = "import base64" fullword ascii

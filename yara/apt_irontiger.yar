@@ -16,7 +16,7 @@ rule IronPanda_DNSTunClient {
 		date = "2015-09-16"
 		score = 80
 		hash = "a08db49e198068709b7e52f16d00a10d72b4d26562c0d82b4544f8b0fb259431"
-		uuid = "dd608176-d7e7-5819-a7d4-e8b89d4a59c2"
+		id = "dd608176-d7e7-5819-a7d4-e8b89d4a59c2"
 	strings:
 		$s1 = "dnstunclient -d or -domain <domain>" fullword ascii
 		$s2 = "dnstunclient -ip <server ip address>" fullword ascii
@@ -43,7 +43,7 @@ rule IronPanda_Malware1 {
 		reference = "https://goo.gl/E4qia9"
 		date = "2015-09-16"
 		hash = "a0cee5822ddf254c254a5a0b7372c9d2b46b088a254a1208cb32f5fe7eca848a"
-		uuid = "14dc2611-4ca9-5dd2-ad00-9397a18d7be2"
+		id = "14dc2611-4ca9-5dd2-ad00-9397a18d7be2"
 	strings:
 		$x1 = "activedsimp.dll" fullword wide
 		$s1 = "get_BadLoginAddress" fullword ascii
@@ -62,7 +62,7 @@ rule IronPanda_Webshell_JSP {
 		reference = "https://goo.gl/E4qia9"
 		date = "2015-09-16"
 		hash = "3be95477e1d9f3877b4355cff3fbcdd3589bb7f6349fd4ba6451e1e9d32b7fa6"
-		uuid = "38125418-7867-5073-a731-4f1d64e07588"
+		id = "38125418-7867-5073-a731-4f1d64e07588"
 	strings:
 		$s1 = "Bin_ExecSql(\"exec master..xp_cmdshell'bcp \\\"select safile from \" + db + \"..bin_temp\\\" queryout \\\"\" + Bin_TextBox_SaveP" ascii
 		$s2 = "tc.Text=\"<a href=\\\"javascript:Bin_PostBack('zcg_ClosePM','\"+Bin_ToBase64(de.Key.ToString())+\"')\\\">Close</a>\";" fullword ascii
@@ -79,7 +79,7 @@ rule IronPanda_Malware_Htran {
 		reference = "https://goo.gl/E4qia9"
 		date = "2015-09-16"
 		hash = "7903f94730a8508e9b272b3b56899b49736740cea5037ea7dbb4e690bcaf00e7"
-		uuid = "7215f0da-9367-59b4-a78b-aeeebc4f2b69"
+		id = "7215f0da-9367-59b4-a78b-aeeebc4f2b69"
 	strings:
 		$s1 = "[-] Gethostbyname(%s) error:%s" fullword ascii
 		$s2 = "%s -<listen|tran|slave> <option> [-log logfile]" fullword ascii
@@ -109,7 +109,7 @@ rule IronPanda_Malware2 {
 		reference = "https://goo.gl/E4qia9"
 		date = "2015-09-16"
 		hash = "a89c21dd608c51c4bf0323d640f816e464578510389f9edcf04cd34090decc91"
-		uuid = "63916f73-808d-5dc7-86f3-05c8b9c5650d"
+		id = "63916f73-808d-5dc7-86f3-05c8b9c5650d"
 	strings:
 		$s0 = "\\setup.exe" ascii
 		$s1 = "msi.dll.urlUT" fullword ascii
@@ -128,7 +128,7 @@ rule IronPanda_Malware3 {
 		reference = "https://goo.gl/E4qia9"
 		date = "2015-09-16"
 		hash = "5cd2af844e718570ae7ba9773a9075738c0b3b75c65909437c43201ce596a742"
-		uuid = "bc3094ab-9dc8-5b9d-aa13-28daa7d5c13f"
+		id = "bc3094ab-9dc8-5b9d-aa13-28daa7d5c13f"
 	strings:
 		$s0 = "PluginDeflater.exe" fullword wide
 		$s1 = ".Deflated" fullword wide
@@ -148,7 +148,7 @@ rule IronPanda_Malware4 {
 		reference = "https://goo.gl/E4qia9"
 		date = "2015-09-16"
 		hash = "0d6da946026154416f49df2283252d01ecfb0c41c27ef3bc79029483adc2240c"
-		uuid = "0a72c1e1-b442-52d4-af52-b863abe5ba3c"
+		id = "0a72c1e1-b442-52d4-af52-b863abe5ba3c"
 	strings:
 		$s0 = "TestPlugin.dll" fullword wide
 		$s1 = "<a href='http://www.baidu.com'>aasd</a>" fullword wide

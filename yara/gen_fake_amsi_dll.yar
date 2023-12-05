@@ -8,7 +8,7 @@ rule SUSP_Fake_AMSI_DLL_Jun23_1 {
       date = "2023-06-07"
       modified = "2023-06-12"
       score = 65
-      uuid = "b12df9de-ecfb-562b-b599-87fa786a33bc"
+      id = "b12df9de-ecfb-562b-b599-87fa786a33bc"
    strings:
       $a1 = "Microsoft.Antimalware.Scan.Interface" ascii
       $a2 = "Amsi.pdb" ascii fullword
@@ -44,7 +44,7 @@ rule SUSP_Fake_AMSI_DLL_Jun23_2 {
       date = "2023-06-07"
       modified = "2023-06-14"
       score = 65
-      uuid = "adec9525-6299-52d5-8f4e-a83366d3dcfd"
+      id = "adec9525-6299-52d5-8f4e-a83366d3dcfd"
    strings:
       $a1 = "Microsoft.Antimalware.Scan.Interface" ascii
       $a2 = "Amsi.pdb" ascii fullword

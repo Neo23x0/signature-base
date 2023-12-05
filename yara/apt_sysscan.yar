@@ -13,7 +13,7 @@ rule xDedic_SysScan_unpacked {
       hash3 = "a53847a51561a7e76fd034043b9aa36d"
       hash4 = "e8691fa5872c528cd8e72b82e7880e98"
       hash5 = "F661b50d45400e7052a2427919e2f777"
-      uuid = "4f5d37b3-e3aa-51ec-b36e-b494c8abe227"
+      id = "4f5d37b3-e3aa-51ec-b36e-b494c8abe227"
    strings:
       $a1 = "/c ping -n 2 127.0.0.1 & del \"SysScan.exe\"" ascii wide
       $a2 = "SysScan DEBUG Mode!!!" ascii wide
@@ -30,7 +30,7 @@ rule xdedic_packed_syscan {
    meta:
       author = "Kaspersky Lab - modified by Florian Roth"
       company = "Kaspersky Lab"
-      uuid = "da8e59f3-53f9-504b-afff-9caab798db6c"
+      id = "da8e59f3-53f9-504b-afff-9caab798db6c"
    strings:
       $a1 = "SysScan.exe" nocase ascii wide
       $a2 = "1.3.4." wide

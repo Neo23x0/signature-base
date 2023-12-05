@@ -18,7 +18,7 @@ rule MAL_BurningUmbrella_Sample_1 {
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "fcfe8fcf054bd8b19226d592617425e320e4a5bb4798807d6f067c39dfc6d1ff"
-      uuid = "9f8a6831-172b-5310-9763-43657b79b91d"
+      id = "9f8a6831-172b-5310-9763-43657b79b91d"
    strings:
       $s1 = { 40 00 00 E0 75 68 66 61 6F 68 6C 79 }
       $s2 = { 40 00 00 E0 64 6A 7A 66 63 6D 77 62 }
@@ -38,7 +38,7 @@ rule MAL_BurningUmbrella_Sample_2 {
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "801a64a730fc8d80e17e59e93533c1455686ca778e6ba99cf6f1971a935eda4c"
-      uuid = "926b4a29-ce47-559b-94e3-1fabd90f3fbe"
+      id = "926b4a29-ce47-559b-94e3-1fabd90f3fbe"
    strings:
       $s1 = { 40 00 00 E0 63 68 72 6F 6D 67 75 78 }
       $s2 = { 40 00 00 E0 77 62 68 75 74 66 6F 61 }
@@ -58,7 +58,7 @@ rule MAL_BurningUmbrella_Sample_3 {
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "92efbecc24fbb5690708926b6221b241b10bdfe3dd0375d663b051283d0de30f"
-      uuid = "b997822a-3f62-51b4-bd96-e780ffe60812"
+      id = "b997822a-3f62-51b4-bd96-e780ffe60812"
    strings:
       $s1 = "HKEY_CLASSES_ROOT\\Word.Document.8\\shell\\Open\\command" fullword ascii
    condition:
@@ -73,7 +73,7 @@ rule MAL_BurningUmbrella_Sample_4 {
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "a1629e8abce9d670fdb66fa1ef73ad4181706eefb8adc8a9fd257b6a21be48c6"
-      uuid = "3489f64b-7ebc-55b8-bd11-afaa719e572b"
+      id = "3489f64b-7ebc-55b8-bd11-afaa719e572b"
    strings:
       $x1 = "dumpodbc.exe" fullword ascii
       $x2 = "photo_Bundle.exe" fullword ascii
@@ -106,7 +106,7 @@ rule MAL_BurningUmbrella_Sample_6 {
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "49ef2b98b414c321bcdbab107b8fa71a537958fe1e05ae62aaa01fe7773c3b4b"
-      uuid = "7198a734-fd54-5cb5-9966-b91796a415c7"
+      id = "7198a734-fd54-5cb5-9966-b91796a415c7"
    strings:
       $s1 = "ExecuteFile=\"hidcon:nowait:\\\"Word\\\\r.bat\\\"\"" fullword ascii
       $s2 = "InstallPath=\"%Appdata%\\\\Microsoft\"" fullword ascii
@@ -124,7 +124,7 @@ rule MAL_BurningUmbrella_Sample_7 {
       hash1 = "a4ce3a356d61fbbb067e1430b8ceedbe8965e0cfedd8fb43f1f719e2925b094a"
       hash2 = "a8bfc1e013f15bc395aa5c047f22ff2344c343c22d420804b6d2f0a67eb6db64"
       hash3 = "959612f2a9a8ce454c144d6aef10dd326b201336a85e69a604e6b3892892d7ed"
-      uuid = "7e427512-a8ee-53ae-a141-e995e74ca845"
+      id = "7e427512-a8ee-53ae-a141-e995e74ca845"
    condition:
       uint16(0) == 0x5a4d and filesize < 400KB and pe.imphash() == "f5b113d6708a3927b5cc48f2215fcaff"
 }
@@ -137,7 +137,7 @@ rule MAL_BurningUmbrella_Sample_8 {
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "73270fe9bca94fead1b5b38ddf69fae6a42e574e3150d3e3ab369f5d37d93d88"
-      uuid = "1b89d5a1-1425-5cb7-b429-563769bc0943"
+      id = "1b89d5a1-1425-5cb7-b429-563769bc0943"
    strings:
       $s1 = "cmd /c open %s" fullword ascii
    condition:
@@ -154,7 +154,7 @@ rule MAL_BurningUmbrella_Sample_10 {
       hash1 = "70992a72412c5d62d003a29c3967fcb0687189d3290ebbc8671fa630829f6694"
       hash2 = "48f0bbc3b679aac6b1a71c06f19bb182123e74df8bb0b6b04ebe99100c57a41e"
       hash3 = "5475ae24c4eeadcbd49fcd891ce64d0fe5d9738f1c10ba2ac7e6235da97d3926"
-      uuid = "e4cb2211-efbe-55f9-99e3-c01601904509"
+      id = "e4cb2211-efbe-55f9-99e3-c01601904509"
    strings:
       $s1 = "revjj.syshell.org" fullword ascii
       /* $s2 = "Kernel.dll" fullword ascii */
@@ -170,7 +170,7 @@ rule MAL_BurningUmbrella_Sample_11 {
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "278e9d130678615d0fee4d7dd432f0dda6d52b0719649ee58cbdca097e997c3f"
-      uuid = "9762c68c-4d69-5d38-aaf4-0048e7404147"
+      id = "9762c68c-4d69-5d38-aaf4-0048e7404147"
    strings:
       $s1 = "Resume.app/Contents/Java/Resume.jarPK" fullword ascii
    condition:
@@ -185,7 +185,7 @@ rule MAL_BurningUmbrella_Sample_12 {
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "b9aba520eeaf6511877c1eec5f7d71e0eea017312a104f30d3b8f17c89db47e8"
-      uuid = "805a00e7-2959-53d8-b769-0f8e54e1bbd5"
+      id = "805a00e7-2959-53d8-b769-0f8e54e1bbd5"
    strings:
       $s1 = "%SystemRoot%\\System32\\qmgr.dll" fullword ascii
       $s2 = "rundll32.exe %s,Startup" fullword ascii
@@ -209,7 +209,7 @@ rule MAL_BurningUmbrella_Sample_13 {
       date = "2018-05-04"
       hash1 = "d31374adc0b96a8a8b56438bbbc313061fd305ecee32a12738dd965910c8890f"
       hash2 = "c74a8e6c88f8501fb066ae07753efe8d267afb006f555811083c51c7f546cb67"
-      uuid = "38c73425-bbdd-5b74-8ad4-5e0052039dd8"
+      id = "38c73425-bbdd-5b74-8ad4-5e0052039dd8"
    condition:
       uint16(0) == 0x5a4d and filesize < 100KB and pe.imphash() == "75f201aa8b18e1c4f826b2fe0963b84f"
 }
@@ -222,7 +222,7 @@ rule MAL_BurningUmbrella_Sample_14 {
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "388ef4b4e12a04eab451bd6393860b8d12948f2bce12e5c9022996a9167f4972"
-      uuid = "a2b3a4bb-ca60-5dc2-8124-17e654e326b8"
+      id = "a2b3a4bb-ca60-5dc2-8124-17e654e326b8"
    strings:
       $s1 = "C:\\tmp\\Google_updata.exe" fullword ascii
       /* $s2 = "Kernel.dll" fullword ascii */
@@ -242,7 +242,7 @@ rule MAL_BurningUmbrella_Sample_15 {
       hash3 = "9cc38ea106efd5c8e98c2e8faf97c818171c52fa3afa0c4c8f376430fa556066"
       hash4 = "1a4a64f01b101c16e8b5928b52231211e744e695f125e056ef7a9412da04bb91"
       hash5 = "3cd42e665e21ed4815af6f983452cbe7a4f2ac99f9ea71af4480a9ebff5aa048"
-      uuid = "4dc840c1-e6fa-5b21-bfcd-ef07cd85272a"
+      id = "4dc840c1-e6fa-5b21-bfcd-ef07cd85272a"
    condition:
       uint16(0) == 0x5a4d and filesize < 50KB and pe.imphash() == "cc33b1500354cf785409a3b428f7cd2a"
 }
@@ -255,7 +255,7 @@ rule MAL_BurningUmbrella_Sample_16 {
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "58bb3859e02b8483e9f84cc56fbd964486e056ef28e94dd0027d361383cc4f4a"
-      uuid = "8b1970bd-571e-5c53-9170-1605c69d9d6d"
+      id = "8b1970bd-571e-5c53-9170-1605c69d9d6d"
    strings:
       $s1 = "http://netimo.net 0" fullword ascii
    condition:
@@ -274,7 +274,7 @@ rule MAL_BurningUmbrella_Sample_17 {
       hash3 = "1e462d8968e8b6e8784d7ecd1d60249b41cf600975d2a894f15433a7fdf07a0f"
       hash4 = "3cdc149e387ec4a64cce1191fc30b8588df4a2947d54127eae43955ce3d08a01"
       hash5 = "a026b11e15d4a81a449d20baf7cbd7b8602adc2644aa4bea1e55ff1f422c60e3"
-      uuid = "d79d3f65-f27c-582b-9258-7c84dc7682a6"
+      id = "d79d3f65-f27c-582b-9258-7c84dc7682a6"
    strings:
       $s1 = "syshell" fullword wide
       $s2 = "Normal.dotm" fullword ascii
@@ -300,7 +300,7 @@ rule MAL_BurningUmbrella_Sample_18 {
       hash8 = "74e348068f8851fec1b3de54550fe09d07fb85b7481ca6b61404823b473885bb"
       hash9 = "adb9c2fe930fae579ce87059b4b9e15c22b6498c42df01db9760f75d983b93b2"
       hash0 = "23f28b5c4e94d0ad86341c0b9054f197c63389133fcd81dd5e0cf59f774ce54b"
-      uuid = "d08f4676-ff28-59be-9fd4-b5a824e577d9"
+      id = "d08f4676-ff28-59be-9fd4-b5a824e577d9"
    strings:
       $s1 = "c:\\tmp\\tran.exe" fullword ascii
    condition:
@@ -321,7 +321,7 @@ rule MAL_BurningUmbrella_Sample_19 {
       date = "2018-05-04"
       hash1 = "05e2912f2a593ba16a5a094d319d96715cbecf025bf88bb0293caaf6beb8bc20"
       hash2 = "e7bbdb275773f43c8e0610ad75cfe48739e0a2414c948de66ce042016eae0b2e"
-      uuid = "8ab55e80-5d28-5a5f-a1cc-725ba6720e4b"
+      id = "8ab55e80-5d28-5a5f-a1cc-725ba6720e4b"
    strings:
       $s1 = "Cryption.dll" fullword ascii
       $s2 = "tran.exe" fullword ascii
@@ -342,7 +342,7 @@ rule MAL_BurningUmbrella_Sample_20 {
       hash1 = "5c12379cd7ab3cb03dac354d0e850769873d45bb486c266a893c0daa452aa03c"
       hash2 = "172cd90fd9e31ba70e47f0cc76c07d53e512da4cbfd197772c179fe604b75369"
       hash3 = "1ce88e98c8b37ea68466657485f2c01010a4d4a88587ba0ae814f37680a2e7a8"
-      uuid = "1a39a76a-31e2-5d6e-82cb-ea38d503b6a9"
+      id = "1a39a76a-31e2-5d6e-82cb-ea38d503b6a9"
    strings:
       $s1 = "Wordpad.Document.1\\shell\\open\\command\\" wide
       $s2 = "%s\\shell\\Open\\command" fullword wide
@@ -362,7 +362,7 @@ rule MAL_BurningUmbrella_Sample_21 {
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "4b7b9c2a9d5080ccc4e9934f2fd14b9d4e8f6f500889bf9750f1d672c8724438"
-      uuid = "2193e4b6-b71c-5031-8e43-fdd7177ad05c"
+      id = "2193e4b6-b71c-5031-8e43-fdd7177ad05c"
    strings:
       $s1 = "c:\\windows\\ime\\setup.exe" fullword ascii
       $s2 = "ws.run \"later.bat /start\",0Cet " fullword ascii
@@ -383,7 +383,7 @@ rule MAL_BurningUmbrella_Sample_22 {
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "fa116cf9410f1613003ca423ad6ca92657a61b8e9eda1b05caf4f30ca650aee5"
-      uuid = "90c6cda9-95a0-5de7-b1cd-110c238d993d"
+      id = "90c6cda9-95a0-5de7-b1cd-110c238d993d"
    strings:
       $s1 = "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\" ascii
       $s3 = "Content-Disposition: form-data; name=\"txt\"; filename=\"" fullword ascii
@@ -403,7 +403,7 @@ rule MAL_AirdViper_Sample_Apr18_1 {
       reference = "Internal Research"
       date = "2018-05-04"
       hash1 = "9f453f1d5088bd17c60e812289b4bb0a734b7ad2ba5a536f5fd6d6ac3b8f3397"
-      uuid = "00f118d1-be1c-5f50-a50f-591f824a1a53"
+      id = "00f118d1-be1c-5f50-a50f-591f824a1a53"
    strings:
       $x1 = "cmd.exe /C ping 1.1.1.1 -n 1 -w 3000 > Nul & Del \"%s\"" fullword ascii
       $x2 = "daenerys=%s&" ascii
@@ -431,7 +431,7 @@ rule MAL_Winnti_Sample_May18_1 {
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "528d9eaaac67716e6b37dd562770190318c8766fa1b2f33c0974f7d5f6725d41"
-      uuid = "c2f3339e-269f-5a51-8db6-06e54a707b3a"
+      id = "c2f3339e-269f-5a51-8db6-06e54a707b3a"
    strings:
       $s1 = "wireshark" fullword wide
       $s2 = "procexp" fullword wide
@@ -447,7 +447,7 @@ rule MAL_Visel_Sample_May18_1 {
       reference = "https://401trg.pw/burning-umbrella/"
       date = "2018-05-04"
       hash1 = "35db8e6a2eb5cf09cd98bf5d31f6356d0deaf4951b353fc513ce98918b91439c"
-      uuid = "a244461a-380c-56e6-a891-131f6e13c280"
+      id = "a244461a-380c-56e6-a891-131f6e13c280"
    strings:
       $s2 = "print32.dll" fullword ascii
       $s3 = "c:\\a\\b.txt" fullword ascii

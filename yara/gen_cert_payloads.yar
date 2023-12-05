@@ -5,7 +5,7 @@ rule SUSP_certificate_payload {
       author = "Didier Stevens, Florian Roth"
       reference = "https://blog.nviso.be/2018/08/02/powershell-inside-a-certificate-part-3/"
       score = 50
-      uuid = "6f1fe410-591a-5a59-a683-67cad9777dfe"
+      id = "6f1fe410-591a-5a59-a683-67cad9777dfe"
    strings:
       $re1 = "-----BEGIN CERTIFICATE-----"
 

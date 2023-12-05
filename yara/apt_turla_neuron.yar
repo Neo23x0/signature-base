@@ -13,7 +13,7 @@ rule Neuron_common_strings {
         hash = "d1d7a96fcadc137e80ad866c838502713db9cdfe59939342b8e3beacf9c7fe29"
         date = "2017/11/23"
         reference = "https://www.ncsc.gov.uk/alerts/turla-group-malware"
-        uuid = "168214d4-7436-531e-9c1f-48ca22215a1b"
+        id = "168214d4-7436-531e-9c1f-48ca22215a1b"
     strings:
         $strServiceName = "MSExchangeService" ascii
         $strReqParameter_1 = "cadataKey" wide
@@ -38,7 +38,7 @@ rule Neuron_standalone_signature {
         hash = "d1d7a96fcadc137e80ad866c838502713db9cdfe59939342b8e3beacf9c7fe29"
         date = "2017/11/23"
         reference = "https://www.ncsc.gov.uk/alerts/turla-group-malware"
-        uuid = "e0be2fe2-32fd-5bdf-bfac-a596264be7ba"
+        id = "e0be2fe2-32fd-5bdf-bfac-a596264be7ba"
     strings:
         $a = { eb073d151231011234080e12818d1d051281311d1281211d1281211d128121081d1281211d1281211d1281211d1281211d1281211d1281211d1281211d1281211d1281211d1281211d1281211d1281211d1281211d1281211d1281211d1281211d1281211d1281211d1281211d1281211d1281211d1281211d1281211d1281 }
         $dotnetMagic = "BSJB" ascii
@@ -53,7 +53,7 @@ rule Nautilus_modified_rc4_loop {
         hash = "a415ab193f6cd832a0de4fcc48d5f53d6f0b06d5e13b3c359878c6c31f3e7ec3"
         date = "2017/11/23"
         reference = "https://www.ncsc.gov.uk/alerts/turla-group-malware"
-        uuid = "0c5da057-0f1d-5852-ad75-94bf40c133e4"
+        id = "0c5da057-0f1d-5852-ad75-94bf40c133e4"
     strings:
         $a = {42 0F B6 14 04 41 FF C0 03 D7 0F B6 CA 8A 14 0C 43 32 14 13 41 88 12 49 FF C2 49 FF C9}
     condition:
@@ -67,7 +67,7 @@ rule Nautilus_rc4_key {
         hash = "a415ab193f6cd832a0de4fcc48d5f53d6f0b06d5e13b3c359878c6c31f3e7ec3"
         date = "2017/11/23"
         reference = "https://www.ncsc.gov.uk/alerts/turla-group-malware"
-        uuid = "124c8b95-46fb-5cc1-9b10-b10536e1781d"
+        id = "124c8b95-46fb-5cc1-9b10-b10536e1781d"
     strings:
         $key = {31 42 31 34 34 30 44 39 30 46 43 39 42 43 42 34 36 41 39 41 43 39 36 34 33 38 46 45 45 41 38 42}
     condition:
@@ -81,7 +81,7 @@ rule Nautilus_common_strings {
         hash = "a415ab193f6cd832a0de4fcc48d5f53d6f0b06d5e13b3c359878c6c31f3e7ec3"
         date = "2017/11/23"
         reference = "https://www.ncsc.gov.uk/alerts/turla-group-malware"
-        uuid = "0e3af6ef-1a97-5324-a186-95e6f3d836f4"
+        id = "0e3af6ef-1a97-5324-a186-95e6f3d836f4"
     strings:
         $ = "nautilus-service.dll" ascii
         $ = "oxygen.dll" ascii
@@ -102,7 +102,7 @@ rule Nautilus_forensic_artificats {
         date = "2017/11/23"
         score = 60
         reference = "https://www.ncsc.gov.uk/alerts/turla-group-malware"
-        uuid = "0c0a24da-4dbc-543a-9ec0-a5b1ec75c889"
+        id = "0c0a24da-4dbc-543a-9ec0-a5b1ec75c889"
     strings:
         $ = "App_Web_juvjerf3.dll" fullword ascii
         $ = "App_Web_vcplrg8q.dll" fullword ascii
@@ -130,7 +130,7 @@ rule APT_Neuron2_Loader_Strings {
       author = "NCSC"
       referer = "https://otx.alienvault.com/pulse/5dad718fa5ec6c21e85c1c66"
       hash = "51616b207fde2ff1360a1364ff58270e0d46cf87a4c0c21b374a834dd9676927"
-      uuid = "eaef4710-1971-55a2-9079-07a9b8bd86eb"
+      id = "eaef4710-1971-55a2-9079-07a9b8bd86eb"
    strings:
       $ = "dcom_api" ascii
       $ = "http://*:80/OWA/OAB/" ascii

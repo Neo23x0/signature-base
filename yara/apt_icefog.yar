@@ -16,7 +16,7 @@ rule IceFog_Malware_Feb18_1 {
       date = "2018-02-26"
       modified = "2023-01-06"
       hash1 = "480373cffc4e60aa5be2954a156e37d689b92e6e33969958230f2ce59d30b9ec"
-      uuid = "ce8e3a9b-9f4b-534c-983d-bb5490da5768"
+      id = "ce8e3a9b-9f4b-534c-983d-bb5490da5768"
    strings:
       $s1 = "cmd /c %c%s%c" fullword ascii
       $s2 = "temp.bat" fullword ascii

@@ -9,7 +9,7 @@ rule SUSP_NVIDIA_LAPSUS_Leak_Compromised_Cert_Mar22_1 {
       modified = "2022-03-04"
       score = 70
       reference = "https://twitter.com/cyb3rops/status/1499514240008437762"
-      uuid = "8bc7460f-a1c4-5157-8c2d-34d3a6c9c7e9"
+      id = "8bc7460f-a1c4-5157-8c2d-34d3a6c9c7e9"
    condition:
       uint16(0) == 0x5a4d and filesize < 100MB and
       pe.timestamp > 1646092800 and  // comment out to find all files signed with that certificate

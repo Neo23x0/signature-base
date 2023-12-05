@@ -6,7 +6,7 @@ rule gen_unicorn_obfuscated_powershell {
         hash = "b93d2fe6a671a6a967f31d5b3a0a16d4f93abcaf25188a2bbdc0894087adb10d"
         hash2 = "1afb9795cb489abce39f685a420147a2875303a07c32bf7eec398125300a460b"
         reference = "https://github.com/trustedsec/unicorn/"
-        uuid = "0235795b-6d0b-5bba-8ae6-606c3b613c86"
+        id = "0235795b-6d0b-5bba-8ae6-606c3b613c86"
     strings:
         $h1 = "powershell"
         $sa1 = ".value.toString() 'JAB"

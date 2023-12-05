@@ -11,7 +11,7 @@ rule MAL_QBot_HTML_Smuggling_Indicators_Oct22_1 {
       hash3 = "c5d23d991ce3fbcf73b177bc6136d26a501ded318ccf409ca16f7c664727755a"
       hash4 = "5072d91ee0d162c28452123a4d9986f3df6b3244e48bf87444ce88add29dd8ed"
       hash5 = "ff4e21f788c36aabe6ba870cf3b10e258c2ba6f28a2d359a25d5a684c92a0cad"
-      uuid = "8034d6af-4dae-5ff6-b635-efb5175fe4d1"
+      id = "8034d6af-4dae-5ff6-b635-efb5175fe4d1"
    strings:
       /* Double base64 encoded - as seen in HTML */
       $sd1 = "VUVzREJCUUFBUUFJQ"

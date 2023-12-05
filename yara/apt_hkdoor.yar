@@ -13,7 +13,7 @@ rule hkdoor_backdoor_dll {
       description = "Hacker's Door Backdoor DLL"
       author = "Cylance Inc."
       reference = "https://www.cylance.com/en_us/blog/threat-spotlight-opening-hackers-door.html"
-      uuid = "470e5d37-8a5a-500f-b9b9-245b8dc2c4d7"
+      id = "470e5d37-8a5a-500f-b9b9-245b8dc2c4d7"
    strings:
       $s1 = "The version of personal hacker's door server is" fullword ascii
       $s2 = "The connect back interval is %d (minutes)" fullword ascii
@@ -34,7 +34,7 @@ rule hkdoor_backdoor {
       description = "Hacker's Door Backdoor"
       author = "Cylance Inc."
       reference = "https://www.cylance.com/en_us/blog/threat-spotlight-opening-hackers-door.html"
-      uuid = "470e5d37-8a5a-500f-b9b9-245b8dc2c4d7"
+      id = "470e5d37-8a5a-500f-b9b9-245b8dc2c4d7"
    strings:
       $s1 = "http://www.yythac.com" fullword ascii
       $s2 = "Example:%s 192.168.1.100 139 -p yyt_hac -t 1" fullword ascii
@@ -57,7 +57,7 @@ rule hkdoor_dropper {
       date = "2018-01-01"
       modified = "2023-01-07"
       reference = "https://www.cylance.com/en_us/blog/threat-spotlight-opening-hackers-door.html"
-      uuid = "8c8171b9-6256-591a-8f74-abac1cb9a50b"
+      id = "8c8171b9-6256-591a-8f74-abac1cb9a50b"
    strings:
       $s1 = "The version of personal hacker's door server is" fullword ascii
       $s2 = "The connect back interval is %d (minutes)" fullword ascii
@@ -85,7 +85,7 @@ rule hkdoor_driver {
       date = "2018-01-01"
       modified = "2023-01-07"
       reference = "https://www.cylance.com/en_us/blog/threat-spotlight-opening-hackers-door.html"
-      uuid = "50b763a9-6d4f-59dd-ba6c-27e2ae117523"
+      id = "50b763a9-6d4f-59dd-ba6c-27e2ae117523"
    strings:
       $s1 = "ipfltdrv.sys" fullword ascii
       $s2 = "Patch Success." fullword ascii

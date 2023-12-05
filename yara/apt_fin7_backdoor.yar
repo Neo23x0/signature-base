@@ -18,7 +18,7 @@ rule FIN7_Dropper_Aug17 {
       date = "2017-08-04"
       hash1 = "c91642c0a5a8781fff9fd400bff85b6715c96d8e17e2d2390c1771c683c7ead9"
       hash2 = "cf86c7a92451dca1ebb76ebd3e469f3fa0d9b376487ee6d07ae57ab1b65a86f8"
-      uuid = "4929dff6-9f33-5d22-b560-c2195440a1cc"
+      id = "4929dff6-9f33-5d22-b560-c2195440a1cc"
    strings:
       $x1 = "tpircsj:e/ b// exe.tpircsw\" rt/" fullword ascii
 
@@ -37,7 +37,7 @@ rule FIN7_Backdoor_Aug17 {
       author = "Florian Roth (Nextron Systems)"
       reference = "https://www.proofpoint.com/us/threat-insight/post/fin7carbanak-threat-actor-unleashes-bateleur-jscript-backdoor"
       date = "2017-08-04"
-      uuid = "906daf88-520b-57b5-825e-29f060b43183"
+      id = "906daf88-520b-57b5-825e-29f060b43183"
    strings:
       $x1 = "wscript.exe //b /e:jscript C:\\Users\\" ascii
       $x2 = "wscript.exe /b /e:jscript C:\\Users\\" ascii

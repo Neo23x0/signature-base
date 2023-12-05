@@ -7,7 +7,7 @@ rule gen_python_reverse_shell
       date = "2018-02-24"
       hash1 = "9ec5102bcbabc45f2aa7775464f33019cfbe9d766b1332ee675957c923a17efd"
       hash2 = "bfb5c622a3352bb71b86df81c45ccefaa68b9f7cc0a3577e8013aad951308f12"
-      uuid = "dda831ae-d0ca-5d5a-bdb3-e7c146a770b4"
+      id = "dda831ae-d0ca-5d5a-bdb3-e7c146a770b4"
    strings:
       $h1 = "import base64" fullword ascii
 

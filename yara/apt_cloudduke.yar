@@ -22,7 +22,7 @@ rule CloudDuke_Malware {
 		hash5 = "ee5eb9d57c3611e91a27bb1fc2d0aaa6bbfa6c69ab16e65e7123c7c49d46f145"
 		hash6 = "a713982d04d2048a575912a5fc37c93091619becd5b21e96f049890435940004"
 		hash7 = "56ac764b81eb216ebed5a5ad38e703805ba3e1ca7d63501ba60a1fb52c7ebb6e"
-		uuid = "902ef68b-7ed1-5622-b796-4e3bb2388124"
+		id = "902ef68b-7ed1-5622-b796-4e3bb2388124"
 	strings:
 		$s1 = "ProcDataWrap" fullword ascii
 		$s2 = "imagehlp.dll" fullword ascii
@@ -50,7 +50,7 @@ rule SFXRAR_Acrotray {
 		hash1 = "51e713c7247f978f5836133dd0b8f9fb229e6594763adda59951556e1df5ee57"
 		hash2 = "5d695ff02202808805da942e484caa7c1dc68e6d9c3d77dc383cfa0617e61e48"
 		hash3 = "56531cc133e7a760b238aadc5b7a622cd11c835a3e6b78079d825d417fb02198"
-		uuid = "1566fb75-d3a8-5e22-b05b-3a2f37374f31"
+		id = "1566fb75-d3a8-5e22-b05b-3a2f37374f31"
 	strings:
 		$s1 = "winrarsfxmappingfile.tmp" fullword wide /* PEStudio Blacklist: strings */
 		$s2 = "GETPASSWORD1" fullword wide /* PEStudio Blacklist: strings */

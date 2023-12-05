@@ -16,7 +16,7 @@ rule MAL_ELF_VPNFilter_1 {
       reference = "Internal Research"
       date = "2018-05-24"
       hash1 = "f8286e29faa67ec765ae0244862f6b7914fcdde10423f96595cb84ad5cc6b344"
-      uuid = "dc50cb37-a6e7-5eb5-9581-31d7fd005e47"
+      id = "dc50cb37-a6e7-5eb5-9581-31d7fd005e47"
    strings:
       $s1 = "Login=" fullword ascii
       $s2 = "Password=" fullword ascii
@@ -38,7 +38,7 @@ rule MAL_ELF_VPNFilter_2 {
       reference = "Internal Research"
       date = "2018-05-24"
       hash1 = "50ac4fcd3fbc8abcaa766449841b3a0a684b3e217fc40935f1ac22c34c58a9ec"
-      uuid = "95356303-e8ba-585d-b2fc-af9e10b0b93f"
+      id = "95356303-e8ba-585d-b2fc-af9e10b0b93f"
    strings:
       $s1 = "User-Agent: Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 5.2; Trident/4.0)" fullword ascii
       $s2 = "passwordPASSWORDpassword" fullword ascii
@@ -61,7 +61,7 @@ rule MAL_ELF_VPNFilter_3 {
       hash5 = "4b03288e9e44d214426a02327223b5e516b1ea29ce72fa25a2fcef9aa65c4b0b"
       hash6 = "8a20dc9538d639623878a3d3d18d88da8b635ea52e5e2d0c2cce4a8c5a703db1"
       hash7 = "776cb9a7a9f5afbaffdd4dbd052c6420030b2c7c3058c1455e0a79df0e6f7a1d"
-      uuid = "020603bf-fbce-5de1-82b9-5a2dfacfada3"
+      id = "020603bf-fbce-5de1-82b9-5a2dfacfada3"
    strings:
       $sx1 = "User-Agent: Mozilla/6.1 (compatible; MSIE 9.0; Windows NT 5.3; Trident/5.0)" fullword ascii
       $sx2 = "Execute by shell[%d]:" fullword ascii
@@ -85,7 +85,7 @@ rule SUSP_ELF_Tor_Client {
       reference = "Internal Research"
       date = "2018-05-24"
       hash1 = "afd281639e26a717aead65b1886f98d6d6c258736016023b4e59de30b7348719"
-      uuid = "1be6528d-1b60-50da-8125-2ef73b8aeb4f"
+      id = "1be6528d-1b60-50da-8125-2ef73b8aeb4f"
    strings:
       $x1 = "We needed to load a secret key from %s, but it was encrypted. Try 'tor --keygen' instead, so you can enter the passphrase." fullword ascii
       $x2 = "Received a VERSION cell with odd payload length %d; closing connection." fullword ascii

@@ -6,7 +6,7 @@ rule VUL_JQuery_FileUpload_CVE_2018_9206 {
       reference2 = "https://github.com/blueimp/jQuery-File-Upload/commit/aeb47e51c67df8a504b7726595576c1c66b5dc2f"
       reference3 = "https://blogs.akamai.com/sitr/2018/10/having-the-security-rug-pulled-out-from-under-you.html"
       date = "2018-10-19"
-      uuid = "20bac44c-0e5a-5561-9fd8-a71cd2d8590a"
+      id = "20bac44c-0e5a-5561-9fd8-a71cd2d8590a"
    strings:
       $s1 = "error_reporting(E_ALL | E_STRICT);" fullword ascii
       $s2 = "require('UploadHandler.php');" fullword ascii

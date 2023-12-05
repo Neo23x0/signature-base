@@ -6,7 +6,7 @@ rule EXPL_Zoho_RCE_Fix_Lines_Dec21_1 {
       reference = "https://twitter.com/cyb3rops/status/1467784104930385923"
       date = "2021-12-06"
       score = 65
-      uuid = "633287e3-a377-5b3c-8520-a7790168eff5"
+      id = "633287e3-a377-5b3c-8520-a7790168eff5"
    strings:
       // we look for the RCE Fixes
       $s1 = "RCEF="

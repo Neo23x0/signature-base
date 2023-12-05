@@ -19,7 +19,7 @@ rule UBoatRAT {
       hash4 = "6bea49e4260f083ed6b73e100550ecd22300806071f4a6326e0544272a84526c"
       hash5 = "cf832f32b8d27cf9911031910621c21bd3c20e71cc062716923304dacf4dadb7"
       hash6 = "bf7c6e911f14a1f8679c9b0c2b183d74d5accd559e17297adcd173d76755e271"
-      uuid = "f7f745c2-648d-5937-8d06-f5d1b6ed7e11"
+      id = "f7f745c2-648d-5937-8d06-f5d1b6ed7e11"
    strings:
       $s1 = "URLDownloadToFileA" ascii
       $s2 = "GetModuleFileNameW" ascii
@@ -57,7 +57,7 @@ rule UBoatRAT_Dropper {
       reference = "https://researchcenter.paloaltonetworks.com/2017/11/unit42-uboatrat-navigates-east-asia/"
       date = "2017-11-29"
       hash1 = "f4c659238ffab95e87894d2c556f887774dce2431e8cb87f881df4e4d26253a3"
-      uuid = "f3d4e333-1282-5f6e-9294-628a8230d2a5"
+      id = "f3d4e333-1282-5f6e-9294-628a8230d2a5"
    strings:
       $s1 = "GetCurrenvackageId" fullword ascii
       $s2 = "fghijklmnopq" fullword ascii

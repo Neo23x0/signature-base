@@ -8,7 +8,7 @@ rule EXPL_Exchange_ProxyNotShell_Patterns_CVE_2022_41040_Oct22_1 : SCRIPT {
       reference = "https://github.com/kljunowsky/CVE-2022-41040-POC"
       date = "2022-10-11"
       modified = "2023-03-15"
-      uuid = "d2812fcd-0a20-5bbd-a9e1-9cca1ed58aa3"
+      id = "d2812fcd-0a20-5bbd-a9e1-9cca1ed58aa3"
    strings:
       $sr1 = / \/autodiscover\/autodiscover\.json[^\n]{1,300}owershell/ nocase ascii
 

@@ -6,7 +6,7 @@ rule APT_CryWiper_Dec22 {
       reference = "https://securelist-ru.translate.goog/novyj-troyanec-crywiper/106114/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en"
       date = "2022-12-05"
       score = 75
-      uuid = "d56ccf4e-30ba-5308-ad68-ffc2ae5a1718"
+      id = "d56ccf4e-30ba-5308-ad68-ffc2ae5a1718"
    strings:
       $x1 = "Software\\Sysinternals\\BrowserUpdate"
 

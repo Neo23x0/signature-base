@@ -8,7 +8,7 @@ rule skeleton_key_patcher
 		reference = "http://goo.gl/aAk3lN"
 		date = "2015/01/13"
 		score = 70
-		uuid = "a2805cce-7605-58a4-85ce-9dff5586858e"
+		id = "a2805cce-7605-58a4-85ce-9dff5586858e"
 	strings:
 		$target_process = "lsass.exe" wide
 		$dll1 = "cryptdll.dll"
@@ -31,7 +31,7 @@ rule skeleton_key_injected_code
 		reference = "http://goo.gl/aAk3lN"
 		date = "2015/01/13"
 		score = 70
-		uuid = "29daaffa-cd9d-55d3-b79d-cde1c76e9e45"
+		id = "29daaffa-cd9d-55d3-b79d-cde1c76e9e45"
 	strings:
 		$injected = { 33 C0 85 C9 0F 95 C0 48 8B 8C 24 40 01 00 00 48 33 CC E8 4D 02 00 00 48 81 C4 58 01 00 00 C3 }
 

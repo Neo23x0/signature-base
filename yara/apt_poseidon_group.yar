@@ -21,7 +21,7 @@ rule PoseidonGroup_Malware {
 		hash5 = "d090b1d77e91848b1e2f5690b54360bbbd7ef808d017304389b90a0f8423367f"
 		hash6 = "d7c8b47a0d0a9181fb993f17e165d75a6be8cf11812d3baf7cf11d085e21d4fb"
 		hash7 = "ded0ee29af97496f27d810f6c16d78a3031d8c2193d5d2a87355f3e3ca58f9b3"
-		uuid = "fe8b227a-d93d-5540-ba73-3f20358205f6"
+		id = "fe8b227a-d93d-5540-ba73-3f20358205f6"
 	strings:
 		$s1 = "c:\\winnt\\system32\\cmd.exe" fullword ascii
 		$s2 = "c:\\windows\\system32\\cmd.exe" fullword ascii
@@ -56,7 +56,7 @@ rule PoseidonGroup_MalDoc_1 {
 		date = "2016-02-09"
 		score = 80
 		hash = "0983526d7f0640e5765ded6be6c9e64869172a02c20023f8a006396ff358999b"
-		uuid = "ab26455a-d468-5a75-a6e2-61701ca3a1df"
+		id = "ab26455a-d468-5a75-a6e2-61701ca3a1df"
 	strings:
 		$s1 = "c:\\cmd32dll.exe" fullword ascii
 	condition:
@@ -77,7 +77,7 @@ rule PoseidonGroup_MalDoc_2 {
 		hash4 = "ec309300c950936a1b9f900aa30630b33723c42240ca4db978f2ca5e0f97afed"
 		hash5 = "27449198542fed64c23f583617908c8648fa4b4633bacd224f97e7f5d8b18778"
 		hash6 = "1e62629dae05bf7ee3fe1346faa60e6791c61f92dd921daa5ce2bdce2e9d4216"
-		uuid = "9fc0f25e-809d-5803-be39-740ce3a3c85a"
+		id = "9fc0f25e-809d-5803-be39-740ce3a3c85a"
 	strings:
 		$s0 = "{\\*\\generator Msftedit 5.41." ascii
 		$s1 = "Attachment 1: Complete Professional Background" ascii

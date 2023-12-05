@@ -16,7 +16,7 @@ rule gen_python_pyminifier_encoded_payload
 
         hash = "b454179c13cb4727ae06cc9cd126c3379e2aded5c293af0234ac3312bf9bdad2"
 
-        uuid = "d7297e6a-e1c7-57dd-a57f-a3b67face2f3"
+        id = "d7297e6a-e1c7-57dd-a57f-a3b67face2f3"
     strings:
         $s1 = "exec(zlib.decompress(base64.b64decode('eJ"
         $s2 = "base64" fullword
