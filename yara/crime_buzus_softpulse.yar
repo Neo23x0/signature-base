@@ -7,7 +7,7 @@ rule Win32_Buzus_Softpulse {
 		date = "2015-05-13"
 		hash = "2f6df200e63a86768471399a74180466d2e99ea9"
 		score = 75
-		uuid = "3b555916-030a-5773-b2f1-e995fc81b697"
+		id = "3b555916-030a-5773-b2f1-e995fc81b697"
 	strings:
 		$x1 = "pi4izd6vp0.com" fullword ascii
 

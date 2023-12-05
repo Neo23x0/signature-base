@@ -16,7 +16,7 @@ rule WildNeutron_Sample_1 {
 		date = "2015-07-10"
 		score = 60
 		hash = "2b5065a3d0e0b8252a987ef5f29d9e1935c5863f5718b83440e68dc53c21fa94"
-		uuid = "7bcb407f-7f01-540a-852c-a37456270888"
+		id = "7bcb407f-7f01-540a-852c-a37456270888"
 	strings:
 		$s0 = "LiveUpdater.exe" fullword wide /* PEStudio Blacklist: strings */ /* score: '25.00' */
 		$s1 = "id-at-postalAddress" fullword ascii /* PEStudio Blacklist: strings */ /* score: '18.00' */
@@ -42,7 +42,7 @@ rule WildNeutron_Sample_2 {
 		date = "2015-07-10"
 		score = 60
 		hash = "8d80f9ef55324212759f4b6070cb8fce18a008ae9dd8b9598553206654d13a6f"
-		uuid = "1893c251-f81a-5361-91fa-f91a6d1379d2"
+		id = "1893c251-f81a-5361-91fa-f91a6d1379d2"
 	strings:
 		$s0 = "rundll32.exe \"%s\",#1" fullword wide /* PEStudio Blacklist: strings */ /* score: '33.00' */
 		$s1 = "IgfxUpt.exe" fullword wide /* score: '20.00' */
@@ -65,7 +65,7 @@ rule WildNeutron_Sample_3 {
 		date = "2015-07-10"
 		score = 60
 		hash = "c2c761cde3175f6e40ed934f2e82c76602c81e2128187bab61793ddb3bc686d0"
-		uuid = "1c5d1442-b2be-5a34-b5c9-78aaf67072c4"
+		id = "1c5d1442-b2be-5a34-b5c9-78aaf67072c4"
 	strings:
 		$x1 = "178.162.197.9" fullword ascii /* score: '9.00' */
 		$x2 = "\"http://fw.ddosprotected.eu:80 /opts resolv=drfx.chickenkiller.com\"" fullword wide /* PEStudio Blacklist: strings */ /* score: '33.00' */
@@ -91,7 +91,7 @@ rule WildNeutron_Sample_4 {
 		date = "2015-07-10"
 		score = 60
 		hash = "b4005530193bc523d3e0193c3c53e2737ae3bf9f76d12c827c0b5cd0dcbaae45"
-		uuid = "52ff5770-1ca4-54d9-b69d-8af0c392084e"
+		id = "52ff5770-1ca4-54d9-b69d-8af0c392084e"
 	strings:
 		$x1 = "WinRAT-Win32-Release.exe" fullword ascii /* score: '22.00' */
 
@@ -116,7 +116,7 @@ rule WildNeutron_Sample_5 {
 		date = "2015-07-10"
 		score = 60
 		hash = "1604e36ccef5fa221b101d7f043ad7f856b84bf1a80774aa33d91c2a9a226206"
-		uuid = "0df63255-155d-56b9-b86b-491855983095"
+		id = "0df63255-155d-56b9-b86b-491855983095"
 	strings:
 		$s0 = "LiveUpdater.exe" fullword wide /* PEStudio Blacklist: strings */ /* score: '25.00' */
 		$s1 = "id-at-postalAddress" fullword ascii /* PEStudio Blacklist: strings */ /* score: '18.00' */
@@ -141,7 +141,7 @@ rule WildNeutron_Sample_6 {
 		date = "2015-07-10"
 		score = 60
 		hash = "4bd548fe07b19178281edb1ee81c9711525dab03dc0b6676963019c44cc75865"
-		uuid = "c5d87cad-d1ca-5766-90c1-fc8ecfa3f14f"
+		id = "c5d87cad-d1ca-5766-90c1-fc8ecfa3f14f"
 	strings:
 		$s0 = "mshtaex.exe" fullword wide /* score: '20.00' */
 	condition:
@@ -157,7 +157,7 @@ rule WildNeutron_Sample_7 {
 		date = "2015-07-10"
 		score = 60
 		hash = "a14d31eb965ea8a37ebcc3b5635099f2ca08365646437c770212d534d504ff3c"
-		uuid = "22561c55-4294-50c9-a9b9-7b4ed98eec09"
+		id = "22561c55-4294-50c9-a9b9-7b4ed98eec09"
 	strings:
 		$s0 = "checking match for '%s' user %s host %s addr %s" fullword ascii /* PEStudio Blacklist: strings */ /* score: '24.00' */
 		$s1 = "PEM_read_bio_PrivateKey failed" fullword ascii /* PEStudio Blacklist: strings */ /* score: '23.00' */
@@ -209,7 +209,7 @@ rule WildNeutron_Sample_9 {
       modified = "2023-01-06"
       score = 60
       hash = "781eb1e17349009fbae46aea5c59d8e5b68ae0b42335cb035742f6b0f4e4087e"
-      uuid = "dbfdbe8c-4a4a-5512-a03d-e9f80c853d48"
+      id = "dbfdbe8c-4a4a-5512-a03d-e9f80c853d48"
    strings:
       $s0 = "http://get.adobe.com/flashplayer/" wide  /* score: '30.00' */
       $s4 = " Player Installer/Uninstaller" fullword wide  /* score: '11.42' */
@@ -231,7 +231,7 @@ rule WildNeutron_Sample_10 {
 		date = "2015-07-10"
 		score = 60
 		hash = "1d3bdabb350ba5a821849893dabe5d6056bf7ba1ed6042d93174ceeaa5d6dad7"
-		uuid = "5654a36f-8502-5e18-b8f3-94d4add466a7"
+		id = "5654a36f-8502-5e18-b8f3-94d4add466a7"
 	strings:
 		$n1 = "/c for /L %%i in (1,1,2) DO ping 127.0.0.1 -n 3 & type %%windir%%\\notepad.exe > %s & del /f %s" fullword ascii /* PEStudio Blacklist: strings */ /* score: '46.00' */
 
@@ -281,7 +281,7 @@ rule APT_MAL_WildNeutron_javacpl {
       hash1 = "683f5b476f8ffe87ec22b8bab57f74da4a13ecc3a5c2cbf951999953c2064fc9"
       hash2 = "758e6b519f6c0931ff93542b767524fc1eab589feb5cfc3854c77842f9785c92"
       hash3 = "8ca7ed720babb32a6f381769ea00e16082a563704f8b672cb21cf11843f4da7a"
-      uuid = "de82827e-61d4-559e-886a-78d5293ab141"
+      id = "de82827e-61d4-559e-886a-78d5293ab141"
    strings:
       $s1 = "RunFile: couldn't find ShellExecuteExA/W in SHELL32.DLL!" ascii fullword
       $s2 = "cmdcmdline" wide fullword

@@ -23,7 +23,7 @@ rule KeyBoys_malware_1 {
       hash4 = "750f4a9ae44438bf053ffb344b959000ea624d1964306e4b3806250f4de94bc8"
       hash5 = "fc84856814307a475300d2a44e8d15635dedd02dc09a088a47d1db03bc309925"
       hash6 = "0f9a7efcd3a2b1441834dae7b43cd8d48b4fc1daeb2c081f908ac5a1369de753"
-      uuid = "4e334f62-6ffc-55c3-bcbe-ff4a80fb007d"
+      id = "4e334f62-6ffc-55c3-bcbe-ff4a80fb007d"
    strings:
       $x1 = "reg add HKLM\\%s\\Parameters /v ServiceDll /t REG_EXPAND_SZ /d \"%s\" /f" fullword ascii
       $x3 = "Internet using \\svchost.exe -k  -n 3" fullword ascii
@@ -58,7 +58,7 @@ rule KeyBoy_InstallClient {
       hash1 = "85d32cb3ae046a38254b953a00b37bb87047ec435edb0ce359a867447ee30f8b"
       hash2 = "b0f120b11f727f197353bc2c98d606ed08a06f14a1c012d3db6fe0a812df528a"
       hash1 = "d65f809f7684b28a6fa2d9397582f350318027999be3acf1241ff44d4df36a3a"
-      uuid = "d1359f35-d6cd-502b-8cf7-6215bf5e62ba"
+      id = "d1359f35-d6cd-502b-8cf7-6215bf5e62ba"
    strings:
       $x1 = "egsvr32.exe \"/u bitsadmin /canceft\\windows\\currebitsadmin" ascii
       $x2 = "/addfibitsadmin /Resumbitsadmin /SetNosoftware\\microsotifyCmdLine " ascii
@@ -80,7 +80,7 @@ rule KeyBoy_wab32res {
       date = "2018-03-26"
       hash1 = "02281e26e89b61d84e2df66a0eeb729c5babd94607b1422505cd388843dd5456"
       hash2 = "fb9c9cbf6925de8c7b6ce8e7a8d5290e628be0b82a58f3e968426c0f734f38f6"
-      uuid = "0e4045a7-1c45-5043-9e10-e969219b67f8"
+      id = "0e4045a7-1c45-5043-9e10-e969219b67f8"
    strings:
       $x1 = "B4490-2314-55C1- /Processid:{321bitsadmin /canceft\\windows\\curresoftware\\microso" fullword ascii
       $x2 = "D:\\Work\\VS\\House\\TSSL\\TSSL\\TClient" ascii
@@ -102,7 +102,7 @@ rule KeyBoy_rasauto {
       reference = "https://blog.trendmicro.com/trendlabs-security-intelligence/tropic-trooper-new-strategy/"
       date = "2018-03-26"
       hash1 = "49df4fec76a0ffaee5e4d933a734126c1a7b32d1c9cb5ab22a868e8bfc653245"
-      uuid = "b6c72a91-fda1-5f40-804f-896b25a8813f"
+      id = "b6c72a91-fda1-5f40-804f-896b25a8813f"
    strings:
       $x1 = "rundll32.exe %s SSSS & exit" fullword ascii
       $x2 = "D:\\Work\\Project\\VS\\HSSL\\HSSL_Unicode _2\\Release\\ServiceClient.pdb" fullword ascii
@@ -132,7 +132,7 @@ rule KeyBoy_876_0x4e20000 {
       reference = "https://blog.trendmicro.com/trendlabs-security-intelligence/tropic-trooper-new-strategy/"
       date = "2018-03-26"
       hash1 = "6e900e5b6dc4f21a004c5b5908c81f055db0d7026b3c5e105708586f85d3e334"
-      uuid = "0b871f62-0f7c-5c94-9b3d-f68832ab64b4"
+      id = "0b871f62-0f7c-5c94-9b3d-f68832ab64b4"
    strings:
       $x1 = "%s\\rundll32.exe %s ServiceTake %s %s" fullword ascii
       $x2 = "#%sCmd shell is not running,or your cmd is error!" fullword ascii

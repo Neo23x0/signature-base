@@ -6,7 +6,7 @@ rule SUSP_WER_Critical_HeapCorruption {
       reference = "https://twitter.com/cyb3rops/status/1185459425710092288"
       date = "2019-10-18"
       score = 45
-      uuid = "2b1dad5f-cc2c-5d8c-8275-ebb56d079895"
+      id = "2b1dad5f-cc2c-5d8c-8275-ebb56d079895"
    strings:
       $a1 = "ReportIdentifier=" wide
       $a2 = ".Name=Fault Module Name" wide
@@ -24,7 +24,7 @@ rule SUSP_WER_Suspicious_Crash_Directory {
       reference = "https://twitter.com/cyb3rops/status/1185585050059976705"
       date = "2019-10-18"
       score = 45
-      uuid = "bf91e20c-aa35-5b13-86ed-a63e6fb4d1a2"
+      id = "bf91e20c-aa35-5b13-86ed-a63e6fb4d1a2"
    strings:
       $a1 = "ReportIdentifier=" wide
       $a2 = ".Name=Fault Module Name" wide

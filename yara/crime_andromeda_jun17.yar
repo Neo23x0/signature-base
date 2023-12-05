@@ -21,7 +21,7 @@ rule Andromeda_MalBot_Jun_1A {
       hash2 = "73cecc67bb12cf5a837af9fba15b7792a6f1a746b246b34f8ed251c4372f1a98"
       hash3 = "66035cc81e811735beab573013950153749b02703eae58b90430646f6e3e3eb4"
       hash4 = "42a02e6cf7c424c12f078fca21805de072842ec52a25ea87bd7d53e7feb536ed"
-      uuid = "42ee6ba3-85ea-5369-bd9b-8ffdec6e17bc"
+      id = "42ee6ba3-85ea-5369-bd9b-8ffdec6e17bc"
    strings:
       $x1 = "%temp%\\FolderN\\name.exe" fullword wide
       $x2 = "%temp%\\FolderN\\name.exe.lnk" fullword wide

@@ -8,7 +8,7 @@ rule APT_CN_TwistedPanda_loader {
       hash1 = "5b558c5fcbed8544cb100bd3db3c04a70dca02eec6fedffd5e3dcecb0b04fba0"
       hash2 = "efa754450f199caae204ca387976e197d95cdc7e83641444c1a5a91b58ba6198"
       
-      uuid = "a10f6019-f069-579c-b112-18537a7d8fd8"
+      id = "a10f6019-f069-579c-b112-18537a7d8fd8"
    strings:
       
       // 6A 40                                   push    40h ; '@'
@@ -52,7 +52,7 @@ rule APT_CN_TwistedPanda_SPINNER_1 {
       score = 80
       hash1 = "a9fb7bb40de8508606a318866e0e5ff79b98f314e782f26c7044622939dfde81"
       
-      uuid = "0b44013d-0caa-5ea2-ab08-e2a6a5732c03"
+      id = "0b44013d-0caa-5ea2-ab08-e2a6a5732c03"
    strings:
       // C7 ?? ?? ?? 00 00 00                                mov     dword ptr [eax+??], ??
       // C7 ?? ?? ?? 00 00 00                                mov     dword ptr [eax+??], ??
@@ -88,7 +88,7 @@ rule APT_CN_TwistedPanda_SPINNER_2 {
       score = 80
       hash1 = "28ecd1127bac08759d018787484b1bd16213809a2cc414514dc1ea87eb4c5ab8"
       
-      uuid = "bbbf3af1-127f-5d32-967f-bdb94311d1d6"
+      id = "bbbf3af1-127f-5d32-967f-bdb94311d1d6"
    strings:
       // C7 ?? ?? ?? 00 00 00                                mov     dword ptr [eax+??], ??
       // C7 ?? ?? ?? 00 00 00                                mov     dword ptr [eax+??], ??
@@ -126,7 +126,7 @@ rule APT_CN_TwistedPanda_64bit_Loader {
       score = 80
       hash1 = "e0d4ef7190ff50e6ad2a2403c87cc37254498e8cc5a3b2b8798983b1b3cdc94f"
       
-      uuid = "2172dd33-204b-5a05-ad26-534a0c1d7a17"
+      id = "2172dd33-204b-5a05-ad26-534a0c1d7a17"
    strings:
       // 48 8D ?? ?? ?? ?? ?? ?? ??              lea     rdx, ds:2[rdx*2]
       // 48 8B C1                                mov     rax, rcx
@@ -165,7 +165,7 @@ rule APT_CN_TwistedPanda_droppers {
       hash2 = "8b04479fdf22892cdfebd6e6fbed180701e036806ed0ddbe79f0b29f73449248"
       hash3 = "f29a0cda6e56fc0e26efa3b6628c6bcaa0819a3275a10e9da2a8517778152d66"
       
-      uuid = "f61c8b97-5870-5837-942f-f1650870960a"
+      id = "f61c8b97-5870-5837-942f-f1650870960a"
    strings:
      // 81 FA ?? ?? ?? ??                                   cmp     edx, 4BED1896h
      // 75 ??                                               jnz     short loc_140001829

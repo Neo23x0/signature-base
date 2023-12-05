@@ -5,7 +5,7 @@ rule APT_Sandworm_Keywords_May20_1 {
       author = "Florian Roth (Nextron Systems)"
       reference = "https://media.defense.gov/2020/May/28/2002306626/-1/-1/0/CSA%20Sandworm%20Actors%20Exploiting%20Vulnerability%20in%20Exim%20Transfer%20Agent%2020200528.pdf"
       date = "2020-05-28"
-      uuid = "e0d4e90e-5547-5487-8d0c-a141d88fff7c"
+      id = "e0d4e90e-5547-5487-8d0c-a141d88fff7c"
    strings:
       $x1 = "MAIL FROM:<$(run("
       $x2 = "exec\\x20\\x2Fusr\\x2Fbin\\x2Fwget\\x20\\x2DO\\x20\\x2D\\x20http"
@@ -22,7 +22,7 @@ rule APT_Sandworm_SSH_Key_May20_1 {
       date = "2020-05-28"
       hash1 = "dc074464e50502459038ac127b50b8c68ed52817a61c2f97f0add33447c8f730"
       hash2 = "538d713cb47a6b5ec6a3416404e0fc1ebcbc219a127315529f519f936420c80e"
-      uuid = "ea2968b8-7ae4-56b8-9547-816c5e37c50a"
+      id = "ea2968b8-7ae4-56b8-9547-816c5e37c50a"
    strings:
       $x1 = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC2q/NGN/brzNfJiIp2zswtL33tr74pIAjMeWtXN1p5Hqp5fTp058U1EN4NmgmjX0KzNjjV"
    condition:
@@ -38,7 +38,7 @@ rule APT_Sandworm_SSHD_Config_Modification_May20_1 {
       date = "2020-05-28"
       hash1 = "dc074464e50502459038ac127b50b8c68ed52817a61c2f97f0add33447c8f730"
       hash2 = "538d713cb47a6b5ec6a3416404e0fc1ebcbc219a127315529f519f936420c80e"
-      uuid = "dd60eeb7-3d4b-5a6a-8054-50c617ee8c73"
+      id = "dd60eeb7-3d4b-5a6a-8054-50c617ee8c73"
    strings:     
       $x1 = "AllowUsers mysql_db" ascii
 
@@ -56,7 +56,7 @@ rule APT_Sandworm_InitFile_May20_1 {
       date = "2020-05-28"
       hash1 = "dc074464e50502459038ac127b50b8c68ed52817a61c2f97f0add33447c8f730"
       hash2 = "538d713cb47a6b5ec6a3416404e0fc1ebcbc219a127315529f519f936420c80e"
-      uuid = "0bd613e3-6bd4-5cec-bc0d-2bdb83caf142"
+      id = "0bd613e3-6bd4-5cec-bc0d-2bdb83caf142"
    strings:     
       $s1 = "GRANT ALL PRIVILEGES ON * . * TO 'mysqldb'@'localhost';" ascii
       $s2 = "CREATE USER 'mysqldb'@'localhost' IDENTIFIED BY '" ascii fullword
@@ -73,7 +73,7 @@ rule APT_Sandworm_User_May20_1 {
       date = "2020-05-28"
       hash1 = "dc074464e50502459038ac127b50b8c68ed52817a61c2f97f0add33447c8f730"
       hash2 = "538d713cb47a6b5ec6a3416404e0fc1ebcbc219a127315529f519f936420c80e"
-      uuid = "ada549a4-abcc-5c0a-9601-75631e78c835"
+      id = "ada549a4-abcc-5c0a-9601-75631e78c835"
    strings:     
       $s1 = "mysql_db:x:" ascii /* malicious user */
 
@@ -91,7 +91,7 @@ rule APT_WEBSHELL_PHP_Sandworm_May20_1 {
       date = "2020-05-28"
       hash1 = "dc074464e50502459038ac127b50b8c68ed52817a61c2f97f0add33447c8f730"
       hash2 = "538d713cb47a6b5ec6a3416404e0fc1ebcbc219a127315529f519f936420c80e"
-      uuid = "b9ec02c2-fa83-5f21-95cf-3528047b2d01"
+      id = "b9ec02c2-fa83-5f21-95cf-3528047b2d01"
    strings:     
       $h1 = "GIF89a <?php $" ascii
       $s1 = "str_replace(" ascii
@@ -108,7 +108,7 @@ rule APT_SH_Sandworm_Shell_Script_May20_1 {
       date = "2020-05-28"
       hash1 = "dc074464e50502459038ac127b50b8c68ed52817a61c2f97f0add33447c8f730"
       hash2 = "538d713cb47a6b5ec6a3416404e0fc1ebcbc219a127315529f519f936420c80e"
-      uuid = "21cf2c89-5511-5eb6-a2dd-4ad54ebfa2d1"
+      id = "21cf2c89-5511-5eb6-a2dd-4ad54ebfa2d1"
    strings:     
       $x1 = "echo \"GRANT ALL PRIVILEGES ON * . * TO 'mysqldb'@'localhost';\" >> init-file.txt" ascii fullword
       $x2 = "import base64,sys;exec(base64.b64decode({2:str,3:lambda b:bytes(b,'UTF-8')}[sys.version" ascii fullword
@@ -135,7 +135,7 @@ rule APT_RU_Sandworm_PY_May20_1 {
       reference = "https://twitter.com/billyleonard/status/1266054881225236482"
       date = "2020-05-28"
       hash1 = "c025008463fdbf44b2f845f2d82702805d931771aea4b506573b83c8f58bccca"
-      uuid = "a392d800-1fe8-5ae9-b813-e1dfcedecda6"
+      id = "a392d800-1fe8-5ae9-b813-e1dfcedecda6"
    strings:
       $x1 = "o.addheaders=[('User-Agent','Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko')]" ascii fullword
       
@@ -154,7 +154,7 @@ rule APT_RU_Sandworm_PY_May20_2 {
       reference = "https://twitter.com/billyleonard/status/1266054881225236482"
       date = "2020-05-28"
       hash1 = "abfa83cf54db8fa548942acd845b4f34acc94c46d4e1fb5ce7e97cc0c6596676"
-      uuid = "5b32ad64-d959-5632-a03c-17aa055b213f"
+      id = "5b32ad64-d959-5632-a03c-17aa055b213f"
    strings:
       $x1 = "import sys;import re, subprocess;cmd" ascii fullword
       $x2 = "UA='Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko';server='http"

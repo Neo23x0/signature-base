@@ -7,7 +7,7 @@ rule SUSP_XORed_Mozilla {
       date = "2019-10-28"
       modified = "2023-11-25"
       score = 65
-      uuid = "af7fc551-0d4e-589e-9152-95d9c4ab03bf"
+      id = "af7fc551-0d4e-589e-9152-95d9c4ab03bf"
    strings:
       $xo1 = "Mozilla/5.0" xor(0x01-0xff) ascii wide
 
@@ -27,7 +27,7 @@ rule SUSP_XORed_MSDOS_Stub_Message {
       date = "2019-10-28"
       modified = "2023-10-11"
       score = 55
-      uuid = "9ab52434-9162-5fd5-bf34-8b163f6aeec4"
+      id = "9ab52434-9162-5fd5-bf34-8b163f6aeec4"
    strings:
       $xo1 = "This program cannot be run in DOS mode" xor(0x01-0xff) ascii wide
       $xo2 = "This program must be run under Win32" xor(0x01-0xff) ascii wide

@@ -7,7 +7,7 @@ rule MAL_DevilsTongue_HijackDll {
       date = "2021-07-15"
       reference = "https://www.microsoft.com/security/blog/2021/07/15/protecting-customers-from-a-private-sector-offensive-actor-using-0-day-exploits-and-devilstongue-malware/"
       score = 80
-      uuid = "390b8b73-6740-513d-8c70-c9002be0ce69"
+      id = "390b8b73-6740-513d-8c70-c9002be0ce69"
    strings:
       $str1 = "windows.old\\windows" wide
       $str2 = "NtQueryInformationThread"

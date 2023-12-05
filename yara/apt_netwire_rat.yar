@@ -17,7 +17,7 @@ rule Susp_Indicators_EXE {
       date = "2018-01-05"
       score = 60
       hash1 = "6de7f0276afa633044c375c5c630740af51e29b6a6f17a64fbdd227c641727a4"
-      uuid = "b4015c24-d18e-51eb-9854-8cc0e6dba4d0"
+      id = "b4015c24-d18e-51eb-9854-8cc0e6dba4d0"
    strings:
       $s1 = "Software\\Microsoft\\Windows\\CurrentVersion"
       $s2 = "Error! Bad token or internal error" fullword ascii
@@ -37,7 +37,7 @@ rule Suspicious_BAT_Strings {
       score = 60
       reference = "https://pastebin.com/8qaiyPxs"
       date = "2018-01-05"
-      uuid = "5fe28555-96c8-54da-b047-7d0a7532a6d2"
+      id = "5fe28555-96c8-54da-b047-7d0a7532a6d2"
    strings:
       $s1 = "ping 192.0.2.2 -n 1" ascii
    condition:
@@ -52,7 +52,7 @@ rule Malicious_BAT_Strings {
       score = 60
       reference = "https://pastebin.com/8qaiyPxs"
       date = "2018-01-05"
-      uuid = "6e197d05-62eb-535d-8cd6-db8550e51588"
+      id = "6e197d05-62eb-535d-8cd6-db8550e51588"
    strings:
       $s1 = "call :deleteSelf&exit /b"
    condition:

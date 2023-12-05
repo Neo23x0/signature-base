@@ -7,7 +7,7 @@ rule SUSP_BAT_Aux_Jan20_1 {
       date = "2020-01-29"
       score = 65
       hash1 = "f5d558ec505b635b1e37557350562ad6f79b3da5cf2cf74db6e6e648b7a47127"
-      uuid = "c97f189e-a0c2-532e-b087-8669da72a2ad"
+      id = "c97f189e-a0c2-532e-b087-8669da72a2ad"
    strings:
       $s1 = "if exist \"C:\\Users\\" ascii
       $s2 = "\\AppData\\Local\\Temp\\" ascii

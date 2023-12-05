@@ -8,7 +8,7 @@ rule APT_SideWinder_NET_Loader_Aug_2020_1 {
       reference = "https://twitter.com/ShadowChasing1/status/1297902086747598852"
       date = "2020-08-24"
       hash1 = "4a0947dd9148b3d5922651a6221afc510afcb0dfa69d08ee69429c4c75d4c8b4"
-      uuid = "61d96e2a-3a43-586f-85bc-a2c53b1318e6"
+      id = "61d96e2a-3a43-586f-85bc-a2c53b1318e6"
    strings:
       $a1 = "DUSER.dll" fullword wide
       
@@ -27,7 +27,7 @@ rule APT_MAL_SideWinder_implant {
       description = "Detects SideWinder final payload"
       hash1 = "c568238dcf1e30d55a398579a4704ddb8196b685"
       reference = "https://cybersecurity.att.com/blogs/labs-research/a-global-perspective-of-the-sidewinder-apt"
-      uuid = "3a420c9c-7821-5405-8d4d-6931d0f311ba"
+      id = "3a420c9c-7821-5405-8d4d-6931d0f311ba"
    strings:
       $code= { 1B 30 05 00 C7 00 00 00 00 00 00 00 02 28 03 00
                00 06 7D 12 00 00 04 02 02 FE 06 23 00 00 06 73

@@ -29,7 +29,7 @@ rule MAL_WIPER_BiBi_Oct23 {
       date = "2023-11-01"
       hash1 = "23bae09b5699c2d5c4cb1b8aa908a3af898b00f88f06e021edcb16d7d558efad"
       hash2 = "40417e937cd244b2f928150cae6fa0eff5551fdb401ea072f6ecdda67a747e17"
-      uuid = "e1ea8016-e074-5208-8c98-54922bbcc407"
+      id = "e1ea8016-e074-5208-8c98-54922bbcc407"
    strings:
       $s1 = "send attempt while closed" ascii fullword
       $s2 = "[+] CPU cores: %d, Threads: %d" ascii fullword

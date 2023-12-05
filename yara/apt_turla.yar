@@ -17,7 +17,7 @@ rule Turla_APT_srsvc {
 		date = "2016-06-09"
 		hash1 = "65996f266166dbb479a42a15a236e6564f0b322d5d68ee546244d7740a21b8f7"
 		hash2 = "25c7ff1eb16984a741948f2ec675ab122869b6edea3691b01d69842a53aa3bac"
-		uuid = "951ee9f8-1ab0-5fd5-be9b-053ec82f6ea2"
+		id = "951ee9f8-1ab0-5fd5-be9b-053ec82f6ea2"
 	strings:
 		$x1 = "SVCHostServiceDll.dll" fullword ascii
 
@@ -48,7 +48,7 @@ rule Turla_APT_Malware_Gen1 {
 		hash8 = "8dddc744bbfcf215346c812aa569e49523996f73a1f22fe4e688084ce1225b98"
 		hash9 = "0c69258adcc97632b729e55664c22cd942812336d41e8ea0cff9ddcafaded20f"
 		hash10 = "2b4fba1ef06f85d1395945db40a9f2c3b3ed81b56fb9c2d5e5bb693c230215e2"
-		uuid = "7ead2da1-3544-5a26-8767-6d3f29de8b96"
+		id = "7ead2da1-3544-5a26-8767-6d3f29de8b96"
 	strings:
 		$x1 = "too long data for this type of transport" fullword ascii
 		$x2 = "not enough server resources to complete operation" fullword ascii
@@ -82,7 +82,7 @@ rule RUAG_APT_Malware_Gen2 {
       hash2 = "7206075cd8f1004e8f1f759d46e98bfad4098b8642412811a214c0155a1f08b9"
       hash3 = "fe3ffd7438c0d38484bf02a78a19ea81a6f51b4b3f2b2228bd21974c2538bbcd"
       hash4 = "c49111af049dd9746c6b1980db6e150b2a79ca1569b23ed2cba81c85c00d82b4"
-      uuid = "8a50e5d5-f16d-53c7-825c-a8e51c207eac"
+      id = "8a50e5d5-f16d-53c7-825c-a8e51c207eac"
    strings:
       $x1 = "Internal command not support =((" ascii
       $x2 = "L|-1|AS_CUR_USER:OpenProcessToken():%d, %s|" fullword ascii
@@ -124,7 +124,7 @@ rule Turla_APT_Malware_Gen3 {
 		hash7 = "2b4fba1ef06f85d1395945db40a9f2c3b3ed81b56fb9c2d5e5bb693c230215e2"
 		hash8 = "7206075cd8f1004e8f1f759d46e98bfad4098b8642412811a214c0155a1f08b9"
 		hash9 = "edb12790b5cd959bc2e53a4b369a4fd747153e6c9d50f6a69ff047f7857a4348"
-		uuid = "8cb7d873-e4f9-553e-84e8-dbc0d31f65ab"
+		id = "8cb7d873-e4f9-553e-84e8-dbc0d31f65ab"
 	strings:
 		$x1 = "\\\\.\\pipe\\sdlrpc" fullword ascii
 		$x2 = "WaitMutex Abandoned %p" fullword ascii
@@ -157,7 +157,7 @@ rule Turla_Mal_Script_Jan18_1 {
       reference = "https://ghostbin.com/paste/jsph7"
       date = "2018-01-19"
       hash1 = "180b920e9cea712d124ff41cd1060683a14a79285d960e17f0f49b969f15bfcc"
-      uuid = "4b550b3c-182c-5dc0-b2d2-13925c22be81"
+      id = "4b550b3c-182c-5dc0-b2d2-13925c22be81"
    strings:
       $s1 = ".charCodeAt(i % " ascii
       $s2 = "{WScript.Quit();}" fullword ascii
@@ -179,7 +179,7 @@ rule Turla_KazuarRAT {
       hash1 = "6b5d9fca6f49a044fd94c816e258bf50b1e90305d7dab2e0480349e80ed2a0fa"
       hash2 = "7594fab1aadc4fb08fb9dbb27c418e8bc7f08dadb2acf5533dc8560241ecfc1d"
       hash3 = "4e5a86e33e53931afe25a8cb108f53f9c7e6c6a731b0ef4f72ce638d0ea5c198"
-      uuid = "147cc7b7-6dbd-51a2-9501-bcbaec32e20e"
+      id = "147cc7b7-6dbd-51a2-9501-bcbaec32e20e"
    strings:
       $x1 = "~1.EXE" wide
       $s2 = "dl32.dll" fullword ascii
@@ -201,7 +201,7 @@ rule MAL_Turla_Agent_BTZ {
       modified = "2023-01-06"
       score = 90
       hash1 = "c4a1cd6916646aa502413d42e6e7441c6e7268926484f19d9acbf5113fc52fc8"
-      uuid = "bd642f11-19f6-5178-b978-1215215fea86"
+      id = "bd642f11-19f6-5178-b978-1215215fea86"
    strings:
       $x1 = "1dM3uu4j7Fw4sjnbcwlDqet4F7JyuUi4m5Imnxl1pzxI6as80cbLnmz54cs5Ldn4ri3do5L6gs923HL34x2f5cvd0fk6c1a0s" fullword ascii
       $x3 = "mstotreg.dat" fullword ascii
@@ -234,7 +234,7 @@ rule MAL_Turla_Sample_May18_1 {
       date = "2018-05-03"
       hash1 = "4c49c9d601ebf16534d24d2dd1cab53fde6e03902758ef6cff86be740b720038"
       hash2 = "77cbd7252a20f2d35db4f330b9c4b8aa7501349bc06bbcc8f40ae13d01ae7f8f"
-      uuid = "5052838f-a895-55cb-abcf-813465074127"
+      id = "5052838f-a895-55cb-abcf-813465074127"
    strings:
       $x1 = "sc %s create %s binPath= \"cmd.exe /c start %%SystemRoot%%\\%s\">>%s" fullword ascii
       $x2 = "cmd.exe /c start %%SystemRoot%%\\%s" fullword ascii
@@ -257,7 +257,7 @@ rule APT_MAL_LNX_Turla_Apr20_1 {
       date = "2020-04-05"
       hash1 = "67d9556c695ef6c51abf6fbab17acb3466e3149cf4d20cb64d6d34dc969b6502"
       hash2 = "8ccc081d4940c5d8aa6b782c16ed82528c0885bbb08210a8d0a8c519c54215bc"
-      uuid = "f21e7793-a7dd-5195-805d-963827b35808"
+      id = "f21e7793-a7dd-5195-805d-963827b35808"
    strings:
       $s1 = "/root/.hsperfdata" ascii fullword
       $s2 = "Desc|     Filename     |  size  |state|" ascii fullword
@@ -279,7 +279,7 @@ rule APT_MAL_TinyTurla_Sep21_1 {
 		reference = "https://blog.talosintelligence.com/2021/09/tinyturla.html"
 		hash1 = "030cbd1a51f8583ccfc3fa38a28a5550dc1c84c05d6c0f5eb887d13dedf1da01"
 		date = "2021-09-21"
-		uuid = "19659ac7-310a-52dd-a94c-022c7add752b"
+		id = "19659ac7-310a-52dd-a94c-022c7add752b"
 	strings:
 		$a = "Title: " fullword wide
 		$b = "Hosts" fullword wide

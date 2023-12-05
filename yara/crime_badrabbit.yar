@@ -18,7 +18,7 @@ rule BadRabbit_Gen {
       hash1 = "8ebc97e05c8e1073bda2efb6f4d00ad7e789260afa2c276f0c72740b838a0a93"
       hash2 = "579fd8a0385482fb4c789561a30b09f25671e86422f40ef5cca2036b28f99648"
       hash3 = "630325cac09ac3fab908f903e3b00d0dadd5fdaa0875ed8496fcbb97a558d0da"
-      uuid = "272e50f8-5aef-52ec-a5d0-01e8504d6c55"
+      id = "272e50f8-5aef-52ec-a5d0-01e8504d6c55"
    strings:
       $x1 = "schtasks /Create /SC ONCE /TN viserion_%u /RU SYSTEM /TR \"%ws\" /ST" fullword wide
       $x2 = "schtasks /Create /RU SYSTEM /SC ONSTART /TN rhaegal /TR \"%ws /C Start \\\"\\\" \\\"%wsdispci.exe\\\"" fullword wide
@@ -47,7 +47,7 @@ rule BadRabbit_Mimikatz_Comp {
       reference = "https://pastebin.com/Y7pJv3tK"
       date = "2017-10-25"
       hash1 = "2f8c54f9fa8e47596a3beff0031f85360e56840c77f71c6a573ace6f46412035"
-      uuid = "52affd3f-6bf9-55f6-92a5-69314a2e76e0"
+      id = "52affd3f-6bf9-55f6-92a5-69314a2e76e0"
    strings:
       $s1 = "%lS%lS%lS:%lS" fullword wide
       $s2 = "lsasrv" fullword wide

@@ -4,7 +4,7 @@ rule apt28_win_zebrocy_golang_loader_modified {
       author = "@VK_Intel"
       date = "2018-12-25"
       reference = "https://www.vkremez.com/2018/12/lets-learn-progression-of-apt28sofacy.html"
-      uuid = "cce9ba6c-954c-5b13-a058-cdf7895d63fc"
+      id = "cce9ba6c-954c-5b13-a058-cdf7895d63fc"
    strings:
       // Go build
       $go = { 47 6f 20 62 75 69 6c 64 20 49 44 3a 20 }

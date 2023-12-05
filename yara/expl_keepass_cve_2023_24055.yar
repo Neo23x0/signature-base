@@ -6,7 +6,7 @@ rule EXPL_Keepass_CVE_2023_24055_Jan23 {
       reference = "https://github.com/alt3kx/CVE-2023-24055_PoC"
       date = "2023-01-25"
       score = 75
-      uuid = "2c031919-da19-5fd0-b21a-2e83679ad1e3"
+      id = "2c031919-da19-5fd0-b21a-2e83679ad1e3"
    strings:
       $a1 = "<TriggerCollection xmlns:xsi=" ascii wide
 
@@ -26,7 +26,7 @@ rule SUSP_Keepass_CVE_2023_24055_Jan23 {
       reference = "https://github.com/alt3kx/CVE-2023-24055_PoC"
       date = "2023-01-25"
       score = 60
-      uuid = "4ff1a93f-f7f0-528d-9e07-402e321a0ffe"
+      id = "4ff1a93f-f7f0-528d-9e07-402e321a0ffe"
    strings:
       $a1 = "<TriggerCollection xmlns:xsi=" ascii wide
 

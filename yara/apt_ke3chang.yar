@@ -5,7 +5,7 @@ rule APT_KE3CHANG_TMPFILE: APT KE3CHANG TMPFILE {
       reference = "https://app.any.run/tasks/a96f4f9d-c27d-490b-b5d3-e3be0a1c93e9/"
       date = "2020-06-18"
       hash1 = "4ef11e84d5203c0c425d1a76d4bf579883d40577c2e781cdccc2cc4c8a8d346f"
-      uuid = "84d411af-ea3d-5862-8c2f-7caca60c1b66"
+      id = "84d411af-ea3d-5862-8c2f-7caca60c1b66"
    strings:
       $pps1 = "PSParentPath             : Microsoft.PowerShell.Core\\Registry::HKEY_CURRENT_USE" fullword ascii
       $pps2 = "PSPath                   : Microsoft.PowerShell.Core\\Registry::HKEY_CURRENT_USE" fullword ascii
@@ -28,7 +28,7 @@ rule APT_MAL_Ke3chang_Ketrican_Jun20_1 {
       date = "2020-06-18"
       hash1 = "02ea0bc17875ab403c05b50205389065283c59e01de55e68cee4cf340ecea046"
       hash2 = "f3efa600b2fa1c3c85f904a300fec56104d2caaabbb39a50a28f60e0fdb1df39"
-      uuid = "ccd8322e-c822-512a-9ac5-eabc9d09640b"
+      id = "ccd8322e-c822-512a-9ac5-eabc9d09640b"
    strings:
       $xc1 = { 00 59 89 85 D4 FB FF FF 8B 85 D4 FB FF FF 89 45
                FC 68 E0 58 40 00 8F 45 FC E9 }

@@ -7,7 +7,7 @@ rule SUSP_obfuscated_JS_obfuscatorio : HIGHVOL
 		reference   = "https://obfuscator.io"
 		date = "2021-08-25"
       		score = 50
-		uuid = "d808f96c-21c9-59c7-b3c7-f118d39d564e"
+		id = "d808f96c-21c9-59c7-b3c7-f118d39d564e"
 	strings:
 
 		// Beggining of the script

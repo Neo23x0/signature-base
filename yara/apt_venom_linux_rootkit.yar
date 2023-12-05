@@ -14,7 +14,7 @@ rule Venom_Rootkit {
       author = "Florian Roth (Nextron Systems)"
       reference = "https://security.web.cern.ch/security/venom.shtml"
       date = "2017-01-12"
-      uuid = "fedc6fa9-7dfb-5e54-a7bf-9a16f96d6886"
+      id = "fedc6fa9-7dfb-5e54-a7bf-9a16f96d6886"
    strings:
       $s1 = "%%VENOM%CTRL%MODE%%" ascii fullword
       $s2 = "%%VENOM%OK%OK%%" ascii fullword

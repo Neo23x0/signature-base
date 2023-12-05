@@ -15,7 +15,7 @@ rule Typical_Malware_String_Transforms {
 		reference = "Internal Research"
 		date = "2016-07-31"
 		score = 60
-		uuid = "86f348b5-0564-5d83-bbea-4f4a5f62fd30"
+		id = "86f348b5-0564-5d83-bbea-4f4a5f62fd30"
 	strings:
 		/* Executables */
 		$e1 = "exe.tsohcvs" fullword ascii

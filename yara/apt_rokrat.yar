@@ -15,7 +15,7 @@ rule ROKRAT_Malware {
       modified = "2021-09-14"
       hash1 = "051463a14767c6477b6dacd639f30a8a5b9e126ff31532b58fc29c8364604d00"
       hash2 = "cd166565ce09ef410c5bba40bad0b49441af6cfb48772e7e4a9de3d646b4851c"
-      uuid = "52e7e144-b704-5254-9a0f-928fbc96f877"
+      id = "52e7e144-b704-5254-9a0f-928fbc96f877"
    strings:
       $x1 = "c:\\users\\appdata\\local\\svchost.exe" fullword ascii
       $x2 = "c:\\temp\\episode3.mp4" fullword ascii
@@ -54,7 +54,7 @@ rule ROKRAT_Dropper_Nov17 {
       date = "2017-11-28"
       hash1 = "eb6d25e08b2b32a736b57f8df22db6d03dc82f16da554f4e8bb67120eacb1d14"
       hash2 = "a29b07a6fe5d7ce3147dd7ef1d7d18df16e347f37282c43139d53cce25ae7037"
-      uuid = "4f3156a2-6b1b-5c65-b8fa-84c0b739d703"
+      id = "4f3156a2-6b1b-5c65-b8fa-84c0b739d703"
    condition:
       uint16(0) == 0x5a4d and filesize < 2500KB and
       pe.imphash() == "c6187b1b5f4433318748457719dd6f39"
@@ -68,7 +68,7 @@ rule Freeenki_Infostealer_Nov17 {
       date = "2017-11-28"
       modified = "2023-01-06"
       hash1 = "99c1b4887d96cb94f32b280c1039b3a7e39ad996859ffa6dd011cf3cca4f1ba5"
-      uuid = "01365093-e40a-524a-8a13-217742542f1e"
+      id = "01365093-e40a-524a-8a13-217742542f1e"
    strings:
       $x1 = "base64Encoded=\"TVqQAAMAAAAEAAAA" ascii
       $x2 = "command =outFile &\" sysupdate\"" fullword ascii
@@ -99,7 +99,7 @@ rule Freeenki_Infostealer_Nov17_Export_Sig_Testing {
       reference = "http://blog.talosintelligence.com/2017/11/ROKRAT-Reloaded.html"
       date = "2017-11-28"
       hash1 = "99c1b4887d96cb94f32b280c1039b3a7e39ad996859ffa6dd011cf3cca4f1ba5"
-      uuid = "929f9d41-2e71-5a86-b12f-489355bdf88d"
+      id = "929f9d41-2e71-5a86-b12f-489355bdf88d"
    condition:
       uint16(0) == 0x5a4d and filesize < 3000KB and
       pe.exports("getUpdate") and pe.number_of_exports == 1
@@ -114,7 +114,7 @@ rule ROKRAT_Nov17_1 {
       author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2017-11-28"
-      uuid = "6bf3653b-1f96-5060-b6fd-82ccc83fad77"
+      id = "6bf3653b-1f96-5060-b6fd-82ccc83fad77"
    strings:
       $s1 = "\\T+M\\Result\\DocPrint.pdb" ascii
       $s2 = "d:\\HighSchool\\version 13\\2ndBD" ascii

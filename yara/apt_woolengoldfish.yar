@@ -19,7 +19,7 @@ rule WoolenGoldfish_Sample_1 {
 		date = "2015/03/25"
 		score = 60
 		hash = "7ad0eb113bc575363a058f4bf21dbab8c8f7073a"
-		uuid = "923de51a-8422-5318-95f5-79613d2d642e"
+		id = "923de51a-8422-5318-95f5-79613d2d642e"
 	strings:
 		$s1 = "Cannot execute (%d)" fullword ascii
 		$s16 = "SvcName" fullword ascii
@@ -39,7 +39,7 @@ rule WoolenGoldfish_Generic_1 {
 		hash0 = "5d334e0cb4ff58859e91f9e7f1c451ffdc7544c3"
 		hash1 = "d5b2b30fe2d4759c199e3659d561a50f88a7fb2e"
 		hash2 = "a42f1ad2360833baedd2d5f59354c4fc3820c475"
-		uuid = "351f5ee5-c0ec-51b6-9953-2b64e3e74b09"
+		id = "351f5ee5-c0ec-51b6-9953-2b64e3e74b09"
 	strings:
 		$x0 = "Users\\Wool3n.H4t\\"
 		$x1 = "C-CPP\\CWoolger"
@@ -71,7 +71,7 @@ rule WoolenGoldfish_Generic_2 {
 		hash2 = "62172eee1a4591bde2658175dd5b8652d5aead2a"
 		hash3 = "7fef48e1303e40110798dfec929ad88f1ad4fbd8"
 		hash4 = "c1edf6e3a271cf06030cc46cbd90074488c05564"
-		uuid = "930b928f-ff32-56b2-9e3c-dd80036ff7ef"
+		id = "930b928f-ff32-56b2-9e3c-dd80036ff7ef"
 	strings:
 		$s0 = "modules\\exploits\\littletools\\agent_wrapper\\release" ascii
 	condition:
@@ -88,7 +88,7 @@ rule WoolenGoldfish_Generic_3 {
 		score = 90
 		hash1 = "86222ef166474e53f1eb6d7e6701713834e6fee7"
 		hash2 = "e8dbcde49c7f760165ebb0cb3452e4f1c24981f5"
-		uuid = "5c227d24-624c-5fb5-a2ea-a971fda8bfba"
+		id = "5c227d24-624c-5fb5-a2ea-a971fda8bfba"
 	strings:
 		$x1 = "... get header FATAL ERROR !!!  %d bytes read > header_size" fullword ascii
 		$x2 = "index.php?c=%S&r=%x&u=1&t=%S" fullword wide

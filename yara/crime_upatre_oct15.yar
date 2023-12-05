@@ -27,7 +27,7 @@ rule Upatre_Hazgurut {
 		hash12 = "951360b32a78173a1f81da0ded8b4400e230125d05970d41621830efc5337274"
 		hash13 = "bd90faebfd7663ef89b120fe69809532cada3eb94bb94094e8bc615f70670295"
 		hash14 = "8c5823f67f9625e4be39a67958f0f614ece49c18596eacc5620524bc9b6bad3d"
-		uuid = "b0040452-ed63-5e90-9ed6-4f05e7b4eadc"
+		id = "b0040452-ed63-5e90-9ed6-4f05e7b4eadc"
 	strings:
 		$a1 = "barcod" fullword ascii
 

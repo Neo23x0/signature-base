@@ -6,7 +6,7 @@ rule EXPL_Log4j_CallBackDomain_IOCs_Dec21_1 {
       reference = "https://gist.github.com/superducktoes/9b742f7b44c71b4a0d19790228ce85d8"
       date = "2021-12-12"
       score = 60
-      uuid = "474afa96-1758-587e-8cab-41c5205e245e"
+      id = "474afa96-1758-587e-8cab-41c5205e245e"
    strings:
       $xr1  = /\b(ldap|rmi):\/\/([a-z0-9\.]{1,16}\.bingsearchlib\.com|[a-z0-9\.]{1,40}\.interact\.sh|[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}):[0-9]{2,5}\/([aZ]|ua|Exploit|callback|[0-9]{10}|http443useragent|http80useragent)\b/
    condition:
@@ -20,7 +20,7 @@ rule EXPL_JNDI_Exploit_Patterns_Dec21_1 {
       reference = "https://github.com/pimps/JNDI-Exploit-Kit"
       date = "2021-12-12"
       score = 60
-      uuid = "a9127dd2-b818-5ca8-877a-3c47b1e92606"
+      id = "a9127dd2-b818-5ca8-877a-3c47b1e92606"
    strings:
       $x01 = "/Basic/Command/Base64/"
       $x02 = "/Basic/ReverseShell/"
@@ -55,7 +55,7 @@ rule EXPL_Log4j_CVE_2021_44228_JAVA_Exception_Dec21_1 {
       reference = "https://gist.github.com/Neo23x0/e4c8b03ff8cdf1fa63b7d15db6e3860b"
       date = "2021-12-12"
       score = 60
-      uuid = "82cf337e-4ea1-559b-a7b8-512a07adf06f"
+      id = "82cf337e-4ea1-559b-a7b8-512a07adf06f"
    strings:
       $xa1 = "header with value of BadAttributeValueException: "
       
@@ -73,7 +73,7 @@ rule EXPL_Log4j_CVE_2021_44228_Dec21_Soft : FILE {
       date = "2021-12-10"
       modified = "2021-12-20"
       score = 60
-      uuid = "87e536a5-cc11-528a-b100-4fa3b2b7bc0c"
+      id = "87e536a5-cc11-528a-b100-4fa3b2b7bc0c"
    strings:
       $x01 = "${jndi:ldap:/"
       $x02 = "${jndi:rmi:/"
@@ -99,7 +99,7 @@ rule EXPL_Log4j_CVE_2021_44228_Dec21_OBFUSC {
       date = "2021-12-12"
       modified = "2021-12-13"
       score = 60
-      uuid = "d7c4092a-6ffc-5a89-b73a-f7f0ac984cbd"
+      id = "d7c4092a-6ffc-5a89-b73a-f7f0ac984cbd"
    strings:
       $x1 = "$%7Bjndi:"
       $x2 = "%2524%257Bjndi"
@@ -123,7 +123,7 @@ rule EXPL_Log4j_CVE_2021_44228_Dec21_Hard : FILE {
       date = "2021-12-10"
       modified = "2023-10-23"
       score = 75
-      uuid = "5297c42d-7138-507d-a3eb-153afe522816"
+      id = "5297c42d-7138-507d-a3eb-153afe522816"
    strings:
       $x1 = /\$\{jndi:(ldap|ldaps|rmi|dns|iiop|http|nis|nds|corba):\/[\/]?[a-z-\.0-9]{3,120}:[0-9]{2,5}\/[a-zA-Z\.]{1,32}\}/
       $x2 = "Reference Class Name: foo"
@@ -147,7 +147,7 @@ rule SUSP_Base64_Encoded_Exploit_Indicators_Dec21 {
       date = "2021-12-10"
       modified = "2021-12-13"
       score = 70
-      uuid = "09abc4f0-ace7-5f53-b1d3-5f5c6bf3bdba"
+      id = "09abc4f0-ace7-5f53-b1d3-5f5c6bf3bdba"
    strings:
       /* curl -s  */
       $sa1 = "Y3VybCAtcy"
@@ -172,7 +172,7 @@ rule SUSP_JDNIExploit_Indicators_Dec21 {
       date = "2021-12-10"
       modified = "2021-12-12"
       score = 70
-      uuid = "2df8b8f3-8d8d-5982-8c85-692b7d91ebb2"
+      id = "2df8b8f3-8d8d-5982-8c85-692b7d91ebb2"
    strings:
       $xr1 = /(ldap|ldaps|rmi|dns|iiop|http|nis|nds|corba):\/\/[a-zA-Z0-9\.]{7,80}:[0-9]{2,5}\/(Basic\/Command\/Base64|Basic\/ReverseShell|Basic\/TomcatMemshell|Basic\/JBossMemshell|Basic\/WebsphereMemshell|Basic\/SpringMemshell|Basic\/Command|Deserialization\/CommonsCollectionsK|Deserialization\/CommonsBeanutils|Deserialization\/Jre8u20\/TomcatMemshell|Deserialization\/CVE_2020_2555\/WeblogicMemshell|TomcatBypass|GroovyBypass|WebsphereBypass)\//
    condition:
@@ -187,7 +187,7 @@ rule SUSP_EXPL_OBFUSC_Dec21_1{
       date = "2021-12-11"
       modified = "2022-11-08"
       score = 60
-      uuid = "b8f56711-7922-54b9-9ce2-6ba05d64c80d"
+      id = "b8f56711-7922-54b9-9ce2-6ba05d64c80d"
    strings:
       /* ${lower:X} - single character match */
       $f1 = { 24 7B 6C 6F 77 65 72 3A ?? 7D }
@@ -218,7 +218,7 @@ rule SUSP_JDNIExploit_Error_Indicators_Dec21_1 {
       date = "2021-12-10"
       modified = "2023-06-23"
       score = 70
-      uuid = "68bcf043-58b4-54a9-b024-64871b5d535f"
+      id = "68bcf043-58b4-54a9-b024-64871b5d535f"
    strings:
       $x1 = "FATAL log4j - Message: BadAttributeValueException: "
    condition:

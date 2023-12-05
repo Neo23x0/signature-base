@@ -11,7 +11,7 @@ rule APT_MAL_NK_3CX_Malicious_Samples_Mar23_1 {
       hash1 = "7986bbaee8940da11ce089383521ab420c443ab7b15ed42aed91fd31ce833896"
       hash2 = "c485674ee63ec8d4e8fde9800788175a8b02d3f9416d0e763360fff7f8eb4e02"
       hash3 = "cc4eedb7b1f77f02b962f4b05278fa7f8082708b5a12cacf928118520762b5e2"
-      uuid = "a6ea3299-fde5-5206-b5db-eb3a3f5944d9"
+      id = "a6ea3299-fde5-5206-b5db-eb3a3f5944d9"
     strings:
       $opa1 = { 4C 89 F1 4C 89 EA 41 B8 40 00 00 00 FF 15 ?? ?? ?? ?? 85 C0 74 ?? 4C 89 F0 FF 15 ?? ?? ?? ?? 4C 8D 4C 24 ?? 45 8B 01 4C 89 F1 4C 89 EA FF 15 } /* VirtualProtect and execute payload*/
       $opa2 = { 48 C7 44 24 ?? 00 00 00 00 4C 8D 7C 24 ?? 48 89 F9 48 89 C2 41 89 E8 4D 89 F9 FF 15 ?? ?? ?? ?? 41 83 3F 00 0F 84 ?? ?? ?? ?? 0F B7 03 3D 4D 5A 00 00} /* ReadFile and MZ compare*/
@@ -37,7 +37,7 @@ rule APT_MAL_NK_3CX_Malicious_Samples_Mar23_2 {
       date = "2023-03-29"
       score = 80
       hash1 = "aa4e398b3bd8645016d8090ffc77d15f926a8e69258642191deb4e68688ff973"
-      uuid = "bf3597ff-d62b-5d21-9c9b-e46e685284cf"
+      id = "bf3597ff-d62b-5d21-9c9b-e46e685284cf"
    strings:
       $s1 = "raw.githubusercontent.com/IconStorages/images/main/icon%d.ico" wide fullword
       $s2 = "https://raw.githubusercontent.com/IconStorages" wide fullword
@@ -61,7 +61,7 @@ rule APT_MAL_NK_3CX_Malicious_Samples_Mar23_3 {
       date = "2023-03-29"
       score = 80
       hash1 = "aa4e398b3bd8645016d8090ffc77d15f926a8e69258642191deb4e68688ff973"
-      uuid = "d2d361b6-8485-57eb-b6eb-88785f42e93e"
+      id = "d2d361b6-8485-57eb-b6eb-88785f42e93e"
     strings:
       $opa1 = { 41 81 C0 ?? ?? ?? ?? 02 C8 49 C1 E9 ?? 41 88 4B ?? 4D 03 D1 8B C8 45 8B CA C1 E1 ?? 33 C1 41 69 D0 ?? ?? ?? ?? 8B C8 C1 E9 ?? 33 C1 8B C8 C1 E1 ?? 81 C2 ?? ?? ?? ?? 33 C1 43 8D 0C 02 02 C8 49 C1 EA ?? 41 88 0B 8B C8 C1 E1 ?? 33 C1 44 69 C2 ?? ?? ?? ?? 8B C8 C1 E9 ?? 33 C1 8B C8 C1 E1 ?? 41 81 C0 } /*lcg chunk */
       $opa2 = { 8B C8 41 69 D1 ?? ?? ?? ?? C1 E1 ?? 33 C1 45 8B CA 8B C8 C1 E9 ?? 33 C1 81 C2 ?? ?? ?? ?? 8B C8 C1 E1 ?? 33 C1 41 8B C8 4C 0F AF CF 44 69 C2 ?? ?? ?? ?? 4C 03 C9 45 8B D1 4C 0F AF D7} /*lcg chunk */
@@ -89,7 +89,7 @@ rule SUSP_APT_MAL_NK_3CX_Malicious_Samples_Mar23_1 {
       hash1 = "7986bbaee8940da11ce089383521ab420c443ab7b15ed42aed91fd31ce833896"
       hash2 = "c485674ee63ec8d4e8fde9800788175a8b02d3f9416d0e763360fff7f8eb4e02"
       hash3 = "cc4eedb7b1f77f02b962f4b05278fa7f8082708b5a12cacf928118520762b5e2"
-      uuid = "9fc6eb94-d02f-5bcd-9f55-b6c6a8301b4f"
+      id = "9fc6eb94-d02f-5bcd-9f55-b6c6a8301b4f"
    strings:
       $opx1 = { 41 80 7C 00 FD FE 75 ?? 41 80 7C 00 FE ED 75 ?? 41 80 7C 00 FF FA 75 ?? 41 80 3C 00 CE } /* marker */
       $opx2 = { 80 78 ?? FE 75 ?? 80 78 ?? ED 75 ?? 80 38 FA 75 ?? 80 78 ?? CE } /* marker */
@@ -108,7 +108,7 @@ rule APT_SUSP_NK_3CX_RC4_Key_Mar23_1 {
       hash2 = "59e1edf4d82fae4978e97512b0331b7eb21dd4b838b850ba46794d9c7a2c0983"
       hash3 = "aa124a4b4df12b34e74ee7f6c683b2ebec4ce9a8edcf9be345823b4fdcf5d868"
       hash4 = "c485674ee63ec8d4e8fde9800788175a8b02d3f9416d0e763360fff7f8eb4e02"
-      uuid = "18ea2185-11a1-51ad-a51a-df9e6357bb58"
+      id = "18ea2185-11a1-51ad-a51a-df9e6357bb58"
    strings:
       $x1 = "3jB(2bsG#@c7"
    condition:
@@ -125,7 +125,7 @@ rule SUSP_3CX_App_Signed_Binary_Mar23_1 {
       score = 65
       hash1 = "fad482ded2e25ce9e1dd3d3ecc3227af714bdfbbde04347dbc1b21d6a3670405"
       hash2 = "dde03348075512796241389dfea5560c20a3d2a2eac95c894e7bbed5e85a0acc"
-      uuid = "b6ce4c1d-1b7b-5e0c-af4c-05cb3ad0a4e0"
+      id = "b6ce4c1d-1b7b-5e0c-af4c-05cb3ad0a4e0"
    strings:
       $sa1 = "3CX Ltd1"
       $sa2 = "3CX Desktop App" wide
@@ -147,7 +147,7 @@ rule SUSP_3CX_MSI_Signed_Binary_Mar23_1 {
       score = 60
       hash1 = "aa124a4b4df12b34e74ee7f6c683b2ebec4ce9a8edcf9be345823b4fdcf5d868"
       hash2 = "59e1edf4d82fae4978e97512b0331b7eb21dd4b838b850ba46794d9c7a2c0983"
-      uuid = "15d6d8ca-6982-5095-9879-ce97269a71c6"
+      id = "15d6d8ca-6982-5095-9879-ce97269a71c6"
    strings:
       $a1 = { 84 10 0C 00 00 00 00 00 C0 00 00 00 00 00 00 46 } // MSI marker
 
@@ -175,7 +175,7 @@ rule APT_MAL_macOS_NK_3CX_Malicious_Samples_Mar23_1 {
       hash1 = "b86c695822013483fa4e2dfdf712c5ee777d7b99cbad8c2fa2274b133481eadb"
       hash2 = "ac99602999bf9823f221372378f95baa4fc68929bac3a10e8d9a107ec8074eca"
       hash3 = "51079c7e549cbad25429ff98b6d6ca02dc9234e466dd9b75a5e05b9d7b95af72"
-      uuid = "ff39e577-7063-5025-bead-68394a86c87c"
+      id = "ff39e577-7063-5025-bead-68394a86c87c"
     strings:
       $s1 = "20230313064152Z0"
       $s2 = "Developer ID Application: 3CX (33CF4654HL)"
@@ -194,7 +194,7 @@ rule APT_MAL_MacOS_NK_3CX_DYLIB_Mar23_1 {
       score = 80
       hash1 = "a64fa9f1c76457ecc58402142a8728ce34ccba378c17318b3340083eeb7acc67"
       hash2 = "fee4f9dabc094df24d83ec1a8c4e4ff573e5d9973caa676f58086c99561382d7"
-      uuid = "a19904d3-9b2d-561f-b734-20bf09584fa7"
+      id = "a19904d3-9b2d-561f-b734-20bf09584fa7"
    strings:
       /* XORed UA 0x7a */
       $xc1 = { 37 15 00 13 16 16 1B 55 4F 54 4A 5A 52 2D 13 14 
@@ -224,7 +224,7 @@ rule APT_SUSP_NK_3CX_Malicious_Samples_Mar23_1 {
       hash2 = "59e1edf4d82fae4978e97512b0331b7eb21dd4b838b850ba46794d9c7a2c0983"
       hash3 = "aa124a4b4df12b34e74ee7f6c683b2ebec4ce9a8edcf9be345823b4fdcf5d868"
       hash4 = "c485674ee63ec8d4e8fde9800788175a8b02d3f9416d0e763360fff7f8eb4e02"
-      uuid = "b233846a-19df-579b-a674-233d66824008"
+      id = "b233846a-19df-579b-a674-233d66824008"
    strings:
       $a1 = "AVMonitorRefreshEvent" wide fullword
    condition:
@@ -239,7 +239,7 @@ rule APT_MAL_NK_3CX_Malicious_Samples_Mar23_4 {
         date = "2023-03-29"
         hash = "851c2c99ebafd4e5e9e140cfe3f2d03533846ca16f8151ae8ee0e83c692884b7" 
         score = 80
-        uuid = "d11170df-570c-510c-80ec-39048acd0fbd"
+        id = "d11170df-570c-510c-80ec-39048acd0fbd"
     strings:
         $op1 = {41 69 D0 [4] 8B C8 C1 E9 ?? 33 C1 8B C8 C1 E1 ?? 81 C2 [4] 33 C1 43 8D 0C 02 02 C8 49 C1 EA ?? 41 88 0B 8B C8 C1 E1 ?? 33 C1 44 69 C2 [4] 8B C8 C1 E9 ?? 33 C1 8B C8 C1 E1 ?? 41 81 C0 [4] 33 C1 4C 0F AF CF 4D 03 CA 45 8B D1 4C 0F AF D7 41 8D 0C 11 49 C1 E9 ?? 02 C8} // // xor with mul operation
         $op2 = {4D 0F AF CC 44 69 C2 [4] 4C 03 C9 45 8B D1 4D 0F AF D4 41 8D 0C 11 41 81 C0 [4] 02 C8 49 C1 E9 ?? 41 88 4B ?? 4D 03 D1 8B C8 45 8B CA C1 E1 ?? 33 C1} // xor with mul operation
@@ -256,7 +256,7 @@ rule MAL_3CXDesktopApp_MacOS_Backdoor_Mar23 {
         date = "2023-03-30"
         hash = "a64fa9f1c76457ecc58402142a8728ce34ccba378c17318b3340083eeb7acc67"
         score = 80
-      uuid = "80046c8e-0c2a-5885-b140-a6084f48160d"
+      id = "80046c8e-0c2a-5885-b140-a6084f48160d"
     strings:
         $sa1 = "%s/.main_storage" ascii fullword
         $sa2 = "%s/UpdateAgent" ascii fullword
@@ -284,7 +284,7 @@ rule APT_MAL_NK_3CX_ICONIC_Stealer_Mar23_1 {
       date = "2023-03-31"
       score = 80
       hash1 = "8ab3a5eaaf8c296080fadf56b265194681d7da5da7c02562953a4cb60e147423"
-      uuid = "e92b5b90-1146-5235-9711-a4d42689c49b"
+      id = "e92b5b90-1146-5235-9711-a4d42689c49b"
    strings:
       
       $s1 = "{\"HostName\": \"%s\", \"DomainName\": \"%s\", \"OsVersion\": \"%d.%d.%d\"}" wide fullword
@@ -312,7 +312,7 @@ rule APT_MAL_NK_3CX_macOS_Elextron_App_Mar23_1 {
       score = 80
       hash1 = "51079c7e549cbad25429ff98b6d6ca02dc9234e466dd9b75a5e05b9d7b95af72"
       hash2 = "f7ba7f9bf608128894196cf7314f68b78d2a6df10718c8e0cd64dbe3b86bc730"
-      uuid = "7a3755d4-37e5-5d3b-93aa-34edb557f2d5"
+      id = "7a3755d4-37e5-5d3b-93aa-34edb557f2d5"
    strings:
       $a1 = "com.apple.security.cs.allow-unsigned-executable-memory" ascii
       $a2 = "com.electron.3cx-desktop-app" ascii fullword
@@ -335,7 +335,7 @@ rule MAL_3CXDesktopApp_MacOS_UpdateAgent_Mar23 {
       date = "2023-03-30"
       hash = "9e9a5f8d86356796162cee881c843cde9eaedfb3"
       score = 80
-      uuid = "596eb6d0-f96f-5106-ae67-9372d238e4cf"
+      id = "596eb6d0-f96f-5106-ae67-9372d238e4cf"
    strings:
       $a1 = "/3CX Desktop App/.main_storage" ascii
 
@@ -360,7 +360,7 @@ rule SUSP_APT_3CX_Regtrans_Anomaly_Apr23 : METARULE {
       reference = "https://www.3cx.com/blog/news/mandiant-initial-results/"
       date = "2023-04-12"
       score = 60
-      uuid = "97406b8d-68fe-5f68-a26a-205dd4694e50"
+      id = "97406b8d-68fe-5f68-a26a-205dd4694e50"
    strings:
       $fp1 = "REGISTRY" wide
    condition:
@@ -378,7 +378,7 @@ rule APT_MAL_VEILEDSIGNAL_Backdoor_Apr23_2 {
       date = "2023-04-29"
       hash = "c4887a5cd6d98e273ba6e9ea3c1d8f770ef26239819ea24a1bfebd81d6870505"
       score = 80
-      uuid = "ff1fa0bd-19b7-553a-9506-bc5aa5d29056"
+      id = "ff1fa0bd-19b7-553a-9506-bc5aa5d29056"
    strings:
       $sa1 = "\\.\\pipe\\gecko.nativeMessaging" ascii
       $sa2 = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36 Edg/95.0.1020.40" ascii
@@ -399,7 +399,7 @@ rule APT_MAL_VEILEDSIGNAL_Backdoor_Apr23_3 {
       date = "2023-04-29"
       hash = "595392959b609caf088d027a23443cf2fefd043607ccdec3de19ad3bb43a74b1"
       score = 80
-      uuid = "6b6f984e-242a-5b84-baa9-6311992cde9b"
+      id = "6b6f984e-242a-5b84-baa9-6311992cde9b"
    strings:
       $op1 = { 4C 8B CB 4C 89 74 24 ?? 4C 8D 05 ?? ?? ?? ?? 44 89 74 24 ?? 33 D2 33 C9 FF 15} /* create thread*/
       $op2 = { 89 7? 24 ?? 44 8B CD 4C 8B C? 48 89 44 24 ?? 33 D2 33 C9 FF 15} /* MultiByteToWideChar */
@@ -417,7 +417,7 @@ rule APT_MAL_VEILEDSIGNAL_Backdoor_Apr23_4 {
       date = "2023-04-29"
       hash = "9b0761f81afb102bb784b398b16faa965594e469a7fcfdfd553ced19cc17e70b"
       score = 80
-      uuid = "77340ec0-36bb-5c47-995f-4e6f76b68fe1"
+      id = "77340ec0-36bb-5c47-995f-4e6f76b68fe1"
    strings:
       $op1 = { 48 8D 15 ?? ?? ?? ?? 48 8D 4C 24 ?? E8 ?? ?? ?? ?? 85 C0 74 ?? 48 8D 15 ?? ?? ?? ?? 48 8D 4C 24 ?? E8 ?? ?? ?? ?? 85 C0 74 ?? 48 8D 15 ?? ?? ?? ?? 48 8D 4C 24 ?? E8 ?? ?? ?? ?? 85 C0 } /* check for certian process */
 		$op2 = { 48 8B C8 48 8D 15 ?? ?? ?? ?? FF 15 ?? ?? ?? ?? 45 33 C0 4C 8D 4D ?? B2 01 41 8D 48 ?? FF D0} /* RtlAdjustPrivilege */

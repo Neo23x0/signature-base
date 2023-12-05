@@ -11,7 +11,7 @@ rule SUSP_ZIP_LNK_PhishAttachment_Pattern_Jun22_1 {
       hash3 = "9c70eeac97374213355ea8fa019a0e99e0e57c8efc43daa3509f9f98fa71c8e4"
       hash4 = "ddc20266e38a974a28af321ab82eedaaf51168fbcc63ac77883d8be5200dcaf9"
       hash5 = "b59788ae984d9e70b4f7f5a035b10e6537063f15a010652edd170fc6a7e1ea2f"
-      uuid = "3537c4ea-a51d-5100-97d7-71a24da5ff43"
+      id = "3537c4ea-a51d-5100-97d7-71a24da5ff43"
    strings:
       $sl1 = ".lnk" 
    condition:
@@ -27,7 +27,7 @@ rule SUSP_ZIP_ISO_PhishAttachment_Pattern_Jun22_1 {
       reference = "Internal Research"
       date = "2022-06-23"
       score = 65
-      uuid = "638541a6-d2d4-513e-978c-9d1b9f5e3b71"
+      id = "638541a6-d2d4-513e-978c-9d1b9f5e3b71"
    strings:
       $pkzip_base64_1 = { 0A 55 45 73 44 42 }
       $pkzip_base64_2 = { 0A 55 45 73 44 42 }
@@ -49,7 +49,7 @@ rule SUSP_Archive_Phishing_Attachment_Characteristics_Jun22_1 {
       score = 65
       hash1 = "caaa5c5733fca95804fffe70af82ee505a8ca2991e4cc05bc97a022e5f5b331c"
       hash2 = "a746d8c41609a70ce10bc69d459f9abb42957cc9626f2e83810c1af412cb8729"
-      uuid = "3cb8c371-f40b-5773-84d1-3bce37da529e"
+      id = "3cb8c371-f40b-5773-84d1-3bce37da529e"
    strings:
       $sa01 = "INVOICE.exePK" ascii
       $sa02 = "PAYMENT.exePK" ascii

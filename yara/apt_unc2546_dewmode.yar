@@ -7,7 +7,7 @@ rule WEBSHELL_APT_PHP_DEWMODE_UNC2546_Feb21_1 {
       date = "2021-02-22"
       hash1 = "2e0df09fa37eabcae645302d9865913b818ee0993199a6d904728f3093ff48c7"
       hash2 = "5fa2b9546770241da7305356d6427847598288290866837626f621d794692c1b"
-      uuid = "ea883f25-0e9b-5617-b05e-191a4a5c5a52"
+      id = "ea883f25-0e9b-5617-b05e-191a4a5c5a52"
    strings:
       $x1 = "<font size=4>Cleanup Shell</font></a>';" ascii fullword
       $x2 = "$(sh /tmp/.scr)"

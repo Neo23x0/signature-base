@@ -20,7 +20,7 @@ rule BronzeButler_Daserf_Delphi_1 {
       hash1 = "89a80ca92600af64eb9c32cab4e936c7d675cf815424d72438973e2d6788ef64"
       hash2 = "b1bd03cd12638f44d9ace271f65645e7f9b707f86e9bcf790e0e5a96b755556b"
       hash3 = "22e1965154bdb91dd281f0e86c8be96bf1f9a1e5fe93c60a1d30b79c0c0f0d43"
-      uuid = "88372e62-3bba-58dc-825c-f35533e42825"
+      id = "88372e62-3bba-58dc-825c-f35533e42825"
    strings:
       $s1 = "Services.exe" fullword ascii
       $s2 = "Mozilla/4.0 (compatible; MSIE 11.0; Windows NT 6.1; SV1)" fullword ascii
@@ -50,7 +50,7 @@ rule BronzeButler_Daserf_C_1 {
       hash6 = "85544d2bcaf8e6ca32bbc0a9e9583c9db1dce837043f555a7ff66363d5858439"
       hash7 = "2dc24622c1e91642a21a64c0dd31cbe953e8f77bd3d6abcf2c4676c3b11bb162"
       hash8 = "2bdb88fa24cffba240b60416835189c76a9920b6c3f6e09c3c4b171c2f57031c"
-      uuid = "62a5cc4a-7c58-5e4d-ac23-8d1f850a540a"
+      id = "62a5cc4a-7c58-5e4d-ac23-8d1f850a540a"
    strings:
       $s1 = "(c) 2010 DYAMAR EnGineerinG, All rights reserved, http://www.dyamar.com." fullword ascii
       $s2 = "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; SV1)" fullword ascii
@@ -85,7 +85,7 @@ rule BronzeButler_DGet_1 {
       reference = "https://www.secureworks.com/research/bronze-butler-targets-japanese-businesses"
       date = "2017-10-14"
       hash1 = "bd81521445639aaa5e3bcb5ece94f73feda3a91880a34a01f92639f8640251d6"
-      uuid = "d60fcc9f-0f17-5871-9e8e-71d26e2f46bc"
+      id = "d60fcc9f-0f17-5871-9e8e-71d26e2f46bc"
    strings:
       $s2 = "DGet Tool Made by XZ" fullword ascii
    condition:
@@ -100,7 +100,7 @@ rule BronzeButler_UACBypass_1 {
       reference = "https://www.secureworks.com/research/bronze-butler-targets-japanese-businesses"
       date = "2017-10-14"
       hash1 = "fe06b99a0287e2b2d9f7faffbda3a4b328ecc05eab56a3e730cfc99de803b192"
-      uuid = "01853352-58fc-56a3-8c20-08405c71e251"
+      id = "01853352-58fc-56a3-8c20-08405c71e251"
    strings:
       $x1 = "\\Release\\BypassUacDll.pdb" ascii
       $x2 = "%programfiles%internet exploreriexplore.exe" fullword wide
@@ -120,7 +120,7 @@ rule BronzeButler_xxmm_1 {
       reference = "https://www.secureworks.com/research/bronze-butler-targets-japanese-businesses"
       date = "2017-10-14"
       hash1 = "7197de18bc5a4c854334ff979f3e4dafa16f43d7bf91edfe46f03e6cc88f7b73"
-      uuid = "0e413e3a-fb61-58bc-9ecb-4ef76e83a7f3"
+      id = "0e413e3a-fb61-58bc-9ecb-4ef76e83a7f3"
    strings:
       $x1 = "\\Release\\ReflectivLoader.pdb" ascii
       $x3 = "\\Projects\\xxmm2\\Release\\" ascii
@@ -147,7 +147,7 @@ rule BronzeButler_RarStar_1 {
       reference = "https://www.secureworks.com/research/bronze-butler-targets-japanese-businesses"
       date = "2017-10-14"
       hash1 = "0fc1b4fdf0dc5373f98de8817da9380479606f775f5aa0b9b0e1a78d4b49e5f4"
-      uuid = "770270b3-6743-5efb-84d8-b63f1df800d9"
+      id = "770270b3-6743-5efb-84d8-b63f1df800d9"
    strings:
       $s1 = "Mozilla/4.0+(compatible;+MSIE+8.0;+Windows+NT+6.0;+SV1)" fullword wide
       $s2 = "http://www.google.co.jp" fullword wide
@@ -175,7 +175,7 @@ rule Daserf_Nov1_BronzeButler {
       reference = "https://goo.gl/ffeCfd"
       date = "2017-11-08"
       hash1 = "5ede6f93f26ccd6de2f93c9bd0f834279df5f5cfe3457915fae24a3aec46961b"
-      uuid = "58c4d3dc-c516-567b-8746-4e185c3cd328"
+      id = "58c4d3dc-c516-567b-8746-4e185c3cd328"
    strings:
       $x1 = "mstmp1845234.exe" fullword ascii
       /* Bronce Butler UA String - see google search */

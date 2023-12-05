@@ -23,7 +23,7 @@ rule ShadowPad_nssock2 {
       hash4 = "515d3110498d7b4fdb451ed60bb11cd6835fcff4780cb2b982ffd2740e1347a0"
       hash5 = "536d7e3bd1c9e1c2fd8438ab75d6c29c921974560b47c71686714d12fb8e9882"
       hash6 = "637fa40cf7dd0252c87140f7895768f42a370551c87c37a3a77aac00eb17d72e"
-      uuid = "47ecc7f8-065a-558b-9bba-300fd28f4eab"
+      id = "47ecc7f8-065a-558b-9bba-300fd28f4eab"
    condition:
       ( uint16(0) == 0x5a4d and
         filesize < 500KB and

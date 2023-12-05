@@ -5,7 +5,7 @@ rule crime_win32_ransom_maze_dll_1 {
       reference = "https://twitter.com/VK_Intel/status/1251388507219726338"
       tlp = "white"
       date = "2020-04-18"
-      uuid = "873aea2b-2dd4-5682-b979-35e73fbc189f"
+      id = "873aea2b-2dd4-5682-b979-35e73fbc189f"
    strings:
       $str1 = "Maze Ransomware" wide
       $str2 = "--logging" wide

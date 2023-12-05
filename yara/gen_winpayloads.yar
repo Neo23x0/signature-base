@@ -17,7 +17,7 @@ rule WinPayloads_PowerShell {
       reference = "https://github.com/nccgroup/Winpayloads"
       date = "2017-07-11"
       hash1 = "011eba8f18b66634f6eb47527b4ceddac2ae615d6861f89a35dbb9fc591cae8e"
-      uuid = "8b6b8823-4656-5b0d-9a1e-84045287f5bf"
+      id = "8b6b8823-4656-5b0d-9a1e-84045287f5bf"
    strings:
       $x1 = "$Base64Cert = 'MIIJeQIBAzCCCT8GCSqGSIb3DQEHAaCCCTAEggksMIIJKDCCA98GCSqGSIb3DQEHBqCCA9AwggPMAgEAMIIDxQYJKoZIhvcNAQcBMBwGCiqGSIb3D" ascii
       $x2 = "powershell -w hidden -noni -enc SQBF" fullword ascii nocase
@@ -41,7 +41,7 @@ rule WinPayloads_Payload {
       hash4 = "ed93e28ca18f749a78678b1e8e8ac31f4c6c0bab2376d398b413dbdfd5af9c7f"
       hash5 = "26f5aee1ce65158e8375deb63c27edabfc9f5de3c1c88a4ce26a7e50b315b6d8"
       hash6 = "b25a515706085dbde0b98deaf647ef9a8700604652c60c6b706a2ff83fdcbf45"
-      uuid = "44fae324-1fc8-5417-950a-8a3783b6d2ae"
+      id = "44fae324-1fc8-5417-950a-8a3783b6d2ae"
    strings:
       $s1 = "bpayload.exe.manifest" fullword ascii
       $s2 = "spayload" fullword ascii

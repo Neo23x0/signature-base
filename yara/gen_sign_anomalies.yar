@@ -8,7 +8,7 @@ rule SUSP_Unsigned_OSPPSVC {
       reference = "https://www.welivesecurity.com/2019/09/24/no-summer-vacations-zebrocy/"
       date = "2019-09-26"
       hash1 = "5294a730f1f0a176583b9ca2b988b3f5ec65dad8c6ebe556b5135566f2c16a56"
-      uuid = "0e312237-0c82-59da-b62d-56065c6075f0"
+      id = "0e312237-0c82-59da-b62d-56065c6075f0"
    strings:
       /* FileDescription Microsoft Office Software Protection Platform Service */
       $sc1 = { 00 46 00 69 00 6C 00 65 00 44 00 65 00 73 00 63
@@ -187,7 +187,7 @@ rule SUSP_PE_Signed_by_Suspicious_Entitiy_Mar23
         hash = "79c9acadd99ab1251dbba3bff7d0b67de4252f913f485465d63f4f0c4d9a6419"
         hash = "9bcc3f36c32e3efbf8bdcba7670658042db65dd617dad0709d92c554ba841b57"
 
-        uuid = "13151f9b-22cb-551f-81b4-a60a301f0bfc"
+        id = "13151f9b-22cb-551f-81b4-a60a301f0bfc"
     strings:
         // works well enough with string search so no need to use the pe module
         $cert1 = "91210242MA0YGH36" wide ascii ///serialNumber=91210242MA0YGH36XJ/jurisdictionC=CN/businessCategory=Private Organization/C=CN/ST=\xE8\xBE\xBD\xE5\xAE\x81\xE7\x9C\x81

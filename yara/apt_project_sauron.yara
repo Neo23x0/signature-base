@@ -7,7 +7,7 @@ rule apt_ProjectSauron_pipe_backdoor  {
 		description = "Rule to detect ProjectSauron pipe backdoors"
 		version = "1.0"
 		reference = "https://securelist.com/blog/"
-		uuid = "5a1dd4b3-a03c-51bb-a7bc-25729b487f70"
+		id = "5a1dd4b3-a03c-51bb-a7bc-25729b487f70"
 	strings:
 		$a1 = "CreateNamedPipeW" fullword ascii
 		$a2 = "SetSecurityDescriptorDacl" fullword ascii
@@ -26,7 +26,7 @@ meta:
 	description = "Rule to detect ProjectSauron encrypted LSA samples"
 	version = "1.0"
 	reference = "https://securelist.com/blog/"
-	uuid = "f6fd8619-60f0-5c0d-aa66-cd0e154de63c"
+	id = "f6fd8619-60f0-5c0d-aa66-cd0e154de63c"
 strings:
 	$a1 = "EFEB0A9C6ABA4CF5958F41DB6A31929776C643DEDC65CC9B67AB8B0066FF2492" fullword ascii
 	$a2 = "\\Device\\NdisRaw_" ascii
@@ -52,7 +52,7 @@ meta:
 	description = "Rule to detect encrypted ProjectSauron SSPI samples"
 	version = "1.0"
 	reference = "https://securelist.com/blog/"
-	uuid = "43c0e772-46d2-510e-bea1-6f505199f38c"
+	id = "43c0e772-46d2-510e-bea1-6f505199f38c"
 condition:
 	uint16(0) == 0x5A4D and
 	filesize < 1000000 and
@@ -68,7 +68,7 @@ meta:
 	description = "Rule to detect ProjectSauron MyTrampoline module"
 	version = "1.0"
 	reference = "https://securelist.com/blog/"
-	uuid = "b4f2cabf-11da-5fa1-8c23-0a177f8a4741"
+	id = "b4f2cabf-11da-5fa1-8c23-0a177f8a4741"
 strings:
 	$a1 = ":\\System Volume Information\\{" wide
 	$a2 = "\\\\.\\PhysicalDrive%d" wide
@@ -89,7 +89,7 @@ meta:
 	version = "1.0"
 	reference = "https://securelist.com/blog/"
 
-	uuid = "4462ebd9-24eb-570a-94b8-6fa6bf2a5a63"
+	id = "4462ebd9-24eb-570a-94b8-6fa6bf2a5a63"
 strings:
 
 	$vfs_header = {02 AA 02 C1 02 0?}
@@ -110,7 +110,7 @@ meta:
 	reference = "https://securelist.com/blog/"
 
 
-	uuid = "b3139045-54f5-5d59-980b-8510faa9ad0e"
+	id = "b3139045-54f5-5d59-980b-8510faa9ad0e"
 strings:
 
 	$a1 = {81??02AA02C175??8B??0685}
@@ -129,7 +129,7 @@ meta:
 	version = "1.0"
 	reference = "https://securelist.com/blog/"
 
-	uuid = "77a82c67-7ee1-5d1f-ad75-28ce174e41bc"
+	id = "77a82c67-7ee1-5d1f-ad75-28ce174e41bc"
 strings:
 	$a = { C7 [2-3] 32 32 32 32 E8 }
 	$b = { 42 12 67 6B }

@@ -16,7 +16,7 @@ rule APT30_Generic_H {
 		date = "2015/04/13"
 		hash1 = "2a4c8752f3e7fde0139421b8d5713b29c720685d"
 		hash2 = "4350e906d590dca5fcc90ed3215467524e0a4e3d"
-		uuid = "1908e985-9634-51dc-8972-53afa13c26a3"
+		id = "1908e985-9634-51dc-8972-53afa13c26a3"
 	strings:
 		$s0 = "\\Temp1020.txt" ascii
 		$s1 = "Xmd.Txe" fullword ascii
@@ -33,7 +33,7 @@ rule APT30_Sample_2 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "0359ffbef6a752ee1a54447b26e272f4a5a35167"
-		uuid = "821a2de9-48c4-58d8-acc4-1e25025ab5cf"
+		id = "821a2de9-48c4-58d8-acc4-1e25025ab5cf"
 	strings:
 		$s0 = "ForZRLnkWordDlg.EXE" fullword wide
 		$s1 = "ForZRLnkWordDlg Microsoft " fullword wide
@@ -52,7 +52,7 @@ rule APT30_Sample_3 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "d0320144e65c9af0052f8dee0419e8deed91b61b"
-		uuid = "62e81385-26f5-545d-92ff-6604ff4d0186"
+		id = "62e81385-26f5-545d-92ff-6604ff4d0186"
 	strings:
 		$s5 = "Software\\Mic" ascii
 		$s6 = "HHOSTR" ascii
@@ -77,7 +77,7 @@ rule APT30_Generic_C {
 		hash5 = "a2e0203e665976a13cdffb4416917250"
 		hash6 = "b4ae0004094b37a40978ef06f311a75e"
 		hash7 = "e39756bc99ee1b05e5ee92a1cdd5faf4"
-		uuid = "25ec8d54-9875-5bf5-abc9-296f18f3c5e5"
+		id = "25ec8d54-9875-5bf5-abc9-296f18f3c5e5"
 	strings:
 		$s0 = "MYUSER32.dll" fullword ascii
 		$s1 = "MYADVAPI32.dll" fullword ascii
@@ -95,7 +95,7 @@ rule APT30_Sample_4 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "75367d8b506031df5923c2d8d7f1b9f643a123cd"
-		uuid = "e5c6afde-0ab5-54ed-8d18-5ad477a527d7"
+		id = "e5c6afde-0ab5-54ed-8d18-5ad477a527d7"
 	strings:
 		$s0 = "GetStartupIn" ascii
 		$s1 = "enMutex" ascii
@@ -115,7 +115,7 @@ rule APT30_Sample_5 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "1a2dd2a0555dc746333e7c956c58f7c4cdbabd4b"
-		uuid = "bdbebe44-7423-5793-8a42-4f9b70de2231"
+		id = "bdbebe44-7423-5793-8a42-4f9b70de2231"
 	strings:
 		$s0 = "Version 4.7.3001" fullword wide
 		$s1 = "Copyright (c) Microsoft Corporation 2004" fullword wide
@@ -134,7 +134,7 @@ rule APT30_Sample_6 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "00e69b059ad6b51b76bc476a115325449d10b4c0"
-		uuid = "2f19809c-09fc-51bf-9a20-6b95099a92dd"
+		id = "2f19809c-09fc-51bf-9a20-6b95099a92dd"
 	strings:
 		$s0 = "GreateProcessA" fullword ascii
 		$s1 = "Ternel32.dll" fullword ascii
@@ -150,7 +150,7 @@ rule APT30_Sample_7 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "868d1f4c106a08bd2e5af4f23139f0e0cd798fba"
-		uuid = "612732d9-8df5-5388-b299-2da4f8118435"
+		id = "612732d9-8df5-5388-b299-2da4f8118435"
 	strings:
 		$s0 = "datain" fullword ascii
 		$s3 = "C:\\Prog" ascii
@@ -174,7 +174,7 @@ rule APT30_Generic_E {
 		hash3 = "8ff473bedbcc77df2c49a91167b1abeb"
 		hash4 = "a813eba27b2166620bd75029cc1f04b0"
 		hash5 = "b5546842e08950bc17a438d785b5a019"
-		uuid = "69e76a59-3529-541d-9017-07e6d67fbda4"
+		id = "69e76a59-3529-541d-9017-07e6d67fbda4"
 	strings:
 		$s0 = "Nkfvtyvn}" ascii
 		$s6 = "----------------g_nAV=%d,hWnd:0x%X,className:%s,Title:%s,(%d,%d,%d,%d),BOOL=%d" fullword ascii
@@ -190,7 +190,7 @@ rule APT30_Sample_8 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "9531e21652143b8b129ab8c023dc05fef2a17cc3"
-		uuid = "5053c2db-32a9-58ae-9a72-eb16ef14168e"
+		id = "5053c2db-32a9-58ae-9a72-eb16ef14168e"
 	strings:
 		$s0 = "ateProcessA" ascii
 		$s1 = "Ternel32.dllFQ" fullword ascii
@@ -214,7 +214,7 @@ rule APT30_Generic_B {
 		hash5 = "65232a8d555d7c4f7bc0d7c5da08c593"
 		hash6 = "853a20f5fc6d16202828df132c41a061"
 		hash7 = "ed151602dea80f39173c2f7b1dd58e06"
-		uuid = "df3b8896-7229-5b3b-ad2f-774b0cea167c"
+		id = "df3b8896-7229-5b3b-ad2f-774b0cea167c"
 	strings:
 		$s2 = "Moziea/4.0" ascii
 	condition:
@@ -230,7 +230,7 @@ rule APT30_Generic_I {
 		date = "2015/04/13"
 		hash1 = "fe211c7a081c1dac46e3935f7c614549"
 		hash2 = "8c9db773d387bf9b3f2b6a532e4c937c"
-		uuid = "55046e1a-731a-5418-9a7a-4fe1611c77d0"
+		id = "55046e1a-731a-5418-9a7a-4fe1611c77d0"
 	strings:
 		$s0 = "Copyright 2012 Google Inc. All rights reserved." fullword wide
 		$s1 = "(Prxy%c-%s:%u)" fullword ascii
@@ -247,7 +247,7 @@ rule APT30_Sample_9 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "442bf8690401a2087a340ce4a48151c39101652f"
-		uuid = "bf24bb57-aff9-579c-b8a2-265a6d2a06d0"
+		id = "bf24bb57-aff9-579c-b8a2-265a6d2a06d0"
 	strings:
 		$s0 = "\\Windo" ascii
 		$s2 = "oHHOSTR" ascii
@@ -269,7 +269,7 @@ rule APT30_Sample_10 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "eb518cda3c4f4e6938aaaee07f1f7db8ee91c901"
-		uuid = "e5dd6bc9-9383-5d48-92df-709996373655"
+		id = "e5dd6bc9-9383-5d48-92df-709996373655"
 	strings:
 		$s0 = "Version 4.7.3001" fullword wide
 		$s1 = "Copyright (c) Microsoft Corporation 2004" fullword wide
@@ -290,7 +290,7 @@ rule APT30_Sample_11 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "59066d5d1ee3ad918111ed6fcaf8513537ff49a6"
-		uuid = "e5dd6bc9-9383-5d48-92df-709996373655"
+		id = "e5dd6bc9-9383-5d48-92df-709996373655"
 	strings:
 		$s0 = "System\\CurrentControlSet\\control\\ComputerName\\ComputerName" fullword ascii
 		$s1 = "msofscan.exe" fullword wide
@@ -319,7 +319,7 @@ rule APT30_Sample_12 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "b02b5720ff0f73f01eb2ba029a58b645c987c4bc"
-		uuid = "e5dd6bc9-9383-5d48-92df-709996373655"
+		id = "e5dd6bc9-9383-5d48-92df-709996373655"
 	strings:
 		$s0 = "Richic" fullword ascii
 		$s1 = "Accept: image/gif, */*" fullword ascii
@@ -336,7 +336,7 @@ rule APT30_Sample_13 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "a359f705a833c4a4254443b87645fd579aa94bcf"
-		uuid = "e5dd6bc9-9383-5d48-92df-709996373655"
+		id = "e5dd6bc9-9383-5d48-92df-709996373655"
 	strings:
 		$s0 = "msofscan.exe" fullword wide
 		$s1 = "Microsoft? is a registered trademark of Microsoft Corporation." fullword wide
@@ -356,7 +356,7 @@ rule APT30_Sample_14 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "b0740175d20eab79a5d62cdbe0ee1a89212a8472"
-		uuid = "e5dd6bc9-9383-5d48-92df-709996373655"
+		id = "e5dd6bc9-9383-5d48-92df-709996373655"
 	strings:
 		$s0 = "AdobeReader.exe" fullword wide
 		$s4 = "10.1.7.27" fullword wide
@@ -374,7 +374,7 @@ rule APT30_Sample_15 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "7a8576804a2bbe4e5d05d1718f90b6a4332df027"
-		uuid = "e5dd6bc9-9383-5d48-92df-709996373655"
+		id = "e5dd6bc9-9383-5d48-92df-709996373655"
 	strings:
 		$s0 = "\\Windo" ascii
 		$s2 = "HHOSTR"  ascii
@@ -394,7 +394,7 @@ rule APT30_Sample_16 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "066d06ac08b48d3382d46bbeda6ad411b6d6130e"
-		uuid = "e5dd6bc9-9383-5d48-92df-709996373655"
+		id = "e5dd6bc9-9383-5d48-92df-709996373655"
 	strings:
 		$s0 = "\\Temp1020.txt" ascii
 		$s1 = "cmcbqyjs" fullword ascii
@@ -418,7 +418,7 @@ rule APT30_Generic_A {
 		hash3 = "fef9c3b4b35c226501f7d60816bb00331a904d5b"
 		hash4 = "7c9a13f1fdd6452fb6d62067f958bfc5fec1d24e"
 		hash5 = "5257ba027abe3a2cf397bfcae87b13ab9c1e9019"
-		uuid = "6b851d94-d3bd-5c76-8fd0-adb42b3fab73"
+		id = "6b851d94-d3bd-5c76-8fd0-adb42b3fab73"
 	strings:
 		$s5 = "WPVWhhiA" fullword ascii
 		$s6 = "VPWVhhiA" fullword ascii
@@ -436,7 +436,7 @@ rule APT30_Sample_17 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "c3aa52ff1d19e8fc6704777caf7c5bd120056845"
-		uuid = "e5dd6bc9-9383-5d48-92df-709996373655"
+		id = "e5dd6bc9-9383-5d48-92df-709996373655"
 	strings:
 		$s1 = "Nkfvtyvn}]ty}ztU" fullword ascii
 		$s4 = "IEXPL0RE" fullword ascii
@@ -451,7 +451,7 @@ rule APT30_Sample_18 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "355436a16d7a2eba8a284b63bb252a8bb1644751"
-		uuid = "e5dd6bc9-9383-5d48-92df-709996373655"
+		id = "e5dd6bc9-9383-5d48-92df-709996373655"
 	strings:
 		$s0 = "w.km-nyc.com" fullword ascii
 		$s1 = "tscv.exe" fullword ascii
@@ -476,7 +476,7 @@ rule APT30_Generic_G {
 		hash = "53f1358cbc298da96ec56e9a08851b4b"
 		hash = "c2acc9fc9b0f050ec2103d3ba9cb11c0"
 		hash = "f18be055fae2490221c926e2ad55ab11"
-		uuid = "34269de3-4559-58a5-a621-0ad72857dc9e"
+		id = "34269de3-4559-58a5-a621-0ad72857dc9e"
 	strings:
 		$s0 = "%s\\%s\\%s=%s" fullword ascii
 		$s1 = "Copy File %s OK!" fullword ascii
@@ -497,7 +497,7 @@ rule APT30_Sample_19 {
       modified = "2023-01-06"
       score = 75
       hash = "cfa438449715b61bffa20130df8af778ef011e15"
-		uuid = "e5dd6bc9-9383-5d48-92df-709996373655"
+		id = "e5dd6bc9-9383-5d48-92df-709996373655"
    strings:
       $s0 = "C:\\Program Files\\Common Files\\System\\wab32" fullword ascii
       $s1 = "%s,Volume:%s,Type:%s,TotalSize:%uMB,FreeSize:%uMB" fullword ascii
@@ -524,7 +524,7 @@ rule APT30_Generic_E_v2 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "eca53a9f6251ddf438508b28d8a483f91b99a3fd"
-		uuid = "40897687-fb17-568e-9907-e9588a53bbe0"
+		id = "40897687-fb17-568e-9907-e9588a53bbe0"
 	strings:
 		$s0 = "Nkfvtyvn}duf_Z}{Ys" fullword ascii
 		$s1 = "Nkfvtyvn}*Zrswru1i" fullword ascii
@@ -542,7 +542,7 @@ rule APT30_Sample_20 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "b1c37632e604a5d1f430c9351f87eb9e8ea911c0"
-		uuid = "91246101-246b-5da9-9e55-7f361d1f6437"
+		id = "91246101-246b-5da9-9e55-7f361d1f6437"
 	strings:
 		$s0 = "dizhi.gif" fullword ascii
 		$s2 = "Mozilla/u" ascii
@@ -564,7 +564,7 @@ rule APT30_Sample_21 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "d315daa61126616a79a8582145777d8a1565c615"
-		uuid = "72005b40-91f7-5661-9478-8680f999b245"
+		id = "72005b40-91f7-5661-9478-8680f999b245"
 	strings:
 		$s0 = "Service.dll" fullword ascii
 		$s1 = "(%s:%s %s)" fullword ascii
@@ -582,7 +582,7 @@ rule APT30_Sample_22 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "0d17a58c24753e5f8fd5276f62c8c7394d8e1481"
-		uuid = "6c1b3dd2-4383-51a2-9185-2365a4d1e784"
+		id = "6c1b3dd2-4383-51a2-9185-2365a4d1e784"
 	strings:
 		$s1 = "(\\TEMP" fullword ascii
 		$s2 = "Windows\\Cur" fullword ascii
@@ -605,7 +605,7 @@ rule APT30_Generic_F {
 		hash2 = "4c10a1efed25b828e4785d9526507fbc"
 		hash3 = "b7b282c9e3eca888cbdb5a856e07e8bd"
 		hash4 = "df1799845b51300b03072c6569ab96d5"
-		uuid = "cff8b921-9afc-5a52-84cb-825de33fc86e"
+		id = "cff8b921-9afc-5a52-84cb-825de33fc86e"
 	strings:
 		$s0 = "\\~zlzl.exe" ascii
 		$s2 = "\\Internet Exp1orer" ascii
@@ -622,7 +622,7 @@ rule APT30_Sample_23 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "9865e24aadb4480bd3c182e50e0e53316546fc01"
-		uuid = "9366dd34-9967-5b40-935e-4b0d8f2f5e9e"
+		id = "9366dd34-9967-5b40-935e-4b0d8f2f5e9e"
 	strings:
 		$s0 = "hostid" ascii
 		$s1 = "\\Window" ascii
@@ -644,7 +644,7 @@ rule APT30_Sample_24 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "572caa09f2b600daa941c60db1fc410bef8d1771"
-		uuid = "aed2201d-b557-56ec-aa53-fff5b1e17dbd"
+		id = "aed2201d-b557-56ec-aa53-fff5b1e17dbd"
 	strings:
 		$s1 = "dizhi.gif" fullword ascii
 		$s3 = "Mozilla/4.0" fullword ascii
@@ -665,7 +665,7 @@ rule APT30_Sample_25 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "44a21c8b3147fabc668fee968b62783aa9d90351"
-		uuid = "8b2f2ba2-e9cc-5b3c-8af9-4217d662bc3f"
+		id = "8b2f2ba2-e9cc-5b3c-8af9-4217d662bc3f"
 	strings:
 		$s1 = "C:\\WINDOWS" fullword ascii
 		$s2 = "aragua" fullword ascii
@@ -686,7 +686,7 @@ rule APT30_Sample_26 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "e26588113417bf68cb0c479638c9cd99a48e846d"
-		uuid = "aa80a142-c8fc-504e-b475-e9838607bec6"
+		id = "aa80a142-c8fc-504e-b475-e9838607bec6"
 	strings:
 		$s1 = "forcegue" fullword ascii
 		$s3 = "Windows\\Cur" fullword ascii
@@ -712,7 +712,7 @@ rule APT30_Generic_D {
 		hash4 = "6bd422d56e85024e67cc12207e330984"
 		hash5 = "82e13f3031130bd9d567c46a9c71ef2b"
 		hash6 = "b79d87ff6de654130da95c73f66c15fa"
-		uuid = "9b8d8a60-a357-5cfd-8ff1-6264144ad7be"
+		id = "9b8d8a60-a357-5cfd-8ff1-6264144ad7be"
 	strings:
 		$s0 = "Windows Security Service Feedback" fullword wide
 		$s1 = "wssfmgr.exe" fullword wide
@@ -732,7 +732,7 @@ rule APT30_Sample_27 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "959573261ca1d7e5ddcd19447475b2139ca24fe1"
-		uuid = "22815745-086f-59ee-aac1-f35e49aa5835"
+		id = "22815745-086f-59ee-aac1-f35e49aa5835"
 	strings:
 		$s0 = "Mozilla/4.0" fullword ascii
 		$s1 = "dizhi.gif" fullword ascii
@@ -754,7 +754,7 @@ rule APT30_Sample_28 {
 		date = "2015/04/13"
 		hash1 = "e62a63307deead5c9fcca6b9a2d51fb0"
 		hash2 = "5b590798da581c894d8a87964763aa8b"
-		uuid = "1bc8c68f-ebbb-58b1-92aa-5954318096a0"
+		id = "1bc8c68f-ebbb-58b1-92aa-5954318096a0"
 	strings:
 		$s0 = "www.flyeagles.com" fullword ascii
 		$s1 = "iexplore.exe" fullword ascii
@@ -783,7 +783,7 @@ rule APT30_Sample_29 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "44492c53715d7c79895904543843a321491cb23a"
-		uuid = "24334885-fcb4-5a13-82e8-c8465f97361e"
+		id = "24334885-fcb4-5a13-82e8-c8465f97361e"
 	strings:
 		$s0 = "LSSAS.exe" fullword ascii
 		$s1 = "Software\\Microsoft\\FlashDiskInf" fullword ascii
@@ -805,7 +805,7 @@ rule APT30_Sample_30 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "3b684fa40b4f096e99fbf535962c7da5cf0b4528"
-		uuid = "787b288a-6fb4-5483-af76-933651ec6d58"
+		id = "787b288a-6fb4-5483-af76-933651ec6d58"
 	strings:
 		$s0 = "5.1.2600.2180 (xpsp_sp2_rtm.040803-2158)" fullword wide
 		$s3 = "RnhwtxtkyLRRMf{jJ}ny" fullword ascii
@@ -824,7 +824,7 @@ rule APT30_Sample_31 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "8b4271167655787be1988574446125eae5043aca"
-		uuid = "9333870b-7eaa-54dd-a801-7292708fb592"
+		id = "9333870b-7eaa-54dd-a801-7292708fb592"
 	strings:
 		$s0 = "\\ZJRsv.tem" ascii
 		$s1 = "forceguest" fullword ascii
@@ -848,7 +848,7 @@ rule APT30_Generic_J {
 		hash4 = "9982fd829c0048c8f89620691316763a"
 		hash5 = "baff5262ae01a9217b10fcd5dad9d1d5"
 		hash6 = "9982fd829c0048c8f89620691316763a"
-		uuid = "64a5106e-d7f3-5c68-a14e-410149a1bb9e"
+		id = "64a5106e-d7f3-5c68-a14e-410149a1bb9e"
 	strings:
 		$s0 = "Launcher.EXE" fullword wide
 		$s1 = "Symantec Security Technologies" fullword wide
@@ -876,7 +876,7 @@ rule APT30_Microfost {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "57169cb4b8ef7a0d7ebd7aa039d1a1efd6eb639e"
-		uuid = "19231001-1da3-5be6-8275-03c9fc7c6377"
+		id = "19231001-1da3-5be6-8275-03c9fc7c6377"
 	strings:
 		$s1 = "Copyright (c) 2007 Microfost All Rights Reserved" fullword wide
 		$s2 = "Microfost" fullword wide
@@ -893,7 +893,7 @@ rule APT30_Generic_K {
       modified = "2023-01-06"
       score = 75
       hash = "142bc01ad412799a7f9ffed994069fecbd5a2f93"
-      uuid = "49629825-4233-5d74-b763-b2500536eb90"
+      id = "49629825-4233-5d74-b763-b2500536eb90"
    strings:
       $x1 = "Maybe a Encrypted Flash" fullword ascii
 
@@ -924,7 +924,7 @@ rule APT30_Sample_33 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "72c568ee2dd75406858c0294ccfcf86ad0e390e4"
-		uuid = "be6afc4a-97fe-56ba-b057-e21415f9833d"
+		id = "be6afc4a-97fe-56ba-b057-e21415f9833d"
 	strings:
 		$s0 = "Version 4.7.3001" fullword wide
 		$s1 = "msmsgr.exe" fullword wide
@@ -946,7 +946,7 @@ rule APT30_Sample_34 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "216868edbcdd067bd2a9cce4f132d33ba9c0d818"
-		uuid = "a4802e13-4151-5f17-ba91-dcf9ef6b52bb"
+		id = "a4802e13-4151-5f17-ba91-dcf9ef6b52bb"
 	strings:
 		$s0 = "dizhi.gif" ascii
 		$s1 = "eagles.vip.nse" ascii
@@ -967,7 +967,7 @@ rule APT30_Sample_35 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "df48a7cd6c4a8f78f5847bad3776abc0458499a6"
-		uuid = "8a30720b-06da-5a82-8bab-bf06121afd68"
+		id = "8a30720b-06da-5a82-8bab-bf06121afd68"
 	strings:
 		$s0 = "WhBoyIEXPLORE.EXE.exe" fullword ascii
 		$s5 = "Startup>A" fullword ascii
@@ -984,7 +984,7 @@ rule APT30_Sample_1 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "8cea83299af8f5ec6c278247e649c9d91d4cf3bc"
-		uuid = "e5dd6bc9-9383-5d48-92df-709996373655"
+		id = "e5dd6bc9-9383-5d48-92df-709996373655"
 	strings:
 		$s0 = "#hostid" fullword ascii
 		$s1 = "\\Windows\\C" ascii
@@ -1010,7 +1010,7 @@ rule APT30_Generic_1 {
 		hash4 = "d5cb07d178963f2dea2c754d261185ecc94e09d6"
 		hash5 = "626dcdd7357e1f8329e9137d0f9883f57ec5c163"
 		hash6 = "843997b36ed80d3aeea3c822cb5dc446b6bfa7b9"
-		uuid = "4d21f402-24da-5e38-9225-a1461e61802f"
+		id = "4d21f402-24da-5e38-9225-a1461e61802f"
 	strings:
 		$s0 = "%s\\%s.txt" fullword
 		$s1 = "\\ldsysinfo.txt"
@@ -1067,7 +1067,7 @@ rule APT30_Generic_2 {
 		hash27 = "43a3fc9a4fee43252e9a570492e4efe33043e710"
 		hash28 = "7406ebef11ca9f97c101b37f417901c70ab514b1"
 		hash29 = "53ed9b22084f89b4b595938e320f20efe65e0409"
-		uuid = "60d7d661-50e8-5a9b-8366-eda8ff8ad9d4"
+		id = "60d7d661-50e8-5a9b-8366-eda8ff8ad9d4"
 	strings:
 		$s0 = "%s\\%s\\KB985109.log" fullword
 		$s1 = "%s\\%s\\KB989109.log" fullword
@@ -1119,7 +1119,7 @@ rule APT30_Generic_4 {
 		hash1 = "b47e20ac5889700438dc241f28f4e224070810d2"
 		hash2 = "a9a50673ac000a313f3ddba55d63d9773b9f4143"
 		hash3 = "ac96d7f5957aef09bd983465c497de24c6d17a92"
-		uuid = "2b246ae2-ec7d-5813-913e-729e4192da59"
+		id = "2b246ae2-ec7d-5813-913e-729e4192da59"
 	strings:
 		$s0 = "del NetEagle_Scout.bat" fullword
 		$s1 = "NetEagle_Scout.bat" fullword
@@ -1150,7 +1150,7 @@ rule APT30_Generic_5 {
 		hash0 = "cb4833220c508182c0ccd4e0d5a867d6c4e675f8"
 		hash1 = "dfc9a87df2d585c479ab02602133934b055d156f"
 		hash2 = "bf59d5ff7d38ec5ffb91296e002e8742baf24db5"
-		uuid = "e00a670e-cd95-515f-8109-219ce5121ba4"
+		id = "e00a670e-cd95-515f-8109-219ce5121ba4"
 	strings:
 		$s0 = "regsvr32 /s \"%ProgramFiles%\\Norton360\\Engine\\5.1.0.29\\ashelper.dll\"" fullword
 		$s1 = "name=\"ftpserver.exe\"/>" fullword
@@ -1173,7 +1173,7 @@ rule APT30_Generic_6 {
 		hash0 = "b9aafb575d3d1732cb8fdca5ea226cebf86ea3c9"
 		hash1 = "2c5e347083b77c9ead9e75d41e2fabe096460bba"
 		hash2 = "5d39a567b50c74c4a921b5f65713f78023099933"
-		uuid = "dfd104bd-daf4-593a-b161-61f43aec048c"
+		id = "dfd104bd-daf4-593a-b161-61f43aec048c"
 	strings:
 		$s0 = "GetStar" fullword
 		$s1 = ".rdUaS" fullword
@@ -1196,7 +1196,7 @@ rule APT30_Generic_7 {
 		hash0 = "2415f661046fdbe3eea8cd276b6f13354019b1a6"
 		hash1 = "e814914079af78d9f1b71000fee3c29d31d9b586"
 		hash2 = "0263de239ccef669c47399856d481e3361408e90"
-		uuid = "bba40092-267b-5231-92f1-f222c9f888ee"
+		id = "bba40092-267b-5231-92f1-f222c9f888ee"
 	strings:
 		$s1 = "Xjapor_*ata" fullword
 		$s2 = "Xjapor_o*ata" fullword
@@ -1215,7 +1215,7 @@ rule APT30_Generic_8 {
 		hash0 = "b47e20ac5889700438dc241f28f4e224070810d2"
 		hash1 = "a9a50673ac000a313f3ddba55d63d9773b9f4143"
 		hash2 = "ac96d7f5957aef09bd983465c497de24c6d17a92"
-		uuid = "a6845222-0a3e-5327-a448-36e8d54362a5"
+		id = "a6845222-0a3e-5327-a448-36e8d54362a5"
 	strings:
 		$s0 = "Windows NT4.0" fullword
 		$s1 = "Windows NT3.51" fullword
@@ -1243,7 +1243,7 @@ rule APT30_Generic_9 {
 		hash1 = "27a2b981d4c0bb8c3628bfe990db4619ddfdff74"
 		hash2 = "05f66492c163ec2a24c6a87c7a43028c5f632437"
 		hash3 = "263f094da3f64e72ef8dc3d02be4fb33de1fdb96"
-		uuid = "cf259f8d-e0a9-579d-93e7-ec14d99faf81"
+		id = "cf259f8d-e0a9-579d-93e7-ec14d99faf81"
 	strings:
 		$s0 = "%s\\%s\\$NtRecDoc$" fullword
 		$s1 = "%s(%u)%s" fullword

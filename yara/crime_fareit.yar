@@ -21,7 +21,7 @@ rule Fareit_Trojan_Oct15 {
 		hash5 = "9486b73eac92497e703615479d52c85cfb772b4ca6c846ef317729910e7c545f"
 		hash6 = "c3300c648aebac7bf1d90f58ea75660c78604410ca0fa705d3b8ec1e0a45cdd9"
 		hash7 = "ff83e9fcfdec4ffc748e0095391f84a8064ac958a274b9684a771058c04cb0fa"
-		uuid = "725abb2a-7675-51b5-aed8-594e4826a6b4"
+		id = "725abb2a-7675-51b5-aed8-594e4826a6b4"
 	strings:
 		$s1 = "ebai.exe" fullword wide
 		$s2 = "Origina" fullword wide

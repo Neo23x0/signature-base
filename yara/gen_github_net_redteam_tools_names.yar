@@ -7,7 +7,7 @@ rule HKTL_NET_NAME_FakeFileMaker {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "2c87114f-5295-583f-b567-623d478ce0eb"
+        id = "2c87114f-5295-583f-b567-623d478ce0eb"
     strings:
         $name = "FakeFileMaker" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -22,7 +22,7 @@ rule HKTL_NET_NAME_WMIPersistence {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "7a674596-c697-569d-a16c-3cefe4ff752a"
+        id = "7a674596-c697-569d-a16c-3cefe4ff752a"
     strings:
         $name = "WMIPersistence" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -61,7 +61,7 @@ rule HKTL_NET_AdCollector_Sep22_1 {
       score = 75
       hash1 = "241390219a0a773463601ca68b77af97453c20af00a66492a7a78c04d481d338"
       hash2 = "cc086eb7316e68661e3d547b414890d5029c5cc460134d8b628f4b0be7f27fb3"
-      uuid = "48b376e4-752b-523e-b34e-65b6944c33fb"
+      id = "48b376e4-752b-523e-b34e-65b6944c33fb"
    strings:
       $x1 = "ADCollector.exe --SPNs --Term key --Acls 'CN=Domain Admins,CN=Users,DC=lab,DC=local'" wide fullword
       $s1 = "ADCollector.exe" wide fullword
@@ -81,7 +81,7 @@ rule HKTL_NET_NAME_MaliciousClickOnceGenerator {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "683af3b4-4c91-5ff3-96bf-d5c1d9c19cc2"
+        id = "683af3b4-4c91-5ff3-96bf-d5c1d9c19cc2"
     strings:
         $name = "MaliciousClickOnceGenerator" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -96,7 +96,7 @@ rule HKTL_NET_NAME_directInjectorPOC {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "d9a430d7-b062-554b-aff4-cfd98d91e9fe"
+        id = "d9a430d7-b062-554b-aff4-cfd98d91e9fe"
     strings:
         $name = "directInjectorPOC" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -111,7 +111,7 @@ rule HKTL_NET_NAME_AsStrongAsFuck {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "4c63c8a2-5889-5177-9f66-8e5f755025a3"
+        id = "4c63c8a2-5889-5177-9f66-8e5f755025a3"
     strings:
         $name = "AsStrongAsFuck" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -126,7 +126,7 @@ rule HKTL_NET_NAME_MagentoScanner {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "db3912bd-574c-57e2-a9b6-4b440d144471"
+        id = "db3912bd-574c-57e2-a9b6-4b440d144471"
     strings:
         $name = "MagentoScanner" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -141,7 +141,7 @@ rule HKTL_NET_NAME_RevengeRAT_Stub_CSsharp {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "06dce4f9-4d7a-5976-a87a-07c539e5dbe8"
+        id = "06dce4f9-4d7a-5976-a87a-07c539e5dbe8"
     strings:
         $name = "RevengeRAT-Stub-CSsharp" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -156,7 +156,7 @@ rule HKTL_NET_NAME_SharPyShell {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "3069c5eb-446e-5bfa-9df0-2e03f229d4d1"
+        id = "3069c5eb-446e-5bfa-9df0-2e03f229d4d1"
     strings:
         $name = "SharPyShell" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -171,7 +171,7 @@ rule HKTL_NET_NAME_GhostLoader {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "d8d88f3f-f250-55ff-88a6-4623e12ef89d"
+        id = "d8d88f3f-f250-55ff-88a6-4623e12ef89d"
     strings:
         $name = "GhostLoader" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -187,7 +187,7 @@ rule HKTL_NET_NAME_DotNetInject {
         author = "Arnim Rupp"
         date = "2021-01-22"
         modified = "2022-06-28"
-        uuid = "468f89c4-5b94-53be-b9e6-ad21de7d98ba"
+        id = "468f89c4-5b94-53be-b9e6-ad21de7d98ba"
     strings:
         $name = "DotNetInject" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -208,7 +208,7 @@ rule HKTL_NET_NAME_ATPMiniDump {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "97981569-fe94-5600-8319-946edb4265e7"
+        id = "97981569-fe94-5600-8319-946edb4265e7"
     strings:
         $name = "ATPMiniDump" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -225,7 +225,7 @@ rule SUSP_NET_NAME_ConfuserEx {
         score = 40
         date = "2021-01-22"
         modified = "2021-01-25"
-        uuid = "f1bda14e-c9fe-5341-8962-691a66233eb0"
+        id = "f1bda14e-c9fe-5341-8962-691a66233eb0"
     strings:
         $name = "ConfuserEx" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -240,7 +240,7 @@ rule HKTL_NET_NAME_SharpBuster {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "d30c8ee5-88b9-53b5-b209-51f6f3b988cf"
+        id = "d30c8ee5-88b9-53b5-b209-51f6f3b988cf"
     strings:
         $name = "SharpBuster" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -256,7 +256,7 @@ rule HKTL_NET_NAME_AmsiBypass {
 		hash = "8fa4ba512b34a898c4564a8eac254b6a786d195b"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "26db14d8-1034-5bd1-a719-4756c832901d"
+        id = "26db14d8-1034-5bd1-a719-4756c832901d"
     strings:
         $name = "AmsiBypass" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -271,7 +271,7 @@ rule HKTL_NET_NAME_Recon_AD {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "097de5cd-0cd4-59cc-a7b7-54cad8e6d230"
+        id = "097de5cd-0cd4-59cc-a7b7-54cad8e6d230"
     strings:
         $name = "Recon-AD" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -286,7 +286,7 @@ rule HKTL_NET_NAME_SharpWatchdogs {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "5343be58-879a-5fe7-9036-ee6a22d85f22"
+        id = "5343be58-879a-5fe7-9036-ee6a22d85f22"
     strings:
         $name = "SharpWatchdogs" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -301,7 +301,7 @@ rule HKTL_NET_NAME_SharpCat {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "a46be8d3-bf7b-5d86-b88b-33e6c8c152d8"
+        id = "a46be8d3-bf7b-5d86-b88b-33e6c8c152d8"
     strings:
         $name = "SharpCat" ascii wide fullword
         $compile = "AssemblyTitle" ascii wide fullword
@@ -316,7 +316,7 @@ rule HKTL_NET_NAME_K8tools {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "b30fc856-073d-542f-b222-a957322732c2"
+        id = "b30fc856-073d-542f-b222-a957322732c2"
     strings:
         $name = "K8tools" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -331,7 +331,7 @@ rule HKTL_NET_NAME_HTTPSBeaconShell {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "3bd7234b-a23e-5818-aed1-52d42023943b"
+        id = "3bd7234b-a23e-5818-aed1-52d42023943b"
     strings:
         $name = "HTTPSBeaconShell" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -346,7 +346,7 @@ rule HKTL_NET_NAME_Ghostpack_CompiledBinaries {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "7cc81894-8c01-5a17-a7ed-1cb4cf1e2d53"
+        id = "7cc81894-8c01-5a17-a7ed-1cb4cf1e2d53"
     strings:
         $name = "Ghostpack-CompiledBinaries" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -361,7 +361,7 @@ rule HKTL_NET_NAME_metasploit_sharp {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "b425f241-4887-5368-b42b-3fbbd3b769c6"
+        id = "b425f241-4887-5368-b42b-3fbbd3b769c6"
     strings:
         $name = "metasploit-sharp" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -376,7 +376,7 @@ rule HKTL_NET_NAME_trevorc2 {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "d1634a0d-6964-5886-b836-85c3ce6b8a17"
+        id = "d1634a0d-6964-5886-b836-85c3ce6b8a17"
     strings:
         $name = "trevorc2" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -391,7 +391,7 @@ rule HKTL_NET_NAME_NativePayload_DNS2 {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "0fa01355-de57-573e-9056-0b7a5d24572d"
+        id = "0fa01355-de57-573e-9056-0b7a5d24572d"
     strings:
         $name = "NativePayload_DNS2" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -406,7 +406,7 @@ rule HKTL_NET_NAME_AggressiveProxy {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "e2d3c4e2-404b-59f8-b3d0-a7cef4dfd0ff"
+        id = "e2d3c4e2-404b-59f8-b3d0-a7cef4dfd0ff"
     strings:
         $name = "AggressiveProxy" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -421,7 +421,7 @@ rule HKTL_NET_NAME_MSBuildAPICaller {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "143da57f-b01f-5688-b741-1bc4d06cd7d1"
+        id = "143da57f-b01f-5688-b741-1bc4d06cd7d1"
     strings:
         $name = "MSBuildAPICaller" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -436,7 +436,7 @@ rule HKTL_NET_NAME_GrayKeylogger {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "c63875b6-1701-5594-927e-833c25dc5d98"
+        id = "c63875b6-1701-5594-927e-833c25dc5d98"
     strings:
         $name = "GrayKeylogger" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -451,7 +451,7 @@ rule HKTL_NET_NAME_weevely3 {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "6bf766b6-d065-5a84-8258-3be448b9cbb8"
+        id = "6bf766b6-d065-5a84-8258-3be448b9cbb8"
     strings:
         $name = "weevely3" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -466,7 +466,7 @@ rule HKTL_NET_NAME_FudgeC2 {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "a8e70bce-76dd-53dc-9a19-1cc6795fdef3"
+        id = "a8e70bce-76dd-53dc-9a19-1cc6795fdef3"
     strings:
         $name = "FudgeC2" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -481,7 +481,7 @@ rule HKTL_NET_NAME_NativePayload_Reverse_tcp {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "a6b935cc-adb6-5ff4-a832-1043e77292f7"
+        id = "a6b935cc-adb6-5ff4-a832-1043e77292f7"
     strings:
         $name = "NativePayload_Reverse_tcp" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -496,7 +496,7 @@ rule HKTL_NET_NAME_SharpHose {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "89b00eb0-f1a2-5c77-a5b0-2329b08aadb7"
+        id = "89b00eb0-f1a2-5c77-a5b0-2329b08aadb7"
     strings:
         $name = "SharpHose" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -511,7 +511,7 @@ rule HKTL_NET_NAME_RAT_NjRat_0_7d_modded_source_code {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "2b7d1f75-0164-561e-8199-32c601cbca98"
+        id = "2b7d1f75-0164-561e-8199-32c601cbca98"
     strings:
         $name = "RAT-NjRat-0.7d-modded-source-code" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -526,7 +526,7 @@ rule HKTL_NET_NAME_RdpThief {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "5ad4feec-50db-5ebb-a609-9196e72a24aa"
+        id = "5ad4feec-50db-5ebb-a609-9196e72a24aa"
     strings:
         $name = "RdpThief" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -541,7 +541,7 @@ rule HKTL_NET_NAME_RunasCs {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "c5fc5b01-1d30-5af5-be99-e629cb23295b"
+        id = "c5fc5b01-1d30-5af5-be99-e629cb23295b"
     strings:
         $name = "RunasCs" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -556,7 +556,7 @@ rule HKTL_NET_NAME_NativePayload_IP6DNS {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "3b32b408-e71a-5f2a-ae6f-72a3d6572b71"
+        id = "3b32b408-e71a-5f2a-ae6f-72a3d6572b71"
     strings:
         $name = "NativePayload_IP6DNS" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -571,7 +571,7 @@ rule HKTL_NET_NAME_NativePayload_ARP {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "9fac11f8-4e40-5cbc-a990-2ae48df20828"
+        id = "9fac11f8-4e40-5cbc-a990-2ae48df20828"
     strings:
         $name = "NativePayload_ARP" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -586,7 +586,7 @@ rule HKTL_NET_NAME_C2Bridge {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "357051aa-61ea-5454-a996-b4e3a45ac865"
+        id = "357051aa-61ea-5454-a996-b4e3a45ac865"
     strings:
         $name = "C2Bridge" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -601,7 +601,7 @@ rule HKTL_NET_NAME_Infrastructure_Assessment {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "efacc12b-92b3-5b22-b5bb-cd5a7d7eea0e"
+        id = "efacc12b-92b3-5b22-b5bb-cd5a7d7eea0e"
     strings:
         $name = "Infrastructure-Assessment" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -616,7 +616,7 @@ rule HKTL_NET_NAME_shellcodeTester {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "964093a4-e6d7-51b7-928a-b1cd40dc11cc"
+        id = "964093a4-e6d7-51b7-928a-b1cd40dc11cc"
     strings:
         $name = "shellcodeTester" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -631,7 +631,7 @@ rule HKTL_NET_NAME_gray_hat_csharp_code {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "0a94cadc-cc7b-5817-8788-bb1e53937fad"
+        id = "0a94cadc-cc7b-5817-8788-bb1e53937fad"
     strings:
         $name = "gray_hat_csharp_code" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -646,7 +646,7 @@ rule HKTL_NET_NAME_NativePayload_ReverseShell {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "eec77c09-02db-5d74-8526-e201d2fe6fc8"
+        id = "eec77c09-02db-5d74-8526-e201d2fe6fc8"
     strings:
         $name = "NativePayload_ReverseShell" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -661,7 +661,7 @@ rule HKTL_NET_NAME_DotNetAVBypass {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "918eba2b-150d-5e69-bed0-0979ae889165"
+        id = "918eba2b-150d-5e69-bed0-0979ae889165"
     strings:
         $name = "DotNetAVBypass" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -676,7 +676,7 @@ rule HKTL_NET_NAME_HexyRunner {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "67741b4d-7336-5c88-8f2c-e48c10b187b9"
+        id = "67741b4d-7336-5c88-8f2c-e48c10b187b9"
     strings:
         $name = "HexyRunner" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -691,7 +691,7 @@ rule HKTL_NET_NAME_SharpOffensiveShell {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "f223fb95-9f16-5504-a6ce-de9d75b38eaa"
+        id = "f223fb95-9f16-5504-a6ce-de9d75b38eaa"
     strings:
         $name = "SharpOffensiveShell" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -706,7 +706,7 @@ rule HKTL_NET_NAME_reconness {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "a30188e4-d96a-59d0-9f51-d7a7e07b14ba"
+        id = "a30188e4-d96a-59d0-9f51-d7a7e07b14ba"
     strings:
         $name = "reconness" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -721,7 +721,7 @@ rule HKTL_NET_NAME_tvasion {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "324cddc6-36d9-5670-827e-24e80dcc66a9"
+        id = "324cddc6-36d9-5670-827e-24e80dcc66a9"
     strings:
         $name = "tvasion" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -736,7 +736,7 @@ rule HKTL_NET_NAME_ibombshell {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "02f3272f-8e75-5df4-9052-a315ae202050"
+        id = "02f3272f-8e75-5df4-9052-a315ae202050"
     strings:
         $name = "ibombshell" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -751,7 +751,7 @@ rule HKTL_NET_NAME_RemoteProcessInjection {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "f1698cf2-211a-551a-8bc4-4faefcc6106f"
+        id = "f1698cf2-211a-551a-8bc4-4faefcc6106f"
     strings:
         $name = "RemoteProcessInjection" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -766,7 +766,7 @@ rule HKTL_NET_NAME_CACTUSTORCH {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "7b1e3015-fada-592c-b120-20aa12247d32"
+        id = "7b1e3015-fada-592c-b120-20aa12247d32"
     strings:
         $name = "CACTUSTORCH" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -781,7 +781,7 @@ rule HKTL_NET_NAME_PandaSniper {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "006400fb-7e6d-563b-ba78-17937983c9ba"
+        id = "006400fb-7e6d-563b-ba78-17937983c9ba"
     strings:
         $name = "PandaSniper" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -796,7 +796,7 @@ rule HKTL_NET_NAME_xbapAppWhitelistBypassPOC {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "b05253ce-cba4-531d-8f39-d8fae71b114d"
+        id = "b05253ce-cba4-531d-8f39-d8fae71b114d"
     strings:
         $name = "xbapAppWhitelistBypassPOC" ascii wide
         $compile = "AssemblyTitle" ascii wide
@@ -811,7 +811,7 @@ rule HKTL_NET_NAME_StageStrike {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp"
         date = "2021-01-22"
-        uuid = "e3f9de04-87f6-5b07-b5b0-a26167937fcc"
+        id = "e3f9de04-87f6-5b07-b5b0-a26167937fcc"
     strings:
         $name = "StageStrike" ascii wide
         $compile = "AssemblyTitle" ascii wide

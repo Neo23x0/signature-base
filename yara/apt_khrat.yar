@@ -18,7 +18,7 @@ rule KHRAT_Malware {
       reference = "https://researchcenter.paloaltonetworks.com/2017/08/unit42-updated-khrat-malware-used-in-cambodia-attacks/"
       date = "2017-08-31"
       hash1 = "53e27fd13f26462a58fa5587ecd244cab4da23aa80cf0ed6eb5ee9f9de2688c1"
-      uuid = "3e6a5aca-9898-5864-8974-ca4adf272893"
+      id = "3e6a5aca-9898-5864-8974-ca4adf272893"
    condition:
       uint16(0) == 0x5a4d and filesize < 100KB and pe.imphash() == "6a8478ad861f98f8428a042f74de1944"
 }
@@ -31,7 +31,7 @@ rule MAL_KHRAT_script {
       reference = "https://researchcenter.paloaltonetworks.com/2017/08/unit42-updated-khrat-malware-used-in-cambodia-attacks/"
       date = "2017-08-31"
       hash1 = "8c88b4177b59f4cac820b0019bcc7f6d3d50ce4badb689759ab0966780ae32e3"
-      uuid = "fd345647-4887-560e-a6b2-129a880026aa"
+      id = "fd345647-4887-560e-a6b2-129a880026aa"
    strings:
       $x1 = "CreateObject(\"WScript.Shell\").Run \"schtasks /create /sc MINUTE /tn" ascii
       $x2 = "CreateObject(\"WScript.Shell\").Run \"rundll32.exe javascript:\"\"\\..\\mshtml,RunHTMLApplication" ascii
@@ -48,7 +48,7 @@ rule MAL_KHRAT_scritplet {
       reference = "https://researchcenter.paloaltonetworks.com/2017/08/unit42-updated-khrat-malware-used-in-cambodia-attacks/"
       date = "2017-08-31"
       hash1 = "cdb9104636a6f7c6018fe99bc18fb8b542689a84c23c10e9ea13d5aa275fd40e"
-      uuid = "f72d68a3-0409-5401-b6a1-ca8f188d7409"
+      id = "f72d68a3-0409-5401-b6a1-ca8f188d7409"
    strings:
       $x1 = "http.open \"POST\", \"http://update.upload-dropbox[.]com/docs/tz/GetProcess.php\",False,\"\",\"\" " fullword ascii
       $x2 = "Process=Process & Chr(32) & Chr(32) & Chr(32) & Obj.Description" fullword ascii

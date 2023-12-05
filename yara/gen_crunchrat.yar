@@ -7,7 +7,7 @@ rule CrunchRAT {
       reference = "https://github.com/t3ntman/CrunchRAT"
       date = "2017-11-03"
       hash1 = "58a07e96497745b6fd5075d569f17b0254c3e50b0234744e0487f7c5dddf7161"
-      uuid = "da7d9b5c-6ccc-5960-9daa-4df612545751"
+      id = "da7d9b5c-6ccc-5960-9daa-4df612545751"
    strings:
       $x1 = "----CrunchRAT" fullword wide
       $x2 = "\\Debug\\CrunchRAT" ascii

@@ -6,7 +6,7 @@ rule APT_ArtraDownloader2_Aug19_1 {
       reference = "https://unit42.paloaltonetworks.com/multiple-artradownloader-variants-used-by-bitter-to-target-pakistan/"
       date = "2019-08-27"
       hash1 = "f0ef4242cc6b8fa3728b61d2ce86ea934bd59f550de9167afbca0b0aaa3b2c22"
-      uuid = "0e688e92-2366-5f36-a32d-083982181eb7"
+      id = "0e688e92-2366-5f36-a32d-083982181eb7"
    strings:
       $xc1 = { 47 45 54 20 25 73 20 48 54 54 50 2F 31 2E 30 00
                0D 0A 00 00 48 6F 73 74 3A 20 25 73 00 00 00 00

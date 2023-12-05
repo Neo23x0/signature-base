@@ -6,7 +6,7 @@ rule VULN_KeePass_DB_Brute_Forcible {
       date = "2023-07-20"
       score = 60
       reference = "https://keepass.info/help/base/security.html#secdictprotect"
-      uuid = "b1a86e03-b3d1-5abc-9287-a4846451caff"
+      id = "b1a86e03-b3d1-5abc-9287-a4846451caff"
    strings:
       $keepass_magic = { 03 D9 A2 9A 67 FB 4B B5 }
       // bytes 3-5 (after 06 08) are the number of iterations. if byte 3 is 00 the iterations are below 65536

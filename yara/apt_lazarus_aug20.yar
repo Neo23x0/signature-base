@@ -5,7 +5,7 @@ rule APT_NK_Lazarus_RC4_Loop {
       description = "Detects RC4 loop in Lazarus Group implant" 
       date = "2020-06-10"
       reference = "https://labs.f-secure.com/publications/ti-report-lazarus-group-cryptocurrency-vertical"
-      uuid = "a9503795-b4b8-505e-a1bf-df64ec8c1c32"
+      id = "a9503795-b4b8-505e-a1bf-df64ec8c1c32"
    strings:
       $str_rc4_loop = { 41 FE 8? 00 01 00 00 45 0F B6 ?? 00 01 00 00 48 
                         FF C? 43 0F B6 0? ?? 41 00 8? 01 01 00 00 41 0F 
@@ -20,7 +20,7 @@ rule APT_NK_Lazarus_Network_Backdoor_Unpacked {
       description = "Detects unpacked variant of Lazarus Group network backdoor" 
       date = "2020-06-10"      
       reference = "https://labs.f-secure.com/publications/ti-report-lazarus-group-cryptocurrency-vertical"
-      uuid = "8eda9e74-1a19-5510-82d8-cd2eb324629c"
+      id = "8eda9e74-1a19-5510-82d8-cd2eb324629c"
    strings:
       $str_netsh_1 = "netsh firewall add portopening TCP %d" ascii wide nocase 
       $str_netsh_2 = "netsh firewall delete portopening TCP %d" ascii wide nocase 

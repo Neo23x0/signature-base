@@ -18,7 +18,7 @@ rule GoldDragon_malware_Feb18_1 {
       reference = "https://securingtomorrow.mcafee.com/mcafee-labs/gold-dragon-widens-olympics-malware-attacks-gains-permanent-presence-on-victims-systems/"
       date = "2018-02-03"
       score = 90
-      uuid = "1da29f0f-4e83-56a0-b843-3b19d9b9a1b7"
+      id = "1da29f0f-4e83-56a0-b843-3b19d9b9a1b7"
    condition:
       uint16(0) == 0x5a4d and filesize < 300KB and (
          pe.imphash() == "168c2f7752511dfd263a83d5d08a90db" or
@@ -36,7 +36,7 @@ rule GoldDragon_Aux_File {
       reference = "https://securingtomorrow.mcafee.com/mcafee-labs/gold-dragon-widens-olympics-malware-attacks-gains-permanent-presence-on-victims-systems/"
       date = "2018-02-03"
       score = 90
-      uuid = "8f23dec4-e369-500f-a036-32df13e5543e"
+      id = "8f23dec4-e369-500f-a036-32df13e5543e"
    strings:
       $x1 = "/////////////////////regkeyenum////////////" ascii
    condition:
@@ -59,7 +59,7 @@ rule GoldDragon_Ghost419_RAT {
       hash7 = "ae1b32aac4d8a35e2c62e334b794373c7457ebfaaab5e5e8e46f3928af07cde4"
       hash8 = "c54837d0b856205bd4ae01887aae9178f55f16e0e1a1e1ff59bd18dbc8a3dd82"
       hash9 = "db350bb43179f2a43a1330d82f3afeb900db5ff5094c2364d0767a3e6b97c854"
-      uuid = "8ac951d5-4a18-50c5-8ded-8a0a6b585fd6"
+      id = "8ac951d5-4a18-50c5-8ded-8a0a6b585fd6"
    strings:
       $x2 = "WebKitFormBoundarywhpFxMBe19cSjFnG" ascii
       $x3 = "\\Microsoft\\HNC\\" ascii
@@ -95,7 +95,7 @@ rule GoldDragon_RunningRAT {
       hash1 = "0852f2c5741997d8899a34bb95c349d7a9fb7277cd0910656c3ce37a6f11cb88"
       hash2 = "2981e1a1b3c395cee6e4b9e6c46d062cf6130546b04401d724750e4c8382c863"
       hash3 = "7aa99ebc49a130f07304ed25655862a04cc20cb59d129e1416a7dfa04f7d3e51"
-      uuid = "7de93103-46a5-5aba-90cf-26735a6a580e"
+      id = "7de93103-46a5-5aba-90cf-26735a6a580e"
    strings:
       $x1 = "C:\\USERS\\WIN7_x64\\result.log" fullword wide
       $x2 = "rundll32.exe %s RunningRat" fullword ascii
@@ -137,7 +137,7 @@ rule GoldDragon_RunnignRAT {
       hash1 = "94aa827a514d7aa70c404ec326edaaad4b2b738ffaea5a66c0c9f246738df579"
       hash2 = "5cbc07895d099ce39a3142025c557b7fac41d79914535ab7ffc2094809f12a4b"
       hash3 = "98ccf3a463b81a47fdf4275e228a8f2266e613e08baae8bdcd098e49851ed49a"
-      uuid = "b99b89a4-a764-5d72-8360-8e53461267d9"
+      id = "b99b89a4-a764-5d72-8360-8e53461267d9"
    strings:
       $s1 = "cmd.exe /c systeminfo " fullword ascii
       $s2 = "ieproxy.dll" fullword ascii

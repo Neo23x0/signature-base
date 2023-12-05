@@ -8,7 +8,7 @@ rule MAL_Ryuk_Ransomware {
       date = "2018-12-31"
       hash1 = "965884f19026913b2c57b8cd4a86455a61383de01dabb69c557f45bb848f6c26"
       hash2 = "b8fcd4a3902064907fb19e0da3ca7aed72a7e6d1f94d971d1ee7a4d3af6a800d"
-      uuid = "25d40631-4158-5d3d-913e-a2f1233489e0"
+      id = "25d40631-4158-5d3d-913e-a2f1233489e0"
    strings:
       $x1 = "/v \"svchos\" /f" fullword wide
       $x2 = "\\Documents and Settings\\Default User\\finish" wide

@@ -11,7 +11,7 @@ rule APT_Sandworm_CyclopsBlink_notable_strings {
       hash2 = "c59bc17659daca1b1ce65b6af077f86a648ad8a8"
       reference = "https://www.ncsc.gov.uk/news/joint-advisory-shows-new-sandworm-malware-cyclops-blink-replaces-vpnfilter"
       date = "2022-02-23"
-      uuid = "81ccf582-41f5-5fe5-8afc-e008e01289ff"
+      id = "81ccf582-41f5-5fe5-8afc-e008e01289ff"
    strings:
       // Process names masqueraded by implant
       $proc_name1 = "[kworker/0:1]"
@@ -44,7 +44,7 @@ rule APT_Sandworm_CyclopsBlink_module_initialisation {
       hash2 = "c59bc17659daca1b1ce65b6af077f86a648ad8a8"
       reference = "https://www.ncsc.gov.uk/news/joint-advisory-shows-new-sandworm-malware-cyclops-blink-replaces-vpnfilter"
       date = "2022-02-23"
-      uuid = "c81b92c4-3f70-5bbd-acfa-ed1e1d33461d"
+      id = "c81b92c4-3f70-5bbd-acfa-ed1e1d33461d"
    strings:
       // Module initialisation code bytes, simply returning the module ID
       // to the caller
@@ -64,7 +64,7 @@ rule APT_Sandworm_CyclopsBlink_modified_install_upgrade {
       hash4 = "438cd40caca70cafe5ca436b36ef7d3a6321e858"
       reference = "https://www.ncsc.gov.uk/news/joint-advisory-shows-new-sandworm-malware-cyclops-blink-replaces-vpnfilter"
       date = "2022-02-23"
-      uuid = "4c4f7262-df74-5f6a-afc0-df1fcae4741c"
+      id = "4c4f7262-df74-5f6a-afc0-df1fcae4741c"
    strings:
       // Format strings used for temporary filenames
       $ = "/pending/%010lu_%06d_%03d_p1"
@@ -95,7 +95,7 @@ rule APT_Sandworm_CyclopsBlink_core_command_check {
       hash2 = "c59bc17659daca1b1ce65b6af077f86a648ad8a8"
       reference = "https://www.ncsc.gov.uk/news/joint-advisory-shows-new-sandworm-malware-cyclops-blink-replaces-vpnfilter"
       date = "2022-02-23"
-      uuid = "46066474-7647-52fb-b40d-30ff8e285b6e"
+      id = "46066474-7647-52fb-b40d-30ff8e285b6e"
    strings:
       // Check for command ID equals 0x7, 0xa, 0xb, 0xc or 0xd
       $cmd_check = {81 3F 00 18 88 09 00 05 54 00 06 3E 2F 80 00 (07|0A|0B|0C|0D) }
@@ -111,7 +111,7 @@ rule APT_Sandworm_CyclopsBlink_config_identifiers {
       hash2 = "c59bc17659daca1b1ce65b6af077f86a648ad8a8"
       reference = "https://www.ncsc.gov.uk/news/joint-advisory-shows-new-sandworm-malware-cyclops-blink-replaces-vpnfilter"
       date = "2022-02-23"
-      uuid = "db5b3a4a-82c2-500a-88f6-340b3392eac8"
+      id = "db5b3a4a-82c2-500a-88f6-340b3392eac8"
    strings:
       // Main config parameter data starts with the string "<p: "
       //$ = "<p: " fullword  // short atom - not necessary
@@ -133,7 +133,7 @@ rule APT_Sandworm_CyclopsBlink_handle_mod_0xf_command {
       hash2 = "c59bc17659daca1b1ce65b6af077f86a648ad8a8"
       reference = "https://www.ncsc.gov.uk/news/joint-advisory-shows-new-sandworm-malware-cyclops-blink-replaces-vpnfilter"
       date = "2022-02-23"
-      uuid = "36646b7a-389d-5fd9-88a1-e43e7224763a"
+      id = "36646b7a-389d-5fd9-88a1-e43e7224763a"
    strings:
       // Tests execute flag (bit 0)
       $ = {54 00 06 3E 54 00 07 FE 54 00 06 3E 2F 80 00 00}
@@ -157,7 +157,7 @@ rule APT_Sandworm_CyclopsBlink_default_config_values {
       hash2 = "c59bc17659daca1b1ce65b6af077f86a648ad8a8"
       reference = "https://www.ncsc.gov.uk/news/joint-advisory-shows-new-sandworm-malware-cyclops-blink-replaces-vpnfilter"
       date = "2022-02-23"
-      uuid = "04067609-1173-51f2-907f-2a236aae6c7c"
+      id = "04067609-1173-51f2-907f-2a236aae6c7c"
    strings:
       // Unknown config value set to 0x19
       $ = {38 00 00 19 90 09 01 A4}
@@ -181,7 +181,7 @@ rule APT_Sandworm_CyclopsBlink_handle_mod_0x51_command {
       hash2 = "c59bc17659daca1b1ce65b6af077f86a648ad8a8"
       reference = "https://www.ncsc.gov.uk/news/joint-advisory-shows-new-sandworm-malware-cyclops-blink-replaces-vpnfilter"
       date = "2022-02-23"
-      uuid = "a6800aed-27dc-5d01-b005-1eb4a62344a3"
+      id = "a6800aed-27dc-5d01-b005-1eb4a62344a3"
    strings:
       // Check for module command ID equals 0x1, 0x2 or 0x3
       $cmd_check = {88 1F [2] 54 00 06 3E 2F 80 00 (01|02|03) }

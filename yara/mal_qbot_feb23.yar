@@ -9,7 +9,7 @@ rule MAL_QakBot_ConfigExtraction_Feb23
         reference = "https://github.com/kevoreilly/CAPEv2/blob/master/analyzer/windows/data/yara/QakBot.yar"
         date = "2023-02-17"
         license = "https://github.com/kevoreilly/CAPEv2/blob/master/LICENSE"
-        uuid = "401184cf-bbd7-5afe-9589-470f54721af1"
+        id = "401184cf-bbd7-5afe-9589-470f54721af1"
     strings:
         $params = {8B 7D ?? 8B F1 57 89 55 ?? E8 [4] 8D 9E [2] 00 00 89 03 59 85 C0 75 08 6A FC 58 E9}
         $c2list1 = {59 59 8D 4D D8 89 45 E0 E8 [4] 8B 45 E0 85 C0 74 ?? 8B 90 [2] 00 00 51 8B 88 [2] 00 00 6A 00 E8}
@@ -29,7 +29,7 @@ rule MAL_QakBotLoader_Export_Section_Feb23
         reference = "https://github.com/kevoreilly/CAPEv2/blob/master/analyzer/windows/data/yara/QakBot.yar"
         date = "2023-02-17"
         license = "https://github.com/kevoreilly/CAPEv2/blob/master/LICENSE"
-        uuid = "cb86e9fb-a8d2-5285-aeda-622704399f8e"
+        id = "cb86e9fb-a8d2-5285-aeda-622704399f8e"
     strings:
         $export = {55 8B EC 83 EC 50 (3A|66 3B) ?? 74}
         $wind = {(66 3B|3A) ?? 74 [1-14] BB 69 04 00 00 53 E8 [5-7] 74}
@@ -47,7 +47,7 @@ rule MAL_QakBotAntiVM_AntiVM_Bypass_Feb23
         reference = "https://github.com/kevoreilly/CAPEv2/blob/master/analyzer/windows/data/yara/QakBot.yar"
         date = "2023-02-17"
         license = "https://github.com/kevoreilly/CAPEv2/blob/master/LICENSE"
-        uuid = "7446522a-788a-512d-ad68-2fcc56169f5a"
+        id = "7446522a-788a-512d-ad68-2fcc56169f5a"
     strings:
         $antivm1 = {55 8B EC 3A E4 0F [2] 00 00 00 6A 04 58 3A E4 0F [2] 00 00 00 C7 44 01 [5] 81 44 01 [5] 66 3B FF 74 ?? 6A 04 58 66 3B ED 0F [2] 00 00 00 C7 44 01 [5] 81 6C 01 [5] EB}
     condition:

@@ -6,7 +6,7 @@ rule HKTL_Venom_LIB_Dec22 {
       reference = "https://github.com/Idov31/Venom"
       date = "2022-12-17"
       score = 75
-      uuid = "b13b8a9c-52a4-53ac-817e-9f729fbf17c2"
+      id = "b13b8a9c-52a4-53ac-817e-9f729fbf17c2"
    strings:
       $x1 = "[ + ] Created detached hidden msedge process: " fullword ascii
       

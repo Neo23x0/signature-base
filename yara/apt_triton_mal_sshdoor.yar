@@ -48,7 +48,7 @@ rule MAL_LNX_SSHDOOR_Triton {
       reference = "https://www.welivesecurity.com/wp-content/uploads/2018/12/ESET-The_Dark_Side_of_the_ForSSHe.pdf"
       date = "2018-12-05"
       license = "BSD 2-Clause"
-      uuid = "51ec2e60-d84a-5271-a7fe-e12d597be00c"
+      id = "51ec2e60-d84a-5271-a7fe-e12d597be00c"
    strings:
       /* SSH binaries - specific strings */
       $a_usage1 = "usage: ssh ["

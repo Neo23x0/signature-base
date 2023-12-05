@@ -10,7 +10,7 @@ rule APT_MAL_RANSOM_ViceSociety_PolyVice_Jan23_1 {
       hash1 = "326a159fc2e7f29ca1a4c9a64d45b76a4a072bc39ba864c49d804229c5f6d796"
       hash2 = "8c8cb887b081e0d92856fb68a7df0dabf0b26ed8f0a6c8ed22d785e596ce87f4"
       hash3 = "9d9e949ecd72d7a7c4ae9deae4c035dcae826260ff3b6e8a156240e28d7dbfef"
-      uuid = "e450407c-6c21-56bf-aedf-8e7f3890abe2"
+      id = "e450407c-6c21-56bf-aedf-8e7f3890abe2"
    strings:
       $x1 = "C:\\Users\\root\\Desktop\\niX\\CB\\libntru\\" ascii
       
@@ -38,7 +38,7 @@ rule APT_MAL_RANSOM_ViceSociety_Chily_Jan23_1 {
       date = "2023-01-12"
       score = 80
       hash1 = "4dabb914b8a29506e1eced1d0467c34107767f10fdefa08c40112b2e6fc32e41"
-      uuid = "1be4adb9-e60c-5023-9230-07f5fd16daaa"
+      id = "1be4adb9-e60c-5023-9230-07f5fd16daaa"
    strings:
       $x1 = ".[Chily@Dr.Com]" ascii fullword
 

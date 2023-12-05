@@ -5,7 +5,7 @@ rule STUXSHOP_config {
       author = "JAG-S (turla@chronicle.security)"
       hash = "c1961e54d60e34bbec397c9120564e8d08f2f243ae349d2fb20f736510716579"
       reference = "https://medium.com/chronicle-blog/who-is-gossipgirl-3b4170f846c0"
-      uuid = "67367db5-51b3-5177-960a-5b06161154e2"
+      id = "67367db5-51b3-5177-960a-5b06161154e2"
    strings:
       $cnc1 = "http://211.24.237.226/index.php?data=" ascii wide
       $cnc2 = "http://todaysfutbol.com/index.php?data=" ascii wide
@@ -34,7 +34,7 @@ rule STUXSHOP_OSCheck {
       author = "Silas Cutler (havex@Chronicle.Security)"
       desc = "Identifies the OS Check function in STUXSHOP and CheshireCat"
       hash = "c1961e54d60e34bbec397c9120564e8d08f2f243ae349d2fb20f736510716579"
-      uuid = "24fb5c6f-d5ab-5f17-942c-b712e2c017d4"
+      id = "24fb5c6f-d5ab-5f17-942c-b712e2c017d4"
    strings:
       $ = {10 F7 D8 1B C0 83 C0 ?? E9 ?? 01 00 00 39 85 7C FF FF FF 0F 85 ?? 01 00
       00 83 BD 70 FF FF FF 04 8B 8D 74 FF FF FF 75 0B 85 C9 0F 85 ?? 01 00 00 6A 05

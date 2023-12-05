@@ -7,7 +7,7 @@ rule APT_Malware_PutterPanda_Rel {
 		reference = "VT Analysis"
 		date = "2015-06-03"
 		hash = "5367e183df155e3133d916f7080ef973f7741d34"
-		uuid = "980922cb-edfb-50ab-a102-a8168aa2b0e0"
+		id = "980922cb-edfb-50ab-a102-a8168aa2b0e0"
 	strings:
 		$x0 = "app.stream-media.net" fullword ascii /* score: '12.03' */
 		$x1 = "File %s does'nt exist or is forbidden to acess!" fullword ascii /* PEStudio Blacklist: strings */ /* score: '16.035' */
@@ -36,7 +36,7 @@ rule APT_Malware_PutterPanda_Rel_2 {
 		reference = "VT Analysis"
 		date = "2015-06-03"
 		hash = "f97e01ee04970d1fc4d988a9e9f0f223ef2a6381"
-		uuid = "3eef8869-45d6-57a4-a182-c5349b034cf4"
+		id = "3eef8869-45d6-57a4-a182-c5349b034cf4"
 	strings:
 		$s0 = "http://update.konamidata.com/test/zl/sophos/td/result/rz.dat?" fullword ascii /* PEStudio Blacklist: strings */ /* score: '28.01' */
 		$s1 = "http://update.konamidata.com/test/zl/sophos/td/index.dat?" fullword ascii /* PEStudio Blacklist: strings */ /* score: '28.01' */
@@ -67,7 +67,7 @@ rule APT_Malware_PutterPanda_PSAPI {
 		reference = "VT Analysis"
 		date = "2015-06-03"
 		hash = "f93a7945a33145bb6c106a51f08d8f44eab1cdf5"
-		uuid = "e074ab8a-2ca4-579e-aaef-cdfb9c64b21b"
+		id = "e074ab8a-2ca4-579e-aaef-cdfb9c64b21b"
 	strings:
 		$s0 = "LOADER ERROR" fullword ascii /* PEStudio Blacklist: strings */ /* score: '12.03' */
 		$s1 = "The procedure entry point %s could not be located in the dynamic link library %s" fullword ascii /* PEStudio Blacklist: strings */ /* score: '8.045' */
@@ -87,7 +87,7 @@ rule APT_Malware_PutterPanda_WUAUCLT {
 		reference = "VT Analysis"
 		date = "2015-06-03"
 		hash = "fd5ca5a2d444865fa8320337467313e4026b9f78"
-		uuid = "5c8e0629-b5f2-5933-8c74-c49b756aaf18"
+		id = "5c8e0629-b5f2-5933-8c74-c49b756aaf18"
 	strings:
 		$x0 = "WUAUCLT.EXE" fullword wide /* PEStudio Blacklist: strings */ /* score: '20.01' */
 		$x1 = "%s\\tmp%d.exe" fullword ascii /* score: '14.01' */
@@ -117,7 +117,7 @@ rule APT_Malware_PutterPanda_Gen1 {
 		hash0 = "bf1d385e637326a63c4d2f253dc211e6a5436b6a"
 		hash1 = "76459bcbe072f9c29bb9703bc72c7cd46a692796"
 		hash2 = "e105a7a3a011275002aec4b930c722e6a7ef52ad"
-		uuid = "5e7910e7-3f33-50fb-a87f-bf0bbf8a2797"
+		id = "5e7910e7-3f33-50fb-a87f-bf0bbf8a2797"
 	strings:
 		$s1 = "%s%duserid=%dthreadid=%dgroupid=%d" fullword ascii /* PEStudio Blacklist: strings */ /* score: '22.02' */
 		$s2 = "ssdpsvc.dll" fullword ascii /* score: '11.00' */
@@ -139,7 +139,7 @@ rule Malware_MsUpdater_String_in_EXE {
 		reference = "VT Analysis"
 		date = "2015-06-03"
 		hash = "b1a2043b7658af4d4c9395fa77fde18ccaf549bb"
-		uuid = "c7da9e1e-3a8d-54b6-b102-0e1095d99cc4"
+		id = "c7da9e1e-3a8d-54b6-b102-0e1095d99cc4"
 	strings:
 		$x1 = "msupdate.exe" fullword wide /* PEStudio Blacklist: strings */ /* score: '20.01' */
 		// $x2 = "msupdate" fullword wide /* PEStudio Blacklist: strings */ /* score: '13.01' */
@@ -164,7 +164,7 @@ rule APT_Malware_PutterPanda_MsUpdater_3 {
 		reference = "VT Analysis"
 		date = "2015-06-03"
 		hash = "464149ff23f9c7f4ab2f5cadb76a4f41f969bed0"
-		uuid = "917ab081-ee91-5eda-82eb-4731563a1933"
+		id = "917ab081-ee91-5eda-82eb-4731563a1933"
 	strings:
 		$s0 = "msupdater.exe" fullword ascii /* PEStudio Blacklist: strings */ /* score: '20.02' */
 		$s1 = "Explorer.exe \"" fullword ascii /* PEStudio Blacklist: strings */ /* score: '16.05' */
@@ -183,7 +183,7 @@ rule APT_Malware_PutterPanda_MsUpdater_1 {
 		reference = "VT Analysis"
 		date = "2015-06-03"
 		hash = "b55072b67543f58c096571c841a560c53d72f01a"
-		uuid = "3c65b668-52c2-5cd5-ba02-4f190e08d46c"
+		id = "3c65b668-52c2-5cd5-ba02-4f190e08d46c"
 	strings:
 		$x0 = "msupdate.exe" fullword wide /* PEStudio Blacklist: strings */ /* score: '20.01' */
 		$x1 = "msupdate" fullword wide /* PEStudio Blacklist: strings */ /* score: '13.01' */
@@ -208,7 +208,7 @@ rule APT_Malware_PutterPanda_MsUpdater_2 {
 		reference = "VT Analysis"
 		date = "2015-06-03"
 		hash = "365b5537e3495f8ecfabe2597399b1f1226879b1"
-		uuid = "e9188a14-5c0c-551c-bdca-9f770f42935a"
+		id = "e9188a14-5c0c-551c-bdca-9f770f42935a"
 	strings:
 		$s0 = "winsta0\\default" fullword ascii /* PEStudio Blacklist: strings */ /* score: '4.99' */ /* Goodware String - occured 6 times */
 		$s1 = "EXPLORER.EXE" fullword ascii /* PEStudio Blacklist: strings */ /* score: '4.98' */ /* Goodware String - occured 22 times */
@@ -249,7 +249,7 @@ rule APT_Malware_PutterPanda_Gen4 {
 		hash2 = "3c4a762175326b37035a9192a981f7f4cc2aa5f0"
 		hash3 = "598430b3a9b5576f03cc4aed6dc2cd8a43324e1e"
 		hash4 = "6522b81b38747f4aa09c98fdaedaed4b00b21689"
-		uuid = "0b6ce725-6932-5432-acd5-ee3593ac7bd8"
+		id = "0b6ce725-6932-5432-acd5-ee3593ac7bd8"
 	strings:
 		$x1 = "rz.dat" fullword ascii /* score: '10.00' */
 

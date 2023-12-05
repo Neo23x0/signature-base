@@ -12,7 +12,7 @@ rule Dropper_DeploysMalwareViaSideLoading {
         author = "USG"
         reference = "https://www.us-cert.gov/ncas/alerts/TA17-117A"
         true_positive = "5262cb9791df50fafcb2fbd5f93226050b51efe400c2924eecba97b7ce437481: drops REDLEAVES. 6392e0701a77ea25354b1f40f5b867a35c0142abde785a66b83c9c8d2c14c0c3: drops plugx. "
-        uuid = "2e7cdedd-2358-5d71-a3ec-73dec442d840"
+        id = "2e7cdedd-2358-5d71-a3ec-73dec442d840"
     strings:
         $UniqueString = {2e 6c 6e 6b [0-14] 61 76 70 75 69 2e 65 78 65} // ".lnk" near "avpui.exe"
         $PsuedoRandomStringGenerator = {b9 1a [0-6] f7 f9 46 80 c2 41 88 54 35 8b 83 fe 64} // Unique function that generates a 100 character pseudo random string.
@@ -26,7 +26,7 @@ rule REDLEAVES_DroppedFile_ImplantLoader_Starburn {
         author = "USG"
         reference = "https://www.us-cert.gov/ncas/alerts/TA17-117A"
         true_positive = "7f8a867a8302fe58039a6db254d335ae" // StarBurn.dll
-        uuid = "976f42b1-58c9-554b-97e6-130a657507e2"
+        id = "976f42b1-58c9-554b-97e6-130a657507e2"
     strings:
         $XOR_Loop = {32 0c 3a 83 c2 02 88 0e 83 fa 08 [4-14] 32 0c 3a 83 c2 02 88 0e 83 fa 10} // Deobfuscation loop
     condition:
@@ -39,7 +39,7 @@ rule REDLEAVES_DroppedFile_ObfuscatedShellcodeAndRAT_handkerchief {
         author = "USG"
         reference = "https://www.us-cert.gov/ncas/alerts/TA17-117A"
         true_positive = "fb0c714cd2ebdcc6f33817abe7813c36" // handkerchief.dat
-        uuid = "51a28529-1084-5f24-9369-6427e8d51d9d"
+        id = "51a28529-1084-5f24-9369-6427e8d51d9d"
     strings:
         $RedleavesStringObfu = {73 64 65 5e 60 74 75 74 6c 6f 60 6d 5e 6d 64 60 77 64 72 5e 65 6d 6d 6c 60 68 6f 2f 65 6d 6d} // This is 'red_autumnal_leaves_dllmain.dll' XOR'd with 0x01
     condition:
@@ -51,7 +51,7 @@ rule REDLEAVES_CoreImplant_UniqueStrings {
         description = "Strings identifying the core REDLEAVES RAT in its deobfuscated state"
         reference = "https://www.us-cert.gov/ncas/alerts/TA17-117A"
         author = "USG"
-        uuid = "fd4d4804-f7d9-549d-8f63-5f409d6180f9"
+        id = "fd4d4804-f7d9-549d-8f63-5f409d6180f9"
     strings:
         $unique2 = "RedLeavesSCMDSimulatorMutex" nocase wide ascii
         $unique4 = "red_autumnal_leaves_dllmain.dll" wide ascii
@@ -73,7 +73,7 @@ rule PLUGX_RedLeaves {
         MD5_4 = "6EB9E889B091A5647F6095DCD4DE7C83"
         MD5_5 = "566291B277534B63EAFC938CDAAB8A399E41AF7D"
         description = "Detects specific RedLeaves and PlugX binaries"
-        uuid = "ede8ad8f-31cf-5314-9777-bddd60e499f2"
+        id = "ede8ad8f-31cf-5314-9777-bddd60e499f2"
     strings:
         $s0 = { 80343057403D2FD0010072F433C08BFF80343024403D2FD0010072F4 }
         $s1 = "C:\\Users\\user\\Desktop\\my_OK_2014\\bit9\\runsna\\Release\\runsna.pdb"

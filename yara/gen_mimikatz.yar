@@ -10,7 +10,7 @@ rule Mimikatz_Memory_Rule_1 : APT {
       score = 70
       nodeepdive = 1
       description = "Detects password dumper mimikatz in memory (False Positives: an service that could have copied a Mimikatz executable, AV signatures)"
-      uuid = "55cc7129-5ea0-5545-a8f6-b5306a014dd0"
+      id = "55cc7129-5ea0-5545-a8f6-b5306a014dd0"
    strings:
       $s1 = "sekurlsa::wdigest" fullword ascii
       $s2 = "sekurlsa::logonPasswords" fullword ascii
@@ -51,7 +51,7 @@ rule mimikatz : FILE {
       author         = "Benjamin DELPY (gentilkiwi)"
       tool_author      = "Benjamin DELPY (gentilkiwi)"
       modified = "2022-11-16"
-      uuid = "840a5b8c-a311-50bc-a099-6b8ab1492e12"
+      id = "840a5b8c-a311-50bc-a099-6b8ab1492e12"
    strings:
       $exe_x86_1      = { 89 71 04 89 [0-3] 30 8d 04 bd }
       $exe_x86_2      = { 8b 4d e? 8b 45 f4 89 75 e? 89 01 85 ff 74 }
@@ -79,7 +79,7 @@ rule wce
       description      = "wce"
       author         = "Benjamin DELPY (gentilkiwi)"
       tool_author      = "Hernan Ochoa (hernano)"
-      uuid = "857981ee-3f57-580b-8bfd-8d2109298e27"
+      id = "857981ee-3f57-580b-8bfd-8d2109298e27"
    strings:
       $hex_legacy      = { 8b ff 55 8b ec 6a 00 ff 75 0c ff 75 08 e8 [0-3] 5d c2 08 00 }
       $hex_x86      = { 8d 45 f0 50 8d 45 f8 50 8d 45 e8 50 6a 00 8d 45 fc 50 [0-8] 50 72 69 6d 61 72 79 00 }
@@ -93,7 +93,7 @@ rule power_pe_injection
    meta:
       description      = "PowerShell with PE Reflective Injection"
       author         = "Benjamin DELPY (gentilkiwi)"
-      uuid = "a71fe9f2-9c2a-5650-a5c7-116b76f10db6"
+      id = "a71fe9f2-9c2a-5650-a5c7-116b76f10db6"
    strings:
       $str_loadlib   = "0x53, 0x48, 0x89, 0xe3, 0x48, 0x83, 0xec, 0x20, 0x66, 0x83, 0xe4, 0xc0, 0x48, 0xb9"
    condition:
@@ -108,7 +108,7 @@ rule Mimikatz_Logfile
       author = "Florian Roth (Nextron Systems)"
       score = 80
       date = "2015/03/31"
-      uuid = "921d85fc-fb4d-57ed-b4ac-203d5c6f1e8e"
+      id = "921d85fc-fb4d-57ed-b4ac-203d5c6f1e8e"
    strings:
       $s1 = "SID               :" ascii fullword
       $s2 = "* NTLM     :" ascii fullword
@@ -126,7 +126,7 @@ rule Mimikatz_Strings {
       reference = "not set"
       date = "2016-06-08"
       score = 65
-      uuid = "d8f63b71-c66c-5c10-9268-2d8970f7c8a1"
+      id = "d8f63b71-c66c-5c10-9268-2d8970f7c8a1"
    strings:
       $x1 = "sekurlsa::logonpasswords" fullword wide ascii
       $x2 = "List tickets in MIT/Heimdall ccache" fullword ascii wide
@@ -162,7 +162,7 @@ rule AppInitHook {
       date = "2015-07-15"
       score = 70
       hash = "e7563e4f2a7e5f04a3486db4cefffba173349911a3c6abd7ae616d3bf08cfd45"
-      uuid = "73713011-3083-5cdf-b59c-f4da67d2d2ab"
+      id = "73713011-3083-5cdf-b59c-f4da67d2d2ab"
    strings:
       $s0 = "\\Release\\AppInitHook.pdb" ascii
       $s1 = "AppInitHook.dll" fullword ascii
@@ -181,7 +181,7 @@ rule HKTL_Mimikatz_SkeletonKey_in_memory_Aug20_1 {
       author = "Florian Roth (Nextron Systems)"
       reference = "https://twitter.com/sbousseaden/status/1292143504131600384?s=12"
       date = "2020-08-09"
-      uuid = "e7c1c512-e944-5d87-ac57-cdc9ab7cf660"
+      id = "e7c1c512-e944-5d87-ac57-cdc9ab7cf660"
    strings:
       $x1 = { 60 ba 4f ca c7 44 24 34 dc 46 6c 7a c7 44 24 38 
               03 3c 17 81 c7 44 24 3c 94 c0 3d f6 }
@@ -196,7 +196,7 @@ rule HKTL_mimikatz_memssp_hookfn {
       date = "2020-08-26"
       reference = "https://github.com/sbousseaden/YaraHunts/blob/master/mimikatz_memssp_hookfn.yara"
       score = 70
-      uuid = "89940110-8a5e-5a28-bf64-3b568f8ef1f8"
+      id = "89940110-8a5e-5a28-bf64-3b568f8ef1f8"
    strings: 
       $xc1 = { 48 81 EC A8 00 00 00 C7 84 24 88 00 00 00 ?? ?? 
                ?? ?? C7 84 24 8C 00 00 00 ?? ?? ?? ?? C7 84 24 
@@ -228,7 +228,7 @@ rule HKTL_mimikatz_icon {
         hash3 = "c6bb98b24206228a54493274ff9757ce7e0cbb4ab2968af978811cc4a98fde85"
         hash4 = "721d3476cdc655305902d682651fffbe72e54a97cd7e91f44d1a47606bae47ab"
         hash5 = "c0f3523151fa307248b2c64bdaac5f167b19be6fccff9eba92ac363f6d5d2595"
-        uuid = "2a5ea476-a30d-5eac-b57a-3fb49386c046"
+        id = "2a5ea476-a30d-5eac-b57a-3fb49386c046"
     strings:
         $ico = {79 e1 d7 ff 7e e5 db ff 7f e8 dc ff 85 eb dd ff ba ff f1 ff 66 a0 b6 ff 01 38 61 ff 22 50 75 c3}
     condition:

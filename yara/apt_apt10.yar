@@ -1393,7 +1393,7 @@ rule APT_APT10_Malware_Imphash_Dec18_1 {
       author = "Florian Roth (Nextron Systems)"
       reference = "AlienVault OTX IOCs - statistical sample analysis"
       date = "2018-12-28"
-      uuid = "2de195a3-63a4-50ac-a83d-ab0db0f784bf"
+      id = "2de195a3-63a4-50ac-a83d-ab0db0f784bf"
    condition:
       uint16(0) == 0x5a4d and filesize < 6000KB and (
          pe.imphash() == "0556ff5e5f8744bff47d4921494ba46d" or

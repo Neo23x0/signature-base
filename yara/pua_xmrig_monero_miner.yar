@@ -21,7 +21,7 @@ rule XMRIG_Monero_Miner : HIGHVOL {
       hash2 = "08b55f9b7dafc53dfc43f7f70cdd7048d231767745b76dc4474370fb323d7ae7"
       hash3 = "f3f2703a7959183b010d808521b531559650f6f347a5830e47f8e3831b10bad5"
       hash4 = "0972ea3a41655968f063c91a6dbd31788b20e64ff272b27961d12c681e40b2d2"
-      uuid = "71bf1b9c-c806-5737-83a9-d6013872b11d"
+      id = "71bf1b9c-c806-5737-83a9-d6013872b11d"
    strings:
       $s1 = "'h' hashrate, 'p' pause, 'r' resume" fullword ascii
       $s2 = "--cpu-affinity" ascii
@@ -41,7 +41,7 @@ rule XMRIG_Monero_Miner_Config {
       date = "2018-01-04"
       hash1 = "031333d44a3a917f9654d7e7257e00c9d961ada3bee707de94b7c7d06234909a"
       hash2 = "409b6ec82c3bdac724dae702e20cb7f80ca1e79efa4ff91212960525af016c41"
-      uuid = "374efe7f-9ef2-5974-8e24-f749183ab2d0"
+      id = "374efe7f-9ef2-5974-8e24-f749183ab2d0"
    strings:
       $s2 = "\"cpu-affinity\": null,   // set process affinity to CPU core(s), mask \"0x3\" for cores 0 and 1" fullword ascii
       $s5 = "\"nicehash\": false                  // enable nicehash/xmrig-proxy support" fullword ascii
@@ -59,7 +59,7 @@ rule PUA_LNX_XMRIG_CryptoMiner {
       date = "2018-06-28"
       modified = "2023-01-06"
       hash1 = "10a72f9882fc0ca141e39277222a8d33aab7f7a4b524c109506a407cd10d738c"
-      uuid = "bbdeff2e-68cc-5bbe-b843-3cba9c8c7ea8"
+      id = "bbdeff2e-68cc-5bbe-b843-3cba9c8c7ea8"
    strings:
       $x1 = "number of hash blocks to process at a time (don't set or 0 enables automatic selection o" fullword ascii
       $s2 = "'h' hashrate, 'p' pause, 'r' resume, 'q' shutdown" fullword ascii
@@ -76,7 +76,7 @@ rule SUSP_XMRIG_String {
       reference = "Internal Research"
       date = "2018-12-28"
       hash1 = "eb18ae69f1511eeb4ed9d4d7bcdf3391a06768f384e94427f4fc3bd21b383127"
-      uuid = "8c6f3e6e-df2a-51b7-81b8-21cd33b3c603"
+      id = "8c6f3e6e-df2a-51b7-81b8-21cd33b3c603"
    strings:
       $x1 = "xmrig.exe" fullword ascii
    condition:

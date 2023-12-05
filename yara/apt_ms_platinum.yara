@@ -9,7 +9,7 @@ rule Trojan_Win32_PlaSrv : Platinum
 		version = "1.0"
 		last_modified = "2016-04-12"
 
-		uuid = "2a099b68-fb13-5926-8a86-4d788326609c"
+		id = "2a099b68-fb13-5926-8a86-4d788326609c"
 	strings:
 		$Section_name = ".hotp1"
 		$offset_x59 = { C7 80 64 01 00 00 00 00 01 00 }
@@ -29,7 +29,7 @@ rule Trojan_Win32_Platual : Platinum
 		version = "1.0"
 		last_modified = "2016-04-12"
 
-		uuid = "ac963388-cc73-5842-96be-77349398efcc"
+		id = "ac963388-cc73-5842-96be-77349398efcc"
 	strings:
 		$class_name = "AVCObfuscation"
 		$scrambled_dir = { A8 8B B8 E3 B1 D7 FE 85 51 32 3E C0 F1 B7 73 99 }
@@ -49,7 +49,7 @@ rule Trojan_Win32_Plaplex : Platinum
 		version = "1.0"
 		last_modified = "2016-04-12"
 
-		uuid = "2d670c09-dc0a-556e-8d00-5f94e5907d99"
+		id = "2d670c09-dc0a-556e-8d00-5f94e5907d99"
 	strings:
 		$class_name1 = "AVCObfuscation"
 		$class_name2 = "AVCSetiriControl"
@@ -68,7 +68,7 @@ rule Trojan_Win32_Dipsind_B : Platinum
 		version = "1.0"
 		last_modified = "2016-04-12"
 
-		uuid = "513c18a6-af25-58ad-9232-9a089f4ced3d"
+		id = "513c18a6-af25-58ad-9232-9a089f4ced3d"
 	strings:
 		$frg1 = {8D 90 04 01 00 00 33 C0 F2 AE F7 D1 2B F9 8B C1 8B F7 8B FA C1 E9 02 F3 A5 8B C8 83 E1 03 F3 A4 8B 4D EC 8B 15 ?? ?? ?? ?? 89 91 ?? 07 00 00 }
 		$frg2 = {68 A1 86 01 00 C1 E9 02 F3 AB 8B CA 83 E1 03 F3 AA}
@@ -89,7 +89,7 @@ rule Trojan_Win32_PlaKeylog_B : Platinum
 		version = "1.0"
 		last_modified = "2016-04-12"
 
-		uuid = "bc84ef20-f428-5f3d-bc88-ab14991a2350"
+		id = "bc84ef20-f428-5f3d-bc88-ab14991a2350"
 	strings:
 		$hook = {C6 06 FF 46 C6 06 25}
 		$dasm_engine = {80 C9 10 88 0E 8A CA 80 E1 07 43 88 56 03 80 F9 05}
@@ -109,7 +109,7 @@ rule Trojan_Win32_Adupib : Platinum
 		version = "1.0"
 		last_modified = "2016-04-12"
 
-		uuid = "fb3b10a4-66d7-50ec-b6a5-b3c5c382ef01"
+		id = "fb3b10a4-66d7-50ec-b6a5-b3c5c382ef01"
 	strings:
 		$str1 = "POLL_RATE"
 		$str2 = "OP_TIME(end hour)"
@@ -132,7 +132,7 @@ rule Trojan_Win32_PlaLsaLog : Platinum
 		version = "1.0"
 		last_modified = "2016-04-12"
 
-		uuid = "e5c7e07d-79e3-580f-ac24-28920a9b0e70"
+		id = "e5c7e07d-79e3-580f-ac24-28920a9b0e70"
 	strings:
 		$str1 = {8A 1C 01 32 DA 88 1C 01 8B 74 24 0C 41 3B CE 7C EF 5B 5F C6 04 01 00 5E 81 C4 04 01 00 00 C3}
 		$str2 = "PasswordChangeNotify"
@@ -152,7 +152,7 @@ rule Trojan_Win32_Plagon : Platinum
 		version = "1.0"
 		last_modified = "2016-04-12"
 
-		uuid = "ae3b7eb0-d54e-5817-9484-c054cd27c1fd"
+		id = "ae3b7eb0-d54e-5817-9484-c054cd27c1fd"
 	strings:
 		$str1 = "VPLRXZHTU"
 		$str2 = {64 6F 67 32 6A 7E 6C}
@@ -174,7 +174,7 @@ rule Trojan_Win32_Plakelog : Platinum
 		version = "1.0"
 		last_modified = "2016-04-12"
 
-		uuid = "26f552e6-9abf-59ca-a8df-19473d6d775a"
+		id = "26f552e6-9abf-59ca-a8df-19473d6d775a"
 	strings:
 		$str1 = "<0x02>" wide
 		$str2 = "[CTR-BRK]" wide
@@ -196,7 +196,7 @@ rule Trojan_Win32_Plainst : Platinum
 		version = "1.0"
 		last_modified = "2016-04-12"
 
-		uuid = "41a4770a-b4d8-5ddc-8b4f-a4e87a1f3923"
+		id = "41a4770a-b4d8-5ddc-8b4f-a4e87a1f3923"
 	strings:
 		$str1 = {66 8B 14 4D 18 50 01 10 8B 45 08 66 33 14 70 46 66 89 54 77 FE 66 83 7C 77 FE 00 75 B7 8B 4D FC 89 41 08 8D 04 36 89 41 0C 89 79 04}
 		$str2 = {4b D3 91 49 A1 80 91 42 83 B6 33 28 36 6B 90 97}
@@ -216,7 +216,7 @@ rule Trojan_Win32_Plagicom : Platinum
 		version = "1.0"
 		last_modified = "2016-04-12"
 
-		uuid = "86ef6fbf-cd39-533f-893c-72f22d73c99a"
+		id = "86ef6fbf-cd39-533f-893c-72f22d73c99a"
 	strings:
 		$str1 = {C6 44 24 ?? 68 C6 44 24 ?? 4D C6 44 24 ?? 53 C6 44 24 ?? 56 C6 44 24 ??
 00}
@@ -238,7 +238,7 @@ rule Trojan_Win32_Plaklog : Platinum
 		version = "1.0"
 		last_modified = "2016-04-12"
 
-		uuid = "4faffe66-63fc-5498-be59-dbbbb909ad74"
+		id = "4faffe66-63fc-5498-be59-dbbbb909ad74"
 	strings:
 		$str1 = "++[%s^^unknown^^%s]++"
 		$str2 = "vtfs43/emm"
@@ -259,7 +259,7 @@ rule Trojan_Win32_Plapiio : Platinum
 		version = "1.0"
 		last_modified = "2016-04-12"
 
-		uuid = "538086b5-eb06-5e41-90d4-ab8f2b001c42"
+		id = "538086b5-eb06-5e41-90d4-ab8f2b001c42"
 	strings:
 		$str1 = "ServiceMain"
 		$str2 = "Startup"
@@ -279,7 +279,7 @@ rule Trojan_Win32_Plabit : Platinum
 		version = "1.0"
 		last_modified = "2016-04-12"
 
-		uuid = "cee48cbb-f980-50cc-b28a-2e80e7f1798b"
+		id = "cee48cbb-f980-50cc-b28a-2e80e7f1798b"
 	strings:
 		$str1 = {4b D3 91 49 A1 80 91 42 83 B6 33 28 36 6B 90 97}
 		$str2 = "GetInstanceW"
@@ -300,7 +300,7 @@ rule Trojan_Win32_Placisc2 : Platinum
 		version = "1.0"
 		last_modified = "2016-04-12"
 
-		uuid = "a5557cfa-354c-5913-9b63-f53ffb294796"
+		id = "a5557cfa-354c-5913-9b63-f53ffb294796"
 	strings:
 		$str1 = {76 16 8B D0 83 E2 07 8A 4C 14 24 8A 14 18 32 D1 88 14 18 40 3B C7 72 EA}
 		$str2 = "VPLRXZHTU"
@@ -322,7 +322,7 @@ rule Trojan_Win32_Placisc3 : Platinum
 		version = "1.0"
 		last_modified = "2016-04-12"
 
-		uuid = "f2089236-8227-5042-9086-fb77aebd147f"
+		id = "f2089236-8227-5042-9086-fb77aebd147f"
 	strings:
 		$str1 = {BA 6E 00 00 00 66 89 95 ?? ?? FF FF B8 73 00 00 00 66 89 85 ?? ?? FF FF B9 64 00 00 00 66 89 8D ?? ?? FF FF BA 65 00 00 00 66 89 95 ?? ?? FF FF B8 6C 00 00 00}
 		$str2 = "VPLRXZHTU"
@@ -343,7 +343,7 @@ rule Trojan_Win32_Placisc4 : Platinum
 		version = "1.0"
 		last_modified = "2016-04-12"
 
-		uuid = "04770059-06ca-5315-a7b3-0e9fbcecfc57"
+		id = "04770059-06ca-5315-a7b3-0e9fbcecfc57"
 	strings:
 		$str1 = {8D 71 01 8B C6 99 BB 0A 00 00 00 F7 FB 0F BE D2 0F BE 04 39 2B C2 88 04 39 84 C0 74 0A}
 		$str2 = {6A 04 68 00 20 00 00 68 00 00 40 00 6A 00 FF D5}
@@ -364,7 +364,7 @@ rule Trojan_Win32_Plakpers : Platinum
 		version = "1.0"
 		last_modified = "2016-04-12"
 
-		uuid = "d37c6ac5-ca46-5fb2-80bd-ab63c8dbcd21"
+		id = "d37c6ac5-ca46-5fb2-80bd-ab63c8dbcd21"
 	strings:
 		$str1 = "MyFileMappingObject"
 		$str2 = "[%.3u]  %s  %s  %s [%s:" wide
@@ -385,7 +385,7 @@ rule Trojan_Win32_Plainst2 : Platinum
 		version = "1.0"
 		last_modified = "2016-04-12"
 
-		uuid = "7202eeb5-269d-5e9a-9a93-bdf489639e74"
+		id = "7202eeb5-269d-5e9a-9a93-bdf489639e74"
 	strings:
 		$str1 = "Connected [%s:%d]..."
 		$str2 = "reuse possible: %c"
@@ -406,7 +406,7 @@ rule Trojan_Win32_Plakpeer : Platinum
 		version = "1.0"
 		last_modified = "2016-04-12"
 
-		uuid = "e573279b-4a7b-5e15-8ab2-a77cd98a8b6e"
+		id = "e573279b-4a7b-5e15-8ab2-a77cd98a8b6e"
 	strings:
 		$str1 = "@@E0020(%d)" wide
 		$str2 = /exit.{0,3}@exit.{0,3}new.{0,3}query.{0,3}rcz.{0,3}scz/ wide

@@ -7,7 +7,7 @@ rule HKTL_Keyword_InjectDLL {
       date = "2019-04-04"
       score = 60
       hash1 = "2e7b4141e1872857904a0ef2d87535fd913cbdd9f964421f521b5a228a492a29"
-      uuid = "422eed76-7dfa-5490-a866-d337434eaddc"
+      id = "422eed76-7dfa-5490-a866-d337434eaddc"
    strings:
       $s2 = "InjectDLL" fullword ascii
       $s4 = "Kernel32.dll" fullword ascii
@@ -26,7 +26,7 @@ rule HKTL_Python_sectools {
         hash ="b3328ac397d311e6eb79f0a5b9da155c4d1987e0d67487ea681ea59d93641d9e"
         hash ="8cd205d5380278cff6673520439057e78fb8bf3d2b1c3c9be8463e949e5be4a1"
         score=50
-        uuid = "89a5e0ba-5547-53e4-84a3-d07ee779596e"
+        id = "89a5e0ba-5547-53e4-84a3-d07ee779596e"
     strings:
         $import1 = "from sectools" // might bei "from sectools.windows import ..." or "from sectools import ..."
         $import2 = "import sectools"

@@ -5,7 +5,7 @@ rule Hermes2_1 {
       author = "BAE"
       reference = "https://baesystemsai.blogspot.de/2017/10/taiwan-heist-lazarus-tools.html"
       hash = "b27881f59c8d8cc529fa80a58709db36"
-      uuid = "13397a43-04e1-5cc1-9260-9895736013f3"
+      id = "13397a43-04e1-5cc1-9260-9895736013f3"
    strings:
       //in both version 2.1 and sample in Feb
       $s1 = "SYSTEM\\CurrentControlSet\\Control\\Nls\\Language\\"

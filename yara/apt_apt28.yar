@@ -16,7 +16,7 @@ rule APT28_CHOPSTICK {
 		date = "2015-06-02"
 		hash = "f4db2e0881f83f6a2387ecf446fcb4a4c9f99808"
 		score = 60
-		uuid = "08bc4cc2-1844-5218-bb89-20a3ac70a951"
+		id = "08bc4cc2-1844-5218-bb89-20a3ac70a951"
 	strings:
 		$s0 = "jhuhugit.tmp" fullword ascii /* score: '14.005' */
 		$s8 = "KERNEL32.dll" fullword ascii /* PEStudio Blacklist: strings */ /* score: '5' */ /* Goodware String - occured 14405 times */
@@ -40,7 +40,7 @@ rule APT28_SourFace_Malware1 {
 		hash1 = "e2450dffa675c61aa43077b25b12851a910eeeb6"
 		hash2 = "d9c53adce8c35ec3b1e015ec8011078902e6800b"
 		score = 60
-		uuid = "d4275b8d-384f-58b7-bac5-05fb7db659e2"
+		id = "d4275b8d-384f-58b7-bac5-05fb7db659e2"
 	strings:
 		$s0 = "coreshell.dll" fullword wide /* PEStudio Blacklist: strings */
 		$s1 = "Core Shell Runtime Service" fullword wide /* PEStudio Blacklist: strings */
@@ -63,7 +63,7 @@ rule APT28_SourFace_Malware2 {
 		hash4 = "a8551397e1f1a2c0148e6eadcb56fa35ee6009ca"
 		hash5 = "f5b3e98c6b5d65807da66d50bd5730d35692174d"
 		score = 60
-		uuid = "8a9df742-82c1-56bb-ab70-6384403f70b5"
+		id = "8a9df742-82c1-56bb-ab70-6384403f70b5"
 	strings:
 		$s0 = "coreshell.dll" fullword ascii /* PEStudio Blacklist: strings */
 		$s1 = "Applicate" fullword ascii
@@ -89,7 +89,7 @@ rule APT28_SourFace_Malware3 {
 		hash8 = "f5b3e98c6b5d65807da66d50bd5730d35692174d"
 		hash9 = "e2450dffa675c61aa43077b25b12851a910eeeb6"
 		score = 60
-		uuid = "b49843b9-3a54-5525-958e-ac545cc00bde"
+		id = "b49843b9-3a54-5525-958e-ac545cc00bde"
 	strings:
 		$s0 = "coreshell.dll" fullword wide /* PEStudio Blacklist: strings */
 		$s1 = "Core Shell Runtime Service" fullword wide /* PEStudio Blacklist: strings */
@@ -107,7 +107,7 @@ rule APT28_SkinnyBoy_Dropper: RUSSIA {
       date = "2021-05-24"
       reference = "https://cluster25.io/wp-content/uploads/2021/05/2021-05_FancyBear.pdf"
       hash1 = "12331809c3e03d84498f428a37a28cf6cbb1dafe98c36463593ad12898c588c9"
-      uuid = "ed0b2d2b-f820-57b5-9654-c24734d81996"
+      id = "ed0b2d2b-f820-57b5-9654-c24734d81996"
    strings:
       $ = "cmd /c DEL " ascii
       /* $ = " \"" ascii */ /* slowing down scanning */
@@ -124,7 +124,7 @@ rule APT28_SkinnyBoy_Launcher: RUSSIA {
       date = "2021-05-24"
       reference = "https://cluster25.io/wp-content/uploads/2021/05/2021-05_FancyBear.pdf"
       hash1 ="2a652721243f29e82bdf57b565208c59937bbb6af4ab51e7b6ba7ed270ea6bce"
-      uuid = "eaf4e8e5-cbec-5000-a2ff-31d1dac4c30f"
+      id = "eaf4e8e5-cbec-5000-a2ff-31d1dac4c30f"
    strings:
       $sha = {F4 EB 56 52 AF 4B 48 EE 08 FF 9D 44 89 4B D5 66 24 61 2A 15 1D 58 14 F9 6D 97
       13 2C 6D 07 6F 86}
@@ -147,7 +147,7 @@ rule APT28_SkinnyBoy_Implanter: RUSSIA {
       date = "2021-05-24"
       reference = "https://cluster25.io/wp-content/uploads/2021/05/2021-05_FancyBear.pdf"
       hash1 = "ae0bc3358fef0ca2a103e694aa556f55a3fed4e98ba57d16f5ae7ad4ad583698"
-      uuid = "c44faf95-a64c-58f4-97d4-2fe17aefc813"
+      id = "c44faf95-a64c-58f4-97d4-2fe17aefc813"
    strings:
       $enc_string = {F3 0F 7E 05 ?? ?? ?? ?? 6? [5] 6A ?? 66 [6] 66 [7] F3 0F 7E 05 ?? ?? ?? ?? 8D
       85 [4] 6A ?? 50 66 [7] E8}

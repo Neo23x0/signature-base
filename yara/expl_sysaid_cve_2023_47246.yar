@@ -6,7 +6,7 @@ rule APT_PS1_SysAid_EXPL_ForensicArtifacts_Nov23_1 : SCRIPT {
       score = 85
       reference = "https://www.sysaid.com/blog/service-desk/on-premise-software-security-vulnerability-notification"
       date = "2023-11-09"
-      uuid = "df7997d3-9309-58b3-8cd7-de9fea36d3c7"
+      id = "df7997d3-9309-58b3-8cd7-de9fea36d3c7"
    strings:
       $x1 = "if ($s -match '^(Sophos).*\\.exe\\s') {echo $s; $bp++;}" ascii wide
       $x2 = "$s=$env:SehCore;$env:SehCore=\"\";Invoke-Expression $s;" ascii wide
@@ -22,7 +22,7 @@ rule MAL_Loader_TurtleLoader_Nov23 {
       date = "2023-11-09"
       score = 85
       hash1 = "b5acf14cdac40be590318dee95425d0746e85b1b7b1cbd14da66f21f2522bf4d"
-      uuid = "c7b5d03d-52c4-59b4-ac69-55e532a21340"
+      id = "c7b5d03d-52c4-59b4-ac69-55e532a21340"
    strings:
       $s1 = "No key in args!" ascii fullword
       $s2 = "Bad data file!" ascii fullword
@@ -46,7 +46,7 @@ rule MAL_Grace_Dec22 {
       hash1 = "a66df3454b8c13f1b92d8b2cf74f5bfcdedfbff41a5e4add62e15277d14dd169"
       hash2 = "e113a8df3c4845365f924bacf10c00bcc5e17587a204b640852dafca6db20404"
       score = 70
-      uuid = "fc2214dc-f1e5-52d7-a9de-88709a03b04e"
+      id = "fc2214dc-f1e5-52d7-a9de-88709a03b04e"
     strings:
       $sa1 = "Grace finalized, no more library calls allowed." ascii
       $sa2 = "Socket forcibly closed due to no response to DISCONNECT signal from other side, worker id(%d)" ascii

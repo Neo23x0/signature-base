@@ -5,7 +5,7 @@ rule APT_LNX_Academic_Camp_May20_Eraser_1 {
       reference = "https://csirt.egi.eu/academic-data-centers-abused-for-crypto-currency-mining/"
       date = "2020-05-16"
       hash1 = "552245645cc49087dfbc827d069fa678626b946f4b71cb35fa4a49becd971363"
-      uuid = "36d17887-9844-5fa4-8a0d-89cc41b2d876"
+      id = "36d17887-9844-5fa4-8a0d-89cc41b2d876"
    strings:
       $sc2 = { E6 FF FF 48 89 45 D0 8B 45 E0 BA 00 00 00 00 BE
                00 00 00 00 89 C7 E8 }
@@ -24,7 +24,7 @@ rule APT_LNX_Academic_Camp_May20_Loader_1 {
       reference = "https://csirt.egi.eu/academic-data-centers-abused-for-crypto-currency-mining/"
       date = "2020-05-16"
       hash1 = "0efdd382872f0ff0866e5f68f0c66c01fcf4f9836a78ddaa5bbb349f20353897"
-      uuid = "cda65abd-d918-5ee6-8f4a-554d47532d76"
+      id = "cda65abd-d918-5ee6-8f4a-554d47532d76"
    strings:
       $sc1 = { C6 45 F1 00 C6 45 F2 0A C6 45 F3 0A C6 45 F4 4A 
                C6 45 F5 04 C6 45 F6 06 C6 45 F7 1B C6 45 F8 01 }

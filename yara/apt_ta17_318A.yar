@@ -13,7 +13,7 @@ rule TA17_318A_rc4_stack_key_fallchill {
       author = "US CERT"
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-318B"
       date = "2017-11-15"
-      uuid = "0a2afcab-f540-592f-aa75-64c0a13d26f3"
+      id = "0a2afcab-f540-592f-aa75-64c0a13d26f3"
    strings:
       $stack_key = { 0d 06 09 2a ?? ?? ?? ?? 86 48 86 f7 ?? ?? ?? ?? 0d 01 01 01 ?? ?? ?? ?? 05 00 03 82 41 8b c9 41 8b d1 49 8b 40 08 48 ff c2 88 4c 02 ff ff c1 81 f9 00 01 00 00 7c eb }
    condition:
@@ -26,7 +26,7 @@ rule TA17_318A_success_fail_codes_fallchill {
       author = "US CERT"
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-318B"
       date = "2017-11-15"
-      uuid = "f2390b03-238e-5ae6-af85-e5dd5790362f"
+      id = "f2390b03-238e-5ae6-af85-e5dd5790362f"
    strings:
       $s0 = { 68 7a 34 12 00 }
       $s1 = { ba 7a 34 12 00 }
@@ -56,7 +56,7 @@ rule HiddenCobra_FallChill_1 {
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-318A"
       date = "2017-11-15"
       hash1 = "a606716355035d4a1ea0b15f3bee30aad41a2c32df28c2d468eafd18361d60d6"
-      uuid = "5bbeb5ba-93d7-5903-9132-749afe5776ae"
+      id = "5bbeb5ba-93d7-5903-9132-749afe5776ae"
    strings:
       $s1 = "REGSVR32.EXE.MUI" fullword wide
       $s2 = "Microsoft Corporation. All rights reserved." fullword wide
@@ -84,7 +84,7 @@ rule HiddenCobra_FallChill_2 {
       reference = "https://www.us-cert.gov/ncas/alerts/TA17-318A"
       date = "2017-11-15"
       hash1 = "0a118eb23399000d148186b9079fa59caf4c3faa7e7a8f91533e467ac9b6ff41"
-      uuid = "c343e8e4-0785-5a47-99c1-98b189f4aaa0"
+      id = "c343e8e4-0785-5a47-99c1-98b189f4aaa0"
    strings:
       $s1 = "%s\\%s.dll" fullword wide
       $s2 = "yurdkr.dll" fullword ascii

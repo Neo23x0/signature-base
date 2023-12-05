@@ -13,7 +13,7 @@ rule Bytes_used_in_AES_key_generation {
       reference = "https://www.ncsc.gov.uk/alerts/hostile-state-actors-compromising-uk-organisations-focus-engineering-and-industrial-control"
       date = "2018/04/06"
       hash = "b5278301da06450fe4442a25dda2d83d21485be63598642573f59c59e980ad46"
-      uuid = "26a549dd-cbd2-5abc-8d9d-5ea354d0ece8"
+      id = "26a549dd-cbd2-5abc-8d9d-5ea354d0ece8"
    strings:
       $a1 = {35 34 36 35 4B 4A 55 54 5E 49 55 5F 29 7B 68 36 35 67 34 36 64 66 35 68}
       /* $a2 = {fb ff ff ff 00 00}  disabled due to performance issues */
@@ -28,7 +28,7 @@ rule Partial_Implant_ID {
       reference = "https://www.ncsc.gov.uk/alerts/hostile-state-actors-compromising-uk-organisations-focus-engineering-and-industrial-control"
       date = "2018/04/06"
       hash = "b5278301da06450fe4442a25dda2d83d21485be63598642573f59c59e980ad46"
-      uuid = "15144f4a-2c96-57f0-b7e9-adbac477c38a"
+      id = "15144f4a-2c96-57f0-b7e9-adbac477c38a"
    strings:
       $a1 = {38 38 31 34 35 36 46 43}
       /* $a2 = {fb ff ff ff 00 00} disabled due to performance issues */
@@ -43,7 +43,7 @@ rule Sleep_Timer_Choice {
       reference = "https://www.ncsc.gov.uk/alerts/hostile-state-actors-compromising-uk-organisations-focus-engineering-and-industrial-control"
       date = "2018/04/06"
       hash = "b5278301da06450fe4442a25dda2d83d21485be63598642573f59c59e980ad46"
-      uuid = "c64db0dd-2858-5508-ac51-d3318113a060"
+      id = "c64db0dd-2858-5508-ac51-d3318113a060"
    strings:
       $a1 = {8b0424b90f00000083f9ff743499f7f98d420f}
       /* $a2 = {fb ff ff ff 00 00} disabled due to performance issues */
@@ -58,7 +58,7 @@ rule User_Function_String {
       reference = "https://www.ncsc.gov.uk/alerts/hostile-state-actors-compromising-uk-organisations-focus-engineering-and-industrial-control"
       date = "2018/04/06"
       hash = "b5278301da06450fe4442a25dda2d83d21485be63598642573f59c59e980ad46"
-      uuid = "563ac6af-6b37-53c6-ae13-d97e31edb088"
+      id = "563ac6af-6b37-53c6-ae13-d97e31edb088"
    strings:
       /* $b1 = {fb ff ff ff 00 00} disabled due to performance issues */
       $a2 = "e.RandomHashString"
@@ -77,7 +77,7 @@ rule generic_shellcode_downloader_specific {
     reference = "https://www.ncsc.gov.uk/alerts/hostile-state-actors-compromising-uk-organisations-focus-engineering-and-industrial-control"
     date = "2018/04/06"
     hash = "b8bc0611a7fd321d2483a0a9a505251e15c22402e0cfdc62c0258af53ed3658a"
-    uuid = "ddd25add-ff84-5106-ac3c-5d5b4c1ef2a9"
+    id = "ddd25add-ff84-5106-ac3c-5d5b4c1ef2a9"
   strings:
     $push1 = {68 6C 6C 6F 63}
     $push2 = {68 75 61 6C 41}
@@ -95,7 +95,7 @@ rule Batch_Script_To_Run_PsExec {
       reference = "https://www.ncsc.gov.uk/alerts/hostile-state-actors-compromising-uk-organisations-focus-engineering-and-industrial-control"
       date = "2018/04/06"
       hash = "b7d7c4bc8f9fd0e461425747122a431f93062358ed36ce281147998575ee1a18"
-      uuid = "1fbeeec8-a5bd-569e-b435-c7d82d32e47b"
+      id = "1fbeeec8-a5bd-569e-b435-c7d82d32e47b"
    strings:
       $ = "Tokens=1 delims=" ascii
       $ = "SET ws=%1" ascii
@@ -113,7 +113,7 @@ rule Batch_Powershell_Invoke_Inveigh {
       reference = "https://www.ncsc.gov.uk/alerts/hostile-state-actors-compromising-uk-organisations-focus-engineering-and-industrial-control"
       date = "2018/04/06"
       hash = "0a6b1b29496d4514f6485e78680ec4cd0296ef4d21862d8bf363900a4f8e3fd2"
-      uuid = "c5dab029-6515-5d58-9ccd-bf438ba692d5"
+      id = "c5dab029-6515-5d58-9ccd-bf438ba692d5"
    strings:
       $ = "Inveigh.ps1" ascii
       $ = "Invoke-Inveigh" ascii
@@ -129,7 +129,7 @@ rule lnk_detect {
       description = "Detects malicious LNK file from NCSC report"
       reference = "https://www.ncsc.gov.uk/alerts/hostile-state-actors-compromising-uk-organisations-focus-engineering-and-industrial-control"
       date = "2018/04/06"
-      uuid = "76d382f3-b2f2-5ede-94b2-5ae8b766c194"
+      id = "76d382f3-b2f2-5ede-94b2-5ae8b766c194"
    strings:
       $lnk_magic = {4C 00 00 00 01 14 02 00 00 00 00 00 C0 00 00 00 00 00 00 46}
       $lnk_target = {41 00 55 00 54 00 4F 00 45 00 58 00 45 00 43 00 2E 00 42 00 41 00 54}
@@ -155,7 +155,7 @@ rule RDP_Brute_Strings {
       reference = "https://www.ncsc.gov.uk/alerts/hostile-state-actors-compromising-uk-organisations-focus-engineering-and-industrial-control"
       date = "2018/04/06"
       hash = "8234bf8a1b53efd2a452780a69666d1aedcec9eb1bb714769283ccc2c2bdcc65"
-      uuid = "d6f0cdbc-a910-5826-b25a-61c2924f8e2a"
+      id = "d6f0cdbc-a910-5826-b25a-61c2924f8e2a"
    strings:
       $ = "RDP Brute" ascii wide
       $ = "RdpChecker" ascii
@@ -181,7 +181,7 @@ rule WEBSHELL_Z_WebShell_1 {
       date = "2018/04/06"
       old_rule_name = "Z_WebShell"
       hash = "ace12552f3a980f1eed4cadb02afe1bfb851cafc8e58fb130e1329719a07dbf0"
-      uuid = "f4b50760-bd3a-5e1f-bf32-50f16a42c381"
+      id = "f4b50760-bd3a-5e1f-bf32-50f16a42c381"
    strings:
       $ = "Z_PostBackJS" ascii wide
       $ = "z_file_download" ascii wide

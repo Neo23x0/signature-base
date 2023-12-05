@@ -18,7 +18,7 @@ rule APT_TA18_149A_Joanap_Sample1 {
       reference = "https://www.us-cert.gov/ncas/alerts/TA18-149A"
       date = "2018-05-30"
       hash1 = "ea46ed5aed900cd9f01156a1cd446cbb3e10191f9f980e9f710ea1c20440c781"
-      uuid = "a3a4f9a6-367d-5d99-bffb-f4ff03fa4a09"
+      id = "a3a4f9a6-367d-5d99-bffb-f4ff03fa4a09"
    strings:
       $x1 = "cmd.exe /q /c net share adnim$" ascii
       $x2 = "\\\\%s\\adnim$\\system32\\%s" fullword ascii
@@ -41,7 +41,7 @@ rule APT_TA18_149A_Joanap_Sample2 {
       reference = "https://www.us-cert.gov/ncas/alerts/TA18-149A"
       date = "2018-05-30"
       hash1 = "077d9e0e12357d27f7f0c336239e961a7049971446f7a3f10268d9439ef67885"
-      uuid = "9f4e6e6c-ee2b-5fa3-bf85-5a1652b38c52"
+      id = "9f4e6e6c-ee2b-5fa3-bf85-5a1652b38c52"
    strings:
       $s1 = "%SystemRoot%\\system32\\svchost.exe -k Wmmvsvc" fullword ascii
       $s2 = "%SystemRoot%\\system32\\svchost.exe -k SCardPrv" fullword ascii
@@ -62,7 +62,7 @@ rule APT_TA18_149A_Joanap_Sample3 {
       reference = "https://www.us-cert.gov/ncas/alerts/TA18-149A"
       date = "2018-05-30"
       hash1 = "a1c483b0ee740291b91b11e18dd05f0a460127acfc19d47b446d11cd0e26d717"
-      uuid = "1c2551bc-01dd-5b30-a4cc-703a868cde73"
+      id = "1c2551bc-01dd-5b30-a4cc-703a868cde73"
    strings:
       $s1 = "mssvcdll.dll" fullword ascii
       $s2 = "https://www.google.com/index.html" fullword ascii

@@ -15,7 +15,7 @@ rule OpCloudHopper_Malware_1 {
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
       hash1 = "27876dc5e6f746ff6003450eeea5e98de5d96cbcba9e4694dad94ca3e9fb1ddc"
-      uuid = "28ca64ac-beee-51d9-96d4-a1f6d52823ec"
+      id = "28ca64ac-beee-51d9-96d4-a1f6d52823ec"
    strings:
       $s1 = "zok]\\\\\\ZZYYY666564444" fullword ascii
       $s2 = "z{[ZZYUKKKIIGGGGGGGGGGGGG" fullword ascii
@@ -34,7 +34,7 @@ rule OpCloudHopper_Malware_2 {
       modified = "2023-01-06"
       score = 90
       hash1 = "c1dbf481b2c3ba596b3542c7dc4e368f322d5c9950a78197a4ddbbaacbd07064"
-      uuid = "7c0a3d68-5f6b-5491-b0c2-94e8cff478d1"
+      id = "7c0a3d68-5f6b-5491-b0c2-94e8cff478d1"
    strings:
       $x1 = "sERvEr.Dll" fullword ascii
       $x2 = "ToolbarF.dll" fullword wide
@@ -64,7 +64,7 @@ rule OpCloudHopper_Malware_3 {
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
       hash1 = "c21eaadf9ffc62ca4673e27e06c16447f103c0cf7acd8db6ac5c8bd17805e39d"
-      uuid = "ad1d3b48-d48c-5011-ac51-c8047e1ee8ed"
+      id = "ad1d3b48-d48c-5011-ac51-c8047e1ee8ed"
    strings:
       $s6 = "operator \"\" " fullword ascii
       $s7 = "zok]\\\\\\ZZYYY666564444" fullword ascii
@@ -86,7 +86,7 @@ rule OpCloudHopper_Dropper_1 {
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
       hash1 = "411571368804578826b8f24f323617f51b068809b1c769291b21125860dc3f4e"
-      uuid = "b43ffb7e-1643-5560-8719-9c63582920e7"
+      id = "b43ffb7e-1643-5560-8719-9c63582920e7"
    strings:
       $s1 = "{\\version2}{\\edmins0}{\\nofpages1}{\\nofwords11}{\\nofchars69}{\\*\\company google}{\\nofcharsws79}{\\vern24611}{\\*\\password" ascii
    condition:
@@ -102,7 +102,7 @@ rule OpCloudHopper_Malware_4 {
       date = "2017-04-03"
       modified = "2023-01-06"
       hash1 = "ae6b45a92384f6e43672e617c53a44225e2944d66c1ffb074694526386074145"
-      uuid = "ebc810e6-f549-5401-9ee9-331888eda127"
+      id = "ebc810e6-f549-5401-9ee9-331888eda127"
    strings:
       $s6 = "operator \"\" " fullword ascii
       $s9 = "InvokeMainViaCRT" fullword ascii
@@ -119,7 +119,7 @@ rule OpCloudHopper_Malware_5 {
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
       hash1 = "beb1bc03bb0fba7b0624f8b2330226f8a7da6344afd68c5bc526f9d43838ef01"
-      uuid = "1ad189f8-a4c2-5f56-beec-a55bd516ad8d"
+      id = "1ad189f8-a4c2-5f56-beec-a55bd516ad8d"
    strings:
       $x1 = "CWINDOWSSYSTEMROOT" fullword ascii
       $x2 = "YJ_D_KROPOX_M_NUJI_OLY_S_JU_MOOK" fullword ascii
@@ -141,7 +141,7 @@ rule OpCloudHopper_Malware_6 {
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
       hash1 = "aabebea87f211d47f72d662e2449009f83eac666d81b8629cf57219d0ce31af6"
-      uuid = "b7578cbd-0f41-5dec-86f6-5792c305a182"
+      id = "b7578cbd-0f41-5dec-86f6-5792c305a182"
    strings:
       $s1 = "YDNCCOVZKXGRVQPOBRNXXQVNQYXBBCONCOQEGYELIRBEYOVODGXCOXTHXPCXNGUCHRVWKKZSYQMAOWWGHRSPRGSEUWYMEFZHRTHO" fullword ascii
       $s2 = "psychiatry.dat" fullword ascii
@@ -159,7 +159,7 @@ rule OpCloudHopper_Malware_7 {
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
       hash1 = "44a7bea8a08f4c2feb74c6a00ff1114ba251f3dc6922ea5ffab9e749c98cbdce"
-      uuid = "8d32e379-c902-5330-84f5-693a7649a2e4"
+      id = "8d32e379-c902-5330-84f5-693a7649a2e4"
    strings:
       $x1 = "jepsjepsjepsjepsjepsjepsjepsjepsjepsjeps" fullword ascii
       $x2 = "extOextOextOextO" fullword ascii
@@ -176,7 +176,7 @@ rule OpCloudHopper_Malware_8 {
       date = "2017-04-03"
       hash1 = "19aa5019f3c00211182b2a80dd9675721dac7cfb31d174436d3b8ec9f97d898b"
       hash2 = "5cebc133ae3b6afee27beb7d3cdb5f3d675c3f12b7204531f453e99acdaa87b1"
-      uuid = "5e0a09e3-732a-5a90-9d4a-11eae2aa4cc4"
+      id = "5e0a09e3-732a-5a90-9d4a-11eae2aa4cc4"
    strings:
       $s1 = "WSHELL32.dll" fullword wide
       $s2 = "operator \"\" " fullword ascii
@@ -196,7 +196,7 @@ rule OpCloudHopper_Malware_9 {
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
       hash1 = "f0002b912135bcee83f901715002514fdc89b5b8ed7585e07e482331e4a56c06"
-      uuid = "5a02f2ac-905d-550a-bde0-cfde6ed1a4ab"
+      id = "5a02f2ac-905d-550a-bde0-cfde6ed1a4ab"
    strings:
       $s1 = "MsMpEng.exe" fullword ascii
       $op0 = { 2b c7 50 e8 22 83 ff ff ff b6 c0 } /* Opcode */
@@ -212,7 +212,7 @@ rule OpCloudHopper_Malware_10 {
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
       hash1 = "5b4028728d8011a2003b7ce6b9ec663dd6a60b7adcc20e2125da318e2d9e13f4"
-      uuid = "a5d3237e-d6db-54ba-bfa6-f642f8096819"
+      id = "a5d3237e-d6db-54ba-bfa6-f642f8096819"
    strings:
       $x1 = "bakshell.EXE" fullword wide
       $s19 = "bakshell Applicazione MFC" fullword wide
@@ -229,7 +229,7 @@ rule OpCloudHopper_Malware_11 {
       reference = "https://www.pwc.co.uk/issues/cyber-security-data-privacy/insights/operation-cloud-hopper.html"
       date = "2017-04-03"
       hash1 = "a80f6c57f772f20d63021c8971a280c19e8eafe7cc7088344c598d84026dda15"
-      uuid = "18bd2fa9-7eca-5dbc-8e79-953800d5bb0a"
+      id = "18bd2fa9-7eca-5dbc-8e79-953800d5bb0a"
    strings:
       $x1 = "IOGVWDWCXZVRHTE" fullword ascii
 
@@ -256,7 +256,7 @@ rule OpCloudHopper_lockdown {
       reference = "https://github.com/maaaaz/impacket-examples-windows"
       date = "2017-04-07"
       hash1 = "8ca61cef74573d9c1d19b8191c23cbd2b7a1195a74eaba037377e5ee232b1dc5"
-      uuid = "0500f19c-597b-5904-8401-35236215ff29"
+      id = "0500f19c-597b-5904-8401-35236215ff29"
    strings:
       $s1 = "lockdown.dll" fullword ascii
       $s3 = "mfeann.exe" fullword ascii
@@ -271,7 +271,7 @@ rule OpCloudHopper_WindowXarBot {
       author = "Florian Roth (Nextron Systems)"
       reference = "https://www.pwc.co.uk/cyber-security/pdf/cloud-hopper-annex-b-final.pdf"
       date = "2017-04-07"
-      uuid = "4434632a-1886-5e8b-a205-12220263980a"
+      id = "4434632a-1886-5e8b-a205-12220263980a"
    strings:
       $s1 = "\\Release\\WindowXarbot.pdb" ascii
    condition:
@@ -285,7 +285,7 @@ rule OpCloudHopper_WmiDLL_inMemory {
       author = "Florian Roth (Nextron Systems)"
       reference = "https://www.pwc.co.uk/cyber-security/pdf/cloud-hopper-annex-b-final.pdf"
       date = "2017-04-07"
-      uuid = "0afb6e52-bc9a-5a68-890b-79a017e5d554"
+      id = "0afb6e52-bc9a-5a68-890b-79a017e5d554"
    strings:
       $s1 = "wmi.dll 2>&1" ascii
    condition:
@@ -300,7 +300,7 @@ rule VBS_WMIExec_Tool_Apr17_1 {
       reference = "https://github.com/maaaaz/impacket-examples-windows"
       date = "2017-04-07"
       hash1 = "21bc328ed8ae81151e7537c27c0d6df6d47ba8909aebd61333e32155d01f3b11"
-      uuid = "8175eb74-38f1-5d8f-a668-aa8e215b032e"
+      id = "8175eb74-38f1-5d8f-a668-aa8e215b032e"
    strings:
       $x1 = "strNetUse = \"cmd.exe /c net use \\\\\" & host" fullword ascii
       $x2 = "localcmd = \"cmd.exe /c \" & command " ascii

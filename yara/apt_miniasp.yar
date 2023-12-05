@@ -10,7 +10,7 @@ rule APT_Malware_CommentCrew_MiniASP {
 		hash0 = "0af4360a5ae54d789a8814bf7791d5c77136d625"
 		hash1 = "777bf8def279942a25750feffc11d8a36cc0acf9"
 		hash2 = "173f20b126cb57fc8ab04d01ae223071e2345f97"
-		uuid = "a434012d-d13a-5061-a1d8-180d2c5828e8"
+		id = "a434012d-d13a-5061-a1d8-180d2c5828e8"
 	strings:
 		$x1 = "\\MiniAsp4\\Release\\MiniAsp.pdb" ascii /* score: '19.02' */
 		$x2 = "run http://%s/logo.png setup.exe" fullword ascii /* PEStudio Blacklist: strings */ /* score: '37.02' */
