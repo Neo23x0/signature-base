@@ -415,27 +415,6 @@ rule APT_Cloaked_ScanLine
 		uint16(0) == 0x5a4d and $s0 and $s1 and $s2 and not filename == "sl.exe"
 }
 
-rule SAM_Hive_Backup
-{
-	meta:
-		description = "Detects a SAM hive backup file"
-		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth (Nextron Systems)"
-		reference = "https://github.com/gentilkiwi/mimikatz/wiki/module-~-lsadump"
-		score = 60
-		date = "2015/03/31"
-		id = "5e0ac86e-2ae0-5df7-8e33-5814428b5924"
-	strings:
-		$s1 = "\\SystemRoot\\System32\\Config\\SAM" wide fullword
-	condition:
-		uint32(0) == 0x66676572 and $s1 in (0..100) and
-			not filename contains "sam.log" and
-         not filename contains "SAM.LOG" and
-			not filename contains "_sam" and
-			not filename == "SAM" and
-			not filename == "sam"
-}
-
 rule SUSP_Renamed_Dot1Xtray {
    meta:
       description = "Detects a legitimate renamed dot1ctray.exe, which is often used by PlugX for DLL side-loading"
