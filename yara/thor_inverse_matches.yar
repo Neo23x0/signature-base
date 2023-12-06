@@ -581,3 +581,20 @@ rule SUSP_ANOMALY_Teams_Binary_Nov23 : SCRIPT {
       and not $a1
 }
 
+rule SAM_Hive_Backup {
+   meta:
+      description = "Detects a SAM hive backup file - SAM is the Security Account Manager - contains password hashes"
+      author = "Florian Roth"
+      reference = "https://www.ired.team/offensive-security/credential-access-and-credential-dumping/dumping-hashes-from-sam-registry"
+      score = 60
+      nodeepdive = 1
+      date = "2015-03-31"
+      modified = "2023-12-06"
+   strings:
+      $s1 = "\\SystemRoot\\System32\\Config\\SAM" wide
+   condition:
+      uint32(0) == 0x66676572 and $s1 in (0..200)
+      and not filepath contains "System32\\Config\\"
+      and not filepath contains "System Volume Information"
+      and not filepath contains "\\config\\RegBack"
+}
