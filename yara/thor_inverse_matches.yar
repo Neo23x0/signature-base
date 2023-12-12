@@ -568,12 +568,13 @@ rule SAM_Hive_Backup {
       score = 60
       nodeepdive = 1
       date = "2015-03-31"
-      modified = "2023-12-06"
+      modified = "2023-12-12"
    strings:
       $s1 = "\\SystemRoot\\System32\\Config\\SAM" wide
    condition:
       uint32(0) == 0x66676572 and $s1 in (0..200)
-      and not filepath contains "System32\\Config\\"
+      and not filepath contains "\\System32\\Config"
+		and not filepath contains "\\System32\\config"
       and not filepath contains "System Volume Information"
       and not filepath contains "\\config\\RegBack"
 }
