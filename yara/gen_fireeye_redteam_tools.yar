@@ -553,7 +553,7 @@ rule HackTool_MSIL_SharPersist_2
         $pdb1 = "\\SharPersist\\"
         $pdb2 = "\\SharPersist.pdb"
     condition:
-        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and (@pdb2[1] < @pdb1[1] + 50) or (1 of ($a*) and 2 of ($b*))
+        (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and ((@pdb2[1] < @pdb1[1] + 50) or (1 of ($a*) and 2 of ($b*)))
 }
 rule APT_Loader_Win_MATRYOSHKA_1
 {
