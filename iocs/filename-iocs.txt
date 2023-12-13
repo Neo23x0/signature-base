@@ -4349,7 +4349,7 @@ C:\\GodFaultTemp\\;90
 \\PPLBlade\.exe;85
 
 # Typical file names used for registry exports https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/critical-infrastructure-attacks
-\\security\.sav;65
+\\security\.sav;65;(?i)C:\\Windows\\System32\\config\\SECURITY\.SAV
 \\sam\.sav;70
 
 # BiBi Wiper IOCs https://www.securityjoes.com/post/bibi-linux-a-new-wiper-dropped-by-pro-hamas-hacktivist-group
