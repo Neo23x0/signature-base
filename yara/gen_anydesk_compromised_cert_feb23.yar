@@ -1,3 +1,4 @@
+import "pe"
 
 rule SUSP_AnyDesk_Compromised_Certifcate_Jan24 {
    meta:
