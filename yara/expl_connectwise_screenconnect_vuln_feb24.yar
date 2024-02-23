@@ -1,3 +1,4 @@
+import "pe"
 
 rule ConnectWise_ScreenConnect_Authentication_Bypass_Feb_2024_Exploitation_IIS_Logs {
    meta:
