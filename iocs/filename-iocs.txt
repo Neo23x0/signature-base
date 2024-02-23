@@ -4385,4 +4385,25 @@ C:\\Windows\\Tasks\\z\.txt;85
 [Cc]:\\[Ww]indows\\[Tt]emp\\[Ss]creen[Cc]onnect\\[0-9\.]{1,20}\\[Ff]iles\\[Pp]rocess[Hh]acker\.exe;75
 [Cc]:\\[Ww]indows\\[Tt]emp\\[Ss]creen[Cc]onnect\\[0-9\.]{1,20}\\[Ff]iles\\[Aa]zure\.msi;75
 
+# ScreenConnect Exploitation IOCs https://www.huntress.com/blog/a-catastrophe-for-control-understanding-the-screenconnect-authentication-bypass
+C:\\Program Files \(x86\)\\ScreenConnect\\App_Extensions\\[^\\]{1,16}\.as[ph]x;75
+
+# ScreenConnect Exploitation IOCs https://www.huntress.com/blog/slashandgrab-screen-connect-post-exploitation-in-the-wild-cve-2024-1709-cve-2024-1708
+C:\\Windows\\TEMP\\ScreenConnect\\[0-9\.]{8,15}\\LB3\.exe;75
+c:\\mpyutd\.msi;85
+\\startup\\mpyutd\.msi;85
+C:\\Windows\\Help\\Help\\SentinelUI\.exe;90
+C:\\Windows\\Help\\Help\\SentinelAgentCore\.dll;90
+C:\\Windows\\Help\\Help\\Logs\.txt;75
+\\Documents\\Maxx Uptime remote connection\\Files\\agent\.exe;80
+C:\\ProgramData\\JWrapper-Remote Access\\JWAppsSharedConfig\\restricted\\SimpleService\.exe;80
+\\Documents\\MilsoftConnect\\Files\\ta\.exe;80
+C:\\Windows\\spsrv\.exe;85
+C:\\ProgramData\\JWrapper-Remote Access\\JWAppsSharedConfig\\serviceconfig\.xml;85
+C:\\ProgramData\\1\.msi;85
+c:\\mpyutd\.msi;85
+C:\\Windows\\Temp\\svchost\.exe;85
+c:\\programdata\\update\.dat;80
+C:\\perflogs\\RunSchedulerTaskOnce\.ps1;85
+
 # End
