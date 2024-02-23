@@ -171,24 +171,24 @@ rule WEBSHELL_PHP_Generic
 
         //strings from private rule capa_php_payload
         // \([^)] to avoid matching on e.g. eval() in comments
-        $cpayload1 = /\beval[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload2 = /\bexec[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload3 = /\bshell_exec[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload4 = /\bpassthru[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload5 = /\bsystem[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload6 = /\bpopen[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload7 = /\bproc_open[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload8 = /\bpcntl_exec[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload9 = /\bassert[\n\t ]*\([^)0]/ nocase wide ascii
-        $cpayload10 = /\bpreg_replace[\n\t ]*(\(.{1,|\/\*)100}\/[ismxADSUXju]{0,11}(e|\\x65)/ nocase wide ascii
-        $cpayload12 = /\bmb_ereg_replace[\t ]*\([^\)]{1,100}'e'/ nocase wide ascii
-        $cpayload13 = /\bmb_eregi_replace[\t ]*\([^\)]{1,100}'e'/ nocase wide ascii
-        $cpayload20 = /\bcreate_function[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload21 = /\bReflectionFunction[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload22 = /fetchall\(PDO::FETCH_FUNC[\n\t ]*[,}\)]/ nocase wide ascii
+        $cpayload1 = /\beval[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload2 = /\bexec[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload3 = /\bshell_exec[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload4 = /\bpassthru[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload5 = /\bsystem[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload6 = /\bpopen[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload7 = /\bproc_open[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload8 = /\bpcntl_exec[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload9 = /\bassert[\n\t ]{0,500}\([^)0]/ nocase wide ascii
+        $cpayload10 = /\bpreg_replace[\n\t ]{0,500}\([^\)]{1,100}\/[ismxADSUXju]{0,11}(e|\\x65)/ nocase wide ascii
+        $cpayload12 = /\bmb_ereg_replace[\t ]{0,500}\([^\)]{1,100}'e'/ nocase wide ascii
+        $cpayload13 = /\bmb_eregi_replace[\t ]{0,500}\([^\)]{1,100}'e'/ nocase wide ascii
+        $cpayload20 = /\bcreate_function[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload21 = /\bReflectionFunction[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload22 = /fetchall\(PDO::FETCH_FUNC[\n\t ]{0,500}[,}\)]/ nocase wide ascii
 
-        $m_cpayload_preg_filter1 = /\bpreg_filter[\n\t ]*(\([^\)]|\/\*)/ nocase wide ascii
-        $m_cpayload_preg_filter2 = "'|.*|e'" nocase wide ascii
+        $m_cpayload_preg_filter1 = /\bpreg_filter[\n\t ]{0,500}(\([^\)]|\/\*)/ nocase wide ascii
+        $m_cpayload_preg_filter2 = "'|.{0,500}|e'" nocase wide ascii
         // TODO backticks
 
         //strings from private rule capa_gen_sus
@@ -319,20 +319,20 @@ rule WEBSHELL_PHP_Generic
 
         //strings from private rule capa_php_payload_multiple
         // \([^)] to avoid matching on e.g. eval() in comments
-        $cmpayload1 = /\beval[\t ]*\([^)]/ nocase wide ascii
-        $cmpayload2 = /\bexec[\t ]*\([^)]/ nocase wide ascii
-        $cmpayload3 = /\bshell_exec[\t ]*\([^)]/ nocase wide ascii
-        $cmpayload4 = /\bpassthru[\t ]*\([^)]/ nocase wide ascii
-        $cmpayload5 = /\bsystem[\t ]*\([^)]/ nocase wide ascii
-        $cmpayload6 = /\bpopen[\t ]*\([^)]/ nocase wide ascii
-        $cmpayload7 = /\bproc_open[\t ]*\([^)]/ nocase wide ascii
-        $cmpayload8 = /\bpcntl_exec[\t ]*\([^)]/ nocase wide ascii
-        $cmpayload9 = /\bassert[\t ]*\([^)0]/ nocase wide ascii
-        $cmpayload10 = /\bpreg_replace[\t ]*\([^\)]{1,100}\/e/ nocase wide ascii
-        $cmpayload11 = /\bpreg_filter[\t ]*\([^\)]{1,100}\/e/ nocase wide ascii
-        $cmpayload12 = /\bmb_ereg_replace[\t ]*\([^\)]{1,100}'e'/ nocase wide ascii
-        $cmpayload20 = /\bcreate_function[\t ]*\([^)]/ nocase wide ascii
-        $cmpayload21 = /\bReflectionFunction[\t ]*\([^)]/ nocase wide ascii
+        $cmpayload1 = /\beval[\t ]{0,500}\([^)]/ nocase wide ascii
+        $cmpayload2 = /\bexec[\t ]{0,500}\([^)]/ nocase wide ascii
+        $cmpayload3 = /\bshell_exec[\t ]{0,500}\([^)]/ nocase wide ascii
+        $cmpayload4 = /\bpassthru[\t ]{0,500}\([^)]/ nocase wide ascii
+        $cmpayload5 = /\bsystem[\t ]{0,500}\([^)]/ nocase wide ascii
+        $cmpayload6 = /\bpopen[\t ]{0,500}\([^)]/ nocase wide ascii
+        $cmpayload7 = /\bproc_open[\t ]{0,500}\([^)]/ nocase wide ascii
+        $cmpayload8 = /\bpcntl_exec[\t ]{0,500}\([^)]/ nocase wide ascii
+        $cmpayload9 = /\bassert[\t ]{0,500}\([^)0]/ nocase wide ascii
+        $cmpayload10 = /\bpreg_replace[\t ]{0,500}\([^\)]{1,100}\/e/ nocase wide ascii
+        $cmpayload11 = /\bpreg_filter[\t ]{0,500}\([^\)]{1,100}\/e/ nocase wide ascii
+        $cmpayload12 = /\bmb_ereg_replace[\t ]{0,500}\([^\)]{1,100}'e'/ nocase wide ascii
+        $cmpayload20 = /\bcreate_function[\t ]{0,500}\([^)]/ nocase wide ascii
+        $cmpayload21 = /\bReflectionFunction[\t ]{0,500}\([^)]/ nocase wide ascii
 
         $fp1 = "# Some examples from obfuscated malware:" ascii
         $fp2 = "{@see TFileUpload} for further details." ascii
@@ -486,41 +486,41 @@ rule WEBSHELL_PHP_Generic_Callback
         // TODO: arraywalk \n /*
         //strings from private rule capa_php_callback
         // the end is 1. ( followed by anything but a direct closing ) 2. /* for the start of an obfuscation comment
-        $callback1 = /\bob_start[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback2 = /\barray_diff_uassoc[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback3 = /\barray_diff_ukey[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback4 = /\barray_filter[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback5 = /\barray_intersect_uassoc[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback6 = /\barray_intersect_ukey[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback7 = /\barray_map[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback8 = /\barray_reduce[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback9 = /\barray_udiff_assoc[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback10 = /\barray_udiff_uassoc[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback11 = /\barray_udiff[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback12 = /\barray_uintersect_assoc[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback13 = /\barray_uintersect_uassoc[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback14 = /\barray_uintersect[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback15 = /\barray_walk_recursive[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback16 = /\barray_walk[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback17 = /\bassert_options[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback18 = /\buasort[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback19 = /\buksort[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback20 = /\busort[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback21 = /\bpreg_replace_callback[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback22 = /\bspl_autoload_register[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback23 = /\biterator_apply[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback24 = /\bcall_user_func[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback25 = /\bcall_user_func_array[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback26 = /\bregister_shutdown_function[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback27 = /\bregister_tick_function[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback28 = /\bset_error_handler[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback29 = /\bset_exception_handler[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback30 = /\bsession_set_save_handler[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback31 = /\bsqlite_create_aggregate[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback32 = /\bsqlite_create_function[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback33 = /\bmb_ereg_replace_callback[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
+        $callback1 = /\bob_start[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback2 = /\barray_diff_uassoc[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback3 = /\barray_diff_ukey[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback4 = /\barray_filter[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback5 = /\barray_intersect_uassoc[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback6 = /\barray_intersect_ukey[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback7 = /\barray_map[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback8 = /\barray_reduce[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback9 = /\barray_udiff_assoc[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback10 = /\barray_udiff_uassoc[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback11 = /\barray_udiff[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback12 = /\barray_uintersect_assoc[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback13 = /\barray_uintersect_uassoc[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback14 = /\barray_uintersect[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback15 = /\barray_walk_recursive[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback16 = /\barray_walk[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback17 = /\bassert_options[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback18 = /\buasort[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback19 = /\buksort[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback20 = /\busort[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback21 = /\bpreg_replace_callback[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback22 = /\bspl_autoload_register[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback23 = /\biterator_apply[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback24 = /\bcall_user_func[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback25 = /\bcall_user_func_array[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback26 = /\bregister_shutdown_function[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback27 = /\bregister_tick_function[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback28 = /\bset_error_handler[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback29 = /\bset_exception_handler[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback30 = /\bsession_set_save_handler[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback31 = /\bsqlite_create_aggregate[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback32 = /\bsqlite_create_function[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback33 = /\bmb_ereg_replace_callback[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
 
-        $m_callback1 = /\bfilter_var[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
+        $m_callback1 = /\bfilter_var[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
         $m_callback2 = "FILTER_CALLBACK" fullword wide ascii
 
         $cfp1 = /ob_start\(['\"]ob_gzhandler/ nocase wide ascii
@@ -926,7 +926,7 @@ rule WEBSHELL_PHP_Generic_Eval
         id = "79cfbd88-f6f7-5cba-a325-0a99962139ca"
     strings:
         // new: eval($GLOBALS['_POST'
-        $geval = /\b(exec|shell_exec|passthru|system|popen|proc_open|pcntl_exec|eval|assert)[\t ]*(\(base64_decode)?(\(stripslashes)?[\t ]*(\(trim)?[\t ]*\(\$(_POST|_GET|_REQUEST|_SERVER\s?\[['"]HTTP_|GLOBALS\[['"]_(POST|GET|REQUEST))/ wide ascii
+        $geval = /\b(exec|shell_exec|passthru|system|popen|proc_open|pcntl_exec|eval|assert)[\t ]{0,500}(\(base64_decode)?(\(stripslashes)?[\t ]{0,500}(\(trim)?[\t ]{0,500}\(\$(_POST|_GET|_REQUEST|_SERVER\s?\[['"]HTTP_|GLOBALS\[['"]_(POST|GET|REQUEST))/ wide ascii
 
         //strings from private rule php_false_positive
         // try to use only strings which would be flagged by themselves as suspicious by other rules, e.g. eval
@@ -972,7 +972,7 @@ rule WEBSHELL_PHP_Double_Eval_Tiny
 
         id = "868db363-83d3-57e2-ac8d-c6125e9bdd64"
     strings:
-        $payload = /(\beval[\t ]*\([^)]|\bassert[\t ]*\([^)])/ nocase wide ascii
+        $payload = /(\beval[\t ]{0,500}\([^)]|\bassert[\t ]{0,500}\([^)])/ nocase wide ascii
         $fp1 = "clone" fullword wide ascii
         $fp2 = "* @assert" ascii
         $fp3 = "*@assert" ascii
@@ -1070,23 +1070,23 @@ rule WEBSHELL_PHP_OBFUSC
 
         //strings from private rule capa_php_payload
         // \([^)] to avoid matching on e.g. eval() in comments
-        $cpayload1 = /\beval[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload2 = /\bexec[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload3 = /\bshell_exec[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload4 = /\bpassthru[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload5 = /\bsystem[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload6 = /\bpopen[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload7 = /\bproc_open[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload8 = /\bpcntl_exec[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload9 = /\bassert[\n\t ]*\([^)0]/ nocase wide ascii
-        $cpayload10 = /\bpreg_replace[\n\t ]*(\(.{1,|\/\*)100}\/[ismxADSUXju]{0,11}(e|\\x65)/ nocase wide ascii
-        $cpayload12 = /\bmb_ereg_replace[\t ]*\([^\)]{1,100}'e'/ nocase wide ascii
-        $cpayload13 = /\bmb_eregi_replace[\t ]*\([^\)]{1,100}'e'/ nocase wide ascii
-        $cpayload20 = /\bcreate_function[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload21 = /\bReflectionFunction[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload22 = /fetchall\(PDO::FETCH_FUNC[\n\t ]*[,}\)]/ nocase wide ascii
+        $cpayload1 = /\beval[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload2 = /\bexec[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload3 = /\bshell_exec[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload4 = /\bpassthru[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload5 = /\bsystem[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload6 = /\bpopen[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload7 = /\bproc_open[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload8 = /\bpcntl_exec[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload9 = /\bassert[\n\t ]{0,500}\([^)0]/ nocase wide ascii
+        $cpayload10 = /\bpreg_replace[\n\t ]{0,500}(\(.{1,|\/\*)100}\/[ismxADSUXju]{0,11}(e|\\x65)/ nocase wide ascii
+        $cpayload12 = /\bmb_ereg_replace[\t ]{0,500}\([^\)]{1,100}'e'/ nocase wide ascii
+        $cpayload13 = /\bmb_eregi_replace[\t ]{0,500}\([^\)]{1,100}'e'/ nocase wide ascii
+        $cpayload20 = /\bcreate_function[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload21 = /\bReflectionFunction[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload22 = /fetchall\(PDO::FETCH_FUNC[\n\t ]{0,500}[,}\)]/ nocase wide ascii
 
-        $m_cpayload_preg_filter1 = /\bpreg_filter[\n\t ]*(\([^\)]|\/\*)/ nocase wide ascii
+        $m_cpayload_preg_filter1 = /\bpreg_filter[\n\t ]{0,500}(\([^\)]|\/\*)/ nocase wide ascii
         $m_cpayload_preg_filter2 = "'|.*|e'" nocase wide ascii
         // TODO backticks
 
@@ -1299,23 +1299,23 @@ rule WEBSHELL_PHP_OBFUSC_Tiny
 
         //strings from private rule capa_php_payload
         // \([^)] to avoid matching on e.g. eval() in comments
-        $cpayload1 = /\beval[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload2 = /\bexec[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload3 = /\bshell_exec[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload4 = /\bpassthru[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload5 = /\bsystem[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload6 = /\bpopen[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload7 = /\bproc_open[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload8 = /\bpcntl_exec[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload9 = /\bassert[\n\t ]*\([^)0]/ nocase wide ascii
-        $cpayload10 = /\bpreg_replace[\n\t ]*(\(.{1,|\/\*)100}\/[ismxADSUXju]{0,11}(e|\\x65)/ nocase wide ascii
-        $cpayload12 = /\bmb_ereg_replace[\t ]*\([^\)]{1,100}'e'/ nocase wide ascii
-        $cpayload13 = /\bmb_eregi_replace[\t ]*\([^\)]{1,100}'e'/ nocase wide ascii
-        $cpayload20 = /\bcreate_function[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload21 = /\bReflectionFunction[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload22 = /fetchall\(PDO::FETCH_FUNC[\n\t ]*[,}\)]/ nocase wide ascii
+        $cpayload1 = /\beval[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload2 = /\bexec[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload3 = /\bshell_exec[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload4 = /\bpassthru[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload5 = /\bsystem[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload6 = /\bpopen[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload7 = /\bproc_open[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload8 = /\bpcntl_exec[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload9 = /\bassert[\n\t ]{0,500}\([^)0]/ nocase wide ascii
+        $cpayload10 = /\bpreg_replace[\n\t ]{0,500}(\(.{1,|\/\*)100}\/[ismxADSUXju]{0,11}(e|\\x65)/ nocase wide ascii
+        $cpayload12 = /\bmb_ereg_replace[\t ]{0,500}\([^\)]{1,100}'e'/ nocase wide ascii
+        $cpayload13 = /\bmb_eregi_replace[\t ]{0,500}\([^\)]{1,100}'e'/ nocase wide ascii
+        $cpayload20 = /\bcreate_function[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload21 = /\bReflectionFunction[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload22 = /fetchall\(PDO::FETCH_FUNC[\n\t ]{0,500}[,}\)]/ nocase wide ascii
 
-        $m_cpayload_preg_filter1 = /\bpreg_filter[\n\t ]*(\([^\)]|\/\*)/ nocase wide ascii
+        $m_cpayload_preg_filter1 = /\bpreg_filter[\n\t ]{0,500}(\([^\)]|\/\*)/ nocase wide ascii
         $m_cpayload_preg_filter2 = "'|.*|e'" nocase wide ascii
         // TODO backticks
 
@@ -1415,7 +1415,7 @@ rule WEBSHELL_PHP_OBFUSC_Fopo
 
         id = "a298e99d-1ba8-58c8-afb9-fc988ea91e9a"
     strings:
-        $payload = /(\beval[\t ]*\([^)]|\bassert[\t ]*\([^)])/ nocase wide ascii
+        $payload = /(\beval[\t ]{0,500}\([^)]|\bassert[\t ]{0,500}\([^)])/ nocase wide ascii
         // ;@eval(
         $one1 = "7QGV2YWwo" wide ascii
         $one2 = "tAZXZhbC" wide ascii
@@ -1572,41 +1572,41 @@ rule WEBSHELL_PHP_OBFUSC_3
 
         //strings from private rule capa_php_callback
         // the end is 1. ( followed by anything but a direct closing ) 2. /* for the start of an obfuscation comment
-        $callback1 = /\bob_start[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback2 = /\barray_diff_uassoc[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback3 = /\barray_diff_ukey[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback4 = /\barray_filter[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback5 = /\barray_intersect_uassoc[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback6 = /\barray_intersect_ukey[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback7 = /\barray_map[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback8 = /\barray_reduce[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback9 = /\barray_udiff_assoc[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback10 = /\barray_udiff_uassoc[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback11 = /\barray_udiff[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback12 = /\barray_uintersect_assoc[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback13 = /\barray_uintersect_uassoc[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback14 = /\barray_uintersect[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback15 = /\barray_walk_recursive[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback16 = /\barray_walk[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback17 = /\bassert_options[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback18 = /\buasort[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback19 = /\buksort[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback20 = /\busort[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback21 = /\bpreg_replace_callback[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback22 = /\bspl_autoload_register[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback23 = /\biterator_apply[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback24 = /\bcall_user_func[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback25 = /\bcall_user_func_array[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback26 = /\bregister_shutdown_function[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback27 = /\bregister_tick_function[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback28 = /\bset_error_handler[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback29 = /\bset_exception_handler[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback30 = /\bsession_set_save_handler[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback31 = /\bsqlite_create_aggregate[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback32 = /\bsqlite_create_function[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $callback33 = /\bmb_ereg_replace_callback[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
+        $callback1 = /\bob_start[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback2 = /\barray_diff_uassoc[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback3 = /\barray_diff_ukey[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback4 = /\barray_filter[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback5 = /\barray_intersect_uassoc[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback6 = /\barray_intersect_ukey[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback7 = /\barray_map[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback8 = /\barray_reduce[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback9 = /\barray_udiff_assoc[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback10 = /\barray_udiff_uassoc[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback11 = /\barray_udiff[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback12 = /\barray_uintersect_assoc[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback13 = /\barray_uintersect_uassoc[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback14 = /\barray_uintersect[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback15 = /\barray_walk_recursive[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback16 = /\barray_walk[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback17 = /\bassert_options[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback18 = /\buasort[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback19 = /\buksort[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback20 = /\busort[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback21 = /\bpreg_replace_callback[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback22 = /\bspl_autoload_register[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback23 = /\biterator_apply[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback24 = /\bcall_user_func[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback25 = /\bcall_user_func_array[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback26 = /\bregister_shutdown_function[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback27 = /\bregister_tick_function[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback28 = /\bset_error_handler[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback29 = /\bset_exception_handler[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback30 = /\bsession_set_save_handler[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback31 = /\bsqlite_create_aggregate[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback32 = /\bsqlite_create_function[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $callback33 = /\bmb_ereg_replace_callback[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
 
-        $m_callback1 = /\bfilter_var[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
+        $m_callback1 = /\bfilter_var[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
         $m_callback2 = "FILTER_CALLBACK" fullword wide ascii
 
         $cfp1 = /ob_start\(['\"]ob_gzhandler/ nocase wide ascii
@@ -1615,23 +1615,23 @@ rule WEBSHELL_PHP_OBFUSC_3
 
         //strings from private rule capa_php_payload
         // \([^)] to avoid matching on e.g. eval() in comments
-        $cpayload1 = /\beval[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload2 = /\bexec[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload3 = /\bshell_exec[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload4 = /\bpassthru[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload5 = /\bsystem[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload6 = /\bpopen[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload7 = /\bproc_open[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload8 = /\bpcntl_exec[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload9 = /\bassert[\n\t ]*\([^)0]/ nocase wide ascii
-        $cpayload10 = /\bpreg_replace[\n\t ]*(\(.{1,|\/\*)100}\/[ismxADSUXju]{0,11}(e|\\x65)/ nocase wide ascii
-        $cpayload12 = /\bmb_ereg_replace[\t ]*\([^\)]{1,100}'e'/ nocase wide ascii
-        $cpayload13 = /\bmb_eregi_replace[\t ]*\([^\)]{1,100}'e'/ nocase wide ascii
-        $cpayload20 = /\bcreate_function[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload21 = /\bReflectionFunction[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload22 = /fetchall\(PDO::FETCH_FUNC[\n\t ]*[,}\)]/ nocase wide ascii
+        $cpayload1 = /\beval[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload2 = /\bexec[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload3 = /\bshell_exec[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload4 = /\bpassthru[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload5 = /\bsystem[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload6 = /\bpopen[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload7 = /\bproc_open[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload8 = /\bpcntl_exec[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload9 = /\bassert[\n\t ]{0,500}\([^)0]/ nocase wide ascii
+        $cpayload10 = /\bpreg_replace[\n\t ]{0,500}(\(.{1,|\/\*)100}\/[ismxADSUXju]{0,11}(e|\\x65)/ nocase wide ascii
+        $cpayload12 = /\bmb_ereg_replace[\t ]{0,500}\([^\)]{1,100}'e'/ nocase wide ascii
+        $cpayload13 = /\bmb_eregi_replace[\t ]{0,500}\([^\)]{1,100}'e'/ nocase wide ascii
+        $cpayload20 = /\bcreate_function[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload21 = /\bReflectionFunction[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload22 = /fetchall\(PDO::FETCH_FUNC[\n\t ]{0,500}[,}\)]/ nocase wide ascii
 
-        $m_cpayload_preg_filter1 = /\bpreg_filter[\n\t ]*(\([^\)]|\/\*)/ nocase wide ascii
+        $m_cpayload_preg_filter1 = /\bpreg_filter[\n\t ]{0,500}(\([^\)]|\/\*)/ nocase wide ascii
         $m_cpayload_preg_filter2 = "'|.*|e'" nocase wide ascii
         // TODO backticks
 
@@ -2361,23 +2361,23 @@ rule WEBSHELL_PHP_Encoded_Big
 
         //strings from private rule capa_php_payload
         // \([^)] to avoid matching on e.g. eval() in comments
-        $cpayload1 = /\beval[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload2 = /\bexec[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload3 = /\bshell_exec[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload4 = /\bpassthru[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload5 = /\bsystem[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload6 = /\bpopen[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload7 = /\bproc_open[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload8 = /\bpcntl_exec[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload9 = /\bassert[\n\t ]*\([^)0]/ nocase wide ascii
-        $cpayload10 = /\bpreg_replace[\n\t ]*(\(.{1,|\/\*)100}\/[ismxADSUXju]{0,11}(e|\\x65)/ nocase wide ascii
-        $cpayload12 = /\bmb_ereg_replace[\t ]*\([^\)]{1,100}'e'/ nocase wide ascii
-        $cpayload13 = /\bmb_eregi_replace[\t ]*\([^\)]{1,100}'e'/ nocase wide ascii
-        $cpayload20 = /\bcreate_function[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload21 = /\bReflectionFunction[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload22 = /fetchall\(PDO::FETCH_FUNC[\n\t ]*[,}\)]/ nocase wide ascii
+        $cpayload1 = /\beval[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload2 = /\bexec[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload3 = /\bshell_exec[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload4 = /\bpassthru[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload5 = /\bsystem[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload6 = /\bpopen[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload7 = /\bproc_open[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload8 = /\bpcntl_exec[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload9 = /\bassert[\n\t ]{0,500}\([^)0]/ nocase wide ascii
+        $cpayload10 = /\bpreg_replace[\n\t ]{0,500}(\(.{1,|\/\*)100}\/[ismxADSUXju]{0,11}(e|\\x65)/ nocase wide ascii
+        $cpayload12 = /\bmb_ereg_replace[\t ]{0,500}\([^\)]{1,100}'e'/ nocase wide ascii
+        $cpayload13 = /\bmb_eregi_replace[\t ]{0,500}\([^\)]{1,100}'e'/ nocase wide ascii
+        $cpayload20 = /\bcreate_function[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload21 = /\bReflectionFunction[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload22 = /fetchall\(PDO::FETCH_FUNC[\n\t ]{0,500}[,}\)]/ nocase wide ascii
 
-        $m_cpayload_preg_filter1 = /\bpreg_filter[\n\t ]*(\([^\)]|\/\*)/ nocase wide ascii
+        $m_cpayload_preg_filter1 = /\bpreg_filter[\n\t ]{0,500}(\([^\)]|\/\*)/ nocase wide ascii
         $m_cpayload_preg_filter2 = "'|.*|e'" nocase wide ascii
         // TODO backticks
 
@@ -2490,7 +2490,7 @@ rule WEBSHELL_PHP_Generic_Backticks_OBFUSC
 
         id = "5ecb329f-0755-536d-8bfa-e36158474a0b"
     strings:
-        $s1 = /echo[\t ]*\(?`\$/ wide ascii
+        $s1 = /echo[\t ]{0,500}\(?`\$/ wide ascii
 
         //strings from private rule capa_php_old_safe
         $php_short = "<?" wide ascii
@@ -6612,23 +6612,23 @@ rule WEBSHELL_In_Image
 
         //strings from private rule capa_php_payload
         // \([^)] to avoid matching on e.g. eval() in comments
-        $cpayload1 = /\beval[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload2 = /\bexec[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload3 = /\bshell_exec[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload4 = /\bpassthru[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload5 = /\bsystem[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload6 = /\bpopen[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload7 = /\bproc_open[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload8 = /\bpcntl_exec[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload9 = /\bassert[\n\t ]*\([^)0]/ nocase wide ascii
-        $cpayload10 = /\bpreg_replace[\n\t ]*(\(.{1,|\/\*)100}\/[ismxADSUXju]{0,11}(e|\\x65)/ nocase wide ascii
-        $cpayload12 = /\bmb_ereg_replace[\t ]*\([^\)]{1,100}'e'/ nocase wide ascii
-        $cpayload13 = /\bmb_eregi_replace[\t ]*\([^\)]{1,100}'e'/ nocase wide ascii
-        $cpayload20 = /\bcreate_function[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload21 = /\bReflectionFunction[\n\t ]*(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload22 = /fetchall\(PDO::FETCH_FUNC[\n\t ]*[,}\)]/ nocase wide ascii
+        $cpayload1 = /\beval[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload2 = /\bexec[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload3 = /\bshell_exec[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload4 = /\bpassthru[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload5 = /\bsystem[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload6 = /\bpopen[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload7 = /\bproc_open[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload8 = /\bpcntl_exec[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload9 = /\bassert[\n\t ]{0,500}\([^)0]/ nocase wide ascii
+        $cpayload10 = /\bpreg_replace[\n\t ]{0,500}(\(.{1,|\/\*)100}\/[ismxADSUXju]{0,11}(e|\\x65)/ nocase wide ascii
+        $cpayload12 = /\bmb_ereg_replace[\t ]{0,500}\([^\)]{1,100}'e'/ nocase wide ascii
+        $cpayload13 = /\bmb_eregi_replace[\t ]{0,500}\([^\)]{1,100}'e'/ nocase wide ascii
+        $cpayload20 = /\bcreate_function[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload21 = /\bReflectionFunction[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
+        $cpayload22 = /fetchall\(PDO::FETCH_FUNC[\n\t ]{0,500}[,}\)]/ nocase wide ascii
 
-        $m_cpayload_preg_filter1 = /\bpreg_filter[\n\t ]*(\([^\)]|\/\*)/ nocase wide ascii
+        $m_cpayload_preg_filter1 = /\bpreg_filter[\n\t ]{0,500}(\([^\)]|\/\*)/ nocase wide ascii
         $m_cpayload_preg_filter2 = "'|.*|e'" nocase wide ascii
         // TODO backticks
 
