@@ -114,7 +114,7 @@ rule SUSP_ScreenConnect_User_2024_No_Logon_Feb24 {
 
 rule SUSP_ScreenConnect_Exploitation_Artefacts_Feb24 : SCRIPT {
    meta:
-      description = "Detects post exploitation indicators observed in relation to the ConnectWise ScreenConnect (versions prior to 23.9.8) vulnerability that allows an Authentication Bypass"
+      description = "Detects post exploitation indicators observed by HuntressLabs in relation to the ConnectWise ScreenConnect (versions prior to 23.9.8) vulnerability that allows an Authentication Bypass"
       author = "Florian Roth"
       reference = "https://www.huntress.com/blog/slashandgrab-screen-connect-post-exploitation-in-the-wild-cve-2024-1709-cve-2024-1708"
       date = "2024-02-23"
