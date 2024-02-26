@@ -2023,7 +2023,7 @@ rule WEBSHELL_PHP_Dynamic_Big
         author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         date = "2021/02/07"
-        modified = "2023-09-18"
+        modified = "2024-02-23"
         score = 50
         hash = "6559bfc4be43a55c6bb2bd867b4c9b929713d3f7f6de8111a3c330f87a9b302c"
         hash = "9e82c9c2fa64e26fd55aa18f74759454d89f968068d46b255bd4f41eb556112e"
@@ -2250,7 +2250,7 @@ rule WEBSHELL_PHP_Dynamic_Big
                     #weevely4 > 1
                 )
             ) or (
-                filesize < 4KB and
+                filesize < 4000 and
                 (
                     1 of ( $gen_much_sus* ) or
                     2 of ( $gen_bit_sus* )
