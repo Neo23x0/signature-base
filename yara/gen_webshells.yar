@@ -1015,7 +1015,7 @@ rule WEBSHELL_PHP_OBFUSC
         reference = "Internal Research"
         score = 75
         date = "2021/01/12"
-        modified = "2023-04-05"
+        modified = "2024-03-11"
         hash = "eec9ac58a1e763f5ea0f7fa249f1fe752047fa60"
         hash = "181a71c99a4ae13ebd5c94bfc41f9ec534acf61cd33ef5bce5fb2a6f48b65bf4"
         hash = "76d4e67e13c21662c4b30aab701ce9cdecc8698696979e504c288f20de92aee7"
@@ -1079,7 +1079,7 @@ rule WEBSHELL_PHP_OBFUSC
         $cpayload7 = /\bproc_open[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
         $cpayload8 = /\bpcntl_exec[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
         $cpayload9 = /\bassert[\n\t ]{0,500}\([^)0]/ nocase wide ascii
-        $cpayload10 = /\bpreg_replace[\n\t ]{0,500}(\(.{1,|\/\*)100}\/[ismxADSUXju]{0,11}(e|\\x65)/ nocase wide ascii
+        $cpayload10 = /\bpreg_replace[\n\t ]{0,500}\([^\)]{1,100}\/[ismxADSUXju]{0,11}(e|\\x65)/ nocase wide ascii
         $cpayload12 = /\bmb_ereg_replace[\t ]{0,500}\([^\)]{1,100}'e'/ nocase wide ascii
         $cpayload13 = /\bmb_eregi_replace[\t ]{0,500}\([^\)]{1,100}'e'/ nocase wide ascii
         $cpayload20 = /\bcreate_function[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
@@ -1254,7 +1254,7 @@ rule WEBSHELL_PHP_OBFUSC_Tiny
         reference = "Internal Research"
         score = 75
         date = "2021/01/12"
-        modified = "2023-07-05"
+        modified = "2024-03-11"
         hash = "b7b7aabd518a2f8578d4b1bc9a3af60d155972f1"
         hash = "694ec6e1c4f34632a9bd7065f73be473"
         hash = "5c871183444dbb5c8766df6b126bd80c624a63a16cc39e20a0f7b002216b2ba5"
@@ -1308,7 +1308,7 @@ rule WEBSHELL_PHP_OBFUSC_Tiny
         $cpayload7 = /\bproc_open[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
         $cpayload8 = /\bpcntl_exec[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
         $cpayload9 = /\bassert[\n\t ]{0,500}\([^)0]/ nocase wide ascii
-        $cpayload10 = /\bpreg_replace[\n\t ]{0,500}(\(.{1,|\/\*)100}\/[ismxADSUXju]{0,11}(e|\\x65)/ nocase wide ascii
+        $cpayload10 = /\bpreg_replace[\n\t ]{0,500}\([^\)]{1,100}\/[ismxADSUXju]{0,11}(e|\\x65)/ nocase wide ascii
         $cpayload12 = /\bmb_ereg_replace[\t ]{0,500}\([^\)]{1,100}'e'/ nocase wide ascii
         $cpayload13 = /\bmb_eregi_replace[\t ]{0,500}\([^\)]{1,100}'e'/ nocase wide ascii
         $cpayload20 = /\bcreate_function[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
@@ -1545,7 +1545,7 @@ rule WEBSHELL_PHP_OBFUSC_3
         reference = "Internal Research"
         score = 75
         date = "2021/04/17"
-        modified = "2023-07-05"
+        modified = "2024-03-11"
         hash = "11bb1fa3478ec16c00da2a1531906c05e9c982ea"
         hash = "d6b851cae249ea6744078393f622ace15f9880bc"
         hash = "14e02b61905cf373ba9234a13958310652a91ece"
@@ -1624,7 +1624,7 @@ rule WEBSHELL_PHP_OBFUSC_3
         $cpayload7 = /\bproc_open[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
         $cpayload8 = /\bpcntl_exec[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
         $cpayload9 = /\bassert[\n\t ]{0,500}\([^)0]/ nocase wide ascii
-        $cpayload10 = /\bpreg_replace[\n\t ]{0,500}(\(.{1,|\/\*)100}\/[ismxADSUXju]{0,11}(e|\\x65)/ nocase wide ascii
+        $cpayload10 = /\bpreg_replace[\n\t ]{0,500}\([^\)]{1,100}\/[ismxADSUXju]{0,11}(e|\\x65)/ nocase wide ascii
         $cpayload12 = /\bmb_ereg_replace[\t ]{0,500}\([^\)]{1,100}'e'/ nocase wide ascii
         $cpayload13 = /\bmb_eregi_replace[\t ]{0,500}\([^\)]{1,100}'e'/ nocase wide ascii
         $cpayload20 = /\bcreate_function[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
@@ -2342,7 +2342,7 @@ rule WEBSHELL_PHP_Encoded_Big
         author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         date = "2021/02/07"
-        modified = "2023-07-05"
+        modified = "2024-03-11"
         score = 50
         hash = "1d4b374d284c12db881ba42ee63ebce2759e0b14"
         hash = "fc0086caee0a2cd20609a05a6253e23b5e3245b8"
@@ -2370,7 +2370,7 @@ rule WEBSHELL_PHP_Encoded_Big
         $cpayload7 = /\bproc_open[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
         $cpayload8 = /\bpcntl_exec[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
         $cpayload9 = /\bassert[\n\t ]{0,500}\([^)0]/ nocase wide ascii
-        $cpayload10 = /\bpreg_replace[\n\t ]{0,500}(\(.{1,|\/\*)100}\/[ismxADSUXju]{0,11}(e|\\x65)/ nocase wide ascii
+        $cpayload10 = /\bpreg_replace[\n\t ]{0,500}\([^\)]{1,100}\/[ismxADSUXju]{0,11}(e|\\x65)/ nocase wide ascii
         $cpayload12 = /\bmb_ereg_replace[\t ]{0,500}\([^\)]{1,100}'e'/ nocase wide ascii
         $cpayload13 = /\bmb_eregi_replace[\t ]{0,500}\([^\)]{1,100}'e'/ nocase wide ascii
         $cpayload20 = /\bcreate_function[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
@@ -6581,7 +6581,7 @@ rule WEBSHELL_In_Image
         hash = "84938133ee6e139a2816ab1afc1c83f27243c8ae76746ceb2e7f20649b5b16a4"
         hash = "52b918a64afc55d28cd491de451bb89c57bce424f8696d6a94ec31fb99b17c11"
         date = "2021/02/27"
-        modified = "2023-04-05"
+        modified = "2024-03-11"
         score = 55
 
         id = "b1185b69-9b08-5925-823a-829fee6fa4cf"
@@ -6621,7 +6621,7 @@ rule WEBSHELL_In_Image
         $cpayload7 = /\bproc_open[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
         $cpayload8 = /\bpcntl_exec[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
         $cpayload9 = /\bassert[\n\t ]{0,500}\([^)0]/ nocase wide ascii
-        $cpayload10 = /\bpreg_replace[\n\t ]{0,500}(\(.{1,|\/\*)100}\/[ismxADSUXju]{0,11}(e|\\x65)/ nocase wide ascii
+        $cpayload10 = /\bpreg_replace[\n\t ]{0,500}\([^\)]{1,100}\/[ismxADSUXju]{0,11}(e|\\x65)/ nocase wide ascii
         $cpayload12 = /\bmb_ereg_replace[\t ]{0,500}\([^\)]{1,100}'e'/ nocase wide ascii
         $cpayload13 = /\bmb_eregi_replace[\t ]{0,500}\([^\)]{1,100}'e'/ nocase wide ascii
         $cpayload20 = /\bcreate_function[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii

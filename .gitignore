@@ -9,3 +9,4 @@ threatintel/get-blueliv-iocs.py
 3rdparty
 build
 main.log
+*.swp
