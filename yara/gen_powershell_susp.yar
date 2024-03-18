@@ -76,6 +76,7 @@ rule Suspicious_PowerShell_WebDownload_1 : HIGHVOL FILE {
       $fp7 = "# RemoteSSHConfigurationScript" ascii /* \.vscode\extensions\ms-vscode-remote.remote-ssh */
       $fp8 = "<helpItems" ascii fullword
       $fp9 = "DownloadFile(\"https://codecov.io/bash" ascii
+      $fp10 = "DownloadFile('https://get.golang.org/installer.exe" ascii
    condition:
       1 of ($s*) and not 1 of ($fp*)
 }
