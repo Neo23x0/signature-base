@@ -43,3 +43,15 @@ rule BKDR_XZUtil_Binary_CVE_2024_3094_Mar24_1 {
       )
 }
 
+rule BKDR_XZUtil_KillSwitch_CVE_2024_3094_Mar24_1 {
+   meta:
+      description = "Detects kill switch used by the backdoored XZ library (xzutil) CVE-2024-3094."
+      author = "Florian Roth"
+      reference = "https://gist.github.com/q3k/af3d93b6a1f399de28fe194add452d01?permalink_comment_id=5006558#gistcomment-5006558"
+      date = "2024-03-30"
+      score = 85
+   strings:
+      $x1 = "yolAbejyiejuvnup=Evjtgvsh5okmkAvj"
+   condition:
+      $x1
+}
