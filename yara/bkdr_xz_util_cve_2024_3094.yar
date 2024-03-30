@@ -35,6 +35,9 @@ rule BKDR_XZUtil_Binary_CVE_2024_3094_Mar24_1 {
       $xc1 = { 30 F1 EF A5 54 88 9F 54 C8 9C E5 38 9F B8 1E 70 00 00 08 04 88 3E C2 84 88 95 42 41 84 88 94 C2 41 00 }
    condition:
       uint16(0) == 0x457f
-      and all of ($op*)
-      or $xc1
+      and (
+         all of ($op*)
+         or $xc1
+      )
 }
+
