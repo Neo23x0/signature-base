@@ -32,7 +32,7 @@ rule BKDR_XZUtil_Binary_CVE_2024_3094_Mar24_1 {
       $op3 = { 4d 8b 6c 24 08 45 8b 3c 24 4c 8b 63 10 89 85 78 f1 ff ff 31 c0 83 bd 78 f1 ff ff 00 f3 ab 79 07 }
 
       /* function signature from detect.sh provided by Vegard Nossum */
-      $xc1 = { 30 F1 EF A5 54 88 9F 54 C8 9C E5 38 9F B8 1E 70 00 00 08 04 88 3E C2 84 88 95 42 41 84 88 94 C2 41 00 }
+      $xc1 = { F3 0F 1E FA 55 48 89 F5 4C 89 CE 53 89 FB 81 E7 00 00 00 80 48 83 EC 28 48 89 54 24 18 48 89 4C 24 10 }
    condition:
       uint16(0) == 0x457f
       and all of ($op*)
