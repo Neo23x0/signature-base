@@ -55,3 +55,17 @@ rule BKDR_XZUtil_KillSwitch_CVE_2024_3094_Mar24_1 {
    condition:
       $x1
 }
+
+rule SUSP_OBFUSC_SH_Indicators_Mar24_1 {
+   meta:
+      description = "Detects characteristics found in obfuscated script (used in the backdoored XZ package, but could match on others, too)"
+      author = "Florian Roth"
+      reference = "https://www.openwall.com/lists/oss-security/2024/03/29/4/1"
+      date = "2024-04-06"
+      score = 60
+   strings:
+      $s1 = "eval $"
+   condition:
+      uint8(1) == 0x3d // an equal sign at byte 2 ; means that the variable is only 1 character long
+      and $s1 in (filesize-20..filesize) // eval at the very end of the file
+}
