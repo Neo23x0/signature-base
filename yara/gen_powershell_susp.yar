@@ -57,7 +57,7 @@ rule Suspicious_PowerShell_WebDownload_1 : HIGHVOL FILE {
       score = 60
       reference = "Internal Research"
       date = "2017-02-22"
-      modified = "2022-07-27"
+      modified = "2024-04-03"
       nodeepdive = 1
       id = "a763fb82-c840-531b-b631-f282bf035020"
    strings:
@@ -76,6 +76,16 @@ rule Suspicious_PowerShell_WebDownload_1 : HIGHVOL FILE {
       $fp7 = "# RemoteSSHConfigurationScript" ascii /* \.vscode\extensions\ms-vscode-remote.remote-ssh */
       $fp8 = "<helpItems" ascii fullword
       $fp9 = "DownloadFile(\"https://codecov.io/bash" ascii
+      $fp10 = "DownloadFile('https://get.golang.org/installer.exe" ascii
+
+      $fpg1 = "All Rights"
+      $fpg2 = "<html"
+      $fpg3 = "<HTML"
+      $fpg4 = "Copyright"
+      $fpg5 = "License"
+      $fpg6 = "<?xml"
+      $fpg7 = "Help" fullword
+      $fpg8 = "COPYRIGHT" fullword
    condition:
       1 of ($s*) and not 1 of ($fp*)
 }
