@@ -10,9 +10,9 @@ rule VULN_Linux_Sudoers_Commands {
 		description = "Detects sudoers config with commands which might allow privilege escalation to root"
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Arnim Rupp"
-		reference = "https://wiki.archlinux.org/title/sudo"
+		reference = "https://gtfobins.github.io/"
 		date = "2022-11-22"
-		modified = "2023-02-18"
+		modified = "2024-04-15"
 		score = 50
 		id = "221d90c8-e70e-5214-a03b-57ecabcdd480"
 	strings:
@@ -21,8 +21,8 @@ rule VULN_Linux_Sudoers_Commands {
 		$command3 = "/ksh " ascii
 		$command4 = "/csh " ascii
 		$command5 = "/tcpdump " ascii
-		$command6 = "/cat " ascii
-		$command7 = "/head " ascii
+		//$command6 = "/cat " ascii
+		//$command7 = "/head " ascii
 		$command8 = "/nano " ascii
 		$command9 = "/pico " ascii
 		$command10 = "/rview " ascii
@@ -30,7 +30,7 @@ rule VULN_Linux_Sudoers_Commands {
 		$command12 = "/vim " ascii
 		$command13 = "/rvi " ascii
 		$command14 = "/rvim " ascii
-		$command15 = "/more " ascii
+		//$command15 = "/more " ascii
 		$command16 = "/less " ascii
 		$command17 = "/dd " ascii
 		/* $command18 = "/mount " ascii prone to FPs */ 
