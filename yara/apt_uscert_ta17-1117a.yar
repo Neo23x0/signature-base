@@ -51,13 +51,16 @@ rule REDLEAVES_CoreImplant_UniqueStrings {
         description = "Strings identifying the core REDLEAVES RAT in its deobfuscated state"
         reference = "https://www.us-cert.gov/ncas/alerts/TA17-117A"
         author = "USG"
+        date = "2018-12-20"
+        modified = "2024-04-17"
         id = "fd4d4804-f7d9-549d-8f63-5f409d6180f9"
     strings:
         $unique2 = "RedLeavesSCMDSimulatorMutex" nocase wide ascii
         $unique4 = "red_autumnal_leaves_dllmain.dll" wide ascii
         $unique7 = "\\NamePipe_MoreWindows" wide ascii
     condition:
-      any of them
+        not uint32(0) == 0x66676572 // not regf (registry hives)
+        and any of them
 }
 
 rule PLUGX_RedLeaves {
