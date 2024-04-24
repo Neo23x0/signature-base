@@ -149,6 +149,7 @@ rule Regin_Sample_1 {
       date = "25.11.14"
       score = 70
       hash = "773d7fab06807b5b1bc2d74fa80343e83593caf2"
+      id = "13478652-155f-52ba-af16-53f27c92e052"
    strings:
       $s0 = "Getting PortName/Identifier failed - %x" fullword ascii
       $s1 = "SerialAddDevice - error creating new devobj [%#08lx]" fullword ascii

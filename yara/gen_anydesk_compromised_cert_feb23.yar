@@ -7,6 +7,7 @@ rule PUA_AnyDesk_Compromised_Certificate_Revoked_Jan24 {
       author = "Florian Roth"
       reference = "https://anydesk.com/en/public-statement"
       score = 50
+      id = "eeefc9a5-1416-544b-b95e-c063000a4028"
    condition:
       uint16(0) == 0x5a4d 
       and for any i in (0 .. pe.number_of_signatures) : (
@@ -22,6 +23,7 @@ rule SUSP_AnyDesk_Compromised_Certificate_Jan24_1 {
       author = "Florian Roth"
       reference = "https://anydesk.com/en/public-statement"
       score = 75
+      id = "8d172b04-f7f7-54df-b30c-3ee17d3cca12"
    strings:
       $a1 = "AnyDesk Software GmbH" wide
    condition:
@@ -40,6 +42,7 @@ rule SUSP_AnyDesk_Compromised_Certificate_Jan24_2 {
       author = "Florian Roth"
       reference = "https://anydesk.com/en/public-statement"
       score = 65
+      id = "a41af8d8-ebdf-5a2f-8cf5-abd4587bdfc5"
    strings:
       $sc1 = { 0D BF 15 2D EA F0 B9 81 A8 A9 38 D5 3F 76 9D B8 }
       $s2 = "DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1"
@@ -59,6 +62,7 @@ rule SUSP_AnyDesk_Compromised_Certificate_Jan24_3 {
       author = "Florian Roth"
       reference = "https://anydesk.com/en/public-statement"
       score = 75
+      id = "9610e61c-25d7-53e8-ba3f-b78b3d108aa3"
    condition:
       uint16(0) == 0x5a4d and
       for any i in (0 .. pe.number_of_signatures) : (

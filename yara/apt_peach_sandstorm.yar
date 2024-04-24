@@ -6,6 +6,7 @@ rule APT_MAL_FalseFont_Backdoor_Jan24 {
       reference = "https://twitter.com/MsftSecIntel/status/1737895710169628824"
       hash = "364275326bbfc4a3b89233dabdaf3230a3d149ab774678342a40644ad9f8d614"
       score = 80
+      id = "b6a3efff-2abf-5ac1-9a2b-c7b30b51f92c"
    strings:
       $x1 = "Agent.Core.WPF.App" ascii
       $x2 = "3EzuNZ0RN3h3oV7rzILktSHSaHk+5rtcWOr0mlA1CUA=" wide //AesIV

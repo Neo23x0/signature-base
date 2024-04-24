@@ -6,6 +6,7 @@ rule MAL_Fortinet_COATHANGER_Beacon {
       author = "NLD MIVD - JSCU"
       date = "2024-02-06"
       reference = "https://www.ncsc.nl/documenten/publicaties/2024/februari/6/mivd-aivd-advisory-coathanger-tlp-clear"
+      id = "0c84e6e4-afae-5150-82e2-8de528cd11fc"
    strings:
       $chunk_1 = { 48 B8 47 45 54 20 2F 20 48 54 48 89 45 B0 48 B8 54 50 2F 32 0A 48 6F 73 48 89 45 B8 48 B8 74 3A 20 77 77 77 2E 67 48 89 45 C0 48 B8 6F 6F 67 6C 65 2E 63 6F }
    condition:
@@ -20,6 +21,7 @@ rule MAL_Fortinet_COATHANGER_Files {
       author = "NLD MIVD - JSCU"
       date = "2024-02-06"
       reference = "https://www.ncsc.nl/documenten/publicaties/2024/februari/6/mivd-aivd-advisory-coathanger-tlp-clear"
+      id = "0aa2f266-247b-5510-9fd9-4c7940fb80e8"
    strings:
       $1 = "/data2/"
       $2 = "/httpsd"

@@ -7,6 +7,7 @@ rule EXPL_CVE_2024_21413_Microsoft_Outlook_RCE_Feb24 {
       date = "2024-02-17"
       modified = "2024-02-19"
       score = 75
+      id = "4512ca7b-0755-565e-84f1-596552949aa5"
    strings:
       $a1 = "Subject: "
       $a2 = "Received: "

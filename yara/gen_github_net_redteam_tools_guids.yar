@@ -5484,6 +5484,7 @@ rule HKTL_NET_GUID_Sharpcat {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-11-30"
+        id = "450d13c6-93ae-5bf5-bdde-d874ab6c0cd5"
     strings:
         $typelibguid0 = "d16fd95f-23ce-4f8d-8763-b9f5a9cdd0c3" ascii nocase wide
     condition:
@@ -5497,6 +5498,7 @@ rule HKTL_NET_GUID_SharpNamedPipePTH {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-11-30"
+        id = "561b95a5-f32b-5fe8-9e67-3f702306be93"
     strings:
         $typelibguid0 = "344ee55a-4e32-46f2-a003-69ad52b55945" ascii nocase wide
     condition:
@@ -5510,6 +5512,7 @@ rule HKTL_NET_GUID_SharpTokenFinder {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-12-06"
+        id = "60fd06be-041b-5fa8-8f25-41b26605ea90"
     strings:
         $typelibguid0 = "572804d3-dbd6-450a-be64-2e3cb54fd173" ascii nocase wide
     condition:
@@ -5523,6 +5526,7 @@ rule HKTL_NET_GUID_SharpRODC {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-12-06"
+        id = "60779e7a-048f-5095-b853-fd90c4f7449e"
     strings:
         $typelibguid0 = "d305f8a3-019a-4cdf-909c-069d5b483613" ascii nocase wide
     condition:
@@ -5536,6 +5540,7 @@ rule HKTL_NET_GUID_GMSAPasswordReader {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-12-06"
+        id = "dc74bfce-90a1-53bd-bfe4-cb7c9c75da53"
     strings:
         $typelibguid0 = "c8112750-972d-4efa-a75b-da9b8a4533c7" ascii nocase wide
     condition:
@@ -5549,6 +5554,7 @@ rule HKTL_NET_GUID_SharpShareFinder {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-12-19"
+        id = "bb485347-ea9b-5f26-99ad-bedc38bfecd5"
     strings:
         $typelibguid0 = "64bfeb18-b65c-4a83-bde0-b54363b09b71" ascii nocase wide
     condition:
@@ -5563,6 +5569,7 @@ rule HKTL_NET_GUID_POSTDump {
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-12-19"
+        id = "7f33e76c-0227-5c23-b821-c5c9753e2384"
     strings:
         $typelibguid0 = "e54195f0-060c-4b24-98f2-ad9fb5351045" ascii nocase wide
     condition:

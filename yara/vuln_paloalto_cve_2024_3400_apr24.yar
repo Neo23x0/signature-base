@@ -7,6 +7,7 @@ rule APT_UTA028_ForensicArtefacts_PaloAlto_CVE_2024_3400_Apr24_1 : SCRIPT {
       date = "2024-04-15"
       modified = "2024-04-18"
       score = 70
+      id = "32cf18ff-784d-5849-87f8-14ede7315188"
    strings:
       $x1 = "cmd = base64.b64decode(rst.group"
       $x2 = "f.write(\"/*\"+output+\"*/\")"
@@ -30,6 +31,7 @@ rule EXPL_PaloAlto_CVE_2024_3400_Apr24_1 {
       reference = "https://www.volexity.com/blog/2024/04/12/zero-day-exploitation-of-unauthenticated-remote-code-execution-vulnerability-in-globalprotect-cve-2024-3400/"
       date = "2024-04-15"
       score = 70
+      id = "1bcf0415-5351-5e09-ab93-496e8dc47c92"
    strings:
       $x1 = "SESSID=../../../../opt/panlogs/"
       $x2 = "SESSID=./../../../../opt/panlogs/"
@@ -50,6 +52,7 @@ rule SUSP_LNX_Base64_Download_Exec_Apr24 : SCRIPT {
       date = "2024-04-18"
       reference = "Internal Research"
       score = 75
+      id = "df8dddef-3c49-500c-abc8-7f7de5aa69ae"
    strings:
       $sa1 = "curl http" base64
       $sa2 = "wget http" base64
@@ -68,6 +71,7 @@ rule SUSP_PY_Import_Statement_Apr24_1 {
       reference = "https://www.volexity.com/blog/2024/04/12/zero-day-exploitation-of-unauthenticated-remote-code-execution-vulnerability-in-globalprotect-cve-2024-3400/"
       date = "2024-04-15"
       score = 65
+      id = "8e05f9a1-40a8-5d01-9e45-8779b0ff7a45"
    strings:
       $x1 = "import sys,socket,os,pty;s=socket.socket("
    condition:
@@ -81,6 +85,7 @@ rule SUSP_LNX_Base64_Exec_Apr24 : SCRIPT {
       date = "2024-04-18"
       reference = "Internal Research"
       score = 75
+      id = "2da3d050-86b0-5903-97eb-c5f39ce4f3a3"
    strings:
       $s1 = "curl http://" base64
       $s2 = "wget http://" base64

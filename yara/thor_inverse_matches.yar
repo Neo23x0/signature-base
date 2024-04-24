@@ -569,6 +569,7 @@ rule SAM_Hive_Backup {
       nodeepdive = 1
       date = "2015-03-31"
       modified = "2023-12-12"
+      id = "31fb6c0c-966d-5002-bf8c-4129964c81ff"
    strings:
       $s1 = "\\SystemRoot\\System32\\Config\\SAM" wide
    condition:
