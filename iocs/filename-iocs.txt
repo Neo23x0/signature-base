@@ -2048,7 +2048,7 @@ ystem32\\lcsvsvc\.dll;80
 \\svchots\.exe;76
 \\suchost\.exe;76
 \\svchost\.\.exe;76
-\\rundll64\.exe;76
+\\rundll64\.exe;55
 
 # Stuff running where it normally shouldn't
 \\((Users|Documents and Settings))\\[^\\"]{1,20}\.(exe|dll);65
