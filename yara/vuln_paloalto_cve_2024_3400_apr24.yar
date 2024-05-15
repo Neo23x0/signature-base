@@ -91,6 +91,9 @@ rule SUSP_LNX_Base64_Exec_Apr24 : SCRIPT {
       $s2 = "wget http://" base64
       $s3 = ";chmod 777 " base64
       $s4 = "/tmp/" base64
+      
+      $mirai = "country="
+      
    condition:
-      all of them
+      any of them and not $mirai
 }
