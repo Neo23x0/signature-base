@@ -1987,7 +1987,7 @@ rule WEBSHELL_PHP_Dynamic
         $dynamic6 = /\$[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff\[\]'"]{0,20}\s{0,20}\(@/ wide ascii
         $dynamic7 = /\$[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff\[\]'"]{0,20}\s{0,20}\(base64_decode/ wide ascii
         // ${'_'.$_}["_"](${'_'.$_}["__"]
-        $dynamic8 = /\${[^}]{1,20}}(\[[^\]]{1,20}\])?\(\${/ wide ascii
+        $dynamic8 = /\$\{[^}]{1,20}}(\[[^\]]{1,20}\])?\(\$\{/ wide ascii
 
         $fp1 = { 3C 3F 70 68 70 0A 0A 24 61 28 24 62 20 3D 20 33 2C 20 24 63 29 3B } /* <?php\x0a\x0a$a($b = 3, $c); */
         $fp2 = { 3C 3F 70 68 70 0A 0A 24 61 28 24 62 20 3D 20 33 2C 20 2E 2E 2E 20 24 63 29 3B } /* <?php\x0a\x0a$a($b = 3, ... $c); */
@@ -2442,7 +2442,7 @@ rule WEBSHELL_PHP_Generic_Backticks
 
         id = "b2f1d8d0-8668-5641-8ce9-c8dd71f51f58"
     strings:
-        $backtick = /`\s*{?\$(_POST\[|_GET\[|_REQUEST\[|_SERVER\['HTTP_)/ wide ascii
+        $backtick = /`\s*\{?\$(_POST\[|_GET\[|_REQUEST\[|_SERVER\['HTTP_)/ wide ascii
 
         //strings from private rule capa_php_old_safe
         $php_short = "<?" wide ascii
@@ -6158,13 +6158,13 @@ rule WEBSHELL_JSP_Generic_Encoded_Shell
 
         id = "359949d7-1793-5e13-9fdc-fe995ae12117"
     strings:
-        $sj0 = /{ ?47, 98, 105, 110, 47, 98, 97, 115, 104/ wide ascii
-        $sj1 = /{ ?99, 109, 100}/ wide ascii
-        $sj2 = /{ ?99, 109, 100, 46, 101, 120, 101/ wide ascii
-        $sj3 = /{ ?47, 98, 105, 110, 47, 98, 97/ wide ascii
-        $sj4 = /{ ?106, 97, 118, 97, 46, 108, 97, 110/ wide ascii
-        $sj5 = /{ ?101, 120, 101, 99 }/ wide ascii
-        $sj6 = /{ ?103, 101, 116, 82, 117, 110/ wide ascii
+        $sj0 = /\{ ?47, 98, 105, 110, 47, 98, 97, 115, 104/ wide ascii
+        $sj1 = /\{ ?99, 109, 100}/ wide ascii
+        $sj2 = /\{ ?99, 109, 100, 46, 101, 120, 101/ wide ascii
+        $sj3 = /\{ ?47, 98, 105, 110, 47, 98, 97/ wide ascii
+        $sj4 = /\{ ?106, 97, 118, 97, 46, 108, 97, 110/ wide ascii
+        $sj5 = /\{ ?101, 120, 101, 99 }/ wide ascii
+        $sj6 = /\{ ?103, 101, 116, 82, 117, 110/ wide ascii
 
     condition:
         filesize <300KB and any of ($sj*)
