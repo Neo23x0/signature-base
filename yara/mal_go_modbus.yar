@@ -21,7 +21,7 @@ rule MAL_Go_Modbus_Jul24_1 {
       filesize < 30MB
       and (
          $sa1
-         and 2 of ($sb*)
+         and 3 of ($sb*)
       )
-      or all of them
+      or 4 of them
 }
