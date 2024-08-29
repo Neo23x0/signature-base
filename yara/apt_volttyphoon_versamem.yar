@@ -29,7 +29,7 @@ rule WEBSHELL_JAVA_VersaMem_JAR_Aug24_2 {
       score = 75
       hash1 = "4bcedac20a75e8f8833f4725adfc87577c32990c3783bf6c743f14599a176c37"
    strings:
-      $x1 = "tomcat_memShell" ascii fullword
+      $x1 = "tomcat_memShell" ascii
       $x2 = "versa/vnms/ui/config/" ascii fullword
    condition:
       uint16(0) == 0x4b50
