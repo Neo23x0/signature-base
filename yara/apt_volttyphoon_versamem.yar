@@ -34,5 +34,5 @@ rule WEBSHELL_JAVA_VersaMem_JAR_Aug24_2 {
    condition:
       uint16(0) == 0x4b50
       and filesize < 3000KB
-      and 6 of ($s*)
+      and 1 of them
 }
