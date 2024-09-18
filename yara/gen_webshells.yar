@@ -926,7 +926,7 @@ rule WEBSHELL_PHP_Generic_Eval
         id = "79cfbd88-f6f7-5cba-a325-0a99962139ca"
     strings:
         // new: eval($GLOBALS['_POST'
-        $geval = /\b(exec|shell_exec|passthru|system|popen|proc_open|pcntl_exec|eval|assert)[\t ]{0,500}(\(base64_decode)?(\(stripslashes)?[\t ]{0,500}(\(trim)?[\t ]{0,500}\(\$(_POST|_GET|_REQUEST|_SERVER\s?\[['"]HTTP_|GLOBALS\[['"]_(POST|GET|REQUEST))/ wide ascii
+        $geval = /\b(exec|shell_exec|passthru|system|popen|proc_open|pcntl_exec|eval|assert)[\t ]{0,300}(\(base64_decode)?(\(stripslashes)?[\t ]{0,300}(\(trim)?[\t ]{0,300}\(\$(_POST|_GET|_REQUEST|_SERVER\s?\[['"]HTTP_|GLOBALS\[['"]_(POST|GET|REQUEST))/ wide ascii
 
         //strings from private rule php_false_positive
         // try to use only strings which would be flagged by themselves as suspicious by other rules, e.g. eval
