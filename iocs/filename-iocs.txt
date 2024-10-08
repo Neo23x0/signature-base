@@ -4404,4 +4404,11 @@ C:\\ProgramData\\1\.msi;85
 c:\\programdata\\update\.dat;80
 C:\\perflogs\\RunSchedulerTaskOnce\.ps1;85
 
+# perfctl IOCs https://www.aquasec.com/blog/perfctl-a-stealthy-malware-targeting-millions-of-linux-servers/
+libgcwrap.so;45
+libpprocps.so;45
+libfsnldev.so;45
+/usr/bin/perfcc;45
+/root/.config/cron/perfcc;45
+
 # End
