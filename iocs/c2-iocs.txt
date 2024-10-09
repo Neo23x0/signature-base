@@ -1890,5 +1890,14 @@ adobe-us-updatefiles.digital
 45.129.137.233
 185.17.40.178
 
+# perfctl IOCs https://www.aquasec.com/blog/perfctl-a-stealthy-malware-targeting-millions-of-linux-servers/
+211.234.111.116
+46.101.139.173
+104.183.100.189
+198.211.126.180
+bitping.com
+earn.fm
+speedshare.app
+repocket.com
 
 # Last Line
