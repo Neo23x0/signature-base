@@ -4410,5 +4410,13 @@ C:\\perflogs\\RunSchedulerTaskOnce\.ps1;85
 /libfsnldev\.so;65
 /usr/bin/perfcc;65
 /root/\.config/cron/perfcc;65
+/tmp/.xdiag/exi;65
+/tmp/.xdiag/elog;65
+/tmp/.xdiag/int/.e.lock;65
+/tmp/.xdiag/hroot/hscheck;65
+/tmp/.xdiag/tordata/control_auth_cookie.tmp;85
+/tmp/.xdiag/tordata/cached-certs.tmp;85
+/tmp/.xdiag/tordata/cached-microdesc-consensus.tmp;85
+/tmp/.xdiag/tordata/state.tmp;85
 
 # End
