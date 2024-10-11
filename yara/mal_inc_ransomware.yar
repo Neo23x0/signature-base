@@ -4,7 +4,7 @@ rule MAL_RANSOM_INC_Aug24 {
       description = "Detects INC ransomware and it's variants like Lynx"
       reference1 = "https://x.com/rivitna2/status/1817681737251471471"
       reference2 = "https://twitter.com/rivitna2/status/1701739812733014313"
-      date = "2024-10-08"
+      date = "2024-08-08"
       hash1 = "eaa0e773eb593b0046452f420b6db8a47178c09e6db0fa68f6a2d42c3f48e3bc" // LYNX
       hash2 = "1754c9973bac8260412e5ec34bf5156f5bb157aa797f95ff4fc905439b74357a" // INC
       score = 80
