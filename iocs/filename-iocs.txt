@@ -3697,7 +3697,7 @@ _BloodHound\.zip;90
 \\Invoke-PetitPotam;95
 \\RottenPotato;85
 \\HotPotato;85
-\\JuicyPotato;85
+\\JuicyPotato;85;\\JuicyPotato\.php
 \\just_dce_;85
 \\Juicy Potato;85
 \\temp\rot\.exe;75
@@ -3972,7 +3972,7 @@ Potato\.exe;65
 \\mktzx64\.dll;85
 
 # BPFDoor Analysis https://doublepulsar.com/bpfdoor-an-active-chinese-global-surveillance-tool-54b078f1a896 https://www.sandflysecurity.com/blog/bpfdoor-an-evasive-linux-backdoor-technical-analysis/
-/dev/shm/kdmtmpflush;90
+/dev/shm/kdmtmpflush;90;grep
 /dev/shm/kdumpflush;90
 /dev/shm/kdumpdb;90
 /var/run/haldrund\.pid;80
