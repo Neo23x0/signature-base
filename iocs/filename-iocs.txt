@@ -4419,7 +4419,7 @@ C:\\perflogs\\RunSchedulerTaskOnce\.ps1;85
 /tmp/.xdiag/tordata/cached-microdesc-consensus.tmp;85
 /tmp/.xdiag/tordata/state.tmp;85
 
-# *.rdp files in Outlook temporary folders https://www.microsoft.com/en-us/security/blog/2024/10/29/midnight-blizzard-conducts-large-scale-spear-phishing-campaign-using-rdp-files/
+# Suspicioius *.rdp files in Outlook temporary folders https://www.microsoft.com/en-us/security/blog/2024/10/29/midnight-blizzard-conducts-large-scale-spear-phishing-campaign-using-rdp-files/
 \\AppData\\Local\\Microsoft\\Windows\\(INetCache|Temporary Internet Files)\\Content\.Outlook\\[A-Z0-9]{8}\\[^\\]{1,255}\.rdp$;70
 \\AppData\\Local\\Packages\\Microsoft\.Outlook_[a-zA-Z0-9]+\\LocalCache\\OlkDownloads\\[^\\]{1,255}\.rdp$;70
 
