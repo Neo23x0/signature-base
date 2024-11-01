@@ -359,7 +359,6 @@ Temp\\dllhost\.exe;80
 Temp\\sechost\.exe;80
 AppData\\chkdbg.log;60
 AppData\\svchost\.exe;80
-temp\\svchost\.exe;80
 AppData\\conhost\.dll;80
 Temp\\conhost\.dll;80
 
@@ -3698,7 +3697,7 @@ _BloodHound\.zip;90
 \\Invoke-PetitPotam;95
 \\RottenPotato;85
 \\HotPotato;85
-\\JuicyPotato;85
+\\JuicyPotato;85;\\JuicyPotato\.php
 \\just_dce_;85
 \\Juicy Potato;85
 \\temp\rot\.exe;75
@@ -3973,7 +3972,7 @@ Potato\.exe;65
 \\mktzx64\.dll;85
 
 # BPFDoor Analysis https://doublepulsar.com/bpfdoor-an-active-chinese-global-surveillance-tool-54b078f1a896 https://www.sandflysecurity.com/blog/bpfdoor-an-evasive-linux-backdoor-technical-analysis/
-/dev/shm/kdmtmpflush;90
+/dev/shm/kdmtmpflush;90;grep
 /dev/shm/kdumpflush;90
 /dev/shm/kdumpdb;90
 /var/run/haldrund\.pid;80
@@ -4403,5 +4402,24 @@ C:\\ProgramData\\JWrapper-Remote Access\\JWAppsSharedConfig\\serviceconfig\.xml;
 C:\\ProgramData\\1\.msi;85
 c:\\programdata\\update\.dat;80
 C:\\perflogs\\RunSchedulerTaskOnce\.ps1;85
+
+# perfctl IOCs https://www.aquasec.com/blog/perfctl-a-stealthy-malware-targeting-millions-of-linux-servers/
+/libgcwrap\.so;65
+/libpprocps\.so;65
+/libfsnldev\.so;65
+/usr/bin/perfcc;65
+/root/\.config/cron/perfcc;65
+/tmp/.xdiag/exi;65
+/tmp/.xdiag/elog;65
+/tmp/.xdiag/int/.e.lock;65
+/tmp/.xdiag/hroot/hscheck;65
+/tmp/.xdiag/tordata/control_auth_cookie.tmp;85
+/tmp/.xdiag/tordata/cached-certs.tmp;85
+/tmp/.xdiag/tordata/cached-microdesc-consensus.tmp;85
+/tmp/.xdiag/tordata/state.tmp;85
+
+# Suspicioius *.rdp files in Outlook temporary folders https://www.microsoft.com/en-us/security/blog/2024/10/29/midnight-blizzard-conducts-large-scale-spear-phishing-campaign-using-rdp-files/
+\\AppData\\Local\\Microsoft\\Windows\\(INetCache|Temporary Internet Files)\\Content\.Outlook\\[A-Z0-9]{8}\\[^\\]{1,255}\.rdp$;70
+\\AppData\\Local\\Packages\\Microsoft\.Outlook_[a-zA-Z0-9]{1,50}\\.{0,120}\\[^\\]{1,80}\.rdp$;70
 
 # End

@@ -25,7 +25,7 @@ jobs:
 
       # Upload the assembled Yara artifact
       - name: Upload the resulting Yara artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: signature-base.yar
           path: signature-base.yar

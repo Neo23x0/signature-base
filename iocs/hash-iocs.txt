@@ -11451,3 +11451,10 @@ a0fd0ceb95e775a48a95c00eab42fa5bb170f552005c38812fd03ab4cc14932e;ScreenConnect E
 69c7fc246c4867f070e1a7b80c7c41574ee76ab54a8b543a1e0f20ce4a0d5cde;ScreenConnect Exploitation IOCs - SSH Script d https://www.huntress.com/blog/slashandgrab-screen-connect-post-exploitation-in-the-wild-cve-2024-1709-cve-2024-1708
 aa9f5ed1eede9aac6d07b0ba13b73185838b159006fa83ed45657d7f333a0efe;ScreenConnect Exploitation IOCs - SSH Script Z.zip https://www.huntress.com/blog/slashandgrab-screen-connect-post-exploitation-in-the-wild-cve-2024-1709-cve-2024-1708
 6e8f83c88a66116e1a7eb10549542890d1910aee0000e3e70f6307aae21f9090;ScreenConnect Exploitation IOCs - Beacon driver.dll https://www.huntress.com/blog/slashandgrab-screen-connect-post-exploitation-in-the-wild-cve-2024-1709-cve-2024-1708
+
+656e22c65bf7c04d87b5afbe52b8d800;perfctl IOCs https://www.aquasec.com/blog/perfctl-a-stealthy-malware-targeting-millions-of-linux-servers/
+6e7230dbe35df5b46dcd08975a0cc87f;perfctl IOCs https://www.aquasec.com/blog/perfctl-a-stealthy-malware-targeting-millions-of-linux-servers/
+835a9a6908409a67e51bce69f80dd58a;perfctl IOCs https://www.aquasec.com/blog/perfctl-a-stealthy-malware-targeting-millions-of-linux-servers/
+cf265a3a3dd068d0aa0c70248cd6325d;perfctl IOCs https://www.aquasec.com/blog/perfctl-a-stealthy-malware-targeting-millions-of-linux-servers/
+da006a0b9b51d56fa3f9690cf204b99f;perfctl IOCs https://www.aquasec.com/blog/perfctl-a-stealthy-malware-targeting-millions-of-linux-servers/
+ba120e9c7f8896d9148ad37f02b0e3cb;perfctl IOCs https://www.aquasec.com/blog/perfctl-a-stealthy-malware-targeting-millions-of-linux-servers/
