@@ -359,7 +359,6 @@ Temp\\dllhost\.exe;80
 Temp\\sechost\.exe;80
 AppData\\chkdbg.log;60
 AppData\\svchost\.exe;80
-temp\\svchost\.exe;80
 AppData\\conhost\.dll;80
 Temp\\conhost\.dll;80
 

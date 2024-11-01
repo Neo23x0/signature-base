@@ -21,3 +21,4 @@ rule SUSP_RDP_File_Indicators_Oct24_1 {
       filesize < 50KB
       and all of them
 }
+
