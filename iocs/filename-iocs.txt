@@ -4421,6 +4421,6 @@ C:\\perflogs\\RunSchedulerTaskOnce\.ps1;85
 # Suspicioius *.rdp files in Outlook temporary folders https://www.microsoft.com/en-us/security/blog/2024/10/29/midnight-blizzard-conducts-large-scale-spear-phishing-campaign-using-rdp-files/
 \\AppData\\Local\\Microsoft\\Windows\\(INetCache|Temporary Internet Files)\\Content\.Outlook\\[A-Z0-9]{8}\\[^\\]{1,255}\.rdp$;70
 \\AppData\\Local\\Packages\\Microsoft\.Outlook_[a-zA-Z0-9]{1,50}\\.{0,120}\\[^\\]{1,80}\.rdp$;70
-\\AppData\\Local\\Microsoft\\Olk\\Attachments\\(?:[^\\]{1,50}\\){0,5}[^\\]{1,80}\.rdp$;70
+\\AppData\\Local\\Microsoft\\Olk\\Attachments\\([^\\]{1,50}\\){0,5}[^\\]{1,80}\.rdp$;70
 
 # End
