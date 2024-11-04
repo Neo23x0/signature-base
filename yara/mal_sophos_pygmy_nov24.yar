@@ -18,6 +18,8 @@ rule MAL_Sophos_XG_Pygmy_Goat_AES_Key {
       $dword_8 = { 55 51 50 77 }
    condition:
       uint32(0) == 0x464c457f and all of them
+      // due to FPs - but I don't know the file size of the implant 
+      and filesize < 4MB
 }
 
 rule MAL_Sophos_XG_Pygmy_Goat_Magic_Strings {
