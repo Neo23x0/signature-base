@@ -3,7 +3,7 @@ rule SUSP_EXPL_Msg_CVE_2023_23397_Mar23 {
       description = "MSG file with a PidLidReminderFileParameter property, potentially exploiting CVE-2023-23397"
       author = "delivr.to, modified by Florian Roth, Nils Kuhnert, Arnim Rupp, marcin@ulikowski.pl"
       date = "2023-03-15"
-      modified = "2023-03-17"
+      modified = "2024-12-03"
       score = 60
       reference = "https://www.mdsec.co.uk/2023/03/exploiting-cve-2023-23397-microsoft-outlook-elevation-of-privilege-vulnerability/"
       hash = "47fee24586cd2858cfff2dd7a4e76dc95eb44c8506791ccc2d59c837786eafe3"
@@ -27,6 +27,8 @@ rule SUSP_EXPL_Msg_CVE_2023_23397_Mar23 {
       $u1 = { 00 00 5C 00 5C 00 }
       /* not MSI */
       $fp_msi1 = {84 10 0C 00 00 00 00 00 C0 00 00 00 00 00 00 46}
+      /* not ASD */
+      $fp_asd = "theme/theme1.xml"
    condition:
       uint32be(0) == 0xD0CF11E0
       and uint32be(4) == 0xA1B11AE1
