@@ -321,12 +321,14 @@ rule Suspicious_Size_taskhost_exe {
       author = "Florian Roth (Nextron Systems)"
         score = 60
         date = "2015-12-23"
+        modified = "2024-06-10"
         noarchivescan = 1
         id = "71b6c853-f490-5d5a-b481-909f6f3a8798"
     condition:
         uint16(0) == 0x5a4d
         and filename == "taskhost.exe"
-        and ( filesize < 45KB or filesize > 120KB )
+        and not filepath contains "/lib/wine/fakedlls"
+        and ( filesize < 45KB or filesize > 200KB )
 }
 
 rule Suspicious_Size_spoolsv_exe {
