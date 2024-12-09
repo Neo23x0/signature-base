@@ -89,7 +89,7 @@ rule WEBSHELL_PHP_Generic
         reference = "Internal Research"
         score = 75
         date = "2021/01/14"
-        modified = "2023-09-18"
+        modified = "2024-12-09"
         hash = "bee1b76b1455105d4bfe2f45191071cf05e83a309ae9defcf759248ca9bceddd"
         hash = "6bf351900a408120bee3fc6ea39905c6a35fe6efcf35d0a783ee92062e63a854"
         hash = "e3b4e5ec29628791f836e15500f6fdea19beaf3e8d9981c50714656c50d3b365"
@@ -135,6 +135,7 @@ rule WEBSHELL_PHP_Generic
         $gfp_tiny8 = "echo shell_exec($aspellcommand . ' 2>&1');"
         $gfp_tiny9 = "throw new Exception('Could not find authentication source with id ' . $sourceId);"
         $gfp_tiny10= "return isset( $_POST[ $key ] ) ? $_POST[ $key ] : ( isset( $_REQUEST[ $key ] ) ? $_REQUEST[ $key ] : $default );"
+        $gfp_tiny11= "; This is the recommended, PHP 4-style version of the php.ini-dist file"
 
         //strings from private rule capa_php_old_safe
         $php_short = "<?" wide ascii
@@ -1543,9 +1544,9 @@ rule WEBSHELL_PHP_OBFUSC_3
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
-        score = 75
+        score = 70
         date = "2021/04/17"
-        modified = "2024-03-11"
+        modified = "2024-12-09"
         hash = "11bb1fa3478ec16c00da2a1531906c05e9c982ea"
         hash = "d6b851cae249ea6744078393f622ace15f9880bc"
         hash = "14e02b61905cf373ba9234a13958310652a91ece"
@@ -1612,6 +1613,7 @@ rule WEBSHELL_PHP_OBFUSC_3
         $cfp1 = /ob_start\(['\"]ob_gzhandler/ nocase wide ascii
         $cfp2 = "IWPML_Backend_Action_Loader" ascii wide
         $cfp3 = "<?phpclass WPML" ascii
+        $cfp4 = "      return implode('', "
 
         //strings from private rule capa_php_payload
         // \([^)] to avoid matching on e.g. eval() in comments
@@ -1949,7 +1951,7 @@ rule WEBSHELL_PHP_Dynamic
         author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         date = "2021/01/13"
-        modified = "2023-10-06"
+        modified = "2024-12-09"
         score = 60
         hash = "65dca1e652d09514e9c9b2e0004629d03ab3c3ef"
         hash = "b8ab38dc75cec26ce3d3a91cb2951d7cdd004838"
@@ -1997,6 +1999,7 @@ rule WEBSHELL_PHP_Dynamic
         $fp6 = "// TODO error about missing expression" /* <?php\x0a// TODO error about missing expression\x0a$a($b = 3, $c,); */
         $fp7 = "// This is an invalid location for an attribute, "
         $fp8 = "/* Auto-generated from php/php-langspec tests */"
+        $fp_dynamic1 = /"\$[a-zA-Z_\x80-\xff][a-zA-Z0-9_\x80-\xff\[\]'"]{0,20}\s{0,20}\(\$/ wide ascii // e.g. echo "$callback($text)";
     condition:
         filesize > 20 and filesize < 200 and (
             (
@@ -5509,7 +5512,7 @@ rule WEBSHELL_JSP_ReGeorg
         hash = "6db49e43722080b5cd5f07e058a073ba5248b584"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021/01/24"
-        modified = "2023-04-05"
+        modified = "2024-12-09"
         score = 75
         hash = "650eaa21f4031d7da591ebb68e9fc5ce5c860689"
         hash = "00c86bf6ce026ccfaac955840d18391fbff5c933"
@@ -5541,7 +5544,7 @@ rule WEBSHELL_JSP_ReGeorg
         filesize < 300KB and (
         $cjsp_short1 at 0 or
             any of ( $cjsp_long* ) or
-            $cjsp_short2 in ( filesize-100..filesize ) or
+            ($cjsp_short1 and $cjsp_short2 in ( filesize-100..filesize )) or
         (
             $cjsp_short2 and (
                 $cjsp_short1 in ( 0..1000 ) or
@@ -5562,7 +5565,7 @@ rule WEBSHELL_JSP_HTTP_Proxy
         reference = "Internal Research"
         score = 75
         date = "2021/01/24"
-        modified = "2023-07-05"
+        modified = "2024-12-09"
         hash = "97c1e2bf7e769d3fc94ae2fc74ac895f669102c6"
         hash = "2f9b647660923c5262636a5344e2665512a947a4"
 
@@ -5591,7 +5594,7 @@ rule WEBSHELL_JSP_HTTP_Proxy
         filesize < 10KB and (
         $cjsp_short1 at 0 or
             any of ( $cjsp_long* ) or
-            $cjsp_short2 in ( filesize-100..filesize ) or
+            ($cjsp_short1 and $cjsp_short2 in ( filesize-100..filesize )) or
         (
             $cjsp_short2 and (
                 $cjsp_short1 in ( 0..1000 ) or
@@ -5611,7 +5614,7 @@ rule WEBSHELL_JSP_Writer_Nano
         reference = "Internal Research"
         score = 75
         date = "2021/01/24"
-        modified = "2023-04-05"
+        modified = "2024-12-09"
         hash = "ac91e5b9b9dcd373eaa9360a51aa661481ab9429"
         hash = "c718c885b5d6e29161ee8ea0acadb6e53c556513"
         hash = "9f1df0249a6a491cdd5df598d83307338daa4c43"
@@ -5671,7 +5674,7 @@ rule WEBSHELL_JSP_Writer_Nano
         and (
         $cjsp_short1 at 0 or
             any of ( $cjsp_long* ) or
-            $cjsp_short2 in ( filesize-100..filesize ) or
+            ($cjsp_short1 and $cjsp_short2 in ( filesize-100..filesize )) or
         (
             $cjsp_short2 and (
                 $cjsp_short1 in ( 0..1000 ) or
@@ -5694,7 +5697,7 @@ rule WEBSHELL_JSP_Generic_Tiny
         reference = "Internal Research"
         score = 75
         date = "2021/01/07"
-        modified = "2023-04-05"
+        modified = "2024-12-09"
         hash = "8fd343db0442136e693e745d7af1018a99b042af"
         hash = "87c3ac9b75a72187e8bc6c61f50659435dbdc4fde6ed720cebb93881ba5989d8"
         hash = "1aa6af726137bf261849c05d18d0a630d95530588832aadd5101af28acc034b5"
@@ -5750,7 +5753,7 @@ rule WEBSHELL_JSP_Generic_Tiny
         ) and (
             $cjsp_short1 at 0 or
             any of ( $cjsp_long* ) or
-            $cjsp_short2 in ( filesize-100..filesize ) or
+            ($cjsp_short1 and $cjsp_short2 in ( filesize-100..filesize )) or
         (
             $cjsp_short2 and (
                 $cjsp_short1 in ( 0..1000 ) or
@@ -5779,7 +5782,7 @@ rule WEBSHELL_JSP_Generic
         reference = "Internal Research"
         score = 75
         date = "2021/01/07"
-        modified = "2023-04-05"
+        modified = "2024-12-09"
         hash = "4762f36ca01fb9cda2ab559623d2206f401fc0b1"
         hash = "bdaf9279b3d9e07e955d0ce706d9c42e4bdf9aa1"
         hash = "ee9408eb923f2d16f606a5aaac7e16b009797a07"
@@ -5845,7 +5848,7 @@ rule WEBSHELL_JSP_Generic
         and (
         $cjsp_short1 at 0 or
             any of ( $cjsp_long* ) or
-            $cjsp_short2 in ( filesize-100..filesize ) or
+            ($cjsp_short1 and $cjsp_short2 in ( filesize-100..filesize )) or
         (
             $cjsp_short2 and (
                 $cjsp_short1 in ( 0..1000 ) or
@@ -5873,7 +5876,7 @@ rule WEBSHELL_JSP_Generic_Base64
         reference = "Internal Research"
         score = 75
         date = "2021/01/24"
-        modified = "2023-04-05"
+        modified = "2024-12-09"
         hash = "8b5fe53f8833df3657ae2eeafb4fd101c05f0db0"
         hash = "1b916afdd415dfa4e77cecf47321fd676ba2184d"
 
@@ -5922,7 +5925,7 @@ rule WEBSHELL_JSP_Generic_Base64
         (
         $cjsp_short1 at 0 or
             any of ( $cjsp_long* ) or
-            $cjsp_short2 in ( filesize-100..filesize ) or
+            ($cjsp_short1 and $cjsp_short2 in ( filesize-100..filesize )) or
         (
             $cjsp_short2 and (
                 $cjsp_short1 in ( 0..1000 ) or
@@ -5989,7 +5992,7 @@ rule WEBSHELL_JSP_Generic_Reflection
         reference = "Internal Research"
         score = 75
         date = "2021/01/07"
-        modified = "2023-04-05"
+        modified = "2024-12-09"
         hash = "62e6c6065b5ca45819c1fc049518c81d7d165744"
         hash = "bf0ff88cbb72c719a291c722ae3115b91748d5c4920afe7a00a0d921d562e188"
 
@@ -5997,7 +6000,8 @@ rule WEBSHELL_JSP_Generic_Reflection
     strings:
         $ws_exec = "invoke" fullword wide ascii
         $ws_class = "Class" fullword wide ascii
-        $fp = "SOAPConnection"
+        $fp1 = "SOAPConnection"
+        $fp2 = "/CORBA/"
 
         //strings from private rule capa_jsp_safe
         $cjsp_short1 = "<%" ascii wide
@@ -6028,7 +6032,7 @@ rule WEBSHELL_JSP_Generic_Reflection
         all of ( $ws_* ) and (
         $cjsp_short1 at 0 or
             any of ( $cjsp_long* ) or
-            $cjsp_short2 in ( filesize-100..filesize ) or
+            ($cjsp_short1 and $cjsp_short2 in ( filesize-100..filesize )) or
         (
             $cjsp_short2 and (
                 $cjsp_short1 in ( 0..1000 ) or
@@ -6036,7 +6040,7 @@ rule WEBSHELL_JSP_Generic_Reflection
             )
         )
         )
-        and not $fp and
+        and not any of ( $fp* ) and
         (
             // either some kind of code input from the a web request ...
             filesize < 10KB and
@@ -6073,7 +6077,7 @@ rule WEBSHELL_JSP_Generic_Classloader
         score = 75
         hash = "6b546e78cc7821b63192bb8e087c133e8702a377d17baaeb64b13f0dd61e2347"
         date = "2021/01/07"
-        modified = "2023-04-05"
+        modified = "2024-12-09"
         hash = "f3a7e28e1c38fa5d37811bdda1d6b0893ab876023d3bd696747a35c04141dcf0"
         hash = "8ea2a25344e6094fa82dfc097bbec5f1675f6058f2b7560deb4390bcbce5a0e7"
         hash = "b9ea1e9f91c70160ee29151aa35f23c236d220c72709b2b75123e6fa1da5c86c"
@@ -6114,7 +6118,7 @@ rule WEBSHELL_JSP_Generic_Classloader
             (
                 $cjsp_short1 at 0 or
                     any of ( $cjsp_long* ) or
-                    $cjsp_short2 in ( filesize-100..filesize ) or
+                    ($cjsp_short1 and $cjsp_short2 in ( filesize-100..filesize )) or
                 (
                     $cjsp_short2 and (
                         $cjsp_short1 in ( 0..1000 ) or
@@ -6179,7 +6183,7 @@ rule WEBSHELL_JSP_NetSpy
         reference = "Internal Research"
         score = 75
         date = "2021/01/24"
-        modified = "2023-04-05"
+        modified = "2024-12-09"
         hash = "94d1aaabde8ff9b4b8f394dc68caebf981c86587"
         hash = "3870b31f26975a7cb424eab6521fc9bffc2af580"
 
@@ -6223,7 +6227,7 @@ rule WEBSHELL_JSP_NetSpy
         filesize < 30KB and (
         $cjsp_short1 at 0 or
             any of ( $cjsp_long* ) or
-            $cjsp_short2 in ( filesize-100..filesize ) or
+            ($cjsp_short1 and $cjsp_short2 in ( filesize-100..filesize )) or
         (
             $cjsp_short2 and (
                 $cjsp_short1 in ( 0..1000 ) or
@@ -6247,7 +6251,7 @@ rule WEBSHELL_JSP_By_String
         reference = "Internal Research"
         score = 75
         date = "2021/01/09"
-        modified = "2023-04-05"
+        modified = "2024-12-09"
         hash = "e9060aa2caf96be49e3b6f490d08b8a996c4b084"
         hash = "4c2464503237beba54f66f4a099e7e75028707aa"
         hash = "06b42d4707e7326aff402ecbb585884863c6351a"
@@ -6315,7 +6319,7 @@ rule WEBSHELL_JSP_By_String
                 (
                     $cjsp_short1 at 0 or
                     any of ( $cjsp_long* ) or
-                    $cjsp_short2 in ( filesize-100..filesize ) or
+                    ($cjsp_short1 and $cjsp_short2 in ( filesize-100..filesize )) or
                     (
                         $cjsp_short2 and (
                             $cjsp_short1 in ( 0..1000 ) or
@@ -6346,7 +6350,7 @@ rule WEBSHELL_JSP_Input_Upload_Write
         reference = "Internal Research"
         score = 75
         date = "2021/01/24"
-        modified = "2023-04-05"
+        modified = "2024-12-09"
         hash = "ef98ca135dfb9dcdd2f730b18e883adf50c4ab82"
         hash = "583231786bc1d0ecca7d8d2b083804736a3f0a32"
         hash = "19eca79163259d80375ebebbc440b9545163e6a3"
@@ -6384,7 +6388,7 @@ rule WEBSHELL_JSP_Input_Upload_Write
         filesize < 10KB and (
         $cjsp_short1 at 0 or
             any of ( $cjsp_long* ) or
-            $cjsp_short2 in ( filesize-100..filesize ) or
+            ($cjsp_short1 and $cjsp_short2 in ( filesize-100..filesize )) or
         (
             $cjsp_short2 and (
                 $cjsp_short1 in ( 0..1000 ) or
@@ -6406,7 +6410,7 @@ rule WEBSHELL_Generic_OS_Strings : FILE {
         author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         date = "2021/01/12"
-        modified = "2023-07-05"
+        modified = "2024-12-09"
         score = 50
         hash = "d5bfe40283a28917fcda0cefd2af301f9a7ecdad"
         hash = "fd45a72bda0a38d5ad81371d68d206035cb71a14"
@@ -6551,7 +6555,7 @@ rule WEBSHELL_Generic_OS_Strings : FILE {
         or (
         $cjsp_short1 at 0 or
             any of ( $cjsp_long* ) or
-            $cjsp_short2 in ( filesize-100..filesize ) or
+            ($cjsp_short1 and $cjsp_short2 in ( filesize-100..filesize )) or
         (
             $cjsp_short2 and (
                 $cjsp_short1 in ( 0..1000 ) or
