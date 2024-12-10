@@ -4423,4 +4423,9 @@ C:\\perflogs\\RunSchedulerTaskOnce\.ps1;85
 \\AppData\\Local\\Packages\\Microsoft\.Outlook_[a-zA-Z0-9]{1,50}\\.{0,120}\\[^\\]{1,80}\.rdp$;70
 \\AppData\\Local\\Microsoft\\Olk\\Attachments\\([^\\]{1,50}\\){0,5}[^\\]{1,80}\.rdp$;70
 
+# Cleo Software Exploitation https://www.huntress.com/blog/threat-advisory-oh-no-cleo-cleo-software-actively-being-exploited-in-the-wild
+60282967-dc91-40ef-a34c-38e992509c2c\.xml;85
+\\healthchecktemplate\.txt;75
+\\healthcheck\.txt;60
+
 # End
