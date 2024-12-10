@@ -31,3 +31,20 @@ rule EXPL_Cleo_Exploitation_PS1_Indicators_Dec24 : SCRIPT {
    condition:
       1 of them
 }
+
+rule SUSP_EXPL_JAR_Indicators_Dec24 {
+   meta:
+      description = "Detects characteristics of JAR files used during Cleo software exploitation (as reported by Huntress in December 2024)"
+      author = "Florian Roth"
+      reference = "https://www.huntress.com/blog/threat-advisory-oh-no-cleo-cleo-software-actively-being-exploited-in-the-wild"
+      date = "2024-12-10"
+      score = 70
+   strings:
+      $s1 = "start.java" ascii fullword
+      $s2 = "TLS v3 " ascii
+      $s3 = "java/util/Base64$Decoder" ascii
+   condition:
+      uint16(0) == 0xfeca
+      and filesize < 20KB
+      and all of them
+}
