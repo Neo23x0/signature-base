@@ -14,9 +14,28 @@ rule EXPL_Cleo_Exploitation_Log_Indicators_Dec24 : SCRIPT {
       1 of them
 }
 
+rule EXPL_Cleo_Exploitation_XML_Indicators_Dec24 {
+   meta:
+      description = "Detects XML used during and after Cleo software exploitation (as reported by Huntress in December 2024)"
+      author = "Florian Roth"
+      reference = "https://www.huntress.com/blog/threat-advisory-oh-no-cleo-cleo-software-actively-being-exploited-in-the-wild"
+      date = "2024-12-10"
+      score = 70
+   strings:
+      $x1 = "<Host alias=\"60282967-dc91-40ef-a34c-38e992509c2c\" application=\"\" " ascii
+      
+      $s1 = "<Commands>SYSTEM cmd.exe /c " ascii
+      $a1 = "<Action actiontype=\"Commands\" " ascii
+   condition:
+      filesize < 50KB and (
+         1 of ($x*)
+         or 2 of them
+      )
+}
+
 rule EXPL_Cleo_Exploitation_PS1_Indicators_Dec24 : SCRIPT {
    meta:
-      description = "Detects encoded PowerShell loader used during and after Cleo software exploitation (as reported by Huntress in December 2024)"
+      description = "Detects encoded and decoded PowerShell loader used during Cleo software exploitation (as reported by Huntress in December 2024)"
       author = "Florian Roth"
       reference = "https://www.huntress.com/blog/threat-advisory-oh-no-cleo-cleo-software-actively-being-exploited-in-the-wild"
       date = "2024-12-10"
