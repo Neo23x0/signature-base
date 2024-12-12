@@ -7,6 +7,7 @@ rule MAL_Sophos_XG_Pygmy_Goat_AES_Key {
       date = "2024-10-22"
       score = 75
       hash1 = "71f70d61af00542b2e9ad64abd2dda7e437536ff"
+      id = "62be3f4f-b435-54b2-b596-4ad01606edb8"
    strings:
       $dword_1 = { 59 4b 6e 77 }
       $dword_2 = { 51 6a 6d 41 }
@@ -30,6 +31,7 @@ rule MAL_Sophos_XG_Pygmy_Goat_Magic_Strings {
       date = "2024-10-22"
       score = 75
       hash1 = "71f70d61af00542b2e9ad64abd2dda7e437536ff"
+      id = "7df6c228-d569-5f1c-8bbb-4194347f99d1"
    strings:
       $c2_magic_handshake = ",bEB3?=o"
       $fake_ssh_banner = "SSH-2.0-D8pjE"
@@ -49,6 +51,7 @@ rule MAL_EarthWorm_Socks_Proxy_ID_Generation {
       date = "2024-10-22"
       score = 75
       hash1 = "71f70d61af00542b2e9ad64abd2dda7e437536ff"
+      id = "242777e4-3abb-50d8-8c45-746cc4a8b1f8"
    strings:
       $chartoi = {
          8b 45 ?? // MOV EAX,dword ptr [EBP + ??]

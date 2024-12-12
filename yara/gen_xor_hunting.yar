@@ -8,6 +8,7 @@ rule SUSP_XORed_Mozilla_Oct19 {
       date = "2019-10-28"
       modified = "2023-11-03"
       score = 60
+      id = "71e5b399-c384-5330-ae52-4e0a806e7969"
    strings:
       $xo1 = "Mozilla/5.0" xor ascii wide
       $xof1 = "Mozilla/5.0" ascii wide

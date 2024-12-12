@@ -547,6 +547,7 @@ rule SUSP_ANOMALY_Teams_Binary_Nov23 : FILE {
       reference = "https://twitter.com/steve_noel/status/1722698479636476325/photo/1"
       date = "2023-11-11"
       modified = "2024-12-03"
+      id = "60557ed1-ac16-5e3b-b105-157dc34f6ad7"
    strings:
       $a1 = "Microsoft Code Signing PCA" ascii
    condition:
