@@ -17,6 +17,7 @@ rule APT_MAL_APT27_Rshell_Jul24 {
       hash6 = "c4fe1e56f601d411e2385352606524fb8bbf773bc2ba14889a8de605c2d14da0"
       hash7 = "c787144d285fcca8a542f7a5525a37bcd089b39068b9a4db7fe3554ee6c08301"
       hash8 = "ddaa4d23e4651a517fffbd29f0924607ba6b6253171144da5e49237afe91666b"
+      id = "67c8ac4e-8e2f-5cca-90cb-5d5fdf6f86b5"
    strings:
       $a1 = "%02x%02x%02x%02x-%02x%02x-%02x%02x-%02x%02x-%02x%02x%02x%02x%02x%" ascii
       $a2 = "/proc/self/exe" ascii

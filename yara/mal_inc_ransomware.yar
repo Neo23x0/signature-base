@@ -8,6 +8,7 @@ rule MAL_RANSOM_INC_Aug24 {
       hash1 = "eaa0e773eb593b0046452f420b6db8a47178c09e6db0fa68f6a2d42c3f48e3bc" // LYNX
       hash2 = "1754c9973bac8260412e5ec34bf5156f5bb157aa797f95ff4fc905439b74357a" // INC
       score = 80
+      id = "b776490b-f26a-55d9-bb26-ec3c617f070c"
    strings:
       $s1 = "tarting full encryption in" wide
       $s2 = "oad hidden drives" wide

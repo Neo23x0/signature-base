@@ -6,6 +6,7 @@ rule EXPL_Cleo_Exploitation_Log_Indicators_Dec24 : SCRIPT {
       reference = "https://www.huntress.com/blog/threat-advisory-oh-no-cleo-cleo-software-actively-being-exploited-in-the-wild"
       date = "2024-12-10"
       score = 75
+      id = "385042a9-fc8c-5b50-975f-3436a16e6861"
    strings:
       $x1 = "Note: Processing autorun file 'autorun\\health" ascii wide
       $x2 = "60282967-dc91-40ef-a34c-38e992509c2c.xml" ascii wide
@@ -22,6 +23,7 @@ rule SUSP_EXPL_Cleo_Exploitation_Log_Indicators_Dec24_1 {
       hash1 = "786951478a0fc5db24f6e1d8dcc5eaa8880dbd928da97828a61f1f1f0f21e21d"
       date = "2024-12-10"
       score = 75
+      id = "81daf184-4c38-5d84-899b-9d0de2f39934"
    strings:
       $sa1 = "<Thread type=\"AutoRun\" action=" ascii
       $sa2 = "<Mark date=" ascii
@@ -56,6 +58,7 @@ rule SUSP_EXPL_Cleo_Exploitation_Log_Indicators_Dec24_2 {
       reference = "https://www.huntress.com/blog/threat-advisory-oh-no-cleo-cleo-software-actively-being-exploited-in-the-wild"
       date = "2024-12-10"
       score = 70
+      id = "d215d4a0-1726-58d4-90df-8ec6102effe1"
    strings:
       $sa1 = "<Thread type=\"AutoRun\" action=" ascii
       $sa2 = "<Mark date=" ascii
@@ -92,6 +95,7 @@ rule EXPL_Cleo_Exploitation_XML_Indicators_Dec24 {
       reference = "https://www.huntress.com/blog/threat-advisory-oh-no-cleo-cleo-software-actively-being-exploited-in-the-wild"
       date = "2024-12-10"
       score = 70
+      id = "622633af-aa7a-5bf9-a59c-6590535d86a4"
    strings:
       $x1 = "<Host alias=\"60282967-dc91-40ef-a34c-38e992509c2c\" application=\"\" " ascii
       
@@ -113,6 +117,7 @@ rule SUSP_EXPL_Cleo_Exploitation_XML_Indicators_Dec24_1 {
       hash1 = "b103f708e85416fc6d7af9605da4b57b3abe42fb9c6c9ec0f539b4c877580bd2"
       date = "2024-12-10"
       score = 70
+      id = "b30ca09f-b84c-5de8-9bf7-9f3269f32c1f"
    strings:
       $sa1 = "<Action actiontype=\"Commands\"" ascii
       $sa2 = "<?xml version=" ascii
@@ -147,6 +152,7 @@ rule SUSP_EXPL_Cleo_Exploitation_XML_Indicators_Dec24_2 {
       reference = "https://www.huntress.com/blog/threat-advisory-oh-no-cleo-cleo-software-actively-being-exploited-in-the-wild"
       date = "2024-12-10"
       score = 70
+      id = "a71c71f3-d36f-5c27-b150-e678bccf2dba"
    strings:
       $sa1 = "<Action actiontype=\"Commands\"" ascii
       $sa2 = "<?xml version=" ascii
@@ -183,6 +189,7 @@ rule EXPL_Cleo_Exploitation_PS1_Indicators_Dec24 : SCRIPT {
       reference = "https://www.huntress.com/blog/threat-advisory-oh-no-cleo-cleo-software-actively-being-exploited-in-the-wild"
       date = "2024-12-10"
       score = 75
+      id = "491cda57-0ad0-5ddc-90cb-48411eef2f2e"
    strings:
       $xe1 = "Start-Process -WindowStyle Hidden -FilePath jre\\bin\\java.exe" base64 ascii wide
       $xe2 = "$f=\"cleo." base64 ascii wide
@@ -201,6 +208,7 @@ rule SUSP_EXPL_JAR_Indicators_Dec24 {
       reference = "https://www.huntress.com/blog/threat-advisory-oh-no-cleo-cleo-software-actively-being-exploited-in-the-wild"
       date = "2024-12-10"
       score = 70
+      id = "4e8f6aa8-9efd-5fcf-b795-5042d4ba1708"
    strings:
       $s1 = "TLS v3 " ascii
       $s2 = "java/util/Base64$Decoder" ascii
@@ -221,6 +229,7 @@ rule EXPL_Cleo_Exploitation_JAVA_Payloads_Dec24_1_1 {
       date = "2024-12-10"
       score = 75
       hash1 = "0c57b317b572d071afd8ccdb844dd6f117e20f818c6031d7ba8adcbd32be0617"
+      id = "2940ddad-3dba-594a-9111-e4741d6ff39b"
    strings:
       $a1 = "java/lang/StringBuffer"
 
@@ -243,6 +252,7 @@ rule EXPL_Cleo_Exploitation_JAVA_Payloads_Dec24_2 {
       date = "2024-12-10"
       score = 75
       hash1 = "1ba95af21bac45db43ebf02f87ecedde802c7de4d472f33e74ee0a5b5015a726"
+      id = "bd575454-7fd0-566d-94e5-ec1368675108"
    strings:
       $s1 = "Timeout getting pipe-data" ascii fullword
       $s2 = "Ftprootpath" ascii fullword
@@ -261,6 +271,7 @@ rule EXPL_Cleo_Exploitation_JAVA_Payloads_Dec24_3 {
       reference = "https://www.huntress.com/blog/threat-advisory-oh-no-cleo-cleo-software-actively-being-exploited-in-the-wild"
       date = "2024-12-10"
       score = 75
+      id = "5c227bb9-0731-5955-a758-6fe86ecc2d86"
    strings:
       $a1 = "java/lang/String" ascii
 

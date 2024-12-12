@@ -8,6 +8,7 @@ rule MAL_Go_Modbus_Jul24_1 {
       modified = "2024-07-24"
       score = 75
       hash1 = "5d2e4fd08f81e3b2eb2f3eaae16eb32ae02e760afc36fa17f4649322f6da53fb"
+      id = "4a1e6bbe-d743-5394-b207-e417b64fa76d"
    strings:
       $a1 = "Go build"
 
