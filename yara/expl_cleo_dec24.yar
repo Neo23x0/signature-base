@@ -14,6 +14,77 @@ rule EXPL_Cleo_Exploitation_Log_Indicators_Dec24 : SCRIPT {
       1 of them
 }
 
+rule SUSP_EXPL_Cleo_Exploitation_Log_Indicators_Dec24_1 {
+   meta:
+      author = "X__Junior"
+      description = "Detects indicators found in logs during and after Cleo software exploitation (as reported by Huntress in December 2024)"
+      reference = "https://www.huntress.com/blog/threat-advisory-oh-no-cleo-cleo-software-actively-being-exploited-in-the-wild"
+      hash1 = "786951478a0fc5db24f6e1d8dcc5eaa8880dbd928da97828a61f1f1f0f21e21d"
+      date = "2024-12-10"
+      score = 75
+   strings:
+      $sa1 = "<Thread type=\"AutoRun\" action=" ascii
+      $sa2 = "<Mark date=" ascii
+      $sa3 = "<Event>" ascii
+      $sa4 = "<Command text" ascii
+
+      $sb1 = "[System.Net.WebRequest]::create" ascii
+      $sb2 = "Invoke-RestMethod" ascii
+      $sb3 = "Invoke-WebRequest" ascii
+      $sb4 = "iwr " ascii
+      $sb5 = "Net.WebClient" ascii
+      $sb6 = "Resume-BitsTransfer" ascii
+      $sb7 = "Start-BitsTransfer" ascii
+      $sb8 = "wget " ascii
+      $sb9 = "WinHttp.WinHttpRequest" ascii
+      $sb10 = ".DownloadFile(" ascii
+      $sb11 = ".DownloadString(" ascii
+      $sb12 = "Bypass" nocase ascii
+      $sb13 = "-EncodedCommand" ascii
+      $sb14 = "-windowstyle hidden" ascii
+      $sb15 = " -enc " ascii
+   condition:
+      filesize < 1MB
+      and all of ($sa*)
+      and 1 of ($sb*)
+}
+
+rule SUSP_EXPL_Cleo_Exploitation_Log_Indicators_Dec24_2 {
+   meta:
+      author = "X__Junior"
+      description = "Detects indicators found in logs during and after Cleo software exploitation (as reported by Huntress in December 2024)"
+      reference = "https://www.huntress.com/blog/threat-advisory-oh-no-cleo-cleo-software-actively-being-exploited-in-the-wild"
+      date = "2024-12-10"
+      score = 70
+   strings:
+      $sa1 = "<Thread type=\"AutoRun\" action=" ascii
+      $sa2 = "<Mark date=" ascii
+      $sa3 = "<Event>" ascii
+      $sa4 = "<Command text" ascii
+
+      $sb1 = "wscript" ascii
+      $sb2 = "cscript" ascii
+      $sb3 = "mshta" ascii
+      $sb4 = "certutil" ascii
+      $sb5 = "pwsh" ascii
+      $sb6 = "curl" ascii
+      $sb7 = "msiexec" ascii
+      $sb8 = "taskkill" ascii
+      $sb9 = "regsvr32" ascii
+      $sb10 = "rundll32" ascii
+      $sb11 = "bitsadmin" ascii
+      $sb12 = "whoami" ascii
+      $sb13 = "bcdedit" ascii
+      $sb14 = "systeminfo" ascii
+      $sb15 = "reg " ascii
+      $sb16 = "schtasks" ascii
+      // $sb17 = "query" ascii
+   condition:
+      filesize < 1MB
+      and all of ($sa*)
+      and 1 of ($sb*)
+}
+
 rule EXPL_Cleo_Exploitation_XML_Indicators_Dec24 {
    meta:
       description = "Detects XML used during and after Cleo software exploitation (as reported by Huntress in December 2024)"
@@ -31,6 +102,78 @@ rule EXPL_Cleo_Exploitation_XML_Indicators_Dec24 {
          1 of ($x*)
          or 2 of them
       )
+}
+
+
+rule SUSP_EXPL_Cleo_Exploitation_XML_Indicators_Dec24_1 {
+   meta:
+      author = "X__Junior"
+      description = "Detects XML used during and after Cleo software exploitation (as reported by Huntress in December 2024)"
+      reference = "https://www.huntress.com/blog/threat-advisory-oh-no-cleo-cleo-software-actively-being-exploited-in-the-wild"
+      hash1 = "b103f708e85416fc6d7af9605da4b57b3abe42fb9c6c9ec0f539b4c877580bd2"
+      date = "2024-12-10"
+      score = 70
+   strings:
+      $sa1 = "<Action actiontype=\"Commands\"" ascii
+      $sa2 = "<?xml version=" ascii
+      $sa3 = "<Runninglocalrequired>" ascii
+      $sa4 = "<Autostartup>" ascii
+
+      $sb1 = "[System.Net.WebRequest]::create" ascii
+      $sb2 = "Invoke-RestMethod" ascii
+      $sb3 = "Invoke-WebRequest" ascii
+      $sb4 = "iwr " ascii
+      $sb5 = "Net.WebClient" ascii
+      $sb6 = "Resume-BitsTransfer" ascii
+      $sb7 = "Start-BitsTransfer" ascii
+      $sb8 = "wget " ascii
+      $sb9 = "WinHttp.WinHttpRequest" ascii
+      $sb10 = ".DownloadFile(" ascii
+      $sb11 = ".DownloadString(" ascii
+      $sb12 = "Bypass" nocase ascii
+      $sb13 = "-EncodedCommand" ascii
+      $sb14 = "-windowstyle hidden" ascii
+      $sb15 = " -enc " ascii
+   condition:
+      filesize < 10KB
+      and all of ($sa*)
+      and 1 of ($sb*)
+}
+
+rule SUSP_EXPL_Cleo_Exploitation_XML_Indicators_Dec24_2 {
+   meta:
+      author = "X__Junior"
+      description = "Detects XML used during and after Cleo software exploitation (as reported by Huntress in December 2024)"
+      reference = "https://www.huntress.com/blog/threat-advisory-oh-no-cleo-cleo-software-actively-being-exploited-in-the-wild"
+      date = "2024-12-10"
+      score = 70
+   strings:
+      $sa1 = "<Action actiontype=\"Commands\"" ascii
+      $sa2 = "<?xml version=" ascii
+      $sa3 = "<Runninglocalrequired>" ascii
+      $sa4 = "<Autostartup>" ascii
+
+      $sb1 = "wscript" ascii
+      $sb2 = "cscript" ascii
+      $sb3 = "mshta" ascii
+      $sb4 = "certutil" ascii
+      $sb5 = "pwsh" ascii
+      $sb6 = "curl" ascii
+      $sb7 = "msiexec" ascii
+      $sb8 = "taskkill" ascii
+      $sb9 = "regsvr32" ascii
+      $sb10 = "rundll32" ascii
+      $sb11 = "bitsadmin" ascii
+      $sb12 = "whoami" ascii
+      $sb13 = "bcdedit" ascii
+      $sb14 = "systeminfo" ascii
+      $sb15 = "reg " ascii
+      $sb16 = "schtasks" ascii
+      // $sb17 = "query" ascii
+   condition:
+      filesize < 10KB
+      and all of ($sa*)
+      and 1 of ($sb*)
 }
 
 rule EXPL_Cleo_Exploitation_PS1_Indicators_Dec24 : SCRIPT {
@@ -59,9 +202,11 @@ rule SUSP_EXPL_JAR_Indicators_Dec24 {
       date = "2024-12-10"
       score = 70
    strings:
-      $s1 = "start.java" ascii fullword
-      $s2 = "TLS v3 " ascii
-      $s3 = "java/util/Base64$Decoder" ascii
+      $s1 = "TLS v3 " ascii
+      $s2 = "java/util/Base64$Decoder" ascii
+      $s3 = "AES/CBC/NoPadding" ascii
+      $s4 = "getenv" ascii
+      $s5 = "ava/util/zip/ZipInputStream" ascii
    condition:
       uint16(0) == 0xfeca
       and filesize < 20KB
@@ -107,4 +252,24 @@ rule EXPL_Cleo_Exploitation_JAVA_Payloads_Dec24_2 {
       uint16(0) == 0xfeca
       and filesize < 30KB
       and 3 of them
+}
+
+rule EXPL_Cleo_Exploitation_JAVA_Payloads_Dec24_3 {
+   meta:
+      description = "Detects characteristics of JAR files used during Cleo software exploitation"
+      author = "X__Junior"
+      reference = "https://www.huntress.com/blog/threat-advisory-oh-no-cleo-cleo-software-actively-being-exploited-in-the-wild"
+      date = "2024-12-10"
+      score = 75
+   strings:
+      $a1 = "java/lang/String" ascii
+
+      $s1 = "#lsz#" ascii
+      $s2 = "#dbg#" ascii
+      $s3 = "#ll#" ascii
+      $s4 = "SvZipDataOverflow=%d OpNotConf=" ascii
+   condition:
+      uint16(0) == 0xfeca
+      and filesize < 20KB
+      and 3 of ($s*) and $a1
 }
