@@ -2337,12 +2337,12 @@ rule WEBSHELL_PHP_Dynamic_Big
 rule WEBSHELL_PHP_Encoded_Big
 {
     meta:
-        description = "PHP webshell using some kind of eval with encoded blob to decode"
+        description = "PHP webshell using some kind of eval with encoded blob to decode, which is checked with YARAs math.entropy module"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         date = "2021/02/07"
-        modified = "2024-03-11"
+        modified = "2024-12-16"
         score = 50
         hash = "1d4b374d284c12db881ba42ee63ebce2759e0b14"
         hash = "fc0086caee0a2cd20609a05a6253e23b5e3245b8"
@@ -2365,7 +2365,6 @@ rule WEBSHELL_PHP_Encoded_Big
         $cpayload2 = /\bexec[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
         $cpayload3 = /\bshell_exec[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
         $cpayload4 = /\bpassthru[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
-        $cpayload5 = /\bsystem[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
         $cpayload6 = /\bpopen[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
         $cpayload7 = /\bproc_open[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
         $cpayload8 = /\bpcntl_exec[\n\t ]{0,500}(\([^)]|\/\*)/ nocase wide ascii
@@ -5685,7 +5684,7 @@ rule WEBSHELL_JSP_Writer_Nano
             )
 }
 
-rule WEBSHELL_JSP_Generic_Tiny
+rule EXT_WEBSHELL_JSP_Generic_Tiny
 {
     meta:
         description = "Generic JSP webshell tiny"
@@ -5694,12 +5693,11 @@ rule WEBSHELL_JSP_Generic_Tiny
         reference = "Internal Research"
         score = 75
         date = "2021/01/07"
-        modified = "2023-04-05"
+        modified = "2024-12-16"
         hash = "8fd343db0442136e693e745d7af1018a99b042af"
         hash = "87c3ac9b75a72187e8bc6c61f50659435dbdc4fde6ed720cebb93881ba5989d8"
         hash = "1aa6af726137bf261849c05d18d0a630d95530588832aadd5101af28acc034b5"
 
-        id = "7535ade8-fc65-5558-a72c-cc14c3306390"
     strings:
         $payload1 = "ProcessBuilder" fullword wide ascii
         $payload2 = "URLClassLoader" fullword wide ascii
@@ -5739,6 +5737,7 @@ rule WEBSHELL_JSP_Generic_Tiny
         // no web input but fixed command to create reverse shell
         $fixed_cmd1 = "bash -i >& /dev/" ascii wide
 
+        $fp1 = "Find Security Bugs is a plugin that aims to help security audit.</Details>"
     condition:
         //any of them or
         (
@@ -5750,7 +5749,7 @@ rule WEBSHELL_JSP_Generic_Tiny
         ) and (
             $cjsp_short1 at 0 or
             any of ( $cjsp_long* ) or
-            $cjsp_short2 in ( filesize-100..filesize ) or
+            ($cjsp_short1 and $cjsp_short2 in ( filesize-100..filesize )) or
         (
             $cjsp_short2 and (
                 $cjsp_short1 in ( 0..1000 ) or
@@ -5768,6 +5767,7 @@ rule WEBSHELL_JSP_Generic_Tiny
         )
         and
         ( 1 of ( $payload* ) or all of ( $payload_rt* ) )
+        and not any of ( $fp* )
 }
 
 rule WEBSHELL_JSP_Generic
