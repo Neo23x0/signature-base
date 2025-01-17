@@ -95,5 +95,5 @@ rule SUSP_LNX_Base64_Exec_Apr24 : SCRIPT {
       
       $mirai = "country="
    condition:
-      any of them and not $mirai
+      1 of ($s*) and not $mirai
 }
