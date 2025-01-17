@@ -1,10 +1,11 @@
-rule fuse_nfs {
+rule HKTL_NFS_Fuse_NFS {
    meta:
       description = "Detects the nfs-security-tooling fuse_nfs by HvS Consulting"
       license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Moritz Oettle"
       date = "2024-10-22"
-      reference1 = "https://github.com/hvs-consulting/nfs-security-tooling"
+      score = 75
+      reference = "https://github.com/hvs-consulting/nfs-security-tooling"
 
    strings:
       $s1 = "NFS3ConnectionFactory" fullword ascii
@@ -21,13 +22,14 @@ rule fuse_nfs {
       4 of them
 }
 
-rule nfs_analyze {
+rule HKTL_NFS_NFS_Analyze {
    meta:
       description = "Detects the nfs-security-tooling nfy_analyze by HvS Consulting"
       license = "https://creativecommons.org/licenses/by-nc/4.0/"
       author = "Marc Stroebel"
       date = "2024-10-22"
-      reference1 = "https://github.com/hvs-consulting/nfs-security-tooling"
+      score = 75
+      reference = "https://github.com/hvs-consulting/nfs-security-tooling"
       
    strings:
       $s1 = "no_root_squash_exports" fullword ascii
