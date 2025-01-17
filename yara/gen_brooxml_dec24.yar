@@ -7,6 +7,7 @@ rule Brooxml_Hunting {
         date = "2024-11-27"
         score = 70
         reference = "https://x.com/threatinsight/status/1861817946508763480"
+        id = "1ffea1c7-9f97-5bb1-93d7-ce914765416f"
     strings:
         $pk_ooxml_magic = {50 4b 03 04 [22] 13 00 [2] 5b 43 6f 6e 74 65 6e 74 5f 54 79 70 65 73 5d 2e 78 6d 6c}
 
@@ -45,6 +46,7 @@ rule Brooxml_Phishing {
         date = "2024-11-27"
         score = 65
         reference = "https://x.com/threatinsight/status/1861817946508763480"
+        id = "ccd8ab30-90a4-5d4b-8a77-dbc4669bdb95"
     strings:
         $hex1 = { 21 20 03 20 c3 be c3 bf 09 20 [0-1] 06 20 20 20 20 20 20 20 20 20 20 20 01 20 20 20 06 20 20 20 20 20 20 20 20 10 20 20 05 20 20 20 01 20 20 20 c3 be c3 bf c3 bf c3 bf }
         $docx = { 50 4b }

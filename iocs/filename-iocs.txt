@@ -3902,7 +3902,7 @@ linpeas\.log;75
 \\passav\.exe;65
 
 # Exploit Code File Names
-\\(cve|CVE)-20[012][0-9]\-[0-9]{4,5}.{0,20}($|\\);60;(\\share\\doc|\\Microsoft\\Windows Defender Advanced Threat Protection\\|/\.cpanm/work/| \.\.\.\.\. ok|\\sigma\\|\\(cve|CVE)-20[012][0-9]\-[0-9]{4,5}\\n | MFSA |emerging-threats)
+\\(cve|CVE)-20[012][0-9]\-[0-9]{4,5}.{0,20}($|\\);60;(\\share\\doc|\\Microsoft\\Windows Defender Advanced Threat Protection\\|/\.cpanm/work/| \.\.\.\.\. ok|\\sigma\\|\\(cve|CVE)-20[012][0-9]\-[0-9]{4,5}\\n | MFSA |emerging-threats|advisory|fixed)
 \\(cve|CVE)-20[012][0-9]\-[0-9]{4,5}.{0,20}(\.py|\.exe|\.vbs|\.bat|\.ps1|\.dll);75;(\\share\\doc|CVE\-2017\-9800\-pre\-commit)
 
 # Possible Service Path Escalation Attempt http://www.commonexploits.com/unquoted-service-paths/ or simple malware
@@ -4422,5 +4422,10 @@ C:\\perflogs\\RunSchedulerTaskOnce\.ps1;85
 \\AppData\\Local\\Microsoft\\Windows\\(INetCache|Temporary Internet Files)\\Content\.Outlook\\[A-Z0-9]{8}\\[^\\]{1,255}\.rdp$;70
 \\AppData\\Local\\Packages\\Microsoft\.Outlook_[a-zA-Z0-9]{1,50}\\.{0,120}\\[^\\]{1,80}\.rdp$;70
 \\AppData\\Local\\Microsoft\\Olk\\Attachments\\([^\\]{1,50}\\){0,5}[^\\]{1,80}\.rdp$;70
+
+# Cleo Software Exploitation https://www.huntress.com/blog/threat-advisory-oh-no-cleo-cleo-software-actively-being-exploited-in-the-wild
+60282967-dc91-40ef-a34c-38e992509c2c\.xml;85
+\\healthchecktemplate\.txt;75
+\\healthcheck\.txt;60
 
 # End

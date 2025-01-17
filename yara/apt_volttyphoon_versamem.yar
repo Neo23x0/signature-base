@@ -7,6 +7,7 @@ rule WEBSHELL_JAVA_VersaMem_JAR_Aug24_1 {
       date = "2024-08-27"
       modified = "2024-08-29"
       score = 75
+      id = "9b666e61-cfa8-58b3-a362-772cd907c57c"
    strings:
       $sa1 = "com.versa.vnms.ui.TestMain"
       $sa2 = "captureLoginPasswordCode"
@@ -31,6 +32,7 @@ rule WEBSHELL_JAVA_VersaMem_JAR_Aug24_2 {
       date = "2024-08-29"
       score = 75
       hash1 = "4bcedac20a75e8f8833f4725adfc87577c32990c3783bf6c743f14599a176c37"
+      id = "5ca598ed-5d0a-563d-a5e8-f8229af2c949"
    strings:
       $x1 = "tomcat_memShell" ascii
       $x2 = "versa/vnms/ui/config/" ascii fullword

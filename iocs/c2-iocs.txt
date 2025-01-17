@@ -1900,4 +1900,12 @@ earn.fm
 speedshare.app
 repocket.com
 
+# Cleo Software Exploitation https://www.huntress.com/blog/threat-advisory-oh-no-cleo-cleo-software-actively-being-exploited-in-the-wild
+176.123.5.126;65
+5.149.249.226;65
+185.181.230.103;65
+209.127.12.38;65
+181.214.147.164;65
+192.119.99.42;65
+
 # Last Line

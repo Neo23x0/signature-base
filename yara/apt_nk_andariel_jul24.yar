@@ -7,6 +7,7 @@ rule MAL_APT_NK_Andariel_ScheduledTask_Loader {
       reference = "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-207a"
       date = "2024-07-25"
       score = 80
+      id = "0c32758b-480c-5784-b28f-cee85d038850"
    strings:
       $obfuscation1 = { B8 02 00 00 00 48 6B C0 00 B9 CD FF 00 00 66 89 8C 04 60 01 00 00 B8 02 00 00 00 48 6B C0 01 B9 CC FF 00 00 66 89 8C 04 60 01 00 00 B8 02 00 00 00 48 6B C0 02 B9 8D FF 00 00 66 89 8C 04 60 01 00 00 B8 02 00 00 00 48 6B C0 03 B9 9A FF 00 00 66 89 8C 04 60 01 00 00 B8 02 00 00 00 48 6B C0 04 B9 8C FF 00 00 66 89 8C 04 60 01 00 00 B8 02 00 00 00 48 6B C0 05 B9 8A FF 00 00 66 89 8C 04 60 01 00 00 B8 02 00 00 00 48 6B C0 06 33 C9 66 89 8C 04 60 01 00 00 }
       $obfuscation2 = { 48 6B C0 02 C6 44 04 20 BA B8 01 00 00 00 48 6B C0 03 C6 44 04 20 9A B8 01 00 00 00 48 6B C0 04 C6 44 04 20 8B B8 01 00 00 00 48 6B C0 05 C6 44 04 20 8A B8 01 00 00 00 48 6B C0 06 C6 44 04 20 9C B8 01 00 00 00 }
@@ -23,6 +24,7 @@ rule MAL_APT_NK_Andariel_KaosRAT_Yamabot {
       reference = "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-207a"
       date = "2024-07-25"
       score = 70
+      id = "cdde69cd-1b38-52f5-8552-cef2cf4ad69c"
    strings:
       $str1 = "/kaos/"
       $str2 = "Abstand ["
@@ -46,6 +48,7 @@ rule MAL_APT_NK_TriFaux_EasyRAT_JUPITER {
       reference = "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-207a"
       date = "2024-07-25"
       score = 80
+      id = "8bd72287-59da-53cf-9015-66149303e59f"
    strings:
       $InitOnce = "InitOnceExecuteOnce"
       $BREAK = { 0D 00 0A 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 0D 00 0A }
@@ -62,6 +65,7 @@ rule MAL_APT_NK_Andariel_CutieDrop_MagicRAT {
       reference = "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-207a"
       date = "2024-07-25"
       score = 80
+      id = "104244de-83fb-5112-a2b6-e20d38a6ced6"
    strings:
       // I removed the 'wide' from the strings because the samples don't contain the strings
       // UTF-16 formatted and there's no indication that they ever will be, F.R.
@@ -87,6 +91,7 @@ rule MAL_APT_NK_Andariel_HHSD_FileTransferTool {
       reference = "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-207a"
       date = "2024-07-25"
       score = 70
+      id = "46b6dbaf-1272-5bbd-a586-5e48ba6c5022"
    strings:
       // 30 4D C7                xor     [rbp+buffer_v41+3], cl
       // 81 7D C4 22 C0 78 00    cmp      dword ptr [rbp+buffer_v41], 78C022h
@@ -126,6 +131,7 @@ rule MAL_APT_NK_Andariel_Atharvan_3RAT {
       reference = "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-207a"
       date = "2024-07-25"
       score = 80
+      id = "9ff6998a-a2dd-5671-bd3f-ee69561f71ef"
    strings:
       $3RAT = "D:\\rang\\TOOL\\3RAT" 
       $atharvan = "Atharvan_dll.pdb"
@@ -142,6 +148,7 @@ rule MAL_APT_NK_Andariel_LilithRAT_Variant {
       date = "2024-07-25"
       modified = "2024-07-26"
       score = 80
+      id = "916a289b-db7b-5f09-9d3e-589c3f09101d"
    strings:
       // I removed the 'wide' from the strings because the samples don't contain the strings
       // UTF-16 formatted and there's no indication that they ever will be, F.R.
@@ -177,6 +184,7 @@ rule MAL_APT_NK_Andariel_SocksTroy_Strings_OpCodes {
       reference = "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-207a"
       date = "2024-07-25"
       score = 80
+      id = "9e7fb6ba-771e-5cae-a0d5-c0b95ee6d4e9"
    strings:
       $strHost = "-host" wide
       $strAuth = "-auth" wide
@@ -197,6 +205,7 @@ rule MAL_APT_NK_Andariel_Agni {
       reference = "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-207a"
       date = "2024-07-25"
       score = 80
+      id = "ffe3f427-c10a-5ad4-ab29-c0d9b576c30f"
    strings:
       $xor = { 34 ?? 88 01 48 8D 49 01 0F B6 01 84 C0 75 F1 }
       $stackstrings = { C7 44 24 [5-10] C7 44 24 [5] C7 44 24 [5-10] C7 44 24 [5-10] C7 44 24 }
@@ -213,6 +222,7 @@ rule MAL_APT_NK_Andariel_GoLang_Validalpha_Handshake {
       reference = "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-207a"
       date = "2024-07-25"
       score = 75
+      id = "51dafa43-9da0-569a-9123-7e9800284046"
    strings:
       $ = { 66 C7 00 AB CD C6 40 02 EF ?? 03 00 00 00 48 89 C1 ?? 03 00 00 00 }
    condition:
@@ -226,6 +236,7 @@ rule MAL_APT_NK_Andariel_GoLang_Validalpha_Tasks {
       reference = "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-207a"
       date = "2024-07-25"
       score = 80
+      id = "caa67a79-3ea6-5910-971c-f311722570ff"
    strings:
       $ = "main.ScreenMonitThread"
       $ = "main.CmdShell"
@@ -242,6 +253,7 @@ rule MAL_APT_NK_Andariel_GoLang_Validalpha_BlackString {
       reference = "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-207a"
       date = "2024-07-25"
       score = 90
+      id = "36f46a1d-69b6-5c99-9a54-6a14d62d2721"
    strings:
       $ = "I:/01___Tools/02__RAT/Black"
    condition:
@@ -283,6 +295,7 @@ rule MAL_APT_NK_Andariel_ELF_Backdoor_Fipps {
       reference = "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-207a"
       date = "2024-07-25"
       score = 80
+      id = "040bca78-8b7e-5397-8a2b-1ddeed59eea3"
    strings:
       $a = "found mac address"
       $b = "RecvThread"
@@ -300,6 +313,7 @@ rule MAL_APT_NK_Andariel_BindShell {
       reference = "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-207a"
       date = "2024-07-25"
       score = 70
+      id = "3f6d83da-cea5-5e12-b0ba-93ace09d3d5c"
    strings:
       $str_comspec = "COMSPEC"
       $str_consolewindow = "GetConsoleWindow"
@@ -320,6 +334,7 @@ rule MAL_APT_NK_Andariel_Grease2 {
       date = "2024-07-25"
       modified = "2024-07-26"
       score = 80
+      id = "4defbe08-b3c6-5ab9-9a57-cec57ff42d9a"
    strings:
       /* I bet this was an error and fixed the strings - I allow you to kick my butt when I'm wrong
       $str_rdpconf = "c: \\windows\\temp\\RDPConf.exe" fullword nocase
@@ -341,6 +356,7 @@ rule MAL_APT_NK_Andariel_NoPineapple_Dtrack_Unpacked {
       reference = "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-207a"
       date = "2024-07-25"
       score = 80
+      id = "6ccaf24b-c110-5788-a792-fa7f39fb18f7"
    strings:
       $str_nopineapple = "< No Pineapple! >"
       $str_qt_library = "Qt 5.12.10"
@@ -358,6 +374,7 @@ rule MAL_APT_NK_Andariel_DTrack_Unpacked {
       date = "2024-07-25"
       modified = "2024-07-26"
       score = 75
+      id = "0c161275-2b2e-51a4-9e08-c118fb4c8671"
    strings:
       $x_str_cmd_4 = "/c systeminfo > \"%s\" & tasklist > \"%s\" & netstat -naop tcp > \"%s\"" wide
       $x_str_cmd_2 = "/c ping -n 3 127.0.01 > NUL % echo EEE > \"%s\"" wide
@@ -382,6 +399,7 @@ rule MAL_APT_NK_Andariel_TigerRAT_Crowdsourced_Rule {
       date = "2024-07-25"
       modified = "2024-07-26"
       score = 75
+      id = "6be65222-7d3c-5ff5-a9c7-d91dcf1deaa6"
    strings:
       $m1 = ".?AVModuleKeyLogger@@" fullword ascii
       $m2 = ".?AVModulePortForwarder@@" fullword ascii
@@ -411,6 +429,7 @@ rule MAL_APT_NK_WIN_Tiger_RAT_Auto {
       reference = "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-207a"
       date = "2024-07-25"
       score = 75
+      id = "4579af62-52be-5f5f-a577-16ec50297c05"
     strings:
       $sequence_0 = { 33c0 89442438 89442430 448bcf 4533c0 }
          // n = 5, score = 200
@@ -552,6 +571,7 @@ rule MAL_APT_NK_WIN_DTrack_Auto {
       reference = "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-207a"
       date = "2024-07-25"
       score = 75
+      id = "1b40c685-beba-50fa-b484-c1526577cb23"
    strings:
       $sequence_0 = { 52 8b4508 50 e8???????? 83c414 8b4d10 51 }
          // n = 7, score = 400
