@@ -91,9 +91,10 @@ rule SUSP_LNX_Base64_Exec_Apr24 : SCRIPT {
       $s1 = "curl http://" base64
       $s2 = "wget http://" base64
       $s3 = ";chmod 777 " base64
-      $s4 = "/tmp/" base64
+      // $s4 = "/tmp/" base64 // prone to FPs
       
       $mirai = "country="
    condition:
-      1 of ($s*) and not $mirai
+      filesize < 800KB
+      and 1 of ($s*) and not $mirai
 }
