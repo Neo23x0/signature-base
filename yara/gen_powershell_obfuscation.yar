@@ -56,7 +56,7 @@ rule SUSP_PowerShell_Caret_Obfuscation_2 {
 
 rule SUSP_OBFUSC_PowerShell_True_Jun20_1 {
    meta:
-      description = "Detects indicators often found in obfuscated PowerShell scripts"
+      description = "Detects indicators often found in obfuscated PowerShell scripts. Note: This detection is based on common characteristics typically associated with the mentioned threats, must be considered a clue and does not conclusively prove maliciousness."
       author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/corneacristian/mimikatz-bypass/"
       date = "2020-06-27"

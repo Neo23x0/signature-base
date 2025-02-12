@@ -59,7 +59,7 @@ rule APT_Backdoor_Win_GORAT_3
         $dirty4 = "gorat" ascii nocase wide
         $dirty5 = "flare" ascii nocase wide
         $go1 = "go.buildid" ascii wide
-        $go2 = "Go build ID:" ascii wide
+        $go2 = "Go build" ascii wide
         $json1 = "json:\"pid\"" ascii wide
         $json2 = "json:\"key\"" ascii wide
         $json3 = "json:\"agent_time\"" ascii wide
@@ -1460,7 +1460,7 @@ rule APT_Backdoor_Win_GORAT_2
         id = "e2c47711-d088-5cb4-8d21-f8199a865a28"
     strings:
         $go1 = "go.buildid" ascii wide
-        $go2 = "Go build ID:" ascii wide
+        $go2 = "Go build" ascii wide
         $json1 = "json:\"pid\"" ascii wide
         $json2 = "json:\"key\"" ascii wide
         $json3 = "json:\"agent_time\"" ascii wide
