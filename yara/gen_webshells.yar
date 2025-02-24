@@ -4488,6 +4488,7 @@ rule WEBSHELL_ASP_Generic : FILE {
         $fp2 = "B2BTools"
         $fp3 = "<b>Failed to execute cache update. See the log file for more information" ascii
         $fp4 = "Microsoft. All rights reserved."
+        $fp5 = "\"unsafe\"," ascii wide
 
         //strings from private rule capa_asp
         $tagasp_short1 = /<%[^"]/ wide ascii
