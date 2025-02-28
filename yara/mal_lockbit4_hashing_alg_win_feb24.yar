@@ -6,7 +6,8 @@ rule mal_lockbit4_hashing_alg_win_feb24
         date = "2024-02-16"
         score = 100
         reference = "https://0x0d4y.blog/lockbit4-0-evasion-tales/"
-        reference_md5 = "062311F136D83F64497FD81297360CD4"
+        hash = "062311F136D83F64497FD81297360CD4"
+
         uuid = "e91aedba-6f70-4ca2-9217-2991cbbc6e8d"
         license = "CC BY 4.0"
         rule_matching_tlp = "TLP:WHITE"
