@@ -5,7 +5,8 @@ rule mal_babbleloader_win_jan24 {
       date = "2025-01-27"
       score = 100
       reference = "https://0x0d4y.blog/babbleloader-technical-malware-analysis/"
-      reference_md5 = "fa3d03c319a7597712eeff1338dabf92"
+      hash = "fa3d03c319a7597712eeff1338dabf92"
+
       uuid = "b2f18ab3-b4df-4e2f-aa23-de8694beb221"
       license = "CC BY 4.0"
       rule_matching_tlp = "TLP:WHITE"
