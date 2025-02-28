@@ -12,9 +12,7 @@ rule SUSP_Email_Redirection_Spoofing_Feb25 {
       $sa1 = "Content-Transfer-Encoding:" ascii
       $sa2 = "Subject:" ascii
 
-      $s1 = /\.com%(20%){5,}=/ ascii
-      $s2 = /(20%){5,}=/ ascii
+      $x = ".com%20%20%20%20%20%" ascii
    condition:
       all of them
-      and #s2 > 5
 }
