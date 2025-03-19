@@ -43,22 +43,106 @@ rule Octowave_Loader_03_2025
 			8B D1
 			33 C0
 			8B FA
-			6A ??
+			6A 06
 			59
 			AB
 			AB
 			AB
 			AB
-			8B 45 ??
+			8B 45 08
 			8B FA
-			83 62 ?? ??
+			83 62 10 00
 			8B F0
-			83 62 ?? ??
+			83 62 14 00
 			F3 A5
-			83 60 ?? ??
+			83 60 10 00
+		}
+	/*
+	0x3a6d 55                            push ebp
+	0x3a6e 8BEC                          mov ebp, esp
+	0x3a70 8B550C                        mov edx, dword ptr [ebp + 0ch]
+	0x3a73 56                            push esi
+	0x3a74 8BF1                          mov esi, ecx
+	0x3a76 8B4614                        mov eax, dword ptr [esi + 14h]
+	0x3a79 8B4E10                        mov ecx, dword ptr [esi + 10h]
+	0x3a7c 2BC1                          sub eax, ecx
+	0x3a7e 3BD0                          cmp edx, eax
+	0x3a80 7731                          ja 3ab3h
+	0x3a82 837E1407                      cmp dword ptr [esi + 14h], 7
+	0x3a86 53                            push ebx
+	0x3a87 8D1C11                        lea ebx, [ecx + edx]
+	0x3a8a 57                            push edi
+	0x3a8b 895E10                        mov dword ptr [esi + 10h], ebx
+	0x3a8e 8BFE                          mov edi, esi
+	0x3a90 7602                          jbe 3a94h
+	0x3a92 8B3E                          mov edi, dword ptr [esi]
+	0x3a94 8D0412                        lea eax, [edx + edx]
+	0x3a97 50                            push eax
+	0x3a98 FF7508                        push dword ptr [ebp + 8]
+	0x3a9b 8D0C4F                        lea ecx, [edi + ecx*2]
+	0x3a9e 51                            push ecx
+	0x3a9f E89C9B1100                    call 11d640h
+	0x3aa4 83C40C                        add esp, 0ch
+	0x3aa7 33C0                          xor eax, eax
+	0x3aa9 6689045F                      mov word ptr [edi + ebx*2], ax
+	0x3aad 8BC6                          mov eax, esi
+	0x3aaf 5F                            pop edi
+	0x3ab0 5B                            pop ebx
+	0x3ab1 EB0F                          jmp 3ac2h
+	0x3ab3 52                            push edx
+	0x3ab4 FF7508                        push dword ptr [ebp + 8]
+	0x3ab7 8BCE                          mov ecx, esi
+	0x3ab9 FF7508                        push dword ptr [ebp + 8]
+	0x3abc 52                            push edx
+	0x3abd E8FF040000                    call 3fc1h
+	0x3ac2 5E                            pop esi
+	0x3ac3 5D                            pop ebp
+	0x3ac4 C20800                        ret 8
+	 */
+		$opcode_2 = {
+			55
+			8B EC
+			8B 55 ??
+			56
+			8B F1
+			8B 46 ??
+			8B 4E ??
+			2B C1
+			3B D0
+			77 ??
+			83 7E ?? 07
+			53
+			8D 1C 11
+			57
+			89 5E ??
+			8B FE
+			76 ??
+			8B 3E
+			8D 04 12
+			50
+			FF 75 ??
+			8D 0C 4F
+			51
+			E8 ?? ?? ?? ??
+			83 C4 0C
+			33 C0
+			66 89 04 5F
+			8B C6
+			5F
+			5B
+			EB ??
+			52
+			FF 75 ??
+			8B CE
+			FF 75 ??
+			52
+			E8 ?? ?? ?? ??
+			5E
+			5D
+			C2 08 00
 		}
 
 	condition:
-		(uint16(0) == (0x5a4d) or uint32(0) ==  0x46464952) and any of them
+		(uint16(0) == (0x5a4d) or uint32(0) ==  0x46464952) and all of them
 
 }
