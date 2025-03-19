@@ -142,6 +142,49 @@ rule Octowave_Loader_03_2025
 			C2 08 00
 		}
 
+	/*
+	0x4446 55                            push ebp
+	0x4447 8BEC                          mov ebp, esp
+	0x4449 8B4D08                        mov ecx, dword ptr [ebp + 8]
+	0x444c 83C90F                        or ecx, 0fh
+	0x444f 56                            push esi
+	0x4450 3B4D10                        cmp ecx, dword ptr [ebp + 10h]
+	0x4453 771C                          ja 4471h
+	0x4455 8B750C                        mov esi, dword ptr [ebp + 0ch]
+	0x4458 8BD6                          mov edx, esi
+	0x445a 8B4510                        mov eax, dword ptr [ebp + 10h]
+	0x445d D1EA                          shr edx, 1
+	0x445f 2BC2                          sub eax, edx
+	0x4461 3BF0                          cmp esi, eax
+	0x4463 770C                          ja 4471h
+	0x4465 8D0432                        lea eax, [edx + esi]
+	0x4468 3BC8                          cmp ecx, eax
+	0x446a 0F42C8                        cmovb ecx, eax
+	0x446d 8BC1                          mov eax, ecx
+	0x446f EB03                          jmp 4474h
+	 */
+		$opcode_3 = {
+			55
+			8B EC
+			8B 4D 08
+			83 C9 ??
+			56
+			3B 4D 10
+			77 1C
+			8B 75 0C
+			8B D6
+			8B 45 10
+			D1 EA
+			2B C2
+			3B F0
+			77 0C
+			8D 04 32
+			3B C8
+			0F 42 C8
+			8B C1
+			EB 03
+		}
+
 	condition:
 		(uint16(0) == (0x5a4d) or uint32(0) ==  0x46464952) and all of them
 
