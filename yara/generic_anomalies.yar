@@ -338,12 +338,13 @@ rule Suspicious_Size_spoolsv_exe {
       author = "Florian Roth (Nextron Systems)"
         score = 60
         date = "2015-12-23"
+        modified = "2025-03-17"
         noarchivescan = 1
         id = "14bb3463-b99f-57e1-8cff-fe9a34771093"
     condition:
         uint16(0) == 0x5a4d
         and filename == "spoolsv.exe"
-        and ( filesize < 50KB or filesize > 1000KB )
+        and ( filesize < 50KB or filesize > 1500KB )
 }
 
 rule Suspicious_Size_smss_exe {
