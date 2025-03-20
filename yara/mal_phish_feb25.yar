@@ -6,6 +6,7 @@ rule MAL_PHISH_ShellCode_Enc_Payload_Feb25 {
       hash = "247e6a648bb22d35095ba02ef4af8cfe0a4cdfa25271117414ff2e3a21021886"
       date = "2025-02-14"
       score = 80
+      id = "8459c5ba-37ec-59bd-8d4a-5ab7b6bb4553"
    strings:
      $op1 = { 48 89 EA FF D0 48 89 E9 4C 8D 4C 24 ?? 41 B8 ?? ?? ?? ?? 48 89 C7 48 89 C3 48 89 EA F3 A4 48 89 C1 41 FF D4 31 C9 FF D3}
    condition:
@@ -20,6 +21,7 @@ rule MAL_PHISH_Final_Payload_Feb25 {
       hash = "de384aba6b0c6800095eb530954aa718d4ed96cccfc0b1e5e4d01404f3518a77"
       date = "2025-02-14"
       score = 80
+      id = "9014e1f2-09c2-5ba0-8b7c-6ae8c069d1f7"
    strings:
       $s1 = "%lu: %s %s" wide
       $s2 = "(Direct Inbound)" wide
@@ -46,6 +48,7 @@ rule SUSP_Sysinternals_Desktops_Anomaly_Feb25 {
       hash = "9a5b9d89686de129a7b1970d5804f0f174156143ccfcd2cf669451c1ad4ab97e"
       hash = "ff82c4c679c5486aed2d66a802682245a1e9cd7d6ceb65fa0e7b222f902998e8"
       hash = "1da91d2570329f9e214f51bc633283f10bd55a145b7b3d254e03175fd86292d9"
+      id = "5a586222-9263-5079-be48-9cfa464440d4"
    strings:
       $s1 = "Software\\Sysinternals\\Desktops" wide fullword
       $s2 = "Sysinternals Desktops" wide fullword
@@ -70,6 +73,7 @@ rule SUSP_PE_Compromised_Certificate_Feb25 {
       hash = "9a5b9d89686de129a7b1970d5804f0f174156143ccfcd2cf669451c1ad4ab97e"
       hash = "ff82c4c679c5486aed2d66a802682245a1e9cd7d6ceb65fa0e7b222f902998e8"
       hash = "1da91d2570329f9e214f51bc633283f10bd55a145b7b3d254e03175fd86292d9"
+      id = "2e6ad630-b24e-53b2-8ffe-622c51914568"
    strings:
       $sb1 = { 44 B8 66 73 57 BB 95 65 1D 61 D0 61 } // compromised certificate serial
       $sb2 = { 4F 23 43 D9 61 54 B9 41 DB 0A 26 B2 } // compromised certificate serial

@@ -8,6 +8,7 @@ rule SUSP_Email_Redirection_Spoofing_Feb25 {
       hash = "c4eb35c1a1c10226bff9bb0c88ca516441208d193b4994eeb292a66e53a2cc04"
       hash = "e3b8ea03a472348814c6ac81088234836e627a1878ec36e46ce62526e1390935"
       score = 70
+      id = "bf3a2b06-4dc5-5f0f-bf1f-2bd6a1cc4a8d"
    strings:
       $sa1 = "Content-Transfer-Encoding:" ascii
       $sa2 = "Subject:" ascii

@@ -7,6 +7,7 @@ rule MAL_BACKORDER_LOADER_WIN_Go_Jan23 {
       score = 80
       tags = "loader, golang, BACKORDER, malware, windows"
       hash = "70c91ffdc866920a634b31bf4a070fb3c3f947fc9de22b783d6f47a097fec2d8"
+      id = "90a82f2c-be92-5d0b-b47e-f47db2b15867"
    strings:
       $GoBuildId = "Go build" ascii
       // Debug symbols commonly seen in BACKORDER loader

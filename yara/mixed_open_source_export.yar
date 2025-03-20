@@ -6,6 +6,7 @@ rule SUSP_LNK_Suspicious_Folders_Jan25 {
       reference = "Internal Research"
       date = "2025-01-24"
       score = 65
+      id = "5f1bcd18-abec-5831-b24f-519c92a2454e"
    strings:
       $x1 = "RECYCLER.BIN\\" wide
       $x2 = "Perflogs\\" wide

@@ -33,6 +33,7 @@ rule Octowave_Loader_03_2025 {
 	0x5bb3e F3A5                          rep movsd dword ptr es:[edi], dword ptr [esi]
 	0x5bb40 83601000                      and dword ptr [eax + 10h], 0
 	 */
+        id = "d583c416-be20-5fcf-848e-edd037e3b0d4"
 	strings:
 		$opcode_1 = {
 			55

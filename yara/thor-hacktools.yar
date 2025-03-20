@@ -4405,6 +4405,7 @@ rule SUSP_shellpop_Bash {
       modified = "2021-01-25"
       score = 70
       hash1 = "36fad575a8bc459d0c2e3ad626e97d5cf4f5f8bedc56b3cc27dd2f7d88ed889b"
+      id = "771b7d01-272a-5986-af07-7417b84c52ed"
    strings:
       $x1 = "bash -i >& /dev/tcp/" ascii
 

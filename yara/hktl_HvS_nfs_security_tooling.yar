@@ -7,6 +7,7 @@ rule HKTL_NFS_Fuse_NFS {
       score = 75
       reference = "https://github.com/hvs-consulting/nfs-security-tooling"
 
+      id = "287fbe7d-ee1c-58a4-aa2d-9d9bec8321b4"
    strings:
       $s1 = "NFS3ConnectionFactory" fullword ascii
       $s2 = "fuse_to_nfs_timestamp" fullword ascii
@@ -31,6 +32,7 @@ rule HKTL_NFS_NFS_Analyze {
       score = 75
       reference = "https://github.com/hvs-consulting/nfs-security-tooling"
       
+      id = "3350d0ae-e638-5c8f-a578-ba0ac5521053"
    strings:
       $s1 = "no_root_squash_exports" fullword ascii
       $s2 = "nfs lock manager" fullword ascii

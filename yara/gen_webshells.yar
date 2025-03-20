@@ -5702,6 +5702,7 @@ rule EXT_WEBSHELL_JSP_Generic_Tiny
         hash = "87c3ac9b75a72187e8bc6c61f50659435dbdc4fde6ed720cebb93881ba5989d8"
         hash = "1aa6af726137bf261849c05d18d0a630d95530588832aadd5101af28acc034b5"
 
+        id = "fad14524-de44-52ea-95e6-3e5de3138926"
     strings:
         $payload1 = "ProcessBuilder" fullword wide ascii
         $payload2 = "URLClassLoader" fullword wide ascii
