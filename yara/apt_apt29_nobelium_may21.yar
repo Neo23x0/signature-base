@@ -130,16 +130,33 @@ rule APT_APT29_NOBELIUM_LNK_Samples_May21_1 {
 rule APT_APT29_NOBELIUM_BoomBox_May21_1 {
    meta:
       description = "Detects BoomBox malware as described in APT29 NOBELIUM report"
-      author = "Florian Roth (Nextron Systems)"
+      author = "Florian Roth"
       reference = "https://www.microsoft.com/security/blog/2021/05/27/new-sophisticated-email-based-attack-from-nobelium/"
       date = "2021-05-27"
+      modified = "2025-03-20"
       score = 85
-      id = "fe964f3e-1cda-5f16-838f-dd7b23cd5651"
+      hash = "8199f309478e8ed3f03f75e7574a3e9bce09b4423bd7eb08bb5bff03af2b7c27"
    strings:
+      // PowerShell tool - e1765eafb68fc6034575f126b014fcad6bb043c2961823b7cef5f711e9e01d1c
+      $a1 = "]::FromBase64String($" ascii wide
+
       $xa1 = "123do3y4r378o5t34onf7t3o573tfo73" ascii wide fullword
       $xa2 = "1233t04p7jn3n4rg" ascii wide fullword
+
+      $s1 = "\\Release\\BOOM.pdb" ascii
+      $s2 = "/files/upload" ascii
+      $s3 = "/tmp/readme.pdf" ascii fullword
+      $s4 = "/new/{0}" ascii fullword
+      $s5 = "(&(objectClass=user)(objectCategory=person))"
    condition:
-      1 of them
+      ( 
+         uint16(0) == 0x5a4d 
+         or 1 of ($a*) 
+      )
+      and (
+         1 of ($x*)
+         or 3 of ($s*)
+      )
 }
 
 rule APT_APT29_NOBELIUM_BoomBox_PDF_Masq_May21_1 {
