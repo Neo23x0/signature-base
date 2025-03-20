@@ -185,7 +185,100 @@ rule Octowave_Loader_03_2025
 			EB 03
 		}
 
+	/*
+	0x3cf6 56                            push esi
+	0x3cf7 8BF1                          mov esi, ecx
+	0x3cf9 8B4614                        mov eax, dword ptr [esi + 14h]
+	0x3cfc 83F807                        cmp eax, 7
+	0x3cff 7611                          jbe 3d12h
+	0x3d01 8D044502000000                lea eax, [eax*2 + 2]
+	0x3d08 50                            push eax
+	0x3d09 FF36                          push dword ptr [esi]
+	0x3d0b E8F4050000                    call 4304h
+	0x3d10 59                            pop ecx
+	0x3d11 59                            pop ecx
+	0x3d12 83661000                      and dword ptr [esi + 10h], 0
+	0x3d16 33C0                          xor eax, eax
+	0x3d18 C7461407000000                mov dword ptr [esi + 14h], 7
+	0x3d1f 668906                        mov word ptr [esi], ax
+	0x3d22 5E                            pop esi
+	0x3d23 C3                            ret 
+	0x3d24 55                            push ebp
+	0x3d25 8BEC                          mov ebp, esp
+	0x3d27 56                            push esi
+	0x3d28 8BF1                          mov esi, ecx
+	 */
+		$opcode_4 = {
+			56
+			8B F1
+			8B 46 14
+			83 F8 ??
+			76 ??
+		}
+
+		$opcode_5 = {
+			50
+			FF 36
+			E8 ?? ?? ?? ??
+			59
+			59
+			83 66 ?? 00
+		}
+		$opcode_6 = {
+			C7 46 14 ?? 00 00 00
+			66 89 06
+			5E
+			C3
+		}
+
+	/*
+	0x4304 55                            push ebp
+	0x4305 8BEC                          mov ebp, esp
+	0x4307 51                            push ecx
+	0x4308 51                            push ecx
+	0x4309 A1800D2F10                    mov eax, dword ptr [102f0d80h]
+	0x430e 33C5                          xor eax, ebp
+	0x4310 8945FC                        mov dword ptr [ebp - 4], eax
+	0x4313 8B4D0C                        mov ecx, dword ptr [ebp + 0ch]
+	0x4316 8B4508                        mov eax, dword ptr [ebp + 8]
+	0x4319 8945F8                        mov dword ptr [ebp - 8], eax
+	0x431c 81F900100000                  cmp ecx, 1000h
+	0x4322 7215                          jb 4339h
+	0x4324 8D450C                        lea eax, [ebp + 0ch]
+	0x4327 50                            push eax
+	0x4328 8D45F8                        lea eax, [ebp - 8]
+	0x432b 50                            push eax
+	0x432c E84BE8FFFF                    call 2b7ch
+	0x4331 8B45F8                        mov eax, dword ptr [ebp - 8]
+	0x4334 59                            pop ecx
+	0x4335 59                            pop ecx
+	 */
+		$opcode_7 = {
+			55
+			8B EC
+			51
+			51
+			A1 ?? ?? ?? ??
+			33 C5
+			89 45 FC
+			8B 4D 0C
+			8B 45 08
+			89 45 F8
+			81 F9 00 10 00 00
+			72 ??
+			8D 45 0C
+			50
+			8D 45 F8
+			50
+			E8 ?? ?? ?? ??
+			8B 45 F8
+			59
+			59
+		}
+
 	condition:
-		(uint16(0) == (0x5a4d) or uint32(0) ==  0x46464952) and all of them
+		(uint16(0) == (0x5a4d) or uint32(0) ==  0x46464952) 
+		and filesize < 50000KB
+		and all of them
 
 }
