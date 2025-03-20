@@ -11,6 +11,7 @@ rule Octowave_Loader_03_2025 {
         hash3 = "EB50D06057FE123D6E9F7A76D3D1A4BC5307E8F15D017BE8F6031E92136CF36A"
         hash4 = "24715920E749B014BA05F74C96627A27355C5860A14461C106AA48A7ABA371EA"
         shoutout = "https://yaratoolkit.securitybreak.io/"
+        id = "d583c416-be20-5fcf-848e-edd037e3b0d4"
 	/*
 	0x5bb1d 55                            push ebp
 	0x5bb1e 8BEC                          mov ebp, esp
@@ -33,7 +34,6 @@ rule Octowave_Loader_03_2025 {
 	0x5bb3e F3A5                          rep movsd dword ptr es:[edi], dword ptr [esi]
 	0x5bb40 83601000                      and dword ptr [eax + 10h], 0
 	 */
-        id = "d583c416-be20-5fcf-848e-edd037e3b0d4"
 	strings:
 		$opcode_1 = {
 			55
