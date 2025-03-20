@@ -121,8 +121,8 @@ rule EXPL_Log4j_CVE_2021_44228_Dec21_Hard : FILE {
       author = "Florian Roth"
       reference = "https://twitter.com/h113sdx/status/1469010902183661568?s=20"
       date = "2021-12-10"
-      modified = "2023-10-23"
-      score = 75
+      modified = "2025-03-20"
+      score = 65
       id = "5297c42d-7138-507d-a3eb-153afe522816"
    strings:
       $x1 = /\$\{jndi:(ldap|ldaps|rmi|dns|iiop|http|nis|nds|corba):\/[\/]?[a-z-\.0-9]{3,120}:[0-9]{2,5}\/[a-zA-Z\.]{1,32}\}/
