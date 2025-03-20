@@ -1,3 +1,5 @@
+import "pe"
+
 /* 
 	SOURCE: https://github.com/chronicle/GCTI
 	
@@ -84,7 +86,7 @@ rule Sliver_Implant_32bit
 
     $fp1 = "cloudfoundry" ascii fullword
   condition:
-    4 of ($s*) and not 1 of ($fp*)
+    pe.is_32bit() and 4 of ($s*) and not 1 of ($fp*)
 }/*
  * Copyright 2022 Google LLC
  *
@@ -167,5 +169,5 @@ rule Sliver_Implant_64bit
 
     $fp1 = "cloudfoundry" ascii fullword
   condition:
-    5 of ($s*) and not 1 of ($fp*)
+    pe.is_64bit() and 5 of ($s*) and not 1 of ($fp*)
 }
