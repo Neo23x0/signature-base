@@ -1,12 +1,11 @@
-rule Octowave_Loader_03_2025
-{
-	meta:
+rule Octowave_Loader_03_2025 {
+    meta:
         description = "Detects opcodes found in Octowave Loader DLLs and WAV steganography files"
         author = "Jai Minton (@CyberRaiju) - HuntressLabs"
         date = "2025-03-19"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+        reference = "https://x.com/CyberRaiju/status/1893450184224362946?t=u0X6ST2Qgnrf-ujjphGOSg&s=19"
         yt_reference = "https://www.youtube.com/watch?v=NiNIbkiuExU"
-        x_reference = "https://x.com/CyberRaiju/status/1893450184224362946?t=u0X6ST2Qgnrf-ujjphGOSg&s=19"
         hash1 = "0504BFBACB6E10B81196F625F2FE37B33500E7BF65FD82D3510A2B178C6CD5BD"
         hash2 = "3A2DB0CB9EE01549A6B660D58115D112D36A744D65705394B54D7D95287C7A74"
         hash3 = "EB50D06057FE123D6E9F7A76D3D1A4BC5307E8F15D017BE8F6031E92136CF36A"
@@ -277,7 +276,7 @@ rule Octowave_Loader_03_2025
 		}
 
 	condition:
-		(uint16(0) == (0x5a4d) or uint32(0) ==  0x46464952) 
+		(uint16(0) == (0x5a4d) or uint32(0) == 0x46464952) 
 		and filesize < 50000KB
 		and all of them
 
