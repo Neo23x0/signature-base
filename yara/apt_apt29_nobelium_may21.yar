@@ -136,6 +136,7 @@ rule APT_APT29_NOBELIUM_BoomBox_May21_1 {
       modified = "2025-03-20"
       score = 85
       hash = "8199f309478e8ed3f03f75e7574a3e9bce09b4423bd7eb08bb5bff03af2b7c27"
+      id = "1a14dcf7-81be-5a74-a530-caf6268d1976"
    strings:
       // PowerShell tool - e1765eafb68fc6034575f126b014fcad6bb043c2961823b7cef5f711e9e01d1c
       $a1 = "]::FromBase64String($" ascii wide

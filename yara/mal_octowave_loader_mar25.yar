@@ -1,6 +1,6 @@
 rule Octowave_Loader_03_2025 {
     meta:
-        description = "Detects opcodes found in Octowave Loader DLLs and WAV steganography files"
+        description = "Detects opcodes found in Octowave loader DLLs and WAV steganography files"
         author = "Jai Minton (@CyberRaiju) - HuntressLabs"
         date = "2025-03-19"
 		  score = 75
@@ -300,6 +300,7 @@ rule Octowave_Loader_Supporting_File_03_2025
         hash4 = "11EE5AD8A81AE85E5B7DDF93ADF6EDD20DE8460C755BF0426DFCBC7F658D7E85"
         hash5 = "D218B65493E4D9D85CBC2F7B608F4F7E501708014BC04AF27D33D995AA54A703"
         hash6 = "0C112F9DFE27211B357C74F358D9C144EA10CC0D92D6420B8742B72A65562C5A"
+        id = "2c81c8b8-4b4d-55c9-9285-556e8b5303bd"
     strings:
         $unique_key = {1D 1C 1F 1E 01 01 03 02 05 04 07 06 09 D4 0E 0A 0D 0C 0F 0E 31 30 31 32 35 34 36 36 39 38 DC 3F 3D 3C 3E} // 1012546698 unknown unique identifier and surrounding bytes
         $unique_string = "MLONqpsrutwvyx"

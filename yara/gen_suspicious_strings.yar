@@ -256,6 +256,7 @@ rule SUSP_JAVA_Class_with_VBS_Content {
       modified = "2025-03-20"
       score = 70
       hash1 = "e0112efb63f2b2ac3706109a233963c19750b4df0058cc5b9d3fa1f1280071eb"
+      id = "472cbeaf-28e7-51a2-b2e6-96c1d9d05b26"
    strings:
       $a1 = "java/lang/String" ascii
 

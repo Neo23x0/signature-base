@@ -83,12 +83,12 @@ False positives in 8gb of common webapps plus yara-ci: 2
 rule WEBSHELL_PHP_Generic
 {
     meta:
-        description = "php webshell having some kind of input and some kind of payload. restricted to small files or big ones inclusing suspicious strings"
+        description = "php webshell having some kind of input and some kind of payload. restricted to small files or big ones including suspicious strings"
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
-        score = 75
-        date = "2021/01/14"
+        score = 70
+        date = "2021-01-14"
         modified = "2024-12-09"
         hash = "bee1b76b1455105d4bfe2f45191071cf05e83a309ae9defcf759248ca9bceddd"
         hash = "6bf351900a408120bee3fc6ea39905c6a35fe6efcf35d0a783ee92062e63a854"
