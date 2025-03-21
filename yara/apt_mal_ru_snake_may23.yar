@@ -19,9 +19,10 @@ rule APT_MAL_RU_WIN_Snake_Malware_May23_1 {
         author = "Matt Suiche (Magnet Forensics)"
         description = "Hunting Russian Intelligence Snake Malware"
         date = "2023-05-10"
+        modified = "2025-03-21"
         threat_name = "Windows.Malware.Snake"
         reference = "https://media.defense.gov/2023/May/09/2003218554/-1/-1/0/JOINT_CSA_HUNTING_RU_INTEL_SNAKE_MALWARE_20230509.PDF"
-        score = 75
+        score = 70
         scan_context = "memory"
         license = "MIT"
 

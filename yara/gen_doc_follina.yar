@@ -1,12 +1,12 @@
+
 rule SUSP_PS1_Msdt_Execution_May22 {
    meta:
       description = "Detects suspicious calls of msdt.exe as seen in CVE-2022-30190 / Follina exploitation"
       author = "Nasreddine Bencherchali, Christian Burkard"
       date = "2022-05-31"
-      modified = "2022-07-08"
+      modified = "2025-03-21"
       reference = "https://doublepulsar.com/follina-a-microsoft-office-code-execution-vulnerability-1a47fce5629e"
-      score = 75
-      id = "caa8a042-ffd4-52b2-a9f0-86e6c83a0aa3"
+      score = 65
    strings:
       $a = "PCWDiagnostic" ascii wide fullword
       $sa1 = "msdt.exe" ascii wide
@@ -23,12 +23,16 @@ rule SUSP_PS1_Msdt_Execution_May22 {
                00 00 70 00 63 00 77 00 72 00 75 00 6E 00 2E 00
                65 00 78 00 65 00 }
       $fp2 = "FilesFullTrust" wide
+      $fp3 = "Cisco Spark" ascii wide
+      $fp4 = "author: " ascii
    condition:
       filesize < 10MB
       and $a
       and 1 of ($sa*)
       and 1 of ($sb*)
       and not 1 of ($fp*)
+      // not JSON
+      and not uint8(0) == 0x7B
 }
 
 rule SUSP_Doc_WordXMLRels_May22 {
