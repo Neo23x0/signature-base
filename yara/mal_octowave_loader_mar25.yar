@@ -3,6 +3,7 @@ rule Octowave_Loader_03_2025 {
         description = "Detects opcodes found in Octowave Loader DLLs and WAV steganography files"
         author = "Jai Minton (@CyberRaiju) - HuntressLabs"
         date = "2025-03-19"
+		  score = 75
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         reference = "https://x.com/CyberRaiju/status/1893450184224362946?t=u0X6ST2Qgnrf-ujjphGOSg&s=19"
         yt_reference = "https://www.youtube.com/watch?v=NiNIbkiuExU"
