@@ -21,6 +21,8 @@
  * limitations under the License.
  */
 
+import "pe"
+
 rule Sliver_Implant_32bit
 {
   meta:
@@ -29,6 +31,7 @@ rule Sliver_Implant_32bit
     author = "gssincla@google.com"
     reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
     date = "2022-11-18"
+    modified = "2025-03-21"
 
     id = "6bc4d7d1-64cf-5920-8f07-54a8a7a94f26"
   strings:
@@ -83,9 +86,14 @@ rule Sliver_Implant_32bit
     $s_mtls = { 81 ?? 6D 74 6C 73 }
 
     $fp1 = "cloudfoundry" ascii fullword
+    $fp2 = "googleapi.Error" ascii
   condition:
-    4 of ($s*) and not 1 of ($fp*)
-}/*
+    4 of ($s*) 
+    and not 1 of ($fp*)
+    and not pe.number_of_signatures > 0
+}
+
+/*
  * Copyright 2022 Google LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -109,6 +117,7 @@ rule Sliver_Implant_64bit
     author = "gssincla@google.com"
     reference = "https://cloud.google.com/blog/products/identity-security/making-cobalt-strike-harder-for-threat-actors-to-abuse"
     date = "2022-11-18"
+    modified = "2025-03-21"
 
     id = "b84db933-0e11-5871-821d-43697c015665"
   strings:
@@ -166,6 +175,9 @@ rule Sliver_Implant_64bit
     $s_mtls = {  81 ?? 6D 74 6C 73  }
 
     $fp1 = "cloudfoundry" ascii fullword
+    $fp2 = "googleapi.Error" ascii
   condition:
-    5 of ($s*) and not 1 of ($fp*)
+    5 of ($s*)     
+    and not 1 of ($fp*)
+    and not pe.number_of_signatures > 0
 }
