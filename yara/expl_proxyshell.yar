@@ -19,10 +19,10 @@ rule EXPL_Exchange_ProxyShell_Successful_Aug21_1 : SCRIPT {
    meta:
       description = "Detects successful ProxyShell exploitation attempts in log files"
       author = "Florian Roth (Nextron Systems)"
-      score = 75
+      score = 65
       reference = "https://blog.orange.tw/2021/08/proxylogon-a-new-attack-surface-on-ms-exchange-part-1.html"
       date = "2021-08-08"
-      modified = "2021-08-09"
+      modified = "2025-03-21"
       id = "8c11cd1a-6d3f-5f29-af61-17179b01ca8b"
    strings:
       $xr1a = / \/autodiscover\/autodiscover\.json[^\n]{1,300}\/(powershell|X-Rps-CAT)/ nocase ascii
