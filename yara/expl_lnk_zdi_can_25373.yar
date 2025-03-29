@@ -5,7 +5,7 @@ rule EXT_EXPL_ZTH_LNK_EXPLOIT_A
         description = "This YARA file detects padded LNK files designed to exploit ZDI-CAN-25373."
         reference = "https://www.trendmicro.com/en_us/research/25/c/windows-shortcut-zero-day-exploit.html"
         date = "2025-03-18"
-        score = 80
+        score = 75
         id = "14788504-64e3-533b-ad21-00a3462a33cc"
     strings:
         $spoof_a = {20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00 20 00}

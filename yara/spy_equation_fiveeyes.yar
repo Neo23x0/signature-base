@@ -401,19 +401,20 @@ rule EquationDrug_CompatLayer_UnilayDLL {
 		uint16(0) == 0x5a4d and $s0
 }
 
-rule EquationDrug_HDDSSD_Op {
-	meta:
-		description = "EquationDrug - HDD/SSD firmware operation - nls_933w.dll"
-		author = "Florian Roth (Nextron Systems) @4nc4p"
-		reference = "http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/"
-		date = "2015/03/11"
-		hash = "ff2b50f371eb26f22eb8a2118e9ab0e015081500"
-		id = "e2698f10-49e8-55da-bddc-e5c887f11bc7"
-	strings:
-		$s0 = "nls_933w.dll" fullword ascii
-	condition:
-		all of them
-}
+// shitty rule
+// rule EquationDrug_HDDSSD_Op : FILE {
+//    meta:
+//       description = "EquationDrug - HDD/SSD firmware operation - nls_933w.dll"
+//       author = "Florian Roth"
+//       reference = "http://securelist.com/blog/research/69203/inside-the-equationdrug-espionage-platform/"
+//       date = "2015/03/11"
+//       modified = "2021-01-19"
+//       hash = "ff2b50f371eb26f22eb8a2118e9ab0e015081500"
+//    strings:
+//       $s0 = "nls_933w.dll" fullword ascii
+//    condition:
+//       all of them
+// }
 
 rule EquationDrug_NetworkSniffer2 {
 	meta:

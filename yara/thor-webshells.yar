@@ -29,23 +29,39 @@ rule Weevely_Webshell {
 		uint32(0) == 0x68703f3c and all of ($s*) and filesize > 570 and filesize < 800
 }
 
-rule webshell_h4ntu_shell_powered_by_tsoi_ {
-	meta:
-		description = "Web Shell - file h4ntu shell powered by tsoi.php"
-		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth (Nextron Systems)"
-		date = "2014/01/28"
-		score = 70
-		hash = "06ed0b2398f8096f1bebf092d0526137"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
-	strings:
-		$s0 = "  <TD><DIV STYLE=\"font-family: verdana; font-size: 10px;\"><b>Server Adress:</b"
-		$s3 = "  <TD><DIV STYLE=\"font-family: verdana; font-size: 10px;\"><b>User Info:</b> ui"
-		$s4 = "    <TD><DIV STYLE=\"font-family: verdana; font-size: 10px;\"><?= $info ?>: <?= "
-		$s5 = "<INPUT TYPE=\"text\" NAME=\"cmd\" value=\"<?php echo stripslashes(htmlentities($"
-	condition:
-		all of them
+rule WEBSHELL_H4ntu_Shell_Powered_Tsoi_3 {
+   meta:
+      description = "Web Shell - file h4ntu shell powered by tsoi.php"
+      author = "Florian Roth"
+      date = "2014-01-28"
+      modified = "2025-03-21"
+      score = 70
+      old_rule_name = "Webshell_h4ntu_shell_powered_by_tsoi_"
+      hash = "06ed0b2398f8096f1bebf092d0526137"
+   strings:
+      $s0 = "  <TD><DIV STYLE=\"font-family: verdana; font-size: 10px;\"><b>Server Adress:</b"
+      $s3 = "  <TD><DIV STYLE=\"font-family: verdana; font-size: 10px;\"><b>User Info:</b> ui"
+      $s4 = "    <TD><DIV STYLE=\"font-family: verdana; font-size: 10px;\"><?= $info ?>: <?= "
+   condition:
+      2 of them
 }
+rule WEBSHELL_H4ntu_Shell_Powered_Tsoi {
+   meta:
+      description = "Semi-Auto-generated - file h4ntu shell [powered by tsoi].txt"
+      author = "Florian Roth"
+      date = "2014-03-29"
+      modified = "2025-03-21"
+      score = 80
+      old_rule_name = "Webshell_h4ntu_shell__powered_by_tsoi_"
+      hash = "06ed0b2398f8096f1bebf092d0526137"
+   strings:
+      $x1 = "<title>h4ntu shell"
+      $x2 = "system(\"$cmd 1> /tmp/cmdtemp 2>&1; cat /tmp/cmdtemp; rm /tmp/cmdtemp\");"
+   condition:
+      filesize < 100KB
+      and 1 of them
+}
+
 rule webshell_PHP_sql {
 	meta:
 		description = "Web Shell - file sql.php"
@@ -5738,23 +5754,24 @@ rule WebShell_SimAttacker___Vrsion_1_0_0___priv8_4_My_friend {
 	condition:
 		3 of them
 }
-rule WebShell_h4ntu_shell__powered_by_tsoi_ {
-	meta:
-		description = "PHP Webshells Github Archive - file h4ntu shell [powered by tsoi].php"
-		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth (Nextron Systems)"
-		hash = "cbca8cd000e705357e2a7e0cf8262678706f18f9"
-		id = "5a12a025-6497-545a-8da0-423ef448e374"
-	strings:
-		$s11 = "<title>h4ntu shell [powered by tsoi]</title>" fullword
-		$s13 = "$cmd = $_POST['cmd'];" fullword
-		$s16 = "$uname = posix_uname( );" fullword
-		$s17 = "if(!$whoami)$whoami=exec(\"whoami\");" fullword
-		$s18 = "echo \"<p><font size=2 face=Verdana><b>This Is The Server Information</b></font>"
-		$s20 = "ob_end_clean();" fullword
-	condition:
-		3 of them
+
+rule WEBSHELL_H4ntu_Shell_Powered_Tsoi_2 {
+   meta:
+      description = "PHP Webshells Github Archive - file h4ntu shell [powered by tsoi].php"
+      author = "Florian Roth"
+      date = "2014-04-06"
+      modified = "2025-03-21"
+      old_rule_name = "WebShell_h4ntu_shell__powered_by_tsoi_"
+      hash = "cbca8cd000e705357e2a7e0cf8262678706f18f9"
+   strings:
+      $s1 = "<title>h4ntu shell [powered by tsoi]</title>" fullword
+      $s2 = "$uname = posix_uname( );" fullword
+      $s3 = "if(!$whoami)$whoami=exec(\"whoami\");" fullword
+      $s4 = "echo \"<p><font size=2 face=Verdana><b>This Is The Server Information</b></font>"
+   condition:
+      filesize <2MB and 2 of them
 }
+
 rule WebShell_php_webshells_MyShell {
 	meta:
 		description = "PHP Webshells Github Archive - file MyShell.php"
