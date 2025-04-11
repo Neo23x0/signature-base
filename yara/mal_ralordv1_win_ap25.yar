@@ -1,4 +1,4 @@
-rule mal_ralordv1_win_ap25 {
+rule MAL_WIN_Ralordv1_Apr25 {
     meta:
         description = "This ISH Tecnologia Yara rule, detects the main components of the first version of RALord Ransomware"
         author = "0x0d4y-Ícaro César"
