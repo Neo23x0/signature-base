@@ -7,7 +7,7 @@ rule mal_ralordv1_win_ap25 {
         reference = "https://ish.com.br/wp-content/uploads/2025/04/RALord-Novo-grupo-de-Ransomware-as-a-Service-1.pdf"
         hash = "BE15F62D14D1CBE2AECCE8396F4C6289"
         uuid = "67254633-3597-4770-9806-8b2e26c8f66a"
-        license = "CC BY 4.0"
+        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         rule_matching_tlp = "TLP:WHITE"
         rule_sharing_tlp = "TLP:WHITE"
         malpedia_family = "win.ralord"
