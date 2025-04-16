@@ -1,7 +1,7 @@
 rule MAL_WIN_Megazord_Apr25 {
     meta:
         description = "This Yara rule from ISH Tecnologia's Heimdall Security Research Team, detects the main components of the Megazord Ransomware"
-        author = "0x0d4y-Ícaro César"
+        author = "0x0d4y-Icaro Cesar"
         date = "2025-04-11"
         score = 80
         reference = "https://ish.com.br/wp-content/uploads/2025/04/A-Anatomia-do-Ransomware-Akira-e-sua-expansao-multiplataforma.pdf"
