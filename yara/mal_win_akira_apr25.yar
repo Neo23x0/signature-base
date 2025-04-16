@@ -1,7 +1,7 @@
 rule MAL_WIN_Akira_Apr25 {
     meta:
         description = "This Yara rule from ISH Tecnologia's Heimdall Security Research Team detects key components of Akira Ransomware"
-        author = "0x0d4y-Ícaro César"
+        author = "0x0d4y-Icaro Cesar"
         date = "2025-04-11"
         score = 90
         reference = "https://ish.com.br/wp-content/uploads/2025/04/A-Anatomia-do-Ransomware-Akira-e-sua-expansao-multiplataforma.pdf"
