@@ -4428,4 +4428,64 @@ C:\\perflogs\\RunSchedulerTaskOnce\.ps1;85
 \\healthchecktemplate\.txt;75
 \\healthcheck\.txt;60
 
+# Malicious Chrome Extensions https://docs.google.com/spreadsheets/d/1LN7MQ_9W5QHIyZjjqXK7JnSiCLlcF4aBRhmZKon-p4U/edit?gid=0#gid=0
+\\User Data\\Default\\Extensions\\odccobbfnngplckpongkahajfjpnbcck;75
+\\User Data\\Default\\Extensions\\afefmfbcccnppcaiebpmbpmddhilkkdi;75
+\\User Data\\Default\\Extensions\\oaljkhbgbedmfoiieocoenglpaeogjmf;75
+\\User Data\\Default\\Extensions\\ndajnaaobjaganokllcgbapngenfbgkc;75
+\\User Data\\Default\\Extensions\\okjdbeegldeilceaflghgfdemobmfhbd;75
+\\User Data\\Default\\Extensions\\jhigofkbdbndeooldpdhmphldaglejlh;75
+\\User Data\\Default\\Extensions\\pmgmbeeafpdjjhmeaalneginpmdhamhe;75
+\\User Data\\Default\\Extensions\\eobcealmgdjeoheieiobkedbgddicaba;75
+\\User Data\\Default\\Extensions\\lnedcnepmplnjmfdiclhbfhneconamoj;75
+\\User Data\\Default\\Extensions\\gadjnphfolikkffmppnicebdfimlblkj;75
+\\User Data\\Default\\Extensions\\njfkgeajknkffkngdmjmjninkbgjedlo;75
+\\User Data\\Default\\Extensions\\eldjnmdpkecnjjkmmgndpcibgkfpodfh;75
+\\User Data\\Default\\Extensions\\omieocempinhilcpbmnfdaamgomapded;75
+\\User Data\\Default\\Extensions\\ilgbcnkedmncjlhpfconadpjnhlflejf;75
+\\User Data\\Default\\Extensions\\okggiiagcegdfiajlkodohfkeemnjlnd;75
+\\User Data\\Default\\Extensions\\jgajjllfidghjkjfipmjbaegafkdpfha;75
+\\User Data\\Default\\Extensions\\gpibjjfllodpcfhcjpamonnblkbinbie;75
+\\User Data\\Default\\Extensions\\hpdpddnfjaacnbcnoohlcipfafkbmdja;75
+\\User Data\\Default\\Extensions\\lljnhidbljbfkejjcfogkhgmgdihjmlf;75
+\\User Data\\Default\\Extensions\\gclgncjpanihjpbjbecgfmfnipggcckn;75
+\\User Data\\Default\\Extensions\\cpehflfpgdgofpocagbdeecjlfhjfjdh;75
+\\User Data\\Default\\Extensions\\mdenajpfccjjjnbochgkdahmnipfpelc;75
+\\User Data\\Default\\Extensions\\eoclijfghiglinncpceohgaigfgnlbim;75
+\\User Data\\Default\\Extensions\\cghdfcbncfjhleinblpalngjhojokjeo;75
+\\User Data\\Default\\Extensions\\jeahgicmhigopdgilnmclihdjjlhnmop;75
+\\User Data\\Default\\Extensions\\edbhdbhgdbanjhdnpjcianjgfmdkgbcf;75
+\\User Data\\Default\\Extensions\\jjnfhbcilcppomkcmkbbmcadoihkkgah;75
+\\User Data\\Default\\Extensions\\dmnajaiijohbndidolbdbpicdjanombo;75
+\\User Data\\Default\\Extensions\\gpghebehjahceknfdcfifeifhdbongld;75
+\\User Data\\Default\\Extensions\\gidejehfgombmkfflghejpncblgfkagj;75
+\\User Data\\Default\\Extensions\\koolcjajfdkjjfklmidahmcjhcmmkhma;75
+\\User Data\\Default\\Extensions\\gijlkeaijpeaoihdajcgmiajeoonnkoj;75
+\\User Data\\Default\\Extensions\\kldgaejigkhpgmfglbamggiglngkifck;75
+\\User Data\\Default\\Extensions\\ojlhcbolfcndnojcjhhjgmdblnojgefm;75
+\\User Data\\Default\\Extensions\\eldjnmdpkecnjjkmmgndpcibgkfpodfh;75
+\\User Data\\Default\\Extensions\\kiecdaoopedhfgapicmpebbhodepnbbp;75
+\\User Data\\Default\\Extensions\\dmakkciciccnjgmfjflpbdfkdnmpfghp;75
+\\User Data\\Default\\Extensions\\ebhcaliljppmelancooakfgcgcceiind;75
+\\User Data\\Default\\Extensions\\eekblbhfmladafbmpgkdedmolbjkjbnc;75
+\\User Data\\Default\\Extensions\\ejkdgndbgpfcaggpmnijcbddlnmdnpka;75
+\\User Data\\Default\\Extensions\\fojomppheellamdaddnbgommepnlkooh;75
+\\User Data\\Default\\Extensions\\gmbebpcapalekeaoekfhpbioilghcfmp;75
+\\User Data\\Default\\Extensions\\ndcphhjcebhifabfmebineokbfdnbphm;75
+\\User Data\\Default\\Extensions\\oghbffaoaooigagpockijkpfpgmnibkh;75
+\\User Data\\Default\\Extensions\\oppeaknhldjjnfnflbcedipjbnbimhhf;75
+\\User Data\\Default\\Extensions\\pcfapghfanllmbdfiipeiihpkojekckk;75
+\\User Data\\Default\\Extensions\\lfmdddfdacgdimongmjclgijepoknmjm;75
+\\User Data\\Default\\Extensions\\pmannhofeaiadkcdbcebhnkcnkjjnfpn;75
+\\User Data\\Default\\Extensions\\lkbfbidpkbeicafnnhlaockggaknjolf;75
+\\User Data\\Default\\Extensions\\adjpoipklnhlapjijccnemdhkcphcegd;75
+\\User Data\\Default\\Extensions\\dkcjihabohaldgjkdmenepolojcjdaah;75
+\\User Data\\Default\\Extensions\\iiegilogjnagependdonbfcmfmmaamon;75
+\\User Data\\Default\\Extensions\\aiaaeimmjjeceodjpficfnjckenedbon;75
+\\User Data\\Default\\Extensions\\alogdolelipkojjgggejccalcbdioolg;75
+\\User Data\\Default\\Extensions\\fchgahponkgfomlgieipannlfanfbfak;75
+\\User Data\\Default\\Extensions\\fojomppheellamdaddnbgommepnlkooh;75
+\\User Data\\Default\\Extensions\\ldanhaibkdifncinbpjdjpambmofmpkf;75
+\\User Data\\Default\\Extensions\\aehjmdkbfemaefoebbihbfcmhehgimcl;75
+
 # End
