@@ -1,7 +1,7 @@
 rule MAL_WIN_Ralordv1_Apr25 {
     meta:
         description = "This ISH Tecnologia Yara rule, detects the main components of the first version of RALord Ransomware"
-        author = "0x0d4y-Ícaro César"
+        author = "0x0d4y-Icaro Cesar"
         date = "2025-04-01"
         score = 80
         reference = "https://ish.com.br/wp-content/uploads/2025/04/RALord-Novo-grupo-de-Ransomware-as-a-Service-1.pdf"
