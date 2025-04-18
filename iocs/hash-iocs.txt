@@ -11458,3 +11458,12 @@ aa9f5ed1eede9aac6d07b0ba13b73185838b159006fa83ed45657d7f333a0efe;ScreenConnect E
 cf265a3a3dd068d0aa0c70248cd6325d;perfctl IOCs https://www.aquasec.com/blog/perfctl-a-stealthy-malware-targeting-millions-of-linux-servers/
 da006a0b9b51d56fa3f9690cf204b99f;perfctl IOCs https://www.aquasec.com/blog/perfctl-a-stealthy-malware-targeting-millions-of-linux-servers/
 ba120e9c7f8896d9148ad37f02b0e3cb;perfctl IOCs https://www.aquasec.com/blog/perfctl-a-stealthy-malware-targeting-millions-of-linux-servers/
+
+3298d203c2acb68c474e5fdad8379181890b4403d6491c523c13730129be3f75; Akira IOCs https://ish.com.br/wp-content/uploads/2025/04/A-Anatomia-do-Ransomware-Akira-e-sua-expansao-multiplataforma.pdf
+ae455890e2123a9d011e47065828b0a03c08fd66570fab9d0340d2f5d5eb40c3; Akira IOCs https://ish.com.br/wp-content/uploads/2025/04/A-Anatomia-do-Ransomware-Akira-e-sua-expansao-multiplataforma.pdf
+0ee1d284ed663073872012c7bde7fac5ca1121403f1a5d2d5411317df282796c; Akira IOCs https://ish.com.br/wp-content/uploads/2025/04/A-Anatomia-do-Ransomware-Akira-e-sua-expansao-multiplataforma.pdf
+dfe6fddc67bdc93b9947430b966da2877fda094edf3e21e6f0ba98a84bc53198; Megazord IOCs https://ish.com.br/wp-content/uploads/2025/04/A-Anatomia-do-Ransomware-Akira-e-sua-expansao-multiplataforma.pdf
+131da83b521f610819141d5c740313ce46578374abb22ef504a7593955a65f07; Megazord IOCs https://ish.com.br/wp-content/uploads/2025/04/A-Anatomia-do-Ransomware-Akira-e-sua-expansao-multiplataforma.pdf
+9f393516edf6b8e011df6ee991758480c5b99a0efbfd68347786061f0e04426c; Megazord IOCs https://ish.com.br/wp-content/uploads/2025/04/A-Anatomia-do-Ransomware-Akira-e-sua-expansao-multiplataforma.pdf
+
+456b9adaabae9f3dce2207aa71410987f0a571cd8c11f2e7b41468501a863606; RALord IOCs https://ish.com.br/wp-content/uploads/2025/04/RALord-Novo-grupo-de-Ransomware-as-a-Service-1.pdf
