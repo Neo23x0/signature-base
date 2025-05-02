@@ -4488,4 +4488,15 @@ C:\\perflogs\\RunSchedulerTaskOnce\.ps1;85
 \\User Data\\Default\\Extensions\\ldanhaibkdifncinbpjdjpambmofmpkf;75
 \\User Data\\Default\\Extensions\\aehjmdkbfemaefoebbihbfcmhehgimcl;75
 
+# SAP Netwaever Exploitation IOCs https://redcanary.com/blog/threat-intelligence/cve-2025-31324/
+\\irj\\servlet_jsp\\irj\\root\\usage\.jsp;80
+\\irj\\servlet_jsp\\irj\\root\\usage1\.jsp;80
+\\irj\\servlet_jsp\\irj\\root\\helper\.jsp;80
+\\irj\\servlet_jsp\\irj\\root\\404_error\.jsp;80
+\\irj\\servlet_jsp\\irj\\root\\\.h\.jsp;80
+\\irj\\servlet_jsp\\irj\\root\\webhelp\.jsp;80
+\\irj\\servlet_jsp\\irj\\root\\\.webhelper\.jsp;80
+\\servlet_jsp\\_default\\root\\forwardsap\.jsp;80
+\\tmp\\8bq\.sh;80
+
 # End
