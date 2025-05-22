@@ -62,7 +62,7 @@ rule SUSP_Katz_Log_May25 {
       and 3 of them
 }
 
-rule MAL_NET_Katz_Stealer_May25 {
+rule MAL_NET_Katz_Stealer_Loader_May25 {
    meta:
       description = "Detects .NET based Katz stealer loader"
       author = "Jonathan Peters (cod3nym)"
@@ -80,8 +80,7 @@ rule MAL_NET_Katz_Stealer_May25 {
       $s5 = "payloadBuffer" ascii
       $s6 = "caminhovbs" ascii
    condition:
-      3 of ($s*)
-      or $x
+      3 of ($s*) or $x
 }
 
 rule MAL_NET_UAC_Bypass_May25 {
