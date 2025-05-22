@@ -22,7 +22,7 @@ rule MAL_Katz_Stealer_May25 {
 
 rule MAL_DLL_Chrome_App_Bound_Encryption_Decryption_May25 {
    meta:
-      description = "Detects a DLL used to decrypt App-Bound Encrypted (ABE) cookies, passwords & payment methods from Chromium-based browsers. seen being used by Kats stealer"
+      description = "Detects a DLL used to decrypt App-Bound Encrypted (ABE) cookies, passwords and payment methods from Chromium-based browsers. Seen being used by Katz stealer"
       author = "MAlGamy"
       date = "2025-05-19"
       reference = "Internal Research"
