@@ -17,7 +17,7 @@ rule MAL_Katz_Stealer_May25 {
    condition:
       uint16(0) == 0x5a4d
       and filesize < 300KB
-      and all of them
+      and 4 of them
 }
 
 rule MAL_DLL_Chrome_App_Bound_Encryption_Decryption_May25 {
