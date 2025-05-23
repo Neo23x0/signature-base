@@ -4500,10 +4500,10 @@ C:\\perflogs\\RunSchedulerTaskOnce\.ps1;85
 \\tmp\\8bq\.sh;80
 
 # Katz Stealer 
-\\AppData\\Local\\Temp\\katz_ontop\.dll;80
-\\AppData\\Local\\Temp\\received_dll\.dll;80
-\\AppData\\Roaming\\decrypted_chrome_key\.txt;80
-\\AppData\\Roaming\\decrypted_edge_key\.txt;80
-\\AppData\\Roaming\\decrypted_brave_key\.txt;80
+\\katz_ontop\.dll;80
+\\received_dll\.dll;80
+\\decrypted_chrome_key\.txt;80
+\\decrypted_edge_key\.txt;80
+\\decrypted_brave_key\.txt;80
 
 # End
