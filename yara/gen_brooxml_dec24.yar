@@ -5,6 +5,7 @@ rule Brooxml_Hunting {
         author = "Proofpoint"
         category = "hunting"
         date = "2024-11-27"
+        modified = "2025-06-02"
         score = 70
         reference = "https://x.com/threatinsight/status/1861817946508763480"
         id = "1ffea1c7-9f97-5bb1-93d7-ce914765416f"
@@ -20,7 +21,6 @@ rule Brooxml_Hunting {
 
         // Negations for FPs / unwanted file types
         $ole = {d0 cf 11 e0}
-        $mz = {4d 5a}
         $tef = {78 9f 3e 22}
     condition:
         $pk_ooxml_magic in (4..16384) and
@@ -34,7 +34,7 @@ rule Brooxml_Hunting {
         not ($pk_0506 at 0) and
         not ($pk_0708 at 0) and
         not ($ole at 0) and
-        not ($mz at 0) and
+        not (uint16(0) == 0x5a4d) and
         not ($tef at 0)
 }
 
