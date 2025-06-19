@@ -9353,7 +9353,6 @@ cbcc37f37d326d3c3def52b3e3a42d14857d56ba6b6e13d02b3cd041cbb2aa3a;Chafer Toolset 
 29fe8ea77382e942bcb318c54ba98c3b33db48240591cc0b6ca61860a8070d01;Chafer Toolset Hash IOC - pan.zip
 3b826c09907aa099098bdafa876381c21dd72691ef3f26f1a5cb99795c7da067;Chafer Toolset Hash IOC - pc.txt
 29b24268c57e306e6ba881f80998188dc1e76e64621535380e4b67e8d086f658;Chafer Toolset Hash IOC - servlets-examples.war
-4194d1706ed1f408d5e02d672777019f4d5385c766a8c6ca8acba3167d36a7b9;Chafer Toolset Hash IOC - u.txt
 06b15c48ba3bda15a38ab840538ea919f6a721361c590956a7b389fdafefcabd;Chafer Toolset Hash IOC - v
 29b24268c57e306e6ba881f80998188dc1e76e64621535380e4b67e8d086f658;Chafer Toolset Hash IOC - web-console.war
 ade900cf62545fa8b56c15132fc4d5ffc5e160b08aa5679f5e438c154aed02b0;Chafer Toolset Hash IOC - winexe
