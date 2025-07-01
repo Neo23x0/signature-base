@@ -11,8 +11,8 @@ rule EXT_HKTL_Nighthawk_RAT
 		hash3 = "38881b87826f184cc91559555a3456ecf00128e01986a9df36a72d60fb179ccf"
 		hash4 = "f3bba2bfd4ed48b5426e36eba3b7613973226983a784d24d7a20fcf9df0de74e"
 		hash5 = "b775a8f7629966592cc7727e2081924a7d7cf83edd7447aa60627a2b67d87c94"
-		modified = "2022-11-30"
-    date = "2022-11-22"
+		modified = "2025-07-01"
+		date = "2022-11-22"
 
 		id = "7a58b8bf-fb14-5758-bc2a-ad2c6fff1216"
 	strings:
@@ -26,7 +26,7 @@ rule EXT_HKTL_Nighthawk_RAT
 	condition:
 		uint16(0) == 0x5A4D and filesize < 2MB and
 		(3 of ($pattern*) or
-		(pe.section_index(".profile") and pe.section_index(".detourc") and pe.section_index(".detourd")))
+		(pe.section_index(".profile") >= 0 and pe.section_index(".detourc") >= 0 and pe.section_index(".detourd") >= 0))
 }
 
 rule HKTL_MAL_Nighthawk_Nov_2022_1 : nighthawk beacon {
