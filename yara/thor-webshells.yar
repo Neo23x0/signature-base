@@ -4741,6 +4741,7 @@ rule sql_php_php {
 		$s3 = "print \"<a href=\\\"$_SERVER[PHP_SELF]?s=$s&login=$login&passwd=$passwd&"
 	condition:
 		1 of them
+		and not uint32(0) == 0x6D783F3C /* <?xm */
 }
 rule cgi_python_py {
 	meta:
