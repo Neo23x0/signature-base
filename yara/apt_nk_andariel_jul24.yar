@@ -90,6 +90,7 @@ rule MAL_APT_NK_Andariel_HHSD_FileTransferTool {
       description = "Detects a variant of the HHSD File Transfer Tool"
       reference = "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-207a"
       date = "2024-07-25"
+      modified = "2025-07-09"
       score = 70
       id = "46b6dbaf-1272-5bbd-a586-5e48ba6c5022"
    strings:
@@ -111,7 +112,7 @@ rule MAL_APT_NK_Andariel_HHSD_FileTransferTool {
       // 41 02 D0                add     dl, r8b
       // 44 02 DA                add     r11b, dl
       // 3C 1F                   cmp     al, 1Fh
-      $buf_add_cmp_1f = { 4? 02 ?? 4? 02 ?? 3? 1F }
+      // $buf_add_cmp_1f = { 4? 02 ?? 4? 02 ?? 3? 1F }      removed due to 1 byte atom
       // B9 8D 10 B7 F8          mov     ecx, 0F8B7108Dh
       // E8 F1 BA FF FF          call    sub_140001280
       $hash_call_loadlib = { B? 8D 10 B7 F8 E8 }
@@ -119,9 +120,9 @@ rule MAL_APT_NK_Andariel_HHSD_FileTransferTool {
       
    condition:
       uint16(0) == 0x5a4d
-      and 1 of ($handshake, $err_xor_str, $buf_add_cmp_1f) 
+      and 1 of ($handshake, $err_xor_str) 
       and 1 of ($hash_call_*)
-      or 2 of ($handshake, $err_xor_str, $buf_add_cmp_1f)
+      or 2 of ($handshake, $err_xor_str)
 } 
 
 rule MAL_APT_NK_Andariel_Atharvan_3RAT {
