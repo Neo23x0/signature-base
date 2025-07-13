@@ -4,14 +4,14 @@
 #
 # APPLICATION ------------------------------------------------------------------
 #
-# Every line is treated as REGEX case sensitive.
+# Every line is treated as REGEX case sensitive. Prepend (?i) to make it case insensitive, e.g. (?i)C:\\TEMP\\MKATZ.EXE;80
 # Every line includes a description that gives information about the file name
 # based IOC
 #
 # FORMAT -----------------------------------------------------------------------
 #
 # # COMMENT
-# REGEX;SCORE
+# REGEX;SCORE[;EXCLUDE FALSE POSITIVE REGEX]
 #
 # EXAMPLES ---------------------------------------------------------------------
 #
@@ -22,6 +22,9 @@
 # (Anwendungsdaten|Application Data|APPDATA)\\sydmain\.dll;80
 # (TEMP|Temp)\\[^\\"]+\.(xmd|yls)$;80
 # (LOCAL SETTINGS\\Temp|Local Settings\\Temp|Local\\Temp)\\(word\.exe|winword\.exe)[^\.];80
+#
+# examples with false positive exclusion, if "SysInternals\" is contained in the path
+# (?i)\\procdump(64)?(a)?\.(exe|zip);50;(?i)(SysInternals\\)
 #
 
 # Ncat Example
@@ -4505,5 +4508,17 @@ C:\\perflogs\\RunSchedulerTaskOnce\.ps1;85
 \\decrypted_chrome_key\.txt;80
 \\decrypted_edge_key\.txt;80
 \\decrypted_brave_key\.txt;80
+
+# Discovery and Enumeration Tools often used by ransomware gangs: https://github.com/BushidoUK/Ransomware-Tool-Matrix/blob/main/Tools/DiscoveryEnum.md
+# Some have low score because they're also often used by administrators and developers. Investigate if they're found on the machine of Bob from accounting.
+(?i)\\advanced_ip_scanner;45
+(?i)\\advanced_port_scanner;45
+\\netscan\.exe;45
+\\ipscan\.exe;45
+(?i)\\everything.exe;38
+\\rustscan.exe;60
+\\PingCastle\.exe;70
+(?i)\\sharefinder\.exe;80
+(?i)\\SharpShares\.exe;80
 
 # End
