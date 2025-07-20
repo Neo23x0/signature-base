@@ -43,7 +43,6 @@ rule WEBSHELL_ASPX_Compiled_Sharepoint_Drop_CVE_2025_53770_Jul25_2 {
       )
       or 2 of ($x*)
       or 4 of them
-
 }
 
 rule APT_EXPL_Sharepoint_CVE_2025_53770_ForensicArtefact_Jul25_1 {
