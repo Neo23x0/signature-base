@@ -4506,4 +4506,7 @@ C:\\perflogs\\RunSchedulerTaskOnce\.ps1;85
 \\decrypted_edge_key\.txt;80
 \\decrypted_brave_key\.txt;80
 
+# SharePoint exploitation artefact CVE-2025-49706 and CVE-2025-49704 https://research.eye.security/sharepoint-under-siege/
+\\spinstall0\.aspx;85
+
 # End
