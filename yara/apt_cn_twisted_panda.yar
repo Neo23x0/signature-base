@@ -32,7 +32,7 @@ rule APT_CN_TwistedPanda_loader {
       $seq3 = { 6A 00 6A 00 6A 03 6A 00 6A 03 68 00 00 00 80 }
             
       // Decryption sequence
-      $decryption = { 8B C? [2-3] F6 D? 1A C? [2-3] [2-3] 30 0? ?? 4? }
+      $decryption = { 8B C? [2-3] F6 D? 1A C? [4-6] 30 0? ?? 4? }
  
    condition:
       // MZ signature at offset 0 and ...

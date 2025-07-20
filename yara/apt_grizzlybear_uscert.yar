@@ -1434,6 +1434,7 @@ rule IMPLANT_9_v1 {
       author = "US CERT"
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
+      modified = "2025-07-01"
       score = 85
       id = "5460ff29-681b-5d11-a6ba-5f294e8577e6"
    strings:
@@ -1443,7 +1444,7 @@ rule IMPLANT_9_v1 {
       $STR3 = { 8B 55 F8 8B C8 83 E1 03 8A 4C 11 08 8B 55 FC 32 0C 10 8B 17 88
          4C 02 04 40 3B 06 72 E3 }
    condition:
-      (uint16(0) == 0x5A4D or uint16(0)) and all of them
+      uint16(0) == 0x5A4D and all of them
 }
 
 /* TOO MANY FALSE POSITIVES
