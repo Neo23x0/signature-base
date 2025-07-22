@@ -4508,5 +4508,6 @@ C:\\perflogs\\RunSchedulerTaskOnce\.ps1;85
 
 # SharePoint exploitation artefact CVE-2025-53770 https://research.eye.security/sharepoint-under-siege/
 \\spinstall0\.aspx;85
+\\LAYOUTS\\debug_dev\.js;75
 
 # End
