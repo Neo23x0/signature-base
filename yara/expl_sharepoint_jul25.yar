@@ -24,12 +24,14 @@ rule WEBSHELL_ASPX_Compiled_Sharepoint_Drop_CVE_2025_53770_Jul25_2 {
       author = "Florian Roth"
       reference = "https://research.eye.security/sharepoint-under-siege/"
       date = "2025-07-20"
+      modified = "2025-07-22"
       score = 75
       hash1 = "8d3d3f3a17d233bc8562765e61f7314ca7a08130ac0fb153ffd091612920b0f2"
    strings:
       $x1 = "App_Web_spinstall0.aspx" wide
       $x2 = "spinstall0_aspx" ascii
       $x3 = "/_layouts/15/spinstall0.aspx" wide
+      $x4 = "/_layouts/16/spinstall0.aspx" wide
 
       $s1 = "System.Web.Configuration.MachineKeySection" wide
       $s2 = "Page_load" ascii fullword
@@ -54,10 +56,10 @@ rule APT_EXPL_Sharepoint_CVE_2025_53770_ForensicArtefact_Jul25_1 {
       modified = "2025-07-22"
       score = 75
    strings:
-      $sa1 = "POST /_layouts/15/ToolPane.aspx" ascii wide nocase
+      $sa1 = /POST \/_layouts\/1[0-9]\/ToolPane\.aspx/ ascii wide nocase
       $sa2 = "DisplayMode=Edit&a=/ToolPane.aspx" ascii wide
 
-      $sb1 = "GET /_layouts/15/spinstall0.aspx" ascii wide  // specific
+      $sb1 = /GET \/_layouts\/1[0-9]\/spinstall/ ascii wide  // specific
       $sb2 = "/_layouts/SignOut.aspx 200" ascii wide nocase
    condition:
       (@sa2 - @sa1) < 700  // unknown how specific with the DisplayMode=Edit parameter
