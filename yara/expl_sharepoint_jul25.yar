@@ -54,11 +54,11 @@ rule APT_EXPL_Sharepoint_CVE_2025_53770_ForensicArtefact_Jul25_1 {
       modified = "2025-07-22"
       score = 75
    strings:
-      $sa1 = "POST /_layouts/15/ToolPane.aspx" ascii wide
+      $sa1 = "POST /_layouts/15/ToolPane.aspx" ascii wide nocase
       $sa2 = "DisplayMode=Edit&a=/ToolPane.aspx" ascii wide
 
       $sb1 = "GET /_layouts/15/spinstall0.aspx" ascii wide  // specific
-      $sb2 = "/_layouts/SignOut.aspx 200" ascii wide
+      $sb2 = "/_layouts/SignOut.aspx 200" ascii wide nocase
    condition:
       (@sa2 - @sa1) < 700  // unknown how specific with the DisplayMode=Edit parameter
       or (@sb2 - @sb1) < 700  // specific combination
