@@ -52,7 +52,7 @@ rule APT_EXPL_Sharepoint_CVE_2025_53770_ForensicArtefact_Jul25_1 {
       reference = "https://research.eye.security/sharepoint-under-siege/"
       date = "2025-07-20"
       modified = "2025-07-22"
-      score = 70
+      score = 75
    strings:
       $sa1 = "POST /_layouts/15/ToolPane.aspx" ascii wide
       $sa2 = "DisplayMode=Edit&a=/ToolPane.aspx" ascii wide
