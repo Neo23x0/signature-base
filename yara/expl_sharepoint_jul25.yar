@@ -51,16 +51,18 @@ rule APT_EXPL_Sharepoint_CVE_2025_53770_ForensicArtefact_Jul25_1 {
       author = "Florian Roth"
       reference = "https://research.eye.security/sharepoint-under-siege/"
       date = "2025-07-20"
+      modified = "2025-07-22"
       score = 70
    strings:
       $sa1 = "POST /_layouts/15/ToolPane.aspx" ascii wide
       $sa2 = "DisplayMode=Edit&a=/ToolPane.aspx" ascii wide
 
-      $sb1 = "GET /_layouts/15/spinstall0.aspx" ascii wide
+      $sb1 = "GET /_layouts/15/spinstall0.aspx" ascii wide  // specific
       $sb2 = "/_layouts/SignOut.aspx 200" ascii wide
    condition:
-      (@sa2 - @sa1) < 700
-      or (@sb2 - @sb1) < 700
+      (@sa2 - @sa1) < 700  // unknown how specific with the DisplayMode=Edit parameter
+      or (@sb2 - @sb1) < 700  // specific combination
+      or (@sb2 - @sa1) < 700  // most generic combination
 }
 
 rule APT_EXPL_Sharepoint_CVE_2025_53770_ForensicArtefact_Jul25_2 {
@@ -69,11 +71,19 @@ rule APT_EXPL_Sharepoint_CVE_2025_53770_ForensicArtefact_Jul25_2 {
       author = "Florian Roth"
       reference = "https://research.eye.security/sharepoint-under-siege/"
       date = "2025-07-20"
+      modified = "2025-07-21"
       score = 70
    strings:
       $x1 = "-EncodedCommand JABiAGEAcwBlADYANABTAHQAcgBpAG4AZwAgAD0" ascii wide
       $x2 = "TEMPLATE\\LAYOUTS\\spinstall0.aspx" ascii wide
       $x3 = "Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:120.0)+Gecko/20100101+Firefox/120.0 /_layouts/SignOut.aspx" ascii wide
+
+      // Encoded code from the dropper (UTF-16 & Base64 encoded)
+      // MICROS~1\WEBSER~1\16\TEMPLATE\LAYOUTS\
+      // as found in sample f36a11d196db49c80123adf126b78609d0b2f5a0d9850163b6dda27048d17cbc
+      $xe1 = "TQBJAEMAUgBPAFMAfgAxAFwAVwBFAEIAUwBFAFIAfgAxAFwAMQA2AFwAVABFAE0AUABMAEEAVABFAFwATABBAFkATwBVAFQAUwBcA"
+      $xe2 = "0ASQBDAFIATwBTAH4AMQBcAFcARQBCAFMARQBSAH4AMQBcADEANgBcAFQARQBNAFAATABBAFQARQBcAEwAQQBZAE8AVQBUAFMAXA"
+      $xe3 = "NAEkAQwBSAE8AUwB+ADEAXABXAEUAQgBTAEUAUgB+ADEAXAAxADYAXABUAEUATQBQAEwAQQBUAEUAXABMAEEAWQBPAFUAVABTAFwA"
    condition:
       1 of them
 }
