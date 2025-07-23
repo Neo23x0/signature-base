@@ -4510,7 +4510,8 @@ C:\\perflogs\\RunSchedulerTaskOnce\.ps1;85
 \\spinstall0\.aspx;85
 \\spinstall\.aspx;85
 \\spinstall1\.aspx;85
-\\TEMPLATE\LAYOUTS\spinstall;85
-\\LAYOUTS\debug_dev\.js;85
+\\spinstallp\.aspx;85
+\\TEMPLATE\\LAYOUTS\\spinstall;85
+\\LAYOUTS\\debug_dev\.js;85
 
 # End
