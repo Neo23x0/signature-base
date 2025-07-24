@@ -73,14 +73,16 @@ rule APT_EXPL_Sharepoint_CVE_2025_53770_ForensicArtefact_Jul25_2 {
       author = "Florian Roth"
       reference = "https://research.eye.security/sharepoint-under-siege/"
       date = "2025-07-20"
-      modified = "2025-07-23"
+      modified = "2025-07-24"
       hash = "30955794792a7ce045660bb1e1917eef36f1d5865891b8110bf982382b305b27"
       hash = "b336f936be13b3d01a8544ea3906193608022b40c28dd8f1f281e361c9b64e93"
       score = 70
    strings:
       $x1 = "-EncodedCommand JABiAGEAcwBlADYANABTAHQAcgBpAG4AZwAgAD0" ascii wide
-      $x2 = /TEMPLATE\\LAYOUTS\\spinstall/ ascii wide
-      $x3 = "Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:120.0)+Gecko/20100101+Firefox/120.0 /_layouts/SignOut.aspx" ascii wide
+      $x2 = "TEMPLATE\\LAYOUTS\\spinstall" ascii wide
+      $x3 = "TEMPLATE\\LAYOUTS\\ghostfile" ascii wide
+      $x4 = "TEMPLATE\\LAYOUTS\\1.css" ascii wide
+      $x5 = "Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64;+rv:120.0)+Gecko/20100101+Firefox/120.0 /_layouts/SignOut.aspx" ascii wide
 
       // Encoded code from the dropper (UTF-16 & Base64 encoded)
       // MICROS~1\WEBSER~1\16\TEMPLATE\LAYOUTS\
@@ -95,3 +97,4 @@ rule APT_EXPL_Sharepoint_CVE_2025_53770_ForensicArtefact_Jul25_2 {
    condition:
       1 of them
 }
+
