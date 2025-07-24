@@ -4526,5 +4526,6 @@ C:\\perflogs\\RunSchedulerTaskOnce\.ps1;85
 \\ghostfile[0-9]{0,3}\.aspx;85
 \\TEMPLATE\\LAYOUTS\\spinstall;85
 \\LAYOUTS\\debug_dev\.js;85
+\\TEMPLATE\\LAYOUTS\\1\.css;85
 
 # End
