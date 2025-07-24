@@ -4509,8 +4509,7 @@ C:\\perflogs\\RunSchedulerTaskOnce\.ps1;85
 \\decrypted_edge_key\.txt;80
 \\decrypted_brave_key\.txt;80
 
-# Discovery and Enumeration Tools often used by ransomware gangs: https://github.com/BushidoUK/Ransomware-Tool-Matrix/blob/main/Tools/DiscoveryEnum.md
-# Some have low score because they're also often used by administrators and developers. Investigate if they're found on the machine of Bob from accounting.
+# Discovery and Enumeration Tools often used by ransomware gangs: https://github.com/BushidoUK/Ransomware-Tool-Matrix/blob/main/Tools/DiscoveryEnum.md - Some have low score because they're also often used by administrators and developers. Investigate if they're found on the machine of Bob from accounting.
 (?i)\\advanced_ip_scanner;45
 (?i)\\advanced_port_scanner;45
 \\netscan\.exe;45
@@ -4520,5 +4519,13 @@ C:\\perflogs\\RunSchedulerTaskOnce\.ps1;85
 \\PingCastle\.exe;70
 (?i)\\sharefinder\.exe;80
 (?i)\\SharpShares\.exe;80
+
+# SharePoint exploitation artefact CVE-2025-53770 https://research.eye.security/sharepoint-under-siege/
+\\spinstall0\.aspx;85
+\\spinstall\.aspx;85
+\\spinstall1\.aspx;85
+\\spinstallp\.aspx;85
+\\TEMPLATE\\LAYOUTS\\spinstall;85
+\\LAYOUTS\\debug_dev\.js;85
 
 # End
