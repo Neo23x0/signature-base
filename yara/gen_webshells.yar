@@ -2216,6 +2216,8 @@ rule WEBSHELL_PHP_Dynamic_Big
         $fp2 = "* @package   PHP_CodeSniffer" ascii
         $fp3 = ".jQuery===" ascii
         $fp4 = "* @param string $lstat encoded LStat string" ascii
+        $fp5 = "' => array('horde:"
+        $fp6 = "$messages['fileuploaderror'] = '"
     condition:
         //any of them or
         not (
