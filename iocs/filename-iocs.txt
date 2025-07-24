@@ -4521,10 +4521,9 @@ C:\\perflogs\\RunSchedulerTaskOnce\.ps1;85
 (?i)\\SharpShares\.exe;80
 
 # SharePoint exploitation artefact CVE-2025-53770 https://research.eye.security/sharepoint-under-siege/
-\\spinstall0\.aspx;85
-\\spinstall\.aspx;85
-\\spinstall1\.aspx;85
-\\spinstallp\.aspx;85
+# and https://www.welivesecurity.com/en/eset-research/toolshell-an-all-you-can-eat-buffet-for-threat-actors/
+\\spinstall[0-9]{0,1}\.aspx;85
+\\ghostfile[0-9]{0,3}\.aspx;85
 \\TEMPLATE\\LAYOUTS\\spinstall;85
 \\LAYOUTS\\debug_dev\.js;85
 
