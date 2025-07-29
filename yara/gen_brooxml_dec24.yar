@@ -5,6 +5,7 @@ rule Brooxml_Hunting {
         author = "Proofpoint"
         category = "hunting"
         date = "2024-11-27"
+        modified = "2025-06-02"
         score = 70
         reference = "https://x.com/threatinsight/status/1861817946508763480"
         id = "1ffea1c7-9f97-5bb1-93d7-ce914765416f"
@@ -20,7 +21,6 @@ rule Brooxml_Hunting {
 
         // Negations for FPs / unwanted file types
         $ole = {d0 cf 11 e0}
-        $mz = {4d 5a}
         $tef = {78 9f 3e 22}
     condition:
         $pk_ooxml_magic in (4..16384) and
@@ -34,7 +34,7 @@ rule Brooxml_Hunting {
         not ($pk_0506 at 0) and
         not ($pk_0708 at 0) and
         not ($ole at 0) and
-        not ($mz at 0) and
+        not (uint16(0) == 0x5a4d) and
         not ($tef at 0)
 }
 
@@ -49,8 +49,6 @@ rule Brooxml_Phishing {
         id = "ccd8ab30-90a4-5d4b-8a77-dbc4669bdb95"
     strings:
         $hex1 = { 21 20 03 20 c3 be c3 bf 09 20 [0-1] 06 20 20 20 20 20 20 20 20 20 20 20 01 20 20 20 06 20 20 20 20 20 20 20 20 10 20 20 05 20 20 20 01 20 20 20 c3 be c3 bf c3 bf c3 bf }
-        $docx = { 50 4b }
-        $pdf = { 25 50 44 46 2d }
     condition:
-        all of ($hex*) and (($docx at 0) or ($pdf at 0))
+        all of ($hex*) and ((uint16be(0) == 0x504b) or (uint32be(0) == 0x25504446))
 }
