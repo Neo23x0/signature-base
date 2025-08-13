@@ -91,7 +91,7 @@ rule SUSP_Known_Type_Cloaked_as_JPG {
       score = 60
       id = "728908a6-74cf-5bab-a23f-cd03ed209430"
    condition:
-      ( extension == ".jpg" or extension == ".jpeg" ) and ( 
+      (extension == ".jpg" or extension == ".jpeg") and (
          filetype == "EXE" or
          filetype == "ELF" or
          filetype == "MACH-O" or
@@ -135,12 +135,12 @@ rule Suspicious_Size_explorer_exe {
       and filename == "explorer.exe"
       and not filepath contains "teamviewer"
       and not filepath contains "/lib/wine/fakedlls"
-      and ( filesize < 800KB or filesize > 6500KB )
+      and (filesize < 800KB or filesize > 6500KB)
       and not $fp
 }
 
 rule Suspicious_Size_chrome_exe {
-    meta:
+   meta:
       description = "Detects uncommon file size of chrome.exe"
       author = "Florian Roth (Nextron Systems)"
       score = 60
@@ -149,232 +149,233 @@ rule Suspicious_Size_chrome_exe {
       modified = "2022-09-15"
       noarchivescan = 1
       id = "f164394a-5c02-5056-aceb-044ee118578d"
-    strings:
+   strings:
       $fp1 = "HP Sure Click Chromium Launcher" wide
       $fp2 = "BrChromiumLauncher.exe" wide fullword
-    condition:
+   condition:
       uint16(0) == 0x5a4d
       and filename == "chrome.exe"
-      and ( filesize < 500KB or filesize > 5000KB )
+      and (filesize < 500KB or filesize > 5000KB)
       and not 1 of ($fp*)
 }
 
 rule Suspicious_Size_csrss_exe {
-    meta:
-        description = "Detects uncommon file size of csrss.exe"
-        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+   meta:
+      description = "Detects uncommon file size of csrss.exe"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
-        score = 60
-        date = "2015-12-21"
-        modified = "2022-01-28"
-        noarchivescan = 1
-        id = "5a247b51-6c91-5753-95b3-4a4c2b2286eb"
-    condition:
-        uint16(0) == 0x5a4d
-        and filename == "csrss.exe"
-        and ( filesize > 50KB )
+      score = 60
+      date = "2015-12-21"
+      modified = "2022-01-28"
+      noarchivescan = 1
+      id = "5a247b51-6c91-5753-95b3-4a4c2b2286eb"
+   condition:
+      uint16(0) == 0x5a4d
+      and filename == "csrss.exe"
+      and (filesize > 50KB)
 }
 
 rule Suspicious_Size_iexplore_exe {
-    meta:
-        description = "Detects uncommon file size of iexplore.exe"
-        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+   meta:
+      description = "Detects uncommon file size of iexplore.exe"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
-        score = 60
-        date = "2015-12-21"
-        noarchivescan = 1
-        id = "d097a599-0fad-574f-8281-46c910e8e54d"
-    condition:
-        uint16(0) == 0x5a4d
-        and filename == "iexplore.exe"
-        and not filepath contains "teamviewer"
-        and ( filesize < 75KB or filesize > 910KB )
+      score = 60
+      date = "2015-12-21"
+      noarchivescan = 1
+      id = "d097a599-0fad-574f-8281-46c910e8e54d"
+   condition:
+      uint16(0) == 0x5a4d
+      and filename == "iexplore.exe"
+      and not filepath contains "teamviewer"
+      and (filesize < 75KB or filesize > 910KB)
 }
 
 rule Suspicious_Size_firefox_exe {
-    meta:
-        description = "Detects uncommon file size of firefox.exe"
-        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-        author = "Florian Roth (Nextron Systems)"
-        score = 60
-        date = "2015-12-21"
-        modified = "2024-06-03"
-        noarchivescan = 1
-        id = "73c4b838-9277-5756-a35d-4a644be5ad5d"
-    condition:
-        uint16(0) == 0x5a4d
-        and filename == "firefox.exe"
-        and ( filesize < 265KB or filesize > 910KB )
-        and not filepath contains "Malwarebytes"
+   meta:
+      description = "Detects uncommon file size of firefox.exe"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+      author = "Florian Roth (Nextron Systems)"
+      score = 60
+      date = "2015-12-21"
+      modified = "2024-06-03"
+      noarchivescan = 1
+      id = "73c4b838-9277-5756-a35d-4a644be5ad5d"
+   condition:
+      uint16(0) == 0x5a4d
+      and filename == "firefox.exe"
+      and (filesize < 265KB or filesize > 910KB)
+      and not filepath contains "Malwarebytes"
 }
 
 rule Suspicious_Size_java_exe {
-    meta:
-        description = "Detects uncommon file size of java.exe"
-        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+   meta:
+      description = "Detects uncommon file size of java.exe"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
-        score = 60
-        date = "2015-12-21"
-        noarchivescan = 1
-        id = "b6dc297b-8388-5e39-ba77-c027cdea7afa"
-    condition:
-        uint16(0) == 0x5a4d
-        and filename == "java.exe"
-        and ( filesize < 30KB or filesize > 900KB )
+      score = 60
+      date = "2015-12-21"
+      noarchivescan = 1
+      id = "b6dc297b-8388-5e39-ba77-c027cdea7afa"
+   condition:
+      uint16(0) == 0x5a4d
+      and filename == "java.exe"
+      and (filesize < 30KB or filesize > 900KB)
 }
 
 rule Suspicious_Size_lsass_exe {
-    meta:
-        description = "Detects uncommon file size of lsass.exe"
-        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+   meta:
+      description = "Detects uncommon file size of lsass.exe"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
-        score = 60
-        date = "2015-12-21"
-        noarchivescan = 1
-        id = "005661c7-7576-5c13-9534-b49c12b2faad"
-    condition:
-        uint16(0) == 0x5a4d
-        and filename == "lsass.exe"
-        and ( filesize < 10KB or filesize > 100KB )
+      score = 60
+      date = "2015-12-21"
+      noarchivescan = 1
+      id = "005661c7-7576-5c13-9534-b49c12b2faad"
+   condition:
+      uint16(0) == 0x5a4d
+      and filename == "lsass.exe"
+      and (filesize < 10KB or filesize > 100KB)
 }
 
 rule Suspicious_Size_svchost_exe {
-    meta:
-        description = "Detects uncommon file size of svchost.exe"
-        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+   meta:
+      description = "Detects uncommon file size of svchost.exe"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
-        score = 60
-        date = "2015-12-21"
-        noarchivescan = 1
-        id = "31a8d00e-ebfc-5001-9c58-d3a2580f16b3"
-    condition:
-        uint16(0) == 0x5a4d
-        and filename == "svchost.exe"
-        and ( filesize < 14KB or filesize > 100KB )
+      score = 60
+      date = "2015-12-21"
+      noarchivescan = 1
+      id = "31a8d00e-ebfc-5001-9c58-d3a2580f16b3"
+   condition:
+      uint16(0) == 0x5a4d
+      and filename == "svchost.exe"
+      and (filesize < 14KB or filesize > 100KB)
 }
 
 rule Suspicious_Size_winlogon_exe {
-    meta:
-        description = "Detects uncommon file size of winlogon.exe"
-        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+   meta:
+      description = "Detects uncommon file size of winlogon.exe"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
-        score = 60
-        date = "2015-12-21"
-        noarchivescan = 1
-        id = "8665e8d0-3b5f-5227-8879-cdd614123439"
-    condition:
-        uint16(0) == 0x5a4d
-        and filename == "winlogon.exe"
-        and ( filesize < 279KB or filesize > 970KB )
+      score = 60
+      date = "2015-12-21"
+      noarchivescan = 1
+      id = "8665e8d0-3b5f-5227-8879-cdd614123439"
+   condition:
+      uint16(0) == 0x5a4d
+      and filename == "winlogon.exe"
+      and (filesize < 279KB or filesize > 970KB)
 }
 
 rule Suspicious_Size_igfxhk_exe {
-    meta:
-        description = "Detects uncommon file size of igfxhk.exe"
-        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+   meta:
+      description = "Detects uncommon file size of igfxhk.exe"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
-        score = 60
-        date = "2015-12-21"
-        modified = "2022-03-08"
-        noarchivescan = 1
-        id = "18cc167a-3e65-567f-adcf-d2d311520c1d"
-    condition:
-        uint16(0) == 0x5a4d
-        and filename == "igfxhk.exe"
-        and ( filesize < 200KB or filesize > 300KB )
+      score = 60
+      date = "2015-12-21"
+      modified = "2022-03-08"
+      noarchivescan = 1
+      id = "18cc167a-3e65-567f-adcf-d2d311520c1d"
+   condition:
+      uint16(0) == 0x5a4d
+      and filename == "igfxhk.exe"
+      and (filesize < 200KB or filesize > 300KB)
 }
 
 rule Suspicious_Size_servicehost_dll {
-    meta:
-        description = "Detects uncommon file size of servicehost.dll"
-        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+   meta:
+      description = "Detects uncommon file size of servicehost.dll"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
-        score = 60
-        date = "2015-12-23"
-        noarchivescan = 1
-        id = "ac71393c-a475-59e0-b22a-d5ee3d25084b"
-    condition:
-        uint16(0) == 0x5a4d
-        and filename == "servicehost.dll"
-        and filesize > 150KB
+      score = 60
+      date = "2015-12-23"
+      noarchivescan = 1
+      id = "ac71393c-a475-59e0-b22a-d5ee3d25084b"
+   condition:
+      uint16(0) == 0x5a4d
+      and filename == "servicehost.dll"
+      and filesize > 150KB
 }
 
 rule Suspicious_Size_rundll32_exe {
-    meta:
-        description = "Detects uncommon file size of rundll32.exe"
-        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+   meta:
+      description = "Detects uncommon file size of rundll32.exe"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
-        score = 60
-        date = "2015-12-23"
-        noarchivescan = 1
-        id = "5b9feae7-17d8-56e4-870a-ef865f2d09bf"
-    condition:
-        uint16(0) == 0x5a4d
-        and filename == "rundll32.exe"
-        and ( filesize < 30KB or filesize > 120KB )
+      score = 60
+      date = "2015-12-23"
+      noarchivescan = 1
+      id = "5b9feae7-17d8-56e4-870a-ef865f2d09bf"
+   condition:
+      uint16(0) == 0x5a4d
+      and filename == "rundll32.exe"
+      and (filesize < 30KB or filesize > 120KB)
 }
 
 rule Suspicious_Size_taskhost_exe {
-    meta:
-        description = "Detects uncommon file size of taskhost.exe"
-        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+   meta:
+      description = "Detects uncommon file size of taskhost.exe"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
-        score = 60
-        date = "2015-12-23"
-        modified = "2024-06-10"
-        noarchivescan = 1
-        id = "71b6c853-f490-5d5a-b481-909f6f3a8798"
-    condition:
-        uint16(0) == 0x5a4d
-        and filename == "taskhost.exe"
-        and not filepath contains "/lib/wine/fakedlls"
-        and ( filesize < 45KB or filesize > 200KB )
+      score = 60
+      date = "2015-12-23"
+      modified = "2024-06-10"
+      noarchivescan = 1
+      id = "71b6c853-f490-5d5a-b481-909f6f3a8798"
+   condition:
+      uint16(0) == 0x5a4d
+      and filename == "taskhost.exe"
+      and not filepath contains "/lib/wine/fakedlls"
+      and (filesize < 45KB or filesize > 200KB)
 }
 
 rule Suspicious_Size_spoolsv_exe {
-    meta:
-        description = "Detects uncommon file size of spoolsv.exe"
-        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+   meta:
+      description = "Detects uncommon file size of spoolsv.exe"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
-        score = 60
-        date = "2015-12-23"
-        modified = "2025-03-17"
-        noarchivescan = 1
-        id = "14bb3463-b99f-57e1-8cff-fe9a34771093"
-    condition:
-        uint16(0) == 0x5a4d
-        and filename == "spoolsv.exe"
-        and ( filesize < 50KB or filesize > 1500KB )
+      score = 60
+      date = "2015-12-23"
+      modified = "2025-03-17"
+      noarchivescan = 1
+      id = "14bb3463-b99f-57e1-8cff-fe9a34771093"
+   condition:
+      uint16(0) == 0x5a4d
+      and filename == "spoolsv.exe"
+      and (filesize < 50KB or filesize > 1500KB)
 }
 
 rule Suspicious_Size_smss_exe {
-    meta:
-        description = "Detects uncommon file size of smss.exe"
-        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+   meta:
+      description = "Detects uncommon file size of smss.exe"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
-        score = 60
-        date = "2015-12-23"
-        noarchivescan = 1
-        id = "7bdc8953-9240-5d22-b2a6-fe95fbc101c2"
-    condition:
-        uint16(0) == 0x5a4d
-        and filename == "smss.exe"
-        and ( filesize < 40KB or filesize > 5000KB )
+      score = 60
+      date = "2015-12-23"
+      noarchivescan = 1
+      id = "7bdc8953-9240-5d22-b2a6-fe95fbc101c2"
+   condition:
+      uint16(0) == 0x5a4d
+      and filename == "smss.exe"
+      and (filesize < 40KB or filesize > 5000KB)
 }
 
 rule Suspicious_Size_wininit_exe {
-    meta:
-        description = "Detects uncommon file size of wininit.exe"
-        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+   meta:
+      description = "Detects uncommon file size of wininit.exe"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
-        score = 60
-        date = "2015-12-23"
-        noarchivescan = 1
-        id = "7b58f497-f214-5bf3-8a5c-8edb52749d09"
-    condition:
-        uint16(0) == 0x5a4d
-        and filename == "wininit.exe"
-        and ( filesize < 90KB or filesize > 800KB )
+      score = 60
+      date = "2015-12-23"
+      noarchivescan = 1
+      id = "7b58f497-f214-5bf3-8a5c-8edb52749d09"
+      modified = "2025-08-13"
+   condition:
+      uint16(0) == 0x5a4d
+      and filename == "wininit.exe"
+      and (filesize < 50KB or filesize > 1MB)
 }
 
 rule Suspicious_AutoIt_by_Microsoft {
@@ -489,11 +490,11 @@ rule SUSP_Putty_Unnormal_Size {
       and filesize != 774200
       and filesize != 854072
       and filesize != 665144
-      and filesize != 640000 /* putty provided by Safenet https://thalesdocs.com/gphsm/luna/7.1/docs/network/Content/install/sa_hw_install/hardware_installation_lunasa.htm */
-      and filesize != 650720 /* Citrix XenCenter */
-      and filesize != 662808 /* Citrix XenCenter */
-      and filesize != 651256 /* Citrix XenCenter */
-      and filesize != 664432 /* Citrix XenCenter */
+      and filesize != 640000  /* putty provided by Safenet https://thalesdocs.com/gphsm/luna/7.1/docs/network/Content/install/sa_hw_install/hardware_installation_lunasa.htm */
+      and filesize != 650720  /* Citrix XenCenter */
+      and filesize != 662808  /* Citrix XenCenter */
+      and filesize != 651256  /* Citrix XenCenter */
+      and filesize != 664432  /* Citrix XenCenter */
 }
 
 rule SUSP_RTF_Header_Anomaly {
@@ -506,8 +507,8 @@ rule SUSP_RTF_Header_Anomaly {
       score = 50
       id = "fb362640-9a45-5ee5-8749-3980e0549932"
    condition:
-      uint32(0) == 0x74725c7b and /* {\rt */
-      not uint8(4) == 0x66 /* not f */
+      uint32(0) == 0x74725c7b and  /* {\rt */
+      not uint8(4) == 0x66  /* not f */
 }
 
 rule WEBSHELL_ASPX_ProxyShell_Aug21_1 {
@@ -518,6 +519,6 @@ rule WEBSHELL_ASPX_ProxyShell_Aug21_1 {
       date = "2021-08-13"
       id = "8f01cbda-b1cf-5556-9f6a-e709df6dadb2"
    condition:
-      uint32(0) == 0x4e444221 /* PST header: !BDN */
+      uint32(0) == 0x4e444221  /* PST header: !BDN */
       and extension == ".aspx"
 }
