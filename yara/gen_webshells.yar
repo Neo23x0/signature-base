@@ -2042,8 +2042,8 @@ rule WEBSHELL_PHP_Dynamic_Big
         id = "a5caab93-7b94-59d7-bbca-f9863e81b9e5"
     strings:
         //strings from private rule capa_bin_files
-        $dex1 = { 64 65 78 0a 30 }
-        $dex2 = { 64 65 79 0a 30 }
+        $dex1 = "dex\n0"
+        $dex2 = "dey\n0"
         $pack  = { 50 41 43 4b 00 00 00 02 00 }
 
         //strings from private rule capa_php_new_long
@@ -2639,8 +2639,8 @@ rule WEBSHELL_PHP_By_String_Known_Webshell
         $php_new3 = "<script language=\"php" nocase wide ascii
 
         //strings from private rule capa_bin_files
-        $dex1 = { 64 65 78 0a 30 }
-        $dex2 = { 64 65 79 0a 30 }
+        $dex1 = "dex\n0"
+        $dex2 = "dey\n0"
         $pack  = { 50 41 43 4b 00 00 00 02 00 }
 
     condition:
@@ -4295,8 +4295,8 @@ rule WEBSHELL_ASP_Generic_Tiny
         $asp_text2 = ".Text" wide ascii
 
         //strings from private rule capa_bin_files
-        $dex1 = { 64 65 78 0a 30 }
-        $dex2 = { 64 65 79 0a 30 }
+        $dex1 = "dex\n0"
+        $dex2 = "dey\n0"
         $pack  = { 50 41 43 4b 00 00 00 02 00 }
 
         //strings from private rule capa_asp_payload
@@ -4555,8 +4555,8 @@ rule WEBSHELL_ASP_Generic : FILE {
 
 
         //strings from private rule capa_bin_files
-        $dex1 = { 64 65 78 0a 30 }
-        $dex2 = { 64 65 79 0a 30 }
+        $dex1 = "dex\n0"
+        $dex2 = "dey\n0"
         $pack  = { 50 41 43 4b 00 00 00 02 00 }
 
         //strings from private rule capa_asp_input
@@ -5816,8 +5816,8 @@ rule WEBSHELL_JSP_Generic
         $fp1 = "command = \"cmd.exe /c set\";"
 
         //strings from private rule capa_bin_files
-        $dex1 = { 64 65 78 0a 30 }
-        $dex2 = { 64 65 79 0a 30 }
+        $dex1 = "dex\n0"
+        $dex2 = "dey\n0"
         $pack  = { 50 41 43 4b 00 00 00 02 00 }
 
         //strings from private rule capa_jsp_safe
@@ -5933,8 +5933,8 @@ rule WEBSHELL_JSP_Generic_Base64
         $cjsp_long7 = "< %" ascii wide
 
         //strings from private rule capa_bin_files
-        $dex1 = { 64 65 78 0a 30 }
-        $dex2 = { 64 65 79 0a 30 }
+        $dex1 = "dex\n0"
+        $dex2 = "dey\n0"
         $pack  = { 50 41 43 4b 00 00 00 02 00 }
 
     condition:
@@ -6318,8 +6318,8 @@ rule WEBSHELL_JSP_By_String
         $cjsp_long7 = "< %" ascii wide
 
         //strings from private rule capa_bin_files
-        $dex1 = { 64 65 78 0a 30 }
-        $dex2 = { 64 65 79 0a 30 }
+        $dex1 = "dex\n0"
+        $dex2 = "dey\n0"
         $pack  = { 50 41 43 4b 00 00 00 02 00 }
 
     condition:
