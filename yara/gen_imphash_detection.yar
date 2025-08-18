@@ -300,7 +300,7 @@ rule SUSP_Imphash_Mar23_3 {
         license = "Detection Rule License 1.1 https://github.com/SigmaHQ/Detection-Rule-License"
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2023-03-23"
-        modified = "2023-07-24"
+        modified = "2025-08-15"
         reference = "Internal Research"
         score = 45
         hash = "b5296cf0eb22fba6e2f68d0c9de9ef7845f330f7c611a0d60007aa87e270c62a"
@@ -319,8 +319,8 @@ rule SUSP_Imphash_Mar23_3 {
             // no size limit as some samples are 20MB+ and the hash is calculated only on the header
             //pe.imphash() == "87bed5a7cba00c7e1f4015f1bdae2183" or // UPX imphash
             //pe.imphash() == "09d0478591d4f788cb3e5ea416c25237" or // PECompact imphash
+            // pe.imphash() == "6ed4f5f04d62b18d96b26d6db7c18840" or // too many fp by now
             pe.imphash() == "afcdf79be1557326c854b6e20cb900a7" or
-            pe.imphash() == "6ed4f5f04d62b18d96b26d6db7c18840" or
             pe.imphash() == "fc6683d30d9f25244a50fd5357825e79" or
             pe.imphash() == "2c5f2513605e48f2d8ea5440a870cb9e" or
             pe.imphash() == "0b5552dccd9d0a834cea55c0c8fc05be"
