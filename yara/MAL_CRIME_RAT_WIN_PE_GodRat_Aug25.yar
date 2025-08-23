@@ -1,7 +1,7 @@
 import "pe"
 import "hash"
 
-rule MAL_CRIME_RAT_WIN_PE_GodRat_Aug25: GodRAT {
+rule MAL_CRIME_RAT_WIN_PE_GodRat_Aug23: GodRAT {
     meta:
         description = "Detects GodRAT malware targeting Windows systems"
         author      = "Arda Buyukkaya"
