@@ -10,6 +10,7 @@ rule MAL_CRIME_RAT_WIN_PE_GodRat_Aug25: GodRAT {
         reference   = "https://securelist.com/godrat/117119/"
         tags        = "RAT, Windows, GodRAT, Gh0st RAT, GETGOD"
         victims     = "Financial services"
+        sha256      = "154e800ed1719dbdcb188c00d5822444717c2a89017f2d12b8511eeeda0c2f41"
     
     strings:
         // WinRT version string
@@ -81,7 +82,8 @@ rule MAL_CRIME_RAT_WIN_PE_GodRat_Aug25: GodRAT {
                 ($cmp_len_770 or $cmp_len_76C)
             )
             or 
-            // Condition 3: Specific import hash
+            // Condition 3: Specific import hash for AES Encrypted version
+            // sha256: 48d0d162bd408f32f8909d08b8e60a21b49db02380a13d366802d22d4250c4e7
             pe.imphash() == "ee5ea868d8233000216e7b29bc8cb4e2"
         )
 }
