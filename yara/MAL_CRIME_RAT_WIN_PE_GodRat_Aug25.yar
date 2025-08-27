@@ -49,18 +49,11 @@ rule MAL_CRIME_RAT_WIN_PE_GodRat_Aug23: GodRAT {
         pe.is_pe and 
         filesize <= 10MB and
         (
-            // Condition 1: WinRT string with specific PE hash or resource section
+            // Condition 1: WinRT string with specific PE imphash
             (
                 $winrt_txt and 
                 (
-                    pe.imphash() == "0f4b0270c84616ce594b6a84c47a7717" or
-                    (
-                        pe.section_index(".rsrc") >= 0 and
-                        hash.md5(
-                            pe.sections[pe.section_index(".rsrc")].raw_data_offset,
-                            pe.sections[pe.section_index(".rsrc")].raw_data_size
-                        ) == "9dbf49b0b700fc936362d388e27689f3"
-                    )
+                    pe.imphash() == "0f4b0270c84616ce594b6a84c47a7717"
                 )
             )
             or 
