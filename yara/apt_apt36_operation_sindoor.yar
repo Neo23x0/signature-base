@@ -1,3 +1,5 @@
+import "pe"
+
 rule SUSP_LNX_Sindoor_ELF_Obfuscation_Aug25 {
    meta:
       description = "Detects ELF obfuscation technique used by Sindoor dropper related to APT 36"
@@ -50,7 +52,7 @@ rule MAL_Sindoor_Decryptor_Aug25 {
    condition:
       filesize < 100MB
       and (
-         uint16(0) == 0x5a4d // Windows
+         uint16(0) == 0x5a4d  // Windows
          or uint32be(0) == 0x7f454c46  // Linux
          or (uint32be(0) == 0xcafebabe and uint32be(4) < 0x20)  // Universal mach-O App with dont-match-java-class-file hack
          or uint32(0) == 0xfeedface  // 32-bit mach-O
@@ -76,7 +78,7 @@ rule MAL_Sindoor_Downloader_Aug25 {
    condition:
       filesize < 100MB
       and (
-         uint16(0) == 0x5a4d // Windows
+         uint16(0) == 0x5a4d  // Windows
          or uint32be(0) == 0x7f454c46  // Linux
          or (uint32be(0) == 0xcafebabe and uint32be(4) < 0x20)  // Universal mach-O App with dont-match-java-class-file hack
          or uint32(0) == 0xfeedface  // 32-bit mach-O
