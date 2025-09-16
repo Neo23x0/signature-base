@@ -25,8 +25,15 @@ rule MAL_JS_NPM_SupplyChain_Compromise_Sep25 {
       date = "2025-09-16"
       score = 80
    strings:
-      $s1 = "curl -d \"$CONTENTS\" https://webhook.site/" ascii
-      $s2 = " | base64 -w 0 | " ascii
+      $x1 = "if (plat === \"linux\") return \"https://github.com/trufflesecurity/trufflehog/releases"
+
+      $sa1 = "curl -d \"$CONTENTS\" https://webhook.site/" ascii
+      $sa2 = "curl -s -X POST -d \"$CONTENTS\" \"https://webhook.site/"
+
+      $sb1 = " | base64 -w 0 | " ascii
+      $sb2 = " | base64 -w0)"
    condition:
-      all of them
+      1 of ($sa*)
+      and 1 of ($sb*)
+      or 1 of ($x*)
 }
