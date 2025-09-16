@@ -33,7 +33,10 @@ rule MAL_JS_NPM_SupplyChain_Compromise_Sep25 {
       $sb1 = " | base64 -w 0 | " ascii
       $sb2 = " | base64 -w0)"
    condition:
-      1 of ($sa*)
-      and 1 of ($sb*)
-      or 1 of ($x*)
+      filesize < 20MB
+      and 1 of ($x*)
+      or (
+         1 of ($sa*)
+         and 1 of ($sb*)
+      )
 }
