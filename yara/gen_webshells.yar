@@ -1016,7 +1016,7 @@ rule WEBSHELL_PHP_OBFUSC
         reference = "Internal Research"
         score = 75
         date = "2021/01/12"
-        modified = "2025-07-09"
+        modified = "2025-09-22"
         hash = "eec9ac58a1e763f5ea0f7fa249f1fe752047fa60"
         hash = "181a71c99a4ae13ebd5c94bfc41f9ec534acf61cd33ef5bce5fb2a6f48b65bf4"
         hash = "76d4e67e13c21662c4b30aab701ce9cdecc8698696979e504c288f20de92aee7"
@@ -1040,6 +1040,8 @@ rule WEBSHELL_PHP_OBFUSC
         $gfp11 = "(eval (getenv \"EPROLOG\")))"
         $gfp12 = "ZmlsZV9nZXRfY29udGVudHMoJ2h0dHA6Ly9saWNlbnNlLm9wZW5jYXJ0LWFwaS5jb20vbGljZW5zZS5waHA/b3JkZXJ"
         $gfp13 = "assert(\\\""
+        $gfp14 = "PhutilUTF8TestCase"
+        $gfp15 = "chr(195).chr(128) => 'A',"  // 3d413ceb54e929d6af2e64ebb8df7ba2452a7aac876dddcf6336c3445e7bcc91, wordpress formatter.php
 
         //strings from private rule capa_php_old_safe
         $php_short = "<?" wide ascii
