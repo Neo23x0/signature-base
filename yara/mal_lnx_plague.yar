@@ -15,7 +15,7 @@ rule MAL_LNX_PLAGUE_BACKDOOR_Jul25 {
       $x2 = "updateklog"
       $x3 = "init_cred_structs"
 
-      $o1 = {
+      $xop1 = {
          48 8b [4] 00    // mov     rax, cs:_ent_ptr
          8b 00           // mov     eax, [rax]
          3d ca b2 e9 f1  // cmp     eax, 0F1E9B2CAh
@@ -24,10 +24,6 @@ rule MAL_LNX_PLAGUE_BACKDOOR_Jul25 {
    condition:
       uint32be(0) == 0x7f454c46
       and filesize < 1MB
-      and (
-         all of ($s*)
-         or 1 of ($x*)
-         or $o1
-      )
+      and 2 of them
 }
 
