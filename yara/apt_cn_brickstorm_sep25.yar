@@ -22,6 +22,7 @@ rule MAL_G_Backdoor_BRICKSTORM_2 {
       date = "2025-09-25"
       score = 75
       reference = "https://cloud.google.com/blog/topics/threat-intelligence/brickstorm-espionage-campaign"
+      md5 = "931eacd7e5250d29903924c31f41b7e5"
    strings:
       // $obf_func = /[a-z]{20}\/[a-z]{20}\/[a-z]{20}\/[a-z]{20}.go/
       $decr1 = { 0F B6 4C 04 ?? 0F B6 54 04 ?? 31 D1 88 4C 04 ?? 48 FF C0 [0-4] 48 83 F8 ?? 7C }
@@ -56,6 +57,7 @@ rule MAL_G_APT_Backdoor_BRICKSTORM_1 {
       date = "2025-09-25"
       score = 75
       reference = "https://cloud.google.com/blog/topics/threat-intelligence/brickstorm-espionage-campaign"
+      md5 = "4645f2f6800bc654d5fa812237896b00"
    strings:
       $ = "WRITE_LOGWednesday"
       $ = "/home/vsphere-ui/"
