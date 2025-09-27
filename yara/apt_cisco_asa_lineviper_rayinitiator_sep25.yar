@@ -5,6 +5,7 @@ rule MAL_Cisco_RayInitiator_Stage_1 {
       date = "2025-09-25"
       reference = "https://www.ncsc.gov.uk/static-assets/documents/malware-analysis-reports/RayInitiator-LINE-VIPER/ncsc-mar-rayinitiator-line-viper.pdf"
       score = 85
+      license = "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
    strings:
       $xc1 = {
          BB 00 00 40 00 43 81 FB 00 00 60 00 0F 87 AB 00 00 00
@@ -24,6 +25,7 @@ rule MAL_Cisco_RayInitiator_Stage_2 {
       date = "2025-09-25"
       reference = "https://www.ncsc.gov.uk/static-assets/documents/malware-analysis-reports/RayInitiator-LINE-VIPER/ncsc-mar-rayinitiator-line-viper.pdf"
       score = 85
+      license = "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
    strings:
       $xc1 = {
          49 89 E0 48 83 F8 30 0F 84 70 00 00 00 49 01 C0 49 8B
@@ -41,6 +43,7 @@ rule MAL_Cisco_RayInitiator_Stage_3 {
       date = "2025-09-25"
       reference = "https://www.ncsc.gov.uk/static-assets/documents/malware-analysis-reports/RayInitiator-LINE-VIPER/ncsc-mar-rayinitiator-line-viper.pdf"
       score = 85
+      license = "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
    strings:
       $xc1 = {
          48 81 EE 00 00 00 08 48 B8 63 6C 69 65 6E 74 2D 63 49
@@ -75,6 +78,7 @@ rule MAL_Cisco_LINE_VIPER_Shellcode_Deobfuscation_Routine {
       date = "2025-09-25"
       reference = "https://www.ncsc.gov.uk/static-assets/documents/malware-analysis-reports/RayInitiator-LINE-VIPER/ncsc-mar-rayinitiator-line-viper.pdf"
       score = 85
+      license = "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
    strings:
       $xc1 = {
          48 8B 7F 08 48 8D 5F 70 49 C7 C1 00 18 00 00 49 C7 C0
@@ -96,6 +100,7 @@ rule MAL_Cisco_LINE_VIPER_Shellcode_Initial_Execution {
       modified = "2025-09-27"
       reference = "https://www.ncsc.gov.uk/static-assets/documents/malware-analysis-reports/RayInitiator-LINE-VIPER/ncsc-mar-rayinitiator-line-viper.pdf"
       score = 85
+      license = "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
    strings:
       $xc1 = {
          48 8D B7 80 00 00 00 BA 00 20 00 00 [19] 48 C7 C6 00
@@ -118,6 +123,7 @@ rule MAL_Cisco_LINE_VIPER_RSA_Enc_Random_AES_Key_Gen {
       date = "2025-09-25"
       reference = "https://www.ncsc.gov.uk/static-assets/documents/malware-analysis-reports/RayInitiator-LINE-VIPER/ncsc-mar-rayinitiator-line-viper.pdf"
       score = 85
+      license = "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
    strings:
       $xc1 = {
          48 31 C0 49 89 06 49 89 46 08 49 83 C6 10 49 83 ED 10
@@ -147,6 +153,7 @@ rule MAL_Cisco_LINE_VIPER_AES_Enc_Tasking_Exfil {
       date = "2025-09-25"
       reference = "https://www.ncsc.gov.uk/static-assets/documents/malware-analysis-reports/RayInitiator-LINE-VIPER/ncsc-mar-rayinitiator-line-viper.pdf"
       score = 85
+      license = "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
    strings:
       $ = {
          48 31 C0 48 89 45 D8 49 89 FC 49 89 F5 49 89 D6 48 8B
@@ -176,6 +183,7 @@ rule MAL_Cisco_LINE_VIPER_ICMP_Tasking_Shellcode_Payloads {
       date = "2025-09-25"
       reference = "https://www.ncsc.gov.uk/static-assets/documents/malware-analysis-reports/RayInitiator-LINE-VIPER/ncsc-mar-rayinitiator-line-viper.pdf"
       score = 85
+      license = "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
    strings:
       $ = {
          55 53 41 54 41 55 41 56 41 57 48 89 E5 48 83 EC 60 48
