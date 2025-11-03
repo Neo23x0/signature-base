@@ -124,7 +124,7 @@ rule WEBSHELL_ASPX_ProxyShell_Aug15 {
       author = "Moritz Oettle"
       reference = "https://github.com/hvs-consulting/ioc_signatures/tree/main/Proxyshell"
       date = "2021-09-04"
-      modified = "2025-09-04"
+      modified = "2025-11-03"
       score = 75
       id = "b1e6c0f3-787f-59b8-8123-4045522047ca"
    strings:
@@ -140,9 +140,15 @@ rule WEBSHELL_ASPX_ProxyShell_Aug15 {
       $s1 = "AppcacheVer" ascii  /* HTTP Request Parameter */
       //$s2 = "clientCode" ascii /* HTTP Request Parameter */
       $s3 = "LaTkWfI64XeDAXZS6pU1KrsvLAcGH7AZOQXjrFkT816RnFYJQR" ascii
+
+      $fp1 = "<input type=\"submit\" Value=\"Refresh This Page\""
    condition:
-      filesize < 1KB and
-      (1 of ($s*) or 4 of ($g*))
+      filesize < 1KB
+      and (
+         1 of ($s*)
+         or 4 of ($g*)
+      )
+      and not 1 of ($fp*)
 }
 
 rule WEBSHELL_Mailbox_Export_PST_ProxyShell_Aug26 {
@@ -237,14 +243,14 @@ rule SUSP_ASPX_PossibleDropperArtifact_Aug21 {
       and not uint16(0) == 0x534D  // CAB
       and all of ($s*) and not 1 of ($fp*) and
       (
-         ((uint8(0) < 0x20 or uint8(0) > 0x7E  /*non-ASCII*/) and uint8(0) != 0x9  /* tab */and uint8(0) != 0x0D  /* carriage return */and uint8(0) != 0x0A  /* new line */and uint8(0) != 0xEF  /* BOM UTF-8 */)
-         or ((uint8(1) < 0x20 or uint8(1) > 0x7E  /*non-ASCII*/) and uint8(1) != 0x9  /* tab */and uint8(1) != 0x0D  /* carriage return */and uint8(1) != 0x0A  /* new line */and uint8(1) != 0xBB  /* BOM UTF-8 */)
-         or ((uint8(2) < 0x20 or uint8(2) > 0x7E  /*non-ASCII*/) and uint8(2) != 0x9  /* tab */and uint8(2) != 0x0D  /* carriage return */and uint8(2) != 0x0A  /* new line */and uint8(2) != 0xBF  /* BOM UTF-8 */)
-         or ((uint8(3) < 0x20 or uint8(3) > 0x7E  /*non-ASCII*/) and uint8(3) != 0x9  /* tab */and uint8(3) != 0x0D  /* carriage return */and uint8(3) != 0x0A  /* new line */)
-         or ((uint8(4) < 0x20 or uint8(4) > 0x7E  /*non-ASCII*/) and uint8(4) != 0x9  /* tab */and uint8(4) != 0x0D  /* carriage return */and uint8(4) != 0x0A  /* new line */)
-         or ((uint8(5) < 0x20 or uint8(5) > 0x7E  /*non-ASCII*/) and uint8(5) != 0x9  /* tab */and uint8(5) != 0x0D  /* carriage return */and uint8(5) != 0x0A  /* new line */)
-         or ((uint8(6) < 0x20 or uint8(6) > 0x7E  /*non-ASCII*/) and uint8(6) != 0x9  /* tab */and uint8(6) != 0x0D  /* carriage return */and uint8(6) != 0x0A  /* new line */)
-         or ((uint8(7) < 0x20 or uint8(7) > 0x7E  /*non-ASCII*/) and uint8(7) != 0x9  /* tab */and uint8(7) != 0x0D  /* carriage return */and uint8(7) != 0x0A  /* new line */)
+         ((uint8(0) < 0x20 or uint8(0) > 0x7E  /*non-ASCII*/ ) and uint8(0) != 0x9  /* tab */ and uint8(0) != 0x0D  /* carriage return */ and uint8(0) != 0x0A  /* new line */ and uint8(0) != 0xEF  /* BOM UTF-8 */ )
+         or ((uint8(1) < 0x20 or uint8(1) > 0x7E  /*non-ASCII*/ ) and uint8(1) != 0x9  /* tab */ and uint8(1) != 0x0D  /* carriage return */ and uint8(1) != 0x0A  /* new line */ and uint8(1) != 0xBB  /* BOM UTF-8 */ )
+         or ((uint8(2) < 0x20 or uint8(2) > 0x7E  /*non-ASCII*/ ) and uint8(2) != 0x9  /* tab */ and uint8(2) != 0x0D  /* carriage return */ and uint8(2) != 0x0A  /* new line */ and uint8(2) != 0xBF  /* BOM UTF-8 */ )
+         or ((uint8(3) < 0x20 or uint8(3) > 0x7E  /*non-ASCII*/ ) and uint8(3) != 0x9  /* tab */ and uint8(3) != 0x0D  /* carriage return */ and uint8(3) != 0x0A  /* new line */ )
+         or ((uint8(4) < 0x20 or uint8(4) > 0x7E  /*non-ASCII*/ ) and uint8(4) != 0x9  /* tab */ and uint8(4) != 0x0D  /* carriage return */ and uint8(4) != 0x0A  /* new line */ )
+         or ((uint8(5) < 0x20 or uint8(5) > 0x7E  /*non-ASCII*/ ) and uint8(5) != 0x9  /* tab */ and uint8(5) != 0x0D  /* carriage return */ and uint8(5) != 0x0A  /* new line */ )
+         or ((uint8(6) < 0x20 or uint8(6) > 0x7E  /*non-ASCII*/ ) and uint8(6) != 0x9  /* tab */ and uint8(6) != 0x0D  /* carriage return */ and uint8(6) != 0x0A  /* new line */ )
+         or ((uint8(7) < 0x20 or uint8(7) > 0x7E  /*non-ASCII*/ ) and uint8(7) != 0x9  /* tab */ and uint8(7) != 0x0D  /* carriage return */ and uint8(7) != 0x0A  /* new line */ )
       )
 }
 
