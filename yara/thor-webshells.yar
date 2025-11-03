@@ -9933,6 +9933,7 @@ rule WEBSHELL_ASPX_Mar21_1 {
       author = "Florian Roth (Nextron Systems)"
       reference = "Internal Research"
       date = "2021-03-12"
+      modified = "2025-11-03"
       hash1 = "10b6e82125a2ddf3cc31a238e0d0c71a64f902e0d77171766713affede03174d"
       hash2 = "170bee832df176aac0a3c6c7d5aa3fee413b4572030a24c994a97e70f6648ffc"
       hash3 = "31c4d1fc81c052e269866deff324dffb215e7d481a47a2b6357a572a3e685d90"
@@ -9945,7 +9946,7 @@ rule WEBSHELL_ASPX_Mar21_1 {
       hash10 = "d40b16307d6434c3281374c0e1bbc0f6db388883e7f6266c3c81de0694266882"
       id = "52884135-6b86-5e3e-a866-36a812d5a9af"
    strings:
-      $s1 = ".StartInfo.FileName = 'cmd.exe';" ascii fullword
+      $s1 = ".StartInfo.FileName = 'cmd.exe';" ascii
       $s2 = "<xsl:template match=\"\"/root\"\">" ascii fullword
       $s3 = "<?xml version=\"\"1.0\"\"?><root>test</root>\";" ascii fullword
    condition:
