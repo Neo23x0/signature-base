@@ -45,9 +45,7 @@ rule EXPL_RCE_React_Server_CVE_2025_55182_POC_Dec25 {
       score = 70
    strings:
       $s1 = "process.mainModule.require('child_process').execSync("
-      $s2 = "$1:__proto__:then"
-      $s3 = "resolved_model"
-      $s4 = "$1:constructor:constructor"
+      $s2 = "$1:constructor:constructor"
    condition:
       all of them
       // not XML
@@ -75,10 +73,23 @@ rule EXPL_RCE_React_Server_Next_JS_CVE_2025_66478_Errors_Dec25 {
       author = "Florian Roth"
       reference = "https://github.com/Malayke/Next.js-RSC-RCE-Scanner-CVE-2025-66478"
       date = "2025-12-05"
-      score = 55
+      score = 65
    strings:
       $s1 = "[Error: NEXT_REDIRECT]"
       $s2 = "digest: 'uid=0(root) gid=0(root)"
    condition:
       all of them
+}
+
+rule EXPL_SUSP_JS_POC_Dec25 {
+   meta:
+      description = "Detects RCE indicators related to the proof-of-concept code for the React Server Remote Code Execution Vulnerability (CVE-2025-55182) but could be used in other JavaScript based PoC code as well"
+      author = "Florian Roth"
+      reference = "https://github.com/msanft/CVE-2025-55182/blob/main/poc.py"
+      date = "2025-12-05"
+      score = 70
+   strings:
+      $xr1 = /process\.mainModule\.require\(["']child_process["']\)\.(exec|execSync|spawn|spawnSync)\(["'](whoami|powershell|\/bin\/sh|\/bin\/bash|wget|curl|cat \/etc\/passwd)/
+   condition:
+      1 of them
 }
