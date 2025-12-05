@@ -53,3 +53,18 @@ rule EXPL_RCE_React_Server_CVE_2025_55182_POC_Dec25 {
       // not XML
       and not uint16(0) == 0x3c3f
 }
+
+rule EXPL_RCE_React_Server_Next_JS_CVE_2025_66478_Tracebacks_Dec25 {
+   meta:
+      description = "Detects traceback indicators caused by the exploitation of the React Server Remote Code Execution Vulnerability (CVE-2025-55182) in Next.js applications (CVE-2025-66478). This can also be caused by vulnerability scanning."
+      author = "Florian Roth"
+      reference = "Internal Research"
+      date = "2025-12-05"
+      score = 55
+   strings:
+      $s1 = "Unexpected end of form"
+      $s2 = "/next-server/app-page.runtime.dev.js:2:457"
+      $s3 = "/app-page.runtime.dev.js:2:472"
+   condition:
+      all of them
+}
