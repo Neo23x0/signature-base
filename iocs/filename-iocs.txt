@@ -4534,18 +4534,18 @@ C:\\perflogs\\RunSchedulerTaskOnce\.ps1;85
 /dev/shm/poc;65
 /dev/shm/privesc;65
 /dev/shm/pwn;65
-/dev/shm/root.sh;65
-/dev/shm/shell.sh;65
-/dev/shm/shell.txt;65
-/tmp/cmd.txt;65
+/dev/shm/root\.sh;65
+/dev/shm/shell\.sh;65
+/dev/shm/shell\.txt;65
+/tmp/cmd\.txt;65
 /tmp/exploit;65
 /tmp/httpd;65
 /tmp/poc;65
 /tmp/privesc;65
 /tmp/pwn;65
-/tmp/root.sh;65
-/tmp/shell.php;65
-/tmp/shell.sh;65
-/tmp/shell.txt;65
+/tmp/root\.sh;65
+/tmp/shell\.php;65
+/tmp/shell\.sh;65
+/tmp/shell\.txt;65
 
 # End
