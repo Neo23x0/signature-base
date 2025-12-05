@@ -25,3 +25,23 @@ rule EXPL_WSUS_Exploitation_Indicators_Oct25 {
       or 1 of ($se*)
       or all of ($sa*)
 }
+
+rule HKTL_EXPL_WSUS_Exploitation_POC_Oct25 {
+   meta:
+      description = "Detects POC for the exploitation of the Windows Server Update Services (WSUS) Remote Code Execution Vulnerability (CVE-2025-59287)"
+      author = "Florian Roth"
+      reference = "https://github.com/jiansiting/CVE-2025-59287/"
+      date = "2025-10-26"
+      score = 75
+   strings:
+      $sa1 = "/SimpleAuthWebService/SimpleAuth.asmx"
+      $sa2 = "/ReportingWebService/ReportingWebService.asmx"
+      $sa3 = "/ClientWebService/Client.asmx"
+      $sa4 = "/ReportingWebService/ReportingWebService.asmx"
+
+      $sb1 = "xsi:type=\"SOAP-ENC:base64\">"
+   condition:
+      filesize < 20MB
+      and all of ($sa*)
+      and $sb1
+}
