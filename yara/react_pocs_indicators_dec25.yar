@@ -1,0 +1,55 @@
+rule EXPL_React_Server_CVE_2025_55182_POC_Dec25 {
+   meta:
+      description = "Detects in-memory webshell indicators related to the proof-of-concept code for the React Server Remote Code Execution Vulnerability (CVE-2025-55182)"
+      author = "Florian Roth"
+      reference = "https://x.com/pyn3rd/status/1996840827897954542/photo/1"
+      date = "2025-12-05"
+      score = 70
+   strings:
+      $xs1 = "{const cmd=p.query.cmd;if(!cmd)(s.writeHead(400);"
+
+      $s1 = ";if(p.pathname=="
+      $s2 = ".writeHead(400);"
+      $s3 = ".writeHead(200,{'Content-Type':"
+      $s4 = ".execSync("
+      $s5 = ",stdio:'pipe'})"
+   condition:
+      1 of ($x*)
+      or all of ($s*)
+}
+
+rule SUSP_WEBSHELL_LOG_Signatures_Dec25 {
+   meta:
+      description = "Detects indicators related simple webshells that use the same exec/cmd pattern"
+      author = "Florian Roth"
+      reference = "https://x.com/pyn3rd/status/1996840827897954542/photo/1"
+      date = "2025-12-05"
+      score = 60
+   strings:
+      $xa1 = "/exec?cmd=ls"
+      $xa2 = "/exec?cmd=whoami"
+      $xa3 = "/exec?cmd=id"
+      $xa4 = "/exec?cmd=uname%20-a"
+   condition:
+      1 of them
+      // not XML
+      and not uint16(0) == 0x3c3f
+}
+
+rule EXPL_RCE_React_Server_CVE_2025_55182_POC_Dec25 {
+   meta:
+      description = "Detects RCE indicators related to the proof-of-concept code for the React Server Remote Code Execution Vulnerability (CVE-2025-55182)"
+      author = "Florian Roth"
+      reference = "https://www.youtube.com/watch?v=MmdwakT-Ve8"
+      date = "2025-12-05"
+      score = 70
+   strings:
+      $s1 = "process.mainModule.require('child_process').execSync("
+      $s2 = "$1:__proto__:then"
+      $s3 = "resolved_model"
+      $s4 = "$1:constructor:constructor"
+   condition:
+      all of them
+      // not XML
+      and not uint16(0) == 0x3c3f
+}
