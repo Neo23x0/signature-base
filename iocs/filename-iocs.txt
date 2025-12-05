@@ -4528,7 +4528,7 @@ C:\\perflogs\\RunSchedulerTaskOnce\.ps1;85
 \\LAYOUTS\\debug_dev\.js;85
 \\TEMPLATE\\LAYOUTS\\1\.css;85
 
-# Suspicious filename patterns often used for malware in Linux /tmp and /dev/shm directories
+# Suspicious filename patterns often used for exploit POC code in Linux /tmp and /dev/shm directories
 /dev/shm/cmd;65
 /dev/shm/exploit;65
 /dev/shm/poc;65
