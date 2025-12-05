@@ -68,3 +68,17 @@ rule EXPL_RCE_React_Server_Next_JS_CVE_2025_66478_Tracebacks_Dec25 {
    condition:
       all of them
 }
+
+rule EXPL_RCE_React_Server_Next_JS_CVE_2025_66478_Errors_Dec25 {
+   meta:
+      description = "Detects error messages caused by the exploitation of the React Server Remote Code Execution Vulnerability (CVE-2025-55182) in Next.js applications (CVE-2025-66478). This can also be caused by vulnerability scanning."
+      author = "Florian Roth"
+      reference = "https://github.com/Malayke/Next.js-RSC-RCE-Scanner-CVE-2025-66478"
+      date = "2025-12-05"
+      score = 55
+   strings:
+      $s1 = "[Error: NEXT_REDIRECT]"
+      $s2 = "digest: 'uid=0(root) gid=0(root)"
+   condition:
+      all of them
+}
