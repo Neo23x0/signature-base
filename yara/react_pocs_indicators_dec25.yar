@@ -87,9 +87,28 @@ rule EXPL_SUSP_JS_POC_Dec25 {
       author = "Florian Roth"
       reference = "https://github.com/msanft/CVE-2025-55182/blob/main/poc.py"
       date = "2025-12-05"
+      modified = "2025-12-06"
       score = 70
    strings:
       $xr1 = /process\.mainModule\.require\(["']child_process["']\).{5,40}\(["'](whoami|powershell|\/bin\/sh|\/bin\/bash|wget|curl|cat \/etc\/passwd|uname -a)/
    condition:
       1 of them
+}
+
+rule EXPL_SUSP_JS_POC_RSC_Detector_Payloads_Dec25 {
+   meta:
+      description = "Detects RCE indicators related to the proof-of-concept code for the React Server Remote Code Execution Vulnerability (CVE-2025-55182) as used in the RSC Detector browser extension but could be used in other JavaScript based PoC code as well"
+      author = "Florian Roth"
+      reference = "https://github.com/mrknow001/RSC_Detector"
+      date = "2025-12-06"
+      score = 70
+   strings:
+      $s1 = "process.mainModule.require('child_process').execSync("
+      $s2 = ").toString('base64');"
+
+      // harmless test cases - we only want to match real command execution attempts
+      $f1 = "echo vulnerability_test"
+   condition:
+      all of ($s*)
+      and not 1 of ($f*)
 }
