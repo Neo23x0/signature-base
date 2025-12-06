@@ -89,7 +89,7 @@ rule EXPL_SUSP_JS_POC_Dec25 {
       date = "2025-12-05"
       score = 70
    strings:
-      $xr1 = /process\.mainModule\.require\(["']child_process["']\)\.(exec|execSync|spawn|spawnSync)\(["'](whoami|powershell|\/bin\/sh|\/bin\/bash|wget|curl|cat \/etc\/passwd)/
+      $xr1 = /process\.mainModule\.require\(["']child_process["']\).{5,40}\(["'](whoami|powershell|\/bin\/sh|\/bin\/bash|wget|curl|cat \/etc\/passwd|uname -a)/
    condition:
       1 of them
 }
