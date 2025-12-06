@@ -90,7 +90,7 @@ rule EXPL_SUSP_JS_POC_Dec25 {
       modified = "2025-12-06"
       score = 70
    strings:
-      $xr1 = /process\.mainModule\.require\(["']child_process["']\).{5,40}\(["'](whoami|powershell|\/bin\/sh|\/bin\/bash|wget|curl|cat \/etc\/passwd|uname -a)/
+      $xr1 = /process\.mainModule\.require\(["']child_process["']\).{5,40}\(["'](whoami|powershell|\/bin\/sh|\/bin\/bash|wget|curl|cat \/etc\/passwd|uname|id["'])/
    condition:
       1 of them
 }
@@ -111,4 +111,45 @@ rule EXPL_SUSP_JS_POC_RSC_Detector_Payloads_Dec25 {
    condition:
       all of ($s*)
       and not 1 of ($f*)
+}
+
+rule EXPL_SUSP_JS_Exploitation_Payloads_Dec25 {
+   meta:
+      description = "Detects RCE indicators related to the exploitation attempts of the React Server Remote Code Execution Vulnerability (CVE-2025-55182) as observed in the wild"
+      author = "Florian Roth"
+      reference = "https://www.greynoise.io/blog/cve-2025-55182-react2shell-opportunistic-exploitation-in-the-wild-what-the-greynoise-observation-grid-is-seeing-so-far"
+      date = "2025-12-06"
+      score = 70
+   strings:
+      $a1 = "process.mainModule.require('child_process')"
+
+      $x1 = ".execSync('powershell -enc SQBFAFgAIAA"
+
+      $sa1 = ".execSync('powershell"
+      $sa2 = ".execSync('curl "
+      $sa3 = ".execSync('wget "
+
+      $sb01 = " -e "
+      $sb02 = " -ec "
+      $sb03 = " -en "
+      $sb04 = " -enc "
+      $sb05 = " -enco "
+      $sb06 = " -encodedcommand "
+      $sb07 = " | bash"
+      $sb08 = " | sh"
+      $sb09 = "|bash"
+      $sb10 = "|sh"
+
+      $sc1 = ").DownloadString(" ascii wide base64
+      $sc2 = "IEX (New-Object " ascii wide base64
+   condition:
+      $a1
+      and (
+         1 of ($x*)
+         or (
+            1 of ($sa*)
+            and 1 of ($sb*)
+         )
+         or 1 of ($sc*)
+      )
 }
