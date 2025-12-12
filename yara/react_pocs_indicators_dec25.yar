@@ -93,6 +93,8 @@ rule EXPL_SUSP_JS_POC_Dec25 {
       $xr1 = /process\.mainModule\.require\(["']child_process["']\).{5,40}\(["'](whoami|powershell|\/bin\/sh|\/bin\/bash|wget|curl|cat \/etc\/passwd|uname|id["'])/
    condition:
       1 of them
+      // not XML
+      and not uint16(0) == 0x3c3f
 }
 
 rule EXPL_SUSP_JS_POC_RSC_Detector_Payloads_Dec25 {
