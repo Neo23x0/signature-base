@@ -1,5 +1,3 @@
-import "pe"
-
 rule CoralWave_LenovoSPKVOL_RemcosMicDrop {
     meta:
         description = "CoralWave loader masquerading as Lenovo audio DLL. Drops Remcos RAT."
@@ -22,10 +20,7 @@ rule CoralWave_LenovoSPKVOL_RemcosMicDrop {
         $audio_folder = "MicRecords" wide ascii
 
     condition:
-        filesize < 5MB and
-        pe.is_dll() and
-        pe.imports("KERNEL32.dll", "VirtualProtect") and
-        pe.imports("bcrypt.dll", "BCryptGenRandom") and
+        filesize < 5MB and uint16(0) == 0x5A4D and
         (
             2 of ($stub_*) or
             (2 of ($fake_*) and 1 of ($mutex, $log_file, $audio_folder))
