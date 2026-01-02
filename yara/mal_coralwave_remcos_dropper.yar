@@ -1,11 +1,12 @@
-rule CoralWave_LenovoSPKVOL_RemcosMicDrop {
+rule MAL_CoralWave_LenovoSPKVOL_RemcosMicDrop {
     meta:
         description = "CoralWave loader masquerading as Lenovo audio DLL. Drops Remcos RAT."
         author = "xstp"
         date = "2026-01-01"
         reference = "https://bazaar.abuse.ch/sample/050edadedd7947bc6418f7856a29df5b7b5550bf5eec7f5f37e9a7e1713036f6/"
         hash = "65302b435a5bc30e8f0215455679635ec50b5b1caba9e55f9258d17c7238be54"
-        
+        score = 85
+
     strings:
         $stub_1 = "BAyXuHpAGwdG8ebXF3GvZ32vO3ORY" ascii
         $stub_2 = "IK5HT1XPlj3LoFkKi3YC4QwYQs7s" ascii
