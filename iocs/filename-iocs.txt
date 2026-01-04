@@ -1388,7 +1388,7 @@ AppData\\Roaming\\btecache\.dll;90
 \\cgi-bin\\admin\\login\.jsp;75
 \\cgi-bin\\axis2-web\\index\.jsp;75
 \\cgi-bin\\index\.jsp;75
-\\cmd[0-9]{,3}\\cmd\.jsp;75
+\\cmd[0-9]{0,3}\\cmd\.jsp;75
 \\cmdcmd\\cmdcmd\.jsp;75
 \\cmdjsp\\cmdjsp\.jsp;75
 \\coleman\\index\.jsp;75
@@ -1699,8 +1699,8 @@ AppData\\Adobe\\qpbqrx\.dat;80
 \\eof\.exe;100
 
 # Suspicious EXE DLL in Non-Executable directory
-\\(images|img|js|fonts|css|swf|themes|log|error_docs)\\[^\\"]{,20}\.(exe|dll)$;60
-\\(wp-admin|wp-content|wp-includes)\\[^\\"]{,20}\.(exe|dll);60
+\\(images|img|js|fonts|css|swf|themes|log|error_docs)\\[^\\"]{0,20}\.(exe|dll)$;60
+\\(wp-admin|wp-content|wp-includes)\\[^\\"]{0,20}\.(exe|dll);60
 
 # APT29 Post-Election Acitivty https://goo.gl/4nyX1e
 \\RWP_16-038_Norris\.ZIP;80

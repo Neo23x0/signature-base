@@ -17,23 +17,21 @@ import "pe"
 
 /* WCE */
 
-rule WindowsCredentialEditor
-{
-    meta:
-       description = "Windows Credential Editor"
+rule WindowsCredentialEditor {
+   meta:
+      description = "Windows Credential Editor"
       threat_level = 10
       score = 90
-       id = "1542c6e4-36b2-5272-85d0-43226869b43e"
-    strings:
+      id = "1542c6e4-36b2-5272-85d0-43226869b43e"
+   strings:
       $a = "extract the TGT session key"
       $b = "Windows Credentials Editor"
-    condition:
-       all of them
+   condition:
+      all of them
 }
 
-rule HKTL_Amplia_Security_Tool
-{
-    meta:
+rule HKTL_Amplia_Security_Tool {
+   meta:
       description = "Detects Amplia Security Tool like Windows Credential Editor"
       score = 60
       nodeepdive = 1
@@ -41,13 +39,13 @@ rule HKTL_Amplia_Security_Tool
       date = "2013-01-01"
       modified = "2023-02-14"
       id = "4ad83f34-561d-53ce-9766-e21700354da7"
-    strings:
+   strings:
       $a = "Amplia Security"
       $c = "getlsasrvaddr.exe"
       $d = "Cannot get PID of LSASS.EXE"
       $e = "extract the TGT session key"
       $f = "PPWDUMP_DATA"
-    condition:
+   condition:
       uint16(0) == 0x5a4d and
       filesize < 3000KB and (
          2 of them
@@ -55,8 +53,7 @@ rule HKTL_Amplia_Security_Tool
 }
 /* pwdump/fgdump */
 
-rule PwDump
-{
+rule PwDump {
    meta:
       description = "PwDump 6 variant"
       author = "Marc Stroebel"
@@ -123,8 +120,7 @@ rule HackTool_Samples {
 
 /* Disclosed hack tool set */
 
-rule Fierce2
-{
+rule Fierce2 {
    meta:
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
@@ -138,8 +134,7 @@ rule Fierce2
       1 of them
 }
 
-rule Ncrack
-{
+rule Ncrack {
    meta:
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
@@ -153,8 +148,7 @@ rule Ncrack
       1 of them
 }
 
-rule SQLMap
-{
+rule SQLMap {
    meta:
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
@@ -285,6 +279,7 @@ rule SuperScan4 {
       all of them
 
 }
+
 rule PortRacer {
    meta:
       description = "Auto-generated rule on file PortRacer.exe"
@@ -509,7 +504,7 @@ rule CN_Packed_Scanner {
       all of them and filesize < 180KB and filesize > 70KB
 }
 
-rule Tiny_Network_Tool_Generic : FILE {
+rule Tiny_Network_Tool_Generic: FILE {
    meta:
       description = "Tiny tool with suspicious function imports. (Rule based on WinEggDrop Scanner samples)"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
@@ -539,9 +534,8 @@ rule Tiny_Network_Tool_Generic : FILE {
       $z2 = "USER32.DLL" fullword ascii
       $z3 = "FreeSid" fullword ascii
       $z4 = "ToAscii" fullword ascii
-
    condition:
-      uint16(0) == 0x5a4d and all of ($s*) and ( all of ($y*) or all of ($x*) or all of ($z*) ) and filesize < 15KB
+      uint16(0) == 0x5a4d and all of ($s*) and (all of ($y*) or all of ($x*) or all of ($z*)) and filesize < 15KB
 }
 
 rule Beastdoor_Backdoor {
@@ -1026,8 +1020,7 @@ rule BypassUac_EXE {
       all of them
 }
 
-rule APT_Proxy_Malware_Packed_dev
-{
+rule APT_Proxy_Malware_Packed_dev {
    meta:
       author = "FRoth"
       date = "2014-11-10"
@@ -1395,6 +1388,7 @@ rule Hacktools_CN_Panda_tasksvr {
    condition:
       all of them
 }
+
 rule Hacktools_CN_Burst_Clear {
    meta:
       description = "Disclosed hacktool set - file Clear.bat"
@@ -1972,7 +1966,7 @@ rule UnPack_rar_Folder_InjectT {
       $x1 = "Software\\Microsoft\\Internet Explorer\\WinEggDropShell" fullword ascii
       $x2 = "injectt.exe" fullword ascii
    condition:
-      ( 1 of ($x*) ) and ( 3 of ($s*) )
+      (1 of ($x*)) and (3 of ($s*))
 }
 
 rule Jc_WinEggDrop_Shell {
@@ -2924,36 +2918,34 @@ rule LinuxHacktool_eyes_pscan2_2 {
       2 of them
 }
 
-rule CN_Portscan : APT
-{
-    meta:
-        description = "CN Port Scanner"
-        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+rule CN_Portscan: APT {
+   meta:
+      description = "CN Port Scanner"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
-        date = "2013-11-29"
-        confidential = false
+      date = "2013-11-29"
+      confidential = false
       score = 70
-        id = "fb52a89a-2270-5170-9874-9278a0177454"
-    strings:
+      id = "fb52a89a-2270-5170-9874-9278a0177454"
+   strings:
       $s2 = "TCP 12.12.12.12"
-    condition:
-        uint16(0) == 0x5A4D and $s2
+   condition:
+      uint16(0) == 0x5A4D and $s2
 }
 
-rule WMI_vbs : APT
-{
-    meta:
-        description = "WMI Tool - APT"
-        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+rule WMI_vbs: APT {
+   meta:
+      description = "WMI Tool - APT"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
-        date = "2013-11-29"
-        confidential = false
+      date = "2013-11-29"
+      confidential = false
       score = 70
-        id = "b367306a-38d8-5f4d-8f09-2bf025831f0a"
-    strings:
+      id = "b367306a-38d8-5f4d-8f09-2bf025831f0a"
+   strings:
       $s3 = "WScript.Echo \"   $$\\      $$\\ $$\\      $$\\ $$$$$$\\ $$$$$$$$\\ $$\\   $$\\ $$$$$$$$\\  $$$$$$"
-    condition:
-        all of them
+   condition:
+      all of them
 }
 
 rule CN_Toolset__XScanLib_XScanLib_XScanLib {
@@ -3046,8 +3038,7 @@ rule CN_Toolset_sig_1433_135_sqlr {
       all of them
 }
 
-rule DarkComet_Keylogger_File
-{
+rule DarkComet_Keylogger_File {
    meta:
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
@@ -3103,7 +3094,7 @@ rule Netview_Hacktool {
       $s9 = "Enumerating Logged-on Users" fullword ascii
       $s10 = ": Specifies a domain to pull a list of hosts from" fullword ascii
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 500KB and 2 of them ) or 3 of them
+      (uint16(0) == 0x5a4d and filesize < 500KB and 2 of them) or 3 of them
 }
 
 rule Netview_Hacktool_Output {
@@ -3151,7 +3142,7 @@ rule PSAttack_EXE {
       $s3 = "PSAttack.PSAttackProcessing" fullword ascii
       $s4 = "PSAttack.Modules.key.txt" fullword wide
    condition:
-      ( uint16(0) == 0x5a4d and ( $x1 or 2 of ($s*) ) ) or 3 of them
+      (uint16(0) == 0x5a4d and ($x1 or 2 of ($s*))) or 3 of them
 }
 
 rule Powershell_Attack_Scripts {
@@ -3212,7 +3203,7 @@ rule Linux_Portscan_Shark_1 {
       $s17 = "*** buffer overflow detected ***: %s terminated" fullword ascii
       $s18 = "*** stack smashing detected ***: %s terminated" fullword ascii
    condition:
-      ( uint16(0) == 0x7362 and all of them )
+      (uint16(0) == 0x7362 and all of them)
 }
 
 rule Linux_Portscan_Shark_2 {
@@ -3259,7 +3250,7 @@ rule dnscat2_Hacktool {
       $s4 = "COMMAND_SHELL [request] :: request_id: 0x%04x :: name: %s" fullword ascii
       $s5 = "[Tunnel %d] connection to %s:%d closed by the server!" fullword ascii
    condition:
-      ( ( uint16(0) == 0x457f or uint16(0) == 0x5a4d ) and filesize < 400KB and ( 2 of ($s*) ) ) or ( all of them )
+      ((uint16(0) == 0x457f or uint16(0) == 0x5a4d) and filesize < 400KB and (2 of ($s*))) or (all of them)
 }
 
 rule WCE_in_memory {
@@ -3295,7 +3286,7 @@ rule pstgdump {
       $x5 = "Failed to impersonate user (ImpersonateLoggedOnUser failed): error %d" fullword ascii
       $x6 = "Unable to obtain handle to PStoreCreateInstance in pstorec.dll" fullword ascii
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 200KB and 1 of ($x*) ) or ( 3 of them )
+      (uint16(0) == 0x5a4d and filesize < 200KB and 1 of ($x*)) or (3 of them)
 }
 
 rule lsremora {
@@ -3319,7 +3310,7 @@ rule lsremora {
       $s2 = "x%s_history_%d:%d" fullword wide
       $s3 = "Using pipe %s" fullword ascii
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 200KB and 1 of ($x*) ) or ( 3 of them )
+      (uint16(0) == 0x5a4d and filesize < 200KB and 1 of ($x*)) or (3 of them)
 }
 
 rule servpw {
@@ -3340,7 +3331,7 @@ rule servpw {
       $s5 = "CreateRemoteThread failed: %d" fullword ascii
       $s6 = "Thread code: %d, path: %s" fullword ascii
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 200KB and 3 of them ) or ( all of them )
+      (uint16(0) == 0x5a4d and filesize < 200KB and 3 of them) or (all of them)
 }
 
 rule fgexec {
@@ -3358,7 +3349,7 @@ rule fgexec {
       $x3 = "fgexec CallNamedPipe failed" fullword ascii
       $x4 = "fizzgig and the mighty foofus.net team" fullword ascii
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 100KB and 1 of ($x*) ) or ( 3 of them )
+      (uint16(0) == 0x5a4d and filesize < 100KB and 1 of ($x*)) or (3 of them)
 }
 
 rule cachedump {
@@ -3380,7 +3371,7 @@ rule cachedump {
       $s5 = "Kill CacheDump service (shouldn't be used)" fullword ascii
       $s6 = "cacheDump [-v | -vv | -K]" fullword ascii
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 500KB and 1 of them ) or ( 3 of them )
+      (uint16(0) == 0x5a4d and filesize < 500KB and 1 of them) or (3 of them)
 }
 
 rule PwDump_B {
@@ -3402,7 +3393,7 @@ rule PwDump_B {
       $s2 = "lsremora.dll" fullword ascii
       $s3 = "servpw.exe" fullword ascii
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 400KB and 1 of ($x*) ) or ( 3 of them )
+      (uint16(0) == 0x5a4d and filesize < 400KB and 1 of ($x*)) or (3 of them)
 }
 
 /*
@@ -3460,7 +3451,6 @@ rule Fscan_Portscanner {
       filesize < 20KB and 3 of them
 }
 
-
 /*
    Yara Rule Set
    Author: Florian Roth
@@ -3489,7 +3479,7 @@ rule WPR_loader_EXE {
       $s7 = "VirtualProtect failed" fullword wide
       $s8 = "nSeDebugPrivilege" fullword wide
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 100KB and 3 of them )
+      (uint16(0) == 0x5a4d and filesize < 100KB and 3 of them)
 }
 
 rule WPR_loader_DLL {
@@ -3506,24 +3496,24 @@ rule WPR_loader_DLL {
       $x1 = "loader64.dll" fullword ascii
       $x2 = "loader.dll" fullword ascii
 
-      $s1 = "TUlDUk9TT0ZUX0FVVEhFTlRJQ0FUSU9OX1BBQ0tBR0VfVjFfMA==" fullword ascii /* base64 encoded string 'MICROSOFT_AUTHENTICATION_PACKAGE_V1_0' */
-      $s2 = "UmVtb3RlRGVza3RvcEhlbHBBc3Npc3RhbnRBY2NvdW50" fullword ascii /* base64 encoded string 'RemoteDesktopHelpAssistantAccount' */
-      $s3 = "U2FtSVJldHJpZXZlUHJpbWFyeUNyZWRlbnRpYWxz" fullword ascii /* base64 encoded string 'SamIRetrievePrimaryCredentials' */
-      $s4 = "VFM6SW50ZXJuZXRDb25uZWN0b3JQc3dk" fullword ascii /* base64 encoded string 'TS:InternetConnectorPswd' */
-      $s5 = "TCRVRUFjdG9yQWx0Q3JlZFByaXZhdGVLZXk=" fullword ascii /* base64 encoded string 'L$UEActorAltCredPrivateKey' */
-      $s6 = "YXNwbmV0X1dQX1BBU1NXT1JE" fullword ascii /* base64 encoded string 'aspnet_WP_PASSWORD' */
-      $s7 = "TCRBTk1fQ1JFREVOVElBTFM=" fullword ascii /* base64 encoded string 'L$ANM_CREDENTIALS' */
-      $s8 = "RGVmYXVsdFBhc3N3b3Jk" fullword ascii /* base64 encoded string 'DefaultPassword' */
+      $s1 = "TUlDUk9TT0ZUX0FVVEhFTlRJQ0FUSU9OX1BBQ0tBR0VfVjFfMA==" fullword ascii  /* base64 encoded string 'MICROSOFT_AUTHENTICATION_PACKAGE_V1_0' */
+      $s2 = "UmVtb3RlRGVza3RvcEhlbHBBc3Npc3RhbnRBY2NvdW50" fullword ascii  /* base64 encoded string 'RemoteDesktopHelpAssistantAccount' */
+      $s3 = "U2FtSVJldHJpZXZlUHJpbWFyeUNyZWRlbnRpYWxz" fullword ascii  /* base64 encoded string 'SamIRetrievePrimaryCredentials' */
+      $s4 = "VFM6SW50ZXJuZXRDb25uZWN0b3JQc3dk" fullword ascii  /* base64 encoded string 'TS:InternetConnectorPswd' */
+      $s5 = "TCRVRUFjdG9yQWx0Q3JlZFByaXZhdGVLZXk=" fullword ascii  /* base64 encoded string 'L$UEActorAltCredPrivateKey' */
+      $s6 = "YXNwbmV0X1dQX1BBU1NXT1JE" fullword ascii  /* base64 encoded string 'aspnet_WP_PASSWORD' */
+      $s7 = "TCRBTk1fQ1JFREVOVElBTFM=" fullword ascii  /* base64 encoded string 'L$ANM_CREDENTIALS' */
+      $s8 = "RGVmYXVsdFBhc3N3b3Jk" fullword ascii  /* base64 encoded string 'DefaultPassword' */
 
-      $op0 = { 48 8b cd e8 e0 e8 ff ff 48 89 07 48 85 c0 74 72 } /* Opcode */
-      $op1 = { e8 ba 23 00 00 33 c9 ff 15 3e 82 } /* Opcode */
-      $op2 = { 48 83 c4 28 e9 bc 55 ff ff 48 8d 0d 4d a7 00 00 } /* Opcode */
+      $op0 = { 48 8b cd e8 e0 e8 ff ff 48 89 07 48 85 c0 74 72 }  /* Opcode */
+      $op1 = { e8 ba 23 00 00 33 c9 ff 15 3e 82 }  /* Opcode */
+      $op2 = { 48 83 c4 28 e9 bc 55 ff ff 48 8d 0d 4d a7 00 00 }  /* Opcode */
    condition:
       uint16(0) == 0x5a4d and
       filesize < 400KB and
       (
-         ( 1 of ($x*) and 1 of ($s*) ) or
-         ( 1 of ($s*) and all of ($op*) )
+         (1 of ($x*) and 1 of ($s*)) or
+         (1 of ($s*) and all of ($op*))
       )
 }
 
@@ -3544,7 +3534,7 @@ rule WPR_Passscape_Loader {
       $s5 = "PasscapeLoader64" fullword wide
       $s6 = "ast64 {msg1GkjN7Sh8sg2Al7ker63f}" fullword wide
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 200KB and 2 of them )
+      (uint16(0) == 0x5a4d and filesize < 200KB and 2 of them)
 }
 
 rule WPR_Asterisk_Hook_Library {
@@ -3568,7 +3558,7 @@ rule WPR_Asterisk_Hook_Library {
       $s8 = "2004-2013 Passcape Software" fullword wide
       $s9 = "Global\\Passcape#6712%04X" fullword ascii
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 300KB and 3 of them )
+      (uint16(0) == 0x5a4d and filesize < 300KB and 3 of them)
 }
 
 rule WPR_WindowsPasswordRecovery_EXE {
@@ -3583,15 +3573,15 @@ rule WPR_WindowsPasswordRecovery_EXE {
    strings:
       $x1 = "UuPipe" fullword ascii
       $x2 = "dbadllgl" fullword ascii
-      $x3 = "UkVHSVNUUlkgTU9O" fullword ascii /* base64 encoded string 'REGISTRY MON' */
-      $x4 = "RklMRSBNT05JVE9SIC0gU1l" fullword ascii /* base64 encoded string 'FILE MONITOR - SY' */
+      $x3 = "UkVHSVNUUlkgTU9O" fullword ascii  /* base64 encoded string 'REGISTRY MON' */
+      $x4 = "RklMRSBNT05JVE9SIC0gU1l" fullword ascii  /* base64 encoded string 'FILE MONITOR - SY' */
 
       $s1 = "WPR.exe" fullword wide
       $s2 = "Windows Password Recovery" fullword wide
 
-      $op0 = { 5f df 27 17 89 } /* Opcode */
-      $op1 = { 5f 00 00 f2 e5 cb 97 } /* Opcode */
-      $op2 = { e8 ed 00 f0 cc e4 00 a0 17 } /* Opcode */
+      $op0 = { 5f df 27 17 89 }  /* Opcode */
+      $op1 = { 5f 00 00 f2 e5 cb 97 }  /* Opcode */
+      $op2 = { e8 ed 00 f0 cc e4 00 a0 17 }  /* Opcode */
    condition:
       uint16(0) == 0x5a4d and
       filesize < 20000KB and
@@ -3614,13 +3604,12 @@ rule WPR_WindowsPasswordRecovery_EXE_64 {
    strings:
       $s1 = "%B %d %Y  -  %H:%M:%S" fullword wide
 
-      $op0 = { 48 8d 8c 24 50 22 00 00 e8 bf eb ff ff 4c 8b c7 } /* Opcode */
-      $op1 = { ff 15 16 25 01 00 f7 d8 1b } /* Opcode */
-      $op2 = { e8 c2 26 00 00 83 20 00 83 c8 ff 48 8b 5c 24 30 } /* Opcode */
+      $op0 = { 48 8d 8c 24 50 22 00 00 e8 bf eb ff ff 4c 8b c7 }  /* Opcode */
+      $op1 = { ff 15 16 25 01 00 f7 d8 1b }  /* Opcode */
+      $op2 = { e8 c2 26 00 00 83 20 00 83 c8 ff 48 8b 5c 24 30 }  /* Opcode */
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 300KB and all of them )
+      (uint16(0) == 0x5a4d and filesize < 300KB and all of them)
 }
-
 
 /*
    Yara Rule Set
@@ -3645,10 +3634,10 @@ rule BeyondExec_RemoteAccess_Tool {
       $x2 = "\\\\.\\pipe\\beyondexec%d-stdin" fullword ascii
       $x3 = "Failed to create dispatch pipe. Do you have another instance running?" fullword ascii
 
-      $op1 = { 83 e9 04 72 0c 83 e0 03 03 c8 ff 24 85 80 6f 40 } /* Opcode */
-      $op2 = { 6a 40 33 c0 59 bf e0 d8 40 00 f3 ab 8d 0c 52 c1 } /* Opcode */
+      $op1 = { 83 e9 04 72 0c 83 e0 03 03 c8 ff 24 85 80 6f 40 }  /* Opcode */
+      $op2 = { 6a 40 33 c0 59 bf e0 d8 40 00 f3 ab 8d 0c 52 c1 }  /* Opcode */
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 200KB and ( 1 of ($x*) or all of ($op*) ) ) or ( 3 of them )
+      (uint16(0) == 0x5a4d and filesize < 200KB and (1 of ($x*) or all of ($op*))) or (3 of them)
 }
 
 rule Mimikatz_Gen_Strings {
@@ -3672,7 +3661,7 @@ rule Mimikatz_Gen_Strings {
       $s6 = "Injected =)" fullword wide
       $s7 = "** SAM ACCOUNT **" fullword wide
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 12000KB and 1 of them )
+      (uint16(0) == 0x5a4d and filesize < 12000KB and 1 of them)
 }
 
 /*
@@ -3705,7 +3694,7 @@ rule Disclosed_0day_POCs_lpe {
       $x6 = "\\payload" wide
       $x7 = "WindowsTrustedRTProxy.sys /grant:r administrators:RX" ascii
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 70KB and 1 of them )
+      (uint16(0) == 0x5a4d and filesize < 70KB and 1 of them)
 }
 
 rule Disclosed_0day_POCs_exploit {
@@ -3721,7 +3710,7 @@ rule Disclosed_0day_POCs_exploit {
       $x1 = "\\Release\\exploit.pdb" ascii
       $x2 = "\\favorites\\stolendata.txt" wide
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 200KB and 1 of them )
+      (uint16(0) == 0x5a4d and filesize < 200KB and 1 of them)
 }
 
 rule Disclosed_0day_POCs_InjectDll {
@@ -3741,7 +3730,7 @@ rule Disclosed_0day_POCs_InjectDll {
       $x4 = "Injecting DLL: %ls into PID: %d" fullword ascii
       $x5 = "Error adjusting privilege %d" fullword ascii
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 300KB and 1 of them )
+      (uint16(0) == 0x5a4d and filesize < 300KB and 1 of them)
 }
 
 rule Disclosed_0day_POCs_payload_MSI {
@@ -3759,7 +3748,7 @@ rule Disclosed_0day_POCs_payload_MSI {
       $s2 = "Target empty, so account name translation begins on the local system." fullword wide
       $s3 = "\\custact\\x86\\AICustAct.pdb" ascii
    condition:
-      ( uint16(0) == 0xcfd0 and filesize < 1000KB and all of them )
+      (uint16(0) == 0xcfd0 and filesize < 1000KB and all of them)
 }
 
 rule Disclosed_0day_POCs_injector {
@@ -3781,7 +3770,7 @@ rule Disclosed_0day_POCs_injector {
       $x7 = "Usage of the injector. " fullword ascii
       $x8 = "KO: cannot obtain the SeDebug privilege." fullword ascii
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 90KB and 1 of them ) or 3 of them
+      (uint16(0) == 0x5a4d and filesize < 90KB and 1 of them) or 3 of them
 }
 
 rule Disclosed_0day_POCs_lpe_2 {
@@ -3798,7 +3787,7 @@ rule Disclosed_0day_POCs_lpe_2 {
       $s2 = "D:\\gitpoc\\UAC\\src\\x64\\Release\\lpe.pdb" fullword ascii
       $s3 = "Folder Created: " fullword wide
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 700KB and 2 of them )
+      (uint16(0) == 0x5a4d and filesize < 700KB and 2 of them)
 }
 
 rule Disclosed_0day_POCs_shellcodegenerator {
@@ -3813,7 +3802,7 @@ rule Disclosed_0day_POCs_shellcodegenerator {
    strings:
       $x1 = "\\Release\\shellcodegenerator.pdb" ascii
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 40KB and all of them )
+      (uint16(0) == 0x5a4d and filesize < 40KB and all of them)
 }
 
 rule SecurityXploded_Producer_String {
@@ -3829,7 +3818,7 @@ rule SecurityXploded_Producer_String {
    strings:
       $x1 = "http://securityxploded.com" fullword ascii
    condition:
-      ( uint16(0) == 0x5a4d and all of them )
+      (uint16(0) == 0x5a4d and all of them)
 }
 
 /*
@@ -3856,9 +3845,8 @@ rule Kekeo_Hacktool {
       $x1 = "[ticket %u] session Key is NULL, maybe a TGT without enough rights when WCE dumped it." fullword wide
       $x2 = "ERROR kuhl_m_smb_time ; Invalid! Command: %02x - Status: %08x" fullword wide
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 2000KB and ( 1 of ($x*) ) )
+      (uint16(0) == 0x5a4d and filesize < 2000KB and (1 of ($x*)))
 }
-
 
 /*
    Yara Rule Set
@@ -3888,7 +3876,7 @@ rule AllTheThings {
       $x5 = "I am a basic COM Object" fullword wide
       $x6 = "I shouldn't really execute either." fullword wide
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 50KB and 1 of them )
+      (uint16(0) == 0x5a4d and filesize < 50KB and 1 of them)
 }
 
 rule Impacket_Keyword {
@@ -3907,7 +3895,7 @@ rule Impacket_Keyword {
       $s2 = "impacket.ntlm(" ascii
       $s3 = "impacket.nmb(" ascii
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 14000KB and 1 of them )
+      (uint16(0) == 0x5a4d and filesize < 14000KB and 1 of them)
 }
 
 /*
@@ -3935,8 +3923,8 @@ rule PasswordsPro {
       $s2 = "%s\\PasswordsPro.ini.Dictionaries(%d)" fullword ascii
       $s3 = "Passwords processed since attack start:" fullword ascii
    condition:
-      ( uint16(0) == 0x5a4d and
-        filesize < 2000KB and
+      (uint16(0) == 0x5a4d and
+         filesize < 2000KB and
          1 of them
       )
 }
@@ -3954,10 +3942,10 @@ rule PasswordPro_NTLM_DLL {
       $s1 = "NTLM.dll" fullword ascii
       $s2 = "Algorithm: NTLM" fullword ascii
    condition:
-      ( uint16(0) == 0x5a4d and
-        filesize < 20KB and
-        pe.exports("GetHash") and pe.exports("GetInfo") and
-        ( all of them )
+      (uint16(0) == 0x5a4d and
+         filesize < 20KB and
+         pe.exports("GetHash") and pe.exports("GetInfo") and
+         (all of them)
       )
 }
 
@@ -3984,9 +3972,9 @@ rule KeeThief_PS {
       $x1 = "$WMIProcess = Get-WmiObject win32_process -Filter \"ProcessID = $($KeePassProcess.ID)\"" fullword ascii
       $x2 = "if($KeePassProcess.FileVersion -match '^2\\.') {" fullword ascii
    condition:
-      ( uint16(0) == 0x7223 and
-        filesize < 1000KB and
-        ( 1 of ($x*) )
+      (uint16(0) == 0x7223 and
+         filesize < 1000KB and
+         (1 of ($x*))
       )
 }
 
@@ -4008,7 +3996,7 @@ rule KeeTheft_EXE {
       $x6 = "*** Interesting... there are multiple .NET runtimes loaded in KeePass" fullword wide
       $x7 = "GetKcpPasswordInfo" fullword ascii
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 200KB and 2 of them )
+      (uint16(0) == 0x5a4d and filesize < 200KB and 2 of them)
 }
 
 rule KeeTheft_Out_Shellcode {
@@ -4024,7 +4012,7 @@ rule KeeTheft_Out_Shellcode {
       $x1 = "Write-Host \"Shellcode length: 0x$(($ShellcodeLength + 1).ToString('X4'))\"" fullword ascii
       $x2 = "$TextSectionInfo = @($MapContents | Where-Object { $_ -match '\\.text\\W+CODE' })[0]" fullword ascii
    condition:
-      ( filesize < 2KB and 1 of them )
+      (filesize < 2KB and 1 of them)
 }
 
 /*
@@ -4057,7 +4045,7 @@ rule Sharpire {
       $s6 = "/admin/get.php" fullword wide
       $s7 = "[!] Error in stopping job: " fullword wide
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 100KB and ( 1 of ($x*) and 3 of them ) )
+      (uint16(0) == 0x5a4d and filesize < 100KB and (1 of ($x*) and 3 of them))
 }
 
 /*
@@ -4082,7 +4070,7 @@ rule Invoke_Metasploit {
       $s2 = "[*] Kicking off download cradle in a new process"
       $s3 = "Proxy.Credentials=[Net.CredentialCache]::DefaultCredentials;Invoke-Expression $client.downloadstring('''+$url+''');'"
    condition:
-      ( filesize < 20KB and 1 of them )
+      (filesize < 20KB and 1 of them)
 }
 
 rule PowerShell_Mal_HackTool_Gen {
@@ -4167,7 +4155,7 @@ rule SUSP_Imphash_PassRevealer_PY_EXE {
    strings:
       $fp1 = "Assmann Electronic GmbH" ascii wide
       $fp2 = "Oculus VR" ascii wide
-      $fp3 = "efm8load" ascii /* Corsair software */
+      $fp3 = "efm8load" ascii  /* Corsair software */
    condition:
       uint16(0) == 0x5a4d and filesize < 10000KB
       and pe.imphash() == "ed61beebc8d019dd9bec823e2d694afd"
@@ -4195,7 +4183,7 @@ rule MAL_Unknown_PWDumper_Apr18_3 {
       uint16(0) == 0x5a4d and filesize < 3000KB and all of them
 }
 
-rule ProcessInjector_Gen : HIGHVOL {
+rule ProcessInjector_Gen: HIGHVOL {
    meta:
       description = "Detects a process injection utility that can be used ofr good and bad purposes"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
@@ -4424,14 +4412,13 @@ rule HKTL_shellpop_netcat {
       hash1 = "98e3324f4c096bb1e5533114249a9e5c43c7913afa3070488b16d5b209e015ee"
       id = "cd55e912-b57b-5fce-98eb-5a0cd27a6e4d"
    strings:
-      $s1 = "if [ -e /tmp/f ]; then rm /tmp/f;"  ascii
+      $s1 = "if [ -e /tmp/f ]; then rm /tmp/f;" ascii
       $s2 = "fi;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc" ascii
       $s4 = "mknod /tmp/f p && nc" ascii
-      $s5 = "</tmp/f|/bin/bash 1>/tmp/f"  ascii
-    condition:
+      $s5 = "</tmp/f|/bin/bash 1>/tmp/f" ascii
+   condition:
       filesize < 2KB and 1 of them
 }
-
 
 rule HKTL_beRootexe {
    meta:
@@ -4446,9 +4433,9 @@ rule HKTL_beRootexe {
       $s2 = "beroot.modules" fullword ascii
       $s3 = "beRoot.exe.manifest" fullword ascii
    condition:
-      ( uint16(0) == 0x5a4d and
-        filesize < 18000KB and
-        1 of them)
+      (uint16(0) == 0x5a4d and
+         filesize < 18000KB and
+         1 of them)
 }
 
 rule HKTL_beRootexe_output {
@@ -4480,19 +4467,20 @@ rule HKTL_EmbeddedPDF {
       $s1 = "(This PDF document embeds file" fullword ascii
       $s2 = "/Names << /EmbeddedFiles << /Names" fullword ascii
       $s3 = "/Type /EmbeddedFile" fullword ascii
-
    condition:
       uint16(0) == 0x5025 and
       2 of ($s*) and $x1
 }
 
-rule HTKL_BlackBone_DriverInjector {
+rule HKTL_BlackBone_DriverInjector {
    meta:
       description = "Detects BlackBone Driver injector"
       author = "Florian Roth (Nextron Systems)"
       reference = "https://github.com/DarthTon/Blackbone"
       date = "2018-09-11"
+      modified = "2025-12-18"
       score = 60
+      old_rule_name = "HTKL_BlackBone_DriverInjector"
       hash1 = "8062a4284c719412270614458150cb4abbdf77b2fc35f770ce9c45d10ccb1f4d"
       hash2 = "2d2fc27200c22442ac03e2f454b6e1f90f2bbc17017f05b09f7824fac6beb14b"
       hash3 = "e45da157483232d9c9c72f44b13fca2a0d268393044db00104cc1afe184ca8d1"
@@ -4511,7 +4499,7 @@ rule HTKL_BlackBone_DriverInjector {
       $x7 = "\\BlackBoneDrv\\bin\\" ascii
       $x8 = "DosDevices\\BlackBone" wide
    condition:
-      uint16(0) == 0x5a4d and filesize < 8000KB and ( 3 of them or 1 of ($x*) )
+      uint16(0) == 0x5a4d and filesize < 8000KB and (3 of them or 1 of ($x*))
 }
 
 rule HKTL_SqlMap {
@@ -4537,14 +4525,14 @@ rule HKTL_SqlMap_backdoor {
       date = "2018-10-09"
       id = "bf09caac-cf15-5936-b5b4-df4f28788961"
    condition:
-      ( uint32(0) == 0x8e859c07 or
+      (uint32(0) == 0x8e859c07 or
          uint32(0) == 0x2d859c07 or
          uint32(0) == 0x92959c07 or
          uint32(0) == 0x929d9c07 or
          uint32(0) == 0x29959c07 or
          uint32(0) == 0x2b8d9c07 or
          uint32(0) == 0x2b859c07 or
-         uint32(0) == 0x28b59c07 ) and filesize < 2KB
+         uint32(0) == 0x28b59c07) and filesize < 2KB
 }
 
 rule HKTL_Lazagne_PasswordDumper_Dec18_1 {
@@ -4606,6 +4594,7 @@ rule HKTL_NoPowerShell {
    condition:
       1 of them
 }
+
 rule HKTL_htran_go {
    meta:
       author = "Jeff Beley"
@@ -4670,7 +4659,7 @@ rule PAExec {
       $x7 = "in replacement for PsExec, so the command-line usage is identical, with " fullword ascii
       $x8 = "\\\\%s\\ADMIN$\\PAExec_Move%u.dat" fullword wide
    condition:
-      ( uint16(0) == 0x5a4d and filesize < 600KB and 1 of ($x*) ) or ( 3 of them )
+      (uint16(0) == 0x5a4d and filesize < 600KB and 1 of ($x*)) or (3 of them)
 }
 
 rule HKTL_DomainPasswordSpray {
@@ -4692,30 +4681,29 @@ rule HKTL_DomainPasswordSpray {
 
 rule HKTL_RustHound {
    meta:
-        description = "Detect hacktool RustHound (Sharphound clone)"
-        author = "Arnim Rupp (https://github.com/ruppde)"
-        date = "2023-03-30"
-        reference = "https://github.com/OPENCYBER-FR/RustHound"
-        hash = "409f61a34d9771643246f401a9670f6f7dcced9df50cbd89a2e1a5c9ba8d03ab"
-        hash = "b1a58a9c94b1df97a243e6c3fc2d04ffd92bc802edc7d8e738573b394be331a9"
-        hash = "170f4a48911f3ebef674aade05184ea0a6b1f6b089bcffd658e95b9905423365"
-        hash = "e52f6496b863b08296bf602e92a090768e86abf498183aa5b6531a3a2d9c0bdb"
-        hash = "847e57a35df29d40858c248e5b278b09cfa89dd4201cb24262c6158395e2e585"
-        hash = "4edfed92b54d32a58b2cfc926f98a56637e89850410706abcc469a8bc846bc85"
-        hash = "feba0c16830ea0a13819a9ab8a221cc64d5a9b3cc73f3c66c405a171a2069cc1"
-        hash = "21d37c2393a6f748fe34c9d2f52693cb081b63c3a02ca0bebe4a584076f5886c"
-        hash = "874a1a186eb5808d456ce86295cd5f09d6c819375acb100573c2103608af0d84"
-        hash = "bf576bd229393010b2bb4ba17e49604109e294ca38cf19647fc7d9c325f7bcd1"
-        id = "d2fd79a5-9a1a-51de-920c-61653c8b0064"
+      description = "Detect hacktool RustHound (Sharphound clone)"
+      author = "Arnim Rupp (https://github.com/ruppde)"
+      date = "2023-03-30"
+      reference = "https://github.com/OPENCYBER-FR/RustHound"
+      hash = "409f61a34d9771643246f401a9670f6f7dcced9df50cbd89a2e1a5c9ba8d03ab"
+      hash = "b1a58a9c94b1df97a243e6c3fc2d04ffd92bc802edc7d8e738573b394be331a9"
+      hash = "170f4a48911f3ebef674aade05184ea0a6b1f6b089bcffd658e95b9905423365"
+      hash = "e52f6496b863b08296bf602e92a090768e86abf498183aa5b6531a3a2d9c0bdb"
+      hash = "847e57a35df29d40858c248e5b278b09cfa89dd4201cb24262c6158395e2e585"
+      hash = "4edfed92b54d32a58b2cfc926f98a56637e89850410706abcc469a8bc846bc85"
+      hash = "feba0c16830ea0a13819a9ab8a221cc64d5a9b3cc73f3c66c405a171a2069cc1"
+      hash = "21d37c2393a6f748fe34c9d2f52693cb081b63c3a02ca0bebe4a584076f5886c"
+      hash = "874a1a186eb5808d456ce86295cd5f09d6c819375acb100573c2103608af0d84"
+      hash = "bf576bd229393010b2bb4ba17e49604109e294ca38cf19647fc7d9c325f7bcd1"
+      id = "d2fd79a5-9a1a-51de-920c-61653c8b0064"
    strings:
-        $rh1 = "rusthound" fullword ascii wide
-        $rh2 = "Making json/zip files finished!" ascii wide
+      $rh1 = "rusthound" fullword ascii wide
+      $rh2 = "Making json/zip files finished!" ascii wide
    condition:
-        (
-            // PE or elf
-            uint16(0) == 0x5A4D or
-            uint16(0) == 0x457f
-        ) and
-        1 of ( $rh* )
+      (
+         // PE or elf
+         uint16(0) == 0x5A4D or
+         uint16(0) == 0x457f
+      ) and
+      1 of ($rh*)
 }
-
