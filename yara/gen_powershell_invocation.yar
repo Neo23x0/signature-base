@@ -5,7 +5,7 @@ rule PowerShell_Susp_Parameter_Combo : HIGHVOL FILE {
       author = "Florian Roth (Nextron Systems)"
       reference = "https://goo.gl/uAic1X"
       date = "2017-03-12"
-      modified = "2022-09-15"
+      modified = "2025-12-16"
       score = 60
       id = "17c707f3-7f51-5772-9874-a96c220960a7"
    strings:
@@ -62,6 +62,7 @@ rule PowerShell_Susp_Parameter_Combo : HIGHVOL FILE {
       $fp11 = "REM " ascii
       $fp12 = "set /p " ascii
       $fp13 = "rxScan Application" wide
+      $fp14 = "psutil.tests"
 
       $fpa1 = "All Rights"
       $fpa2 = "<html"
