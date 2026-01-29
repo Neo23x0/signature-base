@@ -13,7 +13,7 @@ rule MAL_APT_NK_Andariel_ScheduledTask_Loader {
       $obfuscation2 = { 48 6B C0 02 C6 44 04 20 BA B8 01 00 00 00 48 6B C0 03 C6 44 04 20 9A B8 01 00 00 00 48 6B C0 04 C6 44 04 20 8B B8 01 00 00 00 48 6B C0 05 C6 44 04 20 8A B8 01 00 00 00 48 6B C0 06 C6 44 04 20 9C B8 01 00 00 00 }
       $obfuscation3 = { 48 6B C0 00 C6 44 04 20 A8 B8 01 00 00 00 48 6B C0 01 C6 44 04 20 9A B8 01 00 00 00 48 6B C0 02 C6 44 04 20 93 B8 01 00 00 00 48 6B C0 03 C6 44 04 20 96 B8 01 00 00 00 48 6B C0 04 C6 44 04 20 B9 B8 01 00 00 00 48 6B C0 05 C6 44 04 20 9A B8 01 00 00 00 48 6B C0 06 C6 44 04 20 8B B8 01 00 00 00 48 6B C0 07 C6 44 04 20 9E B8 01 00 00 00 48 6B C0 08 C6 44 04 20 9A B8 01 00 00 00 48 6B C0 09 C6 44 04 20 8D B8 01 00 00 00 48 6B C0 0A C6 44 04 20 BC B8 01 00 00 00 }
    condition:
-      uint16(0) == 0x5A4D 
+      uint16(0) == 0x5A4D
       and $obfuscation1 and $obfuscation2 and $obfuscation3
 }
 
@@ -54,7 +54,7 @@ rule MAL_APT_NK_TriFaux_EasyRAT_JUPITER {
       $BREAK = { 0D 00 0A 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 2D 00 0D 00 0A }
       $Bytes = "4C,$00,$00,$00,$01,$14,$02,$00,$00,$00,$00,$00,$C0,$00,$00,$00,$00,$00,$00," wide
    condition:
-      uint16(0) == 0x5a4d 
+      uint16(0) == 0x5a4d
       and all of them
 }
 
@@ -80,7 +80,7 @@ rule MAL_APT_NK_Andariel_CutieDrop_MagicRAT {
       // $POST_field_3 = "id=" ascii wide  // disabled this string because it's too short
       $command_misspelled = "renmae" ascii
    condition:
-      uint16(0) == 0x5a4d 
+      uint16(0) == 0x5a4d
       and 7 of them
 }
 
@@ -98,7 +98,7 @@ rule MAL_APT_NK_Andariel_HHSD_FileTransferTool {
       // 81 7D C4 22 C0 78 00    cmp      dword ptr [rbp+buffer_v41], 78C022h
       // 44 88 83 00 01 00 00    mov      [rbx+100h], r8b
       $handshake = { 30 ?? ?? 81 7? ?? 22 C0 78 00 4? 88 }
-      
+
       // B1 14                   mov     cl, 14h
       // C7 45 F7 14 00 41 00    mov      [rbp+57h+Src], 410014h
       // C7 45 FB 7A 00 7F 00    mov      [rbp+57h+var_5C], 7F007Ah
@@ -108,7 +108,7 @@ rule MAL_APT_NK_Andariel_HHSD_FileTransferTool {
       // C7 45 0B 66 00 7B 00    mov      [rbp+57h+var_4C], 7B0066h
       // C7 45 0F 66 00 00 00    mov      [rbp+57h+var_48], 66h ; 'f'
       $err_xor_str = { 14 C7 [2] 14 00 41 00 C7 [2] 7A 00 7F 00 C7 [2] 7B 00 63 00 C7 [2] 7A 00 34 00 }
-      
+
       // 41 02 D0                add     dl, r8b
       // 44 02 DA                add     r11b, dl
       // 3C 1F                   cmp     al, 1Fh
@@ -117,13 +117,12 @@ rule MAL_APT_NK_Andariel_HHSD_FileTransferTool {
       // E8 F1 BA FF FF          call    sub_140001280
       $hash_call_loadlib = { B? 8D 10 B7 F8 E8 }
       $hash_call_unk = { B? 91 B8 F6 88 E8 }
-      
    condition:
       uint16(0) == 0x5a4d
-      and 1 of ($handshake, $err_xor_str) 
+      and 1 of ($handshake, $err_xor_str)
       and 1 of ($hash_call_*)
       or 2 of ($handshake, $err_xor_str)
-} 
+}
 
 rule MAL_APT_NK_Andariel_Atharvan_3RAT {
    meta:
@@ -134,10 +133,10 @@ rule MAL_APT_NK_Andariel_Atharvan_3RAT {
       score = 80
       id = "9ff6998a-a2dd-5671-bd3f-ee69561f71ef"
    strings:
-      $3RAT = "D:\\rang\\TOOL\\3RAT" 
+      $3RAT = "D:\\rang\\TOOL\\3RAT"
       $atharvan = "Atharvan_dll.pdb"
    condition:
-      uint16(0) == 0x5a4d 
+      uint16(0) == 0x5a4d
       and 1 of them
 }
 
@@ -169,13 +168,13 @@ rule MAL_APT_NK_Andariel_LilithRAT_Variant {
       $unique_6 = "killing self" ascii
    condition:
       // I refactored the condition to make it more generic, F.R.
-      uint16(0) == 0x5a4d 
-      and filesize < 150KB 
-      and ( 
-         all of ($lilith_*) 
+      uint16(0) == 0x5a4d
+      and filesize < 150KB
+      and (
+         all of ($lilith_*)
          or 4 of ($unique_*)
-         or 1 of ($lilith_4, $unique_2) // both strings are very specific - let's use them as a unique indicator, F.R.
-      ) 
+         or 1 of ($lilith_4, $unique_2)  // both strings are very specific - let's use them as a unique indicator, F.R.
+      )
 }
 
 rule MAL_APT_NK_Andariel_SocksTroy_Strings_OpCodes {
@@ -189,12 +188,12 @@ rule MAL_APT_NK_Andariel_SocksTroy_Strings_OpCodes {
    strings:
       $strHost = "-host" wide
       $strAuth = "-auth" wide
-      $SocksTroy = "SocksTroy" 
+      $SocksTroy = "SocksTroy"
       $cOpCodeCheck = { 81 E? A0 00 00 00 0F 84 ?? ?? ?? ?? 83 E? 03 74 ?? 83 E? 02 74 ?? 83 F? 0B }
    condition:
       uint16(0) == 0x5a4d and (
-         1 of ($str*) 
-         and all of ($c*) 
+         1 of ($str*)
+         and all of ($c*)
          or all of ($Socks*)
       )
 }
@@ -211,8 +210,8 @@ rule MAL_APT_NK_Andariel_Agni {
       $xor = { 34 ?? 88 01 48 8D 49 01 0F B6 01 84 C0 75 F1 }
       $stackstrings = { C7 44 24 [5-10] C7 44 24 [5] C7 44 24 [5-10] C7 44 24 [5-10] C7 44 24 }
    condition:
-      uint16(0) == 0x5a4d 
-      and #xor > 100 
+      uint16(0) == 0x5a4d
+      and #xor > 100
       and #stackstrings > 5
 }
 
@@ -303,7 +302,7 @@ rule MAL_APT_NK_Andariel_ELF_Backdoor_Fipps {
       $c = "OpenSSL-1.0.0-fipps"
       $d = "Disconnected!"
    condition:
-      uint32(0) == 0x464c457f 
+      uint32(0) == 0x464c457f
       and all of them
 }
 
@@ -313,7 +312,8 @@ rule MAL_APT_NK_Andariel_BindShell {
       description = "Detects a BindShell used by Andariel"
       reference = "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-207a"
       date = "2024-07-25"
-      score = 70
+      modified = "2026-01-29"
+      score = 50  // prone to FPs
       id = "3f6d83da-cea5-5e12-b0ba-93ace09d3d5c"
    strings:
       $str_comspec = "COMSPEC"
@@ -323,7 +323,7 @@ rule MAL_APT_NK_Andariel_BindShell {
       $str_CreateProcessA = "CreateProcessA"
       $str_port = { B9 4D 05 00 00 89 }
    condition:
-      uint16(0) == 0x5A4D 
+      uint16(0) == 0x5A4D
       and all of them
 }
 
@@ -361,7 +361,7 @@ rule MAL_APT_NK_Andariel_NoPineapple_Dtrack_Unpacked {
    strings:
       $str_nopineapple = "< No Pineapple! >"
       $str_qt_library = "Qt 5.12.10"
-      $str_xor = {8B 10 83 F6 ?? 83 FA 01 77}
+      $str_xor = { 8B 10 83 F6 ?? 83 FA 01 77 }
    condition:
       uint16(0) == 0x5A4D
       and all of them
@@ -411,12 +411,12 @@ rule MAL_APT_NK_Andariel_TigerRAT_Crowdsourced_Rule {
       $s2 = "(%02d : %02d-%02d %02d:%02d:%02d)--- %s[Clipboard]" fullword ascii
       $s3 = "[%02d : %02d-%02d %02d:%02d:%02d]--- %s[Title]" fullword ascii
       $s4 = "del \"%s\"%s \"%s\" goto " ascii
-      // $s5 = "[<<]" fullword ascii  // we don't need that short string and the rule probably doesn't lose anything without it, F.R.
+   // $s5 = "[<<]" fullword ascii  // we don't need that short string and the rule probably doesn't lose anything without it, F.R.
    condition:
       uint16(0) == 0x5a4d and (
          all of ($s*) or (
             all of ($m*) and 1 of ($s*)
-         ) 
+         )
          or (
             2 of ($m*) and 2 of ($s*)
          )
@@ -431,138 +431,137 @@ rule MAL_APT_NK_WIN_Tiger_RAT_Auto {
       date = "2024-07-25"
       score = 75
       id = "4579af62-52be-5f5f-a577-16ec50297c05"
-    strings:
-      $sequence_0 = { 33c0 89442438 89442430 448bcf 4533c0 }
-         // n = 5, score = 200
-         //   33c0                 | jmp                 5
-         //   89442438             | dec                 eax
-         //   89442430             | mov                 eax, ecx
-         //   448bcf               | movzx               eax, byte ptr [eax]
-         //   4533c0               | dec                 eax
+   strings:
+      $sequence_0 = { 33 c0 89 44 24 38 89 44 24 30 44 8b cf 45 33 c0 }
+      // n = 5, score = 200
+      //   33c0                 | jmp                 5
+      //   89442438             | dec                 eax
+      //   89442430             | mov                 eax, ecx
+      //   448bcf               | movzx               eax, byte ptr [eax]
+      //   4533c0               | dec                 eax
 
-      $sequence_1 = { 41b901000000 488bd6 488bcb e8???????? }
-         // n = 4, score = 200
-         //   41b901000000         | dec                 eax
-         //   488bd6                | mov                 eax, dword ptr [ecx]
-         //   488bcb               | jmp                 8
-         //   e8????????           |                     
+      $sequence_1 = { 41 b9 01 00 00 00 48 8b d6 48 8b cb e8 ?? ?? ?? ?? }
+      // n = 4, score = 200
+      //   41b901000000         | dec                 eax
+      //   488bd6                | mov                 eax, dword ptr [ecx]
+      //   488bcb               | jmp                 8
+      //   e8????????           |                     
 
-      $sequence_2 = { 4881ec90050000 8b01 8985c8040000 8b4104 }
-         // n = 4, score = 200
-         //   4881ec90050000       | test                eax, eax
-         //   8b01                 | jns                 0x16
-         //   8985c8040000         | dec                 eax
-         //   8b4104               | mov                 eax, dword ptr [ecx]
+      $sequence_2 = { 48 81 ec 90 05 00 00 8b 01 89 85 c8 04 00 00 8b 41 04 }
+      // n = 4, score = 200
+      //   4881ec90050000       | test                eax, eax
+      //   8b01                 | jns                 0x16
+      //   8985c8040000         | dec                 eax
+      //   8b4104               | mov                 eax, dword ptr [ecx]
 
-      $sequence_3 = { 488b01 ff10 488b4f08 4c8d4c2430 }
-         // n = 4, score = 200
-         //   488b01               | mov                 edx, esi
-         //   ff10                 | dec                 eax
-         //   488b4f08             | mov                 ecx, ebx
-         //   4c8d4c2430           | inc                 ecx
+      $sequence_3 = { 48 8b 01 ff 10 48 8b 4f 08 4c 8d 4c 24 30 }
+      // n = 4, score = 200
+      //   488b01               | mov                 edx, esi
+      //   ff10                 | dec                 eax
+      //   488b4f08             | mov                 ecx, ebx
+      //   4c8d4c2430           | inc                 ecx
 
-      $sequence_4 = { 488b01 ff10 488b4e18 488b01 }
-         // n = 4, score = 200
-         //   488b01               | dec                 eax
-         //   ff10                 | cmp                 dword ptr [ecx + 0x18], 0x10
-         //   488b4e18             | dec                 eax
-         //   488b01               | sub                 esp, 0x590
+      $sequence_4 = { 48 8b 01 ff 10 48 8b 4e 18 48 8b 01 }
+      // n = 4, score = 200
+      //   488b01               | dec                 eax
+      //   ff10                 | cmp                 dword ptr [ecx + 0x18], 0x10
+      //   488b4e18             | dec                 eax
+      //   488b01               | sub                 esp, 0x590
 
-      $sequence_5 = { 4881eca0000000 33c0 488bd9 488d4c2432 }
-         // n = 4, score = 200
-         //   4881eca0000000       | mov                 eax, dword ptr [ecx]
-         //   33c0                 | mov                 dword ptr [ebp + 0x4c8], eax
-         //   488bd9               | mov                 eax, dword ptr [ecx + 4]
-         //   488d4c2432           | mov                 dword ptr [ebp + 0x4d0], eax
+      $sequence_5 = { 48 81 ec a0 00 00 00 33 c0 48 8b d9 48 8d 4c 24 32 }
+      // n = 4, score = 200
+      //   4881eca0000000       | mov                 eax, dword ptr [ecx]
+      //   33c0                 | mov                 dword ptr [ebp + 0x4c8], eax
+      //   488bd9               | mov                 eax, dword ptr [ecx + 4]
+      //   488d4c2432           | mov                 dword ptr [ebp + 0x4d0], eax
 
-      $sequence_6 = { 488b01 eb03 488bc1 0fb600 }
-         // n = 4, score = 200
-         //   488b01               | inc                 ecx
-         //   eb03                 | mov                 ebx, dword ptr [ebp + ebp]
-         //   488bc1               | inc                 ecx
-         //   0fb600               | movups              xmmword ptr [edi], xmm0
+      $sequence_6 = { 48 8b 01 eb 03 48 8b c1 0f b6 00 }
+      // n = 4, score = 200
+      //   488b01               | inc                 ecx
+      //   eb03                 | mov                 ebx, dword ptr [ebp + ebp]
+      //   488bc1               | inc                 ecx
+      //   0fb600               | movups              xmmword ptr [edi], xmm0
 
-      $sequence_7 = { 488b01 8b10 895124 448b4124 4585c0 }
-         // n = 5, score = 200
-         //   488b01               | sub                 esp, 0x30
-         //   8b10                 | dec                 ecx
-         //   895124               | mov                 ebx, eax
-         //   448b4124             | dec                 eax
-         //   4585c0               | mov                 ecx, eax
+      $sequence_7 = { 48 8b 01 8b 10 89 51 24 44 8b 41 24 45 85 c0 }
+      // n = 5, score = 200
+      //   488b01               | sub                 esp, 0x30
+      //   8b10                 | dec                 ecx
+      //   895124               | mov                 ebx, eax
+      //   448b4124             | dec                 eax
+      //   4585c0               | mov                 ecx, eax
 
-      $sequence_8 = { 4c8d0d31eb0000 c1e918 c1e808 41bf00000080 }
-         // n = 4, score = 100
-         //   4c8d0d31eb0000       | jne                 0x1e6
-         //   c1e918               | dec                 eax
-         //   c1e808               | lea                 ecx, [0xbda0]
-         //   41bf00000080         | dec                 esp
+      $sequence_8 = { 4c 8d 0d 31 eb 00 00 c1 e9 18 c1 e8 08 41 bf 00 00 00 80 }
+      // n = 4, score = 100
+      //   4c8d0d31eb0000       | jne                 0x1e6
+      //   c1e918               | dec                 eax
+      //   c1e808               | lea                 ecx, [0xbda0]
+      //   41bf00000080         | dec                 esp
 
-      $sequence_9 = { 488bd8 4885c0 752d ff15???????? 83f857 0f85e0010000 488d0da0bd0000 }
-         // n = 7, score = 100
-         //   488bd8               | dec                 eax
-         //   4885c0               | mov                 ebx, eax
-         //   752d                 | dec                 eax
-         //   ff15????????         |                     
-         //   83f857               | test                eax, eax
-         //   0f85e0010000         | jne                 0x2f
-         //   488d0da0bd0000       | cmp                  eax, 0x57
+      $sequence_9 = { 48 8b d8 48 85 c0 75 2d ff 15 ?? ?? ?? ?? 83 f8 57 0f 85 e0 01 00 00 48 8d 0d a0 bd 00 00 }
+      // n = 7, score = 100
+      //   488bd8               | dec                 eax
+      //   4885c0               | mov                 ebx, eax
+      //   752d                 | dec                 eax
+      //   ff15????????         |                     
+      //   83f857               | test                eax, eax
+      //   0f85e0010000         | jne                 0x2f
+      //   488d0da0bd0000       | cmp                  eax, 0x57
 
-      $sequence_10 = { 75d4 488d1d7f6c0100 488b4bf8 4885c9 740b }
-         // n = 5, score = 100
-         //   75d4                 | lea                 ecx, [0xeb31]
-         //   488d1d7f6c0100       | shr                 ecx, 0x18
-         //   488b4bf8             | shr                 eax, 8
-         //   4885c9               | inc                 ecx
-         //   740b                 | mov                 edi, 0x80000000
+      $sequence_10 = { 75 d4 48 8d 1d 7f 6c 01 00 48 8b 4b f8 48 85 c9 74 0b }
+      // n = 5, score = 100
+      //   75d4                 | lea                 ecx, [0xeb31]
+      //   488d1d7f6c0100       | shr                 ecx, 0x18
+      //   488b4bf8             | shr                 eax, 8
+      //   4885c9               | inc                 ecx
+      //   740b                 | mov                 edi, 0x80000000
 
-      $sequence_11 = { 0f85d9000000 488d15d0c90000 41b810200100 488bcd e8???????? eb6b b9f4ffffff }
-         // n = 7, score = 100
-         //   0f85d9000000         | jne                 0xffffffd6
-         //   488d15d0c90000       | dec                 eax
-         //   41b810200100         | lea                 ebx, [0x16c7f]
-         //   488bcd               | dec                 eax
-         //   e8????????           |                     
-         //   eb6b                 | mov                 ecx, dword ptr [ebx - 8]
-         //   b9f4ffffff           | dec                 eax
+      $sequence_11 = { 0f 85 d9 00 00 00 48 8d 15 d0 c9 00 00 41 b8 10 20 01 00 48 8b cd e8 ?? ?? ?? ?? eb 6b b9 f4 ff ff ff }
+      // n = 7, score = 100
+      //   0f85d9000000         | jne                 0xffffffd6
+      //   488d15d0c90000       | dec                 eax
+      //   41b810200100         | lea                 ebx, [0x16c7f]
+      //   488bcd               | dec                 eax
+      //   e8????????           |                     
+      //   eb6b                 | mov                 ecx, dword ptr [ebx - 8]
+      //   b9f4ffffff           | dec                 eax
 
-      $sequence_12 = { 48890d???????? 488905???????? 488d05ae610000 488905???????? 488d05a0550000 488905???????? }
-         // n = 6, score = 100
-         //    48890d????????       |                     
-         //   488905????????       |                     
-         //   488d05ae610000       | test                ecx, ecx
-         //   488905????????       |                     
-         //   488d05a0550000       | je                  0x10
-         //   488905????????       |                     
+      $sequence_12 = { 48 89 0d ?? ?? ?? ?? 48 89 05 ?? ?? ?? ?? 48 8d 05 ae 61 00 00 48 89 05 ?? ?? ?? ?? 48 8d 05 a0 55 00 00 48 89 05 ?? ?? ?? ?? }
+      // n = 6, score = 100
+      //    48890d????????       |                     
+      //   488905????????       |                     
+      //   488d05ae610000       | test                ecx, ecx
+      //   488905????????       |                     
+      //   488d05a0550000       | je                  0x10
+      //   488905????????       |                     
 
-      $sequence_13 = { 8bcf e8???????? 488b7c2448 85c0 0f8440030000 488d0560250100 }
-         // n = 6, score = 100
-         //   8bcf                  | mov                 eax, 0x12010
-         //   e8????????           |                     
-         //   488b7c2448           | dec                 eax
-         //   85c0                 | mov                 ecx, ebp
-         //   0f8440030000         | jmp                 0x83
-         //   488d0560250100       | mov                 ecx, 0xfffffff4
+      $sequence_13 = { 8b cf e8 ?? ?? ?? ?? 48 8b 7c 24 48 85 c0 0f 84 40 03 00 00 48 8d 05 60 25 01 00 }
+      // n = 6, score = 100
+      //   8bcf                  | mov                 eax, 0x12010
+      //   e8????????           |                     
+      //   488b7c2448           | dec                 eax
+      //   85c0                 | mov                 ecx, ebp
+      //   0f8440030000         | jmp                 0x83
+      //   488d0560250100       | mov                 ecx, 0xfffffff4
 
-      $sequence_14 = { ff15???????? 8b05???????? 2305???????? ba02000000 33c9 8905???????? 8b05???????? }
-         // n = 7, score = 100
-         //   ff15????????         |                     
-         //   8b05????????         |                     
-         //   2305????????         |                     
-         //   ba02000000           | dec                 eax
-         //   33c9                 | lea                 eax, [0x61ae]
-         //   8905????????         |                     
-         //   8b05????????         |                     
+      $sequence_14 = { ff 15 ?? ?? ?? ?? 8b 05 ?? ?? ?? ?? 23 05 ?? ?? ?? ?? ba 02 00 00 00 33 c9 89 05 ?? ?? ?? ?? 8b 05 ?? ?? ?? ?? }
+      // n = 7, score = 100
+      //   ff15????????         |                     
+      //   8b05????????         |                     
+      //   2305????????         |                     
+      //   ba02000000           | dec                 eax
+      //   33c9                 | lea                 eax, [0x61ae]
+      //   8905????????         |                     
+      //   8b05????????         |                     
 
-      $sequence_15 = { 4883ec30 498bd8 e8???????? 488bc8 4885c0 }
-         // n = 5, score = 100
-         //   4883ec30             | jne                 0xdf
-         //   498bd8               | dec                 eax
-         //   e8????????           |                     
-         //   488bc8               | lea                 edx, [0xc9d0]
-         //   4885c0               | inc                 ecx
-
-    condition:
-        filesize < 600KB and 7 of them
+      $sequence_15 = { 48 83 ec 30 49 8b d8 e8 ?? ?? ?? ?? 48 8b c8 48 85 c0 }
+   // n = 5, score = 100
+   //   4883ec30             | jne                 0xdf
+   //   498bd8               | dec                 eax
+   //   e8????????           |                     
+   //   488bc8               | lea                 edx, [0xc9d0]
+   //   4885c0               | inc                 ecx
+   condition:
+      filesize < 600KB and 7 of them
 }
 
 rule MAL_APT_NK_WIN_DTrack_Auto {
@@ -574,136 +573,134 @@ rule MAL_APT_NK_WIN_DTrack_Auto {
       score = 75
       id = "1b40c685-beba-50fa-b484-c1526577cb23"
    strings:
-      $sequence_0 = { 52 8b4508 50 e8???????? 83c414 8b4d10 51 }
-         // n = 7, score = 400
-         //   52                   | push                edx
-         //   8b4508               | mov                 eax, dword ptr [ebp + 8]
-         //   50                   | push                eax
-         //   e8????????           |                     
-         //   83c414               | add                 esp, 0x14
-         //   8b4d10               | mov                 ecx, dword ptr [ebp + 0x10]
-         //   51                   | push                ecx
+      $sequence_0 = { 52 8b 45 08 50 e8 ?? ?? ?? ?? 83 c4 14 8b 4d 10 51 }
+      // n = 7, score = 400
+      //   52                   | push                edx
+      //   8b4508               | mov                 eax, dword ptr [ebp + 8]
+      //   50                   | push                eax
+      //   e8????????           |                     
+      //   83c414               | add                 esp, 0x14
+      //   8b4d10               | mov                 ecx, dword ptr [ebp + 0x10]
+      //   51                   | push                ecx
 
-      $sequence_1 = { 3a4101 7523 83854cf6ffff02 838550f6ffff02 80bd4af6ffff00 75ae c78544f6ffff00000000 }
-         // n = 7, score = 300
-         //   3a4101               | cmp                 al, byte ptr [ecx + 1]
-         //    7523                 | jne                 0x25
-         //   83854cf6ffff02       | add                 dword ptr [ebp - 0x9b4], 2
-         //   838550f6ffff02       | add                 dword ptr [ebp - 0x9b0], 2
-         //   80bd4af6ffff00       | cmp                 byte ptr [ebp - 0x9b6], 0
-         //   75ae                 | jne                 0xffffffb0
-         //   c78544f6ffff00000000     | mov     dword ptr [ebp - 0x9bc], 0
+      $sequence_1 = { 3a 41 01 75 23 83 85 4c f6 ff ff 02 83 85 50 f6 ff ff 02 80 bd 4a f6 ff ff 00 75 ae c7 85 44 f6 ff ff 00 00 00 00 }
+      // n = 7, score = 300
+      //   3a4101               | cmp                 al, byte ptr [ecx + 1]
+      //    7523                 | jne                 0x25
+      //   83854cf6ffff02       | add                 dword ptr [ebp - 0x9b4], 2
+      //   838550f6ffff02       | add                 dword ptr [ebp - 0x9b0], 2
+      //   80bd4af6ffff00       | cmp                 byte ptr [ebp - 0x9b6], 0
+      //   75ae                 | jne                 0xffffffb0
+      //   c78544f6ffff00000000     | mov     dword ptr [ebp - 0x9bc], 0
 
-      $sequence_2 = { 50 ff15???????? a3???????? 68???????? e8???????? 83c404 50 }
-         // n = 7, score = 300
-         //   50                   | push                eax
-         //   ff15????????         |                     
-         //   a3????????           |                     
-         //   68????????           |                     
-         //   e8????????           |                     
-         //   83c404               | add                 esp, 4
-         //   50                   | push                eax
+      $sequence_2 = { 50 ff 15 ?? ?? ?? ?? a3 ?? ?? ?? ?? 68 ?? ?? ?? ?? e8 ?? ?? ?? ?? 83 c4 04 50 }
+      // n = 7, score = 300
+      //   50                   | push                eax
+      //   ff15????????         |                     
+      //   a3????????           |                     
+      //   68????????           |                     
+      //   e8????????           |                     
+      //   83c404               | add                 esp, 4
+      //   50                   | push                eax
 
-      $sequence_3 = { 8d8dd4faffff 51 e8???????? 83c408 8b15???????? }
-         // n = 5, score = 300
-         //   8d8dd4faffff         | lea                 ecx, [ebp - 0x52c]
-         //   51                   | push                ecx
-         //   e8????????           |                     
-         //   83c408               | add                 esp, 8
-         //   8b15????????         |                     
+      $sequence_3 = { 8d 8d d4 fa ff ff 51 e8 ?? ?? ?? ?? 83 c4 08 8b 15 ?? ?? ?? ?? }
+      // n = 5, score = 300
+      //   8d8dd4faffff         | lea                 ecx, [ebp - 0x52c]
+      //   51                   | push                ecx
+      //   e8????????           |                     
+      //   83c408               | add                 esp, 8
+      //   8b15????????         |                     
 
-      $sequence_4 = { 8855f5 6a5c 8b450c 50 e8???????? }
-         // n = 5, score = 300
-         //   8855f5               | mov                 byte ptr [ebp - 0xb], dl
-         //   6a5c                 | push                0x5c
-         //   8b450c               | mov                 eax, dword ptr [ebp + 0xc]
-         //   50                   | push                eax
-         //   e8????????           |                     
+      $sequence_4 = { 88 55 f5 6a 5c 8b 45 0c 50 e8 ?? ?? ?? ?? }
+      // n = 5, score = 300
+      //   8855f5               | mov                 byte ptr [ebp - 0xb], dl
+      //   6a5c                 | push                0x5c
+      //   8b450c               | mov                 eax, dword ptr [ebp + 0xc]
+      //   50                   | push                eax
+      //   e8????????           |                     
 
-      $sequence_5 = { 51 e8???????? 83c410 8b558c 52 }
-         // n = 5, score = 300
-         //   51                   | push                ecx
-         //   e8????????           |                     
-         //   83c410               | add                 esp, 0x10
-         //   8b558c                | mov                 edx, dword ptr [ebp - 0x74]
-         //   52                   | push                edx
+      $sequence_5 = { 51 e8 ?? ?? ?? ?? 83 c4 10 8b 55 8c 52 }
+      // n = 5, score = 300
+      //   51                   | push                ecx
+      //   e8????????           |                     
+      //   83c410               | add                 esp, 0x10
+      //   8b558c                | mov                 edx, dword ptr [ebp - 0x74]
+      //   52                   | push                edx
 
-      $sequence_6 = { 8b4d0c 51 68???????? 8d9560eaffff 52 e8???????? }
-         // n = 6, score = 300
-         //   8b4d0c               | mov                 ecx, dword ptr [ebp + 0xc]
-         //   51                   | push                ecx
-         //   68????????           |                     
-         //   8d9560eaffff         | lea                 edx, [ebp - 0x15a0]
-         //   52                   | push                edx
-         //   e8????????           |                     
+      $sequence_6 = { 8b 4d 0c 51 68 ?? ?? ?? ?? 8d 95 60 ea ff ff 52 e8 ?? ?? ?? ?? }
+      // n = 6, score = 300
+      //   8b4d0c               | mov                 ecx, dword ptr [ebp + 0xc]
+      //   51                   | push                ecx
+      //   68????????           |                     
+      //   8d9560eaffff         | lea                 edx, [ebp - 0x15a0]
+      //   52                   | push                edx
+      //   e8????????           |                     
 
-      $sequence_7 = { 83c001 8945f4 837df420 7d2c 8b4df8 }
-         // n = 5, score = 300
-         //   83c001               | add                 eax, 1
-         //   8945f4               | mov                 dword ptr [ebp - 0xc], eax
-         //   837df420             | cmp                 dword ptr [ebp - 0xc], 0x20
-         //   7d2c                 | jge                 0x2e
-         //   8b4df8               | mov                 ecx, dword ptr [ebp - 8]
+      $sequence_7 = { 83 c0 01 89 45 f4 83 7d f4 20 7d 2c 8b 4d f8 }
+      // n = 5, score = 300
+      //   83c001               | add                 eax, 1
+      //   8945f4               | mov                 dword ptr [ebp - 0xc], eax
+      //   837df420             | cmp                 dword ptr [ebp - 0xc], 0x20
+      //   7d2c                 | jge                 0x2e
+      //   8b4df8               | mov                 ecx, dword ptr [ebp - 8]
 
-      $sequence_8 = { 83c001 89856cf6ffff 8b8d70f6ffff 8a11 }
-         // n = 4, score = 300
-         //   83c001               | add                 eax, 1
-         //   89856cf6ffff         | mov                 dword ptr [ebp - 0x994], eax
-         //   8b8d70f6ffff         | mov                 ecx, dword ptr [ebp - 0x990]
-         //   8a11                 | mov                 dl, byte ptr [ecx]
+      $sequence_8 = { 83 c0 01 89 85 6c f6 ff ff 8b 8d 70 f6 ff ff 8a 11 }
+      // n = 4, score = 300
+      //   83c001               | add                 eax, 1
+      //   89856cf6ffff         | mov                 dword ptr [ebp - 0x994], eax
+      //   8b8d70f6ffff         | mov                 ecx, dword ptr [ebp - 0x990]
+      //   8a11                 | mov                 dl, byte ptr [ecx]
 
-      $sequence_9 = { 0355f0 0fb602 0fb64df7 33c1 0fb655fc 33c2 }
-         // n = 6, score = 200
-         //   0355f0               | add                 edx, dword ptr [ebp - 0x10]
-         //   0fb602               | movzx               eax, byte ptr [edx]
-         //   0fb64df7             | movzx               ecx, byte ptr [ebp - 9]
-         //   33c1                 | xor                 eax, ecx
-         //    0fb655fc             | movzx               edx, byte ptr [ebp - 4]
-         //   33c2                 | xor                 eax, edx
+      $sequence_9 = { 03 55 f0 0f b6 02 0f b6 4d f7 33 c1 0f b6 55 fc 33 c2 }
+      // n = 6, score = 200
+      //   0355f0               | add                 edx, dword ptr [ebp - 0x10]
+      //   0fb602               | movzx               eax, byte ptr [edx]
+      //   0fb64df7             | movzx               ecx, byte ptr [ebp - 9]
+      //   33c1                 | xor                 eax, ecx
+      //    0fb655fc             | movzx               edx, byte ptr [ebp - 4]
+      //   33c2                 | xor                 eax, edx
 
-      $sequence_10 = { d1e9 894df8 8b5518 8955fc c745f000000000 }
-         // n = 5, score = 200
-         //   d1e9                 | shr                 ecx, 1
-         //   894df8               | mov                 dword ptr [ebp - 8], ecx
-         //   8b5518               | mov                 edx, dword ptr [ebp + 0x18]
-         //   8955fc               | mov                 dword ptr [ebp - 4], edx
-         //   c745f000000000       | mov                 dword ptr [ebp - 0x10], 0
+      $sequence_10 = { d1 e9 89 4d f8 8b 55 18 89 55 fc c7 45 f0 00 00 00 00 }
+      // n = 5, score = 200
+      //   d1e9                 | shr                 ecx, 1
+      //   894df8               | mov                 dword ptr [ebp - 8], ecx
+      //   8b5518               | mov                 edx, dword ptr [ebp + 0x18]
+      //   8955fc               | mov                 dword ptr [ebp - 4], edx
+      //   c745f000000000       | mov                 dword ptr [ebp - 0x10], 0
 
-      $sequence_11 = { 8b4df0 3b4d10 0f8d90000000 8b5508 0355f0 0fb602 }
-         // n = 6, score = 200
-         //   8b4df0               | mov                 ecx, dword ptr [ebp - 0x10]
-         //   3b4d10               | cmp                 ecx, dword ptr [ebp + 0x10]
-         //   0f8d90000000         | jge                 0x96
-         //   8b5508               | mov                 edx, dword ptr [ebp + 8]
-         //   0355f0               | add                 edx, dword ptr [ebp - 0x10]
-         //   0fb602               | movzx               eax, byte ptr [edx]
+      $sequence_11 = { 8b 4d f0 3b 4d 10 0f 8d 90 00 00 00 8b 55 08 03 55 f0 0f b6 02 }
+      // n = 6, score = 200
+      //   8b4df0               | mov                 ecx, dword ptr [ebp - 0x10]
+      //   3b4d10               | cmp                 ecx, dword ptr [ebp + 0x10]
+      //   0f8d90000000         | jge                 0x96
+      //   8b5508               | mov                 edx, dword ptr [ebp + 8]
+      //   0355f0               | add                 edx, dword ptr [ebp - 0x10]
+      //   0fb602               | movzx               eax, byte ptr [edx]
 
-      $sequence_12 = { 894d14 8b45f8 c1e018 8b4dfc c1e908 0bc1 }
-         // n = 6, score = 200
-         //   894d14               | mov                 dword ptr [ebp + 0x14], ecx
-         //   8b45f8               | mov                 eax, dword ptr [ebp - 8]
-         //   c1e018               | shl                 eax, 0x18
-         //   8b4dfc               | mov                 ecx, dword ptr [ebp - 4]
-         //   c1e908               | shr                 ecx, 8
-         //   0bc1                 | or                  eax, ecx
+      $sequence_12 = { 89 4d 14 8b 45 f8 c1 e0 18 8b 4d fc c1 e9 08 0b c1 }
+      // n = 6, score = 200
+      //   894d14               | mov                 dword ptr [ebp + 0x14], ecx
+      //   8b45f8               | mov                 eax, dword ptr [ebp - 8]
+      //   c1e018               | shl                 eax, 0x18
+      //   8b4dfc               | mov                 ecx, dword ptr [ebp - 4]
+      //   c1e908               | shr                 ecx, 8
+      //   0bc1                 | or                  eax, ecx
 
-      $sequence_13 = { 0bc1 894518 8b5514 8955f8 }
-         // n = 4, score = 200
-         //   0bc1                 | or                  eax, ecx
-         //   894518               | mov                 dword ptr [ebp + 0x18], eax
-         //   8b5514               | mov                 edx, dword ptr [ebp + 0x14]
-         //   8955f8               | mov                 dword ptr [ebp - 8], edx
+      $sequence_13 = { 0b c1 89 45 18 8b 55 14 89 55 f8 }
+      // n = 4, score = 200
+      //   0bc1                 | or                  eax, ecx
+      //   894518               | mov                 dword ptr [ebp + 0x18], eax
+      //   8b5514               | mov                 edx, dword ptr [ebp + 0x14]
+      //   8955f8               | mov                 dword ptr [ebp - 8], edx
 
-      $sequence_14 = { 8b5514 8955f8 8b4518 8945fc e9???????? 8be5 }
-         // n = 6, score = 200
-         //   8b5514               | mov                 edx, dword ptr [ebp + 0x14]
-         //   8955f8               | mov                 dword ptr [ebp - 8], edx
-         //   8b4518               | mov                 eax, dword ptr [ebp + 0x18]
-         //   8945fc               | mov                 dword ptr [ebp - 4], eax
-         //   e9????????           |                     
-         //   8be5                 | mov                 esp, ebp
-
+      $sequence_14 = { 8b 55 14 89 55 f8 8b 45 18 89 45 fc e9 ?? ?? ?? ?? 8b e5 }
+   // n = 6, score = 200
+   //   8b5514               | mov                 edx, dword ptr [ebp + 0x14]
+   //   8955f8               | mov                 dword ptr [ebp - 8], edx
+   //   8b4518               | mov                 eax, dword ptr [ebp + 0x18]
+   //   8945fc               | mov                 dword ptr [ebp - 4], eax
+   //   e9????????           |                     
+   //   8be5                 | mov                 esp, ebp
    condition:
       filesize < 1700KB and 7 of them
 }
-
