@@ -41,7 +41,7 @@ echo "dummy" > "$DUMMY_FILE"
 for rule in $RULES; do
     # Skip files with external variables (they need special handling)
     if grep -q "extern\s" "$rule" 2>/dev/null || \
-       echo "$rule" | grep -qE "(generic_anomalies|general_cloaking|gen_webshells_ext_vars|thor_inverse_matches|yara_mixed_ext_vars|configured_vulns_ext_vars|gen_fake_amsi_dll|expl_citrix|vuln_drivers_strict_renamed)"; then
+       echo "$rule" | grep -qE "(generic_anomalies|general_cloaking|gen_webshells_ext_vars|thor_inverse_matches|yara_mixed_ext_vars|configured_vulns_ext_vars|gen_fake_amsi_dll|expl_citrix|vuln_drivers_strict_renamed|expl_connectwise_screenconnect_vuln_feb24|gen_mal_3cx_compromise_mar23|gen_susp_obfuscation|gen_vcruntime140_dll_sideloading)"; then
         echo "SKIP: $rule (external variables)"
         ((SKIPPED++)) || true
         continue
