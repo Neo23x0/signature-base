@@ -38,3 +38,11 @@ build:
 		echo "Compiling $(BUILD_DIR)/$(notdir $$yarsig) ..." ; \
 		$(3RD_PARTY)/yara/bin/yarac $(YAR_COMP_VARS) $(notdir $$yarsig) $(BUILD_DIR)/$(notdir $$yarsig).compiled ; \
 	done
+
+# Test targets
+test-syntax:
+	@echo "Running YARA syntax check..."
+	@./tests/syntax/check.sh ./yara
+
+test: test-syntax
+.PHONY: test test-syntax
