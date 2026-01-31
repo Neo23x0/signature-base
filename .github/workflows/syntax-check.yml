@@ -1,0 +1,41 @@
+name: YARA Syntax Check
+
+on:
+  push:
+    branches: [ master, main ]
+    paths:
+      - 'yara/**'
+      - 'tests/syntax/**'
+  pull_request:
+    branches: [ master, main ]
+    paths:
+      - 'yara/**'
+      - 'tests/syntax/**'
+
+jobs:
+  syntax-check:
+    name: Syntax Check
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Install YARA
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y yara
+        yara --version
+        
+    - name: Run syntax check
+      run: |
+        ./tests/syntax/check.sh ./yara
+        
+    - name: Upload results
+      if: failure()
+      uses: actions/upload-artifact@v4
+      with:
+        name: syntax-errors
+        path: |
+          tests/syntax/*.log
+        retention-days: 7
