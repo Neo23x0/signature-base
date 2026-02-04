@@ -4555,7 +4555,7 @@ C:\\perflogs\\RunSchedulerTaskOnce\.ps1;85
 \\AppData\\Roaming\\Bluetooth\\log\.dll;75
 \\AppData\\Roaming\\Bluetooth\\BluetoothService\.exe;75
 \\AppData\\Roaming\\ProShow\\load$;75
-\\AppData\\Roaming\\ProShow\\ProShow.\exe;75
+\\AppData\\Roaming\\ProShow\\ProShow\.exe;75
 \\AppData\\Roaming\\Adobe\\Scripts\\alien\.ini;75
 \\AppData\\Roaming\\Adobe\\Scripts\\script.exe;75
 \\libtcc\.dll;60
