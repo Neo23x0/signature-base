@@ -6,59 +6,58 @@
 */
 
 import "pe"
-import "math" 
+import "math"
 
 rule Acrotray_Anomaly {
-	meta:
-		description = "Detects an acrotray.exe that does not contain the usual strings"
-		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth (Nextron Systems)"
-		score = 75
-		id = "e3fef644-e535-5137-ac98-2fd1b7ca4361"
-	strings:
-		$s1 = "PDF/X-3:2002" fullword wide
-		$s2 = "AcroTray - Adobe Acrobat Distiller helper application" fullword wide
-		$s3 = "MS Sans Serif" fullword wide
-		$s4 = "COOLTYPE.DLL" fullword ascii
-	condition:
-		uint16(0) == 0x5a4d and filesize < 3000KB
-		and ( filename == "acrotray.exe" or filename == "AcroTray.exe" )
-		and not all of ($s*)
+   meta:
+      description = "Detects an acrotray.exe that does not contain the usual strings"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+      author = "Florian Roth (Nextron Systems)"
+      score = 75
+      id = "e3fef644-e535-5137-ac98-2fd1b7ca4361"
+   strings:
+      $s1 = "PDF/X-3:2002" fullword wide
+      $s2 = "AcroTray - Adobe Acrobat Distiller helper application" fullword wide
+      $s3 = "MS Sans Serif" fullword wide
+      $s4 = "COOLTYPE.DLL" fullword ascii
+   condition:
+      uint16(0) == 0x5a4d and filesize < 3000KB
+      and (filename == "acrotray.exe" or filename == "AcroTray.exe")
+      and not all of ($s*)
 }
 
 rule COZY_FANCY_BEAR_modified_VmUpgradeHelper {
-	meta:
-		description = "Detects a malicious VmUpgradeHelper.exe as mentioned in the CrowdStrike report"
-		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth (Nextron Systems)"
-		reference = "https://www.crowdstrike.com/blog/bears-midst-intrusion-democratic-national-committee/"
-		date = "2016-06-14"
-		id = "97b844a4-0fa4-5850-8803-2212a69e3d16"
-	strings:
-		$s1 = "VMware, Inc." wide fullword
-		$s2 = "Virtual hardware upgrade helper service" fullword wide
-		$s3 = "vmUpgradeHelper\\vmUpgradeHelper.pdb" ascii
-	condition:
-		uint16(0) == 0x5a4d and
-		filename == "VmUpgradeHelper.exe" and
-		not all of ($s*)
+   meta:
+      description = "Detects a malicious VmUpgradeHelper.exe as mentioned in the CrowdStrike report"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+      author = "Florian Roth (Nextron Systems)"
+      reference = "https://www.crowdstrike.com/blog/bears-midst-intrusion-democratic-national-committee/"
+      date = "2016-06-14"
+      id = "97b844a4-0fa4-5850-8803-2212a69e3d16"
+   strings:
+      $s1 = "VMware, Inc." wide fullword
+      $s2 = "Virtual hardware upgrade helper service" fullword wide
+      $s3 = "vmUpgradeHelper\\vmUpgradeHelper.pdb" ascii
+   condition:
+      uint16(0) == 0x5a4d and
+      filename == "VmUpgradeHelper.exe" and
+      not all of ($s*)
 }
 
-rule IronTiger_Gh0stRAT_variant
-{
-	meta:
-		author = "Cyber Safety Solutions, Trend Micro"
-		description = "This is a detection for a s.exe variant seen in Op. Iron Tiger"
-		reference = "http://goo.gl/T5fSJC"
-		id = "e7eeee0f-d7a1-5359-bc1f-5a2a883c7227"
-	strings:
-		$str1 = "Game Over Good Luck By Wind" nocase wide ascii
-		$str2 = "ReleiceName" nocase wide ascii
-		$str3 = "jingtisanmenxiachuanxiao.vbs" nocase wide ascii
-		$str4 = "Winds Update" nocase wide ascii fullword
-	condition:
-		uint16(0) == 0x5a4d and (any of ($str*))
-		and not filename == "UpdateSystemMib.exe"
+rule IronTiger_Gh0stRAT_variant {
+   meta:
+      author = "Cyber Safety Solutions, Trend Micro"
+      description = "This is a detection for a s.exe variant seen in Op. Iron Tiger"
+      reference = "http://goo.gl/T5fSJC"
+      id = "e7eeee0f-d7a1-5359-bc1f-5a2a883c7227"
+   strings:
+      $str1 = "Game Over Good Luck By Wind" nocase wide ascii
+      $str2 = "ReleiceName" nocase wide ascii
+      $str3 = "jingtisanmenxiachuanxiao.vbs" nocase wide ascii
+      $str4 = "Winds Update" nocase wide ascii fullword
+   condition:
+      uint16(0) == 0x5a4d and (any of ($str*))
+      and not filename == "UpdateSystemMib.exe"
 }
 
 rule OpCloudHopper_Cloaked_PSCP {
@@ -92,62 +91,60 @@ rule msi_dll_Anomaly {
       uint16(0) == 0x5a4d and filesize < 15KB and filename == "msi.dll" and $x1
 }
 
-rule PoS_Malware_MalumPOS_Config
-{
-    meta:
-        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+rule PoS_Malware_MalumPOS_Config {
+   meta:
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
-        date = "2015-06-25"
-        description = "MalumPOS Config File"
-        reference = "http://blog.trendmicro.com/trendlabs-security-intelligence/trend-micro-discovers-malumpos-targets-hotels-and-other-us-industries/"
-        id = "0fd2b9c2-d016-5db2-8fcc-618df6c815de"
-    strings:
-        $s1 = "[PARAMS]"
-        $s2 = "Name="
-        $s3 = "InterfacesIP="
-        $s4 = "Port="
-    condition:
-        all of ($s*) and filename == "log.ini" and filesize < 20KB
+      date = "2015-06-25"
+      description = "MalumPOS Config File"
+      reference = "http://blog.trendmicro.com/trendlabs-security-intelligence/trend-micro-discovers-malumpos-targets-hotels-and-other-us-industries/"
+      id = "0fd2b9c2-d016-5db2-8fcc-618df6c815de"
+   strings:
+      $s1 = "[PARAMS]"
+      $s2 = "Name="
+      $s3 = "InterfacesIP="
+      $s4 = "Port="
+   condition:
+      all of ($s*) and filename == "log.ini" and filesize < 20KB
 }
 
 rule Malware_QA_update_test {
-	meta:
-		description = "VT Research QA uploaded malware - file update_.exe"
-		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth (Nextron Systems)"
-		reference = "VT Research QA"
-		date = "2016-08-29"
-		score = 80
-		hash1 = "3b3392bc730ded1f97c51e23611740ff8b218abf0a1100903de07819eeb449aa"
-		id = "8f319277-1eaf-559e-87ad-f4ab89b04ca5"
-	strings:
-		$s1 = "test.exe" fullword ascii
-		$s2 = "PADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGP" fullword ascii
-	condition:
-		uint16(0) == 0x5a4d and filesize < 1000KB and all of them and filename == "update.exe"
+   meta:
+      description = "VT Research QA uploaded malware - file update_.exe"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+      author = "Florian Roth (Nextron Systems)"
+      reference = "VT Research QA"
+      date = "2016-08-29"
+      score = 80
+      hash1 = "3b3392bc730ded1f97c51e23611740ff8b218abf0a1100903de07819eeb449aa"
+      id = "8f319277-1eaf-559e-87ad-f4ab89b04ca5"
+   strings:
+      $s1 = "test.exe" fullword ascii
+      $s2 = "PADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGP" fullword ascii
+   condition:
+      uint16(0) == 0x5a4d and filesize < 1000KB and all of them and filename == "update.exe"
 }
-
 
 /* These only work with external variable "filename" ------------------------ */
 /* as used in LOKI, THOR, SPARK --------------------------------------------- */
 
 rule SysInterals_PipeList_NameChanged {
-	meta:
-		description = "Detects NirSoft PipeList"
-		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth (Nextron Systems)"
-		reference = "https://goo.gl/Mr6M2J"
-		date = "2016-06-04"
-		score = 90
-		hash1 = "83f0352c14fa62ae159ab532d85a2b481900fed50d32cc757aa3f4ccf6a13bee"
-		id = "01afcf29-a74c-5be2-8b24-694a2802ef34"
-	strings:
-		$s1 = "PipeList" ascii fullword
-		$s2 = "Sysinternals License" ascii fullword
-	condition:
-		uint16(0) == 0x5a4d and filesize < 170KB and all of them
-		and not filename contains "pipelist.exe"
-		and not filename contains "PipeList.exe"
+   meta:
+      description = "Detects NirSoft PipeList"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+      author = "Florian Roth (Nextron Systems)"
+      reference = "https://goo.gl/Mr6M2J"
+      date = "2016-06-04"
+      score = 90
+      hash1 = "83f0352c14fa62ae159ab532d85a2b481900fed50d32cc757aa3f4ccf6a13bee"
+      id = "01afcf29-a74c-5be2-8b24-694a2802ef34"
+   strings:
+      $s1 = "PipeList" ascii fullword
+      $s2 = "Sysinternals License" ascii fullword
+   condition:
+      uint16(0) == 0x5a4d and filesize < 170KB and all of them
+      and not filename contains "pipelist.exe"
+      and not filename contains "PipeList.exe"
 }
 
 /*
@@ -160,22 +157,21 @@ rule SysInterals_PipeList_NameChanged {
 /* Rule Set ----------------------------------------------------------------- */
 
 rule SCT_Scriptlet_in_Temp_Inet_Files {
-	meta:
-		description = "Detects a scriptlet file in the temporary Internet files (see regsvr32 AppLocker bypass)"
-		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
-		author = "Florian Roth (Nextron Systems)"
-		reference = "http://goo.gl/KAB8Jw"
-		date = "2016-04-26"
-		id = "8b729257-3676-59b2-961c-dae1085cbbf6"
-	strings:
-		$s1 = "<scriptlet>" fullword ascii nocase
-		$s2 = "ActiveXObject(\"WScript.Shell\")" ascii
-	condition:
-		( uint32(0) == 0x4D583F3C or uint32(0) == 0x6D78F3C ) /* <?XM or <?xm */
-		and $s1 and $s2
-		and filepath contains "Temporary Internet Files"
+   meta:
+      description = "Detects a scriptlet file in the temporary Internet files (see regsvr32 AppLocker bypass)"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+      author = "Florian Roth (Nextron Systems)"
+      reference = "http://goo.gl/KAB8Jw"
+      date = "2016-04-26"
+      id = "8b729257-3676-59b2-961c-dae1085cbbf6"
+   strings:
+      $s1 = "<scriptlet>" fullword ascii nocase
+      $s2 = "ActiveXObject(\"WScript.Shell\")" ascii
+   condition:
+      (uint32(0) == 0x4D583F3C or uint32(0) == 0x6D78F3C)  /* <?XM or <?xm */
+      and $s1 and $s2
+      and filepath contains "Temporary Internet Files"
 }
-
 
 rule GIFCloaked_Webshell_A {
    meta:
@@ -196,7 +192,7 @@ rule GIFCloaked_Webshell_A {
 
       $fp1 = "<form name=\"social_form\""
    condition:
-      uint32(0) == 0x38464947 and ( 1 of ($s*) )
+      uint32(0) == 0x38464947 and (1 of ($s*))
       and not 1 of ($fp*)
 }
 
@@ -266,22 +262,20 @@ rule HackTool_Producers {
       not extension contains ".sqlite"
 }
 
-rule Exe_Cloaked_as_ThumbsDb
-    {
-    meta:
-        description = "Detects an executable cloaked as thumbs.db - Malware"
-        date = "2014-07-18"
-        license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+rule Exe_Cloaked_as_ThumbsDb {
+   meta:
+      description = "Detects an executable cloaked as thumbs.db - Malware"
+      date = "2014-07-18"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth (Nextron Systems)"
-        score = 50
-        id = "ff09f8cf-de5a-50fc-aa0b-c54f7667e246"
-    condition:
-        uint16(0) == 0x5a4d and filename matches /[Tt]humbs\.db/
+      score = 50
+      id = "ff09f8cf-de5a-50fc-aa0b-c54f7667e246"
+   condition:
+      uint16(0) == 0x5a4d and filename matches /[Tt]humbs\.db/
 }
 
-rule Fake_AdobeReader_EXE
-    {
-    meta:
+rule Fake_AdobeReader_EXE {
+   meta:
       description = "Detects an fake AdobeReader executable based on filesize OR missing strings in file"
       date = "2014-09-11"
       author = "Florian Roth (Nextron Systems)"
@@ -289,43 +283,42 @@ rule Fake_AdobeReader_EXE
       nodeepdive = 1
       nodeepdive = 1
       id = "e3dd9d94-9f4b-5ff9-bfec-29abfb3555bb"
-    strings:
+   strings:
       $s1 = "Adobe Systems" ascii
 
       $fp1 = "Adobe Reader" ascii wide
       $fp2 = "Xenocode Virtual Appliance Runtime" ascii wide
-    condition:
+   condition:
       uint16(0) == 0x5a4d and
       filename matches /AcroRd32.exe/i and
-      not $s1 in (filesize-2500..filesize)
+      not $s1 in (filesize - 2500..filesize)
       and not 1 of ($fp*)
 }
 
-rule mimikatz_lsass_mdmp
-{
+rule mimikatz_lsass_mdmp {
    meta:
-      description      = "LSASS minidump file for mimikatz"
-      author         = "Benjamin DELPY (gentilkiwi)"
+      description = "LSASS minidump file for mimikatz"
+      author = "Benjamin DELPY (gentilkiwi)"
       id = "3d850dbe-1342-55ac-b0f7-91343d88f147"
    strings:
-      $lsass         = "System32\\lsass.exe"   wide nocase
+      $lsass = "System32\\lsass.exe" wide nocase
    condition:
       (uint32(0) == 0x504d444d) and $lsass and filesize > 50000KB and not filename matches /WER/
 }
 
 rule lsadump {
    meta:
-      description      = "LSA dump programe (bootkey/syskey) - pwdump and others"
-      author         = "Benjamin DELPY (gentilkiwi)"
-      score         = 80
+      description = "LSA dump programe (bootkey/syskey) - pwdump and others"
+      author = "Benjamin DELPY (gentilkiwi)"
+      score = 80
       nodeepdive = 1
       id = "3bfa8dd8-720d-5326-ac92-0fb96cf21219"
    strings:
-      $str_sam_inc   = "\\Domains\\Account" ascii nocase
-      $str_sam_exc   = "\\Domains\\Account\\Users\\Names\\" ascii nocase
-      $hex_api_call   = {(41 b8 | 68) 00 00 00 02 [0-64] (68 | ba) ff 07 0f 00 }
-      $str_msv_lsa   = { 4c 53 41 53 52 56 2e 44 4c 4c 00 [0-32] 6d 73 76 31 5f 30 2e 64 6c 6c 00 }
-      $hex_bkey      = { 4b 53 53 4d [20-70] 05 00 01 00}
+      $str_sam_inc = "\\Domains\\Account" ascii nocase
+      $str_sam_exc = "\\Domains\\Account\\Users\\Names\\" ascii nocase
+      $hex_api_call = { (41 b8 | 68) 00 00 00 02 [0-64] (68 | ba) ff 07 0f 00 }
+      $str_msv_lsa = { 4c 53 41 53 52 56 2e 44 4c 4c 00 [0-32] 6d 73 76 31 5f 30 2e 64 6c 6c 00 }
+      $hex_bkey = { 4b 53 53 4d [20-70] 05 00 01 00 }
 
       $fp1 = "Sysinternals" ascii
       $fp2 = "Apple Inc." ascii wide
@@ -335,7 +328,7 @@ rule lsadump {
       $fp6 = "Bitdefender" wide fullword
    condition:
       uint16(0) == 0x5a4d and
-      (($str_sam_inc and not $str_sam_exc) or $hex_api_call or $str_msv_lsa or $hex_bkey )
+      (($str_sam_inc and not $str_sam_exc) or $hex_api_call or $str_msv_lsa or $hex_bkey)
       and not 1 of ($fp*)
       and not filename contains "Regdat"
       and not filetype == "EXE"
@@ -368,7 +361,7 @@ rule SUSP_ServU_Known_Mal_IP_Jul21_1 {
       score = 60
       id = "118272a7-7ec9-568b-99e0-8cfe97f3f64e"
    strings:
-      $xip1 = "98.176.196.89" ascii fullword 
+      $xip1 = "98.176.196.89" ascii fullword
       $xip2 = "68.235.178.32" ascii fullword
       $xip3 = "208.113.35.58" ascii fullword
       $xip4 = "144.34.179.162" ascii fullword
@@ -387,7 +380,7 @@ rule SUSP_EXPL_Confluence_RCE_CVE_2021_26084_Indicators_Sep21 {
       score = 55
       id = "395d37ea-1986-5fdd-b58c-562ae0d8be35"
    condition:
-      uint32be(0) == 0x7f454c46 /* ELF binary */
+      uint32be(0) == 0x7f454c46  /* ELF binary */
       and owner == "confluence"
       and not filepath contains "/confluence/"
 }
@@ -406,7 +399,7 @@ rule SUSP_Blocked_Download_Proxy_Replacement_Jan23_1 {
       $x03 = " target=\"_blank\">Cloudflare <img "
       $x04 = "Sorry, this file is infected with a virus.</p>"
       $x05 = "-- Sophos Warn FileType Page -->"
-      $x06 = "<p>Certain Sophos products may not be exported for use by government end-users" // accept EULA 
+      $x06 = "<p>Certain Sophos products may not be exported for use by government end-users"  // accept EULA 
       $x07 = "<p class=\"content-list\">Bitly displays this warning when a link has been flagged as suspect. There are many"
       $x08 = "Something went wrong. Don't worry, your files are still safe and the Dropbox team has been notified."
       $x09 = "<p>sinkhole</p>"
@@ -421,7 +414,7 @@ rule SUSP_Blocked_Download_Proxy_Replacement_Jan23_1 {
       $x18 = "<h1>Trend Micro Apex One</h1>"
       $x19 = "Hitachi ID Identity and Access Management Suite"
       $x20 = ">http://www.fortinet.com/ve?vn="
-      $x21 = "access to URL with fixed IP not allowed" // FritzBox
+      $x21 = "access to URL with fixed IP not allowed"  // FritzBox
       $x23 = "<title>Web Page Blocked</title>"
       $x24 = "<title>Malicious Website Blocked</title>"
       $x25 = "<h2>STOPzilla has detected"
@@ -431,7 +424,7 @@ rule SUSP_Blocked_Download_Proxy_Replacement_Jan23_1 {
 
       $g01 = "blocked access" fullword
       $g02 = "policy violation" fullword
-      $g03 = "violation of " 
+      $g03 = "violation of "
       $g04 = "blocked by" fullword
       $g05 = "Blocked by" fullword
       $g07 = "Suspected Phishing"
@@ -448,8 +441,8 @@ rule SUSP_Blocked_Download_Proxy_Replacement_Jan23_1 {
    condition:
       extension == ".exe" and not uint16(0) == 0x5a4d and 1 of them
       or (
-         extension == ".rar" or 
-         extension == ".ps1" or 
+         extension == ".rar" or
+         extension == ".ps1" or
          extension == ".vbs" or
          extension == ".bat"
       )
@@ -500,7 +493,6 @@ rule APT_MAL_RU_Snake_Malware_Queue_File_May23_1 {
       and math.entropy(0, 1024) >= 7.0
 }
 
-
 rule SUSP_Password_XLS_Unencrypted {
    meta:
       description = "Detects files named e.g. password.xls, which might contain unportected clear text passwords"
@@ -512,24 +504,24 @@ rule SUSP_Password_XLS_Unencrypted {
    condition:
       // match password and the german passwort:
       (
-         filename istartswith "passwor" or        /* EN / DE */
-         filename istartswith "contrase" or       /* ES */
-         filename istartswith "mot de pass" or   /* FR */
-         filename istartswith "mot_de_pass" or   /* FR */
-         filename istartswith "motdepass" or     /* FR */
-         filename istartswith "wachtwoord"        /* NL */
+         filename istartswith "passwor" or  /* EN / DE */
+         filename istartswith "contrase" or  /* ES */
+         filename istartswith "mot de pass" or  /* FR */
+         filename istartswith "mot_de_pass" or  /* FR */
+         filename istartswith "motdepass" or  /* FR */
+         filename istartswith "wachtwoord"  /* NL */
       )
       and (
-          // no need to check if an xls is password protected, because it's trivial to break
-          (
-              filename iendswith ".xls"
-              and uint32be(0) == 0xd0cf11e0 // xls
-          )
-          or
-          (
-              filename iendswith ".xlsx"
-              and uint32be(0) == 0x504b0304 // unencrypted xlsx = pkzip
-          )
+         // no need to check if an xls is password protected, because it's trivial to break
+         (
+            filename iendswith ".xls"
+            and uint32be(0) == 0xd0cf11e0  // xls
+         )
+         or
+         (
+            filename iendswith ".xlsx"
+            and uint32be(0) == 0x504b0304  // unencrypted xlsx = pkzip
+         )
       )
 }
 
@@ -544,13 +536,53 @@ rule SUSP_Password_XLS_Encrypted {
    condition:
       // match password and the german passwort:
       (
-         filename istartswith "passwor" or        /* EN / DE */
-         filename istartswith "contrase" or       /* ES */
-         filename istartswith "mot de pass" or   /* FR */
-         filename istartswith "mot_de_pass" or   /* FR */
-         filename istartswith "motdepass" or     /* FR */
-         filename istartswith "wachtwoord"        /* NL */
+         filename istartswith "passwor" or  /* EN / DE */
+         filename istartswith "contrase" or  /* ES */
+         filename istartswith "mot de pass" or  /* FR */
+         filename istartswith "mot_de_pass" or  /* FR */
+         filename istartswith "motdepass" or  /* FR */
+         filename istartswith "wachtwoord"  /* NL */
       )
       and filename iendswith ".xlsx"
-      and uint32be(0) == 0xd0cf11e0 // encrypted xlsx = CDFV2
+      and uint32be(0) == 0xd0cf11e0  // encrypted xlsx = CDFV2
+}
+
+rule SUSP_DLL_SideLoading_Characteristics_Feb26 {
+   meta:
+      description = "Detects suspicious log.dll used by Bitdefender Submission Wizard and seen being used in LotusBlossom toolkit"
+      author = "Florian Roth"
+      reference = "https://www.rapid7.com/blog/post/tr-chrysalis-backdoor-dive-into-lotus-blossoms-toolkit/"
+      date = "2026-02-03"
+      score = 70
+      hash1 = "3bdc4c0637591533f1d4198a72a33426c01f69bd2e15ceee547866f65e26b7ad"
+   strings:
+      $s1 = "log.dll" fullword ascii
+   condition:
+      uint16(0) == 0x5a4d
+      and (  // this is what makes it suspicious
+         filesize < 300KB
+         or filesize > 500KB
+      )
+      and pe.exports("LogInit")
+      and pe.exports("LogWrite")
+      and $s1
+      and filename == "log.dll"
+}
+
+rule SUSP_Renamed_Bitdefender_Submission_Wizard_Feb26 {
+   meta:
+      description = "Detects renamed Bitdefender Submission Wizard, seen being used in the compromise of the infrastructure hosting Notepad++ by Chinese APT group Lotus Blossom"
+      author = "X__Junior"
+      reference = "https://www.rapid7.com/blog/post/tr-chrysalis-backdoor-dive-into-lotus-blossoms-toolkit/"
+      date = "2026-02-03"
+      score = 65
+      hash1 = "2da00de67720f5f13b17e9d985fe70f10f153da60c9ab1086fe58f069a156924"
+   strings:
+      $s1 = "BDSubWiz.exe" wide fullword
+      $s2 = "Bitdefender Submission Wizard" wide
+      $s3 = "Software\\Bitdefender" wide
+   condition:
+      uint16(0) == 0x5a4d
+      and all of ($s*)
+      and not filename == "BDSubWiz.exe"
 }
