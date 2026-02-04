@@ -4548,4 +4548,16 @@ C:\\perflogs\\RunSchedulerTaskOnce\.ps1;85
 /tmp/shell\.sh;65
 /tmp/shell\.txt;65
 
+# Lotusblossom Notepad++ Exploitation https://www.rapid7.com/blog/post/tr-chrysalis-backdoor-dive-into-lotus-blossoms-toolkit/
+\\USOShared\\[a-zA-Z0-9]{1,15}\.(c|dll|exe);75
+\\AppData\\Roaming\\ProShow\\[a-zA-Z0-9]{1}.txt;75
+\\AppData\\Roaming\\Adobe\\Scripts\\[a-zA-Z0-9]{1}.txt;75
+\\AppData\\Roaming\\Bluetooth\\log\.dll;75
+\\AppData\\Roaming\\Bluetooth\\BluetoothService\.exe;75
+\\AppData\\Roaming\\ProShow\\load$;75
+\\AppData\\Roaming\\ProShow\\ProShow.\exe;75
+\\AppData\\Roaming\\Adobe\\Scripts\\alien\.ini;75
+\\AppData\\Roaming\\Adobe\\Scripts\\script.exe;75
+\\libtcc\.dll;60
+
 # End
