@@ -3,19 +3,21 @@ rule MAL_JS_NPM_SupplyChain_Attack_Nov25 {
       description = "Detects malicious JavaScript worm bun_environment.js"
       author = "Marius Benthin"
       date = "2025-11-24"
+      modified = "2025-12-15"
       reference = "https://www.aikido.dev/blog/shai-hulud-strikes-again-hitting-zapier-ensdomains"
       hash = "62ee164b9b306250c1172583f138c9614139264f889fa99614903c12755468d0"
       score = 80
    strings:
       $sa1 = "npm publish"
+      $sa2 = "NPM_TOKEN"
+      $sa3 = "NPM_CONFIG_TOKEN"
 
-      $sb1 = "iamcredentials"
-      $sb2 = "secretmanager"
-      $sb3 = "secretsmanager"
-      $sb4 = "-fips."
+      $sb1 = "GITHUB_"
+      $sb2 = "GITLAB_"
+      $sb3 = "TEAMCITY_"
    condition:
       filesize < 20MB
-      and $sa1
+      and all of ($sa*)
       and 2 of ($sb*)
 }
 
@@ -24,12 +26,13 @@ rule SUSP_JS_NPM_Sha1_Hulud_Nov25 {
       description = "Detects suspicious indicators for Sha1 Hulud worm"
       author = "Marius Benthin"
       date = "2025-11-24"
+      modified = "2025-12-15"
       reference = "https://www.aikido.dev/blog/shai-hulud-strikes-again-hitting-zapier-ensdomains"
       hash = "62ee164b9b306250c1172583f138c9614139264f889fa99614903c12755468d0"
-      score = 60
+      score = 70
    strings:
-      $x1 = "Sha1-Hulud:"
-      $x2 = "SHA1HULUD"
+      $x1 = "Sha1-Hulud:\\x"
+      $x2 = "SHA1HULUD\"`"
    condition:
       filesize < 20MB
       and 1 of them
@@ -40,17 +43,21 @@ rule SUSP_JS_NPM_SetupScript_Nov25 {
       description = "Detects suspicious JavaScript which exits silently and checks operating system"
       author = "Marius Benthin"
       date = "2025-11-24"
+      modified = "2025-12-15"
       reference = "https://www.aikido.dev/blog/shai-hulud-strikes-again-hitting-zapier-ensdomains"
       hash = "a3894003ad1d293ba96d77881ccd2071446dc3f65f434669b49b3da92421901a"
       score = 70
    strings:
-      $s1 = "require('child_process')"
-      $s2 = "process.exit(0)"
-      $s3 = "process.platform ==="
-      $s4 = "().catch((e"
+      $sa1 = "require('child_process')"
+      $sa2 = "process.platform ==="
+
+      $sb1 = "().catch((e"
+      $sb2 = "process.exit(0)"
    condition:
       filesize < 100KB
-      and all of them
+      and all of ($sa*)
+      and $sb1 in (filesize - 50..filesize)
+      and $sb2 in (filesize - 30..filesize)
 }
 
 rule MAL_NPM_SupplyChain_Attack_PreInstallScript_Nov25 {
