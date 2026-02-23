@@ -248,6 +248,7 @@ rule HKTL_NET_NAME_SharpBuster {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and all of them
 }
 
+/* removed, too many FP
 rule HKTL_NET_NAME_AmsiBypass {
     meta:
         description = "Detects .NET red/black-team tools via name"
@@ -267,6 +268,7 @@ rule HKTL_NET_NAME_AmsiBypass {
         (uint16(0) == 0x5A4D and uint32(uint32(0x3C)) == 0x00004550) and all of ($s*)
         and not 1 of ($fp*)
 }
+*/ 
 
 rule HKTL_NET_NAME_Recon_AD {
     meta:
