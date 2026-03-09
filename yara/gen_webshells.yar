@@ -961,9 +961,9 @@ rule WEBSHELL_PHP_Double_Eval_Tiny
         license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
         author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
-        score = 75
+        score = 70
         date = "2021-01-11"
-        modified = "2023-07-05"
+        modified = "2026-02-23"
         hash = "f66fb918751acc7b88a17272a044b5242797976c73a6e54ac6b04b02f61e9761"
         hash = "6b2f0a3bd80019dea536ddbf92df36ab897dd295840cb15bb7b159d0ee2106ff"
         hash = "aabfd179aaf716929c8b820eefa3c1f613f8dcac"
@@ -977,6 +977,7 @@ rule WEBSHELL_PHP_Double_Eval_Tiny
         $fp1 = "clone" fullword wide ascii
         $fp2 = "* @assert" ascii
         $fp3 = "*@assert" ascii
+        $fp4 = "--EXPECT--" ascii
 
         //strings from private rule capa_php_old_safe
         $php_short = "<?" wide ascii
