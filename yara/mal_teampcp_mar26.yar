@@ -24,7 +24,7 @@ rule MAL_Telnyx_SupplyChain_Mar26 {
       hash = "ab4c4aebb52027bf3d2f6b2dcef593a1a2cff415774ea4711f7d6e0aa1451d4e"
       score = 80
    strings:
-      $s1 = "VXNlci1BZ2VudA=="  // User-Agent
+      $s1 = "bXNidWlsZC5leGU="  // msbuild.exe
       $s2 = "TW96aWxsY"  // Mozilla/
       $s3 = ".getnframes("  // number of WAV audio frames
       $s4 = "exec(base64.b64decode("
