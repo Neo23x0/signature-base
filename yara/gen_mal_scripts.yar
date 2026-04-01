@@ -75,7 +75,7 @@ rule Certutil_Decode_OR_Download {
       reference = "Internal Research"
       score = 40
       date = "2017-08-29"
-      modified = "2025-04-01"
+      modified = "2026-04-01"
       id = "63bdefd2-225a-56d5-b615-5e236c97f050"
    strings:
       $a1 = "certutil -decode " ascii wide
