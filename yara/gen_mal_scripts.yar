@@ -75,7 +75,7 @@ rule Certutil_Decode_OR_Download {
       reference = "Internal Research"
       score = 40
       date = "2017-08-29"
-      modified = "2023-10-19"
+      modified = "2026-04-01"
       id = "63bdefd2-225a-56d5-b615-5e236c97f050"
    strings:
       $a1 = "certutil -decode " ascii wide
@@ -86,6 +86,7 @@ rule Certutil_Decode_OR_Download {
       $a6 = "certutil.exe -urlcache -split -f http" ascii wide
 
       $fp_msi = { 52 00 6F 00 6F 00 74 00 20 00 45 00 6E 00 74 00 72 00 79 }
+      $fp_doc = "https://docs.aws.amazon.com" ascii
    condition:
       filesize < 700KB
       and 1 of ($a*)
