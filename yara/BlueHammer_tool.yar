@@ -1,6 +1,6 @@
 rule HKTL_BlueHammer_Apr26 {
    meta:
-      author = "AzizFarghly"
+      author = "AzizFarghly (Nextron-Systems)"
       description = "Detects Nightmare-Eclipse/BlueHammer (FunnyApp), a Windows local privilege escalation PoC that abuses a Defender signature-update RPC and a junction/symlink race to leak the SAM hive and derive NTLM hashes - giving an unprivileged user full SYSTEM-level credential access."
       date = "2026-04-07"
       reference = "https://github.com/Nightmare-Eclipse/BlueHammer"
