@@ -8,40 +8,40 @@
 
 rule Quasar_RAT_Core_Detection {
    meta:
-      description = "Detects Quasar RAT based on GUID, process injection, and surveillance strings including VM detection and C2 indicators"
+      description = "Detects Quasar RAT in the dual-RAT campaign by campaign C2 IP or multi-category behavioral indicators — requires multiple categories together to avoid FP on legitimate tools that use any one of these APIs (WriteProcessMemory, CreateRemoteThread, etc. are widely used)"
       license = "CC BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/"
       author = "The Hunters Ledger"
       reference = "https://pixelatedcontinuum.github.io/Threat-Intel-Reports/hunting-detections/dual-rat-analysis/"
       date = "2025-12-06"
-      hash1 = "2c4387ce18be279ea735ec4f0092698534921030aaa69949ae880e41a5c73766"
       family = "QuasarRAT"
       id = "e5642197-5e01-5aa7-ac85-5a645a92e85c"
    strings:
-      $inject1 = "inject_thread"
-      $inject2 = "WriteProcessMemory"
-      $inject3 = "CreateRemoteThread"
+      $inject1 = "inject_thread" fullword
+      $inject2 = "WriteProcessMemory" fullword
+      $inject3 = "CreateRemoteThread" fullword
       $vm_detect1 = "VirtualBox"
       $vm_detect2 = "VMware"
       $vm_detect3 = "QEMU"
       $debug_detect1 = "Debugger"
-      $debug_detect2 = "IsDebuggerPresent"
+      $debug_detect2 = "IsDebuggerPresent" fullword
       $c2_1 = "185.208.159.182"
       $c2_2 = "ipwho.is"
       $c2_3 = "api.ipify.org"
       $persist1 = "RuntimeBroker"
       $persist2 = "schtasks"
       $persist3 = "ONLOGON"
-      $surv1 = "keylogger"
-      $surv2 = "screenshot"
-      $surv3 = "webcam"
-      $surv4 = "clipboard"
+      $surv1 = "keylogger" fullword
+      $surv2 = "screenshot" fullword
+      $surv3 = "webcam" fullword
+      $surv4 = "clipboard" fullword
    condition:
       uint16(0) == 0x5A4D and
+      filesize < 5MB and
       (
-      any of ($inject*) or
-      (any of ($vm_detect*) and any of ($debug_detect*)) or
-      any of ($c2_*) or
-      (any of ($persist*) and any of ($surv*))
+         $c2_1 or
+         (2 of ($inject*) and 2 of ($surv*)) or
+         (all of ($vm_detect*) and any of ($debug_detect*) and 2 of ($surv*)) or
+         (2 of ($persist*) and 3 of ($surv*) and 1 of ($inject*))
       )
 }
 
@@ -65,7 +65,7 @@ rule Quasar_RAT_MarkOfWeb_Removal {
 
 rule NjRAT_XWorm_Core_Detection {
    meta:
-      description = "Detects NjRAT/XWorm based on VB.NET characteristics, Pastebin dead-drop C2, and critical process protection"
+      description = "Detects NjRAT/XWorm via NjRAT-specific config field names (the misspelled 'Groub' and 'USBNM' are NjRAT internal identifiers — high-confidence anchors) or Pastebin dead-drop C2 combined with config indicators. Avoids FPs on every VB.NET binary."
       license = "CC BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/"
       author = "The Hunters Ledger"
       reference = "https://pixelatedcontinuum.github.io/Threat-Intel-Reports/hunting-detections/dual-rat-analysis/"
@@ -76,36 +76,32 @@ rule NjRAT_XWorm_Core_Detection {
    strings:
       $vb_net1 = "Microsoft.VisualBasic"
       $vb_net2 = "System.Windows.Forms"
-      $config1 = "PasteUrl"
-      $config2 = "Groub"
-      $config3 = "USBNM"
-      $config4 = "InstallDir"
-      $config5 = "Mutex"
+      $config_specific1 = "Groub" fullword ascii wide
+      $config_specific2 = "USBNM" fullword ascii wide
+      $config_specific3 = "PasteUrl" fullword ascii wide
+      $config_generic1 = "InstallDir" fullword
+      $config_generic2 = "Mutex" fullword
       $pastebin1 = "pastebin.com"
       $pastebin2 = "raw/"
       $pastebin3 = "iPhone Safari"
-      $persist1 = "conhost"
+      $persist1 = "conhost" fullword
       $persist2 = "minute /mo 1"
       $persist3 = "Startup"
-      $persist4 = "Run"
-      $critical1 = "RtlSetProcessIsCritical"
+      $persist4 = "schtasks /create"
+      $critical1 = "RtlSetProcessIsCritical" fullword
       $critical2 = "BSOD"
-      $sleep1 = "SetThreadExecutionState"
-      $surv1 = "capCreateCaptureWindowA"
-      $surv2 = "webcam"
-      $surv3 = "microphone"
-      $surv4 = "keylogger"
+      $surv1 = "capCreateCaptureWindowA" fullword
+      $surv2 = "webcam" fullword
+      $surv3 = "microphone" fullword
+      $surv4 = "keylogger" fullword
    condition:
       uint16(0) == 0x5A4D and
-      filesize < 50000 and
+      filesize < 500KB and
       (
-      any of ($vb_net*) or
-      any of ($config*) or
-      any of ($pastebin*) or
-      any of ($persist*) or
-      any of ($critical*) or
-      any of ($sleep*) or
-      any of ($surv*)
+         hash.sha256(0, filesize) == "950aadba6993619858294599b3458d5d2221f10fe72b3db3e49883d496a705bb" or
+         1 of ($config_specific*) or
+         (any of ($pastebin*) and 2 of ($config_generic*, $persist*, $critical*)) or
+         ($critical1 and 2 of ($surv*) and 1 of ($persist*))
       )
 }
 

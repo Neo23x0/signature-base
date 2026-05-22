@@ -99,25 +99,24 @@ rule FleetAgent_Family_General {
       family = "FleetAgent"
       id = "fafd5b4a-f551-5184-9fbc-e91c369bf3aa"
    strings:
-      $name1 = "FleetAgent" ascii wide nocase
-      $name2 = "FleetAgentFUD" ascii wide
-      $name3 = "FleetAgentAdvanced" ascii wide
-      $name4 = "Microsoft.NET.Runtime" ascii wide
-      $ver1 = "agent_ver" ascii wide
+      $name1 = "FleetAgent" ascii wide fullword
+      $name2 = "FleetAgentFUD" ascii wide fullword
+      $name3 = "FleetAgentAdvanced" ascii wide fullword
+      $ms_masquerade = "Microsoft.NET.Runtime" ascii wide
+      $ver1 = "agent_ver" ascii wide fullword
       $ver2 = "3.0.0" ascii wide
-      $cfg1 = "machine_id" ascii wide
-      $cfg2 = "hostname" ascii wide
-      $cfg3 = "agent_ver" ascii wide
-      $api1 = "VirtualProtect" ascii
-      $api2 = "ToBase64String" ascii
-      $api3 = "GetProcAddress" ascii
+      $cfg1 = "machine_id" ascii wide fullword
+      $cfg2 = "hostname" ascii wide fullword
+      $api1 = "VirtualProtect" ascii fullword
+      $api2 = "ToBase64String" ascii fullword
+      $api3 = "GetProcAddress" ascii fullword
    condition:
       uint16(0) == 0x5A4D and
       filesize < 500KB and
       (
-      any of ($name*) or
-      (2 of ($cfg*) and any of ($ver*)) or
-      ($name4 and 2 of ($api*))
+         any of ($name1, $name2, $name3) or
+         ($ver1 and 2 of ($cfg*)) or
+         ($ms_masquerade and $ver1 and 2 of ($api*))
       )
 }
 
