@@ -305,7 +305,7 @@ rule Arsenal237_enc_c2_FileHash {
 
 rule Arsenal237_ChaCha20_Encryption_Constants {
    meta:
-      description = "Detects ChaCha20 cipher implementation used by Arsenal-237 enc_c2.exe ransomware for file encryption"
+      description = "Detects ChaCha20 cipher constants alongside Arsenal-237's specific aead-0.5.2 Rust crate version — combination distinguishes Arsenal-237 from generic ChaCha20 implementations (Tor, WireGuard, OpenSSL, etc.)"
       license = "CC BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/"
       author = "The Hunters Ledger"
       reference = "https://pixelatedcontinuum.github.io/Threat-Intel-Reports/hunting-detections/arsenal-237-enc_c2-exe/"
@@ -319,12 +319,15 @@ rule Arsenal237_ChaCha20_Encryption_Constants {
       $chacha_library = "aead-0.5.2" ascii
       $chacha_function = "chacha20" ascii nocase
    condition:
-      any of them
+      uint16(0) == 0x5A4D and
+      filesize < 20MB and
+      $chacha_library and
+      2 of them
 }
 
 rule Arsenal237_Tor_C2_Infrastructure {
    meta:
-      description = "Detects Arsenal-237 enc_c2.exe Tor hidden service C2 domain and beacon endpoint strings"
+      description = "Detects Arsenal-237 enc_c2.exe Tor hidden service C2 — either by the specific onion address or by the /c2/beacon.php endpoint pattern in a PE context (avoids FP on generic Tor-aware binaries)"
       license = "CC BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/"
       author = "The Hunters Ledger"
       reference = "https://pixelatedcontinuum.github.io/Threat-Intel-Reports/hunting-detections/arsenal-237-enc_c2-exe/"
@@ -338,7 +341,12 @@ rule Arsenal237_Tor_C2_Infrastructure {
       $c2_protocol = "POST /c2/beacon.php" ascii
       $onion_tld = ".onion" ascii
    condition:
-      any of them
+      uint16(0) == 0x5A4D and
+      filesize < 20MB and
+      ($c2_domain or
+       ($c2_endpoint and $c2_protocol) or
+       ($c2_endpoint and $onion_tld) or
+       ($c2_protocol and $onion_tld))
 }
 
 rule Arsenal237_Ransomware_Operations {
@@ -381,7 +389,7 @@ rule Arsenal237_TEB_AntiDebug {
 
 rule Arsenal237_Rust_Compilation_Artifacts {
    meta:
-      description = "Detects Rust compiler and Cargo registry artifacts in Arsenal-237 malware binaries"
+      description = "Detects Rust compilation artifacts unique to Arsenal-237 build environment — /root/.cargo path indicates root-built (rare in legitimate Rust binaries) combined with index.crates.io presence"
       license = "CC BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/"
       author = "The Hunters Ledger"
       reference = "https://pixelatedcontinuum.github.io/Threat-Intel-Reports/hunting-detections/arsenal-237-enc_c2-exe/"
@@ -391,10 +399,13 @@ rule Arsenal237_Rust_Compilation_Artifacts {
    strings:
       $rust_lib_path = "/root/.cargo/registry/src/" ascii
       $crates_io = "index.crates.io" ascii
-      $rustc = "rustc" ascii
-      $rust_std = "std" ascii
+      $rustc_marker = "rustc-1." ascii
+      $cargo_marker = "/.cargo/registry/" ascii
    condition:
-      2 of them
+      uint16(0) == 0x5A4D and
+      filesize < 20MB and
+      $rust_lib_path and
+      1 of ($crates_io, $rustc_marker, $cargo_marker)
 }
 
 rule Arsenal237_RaaS_Builder_Tracking {
@@ -597,7 +608,7 @@ rule Arsenal237_ChaCha20_Key {
 
 rule Arsenal237_Campaign_Identifiers {
    meta:
-      description = "Detects Arsenal-237 new_enc.exe campaign ID, version string v0.5-beta, and RustRansomNoteTask scheduled task name"
+      description = "Detects Arsenal-237 new_enc.exe by campaign ID or RustRansomNoteTask scheduled-task name (version string alone is too generic to anchor)"
       license = "CC BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/"
       author = "The Hunters Ledger"
       reference = "https://pixelatedcontinuum.github.io/Threat-Intel-Reports/hunting-detections/arsenal-237-new_enc-exe/"
@@ -608,9 +619,12 @@ rule Arsenal237_Campaign_Identifiers {
    strings:
       $campaign_id = "ICIIXGD1X8ZJ4T1MTQ6TLQIDJEMDE7U4" ascii wide
       $version = "v0.5-beta" ascii wide
-      $ransom_task = "RustRansomNoteTask" ascii wide
+      $ransom_task = "RustRansomNoteTask" ascii wide fullword
    condition:
-      any of them
+      uint16(0) == 0x5A4D and
+      filesize < 20MB and
+      ($campaign_id or $ransom_task or
+       ($version and ($campaign_id or $ransom_task)))
 }
 
 rule Arsenal237_Veritas_Backup_Targeting {
