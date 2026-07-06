@@ -6,24 +6,6 @@
    License: CC BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/
 */
 
-rule Arsenal237_BdApiUtil64_Hash {
-   meta:
-      description = "Detects Arsenal-237 BdApiUtil64.sys by file hash - BYOVD weaponized Baidu Antivirus kernel driver"
-      license = "CC BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/"
-      author = "The Hunters Ledger"
-      reference = "https://pixelatedcontinuum.github.io/Threat-Intel-Reports/hunting-detections/arsenal-237-BdApiUtil64-sys/"
-      date = "2026-01-26"
-      hash1 = "47ec51b5f0ede1e70bd66f3f0152f9eb536d534565dbb7fcc3a05f542dbe4428"
-      hash2 = "148c0cde4f2ef807aea77d7368f00f4c519f47ef"
-      hash3 = "ced47b89212f3260ebeb41682a4b95ec"
-      family = "Arsenal-237"
-      id = "9ae7cd8b-7222-580f-9578-9b97bb96395c"
-   condition:
-      hash.sha256(0, filesize) == "47ec51b5f0ede1e70bd66f3f0152f9eb536d534565dbb7fcc3a05f542dbe4428" or
-      hash.md5(0, filesize) == "ced47b89212f3260ebeb41682a4b95ec" or
-      hash.sha1(0, filesize) == "148c0cde4f2ef807aea77d7368f00f4c519f47ef"
-}
-
 rule Arsenal237_BdApiUtil_Signature {
    meta:
       description = "Detects BdApiUtil64.sys by Baidu signature strings and PDB path - BYOVD with legitimate expired certificate"
@@ -227,22 +209,6 @@ rule Arsenal237_BYOVD_Service_Creation {
       4 of ($api*) and
       $kernel_driver and
       1 of ($temp*)
-}
-
-rule Arsenal237_LPE_EXE_Hash {
-   meta:
-      description = "Detects Arsenal-237 lpe.exe by file hash - local privilege escalation wrapper with 5 independent escalation techniques"
-      license = "CC BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/"
-      author = "The Hunters Ledger"
-      reference = "https://pixelatedcontinuum.github.io/Threat-Intel-Reports/hunting-detections/arsenal-237-lpe-exe/"
-      date = "2026-01-25"
-      hash1 = "c4dda7b5c5f6eab49efc86091377ab08275aa951d956a5485665954830d1267e"
-      hash2 = "47400a6b7c84847db0513e6dbc04e469"
-      family = "Arsenal-237"
-      id = "c5f766a2-7d0c-5acf-ba85-0197cc725230"
-   condition:
-      hash.sha256(0, filesize) == "c4dda7b5c5f6eab49efc86091377ab08275aa951d956a5485665954830d1267e" or
-      hash.md5(0, filesize) == "47400a6b7c84847db0513e6dbc04e469"
 }
 
 rule Arsenal237_LPE_Token_Manipulation {

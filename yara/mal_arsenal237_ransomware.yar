@@ -94,25 +94,6 @@ rule Reflective_DLL_Injection_Framework {
       ($reflective_loader and all of ($alloc, $write, $protect, $create_remote))
 }
 
-rule Arsenal237_dec_fixed_FileHash {
-   meta:
-      description = "Detects Arsenal-237 dec_fixed.exe per-victim ransomware decryptor by exact cryptographic hash - recovery tool not an attack tool"
-      license = "CC BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/"
-      author = "The Hunters Ledger"
-      reference = "https://pixelatedcontinuum.github.io/Threat-Intel-Reports/hunting-detections/arsenal-237-dec_fixed-exe/"
-      date = "2026-01-26"
-      hash1 = "d73c4f127c5c0a7f9bf0f398e95dd55c7e8f6f6a5783c8cb314bd99c2d1c9802"
-      hash2 = "29014d4d6fc42219cd9cdc130b868382cf2c14c2"
-      hash3 = "7c5493a0a5df52682a5c2ba433634601"
-      family = "Arsenal-237"
-      malware_type = "Ransomware Decryptor"
-      id = "5b240e15-6f55-51b8-8f90-b3b14b9e9db8"
-   condition:
-      hash.sha256(0, filesize) == "d73c4f127c5c0a7f9bf0f398e95dd55c7e8f6f6a5783c8cb314bd99c2d1c9802" or
-      hash.md5(0, filesize) == "7c5493a0a5df52682a5c2ba433634601" or
-      hash.sha1(0, filesize) == "29014d4d6fc42219cd9cdc130b868382cf2c14c2"
-}
-
 rule Arsenal237_Victim_Key_Decryptor {
    meta:
       description = "Detects Arsenal-237 dec_fixed.exe victim-specific hardcoded ChaCha20 decryption key matching new_enc.exe encryption key"
@@ -189,25 +170,6 @@ rule Arsenal237_Rust_Compiled_Tools {
       $rust_constant
 }
 
-rule Arsenal237_nethost_FileHash {
-   meta:
-      description = "Detects Arsenal-237 nethost.dll C2 communication module by file hash - Rust DLL hijacking persistence targeting .NET host library"
-      license = "CC BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/"
-      author = "The Hunters Ledger"
-      reference = "https://pixelatedcontinuum.github.io/Threat-Intel-Reports/hunting-detections/arsenal-237-nethost-dll/"
-      date = "2026-01-26"
-      hash1 = "158f61b6d10ea2ce78769703a2ffbba9c08f0172e37013de960d9efe5e9fde14"
-      hash2 = "622ddbacaf769aef383435162a203489c08c8468"
-      hash3 = "f91ff1bb5699524524fff0e2587af040"
-      family = "Arsenal-237"
-      malware_type = "C2 Communication Module"
-      id = "f3063e07-ac28-5aac-8f6e-159e27d5944f"
-   condition:
-      hash.sha256(0, filesize) == "158f61b6d10ea2ce78769703a2ffbba9c08f0172e37013de960d9efe5e9fde14" or
-      hash.md5(0, filesize) == "f91ff1bb5699524524fff0e2587af040" or
-      hash.sha1(0, filesize) == "622ddbacaf769aef383435162a203489c08c8468"
-}
-
 rule Arsenal237_nethost_C2_Strings {
    meta:
       description = "Detects Arsenal-237 nethost.dll by hardcoded C2 target strings and environment variable discovery concatenation artifact"
@@ -282,25 +244,6 @@ rule Arsenal237_nethost_Rust_Indicators {
       $assertion_fail = "assertion `left  right` failed" ascii
    condition:
       2 of them and uint16(0) == 0x5A4D
-}
-
-rule Arsenal237_enc_c2_FileHash {
-   meta:
-      description = "Detects Arsenal-237 enc_c2.exe Rust-compiled ransomware by file hash - Tor C2 with ChaCha20 encryption"
-      license = "CC BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/"
-      author = "The Hunters Ledger"
-      reference = "https://pixelatedcontinuum.github.io/Threat-Intel-Reports/hunting-detections/arsenal-237-enc_c2-exe/"
-      date = "2026-01-26"
-      hash1 = "613d4d0f1612686742889e834ebc9ebff6ae021cf81a4c50f66369195ca01899"
-      hash2 = "34d3c75e79633eb3bf47e751fb31274760aeae09"
-      hash3 = "32a3497e57604e1037f1ff9993a8fdaa"
-      family = "Arsenal-237"
-      malware_type = "Ransomware"
-      id = "bd988044-c636-5d46-8fde-607527b38cde"
-   condition:
-      hash.sha256(0, filesize) == "613d4d0f1612686742889e834ebc9ebff6ae021cf81a4c50f66369195ca01899" or
-      hash.md5(0, filesize) == "32a3497e57604e1037f1ff9993a8fdaa" or
-      hash.sha1(0, filesize) == "34d3c75e79633eb3bf47e751fb31274760aeae09"
 }
 
 rule Arsenal237_ChaCha20_Encryption_Constants {
@@ -429,25 +372,6 @@ rule Arsenal237_RaaS_Builder_Tracking {
       ($builder_id_generic and $encryption_key and $victim_id and $machine_info))
 }
 
-rule Arsenal237_FullTestEnc_FileHash {
-   meta:
-      description = "Detects Arsenal-237 full_test_enc.exe by exact cryptographic hash - advanced Rust ransomware with ChaCha20+RSA and parallel encryption"
-      license = "CC BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/"
-      author = "The Hunters Ledger"
-      reference = "https://pixelatedcontinuum.github.io/Threat-Intel-Reports/hunting-detections/arsenal-237-full_test_enc-exe/"
-      date = "2026-01-27"
-      hash1 = "4d1fe7b54a0ce9ce2082c167b662ec138b890e3f305e67bdc13a5e9a24708518"
-      hash2 = "bc0788a36b6b839fc917be0577cd14e584c71fd8"
-      hash3 = "1fe8b9a14f9f8435c5fb5156bcbc174e"
-      family = "Arsenal-237"
-      malware_type = "Ransomware"
-      id = "80c95a71-ba72-500c-a52a-454d5780b2bc"
-   condition:
-      hash.sha256(0, filesize) == "4d1fe7b54a0ce9ce2082c167b662ec138b890e3f305e67bdc13a5e9a24708518" or
-      hash.md5(0, filesize) == "1fe8b9a14f9f8435c5fb5156bcbc174e" or
-      hash.sha1(0, filesize) == "bc0788a36b6b839fc917be0577cd14e584c71fd8"
-}
-
 rule Arsenal237_RustCrypto_ChaCha20_RSA {
    meta:
       description = "Detects Arsenal-237 full_test_enc.exe Rust ChaCha20 + RSA cryptographic library combination used for file encryption"
@@ -568,25 +492,6 @@ rule Arsenal237_FullTestEnc_Comprehensive {
       $chacha and $rsa_lib and $ransom and
       (1 of ($rayon, $walkdir, $sysinfo)) and
       ($lockbox or $netuse or "Ransom ID" ascii)
-}
-
-rule Arsenal237_new_enc_FileHash {
-   meta:
-      description = "Detects Arsenal-237 new_enc.exe Rust ransomware by exact file hash - human-operated ransomware with hardcoded ChaCha20 key"
-      license = "CC BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/"
-      author = "The Hunters Ledger"
-      reference = "https://pixelatedcontinuum.github.io/Threat-Intel-Reports/hunting-detections/arsenal-237-new_enc-exe/"
-      date = "2026-01-26"
-      hash1 = "90d223b70448d68f7f48397df6a9e57de3a6b389d5d8dc0896be633ca95720f2"
-      hash2 = "2c01cefba27c4d3fcb3b450cb8e625e89bc54363"
-      hash3 = "a16ba61114fa5a40afce54459bbff21e"
-      family = "Arsenal-237"
-      malware_type = "Ransomware"
-      id = "d2228b50-9c6e-5242-8a21-ebc3bafbeac1"
-   condition:
-      hash.sha256(0, filesize) == "90d223b70448d68f7f48397df6a9e57de3a6b389d5d8dc0896be633ca95720f2" or
-      hash.md5(0, filesize) == "a16ba61114fa5a40afce54459bbff21e" or
-      hash.sha1(0, filesize) == "2c01cefba27c4d3fcb3b450cb8e625e89bc54363"
 }
 
 rule Arsenal237_ChaCha20_Key {
