@@ -6,6 +6,8 @@
    License: CC BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/
 */
 
+import "hash"
+
 rule Remcos_RAT_Family_Detection {
    meta:
       description = "Detects Remcos RAT based on mutex, strings, keylogging, and structural patterns - high confidence family rule"
@@ -104,7 +106,8 @@ rule Remcos_UAC_Bypass_Persistence {
       (any of ($uac_cmd_*) and $install_path) or
       (3 of ($persist_*) and $install_path) or
       ($persist_2 and $install_path and $remcos_mutex) or
-      ($remcos_mutex and 2 of ($persist_*) and any of ($uac_cmd_*))
+      ($remcos_mutex and 2 of ($persist_*) and any of ($uac_cmd_*)) or
+      ($remcos_mutex and $melt_1 and $melt_3)
       )
 }
 
@@ -197,6 +200,7 @@ rule Remcos_OpenDirectory_Campaign_203_159_90_147 {
       (
       $mutex and
       (
+      $window_class or
       $uac_cmd or
       ($chrome_path and $firefox_path) or
       ($install_path and $temp_dll) or

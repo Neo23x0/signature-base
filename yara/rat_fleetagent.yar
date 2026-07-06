@@ -6,6 +6,8 @@
    License: CC BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/
 */
 
+import "hash"
+
 rule FleetAgentFUD_WebSocket_C2_Pattern {
    meta:
       description = "Detects FleetAgentFUD.exe WebSocket C2 implementation via protocol strings and message type indicators"
@@ -67,7 +69,8 @@ rule FleetAgentFUD_PowerShell_Bypass {
       (
       $ps1 or
       $ps2 or
-      ($ps3 and ($ps5 or $ps6) and $ps7)
+      ($ps3 and ($ps5 or $ps6) and $ps7) or
+      ($ps3 and $ps4 and ($ps5 or $ps6 or $ps7))
       )
 }
 
@@ -97,7 +100,7 @@ rule FleetAgent_Family_General {
       filesize < 500KB and
       (
          any of ($name1, $name2, $name3) or
-         ($ver1 and 2 of ($cfg*)) or
+         ($ver1 and $ver2 and 2 of ($cfg*)) or
          ($ms_masquerade and $ver1 and 2 of ($api*))
       )
 }

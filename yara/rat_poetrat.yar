@@ -55,7 +55,8 @@ rule Agent_exe_PoetRAT_Comprehensive {
       (2 of ($crypto*)) and
       (1 of ($str_*)) and
       (1 of ($net*)) and
-      (1 of ($surv*))
+      (1 of ($surv*)) and
+      $reg1
       )
       )
 }

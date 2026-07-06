@@ -6,6 +6,8 @@
    License: CC BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/
 */
 
+import "hash"
+
 rule Quasar_RAT_Core_Detection {
    meta:
       description = "Detects Quasar RAT in the dual-RAT campaign by campaign C2 IP or multi-category behavioral indicators — requires multiple categories together to avoid FP on legitimate tools that use any one of these APIs (WriteProcessMemory, CreateRemoteThread, etc. are widely used)"
@@ -41,7 +43,8 @@ rule Quasar_RAT_Core_Detection {
          $c2_1 or
          (2 of ($inject*) and 2 of ($surv*)) or
          (all of ($vm_detect*) and any of ($debug_detect*) and 2 of ($surv*)) or
-         (2 of ($persist*) and 3 of ($surv*) and 1 of ($inject*))
+         (2 of ($persist*) and 3 of ($surv*) and 1 of ($inject*)) or
+         (1 of ($c2_2, $c2_3) and 2 of ($persist*) and 1 of ($surv*))
       )
 }
 
@@ -100,7 +103,7 @@ rule NjRAT_XWorm_Core_Detection {
       (
          hash.sha256(0, filesize) == "950aadba6993619858294599b3458d5d2221f10fe72b3db3e49883d496a705bb" or
          1 of ($config_specific*) or
-         (any of ($pastebin*) and 2 of ($config_generic*, $persist*, $critical*)) or
+         (any of ($pastebin*) and 1 of ($vb_net*) and 2 of ($config_generic*, $persist*, $critical*)) or
          ($critical1 and 2 of ($surv*) and 1 of ($persist*))
       )
 }

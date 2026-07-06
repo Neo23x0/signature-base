@@ -42,7 +42,8 @@ rule XWorm_V5_Core_Detection {
       (
       2 of ($dotnet_ws, $dotnet_crypto, $dotnet_diag) and
       3 of ($send_async, $recv_async, $websocket_state, $heartbeat, $reconnect) and
-      1 of ($hide_window, $get_console)
+      1 of ($hide_window, $get_console) and
+      1 of ($b64, $md5_hash)
       )
 }
 
@@ -70,7 +71,7 @@ rule XWorm_V5_Persistence_Mechanisms {
       filesize < 500KB and
       2 of ($schtask, $reg_run, $startup) and
       ($appdata or $copy_self) and
-      ($ps_bypass or $execution_pol)
+      ($ps_bypass or ($execution_pol and $bypass))
 }
 
 rule XWorm_V5_Surveillance_Capabilities {
@@ -152,7 +153,6 @@ rule XWorm_PowerShell_Recon {
    condition:
       uint16(0) == 0x5A4D and
       3 of them
-      }
 }
 
 rule XWorm_AgentSec_Authentication {
