@@ -6,6 +6,8 @@
    License: CC BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/
 */
 
+import "hash"
+
 rule Arsenal237_BdApiUtil_Signature {
    meta:
       description = "Detects BdApiUtil64.sys by Baidu signature strings and PDB path - BYOVD with legitimate expired certificate"
@@ -208,6 +210,7 @@ rule Arsenal237_BYOVD_Service_Creation {
       uint16(0) == 0x5A4D and
       4 of ($api*) and
       $kernel_driver and
+      $driver_ext and
       1 of ($temp*)
 }
 

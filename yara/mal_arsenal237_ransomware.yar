@@ -36,8 +36,8 @@ rule Chromelevator_Browser_Credential_Extraction {
       $load_resource = "LoadResource" nocase ascii
    condition:
       ($filename and $payload and ($extraction or ($cookies and $passwords))) or
-      (3 of ($chrome, $brave, $edge) and 2 of ($extraction, $cookies, $passwords)) or
-      ($reflective and $named_pipe and any of ($chrome, $brave, $edge)) or
+      (3 of ($chrome, $brave, $edge) and 2 of ($extraction, $cookies, $passwords, $payments)) or
+      ($reflective and $named_pipe and any of ($chrome, $brave, $edge) and 2 of ($create_pipe, $connect_pipe, $find_resource, $load_resource)) or
       (2 of ($verbose, $fingerprint, $output) and any of ($chrome, $brave, $edge))
 }
 
@@ -77,7 +77,7 @@ rule Reflective_DLL_Injection_Framework {
       family = "Arsenal-237"
       id = "4a88262f-f5b3-568c-b25a-3f54412b4ffc"
    strings:
-      $dos_header = "MZ" at 0
+      $dos_header = "MZ"
       $reflective_loader = "ReflectiveLoader" nocase ascii
       $reflective_export = "reflective" nocase ascii wide
       $alloc = "VirtualAllocEx" nocase ascii
@@ -89,7 +89,7 @@ rule Reflective_DLL_Injection_Framework {
       $zw_protect = "ZwProtectVirtualMemory" nocase ascii
       $zw_create = "ZwCreateThreadEx" nocase ascii
    condition:
-      ($reflective_loader and $dos_header) or
+      (($reflective_loader or $reflective_export) and $dos_header at 0) or
       ($reflective_loader and all of ($zw_alloc, $zw_write, $zw_protect, $zw_create)) or
       ($reflective_loader and all of ($alloc, $write, $protect, $create_remote))
 }
@@ -167,7 +167,7 @@ rule Arsenal237_Rust_Compiled_Tools {
    condition:
       filesize > 900KB and filesize < 1MB and
       $chacha20_lib and $poly1305_lib and
-      $rust_constant
+      $rust_constant and $rust_error
 }
 
 rule Arsenal237_nethost_C2_Strings {
@@ -186,7 +186,7 @@ rule Arsenal237_nethost_C2_Strings {
       $rust_panic = "runtime error" ascii
       $winsock_init = "WSAStartup" ascii
    condition:
-      ($c2_targets or $env_discovery) and uint16(0) == 0x5A4D
+      ($c2_targets or ($env_discovery and $rust_panic and $winsock_init)) and uint16(0) == 0x5A4D
 }
 
 rule Arsenal237_nethost_PowerShell_Templates {
@@ -327,7 +327,7 @@ rule Arsenal237_TEB_AntiDebug {
       $sleep_loop = { 68 88 13 00 00 FF 15 }
       $sleep_1000 = { 68 E8 03 00 00 FF 15 }
    condition:
-      ($teb_api and ($sleep_loop or $sleep_1000))
+      ($teb_api and $stack_base and ($sleep_loop or $sleep_1000))
 }
 
 rule Arsenal237_Rust_Compilation_Artifacts {
@@ -486,12 +486,13 @@ rule Arsenal237_FullTestEnc_Comprehensive {
       $sysinfo = "/sysinfo-" ascii
       $lockbox = ".lockbox" ascii
       $netuse = "net use" ascii
+      $ransom_id = "Ransom ID" ascii
    condition:
       uint16(0) == 0x5A4D and
       filesize > 10MB and filesize < 20MB and
       $chacha and $rsa_lib and $ransom and
       (1 of ($rayon, $walkdir, $sysinfo)) and
-      ($lockbox or $netuse or "Ransom ID" ascii)
+      ($lockbox or $netuse or $ransom_id)
 }
 
 rule Arsenal237_ChaCha20_Key {
