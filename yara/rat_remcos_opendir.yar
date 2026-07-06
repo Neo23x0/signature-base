@@ -192,8 +192,8 @@ rule Remcos_OpenDirectory_Campaign_203_159_90_147 {
       uint16(0) == 0x5A4D and
       filesize < 2MB and
       (
-      hash.md5(0, filesize) == "04693af3b0a7c9788daba8e35f429ba6" or
-      hash.md5(0, filesize) == "3d7b442573acf64c3aad17b23d224dc9" or
+      hash.sha256(0, filesize) == "ebdd31a7622288b15439396a5758ffb0133d28b4bb11e9386187661a4b7d5f82" or
+      hash.sha256(0, filesize) == "db218dd5f53fbcf39a6db043c8455667c3dbef44abe14865e8b962b4c676372e" or
       (
       $mutex and
       (

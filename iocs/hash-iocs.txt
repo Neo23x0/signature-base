@@ -3376,3 +3376,8 @@ aea55e42c4436236278e5692d3dcbcbe5fe6ce0b;DAEMON Tools Lite supplychain compromis
 2d4eb55b01f59c62c6de9aacba9b47267d398fe4;DAEMON Tools Lite supplychain compromise IOCs  https://securelist.com/tr/daemon-tools-backdoor/119654/
 9dbfc23ebf36b3c0b56d2f93116abb32656c42e4;DAEMON Tools Lite supplychain compromise IOCs  https://securelist.com/tr/daemon-tools-backdoor/119654/
 295ce86226b933e7262c2ce4b36bdd6c389aaaef;DAEMON Tools Lite supplychain compromise IOCs  https://securelist.com/tr/daemon-tools-backdoor/119654/
+
+072ce701ec0252eeddd6a0501555296bce512a7b90422addbb6d3619ae10f4ff;FleetAgentFUD.exe WebSocket RAT payload
+9fc6b69623133f5d6f1f4cda0ec4319300080c9bbaa0f88c93f01eeba84e80e7;FleetAgentAdvanced dropped payload RuntimeOptimization.exe
+d9e91be0c1936ebaf1e93148e40dc7b4c4e2e6b3e4a47e7c85b5d4e7c5f2d9a1;XWorm RAT v5.x agent_xworm.exe
+f8e7e73bf2b26635800a042e7890a35f7376508f288a1ced3d3e12b173c5cb7e;XWorm RAT v2.4.0 agent_xworm_v2.exe

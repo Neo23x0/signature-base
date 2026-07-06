@@ -6,24 +6,6 @@
    License: CC BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/
 */
 
-rule FleetAgentFUD_FileHash_Exact {
-   meta:
-      description = "Detects FleetAgentFUD.exe by exact file hash - WebSocket RAT with FUD evasion and PowerShell execution policy bypass"
-      license = "CC BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/"
-      author = "The Hunters Ledger"
-      reference = "https://pixelatedcontinuum.github.io/Threat-Intel-Reports/hunting-detections/fleetagentfud-exe/"
-      date = "2026-01-12"
-      hash1 = "072ce701ec0252eeddd6a0501555296bce512a7b90422addbb6d3619ae10f4ff"
-      hash2 = "51aa8b08dc67cb91435ce58d4453a8ae5e0dd577"
-      hash3 = "5b37f5fc42384834b7aac5081a5bac85"
-      family = "FleetAgentFUD"
-      id = "7bbdc47c-1340-5b87-9b9c-5cecb6a03ce6"
-   condition:
-      uint16(0) == 0x5A4D and
-      filesize == 17920 and
-      hash.sha256(0, filesize) == "072ce701ec0252eeddd6a0501555296bce512a7b90422addbb6d3619ae10f4ff"
-}
-
 rule FleetAgentFUD_WebSocket_C2_Pattern {
    meta:
       description = "Detects FleetAgentFUD.exe WebSocket C2 implementation via protocol strings and message type indicators"
@@ -157,22 +139,6 @@ rule FleetAgentAdvanced_Dropper_Core {
       (any of ($api*) and any of ($persist*)) or
       hash.sha256(0, filesize) == "172258e53b9506a7671deab25d2ad360cd833a4942609f1a4836d305ffe4578b"
       )
-}
-
-rule FleetAgentAdvanced_RuntimeOptimization_Payload {
-   meta:
-      description = "Detects FleetAgentAdvanced.exe dropped payload RuntimeOptimization.exe by exact hash and file size"
-      license = "CC BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/"
-      author = "The Hunters Ledger"
-      reference = "https://pixelatedcontinuum.github.io/Threat-Intel-Reports/hunting-detections/fleetagentadvanced-exe/"
-      date = "2026-01-12"
-      hash1 = "9fc6b69623133f5d6f1f4cda0ec4319300080c9bbaa0f88c93f01eeba84e80e7"
-      family = "FleetAgentAdvanced"
-      id = "176719d7-fef3-5280-90e3-933830b5d0c5"
-   condition:
-      uint16(0) == 0x5A4D and
-      filesize == 27648 and
-      hash.sha256(0, filesize) == "9fc6b69623133f5d6f1f4cda0ec4319300080c9bbaa0f88c93f01eeba84e80e7"
 }
 
 rule FleetAgentAdvanced_Quad_Persistence_Pattern {

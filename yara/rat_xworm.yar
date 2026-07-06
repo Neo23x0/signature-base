@@ -6,21 +6,6 @@
    License: CC BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/
 */
 
-rule XWorm_V5_FileHash {
-   meta:
-      description = "Detects agent_xworm.exe XWorm RAT v5.x by file hash - .NET RAT with WebSocket C2 and multi-stage persistence"
-      license = "CC BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/"
-      author = "The Hunters Ledger"
-      reference = "https://pixelatedcontinuum.github.io/Threat-Intel-Reports/hunting-detections/agent-xworm-exe/"
-      date = "2026-01-12"
-      hash1 = "d9e91be0c1936ebaf1e93148e40dc7b4c4e2e6b3e4a47e7c85b5d4e7c5f2d9a1"
-      family = "XWorm"
-      malware_type = "RAT"
-      id = "0d46751f-6750-56b2-9fe7-776abe795537"
-   condition:
-      hash.sha256(0, filesize) == "d9e91be0c1936ebaf1e93148e40dc7b4c4e2e6b3e4a47e7c85b5d4e7c5f2d9a1"
-}
-
 rule XWorm_V5_Core_Detection {
    meta:
       description = "Detects XWorm RAT v5.x based on .NET framework imports, WebSocket C2 communication pattern, and multi-stage persistence mechanisms"
@@ -110,25 +95,6 @@ rule XWorm_V5_Surveillance_Capabilities {
       uint16(0) == 0x5A4D and
       filesize < 500KB and
       3 of them
-}
-
-rule XWorm_V2_Specific_Hash {
-   meta:
-      description = "Detects agent_xworm_v2.exe XWorm RAT v2.4.0 by file hash - WebSocket C2 to 109.230.231.37 with AgentSec authentication"
-      license = "CC BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/"
-      author = "The Hunters Ledger"
-      reference = "https://pixelatedcontinuum.github.io/Threat-Intel-Reports/hunting-detections/agent-xworm-v2-exe/"
-      date = "2026-01-12"
-      hash1 = "f8e7e73bf2b26635800a042e7890a35f7376508f288a1ced3d3e12b173c5cb7e"
-      hash2 = "7c624e0b11c817d516f9411972191c4627fd2e53"
-      hash3 = "4164a1945d8373255a5cb7e42f05c259"
-      family = "XWorm"
-      malware_type = "RAT"
-      id = "8550258f-5635-51a0-8c5b-6c2fb5bd767c"
-   condition:
-      hash.sha256(0, filesize) == "f8e7e73bf2b26635800a042e7890a35f7376508f288a1ced3d3e12b173c5cb7e" or
-      hash.md5(0, filesize) == "4164a1945d8373255a5cb7e42f05c259" or
-      hash.sha1(0, filesize) == "7c624e0b11c817d516f9411972191c4627fd2e53"
 }
 
 rule XWorm_RAT_V2_Family {
