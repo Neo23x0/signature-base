@@ -1931,4 +1931,8 @@ ebix.portal-career.com
 ebix-exam.com
 ebix.recruitment-flow.com
 
+# Virtualizer Compromise IOCs https://lowendtalk.com/discussion/220625/urgent-virtualizor-compromised-31st-aug/p1
+cdn.nerat.cc;90
+connect.ne-rat.xyz;90
+
 # Last Line
