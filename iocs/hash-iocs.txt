@@ -3376,3 +3376,5 @@ aea55e42c4436236278e5692d3dcbcbe5fe6ce0b;DAEMON Tools Lite supplychain compromis
 2d4eb55b01f59c62c6de9aacba9b47267d398fe4;DAEMON Tools Lite supplychain compromise IOCs  https://securelist.com/tr/daemon-tools-backdoor/119654/
 9dbfc23ebf36b3c0b56d2f93116abb32656c42e4;DAEMON Tools Lite supplychain compromise IOCs  https://securelist.com/tr/daemon-tools-backdoor/119654/
 295ce86226b933e7262c2ce4b36bdd6c389aaaef;DAEMON Tools Lite supplychain compromise IOCs  https://securelist.com/tr/daemon-tools-backdoor/119654/
+
+b81a4e1fab9fc4e404d57224fe71e2c143aa93942bd46998789bdc944a7870c7;Virtualizor Compromise IOCs https://lowendtalk.com/discussion/220625/urgent-virtualizor-compromised-31st-aug/p1
