@@ -5,7 +5,6 @@ rule APT_Virtualizor_Compromise_ForensicArtifacts_Aug26 {
       date = "2026-08-31"
       reference = "https://lowendtalk.com/discussion/220625/urgent-virtualizor-compromised-31st-aug/p1"
       score = 75
-      hash = "b81a4e1fab9fc4e404d57224fe71e2c143aa93942bd46998789bdc944a7870c7"
    strings:
       $x1 = "AAAAC3NzaC1lZDI1NTE5AAAAIP13pPAm5jmInLQYD3XNb3HwrW4cAKDcphoT4kSKrnte"
       $x2 = "/tmp/.vz_svc_done"
