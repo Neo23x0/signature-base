@@ -4583,4 +4583,9 @@ C:\\ProgramData\\Microsoft\\mcrypto\.chiper;85
 \\2FAGuard\\main\.dll;85
 \\2FAGuard\\setup\.exe\.config;85
 
+# Virtualizor Compromise IOCs https://lowendtalk.com/discussion/220625/urgent-virtualizor-compromised-31st-aug/p1
+/tmp/widdow\.jar;75
+/tmp/\.vz_svc_done;75
+/etc/systemd/system/java\-jre\-update\.service;75
+
 # End
