@@ -46,9 +46,9 @@ rule Agent_BTZ_Proxy_DLL_2 {
                3A 31 3A 3C 3A 47 3A 52 3A 5D 3A 68 3A 73 3A 7E
                3A 89 3A 94 3A 9F 3A AA 3A B5 3A C0 3A CB 3A D6
                3A E1 3A EC 3A F7 3A }
-      $s2 = "activeds.dll" ascii fullword
+     
    condition:
-      uint16(0) == 0x5a4d and filesize < 200KB and all of them and pe.imphash() == "09b7c73fbe5529e6de7137e3e8268b7b"
+      uint16(0) == 0x5a4d and filesize < 200KB and $s1 and pe.imphash() == "09b7c73fbe5529e6de7137e3e8268b7b"
 }
 
 rule Agent_BTZ_Aug17 {
