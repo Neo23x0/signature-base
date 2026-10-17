@@ -347,6 +347,7 @@ condition:
        (uint16(0) == 0x5A4D and 4 of ($s_*) and 3 of ($domain_*) and 1 of ($windows_*))
        or
        (uint16(0) == 0x5A4D and 1 of ($s_*) and 1 of ($domain_*) and 2 of ($windows_*))
+}
  
    
 
