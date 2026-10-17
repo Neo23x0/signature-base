@@ -10,15 +10,15 @@ rule MAL_APT_BlueNoroff_FakeMeeting_JS_Kit {
       hash2 = "0e69a1cc83d85f4c9fe0c6845b7db007435613c4353260685077186073006233"
       hash3 = "423fef87e61c62b8a07e21f501114881858c8a90464a01db44d94066791e177c"
    strings:
-      $tok  = "sahfuehf29385hsdfuiewhf" ascii wide
-      $pwd  = "9jXK14VFM8fObdKxfkake8tD" ascii wide
-      $mod1 = "executeLinkFromDownUrl" ascii wide
-      $mod2 = "refreshRoomExecuteUrlFromDownUrl" ascii wide
-      $mod3 = "room-down-url" ascii wide
-      $env1 = "MEETING_SDK_VERSION" ascii wide
-      $env2 = "AUTH_API_TOKEN" ascii wide
-      $ha   = "host-action" ascii wide
-      $ms   = "mediasoup" ascii wide
+      $tok  = "sahfuehf29385hsdfuiewhf" ascii
+      $pwd  = "9jXK14VFM8fObdKxfkake8tD" ascii
+      $mod1 = "executeLinkFromDownUrl" ascii
+      $mod2 = "refreshRoomExecuteUrlFromDownUrl" ascii
+      $mod3 = "room-down-url" ascii
+      $env1 = "MEETING_SDK_VERSION" ascii
+      $env2 = "AUTH_API_TOKEN" ascii
+      $ha   = "host-action" ascii
+      $ms   = "mediasoup" ascii
    condition:
       filesize > 100KB and filesize < 8MB
       and (
