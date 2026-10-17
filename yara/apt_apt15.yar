@@ -317,16 +317,16 @@ rule turian_malware_apt15
 
 strings:
 
- $s_1 = "199.247.9.67" ascii wide nocase
- $s_2 = "43.251.105.218" ascii wide nocase
- $s_3 = "43.251.105.222" ascii wide nocase 
- $s_4 = "162.209.167.154" ascii wide nocase 
- $s_5 = "43.225.126.179" ascii wide nocase
- $s_6 = "23.247.47.252" ascii wide nocase
- $s_7 = "162.209.167.189" ascii wide nocase
- $s_8 = "78.141.196.159" ascii wide nocase 
- $s_9 = "23.228.203.130" ascii wide nocase 
- $s_10 = "23.106.140.207" ascii wide nocase
+ $s_1 = "199.247.9.67" ascii wide 
+ $s_2 = "43.251.105.218" ascii wide 
+ $s_3 = "43.251.105.222" ascii wide 
+ $s_4 = "162.209.167.154" ascii wide 
+ $s_5 = "43.225.126.179" ascii wide 
+ $s_6 = "23.247.47.252" ascii wide 
+ $s_7 = "162.209.167.189" ascii wide 
+ $s_8 = "78.141.196.159" ascii wide 
+ $s_9 = "23.228.203.130" ascii wide 
+ $s_10 = "23.106.140.207" ascii wide 
 
       $domain_1 = "bill.microsoftbuys.com" ascii wide nocase
       $domain_2 = "dnsupdate.dns2.us" ascii wide nocase
@@ -344,9 +344,9 @@ strings:
       $windows_3 = "winsupdatetw" ascii wide nocase
 
 condition:
-       (uint16(0) == 0x5A4D and 1 of ($s_*) and 2 of ($domain_*) and 2 of ($windows_*))
+       (uint16(0) == 0x5A4D and 4 of ($s_*) and 3 of ($domain_*) and 1 of ($windows_*))
        or
-       (4 of ($s_*) and 1 of ($domain_*) and 2 of ($windows_*))
+       (uint16(0) == 0x5A4D and 1 of ($s_*) and 1 of ($domain_*) and 2 of ($windows_*))
  
    
 
