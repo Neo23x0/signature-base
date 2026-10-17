@@ -279,7 +279,7 @@ rule malware_apt15_exchange_tool {
       $s18 = "/v or /t is null" wide
       $s24 = "2013sp1" wide
    condition:
-      uint16(0) == 0x5A4D and all of them
+     uint16(0) == 0x5A4D and all of them
 }
 
 rule malware_apt15_generic {
@@ -305,3 +305,50 @@ rule malware_apt15_generic {
    condition:
       2 of them
 }
+
+rule turian_malware_apt15
+{
+
+           meta: 
+             author = "blade391off"
+             sha1 = "2183AE45ADEF97500A26DBBF69D910B82BFE721A"
+             description = "This rule detect turian backdoor"
+             id = "20ab24ec-e540-4d13-8227-4f748bb2bc75"
+
+strings:
+
+ $s_1 = "199.247.9.67" ascii wide nocase
+ $s_2 = "43.251.105.218" ascii wide nocase
+ $s_3 = "43.251.105.222" ascii wide nocase 
+ $s_4 = "162.209.167.154" ascii wide nocase 
+ $s_5 = "43.225.126.179" ascii wide nocase
+ $s_6 = "23.247.47.252" ascii wide nocase
+ $s_7 = "162.209.167.189" ascii wide nocase
+ $s_8 = "78.141.196.159" ascii wide nocase 
+ $s_9 = "23.228.203.130" ascii wide nocase 
+ $s_10 = "23.106.140.207" ascii wide nocase
+
+      $domain_1 = "bill.microsoftbuys.com" ascii wide nocase
+      $domain_2 = "dnsupdate.dns2.us" ascii wide nocase
+      $domain_3 = "www.intelupdate.dns1.us" ascii wide nocase
+      $domain_4 = "icta.worldmessg.com" ascii wide nocase
+      $domain_5 = "Infoafrica.top" ascii wide nocase
+      $domain_6 = "szsz.pmdskm.top" ascii wide nocase
+      $domain_7 = "pmdskm.top" ascii wide nocase
+      $domain_8 = "www.freedns02.dns2.us" ascii wide nocase
+      $domain_9 = "web.vpnkerio.com" ascii wide nocase
+      $domain_10 = "officeupdates.cleansite.us" ascii wide nocase
+
+      $windows_1 = "C:\\RECYCLER\\S-1-3-33-854245398-2067806209-0000980848-2003\\" ascii wide nocase
+      $windows_2 = "Sharedaccess.ini" ascii wide nocase
+      $windows_3 = "winsupdatetw" ascii wide nocase
+
+condition:
+       (uint16(0) == 0x5A4D and 1 of ($s_*) and 2 of ($domain_*) and 2 of ($windows_*))
+       or
+       (4 of ($s_*) and 1 of ($domain_*) and 2 of ($windows_*))
+ 
+   
+
+
+
