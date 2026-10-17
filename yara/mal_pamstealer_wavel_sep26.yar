@@ -26,19 +26,19 @@ rule Mal_PamStealer_Wavel_Dropper_Sep26 {
       score = 85
    strings:
       // Highly distinctive anchors from the dropper / crypto chain
-      $m1 = "SNWK1" ascii wide
-      $m2 = "sn-dek-wrap-v1" ascii wide
+      $m1 = "SNWK1" ascii
+      $m2 = "sn-dek-wrap-v1" ascii
       // Dropper logic and markers
-      $s1 = "pkgunpack" ascii wide
-      $s2 = "daemon_function" ascii wide
-      $s3 = "wavel.apple03cloudstore.com" ascii wide
-      $s4 = "dek_wrap_b64" ascii wide
-      $s5 = "/v1/loader/dek" ascii wide
-      $s6 = "sysnotif-repair" ascii wide
-      $s7 = "X-Upload-Token" ascii wide
-      $s8 = "JsOsaDAS1.001.00" ascii wide
-      $s9 = ".5ffa071d.zip.lockdir" ascii wide
-      $s10 = "y32me8.com" ascii wide
+      $s1 = "pkgunpack" ascii
+      $s2 = "daemon_function" ascii
+      $s3 = "wavel.apple03cloudstore.com" ascii
+      $s4 = "dek_wrap_b64" ascii
+      $s5 = "/v1/loader/dek" ascii
+      $s6 = "sysnotif-repair" ascii
+      $s7 = "X-Upload-Token" ascii
+      $s8 = "JsOsaDAS1.001.00" ascii
+      $s9 = ".5ffa071d.zip.lockdir" ascii
+      $s10 = "y32me8.com" ascii
    condition:
       filesize < 10MB
       and 1 of ($m*)         // at least one crypto anchor, then
