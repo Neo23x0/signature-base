@@ -4588,4 +4588,11 @@ C:\\ProgramData\\Microsoft\\mcrypto\.chiper;85
 /tmp/\.vz_svc_done;75
 /etc/systemd/system/java\-jre\-update\.service;75
 
+# crisp-worker-rig / Prime Scanner Go WordPress backdoor toolkit (SCV 4.5.3, EtherHiding C2) 2026-09-11 https://github.com/rwillmann/crisp-worker-rig-investigation
+[\\/]wp-content[\\/]mu-plugins[\\/]crisp-worker-rig\.php$;85
+[\\/]wp-content[\\/]plugins[\\/](crisp-worker-rig|prime-scanner-go)[\\/];80
+[\\/]wp-content[\\/]\.sc_[0-9a-f]{8}[\\/];75
+[\\/]\.(rd|sd|swm|bt)_crisp-worker-rig$;80
+[\\/]wp-content[\\/]\.wp-object-cache-[0-9a-f]{8}\.dat(\.lkg)?$;70
+
 # End
