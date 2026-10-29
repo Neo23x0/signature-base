@@ -4115,7 +4115,7 @@ rule HKTL_NET_GUID_DInvoke {
         author = "Arnim Rupp (https://github.com/ruppde)"
         date = "2021-01-21"
         modified = "2025-08-15"
-        id = "f3b0ef47-a92c-5c5d-a9e2-09579fcb438e"
+        id = "cc260afb-20bc-4ec0-81fd-1b4b90b21a50"
     strings:
         $typelibguid0lo = "b77fdab5-207c-4cdb-b1aa-348505c54229" ascii wide
     condition:

@@ -756,7 +756,7 @@ rule EquationGroup_ys {
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-08"
       hash1 = "a6387307d64778f8d9cfc60382fdcf0627cde886e952b8d73cc61755ed9fde15"
-      id = "abd120e7-23f8-530e-b21e-c50a2b571332"
+      id = "091f2291-ef6a-466e-a2a6-6d80fdf39126"
    strings:
       $x1 = "EXPLOIT_SCRIPME=\"$EXPLOIT_SCRIPME\"" fullword ascii
       $x3 = "DEFTARGET=`head /current/etc/opscript.txt 2>/dev/null | grepip 2>/dev/null | head -1`" fullword ascii
@@ -997,7 +997,7 @@ rule EquationGroup__ftshell {
       super_rule = 1
       hash1 = "9bebeb57f1c9254cb49976cc194da4be85da4eb94475cb8d813821fb0b24f893"
       hash4 = "0be739024b41144c3b63e40e46bab22ac098ccab44ab2e268efc3b63aea02951"
-      id = "6a2db0a0-386f-5ea6-b0bc-e28ed2fd53d5"
+      id = "7e77129b-83e6-409b-b5d7-522ecbd55c90"
    strings:
       $s1 = "if { [string length $uRemoteUploadCommand]" fullword ascii
       $s2 = "processUpload" fullword ascii
@@ -1279,7 +1279,7 @@ rule EquationGroup_gr_dev_bin_post {
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-09"
       hash1 = "c1546155efa95dbc4e3cc95299a3968fc075f89d33164e78b00b76c7d08a0591"
-      id = "9ec19323-85d5-5edf-99eb-b452c09b870a"
+      id = "16685238-0e1d-4df8-9794-dd6e9e11ab7d"
    strings:
       $x1 = "op=cron&action=once&frame=cronOnceFrame&cronK=cronV&cronCommand=%2Ftmp%2Ftmpwatch&time=12%3A12+01%2F28%2F2005" ascii
    condition:
@@ -1313,7 +1313,7 @@ rule EquationGroup_gr {
       reference = "https://medium.com/@shadowbrokerss/dont-forget-your-base-867d304a94b1"
       date = "2017-04-09"
       hash1 = "d3cd725affd31fa7f0e2595f4d76b09629918612ef0d0307bb85ade1c3985262"
-      id = "9ec19323-85d5-5edf-99eb-b452c09b870a"
+      id = "ef7c0799-a7f1-4b4f-9299-985b0e79605e"
    strings:
       $s1 = "if [ -f /tmp/tmpwatch ] ; then" fullword ascii
       $s2 = "echo \"bailing. try a different name\"" fullword ascii
@@ -1919,7 +1919,7 @@ rule EquationGroup_Toolset_Apr17_Eternalromance {
       super_rule = 1
       hash1 = "f1ae9fdbb660aae3421fd3e5b626c1e537d8e9ee2f9cd6d56cb70b6878eaca5d"
       hash2 = "b99c3cc1acbb085c9a895a8c3510f6daaf31f0d2d9ccb8477c7fb7119376f57b"
-      id = "40066023-ede9-5669-8b4d-a26a693d8818"
+      id = "147ba897-8014-42a9-9ac7-e29c4a64569d"
    strings:
       $x1 = "[-] Error: Exploit choice not supported for target OS!!" fullword ascii
       $x2 = "Error: Target machine out of NPP memory (VERY BAD!!) - Backdoor removed" fullword ascii
@@ -2482,7 +2482,7 @@ rule EquationGroup_Toolset_Apr17_DiBa_Target_BH {
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "7ae9a247b60dc31f424e8a7a3b3f1749ba792ff1f4ba67ac65336220021fce9f"
-      id = "c6ae85b6-0670-558c-9ce5-64bd5822f35b"
+      id = "0c17570e-ad6b-426d-9953-d7ff39c3f222"
    strings:
       $op0 = { 44 89 20 e9 40 ff ff ff 8b c2 48 8b 5c 24 60 48 }
       $op1 = { 45 33 c9 49 8d 7f 2c 41 ba }
@@ -2729,7 +2729,7 @@ rule EquationGroup_Toolset_Apr17_DiBa_Target {
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "ffff3526ed0d550108e97284523566392af8523bbddb5f212df12ef61eaad3e6"
-      id = "c6ae85b6-0670-558c-9ce5-64bd5822f35b"
+      id = "6bef06a0-cde6-4b92-bc64-01e97b8dc087"
    strings:
       $op1 = { 41 5a 41 59 41 58 5f 5e 5d 5a 59 5b 58 48 83 c4 }
       $op2 = { f9 48 03 fa 48 33 c0 8a 01 49 03 c1 49 f7 e0 88 }
@@ -3263,7 +3263,7 @@ rule EquationGroup_Toolset_Apr17_SetCallback {
       reference = "https://steemit.com/shadowbrokers/@theshadowbrokers/lost-in-translation"
       date = "2017-04-15"
       hash1 = "a8854f6b01d0e49beeb2d09e9781a6837a0d18129380c6e1b1629bc7c13fdea2"
-      id = "3c06fc74-2e75-5348-bb62-30c724de1414"
+      id = "7f16974d-c96a-4b41-b0e6-26829c1f0ed8"
    strings:
       $s2 = "*NOTE: This version of SetCallback does not work with PeddleCheap versions prior" fullword ascii
       $s3 = "USAGE: SetCallback <input file> <output file>" fullword ascii

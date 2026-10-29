@@ -238,7 +238,7 @@ rule Oilrig_IntelSecurityManager {
       author = "Eyal Sela"
       reference = "Internal Research"
       date = "2018-01-19"
-      id = "4cccc0df-a225-5500-be55-f4ae346e066e"
+      id = "e1b4f3db-8ab2-44ab-86cc-9ea959572ade"
    strings:
       $one1 = "srvResesponded" ascii wide fullword
       $one2 = "InetlSecurityAssistManager" ascii wide fullword

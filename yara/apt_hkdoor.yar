@@ -34,7 +34,7 @@ rule hkdoor_backdoor {
       description = "Hacker's Door Backdoor"
       author = "Cylance Inc."
       reference = "https://www.cylance.com/en_us/blog/threat-spotlight-opening-hackers-door.html"
-      id = "470e5d37-8a5a-500f-b9b9-245b8dc2c4d7"
+      id = "d6feaf5c-ac2c-49e8-9582-c0661977e34c"
    strings:
       $s1 = "http://www.yythac.com" fullword ascii
       $s2 = "Example:%s 192.168.1.100 139 -p yyt_hac -t 1" fullword ascii

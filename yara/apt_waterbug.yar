@@ -38,7 +38,7 @@ rule WaterBug_wipbot_2013_core {
 		date = "2015-01-22"
 		modified = "2023-01-27"
 		reference = "http://t.co/rF35OaAXrl"
-		id = "2e8ccce9-d8ba-573d-b532-76d8e2ed5442"
+		id = "6521e319-41f0-47c1-bfe8-b0f3b7460d83"
 	strings:
 		$code1 = { 89 47 0C C7 47 10 90 C2 04 00 C7 47 14 90 C2 10 00 C7 47 18 90 90 60 68 89 4F 1C C7 47 20 90 90 90 B8 89 4F 24 C7 47 28 90 FF D0 61 C7 47 2C 90 C2 04 00}
 		$code2 = { 85 C0 75 25 8B 0B BF ?? ?? ?? ?? EB 17 69 D7 0D 66 19 00 8D BA 5F F3 6E 3C 89 FE C1 EE 10 89 F2 30 14 01 40 3B 43 04 72 E4}
@@ -101,7 +101,7 @@ rule WaterBug_sav_dropper {
 		author = "Symantec Security Response"
 		date = "22.01.2015"
 		reference = "http://t.co/rF35OaAXrl"
-		id = "685849de-9892-56bf-8215-21b08d8b2d7c"
+		id = "dee9bff5-dcf2-43ef-8136-fcbc16953ad0"
 	strings:
 		$mz = "MZ"
 		$a = /[a-z]{,10}_x64.sys\x00hMZ\x00/

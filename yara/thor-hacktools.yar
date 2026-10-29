@@ -1147,7 +1147,7 @@ rule Hacktools_CN_Panda_445 {
       date = "17.11.14"
       score = 60
       hash = "a61316578bcbde66f39d88e7fc113c134b5b966b"
-      id = "02075631-49cc-5b97-ad8e-92d734a26d34"
+      id = "ba793dc9-92c5-4ac7-ba03-a4b534d07ee8"
    strings:
       $s0 = "for /f %%i in (ips.txt) do (start cmd.bat %%i)" fullword ascii
       $s1 = "445\\nc.exe" fullword ascii
@@ -1896,7 +1896,7 @@ rule EditKeyLog {
       date = "23.11.14"
       score = 60
       hash = "a450c31f13c23426b24624f53873e4fc3777dc6b"
-      id = "db083c04-9e5c-5cfd-b4d4-eecf28191b6b"
+      id = "26e12748-0838-4006-a381-e5c6a47b6f12"
    strings:
       $s1 = "Press Any Ke" fullword ascii
       $s2 = "Enter 1 O" fullword ascii
@@ -1914,7 +1914,7 @@ rule PassSniffer {
       date = "23.11.14"
       score = 60
       hash = "dcce4c577728e8edf7ed38ac6ef6a1e68afb2c9f"
-      id = "f5965aa8-0f78-56fd-8e3e-6dc013942cb3"
+      id = "a31bea3a-ce01-4a1a-af00-e84e5e597b14"
    strings:
       $s2 = "Sniff" fullword ascii
       $s3 = "GetLas" fullword ascii

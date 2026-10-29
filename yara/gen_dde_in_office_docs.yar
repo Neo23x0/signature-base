@@ -52,7 +52,7 @@ rule Office_OLE_DDE {
       reference = "https://blog.nviso.be/2017/10/11/detecting-dde-in-ms-office-documents/"
       date = "2017-10-12"
       score = 50
-      id = "2ead3cc9-f517-5916-93c9-1393362aa45d"
+      id = "d39fd98b-11ad-45c9-a1b6-c8ab30890250"
    strings:
       $a = /\x13\s*DDE\b[^\x14]+/ nocase
 

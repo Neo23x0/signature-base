@@ -884,7 +884,7 @@ rule EQGRP_BBALL {
 		reference = "Research"
 		date = "2016-08-16"
 		hash1 = "498fc9f20b938b8111adfa3ca215325f265a08092eefd5300c4168876deb7bf6"
-		id = "bced11a2-fac4-58e5-a4a8-1c6d5fe418f9"
+		id = "d2780b06-07b4-44d3-bf48-57eec85e3d15"
 	strings:
 		$s1 = "Components/Modules/BiosModule/Implant/E28F6/../e28f640j3_asm.S" fullword ascii
 		$s2 = ".got_loader" fullword ascii
@@ -1120,7 +1120,7 @@ rule EQGRP_sploit {
 		super_rule = 1
 		hash1 = "0316d70a5bbf068a7fc791e08e816015d04ec98f088a7ff42af8b9e769b8d1f6"
 		hash2 = "0316d70a5bbf068a7fc791e08e816015d04ec98f088a7ff42af8b9e769b8d1f6"
-		id = "9f403965-5fb1-55b2-bef6-65c18e08e58f"
+		id = "dedb3016-9abf-401d-b824-0ca40540d4f9"
 	strings:
 		$s1 = "print \"[+] Connecting to %s:%s\" % (self.params.dst['ip'], self.params.dst['port'])" fullword ascii
 		$s2 = "@overridable(\"Must be overriden if the target will be touched.  Base implementation should not be called.\")" fullword ascii

@@ -87,7 +87,7 @@ rule webshell_PHP_a {
 		date = "2014/01/28"
 		score = 70
 		hash = "e3b461f7464d81f5022419d87315a90d"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "cf85ceba-7ab6-4619-bb26-01a091357b60"
 	strings:
 		$s1 = "echo \"<option value=\\\"\". strrev(substr(strstr(strrev($work_dir), \"/\""
 		$s2 = "echo \"<option value=\\\"$work_dir\\\" selected>Current Directory</option>"
@@ -103,7 +103,7 @@ rule webshell_iMHaPFtp_2 {
 		date = "2014/01/28"
 		score = 70
 		hash = "12911b73bc6a5d313b494102abcf5c57"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "36271fde-da41-480a-80e4-7d2849e65c7e"
 	strings:
 		$s8 = "if ($l) echo '<a href=\"' . $self . '?action=permission&amp;file=' . urlencode($"
 		$s9 = "return base64_decode('R0lGODlhEQANAJEDAMwAAP///5mZmf///yH5BAHoAwMALAAAAAARAA0AAA"
@@ -118,7 +118,7 @@ rule webshell_Jspspyweb {
 		date = "2014/01/28"
 		score = 70
 		hash = "4e9be07e95fff820a9299f3fb4ace059"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "78a58e3d-ec9d-4465-89ec-edf07aa17494"
 	strings:
 		$s0 = "      out.print(\"<tr><td width='60%'>\"+strCut(convertPath(list[i].getPath()),7"
 		$s3 = "  \"reg add \\\"HKEY_LOCAL_MACHINE\\\\SYSTEM\\\\CurrentControlSet\\\\Control"
@@ -133,7 +133,7 @@ rule webshell_Safe_Mode_Bypass_PHP_4_4_2_and_PHP_5_1_2 {
 		date = "2014/01/28"
 		score = 70
 		hash = "49ad9117c96419c35987aaa7e2230f63"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "2a89f40c-03d5-4473-90b1-1f39fe786334"
 	strings:
 		$s0 = "die(\"\\nWelcome.. By This script you can jump in the (Safe Mode=ON) .. Enjoy\\n"
 		$s1 = "Mode Shell v1.0</font></span></a></font><font face=\"Webdings\" size=\"6\" color"
@@ -148,7 +148,7 @@ rule webshell_SimAttacker_Vrsion_1_0_0_priv8_4_My_friend {
 		date = "2014/01/28"
 		score = 70
 		hash = "089ff24d978aeff2b4b2869f0c7d38a3"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "bf8fd701-1e54-4ca0-b7ee-261f9bcc026d"
 	strings:
 		$s2 = "echo \"<a href='?id=fm&fchmod=$dir$file'><span style='text-decoration: none'><fo"
 		$s3 = "fputs ($fp ,\"\\n*********************************************\\nWelcome T0 Sim"
@@ -163,7 +163,7 @@ rule webshell_phpshell_2_1_pwhash {
 		date = "2014/01/28"
 		score = 70
 		hash = "ba120abac165a5a30044428fac1970d8"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "7aa044fe-4ed8-4252-a102-99355ba7a128"
 	strings:
 		$s1 = "<tt>&nbsp;</tt>\" (space), \"<tt>[</tt>\" (left bracket), \"<tt>|</tt>\" (pi"
 		$s3 = "word: \"<tt>null</tt>\", \"<tt>yes</tt>\", \"<tt>no</tt>\", \"<tt>true</tt>\","
@@ -178,7 +178,7 @@ rule webshell_PHPRemoteView {
 		date = "2014/01/28"
 		score = 70
 		hash = "29420106d9a81553ef0d1ca72b9934d9"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "c6fa94dd-cba5-48ae-9450-ea21b60c6667"
 	strings:
 		$s2 = "<input type=submit value='\".mm(\"Delete all dir/files recursive\").\" (rm -fr)'"
 		$s4 = "<a href='$self?c=delete&c2=$c2&confirm=delete&d=\".urlencode($d).\"&f=\".u"
@@ -193,7 +193,7 @@ rule webshell_jsp_12302 {
 		date = "2014/01/28"
 		score = 70
 		hash = "a3930518ea57d899457a62f372205f7f"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "29dad7a2-6907-4add-8f67-e87e62d9ad9a"
 	strings:
 		$s0 = "</font><%out.print(request.getRealPath(request.getServletPath())); %>" fullword
 		$s1 = "<%@page import=\"java.io.*,java.util.*,java.net.*\"%>" fullword
@@ -209,7 +209,7 @@ rule webshell_caidao_shell_guo {
 		date = "2014/01/28"
 		score = 70
 		hash = "9e69a8f499c660ee0b4796af14dc08f0"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "bccae8a4-657a-4bb7-be24-5b5a7c01a772"
 	strings:
 		$s0 = "<?php ($www= $_POST['ice'])!"
 		$s1 = "@preg_replace('/ad/e','@'.str_rot13('riny').'($ww"
@@ -224,7 +224,7 @@ rule webshell_PHP_redcod {
 		date = "2014/01/28"
 		score = 70
 		hash = "5c1c8120d82f46ff9d813fbe3354bac5"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "3ec1e176-9a8c-4d5a-a463-cef5cec1cabd"
 	strings:
 		$s0 = "H8p0bGFOEy7eAly4h4E4o88LTSVHoAglJ2KLQhUw" fullword
 		$s1 = "HKP7dVyCf8cgnWFy8ocjrP5ffzkn9ODroM0/raHm" fullword
@@ -239,7 +239,7 @@ rule webshell_remview_fix {
 		date = "2014/01/28"
 		score = 70
 		hash = "a24b7c492f5f00e2a19b0fa2eb9c3697"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "8016cc1f-447c-451c-b647-d21d483c15f0"
 	strings:
 		$s4 = "<a href='$self?c=delete&c2=$c2&confirm=delete&d=\".urlencode($d).\"&f=\".u"
 		$s5 = "echo \"<P><hr size=1 noshade>\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n"
@@ -254,7 +254,7 @@ rule webshell_asp_cmd {
 		date = "2014/01/28"
 		score = 70
 		hash = "895ca846858c315a3ff8daa7c55b3119"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "da476461-509f-4c33-8c97-03687bef76b1"
 	strings:
 		$s0 = "<%= \"\\\\\" & oScriptNet.ComputerName & \"\\\" & oScriptNet.UserName %>" fullword
 		$s1 = "Set oFileSys = Server.CreateObject(\"Scripting.FileSystemObject\")" fullword
@@ -270,7 +270,7 @@ rule webshell_php_sh_server {
 		date = "2014/01/28"
 		score = 50
 		hash = "d87b019e74064aa90e2bb143e5e16cfa"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "b175e817-f138-4b1d-a0b5-881291fd516d"
 	strings:
 		$s0 = "eval(getenv('HTTP_CODE'));" fullword
 	condition:
@@ -284,7 +284,7 @@ rule webshell_PH_Vayv_PH_Vayv {
 		date = "2014/01/28"
 		score = 70
 		hash = "35fb37f3c806718545d97c6559abd262"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "fab8b822-f4c3-4f3e-84be-50a7a6fbea11"
 	strings:
 		$s0 = "style=\"BACKGROUND-COLOR: #eae9e9; BORDER-BOTTOM: #000000 1px in"
 		$s4 = "<font color=\"#858585\">SHOPEN</font></a></font><font face=\"Verdana\" style"
@@ -299,7 +299,7 @@ rule webshell_caidao_shell_ice {
 		date = "2014/01/28"
 		score = 70
 		hash = "6560b436d3d3bb75e2ef3f032151d139"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "baadc25c-3450-4dc9-8cd5-e49ef021bb63"
 	strings:
 		$s0 = "<%eval request(\"ice\")%>" fullword
 	condition:
@@ -313,7 +313,7 @@ rule webshell_cihshell_fix {
 		date = "2014/01/28"
 		score = 70
 		hash = "3823ac218032549b86ee7c26f10c4cb5"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "cf825c78-f589-4c24-809c-6c813125232c"
 	strings:
 		$s7 = "<tr style='background:#242424;' ><td style='padding:10px;'><form action='' encty"
 		$s8 = "if (isset($_POST['mysqlw_host'])){$dbhost = $_POST['mysqlw_host'];} else {$dbhos"
@@ -328,7 +328,7 @@ rule webshell_asp_shell {
 		date = "2014/01/28"
 		score = 70
 		hash = "e63f5a96570e1faf4c7b8ca6df750237"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "f1d2c964-75f7-4566-970b-9a43da1c6e7c"
 	strings:
 		$s7 = "<input type=\"submit\" name=\"Send\" value=\"GO!\">" fullword
 		$s8 = "<TEXTAREA NAME=\"1988\" ROWS=\"18\" COLS=\"78\"></TEXTAREA>" fullword
@@ -343,7 +343,7 @@ rule webshell_Private_i3lue {
 		date = "2014/01/28"
 		score = 70
 		hash = "13f5c7a035ecce5f9f380967cf9d4e92"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "799aafe6-8f38-403c-ab0c-e6cc9702c221"
 	strings:
 		$s8 = "case 15: $image .= \"\\21\\0\\"
 	condition:
@@ -357,7 +357,7 @@ rule webshell_php_up {
 		date = "2014/01/28"
 		score = 70
 		hash = "7edefb8bd0876c41906f4b39b52cd0ef"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "3883c3dc-f7e7-4f9c-a928-4a3fb15450ce"
 	strings:
 		$s0 = "copy($HTTP_POST_FILES['userfile']['tmp_name'], $_POST['remotefile']);" fullword
 		$s3 = "if(is_uploaded_file($HTTP_POST_FILES['userfile']['tmp_name'])) {" fullword
@@ -373,7 +373,7 @@ rule webshell_Mysql_interface_v1_0 {
 		date = "2014/01/28"
 		score = 70
 		hash = "a12fc0a3d31e2f89727b9678148cd487"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "d15534c6-744f-4424-8b43-3fd281d082f6"
 	strings:
 		$s0 = "echo \"<td><a href='$PHP_SELF?action=dropDB&dbname=$dbname' onClick=\\\"return"
 	condition:
@@ -387,7 +387,7 @@ rule webshell_php_s_u {
 		date = "2014/01/28"
 		score = 70
 		hash = "efc7ba1a4023bcf40f5e912f1dd85b5a"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "c054d1e5-b560-4a2e-a066-17bb5f8ae4ed"
 	strings:
 		$s6 = "<a href=\"?act=do\"><font color=\"red\">Go Execute</font></a></b><br /><textarea"
 	condition:
@@ -401,7 +401,7 @@ rule webshell_phpshell_2_1_config {
 		date = "2014/01/28"
 		score = 70
 		hash = "bd83144a649c5cc21ac41b505a36a8f3"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "7d5185d2-2aab-432b-9d3d-d7e1360bd403"
 	strings:
 		$s1 = "; (choose good passwords!).  Add uses as simple 'username = \"password\"' lines." fullword
 	condition:
@@ -415,7 +415,7 @@ rule webshell_asp_EFSO_2 {
 		date = "2014/01/28"
 		score = 70
 		hash = "a341270f9ebd01320a7490c12cb2e64c"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "0a2dfb0c-7aa7-415c-aef6-373f17d35d7f"
 	strings:
 		$s0 = "%8@#@&P~,P,PP,MV~4BP^~,NS~m~PXc3,_PWbSPU W~~[u3Fffs~/%@#@&~~,PP~~,M!PmS,4S,mBPNB"
 	condition:
@@ -429,7 +429,7 @@ rule webshell_jsp_up {
 		date = "2014/01/28"
 		score = 70
 		hash = "515a5dd86fe48f673b72422cccf5a585"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "d16a6d5a-99b4-45d1-9f95-26423bbc0565"
 	strings:
 		$s9 = "// BUG: Corta el fichero si es mayor de 640Ks" fullword
 	condition:
@@ -443,7 +443,7 @@ rule webshell_NetworkFileManagerPHP {
 		date = "2014/01/28"
 		score = 70
 		hash = "acdbba993a5a4186fd864c5e4ea0ba4f"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "645fe29f-f693-4717-9ac4-7df4a9663fea"
 	strings:
 		$s9 = "  echo \"<br><center>All the data in these tables:<br> \".$tblsv.\" were putted "
 	condition:
@@ -457,7 +457,7 @@ rule webshell_Server_Variables {
 		date = "2014/01/28"
 		score = 70
 		hash = "47fb8a647e441488b30f92b4d39003d7"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "6b9b99b1-a12d-4aa0-aba3-25924b64d314"
 	strings:
 		$s7 = "<% For Each Vars In Request.ServerVariables %>" fullword
 		$s9 = "Variable Name</B></font></p>" fullword
@@ -472,7 +472,7 @@ rule webshell_caidao_shell_ice_2 {
 		date = "2014/01/28"
 		score = 70
 		hash = "1d6335247f58e0a5b03e17977888f5f2"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "75b7664f-f604-4498-b3cd-46dcf1ada345"
 	strings:
 		$s0 = "<?php ${${eval($_POST[ice])}};?>" fullword
 	condition:
@@ -486,7 +486,7 @@ rule webshell_caidao_shell_mdb {
 		date = "2014/01/28"
 		score = 70
 		hash = "fbf3847acef4844f3a0d04230f6b9ff9"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "b11c57ae-0eda-468a-9cef-7a69e86e7d4c"
 	strings:
 		$s1 = "<% execute request(\"ice\")%>a " fullword
 	condition:
@@ -500,7 +500,7 @@ rule webshell_jsp_guige {
 		date = "2014/01/28"
 		score = 70
 		hash = "2c9f2dafa06332957127e2c713aacdd2"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "8e06f0cb-db97-4462-97d4-a9bb8faa853e"
 	strings:
 		$s0 = "if(damapath!=null &&!damapath.equals(\"\")&&content!=null"
 	condition:
@@ -514,7 +514,7 @@ rule webshell_phpspy2010 {
 		date = "2014/01/28"
 		score = 70
 		hash = "14ae0e4f5349924a5047fed9f3b105c5"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "53b59565-fd3d-4156-a1ef-199975d89a54"
 	strings:
 		$s3 = "eval(gzinflate(base64_decode("
 		$s5 = "//angel" fullword
@@ -530,7 +530,7 @@ rule webshell_asp_ice {
 		date = "2014/01/28"
 		score = 70
 		hash = "d141e011a92f48da72728c35f1934a2b"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "29026b0c-092b-4965-9174-0a375cf5f897"
 	strings:
 		$s0 = "D,'PrjknD,J~[,EdnMP[,-4;DS6@#@&VKobx2ldd,'~JhC"
 	condition:
@@ -544,7 +544,7 @@ rule webshell_drag_system {
 		date = "2014/01/28"
 		score = 70
 		hash = "15ae237cf395fb24cf12bff141fb3f7c"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "9d175c60-a396-459b-97bb-6389e03c2f5d"
 	strings:
 		$s9 = "String sql = \"SELECT * FROM DBA_TABLES WHERE TABLE_NAME not like '%$%' and num_"
 	condition:
@@ -558,7 +558,7 @@ rule webshell_DarkBlade1_3_asp_indexx {
 		date = "2014/01/28"
 		score = 70
 		hash = "b7f46693648f534c2ca78e3f21685707"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "ebc0c449-cadc-45eb-8175-ff2af4d3c3dd"
 	strings:
 		$s3 = "Const strs_toTransform=\"command|Radmin|NTAuThenabled|FilterIp|IISSample|PageCou"
 	condition:
@@ -572,7 +572,7 @@ rule webshell_phpshell3 {
 		date = "2014/01/28"
 		score = 70
 		hash = "76117b2ee4a7ac06832d50b2d04070b8"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "55381d7e-aba1-4370-90c8-997d71b73455"
 	strings:
 		$s2 = "<input name=\"nounce\" type=\"hidden\" value=\"<?php echo $_SESSION['nounce'];"
 		$s5 = "<p>Username: <input name=\"username\" type=\"text\" value=\"<?php echo $userna"
@@ -588,7 +588,7 @@ rule webshell_jsp_hsxa {
 		date = "2014/01/28"
 		score = 70
 		hash = "d0e05f9c9b8e0b3fa11f57d9ab800380"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "ad134d3e-be7a-46b7-ad61-1bdf8cef2362"
 	strings:
 		$s0 = "<%@ page language=\"java\" pageEncoding=\"gbk\"%><jsp:directive.page import=\"ja"
 	condition:
@@ -602,7 +602,7 @@ rule webshell_jsp_utils {
 		date = "2014/01/28"
 		score = 70
 		hash = "9827ba2e8329075358b8e8a53e20d545"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "12a3aceb-9b72-44b2-8d7d-3a17df189805"
 	strings:
 		$s0 = "ResultSet r = c.getMetaData().getTables(null, null, \"%\", t);" fullword
 		$s4 = "String cs = request.getParameter(\"z0\")==null?\"gbk\": request.getParameter(\"z"
@@ -617,7 +617,7 @@ rule webshell_asp_01 {
 		date = "2014/01/28"
 		score = 50
 		hash = "61a687b0bea0ef97224c7bd2df118b87"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "8f3f0eb5-68d2-4a80-94d7-67820ab80a46"
 	strings:
 		$s0 = "<%eval request(\"pass\")%>" fullword
 	condition:
@@ -631,7 +631,7 @@ rule webshell_asp_404 {
 		date = "2014/01/28"
 		score = 70
 		hash = "d9fa1e8513dbf59fa5d130f389032a2d"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "b374922e-47ac-4567-b9b2-1cf031b7796c"
 	strings:
 		$s0 = "lFyw6pd^DKV^4CDRWmmnO1GVKDl:y& f+2"
 	condition:
@@ -645,7 +645,7 @@ rule webshell_webshell_cnseay02_1 {
 		date = "2014/01/28"
 		score = 70
 		hash = "95fc76081a42c4f26912826cb1bd24b1"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "b9693b38-e18b-4015-8dd9-76b914d9919e"
 	strings:
 		$s0 = "(93).$_uU(41).$_uU(59);$_fF=$_uU(99).$_uU(114).$_uU(101).$_uU(97).$_uU(116).$_uU"
 	condition:
@@ -659,7 +659,7 @@ rule webshell_php_fbi {
 		date = "2014/01/28"
 		score = 70
 		hash = "1fb32f8e58c8deb168c06297a04a21f1"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "cceaf116-8d16-4dda-a693-7e893d710e58"
 	strings:
 		$s7 = "erde types','Getallen','Datum en tijd','Tekst','Binaire gegevens','Netwerk','Geo"
 	condition:
@@ -673,7 +673,7 @@ rule webshell_B374kPHP_B374k {
 		date = "2014/01/28"
 		score = 70
 		hash = "bed7388976f8f1d90422e8795dff1ea6"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "f082a990-8ebf-4217-912c-0de73380d0d6"
 	strings:
 		$s0 = "Http://code.google.com/p/b374k-shell" fullword
 		$s1 = "$_=str_rot13('tm'.'vas'.'yngr');$_=str_rot13(strrev('rqb'.'prq'.'_'.'46r'.'fno'"
@@ -690,7 +690,7 @@ rule webshell_cmd_asp_5_1 {
 		date = "2014/01/28"
 		score = 70
 		hash = "8baa99666bf3734cbdfdd10088e0cd9f"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "cabfaccc-8d97-497a-8b91-86a62e4e0092"
 	strings:
 		$s9 = "Call oS.Run(\"win.com cmd.exe /c \"\"\" & szCMD & \" > \" & szTF &" fullword
 	condition:
@@ -704,7 +704,7 @@ rule webshell_php_dodo_zip {
 		date = "2014/01/28"
 		score = 70
 		hash = "b7800364374077ce8864796240162ad5"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "971eaa73-5ab3-4f54-a9d5-386677abc00b"
 	strings:
 		$s0 = "$hexdtime = '\\x' . $dtime[6] . $dtime[7] . '\\x' . $dtime[4] . $dtime[5] . '\\x"
 		$s3 = "$datastr = \"\\x50\\x4b\\x03\\x04\\x0a\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00"
@@ -719,7 +719,7 @@ rule webshell_aZRaiLPhp_v1_0 {
 		date = "2014/01/28"
 		score = 70
 		hash = "26b2d3943395682e36da06ed493a3715"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "cd9a5133-ece4-463c-adf7-f7788992b8e2"
 	strings:
 		$s5 = "echo \" <font color='#0000FF'>CHMODU \".substr(base_convert(@fileperms($"
 		$s7 = "echo \"<a href='./$this_file?op=efp&fname=$path/$file&dismi=$file&yol=$path'><fo"
@@ -734,7 +734,7 @@ rule webshell_php_list {
 		date = "2014/01/28"
 		score = 70
 		hash = "922b128ddd90e1dc2f73088956c548ed"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "c9aa8d77-e006-4797-ac8f-7657ff60c896"
 	strings:
 		$s1 = "// list.php = Directory & File Listing" fullword
 		$s2 = "    echo \"( ) <a href=?file=\" . $fichero . \"/\" . $filename . \">\" . $filena"
@@ -750,7 +750,7 @@ rule webshell_ironshell {
 		date = "2014/01/28"
 		score = 70
 		hash = "8bfa2eeb8a3ff6afc619258e39fded56"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "2d52c1ef-6095-4ef0-b8ed-39bd7026ec83"
 	strings:
 		$s4 = "print \"<form action=\\\"\".$me.\"?p=cmd&dir=\".realpath('.').\""
 		$s8 = "print \"<td id=f><a href=\\\"?p=rename&file=\".realpath($file).\"&di"
@@ -765,7 +765,7 @@ rule webshell_caidao_shell_404 {
 		date = "2014/01/28"
 		score = 70
 		hash = "ee94952dc53d9a29bdf4ece54c7a7aa7"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "8ffeeb30-94a0-4849-be3e-aa29641423c3"
 	strings:
 		$s0 = "<?php $K=sTr_RepLaCe('`','','a`s`s`e`r`t');$M=$_POST[ice];IF($M==NuLl)HeaDeR('St"
 	condition:
@@ -779,7 +779,7 @@ rule webshell_ASP_aspydrv {
 		date = "2014/01/28"
 		score = 70
 		hash = "de0a58f7d1e200d0b2c801a94ebce330"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "f1ac0123-feaf-42b6-b7c3-255fa49309b2"
 	strings:
 		$s3 = "<%=thingy.DriveLetter%> </td><td><tt> <%=thingy.DriveType%> </td><td><tt> <%=thi"
 	condition:
@@ -793,7 +793,7 @@ rule webshell_jsp_web {
 		date = "2014/01/28"
 		score = 70
 		hash = "4bc11e28f5dccd0c45a37f2b541b2e98"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "4279cd21-612b-4bb1-ac70-3875c3ac73fa"
 	strings:
 		$s0 = "<%@page import=\"java.io.*\"%><%@page import=\"java.net.*\"%><%String t=request."
 	condition:
@@ -807,7 +807,7 @@ rule webshell_mysqlwebsh {
 		date = "2014/01/28"
 		score = 70
 		hash = "babfa76d11943a22484b3837f105fada"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "e2a130cb-b781-4c7b-816e-8b061f1ee6a0"
 	strings:
 		$s3 = " <TR><TD bgcolor=\"<? echo (!$CONNECT && $action == \"chparam\")?\"#660000\":\"#"
 	condition:
@@ -821,7 +821,7 @@ rule webshell_jspShell {
 		date = "2014/01/28"
 		score = 70
 		hash = "0d5b5a17552254be6c1c8f1eb3a5fdc1"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "be1bc40c-8c43-42f9-9930-a83b969fda42"
 	strings:
 		$s0 = "<input type=\"checkbox\" name=\"autoUpdate\" value=\"AutoUpdate\" on"
 		$s1 = "onblur=\"document.shell.autoUpdate.checked= this.oldValue;"
@@ -836,7 +836,7 @@ rule webshell_Dx_Dx {
 		date = "2014/01/28"
 		score = 70
 		hash = "9cfe372d49fe8bf2fac8e1c534153d9b"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "1c3244f7-af4e-47dc-8a1c-92fa1e69a9af"
 	strings:
 		$s1 = "print \"\\n\".'Tip: to view the file \"as is\" - open the page in <a href=\"'.Dx"
 		$s9 = "class=linelisting><nobr>POST (php eval)</td><"
@@ -851,7 +851,7 @@ rule webshell_asp_ntdaddy {
 		date = "2014/01/28"
 		score = 70
 		hash = "c5e6baa5d140f73b4e16a6cfde671c68"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "2b2c8a3c-3ff4-4004-928e-6c4a658ef8d9"
 	strings:
 		$s9 =  "if  FP  =  \"RefreshFolder\"  or  "
 		$s10 = "request.form(\"cmdOption\")=\"DeleteFolder\"  "
@@ -866,7 +866,7 @@ rule webshell_MySQL_Web_Interface_Version_0_8 {
 		date = "2014/01/28"
 		score = 70
 		hash = "36d4f34d0a22080f47bb1cb94107c60f"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "a662b41a-edeb-4360-807e-cf2fdb77b953"
 	strings:
 		$s2 = "href='$PHP_SELF?action=dumpTable&dbname=$dbname&tablename=$tablename'>Dump</a>"
 	condition:
@@ -880,7 +880,7 @@ rule webshell_elmaliseker_2 {
 		date = "2014/01/28"
 		score = 70
 		hash = "b32d1730d23a660fd6aa8e60c3dc549f"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "1f2e7c4a-31a5-4cbc-9d13-fc5047aa871b"
 	strings:
 		$s1 = "<td<%if (FSO.GetExtensionName(path & \"\\\" & oFile.Name)=\"lnk\") or (FSO.GetEx"
 		$s6 = "<input type=button value=Save onclick=\"EditorCommand('Save')\"> <input type=but"
@@ -895,7 +895,7 @@ rule webshell_ASP_RemExp {
 		date = "2014/01/28"
 		score = 70
 		hash = "aa1d8491f4e2894dbdb91eec1abc2244"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "d1036f7c-bba3-4724-97ed-71f08578acc6"
 	strings:
 		$s0 = "<td bgcolor=\"<%=BgColor%>\" title=\"<%=SubFolder.Name%>\"> <a href= \"<%=Reques"
 		$s1 = "Private Function ConvertBinary(ByVal SourceNumber, ByVal MaxValuePerIndex, ByVal"
@@ -910,7 +910,7 @@ rule webshell_jsp_list1 {
 		date = "2014/01/28"
 		score = 70
 		hash = "8d9e5afa77303c9c01ff34ea4e7f6ca6"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "7a30d6ec-468b-4990-8c7d-30dbd4710167"
 	strings:
 		$s1 = "case 's':ConnectionDBM(out,encodeChange(request.getParameter(\"drive"
 		$s9 = "return \"<a href=\\\"javascript:delFile('\"+folderReplace(file)+\"')\\\""
@@ -925,7 +925,7 @@ rule webshell_phpkit_1_0_odd {
 		date = "2014/01/28"
 		score = 70
 		hash = "594d1b1311bbef38a0eb3d6cbb1ab538"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "4b3b7f0f-16a9-466b-ba90-26448cb4acc7"
 	strings:
 		$s0 = "include('php://input');" fullword
 		$s1 = "// No eval() calls, no system() calls, nothing normally seen as malicious." fullword
@@ -941,7 +941,7 @@ rule webshell_jsp_123 {
 		date = "2014/01/28"
 		score = 70
 		hash = "c691f53e849676cac68a38d692467641"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "5da465e2-ef29-4815-af59-2b5566da23a7"
 	strings:
 		$s0 = "<font color=\"blue\">??????????????????:</font><input type=\"text\" size=\"7"
 		$s3 = "String path=new String(request.getParameter(\"path\").getBytes(\"ISO-8859-1\""
@@ -957,7 +957,7 @@ rule webshell_asp_1 {
 		date = "2014/01/28"
 		score = 70
 		hash = "8991148adf5de3b8322ec5d78cb01bdb"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "22409d37-09da-48a9-aead-33c78ed47c6b"
 	strings:
 		$s4 = "!22222222222222222222222222222222222222222222222222" fullword
 		$s8 = "<%eval request(\"pass\")%>" fullword
@@ -972,7 +972,7 @@ rule webshell_ASP_tool {
 		date = "2014/01/28"
 		score = 70
 		hash = "4ab68d38527d5834e9c1ff64407b34fb"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "5efaa049-34a0-4b5f-b78d-34fff95da981"
 	strings:
 		$s0 = "Response.Write \"<FORM action=\"\"\" & Request.ServerVariables(\"URL\") & \"\"\""
 		$s3 = "Response.Write \"<tr><td><font face='arial' size='2'><b>&lt;DIR&gt; <a href='\" "
@@ -988,7 +988,7 @@ rule webshell_cmd_win32 {
 		date = "2014/01/28"
 		score = 70
 		hash = "cc4d4d6cc9a25984aa9a7583c7def174"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "0a8ad7ba-18bd-47b6-a9ca-4fa8b08f6d62"
 	strings:
 		$s0 = "Process p = Runtime.getRuntime().exec(\"cmd.exe /c \" + request.getParam"
 		$s1 = "<FORM METHOD=\"POST\" NAME=\"myform\" ACTION=\"\">" fullword
@@ -1003,7 +1003,7 @@ rule webshell_jsp_jshell {
 		date = "2014/01/28"
 		score = 70
 		hash = "124b22f38aaaf064cef14711b2602c06"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "5569a57c-2997-49a1-8f61-d302c4215dd8"
 	strings:
 		$s0 = "kXpeW[\"" fullword
 		$s4 = "[7b:g0W@W<" fullword
@@ -1021,7 +1021,7 @@ rule webshell_ASP_zehir4 {
 		date = "2014/01/28"
 		score = 70
 		hash = "7f4e12e159360743ec016273c3b9108c"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "cf2a1d82-3121-41f1-a241-fbdb4b847a67"
 	strings:
 		$s9 = "Response.Write \"<a href='\"&dosyaPath&\"?status=7&Path=\"&Path&\"/"
 	condition:
@@ -1035,7 +1035,7 @@ rule webshell_wsb_idc {
 		date = "2014/01/28"
 		score = 70
 		hash = "7c5b1b30196c51f1accbffb80296395f"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "69725e80-647b-423d-9224-6bd07a54c804"
 	strings:
 		$s1 = "if (md5($_GET['usr'])==$user && md5($_GET['pass'])==$pass)" fullword
 		$s3 = "{eval($_GET['idc']);}" fullword
@@ -1050,7 +1050,7 @@ rule webshell_cpg_143_incl_xpl {
 		date = "2014/01/28"
 		score = 70
 		hash = "5937b131b67d8e0afdbd589251a5e176"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "f0dbc947-4ff0-4280-88fe-3fac9d21bfe7"
 	strings:
 		$s3 = "$data=\"username=\".urlencode($USER).\"&password=\".urlencode($PA"
 		$s5 = "fputs($sun_tzu,\"<?php echo \\\"Hi Master!\\\";ini_set(\\\"max_execution_time"
@@ -1065,7 +1065,7 @@ rule webshell_mumaasp_com {
 		date = "2014/01/28"
 		score = 70
 		hash = "cce32b2e18f5357c85b6d20f564ebd5d"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "742264ce-dd16-41d2-97a4-97ad55cb7202"
 	strings:
 		$s0 = "&9K_)P82ai,A}I92]R\"q!C:RZ}S6]=PaTTR"
 	condition:
@@ -1079,7 +1079,7 @@ rule webshell_php_404 {
 		date = "2014/01/28"
 		score = 70
 		hash = "ced050df5ca42064056a7ad610a191b3"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "19fa1b00-fbe9-4c2c-a7e4-1624baa061b6"
 	strings:
 		$s0 = "$pass = md5(md5(md5($pass)));" fullword
 	condition:
@@ -1093,7 +1093,7 @@ rule webshell_webshell_cnseay_x {
 		date = "2014/01/28"
 		score = 70
 		hash = "a0f9f7f5cd405a514a7f3be329f380e5"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "eb867f69-aaa6-448d-b9df-9246146c14c5"
 	strings:
 		$s9 = "$_F_F.='_'.$_P_P[5].$_P_P[20].$_P_P[13].$_P_P[2].$_P_P[19].$_P_P[8].$_P_"
 	condition:
@@ -1107,7 +1107,7 @@ rule webshell_asp_up {
 		date = "2014/01/28"
 		score = 70
 		hash = "f775e721cfe85019fe41c34f47c0d67c"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "ddae8088-c505-4bbb-ab07-4b2ab65dfd56"
 	strings:
 		$s0 = "Pos = InstrB(BoundaryPos,RequestBin,getByteString(\"Content-Dispositio"
 		$s1 = "ContentType = getString(MidB(RequestBin,PosBeg,PosEnd-PosBeg))" fullword
@@ -1122,7 +1122,7 @@ rule webshell_phpkit_0_1a_odd {
 		date = "2014/01/28"
 		score = 70
 		hash = "3c30399e7480c09276f412271f60ed01"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "4ba2f949-1416-4859-9fec-c8ac0acf1771"
 	strings:
 		$s1 = "include('php://input');" fullword
 		$s3 = "ini_set('allow_url_include, 1'); // Allow url inclusion in this script" fullword
@@ -1139,7 +1139,7 @@ rule webshell_ASP_cmd {
 		date = "2014/01/28"
 		score = 70
 		hash = "97af88b478422067f23b001dd06d56a9"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "961c2e3f-b423-4318-a5f6-bcc392285288"
 	strings:
 		$s0 = "<%= \"\\\\\" & oScriptNet.ComputerName & \"\\\" & oScriptNet.UserName %>" fullword
 	condition:
@@ -1153,7 +1153,7 @@ rule webshell_PHP_Shell_x3 {
 		date = "2014/01/28"
 		score = 70
 		hash = "a2f8fa4cce578fc9c06f8e674b9e63fd"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "3b20d0f4-8557-49fc-a028-bbde9c22f1cb"
 	strings:
 		$s4 = "&nbsp;&nbsp;<?php echo buildUrl(\"<font color=\\\"navy\\\">["
 		$s6 = "echo \"</form><form action=\\\"$SFileName?$urlAdd\\\" method=\\\"post\\\"><input"
@@ -1169,7 +1169,7 @@ rule webshell_PHP_g00nv13 {
 		date = "2014/01/28"
 		score = 70
 		hash = "35ad2533192fe8a1a76c3276140db820"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "1255e4ab-e310-4c9e-861f-fcae992fe027"
 	strings:
 		$s1 = "case \"zip\": case \"tar\": case \"rar\": case \"gz\": case \"cab\": cas"
 		$s4 = "if(!($sqlcon = @mysql_connect($_SESSION['sql_host'] . ':' . $_SESSION['sql_p"
@@ -1184,7 +1184,7 @@ rule webshell_php_h6ss {
 		date = "2014/01/28"
 		score = 70
 		hash = "272dde9a4a7265d6c139287560328cd5"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "b7542a28-b070-4c73-b500-db2d65ad18bc"
 	strings:
 		$s0 = "<?php eval(gzuncompress(base64_decode(\""
 	condition:
@@ -1198,7 +1198,7 @@ rule webshell_jsp_zx {
 		date = "2014/01/28"
 		score = 70
 		hash = "67627c264db1e54a4720bd6a64721674"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "70af074a-aa18-4731-adb6-a260e964d702"
 	strings:
 		$s0 = "if(request.getParameter(\"f\")!=null)(new java.io.FileOutputStream(application.g"
 	condition:
@@ -1212,7 +1212,7 @@ rule webshell_Ani_Shell {
 		date = "2014/01/28"
 		score = 70
 		hash = "889bfc9fbb8ee7832044fc575324d01a"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "0ce5b410-fddf-429b-9c45-887ee830031a"
 	strings:
 		$s0 = "$Python_CODE = \"I"
 		$s6 = "$passwordPrompt = \"\\n================================================="
@@ -1228,7 +1228,7 @@ rule webshell_jsp_k8cmd {
 		date = "2014/01/28"
 		score = 70
 		hash = "b39544415e692a567455ff033a97a682"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "ed90c8b0-dd92-4227-be0a-0e0bf40faf98"
 	strings:
 		$s2 = "if(request.getSession().getAttribute(\"hehe\").toString().equals(\"hehe\"))" fullword
 	condition:
@@ -1243,7 +1243,7 @@ rule webshell_jsp_cmd {
 		date = "2014/01/28"
 		score = 70
 		hash = "5391c4a8af1ede757ba9d28865e75853"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "c626502f-a1cf-46b4-9c2a-39ab6a1b84e5"
 	strings:
 		$s6 = "out.println(\"Command: \" + request.getParameter(\"cmd\") + \"<BR>\");" fullword
 	condition:
@@ -1258,7 +1258,7 @@ rule webshell_jsp_k81 {
 		date = "2014/01/28"
 		score = 70
 		hash = "41efc5c71b6885add9c1d516371bd6af"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "75946837-1cc7-4450-8a5d-99ef7351dbf5"
 	strings:
 		$s1 = "byte[] binary = BASE64Decoder.class.newInstance().decodeBuffer(cmd);" fullword
 		$s9 = "if(cmd.equals(\"Szh0ZWFt\")){out.print(\"[S]\"+dir+\"[E]\");}" fullword
@@ -1273,7 +1273,7 @@ rule webshell_ASP_zehir {
 		date = "2014/01/28"
 		score = 70
 		hash = "0061d800aee63ccaf41d2d62ec15985d"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "a11140fe-cf02-4acb-971b-bb3582c1ce39"
 	strings:
 		$s9 = "Response.Write \"<font face=wingdings size=3><a href='\"&dosyaPath&\"?status=18&"
 	condition:
@@ -1288,7 +1288,7 @@ rule webshell_Worse_Linux_Shell_1 {
 		old_rule_name = "webshell_Worse_Linux_Shell"
 		score = 70
 		hash = "8338c8d9eab10bd38a7116eb534b5fa2"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "fa5c9ca5-7e12-449e-b6c5-efa59c506cd8"
 	strings:
 		$s0 = "system(\"mv \".$_FILES['_upl']['tmp_name'].\" \".$currentWD"
 	condition:
@@ -1302,7 +1302,7 @@ rule webshell_zacosmall {
 		date = "2014/01/28"
 		score = 70
 		hash = "5295ee8dc2f5fd416be442548d68f7a6"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "0a6c5a5e-b1e8-4775-9de7-ece0df3de3df"
 	strings:
 		$s0 = "if($cmd!==''){ echo('<strong>'.htmlspecialchars($cmd).\"</strong><hr>"
 	condition:
@@ -1316,7 +1316,7 @@ rule webshell_Liz0ziM_Private_Safe_Mode_Command_Execuriton_Bypass_Exploit {
 		date = "2014/01/28"
 		score = 70
 		hash = "c6eeacbe779518ea78b8f7ed5f63fc11"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "47ef2cb3-e1c3-407a-9b39-f8f457fdb368"
 	strings:
 		$s1 = "<option value=\"cat /etc/passwd\">/etc/passwd</option>" fullword
 	condition:
@@ -1330,7 +1330,7 @@ rule webshell_redirect {
 		date = "2014/01/28"
 		score = 70
 		hash = "97da83c6e3efbba98df270cc70beb8f8"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "28f459fd-97f5-4f58-b7ab-110f2ae582ff"
 	strings:
 		$s7 = "var flag = \"?txt=\" + (document.getElementById(\"dl\").checked ? \"2\":\"1\" "
 	condition:
@@ -1344,7 +1344,7 @@ rule webshell_jsp_cmdjsp {
 		date = "2014/01/28"
 		score = 70
 		hash = "b815611cc39f17f05a73444d699341d4"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "6d35344f-214b-4bdc-9240-23e96a2d615c"
 	strings:
 		$s5 = "<FORM METHOD=GET ACTION='cmdjsp.jsp'>" fullword
 	condition:
@@ -1358,7 +1358,7 @@ rule webshell_Java_Shell {
 		date = "2014/01/28"
 		score = 70
 		hash = "36403bc776eb12e8b7cc0eb47c8aac83"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "51fc3b70-bd09-4fc0-998b-faa962911e81"
 	strings:
 		$s4 = "public JythonShell(int columns, int rows, int scrollback) {" fullword
 		$s9 = "this(null, Py.getSystemState(), columns, rows, scrollback);" fullword
@@ -1373,7 +1373,7 @@ rule webshell_asp_1d {
 		date = "2014/01/28"
 		score = 70
 		hash = "fad7504ca8a55d4453e552621f81563c"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "5c985b24-51ce-45a0-87cd-04fb54dc4b0f"
 	strings:
 		$s0 = "+9JkskOfKhUxZJPL~\\(mD^W~[,{@#@&EO"
 	condition:
@@ -1387,7 +1387,7 @@ rule webshell_jsp_IXRbE {
 		date = "2014/01/28"
 		score = 70
 		hash = "e26e7e0ebc6e7662e1123452a939e2cd"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "1712ea30-59db-4435-aa95-d6c6c5ca4369"
 	strings:
 		$s0 = "<%if(request.getParameter(\"f\")!=null)(new java.io.FileOutputStream(application"
 	condition:
@@ -1401,7 +1401,7 @@ rule webshell_PHP_G5 {
 		date = "2014/01/28"
 		score = 70
 		hash = "95b4a56140a650c74ed2ec36f08d757f"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "c7d299f4-d07c-418f-9190-20d6876d5ee1"
 	strings:
 		$s3 = "echo \"Hacking Mode?<br><select name='htype'><option >--------SELECT--------</op"
 	condition:
@@ -1415,7 +1415,7 @@ rule webshell_PHP_r57142 {
 		date = "2014/01/28"
 		score = 70
 		hash = "0911b6e6b8f4bcb05599b2885a7fe8a8"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "ed5fa0ab-2581-4ac7-98ae-b94471dee4de"
 	strings:
 		$s0 = "$downloaders = array('wget','fetch','lynx','links','curl','get','lwp-mirror');" fullword
 	condition:
@@ -1429,7 +1429,7 @@ rule webshell_jsp_tree {
 		date = "2014/01/28"
 		score = 70
 		hash = "bcdf7bbf7bbfa1ffa4f9a21957dbcdfa"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "32f71ef1-bd75-4980-90a5-04d42b0fd5bc"
 	strings:
 		$s5 = "$('#tt2').tree('options').url = \"selectChild.action?checki"
 		$s6 = "String basePath = request.getScheme()+\"://\"+request.getServerName()+\":\"+requ"
@@ -1444,7 +1444,7 @@ rule webshell_C99madShell_v_3_0_smowu {
 		date = "2014/01/28"
 		score = 70
 		hash = "74e1e7c7a6798f1663efb42882b85bee"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "b8bc74cd-02d7-47db-b8ee-3c29c4c1fc15"
 	strings:
 		$s2 = "<tr><td width=\"50%\" height=\"1\" valign=\"top\"><center><b>:: Enter ::</b><for"
 		$s8 = "<p><font color=red>Wordpress Not Found! <input type=text id=\"wp_pat\"><input ty"
@@ -1459,7 +1459,7 @@ rule webshell_simple_backdoor {
 		date = "2014/01/28"
 		score = 70
 		hash = "f091d1b9274c881f8e41b2f96e6b9936"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "2578c980-0464-41df-b1cc-92d48bac9c6d"
 	strings:
 		$s0 = "$cmd = ($_REQUEST['cmd']);" fullword
 		$s1 = "if(isset($_REQUEST['cmd'])){" fullword
@@ -1475,7 +1475,7 @@ rule webshell_PHP_404 {
 		date = "2014/01/28"
 		score = 70
 		hash = "078c55ac475ab9e028f94f879f548bca"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "25f09bb2-79e3-43cf-8d74-c283c14b7582"
 	strings:
 		$s4 = "<span>Posix_getpwuid (\"Read\" /etc/passwd)"
 	condition:
@@ -1489,7 +1489,7 @@ rule webshell_Macker_s_Private_PHPShell {
 		date = "2014/01/28"
 		score = 70
 		hash = "e24cbf0e294da9ac2117dc660d890bb9"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "ea016814-4f33-4039-967d-ee6a827e2267"
 	strings:
 		$s3 = "echo \"<tr><td class=\\\"silver border\\\">&nbsp;<strong>Server's PHP Version:&n"
 		$s4 = "&nbsp;&nbsp;<?php echo buildUrl(\"<font color=\\\"navy\\\">["
@@ -1505,7 +1505,7 @@ rule webshell_Antichat_Shell_v1_3_2 {
 		date = "2014/01/28"
 		score = 70
 		hash = "40d0abceba125868be7f3f990f031521"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "caed61ee-f75f-4327-8a12-59de56917c83"
 	strings:
 		$s3 = "$header='<html><head><title>'.getenv(\"HTTP_HOST\").' - Antichat Shell</title><m"
 	condition:
@@ -1519,7 +1519,7 @@ rule webshell_Safe_mode_breaker {
 		date = "2014/01/28"
 		score = 70
 		hash = "5bd07ccb1111950a5b47327946bfa194"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "7b169422-3ed2-44a7-9b7e-fb499dcf895f"
 	strings:
 		$s5 = "preg_match(\"/SAFE\\ MODE\\ Restriction\\ in\\ effect\\..*whose\\ uid\\ is("
 		$s6 = "$path =\"{$root}\".((substr($root,-1)!=\"/\") ? \"/\" : NULL)."
@@ -1534,7 +1534,7 @@ rule webshell_Sst_Sheller {
 		date = "2014/01/28"
 		score = 70
 		hash = "d93c62a0a042252f7531d8632511ca56"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "632d54a9-00bf-462b-a41d-ed36f62a22b2"
 	strings:
 		$s2 = "echo \"<a href='?page=filemanager&id=fm&fchmod=$dir$file'>"
 		$s3 = "<? unlink($filename); unlink($filename1); unlink($filename2); unlink($filename3)"
@@ -1549,7 +1549,7 @@ rule webshell_jsp_list {
 		date = "2014/01/28"
 		score = 70
 		hash = "1ea290ff4259dcaeb680cec992738eda"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "3f77dd98-12a6-4f9d-9c14-e076d91b6586"
 	strings:
 		$s0 = "<FORM METHOD=\"POST\" NAME=\"myform\" ACTION=\"\">" fullword
 		$s2 = "out.print(\") <A Style='Color: \" + fcolor.toString() + \";' HRef='?file=\" + fn"
@@ -1565,7 +1565,7 @@ rule webshell_PHPJackal_v1_5 {
 		date = "2014/01/28"
 		score = 70
 		hash = "d76dc20a4017191216a0315b7286056f"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "d6709945-e021-4cc7-9c27-e59bedc73fd8"
 	strings:
 		$s7 = "echo \"<center>${t}MySQL cilent:</td><td bgcolor=\\\"#333333\\\"></td></tr><form"
 		$s8 = "echo \"<center>${t}Wordlist generator:</td><td bgcolor=\\\"#333333\\\"></td></tr"
@@ -1580,7 +1580,7 @@ rule webshell_customize {
 		date = "2014/01/28"
 		score = 70
 		hash = "d55578eccad090f30f5d735b8ec530b1"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "02226921-6119-4d4f-b7e8-c9ec53b05519"
 	strings:
 		$s4 = "String cs = request.getParameter(\"z0\")==null?\"gbk\": request.getParameter(\"z"
 	condition:
@@ -1594,7 +1594,7 @@ rule webshell_s72_Shell_v1_1_Coding {
 		date = "2014/01/28"
 		score = 70
 		hash = "c2e8346a5515c81797af36e7e4a3828e"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "c9e8ab83-e4d0-44a8-b164-729c94c10d37"
 	strings:
 		$s5 = "<font face=\"Verdana\" style=\"font-size: 8pt\" color=\"#800080\">Buradan Dosya "
 	condition:
@@ -1608,7 +1608,7 @@ rule webshell_jsp_sys3 {
 		date = "2014/01/28"
 		score = 70
 		hash = "b3028a854d07674f4d8a9cf2fb6137ec"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "91375b68-7966-4b41-9cea-947527cd067a"
 	strings:
 		$s1 = "<input type=\"submit\" name=\"btnSubmit\" value=\"Upload\">" fullword
 		$s4 = "String path=new String(request.getParameter(\"path\").getBytes(\"ISO-8859-1\""
@@ -1624,7 +1624,7 @@ rule webshell_jsp_guige02 {
 		date = "2014/01/28"
 		score = 70
 		hash = "a3b8b2280c56eaab777d633535baf21d"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "c257388f-1fc5-46d9-a6e4-8a84c4e16fc2"
 	strings:
 		$s0 = "????????????????%><html><head><title>hahahaha</title></head><body bgcolor=\"#fff"
 		$s1 = "<%@page contentType=\"text/html; charset=GBK\" import=\"java.io.*;\"%><%!private"
@@ -1639,7 +1639,7 @@ rule webshell_php_ghost {
 		date = "2014/01/28"
 		score = 70
 		hash = "38dc8383da0859dca82cf0c943dbf16d"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "8161e2eb-b261-4572-a823-580eb1f2eb6e"
 	strings:
 		$s1 = "<?php $OOO000000=urldecode('%61%68%36%73%62%65%68%71%6c%61%34%63%6f%5f%73%61%64'"
 		$s6 = "//<img width=1 height=1 src=\"http://websafe.facaiok.com/just7z/sx.asp?u=***.***"
@@ -1655,7 +1655,7 @@ rule webshell_WinX_Shell {
 		date = "2014/01/28"
 		score = 70
 		hash = "17ab5086aef89d4951fe9b7c7a561dda"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "e42b5bdc-d215-48cb-9d27-4a6dd8f5b164"
 	strings:
 		$s5 = "print \"<font face=\\\"Verdana\\\" size=\\\"1\\\" color=\\\"#990000\\\">Filenam"
 		$s8 = "print \"<font face=\\\"Verdana\\\" size=\\\"1\\\" color=\\\"#990000\\\">File: </"
@@ -1670,7 +1670,7 @@ rule webshell_Crystal_Crystal {
 		date = "2014/01/28"
 		score = 70
 		hash = "fdbf54d5bf3264eb1c4bff1fac548879"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "63df206b-a9f7-45dc-9518-23b1e42f05e9"
 	strings:
 		$s1 = "show opened ports</option></select><input type=\"hidden\" name=\"cmd_txt\" value"
 		$s6 = "\" href=\"?act=tools\"><font color=#CC0000 size=\"3\">Tools</font></a></span></f"
@@ -1685,7 +1685,7 @@ rule webshell_r57_1_4_0 {
 		date = "2014/01/28"
 		score = 70
 		hash = "574f3303e131242568b0caf3de42f325"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "df0d82ee-ddfb-4526-860c-c9f203bfb77a"
 	strings:
 		$s4 = "@ini_set('error_log',NULL);" fullword
 		$s6 = "$pass='abcdef1234567890abcdef1234567890';" fullword
@@ -1703,7 +1703,7 @@ rule webshell_asp_ajn {
 		date = "2014/01/28"
 		score = 70
 		hash = "aaafafc5d286f0bff827a931f6378d04"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "4f4c0cf1-db7a-4164-8555-c94d9d672f2b"
 	strings:
 		$s1 = "seal.write \"Set WshShell = CreateObject(\"\"WScript.Shell\"\")\" & vbcrlf" fullword
 		$s6 = "seal.write \"BinaryStream.SaveToFile \"\"c:\\downloaded.zip\"\", adSaveCreateOve"
@@ -1718,7 +1718,7 @@ rule webshell_php_cmd {
 		date = "2014/01/28"
 		score = 70
 		hash = "c38ae5ba61fd84f6bbbab98d89d8a346"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "d545d082-9a83-4680-92ac-25b7b3ef0dd3"
 	strings:
 		$s0 = "if($_GET['cmd']) {" fullword
 		$s1 = "// cmd.php = Command Execution" fullword
@@ -1734,7 +1734,7 @@ rule webshell_asp_list {
 		date = "2014/01/28"
 		score = 70
 		hash = "1cfa493a165eb4b43e6d4cc0f2eab575"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "f8e282cc-e5b3-49ed-a045-866537c4b6aa"
 	strings:
 		$s0 = "<INPUT TYPE=\"hidden\" NAME=\"type\" value=\"<%=tipo%>\">" fullword
 		$s4 = "Response.Write(\"<h3>FILE: \" & file & \"</h3>\")" fullword
@@ -1749,7 +1749,7 @@ rule webshell_PHP_co {
 		date = "2014/01/28"
 		score = 70
 		hash = "62199f5ac721a0cb9b28f465a513874c"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "a60dbc76-7086-409c-a611-463e76156c8e"
 	strings:
 		$s0 = "cGX6R9q733WvRRjISKHOp9neT7wa6ZAD8uthmVJV" fullword
 		$s11 = "6Mk36lz/HOkFfoXX87MpPhZzBQH6OaYukNg1OE1j" fullword
@@ -1764,7 +1764,7 @@ rule webshell_PHP_150 {
 		date = "2014/01/28"
 		score = 70
 		hash = "400c4b0bed5c90f048398e1d268ce4dc"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "a299f308-6a76-468f-92c3-f631bd218d70"
 	strings:
 		$s0 = "HJ3HjqxclkZfp"
 		$s1 = "<? eval(gzinflate(base64_decode('" fullword
@@ -1779,7 +1779,7 @@ rule webshell_jsp_cmdjsp_2 {
 		date = "2014/01/28"
 		score = 70
 		hash = "1b5ae3649f03784e2a5073fa4d160c8b"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "98126c40-9d96-434d-bd36-4b410ad22a48"
 	strings:
 		$s0 = "Process p = Runtime.getRuntime().exec(\"cmd.exe /C \" + cmd);" fullword
 		$s4 = "<FORM METHOD=GET ACTION='cmdjsp.jsp'>" fullword
@@ -1794,7 +1794,7 @@ rule webshell_PHP_c37 {
 		date = "2014/01/28"
 		score = 70
 		hash = "d01144c04e7a46870a8dd823eb2fe5c8"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "38f831dc-c0b8-4843-8533-e1a25be311d6"
 	strings:
 		$s3 = "array('cpp','cxx','hxx','hpp','cc','jxx','c++','vcproj'),"
 		$s9 = "++$F; $File = urlencode($dir[$dirFILE]); $eXT = '.:'; if (strpos($dir[$dirFILE],"
@@ -1809,7 +1809,7 @@ rule webshell_PHP_b37 {
 		date = "2014/01/28"
 		score = 70
 		hash = "0421445303cfd0ec6bc20b3846e30ff0"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "f1eb70a8-3f80-4d46-97e7-8ee80f1c9375"
 	strings:
 		$s0 = "xmg2/G4MZ7KpNveRaLgOJvBcqa2A8/sKWp9W93NLXpTTUgRc"
 	condition:
@@ -1823,7 +1823,7 @@ rule webshell_php_backdoor {
 		date = "2014/01/28"
 		score = 70
 		hash = "2b5cb105c4ea9b5ebc64705b4bd86bf7"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "bad3409c-eaae-429d-92ce-153d235c1179"
 	strings:
 		$s1 = "if(!move_uploaded_file($HTTP_POST_FILES['file_name']['tmp_name'], $dir.$fname))" fullword
 		$s2 = "<pre><form action=\"<? echo $PHP_SELF; ?>\" METHOD=GET >execute command: <input "
@@ -1838,7 +1838,7 @@ rule webshell_asp_dabao {
 		date = "2014/01/28"
 		score = 70
 		hash = "3919b959e3fa7e86d52c2b0a91588d5d"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "e8b76ce2-739a-4cb8-8cb5-326f9fe1073c"
 	strings:
 		$s2 = " Echo \"<input type=button name=Submit onclick=\"\"document.location =&#039;\" &"
 		$s8 = " Echo \"document.Frm_Pack.FileName.value=\"\"\"\"+year+\"\"-\"\"+(month+1)+\"\"-"
@@ -1853,7 +1853,7 @@ rule webshell_php_2 {
 		date = "2014/01/28"
 		score = 70
 		hash = "267c37c3a285a84f541066fc5b3c1747"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "31e1f60c-cc48-45d6-aeda-3febe3c588bd"
 	strings:
 		$s0 = "<?php assert($_REQUEST[\"c\"]);?> " fullword
 	condition:
@@ -1867,7 +1867,7 @@ rule webshell_asp_cmdasp {
 		date = "2014/01/28"
 		score = 70
 		hash = "57b51418a799d2d016be546f399c2e9b"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "92c8d7a4-b138-4a55-bcb0-7d5d605a72d8"
 	strings:
 		$s0 = "<%= \"\\\\\" & oScriptNet.ComputerName & \"\\\" & oScriptNet.UserName %>" fullword
 		$s7 = "Call oScript.Run (\"cmd.exe /c \" & szCMD & \" > \" & szTempFile, 0, True)" fullword
@@ -1882,7 +1882,7 @@ rule webshell_spjspshell {
 		date = "2014/01/28"
 		score = 70
 		hash = "d39d51154aaad4ba89947c459a729971"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "0764cc4f-881d-4b61-bec5-52c4ac983a02"
 	strings:
 		$s7 = "Unix:/bin/sh -c tar vxf xxx.tar Windows:c:\\winnt\\system32\\cmd.exe /c type c:"
 	condition:
@@ -1896,7 +1896,7 @@ rule webshell_jsp_action {
 		date = "2014/01/28"
 		score = 70
 		hash = "5a7d931094f5570aaf5b7b3b06c3d8c0"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "15d9127e-ff19-4408-b4c2-5836e2e53e42"
 	strings:
 		$s1 = "String url=\"jdbc:oracle:thin:@localhost:1521:orcl\";" fullword
 		$s6 = "<%@ page contentType=\"text/html;charset=gb2312\"%>" fullword
@@ -1911,7 +1911,7 @@ rule webshell_Inderxer {
 		date = "2014/01/28"
 		score = 70
 		hash = "9ea82afb8c7070817d4cdf686abe0300"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "26b92e84-ff90-4e3e-8e2f-401fd1d115d7"
 	strings:
 		$s4 = "<td>Nereye :<td><input type=\"text\" name=\"nereye\" size=25></td><td><input typ"
 	condition:
@@ -1925,7 +1925,7 @@ rule webshell_asp_Rader {
 		date = "2014/01/28"
 		score = 70
 		hash = "ad1a362e0a24c4475335e3e891a01731"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "ad7fc03f-3352-40e3-a562-0c939bbc1e8d"
 	strings:
 		$s1 = "FONT-WEIGHT: bold; FONT-SIZE: 10px; BACKGROUND: none transparent scroll repeat 0"
 		$s3 = "m\" target=inf onClick=\"window.open('?action=help','inf','width=450,height=400 "
@@ -1940,7 +1940,7 @@ rule webshell_c99_madnet_smowu {
 		date = "2014/01/28"
 		score = 70
 		hash = "3aaa8cad47055ba53190020311b0fb83"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "5d3f0f80-875b-488c-bb33-e2fa192a6793"
 	strings:
 		$s0 = "//Authentication" fullword
 		$s1 = "$login = \"" fullword
@@ -1959,7 +1959,7 @@ rule webshell_php_moon {
 		date = "2014/01/28"
 		score = 70
 		hash = "2a2b1b783d3a2fa9a50b1496afa6e356"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "b9ae3ebd-9f96-41c2-8595-22da793c07c3"
 	strings:
 		$s2 = "echo '<option value=\"create function backshell returns string soname"
 		$s3 = "echo      \"<input name='p' type='text' size='27' value='\".dirname(_FILE_).\""
@@ -1976,7 +1976,7 @@ rule webshell_minupload {
 		date = "2014/01/28"
 		score = 70
 		hash = "ec905a1395d176c27f388d202375bdf9"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "6b130516-341a-483c-b7f7-0aa1e96475f2"
 	strings:
 		$s0 = "<input type=\"submit\" name=\"btnSubmit\" value=\"Upload\">   " fullword
 		$s9 = "String path=new String(request.getParameter(\"path\").getBytes(\"ISO-8859"
@@ -1991,7 +1991,7 @@ rule webshell_ELMALISEKER_Backd00r {
 		date = "2014/01/28"
 		score = 70
 		hash = "3aa403e0a42badb2c23d4a54ef43e2f4"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "64505a17-8e28-43c2-9890-e51084b580c0"
 	strings:
 		$s0 = "response.write(\"<tr><td bgcolor=#F8F8FF><input type=submit name=cmdtxtFileOptio"
 		$s2 = "if FP = \"RefreshFolder\" or request.form(\"cmdOption\")=\"DeleteFolder\" or req"
@@ -2006,7 +2006,7 @@ rule webshell_PHP_bug_1_ {
 		date = "2014/01/28"
 		score = 70
 		hash = "91c5fae02ab16d51fc5af9354ac2f015"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "ef969789-9591-48d3-814f-e341e292a30f"
 	strings:
 		$s0 = "@include($_GET['bug']);" fullword
 	condition:
@@ -2020,7 +2020,7 @@ rule webshell_caidao_shell_hkmjj {
 		date = "2014/01/28"
 		score = 70
 		hash = "e7b994fe9f878154ca18b7cde91ad2d0"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "58630b7a-a837-4cf6-a510-88c600d11fbe"
 	strings:
 		$s6 = "codeds=\"Li#uhtxhvw+%{{%,#@%{%#wkhq#hydo#uhtxhvw+%knpmm%,#hqg#li\"  " fullword
 	condition:
@@ -2034,7 +2034,7 @@ rule webshell_jsp_asd {
 		date = "2014/01/28"
 		score = 70
 		hash = "a042c2ca64176410236fcc97484ec599"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "4b651f2d-0e7b-445d-b6c6-ba3ab7222986"
 	strings:
 		$s3 = "<%@ page language=\"java\" pageEncoding=\"gbk\"%>" fullword
 		$s6 = "<input size=\"100\" value=\"<%=application.getRealPath(\"/\") %>\" name=\"url"
@@ -2050,7 +2050,7 @@ rule webshell_metaslsoft {
 		date = "2014/01/28"
 		score = 70
 		hash = "aa328ed1476f4a10c0bcc2dde4461789"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "be96dde7-45e6-4781-8b43-5b6bbe5c0ea9"
 	strings:
 		$s7 = "$buff .= \"<tr><td><a href=\\\"?d=\".$pwd.\"\\\">[ $folder ]</a></td><td>LINK</t"
 	condition:
@@ -2064,7 +2064,7 @@ rule webshell_asp_Ajan {
 		date = "2014/01/28"
 		score = 70
 		hash = "b6f468252407efc2318639da22b08af0"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "6f222acd-448a-4d17-8aa2-abd908b281ab"
 	strings:
 		$s3 = "entrika.write \"BinaryStream.SaveToFile \"\"c:\\downloaded.zip\"\", adSaveCreate"
 	condition:
@@ -2081,7 +2081,7 @@ rule webshell_config_myxx_zend {
 		hash0 = "d44df8b1543b837e57cc8f25a0a68d92"
 		hash1 = "e0354099bee243702eb11df8d0e046df"
 		hash2 = "591ca89a25f06cf01e4345f98a22845c"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "85f80248-79d8-44ba-91b6-781be953a4d4"
 	strings:
 		$s3 = ".println(\"<a href=\\\"javascript:alert('You Are In File Now ! Can Not Pack !');"
 	condition:
@@ -2100,7 +2100,7 @@ rule webshell_browser_201_3_ma_download {
 		hash2 = "fb8c6c3a69b93e5e7193036fd31a958d"
 		hash3 = "4cc68fa572e88b669bce606c7ace0ae9"
 		hash4 = "fa87bbd7201021c1aefee6fcc5b8e25a"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "13eea6c6-ebca-43fa-9001-d89b0e9efb6d"
 	strings:
 		$s2 = "<small>jsp File Browser version <%= VERSION_NR%> by <a"
 		$s3 = "else if (fName.endsWith(\".mpg\") || fName.endsWith(\".mpeg\") || fName.endsWith"
@@ -2118,7 +2118,7 @@ rule webshell_itsec_itsecteam_shell_jHn {
 		hash0 = "8ae9d2b50dc382f0571cd7492f079836"
 		hash1 = "bd6d3b2763c705a01cc2b3f105a25fa4"
 		hash2 = "40c6ecf77253e805ace85f119fe1cebb"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "ea80a36b-ab70-473f-8070-9f0a39b02eab"
 	strings:
 		$s4 = "echo $head.\"<font face='Tahoma' size='2'>Operating System : \".php_uname().\"<b"
 		$s5 = "echo \"<center><form name=client method='POST' action='$_SERVER[PHP_SELF]?do=db'"
@@ -2136,7 +2136,7 @@ rule webshell_ghost_source_icesword_silic {
 		hash0 = "cbf64a56306c1b5d98898468fc1fdbd8"
 		hash1 = "6e20b41c040efb453d57780025a292ae"
 		hash2 = "437d30c94f8eef92dc2f064de4998695"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "10c3eef5-2c9f-4b0d-bf28-3a2099b549da"
 	strings:
 		$s3 = "if(eregi('WHERE|LIMIT',$_POST['nsql']) && eregi('SELECT|FROM',$_POST['nsql'])) $"
 		$s6 = "if(!empty($_FILES['ufp']['name'])){if($_POST['ufn'] != '') $upfilename = $_POST["
@@ -2180,7 +2180,7 @@ rule webshell_JspSpy_JspSpyJDK5_JspSpyJDK51_luci_jsp_spy2009_m_ma3_xxx {
 		hash26 = "71097537a91fac6b01f46f66ee2d7749"
 		hash27 = "2434a7a07cb47ce25b41d30bc291cacc"
 		hash28 = "7a4b090619ecce6f7bd838fe5c58554b"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "6a0aaaa6-7e03-4196-b925-10ce66128322"
 	strings:
 		$s8 = "\"<form action=\\\"\"+SHELL_NAME+\"?o=upload\\\" method=\\\"POST\\\" enctype="
 		$s9 = "<option value='reg query \\\"HKLM\\\\System\\\\CurrentControlSet\\\\Control\\\\T"
@@ -2201,7 +2201,7 @@ rule webshell_2_520_job_ma1_ma4_2 {
 		hash3 = "532b93e02cddfbb548ce5938fe2f5559"
 		hash4 = "6e0fa491d620d4af4b67bae9162844ae"
 		hash5 = "7eabe0f60975c0c73d625b7ddf7b9cbd"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "35a03944-a236-4f7e-8a8b-d3602927fc4f"
 	strings:
 		$s4 = "_url = \"jdbc:microsoft:sqlserver://\" + dbServer + \":\" + dbPort + \";User=\" "
 		$s9 = "result += \"<meta http-equiv=\\\"refresh\\\" content=\\\"2;url=\" + request.getR"
@@ -2248,7 +2248,7 @@ rule webshell_000_403_807_a_c5_config_css_dm_he1p_JspSpy_JspSpyJDK5_JspSpyJDK51_
 		hash29 = "71097537a91fac6b01f46f66ee2d7749"
 		hash30 = "2434a7a07cb47ce25b41d30bc291cacc"
 		hash31 = "7a4b090619ecce6f7bd838fe5c58554b"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "741c5057-1bee-4df2-8e46-618d7e801cdd"
 	strings:
 		$s0 = "ports = \"21,25,80,110,1433,1723,3306,3389,4899,5631,43958,65500\";" fullword
 		$s1 = "private static class VEditPropertyInvoker extends DefaultInvoker {" fullword
@@ -2266,7 +2266,7 @@ rule webshell_wso2_5_1_wso2_5_wso2 {
 		hash0 = "dbeecd555a2ef80615f0894027ad75dc"
 		hash1 = "7c8e5d31aad28eb1f0a9a53145551e05"
 		hash2 = "cbc44fb78220958f81b739b493024688"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "1c68fc26-3876-40bc-8b6e-8c3a18a751bd"
 	strings:
 		$s7 = "$opt_charsets .= '<option value=\"'.$item.'\" '.($_POST['charset']==$item?'selec"
 		$s8 = ".'</td><td><a href=\"#\" onclick=\"g(\\'FilesTools\\',null,\\''.urlencode($f['na"
@@ -2287,7 +2287,7 @@ rule webshell_000_403_c5_queryDong_spyjsp2010_t00ls {
 		hash3 = "90a5ba0c94199269ba33a58bc6a4ad99"
 		hash4 = "655722eaa6c646437c8ae93daac46ae0"
 		hash5 = "9c94637f76e68487fa33f7b0030dd932"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "8a30d91b-36ff-49d8-aae8-f8d0db115d58"
 	strings:
 		$s8 = "table.append(\"<td nowrap> <a href=\\\"#\\\" onclick=\\\"view('\"+tbName+\"')"
 		$s9 = "\"<p><input type=\\\"hidden\\\" name=\\\"selectDb\\\" value=\\\"\"+selectDb+\""
@@ -2305,7 +2305,7 @@ rule webshell_404_data_suiyue {
 		hash0 = "7066f4469c3ec20f4890535b5f299122"
 		hash1 = "9f54aa7b43797be9bab7d094f238b4ff"
 		hash2 = "c93d5bdf5cf62fe22e299d0f2b865ea7"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "54fea2e5-3b07-467a-9ada-2fdacb6b47c8"
 	strings:
 		$s3 = " sbCopy.append(\"<input type=button name=goback value=' \"+strBack[languageNo]+"
 	condition:
@@ -2329,7 +2329,7 @@ rule webshell_r57shell_r57shell127_SnIpEr_SA_Shell_EgY_SpIdEr_ShElL_V2_r57_xxx {
 		hash7 = "4108f28a9792b50d95f95b9e5314fa1e"
 		hash8 = "41af6fd253648885c7ad2ed524e0692d"
 		hash9 = "6fcc283470465eed4870bcc3e2d7f14d"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "1fdc88d3-a8ef-4f0c-adb4-a8223794c261"
 	strings:
 		$s2 = "echo sr(15,\"<b>\".$lang[$language.'_text58'].$arrow.\"</b>\",in('text','mk_name"
 		$s3 = "echo sr(15,\"<b>\".$lang[$language.'_text21'].$arrow.\"</b>\",in('checkbox','nf1"
@@ -2368,7 +2368,7 @@ rule webshell_807_a_css_dm_he1p_JspSpy_xxx {
 		hash20 = "71097537a91fac6b01f46f66ee2d7749"
 		hash21 = "2434a7a07cb47ce25b41d30bc291cacc"
 		hash22 = "7a4b090619ecce6f7bd838fe5c58554b"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "d0477910-1cf3-4598-8d2c-8117fb2b8c81"
 	strings:
 		$s1 = "\"<h2>Remote Control &raquo;</h2><input class=\\\"bt\\\" onclick=\\\"var"
 		$s2 = "\"<p>Current File (import new file name and new file)<br /><input class=\\\"inpu"
@@ -2388,7 +2388,7 @@ rule webshell_201_3_ma_download {
 		hash1 = "fb8c6c3a69b93e5e7193036fd31a958d"
 		hash2 = "4cc68fa572e88b669bce606c7ace0ae9"
 		hash3 = "fa87bbd7201021c1aefee6fcc5b8e25a"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "c9f7423b-d51f-4f01-8dc6-5655e016c60d"
 	strings:
 		$s0 = "<input title=\"Upload selected file to the current working directory\" type=\"Su"
 		$s5 = "<input title=\"Launch command in current directory\" type=\"Submit\" class=\"but"
@@ -2417,7 +2417,7 @@ rule webshell_browser_201_3_400_in_JFolder_jfolder01_jsp_leo_ma_warn_webshell_nc
 		hash10 = "e9a5280f77537e23da2545306f6a19ad"
 		hash11 = "598eef7544935cf2139d1eada4375bb5"
 		hash12 = "fa87bbd7201021c1aefee6fcc5b8e25a"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "fa4ddf05-a0f5-4b32-9b1f-b600f3d77825"
 	strings:
 		$s4 = "UplInfo info = UploadMonitor.getInfo(fi.clientFileName);" fullword
 		$s5 = "long time = (System.currentTimeMillis() - starttime) / 1000l;" fullword
@@ -2435,7 +2435,7 @@ rule webshell_shell_phpspy_2006_arabicspy {
 		hash0 = "791708057d8b429d91357d38edf43cc0"
 		hash1 = "40a1f840111996ff7200d18968e42cfe"
 		hash2 = "e0202adff532b28ef1ba206cf95962f2"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "adee4c36-53b3-4acf-bccb-1e93a57c1ad9"
 	strings:
 		$s0 = "elseif(($regwrite) AND !empty($_POST['writeregname']) AND !empty($_POST['regtype"
 		$s8 = "echo \"<form action=\\\"?action=shell&dir=\".urlencode($dir).\"\\\" method=\\\"P"
@@ -2456,7 +2456,7 @@ rule webshell_in_JFolder_jfolder01_jsp_leo_warn {
 		hash3 = "f98d2b33cd777e160d1489afed96de39"
 		hash4 = "4b4c12b3002fad88ca6346a873855209"
 		hash5 = "e9a5280f77537e23da2545306f6a19ad"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "f947ee31-ef29-447b-a9e4-6fd5543f23aa"
 	strings:
 		$s4 = "sbFile.append(\"  &nbsp;<a href=\\\"javascript:doForm('down','\"+formatPath(strD"
 		$s9 = "sbFile.append(\" &nbsp;<a href=\\\"javascript:doForm('edit','\"+formatPath(strDi"
@@ -2478,7 +2478,7 @@ rule webshell_2_520_icesword_job_ma1_ma4_2 {
 		hash4 = "532b93e02cddfbb548ce5938fe2f5559"
 		hash5 = "6e0fa491d620d4af4b67bae9162844ae"
 		hash6 = "7eabe0f60975c0c73d625b7ddf7b9cbd"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "141fb8e7-0bfd-44cf-a505-4ce55882105b"
 	strings:
 		$s2 = "private String[] _textFileTypes = {\"txt\", \"htm\", \"html\", \"asp\", \"jsp\","
 		$s3 = "\\\" name=\\\"upFile\\\" size=\\\"8\\\" class=\\\"textbox\\\" />&nbsp;<input typ"
@@ -2517,7 +2517,7 @@ rule webshell_shell_phpspy_2006_arabicspy_hkrkoz {
 		hash1 = "40a1f840111996ff7200d18968e42cfe"
 		hash2 = "e0202adff532b28ef1ba206cf95962f2"
 		hash3 = "802f5cae46d394b297482fd0c27cb2fc"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "3deacded-b5ba-4a6b-93a9-a3ff7b90bd89"
 	strings:
 		$s5 = "$prog = isset($_POST['prog']) ? $_POST['prog'] : \"/c net start > \".$pathname."
 	condition:
@@ -2537,7 +2537,7 @@ rule webshell_c99_Shell_ci_Biz_was_here_c100_v_xxx {
 		hash3 = "0f5b9238d281bc6ac13406bb24ac2a5b"
 		hash4 = "68c0629d08b1664f5bcce7d7f5f71d22"
 		hash5 = "048ccc01b873b40d57ce25a4c56ea717"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "cfe8a76b-51e0-4602-acb4-7c7cc1f5c59f"
 	strings:
 		$s8 = "else {echo \"Running datapipe... ok! Connect to <b>\".getenv(\"SERVER_ADDR\""
 	condition:
@@ -2554,7 +2554,7 @@ rule webshell_2008_2009lite_2009mssql {
 		hash0 = "3e4ba470d4c38765e4b16ed930facf2c"
 		hash1 = "3f4d454d27ecc0013e783ed921eeecde"
 		hash2 = "aa17b71bb93c6789911bd1c9df834ff9"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "70857e68-93a5-40e7-afde-29895b2a5303"
 	strings:
 		$s0 = "<a href=\"javascript:godir(\\''.$drive->Path.'/\\');"
 		$s7 = "p('<h2>File Manager - Current disk free '.sizecount($free).' of '.sizecount($all"
@@ -2576,7 +2576,7 @@ rule webshell_shell_phpspy_2005_full_phpspy_2005_lite_phpspy_2006_arabicspy_PHPS
 		hash4 = "e0202adff532b28ef1ba206cf95962f2"
 		hash5 = "0712e3dc262b4e1f98ed25760b206836"
 		hash6 = "802f5cae46d394b297482fd0c27cb2fc"
-		id = "41a0560a-b22e-5028-8ad1-710c5758cb1d"
+		id = "c4472934-4e08-456f-b2e1-070b2b1c9831"
 	strings:
 		$s0 = "$mainpath_info           = explode('/', $mainpath);" fullword
 		$s6 = "if (!isset($_GET['action']) OR empty($_GET['action']) OR ($_GET['action'] == \"d"
@@ -2596,7 +2596,7 @@ rule webshell_807_dm_JspSpyJDK5_m_cofigrue {
 		hash2 = "341298482cf90febebb8616426080d1d"
 		hash3 = "88fc87e7c58249a398efd5ceae636073"
 		hash4 = "349ec229e3f8eda0f9eb918c74a8bf4c"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "042a169c-8bbc-489d-9175-9241a955c426"
 	strings:
 		$s1 = "url_con.setRequestProperty(\"REFERER\", \"\"+fckal+\"\");" fullword
 		$s9 = "FileLocalUpload(uc(dx())+sxm,request.getRequestURL().toString(),  \"GBK\");" fullword
@@ -2614,7 +2614,7 @@ rule webshell_Dive_Shell_1_0_Emperor_Hacking_Team_xxx {
 		hash0 = "1b5102bdc41a7bc439eea8f0010310a5"
 		hash1 = "f8a6d5306fb37414c5c772315a27832f"
 		hash2 = "37cb1db26b1b0161a4bf678a6b4565bd"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "5ba81a86-3faf-440e-afdf-1f2a48ae99fd"
 	strings:
 		$s1 = "if (($i = array_search($_REQUEST['command'], $_SESSION['history'])) !== fals"
 		$s9 = "if (ereg('^[[:blank:]]*cd[[:blank:]]*$', $_REQUEST['command'])) {" fullword
@@ -2638,7 +2638,7 @@ rule webshell_404_data_in_JFolder_jfolder01_xxx {
 		hash6 = "4b4c12b3002fad88ca6346a873855209"
 		hash7 = "c93d5bdf5cf62fe22e299d0f2b865ea7"
 		hash8 = "e9a5280f77537e23da2545306f6a19ad"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "37505d7a-17f2-4ade-bbce-73450a81a251"
 	strings:
 		$s4 = "&nbsp;<TEXTAREA NAME=\"cqq\" ROWS=\"20\" COLS=\"100%\"><%=sbCmd.toString()%></TE"
 	condition:
@@ -2655,7 +2655,7 @@ rule webshell_jsp_reverse_jsp_reverse_jspbd {
 		hash1 = "ea87f0c1f0535610becadf5a98aca2fc"
 		hash2 = "7d5e9732766cf5b8edca9b7ae2b6028f"
 		score = 50
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "57e0d470-4dfc-4484-a612-4239e75eb620"
 	strings:
 		$s0 = "osw = new BufferedWriter(new OutputStreamWriter(os));" fullword
 		$s7 = "sock = new Socket(ipAddress, (new Integer(ipPort)).intValue());" fullword
@@ -2679,7 +2679,7 @@ rule webshell_400_in_JFolder_jfolder01_jsp_leo_warn_webshell_nc {
 		hash5 = "4b4c12b3002fad88ca6346a873855209"
 		hash6 = "e9a5280f77537e23da2545306f6a19ad"
 		hash7 = "598eef7544935cf2139d1eada4375bb5"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "8e6d9742-4afc-432a-9be9-f1437aa1530f"
 	strings:
 		$s0 = "sbFolder.append(\"<tr><td >&nbsp;</td><td>\");" fullword
 		$s1 = "return filesize / intDivisor + \".\" + strAfterComma + \" \" + strUnit;" fullword
@@ -2703,7 +2703,7 @@ rule webshell_2_520_job_JspWebshell_1_2_ma1_ma4_2 {
 		hash4 = "532b93e02cddfbb548ce5938fe2f5559"
 		hash5 = "6e0fa491d620d4af4b67bae9162844ae"
 		hash6 = "7eabe0f60975c0c73d625b7ddf7b9cbd"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "541ff97a-2609-4702-9448-3a5da7368432"
 	strings:
 		$s1 = "while ((nRet = insReader.read(tmpBuffer, 0, 1024)) != -1) {" fullword
 		$s6 = "password = (String)session.getAttribute(\"password\");" fullword
@@ -2726,7 +2726,7 @@ rule webshell_shell_2008_2009mssql_phpspy_2005_full_phpspy_2006_arabicspy_hkrkoz
 		hash4 = "40a1f840111996ff7200d18968e42cfe"
 		hash5 = "e0202adff532b28ef1ba206cf95962f2"
 		hash6 = "802f5cae46d394b297482fd0c27cb2fc"
-		id = "41a0560a-b22e-5028-8ad1-710c5758cb1d"
+		id = "179794bb-8c00-4667-912e-58d0af2058e0"
 	strings:
 		$s0 = "$tabledump .= \"'\".mysql_escape_string($row[$fieldcounter]).\"'\";" fullword
 		$s5 = "while(list($kname, $columns) = @each($index)) {" fullword
@@ -2755,7 +2755,7 @@ rule webshell_gfs_sh_r57shell_r57shell127_SnIpEr_SA_xxx {
 		hash8 = "4108f28a9792b50d95f95b9e5314fa1e"
 		hash9 = "41af6fd253648885c7ad2ed524e0692d"
 		hash10 = "6fcc283470465eed4870bcc3e2d7f14d"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "ab7ec437-78ec-4a28-ac09-a098e67ea04c"
 	strings:
 		$s0 = "kVycm9yOiAkIVxuIik7DQpjb25uZWN0KFNPQ0tFVCwgJHBhZGRyKSB8fCBkaWUoIkVycm9yOiAkIVxuI"
 		$s11 = "Aoc3RydWN0IHNvY2thZGRyICopICZzaW4sIHNpemVvZihzdHJ1Y3Qgc29ja2FkZHIpKSk8MCkgew0KIC"
@@ -2774,7 +2774,7 @@ rule webshell_itsec_PHPJackal_itsecteam_shell_jHn {
 		hash1 = "e2830d3286001d1455479849aacbbb38"
 		hash2 = "bd6d3b2763c705a01cc2b3f105a25fa4"
 		hash3 = "40c6ecf77253e805ace85f119fe1cebb"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "c1b1542d-f4de-4a19-b815-127dff4214d7"
 	strings:
 		$s0 = "$link=pg_connect(\"host=$host dbname=$db user=$user password=$pass\");" fullword
 		$s6 = "while($data=ocifetchinto($stm,$data,OCI_ASSOC+OCI_RETURN_NULLS))$res.=implode('|"
@@ -2793,7 +2793,7 @@ rule webshell_Shell_ci_Biz_was_here_c100_v_xxx {
 		hash0 = "f2fa878de03732fbf5c86d656467ff50"
 		hash1 = "27786d1e0b1046a1a7f67ee41c64bf4c"
 		hash2 = "68c0629d08b1664f5bcce7d7f5f71d22"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "d4d5a9f4-d166-45d8-b9d3-38ee9bf4cbb0"
 	strings:
 		$s2 = "if ($data{0} == \"\\x99\" and $data{1} == \"\\x01\") {return \"Error: \".$stri"
 		$s3 = "<OPTION VALUE=\"find /etc/ -type f -perm -o+w 2> /dev/null\""
@@ -2814,7 +2814,7 @@ rule webshell_NIX_REMOTE_WEB_SHELL_NIX_REMOTE_WEB_xxx1 {
 		hash0 = "0b19e9de790cd2f4325f8c24b22af540"
 		hash1 = "f3ca29b7999643507081caab926e2e74"
 		hash2 = "527cf81f9272919bf872007e21c4bdda"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "ecbca5c3-daaa-49e9-b336-7fad4bfdec6f"
 	strings:
 		$s1 = "<td><input size=\"48\" value=\"$docr/\" name=\"path\" type=\"text\"><input type="
 		$s2 = "$uploadfile = $_POST['path'].$_FILES['file']['name'];" fullword
@@ -2866,7 +2866,7 @@ rule webshell_2008_2009mssql_phpspy_2005_full_phpspy_2006_arabicspy_hkrkoz {
 		hash3 = "40a1f840111996ff7200d18968e42cfe"
 		hash4 = "e0202adff532b28ef1ba206cf95962f2"
 		hash5 = "802f5cae46d394b297482fd0c27cb2fc"
-		id = "41a0560a-b22e-5028-8ad1-710c5758cb1d"
+		id = "00fc5a4b-939d-415b-a834-aa2eea1ba889"
 	strings:
 		$s0 = "$this -> addFile($content, $filename);" fullword
 		$s3 = "function addFile($data, $name, $time = 0) {" fullword
@@ -2887,7 +2887,7 @@ rule webshell_c99_c66_c99_shadows_mod_c99shell {
 		hash1 = "0f5b9238d281bc6ac13406bb24ac2a5b"
 		hash2 = "68c0629d08b1664f5bcce7d7f5f71d22"
 		hash3 = "048ccc01b873b40d57ce25a4c56ea717"
-		id = "ce88027c-ae08-59f3-948d-6f3d58515468"
+		id = "b5aabe6d-03f1-4b12-a866-491bc3a70023"
 	strings:
 		$s2 = "  if (unlink(_FILE_)) {@ob_clean(); echo \"Thanks for using c99shell v.\".$shv"
 		$s3 = "  \"c99sh_backconn.pl\"=>array(\"Using PERL\",\"perl %path %host %port\")," fullword
@@ -2913,7 +2913,7 @@ rule webshell_he1p_JspSpy_nogfw_ok_style_1_JspSpy1 {
 		hash4 = "b9744f6876919c46a29ea05b1d95b1c3"
 		hash5 = "3ea688e3439a1f56b16694667938316d"
 		hash6 = "2434a7a07cb47ce25b41d30bc291cacc"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "9103d2de-3af2-4bf2-acdb-240eeb56f985"
 	strings:
 		$s0 = "\"\"+f.canRead()+\" / \"+f.canWrite()+\" / \"+f.canExecute()+\"</td>\"+" fullword
 		$s4 = "out.println(\"<h2>File Manager - Current disk &quot;\"+(cr.indexOf(\"/\") == 0?"
@@ -2938,7 +2938,7 @@ rule webshell_000_403_c5_config_myxx_queryDong_spyjsp2010_zend {
 		hash5 = "90a5ba0c94199269ba33a58bc6a4ad99"
 		hash6 = "655722eaa6c646437c8ae93daac46ae0"
 		hash7 = "591ca89a25f06cf01e4345f98a22845c"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "2fc64278-ad46-4382-9549-c19f1f0ba4f8"
 	strings:
 		$s0 = "return new Double(format.format(value)).doubleValue();" fullword
 		$s5 = "File tempF = new File(savePath);" fullword
@@ -2958,7 +2958,7 @@ rule webshell_c99_c99shell_c99_c99shell {
 		hash1 = "d3f38a6dc54a73d304932d9227a739ec"
 		hash2 = "157b4ac3c7ba3a36e546e81e9279eab5"
 		hash3 = "048ccc01b873b40d57ce25a4c56ea717"
-		id = "ce88027c-ae08-59f3-948d-6f3d58515468"
+		id = "51c20d9a-850a-40eb-9baf-86ac65f810a2"
 	strings:
 		$s2 = "$bindport_pass = \"c99\";" fullword
 		$s5 = " else {echo \"<b>Execution PHP-code</b>\"; if (empty($eval_txt)) {$eval_txt = tr"
@@ -2978,7 +2978,7 @@ rule webshell_r57shell127_r57_iFX_r57_kartal_r57_antichat {
 		hash2 = "1d912c55b96e2efe8ca873d6040e3b30"
 		hash3 = "4108f28a9792b50d95f95b9e5314fa1e"
 		hash4 = "3f71175985848ee46cc13282fbed2269"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "8b6db66b-c689-4569-a978-073d3e4c1b21"
 	strings:
 		$s6 = "$res   = @mysql_query(\"SHOW CREATE TABLE `\".$_POST['mysql_tbl'].\"`\", $d"
 		$s7 = "$sql1 .= $row[1].\"\\r\\n\\r\\n\";" fullword
@@ -2999,7 +2999,7 @@ rule webshell_NIX_REMOTE_WEB_SHELL_nstview_xxx {
 		hash1 = "4745d510fed4378e4b1730f56f25e569"
 		hash2 = "f3ca29b7999643507081caab926e2e74"
 		hash3 = "46a18979750fa458a04343cf58faa9bd"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "d7328c8b-d43f-4238-876d-9fd22f5e513a"
 	strings:
 		$s3 = "BODY, TD, TR {" fullword
 		$s5 = "$d=str_replace(\"\\\\\",\"/\",$d);" fullword
@@ -3046,7 +3046,7 @@ rule webshell_000_403_807_a_c5_config_css_dm_he1p_xxx {
 		hash28 = "71097537a91fac6b01f46f66ee2d7749"
 		hash29 = "2434a7a07cb47ce25b41d30bc291cacc"
 		hash30 = "7a4b090619ecce6f7bd838fe5c58554b"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "efab50af-acf8-4521-b75d-a5f906ad66f9"
 	strings:
 		$s3 = "String savePath = request.getParameter(\"savepath\");" fullword
 		$s4 = "URL downUrl = new URL(downFileUrl);" fullword
@@ -3071,7 +3071,7 @@ rule webshell_2_520_icesword_job_ma1 {
 		hash2 = "077f4b1b6d705d223b6d644a4f3eebae"
 		hash3 = "56c005690da2558690c4aa305a31ad37"
 		hash4 = "532b93e02cddfbb548ce5938fe2f5559"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "1020d938-370f-4484-ba28-57882b9807de"
 	strings:
 		$s1 = "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=gb2312\"></head>" fullword
 		$s3 = "<input type=\"hidden\" name=\"_EVENTTARGET\" value=\"\" />" fullword
@@ -3095,7 +3095,7 @@ rule webshell_404_data_in_JFolder_jfolder01_jsp_suiyue_warn {
 		hash5 = "f98d2b33cd777e160d1489afed96de39"
 		hash6 = "c93d5bdf5cf62fe22e299d0f2b865ea7"
 		hash7 = "e9a5280f77537e23da2545306f6a19ad"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "cef4f05c-8ea4-458f-9f4e-4b36dec97178"
 	strings:
 		$s0 = "<table width=\"100%\" border=\"1\" cellspacing=\"0\" cellpadding=\"5\" bordercol"
 		$s2 = " KB </td>" fullword
@@ -3117,7 +3117,7 @@ rule webshell_phpspy_2005_full_phpspy_2005_lite_phpspy_2006_PHPSPY {
 		hash1 = "42f211cec8032eb0881e87ebdb3d7224"
 		hash2 = "40a1f840111996ff7200d18968e42cfe"
 		hash3 = "0712e3dc262b4e1f98ed25760b206836"
-		id = "41a0560a-b22e-5028-8ad1-710c5758cb1d"
+		id = "8dd192e0-b521-401b-9fac-3a2e005eb890"
 	strings:
 		$s4 = "http://www.4ngel.net" fullword
 		$s5 = "</a> | <a href=\"?action=phpenv\">PHP" fullword
@@ -3148,7 +3148,7 @@ rule webshell_c99_locus7s_c99_w4cking_xxx {
 		hash11 = "0d2c2c151ed839e6bafc7aa9c69be715"
 		hash12 = "41af6fd253648885c7ad2ed524e0692d"
 		hash13 = "6fcc283470465eed4870bcc3e2d7f14d"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "9d870367-eaf1-4f66-9e79-16a31ad91cb9"
 	strings:
 		$s1 = "$res = @shell_exec($cfe);" fullword
 		$s8 = "$res = @ob_get_contents();" fullword
@@ -3170,7 +3170,7 @@ rule webshell_browser_201_3_ma_ma2_download {
 		hash3 = "4cc68fa572e88b669bce606c7ace0ae9"
 		hash4 = "4b45715fa3fa5473640e17f49ef5513d"
 		hash5 = "fa87bbd7201021c1aefee6fcc5b8e25a"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "71192827-dc67-42dc-a374-bba79f8b308d"
 	strings:
 		$s1 = "private static final int EDITFIELD_ROWS = 30;" fullword
 		$s2 = "private static String tempdir = \".\";" fullword
@@ -3191,7 +3191,7 @@ rule webshell_000_403_c5_queryDong_spyjsp2010 {
 		hash2 = "8b457934da3821ba58b06a113e0d53d9"
 		hash3 = "90a5ba0c94199269ba33a58bc6a4ad99"
 		hash4 = "655722eaa6c646437c8ae93daac46ae0"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "6de5b0c5-aa47-499f-b9d9-851220122ca1"
 	strings:
 		$s2 = "\" <select name='encode' class='input'><option value=''>ANSI</option><option val"
 		$s7 = "JSession.setAttribute(\"MSG\",\"<span style='color:red'>Upload File Failed!</spa"
@@ -3211,7 +3211,7 @@ rule webshell_r57shell127_r57_kartal_r57 {
 		hash0 = "ae025c886fbe7f9ed159f49593674832"
 		hash1 = "1d912c55b96e2efe8ca873d6040e3b30"
 		hash2 = "4108f28a9792b50d95f95b9e5314fa1e"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "3d49e505-85ca-42b7-9ed4-aa059e861cd1"
 	strings:
 		$s2 = "$handle = @opendir($dir) or die(\"Can't open directory $dir\");" fullword
 		$s3 = "if(!empty($_POST['mysql_db'])) { @mssql_select_db($_POST['mysql_db'],$db); }" fullword
@@ -3228,7 +3228,7 @@ rule webshell_webshells_new_con2 {
 		date = "2014/03/28"
 		score = 70
 		hash = "d3584159ab299d546bd77c9654932ae3"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "52605a1e-ce1e-4c30-957f-548950644b46"
 	strings:
 		$s7 = ",htaPrewoP(ecalper=htaPrewoP:fI dnE:0=KOtidE:1 - eulaVtni = eulaVtni:nehT 1 => e"
 		$s10 = "j \"<Form action='\"&URL&\"?Action2=Post' method='post' name='EditForm'><input n"
@@ -3243,7 +3243,7 @@ rule webshell_webshells_new_make2 {
 		date = "2014/03/28"
 		hash = "9af195491101e0816a263c106e4c145e"
 		score = 50
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "7767138c-d0cc-47af-98de-cb62ad09c1c6"
 	strings:
 		$s1 = "error_reporting(0);session_start();header(\"Content-type:text/html;charset=utf-8"
 	condition:
@@ -3257,7 +3257,7 @@ rule webshell_webshells_new_aaa {
 		date = "2014/03/28"
 		score = 70
 		hash = "68483788ab171a155db5266310c852b2"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "fe147614-bd37-4f5c-bb2b-57f39848978f"
 	strings:
 		$s0 = "Function fvm(jwv):If jwv=\"\"Then:fvm=jwv:Exit Function:End If:Dim tt,sru:tt=\""
 		$s5 = "<option value=\"\"DROP TABLE [jnc];exec mast\"&kvp&\"er..xp_regwrite 'HKEY_LOCAL"
@@ -3273,7 +3273,7 @@ rule webshell_Expdoor_com_ASP {
 		date = "2014/03/28"
 		score = 70
 		hash = "caef01bb8906d909f24d1fa109ea18a7"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "0c4b2cbb-aefe-4313-bea4-4bdc35d55d55"
 	strings:
 		$s4 = "\">www.Expdoor.com</a>" fullword
 		$s5 = "    <input name=\"FileName\" type=\"text\" value=\"Asp_ver.Asp\" size=\"20\" max"
@@ -3291,7 +3291,7 @@ rule webshell_webshells_new_php2 {
 		date = "2014/03/28"
 		score = 70
 		hash = "fbf2e76e6f897f6f42b896c855069276"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "505d9878-8d1f-45eb-baec-4368628fffcc"
 	strings:
 		$s0 = "<?php $s=@$_GET[2];if(md5($s.$s)=="
 	condition:
@@ -3305,7 +3305,7 @@ rule webshell_bypass_iisuser_p {
 		date = "2014/03/28"
 		score = 70
 		hash = "924d294400a64fa888a79316fb3ccd90"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "b0c16dcb-8a6d-420c-ad7b-30511c6d8c5e"
 	strings:
 		$s0 = "<%Eval(Request(chr(112))):Set fso=CreateObject"
 	condition:
@@ -3319,7 +3319,7 @@ rule webshell_sig_404super {
 		date = "2014/03/28"
 		score = 70
 		hash = "7ed63176226f83d36dce47ce82507b28"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "7cef5799-09ba-4bd8-96cc-11f420249008"
 	strings:
 		$s4 = "$i = pack('c*', 0x70, 0x61, 99, 107);" fullword
 		$s6 = "    'h' => $i('H*', '687474703a2f2f626c616b696e2e64756170702e636f6d2f7631')," fullword
@@ -3338,7 +3338,7 @@ rule webshell_webshells_new_JSP {
 		date = "2014/03/28"
 		score = 70
 		hash = "495f1a0a4c82f986f4bdf51ae1898ee7"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "d6b290e1-3ec5-4fb8-8eb5-0e8e5c148284"
 	strings:
 		$s1 = "void AA(StringBuffer sb)throws Exception{File r[]=File.listRoots();for(int i=0;i"
 		$s5 = "bw.write(z2);bw.close();sb.append(\"1\");}else if(Z.equals(\"E\")){EE(z1);sb.app"
@@ -3355,7 +3355,7 @@ rule webshell_webshell_123 {
 		modified = "2023-01-27"
 		score = 70
 		hash = "2782bb170acaed3829ea9a04f0ac7218"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "ec897867-98a2-4a7c-95ab-a5982432399e"
 	strings:
 		$s0 = "// Web Shell!!" fullword
 		$s1 = "@preg_replace(\"/.*/e\",\"\\x65\\x76\\x61\\x6C\\x28\\x67\\x7A\\x69\\x6E\\x66\\x6"
@@ -3372,7 +3372,7 @@ rule webshell_dev_core {
 		date = "2014/03/28"
 		score = 70
 		hash = "55ad9309b006884f660c41e53150fc2e"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "1e92f557-1a48-436a-805b-b5aece651116"
 	strings:
 		$s1 = "if (strpos($_SERVER['HTTP_USER_AGENT'], 'EBSD') == false) {" fullword
 		$s9 = "setcookie('key', $_POST['pwd'], time() + 3600 * 24 * 30);" fullword
@@ -3391,7 +3391,7 @@ rule webshell_webshells_new_pHp {
 		date = "2014/03/28"
 		score = 70
 		hash = "b0e842bdf83396c3ef8c71ff94e64167"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "fec6bb14-00c7-4b83-a0c0-d40c5f0086bd"
 	strings:
 		$s0 = "if(is_readable($path)) antivirus($path.'/',$exs,$matches);" fullword
 		$s1 = "'/(eval|assert|include|require|include\\_once|require\\_once|array\\_map|arr"
@@ -3409,7 +3409,7 @@ rule webshell_webshells_new_pppp {
 		date = "2014/03/28"
 		score = 70
 		hash = "cf01cb6e09ee594545693c5d327bdd50"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "940f9fe3-0399-4514-a96c-c904366acbd4"
 	strings:
 		$s0 = "Mail: chinese@hackermail.com" fullword
 		$s3 = "if($_GET[\"hackers\"]==\"2b\"){if ($_SERVER['REQUEST_METHOD'] == 'POST') { echo "
@@ -3425,7 +3425,7 @@ rule webshell_webshells_new_code {
 		date = "2014/03/28"
 		score = 70
 		hash = "a444014c134ff24c0be5a05c02b81a79"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "5ad8f20a-279f-49ca-a524-268f0128d0d9"
 	strings:
 		$s1 = "<a class=\"high2\" href=\"javascript:;;;\" name=\"action=show&dir=$_ipage_fi"
 		$s7 = "$file = !empty($_POST[\"dir\"]) ? urldecode(self::convert_to_utf8(rtrim($_PO"
@@ -3443,7 +3443,7 @@ rule webshell_webshells_new_jspyyy {
 		date = "2014/03/28"
 		score = 70
 		hash = "b291bf3ccc9dac8b5c7e1739b8fa742e"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "c6e27294-fc0e-470c-bd22-2aa6f962514c"
 	strings:
 		$s0 = "<%@page import=\"java.io.*\"%><%if(request.getParameter(\"f\")"
 	condition:
@@ -3457,7 +3457,7 @@ rule webshell_webshells_new_xxxx {
 		date = "2014/03/28"
 		score = 70
 		hash = "5bcba70b2137375225d8eedcde2c0ebb"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "69d3856a-a232-4ed1-bba3-b8bafcd7cc00"
 	strings:
 		$s0 = "<?php eval($_POST[1]);?>  " fullword
 	condition:
@@ -3471,7 +3471,7 @@ rule webshell_webshells_new_JJjsp3 {
 		date = "2014/03/28"
 		score = 70
 		hash = "949ffee1e07a1269df7c69b9722d293e"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "351f4cdd-f3f5-4378-906c-9b860cd0cb26"
 	strings:
 		$s0 = "<%@page import=\"java.io.*,java.util.*,java.net.*,java.sql.*,java.text.*\"%><%!S"
 	condition:
@@ -3485,7 +3485,7 @@ rule webshell_webshells_new_PHP1 {
 		date = "2014/03/28"
 		score = 70
 		hash = "14c7281fdaf2ae004ca5fec8753ce3cb"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "587c7db1-6220-4162-9284-fa4823ae0594"
 	strings:
 		$s0 = "<[url=mailto:?@array_map($_GET[]?@array_map($_GET['f'],$_GET[/url]);?>" fullword
 		$s2 = ":https://forum.90sec.org/forum.php?mod=viewthread&tid=7316" fullword
@@ -3501,7 +3501,7 @@ rule webshell_webshells_new_JJJsp2 {
 		date = "2014/03/28"
 		score = 70
 		hash = "5a9fec45236768069c99f0bfd566d754"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "4be60e40-96aa-44c5-a4b0-237d49b28835"
 	strings:
 		$s2 = "QQ(cs, z1, z2, sb,z2.indexOf(\"-to:\")!=-1?z2.substring(z2.indexOf(\"-to:\")+4,z"
 		$s8 = "sb.append(l[i].getName() + \"/\\t\" + sT + \"\\t\" + l[i].length()+ \"\\t\" + sQ"
@@ -3518,7 +3518,7 @@ rule webshell_webshells_new_radhat {
 		date = "2014/03/28"
 		score = 70
 		hash = "72cb5ef226834ed791144abaa0acdfd4"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "6025cf3b-4e6a-4434-aaf7-819e8e05355c"
 	strings:
 		$s1 = "sod=Array(\"D\",\"7\",\"S"
 	condition:
@@ -3532,7 +3532,7 @@ rule webshell_webshells_new_asp1 {
 		date = "2014/03/28"
 		score = 70
 		hash = "b63e708cd58ae1ec85cf784060b69cad"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "2eb845b4-9d41-4102-9775-2573299752c3"
 	strings:
 		$s0 = " http://www.baidu.com/fuck.asp?a=)0(tseuqer%20lave " fullword
 		$s2 = " <% a=request(chr(97)) ExecuteGlobal(StrReverse(a)) %>" fullword
@@ -3547,7 +3547,7 @@ rule webshell_webshells_new_php6 {
 		date = "2014/03/28"
 		score = 70
 		hash = "ea75280224a735f1e445d244acdfeb7b"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "14ad46cf-ec5f-430e-a0cf-a601019bf508"
 	strings:
 		$s1 = "array_map(\"asx73ert\",(ar"
 		$s3 = "preg_replace(\"/[errorpage]/e\",$page,\"saft\");" fullword
@@ -3563,7 +3563,7 @@ rule webshell_webshells_new_xxx {
 		date = "2014/03/28"
 		score = 70
 		hash = "0e71428fe68b39b70adb6aeedf260ca0"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "57fbed03-deb1-419f-9dba-2b367bff309e"
 	strings:
 		$s3 = "<?php array_map(\"ass\\x65rt\",(array)$_REQUEST['expdoor']);?>" fullword
 	condition:
@@ -3577,7 +3577,7 @@ rule webshell_GetPostpHp {
 		date = "2014/03/28"
 		score = 70
 		hash = "20ede5b8182d952728d594e6f2bb5c76"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "6c59c954-8bbe-4a8c-b264-da1cbda372ff"
 	strings:
 		$s0 = "<?php eval(str_rot13('riny($_CBFG[cntr]);'));?>" fullword
 	condition:
@@ -3591,7 +3591,7 @@ rule webshell_webshells_new_php5 {
 		date = "2014/03/28"
 		score = 70
 		hash = "cf2ab009cbd2576a806bfefb74906fdf"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "c01594c5-a4de-4dd7-afc0-70ba39805501"
 	strings:
 		$s0 = "<?$_uU=chr(99).chr(104).chr(114);$_cC=$_uU(101).$_uU(118).$_uU(97).$_uU(108).$_u"
 	condition:
@@ -3605,7 +3605,7 @@ rule webshell_webshells_new_PHP {
 		date = "2014/03/28"
 		score = 70
 		hash = "a524e7ae8d71e37d2fd3e5fbdab405ea"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "0f635e4d-a2db-4ce7-bd8e-238f1c13bf5b"
 	strings:
 		$s1 = "echo \"<font color=blue>Error!</font>\";" fullword
 		$s2 = "<input type=\"text\" size=61 name=\"f\" value='<?php echo $_SERVER[\"SCRIPT_FILE"
@@ -3623,7 +3623,7 @@ rule webshell_webshells_new_Asp {
 		date = "2014/03/28"
 		score = 70
 		hash = "32c87744ea404d0ea0debd55915010b7"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "2d649757-07b5-44da-9a81-d42ddfdbe01f"
 	strings:
 		$s1 = "Execute MorfiCoder(\")/*/z/*/(tseuqer lave\")" fullword
 		$s2 = "Function MorfiCoder(Code)" fullword
@@ -3930,7 +3930,7 @@ rule backupsql_php_often_with_c99shell {
 		description = "Semi-Auto-generated  - file backupsql.php.php.txt"
 		author = "Neo23x0 Yara BRG + customization by Stefan -dfate- Molls"
 		hash = "ab1a06ab1a1fe94e3f3b7f80eedbc12f"
-		id = "ce88027c-ae08-59f3-948d-6f3d58515468"
+		id = "18a3a4fa-b73c-4139-a2ac-d915eb3b2585"
 	strings:
 		$s2 = "//$message.= \"--{$mime_boundary}\\n\" .\"Content-Type: {$fileatt_type};\\n\" ."
 		$s4 = "$ftpconnect = \"ncftpput -u $ftp_user_name -p $ftp_user_pass -d debsender_ftplog"
@@ -4219,7 +4219,7 @@ rule backup_php_often_with_c99shell {
 		description = "Semi-Auto-generated  - file backup.php.php.txt"
 		author = "Neo23x0 Yara BRG + customization by Stefan -dfate- Molls"
 		hash = "aeee3bae226ad57baf4be8745c3f6094"
-		id = "ce88027c-ae08-59f3-948d-6f3d58515468"
+		id = "d0eb616c-5e3c-48ac-bd82-e926cc45ff49"
 	strings:
 		$s0 = "#phpMyAdmin MySQL-Dump" fullword
 		$s2 = ";db_connect();header('Content-Type: application/octetstr"
@@ -4258,7 +4258,7 @@ rule myshell_php_php {
 		description = "Semi-Auto-generated  - file myshell.php.php.txt"
 		author = "Neo23x0 Yara BRG + customization by Stefan -dfate- Molls"
 		hash = "62783d1db52d05b1b6ae2403a7044490"
-		id = "eaf243cb-fa26-5f34-a724-60a08acff636"
+		id = "9d882bef-2e31-4338-9a16-0ce093e18c2e"
 	strings:
 		$s0 = "@chdir($work_dir) or ($shellOutput = \"MyShell: can't change directory."
 		$s1 = "echo \"<font color=$linkColor><b>MyShell file editor</font> File:<font color"
@@ -4298,7 +4298,7 @@ rule webshell_php {
 		description = "Semi-Auto-generated  - file webshell.php.txt"
 		author = "Neo23x0 Yara BRG + customization by Stefan -dfate- Molls"
 		hash = "e425241b928e992bde43dd65180a4894"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "3cd749a0-b141-4a8a-ab2b-23b0bda0181a"
 	strings:
 		$s2 = "<die(\"Couldn't Read directory, Blocked!!!\");"
 		$s3 = "PHP Web Shell"
@@ -4492,7 +4492,7 @@ rule mysql_php_php {
 		description = "Semi-Auto-generated  - file mysql.php.php.txt"
 		author = "Neo23x0 Yara BRG + customization by Stefan -dfate- Molls"
 		hash = "12bbdf6ef403720442a47a3cc730d034"
-		id = "41730336-0dce-5ed9-95b0-c911a4e3cb48"
+		id = "76006b55-8ce3-4207-a389-acb266f89a77"
 	strings:
 		$s0 = "action=mysqlread&mass=loadmass\">load all defaults"
 		$s2 = "if (@passthru($cmd)) { echo \" -->\"; $this->output_state(1, \"passthru"
@@ -4517,7 +4517,7 @@ rule cyberlords_sql_php_php {
 		description = "Semi-Auto-generated  - file cyberlords_sql.php.php.txt"
 		author = "Neo23x0 Yara BRG + customization by Stefan -dfate- Molls"
 		hash = "03b06b4183cb9947ccda2c3d636406d4"
-		id = "41730336-0dce-5ed9-95b0-c911a4e3cb48"
+		id = "4697beac-fc07-4edc-a386-e0cf40f852e4"
 	strings:
 		$s0 = "Coded by n0 [nZer0]"
 		$s1 = " www.cyberlords.net"
@@ -4699,7 +4699,7 @@ rule sh_php_php {
 		description = "Semi-Auto-generated  - file sh.php.php.txt"
 		author = "Neo23x0 Yara BRG + customization by Stefan -dfate- Molls"
 		hash = "330af9337ae51d0bac175ba7076d6299"
-		id = "da691516-d6c9-5c4b-85c3-f1cd7fc96ae7"
+		id = "e71cb9fc-19b4-4be4-9c52-09d3e6ad17aa"
 	strings:
 		$s1 = "$ar_file=array('/etc/passwd','/etc/shadow','/etc/master.passwd','/etc/fstab','/e"
 		$s2 = "Show <input type=text size=5 value=\".((isset($_POST['br_st']))?$_POST['br_st']:"
@@ -4736,7 +4736,7 @@ rule sql_php_php {
 		description = "Semi-Auto-generated  - file sql.php.php.txt"
 		author = "Neo23x0 Yara BRG + customization by Stefan -dfate- Molls"
 		hash = "8334249cbb969f2d33d678fec2b680c5"
-		id = "41730336-0dce-5ed9-95b0-c911a4e3cb48"
+		id = "30bc73e0-188f-4399-b3f8-cf016ca8b9c2"
 	strings:
 		$s1 = "fputs ($fp, \"# RST MySQL tools\\r\\n# Home page: http://rst.void.ru\\r\\n#"
 		$s2 = "http://rst.void.ru"
@@ -4829,7 +4829,7 @@ rule shell_php_php {
 		description = "Semi-Auto-generated  - file shell.php.php.txt"
 		author = "Neo23x0 Yara BRG + customization by Stefan -dfate- Molls"
 		hash = "1a95f0163b6dea771da1694de13a3d8d"
-		id = "eaf243cb-fa26-5f34-a724-60a08acff636"
+		id = "5f339d02-4d95-442a-957a-1c2bd5455395"
 	strings:
 		$s1 = "/* We have found the parent dir. We must be carefull if the parent " fullword
 		$s2 = "$tmpfile = tempnam('/tmp', 'phpshell');"
@@ -5061,7 +5061,7 @@ rule _c99shell_v1_0_php_php_c99php_SsEs_php_php_ctt_sh_php_php {
 		hash1 = "9e9ae0332ada9c3797d6cee92c2ede62"
 		hash2 = "6cd50a14ea0da0df6a246a60c8f6f9c9"
 		hash3 = "671cad517edd254352fe7e0c7c981c39"
-		id = "ce88027c-ae08-59f3-948d-6f3d58515468"
+		id = "3efddc3a-9325-4bd7-b487-86672a51662b"
 	strings:
 		$s0 = "\"AAAAACH5BAEAAAkALAAAAAAUABQAAAR0MMlJqyzFalqEQJuGEQSCnWg6FogpkHAMF4HAJsWh7/ze\""
 		$s2 = "\"mTP/zDP//2YAAGYAM2YAZmYAmWYAzGYA/2YzAGYzM2YzZmYzmWYzzGYz/2ZmAGZmM2ZmZmZmmWZm\""
@@ -5096,7 +5096,7 @@ rule webshell_c99_generic {
 		hash4 = "9e9ae0332ada9c3797d6cee92c2ede62"
 		hash5 = "09609851caa129e40b0d56e90dfc476c"
 		hash6 = "671cad517edd254352fe7e0c7c981c39"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "9e1e002f-2ad5-4a8a-8688-7e748a6536a6"
 	strings:
 		$s0 = "  if ($copy_unset) {foreach($sess_data[\"copy\"] as $k=>$v) {unset($sess_data[\""
 		$s1 = "  if (file_exists($mkfile)) {echo \"<b>Make File \\\"\".htmlspecialchars($mkfile"
@@ -5116,7 +5116,7 @@ rule _w_php_php_c99madshell_v2_1_php_php_wacking_php_php_c99shell_v1_0_php_php_c
 		hash3 = "d8ae5819a0a2349ec552cbcf3a62c975"
 		hash4 = "9e9ae0332ada9c3797d6cee92c2ede62"
 		hash5 = "09609851caa129e40b0d56e90dfc476c"
-		id = "ce88027c-ae08-59f3-948d-6f3d58515468"
+		id = "90c0fe48-b0da-46b4-bc71-18776c604ca9"
 	strings:
 		$s0 = "$sess_data[\"cut\"] = array(); c99_s"
 		$s3 = "if ((!eregi(\"http://\",$uploadurl)) and (!eregi(\"https://\",$uploadurl))"
@@ -5148,7 +5148,7 @@ rule _w_php_php_c99madshell_v2_1_php_php_wacking_php_php_SsEs_php_php_SpecialShe
 		hash2 = "9c5bb5e3a46ec28039e8986324e42792"
 		hash3 = "6cd50a14ea0da0df6a246a60c8f6f9c9"
 		hash4 = "09609851caa129e40b0d56e90dfc476c"
-		id = "ee1fd555-f1bc-59a5-998c-f6098de8623e"
+		id = "c8a01d14-28b1-413a-9ae2-3e3b69940424"
 	strings:
 		$s0 = "else {$act = \"f\"; $d = dirname($mkfile); if (substr($d,-1) != DIRECTORY_SEPA"
 		$s3 = "else {echo \"<b>File \\\"\".$sql_getfile.\"\\\":</b><br>\".nl2br(htmlspec"
@@ -5165,7 +5165,7 @@ rule _r577_php_php_SnIpEr_SA_Shell_php_r57_php_php_spy_php_php_s_php_php {
 		hash2 = "eddf7a8fde1e50a7f2a817ef7cece24f"
 		hash3 = "eed14de3907c9aa2550d95550d1a2d5f"
 		hash4 = "817671e1bdc85e04cc3440bbd9288800"
-		id = "44b53124-c8b6-545b-819f-77fd65e5d61b"
+		id = "a409d8d6-714b-4c0f-b422-4987c565505b"
 	strings:
 		$s0 = "echo sr(15,\"<b>\".$lang[$language.'_text"
 		$s1 = ".$arrow.\"</b>\",in('text','"
@@ -5180,7 +5180,7 @@ rule _r577_php_php_SnIpEr_SA_Shell_php_r57_php_php {
 		hash0 = "0714f80f35c1fddef1f8938b8d42a4c8"
 		hash1 = "911195a9b7c010f61b66439d9048f400"
 		hash2 = "eddf7a8fde1e50a7f2a817ef7cece24f"
-		id = "44b53124-c8b6-545b-819f-77fd65e5d61b"
+		id = "f00495d1-470b-4fb6-b895-a97e2a80bd0d"
 	strings:
 		$s0 = "'ru_text9' =>'???????? ????? ? ???????? ??? ? /bin/bash'," fullword
 		$s1 = "$name='ec371748dc2da624b35a4f8f685dd122'"
@@ -5272,7 +5272,7 @@ rule multiple_php_webshells {
 		hash6 = "817671e1bdc85e04cc3440bbd9288800"
 		hash7 = "7101fe72421402029e2629f3aaed6de7"
 		hash8 = "f618f41f7ebeb5e5076986a66593afd1"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "1eaebdf3-e1a6-42fd-a8b1-29af84235938"
 	strings:
 		$s0 = "kVycm9yOiAkIVxuIik7DQpjb25uZWN0KFNPQ0tFVCwgJHBhZGRyKSB8fCBkaWUoIkVycm9yOiAkIVxuI"
 		$s2 = "sNCiRwcm90bz1nZXRwcm90b2J5bmFtZSgndGNwJyk7DQpzb2NrZXQoU09DS0VULCBQRl9JTkVULCBTT0"
@@ -5288,7 +5288,7 @@ rule _w_php_php_c99madshell_v2_1_php_php_wacking_php_php {
 		hash0 = "38a3f9f2aa47c2e940695f3dba6a7bb2"
 		hash1 = "3ca5886cd54d495dc95793579611f59a"
 		hash2 = "9c5bb5e3a46ec28039e8986324e42792"
-		id = "ee1fd555-f1bc-59a5-998c-f6098de8623e"
+		id = "45055de7-c851-4566-817e-2ead21077b80"
 	strings:
 		$s0 = "<b>Dumped! Dump has been writed to "
 		$s1 = "if ((!empty($donated_html)) and (in_array($act,$donated_act))) {echo \"<TABLE st"
@@ -5306,7 +5306,7 @@ rule _w_php_php_c99madshell_v2_1_php_php_wacking_php_php_c99shell_v1_0_php_php_c
 		hash2 = "9c5bb5e3a46ec28039e8986324e42792"
 		hash3 = "d8ae5819a0a2349ec552cbcf3a62c975"
 		hash4 = "9e9ae0332ada9c3797d6cee92c2ede62"
-		id = "ce88027c-ae08-59f3-948d-6f3d58515468"
+		id = "40ff5fca-5ebb-4cb0-b9af-83d66de489cc"
 	strings:
 		$s0 = "@ini_set(\"highlight" fullword
 		$s1 = "echo \"<b>Result of execution this PHP-code</b>:<br>\";" fullword
@@ -5340,7 +5340,7 @@ rule _w_php_php_c99madshell_v2_1_php_php_wacking_php_php_c99shell_v1_0_php_php_S
 		hash2 = "9c5bb5e3a46ec28039e8986324e42792"
 		hash3 = "d8ae5819a0a2349ec552cbcf3a62c975"
 		hash4 = "09609851caa129e40b0d56e90dfc476c"
-		id = "ce88027c-ae08-59f3-948d-6f3d58515468"
+		id = "77746c48-085e-47ac-a04e-12268c14266c"
 	strings:
 		$s0 = "c99ftpbrutecheck"
 		$s1 = "$ftpquick_t = round(getmicrotime()-$ftpquick_st,4);" fullword
@@ -5359,7 +5359,7 @@ rule _w_php_php_wacking_php_php_c99shell_v1_0_php_php_c99php_SpecialShell_99_php
 		hash2 = "d8ae5819a0a2349ec552cbcf3a62c975"
 		hash3 = "9e9ae0332ada9c3797d6cee92c2ede62"
 		hash4 = "09609851caa129e40b0d56e90dfc476c"
-		id = "ce88027c-ae08-59f3-948d-6f3d58515468"
+		id = "6d033372-d3ad-4fda-af7c-409ef7809f74"
 	strings:
 		$s0 = "$sqlquicklaunch[] = array(\""
 		$s1 = "else {echo \"<center><b>File does not exists (\".htmlspecialchars($d.$f).\")!<"
@@ -5391,7 +5391,7 @@ rule _c99shell_v1_0_php_php_c99php_SsEs_php_php {
 		hash0 = "d8ae5819a0a2349ec552cbcf3a62c975"
 		hash1 = "9e9ae0332ada9c3797d6cee92c2ede62"
 		hash2 = "6cd50a14ea0da0df6a246a60c8f6f9c9"
-		id = "ce88027c-ae08-59f3-948d-6f3d58515468"
+		id = "10f89f08-942f-4479-b7d3-3696ffa7f5c4"
 	strings:
 		$s3 = "if (!empty($delerr)) {echo \"<b>Deleting with errors:</b><br>\".$delerr;}" fullword
 	condition:
@@ -5457,7 +5457,7 @@ rule _c99shell_v1_0_php_php_c99php_1_c2007_php_php_c100_php {
 		hash2 = "44542e5c3e9790815c49d5f9beffbbf2"
 		hash3 = "d089e7168373a0634e1ac18c0ee00085"
 		hash4 = "38fd7e45f9c11a37463c3ded1c76af4c"
-		id = "ce88027c-ae08-59f3-948d-6f3d58515468"
+		id = "eab86dd7-59f2-4aea-8e87-5828a4784298"
 	strings:
 		$s0 = "$result = mysql_query(\"SHOW PROCESSLIST\", $sql_sock); " fullword
 	condition:
@@ -5476,7 +5476,7 @@ rule multiple_php_webshells_2 {
 		hash5 = "6cd50a14ea0da0df6a246a60c8f6f9c9"
 		hash6 = "09609851caa129e40b0d56e90dfc476c"
 		hash7 = "671cad517edd254352fe7e0c7c981c39"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "07d92e12-8166-4a15-ad4a-739b4965b26e"
 	strings:
 		$s0 = "elseif (!empty($ft)) {echo \"<center><b>Manually selected type is incorrect. I"
 		$s1 = "else {echo \"<center><b>Unknown extension (\".$ext.\"), please, select type ma"
@@ -5529,7 +5529,7 @@ rule _nixrem_php_php_c99shell_v1_0_php_php_c99php_NIX_REMOTE_WEB_SHELL_v_0_5_alp
 		hash1 = "d8ae5819a0a2349ec552cbcf3a62c975"
 		hash2 = "9e9ae0332ada9c3797d6cee92c2ede62"
 		hash3 = "f3ca29b7999643507081caab926e2e74"
-		id = "ce88027c-ae08-59f3-948d-6f3d58515468"
+		id = "bfbad0d9-ad7f-4f71-823b-25552ede0688"
 	strings:
 		$s0 = "$num = $nixpasswd + $nixpwdperpage;" fullword
 		$s1 = "$ret = posix_kill($pid,$sig);" fullword
@@ -5782,7 +5782,7 @@ rule WebShell_php_webshells_MyShell {
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
 		hash = "42e283c594c4d061f80a18f5ade0717d3fb2f76d"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "1c522aac-3027-458d-829d-b4558da96cca"
 	strings:
 		$s3 = "<title>MyShell error - Access Denied</title>" fullword
 		$s4 = "$adminEmail = \"youremail@yourserver.com\";" fullword
@@ -5801,7 +5801,7 @@ rule WebShell_php_webshells_pws {
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
 		hash = "7a405f1c179a84ff8ac09a42177a2bcd8a1a481b"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "f8eb999f-30c1-4682-bb7e-afab57591298"
 	strings:
 		$s6 = "if ($_POST['cmd']){" fullword
 		$s7 = "$cmd = $_POST['cmd'];" fullword
@@ -5903,7 +5903,7 @@ rule WebShell_php_webshells_pHpINJ {
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
 		hash = "75116bee1ab122861b155cc1ce45a112c28b9596"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "615f84e4-69d3-443b-9cee-a769d1129fb5"
 	strings:
 		$s3 = "echo '<a href='.$expurl.'> Click Here to Exploit </a> <br />';" fullword
 		$s10 = "<form action = \"<?php echo \"$_SERVER[PHP_SELF]\" ; ?>\" method = \"post\">" fullword
@@ -5921,7 +5921,7 @@ rule WebShell_php_webshells_NGH {
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
 		hash = "c05b5deecfc6de972aa4652cb66da89cfb3e1645"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "bba1e59d-1608-47ba-bc47-9fb9c8c78222"
 	strings:
 		$s0 = "<title>Webcommander at <?=$_SERVER[\"HTTP_HOST\"]?></title>" fullword
 		$s2 = "/* Webcommander by Cr4sh_aka_RKL v0.3.9 NGH edition :p */" fullword
@@ -5939,7 +5939,7 @@ rule WebShell_php_webshells_matamu {
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
 		hash = "d477aae6bd2f288b578dbf05c1c46b3aaa474733"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "2f127bf1-bae3-438d-a4d9-07021d23d5f4"
 	strings:
 		$s2 = "$command .= ' -F';" fullword
 		$s3 = "/* We try and match a cd command. */" fullword
@@ -6063,7 +6063,7 @@ rule WebShell_php_webshells_kral {
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
 		hash = "4cd1d1a2fd448cecc605970e3a89f3c2e5c80dfc"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "b851798f-504b-486f-9328-3dab231a216e"
 	strings:
 		$s1 = "$adres=gethostbyname($ip);" fullword
 		$s3 = "curl_setopt($ch,CURLOPT_POSTFIELDS,\"domain=\".$site);" fullword
@@ -6246,7 +6246,7 @@ rule WebShell_php_webshells_README {
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
 		hash = "ef2c567b4782c994db48de0168deb29c812f7204"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "26d778e6-581b-4e8f-b251-c58b844d4c23"
 	strings:
 		$s0 = "Common php webshells. Do not host the file(s) in your server!" fullword
 		$s1 = "php-webshells" fullword
@@ -6289,7 +6289,7 @@ rule WebShell_php_webshells_cpanel {
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
 		hash = "433dab17106b175c7cf73f4f094e835d453c0874"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "ea48bfe9-3446-4e0e-80f8-ebef8d3d963a"
 	strings:
 		$s0 = "function ftp_check($host,$user,$pass,$timeout){" fullword
 		$s3 = "curl_setopt($ch, CURLOPT_URL, \"http://$host:2082\");" fullword
@@ -6318,7 +6318,7 @@ rule WebShell_php_webshells_529 {
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
 		hash = "ba3fb2995528307487dff7d5b624d9f4c94c75d3"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "f8e87d29-0fb8-4adb-b976-78ddff53db1c"
 	strings:
 		$s0 = "<p>More: <a href=\"/\">Md5Cracking.Com Crew</a> " fullword
 		$s7 = "href=\"/\" title=\"Securityhouse\">Security House - Shell Center - Edited By Kin"
@@ -6350,7 +6350,7 @@ rule WebShell_php_webshells_tryag {
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
 		hash = "42d837e9ab764e95ed11b8bd6c29699d13fe4c41"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "2c7bf64b-8922-4fb4-9188-280362fbfdcb"
 	strings:
 		$s1 = "<title>TrYaG Team - TrYaG.php - Edited By KingDefacer</title>" fullword
 		$s3 = "$tabledump = \"DROP TABLE IF EXISTS $table;\\n\"; " fullword
@@ -6397,7 +6397,7 @@ rule WebShell_php_webshells_spygrup {
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
 		hash = "12f9105332f5dc5d6360a26706cd79afa07fe004"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "24c67e66-d644-4f0e-a94e-259c4921d357"
 	strings:
 		$s2 = "kingdefacer@msn.com</FONT></CENTER></B>\");" fullword
 		$s6 = "if($_POST['root']) $root = $_POST['root'];" fullword
@@ -6457,7 +6457,7 @@ rule WebShell_php_webshells_aspydrv {
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
 		hash = "3d8996b625025dc549d73cdb3e5fa678ab35d32a"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "2ba50db2-41a7-493f-93aa-462104403c54"
 	strings:
 		$s0 = "Target = \"D:\\hshome\\masterhr\\masterhr.com\\\"  ' ---Directory to which files"
 		$s1 = "nPos = InstrB(nPosEnd, biData, CByteString(\"Content-Type:\"))" fullword
@@ -6537,7 +6537,7 @@ rule WebShell_php_webshells_cw {
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
 		hash = "e65e0670ef6edf0a3581be6fe5ddeeffd22014bf"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "f0f5448a-6364-450a-b46d-c3d60197b811"
 	strings:
 		$s1 = "// Dump Database [pacucci.com]" fullword
 		$s2 = "$dump = \"-- Database: \".$_POST['db'] .\" \\n\";" fullword
@@ -6612,7 +6612,7 @@ rule WebShell_php_webshells_myshell_2 {
 		author = "Florian Roth (Nextron Systems)"
 		old_rule_name = "WebShell_php_webshells_myshell"
 		hash = "5bd52749872d1083e7be076a5e65ffcde210e524"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "51faabb2-abcc-433b-9b16-d249b58064cc"
 	strings:
 		$s0 = "if($ok==false &&$status && $autoErrorTrap)system($command . \" 1> /tmp/outpu"
 		$s5 = "system($command . \" 1> /tmp/output.txt 2>&1; cat /tmp/output.txt; rm /tmp/o"
@@ -6627,7 +6627,7 @@ rule WebShell_php_webshells_lolipop {
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
 		hash = "86f23baabb90c93465e6851e40104ded5a5164cb"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "29c978cd-1307-4b5e-889f-6f4585409181"
 	strings:
 		$s3 = "$commander = $_POST['commander']; " fullword
 		$s9 = "$sourcego = $_POST['sourcego']; " fullword
@@ -6689,7 +6689,7 @@ rule WebShell_webshells_zehir4 {
 		author = "Florian Roth (Nextron Systems)"
 		hash = "788928ae87551f286d189e163e55410acbb90a64"
 		score = 55
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "e618c0af-f048-4fc8-b4aa-e331eb3b0edf"
 	strings:
 		$s0 = "frames.byZehir.document.execCommand(command, false, option);" fullword
 		$s8 = "response.Write \"<title>ZehirIV --> Powered By Zehir &lt;zehirhacker@hotmail.com"
@@ -6716,7 +6716,7 @@ rule WebShell_php_webshells_lostDC {
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
 		hash = "d54fe07ea53a8929620c50e3a3f8fb69fdeb1cde"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "5cc80674-daf1-4384-b737-54a9cec814e0"
 	strings:
 		$s0 = "$info .= '[~]Server: ' .$_SERVER['HTTP_HOST'] .'<br />';" fullword
 		$s4 = "header ( \"Content-Description: Download manager\" );" fullword
@@ -6903,7 +6903,7 @@ rule WebShell__PH_Vayv_PHVayv_PH_Vayv {
 		hash0 = "b51962a1ffa460ec793317571fc2f46042fd13ee"
 		hash1 = "408ac9ca3d435c0f78bda370b33e84ba25afc357"
 		hash2 = "4003ae289e3ae036755976f8d2407c9381ff5653"
-		id = "1575591b-3245-5c3d-b2a4-6def89e77032"
+		id = "b8619078-e8bd-49f5-8a1f-62276cd15591"
 	strings:
 		$s4 = "<form method=\"POST\" action=\"<?echo \"PHVayv.php?duzkaydet=$dizin/$duzenle"
 		$s12 = "<? if ($ekinci==\".\" or  $ekinci==\"..\") {" fullword
@@ -7738,7 +7738,7 @@ rule r57shell {
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
 		hash = "8023394542cddf8aee5dec6072ed02b5"
-		id = "1f1070e8-e82c-5cae-a64a-cd5028adae97"
+		id = "9f3beff9-f370-41f0-8dad-396e28f3f223"
 	strings:
 		$s11 = " $_POST['cmd']=\"echo \\\"Now script try connect to"
 	condition:
@@ -7777,7 +7777,7 @@ rule HYTop2006_rar_Folder_2006X2 {
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
 		hash = "cc5bf9fc56d404ebbc492855393d7620"
-		id = "bda89055-27f5-50b7-86a3-2c75a5f3eadc"
+		id = "59638062-3b3f-4b0e-9a39-1d216ce76475"
 	strings:
 		$s2 = "Powered By "
 		$s3 = " \" onClick=\"this.form.sharp.name=this.form.password.value;this.form.action=this."
@@ -7911,7 +7911,7 @@ rule HYTop2006_rar_Folder_2006X {
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
 		hash = "cf3ee0d869dd36e775dfcaa788db8e4b"
-		id = "bda89055-27f5-50b7-86a3-2c75a5f3eadc"
+		id = "d40b3895-a24b-4835-99ec-516c13932fa3"
 	strings:
 		$s1 = "<input name=\"password\" type=\"password\" id=\"password\""
 		$s6 = "name=\"theAction\" type=\"text\" id=\"theAction\""
@@ -7936,7 +7936,7 @@ rule elmaliseker {
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
 		hash = "ccf48af0c8c09bbd038e610a49c9862e"
-		id = "7ecf3d5c-be91-579e-905b-5f2ad03a0e42"
+		id = "8c986b1e-8a63-4590-af93-b41bb0b1c527"
 	strings:
 		$s0 = "javascript:Command('Download'"
 		$s5 = "zombie_array=array("
@@ -8375,7 +8375,7 @@ rule webshell {
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
 		hash = "f2f8c02921f29368234bfb4d4622ad19"
-		id = "393e738a-b4c2-5630-a55f-c3caee4ff75e"
+		id = "9339a450-c8d9-4143-bb0c-fc399ac7f3f2"
 	strings:
 		$s0 = "RhViRYOzz"
 		$s1 = "d\\O!jWW"
@@ -8503,7 +8503,7 @@ rule PHP_sh {
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
 		hash = "1e9e879d49eb0634871e9b36f99fe528"
-		id = "08dff4db-3b1c-5702-a8c9-efaedf83c4ff"
+		id = "822e1f4b-7e8c-481d-bceb-c7a696ec54a4"
 	strings:
 		$s1 = "\"@$SERVER_NAME \".exec(\"pwd\")"
 	condition:
@@ -8716,7 +8716,7 @@ rule c99shell {
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
 		hash = "90b86a9c63e2cd346fe07cea23fbfc56"
-		id = "ce88027c-ae08-59f3-948d-6f3d58515468"
+		id = "b9f09c4f-49de-460b-a017-306c5ebcbfdb"
 	strings:
 		$s0 = "<br />Input&nbsp;URL:&nbsp;&lt;input&nbsp;name=\\\"uploadurl\\\"&nbsp;type=\\\"text\\\"&"
 	condition:
@@ -8728,7 +8728,7 @@ rule phpspy_2005_full {
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
 		hash = "d1c69bb152645438440e6c903bac16b2"
-		id = "41a0560a-b22e-5028-8ad1-710c5758cb1d"
+		id = "b47ae943-49cb-4f68-befc-a530aa25bcdd"
 	strings:
 		$s7 = "echo \"  <td align=\\\"center\\\" nowrap valign=\\\"top\\\"><a href=\\\"?downfile=\".urlenco"
 	condition:
@@ -8764,7 +8764,7 @@ rule HYTop_DevPack_2005 {
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
 		hash = "63d9fd24fa4d22a41fc5522fc7050f9f"
-		id = "963effd9-f31d-5238-9419-b5dd11822e56"
+		id = "7303b87a-f5f5-45d4-96e1-c7dccfc6626e"
 	strings:
 		$s7 = "theHref=encodeForUrl(mid(replace(lcase(list.path),lcase(server.mapPath(\"/\")),\"\")"
 		$s8 = "scrollbar-darkshadow-color:#9C9CD3;"
@@ -8997,7 +8997,7 @@ rule HYTop2006_rar_Folder_2006 {
 		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
 		author = "Florian Roth (Nextron Systems)"
 		hash = "c19d6f4e069188f19b08fa94d44bc283"
-		id = "bda89055-27f5-50b7-86a3-2c75a5f3eadc"
+		id = "a70cf6fd-012a-4e1e-a0a3-e6b126f6dd22"
 	strings:
 		$s6 = "strBackDoor = strBackDoor "
 	condition:

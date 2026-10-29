@@ -45,7 +45,7 @@ rule Enigma_Protected_Malware {
       reference = "https://goo.gl/OEVQ9w"
       date = "2017-02-03"
       hash1 = "d4616f9706403a0d5a2f9a8726230a4693e4c95c58df5c753ccc684f1d3542e2"
-      id = "d701d591-4283-5645-8768-a5ab7df0f37a"
+      id = "6ecd286f-ed8c-48d7-8ab5-0246efa3c0e9"
    strings:
       $s1 = { 5d 5d 5d aa bf 5e 95 d6 dc 51 5d 5d 5d 5e 98 0d }
       $s2 = { 52 d9 47 5d 5d 5d dd a6 b4 52 d9 4c 5d 5d 5d 3b }

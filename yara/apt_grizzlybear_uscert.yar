@@ -993,7 +993,7 @@ rule IMPLANT_4_v12 {
       reference = "https://www.us-cert.gov/ncas/current-activity/2017/02/10/Enhanced-Analysis-GRIZZLY-STEPPE"
       date = "2017-02-10"
       score = 85
-      id = "be4d222f-009f-5dde-93da-376626a77263"
+      id = "79647ad4-fa14-4b41-8e7b-0a7690ec96d9"
    strings:
       $CMP1 = {81 ?? 4D 5A 00 00 }
       $SUB1 = {81 ?? 00 10 00 00}

@@ -468,7 +468,7 @@ rule Txt_aspx1 {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
         hash = "c5ecb8bc1d7f0e716b06107b5bd275008acaf7b7"
-        id = "e01a7235-5c69-5676-ac5d-c4e4632f31b2"
+        id = "4ac8cd9e-becf-4da6-b1d1-7f430bf9d4d5"
     strings:
         $s0 = "<%@ Page Language=\"Jscript\"%><%eval(Request.Item["
         $s1 = "],\"unsafe\");%>" fullword ascii
@@ -615,7 +615,7 @@ rule Txt_jsp {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
         hash = "74518faf08637c53095697071db09d34dbe8d676"
-        id = "53eb6caf-3578-5df7-a1d8-9e4038b6f57e"
+        id = "c75c08f6-6fe6-4745-be2a-f9870b0481d9"
     strings:
         $s1 = "program = \"cmd.exe /c net start > \" + SHELL_DIR" fullword ascii
         $s2 = "Process pro = Runtime.getRuntime().exec(exe);" fullword ascii
@@ -633,7 +633,7 @@ rule Txt_aspxlcx {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
         hash = "453dd3160db17d0d762e032818a5a10baf234e03"
-        id = "e01a7235-5c69-5676-ac5d-c4e4632f31b2"
+        id = "356d8992-9f39-480c-a62e-7b7a5d6e3313"
     strings:
         $s1 = "public string remoteip = " ascii
         $s2 = "=Dns.Resolve(host);" ascii
@@ -670,7 +670,7 @@ rule Txt_aspx {
         reference = "http://tools.zjqhr.com/"
         date = "2015-06-14"
         hash = "ce24e277746c317d887139a0d71dd250bfb0ed58"
-        id = "e01a7235-5c69-5676-ac5d-c4e4632f31b2"
+        id = "862bf2a5-ee19-4cc0-9b91-0ec4b08374a8"
     strings:
         $s1 = "SQLExec : <asp:DropDownList runat=\"server\" ID=\"FGEy\" AutoPostBack=\"True\" O" ascii
         $s2 = "Process[] p=Process.GetProcesses();" fullword ascii

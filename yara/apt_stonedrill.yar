@@ -68,7 +68,7 @@ rule StoneDrill_BAT_1 {
       author = "Florian Roth (Nextron Systems)"
       description = "Rule to detect Batch file from StoneDrill report"
       reference = "https://securelist.com/blog/research/77725/from-shamoon-to-stonedrill/"
-      id = "92f53e6a-8f49-5ffa-8c16-3ec3e6f2bdcd"
+      id = "3f527ac1-9da4-43b1-af69-512421fdd0c4"
    strings:
       $s1 = "set u100=" ascii
       $s2 = "set u200=service" ascii fullword
@@ -85,7 +85,7 @@ rule StoneDrill_Service_Install {
       author = "Florian Roth (Nextron Systems)"
       description = "Rule to detect Batch file from StoneDrill report"
       reference = "https://securelist.com/blog/research/77725/from-shamoon-to-stonedrill/"
-      id = "92f53e6a-8f49-5ffa-8c16-3ec3e6f2bdcd"
+      id = "85732aa4-f6ab-4bf5-a8d0-7a8f82f07f1a"
    strings:
       $s1 = "127.0.0.1 >nul && sc config" ascii
       $s2 = "LocalService\" && ping -n" ascii fullword
@@ -104,7 +104,7 @@ rule StoneDrill_ntssrvr32 {
       date = "2017-03-07"
       modified = "2023-01-27"
       hash1 = "394a7ebad5dfc13d6c75945a61063470dc3b68f7a207613b79ef000e1990909b"
-      id = "92f53e6a-8f49-5ffa-8c16-3ec3e6f2bdcd"
+      id = "b10b1b3e-9705-47b4-b10c-a84e6395cc8e"
    strings:
       $s1 = "g\\system32\\" wide
       $s2 = "ztvttw" fullword wide
@@ -125,7 +125,7 @@ rule StoneDrill_Malware_2 {
       reference = "https://securelist.com/blog/research/77725/from-shamoon-to-stonedrill/"
       date = "2017-03-07"
       hash1 = "69530d78c86031ce32583c6800f5ffc629acacb18aac4c8bb5b0e915fc4cc4db"
-      id = "92f53e6a-8f49-5ffa-8c16-3ec3e6f2bdcd"
+      id = "8f53dff6-5c1a-4625-80a1-38f50664b06f"
    strings:
       $s1 = "cmd /c WMIC Process Call Create \"C:\\Windows\\System32\\Wscript.exe //NOLOGO " fullword wide
       $s2 = "C:\\ProgramData\\InternetExplorer" fullword wide
@@ -155,7 +155,7 @@ rule StoneDrill {
       hash1 = "2bab3716a1f19879ca2e6d98c518debb107e0ed8e1534241f7769193807aac83"
       hash2 = "62aabce7a5741a9270cddac49cd1d715305c1d0505e620bbeaec6ff9b6fd0260"
       hash3 = "69530d78c86031ce32583c6800f5ffc629acacb18aac4c8bb5b0e915fc4cc4db"
-      id = "92f53e6a-8f49-5ffa-8c16-3ec3e6f2bdcd"
+      id = "792e5978-2bd9-4c5c-8496-15800370134e"
    strings:
       $x1 = "C-Dlt-C-Trsh-T.tmp" fullword wide
       $x2 = "C-Dlt-C-Org-T.vbs" fullword wide

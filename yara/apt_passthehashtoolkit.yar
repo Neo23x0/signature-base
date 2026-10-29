@@ -100,7 +100,7 @@ rule iam_iam {
 		date = "2015-07-10"
 		score = 80
 		hash = "8a8fcce649259f1b670bb1d996f0d06f6649baa8eed60db79b2c16ad22d14231"
-		id = "15e8ddac-af17-5509-b552-b4364af57c90"
+		id = "d29bcb98-bc72-4ac2-bc82-5dbdbfdaaf5b"
 	strings:
 		$s1 = "<cmd>. Create a new logon session and run a command with the specified credentials (e.g.: -r cmd.exe)" fullword ascii /* PEStudio Blacklist: strings */ /* score: '59.00' */
 		$s2 = "iam.exe -h administrator:mydomain:"  ascii /* PEStudio Blacklist: strings */ /* score: '40.00' */
@@ -122,7 +122,7 @@ rule whosthere_alt_pth {
 		date = "2015-07-10"
 		score = 80
 		hash = "fbfc8e1bc69348721f06e96ff76ae92f3551f33ed3868808efdb670430ae8bd0"
-		id = "92e98381-9142-58af-82ce-4df9eb0a0039"
+		id = "1488055f-090f-4c07-bf16-16909e285ca5"
 	strings:
 		$s0 = "c:\\debug.txt" fullword ascii /* PEStudio Blacklist: strings */ /* score: '23.00' */
 		$s1 = "pth.dll" fullword ascii /* score: '20.00' */
@@ -142,7 +142,7 @@ rule whosthere {
 		date = "2015-07-10"
 		score = 80
 		hash = "d7a82204d3e511cf5af58eabdd6e9757c5dd243f9aca3999dc0e5d1603b1fa37"
-		id = "92e98381-9142-58af-82ce-4df9eb0a0039"
+		id = "6271f368-0d96-4bb7-93ef-210599948584"
 	strings:
 		$s1 = "by Hernan Ochoa (hochoa@coresecurity.com, hernan@gmail.com) - (c) 2007-2008 Core Security Technologies" fullword ascii /* PEStudio Blacklist: strings */ /* score: '48.00' */
 		$s2 = "whosthere enters an infinite loop and searches for new logon sessions every 2 seconds. Only new sessions are shown if found." fullword ascii /* PEStudio Blacklist: strings */ /* score: '36.00' */

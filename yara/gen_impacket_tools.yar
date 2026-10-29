@@ -197,7 +197,7 @@ rule Impacket_Tools_sniff {
       reference = "https://github.com/maaaaz/impacket-examples-windows"
       date = "2017-04-07"
       hash1 = "8ab2b60aadf97e921e3a9df5cf1c135fbc851cb66d09b1043eaaa1dc01b9a699"
-      id = "07051edc-91a8-59d6-87bf-dba98ef28588"
+      id = "7a46f80c-0522-4436-85c2-81491cade9d2"
    strings:
       $s1 = "ssniff" fullword ascii
       $s2 = "impacket.eap(" ascii
