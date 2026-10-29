@@ -290,7 +290,7 @@ rule APT30_Sample_11 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "59066d5d1ee3ad918111ed6fcaf8513537ff49a6"
-		id = "e5dd6bc9-9383-5d48-92df-709996373655"
+		id = "d0a1fed3-08bb-474f-9c84-97cf8ccbc646"
 	strings:
 		$s0 = "System\\CurrentControlSet\\control\\ComputerName\\ComputerName" fullword ascii
 		$s1 = "msofscan.exe" fullword wide
@@ -319,7 +319,7 @@ rule APT30_Sample_12 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "b02b5720ff0f73f01eb2ba029a58b645c987c4bc"
-		id = "e5dd6bc9-9383-5d48-92df-709996373655"
+		id = "a05d0702-5dd9-4d07-8347-c30f768762a2"
 	strings:
 		$s0 = "Richic" fullword ascii
 		$s1 = "Accept: image/gif, */*" fullword ascii
@@ -336,7 +336,7 @@ rule APT30_Sample_13 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "a359f705a833c4a4254443b87645fd579aa94bcf"
-		id = "e5dd6bc9-9383-5d48-92df-709996373655"
+		id = "c0dee235-5d58-4a23-8af8-eeb8d676a8dd"
 	strings:
 		$s0 = "msofscan.exe" fullword wide
 		$s1 = "Microsoft? is a registered trademark of Microsoft Corporation." fullword wide
@@ -356,7 +356,7 @@ rule APT30_Sample_14 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "b0740175d20eab79a5d62cdbe0ee1a89212a8472"
-		id = "e5dd6bc9-9383-5d48-92df-709996373655"
+		id = "2f6dac6a-56e1-4cf7-95e2-976d725dbd1b"
 	strings:
 		$s0 = "AdobeReader.exe" fullword wide
 		$s4 = "10.1.7.27" fullword wide
@@ -374,7 +374,7 @@ rule APT30_Sample_15 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "7a8576804a2bbe4e5d05d1718f90b6a4332df027"
-		id = "e5dd6bc9-9383-5d48-92df-709996373655"
+		id = "dea6d42a-0605-4f13-bd6b-65e2e154faf3"
 	strings:
 		$s0 = "\\Windo" ascii
 		$s2 = "HHOSTR"  ascii
@@ -394,7 +394,7 @@ rule APT30_Sample_16 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "066d06ac08b48d3382d46bbeda6ad411b6d6130e"
-		id = "e5dd6bc9-9383-5d48-92df-709996373655"
+		id = "a8a1cc0b-9b21-4cc7-956d-517ee58ba3a2"
 	strings:
 		$s0 = "\\Temp1020.txt" ascii
 		$s1 = "cmcbqyjs" fullword ascii
@@ -436,7 +436,7 @@ rule APT30_Sample_17 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "c3aa52ff1d19e8fc6704777caf7c5bd120056845"
-		id = "e5dd6bc9-9383-5d48-92df-709996373655"
+		id = "c57a5342-95c3-41b5-8315-ff65cabea535"
 	strings:
 		$s1 = "Nkfvtyvn}]ty}ztU" fullword ascii
 		$s4 = "IEXPL0RE" fullword ascii
@@ -451,7 +451,7 @@ rule APT30_Sample_18 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "355436a16d7a2eba8a284b63bb252a8bb1644751"
-		id = "e5dd6bc9-9383-5d48-92df-709996373655"
+		id = "78f939c6-64aa-4b38-b31b-7e2fb89900a1"
 	strings:
 		$s0 = "w.km-nyc.com" fullword ascii
 		$s1 = "tscv.exe" fullword ascii
@@ -497,7 +497,7 @@ rule APT30_Sample_19 {
       modified = "2023-01-06"
       score = 75
       hash = "cfa438449715b61bffa20130df8af778ef011e15"
-		id = "e5dd6bc9-9383-5d48-92df-709996373655"
+		id = "62f45c7a-6001-47e6-889d-ae1720fe8d39"
    strings:
       $s0 = "C:\\Program Files\\Common Files\\System\\wab32" fullword ascii
       $s1 = "%s,Volume:%s,Type:%s,TotalSize:%uMB,FreeSize:%uMB" fullword ascii
@@ -984,7 +984,7 @@ rule APT30_Sample_1 {
 		reference = "https://www2.fireeye.com/rs/fireye/images/rpt-apt30.pdf"
 		date = "2015/04/13"
 		hash = "8cea83299af8f5ec6c278247e649c9d91d4cf3bc"
-		id = "e5dd6bc9-9383-5d48-92df-709996373655"
+		id = "f0aeeb9a-dee1-4d21-939f-a9de2060c987"
 	strings:
 		$s0 = "#hostid" fullword ascii
 		$s1 = "\\Windows\\C" ascii

@@ -165,7 +165,7 @@ rule FourElementSword_ElevateDLL {
 		super_rule = 1
 		hash1 = "3dfc94605daf51ebd7bbccbb3a9049999f8d555db0999a6a7e6265a7e458cab9"
 		hash2 = "5f3d0a319ecc875cc64a40a34d2283cb329abcf79ad02f487fbfd6bef153943c"
-		id = "06879d75-18a3-5d49-a963-fa4bee379387"
+		id = "22c04fee-138a-4c9c-9c51-d1da2b6e8688"
 	strings:
 		$x1 = "Elevate.dll" fullword wide
 		$x2 = "ResN32.dll" fullword wide

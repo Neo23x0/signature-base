@@ -154,7 +154,7 @@ rule FVEY_ShadowBroker_user_tool_shentysdelight {
       reference = "https://bit.no.com:43110/theshadowbrokers.bit/post/message6/"
       date = "2016-12-17"
       hash1 = "a564efeaae9c13fe09a27f2d62208a1dec0a19b4a156f5cfa96a0259366b8166"
-      id = "b1ca04e5-bac7-5247-b2d4-82c3515c92fc"
+      id = "bb6ab8c5-7e11-450e-adc4-c4e96a6f3d43"
    strings:
       $s1 = "echo -ne \"/var/run/COLFILE\\0\"" fullword ascii
    condition:
@@ -169,7 +169,7 @@ rule FVEY_ShadowBroker_user_tool_epichero {
       reference = "https://bit.no.com:43110/theshadowbrokers.bit/post/message6/"
       date = "2016-12-17"
       hash1 = "679d194c32cbaead7281df9afd17bca536ee9d28df917b422083ae8ed5b5c484"
-      id = "b1ca04e5-bac7-5247-b2d4-82c3515c92fc"
+      id = "1c16ab8a-5ced-4b1f-8e34-fe35a585356a"
    strings:
       $x2 = "-irtun TARGET_IP ISH_CALLBACK_PORT"
       $x3 = "-O REVERSE_SHELL_CALLBACK_PORT -w HIDDEN_DIR" fullword ascii
@@ -185,7 +185,7 @@ rule FVEY_ShadowBroker_user_tool {
       reference = "https://bit.no.com:43110/theshadowbrokers.bit/post/message6/"
       date = "2016-12-17"
       hash1 = "98ae935dd9515529a34478cb82644828d94a2d273816d50485665535454e37cd"
-      id = "b1ca04e5-bac7-5247-b2d4-82c3515c92fc"
+      id = "94fb9e38-62f6-4c20-b32c-a4e3a1cd4a68"
    strings:
       $x5 = "ELATEDMONKEY will only work of apache executes scripts" fullword ascii
    condition:

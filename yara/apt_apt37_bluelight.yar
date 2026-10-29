@@ -120,7 +120,7 @@ rule APT_MAL_Win_BlueLight : InkySquid {
         hash2 = "94b71ee0861cc7cfbbae53ad2e411a76f296fd5684edf6b25ebe79bf6a2a600a"
         license = "See license at https://github.com/volexity/threat-intel/LICENSE.txt"
         reference = "https://www.volexity.com/blog/2021/08/17/north-korean-apt-inkysquid-infects-victims-using-browser-exploits/"
-        id = "3ec2d44c-4c08-514d-a839-acef3f53f7dc"
+        id = "8bd45128-8b9a-40bb-a13f-3dec4e2a0626"
     strings:
         $pdb1 = "\\Development\\BACKDOOR\\ncov\\"
         $pdb2 = "Release\\bluelight.pdb"

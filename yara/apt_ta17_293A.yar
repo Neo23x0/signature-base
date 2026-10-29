@@ -110,7 +110,7 @@ rule TA17_293A_Query_XML_Code_MAL_DOC {
         name= "Query_XML_Code_MAL_DOC"
         author = "other (modified by Florian Roth)"
         reference = "https://www.us-cert.gov/ncas/alerts/TA17-293A"
-        id = "82b0f28a-94b6-52ab-8fd6-cdc05823ac34"
+        id = "be98af7b-9617-4dd1-8aee-f6e90767534d"
     strings:
         $dir = "word/_rels/" ascii
         $dir2 = "word/theme/theme1.xml" ascii

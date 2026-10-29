@@ -4215,7 +4215,7 @@ rule WEBSHELL_ASP_Generic_Tiny
         hash = "0864f040a37c3e1cef0213df273870ed6a61e4bc"
         hash = "b184dc97b19485f734e3057e67007a16d47b2a62"
 
-        id = "0904cefb-6e0f-5e5f-9986-cf83d409ce46"
+        id = "fb948afe-b89e-4ca9-95c5-a8e08e2520ed"
     strings:
         $fp1 = "net.rim.application.ipproxyservice.AdminCommand.execute"
 
@@ -4424,7 +4424,7 @@ rule WEBSHELL_ASP_Generic : FILE {
         hash = "4cf6fbad0411b7d33e38075f5e00d4c8ae9ce2f6f53967729974d004a183b25c"
         hash = "a91320483df0178eb3cafea830c1bd94585fc896"
         hash = "f3398832f697e3db91c3da71a8e775ebf66c7e73"
-        id = "0904cefb-6e0f-5e5f-9986-cf83d409ce46"
+        id = "49681935-0776-45d1-b410-6f8a936a74e1"
     strings:
         $asp_much_sus7  = "Web Shell" nocase
         $asp_much_sus8  = "WebShell" nocase

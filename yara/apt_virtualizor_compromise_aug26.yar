@@ -5,6 +5,7 @@ rule APT_Virtualizor_Compromise_ForensicArtifacts_Aug26 {
       date = "2026-08-31"
       reference = "https://lowendtalk.com/discussion/220625/urgent-virtualizor-compromised-31st-aug/p1"
       score = 75
+      id = "3507b25a-1003-4825-bf65-fa977ca75bc3"
    strings:
       $x1 = "AAAAC3NzaC1lZDI1NTE5AAAAIP13pPAm5jmInLQYD3XNb3HwrW4cAKDcphoT4kSKrnte"
       $x2 = "/tmp/.vz_svc_done"
@@ -29,6 +30,7 @@ rule APT_Virtualizor_Compromise_Payload_Aug26 {
       reference = "https://lowendtalk.com/discussion/220625/urgent-virtualizor-compromised-31st-aug/p1"
       hash = "b81a4e1fab9fc4e404d57224fe71e2c143aa93942bd46998789bdc944a7870c7"
       score = 80
+      id = "2ba47313-3db9-48d2-94b6-b8441be5e080"
    strings:
       $s1 = "net/ikvm/clientvds/stresser/methods/impl/l4/minecraft/protocollib/" ascii
       $s2 = "oshi/util/VirtualizationDetector" ascii

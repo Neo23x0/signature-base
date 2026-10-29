@@ -60,7 +60,7 @@ rule Rombertik_CarbonGrabber_Panel {
 		reference = "http://blogs.cisco.com/security/talos/rombertik"
 		date = "2015-05-05"
 		hash = "e6e9e4fc3772ff33bbeeda51f217e9149db60082"
-		id = "f6c04e27-bbab-5012-a4f9-71d49d252b83"
+		id = "8f19a23f-09b5-4f54-a217-a2a7ec47ad8a"
 	strings:
 		$s0 = "echo '<meta http-equiv=\"refresh\" content=\"0;url=index.php?a=login\">';" fullword ascii
 		$s1 = "echo '<meta http-equiv=\"refresh\" content=\"2;url='.$website.'/index.php?a=login" ascii

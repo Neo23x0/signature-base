@@ -77,7 +77,7 @@ rule Codoso_CustomTCP_3 {
 		reference = "https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks"
 		date = "2016-01-30"
 		hash = "d66106ec2e743dae1d71b60a602ca713b93077f56a47045f4fc9143aa3957090"
-		id = "b6ed6939-db0c-5a47-8839-3337d1bc1f6c"
+		id = "2d9a2408-b6af-4b56-8ccf-07f9af575d60"
 	strings:
 		$s1 = "DnsApi.dll" fullword ascii
 		$s2 = "softWARE\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\ZoneMap\\Domains\\%s" ascii
@@ -99,7 +99,7 @@ rule Codoso_CustomTCP_2 {
 		reference = "https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks"
 		date = "2016-01-30"
 		hash = "3577845d71ae995762d4a8f43b21ada49d809f95c127b770aff00ae0b64264a3"
-		id = "b6ed6939-db0c-5a47-8839-3337d1bc1f6c"
+		id = "1ffa7636-685c-472b-be05-5cb01be4ba96"
 	strings:
 		$s1 = "varus_service_x86.dll" fullword ascii
 		$s2 = "/s %s /p %d /st %d /rt %d" fullword ascii
@@ -176,7 +176,7 @@ rule Codoso_CustomTCP {
 		reference = "https://www.proofpoint.com/us/exploring-bergard-old-malware-new-tricks"
 		date = "2016-01-30"
 		hash = "b95d7f56a686a05398198d317c805924c36f3abacbb1b9e3f590ec0d59f845d8"
-		id = "b6ed6939-db0c-5a47-8839-3337d1bc1f6c"
+		id = "d1da2d4f-d556-4689-b449-480d5a0bbd28"
 	strings:
 		$s4 = "wnyglw" fullword ascii
 		$s5 = "WorkerRun" fullword ascii

@@ -30,7 +30,7 @@ rule Ysoserial_Payload_C3P0 {
       reference = "https://github.com/frohoff/ysoserial"
       date = "2017-02-04"
       hash1 = "9932108d65e26d309bf7d97d389bc683e52e91eb68d0b1c8adfe318a4ec6e58b"
-      id = "c269e032-b6ce-5faa-b3ce-a5304f3e9dab"
+      id = "b1ea107f-4d00-4e99-ad37-e04354f6a3d2"
    strings:
       $x1 = "exploitppppw" fullword ascii
    condition:
@@ -51,7 +51,7 @@ rule Ysoserial_Payload_Spring1 {
       hash5 = "95f966f2e8c5d0bcdfb34e603e3c0b911fa31fc960308e41fcd4459e4e07b4d1"
       hash6 = "1da04d838141c64711d87695a4cdb4eedfd4a206cc80922a41cfc82df8e24187"
       hash7 = "adf895fa95526c9ce48ec33297156dd69c3dbcdd2432000e61b2dd34ffc167c7"
-      id = "c269e032-b6ce-5faa-b3ce-a5304f3e9dab"
+      id = "2a6cd121-8efe-4150-8173-255a58deccc7"
    strings:
       $x1 = "ysoserial/Pwner" ascii
    condition:
@@ -79,7 +79,7 @@ rule Ysoserial_Payload {
       hash11 = "8cfa85c16d37fb2c38f277f39cafb6f0c0bd7ee62b14d53ad1dd9cb3f4b25dd8"
       hash12 = "bf9b5f35bc1556d277853b71da24faf23cf9964d77245018a0fdf3359f3b1703"
       hash13 = "f756c88763d48cb8d99e26b4773eb03814d0bd9bd467cc743ebb1479b2c4073e"
-      id = "c269e032-b6ce-5faa-b3ce-a5304f3e9dab"
+      id = "8a604483-19d4-4f5b-9ac7-14f7bbda27ef"
    strings:
       $x1 = "ysoserial/payloads/" ascii
 

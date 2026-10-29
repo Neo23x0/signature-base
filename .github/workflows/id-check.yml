@@ -1,0 +1,36 @@
+name: YARA Rule ID Check
+
+on:
+  push:
+    branches: [ master, main ]
+    paths:
+      - 'yara/**'
+      - 'tests/ids/**'
+      - '.github/workflows/id-check.yml'
+  pull_request:
+    branches: [ master, main ]
+    paths:
+      - 'yara/**'
+      - 'tests/ids/**'
+      - '.github/workflows/id-check.yml'
+  workflow_dispatch:
+
+jobs:
+  id-check:
+    name: ID Check
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.13'
+
+    - name: Install plyara
+      run: pip install plyara
+
+    - name: Check rule IDs
+      run: python tests/ids/check_ids.py ./yara

@@ -38,7 +38,7 @@ rule APT_APT41_POISONPLUG_SHADOW {
       date = "2019-08-07"
       score = 85
       hash1 = "462a02a8094e833fd456baf0a6d4e18bb7dab1a9f74d5f163a8334921a4ffde8"
-      id = "e150dd69-c611-53de-9c7d-de28d3a208dc"
+      id = "498ee392-23e0-4cc4-9a4f-126aaabd6a64"
    condition:
       uint16(0) == 0x5a4d and filesize < 500KB and pe.imphash() == "c67de089f2009b21715744762fc484e8"
 }
@@ -71,7 +71,7 @@ rule APT_APT41_POISONPLUG_2 {
       date = "2019-08-07"
       score = 70
       hash1 = "0055dfaccc952c99b1171ce431a02abfce5c6f8fb5dc39e4019b624a7d03bfcb"
-      id = "e150dd69-c611-53de-9c7d-de28d3a208dc"
+      id = "572782bb-180a-40c1-af8a-580ceea0b76e"
    strings:
       $s1 = "ma_lockdown_service.dll" fullword wide
       $s2 = "acbde.dll" fullword ascii
@@ -92,7 +92,7 @@ rule APT_APT41_POISONPLUG {
       hash2 = "5d971ed3947597fbb7e51d806647b37d64d9fe915b35c7c9eaf79a37b82dab90"
       hash3 = "f4d57acde4bc546a10cd199c70cdad09f576fdfe66a36b08a00c19ff6ae19661"
       hash4 = "3e6c4e97cc09d0432fbbbf3f3e424d4aa967d3073b6002305cd6573c47f0341f"
-      id = "e150dd69-c611-53de-9c7d-de28d3a208dc"
+      id = "f42bffeb-a535-4e32-906f-f2fc98ab4efc"
    strings:
       $s1 = "TSMSISrv.DLL" fullword wide
       $s2 = "[-]write failed[%d]" fullword ascii

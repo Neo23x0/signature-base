@@ -1473,7 +1473,7 @@ rule Dos_c {
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "3deb6bd52fdac6d5a3e9a91c585d67820ab4df78"
-		id = "2e8319de-fe54-5083-968c-4707d127f072"
+		id = "f21f52c5-4ac4-4e62-8ac6-0e9f6a968633"
 	strings:
 		$s0 = "!Win32 .EXE." fullword ascii
 		$s1 = ".MPRESS1" fullword ascii
@@ -1997,7 +1997,7 @@ rule Dos_iis {
 		reference = "http://tools.zjqhr.com/"
 		date = "2015-06-13"
 		hash = "61ffd2cbec5462766c6f1c44bd44eeaed4f3d2c7"
-		id = "8813b7a2-0d44-5f26-80ab-0f493c09a027"
+		id = "c298f538-770c-4d2d-8512-b654c1b6ad4d"
 	strings:
 		$s1 = "comspec" fullword ascii
 		$s2 = "program terming" fullword ascii

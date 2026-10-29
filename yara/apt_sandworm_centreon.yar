@@ -208,7 +208,7 @@ rule APT_MAL_Sandworm_Exaramel_Strings {
       reference = "https://www.cert.ssi.gouv.fr/uploads/CERTFR-2021-CTI-005.pdf"
       date = "2021-02-15"
       score = 80
-      id = "fdc79b87-eb9e-5751-9474-ff653b073165"
+      id = "30225dd7-420a-43a0-bc8b-2ad36dea6019"
    strings:
       $persistence1 = "systemd"
       $persistence2 = "upstart"
