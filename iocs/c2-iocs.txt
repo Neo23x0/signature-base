@@ -1935,4 +1935,10 @@ ebix.recruitment-flow.com
 cdn.nerat.cc;90
 connect.ne-rat.xyz;90
 
+# crisp-worker-rig / Prime Scanner Go WordPress backdoor toolkit (SCV 4.5.3, EtherHiding C2) 2026-09-11 https://github.com/rwillmann/crisp-worker-rig-investigation
+notion-brown.com;90
+gear-carriage.com;90
+tape-exposure.com;90
+ameliaclark.com;75
+
 # Last Line

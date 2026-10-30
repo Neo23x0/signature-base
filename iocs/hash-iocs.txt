@@ -3378,3 +3378,16 @@ aea55e42c4436236278e5692d3dcbcbe5fe6ce0b;DAEMON Tools Lite supplychain compromis
 295ce86226b933e7262c2ce4b36bdd6c389aaaef;DAEMON Tools Lite supplychain compromise IOCs  https://securelist.com/tr/daemon-tools-backdoor/119654/
 
 b81a4e1fab9fc4e404d57224fe71e2c143aa93942bd46998789bdc944a7870c7;Virtualizor Compromise IOCs https://lowendtalk.com/discussion/220625/urgent-virtualizor-compromised-31st-aug/p1
+
+# crisp-worker-rig / Prime Scanner Go WordPress backdoor toolkit (SCV 4.5.3, EtherHiding C2) 2026-09-11 https://github.com/rwillmann/crisp-worker-rig-investigation
+856ee9bcbef6de5a94c4b39b40d652dd0fd4f49d495db88a1a293cb9addcd00a;crisp-worker-rig WordPress backdoor - mu-plugin crisp-worker-rig.php
+98bbf22009e31d12e22b966ec85375578ecd046ff67b7427d416df5768042e34;crisp-worker-rig WordPress backdoor - plugin crisp-worker-rig.php / payload core
+b933d5695d2d956ad3eeea9eb38e98fe5e3cf4f482050aa905e247071c56e39e;crisp-worker-rig WordPress backdoor - plugin crisp-worker-rig.php variant
+d223a45ff4ecdb06b5ff0e56b95a3eeb725ebac0182f885ba3ccceb577d2228a;crisp-worker-rig WordPress backdoor - self-heal helper
+f0cd664e8f5bd92d7506c3f65b6cbf1bac96a7f74788b8c7f623b230ee788282;crisp-worker-rig WordPress backdoor - injected db.php drop-in
+ed82e64a59ab2139ec777d3adc648573c84311233c73575c8679d695a359c904;crisp-worker-rig WordPress backdoor - injected object-cache.php drop-in
+d20dec59c1761f0ef80c26e74b12d5cf726ba056ebb30a93761dba92c6f613c9;crisp-worker-rig WordPress backdoor - injected advanced-cache.php drop-in
+047484c4577ca0c56edde3a910369b7c564b970e58dc85cafe8a1bf604e96ec7;crisp-worker-rig WordPress backdoor - plugin prime-scanner-go.php
+5fd21f43e5369ea276264ac89ef797bf4d12ce5bcf4dfad30ee6e624b4579a8e;crisp-worker-rig WordPress backdoor - zip dropper containing crisp-worker-rig.php
+19b06048bd7910c22c259ac4f57502a80335c5b9e66a230337c532de993a462e;crisp-worker-rig WordPress backdoor - zip dropper containing crisp-worker-rig.php
+3680f838d15e59734b971ddb4a2729eb942fbab40e9dfd3e6df2dbf2538f39e6;crisp-worker-rig WordPress backdoor - zip dropper containing prime-scanner-go.php
