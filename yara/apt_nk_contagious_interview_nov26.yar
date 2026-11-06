@@ -26,10 +26,10 @@ rule MAL_APT_NK_JS_ContagiousInterview_TCP_Backdoor_Nov26 {
       $s2 = ".git-checker" ascii
       $s3 = "start /b cmd /c \"cd /d " ascii
       $s4 = "ss_exec " ascii
-      $sb1 = "vscode-ext.lock" base64("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/")
-      $sb2 = ".git-checker" base64("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/")
-      $sb3 = "start /b cmd /c \"cd /d " base64("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/")
-      $sb4 = "ss_exec " base64("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/")
+      $sb1 = "vscode-ext.lock" base64
+      $sb2 = ".git-checker" base64
+      $sb3 = "start /b cmd /c \"cd /d " base64
+      $sb4 = "ss_exec " base64
    condition:
       filesize < 1MB
       and $r1
