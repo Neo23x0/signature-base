@@ -4,9 +4,11 @@ rule MAL_APT_NK_JS_ContagiousInterview_TCP_Backdoor_Nov26 {
       author = "n4uu"
       reference = "https://n4uu.github.io/2026/raw-tcp-backdoor-cleverstack/"
       date = "2026-11-05"
+      modified = "2026-11-06"
       score = 80
       hash1 = "281d4d60fc99cf7f54819defb1c7c14b9202d46890936c4c6b9ebe3ddc75dd2f"
       hash2 = "6db4c3d2ab56227d36eff59d1dc9e13eadf9959996fab1e0b04591cc5e637d04"
+      hash3 = "1bcf17ce99fc748536317f9d28fd79f103f6166c1e548c0255ede0b434314352"
       id = "fdd732d7-e852-4f09-b57c-f1893cc1ec64"
    strings:
       $r1 = "require(" ascii
@@ -21,7 +23,7 @@ rule MAL_APT_NK_JS_ContagiousInterview_TCP_Backdoor_Nov26 {
       $g7 = "SERVER_API_URL" ascii fullword
       $g8 = "attemptReconnect" ascii fullword
 
-      // key strings as literals or encoded with the javascript-obfuscator base64 alphabet
+      // key strings as literals or base64 encoded
       $s1 = "vscode-ext.lock" ascii
       $s2 = ".git-checker" ascii
       $s3 = "start /b cmd /c \"cd /d " ascii
@@ -30,6 +32,11 @@ rule MAL_APT_NK_JS_ContagiousInterview_TCP_Backdoor_Nov26 {
       $sb2 = ".git-checker" base64
       $sb3 = "start /b cmd /c \"cd /d " base64
       $sb4 = "ss_exec " base64
+      // javascript-obfuscator encodes its string array with a case-swapped alphabet
+      $sc1 = "vscode-ext.lock" base64("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/")
+      $sc2 = ".git-checker" base64("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/")
+      $sc3 = "start /b cmd /c \"cd /d " base64("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/")
+      $sc4 = "ss_exec " base64("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/")
    condition:
       filesize < 1MB
       and $r1
