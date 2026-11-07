@@ -217,7 +217,7 @@ rule APT_APT41_RevokedCert_Aug19_1 {
          pe.signatures[i].serial == "7b:d5:58:18:c5:97:1b:63:dc:45:cf:57:cb:eb:95:0b" or
          pe.signatures[i].serial == "53:0c:e1:4c:81:f3:62:10:a1:68:2a:ff:17:9e:25:80" or
          pe.signatures[i].serial == "54:c6:c1:40:6f:b4:ac:b5:d2:06:74:e9:93:92:c6:3e" or
-         pe.signatures[i].serial == "fd:f2:83:7d:ac:12:b7:bb:30:ad:05:8f:99:9e:cf:00" or
+         pe.signatures[i].serial == "00:fd:f2:83:7d:ac:12:b7:bb:30:ad:05:8f:99:9e:cf:00" or
          pe.signatures[i].serial == "18:63:79:57:5a:31:46:e2:6b:ef:c9:0a:58:0d:1b:d2" or
          pe.signatures[i].serial == "5c:2f:97:a3:1a:bc:32:b0:8c:ac:01:00:59:8f:32:f6" or
          pe.signatures[i].serial == "4c:0b:2e:9d:2e:f9:09:d1:52:70:d4:dd:7f:a5:a4:a5" or
