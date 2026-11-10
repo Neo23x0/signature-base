@@ -25,36 +25,69 @@ rule p0wnedPowerCat {
       $x6 = "Program.P0wnedPath()" ascii
       $x7 = "Invoke-PowerShellTcpOneLine" fullword ascii
    condition:
-      ( uint16(0) == 0x7375 and filesize < 150KB and 1 of them ) or ( 2 of them )
+      (uint16(0) == 0x7375 and filesize < 150KB and 1 of them) or (2 of them)
 }
 
-rule Hacktool_Strings_p0wnedShell : FILE {
+rule HKTL_P0wnedShell_Strings_Jan17: FILE HKTL {
    meta:
+      old_rule_name = "Hacktool_Strings_p0wnedShell"
       description = "Detects strings found in Runspace Post Exploitation Toolkit"
       license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
       author = "Florian Roth"
       reference = "https://github.com/Cn33liz/p0wnedShell"
       date = "2017-01-14"
-      modified = "2023-02-10"
-      hash1 = "e1f35310192416cd79e60dba0521fc6eb107f3e65741c344832c46e9b4085e60"
+      modified = "2026-11-10"
+      hash = "255b4695fbbeb9cfc2ec026fc7d320df53cc29503b59755868b937bc16275c13"
+      hash = "d6e7aa26e01ff3281ea1655d3ae954bd6cbcf3210a69b06129fd7de83babeb4d"
+      score = 70
       nodeepdive = 1
       id = "0846039d-1e00-5224-9560-55ab18034d54"
    strings:
-      $x1 = "Invoke-TokenManipulation" fullword ascii
-      $x2 = "windows/meterpreter" fullword ascii
-      $x3 = "lsadump::dcsync" fullword ascii
-      $x4 = "p0wnedShellx86" fullword ascii
-      $x5 = "p0wnedShellx64" fullword ascii
-      $x6 = "Invoke_PsExec()" fullword ascii
-      $x7 = "Invoke-Mimikatz" fullword ascii
-      $x8 = "Invoke_Shellcode()" fullword ascii
-      $x9 = "Invoke-ReflectivePEInjection" ascii
+      $x1 = "p0wnedShellx86" ascii fullword
+      $x2 = "p0wnedShellx64" ascii fullword
+      $x3 = "Invoke_PsExec()" ascii fullword
+      $x4 = "Invoke_Shellcode()" ascii fullword
 
       $fp1 = "Sentinel Labs, Inc." wide
       $fp2 = "Copyright Elasticsearch B.V." ascii wide
-      $fp3 = "Attack Information: Invoke-Mimikatz" ascii /* Check Point help files */
-      $fp4 = "a30226 || INDICATOR-SHELLCODE Metasploit windows/meterpreter stage transfer attempt" /* snort message ID */
+      $fp3 = "Attack Information: Invoke-Mimikatz" ascii  /* Check Point help files */
+      $fp4 = "a30226 || INDICATOR-SHELLCODE Metasploit windows/meterpreter stage transfer attempt"  /* snort message ID */
       $fp5 = "use strict"
+      $fp6 = "-- This file is released under the Nmap license; see:" ascii
+      $fp7 = "<html" ascii
+      $fp8 = "<!DOCTYPE html" ascii
+   condition:
+      filesize < 30MB
+      and 1 of ($x*)
+      and not 1 of ($fp*)
+}
+
+rule SUSP_P0wnedShell_Strings_Nov26: FILE HKTL {
+   meta:
+      description = "Detects strings found in Runspace Post Exploitation Toolkit"
+      license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+      author = "Florian Roth"
+      reference = "https://github.com/Cn33liz/p0wnedShell"
+      date = "2026-11-10"
+      hash = "673d9ad71abb8c8fbf5c58d6c168af891fbbc08dc3708f82ac1729ced6a4615d"
+      score = 60
+      nodeepdive = 1
+      id = "afd4098c-ab51-4ae4-bf94-c212278fa0c9"
+   strings:
+      $x1 = "Invoke-TokenManipulation" ascii fullword
+      $x2 = "windows/meterpreter" ascii fullword
+      $x3 = "lsadump::dcsync" ascii fullword
+      $x4 = "Invoke-Mimikatz" ascii fullword
+      $x5 = "Invoke-ReflectivePEInjection" ascii
+
+      $fp1 = "Sentinel Labs, Inc." wide
+      $fp2 = "Copyright Elasticsearch B.V." ascii wide
+      $fp3 = "Attack Information: Invoke-Mimikatz" ascii  /* Check Point help files */
+      $fp4 = "a30226 || INDICATOR-SHELLCODE Metasploit windows/meterpreter stage transfer attempt"  /* snort message ID */
+      $fp5 = "use strict"
+      $fp6 = "-- This file is released under the Nmap license; see:" ascii
+      $fp7 = "<html" ascii
+      $fp8 = "<!DOCTYPE html" ascii
    condition:
       filesize < 20MB
       and 1 of ($x*)
@@ -112,7 +145,7 @@ rule p0wnedShellx64 {
       $x4 = "CommandShell with Local Administrator privileges :)" fullword wide
       $x5 = "Invoke-shellcode -Payload windows/meterpreter/reverse_https -Lhost " fullword wide
 
-      $fp1 = "AVSignature" ascii wide 
+      $fp1 = "AVSignature" ascii wide
    condition:
       1 of ($x*) and not 1 of them
 }
