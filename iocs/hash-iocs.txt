@@ -3378,3 +3378,6 @@ aea55e42c4436236278e5692d3dcbcbe5fe6ce0b;DAEMON Tools Lite supplychain compromis
 295ce86226b933e7262c2ce4b36bdd6c389aaaef;DAEMON Tools Lite supplychain compromise IOCs  https://securelist.com/tr/daemon-tools-backdoor/119654/
 
 b81a4e1fab9fc4e404d57224fe71e2c143aa93942bd46998789bdc944a7870c7;Virtualizor Compromise IOCs https://lowendtalk.com/discussion/220625/urgent-virtualizor-compromised-31st-aug/p1
+
+c799634115525db95295f18e339a143a0fd1c6ba3a249269b5d00db97b35418d;SignDrop CLFS privilege escalation exploit hid.dll payload https://github.com/MSNightmare/SignDrop
+df34b96a1bbc4626f9a4f0b849d59db9523bfcb1960d7622e3caa16aab5854eb;SignDrop CLFS privilege escalation exploit source code SigDrop.cpp https://github.com/MSNightmare/SignDrop

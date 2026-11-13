@@ -4588,4 +4588,9 @@ C:\\ProgramData\\Microsoft\\mcrypto\.chiper;85
 /tmp/\.vz_svc_done;75
 /etc/systemd/system/java\-jre\-update\.service;75
 
+# SignDrop CLFS privilege escalation exploit https://github.com/MSNightmare/SignDrop
+(?i)\\Common Files\\microsoft shared\\ink\\hid\.dll;80
+(?i)\\SigDrop_\{[0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{12}\};75
+(?i)\\SigDrop\.exe;75
+
 # End
