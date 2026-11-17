@@ -414,7 +414,7 @@ rule WEBSHELL_PHP_Generic_Callback
         author = "Arnim Rupp (https://github.com/ruppde)"
         reference = "Internal Research"
         date = "2021/01/14"
-        modified = "2023-09-18"
+        modified = "2026-11-17"
         score = 60
         hash = "e98889690101b59260e871c49263314526f2093f"
         hash = "63297f8c1d4e88415bc094bc5546124c9ed8d57aca3a09e36ae18f5f054ad172"
@@ -450,6 +450,7 @@ rule WEBSHELL_PHP_Generic_Callback
         $gfp10 = "[][}{;|]\\|\\\\[+=]\\|<?=>?"
         $gfp11 = "(eval (getenv \"EPROLOG\")))"
         $gfp12 = "ZmlsZV9nZXRfY29udGVudHMoJ2h0dHA6Ly9saWNlbnNlLm9wZW5jYXJ0LWFwaS5jb20vbGljZW5zZS5waHA/b3JkZXJ"
+        $gfp13 = "https://github.com/nextcloud/"
 
         //strings from private rule php_false_positive_tiny
         // try to use only strings which would be flagged by themselves as suspicious by other rules, e.g. eval
