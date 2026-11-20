@@ -20,7 +20,7 @@ rule CN_Tools_xbat {
         $s0 = "ws.run \"srss.bat /start\",0 " fullword ascii 
         $s1 = "Set ws = Wscript.CreateObject(\"Wscript.Shell\")" fullword ascii 
     condition:
-        uint16(0) == 0x6553 and filesize < 0KB and all of them
+        uint16(0) == 0x6553 and filesize < 1KB and all of them
 }
 
 rule CN_Tools_Temp {
